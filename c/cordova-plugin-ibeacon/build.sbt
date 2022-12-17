@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "cordova-plugin-ibeacon"
-version := "v3.3.0-dt-20220818Z-fc717c"
+version := "v3.3.0-dt-20220818Z-07304e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "q" % "1.5-dt-20220819Z-ed8b8d",
-  "org.scalablytyped" %%% "std" % "4.9-c133ce")
+  "org.scalablytyped" %%% "q" % "1.5-dt-20220819Z-6140fe",
+  "org.scalablytyped" %%% "std" % "4.9-5f989f")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

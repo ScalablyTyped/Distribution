@@ -1,5 +1,6 @@
 package typings.fastGlob
 
+import typings.fastGlob.anon.Typeofwalk
 import typings.fastGlob.outTypesMod.Entry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,6 +18,6 @@ object outReadersAsyncMod {
     
     /* protected */ var _readerStream: typings.fastGlob.outReadersStreamMod.default = js.native
     
-    /* protected */ var _walkAsync: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fsWalk.walk */ Any = js.native
+    /* protected */ var _walkAsync: Typeofwalk = js.native
   }
 }

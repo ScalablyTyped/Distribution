@@ -6,6 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
+  trait `0` extends StObject {
+    
+    var metadata: js.UndefOr[Boolean] = js.undefined
+  }
+  object `0` {
+    
+    inline def apply(): `0` = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[`0`]
+    }
+    
+    extension [Self <: `0`](x: Self) {
+      
+      inline def setMetadata(value: Boolean): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    }
+  }
+  
   trait Address extends StObject {
     
     var address: String
@@ -27,6 +46,62 @@ object anon {
     
     var addressServer: js.UndefOr[String] = js.undefined
     
+    var consentCallback: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    var ipfs: js.UndefOr[Any] = js.undefined
+    
+    var pinningNode: js.UndefOr[String] = js.undefined
+  }
+  object AddressServer {
+    
+    inline def apply(): AddressServer = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[AddressServer]
+    }
+    
+    extension [Self <: AddressServer](x: Self) {
+      
+      inline def setAddressServer(value: String): Self = StObject.set(x, "addressServer", value.asInstanceOf[js.Any])
+      
+      inline def setAddressServerUndefined: Self = StObject.set(x, "addressServer", js.undefined)
+      
+      inline def setConsentCallback(value: () => Unit): Self = StObject.set(x, "consentCallback", js.Any.fromFunction0(value))
+      
+      inline def setConsentCallbackUndefined: Self = StObject.set(x, "consentCallback", js.undefined)
+      
+      inline def setIpfs(value: Any): Self = StObject.set(x, "ipfs", value.asInstanceOf[js.Any])
+      
+      inline def setIpfsUndefined: Self = StObject.set(x, "ipfs", js.undefined)
+      
+      inline def setPinningNode(value: String): Self = StObject.set(x, "pinningNode", value.asInstanceOf[js.Any])
+      
+      inline def setPinningNodeUndefined: Self = StObject.set(x, "pinningNode", js.undefined)
+    }
+  }
+  
+  trait Audience extends StObject {
+    
+    var audience: js.UndefOr[String] = js.undefined
+  }
+  object Audience {
+    
+    inline def apply(): Audience = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Audience]
+    }
+    
+    extension [Self <: Audience](x: Self) {
+      
+      inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
+      
+      inline def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
+    }
+  }
+  
+  trait Blocklist extends StObject {
+    
+    var addressServer: js.UndefOr[String] = js.undefined
+    
     var blocklist: js.UndefOr[js.Function1[/* address */ String, Boolean]] = js.undefined
     
     var ipfs: js.UndefOr[Any] = js.undefined
@@ -37,14 +112,14 @@ object anon {
     
     var useCacheService: js.UndefOr[Boolean] = js.undefined
   }
-  object AddressServer {
+  object Blocklist {
     
-    inline def apply(): AddressServer = {
+    inline def apply(): Blocklist = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[AddressServer]
+      __obj.asInstanceOf[Blocklist]
     }
     
-    extension [Self <: AddressServer](x: Self) {
+    extension [Self <: Blocklist](x: Self) {
       
       inline def setAddressServer(value: String): Self = StObject.set(x, "addressServer", value.asInstanceOf[js.Any])
       
@@ -72,65 +147,11 @@ object anon {
     }
   }
   
-  trait Audience extends StObject {
-    
-    var audience: js.UndefOr[String] = js.undefined
-  }
-  object Audience {
-    
-    inline def apply(): Audience = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Audience]
-    }
-    
-    extension [Self <: Audience](x: Self) {
-      
-      inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
-      
-      inline def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
-    }
-  }
-  
-  trait Blocklist extends StObject {
-    
-    var blocklist: js.UndefOr[Any] = js.undefined
-    
-    var metadata: js.UndefOr[String] = js.undefined
-    
-    var profileServer: js.UndefOr[String] = js.undefined
-  }
-  object Blocklist {
-    
-    inline def apply(): Blocklist = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Blocklist]
-    }
-    
-    extension [Self <: Blocklist](x: Self) {
-      
-      inline def setBlocklist(value: Any): Self = StObject.set(x, "blocklist", value.asInstanceOf[js.Any])
-      
-      inline def setBlocklistUndefined: Self = StObject.set(x, "blocklist", js.undefined)
-      
-      inline def setMetadata(value: String): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
-      
-      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
-      
-      inline def setProfileServer(value: String): Self = StObject.set(x, "profileServer", value.asInstanceOf[js.Any])
-      
-      inline def setProfileServerUndefined: Self = StObject.set(x, "profileServer", js.undefined)
-    }
-  }
-  
   trait ConsentCallback extends StObject {
-    
-    var addressServer: js.UndefOr[String] = js.undefined
     
     var consentCallback: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var ipfs: js.UndefOr[Any] = js.undefined
-    
-    var pinningNode: js.UndefOr[String] = js.undefined
+    var onSyncDone: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object ConsentCallback {
     
@@ -141,21 +162,13 @@ object anon {
     
     extension [Self <: ConsentCallback](x: Self) {
       
-      inline def setAddressServer(value: String): Self = StObject.set(x, "addressServer", value.asInstanceOf[js.Any])
-      
-      inline def setAddressServerUndefined: Self = StObject.set(x, "addressServer", js.undefined)
-      
       inline def setConsentCallback(value: () => Unit): Self = StObject.set(x, "consentCallback", js.Any.fromFunction0(value))
       
       inline def setConsentCallbackUndefined: Self = StObject.set(x, "consentCallback", js.undefined)
       
-      inline def setIpfs(value: Any): Self = StObject.set(x, "ipfs", value.asInstanceOf[js.Any])
+      inline def setOnSyncDone(value: () => Unit): Self = StObject.set(x, "onSyncDone", js.Any.fromFunction0(value))
       
-      inline def setIpfsUndefined: Self = StObject.set(x, "ipfs", js.undefined)
-      
-      inline def setPinningNode(value: String): Self = StObject.set(x, "pinningNode", value.asInstanceOf[js.Any])
-      
-      inline def setPinningNodeUndefined: Self = StObject.set(x, "pinningNode", js.undefined)
+      inline def setOnSyncDoneUndefined: Self = StObject.set(x, "onSyncDone", js.undefined)
     }
   }
   
@@ -254,7 +267,11 @@ object anon {
   
   trait Metadata extends StObject {
     
-    var metadata: js.UndefOr[Boolean] = js.undefined
+    var blocklist: js.UndefOr[Any] = js.undefined
+    
+    var metadata: js.UndefOr[String] = js.undefined
+    
+    var profileServer: js.UndefOr[String] = js.undefined
   }
   object Metadata {
     
@@ -265,9 +282,17 @@ object anon {
     
     extension [Self <: Metadata](x: Self) {
       
-      inline def setMetadata(value: Boolean): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setBlocklist(value: Any): Self = StObject.set(x, "blocklist", value.asInstanceOf[js.Any])
+      
+      inline def setBlocklistUndefined: Self = StObject.set(x, "blocklist", js.undefined)
+      
+      inline def setMetadata(value: String): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
       inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      
+      inline def setProfileServer(value: String): Self = StObject.set(x, "profileServer", value.asInstanceOf[js.Any])
+      
+      inline def setProfileServerUndefined: Self = StObject.set(x, "profileServer", js.undefined)
     }
   }
   
@@ -287,31 +312,6 @@ object anon {
       inline def setNoAutoSub(value: Boolean): Self = StObject.set(x, "noAutoSub", value.asInstanceOf[js.Any])
       
       inline def setNoAutoSubUndefined: Self = StObject.set(x, "noAutoSub", js.undefined)
-    }
-  }
-  
-  trait OnSyncDone extends StObject {
-    
-    var consentCallback: js.UndefOr[js.Function0[Unit]] = js.undefined
-    
-    var onSyncDone: js.UndefOr[js.Function0[Unit]] = js.undefined
-  }
-  object OnSyncDone {
-    
-    inline def apply(): OnSyncDone = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[OnSyncDone]
-    }
-    
-    extension [Self <: OnSyncDone](x: Self) {
-      
-      inline def setConsentCallback(value: () => Unit): Self = StObject.set(x, "consentCallback", js.Any.fromFunction0(value))
-      
-      inline def setConsentCallbackUndefined: Self = StObject.set(x, "consentCallback", js.undefined)
-      
-      inline def setOnSyncDone(value: () => Unit): Self = StObject.set(x, "onSyncDone", js.Any.fromFunction0(value))
-      
-      inline def setOnSyncDoneUndefined: Self = StObject.set(x, "onSyncDone", js.undefined)
     }
   }
   

@@ -8,39 +8,18 @@ object anon {
   
   trait AdjustX extends StObject {
     
-    var adjustX: Boolean | Double
-    
-    var adjustY: Boolean | Double
-  }
-  object AdjustX {
-    
-    inline def apply(adjustX: Boolean | Double, adjustY: Boolean | Double): AdjustX = {
-      val __obj = js.Dynamic.literal(adjustX = adjustX.asInstanceOf[js.Any], adjustY = adjustY.asInstanceOf[js.Any])
-      __obj.asInstanceOf[AdjustX]
-    }
-    
-    extension [Self <: AdjustX](x: Self) {
-      
-      inline def setAdjustX(value: Boolean | Double): Self = StObject.set(x, "adjustX", value.asInstanceOf[js.Any])
-      
-      inline def setAdjustY(value: Boolean | Double): Self = StObject.set(x, "adjustY", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait AdjustY extends StObject {
-    
     var adjustX: js.UndefOr[Boolean | Double] = js.undefined
     
     var adjustY: js.UndefOr[Boolean | Double] = js.undefined
   }
-  object AdjustY {
+  object AdjustX {
     
-    inline def apply(): AdjustY = {
+    inline def apply(): AdjustX = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[AdjustY]
+      __obj.asInstanceOf[AdjustX]
     }
     
-    extension [Self <: AdjustY](x: Self) {
+    extension [Self <: AdjustX](x: Self) {
       
       inline def setAdjustX(value: Boolean | Double): Self = StObject.set(x, "adjustX", value.asInstanceOf[js.Any])
       
@@ -49,6 +28,27 @@ object anon {
       inline def setAdjustY(value: Boolean | Double): Self = StObject.set(x, "adjustY", value.asInstanceOf[js.Any])
       
       inline def setAdjustYUndefined: Self = StObject.set(x, "adjustY", js.undefined)
+    }
+  }
+  
+  trait AdjustY extends StObject {
+    
+    var adjustX: Boolean | Double
+    
+    var adjustY: Boolean | Double
+  }
+  object AdjustY {
+    
+    inline def apply(adjustX: Boolean | Double, adjustY: Boolean | Double): AdjustY = {
+      val __obj = js.Dynamic.literal(adjustX = adjustX.asInstanceOf[js.Any], adjustY = adjustY.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AdjustY]
+    }
+    
+    extension [Self <: AdjustY](x: Self) {
+      
+      inline def setAdjustX(value: Boolean | Double): Self = StObject.set(x, "adjustX", value.asInstanceOf[js.Any])
+      
+      inline def setAdjustY(value: Boolean | Double): Self = StObject.set(x, "adjustY", value.asInstanceOf[js.Any])
     }
   }
 }

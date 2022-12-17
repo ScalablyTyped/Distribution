@@ -10,20 +10,20 @@ trait PickImplunspecifiedFieldP
   extends StObject
      with Param {
   
-  var unspecifiedField: String & js.UndefOr[String]
+  var unspecifiedField: String
   
   var unspecifiedRule: js.UndefOr[String] = js.undefined
 }
 object PickImplunspecifiedFieldP {
   
-  inline def apply(unspecifiedField: String & js.UndefOr[String]): PickImplunspecifiedFieldP = {
+  inline def apply(unspecifiedField: String): PickImplunspecifiedFieldP = {
     val __obj = js.Dynamic.literal(unspecifiedField = unspecifiedField.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplunspecifiedFieldP]
   }
   
   extension [Self <: PickImplunspecifiedFieldP](x: Self) {
     
-    inline def setUnspecifiedField(value: String & js.UndefOr[String]): Self = StObject.set(x, "unspecifiedField", value.asInstanceOf[js.Any])
+    inline def setUnspecifiedField(value: String): Self = StObject.set(x, "unspecifiedField", value.asInstanceOf[js.Any])
     
     inline def setUnspecifiedRule(value: String): Self = StObject.set(x, "unspecifiedRule", value.asInstanceOf[js.Any])
     

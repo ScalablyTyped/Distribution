@@ -26,7 +26,7 @@ trait PickImplheightPartialPick
   
   var error: js.UndefOr[ErrorSettings] = js.undefined
   
-  var height: (next | initial | Double) & (js.UndefOr[next | initial | Double])
+  var height: next | initial | Double
   
   var name: js.UndefOr[String] = js.undefined
   
@@ -46,7 +46,7 @@ trait PickImplheightPartialPick
 }
 object PickImplheightPartialPick {
   
-  inline def apply(height: (next | initial | Double) & (js.UndefOr[next | initial | Double])): PickImplheightPartialPick = {
+  inline def apply(height: next | initial | Double): PickImplheightPartialPick = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplheightPartialPick]
   }
@@ -73,7 +73,7 @@ object PickImplheightPartialPick {
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    inline def setHeight(value: (next | initial | Double) & (js.UndefOr[next | initial | Double])): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: next | initial | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

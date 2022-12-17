@@ -3,7 +3,6 @@ package typings.lesgo
 import typings.awsLambda.triggerSqsMod.SQSRecord
 import typings.lesgo.middlewaresErrorHttpResponseMiddlewareMod.ErrorHttpMiddlewareOptions
 import typings.lesgo.middlewaresNormalizeHttpRequestMiddlewareMod.NormalizeHttpMiddlewareOptions
-import typings.lesgo.middlewaresNormalizeSQSMessageMiddlewareMod.NormalizeSQSMiddleware
 import typings.lesgo.middlewaresSuccessHttpResponseMiddlewareMod.SuccessHttpMiddlewareOptions
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -15,8 +14,6 @@ object middlewaresMod {
   @JSImport("lesgo/middlewares", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
-  
-  inline def default(): NormalizeSQSMiddleware = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[NormalizeSQSMiddleware]
   
   inline def errorHttpResponseAfterHandler(
     handler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify middy.HandlerLambda<HttpGatewayEvent> */ Any,

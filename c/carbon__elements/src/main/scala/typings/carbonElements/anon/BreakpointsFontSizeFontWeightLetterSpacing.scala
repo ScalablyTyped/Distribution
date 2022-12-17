@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BreakpointsFontSizeFontWeightLetterSpacing extends StObject {
   
-  var breakpoints: MaxMd
+  var breakpoints: Md
   
   var fontSize: `2rem`
   
@@ -21,14 +21,14 @@ trait BreakpointsFontSizeFontWeightLetterSpacing extends StObject {
 }
 object BreakpointsFontSizeFontWeightLetterSpacing {
   
-  inline def apply(breakpoints: MaxMd): BreakpointsFontSizeFontWeightLetterSpacing = {
+  inline def apply(breakpoints: Md): BreakpointsFontSizeFontWeightLetterSpacing = {
     val __obj = js.Dynamic.literal(breakpoints = breakpoints.asInstanceOf[js.Any], fontSize = "2rem", fontWeight = 600, letterSpacing = 0, lineHeight = 1.25d)
     __obj.asInstanceOf[BreakpointsFontSizeFontWeightLetterSpacing]
   }
   
   extension [Self <: BreakpointsFontSizeFontWeightLetterSpacing](x: Self) {
     
-    inline def setBreakpoints(value: MaxMd): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
+    inline def setBreakpoints(value: Md): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
     
     inline def setFontSize(value: `2rem`): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     

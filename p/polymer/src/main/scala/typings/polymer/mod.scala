@@ -74,11 +74,8 @@ object mod {
       }
       object Base {
         
-        inline def apply(
-          deserialize: (js.UndefOr[js.Function2[/* value */ String, /* type */ NumberConstructor, Double]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ BooleanConstructor, Boolean]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ ObjectConstructor, js.Object]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ ArrayConstructor, js.Array[Any]]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ DateConstructor, js.Date]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ StringConstructor, String]]),
-          is: String
-        ): Base = {
-          val __obj = js.Dynamic.literal(deserialize = deserialize.asInstanceOf[js.Any], is = is.asInstanceOf[js.Any])
+        inline def apply(is: String): Base = {
+          val __obj = js.Dynamic.literal(is = is.asInstanceOf[js.Any])
           __obj.asInstanceOf[Base]
         }
         
@@ -157,7 +154,7 @@ object mod {
                 js.Function3[/* jobName */ String, /* callback */ js.Function, /* wait */ js.UndefOr[Double], Unit]
               ] = js.undefined
         
-        var deserialize: (js.UndefOr[js.Function2[/* value */ String, /* type */ NumberConstructor, Double]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ BooleanConstructor, Boolean]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ ObjectConstructor, js.Object]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ ArrayConstructor, js.Array[Any]]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ DateConstructor, js.Date]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ StringConstructor, String]])
+        var deserialize: js.UndefOr[js.Function2[/* value */ String, /* type */ NumberConstructor, Double]] = js.undefined
         
         var detached: js.UndefOr[js.Function0[Unit]] = js.undefined
         
@@ -334,11 +331,8 @@ object mod {
       }
       object CommonBase {
         
-        inline def apply(
-          deserialize: (js.UndefOr[js.Function2[/* value */ String, /* type */ NumberConstructor, Double]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ BooleanConstructor, Boolean]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ ObjectConstructor, js.Object]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ ArrayConstructor, js.Array[Any]]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ DateConstructor, js.Date]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ StringConstructor, String]]),
-          is: String
-        ): CommonBase = {
-          val __obj = js.Dynamic.literal(deserialize = deserialize.asInstanceOf[js.Any], is = is.asInstanceOf[js.Any])
+        inline def apply(is: String): CommonBase = {
+          val __obj = js.Dynamic.literal(is = is.asInstanceOf[js.Any])
           __obj.asInstanceOf[CommonBase]
         }
         
@@ -420,9 +414,9 @@ object mod {
           
           inline def setDebounceUndefined: Self = StObject.set(x, "debounce", js.undefined)
           
-          inline def setDeserialize(
-            value: (js.UndefOr[js.Function2[/* value */ String, /* type */ NumberConstructor, Double]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ BooleanConstructor, Boolean]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ ObjectConstructor, js.Object]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ ArrayConstructor, js.Array[Any]]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ DateConstructor, js.Date]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ StringConstructor, String]])
-          ): Self = StObject.set(x, "deserialize", value.asInstanceOf[js.Any])
+          inline def setDeserialize(value: (/* value */ String, /* type */ NumberConstructor) => Double): Self = StObject.set(x, "deserialize", js.Any.fromFunction2(value))
+          
+          inline def setDeserializeUndefined: Self = StObject.set(x, "deserialize", js.undefined)
           
           inline def setDetached(value: () => Unit): Self = StObject.set(x, "detached", js.Any.fromFunction0(value))
           

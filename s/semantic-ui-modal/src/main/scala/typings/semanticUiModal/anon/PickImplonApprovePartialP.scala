@@ -48,7 +48,7 @@ trait PickImplonApprovePartialP
   
   def onApprove($element: JQuery): `false` | Unit
   @JSName("onApprove")
-  var onApprove_Original: (js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]])
+  var onApprove_Original: js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]
   
   var onDeny: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]] = js.undefined
   
@@ -74,9 +74,7 @@ trait PickImplonApprovePartialP
 }
 object PickImplonApprovePartialP {
   
-  inline def apply(
-    onApprove: (js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]])
-  ): PickImplonApprovePartialP = {
+  inline def apply(onApprove: js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]): PickImplonApprovePartialP = {
     val __obj = js.Dynamic.literal(onApprove = onApprove.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonApprovePartialP]
   }
@@ -143,9 +141,7 @@ object PickImplonApprovePartialP {
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    inline def setOnApprove(
-      value: (js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]])
-    ): Self = StObject.set(x, "onApprove", value.asInstanceOf[js.Any])
+    inline def setOnApprove(value: js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]): Self = StObject.set(x, "onApprove", value.asInstanceOf[js.Any])
     
     inline def setOnDeny(value: js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]): Self = StObject.set(x, "onDeny", value.asInstanceOf[js.Any])
     

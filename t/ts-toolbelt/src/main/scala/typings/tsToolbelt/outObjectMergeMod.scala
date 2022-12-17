@@ -120,7 +120,7 @@ object outObjectMergeMod {
   /**
     * @hidden
     */
-  type MergeFlatObject[O /* <: js.Object */, O1 /* <: js.Object */, fill, OOKeys /* <: Key */] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof ts-toolbelt.ts-toolbelt/out/Object/_Internal.Anyfy<O> & O1 ]: ts-toolbelt.ts-toolbelt/out/Object/Merge.MergeProp<ts-toolbelt.ts-toolbelt/out/Any/At.At<O, K>, ts-toolbelt.ts-toolbelt/out/Any/At.At<O1, K>, fill, OOKeys, K>} */ js.Any) & js.Object
+  type MergeFlatObject[O /* <: js.Object */, O1 /* <: js.Object */, fill, OOKeys /* <: Key */] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof ts-toolbelt.ts-toolbelt/out/Object/_Internal.Anyfy<O> & O1 ]: ts-toolbelt.ts-toolbelt/out/Object/Merge.MergeProp<ts-toolbelt.ts-toolbelt/out/Any/At.At<O, K>, ts-toolbelt.ts-toolbelt/out/Any/At.At<O1, K>, fill, OOKeys, K>} */ js.Any
   
   /**
     * @hidden

@@ -101,7 +101,7 @@ trait ClassDeclarationFunctionD extends StObject {
   
   val modifiers: js.UndefOr[NodeArray[Modifier]] = js.native
   
-  val name: js.UndefOr[Identifier] & Identifier = js.native
+  val name: js.UndefOr[Identifier] = js.native
   
   val parameters: NodeArray[ParameterDeclaration] = js.native
   

@@ -10,10 +10,10 @@ Responsive React grid system built with Styled System, with support for Emotion 
 | ------------------ | :-------------: |
 | Full name          | reflexbox |
 | Keywords           | reflexbox, flexbox, grid-styled, rebass, rebass-grid, layout, emotion, css, style |
-| # releases         | 7 |
-| # dependents       | 36 |
-| # downloads        | 2630242 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 288313.6666666667 |
+| # stars            | 7737.0 |
 
 ## Links
 - [Homepage](https://github.com/rebassjs/rebass#readme)

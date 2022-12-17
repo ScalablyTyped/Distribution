@@ -16,12 +16,21 @@ object anon {
     
     var members_count: Double
     
+    var modify_at: String
+    
     var name: String
   }
   object Address {
     
-    inline def apply(address: String, created_at: String, description: String, members_count: Double, name: String): Address = {
-      val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], members_count = members_count.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    inline def apply(
+      address: String,
+      created_at: String,
+      description: String,
+      members_count: Double,
+      modify_at: String,
+      name: String
+    ): Address = {
+      val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], members_count = members_count.asInstanceOf[js.Any], modify_at = modify_at.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Address]
     }
     
@@ -34,6 +43,8 @@ object anon {
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
       inline def setMembers_count(value: Double): Self = StObject.set(x, "members_count", value.asInstanceOf[js.Any])
+      
+      inline def setModify_at(value: String): Self = StObject.set(x, "modify_at", value.asInstanceOf[js.Any])
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -49,21 +60,12 @@ object anon {
     
     var members_count: Double
     
-    var modify_at: String
-    
     var name: String
   }
   object Createdat {
     
-    inline def apply(
-      address: String,
-      created_at: String,
-      description: String,
-      members_count: Double,
-      modify_at: String,
-      name: String
-    ): Createdat = {
-      val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], members_count = members_count.asInstanceOf[js.Any], modify_at = modify_at.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    inline def apply(address: String, created_at: String, description: String, members_count: Double, name: String): Createdat = {
+      val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], members_count = members_count.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Createdat]
     }
     
@@ -76,8 +78,6 @@ object anon {
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
       inline def setMembers_count(value: Double): Self = StObject.set(x, "members_count", value.asInstanceOf[js.Any])
-      
-      inline def setModify_at(value: String): Self = StObject.set(x, "modify_at", value.asInstanceOf[js.Any])
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

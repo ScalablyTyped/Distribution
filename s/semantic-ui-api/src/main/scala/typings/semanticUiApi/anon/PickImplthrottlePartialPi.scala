@@ -135,7 +135,7 @@ trait PickImplthrottlePartialPi
   
   var successTest: js.UndefOr[js.Function1[/* response */ Any, Boolean]] = js.undefined
   
-  var throttle: Double & js.UndefOr[Double]
+  var throttle: Double
   
   var throttleFirstRequest: js.UndefOr[Boolean] = js.undefined
   
@@ -147,7 +147,7 @@ trait PickImplthrottlePartialPi
 }
 object PickImplthrottlePartialPi {
   
-  inline def apply(throttle: Double & js.UndefOr[Double]): PickImplthrottlePartialPi = {
+  inline def apply(throttle: Double): PickImplthrottlePartialPi = {
     val __obj = js.Dynamic.literal(throttle = throttle.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplthrottlePartialPi]
   }
@@ -326,7 +326,7 @@ object PickImplthrottlePartialPi {
     
     inline def setSuccessTestUndefined: Self = StObject.set(x, "successTest", js.undefined)
     
-    inline def setThrottle(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
+    inline def setThrottle(value: Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
     
     inline def setThrottleFirstRequest(value: Boolean): Self = StObject.set(x, "throttleFirstRequest", value.asInstanceOf[js.Any])
     

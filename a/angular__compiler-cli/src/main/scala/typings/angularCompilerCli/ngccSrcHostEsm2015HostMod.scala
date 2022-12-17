@@ -1122,7 +1122,7 @@ object ngccSrcHostEsm2015HostMod {
     def getWidth(): Double = js.native
     def getWidth(sourceFile: SourceFileLike): Double = js.native
     
-    val initializer: js.UndefOr[Expression] & Expression = js.native
+    val initializer: js.UndefOr[Expression] = js.native
     
     val kind: typings.typescript.mod.SyntaxKind.VariableDeclaration = js.native
     
@@ -1138,7 +1138,7 @@ object ngccSrcHostEsm2015HostMod {
       */
     val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
     
-    val name: BindingName & Identifier = js.native
+    val name: BindingName = js.native
     
     val parent: VariableDeclarationList | CatchClause = js.native
     

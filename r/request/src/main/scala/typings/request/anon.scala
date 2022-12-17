@@ -149,7 +149,7 @@ object anon {
     
     var path: String | Null
     
-    var pathname: (String | Null) & String
+    var pathname: String | Null
     
     var port: String | Null
     
@@ -163,8 +163,8 @@ object anon {
   }
   object Urlhrefstringpathnamestri {
     
-    inline def apply(href: String, pathname: (String | Null) & String): Urlhrefstringpathnamestri = {
-      val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], auth = null, hash = null, host = null, hostname = null, path = null, port = null, protocol = null, query = null, search = null, slashes = null)
+    inline def apply(href: String): Urlhrefstringpathnamestri = {
+      val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], auth = null, hash = null, host = null, hostname = null, path = null, pathname = null, port = null, protocol = null, query = null, search = null, slashes = null)
       __obj.asInstanceOf[Urlhrefstringpathnamestri]
     }
     
@@ -192,7 +192,9 @@ object anon {
       
       inline def setPathNull: Self = StObject.set(x, "path", null)
       
-      inline def setPathname(value: (String | Null) & String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+      inline def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+      
+      inline def setPathnameNull: Self = StObject.set(x, "pathname", null)
       
       inline def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       

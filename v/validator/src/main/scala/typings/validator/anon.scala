@@ -1,7 +1,5 @@
 package typings.validator
 
-import typings.validator.validatorBooleans.`false`
-import typings.validator.validatorBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,12 +31,12 @@ object anon {
     
     var pointsPerUnique: js.UndefOr[Double] = js.undefined
     
-    var returnScore: js.UndefOr[Boolean] & js.UndefOr[`false`]
+    var returnScore: js.UndefOr[Boolean] = js.undefined
   }
   object StrongPasswordOptionsretu {
     
-    inline def apply(returnScore: js.UndefOr[Boolean] & js.UndefOr[`false`]): StrongPasswordOptionsretu = {
-      val __obj = js.Dynamic.literal(returnScore = returnScore.asInstanceOf[js.Any])
+    inline def apply(): StrongPasswordOptionsretu = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrongPasswordOptionsretu]
     }
     
@@ -88,7 +86,9 @@ object anon {
       
       inline def setPointsPerUniqueUndefined: Self = StObject.set(x, "pointsPerUnique", js.undefined)
       
-      inline def setReturnScore(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "returnScore", value.asInstanceOf[js.Any])
+      inline def setReturnScore(value: Boolean): Self = StObject.set(x, "returnScore", value.asInstanceOf[js.Any])
+      
+      inline def setReturnScoreUndefined: Self = StObject.set(x, "returnScore", js.undefined)
     }
   }
   
@@ -117,12 +117,12 @@ object anon {
     
     var pointsPerUnique: js.UndefOr[Double] = js.undefined
     
-    var returnScore: js.UndefOr[Boolean] & `true`
+    var returnScore: js.UndefOr[Boolean] = js.undefined
   }
   object StrongPasswordOptionsretuMinLength {
     
-    inline def apply(returnScore: js.UndefOr[Boolean] & `true`): StrongPasswordOptionsretuMinLength = {
-      val __obj = js.Dynamic.literal(returnScore = returnScore.asInstanceOf[js.Any])
+    inline def apply(): StrongPasswordOptionsretuMinLength = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrongPasswordOptionsretuMinLength]
     }
     
@@ -172,7 +172,9 @@ object anon {
       
       inline def setPointsPerUniqueUndefined: Self = StObject.set(x, "pointsPerUnique", js.undefined)
       
-      inline def setReturnScore(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "returnScore", value.asInstanceOf[js.Any])
+      inline def setReturnScore(value: Boolean): Self = StObject.set(x, "returnScore", value.asInstanceOf[js.Any])
+      
+      inline def setReturnScoreUndefined: Self = StObject.set(x, "returnScore", js.undefined)
     }
   }
 }

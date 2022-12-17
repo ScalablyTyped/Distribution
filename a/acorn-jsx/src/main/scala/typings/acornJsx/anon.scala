@@ -28,12 +28,12 @@ object anon {
         typings.acorn.mod.Node
       ] = js.native
     
-    var Parser: (Instantiable3[
+    var Parser: Instantiable3[
         /* options */ Options, 
         /* input */ String, 
         /* startPos */ js.UndefOr[Double], 
         typings.acorn.mod.Parser
-      ]) & typings.acorn.anon.TypeofParser = js.native
+      ] = js.native
     
     var SourceLocation: Instantiable3[
         /* p */ Parser, 

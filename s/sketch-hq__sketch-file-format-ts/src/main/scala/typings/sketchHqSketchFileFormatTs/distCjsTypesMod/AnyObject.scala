@@ -752,7 +752,7 @@ object AnyObject {
     __obj.asInstanceOf[typings.sketchHqSketchFileFormatTs.distCjsTypesMod.Star]
   }
   
-  inline def StringAttribute(attributes: Kerning, length: Double, location: Double): typings.sketchHqSketchFileFormatTs.distCjsTypesMod.StringAttribute = {
+  inline def StringAttribute(attributes: MSAttributedStringColorAttribute, length: Double, location: Double): typings.sketchHqSketchFileFormatTs.distCjsTypesMod.StringAttribute = {
     val __obj = js.Dynamic.literal(_class = "stringAttribute", attributes = attributes.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.sketchHqSketchFileFormatTs.distCjsTypesMod.StringAttribute]
   }
@@ -881,7 +881,7 @@ object AnyObject {
     __obj.asInstanceOf[typings.sketchHqSketchFileFormatTs.distCjsTypesMod.Text]
   }
   
-  inline def TextStyle(encodedAttributes: MSAttributedStringColorAttribute, verticalAlignment: TextVerticalAlignment): typings.sketchHqSketchFileFormatTs.distCjsTypesMod.TextStyle = {
+  inline def TextStyle(encodedAttributes: Kerning, verticalAlignment: TextVerticalAlignment): typings.sketchHqSketchFileFormatTs.distCjsTypesMod.TextStyle = {
     val __obj = js.Dynamic.literal(_class = "textStyle", encodedAttributes = encodedAttributes.asInstanceOf[js.Any], verticalAlignment = verticalAlignment.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.sketchHqSketchFileFormatTs.distCjsTypesMod.TextStyle]
   }

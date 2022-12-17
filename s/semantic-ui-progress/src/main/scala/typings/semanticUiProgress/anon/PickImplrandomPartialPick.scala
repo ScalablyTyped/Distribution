@@ -61,7 +61,7 @@ trait PickImplrandomPartialPick
   
   var precision: js.UndefOr[Double] = js.undefined
   
-  var random: RandomSettings & js.UndefOr[RandomSettings]
+  var random: RandomSettings
   
   var regExp: js.UndefOr[RegExpSettings] = js.undefined
   
@@ -81,7 +81,7 @@ trait PickImplrandomPartialPick
 }
 object PickImplrandomPartialPick {
   
-  inline def apply(random: RandomSettings & js.UndefOr[RandomSettings]): PickImplrandomPartialPick = {
+  inline def apply(random: RandomSettings): PickImplrandomPartialPick = {
     val __obj = js.Dynamic.literal(random = random.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplrandomPartialPick]
   }
@@ -154,7 +154,7 @@ object PickImplrandomPartialPick {
     
     inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     
-    inline def setRandom(value: RandomSettings & js.UndefOr[RandomSettings]): Self = StObject.set(x, "random", value.asInstanceOf[js.Any])
+    inline def setRandom(value: RandomSettings): Self = StObject.set(x, "random", value.asInstanceOf[js.Any])
     
     inline def setRegExp(value: RegExpSettings): Self = StObject.set(x, "regExp", value.asInstanceOf[js.Any])
     

@@ -399,7 +399,7 @@ trait BaseMenuPropsPartialPriva extends StObject {
   
   var menuRenderType: js.UndefOr[header | sider] = js.undefined
   
-  var mode: js.UndefOr[MenuMode] & js.UndefOr[typings.rcMenu.esInterfaceMod.MenuMode]
+  var mode: js.UndefOr[MenuMode] = js.undefined
   
   var motion: js.UndefOr[CSSMotionProps] = js.undefined
   
@@ -672,8 +672,8 @@ trait BaseMenuPropsPartialPriva extends StObject {
 }
 object BaseMenuPropsPartialPriva {
   
-  inline def apply(mode: js.UndefOr[MenuMode] & js.UndefOr[typings.rcMenu.esInterfaceMod.MenuMode]): BaseMenuPropsPartialPriva = {
-    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
+  inline def apply(): BaseMenuPropsPartialPriva = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BaseMenuPropsPartialPriva]
   }
   
@@ -1162,7 +1162,9 @@ object BaseMenuPropsPartialPriva {
     
     inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
     
-    inline def setMode(value: js.UndefOr[MenuMode] & js.UndefOr[typings.rcMenu.esInterfaceMod.MenuMode]): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: MenuMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     inline def setMotion(value: CSSMotionProps): Self = StObject.set(x, "motion", value.asInstanceOf[js.Any])
     

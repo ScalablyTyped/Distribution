@@ -1,31 +1,26 @@
 package typings.kefir.anon
 
-import typings.kefir.kefirStrings.error
-import typings.kefir.mod.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Value[E]
-  extends StObject
-     with Event[Any, E] {
+trait Value[U] extends StObject {
   
-  var `type`: error
+  var convert: Boolean
   
-  var value: E
+  var value: U
 }
 object Value {
   
-  inline def apply[E](value: E): Value[E] = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("error")
-    __obj.asInstanceOf[Value[E]]
+  inline def apply[U](convert: Boolean, value: U): Value[U] = {
+    val __obj = js.Dynamic.literal(convert = convert.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Value[U]]
   }
   
-  extension [Self <: Value[?], E](x: Self & Value[E]) {
+  extension [Self <: Value[?], U](x: Self & Value[U]) {
     
-    inline def setType(value: error): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setConvert(value: Boolean): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: E): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: U): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

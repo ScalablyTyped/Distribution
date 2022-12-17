@@ -8,7 +8,7 @@ import typings.interactjsTypes.actionsDropPluginMod.DropSignalArg
 import typings.interactjsTypes.anon.CurEventTarget
 import typings.interactjsTypes.anon.Doc
 import typings.interactjsTypes.anon.DocEvents
-import typings.interactjsTypes.anon.Event
+import typings.interactjsTypes.anon.EventInteraction
 import typings.interactjsTypes.anon.EventTarget
 import typings.interactjsTypes.anon.Id
 import typings.interactjsTypes.anon.Init
@@ -223,7 +223,7 @@ object coreScopeMod {
     @JSName("fire")
     def fire_interactionsbeforeactionstart(name: `interactionsColonbefore-action-start`, arg: OmitDoAnyPhaseArgiEvent): Unit | `false` = js.native
     @JSName("fire")
-    def fire_interactionsblur(name: interactionsColonblur, arg: Event): Unit | `false` = js.native
+    def fire_interactionsblur(name: interactionsColonblur, arg: EventInteraction): Unit | `false` = js.native
     @JSName("fire")
     def fire_interactionscancel(name: interactionsColoncancel, arg: PointerArgPropstypeupcurE & CurEventTarget): Unit | `false` = js.native
     @JSName("fire")
@@ -605,7 +605,7 @@ object coreScopeMod {
     @JSName("interactions:blur")
     var interactionsColonblur: js.UndefOr[
         js.Function3[
-          /* arg */ Event, 
+          /* arg */ EventInteraction, 
           /* scope */ Scope, 
           typings.interactjsTypes.interactjsTypesStrings.interactionsColonblur, 
           Unit | Boolean
@@ -924,7 +924,7 @@ object coreScopeMod {
       
       inline def `setInteractionsColonbefore-action-startUndefined`: Self = StObject.set(x, "interactions:before-action-start", js.undefined)
       
-      inline def setInteractionsColonblur(value: (/* arg */ Event, /* scope */ Scope, interactionsColonblur) => Unit | Boolean): Self = StObject.set(x, "interactions:blur", js.Any.fromFunction3(value))
+      inline def setInteractionsColonblur(value: (/* arg */ EventInteraction, /* scope */ Scope, interactionsColonblur) => Unit | Boolean): Self = StObject.set(x, "interactions:blur", js.Any.fromFunction3(value))
       
       inline def setInteractionsColonblurUndefined: Self = StObject.set(x, "interactions:blur", js.undefined)
       
@@ -1183,7 +1183,7 @@ object coreScopeMod {
     var `interactionsColonbefore-action-start`: OmitDoAnyPhaseArgiEvent
     
     @JSName("interactions:blur")
-    var interactionsColonblur: Event
+    var interactionsColonblur: EventInteraction
     
     @JSName("interactions:cancel")
     var interactionsColoncancel: PointerArgPropstypeupcurE & CurEventTarget
@@ -1263,7 +1263,7 @@ object coreScopeMod {
       `interactionsColonbefore-action-reflow`: OmitDoAnyPhaseArgiEvent,
       `interactionsColonbefore-action-resume`: OmitDoPhaseArgActionNamer,
       `interactionsColonbefore-action-start`: OmitDoAnyPhaseArgiEvent,
-      interactionsColonblur: Event,
+      interactionsColonblur: EventInteraction,
       interactionsColoncancel: PointerArgPropstypeupcurE & CurEventTarget,
       interactionsColondestroy: typings.interactjsTypes.anon.Interaction,
       interactionsColondown: PointerArgPropstypedown,
@@ -1388,7 +1388,7 @@ object coreScopeMod {
       
       inline def `setInteractionsColonbefore-action-start`(value: OmitDoAnyPhaseArgiEvent): Self = StObject.set(x, "interactions:before-action-start", value.asInstanceOf[js.Any])
       
-      inline def setInteractionsColonblur(value: Event): Self = StObject.set(x, "interactions:blur", value.asInstanceOf[js.Any])
+      inline def setInteractionsColonblur(value: EventInteraction): Self = StObject.set(x, "interactions:blur", value.asInstanceOf[js.Any])
       
       inline def setInteractionsColoncancel(value: PointerArgPropstypeupcurE & CurEventTarget): Self = StObject.set(x, "interactions:cancel", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,7 @@ object anon {
       * Type: `Buffer`, `Stream`, or null
       * Default: null
       */
-    var contents: (js.UndefOr[Buffer | ReadableStream | Null]) & Null
+    var contents: js.UndefOr[Buffer | ReadableStream | Null] = js.undefined
     
     /**
       * The current working directory of the file. Default: process.cwd()
@@ -54,8 +54,8 @@ object anon {
   }
   object ConstructorOptionscontent {
     
-    inline def apply(contents: (js.UndefOr[Buffer | ReadableStream | Null]) & Null): ConstructorOptionscontent = {
-      val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
+    inline def apply(): ConstructorOptionscontent = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConstructorOptionscontent]
     }
     
@@ -65,7 +65,11 @@ object anon {
       
       inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      inline def setContents(value: (js.UndefOr[Buffer | ReadableStream | Null]) & Null): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: Buffer | ReadableStream): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      
+      inline def setContentsNull: Self = StObject.set(x, "contents", null)
+      
+      inline def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
@@ -102,7 +106,7 @@ object anon {
       * Type: `Buffer`, `Stream`, or null
       * Default: null
       */
-    var contents: (js.UndefOr[Buffer | ReadableStream | Null]) & ReadableStream
+    var contents: js.UndefOr[Buffer | ReadableStream | Null] = js.undefined
     
     /**
       * The current working directory of the file. Default: process.cwd()
@@ -131,8 +135,8 @@ object anon {
   }
   object ConstructorOptionscontentBase {
     
-    inline def apply(contents: (js.UndefOr[Buffer | ReadableStream | Null]) & ReadableStream): ConstructorOptionscontentBase = {
-      val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
+    inline def apply(): ConstructorOptionscontentBase = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConstructorOptionscontentBase]
     }
     
@@ -142,7 +146,11 @@ object anon {
       
       inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      inline def setContents(value: (js.UndefOr[Buffer | ReadableStream | Null]) & ReadableStream): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: Buffer | ReadableStream): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      
+      inline def setContentsNull: Self = StObject.set(x, "contents", null)
+      
+      inline def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
@@ -179,7 +187,7 @@ object anon {
       * Type: `Buffer`, `Stream`, or null
       * Default: null
       */
-    var contents: (js.UndefOr[Buffer | ReadableStream | Null]) & Buffer
+    var contents: js.UndefOr[Buffer | ReadableStream | Null] = js.undefined
     
     /**
       * The current working directory of the file. Default: process.cwd()
@@ -208,8 +216,8 @@ object anon {
   }
   object ConstructorOptionscontentDictcustomOption {
     
-    inline def apply(contents: (js.UndefOr[Buffer | ReadableStream | Null]) & Buffer): ConstructorOptionscontentDictcustomOption = {
-      val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
+    inline def apply(): ConstructorOptionscontentDictcustomOption = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConstructorOptionscontentDictcustomOption]
     }
     
@@ -219,7 +227,11 @@ object anon {
       
       inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      inline def setContents(value: (js.UndefOr[Buffer | ReadableStream | Null]) & Buffer): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: Buffer | ReadableStream): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      
+      inline def setContentsNull: Self = StObject.set(x, "contents", null)
+      
+      inline def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       

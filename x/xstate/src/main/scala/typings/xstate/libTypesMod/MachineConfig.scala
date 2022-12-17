@@ -33,6 +33,8 @@ object MachineConfig {
     
     inline def setContext(value: LowInfer[TContext | js.Function0[TContext]]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
+    inline def setContextFunction0(value: () => TContext): Self = StObject.set(x, "context", js.Any.fromFunction0(value))
+    
     inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     inline def setSchema(value: MachineSchema[TContext, TEvent, TServiceMap]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])

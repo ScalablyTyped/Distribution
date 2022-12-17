@@ -67,12 +67,12 @@ object anon {
     
     var key: BitArray_
     
-    var tag: BitArray_
+    var salt: BitArray_
   }
   object Key {
     
-    inline def apply(key: BitArray_, tag: BitArray_): Key = {
-      val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
+    inline def apply(key: BitArray_, salt: BitArray_): Key = {
+      val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], salt = salt.asInstanceOf[js.Any])
       __obj.asInstanceOf[Key]
     }
     
@@ -82,9 +82,9 @@ object anon {
       
       inline def setKeyVarargs(value: Double*): Self = StObject.set(x, "key", js.Array(value*))
       
-      inline def setTag(value: BitArray_): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setSalt(value: BitArray_): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
       
-      inline def setTagVarargs(value: Double*): Self = StObject.set(x, "tag", js.Array(value*))
+      inline def setSaltVarargs(value: Double*): Self = StObject.set(x, "salt", js.Array(value*))
     }
   }
   
@@ -155,28 +155,28 @@ object anon {
     }
   }
   
-  trait Salt extends StObject {
+  trait Tag extends StObject {
     
     var key: BitArray_
     
-    var salt: BitArray_
+    var tag: BitArray_
   }
-  object Salt {
+  object Tag {
     
-    inline def apply(key: BitArray_, salt: BitArray_): Salt = {
-      val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], salt = salt.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Salt]
+    inline def apply(key: BitArray_, tag: BitArray_): Tag = {
+      val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Tag]
     }
     
-    extension [Self <: Salt](x: Self) {
+    extension [Self <: Tag](x: Self) {
       
       inline def setKey(value: BitArray_): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
       inline def setKeyVarargs(value: Double*): Self = StObject.set(x, "key", js.Array(value*))
       
-      inline def setSalt(value: BitArray_): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
+      inline def setTag(value: BitArray_): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      inline def setSaltVarargs(value: Double*): Self = StObject.set(x, "salt", js.Array(value*))
+      inline def setTagVarargs(value: Double*): Self = StObject.set(x, "tag", js.Array(value*))
     }
   }
 }

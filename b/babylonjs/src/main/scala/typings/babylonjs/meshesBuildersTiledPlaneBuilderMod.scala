@@ -1,7 +1,7 @@
 package typings.babylonjs
 
+import typings.babylonjs.anon.AlignVertical
 import typings.babylonjs.anon.Pattern
-import typings.babylonjs.anon.TileHeight
 import typings.babylonjs.meshesMeshDotvertexDataMod.VertexData
 import typings.babylonjs.meshesMeshMod.Mesh
 import typings.babylonjs.sceneMod.Scene
@@ -19,7 +19,7 @@ object meshesBuildersTiledPlaneBuilderMod {
   inline def CreateTiledPlane(name: String, options: Pattern): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledPlane")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
   inline def CreateTiledPlane(name: String, options: Pattern, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledPlane")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
   
-  inline def CreateTiledPlaneVertexData(options: TileHeight): VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledPlaneVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[VertexData]
+  inline def CreateTiledPlaneVertexData(options: AlignVertical): VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledPlaneVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[VertexData]
   
   object TiledPlaneBuilder {
     

@@ -1,6 +1,5 @@
 package typings.fundamentalReact.anon
 
-import typings.fundamentalReact.fundamentalReactStrings.ListDotItem
 import typings.fundamentalReact.libListListMod.ListItemProps
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
@@ -19,7 +18,7 @@ trait FunctionComponentListItem extends StObject {
   
   var defaultProps: js.UndefOr[PartialListItemProps] = js.native
   
-  var displayName: js.UndefOr[String] & ListDotItem = js.native
+  var displayName: js.UndefOr[String] = js.native
   
   var propTypes: js.UndefOr[WeakValidationMapListItem] = js.native
 }

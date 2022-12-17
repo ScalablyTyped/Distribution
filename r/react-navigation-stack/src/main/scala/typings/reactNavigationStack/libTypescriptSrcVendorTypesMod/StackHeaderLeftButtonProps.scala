@@ -6,7 +6,7 @@ import typings.reactNative.mod.LayoutChangeEvent
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNavigationStack.anon.TintColor
+import typings.reactNavigationStack.anon.TintColorString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ trait StackHeaderLeftButtonProps extends StObject {
   /**
     * Function which returns a React Element to display custom image in header's back button.
     */
-  var backImage: js.UndefOr[js.Function1[/* props */ TintColor, ReactNode]] = js.undefined
+  var backImage: js.UndefOr[js.Function1[/* props */ TintColorString, ReactNode]] = js.undefined
   
   /**
     * Whether it's possible to navigate back in stack.
@@ -113,7 +113,7 @@ object StackHeaderLeftButtonProps {
     
     inline def setAllowFontScalingUndefined: Self = StObject.set(x, "allowFontScaling", js.undefined)
     
-    inline def setBackImage(value: /* props */ TintColor => ReactNode): Self = StObject.set(x, "backImage", js.Any.fromFunction1(value))
+    inline def setBackImage(value: /* props */ TintColorString => ReactNode): Self = StObject.set(x, "backImage", js.Any.fromFunction1(value))
     
     inline def setBackImageUndefined: Self = StObject.set(x, "backImage", js.undefined)
     

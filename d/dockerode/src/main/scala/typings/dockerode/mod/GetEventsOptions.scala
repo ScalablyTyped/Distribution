@@ -9,7 +9,7 @@ trait GetEventsOptions extends StObject {
   
   var abortSignal: js.UndefOr[AbortSignal] = js.undefined
   
-  var filters: js.UndefOr[String | typings.dockerode.anon.Config] = js.undefined
+  var filters: js.UndefOr[String | typings.dockerode.anon.Container] = js.undefined
   
   var since: js.UndefOr[Double] = js.undefined
   
@@ -28,7 +28,7 @@ object GetEventsOptions {
     
     inline def setAbortSignalUndefined: Self = StObject.set(x, "abortSignal", js.undefined)
     
-    inline def setFilters(value: String | typings.dockerode.anon.Config): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: String | typings.dockerode.anon.Container): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     

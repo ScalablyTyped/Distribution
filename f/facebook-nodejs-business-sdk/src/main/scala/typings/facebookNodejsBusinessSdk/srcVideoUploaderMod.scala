@@ -8,6 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object srcVideoUploaderMod {
   
+  object VideoEncodingStatusChecker {
+    
+    @JSImport("facebook-nodejs-business-sdk/src/video-uploader", "VideoEncodingStatusChecker")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def getStatus(api: default, videoId: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getStatus")(api.asInstanceOf[js.Any], videoId.asInstanceOf[js.Any])).asInstanceOf[Any]
+    
+    inline def waitUntilReady(api: default, videoId: Double, interval: Double, timeout: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilReady")(api.asInstanceOf[js.Any], videoId.asInstanceOf[js.Any], interval.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  }
+  
   @JSImport("facebook-nodejs-business-sdk/src/video-uploader", "VideoUploadRequest")
   @js.native
   open class VideoUploadRequest protected () extends StObject {

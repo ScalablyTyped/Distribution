@@ -1,6 +1,6 @@
 package typings.braintree.mod
 
-import typings.braintree.anon.AuthorizationExpiredAt
+import typings.braintree.anon.Amount
 import typings.braintree.anon.Between
 import typings.braintree.anon.Contains
 import typings.braintree.anon.EndsWith
@@ -60,7 +60,7 @@ type TextFieldSearchFn = js.Function0[Contains]
 
 type TooManyRequestsError = js.Error
 
-type TransactionSearchFn = js.Function1[/* search */ AuthorizationExpiredAt, Unit]
+type TransactionSearchFn = js.Function1[/* search */ Amount, Unit]
 
 type UnexpectedError = js.Error
 

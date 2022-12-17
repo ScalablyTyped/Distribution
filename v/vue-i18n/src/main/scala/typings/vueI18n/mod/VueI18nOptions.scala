@@ -7,13 +7,13 @@ import typings.intlifyCoreBase.mod.MessageResolver
 import typings.intlifyCoreBase.mod.NumberFormats
 import typings.intlifyCoreBase.mod.PickupLocales
 import typings.std.NonNullable
+import typings.vueI18n.anon.Datetime
 import typings.vueI18n.anon.DatetimeFormats
-import typings.vueI18n.anon.Message
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait VueI18nOptions[Schema /* <: Message */, Locales /* <: DatetimeFormats | String */, Options /* <: ComposerOptions[
+trait VueI18nOptions[Schema /* <: Datetime */, Locales /* <: DatetimeFormats | String */, Options /* <: ComposerOptions[
 Schema, 
 Locales, 
 /* import warning: importer.ImportType#apply Failed type conversion: Locales extends {  messages :infer M} ? M : Locales extends string ? Locales : @intlify/core-base.@intlify/core-base.Locale */ js.Any, 
@@ -380,7 +380,7 @@ NumberFormats[
 }
 object VueI18nOptions {
   
-  inline def apply[Schema /* <: Message */, Locales /* <: DatetimeFormats | String */, Options /* <: ComposerOptions[
+  inline def apply[Schema /* <: Datetime */, Locales /* <: DatetimeFormats | String */, Options /* <: ComposerOptions[
     Schema, 
     Locales, 
     /* import warning: importer.ImportType#apply Failed type conversion: Locales extends {  messages :infer M} ? M : Locales extends string ? Locales : @intlify/core-base.@intlify/core-base.Locale */ js.Any, 
@@ -411,7 +411,7 @@ object VueI18nOptions {
     __obj.asInstanceOf[VueI18nOptions[Schema, Locales, Options]]
   }
   
-  extension [Self <: VueI18nOptions[?, ?, ?], Schema /* <: Message */, Locales /* <: DatetimeFormats | String */, Options /* <: ComposerOptions[
+  extension [Self <: VueI18nOptions[?, ?, ?], Schema /* <: Datetime */, Locales /* <: DatetimeFormats | String */, Options /* <: ComposerOptions[
     Schema, 
     Locales, 
     /* import warning: importer.ImportType#apply Failed type conversion: Locales extends {  messages :infer M} ? M : Locales extends string ? Locales : @intlify/core-base.@intlify/core-base.Locale */ js.Any, 

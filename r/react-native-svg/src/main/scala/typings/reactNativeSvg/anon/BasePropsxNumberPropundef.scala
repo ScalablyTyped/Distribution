@@ -106,7 +106,7 @@ trait BasePropsxNumberPropundef extends StObject {
     ColumnMajorTransformMatrix | String | (/* import warning: importer.ImportType#apply Failed type conversion: react-native.react-native.TransformsStyle['transform'] */ js.Any)
   ] = js.undefined
   
-  var translate: js.UndefOr[NumberArray] & js.UndefOr[String]
+  var translate: js.UndefOr[NumberArray] = js.undefined
   
   var translateX: js.UndefOr[NumberProp] = js.undefined
   
@@ -118,8 +118,8 @@ trait BasePropsxNumberPropundef extends StObject {
 }
 object BasePropsxNumberPropundef {
   
-  inline def apply(style: js.Iterable[js.Object], translate: js.UndefOr[NumberArray] & js.UndefOr[String]): BasePropsxNumberPropundef = {
-    val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any], translate = translate.asInstanceOf[js.Any])
+  inline def apply(style: js.Iterable[js.Object]): BasePropsxNumberPropundef = {
+    val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasePropsxNumberPropundef]
   }
   
@@ -299,7 +299,11 @@ object BasePropsxNumberPropundef {
     
     inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
-    inline def setTranslate(value: js.UndefOr[NumberArray] & js.UndefOr[String]): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+    inline def setTranslate(value: NumberArray): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+    
+    inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
+    
+    inline def setTranslateVarargs(value: NumberProp*): Self = StObject.set(x, "translate", js.Array(value*))
     
     inline def setTranslateX(value: NumberProp): Self = StObject.set(x, "translateX", value.asInstanceOf[js.Any])
     

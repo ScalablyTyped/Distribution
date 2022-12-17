@@ -12,11 +12,11 @@ trait PickImplformPartialPickIm
   
   var disabled: js.UndefOr[String] = js.undefined
   
-  var form: String & js.UndefOr[String]
+  var form: String
 }
 object PickImplformPartialPickIm {
   
-  inline def apply(form: String & js.UndefOr[String]): PickImplformPartialPickIm = {
+  inline def apply(form: String): PickImplformPartialPickIm = {
     val __obj = js.Dynamic.literal(form = form.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplformPartialPickIm]
   }
@@ -27,6 +27,6 @@ object PickImplformPartialPickIm {
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    inline def setForm(value: String & js.UndefOr[String]): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+    inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
   }
 }

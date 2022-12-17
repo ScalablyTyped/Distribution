@@ -1,28 +1,24 @@
 package typings.tern.anon
 
-import typings.tern.libTernMod.CompletionsQuery
-import typings.tern.libTernMod.CompletionsQueryResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Query extends StObject {
+trait Query[Q /* <: typings.tern.libTernMod.Query */] extends StObject {
   
-  var query: CompletionsQuery
-  
-  var result: CompletionsQueryResult
+  var query: js.UndefOr[Q] = js.undefined
 }
 object Query {
   
-  inline def apply(query: CompletionsQuery, result: CompletionsQueryResult): Query = {
-    val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Query]
+  inline def apply[Q /* <: typings.tern.libTernMod.Query */](): Query[Q] = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[Query[Q]]
   }
   
-  extension [Self <: Query](x: Self) {
+  extension [Self <: Query[?], Q /* <: typings.tern.libTernMod.Query */](x: Self & Query[Q]) {
     
-    inline def setQuery(value: CompletionsQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: Q): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    inline def setResult(value: CompletionsQueryResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

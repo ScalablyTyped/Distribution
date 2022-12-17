@@ -1,7 +1,6 @@
 package typings.playcanvas.global.pc
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.playcanvas.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -129,6 +128,10 @@ open class EntityReference protected ()
     * entity guid.
     * @param {Object<string, Function>} [eventConfig] - A map of event listener configurations.
     */
-  def this(parentComponent: Component, entityPropertyName: String) = this()
-  def this(parentComponent: Component, entityPropertyName: String, eventConfig: StringDictionary[js.Function]) = this()
+  def this(parentComponent: typings.playcanvas.mod.Component, entityPropertyName: String) = this()
+  def this(
+    parentComponent: typings.playcanvas.mod.Component,
+    entityPropertyName: String,
+    eventConfig: StringDictionary[js.Function]
+  ) = this()
 }

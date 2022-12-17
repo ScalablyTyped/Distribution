@@ -546,7 +546,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined react.react.CSSProperties & std.Partial<std.Record<'--font-size' | '--icon-size' | '--gap', string>> */
+/* Inlined react.react.CSSProperties & std.Partial<std.Record<'--icon-size' | '--font-size' | '--gap', string>> */
 trait CSSPropertiesPartialRecorAnimation extends StObject {
   
   var `--font-size`: js.UndefOr[String] = js.undefined

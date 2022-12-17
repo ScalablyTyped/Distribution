@@ -14,13 +14,13 @@ trait PickImplplaceholderPartia
   
   var disabled: js.UndefOr[String] = js.undefined
   
-  var placeholder: String & js.UndefOr[String]
+  var placeholder: String
   
   var visible: js.UndefOr[String] = js.undefined
 }
 object PickImplplaceholderPartia {
   
-  inline def apply(placeholder: String & js.UndefOr[String]): PickImplplaceholderPartia = {
+  inline def apply(placeholder: String): PickImplplaceholderPartia = {
     val __obj = js.Dynamic.literal(placeholder = placeholder.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplplaceholderPartia]
   }
@@ -35,7 +35,7 @@ object PickImplplaceholderPartia {
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    inline def setPlaceholder(value: String & js.UndefOr[String]): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     inline def setVisible(value: String): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     

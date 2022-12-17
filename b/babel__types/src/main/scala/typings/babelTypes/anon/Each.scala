@@ -1,5 +1,6 @@
 package typings.babelTypes.anon
 
+import typings.babelTypes.libMod.Node
 import typings.babelTypes.libMod.Validator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,5 +20,7 @@ object Each {
   extension [Self <: Each](x: Self) {
     
     inline def setEach(value: Validator): Self = StObject.set(x, "each", value.asInstanceOf[js.Any])
+    
+    inline def setEachFunction3(value: (/* node */ Node, /* key */ String, /* val */ Any) => Unit): Self = StObject.set(x, "each", js.Any.fromFunction3(value))
   }
 }

@@ -3,7 +3,7 @@ package typings.testcafeReporterDashboard
 import typings.ioTs.mod.ExactC
 import typings.ioTs.mod.ReadonlyC
 import typings.ioTs.mod.TypeC
-import typings.testcafeReporterDashboard.anon.BuildId
+import typings.testcafeReporterDashboard.anon.EndTime
 import typings.testcafeReporterDashboard.anon.FailedCount
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,7 +13,7 @@ object libTypesTaskDoneArgsMod {
   
   @JSImport("testcafe-reporter-dashboard/lib/types/task-done-args", "TaskDoneArgsSchema")
   @js.native
-  val TaskDoneArgsSchema: ReadonlyC[ExactC[TypeC[BuildId]]] = js.native
+  val TaskDoneArgsSchema: ReadonlyC[ExactC[TypeC[EndTime]]] = js.native
   
   @JSImport("testcafe-reporter-dashboard/lib/types/task-done-args", "TaskResultSchema")
   @js.native

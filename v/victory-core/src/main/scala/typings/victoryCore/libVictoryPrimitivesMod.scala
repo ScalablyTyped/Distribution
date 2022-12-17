@@ -4,17 +4,17 @@ import typings.react.mod.ReactElement
 import typings.react.mod.global.JSX.Element
 import typings.victoryCore.anon.Active
 import typings.victoryCore.anon.AriaLabel_
-import typings.victoryCore.anon.Children
-import typings.victoryCore.anon.CircleComponent
-import typings.victoryCore.anon.ClassName
+import typings.victoryCore.anon.ClipId
 import typings.victoryCore.anon.ClipPath
-import typings.victoryCore.anon.Data
+import typings.victoryCore.anon.Datum
 import typings.victoryCore.anon.Desc
 import typings.victoryCore.anon.DisableInlineStyles
 import typings.victoryCore.anon.LineComponent
 import typings.victoryCore.anon.PathComponent
 import typings.victoryCore.anon.RectComponent
 import typings.victoryCore.anon.Role
+import typings.victoryCore.anon.ShapeRendering
+import typings.victoryCore.anon.Title
 import typings.victoryCore.libVictoryPrimitivesArcMod.ArcProps
 import typings.victoryCore.libVictoryPrimitivesBackgroundMod.BackgroundProps
 import typings.victoryCore.libVictoryPrimitivesBorderMod.BorderProps
@@ -64,8 +64,8 @@ object libVictoryPrimitivesMod {
     
     @JSImport("victory-core/lib/victory-primitives", "Background.defaultProps")
     @js.native
-    def defaultProps: CircleComponent = js.native
-    inline def defaultProps_=(x: CircleComponent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: RectComponent = js.native
+    inline def defaultProps_=(x: RectComponent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("victory-core/lib/victory-primitives", "Background.propTypes")
     @js.native
@@ -83,13 +83,13 @@ object libVictoryPrimitivesMod {
     
     @JSImport("victory-core/lib/victory-primitives", "Border.defaultProps")
     @js.native
-    def defaultProps: RectComponent = js.native
-    inline def defaultProps_=(x: RectComponent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: Role = js.native
+    inline def defaultProps_=(x: Role): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("victory-core/lib/victory-primitives", "Border.propTypes")
     @js.native
-    def propTypes: ClassName = js.native
-    inline def propTypes_=(x: ClassName): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    def propTypes: ClipPath = js.native
+    inline def propTypes_=(x: ClipPath): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
   inline def Circle(props: VictoryPrimitiveShapeProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Circle")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
@@ -104,8 +104,8 @@ object libVictoryPrimitivesMod {
     
     @JSImport("victory-core/lib/victory-primitives", "ClipPath.propTypes")
     @js.native
-    def propTypes: Children = js.native
-    inline def propTypes_=(x: Children): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    def propTypes: ClipId = js.native
+    inline def propTypes_=(x: ClipId): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
   inline def Line(props: VictoryPrimitiveShapeProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Line")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
@@ -125,8 +125,8 @@ object libVictoryPrimitivesMod {
     
     @JSImport("victory-core/lib/victory-primitives", "LineSegment.propTypes")
     @js.native
-    def propTypes: ClipPath = js.native
-    inline def propTypes_=(x: ClipPath): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    def propTypes: Datum = js.native
+    inline def propTypes_=(x: Datum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
   inline def Path(props: VictoryPrimitiveShapeProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Path")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
@@ -146,8 +146,8 @@ object libVictoryPrimitivesMod {
     
     @JSImport("victory-core/lib/victory-primitives", "Point.propTypes")
     @js.native
-    def propTypes: Data = js.native
-    inline def propTypes_=(x: Data): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    def propTypes: Desc = js.native
+    inline def propTypes_=(x: Desc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
   inline def Rect(props: VictoryPrimitiveShapeProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Rect")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
@@ -164,8 +164,8 @@ object libVictoryPrimitivesMod {
     
     @JSImport("victory-core/lib/victory-primitives", "Text.propTypes")
     @js.native
-    def propTypes: Desc = js.native
-    inline def propTypes_=(x: Desc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    def propTypes: Title = js.native
+    inline def propTypes_=(x: Title): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
   object Whisker {
@@ -178,8 +178,8 @@ object libVictoryPrimitivesMod {
     
     @JSImport("victory-core/lib/victory-primitives", "Whisker.defaultProps")
     @js.native
-    def defaultProps: Role = js.native
-    inline def defaultProps_=(x: Role): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: ShapeRendering = js.native
+    inline def defaultProps_=(x: ShapeRendering): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("victory-core/lib/victory-primitives", "Whisker.propTypes")
     @js.native

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait _empty extends StObject {
   
   @JSName("$")
-  var $: Dictkey
+  var $: Package
   
   var application: js.UndefOr[js.Array[ManifestApplication]] = js.undefined
   
@@ -25,14 +25,14 @@ trait _empty extends StObject {
 }
 object _empty {
   
-  inline def apply($: Dictkey): _empty = {
+  inline def apply($: Package): _empty = {
     val __obj = js.Dynamic.literal($ = $.asInstanceOf[js.Any])
     __obj.asInstanceOf[_empty]
   }
   
   extension [Self <: _empty](x: Self) {
     
-    inline def set$(value: Dictkey): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
+    inline def set$(value: Package): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
     
     inline def setApplication(value: js.Array[ManifestApplication]): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     

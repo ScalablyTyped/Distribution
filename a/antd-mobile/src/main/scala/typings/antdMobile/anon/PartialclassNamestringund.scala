@@ -201,7 +201,7 @@ trait PartialclassNamestringund extends StObject {
   
   var requiredMarkStyle: js.UndefOr[asterisk | `text-required` | `text-optional` | none] = js.undefined
   
-  var style: js.UndefOr[CSSPropertiesPartialRecorAnimationName] = js.undefined
+  var style: js.UndefOr[CSSPropertiesPartialRecorAnimationPlayState] = js.undefined
   
   var tabIndex: js.UndefOr[Double] = js.undefined
   
@@ -492,7 +492,7 @@ object PartialclassNamestringund {
     
     inline def setRequiredMarkStyleUndefined: Self = StObject.set(x, "requiredMarkStyle", js.undefined)
     
-    inline def setStyle(value: CSSPropertiesPartialRecorAnimationName): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSPropertiesPartialRecorAnimationPlayState): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     

@@ -20,10 +20,10 @@ import typings.sentryBrowser.typesIntegrationsMod.TryCatch
 import typings.sentryBrowser.typesTransportsTypesMod.BrowserTransportOptions
 import typings.sentryBrowser.typesTransportsUtilsMod.FetchImpl
 import typings.sentryCore.anon.FnCall
+import typings.sentryCore.anon.FnCallBreadcrumbHint
 import typings.sentryCore.anon.FnCallCallback
 import typings.sentryCore.anon.FnCallContextCustomSamplingContext
 import typings.sentryCore.anon.FnCallEventHint
-import typings.sentryCore.anon.FnCallExceptionHint
 import typings.sentryCore.anon.FnCallMessageLevelHint
 import typings.sentryCore.anon.FnCallNameContext
 import typings.sentryCore.anon.FnCallUser
@@ -233,15 +233,15 @@ object anon {
     
     val WINDOW: InternalGlobal & Window = js.native
     
-    def addBreadcrumb(breadcrumb: Breadcrumb): ReturnType[FnCall] = js.native
+    def addBreadcrumb(breadcrumb: Breadcrumb): ReturnType[FnCallBreadcrumbHint] = js.native
     
     def addGlobalEventProcessor(callback: EventProcessor): Unit = js.native
     
     def captureEvent(event: Event): ReturnType[FnCallEventHint] = js.native
     def captureEvent(event: Event, hint: EventHint): ReturnType[FnCallEventHint] = js.native
     
-    def captureException(exception: Any): ReturnType[FnCallExceptionHint] = js.native
-    def captureException(exception: Any, captureContext: CaptureContext): ReturnType[FnCallExceptionHint] = js.native
+    def captureException(exception: Any): ReturnType[FnCall] = js.native
+    def captureException(exception: Any, captureContext: CaptureContext): ReturnType[FnCall] = js.native
     
     def captureMessage(message: String): ReturnType[FnCallMessageLevelHint] = js.native
     def captureMessage(message: String, captureContext: CaptureContext): ReturnType[FnCallMessageLevelHint] = js.native

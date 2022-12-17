@@ -1,6 +1,6 @@
 package typings.babylonjs.global.BABYLON
 
-import typings.babylonjs.anon.Updatable
+import typings.babylonjs.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +20,7 @@ open class PointsCloudSystem protected ()
     * @param options.updatable
     */
   def this(name: String, pointSize: Double, scene: typings.babylonjs.BABYLON.Scene) = this()
-  def this(name: String, pointSize: Double, scene: typings.babylonjs.BABYLON.Scene, options: Updatable) = this()
+  def this(name: String, pointSize: Double, scene: typings.babylonjs.BABYLON.Scene, options: `0`) = this()
   
   /**
     * Releases all held resources

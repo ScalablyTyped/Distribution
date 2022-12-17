@@ -1,6 +1,5 @@
 package typings.awsLambda.anon
 
-import typings.awsLambda.awsLambdaStrings.KMS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,11 +9,11 @@ trait EncryptionKeytypeKMS extends StObject {
   
   var id: String
   
-  var `type`: String & KMS
+  var `type`: String
 }
 object EncryptionKeytypeKMS {
   
-  inline def apply(id: String, `type`: String & KMS): EncryptionKeytypeKMS = {
+  inline def apply(id: String, `type`: String): EncryptionKeytypeKMS = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptionKeytypeKMS]
@@ -24,6 +23,6 @@ object EncryptionKeytypeKMS {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setType(value: String & KMS): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

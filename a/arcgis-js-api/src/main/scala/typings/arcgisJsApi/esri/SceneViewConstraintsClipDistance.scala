@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.HashMap
 import typings.arcgisJsApi.arcgisJsApiStrings.auto
 import typings.arcgisJsApi.arcgisJsApiStrings.manual
 import org.scalablytyped.runtime.StObject
@@ -36,12 +35,8 @@ trait SceneViewConstraintsClipDistance
 }
 object SceneViewConstraintsClipDistance {
   
-  inline def apply(
-    set: (js.UndefOr[
-      js.Function2[/* propertyName */ String, /* value */ Any, SceneViewConstraintsClipDistance]
-    ]) & (js.UndefOr[js.Function1[/* props */ HashMap[Any], SceneViewConstraintsClipDistance]])
-  ): SceneViewConstraintsClipDistance = {
-    val __obj = js.Dynamic.literal(set = set.asInstanceOf[js.Any])
+  inline def apply(): SceneViewConstraintsClipDistance = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SceneViewConstraintsClipDistance]
   }
   

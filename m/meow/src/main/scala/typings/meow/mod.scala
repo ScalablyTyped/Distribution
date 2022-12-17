@@ -20,6 +20,8 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def default[Flags /* <: AnyFlags */](): Result[Flags] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Result[Flags]]
+  inline def default[Flags /* <: AnyFlags */](helpMessage: String): Result[Flags] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(helpMessage.asInstanceOf[js.Any]).asInstanceOf[Result[Flags]]
+  inline def default[Flags /* <: AnyFlags */](helpMessage: String, options: Options[Flags]): Result[Flags] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(helpMessage.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result[Flags]]
   inline def default[Flags /* <: AnyFlags */](options: Options[Flags]): Result[Flags] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Result[Flags]]
   
   type AnyFlag = StringFlag | BooleanFlag | NumberFlag

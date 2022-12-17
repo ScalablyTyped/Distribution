@@ -8,8 +8,6 @@ trait Mute extends StObject {
   
   var absorbDTMF: js.UndefOr[Boolean] = js.undefined
   
-  var bridgeId: String
-  
   var channel: String | js.Array[String]
   
   var mute: js.UndefOr[Boolean] = js.undefined
@@ -18,8 +16,8 @@ trait Mute extends StObject {
 }
 object Mute {
   
-  inline def apply(bridgeId: String, channel: String | js.Array[String]): Mute = {
-    val __obj = js.Dynamic.literal(bridgeId = bridgeId.asInstanceOf[js.Any], channel = channel.asInstanceOf[js.Any])
+  inline def apply(channel: String | js.Array[String]): Mute = {
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mute]
   }
   
@@ -28,8 +26,6 @@ object Mute {
     inline def setAbsorbDTMF(value: Boolean): Self = StObject.set(x, "absorbDTMF", value.asInstanceOf[js.Any])
     
     inline def setAbsorbDTMFUndefined: Self = StObject.set(x, "absorbDTMF", js.undefined)
-    
-    inline def setBridgeId(value: String): Self = StObject.set(x, "bridgeId", value.asInstanceOf[js.Any])
     
     inline def setChannel(value: String | js.Array[String]): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     

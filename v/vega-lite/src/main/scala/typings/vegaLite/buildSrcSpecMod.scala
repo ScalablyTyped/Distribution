@@ -181,7 +181,7 @@ object buildSrcSpecMod {
     /**
       * An object describing the data source.
       */
-    var data: (js.UndefOr[Data | Null]) & Data
+    var data: js.UndefOr[Data | Null] = js.undefined
     
     /**
       * A global data store for named datasets. This is a mapping from names to inline datasets.
@@ -257,11 +257,10 @@ object buildSrcSpecMod {
   object TopLevelFacetSpec {
     
     inline def apply(
-      data: (js.UndefOr[Data | Null]) & Data,
       facet: (FacetFieldDef[Field, ExprRef | SignalRef]) | (FacetMapping[Field, FacetFieldDef[Field, ExprRef | SignalRef]]),
       spec: LayerSpec[Field] | UnitSpecWithFrame[Field]
     ): TopLevelFacetSpec = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], facet = facet.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(facet = facet.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])
       __obj.asInstanceOf[TopLevelFacetSpec]
     }
     
@@ -299,7 +298,11 @@ object buildSrcSpecMod {
       
       inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      inline def setData(value: (js.UndefOr[Data | Null]) & Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setDataNull: Self = StObject.set(x, "data", null)
+      
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
       inline def setDatasets(value: Datasets): Self = StObject.set(x, "datasets", value.asInstanceOf[js.Any])
       
@@ -370,11 +373,10 @@ object buildSrcSpecMod {
   object _TopLevelSpec {
     
     inline def TopLevelFacetSpec(
-      data: (js.UndefOr[Data | Null]) & Data,
       facet: (FacetFieldDef[Field, ExprRef | SignalRef]) | (FacetMapping[Field, FacetFieldDef[Field, ExprRef | SignalRef]]),
       spec: LayerSpec[Field] | UnitSpecWithFrame[Field]
     ): typings.vegaLite.buildSrcSpecMod.TopLevelFacetSpec = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], facet = facet.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(facet = facet.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaLite.buildSrcSpecMod.TopLevelFacetSpec]
     }
     

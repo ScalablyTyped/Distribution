@@ -18,9 +18,9 @@ import typings.react.mod.global.JSX.LibraryManagedAttributes
 import typings.reactI18next.anon.Call
 import typings.reactI18next.anon.Children
 import typings.reactI18next.anon.I18n
+import typings.reactI18next.anon.I18nI18n
 import typings.reactI18next.anon.InitialI18nStore
 import typings.reactI18next.anon.Lng
-import typings.reactI18next.anon.Ready
 import typings.reactI18next.reactI18nextBooleans.`false`
 import typings.reactI18next.reactI18nextStrings.default
 import typings.reactI18next.reactI18nextStrings.fallback
@@ -41,7 +41,7 @@ object mod {
   
   @JSImport("react-i18next", "I18nContext")
   @js.native
-  val I18nContext: Context[I18n] = js.native
+  val I18nContext: Context[I18nI18n] = js.native
   
   @JSImport("react-i18next", "I18nextProvider")
   @js.native
@@ -356,7 +356,7 @@ object mod {
     }
   }
   
-  type UseTranslationResponse[N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */, TKPrefix] = (js.Tuple3[TFunction[N, TKPrefix], i18n, Boolean]) & (Ready[N, TKPrefix])
+  type UseTranslationResponse[N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */, TKPrefix] = (js.Tuple3[TFunction[N, TKPrefix], i18n, Boolean]) & (I18n[N, TKPrefix])
   
   trait WithTranslationProps extends StObject {
     

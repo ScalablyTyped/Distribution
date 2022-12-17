@@ -88,7 +88,7 @@ trait PickImplonRequestPartialP
   
   def onRequest(tabPath: String): Unit
   @JSName("onRequest")
-  var onRequest_Original: (js.ThisFunction1[/* this */ JQuery, /* tabPath */ String, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* tabPath */ String, Unit]])
+  var onRequest_Original: js.ThisFunction1[/* this */ JQuery, /* tabPath */ String, Unit]
   
   var onVisible: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* tabPath */ String, Unit]] = js.undefined
   
@@ -106,9 +106,7 @@ trait PickImplonRequestPartialP
 }
 object PickImplonRequestPartialP {
   
-  inline def apply(
-    onRequest: (js.ThisFunction1[/* this */ JQuery, /* tabPath */ String, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* tabPath */ String, Unit]])
-  ): PickImplonRequestPartialP = {
+  inline def apply(onRequest: js.ThisFunction1[/* this */ JQuery, /* tabPath */ String, Unit]): PickImplonRequestPartialP = {
     val __obj = js.Dynamic.literal(onRequest = onRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonRequestPartialP]
   }
@@ -219,9 +217,7 @@ object PickImplonRequestPartialP {
     
     inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
     
-    inline def setOnRequest(
-      value: (js.ThisFunction1[/* this */ JQuery, /* tabPath */ String, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* tabPath */ String, Unit]])
-    ): Self = StObject.set(x, "onRequest", value.asInstanceOf[js.Any])
+    inline def setOnRequest(value: js.ThisFunction1[/* this */ JQuery, /* tabPath */ String, Unit]): Self = StObject.set(x, "onRequest", value.asInstanceOf[js.Any])
     
     inline def setOnVisible(value: js.ThisFunction1[/* this */ JQuery, /* tabPath */ String, Unit]): Self = StObject.set(x, "onVisible", value.asInstanceOf[js.Any])
     

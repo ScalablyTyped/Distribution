@@ -378,187 +378,175 @@ object SearchSettings {
   trait Param extends StObject
   object Param {
     
-    inline def PickImplapiSettingsPartia(apiSettings: ApiSettings & js.UndefOr[ApiSettings]): typings.semanticUiSearch.anon.PickImplapiSettingsPartia = {
+    inline def PickImplapiSettingsPartia(apiSettings: ApiSettings): typings.semanticUiSearch.anon.PickImplapiSettingsPartia = {
       val __obj = js.Dynamic.literal(apiSettings = apiSettings.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiSearch.anon.PickImplapiSettingsPartia]
     }
     
-    inline def PickImplcachePartialPickI(cache: Boolean & js.UndefOr[Boolean]): typings.semanticUiSearch.anon.PickImplcachePartialPickI = {
+    inline def PickImplcachePartialPickI(cache: Boolean): typings.semanticUiSearch.anon.PickImplcachePartialPickI = {
       val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiSearch.anon.PickImplcachePartialPickI]
     }
     
-    inline def PickImplclassNamePartialP(className: ClassNameSettings & js.UndefOr[ClassNameSettings]): typings.semanticUiSearch.anon.PickImplclassNamePartialP = {
+    inline def PickImplclassNamePartialP(className: ClassNameSettings): typings.semanticUiSearch.anon.PickImplclassNamePartialP = {
       val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiSearch.anon.PickImplclassNamePartialP]
     }
     
-    inline def PickImpldebugPartialPickI(debug: Boolean & js.UndefOr[Boolean]): typings.semanticUiSearch.anon.PickImpldebugPartialPickI = {
+    inline def PickImpldebugPartialPickI(debug: Boolean): typings.semanticUiSearch.anon.PickImpldebugPartialPickI = {
       val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiSearch.anon.PickImpldebugPartialPickI]
     }
     
-    inline def PickImpldurationPartialPi(duration: Double & js.UndefOr[Double]): typings.semanticUiSearch.anon.PickImpldurationPartialPi = {
+    inline def PickImpldurationPartialPi(duration: Double): typings.semanticUiSearch.anon.PickImpldurationPartialPi = {
       val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiSearch.anon.PickImpldurationPartialPi]
     }
     
-    inline def PickImpleasingPartialPick(easing: String & js.UndefOr[String]): typings.semanticUiSearch.anon.PickImpleasingPartialPick = {
+    inline def PickImpleasingPartialPick(easing: String): typings.semanticUiSearch.anon.PickImpleasingPartialPick = {
       val __obj = js.Dynamic.literal(easing = easing.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiSearch.anon.PickImpleasingPartialPick]
     }
     
-    inline def PickImplerrorPartialPickI(error: ErrorSettings & js.UndefOr[ErrorSettings]): typings.semanticUiSearch.anon.PickImplerrorPartialPickI = {
+    inline def PickImplerrorPartialPickI(error: ErrorSettings): typings.semanticUiSearch.anon.PickImplerrorPartialPickI = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiSearch.anon.PickImplerrorPartialPickI]
     }
     
-    inline def PickImplfieldsPartialPick(fields: FieldsSettings & js.UndefOr[FieldsSettings]): typings.semanticUiSearch.anon.PickImplfieldsPartialPick = {
+    inline def PickImplfieldsPartialPick(fields: FieldsSettings): typings.semanticUiSearch.anon.PickImplfieldsPartialPick = {
       val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiSearch.anon.PickImplfieldsPartialPick]
     }
     
-    inline def PickImplhideDelayPartialP(hideDelay: Double & js.UndefOr[Double]): typings.semanticUiSearch.anon.PickImplhideDelayPartialP = {
+    inline def PickImplhideDelayPartialP(hideDelay: Double): typings.semanticUiSearch.anon.PickImplhideDelayPartialP = {
       val __obj = js.Dynamic.literal(hideDelay = hideDelay.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiSearch.anon.PickImplhideDelayPartialP]
     }
     
-    inline def PickImplmaxResultsPartial(maxResults: Double & js.UndefOr[Double]): typings.semanticUiSearch.anon.PickImplmaxResultsPartial = {
+    inline def PickImplmaxResultsPartial(maxResults: Double): typings.semanticUiSearch.anon.PickImplmaxResultsPartial = {
       val __obj = js.Dynamic.literal(maxResults = maxResults.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiSearch.anon.PickImplmaxResultsPartial]
     }
     
-    inline def PickImplmetadataPartialPi(metadata: MetadataSettings & js.UndefOr[MetadataSettings]): typings.semanticUiSearch.anon.PickImplmetadataPartialPi = {
+    inline def PickImplmetadataPartialPi(metadata: MetadataSettings): typings.semanticUiSearch.anon.PickImplmetadataPartialPi = {
       val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiSearch.anon.PickImplmetadataPartialPi]
     }
     
-    inline def PickImplminCharactersPart(minCharacters: Double & js.UndefOr[Double]): typings.semanticUiSearch.anon.PickImplminCharactersPart = {
+    inline def PickImplminCharactersPart(minCharacters: Double): typings.semanticUiSearch.anon.PickImplminCharactersPart = {
       val __obj = js.Dynamic.literal(minCharacters = minCharacters.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiSearch.anon.PickImplminCharactersPart]
     }
     
-    inline def PickImplnamePartialPickIm(name: String & js.UndefOr[String]): typings.semanticUiSearch.anon.PickImplnamePartialPickIm = {
+    inline def PickImplnamePartialPickIm(name: String): typings.semanticUiSearch.anon.PickImplnamePartialPickIm = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiSearch.anon.PickImplnamePartialPickIm]
     }
     
-    inline def PickImplnamespacePartialP(namespace: String & js.UndefOr[String]): typings.semanticUiSearch.anon.PickImplnamespacePartialP = {
+    inline def PickImplnamespacePartialP(namespace: String): typings.semanticUiSearch.anon.PickImplnamespacePartialP = {
       val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiSearch.anon.PickImplnamespacePartialP]
     }
     
-    inline def PickImplonResultsAddParti(
-      onResultsAdd: (js.ThisFunction1[/* this */ JQuery, /* html */ String, `false` | Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* html */ String, `false` | Unit]])
-    ): typings.semanticUiSearch.anon.PickImplonResultsAddParti = {
+    inline def PickImplonResultsAddParti(onResultsAdd: js.ThisFunction1[/* this */ JQuery, /* html */ String, `false` | Unit]): typings.semanticUiSearch.anon.PickImplonResultsAddParti = {
       val __obj = js.Dynamic.literal(onResultsAdd = onResultsAdd.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiSearch.anon.PickImplonResultsAddParti]
     }
     
-    inline def PickImplonResultsClosePar(
-      onResultsClose: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-    ): typings.semanticUiSearch.anon.PickImplonResultsClosePar = {
+    inline def PickImplonResultsClosePar(onResultsClose: js.ThisFunction0[/* this */ JQuery, Unit]): typings.semanticUiSearch.anon.PickImplonResultsClosePar = {
       val __obj = js.Dynamic.literal(onResultsClose = onResultsClose.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiSearch.anon.PickImplonResultsClosePar]
     }
     
-    inline def PickImplonResultsOpenPart(
-      onResultsOpen: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-    ): typings.semanticUiSearch.anon.PickImplonResultsOpenPart = {
+    inline def PickImplonResultsOpenPart(onResultsOpen: js.ThisFunction0[/* this */ JQuery, Unit]): typings.semanticUiSearch.anon.PickImplonResultsOpenPart = {
       val __obj = js.Dynamic.literal(onResultsOpen = onResultsOpen.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiSearch.anon.PickImplonResultsOpenPart]
     }
     
-    inline def PickImplonResultsPartialP(
-      onResults: (js.ThisFunction1[/* this */ JQuery, /* response */ Any, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* response */ Any, Unit]])
-    ): typings.semanticUiSearch.anon.PickImplonResultsPartialP = {
+    inline def PickImplonResultsPartialP(onResults: js.ThisFunction1[/* this */ JQuery, /* response */ Any, Unit]): typings.semanticUiSearch.anon.PickImplonResultsPartialP = {
       val __obj = js.Dynamic.literal(onResults = onResults.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiSearch.anon.PickImplonResultsPartialP]
     }
     
-    inline def PickImplonSearchQueryPart(
-      onSearchQuery: (js.ThisFunction1[/* this */ JQuery, /* query */ String, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* query */ String, Unit]])
-    ): typings.semanticUiSearch.anon.PickImplonSearchQueryPart = {
+    inline def PickImplonSearchQueryPart(onSearchQuery: js.ThisFunction1[/* this */ JQuery, /* query */ String, Unit]): typings.semanticUiSearch.anon.PickImplonSearchQueryPart = {
       val __obj = js.Dynamic.literal(onSearchQuery = onSearchQuery.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiSearch.anon.PickImplonSearchQueryPart]
     }
     
     inline def PickImplonSelectPartialPi(
-      onSelect: (js.ThisFunction2[/* this */ JQuery, /* result */ Any, /* response */ Any, `false` | Unit]) & (js.UndefOr[
-          js.ThisFunction2[/* this */ JQuery, /* result */ Any, /* response */ Any, `false` | Unit]
-        ])
+      onSelect: js.ThisFunction2[/* this */ JQuery, /* result */ Any, /* response */ Any, `false` | Unit]
     ): typings.semanticUiSearch.anon.PickImplonSelectPartialPi = {
       val __obj = js.Dynamic.literal(onSelect = onSelect.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiSearch.anon.PickImplonSelectPartialPi]
     }
     
-    inline def PickImplperformancePartia(performance: Boolean & js.UndefOr[Boolean]): typings.semanticUiSearch.anon.PickImplperformancePartia = {
+    inline def PickImplperformancePartia(performance: Boolean): typings.semanticUiSearch.anon.PickImplperformancePartia = {
       val __obj = js.Dynamic.literal(performance = performance.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiSearch.anon.PickImplperformancePartia]
     }
     
-    inline def PickImplregExpPartialPick(regExp: RegExpSettings & js.UndefOr[RegExpSettings]): typings.semanticUiSearch.anon.PickImplregExpPartialPick = {
+    inline def PickImplregExpPartialPick(regExp: RegExpSettings): typings.semanticUiSearch.anon.PickImplregExpPartialPick = {
       val __obj = js.Dynamic.literal(regExp = regExp.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiSearch.anon.PickImplregExpPartialPick]
     }
     
-    inline def PickImplsearchDelayPartia(searchDelay: Double & js.UndefOr[Double]): typings.semanticUiSearch.anon.PickImplsearchDelayPartia = {
+    inline def PickImplsearchDelayPartia(searchDelay: Double): typings.semanticUiSearch.anon.PickImplsearchDelayPartia = {
       val __obj = js.Dynamic.literal(searchDelay = searchDelay.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiSearch.anon.PickImplsearchDelayPartia]
     }
     
-    inline def PickImplsearchFieldsParti(searchFields: js.Array[String] & js.UndefOr[js.Array[String]]): typings.semanticUiSearch.anon.PickImplsearchFieldsParti = {
+    inline def PickImplsearchFieldsParti(searchFields: js.Array[String]): typings.semanticUiSearch.anon.PickImplsearchFieldsParti = {
       val __obj = js.Dynamic.literal(searchFields = searchFields.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiSearch.anon.PickImplsearchFieldsParti]
     }
     
-    inline def PickImplsearchFullTextPar(searchFullText: Boolean & js.UndefOr[Boolean]): typings.semanticUiSearch.anon.PickImplsearchFullTextPar = {
+    inline def PickImplsearchFullTextPar(searchFullText: Boolean): typings.semanticUiSearch.anon.PickImplsearchFullTextPar = {
       val __obj = js.Dynamic.literal(searchFullText = searchFullText.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiSearch.anon.PickImplsearchFullTextPar]
     }
     
-    inline def PickImplselectFirstResult(selectFirstResult: Boolean & js.UndefOr[Boolean]): typings.semanticUiSearch.anon.PickImplselectFirstResult = {
+    inline def PickImplselectFirstResult(selectFirstResult: Boolean): typings.semanticUiSearch.anon.PickImplselectFirstResult = {
       val __obj = js.Dynamic.literal(selectFirstResult = selectFirstResult.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiSearch.anon.PickImplselectFirstResult]
     }
     
-    inline def PickImplselectorPartialPi(selector: SelectorSettings & js.UndefOr[SelectorSettings]): typings.semanticUiSearch.anon.PickImplselectorPartialPi = {
+    inline def PickImplselectorPartialPi(selector: SelectorSettings): typings.semanticUiSearch.anon.PickImplselectorPartialPi = {
       val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiSearch.anon.PickImplselectorPartialPi]
     }
     
-    inline def PickImplshowNoResultsPart(showNoResults: Boolean & js.UndefOr[Boolean]): typings.semanticUiSearch.anon.PickImplshowNoResultsPart = {
+    inline def PickImplshowNoResultsPart(showNoResults: Boolean): typings.semanticUiSearch.anon.PickImplshowNoResultsPart = {
       val __obj = js.Dynamic.literal(showNoResults = showNoResults.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiSearch.anon.PickImplshowNoResultsPart]
     }
     
-    inline def PickImplsilentPartialPick(silent: Boolean & js.UndefOr[Boolean]): typings.semanticUiSearch.anon.PickImplsilentPartialPick = {
+    inline def PickImplsilentPartialPick(silent: Boolean): typings.semanticUiSearch.anon.PickImplsilentPartialPick = {
       val __obj = js.Dynamic.literal(silent = silent.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiSearch.anon.PickImplsilentPartialPick]
     }
     
-    inline def PickImplsourcePartialPick(source: (`false` | Any) & (js.UndefOr[`false` | Any])): typings.semanticUiSearch.anon.PickImplsourcePartialPick = {
+    inline def PickImplsourcePartialPick(source: `false` | Any): typings.semanticUiSearch.anon.PickImplsourcePartialPick = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiSearch.anon.PickImplsourcePartialPick]
     }
     
-    inline def PickImpltemplatesPartialP(templates: TemplatesSettings & js.UndefOr[TemplatesSettings]): typings.semanticUiSearch.anon.PickImpltemplatesPartialP = {
+    inline def PickImpltemplatesPartialP(templates: TemplatesSettings): typings.semanticUiSearch.anon.PickImpltemplatesPartialP = {
       val __obj = js.Dynamic.literal(templates = templates.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiSearch.anon.PickImpltemplatesPartialP]
     }
     
-    inline def PickImpltransitionPartial(transition: String & js.UndefOr[String]): typings.semanticUiSearch.anon.PickImpltransitionPartial = {
+    inline def PickImpltransitionPartial(transition: String): typings.semanticUiSearch.anon.PickImpltransitionPartial = {
       val __obj = js.Dynamic.literal(transition = transition.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiSearch.anon.PickImpltransitionPartial]
     }
     
-    inline def PickImpltypePartialPickIm(`type`: String & js.UndefOr[String]): typings.semanticUiSearch.anon.PickImpltypePartialPickIm = {
+    inline def PickImpltypePartialPickIm(`type`: String): typings.semanticUiSearch.anon.PickImpltypePartialPickIm = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiSearch.anon.PickImpltypePartialPickIm]
     }
     
-    inline def PickImplverbosePartialPic(verbose: Boolean & js.UndefOr[Boolean]): typings.semanticUiSearch.anon.PickImplverbosePartialPic = {
+    inline def PickImplverbosePartialPic(verbose: Boolean): typings.semanticUiSearch.anon.PickImplverbosePartialPic = {
       val __obj = js.Dynamic.literal(verbose = verbose.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiSearch.anon.PickImplverbosePartialPic]
     }

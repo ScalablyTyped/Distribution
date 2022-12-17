@@ -1,6 +1,7 @@
 package typings.parcelTypes.anon
 
 import typings.parcelTypes.mod.FilePath
+import typings.parcelTypes.mod.MutableAsset
 import typings.parcelTypes.mod.PluginLogger
 import typings.parcelTypes.mod.PluginOptions
 import typings.parcelTypes.mod.ResolveFn
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Resolve[ConfigType] extends StObject {
   
-  var asset: typings.parcelTypes.mod.Asset
+  var asset: MutableAsset
   
   var config: ConfigType
   
@@ -25,7 +26,7 @@ trait Resolve[ConfigType] extends StObject {
 object Resolve {
   
   inline def apply[ConfigType](
-    asset: typings.parcelTypes.mod.Asset,
+    asset: MutableAsset,
     config: ConfigType,
     logger: PluginLogger,
     options: PluginOptions,
@@ -37,7 +38,7 @@ object Resolve {
   
   extension [Self <: Resolve[?], ConfigType](x: Self & Resolve[ConfigType]) {
     
-    inline def setAsset(value: typings.parcelTypes.mod.Asset): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
+    inline def setAsset(value: MutableAsset): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
     
     inline def setConfig(value: ConfigType): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

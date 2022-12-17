@@ -21,11 +21,11 @@ trait PickImplwarningPartialPic
   
   var success: js.UndefOr[`false` | String] = js.undefined
   
-  var warning: (`false` | String) & (js.UndefOr[`false` | String])
+  var warning: `false` | String
 }
 object PickImplwarningPartialPic {
   
-  inline def apply(warning: (`false` | String) & (js.UndefOr[`false` | String])): PickImplwarningPartialPic = {
+  inline def apply(warning: `false` | String): PickImplwarningPartialPic = {
     val __obj = js.Dynamic.literal(warning = warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplwarningPartialPic]
   }
@@ -52,6 +52,6 @@ object PickImplwarningPartialPic {
     
     inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
-    inline def setWarning(value: (`false` | String) & (js.UndefOr[`false` | String])): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: `false` | String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
   }
 }

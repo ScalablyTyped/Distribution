@@ -15,14 +15,12 @@ trait PickImplpromptPartialPickError
   
   def prompt(errors: js.Array[String]): JQuery
   @JSName("prompt")
-  var prompt_Original: (js.Function1[/* errors */ js.Array[String], JQuery]) & (js.UndefOr[js.Function1[/* errors */ js.Array[String], JQuery]])
+  var prompt_Original: js.Function1[/* errors */ js.Array[String], JQuery]
 }
 object PickImplpromptPartialPickError {
   
-  inline def apply(
-    prompt: (js.Function1[/* errors */ js.Array[String], JQuery]) & (js.UndefOr[js.Function1[/* errors */ js.Array[String], JQuery]])
-  ): PickImplpromptPartialPickError = {
-    val __obj = js.Dynamic.literal(prompt = prompt.asInstanceOf[js.Any])
+  inline def apply(prompt: /* errors */ js.Array[String] => JQuery): PickImplpromptPartialPickError = {
+    val __obj = js.Dynamic.literal(prompt = js.Any.fromFunction1(prompt))
     __obj.asInstanceOf[PickImplpromptPartialPickError]
   }
   
@@ -32,8 +30,6 @@ object PickImplpromptPartialPickError {
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    inline def setPrompt(
-      value: (js.Function1[/* errors */ js.Array[String], JQuery]) & (js.UndefOr[js.Function1[/* errors */ js.Array[String], JQuery]])
-    ): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+    inline def setPrompt(value: /* errors */ js.Array[String] => JQuery): Self = StObject.set(x, "prompt", js.Any.fromFunction1(value))
   }
 }

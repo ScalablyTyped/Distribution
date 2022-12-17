@@ -17,6 +17,7 @@ import typings.reactNative.mod.SwitchProps
 import typings.reactNative.mod.TextInputProps
 import typings.reactNative.mod.ViewStyle
 import typings.reactNativeGestureHandler.anon.ActiveOpacity
+import typings.reactNativeGestureHandler.anon.Borderless
 import typings.reactNativeGestureHandler.anon.DelayLongPress
 import typings.reactNativeGestureHandler.anon.DrawerLayoutAndroidPropsc
 import typings.reactNativeGestureHandler.anon.DrawerLockMode
@@ -24,7 +25,6 @@ import typings.reactNativeGestureHandler.anon.Friction
 import typings.reactNativeGestureHandler.anon.Left
 import typings.reactNativeGestureHandler.anon.ReadonlyNativeViewGesture
 import typings.reactNativeGestureHandler.anon.TypeofForceTouchFallback
-import typings.reactNativeGestureHandler.anon.UnderlayColor
 import typings.reactNativeGestureHandler.libTypescriptComponentsDrawerLayoutMod.DrawerLayoutProps
 import typings.reactNativeGestureHandler.libTypescriptComponentsDrawerLayoutMod.default
 import typings.reactNativeGestureHandler.libTypescriptComponentsGestureButtonsMod.BaseButtonProps
@@ -106,8 +106,8 @@ object mod {
     
     @JSImport("react-native-gesture-handler", "BorderlessButton.defaultProps")
     @js.native
-    def defaultProps: ActiveOpacity = js.native
-    inline def defaultProps_=(x: ActiveOpacity): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: Borderless = js.native
+    inline def defaultProps_=(x: Borderless): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   object Directions {
@@ -261,8 +261,8 @@ object mod {
     
     @JSImport("react-native-gesture-handler", "RectButton.defaultProps")
     @js.native
-    def defaultProps: UnderlayColor = js.native
-    inline def defaultProps_=(x: UnderlayColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: ActiveOpacity = js.native
+    inline def defaultProps_=(x: ActiveOpacity): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-native-gesture-handler", "RefreshControl")

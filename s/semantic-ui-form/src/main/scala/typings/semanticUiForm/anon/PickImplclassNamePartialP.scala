@@ -25,7 +25,7 @@ trait PickImplclassNamePartialP
   extends StObject
      with Param {
   
-  var className: ClassNameSettings & js.UndefOr[ClassNameSettings]
+  var className: ClassNameSettings
   
   var debug: js.UndefOr[Boolean] = js.undefined
   
@@ -92,14 +92,14 @@ trait PickImplclassNamePartialP
 }
 object PickImplclassNamePartialP {
   
-  inline def apply(className: ClassNameSettings & js.UndefOr[ClassNameSettings]): PickImplclassNamePartialP = {
+  inline def apply(className: ClassNameSettings): PickImplclassNamePartialP = {
     val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplclassNamePartialP]
   }
   
   extension [Self <: PickImplclassNamePartialP](x: Self) {
     
-    inline def setClassName(value: ClassNameSettings & js.UndefOr[ClassNameSettings]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     

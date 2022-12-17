@@ -95,7 +95,7 @@ trait ClassDeclarationClassDeclDeclarationBrand extends StObject {
   val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
   
   /** May be undefined in `export default class { ... }`. */
-  val name: js.UndefOr[Identifier] & Identifier = js.native
+  val name: js.UndefOr[Identifier] = js.native
   
   val parent: Node = js.native
   

@@ -1,7 +1,7 @@
 package typings.fpTs.mod
 
 import typings.fpTs.anon.FnCall
-import typings.fpTs.anon.FnCallAAs
+import typings.fpTs.anon.FnCallXsYs
 import typings.fpTs.fpTsStrings.Array
 import typings.fpTs.libAltMod.Alt1
 import typings.fpTs.libAlternativeMod.Alternative1
@@ -266,7 +266,7 @@ object array {
   
   inline def deleteAt(i: Double): js.Function1[/* as */ js.Array[Any], Option_[js.Array[Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteAt")(i.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[Any], Option_[js.Array[Any]]]]
   
-  inline def difference[A](E: Eq[A]): FnCall[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("difference")(E.asInstanceOf[js.Any]).asInstanceOf[FnCall[A]]
+  inline def difference[A](E: Eq[A]): FnCallXsYs[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("difference")(E.asInstanceOf[js.Any]).asInstanceOf[FnCallXsYs[A]]
   
   inline def dropLeft(n: Double): js.Function1[/* as */ js.Array[Any], js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("dropLeft")(n.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[Any], js.Array[Any]]]
   
@@ -278,7 +278,7 @@ object array {
   
   inline def duplicate[A](wa: js.Array[A]): js.Array[js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("duplicate")(wa.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[A]]]
   
-  inline def elem[A](E: Eq[A]): FnCallAAs[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("elem")(E.asInstanceOf[js.Any]).asInstanceOf[FnCallAAs[A]]
+  inline def elem[A](E: Eq[A]): FnCall[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("elem")(E.asInstanceOf[js.Any]).asInstanceOf[FnCall[A]]
   
   @JSImport("fp-ts", "array.empty")
   @js.native
@@ -388,7 +388,7 @@ object array {
   
   inline def intercalate[A](M: Monoid[A]): js.Function1[/* middle */ A, js.Function1[/* as */ js.Array[A], A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("intercalate")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* middle */ A, js.Function1[/* as */ js.Array[A], A]]]
   
-  inline def intersection[A](E: Eq[A]): FnCall[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(E.asInstanceOf[js.Any]).asInstanceOf[FnCall[A]]
+  inline def intersection[A](E: Eq[A]): FnCallXsYs[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(E.asInstanceOf[js.Any]).asInstanceOf[FnCallXsYs[A]]
   
   inline def intersperse[A](middle: A): js.Function1[/* as */ js.Array[A], js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("intersperse")(middle.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], js.Array[A]]]
   
@@ -529,7 +529,7 @@ object array {
   
   inline def unfold[A, B](b: B, f: js.Function1[/* b */ B, Option_[js.Tuple2[A, B]]]): js.Array[A] = (^.asInstanceOf[js.Dynamic].applyDynamic("unfold")(b.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Array[A]]
   
-  inline def union[A](E: Eq[A]): FnCall[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("union")(E.asInstanceOf[js.Any]).asInstanceOf[FnCall[A]]
+  inline def union[A](E: Eq[A]): FnCallXsYs[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("union")(E.asInstanceOf[js.Any]).asInstanceOf[FnCallXsYs[A]]
   
   inline def uniq[A](E: Eq[A]): js.Function1[/* as */ js.Array[A], js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("uniq")(E.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], js.Array[A]]]
   

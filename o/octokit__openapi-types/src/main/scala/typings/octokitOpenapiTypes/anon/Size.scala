@@ -1,102 +1,81 @@
 package typings.octokitOpenapiTypes.anon
 
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.file
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Size extends StObject {
   
-  var _links: Git
+  /** @description The MIME type of the CodeQL database file. */
+  var content_type: String
   
-  var content: String
+  /**
+    * Format: date-time
+    * @description The date and time at which the CodeQL database was created, in ISO 8601 format':' YYYY-MM-DDTHH:MM:SSZ.
+    */
+  var created_at: String
   
-  /** Format: uri */
-  var download_url: String | Null
+  /** @description The ID of the CodeQL database. */
+  var id: Double
   
-  var encoding: String
+  /** @description The language of the CodeQL database. */
+  var language: String
   
-  /** Format: uri */
-  var git_url: String | Null
-  
-  /** Format: uri */
-  var html_url: String | Null
-  
+  /** @description The name of the CodeQL database. */
   var name: String
   
-  var path: String
-  
-  var sha: String
-  
+  /** @description The size of the CodeQL database file in bytes. */
   var size: Double
   
-  /** @example "git://example.com/defunkt/dotjs.git" */
-  var submodule_git_url: js.UndefOr[String] = js.undefined
+  /**
+    * Format: date-time
+    * @description The date and time at which the CodeQL database was last updated, in ISO 8601 format':' YYYY-MM-DDTHH:MM:SSZ.
+    */
+  var updated_at: String
   
-  /** @example "actual/actual.md" */
-  var target: js.UndefOr[String] = js.undefined
+  var uploader: Avatarurl
   
-  /** @enum {string} */
-  var `type`: file
-  
-  /** Format: uri */
+  /**
+    * Format: uri
+    * @description The URL at which to download the CodeQL database. The `Accept` header must be set to the value of the `content_type` property.
+    */
   var url: String
 }
 object Size {
   
   inline def apply(
-    _links: Git,
-    content: String,
-    encoding: String,
+    content_type: String,
+    created_at: String,
+    id: Double,
+    language: String,
     name: String,
-    path: String,
-    sha: String,
     size: Double,
+    updated_at: String,
+    uploader: Avatarurl,
     url: String
   ): Size = {
-    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], download_url = null, git_url = null, html_url = null)
-    __obj.updateDynamic("type")("file")
+    val __obj = js.Dynamic.literal(content_type = content_type.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], uploader = uploader.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Size]
   }
   
   extension [Self <: Size](x: Self) {
     
-    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
     
-    inline def setDownload_url(value: String): Self = StObject.set(x, "download_url", value.asInstanceOf[js.Any])
+    inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
-    inline def setDownload_urlNull: Self = StObject.set(x, "download_url", null)
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
-    
-    inline def setGit_url(value: String): Self = StObject.set(x, "git_url", value.asInstanceOf[js.Any])
-    
-    inline def setGit_urlNull: Self = StObject.set(x, "git_url", null)
-    
-    inline def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
-    
-    inline def setHtml_urlNull: Self = StObject.set(x, "html_url", null)
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
-    
-    inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
-    
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    inline def setSubmodule_git_url(value: String): Self = StObject.set(x, "submodule_git_url", value.asInstanceOf[js.Any])
+    inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
     
-    inline def setSubmodule_git_urlUndefined: Self = StObject.set(x, "submodule_git_url", js.undefined)
-    
-    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
-    
-    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
-    
-    inline def setType(value: file): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setUploader(value: Avatarurl): Self = StObject.set(x, "uploader", value.asInstanceOf[js.Any])
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
-    
-    inline def set_links(value: Git): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

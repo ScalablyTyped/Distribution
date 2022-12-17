@@ -1,6 +1,5 @@
 package typings.firebaseDatabaseCompat
 
-import typings.firebaseDatabaseCompat.anon.Call
 import typings.firebaseDatabaseCompat.anon.Database
 import typings.firebaseDatabaseTypes.mod.FirebaseDatabase
 import org.scalablytyped.runtime.StObject
@@ -11,39 +10,39 @@ object appCompatMod {
   
   trait FirebaseApp extends StObject {
     
-    var database: js.UndefOr[js.Function0[FirebaseDatabase]] & (js.UndefOr[js.Function1[/* databaseURL */ js.UndefOr[String], FirebaseDatabase]])
+    var database: js.UndefOr[js.Function0[FirebaseDatabase]] = js.undefined
   }
   object FirebaseApp {
     
-    inline def apply(
-      database: js.UndefOr[js.Function0[FirebaseDatabase]] & (js.UndefOr[js.Function1[/* databaseURL */ js.UndefOr[String], FirebaseDatabase]])
-    ): FirebaseApp = {
-      val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any])
+    inline def apply(): FirebaseApp = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FirebaseApp]
     }
     
     extension [Self <: FirebaseApp](x: Self) {
       
-      inline def setDatabase(
-        value: js.UndefOr[js.Function0[FirebaseDatabase]] & (js.UndefOr[js.Function1[/* databaseURL */ js.UndefOr[String], FirebaseDatabase]])
-      ): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+      inline def setDatabase(value: () => FirebaseDatabase): Self = StObject.set(x, "database", js.Any.fromFunction0(value))
+      
+      inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
     }
   }
   
   trait FirebaseNamespace extends StObject {
     
-    var database: js.UndefOr[Database] & js.UndefOr[Call]
+    var database: js.UndefOr[Database] = js.undefined
   }
   object FirebaseNamespace {
     
-    inline def apply(database: js.UndefOr[Database] & js.UndefOr[Call]): FirebaseNamespace = {
-      val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any])
+    inline def apply(): FirebaseNamespace = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FirebaseNamespace]
     }
     
     extension [Self <: FirebaseNamespace](x: Self) {
       
-      inline def setDatabase(value: js.UndefOr[Database] & js.UndefOr[Call]): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+      inline def setDatabase(value: Database): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+      
+      inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
     }
   }
 }

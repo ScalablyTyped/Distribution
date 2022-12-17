@@ -12,7 +12,7 @@ trait Text extends StObject {
   
   var extend: js.UndefOr[ExtendType[Record[String, Any]]] = js.undefined
   
-  var size: js.UndefOr[Xlarge] = js.undefined
+  var size: js.UndefOr[Small] = js.undefined
   
   var text: js.UndefOr[ExtendFontWeight] = js.undefined
 }
@@ -31,7 +31,7 @@ object Text {
     
     inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    inline def setSize(value: Xlarge): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Small): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     

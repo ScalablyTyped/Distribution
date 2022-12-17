@@ -12,6 +12,7 @@ import typings.orbitUiReactComponents.anon.From
 import typings.orbitUiReactComponents.anon.InputProps
 import typings.orbitUiReactComponents.anon.IsDisabled
 import typings.orbitUiReactComponents.anon.IsLoading
+import typings.orbitUiReactComponents.anon.KeyProp
 import typings.orbitUiReactComponents.anon.OmitInnerHeadingPropssize
 import typings.orbitUiReactComponents.anon.OmitInnerIconPropssrc
 import typings.orbitUiReactComponents.anon.OmitInnerMultiVariantIcon
@@ -19,9 +20,8 @@ import typings.orbitUiReactComponents.anon.OnBlurOnFocus
 import typings.orbitUiReactComponents.anon.OnClick
 import typings.orbitUiReactComponents.anon.OnFocus
 import typings.orbitUiReactComponents.anon.OnKeyDown
+import typings.orbitUiReactComponents.anon.OnKeyDownKeyboardEventHandler
 import typings.orbitUiReactComponents.anon.OnKeyDownUndefined
-import typings.orbitUiReactComponents.anon.OnKeyUp
-import typings.orbitUiReactComponents.anon.OnMouseEnter
 import typings.orbitUiReactComponents.anon.Style
 import typings.orbitUiReactComponents.anon.StyleHeight
 import typings.orbitUiReactComponents.anon.`0`
@@ -1838,7 +1838,7 @@ object mod {
   
   inline def useCheckableContext(): js.Tuple2[CheckableContextType, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCheckableContext")().asInstanceOf[js.Tuple2[CheckableContextType, Boolean]]
   
-  inline def useCheckableProps(param0: `0`): js.Tuple2[UseCheckablePropsReturn, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCheckableProps")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[UseCheckablePropsReturn, Boolean]]
+  inline def useCheckableProps(param0: `3`): js.Tuple2[UseCheckablePropsReturn, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCheckableProps")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[UseCheckablePropsReturn, Boolean]]
   
   inline def useCheckbox(param0: UseCheckboxProps): UseCheckboxReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("useCheckbox")(param0.asInstanceOf[js.Any]).asInstanceOf[UseCheckboxReturn]
   
@@ -2054,8 +2054,8 @@ object mod {
     js.Function1[/* rootElement */ HTMLElement, Unit]
   ]]
   
-  inline def useFocusWithin(): OnFocus | OnBlurOnFocus = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusWithin")().asInstanceOf[OnFocus | OnBlurOnFocus]
-  inline def useFocusWithin(param0: UseFocusWithinOptions): OnFocus | OnBlurOnFocus = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusWithin")(param0.asInstanceOf[js.Any]).asInstanceOf[OnFocus | OnBlurOnFocus]
+  inline def useFocusWithin(): OnBlurOnFocus | `2` = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusWithin")().asInstanceOf[OnBlurOnFocus | `2`]
+  inline def useFocusWithin(param0: UseFocusWithinOptions): OnBlurOnFocus | `2` = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusWithin")(param0.asInstanceOf[js.Any]).asInstanceOf[OnBlurOnFocus | `2`]
   
   inline def useForceRender(): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("useForceRender")().asInstanceOf[js.Function0[Unit]]
   
@@ -2105,18 +2105,18 @@ object mod {
   inline def useKeyboardNavigation(
     focusManager: typings.orbitUiReactComponents.distSharedSrcUseFocusManagerMod.FocusManager,
     param1: KeyboardNavigationBindings
-  ): OnKeyDown = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardNavigation")(focusManager.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[OnKeyDown]
+  ): OnKeyDownKeyboardEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardNavigation")(focusManager.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[OnKeyDownKeyboardEventHandler]
   inline def useKeyboardNavigation(
     focusManager: typings.orbitUiReactComponents.distSharedSrcUseFocusManagerMod.FocusManager,
     param1: KeyboardNavigationBindings,
     param2: KeyboardNavigationOptions
-  ): OnKeyDown = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardNavigation")(focusManager.asInstanceOf[js.Any], param1.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[OnKeyDown]
+  ): OnKeyDownKeyboardEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardNavigation")(focusManager.asInstanceOf[js.Any], param1.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[OnKeyDownKeyboardEventHandler]
   
   inline def useKeyedRovingFocus(scope: typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope, currentKey: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyedRovingFocus")(scope.asInstanceOf[js.Any], currentKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useKeyedRovingFocus(
     scope: typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope,
     currentKey: String,
-    param2: IsDisabled
+    param2: KeyProp
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyedRovingFocus")(scope.asInstanceOf[js.Any], currentKey.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def useListboxContext(): ListboxContextType = ^.asInstanceOf[js.Dynamic].applyDynamic("useListboxContext")().asInstanceOf[ListboxContextType]
@@ -2142,8 +2142,8 @@ object mod {
   inline def useOverlayPosition(): ArrowRef = ^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayPosition")().asInstanceOf[ArrowRef]
   inline def useOverlayPosition(param0: UseOverlayPositionOptions): ArrowRef = ^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayPosition")(param0.asInstanceOf[js.Any]).asInstanceOf[ArrowRef]
   
-  inline def useOverlayTrigger(isOpen: Boolean): OnClick | OnKeyUp | OnMouseEnter = ^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayTrigger")(isOpen.asInstanceOf[js.Any]).asInstanceOf[OnClick | OnKeyUp | OnMouseEnter]
-  inline def useOverlayTrigger(isOpen: Boolean, param1: UseOverlayTriggerOptions): OnClick | OnKeyUp | OnMouseEnter = (^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayTrigger")(isOpen.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[OnClick | OnKeyUp | OnMouseEnter]
+  inline def useOverlayTrigger(isOpen: Boolean): OnClick | OnFocus | OnKeyDown = ^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayTrigger")(isOpen.asInstanceOf[js.Any]).asInstanceOf[OnClick | OnFocus | OnKeyDown]
+  inline def useOverlayTrigger(isOpen: Boolean, param1: UseOverlayTriggerOptions): OnClick | OnFocus | OnKeyDown = (^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayTrigger")(isOpen.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[OnClick | OnFocus | OnKeyDown]
   
   inline def usePopoverTriggerContext(): PopoverTriggerContextType = ^.asInstanceOf[js.Dynamic].applyDynamic("usePopoverTriggerContext")().asInstanceOf[PopoverTriggerContextType]
   
@@ -2174,7 +2174,7 @@ object mod {
   inline def useRestoreFocus(scope: typings.orbitUiReactComponents.distSharedMod.DomScope, param1: UseRestoreFocusOptions): OnKeyDownUndefined | `1` = (^.asInstanceOf[js.Dynamic].applyDynamic("useRestoreFocus")(scope.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[OnKeyDownUndefined | `1`]
   
   inline def useRovingFocus(scope: typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useRovingFocus")(scope.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def useRovingFocus(scope: typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope, param1: `2`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRovingFocus")(scope.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useRovingFocus(scope: typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope, param1: IsDisabled): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRovingFocus")(scope.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def useScrollableCollection(containerRef: RefObject[typings.std.Element]): Style | StyleHeight = ^.asInstanceOf[js.Dynamic].applyDynamic("useScrollableCollection")(containerRef.asInstanceOf[js.Any]).asInstanceOf[Style | StyleHeight]
   inline def useScrollableCollection(containerRef: RefObject[typings.std.Element], param1: UseScrollableCollectionOptions): Style | StyleHeight = (^.asInstanceOf[js.Dynamic].applyDynamic("useScrollableCollection")(containerRef.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Style | StyleHeight]
@@ -2232,5 +2232,5 @@ object mod {
     onElement: js.Function2[/* element */ typings.std.Element, /* index */ js.UndefOr[Double], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("walkFocusableElements")(root.asInstanceOf[js.Any], onElement.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def wrappedInputPropsAdapter[P /* <: `3` */](param0: P): (Omit[P, className]) & AdaptedWrappedInputProps = ^.asInstanceOf[js.Dynamic].applyDynamic("wrappedInputPropsAdapter")(param0.asInstanceOf[js.Any]).asInstanceOf[(Omit[P, className]) & AdaptedWrappedInputProps]
+  inline def wrappedInputPropsAdapter[P /* <: `0` */](param0: P): (Omit[P, className]) & AdaptedWrappedInputProps = ^.asInstanceOf[js.Dynamic].applyDynamic("wrappedInputPropsAdapter")(param0.asInstanceOf[js.Any]).asInstanceOf[(Omit[P, className]) & AdaptedWrappedInputProps]
 }

@@ -189,8 +189,9 @@ object mod {
     * See the [conventional-changelog-core](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-core)
     * docs. The API is the same with the following changes or additions:
     */
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Options<TCommit, TContext> * / any */ trait Options[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */] extends StObject {
+  trait Options[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */]
+    extends StObject
+       with typings.conventionalChangelogCore.mod.Options[TCommit, TContext] {
     
     /**
       * It's recommended to use a preset so you don't have to define everything

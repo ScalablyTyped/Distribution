@@ -30,6 +30,27 @@ object anon {
     }
   }
   
+  trait Chi2 extends StObject {
+    
+    var chi2: Double
+    
+    var passed: Boolean
+  }
+  object Chi2 {
+    
+    inline def apply(chi2: Double, passed: Boolean): Chi2 = {
+      val __obj = js.Dynamic.literal(chi2 = chi2.asInstanceOf[js.Any], passed = passed.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Chi2]
+    }
+    
+    extension [Self <: Chi2](x: Self) {
+      
+      inline def setChi2(value: Double): Self = StObject.set(x, "chi2", value.asInstanceOf[js.Any])
+      
+      inline def setPassed(value: Boolean): Self = StObject.set(x, "passed", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait Closed extends StObject {
     
     var closed: Boolean
@@ -97,20 +118,87 @@ object anon {
     }
   }
   
+  trait Dim extends StObject {
+    
+    var dim: js.UndefOr[Double] = js.undefined
+    
+    var maxHistory: js.UndefOr[Double] = js.undefined
+  }
+  object Dim {
+    
+    inline def apply(): Dim = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Dim]
+    }
+    
+    extension [Self <: Dim](x: Self) {
+      
+      inline def setDim(value: Double): Self = StObject.set(x, "dim", value.asInstanceOf[js.Any])
+      
+      inline def setDimUndefined: Self = StObject.set(x, "dim", js.undefined)
+      
+      inline def setMaxHistory(value: Double): Self = StObject.set(x, "maxHistory", value.asInstanceOf[js.Any])
+      
+      inline def setMaxHistoryUndefined: Self = StObject.set(x, "maxHistory", js.undefined)
+    }
+  }
+  
   trait Passed extends StObject {
+    
+    var U: Double
+    
+    var passed: Boolean
+  }
+  object Passed {
+    
+    inline def apply(U: Double, passed: Boolean): Passed = {
+      val __obj = js.Dynamic.literal(U = U.asInstanceOf[js.Any], passed = passed.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Passed]
+    }
+    
+    extension [Self <: Passed](x: Self) {
+      
+      inline def setPassed(value: Boolean): Self = StObject.set(x, "passed", value.asInstanceOf[js.Any])
+      
+      inline def setU(value: Double): Self = StObject.set(x, "U", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Rate extends StObject {
+    
+    var rate: Double
+    
+    var weight: Double
+  }
+  object Rate {
+    
+    inline def apply(rate: Double, weight: Double): Rate = {
+      val __obj = js.Dynamic.literal(rate = rate.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Rate]
+    }
+    
+    extension [Self <: Rate](x: Self) {
+      
+      inline def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
+      
+      inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Statistics extends StObject {
     
     var passed: Boolean
     
     var statistics: Double
   }
-  object Passed {
+  object Statistics {
     
-    inline def apply(passed: Boolean, statistics: Double): Passed = {
+    inline def apply(passed: Boolean, statistics: Double): Statistics = {
       val __obj = js.Dynamic.literal(passed = passed.asInstanceOf[js.Any], statistics = statistics.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Passed]
+      __obj.asInstanceOf[Statistics]
     }
     
-    extension [Self <: Passed](x: Self) {
+    extension [Self <: Statistics](x: Self) {
       
       inline def setPassed(value: Boolean): Self = StObject.set(x, "passed", value.asInstanceOf[js.Any])
       

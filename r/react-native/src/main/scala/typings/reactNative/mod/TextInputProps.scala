@@ -1,6 +1,6 @@
 package typings.reactNative.mod
 
-import typings.reactNative.anon.End
+import typings.reactNative.anon.Start
 import typings.reactNative.reactNativeStrings.center
 import typings.reactNative.reactNativeStrings.characters
 import typings.reactNative.reactNativeStrings.left
@@ -230,7 +230,7 @@ trait TextInputProps
     * The start and end of the text input's selection. Set start and end to
     * the same value to position the cursor.
     */
-  var selection: js.UndefOr[End] = js.undefined
+  var selection: js.UndefOr[Start] = js.undefined
   
   /**
     * The highlight (and cursor on ios) color of the text input
@@ -396,7 +396,7 @@ object TextInputProps {
     
     inline def setSelectTextOnFocusUndefined: Self = StObject.set(x, "selectTextOnFocus", js.undefined)
     
-    inline def setSelection(value: End): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: Start): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
     inline def setSelectionColor(value: ColorValue): Self = StObject.set(x, "selectionColor", value.asInstanceOf[js.Any])
     

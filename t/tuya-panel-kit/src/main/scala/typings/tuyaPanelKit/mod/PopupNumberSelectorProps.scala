@@ -18,7 +18,7 @@ import typings.tuyaPanelKit.anon.BackIconColor
 import typings.tuyaPanelKit.anon.DebugThumbTouchArea
 import typings.tuyaPanelKit.anon.Duration
 import typings.tuyaPanelKit.anon.Height
-import typings.tuyaPanelKit.anon.`11`
+import typings.tuyaPanelKit.anon.`10`
 import typings.tuyaPanelKit.tuyaPanelKitStrings.Fade
 import typings.tuyaPanelKit.tuyaPanelKitStrings.PullUp
 import typings.tuyaPanelKit.tuyaPanelKitStrings.ScaleFadeIn
@@ -237,11 +237,11 @@ trait PopupNumberSelectorProps extends StObject {
   
   var onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onBack: js.UndefOr[js.Function1[/* args */ `11`, Unit]] = js.undefined
+  var onBack: js.UndefOr[js.Function1[/* args */ `10`, Unit]] = js.undefined
   
   var onCancel: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onConfirm: js.UndefOr[js.Function2[/* data */ Any, /* args */ `11`, Unit]] = js.undefined
+  var onConfirm: js.UndefOr[js.Function2[/* data */ Any, /* args */ `10`, Unit]] = js.undefined
   
   var onDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
   
@@ -249,7 +249,7 @@ trait PopupNumberSelectorProps extends StObject {
   
   var onMagicTap: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onMaskPress: js.UndefOr[js.Function1[/* args */ `11`, Unit]] = js.undefined
+  var onMaskPress: js.UndefOr[js.Function1[/* args */ `10`, Unit]] = js.undefined
   
   var onMoveShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
   
@@ -750,7 +750,7 @@ object PopupNumberSelectorProps {
     
     inline def setOnAccessibilityTapUndefined: Self = StObject.set(x, "onAccessibilityTap", js.undefined)
     
-    inline def setOnBack(value: /* args */ `11` => Unit): Self = StObject.set(x, "onBack", js.Any.fromFunction1(value))
+    inline def setOnBack(value: /* args */ `10` => Unit): Self = StObject.set(x, "onBack", js.Any.fromFunction1(value))
     
     inline def setOnBackUndefined: Self = StObject.set(x, "onBack", js.undefined)
     
@@ -758,7 +758,7 @@ object PopupNumberSelectorProps {
     
     inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
     
-    inline def setOnConfirm(value: (/* data */ Any, /* args */ `11`) => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction2(value))
+    inline def setOnConfirm(value: (/* data */ Any, /* args */ `10`) => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction2(value))
     
     inline def setOnConfirmUndefined: Self = StObject.set(x, "onConfirm", js.undefined)
     
@@ -774,7 +774,7 @@ object PopupNumberSelectorProps {
     
     inline def setOnMagicTapUndefined: Self = StObject.set(x, "onMagicTap", js.undefined)
     
-    inline def setOnMaskPress(value: /* args */ `11` => Unit): Self = StObject.set(x, "onMaskPress", js.Any.fromFunction1(value))
+    inline def setOnMaskPress(value: /* args */ `10` => Unit): Self = StObject.set(x, "onMaskPress", js.Any.fromFunction1(value))
     
     inline def setOnMaskPressUndefined: Self = StObject.set(x, "onMaskPress", js.undefined)
     

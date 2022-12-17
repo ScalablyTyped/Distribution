@@ -28,11 +28,11 @@ object anon {
   
   trait CreateReadStream extends StObject {
     
-    var createReadStream: js.UndefOr[FnCallPathOptions] = js.undefined
+    var createReadStream: js.UndefOr[FnCall] = js.undefined
     
     var lstat: js.UndefOr[Typeoflstat] = js.undefined
     
-    var readFileSync: js.UndefOr[Fn0] = js.undefined
+    var readFileSync: js.UndefOr[FnCallPathOptions] = js.undefined
     
     var statSync: js.UndefOr[StatSyncFn] = js.undefined
   }
@@ -45,7 +45,7 @@ object anon {
     
     extension [Self <: CreateReadStream](x: Self) {
       
-      inline def setCreateReadStream(value: FnCallPathOptions): Self = StObject.set(x, "createReadStream", value.asInstanceOf[js.Any])
+      inline def setCreateReadStream(value: FnCall): Self = StObject.set(x, "createReadStream", value.asInstanceOf[js.Any])
       
       inline def setCreateReadStreamUndefined: Self = StObject.set(x, "createReadStream", js.undefined)
       
@@ -53,7 +53,7 @@ object anon {
       
       inline def setLstatUndefined: Self = StObject.set(x, "lstat", js.undefined)
       
-      inline def setReadFileSync(value: Fn0): Self = StObject.set(x, "readFileSync", value.asInstanceOf[js.Any])
+      inline def setReadFileSync(value: FnCallPathOptions): Self = StObject.set(x, "readFileSync", value.asInstanceOf[js.Any])
       
       inline def setReadFileSyncUndefined: Self = StObject.set(x, "readFileSync", js.undefined)
       
@@ -83,17 +83,15 @@ object anon {
   }
   
   @js.native
-  trait Fn0 extends StObject {
+  trait FnCall extends StObject {
     
-    def apply(path: PathOrFileDescriptor): String | Buffer = js.native
-    def apply(path: PathOrFileDescriptor, options: EncodingFlag): String = js.native
-    def apply(path: PathOrFileDescriptor, options: Flag): Buffer = js.native
-    def apply(path: PathOrFileDescriptor, options: ObjectEncodingOptionsflagEncoding): String | Buffer = js.native
-    def apply(path: PathOrFileDescriptor, options: BufferEncoding): String = js.native
+    def apply(path: PathLike): ReadStream = js.native
+    def apply(path: PathLike, options: BufferEncoding): ReadStream = js.native
+    def apply(path: PathLike, options: ReadStreamOptions): ReadStream = js.native
   }
   
   @js.native
-  trait FnCall extends StObject {
+  trait FnCallName extends StObject {
     
     def apply(name: String): WebpackLogger = js.native
     def apply(name: js.Function0[String]): WebpackLogger = js.native
@@ -102,9 +100,11 @@ object anon {
   @js.native
   trait FnCallPathOptions extends StObject {
     
-    def apply(path: PathLike): ReadStream = js.native
-    def apply(path: PathLike, options: BufferEncoding): ReadStream = js.native
-    def apply(path: PathLike, options: ReadStreamOptions): ReadStream = js.native
+    def apply(path: PathOrFileDescriptor): String | Buffer = js.native
+    def apply(path: PathOrFileDescriptor, options: EncodingFlag): String = js.native
+    def apply(path: PathOrFileDescriptor, options: Flag): Buffer = js.native
+    def apply(path: PathOrFileDescriptor, options: ObjectEncodingOptionsflagEncoding): String | Buffer = js.native
+    def apply(path: PathOrFileDescriptor, options: BufferEncoding): String = js.native
   }
   
   trait Key extends StObject {

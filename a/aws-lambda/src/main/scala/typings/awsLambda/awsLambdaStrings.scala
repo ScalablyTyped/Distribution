@@ -578,10 +578,6 @@ object awsLambdaStrings {
   inline def KEYS_ONLY: KEYS_ONLY = "KEYS_ONLY".asInstanceOf[KEYS_ONLY]
   
   @js.native
-  sealed trait KMS extends StObject
-  inline def KMS: KMS = "KMS".asInstanceOf[KMS]
-  
-  @js.native
   sealed trait LINUX_CONTAINER
     extends StObject
        with CodeBuildEnvironmentType

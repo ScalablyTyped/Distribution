@@ -14,7 +14,7 @@ trait PickImplbottomOffsetParti
   extends StObject
      with Param {
   
-  var bottomOffset: Double & js.UndefOr[Double]
+  var bottomOffset: Double
   
   var className: js.UndefOr[ClassNameSettings] = js.undefined
   
@@ -60,14 +60,14 @@ trait PickImplbottomOffsetParti
 }
 object PickImplbottomOffsetParti {
   
-  inline def apply(bottomOffset: Double & js.UndefOr[Double]): PickImplbottomOffsetParti = {
+  inline def apply(bottomOffset: Double): PickImplbottomOffsetParti = {
     val __obj = js.Dynamic.literal(bottomOffset = bottomOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplbottomOffsetParti]
   }
   
   extension [Self <: PickImplbottomOffsetParti](x: Self) {
     
-    inline def setBottomOffset(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "bottomOffset", value.asInstanceOf[js.Any])
+    inline def setBottomOffset(value: Double): Self = StObject.set(x, "bottomOffset", value.asInstanceOf[js.Any])
     
     inline def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

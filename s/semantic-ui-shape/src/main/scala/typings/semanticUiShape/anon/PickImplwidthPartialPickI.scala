@@ -42,11 +42,11 @@ trait PickImplwidthPartialPickI
   
   var verbose: js.UndefOr[Boolean] = js.undefined
   
-  var width: (next | initial | Double) & (js.UndefOr[next | initial | Double])
+  var width: next | initial | Double
 }
 object PickImplwidthPartialPickI {
   
-  inline def apply(width: (next | initial | Double) & (js.UndefOr[next | initial | Double])): PickImplwidthPartialPickI = {
+  inline def apply(width: next | initial | Double): PickImplwidthPartialPickI = {
     val __obj = js.Dynamic.literal(width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplwidthPartialPickI]
   }
@@ -105,6 +105,6 @@ object PickImplwidthPartialPickI {
     
     inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     
-    inline def setWidth(value: (next | initial | Double) & (js.UndefOr[next | initial | Double])): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: next | initial | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

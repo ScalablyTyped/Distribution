@@ -9,13 +9,13 @@ trait `201ContentApplicationjsonInvitee` extends StObject {
   /** Response when a new invitation is created */
   var `201`: ContentApplicationjsonInvitee
   
-  var `403`: Content6
+  var `403`: Content48
   
-  var `422`: Content8
+  var `422`: Content397
 }
 object `201ContentApplicationjsonInvitee` {
   
-  inline def apply(`201`: ContentApplicationjsonInvitee, `403`: Content6, `422`: Content8): `201ContentApplicationjsonInvitee` = {
+  inline def apply(`201`: ContentApplicationjsonInvitee, `403`: Content48, `422`: Content397): `201ContentApplicationjsonInvitee` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("201")(`201`.asInstanceOf[js.Any])
     __obj.updateDynamic("403")(`403`.asInstanceOf[js.Any])
@@ -27,8 +27,8 @@ object `201ContentApplicationjsonInvitee` {
     
     inline def set201(value: ContentApplicationjsonInvitee): Self = StObject.set(x, "201", value.asInstanceOf[js.Any])
     
-    inline def set403(value: Content6): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
+    inline def set403(value: Content48): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
     
-    inline def set422(value: Content8): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
+    inline def set422(value: Content397): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
   }
 }

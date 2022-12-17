@@ -80,11 +80,11 @@ object SemanticUI {
     /* Inlined semantic-ui-visibility.SemanticUI.Visibility.ClassNameSettings.Param */
     trait ClassNameSettings extends StObject {
       
-      var fixed: String & js.UndefOr[String]
+      var fixed: String
     }
     object ClassNameSettings {
       
-      inline def apply(fixed: String & js.UndefOr[String]): ClassNameSettings = {
+      inline def apply(fixed: String): ClassNameSettings = {
         val __obj = js.Dynamic.literal(fixed = fixed.asInstanceOf[js.Any])
         __obj.asInstanceOf[ClassNameSettings]
       }
@@ -111,24 +111,24 @@ object SemanticUI {
       
       extension [Self <: ClassNameSettings](x: Self) {
         
-        inline def setFixed(value: String & js.UndefOr[String]): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+        inline def setFixed(value: String): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
       }
       
       /* Inlined std.Pick<semantic-ui-visibility.SemanticUI.Visibility.ClassNameSettings._Impl, 'fixed'> & std.Partial<std.Pick<semantic-ui-visibility.SemanticUI.Visibility.ClassNameSettings._Impl, keyof semantic-ui-visibility.SemanticUI.Visibility.ClassNameSettings._Impl>> */
       trait Param extends StObject {
         
-        var fixed: String & js.UndefOr[String]
+        var fixed: String
       }
       object Param {
         
-        inline def apply(fixed: String & js.UndefOr[String]): Param = {
+        inline def apply(fixed: String): Param = {
           val __obj = js.Dynamic.literal(fixed = fixed.asInstanceOf[js.Any])
           __obj.asInstanceOf[Param]
         }
         
         extension [Self <: Param](x: Self) {
           
-          inline def setFixed(value: String & js.UndefOr[String]): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+          inline def setFixed(value: String): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
         }
       }
     }
@@ -246,11 +246,11 @@ object SemanticUI {
     /* Inlined semantic-ui-visibility.SemanticUI.Visibility.ErrorSettings.Param */
     trait ErrorSettings extends StObject {
       
-      var method: String & js.UndefOr[String]
+      var method: String
     }
     object ErrorSettings {
       
-      inline def apply(method: String & js.UndefOr[String]): ErrorSettings = {
+      inline def apply(method: String): ErrorSettings = {
         val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
         __obj.asInstanceOf[ErrorSettings]
       }
@@ -277,24 +277,24 @@ object SemanticUI {
       
       extension [Self <: ErrorSettings](x: Self) {
         
-        inline def setMethod(value: String & js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+        inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       }
       
       /* Inlined std.Pick<semantic-ui-visibility.SemanticUI.Visibility.ErrorSettings._Impl, 'method'> & std.Partial<std.Pick<semantic-ui-visibility.SemanticUI.Visibility.ErrorSettings._Impl, keyof semantic-ui-visibility.SemanticUI.Visibility.ErrorSettings._Impl>> */
       trait Param extends StObject {
         
-        var method: String & js.UndefOr[String]
+        var method: String
       }
       object Param {
         
-        inline def apply(method: String & js.UndefOr[String]): Param = {
+        inline def apply(method: String): Param = {
           val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
           __obj.asInstanceOf[Param]
         }
         
         extension [Self <: Param](x: Self) {
           
-          inline def setMethod(value: String & js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+          inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
         }
       }
     }
@@ -778,246 +778,208 @@ object SemanticUI {
     trait Param extends StObject
     object Param {
       
-      inline def PickImplcheckOnRefreshPar(checkOnRefresh: Boolean & js.UndefOr[Boolean]): typings.semanticUiVisibility.anon.PickImplcheckOnRefreshPar = {
+      inline def PickImplcheckOnRefreshPar(checkOnRefresh: Boolean): typings.semanticUiVisibility.anon.PickImplcheckOnRefreshPar = {
         val __obj = js.Dynamic.literal(checkOnRefresh = checkOnRefresh.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplcheckOnRefreshPar]
       }
       
-      inline def PickImplclassNamePartialP(className: ClassNameSettings & js.UndefOr[ClassNameSettings]): typings.semanticUiVisibility.anon.PickImplclassNamePartialP = {
+      inline def PickImplclassNamePartialP(className: ClassNameSettings): typings.semanticUiVisibility.anon.PickImplclassNamePartialP = {
         val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplclassNamePartialP]
       }
       
-      inline def PickImplcontextPartialPic(context: (String | JQuery) & (js.UndefOr[String | JQuery])): typings.semanticUiVisibility.anon.PickImplcontextPartialPic = {
+      inline def PickImplcontextPartialPic(context: String | JQuery): typings.semanticUiVisibility.anon.PickImplcontextPartialPic = {
         val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplcontextPartialPic]
       }
       
-      inline def PickImplcontinuousPartial(continuous: Boolean & js.UndefOr[Boolean]): typings.semanticUiVisibility.anon.PickImplcontinuousPartial = {
+      inline def PickImplcontinuousPartial(continuous: Boolean): typings.semanticUiVisibility.anon.PickImplcontinuousPartial = {
         val __obj = js.Dynamic.literal(continuous = continuous.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplcontinuousPartial]
       }
       
-      inline def PickImpldebugPartialPickI(debug: Boolean & js.UndefOr[Boolean]): typings.semanticUiVisibility.anon.PickImpldebugPartialPickI = {
+      inline def PickImpldebugPartialPickI(debug: Boolean): typings.semanticUiVisibility.anon.PickImpldebugPartialPickI = {
         val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImpldebugPartialPickI]
       }
       
-      inline def PickImpldurationPartialPi(duration: Double & js.UndefOr[Double]): typings.semanticUiVisibility.anon.PickImpldurationPartialPi = {
+      inline def PickImpldurationPartialPi(duration: Double): typings.semanticUiVisibility.anon.PickImpldurationPartialPi = {
         val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImpldurationPartialPi]
       }
       
-      inline def PickImplerrorPartialPickI(error: ErrorSettings & js.UndefOr[ErrorSettings]): typings.semanticUiVisibility.anon.PickImplerrorPartialPickI = {
+      inline def PickImplerrorPartialPickI(error: ErrorSettings): typings.semanticUiVisibility.anon.PickImplerrorPartialPickI = {
         val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplerrorPartialPickI]
       }
       
-      inline def PickImplincludeMarginPart(includeMargin: Boolean & js.UndefOr[Boolean]): typings.semanticUiVisibility.anon.PickImplincludeMarginPart = {
+      inline def PickImplincludeMarginPart(includeMargin: Boolean): typings.semanticUiVisibility.anon.PickImplincludeMarginPart = {
         val __obj = js.Dynamic.literal(includeMargin = includeMargin.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplincludeMarginPart]
       }
       
-      inline def PickImplinitialCheckParti(initialCheck: Boolean & js.UndefOr[Boolean]): typings.semanticUiVisibility.anon.PickImplinitialCheckParti = {
+      inline def PickImplinitialCheckParti(initialCheck: Boolean): typings.semanticUiVisibility.anon.PickImplinitialCheckParti = {
         val __obj = js.Dynamic.literal(initialCheck = initialCheck.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplinitialCheckParti]
       }
       
-      inline def PickImplnamePartialPickIm(name: String & js.UndefOr[String]): typings.semanticUiVisibility.anon.PickImplnamePartialPickIm = {
+      inline def PickImplnamePartialPickIm(name: String): typings.semanticUiVisibility.anon.PickImplnamePartialPickIm = {
         val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplnamePartialPickIm]
       }
       
-      inline def PickImplnamespacePartialP(namespace: String & js.UndefOr[String]): typings.semanticUiVisibility.anon.PickImplnamespacePartialP = {
+      inline def PickImplnamespacePartialP(namespace: String): typings.semanticUiVisibility.anon.PickImplnamespacePartialP = {
         val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplnamespacePartialP]
       }
       
-      inline def PickImplobserveChangesPar(observeChanges: Boolean & js.UndefOr[Boolean]): typings.semanticUiVisibility.anon.PickImplobserveChangesPar = {
+      inline def PickImplobserveChangesPar(observeChanges: Boolean): typings.semanticUiVisibility.anon.PickImplobserveChangesPar = {
         val __obj = js.Dynamic.literal(observeChanges = observeChanges.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplobserveChangesPar]
       }
       
-      inline def PickImploffsetPartialPick(offset: Double & js.UndefOr[Double]): typings.semanticUiVisibility.anon.PickImploffsetPartialPick = {
+      inline def PickImploffsetPartialPick(offset: Double): typings.semanticUiVisibility.anon.PickImploffsetPartialPick = {
         val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImploffsetPartialPick]
       }
       
-      inline def PickImplonAllLoadedPartia(
-        onAllLoaded: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-      ): typings.semanticUiVisibility.anon.PickImplonAllLoadedPartia = {
+      inline def PickImplonAllLoadedPartia(onAllLoaded: js.ThisFunction0[/* this */ JQuery, Unit]): typings.semanticUiVisibility.anon.PickImplonAllLoadedPartia = {
         val __obj = js.Dynamic.literal(onAllLoaded = onAllLoaded.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplonAllLoadedPartia]
       }
       
-      inline def PickImplonBottomPassedPar(
-        onBottomPassed: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-      ): typings.semanticUiVisibility.anon.PickImplonBottomPassedPar = {
+      inline def PickImplonBottomPassedPar(onBottomPassed: js.ThisFunction0[/* this */ JQuery, Unit]): typings.semanticUiVisibility.anon.PickImplonBottomPassedPar = {
         val __obj = js.Dynamic.literal(onBottomPassed = onBottomPassed.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplonBottomPassedPar]
       }
       
-      inline def PickImplonBottomPassedRev(
-        onBottomPassedReverse: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-      ): typings.semanticUiVisibility.anon.PickImplonBottomPassedRev = {
+      inline def PickImplonBottomPassedRev(onBottomPassedReverse: js.ThisFunction0[/* this */ JQuery, Unit]): typings.semanticUiVisibility.anon.PickImplonBottomPassedRev = {
         val __obj = js.Dynamic.literal(onBottomPassedReverse = onBottomPassedReverse.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplonBottomPassedRev]
       }
       
-      inline def PickImplonBottomVisiblePa(
-        onBottomVisible: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-      ): typings.semanticUiVisibility.anon.PickImplonBottomVisiblePa = {
+      inline def PickImplonBottomVisiblePa(onBottomVisible: js.ThisFunction0[/* this */ JQuery, Unit]): typings.semanticUiVisibility.anon.PickImplonBottomVisiblePa = {
         val __obj = js.Dynamic.literal(onBottomVisible = onBottomVisible.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplonBottomVisiblePa]
       }
       
-      inline def PickImplonBottomVisibleRe(
-        onBottomVisibleReverse: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-      ): typings.semanticUiVisibility.anon.PickImplonBottomVisibleRe = {
+      inline def PickImplonBottomVisibleRe(onBottomVisibleReverse: js.ThisFunction0[/* this */ JQuery, Unit]): typings.semanticUiVisibility.anon.PickImplonBottomVisibleRe = {
         val __obj = js.Dynamic.literal(onBottomVisibleReverse = onBottomVisibleReverse.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplonBottomVisibleRe]
       }
       
-      inline def PickImplonFixedPartialPic(
-        onFixed: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-      ): typings.semanticUiVisibility.anon.PickImplonFixedPartialPic = {
+      inline def PickImplonFixedPartialPic(onFixed: js.ThisFunction0[/* this */ JQuery, Unit]): typings.semanticUiVisibility.anon.PickImplonFixedPartialPic = {
         val __obj = js.Dynamic.literal(onFixed = onFixed.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplonFixedPartialPic]
       }
       
-      inline def PickImplonLoadPartialPick(
-        onLoad: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-      ): typings.semanticUiVisibility.anon.PickImplonLoadPartialPick = {
+      inline def PickImplonLoadPartialPick(onLoad: js.ThisFunction0[/* this */ JQuery, Unit]): typings.semanticUiVisibility.anon.PickImplonLoadPartialPick = {
         val __obj = js.Dynamic.literal(onLoad = onLoad.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplonLoadPartialPick]
       }
       
-      inline def PickImplonOffScreenPartia(
-        onOffScreen: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-      ): typings.semanticUiVisibility.anon.PickImplonOffScreenPartia = {
+      inline def PickImplonOffScreenPartia(onOffScreen: js.ThisFunction0[/* this */ JQuery, Unit]): typings.semanticUiVisibility.anon.PickImplonOffScreenPartia = {
         val __obj = js.Dynamic.literal(onOffScreen = onOffScreen.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplonOffScreenPartia]
       }
       
-      inline def PickImplonOnScreenPartial(
-        onOnScreen: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-      ): typings.semanticUiVisibility.anon.PickImplonOnScreenPartial = {
+      inline def PickImplonOnScreenPartial(onOnScreen: js.ThisFunction0[/* this */ JQuery, Unit]): typings.semanticUiVisibility.anon.PickImplonOnScreenPartial = {
         val __obj = js.Dynamic.literal(onOnScreen = onOnScreen.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplonOnScreenPartial]
       }
       
-      inline def PickImplonPassingPartialP(
-        onPassing: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-      ): typings.semanticUiVisibility.anon.PickImplonPassingPartialP = {
+      inline def PickImplonPassingPartialP(onPassing: js.ThisFunction0[/* this */ JQuery, Unit]): typings.semanticUiVisibility.anon.PickImplonPassingPartialP = {
         val __obj = js.Dynamic.literal(onPassing = onPassing.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplonPassingPartialP]
       }
       
-      inline def PickImplonPassingReverseP(
-        onPassingReverse: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-      ): typings.semanticUiVisibility.anon.PickImplonPassingReverseP = {
+      inline def PickImplonPassingReverseP(onPassingReverse: js.ThisFunction0[/* this */ JQuery, Unit]): typings.semanticUiVisibility.anon.PickImplonPassingReverseP = {
         val __obj = js.Dynamic.literal(onPassingReverse = onPassingReverse.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplonPassingReverseP]
       }
       
-      inline def PickImplonRefreshPartialP(
-        onRefresh: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-      ): typings.semanticUiVisibility.anon.PickImplonRefreshPartialP = {
+      inline def PickImplonRefreshPartialP(onRefresh: js.ThisFunction0[/* this */ JQuery, Unit]): typings.semanticUiVisibility.anon.PickImplonRefreshPartialP = {
         val __obj = js.Dynamic.literal(onRefresh = onRefresh.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplonRefreshPartialP]
       }
       
-      inline def PickImplonTopPassedPartia(
-        onTopPassed: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-      ): typings.semanticUiVisibility.anon.PickImplonTopPassedPartia = {
+      inline def PickImplonTopPassedPartia(onTopPassed: js.ThisFunction0[/* this */ JQuery, Unit]): typings.semanticUiVisibility.anon.PickImplonTopPassedPartia = {
         val __obj = js.Dynamic.literal(onTopPassed = onTopPassed.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplonTopPassedPartia]
       }
       
-      inline def PickImplonTopPassedRevers(
-        onTopPassedReverse: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-      ): typings.semanticUiVisibility.anon.PickImplonTopPassedRevers = {
+      inline def PickImplonTopPassedRevers(onTopPassedReverse: js.ThisFunction0[/* this */ JQuery, Unit]): typings.semanticUiVisibility.anon.PickImplonTopPassedRevers = {
         val __obj = js.Dynamic.literal(onTopPassedReverse = onTopPassedReverse.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplonTopPassedRevers]
       }
       
-      inline def PickImplonTopVisibleParti(
-        onTopVisible: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-      ): typings.semanticUiVisibility.anon.PickImplonTopVisibleParti = {
+      inline def PickImplonTopVisibleParti(onTopVisible: js.ThisFunction0[/* this */ JQuery, Unit]): typings.semanticUiVisibility.anon.PickImplonTopVisibleParti = {
         val __obj = js.Dynamic.literal(onTopVisible = onTopVisible.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplonTopVisibleParti]
       }
       
-      inline def PickImplonTopVisibleRever(
-        onTopVisibleReverse: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-      ): typings.semanticUiVisibility.anon.PickImplonTopVisibleRever = {
+      inline def PickImplonTopVisibleRever(onTopVisibleReverse: js.ThisFunction0[/* this */ JQuery, Unit]): typings.semanticUiVisibility.anon.PickImplonTopVisibleRever = {
         val __obj = js.Dynamic.literal(onTopVisibleReverse = onTopVisibleReverse.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplonTopVisibleRever]
       }
       
-      inline def PickImplonUnfixedPartialP(
-        onUnfixed: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-      ): typings.semanticUiVisibility.anon.PickImplonUnfixedPartialP = {
+      inline def PickImplonUnfixedPartialP(onUnfixed: js.ThisFunction0[/* this */ JQuery, Unit]): typings.semanticUiVisibility.anon.PickImplonUnfixedPartialP = {
         val __obj = js.Dynamic.literal(onUnfixed = onUnfixed.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplonUnfixedPartialP]
       }
       
-      inline def PickImplonUpdatePartialPi(
-        onUpdate: (js.ThisFunction1[/* this */ JQuery, /* calculations */ ElementCalculations, Unit]) & (js.UndefOr[
-              js.ThisFunction1[/* this */ JQuery, /* calculations */ ElementCalculations, Unit]
-            ])
-      ): typings.semanticUiVisibility.anon.PickImplonUpdatePartialPi = {
+      inline def PickImplonUpdatePartialPi(onUpdate: js.ThisFunction1[/* this */ JQuery, /* calculations */ ElementCalculations, Unit]): typings.semanticUiVisibility.anon.PickImplonUpdatePartialPi = {
         val __obj = js.Dynamic.literal(onUpdate = onUpdate.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplonUpdatePartialPi]
       }
       
-      inline def PickImploncePartialPickIm(once: Boolean & js.UndefOr[Boolean]): typings.semanticUiVisibility.anon.PickImploncePartialPickIm = {
+      inline def PickImploncePartialPickIm(once: Boolean): typings.semanticUiVisibility.anon.PickImploncePartialPickIm = {
         val __obj = js.Dynamic.literal(once = once.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImploncePartialPickIm]
       }
       
-      inline def PickImplperformancePartia(performance: Boolean & js.UndefOr[Boolean]): typings.semanticUiVisibility.anon.PickImplperformancePartia = {
+      inline def PickImplperformancePartia(performance: Boolean): typings.semanticUiVisibility.anon.PickImplperformancePartia = {
         val __obj = js.Dynamic.literal(performance = performance.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplperformancePartia]
       }
       
-      inline def PickImplrefreshOnLoadPart(refreshOnLoad: Boolean & js.UndefOr[Boolean]): typings.semanticUiVisibility.anon.PickImplrefreshOnLoadPart = {
+      inline def PickImplrefreshOnLoadPart(refreshOnLoad: Boolean): typings.semanticUiVisibility.anon.PickImplrefreshOnLoadPart = {
         val __obj = js.Dynamic.literal(refreshOnLoad = refreshOnLoad.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplrefreshOnLoadPart]
       }
       
-      inline def PickImplrefreshOnResizePa(refreshOnResize: Boolean & js.UndefOr[Boolean]): typings.semanticUiVisibility.anon.PickImplrefreshOnResizePa = {
+      inline def PickImplrefreshOnResizePa(refreshOnResize: Boolean): typings.semanticUiVisibility.anon.PickImplrefreshOnResizePa = {
         val __obj = js.Dynamic.literal(refreshOnResize = refreshOnResize.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplrefreshOnResizePa]
       }
       
-      inline def PickImplsilentPartialPick(silent: Boolean & js.UndefOr[Boolean]): typings.semanticUiVisibility.anon.PickImplsilentPartialPick = {
+      inline def PickImplsilentPartialPick(silent: Boolean): typings.semanticUiVisibility.anon.PickImplsilentPartialPick = {
         val __obj = js.Dynamic.literal(silent = silent.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplsilentPartialPick]
       }
       
-      inline def PickImplthrottlePartialPi(throttle: (`false` | Double) & (js.UndefOr[`false` | Double])): typings.semanticUiVisibility.anon.PickImplthrottlePartialPi = {
+      inline def PickImplthrottlePartialPi(throttle: `false` | Double): typings.semanticUiVisibility.anon.PickImplthrottlePartialPi = {
         val __obj = js.Dynamic.literal(throttle = throttle.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplthrottlePartialPi]
       }
       
-      inline def PickImpltransitionPartial(transition: (`false` | String) & (js.UndefOr[`false` | String])): typings.semanticUiVisibility.anon.PickImpltransitionPartial = {
+      inline def PickImpltransitionPartial(transition: `false` | String): typings.semanticUiVisibility.anon.PickImpltransitionPartial = {
         val __obj = js.Dynamic.literal(transition = transition.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImpltransitionPartial]
       }
       
-      inline def PickImpltypePartialPickIm(`type`: (`false` | image | fixed) & (js.UndefOr[`false` | image | fixed])): typings.semanticUiVisibility.anon.PickImpltypePartialPickIm = {
+      inline def PickImpltypePartialPickIm(`type`: `false` | image | fixed): typings.semanticUiVisibility.anon.PickImpltypePartialPickIm = {
         val __obj = js.Dynamic.literal()
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImpltypePartialPickIm]
       }
       
-      inline def PickImplverbosePartialPic(verbose: Boolean & js.UndefOr[Boolean]): typings.semanticUiVisibility.anon.PickImplverbosePartialPic = {
+      inline def PickImplverbosePartialPic(verbose: Boolean): typings.semanticUiVisibility.anon.PickImplverbosePartialPic = {
         val __obj = js.Dynamic.literal(verbose = verbose.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplverbosePartialPic]
       }
       
-      inline def PickImplzIndexPartialPick(zIndex: Double & js.UndefOr[Double]): typings.semanticUiVisibility.anon.PickImplzIndexPartialPick = {
+      inline def PickImplzIndexPartialPick(zIndex: Double): typings.semanticUiVisibility.anon.PickImplzIndexPartialPick = {
         val __obj = js.Dynamic.literal(zIndex = zIndex.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiVisibility.anon.PickImplzIndexPartialPick]
       }

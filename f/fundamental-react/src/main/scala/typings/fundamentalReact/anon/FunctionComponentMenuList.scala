@@ -1,6 +1,5 @@
 package typings.fundamentalReact.anon
 
-import typings.fundamentalReact.fundamentalReactStrings.MenuDotList
 import typings.fundamentalReact.libMenuMenuMod.MenuListProps
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
@@ -19,7 +18,7 @@ trait FunctionComponentMenuList extends StObject {
   
   var defaultProps: js.UndefOr[PartialMenuListProps] = js.native
   
-  var displayName: js.UndefOr[String] & MenuDotList = js.native
+  var displayName: js.UndefOr[String] = js.native
   
   var propTypes: js.UndefOr[WeakValidationMapMenuList] = js.native
 }

@@ -14,102 +14,61 @@ object mod {
   val ^ : js.Any = js.native
   
   /**
-  Stores metadata for a part of a change.
-  */
-  @JSImport("prosemirror-changeset", "Span")
-  @js.native
-  open class Span[Data] () extends StObject {
-    
-    /**
-      The data associated with this span.
-      */
-    val data: Data = js.native
-    
-    /**
-      The length of this span.
-      */
-    val length: Double = js.native
-  }
-  
-  /**
-  Simplifies a set of changes for presentation. This makes the
-  assumption that having both insertions and deletions within a word
-  is confusing, and, when such changes occur without a word boundary
-  between them, they should be expanded to cover the entire set of
-  words (in the new document) they touch. An exception is made for
-  single-character replacements.
-  */
-  inline def simplifyChanges(changes: js.Array[Change[Any]], doc: Node): js.Array[Change[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("simplifyChanges")(changes.asInstanceOf[js.Any], doc.asInstanceOf[js.Any])).asInstanceOf[js.Array[Change[Any]]]
-  
-  /**
   A replaced range with metadata associated with it.
   */
-  trait Change[Data] extends StObject {
+  @JSImport("prosemirror-changeset", "Change")
+  @js.native
+  open class Change[Data] () extends StObject {
     
     /**
       Data associated with the deleted content. The length of these
       spans adds up to `this.toA - this.fromA`.
       */
-    val deleted: js.Array[Span[Data]]
+    val deleted: js.Array[Span[Data]] = js.native
     
     /**
       The start of the range deleted/replaced in the old document.
       */
-    val fromA: Double
+    val fromA: Double = js.native
     
     /**
       The start of the range inserted in the new document.
       */
-    val fromB: Double
+    val fromB: Double = js.native
     
     /**
       Data associated with the inserted content. Length adds up to
       `this.toB - this.toA`.
       */
-    val inserted: js.Array[Span[Data]]
+    val inserted: js.Array[Span[Data]] = js.native
     
     /**
       The end of the range in the old document.
       */
-    val toA: Double
+    val toA: Double = js.native
     
     /**
       The end of the range in the new document.
       */
-    val toB: Double
+    val toB: Double = js.native
   }
   object Change {
     
-    inline def apply[Data](
-      deleted: js.Array[Span[Data]],
-      fromA: Double,
-      fromB: Double,
-      inserted: js.Array[Span[Data]],
-      toA: Double,
-      toB: Double
-    ): Change[Data] = {
-      val __obj = js.Dynamic.literal(deleted = deleted.asInstanceOf[js.Any], fromA = fromA.asInstanceOf[js.Any], fromB = fromB.asInstanceOf[js.Any], inserted = inserted.asInstanceOf[js.Any], toA = toA.asInstanceOf[js.Any], toB = toB.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Change[Data]]
-    }
+    @JSImport("prosemirror-changeset", "Change")
+    @js.native
+    val ^ : js.Any = js.native
     
-    extension [Self <: Change[?], Data](x: Self & Change[Data]) {
-      
-      inline def setDeleted(value: js.Array[Span[Data]]): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
-      
-      inline def setDeletedVarargs(value: Span[Data]*): Self = StObject.set(x, "deleted", js.Array(value*))
-      
-      inline def setFromA(value: Double): Self = StObject.set(x, "fromA", value.asInstanceOf[js.Any])
-      
-      inline def setFromB(value: Double): Self = StObject.set(x, "fromB", value.asInstanceOf[js.Any])
-      
-      inline def setInserted(value: js.Array[Span[Data]]): Self = StObject.set(x, "inserted", value.asInstanceOf[js.Any])
-      
-      inline def setInsertedVarargs(value: Span[Data]*): Self = StObject.set(x, "inserted", js.Array(value*))
-      
-      inline def setToA(value: Double): Self = StObject.set(x, "toA", value.asInstanceOf[js.Any])
-      
-      inline def setToB(value: Double): Self = StObject.set(x, "toB", value.asInstanceOf[js.Any])
-    }
+    /**
+      This merges two changesets (the end document of x should be the
+      start document of y) into a single one spanning the start of x to
+      the end of y.
+      */
+    /* static member */
+    inline def merge[Data](
+      x: js.Array[Change[Data]],
+      y: js.Array[Change[Data]],
+      combine: js.Function2[/* dataA */ Data, /* dataB */ Data, Data]
+    ): js.Array[Change[Data]] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], combine.asInstanceOf[js.Any])).asInstanceOf[js.Array[Change[Data]]]
   }
   
   /**
@@ -118,8 +77,9 @@ object mod {
   sequence of replacements, and simplifies replacments that
   partially undo themselves by comparing their content.
   */
+  @JSImport("prosemirror-changeset", "ChangeSet")
   @js.native
-  trait ChangeSet[Data] extends StObject {
+  open class ChangeSet[Data] () extends StObject {
     
     /**
       Computes a new changeset by adding the given step maps and
@@ -162,4 +122,48 @@ object mod {
       */
     def startDoc: Node = js.native
   }
+  object ChangeSet {
+    
+    @JSImport("prosemirror-changeset", "ChangeSet")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      Create a changeset with the given base object and configuration.
+      The `combine` function is used to compare and combine metadata—it
+      should return null when metadata isn't compatible, and a combined
+      version for a merged range when it is.
+      */
+    /* static member */
+    inline def create[Data](doc: Node): ChangeSet[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(doc.asInstanceOf[js.Any]).asInstanceOf[ChangeSet[Data]]
+    inline def create[Data](doc: Node, combine: js.Function2[/* dataA */ Data, /* dataB */ Data, Data]): ChangeSet[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(doc.asInstanceOf[js.Any], combine.asInstanceOf[js.Any])).asInstanceOf[ChangeSet[Data]]
+  }
+  
+  /**
+  Stores metadata for a part of a change.
+  */
+  @JSImport("prosemirror-changeset", "Span")
+  @js.native
+  open class Span[Data] () extends StObject {
+    
+    /**
+      The data associated with this span.
+      */
+    val data: Data = js.native
+    
+    /**
+      The length of this span.
+      */
+    val length: Double = js.native
+  }
+  
+  /**
+  Simplifies a set of changes for presentation. This makes the
+  assumption that having both insertions and deletions within a word
+  is confusing, and, when such changes occur without a word boundary
+  between them, they should be expanded to cover the entire set of
+  words (in the new document) they touch. An exception is made for
+  single-character replacements.
+  */
+  inline def simplifyChanges(changes: js.Array[Change[Any]], doc: Node): js.Array[Change[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("simplifyChanges")(changes.asInstanceOf[js.Any], doc.asInstanceOf[js.Any])).asInstanceOf[js.Array[Change[Any]]]
 }

@@ -1,7 +1,7 @@
 package typings.ckeditorCkeditor5Engine
 
 import typings.ckeditorCkeditor5Engine.anon.SourcePosition
-import typings.ckeditorCkeditor5Engine.anon.`13`
+import typings.ckeditorCkeditor5Engine.anon.`12`
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.move
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.reinsert
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.remove
@@ -99,7 +99,7 @@ object srcModelOperationMoveoperationMod {
       * Custom toJSON method to solve child-parent circular dependencies.
       */
     /* CompleteClass */
-    override def toJSON(): `13` = js.native
+    override def toJSON(): `12` = js.native
     
     /**
       * Operation type.
@@ -185,7 +185,7 @@ object srcModelOperationMoveoperationMod {
       isDocumentOperation: Boolean,
       sourcePosition: typings.ckeditorCkeditor5Engine.srcModelPositionMod.default,
       targetPosition: typings.ckeditorCkeditor5Engine.srcModelPositionMod.default,
-      toJSON: () => `13`,
+      toJSON: () => `12`,
       `type`: remove | reinsert | move
     ): MoveOperation = {
       val __obj = js.Dynamic.literal(getMovedRangeStart = js.Any.fromFunction0(getMovedRangeStart), getReversed = js.Any.fromFunction0(getReversed), howMany = howMany.asInstanceOf[js.Any], isDocumentOperation = isDocumentOperation.asInstanceOf[js.Any], sourcePosition = sourcePosition.asInstanceOf[js.Any], targetPosition = targetPosition.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), baseVersion = null, batch = null)

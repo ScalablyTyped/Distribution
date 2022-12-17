@@ -6,19 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `318` extends StObject {
   
-  /** Response */
-  var `200`: ContentApplicationjsonRepositoriesArrayTotalcountNumber
+  var content: `315`
 }
 object `318` {
   
-  inline def apply(`200`: ContentApplicationjsonRepositoriesArrayTotalcountNumber): `318` = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
+  inline def apply(content: `315`): `318` = {
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     __obj.asInstanceOf[`318`]
   }
   
   extension [Self <: `318`](x: Self) {
     
-    inline def set200(value: ContentApplicationjsonRepositoriesArrayTotalcountNumber): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+    inline def setContent(value: `315`): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }
 }

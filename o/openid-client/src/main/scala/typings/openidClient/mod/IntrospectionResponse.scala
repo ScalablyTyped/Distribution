@@ -1,7 +1,7 @@
 package typings.openidClient.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.openidClient.anon.X5tS256
+import typings.openidClient.anon.Dictkey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ trait IntrospectionResponse
   
   var client_id: js.UndefOr[String] = js.undefined
   
-  var cnf: js.UndefOr[X5tS256] = js.undefined
+  var cnf: js.UndefOr[Dictkey] = js.undefined
   
   var exp: js.UndefOr[Double] = js.undefined
   
@@ -59,7 +59,7 @@ object IntrospectionResponse {
     
     inline def setClient_idUndefined: Self = StObject.set(x, "client_id", js.undefined)
     
-    inline def setCnf(value: X5tS256): Self = StObject.set(x, "cnf", value.asInstanceOf[js.Any])
+    inline def setCnf(value: Dictkey): Self = StObject.set(x, "cnf", value.asInstanceOf[js.Any])
     
     inline def setCnfUndefined: Self = StObject.set(x, "cnf", js.undefined)
     

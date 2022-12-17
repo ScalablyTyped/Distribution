@@ -1,5 +1,6 @@
 package typings.styledSystem.mod
 
+import typings.csstype.mod.Property.AlignItems
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,12 +16,7 @@ trait AlignItemsProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StO
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)
     */
-  var alignItems: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignItems */ js.Any, 
-      ThemeType
-    ]
-  ] = js.undefined
+  var alignItems: js.UndefOr[ResponsiveValue[AlignItems, ThemeType]] = js.undefined
 }
 object AlignItemsProps {
   
@@ -31,19 +27,12 @@ object AlignItemsProps {
   
   extension [Self <: AlignItemsProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & AlignItemsProps[ThemeType]) {
     
-    inline def setAlignItems(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignItems */ js.Any, 
-          ThemeType
-        ]
-    ): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
+    inline def setAlignItems(value: ResponsiveValue[AlignItems, ThemeType]): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
     
     inline def setAlignItemsNull: Self = StObject.set(x, "alignItems", null)
     
     inline def setAlignItemsUndefined: Self = StObject.set(x, "alignItems", js.undefined)
     
-    inline def setAlignItemsVarargs(
-      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignItems */ js.Any) | Null)*
-    ): Self = StObject.set(x, "alignItems", js.Array(value :_*))
+    inline def setAlignItemsVarargs(value: (AlignItems | Null)*): Self = StObject.set(x, "alignItems", js.Array(value*))
   }
 }

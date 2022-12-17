@@ -130,7 +130,7 @@ object distTypesTypesMod {
       
       inline def setNote(value: Note[Datum]): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
       
-      inline def setNoteFunction1(value: /* props */ XY[Datum] => Element): Self = StObject.set(x, "note", js.Any.fromFunction1(value))
+      inline def setNoteFunction1(value: /* props */ DatumX[Datum] => Element): Self = StObject.set(x, "note", js.Any.fromFunction1(value))
       
       inline def setNoteFunction2(value: (/* ctx */ CanvasRenderingContext2D, /* props */ Theme[Datum]) => Unit): Self = StObject.set(x, "note", js.Any.fromFunction2(value))
       
@@ -156,7 +156,7 @@ object distTypesTypesMod {
     }
   }
   
-  type BoundAnnotation[Datum] = Required[AnnotationSpec[Datum]] & DatumX[Datum]
+  type BoundAnnotation[Datum] = Required[AnnotationSpec[Datum]] & XY[Datum]
   
   trait CircleAnnotationSpec[Datum]
     extends StObject
@@ -249,7 +249,7 @@ object distTypesTypesMod {
   
   type NoteCanvasRenderer[Datum] = js.Function2[/* ctx */ CanvasRenderingContext2D, /* props */ Theme[Datum], Unit]
   
-  type NoteComponent[Datum] = js.Function1[/* props */ XY[Datum], Element]
+  type NoteComponent[Datum] = js.Function1[/* props */ DatumX[Datum], Element]
   
   type NoteSvg[Datum] = String | ReactElement | NoteComponent[Datum]
   

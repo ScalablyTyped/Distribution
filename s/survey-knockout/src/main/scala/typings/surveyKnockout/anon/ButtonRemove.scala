@@ -34,8 +34,6 @@ trait ButtonRemove extends StObject {
   
   var emptyRowsText: String
   
-  var flowRoot: String
-  
   var ghostRow: String
   
   var headerCell: String
@@ -45,10 +43,6 @@ trait ButtonRemove extends StObject {
   var iconDrag: String
   
   var iconRemove: String
-  
-  var itemValue: String
-  
-  var mainRoot: String
   
   var root: String
   
@@ -71,18 +65,15 @@ object ButtonRemove {
     emptyRowsButton: String,
     emptyRowsSection: String,
     emptyRowsText: String,
-    flowRoot: String,
     ghostRow: String,
     headerCell: String,
     iconAdd: String,
     iconDrag: String,
     iconRemove: String,
-    itemValue: String,
-    mainRoot: String,
     root: String,
     row: String
   ): ButtonRemove = {
-    val __obj = js.Dynamic.literal(actionsCell = actionsCell.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttonAdd = buttonAdd.asInstanceOf[js.Any], buttonRemove = buttonRemove.asInstanceOf[js.Any], detailButton = detailButton.asInstanceOf[js.Any], detailButtonExpanded = detailButtonExpanded.asInstanceOf[js.Any], detailCell = detailCell.asInstanceOf[js.Any], detailIcon = detailIcon.asInstanceOf[js.Any], detailIconExpanded = detailIconExpanded.asInstanceOf[js.Any], detailPanelCell = detailPanelCell.asInstanceOf[js.Any], detailRow = detailRow.asInstanceOf[js.Any], emptyRowsButton = emptyRowsButton.asInstanceOf[js.Any], emptyRowsSection = emptyRowsSection.asInstanceOf[js.Any], emptyRowsText = emptyRowsText.asInstanceOf[js.Any], flowRoot = flowRoot.asInstanceOf[js.Any], ghostRow = ghostRow.asInstanceOf[js.Any], headerCell = headerCell.asInstanceOf[js.Any], iconAdd = iconAdd.asInstanceOf[js.Any], iconDrag = iconDrag.asInstanceOf[js.Any], iconRemove = iconRemove.asInstanceOf[js.Any], itemValue = itemValue.asInstanceOf[js.Any], mainRoot = mainRoot.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(actionsCell = actionsCell.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttonAdd = buttonAdd.asInstanceOf[js.Any], buttonRemove = buttonRemove.asInstanceOf[js.Any], detailButton = detailButton.asInstanceOf[js.Any], detailButtonExpanded = detailButtonExpanded.asInstanceOf[js.Any], detailCell = detailCell.asInstanceOf[js.Any], detailIcon = detailIcon.asInstanceOf[js.Any], detailIconExpanded = detailIconExpanded.asInstanceOf[js.Any], detailPanelCell = detailPanelCell.asInstanceOf[js.Any], detailRow = detailRow.asInstanceOf[js.Any], emptyRowsButton = emptyRowsButton.asInstanceOf[js.Any], emptyRowsSection = emptyRowsSection.asInstanceOf[js.Any], emptyRowsText = emptyRowsText.asInstanceOf[js.Any], ghostRow = ghostRow.asInstanceOf[js.Any], headerCell = headerCell.asInstanceOf[js.Any], iconAdd = iconAdd.asInstanceOf[js.Any], iconDrag = iconDrag.asInstanceOf[js.Any], iconRemove = iconRemove.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonRemove]
   }
   
@@ -116,8 +107,6 @@ object ButtonRemove {
     
     inline def setEmptyRowsText(value: String): Self = StObject.set(x, "emptyRowsText", value.asInstanceOf[js.Any])
     
-    inline def setFlowRoot(value: String): Self = StObject.set(x, "flowRoot", value.asInstanceOf[js.Any])
-    
     inline def setGhostRow(value: String): Self = StObject.set(x, "ghostRow", value.asInstanceOf[js.Any])
     
     inline def setHeaderCell(value: String): Self = StObject.set(x, "headerCell", value.asInstanceOf[js.Any])
@@ -127,10 +116,6 @@ object ButtonRemove {
     inline def setIconDrag(value: String): Self = StObject.set(x, "iconDrag", value.asInstanceOf[js.Any])
     
     inline def setIconRemove(value: String): Self = StObject.set(x, "iconRemove", value.asInstanceOf[js.Any])
-    
-    inline def setItemValue(value: String): Self = StObject.set(x, "itemValue", value.asInstanceOf[js.Any])
-    
-    inline def setMainRoot(value: String): Self = StObject.set(x, "mainRoot", value.asInstanceOf[js.Any])
     
     inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     

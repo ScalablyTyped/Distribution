@@ -11,7 +11,6 @@ import typings.typescript.mod.SourceFile
 import typings.typescript.mod.SourceFileLike
 import typings.typescript.mod.SyntaxKind.ImportEqualsDeclaration
 import typings.typescript.mod.TypeOnlyAliasDeclaration
-import typings.typescript.typescriptBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -88,7 +87,7 @@ trait ImportEqualsDeclarationre
   def getWidth(): Double = js.native
   def getWidth(sourceFile: SourceFileLike): Double = js.native
   
-  val isTypeOnly: Boolean & `true` = js.native
+  val isTypeOnly: Boolean = js.native
   
   val kind: ImportEqualsDeclaration = js.native
   

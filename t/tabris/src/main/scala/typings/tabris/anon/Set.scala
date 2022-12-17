@@ -6,17 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Set extends StObject {
   
-  var set: Any
+  var set: js.UndefOr[Any] = js.undefined
 }
 object Set {
   
-  inline def apply(set: Any): Set = {
-    val __obj = js.Dynamic.literal(set = set.asInstanceOf[js.Any])
+  inline def apply(): Set = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Set]
   }
   
   extension [Self <: Set](x: Self) {
     
     inline def setSet(value: Any): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
+    
+    inline def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
   }
 }

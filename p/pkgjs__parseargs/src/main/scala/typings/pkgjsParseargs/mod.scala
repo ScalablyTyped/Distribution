@@ -1,7 +1,7 @@
 package typings.pkgjsParseargs
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.pkgjsParseargs.anon.IndexKind
+import typings.pkgjsParseargs.anon.Index
 import typings.pkgjsParseargs.anon.Kind
 import typings.pkgjsParseargs.anon.Positionals
 import typings.pkgjsParseargs.anon.Values
@@ -54,22 +54,22 @@ object mod {
   type IfDefaultsTrue[T, IfTrue, IfFalse] = IfTrue
   
   /* Rewritten from type alias, can be one of: 
-    - typings.pkgjsParseargs.anon.Index
     - typings.pkgjsParseargs.anon.InlineValue
+    - typings.pkgjsParseargs.anon.Name
   */
   trait OptionToken
     extends StObject
        with Token
   object OptionToken {
     
-    inline def Index(index: Double, inlineValue: Boolean, name: String, rawName: String, value: String): typings.pkgjsParseargs.anon.Index = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.pkgjsParseargs.anon.Index]
-    }
-    
-    inline def InlineValue(index: Double, inlineValue: Unit, name: String, rawName: String, value: Unit): typings.pkgjsParseargs.anon.InlineValue = {
+    inline def InlineValue(index: Double, inlineValue: Boolean, name: String, rawName: String, value: String): typings.pkgjsParseargs.anon.InlineValue = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.pkgjsParseargs.anon.InlineValue]
+    }
+    
+    inline def Name(index: Double, inlineValue: Unit, name: String, rawName: String, value: Unit): typings.pkgjsParseargs.anon.Name = {
+      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.pkgjsParseargs.anon.Name]
     }
   }
   
@@ -163,12 +163,12 @@ object mod {
     /* import warning: importer.ImportType#apply Failed type conversion: T['strict'] */ js.Any, 
     IfDefaultsFalse[
       /* import warning: importer.ImportType#apply Failed type conversion: T['allowPositionals'] */ js.Any, 
-      Kind, 
+      Index, 
       scala.Nothing
     ], 
     IfDefaultsTrue[
       /* import warning: importer.ImportType#apply Failed type conversion: T['allowPositionals'] */ js.Any, 
-      Kind, 
+      Index, 
       scala.Nothing
     ]
   ]
@@ -198,7 +198,7 @@ object mod {
     */
   type ParsedResults[T /* <: ParseArgsConfig */] = Values[T]
   
-  type ParsedTokens[T /* <: ParseArgsConfig */] = js.Array[ParsedOptionToken[T] | ParsedPositionalToken[T] | IndexKind]
+  type ParsedTokens[T /* <: ParseArgsConfig */] = js.Array[ParsedOptionToken[T] | ParsedPositionalToken[T] | Kind]
   
   type ParsedValues[T /* <: ParseArgsConfig */] = (IfDefaultsTrue[
     /* import warning: importer.ImportType#apply Failed type conversion: T['strict'] */ js.Any, 
@@ -223,30 +223,30 @@ object mod {
   
   /* Rewritten from type alias, can be one of: 
     - typings.pkgjsParseargs.mod.OptionToken
+    - typings.pkgjsParseargs.anon.Index
     - typings.pkgjsParseargs.anon.Kind
-    - typings.pkgjsParseargs.anon.IndexKind
   */
   trait Token extends StObject
   object Token {
     
-    inline def Index(index: Double, inlineValue: Boolean, name: String, rawName: String, value: String): typings.pkgjsParseargs.anon.Index = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    inline def Index(index: Double, value: String): typings.pkgjsParseargs.anon.Index = {
+      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], kind = "positional", value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.pkgjsParseargs.anon.Index]
     }
     
-    inline def IndexKind(index: Double): typings.pkgjsParseargs.anon.IndexKind = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], kind = "option-terminator")
-      __obj.asInstanceOf[typings.pkgjsParseargs.anon.IndexKind]
-    }
-    
-    inline def InlineValue(index: Double, inlineValue: Unit, name: String, rawName: String, value: Unit): typings.pkgjsParseargs.anon.InlineValue = {
+    inline def InlineValue(index: Double, inlineValue: Boolean, name: String, rawName: String, value: String): typings.pkgjsParseargs.anon.InlineValue = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.pkgjsParseargs.anon.InlineValue]
     }
     
-    inline def Kind(index: Double, value: String): typings.pkgjsParseargs.anon.Kind = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], kind = "positional", value = value.asInstanceOf[js.Any])
+    inline def Kind(index: Double): typings.pkgjsParseargs.anon.Kind = {
+      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], kind = "option-terminator")
       __obj.asInstanceOf[typings.pkgjsParseargs.anon.Kind]
+    }
+    
+    inline def Name(index: Double, inlineValue: Unit, name: String, rawName: String, value: Unit): typings.pkgjsParseargs.anon.Name = {
+      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.pkgjsParseargs.anon.Name]
     }
   }
   

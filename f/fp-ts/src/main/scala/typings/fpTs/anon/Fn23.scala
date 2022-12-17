@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Fn23[K] extends StObject {
   
-  def apply(k: K): js.Function1[/* m */ ReadonlyMap[K, Any], Option_[Any]] = js.native
-  def apply[A](k: K, m: ReadonlyMap[K, A]): Option_[A] = js.native
+  def apply(k: K): js.Function1[/* m */ ReadonlyMap[K, Any], Option_[js.Tuple2[K, Any]]] = js.native
+  def apply[A](k: K, m: ReadonlyMap[K, A]): Option_[js.Tuple2[K, A]] = js.native
 }

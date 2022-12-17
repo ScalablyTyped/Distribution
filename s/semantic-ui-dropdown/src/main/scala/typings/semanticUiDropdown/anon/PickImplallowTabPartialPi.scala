@@ -51,7 +51,7 @@ trait PickImplallowTabPartialPi
   
   var allowReselection: js.UndefOr[Boolean] = js.undefined
   
-  var allowTab: Boolean & js.UndefOr[Boolean]
+  var allowTab: Boolean
   
   var apiSettings: js.UndefOr[`false` | ApiSettings] = js.undefined
   
@@ -169,7 +169,7 @@ trait PickImplallowTabPartialPi
 }
 object PickImplallowTabPartialPi {
   
-  inline def apply(allowTab: Boolean & js.UndefOr[Boolean]): PickImplallowTabPartialPi = {
+  inline def apply(allowTab: Boolean): PickImplallowTabPartialPi = {
     val __obj = js.Dynamic.literal(allowTab = allowTab.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplallowTabPartialPi]
   }
@@ -200,7 +200,7 @@ object PickImplallowTabPartialPi {
     
     inline def setAllowReselectionUndefined: Self = StObject.set(x, "allowReselection", js.undefined)
     
-    inline def setAllowTab(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "allowTab", value.asInstanceOf[js.Any])
+    inline def setAllowTab(value: Boolean): Self = StObject.set(x, "allowTab", value.asInstanceOf[js.Any])
     
     inline def setApiSettings(value: `false` | ApiSettings): Self = StObject.set(x, "apiSettings", value.asInstanceOf[js.Any])
     

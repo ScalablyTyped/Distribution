@@ -1,7 +1,7 @@
 package typings.reactNativeSvg
 
 import typings.react.mod.ReactNode
-import typings.reactNativeSvg.anon.Height
+import typings.reactNativeSvg.anon.X
 import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.ColumnMajorTransformMatrix
 import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.NumberProp
 import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.TransformProps
@@ -24,8 +24,8 @@ object libTypescriptElementsPatternMod {
     
     @JSImport("react-native-svg/lib/typescript/elements/Pattern", "default.defaultProps")
     @js.native
-    def defaultProps: Height = js.native
-    inline def defaultProps_=(x: Height): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: X = js.native
+    inline def defaultProps_=(x: X): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("react-native-svg/lib/typescript/elements/Pattern", "default.displayName")
     @js.native

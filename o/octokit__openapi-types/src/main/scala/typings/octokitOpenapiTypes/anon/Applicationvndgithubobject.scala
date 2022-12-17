@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Applicationvndgithubobject extends StObject {
   
   @JSName("application/json")
-  var applicationSlashjson: js.Array[Giturl] | Size | Target | Submodulegiturl
+  var applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['content-directory'] */ js.Any
   
   @JSName("application/vnd.github.object")
-  var applicationSlashvndDotgithubDotobject: Encoding
+  var applicationSlashvndDotgithubDotobject: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['content-tree'] */ js.Any
 }
 object Applicationvndgithubobject {
   
   inline def apply(
-    applicationSlashjson: js.Array[Giturl] | Size | Target | Submodulegiturl,
-    applicationSlashvndDotgithubDotobject: Encoding
+    applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['content-directory'] */ js.Any,
+    applicationSlashvndDotgithubDotobject: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['content-tree'] */ js.Any
   ): Applicationvndgithubobject = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
@@ -26,10 +26,12 @@ object Applicationvndgithubobject {
   
   extension [Self <: Applicationvndgithubobject](x: Self) {
     
-    inline def setApplicationSlashjson(value: js.Array[Giturl] | Size | Target | Submodulegiturl): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+    inline def setApplicationSlashjson(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['content-directory'] */ js.Any
+    ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
     
-    inline def setApplicationSlashjsonVarargs(value: Giturl*): Self = StObject.set(x, "application/json", js.Array(value*))
-    
-    inline def setApplicationSlashvndDotgithubDotobject(value: Encoding): Self = StObject.set(x, "application/vnd.github.object", value.asInstanceOf[js.Any])
+    inline def setApplicationSlashvndDotgithubDotobject(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['content-tree'] */ js.Any
+    ): Self = StObject.set(x, "application/vnd.github.object", value.asInstanceOf[js.Any])
   }
 }

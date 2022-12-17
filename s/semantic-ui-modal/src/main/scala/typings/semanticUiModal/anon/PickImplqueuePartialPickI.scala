@@ -60,7 +60,7 @@ trait PickImplqueuePartialPickI
   
   var performance: js.UndefOr[Boolean] = js.undefined
   
-  var queue: Boolean & js.UndefOr[Boolean]
+  var queue: Boolean
   
   var selector: js.UndefOr[SelectorSettings] = js.undefined
   
@@ -72,7 +72,7 @@ trait PickImplqueuePartialPickI
 }
 object PickImplqueuePartialPickI {
   
-  inline def apply(queue: Boolean & js.UndefOr[Boolean]): PickImplqueuePartialPickI = {
+  inline def apply(queue: Boolean): PickImplqueuePartialPickI = {
     val __obj = js.Dynamic.literal(queue = queue.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplqueuePartialPickI]
   }
@@ -167,7 +167,7 @@ object PickImplqueuePartialPickI {
     
     inline def setPerformanceUndefined: Self = StObject.set(x, "performance", js.undefined)
     
-    inline def setQueue(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+    inline def setQueue(value: Boolean): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
     
     inline def setSelector(value: SelectorSettings): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     

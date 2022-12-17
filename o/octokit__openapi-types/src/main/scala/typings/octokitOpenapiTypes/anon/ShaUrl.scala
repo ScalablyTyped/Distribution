@@ -6,14 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ShaUrl extends StObject {
   
-  var sha: js.UndefOr[String] = js.undefined
+  var sha: String
   
-  var url: js.UndefOr[String] = js.undefined
+  /** Format: uri */
+  var url: String
 }
 object ShaUrl {
   
-  inline def apply(): ShaUrl = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(sha: String, url: String): ShaUrl = {
+    val __obj = js.Dynamic.literal(sha = sha.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShaUrl]
   }
   
@@ -21,10 +22,6 @@ object ShaUrl {
     
     inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
     
-    inline def setShaUndefined: Self = StObject.set(x, "sha", js.undefined)
-    
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
-    
-    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

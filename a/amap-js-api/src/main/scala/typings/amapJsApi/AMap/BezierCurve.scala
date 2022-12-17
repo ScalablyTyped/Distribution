@@ -127,7 +127,7 @@ object BezierCurve {
     /**
       * 贝瑟尔曲线的路径
       */
-    var path: js.UndefOr[js.Array[LocationValue]] & (js.Array[js.Array[Double | String | (js.Array[String | Double])]])
+    var path: js.UndefOr[js.Array[LocationValue]] = js.undefined
     
     /**
       * 是否延路径显示方向箭头
@@ -174,10 +174,8 @@ object BezierCurve {
   }
   object Options {
     
-    inline def apply[ExtraData](
-      path: js.UndefOr[js.Array[LocationValue]] & (js.Array[js.Array[Double | String | (js.Array[String | Double])]])
-    ): Options[ExtraData] = {
-      val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+    inline def apply[ExtraData](): Options[ExtraData] = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options[ExtraData]]
     }
     
@@ -241,9 +239,11 @@ object BezierCurve {
       
       inline def setOutlineColorUndefined: Self = StObject.set(x, "outlineColor", js.undefined)
       
-      inline def setPath(
-        value: js.UndefOr[js.Array[LocationValue]] & (js.Array[js.Array[Double | String | (js.Array[String | Double])]])
-      ): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: js.Array[LocationValue]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      
+      inline def setPathVarargs(value: LocationValue*): Self = StObject.set(x, "path", js.Array(value*))
       
       inline def setShowDir(value: Boolean): Self = StObject.set(x, "showDir", value.asInstanceOf[js.Any])
       

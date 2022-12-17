@@ -1,7 +1,7 @@
 package typings.facebookNodejsBusinessSdk.mod
 
 import org.scalablytyped.runtime.Instantiable11
-import typings.facebookNodejsBusinessSdk.anon.Typeofdefault
+import typings.facebookNodejsBusinessSdk.anon.TypeofdefaultInstantiable
 import typings.facebookNodejsBusinessSdk.mod.^
 import typings.facebookNodejsBusinessSdk.srcObjectsEventMod.default
 import org.scalablytyped.runtime.StObject
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class SignalEvent () extends default
 object SignalEvent {
   
-  inline def apply: Typeofdefault & (Instantiable11[
+  inline def apply: TypeofdefaultInstantiable & (Instantiable11[
     /* event_name */ String, 
     /* event_time */ Double, 
     /* event_source_url */ String, 
@@ -27,7 +27,7 @@ object SignalEvent {
     /* data_processing_options_country */ Double, 
     /* data_processing_options_state */ Double, 
     typings.facebookNodejsBusinessSdk.srcObjectsSignalEventMod.default
-  ]) = ^.asInstanceOf[js.Dynamic].selectDynamic("SignalEvent").asInstanceOf[Typeofdefault & (Instantiable11[
+  ]) = ^.asInstanceOf[js.Dynamic].selectDynamic("SignalEvent").asInstanceOf[TypeofdefaultInstantiable & (Instantiable11[
     /* event_name */ String, 
     /* event_time */ Double, 
     /* event_source_url */ String, 

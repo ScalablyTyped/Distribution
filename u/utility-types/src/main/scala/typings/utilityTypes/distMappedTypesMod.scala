@@ -7,7 +7,7 @@ import typings.std.Partial
 import typings.std.Pick
 import typings.std.Record
 import typings.std.Required
-import typings.utilityTypes.anon.`0`
+import typings.utilityTypes.anon.BrandU
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +18,7 @@ object distMappedTypesMod {
   
   type AugmentedRequired[T /* <: js.Object */, K /* <: /* keyof T */ String */] = (Omit[T, K]) & (Required[Pick[T, K]])
   
-  type Brand[T, U] = T & typings.utilityTypes.anon.Brand[U]
+  type Brand[T, U] = T & BrandU[U]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
@@ -106,7 +106,7 @@ object distMappedTypesMod {
   
   type Diff[T /* <: js.Object */, U /* <: js.Object */] = Pick[T, SetDifference[/* keyof T */ String, /* keyof U */ String]]
   
-  type Exact[A /* <: js.Object */] = A & `0`[A]
+  type Exact[A /* <: js.Object */] = A & typings.utilityTypes.anon.Brand[A]
   
   type FunctionKeys[T /* <: js.Object */] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: -? utility-types.utility-types/dist/mapped-types.NonUndefined<T[K]> extends std.Function? K : never}[keyof T] */ js.Any
   

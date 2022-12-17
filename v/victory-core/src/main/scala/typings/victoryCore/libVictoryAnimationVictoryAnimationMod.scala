@@ -6,8 +6,8 @@ import typings.react.mod.Context
 import typings.react.mod.ContextType
 import typings.react.mod.ReactNode
 import typings.victoryCore.anon.AnimationTimer
-import typings.victoryCore.anon.Delay
-import typings.victoryCore.anon.Duration
+import typings.victoryCore.anon.Children
+import typings.victoryCore.anon.Data
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,8 +61,8 @@ object libVictoryAnimationVictoryAnimationMod {
     
     @JSImport("victory-core/lib/victory-animation/victory-animation", "VictoryAnimation.defaultProps")
     @js.native
-    def defaultProps: Duration = js.native
-    inline def defaultProps_=(x: Duration): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: Data = js.native
+    inline def defaultProps_=(x: Data): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("victory-core/lib/victory-animation/victory-animation", "VictoryAnimation.displayName")
     @js.native
@@ -71,8 +71,8 @@ object libVictoryAnimationVictoryAnimationMod {
     
     @JSImport("victory-core/lib/victory-animation/victory-animation", "VictoryAnimation.propTypes")
     @js.native
-    def propTypes: Delay = js.native
-    inline def propTypes_=(x: Delay): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    def propTypes: Children = js.native
+    inline def propTypes_=(x: Children): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
   type AnimationData = AnimationStyle | js.Array[AnimationStyle]

@@ -1,6 +1,7 @@
 package typings.reactNativePickerPicker
 
 import typings.react.mod.Component
+import typings.react.mod.ComponentType
 import typings.reactNative.mod.ColorValue
 import typings.reactNative.mod.NativeSyntheticEvent
 import typings.reactNative.mod.StyleProp
@@ -15,11 +16,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object typingsPickerMod {
   
-  type ItemValue = Double | String
-  
+  @JSImport("@react-native-picker/picker/typings/Picker", "Picker")
   @js.native
-  trait Picker[T]
+  open class Picker[T] protected ()
     extends Component[PickerProps[T], js.Object, Any] {
+    def this(props: PickerProps[T]) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: PickerProps[T], context: Any) = this()
     
     /**
       * @platform android
@@ -31,6 +37,46 @@ object typingsPickerMod {
       */
     def focus(): Unit = js.native
   }
+  object Picker {
+    
+    @JSImport("@react-native-picker/picker/typings/Picker", "Picker")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("@react-native-picker/picker/typings/Picker", "Picker.Item")
+    @js.native
+    def Item: ComponentType[
+        PickerItemProps[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify T */ Any
+        ]
+      ] = js.native
+    inline def Item_=(
+      x: ComponentType[
+          PickerItemProps[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify T */ Any
+          ]
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+    
+    /**
+      * On Android, display the options in a dialog (this is the default).
+      */
+    /* static member */
+    @JSImport("@react-native-picker/picker/typings/Picker", "Picker.MODE_DIALOG")
+    @js.native
+    val MODE_DIALOG: dialog = js.native
+    
+    /**
+      * On Android, display the options in a dropdown.
+      */
+    /* static member */
+    @JSImport("@react-native-picker/picker/typings/Picker", "Picker.MODE_DROPDOWN")
+    @js.native
+    val MODE_DROPDOWN: dropdown = js.native
+  }
+  
+  type ItemValue = Double | String
   
   trait PickerItemProps[T] extends StObject {
     

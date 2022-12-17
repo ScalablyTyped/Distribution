@@ -11,9 +11,7 @@ object meshesTrailMeshMod {
   
   @JSImport("babylonjs/Meshes/trailMesh", "TrailMesh")
   @js.native
-  open class TrailMesh protected ()
-    extends StObject
-       with Mesh {
+  open class TrailMesh protected () extends Mesh {
     /**
       * @constructor
       * @param name The value used by scene.getMeshByName() to do a lookup.
@@ -124,18 +122,6 @@ object meshesTrailMeshMod {
       */
     def clone(name: String, newGenerator: TransformNode): TrailMesh = js.native
     def clone(name: Unit, newGenerator: TransformNode): TrailMesh = js.native
-    
-    /**
-      * "TrailMesh"
-      * @returns "TrailMesh"
-      */
-    def getClassName(): String = js.native
-    
-    /**
-      * Serializes this trail mesh
-      * @param serializationObject object to write serialization to
-      */
-    def serialize(serializationObject: Any): Unit = js.native
     
     /**
       * Start trailing mesh.

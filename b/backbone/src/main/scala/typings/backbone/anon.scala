@@ -259,7 +259,7 @@ object anon {
     @JSName("$")
     var $_Original: JQueryStatic = js.native
     
-    var Collection: (Instantiable2[
+    var Collection: Instantiable2[
         /* models */ js.UndefOr[
           js.Array[
             (/* import warning: RewrittenClass.unapply cls was tparam TModel */ Any) | (Record[String, Any])
@@ -267,7 +267,7 @@ object anon {
         ], 
         /* options */ js.UndefOr[Any], 
         typings.backbone.mod.Collection[Model[Any, ModelSetOptions, Any]]
-      ]) & TypeofCollection = js.native
+      ] = js.native
     
     val Events: typings.backbone.mod.Events = js.native
     
@@ -283,13 +283,13 @@ object anon {
       */
     var EventsMixin: Instantiable0[typings.backbone.mod.EventsMixin] = js.native
     
-    var History: Instantiable0[History_] & TypeofHistory = js.native
+    var History: Instantiable0[History_] = js.native
     
     /**
       * E - Extensions to the model constructor options. You can accept additional constructor options
       * by listing them in the E parameter.
       */
-    var Model: (Instantiable2[
+    var Model: Instantiable2[
         /* attributes */ js.UndefOr[/* import warning: RewrittenClass.unapply cls was tparam T */ Any], 
         /* options */ js.UndefOr[
           CombinedModelConstructorOptions[
@@ -298,13 +298,13 @@ object anon {
           ]
         ], 
         typings.backbone.mod.Model[ObjectHash, js.Object, js.Object]
-      ]) & TypeofModel = js.native
+      ] = js.native
     
     var ModelBase: Instantiable0[typings.backbone.mod.ModelBase] = js.native
     
-    var Router: (Instantiable1[/* options */ js.UndefOr[RouterOptions], typings.backbone.mod.Router]) & TypeofRouter = js.native
+    var Router: Instantiable1[/* options */ js.UndefOr[RouterOptions], typings.backbone.mod.Router] = js.native
     
-    var View: (Instantiable1[
+    var View: Instantiable1[
         /* options */ js.UndefOr[
           ViewOptions[
             /* import warning: RewrittenClass.unapply cls was tparam TModel */ Any, 
@@ -312,7 +312,7 @@ object anon {
           ]
         ], 
         typings.backbone.mod.View[js.UndefOr[Model[Any, ModelSetOptions, Any]], Element]
-      ]) & TypeofView = js.native
+      ] = js.native
     
     def ajax(): JQueryXHR = js.native
     def ajax(options: JQueryAjaxSettings): JQueryXHR = js.native

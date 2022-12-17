@@ -8,7 +8,7 @@ import typings.rollup.anon.Code
 import typings.rollup.anon.Custom
 import typings.rollup.anon.CustomResolution
 import typings.rollup.anon.Event
-import typings.rollup.anon.Format
+import typings.rollup.anon.FileName
 import typings.rollup.anon.Left
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -58,7 +58,7 @@ trait FunctionPluginHooks extends StObject {
   @JSName("resolveDynamicImport")
   var resolveDynamicImport_Original: ResolveDynamicImportHook = js.native
   
-  def resolveFileUrl(options: ChunkId): String | NullValue = js.native
+  def resolveFileUrl(options: FileName): String | NullValue = js.native
   @JSName("resolveFileUrl")
   var resolveFileUrl_Original: ResolveFileUrlHook = js.native
   
@@ -67,8 +67,8 @@ trait FunctionPluginHooks extends StObject {
   @JSName("resolveId")
   var resolveId_Original: ResolveIdHook = js.native
   
-  def resolveImportMeta(property: String, options: Format): String | NullValue = js.native
-  def resolveImportMeta(property: Null, options: Format): String | NullValue = js.native
+  def resolveImportMeta(property: String, options: ChunkId): String | NullValue = js.native
+  def resolveImportMeta(property: Null, options: ChunkId): String | NullValue = js.native
   @JSName("resolveImportMeta")
   var resolveImportMeta_Original: ResolveImportMetaHook = js.native
   

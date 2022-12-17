@@ -8,7 +8,7 @@ trait Defaults extends StObject {
   
   var billable_owner: js.UndefOr[Avatarurl] = js.undefined
   
-  var defaults: js.UndefOr[DevcontainerpathLocation] = js.undefined
+  var defaults: js.UndefOr[Devcontainerpath] = js.undefined
 }
 object Defaults {
   
@@ -23,7 +23,7 @@ object Defaults {
     
     inline def setBillable_ownerUndefined: Self = StObject.set(x, "billable_owner", js.undefined)
     
-    inline def setDefaults(value: DevcontainerpathLocation): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+    inline def setDefaults(value: Devcontainerpath): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     
     inline def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
   }

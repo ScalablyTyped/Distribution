@@ -6,22 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `389` extends StObject {
   
-  /** The unique identifier of the project. */
-  var project_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['project-id'] */ js.Any
+  var sha: js.UndefOr[String] = js.undefined
+  
+  var url: js.UndefOr[String] = js.undefined
 }
 object `389` {
   
-  inline def apply(
-    project_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['project-id'] */ js.Any
-  ): `389` = {
-    val __obj = js.Dynamic.literal(project_id = project_id.asInstanceOf[js.Any])
+  inline def apply(): `389` = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`389`]
   }
   
   extension [Self <: `389`](x: Self) {
     
-    inline def setProject_id(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['project-id'] */ js.Any
-    ): Self = StObject.set(x, "project_id", value.asInstanceOf[js.Any])
+    inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
+    
+    inline def setShaUndefined: Self = StObject.set(x, "sha", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

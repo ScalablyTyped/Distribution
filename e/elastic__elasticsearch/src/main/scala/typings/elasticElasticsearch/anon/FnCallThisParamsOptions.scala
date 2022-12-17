@@ -1,8 +1,11 @@
 package typings.elasticElasticsearch.anon
 
-import typings.elasticElasticsearch.libApiTypesMod.CreateRequest
-import typings.elasticElasticsearch.libApiTypesMod.CreateResponse
+import typings.elasticElasticsearch.libApiTypesMod.ClearScrollRequest
+import typings.elasticElasticsearch.libApiTypesMod.ClearScrollResponse
 import typings.elasticTransport.libTransportMod.TransportRequestOptions
+import typings.elasticTransport.libTransportMod.TransportRequestOptionsWithMeta
+import typings.elasticTransport.libTransportMod.TransportRequestOptionsWithOutMeta
+import typings.elasticTransport.libTypesMod.TransportResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,11 +13,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FnCallThisParamsOptions extends StObject {
   
-  def apply[TDocument](params: CreateRequest[TDocument]): js.Promise[CreateResponse] = js.native
-  def apply[TDocument](params: CreateRequest[TDocument], options: TransportRequestOptions): js.Promise[CreateResponse] = js.native
-  def apply[TDocument](params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.CreateRequest[TDocument]): js.Promise[CreateResponse] = js.native
-  def apply[TDocument](
-    params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.CreateRequest[TDocument],
+  def apply(): js.Promise[ClearScrollResponse] = js.native
+  def apply(params: Unit, options: TransportRequestOptions): js.Promise[ClearScrollResponse] = js.native
+  def apply(params: Unit, options: TransportRequestOptionsWithMeta): js.Promise[TransportResult[ClearScrollResponse, Any]] = js.native
+  def apply(params: Unit, options: TransportRequestOptionsWithOutMeta): js.Promise[ClearScrollResponse] = js.native
+  def apply(params: ClearScrollRequest): js.Promise[ClearScrollResponse] = js.native
+  def apply(params: ClearScrollRequest, options: TransportRequestOptions): js.Promise[ClearScrollResponse] = js.native
+  def apply(params: ClearScrollRequest, options: TransportRequestOptionsWithMeta): js.Promise[TransportResult[ClearScrollResponse, Any]] = js.native
+  def apply(params: ClearScrollRequest, options: TransportRequestOptionsWithOutMeta): js.Promise[ClearScrollResponse] = js.native
+  def apply(params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.ClearScrollRequest): js.Promise[ClearScrollResponse] = js.native
+  def apply(
+    params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.ClearScrollRequest,
     options: TransportRequestOptions
-  ): js.Promise[CreateResponse] = js.native
+  ): js.Promise[ClearScrollResponse] = js.native
+  def apply(
+    params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.ClearScrollRequest,
+    options: TransportRequestOptionsWithMeta
+  ): js.Promise[TransportResult[ClearScrollResponse, Any]] = js.native
+  def apply(
+    params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.ClearScrollRequest,
+    options: TransportRequestOptionsWithOutMeta
+  ): js.Promise[ClearScrollResponse] = js.native
 }

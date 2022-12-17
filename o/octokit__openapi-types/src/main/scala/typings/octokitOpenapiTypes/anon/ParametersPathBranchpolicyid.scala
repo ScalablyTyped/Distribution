@@ -8,11 +8,11 @@ trait ParametersPathBranchpolicyid extends StObject {
   
   var parameters: PathBranchpolicyid
   
-  var responses: `124`
+  var responses: `228`
 }
 object ParametersPathBranchpolicyid {
   
-  inline def apply(parameters: PathBranchpolicyid, responses: `124`): ParametersPathBranchpolicyid = {
+  inline def apply(parameters: PathBranchpolicyid, responses: `228`): ParametersPathBranchpolicyid = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathBranchpolicyid]
   }
@@ -21,6 +21,6 @@ object ParametersPathBranchpolicyid {
     
     inline def setParameters(value: PathBranchpolicyid): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `124`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `228`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

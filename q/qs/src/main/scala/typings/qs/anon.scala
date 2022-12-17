@@ -27,7 +27,7 @@ object anon {
     
     var comma: js.UndefOr[Boolean] = js.undefined
     
-    var decoder: (js.UndefOr[
+    var decoder: js.UndefOr[
         js.Function4[
           /* str */ String, 
           /* defaultDecoder */ defaultDecoder, 
@@ -35,7 +35,7 @@ object anon {
           /* type */ key | value, 
           Any
         ]
-      ]) & js.UndefOr[scala.Nothing]
+      ] = js.undefined
     
     var delimiter: js.UndefOr[String | js.RegExp] = js.undefined
     
@@ -55,18 +55,8 @@ object anon {
   }
   object IParseOptionsdecodernever {
     
-    inline def apply(
-      decoder: (js.UndefOr[
-          js.Function4[
-            /* str */ String, 
-            /* defaultDecoder */ defaultDecoder, 
-            /* charset */ String, 
-            /* type */ key | value, 
-            Any
-          ]
-        ]) & js.UndefOr[scala.Nothing]
-    ): IParseOptionsdecodernever = {
-      val __obj = js.Dynamic.literal(decoder = decoder.asInstanceOf[js.Any])
+    inline def apply(): IParseOptionsdecodernever = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IParseOptionsdecodernever]
     }
     
@@ -97,16 +87,10 @@ object anon {
       inline def setCommaUndefined: Self = StObject.set(x, "comma", js.undefined)
       
       inline def setDecoder(
-        value: (js.UndefOr[
-              js.Function4[
-                /* str */ String, 
-                /* defaultDecoder */ defaultDecoder, 
-                /* charset */ String, 
-                /* type */ key | value, 
-                Any
-              ]
-            ]) & js.UndefOr[scala.Nothing]
-      ): Self = StObject.set(x, "decoder", value.asInstanceOf[js.Any])
+        value: (/* str */ String, /* defaultDecoder */ defaultDecoder, /* charset */ String, /* type */ key | value) => Any
+      ): Self = StObject.set(x, "decoder", js.Any.fromFunction4(value))
+      
+      inline def setDecoderUndefined: Self = StObject.set(x, "decoder", js.undefined)
       
       inline def setDelimiter(value: String | js.RegExp): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       

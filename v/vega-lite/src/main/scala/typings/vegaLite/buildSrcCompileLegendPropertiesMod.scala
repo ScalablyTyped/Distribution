@@ -1,8 +1,8 @@
 package typings.vegaLite
 
-import typings.vegaLite.anon.ChannelLegend
 import typings.vegaLite.anon.Direction
 import typings.vegaLite.anon.Legend
+import typings.vegaLite.anon.LegendConfig
 import typings.vegaLite.anon.Signal
 import typings.vegaLite.buildSrcBinMod.BinParams
 import typings.vegaLite.buildSrcChannelMod.NonPositionScaleChannel
@@ -16,7 +16,6 @@ import typings.vegaLite.buildSrcConfigMod.Config
 import typings.vegaLite.buildSrcDatetimeMod.DateTime
 import typings.vegaLite.buildSrcEncodingMod.Encoding
 import typings.vegaLite.buildSrcExprMod.ExprRef
-import typings.vegaLite.buildSrcLegendMod.LegendConfig
 import typings.vegaLite.buildSrcLegendMod.LegendInternal
 import typings.vegaLite.buildSrcMarkMod.Mark
 import typings.vegaLite.buildSrcMarkMod.MarkDef
@@ -82,9 +81,9 @@ object buildSrcCompileLegendPropertiesMod {
   
   inline def defaultType(param0: typings.vegaLite.anon.ScaleType): LegendType = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultType")(param0.asInstanceOf[js.Any]).asInstanceOf[LegendType]
   
-  inline def getDirection(param0: Legend): Orientation = ^.asInstanceOf[js.Dynamic].applyDynamic("getDirection")(param0.asInstanceOf[js.Any]).asInstanceOf[Orientation]
+  inline def getDirection(param0: LegendConfig): Orientation = ^.asInstanceOf[js.Dynamic].applyDynamic("getDirection")(param0.asInstanceOf[js.Any]).asInstanceOf[Orientation]
   
-  inline def getLegendType(params: ChannelLegend): LegendType = ^.asInstanceOf[js.Dynamic].applyDynamic("getLegendType")(params.asInstanceOf[js.Any]).asInstanceOf[LegendType]
+  inline def getLegendType(params: Legend): LegendType = ^.asInstanceOf[js.Dynamic].applyDynamic("getLegendType")(params.asInstanceOf[js.Any]).asInstanceOf[LegendType]
   
   /* Inlined {[ k in keyof vega-lite.vega-lite/build/src/compile/legend/component.LegendComponentProps ]:? (params : vega-lite.vega-lite/build/src/compile/legend/properties.LegendRuleParams): vega-lite.vega-lite/build/src/compile/legend/component.LegendComponentProps[k]} */
   object legendRules {
@@ -540,7 +539,7 @@ object buildSrcCompileLegendPropertiesMod {
     
     var legend: LegendInternal
     
-    var legendConfig: LegendConfig[SignalRef]
+    var legendConfig: typings.vegaLite.buildSrcLegendMod.LegendConfig[SignalRef]
     
     var legendType: LegendType
     
@@ -561,7 +560,7 @@ object buildSrcCompileLegendPropertiesMod {
       encoding: Encoding[String],
       fieldOrDatumDef: MarkPropFieldOrDatumDef[String, Type],
       legend: LegendInternal,
-      legendConfig: LegendConfig[SignalRef],
+      legendConfig: typings.vegaLite.buildSrcLegendMod.LegendConfig[SignalRef],
       legendType: LegendType,
       markDef: MarkDef[Mark, SignalRef],
       model: UnitModel,
@@ -586,7 +585,7 @@ object buildSrcCompileLegendPropertiesMod {
       
       inline def setLegend(value: LegendInternal): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
       
-      inline def setLegendConfig(value: LegendConfig[SignalRef]): Self = StObject.set(x, "legendConfig", value.asInstanceOf[js.Any])
+      inline def setLegendConfig(value: typings.vegaLite.buildSrcLegendMod.LegendConfig[SignalRef]): Self = StObject.set(x, "legendConfig", value.asInstanceOf[js.Any])
       
       inline def setLegendType(value: LegendType): Self = StObject.set(x, "legendType", value.asInstanceOf[js.Any])
       

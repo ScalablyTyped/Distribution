@@ -1,7 +1,6 @@
 package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.dockerode.anon.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -82,7 +81,7 @@ trait HostConfig extends StObject {
   
   var Links: js.UndefOr[Any] = js.undefined
   
-  var LogConfig: js.UndefOr[Type] = js.undefined
+  var LogConfig: js.UndefOr[typings.dockerode.anon.Config] = js.undefined
   
   var MaskedPaths: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -315,7 +314,7 @@ object HostConfig {
     
     inline def setLinksUndefined: Self = StObject.set(x, "Links", js.undefined)
     
-    inline def setLogConfig(value: Type): Self = StObject.set(x, "LogConfig", value.asInstanceOf[js.Any])
+    inline def setLogConfig(value: typings.dockerode.anon.Config): Self = StObject.set(x, "LogConfig", value.asInstanceOf[js.Any])
     
     inline def setLogConfigUndefined: Self = StObject.set(x, "LogConfig", js.undefined)
     

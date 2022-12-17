@@ -1,5 +1,7 @@
 package typings.expoConfigTypes.anon
 
+import typings.expoConfigTypes.expoConfigTypesStrings.`dark-content`
+import typings.expoConfigTypes.expoConfigTypesStrings.`light-content`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,19 +9,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BackgroundColor extends StObject {
   
   /**
-    * Color to use as the background for your app's Adaptive Icon on Android. Defaults to white, `#FFFFFF`. Has no effect if `foregroundImage` is not specified.
+    * Specifies the background color of the status bar. Defaults to `#00000000` (transparent) for `dark-content` bar style and `#00000088` (semi-transparent black) for `light-content` bar style
     */
   var backgroundColor: js.UndefOr[String] = js.undefined
   
   /**
-    * Local path or remote URL to a background image for your app's Adaptive Icon on Android. If specified, this overrides the `backgroundColor` key. Must have the same dimensions as  foregroundImage`, and has no effect if `foregroundImage` is not specified. Should follow the [specified guidelines](https://developer.android.com/guide/practices/ui_guidelines/icon_design_adaptive).
+    * Configures the status bar icons to have a light or dark color. Valid values: `light-content`, `dark-content`. Defaults to `dark-content`
     */
-  var backgroundImage: js.UndefOr[String] = js.undefined
+  var barStyle: js.UndefOr[`light-content` | `dark-content`] = js.undefined
   
   /**
-    * Local path or remote URL to an image to use for your app's icon on Android. If specified, this overrides the top-level `icon` and the `android.icon` keys. Should follow the [specified guidelines](https://developer.android.com/guide/practices/ui_guidelines/icon_design_adaptive). This icon will appear on the home screen.
+    * Instructs the system whether the status bar should be visible or not. Defaults to `false`
     */
-  var foregroundImage: js.UndefOr[String] = js.undefined
+  var hidden: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Sets `android:windowTranslucentStatus` in `styles.xml`. When false, the system status bar pushes the content of your app down (similar to `position: relative`). When true, the status bar floats above the content in your app (similar to `position: absolute`). Defaults to `true` to match the iOS status bar behavior (which can only float above content).
+    */
+  var translucent: js.UndefOr[Boolean] = js.undefined
 }
 object BackgroundColor {
   
@@ -34,12 +41,16 @@ object BackgroundColor {
     
     inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    inline def setBackgroundImage(value: String): Self = StObject.set(x, "backgroundImage", value.asInstanceOf[js.Any])
+    inline def setBarStyle(value: `light-content` | `dark-content`): Self = StObject.set(x, "barStyle", value.asInstanceOf[js.Any])
     
-    inline def setBackgroundImageUndefined: Self = StObject.set(x, "backgroundImage", js.undefined)
+    inline def setBarStyleUndefined: Self = StObject.set(x, "barStyle", js.undefined)
     
-    inline def setForegroundImage(value: String): Self = StObject.set(x, "foregroundImage", value.asInstanceOf[js.Any])
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
-    inline def setForegroundImageUndefined: Self = StObject.set(x, "foregroundImage", js.undefined)
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    
+    inline def setTranslucent(value: Boolean): Self = StObject.set(x, "translucent", value.asInstanceOf[js.Any])
+    
+    inline def setTranslucentUndefined: Self = StObject.set(x, "translucent", js.undefined)
   }
 }

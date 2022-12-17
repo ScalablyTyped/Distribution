@@ -67,7 +67,7 @@ trait PickImplshowActivityParti
   
   var selector: js.UndefOr[SelectorSettings] = js.undefined
   
-  var showActivity: Boolean & js.UndefOr[Boolean]
+  var showActivity: Boolean
   
   var silent: js.UndefOr[Boolean] = js.undefined
   
@@ -81,7 +81,7 @@ trait PickImplshowActivityParti
 }
 object PickImplshowActivityParti {
   
-  inline def apply(showActivity: Boolean & js.UndefOr[Boolean]): PickImplshowActivityParti = {
+  inline def apply(showActivity: Boolean): PickImplshowActivityParti = {
     val __obj = js.Dynamic.literal(showActivity = showActivity.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplshowActivityParti]
   }
@@ -166,7 +166,7 @@ object PickImplshowActivityParti {
     
     inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
-    inline def setShowActivity(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "showActivity", value.asInstanceOf[js.Any])
+    inline def setShowActivity(value: Boolean): Self = StObject.set(x, "showActivity", value.asInstanceOf[js.Any])
     
     inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     

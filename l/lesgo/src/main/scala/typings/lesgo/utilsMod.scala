@@ -7,10 +7,7 @@ import typings.awsSdk.clientsSqsMod.SendMessageResult
 import typings.lesgo.anon.Length
 import typings.lesgo.anon.Sub
 import typings.lesgo.servicesAuroraDbServiceMod.default
-import typings.lesgo.utilsValidateFieldsMod.Validation
 import typings.node.cryptoMod.BinaryLike
-import typings.std.Partial
-import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,11 +17,6 @@ object utilsMod {
   @JSImport("lesgo/utils", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
-  
-  inline def default[TParams /* <: Record[String, Any] */](
-    params: Partial[Record[/* keyof TParams */ String, Any]],
-    validFields: js.Array[Validation[String]]
-  ): Partial[Record[/* keyof TParams */ String, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any], validFields.asInstanceOf[js.Any])).asInstanceOf[Partial[Record[/* keyof TParams */ String, Any]]]
   
   @JSImport("lesgo/utils", "db")
   @js.native

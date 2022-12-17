@@ -1,7 +1,7 @@
 package typings.openpgp.mod
 
 import typings.openpgp.anon.Algorithm
-import typings.openpgp.anon.Valid
+import typings.openpgp.anon.Keyid
 import typings.openpgp.mod.enums.compression
 import typings.openpgp.mod.packet.Literal
 import typings.openpgp.mod.signature.Signature
@@ -193,10 +193,10 @@ object message {
       * @param streaming (optional) whether to process data as a stream
       * @returns list of signer's keyid and validity of signature
       */
-    def verify(keys: js.Array[Any]): js.Promise[js.Array[Valid]] = js.native
-    def verify(keys: js.Array[Any], date: js.Date): js.Promise[js.Array[Valid]] = js.native
-    def verify(keys: js.Array[Any], date: js.Date, streaming: Boolean): js.Promise[js.Array[Valid]] = js.native
-    def verify(keys: js.Array[Any], date: Unit, streaming: Boolean): js.Promise[js.Array[Valid]] = js.native
+    def verify(keys: js.Array[Any]): js.Promise[js.Array[Keyid]] = js.native
+    def verify(keys: js.Array[Any], date: js.Date): js.Promise[js.Array[Keyid]] = js.native
+    def verify(keys: js.Array[Any], date: js.Date, streaming: Boolean): js.Promise[js.Array[Keyid]] = js.native
+    def verify(keys: js.Array[Any], date: Unit, streaming: Boolean): js.Promise[js.Array[Keyid]] = js.native
     
     /**
       * Verify detached message signature
@@ -205,8 +205,8 @@ object message {
       * @param date Verify the signature against the given date, i.e. check signature creation time < date < expiration time
       * @returns list of signer's keyid and validity of signature
       */
-    def verifyDetached(keys: js.Array[Any], signature: Signature): js.Promise[js.Array[Valid]] = js.native
-    def verifyDetached(keys: js.Array[Any], signature: Signature, date: js.Date): js.Promise[js.Array[Valid]] = js.native
+    def verifyDetached(keys: js.Array[Any], signature: Signature): js.Promise[js.Array[Keyid]] = js.native
+    def verifyDetached(keys: js.Array[Any], signature: Signature, date: js.Date): js.Promise[js.Array[Keyid]] = js.native
   }
   
   /**
@@ -240,7 +240,7 @@ object message {
     literalDataList: js.Array[Any],
     keys: js.Array[Any],
     date: js.Date
-  ): js.Promise[js.Array[Valid]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createVerificationObject")(signature.asInstanceOf[js.Any], literalDataList.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Valid]]]
+  ): js.Promise[js.Array[Keyid]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createVerificationObject")(signature.asInstanceOf[js.Any], literalDataList.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Keyid]]]
   
   /**
     * Create list of objects containing signer's keyid and validity of signature
@@ -251,7 +251,7 @@ object message {
     *        i.e. check signature creation time < date < expiration time
     * @returns list of signer's keyid and validity of signature
     */
-  inline def createVerificationObjects(signatureList: js.Array[Any], literalDataList: js.Array[Any], keys: js.Array[Any], date: js.Date): js.Promise[js.Array[Valid]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createVerificationObjects")(signatureList.asInstanceOf[js.Any], literalDataList.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Valid]]]
+  inline def createVerificationObjects(signatureList: js.Array[Any], literalDataList: js.Array[Any], keys: js.Array[Any], date: js.Date): js.Promise[js.Array[Keyid]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createVerificationObjects")(signatureList.asInstanceOf[js.Any], literalDataList.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Keyid]]]
   
   /**
     * Encrypt a session key either with public keys, passwords, or both at once.

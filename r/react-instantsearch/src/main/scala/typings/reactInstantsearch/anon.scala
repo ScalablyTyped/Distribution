@@ -9,7 +9,7 @@ import typings.react.mod.Ref
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.global.JSX.Element
 import typings.reactInstantsearch.reactInstantsearchStrings.Asterisk
-import typings.reactInstantsearchCore.anon.Attribute
+import typings.reactInstantsearchCore.anon.AttributeString
 import typings.reactInstantsearchCore.anon.Results
 import typings.reactInstantsearchDom.anon.SeeAllOption
 import typings.reactInstantsearchDom.mod.RefinementItem
@@ -58,7 +58,7 @@ object anon {
     
     val facets: js.UndefOr[js.Array[Asterisk | scala.Nothing]] = js.undefined
     
-    val fallbackComponent: js.UndefOr[ComponentType[Attribute]] = js.undefined
+    val fallbackComponent: js.UndefOr[ComponentType[AttributeString]] = js.undefined
     
     val maxValuesPerFacet: js.UndefOr[Double] = js.undefined
     
@@ -87,7 +87,7 @@ object anon {
       
       inline def setFacetsVarargs(value: (Asterisk | scala.Nothing)*): Self = StObject.set(x, "facets", js.Array(value*))
       
-      inline def setFallbackComponent(value: ComponentType[Attribute]): Self = StObject.set(x, "fallbackComponent", value.asInstanceOf[js.Any])
+      inline def setFallbackComponent(value: ComponentType[AttributeString]): Self = StObject.set(x, "fallbackComponent", value.asInstanceOf[js.Any])
       
       inline def setFallbackComponentUndefined: Self = StObject.set(x, "fallbackComponent", js.undefined)
       

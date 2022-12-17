@@ -49,7 +49,7 @@ trait PickImplsilentPartialPick
   
   var reverse: js.UndefOr[auto | Boolean] = js.undefined
   
-  var silent: Boolean & js.UndefOr[Boolean]
+  var silent: Boolean
   
   var useFailSafe: js.UndefOr[Boolean] = js.undefined
   
@@ -57,7 +57,7 @@ trait PickImplsilentPartialPick
 }
 object PickImplsilentPartialPick {
   
-  inline def apply(silent: Boolean & js.UndefOr[Boolean]): PickImplsilentPartialPick = {
+  inline def apply(silent: Boolean): PickImplsilentPartialPick = {
     val __obj = js.Dynamic.literal(silent = silent.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplsilentPartialPick]
   }
@@ -132,7 +132,7 @@ object PickImplsilentPartialPick {
     
     inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
     
-    inline def setSilent(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+    inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
     inline def setUseFailSafe(value: Boolean): Self = StObject.set(x, "useFailSafe", value.asInstanceOf[js.Any])
     

@@ -17,11 +17,11 @@ trait PickImpltopPartialPickImp
   
   var right: js.UndefOr[String] = js.undefined
   
-  var top: String & js.UndefOr[String]
+  var top: String
 }
 object PickImpltopPartialPickImp {
   
-  inline def apply(top: String & js.UndefOr[String]): PickImpltopPartialPickImp = {
+  inline def apply(top: String): PickImpltopPartialPickImp = {
     val __obj = js.Dynamic.literal(top = top.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpltopPartialPickImp]
   }
@@ -40,6 +40,6 @@ object PickImpltopPartialPickImp {
     
     inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     
-    inline def setTop(value: String & js.UndefOr[String]): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
   }
 }

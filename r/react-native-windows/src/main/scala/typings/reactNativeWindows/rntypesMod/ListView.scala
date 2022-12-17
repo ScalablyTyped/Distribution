@@ -1,7 +1,6 @@
 package typings.reactNativeWindows.rntypesMod
 
 import typings.react.mod.Component
-import typings.reactNativeWindows.anon.AnimatedX
 import typings.reactNativeWindows.anon.ContentLength
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -37,10 +36,10 @@ open class ListView ()
   def scrollTo(y: Unit, x: Double): Unit = js.native
   def scrollTo(y: Unit, x: Double, animated: Boolean): Unit = js.native
   def scrollTo(y: Unit, x: Unit, animated: Boolean): Unit = js.native
-  def scrollTo(y: AnimatedX): Unit = js.native
-  def scrollTo(y: AnimatedX, x: Double): Unit = js.native
-  def scrollTo(y: AnimatedX, x: Double, animated: Boolean): Unit = js.native
-  def scrollTo(y: AnimatedX, x: Unit, animated: Boolean): Unit = js.native
+  def scrollTo(y: typings.reactNativeWindows.anon.Animated): Unit = js.native
+  def scrollTo(y: typings.reactNativeWindows.anon.Animated, x: Double): Unit = js.native
+  def scrollTo(y: typings.reactNativeWindows.anon.Animated, x: Double, animated: Boolean): Unit = js.native
+  def scrollTo(y: typings.reactNativeWindows.anon.Animated, x: Unit, animated: Boolean): Unit = js.native
 }
 /* static members */
 object ListView {

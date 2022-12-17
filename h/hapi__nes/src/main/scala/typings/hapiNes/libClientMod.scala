@@ -3,6 +3,7 @@ package typings.hapiNes
 import typings.hapiNes.anon.Code
 import typings.hapiNes.hapiNesBooleans.`true`
 import typings.hapiNes.libClientMod.Client.ClientConnectOptions
+import typings.hapiNes.libClientMod.Client.ClientOptions
 import typings.hapiNes.libClientMod.Client.ClientRequestOptions
 import typings.hapiNes.libClientMod.Client.Handler
 import org.scalablytyped.runtime.StObject
@@ -11,8 +12,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libClientMod {
   
+  @JSImport("@hapi/nes/lib/client", "Client")
   @js.native
-  trait Client extends StObject {
+  open class Client protected () extends StObject {
+    def this(url: String) = this()
+    def this(url: String, options: ClientOptions) = this()
     
     def connect(): js.Promise[Any] = js.native
     def connect(options: ClientConnectOptions): js.Promise[Any] = js.native

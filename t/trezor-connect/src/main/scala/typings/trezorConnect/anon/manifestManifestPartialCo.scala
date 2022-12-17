@@ -34,7 +34,7 @@ trait manifestManifestPartialCo extends StObject {
   
   var lazyLoad: js.UndefOr[Boolean] = js.undefined
   
-  var manifest: Manifest & js.UndefOr[Manifest]
+  var manifest: Manifest
   
   var origin: js.UndefOr[String] = js.undefined
   
@@ -66,7 +66,7 @@ trait manifestManifestPartialCo extends StObject {
 }
 object manifestManifestPartialCo {
   
-  inline def apply(manifest: Manifest & js.UndefOr[Manifest]): manifestManifestPartialCo = {
+  inline def apply(manifest: Manifest): manifestManifestPartialCo = {
     val __obj = js.Dynamic.literal(manifest = manifest.asInstanceOf[js.Any])
     __obj.asInstanceOf[manifestManifestPartialCo]
   }
@@ -113,7 +113,7 @@ object manifestManifestPartialCo {
     
     inline def setLazyLoadUndefined: Self = StObject.set(x, "lazyLoad", js.undefined)
     
-    inline def setManifest(value: Manifest & js.UndefOr[Manifest]): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
+    inline def setManifest(value: Manifest): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
     
     inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     

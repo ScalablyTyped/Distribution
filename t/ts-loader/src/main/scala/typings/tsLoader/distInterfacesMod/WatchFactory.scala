@@ -1,6 +1,6 @@
 package typings.tsLoader.distInterfacesMod
 
-import typings.tsLoader.anon.FnCallPathCallbackPollingIntervalOptions
+import typings.tsLoader.anon.FnCall
 import typings.tsLoader.anon.FnCallPathCallbackRecursiveOptions
 import typings.typescript.mod.DirectoryWatcherCallback
 import typings.typescript.mod.FileWatcher
@@ -37,7 +37,7 @@ trait WatchFactory extends StObject {
   def watchFile(path: String, callback: FileWatcherCallback, pollingInterval: Unit, options: WatchOptions): FileWatcher
   /** Used to watch changes in source files, missing files needed to update the program or config file */
   @JSName("watchFile")
-  var watchFile_Original: FnCallPathCallbackPollingIntervalOptions
+  var watchFile_Original: FnCall
   
   var watchedDirectories: WatchCallbacks[DirectoryWatcherCallback]
   
@@ -50,7 +50,7 @@ object WatchFactory {
   inline def apply(
     invokeFileWatcher: (String, FileWatcherEventKind) => Boolean,
     watchDirectory: FnCallPathCallbackRecursiveOptions,
-    watchFile: FnCallPathCallbackPollingIntervalOptions,
+    watchFile: FnCall,
     watchedDirectories: WatchCallbacks[DirectoryWatcherCallback],
     watchedDirectoriesRecursive: WatchCallbacks[DirectoryWatcherCallback],
     watchedFiles: WatchCallbacks[FileWatcherCallback]
@@ -65,7 +65,7 @@ object WatchFactory {
     
     inline def setWatchDirectory(value: FnCallPathCallbackRecursiveOptions): Self = StObject.set(x, "watchDirectory", value.asInstanceOf[js.Any])
     
-    inline def setWatchFile(value: FnCallPathCallbackPollingIntervalOptions): Self = StObject.set(x, "watchFile", value.asInstanceOf[js.Any])
+    inline def setWatchFile(value: FnCall): Self = StObject.set(x, "watchFile", value.asInstanceOf[js.Any])
     
     inline def setWatchedDirectories(value: WatchCallbacks[DirectoryWatcherCallback]): Self = StObject.set(x, "watchedDirectories", value.asInstanceOf[js.Any])
     

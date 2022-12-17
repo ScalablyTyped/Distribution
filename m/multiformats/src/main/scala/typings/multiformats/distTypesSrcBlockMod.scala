@@ -3,7 +3,7 @@ package typings.multiformats
 import typings.multiformats.anon.Bytes
 import typings.multiformats.anon.BytesCid
 import typings.multiformats.anon.Cid
-import typings.multiformats.anon.CodecHasher
+import typings.multiformats.anon.CidValue
 import typings.multiformats.anon.Hasher
 import typings.multiformats.anon.Value
 import typings.multiformats.distTypesSrcBlockInterfaceMod.BlockCursorView
@@ -34,7 +34,7 @@ object distTypesSrcBlockMod {
       * @param {API.ByteView<T>} options.bytes
       * @param {T} options.value
       */
-    def this(param0: Bytes[T, C, A, V]) = this()
+    def this(param0: CidValue[T, C, A, V]) = this()
     
     var asBlock: Block[T, C, A, V] = js.native
     
@@ -75,9 +75,9 @@ object distTypesSrcBlockMod {
   inline def createUnsafe[T /* <: Any */, Code /* <: Double */, Alg /* <: Double */, V /* <: Version */](param0: BytesCid[T, Code, Alg, V]): BlockView[T, Code, Alg, V] = ^.asInstanceOf[js.Dynamic].applyDynamic("createUnsafe")(param0.asInstanceOf[js.Any]).asInstanceOf[BlockView[T, Code, Alg, V]]
   inline def createUnsafe[T /* <: Any */, Code /* <: Double */, Alg /* <: Double */, V /* <: Version */](param0: Value[T, Code, Alg, V]): BlockView[T, Code, Alg, V] = ^.asInstanceOf[js.Dynamic].applyDynamic("createUnsafe")(param0.asInstanceOf[js.Any]).asInstanceOf[BlockView[T, Code, Alg, V]]
   
-  inline def decode[T /* <: Any */, Code /* <: Double */, Alg /* <: Double */](param0: Hasher[T, Code, Alg]): js.Promise[BlockView[T, Code, Alg, `1`]] = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BlockView[T, Code, Alg, `1`]]]
+  inline def decode[T /* <: Any */, Code /* <: Double */, Alg /* <: Double */](param0: Bytes[T, Code, Alg]): js.Promise[BlockView[T, Code, Alg, `1`]] = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BlockView[T, Code, Alg, `1`]]]
   
-  inline def encode[T /* <: Any */, Code /* <: Double */, Alg /* <: Double */](param0: CodecHasher[T, Code, Alg]): js.Promise[BlockView[T, Code, Alg, `1`]] = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BlockView[T, Code, Alg, `1`]]]
+  inline def encode[T /* <: Any */, Code /* <: Double */, Alg /* <: Double */](param0: Hasher[T, Code, Alg]): js.Promise[BlockView[T, Code, Alg, `1`]] = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BlockView[T, Code, Alg, `1`]]]
   
   trait RequiredCreateOptions extends StObject {
     

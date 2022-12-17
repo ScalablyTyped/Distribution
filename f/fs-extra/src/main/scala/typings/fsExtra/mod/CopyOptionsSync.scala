@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CopyOptionsSync
   extends StObject
-     with typings.node.fsMod.CopyOptions {
+     with CopyOptions {
   
   @JSName("filter")
   var filter_CopyOptionsSync: js.UndefOr[CopyFilterSync] = js.undefined

@@ -12,6 +12,8 @@ trait DiameterBottom extends StObject {
   
   var backUVs: js.UndefOr[Vector4] = js.undefined
   
+  var cap: js.UndefOr[Double] = js.undefined
+  
   var diameter: js.UndefOr[Double] = js.undefined
   
   var diameterBottom: js.UndefOr[Double] = js.undefined
@@ -52,6 +54,10 @@ object DiameterBottom {
     inline def setBackUVs(value: Vector4): Self = StObject.set(x, "backUVs", value.asInstanceOf[js.Any])
     
     inline def setBackUVsUndefined: Self = StObject.set(x, "backUVs", js.undefined)
+    
+    inline def setCap(value: Double): Self = StObject.set(x, "cap", value.asInstanceOf[js.Any])
+    
+    inline def setCapUndefined: Self = StObject.set(x, "cap", js.undefined)
     
     inline def setDiameter(value: Double): Self = StObject.set(x, "diameter", value.asInstanceOf[js.Any])
     

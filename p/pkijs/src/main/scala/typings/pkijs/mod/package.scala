@@ -18,12 +18,9 @@ import typings.asn1js.mod.VisibleString
 import typings.pkijs.anon.AttrCertValidityPeriod
 import typings.pkijs.anon.Attributes
 import typings.pkijs.anon.BaseCertificateID
-import typings.pkijs.anon.Certs
 import typings.pkijs.anon.Coefficient
 import typings.pkijs.anon.Content
 import typings.pkijs.anon.Critical
-import typings.pkijs.anon.CrlExtensions
-import typings.pkijs.anon.Crls
 import typings.pkijs.anon.Date
 import typings.pkijs.anon.Digest
 import typings.pkijs.anon.EContent
@@ -31,12 +28,12 @@ import typings.pkijs.anon.FailInfo
 import typings.pkijs.anon.GeneralTimeName
 import typings.pkijs.anon.HashAlgorithm
 import typings.pkijs.anon.HashedMessage
-import typings.pkijs.anon.Id
+import typings.pkijs.anon.IdType
 import typings.pkijs.anon.Issuer
 import typings.pkijs.anon.Iterations
 import typings.pkijs.anon.Micros
-import typings.pkijs.anon.NotAfter
 import typings.pkijs.anon.NotAfterTime
+import typings.pkijs.anon.NotBefore
 import typings.pkijs.anon.Other
 import typings.pkijs.anon.ProducedAt
 import typings.pkijs.anon.RepeatedSequence
@@ -44,10 +41,13 @@ import typings.pkijs.anon.RequestExtensions
 import typings.pkijs.anon.Response
 import typings.pkijs.anon.SchemaCompatibleparsingEr
 import typings.pkijs.anon.SetName
-import typings.pkijs.anon.SignatureAlgorithm
+import typings.pkijs.anon.SignatureValue
+import typings.pkijs.anon.SubjectPublicKey
 import typings.pkijs.anon.TagNumber
-import typings.pkijs.anon.Type
+import typings.pkijs.anon.TbsCertListNextUpdate
+import typings.pkijs.anon.TypeValue
 import typings.pkijs.anon.Value
+import typings.pkijs.anon.`0`
 import typings.pkijs.mod.^
 import typings.pkijs.pkijsBooleans.`true`
 import typings.std.Algorithm
@@ -353,8 +353,6 @@ type AccuracySchema = SchemaParameters[Micros]
 
 type AlgorithmIdentifierSchema = SchemaParameters[typings.pkijs.anon.AlgorithmIdentifier]
 
-type AsnError = js.Error
-
 type AttCertValidityPeriodSchema = SchemaParameters[NotAfterTime]
 
 type AttributeCertificateInfoV1Schema = SchemaParameters[AttrCertValidityPeriod]
@@ -381,7 +379,7 @@ type CertIDSchema = SchemaParameters[HashAlgorithm]
 /**
   * Parameters for {@link Certificate} schema generation
   */
-type CertificateSchema = SchemaParameters[SignatureAlgorithm]
+type CertificateSchema = SchemaParameters[SignatureValue]
 
 type ContentInfoSchema = SchemaParameters[Content]
 
@@ -412,7 +410,7 @@ type FindOriginCallback = js.Function2[
 /* validationEngine */ CertificateChainValidationEngine, 
 String]
 
-type GeneralNameParameters = PkiObjectParameters & (Partial[Type | Value])
+type GeneralNameParameters = PkiObjectParameters & (Partial[Value | TypeValue])
 
 type GeneralNamesSchema = SchemaParameters[typings.pkijs.anon.GeneralNames]
 
@@ -443,9 +441,9 @@ type OtherPrimeInfoSchema = SchemaParameters[Coefficient]
 
 type PKIStatusInfoSchema = SchemaParameters[FailInfo]
 
-type PublicKeyInfoSchema = SchemaParameters[typings.pkijs.anon.Algorithm]
+type PublicKeyInfoSchema = SchemaParameters[SubjectPublicKey]
 
-type QCStatementSchema = SchemaParameters[Id]
+type QCStatementSchema = SchemaParameters[IdType]
 
 type RecipientEncryptedKeysSchema = SchemaParameters[typings.pkijs.anon.RecipientEncryptedKeys]
 
@@ -465,7 +463,7 @@ type ResponseBytesSchema = SchemaParameters[Response]
 
 type ResponseDataSchema = SchemaParameters[ProducedAt]
 
-type RevocationInfoChoicesSchema = SchemaParameters[Crls]
+type RevocationInfoChoicesSchema = SchemaParameters[`0`]
 
 /* Rewritten from type alias, can be one of: 
   - typings.pkijs.mod.ContentInfo
@@ -477,15 +475,15 @@ type SafeContent = _SafeContent | js.Object
 
 type SchemaType = Any
 
-type SignatureSchema = SchemaParameters[Certs]
+type SignatureSchema = SchemaParameters[typings.pkijs.anon.Signature]
 
 type SignedAndUnsignedAttributesSchema = SchemaParameters[TagNumber]
 
 type SingleResponseSchema = SchemaParameters[typings.pkijs.anon.CertID]
 
-type TBSCertListSchema = SchemaParameters[CrlExtensions]
+type TBSCertListSchema = SchemaParameters[TbsCertListNextUpdate]
 
-type TBSCertificateSchema = SchemaParameters[NotAfter]
+type TBSCertificateSchema = SchemaParameters[NotBefore]
 
 type TBSRequestSchema = SchemaParameters[RequestExtensions]
 

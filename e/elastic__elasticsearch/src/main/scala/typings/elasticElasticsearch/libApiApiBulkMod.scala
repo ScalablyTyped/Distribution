@@ -3,6 +3,9 @@ package typings.elasticElasticsearch
 import typings.elasticElasticsearch.libApiTypesMod.BulkRequest
 import typings.elasticElasticsearch.libApiTypesMod.BulkResponse
 import typings.elasticTransport.libTransportMod.TransportRequestOptions
+import typings.elasticTransport.libTransportMod.TransportRequestOptionsWithMeta
+import typings.elasticTransport.libTransportMod.TransportRequestOptionsWithOutMeta
+import typings.elasticTransport.libTypesMod.TransportResult
 import typings.elasticTransport.mod.Transport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,12 +19,22 @@ object libApiApiBulkMod {
   
   inline def default[TDocument, TPartialDocument](params: BulkRequest[TDocument, TPartialDocument]): js.Promise[BulkResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BulkResponse]]
   inline def default[TDocument, TPartialDocument](params: BulkRequest[TDocument, TPartialDocument], options: TransportRequestOptions): js.Promise[BulkResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BulkResponse]]
+  inline def default[TDocument, TPartialDocument](params: BulkRequest[TDocument, TPartialDocument], options: TransportRequestOptionsWithMeta): js.Promise[TransportResult[BulkResponse, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TransportResult[BulkResponse, Any]]]
+  inline def default[TDocument, TPartialDocument](params: BulkRequest[TDocument, TPartialDocument], options: TransportRequestOptionsWithOutMeta): js.Promise[BulkResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BulkResponse]]
   inline def default[TDocument, TPartialDocument](
     params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.BulkRequest[TDocument, TPartialDocument]
   ): js.Promise[BulkResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BulkResponse]]
   inline def default[TDocument, TPartialDocument](
     params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.BulkRequest[TDocument, TPartialDocument],
     options: TransportRequestOptions
+  ): js.Promise[BulkResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BulkResponse]]
+  inline def default[TDocument, TPartialDocument](
+    params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.BulkRequest[TDocument, TPartialDocument],
+    options: TransportRequestOptionsWithMeta
+  ): js.Promise[TransportResult[BulkResponse, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TransportResult[BulkResponse, Any]]]
+  inline def default[TDocument, TPartialDocument](
+    params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.BulkRequest[TDocument, TPartialDocument],
+    options: TransportRequestOptionsWithOutMeta
   ): js.Promise[BulkResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BulkResponse]]
   
   trait That extends StObject {

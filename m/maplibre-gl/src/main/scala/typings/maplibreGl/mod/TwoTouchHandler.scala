@@ -1,7 +1,7 @@
 package typings.maplibreGl.mod
 
 import typings.mapboxPointGeometry.mod.^
-import typings.maplibreGl.anon.`5`
+import typings.maplibreGl.anon.`2`
 import typings.std.Touch
 import typings.std.TouchEvent
 import org.scalablytyped.runtime.StObject
@@ -31,7 +31,7 @@ open class TwoTouchHandler () extends StObject {
   def disable(): scala.Unit = js.native
   
   def enable(): scala.Unit = js.native
-  def enable(options: `5`): scala.Unit = js.native
+  def enable(options: `2`): scala.Unit = js.native
   
   def isActive(): Boolean = js.native
   

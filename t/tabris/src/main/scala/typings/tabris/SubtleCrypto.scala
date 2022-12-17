@@ -6,7 +6,7 @@ import typings.tabris.anon.Length
 import typings.tabris.anon.NamedCurve
 import typings.tabris.anon.PrivateKey
 import typings.tabris.anon.Public
-import typings.tabris.anon.`20`
+import typings.tabris.anon.`19`
 import typings.tabris.tabrisStrings.HKDF
 import typings.tabris.tabrisStrings.`AES-GCM`
 import typings.tabris.tabrisStrings.`SHA-1`
@@ -147,7 +147,7 @@ trait SubtleCrypto extends StObject {
   def importKey(
     format: spki | pkcs8 | raw,
     keyData: js.typedarray.ArrayBuffer,
-    algorithm: `20`,
+    algorithm: `19`,
     extractable: Boolean,
     keyUsages: js.Array[String]
   ): js.Promise[CryptoKey] = js.native
@@ -168,7 +168,7 @@ trait SubtleCrypto extends StObject {
   def importKey(
     format: spki | pkcs8 | raw,
     keyData: TypedArray,
-    algorithm: `20`,
+    algorithm: `19`,
     extractable: Boolean,
     keyUsages: js.Array[String]
   ): js.Promise[CryptoKey] = js.native

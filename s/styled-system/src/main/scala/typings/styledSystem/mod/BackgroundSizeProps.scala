@@ -29,6 +29,6 @@ object BackgroundSizeProps {
     
     inline def setBackgroundSizeUndefined: Self = StObject.set(x, "backgroundSize", js.undefined)
     
-    inline def setBackgroundSizeVarargs(value: (TVal | Null)*): Self = StObject.set(x, "backgroundSize", js.Array(value :_*))
+    inline def setBackgroundSizeVarargs(value: (TVal | Null)*): Self = StObject.set(x, "backgroundSize", js.Array(value*))
   }
 }

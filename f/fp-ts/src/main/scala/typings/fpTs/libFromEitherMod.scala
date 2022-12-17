@@ -329,12 +329,12 @@ object libFromEitherMod {
     ]
   ]]
   
-  inline def filterOrElse[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](F: FromEither2[M], M: Chain2[M]): Fn5 = (^.asInstanceOf[js.Dynamic].applyDynamic("filterOrElse")(F.asInstanceOf[js.Any], M.asInstanceOf[js.Any])).asInstanceOf[Fn5]
-  inline def filterOrElse[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](F: FromEither3[M], M: Chain3[M]): Fn3 = (^.asInstanceOf[js.Dynamic].applyDynamic("filterOrElse")(F.asInstanceOf[js.Any], M.asInstanceOf[js.Any])).asInstanceOf[Fn3]
-  inline def filterOrElse[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](F: FromEither4[M], M: Chain4[M]): FnCallRefinementOnFalse = (^.asInstanceOf[js.Dynamic].applyDynamic("filterOrElse")(F.asInstanceOf[js.Any], M.asInstanceOf[js.Any])).asInstanceOf[FnCallRefinementOnFalse]
-  inline def filterOrElse[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](F: FromEither[M], M: Chain[M]): Fn5 = (^.asInstanceOf[js.Dynamic].applyDynamic("filterOrElse")(F.asInstanceOf[js.Any], M.asInstanceOf[js.Any])).asInstanceOf[Fn5]
-  inline def filterOrElse[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](F: FromEither2C[M, E], M: Chain2C[M, E]): Fn6[E] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterOrElse")(F.asInstanceOf[js.Any], M.asInstanceOf[js.Any])).asInstanceOf[Fn6[E]]
-  inline def filterOrElse[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](F: FromEither3C[M, E], M: Chain3C[M, E]): Fn4[E] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterOrElse")(F.asInstanceOf[js.Any], M.asInstanceOf[js.Any])).asInstanceOf[Fn4[E]]
+  inline def filterOrElse[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](F: FromEither2[M], M: Chain2[M]): Fn10 = (^.asInstanceOf[js.Dynamic].applyDynamic("filterOrElse")(F.asInstanceOf[js.Any], M.asInstanceOf[js.Any])).asInstanceOf[Fn10]
+  inline def filterOrElse[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](F: FromEither3[M], M: Chain3[M]): Fn8 = (^.asInstanceOf[js.Dynamic].applyDynamic("filterOrElse")(F.asInstanceOf[js.Any], M.asInstanceOf[js.Any])).asInstanceOf[Fn8]
+  inline def filterOrElse[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](F: FromEither4[M], M: Chain4[M]): Fn7 = (^.asInstanceOf[js.Dynamic].applyDynamic("filterOrElse")(F.asInstanceOf[js.Any], M.asInstanceOf[js.Any])).asInstanceOf[Fn7]
+  inline def filterOrElse[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](F: FromEither[M], M: Chain[M]): Fn10 = (^.asInstanceOf[js.Dynamic].applyDynamic("filterOrElse")(F.asInstanceOf[js.Any], M.asInstanceOf[js.Any])).asInstanceOf[Fn10]
+  inline def filterOrElse[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](F: FromEither2C[M, E], M: Chain2C[M, E]): Fn11[E] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterOrElse")(F.asInstanceOf[js.Any], M.asInstanceOf[js.Any])).asInstanceOf[Fn11[E]]
+  inline def filterOrElse[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](F: FromEither3C[M, E], M: Chain3C[M, E]): Fn9[E] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterOrElse")(F.asInstanceOf[js.Any], M.asInstanceOf[js.Any])).asInstanceOf[Fn9[E]]
   
   inline def fromEitherK[F](F: FromEither[F]): js.Function1[
     /* f */ js.Function1[/* a */ js.Array[Any], Either_[Any, Any]], 
@@ -622,12 +622,12 @@ object libFromEitherMod {
     ]
   ]]
   
-  inline def fromPredicate[F](F: FromEither[F]): Fn10 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(F.asInstanceOf[js.Any]).asInstanceOf[Fn10]
-  inline def fromPredicate[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](F: FromEither2[F]): Fn10 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(F.asInstanceOf[js.Any]).asInstanceOf[Fn10]
-  inline def fromPredicate[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](F: FromEither3[F]): Fn8 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(F.asInstanceOf[js.Any]).asInstanceOf[Fn8]
-  inline def fromPredicate[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](F: FromEither4[F]): Fn7 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(F.asInstanceOf[js.Any]).asInstanceOf[Fn7]
-  inline def fromPredicate[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](F: FromEither2C[F, E]): Fn11[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(F.asInstanceOf[js.Any]).asInstanceOf[Fn11[E]]
-  inline def fromPredicate[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](F: FromEither3C[F, E]): Fn9[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(F.asInstanceOf[js.Any]).asInstanceOf[Fn9[E]]
+  inline def fromPredicate[F](F: FromEither[F]): Fn5 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(F.asInstanceOf[js.Any]).asInstanceOf[Fn5]
+  inline def fromPredicate[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](F: FromEither2[F]): Fn5 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(F.asInstanceOf[js.Any]).asInstanceOf[Fn5]
+  inline def fromPredicate[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](F: FromEither3[F]): Fn3 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(F.asInstanceOf[js.Any]).asInstanceOf[Fn3]
+  inline def fromPredicate[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](F: FromEither4[F]): FnCallRefinementOnFalse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(F.asInstanceOf[js.Any]).asInstanceOf[FnCallRefinementOnFalse]
+  inline def fromPredicate[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](F: FromEither2C[F, E]): Fn6[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(F.asInstanceOf[js.Any]).asInstanceOf[Fn6[E]]
+  inline def fromPredicate[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](F: FromEither3C[F, E]): Fn4[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(F.asInstanceOf[js.Any]).asInstanceOf[Fn4[E]]
   
   trait FromEither[F] extends StObject {
     

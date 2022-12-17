@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Map
 import typings.std.WeakMap
 import typings.tsLoader.anon.Callbacks
-import typings.tsLoader.anon.FnCall
+import typings.tsLoader.anon.FnCallTypeReferenceDirectiveNameContainingFileOptionsHostRedirectedReferenceCacheResolutionMode
 import typings.tsLoader.tsLoaderBooleans.`true`
 import typings.typescript.mod.CompilerOptions
 import typings.typescript.mod.ModuleResolutionHost
@@ -28,7 +28,7 @@ type CustomResolveTypeReferenceDirective = js.Function5[
 /* containingFile */ String, 
 /* compilerOptions */ CompilerOptions, 
 /* moduleResolutionHost */ ModuleResolutionHost, 
-/* parentResolver */ FnCall, 
+/* parentResolver */ FnCallTypeReferenceDirectiveNameContainingFileOptionsHostRedirectedReferenceCacheResolutionMode, 
 ResolvedTypeReferenceDirectiveWithFailedLookupLocations]
 
 type DependencyGraph = Map[FilePathKey, js.Array[ResolvedModule]]

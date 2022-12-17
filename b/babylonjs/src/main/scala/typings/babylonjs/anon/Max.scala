@@ -1,34 +1,27 @@
 package typings.babylonjs.anon
 
+import typings.babylonjs.mathsMathDotvectorMod.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Max extends StObject {
   
-  var X: Double
+  var max: Vector3
   
-  var Y: Double
-  
-  var Z: Double
-  
-  var max: Double
+  var min: Vector3
 }
 object Max {
   
-  inline def apply(X: Double, Y: Double, Z: Double, max: Double): Max = {
-    val __obj = js.Dynamic.literal(X = X.asInstanceOf[js.Any], Y = Y.asInstanceOf[js.Any], Z = Z.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any])
+  inline def apply(max: Vector3, min: Vector3): Max = {
+    val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
     __obj.asInstanceOf[Max]
   }
   
   extension [Self <: Max](x: Self) {
     
-    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Vector3): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    inline def setX(value: Double): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
-    
-    inline def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
-    
-    inline def setZ(value: Double): Self = StObject.set(x, "Z", value.asInstanceOf[js.Any])
+    inline def setMin(value: Vector3): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
   }
 }

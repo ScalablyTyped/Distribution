@@ -10,23 +10,30 @@ sealed trait Socks4Response extends StObject
 @js.native
 object Socks4Response extends StObject {
   
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[Socks4Response & Double] = js.native
+  
   @js.native
   sealed trait Failed
     extends StObject
        with Socks4Response
+  /* 91 */ val Failed: typings.socks.typingsCommonConstantsMod.Socks4Response.Failed & Double = js.native
   
   @js.native
   sealed trait Granted
     extends StObject
        with Socks4Response
+  /* 90 */ val Granted: typings.socks.typingsCommonConstantsMod.Socks4Response.Granted & Double = js.native
   
   @js.native
   sealed trait Rejected
     extends StObject
        with Socks4Response
+  /* 92 */ val Rejected: typings.socks.typingsCommonConstantsMod.Socks4Response.Rejected & Double = js.native
   
   @js.native
   sealed trait RejectedIdent
     extends StObject
        with Socks4Response
+  /* 93 */ val RejectedIdent: typings.socks.typingsCommonConstantsMod.Socks4Response.RejectedIdent & Double = js.native
 }

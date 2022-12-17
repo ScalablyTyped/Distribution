@@ -1,7 +1,5 @@
 package typings.jsdevtoolsReaddirEnhanced
 
-import typings.jsdevtoolsReaddirEnhanced.jsdevtoolsReaddirEnhancedBooleans.`false`
-import typings.jsdevtoolsReaddirEnhanced.jsdevtoolsReaddirEnhancedBooleans.`true`
 import typings.jsdevtoolsReaddirEnhanced.libTypesPublicMod.Callback
 import typings.jsdevtoolsReaddirEnhanced.libTypesPublicMod.FilterFunction
 import typings.jsdevtoolsReaddirEnhanced.libTypesPublicMod.Stats
@@ -93,7 +91,7 @@ object anon {
       *
       * Defaults to `false`.
       */
-    var stats: js.UndefOr[Boolean] & js.UndefOr[`false`]
+    var stats: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Alias for the `stats` option. This property is supported for compatibility with the Node.js
@@ -103,8 +101,8 @@ object anon {
   }
   object Optionsstatsfalseundefine {
     
-    inline def apply(stats: js.UndefOr[Boolean] & js.UndefOr[`false`]): Optionsstatsfalseundefine = {
-      val __obj = js.Dynamic.literal(stats = stats.asInstanceOf[js.Any])
+    inline def apply(): Optionsstatsfalseundefine = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Optionsstatsfalseundefine]
     }
     
@@ -134,7 +132,9 @@ object anon {
       
       inline def setSepUndefined: Self = StObject.set(x, "sep", js.undefined)
       
-      inline def setStats(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+      inline def setStats(value: Boolean): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+      
+      inline def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
       
       inline def setWithFileTypes(value: Boolean): Self = StObject.set(x, "withFileTypes", value.asInstanceOf[js.Any])
       
@@ -186,7 +186,7 @@ object anon {
       *
       * Defaults to `false`.
       */
-    var stats: js.UndefOr[Boolean] & `true`
+    var stats: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Alias for the `stats` option. This property is supported for compatibility with the Node.js
@@ -196,8 +196,8 @@ object anon {
   }
   object Optionsstatstrue {
     
-    inline def apply(stats: js.UndefOr[Boolean] & `true`): Optionsstatstrue = {
-      val __obj = js.Dynamic.literal(stats = stats.asInstanceOf[js.Any])
+    inline def apply(): Optionsstatstrue = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Optionsstatstrue]
     }
     
@@ -227,7 +227,9 @@ object anon {
       
       inline def setSepUndefined: Self = StObject.set(x, "sep", js.undefined)
       
-      inline def setStats(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+      inline def setStats(value: Boolean): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+      
+      inline def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
       
       inline def setWithFileTypes(value: Boolean): Self = StObject.set(x, "withFileTypes", value.asInstanceOf[js.Any])
       

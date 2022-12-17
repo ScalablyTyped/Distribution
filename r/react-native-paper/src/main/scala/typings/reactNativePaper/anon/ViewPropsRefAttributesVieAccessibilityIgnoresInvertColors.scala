@@ -5,20 +5,14 @@ import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
 import typings.reactNative.mod.AccessibilityValue
-import typings.reactNative.mod.Animated.AnimatedInterpolation
-import typings.reactNative.mod.Animated.WithAnimatedArray
-import typings.reactNative.mod.Falsy
 import typings.reactNative.mod.GestureResponderEvent
 import typings.reactNative.mod.Insets
 import typings.reactNative.mod.LayoutChangeEvent
 import typings.reactNative.mod.PointerEvent
-import typings.reactNative.mod.RecursiveArray
-import typings.reactNative.mod.RegisteredStyle
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TVParallaxProperties
 import typings.reactNative.mod.View
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativePaper.reactNativePaperBooleans.`false`
 import typings.reactNativePaper.reactNativePaperStrings.`box-none`
 import typings.reactNativePaper.reactNativePaperStrings.`box-only`
 import typings.reactNativePaper.reactNativePaperStrings.`no-hide-descendants`
@@ -114,7 +108,10 @@ trait ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors extends StObject
     */
   var accessible: js.UndefOr[Boolean] = js.undefined
   
-  var children: js.UndefOr[ReactNode] & ReactNode
+  /**
+    * Content of the `Surface`.
+    */
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   /**
     * Views that are only used to layout their children or otherwise don't draw anything
@@ -399,17 +396,16 @@ trait ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors extends StObject
     */
   var shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined
   
-  var style: js.UndefOr[StyleProp[ViewStyle]] & (js.UndefOr[
-    `false` | RegisteredStyle[ViewStyle] | typings.reactNative.mod.Animated.Value | (AnimatedInterpolation[Double | String]) | WithAnimatedObjectViewSty | (WithAnimatedArray[
-      ViewStyle | Falsy | RegisteredStyle[ViewStyle] | (RecursiveArray[ViewStyle | Falsy | RegisteredStyle[ViewStyle]]) | (js.Array[ViewStyle | Falsy | RegisteredStyle[ViewStyle]])
-    ]) | Null
-  ])
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Used to locate this view in end-to-end tests.
     */
   var testID: js.UndefOr[String] = js.undefined
   
+  /**
+    * @optional
+    */
   var theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
   
   /**
@@ -449,15 +445,8 @@ trait ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors extends StObject
 }
 object ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors {
   
-  inline def apply(
-    style: js.UndefOr[StyleProp[ViewStyle]] & (js.UndefOr[
-      `false` | RegisteredStyle[ViewStyle] | typings.reactNative.mod.Animated.Value | (AnimatedInterpolation[Double | String]) | WithAnimatedObjectViewSty | (WithAnimatedArray[
-        ViewStyle | Falsy | RegisteredStyle[ViewStyle] | (RecursiveArray[ViewStyle | Falsy | RegisteredStyle[ViewStyle]]) | (js.Array[ViewStyle | Falsy | RegisteredStyle[ViewStyle]])
-      ]) | Null
-    ]),
-    theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
-  ): ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors = {
-    val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
+  inline def apply(theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors = {
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors]
   }
   
@@ -519,7 +508,7 @@ object ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors {
     
     inline def setAccessibleUndefined: Self = StObject.set(x, "accessible", js.undefined)
     
-    inline def setChildren(value: js.UndefOr[ReactNode] & ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
@@ -721,13 +710,11 @@ object ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors {
     
     inline def setShouldRasterizeIOSUndefined: Self = StObject.set(x, "shouldRasterizeIOS", js.undefined)
     
-    inline def setStyle(
-      value: js.UndefOr[StyleProp[ViewStyle]] & (js.UndefOr[
-          `false` | RegisteredStyle[ViewStyle] | typings.reactNative.mod.Animated.Value | (AnimatedInterpolation[Double | String]) | WithAnimatedObjectViewSty | (WithAnimatedArray[
-            ViewStyle | Falsy | RegisteredStyle[ViewStyle] | (RecursiveArray[ViewStyle | Falsy | RegisteredStyle[ViewStyle]]) | (js.Array[ViewStyle | Falsy | RegisteredStyle[ViewStyle]])
-          ]) | Null
-        ])
-    ): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleNull: Self = StObject.set(x, "style", null)
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     inline def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
     

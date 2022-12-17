@@ -1,7 +1,6 @@
 package typings.reduxTestUtils
 
 import typings.redux.mod.AnyAction
-import typings.redux.mod.Dispatch
 import typings.redux.mod.Reducer
 import typings.redux.mod.Unsubscribe
 import typings.reduxTestUtils.anon.OmitStoreAnyActionSymbolo
@@ -25,7 +24,7 @@ object distUtilsStoreMockMod {
     
     def dispatch[T /* <: T */](action: T): T
     @JSName("dispatch")
-    var dispatch_Original: (js.Function1[/* action */ Any, Any]) & Dispatch[T]
+    var dispatch_Original: js.Function1[/* action */ Any, Any]
     
     def getAction(`type`: Any): js.UndefOr[AnyAction]
     
@@ -50,7 +49,7 @@ object distUtilsStoreMockMod {
   object MockStore {
     
     inline def apply[S, T /* <: AnyAction */](
-      dispatch: (js.Function1[/* action */ Any, Any]) & Dispatch[T],
+      dispatch: /* action */ Any => Any,
       getAction: Any => js.UndefOr[AnyAction],
       getActions: () => js.Array[AnyAction],
       getState: () => S,
@@ -59,13 +58,13 @@ object distUtilsStoreMockMod {
       replaceReducer: /* nextReducer */ Reducer[S, T] => Unit,
       subscribe: /* listener */ js.Function0[Unit] => Unsubscribe
     ): MockStore[S, T] = {
-      val __obj = js.Dynamic.literal(dispatch = dispatch.asInstanceOf[js.Any], getAction = js.Any.fromFunction1(getAction), getActions = js.Any.fromFunction0(getActions), getState = js.Any.fromFunction0(getState), isActionDispatched = js.Any.fromFunction1(isActionDispatched), isActionTypeDispatched = js.Any.fromFunction1(isActionTypeDispatched), replaceReducer = js.Any.fromFunction1(replaceReducer), subscribe = js.Any.fromFunction1(subscribe))
+      val __obj = js.Dynamic.literal(dispatch = js.Any.fromFunction1(dispatch), getAction = js.Any.fromFunction1(getAction), getActions = js.Any.fromFunction0(getActions), getState = js.Any.fromFunction0(getState), isActionDispatched = js.Any.fromFunction1(isActionDispatched), isActionTypeDispatched = js.Any.fromFunction1(isActionTypeDispatched), replaceReducer = js.Any.fromFunction1(replaceReducer), subscribe = js.Any.fromFunction1(subscribe))
       __obj.asInstanceOf[MockStore[S, T]]
     }
     
     extension [Self <: MockStore[?, ?], S, T /* <: AnyAction */](x: Self & (MockStore[S, T])) {
       
-      inline def setDispatch(value: (js.Function1[/* action */ Any, Any]) & Dispatch[T]): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
+      inline def setDispatch(value: /* action */ Any => Any): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
       
       inline def setGetAction(value: Any => js.UndefOr[AnyAction]): Self = StObject.set(x, "getAction", js.Any.fromFunction1(value))
       

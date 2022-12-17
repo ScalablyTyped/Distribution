@@ -12,13 +12,13 @@ trait PickImplpromisePartialPic
   
   var loaded: js.UndefOr[String] = js.undefined
   
-  var promise: String & js.UndefOr[String]
+  var promise: String
   
   var tab: js.UndefOr[String] = js.undefined
 }
 object PickImplpromisePartialPic {
   
-  inline def apply(promise: String & js.UndefOr[String]): PickImplpromisePartialPic = {
+  inline def apply(promise: String): PickImplpromisePartialPic = {
     val __obj = js.Dynamic.literal(promise = promise.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplpromisePartialPic]
   }
@@ -29,7 +29,7 @@ object PickImplpromisePartialPic {
     
     inline def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
     
-    inline def setPromise(value: String & js.UndefOr[String]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+    inline def setPromise(value: String): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     
     inline def setTab(value: String): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
     

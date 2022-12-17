@@ -9,12 +9,12 @@ trait `2` extends StObject {
   
   var children: js.UndefOr[js.Function1[/* val */ String, ReactElement | Null]] = js.undefined
   
-  var value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : std.Parameters<@formatjs/intl.anon.FnCallCode>[0], opts : @formatjs/intl.@formatjs/intl/src/types.FormatDisplayNameOptions): string | undefined>[0] */ js.Any
+  var value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.anon.FnCallValuesOpts>[0] */ js.Any
 }
 object `2` {
   
   inline def apply(
-    value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : std.Parameters<@formatjs/intl.anon.FnCallCode>[0], opts : @formatjs/intl.@formatjs/intl/src/types.FormatDisplayNameOptions): string | undefined>[0] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.anon.FnCallValuesOpts>[0] */ js.Any
   ): `2` = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[`2`]
@@ -27,7 +27,7 @@ object `2` {
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setValue(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : std.Parameters<@formatjs/intl.anon.FnCallCode>[0], opts : @formatjs/intl.@formatjs/intl/src/types.FormatDisplayNameOptions): string | undefined>[0] */ js.Any
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.anon.FnCallValuesOpts>[0] */ js.Any
     ): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

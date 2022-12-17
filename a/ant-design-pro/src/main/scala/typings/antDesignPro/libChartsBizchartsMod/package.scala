@@ -17,7 +17,9 @@ import typings.antvG2.libInterfaceMod.Shape
 import typings.antvG2.libInterfaceMod.ShapeFactory
 import typings.antvG2.libInterfaceMod.StyleSheet
 import typings.bizcharts.libComponentsAxisMod.IAxis
+import typings.bizcharts.libComponentsCoordinateMod.ICoordinateProps
 import typings.bizcharts.libComponentsEffectsMod.IEffectsProps
+import typings.bizcharts.libComponentsFacetMod.IFacetProps
 import typings.bizcharts.libComponentsInteractionMod.IInteractionProps
 import typings.bizcharts.libComponentsLegendMod.ILegend
 import typings.bizcharts.libComponentsSliderMod.ISliderProps
@@ -96,6 +98,8 @@ inline def ColumnChart: ForwardRefExoticComponent[ColumnOptions & RefAttributes[
 
 inline def Coord(props: Any): typings.react.mod.global.JSX.Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Coord")(props.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.global.JSX.Element]
 
+inline def Coordinate(props: ICoordinateProps): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Coordinate")(props.asInstanceOf[js.Any]).asInstanceOf[Any]
+
 inline def DensityHeatmapChart: ForwardRefExoticComponent[DensityHeatmapOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("DensityHeatmapChart").asInstanceOf[ForwardRefExoticComponent[DensityHeatmapOptions & RefAttributes[Any]]]
 
 inline def DonutChart: ForwardRefExoticComponent[DonutOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("DonutChart").asInstanceOf[ForwardRefExoticComponent[DonutOptions & RefAttributes[Any]]]
@@ -103,6 +107,8 @@ inline def DonutChart: ForwardRefExoticComponent[DonutOptions & RefAttributes[An
 inline def DualAxesChart: ForwardRefExoticComponent[DualAxesOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("DualAxesChart").asInstanceOf[ForwardRefExoticComponent[DualAxesOptions & RefAttributes[Any]]]
 
 inline def Effects(props: IEffectsProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Effects")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+
+inline def Facet(props: IFacetProps): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Facet")(props.asInstanceOf[js.Any]).asInstanceOf[Any]
 
 inline def FunnelChart: ForwardRefExoticComponent[FunnelOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("FunnelChart").asInstanceOf[ForwardRefExoticComponent[FunnelOptions & RefAttributes[Any]]]
 
@@ -176,7 +182,7 @@ inline def TinyLineChart: ForwardRefExoticComponent[TinyLineOptions & RefAttribu
 
 inline def TreemapChart: ForwardRefExoticComponent[TreemapOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("TreemapChart").asInstanceOf[ForwardRefExoticComponent[TreemapOptions & RefAttributes[Any]]]
 
-inline def VERSION: /* "4.2.8" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[/* "4.2.8" */ String]
+inline def VERSION: /* "4.1.20" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[/* "4.1.20" */ String]
 
 inline def WaterfallChart: ForwardRefExoticComponent[WaterfallOptions & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("WaterfallChart").asInstanceOf[ForwardRefExoticComponent[WaterfallOptions & RefAttributes[Any]]]
 

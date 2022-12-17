@@ -1,6 +1,6 @@
 package typings.jssha.anon
 
-import typings.jssha.jsshaStrings.ARRAYBUFFER
+import typings.jssha.jsshaStrings.UINT8ARRAY
 import typings.jssha.mod.GenericInputType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,21 +14,21 @@ trait FormatValue
      with typings.jssha.distSha256Mod.GenericInputType
      with typings.jssha.distSha512Mod.GenericInputType {
   
-  var format: ARRAYBUFFER
+  var format: UINT8ARRAY
   
-  var value: js.typedarray.ArrayBuffer
+  var value: js.typedarray.Uint8Array
 }
 object FormatValue {
   
-  inline def apply(value: js.typedarray.ArrayBuffer): FormatValue = {
-    val __obj = js.Dynamic.literal(format = "ARRAYBUFFER", value = value.asInstanceOf[js.Any])
+  inline def apply(value: js.typedarray.Uint8Array): FormatValue = {
+    val __obj = js.Dynamic.literal(format = "UINT8ARRAY", value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatValue]
   }
   
   extension [Self <: FormatValue](x: Self) {
     
-    inline def setFormat(value: ARRAYBUFFER): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: UINT8ARRAY): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.typedarray.Uint8Array): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

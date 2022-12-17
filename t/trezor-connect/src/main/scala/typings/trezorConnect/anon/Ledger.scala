@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Ledger extends StObject {
   
+  // ripple-lib
   var ledger: Double
   
   var seq: Double

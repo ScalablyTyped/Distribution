@@ -50,7 +50,7 @@ trait PickImplscrollContextPart
   
   var pushing: js.UndefOr[Boolean] = js.undefined
   
-  var scrollContext: (String | JQuery) & (js.UndefOr[String | JQuery])
+  var scrollContext: String | JQuery
   
   var setSize: js.UndefOr[Boolean] = js.undefined
   
@@ -60,7 +60,7 @@ trait PickImplscrollContextPart
 }
 object PickImplscrollContextPart {
   
-  inline def apply(scrollContext: (String | JQuery) & (js.UndefOr[String | JQuery])): PickImplscrollContextPart = {
+  inline def apply(scrollContext: String | JQuery): PickImplscrollContextPart = {
     val __obj = js.Dynamic.literal(scrollContext = scrollContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplscrollContextPart]
   }
@@ -139,7 +139,7 @@ object PickImplscrollContextPart {
     
     inline def setPushingUndefined: Self = StObject.set(x, "pushing", js.undefined)
     
-    inline def setScrollContext(value: (String | JQuery) & (js.UndefOr[String | JQuery])): Self = StObject.set(x, "scrollContext", value.asInstanceOf[js.Any])
+    inline def setScrollContext(value: String | JQuery): Self = StObject.set(x, "scrollContext", value.asInstanceOf[js.Any])
     
     inline def setSetSize(value: Boolean): Self = StObject.set(x, "setSize", value.asInstanceOf[js.Any])
     

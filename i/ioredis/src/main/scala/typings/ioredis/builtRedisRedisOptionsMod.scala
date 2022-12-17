@@ -433,7 +433,7 @@ object builtRedisRedisOptionsMod {
       * @link https://nodejs.org/api/net.html#socketsetkeepaliveenable-initialdelay
       * @default 0
       */
-    var keepAlive: js.UndefOr[Double] & js.UndefOr[Boolean]
+    var keepAlive: js.UndefOr[Double] = js.undefined
     
     var keepAliveInitialDelay: js.UndefOr[Double] = js.undefined
     
@@ -596,8 +596,8 @@ object builtRedisRedisOptionsMod {
   }
   object RedisOptions {
     
-    inline def apply(keepAlive: js.UndefOr[Double] & js.UndefOr[Boolean]): RedisOptions = {
-      val __obj = js.Dynamic.literal(keepAlive = keepAlive.asInstanceOf[js.Any])
+    inline def apply(): RedisOptions = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RedisOptions]
     }
     
@@ -685,11 +685,13 @@ object builtRedisRedisOptionsMod {
       
       inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      inline def setKeepAlive(value: js.UndefOr[Double] & js.UndefOr[Boolean]): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
+      inline def setKeepAlive(value: Double): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
       
       inline def setKeepAliveInitialDelay(value: Double): Self = StObject.set(x, "keepAliveInitialDelay", value.asInstanceOf[js.Any])
       
       inline def setKeepAliveInitialDelayUndefined: Self = StObject.set(x, "keepAliveInitialDelay", js.undefined)
+      
+      inline def setKeepAliveUndefined: Self = StObject.set(x, "keepAlive", js.undefined)
       
       inline def setKeyPrefix(value: String): Self = StObject.set(x, "keyPrefix", value.asInstanceOf[js.Any])
       

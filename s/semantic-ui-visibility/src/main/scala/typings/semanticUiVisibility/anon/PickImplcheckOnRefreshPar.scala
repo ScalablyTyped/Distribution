@@ -17,7 +17,7 @@ trait PickImplcheckOnRefreshPar
   extends StObject
      with Param {
   
-  var checkOnRefresh: Boolean & js.UndefOr[Boolean]
+  var checkOnRefresh: Boolean
   
   var className: js.UndefOr[ClassNameSettings] = js.undefined
   
@@ -103,14 +103,14 @@ trait PickImplcheckOnRefreshPar
 }
 object PickImplcheckOnRefreshPar {
   
-  inline def apply(checkOnRefresh: Boolean & js.UndefOr[Boolean]): PickImplcheckOnRefreshPar = {
+  inline def apply(checkOnRefresh: Boolean): PickImplcheckOnRefreshPar = {
     val __obj = js.Dynamic.literal(checkOnRefresh = checkOnRefresh.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplcheckOnRefreshPar]
   }
   
   extension [Self <: PickImplcheckOnRefreshPar](x: Self) {
     
-    inline def setCheckOnRefresh(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "checkOnRefresh", value.asInstanceOf[js.Any])
+    inline def setCheckOnRefresh(value: Boolean): Self = StObject.set(x, "checkOnRefresh", value.asInstanceOf[js.Any])
     
     inline def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

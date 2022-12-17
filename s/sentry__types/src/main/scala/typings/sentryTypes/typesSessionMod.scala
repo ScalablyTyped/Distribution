@@ -1,7 +1,7 @@
 package typings.sentryTypes
 
 import typings.sentryTypes.anon.Environment
-import typings.sentryTypes.anon.Release
+import typings.sentryTypes.anon.Ipaddress
 import typings.sentryTypes.typesUserMod.User
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -80,7 +80,7 @@ object typesSessionMod {
   
   trait SerializedSession extends StObject {
     
-    var attrs: js.UndefOr[Environment] = js.undefined
+    var attrs: js.UndefOr[Ipaddress] = js.undefined
     
     var did: js.UndefOr[String] = js.undefined
     
@@ -114,7 +114,7 @@ object typesSessionMod {
     
     extension [Self <: SerializedSession](x: Self) {
       
-      inline def setAttrs(value: Environment): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      inline def setAttrs(value: Ipaddress): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
       inline def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
       
@@ -249,7 +249,7 @@ object typesSessionMod {
     
     var aggregates: js.Array[AggregationCounts]
     
-    var attrs: js.UndefOr[Release] = js.undefined
+    var attrs: js.UndefOr[Environment] = js.undefined
   }
   object SessionAggregates {
     
@@ -264,7 +264,7 @@ object typesSessionMod {
       
       inline def setAggregatesVarargs(value: AggregationCounts*): Self = StObject.set(x, "aggregates", js.Array(value*))
       
-      inline def setAttrs(value: Release): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      inline def setAttrs(value: Environment): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
       inline def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
     }

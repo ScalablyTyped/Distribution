@@ -11,12 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EmulatorMockTokenOptions extends StObject
 object EmulatorMockTokenOptions {
   
-  inline def substringPartialFirebaseI(sub: String & js.UndefOr[String]): typings.firebase.anon.substringPartialFirebaseI = {
+  inline def substringPartialFirebaseI(sub: String): typings.firebase.anon.substringPartialFirebaseI = {
     val __obj = js.Dynamic.literal(sub = sub.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.firebase.anon.substringPartialFirebaseI]
   }
   
-  inline def useridstringPartialFireba(user_id: String & js.UndefOr[String]): typings.firebase.anon.useridstringPartialFireba = {
+  inline def useridstringPartialFireba(user_id: String): typings.firebase.anon.useridstringPartialFireba = {
     val __obj = js.Dynamic.literal(user_id = user_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.firebase.anon.useridstringPartialFireba]
   }

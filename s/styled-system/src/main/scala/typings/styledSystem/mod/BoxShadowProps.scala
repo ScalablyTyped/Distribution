@@ -1,5 +1,6 @@
 package typings.styledSystem.mod
 
+import typings.csstype.mod.Property.BoxShadow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,12 +13,7 @@ trait BoxShadowProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StOb
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow)
     */
-  var boxShadow: js.UndefOr[
-    ResponsiveValue[
-      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ js.Any) | Double, 
-      ThemeType
-    ]
-  ] = js.undefined
+  var boxShadow: js.UndefOr[ResponsiveValue[BoxShadow | Double, ThemeType]] = js.undefined
 }
 object BoxShadowProps {
   
@@ -28,19 +24,12 @@ object BoxShadowProps {
   
   extension [Self <: BoxShadowProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & BoxShadowProps[ThemeType]) {
     
-    inline def setBoxShadow(
-      value: ResponsiveValue[
-          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ js.Any) | Double, 
-          ThemeType
-        ]
-    ): Self = StObject.set(x, "boxShadow", value.asInstanceOf[js.Any])
+    inline def setBoxShadow(value: ResponsiveValue[BoxShadow | Double, ThemeType]): Self = StObject.set(x, "boxShadow", value.asInstanceOf[js.Any])
     
     inline def setBoxShadowNull: Self = StObject.set(x, "boxShadow", null)
     
     inline def setBoxShadowUndefined: Self = StObject.set(x, "boxShadow", js.undefined)
     
-    inline def setBoxShadowVarargs(
-      value: (((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ js.Any) | Double) | Null)*
-    ): Self = StObject.set(x, "boxShadow", js.Array(value :_*))
+    inline def setBoxShadowVarargs(value: ((BoxShadow | Double) | Null)*): Self = StObject.set(x, "boxShadow", js.Array(value*))
   }
 }

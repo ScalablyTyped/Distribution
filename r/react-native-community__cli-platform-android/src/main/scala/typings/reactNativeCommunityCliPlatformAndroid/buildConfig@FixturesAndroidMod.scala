@@ -18,8 +18,8 @@ object `buildConfig@FixturesAndroidMod` {
     
     @JSImport("@react-native-community/cli-platform-android/build/config/@/fixtures/android", "corrupted.src")
     @js.native
-    def src: AndroidManifestxml = js.native
-    inline def src_=(x: AndroidManifestxml): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("src")(x.asInstanceOf[js.Any])
+    def src: Main = js.native
+    inline def src_=(x: Main): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("src")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@react-native-community/cli-platform-android/build/config/@/fixtures/android", "findPackagesClassNameJavaNotValid")
@@ -46,8 +46,8 @@ object `buildConfig@FixturesAndroidMod` {
     
     @JSImport("@react-native-community/cli-platform-android/build/config/@/fixtures/android", "noPackage.src")
     @js.native
-    def src: Main = js.native
-    inline def src_=(x: Main): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("src")(x.asInstanceOf[js.Any])
+    def src: AndroidManifestxmlMain = js.native
+    inline def src_=(x: AndroidManifestxmlMain): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("src")(x.asInstanceOf[js.Any])
   }
   
   object userConfigManifest {
@@ -76,8 +76,8 @@ object `buildConfig@FixturesAndroidMod` {
     
     @JSImport("@react-native-community/cli-platform-android/build/config/@/fixtures/android", "valid.src")
     @js.native
-    def src: AndroidManifestxmlMain = js.native
-    inline def src_=(x: AndroidManifestxmlMain): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("src")(x.asInstanceOf[js.Any])
+    def src: AndroidManifestxml = js.native
+    inline def src_=(x: AndroidManifestxml): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("src")(x.asInstanceOf[js.Any])
   }
   
   object validKotlin {
@@ -94,7 +94,7 @@ object `buildConfig@FixturesAndroidMod` {
     
     @JSImport("@react-native-community/cli-platform-android/build/config/@/fixtures/android", "validKotlin.src")
     @js.native
-    def src: AndroidManifestxmlMain = js.native
-    inline def src_=(x: AndroidManifestxmlMain): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("src")(x.asInstanceOf[js.Any])
+    def src: AndroidManifestxml = js.native
+    inline def src_=(x: AndroidManifestxml): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("src")(x.asInstanceOf[js.Any])
   }
 }

@@ -6,16 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Height extends StObject {
   
-  /**
-    * Tile height.
-    * Defaults to `10`.
-    */
   var height: js.UndefOr[Double] = js.undefined
   
-  /**
-    * Tile width.
-    * Defaults to `10`.
-    */
   var width: js.UndefOr[Double] = js.undefined
 }
 object Height {

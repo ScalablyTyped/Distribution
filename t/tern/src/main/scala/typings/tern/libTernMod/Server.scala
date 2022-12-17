@@ -1,6 +1,5 @@
 package typings.tern.libTernMod
 
-import typings.tern.anon.`0`
 import typings.tern.libInferMod.Context
 import typings.tern.libTernMod.^
 import typings.tern.ternStrings.afterLoad
@@ -80,7 +79,7 @@ trait Server extends StObject {
     * When the server hasn’t been configured to be asynchronous, the callback will be called before request returns.
     */
   def request[Q /* <: Query */, D /* <: Document */](
-    doc: D & `0`[Q],
+    doc: D & typings.tern.anon.Query[Q],
     callback: js.Function2[
       /* error */ String | Null, 
       /* response */ js.UndefOr[

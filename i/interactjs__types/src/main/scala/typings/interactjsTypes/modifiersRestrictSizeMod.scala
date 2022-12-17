@@ -1,7 +1,6 @@
 package typings.interactjsTypes
 
 import typings.interactjsTypes.anon.PartialRestrictSizeOption
-import typings.interactjsTypes.anon.RestrictSizeOptionsinnerR
 import typings.interactjsTypes.anon.SetStartStop
 import typings.interactjsTypes.anon.Start
 import typings.interactjsTypes.coreInteractionMod.Interaction
@@ -131,19 +130,13 @@ object modifiersRestrictSizeMod {
         /* import warning: importer.ImportType#apply Failed type conversion: @interactjs/types.@interactjs/modifiers/restrict/pointer.RestrictOptions['offset'] */ js.Any
       ] = js.undefined
     
-    var options: RestrictEdgesOptions & RestrictSizeOptionsinnerR
+    var options: RestrictEdgesOptions
     
     var outer: Rect
   }
   object RestrictSizeState {
     
-    inline def apply(
-      inner: Rect,
-      max: Rect,
-      min: Rect,
-      options: RestrictEdgesOptions & RestrictSizeOptionsinnerR,
-      outer: Rect
-    ): RestrictSizeState = {
+    inline def apply(inner: Rect, max: Rect, min: Rect, options: RestrictEdgesOptions, outer: Rect): RestrictSizeState = {
       val __obj = js.Dynamic.literal(inner = inner.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], outer = outer.asInstanceOf[js.Any])
       __obj.asInstanceOf[RestrictSizeState]
     }
@@ -174,7 +167,7 @@ object modifiersRestrictSizeMod {
       
       inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      inline def setOptions(value: RestrictEdgesOptions & RestrictSizeOptionsinnerR): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: RestrictEdgesOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setOuter(value: Rect): Self = StObject.set(x, "outer", value.asInstanceOf[js.Any])
     }

@@ -13,7 +13,7 @@ trait PartialTypescriptOptions extends StObject {
   var check: js.UndefOr[Boolean] = js.undefined
   
   var checkOptions: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/plugin.ForkTsCheckerWebpackPlugin['options'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin.^['options'] */ js.Any
   ] = js.undefined
   
   var reactDocgen: js.UndefOr[`react-docgen-typescript` | `react-docgen` | `false`] = js.undefined
@@ -34,7 +34,7 @@ object PartialTypescriptOptions {
     inline def setCheck(value: Boolean): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
     
     inline def setCheckOptions(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/plugin.ForkTsCheckerWebpackPlugin['options'] */ js.Any
+      value: /* import warning: importer.ImportType#apply Failed type conversion: fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin.^['options'] */ js.Any
     ): Self = StObject.set(x, "checkOptions", value.asInstanceOf[js.Any])
     
     inline def setCheckOptionsUndefined: Self = StObject.set(x, "checkOptions", js.undefined)

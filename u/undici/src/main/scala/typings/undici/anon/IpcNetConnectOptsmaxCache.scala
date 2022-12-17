@@ -35,14 +35,14 @@ trait IpcNetConnectOptsmaxCache
   
   var socketPath: js.UndefOr[String | Null] = js.undefined
   
-  var timeout: js.UndefOr[Double] & (js.UndefOr[Double | Null])
+  var timeout: js.UndefOr[Double] = js.undefined
   
   var writable: js.UndefOr[Boolean] = js.undefined
 }
 object IpcNetConnectOptsmaxCache {
   
-  inline def apply(path: String, timeout: js.UndefOr[Double] & (js.UndefOr[Double | Null])): IpcNetConnectOptsmaxCache = {
-    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
+  inline def apply(path: String): IpcNetConnectOptsmaxCache = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[IpcNetConnectOptsmaxCache]
   }
   
@@ -86,7 +86,9 @@ object IpcNetConnectOptsmaxCache {
     
     inline def setSocketPathUndefined: Self = StObject.set(x, "socketPath", js.undefined)
     
-    inline def setTimeout(value: js.UndefOr[Double] & (js.UndefOr[Double | Null])): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     inline def setWritable(value: Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
     

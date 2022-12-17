@@ -1,7 +1,6 @@
 package typings.nodemailerMailgunTransport
 
 import typings.nodemailer.mod.Transport
-import typings.nodemailer.nodemailerBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,11 +27,6 @@ object mod {
       mail: typings.nodemailer.libMailerMailMessageMod.^[Any],
       callback: js.Function2[/* err */ js.Error | Null, Any, Unit]
     ): Unit = js.native
-    
-    /* CompleteClass */
-    var verify: (js.UndefOr[
-        js.Function1[/* callback */ js.Function2[/* err */ js.Error | Null, `true`, Unit], Unit]
-      ]) & js.UndefOr[js.Function0[js.Promise[`true`]]] = js.native
     
     /* CompleteClass */
     var version: String = js.native

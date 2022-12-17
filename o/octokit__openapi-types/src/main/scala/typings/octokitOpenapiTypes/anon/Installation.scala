@@ -12,9 +12,9 @@ trait Installation extends StObject {
   
   var merge_group: Baseref
   
-  var organization: js.UndefOr[Description] = js.undefined
+  var organization: js.UndefOr[Hooksurl] = js.undefined
   
-  var repository: js.UndefOr[Allowmergecommit] = js.undefined
+  var repository: js.UndefOr[Allowupdatebranch] = js.undefined
   
   var sender: js.UndefOr[Avatarurl] = js.undefined
 }
@@ -35,11 +35,11 @@ object Installation {
     
     inline def setMerge_group(value: Baseref): Self = StObject.set(x, "merge_group", value.asInstanceOf[js.Any])
     
-    inline def setOrganization(value: Description): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
+    inline def setOrganization(value: Hooksurl): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
     
     inline def setOrganizationUndefined: Self = StObject.set(x, "organization", js.undefined)
     
-    inline def setRepository(value: Allowmergecommit): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setRepository(value: Allowupdatebranch): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
     inline def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
     

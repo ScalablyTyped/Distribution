@@ -11,7 +11,7 @@ trait PickImpldebugPartialPickI
   extends StObject
      with Param {
   
-  var debug: Boolean & js.UndefOr[Boolean]
+  var debug: Boolean
   
   var modules: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -31,14 +31,14 @@ trait PickImpldebugPartialPickI
 }
 object PickImpldebugPartialPickI {
   
-  inline def apply(debug: Boolean & js.UndefOr[Boolean]): PickImpldebugPartialPickI = {
+  inline def apply(debug: Boolean): PickImpldebugPartialPickI = {
     val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldebugPartialPickI]
   }
   
   extension [Self <: PickImpldebugPartialPickI](x: Self) {
     
-    inline def setDebug(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     inline def setModules(value: js.Array[String]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
     

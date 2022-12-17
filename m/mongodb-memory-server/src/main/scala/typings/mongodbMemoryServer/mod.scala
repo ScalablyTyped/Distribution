@@ -11,31 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("mongodb-memory-server", JSImport.Default)
-  @js.native
-  /**
-    * Create an Mongo-Memory-Sever Instance
-    * @param opts Mongo-Memory-Sever Options
-    */
-  open class default ()
-    extends typings.mongodbMemoryServerCore.mod.default {
-    def this(opts: MongoMemoryServerOpts) = this()
-  }
-  /* static members */
-  object default {
-    
-    @JSImport("mongodb-memory-server", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /**
-      * Create an Mongo-Memory-Sever Instance that can be awaited
-      * @param opts Mongo-Memory-Sever Options
-      */
-    inline def create(): js.Promise[typings.mongodbMemoryServerCore.libMongoMemoryServerMod.MongoMemoryServer] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Promise[typings.mongodbMemoryServerCore.libMongoMemoryServerMod.MongoMemoryServer]]
-    inline def create(opts: MongoMemoryServerOpts): js.Promise[typings.mongodbMemoryServerCore.libMongoMemoryServerMod.MongoMemoryServer] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.mongodbMemoryServerCore.libMongoMemoryServerMod.MongoMemoryServer]]
-  }
-  
   @JSImport("mongodb-memory-server", "MongoBinary")
   @js.native
   open class MongoBinary ()

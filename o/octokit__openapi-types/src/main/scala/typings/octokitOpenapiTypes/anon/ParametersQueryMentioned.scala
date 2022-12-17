@@ -8,11 +8,11 @@ trait ParametersQueryMentioned extends StObject {
   
   var parameters: QueryMentioned
   
-  var responses: `301404422`
+  var responses: `200301404422`
 }
 object ParametersQueryMentioned {
   
-  inline def apply(parameters: QueryMentioned, responses: `301404422`): ParametersQueryMentioned = {
+  inline def apply(parameters: QueryMentioned, responses: `200301404422`): ParametersQueryMentioned = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersQueryMentioned]
   }
@@ -21,6 +21,6 @@ object ParametersQueryMentioned {
     
     inline def setParameters(value: QueryMentioned): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `301404422`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200301404422`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

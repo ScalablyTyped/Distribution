@@ -2,7 +2,7 @@ package typings.awsSdk
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdk.anon.Address
-import typings.awsSdk.anon.Expire
+import typings.awsSdk.anon.CachePeriodInMinutes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,7 +43,7 @@ object vendorEndpointCacheMod {
     inline def getKeyString(key: EndpointIdentifier): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getKeyString")(key.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
-  type DiscoveredEndpoints = js.Array[Address]
+  type DiscoveredEndpoints = js.Array[CachePeriodInMinutes]
   
   trait EndpointIdentifier
     extends StObject
@@ -84,5 +84,5 @@ object vendorEndpointCacheMod {
     }
   }
   
-  type EndpointRecords = js.Array[Expire]
+  type EndpointRecords = js.Array[Address]
 }

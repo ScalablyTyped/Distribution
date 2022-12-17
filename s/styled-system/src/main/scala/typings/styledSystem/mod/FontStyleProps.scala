@@ -1,5 +1,6 @@
 package typings.styledSystem.mod
 
+import typings.csstype.mod.Property.FontStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,12 +13,7 @@ trait FontStyleProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StOb
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/font-style)
     */
-  var fontStyle: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontStyle */ js.Any, 
-      ThemeType
-    ]
-  ] = js.undefined
+  var fontStyle: js.UndefOr[ResponsiveValue[FontStyle, ThemeType]] = js.undefined
 }
 object FontStyleProps {
   
@@ -28,19 +24,12 @@ object FontStyleProps {
   
   extension [Self <: FontStyleProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & FontStyleProps[ThemeType]) {
     
-    inline def setFontStyle(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontStyle */ js.Any, 
-          ThemeType
-        ]
-    ): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
+    inline def setFontStyle(value: ResponsiveValue[FontStyle, ThemeType]): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
     inline def setFontStyleNull: Self = StObject.set(x, "fontStyle", null)
     
     inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
     
-    inline def setFontStyleVarargs(
-      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontStyle */ js.Any) | Null)*
-    ): Self = StObject.set(x, "fontStyle", js.Array(value :_*))
+    inline def setFontStyleVarargs(value: (FontStyle | Null)*): Self = StObject.set(x, "fontStyle", js.Array(value*))
   }
 }

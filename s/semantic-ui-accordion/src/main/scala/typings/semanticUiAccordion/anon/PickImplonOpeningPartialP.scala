@@ -50,7 +50,7 @@ trait PickImplonOpeningPartialP
   
   def onOpening(): Unit
   @JSName("onOpening")
-  var onOpening_Original: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+  var onOpening_Original: js.ThisFunction0[/* this */ JQuery, Unit]
   
   var performance: js.UndefOr[Boolean] = js.undefined
   
@@ -62,9 +62,7 @@ trait PickImplonOpeningPartialP
 }
 object PickImplonOpeningPartialP {
   
-  inline def apply(
-    onOpening: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-  ): PickImplonOpeningPartialP = {
+  inline def apply(onOpening: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonOpeningPartialP = {
     val __obj = js.Dynamic.literal(onOpening = onOpening.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonOpeningPartialP]
   }
@@ -137,9 +135,7 @@ object PickImplonOpeningPartialP {
     
     inline def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
     
-    inline def setOnOpening(
-      value: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-    ): Self = StObject.set(x, "onOpening", value.asInstanceOf[js.Any])
+    inline def setOnOpening(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onOpening", value.asInstanceOf[js.Any])
     
     inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     

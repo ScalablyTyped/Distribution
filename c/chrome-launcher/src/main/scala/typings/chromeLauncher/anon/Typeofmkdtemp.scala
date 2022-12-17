@@ -2,7 +2,7 @@ package typings.chromeLauncher.anon
 
 import typings.chromeLauncher.chromeLauncherStrings.buffer
 import typings.node.NodeJS.ErrnoException
-import typings.node.anon.Encoding
+import typings.node.anon.`2`
 import typings.node.bufferMod.global.Buffer
 import typings.node.fsMod.EncodingOption
 import org.scalablytyped.runtime.StObject
@@ -20,7 +20,7 @@ trait Typeofmkdtemp extends StObject {
   ): Unit = js.native
   def apply(
     prefix: String,
-    options: Encoding,
+    options: `2`,
     callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ Buffer, Unit]
   ): Unit = js.native
   def apply(

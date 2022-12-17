@@ -116,11 +116,11 @@ import typings.reactNativePaper.anon.`9`
 import typings.reactNativePaper.anon.pagenumbernumberOfPagesnu
 import typings.reactNativePaper.anon.platforminPlatformOSTyped
 import typings.reactNativePaper.anon.themeDeepPartialThemeunde
+import typings.reactNativePaper.libTypescriptComponentsActivityIndicatorMod.Props
 import typings.reactNativePaper.libTypescriptComponentsCardCardMod.ElevatedCardProps
 import typings.reactNativePaper.libTypescriptComponentsCardCardMod.OutlinedCardProps
 import typings.reactNativePaper.libTypescriptComponentsFabAnimatedFABUtilsMod.CombinedStyles
 import typings.reactNativePaper.libTypescriptComponentsFabAnimatedFABUtilsMod.GetCombinedStylesProps
-import typings.reactNativePaper.libTypescriptComponentsSurfaceMod.Props
 import typings.reactNativePaper.libTypescriptComponentsTextInputTextInputMod.CompoundedComponent
 import typings.reactNativePaper.libTypescriptTypesMod.Fonts
 import typings.reactNativePaper.libTypescriptTypesMod.Omit
@@ -138,30 +138,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("react-native-paper", JSImport.Default)
-  @js.native
-  val default: ComponentType[PickRemoveChildrenComponeAccessibilityState] & (NonReactStatics[
-    (ComponentType[
-      (RemoveChildren[
-        ComponentType[PickViewPropsRefAttributeAccessibilityIgnoresInvertColors] & (NonReactStatics[
-          ComponentType[ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors] & (js.Function1[/* param0 */ Props, Element]), 
-          js.Object
-        ])
-      ]) & AccessibilityState
-    ]) & (js.Function1[
-      /* param0 */ typings.reactNativePaper.libTypescriptComponentsFabAnimatedFABAnimatedFABMod.Props, 
-      Element
-    ]), 
-    js.Object
-  ]) = js.native
-  
   @JSImport("react-native-paper", "ActivityIndicator")
   @js.native
   val ActivityIndicator: ComponentType[PickViewPropsRefAttribute] & (NonReactStatics[
-    ComponentType[ViewPropsRefAttributesVie] & (js.Function1[
-      /* param0 */ typings.reactNativePaper.libTypescriptComponentsActivityIndicatorMod.Props, 
-      Element
-    ]), 
+    ComponentType[ViewPropsRefAttributesVie] & (js.Function1[/* param0 */ Props, Element]), 
     js.Object
   ]) = js.native
   
@@ -171,7 +151,10 @@ object mod {
     (ComponentType[
       (RemoveChildren[
         ComponentType[PickViewPropsRefAttributeAccessibilityIgnoresInvertColors] & (NonReactStatics[
-          ComponentType[ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors] & (js.Function1[/* param0 */ Props, Element]), 
+          ComponentType[ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors] & (js.Function1[
+            /* param0 */ typings.reactNativePaper.libTypescriptComponentsSurfaceMod.Props, 
+            Element
+          ]), 
           js.Object
         ])
       ]) & AccessibilityState
@@ -229,7 +212,10 @@ object mod {
     (ComponentType[
       (RemoveChildren[
         ComponentType[PickViewPropsRefAttributeAccessibilityIgnoresInvertColors] & (NonReactStatics[
-          ComponentType[ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors] & (js.Function1[/* param0 */ Props, Element]), 
+          ComponentType[ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors] & (js.Function1[
+            /* param0 */ typings.reactNativePaper.libTypescriptComponentsSurfaceMod.Props, 
+            Element
+          ]), 
           js.Object
         ])
       ]) & ContentStyle
@@ -1507,7 +1493,10 @@ object mod {
     (ComponentType[
       (RemoveChildren[
         ComponentType[PickViewPropsRefAttributeAccessibilityIgnoresInvertColors] & (NonReactStatics[
-          ComponentType[ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors] & (js.Function1[/* param0 */ Props, Element]), 
+          ComponentType[ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors] & (js.Function1[
+            /* param0 */ typings.reactNativePaper.libTypescriptComponentsSurfaceMod.Props, 
+            Element
+          ]), 
           js.Object
         ])
       ]) & Animated
@@ -1794,7 +1783,10 @@ object mod {
   @JSImport("react-native-paper", "Surface")
   @js.native
   val Surface: ComponentType[PickViewPropsRefAttributeAccessibilityIgnoresInvertColors] & (NonReactStatics[
-    ComponentType[ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors] & (js.Function1[/* param0 */ Props, Element]), 
+    ComponentType[ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors] & (js.Function1[
+      /* param0 */ typings.reactNativePaper.libTypescriptComponentsSurfaceMod.Props, 
+      Element
+    ]), 
     js.Object
   ]) = js.native
   

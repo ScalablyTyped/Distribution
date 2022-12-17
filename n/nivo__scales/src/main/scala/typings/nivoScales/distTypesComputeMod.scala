@@ -2,13 +2,13 @@ package typings.nivoScales
 
 import typings.d3Scale.mod.NumberValue
 import typings.nivoScales.anon.All
+import typings.nivoScales.anon.Data
 import typings.nivoScales.anon.DataArray
 import typings.nivoScales.anon.FnCall
 import typings.nivoScales.anon.GetValue
 import typings.nivoScales.anon.Series
-import typings.nivoScales.anon.Y
+import typings.nivoScales.anon.X
 import typings.nivoScales.anon.`0`
-import typings.nivoScales.anon.`1`
 import typings.nivoScales.distTypesTypesMod.ComputedSerieAxis
 import typings.nivoScales.distTypesTypesMod.ScaleAxis
 import typings.nivoScales.distTypesTypesMod.ScaleBand
@@ -51,17 +51,17 @@ object distTypesComputeMod {
   inline def generateSeriesAxis[Axis /* <: ScaleAxis */, Value /* <: ScaleValue */](series: SerieAxis[Axis, Value], axis: Axis, scaleSpec: ScaleSpec): All = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSeriesAxis")(series.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], scaleSpec.asInstanceOf[js.Any])).asInstanceOf[All]
   inline def generateSeriesAxis[Axis /* <: ScaleAxis */, Value /* <: ScaleValue */](series: SerieAxis[Axis, Value], axis: Axis, scaleSpec: ScaleSpec, param3: GetValue[Axis, Value]): All = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSeriesAxis")(series.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], scaleSpec.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[All]
   
-  inline def generateSeriesXY[S, D /* <: SerieDatum */](series: js.Array[NestedSerie[S, D]], xScaleSpec: ScaleSpec, yScaleSpec: ScaleSpec): Y = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSeriesXY")(series.asInstanceOf[js.Any], xScaleSpec.asInstanceOf[js.Any], yScaleSpec.asInstanceOf[js.Any])).asInstanceOf[Y]
+  inline def generateSeriesXY[S, D /* <: SerieDatum */](series: js.Array[NestedSerie[S, D]], xScaleSpec: ScaleSpec, yScaleSpec: ScaleSpec): X = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSeriesXY")(series.asInstanceOf[js.Any], xScaleSpec.asInstanceOf[js.Any], yScaleSpec.asInstanceOf[js.Any])).asInstanceOf[X]
   
   inline def getOtherAxis(axis: ScaleAxis): ScaleAxis = ^.asInstanceOf[js.Dynamic].applyDynamic("getOtherAxis")(axis.asInstanceOf[js.Any]).asInstanceOf[ScaleAxis]
   
   inline def stackAxis[S, D /* <: SerieDatum */](axis: ScaleAxis, xy: StackedXY, series: js.Array[NestedSerie[S, D]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stackAxis")(axis.asInstanceOf[js.Any], xy.asInstanceOf[js.Any], series.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  type ComputedSerie[S, D /* <: SerieDatum */] = S & DataArray[D]
+  type ComputedSerie[S, D /* <: SerieDatum */] = S & `0`[D]
   
-  type NestedSerie[S, D /* <: SerieDatum */] = S & `0`[D]
+  type NestedSerie[S, D /* <: SerieDatum */] = S & DataArray[D]
   
-  type Serie[S, D /* <: SerieDatum */] = S & `1`[D]
+  type Serie[S, D /* <: SerieDatum */] = S & Data[D]
   
   trait SerieDatum extends StObject {
     

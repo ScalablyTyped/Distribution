@@ -1,0 +1,22 @@
+package typings.octokitOpenapiTypes.anon
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait PostRequestBodyContentApplicationjsonColumnid extends StObject {
+  
+  var post: RequestBodyContentApplicationjsonColumnid
+}
+object PostRequestBodyContentApplicationjsonColumnid {
+  
+  inline def apply(post: RequestBodyContentApplicationjsonColumnid): PostRequestBodyContentApplicationjsonColumnid = {
+    val __obj = js.Dynamic.literal(post = post.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PostRequestBodyContentApplicationjsonColumnid]
+  }
+  
+  extension [Self <: PostRequestBodyContentApplicationjsonColumnid](x: Self) {
+    
+    inline def setPost(value: RequestBodyContentApplicationjsonColumnid): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
+  }
+}

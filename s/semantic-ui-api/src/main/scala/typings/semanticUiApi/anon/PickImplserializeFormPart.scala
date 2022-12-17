@@ -127,7 +127,7 @@ trait PickImplserializeFormPart
   
   var selector: js.UndefOr[SelectorSettings] = js.undefined
   
-  var serializeForm: Boolean & js.UndefOr[Boolean]
+  var serializeForm: Boolean
   
   var silent: js.UndefOr[Boolean] = js.undefined
   
@@ -147,7 +147,7 @@ trait PickImplserializeFormPart
 }
 object PickImplserializeFormPart {
   
-  inline def apply(serializeForm: Boolean & js.UndefOr[Boolean]): PickImplserializeFormPart = {
+  inline def apply(serializeForm: Boolean): PickImplserializeFormPart = {
     val __obj = js.Dynamic.literal(serializeForm = serializeForm.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplserializeFormPart]
   }
@@ -310,7 +310,7 @@ object PickImplserializeFormPart {
     
     inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
-    inline def setSerializeForm(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "serializeForm", value.asInstanceOf[js.Any])
+    inline def setSerializeForm(value: Boolean): Self = StObject.set(x, "serializeForm", value.asInstanceOf[js.Any])
     
     inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     

@@ -6,10 +6,10 @@ import typings.cookieconsent.anon.Button
 import typings.cookieconsent.anon.Callback
 import typings.cookieconsent.anon.Close
 import typings.cookieconsent.anon.Code
-import typings.cookieconsent.anon.CodeString
 import typings.cookieconsent.anon.CountryCode
 import typings.cookieconsent.anon.Domain
 import typings.cookieconsent.anon.ServiceDefinitions
+import typings.cookieconsent.anon.`0`
 import typings.cookieconsent.cookieconsentStrings.`bottom-left`
 import typings.cookieconsent.cookieconsentStrings.`bottom-right`
 import typings.cookieconsent.cookieconsentStrings.`opt-in`
@@ -61,7 +61,7 @@ object mod {
     
     def getCountryCode(
       options: Options,
-      success: js.Function1[/* resp */ Code, Unit],
+      success: js.Function1[/* resp */ `0`, Unit],
       error: js.Function1[/* err */ js.Error, Unit]
     ): Unit = js.native
     
@@ -472,7 +472,7 @@ object mod {
     }
   }
   
-  type ServiceResponse = CodeString | js.Error
+  type ServiceResponse = Code | js.Error
   
   /* Rewritten from type alias, can be one of: 
     - typings.cookieconsent.cookieconsentStrings.deny

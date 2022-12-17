@@ -14,11 +14,11 @@ trait PickImpltabPartialPickImp
   
   var promise: js.UndefOr[String] = js.undefined
   
-  var tab: String & js.UndefOr[String]
+  var tab: String
 }
 object PickImpltabPartialPickImp {
   
-  inline def apply(tab: String & js.UndefOr[String]): PickImpltabPartialPickImp = {
+  inline def apply(tab: String): PickImpltabPartialPickImp = {
     val __obj = js.Dynamic.literal(tab = tab.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpltabPartialPickImp]
   }
@@ -33,6 +33,6 @@ object PickImpltabPartialPickImp {
     
     inline def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
     
-    inline def setTab(value: String & js.UndefOr[String]): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
+    inline def setTab(value: String): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
   }
 }

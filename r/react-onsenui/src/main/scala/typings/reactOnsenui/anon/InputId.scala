@@ -1,11 +1,13 @@
 package typings.reactOnsenui.anon
 
-import typings.react.mod.ChangeEvent
+import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait InputId extends StObject {
+  
+  var checked: js.UndefOr[Boolean] = js.undefined
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
@@ -13,11 +15,9 @@ trait InputId extends StObject {
   
   var modifier: js.UndefOr[String] = js.undefined
   
-  var onChange: js.UndefOr[js.Function1[/* e */ ChangeEvent[Any], Unit]] = js.undefined
+  var name: js.UndefOr[String] = js.undefined
   
-  var onInput: js.UndefOr[js.Function1[/* e */ ChangeEvent[Any], Unit]] = js.undefined
-  
-  var placeholder: js.UndefOr[String] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
   
   var value: js.UndefOr[String] = js.undefined
 }
@@ -29,6 +29,10 @@ object InputId {
   }
   
   extension [Self <: InputId](x: Self) {
+    
+    inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+    
+    inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
@@ -42,17 +46,13 @@ object InputId {
     
     inline def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
     
-    inline def setOnChange(value: /* e */ ChangeEvent[Any] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOnChange(value: /* e */ Event => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
-    
-    inline def setOnInput(value: /* e */ ChangeEvent[Any] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
-    
-    inline def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
-    
-    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
-    
-    inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

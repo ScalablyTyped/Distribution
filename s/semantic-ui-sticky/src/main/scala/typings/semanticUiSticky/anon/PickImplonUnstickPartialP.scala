@@ -46,7 +46,7 @@ trait PickImplonUnstickPartialP
   
   def onUnstick(): Unit
   @JSName("onUnstick")
-  var onUnstick_Original: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+  var onUnstick_Original: js.ThisFunction0[/* this */ JQuery, Unit]
   
   var performance: js.UndefOr[Boolean] = js.undefined
   
@@ -62,9 +62,7 @@ trait PickImplonUnstickPartialP
 }
 object PickImplonUnstickPartialP {
   
-  inline def apply(
-    onUnstick: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-  ): PickImplonUnstickPartialP = {
+  inline def apply(onUnstick: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonUnstickPartialP = {
     val __obj = js.Dynamic.literal(onUnstick = onUnstick.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonUnstickPartialP]
   }
@@ -131,9 +129,7 @@ object PickImplonUnstickPartialP {
     
     inline def setOnTopUndefined: Self = StObject.set(x, "onTop", js.undefined)
     
-    inline def setOnUnstick(
-      value: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-    ): Self = StObject.set(x, "onUnstick", value.asInstanceOf[js.Any])
+    inline def setOnUnstick(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onUnstick", value.asInstanceOf[js.Any])
     
     inline def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
     

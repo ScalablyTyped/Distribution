@@ -29,6 +29,6 @@ object BorderBottomProps {
     
     inline def setBorderBottomUndefined: Self = StObject.set(x, "borderBottom", js.undefined)
     
-    inline def setBorderBottomVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderBottom", js.Array(value :_*))
+    inline def setBorderBottomVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderBottom", js.Array(value*))
   }
 }

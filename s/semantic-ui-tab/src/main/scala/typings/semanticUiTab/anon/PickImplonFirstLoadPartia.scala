@@ -68,21 +68,13 @@ trait PickImplonFirstLoadPartia
   
   def onFirstLoad(tabPath: String, parameterArray: js.Array[Any], historyEvent: Any): Unit
   @JSName("onFirstLoad")
-  var onFirstLoad_Original: (js.ThisFunction3[
+  var onFirstLoad_Original: js.ThisFunction3[
     /* this */ JQuery, 
     /* tabPath */ String, 
     /* parameterArray */ js.Array[Any], 
     /* historyEvent */ Any, 
     Unit
-  ]) & (js.UndefOr[
-    js.ThisFunction3[
-      /* this */ JQuery, 
-      /* tabPath */ String, 
-      /* parameterArray */ js.Array[Any], 
-      /* historyEvent */ Any, 
-      Unit
-    ]
-  ])
+  ]
   
   var onLoad: js.UndefOr[
     js.ThisFunction3[
@@ -113,21 +105,13 @@ trait PickImplonFirstLoadPartia
 object PickImplonFirstLoadPartia {
   
   inline def apply(
-    onFirstLoad: (js.ThisFunction3[
+    onFirstLoad: js.ThisFunction3[
       /* this */ JQuery, 
       /* tabPath */ String, 
       /* parameterArray */ js.Array[Any], 
       /* historyEvent */ Any, 
       Unit
-    ]) & (js.UndefOr[
-      js.ThisFunction3[
-        /* this */ JQuery, 
-        /* tabPath */ String, 
-        /* parameterArray */ js.Array[Any], 
-        /* historyEvent */ Any, 
-        Unit
-      ]
-    ])
+    ]
   ): PickImplonFirstLoadPartia = {
     val __obj = js.Dynamic.literal(onFirstLoad = onFirstLoad.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonFirstLoadPartia]
@@ -216,21 +200,13 @@ object PickImplonFirstLoadPartia {
     inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
     inline def setOnFirstLoad(
-      value: (js.ThisFunction3[
+      value: js.ThisFunction3[
           /* this */ JQuery, 
           /* tabPath */ String, 
           /* parameterArray */ js.Array[Any], 
           /* historyEvent */ Any, 
           Unit
-        ]) & (js.UndefOr[
-          js.ThisFunction3[
-            /* this */ JQuery, 
-            /* tabPath */ String, 
-            /* parameterArray */ js.Array[Any], 
-            /* historyEvent */ Any, 
-            Unit
-          ]
-        ])
+        ]
     ): Self = StObject.set(x, "onFirstLoad", value.asInstanceOf[js.Any])
     
     inline def setOnLoad(

@@ -12,13 +12,13 @@ trait PickImplhoverPartialPickI
   
   var active: js.UndefOr[String] = js.undefined
   
-  var hover: String & js.UndefOr[String]
+  var hover: String
   
   var loading: js.UndefOr[String] = js.undefined
 }
 object PickImplhoverPartialPickI {
   
-  inline def apply(hover: String & js.UndefOr[String]): PickImplhoverPartialPickI = {
+  inline def apply(hover: String): PickImplhoverPartialPickI = {
     val __obj = js.Dynamic.literal(hover = hover.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplhoverPartialPickI]
   }
@@ -29,7 +29,7 @@ object PickImplhoverPartialPickI {
     
     inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    inline def setHover(value: String & js.UndefOr[String]): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+    inline def setHover(value: String): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
     inline def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     

@@ -6,31 +6,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Filter extends StObject {
   
-  var filter: js.UndefOr[typings.matrixJsSdk.mod.Filter] = js.undefined
+  //  Token to paginate from
+  var filter: Genericsearchterm
   
-  var timelineSupport: js.UndefOr[Boolean] = js.undefined
+  //  The remote server to query for the room list. Optional. If unspecified, get the local home server's public room list.
+  var limit: Double
   
-  var unstableClientRelationAggregation: js.UndefOr[Boolean] = js.undefined
+  var server: String
+  
+  //  Maximum number of entries to return
+  var since: String
 }
 object Filter {
   
-  inline def apply(): Filter = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(filter: Genericsearchterm, limit: Double, server: String, since: String): Filter = {
+    val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any], since = since.asInstanceOf[js.Any])
     __obj.asInstanceOf[Filter]
   }
   
   extension [Self <: Filter](x: Self) {
     
-    inline def setFilter(value: typings.matrixJsSdk.mod.Filter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: Genericsearchterm): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    inline def setTimelineSupport(value: Boolean): Self = StObject.set(x, "timelineSupport", value.asInstanceOf[js.Any])
+    inline def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
-    inline def setTimelineSupportUndefined: Self = StObject.set(x, "timelineSupport", js.undefined)
-    
-    inline def setUnstableClientRelationAggregation(value: Boolean): Self = StObject.set(x, "unstableClientRelationAggregation", value.asInstanceOf[js.Any])
-    
-    inline def setUnstableClientRelationAggregationUndefined: Self = StObject.set(x, "unstableClientRelationAggregation", js.undefined)
+    inline def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
   }
 }

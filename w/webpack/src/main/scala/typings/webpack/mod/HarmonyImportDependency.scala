@@ -5,9 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HarmonyImportDependency
-  extends StObject
-     with ModuleDependency {
+trait HarmonyImportDependency extends ModuleDependency {
   
   def getImportStatement(update: Boolean, __1: DependencyTemplateContext): js.Tuple2[String, String] = js.native
   

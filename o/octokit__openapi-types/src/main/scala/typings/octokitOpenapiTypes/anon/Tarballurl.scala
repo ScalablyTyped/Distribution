@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Tarballurl extends StObject {
   
-  var commit: Sha
+  var commit: ShaUrl
   
   /** @example v0.1 */
   var name: String
@@ -27,14 +27,14 @@ trait Tarballurl extends StObject {
 }
 object Tarballurl {
   
-  inline def apply(commit: Sha, name: String, node_id: String, tarball_url: String, zipball_url: String): Tarballurl = {
+  inline def apply(commit: ShaUrl, name: String, node_id: String, tarball_url: String, zipball_url: String): Tarballurl = {
     val __obj = js.Dynamic.literal(commit = commit.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], tarball_url = tarball_url.asInstanceOf[js.Any], zipball_url = zipball_url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tarballurl]
   }
   
   extension [Self <: Tarballurl](x: Self) {
     
-    inline def setCommit(value: Sha): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+    inline def setCommit(value: ShaUrl): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

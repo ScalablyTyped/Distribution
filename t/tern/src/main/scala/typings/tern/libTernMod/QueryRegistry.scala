@@ -1,5 +1,6 @@
 package typings.tern.libTernMod
 
+import typings.tern.anon.QueryDefinitionQuery
 import typings.tern.anon.QueryDocumentationQuery
 import typings.tern.anon.QueryFilesQuery
 import typings.tern.anon.QueryPropertiesQuery
@@ -12,9 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait QueryRegistry extends StObject {
   
-  var completions: typings.tern.anon.Query
+  var completions: Result
   
-  var definition: typings.tern.anon.QueryResult
+  var definition: QueryDefinitionQuery
   
   var documentation: QueryDocumentationQuery
   
@@ -26,19 +27,19 @@ trait QueryRegistry extends StObject {
   
   var rename: QueryRenameQuery
   
-  var `type`: Result
+  var `type`: typings.tern.anon.QueryResult
 }
 object QueryRegistry {
   
   inline def apply(
-    completions: typings.tern.anon.Query,
-    definition: typings.tern.anon.QueryResult,
+    completions: Result,
+    definition: QueryDefinitionQuery,
     documentation: QueryDocumentationQuery,
     files: QueryFilesQuery,
     properties: QueryPropertiesQuery,
     refs: QueryRefsQuery,
     rename: QueryRenameQuery,
-    `type`: Result
+    `type`: typings.tern.anon.QueryResult
   ): QueryRegistry = {
     val __obj = js.Dynamic.literal(completions = completions.asInstanceOf[js.Any], definition = definition.asInstanceOf[js.Any], documentation = documentation.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], refs = refs.asInstanceOf[js.Any], rename = rename.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -47,9 +48,9 @@ object QueryRegistry {
   
   extension [Self <: QueryRegistry](x: Self) {
     
-    inline def setCompletions(value: typings.tern.anon.Query): Self = StObject.set(x, "completions", value.asInstanceOf[js.Any])
+    inline def setCompletions(value: Result): Self = StObject.set(x, "completions", value.asInstanceOf[js.Any])
     
-    inline def setDefinition(value: typings.tern.anon.QueryResult): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
+    inline def setDefinition(value: QueryDefinitionQuery): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
     inline def setDocumentation(value: QueryDocumentationQuery): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
@@ -61,6 +62,6 @@ object QueryRegistry {
     
     inline def setRename(value: QueryRenameQuery): Self = StObject.set(x, "rename", value.asInstanceOf[js.Any])
     
-    inline def setType(value: Result): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.tern.anon.QueryResult): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

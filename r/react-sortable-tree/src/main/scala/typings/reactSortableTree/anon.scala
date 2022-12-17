@@ -257,14 +257,12 @@ object anon {
     
     var getNodeKey: GetNodeKeyFunction[T]
     
-    var ignoreCollapsed: js.UndefOr[Boolean] = js.undefined
-    
-    var newNode: js.Function | Any
+    var index: Double
   }
   object GetNodeKey {
     
-    inline def apply[T](getNodeKey: /* data */ TreeIndex & TreeNode[T] => String | Double, newNode: js.Function | Any): GetNodeKey[T] = {
-      val __obj = js.Dynamic.literal(getNodeKey = js.Any.fromFunction1(getNodeKey), newNode = newNode.asInstanceOf[js.Any])
+    inline def apply[T](getNodeKey: /* data */ TreeIndex & TreeNode[T] => String | Double, index: Double): GetNodeKey[T] = {
+      val __obj = js.Dynamic.literal(getNodeKey = js.Any.fromFunction1(getNodeKey), index = index.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetNodeKey[T]]
     }
     
@@ -272,11 +270,7 @@ object anon {
       
       inline def setGetNodeKey(value: /* data */ TreeIndex & TreeNode[T] => String | Double): Self = StObject.set(x, "getNodeKey", js.Any.fromFunction1(value))
       
-      inline def setIgnoreCollapsed(value: Boolean): Self = StObject.set(x, "ignoreCollapsed", value.asInstanceOf[js.Any])
-      
-      inline def setIgnoreCollapsedUndefined: Self = StObject.set(x, "ignoreCollapsed", js.undefined)
-      
-      inline def setNewNode(value: js.Function | Any): Self = StObject.set(x, "newNode", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     }
   }
   
@@ -322,27 +316,6 @@ object anon {
     }
   }
   
-  trait Index[T] extends StObject {
-    
-    var getNodeKey: GetNodeKeyFunction[T]
-    
-    var index: Double
-  }
-  object Index {
-    
-    inline def apply[T](getNodeKey: /* data */ TreeIndex & TreeNode[T] => String | Double, index: Double): Index[T] = {
-      val __obj = js.Dynamic.literal(getNodeKey = js.Any.fromFunction1(getNodeKey), index = index.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Index[T]]
-    }
-    
-    extension [Self <: Index[?], T](x: Self & Index[T]) {
-      
-      inline def setGetNodeKey(value: /* data */ TreeIndex & TreeNode[T] => String | Double): Self = StObject.set(x, "getNodeKey", js.Any.fromFunction1(value))
-      
-      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
-    }
-  }
-  
   trait LowerSiblingsCounts extends StObject {
     
     var lowerSiblingsCounts: js.Array[Double]
@@ -378,6 +351,33 @@ object anon {
       inline def setMatches(value: js.Array[NodeData[T]]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
       
       inline def setMatchesVarargs(value: NodeData[T]*): Self = StObject.set(x, "matches", js.Array(value*))
+    }
+  }
+  
+  trait NewNode[T] extends StObject {
+    
+    var getNodeKey: GetNodeKeyFunction[T]
+    
+    var ignoreCollapsed: js.UndefOr[Boolean] = js.undefined
+    
+    var newNode: js.Function | Any
+  }
+  object NewNode {
+    
+    inline def apply[T](getNodeKey: /* data */ TreeIndex & TreeNode[T] => String | Double, newNode: js.Function | Any): NewNode[T] = {
+      val __obj = js.Dynamic.literal(getNodeKey = js.Any.fromFunction1(getNodeKey), newNode = newNode.asInstanceOf[js.Any])
+      __obj.asInstanceOf[NewNode[T]]
+    }
+    
+    extension [Self <: NewNode[?], T](x: Self & NewNode[T]) {
+      
+      inline def setGetNodeKey(value: /* data */ TreeIndex & TreeNode[T] => String | Double): Self = StObject.set(x, "getNodeKey", js.Any.fromFunction1(value))
+      
+      inline def setIgnoreCollapsed(value: Boolean): Self = StObject.set(x, "ignoreCollapsed", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreCollapsedUndefined: Self = StObject.set(x, "ignoreCollapsed", js.undefined)
+      
+      inline def setNewNode(value: js.Function | Any): Self = StObject.set(x, "newNode", value.asInstanceOf[js.Any])
     }
   }
   

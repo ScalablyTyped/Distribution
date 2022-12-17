@@ -1,9 +1,9 @@
 package typings.keystonejsFileAdapters
 
 import typings.keystonejsFileAdapters.anon.Filename
+import typings.keystonejsFileAdapters.anon.FilenameId
 import typings.keystonejsFileAdapters.anon.FilenameString
 import typings.keystonejsFileAdapters.anon.Id
-import typings.keystonejsFileAdapters.anon.OriginalFilename
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ object mod {
     
     def publicUrl(params: FilenameString): String = js.native
     
-    def save(params: Filename): js.Promise[Id] = js.native
+    def save(params: Filename): js.Promise[FilenameId] = js.native
   }
   
   @JSImport("@keystonejs/file-adapters", "LocalFileAdapter")
@@ -27,7 +27,7 @@ object mod {
     
     def publicUrl(params: FilenameString): String = js.native
     
-    def save(params: Filename): js.Promise[Id] = js.native
+    def save(params: Filename): js.Promise[FilenameId] = js.native
   }
   
   trait CloudinaryFileAdapterConfig extends StObject {
@@ -63,7 +63,7 @@ object mod {
   
   trait LocalFileAdapterConfig extends StObject {
     
-    var getFilename: js.UndefOr[js.Function1[/* options */ OriginalFilename, String]] = js.undefined
+    var getFilename: js.UndefOr[js.Function1[/* options */ Id, String]] = js.undefined
     
     var path: js.UndefOr[String] = js.undefined
     
@@ -78,7 +78,7 @@ object mod {
     
     extension [Self <: LocalFileAdapterConfig](x: Self) {
       
-      inline def setGetFilename(value: /* options */ OriginalFilename => String): Self = StObject.set(x, "getFilename", js.Any.fromFunction1(value))
+      inline def setGetFilename(value: /* options */ Id => String): Self = StObject.set(x, "getFilename", js.Any.fromFunction1(value))
       
       inline def setGetFilenameUndefined: Self = StObject.set(x, "getFilename", js.undefined)
       

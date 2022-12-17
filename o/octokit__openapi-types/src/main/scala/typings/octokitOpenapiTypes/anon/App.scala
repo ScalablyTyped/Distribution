@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait App extends StObject {
   
-  var app: Name
+  var app: ClientidName
   
   /** Format: date-time */
   var created_at: String
@@ -44,14 +44,14 @@ trait App extends StObject {
 }
 object App {
   
-  inline def apply(app: Name, created_at: String, id: Double, token: String, updated_at: String, url: String): App = {
+  inline def apply(app: ClientidName, created_at: String, id: Double, token: String, updated_at: String, url: String): App = {
     val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], expires_at = null, fingerprint = null, hashed_token = null, note = null, note_url = null, scopes = null, token_last_eight = null)
     __obj.asInstanceOf[App]
   }
   
   extension [Self <: App](x: Self) {
     
-    inline def setApp(value: Name): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+    inline def setApp(value: ClientidName): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
     inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     

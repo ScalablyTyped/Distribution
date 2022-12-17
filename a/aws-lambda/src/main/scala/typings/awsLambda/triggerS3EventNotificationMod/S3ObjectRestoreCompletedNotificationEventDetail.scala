@@ -1,7 +1,7 @@
 package typings.awsLambda.triggerS3EventNotificationMod
 
-import typings.awsLambda.anon.EtagKey
 import typings.awsLambda.anon.NameString
+import typings.awsLambda.anon.Size
 import typings.awsLambda.awsLambdaStrings.DEEP_ARCHIVE
 import typings.awsLambda.awsLambdaStrings.GLACIER
 import typings.awsLambda.awsLambdaStrings.GLACIER_IR
@@ -21,7 +21,7 @@ trait S3ObjectRestoreCompletedNotificationEventDetail extends StObject {
   
   var bucket: NameString
   
-  var `object`: EtagKey
+  var `object`: Size
   
   var `request-id`: String
   
@@ -37,7 +37,7 @@ object S3ObjectRestoreCompletedNotificationEventDetail {
   
   inline def apply(
     bucket: NameString,
-    `object`: EtagKey,
+    `object`: Size,
     `request-id`: String,
     `restore-expiry-time`: String,
     `source-storage-class`: STANDARD | REDUCED_REDUNDANCY | STANDARD_IA | ONEZONE_IA | INTELLIGENT_TIERING | GLACIER | DEEP_ARCHIVE | OUTPOSTS | GLACIER_IR
@@ -54,7 +54,7 @@ object S3ObjectRestoreCompletedNotificationEventDetail {
     
     inline def setBucket(value: NameString): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
-    inline def setObject(value: EtagKey): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: Size): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     inline def `setRequest-id`(value: String): Self = StObject.set(x, "request-id", value.asInstanceOf[js.Any])
     

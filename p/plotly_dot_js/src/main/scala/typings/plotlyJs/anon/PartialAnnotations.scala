@@ -1,7 +1,5 @@
 package typings.plotlyJs.anon
 
-import typings.plotlyJs.mod.Font
-import typings.plotlyJs.mod.HoverLabel
 import typings.plotlyJs.mod.XAxisName
 import typings.plotlyJs.mod.YAxisName
 import typings.plotlyJs.plotlyJsBooleans.`false`
@@ -18,7 +16,6 @@ import typings.plotlyJs.plotlyJsStrings.pixel
 import typings.plotlyJs.plotlyJsStrings.right
 import typings.plotlyJs.plotlyJsStrings.start
 import typings.plotlyJs.plotlyJsStrings.top
-import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,11 +55,11 @@ trait PartialAnnotations extends StObject {
   
   var clicktoshow: js.UndefOr[`false` | onoff | onout] = js.undefined
   
-  var font: js.UndefOr[Partial[Font]] = js.undefined
+  var font: js.UndefOr[PartialFont] = js.undefined
   
   var height: js.UndefOr[Double] = js.undefined
   
-  var hoverlabel: js.UndefOr[Partial[HoverLabel]] = js.undefined
+  var hoverlabel: js.UndefOr[PartialHoverLabelAlign] = js.undefined
   
   var hovertext: js.UndefOr[String] = js.undefined
   
@@ -181,7 +178,7 @@ object PartialAnnotations {
     
     inline def setClicktoshowUndefined: Self = StObject.set(x, "clicktoshow", js.undefined)
     
-    inline def setFont(value: Partial[Font]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: PartialFont): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
@@ -189,7 +186,7 @@ object PartialAnnotations {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setHoverlabel(value: Partial[HoverLabel]): Self = StObject.set(x, "hoverlabel", value.asInstanceOf[js.Any])
+    inline def setHoverlabel(value: PartialHoverLabelAlign): Self = StObject.set(x, "hoverlabel", value.asInstanceOf[js.Any])
     
     inline def setHoverlabelUndefined: Self = StObject.set(x, "hoverlabel", js.undefined)
     

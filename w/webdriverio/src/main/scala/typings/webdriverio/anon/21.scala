@@ -1,7 +1,7 @@
 package typings.webdriverio.anon
 
 import typings.std.NonNullable
-import typings.wdioTypes.anon.OmitTestrunnercapabilitieAfter
+import typings.wdioTypes.anon.OmitTestrunnercapabilitie
 import typings.wdioTypes.buildCapabilitiesMod.RemoteCapability
 import typings.webdriverio.webdriverioStrings.`object`
 import typings.webdriverio.webdriverioStrings.boolean
@@ -16,7 +16,7 @@ trait `21` extends StObject {
   
   var default: js.UndefOr[
     (js.Function4[
-      /* config */ OmitTestrunnercapabilitieAfter, 
+      /* config */ OmitTestrunnercapabilitie, 
       /* capabilities */ RemoteCapability, 
       /* specs */ js.Array[String], 
       /* cid */ String, 
@@ -25,7 +25,7 @@ trait `21` extends StObject {
       NonNullable[
         js.UndefOr[
           js.Function4[
-            /* config */ OmitTestrunnercapabilitieAfter, 
+            /* config */ OmitTestrunnercapabilitie, 
             /* capabilities */ RemoteCapability, 
             /* specs */ js.Array[String], 
             /* cid */ String, 
@@ -46,7 +46,7 @@ trait `21` extends StObject {
     js.Function1[
       /* option */ js.UndefOr[
         (js.Function4[
-          /* config */ OmitTestrunnercapabilitieAfter, 
+          /* config */ OmitTestrunnercapabilitie, 
           /* capabilities */ RemoteCapability, 
           /* specs */ js.Array[String], 
           /* cid */ String, 
@@ -55,7 +55,7 @@ trait `21` extends StObject {
           NonNullable[
             js.UndefOr[
               js.Function4[
-                /* config */ OmitTestrunnercapabilitieAfter, 
+                /* config */ OmitTestrunnercapabilitie, 
                 /* capabilities */ RemoteCapability, 
                 /* specs */ js.Array[String], 
                 /* cid */ String, 
@@ -81,7 +81,7 @@ object `21` {
     
     inline def setDefault(
       value: (js.Function4[
-          /* config */ OmitTestrunnercapabilitieAfter, 
+          /* config */ OmitTestrunnercapabilitie, 
           /* capabilities */ RemoteCapability, 
           /* specs */ js.Array[String], 
           /* cid */ String, 
@@ -90,7 +90,7 @@ object `21` {
           NonNullable[
             js.UndefOr[
               js.Function4[
-                /* config */ OmitTestrunnercapabilitieAfter, 
+                /* config */ OmitTestrunnercapabilitie, 
                 /* capabilities */ RemoteCapability, 
                 /* specs */ js.Array[String], 
                 /* cid */ String, 
@@ -102,7 +102,7 @@ object `21` {
     ): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     inline def setDefaultFunction4(
-      value: (/* config */ OmitTestrunnercapabilitieAfter, /* capabilities */ RemoteCapability, /* specs */ js.Array[String], /* cid */ String) => Unit
+      value: (/* config */ OmitTestrunnercapabilitie, /* capabilities */ RemoteCapability, /* specs */ js.Array[String], /* cid */ String) => Unit
     ): Self = StObject.set(x, "default", js.Any.fromFunction4(value))
     
     inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
@@ -111,7 +111,7 @@ object `21` {
       value: (NonNullable[
           js.UndefOr[
             js.Function4[
-              /* config */ OmitTestrunnercapabilitieAfter, 
+              /* config */ OmitTestrunnercapabilitie, 
               /* capabilities */ RemoteCapability, 
               /* specs */ js.Array[String], 
               /* cid */ String, 
@@ -134,7 +134,7 @@ object `21` {
     inline def setValidate(
       value: /* option */ js.UndefOr[
           (js.Function4[
-            /* config */ OmitTestrunnercapabilitieAfter, 
+            /* config */ OmitTestrunnercapabilitie, 
             /* capabilities */ RemoteCapability, 
             /* specs */ js.Array[String], 
             /* cid */ String, 
@@ -143,7 +143,7 @@ object `21` {
             NonNullable[
               js.UndefOr[
                 js.Function4[
-                  /* config */ OmitTestrunnercapabilitieAfter, 
+                  /* config */ OmitTestrunnercapabilitie, 
                   /* capabilities */ RemoteCapability, 
                   /* specs */ js.Array[String], 
                   /* cid */ String, 

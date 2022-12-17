@@ -18,7 +18,7 @@ trait Knob extends StObject {
   
   var extend: js.UndefOr[ExtendType[Record[String, Any]]] = js.undefined
   
-  var knob: js.UndefOr[`10`] = js.undefined
+  var knob: js.UndefOr[`8`] = js.undefined
   
   var radius: js.UndefOr[String] = js.undefined
   
@@ -47,7 +47,7 @@ object Knob {
     
     inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    inline def setKnob(value: `10`): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
+    inline def setKnob(value: `8`): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     
     inline def setKnobUndefined: Self = StObject.set(x, "knob", js.undefined)
     

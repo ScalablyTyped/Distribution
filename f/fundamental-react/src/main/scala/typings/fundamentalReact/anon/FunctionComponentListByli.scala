@@ -1,6 +1,5 @@
 package typings.fundamentalReact.anon
 
-import typings.fundamentalReact.fundamentalReactStrings.ListDotByline
 import typings.fundamentalReact.libListListMod.ListBylineProps
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
@@ -19,7 +18,7 @@ trait FunctionComponentListByli extends StObject {
   
   var defaultProps: js.UndefOr[PartialListBylineProps] = js.native
   
-  var displayName: js.UndefOr[String] & ListDotByline = js.native
+  var displayName: js.UndefOr[String] = js.native
   
   var propTypes: js.UndefOr[WeakValidationMapListByli] = js.native
 }

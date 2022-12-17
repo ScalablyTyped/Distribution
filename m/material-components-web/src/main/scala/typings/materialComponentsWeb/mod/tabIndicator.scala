@@ -8,13 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object tabIndicator {
   
-  @JSImport("material-components-web", "tabIndicator.default")
-  @js.native
-  open class default ()
-    extends typings.materialTabIndicator.mod.default {
-    def this(adapter: PartialMDCTabIndicatorAda) = this()
-  }
-  
   @JSImport("material-components-web", "tabIndicator.MDCFadingTabIndicatorFoundation")
   @js.native
   open class MDCFadingTabIndicatorFoundation ()

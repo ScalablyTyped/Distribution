@@ -51,13 +51,13 @@ trait PickImpluseFailSafePartia
   
   var silent: js.UndefOr[Boolean] = js.undefined
   
-  var useFailSafe: Boolean & js.UndefOr[Boolean]
+  var useFailSafe: Boolean
   
   var verbose: js.UndefOr[Boolean] = js.undefined
 }
 object PickImpluseFailSafePartia {
   
-  inline def apply(useFailSafe: Boolean & js.UndefOr[Boolean]): PickImpluseFailSafePartia = {
+  inline def apply(useFailSafe: Boolean): PickImpluseFailSafePartia = {
     val __obj = js.Dynamic.literal(useFailSafe = useFailSafe.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpluseFailSafePartia]
   }
@@ -136,7 +136,7 @@ object PickImpluseFailSafePartia {
     
     inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     
-    inline def setUseFailSafe(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "useFailSafe", value.asInstanceOf[js.Any])
+    inline def setUseFailSafe(value: Boolean): Self = StObject.set(x, "useFailSafe", value.asInstanceOf[js.Any])
     
     inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     

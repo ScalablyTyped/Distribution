@@ -12,7 +12,7 @@ trait PickImplremoteValuesParti
   
   var name: js.UndefOr[String] = js.undefined
   
-  var remoteValues: String & js.UndefOr[String]
+  var remoteValues: String
   
   var value: js.UndefOr[String] = js.undefined
   
@@ -20,7 +20,7 @@ trait PickImplremoteValuesParti
 }
 object PickImplremoteValuesParti {
   
-  inline def apply(remoteValues: String & js.UndefOr[String]): PickImplremoteValuesParti = {
+  inline def apply(remoteValues: String): PickImplremoteValuesParti = {
     val __obj = js.Dynamic.literal(remoteValues = remoteValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplremoteValuesParti]
   }
@@ -31,7 +31,7 @@ object PickImplremoteValuesParti {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setRemoteValues(value: String & js.UndefOr[String]): Self = StObject.set(x, "remoteValues", value.asInstanceOf[js.Any])
+    inline def setRemoteValues(value: String): Self = StObject.set(x, "remoteValues", value.asInstanceOf[js.Any])
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

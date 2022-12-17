@@ -183,7 +183,7 @@ object Events extends Shortcut {
     
     var followers: js.UndefOr[js.Array[Resource]] = js.undefined
     
-    var gid: String & js.UndefOr[String]
+    var gid: String
     
     var hearted: js.UndefOr[Boolean] = js.undefined
     
@@ -201,7 +201,7 @@ object Events extends Shortcut {
     
     var modified_at: js.UndefOr[String] = js.undefined
     
-    var name: String & js.UndefOr[String]
+    var name: String
     
     var notes: js.UndefOr[String] = js.undefined
     
@@ -217,9 +217,9 @@ object Events extends Shortcut {
     
     var projects: js.UndefOr[js.Array[Resource]] = js.undefined
     
-    var resource_subtype: String & js.UndefOr[String]
+    var resource_subtype: String
     
-    var resource_type: String & js.UndefOr[String]
+    var resource_type: String
     
     var start_at: js.UndefOr[String | Null] = js.undefined
     
@@ -231,12 +231,7 @@ object Events extends Shortcut {
   }
   object EventProject {
     
-    inline def apply(
-      gid: String & js.UndefOr[String],
-      name: String & js.UndefOr[String],
-      resource_subtype: String & js.UndefOr[String],
-      resource_type: String & js.UndefOr[String]
-    ): EventProject = {
+    inline def apply(gid: String, name: String, resource_subtype: String, resource_type: String): EventProject = {
       val __obj = js.Dynamic.literal(gid = gid.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], resource_subtype = resource_subtype.asInstanceOf[js.Any], resource_type = resource_type.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventProject]
     }
@@ -315,7 +310,7 @@ object Events extends Shortcut {
       
       inline def setFollowersVarargs(value: Resource*): Self = StObject.set(x, "followers", js.Array(value*))
       
-      inline def setGid(value: String & js.UndefOr[String]): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
+      inline def setGid(value: String): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
       
       inline def setHearted(value: Boolean): Self = StObject.set(x, "hearted", value.asInstanceOf[js.Any])
       
@@ -355,7 +350,7 @@ object Events extends Shortcut {
       
       inline def setModified_atUndefined: Self = StObject.set(x, "modified_at", js.undefined)
       
-      inline def setName(value: String & js.UndefOr[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
       
@@ -389,9 +384,9 @@ object Events extends Shortcut {
       
       inline def setProjectsVarargs(value: Resource*): Self = StObject.set(x, "projects", js.Array(value*))
       
-      inline def setResource_subtype(value: String & js.UndefOr[String]): Self = StObject.set(x, "resource_subtype", value.asInstanceOf[js.Any])
+      inline def setResource_subtype(value: String): Self = StObject.set(x, "resource_subtype", value.asInstanceOf[js.Any])
       
-      inline def setResource_type(value: String & js.UndefOr[String]): Self = StObject.set(x, "resource_type", value.asInstanceOf[js.Any])
+      inline def setResource_type(value: String): Self = StObject.set(x, "resource_type", value.asInstanceOf[js.Any])
       
       inline def setStart_at(value: String): Self = StObject.set(x, "start_at", value.asInstanceOf[js.Any])
       
@@ -442,25 +437,19 @@ object Events extends Shortcut {
     
     var created_at: js.UndefOr[String] = js.undefined
     
-    var gid: String & js.UndefOr[String]
+    var gid: String
     
-    var name: String & js.UndefOr[String]
+    var name: String
     
-    var project: Gid & js.UndefOr[typings.asana.mod.resources.Projects.Type]
+    var project: Gid
     
-    var resource_subtype: String & js.UndefOr[String]
+    var resource_subtype: String
     
-    var resource_type: String & js.UndefOr[String]
+    var resource_type: String
   }
   object EventSection {
     
-    inline def apply(
-      gid: String & js.UndefOr[String],
-      name: String & js.UndefOr[String],
-      project: Gid & js.UndefOr[typings.asana.mod.resources.Projects.Type],
-      resource_subtype: String & js.UndefOr[String],
-      resource_type: String & js.UndefOr[String]
-    ): EventSection = {
+    inline def apply(gid: String, name: String, project: Gid, resource_subtype: String, resource_type: String): EventSection = {
       val __obj = js.Dynamic.literal(gid = gid.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], resource_subtype = resource_subtype.asInstanceOf[js.Any], resource_type = resource_type.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventSection]
     }
@@ -471,15 +460,15 @@ object Events extends Shortcut {
       
       inline def setCreated_atUndefined: Self = StObject.set(x, "created_at", js.undefined)
       
-      inline def setGid(value: String & js.UndefOr[String]): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
+      inline def setGid(value: String): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
       
-      inline def setName(value: String & js.UndefOr[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setProject(value: Gid & js.UndefOr[typings.asana.mod.resources.Projects.Type]): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: Gid): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
-      inline def setResource_subtype(value: String & js.UndefOr[String]): Self = StObject.set(x, "resource_subtype", value.asInstanceOf[js.Any])
+      inline def setResource_subtype(value: String): Self = StObject.set(x, "resource_subtype", value.asInstanceOf[js.Any])
       
-      inline def setResource_type(value: String & js.UndefOr[String]): Self = StObject.set(x, "resource_type", value.asInstanceOf[js.Any])
+      inline def setResource_type(value: String): Self = StObject.set(x, "resource_type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -521,7 +510,7 @@ object Events extends Shortcut {
     
     var follower: js.UndefOr[Resource] = js.undefined
     
-    var gid: String & js.UndefOr[String]
+    var gid: String
     
     var hearted: js.UndefOr[Boolean] = js.undefined
     
@@ -583,9 +572,9 @@ object Events extends Shortcut {
     
     var project: js.UndefOr[Resource] = js.undefined
     
-    var resource_subtype: String & js.UndefOr[String]
+    var resource_subtype: String
     
-    var resource_type: String & js.UndefOr[String]
+    var resource_type: String
     
     var source: js.UndefOr[String] = js.undefined
     
@@ -605,12 +594,7 @@ object Events extends Shortcut {
   }
   object EventStory {
     
-    inline def apply(
-      gid: String & js.UndefOr[String],
-      name: String,
-      resource_subtype: String & js.UndefOr[String],
-      resource_type: String & js.UndefOr[String]
-    ): EventStory = {
+    inline def apply(gid: String, name: String, resource_subtype: String, resource_type: String): EventStory = {
       val __obj = js.Dynamic.literal(gid = gid.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], resource_subtype = resource_subtype.asInstanceOf[js.Any], resource_type = resource_type.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventStory]
     }
@@ -649,7 +633,7 @@ object Events extends Shortcut {
       
       inline def setFollowerUndefined: Self = StObject.set(x, "follower", js.undefined)
       
-      inline def setGid(value: String & js.UndefOr[String]): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
+      inline def setGid(value: String): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
       
       inline def setHearted(value: Boolean): Self = StObject.set(x, "hearted", value.asInstanceOf[js.Any])
       
@@ -775,9 +759,9 @@ object Events extends Shortcut {
       
       inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
       
-      inline def setResource_subtype(value: String & js.UndefOr[String]): Self = StObject.set(x, "resource_subtype", value.asInstanceOf[js.Any])
+      inline def setResource_subtype(value: String): Self = StObject.set(x, "resource_subtype", value.asInstanceOf[js.Any])
       
-      inline def setResource_type(value: String & js.UndefOr[String]): Self = StObject.set(x, "resource_type", value.asInstanceOf[js.Any])
+      inline def setResource_type(value: String): Self = StObject.set(x, "resource_type", value.asInstanceOf[js.Any])
       
       inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
@@ -846,7 +830,7 @@ object Events extends Shortcut {
     
     var followers: js.UndefOr[js.Array[Resource]] = js.undefined
     
-    var gid: String & js.UndefOr[String]
+    var gid: String
     
     var hearted: js.UndefOr[Boolean] = js.undefined
     
@@ -864,7 +848,7 @@ object Events extends Shortcut {
     
     var modified_at: js.UndefOr[String] = js.undefined
     
-    var name: String & js.UndefOr[String]
+    var name: String
     
     var notes: js.UndefOr[String] = js.undefined
     
@@ -880,9 +864,9 @@ object Events extends Shortcut {
     
     var projects: js.UndefOr[js.Array[Resource]] = js.undefined
     
-    var resource_subtype: String & js.UndefOr[String]
+    var resource_subtype: String
     
-    var resource_type: String & js.UndefOr[String]
+    var resource_type: String
     
     var start_at: js.UndefOr[String | Null] = js.undefined
     
@@ -894,12 +878,7 @@ object Events extends Shortcut {
   }
   object EventTask {
     
-    inline def apply(
-      gid: String & js.UndefOr[String],
-      name: String & js.UndefOr[String],
-      resource_subtype: String & js.UndefOr[String],
-      resource_type: String & js.UndefOr[String]
-    ): EventTask = {
+    inline def apply(gid: String, name: String, resource_subtype: String, resource_type: String): EventTask = {
       val __obj = js.Dynamic.literal(gid = gid.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], resource_subtype = resource_subtype.asInstanceOf[js.Any], resource_type = resource_type.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventTask]
     }
@@ -978,7 +957,7 @@ object Events extends Shortcut {
       
       inline def setFollowersVarargs(value: Resource*): Self = StObject.set(x, "followers", js.Array(value*))
       
-      inline def setGid(value: String & js.UndefOr[String]): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
+      inline def setGid(value: String): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
       
       inline def setHearted(value: Boolean): Self = StObject.set(x, "hearted", value.asInstanceOf[js.Any])
       
@@ -1018,7 +997,7 @@ object Events extends Shortcut {
       
       inline def setModified_atUndefined: Self = StObject.set(x, "modified_at", js.undefined)
       
-      inline def setName(value: String & js.UndefOr[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
       
@@ -1052,9 +1031,9 @@ object Events extends Shortcut {
       
       inline def setProjectsVarargs(value: Resource*): Self = StObject.set(x, "projects", js.Array(value*))
       
-      inline def setResource_subtype(value: String & js.UndefOr[String]): Self = StObject.set(x, "resource_subtype", value.asInstanceOf[js.Any])
+      inline def setResource_subtype(value: String): Self = StObject.set(x, "resource_subtype", value.asInstanceOf[js.Any])
       
-      inline def setResource_type(value: String & js.UndefOr[String]): Self = StObject.set(x, "resource_type", value.asInstanceOf[js.Any])
+      inline def setResource_type(value: String): Self = StObject.set(x, "resource_type", value.asInstanceOf[js.Any])
       
       inline def setStart_at(value: String): Self = StObject.set(x, "start_at", value.asInstanceOf[js.Any])
       

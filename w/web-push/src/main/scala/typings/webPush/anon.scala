@@ -121,7 +121,7 @@ object anon {
   /* Inlined web-push.web-push.RequestDetails & {  body :node.buffer.<global>.Buffer} */
   trait RequestDetailsbodyBuffer extends StObject {
     
-    var body: (Buffer | Null) & Buffer
+    var body: Buffer | Null
     
     var endpoint: String
     
@@ -133,14 +133,16 @@ object anon {
   }
   object RequestDetailsbodyBuffer {
     
-    inline def apply(body: (Buffer | Null) & Buffer, endpoint: String, headers: Headers): RequestDetailsbodyBuffer = {
-      val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], endpoint = endpoint.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], method = "POST")
+    inline def apply(endpoint: String, headers: Headers): RequestDetailsbodyBuffer = {
+      val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], method = "POST", body = null)
       __obj.asInstanceOf[RequestDetailsbodyBuffer]
     }
     
     extension [Self <: RequestDetailsbodyBuffer](x: Self) {
       
-      inline def setBody(value: (Buffer | Null) & Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      
+      inline def setBodyNull: Self = StObject.set(x, "body", null)
       
       inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
@@ -157,7 +159,7 @@ object anon {
   /* Inlined web-push.web-push.RequestDetails & {  body :null} */
   trait RequestDetailsbodynull extends StObject {
     
-    var body: (Buffer | Null) & Null
+    var body: Buffer | Null
     
     var endpoint: String
     
@@ -169,14 +171,16 @@ object anon {
   }
   object RequestDetailsbodynull {
     
-    inline def apply(body: (Buffer | Null) & Null, endpoint: String, headers: Headers): RequestDetailsbodynull = {
-      val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], endpoint = endpoint.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], method = "POST")
+    inline def apply(endpoint: String, headers: Headers): RequestDetailsbodynull = {
+      val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], method = "POST", body = null)
       __obj.asInstanceOf[RequestDetailsbodynull]
     }
     
     extension [Self <: RequestDetailsbodynull](x: Self) {
       
-      inline def setBody(value: (Buffer | Null) & Null): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      
+      inline def setBodyNull: Self = StObject.set(x, "body", null)
       
       inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       

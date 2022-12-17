@@ -1,30 +1,27 @@
 package typings.reactNavigationCore.anon
 
-import typings.reactNavigationRouters.libTypescriptSrcTypesMod.NavigationState
 import typings.reactNavigationRouters.libTypescriptSrcTypesMod.ParamListBase
-import typings.reactNavigationRouters.libTypescriptSrcTypesMod.PartialState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `2` extends StObject {
+trait `2`[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] extends StObject {
   
-  /**
-    * The updated state object after the state change.
-    */
-  var state: js.UndefOr[NavigationState[ParamListBase] | PartialState[NavigationState[ParamListBase]]] = js.undefined
+  var params: /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ js.Any
 }
 object `2` {
   
-  inline def apply(): `2` = {
-    val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`2`]
+  inline def apply[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */](
+    params: /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ js.Any
+  ): `2`[ParamList, RouteName] = {
+    val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any])
+    __obj.asInstanceOf[`2`[ParamList, RouteName]]
   }
   
-  extension [Self <: `2`](x: Self) {
+  extension [Self <: `2`[?, ?], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */](x: Self & (`2`[ParamList, RouteName])) {
     
-    inline def setState(value: NavigationState[ParamListBase] | PartialState[NavigationState[ParamListBase]]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
-    
-    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setParams(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ js.Any
+    ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
   }
 }

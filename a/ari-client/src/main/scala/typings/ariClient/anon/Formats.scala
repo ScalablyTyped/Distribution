@@ -10,8 +10,6 @@ trait Formats extends StObject {
   
   var appArgs: js.UndefOr[String] = js.undefined
   
-  var channelId: js.UndefOr[String] = js.undefined
-  
   var endpoint: String
   
   var formats: js.UndefOr[String] = js.undefined
@@ -34,10 +32,6 @@ object Formats {
     inline def setAppArgs(value: String): Self = StObject.set(x, "appArgs", value.asInstanceOf[js.Any])
     
     inline def setAppArgsUndefined: Self = StObject.set(x, "appArgs", js.undefined)
-    
-    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
-    
-    inline def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
     
     inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     

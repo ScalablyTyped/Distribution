@@ -4,11 +4,11 @@ import typings.orbitUiReactComponents.anon.Add
 import typings.orbitUiReactComponents.anon.Dispose
 import typings.orbitUiReactComponents.anon.From
 import typings.orbitUiReactComponents.anon.IsDisabled
+import typings.orbitUiReactComponents.anon.KeyProp
 import typings.orbitUiReactComponents.anon.OnBlurOnFocus
-import typings.orbitUiReactComponents.anon.OnFocus
-import typings.orbitUiReactComponents.anon.OnKeyDown
-import typings.orbitUiReactComponents.anon.`0`
+import typings.orbitUiReactComponents.anon.OnKeyDownKeyboardEventHandler
 import typings.orbitUiReactComponents.anon.`2`
+import typings.orbitUiReactComponents.anon.`3`
 import typings.orbitUiReactComponents.distSharedSrcAugmentElementMod.RecordWithSize
 import typings.orbitUiReactComponents.distSharedSrcCheckableContextMod.CheckableContextType
 import typings.orbitUiReactComponents.distSharedSrcCheckableContextMod.UseCheckablePropsReturn
@@ -255,7 +255,7 @@ object distSharedMod {
   
   inline def useCheckableContext(): js.Tuple2[CheckableContextType, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCheckableContext")().asInstanceOf[js.Tuple2[CheckableContextType, Boolean]]
   
-  inline def useCheckableProps(param0: `0`): js.Tuple2[UseCheckablePropsReturn, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCheckableProps")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[UseCheckablePropsReturn, Boolean]]
+  inline def useCheckableProps(param0: `3`): js.Tuple2[UseCheckablePropsReturn, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCheckableProps")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[UseCheckablePropsReturn, Boolean]]
   
   inline def useCommittedRef[T](value: T): RefObject[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCommittedRef")(value.asInstanceOf[js.Any]).asInstanceOf[RefObject[T]]
   
@@ -441,8 +441,8 @@ object distSharedMod {
     js.Function1[/* rootElement */ HTMLElement, Unit]
   ]]
   
-  inline def useFocusWithin(): OnFocus | OnBlurOnFocus = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusWithin")().asInstanceOf[OnFocus | OnBlurOnFocus]
-  inline def useFocusWithin(param0: UseFocusWithinOptions): OnFocus | OnBlurOnFocus = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusWithin")(param0.asInstanceOf[js.Any]).asInstanceOf[OnFocus | OnBlurOnFocus]
+  inline def useFocusWithin(): OnBlurOnFocus | `2` = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusWithin")().asInstanceOf[OnBlurOnFocus | `2`]
+  inline def useFocusWithin(param0: UseFocusWithinOptions): OnBlurOnFocus | `2` = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusWithin")(param0.asInstanceOf[js.Any]).asInstanceOf[OnBlurOnFocus | `2`]
   
   inline def useForceRender(): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("useForceRender")().asInstanceOf[js.Function0[Unit]]
   
@@ -462,18 +462,18 @@ object distSharedMod {
   inline def useKeyboardNavigation(
     focusManager: typings.orbitUiReactComponents.distSharedSrcUseFocusManagerMod.FocusManager,
     param1: KeyboardNavigationBindings
-  ): OnKeyDown = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardNavigation")(focusManager.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[OnKeyDown]
+  ): OnKeyDownKeyboardEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardNavigation")(focusManager.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[OnKeyDownKeyboardEventHandler]
   inline def useKeyboardNavigation(
     focusManager: typings.orbitUiReactComponents.distSharedSrcUseFocusManagerMod.FocusManager,
     param1: KeyboardNavigationBindings,
     param2: KeyboardNavigationOptions
-  ): OnKeyDown = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardNavigation")(focusManager.asInstanceOf[js.Any], param1.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[OnKeyDown]
+  ): OnKeyDownKeyboardEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardNavigation")(focusManager.asInstanceOf[js.Any], param1.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[OnKeyDownKeyboardEventHandler]
   
   inline def useKeyedRovingFocus(scope: typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope, currentKey: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyedRovingFocus")(scope.asInstanceOf[js.Any], currentKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useKeyedRovingFocus(
     scope: typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope,
     currentKey: String,
-    param2: IsDisabled
+    param2: KeyProp
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyedRovingFocus")(scope.asInstanceOf[js.Any], currentKey.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def useMediaQuery(query: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useMediaQuery")(query.asInstanceOf[js.Any]).asInstanceOf[Boolean]
@@ -501,7 +501,7 @@ object distSharedMod {
   inline def useResizeObserver(onResize: js.Function1[/* entry */ ResizeObserverEntry, Unit], param1: UseResizeObserverOptions): RefCallback[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("useResizeObserver")(onResize.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[RefCallback[HTMLElement]]
   
   inline def useRovingFocus(scope: typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useRovingFocus")(scope.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def useRovingFocus(scope: typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope, param1: `2`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRovingFocus")(scope.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useRovingFocus(scope: typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope, param1: IsDisabled): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRovingFocus")(scope.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def useSlots[T /* <: SlotOptions */](children: ReactNode, slots: T): UseSlotsReturn[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("useSlots")(children.asInstanceOf[js.Any], slots.asInstanceOf[js.Any])).asInstanceOf[UseSlotsReturn[T]]
   

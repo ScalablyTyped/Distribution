@@ -1,23 +1,23 @@
 package typings.babylonjs
 
+import typings.babylonjs.anon.AlignHorizontal
+import typings.babylonjs.anon.AlignVertical
+import typings.babylonjs.anon.AlphaFilter
+import typings.babylonjs.anon.Arc
 import typings.babylonjs.anon.BInfo
-import typings.babylonjs.anon.BackUVsDepth
-import typings.babylonjs.anon.Buffer
-import typings.babylonjs.anon.ClosePath
-import typings.babylonjs.anon.DashSize
-import typings.babylonjs.anon.DiameterBottom
-import typings.babylonjs.anon.DiameterY
-import typings.babylonjs.anon.FaceUV
-import typings.babylonjs.anon.Lines
-import typings.babylonjs.anon.Q
+import typings.babylonjs.anon.BackUVs
+import typings.babylonjs.anon.Colors
+import typings.babylonjs.anon.Custom
+import typings.babylonjs.anon.DashNb
+import typings.babylonjs.anon.Depth
+import typings.babylonjs.anon.Diameter
+import typings.babylonjs.anon.Flat
+import typings.babylonjs.anon.FrontUVs
+import typings.babylonjs.anon.P
+import typings.babylonjs.anon.Precision
 import typings.babylonjs.anon.Radius
-import typings.babylonjs.anon.RadiusX
-import typings.babylonjs.anon.Size
-import typings.babylonjs.anon.SubdivisionsX
-import typings.babylonjs.anon.Thickness
-import typings.babylonjs.anon.TileHeight
-import typings.babylonjs.anon.TileSize
-import typings.babylonjs.anon.Xmax
+import typings.babylonjs.anon.SideOrientation
+import typings.babylonjs.anon.Subdivisions
 import typings.babylonjs.mathsMathDotcolorMod.Color4
 import typings.babylonjs.mathsMathDotvectorMod.Matrix
 import typings.babylonjs.mathsMathDotvectorMod.Vector4
@@ -297,7 +297,7 @@ object meshesMeshDotvertexDataMod {
       * @returns the VertexData of the box
       * @deprecated Please use CreateBoxVertexData from the BoxBuilder file instead
       */
-    inline def CreateBox(options: BackUVsDepth): VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateBox")(options.asInstanceOf[js.Any]).asInstanceOf[VertexData]
+    inline def CreateBox(options: Depth): VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateBox")(options.asInstanceOf[js.Any]).asInstanceOf[VertexData]
     
     /**
       * Creates the VertexData for a Capsule, inspired from https://github.com/maximeq/three-js-capsule-geometry/blob/master/src/CapsuleBufferGeometry.js
@@ -342,7 +342,7 @@ object meshesMeshDotvertexDataMod {
       * @returns the VertexData of the cylinder, cone or prism
       * @deprecated please use CreateCylinderVertexData instead
       */
-    inline def CreateCylinder(options: DiameterBottom): VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateCylinder")(options.asInstanceOf[js.Any]).asInstanceOf[VertexData]
+    inline def CreateCylinder(options: Diameter): VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateCylinder")(options.asInstanceOf[js.Any]).asInstanceOf[VertexData]
     
     /**
       * Create the VertexData for a DashedLines
@@ -358,7 +358,7 @@ object meshesMeshDotvertexDataMod {
       * @returns the VertexData for the DashedLines
       * @deprecated use CreateDashedLinesVertexData instead
       */
-    inline def CreateDashedLines(options: DashSize): VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateDashedLines")(options.asInstanceOf[js.Any]).asInstanceOf[VertexData]
+    inline def CreateDashedLines(options: DashNb): VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateDashedLines")(options.asInstanceOf[js.Any]).asInstanceOf[VertexData]
     
     /**
       * Creates the VertexData of the Disc or regular Polygon
@@ -394,7 +394,7 @@ object meshesMeshDotvertexDataMod {
       * @returns the VertexData of the Ground
       * @deprecated Please use CreateGroundVertexData instead
       */
-    inline def CreateGround(options: SubdivisionsX): VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateGround")(options.asInstanceOf[js.Any]).asInstanceOf[VertexData]
+    inline def CreateGround(options: Subdivisions): VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateGround")(options.asInstanceOf[js.Any]).asInstanceOf[VertexData]
     
     /**
       * Creates the VertexData of the Ground designed from a heightmap
@@ -422,7 +422,7 @@ object meshesMeshDotvertexDataMod {
       * @returns the VertexData of the Ground designed from a heightmap
       * @deprecated use CreateGroundFromHeightMapVertexData instead
       */
-    inline def CreateGroundFromHeightMap(options: Buffer): VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(options.asInstanceOf[js.Any]).asInstanceOf[VertexData]
+    inline def CreateGroundFromHeightMap(options: AlphaFilter): VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(options.asInstanceOf[js.Any]).asInstanceOf[VertexData]
     
     /**
       * Creates the VertexData of the IcoSphere
@@ -448,7 +448,7 @@ object meshesMeshDotvertexDataMod {
       * @returns the VertexData of the IcoSphere
       * @deprecated use CreateIcoSphereVertexData instead
       */
-    inline def CreateIcoSphere(options: RadiusX): VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateIcoSphere")(options.asInstanceOf[js.Any]).asInstanceOf[VertexData]
+    inline def CreateIcoSphere(options: Flat): VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateIcoSphere")(options.asInstanceOf[js.Any]).asInstanceOf[VertexData]
     
     /**
       * Creates the VertexData of the LineSystem
@@ -460,7 +460,7 @@ object meshesMeshDotvertexDataMod {
       * @returns the VertexData of the LineSystem
       * @deprecated use CreateLineSystemVertexData instead
       */
-    inline def CreateLineSystem(options: Lines): VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateLineSystem")(options.asInstanceOf[js.Any]).asInstanceOf[VertexData]
+    inline def CreateLineSystem(options: Colors): VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateLineSystem")(options.asInstanceOf[js.Any]).asInstanceOf[VertexData]
     
     /**
       * Creates the VertexData for a Plane
@@ -480,7 +480,7 @@ object meshesMeshDotvertexDataMod {
       * @returns the VertexData of the box
       * @deprecated use CreatePlaneVertexData instead
       */
-    inline def CreatePlane(options: Size): VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreatePlane")(options.asInstanceOf[js.Any]).asInstanceOf[VertexData]
+    inline def CreatePlane(options: SideOrientation): VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreatePlane")(options.asInstanceOf[js.Any]).asInstanceOf[VertexData]
     
     /**
       * Creates the VertexData for an irregular Polygon in the XoZ plane using a mesh built by polygonTriangulation.build()
@@ -744,7 +744,7 @@ object meshesMeshDotvertexDataMod {
       * @returns the VertexData of the Polyhedron
       * @deprecated use CreatePolyhedronVertexData instead
       */
-    inline def CreatePolyhedron(options: FaceUV): VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolyhedron")(options.asInstanceOf[js.Any]).asInstanceOf[VertexData]
+    inline def CreatePolyhedron(options: Custom): VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolyhedron")(options.asInstanceOf[js.Any]).asInstanceOf[VertexData]
     
     /**
       * Creates the VertexData for a Ribbon
@@ -772,7 +772,7 @@ object meshesMeshDotvertexDataMod {
       * @returns the VertexData of the ribbon
       * @deprecated use CreateRibbonVertexData instead
       */
-    inline def CreateRibbon(options: ClosePath): VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateRibbon")(options.asInstanceOf[js.Any]).asInstanceOf[VertexData]
+    inline def CreateRibbon(options: BackUVs): VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateRibbon")(options.asInstanceOf[js.Any]).asInstanceOf[VertexData]
     
     /**
       * Creates the VertexData for an ellipsoid, defaults to a sphere
@@ -800,7 +800,7 @@ object meshesMeshDotvertexDataMod {
       * @returns the VertexData of the ellipsoid
       * @deprecated use CreateSphereVertexData instead
       */
-    inline def CreateSphere(options: DiameterY): VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateSphere")(options.asInstanceOf[js.Any]).asInstanceOf[VertexData]
+    inline def CreateSphere(options: Arc): VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateSphere")(options.asInstanceOf[js.Any]).asInstanceOf[VertexData]
     
     /**
       * Creates the VertexData for a tiled box
@@ -824,7 +824,7 @@ object meshesMeshDotvertexDataMod {
       * @returns the VertexData of the box
       * @deprecated Please use CreateTiledBoxVertexData instead
       */
-    inline def CreateTiledBox(options: TileSize): VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledBox")(options.asInstanceOf[js.Any]).asInstanceOf[VertexData]
+    inline def CreateTiledBox(options: AlignHorizontal): VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledBox")(options.asInstanceOf[js.Any]).asInstanceOf[VertexData]
     
     /**
       * Creates the VertexData for a TiledGround by subdividing the ground into tiles
@@ -848,7 +848,7 @@ object meshesMeshDotvertexDataMod {
       * @returns the VertexData of the TiledGround
       * @deprecated use CreateTiledGroundVertexData instead
       */
-    inline def CreateTiledGround(options: Xmax): VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledGround")(options.asInstanceOf[js.Any]).asInstanceOf[VertexData]
+    inline def CreateTiledGround(options: Precision): VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledGround")(options.asInstanceOf[js.Any]).asInstanceOf[VertexData]
     
     /**
       * Creates the VertexData for a tiled plane
@@ -875,7 +875,7 @@ object meshesMeshDotvertexDataMod {
       * @returns the VertexData of the tiled plane
       * @deprecated use CreateTiledPlaneVertexData instead
       */
-    inline def CreateTiledPlane(options: TileHeight): VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledPlane")(options.asInstanceOf[js.Any]).asInstanceOf[VertexData]
+    inline def CreateTiledPlane(options: AlignVertical): VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledPlane")(options.asInstanceOf[js.Any]).asInstanceOf[VertexData]
     
     /**
       * Creates the VertexData for a torus
@@ -895,7 +895,7 @@ object meshesMeshDotvertexDataMod {
       * @returns the VertexData of the torus
       * @deprecated use CreateTorusVertexData instead
       */
-    inline def CreateTorus(options: Thickness): VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorus")(options.asInstanceOf[js.Any]).asInstanceOf[VertexData]
+    inline def CreateTorus(options: FrontUVs): VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorus")(options.asInstanceOf[js.Any]).asInstanceOf[VertexData]
     
     /**
       * Creates the VertexData for a TorusKnot
@@ -921,7 +921,7 @@ object meshesMeshDotvertexDataMod {
       * @returns the VertexData of the Torus Knot
       * @deprecated use CreateTorusKnotVertexData instead
       */
-    inline def CreateTorusKnot(options: Q): VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorusKnot")(options.asInstanceOf[js.Any]).asInstanceOf[VertexData]
+    inline def CreateTorusKnot(options: P): VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorusKnot")(options.asInstanceOf[js.Any]).asInstanceOf[VertexData]
     
     /**
       * Mesh side orientation : by default, `FRONTSIDE`

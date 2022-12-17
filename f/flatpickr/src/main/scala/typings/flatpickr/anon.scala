@@ -816,7 +816,7 @@ object anon {
   /* Inlined {[ k in flatpickr.flatpickr/dist/types/locale.key ]:? flatpickr.flatpickr/dist/types/locale.CustomLocale} & {  default :flatpickr.flatpickr/dist/types/locale.Locale} */
   trait kinkeyCustomLocaledefault extends StObject {
     
-    var default: js.UndefOr[CustomLocale] & Locale
+    var default: js.UndefOr[CustomLocale] = js.undefined
     
     var ar: js.UndefOr[CustomLocale] = js.undefined
     
@@ -948,8 +948,8 @@ object anon {
   }
   object kinkeyCustomLocaledefault {
     
-    inline def apply(default: js.UndefOr[CustomLocale] & Locale): kinkeyCustomLocaledefault = {
-      val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
+    inline def apply(): kinkeyCustomLocaledefault = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[kinkeyCustomLocaledefault]
     }
     
@@ -1011,7 +1011,9 @@ object anon {
       
       inline def setDeUndefined: Self = StObject.set(x, "de", js.undefined)
       
-      inline def setDefault(value: js.UndefOr[CustomLocale] & Locale): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: CustomLocale): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
       inline def setEn(value: CustomLocale): Self = StObject.set(x, "en", value.asInstanceOf[js.Any])
       

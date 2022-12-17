@@ -15,20 +15,20 @@ trait ConfigStyle extends StObject {
     */
   var properties: js.UndefOr[
     js.Array[
-      /* keyof csstype.csstype.Properties<string | 0> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 776 */ js.Any
+      /* keyof csstype.csstype.Properties<string & {} | 0, string & {}> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 788, starting with typings.styledSystem.styledSystemStrings.accentColor, typings.styledSystem.styledSystemStrings.alignContent, typings.styledSystem.styledSystemStrings.alignItems */ Any
     ]
   ] = js.undefined
   
   /** The CSS property to use in the returned style object (overridden by `properties` if present). */
   var property: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 777 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 789, starting with typings.styledSystem.styledSystemStrings.accentColor, typings.styledSystem.styledSystemStrings.alignContent, typings.styledSystem.styledSystemStrings.alignItems */ Any
   ] = js.undefined
   
   /** A string referencing a key in the `theme` object. */
   var scale: js.UndefOr[String] = js.undefined
   
   /** A function to transform the raw value based on the scale. */
-  var transform: js.UndefOr[js.Function2[/* value */ js.Any, /* scale */ js.UndefOr[Scale], js.Any]] = js.undefined
+  var transform: js.UndefOr[js.Function2[/* value */ Any, /* scale */ js.UndefOr[Scale], Any]] = js.undefined
 }
 object ConfigStyle {
   
@@ -43,21 +43,23 @@ object ConfigStyle {
     
     inline def setDefaultScaleUndefined: Self = StObject.set(x, "defaultScale", js.undefined)
     
-    inline def setDefaultScaleVarargs(value: (Double | String)*): Self = StObject.set(x, "defaultScale", js.Array(value :_*))
+    inline def setDefaultScaleVarargs(value: (Double | String)*): Self = StObject.set(x, "defaultScale", js.Array(value*))
     
     inline def setProperties(
       value: js.Array[
-          /* keyof csstype.csstype.Properties<string | 0> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 776 */ js.Any
+          /* keyof csstype.csstype.Properties<string & {} | 0, string & {}> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 788, starting with typings.styledSystem.styledSystemStrings.accentColor, typings.styledSystem.styledSystemStrings.alignContent, typings.styledSystem.styledSystemStrings.alignItems */ Any
         ]
     ): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     inline def setPropertiesVarargs(
-      value: (/* keyof csstype.csstype.Properties<string | 0> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 776 */ js.Any)*
-    ): Self = StObject.set(x, "properties", js.Array(value :_*))
+      value: (/* keyof csstype.csstype.Properties<string & {} | 0, string & {}> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 788, starting with typings.styledSystem.styledSystemStrings.accentColor, typings.styledSystem.styledSystemStrings.alignContent, typings.styledSystem.styledSystemStrings.alignItems */ Any)*
+    ): Self = StObject.set(x, "properties", js.Array(value*))
     
-    inline def setProperty(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 777 */ js.Any): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 789, starting with typings.styledSystem.styledSystemStrings.accentColor, typings.styledSystem.styledSystemStrings.alignContent, typings.styledSystem.styledSystemStrings.alignItems */ Any
+    ): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
     inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
     
@@ -65,7 +67,7 @@ object ConfigStyle {
     
     inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    inline def setTransform(value: (/* value */ js.Any, /* scale */ js.UndefOr[Scale]) => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
+    inline def setTransform(value: (/* value */ Any, /* scale */ js.UndefOr[Scale]) => Any): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
     
     inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
   }

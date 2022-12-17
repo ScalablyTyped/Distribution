@@ -39,7 +39,7 @@ trait PickImplinlinePartialPick
   
   var fields: js.UndefOr[StringDictionary[String | js.Array[String] | Field]] = js.undefined
   
-  var `inline`: Boolean & js.UndefOr[Boolean]
+  var `inline`: Boolean
   
   var keyboardShortcuts: js.UndefOr[Boolean] = js.undefined
   
@@ -92,7 +92,7 @@ trait PickImplinlinePartialPick
 }
 object PickImplinlinePartialPick {
   
-  inline def apply(`inline`: Boolean & js.UndefOr[Boolean]): PickImplinlinePartialPick = {
+  inline def apply(`inline`: Boolean): PickImplinlinePartialPick = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplinlinePartialPick]
@@ -128,7 +128,7 @@ object PickImplinlinePartialPick {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setInline(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+    inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
     
     inline def setKeyboardShortcuts(value: Boolean): Self = StObject.set(x, "keyboardShortcuts", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,7 @@ trait LinterOptionscwdstring extends StObject {
   			 * The working directory to resolve files from. Defaults to the
   			 * current working directory.
   			 */
-  var cwd: js.UndefOr[String] & String
+  var cwd: js.UndefOr[String] = js.undefined
   
   var disableDefaultIgnores: js.UndefOr[Boolean] = js.undefined
   
@@ -71,8 +71,8 @@ trait LinterOptionscwdstring extends StObject {
 }
 object LinterOptionscwdstring {
   
-  inline def apply(cwd: js.UndefOr[String] & String): LinterOptionscwdstring = {
-    val __obj = js.Dynamic.literal(cwd = cwd.asInstanceOf[js.Any])
+  inline def apply(): LinterOptionscwdstring = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LinterOptionscwdstring]
   }
   
@@ -118,7 +118,9 @@ object LinterOptionscwdstring {
     
     inline def setCustomSyntaxUndefined: Self = StObject.set(x, "customSyntax", js.undefined)
     
-    inline def setCwd(value: js.UndefOr[String] & String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+    inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+    
+    inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
     
     inline def setDisableDefaultIgnores(value: Boolean): Self = StObject.set(x, "disableDefaultIgnores", value.asInstanceOf[js.Any])
     

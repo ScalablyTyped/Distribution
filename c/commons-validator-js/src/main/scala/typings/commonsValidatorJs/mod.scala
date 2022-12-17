@@ -1,7 +1,7 @@
 package typings.commonsValidatorJs
 
 import typings.commonsValidatorJs.anon.AllowLocal
-import typings.commonsValidatorJs.anon.AllowTld
+import typings.commonsValidatorJs.anon.AllowLocalBoolean
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ object mod {
     * @param allowLocal   Should local addresses be considered valid? default = false
     */
   open class DomainValidator () extends StObject {
-    def this(param0: AllowLocal) = this()
+    def this(param0: AllowLocalBoolean) = this()
     
     def extractTld(domain: String): String | Null = js.native
     
@@ -36,7 +36,7 @@ object mod {
     * @param allowTld     Should TLDs be allowed? default = false
     */
   open class EmailValidator () extends StObject {
-    def this(param0: AllowTld) = this()
+    def this(param0: AllowLocal) = this()
     
     def isValid(email: String): Boolean = js.native
   }

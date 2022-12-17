@@ -16,8 +16,8 @@ object srcMiddlewareShiftMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def limitShift(): Fn = ^.asInstanceOf[js.Dynamic].applyDynamic("limitShift")().asInstanceOf[Fn]
-  inline def limitShift(options: PartialLimitShiftOptions): Fn = ^.asInstanceOf[js.Dynamic].applyDynamic("limitShift")(options.asInstanceOf[js.Any]).asInstanceOf[Fn]
+  inline def limitShift(): typings.floatingUiCore.anon.Options = ^.asInstanceOf[js.Dynamic].applyDynamic("limitShift")().asInstanceOf[typings.floatingUiCore.anon.Options]
+  inline def limitShift(options: PartialLimitShiftOptions): typings.floatingUiCore.anon.Options = ^.asInstanceOf[js.Dynamic].applyDynamic("limitShift")(options.asInstanceOf[js.Any]).asInstanceOf[typings.floatingUiCore.anon.Options]
   
   inline def shift(): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("shift")().asInstanceOf[Middleware]
   inline def shift(options: PartialOptionsOptionsCrossAxis): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("shift")(options.asInstanceOf[js.Any]).asInstanceOf[Middleware]
@@ -76,7 +76,7 @@ object srcMiddlewareShiftMod {
       * Accepts a function that limits the shifting done in order to prevent
       * detachment.
       */
-    var limiter: typings.floatingUiCore.anon.Options
+    var limiter: Fn
     
     /**
       * The axis that runs along the alignment of the floating element.
@@ -86,7 +86,7 @@ object srcMiddlewareShiftMod {
   }
   object Options {
     
-    inline def apply(crossAxis: Boolean, limiter: typings.floatingUiCore.anon.Options, mainAxis: Boolean): Options = {
+    inline def apply(crossAxis: Boolean, limiter: Fn, mainAxis: Boolean): Options = {
       val __obj = js.Dynamic.literal(crossAxis = crossAxis.asInstanceOf[js.Any], limiter = limiter.asInstanceOf[js.Any], mainAxis = mainAxis.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
@@ -95,7 +95,7 @@ object srcMiddlewareShiftMod {
       
       inline def setCrossAxis(value: Boolean): Self = StObject.set(x, "crossAxis", value.asInstanceOf[js.Any])
       
-      inline def setLimiter(value: typings.floatingUiCore.anon.Options): Self = StObject.set(x, "limiter", value.asInstanceOf[js.Any])
+      inline def setLimiter(value: Fn): Self = StObject.set(x, "limiter", value.asInstanceOf[js.Any])
       
       inline def setMainAxis(value: Boolean): Self = StObject.set(x, "mainAxis", value.asInstanceOf[js.Any])
     }

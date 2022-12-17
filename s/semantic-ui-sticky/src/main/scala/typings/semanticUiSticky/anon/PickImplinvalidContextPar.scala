@@ -14,7 +14,7 @@ trait PickImplinvalidContextPar
   
   var elementSize: js.UndefOr[String] = js.undefined
   
-  var invalidContext: String & js.UndefOr[String]
+  var invalidContext: String
   
   var method: js.UndefOr[String] = js.undefined
   
@@ -22,7 +22,7 @@ trait PickImplinvalidContextPar
 }
 object PickImplinvalidContextPar {
   
-  inline def apply(invalidContext: String & js.UndefOr[String]): PickImplinvalidContextPar = {
+  inline def apply(invalidContext: String): PickImplinvalidContextPar = {
     val __obj = js.Dynamic.literal(invalidContext = invalidContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplinvalidContextPar]
   }
@@ -37,7 +37,7 @@ object PickImplinvalidContextPar {
     
     inline def setElementSizeUndefined: Self = StObject.set(x, "elementSize", js.undefined)
     
-    inline def setInvalidContext(value: String & js.UndefOr[String]): Self = StObject.set(x, "invalidContext", value.asInstanceOf[js.Any])
+    inline def setInvalidContext(value: String): Self = StObject.set(x, "invalidContext", value.asInstanceOf[js.Any])
     
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

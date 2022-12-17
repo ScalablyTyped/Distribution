@@ -14,7 +14,7 @@ trait Block
   extends StObject
      with _Coordinates {
   
-  var block: js.UndefOr[BlockBehavior | `0` | (js.Tuple2[BlockBehavior, BlockBehavior])] = js.undefined
+  var block: js.UndefOr[BlockBehavior | XY | (js.Tuple2[BlockBehavior, BlockBehavior])] = js.undefined
   
   var el: HTMLElement | JQuery
   
@@ -22,7 +22,7 @@ trait Block
     Margin | Bottom | (js.Tuple2[Margin, Margin]) | (js.Tuple4[Margin, Margin, Margin, Margin])
   ] = js.undefined
   
-  var scroll: js.UndefOr[ScrollBehavior | XY | (js.Tuple2[ScrollBehavior, ScrollBehavior])] = js.undefined
+  var scroll: js.UndefOr[ScrollBehavior | Y | (js.Tuple2[ScrollBehavior, ScrollBehavior])] = js.undefined
 }
 object Block {
   
@@ -33,7 +33,7 @@ object Block {
   
   extension [Self <: Block](x: Self) {
     
-    inline def setBlock(value: BlockBehavior | `0` | (js.Tuple2[BlockBehavior, BlockBehavior])): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    inline def setBlock(value: BlockBehavior | XY | (js.Tuple2[BlockBehavior, BlockBehavior])): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
     inline def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
     
@@ -43,7 +43,7 @@ object Block {
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    inline def setScroll(value: ScrollBehavior | XY | (js.Tuple2[ScrollBehavior, ScrollBehavior])): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
+    inline def setScroll(value: ScrollBehavior | Y | (js.Tuple2[ScrollBehavior, ScrollBehavior])): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
     
     inline def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
   }

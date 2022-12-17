@@ -15,11 +15,11 @@ trait PickImplvariationPartialP
   
   var transition: js.UndefOr[String] = js.undefined
   
-  var variation: (`false` | String) & (js.UndefOr[`false` | String])
+  var variation: `false` | String
 }
 object PickImplvariationPartialP {
   
-  inline def apply(variation: (`false` | String) & (js.UndefOr[`false` | String])): PickImplvariationPartialP = {
+  inline def apply(variation: `false` | String): PickImplvariationPartialP = {
     val __obj = js.Dynamic.literal(variation = variation.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplvariationPartialP]
   }
@@ -34,6 +34,6 @@ object PickImplvariationPartialP {
     
     inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
     
-    inline def setVariation(value: (`false` | String) & (js.UndefOr[`false` | String])): Self = StObject.set(x, "variation", value.asInstanceOf[js.Any])
+    inline def setVariation(value: `false` | String): Self = StObject.set(x, "variation", value.asInstanceOf[js.Any])
   }
 }

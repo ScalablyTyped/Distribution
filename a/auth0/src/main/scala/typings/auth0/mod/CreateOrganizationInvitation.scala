@@ -1,7 +1,7 @@
 package typings.auth0.mod
 
-import typings.auth0.anon.Email
-import typings.auth0.anon.Name
+import typings.auth0.anon.EmailString
+import typings.auth0.anon.NameString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,9 +14,9 @@ trait CreateOrganizationInvitation extends StObject {
   
   var connection_id: js.UndefOr[String] = js.undefined
   
-  var invitee: Email
+  var invitee: EmailString
   
-  var inviter: Name
+  var inviter: NameString
   
   var roles: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -28,7 +28,7 @@ trait CreateOrganizationInvitation extends StObject {
 }
 object CreateOrganizationInvitation {
   
-  inline def apply(client_id: String, invitee: Email, inviter: Name): CreateOrganizationInvitation = {
+  inline def apply(client_id: String, invitee: EmailString, inviter: NameString): CreateOrganizationInvitation = {
     val __obj = js.Dynamic.literal(client_id = client_id.asInstanceOf[js.Any], invitee = invitee.asInstanceOf[js.Any], inviter = inviter.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateOrganizationInvitation]
   }
@@ -45,9 +45,9 @@ object CreateOrganizationInvitation {
     
     inline def setConnection_idUndefined: Self = StObject.set(x, "connection_id", js.undefined)
     
-    inline def setInvitee(value: Email): Self = StObject.set(x, "invitee", value.asInstanceOf[js.Any])
+    inline def setInvitee(value: EmailString): Self = StObject.set(x, "invitee", value.asInstanceOf[js.Any])
     
-    inline def setInviter(value: Name): Self = StObject.set(x, "inviter", value.asInstanceOf[js.Any])
+    inline def setInviter(value: NameString): Self = StObject.set(x, "inviter", value.asInstanceOf[js.Any])
     
     inline def setRoles(value: js.Array[String]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
     

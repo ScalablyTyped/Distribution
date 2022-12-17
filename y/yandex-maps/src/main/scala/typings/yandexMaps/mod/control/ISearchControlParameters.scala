@@ -1,6 +1,6 @@
 package typings.yandexMaps.mod.control
 
-import typings.yandexMaps.anon.FitMaxWidth
+import typings.yandexMaps.anon.BoundedBy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ trait ISearchControlParameters extends StObject {
   
   var data: js.UndefOr[js.Object] = js.undefined
   
-  var options: js.UndefOr[FitMaxWidth] = js.undefined
+  var options: js.UndefOr[BoundedBy] = js.undefined
   
   var state: js.UndefOr[js.Object] = js.undefined
 }
@@ -26,7 +26,7 @@ object ISearchControlParameters {
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setOptions(value: FitMaxWidth): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: BoundedBy): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     

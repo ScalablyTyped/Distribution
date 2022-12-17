@@ -1,6 +1,7 @@
 package typings.paypalCheckoutServerSdk
 
 import typings.paypalCheckoutServerSdk.libCoreAccessTokenMod.AccessTokenOptions
+import typings.paypalPaypalhttp.mod.Environment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -79,5 +80,20 @@ object libCoreLibMod {
   open class SandboxEnvironment protected ()
     extends typings.paypalCheckoutServerSdk.libCorePaypalEnvironmentMod.SandboxEnvironment {
     def this(clientId: String, clientSecret: String) = this()
+  }
+  
+  @JSImport("@paypal/checkout-server-sdk/lib/core/lib", "TokenCache")
+  @js.native
+  open class TokenCache ()
+    extends typings.paypalCheckoutServerSdk.libCoreTokenCacheMod.TokenCache
+  object TokenCache {
+    
+    @JSImport("@paypal/checkout-server-sdk/lib/core/lib", "TokenCache")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    inline def cacheForEnvironment[T /* <: Environment */](environment: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("cacheForEnvironment")(environment.asInstanceOf[js.Any]).asInstanceOf[T]
+    inline def cacheForEnvironment[T /* <: Environment */](environment: T, refreshToken: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cacheForEnvironment")(environment.asInstanceOf[js.Any], refreshToken.asInstanceOf[js.Any])).asInstanceOf[T]
   }
 }

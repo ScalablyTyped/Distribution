@@ -9,13 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object deprecatedMod {
   
-  @JSImport("@material/switch/deprecated", JSImport.Default)
-  @js.native
-  open class default ()
-    extends typings.materialSwitch.deprecatedFoundationMod.default {
-    def this(adapter: PartialMDCSwitchAdapter) = this()
-  }
-  
   @JSImport("@material/switch/deprecated", "MDCSwitch")
   @js.native
   open class MDCSwitch protected ()

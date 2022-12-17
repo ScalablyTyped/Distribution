@@ -16,11 +16,11 @@ trait PickImplvaluesPartialPickName
   
   var value: js.UndefOr[String] = js.undefined
   
-  var values: String & js.UndefOr[String]
+  var values: String
 }
 object PickImplvaluesPartialPickName {
   
-  inline def apply(values: String & js.UndefOr[String]): PickImplvaluesPartialPickName = {
+  inline def apply(values: String): PickImplvaluesPartialPickName = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplvaluesPartialPickName]
   }
@@ -39,6 +39,6 @@ object PickImplvaluesPartialPickName {
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    inline def setValues(value: String & js.UndefOr[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: String): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
   }
 }

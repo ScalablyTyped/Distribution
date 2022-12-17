@@ -59,7 +59,7 @@ trait PickImplreturnScrollParti
   
   var regExp: js.UndefOr[RegExpSettings] = js.undefined
   
-  var returnScroll: Boolean & js.UndefOr[Boolean]
+  var returnScroll: Boolean
   
   var scrollLock: js.UndefOr[Boolean] = js.undefined
   
@@ -75,7 +75,7 @@ trait PickImplreturnScrollParti
 }
 object PickImplreturnScrollParti {
   
-  inline def apply(returnScroll: Boolean & js.UndefOr[Boolean]): PickImplreturnScrollParti = {
+  inline def apply(returnScroll: Boolean): PickImplreturnScrollParti = {
     val __obj = js.Dynamic.literal(returnScroll = returnScroll.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplreturnScrollParti]
   }
@@ -166,7 +166,7 @@ object PickImplreturnScrollParti {
     
     inline def setRegExpUndefined: Self = StObject.set(x, "regExp", js.undefined)
     
-    inline def setReturnScroll(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "returnScroll", value.asInstanceOf[js.Any])
+    inline def setReturnScroll(value: Boolean): Self = StObject.set(x, "returnScroll", value.asInstanceOf[js.Any])
     
     inline def setScrollLock(value: Boolean): Self = StObject.set(x, "scrollLock", value.asInstanceOf[js.Any])
     

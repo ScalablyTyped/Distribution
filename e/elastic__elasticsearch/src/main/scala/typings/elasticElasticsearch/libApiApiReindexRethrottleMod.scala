@@ -3,6 +3,9 @@ package typings.elasticElasticsearch
 import typings.elasticElasticsearch.libApiTypesMod.ReindexRethrottleRequest
 import typings.elasticElasticsearch.libApiTypesMod.ReindexRethrottleResponse
 import typings.elasticTransport.libTransportMod.TransportRequestOptions
+import typings.elasticTransport.libTransportMod.TransportRequestOptionsWithMeta
+import typings.elasticTransport.libTransportMod.TransportRequestOptionsWithOutMeta
+import typings.elasticTransport.libTypesMod.TransportResult
 import typings.elasticTransport.mod.Transport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,10 +19,20 @@ object libApiApiReindexRethrottleMod {
   
   inline def default(params: ReindexRethrottleRequest): js.Promise[ReindexRethrottleResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReindexRethrottleResponse]]
   inline def default(params: ReindexRethrottleRequest, options: TransportRequestOptions): js.Promise[ReindexRethrottleResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReindexRethrottleResponse]]
+  inline def default(params: ReindexRethrottleRequest, options: TransportRequestOptionsWithMeta): js.Promise[TransportResult[ReindexRethrottleResponse, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TransportResult[ReindexRethrottleResponse, Any]]]
+  inline def default(params: ReindexRethrottleRequest, options: TransportRequestOptionsWithOutMeta): js.Promise[ReindexRethrottleResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReindexRethrottleResponse]]
   inline def default(params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.ReindexRethrottleRequest): js.Promise[ReindexRethrottleResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReindexRethrottleResponse]]
   inline def default(
     params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.ReindexRethrottleRequest,
     options: TransportRequestOptions
+  ): js.Promise[ReindexRethrottleResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReindexRethrottleResponse]]
+  inline def default(
+    params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.ReindexRethrottleRequest,
+    options: TransportRequestOptionsWithMeta
+  ): js.Promise[TransportResult[ReindexRethrottleResponse, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TransportResult[ReindexRethrottleResponse, Any]]]
+  inline def default(
+    params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.ReindexRethrottleRequest,
+    options: TransportRequestOptionsWithOutMeta
   ): js.Promise[ReindexRethrottleResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReindexRethrottleResponse]]
   
   trait That extends StObject {

@@ -12,11 +12,11 @@ trait PickImplescapePartialPickBeginsWith
   
   var beginsWith: js.UndefOr[String] = js.undefined
   
-  var escape: js.RegExp & js.UndefOr[js.RegExp]
+  var escape: js.RegExp
 }
 object PickImplescapePartialPickBeginsWith {
   
-  inline def apply(escape: js.RegExp & js.UndefOr[js.RegExp]): PickImplescapePartialPickBeginsWith = {
+  inline def apply(escape: js.RegExp): PickImplescapePartialPickBeginsWith = {
     val __obj = js.Dynamic.literal(escape = escape.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplescapePartialPickBeginsWith]
   }
@@ -27,6 +27,6 @@ object PickImplescapePartialPickBeginsWith {
     
     inline def setBeginsWithUndefined: Self = StObject.set(x, "beginsWith", js.undefined)
     
-    inline def setEscape(value: js.RegExp & js.UndefOr[js.RegExp]): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
+    inline def setEscape(value: js.RegExp): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
   }
 }

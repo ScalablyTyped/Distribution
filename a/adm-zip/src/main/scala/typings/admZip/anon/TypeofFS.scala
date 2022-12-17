@@ -4,8 +4,8 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.admZip.admZipStrings.buffer
 import typings.node.NodeJS.ArrayBufferView
 import typings.node.NodeJS.ErrnoException
+import typings.node.anon.Encoding
 import typings.node.anon.EncodingFlag
-import typings.node.anon.EncodingWithFileTypes
 import typings.node.anon.Flag
 import typings.node.anon.MakeDirectoryOptionsrecur
 import typings.node.anon.MakeDirectoryOptionsrecurMode
@@ -277,10 +277,10 @@ trait TypeofFS extends StObject {
   val readdir: Typeofreaddir = js.native
   
   def readdirSync(path: PathLike): js.Array[String] = js.native
-  def readdirSync(path: PathLike, options: EncodingWithFileTypes): js.Array[String] = js.native
+  def readdirSync(path: PathLike, options: Encoding): js.Array[Buffer] = js.native
   def readdirSync(path: PathLike, options: ObjectEncodingOptionswith): js.Array[Buffer | String] = js.native
   def readdirSync(path: PathLike, options: ObjectEncodingOptionswithEncoding): js.Array[Dirent] = js.native
-  def readdirSync(path: PathLike, options: WithFileTypes): js.Array[Buffer] = js.native
+  def readdirSync(path: PathLike, options: WithFileTypes): js.Array[String] = js.native
   def readdirSync(path: PathLike, options: BufferEncoding): js.Array[String] = js.native
   @JSName("readdirSync")
   def readdirSync_buffer(path: PathLike, options: buffer): js.Array[Buffer] = js.native

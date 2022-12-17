@@ -50,7 +50,7 @@ trait PickImplonEnabledPartialP
   
   def onEnabled(): Unit
   @JSName("onEnabled")
-  var onEnabled_Original: (js.ThisFunction0[/* this */ HTMLInputElement, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]])
+  var onEnabled_Original: js.ThisFunction0[/* this */ HTMLInputElement, Unit]
   
   var onIndeterminate: js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]] = js.undefined
   
@@ -68,9 +68,7 @@ trait PickImplonEnabledPartialP
 }
 object PickImplonEnabledPartialP {
   
-  inline def apply(
-    onEnabled: (js.ThisFunction0[/* this */ HTMLInputElement, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]])
-  ): PickImplonEnabledPartialP = {
+  inline def apply(onEnabled: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): PickImplonEnabledPartialP = {
     val __obj = js.Dynamic.literal(onEnabled = onEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonEnabledPartialP]
   }
@@ -141,9 +139,7 @@ object PickImplonEnabledPartialP {
     
     inline def setOnEnableUndefined: Self = StObject.set(x, "onEnable", js.undefined)
     
-    inline def setOnEnabled(
-      value: (js.ThisFunction0[/* this */ HTMLInputElement, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]])
-    ): Self = StObject.set(x, "onEnabled", value.asInstanceOf[js.Any])
+    inline def setOnEnabled(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): Self = StObject.set(x, "onEnabled", value.asInstanceOf[js.Any])
     
     inline def setOnIndeterminate(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): Self = StObject.set(x, "onIndeterminate", value.asInstanceOf[js.Any])
     

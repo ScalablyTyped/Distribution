@@ -7,7 +7,7 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import typings.reactNavigationStack.anon.Style
 import typings.reactNavigationStack.anon.TintColor
-import typings.reactNavigationStack.anon.`0`
+import typings.reactNavigationStack.anon.TintColorString
 import typings.reactNavigationStack.reactNavigationStackStrings.center
 import typings.reactNavigationStack.reactNavigationStackStrings.left
 import org.scalablytyped.runtime.StObject
@@ -31,7 +31,7 @@ trait StackHeaderOptions extends StObject {
     * It receives the `tintColor` in in the options object as an argument. object.
     * Defaults to Image component with a the default back icon image for the platform (a chevron on iOS and an arrow on Android).
     */
-  var headerBackImage: js.UndefOr[js.Function1[/* props */ TintColor, ReactNode]] = js.undefined
+  var headerBackImage: js.UndefOr[js.Function1[/* props */ TintColorString, ReactNode]] = js.undefined
   
   /**
     * Title string used by the back button on iOS. Defaults to the previous scene's `headerTitle`.
@@ -76,7 +76,7 @@ trait StackHeaderOptions extends StObject {
   /**
     * Function which returns a React Element to display on the right side of the header.
     */
-  var headerRight: js.UndefOr[js.Function1[/* props */ `0`, ReactNode]] = js.undefined
+  var headerRight: js.UndefOr[js.Function1[/* props */ TintColor, ReactNode]] = js.undefined
   
   /**
     * Style object for the container of the `headerRight` component, for example to add padding.
@@ -161,7 +161,7 @@ object StackHeaderOptions {
     
     inline def setHeaderBackAllowFontScalingUndefined: Self = StObject.set(x, "headerBackAllowFontScaling", js.undefined)
     
-    inline def setHeaderBackImage(value: /* props */ TintColor => ReactNode): Self = StObject.set(x, "headerBackImage", js.Any.fromFunction1(value))
+    inline def setHeaderBackImage(value: /* props */ TintColorString => ReactNode): Self = StObject.set(x, "headerBackImage", js.Any.fromFunction1(value))
     
     inline def setHeaderBackImageUndefined: Self = StObject.set(x, "headerBackImage", js.undefined)
     
@@ -197,7 +197,7 @@ object StackHeaderOptions {
     
     inline def setHeaderPressColorAndroidUndefined: Self = StObject.set(x, "headerPressColorAndroid", js.undefined)
     
-    inline def setHeaderRight(value: /* props */ `0` => ReactNode): Self = StObject.set(x, "headerRight", js.Any.fromFunction1(value))
+    inline def setHeaderRight(value: /* props */ TintColor => ReactNode): Self = StObject.set(x, "headerRight", js.Any.fromFunction1(value))
     
     inline def setHeaderRightContainerStyle(value: WithAnimatedValue[StyleProp[ViewStyle]]): Self = StObject.set(x, "headerRightContainerStyle", value.asInstanceOf[js.Any])
     

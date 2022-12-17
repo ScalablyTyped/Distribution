@@ -78,21 +78,13 @@ trait PickImplonLoadPartialPick
   
   def onLoad(tabPath: String, parameterArray: js.Array[Any], historyEvent: Any): Unit
   @JSName("onLoad")
-  var onLoad_Original: (js.ThisFunction3[
+  var onLoad_Original: js.ThisFunction3[
     /* this */ JQuery, 
     /* tabPath */ String, 
     /* parameterArray */ js.Array[Any], 
     /* historyEvent */ Any, 
     Unit
-  ]) & (js.UndefOr[
-    js.ThisFunction3[
-      /* this */ JQuery, 
-      /* tabPath */ String, 
-      /* parameterArray */ js.Array[Any], 
-      /* historyEvent */ Any, 
-      Unit
-    ]
-  ])
+  ]
   
   var onRequest: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* tabPath */ String, Unit]] = js.undefined
   
@@ -113,21 +105,13 @@ trait PickImplonLoadPartialPick
 object PickImplonLoadPartialPick {
   
   inline def apply(
-    onLoad: (js.ThisFunction3[
+    onLoad: js.ThisFunction3[
       /* this */ JQuery, 
       /* tabPath */ String, 
       /* parameterArray */ js.Array[Any], 
       /* historyEvent */ Any, 
       Unit
-    ]) & (js.UndefOr[
-      js.ThisFunction3[
-        /* this */ JQuery, 
-        /* tabPath */ String, 
-        /* parameterArray */ js.Array[Any], 
-        /* historyEvent */ Any, 
-        Unit
-      ]
-    ])
+    ]
   ): PickImplonLoadPartialPick = {
     val __obj = js.Dynamic.literal(onLoad = onLoad.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonLoadPartialPick]
@@ -228,21 +212,13 @@ object PickImplonLoadPartialPick {
     inline def setOnFirstLoadUndefined: Self = StObject.set(x, "onFirstLoad", js.undefined)
     
     inline def setOnLoad(
-      value: (js.ThisFunction3[
+      value: js.ThisFunction3[
           /* this */ JQuery, 
           /* tabPath */ String, 
           /* parameterArray */ js.Array[Any], 
           /* historyEvent */ Any, 
           Unit
-        ]) & (js.UndefOr[
-          js.ThisFunction3[
-            /* this */ JQuery, 
-            /* tabPath */ String, 
-            /* parameterArray */ js.Array[Any], 
-            /* historyEvent */ Any, 
-            Unit
-          ]
-        ])
+        ]
     ): Self = StObject.set(x, "onLoad", value.asInstanceOf[js.Any])
     
     inline def setOnRequest(value: js.ThisFunction1[/* this */ JQuery, /* tabPath */ String, Unit]): Self = StObject.set(x, "onRequest", value.asInstanceOf[js.Any])

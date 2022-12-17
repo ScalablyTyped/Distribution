@@ -1,5 +1,7 @@
 package typings.styledSystem.mod
 
+import typings.csstype.mod.Property.BackgroundPosition
+import typings.csstype.mod.Property.BackgroundSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,14 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BackgroundProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal]
   extends StObject
      with BackgroundImageProps[ThemeType]
-     with BackgroundSizeProps[
-      ThemeType, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundSize<TLengthStyledSystem> */ js.Any
-    ]
-     with BackgroundPositionProps[
-      ThemeType, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundPosition<TLengthStyledSystem> */ js.Any
-    ]
+     with BackgroundSizeProps[ThemeType, BackgroundSize[TLengthStyledSystem]]
+     with BackgroundPositionProps[ThemeType, BackgroundPosition[TLengthStyledSystem]]
      with BackgroundRepeatProps[ThemeType] {
   
   /**
@@ -40,6 +36,6 @@ object BackgroundProps {
     
     inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    inline def setBackgroundVarargs(value: (TVal | Null)*): Self = StObject.set(x, "background", js.Array(value :_*))
+    inline def setBackgroundVarargs(value: (TVal | Null)*): Self = StObject.set(x, "background", js.Array(value*))
   }
 }

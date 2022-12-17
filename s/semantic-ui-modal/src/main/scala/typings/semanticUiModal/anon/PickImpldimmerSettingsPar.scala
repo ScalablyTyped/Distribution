@@ -30,7 +30,7 @@ trait PickImpldimmerSettingsPar
   
   var detachable: js.UndefOr[Boolean] = js.undefined
   
-  var dimmerSettings: DimmerSettings & js.UndefOr[DimmerSettings]
+  var dimmerSettings: DimmerSettings
   
   var duration: js.UndefOr[Double] = js.undefined
   
@@ -72,7 +72,7 @@ trait PickImpldimmerSettingsPar
 }
 object PickImpldimmerSettingsPar {
   
-  inline def apply(dimmerSettings: DimmerSettings & js.UndefOr[DimmerSettings]): PickImpldimmerSettingsPar = {
+  inline def apply(dimmerSettings: DimmerSettings): PickImpldimmerSettingsPar = {
     val __obj = js.Dynamic.literal(dimmerSettings = dimmerSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldimmerSettingsPar]
   }
@@ -107,7 +107,7 @@ object PickImpldimmerSettingsPar {
     
     inline def setDetachableUndefined: Self = StObject.set(x, "detachable", js.undefined)
     
-    inline def setDimmerSettings(value: DimmerSettings & js.UndefOr[DimmerSettings]): Self = StObject.set(x, "dimmerSettings", value.asInstanceOf[js.Any])
+    inline def setDimmerSettings(value: DimmerSettings): Self = StObject.set(x, "dimmerSettings", value.asInstanceOf[js.Any])
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

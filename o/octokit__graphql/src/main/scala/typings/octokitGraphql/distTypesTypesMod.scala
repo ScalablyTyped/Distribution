@@ -141,7 +141,7 @@ object distTypesTypesMod {
     def endpoint_url[O /* <: typings.octokitTypes.distTypesRequestParametersMod.RequestParameters */](
       options: O & Method & (/* import warning: importer.ImportType#apply Failed type conversion: 'url' extends keyof object ? {  url :string | undefined} : {  url :string} */ js.Any)
     ): RequestOptions & (Pick[
-        js.Object & O, 
+        O, 
         /* keyof @octokit/types.@octokit/types/dist-types/RequestOptions.RequestOptions */ method | url | headers | body | request
       ]) = js.native
   }

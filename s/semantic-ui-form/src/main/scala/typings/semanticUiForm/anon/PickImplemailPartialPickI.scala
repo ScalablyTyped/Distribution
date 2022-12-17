@@ -26,7 +26,7 @@ trait PickImplemailPartialPickI
   
   var doesntContainExactly: js.UndefOr[String] = js.undefined
   
-  var email: String & js.UndefOr[String]
+  var email: String
   
   var empty: js.UndefOr[String] = js.undefined
   
@@ -64,7 +64,7 @@ trait PickImplemailPartialPickI
 }
 object PickImplemailPartialPickI {
   
-  inline def apply(email: String & js.UndefOr[String]): PickImplemailPartialPickI = {
+  inline def apply(email: String): PickImplemailPartialPickI = {
     val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplemailPartialPickI]
   }
@@ -103,7 +103,7 @@ object PickImplemailPartialPickI {
     
     inline def setDoesntContainUndefined: Self = StObject.set(x, "doesntContain", js.undefined)
     
-    inline def setEmail(value: String & js.UndefOr[String]): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     inline def setEmpty(value: String): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
     

@@ -67,7 +67,7 @@ object typesTabsManagerMod {
       * An optional id to use for the tab if the default generated ids are not to
       * your liking.
       */
-    var id: js.UndefOr[String] & String
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * Boolean if the icon and text should be stacked instead of rendered inline.
@@ -82,8 +82,8 @@ object typesTabsManagerMod {
   }
   object InitializedTabConfig {
     
-    inline def apply(id: js.UndefOr[String] & String): InitializedTabConfig = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    inline def apply(): InitializedTabConfig = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InitializedTabConfig]
     }
     
@@ -117,7 +117,9 @@ object typesTabsManagerMod {
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      inline def setId(value: js.UndefOr[String] & String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
       inline def setStacked(value: Boolean): Self = StObject.set(x, "stacked", value.asInstanceOf[js.Any])
       

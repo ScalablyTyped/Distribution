@@ -6,21 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Source extends StObject {
   
-  var source: EndAngle
+  var source: StartAngle
   
-  var target: EndAngle
+  var target: StartAngle
 }
 object Source {
   
-  inline def apply(source: EndAngle, target: EndAngle): Source = {
+  inline def apply(source: StartAngle, target: StartAngle): Source = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[Source]
   }
   
   extension [Self <: Source](x: Self) {
     
-    inline def setSource(value: EndAngle): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: StartAngle): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    inline def setTarget(value: EndAngle): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: StartAngle): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

@@ -34,7 +34,7 @@ trait PickImplintegerPartialPic
   
   var exactLength: js.UndefOr[String] = js.undefined
   
-  var integer: String & js.UndefOr[String]
+  var integer: String
   
   var is: js.UndefOr[String] = js.undefined
   
@@ -64,7 +64,7 @@ trait PickImplintegerPartialPic
 }
 object PickImplintegerPartialPic {
   
-  inline def apply(integer: String & js.UndefOr[String]): PickImplintegerPartialPic = {
+  inline def apply(integer: String): PickImplintegerPartialPic = {
     val __obj = js.Dynamic.literal(integer = integer.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplintegerPartialPic]
   }
@@ -119,7 +119,7 @@ object PickImplintegerPartialPic {
     
     inline def setExactLengthUndefined: Self = StObject.set(x, "exactLength", js.undefined)
     
-    inline def setInteger(value: String & js.UndefOr[String]): Self = StObject.set(x, "integer", value.asInstanceOf[js.Any])
+    inline def setInteger(value: String): Self = StObject.set(x, "integer", value.asInstanceOf[js.Any])
     
     inline def setIs(value: String): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
     

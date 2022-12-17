@@ -112,167 +112,167 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Typeofui extends StObject {
   
-  var ActionSheet: (Instantiable2[
+  var ActionSheet: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[ActionSheetOptions], 
     typings.kendoUi.kendo.ui.ActionSheet
-  ]) & TypeofActionSheet = js.native
+  ] = js.native
   
-  var Alert: (Instantiable2[
+  var Alert: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[AlertOptions], 
     typings.kendoUi.kendo.ui.Alert
-  ]) & TypeofAlert = js.native
+  ] = js.native
   
-  var AppBar: (Instantiable2[
+  var AppBar: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[AppBarOptions], 
     typings.kendoUi.kendo.ui.AppBar
-  ]) & TypeofAppBar = js.native
+  ] = js.native
   
-  var AutoComplete: (Instantiable2[
+  var AutoComplete: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[AutoCompleteOptions], 
     typings.kendoUi.kendo.ui.AutoComplete
-  ]) & TypeofAutoComplete = js.native
+  ] = js.native
   
-  var Avatar: (Instantiable2[
+  var Avatar: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[AvatarOptions], 
     typings.kendoUi.kendo.ui.Avatar
-  ]) & TypeofAvatar = js.native
+  ] = js.native
   
-  var Badge: (Instantiable2[
+  var Badge: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[BadgeOptions], 
     typings.kendoUi.kendo.ui.Badge
-  ]) & TypeofBadge = js.native
+  ] = js.native
   
-  var BottomNavigation: (Instantiable2[
+  var BottomNavigation: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[BottomNavigationOptions], 
     typings.kendoUi.kendo.ui.BottomNavigation
-  ]) & TypeofBottomNavigation = js.native
+  ] = js.native
   
-  var Breadcrumb: (Instantiable2[
+  var Breadcrumb: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[BreadcrumbOptions], 
     typings.kendoUi.kendo.ui.Breadcrumb
-  ]) & TypeofBreadcrumb = js.native
+  ] = js.native
   
-  var Button: (Instantiable2[
+  var Button: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[ButtonOptions], 
     typings.kendoUi.kendo.ui.Button
-  ]) & TypeofButton = js.native
+  ] = js.native
   
-  var ButtonGroup: (Instantiable2[
+  var ButtonGroup: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[ButtonGroupOptions], 
     typings.kendoUi.kendo.ui.ButtonGroup
-  ]) & TypeofButtonGroup = js.native
+  ] = js.native
   
-  var Calendar: (Instantiable2[
+  var Calendar: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[CalendarOptions], 
     typings.kendoUi.kendo.ui.Calendar
-  ]) & TypeofCalendar = js.native
+  ] = js.native
   
-  var Captcha: (Instantiable2[
+  var Captcha: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[CaptchaOptions], 
     typings.kendoUi.kendo.ui.Captcha
-  ]) & TypeofCaptcha = js.native
+  ] = js.native
   
-  var Chat: (Instantiable2[
+  var Chat: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[ChatOptions], 
     typings.kendoUi.kendo.ui.Chat
-  ]) & TypeofChat = js.native
+  ] = js.native
   
-  var CheckBox: (Instantiable2[
+  var CheckBox: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[CheckBoxOptions], 
     typings.kendoUi.kendo.ui.CheckBox
-  ]) & TypeofCheckBox = js.native
+  ] = js.native
   
-  var CheckBoxGroup: (Instantiable2[
+  var CheckBoxGroup: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[CheckBoxGroupOptions], 
     typings.kendoUi.kendo.ui.CheckBoxGroup
-  ]) & TypeofCheckBoxGroup = js.native
+  ] = js.native
   
-  var CircularProgressBar: (Instantiable2[
+  var CircularProgressBar: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[CircularProgressBarOptions], 
     typings.kendoUi.kendo.ui.CircularProgressBar
-  ]) & TypeofCircularProgressBar = js.native
+  ] = js.native
   
-  var ColorGradient: (Instantiable2[
+  var ColorGradient: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[ColorGradientOptions], 
     typings.kendoUi.kendo.ui.ColorGradient
-  ]) & TypeofColorGradient = js.native
+  ] = js.native
   
-  var ColorPalette: (Instantiable2[
+  var ColorPalette: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[ColorPaletteOptions], 
     typings.kendoUi.kendo.ui.ColorPalette
-  ]) & TypeofColorPalette = js.native
+  ] = js.native
   
-  var ColorPicker: (Instantiable2[
+  var ColorPicker: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[ColorPickerOptions], 
     typings.kendoUi.kendo.ui.ColorPicker
-  ]) & TypeofColorPicker = js.native
+  ] = js.native
   
-  var ComboBox: (Instantiable2[
+  var ComboBox: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[ComboBoxOptions], 
     typings.kendoUi.kendo.ui.ComboBox
-  ]) & TypeofComboBox = js.native
+  ] = js.native
   
-  var Confirm: (Instantiable2[
+  var Confirm: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[ConfirmOptions], 
     typings.kendoUi.kendo.ui.Confirm
-  ]) & TypeofConfirm = js.native
+  ] = js.native
   
-  var ContextMenu: (Instantiable2[
+  var ContextMenu: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[ContextMenuOptions], 
     typings.kendoUi.kendo.ui.ContextMenu
-  ]) & TypeofContextMenu = js.native
+  ] = js.native
   
-  var DateInput: (Instantiable2[
+  var DateInput: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[DateInputOptions], 
     typings.kendoUi.kendo.ui.DateInput
-  ]) & TypeofDateInput = js.native
+  ] = js.native
   
-  var DatePicker: (Instantiable2[
+  var DatePicker: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[DatePickerOptions], 
     typings.kendoUi.kendo.ui.DatePicker
-  ]) & TypeofDatePicker = js.native
+  ] = js.native
   
-  var DateRangePicker: (Instantiable2[
+  var DateRangePicker: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[DateRangePickerOptions], 
     typings.kendoUi.kendo.ui.DateRangePicker
-  ]) & TypeofDateRangePicker = js.native
+  ] = js.native
   
-  var DateTimePicker: (Instantiable2[
+  var DateTimePicker: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[DateTimePickerOptions], 
     typings.kendoUi.kendo.ui.DateTimePicker
-  ]) & TypeofDateTimePicker = js.native
+  ] = js.native
   
-  var Dialog: (Instantiable2[
+  var Dialog: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[DialogOptions], 
     typings.kendoUi.kendo.ui.Dialog
-  ]) & TypeofDialog = js.native
+  ] = js.native
   
   var Draggable: Instantiable2[
     /* element */ Element, 
@@ -280,29 +280,29 @@ trait Typeofui extends StObject {
     typings.kendoUi.kendo.ui.Draggable
   ] = js.native
   
-  var Drawer: (Instantiable2[
+  var Drawer: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[DrawerOptions], 
     typings.kendoUi.kendo.ui.Drawer
-  ]) & TypeofDrawer = js.native
+  ] = js.native
   
-  var DropDownList: (Instantiable2[
+  var DropDownList: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[DropDownListOptions], 
     typings.kendoUi.kendo.ui.DropDownList
-  ]) & TypeofDropDownList = js.native
+  ] = js.native
   
-  var DropDownTree: (Instantiable2[
+  var DropDownTree: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[DropDownTreeOptions], 
     typings.kendoUi.kendo.ui.DropDownTree
-  ]) & TypeofDropDownTree = js.native
+  ] = js.native
   
-  var DropTarget: (Instantiable2[
+  var DropTarget: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[DropTargetOptions], 
     typings.kendoUi.kendo.ui.DropTarget
-  ]) & TypeofDropTarget = js.native
+  ] = js.native
   
   var DropTargetArea: Instantiable2[
     /* element */ Element, 
@@ -310,395 +310,395 @@ trait Typeofui extends StObject {
     typings.kendoUi.kendo.ui.DropTargetArea
   ] = js.native
   
-  var Editor: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[EditorOptions], Editor_]) & TypeofEditor_ = js.native
+  var Editor: Instantiable2[/* element */ Element, /* options */ js.UndefOr[EditorOptions], Editor_] = js.native
   
-  var ExpansionPanel: (Instantiable2[
+  var ExpansionPanel: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[ExpansionPanelOptions], 
     typings.kendoUi.kendo.ui.ExpansionPanel
-  ]) & TypeofExpansionPanel = js.native
+  ] = js.native
   
-  var FileManager: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[FileManagerOptions], FileManager_]) & TypeofFileManager_ = js.native
+  var FileManager: Instantiable2[/* element */ Element, /* options */ js.UndefOr[FileManagerOptions], FileManager_] = js.native
   
-  var Filter: (Instantiable2[
+  var Filter: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[FilterOptions], 
     typings.kendoUi.kendo.ui.Filter
-  ]) & TypeofFilter = js.native
+  ] = js.native
   
-  var FilterMenu: (Instantiable2[
+  var FilterMenu: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[FilterMenuOptions], 
     typings.kendoUi.kendo.ui.FilterMenu
-  ]) & TypeofFilterMenu = js.native
+  ] = js.native
   
-  var FlatColorPicker: (Instantiable2[
+  var FlatColorPicker: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[FlatColorPickerOptions], 
     typings.kendoUi.kendo.ui.FlatColorPicker
-  ]) & TypeofFlatColorPicker = js.native
+  ] = js.native
   
-  var FloatingActionButton: (Instantiable2[
+  var FloatingActionButton: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[FloatingActionButtonOptions], 
     typings.kendoUi.kendo.ui.FloatingActionButton
-  ]) & TypeofFloatingActionButto = js.native
+  ] = js.native
   
-  var Form: (Instantiable2[
+  var Form: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[FormOptions], 
     typings.kendoUi.kendo.ui.Form
-  ]) & TypeofForm = js.native
+  ] = js.native
   
-  var Gantt: (Instantiable2[
+  var Gantt: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[GanttOptions], 
     typings.kendoUi.kendo.ui.Gantt
-  ]) & TypeofGantt = js.native
+  ] = js.native
   
-  var Grid: (Instantiable2[
+  var Grid: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[GridOptions], 
     typings.kendoUi.kendo.ui.Grid
-  ]) & TypeofGrid = js.native
+  ] = js.native
   
-  var ImageEditor: (Instantiable2[
+  var ImageEditor: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[ImageEditorOptions], 
     typings.kendoUi.kendo.ui.ImageEditor
-  ]) & TypeofImageEditor = js.native
+  ] = js.native
   
-  var ListBox: (Instantiable2[
+  var ListBox: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[ListBoxOptions], 
     typings.kendoUi.kendo.ui.ListBox
-  ]) & TypeofListBox = js.native
+  ] = js.native
   
-  var ListView: (Instantiable2[
+  var ListView: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[ListViewOptions], 
     typings.kendoUi.kendo.ui.ListView
-  ]) & TypeofListView = js.native
+  ] = js.native
   
-  var Loader: (Instantiable2[
+  var Loader: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[LoaderOptions], 
     typings.kendoUi.kendo.ui.Loader
-  ]) & TypeofLoader = js.native
+  ] = js.native
   
-  var MaskedTextBox: (Instantiable2[
+  var MaskedTextBox: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[MaskedTextBoxOptions], 
     typings.kendoUi.kendo.ui.MaskedTextBox
-  ]) & TypeofMaskedTextBox = js.native
+  ] = js.native
   
-  var MediaPlayer: (Instantiable2[
+  var MediaPlayer: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[MediaPlayerOptions], 
     typings.kendoUi.kendo.ui.MediaPlayer
-  ]) & TypeofMediaPlayer = js.native
+  ] = js.native
   
-  var Menu: (Instantiable2[
+  var Menu: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[MenuOptions], 
     typings.kendoUi.kendo.ui.Menu
-  ]) & TypeofMenu = js.native
+  ] = js.native
   
-  var MultiColumnComboBox: (Instantiable2[
+  var MultiColumnComboBox: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[MultiColumnComboBoxOptions], 
     typings.kendoUi.kendo.ui.MultiColumnComboBox
-  ]) & TypeofMultiColumnComboBox = js.native
+  ] = js.native
   
-  var MultiSelect: (Instantiable2[
+  var MultiSelect: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[MultiSelectOptions], 
     typings.kendoUi.kendo.ui.MultiSelect
-  ]) & TypeofMultiSelect = js.native
+  ] = js.native
   
-  var MultiViewCalendar: (Instantiable2[
+  var MultiViewCalendar: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[MultiViewCalendarOptions], 
     typings.kendoUi.kendo.ui.MultiViewCalendar
-  ]) & TypeofMultiViewCalendar = js.native
+  ] = js.native
   
-  var Notification: (Instantiable2[
+  var Notification: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[NotificationOptions], 
     typings.kendoUi.kendo.ui.Notification
-  ]) & TypeofNotification = js.native
+  ] = js.native
   
-  var NumericTextBox: (Instantiable2[
+  var NumericTextBox: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[NumericTextBoxOptions], 
     typings.kendoUi.kendo.ui.NumericTextBox
-  ]) & TypeofNumericTextBox = js.native
+  ] = js.native
   
-  var OrgChart: (Instantiable2[
+  var OrgChart: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[OrgChartOptions], 
     typings.kendoUi.kendo.ui.OrgChart
-  ]) & TypeofOrgChart = js.native
+  ] = js.native
   
-  var PDFViewer: (Instantiable2[
+  var PDFViewer: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[PDFViewerOptions], 
     typings.kendoUi.kendo.ui.PDFViewer
-  ]) & TypeofPDFViewer = js.native
+  ] = js.native
   
-  var Pager: (Instantiable2[
+  var Pager: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[PagerOptions], 
     typings.kendoUi.kendo.ui.Pager
-  ]) & TypeofPager = js.native
+  ] = js.native
   
-  var PanelBar: (Instantiable2[
+  var PanelBar: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[PanelBarOptions], 
     typings.kendoUi.kendo.ui.PanelBar
-  ]) & TypeofPanelBar = js.native
+  ] = js.native
   
-  var PivotConfigurator: (Instantiable2[
+  var PivotConfigurator: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[PivotConfiguratorOptions], 
     typings.kendoUi.kendo.ui.PivotConfigurator
-  ]) & TypeofPivotConfigurator = js.native
+  ] = js.native
   
-  var PivotConfiguratorButton: (Instantiable2[
+  var PivotConfiguratorButton: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[PivotConfiguratorButtonOptions], 
     typings.kendoUi.kendo.ui.PivotConfiguratorButton
-  ]) & TypeofPivotConfiguratorBu = js.native
+  ] = js.native
   
-  var PivotConfiguratorV2: (Instantiable2[
+  var PivotConfiguratorV2: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[PivotConfiguratorV2Options], 
     typings.kendoUi.kendo.ui.PivotConfiguratorV2
-  ]) & TypeofPivotConfiguratorV2 = js.native
+  ] = js.native
   
-  var PivotContainer: (Instantiable2[
+  var PivotContainer: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[PivotContainerOptions], 
     typings.kendoUi.kendo.ui.PivotContainer
-  ]) & TypeofPivotContainer = js.native
+  ] = js.native
   
-  var PivotGrid: (Instantiable2[
+  var PivotGrid: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[PivotGridOptions], 
     typings.kendoUi.kendo.ui.PivotGrid
-  ]) & TypeofPivotGrid = js.native
+  ] = js.native
   
-  var PivotGridV2: (Instantiable2[
+  var PivotGridV2: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[PivotGridV2Options], 
     typings.kendoUi.kendo.ui.PivotGridV2
-  ]) & TypeofPivotGridV2 = js.native
+  ] = js.native
   
-  var Popover: (Instantiable2[
+  var Popover: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[PopoverOptions], 
     typings.kendoUi.kendo.ui.Popover
-  ]) & TypeofPopover = js.native
+  ] = js.native
   
-  var Popup: (Instantiable2[
+  var Popup: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[PopupOptions], 
     typings.kendoUi.kendo.ui.Popup
-  ]) & TypeofPopup = js.native
+  ] = js.native
   
-  var ProgressBar: (Instantiable2[
+  var ProgressBar: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[ProgressBarOptions], 
     typings.kendoUi.kendo.ui.ProgressBar
-  ]) & TypeofProgressBar = js.native
+  ] = js.native
   
-  var Prompt: (Instantiable2[
+  var Prompt: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[PromptOptions], 
     typings.kendoUi.kendo.ui.Prompt
-  ]) & TypeofPrompt = js.native
+  ] = js.native
   
-  var RadioButton: (Instantiable2[
+  var RadioButton: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[RadioButtonOptions], 
     typings.kendoUi.kendo.ui.RadioButton
-  ]) & TypeofRadioButton = js.native
+  ] = js.native
   
-  var RadioGroup: (Instantiable2[
+  var RadioGroup: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[RadioGroupOptions], 
     typings.kendoUi.kendo.ui.RadioGroup
-  ]) & TypeofRadioGroup = js.native
+  ] = js.native
   
-  var RangeSlider: (Instantiable2[
+  var RangeSlider: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[RangeSliderOptions], 
     typings.kendoUi.kendo.ui.RangeSlider
-  ]) & TypeofRangeSlider = js.native
+  ] = js.native
   
-  var Rating: (Instantiable2[
+  var Rating: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[RatingOptions], 
     typings.kendoUi.kendo.ui.Rating
-  ]) & TypeofRating = js.native
+  ] = js.native
   
-  var ResponsivePanel: (Instantiable2[
+  var ResponsivePanel: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[ResponsivePanelOptions], 
     typings.kendoUi.kendo.ui.ResponsivePanel
-  ]) & TypeofResponsivePanel = js.native
+  ] = js.native
   
-  var Scheduler: (Instantiable2[
+  var Scheduler: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[SchedulerOptions], 
     typings.kendoUi.kendo.ui.Scheduler
-  ]) & TypeofScheduler = js.native
+  ] = js.native
   
-  var ScrollView: (Instantiable2[
+  var ScrollView: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[ScrollViewOptions], 
     typings.kendoUi.kendo.ui.ScrollView
-  ]) & TypeofScrollView = js.native
+  ] = js.native
   
-  var SkeletonContainer: (Instantiable2[
+  var SkeletonContainer: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[SkeletonContainerOptions], 
     typings.kendoUi.kendo.ui.SkeletonContainer
-  ]) & TypeofSkeletonContainer = js.native
+  ] = js.native
   
-  var Slider: (Instantiable2[
+  var Slider: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[SliderOptions], 
     typings.kendoUi.kendo.ui.Slider
-  ]) & TypeofSlider = js.native
+  ] = js.native
   
-  var Sortable: (Instantiable2[
+  var Sortable: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[SortableOptions], 
     typings.kendoUi.kendo.ui.Sortable
-  ]) & TypeofSortable = js.native
+  ] = js.native
   
-  var Splitter: (Instantiable2[
+  var Splitter: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[SplitterOptions], 
     typings.kendoUi.kendo.ui.Splitter
-  ]) & TypeofSplitter = js.native
+  ] = js.native
   
-  var Spreadsheet: (Instantiable2[
+  var Spreadsheet: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[SpreadsheetOptions], 
     typings.kendoUi.kendo.ui.Spreadsheet
-  ]) & TypeofSpreadsheet = js.native
+  ] = js.native
   
-  var Stepper: (Instantiable2[
+  var Stepper: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[StepperOptions], 
     typings.kendoUi.kendo.ui.Stepper
-  ]) & TypeofStepper = js.native
+  ] = js.native
   
-  var Switch: (Instantiable2[
+  var Switch: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[SwitchOptions], 
     typings.kendoUi.kendo.ui.Switch
-  ]) & TypeofSwitch = js.native
+  ] = js.native
   
-  var TabStrip: (Instantiable2[
+  var TabStrip: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[TabStripOptions], 
     typings.kendoUi.kendo.ui.TabStrip
-  ]) & TypeofTabStrip = js.native
+  ] = js.native
   
-  var TaskBoard: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[TaskBoardOptions], TaskBoard_]) & TypeofTaskBoard_ = js.native
+  var TaskBoard: Instantiable2[/* element */ Element, /* options */ js.UndefOr[TaskBoardOptions], TaskBoard_] = js.native
   
-  var TextArea: (Instantiable2[
+  var TextArea: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[TextAreaOptions], 
     typings.kendoUi.kendo.ui.TextArea
-  ]) & TypeofTextArea = js.native
+  ] = js.native
   
-  var TextBox: (Instantiable2[
+  var TextBox: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[TextBoxOptions], 
     typings.kendoUi.kendo.ui.TextBox
-  ]) & TypeofTextBox = js.native
+  ] = js.native
   
-  var TileLayout: (Instantiable2[
+  var TileLayout: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[TileLayoutOptions], 
     typings.kendoUi.kendo.ui.TileLayout
-  ]) & TypeofTileLayout = js.native
+  ] = js.native
   
-  var TimePicker: (Instantiable2[
+  var TimePicker: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[TimePickerOptions], 
     typings.kendoUi.kendo.ui.TimePicker
-  ]) & TypeofTimePicker = js.native
+  ] = js.native
   
-  var Timeline: (Instantiable2[
+  var Timeline: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[TimelineOptions], 
     typings.kendoUi.kendo.ui.Timeline
-  ]) & TypeofTimeline = js.native
+  ] = js.native
   
-  var ToolBar: (Instantiable2[
+  var ToolBar: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[ToolBarOptions], 
     typings.kendoUi.kendo.ui.ToolBar
-  ]) & TypeofToolBar = js.native
+  ] = js.native
   
-  var Tooltip: (Instantiable2[
+  var Tooltip: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[TooltipOptions], 
     typings.kendoUi.kendo.ui.Tooltip
-  ]) & TypeofTooltip = js.native
+  ] = js.native
   
-  var Touch: (Instantiable2[
+  var Touch: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[TouchOptions], 
     typings.kendoUi.kendo.ui.Touch
-  ]) & TypeofTouch = js.native
+  ] = js.native
   
-  var TreeList: (Instantiable2[
+  var TreeList: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[TreeListOptions], 
     typings.kendoUi.kendo.ui.TreeList
-  ]) & TypeofTreeList = js.native
+  ] = js.native
   
-  var TreeView: (Instantiable2[
+  var TreeView: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[TreeViewOptions], 
     typings.kendoUi.kendo.ui.TreeView
-  ]) & TypeofTreeView = js.native
+  ] = js.native
   
-  var Upload: (Instantiable2[
+  var Upload: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[UploadOptions], 
     typings.kendoUi.kendo.ui.Upload
-  ]) & TypeofUpload = js.native
+  ] = js.native
   
-  var Validator: (Instantiable2[
+  var Validator: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[ValidatorOptions], 
     typings.kendoUi.kendo.ui.Validator
-  ]) & TypeofValidator = js.native
+  ] = js.native
   
-  var Widget: (Instantiable2[
+  var Widget: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[js.Object], 
     typings.kendoUi.kendo.ui.Widget
-  ]) & TypeofWidget = js.native
+  ] = js.native
   
-  var Window: (Instantiable2[
+  var Window: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[WindowOptions], 
     typings.kendoUi.kendo.ui.Window
-  ]) & TypeofWindow = js.native
+  ] = js.native
   
-  var Wizard: (Instantiable2[
+  var Wizard: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[WizardOptions], 
     typings.kendoUi.kendo.ui.Wizard
-  ]) & TypeofWizard = js.native
+  ] = js.native
   
   val editor: Typeofeditor = js.native
   

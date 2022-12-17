@@ -7,7 +7,6 @@ import typings.react.mod.SyntheticEvent
 import typings.reactBigCalendar.anon.Accessors
 import typings.reactBigCalendar.anon.ClassName
 import typings.reactBigCalendar.anon.End
-import typings.reactBigCalendar.anon.Style
 import typings.reactBigCalendar.anon.X
 import typings.reactBigCalendar.reactBigCalendarStrings.ignoreEvents
 import typings.std.HTMLDivElement
@@ -31,7 +30,7 @@ trait ViewProps[TEvent /* <: js.Object */, TResource /* <: js.Object */] extends
   
   var components: Any
   
-  var date: js.UndefOr[stringOrDate] & stringOrDate
+  var date: js.UndefOr[stringOrDate] = js.undefined
   
   var dayLayoutAlgorithm: js.UndefOr[DayLayoutAlgorithm | DayLayoutFunction[TEvent]] = js.undefined
   
@@ -54,14 +53,14 @@ trait ViewProps[TEvent /* <: js.Object */, TResource /* <: js.Object */] extends
   var events: js.UndefOr[js.Array[TEvent]] = js.undefined
   
   // props assigned from Calendar instance, see there if you want to improve the type defs:
-  var getDrilldownView: (js.UndefOr[
+  var getDrilldownView: js.UndefOr[
     (js.Function3[
       /* targetDate */ js.Date, 
       /* currentViewName */ View, 
       /* configuredViewNames */ js.Array[View], 
       Unit
     ]) | Null
-  ]) & Any
+  ] = js.undefined
   
   var getNow: js.UndefOr[js.Function0[js.UndefOr[stringOrDate]]] = js.undefined
   
@@ -71,7 +70,7 @@ trait ViewProps[TEvent /* <: js.Object */, TResource /* <: js.Object */] extends
   
   var length: js.UndefOr[Double] = js.undefined
   
-  var localizer: DateLocalizer & Any
+  var localizer: DateLocalizer
   
   var longPressThreshold: js.UndefOr[Double] = js.undefined
   
@@ -80,33 +79,33 @@ trait ViewProps[TEvent /* <: js.Object */, TResource /* <: js.Object */] extends
   var min: js.UndefOr[js.Date] = js.undefined
   
   // = this.handleSelectEvent
-  var onDoubleClickEvent: (js.UndefOr[
+  var onDoubleClickEvent: js.UndefOr[
     js.Function2[/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, typings.std.Event], Unit]
-  ]) & Any
+  ] = js.undefined
   
   // = this.handleNavigate
-  var onDrillDown: (js.UndefOr[js.Function2[/* date */ js.Date, /* view */ View, Unit]]) & Any
+  var onDrillDown: js.UndefOr[js.Function2[/* date */ js.Date, /* view */ View, Unit]] = js.undefined
   
   var onKeyPressEvent: js.UndefOr[
     js.Function2[/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, typings.std.Event], Unit]
   ] = js.undefined
   
   // = this.getDrilldownView
-  var onNavigate: (js.UndefOr[
+  var onNavigate: js.UndefOr[
     js.Function3[/* newDate */ js.Date, /* view */ View, /* action */ NavigateAction, Unit]
-  ]) & Any
+  ] = js.undefined
   
   var onRangeChange: js.UndefOr[
     js.Function2[/* range */ js.Array[js.Date] | End, /* view */ js.UndefOr[View], js.UndefOr[Unit]]
   ] = js.undefined
   
   // = this.handleDrillDown
-  var onSelectEvent: (js.UndefOr[
+  var onSelectEvent: js.UndefOr[
     js.Function2[/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, typings.std.Event], Unit]
-  ]) & Any
+  ] = js.undefined
   
   // = this.handleDoubleClickEvent
-  var onSelectSlot: (js.UndefOr[js.Function1[/* slotInfo */ SlotInfo, Unit]]) & Any
+  var onSelectSlot: js.UndefOr[js.Function1[/* slotInfo */ SlotInfo, Unit]] = js.undefined
   
   var onSelecting: js.UndefOr[js.Function1[/* range */ End, js.UndefOr[Boolean]]] = js.undefined
   
@@ -158,33 +157,8 @@ trait ViewProps[TEvent /* <: js.Object */, TResource /* <: js.Object */] extends
 }
 object ViewProps {
   
-  inline def apply[TEvent /* <: js.Object */, TResource /* <: js.Object */](
-    accessors: Any,
-    components: Any,
-    date: js.UndefOr[stringOrDate] & stringOrDate,
-    getDrilldownView: (js.UndefOr[
-      (js.Function3[
-        /* targetDate */ js.Date, 
-        /* currentViewName */ View, 
-        /* configuredViewNames */ js.Array[View], 
-        Unit
-      ]) | Null
-    ]) & Any,
-    getters: Any,
-    localizer: DateLocalizer & Any,
-    onDoubleClickEvent: (js.UndefOr[
-      js.Function2[/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, typings.std.Event], Unit]
-    ]) & Any,
-    onDrillDown: (js.UndefOr[js.Function2[/* date */ js.Date, /* view */ View, Unit]]) & Any,
-    onNavigate: (js.UndefOr[
-      js.Function3[/* newDate */ js.Date, /* view */ View, /* action */ NavigateAction, Unit]
-    ]) & Any,
-    onSelectEvent: (js.UndefOr[
-      js.Function2[/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, typings.std.Event], Unit]
-    ]) & Any,
-    onSelectSlot: (js.UndefOr[js.Function1[/* slotInfo */ SlotInfo, Unit]]) & Any
-  ): ViewProps[TEvent, TResource] = {
-    val __obj = js.Dynamic.literal(accessors = accessors.asInstanceOf[js.Any], components = components.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], getDrilldownView = getDrilldownView.asInstanceOf[js.Any], getters = getters.asInstanceOf[js.Any], localizer = localizer.asInstanceOf[js.Any], onDoubleClickEvent = onDoubleClickEvent.asInstanceOf[js.Any], onDrillDown = onDrillDown.asInstanceOf[js.Any], onNavigate = onNavigate.asInstanceOf[js.Any], onSelectEvent = onSelectEvent.asInstanceOf[js.Any], onSelectSlot = onSelectSlot.asInstanceOf[js.Any])
+  inline def apply[TEvent /* <: js.Object */, TResource /* <: js.Object */](accessors: Any, components: Any, getters: Any, localizer: DateLocalizer): ViewProps[TEvent, TResource] = {
+    val __obj = js.Dynamic.literal(accessors = accessors.asInstanceOf[js.Any], components = components.asInstanceOf[js.Any], getters = getters.asInstanceOf[js.Any], localizer = localizer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewProps[TEvent, TResource]]
   }
   
@@ -210,11 +184,13 @@ object ViewProps {
     
     inline def setComponents(value: Any): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
-    inline def setDate(value: js.UndefOr[stringOrDate] & stringOrDate): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: stringOrDate): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     inline def setDayLayoutAlgorithm(value: DayLayoutAlgorithm | DayLayoutFunction[TEvent]): Self = StObject.set(x, "dayLayoutAlgorithm", value.asInstanceOf[js.Any])
     
-    inline def setDayLayoutAlgorithmFunction1(value: /* _ */ Accessors[TEvent] => js.Array[Style[TEvent]]): Self = StObject.set(x, "dayLayoutAlgorithm", js.Any.fromFunction1(value))
+    inline def setDayLayoutAlgorithmFunction1(value: /* _ */ Accessors[TEvent] => js.Array[typings.reactBigCalendar.anon.Event[TEvent]]): Self = StObject.set(x, "dayLayoutAlgorithm", js.Any.fromFunction1(value))
     
     inline def setDayLayoutAlgorithmUndefined: Self = StObject.set(x, "dayLayoutAlgorithm", js.undefined)
     
@@ -263,15 +239,12 @@ object ViewProps {
     inline def setEventsVarargs(value: TEvent*): Self = StObject.set(x, "events", js.Array(value*))
     
     inline def setGetDrilldownView(
-      value: (js.UndefOr[
-          (js.Function3[
-            /* targetDate */ js.Date, 
-            /* currentViewName */ View, 
-            /* configuredViewNames */ js.Array[View], 
-            Unit
-          ]) | Null
-        ]) & Any
-    ): Self = StObject.set(x, "getDrilldownView", value.asInstanceOf[js.Any])
+      value: (/* targetDate */ js.Date, /* currentViewName */ View, /* configuredViewNames */ js.Array[View]) => Unit
+    ): Self = StObject.set(x, "getDrilldownView", js.Any.fromFunction3(value))
+    
+    inline def setGetDrilldownViewNull: Self = StObject.set(x, "getDrilldownView", null)
+    
+    inline def setGetDrilldownViewUndefined: Self = StObject.set(x, "getDrilldownView", js.undefined)
     
     inline def setGetNow(value: () => js.UndefOr[stringOrDate]): Self = StObject.set(x, "getNow", js.Any.fromFunction0(value))
     
@@ -287,7 +260,7 @@ object ViewProps {
     
     inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    inline def setLocalizer(value: DateLocalizer & Any): Self = StObject.set(x, "localizer", value.asInstanceOf[js.Any])
+    inline def setLocalizer(value: DateLocalizer): Self = StObject.set(x, "localizer", value.asInstanceOf[js.Any])
     
     inline def setLongPressThreshold(value: Double): Self = StObject.set(x, "longPressThreshold", value.asInstanceOf[js.Any])
     
@@ -301,35 +274,33 @@ object ViewProps {
     
     inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    inline def setOnDoubleClickEvent(
-      value: (js.UndefOr[
-          js.Function2[/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, typings.std.Event], Unit]
-        ]) & Any
-    ): Self = StObject.set(x, "onDoubleClickEvent", value.asInstanceOf[js.Any])
+    inline def setOnDoubleClickEvent(value: (/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, typings.std.Event]) => Unit): Self = StObject.set(x, "onDoubleClickEvent", js.Any.fromFunction2(value))
     
-    inline def setOnDrillDown(value: (js.UndefOr[js.Function2[/* date */ js.Date, /* view */ View, Unit]]) & Any): Self = StObject.set(x, "onDrillDown", value.asInstanceOf[js.Any])
+    inline def setOnDoubleClickEventUndefined: Self = StObject.set(x, "onDoubleClickEvent", js.undefined)
+    
+    inline def setOnDrillDown(value: (/* date */ js.Date, /* view */ View) => Unit): Self = StObject.set(x, "onDrillDown", js.Any.fromFunction2(value))
+    
+    inline def setOnDrillDownUndefined: Self = StObject.set(x, "onDrillDown", js.undefined)
     
     inline def setOnKeyPressEvent(value: (/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, typings.std.Event]) => Unit): Self = StObject.set(x, "onKeyPressEvent", js.Any.fromFunction2(value))
     
     inline def setOnKeyPressEventUndefined: Self = StObject.set(x, "onKeyPressEvent", js.undefined)
     
-    inline def setOnNavigate(
-      value: (js.UndefOr[
-          js.Function3[/* newDate */ js.Date, /* view */ View, /* action */ NavigateAction, Unit]
-        ]) & Any
-    ): Self = StObject.set(x, "onNavigate", value.asInstanceOf[js.Any])
+    inline def setOnNavigate(value: (/* newDate */ js.Date, /* view */ View, /* action */ NavigateAction) => Unit): Self = StObject.set(x, "onNavigate", js.Any.fromFunction3(value))
+    
+    inline def setOnNavigateUndefined: Self = StObject.set(x, "onNavigate", js.undefined)
     
     inline def setOnRangeChange(value: (/* range */ js.Array[js.Date] | End, /* view */ js.UndefOr[View]) => js.UndefOr[Unit]): Self = StObject.set(x, "onRangeChange", js.Any.fromFunction2(value))
     
     inline def setOnRangeChangeUndefined: Self = StObject.set(x, "onRangeChange", js.undefined)
     
-    inline def setOnSelectEvent(
-      value: (js.UndefOr[
-          js.Function2[/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, typings.std.Event], Unit]
-        ]) & Any
-    ): Self = StObject.set(x, "onSelectEvent", value.asInstanceOf[js.Any])
+    inline def setOnSelectEvent(value: (/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, typings.std.Event]) => Unit): Self = StObject.set(x, "onSelectEvent", js.Any.fromFunction2(value))
     
-    inline def setOnSelectSlot(value: (js.UndefOr[js.Function1[/* slotInfo */ SlotInfo, Unit]]) & Any): Self = StObject.set(x, "onSelectSlot", value.asInstanceOf[js.Any])
+    inline def setOnSelectEventUndefined: Self = StObject.set(x, "onSelectEvent", js.undefined)
+    
+    inline def setOnSelectSlot(value: /* slotInfo */ SlotInfo => Unit): Self = StObject.set(x, "onSelectSlot", js.Any.fromFunction1(value))
+    
+    inline def setOnSelectSlotUndefined: Self = StObject.set(x, "onSelectSlot", js.undefined)
     
     inline def setOnSelecting(value: /* range */ End => js.UndefOr[Boolean]): Self = StObject.set(x, "onSelecting", js.Any.fromFunction1(value))
     

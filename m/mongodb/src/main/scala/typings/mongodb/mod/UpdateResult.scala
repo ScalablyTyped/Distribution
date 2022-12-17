@@ -1,6 +1,5 @@
 package typings.mongodb.mod
 
-import typings.bson.mod.ObjectId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ trait UpdateResult extends StObject {
   var upsertedCount: scala.Double
   
   /** The identifier of the inserted document if an upsert took place */
-  var upsertedId: ObjectId
+  var upsertedId: typings.bson.mod.ObjectId
 }
 object UpdateResult {
   
@@ -29,7 +28,7 @@ object UpdateResult {
     matchedCount: scala.Double,
     modifiedCount: scala.Double,
     upsertedCount: scala.Double,
-    upsertedId: ObjectId
+    upsertedId: typings.bson.mod.ObjectId
   ): UpdateResult = {
     val __obj = js.Dynamic.literal(acknowledged = acknowledged.asInstanceOf[js.Any], matchedCount = matchedCount.asInstanceOf[js.Any], modifiedCount = modifiedCount.asInstanceOf[js.Any], upsertedCount = upsertedCount.asInstanceOf[js.Any], upsertedId = upsertedId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateResult]
@@ -45,6 +44,6 @@ object UpdateResult {
     
     inline def setUpsertedCount(value: scala.Double): Self = StObject.set(x, "upsertedCount", value.asInstanceOf[js.Any])
     
-    inline def setUpsertedId(value: ObjectId): Self = StObject.set(x, "upsertedId", value.asInstanceOf[js.Any])
+    inline def setUpsertedId(value: typings.bson.mod.ObjectId): Self = StObject.set(x, "upsertedId", value.asInstanceOf[js.Any])
   }
 }

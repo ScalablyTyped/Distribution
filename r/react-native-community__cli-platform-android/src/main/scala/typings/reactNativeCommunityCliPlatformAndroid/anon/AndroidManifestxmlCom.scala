@@ -10,11 +10,11 @@ trait AndroidManifestxmlCom extends StObject {
   var AndroidManifestDotxml: Any
   
   @JSName("com")
-  var com_ : SomeExampleReactPackagejava
+  var com_ : SomeExampleMainjava
 }
 object AndroidManifestxmlCom {
   
-  inline def apply(AndroidManifestDotxml: Any, com_ : SomeExampleReactPackagejava): AndroidManifestxmlCom = {
+  inline def apply(AndroidManifestDotxml: Any, com_ : SomeExampleMainjava): AndroidManifestxmlCom = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("AndroidManifest.xml")(AndroidManifestDotxml.asInstanceOf[js.Any])
     __obj.updateDynamic("com")(com_.asInstanceOf[js.Any])
@@ -25,6 +25,6 @@ object AndroidManifestxmlCom {
     
     inline def setAndroidManifestDotxml(value: Any): Self = StObject.set(x, "AndroidManifest.xml", value.asInstanceOf[js.Any])
     
-    inline def setCom_(value: SomeExampleReactPackagejava): Self = StObject.set(x, "com", value.asInstanceOf[js.Any])
+    inline def setCom_(value: SomeExampleMainjava): Self = StObject.set(x, "com", value.asInstanceOf[js.Any])
   }
 }

@@ -9,29 +9,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Commitmessage extends StObject {
   
-  /** @description Commit message for the merge commit. */
-  var commit_message: String
+  /** @description Extra detail to append to automatic commit message. */
+  var commit_message: js.UndefOr[String] = js.undefined
   
-  /** @description Title for the merge commit message. */
-  var commit_title: String
-  
-  var enabled_by: Avatarurl
+  /** @description Title for the automatic commit message. */
+  var commit_title: js.UndefOr[String] = js.undefined
   
   /**
-    * @description The merge method to use.
+    * @description Merge method to use. Possible values are `merge`, `squash` or `rebase`. Default is `merge`.
     * @enum {string}
     */
-  var merge_method: merge | squash | rebase
+  var merge_method: js.UndefOr[merge | squash | rebase] = js.undefined
+  
+  /** @description SHA that pull request head must match to allow merge. */
+  var sha: js.UndefOr[String] = js.undefined
 }
 object Commitmessage {
   
-  inline def apply(
-    commit_message: String,
-    commit_title: String,
-    enabled_by: Avatarurl,
-    merge_method: merge | squash | rebase
-  ): Commitmessage = {
-    val __obj = js.Dynamic.literal(commit_message = commit_message.asInstanceOf[js.Any], commit_title = commit_title.asInstanceOf[js.Any], enabled_by = enabled_by.asInstanceOf[js.Any], merge_method = merge_method.asInstanceOf[js.Any])
+  inline def apply(): Commitmessage = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Commitmessage]
   }
   
@@ -39,10 +35,18 @@ object Commitmessage {
     
     inline def setCommit_message(value: String): Self = StObject.set(x, "commit_message", value.asInstanceOf[js.Any])
     
+    inline def setCommit_messageUndefined: Self = StObject.set(x, "commit_message", js.undefined)
+    
     inline def setCommit_title(value: String): Self = StObject.set(x, "commit_title", value.asInstanceOf[js.Any])
     
-    inline def setEnabled_by(value: Avatarurl): Self = StObject.set(x, "enabled_by", value.asInstanceOf[js.Any])
+    inline def setCommit_titleUndefined: Self = StObject.set(x, "commit_title", js.undefined)
     
     inline def setMerge_method(value: merge | squash | rebase): Self = StObject.set(x, "merge_method", value.asInstanceOf[js.Any])
+    
+    inline def setMerge_methodUndefined: Self = StObject.set(x, "merge_method", js.undefined)
+    
+    inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
+    
+    inline def setShaUndefined: Self = StObject.set(x, "sha", js.undefined)
   }
 }

@@ -28,22 +28,25 @@ object mod extends Shortcut {
   /* augmented module */
   object reduxAugmentingMod {
     
-    type Dispatch[S] = js.Function1[/* asyncAction */ PromiseAction[S], Any]
-    
     /** 
     NOTE: Rewritten from type alias:
     {{{
-    type PromiseAction = (dispatch : redux-promise.redux-promise.redux.Dispatch<S>, getState : (): S | undefined): any
+    type Dispatch = <R>(asyncAction : redux-promise.redux-promise.redux.PromiseAction<S>): R
     }}}
     to avoid circular code involving: 
     - redux-promise.redux-promise.redux.Dispatch
     - redux-promise.redux-promise.redux.PromiseAction
     */
     @js.native
-    trait PromiseAction[S] extends StObject {
+    trait Dispatch[S] extends StObject {
       
-      def apply(dispatch: typings.reduxPromise.mod.reduxAugmentingMod.Dispatch[S]): Any = js.native
-      def apply(dispatch: typings.reduxPromise.mod.reduxAugmentingMod.Dispatch[S], getState: js.Function0[S]): Any = js.native
+      def apply[R](asyncAction: PromiseAction[S]): R = js.native
     }
+    
+    type PromiseAction[S] = js.Function2[
+        /* dispatch */ typings.reduxPromise.mod.reduxAugmentingMod.Dispatch[S], 
+        /* getState */ js.UndefOr[js.Function0[S]], 
+        Any
+      ]
   }
 }

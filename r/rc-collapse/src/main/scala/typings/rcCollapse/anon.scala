@@ -50,7 +50,7 @@ object anon {
     
     var accordion: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[ReactNode] & ReactNode
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -282,7 +282,7 @@ object anon {
       
       inline def setAccordionUndefined: Self = StObject.set(x, "accordion", js.undefined)
       
-      inline def setChildren(value: js.UndefOr[ReactNode] & ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       

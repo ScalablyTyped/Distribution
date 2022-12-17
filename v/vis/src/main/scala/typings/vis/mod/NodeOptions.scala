@@ -3,7 +3,7 @@ package typings.vis.mod
 import typings.vis.anon.BorderDashes
 import typings.vis.anon.Bottom
 import typings.vis.anon.Code
-import typings.vis.anon.Minimum
+import typings.vis.anon.Maximum
 import typings.vis.anon.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -64,7 +64,7 @@ trait NodeOptions extends StObject {
     * The node's label's lines will be broken on spaces to stay below the maximum and the node's width
     * will be set to the minimum if less than the value.
     */
-  var widthConstraint: js.UndefOr[Double | Boolean | Minimum] = js.undefined
+  var widthConstraint: js.UndefOr[Double | Boolean | Maximum] = js.undefined
   
   var x: js.UndefOr[Double] = js.undefined
   
@@ -175,7 +175,7 @@ object NodeOptions {
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    inline def setWidthConstraint(value: Double | Boolean | Minimum): Self = StObject.set(x, "widthConstraint", value.asInstanceOf[js.Any])
+    inline def setWidthConstraint(value: Double | Boolean | Maximum): Self = StObject.set(x, "widthConstraint", value.asInstanceOf[js.Any])
     
     inline def setWidthConstraintUndefined: Self = StObject.set(x, "widthConstraint", js.undefined)
     

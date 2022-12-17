@@ -10,7 +10,7 @@ trait Mode extends StObject {
   
   var flag: js.UndefOr[String] = js.undefined
   
-  var mode: js.UndefOr[String] = js.undefined
+  var mode: js.UndefOr[Double] = js.undefined
 }
 object Mode {
   
@@ -29,7 +29,7 @@ object Mode {
     
     inline def setFlagUndefined: Self = StObject.set(x, "flag", js.undefined)
     
-    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }

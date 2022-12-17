@@ -10,7 +10,7 @@ trait PickImplcheckedPartialPic
   extends StObject
      with Param {
   
-  var checked: String & js.UndefOr[String]
+  var checked: String
   
   var disabled: js.UndefOr[String] = js.undefined
   
@@ -20,14 +20,14 @@ trait PickImplcheckedPartialPic
 }
 object PickImplcheckedPartialPic {
   
-  inline def apply(checked: String & js.UndefOr[String]): PickImplcheckedPartialPic = {
+  inline def apply(checked: String): PickImplcheckedPartialPic = {
     val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplcheckedPartialPic]
   }
   
   extension [Self <: PickImplcheckedPartialPic](x: Self) {
     
-    inline def setChecked(value: String & js.UndefOr[String]): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+    inline def setChecked(value: String): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
     inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

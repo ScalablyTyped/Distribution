@@ -11,7 +11,7 @@ import typings.std.Event
 import typings.victoryCore.anon.After
 import typings.victoryCore.anon.Before
 import typings.victoryCore.anon.ValueOf
-import typings.victoryCore.anon.`3`
+import typings.victoryCore.anon.`2`
 import typings.victoryCore.libTypesCallbacksMod.StringOrNumberOrCallback
 import typings.victoryCore.libVictoryAnimationVictoryAnimationMod.AnimationEasing
 import org.scalablytyped.runtime.StObject
@@ -91,8 +91,8 @@ object libTypesPropTypesMod {
   
   /* Rewritten from type alias, can be one of: 
     - js.Array[java.lang.String]
-    - typings.victoryCore.anon.`1`
-    - typings.victoryCore.anon.`2`
+    - typings.victoryCore.anon.`3`
+    - typings.victoryCore.anon.`4`
     - typings.victoryCore.anon.XArrayYArray
   */
   type CategoryPropType = _CategoryPropType | js.Array[String]
@@ -274,7 +274,7 @@ object libTypesPropTypesMod {
     }
   }
   
-  type ForAxes[T] = T | `3`[T]
+  type ForAxes[T] = T | `2`[T]
   
   type ID = Double | String
   
@@ -513,14 +513,14 @@ object libTypesPropTypesMod {
   trait _CategoryPropType extends StObject
   object _CategoryPropType {
     
-    inline def `1`(x: js.Array[String]): typings.victoryCore.anon.`1` = {
+    inline def `3`(x: js.Array[String]): typings.victoryCore.anon.`3` = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.victoryCore.anon.`1`]
+      __obj.asInstanceOf[typings.victoryCore.anon.`3`]
     }
     
-    inline def `2`(y: js.Array[String]): typings.victoryCore.anon.`2` = {
+    inline def `4`(y: js.Array[String]): typings.victoryCore.anon.`4` = {
       val __obj = js.Dynamic.literal(y = y.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.victoryCore.anon.`2`]
+      __obj.asInstanceOf[typings.victoryCore.anon.`4`]
     }
     
     inline def XArrayYArray(x: js.Array[String], y: js.Array[String]): typings.victoryCore.anon.XArrayYArray = {

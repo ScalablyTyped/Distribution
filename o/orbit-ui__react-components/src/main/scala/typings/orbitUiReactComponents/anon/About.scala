@@ -61,7 +61,6 @@ import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEventHandler
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
-import typings.react.mod.LegacyRef
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
@@ -231,7 +230,7 @@ trait About extends StObject {
   
   var classID: js.UndefOr[String] = js.native
   
-  var className: js.UndefOr[String] & String = js.native
+  var className: js.UndefOr[String] = js.native
   
   var colSpan: js.UndefOr[Double] = js.native
   
@@ -517,7 +516,7 @@ trait About extends StObject {
   
   var onInvalidCapture: js.UndefOr[FormEventHandler[HTMLElement]] = js.native
   
-  var onKeyDown: Unit & js.UndefOr[KeyboardEventHandler[HTMLElement]] = js.native
+  var onKeyDown: Unit = js.native
   def onKeyDown(event: KeyboardEvent[Element]): Unit = js.native
   
   var onKeyDownCapture: js.UndefOr[KeyboardEventHandler[HTMLElement]] = js.native
@@ -720,7 +719,7 @@ trait About extends StObject {
   
   var readOnly: js.UndefOr[Boolean] = js.native
   
-  var ref: MergedRef[HTMLElement] & (js.UndefOr[LegacyRef[HTMLElement] & typings.react.mod.Ref[HTMLElement]]) = js.native
+  var ref: MergedRef[HTMLElement] = js.native
   
   var rel: js.UndefOr[String] = js.native
   
@@ -754,7 +753,7 @@ trait About extends StObject {
   
   var shape: js.UndefOr[String] = js.native
   
-  var show: Boolean & js.UndefOr[Boolean] = js.native
+  var show: Boolean = js.native
   
   var size: js.UndefOr[Double] = js.native
   

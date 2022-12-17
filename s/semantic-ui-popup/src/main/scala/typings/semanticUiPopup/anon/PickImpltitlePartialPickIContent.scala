@@ -18,13 +18,13 @@ trait PickImpltitlePartialPickIContent
   
   var position: js.UndefOr[String] = js.undefined
   
-  var title: String & js.UndefOr[String]
+  var title: String
   
   var variation: js.UndefOr[String] = js.undefined
 }
 object PickImpltitlePartialPickIContent {
   
-  inline def apply(title: String & js.UndefOr[String]): PickImpltitlePartialPickIContent = {
+  inline def apply(title: String): PickImpltitlePartialPickIContent = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpltitlePartialPickIContent]
   }
@@ -47,7 +47,7 @@ object PickImpltitlePartialPickIContent {
     
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    inline def setTitle(value: String & js.UndefOr[String]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setVariation(value: String): Self = StObject.set(x, "variation", value.asInstanceOf[js.Any])
     

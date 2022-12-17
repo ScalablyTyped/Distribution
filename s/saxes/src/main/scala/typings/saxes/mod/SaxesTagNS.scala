@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Required<saxes.saxes.SaxesTag> & {  attributes :std.Record<string, saxes.saxes.SaxesAttributeNS>} */
 trait SaxesTagNS extends StObject {
   
-  var attributes: (Record[String, SaxesAttributeNS | String]) & (Record[String, SaxesAttributeNS])
+  var attributes: Record[String, SaxesAttributeNS | String]
   
   var isSelfClosing: Boolean
   
@@ -25,7 +25,7 @@ trait SaxesTagNS extends StObject {
 object SaxesTagNS {
   
   inline def apply(
-    attributes: (Record[String, SaxesAttributeNS | String]) & (Record[String, SaxesAttributeNS]),
+    attributes: Record[String, SaxesAttributeNS | String],
     isSelfClosing: Boolean,
     local: String,
     name: String,
@@ -39,7 +39,7 @@ object SaxesTagNS {
   
   extension [Self <: SaxesTagNS](x: Self) {
     
-    inline def setAttributes(value: (Record[String, SaxesAttributeNS | String]) & (Record[String, SaxesAttributeNS])): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Record[String, SaxesAttributeNS | String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setIsSelfClosing(value: Boolean): Self = StObject.set(x, "isSelfClosing", value.asInstanceOf[js.Any])
     

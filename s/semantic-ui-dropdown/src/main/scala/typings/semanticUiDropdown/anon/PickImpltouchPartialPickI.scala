@@ -16,11 +16,11 @@ trait PickImpltouchPartialPickI
   
   var show: js.UndefOr[Double] = js.undefined
   
-  var touch: Double & js.UndefOr[Double]
+  var touch: Double
 }
 object PickImpltouchPartialPickI {
   
-  inline def apply(touch: Double & js.UndefOr[Double]): PickImpltouchPartialPickI = {
+  inline def apply(touch: Double): PickImpltouchPartialPickI = {
     val __obj = js.Dynamic.literal(touch = touch.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpltouchPartialPickI]
   }
@@ -39,6 +39,6 @@ object PickImpltouchPartialPickI {
     
     inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
-    inline def setTouch(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
+    inline def setTouch(value: Double): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
   }
 }

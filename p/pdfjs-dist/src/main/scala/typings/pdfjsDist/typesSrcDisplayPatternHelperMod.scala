@@ -43,7 +43,7 @@ object typesSrcDisplayPatternHelperMod {
     
     var color: Any = js.native
     
-    def createPatternCanvas(owner: Any): ScaleX = js.native
+    def createPatternCanvas(owner: Any): OffsetY = js.native
     
     var ctx: Any = js.native
     
@@ -110,7 +110,7 @@ object typesSrcDisplayPatternHelperMod {
     
     var _coords: Any
     
-    def _createMeshCanvas(combinedScale: Any, backgroundColor: Any, cachedCanvases: Any): OffsetY
+    def _createMeshCanvas(combinedScale: Any, backgroundColor: Any, cachedCanvases: Any): ScaleX
     
     var _figures: Any
     
@@ -126,7 +126,7 @@ object typesSrcDisplayPatternHelperMod {
       _bounds: Any,
       _colors: Any,
       _coords: Any,
-      _createMeshCanvas: (Any, Any, Any) => OffsetY,
+      _createMeshCanvas: (Any, Any, Any) => ScaleX,
       _figures: Any,
       getPattern: (Any, Any, Any, Any) => Any,
       matrix: Any
@@ -151,7 +151,7 @@ object typesSrcDisplayPatternHelperMod {
       
       inline def set_coords(value: Any): Self = StObject.set(x, "_coords", value.asInstanceOf[js.Any])
       
-      inline def set_createMeshCanvas(value: (Any, Any, Any) => OffsetY): Self = StObject.set(x, "_createMeshCanvas", js.Any.fromFunction3(value))
+      inline def set_createMeshCanvas(value: (Any, Any, Any) => ScaleX): Self = StObject.set(x, "_createMeshCanvas", js.Any.fromFunction3(value))
       
       inline def set_figures(value: Any): Self = StObject.set(x, "_figures", value.asInstanceOf[js.Any])
     }

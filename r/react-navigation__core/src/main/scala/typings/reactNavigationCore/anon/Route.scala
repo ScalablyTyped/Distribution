@@ -1,29 +1,28 @@
 package typings.reactNavigationCore.anon
 
-import typings.reactNavigationCore.libTypescriptSrcTypesMod.Keyof
 import typings.reactNavigationCore.libTypescriptSrcTypesMod.RouteProp
 import typings.reactNavigationRouters.libTypescriptSrcTypesMod.ParamListBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Route[ParamList /* <: ParamListBase */] extends StObject {
+trait Route[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] extends StObject {
   
   var navigation: Any
   
-  var route: RouteProp[ParamList, Keyof[ParamList]]
+  var route: RouteProp[ParamList, RouteName]
 }
 object Route {
   
-  inline def apply[ParamList /* <: ParamListBase */](navigation: Any, route: RouteProp[ParamList, Keyof[ParamList]]): Route[ParamList] = {
+  inline def apply[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */](navigation: Any, route: RouteProp[ParamList, RouteName]): Route[ParamList, RouteName] = {
     val __obj = js.Dynamic.literal(navigation = navigation.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Route[ParamList]]
+    __obj.asInstanceOf[Route[ParamList, RouteName]]
   }
   
-  extension [Self <: Route[?], ParamList /* <: ParamListBase */](x: Self & Route[ParamList]) {
+  extension [Self <: Route[?, ?], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */](x: Self & (Route[ParamList, RouteName])) {
     
     inline def setNavigation(value: Any): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     
-    inline def setRoute(value: RouteProp[ParamList, Keyof[ParamList]]): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+    inline def setRoute(value: RouteProp[ParamList, RouteName]): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
   }
 }

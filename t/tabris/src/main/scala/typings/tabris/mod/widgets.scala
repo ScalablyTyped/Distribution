@@ -5,6 +5,9 @@ import typings.std.Pick
 import typings.std.Record
 import typings.tabris.Blob
 import typings.tabris.anon.Animate
+import typings.tabris.anon.Children
+import typings.tabris.anon.InstantiableU
+import typings.tabris.anon.ModeTrigger
 import typings.tabris.anon.OmitActionset
 import typings.tabris.anon.OmitActivityIndicatorset
 import typings.tabris.anon.OmitButtonset
@@ -37,12 +40,9 @@ import typings.tabris.anon.OmitVideospeedpositiondur
 import typings.tabris.anon.OmitWebViewcanGoBackcanGo
 import typings.tabris.anon.PartialPickPickeritemText
 import typings.tabris.anon.PartialPickthiscellHeightCellHeight
-import typings.tabris.anon.`10`
-import typings.tabris.anon.`12`
-import typings.tabris.anon.`15`
-import typings.tabris.anon.`3`
+import typings.tabris.anon.`1`
+import typings.tabris.anon.`4`
 import typings.tabris.anon.`7`
-import typings.tabris.anon.`8`
 import typings.tabris.tabrisBooleans.`false`
 import typings.tabris.tabrisBooleans.`true`
 import typings.tabris.tabrisStrings.Asterisk
@@ -228,7 +228,7 @@ object widgets {
       * @constant
       */
     @JSName("jsxAttributes")
-    val jsxAttributes_Action: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `3` = js.native
+    val jsxAttributes_Action: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & Children = js.native
     
     /**
       * Fired when the [*image*](#image) property has changed.
@@ -283,7 +283,7 @@ object widgets {
       * @constant
       */
     @JSName("jsxAttributes")
-    val jsxAttributes_ActivityIndicator: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `3` = js.native
+    val jsxAttributes_ActivityIndicator: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & Children = js.native
     
     /**
       * Fired when the [*tintColor*](#tintColor) property has changed.
@@ -341,7 +341,7 @@ object widgets {
       * @constant
       */
     @JSName("jsxAttributes")
-    val jsxAttributes_Button: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `7` = js.native
+    val jsxAttributes_Button: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `1` = js.native
     
     /**
       * Fired when the [*alignment*](#alignment) property has changed.
@@ -454,7 +454,7 @@ object widgets {
       * @constant
       */
     @JSName("jsxAttributes")
-    val jsxAttributes_CameraView: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `3` = js.native
+    val jsxAttributes_CameraView: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & Children = js.native
     
     /**
       * Fired when the [*camera*](#camera) property has changed.
@@ -549,7 +549,7 @@ object widgets {
       * @constant
       */
     @JSName("jsxAttributes")
-    val jsxAttributes_CheckBox: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `3` = js.native
+    val jsxAttributes_CheckBox: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & Children = js.native
     
     /**
       * Fired when the [*checked*](#checked) property has changed.
@@ -710,7 +710,7 @@ object widgets {
       * @constant
       */
     @JSName("jsxAttributes")
-    val jsxAttributes_CollectionView: (JSXCompositeAttributes[this.type, Any]) & js.Object & PartialPickthiscellHeightCellHeight = js.native
+    val jsxAttributes_CollectionView: (JSXCompositeAttributes[this.type, Any]) & PartialPickthiscellHeightCellHeight = js.native
     
     /**
       * The index of the last item that is currently visible on screen.
@@ -918,7 +918,7 @@ object widgets {
       * @param options If mode is set to `'strict'` the function checks that all selector match at least one widget, and that id selector match exactly one widget. <br/>A `trigger` is string to be associated with the given rulset. If set to `'update'`, the ruleset will be applied once immediately and then again every time `apply('update')` is called. If set to any event-attribute name, such as `'onTap'`, it will automatically re-apply the ruleset when this event is triggered.
       * @param rules The ruleset to apply. May also be given as a callback which is passed to the widget instance and must return the actual ruleset.
       */
-    /* protected */ def _apply[Target](options: `8`[Target], rules: RuleSet[this.type]): this.type = js.native
+    /* protected */ def _apply[Target](options: ModeTrigger[Target], rules: RuleSet[this.type]): this.type = js.native
     /* protected */ @JSName("_apply")
     def _apply_update(trigger: update | Asterisk): this.type = js.native
     
@@ -1021,7 +1021,7 @@ object widgets {
       * @param rules The ruleset to apply. May also be given as a callback which is passed to the widget instance and must return the actual ruleset. This parameter can also be `null` if the `trigger` option is set. This will stop re-applying the ruleset previously associated with that trigger.
       */
     @JSName("apply")
-    def apply[Target](options: `8`[Target], rules: RuleSet[this.type]): this.type = js.native
+    def apply[Target](options: ModeTrigger[Target], rules: RuleSet[this.type]): this.type = js.native
     @JSName("apply")
     def apply_update(trigger: update | Asterisk): this.type = js.native
     
@@ -1096,7 +1096,7 @@ object widgets {
       * @constant
       */
     @JSName("jsxAttributes")
-    val jsxAttributes_ImageView: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `3` = js.native
+    val jsxAttributes_ImageView: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & Children = js.native
     
     /**
       * The highest amount the image can be zoomed in to. Setting the `maxZoomLevel` to a level smaller than
@@ -1284,7 +1284,7 @@ object widgets {
       * topmost page as the last element. Same as children(), but only accepts subclasses of `Page`.
       * @param constructor A class to filter the results.
       */
-    def pages[U /* <: typings.tabris.mod.Page */](constructor: `10`[U]): WidgetCollection[U] = js.native
+    def pages[U /* <: typings.tabris.mod.Page */](constructor: InstantiableU[U]): WidgetCollection[U] = js.native
     
     /**
       * The text color used for page titles.
@@ -1384,7 +1384,7 @@ object widgets {
       * @constant
       */
     @JSName("jsxAttributes")
-    val jsxAttributes_PdfView: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `12` = js.native
+    val jsxAttributes_PdfView: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `4` = js.native
     
     /**
       * Fired when the document loading has finished.
@@ -1487,7 +1487,7 @@ object widgets {
       * @constant
       */
     @JSName("jsxAttributes")
-    val jsxAttributes_Picker: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & PartialPickPickeritemText & `3` = js.native
+    val jsxAttributes_Picker: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & PartialPickPickeritemText & Children = js.native
     
     /**
       * A hint text that is displayed when the picker has no selection.
@@ -1575,7 +1575,7 @@ object widgets {
       * @constant
       */
     @JSName("jsxAttributes")
-    val jsxAttributes_ProgressBar: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `3` = js.native
+    val jsxAttributes_ProgressBar: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & Children = js.native
     
     /**
       * The value that represents a progress of 100%. May be negative.
@@ -1660,7 +1660,7 @@ object widgets {
       * @constant
       */
     @JSName("jsxAttributes")
-    val jsxAttributes_RadioButton: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `3` = js.native
+    val jsxAttributes_RadioButton: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & Children = js.native
     
     /**
       * Fired when the [*checked*](#checked) property has changed.
@@ -1877,7 +1877,7 @@ object widgets {
       * @param options An additional parameter object to control the animation.
       */
     def scrollToX(offset: Double): this.type = js.native
-    def scrollToX(offset: Double, options: `15`): this.type = js.native
+    def scrollToX(offset: Double, options: `7`): this.type = js.native
     
     /**
       * Scrolls to the given vertical offset. Give `{animate: false}` as the second parameter to suppress the
@@ -1886,7 +1886,7 @@ object widgets {
       * @param options An parameter object to control the animation.
       */
     def scrollToY(offset: Double): this.type = js.native
-    def scrollToY(offset: Double, options: `15`): this.type = js.native
+    def scrollToY(offset: Double, options: `7`): this.type = js.native
     
     /**
       * The scroll state of the `ScrollView` in horizontal direction. The following states are supported:
@@ -1988,7 +1988,7 @@ object widgets {
       * @constant
       */
     @JSName("jsxAttributes")
-    val jsxAttributes_Slider: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `3` = js.native
+    val jsxAttributes_Slider: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & Children = js.native
     
     /**
       * The maximum value.
@@ -2094,7 +2094,7 @@ object widgets {
       * @constant
       */
     @JSName("jsxAttributes")
-    val jsxAttributes_Switch: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `3` = js.native
+    val jsxAttributes_Switch: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & Children = js.native
     
     /**
       * Fired when the [*checked*](#checked) property has changed.
@@ -2444,7 +2444,7 @@ object widgets {
       * @constant
       */
     @JSName("jsxAttributes")
-    val jsxAttributes_TextInput: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `3` = js.native
+    val jsxAttributes_TextInput: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & Children = js.native
     
     /**
       * When `true` the `TextInput` will keep its focus, even when tapped outside of the widget bounds.
@@ -2690,7 +2690,7 @@ object widgets {
       * @constant
       */
     @JSName("jsxAttributes")
-    val jsxAttributes_TextView: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `3` = js.native
+    val jsxAttributes_TextView: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & Children = js.native
     
     /**
       * The amount of space between each line of text. The `lineSpacing` property is a factor with a default
@@ -2816,7 +2816,7 @@ object widgets {
       * @constant
       */
     @JSName("jsxAttributes")
-    val jsxAttributes_ToggleButton: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `3` = js.native
+    val jsxAttributes_ToggleButton: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & Children = js.native
     
     /**
       * Fired when the [*alignment*](#alignment) property has changed.
@@ -2895,7 +2895,7 @@ object widgets {
       * @constant
       */
     @JSName("jsxAttributes")
-    val jsxAttributes_Video: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & js.Object & `3` = js.native
+    val jsxAttributes_Video: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & Children = js.native
     
     /**
       * Fired when the [*autoPlay*](#autoPlay) property has changed.
@@ -3033,12 +3033,6 @@ object widgets {
       * @constant
       */
     var initScript: String = js.native
-    
-    /**
-      * @constant
-      */
-    @JSName("jsxAttributes")
-    val jsxAttributes_WebView: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & js.Object = js.native
     
     /**
       * Fired when the [*canGoBack*](#canGoBack) property has changed.

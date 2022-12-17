@@ -23,7 +23,7 @@ trait PickImpldisplayTypePartia
   
   var debug: js.UndefOr[Boolean] = js.undefined
   
-  var displayType: (`false` | String) & (js.UndefOr[`false` | String])
+  var displayType: `false` | String
   
   var duration: js.UndefOr[Double] = js.undefined
   
@@ -57,7 +57,7 @@ trait PickImpldisplayTypePartia
 }
 object PickImpldisplayTypePartia {
   
-  inline def apply(displayType: (`false` | String) & (js.UndefOr[`false` | String])): PickImpldisplayTypePartia = {
+  inline def apply(displayType: `false` | String): PickImpldisplayTypePartia = {
     val __obj = js.Dynamic.literal(displayType = displayType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldisplayTypePartia]
   }
@@ -80,7 +80,7 @@ object PickImpldisplayTypePartia {
     
     inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    inline def setDisplayType(value: (`false` | String) & (js.UndefOr[`false` | String])): Self = StObject.set(x, "displayType", value.asInstanceOf[js.Any])
+    inline def setDisplayType(value: `false` | String): Self = StObject.set(x, "displayType", value.asInstanceOf[js.Any])
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

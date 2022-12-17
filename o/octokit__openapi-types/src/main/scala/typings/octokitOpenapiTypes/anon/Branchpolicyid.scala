@@ -7,32 +7,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Branchpolicyid extends StObject {
   
   /** The unique identifier of the branch policy. */
-  var branch_policy_id: Double
+  var branch_policy_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['branch-policy-id'] */ js.Any
   
   /** The name of the environment. */
-  var environment_name: String
+  var environment_name: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['environment-name'] */ js.Any
   
   /** The account owner of the repository. The name is not case sensitive. */
-  var owner: String
+  var owner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['owner'] */ js.Any
   
   /** The name of the repository. The name is not case sensitive. */
-  var repo: String
+  var repo: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo'] */ js.Any
 }
 object Branchpolicyid {
   
-  inline def apply(branch_policy_id: Double, environment_name: String, owner: String, repo: String): Branchpolicyid = {
+  inline def apply(
+    branch_policy_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['branch-policy-id'] */ js.Any,
+    environment_name: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['environment-name'] */ js.Any,
+    owner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['owner'] */ js.Any,
+    repo: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo'] */ js.Any
+  ): Branchpolicyid = {
     val __obj = js.Dynamic.literal(branch_policy_id = branch_policy_id.asInstanceOf[js.Any], environment_name = environment_name.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[Branchpolicyid]
   }
   
   extension [Self <: Branchpolicyid](x: Self) {
     
-    inline def setBranch_policy_id(value: Double): Self = StObject.set(x, "branch_policy_id", value.asInstanceOf[js.Any])
+    inline def setBranch_policy_id(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['branch-policy-id'] */ js.Any
+    ): Self = StObject.set(x, "branch_policy_id", value.asInstanceOf[js.Any])
     
-    inline def setEnvironment_name(value: String): Self = StObject.set(x, "environment_name", value.asInstanceOf[js.Any])
+    inline def setEnvironment_name(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['environment-name'] */ js.Any
+    ): Self = StObject.set(x, "environment_name", value.asInstanceOf[js.Any])
     
-    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['owner'] */ js.Any
+    ): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo'] */ js.Any
+    ): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

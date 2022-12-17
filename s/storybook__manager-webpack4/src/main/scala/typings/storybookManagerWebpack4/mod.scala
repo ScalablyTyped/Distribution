@@ -54,7 +54,7 @@ object mod {
   inline def start(options: BuilderStartOptions): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
   
   type BuilderStartOptions = Partial[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(args : @storybook/core-common.anon.Options): std.Promise<void | @storybook/core-common.anon.Bail<webpack.webpack.Stats>>>['0'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(args : @storybook/core-common.anon.Router): std.Promise<void | @storybook/core-common.anon.Bail<webpack.webpack.Stats>>>['0'] */ js.Any
   ]
   
   type WebpackBuilder = Builder[Configuration, Stats]

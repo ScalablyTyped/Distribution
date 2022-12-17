@@ -16,7 +16,7 @@ trait PickImplinwardPartialPick
   
   var hidden: js.UndefOr[String] = js.undefined
   
-  var inward: String & js.UndefOr[String]
+  var inward: String
   
   var loading: js.UndefOr[String] = js.undefined
   
@@ -30,7 +30,7 @@ trait PickImplinwardPartialPick
 }
 object PickImplinwardPartialPick {
   
-  inline def apply(inward: String & js.UndefOr[String]): PickImplinwardPartialPick = {
+  inline def apply(inward: String): PickImplinwardPartialPick = {
     val __obj = js.Dynamic.literal(inward = inward.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplinwardPartialPick]
   }
@@ -49,7 +49,7 @@ object PickImplinwardPartialPick {
     
     inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
-    inline def setInward(value: String & js.UndefOr[String]): Self = StObject.set(x, "inward", value.asInstanceOf[js.Any])
+    inline def setInward(value: String): Self = StObject.set(x, "inward", value.asInstanceOf[js.Any])
     
     inline def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     

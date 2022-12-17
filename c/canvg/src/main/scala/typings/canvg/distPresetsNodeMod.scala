@@ -1,6 +1,6 @@
 package typings.canvg
 
-import typings.canvg.anon.CreateCanvas
+import typings.canvg.anon.CreateImage
 import typings.canvg.distPresetsTypesMod.DOMParser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +12,7 @@ object distPresetsNodeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def node(param0: IConfig): CreateCanvas = ^.asInstanceOf[js.Dynamic].applyDynamic("node")(param0.asInstanceOf[js.Any]).asInstanceOf[CreateCanvas]
+  inline def node(param0: IConfig): CreateImage = ^.asInstanceOf[js.Dynamic].applyDynamic("node")(param0.asInstanceOf[js.Any]).asInstanceOf[CreateImage]
   
   /**
     * WHATWG-compatible `fetch` function.

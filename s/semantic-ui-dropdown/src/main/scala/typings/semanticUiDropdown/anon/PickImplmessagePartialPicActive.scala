@@ -32,7 +32,7 @@ trait PickImplmessagePartialPicActive
   
   var menu: js.UndefOr[String] = js.undefined
   
-  var message: String & js.UndefOr[String]
+  var message: String
   
   var multiple: js.UndefOr[String] = js.undefined
   
@@ -50,7 +50,7 @@ trait PickImplmessagePartialPicActive
 }
 object PickImplmessagePartialPicActive {
   
-  inline def apply(message: String & js.UndefOr[String]): PickImplmessagePartialPicActive = {
+  inline def apply(message: String): PickImplmessagePartialPicActive = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmessagePartialPicActive]
   }
@@ -101,7 +101,7 @@ object PickImplmessagePartialPicActive {
     
     inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
     
-    inline def setMessage(value: String & js.UndefOr[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     inline def setMultiple(value: String): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     

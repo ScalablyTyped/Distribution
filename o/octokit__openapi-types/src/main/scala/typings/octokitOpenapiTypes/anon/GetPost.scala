@@ -11,26 +11,26 @@ trait GetPost extends StObject {
     *
     * You must authenticate using an access token with the `manage_runners:enterprise` scope to use this endpoint.
     */
-  var get: ParametersQueryVisibletoorganization
+  var get: ParametersQueryPerpage
   
   /**
     * Creates a new self-hosted runner group for an enterprise.
     *
     * You must authenticate using an access token with the `manage_runners:enterprise` scope to use this endpoint.
     */
-  var post: Responses201Content255
+  var post: RequestBodyContentApplicationjsonAllowspublicrepositories
 }
 object GetPost {
   
-  inline def apply(get: ParametersQueryVisibletoorganization, post: Responses201Content255): GetPost = {
+  inline def apply(get: ParametersQueryPerpage, post: RequestBodyContentApplicationjsonAllowspublicrepositories): GetPost = {
     val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPost]
   }
   
   extension [Self <: GetPost](x: Self) {
     
-    inline def setGet(value: ParametersQueryVisibletoorganization): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: ParametersQueryPerpage): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPost(value: Responses201Content255): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
+    inline def setPost(value: RequestBodyContentApplicationjsonAllowspublicrepositories): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
   }
 }

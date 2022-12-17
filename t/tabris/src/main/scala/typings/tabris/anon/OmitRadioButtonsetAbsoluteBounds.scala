@@ -321,7 +321,7 @@ trait OmitRadioButtonsetAbsoluteBounds extends StObject {
       typings.tabris.global.tabris.widgets.RadioButton, 
       set | typings.tabris.tabrisStrings.jsxAttributes
     ]
-  ]) & `3`
+  ]) & Children
   
   var layoutData: LayoutDataValue
   
@@ -578,7 +578,7 @@ object OmitRadioButtonsetAbsoluteBounds {
     jsxAttributes: (JSXAttributes[
       typings.tabris.global.tabris.widgets.RadioButton, 
       Omit[typings.tabris.global.tabris.widgets.RadioButton, set | jsxAttributes]
-    ]) & `3`,
+    ]) & Children,
     layoutData: LayoutDataValue,
     left: ConstraintValue,
     off: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Unit], /* context */ js.UndefOr[js.Object]) => typings.tabris.global.tabris.widgets.RadioButton,
@@ -759,7 +759,7 @@ object OmitRadioButtonsetAbsoluteBounds {
       value: (JSXAttributes[
           typings.tabris.global.tabris.widgets.RadioButton, 
           Omit[typings.tabris.global.tabris.widgets.RadioButton, set | jsxAttributes]
-        ]) & `3`
+        ]) & Children
     ): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     
     inline def setLayoutData(value: LayoutDataValue): Self = StObject.set(x, "layoutData", value.asInstanceOf[js.Any])

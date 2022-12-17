@@ -1,7 +1,6 @@
 package typings.reactLazylog
 
 import typings.reactLazylog.anon.PartialLazyLogProps
-import typings.reactLazylog.anon.PartialSearchBarProps
 import typings.reactLazylog.buildLazyLogMod.LazyLogProps
 import typings.reactLazylog.buildScrollFollowMod.ScrollFollowProps
 import org.scalablytyped.runtime.StObject
@@ -9,23 +8,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
-  
-  @JSImport("react-lazylog", JSImport.Default)
-  @js.native
-  open class default ()
-    extends typings.reactLazylog.buildSearchBarMod.default
-  /* static members */
-  object default {
-    
-    @JSImport("react-lazylog", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("react-lazylog", "default.defaultProps")
-    @js.native
-    def defaultProps: PartialSearchBarProps = js.native
-    inline def defaultProps_=(x: PartialSearchBarProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
-  }
   
   @JSImport("react-lazylog", "LazyLog")
   @js.native

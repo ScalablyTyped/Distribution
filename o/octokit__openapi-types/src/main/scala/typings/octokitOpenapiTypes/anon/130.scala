@@ -6,17 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `130` extends StObject {
   
-  var content: ApplicationjsonTruncated
+  /** The unique identifier of the project. */
+  var project_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['project-id'] */ js.Any
 }
 object `130` {
   
-  inline def apply(content: ApplicationjsonTruncated): `130` = {
-    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
+  inline def apply(
+    project_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['project-id'] */ js.Any
+  ): `130` = {
+    val __obj = js.Dynamic.literal(project_id = project_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[`130`]
   }
   
   extension [Self <: `130`](x: Self) {
     
-    inline def setContent(value: ApplicationjsonTruncated): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setProject_id(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['project-id'] */ js.Any
+    ): Self = StObject.set(x, "project_id", value.asInstanceOf[js.Any])
   }
 }

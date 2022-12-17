@@ -6,27 +6,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Login extends StObject {
   
-  /** Format: email */
   var email: js.UndefOr[String | Null] = js.undefined
   
   var id: Double
   
   var login: String
   
-  var node_id: js.UndefOr[String] = js.undefined
+  var marketplace_pending_change: js.UndefOr[Effectivedate | Null] = js.undefined
   
-  /** Format: email */
-  var organization_billing_email: js.UndefOr[String | Null] = js.undefined
+  var marketplace_purchase: Billingcycle
+  
+  var organization_billing_email: js.UndefOr[String] = js.undefined
   
   var `type`: String
   
-  /** Format: uri */
   var url: String
 }
 object Login {
   
-  inline def apply(id: Double, login: String, `type`: String, url: String): Login = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], login = login.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+  inline def apply(id: Double, login: String, marketplace_purchase: Billingcycle, `type`: String, url: String): Login = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], login = login.asInstanceOf[js.Any], marketplace_purchase = marketplace_purchase.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Login]
   }
@@ -43,13 +42,15 @@ object Login {
     
     inline def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
     
-    inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
+    inline def setMarketplace_pending_change(value: Effectivedate): Self = StObject.set(x, "marketplace_pending_change", value.asInstanceOf[js.Any])
     
-    inline def setNode_idUndefined: Self = StObject.set(x, "node_id", js.undefined)
+    inline def setMarketplace_pending_changeNull: Self = StObject.set(x, "marketplace_pending_change", null)
+    
+    inline def setMarketplace_pending_changeUndefined: Self = StObject.set(x, "marketplace_pending_change", js.undefined)
+    
+    inline def setMarketplace_purchase(value: Billingcycle): Self = StObject.set(x, "marketplace_purchase", value.asInstanceOf[js.Any])
     
     inline def setOrganization_billing_email(value: String): Self = StObject.set(x, "organization_billing_email", value.asInstanceOf[js.Any])
-    
-    inline def setOrganization_billing_emailNull: Self = StObject.set(x, "organization_billing_email", null)
     
     inline def setOrganization_billing_emailUndefined: Self = StObject.set(x, "organization_billing_email", js.undefined)
     

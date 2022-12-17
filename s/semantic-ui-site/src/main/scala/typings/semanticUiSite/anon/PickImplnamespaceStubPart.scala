@@ -19,7 +19,7 @@ trait PickImplnamespaceStubPart
   
   var namespace: js.UndefOr[String] = js.undefined
   
-  var namespaceStub: NamespaceStubSettings & js.UndefOr[NamespaceStubSettings]
+  var namespaceStub: NamespaceStubSettings
   
   var performance: js.UndefOr[Boolean] = js.undefined
   
@@ -31,7 +31,7 @@ trait PickImplnamespaceStubPart
 }
 object PickImplnamespaceStubPart {
   
-  inline def apply(namespaceStub: NamespaceStubSettings & js.UndefOr[NamespaceStubSettings]): PickImplnamespaceStubPart = {
+  inline def apply(namespaceStub: NamespaceStubSettings): PickImplnamespaceStubPart = {
     val __obj = js.Dynamic.literal(namespaceStub = namespaceStub.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplnamespaceStubPart]
   }
@@ -54,7 +54,7 @@ object PickImplnamespaceStubPart {
     
     inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
-    inline def setNamespaceStub(value: NamespaceStubSettings & js.UndefOr[NamespaceStubSettings]): Self = StObject.set(x, "namespaceStub", value.asInstanceOf[js.Any])
+    inline def setNamespaceStub(value: NamespaceStubSettings): Self = StObject.set(x, "namespaceStub", value.asInstanceOf[js.Any])
     
     inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     

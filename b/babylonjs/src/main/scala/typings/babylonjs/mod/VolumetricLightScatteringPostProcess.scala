@@ -1,6 +1,5 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.meshesMeshMod.Mesh
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -26,7 +25,7 @@ open class VolumetricLightScatteringPostProcess protected ()
     name: String,
     ratio: Any,
     camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
-    mesh: js.UndefOr[Mesh],
+    mesh: js.UndefOr[typings.babylonjs.meshesMeshMod.Mesh],
     samples: js.UndefOr[Double],
     samplingMode: js.UndefOr[Double],
     engine: js.UndefOr[typings.babylonjs.enginesEngineMod.Engine],
@@ -47,5 +46,5 @@ object VolumetricLightScatteringPostProcess {
     * @param scene The scene where to create the mesh
     * @returns the default mesh
     */
-  inline def CreateDefaultMesh(name: String, scene: typings.babylonjs.sceneMod.Scene): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDefaultMesh")(name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+  inline def CreateDefaultMesh(name: String, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.meshesMeshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDefaultMesh")(name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshMod.Mesh]
 }

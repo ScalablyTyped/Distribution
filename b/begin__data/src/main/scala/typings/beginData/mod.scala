@@ -189,7 +189,7 @@ object mod {
   @js.native
   trait DataGetEntireTableResult
     extends StObject
-       with Array[Dictothers] {
+       with Array[Key] {
     
     var cursor: js.UndefOr[String] = js.native
   }
@@ -226,7 +226,7 @@ object mod {
   @js.native
   trait DataGetMultipleResult
     extends StObject
-       with Array[Dictothers]
+       with Array[Key]
   
   /** 
   NOTE: Rewritten from type alias:
@@ -276,7 +276,7 @@ object mod {
   - @begin/data.@begin/data.BeginDataType
   - @begin/data.@begin/data.DataGetSingleResult
   */
-  type DataGetSingleResult = js.UndefOr[Key | Null]
+  type DataGetSingleResult = js.UndefOr[Dictothers | Null]
   
   type DataIncrementCallback = js.Function2[/* err */ js.UndefOr[js.Error | Null], /* result */ DataIncrementResult, Unit]
   
@@ -385,7 +385,7 @@ object mod {
   @js.native
   trait DataSetMultipleResult
     extends StObject
-       with Array[Dictothers]
+       with Array[Key]
   
   type DataSetSingleCallback = js.Function2[/* err */ js.UndefOr[js.Error | Null], /* result */ DataSetSingleResult, Unit]
   

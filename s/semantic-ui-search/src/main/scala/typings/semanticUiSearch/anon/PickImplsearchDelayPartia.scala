@@ -66,7 +66,7 @@ trait PickImplsearchDelayPartia
   
   var regExp: js.UndefOr[RegExpSettings] = js.undefined
   
-  var searchDelay: Double & js.UndefOr[Double]
+  var searchDelay: Double
   
   var searchFields: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -92,7 +92,7 @@ trait PickImplsearchDelayPartia
 }
 object PickImplsearchDelayPartia {
   
-  inline def apply(searchDelay: Double & js.UndefOr[Double]): PickImplsearchDelayPartia = {
+  inline def apply(searchDelay: Double): PickImplsearchDelayPartia = {
     val __obj = js.Dynamic.literal(searchDelay = searchDelay.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplsearchDelayPartia]
   }
@@ -187,7 +187,7 @@ object PickImplsearchDelayPartia {
     
     inline def setRegExpUndefined: Self = StObject.set(x, "regExp", js.undefined)
     
-    inline def setSearchDelay(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "searchDelay", value.asInstanceOf[js.Any])
+    inline def setSearchDelay(value: Double): Self = StObject.set(x, "searchDelay", value.asInstanceOf[js.Any])
     
     inline def setSearchFields(value: js.Array[String]): Self = StObject.set(x, "searchFields", value.asInstanceOf[js.Any])
     

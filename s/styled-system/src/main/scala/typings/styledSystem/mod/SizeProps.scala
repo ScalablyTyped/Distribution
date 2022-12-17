@@ -23,6 +23,6 @@ object SizeProps {
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    inline def setSizeVarargs(value: (TVal | Null)*): Self = StObject.set(x, "size", js.Array(value :_*))
+    inline def setSizeVarargs(value: (TVal | Null)*): Self = StObject.set(x, "size", js.Array(value*))
   }
 }

@@ -4,7 +4,7 @@ import typings.antvG2.libChartLayoutPaddingCalMod.PaddingCalCtor
 import typings.antvG2.libChartViewMod.View
 import typings.antvG2.libInterfaceMod.SyncViewPaddingFn
 import typings.antvG2plot.anon.MappingFields
-import typings.antvG2plot.anon.NameValue
+import typings.antvG2plot.anon.NameString
 import typings.antvG2plot.antvG2plotBooleans.`false`
 import typings.antvG2plot.antvG2plotStrings.auto
 import typings.antvG2plot.antvG2plotStrings.canvas
@@ -525,7 +525,7 @@ object libAdaptorGeometriesBaseMod {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setTooltip(value: /* datum */ Datum => NameValue): Self = StObject.set(x, "tooltip", js.Any.fromFunction1(value))
+      inline def setTooltip(value: /* datum */ Datum => NameString): Self = StObject.set(x, "tooltip", js.Any.fromFunction1(value))
       
       inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     }

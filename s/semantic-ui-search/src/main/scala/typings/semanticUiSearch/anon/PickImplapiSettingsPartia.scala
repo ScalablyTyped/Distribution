@@ -20,7 +20,7 @@ trait PickImplapiSettingsPartia
   extends StObject
      with Param {
   
-  var apiSettings: ApiSettings & js.UndefOr[ApiSettings]
+  var apiSettings: ApiSettings
   
   var cache: js.UndefOr[Boolean] = js.undefined
   
@@ -92,14 +92,14 @@ trait PickImplapiSettingsPartia
 }
 object PickImplapiSettingsPartia {
   
-  inline def apply(apiSettings: ApiSettings & js.UndefOr[ApiSettings]): PickImplapiSettingsPartia = {
+  inline def apply(apiSettings: ApiSettings): PickImplapiSettingsPartia = {
     val __obj = js.Dynamic.literal(apiSettings = apiSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplapiSettingsPartia]
   }
   
   extension [Self <: PickImplapiSettingsPartia](x: Self) {
     
-    inline def setApiSettings(value: ApiSettings & js.UndefOr[ApiSettings]): Self = StObject.set(x, "apiSettings", value.asInstanceOf[js.Any])
+    inline def setApiSettings(value: ApiSettings): Self = StObject.set(x, "apiSettings", value.asInstanceOf[js.Any])
     
     inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     

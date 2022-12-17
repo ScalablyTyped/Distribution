@@ -29,7 +29,7 @@ trait PickImpllabelPartialPickI
   
   var error: js.UndefOr[ErrorSettings] = js.undefined
   
-  var label: (percent | ratio) & (js.UndefOr[percent | ratio])
+  var label: percent | ratio
   
   var limitValues: js.UndefOr[Boolean] = js.undefined
   
@@ -81,7 +81,7 @@ trait PickImpllabelPartialPickI
 }
 object PickImpllabelPartialPickI {
   
-  inline def apply(label: (percent | ratio) & (js.UndefOr[percent | ratio])): PickImpllabelPartialPickI = {
+  inline def apply(label: percent | ratio): PickImpllabelPartialPickI = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpllabelPartialPickI]
   }
@@ -104,7 +104,7 @@ object PickImpllabelPartialPickI {
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    inline def setLabel(value: (percent | ratio) & (js.UndefOr[percent | ratio])): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: percent | ratio): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLimitValues(value: Boolean): Self = StObject.set(x, "limitValues", value.asInstanceOf[js.Any])
     

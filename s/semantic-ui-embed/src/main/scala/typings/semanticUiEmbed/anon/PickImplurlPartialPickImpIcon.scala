@@ -18,11 +18,11 @@ trait PickImplurlPartialPickImpIcon
   
   var source: js.UndefOr[String] = js.undefined
   
-  var url: String & js.UndefOr[String]
+  var url: String
 }
 object PickImplurlPartialPickImpIcon {
   
-  inline def apply(url: String & js.UndefOr[String]): PickImplurlPartialPickImpIcon = {
+  inline def apply(url: String): PickImplurlPartialPickImpIcon = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplurlPartialPickImpIcon]
   }
@@ -45,6 +45,6 @@ object PickImplurlPartialPickImpIcon {
     
     inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    inline def setUrl(value: String & js.UndefOr[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

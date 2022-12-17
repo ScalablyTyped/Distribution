@@ -18,7 +18,7 @@ trait PickImplcategoryNameParti
   
   var categories: js.UndefOr[String] = js.undefined
   
-  var categoryName: String & js.UndefOr[String]
+  var categoryName: String
   
   var categoryResults: js.UndefOr[String] = js.undefined
   
@@ -34,7 +34,7 @@ trait PickImplcategoryNameParti
 }
 object PickImplcategoryNameParti {
   
-  inline def apply(categoryName: String & js.UndefOr[String]): PickImplcategoryNameParti = {
+  inline def apply(categoryName: String): PickImplcategoryNameParti = {
     val __obj = js.Dynamic.literal(categoryName = categoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplcategoryNameParti]
   }
@@ -57,7 +57,7 @@ object PickImplcategoryNameParti {
     
     inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    inline def setCategoryName(value: String & js.UndefOr[String]): Self = StObject.set(x, "categoryName", value.asInstanceOf[js.Any])
+    inline def setCategoryName(value: String): Self = StObject.set(x, "categoryName", value.asInstanceOf[js.Any])
     
     inline def setCategoryResults(value: String): Self = StObject.set(x, "categoryResults", value.asInstanceOf[js.Any])
     

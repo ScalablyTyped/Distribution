@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait QueryRefSort extends StObject {
   
-  var path: `292`
+  var path: OwnerString
   
   var query: RefSort
 }
 object QueryRefSort {
   
-  inline def apply(path: `292`, query: RefSort): QueryRefSort = {
+  inline def apply(path: OwnerString, query: RefSort): QueryRefSort = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryRefSort]
   }
   
   extension [Self <: QueryRefSort](x: Self) {
     
-    inline def setPath(value: `292`): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: OwnerString): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     inline def setQuery(value: RefSort): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }

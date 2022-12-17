@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.HashMap
 import typings.arcgisJsApi.arcgisJsApiStrings.butt_
 import typings.arcgisJsApi.arcgisJsApiStrings.round_
 import typings.arcgisJsApi.arcgisJsApiStrings.square_
@@ -48,12 +47,8 @@ trait FillSymbol3DLayerOutline
 }
 object FillSymbol3DLayerOutline {
   
-  inline def apply(
-    set: (js.UndefOr[
-      js.Function2[/* propertyName */ String, /* value */ Any, FillSymbol3DLayerOutline]
-    ]) & (js.UndefOr[js.Function1[/* props */ HashMap[Any], FillSymbol3DLayerOutline]])
-  ): FillSymbol3DLayerOutline = {
-    val __obj = js.Dynamic.literal(set = set.asInstanceOf[js.Any])
+  inline def apply(): FillSymbol3DLayerOutline = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FillSymbol3DLayerOutline]
   }
   

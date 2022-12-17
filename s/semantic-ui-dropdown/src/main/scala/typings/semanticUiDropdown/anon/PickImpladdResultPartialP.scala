@@ -10,7 +10,7 @@ trait PickImpladdResultPartialP
   extends StObject
      with Param {
   
-  var addResult: String & js.UndefOr[String]
+  var addResult: String
   
   var count: js.UndefOr[String] = js.undefined
   
@@ -20,14 +20,14 @@ trait PickImpladdResultPartialP
 }
 object PickImpladdResultPartialP {
   
-  inline def apply(addResult: String & js.UndefOr[String]): PickImpladdResultPartialP = {
+  inline def apply(addResult: String): PickImpladdResultPartialP = {
     val __obj = js.Dynamic.literal(addResult = addResult.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpladdResultPartialP]
   }
   
   extension [Self <: PickImpladdResultPartialP](x: Self) {
     
-    inline def setAddResult(value: String & js.UndefOr[String]): Self = StObject.set(x, "addResult", value.asInstanceOf[js.Any])
+    inline def setAddResult(value: String): Self = StObject.set(x, "addResult", value.asInstanceOf[js.Any])
     
     inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

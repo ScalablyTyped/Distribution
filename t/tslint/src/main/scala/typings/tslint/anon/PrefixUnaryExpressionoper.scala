@@ -4,7 +4,6 @@ import typings.typescript.mod.ModifierLike
 import typings.typescript.mod.Node
 import typings.typescript.mod.NodeArray
 import typings.typescript.mod.NodeFlags
-import typings.typescript.mod.NumericLiteral
 import typings.typescript.mod.PrefixUnaryOperator
 import typings.typescript.mod.SourceFile
 import typings.typescript.mod.SourceFileLike
@@ -100,7 +99,7 @@ trait PrefixUnaryExpressionoper extends StObject {
     */
   val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
   
-  val operand: UnaryExpression & NumericLiteral = js.native
+  val operand: UnaryExpression = js.native
   
   val operator: PrefixUnaryOperator = js.native
   

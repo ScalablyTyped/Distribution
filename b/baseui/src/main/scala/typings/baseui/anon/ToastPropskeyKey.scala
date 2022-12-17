@@ -44,7 +44,7 @@ trait ToastPropskeyKey extends StObject {
   
   var `data-baseweb`: js.UndefOr[String] = js.undefined
   
-  var key: js.UndefOr[typings.react.mod.Key] & typings.react.mod.Key
+  var key: js.UndefOr[typings.react.mod.Key] = js.undefined
   
   /** Defines the type of notification. */
   var kind: js.UndefOr[KindType] = js.undefined
@@ -66,8 +66,8 @@ trait ToastPropskeyKey extends StObject {
 }
 object ToastPropskeyKey {
   
-  inline def apply(key: js.UndefOr[typings.react.mod.Key] & typings.react.mod.Key): ToastPropskeyKey = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+  inline def apply(): ToastPropskeyKey = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ToastPropskeyKey]
   }
   
@@ -95,7 +95,9 @@ object ToastPropskeyKey {
     
     inline def `setData-basewebUndefined`: Self = StObject.set(x, "data-baseweb", js.undefined)
     
-    inline def setKey(value: js.UndefOr[typings.react.mod.Key] & typings.react.mod.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: typings.react.mod.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     inline def setKind(value: KindType): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

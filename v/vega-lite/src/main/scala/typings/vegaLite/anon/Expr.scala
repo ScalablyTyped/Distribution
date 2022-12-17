@@ -19,8 +19,6 @@ trait Expr extends StObject {
   
   var expr: js.UndefOr[datum | parent | datumDotdatum] = js.undefined
   
-  var field: js.UndefOr[String] = js.undefined
-  
   var fieldOrDatumDef: (typings.vegaLite.buildSrcChanneldefMod.FieldDef[String, Any]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef])
   
   var format: String | Dict[Any]
@@ -49,13 +47,9 @@ object Expr {
     
     inline def setExprUndefined: Self = StObject.set(x, "expr", js.undefined)
     
-    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
-    
     inline def setFieldOrDatumDef(
       value: (typings.vegaLite.buildSrcChanneldefMod.FieldDef[String, Any]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef])
     ): Self = StObject.set(x, "fieldOrDatumDef", value.asInstanceOf[js.Any])
-    
-    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
     inline def setFormat(value: String | Dict[Any]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

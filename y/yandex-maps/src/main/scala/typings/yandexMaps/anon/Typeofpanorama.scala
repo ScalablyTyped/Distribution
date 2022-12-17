@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Typeofpanorama extends StObject {
   
-  var Base: Instantiable0[typings.yandexMaps.mod.panorama.Base] & TypeofBase_ = js.native
+  var Base: Instantiable0[typings.yandexMaps.mod.panorama.Base] = js.native
   
   var Manager: Instantiable0[typings.yandexMaps.mod.panorama.Manager] = js.native
   

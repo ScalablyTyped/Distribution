@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `1` extends StObject {
   
-  var capture: js.UndefOr[Boolean] = js.undefined
+  var animated: js.UndefOr[Boolean] = js.undefined
 }
 object `1` {
   
@@ -17,8 +17,8 @@ object `1` {
   
   extension [Self <: `1`](x: Self) {
     
-    inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+    inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     
-    inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
+    inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
   }
 }

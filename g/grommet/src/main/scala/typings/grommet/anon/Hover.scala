@@ -15,7 +15,7 @@ trait Hover extends StObject {
   
   var icons: js.UndefOr[Collapse] = js.undefined
   
-  var panel: js.UndefOr[`9`] = js.undefined
+  var panel: js.UndefOr[`7`] = js.undefined
 }
 object Hover {
   
@@ -44,7 +44,7 @@ object Hover {
     
     inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
-    inline def setPanel(value: `9`): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
+    inline def setPanel(value: `7`): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
     
     inline def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
   }

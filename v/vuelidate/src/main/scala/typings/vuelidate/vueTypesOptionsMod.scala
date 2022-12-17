@@ -39,10 +39,12 @@ object vueTypesOptionsMod {
   
   type GroupDecl = js.Array[String]
   
+  type NestedDecl = RuleDecl
+  
   /** 
   NOTE: Rewritten from type alias:
   {{{
-  type NestedDecl = vuelidate.vue/types/options.RuleDecl
+  type RuleDecl = {[rule: string] : vuelidate.vue/types/options.ValidationDecl | vuelidate.vue/types/options.GroupDecl | vuelidate.vue/types/options.AsyncDecl | vuelidate.vue/types/options.NestedDecl}
   }}}
   to avoid circular code involving: 
   - vuelidate.vue/types/options.DynamicDecl
@@ -50,18 +52,16 @@ object vueTypesOptionsMod {
   - vuelidate.vue/types/options.RuleDecl
   - vuelidate.vue/types/options.ValidPropertyDecl
   */
-  trait NestedDecl
+  trait RuleDecl
     extends StObject
        with /* rule */ StringDictionary[ValidationDecl | GroupDecl | AsyncDecl | NestedDecl]
-  object NestedDecl {
+  object RuleDecl {
     
-    inline def apply(): NestedDecl = {
+    inline def apply(): RuleDecl = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[NestedDecl]
+      __obj.asInstanceOf[RuleDecl]
     }
   }
-  
-  type RuleDecl = StringDictionary[ValidationDecl | GroupDecl | AsyncDecl | NestedDecl]
   
   type ValidGroupDecl = StringDictionary[js.Array[String]]
   

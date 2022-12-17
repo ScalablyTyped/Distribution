@@ -38,7 +38,7 @@ trait PickImplonPartialPickImpl
   
   var observeChanges: js.UndefOr[Boolean] = js.undefined
   
-  var on: String & js.UndefOr[String]
+  var on: String
   
   var onChange: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
@@ -60,7 +60,7 @@ trait PickImplonPartialPickImpl
 }
 object PickImplonPartialPickImpl {
   
-  inline def apply(on: String & js.UndefOr[String]): PickImplonPartialPickImpl = {
+  inline def apply(on: String): PickImplonPartialPickImpl = {
     val __obj = js.Dynamic.literal(on = on.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonPartialPickImpl]
   }
@@ -115,7 +115,7 @@ object PickImplonPartialPickImpl {
     
     inline def setObserveChangesUndefined: Self = StObject.set(x, "observeChanges", js.undefined)
     
-    inline def setOn(value: String & js.UndefOr[String]): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+    inline def setOn(value: String): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     
     inline def setOnChange(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
     

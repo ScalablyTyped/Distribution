@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "mocha-steps"
-version := "1.3-dt-20211202Z-7086dc"
+version := "1.3-dt-20211202Z-df8b84"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "mocha" % "10.0-dt-20220928Z-b3e5b6",
-  "org.scalablytyped" %%% "std" % "4.9-c133ce")
+  "org.scalablytyped" %%% "mocha" % "10.0-dt-20220928Z-3837ea",
+  "org.scalablytyped" %%% "std" % "4.9-5f989f")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

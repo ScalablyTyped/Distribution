@@ -18,7 +18,7 @@ object anon {
       * This allows you to alter the session cookie per visitor.
       * For example we can set `req.session.cookie.expires` to `false` to enable the cookie to remain for only the duration of the user-agent.
       */
-    var cookie: Cookie & js.UndefOr[Cookie] = js.native
+    var cookie: Cookie = js.native
     
     /** Destroys the session and will unset the `req.session` property. Once complete, the `callback` will be invoked. */
     def destroy(callback: js.Function1[/* err */ Any, Unit]): this.type = js.native

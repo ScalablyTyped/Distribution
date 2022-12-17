@@ -1,6 +1,5 @@
 package typings.ky
 
-import typings.ky.anon.RequiredHeaderskeyofHeade
 import typings.ky.anon.RequiredHookskeyofHooks
 import typings.ky.anon.RequiredRetryOptionskeyof
 import typings.ky.distributionTypesCommonMod.LiteralUnion
@@ -89,16 +88,16 @@ object distributionTypesOptionsMod {
     
     var cache: js.UndefOr[RequestCache] = js.undefined
     
-    var credentials: js.UndefOr[RequestCredentials] & RequestCredentials
+    var credentials: js.UndefOr[RequestCredentials] = js.undefined
     
     def fetch(input: RequestInfo): js.Promise[Response]
     def fetch(input: RequestInfo, init: RequestInit): js.Promise[Response]
     @JSName("fetch")
-    var fetch_Original: (js.UndefOr[
+    var fetch_Original: js.UndefOr[
         js.Function2[/* input */ RequestInfo, /* init */ js.UndefOr[RequestInit], js.Promise[Response]]
-      ]) & (js.Function2[/* input */ RequestInfo, /* init */ js.UndefOr[RequestInit], js.Promise[Response]])
+      ] = js.undefined
     
-    var headers: js.UndefOr[KyHeadersInit] & RequiredHeaderskeyofHeade
+    var headers: js.UndefOr[KyHeadersInit] = js.undefined
     
     var hooks: RequiredHookskeyofHooks
     
@@ -118,7 +117,7 @@ object distributionTypesOptionsMod {
     
     var parseJson: js.UndefOr[js.Function1[/* text */ String, Any]] = js.undefined
     
-    var prefixUrl: (js.UndefOr[URL | String]) & (URL | String) & String
+    var prefixUrl: js.UndefOr[URL | String] = js.undefined
     
     var redirect: js.UndefOr[RequestRedirect] = js.undefined
     
@@ -134,24 +133,14 @@ object distributionTypesOptionsMod {
     
     var throwHttpErrors: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: (js.UndefOr[Double | `false`]) & (Double | `false`)
+    var timeout: js.UndefOr[Double | `false`] = js.undefined
     
     var window: js.UndefOr[Null] = js.undefined
   }
   object InternalOptions {
     
-    inline def apply(
-      credentials: js.UndefOr[RequestCredentials] & RequestCredentials,
-      fetch: (js.UndefOr[
-          js.Function2[/* input */ RequestInfo, /* init */ js.UndefOr[RequestInit], js.Promise[Response]]
-        ]) & (js.Function2[/* input */ RequestInfo, /* init */ js.UndefOr[RequestInit], js.Promise[Response]]),
-      headers: js.UndefOr[KyHeadersInit] & RequiredHeaderskeyofHeade,
-      hooks: RequiredHookskeyofHooks,
-      prefixUrl: (js.UndefOr[URL | String]) & (URL | String) & String,
-      retry: RequiredRetryOptionskeyof,
-      timeout: (js.UndefOr[Double | `false`]) & (Double | `false`)
-    ): InternalOptions = {
-      val __obj = js.Dynamic.literal(credentials = credentials.asInstanceOf[js.Any], fetch = fetch.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], hooks = hooks.asInstanceOf[js.Any], prefixUrl = prefixUrl.asInstanceOf[js.Any], retry = retry.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
+    inline def apply(hooks: RequiredHookskeyofHooks, retry: RequiredRetryOptionskeyof): InternalOptions = {
+      val __obj = js.Dynamic.literal(hooks = hooks.asInstanceOf[js.Any], retry = retry.asInstanceOf[js.Any])
       __obj.asInstanceOf[InternalOptions]
     }
     
@@ -167,15 +156,19 @@ object distributionTypesOptionsMod {
       
       inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      inline def setCredentials(value: js.UndefOr[RequestCredentials] & RequestCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: RequestCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
-      inline def setFetch(
-        value: (js.UndefOr[
-              js.Function2[/* input */ RequestInfo, /* init */ js.UndefOr[RequestInit], js.Promise[Response]]
-            ]) & (js.Function2[/* input */ RequestInfo, /* init */ js.UndefOr[RequestInit], js.Promise[Response]])
-      ): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
+      inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       
-      inline def setHeaders(value: js.UndefOr[KyHeadersInit] & RequiredHeaderskeyofHeade): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setFetch(value: (/* input */ RequestInfo, /* init */ js.UndefOr[RequestInit]) => js.Promise[Response]): Self = StObject.set(x, "fetch", js.Any.fromFunction2(value))
+      
+      inline def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
+      
+      inline def setHeaders(value: KyHeadersInit): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      
+      inline def setHeadersVarargs(value: (js.Tuple2[String, String])*): Self = StObject.set(x, "headers", js.Array(value*))
       
       inline def setHooks(value: RequiredHookskeyofHooks): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
       
@@ -207,7 +200,9 @@ object distributionTypesOptionsMod {
       
       inline def setParseJsonUndefined: Self = StObject.set(x, "parseJson", js.undefined)
       
-      inline def setPrefixUrl(value: (js.UndefOr[URL | String]) & (URL | String) & String): Self = StObject.set(x, "prefixUrl", value.asInstanceOf[js.Any])
+      inline def setPrefixUrl(value: URL | String): Self = StObject.set(x, "prefixUrl", value.asInstanceOf[js.Any])
+      
+      inline def setPrefixUrlUndefined: Self = StObject.set(x, "prefixUrl", js.undefined)
       
       inline def setRedirect(value: RequestRedirect): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
       
@@ -239,7 +234,9 @@ object distributionTypesOptionsMod {
       
       inline def setThrowHttpErrorsUndefined: Self = StObject.set(x, "throwHttpErrors", js.undefined)
       
-      inline def setTimeout(value: (js.UndefOr[Double | `false`]) & (Double | `false`)): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double | `false`): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   

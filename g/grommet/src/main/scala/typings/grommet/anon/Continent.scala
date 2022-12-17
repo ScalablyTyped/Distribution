@@ -11,7 +11,7 @@ trait Continent extends StObject {
   
   var continent: js.UndefOr[Base] = js.undefined
   
-  var hover: js.UndefOr[`7`] = js.undefined
+  var hover: js.UndefOr[`5`] = js.undefined
   
   var place: js.UndefOr[Base] = js.undefined
 }
@@ -32,7 +32,7 @@ object Continent {
     
     inline def setContinentUndefined: Self = StObject.set(x, "continent", js.undefined)
     
-    inline def setHover(value: `7`): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+    inline def setHover(value: `5`): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
     inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     

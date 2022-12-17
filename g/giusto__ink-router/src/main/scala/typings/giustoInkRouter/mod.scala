@@ -86,8 +86,8 @@ object mod {
   }
   object CommandLineRouterProps {
     
-    inline def apply(children: NonNullable[ReactNode]): CommandLineRouterProps = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    inline def apply(): CommandLineRouterProps = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CommandLineRouterProps]
     }
     
@@ -100,6 +100,8 @@ object mod {
       inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setChildren(value: NonNullable[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setInitialEntries(value: js.Array[String]): Self = StObject.set(x, "initialEntries", value.asInstanceOf[js.Any])
       
@@ -190,14 +192,16 @@ object mod {
   }
   object RouterProps {
     
-    inline def apply(children: NonNullable[ReactNode]): RouterProps = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    inline def apply(): RouterProps = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RouterProps]
     }
     
     extension [Self <: RouterProps](x: Self) {
       
       inline def setChildren(value: NonNullable[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setGetUserConfirmation(value: () => Unit): Self = StObject.set(x, "getUserConfirmation", js.Any.fromFunction0(value))
       

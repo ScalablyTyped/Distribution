@@ -33,27 +33,27 @@ object esTabNavListWrapperMod {
     
     var activeKey: String = js.native
     
-    var animated: AnimatedConfig & js.UndefOr[AnimatedConfig] = js.native
+    var animated: AnimatedConfig = js.native
     
     var children: js.UndefOr[js.Function1[/* node */ ReactElement, ReactElement]] = js.native
     
     var className: js.UndefOr[String] = js.native
     
-    var editable: EditableConfig & js.UndefOr[EditableConfig] = js.native
+    var editable: EditableConfig = js.native
     
-    var extra: TabBarExtraContent & js.UndefOr[TabBarExtraContent] = js.native
+    var extra: TabBarExtraContent = js.native
     
-    var getPopupContainer: (js.Function1[/* node */ HTMLElement, HTMLElement]) & (js.UndefOr[js.Function1[/* node */ HTMLElement, HTMLElement]]) = js.native
+    var getPopupContainer: js.Function1[/* node */ HTMLElement, HTMLElement] = js.native
     
     var id: String = js.native
     
-    var locale: TabsLocale & js.UndefOr[TabsLocale] = js.native
+    var locale: TabsLocale = js.native
     
     var mobile: Boolean = js.native
     
-    var moreIcon: ReactNode & js.UndefOr[ReactNode] = js.native
+    var moreIcon: ReactNode = js.native
     
-    var moreTransitionName: String & js.UndefOr[String] = js.native
+    var moreTransitionName: String = js.native
     
     var onTabClick: js.Function2[
         /* activeKey */ String, 
@@ -63,17 +63,17 @@ object esTabNavListWrapperMod {
     def onTabClick(activeKey: String, e: KeyboardEvent[typings.std.Element]): Unit = js.native
     def onTabClick(activeKey: String, e: MouseEvent[typings.std.Element, NativeMouseEvent]): Unit = js.native
     
-    var onTabScroll: OnTabScroll & js.UndefOr[OnTabScroll] = js.native
+    var onTabScroll: OnTabScroll = js.native
     
-    var popupClassName: String & js.UndefOr[String] = js.native
+    var popupClassName: String = js.native
     
-    var renderTabBar: RenderTabBar & js.UndefOr[RenderTabBar] = js.native
+    var renderTabBar: RenderTabBar = js.native
     
     var rtl: Boolean = js.native
     
-    var style: CSSProperties & js.UndefOr[CSSProperties] = js.native
+    var style: CSSProperties = js.native
     
-    var tabBarGutter: Double & js.UndefOr[Double] = js.native
+    var tabBarGutter: Double = js.native
     
     var tabPosition: TabPosition = js.native
   }

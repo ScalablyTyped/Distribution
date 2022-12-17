@@ -10,8 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @ignore
   */
+@JSImport("playcanvas", "Light")
 @js.native
-trait Light extends StObject {
+open class Light protected () extends StObject {
+  def this(graphicsDevice: Any) = this()
   
   var _atlasViewport: Vec4 = js.native
   
@@ -244,4 +246,24 @@ trait Light extends StObject {
   
   def vsmBlurSize: Double = js.native
   def vsmBlurSize_=(arg: Double): Unit = js.native
+}
+object Light {
+  
+  @JSImport("playcanvas", "Light")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * Get conversion factor for luminance -> light specific light unit.
+    *
+    * @param {number} type - The type of light.
+    * @param {number} [outerAngle] - The outer angle of a spot light.
+    * @param {number} [innerAngle] - The inner angle of a spot light.
+    * @returns {number} The scaling factor to multiply with the luminance value.
+    */
+  /* static member */
+  inline def getLightUnitConversion(`type`: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getLightUnitConversion")(`type`.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getLightUnitConversion(`type`: Double, outerAngle: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getLightUnitConversion")(`type`.asInstanceOf[js.Any], outerAngle.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getLightUnitConversion(`type`: Double, outerAngle: Double, innerAngle: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getLightUnitConversion")(`type`.asInstanceOf[js.Any], outerAngle.asInstanceOf[js.Any], innerAngle.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getLightUnitConversion(`type`: Double, outerAngle: Unit, innerAngle: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getLightUnitConversion")(`type`.asInstanceOf[js.Any], outerAngle.asInstanceOf[js.Any], innerAngle.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

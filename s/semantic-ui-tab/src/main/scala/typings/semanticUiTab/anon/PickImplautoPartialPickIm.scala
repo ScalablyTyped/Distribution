@@ -30,7 +30,7 @@ trait PickImplautoPartialPickIm
   
   var apiSettings: js.UndefOr[ApiSettings] = js.undefined
   
-  var auto: Boolean & js.UndefOr[Boolean]
+  var auto: Boolean
   
   var cache: js.UndefOr[Boolean] = js.undefined
   
@@ -104,7 +104,7 @@ trait PickImplautoPartialPickIm
 }
 object PickImplautoPartialPickIm {
   
-  inline def apply(auto: Boolean & js.UndefOr[Boolean]): PickImplautoPartialPickIm = {
+  inline def apply(auto: Boolean): PickImplautoPartialPickIm = {
     val __obj = js.Dynamic.literal(auto = auto.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplautoPartialPickIm]
   }
@@ -119,7 +119,7 @@ object PickImplautoPartialPickIm {
     
     inline def setApiSettingsUndefined: Self = StObject.set(x, "apiSettings", js.undefined)
     
-    inline def setAuto(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
+    inline def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
     
     inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     

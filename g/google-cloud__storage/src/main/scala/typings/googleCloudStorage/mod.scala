@@ -3,11 +3,13 @@ package typings.googleCloudStorage
 import org.scalablytyped.runtime.Instantiable3
 import typings.googleCloudStorage.anon.OWNERROLE
 import typings.googleCloudStorage.anon.PartialHashStreamValidato
+import typings.googleCloudStorage.buildSrcCrc32cMod.CRC32CValidator
 import typings.googleCloudStorage.buildSrcCrc32cMod.CRC32CValidatorGenerator
 import typings.googleCloudStorage.buildSrcFileMod.FileOptions
 import typings.googleCloudStorage.buildSrcHmacKeyMod.HmacKeyOptions
 import typings.googleCloudStorage.buildSrcStorageMod.BucketOptions
 import typings.googleCloudStorage.buildSrcStorageMod.StorageOptions
+import typings.node.fsMod.PathLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -301,6 +303,85 @@ object mod {
       name: String,
       options: BucketOptions
     ) = this()
+  }
+  
+  @JSImport("@google-cloud/storage", "CRC32C")
+  @js.native
+  /**
+    * Constructs a new `CRC32C` object.
+    *
+    * Reconstruction is recommended via the `CRC32C.from` static method.
+    *
+    * @param initialValue An initial CRC32C value - a signed 32-bit integer.
+    */
+  open class CRC32C ()
+    extends typings.googleCloudStorage.buildSrcCrc32cMod.CRC32C {
+    def this(initialValue: Double) = this()
+  }
+  object CRC32C {
+    
+    @JSImport("@google-cloud/storage", "CRC32C")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("@google-cloud/storage", "CRC32C.CRC32C_EXTENSIONS")
+    @js.native
+    val CRC32C_EXTENSIONS: js.Array[Any] = js.native
+    
+    /* static member */
+    @JSImport("@google-cloud/storage", "CRC32C.CRC32C_EXTENSION_TABLE")
+    @js.native
+    val CRC32C_EXTENSION_TABLE: js.typedarray.Int32Array = js.native
+    
+    inline def from(value: String): typings.googleCloudStorage.buildSrcCrc32cMod.CRC32C = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudStorage.buildSrcCrc32cMod.CRC32C]
+    /**
+      * Generates a `CRC32C` from a variety of compatable types.
+      * Note: strings are treated as input, not as file paths to read from.
+      *
+      * @param value A number, 4-byte `ArrayBufferView`/`Buffer`/`TypedArray`, or 4-byte base64-encoded data (string)
+      */
+    /* static member */
+    inline def from(value: js.typedarray.ArrayBuffer): typings.googleCloudStorage.buildSrcCrc32cMod.CRC32C = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudStorage.buildSrcCrc32cMod.CRC32C]
+    inline def from(value: js.typedarray.ArrayBufferView): typings.googleCloudStorage.buildSrcCrc32cMod.CRC32C = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudStorage.buildSrcCrc32cMod.CRC32C]
+    inline def from(value: Double): typings.googleCloudStorage.buildSrcCrc32cMod.CRC32C = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudStorage.buildSrcCrc32cMod.CRC32C]
+    inline def from(value: CRC32CValidator): typings.googleCloudStorage.buildSrcCrc32cMod.CRC32C = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudStorage.buildSrcCrc32cMod.CRC32C]
+    
+    /**
+      * Generates a `CRC32C` from a compatible buffer format.
+      *
+      * @param value 4-byte `ArrayBufferView`/`Buffer`/`TypedArray`
+      */
+    /* static member */
+    @JSImport("@google-cloud/storage", "CRC32C.fromBuffer")
+    @js.native
+    def fromBuffer: Any = js.native
+    inline def fromBuffer_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromBuffer")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    inline def fromFile(file: PathLike): js.Promise[typings.googleCloudStorage.buildSrcCrc32cMod.CRC32C] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFile")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.googleCloudStorage.buildSrcCrc32cMod.CRC32C]]
+    
+    /**
+      * Generates a `CRC32C` from a safe, unsigned 32-bit integer.
+      *
+      * @param value an unsigned 32-bit integer
+      */
+    /* static member */
+    @JSImport("@google-cloud/storage", "CRC32C.fromNumber")
+    @js.native
+    def fromNumber: Any = js.native
+    inline def fromNumber_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromNumber")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Generates a `CRC32C` from 4-byte base64-encoded data (string).
+      *
+      * @param value 4-byte base64-encoded data (string)
+      */
+    /* static member */
+    @JSImport("@google-cloud/storage", "CRC32C.fromString")
+    @js.native
+    def fromString: Any = js.native
+    inline def fromString_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromString")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@google-cloud/storage", "CRC32C_DEFAULT_VALIDATOR_GENERATOR")

@@ -8,13 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("@material/snackbar", JSImport.Default)
-  @js.native
-  open class default ()
-    extends typings.materialSnackbar.foundationMod.default {
-    def this(adapter: PartialMDCSnackbarAdapter) = this()
-  }
-  
   @JSImport("@material/snackbar", "MDCSnackbar")
   @js.native
   open class MDCSnackbar protected ()

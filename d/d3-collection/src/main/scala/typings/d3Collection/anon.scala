@@ -28,28 +28,7 @@ object anon {
     }
   }
   
-  trait KeyValue extends StObject {
-    
-    var key: String
-    
-    var value: Any
-  }
-  object KeyValue {
-    
-    inline def apply(key: String, value: Any): KeyValue = {
-      val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[KeyValue]
-    }
-    
-    extension [Self <: KeyValue](x: Self) {
-      
-      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
-      
-      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Value[RollupType] extends StObject {
+  trait KeyValue[RollupType] extends StObject {
     
     var key: String
     
@@ -57,14 +36,14 @@ object anon {
     
     var values: Any
   }
-  object Value {
+  object KeyValue {
     
-    inline def apply[RollupType](key: String, values: Any): Value[RollupType] = {
+    inline def apply[RollupType](key: String, values: Any): KeyValue[RollupType] = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Value[RollupType]]
+      __obj.asInstanceOf[KeyValue[RollupType]]
     }
     
-    extension [Self <: Value[?], RollupType](x: Self & Value[RollupType]) {
+    extension [Self <: KeyValue[?], RollupType](x: Self & KeyValue[RollupType]) {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -73,6 +52,27 @@ object anon {
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
       inline def setValues(value: Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Value extends StObject {
+    
+    var key: String
+    
+    var value: Any
+  }
+  object Value {
+    
+    inline def apply(key: String, value: Any): Value = {
+      val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Value]
+    }
+    
+    extension [Self <: Value](x: Self) {
+      
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

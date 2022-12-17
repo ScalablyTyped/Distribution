@@ -12,39 +12,18 @@ object anon {
   
   trait CODENAME extends StObject {
     
-    var CODENAME: InfiniteTupleSet & typings.typescriptTuple.typescriptTupleStrings.Infinite
-    
-    var ERROR: `TupleSet is not finite`
-  }
-  object CODENAME {
-    
-    inline def apply(CODENAME: InfiniteTupleSet & typings.typescriptTuple.typescriptTupleStrings.Infinite): CODENAME = {
-      val __obj = js.Dynamic.literal(CODENAME = CODENAME.asInstanceOf[js.Any], ERROR = "TupleSet is not finite")
-      __obj.asInstanceOf[CODENAME]
-    }
-    
-    extension [Self <: CODENAME](x: Self) {
-      
-      inline def setCODENAME(value: InfiniteTupleSet & typings.typescriptTuple.typescriptTupleStrings.Infinite): Self = StObject.set(x, "CODENAME", value.asInstanceOf[js.Any])
-      
-      inline def setERROR(value: `TupleSet is not finite`): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait ERROR extends StObject {
-    
     var CODENAME: InfiniteTuple
     
     var ERROR: `Cannot reverse an infinite tuple`
   }
-  object ERROR {
+  object CODENAME {
     
-    inline def apply(): ERROR = {
+    inline def apply(): CODENAME = {
       val __obj = js.Dynamic.literal(CODENAME = "InfiniteTuple", ERROR = "Cannot reverse an infinite tuple")
-      __obj.asInstanceOf[ERROR]
+      __obj.asInstanceOf[CODENAME]
     }
     
-    extension [Self <: ERROR](x: Self) {
+    extension [Self <: CODENAME](x: Self) {
       
       inline def setCODENAME(value: InfiniteTuple): Self = StObject.set(x, "CODENAME", value.asInstanceOf[js.Any])
       
@@ -52,66 +31,80 @@ object anon {
     }
   }
   
-  trait Empty[TupleSet /* <: js.Array[js.Array[Any]] */] extends StObject {
+  trait ERROR extends StObject {
     
-    var empty: js.Array[Any]
+    var CODENAME: InfiniteTupleSet & typings.typescriptTuple.typescriptTupleStrings.Infinite
+    
+    var ERROR: `TupleSet is not finite`
+  }
+  object ERROR {
+    
+    inline def apply(CODENAME: InfiniteTupleSet & typings.typescriptTuple.typescriptTupleStrings.Infinite): ERROR = {
+      val __obj = js.Dynamic.literal(CODENAME = CODENAME.asInstanceOf[js.Any], ERROR = "TupleSet is not finite")
+      __obj.asInstanceOf[ERROR]
+    }
+    
+    extension [Self <: ERROR](x: Self) {
+      
+      inline def setCODENAME(value: InfiniteTupleSet & typings.typescriptTuple.typescriptTupleStrings.Infinite): Self = StObject.set(x, "CODENAME", value.asInstanceOf[js.Any])
+      
+      inline def setERROR(value: `TupleSet is not finite`): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Empty[Prefix /* <: js.Array[Any] */, Tuple /* <: js.Array[Any] */] extends StObject {
+    
+    var empty: Prefix
     
     var infinite: CODENAME
     
-    var nonEmpty: /* import warning: importer.ImportType#apply Failed type conversion: (_ : typescript-tuple.typescript-tuple/lib/utils.Reverse<TupleSet, []>): any extends (_ : infer Last, _1 : infer ReversedRest): any ? Last extends std.Array<any> ? ReversedRest extends std.Array<std.Array<any>> ? typescript-tuple.typescript-tuple/lib/utils.Concat<typescript-tuple.typescript-tuple/lib/utils.ConcatMultiple<typescript-tuple.typescript-tuple/lib/utils.Reverse<ReversedRest, []>>, Last> : never : never : never */ js.Any
+    var nonEmpty: /* import warning: importer.ImportType#apply Failed type conversion: Tuple extends [infer First, ...infer Next] ? typescript-tuple.typescript-tuple/lib/utils.Reverse<Next, typescript-tuple.typescript-tuple/lib/utils.Prepend<Prefix, First>> : never */ js.Any
   }
   object Empty {
     
-    inline def apply[TupleSet /* <: js.Array[js.Array[Any]] */](
-      empty: js.Array[Any],
+    inline def apply[Prefix /* <: js.Array[Any] */, Tuple /* <: js.Array[Any] */](
+      empty: Prefix,
       infinite: CODENAME,
-      nonEmpty: /* import warning: importer.ImportType#apply Failed type conversion: (_ : typescript-tuple.typescript-tuple/lib/utils.Reverse<TupleSet, []>): any extends (_ : infer Last, _1 : infer ReversedRest): any ? Last extends std.Array<any> ? ReversedRest extends std.Array<std.Array<any>> ? typescript-tuple.typescript-tuple/lib/utils.Concat<typescript-tuple.typescript-tuple/lib/utils.ConcatMultiple<typescript-tuple.typescript-tuple/lib/utils.Reverse<ReversedRest, []>>, Last> : never : never : never */ js.Any
-    ): Empty[TupleSet] = {
+      nonEmpty: /* import warning: importer.ImportType#apply Failed type conversion: Tuple extends [infer First, ...infer Next] ? typescript-tuple.typescript-tuple/lib/utils.Reverse<Next, typescript-tuple.typescript-tuple/lib/utils.Prepend<Prefix, First>> : never */ js.Any
+    ): Empty[Prefix, Tuple] = {
       val __obj = js.Dynamic.literal(empty = empty.asInstanceOf[js.Any], infinite = infinite.asInstanceOf[js.Any], nonEmpty = nonEmpty.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Empty[TupleSet]]
+      __obj.asInstanceOf[Empty[Prefix, Tuple]]
     }
     
-    extension [Self <: Empty[?], TupleSet /* <: js.Array[js.Array[Any]] */](x: Self & Empty[TupleSet]) {
+    extension [Self <: Empty[?, ?], Prefix /* <: js.Array[Any] */, Tuple /* <: js.Array[Any] */](x: Self & (Empty[Prefix, Tuple])) {
       
-      inline def setEmpty(value: js.Array[Any]): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
-      
-      inline def setEmptyVarargs(value: Any*): Self = StObject.set(x, "empty", js.Array(value*))
+      inline def setEmpty(value: Prefix): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
       
       inline def setInfinite(value: CODENAME): Self = StObject.set(x, "infinite", value.asInstanceOf[js.Any])
       
       inline def setNonEmpty(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: (_ : typescript-tuple.typescript-tuple/lib/utils.Reverse<TupleSet, []>): any extends (_ : infer Last, _1 : infer ReversedRest): any ? Last extends std.Array<any> ? ReversedRest extends std.Array<std.Array<any>> ? typescript-tuple.typescript-tuple/lib/utils.Concat<typescript-tuple.typescript-tuple/lib/utils.ConcatMultiple<typescript-tuple.typescript-tuple/lib/utils.Reverse<ReversedRest, []>>, Last> : never : never : never */ js.Any
+        value: /* import warning: importer.ImportType#apply Failed type conversion: Tuple extends [infer First, ...infer Next] ? typescript-tuple.typescript-tuple/lib/utils.Reverse<Next, typescript-tuple.typescript-tuple/lib/utils.Prepend<Prefix, First>> : never */ js.Any
       ): Self = StObject.set(x, "nonEmpty", value.asInstanceOf[js.Any])
     }
   }
   
-  trait EmptyInfinite[Prefix /* <: js.Array[Any] */, Tuple /* <: js.Array[Any] */] extends StObject {
+  trait EmptyNonEmpty[Longest, TupleSet /* <: js.Array[js.Array[Any]] */] extends StObject {
     
-    var empty: Prefix
+    var empty: Longest
     
-    var infinite: ERROR
-    
-    var nonEmpty: /* import warning: importer.ImportType#apply Failed type conversion: Tuple extends [infer First, ...infer Next] ? typescript-tuple.typescript-tuple/lib/utils.Reverse<Next, typescript-tuple.typescript-tuple/lib/utils.Prepend<Prefix, First>> : never */ js.Any
+    var nonEmpty: /* import warning: importer.ImportType#apply Failed type conversion: (_ : TupleSet): any extends (_ : infer Head, _1 : infer Tail): any ? Tail extends std.Array<any> ? Longest extends std.Array<any> ? Head extends std.Array<any> ? Tail extends std.Array<Head> ? typescript-tuple.typescript-tuple/lib/utils.SortTwoTuple<Longest, Head, [Longest, Head]>[1] : typescript-tuple.typescript-tuple/lib/utils.LongestTuple<Tail, typescript-tuple.typescript-tuple/lib/utils.SortTwoTuple<Longest, Head, [Longest, Head]>[1]> : never : never : never : never */ js.Any
   }
-  object EmptyInfinite {
+  object EmptyNonEmpty {
     
-    inline def apply[Prefix /* <: js.Array[Any] */, Tuple /* <: js.Array[Any] */](
-      empty: Prefix,
-      infinite: ERROR,
-      nonEmpty: /* import warning: importer.ImportType#apply Failed type conversion: Tuple extends [infer First, ...infer Next] ? typescript-tuple.typescript-tuple/lib/utils.Reverse<Next, typescript-tuple.typescript-tuple/lib/utils.Prepend<Prefix, First>> : never */ js.Any
-    ): EmptyInfinite[Prefix, Tuple] = {
-      val __obj = js.Dynamic.literal(empty = empty.asInstanceOf[js.Any], infinite = infinite.asInstanceOf[js.Any], nonEmpty = nonEmpty.asInstanceOf[js.Any])
-      __obj.asInstanceOf[EmptyInfinite[Prefix, Tuple]]
+    inline def apply[Longest, TupleSet /* <: js.Array[js.Array[Any]] */](
+      empty: Longest,
+      nonEmpty: /* import warning: importer.ImportType#apply Failed type conversion: (_ : TupleSet): any extends (_ : infer Head, _1 : infer Tail): any ? Tail extends std.Array<any> ? Longest extends std.Array<any> ? Head extends std.Array<any> ? Tail extends std.Array<Head> ? typescript-tuple.typescript-tuple/lib/utils.SortTwoTuple<Longest, Head, [Longest, Head]>[1] : typescript-tuple.typescript-tuple/lib/utils.LongestTuple<Tail, typescript-tuple.typescript-tuple/lib/utils.SortTwoTuple<Longest, Head, [Longest, Head]>[1]> : never : never : never : never */ js.Any
+    ): EmptyNonEmpty[Longest, TupleSet] = {
+      val __obj = js.Dynamic.literal(empty = empty.asInstanceOf[js.Any], nonEmpty = nonEmpty.asInstanceOf[js.Any])
+      __obj.asInstanceOf[EmptyNonEmpty[Longest, TupleSet]]
     }
     
-    extension [Self <: EmptyInfinite[?, ?], Prefix /* <: js.Array[Any] */, Tuple /* <: js.Array[Any] */](x: Self & (EmptyInfinite[Prefix, Tuple])) {
+    extension [Self <: EmptyNonEmpty[?, ?], Longest, TupleSet /* <: js.Array[js.Array[Any]] */](x: Self & (EmptyNonEmpty[Longest, TupleSet])) {
       
-      inline def setEmpty(value: Prefix): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
-      
-      inline def setInfinite(value: ERROR): Self = StObject.set(x, "infinite", value.asInstanceOf[js.Any])
+      inline def setEmpty(value: Longest): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
       
       inline def setNonEmpty(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: Tuple extends [infer First, ...infer Next] ? typescript-tuple.typescript-tuple/lib/utils.Reverse<Next, typescript-tuple.typescript-tuple/lib/utils.Prepend<Prefix, First>> : never */ js.Any
+        value: /* import warning: importer.ImportType#apply Failed type conversion: (_ : TupleSet): any extends (_ : infer Head, _1 : infer Tail): any ? Tail extends std.Array<any> ? Longest extends std.Array<any> ? Head extends std.Array<any> ? Tail extends std.Array<Head> ? typescript-tuple.typescript-tuple/lib/utils.SortTwoTuple<Longest, Head, [Longest, Head]>[1] : typescript-tuple.typescript-tuple/lib/utils.LongestTuple<Tail, typescript-tuple.typescript-tuple/lib/utils.SortTwoTuple<Longest, Head, [Longest, Head]>[1]> : never : never : never : never */ js.Any
       ): Self = StObject.set(x, "nonEmpty", value.asInstanceOf[js.Any])
     }
   }
@@ -141,7 +134,40 @@ object anon {
     }
   }
   
-  trait Infinite[Holder /* <: js.Array[Any] */, Tuple /* <: js.Array[Any] */, Replacement] extends StObject {
+  trait Infinite[TupleSet /* <: js.Array[js.Array[Any]] */] extends StObject {
+    
+    var empty: js.Array[Any]
+    
+    var infinite: ERROR
+    
+    var nonEmpty: /* import warning: importer.ImportType#apply Failed type conversion: (_ : typescript-tuple.typescript-tuple/lib/utils.Reverse<TupleSet, []>): any extends (_ : infer Last, _1 : infer ReversedRest): any ? Last extends std.Array<any> ? ReversedRest extends std.Array<std.Array<any>> ? typescript-tuple.typescript-tuple/lib/utils.Concat<typescript-tuple.typescript-tuple/lib/utils.ConcatMultiple<typescript-tuple.typescript-tuple/lib/utils.Reverse<ReversedRest, []>>, Last> : never : never : never */ js.Any
+  }
+  object Infinite {
+    
+    inline def apply[TupleSet /* <: js.Array[js.Array[Any]] */](
+      empty: js.Array[Any],
+      infinite: ERROR,
+      nonEmpty: /* import warning: importer.ImportType#apply Failed type conversion: (_ : typescript-tuple.typescript-tuple/lib/utils.Reverse<TupleSet, []>): any extends (_ : infer Last, _1 : infer ReversedRest): any ? Last extends std.Array<any> ? ReversedRest extends std.Array<std.Array<any>> ? typescript-tuple.typescript-tuple/lib/utils.Concat<typescript-tuple.typescript-tuple/lib/utils.ConcatMultiple<typescript-tuple.typescript-tuple/lib/utils.Reverse<ReversedRest, []>>, Last> : never : never : never */ js.Any
+    ): Infinite[TupleSet] = {
+      val __obj = js.Dynamic.literal(empty = empty.asInstanceOf[js.Any], infinite = infinite.asInstanceOf[js.Any], nonEmpty = nonEmpty.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Infinite[TupleSet]]
+    }
+    
+    extension [Self <: Infinite[?], TupleSet /* <: js.Array[js.Array[Any]] */](x: Self & Infinite[TupleSet]) {
+      
+      inline def setEmpty(value: js.Array[Any]): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
+      
+      inline def setEmptyVarargs(value: Any*): Self = StObject.set(x, "empty", js.Array(value*))
+      
+      inline def setInfinite(value: ERROR): Self = StObject.set(x, "infinite", value.asInstanceOf[js.Any])
+      
+      inline def setNonEmpty(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: (_ : typescript-tuple.typescript-tuple/lib/utils.Reverse<TupleSet, []>): any extends (_ : infer Last, _1 : infer ReversedRest): any ? Last extends std.Array<any> ? ReversedRest extends std.Array<std.Array<any>> ? typescript-tuple.typescript-tuple/lib/utils.Concat<typescript-tuple.typescript-tuple/lib/utils.ConcatMultiple<typescript-tuple.typescript-tuple/lib/utils.Reverse<ReversedRest, []>>, Last> : never : never : never */ js.Any
+      ): Self = StObject.set(x, "nonEmpty", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait NonEmpty[Holder /* <: js.Array[Any] */, Tuple /* <: js.Array[Any] */, Replacement] extends StObject {
     
     var empty: Holder
     
@@ -149,18 +175,18 @@ object anon {
     
     var nonEmpty: /* import warning: importer.ImportType#apply Failed type conversion: Tuple extends [any, ...infer Rest] ? typescript-tuple.typescript-tuple/lib/utils.FillTuple<Rest, Replacement, typescript-tuple.typescript-tuple/lib/utils.Prepend<Holder, Replacement>> : never */ js.Any
   }
-  object Infinite {
+  object NonEmpty {
     
     inline def apply[Holder /* <: js.Array[Any] */, Tuple /* <: js.Array[Any] */, Replacement](
       empty: Holder,
       infinite: js.Array[Replacement],
       nonEmpty: /* import warning: importer.ImportType#apply Failed type conversion: Tuple extends [any, ...infer Rest] ? typescript-tuple.typescript-tuple/lib/utils.FillTuple<Rest, Replacement, typescript-tuple.typescript-tuple/lib/utils.Prepend<Holder, Replacement>> : never */ js.Any
-    ): Infinite[Holder, Tuple, Replacement] = {
+    ): NonEmpty[Holder, Tuple, Replacement] = {
       val __obj = js.Dynamic.literal(empty = empty.asInstanceOf[js.Any], infinite = infinite.asInstanceOf[js.Any], nonEmpty = nonEmpty.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Infinite[Holder, Tuple, Replacement]]
+      __obj.asInstanceOf[NonEmpty[Holder, Tuple, Replacement]]
     }
     
-    extension [Self <: Infinite[?, ?, ?], Holder /* <: js.Array[Any] */, Tuple /* <: js.Array[Any] */, Replacement](x: Self & (Infinite[Holder, Tuple, Replacement])) {
+    extension [Self <: NonEmpty[?, ?, ?], Holder /* <: js.Array[Any] */, Tuple /* <: js.Array[Any] */, Replacement](x: Self & (NonEmpty[Holder, Tuple, Replacement])) {
       
       inline def setEmpty(value: Holder): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
       
@@ -170,32 +196,6 @@ object anon {
       
       inline def setNonEmpty(
         value: /* import warning: importer.ImportType#apply Failed type conversion: Tuple extends [any, ...infer Rest] ? typescript-tuple.typescript-tuple/lib/utils.FillTuple<Rest, Replacement, typescript-tuple.typescript-tuple/lib/utils.Prepend<Holder, Replacement>> : never */ js.Any
-      ): Self = StObject.set(x, "nonEmpty", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait NonEmpty[Longest, TupleSet /* <: js.Array[js.Array[Any]] */] extends StObject {
-    
-    var empty: Longest
-    
-    var nonEmpty: /* import warning: importer.ImportType#apply Failed type conversion: (_ : TupleSet): any extends (_ : infer Head, _1 : infer Tail): any ? Tail extends std.Array<any> ? Longest extends std.Array<any> ? Head extends std.Array<any> ? Tail extends std.Array<Head> ? typescript-tuple.typescript-tuple/lib/utils.SortTwoTuple<Longest, Head, [Longest, Head]>[1] : typescript-tuple.typescript-tuple/lib/utils.LongestTuple<Tail, typescript-tuple.typescript-tuple/lib/utils.SortTwoTuple<Longest, Head, [Longest, Head]>[1]> : never : never : never : never */ js.Any
-  }
-  object NonEmpty {
-    
-    inline def apply[Longest, TupleSet /* <: js.Array[js.Array[Any]] */](
-      empty: Longest,
-      nonEmpty: /* import warning: importer.ImportType#apply Failed type conversion: (_ : TupleSet): any extends (_ : infer Head, _1 : infer Tail): any ? Tail extends std.Array<any> ? Longest extends std.Array<any> ? Head extends std.Array<any> ? Tail extends std.Array<Head> ? typescript-tuple.typescript-tuple/lib/utils.SortTwoTuple<Longest, Head, [Longest, Head]>[1] : typescript-tuple.typescript-tuple/lib/utils.LongestTuple<Tail, typescript-tuple.typescript-tuple/lib/utils.SortTwoTuple<Longest, Head, [Longest, Head]>[1]> : never : never : never : never */ js.Any
-    ): NonEmpty[Longest, TupleSet] = {
-      val __obj = js.Dynamic.literal(empty = empty.asInstanceOf[js.Any], nonEmpty = nonEmpty.asInstanceOf[js.Any])
-      __obj.asInstanceOf[NonEmpty[Longest, TupleSet]]
-    }
-    
-    extension [Self <: NonEmpty[?, ?], Longest, TupleSet /* <: js.Array[js.Array[Any]] */](x: Self & (NonEmpty[Longest, TupleSet])) {
-      
-      inline def setEmpty(value: Longest): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
-      
-      inline def setNonEmpty(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: (_ : TupleSet): any extends (_ : infer Head, _1 : infer Tail): any ? Tail extends std.Array<any> ? Longest extends std.Array<any> ? Head extends std.Array<any> ? Tail extends std.Array<Head> ? typescript-tuple.typescript-tuple/lib/utils.SortTwoTuple<Longest, Head, [Longest, Head]>[1] : typescript-tuple.typescript-tuple/lib/utils.LongestTuple<Tail, typescript-tuple.typescript-tuple/lib/utils.SortTwoTuple<Longest, Head, [Longest, Head]>[1]> : never : never : never : never */ js.Any
       ): Self = StObject.set(x, "nonEmpty", value.asInstanceOf[js.Any])
     }
   }

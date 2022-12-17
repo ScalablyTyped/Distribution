@@ -4,7 +4,6 @@ import typings.materialUiCore.accordionAccordionMod.AccordionClassKey
 import typings.materialUiCore.accordionActionsAccordionActionsMod.AccordionActionsClassKey
 import typings.materialUiCore.accordionDetailsAccordionDetailsMod.AccordionDetailsClassKey
 import typings.materialUiCore.accordionSummaryAccordionSummaryMod.AccordionSummaryClassKey
-import typings.materialUiCore.anon.Global
 import typings.materialUiCore.anon.PartialStyleRulesAccordio
 import typings.materialUiCore.anon.PartialStyleRulesAccordio0
 import typings.materialUiCore.anon.PartialStyleRulesAccordioContent
@@ -677,7 +676,7 @@ object stylesOverridesMod {
     
     var MuiContainer: js.UndefOr[PartialStyleRulesContaine] = js.undefined
     
-    var MuiCssBaseline: js.UndefOr[PartialStyleRulesglobal] & js.UndefOr[Global]
+    var MuiCssBaseline: js.UndefOr[PartialStyleRulesglobal] = js.undefined
     
     var MuiDialog: js.UndefOr[PartialStyleRulesDialogCl] = js.undefined
     
@@ -831,8 +830,8 @@ object stylesOverridesMod {
   }
   object Overrides {
     
-    inline def apply(MuiCssBaseline: js.UndefOr[PartialStyleRulesglobal] & js.UndefOr[Global]): Overrides = {
-      val __obj = js.Dynamic.literal(MuiCssBaseline = MuiCssBaseline.asInstanceOf[js.Any])
+    inline def apply(): Overrides = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Overrides]
     }
     
@@ -938,7 +937,9 @@ object stylesOverridesMod {
       
       inline def setMuiContainerUndefined: Self = StObject.set(x, "MuiContainer", js.undefined)
       
-      inline def setMuiCssBaseline(value: js.UndefOr[PartialStyleRulesglobal] & js.UndefOr[Global]): Self = StObject.set(x, "MuiCssBaseline", value.asInstanceOf[js.Any])
+      inline def setMuiCssBaseline(value: PartialStyleRulesglobal): Self = StObject.set(x, "MuiCssBaseline", value.asInstanceOf[js.Any])
+      
+      inline def setMuiCssBaselineUndefined: Self = StObject.set(x, "MuiCssBaseline", js.undefined)
       
       inline def setMuiDialog(value: PartialStyleRulesDialogCl): Self = StObject.set(x, "MuiDialog", value.asInstanceOf[js.Any])
       

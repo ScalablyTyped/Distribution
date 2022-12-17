@@ -7,17 +7,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Planid extends StObject {
   
   /** The unique identifier of the plan. */
-  var plan_id: Double
+  var plan_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['plan-id'] */ js.Any
 }
 object Planid {
   
-  inline def apply(plan_id: Double): Planid = {
+  inline def apply(
+    plan_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['plan-id'] */ js.Any
+  ): Planid = {
     val __obj = js.Dynamic.literal(plan_id = plan_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Planid]
   }
   
   extension [Self <: Planid](x: Self) {
     
-    inline def setPlan_id(value: Double): Self = StObject.set(x, "plan_id", value.asInstanceOf[js.Any])
+    inline def setPlan_id(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['plan-id'] */ js.Any
+    ): Self = StObject.set(x, "plan_id", value.asInstanceOf[js.Any])
   }
 }

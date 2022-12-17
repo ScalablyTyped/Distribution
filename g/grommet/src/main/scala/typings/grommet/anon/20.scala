@@ -1,15 +1,13 @@
 package typings.grommet.anon
 
-import typings.grommet.utilsMod.ColorType
+import typings.grommet.utilsMod.PadType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `20` extends StObject {
   
-  var color: js.UndefOr[ColorType] = js.undefined
-  
-  var side: js.UndefOr[String] = js.undefined
+  var pad: js.UndefOr[PadType] = js.undefined
 }
 object `20` {
   
@@ -20,12 +18,8 @@ object `20` {
   
   extension [Self <: `20`](x: Self) {
     
-    inline def setColor(value: ColorType): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setPad(value: PadType): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     
-    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
-    
-    inline def setSide(value: String): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
-    
-    inline def setSideUndefined: Self = StObject.set(x, "side", js.undefined)
+    inline def setPadUndefined: Self = StObject.set(x, "pad", js.undefined)
   }
 }

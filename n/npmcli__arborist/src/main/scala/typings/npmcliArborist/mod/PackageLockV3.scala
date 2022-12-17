@@ -28,16 +28,8 @@ trait PackageLockV3
 }
 object PackageLockV3 {
   
-  inline def apply(
-    packages: NonNullable[
-      js.UndefOr[
-        StringDictionary[
-          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LockDependency */ Any) & Workspaces
-        ]
-      ]
-    ]
-  ): PackageLockV3 = {
-    val __obj = js.Dynamic.literal(lockfileVersion = 3, packages = packages.asInstanceOf[js.Any])
+  inline def apply(): PackageLockV3 = {
+    val __obj = js.Dynamic.literal(lockfileVersion = 3)
     __obj.asInstanceOf[PackageLockV3]
   }
   
@@ -54,5 +46,7 @@ object PackageLockV3 {
           ]
         ]
     ): Self = StObject.set(x, "packages", value.asInstanceOf[js.Any])
+    
+    inline def setPackagesUndefined: Self = StObject.set(x, "packages", js.undefined)
   }
 }

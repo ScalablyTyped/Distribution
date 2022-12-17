@@ -13,12 +13,12 @@ trait DictkeyConclusion
   var conclusion: Any
   
   /** @enum {undefined} */
-  var status: completed
+  var status: js.UndefOr[completed] = js.undefined
 }
 object DictkeyConclusion {
   
   inline def apply(conclusion: Any): DictkeyConclusion = {
-    val __obj = js.Dynamic.literal(conclusion = conclusion.asInstanceOf[js.Any], status = "completed")
+    val __obj = js.Dynamic.literal(conclusion = conclusion.asInstanceOf[js.Any])
     __obj.asInstanceOf[DictkeyConclusion]
   }
   
@@ -27,5 +27,7 @@ object DictkeyConclusion {
     inline def setConclusion(value: Any): Self = StObject.set(x, "conclusion", value.asInstanceOf[js.Any])
     
     inline def setStatus(value: completed): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

@@ -8,15 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* from `exports` in `package.json` */
 object esmMod {
   
-  @JSImport("i18next-browser-languagedetector/esm", JSImport.Default)
-  @js.native
-  open class default ()
-    extends typings.i18nextBrowserLanguagedetector.mod.default {
-    def this(services: Any) = this()
-    def this(services: Any, options: DetectorOptions) = this()
-    def this(services: Unit, options: DetectorOptions) = this()
-  }
-  
   /* augmented module */
   object i18nextAugmentingMod {
     

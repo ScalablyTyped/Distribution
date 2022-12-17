@@ -43,7 +43,7 @@ trait PickImplbeforeSendPartial
   
   def beforeSend(settings: ApiSettings): Any
   @JSName("beforeSend")
-  var beforeSend_Original: (js.Function1[/* settings */ ApiSettings, Any]) & (js.UndefOr[js.Function1[/* settings */ ApiSettings, Any]])
+  var beforeSend_Original: js.Function1[/* settings */ ApiSettings, Any]
   
   var beforeXHR: js.UndefOr[js.Function1[/* xhrObject */ jqXHR[Any], Any]] = js.undefined
   
@@ -149,10 +149,8 @@ trait PickImplbeforeSendPartial
 }
 object PickImplbeforeSendPartial {
   
-  inline def apply(
-    beforeSend: (js.Function1[/* settings */ ApiSettings, Any]) & (js.UndefOr[js.Function1[/* settings */ ApiSettings, Any]])
-  ): PickImplbeforeSendPartial = {
-    val __obj = js.Dynamic.literal(beforeSend = beforeSend.asInstanceOf[js.Any])
+  inline def apply(beforeSend: /* settings */ ApiSettings => Any): PickImplbeforeSendPartial = {
+    val __obj = js.Dynamic.literal(beforeSend = js.Any.fromFunction1(beforeSend))
     __obj.asInstanceOf[PickImplbeforeSendPartial]
   }
   
@@ -166,9 +164,7 @@ object PickImplbeforeSendPartial {
     
     inline def setApiUndefined: Self = StObject.set(x, "api", js.undefined)
     
-    inline def setBeforeSend(
-      value: (js.Function1[/* settings */ ApiSettings, Any]) & (js.UndefOr[js.Function1[/* settings */ ApiSettings, Any]])
-    ): Self = StObject.set(x, "beforeSend", value.asInstanceOf[js.Any])
+    inline def setBeforeSend(value: /* settings */ ApiSettings => Any): Self = StObject.set(x, "beforeSend", js.Any.fromFunction1(value))
     
     inline def setBeforeXHR(value: /* xhrObject */ jqXHR[Any] => Any): Self = StObject.set(x, "beforeXHR", js.Any.fromFunction1(value))
     

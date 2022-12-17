@@ -10,8 +10,9 @@ A change description is a variant of [change set](https://codemirror.net/6/docs/
 that doesn't store the inserted text. As such, it can't be
 applied, but is cheaper to store and manipulate.
 */
+@JSImport("@codemirror/state", "ChangeDesc")
 @js.native
-trait ChangeDesc extends StObject {
+open class ChangeDesc () extends StObject {
   
   /**
     Compute the combined effect of applying another set of changes
@@ -107,4 +108,17 @@ trait ChangeDesc extends StObject {
     */
   def touchesRange(from: Double): Boolean | cover = js.native
   def touchesRange(from: Double, to: Double): Boolean | cover = js.native
+}
+object ChangeDesc {
+  
+  @JSImport("@codemirror/state", "ChangeDesc")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    Create a change desc from its JSON representation (as produced
+    by [`toJSON`](https://codemirror.net/6/docs/ref/#state.ChangeDesc.toJSON).
+    */
+  /* static member */
+  inline def fromJSON(json: Any): ChangeDesc = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[ChangeDesc]
 }

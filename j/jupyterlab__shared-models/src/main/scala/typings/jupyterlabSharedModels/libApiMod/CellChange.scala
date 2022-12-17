@@ -2,7 +2,7 @@ package typings.jupyterlabSharedModels.libApiMod
 
 import typings.jupyterlabNbformat.mod.IOutput
 import typings.jupyterlabSharedModels.anon.Delete
-import typings.jupyterlabSharedModels.anon.NewValue
+import typings.jupyterlabSharedModels.anon.NewValueOldValue
 import typings.jupyterlabSharedModels.anon.OldValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CellChange[MetadataType] extends StObject {
   
-  var executionCountChange: js.UndefOr[NewValue] = js.undefined
+  var executionCountChange: js.UndefOr[OldValue] = js.undefined
   
-  var metadataChange: js.UndefOr[OldValue[MetadataType]] = js.undefined
+  var metadataChange: js.UndefOr[NewValueOldValue[MetadataType]] = js.undefined
   
   var outputsChange: js.UndefOr[Delta[js.Array[IOutput]]] = js.undefined
   
@@ -27,11 +27,11 @@ object CellChange {
   
   extension [Self <: CellChange[?], MetadataType](x: Self & CellChange[MetadataType]) {
     
-    inline def setExecutionCountChange(value: NewValue): Self = StObject.set(x, "executionCountChange", value.asInstanceOf[js.Any])
+    inline def setExecutionCountChange(value: OldValue): Self = StObject.set(x, "executionCountChange", value.asInstanceOf[js.Any])
     
     inline def setExecutionCountChangeUndefined: Self = StObject.set(x, "executionCountChange", js.undefined)
     
-    inline def setMetadataChange(value: OldValue[MetadataType]): Self = StObject.set(x, "metadataChange", value.asInstanceOf[js.Any])
+    inline def setMetadataChange(value: NewValueOldValue[MetadataType]): Self = StObject.set(x, "metadataChange", value.asInstanceOf[js.Any])
     
     inline def setMetadataChangeUndefined: Self = StObject.set(x, "metadataChange", js.undefined)
     

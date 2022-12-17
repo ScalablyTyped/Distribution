@@ -1,6 +1,6 @@
 package typings.contentstackUtils
 
-import typings.contentstackUtils.anon.Paths
+import typings.contentstackUtils.anon.RenderOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ object distTypesJsonToHtmlMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def jsonToHTML(option: Paths): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonToHTML")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def jsonToHTML(option: RenderOption): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonToHTML")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.contentstackUtils.distTypesNodesTextNodeMod.default

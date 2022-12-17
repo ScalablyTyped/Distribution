@@ -1,7 +1,7 @@
 package typings.baseui.datepickerTypesMod
 
+import typings.baseui.anon.`10`
 import typings.baseui.anon.`2`
-import typings.baseui.anon.`9`
 import typings.baseui.inputTypesMod.Size
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -47,7 +47,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   /** When single picker, fn is always called. When range picker, fn is called when start and end date are selected. */
   @JSName("onChange")
-  var onChange_DatepickerProps: js.UndefOr[js.Function1[/* a */ `9`[T], Any]] = js.undefined
+  var onChange_DatepickerProps: js.UndefOr[js.Function1[/* a */ `10`[T], Any]] = js.undefined
   
   /** Called when calendar is closed */
   var onClose: js.UndefOr[js.Function0[Any]] = js.undefined
@@ -137,7 +137,7 @@ object DatepickerProps {
     
     inline def setMountNodeUndefined: Self = StObject.set(x, "mountNode", js.undefined)
     
-    inline def setOnChange(value: /* a */ `9`[T] => Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: /* a */ `10`[T] => Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     

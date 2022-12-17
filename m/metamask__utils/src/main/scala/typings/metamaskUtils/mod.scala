@@ -88,7 +88,7 @@ object mod {
   
   @JSImport("@metamask/utils", "JsonRpcNotificationStruct")
   @js.native
-  val JsonRpcNotificationStruct: Struct_[JsonrpcMethodString, OmitidStructstringnumbern] = js.native
+  val JsonRpcNotificationStruct: Struct_[MethodStringParams, OmitidStructstringnumbern] = js.native
   
   @JSImport("@metamask/utils", "JsonRpcParamsStruct")
   @js.native
@@ -96,7 +96,7 @@ object mod {
   
   @JSImport("@metamask/utils", "JsonRpcRequestStruct")
   @js.native
-  val JsonRpcRequestStruct: Struct_[MethodStringParams, IdStruct] = js.native
+  val JsonRpcRequestStruct: Struct_[JsonrpcMethodString, IdStruct] = js.native
   
   @JSImport("@metamask/utils", "JsonRpcResponseStruct")
   @js.native

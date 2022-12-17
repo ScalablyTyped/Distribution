@@ -6,23 +6,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `411` extends StObject {
   
-  @JSName("application/json")
-  var applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['job'] */ js.Any
+  var runners: js.UndefOr[js.Array[Os]] = js.undefined
+  
+  var total_count: js.UndefOr[Double] = js.undefined
 }
 object `411` {
   
-  inline def apply(
-    applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['job'] */ js.Any
-  ): `411` = {
+  inline def apply(): `411` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`411`]
   }
   
   extension [Self <: `411`](x: Self) {
     
-    inline def setApplicationSlashjson(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['job'] */ js.Any
-    ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+    inline def setRunners(value: js.Array[Os]): Self = StObject.set(x, "runners", value.asInstanceOf[js.Any])
+    
+    inline def setRunnersUndefined: Self = StObject.set(x, "runners", js.undefined)
+    
+    inline def setRunnersVarargs(value: Os*): Self = StObject.set(x, "runners", js.Array(value*))
+    
+    inline def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
+    
+    inline def setTotal_countUndefined: Self = StObject.set(x, "total_count", js.undefined)
   }
 }

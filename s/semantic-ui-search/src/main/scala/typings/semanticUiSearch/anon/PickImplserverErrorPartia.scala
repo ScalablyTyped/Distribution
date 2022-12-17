@@ -20,13 +20,13 @@ trait PickImplserverErrorPartia
   
   var noTemplate: js.UndefOr[String] = js.undefined
   
-  var serverError: String & js.UndefOr[String]
+  var serverError: String
   
   var source: js.UndefOr[String] = js.undefined
 }
 object PickImplserverErrorPartia {
   
-  inline def apply(serverError: String & js.UndefOr[String]): PickImplserverErrorPartia = {
+  inline def apply(serverError: String): PickImplserverErrorPartia = {
     val __obj = js.Dynamic.literal(serverError = serverError.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplserverErrorPartia]
   }
@@ -53,7 +53,7 @@ object PickImplserverErrorPartia {
     
     inline def setNoTemplateUndefined: Self = StObject.set(x, "noTemplate", js.undefined)
     
-    inline def setServerError(value: String & js.UndefOr[String]): Self = StObject.set(x, "serverError", value.asInstanceOf[js.Any])
+    inline def setServerError(value: String): Self = StObject.set(x, "serverError", value.asInstanceOf[js.Any])
     
     inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

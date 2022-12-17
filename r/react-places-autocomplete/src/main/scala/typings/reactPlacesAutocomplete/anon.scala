@@ -242,9 +242,9 @@ object anon {
   /* Inlined std.Readonly<{  loading :boolean,   suggestions :std.ReadonlyArray<react-places-autocomplete.react-places-autocomplete.Suggestion>, getInputProps <InputProps extends {}>(options : InputProps | undefined): {  type :'text',   autoComplete :'off',   role :'combobox',   aria-autocomplete :'list',   aria-expanded :boolean,   aria-activedescendant :string | undefined,   disabled :boolean,   onKeyDown :react.react.KeyboardEventHandler<std.Element>,   onBlur :react.react.FocusEventHandler<std.Element>,   value :string | undefined, onChange (ev : {  target :{  value :string}}): void} & InputProps, getSuggestionItemProps <SuggestionProps extends {}>(suggestion : react-places-autocomplete.react-places-autocomplete.Suggestion, options : SuggestionProps | undefined): {  key :number,   id :string | undefined,   role :'option',   onMouseEnter :react.react.MouseEventHandler<std.Element>,   onMouseLeave :react.react.MouseEventHandler<std.Element>,   onMouseDown :react.react.MouseEventHandler<std.Element>,   onMouseUp :react.react.MouseEventHandler<std.Element>,   onTouchStart :react.react.TouchEventHandler<std.Element>,   onTouchEnd :react.react.TouchEventHandler<std.Element>,   onClick :react.react.MouseEventHandler<std.Element>} & SuggestionProps}> */
   trait Readonlyloadingbooleansug extends StObject {
     
-    val getInputProps: js.Function1[/* options */ js.UndefOr[js.Object], Ariaactivedescendant & js.Object]
+    val getInputProps: js.Function1[/* options */ js.UndefOr[js.Object], Ariaactivedescendant]
     
-    val getSuggestionItemProps: js.Function2[/* suggestion */ Suggestion, /* options */ js.UndefOr[js.Object], Id & js.Object]
+    val getSuggestionItemProps: js.Function2[/* suggestion */ Suggestion, /* options */ js.UndefOr[js.Object], Id]
     
     val loading: Boolean
     
@@ -253,8 +253,8 @@ object anon {
   object Readonlyloadingbooleansug {
     
     inline def apply(
-      getInputProps: /* options */ js.UndefOr[js.Object] => Ariaactivedescendant & js.Object,
-      getSuggestionItemProps: (/* suggestion */ Suggestion, /* options */ js.UndefOr[js.Object]) => Id & js.Object,
+      getInputProps: /* options */ js.UndefOr[js.Object] => Ariaactivedescendant,
+      getSuggestionItemProps: (/* suggestion */ Suggestion, /* options */ js.UndefOr[js.Object]) => Id,
       loading: Boolean,
       suggestions: js.Array[Suggestion]
     ): Readonlyloadingbooleansug = {
@@ -264,9 +264,9 @@ object anon {
     
     extension [Self <: Readonlyloadingbooleansug](x: Self) {
       
-      inline def setGetInputProps(value: /* options */ js.UndefOr[js.Object] => Ariaactivedescendant & js.Object): Self = StObject.set(x, "getInputProps", js.Any.fromFunction1(value))
+      inline def setGetInputProps(value: /* options */ js.UndefOr[js.Object] => Ariaactivedescendant): Self = StObject.set(x, "getInputProps", js.Any.fromFunction1(value))
       
-      inline def setGetSuggestionItemProps(value: (/* suggestion */ Suggestion, /* options */ js.UndefOr[js.Object]) => Id & js.Object): Self = StObject.set(x, "getSuggestionItemProps", js.Any.fromFunction2(value))
+      inline def setGetSuggestionItemProps(value: (/* suggestion */ Suggestion, /* options */ js.UndefOr[js.Object]) => Id): Self = StObject.set(x, "getSuggestionItemProps", js.Any.fromFunction2(value))
       
       inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       

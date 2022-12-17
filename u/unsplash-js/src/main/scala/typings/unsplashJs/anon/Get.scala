@@ -24,10 +24,10 @@ trait Get extends StObject {
   def getStats(a: PhotoIdString): js.Promise[ApiResponse[Stats]] = js.native
   def getStats(a: PhotoIdString, additionalFetchOptions: AdditionalFetchOptions): js.Promise[ApiResponse[Stats]] = js.native
   
-  def list(): js.Promise[ApiResponse[ResultsTotal]] = js.native
-  def list(a: Unit, additionalFetchOptions: AdditionalFetchOptions): js.Promise[ApiResponse[ResultsTotal]] = js.native
-  def list(a: PaginationParams): js.Promise[ApiResponse[ResultsTotal]] = js.native
-  def list(a: PaginationParams, additionalFetchOptions: AdditionalFetchOptions): js.Promise[ApiResponse[ResultsTotal]] = js.native
+  def list(): js.Promise[ApiResponse[Results]] = js.native
+  def list(a: Unit, additionalFetchOptions: AdditionalFetchOptions): js.Promise[ApiResponse[Results]] = js.native
+  def list(a: PaginationParams): js.Promise[ApiResponse[Results]] = js.native
+  def list(a: PaginationParams, additionalFetchOptions: AdditionalFetchOptions): js.Promise[ApiResponse[Results]] = js.native
   
   def trackDownload(a: DownloadLocation_): js.Promise[ApiResponse[Url]] = js.native
   def trackDownload(a: DownloadLocation_, additionalFetchOptions: AdditionalFetchOptions): js.Promise[ApiResponse[Url]] = js.native

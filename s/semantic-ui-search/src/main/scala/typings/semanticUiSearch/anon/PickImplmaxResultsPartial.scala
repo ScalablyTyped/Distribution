@@ -38,7 +38,7 @@ trait PickImplmaxResultsPartial
   
   var hideDelay: js.UndefOr[Double] = js.undefined
   
-  var maxResults: Double & js.UndefOr[Double]
+  var maxResults: Double
   
   var metadata: js.UndefOr[MetadataSettings] = js.undefined
   
@@ -92,7 +92,7 @@ trait PickImplmaxResultsPartial
 }
 object PickImplmaxResultsPartial {
   
-  inline def apply(maxResults: Double & js.UndefOr[Double]): PickImplmaxResultsPartial = {
+  inline def apply(maxResults: Double): PickImplmaxResultsPartial = {
     val __obj = js.Dynamic.literal(maxResults = maxResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmaxResultsPartial]
   }
@@ -135,7 +135,7 @@ object PickImplmaxResultsPartial {
     
     inline def setHideDelayUndefined: Self = StObject.set(x, "hideDelay", js.undefined)
     
-    inline def setMaxResults(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     inline def setMetadata(value: MetadataSettings): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

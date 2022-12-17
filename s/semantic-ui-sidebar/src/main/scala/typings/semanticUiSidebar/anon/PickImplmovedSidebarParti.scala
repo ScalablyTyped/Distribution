@@ -12,7 +12,7 @@ trait PickImplmovedSidebarParti
   
   var method: js.UndefOr[String] = js.undefined
   
-  var movedSidebar: String & js.UndefOr[String]
+  var movedSidebar: String
   
   var notFound: js.UndefOr[String] = js.undefined
   
@@ -22,7 +22,7 @@ trait PickImplmovedSidebarParti
 }
 object PickImplmovedSidebarParti {
   
-  inline def apply(movedSidebar: String & js.UndefOr[String]): PickImplmovedSidebarParti = {
+  inline def apply(movedSidebar: String): PickImplmovedSidebarParti = {
     val __obj = js.Dynamic.literal(movedSidebar = movedSidebar.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmovedSidebarParti]
   }
@@ -33,7 +33,7 @@ object PickImplmovedSidebarParti {
     
     inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    inline def setMovedSidebar(value: String & js.UndefOr[String]): Self = StObject.set(x, "movedSidebar", value.asInstanceOf[js.Any])
+    inline def setMovedSidebar(value: String): Self = StObject.set(x, "movedSidebar", value.asInstanceOf[js.Any])
     
     inline def setNotFound(value: String): Self = StObject.set(x, "notFound", value.asInstanceOf[js.Any])
     

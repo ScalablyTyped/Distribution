@@ -1,7 +1,6 @@
 package typings.babylonjs.mod
 
 import typings.babylonjs.anon.Pattern
-import typings.babylonjs.meshesMeshMod.Mesh
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,16 +18,16 @@ object TiledPlaneBuilder {
     /* name */ String, 
     /* options */ Pattern, 
     /* scene */ js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]], 
-    Mesh
+    typings.babylonjs.meshesMeshMod.Mesh
   ] = js.native
-  inline def CreateTiledPlane(name: String, options: Pattern): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledPlane")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
-  inline def CreateTiledPlane(name: String, options: Pattern, scene: Nullable[typings.babylonjs.sceneMod.Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledPlane")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+  inline def CreateTiledPlane(name: String, options: Pattern): typings.babylonjs.meshesMeshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledPlane")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshMod.Mesh]
+  inline def CreateTiledPlane(name: String, options: Pattern, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshesMeshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledPlane")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshMod.Mesh]
   inline def CreateTiledPlane_=(
     x: js.Function3[
       /* name */ String, 
       /* options */ Pattern, 
       /* scene */ js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]], 
-      Mesh
+      typings.babylonjs.meshesMeshMod.Mesh
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreateTiledPlane")(x.asInstanceOf[js.Any])
 }

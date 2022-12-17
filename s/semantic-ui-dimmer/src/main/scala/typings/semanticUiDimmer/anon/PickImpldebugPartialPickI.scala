@@ -24,7 +24,7 @@ trait PickImpldebugPartialPickI
   
   var closable: js.UndefOr[auto | Boolean] = js.undefined
   
-  var debug: Boolean & js.UndefOr[Boolean]
+  var debug: Boolean
   
   var dimmerName: js.UndefOr[`false` | String] = js.undefined
   
@@ -64,7 +64,7 @@ trait PickImpldebugPartialPickI
 }
 object PickImpldebugPartialPickI {
   
-  inline def apply(debug: Boolean & js.UndefOr[Boolean]): PickImpldebugPartialPickI = {
+  inline def apply(debug: Boolean): PickImpldebugPartialPickI = {
     val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldebugPartialPickI]
   }
@@ -79,7 +79,7 @@ object PickImpldebugPartialPickI {
     
     inline def setClosableUndefined: Self = StObject.set(x, "closable", js.undefined)
     
-    inline def setDebug(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     inline def setDimmerName(value: `false` | String): Self = StObject.set(x, "dimmerName", value.asInstanceOf[js.Any])
     

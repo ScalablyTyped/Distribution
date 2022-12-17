@@ -8,11 +8,11 @@ trait ParametersPathHeadOwner extends StObject {
   
   var parameters: PathHeadOwner
   
-  var responses: `200Content475`
+  var responses: `200ContentApplicationjsonBasecommit`
 }
 object ParametersPathHeadOwner {
   
-  inline def apply(parameters: PathHeadOwner, responses: `200Content475`): ParametersPathHeadOwner = {
+  inline def apply(parameters: PathHeadOwner, responses: `200ContentApplicationjsonBasecommit`): ParametersPathHeadOwner = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathHeadOwner]
   }
@@ -21,6 +21,6 @@ object ParametersPathHeadOwner {
     
     inline def setParameters(value: PathHeadOwner): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content475`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200ContentApplicationjsonBasecommit`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

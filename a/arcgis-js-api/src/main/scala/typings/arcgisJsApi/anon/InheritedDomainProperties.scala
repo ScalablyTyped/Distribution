@@ -22,13 +22,12 @@ trait InheritedDomainProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Domain.html#type)
     */
-  var `type`: (js.UndefOr[range | `coded-value` | inherited]) & inherited
+  var `type`: js.UndefOr[range | `coded-value` | inherited] = js.undefined
 }
 object InheritedDomainProperties {
   
-  inline def apply(`type`: (js.UndefOr[range | `coded-value` | inherited]) & inherited): InheritedDomainProperties = {
+  inline def apply(): InheritedDomainProperties = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[InheritedDomainProperties]
   }
   
@@ -38,6 +37,8 @@ object InheritedDomainProperties {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setType(value: (js.UndefOr[range | `coded-value` | inherited]) & inherited): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: range | `coded-value` | inherited): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

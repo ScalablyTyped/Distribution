@@ -89,7 +89,7 @@ object anon {
     }
   }
   
-  trait Traceid extends StObject {
+  trait SpanidTraceid extends StObject {
     
     @JSName("span.id")
     var spanDotid: String
@@ -97,16 +97,16 @@ object anon {
     @JSName("trace.id")
     var traceDotid: String
   }
-  object Traceid {
+  object SpanidTraceid {
     
-    inline def apply(spanDotid: String, traceDotid: String): Traceid = {
+    inline def apply(spanDotid: String, traceDotid: String): SpanidTraceid = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("span.id")(spanDotid.asInstanceOf[js.Any])
       __obj.updateDynamic("trace.id")(traceDotid.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Traceid]
+      __obj.asInstanceOf[SpanidTraceid]
     }
     
-    extension [Self <: Traceid](x: Self) {
+    extension [Self <: SpanidTraceid](x: Self) {
       
       inline def setSpanDotid(value: String): Self = StObject.set(x, "span.id", value.asInstanceOf[js.Any])
       
@@ -114,7 +114,7 @@ object anon {
     }
   }
   
-  trait Transactionid extends StObject {
+  trait Traceid extends StObject {
     
     @JSName("trace.id")
     var traceDotid: String
@@ -122,16 +122,16 @@ object anon {
     @JSName("transaction.id")
     var transactionDotid: String
   }
-  object Transactionid {
+  object Traceid {
     
-    inline def apply(traceDotid: String, transactionDotid: String): Transactionid = {
+    inline def apply(traceDotid: String, transactionDotid: String): Traceid = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("trace.id")(traceDotid.asInstanceOf[js.Any])
       __obj.updateDynamic("transaction.id")(transactionDotid.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Transactionid]
+      __obj.asInstanceOf[Traceid]
     }
     
-    extension [Self <: Transactionid](x: Self) {
+    extension [Self <: Traceid](x: Self) {
       
       inline def setTraceDotid(value: String): Self = StObject.set(x, "trace.id", value.asInstanceOf[js.Any])
       

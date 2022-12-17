@@ -5,7 +5,6 @@ import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
 import typings.react.mod.ReactNode
-import typings.reactMdForm.reactMdFormBooleans.`false`
 import typings.reactMdForm.reactMdFormStrings.badInput
 import typings.reactMdForm.reactMdFormStrings.customError
 import typings.reactMdForm.reactMdFormStrings.patternMismatch
@@ -47,7 +46,7 @@ trait NumberFieldHookOptionsdisCounter extends StObject {
   
   var disableMaxLength: js.UndefOr[Boolean] = js.undefined
   
-  var disableMessage: js.UndefOr[Boolean] & `false`
+  var disableMessage: js.UndefOr[Boolean] = js.undefined
   
   var errorIcon: js.UndefOr[ReactNode] = js.undefined
   
@@ -110,8 +109,8 @@ trait NumberFieldHookOptionsdisCounter extends StObject {
 }
 object NumberFieldHookOptionsdisCounter {
   
-  inline def apply(disableMessage: js.UndefOr[Boolean] & `false`, id: String): NumberFieldHookOptionsdisCounter = {
-    val __obj = js.Dynamic.literal(disableMessage = disableMessage.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+  inline def apply(id: String): NumberFieldHookOptionsdisCounter = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumberFieldHookOptionsdisCounter]
   }
   
@@ -131,7 +130,9 @@ object NumberFieldHookOptionsdisCounter {
     
     inline def setDisableMaxLengthUndefined: Self = StObject.set(x, "disableMaxLength", js.undefined)
     
-    inline def setDisableMessage(value: js.UndefOr[Boolean] & `false`): Self = StObject.set(x, "disableMessage", value.asInstanceOf[js.Any])
+    inline def setDisableMessage(value: Boolean): Self = StObject.set(x, "disableMessage", value.asInstanceOf[js.Any])
+    
+    inline def setDisableMessageUndefined: Self = StObject.set(x, "disableMessage", js.undefined)
     
     inline def setErrorIcon(value: ReactNode): Self = StObject.set(x, "errorIcon", value.asInstanceOf[js.Any])
     

@@ -8,13 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object characterCounterMod {
   
-  @JSImport("@material/textfield/character-counter", JSImport.Default)
-  @js.native
-  open class default ()
-    extends typings.materialTextfield.characterCounterFoundationMod.default {
-    def this(adapter: PartialMDCTextFieldCharac) = this()
-  }
-  
   @JSImport("@material/textfield/character-counter", "MDCTextFieldCharacterCounter")
   @js.native
   open class MDCTextFieldCharacterCounter protected ()

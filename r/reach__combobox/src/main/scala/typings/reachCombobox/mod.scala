@@ -9,7 +9,7 @@ import typings.reachCombobox.reachComboboxStrings.ul
 import typings.reachPolymorphic.mod.ForwardRefComponent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.ReactNode
-import typings.std.Element
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -89,6 +89,36 @@ object mod {
   @js.native
   val ComboboxOption: ForwardRefComponent[li, ComboboxOptionProps] = js.native
   
+  object ComboboxOptionText {
+    
+    /**
+      * ComboboxOptionText
+      *
+      * Renders the value of a `ComboboxOption` as text but with spans wrapping the
+      * matching and non-matching segments of text.
+      *
+      * We don't forwardRef or spread props because we render multiple spans or null,
+      * should be fine 🤙
+      *
+      * @example
+      *   <ComboboxOption value="Seattle">
+      *     🌧 <ComboboxOptionText />
+      *   </ComboboxOption>
+      *
+      * @see Docs https://reach.tech/combobox#comboboxoptiontext
+      */
+    inline def apply(): Element = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Element]
+    
+    @JSImport("@reach/combobox", "ComboboxOptionText")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@reach/combobox", "ComboboxOptionText.displayName")
+    @js.native
+    def displayName: String = js.native
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+  }
+  
   /**
     * ComboboxPopover
     *
@@ -114,7 +144,7 @@ object mod {
     * We want the same events when the input or the popup have focus (HOW COOL ARE
     * HOOKS BTW?) This is probably the hairiest piece but it's not bad.
     */
-  inline def unstableUseKeyDown(): js.Function1[/* event */ KeyboardEvent[Element], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_useKeyDown")().asInstanceOf[js.Function1[/* event */ KeyboardEvent[Element], Unit]]
+  inline def unstableUseKeyDown(): js.Function1[/* event */ KeyboardEvent[typings.std.Element], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_useKeyDown")().asInstanceOf[js.Function1[/* event */ KeyboardEvent[typings.std.Element], Unit]]
   
   /**
     * A hook that exposes data for a given `Combobox` component to its descendants.

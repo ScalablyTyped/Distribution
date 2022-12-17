@@ -243,18 +243,6 @@ object reactMdFormStrings {
   inline def mouse: mouse = "mouse".asInstanceOf[mouse]
   
   @js.native
-  sealed trait mousedown extends StObject
-  inline def mousedown: mousedown = "mousedown".asInstanceOf[mousedown]
-  
-  @js.native
-  sealed trait mousemove extends StObject
-  inline def mousemove: mousemove = "mousemove".asInstanceOf[mousemove]
-  
-  @js.native
-  sealed trait mouseup extends StObject
-  inline def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
-  
-  @js.native
   sealed trait move extends StObject
   inline def move: move = "move".asInstanceOf[move]
   
@@ -508,18 +496,6 @@ object reactMdFormStrings {
     extends StObject
        with _SliderDraggingBy
   inline def touch: touch = "touch".asInstanceOf[touch]
-  
-  @js.native
-  sealed trait touchend extends StObject
-  inline def touchend: touchend = "touchend".asInstanceOf[touchend]
-  
-  @js.native
-  sealed trait touchmove extends StObject
-  inline def touchmove: touchmove = "touchmove".asInstanceOf[touchmove]
-  
-  @js.native
-  sealed trait touchstart extends StObject
-  inline def touchstart: touchstart = "touchstart".asInstanceOf[touchstart]
   
   @js.native
   sealed trait tree extends StObject

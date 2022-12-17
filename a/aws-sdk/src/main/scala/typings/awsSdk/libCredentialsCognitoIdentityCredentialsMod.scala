@@ -12,6 +12,7 @@ import typings.awsSdk.clientsStsMod.arnType
 import typings.awsSdk.clientsStsMod.clientTokenType
 import typings.awsSdk.clientsStsMod.roleSessionNameType
 import typings.awsSdk.libConfigBaseMod.ConfigurationOptions
+import typings.awsSdk.libCredentialsCognitoIdentityCredentialsMod.CognitoIdentityCredentials.CognitoIdentityOptions
 import typings.awsSdk.libCredentialsMod.Credentials
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,8 +20,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libCredentialsCognitoIdentityCredentialsMod {
   
+  @JSImport("aws-sdk/lib/credentials/cognito_identity_credentials", "CognitoIdentityCredentials")
   @js.native
-  trait CognitoIdentityCredentials extends Credentials {
+  /**
+    * Creates a new credentials object.
+    */
+  open class CognitoIdentityCredentials () extends Credentials {
+    /**
+      * Creates a new credentials object with optional configuration.
+      */
+    def this(options: CognitoIdentityOptions) = this()
+    def this(options: CognitoIdentityOptions, clientConfig: ConfigurationOptions) = this()
     
     /**
       * Clears the cached Cognito ID associated with the currently configured identity pool ID.

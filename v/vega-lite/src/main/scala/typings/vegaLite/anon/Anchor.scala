@@ -1,9 +1,11 @@
 package typings.vegaLite.anon
 
+import typings.vegaLite.vegaLiteStrings.center
+import typings.vegaLite.vegaLiteStrings.left
+import typings.vegaLite.vegaLiteStrings.right
 import typings.vegaTypings.typesSpecEncodeMod.Text
 import typings.vegaTypings.typesSpecSignalMod.SignalRef
 import typings.vegaTypings.typesSpecTitleMod.TitleEncode
-import typings.vegaTypings.typesSpecValuesMod.AlignValue
 import typings.vegaTypings.typesSpecValuesMod.AnchorValue
 import typings.vegaTypings.typesSpecValuesMod.ColorValue
 import typings.vegaTypings.typesSpecValuesMod.FontStyleValue
@@ -16,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Anchor extends StObject {
   
-  var align: js.UndefOr[AlignValue] = js.undefined
+  var align: center | left | right | SignalRef | FieldField | Scale | Band | Range | ValueAlign
   
   var anchor: js.UndefOr[AnchorValue] = js.undefined
   
@@ -42,7 +44,9 @@ trait Anchor extends StObject {
   
   var fontWeight: js.UndefOr[FontWeightValue] = js.undefined
   
-  var frame: String | SignalRef | FieldField | Scale | Band | Range | ValueString
+  var frame: js.UndefOr[
+    String | SignalRef | FieldField | Scale | FieldScale | Band | Range | ValueString
+  ] = js.undefined
   
   var interactive: js.UndefOr[Boolean] = js.undefined
   
@@ -81,20 +85,18 @@ trait Anchor extends StObject {
 object Anchor {
   
   inline def apply(
+    align: center | left | right | SignalRef | FieldField | Scale | Band | Range | ValueAlign,
     baseline: String | SignalRef | FieldField | Scale | Band | Range | ValueTextBaseline,
-    frame: String | SignalRef | FieldField | Scale | Band | Range | ValueString,
     style: String | js.Array[String],
     text: SignalRef | Text
   ): Anchor = {
-    val __obj = js.Dynamic.literal(baseline = baseline.asInstanceOf[js.Any], frame = frame.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], baseline = baseline.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anchor]
   }
   
   extension [Self <: Anchor](x: Self) {
     
-    inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
-    
-    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    inline def setAlign(value: center | left | right | SignalRef | FieldField | Scale | Band | Range | ValueAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     inline def setAnchor(value: AnchorValue): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
@@ -146,7 +148,9 @@ object Anchor {
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
-    inline def setFrame(value: String | SignalRef | FieldField | Scale | Band | Range | ValueString): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+    inline def setFrame(value: String | SignalRef | FieldField | Scale | FieldScale | Band | Range | ValueString): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+    
+    inline def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
     
     inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
     

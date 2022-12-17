@@ -1,6 +1,6 @@
 package typings.contentstackUtils
 
-import typings.contentstackUtils.anon.RenderOption
+import typings.contentstackUtils.anon.Paths
 import typings.contentstackUtils.distTypesOptionsMod.Option
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +12,7 @@ object distTypesRenderEmbeddedObjectsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def render(option: RenderOption): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def render(option: Paths): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def renderContent(content: String, option: Option): String | js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderContent")(content.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[String]]
   inline def renderContent(content: js.Array[String], option: Option): String | js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderContent")(content.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[String]]

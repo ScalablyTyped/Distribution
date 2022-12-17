@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "cordova-sqlite-storage"
-version := "1.5-dt-20211202Z-df6a83"
+version := "1.5-dt-20211202Z-a6f84a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "std" % "4.9-c133ce")
+  "org.scalablytyped" %%% "std" % "4.9-5f989f")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,8 +1,8 @@
 package typings.overlayscrollbars.mod
 
 import typings.overlayscrollbars.anon.I
-import typings.overlayscrollbars.anon.X
 import typings.overlayscrollbars.anon.XBoolean
+import typings.overlayscrollbars.anon.XNumber
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,11 +17,11 @@ trait Globals extends StObject {
   
   var nativeScrollbarIsOverlaid: XBoolean
   
-  var nativeScrollbarSize: X
+  var nativeScrollbarSize: XNumber
   
   var nativeScrollbarStyling: Boolean
   
-  var overlayScrollbarDummySize: X
+  var overlayScrollbarDummySize: XNumber
   
   var restrictedMeasuring: Boolean
   
@@ -43,9 +43,9 @@ object Globals {
     autoUpdateLoop: Boolean,
     autoUpdateRecommended: Boolean,
     nativeScrollbarIsOverlaid: XBoolean,
-    nativeScrollbarSize: X,
+    nativeScrollbarSize: XNumber,
     nativeScrollbarStyling: Boolean,
-    overlayScrollbarDummySize: X,
+    overlayScrollbarDummySize: XNumber,
     restrictedMeasuring: Boolean,
     rtlScrollBehavior: I,
     supportMutationObserver: Boolean,
@@ -70,11 +70,11 @@ object Globals {
     
     inline def setNativeScrollbarIsOverlaid(value: XBoolean): Self = StObject.set(x, "nativeScrollbarIsOverlaid", value.asInstanceOf[js.Any])
     
-    inline def setNativeScrollbarSize(value: X): Self = StObject.set(x, "nativeScrollbarSize", value.asInstanceOf[js.Any])
+    inline def setNativeScrollbarSize(value: XNumber): Self = StObject.set(x, "nativeScrollbarSize", value.asInstanceOf[js.Any])
     
     inline def setNativeScrollbarStyling(value: Boolean): Self = StObject.set(x, "nativeScrollbarStyling", value.asInstanceOf[js.Any])
     
-    inline def setOverlayScrollbarDummySize(value: X): Self = StObject.set(x, "overlayScrollbarDummySize", value.asInstanceOf[js.Any])
+    inline def setOverlayScrollbarDummySize(value: XNumber): Self = StObject.set(x, "overlayScrollbarDummySize", value.asInstanceOf[js.Any])
     
     inline def setRestrictedMeasuring(value: Boolean): Self = StObject.set(x, "restrictedMeasuring", value.asInstanceOf[js.Any])
     

@@ -99,11 +99,11 @@ trait PickImplzIndexPartialPick
   
   var verbose: js.UndefOr[Boolean] = js.undefined
   
-  var zIndex: Double & js.UndefOr[Double]
+  var zIndex: Double
 }
 object PickImplzIndexPartialPick {
   
-  inline def apply(zIndex: Double & js.UndefOr[Double]): PickImplzIndexPartialPick = {
+  inline def apply(zIndex: Double): PickImplzIndexPartialPick = {
     val __obj = js.Dynamic.literal(zIndex = zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplzIndexPartialPick]
   }
@@ -270,6 +270,6 @@ object PickImplzIndexPartialPick {
     
     inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     
-    inline def setZIndex(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
   }
 }

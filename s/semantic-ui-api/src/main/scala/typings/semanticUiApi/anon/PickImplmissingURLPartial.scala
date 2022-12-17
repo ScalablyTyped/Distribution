@@ -24,7 +24,7 @@ trait PickImplmissingURLPartial
   
   var missingSerialize: js.UndefOr[String] = js.undefined
   
-  var missingURL: String & js.UndefOr[String]
+  var missingURL: String
   
   var noReturnedValue: js.UndefOr[String] = js.undefined
   
@@ -38,7 +38,7 @@ trait PickImplmissingURLPartial
 }
 object PickImplmissingURLPartial {
   
-  inline def apply(missingURL: String & js.UndefOr[String]): PickImplmissingURLPartial = {
+  inline def apply(missingURL: String): PickImplmissingURLPartial = {
     val __obj = js.Dynamic.literal(missingURL = missingURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmissingURLPartial]
   }
@@ -73,7 +73,7 @@ object PickImplmissingURLPartial {
     
     inline def setMissingSerializeUndefined: Self = StObject.set(x, "missingSerialize", js.undefined)
     
-    inline def setMissingURL(value: String & js.UndefOr[String]): Self = StObject.set(x, "missingURL", value.asInstanceOf[js.Any])
+    inline def setMissingURL(value: String): Self = StObject.set(x, "missingURL", value.asInstanceOf[js.Any])
     
     inline def setNoReturnedValue(value: String): Self = StObject.set(x, "noReturnedValue", value.asInstanceOf[js.Any])
     

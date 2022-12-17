@@ -296,7 +296,7 @@ open class Chart_ protected () extends StObject {
   def fromPointToLatLon(point: typings.highcharts.modulesMapMod.highchartsAugmentingMod.Point): js.UndefOr[typings.highcharts.modulesMapMod.highchartsAugmentingMod.MapLonLatObject] = js.native
   def fromPointToLatLon(point: typings.highcharts.modulesMapMod.highchartsAugmentingMod.ProjectedXY): js.UndefOr[typings.highcharts.modulesMapMod.highchartsAugmentingMod.MapLonLatObject] = js.native
   
-  var fullscreen: typings.highcharts.modulesExportingMod.highchartsAugmentingMod.Fullscreen & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Fullscreen */ Any) = js.native
+  var fullscreen: typings.highcharts.modulesExportingMod.highchartsAugmentingMod.Fullscreen = js.native
   
   /**
     * Get an axis, series or point object by `id` as given in the configuration

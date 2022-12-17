@@ -10,7 +10,7 @@ trait ResponsedataArrayany
   extends StObject
      with /* others */ StringDictionary[Any] {
   
-  var data: js.UndefOr[Any] & js.Array[Any]
+  var data: js.UndefOr[Any] = js.undefined
   
   var message: String
   
@@ -18,14 +18,16 @@ trait ResponsedataArrayany
 }
 object ResponsedataArrayany {
   
-  inline def apply(data: js.UndefOr[Any] & js.Array[Any], message: String, status: Boolean): ResponsedataArrayany = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+  inline def apply(message: String, status: Boolean): ResponsedataArrayany = {
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponsedataArrayany]
   }
   
   extension [Self <: ResponsedataArrayany](x: Self) {
     
-    inline def setData(value: js.UndefOr[Any] & js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

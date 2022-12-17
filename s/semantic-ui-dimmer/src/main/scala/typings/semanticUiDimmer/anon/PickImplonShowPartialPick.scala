@@ -44,7 +44,7 @@ trait PickImplonShowPartialPick
   
   def onShow(): Unit
   @JSName("onShow")
-  var onShow_Original: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+  var onShow_Original: js.ThisFunction0[/* this */ JQuery, Unit]
   
   var opacity: js.UndefOr[auto | Double] = js.undefined
   
@@ -66,9 +66,7 @@ trait PickImplonShowPartialPick
 }
 object PickImplonShowPartialPick {
   
-  inline def apply(
-    onShow: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-  ): PickImplonShowPartialPick = {
+  inline def apply(onShow: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonShowPartialPick = {
     val __obj = js.Dynamic.literal(onShow = onShow.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonShowPartialPick]
   }
@@ -117,9 +115,7 @@ object PickImplonShowPartialPick {
     
     inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
     
-    inline def setOnShow(
-      value: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-    ): Self = StObject.set(x, "onShow", value.asInstanceOf[js.Any])
+    inline def setOnShow(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onShow", value.asInstanceOf[js.Any])
     
     inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     

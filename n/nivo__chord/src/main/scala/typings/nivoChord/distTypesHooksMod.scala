@@ -2,12 +2,12 @@ package typings.nivoChord
 
 import typings.d3Chord.mod.ChordLayout
 import typings.nivoChord.anon.ActiveArcOpacity
+import typings.nivoChord.anon.ArcGenerator
 import typings.nivoChord.anon.Arcs
 import typings.nivoChord.anon.Center
 import typings.nivoChord.anon.Chord
 import typings.nivoChord.anon.Colors
 import typings.nivoChord.anon.CurrentArc
-import typings.nivoChord.anon.GetColor
 import typings.nivoChord.anon.Height
 import typings.nivoChord.anon.PadAngle
 import typings.nivoChord.anon.Radius
@@ -22,11 +22,11 @@ object distTypesHooksMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useChord(param0: Colors): GetColor = ^.asInstanceOf[js.Dynamic].applyDynamic("useChord")(param0.asInstanceOf[js.Any]).asInstanceOf[GetColor]
+  inline def useChord(param0: Colors): Center = ^.asInstanceOf[js.Dynamic].applyDynamic("useChord")(param0.asInstanceOf[js.Any]).asInstanceOf[Center]
   
   inline def useChordArcsAndRibbons(param0: Chord): Arcs = ^.asInstanceOf[js.Dynamic].applyDynamic("useChordArcsAndRibbons")(param0.asInstanceOf[js.Any]).asInstanceOf[Arcs]
   
-  inline def useChordGenerators(param0: Height): Center = ^.asInstanceOf[js.Dynamic].applyDynamic("useChordGenerators")(param0.asInstanceOf[js.Any]).asInstanceOf[Center]
+  inline def useChordGenerators(param0: Height): ArcGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("useChordGenerators")(param0.asInstanceOf[js.Any]).asInstanceOf[ArcGenerator]
   
   inline def useChordLayout(param0: PadAngle): ChordLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("useChordLayout")(param0.asInstanceOf[js.Any]).asInstanceOf[ChordLayout]
   

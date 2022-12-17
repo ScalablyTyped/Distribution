@@ -4,7 +4,7 @@ import typings.braintree.anon.AbstractTransactable
 import typings.braintree.anon.AccountNotAuthorizedContactUs
 import typings.braintree.anon.AmexPayWithPoints
 import typings.braintree.anon.Authorize
-import typings.braintree.anon.CountryOfIssuance
+import typings.braintree.anon.IssuingBank
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class Test () extends StObject {
   
-  var CreditCardDefaults: CountryOfIssuance = js.native
+  var CreditCardDefaults: IssuingBank = js.native
   
   var CreditCardNumbers: AmexPayWithPoints = js.native
   

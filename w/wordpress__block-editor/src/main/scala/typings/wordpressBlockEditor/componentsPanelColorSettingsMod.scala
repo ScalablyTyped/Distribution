@@ -38,18 +38,14 @@ object componentsPanelColorSettingsMod {
       
       var label: String
       
-      var onChange: js.UndefOr[js.Function0[Unit]] & js.Function0[Unit]
+      var onChange: js.UndefOr[js.Function0[Unit]] = js.undefined
       
-      var value: js.UndefOr[String] & String
+      var value: js.UndefOr[String] = js.undefined
     }
     object ColorSetting {
       
-      inline def apply(
-        label: String,
-        onChange: js.UndefOr[js.Function0[Unit]] & js.Function0[Unit],
-        value: js.UndefOr[String] & String
-      ): ColorSetting = {
-        val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], onChange = onChange.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      inline def apply(label: String): ColorSetting = {
+        val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
         __obj.asInstanceOf[ColorSetting]
       }
       
@@ -75,9 +71,13 @@ object componentsPanelColorSettingsMod {
         
         inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
-        inline def setOnChange(value: js.UndefOr[js.Function0[Unit]] & js.Function0[Unit]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
+        inline def setOnChange(value: () => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
         
-        inline def setValue(value: js.UndefOr[String] & String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+        
+        inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        
+        inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       }
     }
     

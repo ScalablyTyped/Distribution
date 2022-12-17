@@ -10,14 +10,12 @@ trait CustomMatcher extends StObject {
   def compare(actual: scala.Any, expected: scala.Any*): CustomMatcherResult = js.native
   def compare[T](actual: T, expected: T, args: scala.Any*): CustomMatcherResult = js.native
   
-  var negativeCompare: (js.UndefOr[
+  var negativeCompare: js.UndefOr[
     js.Function3[
       /* actual */ scala.Any, 
       /* expected */ scala.Any, 
       /* repeated */ scala.Any, 
       CustomMatcherResult
     ]
-  ]) & (js.UndefOr[
-    js.Function2[/* actual */ scala.Any, /* repeated */ scala.Any, CustomMatcherResult]
-  ]) = js.native
+  ] = js.native
 }

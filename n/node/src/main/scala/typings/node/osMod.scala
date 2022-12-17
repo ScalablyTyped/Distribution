@@ -1,9 +1,9 @@
 package typings.node
 
 import typings.node.NodeJS.Dict
-import typings.node.anon.Encoding
 import typings.node.anon.Idle
-import typings.node.anon.`3`
+import typings.node.anon.`2`
+import typings.node.anon.`4`
 import typings.node.bufferMod.global.Buffer
 import typings.node.nodeStrings.BE
 import typings.node.nodeStrings.IPv4
@@ -887,8 +887,8 @@ object osMod {
     * Throws a `SystemError` if a user has no `username` or `homedir`.
     * @since v6.0.0
     */
-  inline def userInfo(options: Encoding): UserInfo_[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("userInfo")(options.asInstanceOf[js.Any]).asInstanceOf[UserInfo_[Buffer]]
-  inline def userInfo(options: `3`): UserInfo_[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("userInfo")(options.asInstanceOf[js.Any]).asInstanceOf[UserInfo_[String]]
+  inline def userInfo(options: `2`): UserInfo_[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("userInfo")(options.asInstanceOf[js.Any]).asInstanceOf[UserInfo_[Buffer]]
+  inline def userInfo(options: `4`): UserInfo_[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("userInfo")(options.asInstanceOf[js.Any]).asInstanceOf[UserInfo_[String]]
   
   /**
     * Returns a string identifying the kernel version.

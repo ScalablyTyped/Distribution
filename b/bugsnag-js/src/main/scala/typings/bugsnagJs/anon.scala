@@ -12,21 +12,20 @@ object anon {
   
   trait Dictkey
     extends StObject
-       with /* key */ StringDictionary[Any] {
+       with /* key */ StringDictionary[String] {
     
-    var `type`: String
+    var releaseStage: String
   }
   object Dictkey {
     
-    inline def apply(`type`: String): Dictkey = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    inline def apply(releaseStage: String): Dictkey = {
+      val __obj = js.Dynamic.literal(releaseStage = releaseStage.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dictkey]
     }
     
     extension [Self <: Dictkey](x: Self) {
       
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setReleaseStage(value: String): Self = StObject.set(x, "releaseStage", value.asInstanceOf[js.Any])
     }
   }
   
@@ -145,22 +144,23 @@ object anon {
     }
   }
   
-  trait ReleaseStage
+  trait Type
     extends StObject
-       with /* key */ StringDictionary[String] {
+       with /* key */ StringDictionary[Any] {
     
-    var releaseStage: String
+    var `type`: String
   }
-  object ReleaseStage {
+  object Type {
     
-    inline def apply(releaseStage: String): ReleaseStage = {
-      val __obj = js.Dynamic.literal(releaseStage = releaseStage.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ReleaseStage]
+    inline def apply(`type`: String): Type = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: ReleaseStage](x: Self) {
+    extension [Self <: Type](x: Self) {
       
-      inline def setReleaseStage(value: String): Self = StObject.set(x, "releaseStage", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

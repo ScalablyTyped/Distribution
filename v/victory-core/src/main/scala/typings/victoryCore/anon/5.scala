@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `5` extends StObject {
   
-  var x: js.UndefOr[Boolean] = js.undefined
+  var x: js.UndefOr[Double] = js.undefined
   
-  var y: js.UndefOr[Boolean] = js.undefined
+  var y: js.UndefOr[Double] = js.undefined
 }
 object `5` {
   
@@ -19,11 +19,11 @@ object `5` {
   
   extension [Self <: `5`](x: Self) {
     
-    inline def setX(value: Boolean): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    inline def setY(value: Boolean): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }

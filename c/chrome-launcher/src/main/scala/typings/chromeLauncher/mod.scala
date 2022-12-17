@@ -13,17 +13,17 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("chrome-launcher", JSImport.Default)
+  @JSImport("chrome-launcher", "Launcher")
   @js.native
-  open class default ()
-    extends typings.chromeLauncher.distChromeLauncherMod.default {
+  open class Launcher ()
+    extends typings.chromeLauncher.distChromeLauncherMod.Launcher {
     def this(opts: Options) = this()
     def this(opts: Unit, moduleOverrides: ModuleOverrides) = this()
     def this(opts: Options, moduleOverrides: ModuleOverrides) = this()
   }
-  object default {
+  object Launcher {
     
-    @JSImport("chrome-launcher", JSImport.Default)
+    @JSImport("chrome-launcher", "Launcher")
     @js.native
     val ^ : js.Any = js.native
     

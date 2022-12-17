@@ -19,7 +19,7 @@ trait PickImplautoplayPartialPi
   extends StObject
      with Param {
   
-  var autoplay: (auto | Boolean) & (js.UndefOr[auto | Boolean])
+  var autoplay: auto | Boolean
   
   var brandedUI: js.UndefOr[Boolean] = js.undefined
   
@@ -71,14 +71,14 @@ trait PickImplautoplayPartialPi
 }
 object PickImplautoplayPartialPi {
   
-  inline def apply(autoplay: (auto | Boolean) & (js.UndefOr[auto | Boolean])): PickImplautoplayPartialPi = {
+  inline def apply(autoplay: auto | Boolean): PickImplautoplayPartialPi = {
     val __obj = js.Dynamic.literal(autoplay = autoplay.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplautoplayPartialPi]
   }
   
   extension [Self <: PickImplautoplayPartialPi](x: Self) {
     
-    inline def setAutoplay(value: (auto | Boolean) & (js.UndefOr[auto | Boolean])): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
+    inline def setAutoplay(value: auto | Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
     
     inline def setBrandedUI(value: Boolean): Self = StObject.set(x, "brandedUI", value.asInstanceOf[js.Any])
     

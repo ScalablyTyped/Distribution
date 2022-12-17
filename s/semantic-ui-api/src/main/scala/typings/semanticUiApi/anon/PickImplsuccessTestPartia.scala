@@ -135,7 +135,7 @@ trait PickImplsuccessTestPartia
   
   def successTest(response: Any): Boolean
   @JSName("successTest")
-  var successTest_Original: (js.Function1[/* response */ Any, Boolean]) & (js.UndefOr[js.Function1[/* response */ Any, Boolean]])
+  var successTest_Original: js.Function1[/* response */ Any, Boolean]
   
   var throttle: js.UndefOr[Double] = js.undefined
   
@@ -149,10 +149,8 @@ trait PickImplsuccessTestPartia
 }
 object PickImplsuccessTestPartia {
   
-  inline def apply(
-    successTest: (js.Function1[/* response */ Any, Boolean]) & (js.UndefOr[js.Function1[/* response */ Any, Boolean]])
-  ): PickImplsuccessTestPartia = {
-    val __obj = js.Dynamic.literal(successTest = successTest.asInstanceOf[js.Any])
+  inline def apply(successTest: /* response */ Any => Boolean): PickImplsuccessTestPartia = {
+    val __obj = js.Dynamic.literal(successTest = js.Any.fromFunction1(successTest))
     __obj.asInstanceOf[PickImplsuccessTestPartia]
   }
   
@@ -326,9 +324,7 @@ object PickImplsuccessTestPartia {
     
     inline def setStateContextUndefined: Self = StObject.set(x, "stateContext", js.undefined)
     
-    inline def setSuccessTest(
-      value: (js.Function1[/* response */ Any, Boolean]) & (js.UndefOr[js.Function1[/* response */ Any, Boolean]])
-    ): Self = StObject.set(x, "successTest", value.asInstanceOf[js.Any])
+    inline def setSuccessTest(value: /* response */ Any => Boolean): Self = StObject.set(x, "successTest", js.Any.fromFunction1(value))
     
     inline def setThrottle(value: Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
     

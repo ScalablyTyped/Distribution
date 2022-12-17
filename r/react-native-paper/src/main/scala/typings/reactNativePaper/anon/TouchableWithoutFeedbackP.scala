@@ -125,7 +125,7 @@ trait TouchableWithoutFeedbackP extends StObject {
   /**
     * Content of the `TouchableRipple`.
     */
-  var children: js.UndefOr[ReactNode] & ReactNode
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   /**
     * Delay in ms, from onPressIn, before onLongPress is called.
@@ -356,7 +356,7 @@ object TouchableWithoutFeedbackP {
     
     inline def setCenteredUndefined: Self = StObject.set(x, "centered", js.undefined)
     
-    inline def setChildren(value: js.UndefOr[ReactNode] & ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     

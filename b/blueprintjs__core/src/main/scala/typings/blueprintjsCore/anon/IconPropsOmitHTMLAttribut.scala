@@ -207,7 +207,7 @@ trait IconPropsOmitHTMLAttribut extends StObject {
   var autoSave: js.UndefOr[String] = js.undefined
   
   /** This component does not support custom children. Use the `icon` prop. */
-  var children: js.UndefOr[scala.Nothing] & js.UndefOr[ReactNode]
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   /** A space-delimited list of class names to pass along to a child element. */
   var className: js.UndefOr[String] = js.undefined
@@ -519,8 +519,8 @@ trait IconPropsOmitHTMLAttribut extends StObject {
 }
 object IconPropsOmitHTMLAttribut {
   
-  inline def apply(children: js.UndefOr[scala.Nothing] & js.UndefOr[ReactNode]): IconPropsOmitHTMLAttribut = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+  inline def apply(): IconPropsOmitHTMLAttribut = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IconPropsOmitHTMLAttribut]
   }
   
@@ -740,7 +740,9 @@ object IconPropsOmitHTMLAttribut {
     
     inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
     
-    inline def setChildren(value: js.UndefOr[scala.Nothing] & js.UndefOr[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

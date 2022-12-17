@@ -1,6 +1,6 @@
 package typings.vscode.mod
 
-import typings.vscode.anon.Start
+import typings.vscode.anon.End
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -100,7 +100,7 @@ open class Range protected () extends StObject {
     * @return A range that reflects the given change. Will return `this` range if the change
     * is not changing anything.
     */
-  def `with`(change: Start): Range = js.native
+  def `with`(change: End): Range = js.native
   def `with`(start: Unit, end: Position): Range = js.native
   def `with`(start: Position): Range = js.native
   def `with`(start: Position, end: Position): Range = js.native

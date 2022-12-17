@@ -2,7 +2,6 @@ package typings.interactjsTypes.anon
 
 import typings.interactjsTypes.corePointerInfoMod.PointerInfo
 import typings.interactjsTypes.coreTypesMod.PointerEventType
-import typings.interactjsTypes.interactjsTypesStrings.cancel
 import typings.interactjsTypes.interactjsTypesStrings.up
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,7 +24,7 @@ trait PointerArgPropstypeupcurECurEventTarget extends StObject {
   
   var pointerInfo: PointerInfo
   
-  var `type`: up & cancel
+  var `type`: up
 }
 object PointerArgPropstypeupcurECurEventTarget {
   
@@ -36,11 +35,10 @@ object PointerArgPropstypeupcurECurEventTarget {
     interaction: typings.interactjsTypes.coreInteractionMod.Interaction[scala.Nothing],
     pointer: typings.interactjsTypes.coreTypesMod.PointerType,
     pointerIndex: Double,
-    pointerInfo: PointerInfo,
-    `type`: up & cancel
+    pointerInfo: PointerInfo
   ): PointerArgPropstypeupcurECurEventTarget = {
     val __obj = js.Dynamic.literal(curEventTarget = curEventTarget.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], eventTarget = eventTarget.asInstanceOf[js.Any], interaction = interaction.asInstanceOf[js.Any], pointer = pointer.asInstanceOf[js.Any], pointerIndex = pointerIndex.asInstanceOf[js.Any], pointerInfo = pointerInfo.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("up")
     __obj.asInstanceOf[PointerArgPropstypeupcurECurEventTarget]
   }
   
@@ -60,6 +58,6 @@ object PointerArgPropstypeupcurECurEventTarget {
     
     inline def setPointerInfo(value: PointerInfo): Self = StObject.set(x, "pointerInfo", value.asInstanceOf[js.Any])
     
-    inline def setType(value: up & cancel): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: up): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

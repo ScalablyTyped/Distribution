@@ -6,323 +6,323 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait StylesProps extends StObject {
   
-  def alignContent(args: js.Any*): js.Any
+  def alignContent(args: Any*): Any
   @JSName("alignContent")
   var alignContent_Original: styleFn
   
-  def alignItems(args: js.Any*): js.Any
+  def alignItems(args: Any*): Any
   @JSName("alignItems")
   var alignItems_Original: styleFn
   
-  def alignSelf(args: js.Any*): js.Any
+  def alignSelf(args: Any*): Any
   @JSName("alignSelf")
   var alignSelf_Original: styleFn
   
-  def background(args: js.Any*): js.Any
+  def background(args: Any*): Any
   
-  def backgroundColor(args: js.Any*): js.Any
+  def backgroundColor(args: Any*): Any
   @JSName("backgroundColor")
   var backgroundColor_Original: styleFn
   
-  def backgroundImage(args: js.Any*): js.Any
+  def backgroundImage(args: Any*): Any
   @JSName("backgroundImage")
   var backgroundImage_Original: styleFn
   
-  def backgroundPosition(args: js.Any*): js.Any
+  def backgroundPosition(args: Any*): Any
   @JSName("backgroundPosition")
   var backgroundPosition_Original: styleFn
   
-  def backgroundRepeat(args: js.Any*): js.Any
+  def backgroundRepeat(args: Any*): Any
   @JSName("backgroundRepeat")
   var backgroundRepeat_Original: styleFn
   
-  def backgroundSize(args: js.Any*): js.Any
+  def backgroundSize(args: Any*): Any
   @JSName("backgroundSize")
   var backgroundSize_Original: styleFn
   
   @JSName("background")
   var background_Original: styleFn
   
-  def border(args: js.Any*): js.Any
+  def border(args: Any*): Any
   
-  def borderBottom(args: js.Any*): js.Any
+  def borderBottom(args: Any*): Any
   @JSName("borderBottom")
   var borderBottom_Original: styleFn
   
-  def borderColor(args: js.Any*): js.Any
+  def borderColor(args: Any*): Any
   @JSName("borderColor")
   var borderColor_Original: styleFn
   
-  def borderLeft(args: js.Any*): js.Any
+  def borderLeft(args: Any*): Any
   @JSName("borderLeft")
   var borderLeft_Original: styleFn
   
-  def borderRadius(args: js.Any*): js.Any
+  def borderRadius(args: Any*): Any
   @JSName("borderRadius")
   var borderRadius_Original: styleFn
   
-  def borderRight(args: js.Any*): js.Any
+  def borderRight(args: Any*): Any
   @JSName("borderRight")
   var borderRight_Original: styleFn
   
-  def borderTop(args: js.Any*): js.Any
+  def borderTop(args: Any*): Any
   @JSName("borderTop")
   var borderTop_Original: styleFn
   
   @JSName("border")
   var border_Original: styleFn
   
-  def borders(args: js.Any*): js.Any
+  def borders(args: Any*): Any
   @JSName("borders")
   var borders_Original: styleFn
   
-  def bottom(args: js.Any*): js.Any
+  def bottom(args: Any*): Any
   @JSName("bottom")
   var bottom_Original: styleFn
   
-  def boxShadow(args: js.Any*): js.Any
+  def boxShadow(args: Any*): Any
   @JSName("boxShadow")
   var boxShadow_Original: styleFn
   
-  def buttonStyle(args: js.Any*): js.Any
+  def buttonStyle(args: Any*): Any
   @JSName("buttonStyle")
   var buttonStyle_Original: styleFn
   
-  def color(args: js.Any*): js.Any
+  def color(args: Any*): Any
   
-  def colorStyle(args: js.Any*): js.Any
+  def colorStyle(args: Any*): Any
   @JSName("colorStyle")
   var colorStyle_Original: styleFn
   
   @JSName("color")
   var color_Original: styleFn
   
-  def display(args: js.Any*): js.Any
+  def display(args: Any*): Any
   @JSName("display")
   var display_Original: styleFn
   
-  def flex(args: js.Any*): js.Any
+  def flex(args: Any*): Any
   
-  def flexBasis(args: js.Any*): js.Any
+  def flexBasis(args: Any*): Any
   @JSName("flexBasis")
   var flexBasis_Original: styleFn
   
-  def flexDirection(args: js.Any*): js.Any
+  def flexDirection(args: Any*): Any
   @JSName("flexDirection")
   var flexDirection_Original: styleFn
   
-  def flexWrap(args: js.Any*): js.Any
+  def flexWrap(args: Any*): Any
   @JSName("flexWrap")
   var flexWrap_Original: styleFn
   
   @JSName("flex")
   var flex_Original: styleFn
   
-  def fontFamily(args: js.Any*): js.Any
+  def fontFamily(args: Any*): Any
   @JSName("fontFamily")
   var fontFamily_Original: styleFn
   
-  def fontSize(args: js.Any*): js.Any
+  def fontSize(args: Any*): Any
   @JSName("fontSize")
   var fontSize_Original: styleFn
   
-  def fontStyle(args: js.Any*): js.Any
+  def fontStyle(args: Any*): Any
   @JSName("fontStyle")
   var fontStyle_Original: styleFn
   
-  def fontWeight(args: js.Any*): js.Any
+  def fontWeight(args: Any*): Any
   @JSName("fontWeight")
   var fontWeight_Original: styleFn
   
-  def gridArea(args: js.Any*): js.Any
+  def gridArea(args: Any*): Any
   @JSName("gridArea")
   var gridArea_Original: styleFn
   
-  def gridAutoColumns(args: js.Any*): js.Any
+  def gridAutoColumns(args: Any*): Any
   @JSName("gridAutoColumns")
   var gridAutoColumns_Original: styleFn
   
-  def gridAutoFlow(args: js.Any*): js.Any
+  def gridAutoFlow(args: Any*): Any
   @JSName("gridAutoFlow")
   var gridAutoFlow_Original: styleFn
   
-  def gridAutoRows(args: js.Any*): js.Any
+  def gridAutoRows(args: Any*): Any
   @JSName("gridAutoRows")
   var gridAutoRows_Original: styleFn
   
-  def gridColumn(args: js.Any*): js.Any
+  def gridColumn(args: Any*): Any
   
-  def gridColumnGap(args: js.Any*): js.Any
+  def gridColumnGap(args: Any*): Any
   @JSName("gridColumnGap")
   var gridColumnGap_Original: styleFn
   
   @JSName("gridColumn")
   var gridColumn_Original: styleFn
   
-  def gridGap(args: js.Any*): js.Any
+  def gridGap(args: Any*): Any
   @JSName("gridGap")
   var gridGap_Original: styleFn
   
-  def gridRow(args: js.Any*): js.Any
+  def gridRow(args: Any*): Any
   
-  def gridRowGap(args: js.Any*): js.Any
+  def gridRowGap(args: Any*): Any
   @JSName("gridRowGap")
   var gridRowGap_Original: styleFn
   
   @JSName("gridRow")
   var gridRow_Original: styleFn
   
-  def gridTemplateAreas(args: js.Any*): js.Any
+  def gridTemplateAreas(args: Any*): Any
   @JSName("gridTemplateAreas")
   var gridTemplateAreas_Original: styleFn
   
-  def gridTemplateColumns(args: js.Any*): js.Any
+  def gridTemplateColumns(args: Any*): Any
   @JSName("gridTemplateColumns")
   var gridTemplateColumns_Original: styleFn
   
-  def gridTemplateRows(args: js.Any*): js.Any
+  def gridTemplateRows(args: Any*): Any
   @JSName("gridTemplateRows")
   var gridTemplateRows_Original: styleFn
   
-  def height(args: js.Any*): js.Any
+  def height(args: Any*): Any
   @JSName("height")
   var height_Original: styleFn
   
-  def justifyContent(args: js.Any*): js.Any
+  def justifyContent(args: Any*): Any
   @JSName("justifyContent")
   var justifyContent_Original: styleFn
   
-  def justifyItems(args: js.Any*): js.Any
+  def justifyItems(args: Any*): Any
   @JSName("justifyItems")
   var justifyItems_Original: styleFn
   
-  def justifySelf(args: js.Any*): js.Any
+  def justifySelf(args: Any*): Any
   @JSName("justifySelf")
   var justifySelf_Original: styleFn
   
-  def left(args: js.Any*): js.Any
+  def left(args: Any*): Any
   @JSName("left")
   var left_Original: styleFn
   
-  def letterSpacing(args: js.Any*): js.Any
+  def letterSpacing(args: Any*): Any
   @JSName("letterSpacing")
   var letterSpacing_Original: styleFn
   
-  def lineHeight(args: js.Any*): js.Any
+  def lineHeight(args: Any*): Any
   @JSName("lineHeight")
   var lineHeight_Original: styleFn
   
-  def margin(args: js.Any*): js.Any
+  def margin(args: Any*): Any
   
-  def marginBottom(args: js.Any*): js.Any
+  def marginBottom(args: Any*): Any
   @JSName("marginBottom")
   var marginBottom_Original: styleFn
   
-  def marginLeft(args: js.Any*): js.Any
+  def marginLeft(args: Any*): Any
   @JSName("marginLeft")
   var marginLeft_Original: styleFn
   
-  def marginRight(args: js.Any*): js.Any
+  def marginRight(args: Any*): Any
   @JSName("marginRight")
   var marginRight_Original: styleFn
   
-  def marginTop(args: js.Any*): js.Any
+  def marginTop(args: Any*): Any
   @JSName("marginTop")
   var marginTop_Original: styleFn
   
   @JSName("margin")
   var margin_Original: styleFn
   
-  def maxHeight(args: js.Any*): js.Any
+  def maxHeight(args: Any*): Any
   @JSName("maxHeight")
   var maxHeight_Original: styleFn
   
-  def maxWidth(args: js.Any*): js.Any
+  def maxWidth(args: Any*): Any
   @JSName("maxWidth")
   var maxWidth_Original: styleFn
   
-  def minHeight(args: js.Any*): js.Any
+  def minHeight(args: Any*): Any
   @JSName("minHeight")
   var minHeight_Original: styleFn
   
-  def minWidth(args: js.Any*): js.Any
+  def minWidth(args: Any*): Any
   @JSName("minWidth")
   var minWidth_Original: styleFn
   
-  def opacity(args: js.Any*): js.Any
+  def opacity(args: Any*): Any
   @JSName("opacity")
   var opacity_Original: styleFn
   
-  def order(args: js.Any*): js.Any
+  def order(args: Any*): Any
   @JSName("order")
   var order_Original: styleFn
   
-  def overflow(args: js.Any*): js.Any
+  def overflow(args: Any*): Any
   @JSName("overflow")
   var overflow_Original: styleFn
   
-  def padding(args: js.Any*): js.Any
+  def padding(args: Any*): Any
   
-  def paddingBottom(args: js.Any*): js.Any
+  def paddingBottom(args: Any*): Any
   @JSName("paddingBottom")
   var paddingBottom_Original: styleFn
   
-  def paddingLeft(args: js.Any*): js.Any
+  def paddingLeft(args: Any*): Any
   @JSName("paddingLeft")
   var paddingLeft_Original: styleFn
   
-  def paddingRight(args: js.Any*): js.Any
+  def paddingRight(args: Any*): Any
   @JSName("paddingRight")
   var paddingRight_Original: styleFn
   
-  def paddingTop(args: js.Any*): js.Any
+  def paddingTop(args: Any*): Any
   @JSName("paddingTop")
   var paddingTop_Original: styleFn
   
   @JSName("padding")
   var padding_Original: styleFn
   
-  def position(args: js.Any*): js.Any
+  def position(args: Any*): Any
   @JSName("position")
   var position_Original: styleFn
   
-  def right(args: js.Any*): js.Any
+  def right(args: Any*): Any
   @JSName("right")
   var right_Original: styleFn
   
-  def size(args: js.Any*): js.Any
+  def size(args: Any*): Any
   @JSName("size")
   var size_Original: styleFn
   
-  def space(args: js.Any*): js.Any
+  def space(args: Any*): Any
   @JSName("space")
   var space_Original: styleFn
   
-  def textAlign(args: js.Any*): js.Any
+  def textAlign(args: Any*): Any
   @JSName("textAlign")
   var textAlign_Original: styleFn
   
-  def textColor(args: js.Any*): js.Any
+  def textColor(args: Any*): Any
   @JSName("textColor")
   var textColor_Original: styleFn
   
-  def textStyle(args: js.Any*): js.Any
+  def textStyle(args: Any*): Any
   @JSName("textStyle")
   var textStyle_Original: styleFn
   
-  def top(args: js.Any*): js.Any
+  def top(args: Any*): Any
   @JSName("top")
   var top_Original: styleFn
   
-  def verticalAlign(args: js.Any*): js.Any
+  def verticalAlign(args: Any*): Any
   @JSName("verticalAlign")
   var verticalAlign_Original: styleFn
   
-  def width(args: js.Any*): js.Any
+  def width(args: Any*): Any
   @JSName("width")
   var width_Original: styleFn
   
-  def zIndex(args: js.Any*): js.Any
+  def zIndex(args: Any*): Any
   @JSName("zIndex")
   var zIndex_Original: styleFn
 }

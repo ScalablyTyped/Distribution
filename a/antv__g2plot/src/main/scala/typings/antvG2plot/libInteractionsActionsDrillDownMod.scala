@@ -2,7 +2,7 @@ package typings.antvG2plot
 
 import typings.antvG2plot.anon.ActiveTextStyle
 import typings.antvG2plot.anon.Children
-import typings.antvG2plot.anon.ChildrenId
+import typings.antvG2plot.anon.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -104,7 +104,7 @@ object libInteractionsActionsDrillDownMod {
     var children: js.Array[N] = js.native
     
     /** 节点的原始数据，树型结构（todo 是否更正 key 为 origin） */
-    var data: Children = js.native
+    var data: Value = js.native
     
     /** 当前的层级结构，每一次下钻都会更新. 不是 unique */
     var depth: Double = js.native
@@ -115,5 +115,5 @@ object libInteractionsActionsDrillDownMod {
     var parent: N = js.native
   }
   
-  type HistoryCache = js.Array[ChildrenId]
+  type HistoryCache = js.Array[Children]
 }

@@ -1,26 +1,26 @@
 package typings.colorConvert.anon
 
-import typings.colorConvert.conversionsMod.HCG_
-import typings.colorConvert.conversionsMod.LAB_
+import typings.colorConvert.conversionsMod.ANSI256_
+import typings.colorConvert.conversionsMod.XYZ_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `160` extends StObject {
   
-  def raw(from: LAB_): HCG_
+  def raw(from: ANSI256_): XYZ_
   @JSName("raw")
-  var raw_Original: js.Function1[/* from */ LAB_, HCG_]
+  var raw_Original: js.Function1[/* from */ ANSI256_, XYZ_]
 }
 object `160` {
   
-  inline def apply(raw: /* from */ LAB_ => HCG_): `160` = {
+  inline def apply(raw: /* from */ ANSI256_ => XYZ_): `160` = {
     val __obj = js.Dynamic.literal(raw = js.Any.fromFunction1(raw))
     __obj.asInstanceOf[`160`]
   }
   
   extension [Self <: `160`](x: Self) {
     
-    inline def setRaw(value: /* from */ LAB_ => HCG_): Self = StObject.set(x, "raw", js.Any.fromFunction1(value))
+    inline def setRaw(value: /* from */ ANSI256_ => XYZ_): Self = StObject.set(x, "raw", js.Any.fromFunction1(value))
   }
 }

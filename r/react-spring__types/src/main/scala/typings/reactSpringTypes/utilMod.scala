@@ -124,7 +124,7 @@ object utilMod {
   
   type Lookup[T] = StringDictionary[T]
   
-  type LoosePick[T, K] = js.Object & (Pick[T, K & (/* keyof T */ String)])
+  type LoosePick[T, K] = Pick[T, K & (/* keyof T */ String)]
   
   type Merge[A, B] = Remap[
     (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof A ]: P extends keyof B? B[P] : A[P]} */ js.Any) & (Omit[B, /* keyof A */ String])
@@ -157,13 +157,13 @@ object utilMod {
   
   type Overwrite[T, U] = Remap[(Omit[T, /* keyof U */ String]) & U]
   
-  type Partial[T] = js.Object & (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]:? T[P] | undefined} */ js.Any)
+  type Partial[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]:? T[P] | undefined} */ js.Any
   
-  type Pick[T, K /* <: /* keyof T */ String */] = js.Object & (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in K ]: T[P]} */ js.Any)
+  type Pick[T, K /* <: /* keyof T */ String */] = /* import warning: importer.ImportType#apply Failed type conversion: {[ P in K ]: T[P]} */ js.Any
   
   type RefProp[T] = MutableRefObject[js.UndefOr[T | Null]]
   
-  type Remap[T] = js.Object & (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: T[P]} */ js.Any)
+  type Remap[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: T[P]} */ js.Any
   
   type StaticProps[T] = Omit[T, (/* keyof T */ String) & prototype]
   

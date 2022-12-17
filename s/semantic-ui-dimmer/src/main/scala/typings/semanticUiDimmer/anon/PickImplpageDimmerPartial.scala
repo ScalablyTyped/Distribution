@@ -20,7 +20,7 @@ trait PickImplpageDimmerPartial
   
   var hide: js.UndefOr[String] = js.undefined
   
-  var pageDimmer: String & js.UndefOr[String]
+  var pageDimmer: String
   
   var show: js.UndefOr[String] = js.undefined
   
@@ -28,7 +28,7 @@ trait PickImplpageDimmerPartial
 }
 object PickImplpageDimmerPartial {
   
-  inline def apply(pageDimmer: String & js.UndefOr[String]): PickImplpageDimmerPartial = {
+  inline def apply(pageDimmer: String): PickImplpageDimmerPartial = {
     val __obj = js.Dynamic.literal(pageDimmer = pageDimmer.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplpageDimmerPartial]
   }
@@ -55,7 +55,7 @@ object PickImplpageDimmerPartial {
     
     inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
-    inline def setPageDimmer(value: String & js.UndefOr[String]): Self = StObject.set(x, "pageDimmer", value.asInstanceOf[js.Any])
+    inline def setPageDimmer(value: String): Self = StObject.set(x, "pageDimmer", value.asInstanceOf[js.Any])
     
     inline def setShow(value: String): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     

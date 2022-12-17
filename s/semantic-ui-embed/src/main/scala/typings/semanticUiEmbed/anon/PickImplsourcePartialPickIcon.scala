@@ -16,13 +16,13 @@ trait PickImplsourcePartialPickIcon
   
   var placeholder: js.UndefOr[String] = js.undefined
   
-  var source: String & js.UndefOr[String]
+  var source: String
   
   var url: js.UndefOr[String] = js.undefined
 }
 object PickImplsourcePartialPickIcon {
   
-  inline def apply(source: String & js.UndefOr[String]): PickImplsourcePartialPickIcon = {
+  inline def apply(source: String): PickImplsourcePartialPickIcon = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplsourcePartialPickIcon]
   }
@@ -41,7 +41,7 @@ object PickImplsourcePartialPickIcon {
     
     inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
-    inline def setSource(value: String & js.UndefOr[String]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

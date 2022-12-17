@@ -504,7 +504,7 @@ object libCoreMod {
   
   @JSImport("bizcharts/lib/core", "VERSION")
   @js.native
-  val VERSION: /* "4.2.8" */ String = js.native
+  val VERSION: /* "4.1.20" */ String = js.native
   
   object antvDark {
     

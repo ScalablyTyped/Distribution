@@ -1,5 +1,6 @@
 package typings.styledSystem.mod
 
+import typings.csstype.mod.Property.GridTemplateAreas
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,12 +12,7 @@ trait GridTemplateAreasProps[ThemeType /* <: Theme[TLengthStyledSystem] */] exte
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas)
     */
-  var gridTemplateAreas: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateAreas */ js.Any, 
-      ThemeType
-    ]
-  ] = js.undefined
+  var gridTemplateAreas: js.UndefOr[ResponsiveValue[GridTemplateAreas, ThemeType]] = js.undefined
 }
 object GridTemplateAreasProps {
   
@@ -27,19 +23,12 @@ object GridTemplateAreasProps {
   
   extension [Self <: GridTemplateAreasProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & GridTemplateAreasProps[ThemeType]) {
     
-    inline def setGridTemplateAreas(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateAreas */ js.Any, 
-          ThemeType
-        ]
-    ): Self = StObject.set(x, "gridTemplateAreas", value.asInstanceOf[js.Any])
+    inline def setGridTemplateAreas(value: ResponsiveValue[GridTemplateAreas, ThemeType]): Self = StObject.set(x, "gridTemplateAreas", value.asInstanceOf[js.Any])
     
     inline def setGridTemplateAreasNull: Self = StObject.set(x, "gridTemplateAreas", null)
     
     inline def setGridTemplateAreasUndefined: Self = StObject.set(x, "gridTemplateAreas", js.undefined)
     
-    inline def setGridTemplateAreasVarargs(
-      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateAreas */ js.Any) | Null)*
-    ): Self = StObject.set(x, "gridTemplateAreas", js.Array(value :_*))
+    inline def setGridTemplateAreasVarargs(value: (GridTemplateAreas | Null)*): Self = StObject.set(x, "gridTemplateAreas", js.Array(value*))
   }
 }

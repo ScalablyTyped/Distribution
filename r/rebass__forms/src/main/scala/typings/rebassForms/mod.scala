@@ -1,8 +1,28 @@
 package typings.rebassForms
 
+import typings.csstype.mod.Property.AlignItems
+import typings.csstype.mod.Property.AlignSelf
+import typings.csstype.mod.Property.Display
+import typings.csstype.mod.Property.Flex
+import typings.csstype.mod.Property.FlexDirection
+import typings.csstype.mod.Property.FlexWrap
+import typings.csstype.mod.Property.Height
+import typings.csstype.mod.Property.JustifyContent
+import typings.csstype.mod.Property.MaxHeight
+import typings.csstype.mod.Property.MaxWidth
+import typings.csstype.mod.Property.MinHeight
+import typings.csstype.mod.Property.MinWidth
+import typings.csstype.mod.Property.Opacity
+import typings.csstype.mod.Property.Order
+import typings.csstype.mod.Property.Overflow
+import typings.csstype.mod.Property.OverflowX
+import typings.csstype.mod.Property.OverflowY
+import typings.csstype.mod.Property.VerticalAlign
+import typings.csstype.mod.Property.Width
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ChangeEvent
@@ -19,6 +39,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
+import typings.react.mod.HTMLInputTypeAttribute
 import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
@@ -65,6 +86,7 @@ import typings.rebassForms.rebassFormsStrings.dialog
 import typings.rebassForms.rebassFormsStrings.done
 import typings.rebassForms.rebassFormsStrings.email
 import typings.rebassForms.rebassFormsStrings.enter
+import typings.rebassForms.rebassFormsStrings.environment
 import typings.rebassForms.rebassFormsStrings.execute
 import typings.rebassForms.rebassFormsStrings.fontSizes
 import typings.rebassForms.rebassFormsStrings.fontWeights
@@ -104,8 +126,10 @@ import typings.rebassForms.rebassFormsStrings.text
 import typings.rebassForms.rebassFormsStrings.time
 import typings.rebassForms.rebassFormsStrings.tree
 import typings.rebassForms.rebassFormsStrings.url
+import typings.rebassForms.rebassFormsStrings.user
 import typings.rebassForms.rebassFormsStrings.vertical
 import typings.rebassForms.rebassFormsStrings.yes
+import typings.std.Element
 import typings.std.Event
 import typings.std.Exclude
 import typings.std.HTMLButtonElement
@@ -114,8 +138,6 @@ import typings.std.HTMLLabelElement
 import typings.std.HTMLSelectElement
 import typings.std.HTMLTextAreaElement
 import typings.std.Pick
-import typings.styledComponents.styledComponentsMod.CSSObject
-import typings.styledComponents.styledComponentsMod.FlattenSimpleInterpolation
 import typings.styledSystem.mod.AlignItemsProps
 import typings.styledSystem.mod.AlignSelfProps
 import typings.styledSystem.mod.ColorProps
@@ -130,6 +152,7 @@ import typings.styledSystem.mod.OrderProps
 import typings.styledSystem.mod.RequiredTheme
 import typings.styledSystem.mod.ResponsiveValue
 import typings.styledSystem.mod.SpaceProps
+import typings.styledSystem.mod.TLengthStyledSystem
 import typings.styledSystem.mod.ThemeValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -172,15 +195,12 @@ object mod {
   trait BoxKnownProps
     extends StObject
        with BaseProps
-       with SpaceProps[RequiredTheme, ThemeValue[space, RequiredTheme, js.Any]]
+       with SpaceProps[RequiredTheme, ThemeValue[space, RequiredTheme, Any]]
        with LayoutProps[RequiredTheme]
-       with FontSizeProps[RequiredTheme, ThemeValue[fontSizes, RequiredTheme, js.Any]]
-       with FontWeightProps[RequiredTheme, ThemeValue[fontWeights, RequiredTheme, js.Any]]
-       with ColorProps[RequiredTheme, ThemeValue[colors, RequiredTheme, js.Any]]
-       with FlexProps[
-          RequiredTheme, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLengthStyledSystem> */ js.Any
-        ]
+       with FontSizeProps[RequiredTheme, ThemeValue[fontSizes, RequiredTheme, Any]]
+       with FontWeightProps[RequiredTheme, ThemeValue[fontWeights, RequiredTheme, Any]]
+       with ColorProps[RequiredTheme, ThemeValue[colors, RequiredTheme, Any]]
+       with FlexProps[RequiredTheme, Flex[TLengthStyledSystem]]
        with OrderProps[RequiredTheme]
        with AlignSelfProps[RequiredTheme]
        with SxProps {
@@ -208,7 +228,7 @@ object mod {
       
       inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
       
-      inline def setVariantVarargs(value: (String | Null)*): Self = StObject.set(x, "variant", js.Array(value :_*))
+      inline def setVariantVarargs(value: (String | Null)*): Self = StObject.set(x, "variant", js.Array(value*))
     }
   }
   
@@ -230,22 +250,17 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self)
       */
-    var alignSelf: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var alignSelf: js.UndefOr[ResponsiveValue[AlignSelf, RequiredTheme]] = js.undefined
     
     var alt: js.UndefOr[String] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
@@ -263,21 +278,21 @@ object mod {
     
     var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
@@ -291,11 +306,11 @@ object mod {
     
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
@@ -307,13 +322,13 @@ object mod {
     
     var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
       ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
@@ -323,7 +338,7 @@ object mod {
     
     var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
@@ -337,7 +352,7 @@ object mod {
     
     var `aria-valuetext`: js.UndefOr[String] = js.undefined
     
-    var as: js.UndefOr[ElementType[js.Any]] = js.undefined
+    var as: js.UndefOr[ElementType[Any]] = js.undefined
     
     var autoCapitalize: js.UndefOr[String] = js.undefined
     
@@ -349,7 +364,7 @@ object mod {
     
     var autoSave: js.UndefOr[String] = js.undefined
     
-    var backgroundColor: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var backgroundColor: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /**
       * The color utility parses a component's `color` and `bg` props and converts them into CSS declarations.
@@ -360,9 +375,9 @@ object mod {
       *
       * [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color)
       */
-    var bg: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var bg: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
-    var capture: js.UndefOr[Boolean | String] = js.undefined
+    var capture: js.UndefOr[Boolean | user | environment] = js.undefined
     
     var checked: js.UndefOr[Boolean] = js.undefined
     
@@ -379,7 +394,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
       */
-    var color: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var color: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -387,7 +402,9 @@ object mod {
     
     var crossOrigin: js.UndefOr[String] = js.undefined
     
-    var css: js.UndefOr[CSSObject | FlattenSimpleInterpolation | String] = js.undefined
+    var css: js.UndefOr[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StyledComponents.CSSObject */ Any) | String
+      ] = js.undefined
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
@@ -408,12 +425,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
       */
-    var display: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var display: js.UndefOr[ResponsiveValue[Display, RequiredTheme]] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
@@ -425,12 +437,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)
       */
-    var flex: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var flex: js.UndefOr[ResponsiveValue[Flex[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     /**
       * The fontSize utility parses a component's `fontSize` prop and converts it into a CSS font-size declaration.
@@ -441,7 +448,7 @@ object mod {
       * - And array values are converted into responsive values.
       *
       */
-    var fontSize: js.UndefOr[ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var fontSize: js.UndefOr[ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /**
       * The font-weight CSS property specifies the weight (or boldness) of the font.
@@ -450,7 +457,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight)
       */
-    var fontWeight: js.UndefOr[ResponsiveValue[ThemeValue[fontWeights, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var fontWeight: js.UndefOr[ResponsiveValue[ThemeValue[fontWeights, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var form: js.UndefOr[String] = js.undefined
     
@@ -470,18 +477,13 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/height)
       */
-    var height: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var height: js.UndefOr[ResponsiveValue[Height[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
     var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
@@ -504,28 +506,28 @@ object mod {
     var list: js.UndefOr[String] = js.undefined
     
     /** Margin on top, left, bottom and right */
-    var m: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var m: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top, left, bottom and right */
-    var margin: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var margin: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on bottom */
-    var marginBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on left */
-    var marginLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on right */
-    var marginRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top */
-    var marginTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on left and right */
-    var marginX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top and bottom */
-    var marginY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var max: js.UndefOr[Double | String] = js.undefined
     
@@ -535,12 +537,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/max-height)
       */
-    var maxHeight: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxHeight<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var maxHeight: js.UndefOr[ResponsiveValue[MaxHeight[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     var maxLength: js.UndefOr[Double] = js.undefined
     
@@ -550,15 +547,10 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/max-width)
       */
-    var maxWidth: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var maxWidth: js.UndefOr[ResponsiveValue[MaxWidth[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     /** Margin on bottom */
-    var mb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var mb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var min: js.UndefOr[Double | String] = js.undefined
     
@@ -568,12 +560,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
       */
-    var minHeight: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var minHeight: js.UndefOr[ResponsiveValue[MinHeight[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     var minLength: js.UndefOr[Double] = js.undefined
     
@@ -583,31 +570,28 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/min-width)
       */
-    var minWidth: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var minWidth: js.UndefOr[ResponsiveValue[MinWidth[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     /** Margin on left */
-    var ml: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var ml: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on right */
-    var mr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var mr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top */
-    var mt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var mt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var multiple: js.UndefOr[Boolean] = js.undefined
     
     /** Margin on left and right */
-    var mx: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var mx: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top and bottom */
-    var my: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var my: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var name: js.UndefOr[String] = js.undefined
+    
+    var nonce: js.UndefOr[String] = js.undefined
     
     var onAbort: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
@@ -735,6 +719,8 @@ object mod {
     
     var onReset: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
     
+    var onResize: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
+    
     var onScroll: js.UndefOr[UIEventHandler[HTMLInputElement]] = js.undefined
     
     var onSeeked: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
@@ -773,12 +759,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity)
       */
-    var opacity: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var opacity: js.UndefOr[ResponsiveValue[Opacity, RequiredTheme]] = js.undefined
     
     /**
       * The order CSS property sets the order to lay out an item in a flex or grid container. Items in a container
@@ -786,12 +767,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/order)
       */
-    var order: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var order: js.UndefOr[ResponsiveValue[Order, RequiredTheme]] = js.undefined
     
     /**
       * The overflow CSS property sets what to do when an element's content is too big to fit in its block
@@ -799,12 +775,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow)
       */
-    var overflow: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var overflow: js.UndefOr[ResponsiveValue[Overflow, RequiredTheme]] = js.undefined
     
     /**
       * The overflow-x CSS property sets what shows when content overflows a block-level element's left
@@ -812,12 +783,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-x)
       */
-    var overflowX: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowX */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var overflowX: js.UndefOr[ResponsiveValue[OverflowX, RequiredTheme]] = js.undefined
     
     /**
       * The overflow-y CSS property sets what shows when content overflows a block-level element's top
@@ -825,68 +791,63 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-y)
       */
-    var overflowY: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowY */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var overflowY: js.UndefOr[ResponsiveValue[OverflowY, RequiredTheme]] = js.undefined
     
     /** Padding on top, left, bottom and right */
-    var p: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var p: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on top, left, bottom and right */
-    var padding: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var padding: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on bottom */
-    var paddingBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on left */
-    var paddingLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on right */
-    var paddingRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on top */
-    var paddingTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on left and right */
-    var paddingX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on top and bottom */
-    var paddingY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var pattern: js.UndefOr[String] = js.undefined
     
     /** Padding on bottom */
-    var pb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var pb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on left */
-    var pl: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var pl: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var placeholder: js.UndefOr[String] = js.undefined
     
     /** Padding on right */
-    var pr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var pr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var prefix: js.UndefOr[String] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
     
     /** Padding on top */
-    var pt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var pt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on left and right */
-    var px: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var px: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on top and bottom */
-    var py: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var py: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var ref: js.UndefOr[Ref[js.Any]] = js.undefined
+    var ref: js.UndefOr[Ref[Any]] = js.undefined
     
     var required: js.UndefOr[Boolean] = js.undefined
     
@@ -894,16 +855,11 @@ object mod {
     
     var results: js.UndefOr[Double] = js.undefined
     
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var size: js.UndefOr[ResponsiveValue[Height[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     var slot: js.UndefOr[String] = js.undefined
     
@@ -932,7 +888,7 @@ object mod {
     
     var tx: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.undefined
+    var `type`: js.UndefOr[HTMLInputTypeAttribute] = js.undefined
     
     var typeof: js.UndefOr[String] = js.undefined
     
@@ -947,12 +903,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align)
       */
-    var verticalAlign: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var verticalAlign: js.UndefOr[ResponsiveValue[VerticalAlign[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
     
@@ -964,12 +915,7 @@ object mod {
       *   - String values are passed as raw CSS values.
       *   - And arrays are converted to responsive width styles.
       */
-    var width: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Width<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var width: js.UndefOr[ResponsiveValue[Width[TLengthStyledSystem], RequiredTheme]] = js.undefined
   }
   object CheckboxProps {
     
@@ -992,20 +938,13 @@ object mod {
       
       inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
-      inline def setAlignSelf(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
+      inline def setAlignSelf(value: ResponsiveValue[AlignSelf, RequiredTheme]): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
       
       inline def setAlignSelfNull: Self = StObject.set(x, "alignSelf", null)
       
       inline def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
       
-      inline def setAlignSelfVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ js.Any) | Null)*
-      ): Self = StObject.set(x, "alignSelf", js.Array(value :_*))
+      inline def setAlignSelfVarargs(value: (AlignSelf | Null)*): Self = StObject.set(x, "alignSelf", js.Array(value*))
       
       inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
@@ -1015,7 +954,7 @@ object mod {
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -1023,7 +962,7 @@ object mod {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -1059,7 +998,7 @@ object mod {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -1071,7 +1010,7 @@ object mod {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -1079,7 +1018,7 @@ object mod {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -1087,7 +1026,7 @@ object mod {
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
@@ -1115,15 +1054,15 @@ object mod {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -1147,7 +1086,7 @@ object mod {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -1157,7 +1096,7 @@ object mod {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -1177,7 +1116,7 @@ object mod {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -1205,7 +1144,7 @@ object mod {
       
       inline def `setAria-valuetextUndefined`: Self = StObject.set(x, "aria-valuetext", js.undefined)
       
-      inline def setAs(value: ElementType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -1229,23 +1168,23 @@ object mod {
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
       
-      inline def setBackgroundColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
       inline def setBackgroundColorNull: Self = StObject.set(x, "backgroundColor", null)
       
       inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      inline def setBackgroundColorVarargs(value: ((ThemeValue[colors, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "backgroundColor", js.Array(value :_*))
+      inline def setBackgroundColorVarargs(value: ((ThemeValue[colors, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "backgroundColor", js.Array(value*))
       
-      inline def setBg(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
+      inline def setBg(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
       
       inline def setBgNull: Self = StObject.set(x, "bg", null)
       
       inline def setBgUndefined: Self = StObject.set(x, "bg", js.undefined)
       
-      inline def setBgVarargs(value: ((ThemeValue[colors, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "bg", js.Array(value :_*))
+      inline def setBgVarargs(value: ((ThemeValue[colors, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "bg", js.Array(value*))
       
-      inline def setCapture(value: Boolean | String): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+      inline def setCapture(value: Boolean | user | environment): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
       inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       
@@ -1261,13 +1200,13 @@ object mod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorNull: Self = StObject.set(x, "color", null)
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setColorVarargs(value: ((ThemeValue[colors, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "color", js.Array(value :_*))
+      inline def setColorVarargs(value: ((ThemeValue[colors, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "color", js.Array(value*))
       
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
@@ -1281,7 +1220,9 @@ object mod {
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
-      inline def setCss(value: CSSObject | FlattenSimpleInterpolation | String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+      inline def setCss(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StyledComponents.CSSObject */ Any) | String
+      ): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
       inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
       
@@ -1301,7 +1242,7 @@ object mod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -1311,20 +1252,13 @@ object mod {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setDisplay(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+      inline def setDisplay(value: ResponsiveValue[Display, RequiredTheme]): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
       inline def setDisplayNull: Self = StObject.set(x, "display", null)
       
       inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
       
-      inline def setDisplayVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any) | Null)*
-      ): Self = StObject.set(x, "display", js.Array(value :_*))
+      inline def setDisplayVarargs(value: (Display | Null)*): Self = StObject.set(x, "display", js.Array(value*))
       
       inline def setDraggable(value: Booleanish): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
       
@@ -1334,36 +1268,29 @@ object mod {
       
       inline def setEnterKeyHintUndefined: Self = StObject.set(x, "enterKeyHint", js.undefined)
       
-      inline def setFlex(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
+      inline def setFlex(value: ResponsiveValue[Flex[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
       
       inline def setFlexNull: Self = StObject.set(x, "flex", null)
       
       inline def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
       
-      inline def setFlexVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "flex", js.Array(value :_*))
+      inline def setFlexVarargs(value: (Flex[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "flex", js.Array(value*))
       
-      inline def setFontSize(value: ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
       inline def setFontSizeNull: Self = StObject.set(x, "fontSize", null)
       
       inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
-      inline def setFontSizeVarargs(value: ((ThemeValue[fontSizes, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "fontSize", js.Array(value :_*))
+      inline def setFontSizeVarargs(value: ((ThemeValue[fontSizes, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "fontSize", js.Array(value*))
       
-      inline def setFontWeight(value: ResponsiveValue[ThemeValue[fontWeights, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+      inline def setFontWeight(value: ResponsiveValue[ThemeValue[fontWeights, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
       
       inline def setFontWeightNull: Self = StObject.set(x, "fontWeight", null)
       
       inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
       
-      inline def setFontWeightVarargs(value: ((ThemeValue[fontWeights, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "fontWeight", js.Array(value :_*))
+      inline def setFontWeightVarargs(value: ((ThemeValue[fontWeights, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "fontWeight", js.Array(value*))
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
@@ -1389,20 +1316,13 @@ object mod {
       
       inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
       
-      inline def setHeight(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: ResponsiveValue[Height[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       inline def setHeightNull: Self = StObject.set(x, "height", null)
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setHeightVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "height", js.Array(value :_*))
+      inline def setHeightVarargs(value: (Height[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "height", js.Array(value*))
       
       inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
@@ -1412,7 +1332,7 @@ object mod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -1458,86 +1378,79 @@ object mod {
       
       inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
       
-      inline def setM(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
+      inline def setM(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
       
       inline def setMNull: Self = StObject.set(x, "m", null)
       
       inline def setMUndefined: Self = StObject.set(x, "m", js.undefined)
       
-      inline def setMVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "m", js.Array(value :_*))
+      inline def setMVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "m", js.Array(value*))
       
-      inline def setMargin(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      inline def setMarginBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+      inline def setMarginBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
       
       inline def setMarginBottomNull: Self = StObject.set(x, "marginBottom", null)
       
       inline def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
       
-      inline def setMarginBottomVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginBottom", js.Array(value :_*))
+      inline def setMarginBottomVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginBottom", js.Array(value*))
       
-      inline def setMarginLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+      inline def setMarginLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
       
       inline def setMarginLeftNull: Self = StObject.set(x, "marginLeft", null)
       
       inline def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
       
-      inline def setMarginLeftVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginLeft", js.Array(value :_*))
+      inline def setMarginLeftVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginLeft", js.Array(value*))
       
       inline def setMarginNull: Self = StObject.set(x, "margin", null)
       
-      inline def setMarginRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
+      inline def setMarginRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
       
       inline def setMarginRightNull: Self = StObject.set(x, "marginRight", null)
       
       inline def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
       
-      inline def setMarginRightVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginRight", js.Array(value :_*))
+      inline def setMarginRightVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginRight", js.Array(value*))
       
-      inline def setMarginTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+      inline def setMarginTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
       
       inline def setMarginTopNull: Self = StObject.set(x, "marginTop", null)
       
       inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
       
-      inline def setMarginTopVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginTop", js.Array(value :_*))
+      inline def setMarginTopVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginTop", js.Array(value*))
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      inline def setMarginVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "margin", js.Array(value :_*))
+      inline def setMarginVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "margin", js.Array(value*))
       
-      inline def setMarginX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginX", value.asInstanceOf[js.Any])
+      inline def setMarginX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginX", value.asInstanceOf[js.Any])
       
       inline def setMarginXNull: Self = StObject.set(x, "marginX", null)
       
       inline def setMarginXUndefined: Self = StObject.set(x, "marginX", js.undefined)
       
-      inline def setMarginXVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginX", js.Array(value :_*))
+      inline def setMarginXVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginX", js.Array(value*))
       
-      inline def setMarginY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginY", value.asInstanceOf[js.Any])
+      inline def setMarginY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginY", value.asInstanceOf[js.Any])
       
       inline def setMarginYNull: Self = StObject.set(x, "marginY", null)
       
       inline def setMarginYUndefined: Self = StObject.set(x, "marginY", js.undefined)
       
-      inline def setMarginYVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginY", js.Array(value :_*))
+      inline def setMarginYVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginY", js.Array(value*))
       
       inline def setMax(value: Double | String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      inline def setMaxHeight(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxHeight<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMaxHeight(value: ResponsiveValue[MaxHeight[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
       inline def setMaxHeightNull: Self = StObject.set(x, "maxHeight", null)
       
       inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
       
-      inline def setMaxHeightVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxHeight<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "maxHeight", js.Array(value :_*))
+      inline def setMaxHeightVarargs(value: (MaxHeight[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "maxHeight", js.Array(value*))
       
       inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
       
@@ -1545,45 +1458,31 @@ object mod {
       
       inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      inline def setMaxWidth(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: ResponsiveValue[MaxWidth[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
       inline def setMaxWidthNull: Self = StObject.set(x, "maxWidth", null)
       
       inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      inline def setMaxWidthVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "maxWidth", js.Array(value :_*))
+      inline def setMaxWidthVarargs(value: (MaxWidth[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "maxWidth", js.Array(value*))
       
-      inline def setMb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
+      inline def setMb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
       
       inline def setMbNull: Self = StObject.set(x, "mb", null)
       
       inline def setMbUndefined: Self = StObject.set(x, "mb", js.undefined)
       
-      inline def setMbVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "mb", js.Array(value :_*))
+      inline def setMbVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "mb", js.Array(value*))
       
       inline def setMin(value: Double | String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      inline def setMinHeight(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+      inline def setMinHeight(value: ResponsiveValue[MinHeight[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
       
       inline def setMinHeightNull: Self = StObject.set(x, "minHeight", null)
       
       inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
       
-      inline def setMinHeightVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "minHeight", js.Array(value :_*))
+      inline def setMinHeightVarargs(value: (MinHeight[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "minHeight", js.Array(value*))
       
       inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
       
@@ -1591,68 +1490,65 @@ object mod {
       
       inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      inline def setMinWidth(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+      inline def setMinWidth(value: ResponsiveValue[MinWidth[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
       
       inline def setMinWidthNull: Self = StObject.set(x, "minWidth", null)
       
       inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
       
-      inline def setMinWidthVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "minWidth", js.Array(value :_*))
+      inline def setMinWidthVarargs(value: (MinWidth[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "minWidth", js.Array(value*))
       
-      inline def setMl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
+      inline def setMl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
       
       inline def setMlNull: Self = StObject.set(x, "ml", null)
       
       inline def setMlUndefined: Self = StObject.set(x, "ml", js.undefined)
       
-      inline def setMlVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "ml", js.Array(value :_*))
+      inline def setMlVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "ml", js.Array(value*))
       
-      inline def setMr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mr", value.asInstanceOf[js.Any])
+      inline def setMr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "mr", value.asInstanceOf[js.Any])
       
       inline def setMrNull: Self = StObject.set(x, "mr", null)
       
       inline def setMrUndefined: Self = StObject.set(x, "mr", js.undefined)
       
-      inline def setMrVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "mr", js.Array(value :_*))
+      inline def setMrVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "mr", js.Array(value*))
       
-      inline def setMt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
+      inline def setMt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
       
       inline def setMtNull: Self = StObject.set(x, "mt", null)
       
       inline def setMtUndefined: Self = StObject.set(x, "mt", js.undefined)
       
-      inline def setMtVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "mt", js.Array(value :_*))
+      inline def setMtVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "mt", js.Array(value*))
       
       inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       
       inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
       
-      inline def setMx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mx", value.asInstanceOf[js.Any])
+      inline def setMx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "mx", value.asInstanceOf[js.Any])
       
       inline def setMxNull: Self = StObject.set(x, "mx", null)
       
       inline def setMxUndefined: Self = StObject.set(x, "mx", js.undefined)
       
-      inline def setMxVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "mx", js.Array(value :_*))
+      inline def setMxVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "mx", js.Array(value*))
       
-      inline def setMy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
+      inline def setMy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
       
       inline def setMyNull: Self = StObject.set(x, "my", null)
       
       inline def setMyUndefined: Self = StObject.set(x, "my", js.undefined)
       
-      inline def setMyVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "my", js.Array(value :_*))
+      inline def setMyVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "my", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setOnAbort(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       
@@ -1678,7 +1574,7 @@ object mod {
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -1778,7 +1674,7 @@ object mod {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -1906,6 +1802,10 @@ object mod {
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
+      inline def setOnResize(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+      
       inline def setOnScroll(value: UIEvent[HTMLInputElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
@@ -1970,176 +1870,141 @@ object mod {
       
       inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
       
-      inline def setOpacity(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: ResponsiveValue[Opacity, RequiredTheme]): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
       inline def setOpacityNull: Self = StObject.set(x, "opacity", null)
       
       inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      inline def setOpacityVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ js.Any) | Null)*
-      ): Self = StObject.set(x, "opacity", js.Array(value :_*))
+      inline def setOpacityVarargs(value: (Opacity | Null)*): Self = StObject.set(x, "opacity", js.Array(value*))
       
-      inline def setOrder(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: ResponsiveValue[Order, RequiredTheme]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
       inline def setOrderNull: Self = StObject.set(x, "order", null)
       
       inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      inline def setOrderVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ js.Any) | Null)*
-      ): Self = StObject.set(x, "order", js.Array(value :_*))
+      inline def setOrderVarargs(value: (Order | Null)*): Self = StObject.set(x, "order", js.Array(value*))
       
-      inline def setOverflow(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+      inline def setOverflow(value: ResponsiveValue[Overflow, RequiredTheme]): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
       
       inline def setOverflowNull: Self = StObject.set(x, "overflow", null)
       
       inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
       
-      inline def setOverflowVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any) | Null)*
-      ): Self = StObject.set(x, "overflow", js.Array(value :_*))
+      inline def setOverflowVarargs(value: (Overflow | Null)*): Self = StObject.set(x, "overflow", js.Array(value*))
       
-      inline def setOverflowX(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowX */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "overflowX", value.asInstanceOf[js.Any])
+      inline def setOverflowX(value: ResponsiveValue[OverflowX, RequiredTheme]): Self = StObject.set(x, "overflowX", value.asInstanceOf[js.Any])
       
       inline def setOverflowXNull: Self = StObject.set(x, "overflowX", null)
       
       inline def setOverflowXUndefined: Self = StObject.set(x, "overflowX", js.undefined)
       
-      inline def setOverflowXVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowX */ js.Any) | Null)*
-      ): Self = StObject.set(x, "overflowX", js.Array(value :_*))
+      inline def setOverflowXVarargs(value: (OverflowX | Null)*): Self = StObject.set(x, "overflowX", js.Array(value*))
       
-      inline def setOverflowY(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowY */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "overflowY", value.asInstanceOf[js.Any])
+      inline def setOverflowY(value: ResponsiveValue[OverflowY, RequiredTheme]): Self = StObject.set(x, "overflowY", value.asInstanceOf[js.Any])
       
       inline def setOverflowYNull: Self = StObject.set(x, "overflowY", null)
       
       inline def setOverflowYUndefined: Self = StObject.set(x, "overflowY", js.undefined)
       
-      inline def setOverflowYVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowY */ js.Any) | Null)*
-      ): Self = StObject.set(x, "overflowY", js.Array(value :_*))
+      inline def setOverflowYVarargs(value: (OverflowY | Null)*): Self = StObject.set(x, "overflowY", js.Array(value*))
       
-      inline def setP(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+      inline def setP(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
       
       inline def setPNull: Self = StObject.set(x, "p", null)
       
       inline def setPUndefined: Self = StObject.set(x, "p", js.undefined)
       
-      inline def setPVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "p", js.Array(value :_*))
+      inline def setPVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "p", js.Array(value*))
       
-      inline def setPadding(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      inline def setPaddingBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
+      inline def setPaddingBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
       
       inline def setPaddingBottomNull: Self = StObject.set(x, "paddingBottom", null)
       
       inline def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
       
-      inline def setPaddingBottomVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingBottom", js.Array(value :_*))
+      inline def setPaddingBottomVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingBottom", js.Array(value*))
       
-      inline def setPaddingLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
+      inline def setPaddingLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
       
       inline def setPaddingLeftNull: Self = StObject.set(x, "paddingLeft", null)
       
       inline def setPaddingLeftUndefined: Self = StObject.set(x, "paddingLeft", js.undefined)
       
-      inline def setPaddingLeftVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingLeft", js.Array(value :_*))
+      inline def setPaddingLeftVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingLeft", js.Array(value*))
       
       inline def setPaddingNull: Self = StObject.set(x, "padding", null)
       
-      inline def setPaddingRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
+      inline def setPaddingRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
       
       inline def setPaddingRightNull: Self = StObject.set(x, "paddingRight", null)
       
       inline def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
       
-      inline def setPaddingRightVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingRight", js.Array(value :_*))
+      inline def setPaddingRightVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingRight", js.Array(value*))
       
-      inline def setPaddingTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
+      inline def setPaddingTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
       
       inline def setPaddingTopNull: Self = StObject.set(x, "paddingTop", null)
       
       inline def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
       
-      inline def setPaddingTopVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingTop", js.Array(value :_*))
+      inline def setPaddingTopVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingTop", js.Array(value*))
       
       inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      inline def setPaddingVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "padding", js.Array(value :_*))
+      inline def setPaddingVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "padding", js.Array(value*))
       
-      inline def setPaddingX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
+      inline def setPaddingX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
       
       inline def setPaddingXNull: Self = StObject.set(x, "paddingX", null)
       
       inline def setPaddingXUndefined: Self = StObject.set(x, "paddingX", js.undefined)
       
-      inline def setPaddingXVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingX", js.Array(value :_*))
+      inline def setPaddingXVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingX", js.Array(value*))
       
-      inline def setPaddingY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
+      inline def setPaddingY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
       
       inline def setPaddingYNull: Self = StObject.set(x, "paddingY", null)
       
       inline def setPaddingYUndefined: Self = StObject.set(x, "paddingY", js.undefined)
       
-      inline def setPaddingYVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingY", js.Array(value :_*))
+      inline def setPaddingYVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingY", js.Array(value*))
       
       inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
       inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
       
-      inline def setPb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pb", value.asInstanceOf[js.Any])
+      inline def setPb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "pb", value.asInstanceOf[js.Any])
       
       inline def setPbNull: Self = StObject.set(x, "pb", null)
       
       inline def setPbUndefined: Self = StObject.set(x, "pb", js.undefined)
       
-      inline def setPbVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "pb", js.Array(value :_*))
+      inline def setPbVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "pb", js.Array(value*))
       
-      inline def setPl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
+      inline def setPl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
       
       inline def setPlNull: Self = StObject.set(x, "pl", null)
       
       inline def setPlUndefined: Self = StObject.set(x, "pl", js.undefined)
       
-      inline def setPlVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "pl", js.Array(value :_*))
+      inline def setPlVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "pl", js.Array(value*))
       
       inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      inline def setPr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
+      inline def setPr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
       
       inline def setPrNull: Self = StObject.set(x, "pr", null)
       
       inline def setPrUndefined: Self = StObject.set(x, "pr", js.undefined)
       
-      inline def setPrVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "pr", js.Array(value :_*))
+      inline def setPrVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "pr", js.Array(value*))
       
       inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
@@ -2149,29 +2014,29 @@ object mod {
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
       
-      inline def setPt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+      inline def setPt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
       
       inline def setPtNull: Self = StObject.set(x, "pt", null)
       
       inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
       
-      inline def setPtVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "pt", js.Array(value :_*))
+      inline def setPtVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "pt", js.Array(value*))
       
-      inline def setPx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
+      inline def setPx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
       
       inline def setPxNull: Self = StObject.set(x, "px", null)
       
       inline def setPxUndefined: Self = StObject.set(x, "px", js.undefined)
       
-      inline def setPxVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "px", js.Array(value :_*))
+      inline def setPxVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "px", js.Array(value*))
       
-      inline def setPy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "py", value.asInstanceOf[js.Any])
+      inline def setPy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "py", value.asInstanceOf[js.Any])
       
       inline def setPyNull: Self = StObject.set(x, "py", null)
       
       inline def setPyUndefined: Self = StObject.set(x, "py", js.undefined)
       
-      inline def setPyVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "py", js.Array(value :_*))
+      inline def setPyVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "py", js.Array(value*))
       
       inline def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
       
@@ -2181,9 +2046,9 @@ object mod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
-      inline def setRef(value: Ref[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: Ref[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      inline def setRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      inline def setRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
       inline def setRefNull: Self = StObject.set(x, "ref", null)
       
@@ -2201,7 +2066,7 @@ object mod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
@@ -2209,20 +2074,13 @@ object mod {
       
       inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
       
-      inline def setSize(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: ResponsiveValue[Height[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeNull: Self = StObject.set(x, "size", null)
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setSizeVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "size", js.Array(value :_*))
+      inline def setSizeVarargs(value: (Height[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "size", js.Array(value*))
       
       inline def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
       
@@ -2254,8 +2112,6 @@ object mod {
       
       inline def setSx(value: SxStyleProp): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
       
-      inline def setSxNull: Self = StObject.set(x, "sx", null)
-      
       inline def setSxUndefined: Self = StObject.set(x, "sx", js.undefined)
       
       inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
@@ -2274,7 +2130,7 @@ object mod {
       
       inline def setTxUndefined: Self = StObject.set(x, "tx", js.undefined)
       
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: HTMLInputTypeAttribute): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
@@ -2290,7 +2146,7 @@ object mod {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
       
       inline def setVariant(value: ResponsiveValue[String, RequiredTheme]): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
       
@@ -2298,41 +2154,27 @@ object mod {
       
       inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
       
-      inline def setVariantVarargs(value: (String | Null)*): Self = StObject.set(x, "variant", js.Array(value :_*))
+      inline def setVariantVarargs(value: (String | Null)*): Self = StObject.set(x, "variant", js.Array(value*))
       
-      inline def setVerticalAlign(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+      inline def setVerticalAlign(value: ResponsiveValue[VerticalAlign[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
       
       inline def setVerticalAlignNull: Self = StObject.set(x, "verticalAlign", null)
       
       inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
       
-      inline def setVerticalAlignVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "verticalAlign", js.Array(value :_*))
+      inline def setVerticalAlignVarargs(value: (VerticalAlign[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "verticalAlign", js.Array(value*))
       
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
       
-      inline def setWidth(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Width<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: ResponsiveValue[Width[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
       inline def setWidthNull: Self = StObject.set(x, "width", null)
       
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      inline def setWidthVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Width<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "width", js.Array(value :_*))
+      inline def setWidthVarargs(value: (Width[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "width", js.Array(value*))
     }
   }
   
@@ -2354,22 +2196,17 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self)
       */
-    var alignSelf: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var alignSelf: js.UndefOr[ResponsiveValue[AlignSelf, RequiredTheme]] = js.undefined
     
     var alt: js.UndefOr[String] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
@@ -2387,21 +2224,21 @@ object mod {
     
     var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
@@ -2415,11 +2252,11 @@ object mod {
     
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
@@ -2431,13 +2268,13 @@ object mod {
     
     var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
       ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
@@ -2447,7 +2284,7 @@ object mod {
     
     var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
@@ -2461,7 +2298,7 @@ object mod {
     
     var `aria-valuetext`: js.UndefOr[String] = js.undefined
     
-    var as: js.UndefOr[ElementType[js.Any]] = js.undefined
+    var as: js.UndefOr[ElementType[Any]] = js.undefined
     
     var autoCapitalize: js.UndefOr[String] = js.undefined
     
@@ -2473,7 +2310,7 @@ object mod {
     
     var autoSave: js.UndefOr[String] = js.undefined
     
-    var backgroundColor: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var backgroundColor: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /**
       * The color utility parses a component's `color` and `bg` props and converts them into CSS declarations.
@@ -2484,9 +2321,9 @@ object mod {
       *
       * [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color)
       */
-    var bg: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var bg: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
-    var capture: js.UndefOr[Boolean | String] = js.undefined
+    var capture: js.UndefOr[Boolean | user | environment] = js.undefined
     
     var checked: js.UndefOr[Boolean] = js.undefined
     
@@ -2503,7 +2340,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
       */
-    var color: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var color: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -2511,7 +2348,9 @@ object mod {
     
     var crossOrigin: js.UndefOr[String] = js.undefined
     
-    var css: js.UndefOr[CSSObject | FlattenSimpleInterpolation | String] = js.undefined
+    var css: js.UndefOr[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StyledComponents.CSSObject */ Any) | String
+      ] = js.undefined
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
@@ -2532,12 +2371,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
       */
-    var display: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var display: js.UndefOr[ResponsiveValue[Display, RequiredTheme]] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
@@ -2549,12 +2383,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)
       */
-    var flex: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var flex: js.UndefOr[ResponsiveValue[Flex[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     /**
       * The fontSize utility parses a component's `fontSize` prop and converts it into a CSS font-size declaration.
@@ -2565,7 +2394,7 @@ object mod {
       * - And array values are converted into responsive values.
       *
       */
-    var fontSize: js.UndefOr[ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var fontSize: js.UndefOr[ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /**
       * The font-weight CSS property specifies the weight (or boldness) of the font.
@@ -2574,7 +2403,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight)
       */
-    var fontWeight: js.UndefOr[ResponsiveValue[ThemeValue[fontWeights, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var fontWeight: js.UndefOr[ResponsiveValue[ThemeValue[fontWeights, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var form: js.UndefOr[String] = js.undefined
     
@@ -2594,18 +2423,13 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/height)
       */
-    var height: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var height: js.UndefOr[ResponsiveValue[Height[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
     var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
@@ -2628,28 +2452,28 @@ object mod {
     var list: js.UndefOr[String] = js.undefined
     
     /** Margin on top, left, bottom and right */
-    var m: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var m: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top, left, bottom and right */
-    var margin: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var margin: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on bottom */
-    var marginBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on left */
-    var marginLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on right */
-    var marginRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top */
-    var marginTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on left and right */
-    var marginX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top and bottom */
-    var marginY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var max: js.UndefOr[Double | String] = js.undefined
     
@@ -2659,12 +2483,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/max-height)
       */
-    var maxHeight: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxHeight<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var maxHeight: js.UndefOr[ResponsiveValue[MaxHeight[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     var maxLength: js.UndefOr[Double] = js.undefined
     
@@ -2674,15 +2493,10 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/max-width)
       */
-    var maxWidth: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var maxWidth: js.UndefOr[ResponsiveValue[MaxWidth[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     /** Margin on bottom */
-    var mb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var mb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var min: js.UndefOr[Double | String] = js.undefined
     
@@ -2692,12 +2506,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
       */
-    var minHeight: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var minHeight: js.UndefOr[ResponsiveValue[MinHeight[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     var minLength: js.UndefOr[Double] = js.undefined
     
@@ -2707,31 +2516,28 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/min-width)
       */
-    var minWidth: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var minWidth: js.UndefOr[ResponsiveValue[MinWidth[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     /** Margin on left */
-    var ml: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var ml: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on right */
-    var mr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var mr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top */
-    var mt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var mt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var multiple: js.UndefOr[Boolean] = js.undefined
     
     /** Margin on left and right */
-    var mx: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var mx: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top and bottom */
-    var my: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var my: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var name: js.UndefOr[String] = js.undefined
+    
+    var nonce: js.UndefOr[String] = js.undefined
     
     var onAbort: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
@@ -2859,6 +2665,8 @@ object mod {
     
     var onReset: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
     
+    var onResize: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
+    
     var onScroll: js.UndefOr[UIEventHandler[HTMLInputElement]] = js.undefined
     
     var onSeeked: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
@@ -2897,12 +2705,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity)
       */
-    var opacity: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var opacity: js.UndefOr[ResponsiveValue[Opacity, RequiredTheme]] = js.undefined
     
     /**
       * The order CSS property sets the order to lay out an item in a flex or grid container. Items in a container
@@ -2910,12 +2713,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/order)
       */
-    var order: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var order: js.UndefOr[ResponsiveValue[Order, RequiredTheme]] = js.undefined
     
     /**
       * The overflow CSS property sets what to do when an element's content is too big to fit in its block
@@ -2923,12 +2721,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow)
       */
-    var overflow: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var overflow: js.UndefOr[ResponsiveValue[Overflow, RequiredTheme]] = js.undefined
     
     /**
       * The overflow-x CSS property sets what shows when content overflows a block-level element's left
@@ -2936,12 +2729,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-x)
       */
-    var overflowX: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowX */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var overflowX: js.UndefOr[ResponsiveValue[OverflowX, RequiredTheme]] = js.undefined
     
     /**
       * The overflow-y CSS property sets what shows when content overflows a block-level element's top
@@ -2949,68 +2737,63 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-y)
       */
-    var overflowY: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowY */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var overflowY: js.UndefOr[ResponsiveValue[OverflowY, RequiredTheme]] = js.undefined
     
     /** Padding on top, left, bottom and right */
-    var p: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var p: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on top, left, bottom and right */
-    var padding: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var padding: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on bottom */
-    var paddingBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on left */
-    var paddingLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on right */
-    var paddingRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on top */
-    var paddingTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on left and right */
-    var paddingX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on top and bottom */
-    var paddingY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var pattern: js.UndefOr[String] = js.undefined
     
     /** Padding on bottom */
-    var pb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var pb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on left */
-    var pl: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var pl: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var placeholder: js.UndefOr[String] = js.undefined
     
     /** Padding on right */
-    var pr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var pr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var prefix: js.UndefOr[String] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
     
     /** Padding on top */
-    var pt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var pt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on left and right */
-    var px: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var px: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on top and bottom */
-    var py: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var py: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var ref: js.UndefOr[Ref[js.Any]] = js.undefined
+    var ref: js.UndefOr[Ref[Any]] = js.undefined
     
     var required: js.UndefOr[Boolean] = js.undefined
     
@@ -3018,16 +2801,11 @@ object mod {
     
     var results: js.UndefOr[Double] = js.undefined
     
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var size: js.UndefOr[ResponsiveValue[Height[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     var slot: js.UndefOr[String] = js.undefined
     
@@ -3056,7 +2834,7 @@ object mod {
     
     var tx: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.undefined
+    var `type`: js.UndefOr[HTMLInputTypeAttribute] = js.undefined
     
     var typeof: js.UndefOr[String] = js.undefined
     
@@ -3071,12 +2849,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align)
       */
-    var verticalAlign: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var verticalAlign: js.UndefOr[ResponsiveValue[VerticalAlign[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
     
@@ -3088,12 +2861,7 @@ object mod {
       *   - String values are passed as raw CSS values.
       *   - And arrays are converted to responsive width styles.
       */
-    var width: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Width<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var width: js.UndefOr[ResponsiveValue[Width[TLengthStyledSystem], RequiredTheme]] = js.undefined
   }
   object InputProps {
     
@@ -3116,20 +2884,13 @@ object mod {
       
       inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
-      inline def setAlignSelf(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
+      inline def setAlignSelf(value: ResponsiveValue[AlignSelf, RequiredTheme]): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
       
       inline def setAlignSelfNull: Self = StObject.set(x, "alignSelf", null)
       
       inline def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
       
-      inline def setAlignSelfVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ js.Any) | Null)*
-      ): Self = StObject.set(x, "alignSelf", js.Array(value :_*))
+      inline def setAlignSelfVarargs(value: (AlignSelf | Null)*): Self = StObject.set(x, "alignSelf", js.Array(value*))
       
       inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
@@ -3139,7 +2900,7 @@ object mod {
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -3147,7 +2908,7 @@ object mod {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -3183,7 +2944,7 @@ object mod {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -3195,7 +2956,7 @@ object mod {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -3203,7 +2964,7 @@ object mod {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -3211,7 +2972,7 @@ object mod {
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
@@ -3239,15 +3000,15 @@ object mod {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -3271,7 +3032,7 @@ object mod {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -3281,7 +3042,7 @@ object mod {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -3301,7 +3062,7 @@ object mod {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -3329,7 +3090,7 @@ object mod {
       
       inline def `setAria-valuetextUndefined`: Self = StObject.set(x, "aria-valuetext", js.undefined)
       
-      inline def setAs(value: ElementType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -3353,23 +3114,23 @@ object mod {
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
       
-      inline def setBackgroundColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
       inline def setBackgroundColorNull: Self = StObject.set(x, "backgroundColor", null)
       
       inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      inline def setBackgroundColorVarargs(value: ((ThemeValue[colors, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "backgroundColor", js.Array(value :_*))
+      inline def setBackgroundColorVarargs(value: ((ThemeValue[colors, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "backgroundColor", js.Array(value*))
       
-      inline def setBg(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
+      inline def setBg(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
       
       inline def setBgNull: Self = StObject.set(x, "bg", null)
       
       inline def setBgUndefined: Self = StObject.set(x, "bg", js.undefined)
       
-      inline def setBgVarargs(value: ((ThemeValue[colors, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "bg", js.Array(value :_*))
+      inline def setBgVarargs(value: ((ThemeValue[colors, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "bg", js.Array(value*))
       
-      inline def setCapture(value: Boolean | String): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+      inline def setCapture(value: Boolean | user | environment): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
       inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       
@@ -3385,13 +3146,13 @@ object mod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorNull: Self = StObject.set(x, "color", null)
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setColorVarargs(value: ((ThemeValue[colors, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "color", js.Array(value :_*))
+      inline def setColorVarargs(value: ((ThemeValue[colors, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "color", js.Array(value*))
       
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
@@ -3405,7 +3166,9 @@ object mod {
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
-      inline def setCss(value: CSSObject | FlattenSimpleInterpolation | String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+      inline def setCss(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StyledComponents.CSSObject */ Any) | String
+      ): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
       inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
       
@@ -3425,7 +3188,7 @@ object mod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -3435,20 +3198,13 @@ object mod {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setDisplay(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+      inline def setDisplay(value: ResponsiveValue[Display, RequiredTheme]): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
       inline def setDisplayNull: Self = StObject.set(x, "display", null)
       
       inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
       
-      inline def setDisplayVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any) | Null)*
-      ): Self = StObject.set(x, "display", js.Array(value :_*))
+      inline def setDisplayVarargs(value: (Display | Null)*): Self = StObject.set(x, "display", js.Array(value*))
       
       inline def setDraggable(value: Booleanish): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
       
@@ -3458,36 +3214,29 @@ object mod {
       
       inline def setEnterKeyHintUndefined: Self = StObject.set(x, "enterKeyHint", js.undefined)
       
-      inline def setFlex(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
+      inline def setFlex(value: ResponsiveValue[Flex[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
       
       inline def setFlexNull: Self = StObject.set(x, "flex", null)
       
       inline def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
       
-      inline def setFlexVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "flex", js.Array(value :_*))
+      inline def setFlexVarargs(value: (Flex[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "flex", js.Array(value*))
       
-      inline def setFontSize(value: ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
       inline def setFontSizeNull: Self = StObject.set(x, "fontSize", null)
       
       inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
-      inline def setFontSizeVarargs(value: ((ThemeValue[fontSizes, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "fontSize", js.Array(value :_*))
+      inline def setFontSizeVarargs(value: ((ThemeValue[fontSizes, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "fontSize", js.Array(value*))
       
-      inline def setFontWeight(value: ResponsiveValue[ThemeValue[fontWeights, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+      inline def setFontWeight(value: ResponsiveValue[ThemeValue[fontWeights, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
       
       inline def setFontWeightNull: Self = StObject.set(x, "fontWeight", null)
       
       inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
       
-      inline def setFontWeightVarargs(value: ((ThemeValue[fontWeights, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "fontWeight", js.Array(value :_*))
+      inline def setFontWeightVarargs(value: ((ThemeValue[fontWeights, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "fontWeight", js.Array(value*))
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
@@ -3513,20 +3262,13 @@ object mod {
       
       inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
       
-      inline def setHeight(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: ResponsiveValue[Height[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       inline def setHeightNull: Self = StObject.set(x, "height", null)
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setHeightVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "height", js.Array(value :_*))
+      inline def setHeightVarargs(value: (Height[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "height", js.Array(value*))
       
       inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
@@ -3536,7 +3278,7 @@ object mod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -3582,86 +3324,79 @@ object mod {
       
       inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
       
-      inline def setM(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
+      inline def setM(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
       
       inline def setMNull: Self = StObject.set(x, "m", null)
       
       inline def setMUndefined: Self = StObject.set(x, "m", js.undefined)
       
-      inline def setMVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "m", js.Array(value :_*))
+      inline def setMVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "m", js.Array(value*))
       
-      inline def setMargin(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      inline def setMarginBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+      inline def setMarginBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
       
       inline def setMarginBottomNull: Self = StObject.set(x, "marginBottom", null)
       
       inline def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
       
-      inline def setMarginBottomVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginBottom", js.Array(value :_*))
+      inline def setMarginBottomVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginBottom", js.Array(value*))
       
-      inline def setMarginLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+      inline def setMarginLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
       
       inline def setMarginLeftNull: Self = StObject.set(x, "marginLeft", null)
       
       inline def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
       
-      inline def setMarginLeftVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginLeft", js.Array(value :_*))
+      inline def setMarginLeftVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginLeft", js.Array(value*))
       
       inline def setMarginNull: Self = StObject.set(x, "margin", null)
       
-      inline def setMarginRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
+      inline def setMarginRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
       
       inline def setMarginRightNull: Self = StObject.set(x, "marginRight", null)
       
       inline def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
       
-      inline def setMarginRightVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginRight", js.Array(value :_*))
+      inline def setMarginRightVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginRight", js.Array(value*))
       
-      inline def setMarginTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+      inline def setMarginTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
       
       inline def setMarginTopNull: Self = StObject.set(x, "marginTop", null)
       
       inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
       
-      inline def setMarginTopVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginTop", js.Array(value :_*))
+      inline def setMarginTopVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginTop", js.Array(value*))
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      inline def setMarginVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "margin", js.Array(value :_*))
+      inline def setMarginVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "margin", js.Array(value*))
       
-      inline def setMarginX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginX", value.asInstanceOf[js.Any])
+      inline def setMarginX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginX", value.asInstanceOf[js.Any])
       
       inline def setMarginXNull: Self = StObject.set(x, "marginX", null)
       
       inline def setMarginXUndefined: Self = StObject.set(x, "marginX", js.undefined)
       
-      inline def setMarginXVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginX", js.Array(value :_*))
+      inline def setMarginXVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginX", js.Array(value*))
       
-      inline def setMarginY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginY", value.asInstanceOf[js.Any])
+      inline def setMarginY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginY", value.asInstanceOf[js.Any])
       
       inline def setMarginYNull: Self = StObject.set(x, "marginY", null)
       
       inline def setMarginYUndefined: Self = StObject.set(x, "marginY", js.undefined)
       
-      inline def setMarginYVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginY", js.Array(value :_*))
+      inline def setMarginYVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginY", js.Array(value*))
       
       inline def setMax(value: Double | String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      inline def setMaxHeight(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxHeight<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMaxHeight(value: ResponsiveValue[MaxHeight[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
       inline def setMaxHeightNull: Self = StObject.set(x, "maxHeight", null)
       
       inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
       
-      inline def setMaxHeightVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxHeight<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "maxHeight", js.Array(value :_*))
+      inline def setMaxHeightVarargs(value: (MaxHeight[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "maxHeight", js.Array(value*))
       
       inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
       
@@ -3669,45 +3404,31 @@ object mod {
       
       inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      inline def setMaxWidth(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: ResponsiveValue[MaxWidth[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
       inline def setMaxWidthNull: Self = StObject.set(x, "maxWidth", null)
       
       inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      inline def setMaxWidthVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "maxWidth", js.Array(value :_*))
+      inline def setMaxWidthVarargs(value: (MaxWidth[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "maxWidth", js.Array(value*))
       
-      inline def setMb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
+      inline def setMb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
       
       inline def setMbNull: Self = StObject.set(x, "mb", null)
       
       inline def setMbUndefined: Self = StObject.set(x, "mb", js.undefined)
       
-      inline def setMbVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "mb", js.Array(value :_*))
+      inline def setMbVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "mb", js.Array(value*))
       
       inline def setMin(value: Double | String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      inline def setMinHeight(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+      inline def setMinHeight(value: ResponsiveValue[MinHeight[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
       
       inline def setMinHeightNull: Self = StObject.set(x, "minHeight", null)
       
       inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
       
-      inline def setMinHeightVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "minHeight", js.Array(value :_*))
+      inline def setMinHeightVarargs(value: (MinHeight[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "minHeight", js.Array(value*))
       
       inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
       
@@ -3715,68 +3436,65 @@ object mod {
       
       inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      inline def setMinWidth(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+      inline def setMinWidth(value: ResponsiveValue[MinWidth[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
       
       inline def setMinWidthNull: Self = StObject.set(x, "minWidth", null)
       
       inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
       
-      inline def setMinWidthVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "minWidth", js.Array(value :_*))
+      inline def setMinWidthVarargs(value: (MinWidth[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "minWidth", js.Array(value*))
       
-      inline def setMl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
+      inline def setMl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
       
       inline def setMlNull: Self = StObject.set(x, "ml", null)
       
       inline def setMlUndefined: Self = StObject.set(x, "ml", js.undefined)
       
-      inline def setMlVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "ml", js.Array(value :_*))
+      inline def setMlVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "ml", js.Array(value*))
       
-      inline def setMr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mr", value.asInstanceOf[js.Any])
+      inline def setMr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "mr", value.asInstanceOf[js.Any])
       
       inline def setMrNull: Self = StObject.set(x, "mr", null)
       
       inline def setMrUndefined: Self = StObject.set(x, "mr", js.undefined)
       
-      inline def setMrVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "mr", js.Array(value :_*))
+      inline def setMrVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "mr", js.Array(value*))
       
-      inline def setMt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
+      inline def setMt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
       
       inline def setMtNull: Self = StObject.set(x, "mt", null)
       
       inline def setMtUndefined: Self = StObject.set(x, "mt", js.undefined)
       
-      inline def setMtVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "mt", js.Array(value :_*))
+      inline def setMtVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "mt", js.Array(value*))
       
       inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       
       inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
       
-      inline def setMx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mx", value.asInstanceOf[js.Any])
+      inline def setMx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "mx", value.asInstanceOf[js.Any])
       
       inline def setMxNull: Self = StObject.set(x, "mx", null)
       
       inline def setMxUndefined: Self = StObject.set(x, "mx", js.undefined)
       
-      inline def setMxVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "mx", js.Array(value :_*))
+      inline def setMxVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "mx", js.Array(value*))
       
-      inline def setMy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
+      inline def setMy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
       
       inline def setMyNull: Self = StObject.set(x, "my", null)
       
       inline def setMyUndefined: Self = StObject.set(x, "my", js.undefined)
       
-      inline def setMyVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "my", js.Array(value :_*))
+      inline def setMyVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "my", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setOnAbort(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       
@@ -3802,7 +3520,7 @@ object mod {
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -3902,7 +3620,7 @@ object mod {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -4030,6 +3748,10 @@ object mod {
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
+      inline def setOnResize(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+      
       inline def setOnScroll(value: UIEvent[HTMLInputElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
@@ -4094,176 +3816,141 @@ object mod {
       
       inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
       
-      inline def setOpacity(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: ResponsiveValue[Opacity, RequiredTheme]): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
       inline def setOpacityNull: Self = StObject.set(x, "opacity", null)
       
       inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      inline def setOpacityVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ js.Any) | Null)*
-      ): Self = StObject.set(x, "opacity", js.Array(value :_*))
+      inline def setOpacityVarargs(value: (Opacity | Null)*): Self = StObject.set(x, "opacity", js.Array(value*))
       
-      inline def setOrder(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: ResponsiveValue[Order, RequiredTheme]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
       inline def setOrderNull: Self = StObject.set(x, "order", null)
       
       inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      inline def setOrderVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ js.Any) | Null)*
-      ): Self = StObject.set(x, "order", js.Array(value :_*))
+      inline def setOrderVarargs(value: (Order | Null)*): Self = StObject.set(x, "order", js.Array(value*))
       
-      inline def setOverflow(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+      inline def setOverflow(value: ResponsiveValue[Overflow, RequiredTheme]): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
       
       inline def setOverflowNull: Self = StObject.set(x, "overflow", null)
       
       inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
       
-      inline def setOverflowVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any) | Null)*
-      ): Self = StObject.set(x, "overflow", js.Array(value :_*))
+      inline def setOverflowVarargs(value: (Overflow | Null)*): Self = StObject.set(x, "overflow", js.Array(value*))
       
-      inline def setOverflowX(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowX */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "overflowX", value.asInstanceOf[js.Any])
+      inline def setOverflowX(value: ResponsiveValue[OverflowX, RequiredTheme]): Self = StObject.set(x, "overflowX", value.asInstanceOf[js.Any])
       
       inline def setOverflowXNull: Self = StObject.set(x, "overflowX", null)
       
       inline def setOverflowXUndefined: Self = StObject.set(x, "overflowX", js.undefined)
       
-      inline def setOverflowXVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowX */ js.Any) | Null)*
-      ): Self = StObject.set(x, "overflowX", js.Array(value :_*))
+      inline def setOverflowXVarargs(value: (OverflowX | Null)*): Self = StObject.set(x, "overflowX", js.Array(value*))
       
-      inline def setOverflowY(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowY */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "overflowY", value.asInstanceOf[js.Any])
+      inline def setOverflowY(value: ResponsiveValue[OverflowY, RequiredTheme]): Self = StObject.set(x, "overflowY", value.asInstanceOf[js.Any])
       
       inline def setOverflowYNull: Self = StObject.set(x, "overflowY", null)
       
       inline def setOverflowYUndefined: Self = StObject.set(x, "overflowY", js.undefined)
       
-      inline def setOverflowYVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowY */ js.Any) | Null)*
-      ): Self = StObject.set(x, "overflowY", js.Array(value :_*))
+      inline def setOverflowYVarargs(value: (OverflowY | Null)*): Self = StObject.set(x, "overflowY", js.Array(value*))
       
-      inline def setP(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+      inline def setP(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
       
       inline def setPNull: Self = StObject.set(x, "p", null)
       
       inline def setPUndefined: Self = StObject.set(x, "p", js.undefined)
       
-      inline def setPVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "p", js.Array(value :_*))
+      inline def setPVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "p", js.Array(value*))
       
-      inline def setPadding(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      inline def setPaddingBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
+      inline def setPaddingBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
       
       inline def setPaddingBottomNull: Self = StObject.set(x, "paddingBottom", null)
       
       inline def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
       
-      inline def setPaddingBottomVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingBottom", js.Array(value :_*))
+      inline def setPaddingBottomVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingBottom", js.Array(value*))
       
-      inline def setPaddingLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
+      inline def setPaddingLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
       
       inline def setPaddingLeftNull: Self = StObject.set(x, "paddingLeft", null)
       
       inline def setPaddingLeftUndefined: Self = StObject.set(x, "paddingLeft", js.undefined)
       
-      inline def setPaddingLeftVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingLeft", js.Array(value :_*))
+      inline def setPaddingLeftVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingLeft", js.Array(value*))
       
       inline def setPaddingNull: Self = StObject.set(x, "padding", null)
       
-      inline def setPaddingRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
+      inline def setPaddingRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
       
       inline def setPaddingRightNull: Self = StObject.set(x, "paddingRight", null)
       
       inline def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
       
-      inline def setPaddingRightVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingRight", js.Array(value :_*))
+      inline def setPaddingRightVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingRight", js.Array(value*))
       
-      inline def setPaddingTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
+      inline def setPaddingTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
       
       inline def setPaddingTopNull: Self = StObject.set(x, "paddingTop", null)
       
       inline def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
       
-      inline def setPaddingTopVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingTop", js.Array(value :_*))
+      inline def setPaddingTopVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingTop", js.Array(value*))
       
       inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      inline def setPaddingVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "padding", js.Array(value :_*))
+      inline def setPaddingVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "padding", js.Array(value*))
       
-      inline def setPaddingX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
+      inline def setPaddingX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
       
       inline def setPaddingXNull: Self = StObject.set(x, "paddingX", null)
       
       inline def setPaddingXUndefined: Self = StObject.set(x, "paddingX", js.undefined)
       
-      inline def setPaddingXVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingX", js.Array(value :_*))
+      inline def setPaddingXVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingX", js.Array(value*))
       
-      inline def setPaddingY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
+      inline def setPaddingY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
       
       inline def setPaddingYNull: Self = StObject.set(x, "paddingY", null)
       
       inline def setPaddingYUndefined: Self = StObject.set(x, "paddingY", js.undefined)
       
-      inline def setPaddingYVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingY", js.Array(value :_*))
+      inline def setPaddingYVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingY", js.Array(value*))
       
       inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
       inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
       
-      inline def setPb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pb", value.asInstanceOf[js.Any])
+      inline def setPb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "pb", value.asInstanceOf[js.Any])
       
       inline def setPbNull: Self = StObject.set(x, "pb", null)
       
       inline def setPbUndefined: Self = StObject.set(x, "pb", js.undefined)
       
-      inline def setPbVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "pb", js.Array(value :_*))
+      inline def setPbVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "pb", js.Array(value*))
       
-      inline def setPl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
+      inline def setPl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
       
       inline def setPlNull: Self = StObject.set(x, "pl", null)
       
       inline def setPlUndefined: Self = StObject.set(x, "pl", js.undefined)
       
-      inline def setPlVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "pl", js.Array(value :_*))
+      inline def setPlVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "pl", js.Array(value*))
       
       inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      inline def setPr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
+      inline def setPr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
       
       inline def setPrNull: Self = StObject.set(x, "pr", null)
       
       inline def setPrUndefined: Self = StObject.set(x, "pr", js.undefined)
       
-      inline def setPrVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "pr", js.Array(value :_*))
+      inline def setPrVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "pr", js.Array(value*))
       
       inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
@@ -4273,29 +3960,29 @@ object mod {
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
       
-      inline def setPt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+      inline def setPt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
       
       inline def setPtNull: Self = StObject.set(x, "pt", null)
       
       inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
       
-      inline def setPtVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "pt", js.Array(value :_*))
+      inline def setPtVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "pt", js.Array(value*))
       
-      inline def setPx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
+      inline def setPx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
       
       inline def setPxNull: Self = StObject.set(x, "px", null)
       
       inline def setPxUndefined: Self = StObject.set(x, "px", js.undefined)
       
-      inline def setPxVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "px", js.Array(value :_*))
+      inline def setPxVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "px", js.Array(value*))
       
-      inline def setPy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "py", value.asInstanceOf[js.Any])
+      inline def setPy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "py", value.asInstanceOf[js.Any])
       
       inline def setPyNull: Self = StObject.set(x, "py", null)
       
       inline def setPyUndefined: Self = StObject.set(x, "py", js.undefined)
       
-      inline def setPyVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "py", js.Array(value :_*))
+      inline def setPyVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "py", js.Array(value*))
       
       inline def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
       
@@ -4305,9 +3992,9 @@ object mod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
-      inline def setRef(value: Ref[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: Ref[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      inline def setRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      inline def setRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
       inline def setRefNull: Self = StObject.set(x, "ref", null)
       
@@ -4325,7 +4012,7 @@ object mod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
@@ -4333,20 +4020,13 @@ object mod {
       
       inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
       
-      inline def setSize(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: ResponsiveValue[Height[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeNull: Self = StObject.set(x, "size", null)
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setSizeVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "size", js.Array(value :_*))
+      inline def setSizeVarargs(value: (Height[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "size", js.Array(value*))
       
       inline def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
       
@@ -4378,8 +4058,6 @@ object mod {
       
       inline def setSx(value: SxStyleProp): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
       
-      inline def setSxNull: Self = StObject.set(x, "sx", null)
-      
       inline def setSxUndefined: Self = StObject.set(x, "sx", js.undefined)
       
       inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
@@ -4398,7 +4076,7 @@ object mod {
       
       inline def setTxUndefined: Self = StObject.set(x, "tx", js.undefined)
       
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: HTMLInputTypeAttribute): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
@@ -4414,7 +4092,7 @@ object mod {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
       
       inline def setVariant(value: ResponsiveValue[String, RequiredTheme]): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
       
@@ -4422,41 +4100,27 @@ object mod {
       
       inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
       
-      inline def setVariantVarargs(value: (String | Null)*): Self = StObject.set(x, "variant", js.Array(value :_*))
+      inline def setVariantVarargs(value: (String | Null)*): Self = StObject.set(x, "variant", js.Array(value*))
       
-      inline def setVerticalAlign(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+      inline def setVerticalAlign(value: ResponsiveValue[VerticalAlign[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
       
       inline def setVerticalAlignNull: Self = StObject.set(x, "verticalAlign", null)
       
       inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
       
-      inline def setVerticalAlignVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "verticalAlign", js.Array(value :_*))
+      inline def setVerticalAlignVarargs(value: (VerticalAlign[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "verticalAlign", js.Array(value*))
       
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
       
-      inline def setWidth(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Width<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: ResponsiveValue[Width[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
       inline def setWidthNull: Self = StObject.set(x, "width", null)
       
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      inline def setWidthVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Width<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "width", js.Array(value :_*))
+      inline def setWidthVarargs(value: (Width[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "width", js.Array(value*))
     }
   }
   
@@ -4492,12 +4156,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)
       */
-    var alignItems: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignItems */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var alignItems: js.UndefOr[ResponsiveValue[AlignItems, RequiredTheme]] = js.undefined
     
     /**
       * The align-self CSS property aligns flex items of the current flex line overriding the align-items value.
@@ -4507,20 +4166,15 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self)
       */
-    var alignSelf: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var alignSelf: js.UndefOr[ResponsiveValue[AlignSelf, RequiredTheme]] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
@@ -4538,21 +4192,21 @@ object mod {
     
     var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
@@ -4566,11 +4220,11 @@ object mod {
     
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
@@ -4582,13 +4236,13 @@ object mod {
     
     var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
       ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
@@ -4598,7 +4252,7 @@ object mod {
     
     var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
@@ -4612,7 +4266,7 @@ object mod {
     
     var `aria-valuetext`: js.UndefOr[String] = js.undefined
     
-    var as: js.UndefOr[ElementType[js.Any]] = js.undefined
+    var as: js.UndefOr[ElementType[Any]] = js.undefined
     
     var autoCapitalize: js.UndefOr[String] = js.undefined
     
@@ -4620,7 +4274,7 @@ object mod {
     
     var autoSave: js.UndefOr[String] = js.undefined
     
-    var backgroundColor: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var backgroundColor: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /**
       * The color utility parses a component's `color` and `bg` props and converts them into CSS declarations.
@@ -4631,7 +4285,7 @@ object mod {
       *
       * [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color)
       */
-    var bg: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var bg: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var children: js.UndefOr[ReactNode] = js.undefined
     
@@ -4646,13 +4300,15 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
       */
-    var color: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var color: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
-    var css: js.UndefOr[CSSObject | FlattenSimpleInterpolation | String] = js.undefined
+    var css: js.UndefOr[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StyledComponents.CSSObject */ Any) | String
+      ] = js.undefined
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
@@ -4671,12 +4327,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
       */
-    var display: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var display: js.UndefOr[ResponsiveValue[Display, RequiredTheme]] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
@@ -4686,12 +4337,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)
       */
-    var flex: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var flex: js.UndefOr[ResponsiveValue[Flex[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     /**
       * The flex-direction CSS property specifies how flex items are placed in the flex container defining the main
@@ -4699,12 +4345,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction)
       */
-    var flexDirection: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexDirection */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var flexDirection: js.UndefOr[ResponsiveValue[FlexDirection, RequiredTheme]] = js.undefined
     
     /**
       * The flex-wrap CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines.
@@ -4712,12 +4353,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap)
       */
-    var flexWrap: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexWrap */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var flexWrap: js.UndefOr[ResponsiveValue[FlexWrap, RequiredTheme]] = js.undefined
     
     /**
       * The fontSize utility parses a component's `fontSize` prop and converts it into a CSS font-size declaration.
@@ -4728,7 +4364,7 @@ object mod {
       * - And array values are converted into responsive values.
       *
       */
-    var fontSize: js.UndefOr[ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var fontSize: js.UndefOr[ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /**
       * The font-weight CSS property specifies the weight (or boldness) of the font.
@@ -4737,7 +4373,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight)
       */
-    var fontWeight: js.UndefOr[ResponsiveValue[ThemeValue[fontWeights, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var fontWeight: js.UndefOr[ResponsiveValue[ThemeValue[fontWeights, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var form: js.UndefOr[String] = js.undefined
     
@@ -4747,12 +4383,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/height)
       */
-    var height: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var height: js.UndefOr[ResponsiveValue[Height[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
@@ -4760,7 +4391,7 @@ object mod {
     
     var id: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
     var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
@@ -4782,40 +4413,35 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content)
       */
-    var justifyContent: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyContent */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var justifyContent: js.UndefOr[ResponsiveValue[JustifyContent, RequiredTheme]] = js.undefined
     
     var key: js.UndefOr[Key | Null] = js.undefined
     
     var lang: js.UndefOr[String] = js.undefined
     
     /** Margin on top, left, bottom and right */
-    var m: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var m: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top, left, bottom and right */
-    var margin: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var margin: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on bottom */
-    var marginBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on left */
-    var marginLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on right */
-    var marginRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top */
-    var marginTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on left and right */
-    var marginX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top and bottom */
-    var marginY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /**
       * The max-height CSS property sets the maximum height of an element. It prevents the used value of the height
@@ -4823,12 +4449,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/max-height)
       */
-    var maxHeight: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxHeight<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var maxHeight: js.UndefOr[ResponsiveValue[MaxHeight[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     /**
       * The max-width CSS property sets the maximum width of an element.
@@ -4836,15 +4457,10 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/max-width)
       */
-    var maxWidth: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var maxWidth: js.UndefOr[ResponsiveValue[MaxWidth[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     /** Margin on bottom */
-    var mb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var mb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /**
       * The min-height CSS property sets the minimum height of an element. It prevents the used value of the height
@@ -4852,12 +4468,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
       */
-    var minHeight: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var minHeight: js.UndefOr[ResponsiveValue[MinHeight[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     /**
       * The min-width CSS property sets the minimum width of an element.
@@ -4865,27 +4476,24 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/min-width)
       */
-    var minWidth: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var minWidth: js.UndefOr[ResponsiveValue[MinWidth[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     /** Margin on left */
-    var ml: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var ml: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on right */
-    var mr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var mr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top */
-    var mt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var mt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on left and right */
-    var mx: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var mx: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top and bottom */
-    var my: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var my: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
+    
+    var nonce: js.UndefOr[String] = js.undefined
     
     var onAbort: js.UndefOr[ReactEventHandler[HTMLLabelElement]] = js.undefined
     
@@ -5013,6 +4621,8 @@ object mod {
     
     var onReset: js.UndefOr[FormEventHandler[HTMLLabelElement]] = js.undefined
     
+    var onResize: js.UndefOr[ReactEventHandler[HTMLLabelElement]] = js.undefined
+    
     var onScroll: js.UndefOr[UIEventHandler[HTMLLabelElement]] = js.undefined
     
     var onSeeked: js.UndefOr[ReactEventHandler[HTMLLabelElement]] = js.undefined
@@ -5051,12 +4661,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity)
       */
-    var opacity: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var opacity: js.UndefOr[ResponsiveValue[Opacity, RequiredTheme]] = js.undefined
     
     /**
       * The order CSS property sets the order to lay out an item in a flex or grid container. Items in a container
@@ -5064,12 +4669,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/order)
       */
-    var order: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var order: js.UndefOr[ResponsiveValue[Order, RequiredTheme]] = js.undefined
     
     /**
       * The overflow CSS property sets what to do when an element's content is too big to fit in its block
@@ -5077,12 +4677,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow)
       */
-    var overflow: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var overflow: js.UndefOr[ResponsiveValue[Overflow, RequiredTheme]] = js.undefined
     
     /**
       * The overflow-x CSS property sets what shows when content overflows a block-level element's left
@@ -5090,12 +4685,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-x)
       */
-    var overflowX: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowX */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var overflowX: js.UndefOr[ResponsiveValue[OverflowX, RequiredTheme]] = js.undefined
     
     /**
       * The overflow-y CSS property sets what shows when content overflows a block-level element's top
@@ -5103,79 +4693,69 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-y)
       */
-    var overflowY: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowY */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var overflowY: js.UndefOr[ResponsiveValue[OverflowY, RequiredTheme]] = js.undefined
     
     /** Padding on top, left, bottom and right */
-    var p: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var p: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on top, left, bottom and right */
-    var padding: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var padding: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on bottom */
-    var paddingBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on left */
-    var paddingLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on right */
-    var paddingRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on top */
-    var paddingTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on left and right */
-    var paddingX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on top and bottom */
-    var paddingY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on bottom */
-    var pb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var pb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on left */
-    var pl: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var pl: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var placeholder: js.UndefOr[String] = js.undefined
     
     /** Padding on right */
-    var pr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var pr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var prefix: js.UndefOr[String] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
     
     /** Padding on top */
-    var pt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var pt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on left and right */
-    var px: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var px: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on top and bottom */
-    var py: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var py: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
-    var ref: js.UndefOr[Ref[js.Any]] = js.undefined
+    var ref: js.UndefOr[Ref[Any]] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
     
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var size: js.UndefOr[ResponsiveValue[Height[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     var slot: js.UndefOr[String] = js.undefined
     
@@ -5211,12 +4791,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align)
       */
-    var verticalAlign: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var verticalAlign: js.UndefOr[ResponsiveValue[VerticalAlign[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
     
@@ -5228,12 +4803,7 @@ object mod {
       *   - String values are passed as raw CSS values.
       *   - And arrays are converted to responsive width styles.
       */
-    var width: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Width<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var width: js.UndefOr[ResponsiveValue[Width[TLengthStyledSystem], RequiredTheme]] = js.undefined
   }
   object LabelProps {
     
@@ -5252,41 +4822,27 @@ object mod {
       
       inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
-      inline def setAlignItems(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignItems */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
+      inline def setAlignItems(value: ResponsiveValue[AlignItems, RequiredTheme]): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
       
       inline def setAlignItemsNull: Self = StObject.set(x, "alignItems", null)
       
       inline def setAlignItemsUndefined: Self = StObject.set(x, "alignItems", js.undefined)
       
-      inline def setAlignItemsVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignItems */ js.Any) | Null)*
-      ): Self = StObject.set(x, "alignItems", js.Array(value :_*))
+      inline def setAlignItemsVarargs(value: (AlignItems | Null)*): Self = StObject.set(x, "alignItems", js.Array(value*))
       
-      inline def setAlignSelf(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
+      inline def setAlignSelf(value: ResponsiveValue[AlignSelf, RequiredTheme]): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
       
       inline def setAlignSelfNull: Self = StObject.set(x, "alignSelf", null)
       
       inline def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
       
-      inline def setAlignSelfVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ js.Any) | Null)*
-      ): Self = StObject.set(x, "alignSelf", js.Array(value :_*))
+      inline def setAlignSelfVarargs(value: (AlignSelf | Null)*): Self = StObject.set(x, "alignSelf", js.Array(value*))
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -5294,7 +4850,7 @@ object mod {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -5330,7 +4886,7 @@ object mod {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -5342,7 +4898,7 @@ object mod {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -5350,7 +4906,7 @@ object mod {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -5358,7 +4914,7 @@ object mod {
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
@@ -5386,15 +4942,15 @@ object mod {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -5418,7 +4974,7 @@ object mod {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -5428,7 +4984,7 @@ object mod {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -5448,7 +5004,7 @@ object mod {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -5476,7 +5032,7 @@ object mod {
       
       inline def `setAria-valuetextUndefined`: Self = StObject.set(x, "aria-valuetext", js.undefined)
       
-      inline def setAs(value: ElementType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -5492,21 +5048,21 @@ object mod {
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
       
-      inline def setBackgroundColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
       inline def setBackgroundColorNull: Self = StObject.set(x, "backgroundColor", null)
       
       inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      inline def setBackgroundColorVarargs(value: ((ThemeValue[colors, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "backgroundColor", js.Array(value :_*))
+      inline def setBackgroundColorVarargs(value: ((ThemeValue[colors, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "backgroundColor", js.Array(value*))
       
-      inline def setBg(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
+      inline def setBg(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
       
       inline def setBgNull: Self = StObject.set(x, "bg", null)
       
       inline def setBgUndefined: Self = StObject.set(x, "bg", js.undefined)
       
-      inline def setBgVarargs(value: ((ThemeValue[colors, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "bg", js.Array(value :_*))
+      inline def setBgVarargs(value: ((ThemeValue[colors, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "bg", js.Array(value*))
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -5516,13 +5072,13 @@ object mod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorNull: Self = StObject.set(x, "color", null)
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setColorVarargs(value: ((ThemeValue[colors, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "color", js.Array(value :_*))
+      inline def setColorVarargs(value: ((ThemeValue[colors, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "color", js.Array(value*))
       
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
@@ -5532,7 +5088,9 @@ object mod {
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
-      inline def setCss(value: CSSObject | FlattenSimpleInterpolation | String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+      inline def setCss(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StyledComponents.CSSObject */ Any) | String
+      ): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
       inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
       
@@ -5552,110 +5110,75 @@ object mod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
       inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
       
-      inline def setDisplay(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+      inline def setDisplay(value: ResponsiveValue[Display, RequiredTheme]): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
       inline def setDisplayNull: Self = StObject.set(x, "display", null)
       
       inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
       
-      inline def setDisplayVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any) | Null)*
-      ): Self = StObject.set(x, "display", js.Array(value :_*))
+      inline def setDisplayVarargs(value: (Display | Null)*): Self = StObject.set(x, "display", js.Array(value*))
       
       inline def setDraggable(value: Booleanish): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
       
       inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
       
-      inline def setFlex(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
+      inline def setFlex(value: ResponsiveValue[Flex[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
       
-      inline def setFlexDirection(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexDirection */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
+      inline def setFlexDirection(value: ResponsiveValue[FlexDirection, RequiredTheme]): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
       
       inline def setFlexDirectionNull: Self = StObject.set(x, "flexDirection", null)
       
       inline def setFlexDirectionUndefined: Self = StObject.set(x, "flexDirection", js.undefined)
       
-      inline def setFlexDirectionVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexDirection */ js.Any) | Null)*
-      ): Self = StObject.set(x, "flexDirection", js.Array(value :_*))
+      inline def setFlexDirectionVarargs(value: (FlexDirection | Null)*): Self = StObject.set(x, "flexDirection", js.Array(value*))
       
       inline def setFlexNull: Self = StObject.set(x, "flex", null)
       
       inline def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
       
-      inline def setFlexVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "flex", js.Array(value :_*))
+      inline def setFlexVarargs(value: (Flex[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "flex", js.Array(value*))
       
-      inline def setFlexWrap(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexWrap */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "flexWrap", value.asInstanceOf[js.Any])
+      inline def setFlexWrap(value: ResponsiveValue[FlexWrap, RequiredTheme]): Self = StObject.set(x, "flexWrap", value.asInstanceOf[js.Any])
       
       inline def setFlexWrapNull: Self = StObject.set(x, "flexWrap", null)
       
       inline def setFlexWrapUndefined: Self = StObject.set(x, "flexWrap", js.undefined)
       
-      inline def setFlexWrapVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexWrap */ js.Any) | Null)*
-      ): Self = StObject.set(x, "flexWrap", js.Array(value :_*))
+      inline def setFlexWrapVarargs(value: (FlexWrap | Null)*): Self = StObject.set(x, "flexWrap", js.Array(value*))
       
-      inline def setFontSize(value: ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
       inline def setFontSizeNull: Self = StObject.set(x, "fontSize", null)
       
       inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
-      inline def setFontSizeVarargs(value: ((ThemeValue[fontSizes, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "fontSize", js.Array(value :_*))
+      inline def setFontSizeVarargs(value: ((ThemeValue[fontSizes, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "fontSize", js.Array(value*))
       
-      inline def setFontWeight(value: ResponsiveValue[ThemeValue[fontWeights, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+      inline def setFontWeight(value: ResponsiveValue[ThemeValue[fontWeights, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
       
       inline def setFontWeightNull: Self = StObject.set(x, "fontWeight", null)
       
       inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
       
-      inline def setFontWeightVarargs(value: ((ThemeValue[fontWeights, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "fontWeight", js.Array(value :_*))
+      inline def setFontWeightVarargs(value: ((ThemeValue[fontWeights, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "fontWeight", js.Array(value*))
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
       inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
       
-      inline def setHeight(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: ResponsiveValue[Height[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       inline def setHeightNull: Self = StObject.set(x, "height", null)
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setHeightVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "height", js.Array(value :_*))
+      inline def setHeightVarargs(value: (Height[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "height", js.Array(value*))
       
       inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
@@ -5669,7 +5192,7 @@ object mod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -5701,20 +5224,13 @@ object mod {
       
       inline def setItemTypeUndefined: Self = StObject.set(x, "itemType", js.undefined)
       
-      inline def setJustifyContent(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyContent */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
+      inline def setJustifyContent(value: ResponsiveValue[JustifyContent, RequiredTheme]): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
       
       inline def setJustifyContentNull: Self = StObject.set(x, "justifyContent", null)
       
       inline def setJustifyContentUndefined: Self = StObject.set(x, "justifyContent", js.undefined)
       
-      inline def setJustifyContentVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyContent */ js.Any) | Null)*
-      ): Self = StObject.set(x, "justifyContent", js.Array(value :_*))
+      inline def setJustifyContentVarargs(value: (JustifyContent | Null)*): Self = StObject.set(x, "justifyContent", js.Array(value*))
       
       inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -5726,177 +5242,153 @@ object mod {
       
       inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
-      inline def setM(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
+      inline def setM(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
       
       inline def setMNull: Self = StObject.set(x, "m", null)
       
       inline def setMUndefined: Self = StObject.set(x, "m", js.undefined)
       
-      inline def setMVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "m", js.Array(value :_*))
+      inline def setMVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "m", js.Array(value*))
       
-      inline def setMargin(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      inline def setMarginBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+      inline def setMarginBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
       
       inline def setMarginBottomNull: Self = StObject.set(x, "marginBottom", null)
       
       inline def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
       
-      inline def setMarginBottomVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginBottom", js.Array(value :_*))
+      inline def setMarginBottomVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginBottom", js.Array(value*))
       
-      inline def setMarginLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+      inline def setMarginLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
       
       inline def setMarginLeftNull: Self = StObject.set(x, "marginLeft", null)
       
       inline def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
       
-      inline def setMarginLeftVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginLeft", js.Array(value :_*))
+      inline def setMarginLeftVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginLeft", js.Array(value*))
       
       inline def setMarginNull: Self = StObject.set(x, "margin", null)
       
-      inline def setMarginRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
+      inline def setMarginRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
       
       inline def setMarginRightNull: Self = StObject.set(x, "marginRight", null)
       
       inline def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
       
-      inline def setMarginRightVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginRight", js.Array(value :_*))
+      inline def setMarginRightVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginRight", js.Array(value*))
       
-      inline def setMarginTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+      inline def setMarginTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
       
       inline def setMarginTopNull: Self = StObject.set(x, "marginTop", null)
       
       inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
       
-      inline def setMarginTopVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginTop", js.Array(value :_*))
+      inline def setMarginTopVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginTop", js.Array(value*))
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      inline def setMarginVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "margin", js.Array(value :_*))
+      inline def setMarginVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "margin", js.Array(value*))
       
-      inline def setMarginX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginX", value.asInstanceOf[js.Any])
+      inline def setMarginX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginX", value.asInstanceOf[js.Any])
       
       inline def setMarginXNull: Self = StObject.set(x, "marginX", null)
       
       inline def setMarginXUndefined: Self = StObject.set(x, "marginX", js.undefined)
       
-      inline def setMarginXVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginX", js.Array(value :_*))
+      inline def setMarginXVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginX", js.Array(value*))
       
-      inline def setMarginY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginY", value.asInstanceOf[js.Any])
+      inline def setMarginY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginY", value.asInstanceOf[js.Any])
       
       inline def setMarginYNull: Self = StObject.set(x, "marginY", null)
       
       inline def setMarginYUndefined: Self = StObject.set(x, "marginY", js.undefined)
       
-      inline def setMarginYVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginY", js.Array(value :_*))
+      inline def setMarginYVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginY", js.Array(value*))
       
-      inline def setMaxHeight(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxHeight<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMaxHeight(value: ResponsiveValue[MaxHeight[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
       inline def setMaxHeightNull: Self = StObject.set(x, "maxHeight", null)
       
       inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
       
-      inline def setMaxHeightVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxHeight<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "maxHeight", js.Array(value :_*))
+      inline def setMaxHeightVarargs(value: (MaxHeight[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "maxHeight", js.Array(value*))
       
-      inline def setMaxWidth(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: ResponsiveValue[MaxWidth[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
       inline def setMaxWidthNull: Self = StObject.set(x, "maxWidth", null)
       
       inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      inline def setMaxWidthVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "maxWidth", js.Array(value :_*))
+      inline def setMaxWidthVarargs(value: (MaxWidth[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "maxWidth", js.Array(value*))
       
-      inline def setMb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
+      inline def setMb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
       
       inline def setMbNull: Self = StObject.set(x, "mb", null)
       
       inline def setMbUndefined: Self = StObject.set(x, "mb", js.undefined)
       
-      inline def setMbVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "mb", js.Array(value :_*))
+      inline def setMbVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "mb", js.Array(value*))
       
-      inline def setMinHeight(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+      inline def setMinHeight(value: ResponsiveValue[MinHeight[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
       
       inline def setMinHeightNull: Self = StObject.set(x, "minHeight", null)
       
       inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
       
-      inline def setMinHeightVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "minHeight", js.Array(value :_*))
+      inline def setMinHeightVarargs(value: (MinHeight[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "minHeight", js.Array(value*))
       
-      inline def setMinWidth(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+      inline def setMinWidth(value: ResponsiveValue[MinWidth[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
       
       inline def setMinWidthNull: Self = StObject.set(x, "minWidth", null)
       
       inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
       
-      inline def setMinWidthVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "minWidth", js.Array(value :_*))
+      inline def setMinWidthVarargs(value: (MinWidth[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "minWidth", js.Array(value*))
       
-      inline def setMl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
+      inline def setMl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
       
       inline def setMlNull: Self = StObject.set(x, "ml", null)
       
       inline def setMlUndefined: Self = StObject.set(x, "ml", js.undefined)
       
-      inline def setMlVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "ml", js.Array(value :_*))
+      inline def setMlVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "ml", js.Array(value*))
       
-      inline def setMr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mr", value.asInstanceOf[js.Any])
+      inline def setMr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "mr", value.asInstanceOf[js.Any])
       
       inline def setMrNull: Self = StObject.set(x, "mr", null)
       
       inline def setMrUndefined: Self = StObject.set(x, "mr", js.undefined)
       
-      inline def setMrVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "mr", js.Array(value :_*))
+      inline def setMrVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "mr", js.Array(value*))
       
-      inline def setMt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
+      inline def setMt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
       
       inline def setMtNull: Self = StObject.set(x, "mt", null)
       
       inline def setMtUndefined: Self = StObject.set(x, "mt", js.undefined)
       
-      inline def setMtVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "mt", js.Array(value :_*))
+      inline def setMtVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "mt", js.Array(value*))
       
-      inline def setMx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mx", value.asInstanceOf[js.Any])
+      inline def setMx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "mx", value.asInstanceOf[js.Any])
       
       inline def setMxNull: Self = StObject.set(x, "mx", null)
       
       inline def setMxUndefined: Self = StObject.set(x, "mx", js.undefined)
       
-      inline def setMxVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "mx", js.Array(value :_*))
+      inline def setMxVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "mx", js.Array(value*))
       
-      inline def setMy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
+      inline def setMy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
       
       inline def setMyNull: Self = StObject.set(x, "my", null)
       
       inline def setMyUndefined: Self = StObject.set(x, "my", js.undefined)
       
-      inline def setMyVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "my", js.Array(value :_*))
+      inline def setMyVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "my", js.Array(value*))
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setOnAbort(value: SyntheticEvent[HTMLLabelElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       
@@ -5922,7 +5414,7 @@ object mod {
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLLabelElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLLabelElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -6022,7 +5514,7 @@ object mod {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLLabelElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLLabelElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -6150,6 +5642,10 @@ object mod {
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
+      inline def setOnResize(value: SyntheticEvent[HTMLLabelElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+      
       inline def setOnScroll(value: UIEvent[HTMLLabelElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
@@ -6214,172 +5710,137 @@ object mod {
       
       inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
       
-      inline def setOpacity(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: ResponsiveValue[Opacity, RequiredTheme]): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
       inline def setOpacityNull: Self = StObject.set(x, "opacity", null)
       
       inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      inline def setOpacityVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ js.Any) | Null)*
-      ): Self = StObject.set(x, "opacity", js.Array(value :_*))
+      inline def setOpacityVarargs(value: (Opacity | Null)*): Self = StObject.set(x, "opacity", js.Array(value*))
       
-      inline def setOrder(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: ResponsiveValue[Order, RequiredTheme]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
       inline def setOrderNull: Self = StObject.set(x, "order", null)
       
       inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      inline def setOrderVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ js.Any) | Null)*
-      ): Self = StObject.set(x, "order", js.Array(value :_*))
+      inline def setOrderVarargs(value: (Order | Null)*): Self = StObject.set(x, "order", js.Array(value*))
       
-      inline def setOverflow(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+      inline def setOverflow(value: ResponsiveValue[Overflow, RequiredTheme]): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
       
       inline def setOverflowNull: Self = StObject.set(x, "overflow", null)
       
       inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
       
-      inline def setOverflowVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any) | Null)*
-      ): Self = StObject.set(x, "overflow", js.Array(value :_*))
+      inline def setOverflowVarargs(value: (Overflow | Null)*): Self = StObject.set(x, "overflow", js.Array(value*))
       
-      inline def setOverflowX(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowX */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "overflowX", value.asInstanceOf[js.Any])
+      inline def setOverflowX(value: ResponsiveValue[OverflowX, RequiredTheme]): Self = StObject.set(x, "overflowX", value.asInstanceOf[js.Any])
       
       inline def setOverflowXNull: Self = StObject.set(x, "overflowX", null)
       
       inline def setOverflowXUndefined: Self = StObject.set(x, "overflowX", js.undefined)
       
-      inline def setOverflowXVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowX */ js.Any) | Null)*
-      ): Self = StObject.set(x, "overflowX", js.Array(value :_*))
+      inline def setOverflowXVarargs(value: (OverflowX | Null)*): Self = StObject.set(x, "overflowX", js.Array(value*))
       
-      inline def setOverflowY(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowY */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "overflowY", value.asInstanceOf[js.Any])
+      inline def setOverflowY(value: ResponsiveValue[OverflowY, RequiredTheme]): Self = StObject.set(x, "overflowY", value.asInstanceOf[js.Any])
       
       inline def setOverflowYNull: Self = StObject.set(x, "overflowY", null)
       
       inline def setOverflowYUndefined: Self = StObject.set(x, "overflowY", js.undefined)
       
-      inline def setOverflowYVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowY */ js.Any) | Null)*
-      ): Self = StObject.set(x, "overflowY", js.Array(value :_*))
+      inline def setOverflowYVarargs(value: (OverflowY | Null)*): Self = StObject.set(x, "overflowY", js.Array(value*))
       
-      inline def setP(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+      inline def setP(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
       
       inline def setPNull: Self = StObject.set(x, "p", null)
       
       inline def setPUndefined: Self = StObject.set(x, "p", js.undefined)
       
-      inline def setPVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "p", js.Array(value :_*))
+      inline def setPVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "p", js.Array(value*))
       
-      inline def setPadding(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      inline def setPaddingBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
+      inline def setPaddingBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
       
       inline def setPaddingBottomNull: Self = StObject.set(x, "paddingBottom", null)
       
       inline def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
       
-      inline def setPaddingBottomVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingBottom", js.Array(value :_*))
+      inline def setPaddingBottomVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingBottom", js.Array(value*))
       
-      inline def setPaddingLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
+      inline def setPaddingLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
       
       inline def setPaddingLeftNull: Self = StObject.set(x, "paddingLeft", null)
       
       inline def setPaddingLeftUndefined: Self = StObject.set(x, "paddingLeft", js.undefined)
       
-      inline def setPaddingLeftVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingLeft", js.Array(value :_*))
+      inline def setPaddingLeftVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingLeft", js.Array(value*))
       
       inline def setPaddingNull: Self = StObject.set(x, "padding", null)
       
-      inline def setPaddingRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
+      inline def setPaddingRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
       
       inline def setPaddingRightNull: Self = StObject.set(x, "paddingRight", null)
       
       inline def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
       
-      inline def setPaddingRightVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingRight", js.Array(value :_*))
+      inline def setPaddingRightVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingRight", js.Array(value*))
       
-      inline def setPaddingTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
+      inline def setPaddingTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
       
       inline def setPaddingTopNull: Self = StObject.set(x, "paddingTop", null)
       
       inline def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
       
-      inline def setPaddingTopVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingTop", js.Array(value :_*))
+      inline def setPaddingTopVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingTop", js.Array(value*))
       
       inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      inline def setPaddingVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "padding", js.Array(value :_*))
+      inline def setPaddingVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "padding", js.Array(value*))
       
-      inline def setPaddingX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
+      inline def setPaddingX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
       
       inline def setPaddingXNull: Self = StObject.set(x, "paddingX", null)
       
       inline def setPaddingXUndefined: Self = StObject.set(x, "paddingX", js.undefined)
       
-      inline def setPaddingXVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingX", js.Array(value :_*))
+      inline def setPaddingXVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingX", js.Array(value*))
       
-      inline def setPaddingY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
+      inline def setPaddingY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
       
       inline def setPaddingYNull: Self = StObject.set(x, "paddingY", null)
       
       inline def setPaddingYUndefined: Self = StObject.set(x, "paddingY", js.undefined)
       
-      inline def setPaddingYVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingY", js.Array(value :_*))
+      inline def setPaddingYVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingY", js.Array(value*))
       
-      inline def setPb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pb", value.asInstanceOf[js.Any])
+      inline def setPb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "pb", value.asInstanceOf[js.Any])
       
       inline def setPbNull: Self = StObject.set(x, "pb", null)
       
       inline def setPbUndefined: Self = StObject.set(x, "pb", js.undefined)
       
-      inline def setPbVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "pb", js.Array(value :_*))
+      inline def setPbVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "pb", js.Array(value*))
       
-      inline def setPl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
+      inline def setPl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
       
       inline def setPlNull: Self = StObject.set(x, "pl", null)
       
       inline def setPlUndefined: Self = StObject.set(x, "pl", js.undefined)
       
-      inline def setPlVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "pl", js.Array(value :_*))
+      inline def setPlVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "pl", js.Array(value*))
       
       inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      inline def setPr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
+      inline def setPr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
       
       inline def setPrNull: Self = StObject.set(x, "pr", null)
       
       inline def setPrUndefined: Self = StObject.set(x, "pr", js.undefined)
       
-      inline def setPrVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "pr", js.Array(value :_*))
+      inline def setPrVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "pr", js.Array(value*))
       
       inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
@@ -6389,37 +5850,37 @@ object mod {
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
       
-      inline def setPt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+      inline def setPt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
       
       inline def setPtNull: Self = StObject.set(x, "pt", null)
       
       inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
       
-      inline def setPtVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "pt", js.Array(value :_*))
+      inline def setPtVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "pt", js.Array(value*))
       
-      inline def setPx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
+      inline def setPx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
       
       inline def setPxNull: Self = StObject.set(x, "px", null)
       
       inline def setPxUndefined: Self = StObject.set(x, "px", js.undefined)
       
-      inline def setPxVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "px", js.Array(value :_*))
+      inline def setPxVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "px", js.Array(value*))
       
-      inline def setPy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "py", value.asInstanceOf[js.Any])
+      inline def setPy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "py", value.asInstanceOf[js.Any])
       
       inline def setPyNull: Self = StObject.set(x, "py", null)
       
       inline def setPyUndefined: Self = StObject.set(x, "py", js.undefined)
       
-      inline def setPyVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "py", js.Array(value :_*))
+      inline def setPyVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "py", js.Array(value*))
       
       inline def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
-      inline def setRef(value: Ref[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: Ref[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      inline def setRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      inline def setRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
       inline def setRefNull: Self = StObject.set(x, "ref", null)
       
@@ -6433,7 +5894,7 @@ object mod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
@@ -6441,20 +5902,13 @@ object mod {
       
       inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
       
-      inline def setSize(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: ResponsiveValue[Height[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeNull: Self = StObject.set(x, "size", null)
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setSizeVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "size", js.Array(value :_*))
+      inline def setSizeVarargs(value: (Height[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "size", js.Array(value*))
       
       inline def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
       
@@ -6477,8 +5931,6 @@ object mod {
       inline def setSuppressHydrationWarningUndefined: Self = StObject.set(x, "suppressHydrationWarning", js.undefined)
       
       inline def setSx(value: SxStyleProp): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
-      
-      inline def setSxNull: Self = StObject.set(x, "sx", null)
       
       inline def setSxUndefined: Self = StObject.set(x, "sx", js.undefined)
       
@@ -6512,41 +5964,27 @@ object mod {
       
       inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
       
-      inline def setVariantVarargs(value: (String | Null)*): Self = StObject.set(x, "variant", js.Array(value :_*))
+      inline def setVariantVarargs(value: (String | Null)*): Self = StObject.set(x, "variant", js.Array(value*))
       
-      inline def setVerticalAlign(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+      inline def setVerticalAlign(value: ResponsiveValue[VerticalAlign[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
       
       inline def setVerticalAlignNull: Self = StObject.set(x, "verticalAlign", null)
       
       inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
       
-      inline def setVerticalAlignVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "verticalAlign", js.Array(value :_*))
+      inline def setVerticalAlignVarargs(value: (VerticalAlign[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "verticalAlign", js.Array(value*))
       
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
       
-      inline def setWidth(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Width<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: ResponsiveValue[Width[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
       inline def setWidthNull: Self = StObject.set(x, "width", null)
       
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      inline def setWidthVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Width<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "width", js.Array(value :_*))
+      inline def setWidthVarargs(value: (Width[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "width", js.Array(value*))
     }
   }
   
@@ -6570,22 +6008,17 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self)
       */
-    var alignSelf: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var alignSelf: js.UndefOr[ResponsiveValue[AlignSelf, RequiredTheme]] = js.undefined
     
     var alt: js.UndefOr[String] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
@@ -6603,21 +6036,21 @@ object mod {
     
     var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
@@ -6631,11 +6064,11 @@ object mod {
     
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
@@ -6647,13 +6080,13 @@ object mod {
     
     var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
       ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
@@ -6663,7 +6096,7 @@ object mod {
     
     var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
@@ -6677,7 +6110,7 @@ object mod {
     
     var `aria-valuetext`: js.UndefOr[String] = js.undefined
     
-    var as: js.UndefOr[ElementType[js.Any]] = js.undefined
+    var as: js.UndefOr[ElementType[Any]] = js.undefined
     
     var autoCapitalize: js.UndefOr[String] = js.undefined
     
@@ -6689,7 +6122,7 @@ object mod {
     
     var autoSave: js.UndefOr[String] = js.undefined
     
-    var backgroundColor: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var backgroundColor: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /**
       * The color utility parses a component's `color` and `bg` props and converts them into CSS declarations.
@@ -6700,9 +6133,9 @@ object mod {
       *
       * [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color)
       */
-    var bg: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var bg: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
-    var capture: js.UndefOr[Boolean | String] = js.undefined
+    var capture: js.UndefOr[Boolean | user | environment] = js.undefined
     
     var checked: js.UndefOr[Boolean] = js.undefined
     
@@ -6719,7 +6152,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
       */
-    var color: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var color: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -6727,7 +6160,9 @@ object mod {
     
     var crossOrigin: js.UndefOr[String] = js.undefined
     
-    var css: js.UndefOr[CSSObject | FlattenSimpleInterpolation | String] = js.undefined
+    var css: js.UndefOr[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StyledComponents.CSSObject */ Any) | String
+      ] = js.undefined
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
@@ -6748,12 +6183,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
       */
-    var display: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var display: js.UndefOr[ResponsiveValue[Display, RequiredTheme]] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
@@ -6765,12 +6195,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)
       */
-    var flex: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var flex: js.UndefOr[ResponsiveValue[Flex[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     /**
       * The fontSize utility parses a component's `fontSize` prop and converts it into a CSS font-size declaration.
@@ -6781,7 +6206,7 @@ object mod {
       * - And array values are converted into responsive values.
       *
       */
-    var fontSize: js.UndefOr[ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var fontSize: js.UndefOr[ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /**
       * The font-weight CSS property specifies the weight (or boldness) of the font.
@@ -6790,7 +6215,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight)
       */
-    var fontWeight: js.UndefOr[ResponsiveValue[ThemeValue[fontWeights, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var fontWeight: js.UndefOr[ResponsiveValue[ThemeValue[fontWeights, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var form: js.UndefOr[String] = js.undefined
     
@@ -6810,18 +6235,13 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/height)
       */
-    var height: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var height: js.UndefOr[ResponsiveValue[Height[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
     var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
@@ -6844,28 +6264,28 @@ object mod {
     var list: js.UndefOr[String] = js.undefined
     
     /** Margin on top, left, bottom and right */
-    var m: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var m: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top, left, bottom and right */
-    var margin: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var margin: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on bottom */
-    var marginBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on left */
-    var marginLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on right */
-    var marginRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top */
-    var marginTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on left and right */
-    var marginX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top and bottom */
-    var marginY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var max: js.UndefOr[Double | String] = js.undefined
     
@@ -6875,12 +6295,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/max-height)
       */
-    var maxHeight: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxHeight<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var maxHeight: js.UndefOr[ResponsiveValue[MaxHeight[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     var maxLength: js.UndefOr[Double] = js.undefined
     
@@ -6890,15 +6305,10 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/max-width)
       */
-    var maxWidth: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var maxWidth: js.UndefOr[ResponsiveValue[MaxWidth[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     /** Margin on bottom */
-    var mb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var mb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var min: js.UndefOr[Double | String] = js.undefined
     
@@ -6908,12 +6318,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
       */
-    var minHeight: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var minHeight: js.UndefOr[ResponsiveValue[MinHeight[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     var minLength: js.UndefOr[Double] = js.undefined
     
@@ -6923,31 +6328,28 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/min-width)
       */
-    var minWidth: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var minWidth: js.UndefOr[ResponsiveValue[MinWidth[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     /** Margin on left */
-    var ml: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var ml: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on right */
-    var mr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var mr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top */
-    var mt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var mt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var multiple: js.UndefOr[Boolean] = js.undefined
     
     /** Margin on left and right */
-    var mx: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var mx: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top and bottom */
-    var my: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var my: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var name: js.UndefOr[String] = js.undefined
+    
+    var nonce: js.UndefOr[String] = js.undefined
     
     var onAbort: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
@@ -7075,6 +6477,8 @@ object mod {
     
     var onReset: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
     
+    var onResize: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
+    
     var onScroll: js.UndefOr[UIEventHandler[HTMLInputElement]] = js.undefined
     
     var onSeeked: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
@@ -7113,12 +6517,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity)
       */
-    var opacity: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var opacity: js.UndefOr[ResponsiveValue[Opacity, RequiredTheme]] = js.undefined
     
     /**
       * The order CSS property sets the order to lay out an item in a flex or grid container. Items in a container
@@ -7126,12 +6525,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/order)
       */
-    var order: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var order: js.UndefOr[ResponsiveValue[Order, RequiredTheme]] = js.undefined
     
     /**
       * The overflow CSS property sets what to do when an element's content is too big to fit in its block
@@ -7139,12 +6533,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow)
       */
-    var overflow: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var overflow: js.UndefOr[ResponsiveValue[Overflow, RequiredTheme]] = js.undefined
     
     /**
       * The overflow-x CSS property sets what shows when content overflows a block-level element's left
@@ -7152,12 +6541,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-x)
       */
-    var overflowX: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowX */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var overflowX: js.UndefOr[ResponsiveValue[OverflowX, RequiredTheme]] = js.undefined
     
     /**
       * The overflow-y CSS property sets what shows when content overflows a block-level element's top
@@ -7165,68 +6549,63 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-y)
       */
-    var overflowY: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowY */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var overflowY: js.UndefOr[ResponsiveValue[OverflowY, RequiredTheme]] = js.undefined
     
     /** Padding on top, left, bottom and right */
-    var p: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var p: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on top, left, bottom and right */
-    var padding: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var padding: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on bottom */
-    var paddingBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on left */
-    var paddingLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on right */
-    var paddingRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on top */
-    var paddingTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on left and right */
-    var paddingX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on top and bottom */
-    var paddingY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var pattern: js.UndefOr[String] = js.undefined
     
     /** Padding on bottom */
-    var pb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var pb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on left */
-    var pl: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var pl: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var placeholder: js.UndefOr[String] = js.undefined
     
     /** Padding on right */
-    var pr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var pr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var prefix: js.UndefOr[String] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
     
     /** Padding on top */
-    var pt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var pt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on left and right */
-    var px: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var px: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on top and bottom */
-    var py: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var py: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var ref: js.UndefOr[Ref[js.Any]] = js.undefined
+    var ref: js.UndefOr[Ref[Any]] = js.undefined
     
     var required: js.UndefOr[Boolean] = js.undefined
     
@@ -7234,16 +6613,11 @@ object mod {
     
     var results: js.UndefOr[Double] = js.undefined
     
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var size: js.UndefOr[ResponsiveValue[Height[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     var slot: js.UndefOr[String] = js.undefined
     
@@ -7272,7 +6646,7 @@ object mod {
     
     var tx: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.undefined
+    var `type`: js.UndefOr[HTMLInputTypeAttribute] = js.undefined
     
     var typeof: js.UndefOr[String] = js.undefined
     
@@ -7287,12 +6661,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align)
       */
-    var verticalAlign: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var verticalAlign: js.UndefOr[ResponsiveValue[VerticalAlign[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
     
@@ -7304,12 +6673,7 @@ object mod {
       *   - String values are passed as raw CSS values.
       *   - And arrays are converted to responsive width styles.
       */
-    var width: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Width<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var width: js.UndefOr[ResponsiveValue[Width[TLengthStyledSystem], RequiredTheme]] = js.undefined
   }
   object RadioProps {
     
@@ -7332,20 +6696,13 @@ object mod {
       
       inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
-      inline def setAlignSelf(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
+      inline def setAlignSelf(value: ResponsiveValue[AlignSelf, RequiredTheme]): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
       
       inline def setAlignSelfNull: Self = StObject.set(x, "alignSelf", null)
       
       inline def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
       
-      inline def setAlignSelfVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ js.Any) | Null)*
-      ): Self = StObject.set(x, "alignSelf", js.Array(value :_*))
+      inline def setAlignSelfVarargs(value: (AlignSelf | Null)*): Self = StObject.set(x, "alignSelf", js.Array(value*))
       
       inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
@@ -7355,7 +6712,7 @@ object mod {
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -7363,7 +6720,7 @@ object mod {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -7399,7 +6756,7 @@ object mod {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -7411,7 +6768,7 @@ object mod {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -7419,7 +6776,7 @@ object mod {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -7427,7 +6784,7 @@ object mod {
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
@@ -7455,15 +6812,15 @@ object mod {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -7487,7 +6844,7 @@ object mod {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -7497,7 +6854,7 @@ object mod {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -7517,7 +6874,7 @@ object mod {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -7545,7 +6902,7 @@ object mod {
       
       inline def `setAria-valuetextUndefined`: Self = StObject.set(x, "aria-valuetext", js.undefined)
       
-      inline def setAs(value: ElementType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -7569,23 +6926,23 @@ object mod {
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
       
-      inline def setBackgroundColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
       inline def setBackgroundColorNull: Self = StObject.set(x, "backgroundColor", null)
       
       inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      inline def setBackgroundColorVarargs(value: ((ThemeValue[colors, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "backgroundColor", js.Array(value :_*))
+      inline def setBackgroundColorVarargs(value: ((ThemeValue[colors, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "backgroundColor", js.Array(value*))
       
-      inline def setBg(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
+      inline def setBg(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
       
       inline def setBgNull: Self = StObject.set(x, "bg", null)
       
       inline def setBgUndefined: Self = StObject.set(x, "bg", js.undefined)
       
-      inline def setBgVarargs(value: ((ThemeValue[colors, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "bg", js.Array(value :_*))
+      inline def setBgVarargs(value: ((ThemeValue[colors, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "bg", js.Array(value*))
       
-      inline def setCapture(value: Boolean | String): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+      inline def setCapture(value: Boolean | user | environment): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
       inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       
@@ -7601,13 +6958,13 @@ object mod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorNull: Self = StObject.set(x, "color", null)
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setColorVarargs(value: ((ThemeValue[colors, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "color", js.Array(value :_*))
+      inline def setColorVarargs(value: ((ThemeValue[colors, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "color", js.Array(value*))
       
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
@@ -7621,7 +6978,9 @@ object mod {
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
-      inline def setCss(value: CSSObject | FlattenSimpleInterpolation | String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+      inline def setCss(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StyledComponents.CSSObject */ Any) | String
+      ): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
       inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
       
@@ -7641,7 +7000,7 @@ object mod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -7651,20 +7010,13 @@ object mod {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setDisplay(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+      inline def setDisplay(value: ResponsiveValue[Display, RequiredTheme]): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
       inline def setDisplayNull: Self = StObject.set(x, "display", null)
       
       inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
       
-      inline def setDisplayVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any) | Null)*
-      ): Self = StObject.set(x, "display", js.Array(value :_*))
+      inline def setDisplayVarargs(value: (Display | Null)*): Self = StObject.set(x, "display", js.Array(value*))
       
       inline def setDraggable(value: Booleanish): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
       
@@ -7674,36 +7026,29 @@ object mod {
       
       inline def setEnterKeyHintUndefined: Self = StObject.set(x, "enterKeyHint", js.undefined)
       
-      inline def setFlex(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
+      inline def setFlex(value: ResponsiveValue[Flex[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
       
       inline def setFlexNull: Self = StObject.set(x, "flex", null)
       
       inline def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
       
-      inline def setFlexVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "flex", js.Array(value :_*))
+      inline def setFlexVarargs(value: (Flex[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "flex", js.Array(value*))
       
-      inline def setFontSize(value: ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
       inline def setFontSizeNull: Self = StObject.set(x, "fontSize", null)
       
       inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
-      inline def setFontSizeVarargs(value: ((ThemeValue[fontSizes, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "fontSize", js.Array(value :_*))
+      inline def setFontSizeVarargs(value: ((ThemeValue[fontSizes, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "fontSize", js.Array(value*))
       
-      inline def setFontWeight(value: ResponsiveValue[ThemeValue[fontWeights, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+      inline def setFontWeight(value: ResponsiveValue[ThemeValue[fontWeights, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
       
       inline def setFontWeightNull: Self = StObject.set(x, "fontWeight", null)
       
       inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
       
-      inline def setFontWeightVarargs(value: ((ThemeValue[fontWeights, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "fontWeight", js.Array(value :_*))
+      inline def setFontWeightVarargs(value: ((ThemeValue[fontWeights, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "fontWeight", js.Array(value*))
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
@@ -7729,20 +7074,13 @@ object mod {
       
       inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
       
-      inline def setHeight(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: ResponsiveValue[Height[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       inline def setHeightNull: Self = StObject.set(x, "height", null)
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setHeightVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "height", js.Array(value :_*))
+      inline def setHeightVarargs(value: (Height[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "height", js.Array(value*))
       
       inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
@@ -7752,7 +7090,7 @@ object mod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -7798,86 +7136,79 @@ object mod {
       
       inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
       
-      inline def setM(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
+      inline def setM(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
       
       inline def setMNull: Self = StObject.set(x, "m", null)
       
       inline def setMUndefined: Self = StObject.set(x, "m", js.undefined)
       
-      inline def setMVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "m", js.Array(value :_*))
+      inline def setMVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "m", js.Array(value*))
       
-      inline def setMargin(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      inline def setMarginBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+      inline def setMarginBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
       
       inline def setMarginBottomNull: Self = StObject.set(x, "marginBottom", null)
       
       inline def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
       
-      inline def setMarginBottomVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginBottom", js.Array(value :_*))
+      inline def setMarginBottomVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginBottom", js.Array(value*))
       
-      inline def setMarginLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+      inline def setMarginLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
       
       inline def setMarginLeftNull: Self = StObject.set(x, "marginLeft", null)
       
       inline def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
       
-      inline def setMarginLeftVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginLeft", js.Array(value :_*))
+      inline def setMarginLeftVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginLeft", js.Array(value*))
       
       inline def setMarginNull: Self = StObject.set(x, "margin", null)
       
-      inline def setMarginRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
+      inline def setMarginRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
       
       inline def setMarginRightNull: Self = StObject.set(x, "marginRight", null)
       
       inline def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
       
-      inline def setMarginRightVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginRight", js.Array(value :_*))
+      inline def setMarginRightVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginRight", js.Array(value*))
       
-      inline def setMarginTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+      inline def setMarginTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
       
       inline def setMarginTopNull: Self = StObject.set(x, "marginTop", null)
       
       inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
       
-      inline def setMarginTopVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginTop", js.Array(value :_*))
+      inline def setMarginTopVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginTop", js.Array(value*))
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      inline def setMarginVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "margin", js.Array(value :_*))
+      inline def setMarginVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "margin", js.Array(value*))
       
-      inline def setMarginX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginX", value.asInstanceOf[js.Any])
+      inline def setMarginX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginX", value.asInstanceOf[js.Any])
       
       inline def setMarginXNull: Self = StObject.set(x, "marginX", null)
       
       inline def setMarginXUndefined: Self = StObject.set(x, "marginX", js.undefined)
       
-      inline def setMarginXVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginX", js.Array(value :_*))
+      inline def setMarginXVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginX", js.Array(value*))
       
-      inline def setMarginY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginY", value.asInstanceOf[js.Any])
+      inline def setMarginY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginY", value.asInstanceOf[js.Any])
       
       inline def setMarginYNull: Self = StObject.set(x, "marginY", null)
       
       inline def setMarginYUndefined: Self = StObject.set(x, "marginY", js.undefined)
       
-      inline def setMarginYVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginY", js.Array(value :_*))
+      inline def setMarginYVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginY", js.Array(value*))
       
       inline def setMax(value: Double | String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      inline def setMaxHeight(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxHeight<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMaxHeight(value: ResponsiveValue[MaxHeight[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
       inline def setMaxHeightNull: Self = StObject.set(x, "maxHeight", null)
       
       inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
       
-      inline def setMaxHeightVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxHeight<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "maxHeight", js.Array(value :_*))
+      inline def setMaxHeightVarargs(value: (MaxHeight[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "maxHeight", js.Array(value*))
       
       inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
       
@@ -7885,45 +7216,31 @@ object mod {
       
       inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      inline def setMaxWidth(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: ResponsiveValue[MaxWidth[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
       inline def setMaxWidthNull: Self = StObject.set(x, "maxWidth", null)
       
       inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      inline def setMaxWidthVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "maxWidth", js.Array(value :_*))
+      inline def setMaxWidthVarargs(value: (MaxWidth[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "maxWidth", js.Array(value*))
       
-      inline def setMb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
+      inline def setMb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
       
       inline def setMbNull: Self = StObject.set(x, "mb", null)
       
       inline def setMbUndefined: Self = StObject.set(x, "mb", js.undefined)
       
-      inline def setMbVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "mb", js.Array(value :_*))
+      inline def setMbVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "mb", js.Array(value*))
       
       inline def setMin(value: Double | String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      inline def setMinHeight(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+      inline def setMinHeight(value: ResponsiveValue[MinHeight[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
       
       inline def setMinHeightNull: Self = StObject.set(x, "minHeight", null)
       
       inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
       
-      inline def setMinHeightVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "minHeight", js.Array(value :_*))
+      inline def setMinHeightVarargs(value: (MinHeight[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "minHeight", js.Array(value*))
       
       inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
       
@@ -7931,68 +7248,65 @@ object mod {
       
       inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      inline def setMinWidth(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+      inline def setMinWidth(value: ResponsiveValue[MinWidth[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
       
       inline def setMinWidthNull: Self = StObject.set(x, "minWidth", null)
       
       inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
       
-      inline def setMinWidthVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "minWidth", js.Array(value :_*))
+      inline def setMinWidthVarargs(value: (MinWidth[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "minWidth", js.Array(value*))
       
-      inline def setMl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
+      inline def setMl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
       
       inline def setMlNull: Self = StObject.set(x, "ml", null)
       
       inline def setMlUndefined: Self = StObject.set(x, "ml", js.undefined)
       
-      inline def setMlVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "ml", js.Array(value :_*))
+      inline def setMlVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "ml", js.Array(value*))
       
-      inline def setMr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mr", value.asInstanceOf[js.Any])
+      inline def setMr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "mr", value.asInstanceOf[js.Any])
       
       inline def setMrNull: Self = StObject.set(x, "mr", null)
       
       inline def setMrUndefined: Self = StObject.set(x, "mr", js.undefined)
       
-      inline def setMrVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "mr", js.Array(value :_*))
+      inline def setMrVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "mr", js.Array(value*))
       
-      inline def setMt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
+      inline def setMt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
       
       inline def setMtNull: Self = StObject.set(x, "mt", null)
       
       inline def setMtUndefined: Self = StObject.set(x, "mt", js.undefined)
       
-      inline def setMtVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "mt", js.Array(value :_*))
+      inline def setMtVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "mt", js.Array(value*))
       
       inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       
       inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
       
-      inline def setMx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mx", value.asInstanceOf[js.Any])
+      inline def setMx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "mx", value.asInstanceOf[js.Any])
       
       inline def setMxNull: Self = StObject.set(x, "mx", null)
       
       inline def setMxUndefined: Self = StObject.set(x, "mx", js.undefined)
       
-      inline def setMxVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "mx", js.Array(value :_*))
+      inline def setMxVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "mx", js.Array(value*))
       
-      inline def setMy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
+      inline def setMy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
       
       inline def setMyNull: Self = StObject.set(x, "my", null)
       
       inline def setMyUndefined: Self = StObject.set(x, "my", js.undefined)
       
-      inline def setMyVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "my", js.Array(value :_*))
+      inline def setMyVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "my", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setOnAbort(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       
@@ -8018,7 +7332,7 @@ object mod {
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -8118,7 +7432,7 @@ object mod {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -8246,6 +7560,10 @@ object mod {
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
+      inline def setOnResize(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+      
       inline def setOnScroll(value: UIEvent[HTMLInputElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
@@ -8310,176 +7628,141 @@ object mod {
       
       inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
       
-      inline def setOpacity(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: ResponsiveValue[Opacity, RequiredTheme]): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
       inline def setOpacityNull: Self = StObject.set(x, "opacity", null)
       
       inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      inline def setOpacityVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ js.Any) | Null)*
-      ): Self = StObject.set(x, "opacity", js.Array(value :_*))
+      inline def setOpacityVarargs(value: (Opacity | Null)*): Self = StObject.set(x, "opacity", js.Array(value*))
       
-      inline def setOrder(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: ResponsiveValue[Order, RequiredTheme]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
       inline def setOrderNull: Self = StObject.set(x, "order", null)
       
       inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      inline def setOrderVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ js.Any) | Null)*
-      ): Self = StObject.set(x, "order", js.Array(value :_*))
+      inline def setOrderVarargs(value: (Order | Null)*): Self = StObject.set(x, "order", js.Array(value*))
       
-      inline def setOverflow(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+      inline def setOverflow(value: ResponsiveValue[Overflow, RequiredTheme]): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
       
       inline def setOverflowNull: Self = StObject.set(x, "overflow", null)
       
       inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
       
-      inline def setOverflowVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any) | Null)*
-      ): Self = StObject.set(x, "overflow", js.Array(value :_*))
+      inline def setOverflowVarargs(value: (Overflow | Null)*): Self = StObject.set(x, "overflow", js.Array(value*))
       
-      inline def setOverflowX(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowX */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "overflowX", value.asInstanceOf[js.Any])
+      inline def setOverflowX(value: ResponsiveValue[OverflowX, RequiredTheme]): Self = StObject.set(x, "overflowX", value.asInstanceOf[js.Any])
       
       inline def setOverflowXNull: Self = StObject.set(x, "overflowX", null)
       
       inline def setOverflowXUndefined: Self = StObject.set(x, "overflowX", js.undefined)
       
-      inline def setOverflowXVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowX */ js.Any) | Null)*
-      ): Self = StObject.set(x, "overflowX", js.Array(value :_*))
+      inline def setOverflowXVarargs(value: (OverflowX | Null)*): Self = StObject.set(x, "overflowX", js.Array(value*))
       
-      inline def setOverflowY(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowY */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "overflowY", value.asInstanceOf[js.Any])
+      inline def setOverflowY(value: ResponsiveValue[OverflowY, RequiredTheme]): Self = StObject.set(x, "overflowY", value.asInstanceOf[js.Any])
       
       inline def setOverflowYNull: Self = StObject.set(x, "overflowY", null)
       
       inline def setOverflowYUndefined: Self = StObject.set(x, "overflowY", js.undefined)
       
-      inline def setOverflowYVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowY */ js.Any) | Null)*
-      ): Self = StObject.set(x, "overflowY", js.Array(value :_*))
+      inline def setOverflowYVarargs(value: (OverflowY | Null)*): Self = StObject.set(x, "overflowY", js.Array(value*))
       
-      inline def setP(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+      inline def setP(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
       
       inline def setPNull: Self = StObject.set(x, "p", null)
       
       inline def setPUndefined: Self = StObject.set(x, "p", js.undefined)
       
-      inline def setPVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "p", js.Array(value :_*))
+      inline def setPVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "p", js.Array(value*))
       
-      inline def setPadding(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      inline def setPaddingBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
+      inline def setPaddingBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
       
       inline def setPaddingBottomNull: Self = StObject.set(x, "paddingBottom", null)
       
       inline def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
       
-      inline def setPaddingBottomVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingBottom", js.Array(value :_*))
+      inline def setPaddingBottomVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingBottom", js.Array(value*))
       
-      inline def setPaddingLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
+      inline def setPaddingLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
       
       inline def setPaddingLeftNull: Self = StObject.set(x, "paddingLeft", null)
       
       inline def setPaddingLeftUndefined: Self = StObject.set(x, "paddingLeft", js.undefined)
       
-      inline def setPaddingLeftVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingLeft", js.Array(value :_*))
+      inline def setPaddingLeftVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingLeft", js.Array(value*))
       
       inline def setPaddingNull: Self = StObject.set(x, "padding", null)
       
-      inline def setPaddingRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
+      inline def setPaddingRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
       
       inline def setPaddingRightNull: Self = StObject.set(x, "paddingRight", null)
       
       inline def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
       
-      inline def setPaddingRightVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingRight", js.Array(value :_*))
+      inline def setPaddingRightVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingRight", js.Array(value*))
       
-      inline def setPaddingTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
+      inline def setPaddingTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
       
       inline def setPaddingTopNull: Self = StObject.set(x, "paddingTop", null)
       
       inline def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
       
-      inline def setPaddingTopVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingTop", js.Array(value :_*))
+      inline def setPaddingTopVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingTop", js.Array(value*))
       
       inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      inline def setPaddingVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "padding", js.Array(value :_*))
+      inline def setPaddingVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "padding", js.Array(value*))
       
-      inline def setPaddingX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
+      inline def setPaddingX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
       
       inline def setPaddingXNull: Self = StObject.set(x, "paddingX", null)
       
       inline def setPaddingXUndefined: Self = StObject.set(x, "paddingX", js.undefined)
       
-      inline def setPaddingXVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingX", js.Array(value :_*))
+      inline def setPaddingXVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingX", js.Array(value*))
       
-      inline def setPaddingY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
+      inline def setPaddingY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
       
       inline def setPaddingYNull: Self = StObject.set(x, "paddingY", null)
       
       inline def setPaddingYUndefined: Self = StObject.set(x, "paddingY", js.undefined)
       
-      inline def setPaddingYVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingY", js.Array(value :_*))
+      inline def setPaddingYVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingY", js.Array(value*))
       
       inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
       inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
       
-      inline def setPb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pb", value.asInstanceOf[js.Any])
+      inline def setPb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "pb", value.asInstanceOf[js.Any])
       
       inline def setPbNull: Self = StObject.set(x, "pb", null)
       
       inline def setPbUndefined: Self = StObject.set(x, "pb", js.undefined)
       
-      inline def setPbVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "pb", js.Array(value :_*))
+      inline def setPbVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "pb", js.Array(value*))
       
-      inline def setPl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
+      inline def setPl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
       
       inline def setPlNull: Self = StObject.set(x, "pl", null)
       
       inline def setPlUndefined: Self = StObject.set(x, "pl", js.undefined)
       
-      inline def setPlVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "pl", js.Array(value :_*))
+      inline def setPlVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "pl", js.Array(value*))
       
       inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      inline def setPr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
+      inline def setPr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
       
       inline def setPrNull: Self = StObject.set(x, "pr", null)
       
       inline def setPrUndefined: Self = StObject.set(x, "pr", js.undefined)
       
-      inline def setPrVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "pr", js.Array(value :_*))
+      inline def setPrVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "pr", js.Array(value*))
       
       inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
@@ -8489,29 +7772,29 @@ object mod {
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
       
-      inline def setPt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+      inline def setPt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
       
       inline def setPtNull: Self = StObject.set(x, "pt", null)
       
       inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
       
-      inline def setPtVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "pt", js.Array(value :_*))
+      inline def setPtVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "pt", js.Array(value*))
       
-      inline def setPx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
+      inline def setPx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
       
       inline def setPxNull: Self = StObject.set(x, "px", null)
       
       inline def setPxUndefined: Self = StObject.set(x, "px", js.undefined)
       
-      inline def setPxVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "px", js.Array(value :_*))
+      inline def setPxVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "px", js.Array(value*))
       
-      inline def setPy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "py", value.asInstanceOf[js.Any])
+      inline def setPy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "py", value.asInstanceOf[js.Any])
       
       inline def setPyNull: Self = StObject.set(x, "py", null)
       
       inline def setPyUndefined: Self = StObject.set(x, "py", js.undefined)
       
-      inline def setPyVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "py", js.Array(value :_*))
+      inline def setPyVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "py", js.Array(value*))
       
       inline def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
       
@@ -8521,9 +7804,9 @@ object mod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
-      inline def setRef(value: Ref[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: Ref[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      inline def setRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      inline def setRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
       inline def setRefNull: Self = StObject.set(x, "ref", null)
       
@@ -8541,7 +7824,7 @@ object mod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
@@ -8549,20 +7832,13 @@ object mod {
       
       inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
       
-      inline def setSize(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: ResponsiveValue[Height[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeNull: Self = StObject.set(x, "size", null)
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setSizeVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "size", js.Array(value :_*))
+      inline def setSizeVarargs(value: (Height[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "size", js.Array(value*))
       
       inline def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
       
@@ -8594,8 +7870,6 @@ object mod {
       
       inline def setSx(value: SxStyleProp): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
       
-      inline def setSxNull: Self = StObject.set(x, "sx", null)
-      
       inline def setSxUndefined: Self = StObject.set(x, "sx", js.undefined)
       
       inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
@@ -8614,7 +7888,7 @@ object mod {
       
       inline def setTxUndefined: Self = StObject.set(x, "tx", js.undefined)
       
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: HTMLInputTypeAttribute): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
@@ -8630,7 +7904,7 @@ object mod {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
       
       inline def setVariant(value: ResponsiveValue[String, RequiredTheme]): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
       
@@ -8638,41 +7912,27 @@ object mod {
       
       inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
       
-      inline def setVariantVarargs(value: (String | Null)*): Self = StObject.set(x, "variant", js.Array(value :_*))
+      inline def setVariantVarargs(value: (String | Null)*): Self = StObject.set(x, "variant", js.Array(value*))
       
-      inline def setVerticalAlign(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+      inline def setVerticalAlign(value: ResponsiveValue[VerticalAlign[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
       
       inline def setVerticalAlignNull: Self = StObject.set(x, "verticalAlign", null)
       
       inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
       
-      inline def setVerticalAlignVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "verticalAlign", js.Array(value :_*))
+      inline def setVerticalAlignVarargs(value: (VerticalAlign[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "verticalAlign", js.Array(value*))
       
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
       
-      inline def setWidth(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Width<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: ResponsiveValue[Width[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
       inline def setWidthNull: Self = StObject.set(x, "width", null)
       
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      inline def setWidthVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Width<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "width", js.Array(value :_*))
+      inline def setWidthVarargs(value: (Width[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "width", js.Array(value*))
     }
   }
   
@@ -8692,20 +7952,15 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self)
       */
-    var alignSelf: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var alignSelf: js.UndefOr[ResponsiveValue[AlignSelf, RequiredTheme]] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
@@ -8723,21 +7978,21 @@ object mod {
     
     var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
@@ -8751,11 +8006,11 @@ object mod {
     
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
@@ -8767,13 +8022,13 @@ object mod {
     
     var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
       ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
@@ -8783,7 +8038,7 @@ object mod {
     
     var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
@@ -8797,7 +8052,7 @@ object mod {
     
     var `aria-valuetext`: js.UndefOr[String] = js.undefined
     
-    var as: js.UndefOr[ElementType[js.Any]] = js.undefined
+    var as: js.UndefOr[ElementType[Any]] = js.undefined
     
     var autoCapitalize: js.UndefOr[String] = js.undefined
     
@@ -8809,7 +8064,7 @@ object mod {
     
     var autoSave: js.UndefOr[String] = js.undefined
     
-    var backgroundColor: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var backgroundColor: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /**
       * The color utility parses a component's `color` and `bg` props and converts them into CSS declarations.
@@ -8820,7 +8075,7 @@ object mod {
       *
       * [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color)
       */
-    var bg: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var bg: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var children: js.UndefOr[ReactNode] = js.undefined
     
@@ -8835,13 +8090,15 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
       */
-    var color: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var color: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
-    var css: js.UndefOr[CSSObject | FlattenSimpleInterpolation | String] = js.undefined
+    var css: js.UndefOr[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StyledComponents.CSSObject */ Any) | String
+      ] = js.undefined
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
@@ -8862,12 +8119,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
       */
-    var display: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var display: js.UndefOr[ResponsiveValue[Display, RequiredTheme]] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
@@ -8877,12 +8129,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)
       */
-    var flex: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var flex: js.UndefOr[ResponsiveValue[Flex[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     /**
       * The fontSize utility parses a component's `fontSize` prop and converts it into a CSS font-size declaration.
@@ -8893,7 +8140,7 @@ object mod {
       * - And array values are converted into responsive values.
       *
       */
-    var fontSize: js.UndefOr[ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var fontSize: js.UndefOr[ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /**
       * The font-weight CSS property specifies the weight (or boldness) of the font.
@@ -8902,7 +8149,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight)
       */
-    var fontWeight: js.UndefOr[ResponsiveValue[ThemeValue[fontWeights, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var fontWeight: js.UndefOr[ResponsiveValue[ThemeValue[fontWeights, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var form: js.UndefOr[String] = js.undefined
     
@@ -8912,18 +8159,13 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/height)
       */
-    var height: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var height: js.UndefOr[ResponsiveValue[Height[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
     var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
@@ -8944,28 +8186,28 @@ object mod {
     var lang: js.UndefOr[String] = js.undefined
     
     /** Margin on top, left, bottom and right */
-    var m: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var m: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top, left, bottom and right */
-    var margin: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var margin: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on bottom */
-    var marginBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on left */
-    var marginLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on right */
-    var marginRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top */
-    var marginTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on left and right */
-    var marginX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top and bottom */
-    var marginY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /**
       * The max-height CSS property sets the maximum height of an element. It prevents the used value of the height
@@ -8973,12 +8215,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/max-height)
       */
-    var maxHeight: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxHeight<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var maxHeight: js.UndefOr[ResponsiveValue[MaxHeight[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     /**
       * The max-width CSS property sets the maximum width of an element.
@@ -8986,15 +8223,10 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/max-width)
       */
-    var maxWidth: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var maxWidth: js.UndefOr[ResponsiveValue[MaxWidth[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     /** Margin on bottom */
-    var mb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var mb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /**
       * The min-height CSS property sets the minimum height of an element. It prevents the used value of the height
@@ -9002,12 +8234,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
       */
-    var minHeight: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var minHeight: js.UndefOr[ResponsiveValue[MinHeight[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     /**
       * The min-width CSS property sets the minimum width of an element.
@@ -9015,31 +8242,28 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/min-width)
       */
-    var minWidth: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var minWidth: js.UndefOr[ResponsiveValue[MinWidth[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     /** Margin on left */
-    var ml: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var ml: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on right */
-    var mr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var mr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top */
-    var mt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var mt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var multiple: js.UndefOr[Boolean] = js.undefined
     
     /** Margin on left and right */
-    var mx: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var mx: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top and bottom */
-    var my: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var my: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var name: js.UndefOr[String] = js.undefined
+    
+    var nonce: js.UndefOr[String] = js.undefined
     
     var onAbort: js.UndefOr[ReactEventHandler[HTMLSelectElement]] = js.undefined
     
@@ -9167,6 +8391,8 @@ object mod {
     
     var onReset: js.UndefOr[FormEventHandler[HTMLSelectElement]] = js.undefined
     
+    var onResize: js.UndefOr[ReactEventHandler[HTMLSelectElement]] = js.undefined
+    
     var onScroll: js.UndefOr[UIEventHandler[HTMLSelectElement]] = js.undefined
     
     var onSeeked: js.UndefOr[ReactEventHandler[HTMLSelectElement]] = js.undefined
@@ -9205,12 +8431,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity)
       */
-    var opacity: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var opacity: js.UndefOr[ResponsiveValue[Opacity, RequiredTheme]] = js.undefined
     
     /**
       * The order CSS property sets the order to lay out an item in a flex or grid container. Items in a container
@@ -9218,12 +8439,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/order)
       */
-    var order: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var order: js.UndefOr[ResponsiveValue[Order, RequiredTheme]] = js.undefined
     
     /**
       * The overflow CSS property sets what to do when an element's content is too big to fit in its block
@@ -9231,12 +8447,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow)
       */
-    var overflow: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var overflow: js.UndefOr[ResponsiveValue[Overflow, RequiredTheme]] = js.undefined
     
     /**
       * The overflow-x CSS property sets what shows when content overflows a block-level element's left
@@ -9244,12 +8455,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-x)
       */
-    var overflowX: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowX */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var overflowX: js.UndefOr[ResponsiveValue[OverflowX, RequiredTheme]] = js.undefined
     
     /**
       * The overflow-y CSS property sets what shows when content overflows a block-level element's top
@@ -9257,64 +8463,59 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-y)
       */
-    var overflowY: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowY */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var overflowY: js.UndefOr[ResponsiveValue[OverflowY, RequiredTheme]] = js.undefined
     
     /** Padding on top, left, bottom and right */
-    var p: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var p: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on top, left, bottom and right */
-    var padding: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var padding: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on bottom */
-    var paddingBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on left */
-    var paddingLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on right */
-    var paddingRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on top */
-    var paddingTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on left and right */
-    var paddingX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on top and bottom */
-    var paddingY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on bottom */
-    var pb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var pb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on left */
-    var pl: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var pl: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var placeholder: js.UndefOr[String] = js.undefined
     
     /** Padding on right */
-    var pr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var pr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var prefix: js.UndefOr[String] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
     
     /** Padding on top */
-    var pt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var pt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on left and right */
-    var px: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var px: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on top and bottom */
-    var py: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var py: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
-    var ref: js.UndefOr[Ref[js.Any]] = js.undefined
+    var ref: js.UndefOr[Ref[Any]] = js.undefined
     
     var required: js.UndefOr[Boolean] = js.undefined
     
@@ -9322,16 +8523,11 @@ object mod {
     
     var results: js.UndefOr[Double] = js.undefined
     
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var size: js.UndefOr[ResponsiveValue[Height[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     var slot: js.UndefOr[String] = js.undefined
     
@@ -9369,12 +8565,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align)
       */
-    var verticalAlign: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var verticalAlign: js.UndefOr[ResponsiveValue[VerticalAlign[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
     
@@ -9386,12 +8577,7 @@ object mod {
       *   - String values are passed as raw CSS values.
       *   - And arrays are converted to responsive width styles.
       */
-    var width: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Width<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var width: js.UndefOr[ResponsiveValue[Width[TLengthStyledSystem], RequiredTheme]] = js.undefined
   }
   object SelectProps {
     
@@ -9410,26 +8596,19 @@ object mod {
       
       inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
-      inline def setAlignSelf(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
+      inline def setAlignSelf(value: ResponsiveValue[AlignSelf, RequiredTheme]): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
       
       inline def setAlignSelfNull: Self = StObject.set(x, "alignSelf", null)
       
       inline def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
       
-      inline def setAlignSelfVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ js.Any) | Null)*
-      ): Self = StObject.set(x, "alignSelf", js.Array(value :_*))
+      inline def setAlignSelfVarargs(value: (AlignSelf | Null)*): Self = StObject.set(x, "alignSelf", js.Array(value*))
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -9437,7 +8616,7 @@ object mod {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -9473,7 +8652,7 @@ object mod {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -9485,7 +8664,7 @@ object mod {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -9493,7 +8672,7 @@ object mod {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -9501,7 +8680,7 @@ object mod {
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
@@ -9529,15 +8708,15 @@ object mod {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -9561,7 +8740,7 @@ object mod {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -9571,7 +8750,7 @@ object mod {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -9591,7 +8770,7 @@ object mod {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -9619,7 +8798,7 @@ object mod {
       
       inline def `setAria-valuetextUndefined`: Self = StObject.set(x, "aria-valuetext", js.undefined)
       
-      inline def setAs(value: ElementType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -9643,21 +8822,21 @@ object mod {
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
       
-      inline def setBackgroundColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
       inline def setBackgroundColorNull: Self = StObject.set(x, "backgroundColor", null)
       
       inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      inline def setBackgroundColorVarargs(value: ((ThemeValue[colors, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "backgroundColor", js.Array(value :_*))
+      inline def setBackgroundColorVarargs(value: ((ThemeValue[colors, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "backgroundColor", js.Array(value*))
       
-      inline def setBg(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
+      inline def setBg(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
       
       inline def setBgNull: Self = StObject.set(x, "bg", null)
       
       inline def setBgUndefined: Self = StObject.set(x, "bg", js.undefined)
       
-      inline def setBgVarargs(value: ((ThemeValue[colors, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "bg", js.Array(value :_*))
+      inline def setBgVarargs(value: ((ThemeValue[colors, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "bg", js.Array(value*))
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -9667,13 +8846,13 @@ object mod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorNull: Self = StObject.set(x, "color", null)
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setColorVarargs(value: ((ThemeValue[colors, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "color", js.Array(value :_*))
+      inline def setColorVarargs(value: ((ThemeValue[colors, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "color", js.Array(value*))
       
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
@@ -9683,7 +8862,9 @@ object mod {
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
-      inline def setCss(value: CSSObject | FlattenSimpleInterpolation | String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+      inline def setCss(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StyledComponents.CSSObject */ Any) | String
+      ): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
       inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
       
@@ -9703,7 +8884,7 @@ object mod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -9713,74 +8894,53 @@ object mod {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setDisplay(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+      inline def setDisplay(value: ResponsiveValue[Display, RequiredTheme]): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
       inline def setDisplayNull: Self = StObject.set(x, "display", null)
       
       inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
       
-      inline def setDisplayVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any) | Null)*
-      ): Self = StObject.set(x, "display", js.Array(value :_*))
+      inline def setDisplayVarargs(value: (Display | Null)*): Self = StObject.set(x, "display", js.Array(value*))
       
       inline def setDraggable(value: Booleanish): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
       
       inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
       
-      inline def setFlex(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
+      inline def setFlex(value: ResponsiveValue[Flex[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
       
       inline def setFlexNull: Self = StObject.set(x, "flex", null)
       
       inline def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
       
-      inline def setFlexVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "flex", js.Array(value :_*))
+      inline def setFlexVarargs(value: (Flex[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "flex", js.Array(value*))
       
-      inline def setFontSize(value: ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
       inline def setFontSizeNull: Self = StObject.set(x, "fontSize", null)
       
       inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
-      inline def setFontSizeVarargs(value: ((ThemeValue[fontSizes, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "fontSize", js.Array(value :_*))
+      inline def setFontSizeVarargs(value: ((ThemeValue[fontSizes, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "fontSize", js.Array(value*))
       
-      inline def setFontWeight(value: ResponsiveValue[ThemeValue[fontWeights, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+      inline def setFontWeight(value: ResponsiveValue[ThemeValue[fontWeights, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
       
       inline def setFontWeightNull: Self = StObject.set(x, "fontWeight", null)
       
       inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
       
-      inline def setFontWeightVarargs(value: ((ThemeValue[fontWeights, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "fontWeight", js.Array(value :_*))
+      inline def setFontWeightVarargs(value: ((ThemeValue[fontWeights, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "fontWeight", js.Array(value*))
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
       inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
       
-      inline def setHeight(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: ResponsiveValue[Height[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       inline def setHeightNull: Self = StObject.set(x, "height", null)
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setHeightVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "height", js.Array(value :_*))
+      inline def setHeightVarargs(value: (Height[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "height", js.Array(value*))
       
       inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
@@ -9790,7 +8950,7 @@ object mod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -9832,185 +8992,161 @@ object mod {
       
       inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
-      inline def setM(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
+      inline def setM(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
       
       inline def setMNull: Self = StObject.set(x, "m", null)
       
       inline def setMUndefined: Self = StObject.set(x, "m", js.undefined)
       
-      inline def setMVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "m", js.Array(value :_*))
+      inline def setMVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "m", js.Array(value*))
       
-      inline def setMargin(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      inline def setMarginBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+      inline def setMarginBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
       
       inline def setMarginBottomNull: Self = StObject.set(x, "marginBottom", null)
       
       inline def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
       
-      inline def setMarginBottomVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginBottom", js.Array(value :_*))
+      inline def setMarginBottomVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginBottom", js.Array(value*))
       
-      inline def setMarginLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+      inline def setMarginLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
       
       inline def setMarginLeftNull: Self = StObject.set(x, "marginLeft", null)
       
       inline def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
       
-      inline def setMarginLeftVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginLeft", js.Array(value :_*))
+      inline def setMarginLeftVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginLeft", js.Array(value*))
       
       inline def setMarginNull: Self = StObject.set(x, "margin", null)
       
-      inline def setMarginRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
+      inline def setMarginRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
       
       inline def setMarginRightNull: Self = StObject.set(x, "marginRight", null)
       
       inline def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
       
-      inline def setMarginRightVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginRight", js.Array(value :_*))
+      inline def setMarginRightVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginRight", js.Array(value*))
       
-      inline def setMarginTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+      inline def setMarginTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
       
       inline def setMarginTopNull: Self = StObject.set(x, "marginTop", null)
       
       inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
       
-      inline def setMarginTopVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginTop", js.Array(value :_*))
+      inline def setMarginTopVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginTop", js.Array(value*))
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      inline def setMarginVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "margin", js.Array(value :_*))
+      inline def setMarginVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "margin", js.Array(value*))
       
-      inline def setMarginX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginX", value.asInstanceOf[js.Any])
+      inline def setMarginX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginX", value.asInstanceOf[js.Any])
       
       inline def setMarginXNull: Self = StObject.set(x, "marginX", null)
       
       inline def setMarginXUndefined: Self = StObject.set(x, "marginX", js.undefined)
       
-      inline def setMarginXVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginX", js.Array(value :_*))
+      inline def setMarginXVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginX", js.Array(value*))
       
-      inline def setMarginY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginY", value.asInstanceOf[js.Any])
+      inline def setMarginY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginY", value.asInstanceOf[js.Any])
       
       inline def setMarginYNull: Self = StObject.set(x, "marginY", null)
       
       inline def setMarginYUndefined: Self = StObject.set(x, "marginY", js.undefined)
       
-      inline def setMarginYVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginY", js.Array(value :_*))
+      inline def setMarginYVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginY", js.Array(value*))
       
-      inline def setMaxHeight(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxHeight<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMaxHeight(value: ResponsiveValue[MaxHeight[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
       inline def setMaxHeightNull: Self = StObject.set(x, "maxHeight", null)
       
       inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
       
-      inline def setMaxHeightVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxHeight<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "maxHeight", js.Array(value :_*))
+      inline def setMaxHeightVarargs(value: (MaxHeight[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "maxHeight", js.Array(value*))
       
-      inline def setMaxWidth(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: ResponsiveValue[MaxWidth[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
       inline def setMaxWidthNull: Self = StObject.set(x, "maxWidth", null)
       
       inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      inline def setMaxWidthVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "maxWidth", js.Array(value :_*))
+      inline def setMaxWidthVarargs(value: (MaxWidth[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "maxWidth", js.Array(value*))
       
-      inline def setMb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
+      inline def setMb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
       
       inline def setMbNull: Self = StObject.set(x, "mb", null)
       
       inline def setMbUndefined: Self = StObject.set(x, "mb", js.undefined)
       
-      inline def setMbVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "mb", js.Array(value :_*))
+      inline def setMbVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "mb", js.Array(value*))
       
-      inline def setMinHeight(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+      inline def setMinHeight(value: ResponsiveValue[MinHeight[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
       
       inline def setMinHeightNull: Self = StObject.set(x, "minHeight", null)
       
       inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
       
-      inline def setMinHeightVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "minHeight", js.Array(value :_*))
+      inline def setMinHeightVarargs(value: (MinHeight[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "minHeight", js.Array(value*))
       
-      inline def setMinWidth(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+      inline def setMinWidth(value: ResponsiveValue[MinWidth[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
       
       inline def setMinWidthNull: Self = StObject.set(x, "minWidth", null)
       
       inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
       
-      inline def setMinWidthVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "minWidth", js.Array(value :_*))
+      inline def setMinWidthVarargs(value: (MinWidth[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "minWidth", js.Array(value*))
       
-      inline def setMl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
+      inline def setMl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
       
       inline def setMlNull: Self = StObject.set(x, "ml", null)
       
       inline def setMlUndefined: Self = StObject.set(x, "ml", js.undefined)
       
-      inline def setMlVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "ml", js.Array(value :_*))
+      inline def setMlVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "ml", js.Array(value*))
       
-      inline def setMr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mr", value.asInstanceOf[js.Any])
+      inline def setMr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "mr", value.asInstanceOf[js.Any])
       
       inline def setMrNull: Self = StObject.set(x, "mr", null)
       
       inline def setMrUndefined: Self = StObject.set(x, "mr", js.undefined)
       
-      inline def setMrVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "mr", js.Array(value :_*))
+      inline def setMrVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "mr", js.Array(value*))
       
-      inline def setMt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
+      inline def setMt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
       
       inline def setMtNull: Self = StObject.set(x, "mt", null)
       
       inline def setMtUndefined: Self = StObject.set(x, "mt", js.undefined)
       
-      inline def setMtVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "mt", js.Array(value :_*))
+      inline def setMtVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "mt", js.Array(value*))
       
       inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       
       inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
       
-      inline def setMx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mx", value.asInstanceOf[js.Any])
+      inline def setMx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "mx", value.asInstanceOf[js.Any])
       
       inline def setMxNull: Self = StObject.set(x, "mx", null)
       
       inline def setMxUndefined: Self = StObject.set(x, "mx", js.undefined)
       
-      inline def setMxVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "mx", js.Array(value :_*))
+      inline def setMxVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "mx", js.Array(value*))
       
-      inline def setMy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
+      inline def setMy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
       
       inline def setMyNull: Self = StObject.set(x, "my", null)
       
       inline def setMyUndefined: Self = StObject.set(x, "my", js.undefined)
       
-      inline def setMyVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "my", js.Array(value :_*))
+      inline def setMyVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "my", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setOnAbort(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       
@@ -10036,7 +9172,7 @@ object mod {
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLSelectElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -10136,7 +9272,7 @@ object mod {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLSelectElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -10264,6 +9400,10 @@ object mod {
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
+      inline def setOnResize(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+      
       inline def setOnScroll(value: UIEvent[HTMLSelectElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
@@ -10328,172 +9468,137 @@ object mod {
       
       inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
       
-      inline def setOpacity(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: ResponsiveValue[Opacity, RequiredTheme]): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
       inline def setOpacityNull: Self = StObject.set(x, "opacity", null)
       
       inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      inline def setOpacityVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ js.Any) | Null)*
-      ): Self = StObject.set(x, "opacity", js.Array(value :_*))
+      inline def setOpacityVarargs(value: (Opacity | Null)*): Self = StObject.set(x, "opacity", js.Array(value*))
       
-      inline def setOrder(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: ResponsiveValue[Order, RequiredTheme]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
       inline def setOrderNull: Self = StObject.set(x, "order", null)
       
       inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      inline def setOrderVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ js.Any) | Null)*
-      ): Self = StObject.set(x, "order", js.Array(value :_*))
+      inline def setOrderVarargs(value: (Order | Null)*): Self = StObject.set(x, "order", js.Array(value*))
       
-      inline def setOverflow(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+      inline def setOverflow(value: ResponsiveValue[Overflow, RequiredTheme]): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
       
       inline def setOverflowNull: Self = StObject.set(x, "overflow", null)
       
       inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
       
-      inline def setOverflowVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any) | Null)*
-      ): Self = StObject.set(x, "overflow", js.Array(value :_*))
+      inline def setOverflowVarargs(value: (Overflow | Null)*): Self = StObject.set(x, "overflow", js.Array(value*))
       
-      inline def setOverflowX(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowX */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "overflowX", value.asInstanceOf[js.Any])
+      inline def setOverflowX(value: ResponsiveValue[OverflowX, RequiredTheme]): Self = StObject.set(x, "overflowX", value.asInstanceOf[js.Any])
       
       inline def setOverflowXNull: Self = StObject.set(x, "overflowX", null)
       
       inline def setOverflowXUndefined: Self = StObject.set(x, "overflowX", js.undefined)
       
-      inline def setOverflowXVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowX */ js.Any) | Null)*
-      ): Self = StObject.set(x, "overflowX", js.Array(value :_*))
+      inline def setOverflowXVarargs(value: (OverflowX | Null)*): Self = StObject.set(x, "overflowX", js.Array(value*))
       
-      inline def setOverflowY(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowY */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "overflowY", value.asInstanceOf[js.Any])
+      inline def setOverflowY(value: ResponsiveValue[OverflowY, RequiredTheme]): Self = StObject.set(x, "overflowY", value.asInstanceOf[js.Any])
       
       inline def setOverflowYNull: Self = StObject.set(x, "overflowY", null)
       
       inline def setOverflowYUndefined: Self = StObject.set(x, "overflowY", js.undefined)
       
-      inline def setOverflowYVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowY */ js.Any) | Null)*
-      ): Self = StObject.set(x, "overflowY", js.Array(value :_*))
+      inline def setOverflowYVarargs(value: (OverflowY | Null)*): Self = StObject.set(x, "overflowY", js.Array(value*))
       
-      inline def setP(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+      inline def setP(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
       
       inline def setPNull: Self = StObject.set(x, "p", null)
       
       inline def setPUndefined: Self = StObject.set(x, "p", js.undefined)
       
-      inline def setPVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "p", js.Array(value :_*))
+      inline def setPVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "p", js.Array(value*))
       
-      inline def setPadding(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      inline def setPaddingBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
+      inline def setPaddingBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
       
       inline def setPaddingBottomNull: Self = StObject.set(x, "paddingBottom", null)
       
       inline def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
       
-      inline def setPaddingBottomVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingBottom", js.Array(value :_*))
+      inline def setPaddingBottomVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingBottom", js.Array(value*))
       
-      inline def setPaddingLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
+      inline def setPaddingLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
       
       inline def setPaddingLeftNull: Self = StObject.set(x, "paddingLeft", null)
       
       inline def setPaddingLeftUndefined: Self = StObject.set(x, "paddingLeft", js.undefined)
       
-      inline def setPaddingLeftVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingLeft", js.Array(value :_*))
+      inline def setPaddingLeftVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingLeft", js.Array(value*))
       
       inline def setPaddingNull: Self = StObject.set(x, "padding", null)
       
-      inline def setPaddingRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
+      inline def setPaddingRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
       
       inline def setPaddingRightNull: Self = StObject.set(x, "paddingRight", null)
       
       inline def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
       
-      inline def setPaddingRightVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingRight", js.Array(value :_*))
+      inline def setPaddingRightVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingRight", js.Array(value*))
       
-      inline def setPaddingTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
+      inline def setPaddingTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
       
       inline def setPaddingTopNull: Self = StObject.set(x, "paddingTop", null)
       
       inline def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
       
-      inline def setPaddingTopVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingTop", js.Array(value :_*))
+      inline def setPaddingTopVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingTop", js.Array(value*))
       
       inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      inline def setPaddingVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "padding", js.Array(value :_*))
+      inline def setPaddingVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "padding", js.Array(value*))
       
-      inline def setPaddingX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
+      inline def setPaddingX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
       
       inline def setPaddingXNull: Self = StObject.set(x, "paddingX", null)
       
       inline def setPaddingXUndefined: Self = StObject.set(x, "paddingX", js.undefined)
       
-      inline def setPaddingXVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingX", js.Array(value :_*))
+      inline def setPaddingXVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingX", js.Array(value*))
       
-      inline def setPaddingY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
+      inline def setPaddingY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
       
       inline def setPaddingYNull: Self = StObject.set(x, "paddingY", null)
       
       inline def setPaddingYUndefined: Self = StObject.set(x, "paddingY", js.undefined)
       
-      inline def setPaddingYVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingY", js.Array(value :_*))
+      inline def setPaddingYVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingY", js.Array(value*))
       
-      inline def setPb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pb", value.asInstanceOf[js.Any])
+      inline def setPb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "pb", value.asInstanceOf[js.Any])
       
       inline def setPbNull: Self = StObject.set(x, "pb", null)
       
       inline def setPbUndefined: Self = StObject.set(x, "pb", js.undefined)
       
-      inline def setPbVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "pb", js.Array(value :_*))
+      inline def setPbVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "pb", js.Array(value*))
       
-      inline def setPl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
+      inline def setPl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
       
       inline def setPlNull: Self = StObject.set(x, "pl", null)
       
       inline def setPlUndefined: Self = StObject.set(x, "pl", js.undefined)
       
-      inline def setPlVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "pl", js.Array(value :_*))
+      inline def setPlVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "pl", js.Array(value*))
       
       inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      inline def setPr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
+      inline def setPr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
       
       inline def setPrNull: Self = StObject.set(x, "pr", null)
       
       inline def setPrUndefined: Self = StObject.set(x, "pr", js.undefined)
       
-      inline def setPrVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "pr", js.Array(value :_*))
+      inline def setPrVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "pr", js.Array(value*))
       
       inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
@@ -10503,37 +9608,37 @@ object mod {
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
       
-      inline def setPt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+      inline def setPt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
       
       inline def setPtNull: Self = StObject.set(x, "pt", null)
       
       inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
       
-      inline def setPtVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "pt", js.Array(value :_*))
+      inline def setPtVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "pt", js.Array(value*))
       
-      inline def setPx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
+      inline def setPx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
       
       inline def setPxNull: Self = StObject.set(x, "px", null)
       
       inline def setPxUndefined: Self = StObject.set(x, "px", js.undefined)
       
-      inline def setPxVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "px", js.Array(value :_*))
+      inline def setPxVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "px", js.Array(value*))
       
-      inline def setPy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "py", value.asInstanceOf[js.Any])
+      inline def setPy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "py", value.asInstanceOf[js.Any])
       
       inline def setPyNull: Self = StObject.set(x, "py", null)
       
       inline def setPyUndefined: Self = StObject.set(x, "py", js.undefined)
       
-      inline def setPyVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "py", js.Array(value :_*))
+      inline def setPyVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "py", js.Array(value*))
       
       inline def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
-      inline def setRef(value: Ref[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: Ref[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      inline def setRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      inline def setRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
       inline def setRefNull: Self = StObject.set(x, "ref", null)
       
@@ -10551,7 +9656,7 @@ object mod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
@@ -10559,20 +9664,13 @@ object mod {
       
       inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
       
-      inline def setSize(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: ResponsiveValue[Height[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeNull: Self = StObject.set(x, "size", null)
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setSizeVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "size", js.Array(value :_*))
+      inline def setSizeVarargs(value: (Height[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "size", js.Array(value*))
       
       inline def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
       
@@ -10595,8 +9693,6 @@ object mod {
       inline def setSuppressHydrationWarningUndefined: Self = StObject.set(x, "suppressHydrationWarning", js.undefined)
       
       inline def setSx(value: SxStyleProp): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
-      
-      inline def setSxNull: Self = StObject.set(x, "sx", null)
       
       inline def setSxUndefined: Self = StObject.set(x, "sx", js.undefined)
       
@@ -10628,7 +9724,7 @@ object mod {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
       
       inline def setVariant(value: ResponsiveValue[String, RequiredTheme]): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
       
@@ -10636,41 +9732,27 @@ object mod {
       
       inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
       
-      inline def setVariantVarargs(value: (String | Null)*): Self = StObject.set(x, "variant", js.Array(value :_*))
+      inline def setVariantVarargs(value: (String | Null)*): Self = StObject.set(x, "variant", js.Array(value*))
       
-      inline def setVerticalAlign(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+      inline def setVerticalAlign(value: ResponsiveValue[VerticalAlign[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
       
       inline def setVerticalAlignNull: Self = StObject.set(x, "verticalAlign", null)
       
       inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
       
-      inline def setVerticalAlignVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "verticalAlign", js.Array(value :_*))
+      inline def setVerticalAlignVarargs(value: (VerticalAlign[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "verticalAlign", js.Array(value*))
       
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
       
-      inline def setWidth(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Width<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: ResponsiveValue[Width[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
       inline def setWidthNull: Self = StObject.set(x, "width", null)
       
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      inline def setWidthVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Width<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "width", js.Array(value :_*))
+      inline def setWidthVarargs(value: (Width[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "width", js.Array(value*))
     }
   }
   
@@ -10692,22 +9774,17 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self)
       */
-    var alignSelf: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var alignSelf: js.UndefOr[ResponsiveValue[AlignSelf, RequiredTheme]] = js.undefined
     
     var alt: js.UndefOr[String] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
@@ -10725,21 +9802,21 @@ object mod {
     
     var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
@@ -10753,11 +9830,11 @@ object mod {
     
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
@@ -10769,13 +9846,13 @@ object mod {
     
     var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
       ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
@@ -10785,7 +9862,7 @@ object mod {
     
     var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
@@ -10799,7 +9876,7 @@ object mod {
     
     var `aria-valuetext`: js.UndefOr[String] = js.undefined
     
-    var as: js.UndefOr[ElementType[js.Any]] = js.undefined
+    var as: js.UndefOr[ElementType[Any]] = js.undefined
     
     var autoCapitalize: js.UndefOr[String] = js.undefined
     
@@ -10811,7 +9888,7 @@ object mod {
     
     var autoSave: js.UndefOr[String] = js.undefined
     
-    var backgroundColor: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var backgroundColor: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /**
       * The color utility parses a component's `color` and `bg` props and converts them into CSS declarations.
@@ -10822,9 +9899,9 @@ object mod {
       *
       * [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color)
       */
-    var bg: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var bg: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
-    var capture: js.UndefOr[Boolean | String] = js.undefined
+    var capture: js.UndefOr[Boolean | user | environment] = js.undefined
     
     var checked: js.UndefOr[Boolean] = js.undefined
     
@@ -10841,7 +9918,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
       */
-    var color: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var color: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -10849,7 +9926,9 @@ object mod {
     
     var crossOrigin: js.UndefOr[String] = js.undefined
     
-    var css: js.UndefOr[CSSObject | FlattenSimpleInterpolation | String] = js.undefined
+    var css: js.UndefOr[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StyledComponents.CSSObject */ Any) | String
+      ] = js.undefined
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
@@ -10870,12 +9949,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
       */
-    var display: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var display: js.UndefOr[ResponsiveValue[Display, RequiredTheme]] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
@@ -10887,12 +9961,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)
       */
-    var flex: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var flex: js.UndefOr[ResponsiveValue[Flex[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     /**
       * The fontSize utility parses a component's `fontSize` prop and converts it into a CSS font-size declaration.
@@ -10903,7 +9972,7 @@ object mod {
       * - And array values are converted into responsive values.
       *
       */
-    var fontSize: js.UndefOr[ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var fontSize: js.UndefOr[ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /**
       * The font-weight CSS property specifies the weight (or boldness) of the font.
@@ -10912,7 +9981,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight)
       */
-    var fontWeight: js.UndefOr[ResponsiveValue[ThemeValue[fontWeights, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var fontWeight: js.UndefOr[ResponsiveValue[ThemeValue[fontWeights, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var form: js.UndefOr[String] = js.undefined
     
@@ -10932,18 +10001,13 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/height)
       */
-    var height: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var height: js.UndefOr[ResponsiveValue[Height[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
     var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
@@ -10966,28 +10030,28 @@ object mod {
     var list: js.UndefOr[String] = js.undefined
     
     /** Margin on top, left, bottom and right */
-    var m: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var m: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top, left, bottom and right */
-    var margin: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var margin: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on bottom */
-    var marginBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on left */
-    var marginLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on right */
-    var marginRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top */
-    var marginTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on left and right */
-    var marginX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top and bottom */
-    var marginY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var max: js.UndefOr[Double | String] = js.undefined
     
@@ -10997,12 +10061,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/max-height)
       */
-    var maxHeight: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxHeight<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var maxHeight: js.UndefOr[ResponsiveValue[MaxHeight[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     var maxLength: js.UndefOr[Double] = js.undefined
     
@@ -11012,15 +10071,10 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/max-width)
       */
-    var maxWidth: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var maxWidth: js.UndefOr[ResponsiveValue[MaxWidth[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     /** Margin on bottom */
-    var mb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var mb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var min: js.UndefOr[Double | String] = js.undefined
     
@@ -11030,12 +10084,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
       */
-    var minHeight: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var minHeight: js.UndefOr[ResponsiveValue[MinHeight[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     var minLength: js.UndefOr[Double] = js.undefined
     
@@ -11045,31 +10094,28 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/min-width)
       */
-    var minWidth: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var minWidth: js.UndefOr[ResponsiveValue[MinWidth[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     /** Margin on left */
-    var ml: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var ml: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on right */
-    var mr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var mr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top */
-    var mt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var mt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var multiple: js.UndefOr[Boolean] = js.undefined
     
     /** Margin on left and right */
-    var mx: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var mx: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top and bottom */
-    var my: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var my: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var name: js.UndefOr[String] = js.undefined
+    
+    var nonce: js.UndefOr[String] = js.undefined
     
     var onAbort: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
@@ -11197,6 +10243,8 @@ object mod {
     
     var onReset: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
     
+    var onResize: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
+    
     var onScroll: js.UndefOr[UIEventHandler[HTMLInputElement]] = js.undefined
     
     var onSeeked: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
@@ -11235,12 +10283,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity)
       */
-    var opacity: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var opacity: js.UndefOr[ResponsiveValue[Opacity, RequiredTheme]] = js.undefined
     
     /**
       * The order CSS property sets the order to lay out an item in a flex or grid container. Items in a container
@@ -11248,12 +10291,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/order)
       */
-    var order: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var order: js.UndefOr[ResponsiveValue[Order, RequiredTheme]] = js.undefined
     
     /**
       * The overflow CSS property sets what to do when an element's content is too big to fit in its block
@@ -11261,12 +10299,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow)
       */
-    var overflow: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var overflow: js.UndefOr[ResponsiveValue[Overflow, RequiredTheme]] = js.undefined
     
     /**
       * The overflow-x CSS property sets what shows when content overflows a block-level element's left
@@ -11274,12 +10307,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-x)
       */
-    var overflowX: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowX */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var overflowX: js.UndefOr[ResponsiveValue[OverflowX, RequiredTheme]] = js.undefined
     
     /**
       * The overflow-y CSS property sets what shows when content overflows a block-level element's top
@@ -11287,68 +10315,63 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-y)
       */
-    var overflowY: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowY */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var overflowY: js.UndefOr[ResponsiveValue[OverflowY, RequiredTheme]] = js.undefined
     
     /** Padding on top, left, bottom and right */
-    var p: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var p: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on top, left, bottom and right */
-    var padding: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var padding: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on bottom */
-    var paddingBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on left */
-    var paddingLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on right */
-    var paddingRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on top */
-    var paddingTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on left and right */
-    var paddingX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on top and bottom */
-    var paddingY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var pattern: js.UndefOr[String] = js.undefined
     
     /** Padding on bottom */
-    var pb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var pb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on left */
-    var pl: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var pl: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var placeholder: js.UndefOr[String] = js.undefined
     
     /** Padding on right */
-    var pr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var pr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var prefix: js.UndefOr[String] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
     
     /** Padding on top */
-    var pt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var pt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on left and right */
-    var px: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var px: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on top and bottom */
-    var py: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var py: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var ref: js.UndefOr[Ref[js.Any]] = js.undefined
+    var ref: js.UndefOr[Ref[Any]] = js.undefined
     
     var required: js.UndefOr[Boolean] = js.undefined
     
@@ -11356,16 +10379,11 @@ object mod {
     
     var results: js.UndefOr[Double] = js.undefined
     
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var size: js.UndefOr[ResponsiveValue[Height[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     var slot: js.UndefOr[String] = js.undefined
     
@@ -11394,7 +10412,7 @@ object mod {
     
     var tx: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.undefined
+    var `type`: js.UndefOr[HTMLInputTypeAttribute] = js.undefined
     
     var typeof: js.UndefOr[String] = js.undefined
     
@@ -11409,12 +10427,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align)
       */
-    var verticalAlign: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var verticalAlign: js.UndefOr[ResponsiveValue[VerticalAlign[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
     
@@ -11426,12 +10439,7 @@ object mod {
       *   - String values are passed as raw CSS values.
       *   - And arrays are converted to responsive width styles.
       */
-    var width: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Width<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var width: js.UndefOr[ResponsiveValue[Width[TLengthStyledSystem], RequiredTheme]] = js.undefined
   }
   object SliderProps {
     
@@ -11454,20 +10462,13 @@ object mod {
       
       inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
-      inline def setAlignSelf(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
+      inline def setAlignSelf(value: ResponsiveValue[AlignSelf, RequiredTheme]): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
       
       inline def setAlignSelfNull: Self = StObject.set(x, "alignSelf", null)
       
       inline def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
       
-      inline def setAlignSelfVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ js.Any) | Null)*
-      ): Self = StObject.set(x, "alignSelf", js.Array(value :_*))
+      inline def setAlignSelfVarargs(value: (AlignSelf | Null)*): Self = StObject.set(x, "alignSelf", js.Array(value*))
       
       inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
@@ -11477,7 +10478,7 @@ object mod {
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -11485,7 +10486,7 @@ object mod {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -11521,7 +10522,7 @@ object mod {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -11533,7 +10534,7 @@ object mod {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -11541,7 +10542,7 @@ object mod {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -11549,7 +10550,7 @@ object mod {
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
@@ -11577,15 +10578,15 @@ object mod {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -11609,7 +10610,7 @@ object mod {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -11619,7 +10620,7 @@ object mod {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -11639,7 +10640,7 @@ object mod {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -11667,7 +10668,7 @@ object mod {
       
       inline def `setAria-valuetextUndefined`: Self = StObject.set(x, "aria-valuetext", js.undefined)
       
-      inline def setAs(value: ElementType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -11691,23 +10692,23 @@ object mod {
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
       
-      inline def setBackgroundColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
       inline def setBackgroundColorNull: Self = StObject.set(x, "backgroundColor", null)
       
       inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      inline def setBackgroundColorVarargs(value: ((ThemeValue[colors, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "backgroundColor", js.Array(value :_*))
+      inline def setBackgroundColorVarargs(value: ((ThemeValue[colors, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "backgroundColor", js.Array(value*))
       
-      inline def setBg(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
+      inline def setBg(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
       
       inline def setBgNull: Self = StObject.set(x, "bg", null)
       
       inline def setBgUndefined: Self = StObject.set(x, "bg", js.undefined)
       
-      inline def setBgVarargs(value: ((ThemeValue[colors, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "bg", js.Array(value :_*))
+      inline def setBgVarargs(value: ((ThemeValue[colors, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "bg", js.Array(value*))
       
-      inline def setCapture(value: Boolean | String): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+      inline def setCapture(value: Boolean | user | environment): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
       inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       
@@ -11723,13 +10724,13 @@ object mod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorNull: Self = StObject.set(x, "color", null)
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setColorVarargs(value: ((ThemeValue[colors, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "color", js.Array(value :_*))
+      inline def setColorVarargs(value: ((ThemeValue[colors, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "color", js.Array(value*))
       
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
@@ -11743,7 +10744,9 @@ object mod {
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
-      inline def setCss(value: CSSObject | FlattenSimpleInterpolation | String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+      inline def setCss(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StyledComponents.CSSObject */ Any) | String
+      ): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
       inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
       
@@ -11763,7 +10766,7 @@ object mod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -11773,20 +10776,13 @@ object mod {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setDisplay(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+      inline def setDisplay(value: ResponsiveValue[Display, RequiredTheme]): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
       inline def setDisplayNull: Self = StObject.set(x, "display", null)
       
       inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
       
-      inline def setDisplayVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any) | Null)*
-      ): Self = StObject.set(x, "display", js.Array(value :_*))
+      inline def setDisplayVarargs(value: (Display | Null)*): Self = StObject.set(x, "display", js.Array(value*))
       
       inline def setDraggable(value: Booleanish): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
       
@@ -11796,36 +10792,29 @@ object mod {
       
       inline def setEnterKeyHintUndefined: Self = StObject.set(x, "enterKeyHint", js.undefined)
       
-      inline def setFlex(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
+      inline def setFlex(value: ResponsiveValue[Flex[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
       
       inline def setFlexNull: Self = StObject.set(x, "flex", null)
       
       inline def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
       
-      inline def setFlexVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "flex", js.Array(value :_*))
+      inline def setFlexVarargs(value: (Flex[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "flex", js.Array(value*))
       
-      inline def setFontSize(value: ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
       inline def setFontSizeNull: Self = StObject.set(x, "fontSize", null)
       
       inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
-      inline def setFontSizeVarargs(value: ((ThemeValue[fontSizes, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "fontSize", js.Array(value :_*))
+      inline def setFontSizeVarargs(value: ((ThemeValue[fontSizes, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "fontSize", js.Array(value*))
       
-      inline def setFontWeight(value: ResponsiveValue[ThemeValue[fontWeights, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+      inline def setFontWeight(value: ResponsiveValue[ThemeValue[fontWeights, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
       
       inline def setFontWeightNull: Self = StObject.set(x, "fontWeight", null)
       
       inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
       
-      inline def setFontWeightVarargs(value: ((ThemeValue[fontWeights, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "fontWeight", js.Array(value :_*))
+      inline def setFontWeightVarargs(value: ((ThemeValue[fontWeights, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "fontWeight", js.Array(value*))
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
@@ -11851,20 +10840,13 @@ object mod {
       
       inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
       
-      inline def setHeight(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: ResponsiveValue[Height[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       inline def setHeightNull: Self = StObject.set(x, "height", null)
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setHeightVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "height", js.Array(value :_*))
+      inline def setHeightVarargs(value: (Height[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "height", js.Array(value*))
       
       inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
@@ -11874,7 +10856,7 @@ object mod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -11920,86 +10902,79 @@ object mod {
       
       inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
       
-      inline def setM(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
+      inline def setM(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
       
       inline def setMNull: Self = StObject.set(x, "m", null)
       
       inline def setMUndefined: Self = StObject.set(x, "m", js.undefined)
       
-      inline def setMVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "m", js.Array(value :_*))
+      inline def setMVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "m", js.Array(value*))
       
-      inline def setMargin(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      inline def setMarginBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+      inline def setMarginBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
       
       inline def setMarginBottomNull: Self = StObject.set(x, "marginBottom", null)
       
       inline def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
       
-      inline def setMarginBottomVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginBottom", js.Array(value :_*))
+      inline def setMarginBottomVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginBottom", js.Array(value*))
       
-      inline def setMarginLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+      inline def setMarginLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
       
       inline def setMarginLeftNull: Self = StObject.set(x, "marginLeft", null)
       
       inline def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
       
-      inline def setMarginLeftVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginLeft", js.Array(value :_*))
+      inline def setMarginLeftVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginLeft", js.Array(value*))
       
       inline def setMarginNull: Self = StObject.set(x, "margin", null)
       
-      inline def setMarginRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
+      inline def setMarginRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
       
       inline def setMarginRightNull: Self = StObject.set(x, "marginRight", null)
       
       inline def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
       
-      inline def setMarginRightVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginRight", js.Array(value :_*))
+      inline def setMarginRightVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginRight", js.Array(value*))
       
-      inline def setMarginTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+      inline def setMarginTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
       
       inline def setMarginTopNull: Self = StObject.set(x, "marginTop", null)
       
       inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
       
-      inline def setMarginTopVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginTop", js.Array(value :_*))
+      inline def setMarginTopVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginTop", js.Array(value*))
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      inline def setMarginVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "margin", js.Array(value :_*))
+      inline def setMarginVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "margin", js.Array(value*))
       
-      inline def setMarginX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginX", value.asInstanceOf[js.Any])
+      inline def setMarginX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginX", value.asInstanceOf[js.Any])
       
       inline def setMarginXNull: Self = StObject.set(x, "marginX", null)
       
       inline def setMarginXUndefined: Self = StObject.set(x, "marginX", js.undefined)
       
-      inline def setMarginXVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginX", js.Array(value :_*))
+      inline def setMarginXVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginX", js.Array(value*))
       
-      inline def setMarginY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginY", value.asInstanceOf[js.Any])
+      inline def setMarginY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginY", value.asInstanceOf[js.Any])
       
       inline def setMarginYNull: Self = StObject.set(x, "marginY", null)
       
       inline def setMarginYUndefined: Self = StObject.set(x, "marginY", js.undefined)
       
-      inline def setMarginYVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginY", js.Array(value :_*))
+      inline def setMarginYVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginY", js.Array(value*))
       
       inline def setMax(value: Double | String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      inline def setMaxHeight(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxHeight<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMaxHeight(value: ResponsiveValue[MaxHeight[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
       inline def setMaxHeightNull: Self = StObject.set(x, "maxHeight", null)
       
       inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
       
-      inline def setMaxHeightVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxHeight<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "maxHeight", js.Array(value :_*))
+      inline def setMaxHeightVarargs(value: (MaxHeight[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "maxHeight", js.Array(value*))
       
       inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
       
@@ -12007,45 +10982,31 @@ object mod {
       
       inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      inline def setMaxWidth(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: ResponsiveValue[MaxWidth[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
       inline def setMaxWidthNull: Self = StObject.set(x, "maxWidth", null)
       
       inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      inline def setMaxWidthVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "maxWidth", js.Array(value :_*))
+      inline def setMaxWidthVarargs(value: (MaxWidth[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "maxWidth", js.Array(value*))
       
-      inline def setMb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
+      inline def setMb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
       
       inline def setMbNull: Self = StObject.set(x, "mb", null)
       
       inline def setMbUndefined: Self = StObject.set(x, "mb", js.undefined)
       
-      inline def setMbVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "mb", js.Array(value :_*))
+      inline def setMbVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "mb", js.Array(value*))
       
       inline def setMin(value: Double | String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      inline def setMinHeight(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+      inline def setMinHeight(value: ResponsiveValue[MinHeight[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
       
       inline def setMinHeightNull: Self = StObject.set(x, "minHeight", null)
       
       inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
       
-      inline def setMinHeightVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "minHeight", js.Array(value :_*))
+      inline def setMinHeightVarargs(value: (MinHeight[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "minHeight", js.Array(value*))
       
       inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
       
@@ -12053,68 +11014,65 @@ object mod {
       
       inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      inline def setMinWidth(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+      inline def setMinWidth(value: ResponsiveValue[MinWidth[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
       
       inline def setMinWidthNull: Self = StObject.set(x, "minWidth", null)
       
       inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
       
-      inline def setMinWidthVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "minWidth", js.Array(value :_*))
+      inline def setMinWidthVarargs(value: (MinWidth[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "minWidth", js.Array(value*))
       
-      inline def setMl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
+      inline def setMl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
       
       inline def setMlNull: Self = StObject.set(x, "ml", null)
       
       inline def setMlUndefined: Self = StObject.set(x, "ml", js.undefined)
       
-      inline def setMlVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "ml", js.Array(value :_*))
+      inline def setMlVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "ml", js.Array(value*))
       
-      inline def setMr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mr", value.asInstanceOf[js.Any])
+      inline def setMr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "mr", value.asInstanceOf[js.Any])
       
       inline def setMrNull: Self = StObject.set(x, "mr", null)
       
       inline def setMrUndefined: Self = StObject.set(x, "mr", js.undefined)
       
-      inline def setMrVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "mr", js.Array(value :_*))
+      inline def setMrVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "mr", js.Array(value*))
       
-      inline def setMt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
+      inline def setMt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
       
       inline def setMtNull: Self = StObject.set(x, "mt", null)
       
       inline def setMtUndefined: Self = StObject.set(x, "mt", js.undefined)
       
-      inline def setMtVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "mt", js.Array(value :_*))
+      inline def setMtVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "mt", js.Array(value*))
       
       inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       
       inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
       
-      inline def setMx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mx", value.asInstanceOf[js.Any])
+      inline def setMx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "mx", value.asInstanceOf[js.Any])
       
       inline def setMxNull: Self = StObject.set(x, "mx", null)
       
       inline def setMxUndefined: Self = StObject.set(x, "mx", js.undefined)
       
-      inline def setMxVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "mx", js.Array(value :_*))
+      inline def setMxVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "mx", js.Array(value*))
       
-      inline def setMy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
+      inline def setMy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
       
       inline def setMyNull: Self = StObject.set(x, "my", null)
       
       inline def setMyUndefined: Self = StObject.set(x, "my", js.undefined)
       
-      inline def setMyVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "my", js.Array(value :_*))
+      inline def setMyVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "my", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setOnAbort(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       
@@ -12140,7 +11098,7 @@ object mod {
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -12240,7 +11198,7 @@ object mod {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -12368,6 +11326,10 @@ object mod {
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
+      inline def setOnResize(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+      
       inline def setOnScroll(value: UIEvent[HTMLInputElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
@@ -12432,176 +11394,141 @@ object mod {
       
       inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
       
-      inline def setOpacity(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: ResponsiveValue[Opacity, RequiredTheme]): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
       inline def setOpacityNull: Self = StObject.set(x, "opacity", null)
       
       inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      inline def setOpacityVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ js.Any) | Null)*
-      ): Self = StObject.set(x, "opacity", js.Array(value :_*))
+      inline def setOpacityVarargs(value: (Opacity | Null)*): Self = StObject.set(x, "opacity", js.Array(value*))
       
-      inline def setOrder(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: ResponsiveValue[Order, RequiredTheme]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
       inline def setOrderNull: Self = StObject.set(x, "order", null)
       
       inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      inline def setOrderVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ js.Any) | Null)*
-      ): Self = StObject.set(x, "order", js.Array(value :_*))
+      inline def setOrderVarargs(value: (Order | Null)*): Self = StObject.set(x, "order", js.Array(value*))
       
-      inline def setOverflow(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+      inline def setOverflow(value: ResponsiveValue[Overflow, RequiredTheme]): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
       
       inline def setOverflowNull: Self = StObject.set(x, "overflow", null)
       
       inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
       
-      inline def setOverflowVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any) | Null)*
-      ): Self = StObject.set(x, "overflow", js.Array(value :_*))
+      inline def setOverflowVarargs(value: (Overflow | Null)*): Self = StObject.set(x, "overflow", js.Array(value*))
       
-      inline def setOverflowX(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowX */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "overflowX", value.asInstanceOf[js.Any])
+      inline def setOverflowX(value: ResponsiveValue[OverflowX, RequiredTheme]): Self = StObject.set(x, "overflowX", value.asInstanceOf[js.Any])
       
       inline def setOverflowXNull: Self = StObject.set(x, "overflowX", null)
       
       inline def setOverflowXUndefined: Self = StObject.set(x, "overflowX", js.undefined)
       
-      inline def setOverflowXVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowX */ js.Any) | Null)*
-      ): Self = StObject.set(x, "overflowX", js.Array(value :_*))
+      inline def setOverflowXVarargs(value: (OverflowX | Null)*): Self = StObject.set(x, "overflowX", js.Array(value*))
       
-      inline def setOverflowY(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowY */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "overflowY", value.asInstanceOf[js.Any])
+      inline def setOverflowY(value: ResponsiveValue[OverflowY, RequiredTheme]): Self = StObject.set(x, "overflowY", value.asInstanceOf[js.Any])
       
       inline def setOverflowYNull: Self = StObject.set(x, "overflowY", null)
       
       inline def setOverflowYUndefined: Self = StObject.set(x, "overflowY", js.undefined)
       
-      inline def setOverflowYVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowY */ js.Any) | Null)*
-      ): Self = StObject.set(x, "overflowY", js.Array(value :_*))
+      inline def setOverflowYVarargs(value: (OverflowY | Null)*): Self = StObject.set(x, "overflowY", js.Array(value*))
       
-      inline def setP(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+      inline def setP(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
       
       inline def setPNull: Self = StObject.set(x, "p", null)
       
       inline def setPUndefined: Self = StObject.set(x, "p", js.undefined)
       
-      inline def setPVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "p", js.Array(value :_*))
+      inline def setPVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "p", js.Array(value*))
       
-      inline def setPadding(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      inline def setPaddingBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
+      inline def setPaddingBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
       
       inline def setPaddingBottomNull: Self = StObject.set(x, "paddingBottom", null)
       
       inline def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
       
-      inline def setPaddingBottomVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingBottom", js.Array(value :_*))
+      inline def setPaddingBottomVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingBottom", js.Array(value*))
       
-      inline def setPaddingLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
+      inline def setPaddingLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
       
       inline def setPaddingLeftNull: Self = StObject.set(x, "paddingLeft", null)
       
       inline def setPaddingLeftUndefined: Self = StObject.set(x, "paddingLeft", js.undefined)
       
-      inline def setPaddingLeftVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingLeft", js.Array(value :_*))
+      inline def setPaddingLeftVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingLeft", js.Array(value*))
       
       inline def setPaddingNull: Self = StObject.set(x, "padding", null)
       
-      inline def setPaddingRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
+      inline def setPaddingRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
       
       inline def setPaddingRightNull: Self = StObject.set(x, "paddingRight", null)
       
       inline def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
       
-      inline def setPaddingRightVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingRight", js.Array(value :_*))
+      inline def setPaddingRightVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingRight", js.Array(value*))
       
-      inline def setPaddingTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
+      inline def setPaddingTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
       
       inline def setPaddingTopNull: Self = StObject.set(x, "paddingTop", null)
       
       inline def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
       
-      inline def setPaddingTopVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingTop", js.Array(value :_*))
+      inline def setPaddingTopVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingTop", js.Array(value*))
       
       inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      inline def setPaddingVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "padding", js.Array(value :_*))
+      inline def setPaddingVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "padding", js.Array(value*))
       
-      inline def setPaddingX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
+      inline def setPaddingX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
       
       inline def setPaddingXNull: Self = StObject.set(x, "paddingX", null)
       
       inline def setPaddingXUndefined: Self = StObject.set(x, "paddingX", js.undefined)
       
-      inline def setPaddingXVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingX", js.Array(value :_*))
+      inline def setPaddingXVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingX", js.Array(value*))
       
-      inline def setPaddingY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
+      inline def setPaddingY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
       
       inline def setPaddingYNull: Self = StObject.set(x, "paddingY", null)
       
       inline def setPaddingYUndefined: Self = StObject.set(x, "paddingY", js.undefined)
       
-      inline def setPaddingYVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingY", js.Array(value :_*))
+      inline def setPaddingYVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingY", js.Array(value*))
       
       inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
       inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
       
-      inline def setPb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pb", value.asInstanceOf[js.Any])
+      inline def setPb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "pb", value.asInstanceOf[js.Any])
       
       inline def setPbNull: Self = StObject.set(x, "pb", null)
       
       inline def setPbUndefined: Self = StObject.set(x, "pb", js.undefined)
       
-      inline def setPbVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "pb", js.Array(value :_*))
+      inline def setPbVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "pb", js.Array(value*))
       
-      inline def setPl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
+      inline def setPl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
       
       inline def setPlNull: Self = StObject.set(x, "pl", null)
       
       inline def setPlUndefined: Self = StObject.set(x, "pl", js.undefined)
       
-      inline def setPlVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "pl", js.Array(value :_*))
+      inline def setPlVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "pl", js.Array(value*))
       
       inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      inline def setPr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
+      inline def setPr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
       
       inline def setPrNull: Self = StObject.set(x, "pr", null)
       
       inline def setPrUndefined: Self = StObject.set(x, "pr", js.undefined)
       
-      inline def setPrVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "pr", js.Array(value :_*))
+      inline def setPrVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "pr", js.Array(value*))
       
       inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
@@ -12611,29 +11538,29 @@ object mod {
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
       
-      inline def setPt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+      inline def setPt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
       
       inline def setPtNull: Self = StObject.set(x, "pt", null)
       
       inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
       
-      inline def setPtVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "pt", js.Array(value :_*))
+      inline def setPtVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "pt", js.Array(value*))
       
-      inline def setPx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
+      inline def setPx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
       
       inline def setPxNull: Self = StObject.set(x, "px", null)
       
       inline def setPxUndefined: Self = StObject.set(x, "px", js.undefined)
       
-      inline def setPxVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "px", js.Array(value :_*))
+      inline def setPxVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "px", js.Array(value*))
       
-      inline def setPy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "py", value.asInstanceOf[js.Any])
+      inline def setPy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "py", value.asInstanceOf[js.Any])
       
       inline def setPyNull: Self = StObject.set(x, "py", null)
       
       inline def setPyUndefined: Self = StObject.set(x, "py", js.undefined)
       
-      inline def setPyVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "py", js.Array(value :_*))
+      inline def setPyVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "py", js.Array(value*))
       
       inline def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
       
@@ -12643,9 +11570,9 @@ object mod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
-      inline def setRef(value: Ref[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: Ref[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      inline def setRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      inline def setRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
       inline def setRefNull: Self = StObject.set(x, "ref", null)
       
@@ -12663,7 +11590,7 @@ object mod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
@@ -12671,20 +11598,13 @@ object mod {
       
       inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
       
-      inline def setSize(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: ResponsiveValue[Height[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeNull: Self = StObject.set(x, "size", null)
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setSizeVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "size", js.Array(value :_*))
+      inline def setSizeVarargs(value: (Height[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "size", js.Array(value*))
       
       inline def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
       
@@ -12716,8 +11636,6 @@ object mod {
       
       inline def setSx(value: SxStyleProp): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
       
-      inline def setSxNull: Self = StObject.set(x, "sx", null)
-      
       inline def setSxUndefined: Self = StObject.set(x, "sx", js.undefined)
       
       inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
@@ -12736,7 +11654,7 @@ object mod {
       
       inline def setTxUndefined: Self = StObject.set(x, "tx", js.undefined)
       
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: HTMLInputTypeAttribute): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
@@ -12752,7 +11670,7 @@ object mod {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
       
       inline def setVariant(value: ResponsiveValue[String, RequiredTheme]): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
       
@@ -12760,41 +11678,27 @@ object mod {
       
       inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
       
-      inline def setVariantVarargs(value: (String | Null)*): Self = StObject.set(x, "variant", js.Array(value :_*))
+      inline def setVariantVarargs(value: (String | Null)*): Self = StObject.set(x, "variant", js.Array(value*))
       
-      inline def setVerticalAlign(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+      inline def setVerticalAlign(value: ResponsiveValue[VerticalAlign[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
       
       inline def setVerticalAlignNull: Self = StObject.set(x, "verticalAlign", null)
       
       inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
       
-      inline def setVerticalAlignVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "verticalAlign", js.Array(value :_*))
+      inline def setVerticalAlignVarargs(value: (VerticalAlign[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "verticalAlign", js.Array(value*))
       
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
       
-      inline def setWidth(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Width<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: ResponsiveValue[Width[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
       inline def setWidthNull: Self = StObject.set(x, "width", null)
       
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      inline def setWidthVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Width<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "width", js.Array(value :_*))
+      inline def setWidthVarargs(value: (Width[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "width", js.Array(value*))
     }
   }
   
@@ -12814,20 +11718,15 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self)
       */
-    var alignSelf: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var alignSelf: js.UndefOr[ResponsiveValue[AlignSelf, RequiredTheme]] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
@@ -12845,21 +11744,21 @@ object mod {
     
     var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
@@ -12873,11 +11772,11 @@ object mod {
     
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
@@ -12889,13 +11788,13 @@ object mod {
     
     var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
       ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
@@ -12905,7 +11804,7 @@ object mod {
     
     var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
@@ -12919,7 +11818,7 @@ object mod {
     
     var `aria-valuetext`: js.UndefOr[String] = js.undefined
     
-    var as: js.UndefOr[ElementType[js.Any]] = js.undefined
+    var as: js.UndefOr[ElementType[Any]] = js.undefined
     
     var autoCapitalize: js.UndefOr[String] = js.undefined
     
@@ -12929,7 +11828,7 @@ object mod {
     
     var autoSave: js.UndefOr[String] = js.undefined
     
-    var backgroundColor: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var backgroundColor: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /**
       * The color utility parses a component's `color` and `bg` props and converts them into CSS declarations.
@@ -12940,7 +11839,7 @@ object mod {
       *
       * [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color)
       */
-    var bg: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var bg: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var checked: js.UndefOr[Boolean] = js.undefined
     
@@ -12957,13 +11856,15 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
       */
-    var color: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var color: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
-    var css: js.UndefOr[CSSObject | FlattenSimpleInterpolation | String] = js.undefined
+    var css: js.UndefOr[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StyledComponents.CSSObject */ Any) | String
+      ] = js.undefined
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
@@ -12984,12 +11885,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
       */
-    var display: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var display: js.UndefOr[ResponsiveValue[Display, RequiredTheme]] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
@@ -12999,12 +11895,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)
       */
-    var flex: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var flex: js.UndefOr[ResponsiveValue[Flex[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     /**
       * The fontSize utility parses a component's `fontSize` prop and converts it into a CSS font-size declaration.
@@ -13015,7 +11906,7 @@ object mod {
       * - And array values are converted into responsive values.
       *
       */
-    var fontSize: js.UndefOr[ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var fontSize: js.UndefOr[ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /**
       * The font-weight CSS property specifies the weight (or boldness) of the font.
@@ -13024,7 +11915,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight)
       */
-    var fontWeight: js.UndefOr[ResponsiveValue[ThemeValue[fontWeights, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var fontWeight: js.UndefOr[ResponsiveValue[ThemeValue[fontWeights, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var form: js.UndefOr[String] = js.undefined
     
@@ -13044,18 +11935,13 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/height)
       */
-    var height: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var height: js.UndefOr[ResponsiveValue[Height[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
     var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
@@ -13076,28 +11962,28 @@ object mod {
     var lang: js.UndefOr[String] = js.undefined
     
     /** Margin on top, left, bottom and right */
-    var m: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var m: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top, left, bottom and right */
-    var margin: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var margin: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on bottom */
-    var marginBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on left */
-    var marginLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on right */
-    var marginRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top */
-    var marginTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on left and right */
-    var marginX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top and bottom */
-    var marginY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /**
       * The max-height CSS property sets the maximum height of an element. It prevents the used value of the height
@@ -13105,12 +11991,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/max-height)
       */
-    var maxHeight: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxHeight<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var maxHeight: js.UndefOr[ResponsiveValue[MaxHeight[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     /**
       * The max-width CSS property sets the maximum width of an element.
@@ -13118,15 +11999,10 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/max-width)
       */
-    var maxWidth: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var maxWidth: js.UndefOr[ResponsiveValue[MaxWidth[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     /** Margin on bottom */
-    var mb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var mb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /**
       * The min-height CSS property sets the minimum height of an element. It prevents the used value of the height
@@ -13134,12 +12010,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
       */
-    var minHeight: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var minHeight: js.UndefOr[ResponsiveValue[MinHeight[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     /**
       * The min-width CSS property sets the minimum width of an element.
@@ -13147,29 +12018,26 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/min-width)
       */
-    var minWidth: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var minWidth: js.UndefOr[ResponsiveValue[MinWidth[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     /** Margin on left */
-    var ml: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var ml: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on right */
-    var mr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var mr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top */
-    var mt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var mt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on left and right */
-    var mx: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var mx: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top and bottom */
-    var my: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var my: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var name: js.UndefOr[String] = js.undefined
+    
+    var nonce: js.UndefOr[String] = js.undefined
     
     var onAbort: js.UndefOr[ReactEventHandler[HTMLButtonElement]] = js.undefined
     
@@ -13297,6 +12165,8 @@ object mod {
     
     var onReset: js.UndefOr[FormEventHandler[HTMLButtonElement]] = js.undefined
     
+    var onResize: js.UndefOr[ReactEventHandler[HTMLButtonElement]] = js.undefined
+    
     var onScroll: js.UndefOr[UIEventHandler[HTMLButtonElement]] = js.undefined
     
     var onSeeked: js.UndefOr[ReactEventHandler[HTMLButtonElement]] = js.undefined
@@ -13335,12 +12205,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity)
       */
-    var opacity: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var opacity: js.UndefOr[ResponsiveValue[Opacity, RequiredTheme]] = js.undefined
     
     /**
       * The order CSS property sets the order to lay out an item in a flex or grid container. Items in a container
@@ -13348,12 +12213,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/order)
       */
-    var order: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var order: js.UndefOr[ResponsiveValue[Order, RequiredTheme]] = js.undefined
     
     /**
       * The overflow CSS property sets what to do when an element's content is too big to fit in its block
@@ -13361,12 +12221,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow)
       */
-    var overflow: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var overflow: js.UndefOr[ResponsiveValue[Overflow, RequiredTheme]] = js.undefined
     
     /**
       * The overflow-x CSS property sets what shows when content overflows a block-level element's left
@@ -13374,12 +12229,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-x)
       */
-    var overflowX: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowX */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var overflowX: js.UndefOr[ResponsiveValue[OverflowX, RequiredTheme]] = js.undefined
     
     /**
       * The overflow-y CSS property sets what shows when content overflows a block-level element's top
@@ -13387,79 +12237,69 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-y)
       */
-    var overflowY: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowY */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var overflowY: js.UndefOr[ResponsiveValue[OverflowY, RequiredTheme]] = js.undefined
     
     /** Padding on top, left, bottom and right */
-    var p: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var p: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on top, left, bottom and right */
-    var padding: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var padding: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on bottom */
-    var paddingBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on left */
-    var paddingLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on right */
-    var paddingRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on top */
-    var paddingTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on left and right */
-    var paddingX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on top and bottom */
-    var paddingY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on bottom */
-    var pb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var pb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on left */
-    var pl: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var pl: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var placeholder: js.UndefOr[String] = js.undefined
     
     /** Padding on right */
-    var pr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var pr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var prefix: js.UndefOr[String] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
     
     /** Padding on top */
-    var pt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var pt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on left and right */
-    var px: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var px: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on top and bottom */
-    var py: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var py: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
-    var ref: js.UndefOr[Ref[js.Any]] = js.undefined
+    var ref: js.UndefOr[Ref[Any]] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
     
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var size: js.UndefOr[ResponsiveValue[Height[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     var slot: js.UndefOr[String] = js.undefined
     
@@ -13499,12 +12339,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align)
       */
-    var verticalAlign: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var verticalAlign: js.UndefOr[ResponsiveValue[VerticalAlign[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
     
@@ -13516,12 +12351,7 @@ object mod {
       *   - String values are passed as raw CSS values.
       *   - And arrays are converted to responsive width styles.
       */
-    var width: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Width<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var width: js.UndefOr[ResponsiveValue[Width[TLengthStyledSystem], RequiredTheme]] = js.undefined
   }
   object SwitchProps {
     
@@ -13540,26 +12370,19 @@ object mod {
       
       inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
-      inline def setAlignSelf(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
+      inline def setAlignSelf(value: ResponsiveValue[AlignSelf, RequiredTheme]): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
       
       inline def setAlignSelfNull: Self = StObject.set(x, "alignSelf", null)
       
       inline def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
       
-      inline def setAlignSelfVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ js.Any) | Null)*
-      ): Self = StObject.set(x, "alignSelf", js.Array(value :_*))
+      inline def setAlignSelfVarargs(value: (AlignSelf | Null)*): Self = StObject.set(x, "alignSelf", js.Array(value*))
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -13567,7 +12390,7 @@ object mod {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -13603,7 +12426,7 @@ object mod {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -13615,7 +12438,7 @@ object mod {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -13623,7 +12446,7 @@ object mod {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -13631,7 +12454,7 @@ object mod {
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
@@ -13659,15 +12482,15 @@ object mod {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -13691,7 +12514,7 @@ object mod {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -13701,7 +12524,7 @@ object mod {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -13721,7 +12544,7 @@ object mod {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -13749,7 +12572,7 @@ object mod {
       
       inline def `setAria-valuetextUndefined`: Self = StObject.set(x, "aria-valuetext", js.undefined)
       
-      inline def setAs(value: ElementType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -13769,21 +12592,21 @@ object mod {
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
       
-      inline def setBackgroundColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
       inline def setBackgroundColorNull: Self = StObject.set(x, "backgroundColor", null)
       
       inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      inline def setBackgroundColorVarargs(value: ((ThemeValue[colors, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "backgroundColor", js.Array(value :_*))
+      inline def setBackgroundColorVarargs(value: ((ThemeValue[colors, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "backgroundColor", js.Array(value*))
       
-      inline def setBg(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
+      inline def setBg(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
       
       inline def setBgNull: Self = StObject.set(x, "bg", null)
       
       inline def setBgUndefined: Self = StObject.set(x, "bg", js.undefined)
       
-      inline def setBgVarargs(value: ((ThemeValue[colors, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "bg", js.Array(value :_*))
+      inline def setBgVarargs(value: ((ThemeValue[colors, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "bg", js.Array(value*))
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -13797,13 +12620,13 @@ object mod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorNull: Self = StObject.set(x, "color", null)
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setColorVarargs(value: ((ThemeValue[colors, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "color", js.Array(value :_*))
+      inline def setColorVarargs(value: ((ThemeValue[colors, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "color", js.Array(value*))
       
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
@@ -13813,7 +12636,9 @@ object mod {
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
-      inline def setCss(value: CSSObject | FlattenSimpleInterpolation | String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+      inline def setCss(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StyledComponents.CSSObject */ Any) | String
+      ): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
       inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
       
@@ -13833,7 +12658,7 @@ object mod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -13843,55 +12668,41 @@ object mod {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setDisplay(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+      inline def setDisplay(value: ResponsiveValue[Display, RequiredTheme]): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
       inline def setDisplayNull: Self = StObject.set(x, "display", null)
       
       inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
       
-      inline def setDisplayVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any) | Null)*
-      ): Self = StObject.set(x, "display", js.Array(value :_*))
+      inline def setDisplayVarargs(value: (Display | Null)*): Self = StObject.set(x, "display", js.Array(value*))
       
       inline def setDraggable(value: Booleanish): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
       
       inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
       
-      inline def setFlex(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
+      inline def setFlex(value: ResponsiveValue[Flex[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
       
       inline def setFlexNull: Self = StObject.set(x, "flex", null)
       
       inline def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
       
-      inline def setFlexVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "flex", js.Array(value :_*))
+      inline def setFlexVarargs(value: (Flex[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "flex", js.Array(value*))
       
-      inline def setFontSize(value: ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
       inline def setFontSizeNull: Self = StObject.set(x, "fontSize", null)
       
       inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
-      inline def setFontSizeVarargs(value: ((ThemeValue[fontSizes, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "fontSize", js.Array(value :_*))
+      inline def setFontSizeVarargs(value: ((ThemeValue[fontSizes, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "fontSize", js.Array(value*))
       
-      inline def setFontWeight(value: ResponsiveValue[ThemeValue[fontWeights, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+      inline def setFontWeight(value: ResponsiveValue[ThemeValue[fontWeights, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
       
       inline def setFontWeightNull: Self = StObject.set(x, "fontWeight", null)
       
       inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
       
-      inline def setFontWeightVarargs(value: ((ThemeValue[fontWeights, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "fontWeight", js.Array(value :_*))
+      inline def setFontWeightVarargs(value: ((ThemeValue[fontWeights, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "fontWeight", js.Array(value*))
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
@@ -13917,20 +12728,13 @@ object mod {
       
       inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
       
-      inline def setHeight(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: ResponsiveValue[Height[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       inline def setHeightNull: Self = StObject.set(x, "height", null)
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setHeightVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "height", js.Array(value :_*))
+      inline def setHeightVarargs(value: (Height[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "height", js.Array(value*))
       
       inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
@@ -13940,7 +12744,7 @@ object mod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -13982,181 +12786,157 @@ object mod {
       
       inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
-      inline def setM(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
+      inline def setM(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
       
       inline def setMNull: Self = StObject.set(x, "m", null)
       
       inline def setMUndefined: Self = StObject.set(x, "m", js.undefined)
       
-      inline def setMVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "m", js.Array(value :_*))
+      inline def setMVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "m", js.Array(value*))
       
-      inline def setMargin(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      inline def setMarginBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+      inline def setMarginBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
       
       inline def setMarginBottomNull: Self = StObject.set(x, "marginBottom", null)
       
       inline def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
       
-      inline def setMarginBottomVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginBottom", js.Array(value :_*))
+      inline def setMarginBottomVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginBottom", js.Array(value*))
       
-      inline def setMarginLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+      inline def setMarginLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
       
       inline def setMarginLeftNull: Self = StObject.set(x, "marginLeft", null)
       
       inline def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
       
-      inline def setMarginLeftVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginLeft", js.Array(value :_*))
+      inline def setMarginLeftVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginLeft", js.Array(value*))
       
       inline def setMarginNull: Self = StObject.set(x, "margin", null)
       
-      inline def setMarginRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
+      inline def setMarginRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
       
       inline def setMarginRightNull: Self = StObject.set(x, "marginRight", null)
       
       inline def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
       
-      inline def setMarginRightVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginRight", js.Array(value :_*))
+      inline def setMarginRightVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginRight", js.Array(value*))
       
-      inline def setMarginTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+      inline def setMarginTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
       
       inline def setMarginTopNull: Self = StObject.set(x, "marginTop", null)
       
       inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
       
-      inline def setMarginTopVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginTop", js.Array(value :_*))
+      inline def setMarginTopVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginTop", js.Array(value*))
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      inline def setMarginVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "margin", js.Array(value :_*))
+      inline def setMarginVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "margin", js.Array(value*))
       
-      inline def setMarginX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginX", value.asInstanceOf[js.Any])
+      inline def setMarginX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginX", value.asInstanceOf[js.Any])
       
       inline def setMarginXNull: Self = StObject.set(x, "marginX", null)
       
       inline def setMarginXUndefined: Self = StObject.set(x, "marginX", js.undefined)
       
-      inline def setMarginXVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginX", js.Array(value :_*))
+      inline def setMarginXVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginX", js.Array(value*))
       
-      inline def setMarginY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginY", value.asInstanceOf[js.Any])
+      inline def setMarginY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginY", value.asInstanceOf[js.Any])
       
       inline def setMarginYNull: Self = StObject.set(x, "marginY", null)
       
       inline def setMarginYUndefined: Self = StObject.set(x, "marginY", js.undefined)
       
-      inline def setMarginYVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginY", js.Array(value :_*))
+      inline def setMarginYVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginY", js.Array(value*))
       
-      inline def setMaxHeight(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxHeight<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMaxHeight(value: ResponsiveValue[MaxHeight[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
       inline def setMaxHeightNull: Self = StObject.set(x, "maxHeight", null)
       
       inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
       
-      inline def setMaxHeightVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxHeight<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "maxHeight", js.Array(value :_*))
+      inline def setMaxHeightVarargs(value: (MaxHeight[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "maxHeight", js.Array(value*))
       
-      inline def setMaxWidth(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: ResponsiveValue[MaxWidth[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
       inline def setMaxWidthNull: Self = StObject.set(x, "maxWidth", null)
       
       inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      inline def setMaxWidthVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "maxWidth", js.Array(value :_*))
+      inline def setMaxWidthVarargs(value: (MaxWidth[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "maxWidth", js.Array(value*))
       
-      inline def setMb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
+      inline def setMb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
       
       inline def setMbNull: Self = StObject.set(x, "mb", null)
       
       inline def setMbUndefined: Self = StObject.set(x, "mb", js.undefined)
       
-      inline def setMbVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "mb", js.Array(value :_*))
+      inline def setMbVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "mb", js.Array(value*))
       
-      inline def setMinHeight(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+      inline def setMinHeight(value: ResponsiveValue[MinHeight[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
       
       inline def setMinHeightNull: Self = StObject.set(x, "minHeight", null)
       
       inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
       
-      inline def setMinHeightVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "minHeight", js.Array(value :_*))
+      inline def setMinHeightVarargs(value: (MinHeight[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "minHeight", js.Array(value*))
       
-      inline def setMinWidth(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+      inline def setMinWidth(value: ResponsiveValue[MinWidth[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
       
       inline def setMinWidthNull: Self = StObject.set(x, "minWidth", null)
       
       inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
       
-      inline def setMinWidthVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "minWidth", js.Array(value :_*))
+      inline def setMinWidthVarargs(value: (MinWidth[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "minWidth", js.Array(value*))
       
-      inline def setMl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
+      inline def setMl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
       
       inline def setMlNull: Self = StObject.set(x, "ml", null)
       
       inline def setMlUndefined: Self = StObject.set(x, "ml", js.undefined)
       
-      inline def setMlVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "ml", js.Array(value :_*))
+      inline def setMlVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "ml", js.Array(value*))
       
-      inline def setMr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mr", value.asInstanceOf[js.Any])
+      inline def setMr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "mr", value.asInstanceOf[js.Any])
       
       inline def setMrNull: Self = StObject.set(x, "mr", null)
       
       inline def setMrUndefined: Self = StObject.set(x, "mr", js.undefined)
       
-      inline def setMrVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "mr", js.Array(value :_*))
+      inline def setMrVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "mr", js.Array(value*))
       
-      inline def setMt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
+      inline def setMt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
       
       inline def setMtNull: Self = StObject.set(x, "mt", null)
       
       inline def setMtUndefined: Self = StObject.set(x, "mt", js.undefined)
       
-      inline def setMtVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "mt", js.Array(value :_*))
+      inline def setMtVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "mt", js.Array(value*))
       
-      inline def setMx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mx", value.asInstanceOf[js.Any])
+      inline def setMx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "mx", value.asInstanceOf[js.Any])
       
       inline def setMxNull: Self = StObject.set(x, "mx", null)
       
       inline def setMxUndefined: Self = StObject.set(x, "mx", js.undefined)
       
-      inline def setMxVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "mx", js.Array(value :_*))
+      inline def setMxVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "mx", js.Array(value*))
       
-      inline def setMy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
+      inline def setMy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
       
       inline def setMyNull: Self = StObject.set(x, "my", null)
       
       inline def setMyUndefined: Self = StObject.set(x, "my", js.undefined)
       
-      inline def setMyVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "my", js.Array(value :_*))
+      inline def setMyVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "my", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setOnAbort(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       
@@ -14182,7 +12962,7 @@ object mod {
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLButtonElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -14282,7 +13062,7 @@ object mod {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLButtonElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -14410,6 +13190,10 @@ object mod {
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
+      inline def setOnResize(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+      
       inline def setOnScroll(value: UIEvent[HTMLButtonElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
@@ -14474,172 +13258,137 @@ object mod {
       
       inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
       
-      inline def setOpacity(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: ResponsiveValue[Opacity, RequiredTheme]): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
       inline def setOpacityNull: Self = StObject.set(x, "opacity", null)
       
       inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      inline def setOpacityVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ js.Any) | Null)*
-      ): Self = StObject.set(x, "opacity", js.Array(value :_*))
+      inline def setOpacityVarargs(value: (Opacity | Null)*): Self = StObject.set(x, "opacity", js.Array(value*))
       
-      inline def setOrder(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: ResponsiveValue[Order, RequiredTheme]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
       inline def setOrderNull: Self = StObject.set(x, "order", null)
       
       inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      inline def setOrderVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ js.Any) | Null)*
-      ): Self = StObject.set(x, "order", js.Array(value :_*))
+      inline def setOrderVarargs(value: (Order | Null)*): Self = StObject.set(x, "order", js.Array(value*))
       
-      inline def setOverflow(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+      inline def setOverflow(value: ResponsiveValue[Overflow, RequiredTheme]): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
       
       inline def setOverflowNull: Self = StObject.set(x, "overflow", null)
       
       inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
       
-      inline def setOverflowVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any) | Null)*
-      ): Self = StObject.set(x, "overflow", js.Array(value :_*))
+      inline def setOverflowVarargs(value: (Overflow | Null)*): Self = StObject.set(x, "overflow", js.Array(value*))
       
-      inline def setOverflowX(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowX */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "overflowX", value.asInstanceOf[js.Any])
+      inline def setOverflowX(value: ResponsiveValue[OverflowX, RequiredTheme]): Self = StObject.set(x, "overflowX", value.asInstanceOf[js.Any])
       
       inline def setOverflowXNull: Self = StObject.set(x, "overflowX", null)
       
       inline def setOverflowXUndefined: Self = StObject.set(x, "overflowX", js.undefined)
       
-      inline def setOverflowXVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowX */ js.Any) | Null)*
-      ): Self = StObject.set(x, "overflowX", js.Array(value :_*))
+      inline def setOverflowXVarargs(value: (OverflowX | Null)*): Self = StObject.set(x, "overflowX", js.Array(value*))
       
-      inline def setOverflowY(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowY */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "overflowY", value.asInstanceOf[js.Any])
+      inline def setOverflowY(value: ResponsiveValue[OverflowY, RequiredTheme]): Self = StObject.set(x, "overflowY", value.asInstanceOf[js.Any])
       
       inline def setOverflowYNull: Self = StObject.set(x, "overflowY", null)
       
       inline def setOverflowYUndefined: Self = StObject.set(x, "overflowY", js.undefined)
       
-      inline def setOverflowYVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowY */ js.Any) | Null)*
-      ): Self = StObject.set(x, "overflowY", js.Array(value :_*))
+      inline def setOverflowYVarargs(value: (OverflowY | Null)*): Self = StObject.set(x, "overflowY", js.Array(value*))
       
-      inline def setP(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+      inline def setP(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
       
       inline def setPNull: Self = StObject.set(x, "p", null)
       
       inline def setPUndefined: Self = StObject.set(x, "p", js.undefined)
       
-      inline def setPVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "p", js.Array(value :_*))
+      inline def setPVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "p", js.Array(value*))
       
-      inline def setPadding(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      inline def setPaddingBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
+      inline def setPaddingBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
       
       inline def setPaddingBottomNull: Self = StObject.set(x, "paddingBottom", null)
       
       inline def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
       
-      inline def setPaddingBottomVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingBottom", js.Array(value :_*))
+      inline def setPaddingBottomVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingBottom", js.Array(value*))
       
-      inline def setPaddingLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
+      inline def setPaddingLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
       
       inline def setPaddingLeftNull: Self = StObject.set(x, "paddingLeft", null)
       
       inline def setPaddingLeftUndefined: Self = StObject.set(x, "paddingLeft", js.undefined)
       
-      inline def setPaddingLeftVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingLeft", js.Array(value :_*))
+      inline def setPaddingLeftVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingLeft", js.Array(value*))
       
       inline def setPaddingNull: Self = StObject.set(x, "padding", null)
       
-      inline def setPaddingRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
+      inline def setPaddingRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
       
       inline def setPaddingRightNull: Self = StObject.set(x, "paddingRight", null)
       
       inline def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
       
-      inline def setPaddingRightVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingRight", js.Array(value :_*))
+      inline def setPaddingRightVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingRight", js.Array(value*))
       
-      inline def setPaddingTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
+      inline def setPaddingTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
       
       inline def setPaddingTopNull: Self = StObject.set(x, "paddingTop", null)
       
       inline def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
       
-      inline def setPaddingTopVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingTop", js.Array(value :_*))
+      inline def setPaddingTopVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingTop", js.Array(value*))
       
       inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      inline def setPaddingVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "padding", js.Array(value :_*))
+      inline def setPaddingVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "padding", js.Array(value*))
       
-      inline def setPaddingX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
+      inline def setPaddingX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
       
       inline def setPaddingXNull: Self = StObject.set(x, "paddingX", null)
       
       inline def setPaddingXUndefined: Self = StObject.set(x, "paddingX", js.undefined)
       
-      inline def setPaddingXVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingX", js.Array(value :_*))
+      inline def setPaddingXVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingX", js.Array(value*))
       
-      inline def setPaddingY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
+      inline def setPaddingY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
       
       inline def setPaddingYNull: Self = StObject.set(x, "paddingY", null)
       
       inline def setPaddingYUndefined: Self = StObject.set(x, "paddingY", js.undefined)
       
-      inline def setPaddingYVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingY", js.Array(value :_*))
+      inline def setPaddingYVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingY", js.Array(value*))
       
-      inline def setPb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pb", value.asInstanceOf[js.Any])
+      inline def setPb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "pb", value.asInstanceOf[js.Any])
       
       inline def setPbNull: Self = StObject.set(x, "pb", null)
       
       inline def setPbUndefined: Self = StObject.set(x, "pb", js.undefined)
       
-      inline def setPbVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "pb", js.Array(value :_*))
+      inline def setPbVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "pb", js.Array(value*))
       
-      inline def setPl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
+      inline def setPl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
       
       inline def setPlNull: Self = StObject.set(x, "pl", null)
       
       inline def setPlUndefined: Self = StObject.set(x, "pl", js.undefined)
       
-      inline def setPlVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "pl", js.Array(value :_*))
+      inline def setPlVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "pl", js.Array(value*))
       
       inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      inline def setPr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
+      inline def setPr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
       
       inline def setPrNull: Self = StObject.set(x, "pr", null)
       
       inline def setPrUndefined: Self = StObject.set(x, "pr", js.undefined)
       
-      inline def setPrVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "pr", js.Array(value :_*))
+      inline def setPrVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "pr", js.Array(value*))
       
       inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
@@ -14649,37 +13398,37 @@ object mod {
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
       
-      inline def setPt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+      inline def setPt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
       
       inline def setPtNull: Self = StObject.set(x, "pt", null)
       
       inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
       
-      inline def setPtVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "pt", js.Array(value :_*))
+      inline def setPtVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "pt", js.Array(value*))
       
-      inline def setPx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
+      inline def setPx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
       
       inline def setPxNull: Self = StObject.set(x, "px", null)
       
       inline def setPxUndefined: Self = StObject.set(x, "px", js.undefined)
       
-      inline def setPxVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "px", js.Array(value :_*))
+      inline def setPxVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "px", js.Array(value*))
       
-      inline def setPy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "py", value.asInstanceOf[js.Any])
+      inline def setPy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "py", value.asInstanceOf[js.Any])
       
       inline def setPyNull: Self = StObject.set(x, "py", null)
       
       inline def setPyUndefined: Self = StObject.set(x, "py", js.undefined)
       
-      inline def setPyVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "py", js.Array(value :_*))
+      inline def setPyVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "py", js.Array(value*))
       
       inline def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
-      inline def setRef(value: Ref[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: Ref[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      inline def setRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      inline def setRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
       inline def setRefNull: Self = StObject.set(x, "ref", null)
       
@@ -14693,7 +13442,7 @@ object mod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
@@ -14701,20 +13450,13 @@ object mod {
       
       inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
       
-      inline def setSize(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: ResponsiveValue[Height[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeNull: Self = StObject.set(x, "size", null)
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setSizeVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "size", js.Array(value :_*))
+      inline def setSizeVarargs(value: (Height[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "size", js.Array(value*))
       
       inline def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
       
@@ -14737,8 +13479,6 @@ object mod {
       inline def setSuppressHydrationWarningUndefined: Self = StObject.set(x, "suppressHydrationWarning", js.undefined)
       
       inline def setSx(value: SxStyleProp): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
-      
-      inline def setSxNull: Self = StObject.set(x, "sx", null)
       
       inline def setSxUndefined: Self = StObject.set(x, "sx", js.undefined)
       
@@ -14774,7 +13514,7 @@ object mod {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
       
       inline def setVariant(value: ResponsiveValue[String, RequiredTheme]): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
       
@@ -14782,41 +13522,27 @@ object mod {
       
       inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
       
-      inline def setVariantVarargs(value: (String | Null)*): Self = StObject.set(x, "variant", js.Array(value :_*))
+      inline def setVariantVarargs(value: (String | Null)*): Self = StObject.set(x, "variant", js.Array(value*))
       
-      inline def setVerticalAlign(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+      inline def setVerticalAlign(value: ResponsiveValue[VerticalAlign[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
       
       inline def setVerticalAlignNull: Self = StObject.set(x, "verticalAlign", null)
       
       inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
       
-      inline def setVerticalAlignVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "verticalAlign", js.Array(value :_*))
+      inline def setVerticalAlignVarargs(value: (VerticalAlign[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "verticalAlign", js.Array(value*))
       
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
       
-      inline def setWidth(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Width<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: ResponsiveValue[Width[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
       inline def setWidthNull: Self = StObject.set(x, "width", null)
       
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      inline def setWidthVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Width<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "width", js.Array(value :_*))
+      inline def setWidthVarargs(value: (Width[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "width", js.Array(value*))
     }
   }
   
@@ -14836,20 +13562,15 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self)
       */
-    var alignSelf: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var alignSelf: js.UndefOr[ResponsiveValue[AlignSelf, RequiredTheme]] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
@@ -14867,21 +13588,21 @@ object mod {
     
     var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
@@ -14895,11 +13616,11 @@ object mod {
     
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
@@ -14911,13 +13632,13 @@ object mod {
     
     var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
       ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
@@ -14927,7 +13648,7 @@ object mod {
     
     var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
@@ -14941,7 +13662,7 @@ object mod {
     
     var `aria-valuetext`: js.UndefOr[String] = js.undefined
     
-    var as: js.UndefOr[ElementType[js.Any]] = js.undefined
+    var as: js.UndefOr[ElementType[Any]] = js.undefined
     
     var autoCapitalize: js.UndefOr[String] = js.undefined
     
@@ -14953,7 +13674,7 @@ object mod {
     
     var autoSave: js.UndefOr[String] = js.undefined
     
-    var backgroundColor: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var backgroundColor: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /**
       * The color utility parses a component's `color` and `bg` props and converts them into CSS declarations.
@@ -14964,7 +13685,7 @@ object mod {
       *
       * [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color)
       */
-    var bg: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var bg: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var children: js.UndefOr[ReactNode] = js.undefined
     
@@ -14979,7 +13700,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
       */
-    var color: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var color: js.UndefOr[ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var cols: js.UndefOr[Double] = js.undefined
     
@@ -14987,7 +13708,9 @@ object mod {
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
-    var css: js.UndefOr[CSSObject | FlattenSimpleInterpolation | String] = js.undefined
+    var css: js.UndefOr[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StyledComponents.CSSObject */ Any) | String
+      ] = js.undefined
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
@@ -15010,12 +13733,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
       */
-    var display: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var display: js.UndefOr[ResponsiveValue[Display, RequiredTheme]] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
@@ -15025,12 +13743,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)
       */
-    var flex: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var flex: js.UndefOr[ResponsiveValue[Flex[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     /**
       * The fontSize utility parses a component's `fontSize` prop and converts it into a CSS font-size declaration.
@@ -15041,7 +13754,7 @@ object mod {
       * - And array values are converted into responsive values.
       *
       */
-    var fontSize: js.UndefOr[ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var fontSize: js.UndefOr[ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /**
       * The font-weight CSS property specifies the weight (or boldness) of the font.
@@ -15050,7 +13763,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight)
       */
-    var fontWeight: js.UndefOr[ResponsiveValue[ThemeValue[fontWeights, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var fontWeight: js.UndefOr[ResponsiveValue[ThemeValue[fontWeights, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var form: js.UndefOr[String] = js.undefined
     
@@ -15060,18 +13773,13 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/height)
       */
-    var height: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var height: js.UndefOr[ResponsiveValue[Height[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
     var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
@@ -15092,28 +13800,28 @@ object mod {
     var lang: js.UndefOr[String] = js.undefined
     
     /** Margin on top, left, bottom and right */
-    var m: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var m: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top, left, bottom and right */
-    var margin: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var margin: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on bottom */
-    var marginBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on left */
-    var marginLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on right */
-    var marginRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top */
-    var marginTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on left and right */
-    var marginX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top and bottom */
-    var marginY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var marginY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /**
       * The max-height CSS property sets the maximum height of an element. It prevents the used value of the height
@@ -15121,12 +13829,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/max-height)
       */
-    var maxHeight: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxHeight<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var maxHeight: js.UndefOr[ResponsiveValue[MaxHeight[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     var maxLength: js.UndefOr[Double] = js.undefined
     
@@ -15136,15 +13839,10 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/max-width)
       */
-    var maxWidth: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var maxWidth: js.UndefOr[ResponsiveValue[MaxWidth[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     /** Margin on bottom */
-    var mb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var mb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /**
       * The min-height CSS property sets the minimum height of an element. It prevents the used value of the height
@@ -15152,12 +13850,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
       */
-    var minHeight: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var minHeight: js.UndefOr[ResponsiveValue[MinHeight[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     var minLength: js.UndefOr[Double] = js.undefined
     
@@ -15167,29 +13860,26 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/min-width)
       */
-    var minWidth: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var minWidth: js.UndefOr[ResponsiveValue[MinWidth[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     /** Margin on left */
-    var ml: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var ml: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on right */
-    var mr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var mr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top */
-    var mt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var mt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on left and right */
-    var mx: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var mx: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Margin on top and bottom */
-    var my: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var my: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var name: js.UndefOr[String] = js.undefined
+    
+    var nonce: js.UndefOr[String] = js.undefined
     
     var onAbort: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] = js.undefined
     
@@ -15317,6 +14007,8 @@ object mod {
     
     var onReset: js.UndefOr[FormEventHandler[HTMLTextAreaElement]] = js.undefined
     
+    var onResize: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] = js.undefined
+    
     var onScroll: js.UndefOr[UIEventHandler[HTMLTextAreaElement]] = js.undefined
     
     var onSeeked: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] = js.undefined
@@ -15355,12 +14047,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity)
       */
-    var opacity: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var opacity: js.UndefOr[ResponsiveValue[Opacity, RequiredTheme]] = js.undefined
     
     /**
       * The order CSS property sets the order to lay out an item in a flex or grid container. Items in a container
@@ -15368,12 +14055,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/order)
       */
-    var order: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var order: js.UndefOr[ResponsiveValue[Order, RequiredTheme]] = js.undefined
     
     /**
       * The overflow CSS property sets what to do when an element's content is too big to fit in its block
@@ -15381,12 +14063,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow)
       */
-    var overflow: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var overflow: js.UndefOr[ResponsiveValue[Overflow, RequiredTheme]] = js.undefined
     
     /**
       * The overflow-x CSS property sets what shows when content overflows a block-level element's left
@@ -15394,12 +14071,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-x)
       */
-    var overflowX: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowX */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var overflowX: js.UndefOr[ResponsiveValue[OverflowX, RequiredTheme]] = js.undefined
     
     /**
       * The overflow-y CSS property sets what shows when content overflows a block-level element's top
@@ -15407,66 +14079,61 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-y)
       */
-    var overflowY: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowY */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var overflowY: js.UndefOr[ResponsiveValue[OverflowY, RequiredTheme]] = js.undefined
     
     /** Padding on top, left, bottom and right */
-    var p: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var p: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on top, left, bottom and right */
-    var padding: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var padding: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on bottom */
-    var paddingBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on left */
-    var paddingLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on right */
-    var paddingRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on top */
-    var paddingTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on left and right */
-    var paddingX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on top and bottom */
-    var paddingY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var paddingY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on bottom */
-    var pb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var pb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on left */
-    var pl: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var pl: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var placeholder: js.UndefOr[String] = js.undefined
     
     /** Padding on right */
-    var pr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var pr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var prefix: js.UndefOr[String] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
     
     /** Padding on top */
-    var pt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var pt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on left and right */
-    var px: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var px: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     /** Padding on top and bottom */
-    var py: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]] = js.undefined
+    var py: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]] = js.undefined
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var ref: js.UndefOr[Ref[js.Any]] = js.undefined
+    var ref: js.UndefOr[Ref[Any]] = js.undefined
     
     var required: js.UndefOr[Boolean] = js.undefined
     
@@ -15474,18 +14141,13 @@ object mod {
     
     var results: js.UndefOr[Double] = js.undefined
     
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var rows: js.UndefOr[Double] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var size: js.UndefOr[ResponsiveValue[Height[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     var slot: js.UndefOr[String] = js.undefined
     
@@ -15523,12 +14185,7 @@ object mod {
       *
       * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align)
       */
-    var verticalAlign: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var verticalAlign: js.UndefOr[ResponsiveValue[VerticalAlign[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
     
@@ -15540,12 +14197,7 @@ object mod {
       *   - String values are passed as raw CSS values.
       *   - And arrays are converted to responsive width styles.
       */
-    var width: js.UndefOr[
-        ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Width<TLengthStyledSystem> */ js.Any, 
-          RequiredTheme
-        ]
-      ] = js.undefined
+    var width: js.UndefOr[ResponsiveValue[Width[TLengthStyledSystem], RequiredTheme]] = js.undefined
     
     var wrap: js.UndefOr[String] = js.undefined
   }
@@ -15566,26 +14218,19 @@ object mod {
       
       inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
-      inline def setAlignSelf(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
+      inline def setAlignSelf(value: ResponsiveValue[AlignSelf, RequiredTheme]): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
       
       inline def setAlignSelfNull: Self = StObject.set(x, "alignSelf", null)
       
       inline def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
       
-      inline def setAlignSelfVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ js.Any) | Null)*
-      ): Self = StObject.set(x, "alignSelf", js.Array(value :_*))
+      inline def setAlignSelfVarargs(value: (AlignSelf | Null)*): Self = StObject.set(x, "alignSelf", js.Array(value*))
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -15593,7 +14238,7 @@ object mod {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -15629,7 +14274,7 @@ object mod {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -15641,7 +14286,7 @@ object mod {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -15649,7 +14294,7 @@ object mod {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -15657,7 +14302,7 @@ object mod {
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
@@ -15685,15 +14330,15 @@ object mod {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -15717,7 +14362,7 @@ object mod {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -15727,7 +14372,7 @@ object mod {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -15747,7 +14392,7 @@ object mod {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -15775,7 +14420,7 @@ object mod {
       
       inline def `setAria-valuetextUndefined`: Self = StObject.set(x, "aria-valuetext", js.undefined)
       
-      inline def setAs(value: ElementType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -15799,21 +14444,21 @@ object mod {
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
       
-      inline def setBackgroundColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
       inline def setBackgroundColorNull: Self = StObject.set(x, "backgroundColor", null)
       
       inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      inline def setBackgroundColorVarargs(value: ((ThemeValue[colors, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "backgroundColor", js.Array(value :_*))
+      inline def setBackgroundColorVarargs(value: ((ThemeValue[colors, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "backgroundColor", js.Array(value*))
       
-      inline def setBg(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
+      inline def setBg(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
       
       inline def setBgNull: Self = StObject.set(x, "bg", null)
       
       inline def setBgUndefined: Self = StObject.set(x, "bg", js.undefined)
       
-      inline def setBgVarargs(value: ((ThemeValue[colors, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "bg", js.Array(value :_*))
+      inline def setBgVarargs(value: ((ThemeValue[colors, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "bg", js.Array(value*))
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -15823,13 +14468,13 @@ object mod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: ResponsiveValue[ThemeValue[colors, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorNull: Self = StObject.set(x, "color", null)
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setColorVarargs(value: ((ThemeValue[colors, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "color", js.Array(value :_*))
+      inline def setColorVarargs(value: ((ThemeValue[colors, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "color", js.Array(value*))
       
       inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
       
@@ -15843,7 +14488,9 @@ object mod {
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
-      inline def setCss(value: CSSObject | FlattenSimpleInterpolation | String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+      inline def setCss(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StyledComponents.CSSObject */ Any) | String
+      ): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
       inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
       
@@ -15863,7 +14510,7 @@ object mod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -15877,74 +14524,53 @@ object mod {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setDisplay(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+      inline def setDisplay(value: ResponsiveValue[Display, RequiredTheme]): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
       inline def setDisplayNull: Self = StObject.set(x, "display", null)
       
       inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
       
-      inline def setDisplayVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any) | Null)*
-      ): Self = StObject.set(x, "display", js.Array(value :_*))
+      inline def setDisplayVarargs(value: (Display | Null)*): Self = StObject.set(x, "display", js.Array(value*))
       
       inline def setDraggable(value: Booleanish): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
       
       inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
       
-      inline def setFlex(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
+      inline def setFlex(value: ResponsiveValue[Flex[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
       
       inline def setFlexNull: Self = StObject.set(x, "flex", null)
       
       inline def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
       
-      inline def setFlexVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "flex", js.Array(value :_*))
+      inline def setFlexVarargs(value: (Flex[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "flex", js.Array(value*))
       
-      inline def setFontSize(value: ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
       inline def setFontSizeNull: Self = StObject.set(x, "fontSize", null)
       
       inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
-      inline def setFontSizeVarargs(value: ((ThemeValue[fontSizes, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "fontSize", js.Array(value :_*))
+      inline def setFontSizeVarargs(value: ((ThemeValue[fontSizes, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "fontSize", js.Array(value*))
       
-      inline def setFontWeight(value: ResponsiveValue[ThemeValue[fontWeights, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+      inline def setFontWeight(value: ResponsiveValue[ThemeValue[fontWeights, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
       
       inline def setFontWeightNull: Self = StObject.set(x, "fontWeight", null)
       
       inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
       
-      inline def setFontWeightVarargs(value: ((ThemeValue[fontWeights, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "fontWeight", js.Array(value :_*))
+      inline def setFontWeightVarargs(value: ((ThemeValue[fontWeights, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "fontWeight", js.Array(value*))
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
       inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
       
-      inline def setHeight(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: ResponsiveValue[Height[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       inline def setHeightNull: Self = StObject.set(x, "height", null)
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setHeightVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "height", js.Array(value :_*))
+      inline def setHeightVarargs(value: (Height[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "height", js.Array(value*))
       
       inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
@@ -15954,7 +14580,7 @@ object mod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -15996,189 +14622,165 @@ object mod {
       
       inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
-      inline def setM(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
+      inline def setM(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
       
       inline def setMNull: Self = StObject.set(x, "m", null)
       
       inline def setMUndefined: Self = StObject.set(x, "m", js.undefined)
       
-      inline def setMVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "m", js.Array(value :_*))
+      inline def setMVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "m", js.Array(value*))
       
-      inline def setMargin(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      inline def setMarginBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+      inline def setMarginBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
       
       inline def setMarginBottomNull: Self = StObject.set(x, "marginBottom", null)
       
       inline def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
       
-      inline def setMarginBottomVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginBottom", js.Array(value :_*))
+      inline def setMarginBottomVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginBottom", js.Array(value*))
       
-      inline def setMarginLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+      inline def setMarginLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
       
       inline def setMarginLeftNull: Self = StObject.set(x, "marginLeft", null)
       
       inline def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
       
-      inline def setMarginLeftVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginLeft", js.Array(value :_*))
+      inline def setMarginLeftVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginLeft", js.Array(value*))
       
       inline def setMarginNull: Self = StObject.set(x, "margin", null)
       
-      inline def setMarginRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
+      inline def setMarginRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
       
       inline def setMarginRightNull: Self = StObject.set(x, "marginRight", null)
       
       inline def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
       
-      inline def setMarginRightVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginRight", js.Array(value :_*))
+      inline def setMarginRightVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginRight", js.Array(value*))
       
-      inline def setMarginTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+      inline def setMarginTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
       
       inline def setMarginTopNull: Self = StObject.set(x, "marginTop", null)
       
       inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
       
-      inline def setMarginTopVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginTop", js.Array(value :_*))
+      inline def setMarginTopVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginTop", js.Array(value*))
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      inline def setMarginVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "margin", js.Array(value :_*))
+      inline def setMarginVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "margin", js.Array(value*))
       
-      inline def setMarginX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginX", value.asInstanceOf[js.Any])
+      inline def setMarginX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginX", value.asInstanceOf[js.Any])
       
       inline def setMarginXNull: Self = StObject.set(x, "marginX", null)
       
       inline def setMarginXUndefined: Self = StObject.set(x, "marginX", js.undefined)
       
-      inline def setMarginXVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginX", js.Array(value :_*))
+      inline def setMarginXVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginX", js.Array(value*))
       
-      inline def setMarginY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "marginY", value.asInstanceOf[js.Any])
+      inline def setMarginY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "marginY", value.asInstanceOf[js.Any])
       
       inline def setMarginYNull: Self = StObject.set(x, "marginY", null)
       
       inline def setMarginYUndefined: Self = StObject.set(x, "marginY", js.undefined)
       
-      inline def setMarginYVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "marginY", js.Array(value :_*))
+      inline def setMarginYVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "marginY", js.Array(value*))
       
-      inline def setMaxHeight(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxHeight<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMaxHeight(value: ResponsiveValue[MaxHeight[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
       inline def setMaxHeightNull: Self = StObject.set(x, "maxHeight", null)
       
       inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
       
-      inline def setMaxHeightVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxHeight<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "maxHeight", js.Array(value :_*))
+      inline def setMaxHeightVarargs(value: (MaxHeight[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "maxHeight", js.Array(value*))
       
       inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
       
       inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
       
-      inline def setMaxWidth(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: ResponsiveValue[MaxWidth[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
       inline def setMaxWidthNull: Self = StObject.set(x, "maxWidth", null)
       
       inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      inline def setMaxWidthVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "maxWidth", js.Array(value :_*))
+      inline def setMaxWidthVarargs(value: (MaxWidth[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "maxWidth", js.Array(value*))
       
-      inline def setMb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
+      inline def setMb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
       
       inline def setMbNull: Self = StObject.set(x, "mb", null)
       
       inline def setMbUndefined: Self = StObject.set(x, "mb", js.undefined)
       
-      inline def setMbVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "mb", js.Array(value :_*))
+      inline def setMbVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "mb", js.Array(value*))
       
-      inline def setMinHeight(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+      inline def setMinHeight(value: ResponsiveValue[MinHeight[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
       
       inline def setMinHeightNull: Self = StObject.set(x, "minHeight", null)
       
       inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
       
-      inline def setMinHeightVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "minHeight", js.Array(value :_*))
+      inline def setMinHeightVarargs(value: (MinHeight[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "minHeight", js.Array(value*))
       
       inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
       
       inline def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
       
-      inline def setMinWidth(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+      inline def setMinWidth(value: ResponsiveValue[MinWidth[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
       
       inline def setMinWidthNull: Self = StObject.set(x, "minWidth", null)
       
       inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
       
-      inline def setMinWidthVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "minWidth", js.Array(value :_*))
+      inline def setMinWidthVarargs(value: (MinWidth[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "minWidth", js.Array(value*))
       
-      inline def setMl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
+      inline def setMl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
       
       inline def setMlNull: Self = StObject.set(x, "ml", null)
       
       inline def setMlUndefined: Self = StObject.set(x, "ml", js.undefined)
       
-      inline def setMlVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "ml", js.Array(value :_*))
+      inline def setMlVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "ml", js.Array(value*))
       
-      inline def setMr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mr", value.asInstanceOf[js.Any])
+      inline def setMr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "mr", value.asInstanceOf[js.Any])
       
       inline def setMrNull: Self = StObject.set(x, "mr", null)
       
       inline def setMrUndefined: Self = StObject.set(x, "mr", js.undefined)
       
-      inline def setMrVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "mr", js.Array(value :_*))
+      inline def setMrVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "mr", js.Array(value*))
       
-      inline def setMt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
+      inline def setMt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
       
       inline def setMtNull: Self = StObject.set(x, "mt", null)
       
       inline def setMtUndefined: Self = StObject.set(x, "mt", js.undefined)
       
-      inline def setMtVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "mt", js.Array(value :_*))
+      inline def setMtVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "mt", js.Array(value*))
       
-      inline def setMx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "mx", value.asInstanceOf[js.Any])
+      inline def setMx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "mx", value.asInstanceOf[js.Any])
       
       inline def setMxNull: Self = StObject.set(x, "mx", null)
       
       inline def setMxUndefined: Self = StObject.set(x, "mx", js.undefined)
       
-      inline def setMxVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "mx", js.Array(value :_*))
+      inline def setMxVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "mx", js.Array(value*))
       
-      inline def setMy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
+      inline def setMy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
       
       inline def setMyNull: Self = StObject.set(x, "my", null)
       
       inline def setMyUndefined: Self = StObject.set(x, "my", js.undefined)
       
-      inline def setMyVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "my", js.Array(value :_*))
+      inline def setMyVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "my", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setOnAbort(value: SyntheticEvent[HTMLTextAreaElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       
@@ -16204,7 +14806,7 @@ object mod {
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLTextAreaElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLTextAreaElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -16304,7 +14906,7 @@ object mod {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLTextAreaElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLTextAreaElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -16432,6 +15034,10 @@ object mod {
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
+      inline def setOnResize(value: SyntheticEvent[HTMLTextAreaElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+      
       inline def setOnScroll(value: UIEvent[HTMLTextAreaElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
@@ -16496,172 +15102,137 @@ object mod {
       
       inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
       
-      inline def setOpacity(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: ResponsiveValue[Opacity, RequiredTheme]): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
       inline def setOpacityNull: Self = StObject.set(x, "opacity", null)
       
       inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      inline def setOpacityVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ js.Any) | Null)*
-      ): Self = StObject.set(x, "opacity", js.Array(value :_*))
+      inline def setOpacityVarargs(value: (Opacity | Null)*): Self = StObject.set(x, "opacity", js.Array(value*))
       
-      inline def setOrder(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: ResponsiveValue[Order, RequiredTheme]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
       inline def setOrderNull: Self = StObject.set(x, "order", null)
       
       inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      inline def setOrderVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ js.Any) | Null)*
-      ): Self = StObject.set(x, "order", js.Array(value :_*))
+      inline def setOrderVarargs(value: (Order | Null)*): Self = StObject.set(x, "order", js.Array(value*))
       
-      inline def setOverflow(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+      inline def setOverflow(value: ResponsiveValue[Overflow, RequiredTheme]): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
       
       inline def setOverflowNull: Self = StObject.set(x, "overflow", null)
       
       inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
       
-      inline def setOverflowVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any) | Null)*
-      ): Self = StObject.set(x, "overflow", js.Array(value :_*))
+      inline def setOverflowVarargs(value: (Overflow | Null)*): Self = StObject.set(x, "overflow", js.Array(value*))
       
-      inline def setOverflowX(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowX */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "overflowX", value.asInstanceOf[js.Any])
+      inline def setOverflowX(value: ResponsiveValue[OverflowX, RequiredTheme]): Self = StObject.set(x, "overflowX", value.asInstanceOf[js.Any])
       
       inline def setOverflowXNull: Self = StObject.set(x, "overflowX", null)
       
       inline def setOverflowXUndefined: Self = StObject.set(x, "overflowX", js.undefined)
       
-      inline def setOverflowXVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowX */ js.Any) | Null)*
-      ): Self = StObject.set(x, "overflowX", js.Array(value :_*))
+      inline def setOverflowXVarargs(value: (OverflowX | Null)*): Self = StObject.set(x, "overflowX", js.Array(value*))
       
-      inline def setOverflowY(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowY */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "overflowY", value.asInstanceOf[js.Any])
+      inline def setOverflowY(value: ResponsiveValue[OverflowY, RequiredTheme]): Self = StObject.set(x, "overflowY", value.asInstanceOf[js.Any])
       
       inline def setOverflowYNull: Self = StObject.set(x, "overflowY", null)
       
       inline def setOverflowYUndefined: Self = StObject.set(x, "overflowY", js.undefined)
       
-      inline def setOverflowYVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowY */ js.Any) | Null)*
-      ): Self = StObject.set(x, "overflowY", js.Array(value :_*))
+      inline def setOverflowYVarargs(value: (OverflowY | Null)*): Self = StObject.set(x, "overflowY", js.Array(value*))
       
-      inline def setP(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+      inline def setP(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
       
       inline def setPNull: Self = StObject.set(x, "p", null)
       
       inline def setPUndefined: Self = StObject.set(x, "p", js.undefined)
       
-      inline def setPVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "p", js.Array(value :_*))
+      inline def setPVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "p", js.Array(value*))
       
-      inline def setPadding(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      inline def setPaddingBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
+      inline def setPaddingBottom(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
       
       inline def setPaddingBottomNull: Self = StObject.set(x, "paddingBottom", null)
       
       inline def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
       
-      inline def setPaddingBottomVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingBottom", js.Array(value :_*))
+      inline def setPaddingBottomVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingBottom", js.Array(value*))
       
-      inline def setPaddingLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
+      inline def setPaddingLeft(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
       
       inline def setPaddingLeftNull: Self = StObject.set(x, "paddingLeft", null)
       
       inline def setPaddingLeftUndefined: Self = StObject.set(x, "paddingLeft", js.undefined)
       
-      inline def setPaddingLeftVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingLeft", js.Array(value :_*))
+      inline def setPaddingLeftVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingLeft", js.Array(value*))
       
       inline def setPaddingNull: Self = StObject.set(x, "padding", null)
       
-      inline def setPaddingRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
+      inline def setPaddingRight(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
       
       inline def setPaddingRightNull: Self = StObject.set(x, "paddingRight", null)
       
       inline def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
       
-      inline def setPaddingRightVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingRight", js.Array(value :_*))
+      inline def setPaddingRightVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingRight", js.Array(value*))
       
-      inline def setPaddingTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
+      inline def setPaddingTop(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
       
       inline def setPaddingTopNull: Self = StObject.set(x, "paddingTop", null)
       
       inline def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
       
-      inline def setPaddingTopVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingTop", js.Array(value :_*))
+      inline def setPaddingTopVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingTop", js.Array(value*))
       
       inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      inline def setPaddingVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "padding", js.Array(value :_*))
+      inline def setPaddingVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "padding", js.Array(value*))
       
-      inline def setPaddingX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
+      inline def setPaddingX(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
       
       inline def setPaddingXNull: Self = StObject.set(x, "paddingX", null)
       
       inline def setPaddingXUndefined: Self = StObject.set(x, "paddingX", js.undefined)
       
-      inline def setPaddingXVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingX", js.Array(value :_*))
+      inline def setPaddingXVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingX", js.Array(value*))
       
-      inline def setPaddingY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
+      inline def setPaddingY(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
       
       inline def setPaddingYNull: Self = StObject.set(x, "paddingY", null)
       
       inline def setPaddingYUndefined: Self = StObject.set(x, "paddingY", js.undefined)
       
-      inline def setPaddingYVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "paddingY", js.Array(value :_*))
+      inline def setPaddingYVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "paddingY", js.Array(value*))
       
-      inline def setPb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pb", value.asInstanceOf[js.Any])
+      inline def setPb(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "pb", value.asInstanceOf[js.Any])
       
       inline def setPbNull: Self = StObject.set(x, "pb", null)
       
       inline def setPbUndefined: Self = StObject.set(x, "pb", js.undefined)
       
-      inline def setPbVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "pb", js.Array(value :_*))
+      inline def setPbVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "pb", js.Array(value*))
       
-      inline def setPl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
+      inline def setPl(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
       
       inline def setPlNull: Self = StObject.set(x, "pl", null)
       
       inline def setPlUndefined: Self = StObject.set(x, "pl", js.undefined)
       
-      inline def setPlVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "pl", js.Array(value :_*))
+      inline def setPlVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "pl", js.Array(value*))
       
       inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      inline def setPr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
+      inline def setPr(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
       
       inline def setPrNull: Self = StObject.set(x, "pr", null)
       
       inline def setPrUndefined: Self = StObject.set(x, "pr", js.undefined)
       
-      inline def setPrVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "pr", js.Array(value :_*))
+      inline def setPrVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "pr", js.Array(value*))
       
       inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
@@ -16671,29 +15242,29 @@ object mod {
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
       
-      inline def setPt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+      inline def setPt(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
       
       inline def setPtNull: Self = StObject.set(x, "pt", null)
       
       inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
       
-      inline def setPtVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "pt", js.Array(value :_*))
+      inline def setPtVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "pt", js.Array(value*))
       
-      inline def setPx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
+      inline def setPx(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
       
       inline def setPxNull: Self = StObject.set(x, "px", null)
       
       inline def setPxUndefined: Self = StObject.set(x, "px", js.undefined)
       
-      inline def setPxVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "px", js.Array(value :_*))
+      inline def setPxVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "px", js.Array(value*))
       
-      inline def setPy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme]): Self = StObject.set(x, "py", value.asInstanceOf[js.Any])
+      inline def setPy(value: ResponsiveValue[ThemeValue[space, RequiredTheme, Any], RequiredTheme]): Self = StObject.set(x, "py", value.asInstanceOf[js.Any])
       
       inline def setPyNull: Self = StObject.set(x, "py", null)
       
       inline def setPyUndefined: Self = StObject.set(x, "py", js.undefined)
       
-      inline def setPyVarargs(value: ((ThemeValue[space, RequiredTheme, js.Any]) | Null)*): Self = StObject.set(x, "py", js.Array(value :_*))
+      inline def setPyVarargs(value: ((ThemeValue[space, RequiredTheme, Any]) | Null)*): Self = StObject.set(x, "py", js.Array(value*))
       
       inline def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
       
@@ -16703,9 +15274,9 @@ object mod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
-      inline def setRef(value: Ref[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: Ref[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      inline def setRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      inline def setRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
       inline def setRefNull: Self = StObject.set(x, "ref", null)
       
@@ -16723,7 +15294,7 @@ object mod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
@@ -16735,20 +15306,13 @@ object mod {
       
       inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
       
-      inline def setSize(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: ResponsiveValue[Height[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeNull: Self = StObject.set(x, "size", null)
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setSizeVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "size", js.Array(value :_*))
+      inline def setSizeVarargs(value: (Height[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "size", js.Array(value*))
       
       inline def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
       
@@ -16771,8 +15335,6 @@ object mod {
       inline def setSuppressHydrationWarningUndefined: Self = StObject.set(x, "suppressHydrationWarning", js.undefined)
       
       inline def setSx(value: SxStyleProp): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
-      
-      inline def setSxNull: Self = StObject.set(x, "sx", null)
       
       inline def setSxUndefined: Self = StObject.set(x, "sx", js.undefined)
       
@@ -16804,7 +15366,7 @@ object mod {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
       
       inline def setVariant(value: ResponsiveValue[String, RequiredTheme]): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
       
@@ -16812,41 +15374,27 @@ object mod {
       
       inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
       
-      inline def setVariantVarargs(value: (String | Null)*): Self = StObject.set(x, "variant", js.Array(value :_*))
+      inline def setVariantVarargs(value: (String | Null)*): Self = StObject.set(x, "variant", js.Array(value*))
       
-      inline def setVerticalAlign(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+      inline def setVerticalAlign(value: ResponsiveValue[VerticalAlign[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
       
       inline def setVerticalAlignNull: Self = StObject.set(x, "verticalAlign", null)
       
       inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
       
-      inline def setVerticalAlignVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "verticalAlign", js.Array(value :_*))
+      inline def setVerticalAlignVarargs(value: (VerticalAlign[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "verticalAlign", js.Array(value*))
       
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
       
-      inline def setWidth(
-        value: ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Width<TLengthStyledSystem> */ js.Any, 
-              RequiredTheme
-            ]
-      ): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: ResponsiveValue[Width[TLengthStyledSystem], RequiredTheme]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
       inline def setWidthNull: Self = StObject.set(x, "width", null)
       
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      inline def setWidthVarargs(
-        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Width<TLengthStyledSystem> */ js.Any) | Null)*
-      ): Self = StObject.set(x, "width", js.Array(value :_*))
+      inline def setWidthVarargs(value: (Width[TLengthStyledSystem] | Null)*): Self = StObject.set(x, "width", js.Array(value*))
       
       inline def setWrap(value: String): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
       

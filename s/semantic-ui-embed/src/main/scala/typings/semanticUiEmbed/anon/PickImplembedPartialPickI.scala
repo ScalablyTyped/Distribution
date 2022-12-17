@@ -10,7 +10,7 @@ trait PickImplembedPartialPickI
   extends StObject
      with Param {
   
-  var embed: String & js.UndefOr[String]
+  var embed: String
   
   var placeholder: js.UndefOr[String] = js.undefined
   
@@ -18,14 +18,14 @@ trait PickImplembedPartialPickI
 }
 object PickImplembedPartialPickI {
   
-  inline def apply(embed: String & js.UndefOr[String]): PickImplembedPartialPickI = {
+  inline def apply(embed: String): PickImplembedPartialPickI = {
     val __obj = js.Dynamic.literal(embed = embed.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplembedPartialPickI]
   }
   
   extension [Self <: PickImplembedPartialPickI](x: Self) {
     
-    inline def setEmbed(value: String & js.UndefOr[String]): Self = StObject.set(x, "embed", value.asInstanceOf[js.Any])
+    inline def setEmbed(value: String): Self = StObject.set(x, "embed", value.asInstanceOf[js.Any])
     
     inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     

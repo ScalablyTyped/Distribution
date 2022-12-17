@@ -1,11 +1,6 @@
 package typings.croppie
 
-import typings.croppie.croppieStrings.base64
-import typings.croppie.croppieStrings.blob
-import typings.croppie.croppieStrings.canvas
-import typings.croppie.croppieStrings.html
 import typings.croppie.croppieStrings.original
-import typings.croppie.croppieStrings.rawcanvas
 import typings.croppie.croppieStrings.viewport
 import typings.croppie.mod.CropType
 import typings.croppie.mod.Format
@@ -90,13 +85,12 @@ object anon {
     
     var size: js.UndefOr[viewport | original | Height] = js.undefined
     
-    var `type`: js.UndefOr[typings.croppie.mod.Type] & (base64 | canvas)
+    var `type`: js.UndefOr[typings.croppie.mod.Type] = js.undefined
   }
   object ResultOptionstypebase64ca {
     
-    inline def apply(`type`: js.UndefOr[typings.croppie.mod.Type] & (base64 | canvas)): ResultOptionstypebase64ca = {
+    inline def apply(): ResultOptionstypebase64ca = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResultOptionstypebase64ca]
     }
     
@@ -118,7 +112,9 @@ object anon {
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setType(value: js.UndefOr[typings.croppie.mod.Type] & (base64 | canvas)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: typings.croppie.mod.Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -133,13 +129,12 @@ object anon {
     
     var size: js.UndefOr[viewport | original | Height] = js.undefined
     
-    var `type`: js.UndefOr[typings.croppie.mod.Type] & blob
+    var `type`: js.UndefOr[typings.croppie.mod.Type] = js.undefined
   }
   object ResultOptionstypeblob {
     
-    inline def apply(`type`: js.UndefOr[typings.croppie.mod.Type] & blob): ResultOptionstypeblob = {
+    inline def apply(): ResultOptionstypeblob = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResultOptionstypeblob]
     }
     
@@ -161,7 +156,9 @@ object anon {
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setType(value: js.UndefOr[typings.croppie.mod.Type] & blob): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: typings.croppie.mod.Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -176,13 +173,12 @@ object anon {
     
     var size: js.UndefOr[viewport | original | Height] = js.undefined
     
-    var `type`: js.UndefOr[typings.croppie.mod.Type] & html
+    var `type`: js.UndefOr[typings.croppie.mod.Type] = js.undefined
   }
   object ResultOptionstypehtml {
     
-    inline def apply(`type`: js.UndefOr[typings.croppie.mod.Type] & html): ResultOptionstypehtml = {
+    inline def apply(): ResultOptionstypehtml = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResultOptionstypehtml]
     }
     
@@ -204,7 +200,9 @@ object anon {
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setType(value: js.UndefOr[typings.croppie.mod.Type] & html): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: typings.croppie.mod.Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -219,13 +217,12 @@ object anon {
     
     var size: js.UndefOr[viewport | original | Height] = js.undefined
     
-    var `type`: js.UndefOr[typings.croppie.mod.Type] & rawcanvas
+    var `type`: js.UndefOr[typings.croppie.mod.Type] = js.undefined
   }
   object ResultOptionstyperawcanva {
     
-    inline def apply(`type`: js.UndefOr[typings.croppie.mod.Type] & rawcanvas): ResultOptionstyperawcanva = {
+    inline def apply(): ResultOptionstyperawcanva = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResultOptionstyperawcanva]
     }
     
@@ -247,7 +244,9 @@ object anon {
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setType(value: js.UndefOr[typings.croppie.mod.Type] & rawcanvas): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: typings.croppie.mod.Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   

@@ -8,11 +8,11 @@ trait ParametersPathArchiveformat extends StObject {
   
   var parameters: PathArchiveformat
   
-  var responses: `410Content6`
+  var responses: `138`
 }
 object ParametersPathArchiveformat {
   
-  inline def apply(parameters: PathArchiveformat, responses: `410Content6`): ParametersPathArchiveformat = {
+  inline def apply(parameters: PathArchiveformat, responses: `138`): ParametersPathArchiveformat = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathArchiveformat]
   }
@@ -21,6 +21,6 @@ object ParametersPathArchiveformat {
     
     inline def setParameters(value: PathArchiveformat): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `410Content6`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `138`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

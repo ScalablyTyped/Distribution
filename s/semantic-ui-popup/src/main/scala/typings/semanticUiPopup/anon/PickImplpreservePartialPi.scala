@@ -98,7 +98,7 @@ trait PickImplpreservePartialPi
   
   var prefer: js.UndefOr[adjacent | opposite] = js.undefined
   
-  var preserve: Boolean & js.UndefOr[Boolean]
+  var preserve: Boolean
   
   var scrollContext: js.UndefOr[String | JQuery] = js.undefined
   
@@ -120,7 +120,7 @@ trait PickImplpreservePartialPi
 }
 object PickImplpreservePartialPi {
   
-  inline def apply(preserve: Boolean & js.UndefOr[Boolean]): PickImplpreservePartialPi = {
+  inline def apply(preserve: Boolean): PickImplpreservePartialPi = {
     val __obj = js.Dynamic.literal(preserve = preserve.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplpreservePartialPi]
   }
@@ -275,7 +275,7 @@ object PickImplpreservePartialPi {
     
     inline def setPreferUndefined: Self = StObject.set(x, "prefer", js.undefined)
     
-    inline def setPreserve(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "preserve", value.asInstanceOf[js.Any])
+    inline def setPreserve(value: Boolean): Self = StObject.set(x, "preserve", value.asInstanceOf[js.Any])
     
     inline def setScrollContext(value: String | JQuery): Self = StObject.set(x, "scrollContext", value.asInstanceOf[js.Any])
     

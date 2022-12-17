@@ -20,7 +20,7 @@ trait PickImplleftPartialPickImActive
   
   var ios: js.UndefOr[String] = js.undefined
   
-  var left: String & js.UndefOr[String]
+  var left: String
   
   var pushable: js.UndefOr[String] = js.undefined
   
@@ -34,7 +34,7 @@ trait PickImplleftPartialPickImActive
 }
 object PickImplleftPartialPickImActive {
   
-  inline def apply(left: String & js.UndefOr[String]): PickImplleftPartialPickImActive = {
+  inline def apply(left: String): PickImplleftPartialPickImActive = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplleftPartialPickImActive]
   }
@@ -61,7 +61,7 @@ object PickImplleftPartialPickImActive {
     
     inline def setIosUndefined: Self = StObject.set(x, "ios", js.undefined)
     
-    inline def setLeft(value: String & js.UndefOr[String]): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     inline def setPushable(value: String): Self = StObject.set(x, "pushable", value.asInstanceOf[js.Any])
     

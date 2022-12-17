@@ -3,8 +3,8 @@ package typings.appBuilderLib
 import typings.appBuilderLib.anon.Account
 import typings.appBuilderLib.anon.Arch
 import typings.appBuilderLib.anon.Channel
-import typings.appBuilderLib.anon.Product
 import typings.appBuilderLib.anon.Redirect
+import typings.appBuilderLib.anon.Release
 import typings.appBuilderLib.appBuilderLibStrings.artifacts
 import typings.appBuilderLib.appBuilderLibStrings.releases
 import typings.builderUtilRuntime.outPublishOptionsMod.KeygenOptions
@@ -55,13 +55,13 @@ object outPublishKeygenPublisherMod {
     
     var links: Redirect
     
-    var relationships: Account
+    var relationships: Release
     
     var `type`: artifacts
   }
   object KeygenArtifact {
     
-    inline def apply(attributes: Arch, id: String, links: Redirect, relationships: Account): KeygenArtifact = {
+    inline def apply(attributes: Arch, id: String, links: Redirect, relationships: Release): KeygenArtifact = {
       val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], relationships = relationships.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("artifacts")
       __obj.asInstanceOf[KeygenArtifact]
@@ -75,7 +75,7 @@ object outPublishKeygenPublisherMod {
       
       inline def setLinks(value: Redirect): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
-      inline def setRelationships(value: Account): Self = StObject.set(x, "relationships", value.asInstanceOf[js.Any])
+      inline def setRelationships(value: Release): Self = StObject.set(x, "relationships", value.asInstanceOf[js.Any])
       
       inline def setType(value: artifacts): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -112,13 +112,13 @@ object outPublishKeygenPublisherMod {
     
     var id: String
     
-    var relationships: Product
+    var relationships: Account
     
     var `type`: releases
   }
   object KeygenRelease {
     
-    inline def apply(attributes: Channel, id: String, relationships: Product): KeygenRelease = {
+    inline def apply(attributes: Channel, id: String, relationships: Account): KeygenRelease = {
       val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], relationships = relationships.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("releases")
       __obj.asInstanceOf[KeygenRelease]
@@ -130,7 +130,7 @@ object outPublishKeygenPublisherMod {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setRelationships(value: Product): Self = StObject.set(x, "relationships", value.asInstanceOf[js.Any])
+      inline def setRelationships(value: Account): Self = StObject.set(x, "relationships", value.asInstanceOf[js.Any])
       
       inline def setType(value: releases): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

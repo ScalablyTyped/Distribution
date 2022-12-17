@@ -10,6 +10,8 @@ trait SnoopId extends StObject {
   
   var appArgs: js.UndefOr[String] = js.undefined
   
+  var channelId: String
+  
   var snoopId: js.UndefOr[String] = js.undefined
   
   var spy: js.UndefOr[String] = js.undefined
@@ -18,8 +20,8 @@ trait SnoopId extends StObject {
 }
 object SnoopId {
   
-  inline def apply(app: String): SnoopId = {
-    val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any])
+  inline def apply(app: String, channelId: String): SnoopId = {
+    val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], channelId = channelId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnoopId]
   }
   
@@ -30,6 +32,8 @@ object SnoopId {
     inline def setAppArgs(value: String): Self = StObject.set(x, "appArgs", value.asInstanceOf[js.Any])
     
     inline def setAppArgsUndefined: Self = StObject.set(x, "appArgs", js.undefined)
+    
+    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
     inline def setSnoopId(value: String): Self = StObject.set(x, "snoopId", value.asInstanceOf[js.Any])
     

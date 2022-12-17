@@ -14,11 +14,11 @@ trait PickImplnoStoragePartialP
   
   var noCookieStorage: js.UndefOr[String] = js.undefined
   
-  var noStorage: String & js.UndefOr[String]
+  var noStorage: String
 }
 object PickImplnoStoragePartialP {
   
-  inline def apply(noStorage: String & js.UndefOr[String]): PickImplnoStoragePartialP = {
+  inline def apply(noStorage: String): PickImplnoStoragePartialP = {
     val __obj = js.Dynamic.literal(noStorage = noStorage.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplnoStoragePartialP]
   }
@@ -33,6 +33,6 @@ object PickImplnoStoragePartialP {
     
     inline def setNoCookieStorageUndefined: Self = StObject.set(x, "noCookieStorage", js.undefined)
     
-    inline def setNoStorage(value: String & js.UndefOr[String]): Self = StObject.set(x, "noStorage", value.asInstanceOf[js.Any])
+    inline def setNoStorage(value: String): Self = StObject.set(x, "noStorage", value.asInstanceOf[js.Any])
   }
 }

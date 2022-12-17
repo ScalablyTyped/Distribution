@@ -7,7 +7,7 @@ import typings.emotionSerialize.mod.Interpolation
 import typings.emotionStyled.anon.As
 import typings.emotionStyled.anon.Ref
 import typings.emotionStyled.anon.Theme
-import typings.emotionStyled.anon.ThemeTheme
+import typings.emotionStyled.anon.`0`
 import typings.emotionStyled.emotionStyledStrings.`object`
 import typings.emotionStyled.emotionStyledStrings.`var`
 import typings.emotionStyled.emotionStyledStrings.a
@@ -374,7 +374,7 @@ object typesBaseMod extends Shortcut {
   trait CreateStyled extends StObject {
     
     def apply(component: ComponentClass[ComponentProps[Any], ComponentState]): CreateStyledComponent[
-        (PropsOf[ComponentClass[ComponentProps[Any], ComponentState]]) & Theme, 
+        (PropsOf[ComponentClass[ComponentProps[Any], ComponentState]]) & `0`, 
         js.Object, 
         js.Object
       ] = js.native
@@ -382,15 +382,15 @@ object typesBaseMod extends Shortcut {
       component: ComponentClass[ComponentProps[Any], ComponentState],
       options: StyledOptions[ComponentProps[ComponentClass[ComponentProps[Any], ComponentState]]]
     ): CreateStyledComponent[
-        (PropsOf[ComponentClass[ComponentProps[Any], ComponentState]]) & Theme, 
+        (PropsOf[ComponentClass[ComponentProps[Any], ComponentState]]) & `0`, 
         js.Object, 
         js.Object
       ] = js.native
-    def apply(component: FunctionComponent[ComponentProps[Any]]): CreateStyledComponent[PropsOf[FunctionComponent[ComponentProps[Any]]] & Theme, js.Object, js.Object] = js.native
+    def apply(component: FunctionComponent[ComponentProps[Any]]): CreateStyledComponent[PropsOf[FunctionComponent[ComponentProps[Any]]] & `0`, js.Object, js.Object] = js.native
     def apply(
       component: FunctionComponent[ComponentProps[Any]],
       options: StyledOptions[ComponentProps[FunctionComponent[ComponentProps[Any]]]]
-    ): CreateStyledComponent[PropsOf[FunctionComponent[ComponentProps[Any]]] & Theme, js.Object, js.Object] = js.native
+    ): CreateStyledComponent[PropsOf[FunctionComponent[ComponentProps[Any]]] & `0`, js.Object, js.Object] = js.native
     def apply(tag: `object`): CreateStyledComponent[
         As, 
         DetailedHTMLProps[ObjectHTMLAttributes[HTMLObjectElement], HTMLObjectElement], 
@@ -1438,8 +1438,8 @@ object typesBaseMod extends Shortcut {
         DetailedHTMLProps[WebViewHTMLAttributes[HTMLWebViewElement], HTMLWebViewElement], 
         js.Object
       ] = js.native
-    def apply[C /* <: ComponentClass[ComponentProps[C], ComponentState] */](component: C): CreateStyledComponent[PropsOf[C] & Theme, js.Object, Ref[C]] = js.native
-    def apply[C /* <: ComponentClass[ComponentProps[C], ComponentState] */](component: C, options: StyledOptions[ComponentProps[C]]): CreateStyledComponent[PropsOf[C] & Theme, js.Object, Ref[C]] = js.native
+    def apply[C /* <: ComponentClass[ComponentProps[C], ComponentState] */](component: C): CreateStyledComponent[PropsOf[C] & `0`, js.Object, Ref[C]] = js.native
+    def apply[C /* <: ComponentClass[ComponentProps[C], ComponentState] */](component: C, options: StyledOptions[ComponentProps[C]]): CreateStyledComponent[PropsOf[C] & `0`, js.Object, Ref[C]] = js.native
     def apply[ForwardedProps /* <: /* keyof react.react.ComponentProps<react.react.ComponentClass<react.react.ComponentProps<any>, react.react.ComponentState>> */ String */](
       component: ComponentClass[ComponentProps[Any], ComponentState],
       options: FilteringStyledOptions[
@@ -1447,7 +1447,7 @@ object typesBaseMod extends Shortcut {
           ForwardedProps
         ]
     ): CreateStyledComponent[
-        (Pick[PropsOf[ComponentClass[ComponentProps[Any], ComponentState]], ForwardedProps]) & Theme, 
+        (Pick[PropsOf[ComponentClass[ComponentProps[Any], ComponentState]], ForwardedProps]) & `0`, 
         js.Object, 
         js.Object
       ] = js.native
@@ -1455,7 +1455,7 @@ object typesBaseMod extends Shortcut {
       component: FunctionComponent[ComponentProps[Any]],
       options: FilteringStyledOptions[ComponentProps[FunctionComponent[ComponentProps[Any]]], ForwardedProps]
     ): CreateStyledComponent[
-        (Pick[PropsOf[FunctionComponent[ComponentProps[Any]]], ForwardedProps]) & Theme, 
+        (Pick[PropsOf[FunctionComponent[ComponentProps[Any]]], ForwardedProps]) & `0`, 
         js.Object, 
         js.Object
       ] = js.native
@@ -2900,7 +2900,7 @@ object typesBaseMod extends Shortcut {
         ], 
         js.Object
       ] = js.native
-    def apply[C /* <: ComponentClass[ComponentProps[C], ComponentState] */, ForwardedProps /* <: /* keyof react.react.ComponentProps<C> */ String */](component: C, options: FilteringStyledOptions[ComponentProps[C], ForwardedProps]): CreateStyledComponent[(Pick[PropsOf[C], ForwardedProps]) & Theme, js.Object, Ref[C]] = js.native
+    def apply[C /* <: ComponentClass[ComponentProps[C], ComponentState] */, ForwardedProps /* <: /* keyof react.react.ComponentProps<C> */ String */](component: C, options: FilteringStyledOptions[ComponentProps[C], ForwardedProps]): CreateStyledComponent[(Pick[PropsOf[C], ForwardedProps]) & `0`, js.Object, Ref[C]] = js.native
   }
   
   @js.native
@@ -2908,12 +2908,12 @@ object typesBaseMod extends Shortcut {
     
     def apply(
       template: TemplateStringsArray,
-      styles: (Interpolation[ComponentProps & SpecificComponentProps & ThemeTheme])*
+      styles: (Interpolation[ComponentProps & SpecificComponentProps & Theme])*
     ): StyledComponent[ComponentProps, SpecificComponentProps, JSXProps] = js.native
     /**
       * @typeparam AdditionalProps  Additional props to add to your styled component
       */
-    def apply[AdditionalProps /* <: js.Object */](styles: (Interpolation[ComponentProps & SpecificComponentProps & AdditionalProps & ThemeTheme])*): StyledComponent[ComponentProps & AdditionalProps, SpecificComponentProps, JSXProps] = js.native
+    def apply[AdditionalProps /* <: js.Object */](styles: (Interpolation[ComponentProps & SpecificComponentProps & AdditionalProps & Theme])*): StyledComponent[ComponentProps & AdditionalProps, SpecificComponentProps, JSXProps] = js.native
   }
   
   trait FilteringStyledOptions[Props, ForwardedProps /* <: /* keyof Props */ String */] extends StObject {

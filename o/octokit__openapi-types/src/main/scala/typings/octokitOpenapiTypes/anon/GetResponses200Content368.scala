@@ -6,42 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetResponses200Content368 extends StObject {
   
-  /**
-    * To delete a team, the authenticated user must be an organization owner or team maintainer.
-    *
-    * If you are an organization owner, deleting a parent team will delete all of its child teams as well.
-    *
-    * **Note:** You can also specify a team by `org_id` and `team_id` using the route `DELETE /organizations/{org_id}/team/{team_id}`.
-    */
-  var delete: ParametersPath364Responses
-  
-  /**
-    * Gets a team using the team's `slug`. GitHub generates the `slug` from the team `name`.
-    *
-    * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}`.
-    */
+  /** Lists the active subscriptions for the authenticated user. You must use a [user-to-server OAuth access token](https://docs.github.com/apps/building-github-apps/identifying-and-authorizing-users-for-github-apps/#identifying-users-on-your-site), created for a user who has authorized your GitHub App, to access this endpoint. . OAuth Apps must authenticate using an [OAuth token](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/). */
   var get: Responses200Content368
-  
-  /**
-    * To edit a team, the authenticated user must either be an organization owner or a team maintainer.
-    *
-    * **Note:** You can also specify a team by `org_id` and `team_id` using the route `PATCH /organizations/{org_id}/team/{team_id}`.
-    */
-  var patch: Responses200201403
 }
 object GetResponses200Content368 {
   
-  inline def apply(delete: ParametersPath364Responses, get: Responses200Content368, patch: Responses200201403): GetResponses200Content368 = {
-    val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any])
+  inline def apply(get: Responses200Content368): GetResponses200Content368 = {
+    val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResponses200Content368]
   }
   
   extension [Self <: GetResponses200Content368](x: Self) {
     
-    inline def setDelete(value: ParametersPath364Responses): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
-    
     inline def setGet(value: Responses200Content368): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
-    
-    inline def setPatch(value: Responses200201403): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
   }
 }

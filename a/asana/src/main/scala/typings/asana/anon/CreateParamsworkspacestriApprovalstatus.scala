@@ -53,12 +53,12 @@ trait CreateParamsworkspacestriApprovalstatus extends StObject {
   var tags: js.UndefOr[js.Array[String]] = js.undefined
   
   // create-only
-  var workspace: js.UndefOr[String] & String
+  var workspace: js.UndefOr[String] = js.undefined
 }
 object CreateParamsworkspacestriApprovalstatus {
   
-  inline def apply(workspace: js.UndefOr[String] & String): CreateParamsworkspacestriApprovalstatus = {
-    val __obj = js.Dynamic.literal(workspace = workspace.asInstanceOf[js.Any])
+  inline def apply(): CreateParamsworkspacestriApprovalstatus = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateParamsworkspacestriApprovalstatus]
   }
   
@@ -158,6 +158,8 @@ object CreateParamsworkspacestriApprovalstatus {
     
     inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     
-    inline def setWorkspace(value: js.UndefOr[String] & String): Self = StObject.set(x, "workspace", value.asInstanceOf[js.Any])
+    inline def setWorkspace(value: String): Self = StObject.set(x, "workspace", value.asInstanceOf[js.Any])
+    
+    inline def setWorkspaceUndefined: Self = StObject.set(x, "workspace", js.undefined)
   }
 }

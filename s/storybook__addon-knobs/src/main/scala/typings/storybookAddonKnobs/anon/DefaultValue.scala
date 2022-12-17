@@ -1,5 +1,6 @@
 package typings.storybookAddonKnobs.anon
 
+import typings.storybookAddonKnobs.distComponentsTypesButtonMod.ButtonTypeKnob
 import typings.storybookAddonKnobs.distComponentsTypesButtonMod.ButtonTypeOnClickProp
 import typings.storybookAddonKnobs.storybookAddonKnobsBooleans.`true`
 import org.scalablytyped.runtime.StObject
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DefaultValue extends StObject {
   
-  var callback: ButtonTypeOnClickProp & js.UndefOr[js.Function0[Any]]
+  var callback: ButtonTypeOnClickProp
   
   var defaultValue: js.UndefOr[Any] = js.undefined
   
@@ -18,7 +19,7 @@ trait DefaultValue extends StObject {
   
   var groupId: js.UndefOr[String] = js.undefined
   
-  var hideLabel: `true` & js.UndefOr[Boolean]
+  var hideLabel: `true`
   
   var label: String
   
@@ -32,22 +33,15 @@ trait DefaultValue extends StObject {
 }
 object DefaultValue {
   
-  inline def apply(
-    callback: ButtonTypeOnClickProp & js.UndefOr[js.Function0[Any]],
-    hideLabel: `true` & js.UndefOr[Boolean],
-    label: String,
-    name: String,
-    `type`: Any,
-    value: Unit
-  ): DefaultValue = {
-    val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any], hideLabel = hideLabel.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  inline def apply(callback: /* knob */ ButtonTypeKnob => Any, label: String, name: String, `type`: Any, value: Unit): DefaultValue = {
+    val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), hideLabel = true, label = label.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultValue]
   }
   
   extension [Self <: DefaultValue](x: Self) {
     
-    inline def setCallback(value: ButtonTypeOnClickProp & js.UndefOr[js.Function0[Any]]): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    inline def setCallback(value: /* knob */ ButtonTypeKnob => Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     
     inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
@@ -65,7 +59,7 @@ object DefaultValue {
     
     inline def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
     
-    inline def setHideLabel(value: `true` & js.UndefOr[Boolean]): Self = StObject.set(x, "hideLabel", value.asInstanceOf[js.Any])
+    inline def setHideLabel(value: `true`): Self = StObject.set(x, "hideLabel", value.asInstanceOf[js.Any])
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

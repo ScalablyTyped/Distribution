@@ -1,5 +1,6 @@
 package typings.styledSystem.mod
 
+import typings.csstype.mod.Property.JustifyContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,12 +13,7 @@ trait JustifyContentProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content)
     */
-  var justifyContent: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyContent */ js.Any, 
-      ThemeType
-    ]
-  ] = js.undefined
+  var justifyContent: js.UndefOr[ResponsiveValue[JustifyContent, ThemeType]] = js.undefined
 }
 object JustifyContentProps {
   
@@ -28,19 +24,12 @@ object JustifyContentProps {
   
   extension [Self <: JustifyContentProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & JustifyContentProps[ThemeType]) {
     
-    inline def setJustifyContent(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyContent */ js.Any, 
-          ThemeType
-        ]
-    ): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
+    inline def setJustifyContent(value: ResponsiveValue[JustifyContent, ThemeType]): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
     
     inline def setJustifyContentNull: Self = StObject.set(x, "justifyContent", null)
     
     inline def setJustifyContentUndefined: Self = StObject.set(x, "justifyContent", js.undefined)
     
-    inline def setJustifyContentVarargs(
-      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyContent */ js.Any) | Null)*
-    ): Self = StObject.set(x, "justifyContent", js.Array(value :_*))
+    inline def setJustifyContentVarargs(value: (JustifyContent | Null)*): Self = StObject.set(x, "justifyContent", js.Array(value*))
   }
 }

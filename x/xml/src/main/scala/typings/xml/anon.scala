@@ -111,12 +111,12 @@ object anon {
     /**
       * Return the result as a `stream` (default false)
       */
-    var stream: `true` & js.UndefOr[Boolean]
+    var stream: `true`
   }
   object streamtrueOption {
     
-    inline def apply(stream: `true` & js.UndefOr[Boolean]): streamtrueOption = {
-      val __obj = js.Dynamic.literal(stream = stream.asInstanceOf[js.Any])
+    inline def apply(): streamtrueOption = {
+      val __obj = js.Dynamic.literal(stream = true)
       __obj.asInstanceOf[streamtrueOption]
     }
     
@@ -130,7 +130,7 @@ object anon {
       
       inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
       
-      inline def setStream(value: `true` & js.UndefOr[Boolean]): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: `true`): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     }
   }
 }

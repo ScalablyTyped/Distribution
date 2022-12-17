@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BackgroundColorExtend extends StObject {
   
-  var background: js.UndefOr[`7`] = js.undefined
+  var background: js.UndefOr[`5`] = js.undefined
   
   var color: js.UndefOr[ColorType] = js.undefined
   
@@ -28,7 +28,7 @@ object BackgroundColorExtend {
   
   extension [Self <: BackgroundColorExtend](x: Self) {
     
-    inline def setBackground(value: `7`): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: `5`): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     

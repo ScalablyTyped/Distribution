@@ -31,9 +31,7 @@ object mod {
   
   @JSImport("prosemirror-tables", "CellSelection")
   @js.native
-  open class CellSelection protected ()
-    extends StObject
-       with Selection {
+  open class CellSelection protected () extends Selection {
     def this($anchorCell: ResolvedPos) = this()
     def this($anchorCell: ResolvedPos, $headCell: ResolvedPos) = this()
     

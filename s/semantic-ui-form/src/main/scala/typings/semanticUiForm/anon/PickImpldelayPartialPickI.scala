@@ -31,7 +31,7 @@ trait PickImpldelayPartialPickI
   
   var defaults: js.UndefOr[StringDictionary[Field]] = js.undefined
   
-  var delay: Boolean & js.UndefOr[Boolean]
+  var delay: Boolean
   
   var duration: js.UndefOr[Double] = js.undefined
   
@@ -92,7 +92,7 @@ trait PickImpldelayPartialPickI
 }
 object PickImpldelayPartialPickI {
   
-  inline def apply(delay: Boolean & js.UndefOr[Boolean]): PickImpldelayPartialPickI = {
+  inline def apply(delay: Boolean): PickImpldelayPartialPickI = {
     val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldelayPartialPickI]
   }
@@ -111,7 +111,7 @@ object PickImpldelayPartialPickI {
     
     inline def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
     
-    inline def setDelay(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Boolean): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

@@ -14,7 +14,7 @@ trait PickImplinputPartialPickI
   
   var group: js.UndefOr[String] = js.undefined
   
-  var input: String & js.UndefOr[String]
+  var input: String
   
   var message: js.UndefOr[String] = js.undefined
   
@@ -24,7 +24,7 @@ trait PickImplinputPartialPickI
 }
 object PickImplinputPartialPickI {
   
-  inline def apply(input: String & js.UndefOr[String]): PickImplinputPartialPickI = {
+  inline def apply(input: String): PickImplinputPartialPickI = {
     val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplinputPartialPickI]
   }
@@ -39,7 +39,7 @@ object PickImplinputPartialPickI {
     
     inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
-    inline def setInput(value: String & js.UndefOr[String]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

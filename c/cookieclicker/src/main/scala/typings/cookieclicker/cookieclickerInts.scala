@@ -38,8 +38,4 @@ object cookieclickerInts {
   @js.native
   sealed trait `40` extends StObject
   inline def `40`: `40` = 40.asInstanceOf[`40`]
-  
-  @js.native
-  sealed trait `8` extends StObject
-  inline def `8`: `8` = 8.asInstanceOf[`8`]
 }

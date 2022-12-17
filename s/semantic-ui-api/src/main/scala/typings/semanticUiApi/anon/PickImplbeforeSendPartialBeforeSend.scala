@@ -12,7 +12,7 @@ trait PickImplbeforeSendPartialBeforeSend
   
   var JSONParse: js.UndefOr[String] = js.undefined
   
-  var beforeSend: String & js.UndefOr[String]
+  var beforeSend: String
   
   var error: js.UndefOr[String] = js.undefined
   
@@ -38,14 +38,14 @@ trait PickImplbeforeSendPartialBeforeSend
 }
 object PickImplbeforeSendPartialBeforeSend {
   
-  inline def apply(beforeSend: String & js.UndefOr[String]): PickImplbeforeSendPartialBeforeSend = {
+  inline def apply(beforeSend: String): PickImplbeforeSendPartialBeforeSend = {
     val __obj = js.Dynamic.literal(beforeSend = beforeSend.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplbeforeSendPartialBeforeSend]
   }
   
   extension [Self <: PickImplbeforeSendPartialBeforeSend](x: Self) {
     
-    inline def setBeforeSend(value: String & js.UndefOr[String]): Self = StObject.set(x, "beforeSend", value.asInstanceOf[js.Any])
+    inline def setBeforeSend(value: String): Self = StObject.set(x, "beforeSend", value.asInstanceOf[js.Any])
     
     inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

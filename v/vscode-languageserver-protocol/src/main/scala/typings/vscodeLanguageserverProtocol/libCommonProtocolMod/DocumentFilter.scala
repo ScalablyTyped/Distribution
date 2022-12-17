@@ -16,18 +16,18 @@ object DocumentFilter {
     __obj.asInstanceOf[typings.vscodeLanguageserverProtocol.anon.Language]
   }
   
-  inline def LanguagePattern(scheme: String): typings.vscodeLanguageserverProtocol.anon.LanguagePattern = {
-    val __obj = js.Dynamic.literal(scheme = scheme.asInstanceOf[js.Any])
-    __obj.asInstanceOf[typings.vscodeLanguageserverProtocol.anon.LanguagePattern]
-  }
-  
   inline def NotebookCellTextDocumentFilter(notebook: String | NotebookDocumentFilter): typings.vscodeLanguageserverProtocol.libCommonProtocolMod.NotebookCellTextDocumentFilter = {
     val __obj = js.Dynamic.literal(notebook = notebook.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.vscodeLanguageserverProtocol.libCommonProtocolMod.NotebookCellTextDocumentFilter]
   }
   
-  inline def PatternScheme(pattern: String): typings.vscodeLanguageserverProtocol.anon.PatternScheme = {
+  inline def Pattern(scheme: String): typings.vscodeLanguageserverProtocol.anon.Pattern = {
+    val __obj = js.Dynamic.literal(scheme = scheme.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.vscodeLanguageserverProtocol.anon.Pattern]
+  }
+  
+  inline def Scheme(pattern: String): typings.vscodeLanguageserverProtocol.anon.Scheme = {
     val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
-    __obj.asInstanceOf[typings.vscodeLanguageserverProtocol.anon.PatternScheme]
+    __obj.asInstanceOf[typings.vscodeLanguageserverProtocol.anon.Scheme]
   }
 }

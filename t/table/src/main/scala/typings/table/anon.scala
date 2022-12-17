@@ -46,7 +46,7 @@ object anon {
     /**
       * The default width for each column
       */
-    val width: js.UndefOr[Double] & Double
+    val width: js.UndefOr[Double] = js.undefined
     
     /**
       * If true, the text is broken at the nearest space or one of the special characters: "\|/_.,;-"
@@ -55,8 +55,8 @@ object anon {
   }
   object ColumnUserConfigreadonlyw {
     
-    inline def apply(width: js.UndefOr[Double] & Double): ColumnUserConfigreadonlyw = {
-      val __obj = js.Dynamic.literal(width = width.asInstanceOf[js.Any])
+    inline def apply(): ColumnUserConfigreadonlyw = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ColumnUserConfigreadonlyw]
     }
     
@@ -82,7 +82,9 @@ object anon {
       
       inline def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
       
-      inline def setWidth(value: js.UndefOr[Double] & Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
       inline def setWrapWord(value: Boolean): Self = StObject.set(x, "wrapWord", value.asInstanceOf[js.Any])
       

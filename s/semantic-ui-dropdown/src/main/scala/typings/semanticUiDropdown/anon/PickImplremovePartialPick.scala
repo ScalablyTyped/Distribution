@@ -28,7 +28,7 @@ trait PickImplremovePartialPick
   
   var message: js.UndefOr[String] = js.undefined
   
-  var remove: String & js.UndefOr[String]
+  var remove: String
   
   var search: js.UndefOr[String] = js.undefined
   
@@ -38,7 +38,7 @@ trait PickImplremovePartialPick
 }
 object PickImplremovePartialPick {
   
-  inline def apply(remove: String & js.UndefOr[String]): PickImplremovePartialPick = {
+  inline def apply(remove: String): PickImplremovePartialPick = {
     val __obj = js.Dynamic.literal(remove = remove.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplremovePartialPick]
   }
@@ -81,7 +81,7 @@ object PickImplremovePartialPick {
     
     inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    inline def setRemove(value: String & js.UndefOr[String]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+    inline def setRemove(value: String): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
     inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     

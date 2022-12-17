@@ -1,30 +1,30 @@
 organization := "org.scalablytyped"
 name := "chainsafe__libp2p-gossipsub"
-version := "5.0.0-15ffbf"
+version := "5.0.0-3148d0"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "denque" % "2.1.0-4f1dcc",
-  "org.scalablytyped" %%% "dns-over-http-resolver" % "2.1.0-1d5233",
-  "org.scalablytyped" %%% "it-pushable" % "3.1.0-d89a36",
-  "org.scalablytyped" %%% "it-stream-types" % "1.0.4-d3f578",
-  "org.scalablytyped" %%% "libp2p__interface-connection" % "3.0.2-4f1a18",
-  "org.scalablytyped" %%% "libp2p__interface-connection-manager" % "1.3.0-304325",
-  "org.scalablytyped" %%% "libp2p__interface-keys" % "1.0.3-5eaed9",
-  "org.scalablytyped" %%% "libp2p__interface-peer-id" % "1.0.5-7d8c71",
-  "org.scalablytyped" %%% "libp2p__interface-peer-info" % "1.0.3-0bad38",
-  "org.scalablytyped" %%% "libp2p__interface-peer-store" % "1.2.2-13e8cc",
-  "org.scalablytyped" %%% "libp2p__interface-pubsub" % "3.0.0-fd2b2e",
-  "org.scalablytyped" %%% "libp2p__interface-record" % "2.0.1-0d2489",
-  "org.scalablytyped" %%% "libp2p__interface-registrar" % "2.0.3-cd6482",
-  "org.scalablytyped" %%% "libp2p__interfaces" % "3.0.3-03f126",
-  "org.scalablytyped" %%% "multiformats" % "10.0.2-04b3d3",
-  "org.scalablytyped" %%% "multiformats__multiaddr" % "11.0.5-6e66b6",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-4346d8",
-  "org.scalablytyped" %%% "protobufjs" % "7.1.2-985f97",
-  "org.scalablytyped" %%% "std" % "4.9-c133ce",
-  "org.scalablytyped" %%% "uint8arraylist" % "2.3.3-d35278")
+  "org.scalablytyped" %%% "denque" % "2.1.0-2a8bbb",
+  "org.scalablytyped" %%% "dns-over-http-resolver" % "2.1.0-536636",
+  "org.scalablytyped" %%% "it-pushable" % "3.1.0-46ddef",
+  "org.scalablytyped" %%% "it-stream-types" % "1.0.4-afe6ba",
+  "org.scalablytyped" %%% "libp2p__interface-connection" % "3.0.2-aa5d91",
+  "org.scalablytyped" %%% "libp2p__interface-connection-manager" % "1.3.0-55dd21",
+  "org.scalablytyped" %%% "libp2p__interface-keys" % "1.0.3-cbdf76",
+  "org.scalablytyped" %%% "libp2p__interface-peer-id" % "1.0.5-981e22",
+  "org.scalablytyped" %%% "libp2p__interface-peer-info" % "1.0.3-4655f4",
+  "org.scalablytyped" %%% "libp2p__interface-peer-store" % "1.2.2-dc1420",
+  "org.scalablytyped" %%% "libp2p__interface-pubsub" % "3.0.0-51098b",
+  "org.scalablytyped" %%% "libp2p__interface-record" % "2.0.1-63edaa",
+  "org.scalablytyped" %%% "libp2p__interface-registrar" % "2.0.3-5c41ea",
+  "org.scalablytyped" %%% "libp2p__interfaces" % "3.0.3-1eba2b",
+  "org.scalablytyped" %%% "multiformats" % "10.0.2-27d400",
+  "org.scalablytyped" %%% "multiformats__multiaddr" % "11.0.5-1e49a2",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-def929",
+  "org.scalablytyped" %%% "protobufjs" % "7.1.2-e8ddf7",
+  "org.scalablytyped" %%% "std" % "4.9-5f989f",
+  "org.scalablytyped" %%% "uint8arraylist" % "2.3.3-29eebc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

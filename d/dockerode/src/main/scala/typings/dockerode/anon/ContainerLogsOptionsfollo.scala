@@ -1,6 +1,5 @@
 package typings.dockerode.anon
 
-import typings.dockerode.dockerodeBooleans.`false`
 import typings.std.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,7 +12,7 @@ trait ContainerLogsOptionsfollo extends StObject {
   
   var details: js.UndefOr[Boolean] = js.undefined
   
-  var follow: js.UndefOr[Boolean] & js.UndefOr[`false`]
+  var follow: js.UndefOr[Boolean] = js.undefined
   
   var since: js.UndefOr[Double | String] = js.undefined
   
@@ -29,8 +28,8 @@ trait ContainerLogsOptionsfollo extends StObject {
 }
 object ContainerLogsOptionsfollo {
   
-  inline def apply(follow: js.UndefOr[Boolean] & js.UndefOr[`false`]): ContainerLogsOptionsfollo = {
-    val __obj = js.Dynamic.literal(follow = follow.asInstanceOf[js.Any])
+  inline def apply(): ContainerLogsOptionsfollo = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContainerLogsOptionsfollo]
   }
   
@@ -44,7 +43,9 @@ object ContainerLogsOptionsfollo {
     
     inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    inline def setFollow(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
+    inline def setFollow(value: Boolean): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
+    
+    inline def setFollowUndefined: Self = StObject.set(x, "follow", js.undefined)
     
     inline def setSince(value: Double | String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     

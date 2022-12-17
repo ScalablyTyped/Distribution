@@ -6,21 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `16` extends StObject {
   
-  var key: String | js.RegExp
-  
-  var value: String | js.RegExp | Boolean
+  var data: String
 }
 object `16` {
   
-  inline def apply(key: String | js.RegExp, value: String | js.RegExp | Boolean): `16` = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  inline def apply(data: String): `16` = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[`16`]
   }
   
   extension [Self <: `16`](x: Self) {
     
-    inline def setKey(value: String | js.RegExp): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
-    
-    inline def setValue(value: String | js.RegExp | Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,6 @@
 package typings.antvG2plot
 
-import typings.antvG2plot.anon.NameValue
+import typings.antvG2plot.anon.NameString
 import typings.antvG2plot.libTypesCommonMod.Datum
 import typings.antvG2plot.libUtilsPatternMod.PatternOption
 import typings.antvGBase.libTypesMod.ShapeAttrs
@@ -23,5 +23,5 @@ object libTypesAttrMod {
   
   type StyleAttr = ShapeStyle | (js.Function1[/* datum */ Datum, ShapeStyle])
   
-  type TooltipAttr = js.Function1[/* datum */ Datum, NameValue]
+  type TooltipAttr = js.Function1[/* datum */ Datum, NameString]
 }

@@ -1,6 +1,6 @@
 package typings.mqttPacket.mod
 
-import typings.mqttPacket.anon.SubscriptionIdentifier
+import typings.mqttPacket.anon.ReasonString
 import typings.mqttPacket.mqttPacketStrings.subscribe
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,7 +14,7 @@ trait ISubscribePacket
   @JSName("cmd")
   var cmd_ISubscribePacket: subscribe
   
-  var properties: js.UndefOr[SubscriptionIdentifier] = js.undefined
+  var properties: js.UndefOr[ReasonString] = js.undefined
   
   var subscriptions: js.Array[ISubscription]
 }
@@ -29,7 +29,7 @@ object ISubscribePacket {
     
     inline def setCmd(value: subscribe): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     
-    inline def setProperties(value: SubscriptionIdentifier): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: ReasonString): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     

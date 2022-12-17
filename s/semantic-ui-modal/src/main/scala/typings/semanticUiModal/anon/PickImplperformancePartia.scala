@@ -58,7 +58,7 @@ trait PickImplperformancePartia
   
   var onVisible: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
-  var performance: Boolean & js.UndefOr[Boolean]
+  var performance: Boolean
   
   var queue: js.UndefOr[Boolean] = js.undefined
   
@@ -72,7 +72,7 @@ trait PickImplperformancePartia
 }
 object PickImplperformancePartia {
   
-  inline def apply(performance: Boolean & js.UndefOr[Boolean]): PickImplperformancePartia = {
+  inline def apply(performance: Boolean): PickImplperformancePartia = {
     val __obj = js.Dynamic.literal(performance = performance.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplperformancePartia]
   }
@@ -163,7 +163,7 @@ object PickImplperformancePartia {
     
     inline def setOnVisibleUndefined: Self = StObject.set(x, "onVisible", js.undefined)
     
-    inline def setPerformance(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
+    inline def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
     
     inline def setQueue(value: Boolean): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
     

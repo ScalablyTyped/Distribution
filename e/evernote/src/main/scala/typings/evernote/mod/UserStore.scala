@@ -3,9 +3,9 @@ package typings.evernote.mod
 import typings.evernote.anon.AccountEmailDomain
 import typings.evernote.anon.AuthenticationToken
 import typings.evernote.anon.MessageStoreUrl
+import typings.evernote.anon.Name
 import typings.evernote.anon.NoteStoreUrl
 import typings.evernote.anon.Profiles
-import typings.evernote.anon.Settings
 import typings.evernote.mod.Types.ServiceLevel
 import typings.evernote.mod.Types.Timestamp
 import typings.evernote.mod.Types.User
@@ -53,7 +53,7 @@ object UserStore {
   @JSImport("evernote", "UserStore.BootstrapProfile")
   @js.native
   open class BootstrapProfile () extends StObject {
-    def this(args: Settings) = this()
+    def this(args: Name) = this()
     
     var name: js.UndefOr[String] = js.native
     

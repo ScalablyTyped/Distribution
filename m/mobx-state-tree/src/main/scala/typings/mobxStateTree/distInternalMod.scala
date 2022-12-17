@@ -926,13 +926,8 @@ object distInternalMod {
   inline def resolvePath(target: IAnyStateTreeNode, path: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("resolvePath")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def safeReference[IT /* <: IAnyComplexType */](subType: IT): IMaybe[IReferenceType[IT]] = ^.asInstanceOf[js.Dynamic].applyDynamic("safeReference")(subType.asInstanceOf[js.Any]).asInstanceOf[IMaybe[IReferenceType[IT]]]
-  inline def safeReference[IT /* <: IAnyComplexType */](subType: IT, options: ReferenceOptionsGetSet[IT] & OnInvalidated[IT]): IReferenceType[IT] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeReference")(subType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IReferenceType[IT]]
-  inline def safeReference[IT /* <: IAnyComplexType */](subType: IT, options: js.Object & OnInvalidated[IT]): IReferenceType[IT] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeReference")(subType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IReferenceType[IT]]
-  
-  inline def safeReference_IT_IMaybe[IT /* <: IAnyComplexType */](
-    subType: IT,
-    options: (ReferenceOptionsGetSet[IT] & AcceptsUndefined[IT]) | (js.Object & AcceptsUndefined[IT])
-  ): IMaybe[IReferenceType[IT]] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeReference")(subType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IMaybe[IReferenceType[IT]]]
+  inline def safeReference[IT /* <: IAnyComplexType */](subType: IT, options: (ReferenceOptionsGetSet[IT] & OnInvalidated[IT]) | OnInvalidated[IT]): IReferenceType[IT] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeReference")(subType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IReferenceType[IT]]
+  inline def safeReference[IT /* <: IAnyComplexType */](subType: IT, options: (ReferenceOptionsGetSet[IT] & AcceptsUndefined[IT]) | AcceptsUndefined[IT]): IMaybe[IReferenceType[IT]] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeReference")(subType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IMaybe[IReferenceType[IT]]]
   
   inline def setLivelinessChecking(mode: LivelinessMode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLivelinessChecking")(mode.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
@@ -1580,14 +1575,9 @@ object distInternalMod {
     @js.native
     def safeReference: Fn0 = js.native
     inline def safeReference[IT /* <: IAnyComplexType */](subType: IT): IMaybe[IReferenceType[IT]] = ^.asInstanceOf[js.Dynamic].applyDynamic("safeReference")(subType.asInstanceOf[js.Any]).asInstanceOf[IMaybe[IReferenceType[IT]]]
-    inline def safeReference[IT /* <: IAnyComplexType */](subType: IT, options: ReferenceOptionsGetSet[IT] & OnInvalidated[IT]): IReferenceType[IT] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeReference")(subType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IReferenceType[IT]]
-    inline def safeReference[IT /* <: IAnyComplexType */](subType: IT, options: js.Object & OnInvalidated[IT]): IReferenceType[IT] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeReference")(subType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IReferenceType[IT]]
+    inline def safeReference[IT /* <: IAnyComplexType */](subType: IT, options: (ReferenceOptionsGetSet[IT] & OnInvalidated[IT]) | OnInvalidated[IT]): IReferenceType[IT] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeReference")(subType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IReferenceType[IT]]
+    inline def safeReference[IT /* <: IAnyComplexType */](subType: IT, options: (ReferenceOptionsGetSet[IT] & AcceptsUndefined[IT]) | AcceptsUndefined[IT]): IMaybe[IReferenceType[IT]] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeReference")(subType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IMaybe[IReferenceType[IT]]]
     inline def safeReference_=(x: Fn0): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("safeReference")(x.asInstanceOf[js.Any])
-    
-    inline def safeReference_IT_IMaybe[IT /* <: IAnyComplexType */](
-      subType: IT,
-      options: (ReferenceOptionsGetSet[IT] & AcceptsUndefined[IT]) | (js.Object & AcceptsUndefined[IT])
-    ): IMaybe[IReferenceType[IT]] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeReference")(subType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IMaybe[IReferenceType[IT]]]
     
     @JSImport("mobx-state-tree/dist/internal", "types.snapshotProcessor")
     @js.native

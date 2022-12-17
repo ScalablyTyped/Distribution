@@ -5,7 +5,6 @@ import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
 import typings.react.mod.ReactNode
-import typings.reactMdForm.reactMdFormBooleans.`false`
 import typings.reactMdForm.reactMdFormStrings.badInput
 import typings.reactMdForm.reactMdFormStrings.customError
 import typings.reactMdForm.reactMdFormStrings.patternMismatch
@@ -43,11 +42,11 @@ trait NumberFieldHookOptionsdefCounter extends StObject {
     * When this value is set to a `number` (or a function that returns a
     * `number`), the returned value will never be `undefined`.
     */
-  var defaultValue: (js.UndefOr[Double | js.Function0[js.UndefOr[Double]]]) & (Double | js.Function0[Double])
+  var defaultValue: js.UndefOr[Double | js.Function0[js.UndefOr[Double]]] = js.undefined
   
   var disableMaxLength: js.UndefOr[Boolean] = js.undefined
   
-  var disableMessage: js.UndefOr[Boolean] & `false`
+  var disableMessage: js.UndefOr[Boolean] = js.undefined
   
   var errorIcon: js.UndefOr[ReactNode] = js.undefined
   
@@ -110,12 +109,8 @@ trait NumberFieldHookOptionsdefCounter extends StObject {
 }
 object NumberFieldHookOptionsdefCounter {
   
-  inline def apply(
-    defaultValue: (js.UndefOr[Double | js.Function0[js.UndefOr[Double]]]) & (Double | js.Function0[Double]),
-    disableMessage: js.UndefOr[Boolean] & `false`,
-    id: String
-  ): NumberFieldHookOptionsdefCounter = {
-    val __obj = js.Dynamic.literal(defaultValue = defaultValue.asInstanceOf[js.Any], disableMessage = disableMessage.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+  inline def apply(id: String): NumberFieldHookOptionsdefCounter = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumberFieldHookOptionsdefCounter]
   }
   
@@ -125,13 +120,19 @@ object NumberFieldHookOptionsdefCounter {
     
     inline def setCounterUndefined: Self = StObject.set(x, "counter", js.undefined)
     
-    inline def setDefaultValue(value: (js.UndefOr[Double | js.Function0[js.UndefOr[Double]]]) & (Double | js.Function0[Double])): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: Double | js.Function0[js.UndefOr[Double]]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultValueFunction0(value: () => js.UndefOr[Double]): Self = StObject.set(x, "defaultValue", js.Any.fromFunction0(value))
+    
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
     inline def setDisableMaxLength(value: Boolean): Self = StObject.set(x, "disableMaxLength", value.asInstanceOf[js.Any])
     
     inline def setDisableMaxLengthUndefined: Self = StObject.set(x, "disableMaxLength", js.undefined)
     
-    inline def setDisableMessage(value: js.UndefOr[Boolean] & `false`): Self = StObject.set(x, "disableMessage", value.asInstanceOf[js.Any])
+    inline def setDisableMessage(value: Boolean): Self = StObject.set(x, "disableMessage", value.asInstanceOf[js.Any])
+    
+    inline def setDisableMessageUndefined: Self = StObject.set(x, "disableMessage", js.undefined)
     
     inline def setErrorIcon(value: ReactNode): Self = StObject.set(x, "errorIcon", value.asInstanceOf[js.Any])
     

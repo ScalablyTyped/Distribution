@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 trait LocalBitStringValueBlock
-  extends StObject
-     with LocalConstructedValueBlock
+  extends LocalConstructedValueBlock
      with ILocalBitStringValueBlock {
   
   /**

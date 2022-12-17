@@ -5,7 +5,6 @@ import typings.pkijs.mod.CertificateChainValidationEngine
 import typings.pkijs.mod.FindIssuerCallback
 import typings.pkijs.mod.FindOriginCallback
 import typings.pkijs.mod.ICryptoEngine
-import typings.pkijs.pkijsBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ trait SignedDataVerifyParamsextCheckChain extends StObject {
   
   var data: js.UndefOr[js.typedarray.ArrayBuffer] = js.undefined
   
-  var extendedMode: js.UndefOr[Boolean] & `true`
+  var extendedMode: js.UndefOr[Boolean] = js.undefined
   
   var findIssuer: js.UndefOr[FindIssuerCallback | Null] = js.undefined
   
@@ -33,8 +32,8 @@ trait SignedDataVerifyParamsextCheckChain extends StObject {
 }
 object SignedDataVerifyParamsextCheckChain {
   
-  inline def apply(extendedMode: js.UndefOr[Boolean] & `true`): SignedDataVerifyParamsextCheckChain = {
-    val __obj = js.Dynamic.literal(extendedMode = extendedMode.asInstanceOf[js.Any])
+  inline def apply(): SignedDataVerifyParamsextCheckChain = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SignedDataVerifyParamsextCheckChain]
   }
   
@@ -52,7 +51,9 @@ object SignedDataVerifyParamsextCheckChain {
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setExtendedMode(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "extendedMode", value.asInstanceOf[js.Any])
+    inline def setExtendedMode(value: Boolean): Self = StObject.set(x, "extendedMode", value.asInstanceOf[js.Any])
+    
+    inline def setExtendedModeUndefined: Self = StObject.set(x, "extendedMode", js.undefined)
     
     inline def setFindIssuer(
       value: (/* certificate */ Certificate, /* validationEngine */ CertificateChainValidationEngine, /* crypto */ js.UndefOr[ICryptoEngine]) => js.Promise[js.Array[Certificate]]

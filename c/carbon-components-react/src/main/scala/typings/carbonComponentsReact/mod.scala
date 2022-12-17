@@ -1,22 +1,7 @@
 package typings.carbonComponentsReact
 
 import org.scalablytyped.runtime.Shortcut
-import typings.carbonComponentsReact.accordionAccordionMod.AccordionProps
-import typings.carbonComponentsReact.accordionSkeletonMod.AccordionSkeletonProps
 import typings.carbonComponentsReact.anon.Name
-import typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioCustomComponentProps
-import typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioDefaultProps
-import typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps
-import typings.carbonComponentsReact.breadcrumbBreadcrumbMod.BreadcrumbProps
-import typings.carbonComponentsReact.breadcrumbItemMod.BreadcrumbItemProps
-import typings.carbonComponentsReact.breadcrumbSkeletonMod.BreadcrumbSkeletonProps
-import typings.carbonComponentsReact.buttonButtonMod.ButtonAnchorProps
-import typings.carbonComponentsReact.buttonButtonMod.ButtonCustomComponentProps
-import typings.carbonComponentsReact.buttonButtonMod.ButtonDefaultProps
-import typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps
-import typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
-import typings.carbonComponentsReact.buttonSetButtonSetMod.ButtonSetProps
-import typings.carbonComponentsReact.buttonSkeletonMod.ButtonSkeletonProps
 import typings.carbonComponentsReact.carbonComponentsReactBooleans.`false`
 import typings.carbonComponentsReact.carbonComponentsReactStrings.`object`
 import typings.carbonComponentsReact.carbonComponentsReactStrings.`var`
@@ -194,181 +179,196 @@ import typings.carbonComponentsReact.carbonComponentsReactStrings.video
 import typings.carbonComponentsReact.carbonComponentsReactStrings.view
 import typings.carbonComponentsReact.carbonComponentsReactStrings.wbr
 import typings.carbonComponentsReact.carbonComponentsReactStrings.webview
-import typings.carbonComponentsReact.checkboxCheckboxMod.CheckboxProps
-import typings.carbonComponentsReact.checkboxSkeletonMod.CheckboxSkeletonProps
-import typings.carbonComponentsReact.codeSnippetCodeSnippetMod.CodeSnippetDivProps
-import typings.carbonComponentsReact.codeSnippetCodeSnippetMod.CodeSnippetInlineProps
-import typings.carbonComponentsReact.codeSnippetCodeSnippetMod.CodeSnippetMultiProps
-import typings.carbonComponentsReact.codeSnippetSkeletonMod.CodeSnippetSkeletonProps
-import typings.carbonComponentsReact.columnMod.ColumnCustomComponentProps
-import typings.carbonComponentsReact.columnMod.ColumnDefaultProps
-import typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps
-import typings.carbonComponentsReact.comboBoxComboBoxMod.ComboBoxProps
-import typings.carbonComponentsReact.componentsAccordionItemMod.default
-import typings.carbonComponentsReact.composedModalComposedModalMod.ModalBodyProps
-import typings.carbonComponentsReact.composedModalComposedModalMod.ModalFooterProps
-import typings.carbonComponentsReact.composedModalComposedModalMod.ModalHeaderProps
-import typings.carbonComponentsReact.contentMod.ContentDefaultProps
-import typings.carbonComponentsReact.contentMod.ContentIntrinsicProps
-import typings.carbonComponentsReact.controlledPasswordInputMod.ControlledPasswordInputProps
-import typings.carbonComponentsReact.copyButtonCopyButtonMod.CopyButtonProps
-import typings.carbonComponentsReact.copyCopyMod.CopyProps
-import typings.carbonComponentsReact.dataTableDataTableMod.DataTableHeader
-import typings.carbonComponentsReact.dataTableDataTableMod.DataTableRow
-import typings.carbonComponentsReact.dataTableDataTableMod.DataTableTranslationKey
-import typings.carbonComponentsReact.dataTableSkeletonDataTableSkeletonMod.DataTableSkeletonProps
-import typings.carbonComponentsReact.datePickerSkeletonMod.DatePickerSkeletonProps
-import typings.carbonComponentsReact.dropdownDropdownMod.DropdownProps
-import typings.carbonComponentsReact.dropdownSkeletonMod.DropdownSkeletonProps
-import typings.carbonComponentsReact.errorBoundaryContextMod.ErrorBoundaryContextValue
-import typings.carbonComponentsReact.expandableSearchExpandableSearchMod.ExpandableSearchProps
-import typings.carbonComponentsReact.featureFlagsMod.FeatureFlagScope
-import typings.carbonComponentsReact.featureFlagsMod.FeatureFlagsProps
-import typings.carbonComponentsReact.fileUploaderButtonMod.FileUploaderButtonProps
-import typings.carbonComponentsReact.fileUploaderDropContainerMod.FileUploaderDropContainerProps
-import typings.carbonComponentsReact.fileUploaderFileUploaderMod.FileUploaderProps
-import typings.carbonComponentsReact.fileUploaderItemMod.FileUploaderItemProps
-import typings.carbonComponentsReact.fileUploaderSkeletonMod.FileUploaderSkeletonProps
-import typings.carbonComponentsReact.filenameMod.FilenameIconProps
-import typings.carbonComponentsReact.fluidFormFluidFormMod.FluidFormProps
-import typings.carbonComponentsReact.formFormMod.FormProps
-import typings.carbonComponentsReact.formGroupFormGroupMod.FormGroupProps
-import typings.carbonComponentsReact.formItemFormItemMod.FormItemProps
-import typings.carbonComponentsReact.formLabelFormLabelMod.FormLabelProps
-import typings.carbonComponentsReact.gridGridMod.GridCustomComponentProps
-import typings.carbonComponentsReact.gridGridMod.GridDefaultProps
-import typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps
-import typings.carbonComponentsReact.headerContainerMod.HeaderContainerProps
-import typings.carbonComponentsReact.headerGlobalActionMod.HeaderGlobalActionProps
-import typings.carbonComponentsReact.headerGlobalBarMod.HeaderGlobalBarProps
-import typings.carbonComponentsReact.headerMenuButtonMod.HeaderMenuButtonProps
-import typings.carbonComponentsReact.headerMenuItemMod.HeaderMenuItemProps
-import typings.carbonComponentsReact.headerMenuMod.HeaderMenuForwardRefProps
-import typings.carbonComponentsReact.headerMod.HeaderProps
-import typings.carbonComponentsReact.headerNameMod.HeaderNameProps
-import typings.carbonComponentsReact.headerPanelMod.HeaderPanelProps
-import typings.carbonComponentsReact.headerSideNavItemsMod.HeaderSideNavItemsProps
-import typings.carbonComponentsReact.headingMod.HeadingProps
-import typings.carbonComponentsReact.headingMod.SectionCustomComponentProps
-import typings.carbonComponentsReact.headingMod.SectionDefaultProps
-import typings.carbonComponentsReact.headingMod.SectionIntrinsicProps
-import typings.carbonComponentsReact.iconIconMod.IconProps
-import typings.carbonComponentsReact.iconSkeletonMod.IconSkeletonProps
-import typings.carbonComponentsReact.inlineLoadingInlineLoadingMod.InlineLoadingProps
-import typings.carbonComponentsReact.linkLinkMod.LinkProps
-import typings.carbonComponentsReact.listItemListItemMod.ListItemProps
-import typings.carbonComponentsReact.loadingLoadingMod.LoadingProps
-import typings.carbonComponentsReact.menuMenuMod.MenuComponent
-import typings.carbonComponentsReact.notificationNotificationMod.InlineNotificationProps
-import typings.carbonComponentsReact.notificationNotificationMod.NotificationActionButtonProps
-import typings.carbonComponentsReact.notificationNotificationMod.NotificationButtonProps
-import typings.carbonComponentsReact.notificationNotificationMod.NotificationTextDetailsProps
-import typings.carbonComponentsReact.notificationNotificationMod.ToastNotificationProps
-import typings.carbonComponentsReact.numberInputNumberInputMod.NumberInputProps
-import typings.carbonComponentsReact.numberInputSkeletonMod.NumberInputSkeletonProps
-import typings.carbonComponentsReact.orderedListOrderedListMod.OrderedListProps
-import typings.carbonComponentsReact.overflowMenuOverflowMenuMod.OverflowMenuProps
-import typings.carbonComponentsReact.paginationNavPaginationNavMod.PaginationNavProps
-import typings.carbonComponentsReact.paginationSkeletonMod.PaginationSkeletonProps
-import typings.carbonComponentsReact.progressBarProgressBarMod.ProgressBarProps
-import typings.carbonComponentsReact.progressIndicatorProgressIndicatorMod.ProgressIndicatorProps
-import typings.carbonComponentsReact.progressIndicatorProgressIndicatorMod.ProgressStepProps
-import typings.carbonComponentsReact.progressIndicatorSkeletonMod.ProgressIndicatorSkeletonProps
-import typings.carbonComponentsReact.radioButtonRadioButtonMod.RadioButtonProps
-import typings.carbonComponentsReact.radioButtonSkeletonMod.RadioButtonSkeletonProps
-import typings.carbonComponentsReact.radioTileRadioTileMod.RadioTileProps
-import typings.carbonComponentsReact.rowMod.RowCustomComponentProps
-import typings.carbonComponentsReact.rowMod.RowDefaultProps
-import typings.carbonComponentsReact.rowMod.RowIntrinsicProps
-import typings.carbonComponentsReact.searchFilterButtonSearchFilterButtonMod.SearchFilterButtonProps
-import typings.carbonComponentsReact.searchSkeletonMod.SearchSkeletonProps
-import typings.carbonComponentsReact.selectItemGroupSelectItemGroupMod.SelectItemGroupProps
-import typings.carbonComponentsReact.selectItemSelectItemMod.SelectItemProps
-import typings.carbonComponentsReact.selectSelectMod.SelectProps
-import typings.carbonComponentsReact.selectSkeletonMod.SelectSkeletonProps
-import typings.carbonComponentsReact.sideNavDetailsMod.SideNavDetailsProps
-import typings.carbonComponentsReact.sideNavDividerMod.SideNavDividerProps
-import typings.carbonComponentsReact.sideNavFooterMod.SideNavFooterProps
-import typings.carbonComponentsReact.sideNavHeaderMod.SideNavHeaderProps
-import typings.carbonComponentsReact.sideNavIconMod.SideNavIconProps
-import typings.carbonComponentsReact.sideNavItemMod.SideNavItemProps
-import typings.carbonComponentsReact.sideNavItemsMod.SideNavItemsProps
-import typings.carbonComponentsReact.sideNavLinkMod.SideNavLinkFC
-import typings.carbonComponentsReact.sideNavLinkMod.SideNavLinkProps
-import typings.carbonComponentsReact.sideNavLinkTextMod.SideNavLinkTextProps
-import typings.carbonComponentsReact.sideNavMenuItemMod.SideNavMenuItemProps
-import typings.carbonComponentsReact.sideNavMenuMod.SideNavMenuProps
-import typings.carbonComponentsReact.sideNavMod.SideNavProps
-import typings.carbonComponentsReact.sideNavSwitcherMod.SideNavSwitcherProps
-import typings.carbonComponentsReact.skeletonIconSkeletonIconMod.SkeletonIconProps
-import typings.carbonComponentsReact.skeletonPlaceholderSkeletonPlaceholderMod.SkeletonPlaceholderProps
-import typings.carbonComponentsReact.skeletonTextSkeletonTextMod.SkeletonTextProps
-import typings.carbonComponentsReact.skipToContentMod.SkipToContentProps
-import typings.carbonComponentsReact.sliderSkeletonMod.SliderSkeletonProps
-import typings.carbonComponentsReact.structuredListSkeletonMod.StructuredListSkeletonProps
-import typings.carbonComponentsReact.structuredListStructuredListMod.AllStructuredListRowProps
-import typings.carbonComponentsReact.structuredListStructuredListMod.StructuredListBodyProps
-import typings.carbonComponentsReact.structuredListStructuredListMod.StructuredListCellProps
-import typings.carbonComponentsReact.structuredListStructuredListMod.StructuredListHeadProps
-import typings.carbonComponentsReact.structuredListStructuredListMod.StructuredListInputProps
-import typings.carbonComponentsReact.structuredListStructuredListMod.StructuredListWrapperProps
-import typings.carbonComponentsReact.switchSwitchMod.SwitchProps
-import typings.carbonComponentsReact.switcherDividerMod.SwitcherDividerProps
-import typings.carbonComponentsReact.switcherItemMod.SwitcherItemProps
-import typings.carbonComponentsReact.switcherMod.SwitcherProps
-import typings.carbonComponentsReact.tabContentTabContentMod.TabContentProps
-import typings.carbonComponentsReact.tableActionListMod.TableActionListProps
-import typings.carbonComponentsReact.tableBatchActionsMod.TableBatchActionsFC
-import typings.carbonComponentsReact.tableBodyMod.TableBodyProps
-import typings.carbonComponentsReact.tableCellMod.TableCellProps
-import typings.carbonComponentsReact.tableContainerMod.TableContainerProps
-import typings.carbonComponentsReact.tableExpandHeaderMod.TableExpandHeaderProps
-import typings.carbonComponentsReact.tableExpandRowMod.TableExpandRowProps
-import typings.carbonComponentsReact.tableExpandedRowMod.TableExpandedRowProps
-import typings.carbonComponentsReact.tableHeadMod.TableHeadProps
-import typings.carbonComponentsReact.tableHeaderMod.TableHeaderFC
-import typings.carbonComponentsReact.tableMod.TableProps
-import typings.carbonComponentsReact.tableRowMod.TableRowProps
-import typings.carbonComponentsReact.tableSelectAllMod.TableSelectAllProps
-import typings.carbonComponentsReact.tableSelectRowMod.TableSelectRowProps
-import typings.carbonComponentsReact.tableToolbarActionMod.TableToolbarActionAnchorProps
-import typings.carbonComponentsReact.tableToolbarActionMod.TableToolbarActionButtonProps
-import typings.carbonComponentsReact.tableToolbarContentMod.TableToolbarContentProps
-import typings.carbonComponentsReact.tableToolbarMenuMod.TableToolbarMenuProps
-import typings.carbonComponentsReact.tableToolbarMod.TableToolbarProps
-import typings.carbonComponentsReact.tableToolbarSearchMod.TableToolbarSearchProps
-import typings.carbonComponentsReact.tabsSkeletonMod.TabsSkeletonProps
-import typings.carbonComponentsReact.tagSkeletonMod.TagSkeletonProps
-import typings.carbonComponentsReact.tagTagMod.ChipTagProps
-import typings.carbonComponentsReact.tagTagMod.FilterTagProps
-import typings.carbonComponentsReact.tagTagMod.TagTypeName
-import typings.carbonComponentsReact.textAreaSkeletonMod.TextAreaSkeletonProps
-import typings.carbonComponentsReact.textAreaTextAreaMod.TextAreaProps
-import typings.carbonComponentsReact.textInputPasswordInputMod.PasswordInputProps
-import typings.carbonComponentsReact.textInputSkeletonMod.TextInputSkeletonProps
-import typings.carbonComponentsReact.textInputTextInputMod.TextInputFC
-import typings.carbonComponentsReact.tileTileMod.ClickableTileProps
-import typings.carbonComponentsReact.tileTileMod.ExpandableTileProps
-import typings.carbonComponentsReact.tileTileMod.SelectableTileProps
-import typings.carbonComponentsReact.tileTileMod.TileAboveTheFoldContentProps
-import typings.carbonComponentsReact.tileTileMod.TileBelowTheFoldContentProps
-import typings.carbonComponentsReact.tileTileMod.TileProps
-import typings.carbonComponentsReact.toggleSmallToggleSmallMod.ToggleSmallProps
-import typings.carbonComponentsReact.toolbarToolbarMod.ToolbarItemProps
-import typings.carbonComponentsReact.toolbarToolbarMod.ToolbarOptionProps
-import typings.carbonComponentsReact.toolbarToolbarMod.ToolbarProps
-import typings.carbonComponentsReact.toolbarToolbarMod.ToolbarTitleProps
-import typings.carbonComponentsReact.tooltipDefinitionTooltipDefinitionMod.TooltipDefinitionProps
-import typings.carbonComponentsReact.tooltipIconTooltipIconMod.TooltipIconProps
-import typings.carbonComponentsReact.tooltipTooltipMod.TooltipProps
-import typings.carbonComponentsReact.treeViewTreeViewMod.TreeViewFC
+import typings.carbonComponentsReact.libComponentsAccordionAccordionDotSkeletonMod.AccordionSkeletonProps
+import typings.carbonComponentsReact.libComponentsAccordionAccordionMod.AccordionProps
+import typings.carbonComponentsReact.libComponentsAccordionItemMod.default
+import typings.carbonComponentsReact.libComponentsAspectRatioAspectRatioMod.AspectRatioCustomComponentProps
+import typings.carbonComponentsReact.libComponentsAspectRatioAspectRatioMod.AspectRatioDefaultProps
+import typings.carbonComponentsReact.libComponentsAspectRatioAspectRatioMod.AspectRatioIntrinsicProps
+import typings.carbonComponentsReact.libComponentsBreadcrumbBreadcrumbDotSkeletonMod.BreadcrumbSkeletonProps
+import typings.carbonComponentsReact.libComponentsBreadcrumbBreadcrumbItemMod.BreadcrumbItemProps
+import typings.carbonComponentsReact.libComponentsBreadcrumbBreadcrumbMod.BreadcrumbProps
+import typings.carbonComponentsReact.libComponentsButtonButtonDotSkeletonMod.ButtonSkeletonProps
+import typings.carbonComponentsReact.libComponentsButtonButtonMod.ButtonAnchorProps
+import typings.carbonComponentsReact.libComponentsButtonButtonMod.ButtonCustomComponentProps
+import typings.carbonComponentsReact.libComponentsButtonButtonMod.ButtonDefaultProps
+import typings.carbonComponentsReact.libComponentsButtonButtonMod.ButtonIntrinsicProps
+import typings.carbonComponentsReact.libComponentsButtonButtonMod.ButtonKindProps
+import typings.carbonComponentsReact.libComponentsButtonSetButtonSetMod.ButtonSetProps
+import typings.carbonComponentsReact.libComponentsCheckboxCheckboxDotSkeletonMod.CheckboxSkeletonProps
+import typings.carbonComponentsReact.libComponentsCheckboxCheckboxMod.CheckboxProps
+import typings.carbonComponentsReact.libComponentsCodeSnippetCodeSnippetDotSkeletonMod.CodeSnippetSkeletonProps
+import typings.carbonComponentsReact.libComponentsCodeSnippetCodeSnippetMod.CodeSnippetDivProps
+import typings.carbonComponentsReact.libComponentsCodeSnippetCodeSnippetMod.CodeSnippetInlineProps
+import typings.carbonComponentsReact.libComponentsCodeSnippetCodeSnippetMod.CodeSnippetMultiProps
+import typings.carbonComponentsReact.libComponentsComboBoxComboBoxMod.ComboBoxProps
+import typings.carbonComponentsReact.libComponentsComposedModalComposedModalMod.ModalBodyProps
+import typings.carbonComponentsReact.libComponentsComposedModalComposedModalMod.ModalFooterProps
+import typings.carbonComponentsReact.libComponentsComposedModalComposedModalMod.ModalHeaderProps
+import typings.carbonComponentsReact.libComponentsCopyButtonCopyButtonMod.CopyButtonProps
+import typings.carbonComponentsReact.libComponentsCopyCopyMod.CopyProps
+import typings.carbonComponentsReact.libComponentsDataTableDataTableMod.DataTableHeader
+import typings.carbonComponentsReact.libComponentsDataTableDataTableMod.DataTableRow
+import typings.carbonComponentsReact.libComponentsDataTableDataTableMod.DataTableTranslationKey
+import typings.carbonComponentsReact.libComponentsDataTableSkeletonDataTableSkeletonMod.DataTableSkeletonProps
+import typings.carbonComponentsReact.libComponentsDataTableTableActionListMod.TableActionListProps
+import typings.carbonComponentsReact.libComponentsDataTableTableBatchActionsMod.TableBatchActionsFC
+import typings.carbonComponentsReact.libComponentsDataTableTableBodyMod.TableBodyProps
+import typings.carbonComponentsReact.libComponentsDataTableTableCellMod.TableCellProps
+import typings.carbonComponentsReact.libComponentsDataTableTableContainerMod.TableContainerProps
+import typings.carbonComponentsReact.libComponentsDataTableTableExpandHeaderMod.TableExpandHeaderProps
+import typings.carbonComponentsReact.libComponentsDataTableTableExpandRowMod.TableExpandRowProps
+import typings.carbonComponentsReact.libComponentsDataTableTableExpandedRowMod.TableExpandedRowProps
+import typings.carbonComponentsReact.libComponentsDataTableTableHeadMod.TableHeadProps
+import typings.carbonComponentsReact.libComponentsDataTableTableHeaderMod.TableHeaderFC
+import typings.carbonComponentsReact.libComponentsDataTableTableMod.TableProps
+import typings.carbonComponentsReact.libComponentsDataTableTableRowMod.TableRowProps
+import typings.carbonComponentsReact.libComponentsDataTableTableSelectAllMod.TableSelectAllProps
+import typings.carbonComponentsReact.libComponentsDataTableTableSelectRowMod.TableSelectRowProps
+import typings.carbonComponentsReact.libComponentsDataTableTableToolbarActionMod.TableToolbarActionAnchorProps
+import typings.carbonComponentsReact.libComponentsDataTableTableToolbarActionMod.TableToolbarActionButtonProps
+import typings.carbonComponentsReact.libComponentsDataTableTableToolbarContentMod.TableToolbarContentProps
+import typings.carbonComponentsReact.libComponentsDataTableTableToolbarMenuMod.TableToolbarMenuProps
+import typings.carbonComponentsReact.libComponentsDataTableTableToolbarMod.TableToolbarProps
+import typings.carbonComponentsReact.libComponentsDataTableTableToolbarSearchMod.TableToolbarSearchProps
+import typings.carbonComponentsReact.libComponentsDatePickerDatePickerDotSkeletonMod.DatePickerSkeletonProps
+import typings.carbonComponentsReact.libComponentsDropdownDropdownDotSkeletonMod.DropdownSkeletonProps
+import typings.carbonComponentsReact.libComponentsDropdownDropdownMod.DropdownProps
+import typings.carbonComponentsReact.libComponentsErrorBoundaryErrorBoundaryContextMod.ErrorBoundaryContextValue
+import typings.carbonComponentsReact.libComponentsExpandableSearchExpandableSearchMod.ExpandableSearchProps
+import typings.carbonComponentsReact.libComponentsFeatureFlagsMod.FeatureFlagScope
+import typings.carbonComponentsReact.libComponentsFeatureFlagsMod.FeatureFlagsProps
+import typings.carbonComponentsReact.libComponentsFileUploaderFileUploaderButtonMod.FileUploaderButtonProps
+import typings.carbonComponentsReact.libComponentsFileUploaderFileUploaderDotSkeletonMod.FileUploaderSkeletonProps
+import typings.carbonComponentsReact.libComponentsFileUploaderFileUploaderDropContainerMod.FileUploaderDropContainerProps
+import typings.carbonComponentsReact.libComponentsFileUploaderFileUploaderItemMod.FileUploaderItemProps
+import typings.carbonComponentsReact.libComponentsFileUploaderFileUploaderMod.FileUploaderProps
+import typings.carbonComponentsReact.libComponentsFileUploaderFilenameMod.FilenameIconProps
+import typings.carbonComponentsReact.libComponentsFluidFormFluidFormMod.FluidFormProps
+import typings.carbonComponentsReact.libComponentsFormFormMod.FormProps
+import typings.carbonComponentsReact.libComponentsFormGroupFormGroupMod.FormGroupProps
+import typings.carbonComponentsReact.libComponentsFormItemFormItemMod.FormItemProps
+import typings.carbonComponentsReact.libComponentsFormLabelFormLabelMod.FormLabelProps
+import typings.carbonComponentsReact.libComponentsGridColumnMod.ColumnCustomComponentProps
+import typings.carbonComponentsReact.libComponentsGridColumnMod.ColumnDefaultProps
+import typings.carbonComponentsReact.libComponentsGridColumnMod.ColumnIntrinsicProps
+import typings.carbonComponentsReact.libComponentsGridGridMod.GridCustomComponentProps
+import typings.carbonComponentsReact.libComponentsGridGridMod.GridDefaultProps
+import typings.carbonComponentsReact.libComponentsGridGridMod.GridIntrinsicProps
+import typings.carbonComponentsReact.libComponentsGridRowMod.RowCustomComponentProps
+import typings.carbonComponentsReact.libComponentsGridRowMod.RowDefaultProps
+import typings.carbonComponentsReact.libComponentsGridRowMod.RowIntrinsicProps
+import typings.carbonComponentsReact.libComponentsHeadingMod.HeadingProps
+import typings.carbonComponentsReact.libComponentsHeadingMod.SectionCustomComponentProps
+import typings.carbonComponentsReact.libComponentsHeadingMod.SectionDefaultProps
+import typings.carbonComponentsReact.libComponentsHeadingMod.SectionIntrinsicProps
+import typings.carbonComponentsReact.libComponentsIconIconDotSkeletonMod.IconSkeletonProps
+import typings.carbonComponentsReact.libComponentsIconIconMod.IconProps
+import typings.carbonComponentsReact.libComponentsInlineLoadingInlineLoadingMod.InlineLoadingProps
+import typings.carbonComponentsReact.libComponentsLinkLinkMod.LinkProps
+import typings.carbonComponentsReact.libComponentsListItemListItemMod.ListItemProps
+import typings.carbonComponentsReact.libComponentsLoadingLoadingMod.LoadingProps
+import typings.carbonComponentsReact.libComponentsMenuMenuMod.MenuComponent
+import typings.carbonComponentsReact.libComponentsNotificationNotificationMod.InlineNotificationProps
+import typings.carbonComponentsReact.libComponentsNotificationNotificationMod.NotificationActionButtonProps
+import typings.carbonComponentsReact.libComponentsNotificationNotificationMod.NotificationButtonProps
+import typings.carbonComponentsReact.libComponentsNotificationNotificationMod.NotificationTextDetailsProps
+import typings.carbonComponentsReact.libComponentsNotificationNotificationMod.ToastNotificationProps
+import typings.carbonComponentsReact.libComponentsNumberInputNumberInputDotSkeletonMod.NumberInputSkeletonProps
+import typings.carbonComponentsReact.libComponentsNumberInputNumberInputMod.NumberInputProps
+import typings.carbonComponentsReact.libComponentsOrderedListOrderedListMod.OrderedListProps
+import typings.carbonComponentsReact.libComponentsOverflowMenuOverflowMenuMod.OverflowMenuProps
+import typings.carbonComponentsReact.libComponentsPaginationNavPaginationNavMod.PaginationNavProps
+import typings.carbonComponentsReact.libComponentsPaginationPaginationDotSkeletonMod.PaginationSkeletonProps
+import typings.carbonComponentsReact.libComponentsProgressBarProgressBarMod.ProgressBarProps
+import typings.carbonComponentsReact.libComponentsProgressIndicatorProgressIndicatorDotSkeletonMod.ProgressIndicatorSkeletonProps
+import typings.carbonComponentsReact.libComponentsProgressIndicatorProgressIndicatorMod.ProgressIndicatorProps
+import typings.carbonComponentsReact.libComponentsProgressIndicatorProgressIndicatorMod.ProgressStepProps
+import typings.carbonComponentsReact.libComponentsRadioButtonRadioButtonDotSkeletonMod.RadioButtonSkeletonProps
+import typings.carbonComponentsReact.libComponentsRadioButtonRadioButtonMod.RadioButtonProps
+import typings.carbonComponentsReact.libComponentsRadioTileRadioTileMod.RadioTileProps
+import typings.carbonComponentsReact.libComponentsSearchFilterButtonSearchFilterButtonMod.SearchFilterButtonProps
+import typings.carbonComponentsReact.libComponentsSearchSearchDotSkeletonMod.SearchSkeletonProps
+import typings.carbonComponentsReact.libComponentsSelectItemGroupSelectItemGroupMod.SelectItemGroupProps
+import typings.carbonComponentsReact.libComponentsSelectItemSelectItemMod.SelectItemProps
+import typings.carbonComponentsReact.libComponentsSelectSelectDotSkeletonMod.SelectSkeletonProps
+import typings.carbonComponentsReact.libComponentsSelectSelectMod.SelectProps
+import typings.carbonComponentsReact.libComponentsSkeletonIconSkeletonIconMod.SkeletonIconProps
+import typings.carbonComponentsReact.libComponentsSkeletonPlaceholderSkeletonPlaceholderMod.SkeletonPlaceholderProps
+import typings.carbonComponentsReact.libComponentsSkeletonTextSkeletonTextMod.SkeletonTextProps
+import typings.carbonComponentsReact.libComponentsSliderSliderDotSkeletonMod.SliderSkeletonProps
+import typings.carbonComponentsReact.libComponentsStructuredListStructuredListDotSkeletonMod.StructuredListSkeletonProps
+import typings.carbonComponentsReact.libComponentsStructuredListStructuredListMod.AllStructuredListRowProps
+import typings.carbonComponentsReact.libComponentsStructuredListStructuredListMod.StructuredListBodyProps
+import typings.carbonComponentsReact.libComponentsStructuredListStructuredListMod.StructuredListCellProps
+import typings.carbonComponentsReact.libComponentsStructuredListStructuredListMod.StructuredListHeadProps
+import typings.carbonComponentsReact.libComponentsStructuredListStructuredListMod.StructuredListInputProps
+import typings.carbonComponentsReact.libComponentsStructuredListStructuredListMod.StructuredListWrapperProps
+import typings.carbonComponentsReact.libComponentsSwitchSwitchMod.SwitchProps
+import typings.carbonComponentsReact.libComponentsTabContentTabContentMod.TabContentProps
+import typings.carbonComponentsReact.libComponentsTabsTabsDotSkeletonMod.TabsSkeletonProps
+import typings.carbonComponentsReact.libComponentsTagTagDotSkeletonMod.TagSkeletonProps
+import typings.carbonComponentsReact.libComponentsTagTagMod.ChipTagProps
+import typings.carbonComponentsReact.libComponentsTagTagMod.FilterTagProps
+import typings.carbonComponentsReact.libComponentsTagTagMod.TagTypeName
+import typings.carbonComponentsReact.libComponentsTextAreaTextAreaDotSkeletonMod.TextAreaSkeletonProps
+import typings.carbonComponentsReact.libComponentsTextAreaTextAreaMod.TextAreaProps
+import typings.carbonComponentsReact.libComponentsTextInputControlledPasswordInputMod.ControlledPasswordInputProps
+import typings.carbonComponentsReact.libComponentsTextInputPasswordInputMod.PasswordInputProps
+import typings.carbonComponentsReact.libComponentsTextInputTextInputDotSkeletonMod.TextInputSkeletonProps
+import typings.carbonComponentsReact.libComponentsTextInputTextInputMod.TextInputFC
+import typings.carbonComponentsReact.libComponentsTileTileMod.ClickableTileProps
+import typings.carbonComponentsReact.libComponentsTileTileMod.ExpandableTileProps
+import typings.carbonComponentsReact.libComponentsTileTileMod.SelectableTileProps
+import typings.carbonComponentsReact.libComponentsTileTileMod.TileAboveTheFoldContentProps
+import typings.carbonComponentsReact.libComponentsTileTileMod.TileBelowTheFoldContentProps
+import typings.carbonComponentsReact.libComponentsTileTileMod.TileProps
+import typings.carbonComponentsReact.libComponentsToggleSmallToggleSmallMod.ToggleSmallProps
+import typings.carbonComponentsReact.libComponentsToolbarToolbarMod.ToolbarItemProps
+import typings.carbonComponentsReact.libComponentsToolbarToolbarMod.ToolbarOptionProps
+import typings.carbonComponentsReact.libComponentsToolbarToolbarMod.ToolbarProps
+import typings.carbonComponentsReact.libComponentsToolbarToolbarMod.ToolbarTitleProps
+import typings.carbonComponentsReact.libComponentsTooltipDefinitionTooltipDefinitionMod.TooltipDefinitionProps
+import typings.carbonComponentsReact.libComponentsTooltipIconTooltipIconMod.TooltipIconProps
+import typings.carbonComponentsReact.libComponentsTooltipTooltipMod.TooltipProps
+import typings.carbonComponentsReact.libComponentsTreeViewTreeViewMod.TreeViewFC
+import typings.carbonComponentsReact.libComponentsUishellContentMod.ContentDefaultProps
+import typings.carbonComponentsReact.libComponentsUishellContentMod.ContentIntrinsicProps
+import typings.carbonComponentsReact.libComponentsUishellHeaderContainerMod.HeaderContainerProps
+import typings.carbonComponentsReact.libComponentsUishellHeaderGlobalActionMod.HeaderGlobalActionProps
+import typings.carbonComponentsReact.libComponentsUishellHeaderGlobalBarMod.HeaderGlobalBarProps
+import typings.carbonComponentsReact.libComponentsUishellHeaderMenuButtonMod.HeaderMenuButtonProps
+import typings.carbonComponentsReact.libComponentsUishellHeaderMenuItemMod.HeaderMenuItemProps
+import typings.carbonComponentsReact.libComponentsUishellHeaderMenuMod.HeaderMenuForwardRefProps
+import typings.carbonComponentsReact.libComponentsUishellHeaderMod.HeaderProps
+import typings.carbonComponentsReact.libComponentsUishellHeaderNameMod.HeaderNameProps
+import typings.carbonComponentsReact.libComponentsUishellHeaderPanelMod.HeaderPanelProps
+import typings.carbonComponentsReact.libComponentsUishellHeaderSideNavItemsMod.HeaderSideNavItemsProps
+import typings.carbonComponentsReact.libComponentsUishellSideNavDetailsMod.SideNavDetailsProps
+import typings.carbonComponentsReact.libComponentsUishellSideNavDividerMod.SideNavDividerProps
+import typings.carbonComponentsReact.libComponentsUishellSideNavFooterMod.SideNavFooterProps
+import typings.carbonComponentsReact.libComponentsUishellSideNavHeaderMod.SideNavHeaderProps
+import typings.carbonComponentsReact.libComponentsUishellSideNavIconMod.SideNavIconProps
+import typings.carbonComponentsReact.libComponentsUishellSideNavItemMod.SideNavItemProps
+import typings.carbonComponentsReact.libComponentsUishellSideNavItemsMod.SideNavItemsProps
+import typings.carbonComponentsReact.libComponentsUishellSideNavLinkMod.SideNavLinkFC
+import typings.carbonComponentsReact.libComponentsUishellSideNavLinkMod.SideNavLinkProps
+import typings.carbonComponentsReact.libComponentsUishellSideNavLinkTextMod.SideNavLinkTextProps
+import typings.carbonComponentsReact.libComponentsUishellSideNavMenuItemMod.SideNavMenuItemProps
+import typings.carbonComponentsReact.libComponentsUishellSideNavMenuMod.SideNavMenuProps
+import typings.carbonComponentsReact.libComponentsUishellSideNavMod.SideNavProps
+import typings.carbonComponentsReact.libComponentsUishellSideNavSwitcherMod.SideNavSwitcherProps
+import typings.carbonComponentsReact.libComponentsUishellSkipToContentMod.SkipToContentProps
+import typings.carbonComponentsReact.libComponentsUishellSwitcherDividerMod.SwitcherDividerProps
+import typings.carbonComponentsReact.libComponentsUishellSwitcherItemMod.SwitcherItemProps
+import typings.carbonComponentsReact.libComponentsUishellSwitcherMod.SwitcherProps
+import typings.carbonComponentsReact.libComponentsUnorderedListUnorderedListMod.UnorderedListProps
 import typings.carbonComponentsReact.typingsSharedMod.FCProps
 import typings.carbonComponentsReact.typingsSharedMod.FCReturn
 import typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps
 import typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn
 import typings.carbonComponentsReact.typingsSharedMod.ListBoxBaseItemType
 import typings.carbonComponentsReact.typingsSharedMod.ReactComponentConstructor
-import typings.carbonComponentsReact.unorderedListUnorderedListMod.UnorderedListProps
 import typings.react.mod.Context
 import typings.react.mod.FC
 import typings.react.mod.ReactNode
@@ -398,7 +398,7 @@ object mod {
   @JSImport("carbon-components-react", "AccordingItem")
   @js.native
   open class AccordingItem ()
-    extends typings.carbonComponentsReact.accordionMod.AccordingItem
+    extends typings.carbonComponentsReact.libComponentsAccordionMod.AccordingItem
   
   @JSImport("carbon-components-react", "Accordion")
   @js.native
@@ -778,6 +778,7 @@ object mod {
   val BreadcrumbSkeleton: FC[BreadcrumbSkeletonProps] = js.native
   
   // tslint:disable:unified-signatures breaks certain usages
+  inline def Button(props: ForwardRefProps[HTMLAnchorElement, ButtonAnchorProps & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   //
   // Note: TypeScript will try to select the best overload but this is not always easily predictable the more freedom the
   // generic types have or the more they overlap. If you're having difficulty with these types you can try reexporting the
@@ -786,13 +787,11 @@ object mod {
   // import { Button } from "carbon-components-react"
   // export const DefaultButton = Button as React.FC<ButtonDefaultProps>;
   // export const AnchorButton = Button as React.FC<ButtonAnchorProps>;
+  //
   // or just create a wrapper component.
-  inline def Button(
-    props: ForwardRefProps[
-      HTMLAnchorElement | HTMLButtonElement, 
-      ButtonAnchorProps & ButtonKindProps & ButtonDefaultProps
-    ]
-  ): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  //
+  inline def Button(props: ForwardRefProps[HTMLButtonElement, ButtonDefaultProps & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def Button[T /* <: ReactComponentConstructor[scala.Nothing] */, R](props: ForwardRefProps[R, ButtonCustomComponentProps[T] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   @JSImport("carbon-components-react", "ButtonSet")
   @js.native
@@ -801,8 +800,6 @@ object mod {
   @JSImport("carbon-components-react", "ButtonSkeleton")
   @js.native
   val ButtonSkeleton: FC[ButtonSkeletonProps] = js.native
-  
-  inline def Button_TR[T /* <: ReactComponentConstructor[scala.Nothing] */, R](props: ForwardRefProps[R, ButtonCustomComponentProps[T] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def Button_a[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[a] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
@@ -1165,7 +1162,7 @@ object mod {
   @JSImport("carbon-components-react", "ClickableTile")
   @js.native
   open class ClickableTile protected ()
-    extends typings.carbonComponentsReact.tileMod.ClickableTile {
+    extends typings.carbonComponentsReact.libComponentsTileMod.ClickableTile {
     def this(props: ClickableTileProps) = this()
     /**
       * @deprecated
@@ -1539,14 +1536,14 @@ object mod {
   @JSImport("carbon-components-react", "ComposedModal")
   @js.native
   open class ComposedModal ()
-    extends typings.carbonComponentsReact.composedModalMod.default
+    extends typings.carbonComponentsReact.libComponentsComposedModalMod.default
   
   inline def Content(props: ContentDefaultProps): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   @JSImport("carbon-components-react", "ContentSwitcher")
   @js.native
   open class ContentSwitcher ()
-    extends typings.carbonComponentsReact.contentSwitcherMod.default
+    extends typings.carbonComponentsReact.libComponentsContentSwitcherMod.default
   
   inline def Content_a(props: ContentIntrinsicProps[a]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
@@ -2271,7 +2268,7 @@ object mod {
   @JSImport("carbon-components-react", "DataTable")
   @js.native
   open class DataTable[R /* <: DataTableRow[String] */, H /* <: DataTableHeader[String] */] ()
-    extends typings.carbonComponentsReact.dataTableMod.default[R, H]
+    extends typings.carbonComponentsReact.libComponentsDataTableMod.default[R, H]
   object DataTable {
     
     @JSImport("carbon-components-react", "DataTable")
@@ -2292,25 +2289,21 @@ object mod {
     
     /* static member */
     /* was `typeof TableBatchAction` */
-    inline def TableBatchAction(
-      props: ForwardRefProps[
-          HTMLAnchorElement | HTMLButtonElement, 
-          ButtonAnchorProps & ButtonKindProps & ButtonDefaultProps
-        ]
-    ): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
-    
+    inline def TableBatchAction(props: ForwardRefProps[HTMLAnchorElement, ButtonAnchorProps & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
     /* static member */
     /* was `typeof TableBatchAction` */
-    inline def TableBatchAction_R[R /* <: HTMLElement */](
+    inline def TableBatchAction(props: ForwardRefProps[HTMLButtonElement, ButtonDefaultProps & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+    /* static member */
+    /* was `typeof TableBatchAction` */
+    inline def TableBatchAction[R /* <: HTMLElement */](
       props: ForwardRefProps[
           R, 
           ButtonIntrinsicProps[a] & ButtonKindProps & ButtonIntrinsicProps[abbr] & ButtonIntrinsicProps[address] & ButtonIntrinsicProps[area] & ButtonIntrinsicProps[article] & ButtonIntrinsicProps[aside] & ButtonIntrinsicProps[audio] & ButtonIntrinsicProps[b] & ButtonIntrinsicProps[base] & ButtonIntrinsicProps[bdi] & ButtonIntrinsicProps[bdo] & ButtonIntrinsicProps[big] & ButtonIntrinsicProps[blockquote] & ButtonIntrinsicProps[body] & ButtonIntrinsicProps[br] & ButtonIntrinsicProps[button] & ButtonIntrinsicProps[canvas] & ButtonIntrinsicProps[caption] & ButtonIntrinsicProps[cite] & ButtonIntrinsicProps[code] & ButtonIntrinsicProps[col] & ButtonIntrinsicProps[colgroup] & ButtonIntrinsicProps[data] & ButtonIntrinsicProps[datalist] & ButtonIntrinsicProps[dd] & ButtonIntrinsicProps[del] & ButtonIntrinsicProps[details] & ButtonIntrinsicProps[dfn] & ButtonIntrinsicProps[dialog] & ButtonIntrinsicProps[div] & ButtonIntrinsicProps[dl] & ButtonIntrinsicProps[dt] & ButtonIntrinsicProps[em] & ButtonIntrinsicProps[embed] & ButtonIntrinsicProps[fieldset] & ButtonIntrinsicProps[figcaption] & ButtonIntrinsicProps[figure] & ButtonIntrinsicProps[footer] & ButtonIntrinsicProps[form] & ButtonIntrinsicProps[h1] & ButtonIntrinsicProps[h2] & ButtonIntrinsicProps[h3] & ButtonIntrinsicProps[h4] & ButtonIntrinsicProps[h5] & ButtonIntrinsicProps[h6] & ButtonIntrinsicProps[head] & ButtonIntrinsicProps[header] & ButtonIntrinsicProps[hgroup] & ButtonIntrinsicProps[hr] & ButtonIntrinsicProps[html] & ButtonIntrinsicProps[i] & ButtonIntrinsicProps[iframe] & ButtonIntrinsicProps[img] & ButtonIntrinsicProps[input] & ButtonIntrinsicProps[ins] & ButtonIntrinsicProps[kbd] & ButtonIntrinsicProps[keygen] & ButtonIntrinsicProps[label] & ButtonIntrinsicProps[legend] & ButtonIntrinsicProps[li] & ButtonIntrinsicProps[link] & ButtonIntrinsicProps[main] & ButtonIntrinsicProps[map] & ButtonIntrinsicProps[mark] & ButtonIntrinsicProps[menu] & ButtonIntrinsicProps[menuitem] & ButtonIntrinsicProps[meta] & ButtonIntrinsicProps[meter] & ButtonIntrinsicProps[nav] & ButtonIntrinsicProps[noindex] & ButtonIntrinsicProps[noscript] & ButtonIntrinsicProps[`object`] & ButtonIntrinsicProps[ol] & ButtonIntrinsicProps[optgroup] & ButtonIntrinsicProps[option] & ButtonIntrinsicProps[output] & ButtonIntrinsicProps[p] & ButtonIntrinsicProps[param] & ButtonIntrinsicProps[picture] & ButtonIntrinsicProps[pre] & ButtonIntrinsicProps[progress] & ButtonIntrinsicProps[q] & ButtonIntrinsicProps[rp] & ButtonIntrinsicProps[rt] & ButtonIntrinsicProps[ruby] & ButtonIntrinsicProps[s] & ButtonIntrinsicProps[samp] & ButtonIntrinsicProps[slot] & ButtonIntrinsicProps[script] & ButtonIntrinsicProps[section] & ButtonIntrinsicProps[select] & ButtonIntrinsicProps[small] & ButtonIntrinsicProps[source] & ButtonIntrinsicProps[span] & ButtonIntrinsicProps[strong] & ButtonIntrinsicProps[style] & ButtonIntrinsicProps[sub] & ButtonIntrinsicProps[summary] & ButtonIntrinsicProps[sup] & ButtonIntrinsicProps[table] & ButtonIntrinsicProps[template] & ButtonIntrinsicProps[tbody] & ButtonIntrinsicProps[td] & ButtonIntrinsicProps[textarea] & ButtonIntrinsicProps[tfoot] & ButtonIntrinsicProps[th] & ButtonIntrinsicProps[thead] & ButtonIntrinsicProps[time] & ButtonIntrinsicProps[title] & ButtonIntrinsicProps[tr] & ButtonIntrinsicProps[track] & ButtonIntrinsicProps[u] & ButtonIntrinsicProps[ul] & ButtonIntrinsicProps[`var`] & ButtonIntrinsicProps[video] & ButtonIntrinsicProps[wbr] & ButtonIntrinsicProps[webview] & ButtonIntrinsicProps[svg] & ButtonIntrinsicProps[animate] & ButtonIntrinsicProps[animateMotion] & ButtonIntrinsicProps[animateTransform] & ButtonIntrinsicProps[circle] & ButtonIntrinsicProps[clipPath] & ButtonIntrinsicProps[defs] & ButtonIntrinsicProps[desc_] & ButtonIntrinsicProps[ellipse] & ButtonIntrinsicProps[feBlend] & ButtonIntrinsicProps[feColorMatrix] & ButtonIntrinsicProps[feComponentTransfer] & ButtonIntrinsicProps[feComposite] & ButtonIntrinsicProps[feConvolveMatrix] & ButtonIntrinsicProps[feDiffuseLighting] & ButtonIntrinsicProps[feDisplacementMap] & ButtonIntrinsicProps[feDistantLight] & ButtonIntrinsicProps[feDropShadow] & ButtonIntrinsicProps[feFlood] & ButtonIntrinsicProps[feFuncA] & ButtonIntrinsicProps[feFuncB] & ButtonIntrinsicProps[feFuncG] & ButtonIntrinsicProps[feFuncR] & ButtonIntrinsicProps[feGaussianBlur] & ButtonIntrinsicProps[feImage] & ButtonIntrinsicProps[feMerge] & ButtonIntrinsicProps[feMergeNode] & ButtonIntrinsicProps[feMorphology] & ButtonIntrinsicProps[feOffset] & ButtonIntrinsicProps[fePointLight] & ButtonIntrinsicProps[feSpecularLighting] & ButtonIntrinsicProps[feSpotLight] & ButtonIntrinsicProps[feTile] & ButtonIntrinsicProps[feTurbulence] & ButtonIntrinsicProps[filter] & ButtonIntrinsicProps[foreignObject] & ButtonIntrinsicProps[g] & ButtonIntrinsicProps[image] & ButtonIntrinsicProps[line] & ButtonIntrinsicProps[linearGradient] & ButtonIntrinsicProps[marker] & ButtonIntrinsicProps[mask] & ButtonIntrinsicProps[metadata] & ButtonIntrinsicProps[mpath] & ButtonIntrinsicProps[path] & ButtonIntrinsicProps[pattern] & ButtonIntrinsicProps[polygon] & ButtonIntrinsicProps[polyline] & ButtonIntrinsicProps[radialGradient] & ButtonIntrinsicProps[rect] & ButtonIntrinsicProps[stop] & ButtonIntrinsicProps[switch] & ButtonIntrinsicProps[symbol] & ButtonIntrinsicProps[text] & ButtonIntrinsicProps[textPath] & ButtonIntrinsicProps[tspan] & ButtonIntrinsicProps[use] & ButtonIntrinsicProps[view]
         ]
     ): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
-    
     /* static member */
     /* was `typeof TableBatchAction` */
-    inline def TableBatchAction_TR[T /* <: ReactComponentConstructor[scala.Nothing] */, R](props: ForwardRefProps[R, ButtonCustomComponentProps[T] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+    inline def TableBatchAction[T /* <: ReactComponentConstructor[scala.Nothing] */, R](props: ForwardRefProps[R, ButtonCustomComponentProps[T] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
     
     /* static member */
     /* was `typeof TableBatchActions` */
@@ -2392,12 +2385,10 @@ object mod {
     
     /* static member */
     /* was `typeof TableToolbarAction` */
-    inline def TableToolbarAction(
-      props: ForwardRefProps[
-          HTMLAnchorElement | HTMLButtonElement, 
-          TableToolbarActionAnchorProps | TableToolbarActionButtonProps
-        ]
-    ): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableToolbarAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+    inline def TableToolbarAction(props: ForwardRefProps[HTMLAnchorElement, TableToolbarActionAnchorProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableToolbarAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+    /* static member */
+    /* was `typeof TableToolbarAction` */
+    inline def TableToolbarAction(props: ForwardRefProps[HTMLButtonElement, TableToolbarActionButtonProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableToolbarAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
     
     /* static member */
     /* was `typeof TableToolbarContent` */
@@ -2430,12 +2421,12 @@ object mod {
   @JSImport("carbon-components-react", "DatePicker")
   @js.native
   open class DatePicker ()
-    extends typings.carbonComponentsReact.datePickerMod.default
+    extends typings.carbonComponentsReact.libComponentsDatePickerMod.default
   
   @JSImport("carbon-components-react", "DatePickerInput")
   @js.native
   open class DatePickerInput ()
-    extends typings.carbonComponentsReact.datePickerInputMod.default
+    extends typings.carbonComponentsReact.libComponentsDatePickerInputMod.default
   
   @JSImport("carbon-components-react", "DatePickerSkeleton")
   @js.native
@@ -2458,7 +2449,7 @@ object mod {
   @JSImport("carbon-components-react", "ExpandableTile")
   @js.native
   open class ExpandableTile protected ()
-    extends typings.carbonComponentsReact.tileMod.ExpandableTile {
+    extends typings.carbonComponentsReact.libComponentsTileMod.ExpandableTile {
     def this(props: ExpandableTileProps) = this()
     /**
       * @deprecated
@@ -2470,7 +2461,7 @@ object mod {
   @JSImport("carbon-components-react", "FileUploader")
   @js.native
   open class FileUploader protected ()
-    extends typings.carbonComponentsReact.fileUploaderMod.default {
+    extends typings.carbonComponentsReact.libComponentsFileUploaderMod.default {
     def this(props: FileUploaderProps) = this()
     /**
       * @deprecated
@@ -2502,7 +2493,7 @@ object mod {
   @JSImport("carbon-components-react", "FilterableMultiSelect")
   @js.native
   open class FilterableMultiSelect[T /* <: ListBoxBaseItemType */] ()
-    extends typings.carbonComponentsReact.filterableMultiSelectMod.default[T]
+    extends typings.carbonComponentsReact.libComponentsFilterableMultiSelectMod.default[T]
   
   @JSImport("carbon-components-react", "FluidForm")
   @js.native
@@ -2904,7 +2895,7 @@ object mod {
   @JSImport("carbon-components-react", "HeaderNavigation")
   @js.native
   open class HeaderNavigation ()
-    extends typings.carbonComponentsReact.uishellMod.HeaderNavigation
+    extends typings.carbonComponentsReact.libComponentsUishellMod.HeaderNavigation
   
   @JSImport("carbon-components-react", "HeaderPanel")
   @js.native
@@ -2945,7 +2936,7 @@ object mod {
   @JSImport("carbon-components-react", "Modal")
   @js.native
   open class Modal ()
-    extends typings.carbonComponentsReact.modalMod.default
+    extends typings.carbonComponentsReact.libComponentsModalMod.default
   
   @JSImport("carbon-components-react", "ModalBody")
   @js.native
@@ -2954,7 +2945,7 @@ object mod {
   @JSImport("carbon-components-react", "ModalFooter")
   @js.native
   open class ModalFooter protected ()
-    extends typings.carbonComponentsReact.composedModalMod.ModalFooter {
+    extends typings.carbonComponentsReact.libComponentsComposedModalMod.ModalFooter {
     def this(props: ModalFooterProps) = this()
     /**
       * @deprecated
@@ -2966,7 +2957,7 @@ object mod {
   @JSImport("carbon-components-react", "ModalHeader")
   @js.native
   open class ModalHeader protected ()
-    extends typings.carbonComponentsReact.composedModalMod.ModalHeader {
+    extends typings.carbonComponentsReact.libComponentsComposedModalMod.ModalHeader {
     def this(props: ModalHeaderProps) = this()
     /**
       * @deprecated
@@ -2978,24 +2969,24 @@ object mod {
   @JSImport("carbon-components-react", "ModalWrapper")
   @js.native
   open class ModalWrapper ()
-    extends typings.carbonComponentsReact.modalWrapperMod.default
+    extends typings.carbonComponentsReact.libComponentsModalWrapperMod.default
   
   object MultiSelect extends Shortcut {
     
     @JSImport("carbon-components-react", "MultiSelect")
     @js.native
-    val ^ : typings.carbonComponentsReact.multiSelectMultiSelectMod.MultiSelect = js.native
+    val ^ : typings.carbonComponentsReact.libComponentsMultiSelectMultiSelectMod.MultiSelect = js.native
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("carbon-components-react", "MultiSelect.Filterable")
     @js.native
     open class Filterable[T /* <: ListBoxBaseItemType */] ()
-      extends typings.carbonComponentsReact.multiSelectFilterableMultiSelectMod.default[T]
+      extends typings.carbonComponentsReact.libComponentsMultiSelectFilterableMultiSelectMod.default[T]
     
-    type _To = typings.carbonComponentsReact.multiSelectMultiSelectMod.MultiSelect
+    type _To = typings.carbonComponentsReact.libComponentsMultiSelectMultiSelectMod.MultiSelect
     
     /* This means you don't have to write `^`, but can instead just say `MultiSelect.foo` */
-    override def _to: typings.carbonComponentsReact.multiSelectMultiSelectMod.MultiSelect = ^
+    override def _to: typings.carbonComponentsReact.libComponentsMultiSelectMultiSelectMod.MultiSelect = ^
   }
   
   @JSImport("carbon-components-react", "NotificationActionButton")
@@ -3029,12 +3020,12 @@ object mod {
   @JSImport("carbon-components-react", "OverflowMenuItem")
   @js.native
   open class OverflowMenuItem ()
-    extends typings.carbonComponentsReact.overflowMenuItemMod.default
+    extends typings.carbonComponentsReact.libComponentsOverflowMenuItemMod.default
   
   @JSImport("carbon-components-react", "Pagination")
   @js.native
   open class Pagination ()
-    extends typings.carbonComponentsReact.paginationMod.default
+    extends typings.carbonComponentsReact.libComponentsPaginationMod.default
   
   @JSImport("carbon-components-react", "PaginationNav")
   @js.native
@@ -3406,7 +3397,7 @@ object mod {
   @JSImport("carbon-components-react", "ProgressIndicator")
   @js.native
   open class ProgressIndicator protected ()
-    extends typings.carbonComponentsReact.progressIndicatorMod.ProgressIndicator {
+    extends typings.carbonComponentsReact.libComponentsProgressIndicatorMod.ProgressIndicator {
     def this(props: ProgressIndicatorProps) = this()
     /**
       * @deprecated
@@ -3430,7 +3421,7 @@ object mod {
   @JSImport("carbon-components-react", "RadioButtonGroup")
   @js.native
   open class RadioButtonGroup ()
-    extends typings.carbonComponentsReact.radioButtonGroupMod.default
+    extends typings.carbonComponentsReact.libComponentsRadioButtonGroupMod.default
   
   @JSImport("carbon-components-react", "RadioButtonSkeleton")
   @js.native
@@ -3796,7 +3787,7 @@ object mod {
   @JSImport("carbon-components-react", "Search")
   @js.native
   open class Search ()
-    extends typings.carbonComponentsReact.searchMod.default
+    extends typings.carbonComponentsReact.libComponentsSearchMod.default
   
   /**
     * @deprecated
@@ -3811,7 +3802,7 @@ object mod {
   @JSImport("carbon-components-react", "SearchLayoutButton")
   @js.native
   open class SearchLayoutButton ()
-    extends typings.carbonComponentsReact.searchLayoutButtonMod.default
+    extends typings.carbonComponentsReact.libComponentsSearchLayoutButtonMod.default
   
   @JSImport("carbon-components-react", "SearchSkeleton")
   @js.native
@@ -4259,7 +4250,7 @@ object mod {
   @JSImport("carbon-components-react", "Slider")
   @js.native
   open class Slider ()
-    extends typings.carbonComponentsReact.sliderMod.default
+    extends typings.carbonComponentsReact.libComponentsSliderMod.default
   
   @JSImport("carbon-components-react", "SliderSkeleton")
   @js.native
@@ -4310,7 +4301,7 @@ object mod {
   @JSImport("carbon-components-react", "Tab")
   @js.native
   open class Tab ()
-    extends typings.carbonComponentsReact.tabMod.default
+    extends typings.carbonComponentsReact.libComponentsTabMod.default
   
   @JSImport("carbon-components-react", "TabContent")
   @js.native
@@ -4325,6 +4316,7 @@ object mod {
   val TableActionList: FC[TableActionListProps] = js.native
   
   // tslint:disable:unified-signatures breaks certain usages
+  inline def TableBatchAction(props: ForwardRefProps[HTMLAnchorElement, ButtonAnchorProps & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   //
   // Note: TypeScript will try to select the best overload but this is not always easily predictable the more freedom the
   // generic types have or the more they overlap. If you're having difficulty with these types you can try reexporting the
@@ -4333,15 +4325,11 @@ object mod {
   // import { Button } from "carbon-components-react"
   // export const DefaultButton = Button as React.FC<ButtonDefaultProps>;
   // export const AnchorButton = Button as React.FC<ButtonAnchorProps>;
+  //
   // or just create a wrapper component.
-  inline def TableBatchAction(
-    props: ForwardRefProps[
-      HTMLAnchorElement | HTMLButtonElement, 
-      ButtonAnchorProps & ButtonKindProps & ButtonDefaultProps
-    ]
-  ): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
-  
-  inline def TableBatchAction_TR[T /* <: ReactComponentConstructor[scala.Nothing] */, R](props: ForwardRefProps[R, ButtonCustomComponentProps[T] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  //
+  inline def TableBatchAction(props: ForwardRefProps[HTMLButtonElement, ButtonDefaultProps & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def TableBatchAction[T /* <: ReactComponentConstructor[scala.Nothing] */, R](props: ForwardRefProps[R, ButtonCustomComponentProps[T] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def TableBatchAction_a[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[a] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
@@ -4745,13 +4733,9 @@ object mod {
   @js.native
   val TableToolbar: FC[TableToolbarProps] = js.native
   
+  inline def TableToolbarAction(props: ForwardRefProps[HTMLAnchorElement, TableToolbarActionAnchorProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableToolbarAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   // tslint:disable:unified-signatures
-  inline def TableToolbarAction(
-    props: ForwardRefProps[
-      HTMLAnchorElement | HTMLButtonElement, 
-      TableToolbarActionAnchorProps | TableToolbarActionButtonProps
-    ]
-  ): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableToolbarAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def TableToolbarAction(props: ForwardRefProps[HTMLButtonElement, TableToolbarActionButtonProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableToolbarAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   @JSImport("carbon-components-react", "TableToolbarContent")
   @js.native
@@ -4768,7 +4752,7 @@ object mod {
   @JSImport("carbon-components-react", "Tabs")
   @js.native
   open class Tabs ()
-    extends typings.carbonComponentsReact.tabsMod.default
+    extends typings.carbonComponentsReact.libComponentsTabsMod.default
   
   @JSImport("carbon-components-react", "TabsSkeleton")
   @js.native
@@ -4800,7 +4784,7 @@ object mod {
   @JSImport("carbon-components-react", "Tile")
   @js.native
   open class Tile protected ()
-    extends typings.carbonComponentsReact.tileMod.Tile {
+    extends typings.carbonComponentsReact.libComponentsTileMod.Tile {
     def this(props: TileProps) = this()
     /**
       * @deprecated
@@ -4812,7 +4796,7 @@ object mod {
   @JSImport("carbon-components-react", "TileAboveTheFoldContent")
   @js.native
   open class TileAboveTheFoldContent protected ()
-    extends typings.carbonComponentsReact.tileMod.TileAboveTheFoldContent {
+    extends typings.carbonComponentsReact.libComponentsTileMod.TileAboveTheFoldContent {
     def this(props: TileAboveTheFoldContentProps) = this()
     /**
       * @deprecated
@@ -4824,7 +4808,7 @@ object mod {
   @JSImport("carbon-components-react", "TileBelowTheFoldContent")
   @js.native
   open class TileBelowTheFoldContent protected ()
-    extends typings.carbonComponentsReact.tileMod.TileBelowTheFoldContent {
+    extends typings.carbonComponentsReact.libComponentsTileMod.TileBelowTheFoldContent {
     def this(props: TileBelowTheFoldContentProps) = this()
     /**
       * @deprecated
@@ -4836,17 +4820,17 @@ object mod {
   @JSImport("carbon-components-react", "TileGroup")
   @js.native
   open class TileGroup ()
-    extends typings.carbonComponentsReact.tileGroupMod.default
+    extends typings.carbonComponentsReact.libComponentsTileGroupMod.default
   
   @JSImport("carbon-components-react", "TimePicker")
   @js.native
   open class TimePicker ()
-    extends typings.carbonComponentsReact.timePickerMod.default
+    extends typings.carbonComponentsReact.libComponentsTimePickerMod.default
   
   @JSImport("carbon-components-react", "TimePickerSelect")
   @js.native
   open class TimePickerSelect ()
-    extends typings.carbonComponentsReact.timePickerSelectMod.default
+    extends typings.carbonComponentsReact.libComponentsTimePickerSelectMod.default
   
   @JSImport("carbon-components-react", "ToastNotification")
   @js.native
@@ -4855,12 +4839,12 @@ object mod {
   @JSImport("carbon-components-react", "Toggle")
   @js.native
   open class Toggle ()
-    extends typings.carbonComponentsReact.toggleMod.default
+    extends typings.carbonComponentsReact.libComponentsToggleMod.default
   
   @JSImport("carbon-components-react", "ToggleSkeleton")
   @js.native
   open class ToggleSkeleton ()
-    extends typings.carbonComponentsReact.toggleSkeletonMod.default
+    extends typings.carbonComponentsReact.libComponentsToggleToggleDotSkeletonMod.default
   
   @JSImport("carbon-components-react", "ToggleSmall")
   @js.native
@@ -4869,7 +4853,7 @@ object mod {
   @JSImport("carbon-components-react", "ToggleSmallSkeleton")
   @js.native
   open class ToggleSmallSkeleton ()
-    extends typings.carbonComponentsReact.toggleSmallSkeletonMod.default
+    extends typings.carbonComponentsReact.libComponentsToggleSmallToggleSmallDotSkeletonMod.default
   
   /**
     * @deprecated
@@ -4896,7 +4880,7 @@ object mod {
   @JSImport("carbon-components-react", "ToolbarSearch")
   @js.native
   open class ToolbarSearch ()
-    extends typings.carbonComponentsReact.toolbarSearchMod.default
+    extends typings.carbonComponentsReact.libComponentsToolbarSearchMod.default
   
   @JSImport("carbon-components-react", "ToolbarTitle")
   @js.native

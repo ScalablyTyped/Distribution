@@ -2,7 +2,6 @@ package typings.esbuildWasm.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.esbuildWasm.esbuildWasmBooleans.`false`
-import typings.esbuildWasm.esbuildWasmBooleans.`true`
 import typings.esbuildWasm.esbuildWasmStrings.`inline`
 import typings.esbuildWasm.esbuildWasmStrings.automatic
 import typings.esbuildWasm.esbuildWasmStrings.both
@@ -84,7 +83,7 @@ trait BuildOptionsincrementaltrAssetNames extends StObject {
   var ignoreAnnotations: js.UndefOr[Boolean] = js.undefined
   
   /** Documentation: https://esbuild.github.io/api/#incremental */
-  var incremental: js.UndefOr[Boolean] & `true`
+  var incremental: js.UndefOr[Boolean] = js.undefined
   
   /** Documentation: https://esbuild.github.io/api/#inject */
   var inject: js.UndefOr[js.Array[String]] = js.undefined
@@ -138,7 +137,7 @@ trait BuildOptionsincrementaltrAssetNames extends StObject {
   var mangleQuoted: js.UndefOr[Boolean] = js.undefined
   
   /** Documentation: https://esbuild.github.io/api/#metafile */
-  var metafile: js.UndefOr[Boolean] & `true`
+  var metafile: js.UndefOr[Boolean] = js.undefined
   
   /** Documentation: https://esbuild.github.io/api/#minify */
   var minify: js.UndefOr[Boolean] = js.undefined
@@ -224,8 +223,8 @@ trait BuildOptionsincrementaltrAssetNames extends StObject {
 }
 object BuildOptionsincrementaltrAssetNames {
   
-  inline def apply(incremental: js.UndefOr[Boolean] & `true`, metafile: js.UndefOr[Boolean] & `true`): BuildOptionsincrementaltrAssetNames = {
-    val __obj = js.Dynamic.literal(incremental = incremental.asInstanceOf[js.Any], metafile = metafile.asInstanceOf[js.Any])
+  inline def apply(): BuildOptionsincrementaltrAssetNames = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuildOptionsincrementaltrAssetNames]
   }
   
@@ -311,7 +310,9 @@ object BuildOptionsincrementaltrAssetNames {
     
     inline def setIgnoreAnnotationsUndefined: Self = StObject.set(x, "ignoreAnnotations", js.undefined)
     
-    inline def setIncremental(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "incremental", value.asInstanceOf[js.Any])
+    inline def setIncremental(value: Boolean): Self = StObject.set(x, "incremental", value.asInstanceOf[js.Any])
+    
+    inline def setIncrementalUndefined: Self = StObject.set(x, "incremental", js.undefined)
     
     inline def setInject(value: js.Array[String]): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
     
@@ -385,7 +386,9 @@ object BuildOptionsincrementaltrAssetNames {
     
     inline def setMangleQuotedUndefined: Self = StObject.set(x, "mangleQuoted", js.undefined)
     
-    inline def setMetafile(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "metafile", value.asInstanceOf[js.Any])
+    inline def setMetafile(value: Boolean): Self = StObject.set(x, "metafile", value.asInstanceOf[js.Any])
+    
+    inline def setMetafileUndefined: Self = StObject.set(x, "metafile", js.undefined)
     
     inline def setMinify(value: Boolean): Self = StObject.set(x, "minify", value.asInstanceOf[js.Any])
     

@@ -23,12 +23,12 @@ object distSrcEmulatorMod {
   trait EmulatorMockTokenOptions extends StObject
   object EmulatorMockTokenOptions {
     
-    inline def substringPartialFirebaseIAud(sub: String & js.UndefOr[String]): typings.firebaseUtil.anon.substringPartialFirebaseIAud = {
+    inline def substringPartialFirebaseIAud(sub: String): typings.firebaseUtil.anon.substringPartialFirebaseIAud = {
       val __obj = js.Dynamic.literal(sub = sub.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.firebaseUtil.anon.substringPartialFirebaseIAud]
     }
     
-    inline def useridstringPartialFirebaAud(user_id: String & js.UndefOr[String]): typings.firebaseUtil.anon.useridstringPartialFirebaAud = {
+    inline def useridstringPartialFirebaAud(user_id: String): typings.firebaseUtil.anon.useridstringPartialFirebaAud = {
       val __obj = js.Dynamic.literal(user_id = user_id.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.firebaseUtil.anon.useridstringPartialFirebaAud]
     }

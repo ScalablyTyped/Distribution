@@ -87,7 +87,7 @@ trait PickImplrefreshOnResizePa
   
   var refreshOnLoad: js.UndefOr[Boolean] = js.undefined
   
-  var refreshOnResize: Boolean & js.UndefOr[Boolean]
+  var refreshOnResize: Boolean
   
   var silent: js.UndefOr[Boolean] = js.undefined
   
@@ -103,7 +103,7 @@ trait PickImplrefreshOnResizePa
 }
 object PickImplrefreshOnResizePa {
   
-  inline def apply(refreshOnResize: Boolean & js.UndefOr[Boolean]): PickImplrefreshOnResizePa = {
+  inline def apply(refreshOnResize: Boolean): PickImplrefreshOnResizePa = {
     val __obj = js.Dynamic.literal(refreshOnResize = refreshOnResize.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplrefreshOnResizePa]
   }
@@ -246,7 +246,7 @@ object PickImplrefreshOnResizePa {
     
     inline def setRefreshOnLoadUndefined: Self = StObject.set(x, "refreshOnLoad", js.undefined)
     
-    inline def setRefreshOnResize(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "refreshOnResize", value.asInstanceOf[js.Any])
+    inline def setRefreshOnResize(value: Boolean): Self = StObject.set(x, "refreshOnResize", value.asInstanceOf[js.Any])
     
     inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     

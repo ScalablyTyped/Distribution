@@ -1,0 +1,26 @@
+package typings.octokitOpenapiTypes.anon
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait Query555 extends StObject {
+  
+  var path: OwnerReleaseid
+  
+  var query: `555`
+}
+object Query555 {
+  
+  inline def apply(path: OwnerReleaseid, query: `555`): Query555 = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Query555]
+  }
+  
+  extension [Self <: Query555](x: Self) {
+    
+    inline def setPath(value: OwnerReleaseid): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setQuery(value: `555`): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+  }
+}

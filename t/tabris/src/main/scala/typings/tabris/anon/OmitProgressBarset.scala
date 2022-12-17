@@ -306,7 +306,7 @@ trait OmitProgressBarset extends StObject {
   @JSName("isDisposed")
   var isDisposed_Original: js.Function0[Boolean]
   
-  var jsxAttributes: (JSXAttributes[ProgressBar, Omit[ProgressBar, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `3`
+  var jsxAttributes: (JSXAttributes[ProgressBar, Omit[ProgressBar, set | typings.tabris.tabrisStrings.jsxAttributes]]) & Children
   
   var layoutData: LayoutDataValue
   
@@ -559,7 +559,7 @@ object OmitProgressBarset {
     insertAfter: /* widget */ Widget[Any] => ProgressBar,
     insertBefore: /* widget */ Widget[Any] => ProgressBar,
     isDisposed: () => Boolean,
-    jsxAttributes: (JSXAttributes[ProgressBar, Omit[ProgressBar, set | jsxAttributes]]) & `3`,
+    jsxAttributes: (JSXAttributes[ProgressBar, Omit[ProgressBar, set | jsxAttributes]]) & Children,
     layoutData: LayoutDataValue,
     left: ConstraintValue,
     maximum: Double,
@@ -727,7 +727,7 @@ object OmitProgressBarset {
     
     inline def setIsDisposed(value: () => Boolean): Self = StObject.set(x, "isDisposed", js.Any.fromFunction0(value))
     
-    inline def setJsxAttributes(value: (JSXAttributes[ProgressBar, Omit[ProgressBar, set | jsxAttributes]]) & `3`): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
+    inline def setJsxAttributes(value: (JSXAttributes[ProgressBar, Omit[ProgressBar, set | jsxAttributes]]) & Children): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     
     inline def setLayoutData(value: LayoutDataValue): Self = StObject.set(x, "layoutData", value.asInstanceOf[js.Any])
     

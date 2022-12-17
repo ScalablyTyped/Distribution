@@ -61,7 +61,7 @@ trait PickImplsourcePartialPick
   
   var silent: js.UndefOr[Boolean] = js.undefined
   
-  var source: (`false` | String) & (js.UndefOr[`false` | String])
+  var source: `false` | String
   
   var templates: js.UndefOr[TemplatesSettings] = js.undefined
   
@@ -71,7 +71,7 @@ trait PickImplsourcePartialPick
 }
 object PickImplsourcePartialPick {
   
-  inline def apply(source: (`false` | String) & (js.UndefOr[`false` | String])): PickImplsourcePartialPick = {
+  inline def apply(source: `false` | String): PickImplsourcePartialPick = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplsourcePartialPick]
   }
@@ -160,7 +160,7 @@ object PickImplsourcePartialPick {
     
     inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     
-    inline def setSource(value: (`false` | String) & (js.UndefOr[`false` | String])): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: `false` | String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     inline def setTemplates(value: TemplatesSettings): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
     

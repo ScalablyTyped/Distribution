@@ -33,7 +33,7 @@ trait PickImpliconPartialPickIm
   
   var hd: js.UndefOr[Boolean] = js.undefined
   
-  var icon: (`false` | String) & (js.UndefOr[`false` | String])
+  var icon: `false` | String
   
   var id: js.UndefOr[`false` | String] = js.undefined
   
@@ -71,7 +71,7 @@ trait PickImpliconPartialPickIm
 }
 object PickImpliconPartialPickIm {
   
-  inline def apply(icon: (`false` | String) & (js.UndefOr[`false` | String])): PickImpliconPartialPickIm = {
+  inline def apply(icon: `false` | String): PickImpliconPartialPickIm = {
     val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpliconPartialPickIm]
   }
@@ -106,7 +106,7 @@ object PickImpliconPartialPickIm {
     
     inline def setHdUndefined: Self = StObject.set(x, "hd", js.undefined)
     
-    inline def setIcon(value: (`false` | String) & (js.UndefOr[`false` | String])): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: `false` | String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     inline def setId(value: `false` | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

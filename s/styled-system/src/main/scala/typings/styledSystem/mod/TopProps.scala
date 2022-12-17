@@ -29,6 +29,6 @@ object TopProps {
     
     inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
-    inline def setTopVarargs(value: (TVal | Null)*): Self = StObject.set(x, "top", js.Array(value :_*))
+    inline def setTopVarargs(value: (TVal | Null)*): Self = StObject.set(x, "top", js.Array(value*))
   }
 }

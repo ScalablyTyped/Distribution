@@ -43,8 +43,7 @@ object mod {
   @JSImport("inversify", "Container")
   @js.native
   open class Container ()
-    extends StObject
-       with typings.inversify.libContainerContainerMod.Container {
+    extends typings.inversify.libContainerContainerMod.Container {
     def this(containerOptions: ContainerOptions) = this()
   }
   object Container {

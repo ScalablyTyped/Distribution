@@ -16,7 +16,6 @@ import typings.reactNative.mod.Insets
 import typings.reactNative.mod.LayoutChangeEvent
 import typings.reactNative.mod.NativeSyntheticEvent
 import typings.reactNative.mod.StyleProp
-import typings.reactNative.mod.ViewStyle
 import typings.reactNativePaper.reactNativePaperStrings.`no-hide-descendants`
 import typings.reactNativePaper.reactNativePaperStrings.assertive
 import typings.reactNativePaper.reactNativePaperStrings.auto
@@ -307,7 +306,7 @@ trait ImagePropsRefAttributesIm extends StObject {
     *
     * Style
     */
-  var style: js.UndefOr[StyleProp[ImageStyle]] & js.UndefOr[StyleProp[ViewStyle]]
+  var style: js.UndefOr[StyleProp[ImageStyle]] = js.undefined
   
   /**
     * A unique identifier for this element to be used in UI Automation testing scripts.
@@ -320,11 +319,8 @@ trait ImagePropsRefAttributesIm extends StObject {
 }
 object ImagePropsRefAttributesIm {
   
-  inline def apply(
-    style: js.UndefOr[StyleProp[ImageStyle]] & js.UndefOr[StyleProp[ViewStyle]],
-    theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
-  ): ImagePropsRefAttributesIm = {
-    val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
+  inline def apply(theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): ImagePropsRefAttributesIm = {
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImagePropsRefAttributesIm]
   }
   
@@ -514,7 +510,11 @@ object ImagePropsRefAttributesIm {
     
     inline def setSourceVarargs(value: ImageURISource*): Self = StObject.set(x, "source", js.Array(value*))
     
-    inline def setStyle(value: js.UndefOr[StyleProp[ImageStyle]] & js.UndefOr[StyleProp[ViewStyle]]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: StyleProp[ImageStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleNull: Self = StObject.set(x, "style", null)
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     inline def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
     

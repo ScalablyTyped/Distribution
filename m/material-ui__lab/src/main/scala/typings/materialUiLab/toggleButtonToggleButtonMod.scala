@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.buttonBaseButtonBaseMod.ExtendButtonBase
 import typings.materialUiCore.buttonBaseButtonBaseMod.ExtendButtonBaseTypeMap
 import typings.materialUiCore.overridableComponentMod.OverrideProps
-import typings.materialUiLab.anon.DefaultComponent
+import typings.materialUiLab.anon.ClassKey
 import typings.materialUiLab.materialUiLabStrings.button
 import typings.react.mod.ElementType
 import org.scalablytyped.runtime.StObject
@@ -54,7 +54,7 @@ object toggleButtonToggleButtonMod extends Shortcut {
   
   type ToggleButtonProps[D /* <: ElementType[Any] */, P] = OverrideProps[ToggleButtonTypeMap[P, D], D]
   
-  type ToggleButtonTypeMap[P, D /* <: ElementType[Any] */] = ExtendButtonBaseTypeMap[DefaultComponent[P, D]]
+  type ToggleButtonTypeMap[P, D /* <: ElementType[Any] */] = ExtendButtonBaseTypeMap[ClassKey[P, D]]
   
   type _To = ExtendButtonBase[ToggleButtonTypeMap[js.Object, button]]
   

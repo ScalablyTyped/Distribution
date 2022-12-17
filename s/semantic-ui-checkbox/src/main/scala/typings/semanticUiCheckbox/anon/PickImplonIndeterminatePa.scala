@@ -52,7 +52,7 @@ trait PickImplonIndeterminatePa
   
   def onIndeterminate(): Unit
   @JSName("onIndeterminate")
-  var onIndeterminate_Original: (js.ThisFunction0[/* this */ HTMLInputElement, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]])
+  var onIndeterminate_Original: js.ThisFunction0[/* this */ HTMLInputElement, Unit]
   
   var onUnchecked: js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]] = js.undefined
   
@@ -68,9 +68,7 @@ trait PickImplonIndeterminatePa
 }
 object PickImplonIndeterminatePa {
   
-  inline def apply(
-    onIndeterminate: (js.ThisFunction0[/* this */ HTMLInputElement, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]])
-  ): PickImplonIndeterminatePa = {
+  inline def apply(onIndeterminate: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): PickImplonIndeterminatePa = {
     val __obj = js.Dynamic.literal(onIndeterminate = onIndeterminate.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonIndeterminatePa]
   }
@@ -145,9 +143,7 @@ object PickImplonIndeterminatePa {
     
     inline def setOnEnabledUndefined: Self = StObject.set(x, "onEnabled", js.undefined)
     
-    inline def setOnIndeterminate(
-      value: (js.ThisFunction0[/* this */ HTMLInputElement, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]])
-    ): Self = StObject.set(x, "onIndeterminate", value.asInstanceOf[js.Any])
+    inline def setOnIndeterminate(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): Self = StObject.set(x, "onIndeterminate", value.asInstanceOf[js.Any])
     
     inline def setOnUnchecked(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): Self = StObject.set(x, "onUnchecked", value.asInstanceOf[js.Any])
     

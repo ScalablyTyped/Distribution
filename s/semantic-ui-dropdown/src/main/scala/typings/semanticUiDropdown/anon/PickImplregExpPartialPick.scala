@@ -145,7 +145,7 @@ trait PickImplregExpPartialPick
   
   var preserveHTML: js.UndefOr[Boolean] = js.undefined
   
-  var regExp: RegExpSettings & js.UndefOr[RegExpSettings]
+  var regExp: RegExpSettings
   
   var saveRemoteData: js.UndefOr[Boolean] = js.undefined
   
@@ -169,7 +169,7 @@ trait PickImplregExpPartialPick
 }
 object PickImplregExpPartialPick {
   
-  inline def apply(regExp: RegExpSettings & js.UndefOr[RegExpSettings]): PickImplregExpPartialPick = {
+  inline def apply(regExp: RegExpSettings): PickImplregExpPartialPick = {
     val __obj = js.Dynamic.literal(regExp = regExp.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplregExpPartialPick]
   }
@@ -370,7 +370,7 @@ object PickImplregExpPartialPick {
     
     inline def setPreserveHTMLUndefined: Self = StObject.set(x, "preserveHTML", js.undefined)
     
-    inline def setRegExp(value: RegExpSettings & js.UndefOr[RegExpSettings]): Self = StObject.set(x, "regExp", value.asInstanceOf[js.Any])
+    inline def setRegExp(value: RegExpSettings): Self = StObject.set(x, "regExp", value.asInstanceOf[js.Any])
     
     inline def setSaveRemoteData(value: Boolean): Self = StObject.set(x, "saveRemoteData", value.asInstanceOf[js.Any])
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CommentcountCommitter extends StObject {
   
-  var author: DateString
+  var author: DateStringEmailString
   
   var comment_count: Double
   
@@ -14,7 +14,7 @@ trait CommentcountCommitter extends StObject {
   
   var message: String
   
-  var tree: Sha
+  var tree: ShaUrl
   
   /** Format: uri */
   var url: String
@@ -26,11 +26,11 @@ trait CommentcountCommitter extends StObject {
 object CommentcountCommitter {
   
   inline def apply(
-    author: DateString,
+    author: DateStringEmailString,
     comment_count: Double,
     committer: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-git-user'] */ js.Any,
     message: String,
-    tree: Sha,
+    tree: ShaUrl,
     url: String
   ): CommentcountCommitter = {
     val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], comment_count = comment_count.asInstanceOf[js.Any], committer = committer.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], tree = tree.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
@@ -39,7 +39,7 @@ object CommentcountCommitter {
   
   extension [Self <: CommentcountCommitter](x: Self) {
     
-    inline def setAuthor(value: DateString): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: DateStringEmailString): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
     inline def setComment_count(value: Double): Self = StObject.set(x, "comment_count", value.asInstanceOf[js.Any])
     
@@ -49,7 +49,7 @@ object CommentcountCommitter {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    inline def setTree(value: Sha): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
+    inline def setTree(value: ShaUrl): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

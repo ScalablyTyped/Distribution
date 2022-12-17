@@ -1,5 +1,6 @@
 package typings.indefiniteObservable
 
+import typings.indefiniteObservable.distIndefiniteObservableMod.default
 import typings.indefiniteObservable.distTypesMod.Connect
 import typings.indefiniteObservable.distTypesMod.Observer
 import typings.indefiniteObservable.distTypesMod.ObserverOrNext
@@ -13,25 +14,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("indefinite-observable", JSImport.Default)
-  @js.native
-  open class default[T] protected ()
-    extends typings.indefiniteObservable.distIndefiniteObservableMod.default[T] {
-    /**
-      * The provided function should receive an observer and connect that
-      * observer's `next` method to an event source (for instance,
-      * `element.addEventListener('click', observer.next)`).
-      *
-      * It must return a function that will disconnect the observer from the event
-      * source.
-      */
-    def this(connect: Connect[T]) = this()
-  }
-  
   @JSImport("indefinite-observable", "IndefiniteObservable")
   @js.native
-  open class IndefiniteObservable[T] protected ()
-    extends typings.indefiniteObservable.distIndefiniteObservableMod.default[T] {
+  open class IndefiniteObservable[T] protected () extends default[T] {
     /**
       * The provided function should receive an observer and connect that
       * observer's `next` method to an event source (for instance,

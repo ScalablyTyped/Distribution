@@ -1,6 +1,5 @@
 package typings.highlightJs.mod
 
-import typings.highlightJs.highlightJsStrings.self
 import typings.std.Record
 import typings.std.RegExpMatchArray
 import org.scalablytyped.runtime.StObject
@@ -30,7 +29,7 @@ trait Language extends StObject {
   
   var compilerExtensions: js.UndefOr[js.Array[CompilerExt]] = js.undefined
   
-  var contains: js.Array[Mode] & (js.UndefOr[js.Array[self | Mode]])
+  var contains: js.Array[Mode]
   
   var disableAutodetect: js.UndefOr[Boolean] = js.undefined
   
@@ -96,7 +95,7 @@ trait Language extends StObject {
 }
 object Language {
   
-  inline def apply(contains: js.Array[Mode] & (js.UndefOr[js.Array[self | Mode]])): Language = {
+  inline def apply(contains: js.Array[Mode]): Language = {
     val __obj = js.Dynamic.literal(contains = contains.asInstanceOf[js.Any])
     __obj.asInstanceOf[Language]
   }
@@ -147,7 +146,9 @@ object Language {
     
     inline def setCompilerExtensionsVarargs(value: CompilerExt*): Self = StObject.set(x, "compilerExtensions", js.Array(value*))
     
-    inline def setContains(value: js.Array[Mode] & (js.UndefOr[js.Array[self | Mode]])): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
+    inline def setContains(value: js.Array[Mode]): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
+    
+    inline def setContainsVarargs(value: Mode*): Self = StObject.set(x, "contains", js.Array(value*))
     
     inline def setDisableAutodetect(value: Boolean): Self = StObject.set(x, "disableAutodetect", value.asInstanceOf[js.Any])
     

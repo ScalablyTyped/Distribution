@@ -72,7 +72,7 @@ object libLogMonitorMod extends Shortcut {
     
     def select(state: Any): Any
     
-    var theme: pop | atelierForest | bespin | embers | tube | bright | mocha | greenscreen | grayscale | shapeshifter | harmonic | chalk | paraiso | google | isotope | atelierLakeside | twilight | eighties | nicinabox | monokai | atelierHeath | apathy | solarized | summerfruit | colors | atelierSeaside | brewer | codeschool | railscasts | threezerotwofour | atelierDune | tomorrow | ocean | marrakesh | hopscotch | flat | ashes | typings.reduxDevtoolsLogMonitor.reduxDevtoolsLogMonitorStrings.default | Base16Theme
+    var theme: pop | atelierForest | bespin | embers | tube | bright | mocha | greenscreen | grayscale | shapeshifter | harmonic | chalk | paraiso | google | isotope | atelierLakeside | twilight | eighties | nicinabox | monokai | atelierHeath | apathy | solarized | summerfruit | colors | atelierSeaside | brewer | codeschool | railscasts | threezerotwofour | atelierDune | tomorrow | ocean | marrakesh | hopscotch | flat | ashes | Base16Theme
   }
   object DefaultProps {
     
@@ -82,7 +82,7 @@ object libLogMonitorMod extends Shortcut {
       markStateDiff: Boolean,
       preserveScrollTop: Boolean,
       select: Any => Any,
-      theme: pop | atelierForest | bespin | embers | tube | bright | mocha | greenscreen | grayscale | shapeshifter | harmonic | chalk | paraiso | google | isotope | atelierLakeside | twilight | eighties | nicinabox | monokai | atelierHeath | apathy | solarized | summerfruit | colors | atelierSeaside | brewer | codeschool | railscasts | threezerotwofour | atelierDune | tomorrow | ocean | marrakesh | hopscotch | flat | ashes | typings.reduxDevtoolsLogMonitor.reduxDevtoolsLogMonitorStrings.default | Base16Theme
+      theme: pop | atelierForest | bespin | embers | tube | bright | mocha | greenscreen | grayscale | shapeshifter | harmonic | chalk | paraiso | google | isotope | atelierLakeside | twilight | eighties | nicinabox | monokai | atelierHeath | apathy | solarized | summerfruit | colors | atelierSeaside | brewer | codeschool | railscasts | threezerotwofour | atelierDune | tomorrow | ocean | marrakesh | hopscotch | flat | ashes | Base16Theme
     ): DefaultProps[S] = {
       val __obj = js.Dynamic.literal(expandActionRoot = expandActionRoot.asInstanceOf[js.Any], expandStateRoot = expandStateRoot.asInstanceOf[js.Any], markStateDiff = markStateDiff.asInstanceOf[js.Any], preserveScrollTop = preserveScrollTop.asInstanceOf[js.Any], select = js.Any.fromFunction1(select), theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[DefaultProps[S]]
@@ -101,7 +101,7 @@ object libLogMonitorMod extends Shortcut {
       inline def setSelect(value: Any => Any): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
       
       inline def setTheme(
-        value: pop | atelierForest | bespin | embers | tube | bright | mocha | greenscreen | grayscale | shapeshifter | harmonic | chalk | paraiso | google | isotope | atelierLakeside | twilight | eighties | nicinabox | monokai | atelierHeath | apathy | solarized | summerfruit | colors | atelierSeaside | brewer | codeschool | railscasts | threezerotwofour | atelierDune | tomorrow | ocean | marrakesh | hopscotch | flat | ashes | typings.reduxDevtoolsLogMonitor.reduxDevtoolsLogMonitorStrings.default | Base16Theme
+        value: pop | atelierForest | bespin | embers | tube | bright | mocha | greenscreen | grayscale | shapeshifter | harmonic | chalk | paraiso | google | isotope | atelierLakeside | twilight | eighties | nicinabox | monokai | atelierHeath | apathy | solarized | summerfruit | colors | atelierSeaside | brewer | codeschool | railscasts | threezerotwofour | atelierDune | tomorrow | ocean | marrakesh | hopscotch | flat | ashes | Base16Theme
       ): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
@@ -122,7 +122,7 @@ object libLogMonitorMod extends Shortcut {
     
     def select(state: S): Any
     
-    var theme: pop | atelierForest | bespin | embers | tube | bright | mocha | greenscreen | grayscale | shapeshifter | harmonic | chalk | paraiso | google | isotope | atelierLakeside | twilight | eighties | nicinabox | monokai | atelierHeath | apathy | solarized | summerfruit | colors | atelierSeaside | brewer | codeschool | railscasts | threezerotwofour | atelierDune | tomorrow | ocean | marrakesh | hopscotch | flat | ashes | typings.reduxDevtoolsLogMonitor.reduxDevtoolsLogMonitorStrings.default | Base16Theme
+    var theme: pop | atelierForest | bespin | embers | tube | bright | mocha | greenscreen | grayscale | shapeshifter | harmonic | chalk | paraiso | google | isotope | atelierLakeside | twilight | eighties | nicinabox | monokai | atelierHeath | apathy | solarized | summerfruit | colors | atelierSeaside | brewer | codeschool | railscasts | threezerotwofour | atelierDune | tomorrow | ocean | marrakesh | hopscotch | flat | ashes | Base16Theme
   }
   object ExternalProps {
     
@@ -133,7 +133,7 @@ object libLogMonitorMod extends Shortcut {
       markStateDiff: Boolean,
       preserveScrollTop: Boolean,
       select: S => Any,
-      theme: pop | atelierForest | bespin | embers | tube | bright | mocha | greenscreen | grayscale | shapeshifter | harmonic | chalk | paraiso | google | isotope | atelierLakeside | twilight | eighties | nicinabox | monokai | atelierHeath | apathy | solarized | summerfruit | colors | atelierSeaside | brewer | codeschool | railscasts | threezerotwofour | atelierDune | tomorrow | ocean | marrakesh | hopscotch | flat | ashes | typings.reduxDevtoolsLogMonitor.reduxDevtoolsLogMonitorStrings.default | Base16Theme
+      theme: pop | atelierForest | bespin | embers | tube | bright | mocha | greenscreen | grayscale | shapeshifter | harmonic | chalk | paraiso | google | isotope | atelierLakeside | twilight | eighties | nicinabox | monokai | atelierHeath | apathy | solarized | summerfruit | colors | atelierSeaside | brewer | codeschool | railscasts | threezerotwofour | atelierDune | tomorrow | ocean | marrakesh | hopscotch | flat | ashes | Base16Theme
     ): ExternalProps[S, A] = {
       val __obj = js.Dynamic.literal(dispatch = js.Any.fromFunction1(dispatch), expandActionRoot = expandActionRoot.asInstanceOf[js.Any], expandStateRoot = expandStateRoot.asInstanceOf[js.Any], markStateDiff = markStateDiff.asInstanceOf[js.Any], preserveScrollTop = preserveScrollTop.asInstanceOf[js.Any], select = js.Any.fromFunction1(select), theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExternalProps[S, A]]
@@ -160,7 +160,7 @@ object libLogMonitorMod extends Shortcut {
       inline def setSelect(value: S => Any): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
       
       inline def setTheme(
-        value: pop | atelierForest | bespin | embers | tube | bright | mocha | greenscreen | grayscale | shapeshifter | harmonic | chalk | paraiso | google | isotope | atelierLakeside | twilight | eighties | nicinabox | monokai | atelierHeath | apathy | solarized | summerfruit | colors | atelierSeaside | brewer | codeschool | railscasts | threezerotwofour | atelierDune | tomorrow | ocean | marrakesh | hopscotch | flat | ashes | typings.reduxDevtoolsLogMonitor.reduxDevtoolsLogMonitorStrings.default | Base16Theme
+        value: pop | atelierForest | bespin | embers | tube | bright | mocha | greenscreen | grayscale | shapeshifter | harmonic | chalk | paraiso | google | isotope | atelierLakeside | twilight | eighties | nicinabox | monokai | atelierHeath | apathy | solarized | summerfruit | colors | atelierSeaside | brewer | codeschool | railscasts | threezerotwofour | atelierDune | tomorrow | ocean | marrakesh | hopscotch | flat | ashes | Base16Theme
       ): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
@@ -183,7 +183,7 @@ object libLogMonitorMod extends Shortcut {
     
     def select(state: S): Any
     
-    var theme: pop | atelierForest | bespin | embers | tube | bright | mocha | greenscreen | grayscale | shapeshifter | harmonic | chalk | paraiso | google | isotope | atelierLakeside | twilight | eighties | nicinabox | monokai | atelierHeath | apathy | solarized | summerfruit | colors | atelierSeaside | brewer | codeschool | railscasts | threezerotwofour | atelierDune | tomorrow | ocean | marrakesh | hopscotch | flat | ashes | typings.reduxDevtoolsLogMonitor.reduxDevtoolsLogMonitorStrings.default | Base16Theme
+    var theme: pop | atelierForest | bespin | embers | tube | bright | mocha | greenscreen | grayscale | shapeshifter | harmonic | chalk | paraiso | google | isotope | atelierLakeside | twilight | eighties | nicinabox | monokai | atelierHeath | apathy | solarized | summerfruit | colors | atelierSeaside | brewer | codeschool | railscasts | threezerotwofour | atelierDune | tomorrow | ocean | marrakesh | hopscotch | flat | ashes | Base16Theme
   }
   object LogMonitorProps {
     
@@ -204,7 +204,7 @@ object libLogMonitorMod extends Shortcut {
       select: S => Any,
       skippedActionIds: js.Array[Double],
       stagedActionIds: js.Array[Double],
-      theme: pop | atelierForest | bespin | embers | tube | bright | mocha | greenscreen | grayscale | shapeshifter | harmonic | chalk | paraiso | google | isotope | atelierLakeside | twilight | eighties | nicinabox | monokai | atelierHeath | apathy | solarized | summerfruit | colors | atelierSeaside | brewer | codeschool | railscasts | threezerotwofour | atelierDune | tomorrow | ocean | marrakesh | hopscotch | flat | ashes | typings.reduxDevtoolsLogMonitor.reduxDevtoolsLogMonitorStrings.default | Base16Theme
+      theme: pop | atelierForest | bespin | embers | tube | bright | mocha | greenscreen | grayscale | shapeshifter | harmonic | chalk | paraiso | google | isotope | atelierLakeside | twilight | eighties | nicinabox | monokai | atelierHeath | apathy | solarized | summerfruit | colors | atelierSeaside | brewer | codeschool | railscasts | threezerotwofour | atelierDune | tomorrow | ocean | marrakesh | hopscotch | flat | ashes | Base16Theme
     ): LogMonitorProps[S, A] = {
       val __obj = js.Dynamic.literal(actionsById = actionsById.asInstanceOf[js.Any], committedState = committedState.asInstanceOf[js.Any], computedStates = computedStates.asInstanceOf[js.Any], currentStateIndex = currentStateIndex.asInstanceOf[js.Any], dispatch = js.Any.fromFunction1(dispatch), expandActionRoot = expandActionRoot.asInstanceOf[js.Any], expandStateRoot = expandStateRoot.asInstanceOf[js.Any], isLocked = isLocked.asInstanceOf[js.Any], isPaused = isPaused.asInstanceOf[js.Any], markStateDiff = markStateDiff.asInstanceOf[js.Any], monitorState = monitorState.asInstanceOf[js.Any], nextActionId = nextActionId.asInstanceOf[js.Any], preserveScrollTop = preserveScrollTop.asInstanceOf[js.Any], select = js.Any.fromFunction1(select), skippedActionIds = skippedActionIds.asInstanceOf[js.Any], stagedActionIds = stagedActionIds.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[LogMonitorProps[S, A]]
@@ -231,7 +231,7 @@ object libLogMonitorMod extends Shortcut {
       inline def setSelect(value: S => Any): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
       
       inline def setTheme(
-        value: pop | atelierForest | bespin | embers | tube | bright | mocha | greenscreen | grayscale | shapeshifter | harmonic | chalk | paraiso | google | isotope | atelierLakeside | twilight | eighties | nicinabox | monokai | atelierHeath | apathy | solarized | summerfruit | colors | atelierSeaside | brewer | codeschool | railscasts | threezerotwofour | atelierDune | tomorrow | ocean | marrakesh | hopscotch | flat | ashes | typings.reduxDevtoolsLogMonitor.reduxDevtoolsLogMonitorStrings.default | Base16Theme
+        value: pop | atelierForest | bespin | embers | tube | bright | mocha | greenscreen | grayscale | shapeshifter | harmonic | chalk | paraiso | google | isotope | atelierLakeside | twilight | eighties | nicinabox | monokai | atelierHeath | apathy | solarized | summerfruit | colors | atelierSeaside | brewer | codeschool | railscasts | threezerotwofour | atelierDune | tomorrow | ocean | marrakesh | hopscotch | flat | ashes | Base16Theme
       ): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }

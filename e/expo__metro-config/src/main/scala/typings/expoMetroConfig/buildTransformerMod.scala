@@ -1,6 +1,6 @@
 package typings.expoMetroConfig
 
-import typings.expoMetroConfig.anon.FoldersModuleIds
+import typings.expoMetroConfig.anon.Folders
 import typings.expoMetroConfig.anon.GetRuleType
 import typings.expoMetroConfig.anon.NodeModulesPaths
 import typings.std.Record
@@ -16,7 +16,7 @@ object buildTransformerMod {
   
   inline def createExoticTransformer(param0: NodeModulesPaths): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createExoticTransformer")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def createModuleMatcher(param0: FoldersModuleIds): js.RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("createModuleMatcher")(param0.asInstanceOf[js.Any]).asInstanceOf[js.RegExp]
+  inline def createModuleMatcher(param0: Folders): js.RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("createModuleMatcher")(param0.asInstanceOf[js.Any]).asInstanceOf[js.RegExp]
   
   inline def createMultiRuleTransformer(param0: GetRuleType): /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BabelTransformer * / any['transform'] */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createMultiRuleTransformer")(param0.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BabelTransformer * / any['transform'] */ js.Any]
   

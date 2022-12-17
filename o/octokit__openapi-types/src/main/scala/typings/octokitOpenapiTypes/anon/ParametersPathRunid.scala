@@ -8,11 +8,11 @@ trait ParametersPathRunid extends StObject {
   
   var parameters: PathRunid
   
-  var responses: `200ContentApplicationjsonCancelurl`
+  var responses: `200Content146`
 }
 object ParametersPathRunid {
   
-  inline def apply(parameters: PathRunid, responses: `200ContentApplicationjsonCancelurl`): ParametersPathRunid = {
+  inline def apply(parameters: PathRunid, responses: `200Content146`): ParametersPathRunid = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathRunid]
   }
@@ -21,6 +21,6 @@ object ParametersPathRunid {
     
     inline def setParameters(value: PathRunid): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200ContentApplicationjsonCancelurl`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200Content146`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

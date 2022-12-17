@@ -5,7 +5,6 @@ import typings.snapShotCore.anon.ExactSpecName
 import typings.snapShotCore.anon.Expected
 import typings.snapShotCore.anon.Ext
 import typings.snapShotCore.anon.File
-import typings.snapShotCore.anon.FileParameter
 import typings.snapShotCore.anon.Index
 import typings.snapShotCore.anon.Key
 import typings.snapShotCore.anon.SortSnapshots
@@ -28,11 +27,11 @@ object mod {
   inline def restore(options: File): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("restore")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def savedSnapshotName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("savedSnapshotName")().asInstanceOf[String]
-  inline def savedSnapshotName(options: ExactSpecName): String = ^.asInstanceOf[js.Dynamic].applyDynamic("savedSnapshotName")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def savedSnapshotName(options: Index): String = ^.asInstanceOf[js.Dynamic].applyDynamic("savedSnapshotName")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def storeValue(options: Index): String = ^.asInstanceOf[js.Dynamic].applyDynamic("storeValue")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def storeValue(options: typings.snapShotCore.anon.Opts): String = ^.asInstanceOf[js.Dynamic].applyDynamic("storeValue")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def throwCannotSaveOnCI(options: FileParameter): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("throwCannotSaveOnCI")(options.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
+  inline def throwCannotSaveOnCI(options: ExactSpecName): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("throwCannotSaveOnCI")(options.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
   
   type CompareFunction[T /* <: js.Object | Null */] = js.Function1[/* options */ Expected[T], Result]
   

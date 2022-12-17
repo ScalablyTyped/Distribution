@@ -29,7 +29,7 @@ trait PickImpldisplayTimePartia
   
   var detachable: js.UndefOr[Boolean] = js.undefined
   
-  var displayTime: Double & js.UndefOr[Double]
+  var displayTime: Double
   
   var domain: js.UndefOr[`false` | String] = js.undefined
   
@@ -67,7 +67,7 @@ trait PickImpldisplayTimePartia
 }
 object PickImpldisplayTimePartia {
   
-  inline def apply(displayTime: Double & js.UndefOr[Double]): PickImpldisplayTimePartia = {
+  inline def apply(displayTime: Double): PickImpldisplayTimePartia = {
     val __obj = js.Dynamic.literal(displayTime = displayTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldisplayTimePartia]
   }
@@ -94,7 +94,7 @@ object PickImpldisplayTimePartia {
     
     inline def setDetachableUndefined: Self = StObject.set(x, "detachable", js.undefined)
     
-    inline def setDisplayTime(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "displayTime", value.asInstanceOf[js.Any])
+    inline def setDisplayTime(value: Double): Self = StObject.set(x, "displayTime", value.asInstanceOf[js.Any])
     
     inline def setDomain(value: `false` | String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     

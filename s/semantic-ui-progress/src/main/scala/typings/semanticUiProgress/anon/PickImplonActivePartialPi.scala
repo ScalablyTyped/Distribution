@@ -41,9 +41,7 @@ trait PickImplonActivePartialPi
   
   def onActive(value: Double, total: Double): Unit
   @JSName("onActive")
-  var onActive_Original: (js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]) & (js.UndefOr[
-    js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]
-  ])
+  var onActive_Original: js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]
   
   var onChange: js.UndefOr[
     js.ThisFunction3[/* this */ JQuery, /* percent */ Double, /* value */ Double, /* total */ Double, Unit]
@@ -83,11 +81,7 @@ trait PickImplonActivePartialPi
 }
 object PickImplonActivePartialPi {
   
-  inline def apply(
-    onActive: (js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]) & (js.UndefOr[
-      js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]
-    ])
-  ): PickImplonActivePartialPi = {
+  inline def apply(onActive: js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]): PickImplonActivePartialPi = {
     val __obj = js.Dynamic.literal(onActive = onActive.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonActivePartialPi]
   }
@@ -130,11 +124,7 @@ object PickImplonActivePartialPi {
     
     inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
-    inline def setOnActive(
-      value: (js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]) & (js.UndefOr[
-          js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]
-        ])
-    ): Self = StObject.set(x, "onActive", value.asInstanceOf[js.Any])
+    inline def setOnActive(value: js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]): Self = StObject.set(x, "onActive", value.asInstanceOf[js.Any])
     
     inline def setOnChange(
       value: js.ThisFunction3[/* this */ JQuery, /* percent */ Double, /* value */ Double, /* total */ Double, Unit]

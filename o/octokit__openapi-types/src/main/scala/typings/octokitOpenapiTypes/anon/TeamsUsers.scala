@@ -6,25 +6,70 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TeamsUsers extends StObject {
   
-  var teams: js.Array[Parent]
+  /** @description The list of apps allowed to bypass pull request requirements. */
+  var apps: js.UndefOr[
+    js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['integration'] */ js.Any
+    ]
+  ] = js.undefined
   
-  var users: js.Array[Avatarurl]
+  /** @description The list of teams allowed to bypass pull request requirements. */
+  var teams: js.UndefOr[
+    js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['team'] */ js.Any
+    ]
+  ] = js.undefined
+  
+  /** @description The list of users allowed to bypass pull request requirements. */
+  var users: js.UndefOr[
+    js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
+    ]
+  ] = js.undefined
 }
 object TeamsUsers {
   
-  inline def apply(teams: js.Array[Parent], users: js.Array[Avatarurl]): TeamsUsers = {
-    val __obj = js.Dynamic.literal(teams = teams.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
+  inline def apply(): TeamsUsers = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TeamsUsers]
   }
   
   extension [Self <: TeamsUsers](x: Self) {
     
-    inline def setTeams(value: js.Array[Parent]): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
+    inline def setApps(
+      value: js.Array[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['integration'] */ js.Any
+        ]
+    ): Self = StObject.set(x, "apps", value.asInstanceOf[js.Any])
     
-    inline def setTeamsVarargs(value: Parent*): Self = StObject.set(x, "teams", js.Array(value*))
+    inline def setAppsUndefined: Self = StObject.set(x, "apps", js.undefined)
     
-    inline def setUsers(value: js.Array[Avatarurl]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+    inline def setAppsVarargs(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['integration'] */ js.Any)*
+    ): Self = StObject.set(x, "apps", js.Array(value*))
     
-    inline def setUsersVarargs(value: Avatarurl*): Self = StObject.set(x, "users", js.Array(value*))
+    inline def setTeams(
+      value: js.Array[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['team'] */ js.Any
+        ]
+    ): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
+    
+    inline def setTeamsUndefined: Self = StObject.set(x, "teams", js.undefined)
+    
+    inline def setTeamsVarargs(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['team'] */ js.Any)*
+    ): Self = StObject.set(x, "teams", js.Array(value*))
+    
+    inline def setUsers(
+      value: js.Array[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
+        ]
+    ): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+    
+    inline def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
+    
+    inline def setUsersVarargs(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any)*
+    ): Self = StObject.set(x, "users", js.Array(value*))
   }
 }

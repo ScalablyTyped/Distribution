@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "jest-haste-map"
-version := "29.3.1-1a3e4f"
+version := "29.3.1-de5f9a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "graceful-fs" % "4.1-dt-20211202Z-37daa3",
-  "org.scalablytyped" %%% "istanbul-lib-coverage" % "2.0-dt-20211223Z-daefdc",
-  "org.scalablytyped" %%% "istanbul-lib-report" % "3.0-dt-20211202Z-01386c",
-  "org.scalablytyped" %%% "istanbul-reports" % "3.0-dt-20211202Z-5a5cdb",
-  "org.scalablytyped" %%% "jest__schemas" % "29.0.0-0dfc9a",
-  "org.scalablytyped" %%% "jest__types" % "29.3.1-8f7762",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-4346d8",
-  "org.scalablytyped" %%% "sinclair__typebox" % "0.24.42-047c8e",
-  "org.scalablytyped" %%% "std" % "4.9-c133ce")
+  "org.scalablytyped" %%% "graceful-fs" % "4.1-dt-20211202Z-55ce36",
+  "org.scalablytyped" %%% "istanbul-lib-coverage" % "2.0-dt-20211223Z-c31bdf",
+  "org.scalablytyped" %%% "istanbul-lib-report" % "3.0-dt-20211202Z-d2c38f",
+  "org.scalablytyped" %%% "istanbul-reports" % "3.0-dt-20211202Z-29762b",
+  "org.scalablytyped" %%% "jest__schemas" % "29.0.0-f49641",
+  "org.scalablytyped" %%% "jest__types" % "29.3.1-68e9a6",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-def929",
+  "org.scalablytyped" %%% "sinclair__typebox" % "0.24.42-019919",
+  "org.scalablytyped" %%% "std" % "4.9-5f989f")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

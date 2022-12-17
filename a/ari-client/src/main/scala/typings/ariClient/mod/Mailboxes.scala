@@ -1,7 +1,7 @@
 package typings.ariClient.mod
 
 import typings.ariClient.anon.MailboxName
-import typings.ariClient.anon.OldMessages
+import typings.ariClient.anon.NewMessages
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,7 +51,7 @@ trait Mailboxes extends StObject {
     * @param params.oldMessages - Count of old messages in the mailbox.
     * @param params.newMessages - Count of new messages in the mailbox.
     */
-  def update(params: OldMessages): js.Promise[Unit] = js.native
+  def update(params: NewMessages): js.Promise[Unit] = js.native
   /**
     * Change the state of a mailbox. (Note - implicitly creates the mailbox).
     *
@@ -59,5 +59,5 @@ trait Mailboxes extends StObject {
     * @param params.oldMessages - Count of old messages in the mailbox.
     * @param params.newMessages - Count of new messages in the mailbox.
     */
-  def update(params: OldMessages, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
+  def update(params: NewMessages, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
 }

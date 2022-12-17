@@ -2,18 +2,18 @@ package typings.qiniuJs
 
 import typings.qiniuJs.anon.Authorization
 import typings.qiniuJs.anon.PartialExtra
-import typings.qiniuJs.apiMod.UploadCompleteData
-import typings.qiniuJs.apiMod.UploadUrlConfig
-import typings.qiniuJs.baseMod.Config
-import typings.qiniuJs.baseMod.UploadInfo
-import typings.qiniuJs.baseMod.UploadProgress
-import typings.qiniuJs.errorsMod.QiniuErrorName
-import typings.qiniuJs.helperMod.ResponseSuccess
-import typings.qiniuJs.imageMod.ImageMogr2_
-import typings.qiniuJs.imageMod.ImageWatermark
-import typings.qiniuJs.imageMod.Pipeline_
+import typings.qiniuJs.esmApiMod.UploadCompleteData
+import typings.qiniuJs.esmApiMod.UploadUrlConfig
+import typings.qiniuJs.esmErrorsMod.QiniuErrorName
+import typings.qiniuJs.esmImageMod.ImageMogr2_
+import typings.qiniuJs.esmImageMod.ImageWatermark
+import typings.qiniuJs.esmImageMod.Pipeline_
+import typings.qiniuJs.esmUploadBaseMod.Config
+import typings.qiniuJs.esmUploadBaseMod.UploadInfo
+import typings.qiniuJs.esmUploadBaseMod.UploadProgress
+import typings.qiniuJs.esmUtilsHelperMod.ResponseSuccess
+import typings.qiniuJs.esmUtilsMod.Observable
 import typings.qiniuJs.qiniuJsStrings.`cn-east-2`
-import typings.qiniuJs.utilsMod.Observable
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -28,7 +28,7 @@ object mod {
   @JSImport("qiniu-js", "QiniuError")
   @js.native
   open class QiniuError protected ()
-    extends typings.qiniuJs.errorsMod.QiniuError {
+    extends typings.qiniuJs.esmErrorsMod.QiniuError {
     def this(name: QiniuErrorName, message: String) = this()
   }
   
@@ -37,45 +37,45 @@ object mod {
   object QiniuErrorName extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.qiniuJs.errorsMod.QiniuErrorName & String] = js.native
+    def apply(value: String): js.UndefOr[typings.qiniuJs.esmErrorsMod.QiniuErrorName & String] = js.native
     
-    /* "FileReaderReadFailed" */ val FileReaderReadFailed: typings.qiniuJs.errorsMod.QiniuErrorName.FileReaderReadFailed & String = js.native
+    /* "FileReaderReadFailed" */ val FileReaderReadFailed: typings.qiniuJs.esmErrorsMod.QiniuErrorName.FileReaderReadFailed & String = js.native
     
-    /* "GetCanvasContextFailed" */ val GetCanvasContextFailed: typings.qiniuJs.errorsMod.QiniuErrorName.GetCanvasContextFailed & String = js.native
+    /* "GetCanvasContextFailed" */ val GetCanvasContextFailed: typings.qiniuJs.esmErrorsMod.QiniuErrorName.GetCanvasContextFailed & String = js.native
     
-    /* "InvalidCacheData" */ val InvalidCacheData: typings.qiniuJs.errorsMod.QiniuErrorName.InvalidCacheData & String = js.native
+    /* "InvalidCacheData" */ val InvalidCacheData: typings.qiniuJs.esmErrorsMod.QiniuErrorName.InvalidCacheData & String = js.native
     
-    /* "InvalidChunkSize" */ val InvalidChunkSize: typings.qiniuJs.errorsMod.QiniuErrorName.InvalidChunkSize & String = js.native
+    /* "InvalidChunkSize" */ val InvalidChunkSize: typings.qiniuJs.esmErrorsMod.QiniuErrorName.InvalidChunkSize & String = js.native
     
-    /* "InvalidCustomVars" */ val InvalidCustomVars: typings.qiniuJs.errorsMod.QiniuErrorName.InvalidCustomVars & String = js.native
+    /* "InvalidCustomVars" */ val InvalidCustomVars: typings.qiniuJs.esmErrorsMod.QiniuErrorName.InvalidCustomVars & String = js.native
     
-    /* "InvalidFile" */ val InvalidFile: typings.qiniuJs.errorsMod.QiniuErrorName.InvalidFile & String = js.native
+    /* "InvalidFile" */ val InvalidFile: typings.qiniuJs.esmErrorsMod.QiniuErrorName.InvalidFile & String = js.native
     
-    /* "InvalidMetadata" */ val InvalidMetadata: typings.qiniuJs.errorsMod.QiniuErrorName.InvalidMetadata & String = js.native
+    /* "InvalidMetadata" */ val InvalidMetadata: typings.qiniuJs.esmErrorsMod.QiniuErrorName.InvalidMetadata & String = js.native
     
-    /* "InvalidProgressEventTarget" */ val InvalidProgressEventTarget: typings.qiniuJs.errorsMod.QiniuErrorName.InvalidProgressEventTarget & String = js.native
+    /* "InvalidProgressEventTarget" */ val InvalidProgressEventTarget: typings.qiniuJs.esmErrorsMod.QiniuErrorName.InvalidProgressEventTarget & String = js.native
     
-    /* "InvalidToken" */ val InvalidToken: typings.qiniuJs.errorsMod.QiniuErrorName.InvalidToken & String = js.native
+    /* "InvalidToken" */ val InvalidToken: typings.qiniuJs.esmErrorsMod.QiniuErrorName.InvalidToken & String = js.native
     
-    /* "NotAvailableUploadHost" */ val NotAvailableUploadHost: typings.qiniuJs.errorsMod.QiniuErrorName.NotAvailableUploadHost & String = js.native
+    /* "NotAvailableUploadHost" */ val NotAvailableUploadHost: typings.qiniuJs.esmErrorsMod.QiniuErrorName.NotAvailableUploadHost & String = js.native
     
-    /* "NotAvailableXMLHttpRequest" */ val NotAvailableXMLHttpRequest: typings.qiniuJs.errorsMod.QiniuErrorName.NotAvailableXMLHttpRequest & String = js.native
+    /* "NotAvailableXMLHttpRequest" */ val NotAvailableXMLHttpRequest: typings.qiniuJs.esmErrorsMod.QiniuErrorName.NotAvailableXMLHttpRequest & String = js.native
     
-    /* "ReadCacheFailed" */ val ReadCacheFailed: typings.qiniuJs.errorsMod.QiniuErrorName.ReadCacheFailed & String = js.native
+    /* "ReadCacheFailed" */ val ReadCacheFailed: typings.qiniuJs.esmErrorsMod.QiniuErrorName.ReadCacheFailed & String = js.native
     
-    /* "RemoveCacheFailed" */ val RemoveCacheFailed: typings.qiniuJs.errorsMod.QiniuErrorName.RemoveCacheFailed & String = js.native
+    /* "RemoveCacheFailed" */ val RemoveCacheFailed: typings.qiniuJs.esmErrorsMod.QiniuErrorName.RemoveCacheFailed & String = js.native
     
-    /* "RequestError" */ val RequestError: typings.qiniuJs.errorsMod.QiniuErrorName.RequestError & String = js.native
+    /* "RequestError" */ val RequestError: typings.qiniuJs.esmErrorsMod.QiniuErrorName.RequestError & String = js.native
     
-    /* "UnsupportedFileType" */ val UnsupportedFileType: typings.qiniuJs.errorsMod.QiniuErrorName.UnsupportedFileType & String = js.native
+    /* "UnsupportedFileType" */ val UnsupportedFileType: typings.qiniuJs.esmErrorsMod.QiniuErrorName.UnsupportedFileType & String = js.native
     
-    /* "WriteCacheFailed" */ val WriteCacheFailed: typings.qiniuJs.errorsMod.QiniuErrorName.WriteCacheFailed & String = js.native
+    /* "WriteCacheFailed" */ val WriteCacheFailed: typings.qiniuJs.esmErrorsMod.QiniuErrorName.WriteCacheFailed & String = js.native
   }
   
   @JSImport("qiniu-js", "QiniuNetworkError")
   @js.native
   open class QiniuNetworkError protected ()
-    extends typings.qiniuJs.errorsMod.QiniuNetworkError {
+    extends typings.qiniuJs.esmErrorsMod.QiniuNetworkError {
     def this(message: String) = this()
     def this(message: String, reqId: String) = this()
   }
@@ -83,7 +83,7 @@ object mod {
   @JSImport("qiniu-js", "QiniuRequestError")
   @js.native
   open class QiniuRequestError protected ()
-    extends typings.qiniuJs.errorsMod.QiniuRequestError {
+    extends typings.qiniuJs.esmErrorsMod.QiniuRequestError {
     def this(code: Double, reqId: String, message: String) = this()
     def this(code: Double, reqId: String, message: String, data: Any) = this()
   }
@@ -141,110 +141,110 @@ object mod {
   
   inline def upload(file: File, key: String, token: String): Observable[
     UploadProgress, 
-    typings.qiniuJs.errorsMod.QiniuError | typings.qiniuJs.errorsMod.QiniuRequestError | typings.qiniuJs.errorsMod.QiniuNetworkError, 
+    typings.qiniuJs.esmErrorsMod.QiniuError | typings.qiniuJs.esmErrorsMod.QiniuRequestError | typings.qiniuJs.esmErrorsMod.QiniuNetworkError, 
     UploadCompleteData
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("upload")(file.asInstanceOf[js.Any], key.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[Observable[
     UploadProgress, 
-    typings.qiniuJs.errorsMod.QiniuError | typings.qiniuJs.errorsMod.QiniuRequestError | typings.qiniuJs.errorsMod.QiniuNetworkError, 
+    typings.qiniuJs.esmErrorsMod.QiniuError | typings.qiniuJs.esmErrorsMod.QiniuRequestError | typings.qiniuJs.esmErrorsMod.QiniuNetworkError, 
     UploadCompleteData
   ]]
   inline def upload(file: File, key: String, token: String, putExtra: Unit, config: Config): Observable[
     UploadProgress, 
-    typings.qiniuJs.errorsMod.QiniuError | typings.qiniuJs.errorsMod.QiniuRequestError | typings.qiniuJs.errorsMod.QiniuNetworkError, 
+    typings.qiniuJs.esmErrorsMod.QiniuError | typings.qiniuJs.esmErrorsMod.QiniuRequestError | typings.qiniuJs.esmErrorsMod.QiniuNetworkError, 
     UploadCompleteData
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("upload")(file.asInstanceOf[js.Any], key.asInstanceOf[js.Any], token.asInstanceOf[js.Any], putExtra.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Observable[
     UploadProgress, 
-    typings.qiniuJs.errorsMod.QiniuError | typings.qiniuJs.errorsMod.QiniuRequestError | typings.qiniuJs.errorsMod.QiniuNetworkError, 
+    typings.qiniuJs.esmErrorsMod.QiniuError | typings.qiniuJs.esmErrorsMod.QiniuRequestError | typings.qiniuJs.esmErrorsMod.QiniuNetworkError, 
     UploadCompleteData
   ]]
   inline def upload(file: File, key: String, token: String, putExtra: PartialExtra): Observable[
     UploadProgress, 
-    typings.qiniuJs.errorsMod.QiniuError | typings.qiniuJs.errorsMod.QiniuRequestError | typings.qiniuJs.errorsMod.QiniuNetworkError, 
+    typings.qiniuJs.esmErrorsMod.QiniuError | typings.qiniuJs.esmErrorsMod.QiniuRequestError | typings.qiniuJs.esmErrorsMod.QiniuNetworkError, 
     UploadCompleteData
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("upload")(file.asInstanceOf[js.Any], key.asInstanceOf[js.Any], token.asInstanceOf[js.Any], putExtra.asInstanceOf[js.Any])).asInstanceOf[Observable[
     UploadProgress, 
-    typings.qiniuJs.errorsMod.QiniuError | typings.qiniuJs.errorsMod.QiniuRequestError | typings.qiniuJs.errorsMod.QiniuNetworkError, 
+    typings.qiniuJs.esmErrorsMod.QiniuError | typings.qiniuJs.esmErrorsMod.QiniuRequestError | typings.qiniuJs.esmErrorsMod.QiniuNetworkError, 
     UploadCompleteData
   ]]
   inline def upload(file: File, key: String, token: String, putExtra: PartialExtra, config: Config): Observable[
     UploadProgress, 
-    typings.qiniuJs.errorsMod.QiniuError | typings.qiniuJs.errorsMod.QiniuRequestError | typings.qiniuJs.errorsMod.QiniuNetworkError, 
+    typings.qiniuJs.esmErrorsMod.QiniuError | typings.qiniuJs.esmErrorsMod.QiniuRequestError | typings.qiniuJs.esmErrorsMod.QiniuNetworkError, 
     UploadCompleteData
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("upload")(file.asInstanceOf[js.Any], key.asInstanceOf[js.Any], token.asInstanceOf[js.Any], putExtra.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Observable[
     UploadProgress, 
-    typings.qiniuJs.errorsMod.QiniuError | typings.qiniuJs.errorsMod.QiniuRequestError | typings.qiniuJs.errorsMod.QiniuNetworkError, 
+    typings.qiniuJs.esmErrorsMod.QiniuError | typings.qiniuJs.esmErrorsMod.QiniuRequestError | typings.qiniuJs.esmErrorsMod.QiniuNetworkError, 
     UploadCompleteData
   ]]
   inline def upload(file: File, key: Null, token: String): Observable[
     UploadProgress, 
-    typings.qiniuJs.errorsMod.QiniuError | typings.qiniuJs.errorsMod.QiniuRequestError | typings.qiniuJs.errorsMod.QiniuNetworkError, 
+    typings.qiniuJs.esmErrorsMod.QiniuError | typings.qiniuJs.esmErrorsMod.QiniuRequestError | typings.qiniuJs.esmErrorsMod.QiniuNetworkError, 
     UploadCompleteData
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("upload")(file.asInstanceOf[js.Any], key.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[Observable[
     UploadProgress, 
-    typings.qiniuJs.errorsMod.QiniuError | typings.qiniuJs.errorsMod.QiniuRequestError | typings.qiniuJs.errorsMod.QiniuNetworkError, 
+    typings.qiniuJs.esmErrorsMod.QiniuError | typings.qiniuJs.esmErrorsMod.QiniuRequestError | typings.qiniuJs.esmErrorsMod.QiniuNetworkError, 
     UploadCompleteData
   ]]
   inline def upload(file: File, key: Null, token: String, putExtra: Unit, config: Config): Observable[
     UploadProgress, 
-    typings.qiniuJs.errorsMod.QiniuError | typings.qiniuJs.errorsMod.QiniuRequestError | typings.qiniuJs.errorsMod.QiniuNetworkError, 
+    typings.qiniuJs.esmErrorsMod.QiniuError | typings.qiniuJs.esmErrorsMod.QiniuRequestError | typings.qiniuJs.esmErrorsMod.QiniuNetworkError, 
     UploadCompleteData
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("upload")(file.asInstanceOf[js.Any], key.asInstanceOf[js.Any], token.asInstanceOf[js.Any], putExtra.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Observable[
     UploadProgress, 
-    typings.qiniuJs.errorsMod.QiniuError | typings.qiniuJs.errorsMod.QiniuRequestError | typings.qiniuJs.errorsMod.QiniuNetworkError, 
+    typings.qiniuJs.esmErrorsMod.QiniuError | typings.qiniuJs.esmErrorsMod.QiniuRequestError | typings.qiniuJs.esmErrorsMod.QiniuNetworkError, 
     UploadCompleteData
   ]]
   inline def upload(file: File, key: Null, token: String, putExtra: PartialExtra): Observable[
     UploadProgress, 
-    typings.qiniuJs.errorsMod.QiniuError | typings.qiniuJs.errorsMod.QiniuRequestError | typings.qiniuJs.errorsMod.QiniuNetworkError, 
+    typings.qiniuJs.esmErrorsMod.QiniuError | typings.qiniuJs.esmErrorsMod.QiniuRequestError | typings.qiniuJs.esmErrorsMod.QiniuNetworkError, 
     UploadCompleteData
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("upload")(file.asInstanceOf[js.Any], key.asInstanceOf[js.Any], token.asInstanceOf[js.Any], putExtra.asInstanceOf[js.Any])).asInstanceOf[Observable[
     UploadProgress, 
-    typings.qiniuJs.errorsMod.QiniuError | typings.qiniuJs.errorsMod.QiniuRequestError | typings.qiniuJs.errorsMod.QiniuNetworkError, 
+    typings.qiniuJs.esmErrorsMod.QiniuError | typings.qiniuJs.esmErrorsMod.QiniuRequestError | typings.qiniuJs.esmErrorsMod.QiniuNetworkError, 
     UploadCompleteData
   ]]
   inline def upload(file: File, key: Null, token: String, putExtra: PartialExtra, config: Config): Observable[
     UploadProgress, 
-    typings.qiniuJs.errorsMod.QiniuError | typings.qiniuJs.errorsMod.QiniuRequestError | typings.qiniuJs.errorsMod.QiniuNetworkError, 
+    typings.qiniuJs.esmErrorsMod.QiniuError | typings.qiniuJs.esmErrorsMod.QiniuRequestError | typings.qiniuJs.esmErrorsMod.QiniuNetworkError, 
     UploadCompleteData
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("upload")(file.asInstanceOf[js.Any], key.asInstanceOf[js.Any], token.asInstanceOf[js.Any], putExtra.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Observable[
     UploadProgress, 
-    typings.qiniuJs.errorsMod.QiniuError | typings.qiniuJs.errorsMod.QiniuRequestError | typings.qiniuJs.errorsMod.QiniuNetworkError, 
+    typings.qiniuJs.esmErrorsMod.QiniuError | typings.qiniuJs.esmErrorsMod.QiniuRequestError | typings.qiniuJs.esmErrorsMod.QiniuNetworkError, 
     UploadCompleteData
   ]]
   inline def upload(file: File, key: Unit, token: String): Observable[
     UploadProgress, 
-    typings.qiniuJs.errorsMod.QiniuError | typings.qiniuJs.errorsMod.QiniuRequestError | typings.qiniuJs.errorsMod.QiniuNetworkError, 
+    typings.qiniuJs.esmErrorsMod.QiniuError | typings.qiniuJs.esmErrorsMod.QiniuRequestError | typings.qiniuJs.esmErrorsMod.QiniuNetworkError, 
     UploadCompleteData
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("upload")(file.asInstanceOf[js.Any], key.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[Observable[
     UploadProgress, 
-    typings.qiniuJs.errorsMod.QiniuError | typings.qiniuJs.errorsMod.QiniuRequestError | typings.qiniuJs.errorsMod.QiniuNetworkError, 
+    typings.qiniuJs.esmErrorsMod.QiniuError | typings.qiniuJs.esmErrorsMod.QiniuRequestError | typings.qiniuJs.esmErrorsMod.QiniuNetworkError, 
     UploadCompleteData
   ]]
   inline def upload(file: File, key: Unit, token: String, putExtra: Unit, config: Config): Observable[
     UploadProgress, 
-    typings.qiniuJs.errorsMod.QiniuError | typings.qiniuJs.errorsMod.QiniuRequestError | typings.qiniuJs.errorsMod.QiniuNetworkError, 
+    typings.qiniuJs.esmErrorsMod.QiniuError | typings.qiniuJs.esmErrorsMod.QiniuRequestError | typings.qiniuJs.esmErrorsMod.QiniuNetworkError, 
     UploadCompleteData
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("upload")(file.asInstanceOf[js.Any], key.asInstanceOf[js.Any], token.asInstanceOf[js.Any], putExtra.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Observable[
     UploadProgress, 
-    typings.qiniuJs.errorsMod.QiniuError | typings.qiniuJs.errorsMod.QiniuRequestError | typings.qiniuJs.errorsMod.QiniuNetworkError, 
+    typings.qiniuJs.esmErrorsMod.QiniuError | typings.qiniuJs.esmErrorsMod.QiniuRequestError | typings.qiniuJs.esmErrorsMod.QiniuNetworkError, 
     UploadCompleteData
   ]]
   inline def upload(file: File, key: Unit, token: String, putExtra: PartialExtra): Observable[
     UploadProgress, 
-    typings.qiniuJs.errorsMod.QiniuError | typings.qiniuJs.errorsMod.QiniuRequestError | typings.qiniuJs.errorsMod.QiniuNetworkError, 
+    typings.qiniuJs.esmErrorsMod.QiniuError | typings.qiniuJs.esmErrorsMod.QiniuRequestError | typings.qiniuJs.esmErrorsMod.QiniuNetworkError, 
     UploadCompleteData
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("upload")(file.asInstanceOf[js.Any], key.asInstanceOf[js.Any], token.asInstanceOf[js.Any], putExtra.asInstanceOf[js.Any])).asInstanceOf[Observable[
     UploadProgress, 
-    typings.qiniuJs.errorsMod.QiniuError | typings.qiniuJs.errorsMod.QiniuRequestError | typings.qiniuJs.errorsMod.QiniuNetworkError, 
+    typings.qiniuJs.esmErrorsMod.QiniuError | typings.qiniuJs.esmErrorsMod.QiniuRequestError | typings.qiniuJs.esmErrorsMod.QiniuNetworkError, 
     UploadCompleteData
   ]]
   inline def upload(file: File, key: Unit, token: String, putExtra: PartialExtra, config: Config): Observable[
     UploadProgress, 
-    typings.qiniuJs.errorsMod.QiniuError | typings.qiniuJs.errorsMod.QiniuRequestError | typings.qiniuJs.errorsMod.QiniuNetworkError, 
+    typings.qiniuJs.esmErrorsMod.QiniuError | typings.qiniuJs.esmErrorsMod.QiniuRequestError | typings.qiniuJs.esmErrorsMod.QiniuNetworkError, 
     UploadCompleteData
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("upload")(file.asInstanceOf[js.Any], key.asInstanceOf[js.Any], token.asInstanceOf[js.Any], putExtra.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Observable[
     UploadProgress, 
-    typings.qiniuJs.errorsMod.QiniuError | typings.qiniuJs.errorsMod.QiniuRequestError | typings.qiniuJs.errorsMod.QiniuNetworkError, 
+    typings.qiniuJs.esmErrorsMod.QiniuError | typings.qiniuJs.esmErrorsMod.QiniuRequestError | typings.qiniuJs.esmErrorsMod.QiniuNetworkError, 
     UploadCompleteData
   ]]
   

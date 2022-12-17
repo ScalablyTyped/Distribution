@@ -17,9 +17,7 @@ object mod {
     */
   @JSImport("@twilio/mcs-client", JSImport.Default)
   @js.native
-  open class default protected ()
-    extends StObject
-       with Client {
+  open class default protected () extends Client {
     /**
       * Base URLs must be full URLs with host. If host is not provided it will be generated from a default configuration
       * template using options.region.
@@ -45,11 +43,103 @@ object mod {
   /**
     * @classdesc A Client provides an interface for Media Content Service
     */
+  @JSImport("@twilio/mcs-client", "Client")
+  @js.native
+  open class Client protected () extends StObject {
+    /**
+      * Base URLs must be full URLs with host. If host is not provided it will be generated from a default configuration
+      * template using options.region.
+      *
+      * @param {String} token - Access token
+      * @param {String} baseUrl - Base URL for Media Content Service Media resource, i.e. /v1/Services/{serviceSid}/Media
+      * @param {String} baseSetUrl - Base URL for Media Content Service MediaSet resource, i.e. /v1/Services/{serviceSid}/MediaSet
+      * @param {Client#ClientOptions} [options] - Options to customize the Client
+      */
+    def this(token: String, baseUrl: String) = this()
+    def this(token: String, baseUrl: String, baseSetUrl: String) = this()
+    def this(token: String, baseUrl: String, baseSetUrl: String, options: Options0) = this()
+    def this(token: String, baseUrl: String, baseSetUrl: Null, options: Options0) = this()
+    
+    /* private */ var config: Any = js.native
+    
+    /**
+      * Gets media from media service
+      * @param {String} sid - Media's SID
+      * @returns {Promise<Media>}
+      */
+    def get(sid: String): js.Promise[Media] = js.native
+    
+    /**
+      * Retrieve information about multiple media SIDs at the same time.
+      * @param mediaSids Array of Media SIDs to get information from.
+      */
+    def mediaSetGet(mediaSids: js.Array[String]): js.Promise[js.Array[Media]] = js.native
+    
+    /* private */ var network: Any = js.native
+    
+    /* private */ var options: Any = js.native
+    
+    /**
+      * Posts raw content to media service
+      * @param {String} contentType - content type of media
+      * @param {String|Buffer|Blob} media - content to post
+      * @param {MediaCategory|null} category - category for the media
+      * @returns {Promise<Media>}
+      */
+    def post(contentType: String, media: String): js.Promise[Media] = js.native
+    def post(contentType: String, media: String, category: Null, filename: String): js.Promise[Media] = js.native
+    def post(contentType: String, media: String, category: MediaCategory): js.Promise[Media] = js.native
+    def post(contentType: String, media: String, category: MediaCategory, filename: String): js.Promise[Media] = js.native
+    def post(contentType: String, media: Buffer): js.Promise[Media] = js.native
+    def post(contentType: String, media: Buffer, category: Null, filename: String): js.Promise[Media] = js.native
+    def post(contentType: String, media: Buffer, category: MediaCategory): js.Promise[Media] = js.native
+    def post(contentType: String, media: Buffer, category: MediaCategory, filename: String): js.Promise[Media] = js.native
+    def post(contentType: String, media: Blob): js.Promise[Media] = js.native
+    def post(contentType: String, media: Blob, category: Null, filename: String): js.Promise[Media] = js.native
+    def post(contentType: String, media: Blob, category: MediaCategory): js.Promise[Media] = js.native
+    def post(contentType: String, media: Blob, category: MediaCategory, filename: String): js.Promise[Media] = js.native
+    
+    /**
+      * Posts FormData to media service. Can be used only with browser engine's FormData.
+      * In non-browser FormData case the method will do promise reject with
+      * new TypeError("Posting FormData supported only with browser engine's FormData")
+      * @param {FormData} formData - form data to post
+      * @param {MediaCategory|null} category - category for the media
+      * @returns {Promise<Media>}
+      */
+    def postFormData(formData: FormData): js.Promise[Media] = js.native
+    def postFormData(formData: FormData, category: MediaCategory): js.Promise[Media] = js.native
+    
+    // eslint-disable-next-line
+    /* private */ val transport: Any = js.native
+    
+    /**
+      * These options can be passed to Client constructor
+      * @typedef {Object} Client#ClientOptions
+      * @property {String} [logLevel='silent'] - The level of logging to enable. Valid options
+      *   (from strictest to broadest): ['silent', 'error', 'warn', 'info', 'debug', 'trace']
+      */
+    /**
+      * Update the token used for Client operations
+      * @param {String} token - The JWT string of the new token
+      * @returns {void}
+      */
+    def updateToken(token: String): Unit = js.native
+  }
+  object Client {
+    
+    /* static member */
+    @JSImport("@twilio/mcs-client", "Client.version")
+    @js.native
+    val version: String = js.native
+  }
+  
+  /**
+    * @classdesc A Client provides an interface for Media Content Service
+    */
   @JSImport("@twilio/mcs-client", "McsClient")
   @js.native
-  open class McsClient protected ()
-    extends StObject
-       with Client {
+  open class McsClient protected () extends Client {
     /**
       * Base URLs must be full URLs with host. If host is not provided it will be generated from a default configuration
       * template using options.region.
@@ -182,79 +272,6 @@ object mod {
       
       inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     }
-  }
-  
-  /**
-    * @classdesc A Client provides an interface for Media Content Service
-    */
-  @js.native
-  trait Client extends StObject {
-    
-    /* private */ var config: Any = js.native
-    
-    /**
-      * Gets media from media service
-      * @param {String} sid - Media's SID
-      * @returns {Promise<Media>}
-      */
-    def get(sid: String): js.Promise[Media] = js.native
-    
-    /**
-      * Retrieve information about multiple media SIDs at the same time.
-      * @param mediaSids Array of Media SIDs to get information from.
-      */
-    def mediaSetGet(mediaSids: js.Array[String]): js.Promise[js.Array[Media]] = js.native
-    
-    /* private */ var network: Any = js.native
-    
-    /* private */ var options: Any = js.native
-    
-    /**
-      * Posts raw content to media service
-      * @param {String} contentType - content type of media
-      * @param {String|Buffer|Blob} media - content to post
-      * @param {MediaCategory|null} category - category for the media
-      * @returns {Promise<Media>}
-      */
-    def post(contentType: String, media: String): js.Promise[Media] = js.native
-    def post(contentType: String, media: String, category: Null, filename: String): js.Promise[Media] = js.native
-    def post(contentType: String, media: String, category: MediaCategory): js.Promise[Media] = js.native
-    def post(contentType: String, media: String, category: MediaCategory, filename: String): js.Promise[Media] = js.native
-    def post(contentType: String, media: Buffer): js.Promise[Media] = js.native
-    def post(contentType: String, media: Buffer, category: Null, filename: String): js.Promise[Media] = js.native
-    def post(contentType: String, media: Buffer, category: MediaCategory): js.Promise[Media] = js.native
-    def post(contentType: String, media: Buffer, category: MediaCategory, filename: String): js.Promise[Media] = js.native
-    def post(contentType: String, media: Blob): js.Promise[Media] = js.native
-    def post(contentType: String, media: Blob, category: Null, filename: String): js.Promise[Media] = js.native
-    def post(contentType: String, media: Blob, category: MediaCategory): js.Promise[Media] = js.native
-    def post(contentType: String, media: Blob, category: MediaCategory, filename: String): js.Promise[Media] = js.native
-    
-    /**
-      * Posts FormData to media service. Can be used only with browser engine's FormData.
-      * In non-browser FormData case the method will do promise reject with
-      * new TypeError("Posting FormData supported only with browser engine's FormData")
-      * @param {FormData} formData - form data to post
-      * @param {MediaCategory|null} category - category for the media
-      * @returns {Promise<Media>}
-      */
-    def postFormData(formData: FormData): js.Promise[Media] = js.native
-    def postFormData(formData: FormData, category: MediaCategory): js.Promise[Media] = js.native
-    
-    // eslint-disable-next-line
-    /* private */ val transport: Any = js.native
-    
-    /**
-      * These options can be passed to Client constructor
-      * @typedef {Object} Client#ClientOptions
-      * @property {String} [logLevel='silent'] - The level of logging to enable. Valid options
-      *   (from strictest to broadest): ['silent', 'error', 'warn', 'info', 'debug', 'trace']
-      */
-    /**
-      * Update the token used for Client operations
-      * @param {String} token - The JWT string of the new token
-      * @returns {void}
-      */
-    def updateToken(token: String): Unit = js.native
   }
   
   trait Configuration extends StObject {

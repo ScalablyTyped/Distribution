@@ -1,7 +1,5 @@
 package typings.humanDate
 
-import typings.humanDate.humanDateBooleans.`false`
-import typings.humanDate.humanDateBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,12 +17,12 @@ object anon {
     
     var presentText: js.UndefOr[String] = js.undefined
     
-    var returnObject: js.UndefOr[Boolean] & js.UndefOr[`false`]
+    var returnObject: js.UndefOr[Boolean] = js.undefined
   }
   object RelativeTimeOptionsreturn {
     
-    inline def apply(returnObject: js.UndefOr[Boolean] & js.UndefOr[`false`]): RelativeTimeOptionsreturn = {
-      val __obj = js.Dynamic.literal(returnObject = returnObject.asInstanceOf[js.Any])
+    inline def apply(): RelativeTimeOptionsreturn = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RelativeTimeOptionsreturn]
     }
     
@@ -46,7 +44,9 @@ object anon {
       
       inline def setPresentTextUndefined: Self = StObject.set(x, "presentText", js.undefined)
       
-      inline def setReturnObject(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "returnObject", value.asInstanceOf[js.Any])
+      inline def setReturnObject(value: Boolean): Self = StObject.set(x, "returnObject", value.asInstanceOf[js.Any])
+      
+      inline def setReturnObjectUndefined: Self = StObject.set(x, "returnObject", js.undefined)
     }
   }
   
@@ -61,12 +61,12 @@ object anon {
     
     var presentText: js.UndefOr[String] = js.undefined
     
-    var returnObject: js.UndefOr[Boolean] & `true`
+    var returnObject: js.UndefOr[Boolean] = js.undefined
   }
   object RelativeTimeOptionsreturnAllUnits {
     
-    inline def apply(returnObject: js.UndefOr[Boolean] & `true`): RelativeTimeOptionsreturnAllUnits = {
-      val __obj = js.Dynamic.literal(returnObject = returnObject.asInstanceOf[js.Any])
+    inline def apply(): RelativeTimeOptionsreturnAllUnits = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RelativeTimeOptionsreturnAllUnits]
     }
     
@@ -88,7 +88,9 @@ object anon {
       
       inline def setPresentTextUndefined: Self = StObject.set(x, "presentText", js.undefined)
       
-      inline def setReturnObject(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "returnObject", value.asInstanceOf[js.Any])
+      inline def setReturnObject(value: Boolean): Self = StObject.set(x, "returnObject", value.asInstanceOf[js.Any])
+      
+      inline def setReturnObjectUndefined: Self = StObject.set(x, "returnObject", js.undefined)
     }
   }
 }

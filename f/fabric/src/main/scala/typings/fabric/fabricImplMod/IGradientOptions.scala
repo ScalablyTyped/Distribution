@@ -1,6 +1,5 @@
 package typings.fabric.fabricImplMod
 
-import typings.fabric.anon.Offset
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,7 +42,7 @@ object IGradientOptions {
     
     inline def setColorStopsUndefined: Self = StObject.set(x, "colorStops", js.undefined)
     
-    inline def setColorStopsVarargs(value: Offset*): Self = StObject.set(x, "colorStops", js.Array(value*))
+    inline def setColorStopsVarargs(value: typings.fabric.anon.Color*): Self = StObject.set(x, "colorStops", js.Array(value*))
     
     inline def setCoords(value: IGradientOptionsCoords): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
     

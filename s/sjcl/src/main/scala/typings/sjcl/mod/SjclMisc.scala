@@ -1,6 +1,6 @@
 package typings.sjcl.mod
 
-import typings.sjcl.anon.Salt
+import typings.sjcl.anon.Key
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SjclMisc extends StObject {
   
-  def cachedPbkdf2(password: String): Salt = js.native
-  def cachedPbkdf2(password: String, obj: PBKDF2Params): Salt = js.native
+  def cachedPbkdf2(password: String): Key = js.native
+  def cachedPbkdf2(password: String, obj: PBKDF2Params): Key = js.native
   
   def hkdf(ikm: BitArray_, keyBitLength: Double, salt: String, info: String): BitArray_ = js.native
   def hkdf(ikm: BitArray_, keyBitLength: Double, salt: String, info: String, Hash: SjclHashStatic): BitArray_ = js.native

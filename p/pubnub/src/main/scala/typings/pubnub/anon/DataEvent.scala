@@ -1,33 +1,35 @@
 package typings.pubnub.anon
 
-import typings.pubnub.pubnubStrings.delete
-import typings.pubnub.pubnubStrings.membership
+import typings.pubnub.mod.ChannelMetadataObject
+import typings.pubnub.mod.ObjectCustom
+import typings.pubnub.pubnubStrings.channel
+import typings.pubnub.pubnubStrings.set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DataEvent extends StObject {
+trait DataEvent[ChannelCustom /* <: ObjectCustom */] extends StObject {
   
-  var data: Channel
+  var data: ChannelMetadataObject[ChannelCustom]
   
-  var event: delete
+  var event: set
   
-  var `type`: membership
+  var `type`: channel
 }
 object DataEvent {
   
-  inline def apply(data: Channel): DataEvent = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = "delete")
-    __obj.updateDynamic("type")("membership")
-    __obj.asInstanceOf[DataEvent]
+  inline def apply[ChannelCustom /* <: ObjectCustom */](data: ChannelMetadataObject[ChannelCustom]): DataEvent[ChannelCustom] = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = "set")
+    __obj.updateDynamic("type")("channel")
+    __obj.asInstanceOf[DataEvent[ChannelCustom]]
   }
   
-  extension [Self <: DataEvent](x: Self) {
+  extension [Self <: DataEvent[?], ChannelCustom /* <: ObjectCustom */](x: Self & DataEvent[ChannelCustom]) {
     
-    inline def setData(value: Channel): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: ChannelMetadataObject[ChannelCustom]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setEvent(value: delete): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: set): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    inline def setType(value: membership): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: channel): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -41,7 +41,7 @@ object outNumberSubMod {
     */
   type SubPositive[N1 /* <: Iteration */, N2 /* <: Iteration */] = Iteration
   
-  type _Sub[N1 /* <: Iteration */, N2 /* <: Iteration */] = /* import warning: importer.ImportType#apply Failed type conversion: ts-toolbelt.anon.0SubPositive<N1, N2>[ts-toolbelt.ts-toolbelt/out/Number/IsNegative._IsNegative<N2>] */ js.Any
+  type _Sub[N1 /* <: Iteration */, N2 /* <: Iteration */] = /* import warning: importer.ImportType#apply Failed type conversion: ts-toolbelt.anon.1SubNegative<N1, N2>[ts-toolbelt.ts-toolbelt/out/Number/IsNegative._IsNegative<N2>] */ js.Any
   
   /**
     * @hidden
@@ -51,5 +51,5 @@ object outNumberSubMod {
   /**
     * @hidden
     */
-  type _SubPositive[N1 /* <: Iteration */, N2 /* <: Iteration */] = /* import warning: importer.ImportType#apply Failed type conversion: ts-toolbelt.anon.2Number<N1, N2>[ts-toolbelt.ts-toolbelt/out/Iteration/Pos.Pos<N2> extends 0 ? 1 : number extends ts-toolbelt.ts-toolbelt/out/Iteration/Pos.Pos<N2> ? 2 : 0] */ js.Any
+  type _SubPositive[N1 /* <: Iteration */, N2 /* <: Iteration */] = /* import warning: importer.ImportType#apply Failed type conversion: ts-toolbelt.anon.0SubPositive<N1, N2>[ts-toolbelt.ts-toolbelt/out/Iteration/Pos.Pos<N2> extends 0 ? 1 : number extends ts-toolbelt.ts-toolbelt/out/Iteration/Pos.Pos<N2> ? 2 : 0] */ js.Any
 }

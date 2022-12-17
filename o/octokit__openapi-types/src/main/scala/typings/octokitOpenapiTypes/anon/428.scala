@@ -6,36 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `428` extends StObject {
   
-  var secrets: js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['actions-secret'] */ js.Any
-  ]
-  
-  var total_count: Double
+  @JSName("application/json")
+  var applicationSlashjson: js.Array[Marketplacependingchange]
 }
 object `428` {
   
-  inline def apply(
-    secrets: js.Array[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['actions-secret'] */ js.Any
-    ],
-    total_count: Double
-  ): `428` = {
-    val __obj = js.Dynamic.literal(secrets = secrets.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
+  inline def apply(applicationSlashjson: js.Array[Marketplacependingchange]): `428` = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`428`]
   }
   
   extension [Self <: `428`](x: Self) {
     
-    inline def setSecrets(
-      value: js.Array[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['actions-secret'] */ js.Any
-        ]
-    ): Self = StObject.set(x, "secrets", value.asInstanceOf[js.Any])
+    inline def setApplicationSlashjson(value: js.Array[Marketplacependingchange]): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
     
-    inline def setSecretsVarargs(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['actions-secret'] */ js.Any)*
-    ): Self = StObject.set(x, "secrets", js.Array(value*))
-    
-    inline def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
+    inline def setApplicationSlashjsonVarargs(value: Marketplacependingchange*): Self = StObject.set(x, "application/json", js.Array(value*))
   }
 }

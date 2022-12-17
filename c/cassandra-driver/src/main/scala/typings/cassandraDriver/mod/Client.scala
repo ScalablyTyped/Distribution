@@ -1,7 +1,7 @@
 package typings.cassandraDriver.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.cassandraDriver.anon.Params
+import typings.cassandraDriver.anon.Query
 import typings.cassandraDriver.libDatastaxMod.datastax.graph.GraphResultSet
 import typings.cassandraDriver.libMetadataMod.metadata.ClientState
 import typings.cassandraDriver.libMetadataMod.metadata.Metadata
@@ -19,10 +19,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class Client protected () extends EventEmitter {
   def this(options: DseClientOptions) = this()
   
-  def batch(queries: js.Array[String | Params]): js.Promise[ResultSet] = js.native
-  def batch(queries: js.Array[String | Params], callback: ValueCallback[ResultSet]): Unit = js.native
-  def batch(queries: js.Array[String | Params], options: QueryOptions): js.Promise[ResultSet] = js.native
-  def batch(queries: js.Array[String | Params], options: QueryOptions, callback: ValueCallback[ResultSet]): Unit = js.native
+  def batch(queries: js.Array[String | Query]): js.Promise[ResultSet] = js.native
+  def batch(queries: js.Array[String | Query], callback: ValueCallback[ResultSet]): Unit = js.native
+  def batch(queries: js.Array[String | Query], options: QueryOptions): js.Promise[ResultSet] = js.native
+  def batch(queries: js.Array[String | Query], options: QueryOptions, callback: ValueCallback[ResultSet]): Unit = js.native
   
   def connect(): js.Promise[Unit] = js.native
   def connect(callback: EmptyCallback): Unit = js.native

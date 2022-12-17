@@ -21,7 +21,7 @@ trait PickImplperformancePartia
   
   var namespaceStub: js.UndefOr[NamespaceStubSettings] = js.undefined
   
-  var performance: Boolean & js.UndefOr[Boolean]
+  var performance: Boolean
   
   var silent: js.UndefOr[Boolean] = js.undefined
   
@@ -31,7 +31,7 @@ trait PickImplperformancePartia
 }
 object PickImplperformancePartia {
   
-  inline def apply(performance: Boolean & js.UndefOr[Boolean]): PickImplperformancePartia = {
+  inline def apply(performance: Boolean): PickImplperformancePartia = {
     val __obj = js.Dynamic.literal(performance = performance.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplperformancePartia]
   }
@@ -60,7 +60,7 @@ object PickImplperformancePartia {
     
     inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
-    inline def setPerformance(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
+    inline def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
     
     inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     

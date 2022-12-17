@@ -1,13 +1,17 @@
 package typings.webpack.mod
 
+import org.scalablytyped.runtime.Instantiable6
 import typings.std.Map
+import typings.webpack.anon.TypeofModuleGraphConnecti
+import typings.webpack.webpackBooleans.`false`
 import typings.webpack.webpackBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@JSImport("webpack", "ModuleGraph")
 @js.native
-trait ModuleGraph extends StObject {
+open class ModuleGraph () extends StObject {
   
   def addExplanation(dependency: Dependency, explanation: String): Unit = js.native
   
@@ -133,4 +137,398 @@ trait ModuleGraph extends StObject {
   def unfreeze(): Unit = js.native
   
   def updateModule(dependency: Dependency, module: Module): Unit = js.native
+}
+object ModuleGraph {
+  
+  @JSImport("webpack", "ModuleGraph")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("webpack", "ModuleGraph.ModuleGraphConnection")
+  @js.native
+  open class ModuleGraphConnection protected ()
+    extends typings.webpack.mod.ModuleGraphConnection {
+    def this(originModule: Null, dependency: Null, module: Module) = this()
+    def this(originModule: Null, dependency: Dependency, module: Module) = this()
+    def this(originModule: Module, dependency: Null, module: Module) = this()
+    def this(originModule: Module, dependency: Dependency, module: Module) = this()
+    def this(originModule: Null, dependency: Null, module: Module, explanation: String) = this()
+    def this(originModule: Null, dependency: Dependency, module: Module, explanation: String) = this()
+    def this(originModule: Module, dependency: Null, module: Module, explanation: String) = this()
+    def this(originModule: Module, dependency: Dependency, module: Module, explanation: String) = this()
+    def this(originModule: Null, dependency: Null, module: Module, explanation: String, weak: Boolean) = this()
+    def this(originModule: Null, dependency: Null, module: Module, explanation: Unit, weak: Boolean) = this()
+    def this(originModule: Null, dependency: Dependency, module: Module, explanation: String, weak: Boolean) = this()
+    def this(originModule: Null, dependency: Dependency, module: Module, explanation: Unit, weak: Boolean) = this()
+    def this(originModule: Module, dependency: Null, module: Module, explanation: String, weak: Boolean) = this()
+    def this(originModule: Module, dependency: Null, module: Module, explanation: Unit, weak: Boolean) = this()
+    def this(originModule: Module, dependency: Dependency, module: Module, explanation: String, weak: Boolean) = this()
+    def this(originModule: Module, dependency: Dependency, module: Module, explanation: Unit, weak: Boolean) = this()
+    def this(
+      originModule: Null,
+      dependency: Null,
+      module: Module,
+      explanation: String,
+      weak: Boolean,
+      condition: js.Function2[
+            /* arg0 */ typings.webpack.mod.ModuleGraphConnection, 
+            /* arg1 */ RuntimeSpec, 
+            ConnectionState
+          ]
+    ) = this()
+    def this(
+      originModule: Null,
+      dependency: Null,
+      module: Module,
+      explanation: String,
+      weak: Boolean,
+      condition: `false`
+    ) = this()
+    def this(
+      originModule: Null,
+      dependency: Null,
+      module: Module,
+      explanation: String,
+      weak: Unit,
+      condition: js.Function2[
+            /* arg0 */ typings.webpack.mod.ModuleGraphConnection, 
+            /* arg1 */ RuntimeSpec, 
+            ConnectionState
+          ]
+    ) = this()
+    def this(
+      originModule: Null,
+      dependency: Null,
+      module: Module,
+      explanation: String,
+      weak: Unit,
+      condition: `false`
+    ) = this()
+    def this(
+      originModule: Null,
+      dependency: Null,
+      module: Module,
+      explanation: Unit,
+      weak: Boolean,
+      condition: js.Function2[
+            /* arg0 */ typings.webpack.mod.ModuleGraphConnection, 
+            /* arg1 */ RuntimeSpec, 
+            ConnectionState
+          ]
+    ) = this()
+    def this(
+      originModule: Null,
+      dependency: Null,
+      module: Module,
+      explanation: Unit,
+      weak: Boolean,
+      condition: `false`
+    ) = this()
+    def this(
+      originModule: Null,
+      dependency: Null,
+      module: Module,
+      explanation: Unit,
+      weak: Unit,
+      condition: js.Function2[
+            /* arg0 */ typings.webpack.mod.ModuleGraphConnection, 
+            /* arg1 */ RuntimeSpec, 
+            ConnectionState
+          ]
+    ) = this()
+    def this(
+      originModule: Null,
+      dependency: Null,
+      module: Module,
+      explanation: Unit,
+      weak: Unit,
+      condition: `false`
+    ) = this()
+    def this(
+      originModule: Null,
+      dependency: Dependency,
+      module: Module,
+      explanation: String,
+      weak: Boolean,
+      condition: js.Function2[
+            /* arg0 */ typings.webpack.mod.ModuleGraphConnection, 
+            /* arg1 */ RuntimeSpec, 
+            ConnectionState
+          ]
+    ) = this()
+    def this(
+      originModule: Null,
+      dependency: Dependency,
+      module: Module,
+      explanation: String,
+      weak: Boolean,
+      condition: `false`
+    ) = this()
+    def this(
+      originModule: Null,
+      dependency: Dependency,
+      module: Module,
+      explanation: String,
+      weak: Unit,
+      condition: js.Function2[
+            /* arg0 */ typings.webpack.mod.ModuleGraphConnection, 
+            /* arg1 */ RuntimeSpec, 
+            ConnectionState
+          ]
+    ) = this()
+    def this(
+      originModule: Null,
+      dependency: Dependency,
+      module: Module,
+      explanation: String,
+      weak: Unit,
+      condition: `false`
+    ) = this()
+    def this(
+      originModule: Null,
+      dependency: Dependency,
+      module: Module,
+      explanation: Unit,
+      weak: Boolean,
+      condition: js.Function2[
+            /* arg0 */ typings.webpack.mod.ModuleGraphConnection, 
+            /* arg1 */ RuntimeSpec, 
+            ConnectionState
+          ]
+    ) = this()
+    def this(
+      originModule: Null,
+      dependency: Dependency,
+      module: Module,
+      explanation: Unit,
+      weak: Boolean,
+      condition: `false`
+    ) = this()
+    def this(
+      originModule: Null,
+      dependency: Dependency,
+      module: Module,
+      explanation: Unit,
+      weak: Unit,
+      condition: js.Function2[
+            /* arg0 */ typings.webpack.mod.ModuleGraphConnection, 
+            /* arg1 */ RuntimeSpec, 
+            ConnectionState
+          ]
+    ) = this()
+    def this(
+      originModule: Null,
+      dependency: Dependency,
+      module: Module,
+      explanation: Unit,
+      weak: Unit,
+      condition: `false`
+    ) = this()
+    def this(
+      originModule: Module,
+      dependency: Null,
+      module: Module,
+      explanation: String,
+      weak: Boolean,
+      condition: js.Function2[
+            /* arg0 */ typings.webpack.mod.ModuleGraphConnection, 
+            /* arg1 */ RuntimeSpec, 
+            ConnectionState
+          ]
+    ) = this()
+    def this(
+      originModule: Module,
+      dependency: Null,
+      module: Module,
+      explanation: String,
+      weak: Boolean,
+      condition: `false`
+    ) = this()
+    def this(
+      originModule: Module,
+      dependency: Null,
+      module: Module,
+      explanation: String,
+      weak: Unit,
+      condition: js.Function2[
+            /* arg0 */ typings.webpack.mod.ModuleGraphConnection, 
+            /* arg1 */ RuntimeSpec, 
+            ConnectionState
+          ]
+    ) = this()
+    def this(
+      originModule: Module,
+      dependency: Null,
+      module: Module,
+      explanation: String,
+      weak: Unit,
+      condition: `false`
+    ) = this()
+    def this(
+      originModule: Module,
+      dependency: Null,
+      module: Module,
+      explanation: Unit,
+      weak: Boolean,
+      condition: js.Function2[
+            /* arg0 */ typings.webpack.mod.ModuleGraphConnection, 
+            /* arg1 */ RuntimeSpec, 
+            ConnectionState
+          ]
+    ) = this()
+    def this(
+      originModule: Module,
+      dependency: Null,
+      module: Module,
+      explanation: Unit,
+      weak: Boolean,
+      condition: `false`
+    ) = this()
+    def this(
+      originModule: Module,
+      dependency: Null,
+      module: Module,
+      explanation: Unit,
+      weak: Unit,
+      condition: js.Function2[
+            /* arg0 */ typings.webpack.mod.ModuleGraphConnection, 
+            /* arg1 */ RuntimeSpec, 
+            ConnectionState
+          ]
+    ) = this()
+    def this(
+      originModule: Module,
+      dependency: Null,
+      module: Module,
+      explanation: Unit,
+      weak: Unit,
+      condition: `false`
+    ) = this()
+    def this(
+      originModule: Module,
+      dependency: Dependency,
+      module: Module,
+      explanation: String,
+      weak: Boolean,
+      condition: js.Function2[
+            /* arg0 */ typings.webpack.mod.ModuleGraphConnection, 
+            /* arg1 */ RuntimeSpec, 
+            ConnectionState
+          ]
+    ) = this()
+    def this(
+      originModule: Module,
+      dependency: Dependency,
+      module: Module,
+      explanation: String,
+      weak: Boolean,
+      condition: `false`
+    ) = this()
+    def this(
+      originModule: Module,
+      dependency: Dependency,
+      module: Module,
+      explanation: String,
+      weak: Unit,
+      condition: js.Function2[
+            /* arg0 */ typings.webpack.mod.ModuleGraphConnection, 
+            /* arg1 */ RuntimeSpec, 
+            ConnectionState
+          ]
+    ) = this()
+    def this(
+      originModule: Module,
+      dependency: Dependency,
+      module: Module,
+      explanation: String,
+      weak: Unit,
+      condition: `false`
+    ) = this()
+    def this(
+      originModule: Module,
+      dependency: Dependency,
+      module: Module,
+      explanation: Unit,
+      weak: Boolean,
+      condition: js.Function2[
+            /* arg0 */ typings.webpack.mod.ModuleGraphConnection, 
+            /* arg1 */ RuntimeSpec, 
+            ConnectionState
+          ]
+    ) = this()
+    def this(
+      originModule: Module,
+      dependency: Dependency,
+      module: Module,
+      explanation: Unit,
+      weak: Boolean,
+      condition: `false`
+    ) = this()
+    def this(
+      originModule: Module,
+      dependency: Dependency,
+      module: Module,
+      explanation: Unit,
+      weak: Unit,
+      condition: js.Function2[
+            /* arg0 */ typings.webpack.mod.ModuleGraphConnection, 
+            /* arg1 */ RuntimeSpec, 
+            ConnectionState
+          ]
+    ) = this()
+    def this(
+      originModule: Module,
+      dependency: Dependency,
+      module: Module,
+      explanation: Unit,
+      weak: Unit,
+      condition: `false`
+    ) = this()
+  }
+  /* static member */
+  /* was `typeof ModuleGraphConnection` */
+  @JSImport("webpack", "ModuleGraph.ModuleGraphConnection")
+  @js.native
+  def ModuleGraphConnection: TypeofModuleGraphConnecti & (Instantiable6[
+    /* originModule */ Null | Module, 
+    /* dependency */ Null | Dependency, 
+    /* module */ Module, 
+    /* explanation */ js.UndefOr[String], 
+    /* weak */ js.UndefOr[Boolean], 
+    /* condition */ js.UndefOr[
+      `false` | (js.Function2[
+        /* arg0 */ typings.webpack.mod.ModuleGraphConnection, 
+        /* arg1 */ RuntimeSpec, 
+        ConnectionState
+      ])
+    ], 
+    typings.webpack.mod.ModuleGraphConnection
+  ]) = js.native
+  inline def ModuleGraphConnection_=(
+    x: TypeofModuleGraphConnecti & (Instantiable6[
+      /* originModule */ Null | Module, 
+      /* dependency */ Null | Dependency, 
+      /* module */ Module, 
+      /* explanation */ js.UndefOr[String], 
+      /* weak */ js.UndefOr[Boolean], 
+      /* condition */ js.UndefOr[
+        `false` | (js.Function2[
+          /* arg0 */ typings.webpack.mod.ModuleGraphConnection, 
+          /* arg1 */ RuntimeSpec, 
+          ConnectionState
+        ])
+      ], 
+      typings.webpack.mod.ModuleGraphConnection
+    ])
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ModuleGraphConnection")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  inline def clearModuleGraphForModule(module: Module): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearModuleGraphForModule")(module.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  /* static member */
+  inline def getModuleGraphForModule(module: Module, deprecateMessage: String, deprecationCode: String): ModuleGraph = (^.asInstanceOf[js.Dynamic].applyDynamic("getModuleGraphForModule")(module.asInstanceOf[js.Any], deprecateMessage.asInstanceOf[js.Any], deprecationCode.asInstanceOf[js.Any])).asInstanceOf[ModuleGraph]
+  
+  /* static member */
+  inline def setModuleGraphForModule(module: Module, moduleGraph: ModuleGraph): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setModuleGraphForModule")(module.asInstanceOf[js.Any], moduleGraph.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

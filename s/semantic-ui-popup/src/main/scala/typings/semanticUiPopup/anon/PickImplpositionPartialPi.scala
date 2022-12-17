@@ -94,7 +94,7 @@ trait PickImplpositionPartialPi
   
   var popup: js.UndefOr[`false` | String | JQuery] = js.undefined
   
-  var position: String & js.UndefOr[String]
+  var position: String
   
   var prefer: js.UndefOr[adjacent | opposite] = js.undefined
   
@@ -120,7 +120,7 @@ trait PickImplpositionPartialPi
 }
 object PickImplpositionPartialPi {
   
-  inline def apply(position: String & js.UndefOr[String]): PickImplpositionPartialPi = {
+  inline def apply(position: String): PickImplpositionPartialPi = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplpositionPartialPi]
   }
@@ -267,7 +267,7 @@ object PickImplpositionPartialPi {
     
     inline def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
     
-    inline def setPosition(value: String & js.UndefOr[String]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     inline def setPrefer(value: adjacent | opposite): Self = StObject.set(x, "prefer", value.asInstanceOf[js.Any])
     

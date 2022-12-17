@@ -968,7 +968,7 @@ object distCoreMod {
     @JSName("$data")
     var $data: js.UndefOr[Boolean] = js.undefined
     
-    var addUsedSchema: js.UndefOr[Boolean] & NonNullable[js.UndefOr[Boolean]]
+    var addUsedSchema: js.UndefOr[Boolean] = js.undefined
     
     var allErrors: js.UndefOr[Boolean] = js.undefined
     
@@ -978,7 +978,7 @@ object distCoreMod {
     
     var allowUnionTypes: js.UndefOr[Boolean] = js.undefined
     
-    var code: js.UndefOr[CodeOptions] & InstanceCodeOptions
+    var code: js.UndefOr[CodeOptions] = js.undefined
     
     var coerceTypes: js.UndefOr[Boolean | array] = js.undefined
     
@@ -995,9 +995,9 @@ object distCoreMod {
     /** @deprecated */
     var ignoreKeywordsWithRef: js.UndefOr[Boolean] = js.undefined
     
-    var inlineRefs: (js.UndefOr[Boolean | Double]) & (NonNullable[js.UndefOr[Boolean | Double]])
+    var inlineRefs: js.UndefOr[Boolean | Double] = js.undefined
     
-    var int32range: js.UndefOr[Boolean] & NonNullable[js.UndefOr[Boolean]]
+    var int32range: js.UndefOr[Boolean] = js.undefined
     
     /** @deprecated */
     var jsPropertySyntax: js.UndefOr[Boolean] = js.undefined
@@ -1010,13 +1010,13 @@ object distCoreMod {
     
     var logger: js.UndefOr[Logger | `false`] = js.undefined
     
-    var loopEnum: js.UndefOr[Double] & NonNullable[js.UndefOr[Double]]
+    var loopEnum: js.UndefOr[Double] = js.undefined
     
-    var loopRequired: js.UndefOr[Double] & NonNullable[js.UndefOr[Double]]
+    var loopRequired: js.UndefOr[Double] = js.undefined
     
-    var messages: js.UndefOr[Boolean] & NonNullable[js.UndefOr[Boolean]]
+    var messages: js.UndefOr[Boolean] = js.undefined
     
-    var meta: (js.UndefOr[SchemaObject | Boolean]) & (NonNullable[js.UndefOr[SchemaObject | Boolean]])
+    var meta: js.UndefOr[SchemaObject | Boolean] = js.undefined
     
     var multipleOfPrecision: js.UndefOr[Double] = js.undefined
     
@@ -1030,7 +1030,7 @@ object distCoreMod {
     
     var removeAdditional: js.UndefOr[Boolean | all | failing] = js.undefined
     
-    var schemaId: (js.UndefOr[id | $id]) & (NonNullable[js.UndefOr[id | $id]])
+    var schemaId: js.UndefOr[id | $id] = js.undefined
     
     var schemas: js.UndefOr[
         js.Array[AnySchema] | (/* import warning: importer.ImportType#apply Failed type conversion: {[ Key in string ]:? ajv.ajv/dist/types.AnySchema} */ js.Any)
@@ -1038,15 +1038,15 @@ object distCoreMod {
     
     var strict: js.UndefOr[Boolean | log] = js.undefined
     
-    var strictNumbers: (js.UndefOr[Boolean | log]) & (NonNullable[js.UndefOr[Boolean | log]])
+    var strictNumbers: js.UndefOr[Boolean | log] = js.undefined
     
-    var strictRequired: (js.UndefOr[Boolean | log]) & (NonNullable[js.UndefOr[Boolean | log]])
+    var strictRequired: js.UndefOr[Boolean | log] = js.undefined
     
-    var strictSchema: (js.UndefOr[Boolean | log]) & (NonNullable[js.UndefOr[Boolean | log]])
+    var strictSchema: js.UndefOr[Boolean | log] = js.undefined
     
-    var strictTuples: (js.UndefOr[Boolean | log]) & (NonNullable[js.UndefOr[Boolean | log]])
+    var strictTuples: js.UndefOr[Boolean | log] = js.undefined
     
-    var strictTypes: (js.UndefOr[Boolean | log]) & (NonNullable[js.UndefOr[Boolean | log]])
+    var strictTypes: js.UndefOr[Boolean | log] = js.undefined
     
     var timestamp: js.UndefOr[string | date] = js.undefined
     
@@ -1055,41 +1055,22 @@ object distCoreMod {
     /** @deprecated */
     var unicode: js.UndefOr[Boolean] = js.undefined
     
-    var unicodeRegExp: js.UndefOr[Boolean] & NonNullable[js.UndefOr[Boolean]]
+    var unicodeRegExp: js.UndefOr[Boolean] = js.undefined
     
-    var uriResolver: js.UndefOr[UriResolver] & NonNullable[js.UndefOr[UriResolver]]
+    var uriResolver: js.UndefOr[UriResolver] = js.undefined
     
     var useDefaults: js.UndefOr[Boolean | empty] = js.undefined
     
-    var validateFormats: js.UndefOr[Boolean] & NonNullable[js.UndefOr[Boolean]]
+    var validateFormats: js.UndefOr[Boolean] = js.undefined
     
-    var validateSchema: (js.UndefOr[Boolean | log]) & (NonNullable[js.UndefOr[Boolean | log]])
+    var validateSchema: js.UndefOr[Boolean | log] = js.undefined
     
     var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object InstanceOptions {
     
-    inline def apply(
-      addUsedSchema: js.UndefOr[Boolean] & NonNullable[js.UndefOr[Boolean]],
-      code: js.UndefOr[CodeOptions] & InstanceCodeOptions,
-      inlineRefs: (js.UndefOr[Boolean | Double]) & (NonNullable[js.UndefOr[Boolean | Double]]),
-      int32range: js.UndefOr[Boolean] & NonNullable[js.UndefOr[Boolean]],
-      loopEnum: js.UndefOr[Double] & NonNullable[js.UndefOr[Double]],
-      loopRequired: js.UndefOr[Double] & NonNullable[js.UndefOr[Double]],
-      messages: js.UndefOr[Boolean] & NonNullable[js.UndefOr[Boolean]],
-      meta: (js.UndefOr[SchemaObject | Boolean]) & (NonNullable[js.UndefOr[SchemaObject | Boolean]]),
-      schemaId: (js.UndefOr[id | $id]) & (NonNullable[js.UndefOr[id | $id]]),
-      strictNumbers: (js.UndefOr[Boolean | log]) & (NonNullable[js.UndefOr[Boolean | log]]),
-      strictRequired: (js.UndefOr[Boolean | log]) & (NonNullable[js.UndefOr[Boolean | log]]),
-      strictSchema: (js.UndefOr[Boolean | log]) & (NonNullable[js.UndefOr[Boolean | log]]),
-      strictTuples: (js.UndefOr[Boolean | log]) & (NonNullable[js.UndefOr[Boolean | log]]),
-      strictTypes: (js.UndefOr[Boolean | log]) & (NonNullable[js.UndefOr[Boolean | log]]),
-      unicodeRegExp: js.UndefOr[Boolean] & NonNullable[js.UndefOr[Boolean]],
-      uriResolver: js.UndefOr[UriResolver] & NonNullable[js.UndefOr[UriResolver]],
-      validateFormats: js.UndefOr[Boolean] & NonNullable[js.UndefOr[Boolean]],
-      validateSchema: (js.UndefOr[Boolean | log]) & (NonNullable[js.UndefOr[Boolean | log]])
-    ): InstanceOptions = {
-      val __obj = js.Dynamic.literal(addUsedSchema = addUsedSchema.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], inlineRefs = inlineRefs.asInstanceOf[js.Any], int32range = int32range.asInstanceOf[js.Any], loopEnum = loopEnum.asInstanceOf[js.Any], loopRequired = loopRequired.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], schemaId = schemaId.asInstanceOf[js.Any], strictNumbers = strictNumbers.asInstanceOf[js.Any], strictRequired = strictRequired.asInstanceOf[js.Any], strictSchema = strictSchema.asInstanceOf[js.Any], strictTuples = strictTuples.asInstanceOf[js.Any], strictTypes = strictTypes.asInstanceOf[js.Any], unicodeRegExp = unicodeRegExp.asInstanceOf[js.Any], uriResolver = uriResolver.asInstanceOf[js.Any], validateFormats = validateFormats.asInstanceOf[js.Any], validateSchema = validateSchema.asInstanceOf[js.Any])
+    inline def apply(): InstanceOptions = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InstanceOptions]
     }
     
@@ -1114,7 +1095,9 @@ object distCoreMod {
       
       inline def set$dataUndefined: Self = StObject.set(x, "$data", js.undefined)
       
-      inline def setAddUsedSchema(value: js.UndefOr[Boolean] & NonNullable[js.UndefOr[Boolean]]): Self = StObject.set(x, "addUsedSchema", value.asInstanceOf[js.Any])
+      inline def setAddUsedSchema(value: Boolean): Self = StObject.set(x, "addUsedSchema", value.asInstanceOf[js.Any])
+      
+      inline def setAddUsedSchemaUndefined: Self = StObject.set(x, "addUsedSchema", js.undefined)
       
       inline def setAllErrors(value: Boolean): Self = StObject.set(x, "allErrors", value.asInstanceOf[js.Any])
       
@@ -1132,7 +1115,9 @@ object distCoreMod {
       
       inline def setAllowUnionTypesUndefined: Self = StObject.set(x, "allowUnionTypes", js.undefined)
       
-      inline def setCode(value: js.UndefOr[CodeOptions] & InstanceCodeOptions): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: CodeOptions): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
       inline def setCoerceTypes(value: Boolean | array): Self = StObject.set(x, "coerceTypes", value.asInstanceOf[js.Any])
       
@@ -1160,9 +1145,13 @@ object distCoreMod {
       
       inline def setIgnoreKeywordsWithRefUndefined: Self = StObject.set(x, "ignoreKeywordsWithRef", js.undefined)
       
-      inline def setInlineRefs(value: (js.UndefOr[Boolean | Double]) & (NonNullable[js.UndefOr[Boolean | Double]])): Self = StObject.set(x, "inlineRefs", value.asInstanceOf[js.Any])
+      inline def setInlineRefs(value: Boolean | Double): Self = StObject.set(x, "inlineRefs", value.asInstanceOf[js.Any])
       
-      inline def setInt32range(value: js.UndefOr[Boolean] & NonNullable[js.UndefOr[Boolean]]): Self = StObject.set(x, "int32range", value.asInstanceOf[js.Any])
+      inline def setInlineRefsUndefined: Self = StObject.set(x, "inlineRefs", js.undefined)
+      
+      inline def setInt32range(value: Boolean): Self = StObject.set(x, "int32range", value.asInstanceOf[js.Any])
+      
+      inline def setInt32rangeUndefined: Self = StObject.set(x, "int32range", js.undefined)
       
       inline def setJsPropertySyntax(value: Boolean): Self = StObject.set(x, "jsPropertySyntax", value.asInstanceOf[js.Any])
       
@@ -1186,13 +1175,21 @@ object distCoreMod {
       
       inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      inline def setLoopEnum(value: js.UndefOr[Double] & NonNullable[js.UndefOr[Double]]): Self = StObject.set(x, "loopEnum", value.asInstanceOf[js.Any])
+      inline def setLoopEnum(value: Double): Self = StObject.set(x, "loopEnum", value.asInstanceOf[js.Any])
       
-      inline def setLoopRequired(value: js.UndefOr[Double] & NonNullable[js.UndefOr[Double]]): Self = StObject.set(x, "loopRequired", value.asInstanceOf[js.Any])
+      inline def setLoopEnumUndefined: Self = StObject.set(x, "loopEnum", js.undefined)
       
-      inline def setMessages(value: js.UndefOr[Boolean] & NonNullable[js.UndefOr[Boolean]]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      inline def setLoopRequired(value: Double): Self = StObject.set(x, "loopRequired", value.asInstanceOf[js.Any])
       
-      inline def setMeta(value: (js.UndefOr[SchemaObject | Boolean]) & (NonNullable[js.UndefOr[SchemaObject | Boolean]])): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setLoopRequiredUndefined: Self = StObject.set(x, "loopRequired", js.undefined)
+      
+      inline def setMessages(value: Boolean): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      
+      inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+      
+      inline def setMeta(value: SchemaObject | Boolean): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      
+      inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
       
       inline def setMultipleOfPrecision(value: Double): Self = StObject.set(x, "multipleOfPrecision", value.asInstanceOf[js.Any])
       
@@ -1218,7 +1215,9 @@ object distCoreMod {
       
       inline def setRemoveAdditionalUndefined: Self = StObject.set(x, "removeAdditional", js.undefined)
       
-      inline def setSchemaId(value: (js.UndefOr[id | $id]) & (NonNullable[js.UndefOr[id | $id]])): Self = StObject.set(x, "schemaId", value.asInstanceOf[js.Any])
+      inline def setSchemaId(value: id | $id): Self = StObject.set(x, "schemaId", value.asInstanceOf[js.Any])
+      
+      inline def setSchemaIdUndefined: Self = StObject.set(x, "schemaId", js.undefined)
       
       inline def setSchemas(
         value: js.Array[AnySchema] | (/* import warning: importer.ImportType#apply Failed type conversion: {[ Key in string ]:? ajv.ajv/dist/types.AnySchema} */ js.Any)
@@ -1230,15 +1229,25 @@ object distCoreMod {
       
       inline def setStrict(value: Boolean | log): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      inline def setStrictNumbers(value: (js.UndefOr[Boolean | log]) & (NonNullable[js.UndefOr[Boolean | log]])): Self = StObject.set(x, "strictNumbers", value.asInstanceOf[js.Any])
+      inline def setStrictNumbers(value: Boolean | log): Self = StObject.set(x, "strictNumbers", value.asInstanceOf[js.Any])
       
-      inline def setStrictRequired(value: (js.UndefOr[Boolean | log]) & (NonNullable[js.UndefOr[Boolean | log]])): Self = StObject.set(x, "strictRequired", value.asInstanceOf[js.Any])
+      inline def setStrictNumbersUndefined: Self = StObject.set(x, "strictNumbers", js.undefined)
       
-      inline def setStrictSchema(value: (js.UndefOr[Boolean | log]) & (NonNullable[js.UndefOr[Boolean | log]])): Self = StObject.set(x, "strictSchema", value.asInstanceOf[js.Any])
+      inline def setStrictRequired(value: Boolean | log): Self = StObject.set(x, "strictRequired", value.asInstanceOf[js.Any])
       
-      inline def setStrictTuples(value: (js.UndefOr[Boolean | log]) & (NonNullable[js.UndefOr[Boolean | log]])): Self = StObject.set(x, "strictTuples", value.asInstanceOf[js.Any])
+      inline def setStrictRequiredUndefined: Self = StObject.set(x, "strictRequired", js.undefined)
       
-      inline def setStrictTypes(value: (js.UndefOr[Boolean | log]) & (NonNullable[js.UndefOr[Boolean | log]])): Self = StObject.set(x, "strictTypes", value.asInstanceOf[js.Any])
+      inline def setStrictSchema(value: Boolean | log): Self = StObject.set(x, "strictSchema", value.asInstanceOf[js.Any])
+      
+      inline def setStrictSchemaUndefined: Self = StObject.set(x, "strictSchema", js.undefined)
+      
+      inline def setStrictTuples(value: Boolean | log): Self = StObject.set(x, "strictTuples", value.asInstanceOf[js.Any])
+      
+      inline def setStrictTuplesUndefined: Self = StObject.set(x, "strictTuples", js.undefined)
+      
+      inline def setStrictTypes(value: Boolean | log): Self = StObject.set(x, "strictTypes", value.asInstanceOf[js.Any])
+      
+      inline def setStrictTypesUndefined: Self = StObject.set(x, "strictTypes", js.undefined)
       
       inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
       
@@ -1252,19 +1261,27 @@ object distCoreMod {
       
       inline def setUnicode(value: Boolean): Self = StObject.set(x, "unicode", value.asInstanceOf[js.Any])
       
-      inline def setUnicodeRegExp(value: js.UndefOr[Boolean] & NonNullable[js.UndefOr[Boolean]]): Self = StObject.set(x, "unicodeRegExp", value.asInstanceOf[js.Any])
+      inline def setUnicodeRegExp(value: Boolean): Self = StObject.set(x, "unicodeRegExp", value.asInstanceOf[js.Any])
+      
+      inline def setUnicodeRegExpUndefined: Self = StObject.set(x, "unicodeRegExp", js.undefined)
       
       inline def setUnicodeUndefined: Self = StObject.set(x, "unicode", js.undefined)
       
-      inline def setUriResolver(value: js.UndefOr[UriResolver] & NonNullable[js.UndefOr[UriResolver]]): Self = StObject.set(x, "uriResolver", value.asInstanceOf[js.Any])
+      inline def setUriResolver(value: UriResolver): Self = StObject.set(x, "uriResolver", value.asInstanceOf[js.Any])
+      
+      inline def setUriResolverUndefined: Self = StObject.set(x, "uriResolver", js.undefined)
       
       inline def setUseDefaults(value: Boolean | empty): Self = StObject.set(x, "useDefaults", value.asInstanceOf[js.Any])
       
       inline def setUseDefaultsUndefined: Self = StObject.set(x, "useDefaults", js.undefined)
       
-      inline def setValidateFormats(value: js.UndefOr[Boolean] & NonNullable[js.UndefOr[Boolean]]): Self = StObject.set(x, "validateFormats", value.asInstanceOf[js.Any])
+      inline def setValidateFormats(value: Boolean): Self = StObject.set(x, "validateFormats", value.asInstanceOf[js.Any])
       
-      inline def setValidateSchema(value: (js.UndefOr[Boolean | log]) & (NonNullable[js.UndefOr[Boolean | log]])): Self = StObject.set(x, "validateSchema", value.asInstanceOf[js.Any])
+      inline def setValidateFormatsUndefined: Self = StObject.set(x, "validateFormats", js.undefined)
+      
+      inline def setValidateSchema(value: Boolean | log): Self = StObject.set(x, "validateSchema", value.asInstanceOf[js.Any])
+      
+      inline def setValidateSchemaUndefined: Self = StObject.set(x, "validateSchema", js.undefined)
       
       inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
@@ -1359,27 +1376,8 @@ object distCoreMod {
   }
   object RequiredInstanceOptions {
     
-    inline def apply(
-      addUsedSchema: NonNullable[js.UndefOr[Boolean]],
-      code: InstanceCodeOptions,
-      inlineRefs: NonNullable[js.UndefOr[Boolean | Double]],
-      int32range: NonNullable[js.UndefOr[Boolean]],
-      loopEnum: NonNullable[js.UndefOr[Double]],
-      loopRequired: NonNullable[js.UndefOr[Double]],
-      messages: NonNullable[js.UndefOr[Boolean]],
-      meta: NonNullable[js.UndefOr[SchemaObject | Boolean]],
-      schemaId: NonNullable[js.UndefOr[id | $id]],
-      strictNumbers: NonNullable[js.UndefOr[Boolean | log]],
-      strictRequired: NonNullable[js.UndefOr[Boolean | log]],
-      strictSchema: NonNullable[js.UndefOr[Boolean | log]],
-      strictTuples: NonNullable[js.UndefOr[Boolean | log]],
-      strictTypes: NonNullable[js.UndefOr[Boolean | log]],
-      unicodeRegExp: NonNullable[js.UndefOr[Boolean]],
-      uriResolver: NonNullable[js.UndefOr[UriResolver]],
-      validateFormats: NonNullable[js.UndefOr[Boolean]],
-      validateSchema: NonNullable[js.UndefOr[Boolean | log]]
-    ): RequiredInstanceOptions = {
-      val __obj = js.Dynamic.literal(addUsedSchema = addUsedSchema.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], inlineRefs = inlineRefs.asInstanceOf[js.Any], int32range = int32range.asInstanceOf[js.Any], loopEnum = loopEnum.asInstanceOf[js.Any], loopRequired = loopRequired.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], schemaId = schemaId.asInstanceOf[js.Any], strictNumbers = strictNumbers.asInstanceOf[js.Any], strictRequired = strictRequired.asInstanceOf[js.Any], strictSchema = strictSchema.asInstanceOf[js.Any], strictTuples = strictTuples.asInstanceOf[js.Any], strictTypes = strictTypes.asInstanceOf[js.Any], unicodeRegExp = unicodeRegExp.asInstanceOf[js.Any], uriResolver = uriResolver.asInstanceOf[js.Any], validateFormats = validateFormats.asInstanceOf[js.Any], validateSchema = validateSchema.asInstanceOf[js.Any])
+    inline def apply(code: InstanceCodeOptions): RequiredInstanceOptions = {
+      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequiredInstanceOptions]
     }
     
@@ -1387,39 +1385,73 @@ object distCoreMod {
       
       inline def setAddUsedSchema(value: NonNullable[js.UndefOr[Boolean]]): Self = StObject.set(x, "addUsedSchema", value.asInstanceOf[js.Any])
       
+      inline def setAddUsedSchemaUndefined: Self = StObject.set(x, "addUsedSchema", js.undefined)
+      
       inline def setCode(value: InstanceCodeOptions): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
       inline def setInlineRefs(value: NonNullable[js.UndefOr[Boolean | Double]]): Self = StObject.set(x, "inlineRefs", value.asInstanceOf[js.Any])
       
+      inline def setInlineRefsUndefined: Self = StObject.set(x, "inlineRefs", js.undefined)
+      
       inline def setInt32range(value: NonNullable[js.UndefOr[Boolean]]): Self = StObject.set(x, "int32range", value.asInstanceOf[js.Any])
+      
+      inline def setInt32rangeUndefined: Self = StObject.set(x, "int32range", js.undefined)
       
       inline def setLoopEnum(value: NonNullable[js.UndefOr[Double]]): Self = StObject.set(x, "loopEnum", value.asInstanceOf[js.Any])
       
+      inline def setLoopEnumUndefined: Self = StObject.set(x, "loopEnum", js.undefined)
+      
       inline def setLoopRequired(value: NonNullable[js.UndefOr[Double]]): Self = StObject.set(x, "loopRequired", value.asInstanceOf[js.Any])
+      
+      inline def setLoopRequiredUndefined: Self = StObject.set(x, "loopRequired", js.undefined)
       
       inline def setMessages(value: NonNullable[js.UndefOr[Boolean]]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
+      inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+      
       inline def setMeta(value: NonNullable[js.UndefOr[SchemaObject | Boolean]]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      
+      inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
       
       inline def setSchemaId(value: NonNullable[js.UndefOr[id | $id]]): Self = StObject.set(x, "schemaId", value.asInstanceOf[js.Any])
       
+      inline def setSchemaIdUndefined: Self = StObject.set(x, "schemaId", js.undefined)
+      
       inline def setStrictNumbers(value: NonNullable[js.UndefOr[Boolean | log]]): Self = StObject.set(x, "strictNumbers", value.asInstanceOf[js.Any])
+      
+      inline def setStrictNumbersUndefined: Self = StObject.set(x, "strictNumbers", js.undefined)
       
       inline def setStrictRequired(value: NonNullable[js.UndefOr[Boolean | log]]): Self = StObject.set(x, "strictRequired", value.asInstanceOf[js.Any])
       
+      inline def setStrictRequiredUndefined: Self = StObject.set(x, "strictRequired", js.undefined)
+      
       inline def setStrictSchema(value: NonNullable[js.UndefOr[Boolean | log]]): Self = StObject.set(x, "strictSchema", value.asInstanceOf[js.Any])
+      
+      inline def setStrictSchemaUndefined: Self = StObject.set(x, "strictSchema", js.undefined)
       
       inline def setStrictTuples(value: NonNullable[js.UndefOr[Boolean | log]]): Self = StObject.set(x, "strictTuples", value.asInstanceOf[js.Any])
       
+      inline def setStrictTuplesUndefined: Self = StObject.set(x, "strictTuples", js.undefined)
+      
       inline def setStrictTypes(value: NonNullable[js.UndefOr[Boolean | log]]): Self = StObject.set(x, "strictTypes", value.asInstanceOf[js.Any])
+      
+      inline def setStrictTypesUndefined: Self = StObject.set(x, "strictTypes", js.undefined)
       
       inline def setUnicodeRegExp(value: NonNullable[js.UndefOr[Boolean]]): Self = StObject.set(x, "unicodeRegExp", value.asInstanceOf[js.Any])
       
+      inline def setUnicodeRegExpUndefined: Self = StObject.set(x, "unicodeRegExp", js.undefined)
+      
       inline def setUriResolver(value: NonNullable[js.UndefOr[UriResolver]]): Self = StObject.set(x, "uriResolver", value.asInstanceOf[js.Any])
+      
+      inline def setUriResolverUndefined: Self = StObject.set(x, "uriResolver", js.undefined)
       
       inline def setValidateFormats(value: NonNullable[js.UndefOr[Boolean]]): Self = StObject.set(x, "validateFormats", value.asInstanceOf[js.Any])
       
+      inline def setValidateFormatsUndefined: Self = StObject.set(x, "validateFormats", js.undefined)
+      
       inline def setValidateSchema(value: NonNullable[js.UndefOr[Boolean | log]]): Self = StObject.set(x, "validateSchema", value.asInstanceOf[js.Any])
+      
+      inline def setValidateSchemaUndefined: Self = StObject.set(x, "validateSchema", js.undefined)
     }
   }
 }

@@ -15,7 +15,6 @@ import typings.chartJs.mod.AnimationsSpec
 import typings.chartJs.mod.ChartEvent
 import typings.chartJs.mod.ChartType
 import typings.chartJs.mod.CoreInteractionOptions
-import typings.chartJs.mod.DoughnutAnimationOptions
 import typings.chartJs.mod.ElementOptionsByType
 import typings.chartJs.mod.PluginOptionsByType
 import typings.chartJs.mod.ScaleOptionsByType
@@ -31,7 +30,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined chart.js.chart.js.CoreChartOptions<'doughnut'> & chart.js.chart.js.ElementChartOptions<'doughnut'> & chart.js.chart.js.PluginChartOptions<'doughnut'> & chart.js.chart.js.DatasetChartOptions<chart.js.chart.js.ChartType> & chart.js.chart.js.ScaleChartOptions<'doughnut'> & chart.js.chart.js.DoughnutControllerChartOptions */
 trait CoreChartOptionsdoughnutE extends StObject {
   
-  var animation: (`false` | AnimationSpecdoughnutonPr) & (`false` | DoughnutAnimationOptions)
+  var animation: `false` | AnimationSpecdoughnutonPr
   
   var animations: AnimationsSpec[doughnut]
   
@@ -221,7 +220,7 @@ trait CoreChartOptionsdoughnutE extends StObject {
 object CoreChartOptionsdoughnutE {
   
   inline def apply(
-    animation: (`false` | AnimationSpecdoughnutonPr) & (`false` | DoughnutAnimationOptions),
+    animation: `false` | AnimationSpecdoughnutonPr,
     animations: AnimationsSpec[doughnut],
     aspectRatio: Double,
     backgroundColor: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]],
@@ -272,7 +271,7 @@ object CoreChartOptionsdoughnutE {
   
   extension [Self <: CoreChartOptionsdoughnutE](x: Self) {
     
-    inline def setAnimation(value: (`false` | AnimationSpecdoughnutonPr) & (`false` | DoughnutAnimationOptions)): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: `false` | AnimationSpecdoughnutonPr): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     inline def setAnimations(value: AnimationsSpec[doughnut]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     

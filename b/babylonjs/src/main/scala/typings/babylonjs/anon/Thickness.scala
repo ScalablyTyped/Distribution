@@ -18,6 +18,8 @@ trait Thickness extends StObject {
   var tessellation: js.UndefOr[Double] = js.undefined
   
   var thickness: js.UndefOr[Double] = js.undefined
+  
+  var updatable: js.UndefOr[Boolean] = js.undefined
 }
 object Thickness {
   
@@ -51,5 +53,9 @@ object Thickness {
     inline def setThickness(value: Double): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
     
     inline def setThicknessUndefined: Self = StObject.set(x, "thickness", js.undefined)
+    
+    inline def setUpdatable(value: Boolean): Self = StObject.set(x, "updatable", value.asInstanceOf[js.Any])
+    
+    inline def setUpdatableUndefined: Self = StObject.set(x, "updatable", js.undefined)
   }
 }

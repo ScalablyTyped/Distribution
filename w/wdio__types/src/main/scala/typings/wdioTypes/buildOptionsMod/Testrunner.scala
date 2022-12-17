@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.NonNullable
 import typings.std.Record
 import typings.wdioTypes.anon.Http
-import typings.wdioTypes.anon.OmitTestrunnercapabilitieAfter
+import typings.wdioTypes.anon.OmitTestrunnercapabilitie
 import typings.wdioTypes.buildCapabilitiesMod.DesiredCapabilities
 import typings.wdioTypes.buildCapabilitiesMod.RemoteCapabilities
 import typings.wdioTypes.buildCapabilitiesMod.RemoteCapability
@@ -162,7 +162,7 @@ trait Testrunner extends StObject {
   
   var beforeSession: js.UndefOr[
     (js.Function4[
-      /* config */ OmitTestrunnercapabilitieAfter, 
+      /* config */ OmitTestrunnercapabilitie, 
       /* capabilities */ RemoteCapability, 
       /* specs */ js.Array[String], 
       /* cid */ String, 
@@ -171,7 +171,7 @@ trait Testrunner extends StObject {
       NonNullable[
         js.UndefOr[
           js.Function4[
-            /* config */ OmitTestrunnercapabilitieAfter, 
+            /* config */ OmitTestrunnercapabilitie, 
             /* capabilities */ RemoteCapability, 
             /* specs */ js.Array[String], 
             /* cid */ String, 
@@ -302,7 +302,7 @@ trait Testrunner extends StObject {
   var onComplete: js.UndefOr[
     (js.Function4[
       /* exitCode */ Double, 
-      /* config */ OmitTestrunnercapabilitieAfter, 
+      /* config */ OmitTestrunnercapabilitie, 
       /* capabilities */ RemoteCapabilities, 
       /* results */ Any, 
       Unit
@@ -311,7 +311,7 @@ trait Testrunner extends StObject {
         js.UndefOr[
           js.Function4[
             /* exitCode */ Double, 
-            /* config */ OmitTestrunnercapabilitieAfter, 
+            /* config */ OmitTestrunnercapabilitie, 
             /* capabilities */ RemoteCapabilities, 
             /* results */ Any, 
             Unit
@@ -716,7 +716,7 @@ object Testrunner {
     
     inline def setBeforeSession(
       value: (js.Function4[
-          /* config */ OmitTestrunnercapabilitieAfter, 
+          /* config */ OmitTestrunnercapabilitie, 
           /* capabilities */ RemoteCapability, 
           /* specs */ js.Array[String], 
           /* cid */ String, 
@@ -725,7 +725,7 @@ object Testrunner {
           NonNullable[
             js.UndefOr[
               js.Function4[
-                /* config */ OmitTestrunnercapabilitieAfter, 
+                /* config */ OmitTestrunnercapabilitie, 
                 /* capabilities */ RemoteCapability, 
                 /* specs */ js.Array[String], 
                 /* cid */ String, 
@@ -737,7 +737,7 @@ object Testrunner {
     ): Self = StObject.set(x, "beforeSession", value.asInstanceOf[js.Any])
     
     inline def setBeforeSessionFunction4(
-      value: (/* config */ OmitTestrunnercapabilitieAfter, /* capabilities */ RemoteCapability, /* specs */ js.Array[String], /* cid */ String) => Unit
+      value: (/* config */ OmitTestrunnercapabilitie, /* capabilities */ RemoteCapability, /* specs */ js.Array[String], /* cid */ String) => Unit
     ): Self = StObject.set(x, "beforeSession", js.Any.fromFunction4(value))
     
     inline def setBeforeSessionUndefined: Self = StObject.set(x, "beforeSession", js.undefined)
@@ -746,7 +746,7 @@ object Testrunner {
       value: (NonNullable[
           js.UndefOr[
             js.Function4[
-              /* config */ OmitTestrunnercapabilitieAfter, 
+              /* config */ OmitTestrunnercapabilitie, 
               /* capabilities */ RemoteCapability, 
               /* specs */ js.Array[String], 
               /* cid */ String, 
@@ -882,7 +882,7 @@ object Testrunner {
     inline def setOnComplete(
       value: (js.Function4[
           /* exitCode */ Double, 
-          /* config */ OmitTestrunnercapabilitieAfter, 
+          /* config */ OmitTestrunnercapabilitie, 
           /* capabilities */ RemoteCapabilities, 
           /* results */ Any, 
           Unit
@@ -891,7 +891,7 @@ object Testrunner {
             js.UndefOr[
               js.Function4[
                 /* exitCode */ Double, 
-                /* config */ OmitTestrunnercapabilitieAfter, 
+                /* config */ OmitTestrunnercapabilitie, 
                 /* capabilities */ RemoteCapabilities, 
                 /* results */ Any, 
                 Unit
@@ -902,7 +902,7 @@ object Testrunner {
     ): Self = StObject.set(x, "onComplete", value.asInstanceOf[js.Any])
     
     inline def setOnCompleteFunction4(
-      value: (/* exitCode */ Double, /* config */ OmitTestrunnercapabilitieAfter, /* capabilities */ RemoteCapabilities, /* results */ Any) => Unit
+      value: (/* exitCode */ Double, /* config */ OmitTestrunnercapabilitie, /* capabilities */ RemoteCapabilities, /* results */ Any) => Unit
     ): Self = StObject.set(x, "onComplete", js.Any.fromFunction4(value))
     
     inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
@@ -912,7 +912,7 @@ object Testrunner {
           js.UndefOr[
             js.Function4[
               /* exitCode */ Double, 
-              /* config */ OmitTestrunnercapabilitieAfter, 
+              /* config */ OmitTestrunnercapabilitie, 
               /* capabilities */ RemoteCapabilities, 
               /* results */ Any, 
               Unit

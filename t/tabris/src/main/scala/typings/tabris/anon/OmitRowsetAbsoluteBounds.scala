@@ -117,10 +117,10 @@ trait OmitRowsetAbsoluteBounds extends StObject {
   @JSName("_addChild")
   var _addChild_Original: js.Function2[/* child */ Widget[Any], /* index */ js.UndefOr[Double], Unit]
   
-  def _apply[Target](options: `27`[Target], rules: RuleSet[typings.tabris.global.tabris.widgets.Row]): typings.tabris.global.tabris.widgets.Row
+  def _apply[Target](options: `25`[Target], rules: RuleSet[typings.tabris.global.tabris.widgets.Row]): typings.tabris.global.tabris.widgets.Row
   @JSName("_apply")
   var _apply_Original: js.Function2[
-    /* options */ `27`[typings.tabris.global.tabris.widgets.Row], 
+    /* options */ `25`[typings.tabris.global.tabris.widgets.Row], 
     /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Row], 
     typings.tabris.global.tabris.widgets.Row
   ]
@@ -301,10 +301,10 @@ trait OmitRowsetAbsoluteBounds extends StObject {
   var append_Original: js.Function1[/* repeated */ Widget[Any], typings.tabris.global.tabris.widgets.Row]
   
   @JSName("apply")
-  def apply[Target](options: `27`[Target], rules: RuleSet[typings.tabris.global.tabris.widgets.Row]): typings.tabris.global.tabris.widgets.Row
+  def apply[Target](options: `25`[Target], rules: RuleSet[typings.tabris.global.tabris.widgets.Row]): typings.tabris.global.tabris.widgets.Row
   @JSName("apply")
   var apply_Original: js.Function2[
-    /* options */ `27`[typings.tabris.global.tabris.widgets.Row], 
+    /* options */ `25`[typings.tabris.global.tabris.widgets.Row], 
     /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Row], 
     typings.tabris.global.tabris.widgets.Row
   ]
@@ -585,7 +585,7 @@ object OmitRowsetAbsoluteBounds {
     $trigger: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Unit,
     _acceptChild: /* child */ Widget[Any] => Boolean,
     _addChild: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit,
-    _apply: (/* options */ `27`[typings.tabris.global.tabris.widgets.Row], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Row]) => typings.tabris.global.tabris.widgets.Row,
+    _apply: (/* options */ `25`[typings.tabris.global.tabris.widgets.Row], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Row]) => typings.tabris.global.tabris.widgets.Row,
     _checkDisposed: () => Unit,
     _checkLayout: /* value */ typings.tabris.mod.Layout => Unit,
     _children: /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]] => WidgetCollection[Widget[Any]],
@@ -627,7 +627,7 @@ object OmitRowsetAbsoluteBounds {
     animate: (/* properties */ Opacity, /* options */ AnimationOptions) => js.Promise[Unit],
     append: /* repeated */ Widget[Any] => typings.tabris.global.tabris.widgets.Row,
     appendTo: /* parent */ Composite[Widget[Any]] => typings.tabris.global.tabris.widgets.Row,
-    apply: (/* options */ `27`[typings.tabris.global.tabris.widgets.Row], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Row]) => typings.tabris.global.tabris.widgets.Row,
+    apply: (/* options */ `25`[typings.tabris.global.tabris.widgets.Row], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Row]) => typings.tabris.global.tabris.widgets.Row,
     baseline: SiblingReferenceValue | auto | `true`,
     bottom: ConstraintValue,
     bounds: Bounds,
@@ -752,7 +752,7 @@ object OmitRowsetAbsoluteBounds {
     inline def setAppendTo(value: /* parent */ Composite[Widget[Any]] => typings.tabris.global.tabris.widgets.Row): Self = StObject.set(x, "appendTo", js.Any.fromFunction1(value))
     
     inline def setApply(
-      value: (/* options */ `27`[typings.tabris.global.tabris.widgets.Row], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Row]) => typings.tabris.global.tabris.widgets.Row
+      value: (/* options */ `25`[typings.tabris.global.tabris.widgets.Row], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Row]) => typings.tabris.global.tabris.widgets.Row
     ): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
     
     inline def setBackground(value: LinearGradientValue | ColorValue | ImageValue): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
@@ -982,7 +982,7 @@ object OmitRowsetAbsoluteBounds {
     inline def set_addChild(value: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "_addChild", js.Any.fromFunction2(value))
     
     inline def set_apply(
-      value: (/* options */ `27`[typings.tabris.global.tabris.widgets.Row], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Row]) => typings.tabris.global.tabris.widgets.Row
+      value: (/* options */ `25`[typings.tabris.global.tabris.widgets.Row], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Row]) => typings.tabris.global.tabris.widgets.Row
     ): Self = StObject.set(x, "_apply", js.Any.fromFunction2(value))
     
     inline def set_checkDisposed(value: () => Unit): Self = StObject.set(x, "_checkDisposed", js.Any.fromFunction0(value))

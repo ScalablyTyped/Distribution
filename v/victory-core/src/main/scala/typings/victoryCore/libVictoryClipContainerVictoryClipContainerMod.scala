@@ -6,7 +6,7 @@ import typings.react.mod.DetailedReactHTMLElement
 import typings.react.mod.ReactElement
 import typings.std.HTMLElement
 import typings.victoryCore.anon.Arialabel
-import typings.victoryCore.anon.ClipPathComponent
+import typings.victoryCore.anon.CircleComponent
 import typings.victoryCore.anon.HeightWidth
 import typings.victoryCore.libVictoryLabelVictoryLabelMod.OriginType
 import typings.victoryCore.libVictoryThemeTypesMod.BlockProps
@@ -45,8 +45,8 @@ object libVictoryClipContainerVictoryClipContainerMod {
     
     @JSImport("victory-core/lib/victory-clip-container/victory-clip-container", "VictoryClipContainer.defaultProps")
     @js.native
-    def defaultProps: ClipPathComponent = js.native
-    inline def defaultProps_=(x: ClipPathComponent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: CircleComponent = js.native
+    inline def defaultProps_=(x: CircleComponent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("victory-core/lib/victory-clip-container/victory-clip-container", "VictoryClipContainer.displayName")
     @js.native

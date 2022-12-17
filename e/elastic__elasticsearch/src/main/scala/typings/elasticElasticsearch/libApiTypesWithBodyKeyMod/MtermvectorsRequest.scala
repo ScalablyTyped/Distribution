@@ -1,6 +1,5 @@
 package typings.elasticElasticsearch.libApiTypesWithBodyKeyMod
 
-import typings.elasticElasticsearch.anon.DocsIds
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ trait MtermvectorsRequest
      with SpecUtilsCommonQueryParameters {
   
   /** @deprecated The use of the 'body' key has been deprecated, move the nested keys to the top level object. */
-  var body: js.UndefOr[DocsIds] = js.undefined
+  var body: js.UndefOr[typings.elasticElasticsearch.anon.Ids] = js.undefined
   
   var field_statistics: js.UndefOr[Boolean] = js.undefined
   
@@ -45,7 +44,7 @@ object MtermvectorsRequest {
   
   extension [Self <: MtermvectorsRequest](x: Self) {
     
-    inline def setBody(value: DocsIds): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: typings.elasticElasticsearch.anon.Ids): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     

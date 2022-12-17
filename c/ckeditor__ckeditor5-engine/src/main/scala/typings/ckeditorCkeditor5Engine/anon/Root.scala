@@ -1,40 +1,46 @@
 package typings.ckeditorCkeditor5Engine.anon
 
+import typings.ckeditorCkeditor5Engine.srcModelPositionMod.PositionStickiness
+import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Root extends StObject {
   
-  var baseVersion: Double | Null
+  var path: js.Array[Double]
   
-  var key: String
+  var root: ReturnType[
+    /* import warning: importer.ImportType#apply Failed type conversion: @ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine/src/model/element.default['toJSON'] */ js.Any
+  ]
   
-  var newValue: Any
-  
-  var oldValue: Any
-  
-  var root: String
+  var stickiness: PositionStickiness
 }
 object Root {
   
-  inline def apply(key: String, newValue: Any, oldValue: Any, root: String): Root = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], baseVersion = null)
+  inline def apply(
+    path: js.Array[Double],
+    root: ReturnType[
+      /* import warning: importer.ImportType#apply Failed type conversion: @ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine/src/model/element.default['toJSON'] */ js.Any
+    ],
+    stickiness: PositionStickiness
+  ): Root = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], stickiness = stickiness.asInstanceOf[js.Any])
     __obj.asInstanceOf[Root]
   }
   
   extension [Self <: Root](x: Self) {
     
-    inline def setBaseVersion(value: Double): Self = StObject.set(x, "baseVersion", value.asInstanceOf[js.Any])
+    inline def setPath(value: js.Array[Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setBaseVersionNull: Self = StObject.set(x, "baseVersion", null)
+    inline def setPathVarargs(value: Double*): Self = StObject.set(x, "path", js.Array(value*))
     
-    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setRoot(
+      value: ReturnType[
+          /* import warning: importer.ImportType#apply Failed type conversion: @ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine/src/model/element.default['toJSON'] */ js.Any
+        ]
+    ): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    inline def setNewValue(value: Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
-    
-    inline def setOldValue(value: Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
-    
-    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setStickiness(value: PositionStickiness): Self = StObject.set(x, "stickiness", value.asInstanceOf[js.Any])
   }
 }

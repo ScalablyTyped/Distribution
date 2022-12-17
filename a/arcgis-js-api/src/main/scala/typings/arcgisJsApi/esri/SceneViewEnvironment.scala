@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.HashMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,10 +60,8 @@ trait SceneViewEnvironment
 }
 object SceneViewEnvironment {
   
-  inline def apply(
-    set: (js.UndefOr[js.Function2[/* propertyName */ String, /* value */ Any, SceneViewEnvironment]]) & (js.UndefOr[js.Function1[/* props */ HashMap[Any], SceneViewEnvironment]])
-  ): SceneViewEnvironment = {
-    val __obj = js.Dynamic.literal(set = set.asInstanceOf[js.Any])
+  inline def apply(): SceneViewEnvironment = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SceneViewEnvironment]
   }
   

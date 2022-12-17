@@ -120,9 +120,9 @@ trait OmitCanvasset extends StObject {
   @JSName("_addChild")
   var _addChild_Original: js.Function2[/* child */ Widget[Any], /* index */ js.UndefOr[Double], Unit]
   
-  def _apply[Target](options: Trigger[Target], rules: RuleSet[Canvas]): Canvas
+  def _apply[Target](options: Mode[Target], rules: RuleSet[Canvas]): Canvas
   @JSName("_apply")
-  var _apply_Original: js.Function2[/* options */ Trigger[Canvas], /* rules */ RuleSet[Canvas], Canvas]
+  var _apply_Original: js.Function2[/* options */ Mode[Canvas], /* rules */ RuleSet[Canvas], Canvas]
   
   def _checkDisposed(): Unit
   @JSName("_checkDisposed")
@@ -298,9 +298,9 @@ trait OmitCanvasset extends StObject {
   var append_Original: js.Function1[/* repeated */ Widget[Any], Canvas]
   
   @JSName("apply")
-  def apply[Target](options: Trigger[Target], rules: RuleSet[Canvas]): Canvas
+  def apply[Target](options: Mode[Target], rules: RuleSet[Canvas]): Canvas
   @JSName("apply")
-  var apply_Original: js.Function2[/* options */ Trigger[Canvas], /* rules */ RuleSet[Canvas], Canvas]
+  var apply_Original: js.Function2[/* options */ Mode[Canvas], /* rules */ RuleSet[Canvas], Canvas]
   
   var background: LinearGradientValue | ColorValue | ImageValue
   
@@ -599,7 +599,7 @@ object OmitCanvasset {
     $trigger: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Unit,
     _acceptChild: /* child */ Widget[Any] => Boolean,
     _addChild: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit,
-    _apply: (/* options */ Trigger[Canvas], /* rules */ RuleSet[Canvas]) => Canvas,
+    _apply: (/* options */ Mode[Canvas], /* rules */ RuleSet[Canvas]) => Canvas,
     _checkDisposed: () => Unit,
     _checkLayout: /* value */ typings.tabris.mod.Layout => Unit,
     _children: /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]] => WidgetCollection[Widget[Any]],
@@ -640,7 +640,7 @@ object OmitCanvasset {
     animate: (/* properties */ Opacity, /* options */ AnimationOptions) => js.Promise[Unit],
     append: /* repeated */ Widget[Any] => Canvas,
     appendTo: /* parent */ Composite[Widget[Any]] => Canvas,
-    apply: (/* options */ Trigger[Canvas], /* rules */ RuleSet[Canvas]) => Canvas,
+    apply: (/* options */ Mode[Canvas], /* rules */ RuleSet[Canvas]) => Canvas,
     baseline: SiblingReferenceValue | auto | `true`,
     bottom: ConstraintValue,
     bounds: Bounds,
@@ -762,7 +762,7 @@ object OmitCanvasset {
     
     inline def setAppendTo(value: /* parent */ Composite[Widget[Any]] => Canvas): Self = StObject.set(x, "appendTo", js.Any.fromFunction1(value))
     
-    inline def setApply(value: (/* options */ Trigger[Canvas], /* rules */ RuleSet[Canvas]) => Canvas): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
+    inline def setApply(value: (/* options */ Mode[Canvas], /* rules */ RuleSet[Canvas]) => Canvas): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
     
     inline def setBackground(value: LinearGradientValue | ColorValue | ImageValue): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
@@ -998,7 +998,7 @@ object OmitCanvasset {
     
     inline def set_addChild(value: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "_addChild", js.Any.fromFunction2(value))
     
-    inline def set_apply(value: (/* options */ Trigger[Canvas], /* rules */ RuleSet[Canvas]) => Canvas): Self = StObject.set(x, "_apply", js.Any.fromFunction2(value))
+    inline def set_apply(value: (/* options */ Mode[Canvas], /* rules */ RuleSet[Canvas]) => Canvas): Self = StObject.set(x, "_apply", js.Any.fromFunction2(value))
     
     inline def set_checkDisposed(value: () => Unit): Self = StObject.set(x, "_checkDisposed", js.Any.fromFunction0(value))
     

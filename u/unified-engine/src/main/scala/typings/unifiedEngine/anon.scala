@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Create[Value /* <: js.Object & (/* import warning: importer.ImportType#apply Failed type conversion: {  filePath :string | undefined} */ js.Any) */] extends StObject {
+  trait Create[Value /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  filePath :string | undefined} */ js.Any */] extends StObject {
     
     def create(buf: Buffer, filePath: String): js.UndefOr[js.Promise[js.UndefOr[Value]] | Value]
     
@@ -21,7 +21,7 @@ object anon {
   }
   object Create {
     
-    inline def apply[Value /* <: js.Object & (/* import warning: importer.ImportType#apply Failed type conversion: {  filePath :string | undefined} */ js.Any) */](
+    inline def apply[Value /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  filePath :string | undefined} */ js.Any */](
       create: (Buffer, String) => js.UndefOr[js.Promise[js.UndefOr[Value]] | Value],
       cwd: String,
       names: js.Array[String]
@@ -30,7 +30,7 @@ object anon {
       __obj.asInstanceOf[Create[Value]]
     }
     
-    extension [Self <: Create[?], Value /* <: js.Object & (/* import warning: importer.ImportType#apply Failed type conversion: {  filePath :string | undefined} */ js.Any) */](x: Self & Create[Value]) {
+    extension [Self <: Create[?], Value /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  filePath :string | undefined} */ js.Any */](x: Self & Create[Value]) {
       
       inline def setCreate(value: (Buffer, String) => js.UndefOr[js.Promise[js.UndefOr[Value]] | Value]): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
       

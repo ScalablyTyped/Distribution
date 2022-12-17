@@ -7,7 +7,7 @@ import typings.reactNative.anon.AutoscrollToTopThreshold
 import typings.reactNative.anon.AverageItemLength
 import typings.reactNative.anon.Changed
 import typings.reactNative.anon.DistanceFromEnd
-import typings.reactNative.anon.Length
+import typings.reactNative.anon.Index
 import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
@@ -28,7 +28,7 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import typings.reactNative.mod.ViewabilityConfigCallbackPair
 import typings.reactNative.mod.ViewabilityConfigCallbackPairs
-import typings.tuyaPanelKit.anon.`11`
+import typings.tuyaPanelKit.anon.`10`
 import typings.tuyaPanelKit.tuyaPanelKitStrings.`box-none`
 import typings.tuyaPanelKit.tuyaPanelKitStrings.`box-only`
 import typings.tuyaPanelKit.tuyaPanelKitStrings.`no-hide-descendants`
@@ -225,7 +225,7 @@ trait DialogListProps extends StObject {
   var getItemCount: js.UndefOr[js.Function1[/* data */ Any, Double]] = js.undefined
   
   var getItemLayout: js.UndefOr[
-    js.Function2[/* data */ js.UndefOr[js.Array[js.Object] | Null], /* index */ Double, Length]
+    js.Function2[/* data */ js.UndefOr[js.Array[js.Object] | Null], /* index */ Double, Index]
   ] = js.undefined
   
   var hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined
@@ -320,7 +320,7 @@ trait DialogListProps extends StObject {
     */
   var onCancel: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onConfirm: js.UndefOr[js.Function2[/* data */ Any, /* args */ `11`, Unit]] = js.undefined
+  var onConfirm: js.UndefOr[js.Function2[/* data */ Any, /* args */ `10`, Unit]] = js.undefined
   
   var onContentSizeChange: js.UndefOr[js.Function2[/* w */ Double, /* h */ Double, Unit]] = js.undefined
   
@@ -733,7 +733,7 @@ object DialogListProps {
     
     inline def setGetItemCountUndefined: Self = StObject.set(x, "getItemCount", js.undefined)
     
-    inline def setGetItemLayout(value: (/* data */ js.UndefOr[js.Array[js.Object] | Null], /* index */ Double) => Length): Self = StObject.set(x, "getItemLayout", js.Any.fromFunction2(value))
+    inline def setGetItemLayout(value: (/* data */ js.UndefOr[js.Array[js.Object] | Null], /* index */ Double) => Index): Self = StObject.set(x, "getItemLayout", js.Any.fromFunction2(value))
     
     inline def setGetItemLayoutUndefined: Self = StObject.set(x, "getItemLayout", js.undefined)
     
@@ -907,7 +907,7 @@ object DialogListProps {
     
     inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
     
-    inline def setOnConfirm(value: (/* data */ Any, /* args */ `11`) => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction2(value))
+    inline def setOnConfirm(value: (/* data */ Any, /* args */ `10`) => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction2(value))
     
     inline def setOnConfirmUndefined: Self = StObject.set(x, "onConfirm", js.undefined)
     

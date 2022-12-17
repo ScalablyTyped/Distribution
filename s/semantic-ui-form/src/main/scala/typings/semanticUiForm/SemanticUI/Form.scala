@@ -199,22 +199,22 @@ object Form {
     trait Param extends StObject
     object Param {
       
-      inline def PickImplactivePartialPick(active: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplactivePartialPick = {
+      inline def PickImplactivePartialPick(active: String): typings.semanticUiForm.anon.PickImplactivePartialPick = {
         val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplactivePartialPick]
       }
       
-      inline def PickImpldisabledPartialPi(disabled: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImpldisabledPartialPi = {
+      inline def PickImpldisabledPartialPi(disabled: String): typings.semanticUiForm.anon.PickImpldisabledPartialPi = {
         val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImpldisabledPartialPi]
       }
       
-      inline def PickImplplaceholderPartia(placeholder: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplplaceholderPartia = {
+      inline def PickImplplaceholderPartia(placeholder: String): typings.semanticUiForm.anon.PickImplplaceholderPartia = {
         val __obj = js.Dynamic.literal(placeholder = placeholder.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplplaceholderPartia]
       }
       
-      inline def PickImplvisiblePartialPic(visible: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplvisiblePartialPic = {
+      inline def PickImplvisiblePartialPic(visible: String): typings.semanticUiForm.anon.PickImplvisiblePartialPic = {
         val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplvisiblePartialPic]
       }
@@ -225,11 +225,11 @@ object Form {
   /* Inlined semantic-ui-form.SemanticUI.Form.ErrorSettings.Param */
   trait ErrorSettings extends StObject {
     
-    var method: String & js.UndefOr[String]
+    var method: String
   }
   object ErrorSettings {
     
-    inline def apply(method: String & js.UndefOr[String]): ErrorSettings = {
+    inline def apply(method: String): ErrorSettings = {
       val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrorSettings]
     }
@@ -256,24 +256,24 @@ object Form {
     
     extension [Self <: ErrorSettings](x: Self) {
       
-      inline def setMethod(value: String & js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     }
     
     /* Inlined std.Pick<semantic-ui-form.SemanticUI.Form.ErrorSettings._Impl, 'method'> & std.Partial<std.Pick<semantic-ui-form.SemanticUI.Form.ErrorSettings._Impl, keyof semantic-ui-form.SemanticUI.Form.ErrorSettings._Impl>> */
     trait Param extends StObject {
       
-      var method: String & js.UndefOr[String]
+      var method: String
     }
     object Param {
       
-      inline def apply(method: String & js.UndefOr[String]): typings.semanticUiForm.SemanticUI.Form.ErrorSettings.Param = {
+      inline def apply(method: String): typings.semanticUiForm.SemanticUI.Form.ErrorSettings.Param = {
         val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.SemanticUI.Form.ErrorSettings.Param]
       }
       
       extension [Self <: typings.semanticUiForm.SemanticUI.Form.ErrorSettings.Param](x: Self) {
         
-        inline def setMethod(value: String & js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+        inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -312,11 +312,11 @@ object Form {
   /* Inlined semantic-ui-form.SemanticUI.Form.MetadataSettings.Param */
   trait MetadataSettings extends StObject {
     
-    var validate: String & js.UndefOr[String]
+    var validate: String
   }
   object MetadataSettings {
     
-    inline def apply(validate: String & js.UndefOr[String]): MetadataSettings = {
+    inline def apply(validate: String): MetadataSettings = {
       val __obj = js.Dynamic.literal(validate = validate.asInstanceOf[js.Any])
       __obj.asInstanceOf[MetadataSettings]
     }
@@ -343,24 +343,24 @@ object Form {
     
     extension [Self <: MetadataSettings](x: Self) {
       
-      inline def setValidate(value: String & js.UndefOr[String]): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+      inline def setValidate(value: String): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
     }
     
     /* Inlined std.Pick<semantic-ui-form.SemanticUI.Form.MetadataSettings._Impl, 'validate'> & std.Partial<std.Pick<semantic-ui-form.SemanticUI.Form.MetadataSettings._Impl, keyof semantic-ui-form.SemanticUI.Form.MetadataSettings._Impl>> */
     trait Param extends StObject {
       
-      var validate: String & js.UndefOr[String]
+      var validate: String
     }
     object Param {
       
-      inline def apply(validate: String & js.UndefOr[String]): typings.semanticUiForm.SemanticUI.Form.MetadataSettings.Param = {
+      inline def apply(validate: String): typings.semanticUiForm.SemanticUI.Form.MetadataSettings.Param = {
         val __obj = js.Dynamic.literal(validate = validate.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.SemanticUI.Form.MetadataSettings.Param]
       }
       
       extension [Self <: typings.semanticUiForm.SemanticUI.Form.MetadataSettings.Param](x: Self) {
         
-        inline def setValidate(value: String & js.UndefOr[String]): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+        inline def setValidate(value: String): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -621,133 +621,133 @@ object Form {
     trait Param extends StObject
     object Param {
       
-      inline def PickImplcheckedPartialPic(checked: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplcheckedPartialPic = {
+      inline def PickImplcheckedPartialPic(checked: String): typings.semanticUiForm.anon.PickImplcheckedPartialPic = {
         val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplcheckedPartialPic]
       }
       
-      inline def PickImplcontainExactlyPar(containExactly: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplcontainExactlyPar = {
+      inline def PickImplcontainExactlyPar(containExactly: String): typings.semanticUiForm.anon.PickImplcontainExactlyPar = {
         val __obj = js.Dynamic.literal(containExactly = containExactly.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplcontainExactlyPar]
       }
       
-      inline def PickImplcontainPartialPic(contain: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplcontainPartialPic = {
+      inline def PickImplcontainPartialPic(contain: String): typings.semanticUiForm.anon.PickImplcontainPartialPic = {
         val __obj = js.Dynamic.literal(contain = contain.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplcontainPartialPic]
       }
       
-      inline def PickImplcreditCardPartial(creditCard: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplcreditCardPartial = {
+      inline def PickImplcreditCardPartial(creditCard: String): typings.semanticUiForm.anon.PickImplcreditCardPartial = {
         val __obj = js.Dynamic.literal(creditCard = creditCard.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplcreditCardPartial]
       }
       
-      inline def PickImpldecimalPartialPic(decimal: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImpldecimalPartialPic = {
+      inline def PickImpldecimalPartialPic(decimal: String): typings.semanticUiForm.anon.PickImpldecimalPartialPic = {
         val __obj = js.Dynamic.literal(decimal = decimal.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImpldecimalPartialPic]
       }
       
-      inline def PickImpldifferentPartialP(different: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImpldifferentPartialP = {
+      inline def PickImpldifferentPartialP(different: String): typings.semanticUiForm.anon.PickImpldifferentPartialP = {
         val __obj = js.Dynamic.literal(different = different.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImpldifferentPartialP]
       }
       
-      inline def PickImpldoesntContainExac(doesntContainExactly: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImpldoesntContainExac = {
+      inline def PickImpldoesntContainExac(doesntContainExactly: String): typings.semanticUiForm.anon.PickImpldoesntContainExac = {
         val __obj = js.Dynamic.literal(doesntContainExactly = doesntContainExactly.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImpldoesntContainExac]
       }
       
-      inline def PickImpldoesntContainPart(doesntContain: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImpldoesntContainPart = {
+      inline def PickImpldoesntContainPart(doesntContain: String): typings.semanticUiForm.anon.PickImpldoesntContainPart = {
         val __obj = js.Dynamic.literal(doesntContain = doesntContain.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImpldoesntContainPart]
       }
       
-      inline def PickImplemailPartialPickI(email: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplemailPartialPickI = {
+      inline def PickImplemailPartialPickI(email: String): typings.semanticUiForm.anon.PickImplemailPartialPickI = {
         val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplemailPartialPickI]
       }
       
-      inline def PickImplemptyPartialPickI(empty: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplemptyPartialPickI = {
+      inline def PickImplemptyPartialPickI(empty: String): typings.semanticUiForm.anon.PickImplemptyPartialPickI = {
         val __obj = js.Dynamic.literal(empty = empty.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplemptyPartialPickI]
       }
       
-      inline def PickImplexactCountPartial(exactCount: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplexactCountPartial = {
+      inline def PickImplexactCountPartial(exactCount: String): typings.semanticUiForm.anon.PickImplexactCountPartial = {
         val __obj = js.Dynamic.literal(exactCount = exactCount.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplexactCountPartial]
       }
       
-      inline def PickImplexactLengthPartia(exactLength: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplexactLengthPartia = {
+      inline def PickImplexactLengthPartia(exactLength: String): typings.semanticUiForm.anon.PickImplexactLengthPartia = {
         val __obj = js.Dynamic.literal(exactLength = exactLength.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplexactLengthPartia]
       }
       
-      inline def PickImplintegerPartialPic(integer: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplintegerPartialPic = {
+      inline def PickImplintegerPartialPic(integer: String): typings.semanticUiForm.anon.PickImplintegerPartialPic = {
         val __obj = js.Dynamic.literal(integer = integer.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplintegerPartialPic]
       }
       
-      inline def PickImplisExactlyPartialP(isExactly: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplisExactlyPartialP = {
+      inline def PickImplisExactlyPartialP(isExactly: String): typings.semanticUiForm.anon.PickImplisExactlyPartialP = {
         val __obj = js.Dynamic.literal(isExactly = isExactly.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplisExactlyPartialP]
       }
       
-      inline def PickImplisPartialPickImpl(is: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplisPartialPickImpl = {
+      inline def PickImplisPartialPickImpl(is: String): typings.semanticUiForm.anon.PickImplisPartialPickImpl = {
         val __obj = js.Dynamic.literal(is = is.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplisPartialPickImpl]
       }
       
-      inline def PickImpllengthPartialPick(length: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImpllengthPartialPick = {
+      inline def PickImpllengthPartialPick(length: String): typings.semanticUiForm.anon.PickImpllengthPartialPick = {
         val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImpllengthPartialPick]
       }
       
-      inline def PickImplmatchPartialPickI(`match`: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplmatchPartialPickI = {
+      inline def PickImplmatchPartialPickI(`match`: String): typings.semanticUiForm.anon.PickImplmatchPartialPickI = {
         val __obj = js.Dynamic.literal()
         __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplmatchPartialPickI]
       }
       
-      inline def PickImplmaxCountPartialPi(maxCount: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplmaxCountPartialPi = {
+      inline def PickImplmaxCountPartialPi(maxCount: String): typings.semanticUiForm.anon.PickImplmaxCountPartialPi = {
         val __obj = js.Dynamic.literal(maxCount = maxCount.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplmaxCountPartialPi]
       }
       
-      inline def PickImplmaxLengthPartialP(maxLength: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplmaxLengthPartialP = {
+      inline def PickImplmaxLengthPartialP(maxLength: String): typings.semanticUiForm.anon.PickImplmaxLengthPartialP = {
         val __obj = js.Dynamic.literal(maxLength = maxLength.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplmaxLengthPartialP]
       }
       
-      inline def PickImplminCountPartialPi(minCount: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplminCountPartialPi = {
+      inline def PickImplminCountPartialPi(minCount: String): typings.semanticUiForm.anon.PickImplminCountPartialPi = {
         val __obj = js.Dynamic.literal(minCount = minCount.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplminCountPartialPi]
       }
       
-      inline def PickImplminLengthPartialP(minLength: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplminLengthPartialP = {
+      inline def PickImplminLengthPartialP(minLength: String): typings.semanticUiForm.anon.PickImplminLengthPartialP = {
         val __obj = js.Dynamic.literal(minLength = minLength.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplminLengthPartialP]
       }
       
-      inline def PickImplnotExactlyPartial(notExactly: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplnotExactlyPartial = {
+      inline def PickImplnotExactlyPartial(notExactly: String): typings.semanticUiForm.anon.PickImplnotExactlyPartial = {
         val __obj = js.Dynamic.literal(notExactly = notExactly.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplnotExactlyPartial]
       }
       
-      inline def PickImplnotPartialPickImp(not: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplnotPartialPickImp = {
+      inline def PickImplnotPartialPickImp(not: String): typings.semanticUiForm.anon.PickImplnotPartialPickImp = {
         val __obj = js.Dynamic.literal(not = not.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplnotPartialPickImp]
       }
       
-      inline def PickImplnumberPartialPick(number: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplnumberPartialPick = {
+      inline def PickImplnumberPartialPick(number: String): typings.semanticUiForm.anon.PickImplnumberPartialPick = {
         val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplnumberPartialPick]
       }
       
-      inline def PickImplregExpPartialPick(regExp: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplregExpPartialPick = {
+      inline def PickImplregExpPartialPick(regExp: String): typings.semanticUiForm.anon.PickImplregExpPartialPick = {
         val __obj = js.Dynamic.literal(regExp = regExp.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplregExpPartialPick]
       }
       
-      inline def PickImplurlPartialPickImp(url: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplurlPartialPickImp = {
+      inline def PickImplurlPartialPickImp(url: String): typings.semanticUiForm.anon.PickImplurlPartialPickImp = {
         val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplurlPartialPickImp]
       }
@@ -864,32 +864,32 @@ object Form {
     trait Param extends StObject
     object Param {
       
-      inline def PickImplfieldPartialPickI(field: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplfieldPartialPickI = {
+      inline def PickImplfieldPartialPickI(field: String): typings.semanticUiForm.anon.PickImplfieldPartialPickI = {
         val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplfieldPartialPickI]
       }
       
-      inline def PickImplgroupPartialPickI(group: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplgroupPartialPickI = {
+      inline def PickImplgroupPartialPickI(group: String): typings.semanticUiForm.anon.PickImplgroupPartialPickI = {
         val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplgroupPartialPickI]
       }
       
-      inline def PickImplinputPartialPickI(input: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplinputPartialPickI = {
+      inline def PickImplinputPartialPickI(input: String): typings.semanticUiForm.anon.PickImplinputPartialPickI = {
         val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplinputPartialPickI]
       }
       
-      inline def PickImplmessagePartialPic(message: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplmessagePartialPic = {
+      inline def PickImplmessagePartialPic(message: String): typings.semanticUiForm.anon.PickImplmessagePartialPic = {
         val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplmessagePartialPic]
       }
       
-      inline def PickImplpromptPartialPickField(prompt: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplpromptPartialPickField = {
+      inline def PickImplpromptPartialPickField(prompt: String): typings.semanticUiForm.anon.PickImplpromptPartialPickField = {
         val __obj = js.Dynamic.literal(prompt = prompt.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplpromptPartialPickField]
       }
       
-      inline def PickImplsubmitPartialPick(submit: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplsubmitPartialPick = {
+      inline def PickImplsubmitPartialPick(submit: String): typings.semanticUiForm.anon.PickImplsubmitPartialPick = {
         val __obj = js.Dynamic.literal(submit = submit.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplsubmitPartialPick]
       }
@@ -927,17 +927,13 @@ object Form {
     trait Param extends StObject
     object Param {
       
-      inline def PickImplerrorPartialPickIError(
-        error: (js.Function1[/* errors */ js.Array[String], JQuery]) & (js.UndefOr[js.Function1[/* errors */ js.Array[String], JQuery]])
-      ): typings.semanticUiForm.anon.PickImplerrorPartialPickIError = {
-        val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
+      inline def PickImplerrorPartialPickIError(error: /* errors */ js.Array[String] => JQuery): typings.semanticUiForm.anon.PickImplerrorPartialPickIError = {
+        val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error))
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplerrorPartialPickIError]
       }
       
-      inline def PickImplpromptPartialPickError(
-        prompt: (js.Function1[/* errors */ js.Array[String], JQuery]) & (js.UndefOr[js.Function1[/* errors */ js.Array[String], JQuery]])
-      ): typings.semanticUiForm.anon.PickImplpromptPartialPickError = {
-        val __obj = js.Dynamic.literal(prompt = prompt.asInstanceOf[js.Any])
+      inline def PickImplpromptPartialPickError(prompt: /* errors */ js.Array[String] => JQuery): typings.semanticUiForm.anon.PickImplpromptPartialPickError = {
+        val __obj = js.Dynamic.literal(prompt = js.Any.fromFunction1(prompt))
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplpromptPartialPickError]
       }
     }
@@ -980,12 +976,12 @@ object Form {
     trait Param extends StObject
     object Param {
       
-      inline def PickImplunspecifiedFieldP(unspecifiedField: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplunspecifiedFieldP = {
+      inline def PickImplunspecifiedFieldP(unspecifiedField: String): typings.semanticUiForm.anon.PickImplunspecifiedFieldP = {
         val __obj = js.Dynamic.literal(unspecifiedField = unspecifiedField.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplunspecifiedFieldP]
       }
       
-      inline def PickImplunspecifiedRulePa(unspecifiedRule: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplunspecifiedRulePa = {
+      inline def PickImplunspecifiedRulePa(unspecifiedRule: String): typings.semanticUiForm.anon.PickImplunspecifiedRulePa = {
         val __obj = js.Dynamic.literal(unspecifiedRule = unspecifiedRule.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplunspecifiedRulePa]
       }

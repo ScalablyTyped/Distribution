@@ -1,6 +1,5 @@
 package typings.vscode.anon
 
-import typings.vscode.vscodeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,7 +32,7 @@ trait AuthenticationGetSessionO extends StObject {
     *
     * Note: you cannot use this option with {@link AuthenticationGetSessionOptions.silent silent}.
     */
-  var createIfNone: js.UndefOr[Boolean] & `true`
+  var createIfNone: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether we should attempt to reauthenticate even if there is already a session available.
@@ -62,8 +61,8 @@ trait AuthenticationGetSessionO extends StObject {
 }
 object AuthenticationGetSessionO {
   
-  inline def apply(createIfNone: js.UndefOr[Boolean] & `true`): AuthenticationGetSessionO = {
-    val __obj = js.Dynamic.literal(createIfNone = createIfNone.asInstanceOf[js.Any])
+  inline def apply(): AuthenticationGetSessionO = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuthenticationGetSessionO]
   }
   
@@ -73,7 +72,9 @@ object AuthenticationGetSessionO {
     
     inline def setClearSessionPreferenceUndefined: Self = StObject.set(x, "clearSessionPreference", js.undefined)
     
-    inline def setCreateIfNone(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "createIfNone", value.asInstanceOf[js.Any])
+    inline def setCreateIfNone(value: Boolean): Self = StObject.set(x, "createIfNone", value.asInstanceOf[js.Any])
+    
+    inline def setCreateIfNoneUndefined: Self = StObject.set(x, "createIfNone", js.undefined)
     
     inline def setForceNewSession(value: Boolean | Detail): Self = StObject.set(x, "forceNewSession", value.asInstanceOf[js.Any])
     

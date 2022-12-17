@@ -78,7 +78,7 @@ trait PickImplsilentPartialPick
   
   var showNoResults: js.UndefOr[Boolean] = js.undefined
   
-  var silent: Boolean & js.UndefOr[Boolean]
+  var silent: Boolean
   
   var source: js.UndefOr[`false` | Any] = js.undefined
   
@@ -92,7 +92,7 @@ trait PickImplsilentPartialPick
 }
 object PickImplsilentPartialPick {
   
-  inline def apply(silent: Boolean & js.UndefOr[Boolean]): PickImplsilentPartialPick = {
+  inline def apply(silent: Boolean): PickImplsilentPartialPick = {
     val __obj = js.Dynamic.literal(silent = silent.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplsilentPartialPick]
   }
@@ -213,7 +213,7 @@ object PickImplsilentPartialPick {
     
     inline def setShowNoResultsUndefined: Self = StObject.set(x, "showNoResults", js.undefined)
     
-    inline def setSilent(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+    inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
     inline def setSource(value: `false` | Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,6 @@ object DrawFeatureBase {
     coordinates: Coordinates,
     getCoordinate: String => Position,
     getCoordinates: () => Coordinates,
-    id: NonNullable[js.UndefOr[String | Double]],
     incomingCoords: /* import warning: importer.ImportType#apply Failed type conversion: this['setCoordinates'] */ js.Any,
     isValid: () => Boolean,
     setCoordinates: Coordinates => Unit,
@@ -53,7 +52,7 @@ object DrawFeatureBase {
     `type`: GeoJsonTypes,
     updateCoordinate: (String, Double, Double) => Unit
   ): DrawFeatureBase[Coordinates] = {
-    val __obj = js.Dynamic.literal(changed = js.Any.fromFunction0(changed), coordinates = coordinates.asInstanceOf[js.Any], getCoordinate = js.Any.fromFunction1(getCoordinate), getCoordinates = js.Any.fromFunction0(getCoordinates), id = id.asInstanceOf[js.Any], incomingCoords = incomingCoords.asInstanceOf[js.Any], isValid = js.Any.fromFunction0(isValid), setCoordinates = js.Any.fromFunction1(setCoordinates), setProperty = js.Any.fromFunction2(setProperty), toGeoJSON = js.Any.fromFunction0(toGeoJSON), updateCoordinate = js.Any.fromFunction3(updateCoordinate), properties = null)
+    val __obj = js.Dynamic.literal(changed = js.Any.fromFunction0(changed), coordinates = coordinates.asInstanceOf[js.Any], getCoordinate = js.Any.fromFunction1(getCoordinate), getCoordinates = js.Any.fromFunction0(getCoordinates), incomingCoords = incomingCoords.asInstanceOf[js.Any], isValid = js.Any.fromFunction0(isValid), setCoordinates = js.Any.fromFunction1(setCoordinates), setProperty = js.Any.fromFunction2(setProperty), toGeoJSON = js.Any.fromFunction0(toGeoJSON), updateCoordinate = js.Any.fromFunction3(updateCoordinate), properties = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawFeatureBase[Coordinates]]
   }
@@ -69,6 +68,8 @@ object DrawFeatureBase {
     inline def setGetCoordinates(value: () => Coordinates): Self = StObject.set(x, "getCoordinates", js.Any.fromFunction0(value))
     
     inline def setId(value: NonNullable[js.UndefOr[String | Double]]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setIncomingCoords(
       value: /* import warning: importer.ImportType#apply Failed type conversion: this['setCoordinates'] */ js.Any

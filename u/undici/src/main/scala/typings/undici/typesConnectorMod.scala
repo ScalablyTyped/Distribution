@@ -23,18 +23,18 @@ object typesConnectorMod {
   trait BuildOptions extends StObject
   object BuildOptions {
     
-    inline def ConnectionOptionsmaxCache(timeout: js.UndefOr[Double] & (js.UndefOr[Double | Null])): typings.undici.anon.ConnectionOptionsmaxCache = {
-      val __obj = js.Dynamic.literal(timeout = timeout.asInstanceOf[js.Any])
+    inline def ConnectionOptionsmaxCache(): typings.undici.anon.ConnectionOptionsmaxCache = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.undici.anon.ConnectionOptionsmaxCache]
     }
     
-    inline def IpcNetConnectOptsmaxCache(path: String, timeout: js.UndefOr[Double] & (js.UndefOr[Double | Null])): typings.undici.anon.IpcNetConnectOptsmaxCache = {
-      val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
+    inline def IpcNetConnectOptsmaxCache(path: String): typings.undici.anon.IpcNetConnectOptsmaxCache = {
+      val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.undici.anon.IpcNetConnectOptsmaxCache]
     }
     
-    inline def TcpNetConnectOptsmaxCache(port: Double & js.UndefOr[Double], timeout: js.UndefOr[Double] & (js.UndefOr[Double | Null])): typings.undici.anon.TcpNetConnectOptsmaxCache = {
-      val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
+    inline def TcpNetConnectOptsmaxCache(port: Double): typings.undici.anon.TcpNetConnectOptsmaxCache = {
+      val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.undici.anon.TcpNetConnectOptsmaxCache]
     }
   }

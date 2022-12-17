@@ -41,7 +41,7 @@ trait PickImploffsetPartialPick
   
   var observeChanges: js.UndefOr[Boolean] = js.undefined
   
-  var offset: Double & js.UndefOr[Double]
+  var offset: Double
   
   var onAllLoaded: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
@@ -103,7 +103,7 @@ trait PickImploffsetPartialPick
 }
 object PickImploffsetPartialPick {
   
-  inline def apply(offset: Double & js.UndefOr[Double]): PickImploffsetPartialPick = {
+  inline def apply(offset: Double): PickImploffsetPartialPick = {
     val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImploffsetPartialPick]
   }
@@ -158,7 +158,7 @@ object PickImploffsetPartialPick {
     
     inline def setObserveChangesUndefined: Self = StObject.set(x, "observeChanges", js.undefined)
     
-    inline def setOffset(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     inline def setOnAllLoaded(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onAllLoaded", value.asInstanceOf[js.Any])
     

@@ -10,7 +10,7 @@ trait PickImplcachePartialPickI
   extends StObject
      with Param {
   
-  var cache: Any & js.UndefOr[Any]
+  var cache: Any
   
   var config: js.UndefOr[Any] = js.undefined
   
@@ -22,14 +22,14 @@ trait PickImplcachePartialPickI
 }
 object PickImplcachePartialPickI {
   
-  inline def apply(cache: Any & js.UndefOr[Any]): PickImplcachePartialPickI = {
+  inline def apply(cache: Any): PickImplcachePartialPickI = {
     val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplcachePartialPickI]
   }
   
   extension [Self <: PickImplcachePartialPickI](x: Self) {
     
-    inline def setCache(value: Any & js.UndefOr[Any]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
     inline def setConfig(value: Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

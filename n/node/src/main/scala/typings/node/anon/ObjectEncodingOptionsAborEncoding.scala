@@ -2,17 +2,22 @@ package typings.node.anon
 
 import typings.node.AbortSignal
 import typings.node.bufferMod.global.BufferEncoding
-import typings.node.fsMod.OpenMode
+import typings.node.fsMod.Mode
+import typings.node.fsMod._WriteFileOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined node.node:fs.ObjectEncodingOptions & node.node:events.Abortable & {  flag :node.node:fs.OpenMode | undefined} */
-trait ObjectEncodingOptionsAborEncoding extends StObject {
+/* Inlined node.fs.ObjectEncodingOptions & node.node:events.Abortable & {  mode :node.fs.Mode | undefined,   flag :string | undefined} */
+trait ObjectEncodingOptionsAborEncoding
+  extends StObject
+     with _WriteFileOptions {
   
   var encoding: js.UndefOr[BufferEncoding | Null] = js.undefined
   
-  var flag: js.UndefOr[OpenMode] = js.undefined
+  var flag: js.UndefOr[String] = js.undefined
+  
+  var mode: js.UndefOr[Mode] = js.undefined
   
   /**
     * When provided the corresponding `AbortController` can be used to cancel an asynchronous action.
@@ -34,9 +39,13 @@ object ObjectEncodingOptionsAborEncoding {
     
     inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    inline def setFlag(value: OpenMode): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
+    inline def setFlag(value: String): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
     
     inline def setFlagUndefined: Self = StObject.set(x, "flag", js.undefined)
+    
+    inline def setMode(value: Mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     

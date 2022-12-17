@@ -14,7 +14,7 @@ trait PickImplnotFoundPartialPi
   
   var movedSidebar: js.UndefOr[String] = js.undefined
   
-  var notFound: String & js.UndefOr[String]
+  var notFound: String
   
   var overlay: js.UndefOr[String] = js.undefined
   
@@ -22,7 +22,7 @@ trait PickImplnotFoundPartialPi
 }
 object PickImplnotFoundPartialPi {
   
-  inline def apply(notFound: String & js.UndefOr[String]): PickImplnotFoundPartialPi = {
+  inline def apply(notFound: String): PickImplnotFoundPartialPi = {
     val __obj = js.Dynamic.literal(notFound = notFound.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplnotFoundPartialPi]
   }
@@ -37,7 +37,7 @@ object PickImplnotFoundPartialPi {
     
     inline def setMovedSidebarUndefined: Self = StObject.set(x, "movedSidebar", js.undefined)
     
-    inline def setNotFound(value: String & js.UndefOr[String]): Self = StObject.set(x, "notFound", value.asInstanceOf[js.Any])
+    inline def setNotFound(value: String): Self = StObject.set(x, "notFound", value.asInstanceOf[js.Any])
     
     inline def setOverlay(value: String): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     

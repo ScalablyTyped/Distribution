@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HeadersLocation extends StObject {
   
-  var content: ApplicationjsonLine
+  var content: `196`
   
   var headers: Location
 }
 object HeadersLocation {
   
-  inline def apply(content: ApplicationjsonLine, headers: Location): HeadersLocation = {
+  inline def apply(content: `196`, headers: Location): HeadersLocation = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeadersLocation]
   }
   
   extension [Self <: HeadersLocation](x: Self) {
     
-    inline def setContent(value: ApplicationjsonLine): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: `196`): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setHeaders(value: Location): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
   }

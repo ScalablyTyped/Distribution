@@ -32,7 +32,7 @@ trait PickImplcontentPartialPic
   
   var closable: js.UndefOr[Boolean] = js.undefined
   
-  var content: String & js.UndefOr[String]
+  var content: String
   
   var context: js.UndefOr[String | JQuery] = js.undefined
   
@@ -120,7 +120,7 @@ trait PickImplcontentPartialPic
 }
 object PickImplcontentPartialPic {
   
-  inline def apply(content: String & js.UndefOr[String]): PickImplcontentPartialPic = {
+  inline def apply(content: String): PickImplcontentPartialPic = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplcontentPartialPic]
   }
@@ -143,7 +143,7 @@ object PickImplcontentPartialPic {
     
     inline def setClosableUndefined: Self = StObject.set(x, "closable", js.undefined)
     
-    inline def setContent(value: String & js.UndefOr[String]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setContext(value: String | JQuery): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

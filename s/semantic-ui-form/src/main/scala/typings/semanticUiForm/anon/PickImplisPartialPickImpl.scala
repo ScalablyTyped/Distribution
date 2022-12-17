@@ -36,7 +36,7 @@ trait PickImplisPartialPickImpl
   
   var integer: js.UndefOr[String] = js.undefined
   
-  var is: String & js.UndefOr[String]
+  var is: String
   
   var isExactly: js.UndefOr[String] = js.undefined
   
@@ -64,7 +64,7 @@ trait PickImplisPartialPickImpl
 }
 object PickImplisPartialPickImpl {
   
-  inline def apply(is: String & js.UndefOr[String]): PickImplisPartialPickImpl = {
+  inline def apply(is: String): PickImplisPartialPickImpl = {
     val __obj = js.Dynamic.literal(is = is.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplisPartialPickImpl]
   }
@@ -123,7 +123,7 @@ object PickImplisPartialPickImpl {
     
     inline def setIntegerUndefined: Self = StObject.set(x, "integer", js.undefined)
     
-    inline def setIs(value: String & js.UndefOr[String]): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
+    inline def setIs(value: String): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
     
     inline def setIsExactly(value: String): Self = StObject.set(x, "isExactly", value.asInstanceOf[js.Any])
     

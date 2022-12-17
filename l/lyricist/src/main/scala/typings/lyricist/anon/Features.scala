@@ -10,7 +10,7 @@ trait Features extends StObject {
   
   var features: js.Array[Any]
   
-  var interactions: Following
+  var interactions: FollowingBoolean
   
   var permissions: js.Array[Any]
 }
@@ -19,7 +19,7 @@ object Features {
   inline def apply(
     excluded_permissions: js.Array[String],
     features: js.Array[Any],
-    interactions: Following,
+    interactions: FollowingBoolean,
     permissions: js.Array[Any]
   ): Features = {
     val __obj = js.Dynamic.literal(excluded_permissions = excluded_permissions.asInstanceOf[js.Any], features = features.asInstanceOf[js.Any], interactions = interactions.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any])
@@ -36,7 +36,7 @@ object Features {
     
     inline def setFeaturesVarargs(value: Any*): Self = StObject.set(x, "features", js.Array(value*))
     
-    inline def setInteractions(value: Following): Self = StObject.set(x, "interactions", value.asInstanceOf[js.Any])
+    inline def setInteractions(value: FollowingBoolean): Self = StObject.set(x, "interactions", value.asInstanceOf[js.Any])
     
     inline def setPermissions(value: js.Array[Any]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RequestBodyContentApplicationjsonCheckouturi extends StObject {
   
-  var parameters: `76`
+  var parameters: `135`
   
   var requestBody: ContentApplicationjsonCheckouturi
   
@@ -14,14 +14,14 @@ trait RequestBodyContentApplicationjsonCheckouturi extends StObject {
 }
 object RequestBodyContentApplicationjsonCheckouturi {
   
-  inline def apply(parameters: `76`, requestBody: ContentApplicationjsonCheckouturi, responses: `413`): RequestBodyContentApplicationjsonCheckouturi = {
+  inline def apply(parameters: `135`, requestBody: ContentApplicationjsonCheckouturi, responses: `413`): RequestBodyContentApplicationjsonCheckouturi = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyContentApplicationjsonCheckouturi]
   }
   
   extension [Self <: RequestBodyContentApplicationjsonCheckouturi](x: Self) {
     
-    inline def setParameters(value: `76`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: `135`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setRequestBody(value: ContentApplicationjsonCheckouturi): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     

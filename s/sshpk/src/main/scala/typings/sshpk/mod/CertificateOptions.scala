@@ -1,7 +1,7 @@
 package typings.sshpk.mod
 
 import typings.node.bufferMod.global.Buffer
-import typings.sshpk.anon.X509
+import typings.sshpk.anon.Openssh
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ trait CertificateOptions extends StObject {
   
   var serial: Buffer
   
-  var signatures: X509
+  var signatures: Openssh
   
   var subjectKey: Key
   
@@ -32,7 +32,7 @@ object CertificateOptions {
   inline def apply(
     issuer: Identity,
     serial: Buffer,
-    signatures: X509,
+    signatures: Openssh,
     subjectKey: Key,
     subjects: js.Array[Identity],
     validFrom: js.Date,
@@ -58,7 +58,7 @@ object CertificateOptions {
     
     inline def setSerial(value: Buffer): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
     
-    inline def setSignatures(value: X509): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
+    inline def setSignatures(value: Openssh): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
     
     inline def setSubjectKey(value: Key): Self = StObject.set(x, "subjectKey", value.asInstanceOf[js.Any])
     

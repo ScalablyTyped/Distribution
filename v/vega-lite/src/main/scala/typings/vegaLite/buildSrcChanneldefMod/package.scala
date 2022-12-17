@@ -78,9 +78,9 @@ inline def hasBandEnd(
   config: Config[SignalRef]
 ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasBandEnd")(fieldDef.asInstanceOf[js.Any], fieldDef2.asInstanceOf[js.Any], markDef.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
-inline def hasConditionalFieldDef[F /* <: Field */](channelDef: Partial[ChannelDef[F]]): /* is vega-lite.anon.ConditionConditional<F> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasConditionalFieldDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.anon.ConditionConditional<F> */ Boolean]
+inline def hasConditionalFieldDef[F /* <: Field */](channelDef: Partial[ChannelDef[F]]): /* is vega-lite.anon.0<F> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasConditionalFieldDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.anon.0<F> */ Boolean]
 
-inline def hasConditionalFieldOrDatumDef[F /* <: Field */](channelDef: ChannelDef[F]): /* is vega-lite.anon.ConditionConditional<F> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasConditionalFieldOrDatumDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.anon.ConditionConditional<F> */ Boolean]
+inline def hasConditionalFieldOrDatumDef[F /* <: Field */](channelDef: ChannelDef[F]): /* is vega-lite.anon.0<F> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasConditionalFieldOrDatumDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.anon.0<F> */ Boolean]
 
 inline def hasConditionalValueDef[F /* <: Field */](channelDef: ChannelDef[F]): /* is vega-lite.anon.ValueDefanyconditionCondi */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasConditionalValueDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.anon.ValueDefanyconditionCondi */ Boolean]
 

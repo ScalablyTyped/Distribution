@@ -6,9 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `16` extends StObject {
   
-  var text: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: {[ key in grommet.grommet/themes/base.DigitalTexts ]: {  size :string | undefined,   height :number | undefined}} */ js.Any
-  ] = js.undefined
+  var border: js.UndefOr[SideSize] = js.undefined
 }
 object `16` {
   
@@ -19,10 +17,8 @@ object `16` {
   
   extension [Self <: `16`](x: Self) {
     
-    inline def setText(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in grommet.grommet/themes/base.DigitalTexts ]: {  size :string | undefined,   height :number | undefined}} */ js.Any
-    ): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setBorder(value: SideSize): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
-    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
   }
 }

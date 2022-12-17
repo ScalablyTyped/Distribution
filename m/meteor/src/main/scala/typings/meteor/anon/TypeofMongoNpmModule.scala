@@ -106,7 +106,6 @@ import typings.mongodb.mod.MongoTransactionError
 import typings.mongodb.mod.MongoUnexpectedServerResponseError
 import typings.mongodb.mod.MongoWriteConcernError
 import typings.mongodb.mod.OrderedBulkOperation
-import typings.mongodb.mod.Promise
 import typings.mongodb.mod.ServerCapabilities
 import typings.mongodb.mod.ServerClosedEvent
 import typings.mongodb.mod.ServerDescription
@@ -216,11 +215,7 @@ trait TypeofMongoNpmModule extends StObject {
   
   var ConnectionReadyEvent: Instantiable0[typings.mongodb.mod.ConnectionReadyEvent]
   
-  var DBRef: Instantiable2[
-    /* collection */ String, 
-    /* oid */ typings.bson.mod.ObjectId, 
-    typings.mongodb.mod.DBRef
-  ]
+  var DBRef: Instantiable2[/* collection */ String, /* oid */ ObjectId, typings.mongodb.mod.DBRef]
   
   var Db: TypeofDb
   
@@ -378,9 +373,14 @@ trait TypeofMongoNpmModule extends StObject {
   
   var MongoWriteConcernError: Instantiable1[/* message */ ErrorDescription, typings.mongodb.mod.MongoWriteConcernError]
   
-  val ObjectID: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ObjectId */ Any
+  val ObjectID: Instantiable0[ObjectId] & typings.mongodb.anon.TypeofObjectId
   
-  val ObjectId: Any
+  /**
+    * A class representation of the BSON ObjectId type.
+    * @public
+    * @category BSONType
+    */
+  var ObjectId: Instantiable0[typings.mongodb.mod.ObjectId]
   
   var OrderedBulkOperation: Instantiable0[typings.mongodb.mod.OrderedBulkOperation]
   
@@ -392,7 +392,7 @@ trait TypeofMongoNpmModule extends StObject {
     * @deprecated Setting a custom promise library is deprecated the next major version will use the global Promise constructor only.
     * @public
     */
-  val Promise: TypeofPromise & Instantiable0[typings.mongodb.mod.Promise]
+  val Promise: TypeofPromise
   
   val Promise_2: Any
   
@@ -445,7 +445,7 @@ trait TypeofMongoNpmModule extends StObject {
     /* serverDescriptions */ js.UndefOr[(Map[String, ServerDescription]) | Null], 
     /* setName */ js.UndefOr[String | Null], 
     /* maxSetVersion */ js.UndefOr[Double | Null], 
-    /* maxElectionId */ js.UndefOr[typings.bson.mod.ObjectId | Null], 
+    /* maxElectionId */ js.UndefOr[ObjectId | Null], 
     /* commonWireVersion */ js.UndefOr[Double | Null], 
     /* options */ js.UndefOr[TopologyDescriptionOptions | Null], 
     typings.mongodb.mod.TopologyDescription
@@ -589,11 +589,11 @@ object TypeofMongoNpmModule {
     MongoTransactionError: Instantiable1[/* message */ String, MongoTransactionError],
     MongoUnexpectedServerResponseError: Instantiable1[/* message */ String, MongoUnexpectedServerResponseError],
     MongoWriteConcernError: Instantiable1[/* message */ ErrorDescription, MongoWriteConcernError],
-    ObjectID: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ObjectId */ Any,
-    ObjectId: Any,
+    ObjectID: Instantiable0[ObjectId] & typings.mongodb.anon.TypeofObjectId,
+    ObjectId: Instantiable0[typings.mongodb.mod.ObjectId],
     OrderedBulkOperation: Instantiable0[OrderedBulkOperation],
     ProfilingLevel: TypeofProfilingLevel,
-    Promise: TypeofPromise & Instantiable0[Promise],
+    Promise: TypeofPromise,
     Promise_2: Any,
     ReadConcern: TypeofReadConcern,
     ReadConcernLevel: TypeofReadConcernLevel,
@@ -859,13 +859,13 @@ object TypeofMongoNpmModule {
     
     inline def setMongoWriteConcernError(value: Instantiable1[/* message */ ErrorDescription, MongoWriteConcernError]): Self = StObject.set(x, "MongoWriteConcernError", value.asInstanceOf[js.Any])
     
-    inline def setObjectID(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ObjectId */ Any): Self = StObject.set(x, "ObjectID", value.asInstanceOf[js.Any])
+    inline def setObjectID(value: Instantiable0[ObjectId] & typings.mongodb.anon.TypeofObjectId): Self = StObject.set(x, "ObjectID", value.asInstanceOf[js.Any])
     
     inline def setOrderedBulkOperation(value: Instantiable0[OrderedBulkOperation]): Self = StObject.set(x, "OrderedBulkOperation", value.asInstanceOf[js.Any])
     
     inline def setProfilingLevel(value: TypeofProfilingLevel): Self = StObject.set(x, "ProfilingLevel", value.asInstanceOf[js.Any])
     
-    inline def setPromise(value: TypeofPromise & Instantiable0[Promise]): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
+    inline def setPromise(value: TypeofPromise): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
     
     inline def setPromise_2(value: Any): Self = StObject.set(x, "Promise_2", value.asInstanceOf[js.Any])
     

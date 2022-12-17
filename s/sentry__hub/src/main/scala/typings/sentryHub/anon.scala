@@ -83,6 +83,13 @@ object anon {
   @js.native
   trait FnCall extends StObject {
     
+    def apply(exception: Any): String = js.native
+    def apply(exception: Any, hint: EventHint): String = js.native
+  }
+  
+  @js.native
+  trait FnCallBreadcrumbHint extends StObject {
+    
     def apply(breadcrumb: Breadcrumb): Unit = js.native
     def apply(breadcrumb: Breadcrumb, hint: BreadcrumbHint): Unit = js.native
   }
@@ -107,13 +114,6 @@ object anon {
     
     def apply(event: Event): String = js.native
     def apply(event: Event, hint: EventHint): String = js.native
-  }
-  
-  @js.native
-  trait FnCallExceptionHint extends StObject {
-    
-    def apply(exception: Any): String = js.native
-    def apply(exception: Any, hint: EventHint): String = js.native
   }
   
   @js.native

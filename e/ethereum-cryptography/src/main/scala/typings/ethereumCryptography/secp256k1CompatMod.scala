@@ -1,7 +1,7 @@
 package typings.ethereumCryptography
 
 import typings.ethereumCryptography.anon.Data
-import typings.ethereumCryptography.anon.Noncefn
+import typings.ethereumCryptography.anon.Hashfn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,11 +25,11 @@ object secp256k1CompatMod {
     options: Unit,
     out: Output
   ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("ecdh")(publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
-  inline def ecdh(publicKey: js.typedarray.Uint8Array, privateKey: js.typedarray.Uint8Array, options: Data): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("ecdh")(publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def ecdh(publicKey: js.typedarray.Uint8Array, privateKey: js.typedarray.Uint8Array, options: Hashfn): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("ecdh")(publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def ecdh(
     publicKey: js.typedarray.Uint8Array,
     privateKey: js.typedarray.Uint8Array,
-    options: Data,
+    options: Hashfn,
     out: Output
   ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("ecdh")(publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
@@ -62,11 +62,11 @@ object secp256k1CompatMod {
     options: Unit,
     out: Output
   ): Signature = (^.asInstanceOf[js.Dynamic].applyDynamic("ecdsaSign")(msgHash.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[Signature]
-  inline def ecdsaSign(msgHash: js.typedarray.Uint8Array, privateKey: js.typedarray.Uint8Array, options: Noncefn): Signature = (^.asInstanceOf[js.Dynamic].applyDynamic("ecdsaSign")(msgHash.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Signature]
+  inline def ecdsaSign(msgHash: js.typedarray.Uint8Array, privateKey: js.typedarray.Uint8Array, options: Data): Signature = (^.asInstanceOf[js.Dynamic].applyDynamic("ecdsaSign")(msgHash.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Signature]
   inline def ecdsaSign(
     msgHash: js.typedarray.Uint8Array,
     privateKey: js.typedarray.Uint8Array,
-    options: Noncefn,
+    options: Data,
     out: Output
   ): Signature = (^.asInstanceOf[js.Dynamic].applyDynamic("ecdsaSign")(msgHash.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[Signature]
   

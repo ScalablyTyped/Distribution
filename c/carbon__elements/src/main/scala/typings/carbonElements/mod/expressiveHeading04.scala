@@ -1,6 +1,6 @@
 package typings.carbonElements.mod
 
-import typings.carbonElements.anon.MaxFontSizeFontWeight
+import typings.carbonElements.anon.Xlg
 import typings.carbonElements.carbonElementsDoubles.`1.28572`
 import typings.carbonElements.carbonElementsInts.`0`
 import typings.carbonElements.carbonElementsInts.`400`
@@ -17,8 +17,8 @@ object expressiveHeading04 {
   
   @JSImport("@carbon/elements", "expressiveHeading04.breakpoints")
   @js.native
-  def breakpoints: MaxFontSizeFontWeight = js.native
-  inline def breakpoints_=(x: MaxFontSizeFontWeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("breakpoints")(x.asInstanceOf[js.Any])
+  def breakpoints: Xlg = js.native
+  inline def breakpoints_=(x: Xlg): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("breakpoints")(x.asInstanceOf[js.Any])
   
   @JSImport("@carbon/elements", "expressiveHeading04.fontSize")
   @js.native

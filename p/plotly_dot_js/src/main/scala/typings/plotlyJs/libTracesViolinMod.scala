@@ -1,6 +1,6 @@
 package typings.plotlyJs
 
-import typings.plotlyJs.anon.PartialBoxPlotMarker
+import typings.plotlyJs.anon.PartialBoxPlotMarkerColor
 import typings.plotlyJs.anon.PartialcolorColorwidthnumColor
 import typings.plotlyJs.anon.Partialvisiblebooleancolo
 import typings.plotlyJs.anon.Partialvisiblebooleanwidt
@@ -52,7 +52,7 @@ object libTracesViolinMod {
     
     var line: PartialcolorColorwidthnumColor
     
-    var marker: PartialBoxPlotMarker
+    var marker: PartialBoxPlotMarkerColor
     
     var meanline: Partialvisiblebooleancolo
     
@@ -109,7 +109,7 @@ object libTracesViolinMod {
       hovertext: String | js.Array[String],
       jitter: Double,
       line: PartialcolorColorwidthnumColor,
-      marker: PartialBoxPlotMarker,
+      marker: PartialBoxPlotMarkerColor,
       meanline: Partialvisiblebooleancolo,
       name: String,
       offsetgroup: String,
@@ -162,7 +162,7 @@ object libTracesViolinMod {
       
       inline def setLine(value: PartialcolorColorwidthnumColor): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      inline def setMarker(value: PartialBoxPlotMarker): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+      inline def setMarker(value: PartialBoxPlotMarkerColor): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
       
       inline def setMeanline(value: Partialvisiblebooleancolo): Self = StObject.set(x, "meanline", value.asInstanceOf[js.Any])
       

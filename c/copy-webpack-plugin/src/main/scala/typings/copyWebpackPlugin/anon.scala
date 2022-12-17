@@ -32,47 +32,18 @@ object anon {
   
   trait AbsoluteFilename extends StObject {
     
-    var absoluteFilename: String
-    
-    var filename: String
-    
-    var sourceFilename: String
-    
-    var toType: ToType
-  }
-  object AbsoluteFilename {
-    
-    inline def apply(absoluteFilename: String, filename: String, sourceFilename: String, toType: ToType): AbsoluteFilename = {
-      val __obj = js.Dynamic.literal(absoluteFilename = absoluteFilename.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], sourceFilename = sourceFilename.asInstanceOf[js.Any], toType = toType.asInstanceOf[js.Any])
-      __obj.asInstanceOf[AbsoluteFilename]
-    }
-    
-    extension [Self <: AbsoluteFilename](x: Self) {
-      
-      inline def setAbsoluteFilename(value: String): Self = StObject.set(x, "absoluteFilename", value.asInstanceOf[js.Any])
-      
-      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
-      
-      inline def setSourceFilename(value: String): Self = StObject.set(x, "sourceFilename", value.asInstanceOf[js.Any])
-      
-      inline def setToType(value: ToType): Self = StObject.set(x, "toType", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Context extends StObject {
-    
     var absoluteFilename: js.UndefOr[String] = js.undefined
     
     var context: String
   }
-  object Context {
+  object AbsoluteFilename {
     
-    inline def apply(context: String): Context = {
+    inline def apply(context: String): AbsoluteFilename = {
       val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Context]
+      __obj.asInstanceOf[AbsoluteFilename]
     }
     
-    extension [Self <: Context](x: Self) {
+    extension [Self <: AbsoluteFilename](x: Self) {
       
       inline def setAbsoluteFilename(value: String): Self = StObject.set(x, "absoluteFilename", value.asInstanceOf[js.Any])
       
@@ -104,6 +75,35 @@ object anon {
       inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setSourceFilename(value: String): Self = StObject.set(x, "sourceFilename", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Filename extends StObject {
+    
+    var absoluteFilename: String
+    
+    var filename: String
+    
+    var sourceFilename: String
+    
+    var toType: ToType
+  }
+  object Filename {
+    
+    inline def apply(absoluteFilename: String, filename: String, sourceFilename: String, toType: ToType): Filename = {
+      val __obj = js.Dynamic.literal(absoluteFilename = absoluteFilename.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], sourceFilename = sourceFilename.asInstanceOf[js.Any], toType = toType.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Filename]
+    }
+    
+    extension [Self <: Filename](x: Self) {
+      
+      inline def setAbsoluteFilename(value: String): Self = StObject.set(x, "absoluteFilename", value.asInstanceOf[js.Any])
+      
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      
+      inline def setSourceFilename(value: String): Self = StObject.set(x, "sourceFilename", value.asInstanceOf[js.Any])
+      
+      inline def setToType(value: ToType): Self = StObject.set(x, "toType", value.asInstanceOf[js.Any])
     }
   }
   

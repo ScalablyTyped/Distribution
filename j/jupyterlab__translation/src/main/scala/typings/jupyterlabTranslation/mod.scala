@@ -2,6 +2,7 @@ package typings.jupyterlabTranslation
 
 import typings.jupyterlabServices.libServerconnectionMod.ServerConnection.ISettings
 import typings.jupyterlabTranslation.libBaseMod.NullTranslator_
+import typings.jupyterlabTranslation.libGettextMod.IOptions
 import typings.luminoCoreutils.mod.Token
 import typings.std.RequestInit
 import org.scalablytyped.runtime.StObject
@@ -13,6 +14,36 @@ object mod {
   @JSImport("@jupyterlab/translation", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  /**
+    * Gettext class providing localization methods.
+    */
+  @JSImport("@jupyterlab/translation", "Gettext")
+  @js.native
+  open class Gettext ()
+    extends typings.jupyterlabTranslation.libGettextMod.Gettext {
+    def this(options: IOptions) = this()
+  }
+  object Gettext {
+    
+    @JSImport("@jupyterlab/translation", "Gettext")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * `sprintf` equivalent, takes a string and some arguments to make a
+      * computed string.
+      *
+      * @param fmt - The string to interpolate.
+      * @param args - The variables to use in interpolation.
+      *
+      * ### Examples
+      * strfmt("%1 dogs are in %2", 7, "the kitchen"); => "7 dogs are in the kitchen"
+      * strfmt("I like %1, bananas and %1", "apples"); => "I like apples, bananas and apples"
+      */
+    /* static member */
+    inline def strfmt(fmt: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("strfmt")(scala.List(fmt.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  }
   
   @JSImport("@jupyterlab/translation", "ITranslator")
   @js.native

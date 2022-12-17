@@ -6,11 +6,11 @@ import typings.formatjsIntl.srcTypesMod.FormatListOptions
 import typings.formatjsIntl.srcTypesMod.FormatNumberOptions
 import typings.react.mod.FC
 import typings.reactIntl.anon.Children
-import typings.reactIntl.anon.ChildrenValue
 import typings.reactIntl.anon.Value
 import typings.reactIntl.anon.`0`
 import typings.reactIntl.anon.`1`
 import typings.reactIntl.anon.`2`
+import typings.reactIntl.anon.`3`
 import typings.reactIntl.anon.`4`
 import typings.reactIntl.reactIntlStrings.formatDate
 import typings.reactIntl.reactIntlStrings.formatDisplayName
@@ -29,21 +29,21 @@ object srcComponentsCreateFormattedComponentMod {
   
   @JSImport("react-intl/src/components/createFormattedComponent", "FormattedListParts")
   @js.native
-  val FormattedListParts: FC[FormatListOptions & Children] = js.native
+  val FormattedListParts: FC[FormatListOptions & Value] = js.native
   
   @JSImport("react-intl/src/components/createFormattedComponent", "FormattedNumberParts")
   @js.native
-  val FormattedNumberParts: FC[FormatNumberOptions & Value] = js.native
+  val FormattedNumberParts: FC[FormatNumberOptions & Children] = js.native
   
-  inline def createFormattedComponent_formatDate(name: formatDate): FC[FormatDateOptions & ChildrenValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormattedComponent")(name.asInstanceOf[js.Any]).asInstanceOf[FC[FormatDateOptions & ChildrenValue]]
+  inline def createFormattedComponent_formatDate(name: formatDate): FC[FormatDateOptions & `0`] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormattedComponent")(name.asInstanceOf[js.Any]).asInstanceOf[FC[FormatDateOptions & `0`]]
   
-  inline def createFormattedComponent_formatDisplayName(name: formatDisplayName): FC[FormatDisplayNameOptions & `2`] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormattedComponent")(name.asInstanceOf[js.Any]).asInstanceOf[FC[FormatDisplayNameOptions & `2`]]
+  inline def createFormattedComponent_formatDisplayName(name: formatDisplayName): FC[FormatDisplayNameOptions & `3`] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormattedComponent")(name.asInstanceOf[js.Any]).asInstanceOf[FC[FormatDisplayNameOptions & `3`]]
   
-  inline def createFormattedComponent_formatList(name: formatList): FC[FormatListOptions & `1`] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormattedComponent")(name.asInstanceOf[js.Any]).asInstanceOf[FC[FormatListOptions & `1`]]
+  inline def createFormattedComponent_formatList(name: formatList): FC[FormatListOptions & `2`] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormattedComponent")(name.asInstanceOf[js.Any]).asInstanceOf[FC[FormatListOptions & `2`]]
   
-  inline def createFormattedComponent_formatNumber(name: formatNumber): FC[FormatNumberOptions & `0`] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormattedComponent")(name.asInstanceOf[js.Any]).asInstanceOf[FC[FormatNumberOptions & `0`]]
+  inline def createFormattedComponent_formatNumber(name: formatNumber): FC[FormatNumberOptions & `1`] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormattedComponent")(name.asInstanceOf[js.Any]).asInstanceOf[FC[FormatNumberOptions & `1`]]
   
-  inline def createFormattedComponent_formatTime(name: formatTime): FC[FormatDateOptions & ChildrenValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormattedComponent")(name.asInstanceOf[js.Any]).asInstanceOf[FC[FormatDateOptions & ChildrenValue]]
+  inline def createFormattedComponent_formatTime(name: formatTime): FC[FormatDateOptions & `0`] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormattedComponent")(name.asInstanceOf[js.Any]).asInstanceOf[FC[FormatDateOptions & `0`]]
   
   inline def createFormattedDateTimePartsComponent[Name /* <: formatDate | formatTime */](name: Name): FC[
     (/* import warning: importer.ImportType#apply Failed type conversion: react-intl.react-intl/src/components/createFormattedComponent.Formatter[Name] */ js.Any) & `4`[Name]

@@ -7,22 +7,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TeamidUsername extends StObject {
   
   /** The unique identifier of the team. */
-  var team_id: Double
+  var team_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['team-id'] */ js.Any
   
   /** The handle for the GitHub user account. */
-  var username: String
+  var username: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['username'] */ js.Any
 }
 object TeamidUsername {
   
-  inline def apply(team_id: Double, username: String): TeamidUsername = {
+  inline def apply(
+    team_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['team-id'] */ js.Any,
+    username: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['username'] */ js.Any
+  ): TeamidUsername = {
     val __obj = js.Dynamic.literal(team_id = team_id.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamidUsername]
   }
   
   extension [Self <: TeamidUsername](x: Self) {
     
-    inline def setTeam_id(value: Double): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
+    inline def setTeam_id(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['team-id'] */ js.Any
+    ): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
     
-    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['username'] */ js.Any
+    ): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

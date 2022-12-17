@@ -48,7 +48,7 @@ type ListQuestionOptions[T /* <: Answers */] = LoopableListQuestionOptionsBase[T
   * @template F
   * The fallback-type.
   */
-type LiteralUnion[T /* <: F */, F] = T | (F & js.Object)
+type LiteralUnion[T /* <: F */, F] = T | F
 
 type NumberQuestionOptions[T /* <: Answers */] = InputQuestionOptions[T]
 

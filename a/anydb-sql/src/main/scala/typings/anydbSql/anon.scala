@@ -6,23 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait `0` extends StObject {
-    
-    def LOWER(c: typings.anydbSql.mod.Column[String]): typings.anydbSql.mod.Column[String]
-  }
-  object `0` {
-    
-    inline def apply(LOWER: typings.anydbSql.mod.Column[String] => typings.anydbSql.mod.Column[String]): `0` = {
-      val __obj = js.Dynamic.literal(LOWER = js.Any.fromFunction1(LOWER))
-      __obj.asInstanceOf[`0`]
-    }
-    
-    extension [Self <: `0`](x: Self) {
-      
-      inline def setLOWER(value: typings.anydbSql.mod.Column[String] => typings.anydbSql.mod.Column[String]): Self = StObject.set(x, "LOWER", js.Any.fromFunction1(value))
-    }
-  }
-  
   trait Column extends StObject {
     
     var column: String
@@ -107,21 +90,38 @@ object anon {
   
   trait LOWER extends StObject {
     
-    def LOWER(name: typings.anydbSql.mod.Column[String]): typings.anydbSql.mod.Column[String]
-    
-    def RTRIM(name: typings.anydbSql.mod.Column[String]): typings.anydbSql.mod.Column[String]
+    def LOWER(c: typings.anydbSql.mod.Column[String]): typings.anydbSql.mod.Column[String]
   }
   object LOWER {
     
-    inline def apply(
-      LOWER: typings.anydbSql.mod.Column[String] => typings.anydbSql.mod.Column[String],
-      RTRIM: typings.anydbSql.mod.Column[String] => typings.anydbSql.mod.Column[String]
-    ): LOWER = {
-      val __obj = js.Dynamic.literal(LOWER = js.Any.fromFunction1(LOWER), RTRIM = js.Any.fromFunction1(RTRIM))
+    inline def apply(LOWER: typings.anydbSql.mod.Column[String] => typings.anydbSql.mod.Column[String]): LOWER = {
+      val __obj = js.Dynamic.literal(LOWER = js.Any.fromFunction1(LOWER))
       __obj.asInstanceOf[LOWER]
     }
     
     extension [Self <: LOWER](x: Self) {
+      
+      inline def setLOWER(value: typings.anydbSql.mod.Column[String] => typings.anydbSql.mod.Column[String]): Self = StObject.set(x, "LOWER", js.Any.fromFunction1(value))
+    }
+  }
+  
+  trait RTRIM extends StObject {
+    
+    def LOWER(name: typings.anydbSql.mod.Column[String]): typings.anydbSql.mod.Column[String]
+    
+    def RTRIM(name: typings.anydbSql.mod.Column[String]): typings.anydbSql.mod.Column[String]
+  }
+  object RTRIM {
+    
+    inline def apply(
+      LOWER: typings.anydbSql.mod.Column[String] => typings.anydbSql.mod.Column[String],
+      RTRIM: typings.anydbSql.mod.Column[String] => typings.anydbSql.mod.Column[String]
+    ): RTRIM = {
+      val __obj = js.Dynamic.literal(LOWER = js.Any.fromFunction1(LOWER), RTRIM = js.Any.fromFunction1(RTRIM))
+      __obj.asInstanceOf[RTRIM]
+    }
+    
+    extension [Self <: RTRIM](x: Self) {
       
       inline def setLOWER(value: typings.anydbSql.mod.Column[String] => typings.anydbSql.mod.Column[String]): Self = StObject.set(x, "LOWER", js.Any.fromFunction1(value))
       

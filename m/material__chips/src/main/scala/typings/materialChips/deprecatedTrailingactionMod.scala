@@ -8,13 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object deprecatedTrailingactionMod {
   
-  @JSImport("@material/chips/deprecated/trailingaction", JSImport.Default)
-  @js.native
-  open class default ()
-    extends typings.materialChips.deprecatedTrailingactionFoundationMod.default {
-    def this(adapter: PartialMDCChipTrailingAct) = this()
-  }
-  
   @JSImport("@material/chips/deprecated/trailingaction", "MDCChipTrailingAction")
   @js.native
   open class MDCChipTrailingAction protected ()

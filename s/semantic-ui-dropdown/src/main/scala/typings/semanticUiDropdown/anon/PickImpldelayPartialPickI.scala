@@ -61,7 +61,7 @@ trait PickImpldelayPartialPickI
   
   var debug: js.UndefOr[Boolean] = js.undefined
   
-  var delay: DelaySettings & js.UndefOr[DelaySettings]
+  var delay: DelaySettings
   
   var direction: js.UndefOr[auto | upward | downward] = js.undefined
   
@@ -169,7 +169,7 @@ trait PickImpldelayPartialPickI
 }
 object PickImpldelayPartialPickI {
   
-  inline def apply(delay: DelaySettings & js.UndefOr[DelaySettings]): PickImpldelayPartialPickI = {
+  inline def apply(delay: DelaySettings): PickImpldelayPartialPickI = {
     val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldelayPartialPickI]
   }
@@ -220,7 +220,7 @@ object PickImpldelayPartialPickI {
     
     inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    inline def setDelay(value: DelaySettings & js.UndefOr[DelaySettings]): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: DelaySettings): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     inline def setDirection(value: auto | upward | downward): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

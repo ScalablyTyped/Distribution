@@ -28,7 +28,7 @@ trait PickImpldurationPartialPi
   
   var debug: js.UndefOr[Boolean] = js.undefined
   
-  var duration: Double & js.UndefOr[Double]
+  var duration: Double
   
   var easing: js.UndefOr[String] = js.undefined
   
@@ -92,7 +92,7 @@ trait PickImpldurationPartialPi
 }
 object PickImpldurationPartialPi {
   
-  inline def apply(duration: Double & js.UndefOr[Double]): PickImpldurationPartialPi = {
+  inline def apply(duration: Double): PickImpldurationPartialPi = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldurationPartialPi]
   }
@@ -115,7 +115,7 @@ object PickImpldurationPartialPi {
     
     inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    inline def setDuration(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     

@@ -12,13 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object textField {
   
-  @JSImport("material-components-web", "textField.default")
-  @js.native
-  open class default ()
-    extends typings.materialTextfield.mod.default {
-    def this(adapter: PartialMDCTextFieldIconAd) = this()
-  }
-  
   /**
     * Label should always float for these types as they show some UI even if value
     * is empty.

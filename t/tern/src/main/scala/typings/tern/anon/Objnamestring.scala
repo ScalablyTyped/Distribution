@@ -55,7 +55,7 @@ trait Objnamestring extends StObject {
   def isEmpty(args: Any*): Boolean = js.native
   
   /** The name of the type, if any. */
-  var name: js.UndefOr[String] & String = js.native
+  var name: js.UndefOr[String] = js.native
   
   /** The origin file of the type. */
   var origin: String = js.native

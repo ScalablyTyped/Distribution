@@ -2,8 +2,8 @@ package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
 import typings.antd.anon.DownIcon
+import typings.antd.anon.`2`
 import typings.antd.anon.`3`
-import typings.antd.anon.`4`
 import typings.antd.antdStrings.`additions removals`
 import typings.antd.antdStrings.`additions text`
 import typings.antd.antdStrings.`inline`
@@ -115,7 +115,7 @@ object libInputNumberMod extends Shortcut {
   
   @JSImport("antd/lib/input-number", JSImport.Default)
   @js.native
-  val default: (js.Function1[/* props */ `3` & InputNumberProps[ValueType], ReactElement]) & `4` = js.native
+  val default: (js.Function1[/* props */ `2` & InputNumberProps[ValueType], ReactElement]) & `3` = js.native
   
   /* Inlined parent std.Omit<rc-input-number.rc-input-number.InputNumberProps<T>, 'prefix' | 'size' | 'controls'> */
   trait InputNumberProps[T /* <: ValueType */] extends StObject {
@@ -1475,8 +1475,8 @@ object libInputNumberMod extends Shortcut {
     }
   }
   
-  type _To = (js.Function1[/* props */ `3` & InputNumberProps[ValueType], ReactElement]) & `4`
+  type _To = (js.Function1[/* props */ `2` & InputNumberProps[ValueType], ReactElement]) & `3`
   
   /* This means you don't have to write `default`, but can instead just say `libInputNumberMod.foo` */
-  override def _to: (js.Function1[/* props */ `3` & InputNumberProps[ValueType], ReactElement]) & `4` = default
+  override def _to: (js.Function1[/* props */ `2` & InputNumberProps[ValueType], ReactElement]) & `3` = default
 }

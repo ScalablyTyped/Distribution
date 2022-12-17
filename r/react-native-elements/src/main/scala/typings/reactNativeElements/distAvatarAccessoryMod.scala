@@ -20,7 +20,6 @@ import typings.reactNative.mod.ImageLoadEventData
 import typings.reactNative.mod.ImageProgressEventDataIOS
 import typings.reactNative.mod.ImageResizeMode
 import typings.reactNative.mod.ImageSourcePropType
-import typings.reactNative.mod.ImageStyle
 import typings.reactNative.mod.ImageURISource
 import typings.reactNative.mod.Insets
 import typings.reactNative.mod.LayoutChangeEvent
@@ -222,13 +221,13 @@ object distAvatarAccessoryMod extends Shortcut {
     
     var onLoadStart: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onLongPress: (js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]) & js.UndefOr[js.Function0[Unit]]
+    var onLongPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
     var onMagicTap: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onPartialLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onPress: (js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]) & js.UndefOr[js.Function0[Unit]]
+    var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
     var onPressIn: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
@@ -266,7 +265,7 @@ object distAvatarAccessoryMod extends Shortcut {
     
     var source: js.UndefOr[ImageSourcePropType] = js.undefined
     
-    var style: (js.UndefOr[ViewStyle | TextStyle]) & js.UndefOr[StyleProp[ImageStyle]] & js.UndefOr[StyleProp[ViewStyle]]
+    var style: js.UndefOr[ViewStyle | TextStyle] = js.undefined
     
     var suppressHighlighting: js.UndefOr[Boolean] = js.undefined
     
@@ -288,12 +287,8 @@ object distAvatarAccessoryMod extends Shortcut {
   }
   object AccessoryProps {
     
-    inline def apply(
-      onLongPress: (js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]) & js.UndefOr[js.Function0[Unit]],
-      onPress: (js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]) & js.UndefOr[js.Function0[Unit]],
-      style: (js.UndefOr[ViewStyle | TextStyle]) & js.UndefOr[StyleProp[ImageStyle]] & js.UndefOr[StyleProp[ViewStyle]]
-    ): AccessoryProps = {
-      val __obj = js.Dynamic.literal(onLongPress = onLongPress.asInstanceOf[js.Any], onPress = onPress.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
+    inline def apply(): AccessoryProps = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AccessoryProps]
     }
     
@@ -598,9 +593,9 @@ object distAvatarAccessoryMod extends Shortcut {
       
       inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
       
-      inline def setOnLongPress(
-        value: (js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]) & js.UndefOr[js.Function0[Unit]]
-      ): Self = StObject.set(x, "onLongPress", value.asInstanceOf[js.Any])
+      inline def setOnLongPress(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onLongPress", js.Any.fromFunction1(value))
+      
+      inline def setOnLongPressUndefined: Self = StObject.set(x, "onLongPress", js.undefined)
       
       inline def setOnMagicTap(value: () => Unit): Self = StObject.set(x, "onMagicTap", js.Any.fromFunction0(value))
       
@@ -610,9 +605,7 @@ object distAvatarAccessoryMod extends Shortcut {
       
       inline def setOnPartialLoadUndefined: Self = StObject.set(x, "onPartialLoad", js.undefined)
       
-      inline def setOnPress(
-        value: (js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]) & js.UndefOr[js.Function0[Unit]]
-      ): Self = StObject.set(x, "onPress", value.asInstanceOf[js.Any])
+      inline def setOnPress(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
       
       inline def setOnPressIn(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPressIn", js.Any.fromFunction1(value))
       
@@ -621,6 +614,8 @@ object distAvatarAccessoryMod extends Shortcut {
       inline def setOnPressOut(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPressOut", js.Any.fromFunction1(value))
       
       inline def setOnPressOutUndefined: Self = StObject.set(x, "onPressOut", js.undefined)
+      
+      inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
       
       inline def setOnProgress(value: /* event */ NativeSyntheticEvent[ImageProgressEventDataIOS] => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
       
@@ -694,9 +689,9 @@ object distAvatarAccessoryMod extends Shortcut {
       
       inline def setSourceVarargs(value: ImageURISource*): Self = StObject.set(x, "source", js.Array(value*))
       
-      inline def setStyle(
-        value: (js.UndefOr[ViewStyle | TextStyle]) & js.UndefOr[StyleProp[ImageStyle]] & js.UndefOr[StyleProp[ViewStyle]]
-      ): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: ViewStyle | TextStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
       inline def setSuppressHighlighting(value: Boolean): Self = StObject.set(x, "suppressHighlighting", value.asInstanceOf[js.Any])
       

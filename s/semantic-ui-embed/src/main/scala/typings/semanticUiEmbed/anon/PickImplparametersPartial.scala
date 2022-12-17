@@ -53,7 +53,7 @@ trait PickImplparametersPartial
   
   var onPlaceholderDisplay: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
-  var parameters: (`false` | ParametersSettings) & (js.UndefOr[`false` | ParametersSettings])
+  var parameters: `false` | ParametersSettings
   
   var performance: js.UndefOr[Boolean] = js.undefined
   
@@ -71,7 +71,7 @@ trait PickImplparametersPartial
 }
 object PickImplparametersPartial {
   
-  inline def apply(parameters: (`false` | ParametersSettings) & (js.UndefOr[`false` | ParametersSettings])): PickImplparametersPartial = {
+  inline def apply(parameters: `false` | ParametersSettings): PickImplparametersPartial = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplparametersPartial]
   }
@@ -144,7 +144,7 @@ object PickImplparametersPartial {
     
     inline def setOnPlaceholderDisplayUndefined: Self = StObject.set(x, "onPlaceholderDisplay", js.undefined)
     
-    inline def setParameters(value: (`false` | ParametersSettings) & (js.UndefOr[`false` | ParametersSettings])): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: `false` | ParametersSettings): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
     

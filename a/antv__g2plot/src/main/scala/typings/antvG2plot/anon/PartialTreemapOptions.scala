@@ -50,7 +50,7 @@ trait PartialTreemapOptions extends StObject {
   
   var height: js.UndefOr[Double] = js.undefined
   
-  var hierarchyConfig: js.UndefOr[OmitHierarchyOptionastype] = js.undefined
+  var hierarchyConfig: js.UndefOr[OmitHierarchyOptionastypeIgnoreParentValue] = js.undefined
   
   var interactions: js.UndefOr[js.Array[Interaction]] = js.undefined
   
@@ -159,7 +159,7 @@ object PartialTreemapOptions {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setHierarchyConfig(value: OmitHierarchyOptionastype): Self = StObject.set(x, "hierarchyConfig", value.asInstanceOf[js.Any])
+    inline def setHierarchyConfig(value: OmitHierarchyOptionastypeIgnoreParentValue): Self = StObject.set(x, "hierarchyConfig", value.asInstanceOf[js.Any])
     
     inline def setHierarchyConfigUndefined: Self = StObject.set(x, "hierarchyConfig", js.undefined)
     

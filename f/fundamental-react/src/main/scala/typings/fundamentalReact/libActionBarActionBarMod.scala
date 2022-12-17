@@ -524,7 +524,7 @@ object libActionBarActionBarMod {
     
     var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var title: String & js.UndefOr[String]
+    var title: String
     
     var titleProps: js.UndefOr[Any] = js.undefined
     
@@ -538,7 +538,7 @@ object libActionBarActionBarMod {
   }
   object ActionBarProps {
     
-    inline def apply(title: String & js.UndefOr[String]): ActionBarProps = {
+    inline def apply(title: String): ActionBarProps = {
       val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[ActionBarProps]
     }
@@ -1265,7 +1265,7 @@ object libActionBarActionBarMod {
       
       inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
       
-      inline def setTitle(value: String & js.UndefOr[String]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
       inline def setTitleProps(value: Any): Self = StObject.set(x, "titleProps", value.asInstanceOf[js.Any])
       

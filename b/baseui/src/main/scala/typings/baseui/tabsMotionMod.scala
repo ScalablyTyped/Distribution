@@ -2,7 +2,7 @@ package typings.baseui
 
 import typings.baseui.anon.Animate
 import typings.baseui.anon.Fill
-import typings.baseui.anon.FillOrientation
+import typings.baseui.anon.FocusVisible
 import typings.baseui.anon.HasEndEnhancer
 import typings.baseui.anon.Pad
 import typings.baseui.anon.`258`
@@ -74,7 +74,7 @@ object tabsMotionMod {
   
   @JSImport("baseui/tabs-motion", "StyledTab")
   @js.native
-  val StyledTab: StyletronComponent[button, Fill] = js.native
+  val StyledTab: StyletronComponent[button, FocusVisible] = js.native
   
   @JSImport("baseui/tabs-motion", "StyledTabBar")
   @js.native
@@ -90,7 +90,7 @@ object tabsMotionMod {
   
   @JSImport("baseui/tabs-motion", "StyledTabList")
   @js.native
-  val StyledTabList: StyletronComponent[div, FillOrientation] = js.native
+  val StyledTabList: StyletronComponent[div, Fill] = js.native
   
   @JSImport("baseui/tabs-motion", "StyledTabPanel")
   @js.native

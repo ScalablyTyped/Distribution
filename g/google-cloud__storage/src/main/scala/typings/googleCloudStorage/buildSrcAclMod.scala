@@ -52,15 +52,10 @@ object buildSrcAclMod {
     */
   @JSImport("@google-cloud/storage/build/src/acl", "Acl")
   @js.native
-  open class Acl protected ()
-    extends StObject
-       with AclRoleAccessorMethods {
+  open class Acl protected () extends AclRoleAccessorMethods {
     def this(options: AclOptions) = this()
     
     var default: Acl = js.native
-    
-    /* CompleteClass */
-    override def _assignAccessMethods(role: String): Unit = js.native
     
     def add(options: AddAclOptions): js.Promise[AddAclResponse] = js.native
     def add(options: AddAclOptions, callback: AddAclCallback): Unit = js.native
@@ -99,6 +94,52 @@ object buildSrcAclMod {
     
     def update(options: UpdateAclOptions): js.Promise[UpdateAclResponse] = js.native
     def update(options: UpdateAclOptions, callback: UpdateAclCallback): Unit = js.native
+  }
+  
+  /**
+    * Attach functionality to a {@link Storage.acl} instance. This will add an
+    * object for each role group (owners, readers, and writers), with each object
+    * containing methods to add or delete a type of entity.
+    *
+    * As an example, here are a few methods that are created.
+    *
+    *   myBucket.acl.readers.deleteGroup('groupId', function(err) {});
+    *
+    *   myBucket.acl.owners.addUser('email@example.com', function(err, acl) {});
+    *
+    *   myBucket.acl.writers.addDomain('example.com', function(err, acl) {});
+    *
+    * @private
+    */
+  @JSImport("@google-cloud/storage/build/src/acl", "AclRoleAccessorMethods")
+  @js.native
+  open class AclRoleAccessorMethods () extends StObject {
+    
+    def _assignAccessMethods(role: String): Unit = js.native
+  }
+  object AclRoleAccessorMethods {
+    
+    @JSImport("@google-cloud/storage/build/src/acl", "AclRoleAccessorMethods")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("@google-cloud/storage/build/src/acl", "AclRoleAccessorMethods.accessMethods")
+    @js.native
+    def accessMethods: Any = js.native
+    inline def accessMethods_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("accessMethods")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("@google-cloud/storage/build/src/acl", "AclRoleAccessorMethods.entities")
+    @js.native
+    def entities: Any = js.native
+    inline def entities_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("entities")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("@google-cloud/storage/build/src/acl", "AclRoleAccessorMethods.roles")
+    @js.native
+    def roles: Any = js.native
+    inline def roles_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("roles")(x.asInstanceOf[js.Any])
   }
   
   trait AccessControlObject extends StObject {
@@ -144,38 +185,6 @@ object buildSrcAclMod {
       inline def setPathPrefix(value: String): Self = StObject.set(x, "pathPrefix", value.asInstanceOf[js.Any])
       
       inline def setRequest(value: (DecorateRequestOptions, BodyResponseCallback) => Unit): Self = StObject.set(x, "request", js.Any.fromFunction2(value))
-    }
-  }
-  
-  /**
-    * Attach functionality to a {@link Storage.acl} instance. This will add an
-    * object for each role group (owners, readers, and writers), with each object
-    * containing methods to add or delete a type of entity.
-    *
-    * As an example, here are a few methods that are created.
-    *
-    *   myBucket.acl.readers.deleteGroup('groupId', function(err) {});
-    *
-    *   myBucket.acl.owners.addUser('email@example.com', function(err, acl) {});
-    *
-    *   myBucket.acl.writers.addDomain('example.com', function(err, acl) {});
-    *
-    * @private
-    */
-  trait AclRoleAccessorMethods extends StObject {
-    
-    def _assignAccessMethods(role: String): Unit
-  }
-  object AclRoleAccessorMethods {
-    
-    inline def apply(_assignAccessMethods: String => Unit): AclRoleAccessorMethods = {
-      val __obj = js.Dynamic.literal(_assignAccessMethods = js.Any.fromFunction1(_assignAccessMethods))
-      __obj.asInstanceOf[AclRoleAccessorMethods]
-    }
-    
-    extension [Self <: AclRoleAccessorMethods](x: Self) {
-      
-      inline def set_assignAccessMethods(value: String => Unit): Self = StObject.set(x, "_assignAccessMethods", js.Any.fromFunction1(value))
     }
   }
   

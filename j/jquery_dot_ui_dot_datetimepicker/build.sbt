@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_ui_dot_datetimepicker"
-version := "0.3-dt-20221103Z-3127c0"
+version := "0.3-dt-20221103Z-f82318"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "jquery" % "3.5-dt-20221103Z-20efda",
-  "org.scalablytyped" %%% "jqueryui" % "1.12-dt-20211202Z-cec445",
-  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20211202Z-224716",
-  "org.scalablytyped" %%% "std" % "4.9-c133ce")
+  "org.scalablytyped" %%% "jquery" % "3.5-dt-20221103Z-9a2a4d",
+  "org.scalablytyped" %%% "jqueryui" % "1.12-dt-20211202Z-01275a",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20211202Z-4e4849",
+  "org.scalablytyped" %%% "std" % "4.9-5f989f")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

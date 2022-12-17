@@ -1,9 +1,9 @@
 package typings.gestalt.mod
 
 import typings.gestalt.anon.DangerouslydangerouslyDisableOnNavigation
+import typings.gestalt.anon.EventSyntheticEvent
 import typings.gestalt.anon.IsFocusVisible
 import typings.gestalt.anon.OnDismissStart
-import typings.gestalt.anon.`0`
 import typings.gestalt.gestaltStrings.className
 import typings.gestalt.gestaltStrings.div
 import typings.gestalt.gestaltStrings.onClick
@@ -172,7 +172,7 @@ type AbstractEventHandler[T /* <: (SyntheticEvent[HTMLElement, Event]) | Event *
 
 type BoxPassthroughProps = (Omit[ComponentProps[div], onClick | className | style | ref]) & RefAttributes[HTMLDivElement]
 
-type EventHandlerType = js.Function1[/* args */ `0`, Unit]
+type EventHandlerType = js.Function1[/* args */ EventSyntheticEvent, Unit]
 
 type OnNavigationType = js.Function1[/* args */ OnNavigationArgs, js.UndefOr[EventHandlerType | Null]]
 

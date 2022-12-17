@@ -147,7 +147,7 @@ object libSelectionSelectionMod {
     var canSelectItem: js.UndefOr[js.Function2[/* item */ TItem, /* index */ js.UndefOr[Double], Boolean]] = js.undefined
     
     /** Custom logic to generate item keys. Required if `TItem` does not have a `key` property. */
-    var getKey: (js.UndefOr[js.Function2[/* item */ TItem, /* index */ js.UndefOr[Double], String | Double]]) & (js.Function2[/* item */ TItem, /* index */ js.UndefOr[Double], String | Double])
+    var getKey: js.UndefOr[js.Function2[/* item */ TItem, /* index */ js.UndefOr[Double], String | Double]] = js.undefined
     
     var items: js.UndefOr[js.Array[TItem]] = js.undefined
     
@@ -159,10 +159,8 @@ object libSelectionSelectionMod {
   }
   object ISelectionOptionsWithRequiredGetKey {
     
-    inline def apply[TItem](
-      getKey: (js.UndefOr[js.Function2[/* item */ TItem, /* index */ js.UndefOr[Double], String | Double]]) & (js.Function2[/* item */ TItem, /* index */ js.UndefOr[Double], String | Double])
-    ): ISelectionOptionsWithRequiredGetKey[TItem] = {
-      val __obj = js.Dynamic.literal(getKey = getKey.asInstanceOf[js.Any])
+    inline def apply[TItem](): ISelectionOptionsWithRequiredGetKey[TItem] = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISelectionOptionsWithRequiredGetKey[TItem]]
     }
     
@@ -172,9 +170,9 @@ object libSelectionSelectionMod {
       
       inline def setCanSelectItemUndefined: Self = StObject.set(x, "canSelectItem", js.undefined)
       
-      inline def setGetKey(
-        value: (js.UndefOr[js.Function2[/* item */ TItem, /* index */ js.UndefOr[Double], String | Double]]) & (js.Function2[/* item */ TItem, /* index */ js.UndefOr[Double], String | Double])
-      ): Self = StObject.set(x, "getKey", value.asInstanceOf[js.Any])
+      inline def setGetKey(value: (/* item */ TItem, /* index */ js.UndefOr[Double]) => String | Double): Self = StObject.set(x, "getKey", js.Any.fromFunction2(value))
+      
+      inline def setGetKeyUndefined: Self = StObject.set(x, "getKey", js.undefined)
       
       inline def setItems(value: js.Array[TItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       

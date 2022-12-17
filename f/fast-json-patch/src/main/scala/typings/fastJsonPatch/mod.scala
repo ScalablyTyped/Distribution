@@ -320,16 +320,6 @@ object mod {
     def this(message: String, name: JsonPatchErrorName, index: Unit, operation: Any, tree: Any) = this()
     def this(message: String, name: JsonPatchErrorName, index: Unit, operation: Unit, tree: Any) = this()
   }
-  @JSImport("fast-json-patch", "JsonPatchError")
-  @js.native
-  val JsonPatchError: Instantiable5[
-    /* message */ String, 
-    /* name */ JsonPatchErrorName, 
-    /* index */ js.UndefOr[Double], 
-    /* operation */ js.UndefOr[Any], 
-    /* tree */ js.UndefOr[Any], 
-    PatchError
-  ] = js.native
   
   inline def applyOperation[T](document: T, operation: Operation): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
   inline def applyOperation[T](document: T, operation: Operation, validateOperation: Boolean): OperationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOperation")(document.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], validateOperation.asInstanceOf[js.Any])).asInstanceOf[OperationResult[T]]
@@ -538,9 +528,6 @@ object mod {
   inline def compare(tree1: js.Object, tree2: js.Object): js.Array[Operation] = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(tree1.asInstanceOf[js.Any], tree2.asInstanceOf[js.Any])).asInstanceOf[js.Array[Operation]]
   inline def compare(tree1: js.Object, tree2: js.Object, invertible: Boolean): js.Array[Operation] = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(tree1.asInstanceOf[js.Any], tree2.asInstanceOf[js.Any], invertible.asInstanceOf[js.Any])).asInstanceOf[js.Array[Operation]]
   
-  @JSImport("fast-json-patch", "deepClone")
-  @js.native
-  val deepClone: js.Function1[/* obj */ Any, Any] = js.native
   inline def deepClone(obj: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deepClone")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def escapePathComponent(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapePathComponent")(path.asInstanceOf[js.Any]).asInstanceOf[String]

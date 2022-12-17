@@ -61,13 +61,13 @@ trait PickImplvaluePartialPickI
   
   var storageMethod: js.UndefOr[cookie | localstorage | sessionstorage] = js.undefined
   
-  var value: Any & js.UndefOr[Any]
+  var value: Any
   
   var verbose: js.UndefOr[Boolean] = js.undefined
 }
 object PickImplvaluePartialPickI {
   
-  inline def apply(value: Any & js.UndefOr[Any]): PickImplvaluePartialPickI = {
+  inline def apply(value: Any): PickImplvaluePartialPickI = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplvaluePartialPickI]
   }
@@ -158,7 +158,7 @@ object PickImplvaluePartialPickI {
     
     inline def setStorageMethodUndefined: Self = StObject.set(x, "storageMethod", js.undefined)
     
-    inline def setValue(value: Any & js.UndefOr[Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     

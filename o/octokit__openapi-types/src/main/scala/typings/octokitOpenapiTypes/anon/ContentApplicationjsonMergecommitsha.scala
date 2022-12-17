@@ -1,0 +1,22 @@
+package typings.octokitOpenapiTypes.anon
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait ContentApplicationjsonMergecommitsha extends StObject {
+  
+  var content: ApplicationjsonMergecommitsha
+}
+object ContentApplicationjsonMergecommitsha {
+  
+  inline def apply(content: ApplicationjsonMergecommitsha): ContentApplicationjsonMergecommitsha = {
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ContentApplicationjsonMergecommitsha]
+  }
+  
+  extension [Self <: ContentApplicationjsonMergecommitsha](x: Self) {
+    
+    inline def setContent(value: ApplicationjsonMergecommitsha): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+  }
+}

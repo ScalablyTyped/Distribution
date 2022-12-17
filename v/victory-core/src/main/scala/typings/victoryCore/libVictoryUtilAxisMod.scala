@@ -1,6 +1,6 @@
 package typings.victoryCore
 
-import typings.victoryCore.anon.X
+import typings.victoryCore.anon.Y
 import typings.victoryCore.libTypesPropTypesMod.D3Scale
 import typings.victoryCore.victoryCoreStrings.negative
 import typings.victoryCore.victoryCoreStrings.positive
@@ -30,7 +30,7 @@ object libVictoryUtilAxisMod {
   inline def getDomain(props: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getDomain")(props.asInstanceOf[js.Any]).asInstanceOf[Any]
   inline def getDomain(props: Any, axis: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getDomain")(props.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def getOrigin(domain: Any): X = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrigin")(domain.asInstanceOf[js.Any]).asInstanceOf[X]
+  inline def getOrigin(domain: Any): Y = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrigin")(domain.asInstanceOf[js.Any]).asInstanceOf[Y]
   
   inline def getOriginSign(origin: Any, domain: Any): positive | negative = (^.asInstanceOf[js.Dynamic].applyDynamic("getOriginSign")(origin.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[positive | negative]
   

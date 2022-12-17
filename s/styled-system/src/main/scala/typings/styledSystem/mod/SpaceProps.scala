@@ -105,7 +105,7 @@ object SpaceProps {
     
     inline def setMUndefined: Self = StObject.set(x, "m", js.undefined)
     
-    inline def setMVarargs(value: (TVal | Null)*): Self = StObject.set(x, "m", js.Array(value :_*))
+    inline def setMVarargs(value: (TVal | Null)*): Self = StObject.set(x, "m", js.Array(value*))
     
     inline def setMargin(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
@@ -115,7 +115,7 @@ object SpaceProps {
     
     inline def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
     
-    inline def setMarginBottomVarargs(value: (TVal | Null)*): Self = StObject.set(x, "marginBottom", js.Array(value :_*))
+    inline def setMarginBottomVarargs(value: (TVal | Null)*): Self = StObject.set(x, "marginBottom", js.Array(value*))
     
     inline def setMarginLeft(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
     
@@ -123,7 +123,7 @@ object SpaceProps {
     
     inline def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
     
-    inline def setMarginLeftVarargs(value: (TVal | Null)*): Self = StObject.set(x, "marginLeft", js.Array(value :_*))
+    inline def setMarginLeftVarargs(value: (TVal | Null)*): Self = StObject.set(x, "marginLeft", js.Array(value*))
     
     inline def setMarginNull: Self = StObject.set(x, "margin", null)
     
@@ -133,7 +133,7 @@ object SpaceProps {
     
     inline def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
     
-    inline def setMarginRightVarargs(value: (TVal | Null)*): Self = StObject.set(x, "marginRight", js.Array(value :_*))
+    inline def setMarginRightVarargs(value: (TVal | Null)*): Self = StObject.set(x, "marginRight", js.Array(value*))
     
     inline def setMarginTop(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
     
@@ -141,11 +141,11 @@ object SpaceProps {
     
     inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
     
-    inline def setMarginTopVarargs(value: (TVal | Null)*): Self = StObject.set(x, "marginTop", js.Array(value :_*))
+    inline def setMarginTopVarargs(value: (TVal | Null)*): Self = StObject.set(x, "marginTop", js.Array(value*))
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    inline def setMarginVarargs(value: (TVal | Null)*): Self = StObject.set(x, "margin", js.Array(value :_*))
+    inline def setMarginVarargs(value: (TVal | Null)*): Self = StObject.set(x, "margin", js.Array(value*))
     
     inline def setMarginX(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "marginX", value.asInstanceOf[js.Any])
     
@@ -153,7 +153,7 @@ object SpaceProps {
     
     inline def setMarginXUndefined: Self = StObject.set(x, "marginX", js.undefined)
     
-    inline def setMarginXVarargs(value: (TVal | Null)*): Self = StObject.set(x, "marginX", js.Array(value :_*))
+    inline def setMarginXVarargs(value: (TVal | Null)*): Self = StObject.set(x, "marginX", js.Array(value*))
     
     inline def setMarginY(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "marginY", value.asInstanceOf[js.Any])
     
@@ -161,7 +161,7 @@ object SpaceProps {
     
     inline def setMarginYUndefined: Self = StObject.set(x, "marginY", js.undefined)
     
-    inline def setMarginYVarargs(value: (TVal | Null)*): Self = StObject.set(x, "marginY", js.Array(value :_*))
+    inline def setMarginYVarargs(value: (TVal | Null)*): Self = StObject.set(x, "marginY", js.Array(value*))
     
     inline def setMb(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
     
@@ -169,7 +169,7 @@ object SpaceProps {
     
     inline def setMbUndefined: Self = StObject.set(x, "mb", js.undefined)
     
-    inline def setMbVarargs(value: (TVal | Null)*): Self = StObject.set(x, "mb", js.Array(value :_*))
+    inline def setMbVarargs(value: (TVal | Null)*): Self = StObject.set(x, "mb", js.Array(value*))
     
     inline def setMl(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
     
@@ -177,7 +177,7 @@ object SpaceProps {
     
     inline def setMlUndefined: Self = StObject.set(x, "ml", js.undefined)
     
-    inline def setMlVarargs(value: (TVal | Null)*): Self = StObject.set(x, "ml", js.Array(value :_*))
+    inline def setMlVarargs(value: (TVal | Null)*): Self = StObject.set(x, "ml", js.Array(value*))
     
     inline def setMr(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "mr", value.asInstanceOf[js.Any])
     
@@ -185,7 +185,7 @@ object SpaceProps {
     
     inline def setMrUndefined: Self = StObject.set(x, "mr", js.undefined)
     
-    inline def setMrVarargs(value: (TVal | Null)*): Self = StObject.set(x, "mr", js.Array(value :_*))
+    inline def setMrVarargs(value: (TVal | Null)*): Self = StObject.set(x, "mr", js.Array(value*))
     
     inline def setMt(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
     
@@ -193,7 +193,7 @@ object SpaceProps {
     
     inline def setMtUndefined: Self = StObject.set(x, "mt", js.undefined)
     
-    inline def setMtVarargs(value: (TVal | Null)*): Self = StObject.set(x, "mt", js.Array(value :_*))
+    inline def setMtVarargs(value: (TVal | Null)*): Self = StObject.set(x, "mt", js.Array(value*))
     
     inline def setMx(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "mx", value.asInstanceOf[js.Any])
     
@@ -201,7 +201,7 @@ object SpaceProps {
     
     inline def setMxUndefined: Self = StObject.set(x, "mx", js.undefined)
     
-    inline def setMxVarargs(value: (TVal | Null)*): Self = StObject.set(x, "mx", js.Array(value :_*))
+    inline def setMxVarargs(value: (TVal | Null)*): Self = StObject.set(x, "mx", js.Array(value*))
     
     inline def setMy(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
     
@@ -209,7 +209,7 @@ object SpaceProps {
     
     inline def setMyUndefined: Self = StObject.set(x, "my", js.undefined)
     
-    inline def setMyVarargs(value: (TVal | Null)*): Self = StObject.set(x, "my", js.Array(value :_*))
+    inline def setMyVarargs(value: (TVal | Null)*): Self = StObject.set(x, "my", js.Array(value*))
     
     inline def setP(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
@@ -217,7 +217,7 @@ object SpaceProps {
     
     inline def setPUndefined: Self = StObject.set(x, "p", js.undefined)
     
-    inline def setPVarargs(value: (TVal | Null)*): Self = StObject.set(x, "p", js.Array(value :_*))
+    inline def setPVarargs(value: (TVal | Null)*): Self = StObject.set(x, "p", js.Array(value*))
     
     inline def setPadding(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
@@ -227,7 +227,7 @@ object SpaceProps {
     
     inline def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
     
-    inline def setPaddingBottomVarargs(value: (TVal | Null)*): Self = StObject.set(x, "paddingBottom", js.Array(value :_*))
+    inline def setPaddingBottomVarargs(value: (TVal | Null)*): Self = StObject.set(x, "paddingBottom", js.Array(value*))
     
     inline def setPaddingLeft(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
     
@@ -235,7 +235,7 @@ object SpaceProps {
     
     inline def setPaddingLeftUndefined: Self = StObject.set(x, "paddingLeft", js.undefined)
     
-    inline def setPaddingLeftVarargs(value: (TVal | Null)*): Self = StObject.set(x, "paddingLeft", js.Array(value :_*))
+    inline def setPaddingLeftVarargs(value: (TVal | Null)*): Self = StObject.set(x, "paddingLeft", js.Array(value*))
     
     inline def setPaddingNull: Self = StObject.set(x, "padding", null)
     
@@ -245,7 +245,7 @@ object SpaceProps {
     
     inline def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
     
-    inline def setPaddingRightVarargs(value: (TVal | Null)*): Self = StObject.set(x, "paddingRight", js.Array(value :_*))
+    inline def setPaddingRightVarargs(value: (TVal | Null)*): Self = StObject.set(x, "paddingRight", js.Array(value*))
     
     inline def setPaddingTop(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
     
@@ -253,11 +253,11 @@ object SpaceProps {
     
     inline def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
     
-    inline def setPaddingTopVarargs(value: (TVal | Null)*): Self = StObject.set(x, "paddingTop", js.Array(value :_*))
+    inline def setPaddingTopVarargs(value: (TVal | Null)*): Self = StObject.set(x, "paddingTop", js.Array(value*))
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    inline def setPaddingVarargs(value: (TVal | Null)*): Self = StObject.set(x, "padding", js.Array(value :_*))
+    inline def setPaddingVarargs(value: (TVal | Null)*): Self = StObject.set(x, "padding", js.Array(value*))
     
     inline def setPaddingX(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
     
@@ -265,7 +265,7 @@ object SpaceProps {
     
     inline def setPaddingXUndefined: Self = StObject.set(x, "paddingX", js.undefined)
     
-    inline def setPaddingXVarargs(value: (TVal | Null)*): Self = StObject.set(x, "paddingX", js.Array(value :_*))
+    inline def setPaddingXVarargs(value: (TVal | Null)*): Self = StObject.set(x, "paddingX", js.Array(value*))
     
     inline def setPaddingY(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
     
@@ -273,7 +273,7 @@ object SpaceProps {
     
     inline def setPaddingYUndefined: Self = StObject.set(x, "paddingY", js.undefined)
     
-    inline def setPaddingYVarargs(value: (TVal | Null)*): Self = StObject.set(x, "paddingY", js.Array(value :_*))
+    inline def setPaddingYVarargs(value: (TVal | Null)*): Self = StObject.set(x, "paddingY", js.Array(value*))
     
     inline def setPb(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "pb", value.asInstanceOf[js.Any])
     
@@ -281,7 +281,7 @@ object SpaceProps {
     
     inline def setPbUndefined: Self = StObject.set(x, "pb", js.undefined)
     
-    inline def setPbVarargs(value: (TVal | Null)*): Self = StObject.set(x, "pb", js.Array(value :_*))
+    inline def setPbVarargs(value: (TVal | Null)*): Self = StObject.set(x, "pb", js.Array(value*))
     
     inline def setPl(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
     
@@ -289,7 +289,7 @@ object SpaceProps {
     
     inline def setPlUndefined: Self = StObject.set(x, "pl", js.undefined)
     
-    inline def setPlVarargs(value: (TVal | Null)*): Self = StObject.set(x, "pl", js.Array(value :_*))
+    inline def setPlVarargs(value: (TVal | Null)*): Self = StObject.set(x, "pl", js.Array(value*))
     
     inline def setPr(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
     
@@ -297,7 +297,7 @@ object SpaceProps {
     
     inline def setPrUndefined: Self = StObject.set(x, "pr", js.undefined)
     
-    inline def setPrVarargs(value: (TVal | Null)*): Self = StObject.set(x, "pr", js.Array(value :_*))
+    inline def setPrVarargs(value: (TVal | Null)*): Self = StObject.set(x, "pr", js.Array(value*))
     
     inline def setPt(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
     
@@ -305,7 +305,7 @@ object SpaceProps {
     
     inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
     
-    inline def setPtVarargs(value: (TVal | Null)*): Self = StObject.set(x, "pt", js.Array(value :_*))
+    inline def setPtVarargs(value: (TVal | Null)*): Self = StObject.set(x, "pt", js.Array(value*))
     
     inline def setPx(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
     
@@ -313,7 +313,7 @@ object SpaceProps {
     
     inline def setPxUndefined: Self = StObject.set(x, "px", js.undefined)
     
-    inline def setPxVarargs(value: (TVal | Null)*): Self = StObject.set(x, "px", js.Array(value :_*))
+    inline def setPxVarargs(value: (TVal | Null)*): Self = StObject.set(x, "px", js.Array(value*))
     
     inline def setPy(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "py", value.asInstanceOf[js.Any])
     
@@ -321,6 +321,6 @@ object SpaceProps {
     
     inline def setPyUndefined: Self = StObject.set(x, "py", js.undefined)
     
-    inline def setPyVarargs(value: (TVal | Null)*): Self = StObject.set(x, "py", js.Array(value :_*))
+    inline def setPyVarargs(value: (TVal | Null)*): Self = StObject.set(x, "py", js.Array(value*))
   }
 }

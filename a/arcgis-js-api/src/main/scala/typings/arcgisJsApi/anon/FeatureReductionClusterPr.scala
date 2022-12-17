@@ -98,13 +98,12 @@ trait FeatureReductionClusterPr extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html#type)
     */
-  var `type`: js.UndefOr[cluster] & cluster
+  var `type`: js.UndefOr[cluster] = js.undefined
 }
 object FeatureReductionClusterPr {
   
-  inline def apply(`type`: js.UndefOr[cluster] & cluster): FeatureReductionClusterPr = {
+  inline def apply(): FeatureReductionClusterPr = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureReductionClusterPr]
   }
   
@@ -154,6 +153,8 @@ object FeatureReductionClusterPr {
     
     inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
     
-    inline def setType(value: js.UndefOr[cluster] & cluster): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: cluster): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

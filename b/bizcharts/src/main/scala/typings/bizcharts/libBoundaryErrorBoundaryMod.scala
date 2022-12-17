@@ -2,8 +2,12 @@ package typings.bizcharts
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.bizcharts.anon.ComponentStack
+import typings.react.mod.PropsWithChildren
+import typings.react.mod.PropsWithRef
 import typings.react.mod.ReactElement
 import typings.react.mod.global.JSX.Element
+import typings.reactErrorBoundary.anon.Error
+import typings.reactErrorBoundary.mod.ErrorBoundary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,6 +17,29 @@ object libBoundaryErrorBoundaryMod {
   @JSImport("bizcharts/lib/boundary/ErrorBoundary", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  @JSImport("bizcharts/lib/boundary/ErrorBoundary", JSImport.Default)
+  @js.native
+  open class default protected () extends ErrorBoundary {
+    def this(props: PropsWithRef[PropsWithChildren[typings.reactErrorBoundary.mod.ErrorBoundaryProps]]) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(
+      props: PropsWithRef[PropsWithChildren[typings.reactErrorBoundary.mod.ErrorBoundaryProps]],
+      context: Any
+    ) = this()
+  }
+  object default {
+    
+    @JSImport("bizcharts/lib/boundary/ErrorBoundary", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    inline def getDerivedStateFromError(error: js.Error): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromError")(error.asInstanceOf[js.Any]).asInstanceOf[Error]
+  }
   
   inline def ErrorFallback(args: Any): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ErrorFallback")(args.asInstanceOf[js.Any]).asInstanceOf[Element]
   

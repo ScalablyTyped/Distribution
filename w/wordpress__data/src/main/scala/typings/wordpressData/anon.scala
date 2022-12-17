@@ -72,7 +72,7 @@ object anon {
     
     var clear: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var getItem: (js.Function1[/* key */ String, String | Null]) & (js.UndefOr[js.Function1[/* key */ String, String | Null]])
+    var getItem: js.Function1[/* key */ String, String | Null]
     
     var key: js.UndefOr[js.Function1[/* index */ Double, String | Null]] = js.undefined
     
@@ -80,15 +80,15 @@ object anon {
     
     var removeItem: js.UndefOr[js.Function1[/* key */ String, Unit]] = js.undefined
     
-    var setItem: (js.Function2[/* key */ String, /* value */ String, Unit]) & (js.UndefOr[js.Function2[/* key */ String, /* value */ String, Unit]])
+    var setItem: js.Function2[/* key */ String, /* value */ String, Unit]
   }
   object PickStoragegetItemsetItem {
     
     inline def apply(
-      getItem: (js.Function1[/* key */ String, String | Null]) & (js.UndefOr[js.Function1[/* key */ String, String | Null]]),
-      setItem: (js.Function2[/* key */ String, /* value */ String, Unit]) & (js.UndefOr[js.Function2[/* key */ String, /* value */ String, Unit]])
+      getItem: /* key */ String => String | Null,
+      setItem: (/* key */ String, /* value */ String) => Unit
     ): PickStoragegetItemsetItem = {
-      val __obj = js.Dynamic.literal(getItem = getItem.asInstanceOf[js.Any], setItem = setItem.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(getItem = js.Any.fromFunction1(getItem), setItem = js.Any.fromFunction2(setItem))
       __obj.asInstanceOf[PickStoragegetItemsetItem]
     }
     
@@ -98,9 +98,7 @@ object anon {
       
       inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
       
-      inline def setGetItem(
-        value: (js.Function1[/* key */ String, String | Null]) & (js.UndefOr[js.Function1[/* key */ String, String | Null]])
-      ): Self = StObject.set(x, "getItem", value.asInstanceOf[js.Any])
+      inline def setGetItem(value: /* key */ String => String | Null): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
       
       inline def setKey(value: /* index */ Double => String | Null): Self = StObject.set(x, "key", js.Any.fromFunction1(value))
       
@@ -114,9 +112,7 @@ object anon {
       
       inline def setRemoveItemUndefined: Self = StObject.set(x, "removeItem", js.undefined)
       
-      inline def setSetItem(
-        value: (js.Function2[/* key */ String, /* value */ String, Unit]) & (js.UndefOr[js.Function2[/* key */ String, /* value */ String, Unit]])
-      ): Self = StObject.set(x, "setItem", value.asInstanceOf[js.Any])
+      inline def setSetItem(value: (/* key */ String, /* value */ String) => Unit): Self = StObject.set(x, "setItem", js.Any.fromFunction2(value))
     }
   }
   

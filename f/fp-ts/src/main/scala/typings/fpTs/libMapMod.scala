@@ -177,7 +177,7 @@ object libMapMod {
   
   inline def keys[K](O: Ord_[K]): js.Function1[/* m */ Map[K, Any], js.Array[K]] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(O.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* m */ Map[K, Any], js.Array[K]]]
   
-  inline def lookup[K](E: Eq[K]): FnCallKM[K] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(E.asInstanceOf[js.Any]).asInstanceOf[FnCallKM[K]]
+  inline def lookup[K](E: Eq[K]): Fn13[K] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(E.asInstanceOf[js.Any]).asInstanceOf[Fn13[K]]
   
   inline def lookupWithKey[K](E: Eq[K]): Fn12[K] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookupWithKey")(E.asInstanceOf[js.Any]).asInstanceOf[Fn12[K]]
   
@@ -189,7 +189,7 @@ object libMapMod {
   @js.native
   val map_ : Filterable2[typings.fpTs.libMapMod.URI] = js.native
   
-  inline def member[K](E: Eq[K]): Fn13[K] = ^.asInstanceOf[js.Dynamic].applyDynamic("member")(E.asInstanceOf[js.Any]).asInstanceOf[Fn13[K]]
+  inline def member[K](E: Eq[K]): FnCallKM[K] = ^.asInstanceOf[js.Dynamic].applyDynamic("member")(E.asInstanceOf[js.Any]).asInstanceOf[FnCallKM[K]]
   
   inline def modifyAt[K](E: Eq[K]): js.Function2[
     /* k */ K, 

@@ -13,7 +13,7 @@ trait PickImplerrorPartialPickIActive
   
   var active: js.UndefOr[`false` | String] = js.undefined
   
-  var error: (`false` | String) & (js.UndefOr[`false` | String])
+  var error: `false` | String
   
   var percent: js.UndefOr[`false` | String] = js.undefined
   
@@ -25,7 +25,7 @@ trait PickImplerrorPartialPickIActive
 }
 object PickImplerrorPartialPickIActive {
   
-  inline def apply(error: (`false` | String) & (js.UndefOr[`false` | String])): PickImplerrorPartialPickIActive = {
+  inline def apply(error: `false` | String): PickImplerrorPartialPickIActive = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplerrorPartialPickIActive]
   }
@@ -36,7 +36,7 @@ object PickImplerrorPartialPickIActive {
     
     inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    inline def setError(value: (`false` | String) & (js.UndefOr[`false` | String])): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: `false` | String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     inline def setPercent(value: `false` | String): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     

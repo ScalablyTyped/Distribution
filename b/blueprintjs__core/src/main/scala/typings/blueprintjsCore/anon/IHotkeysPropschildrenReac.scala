@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IHotkeysPropschildrenReac extends StObject {
   
   /** Hotkey elements. */
-  var children: js.UndefOr[ReactNode] & ReactNode
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   /** A space-delimited list of class names to pass along to a child element. */
   var className: js.UndefOr[String] = js.undefined
@@ -33,7 +33,7 @@ object IHotkeysPropschildrenReac {
   
   extension [Self <: IHotkeysPropschildrenReac](x: Self) {
     
-    inline def setChildren(value: js.UndefOr[ReactNode] & ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     

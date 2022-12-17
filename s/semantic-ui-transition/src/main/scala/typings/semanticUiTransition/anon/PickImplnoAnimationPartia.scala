@@ -12,11 +12,11 @@ trait PickImplnoAnimationPartia
   
   var method: js.UndefOr[String] = js.undefined
   
-  var noAnimation: String & js.UndefOr[String]
+  var noAnimation: String
 }
 object PickImplnoAnimationPartia {
   
-  inline def apply(noAnimation: String & js.UndefOr[String]): PickImplnoAnimationPartia = {
+  inline def apply(noAnimation: String): PickImplnoAnimationPartia = {
     val __obj = js.Dynamic.literal(noAnimation = noAnimation.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplnoAnimationPartia]
   }
@@ -27,6 +27,6 @@ object PickImplnoAnimationPartia {
     
     inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    inline def setNoAnimation(value: String & js.UndefOr[String]): Self = StObject.set(x, "noAnimation", value.asInstanceOf[js.Any])
+    inline def setNoAnimation(value: String): Self = StObject.set(x, "noAnimation", value.asInstanceOf[js.Any])
   }
 }

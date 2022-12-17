@@ -12,7 +12,7 @@ trait PickImplcountPartialPickI
   
   var addResult: js.UndefOr[String] = js.undefined
   
-  var count: String & js.UndefOr[String]
+  var count: String
   
   var maxSelections: js.UndefOr[String] = js.undefined
   
@@ -20,7 +20,7 @@ trait PickImplcountPartialPickI
 }
 object PickImplcountPartialPickI {
   
-  inline def apply(count: String & js.UndefOr[String]): PickImplcountPartialPickI = {
+  inline def apply(count: String): PickImplcountPartialPickI = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplcountPartialPickI]
   }
@@ -31,7 +31,7 @@ object PickImplcountPartialPickI {
     
     inline def setAddResultUndefined: Self = StObject.set(x, "addResult", js.undefined)
     
-    inline def setCount(value: String & js.UndefOr[String]): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     inline def setMaxSelections(value: String): Self = StObject.set(x, "maxSelections", value.asInstanceOf[js.Any])
     

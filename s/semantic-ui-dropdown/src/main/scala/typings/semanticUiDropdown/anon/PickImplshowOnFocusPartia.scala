@@ -153,7 +153,7 @@ trait PickImplshowOnFocusPartia
   
   var selector: js.UndefOr[SelectorSettings] = js.undefined
   
-  var showOnFocus: Boolean & js.UndefOr[Boolean]
+  var showOnFocus: Boolean
   
   var silent: js.UndefOr[Boolean] = js.undefined
   
@@ -169,7 +169,7 @@ trait PickImplshowOnFocusPartia
 }
 object PickImplshowOnFocusPartia {
   
-  inline def apply(showOnFocus: Boolean & js.UndefOr[Boolean]): PickImplshowOnFocusPartia = {
+  inline def apply(showOnFocus: Boolean): PickImplshowOnFocusPartia = {
     val __obj = js.Dynamic.literal(showOnFocus = showOnFocus.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplshowOnFocusPartia]
   }
@@ -386,7 +386,7 @@ object PickImplshowOnFocusPartia {
     
     inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
-    inline def setShowOnFocus(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "showOnFocus", value.asInstanceOf[js.Any])
+    inline def setShowOnFocus(value: Boolean): Self = StObject.set(x, "showOnFocus", value.asInstanceOf[js.Any])
     
     inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     

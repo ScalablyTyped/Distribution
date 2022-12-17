@@ -19,7 +19,7 @@ object anon {
       * @param encoding - The selected {@link StringEncoding}.
       * @returns `true` if the text should be encoded; `false` to abort encoding. If this method returns `false`, then the calling function (`encodeSmallest` or `transcodeSmallest`) will return `null` instead of the encoded text.
       */
-    var isEncodingOk: (js.UndefOr[js.Function1[/* encoding */ StringEncoding, Boolean]]) & js.UndefOr[scala.Nothing]
+    var isEncodingOk: js.UndefOr[js.Function1[/* encoding */ StringEncoding, Boolean]] = js.undefined
     
     /**
       * Substitute for unrepresentable characters.
@@ -33,18 +33,16 @@ object anon {
   }
   object DecodeOptionsSelectAndEnc {
     
-    inline def apply(
-      isEncodingOk: (js.UndefOr[js.Function1[/* encoding */ StringEncoding, Boolean]]) & js.UndefOr[scala.Nothing]
-    ): DecodeOptionsSelectAndEnc = {
-      val __obj = js.Dynamic.literal(isEncodingOk = isEncodingOk.asInstanceOf[js.Any])
+    inline def apply(): DecodeOptionsSelectAndEnc = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DecodeOptionsSelectAndEnc]
     }
     
     extension [Self <: DecodeOptionsSelectAndEnc](x: Self) {
       
-      inline def setIsEncodingOk(
-        value: (js.UndefOr[js.Function1[/* encoding */ StringEncoding, Boolean]]) & js.UndefOr[scala.Nothing]
-      ): Self = StObject.set(x, "isEncodingOk", value.asInstanceOf[js.Any])
+      inline def setIsEncodingOk(value: /* encoding */ StringEncoding => Boolean): Self = StObject.set(x, "isEncodingOk", js.Any.fromFunction1(value))
+      
+      inline def setIsEncodingOkUndefined: Self = StObject.set(x, "isEncodingOk", js.undefined)
       
       inline def setLossByte(value: Double): Self = StObject.set(x, "lossByte", value.asInstanceOf[js.Any])
       
@@ -64,7 +62,7 @@ object anon {
       * @param encoding - The selected {@link StringEncoding}.
       * @returns `true` if the text should be encoded; `false` to abort encoding. If this method returns `false`, then the calling function (`encodeSmallest` or `transcodeSmallest`) will return `null` instead of the encoded text.
       */
-    var isEncodingOk: (js.UndefOr[js.Function1[/* encoding */ StringEncoding, Boolean]]) & js.UndefOr[scala.Nothing]
+    var isEncodingOk: js.UndefOr[js.Function1[/* encoding */ StringEncoding, Boolean]] = js.undefined
     
     /**
       * Substitute for unrepresentable characters.
@@ -78,18 +76,16 @@ object anon {
   }
   object SelectAndEncodeOptionsisE {
     
-    inline def apply(
-      isEncodingOk: (js.UndefOr[js.Function1[/* encoding */ StringEncoding, Boolean]]) & js.UndefOr[scala.Nothing]
-    ): SelectAndEncodeOptionsisE = {
-      val __obj = js.Dynamic.literal(isEncodingOk = isEncodingOk.asInstanceOf[js.Any])
+    inline def apply(): SelectAndEncodeOptionsisE = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SelectAndEncodeOptionsisE]
     }
     
     extension [Self <: SelectAndEncodeOptionsisE](x: Self) {
       
-      inline def setIsEncodingOk(
-        value: (js.UndefOr[js.Function1[/* encoding */ StringEncoding, Boolean]]) & js.UndefOr[scala.Nothing]
-      ): Self = StObject.set(x, "isEncodingOk", value.asInstanceOf[js.Any])
+      inline def setIsEncodingOk(value: /* encoding */ StringEncoding => Boolean): Self = StObject.set(x, "isEncodingOk", js.Any.fromFunction1(value))
+      
+      inline def setIsEncodingOkUndefined: Self = StObject.set(x, "isEncodingOk", js.undefined)
       
       inline def setLossByte(value: Double): Self = StObject.set(x, "lossByte", value.asInstanceOf[js.Any])
       

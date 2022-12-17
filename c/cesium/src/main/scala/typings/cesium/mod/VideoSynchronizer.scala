@@ -1,6 +1,5 @@
 package typings.cesium.mod
 
-import typings.cesium.anon.Element
 import typings.std.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("cesium", "VideoSynchronizer")
 @js.native
 open class VideoSynchronizer () extends StObject {
-  def this(options: Element) = this()
+  def this(options: typings.cesium.anon.Clock) = this()
   
   /**
     * Gets or sets the clock used to drive the video element.

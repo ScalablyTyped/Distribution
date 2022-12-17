@@ -9,11 +9,11 @@ trait Links extends StObject {
   
   var links: js.Array[Link]
   
-  var nodes: js.Array[Height]
+  var nodes: js.Array[Color]
 }
 object Links {
   
-  inline def apply(links: js.Array[Link], nodes: js.Array[Height]): Links = {
+  inline def apply(links: js.Array[Link], nodes: js.Array[Color]): Links = {
     val __obj = js.Dynamic.literal(links = links.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Links]
   }
@@ -24,8 +24,8 @@ object Links {
     
     inline def setLinksVarargs(value: Link*): Self = StObject.set(x, "links", js.Array(value*))
     
-    inline def setNodes(value: js.Array[Height]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: js.Array[Color]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    inline def setNodesVarargs(value: Height*): Self = StObject.set(x, "nodes", js.Array(value*))
+    inline def setNodesVarargs(value: Color*): Self = StObject.set(x, "nodes", js.Array(value*))
   }
 }

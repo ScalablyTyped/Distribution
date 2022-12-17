@@ -5,7 +5,6 @@ import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
 import typings.react.mod.ReactNode
-import typings.reactMdForm.reactMdFormBooleans.`false`
 import typings.reactMdForm.reactMdFormStrings.badInput
 import typings.reactMdForm.reactMdFormStrings.customError
 import typings.reactMdForm.reactMdFormStrings.patternMismatch
@@ -66,7 +65,7 @@ trait TextFieldHookOptionsdisabCounter extends StObject {
     * with a `FormMessage` component. This will prevent the `aria-describedby`
     * prop from being returned when set to `true`.
     */
-  var disableMessage: js.UndefOr[Boolean] & `false`
+  var disableMessage: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An optional error icon used in the {@link getErrorIcon} option.
@@ -136,8 +135,8 @@ trait TextFieldHookOptionsdisabCounter extends StObject {
 }
 object TextFieldHookOptionsdisabCounter {
   
-  inline def apply(disableMessage: js.UndefOr[Boolean] & `false`, id: String): TextFieldHookOptionsdisabCounter = {
-    val __obj = js.Dynamic.literal(disableMessage = disableMessage.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+  inline def apply(id: String): TextFieldHookOptionsdisabCounter = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextFieldHookOptionsdisabCounter]
   }
   
@@ -157,7 +156,9 @@ object TextFieldHookOptionsdisabCounter {
     
     inline def setDisableMaxLengthUndefined: Self = StObject.set(x, "disableMaxLength", js.undefined)
     
-    inline def setDisableMessage(value: js.UndefOr[Boolean] & `false`): Self = StObject.set(x, "disableMessage", value.asInstanceOf[js.Any])
+    inline def setDisableMessage(value: Boolean): Self = StObject.set(x, "disableMessage", value.asInstanceOf[js.Any])
+    
+    inline def setDisableMessageUndefined: Self = StObject.set(x, "disableMessage", js.undefined)
     
     inline def setErrorIcon(value: ReactNode): Self = StObject.set(x, "errorIcon", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,7 @@ trait PickImplallowMultiplePart
   extends StObject
      with Param {
   
-  var allowMultiple: Boolean & js.UndefOr[Boolean]
+  var allowMultiple: Boolean
   
   var autofocus: js.UndefOr[Boolean] = js.undefined
   
@@ -72,14 +72,14 @@ trait PickImplallowMultiplePart
 }
 object PickImplallowMultiplePart {
   
-  inline def apply(allowMultiple: Boolean & js.UndefOr[Boolean]): PickImplallowMultiplePart = {
+  inline def apply(allowMultiple: Boolean): PickImplallowMultiplePart = {
     val __obj = js.Dynamic.literal(allowMultiple = allowMultiple.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplallowMultiplePart]
   }
   
   extension [Self <: PickImplallowMultiplePart](x: Self) {
     
-    inline def setAllowMultiple(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "allowMultiple", value.asInstanceOf[js.Any])
+    inline def setAllowMultiple(value: Boolean): Self = StObject.set(x, "allowMultiple", value.asInstanceOf[js.Any])
     
     inline def setAutofocus(value: Boolean): Self = StObject.set(x, "autofocus", value.asInstanceOf[js.Any])
     

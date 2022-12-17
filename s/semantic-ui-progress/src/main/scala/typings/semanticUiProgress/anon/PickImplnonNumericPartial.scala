@@ -12,11 +12,11 @@ trait PickImplnonNumericPartial
   
   var method: js.UndefOr[String] = js.undefined
   
-  var nonNumeric: String & js.UndefOr[String]
+  var nonNumeric: String
 }
 object PickImplnonNumericPartial {
   
-  inline def apply(nonNumeric: String & js.UndefOr[String]): PickImplnonNumericPartial = {
+  inline def apply(nonNumeric: String): PickImplnonNumericPartial = {
     val __obj = js.Dynamic.literal(nonNumeric = nonNumeric.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplnonNumericPartial]
   }
@@ -27,6 +27,6 @@ object PickImplnonNumericPartial {
     
     inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    inline def setNonNumeric(value: String & js.UndefOr[String]): Self = StObject.set(x, "nonNumeric", value.asInstanceOf[js.Any])
+    inline def setNonNumeric(value: String): Self = StObject.set(x, "nonNumeric", value.asInstanceOf[js.Any])
   }
 }

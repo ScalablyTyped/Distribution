@@ -2,7 +2,7 @@ package typings.victoryCore.libMod
 
 import typings.react.mod.ReactElement
 import typings.victoryCore.anon.AriaLabel_
-import typings.victoryCore.anon.CircleComponent
+import typings.victoryCore.anon.RectComponent
 import typings.victoryCore.libVictoryPrimitivesBackgroundMod.BackgroundProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,8 +18,8 @@ object Background {
   
   @JSImport("victory-core/lib", "Background.defaultProps")
   @js.native
-  def defaultProps: CircleComponent = js.native
-  inline def defaultProps_=(x: CircleComponent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  def defaultProps: RectComponent = js.native
+  inline def defaultProps_=(x: RectComponent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
   @JSImport("victory-core/lib", "Background.propTypes")
   @js.native

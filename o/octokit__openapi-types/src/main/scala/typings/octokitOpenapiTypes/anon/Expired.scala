@@ -42,7 +42,7 @@ trait Expired extends StObject {
     */
   var permissions: read | write | admin | triage | maintain
   
-  var repository: Blobsurl
+  var repository: Branchesurl
   
   /**
     * @description URL for the repository invitation
@@ -58,7 +58,7 @@ object Expired {
     id: Double,
     node_id: String,
     permissions: read | write | admin | triage | maintain,
-    repository: Blobsurl,
+    repository: Branchesurl,
     url: String
   ): Expired = {
     val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], invitee = null, inviter = null)
@@ -89,7 +89,7 @@ object Expired {
     
     inline def setPermissions(value: read | write | admin | triage | maintain): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
-    inline def setRepository(value: Blobsurl): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setRepository(value: Branchesurl): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

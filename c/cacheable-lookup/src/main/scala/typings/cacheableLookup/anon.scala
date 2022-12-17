@@ -1,6 +1,5 @@
 package typings.cacheableLookup
 
-import typings.cacheableLookup.cacheableLookupBooleans.`true`
 import typings.cacheableLookup.mod.IPFamily
 import typings.node.NodeJS.ErrnoException
 import typings.node.dnsMod.LookupAddress
@@ -20,7 +19,7 @@ object anon {
     	 * When `true`, the callback returns all resolved addresses in an array. Otherwise, returns a single address.
     	 * @default false
     	 */
-    var all: js.UndefOr[Boolean] & `true`
+    var all: js.UndefOr[Boolean] = js.undefined
     
     /**
     	 * The record family. Must be `4` or `6`. IPv4 and IPv6 addresses are both returned by default.
@@ -34,14 +33,16 @@ object anon {
   }
   object LookupOptionsalltrue {
     
-    inline def apply(all: js.UndefOr[Boolean] & `true`): LookupOptionsalltrue = {
-      val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any])
+    inline def apply(): LookupOptionsalltrue = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LookupOptionsalltrue]
     }
     
     extension [Self <: LookupOptionsalltrue](x: Self) {
       
-      inline def setAll(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+      inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+      
+      inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
       
       inline def setFamily(value: IPFamily): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
       

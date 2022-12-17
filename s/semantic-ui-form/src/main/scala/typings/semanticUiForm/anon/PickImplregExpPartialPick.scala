@@ -58,13 +58,13 @@ trait PickImplregExpPartialPick
   
   var number: js.UndefOr[String] = js.undefined
   
-  var regExp: String & js.UndefOr[String]
+  var regExp: String
   
   var url: js.UndefOr[String] = js.undefined
 }
 object PickImplregExpPartialPick {
   
-  inline def apply(regExp: String & js.UndefOr[String]): PickImplregExpPartialPick = {
+  inline def apply(regExp: String): PickImplregExpPartialPick = {
     val __obj = js.Dynamic.literal(regExp = regExp.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplregExpPartialPick]
   }
@@ -167,7 +167,7 @@ object PickImplregExpPartialPick {
     
     inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
-    inline def setRegExp(value: String & js.UndefOr[String]): Self = StObject.set(x, "regExp", value.asInstanceOf[js.Any])
+    inline def setRegExp(value: String): Self = StObject.set(x, "regExp", value.asInstanceOf[js.Any])
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

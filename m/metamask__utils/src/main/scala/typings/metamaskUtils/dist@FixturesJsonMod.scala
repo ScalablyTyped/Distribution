@@ -9,8 +9,16 @@ import typings.metamaskUtils.anon.ErrorArray
 import typings.metamaskUtils.anon.ErrorBoolean
 import typings.metamaskUtils.anon.ErrorCodeArray
 import typings.metamaskUtils.anon.ErrorCodeBoolean
+import typings.metamaskUtils.anon.ErrorCodeData
 import typings.metamaskUtils.anon.ErrorCodeMessage
+import typings.metamaskUtils.anon.ErrorCodeMessageId
+import typings.metamaskUtils.anon.ErrorCodeMessageIdArray
+import typings.metamaskUtils.anon.ErrorCodeMessageIdBoolean
 import typings.metamaskUtils.anon.ErrorCodeMessageIdNumber
+import typings.metamaskUtils.anon.ErrorCodeMessageIdNumberJsonrpcNumber
+import typings.metamaskUtils.anon.ErrorCodeMessageIdNumberJsonrpcString
+import typings.metamaskUtils.anon.ErrorCodeMessageIdNumberJsonrpcUndefined
+import typings.metamaskUtils.anon.ErrorCodeMessageIdUndefined
 import typings.metamaskUtils.anon.ErrorCodeNull
 import typings.metamaskUtils.anon.ErrorCodeNumber
 import typings.metamaskUtils.anon.ErrorCodeNumberMessage
@@ -26,13 +34,13 @@ import typings.metamaskUtils.anon.ErrorMessageString
 import typings.metamaskUtils.anon.ErrorMessageUndefined
 import typings.metamaskUtils.anon.ErrorNull
 import typings.metamaskUtils.anon.ErrorNumber
+import typings.metamaskUtils.anon.ErrorStack
 import typings.metamaskUtils.anon.ErrorString
 import typings.metamaskUtils.anon.ErrorUndefined
+import typings.metamaskUtils.anon.ErrorUndefinedIdNumber
 import typings.metamaskUtils.anon.Id
 import typings.metamaskUtils.anon.IdArray
-import typings.metamaskUtils.anon.IdArrayJsonrpcString
 import typings.metamaskUtils.anon.IdBoolean
-import typings.metamaskUtils.anon.IdBooleanJsonrpcString
 import typings.metamaskUtils.anon.IdJsonrpc
 import typings.metamaskUtils.anon.IdJsonrpcMethod
 import typings.metamaskUtils.anon.IdJsonrpcMethodParams
@@ -54,17 +62,9 @@ import typings.metamaskUtils.anon.JsonrpcMethod
 import typings.metamaskUtils.anon.JsonrpcMethodParams
 import typings.metamaskUtils.anon.JsonrpcNull
 import typings.metamaskUtils.anon.JsonrpcNumber
-import typings.metamaskUtils.anon.JsonrpcNumberResultString
 import typings.metamaskUtils.anon.JsonrpcResult
 import typings.metamaskUtils.anon.JsonrpcString
-import typings.metamaskUtils.anon.JsonrpcStringMethod
-import typings.metamaskUtils.anon.JsonrpcStringMethodArray
-import typings.metamaskUtils.anon.JsonrpcStringMethodBoolean
-import typings.metamaskUtils.anon.JsonrpcStringMethodNull
-import typings.metamaskUtils.anon.JsonrpcStringMethodNumber
 import typings.metamaskUtils.anon.JsonrpcStringMethodString
-import typings.metamaskUtils.anon.JsonrpcStringMethodUndefined
-import typings.metamaskUtils.anon.JsonrpcStringResultUndefined
 import typings.metamaskUtils.anon.JsonrpcUndefined
 import typings.metamaskUtils.anon.LevelTwo
 import typings.metamaskUtils.anon.Method
@@ -147,21 +147,21 @@ object `dist@FixturesJsonMod` {
     @js.native
     def invalid: js.Array[
         js.UndefOr[
-          String | Double | Boolean | js.Array[scala.Nothing] | ErrorIdJsonrpc | ErrorCodeMessage | IdNumber | ErrorUndefined | JsonrpcString | IdArray | IdBoolean | IdUndefined | ErrorCodeMessageIdNumber | JsonrpcNumber | IdNumberJsonrpc | JsonrpcArray | JsonrpcBoolean | JsonrpcNull | JsonrpcUndefined | ErrorCodeNumber | ErrorCodeUndefined | ErrorArray | ErrorMessageUndefined | ErrorBoolean | ErrorNull | ErrorString | ErrorNumber | ErrorMessageString | ErrorCodeArray | ErrorCodeBoolean | ErrorCodeNull | ErrorCodeUndefinedMessageString | ErrorCodeString | ErrorCodeNumberMessage | ErrorMessageArray | ErrorMessageBoolean | ErrorMessageNull | Null
+          String | Double | Boolean | js.Array[scala.Nothing] | ErrorUndefined | ErrorCodeMessage | ErrorCodeMessageIdNumber | ErrorUndefinedIdNumber | ErrorCodeMessageId | ErrorCodeMessageIdArray | ErrorCodeMessageIdBoolean | ErrorCodeMessageIdUndefined | ErrorCodeMessageIdNumberJsonrpcString | ErrorCodeMessageIdNumberJsonrpcNumber | IdNumberJsonrpc | JsonrpcArray | JsonrpcBoolean | JsonrpcNull | ErrorCodeMessageIdNumberJsonrpcUndefined | ErrorCodeNumber | ErrorCodeUndefined | ErrorArray | ErrorMessageUndefined | ErrorBoolean | ErrorNull | ErrorString | ErrorNumber | ErrorMessageString | ErrorCodeArray | ErrorCodeBoolean | ErrorCodeNull | ErrorCodeUndefinedMessageString | ErrorCodeString | ErrorCodeNumberMessage | ErrorMessageArray | ErrorMessageBoolean | ErrorMessageNull | Null
         ]
       ] = js.native
     inline def invalid_=(
       x: js.Array[
           js.UndefOr[
-            String | Double | Boolean | js.Array[scala.Nothing] | ErrorIdJsonrpc | ErrorCodeMessage | IdNumber | ErrorUndefined | JsonrpcString | IdArray | IdBoolean | IdUndefined | ErrorCodeMessageIdNumber | JsonrpcNumber | IdNumberJsonrpc | JsonrpcArray | JsonrpcBoolean | JsonrpcNull | JsonrpcUndefined | ErrorCodeNumber | ErrorCodeUndefined | ErrorArray | ErrorMessageUndefined | ErrorBoolean | ErrorNull | ErrorString | ErrorNumber | ErrorMessageString | ErrorCodeArray | ErrorCodeBoolean | ErrorCodeNull | ErrorCodeUndefinedMessageString | ErrorCodeString | ErrorCodeNumberMessage | ErrorMessageArray | ErrorMessageBoolean | ErrorMessageNull | Null
+            String | Double | Boolean | js.Array[scala.Nothing] | ErrorUndefined | ErrorCodeMessage | ErrorCodeMessageIdNumber | ErrorUndefinedIdNumber | ErrorCodeMessageId | ErrorCodeMessageIdArray | ErrorCodeMessageIdBoolean | ErrorCodeMessageIdUndefined | ErrorCodeMessageIdNumberJsonrpcString | ErrorCodeMessageIdNumberJsonrpcNumber | IdNumberJsonrpc | JsonrpcArray | JsonrpcBoolean | JsonrpcNull | ErrorCodeMessageIdNumberJsonrpcUndefined | ErrorCodeNumber | ErrorCodeUndefined | ErrorArray | ErrorMessageUndefined | ErrorBoolean | ErrorNull | ErrorString | ErrorNumber | ErrorMessageString | ErrorCodeArray | ErrorCodeBoolean | ErrorCodeNull | ErrorCodeUndefinedMessageString | ErrorCodeString | ErrorCodeNumberMessage | ErrorMessageArray | ErrorMessageBoolean | ErrorMessageNull | Null
           ]
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invalid")(x.asInstanceOf[js.Any])
     
     @JSImport("@metamask/utils/dist/@/fixtures/json", "JSON_RPC_FAILURE_FIXTURES.valid")
     @js.native
-    def valid: js.Array[Error | Id | Jsonrpc | ErrorId | IdJsonrpc] = js.native
-    inline def valid_=(x: js.Array[Error | Id | Jsonrpc | ErrorId | IdJsonrpc]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("valid")(x.asInstanceOf[js.Any])
+    def valid: js.Array[Error | ErrorId | ErrorIdJsonrpc | ErrorStack | ErrorCodeData] = js.native
+    inline def valid_=(x: js.Array[Error | ErrorId | ErrorIdJsonrpc | ErrorStack | ErrorCodeData]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("valid")(x.asInstanceOf[js.Any])
   }
   
   object JSON_RPC_NOTIFICATION_FIXTURES {
@@ -174,21 +174,21 @@ object `dist@FixturesJsonMod` {
     @js.native
     def invalid: js.Array[
         js.UndefOr[
-          String | Double | Boolean | js.Array[scala.Nothing] | MethodParams | IdJsonrpcMethod | JsonrpcMethodParams | IdJsonrpcMethodParams | ParamsUndefined | MethodArray | MethodBoolean | MethodNull | MethodUndefined | MethodNumber | MethodString | ParamsNull | ParamsNumber | ParamsString | Null
+          String | Double | Boolean | js.Array[scala.Nothing] | Id | IdJsonrpc | JsonrpcMethod | MethodParams | IdJsonrpcMethod | JsonrpcMethodParams | IdJsonrpcMethodParams | IdUndefined | JsonrpcString | MethodNumber | MethodString | ParamsNull | ParamsNumber | ParamsString | Null
         ]
       ] = js.native
     inline def invalid_=(
       x: js.Array[
           js.UndefOr[
-            String | Double | Boolean | js.Array[scala.Nothing] | MethodParams | IdJsonrpcMethod | JsonrpcMethodParams | IdJsonrpcMethodParams | ParamsUndefined | MethodArray | MethodBoolean | MethodNull | MethodUndefined | MethodNumber | MethodString | ParamsNull | ParamsNumber | ParamsString | Null
+            String | Double | Boolean | js.Array[scala.Nothing] | Id | IdJsonrpc | JsonrpcMethod | MethodParams | IdJsonrpcMethod | JsonrpcMethodParams | IdJsonrpcMethodParams | IdUndefined | JsonrpcString | MethodNumber | MethodString | ParamsNull | ParamsNumber | ParamsString | Null
           ]
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invalid")(x.asInstanceOf[js.Any])
     
     @JSImport("@metamask/utils/dist/@/fixtures/json", "JSON_RPC_NOTIFICATION_FIXTURES.valid")
     @js.native
-    def valid: js.Array[Method | Params | JsonrpcMethod] = js.native
-    inline def valid_=(x: js.Array[Method | Params | JsonrpcMethod]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("valid")(x.asInstanceOf[js.Any])
+    def valid: js.Array[Jsonrpc | Method | Params] = js.native
+    inline def valid_=(x: js.Array[Jsonrpc | Method | Params]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("valid")(x.asInstanceOf[js.Any])
   }
   
   object JSON_RPC_REQUEST_FIXTURES {
@@ -201,21 +201,21 @@ object `dist@FixturesJsonMod` {
     @js.native
     def invalid: js.Array[
         js.UndefOr[
-          String | Double | Boolean | js.Array[scala.Nothing] | MethodParams | IdJsonrpcMethod | IdNumberJsonrpcNumber | JsonrpcStringMethod | JsonrpcStringMethodArray | JsonrpcStringMethodBoolean | JsonrpcStringMethodNull | JsonrpcStringMethodUndefined | JsonrpcStringMethodNumber | ParamsBoolean | JsonrpcStringMethodString | MethodStringParamsNumber | MethodStringParamsString | Null
+          String | Double | Boolean | js.Array[scala.Nothing] | Id | IdJsonrpc | JsonrpcNumber | ParamsUndefined | MethodArray | MethodBoolean | MethodNull | MethodUndefined | IdNumberJsonrpcString | ParamsBoolean | JsonrpcStringMethodString | MethodStringParamsNumber | MethodStringParamsString | Null
         ]
       ] = js.native
     inline def invalid_=(
       x: js.Array[
           js.UndefOr[
-            String | Double | Boolean | js.Array[scala.Nothing] | MethodParams | IdJsonrpcMethod | IdNumberJsonrpcNumber | JsonrpcStringMethod | JsonrpcStringMethodArray | JsonrpcStringMethodBoolean | JsonrpcStringMethodNull | JsonrpcStringMethodUndefined | JsonrpcStringMethodNumber | ParamsBoolean | JsonrpcStringMethodString | MethodStringParamsNumber | MethodStringParamsString | Null
+            String | Double | Boolean | js.Array[scala.Nothing] | Id | IdJsonrpc | JsonrpcNumber | ParamsUndefined | MethodArray | MethodBoolean | MethodNull | MethodUndefined | IdNumberJsonrpcString | ParamsBoolean | JsonrpcStringMethodString | MethodStringParamsNumber | MethodStringParamsString | Null
           ]
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invalid")(x.asInstanceOf[js.Any])
     
     @JSImport("@metamask/utils/dist/@/fixtures/json", "JSON_RPC_REQUEST_FIXTURES.valid")
     @js.native
-    def valid: js.Array[IdNumberJsonrpcString | IdString | ParamsArray | IdNull] = js.native
-    inline def valid_=(x: js.Array[IdNumberJsonrpcString | IdString | ParamsArray | IdNull]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("valid")(x.asInstanceOf[js.Any])
+    def valid: js.Array[IdNumber | IdString | ParamsArray | IdNull] = js.native
+    inline def valid_=(x: js.Array[IdNumber | IdString | ParamsArray | IdNull]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("valid")(x.asInstanceOf[js.Any])
   }
   
   object JSON_RPC_RESPONSE_FIXTURES {
@@ -228,13 +228,13 @@ object `dist@FixturesJsonMod` {
     @js.native
     def invalid: js.Array[
         js.UndefOr[
-          String | Double | Boolean | js.Array[scala.Nothing] | ResultUndefined | ResultString | IdNumberJsonrpcUndefined | JsonrpcStringResultUndefined | JsonrpcNumberResultString | IdJsonrpcString | ErrorIdJsonrpc | ErrorCodeMessage | IdNumber | ErrorUndefined | JsonrpcString | IdNumberJsonrpc | JsonrpcNull | ErrorCodeNumber | ErrorCodeUndefined | ErrorArray | ErrorMessageUndefined | ErrorBoolean | ErrorNull | ErrorString | ErrorNumber | ErrorMessageString | ErrorCodeNull | ErrorCodeNumberMessage | ErrorMessageNull | Null
+          String | Double | Boolean | js.Array[scala.Nothing] | JsonrpcUndefined | ResultString | IdNumberJsonrpcUndefined | ResultUndefined | IdNumberJsonrpcNumber | IdJsonrpcString | ErrorUndefined | ErrorCodeMessage | ErrorCodeMessageIdNumber | ErrorUndefinedIdNumber | ErrorCodeMessageId | IdNumberJsonrpc | JsonrpcNull | ErrorCodeNumber | ErrorCodeUndefined | ErrorArray | ErrorMessageUndefined | ErrorBoolean | ErrorNull | ErrorString | ErrorNumber | ErrorMessageString | ErrorCodeNull | ErrorCodeNumberMessage | ErrorMessageNull | Null
         ]
       ] = js.native
     inline def invalid_=(
       x: js.Array[
           js.UndefOr[
-            String | Double | Boolean | js.Array[scala.Nothing] | ResultUndefined | ResultString | IdNumberJsonrpcUndefined | JsonrpcStringResultUndefined | JsonrpcNumberResultString | IdJsonrpcString | ErrorIdJsonrpc | ErrorCodeMessage | IdNumber | ErrorUndefined | JsonrpcString | IdNumberJsonrpc | JsonrpcNull | ErrorCodeNumber | ErrorCodeUndefined | ErrorArray | ErrorMessageUndefined | ErrorBoolean | ErrorNull | ErrorString | ErrorNumber | ErrorMessageString | ErrorCodeNull | ErrorCodeNumberMessage | ErrorMessageNull | Null
+            String | Double | Boolean | js.Array[scala.Nothing] | JsonrpcUndefined | ResultString | IdNumberJsonrpcUndefined | ResultUndefined | IdNumberJsonrpcNumber | IdJsonrpcString | ErrorUndefined | ErrorCodeMessage | ErrorCodeMessageIdNumber | ErrorUndefinedIdNumber | ErrorCodeMessageId | IdNumberJsonrpc | JsonrpcNull | ErrorCodeNumber | ErrorCodeUndefined | ErrorArray | ErrorMessageUndefined | ErrorBoolean | ErrorNull | ErrorString | ErrorNumber | ErrorMessageString | ErrorCodeNull | ErrorCodeNumberMessage | ErrorMessageNull | Null
           ]
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invalid")(x.asInstanceOf[js.Any])
@@ -242,11 +242,11 @@ object `dist@FixturesJsonMod` {
     @JSImport("@metamask/utils/dist/@/fixtures/json", "JSON_RPC_RESPONSE_FIXTURES.valid")
     @js.native
     def valid: js.Array[
-        Result | JsonrpcResult | IdJsonrpcResult | ResultArray | Error | Id | Jsonrpc | ErrorId | IdJsonrpc
+        Result | JsonrpcResult | IdJsonrpcResult | ResultArray | Error | ErrorId | ErrorIdJsonrpc | ErrorStack | ErrorCodeData
       ] = js.native
     inline def valid_=(
       x: js.Array[
-          Result | JsonrpcResult | IdJsonrpcResult | ResultArray | Error | Id | Jsonrpc | ErrorId | IdJsonrpc
+          Result | JsonrpcResult | IdJsonrpcResult | ResultArray | Error | ErrorId | ErrorIdJsonrpc | ErrorStack | ErrorCodeData
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("valid")(x.asInstanceOf[js.Any])
   }
@@ -261,13 +261,13 @@ object `dist@FixturesJsonMod` {
     @js.native
     def invalid: js.Array[
         js.UndefOr[
-          String | Double | Boolean | js.Array[scala.Nothing] | ResultUndefined | ResultString | IdNumberJsonrpcUndefined | JsonrpcStringResultUndefined | Result | JsonrpcNumberResultString | IdJsonrpcString | IdArrayJsonrpcString | IdBooleanJsonrpcString | IdUndefinedJsonrpcString | Null
+          String | Double | Boolean | js.Array[scala.Nothing] | JsonrpcUndefined | ResultString | IdNumberJsonrpcUndefined | ResultUndefined | Result | IdNumberJsonrpcNumber | IdJsonrpcString | IdArray | IdBoolean | IdUndefinedJsonrpcString | Null
         ]
       ] = js.native
     inline def invalid_=(
       x: js.Array[
           js.UndefOr[
-            String | Double | Boolean | js.Array[scala.Nothing] | ResultUndefined | ResultString | IdNumberJsonrpcUndefined | JsonrpcStringResultUndefined | Result | JsonrpcNumberResultString | IdJsonrpcString | IdArrayJsonrpcString | IdBooleanJsonrpcString | IdUndefinedJsonrpcString | Null
+            String | Double | Boolean | js.Array[scala.Nothing] | JsonrpcUndefined | ResultString | IdNumberJsonrpcUndefined | ResultUndefined | Result | IdNumberJsonrpcNumber | IdJsonrpcString | IdArray | IdBoolean | IdUndefinedJsonrpcString | Null
           ]
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invalid")(x.asInstanceOf[js.Any])

@@ -8,13 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object deprecatedChipMod {
   
-  @JSImport("@material/chips/deprecated/chip", JSImport.Default)
-  @js.native
-  open class default ()
-    extends typings.materialChips.deprecatedChipFoundationMod.default {
-    def this(adapter: PartialMDCChipAdapterAddClass) = this()
-  }
-  
   @JSImport("@material/chips/deprecated/chip", "MDCChip")
   @js.native
   open class MDCChip protected ()

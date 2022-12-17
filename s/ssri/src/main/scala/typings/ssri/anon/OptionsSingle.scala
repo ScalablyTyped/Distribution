@@ -1,6 +1,6 @@
 package typings.ssri.anon
 
-import typings.ssri.ssriBooleans.`false`
+import typings.ssri.ssriBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,14 +9,14 @@ trait OptionsSingle extends StObject {
   
   var options: js.UndefOr[js.Array[String]] = js.undefined
   
-  var single: js.UndefOr[`false`] = js.undefined
+  var single: `true`
   
   var strict: js.UndefOr[Boolean] = js.undefined
 }
 object OptionsSingle {
   
   inline def apply(): OptionsSingle = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(single = true)
     __obj.asInstanceOf[OptionsSingle]
   }
   
@@ -28,9 +28,7 @@ object OptionsSingle {
     
     inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value*))
     
-    inline def setSingle(value: `false`): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
-    
-    inline def setSingleUndefined: Self = StObject.set(x, "single", js.undefined)
+    inline def setSingle(value: `true`): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
     
     inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     

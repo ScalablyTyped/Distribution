@@ -4,10 +4,10 @@ import typings.babylonjs.BABYLON.Behavior
 import typings.babylonjs.BABYLON.ICreateCapsuleOptions
 import typings.babylonjs.BABYLON.IPhysicsEnabledObject
 import typings.babylonjs.BABYLON.Nullable
+import typings.babylonjs.anon.CustomFaceColors
 import typings.babylonjs.anon.FlatRadius
 import typings.babylonjs.anon.H
-import typings.babylonjs.anon.MaxVector3
-import typings.babylonjs.anon.SizeZ
+import typings.babylonjs.anon.MaxMin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -336,7 +336,7 @@ object Mesh {
     * @param meshesOrMinMaxVector could be an array of meshes or a `{min:` Vector3`, max:` Vector3`}` object
     * @returns a vector3
     */
-  inline def Center(meshesOrMinMaxVector: MaxVector3): typings.babylonjs.BABYLON.Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Center")(meshesOrMinMaxVector.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.Vector3]
+  inline def Center(meshesOrMinMaxVector: MaxMin): typings.babylonjs.BABYLON.Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Center")(meshesOrMinMaxVector.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.Vector3]
   
   /**
     * Creates a box mesh.
@@ -1025,7 +1025,7 @@ object Mesh {
     * @returns a new Mesh
     * @deprecated Please use MeshBuilder instead
     */
-  inline def CreatePolyhedron(name: String, options: SizeZ, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolyhedron")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def CreatePolyhedron(name: String, options: CustomFaceColors, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolyhedron")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
   
   /**
     * Creates a ribbon mesh.
@@ -2508,7 +2508,7 @@ object Mesh {
     * @param meshes defines the list of meshes to scan
     * @returns an object `{min:` Vector3`, max:` Vector3`}`
     */
-  inline def MinMax(meshes: js.Array[typings.babylonjs.BABYLON.AbstractMesh]): MaxVector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("MinMax")(meshes.asInstanceOf[js.Any]).asInstanceOf[MaxVector3]
+  inline def MinMax(meshes: js.Array[typings.babylonjs.BABYLON.AbstractMesh]): MaxMin = ^.asInstanceOf[js.Dynamic].applyDynamic("MinMax")(meshes.asInstanceOf[js.Any]).asInstanceOf[MaxMin]
   
   /**
     * Mesh cap setting : no cap

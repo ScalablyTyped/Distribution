@@ -46,11 +46,9 @@ object baseExoticMod {
     
     var defaultProps: AsTDefaultComponent[TDefaultComponent] & (Partial[TOwnProps & ComponentPropsWithoutRef[TDefaultComponent]]) = js.native
     
-    var displayName: js.UndefOr[String] & String = js.native
+    var displayName: js.UndefOr[String] = js.native
     
-    var propTypes: js.UndefOr[WeakValidationMap[TDefaultComponent]] & (WeakValidationMap[
-        /* import warning: importer.ImportType#apply Failed type conversion: {[ k in 'as' | keyof TOwnProps | keyof react.react.ComponentPropsWithoutRef<TDefaultComponent> ]: any} */ js.Any
-      ]) = js.native
+    var propTypes: js.UndefOr[WeakValidationMap[TDefaultComponent]] = js.native
   }
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.

@@ -115,10 +115,10 @@ trait OmitCompositeWidgetanysetAbsoluteBounds[ChildType /* <: AnyWidget */] exte
   @JSName("_addChild")
   var _addChild_Original: js.Function2[/* child */ Widget[Any], /* index */ js.UndefOr[Double], Unit]
   
-  def _apply[Target](options: `23`[Target], rules: RuleSet[typings.tabris.global.tabris.widgets.Composite[ChildType]]): typings.tabris.global.tabris.widgets.Composite[ChildType]
+  def _apply[Target](options: `21`[Target], rules: RuleSet[typings.tabris.global.tabris.widgets.Composite[ChildType]]): typings.tabris.global.tabris.widgets.Composite[ChildType]
   @JSName("_apply")
   var _apply_Original: js.Function2[
-    /* options */ `23`[typings.tabris.global.tabris.widgets.Composite[ChildType]], 
+    /* options */ `21`[typings.tabris.global.tabris.widgets.Composite[ChildType]], 
     /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Composite[ChildType]], 
     typings.tabris.global.tabris.widgets.Composite[ChildType]
   ]
@@ -307,10 +307,10 @@ trait OmitCompositeWidgetanysetAbsoluteBounds[ChildType /* <: AnyWidget */] exte
   ]
   
   @JSName("apply")
-  def apply[Target](options: `23`[Target], rules: RuleSet[typings.tabris.global.tabris.widgets.Composite[ChildType]]): typings.tabris.global.tabris.widgets.Composite[ChildType]
+  def apply[Target](options: `21`[Target], rules: RuleSet[typings.tabris.global.tabris.widgets.Composite[ChildType]]): typings.tabris.global.tabris.widgets.Composite[ChildType]
   @JSName("apply")
   var apply_Original: js.Function2[
-    /* options */ `23`[typings.tabris.global.tabris.widgets.Composite[ChildType]], 
+    /* options */ `21`[typings.tabris.global.tabris.widgets.Composite[ChildType]], 
     /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Composite[ChildType]], 
     typings.tabris.global.tabris.widgets.Composite[ChildType]
   ]
@@ -605,7 +605,7 @@ object OmitCompositeWidgetanysetAbsoluteBounds {
     $trigger: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Unit,
     _acceptChild: /* child */ Widget[Any] => Boolean,
     _addChild: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit,
-    _apply: (/* options */ `23`[typings.tabris.global.tabris.widgets.Composite[ChildType]], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Composite[ChildType]]) => typings.tabris.global.tabris.widgets.Composite[ChildType],
+    _apply: (/* options */ `21`[typings.tabris.global.tabris.widgets.Composite[ChildType]], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Composite[ChildType]]) => typings.tabris.global.tabris.widgets.Composite[ChildType],
     _checkDisposed: () => Unit,
     _checkLayout: /* value */ typings.tabris.mod.Layout => Unit,
     _children: /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]] => WidgetCollection[Widget[Any]],
@@ -646,7 +646,7 @@ object OmitCompositeWidgetanysetAbsoluteBounds {
     animate: (/* properties */ Opacity, /* options */ AnimationOptions) => js.Promise[Unit],
     append: /* repeated */ Widget[Any] => typings.tabris.global.tabris.widgets.Composite[ChildType],
     appendTo: /* parent */ typings.tabris.mod.Composite[Widget[Any]] => typings.tabris.global.tabris.widgets.Composite[ChildType],
-    apply: (/* options */ `23`[typings.tabris.global.tabris.widgets.Composite[ChildType]], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Composite[ChildType]]) => typings.tabris.global.tabris.widgets.Composite[ChildType],
+    apply: (/* options */ `21`[typings.tabris.global.tabris.widgets.Composite[ChildType]], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Composite[ChildType]]) => typings.tabris.global.tabris.widgets.Composite[ChildType],
     baseline: SiblingReferenceValue | auto | `true`,
     bottom: ConstraintValue,
     bounds: Bounds,
@@ -773,7 +773,7 @@ object OmitCompositeWidgetanysetAbsoluteBounds {
     ): Self = StObject.set(x, "appendTo", js.Any.fromFunction1(value))
     
     inline def setApply(
-      value: (/* options */ `23`[typings.tabris.global.tabris.widgets.Composite[ChildType]], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Composite[ChildType]]) => typings.tabris.global.tabris.widgets.Composite[ChildType]
+      value: (/* options */ `21`[typings.tabris.global.tabris.widgets.Composite[ChildType]], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Composite[ChildType]]) => typings.tabris.global.tabris.widgets.Composite[ChildType]
     ): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
     
     inline def setBackground(value: LinearGradientValue | ColorValue | ImageValue): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
@@ -1021,7 +1021,7 @@ object OmitCompositeWidgetanysetAbsoluteBounds {
     inline def set_addChild(value: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "_addChild", js.Any.fromFunction2(value))
     
     inline def set_apply(
-      value: (/* options */ `23`[typings.tabris.global.tabris.widgets.Composite[ChildType]], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Composite[ChildType]]) => typings.tabris.global.tabris.widgets.Composite[ChildType]
+      value: (/* options */ `21`[typings.tabris.global.tabris.widgets.Composite[ChildType]], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Composite[ChildType]]) => typings.tabris.global.tabris.widgets.Composite[ChildType]
     ): Self = StObject.set(x, "_apply", js.Any.fromFunction2(value))
     
     inline def set_checkDisposed(value: () => Unit): Self = StObject.set(x, "_checkDisposed", js.Any.fromFunction0(value))

@@ -10,7 +10,10 @@ object libGettextMod {
   /**
     * Gettext class providing localization methods.
     */
-  trait Gettext extends StObject {
+  @JSImport("@jupyterlab/translation/lib/gettext", "Gettext")
+  @js.native
+  open class Gettext () extends StObject {
+    def this(options: IOptions) = this()
     
     /**
       * Shorthand for gettext.
@@ -24,17 +27,17 @@ object libGettextMod {
       * This is not a private method (starts with an underscore) it is just
       * a shorter and standard way to call these methods.
       */
-    def __(msgid: String, args: Any*): String
+    def __(msgid: String, args: Any*): String = js.native
     
-    /* private */ var _contextDelimiter: Any
+    /* private */ var _contextDelimiter: Any = js.native
     
-    /* private */ var _defaults: Any
+    /* private */ var _defaults: Any = js.native
     
-    /* private */ var _dictionary: Any
+    /* private */ var _dictionary: Any = js.native
     
-    /* private */ var _domain: Any
+    /* private */ var _domain: Any = js.native
     
-    /* private */ var _locale: Any
+    /* private */ var _locale: Any = js.native
     
     /**
       * Shorthand for ngettext.
@@ -50,7 +53,7 @@ object libGettextMod {
       * This is not a private method (starts with an underscore) it is just
       * a shorter and standard way to call these methods.
       */
-    def _n(msgid: String, msgid_plural: String, n: Double, args: Any*): String
+    def _n(msgid: String, msgid_plural: String, n: Double, args: Any*): String = js.native
     
     /**
       * Shorthand for npgettext.
@@ -67,7 +70,7 @@ object libGettextMod {
       * This is not a private method (starts with an underscore) it is just
       * a shorter and standard way to call these methods.
       */
-    def _np(msgctxt: String, msgid: String, msgid_plural: String, n: Double, args: Any*): String
+    def _np(msgctxt: String, msgid: String, msgid_plural: String, n: Double, args: Any*): String = js.native
     
     /**
       * Shorthand for pgettext.
@@ -82,13 +85,13 @@ object libGettextMod {
       * This is not a private method (starts with an underscore) it is just
       * a shorter and standard way to call these methods.
       */
-    def _p(msgctxt: String, msgid: String, args: Any*): String
+    def _p(msgctxt: String, msgid: String, args: Any*): String = js.native
     
-    /* private */ var _pluralForms: Any
+    /* private */ var _pluralForms: Any = js.native
     
-    /* private */ var _pluralFuncs: Any
+    /* private */ var _pluralFuncs: Any = js.native
     
-    /* private */ var _stringsPrefix: Any
+    /* private */ var _stringsPrefix: Any = js.native
     
     /**
       * Translate a singular string with extra interpolation values.
@@ -102,7 +105,7 @@ object libGettextMod {
       *
       * @return A translated string if found, or the original string.
       */
-    def dcnpgettext(domain: String, msgctxt: String, msgid: String, msgid_plural: String, n: Double, args: Any*): String
+    def dcnpgettext(domain: String, msgctxt: String, msgid: String, msgid_plural: String, n: Double, args: Any*): String = js.native
     
     /**
       * Split a locale into parent locales. "es-CO" -> ["es-CO", "es"]
@@ -111,28 +114,28 @@ object libGettextMod {
       *
       * @return An array of locales.
       */
-    /* private */ var expandLocale: Any
+    /* private */ var expandLocale: Any = js.native
     
     /**
       * Get current context delimiter.
       *
       * @return The current delimiter.
       */
-    def getContextDelimiter(): String
+    def getContextDelimiter(): String = js.native
     
     /**
       * Get current domain.
       *
       * @return The current domain string.
       */
-    def getDomain(): String
+    def getDomain(): String = js.native
     
     /**
       * Get current locale.
       *
       * @return The current locale.
       */
-    def getLocale(): String
+    def getLocale(): String = js.native
     
     /**
       * Split a locale into parent locales. "es-CO" -> ["es-CO", "es"]
@@ -140,14 +143,14 @@ object libGettextMod {
       * @param pluralForm - Plural form string..
       * @return An function to compute plural forms.
       */
-    /* private */ var getPluralFunc: Any
+    /* private */ var getPluralFunc: Any = js.native
     
     /**
       * Get current strings prefix.
       *
       * @return The strings prefix.
       */
-    def getStringsPrefix(): String
+    def getStringsPrefix(): String = js.native
     
     /**
       * Translate a singular string with extra interpolation values.
@@ -157,7 +160,7 @@ object libGettextMod {
       *
       * @return A translated string if found, or the original string.
       */
-    def gettext(msgid: String, args: Any*): String
+    def gettext(msgid: String, args: Any*): String = js.native
     
     /**
       * Load json translations strings (In Jed 2.x format).
@@ -165,7 +168,7 @@ object libGettextMod {
       * @param jsonData - The translation strings plus metadata.
       * @param domain - The translation domain, e.g. "jupyterlab".
       */
-    def loadJSON(jsonData: IJsonData, domain: String): Unit
+    def loadJSON(jsonData: IJsonData, domain: String): Unit = js.native
     
     /**
       * Translate a plural string with extra interpolation values.
@@ -175,7 +178,7 @@ object libGettextMod {
       *
       * @return A translated string if found, or the original string.
       */
-    def ngettext(msgid: String, msgid_plural: String, n: Double, args: Any*): String
+    def ngettext(msgid: String, msgid_plural: String, n: Double, args: Any*): String = js.native
     
     /**
       * Translate a contextualized plural string with extra interpolation values.
@@ -188,7 +191,7 @@ object libGettextMod {
       *
       * @return A translated string if found, or the original string.
       */
-    def npgettext(msgctxt: String, msgid: String, msgid_plural: String, n: Double, args: Any*): String
+    def npgettext(msgctxt: String, msgid: String, msgid_plural: String, n: Double, args: Any*): String = js.native
     
     /**
       * Translate a contextualized singular string with extra interpolation values.
@@ -203,7 +206,7 @@ object libGettextMod {
       * This is not a private method (starts with an underscore) it is just
       * a shorter and standard way to call these methods.
       */
-    def pgettext(msgctxt: String, msgid: String, args: Any*): String
+    def pgettext(msgctxt: String, msgid: String, args: Any*): String = js.native
     
     /**
       * Remove the context delimiter from string.
@@ -211,28 +214,28 @@ object libGettextMod {
       * @param str - Translation string.
       * @return A translation string without context.
       */
-    /* private */ var removeContext: Any
+    /* private */ var removeContext: Any = js.native
     
     /**
       * Set current context delimiter.
       *
       * @param delimiter - The delimiter to set.
       */
-    def setContextDelimiter(delimiter: String): Unit
+    def setContextDelimiter(delimiter: String): Unit = js.native
     
     /**
       * Set current domain.
       *
       * @param domain - The domain to set.
       */
-    def setDomain(domain: String): Unit
+    def setDomain(domain: String): Unit = js.native
     
     /**
       * Set current locale.
       *
       * @param locale - The locale to set.
       */
-    def setLocale(locale: String): Unit
+    def setLocale(locale: String): Unit = js.native
     
     /**
       * Set messages after loading them.
@@ -245,14 +248,14 @@ object libGettextMod {
       * ### Notes
       * Contains juicy parts of https://github.com/Orange-OpenSource/gettext.js/blob/master/lib.gettext.js
       */
-    /* private */ var setMessages: Any
+    /* private */ var setMessages: Any = js.native
     
     /**
       * Set current strings prefix.
       *
       * @param prefix - The string prefix to set.
       */
-    def setStringsPrefix(prefix: String): Unit
+    def setStringsPrefix(prefix: String): Unit = js.native
     
     /**
       * Proper translation function that handle plurals and directives.
@@ -267,111 +270,27 @@ object libGettextMod {
       * ### Notes
       * Contains juicy parts of https://github.com/Orange-OpenSource/gettext.js/blob/master/lib.gettext.js
       */
-    /* private */ var t: Any
+    /* private */ var t: Any = js.native
   }
   object Gettext {
     
-    inline def apply(
-      __ : (String, /* repeated */ Any) => String,
-      _contextDelimiter: Any,
-      _defaults: Any,
-      _dictionary: Any,
-      _domain: Any,
-      _locale: Any,
-      _n: (String, String, Double, /* repeated */ Any) => String,
-      _np: (String, String, String, Double, /* repeated */ Any) => String,
-      _p: (String, String, /* repeated */ Any) => String,
-      _pluralForms: Any,
-      _pluralFuncs: Any,
-      _stringsPrefix: Any,
-      dcnpgettext: (String, String, String, String, Double, /* repeated */ Any) => String,
-      expandLocale: Any,
-      getContextDelimiter: () => String,
-      getDomain: () => String,
-      getLocale: () => String,
-      getPluralFunc: Any,
-      getStringsPrefix: () => String,
-      gettext: (String, /* repeated */ Any) => String,
-      loadJSON: (IJsonData, String) => Unit,
-      ngettext: (String, String, Double, /* repeated */ Any) => String,
-      npgettext: (String, String, String, Double, /* repeated */ Any) => String,
-      pgettext: (String, String, /* repeated */ Any) => String,
-      removeContext: Any,
-      setContextDelimiter: String => Unit,
-      setDomain: String => Unit,
-      setLocale: String => Unit,
-      setMessages: Any,
-      setStringsPrefix: String => Unit,
-      t: Any
-    ): Gettext = {
-      val __obj = js.Dynamic.literal(__ = js.Any.fromFunction2(__), _contextDelimiter = _contextDelimiter.asInstanceOf[js.Any], _defaults = _defaults.asInstanceOf[js.Any], _dictionary = _dictionary.asInstanceOf[js.Any], _domain = _domain.asInstanceOf[js.Any], _locale = _locale.asInstanceOf[js.Any], _n = js.Any.fromFunction4(_n), _np = js.Any.fromFunction5(_np), _p = js.Any.fromFunction3(_p), _pluralForms = _pluralForms.asInstanceOf[js.Any], _pluralFuncs = _pluralFuncs.asInstanceOf[js.Any], _stringsPrefix = _stringsPrefix.asInstanceOf[js.Any], dcnpgettext = js.Any.fromFunction6(dcnpgettext), expandLocale = expandLocale.asInstanceOf[js.Any], getContextDelimiter = js.Any.fromFunction0(getContextDelimiter), getDomain = js.Any.fromFunction0(getDomain), getLocale = js.Any.fromFunction0(getLocale), getPluralFunc = getPluralFunc.asInstanceOf[js.Any], getStringsPrefix = js.Any.fromFunction0(getStringsPrefix), gettext = js.Any.fromFunction2(gettext), loadJSON = js.Any.fromFunction2(loadJSON), ngettext = js.Any.fromFunction4(ngettext), npgettext = js.Any.fromFunction5(npgettext), pgettext = js.Any.fromFunction3(pgettext), removeContext = removeContext.asInstanceOf[js.Any], setContextDelimiter = js.Any.fromFunction1(setContextDelimiter), setDomain = js.Any.fromFunction1(setDomain), setLocale = js.Any.fromFunction1(setLocale), setMessages = setMessages.asInstanceOf[js.Any], setStringsPrefix = js.Any.fromFunction1(setStringsPrefix), t = t.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Gettext]
-    }
+    @JSImport("@jupyterlab/translation/lib/gettext", "Gettext")
+    @js.native
+    val ^ : js.Any = js.native
     
-    extension [Self <: Gettext](x: Self) {
-      
-      inline def setDcnpgettext(value: (String, String, String, String, Double, /* repeated */ Any) => String): Self = StObject.set(x, "dcnpgettext", js.Any.fromFunction6(value))
-      
-      inline def setExpandLocale(value: Any): Self = StObject.set(x, "expandLocale", value.asInstanceOf[js.Any])
-      
-      inline def setGetContextDelimiter(value: () => String): Self = StObject.set(x, "getContextDelimiter", js.Any.fromFunction0(value))
-      
-      inline def setGetDomain(value: () => String): Self = StObject.set(x, "getDomain", js.Any.fromFunction0(value))
-      
-      inline def setGetLocale(value: () => String): Self = StObject.set(x, "getLocale", js.Any.fromFunction0(value))
-      
-      inline def setGetPluralFunc(value: Any): Self = StObject.set(x, "getPluralFunc", value.asInstanceOf[js.Any])
-      
-      inline def setGetStringsPrefix(value: () => String): Self = StObject.set(x, "getStringsPrefix", js.Any.fromFunction0(value))
-      
-      inline def setGettext(value: (String, /* repeated */ Any) => String): Self = StObject.set(x, "gettext", js.Any.fromFunction2(value))
-      
-      inline def setLoadJSON(value: (IJsonData, String) => Unit): Self = StObject.set(x, "loadJSON", js.Any.fromFunction2(value))
-      
-      inline def setNgettext(value: (String, String, Double, /* repeated */ Any) => String): Self = StObject.set(x, "ngettext", js.Any.fromFunction4(value))
-      
-      inline def setNpgettext(value: (String, String, String, Double, /* repeated */ Any) => String): Self = StObject.set(x, "npgettext", js.Any.fromFunction5(value))
-      
-      inline def setPgettext(value: (String, String, /* repeated */ Any) => String): Self = StObject.set(x, "pgettext", js.Any.fromFunction3(value))
-      
-      inline def setRemoveContext(value: Any): Self = StObject.set(x, "removeContext", value.asInstanceOf[js.Any])
-      
-      inline def setSetContextDelimiter(value: String => Unit): Self = StObject.set(x, "setContextDelimiter", js.Any.fromFunction1(value))
-      
-      inline def setSetDomain(value: String => Unit): Self = StObject.set(x, "setDomain", js.Any.fromFunction1(value))
-      
-      inline def setSetLocale(value: String => Unit): Self = StObject.set(x, "setLocale", js.Any.fromFunction1(value))
-      
-      inline def setSetMessages(value: Any): Self = StObject.set(x, "setMessages", value.asInstanceOf[js.Any])
-      
-      inline def setSetStringsPrefix(value: String => Unit): Self = StObject.set(x, "setStringsPrefix", js.Any.fromFunction1(value))
-      
-      inline def setT(value: Any): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
-      
-      inline def set__(value: (String, /* repeated */ Any) => String): Self = StObject.set(x, "__", js.Any.fromFunction2(value))
-      
-      inline def set_contextDelimiter(value: Any): Self = StObject.set(x, "_contextDelimiter", value.asInstanceOf[js.Any])
-      
-      inline def set_defaults(value: Any): Self = StObject.set(x, "_defaults", value.asInstanceOf[js.Any])
-      
-      inline def set_dictionary(value: Any): Self = StObject.set(x, "_dictionary", value.asInstanceOf[js.Any])
-      
-      inline def set_domain(value: Any): Self = StObject.set(x, "_domain", value.asInstanceOf[js.Any])
-      
-      inline def set_locale(value: Any): Self = StObject.set(x, "_locale", value.asInstanceOf[js.Any])
-      
-      inline def set_n(value: (String, String, Double, /* repeated */ Any) => String): Self = StObject.set(x, "_n", js.Any.fromFunction4(value))
-      
-      inline def set_np(value: (String, String, String, Double, /* repeated */ Any) => String): Self = StObject.set(x, "_np", js.Any.fromFunction5(value))
-      
-      inline def set_p(value: (String, String, /* repeated */ Any) => String): Self = StObject.set(x, "_p", js.Any.fromFunction3(value))
-      
-      inline def set_pluralForms(value: Any): Self = StObject.set(x, "_pluralForms", value.asInstanceOf[js.Any])
-      
-      inline def set_pluralFuncs(value: Any): Self = StObject.set(x, "_pluralFuncs", value.asInstanceOf[js.Any])
-      
-      inline def set_stringsPrefix(value: Any): Self = StObject.set(x, "_stringsPrefix", value.asInstanceOf[js.Any])
-    }
+    /**
+      * `sprintf` equivalent, takes a string and some arguments to make a
+      * computed string.
+      *
+      * @param fmt - The string to interpolate.
+      * @param args - The variables to use in interpolation.
+      *
+      * ### Examples
+      * strfmt("%1 dogs are in %2", 7, "the kitchen"); => "7 dogs are in the kitchen"
+      * strfmt("I like %1, bananas and %1", "apples"); => "I like apples, bananas and apples"
+      */
+    /* static member */
+    inline def strfmt(fmt: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("strfmt")(scala.List(fmt.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
   }
   
   /**

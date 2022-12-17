@@ -1,19 +1,20 @@
 package typings.firebaseAuth.anon
 
+import typings.firebaseAuth.distSrcApiAuthenticationMfaMod.IdTokenMfaResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `35` extends StObject {
   
-  var appName: typings.firebaseAuth.distSrcModelAuthMod.AppName
+  var _serverResponse: IdTokenMfaResponse
   
-  var missingPlugin: js.UndefOr[String] = js.undefined
+  var appName: typings.firebaseAuth.distSrcModelAuthMod.AppName
 }
 object `35` {
   
-  inline def apply(appName: typings.firebaseAuth.distSrcModelAuthMod.AppName): `35` = {
-    val __obj = js.Dynamic.literal(appName = appName.asInstanceOf[js.Any])
+  inline def apply(_serverResponse: IdTokenMfaResponse, appName: typings.firebaseAuth.distSrcModelAuthMod.AppName): `35` = {
+    val __obj = js.Dynamic.literal(_serverResponse = _serverResponse.asInstanceOf[js.Any], appName = appName.asInstanceOf[js.Any])
     __obj.asInstanceOf[`35`]
   }
   
@@ -21,8 +22,6 @@ object `35` {
     
     inline def setAppName(value: typings.firebaseAuth.distSrcModelAuthMod.AppName): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
     
-    inline def setMissingPlugin(value: String): Self = StObject.set(x, "missingPlugin", value.asInstanceOf[js.Any])
-    
-    inline def setMissingPluginUndefined: Self = StObject.set(x, "missingPlugin", js.undefined)
+    inline def set_serverResponse(value: IdTokenMfaResponse): Self = StObject.set(x, "_serverResponse", value.asInstanceOf[js.Any])
   }
 }

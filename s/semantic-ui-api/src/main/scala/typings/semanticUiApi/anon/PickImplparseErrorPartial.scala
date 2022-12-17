@@ -28,7 +28,7 @@ trait PickImplparseErrorPartial
   
   var noReturnedValue: js.UndefOr[String] = js.undefined
   
-  var parseError: String & js.UndefOr[String]
+  var parseError: String
   
   var requiredParameter: js.UndefOr[String] = js.undefined
   
@@ -38,7 +38,7 @@ trait PickImplparseErrorPartial
 }
 object PickImplparseErrorPartial {
   
-  inline def apply(parseError: String & js.UndefOr[String]): PickImplparseErrorPartial = {
+  inline def apply(parseError: String): PickImplparseErrorPartial = {
     val __obj = js.Dynamic.literal(parseError = parseError.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplparseErrorPartial]
   }
@@ -81,7 +81,7 @@ object PickImplparseErrorPartial {
     
     inline def setNoReturnedValueUndefined: Self = StObject.set(x, "noReturnedValue", js.undefined)
     
-    inline def setParseError(value: String & js.UndefOr[String]): Self = StObject.set(x, "parseError", value.asInstanceOf[js.Any])
+    inline def setParseError(value: String): Self = StObject.set(x, "parseError", value.asInstanceOf[js.Any])
     
     inline def setRequiredParameter(value: String): Self = StObject.set(x, "requiredParameter", value.asInstanceOf[js.Any])
     

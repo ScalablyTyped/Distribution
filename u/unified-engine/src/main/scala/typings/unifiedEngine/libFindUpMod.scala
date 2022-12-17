@@ -12,7 +12,7 @@ object libFindUpMod {
   
   @JSImport("unified-engine/lib/find-up", "FindUp")
   @js.native
-  open class FindUp[Value /* <: js.Object & FilePath */] protected () extends StObject {
+  open class FindUp[Value /* <: FilePath */] protected () extends StObject {
     /**
       * @callback Create
       * @param {Buffer} buf

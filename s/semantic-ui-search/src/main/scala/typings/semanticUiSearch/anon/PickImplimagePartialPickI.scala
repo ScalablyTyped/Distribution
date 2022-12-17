@@ -24,7 +24,7 @@ trait PickImplimagePartialPickI
   
   var description: js.UndefOr[String] = js.undefined
   
-  var image: String & js.UndefOr[String]
+  var image: String
   
   var price: js.UndefOr[String] = js.undefined
   
@@ -34,7 +34,7 @@ trait PickImplimagePartialPickI
 }
 object PickImplimagePartialPickI {
   
-  inline def apply(image: String & js.UndefOr[String]): PickImplimagePartialPickI = {
+  inline def apply(image: String): PickImplimagePartialPickI = {
     val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplimagePartialPickI]
   }
@@ -69,7 +69,7 @@ object PickImplimagePartialPickI {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setImage(value: String & js.UndefOr[String]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     inline def setPrice(value: String): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     

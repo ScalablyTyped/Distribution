@@ -1,6 +1,7 @@
 package typings.fastGlob
 
 import typings.fastGlob.anon.FnCall
+import typings.fastGlob.anon.Typeofstat
 import typings.node.streamMod.Readable
 import typings.nodelibFsWalk.outSettingsMod.Options
 import org.scalablytyped.runtime.StObject
@@ -21,7 +22,7 @@ object outReadersStreamMod {
     
     /* private */ var _getStat: Any = js.native
     
-    /* protected */ var _stat: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fsStat.stat */ Any = js.native
+    /* protected */ var _stat: Typeofstat = js.native
     
     /* protected */ def _walkStream(directory: String): Readable = js.native
     /* protected */ def _walkStream(directory: String, optionsOrSettings: Options): Readable = js.native

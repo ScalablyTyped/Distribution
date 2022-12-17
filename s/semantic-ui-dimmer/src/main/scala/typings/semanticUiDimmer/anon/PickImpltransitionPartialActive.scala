@@ -24,11 +24,11 @@ trait PickImpltransitionPartialActive
   
   var show: js.UndefOr[String] = js.undefined
   
-  var transition: String & js.UndefOr[String]
+  var transition: String
 }
 object PickImpltransitionPartialActive {
   
-  inline def apply(transition: String & js.UndefOr[String]): PickImpltransitionPartialActive = {
+  inline def apply(transition: String): PickImpltransitionPartialActive = {
     val __obj = js.Dynamic.literal(transition = transition.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpltransitionPartialActive]
   }
@@ -63,6 +63,6 @@ object PickImpltransitionPartialActive {
     
     inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
-    inline def setTransition(value: String & js.UndefOr[String]): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+    inline def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
   }
 }

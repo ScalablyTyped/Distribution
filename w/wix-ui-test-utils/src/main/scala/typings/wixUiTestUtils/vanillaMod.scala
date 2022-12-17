@@ -6,7 +6,7 @@ import typings.unidriverCore.mod.DriverContext
 import typings.unidriverCore.mod.UniDriver
 import typings.unidriverJsdomReact.mod.ElementOrElementFinder
 import typings.wixUiTestUtils.anon.DataHookPropName
-import typings.wixUiTestUtils.anon.Wrapper
+import typings.wixUiTestUtils.anon.DataHookWrapper
 import typings.wixUiTestUtils.distSrcBaseDriverMod.BaseUniDriver
 import typings.wixUiTestUtils.distSrcDriverFactoryCreateDriverFactoryMod.BaseDriver
 import typings.wixUiTestUtils.distSrcVanillaVanillaMod.TestkitArgs
@@ -22,17 +22,17 @@ object vanillaMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isTestkitExists[T /* <: BaseDriver */](Element: ReactElement, testkitFactory: js.Function1[/* obj */ Wrapper, T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTestkitExists")(Element.asInstanceOf[js.Any], testkitFactory.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isTestkitExists[T /* <: BaseDriver */](Element: ReactElement, testkitFactory: js.Function1[/* obj */ DataHookWrapper, T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTestkitExists")(Element.asInstanceOf[js.Any], testkitFactory.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def isTestkitExists[T /* <: BaseDriver */](
     Element: ReactElement,
-    testkitFactory: js.Function1[/* obj */ Wrapper, T],
+    testkitFactory: js.Function1[/* obj */ DataHookWrapper, T],
     options: DataHookPropName
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTestkitExists")(Element.asInstanceOf[js.Any], testkitFactory.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def isUniTestkitExists[T /* <: BaseUniDriver */](Element: ReactElement, testkitFactory: js.Function1[/* obj */ Wrapper, T]): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isUniTestkitExists")(Element.asInstanceOf[js.Any], testkitFactory.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  inline def isUniTestkitExists[T /* <: BaseUniDriver */](Element: ReactElement, testkitFactory: js.Function1[/* obj */ DataHookWrapper, T]): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isUniTestkitExists")(Element.asInstanceOf[js.Any], testkitFactory.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   inline def isUniTestkitExists[T /* <: BaseUniDriver */](
     Element: ReactElement,
-    testkitFactory: js.Function1[/* obj */ Wrapper, T],
+    testkitFactory: js.Function1[/* obj */ DataHookWrapper, T],
     options: DataHookPropName
   ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isUniTestkitExists")(Element.asInstanceOf[js.Any], testkitFactory.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   

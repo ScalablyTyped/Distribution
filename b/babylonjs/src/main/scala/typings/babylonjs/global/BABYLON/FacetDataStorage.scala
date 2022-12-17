@@ -2,7 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.IndicesArray
 import typings.babylonjs.anon.Ind
-import typings.babylonjs.anon.Max
+import typings.babylonjs.anon.Y
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,5 +66,5 @@ open class FacetDataStorage ()
   var partitioningSubdivisions: Double = js.native
   
   /* CompleteClass */
-  var subDiv: Max = js.native
+  var subDiv: Y = js.native
 }

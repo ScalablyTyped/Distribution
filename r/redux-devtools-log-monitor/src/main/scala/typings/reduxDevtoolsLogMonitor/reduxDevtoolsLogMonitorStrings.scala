@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reduxDevtoolsLogMonitorStrings {
   
   @js.native
-  sealed trait default extends StObject
-  inline def default: default = "default".asInstanceOf[default]
-  
-  @js.native
   sealed trait apathy extends StObject
   inline def apathy: apathy = "apathy".asInstanceOf[apathy]
   

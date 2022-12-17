@@ -36,7 +36,6 @@ import typings.chartist.distSvgMod.SvgPath
 import typings.chartist.distUtilsTypesMod.RequiredKeys
 import typings.std.Omit
 import typings.std.Record
-import typings.std.Required
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -216,47 +215,39 @@ object distChartsLineChartLineChartDottypesMod {
     /**
       * The base for the area chart that will be used to close the area shape (is normally 0)
       */
-    var areaBase: js.UndefOr[Double] & Double
+    var areaBase: js.UndefOr[Double] = js.undefined
     
     /**
       * Options for X-Axis
       */
-    var axisX: (js.UndefOr[
+    var axisX: js.UndefOr[
         RequiredKeys[
           AxisOptions, 
           offset | position | labelOffset | showLabel | showGrid | labelInterpolationFnc, 
           scala.Nothing
         ]
-      ]) & (RequiredKeys[
-        AxisOptions, 
-        offset | position | labelOffset | showLabel | showGrid | labelInterpolationFnc, 
-        scala.Nothing
-      ])
+      ] = js.undefined
     
     /**
       * Options for Y-Axis
       */
-    var axisY: (js.UndefOr[
+    var axisY: js.UndefOr[
         RequiredKeys[
           AxisOptions, 
           offset | position | labelOffset | showLabel | showGrid | labelInterpolationFnc | scaleMinSpace, 
           scala.Nothing
         ]
-      ]) & (RequiredKeys[
-        AxisOptions, 
-        offset | position | labelOffset | showLabel | showGrid | labelInterpolationFnc | scaleMinSpace, 
-        scala.Nothing
-      ])
+      ] = js.undefined
     
     /**
       *  Padding of the chart drawing area to the container element and labels as a number or padding object.
       */
-    var chartPadding: (js.UndefOr[Double | PartialChartPadding]) & (Double | PartialChartPadding)
+    var chartPadding: js.UndefOr[Double | PartialChartPadding] = js.undefined
     
     /**
       * Override the class names that get used to generate the SVG structure of the chart
       */
-    var classNames: js.UndefOr[Area] & Area & Required[js.UndefOr[Area]]
+    var classNames: js.UndefOr[Area] = js.undefined
     
     /**
       * When set to true, the last grid line on the x-axis is not drawn and the chart elements will expand to the full available width of the chart. For the last label to be drawn correctly you might need to add chart padding or offset the last label with a draw event handler.
@@ -279,7 +270,7 @@ object distChartsLineChartLineChartDottypesMod {
       * You can also choose other smoothing / interpolation functions available in the Chartist.Interpolation module, or write your own interpolation function.
       * Check the examples for a brief description.
       */
-    var lineSmooth: (js.UndefOr[Boolean | LineInterpolation]) & (Boolean | LineInterpolation)
+    var lineSmooth: js.UndefOr[Boolean | LineInterpolation] = js.undefined
     
     /**
       * Overriding the natural low of the chart allows you to zoom in or limit the charts lowest displayed value
@@ -313,12 +304,12 @@ object distChartsLineChartLineChartDottypesMod {
     /**
       * If the line should be drawn or not
       */
-    var showLine: js.UndefOr[Boolean] & Boolean
+    var showLine: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If dots should be drawn or not
       */
-    var showPoint: js.UndefOr[Boolean] & Boolean
+    var showPoint: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specify a fixed width for the chart as a string (i.e. '100px' or '50%')
@@ -327,75 +318,44 @@ object distChartsLineChartLineChartDottypesMod {
   }
   object LineChartOptionsWithDefaults {
     
-    inline def apply(
-      areaBase: js.UndefOr[Double] & Double,
-      axisX: (js.UndefOr[
-          RequiredKeys[
-            AxisOptions, 
-            offset | position | labelOffset | showLabel | showGrid | labelInterpolationFnc, 
-            scala.Nothing
-          ]
-        ]) & (RequiredKeys[
-          AxisOptions, 
-          offset | position | labelOffset | showLabel | showGrid | labelInterpolationFnc, 
-          scala.Nothing
-        ]),
-      axisY: (js.UndefOr[
-          RequiredKeys[
-            AxisOptions, 
-            offset | position | labelOffset | showLabel | showGrid | labelInterpolationFnc | scaleMinSpace, 
-            scala.Nothing
-          ]
-        ]) & (RequiredKeys[
-          AxisOptions, 
-          offset | position | labelOffset | showLabel | showGrid | labelInterpolationFnc | scaleMinSpace, 
-          scala.Nothing
-        ]),
-      chartPadding: (js.UndefOr[Double | PartialChartPadding]) & (Double | PartialChartPadding),
-      classNames: js.UndefOr[Area] & Area & Required[js.UndefOr[Area]],
-      lineSmooth: (js.UndefOr[Boolean | LineInterpolation]) & (Boolean | LineInterpolation),
-      showLine: js.UndefOr[Boolean] & Boolean,
-      showPoint: js.UndefOr[Boolean] & Boolean
-    ): LineChartOptionsWithDefaults = {
-      val __obj = js.Dynamic.literal(areaBase = areaBase.asInstanceOf[js.Any], axisX = axisX.asInstanceOf[js.Any], axisY = axisY.asInstanceOf[js.Any], chartPadding = chartPadding.asInstanceOf[js.Any], classNames = classNames.asInstanceOf[js.Any], lineSmooth = lineSmooth.asInstanceOf[js.Any], showLine = showLine.asInstanceOf[js.Any], showPoint = showPoint.asInstanceOf[js.Any])
+    inline def apply(): LineChartOptionsWithDefaults = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LineChartOptionsWithDefaults]
     }
     
     extension [Self <: LineChartOptionsWithDefaults](x: Self) {
       
-      inline def setAreaBase(value: js.UndefOr[Double] & Double): Self = StObject.set(x, "areaBase", value.asInstanceOf[js.Any])
+      inline def setAreaBase(value: Double): Self = StObject.set(x, "areaBase", value.asInstanceOf[js.Any])
+      
+      inline def setAreaBaseUndefined: Self = StObject.set(x, "areaBase", js.undefined)
       
       inline def setAxisX(
-        value: (js.UndefOr[
-              RequiredKeys[
-                AxisOptions, 
-                offset | position | labelOffset | showLabel | showGrid | labelInterpolationFnc, 
-                scala.Nothing
-              ]
-            ]) & (RequiredKeys[
+        value: RequiredKeys[
               AxisOptions, 
               offset | position | labelOffset | showLabel | showGrid | labelInterpolationFnc, 
               scala.Nothing
-            ])
+            ]
       ): Self = StObject.set(x, "axisX", value.asInstanceOf[js.Any])
       
+      inline def setAxisXUndefined: Self = StObject.set(x, "axisX", js.undefined)
+      
       inline def setAxisY(
-        value: (js.UndefOr[
-              RequiredKeys[
-                AxisOptions, 
-                offset | position | labelOffset | showLabel | showGrid | labelInterpolationFnc | scaleMinSpace, 
-                scala.Nothing
-              ]
-            ]) & (RequiredKeys[
+        value: RequiredKeys[
               AxisOptions, 
               offset | position | labelOffset | showLabel | showGrid | labelInterpolationFnc | scaleMinSpace, 
               scala.Nothing
-            ])
+            ]
       ): Self = StObject.set(x, "axisY", value.asInstanceOf[js.Any])
       
-      inline def setChartPadding(value: (js.UndefOr[Double | PartialChartPadding]) & (Double | PartialChartPadding)): Self = StObject.set(x, "chartPadding", value.asInstanceOf[js.Any])
+      inline def setAxisYUndefined: Self = StObject.set(x, "axisY", js.undefined)
       
-      inline def setClassNames(value: js.UndefOr[Area] & Area & Required[js.UndefOr[Area]]): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
+      inline def setChartPadding(value: Double | PartialChartPadding): Self = StObject.set(x, "chartPadding", value.asInstanceOf[js.Any])
+      
+      inline def setChartPaddingUndefined: Self = StObject.set(x, "chartPadding", js.undefined)
+      
+      inline def setClassNames(value: Area): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
+      
+      inline def setClassNamesUndefined: Self = StObject.set(x, "classNames", js.undefined)
       
       inline def setFullWidth(value: Boolean): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
       
@@ -409,7 +369,11 @@ object distChartsLineChartLineChartDottypesMod {
       
       inline def setHighUndefined: Self = StObject.set(x, "high", js.undefined)
       
-      inline def setLineSmooth(value: (js.UndefOr[Boolean | LineInterpolation]) & (Boolean | LineInterpolation)): Self = StObject.set(x, "lineSmooth", value.asInstanceOf[js.Any])
+      inline def setLineSmooth(value: Boolean | LineInterpolation): Self = StObject.set(x, "lineSmooth", value.asInstanceOf[js.Any])
+      
+      inline def setLineSmoothFunction2(value: (/* pathCoordinates */ js.Array[Double], /* valueData */ js.Array[SegmentData]) => SvgPath): Self = StObject.set(x, "lineSmooth", js.Any.fromFunction2(value))
+      
+      inline def setLineSmoothUndefined: Self = StObject.set(x, "lineSmooth", js.undefined)
       
       inline def setLow(value: Double): Self = StObject.set(x, "low", value.asInstanceOf[js.Any])
       
@@ -441,9 +405,13 @@ object distChartsLineChartLineChartDottypesMod {
       
       inline def setShowGridBackgroundUndefined: Self = StObject.set(x, "showGridBackground", js.undefined)
       
-      inline def setShowLine(value: js.UndefOr[Boolean] & Boolean): Self = StObject.set(x, "showLine", value.asInstanceOf[js.Any])
+      inline def setShowLine(value: Boolean): Self = StObject.set(x, "showLine", value.asInstanceOf[js.Any])
       
-      inline def setShowPoint(value: js.UndefOr[Boolean] & Boolean): Self = StObject.set(x, "showPoint", value.asInstanceOf[js.Any])
+      inline def setShowLineUndefined: Self = StObject.set(x, "showLine", js.undefined)
+      
+      inline def setShowPoint(value: Boolean): Self = StObject.set(x, "showPoint", value.asInstanceOf[js.Any])
+      
+      inline def setShowPointUndefined: Self = StObject.set(x, "showPoint", js.undefined)
       
       inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       

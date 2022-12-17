@@ -49,9 +49,7 @@ trait PickImplonErrorPartialPic
   
   def onError(value: Double, total: Double): Unit
   @JSName("onError")
-  var onError_Original: (js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]) & (js.UndefOr[
-    js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]
-  ])
+  var onError_Original: js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]
   
   var onSuccess: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* total */ Double, Unit]] = js.undefined
   
@@ -83,11 +81,7 @@ trait PickImplonErrorPartialPic
 }
 object PickImplonErrorPartialPic {
   
-  inline def apply(
-    onError: (js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]) & (js.UndefOr[
-      js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]
-    ])
-  ): PickImplonErrorPartialPic = {
+  inline def apply(onError: js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]): PickImplonErrorPartialPic = {
     val __obj = js.Dynamic.literal(onError = onError.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonErrorPartialPic]
   }
@@ -140,11 +134,7 @@ object PickImplonErrorPartialPic {
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    inline def setOnError(
-      value: (js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]) & (js.UndefOr[
-          js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]
-        ])
-    ): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
+    inline def setOnError(value: js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
     
     inline def setOnSuccess(value: js.ThisFunction1[/* this */ JQuery, /* total */ Double, Unit]): Self = StObject.set(x, "onSuccess", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,7 @@ object anon {
     
     var keyEncoding: js.UndefOr[uint32 | binary | `ordered-binary`] = js.undefined
     
-    var name: js.UndefOr[String] & String
+    var name: js.UndefOr[String] = js.undefined
     
     var sharedStructuresKey: js.UndefOr[typings.lmdb.mod.Key] = js.undefined
     
@@ -36,8 +36,8 @@ object anon {
   }
   object DatabaseOptionsnamestring {
     
-    inline def apply(name: js.UndefOr[String] & String): DatabaseOptionsnamestring = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    inline def apply(): DatabaseOptionsnamestring = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DatabaseOptionsnamestring]
     }
     
@@ -63,7 +63,9 @@ object anon {
       
       inline def setKeyEncodingUndefined: Self = StObject.set(x, "keyEncoding", js.undefined)
       
-      inline def setName(value: js.UndefOr[String] & String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
       inline def setSharedStructuresKey(value: typings.lmdb.mod.Key): Self = StObject.set(x, "sharedStructuresKey", value.asInstanceOf[js.Any])
       

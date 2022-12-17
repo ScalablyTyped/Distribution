@@ -1,5 +1,6 @@
 package typings.styledSystem.mod
 
+import typings.csstype.mod.Property.TextShadow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,12 +14,7 @@ trait TextShadowProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StO
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow)
     */
-  var textShadow: js.UndefOr[
-    ResponsiveValue[
-      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextShadow */ js.Any) | Double, 
-      ThemeType
-    ]
-  ] = js.undefined
+  var textShadow: js.UndefOr[ResponsiveValue[TextShadow | Double, ThemeType]] = js.undefined
 }
 object TextShadowProps {
   
@@ -29,19 +25,12 @@ object TextShadowProps {
   
   extension [Self <: TextShadowProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & TextShadowProps[ThemeType]) {
     
-    inline def setTextShadow(
-      value: ResponsiveValue[
-          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextShadow */ js.Any) | Double, 
-          ThemeType
-        ]
-    ): Self = StObject.set(x, "textShadow", value.asInstanceOf[js.Any])
+    inline def setTextShadow(value: ResponsiveValue[TextShadow | Double, ThemeType]): Self = StObject.set(x, "textShadow", value.asInstanceOf[js.Any])
     
     inline def setTextShadowNull: Self = StObject.set(x, "textShadow", null)
     
     inline def setTextShadowUndefined: Self = StObject.set(x, "textShadow", js.undefined)
     
-    inline def setTextShadowVarargs(
-      value: (((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextShadow */ js.Any) | Double) | Null)*
-    ): Self = StObject.set(x, "textShadow", js.Array(value :_*))
+    inline def setTextShadowVarargs(value: ((TextShadow | Double) | Null)*): Self = StObject.set(x, "textShadow", js.Array(value*))
   }
 }

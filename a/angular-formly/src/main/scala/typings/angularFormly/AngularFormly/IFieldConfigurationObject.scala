@@ -24,8 +24,8 @@ trait IFieldConfigurationObject
 }
 object IFieldConfigurationObject {
   
-  inline def apply(value: js.UndefOr[js.Function0[Any]] & (js.UndefOr[js.Function1[/* val */ Any, Unit]])): IFieldConfigurationObject = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+  inline def apply(): IFieldConfigurationObject = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IFieldConfigurationObject]
   }
   

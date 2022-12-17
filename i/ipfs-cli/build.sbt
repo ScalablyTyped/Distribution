@@ -1,30 +1,30 @@
 organization := "org.scalablytyped"
 name := "ipfs-cli"
-version := "0.15.0-ce0e6e"
+version := "0.15.0-93be06"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "dns-over-http-resolver" % "2.1.0-1d5233",
-  "org.scalablytyped" %%% "ipfs-core-types" % "0.13.0-b5fbaf",
-  "org.scalablytyped" %%% "ipfs-unixfs" % "8.0.0-8d9552",
-  "org.scalablytyped" %%% "ipld__dag-pb" % "3.0.0-e51193",
-  "org.scalablytyped" %%% "it-pushable" % "3.1.0-d89a36",
-  "org.scalablytyped" %%% "it-stream-types" % "1.0.4-d3f578",
-  "org.scalablytyped" %%% "libp2p__interface-connection" % "3.0.2-4f1a18",
-  "org.scalablytyped" %%% "libp2p__interface-keychain" % "1.0.4-b1a52d",
-  "org.scalablytyped" %%% "libp2p__interface-peer-id" % "1.0.5-7d8c71",
-  "org.scalablytyped" %%% "libp2p__interface-peer-info" % "1.0.3-0bad38",
-  "org.scalablytyped" %%% "libp2p__interface-pubsub" % "3.0.0-fd2b2e",
-  "org.scalablytyped" %%% "libp2p__interfaces" % "3.0.3-03f126",
-  "org.scalablytyped" %%% "multiformats" % "10.0.2-04b3d3",
-  "org.scalablytyped" %%% "multiformats__multiaddr" % "11.0.5-6e66b6",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-4346d8",
-  "org.scalablytyped" %%% "progress" % "2.0-dt-20211202Z-7c2f32",
-  "org.scalablytyped" %%% "std" % "4.9-c133ce",
-  "org.scalablytyped" %%% "uint8arraylist" % "2.3.3-d35278",
-  "org.scalablytyped" %%% "yargs" % "17.0-dt-20221114Z-968869",
-  "org.scalablytyped" %%% "yargs-parser" % "21.0-dt-20220624Z-42d3da")
+  "org.scalablytyped" %%% "dns-over-http-resolver" % "2.1.0-536636",
+  "org.scalablytyped" %%% "ipfs-core-types" % "0.13.0-87a358",
+  "org.scalablytyped" %%% "ipfs-unixfs" % "8.0.0-480845",
+  "org.scalablytyped" %%% "ipld__dag-pb" % "3.0.0-ef5b6d",
+  "org.scalablytyped" %%% "it-pushable" % "3.1.0-46ddef",
+  "org.scalablytyped" %%% "it-stream-types" % "1.0.4-afe6ba",
+  "org.scalablytyped" %%% "libp2p__interface-connection" % "3.0.2-aa5d91",
+  "org.scalablytyped" %%% "libp2p__interface-keychain" % "1.0.4-2a094c",
+  "org.scalablytyped" %%% "libp2p__interface-peer-id" % "1.0.5-981e22",
+  "org.scalablytyped" %%% "libp2p__interface-peer-info" % "1.0.3-4655f4",
+  "org.scalablytyped" %%% "libp2p__interface-pubsub" % "3.0.0-51098b",
+  "org.scalablytyped" %%% "libp2p__interfaces" % "3.0.3-1eba2b",
+  "org.scalablytyped" %%% "multiformats" % "10.0.2-27d400",
+  "org.scalablytyped" %%% "multiformats__multiaddr" % "11.0.5-1e49a2",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-def929",
+  "org.scalablytyped" %%% "progress" % "2.0-dt-20211202Z-a66629",
+  "org.scalablytyped" %%% "std" % "4.9-5f989f",
+  "org.scalablytyped" %%% "uint8arraylist" % "2.3.3-29eebc",
+  "org.scalablytyped" %%% "yargs" % "17.0-dt-20221114Z-f77e52",
+  "org.scalablytyped" %%% "yargs-parser" % "21.0-dt-20220624Z-8e893f")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

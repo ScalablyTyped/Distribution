@@ -13,11 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Typeofremote extends StObject {
   
-  var DriverService: (Instantiable2[
+  var DriverService: Instantiable2[
     /* executable */ String, 
     /* options */ ServiceOptions, 
     typings.seleniumWebdriver.remoteMod.DriverService
-  ]) & TypeofDriverService
+  ]
   
   var FileDetector: Instantiable0[typings.seleniumWebdriver.remoteMod.FileDetector]
   
@@ -26,7 +26,7 @@ trait Typeofremote extends StObject {
 object Typeofremote {
   
   inline def apply(
-    DriverService: (Instantiable2[/* executable */ String, /* options */ ServiceOptions, DriverService]) & TypeofDriverService,
+    DriverService: Instantiable2[/* executable */ String, /* options */ ServiceOptions, DriverService],
     FileDetector: Instantiable0[FileDetector],
     SeleniumServer: Instantiable1[/* jar */ String, SeleniumServer]
   ): Typeofremote = {
@@ -36,9 +36,7 @@ object Typeofremote {
   
   extension [Self <: Typeofremote](x: Self) {
     
-    inline def setDriverService(
-      value: (Instantiable2[/* executable */ String, /* options */ ServiceOptions, DriverService]) & TypeofDriverService
-    ): Self = StObject.set(x, "DriverService", value.asInstanceOf[js.Any])
+    inline def setDriverService(value: Instantiable2[/* executable */ String, /* options */ ServiceOptions, DriverService]): Self = StObject.set(x, "DriverService", value.asInstanceOf[js.Any])
     
     inline def setFileDetector(value: Instantiable0[FileDetector]): Self = StObject.set(x, "FileDetector", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,7 @@ object anon {
     /**
       * Error message
       */
-    var message: js.UndefOr[Any] & String
+    var message: js.UndefOr[Any] = js.undefined
     
     /**
       * Error name
@@ -53,8 +53,8 @@ object anon {
   }
   object Optionsmessagestring {
     
-    inline def apply(message: js.UndefOr[Any] & String): Optionsmessagestring = {
-      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+    inline def apply(): Optionsmessagestring = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Optionsmessagestring]
     }
     
@@ -68,7 +68,9 @@ object anon {
       
       inline def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
       
-      inline def setMessage(value: js.UndefOr[Any] & String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -104,7 +106,7 @@ object anon {
     /**
       * Error message
       */
-    var message: js.UndefOr[Any] & String
+    var message: js.UndefOr[Any] = js.undefined
     
     /**
       * Error name
@@ -137,8 +139,8 @@ object anon {
   }
   object Optionspluginstringmessag {
     
-    inline def apply(message: js.UndefOr[Any] & String, plugin: String): Optionspluginstringmessag = {
-      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any])
+    inline def apply(plugin: String): Optionspluginstringmessag = {
+      val __obj = js.Dynamic.literal(plugin = plugin.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionspluginstringmessag]
     }
     
@@ -152,7 +154,9 @@ object anon {
       
       inline def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
       
-      inline def setMessage(value: js.UndefOr[Any] & String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

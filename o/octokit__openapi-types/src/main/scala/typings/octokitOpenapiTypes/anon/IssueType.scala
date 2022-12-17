@@ -6,9 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IssueType extends StObject {
   
-  var issue: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['issue'] */ js.Any
-  ] = js.undefined
+  var issue: js.UndefOr[Bodyhtml] = js.undefined
   
   var `type`: js.UndefOr[String] = js.undefined
 }
@@ -21,9 +19,7 @@ object IssueType {
   
   extension [Self <: IssueType](x: Self) {
     
-    inline def setIssue(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['issue'] */ js.Any
-    ): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
+    inline def setIssue(value: Bodyhtml): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
     
     inline def setIssueUndefined: Self = StObject.set(x, "issue", js.undefined)
     

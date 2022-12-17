@@ -12,7 +12,7 @@ trait PickImplmaxResultsPartialLogging
   
   var logging: js.UndefOr[String] = js.undefined
   
-  var maxResults: String & js.UndefOr[String]
+  var maxResults: String
   
   var method: js.UndefOr[String] = js.undefined
   
@@ -26,7 +26,7 @@ trait PickImplmaxResultsPartialLogging
 }
 object PickImplmaxResultsPartialLogging {
   
-  inline def apply(maxResults: String & js.UndefOr[String]): PickImplmaxResultsPartialLogging = {
+  inline def apply(maxResults: String): PickImplmaxResultsPartialLogging = {
     val __obj = js.Dynamic.literal(maxResults = maxResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmaxResultsPartialLogging]
   }
@@ -37,7 +37,7 @@ object PickImplmaxResultsPartialLogging {
     
     inline def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
     
-    inline def setMaxResults(value: String & js.UndefOr[String]): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: String): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

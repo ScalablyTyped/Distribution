@@ -55,8 +55,20 @@ object playcanvasStrings {
   inline def ATTR: ATTR = "ATTR".asInstanceOf[ATTR]
   
   @js.native
+  sealed trait `Numbersignversion 300 esLinefeed` extends StObject
+  inline def `Numbersignversion 300 esLinefeed`: `Numbersignversion 300 esLinefeed` = ("#version 300 es\n").asInstanceOf[`Numbersignversion 300 esLinefeed`]
+  
+  @js.native
+  sealed trait `Numbersignversion 450Linefeed` extends StObject
+  inline def `Numbersignversion 450Linefeed`: `Numbersignversion 450Linefeed` = ("#version 450\n").asInstanceOf[`Numbersignversion 450Linefeed`]
+  
+  @js.native
   sealed trait TEXCOORD extends StObject
   inline def TEXCOORD: TEXCOORD = "TEXCOORD".asInstanceOf[TEXCOORD]
+  
+  @js.native
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
   sealed trait animation extends StObject

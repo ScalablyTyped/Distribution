@@ -11,6 +11,7 @@ import typings.sdpTransform.anon.Component
 import typings.sdpTransform.anon.Config
 import typings.sdpTransform.anon.Dir1
 import typings.sdpTransform.anon.Direction
+import typings.sdpTransform.anon.Foundation
 import typings.sdpTransform.anon.Hash
 import typings.sdpTransform.anon.Id
 import typings.sdpTransform.anon.Ip
@@ -19,7 +20,6 @@ import typings.sdpTransform.anon.Limit
 import typings.sdpTransform.anon.Mids
 import typings.sdpTransform.anon.Paused
 import typings.sdpTransform.anon.Payload
-import typings.sdpTransform.anon.Port
 import typings.sdpTransform.anon.Semantic
 import typings.sdpTransform.anon.Semantics
 import typings.sdpTransform.anon.Start
@@ -49,7 +49,7 @@ object mod {
   
   inline def parsePayloads(payloads: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePayloads")(payloads.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  inline def parseRemoteCandidates(candidates: String): js.Array[Port] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRemoteCandidates")(candidates.asInstanceOf[js.Any]).asInstanceOf[js.Array[Port]]
+  inline def parseRemoteCandidates(candidates: String): js.Array[Component] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRemoteCandidates")(candidates.asInstanceOf[js.Any]).asInstanceOf[js.Array[Component]]
   
   inline def parseSimulcastStreamList(streams: String): js.Array[Paused] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSimulcastStreamList")(streams.asInstanceOf[js.Any]).asInstanceOf[js.Array[Paused]]
   
@@ -60,7 +60,7 @@ object mod {
        with SharedAttributes {
     
     // a=candidate
-    var candidates: js.UndefOr[js.Array[Component]] = js.undefined
+    var candidates: js.UndefOr[js.Array[Foundation]] = js.undefined
     
     // a=crypto
     var crypto: js.UndefOr[Id] = js.undefined
@@ -94,7 +94,7 @@ object mod {
     // a=rid
     var rids: js.UndefOr[js.Array[Direction]] = js.undefined
     
-    var rtcp: js.UndefOr[Address] = js.undefined
+    var rtcp: js.UndefOr[IpVer] = js.undefined
     
     // a=rtcp-fb:98 nack rpsi
     var rtcpFb: js.UndefOr[js.Array[Payload]] = js.undefined
@@ -135,11 +135,11 @@ object mod {
     
     extension [Self <: MediaAttributes](x: Self) {
       
-      inline def setCandidates(value: js.Array[Component]): Self = StObject.set(x, "candidates", value.asInstanceOf[js.Any])
+      inline def setCandidates(value: js.Array[Foundation]): Self = StObject.set(x, "candidates", value.asInstanceOf[js.Any])
       
       inline def setCandidatesUndefined: Self = StObject.set(x, "candidates", js.undefined)
       
-      inline def setCandidatesVarargs(value: Component*): Self = StObject.set(x, "candidates", js.Array(value*))
+      inline def setCandidatesVarargs(value: Foundation*): Self = StObject.set(x, "candidates", js.Array(value*))
       
       inline def setCrypto(value: Id): Self = StObject.set(x, "crypto", value.asInstanceOf[js.Any])
       
@@ -189,7 +189,7 @@ object mod {
       
       inline def setRidsVarargs(value: Direction*): Self = StObject.set(x, "rids", js.Array(value*))
       
-      inline def setRtcp(value: Address): Self = StObject.set(x, "rtcp", value.asInstanceOf[js.Any])
+      inline def setRtcp(value: IpVer): Self = StObject.set(x, "rtcp", value.asInstanceOf[js.Any])
       
       inline def setRtcpFb(value: js.Array[Payload]): Self = StObject.set(x, "rtcpFb", value.asInstanceOf[js.Any])
       
@@ -320,7 +320,7 @@ object mod {
     var name: js.UndefOr[String] = js.undefined
     
     // o=
-    var origin: js.UndefOr[IpVer] = js.undefined
+    var origin: js.UndefOr[Address] = js.undefined
     
     // p=
     var phone: js.UndefOr[String] = js.undefined
@@ -360,7 +360,7 @@ object mod {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setOrigin(value: IpVer): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: Address): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
       inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
       

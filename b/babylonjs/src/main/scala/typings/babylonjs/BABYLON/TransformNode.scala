@@ -1,6 +1,6 @@
 package typings.babylonjs.BABYLON
 
-import typings.babylonjs.anon.`0`
+import typings.babylonjs.anon.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -294,10 +294,10 @@ trait TransformNode
     options: Unit,
     onNewNodeCreated: js.Function2[/* source */ this.type, /* clone */ this.type, Unit]
   ): Nullable[TransformNode] = js.native
-  def instantiateHierarchy(newParent: Unit, options: `0`): Nullable[TransformNode] = js.native
+  def instantiateHierarchy(newParent: Unit, options: `2`): Nullable[TransformNode] = js.native
   def instantiateHierarchy(
     newParent: Unit,
-    options: `0`,
+    options: `2`,
     onNewNodeCreated: js.Function2[/* source */ this.type, /* clone */ this.type, Unit]
   ): Nullable[TransformNode] = js.native
   def instantiateHierarchy(newParent: Nullable[TransformNode]): Nullable[TransformNode] = js.native
@@ -306,10 +306,10 @@ trait TransformNode
     options: Unit,
     onNewNodeCreated: js.Function2[/* source */ this.type, /* clone */ this.type, Unit]
   ): Nullable[TransformNode] = js.native
-  def instantiateHierarchy(newParent: Nullable[TransformNode], options: `0`): Nullable[TransformNode] = js.native
+  def instantiateHierarchy(newParent: Nullable[TransformNode], options: `2`): Nullable[TransformNode] = js.native
   def instantiateHierarchy(
     newParent: Nullable[TransformNode],
-    options: `0`,
+    options: `2`,
     onNewNodeCreated: js.Function2[/* source */ this.type, /* clone */ this.type, Unit]
   ): Nullable[TransformNode] = js.native
   

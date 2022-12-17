@@ -38,7 +38,7 @@ trait PickImplonRepositionParti
   
   def onReposition(): Unit
   @JSName("onReposition")
-  var onReposition_Original: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+  var onReposition_Original: js.ThisFunction0[/* this */ JQuery, Unit]
   
   var onScroll: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
@@ -62,9 +62,7 @@ trait PickImplonRepositionParti
 }
 object PickImplonRepositionParti {
   
-  inline def apply(
-    onReposition: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-  ): PickImplonRepositionParti = {
+  inline def apply(onReposition: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonRepositionParti = {
     val __obj = js.Dynamic.literal(onReposition = onReposition.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonRepositionParti]
   }
@@ -115,9 +113,7 @@ object PickImplonRepositionParti {
     
     inline def setOnBottomUndefined: Self = StObject.set(x, "onBottom", js.undefined)
     
-    inline def setOnReposition(
-      value: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-    ): Self = StObject.set(x, "onReposition", value.asInstanceOf[js.Any])
+    inline def setOnReposition(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onReposition", value.asInstanceOf[js.Any])
     
     inline def setOnScroll(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onScroll", value.asInstanceOf[js.Any])
     

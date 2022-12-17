@@ -16,7 +16,7 @@ trait PickImplinputPartialPickI
   
   var icon: js.UndefOr[String] = js.undefined
   
-  var input: String & js.UndefOr[String]
+  var input: String
   
   var item: js.UndefOr[String] = js.undefined
   
@@ -38,7 +38,7 @@ trait PickImplinputPartialPickI
 }
 object PickImplinputPartialPickI {
   
-  inline def apply(input: String & js.UndefOr[String]): PickImplinputPartialPickI = {
+  inline def apply(input: String): PickImplinputPartialPickI = {
     val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplinputPartialPickI]
   }
@@ -57,7 +57,7 @@ object PickImplinputPartialPickI {
     
     inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    inline def setInput(value: String & js.UndefOr[String]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     inline def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     

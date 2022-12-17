@@ -38,11 +38,11 @@ object handlersEntityInsertMod {
     
     var columnSpacing: Double
     
-    var extrusionX: Any & js.UndefOr[Any]
+    var extrusionX: Any
     
-    var extrusionY: Any & js.UndefOr[Any]
+    var extrusionY: Any
     
-    var extrusionZ: Any & js.UndefOr[Any]
+    var extrusionZ: Any
     
     var layer: js.UndefOr[String] = js.undefined
     
@@ -76,9 +76,9 @@ object handlersEntityInsertMod {
       block: Any,
       columnCount: Double,
       columnSpacing: Double,
-      extrusionX: Any & js.UndefOr[Any],
-      extrusionY: Any & js.UndefOr[Any],
-      extrusionZ: Any & js.UndefOr[Any],
+      extrusionX: Any,
+      extrusionY: Any,
+      extrusionZ: Any,
       rotation: Double,
       rowCount: Double,
       rowSpacing: Double,
@@ -109,11 +109,11 @@ object handlersEntityInsertMod {
       
       inline def setColumnSpacing(value: Double): Self = StObject.set(x, "columnSpacing", value.asInstanceOf[js.Any])
       
-      inline def setExtrusionX(value: Any & js.UndefOr[Any]): Self = StObject.set(x, "extrusionX", value.asInstanceOf[js.Any])
+      inline def setExtrusionX(value: Any): Self = StObject.set(x, "extrusionX", value.asInstanceOf[js.Any])
       
-      inline def setExtrusionY(value: Any & js.UndefOr[Any]): Self = StObject.set(x, "extrusionY", value.asInstanceOf[js.Any])
+      inline def setExtrusionY(value: Any): Self = StObject.set(x, "extrusionY", value.asInstanceOf[js.Any])
       
-      inline def setExtrusionZ(value: Any & js.UndefOr[Any]): Self = StObject.set(x, "extrusionZ", value.asInstanceOf[js.Any])
+      inline def setExtrusionZ(value: Any): Self = StObject.set(x, "extrusionZ", value.asInstanceOf[js.Any])
       
       inline def setLayer(value: String): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
       

@@ -1,7 +1,7 @@
 package typings.maplibreGl.mod
 
 import typings.mapboxPointGeometry.mod.^
-import typings.maplibreGl.anon.Easing
+import typings.maplibreGl.anon.Duration
 import typings.maplibreGl.anon.NeedsRenderFrame
 import typings.maplibreGl.anon.TypeofsetTimeout
 import typings.maplibreGl.maplibreGlStrings.trackpad
@@ -55,7 +55,7 @@ open class ScrollZoomHandler protected () extends StObject {
   
   def _onTimeout(initialEvent: Any): scala.Unit = js.native
   
-  var _prevEase: Easing = js.native
+  var _prevEase: Duration = js.native
   
   def _smoothOutEasing(duration: Double): js.Function1[/* t */ Double, Double] = js.native
   

@@ -10,7 +10,7 @@ trait PickImplpercentPartialPicPercent
   extends StObject
      with Param {
   
-  var percent: String & js.UndefOr[String]
+  var percent: String
   
   var total: js.UndefOr[String] = js.undefined
   
@@ -18,14 +18,14 @@ trait PickImplpercentPartialPicPercent
 }
 object PickImplpercentPartialPicPercent {
   
-  inline def apply(percent: String & js.UndefOr[String]): PickImplpercentPartialPicPercent = {
+  inline def apply(percent: String): PickImplpercentPartialPicPercent = {
     val __obj = js.Dynamic.literal(percent = percent.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplpercentPartialPicPercent]
   }
   
   extension [Self <: PickImplpercentPartialPicPercent](x: Self) {
     
-    inline def setPercent(value: String & js.UndefOr[String]): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+    inline def setPercent(value: String): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     
     inline def setTotal(value: String): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     

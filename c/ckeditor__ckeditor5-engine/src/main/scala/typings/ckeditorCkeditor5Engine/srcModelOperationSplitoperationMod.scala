@@ -1,7 +1,7 @@
 package typings.ckeditorCkeditor5Engine
 
 import typings.ckeditorCkeditor5Engine.anon.InsertionPosition
-import typings.ckeditorCkeditor5Engine.anon.`13`
+import typings.ckeditorCkeditor5Engine.anon.`12`
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.split
 import typings.ckeditorCkeditor5Engine.srcModelOperationOperationMod.Operation
 import org.scalablytyped.runtime.StObject
@@ -108,7 +108,7 @@ object srcModelOperationSplitoperationMod {
       * Custom toJSON method to solve child-parent circular dependencies.
       */
     /* CompleteClass */
-    override def toJSON(): `13` = js.native
+    override def toJSON(): `12` = js.native
     
     /**
       * Operation type.
@@ -208,7 +208,7 @@ object srcModelOperationSplitoperationMod {
       moveTargetPosition: typings.ckeditorCkeditor5Engine.srcModelPositionMod.default,
       movedRange: typings.ckeditorCkeditor5Engine.srcModelRangeMod.default,
       splitPosition: typings.ckeditorCkeditor5Engine.srcModelPositionMod.default,
-      toJSON: () => `13`
+      toJSON: () => `12`
     ): SplitOperation = {
       val __obj = js.Dynamic.literal(getReversed = js.Any.fromFunction0(getReversed), howMany = howMany.asInstanceOf[js.Any], insertionPosition = insertionPosition.asInstanceOf[js.Any], isDocumentOperation = isDocumentOperation.asInstanceOf[js.Any], moveTargetPosition = moveTargetPosition.asInstanceOf[js.Any], movedRange = movedRange.asInstanceOf[js.Any], splitPosition = splitPosition.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), baseVersion = null, batch = null, graveyardPosition = null)
       __obj.updateDynamic("clone")(js.Any.fromFunction0(clone_))

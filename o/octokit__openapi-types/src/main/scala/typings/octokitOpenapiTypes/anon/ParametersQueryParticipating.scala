@@ -8,11 +8,11 @@ trait ParametersQueryParticipating extends StObject {
   
   var parameters: QueryParticipating
   
-  var responses: `200304401`
+  var responses: `200Content52`
 }
 object ParametersQueryParticipating {
   
-  inline def apply(parameters: QueryParticipating, responses: `200304401`): ParametersQueryParticipating = {
+  inline def apply(parameters: QueryParticipating, responses: `200Content52`): ParametersQueryParticipating = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersQueryParticipating]
   }
@@ -21,6 +21,6 @@ object ParametersQueryParticipating {
     
     inline def setParameters(value: QueryParticipating): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200304401`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200Content52`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

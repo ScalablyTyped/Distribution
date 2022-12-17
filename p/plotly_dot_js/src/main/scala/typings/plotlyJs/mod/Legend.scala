@@ -1,7 +1,7 @@
 package typings.plotlyJs.mod
 
 import typings.plotlyJs.anon.PartialFont
-import typings.plotlyJs.anon.PartialLegendTitleFont
+import typings.plotlyJs.anon.PartialLegendTitle
 import typings.plotlyJs.plotlyJsBooleans.`false`
 import typings.plotlyJs.plotlyJsStrings.auto
 import typings.plotlyJs.plotlyJsStrings.bottom
@@ -46,7 +46,7 @@ trait Legend
   
   var orientation: v | h
   
-  var title: PartialLegendTitleFont
+  var title: PartialLegendTitle
   
   var tracegroupgap: Double
   
@@ -78,7 +78,7 @@ object Legend {
     itemsizing: trace | constant,
     itemwidth: Double,
     orientation: v | h,
-    title: PartialLegendTitleFont,
+    title: PartialLegendTitle,
     tracegroupgap: Double,
     traceorder: grouped | normal | reversed | reversedPlussigngrouped,
     uirevision: Double | String,
@@ -110,7 +110,7 @@ object Legend {
     
     inline def setOrientation(value: v | h): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    inline def setTitle(value: PartialLegendTitleFont): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: PartialLegendTitle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTracegroupgap(value: Double): Self = StObject.set(x, "tracegroupgap", value.asInstanceOf[js.Any])
     

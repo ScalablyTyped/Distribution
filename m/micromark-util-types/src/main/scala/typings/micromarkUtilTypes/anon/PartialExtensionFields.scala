@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Partial<micromark-util-types.micromark-util-types._ExtensionFields> */
 trait PartialExtensionFields extends StObject {
   
-  var attentionMarkers: js.UndefOr[`0`] = js.undefined
+  var attentionMarkers: js.UndefOr[`1`] = js.undefined
   
   var contentInitial: js.UndefOr[ConstructRecord] = js.undefined
   
@@ -20,7 +20,7 @@ trait PartialExtensionFields extends StObject {
   
   var flowInitial: js.UndefOr[ConstructRecord] = js.undefined
   
-  var insideSpan: js.UndefOr[`1`] = js.undefined
+  var insideSpan: js.UndefOr[`0`] = js.undefined
   
   var string: js.UndefOr[ConstructRecord] = js.undefined
   
@@ -35,7 +35,7 @@ object PartialExtensionFields {
   
   extension [Self <: PartialExtensionFields](x: Self) {
     
-    inline def setAttentionMarkers(value: `0`): Self = StObject.set(x, "attentionMarkers", value.asInstanceOf[js.Any])
+    inline def setAttentionMarkers(value: `1`): Self = StObject.set(x, "attentionMarkers", value.asInstanceOf[js.Any])
     
     inline def setAttentionMarkersUndefined: Self = StObject.set(x, "attentionMarkers", js.undefined)
     
@@ -59,7 +59,7 @@ object PartialExtensionFields {
     
     inline def setFlowUndefined: Self = StObject.set(x, "flow", js.undefined)
     
-    inline def setInsideSpan(value: `1`): Self = StObject.set(x, "insideSpan", value.asInstanceOf[js.Any])
+    inline def setInsideSpan(value: `0`): Self = StObject.set(x, "insideSpan", value.asInstanceOf[js.Any])
     
     inline def setInsideSpanUndefined: Self = StObject.set(x, "insideSpan", js.undefined)
     

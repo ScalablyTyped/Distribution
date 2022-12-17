@@ -44,7 +44,7 @@ trait PickImplonTopPartialPickI
   
   def onTop(): Unit
   @JSName("onTop")
-  var onTop_Original: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+  var onTop_Original: js.ThisFunction0[/* this */ JQuery, Unit]
   
   var onUnstick: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
@@ -62,9 +62,7 @@ trait PickImplonTopPartialPickI
 }
 object PickImplonTopPartialPickI {
   
-  inline def apply(
-    onTop: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-  ): PickImplonTopPartialPickI = {
+  inline def apply(onTop: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonTopPartialPickI = {
     val __obj = js.Dynamic.literal(onTop = onTop.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonTopPartialPickI]
   }
@@ -127,9 +125,7 @@ object PickImplonTopPartialPickI {
     
     inline def setOnStickUndefined: Self = StObject.set(x, "onStick", js.undefined)
     
-    inline def setOnTop(
-      value: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-    ): Self = StObject.set(x, "onTop", value.asInstanceOf[js.Any])
+    inline def setOnTop(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onTop", value.asInstanceOf[js.Any])
     
     inline def setOnUnstick(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onUnstick", value.asInstanceOf[js.Any])
     

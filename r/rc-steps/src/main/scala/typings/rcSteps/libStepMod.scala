@@ -120,7 +120,7 @@ object libStepMod {
       
       inline def setProgressDot(value: ProgressDotRender | Boolean): Self = StObject.set(x, "progressDot", value.asInstanceOf[js.Any])
       
-      inline def setProgressDotFunction2(value: (/* iconDot */ Any, /* info */ Description) => ReactNode): Self = StObject.set(x, "progressDot", js.Any.fromFunction2(value))
+      inline def setProgressDotFunction2(value: (/* iconDot */ Any, /* info */ Index) => ReactNode): Self = StObject.set(x, "progressDot", js.Any.fromFunction2(value))
       
       inline def setProgressDotUndefined: Self = StObject.set(x, "progressDot", js.undefined)
       
@@ -132,7 +132,7 @@ object libStepMod {
       
       inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      inline def setStepIcon(value: /* info */ Index => ReactNode): Self = StObject.set(x, "stepIcon", js.Any.fromFunction1(value))
+      inline def setStepIcon(value: /* info */ Description => ReactNode): Self = StObject.set(x, "stepIcon", js.Any.fromFunction1(value))
       
       inline def setStepIconUndefined: Self = StObject.set(x, "stepIcon", js.undefined)
       

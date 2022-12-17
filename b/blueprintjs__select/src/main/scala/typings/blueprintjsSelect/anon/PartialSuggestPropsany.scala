@@ -89,7 +89,7 @@ trait PartialSuggestPropsany extends StObject {
   
   var openOnKeyDown: js.UndefOr[Boolean] = js.undefined
   
-  var popoverProps: js.UndefOr[PartialIPopoverProps & js.Object] = js.undefined
+  var popoverProps: js.UndefOr[PartialIPopoverProps] = js.undefined
   
   var query: js.UndefOr[String] = js.undefined
   
@@ -226,7 +226,7 @@ object PartialSuggestPropsany {
     
     inline def setOpenOnKeyDownUndefined: Self = StObject.set(x, "openOnKeyDown", js.undefined)
     
-    inline def setPopoverProps(value: PartialIPopoverProps & js.Object): Self = StObject.set(x, "popoverProps", value.asInstanceOf[js.Any])
+    inline def setPopoverProps(value: PartialIPopoverProps): Self = StObject.set(x, "popoverProps", value.asInstanceOf[js.Any])
     
     inline def setPopoverPropsUndefined: Self = StObject.set(x, "popoverProps", js.undefined)
     

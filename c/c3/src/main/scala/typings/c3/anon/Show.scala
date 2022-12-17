@@ -4,12 +4,21 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Show extends StObject {
   
-  def apply(): scala.Unit = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
+}
+object Show {
   
-  def hide(): scala.Unit = js.native
+  inline def apply(): Show = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[Show]
+  }
   
-  def show(args: Data): scala.Unit = js.native
+  extension [Self <: Show](x: Self) {
+    
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+  }
 }

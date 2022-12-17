@@ -1,89 +1,112 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.`private`
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.container
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.docker
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.maven
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.npm
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.nuget
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.public
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.rubygems
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Repository extends StObject {
   
-  var author: Avatarurl | Null
+  /** Format: date-time */
+  var created_at: String
   
-  /** Format: uri */
-  var comments_url: String
-  
-  var commit: AuthorCommentcount
-  
-  var committer: Date | Null
-  
-  /** Format: uri */
+  /** @example https://github.com/orgs/github/packages/container/package/super-linter */
   var html_url: String
   
-  var node_id: String
+  /**
+    * @description Unique identifier of the package.
+    * @example 1
+    */
+  var id: Double
   
-  var parents: js.Array[HtmlurlShaUrl]
+  /**
+    * @description The name of the package.
+    * @example super-linter
+    */
+  var name: String
   
-  var repository: Blobsurl
+  var owner: js.UndefOr[Avatarurl | Null] = js.undefined
   
-  var score: Double
+  /**
+    * @example docker
+    * @enum {string}
+    */
+  var package_type: npm | maven | rubygems | docker | nuget | container
   
-  var sha: String
+  var repository: js.UndefOr[Branchesurl | Null] = js.undefined
   
-  var text_matches: js.UndefOr[js.Array[Fragment]] = js.undefined
+  /** Format: date-time */
+  var updated_at: String
   
-  /** Format: uri */
+  /** @example https://api.github.com/orgs/github/packages/container/super-linter */
   var url: String
+  
+  /**
+    * @description The number of versions of the package.
+    * @example 1
+    */
+  var version_count: Double
+  
+  /**
+    * @example private
+    * @enum {string}
+    */
+  var visibility: `private` | public
 }
 object Repository {
   
   inline def apply(
-    comments_url: String,
-    commit: AuthorCommentcount,
+    created_at: String,
     html_url: String,
-    node_id: String,
-    parents: js.Array[HtmlurlShaUrl],
-    repository: Blobsurl,
-    score: Double,
-    sha: String,
-    url: String
+    id: Double,
+    name: String,
+    package_type: npm | maven | rubygems | docker | nuget | container,
+    updated_at: String,
+    url: String,
+    version_count: Double,
+    visibility: `private` | public
   ): Repository = {
-    val __obj = js.Dynamic.literal(comments_url = comments_url.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], parents = parents.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], author = null, committer = null)
+    val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], package_type = package_type.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], version_count = version_count.asInstanceOf[js.Any], visibility = visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[Repository]
   }
   
   extension [Self <: Repository](x: Self) {
     
-    inline def setAuthor(value: Avatarurl): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
-    
-    inline def setAuthorNull: Self = StObject.set(x, "author", null)
-    
-    inline def setComments_url(value: String): Self = StObject.set(x, "comments_url", value.asInstanceOf[js.Any])
-    
-    inline def setCommit(value: AuthorCommentcount): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
-    
-    inline def setCommitter(value: Date): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
-    
-    inline def setCommitterNull: Self = StObject.set(x, "committer", null)
+    inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
     inline def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
     
-    inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setParents(value: js.Array[HtmlurlShaUrl]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setParentsVarargs(value: HtmlurlShaUrl*): Self = StObject.set(x, "parents", js.Array(value*))
+    inline def setOwner(value: Avatarurl): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    inline def setRepository(value: Blobsurl): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setOwnerNull: Self = StObject.set(x, "owner", null)
     
-    inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
+    inline def setPackage_type(value: npm | maven | rubygems | docker | nuget | container): Self = StObject.set(x, "package_type", value.asInstanceOf[js.Any])
     
-    inline def setText_matches(value: js.Array[Fragment]): Self = StObject.set(x, "text_matches", value.asInstanceOf[js.Any])
+    inline def setRepository(value: Branchesurl): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
-    inline def setText_matchesUndefined: Self = StObject.set(x, "text_matches", js.undefined)
+    inline def setRepositoryNull: Self = StObject.set(x, "repository", null)
     
-    inline def setText_matchesVarargs(value: Fragment*): Self = StObject.set(x, "text_matches", js.Array(value*))
+    inline def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
+    
+    inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setVersion_count(value: Double): Self = StObject.set(x, "version_count", value.asInstanceOf[js.Any])
+    
+    inline def setVisibility(value: `private` | public): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
   }
 }

@@ -29,7 +29,7 @@ trait PickImpldimPagePartialPic
   
   var delaySetup: js.UndefOr[Boolean] = js.undefined
   
-  var dimPage: Boolean & js.UndefOr[Boolean]
+  var dimPage: Boolean
   
   var duration: js.UndefOr[Double] = js.undefined
   
@@ -75,7 +75,7 @@ trait PickImpldimPagePartialPic
 }
 object PickImpldimPagePartialPic {
   
-  inline def apply(dimPage: Boolean & js.UndefOr[Boolean]): PickImpldimPagePartialPic = {
+  inline def apply(dimPage: Boolean): PickImpldimPagePartialPic = {
     val __obj = js.Dynamic.literal(dimPage = dimPage.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldimPagePartialPic]
   }
@@ -106,7 +106,7 @@ object PickImpldimPagePartialPic {
     
     inline def setDelaySetupUndefined: Self = StObject.set(x, "delaySetup", js.undefined)
     
-    inline def setDimPage(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "dimPage", value.asInstanceOf[js.Any])
+    inline def setDimPage(value: Boolean): Self = StObject.set(x, "dimPage", value.asInstanceOf[js.Any])
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

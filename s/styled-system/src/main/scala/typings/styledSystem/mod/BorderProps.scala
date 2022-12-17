@@ -1,5 +1,9 @@
 package typings.styledSystem.mod
 
+import typings.csstype.mod.Property.BorderBottom
+import typings.csstype.mod.Property.BorderLeft
+import typings.csstype.mod.Property.BorderRight
+import typings.csstype.mod.Property.BorderTop
 import typings.styledSystem.styledSystemStrings.borderWidths
 import typings.styledSystem.styledSystemStrings.colors
 import typings.styledSystem.styledSystemStrings.radii
@@ -9,26 +13,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BorderProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal]
   extends StObject
-     with BorderWidthProps[ThemeType, ThemeValue[borderWidths, ThemeType, js.Any]]
+     with BorderWidthProps[ThemeType, ThemeValue[borderWidths, ThemeType, Any]]
      with BorderStyleProps[ThemeType]
-     with BorderColorProps[ThemeType, ThemeValue[colors, ThemeType, js.Any]]
-     with BorderRadiusProps[ThemeType, ThemeValue[radii, ThemeType, js.Any]]
-     with BorderTopProps[
-      ThemeType, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderTop<TLengthStyledSystem> */ js.Any
-    ]
-     with BorderRightProps[
-      ThemeType, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRight<TLengthStyledSystem> */ js.Any
-    ]
-     with BorderBottomProps[
-      ThemeType, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderBottom<TLengthStyledSystem> */ js.Any
-    ]
-     with BorderLeftProps[
-      ThemeType, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderLeft<TLengthStyledSystem> */ js.Any
-    ] {
+     with BorderColorProps[ThemeType, ThemeValue[colors, ThemeType, Any]]
+     with BorderRadiusProps[ThemeType, ThemeValue[radii, ThemeType, Any]]
+     with BorderTopProps[ThemeType, BorderTop[TLengthStyledSystem]]
+     with BorderRightProps[ThemeType, BorderRight[TLengthStyledSystem]]
+     with BorderBottomProps[ThemeType, BorderBottom[TLengthStyledSystem]]
+     with BorderLeftProps[ThemeType, BorderLeft[TLengthStyledSystem]] {
   
   /**
     * The border CSS property sets an element's border. It's a shorthand for border-width, border-style,
@@ -57,7 +49,7 @@ object BorderProps {
     
     inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
-    inline def setBorderVarargs(value: (TVal | Null)*): Self = StObject.set(x, "border", js.Array(value :_*))
+    inline def setBorderVarargs(value: (TVal | Null)*): Self = StObject.set(x, "border", js.Array(value*))
     
     inline def setBorderX(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderX", value.asInstanceOf[js.Any])
     
@@ -65,7 +57,7 @@ object BorderProps {
     
     inline def setBorderXUndefined: Self = StObject.set(x, "borderX", js.undefined)
     
-    inline def setBorderXVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderX", js.Array(value :_*))
+    inline def setBorderXVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderX", js.Array(value*))
     
     inline def setBorderY(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderY", value.asInstanceOf[js.Any])
     
@@ -73,6 +65,6 @@ object BorderProps {
     
     inline def setBorderYUndefined: Self = StObject.set(x, "borderY", js.undefined)
     
-    inline def setBorderYVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderY", js.Array(value :_*))
+    inline def setBorderYVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderY", js.Array(value*))
   }
 }

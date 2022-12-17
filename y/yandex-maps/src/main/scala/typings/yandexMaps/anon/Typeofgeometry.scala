@@ -14,23 +14,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Typeofgeometry extends StObject {
   
-  var LineString: (Instantiable2[
+  var LineString: Instantiable2[
     /* coordinates */ js.UndefOr[js.Array[js.Array[Double]]], 
     /* options */ js.UndefOr[CoordRendering], 
     typings.yandexMaps.mod.geometry.LineString
-  ]) & TypeofLineString
+  ]
   
   var Point: Instantiable1[
     /* coordinates */ js.UndefOr[js.Array[Double] | Null], 
     typings.yandexMaps.mod.geometry.Point
   ]
   
-  var Polygon: (Instantiable3[
+  var Polygon: Instantiable3[
     /* coordinates */ js.UndefOr[js.Array[js.Array[js.Array[Double]]]], 
     /* fillRule */ js.UndefOr[evenOdd | nonZero], 
     /* options */ js.UndefOr[js.Object], 
     typings.yandexMaps.mod.geometry.Polygon
-  ]) & TypeofPolygonFromEncodedCoordinates
+  ]
   
   val base: Typeofbase
   
@@ -39,18 +39,18 @@ trait Typeofgeometry extends StObject {
 object Typeofgeometry {
   
   inline def apply(
-    LineString: (Instantiable2[
+    LineString: Instantiable2[
       /* coordinates */ js.UndefOr[js.Array[js.Array[Double]]], 
       /* options */ js.UndefOr[CoordRendering], 
       LineString
-    ]) & TypeofLineString,
+    ],
     Point: Instantiable1[/* coordinates */ js.UndefOr[js.Array[Double] | Null], Point],
-    Polygon: (Instantiable3[
+    Polygon: Instantiable3[
       /* coordinates */ js.UndefOr[js.Array[js.Array[js.Array[Double]]]], 
       /* fillRule */ js.UndefOr[evenOdd | nonZero], 
       /* options */ js.UndefOr[js.Object], 
       Polygon
-    ]) & TypeofPolygonFromEncodedCoordinates,
+    ],
     base: Typeofbase,
     pixel: Typeofpixel
   ): Typeofgeometry = {
@@ -63,11 +63,11 @@ object Typeofgeometry {
     inline def setBase(value: Typeofbase): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
     inline def setLineString(
-      value: (Instantiable2[
+      value: Instantiable2[
           /* coordinates */ js.UndefOr[js.Array[js.Array[Double]]], 
           /* options */ js.UndefOr[CoordRendering], 
           LineString
-        ]) & TypeofLineString
+        ]
     ): Self = StObject.set(x, "LineString", value.asInstanceOf[js.Any])
     
     inline def setPixel(value: Typeofpixel): Self = StObject.set(x, "pixel", value.asInstanceOf[js.Any])
@@ -75,12 +75,12 @@ object Typeofgeometry {
     inline def setPoint(value: Instantiable1[/* coordinates */ js.UndefOr[js.Array[Double] | Null], Point]): Self = StObject.set(x, "Point", value.asInstanceOf[js.Any])
     
     inline def setPolygon(
-      value: (Instantiable3[
+      value: Instantiable3[
           /* coordinates */ js.UndefOr[js.Array[js.Array[js.Array[Double]]]], 
           /* fillRule */ js.UndefOr[evenOdd | nonZero], 
           /* options */ js.UndefOr[js.Object], 
           Polygon
-        ]) & TypeofPolygonFromEncodedCoordinates
+        ]
     ): Self = StObject.set(x, "Polygon", value.asInstanceOf[js.Any])
   }
 }

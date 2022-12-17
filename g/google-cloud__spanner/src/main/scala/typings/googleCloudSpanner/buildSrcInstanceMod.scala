@@ -19,6 +19,7 @@ import typings.googleCloudSpanner.buildSrcSessionPoolMod.SessionPool
 import typings.googleCloudSpanner.buildSrcSessionPoolMod.SessionPoolOptions
 import typings.googleCloudSpanner.mod.CreateInstanceRequest
 import typings.googleCloudSpanner.mod.RequestConfig
+import typings.googleCloudSpanner.mod.Spanner
 import typings.googleGax.buildSrcGaxMod.CallOptions
 import typings.googleGax.mod.Operation_
 import typings.node.NodeJS.ReadableStream
@@ -29,182 +30,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object buildSrcInstanceMod {
-  
-  type CreateDatabaseCallback = LongRunningCallback[Database]
-  
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify databaseAdmin.spanner.admin.database.v1.ICreateDatabaseRequest * / any */ trait CreateDatabaseOptions extends StObject {
-    
-    var gaxOptions: js.UndefOr[CallOptions] = js.undefined
-    
-    var poolCtor: js.UndefOr[SessionPool] = js.undefined
-    
-    var poolOptions: js.UndefOr[SessionPoolOptions] = js.undefined
-    
-    var schema: js.UndefOr[String | js.Array[String]] = js.undefined
-  }
-  object CreateDatabaseOptions {
-    
-    inline def apply(): CreateDatabaseOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[CreateDatabaseOptions]
-    }
-    
-    extension [Self <: CreateDatabaseOptions](x: Self) {
-      
-      inline def setGaxOptions(value: CallOptions): Self = StObject.set(x, "gaxOptions", value.asInstanceOf[js.Any])
-      
-      inline def setGaxOptionsUndefined: Self = StObject.set(x, "gaxOptions", js.undefined)
-      
-      inline def setPoolCtor(value: SessionPool): Self = StObject.set(x, "poolCtor", value.asInstanceOf[js.Any])
-      
-      inline def setPoolCtorUndefined: Self = StObject.set(x, "poolCtor", js.undefined)
-      
-      inline def setPoolOptions(value: SessionPoolOptions): Self = StObject.set(x, "poolOptions", value.asInstanceOf[js.Any])
-      
-      inline def setPoolOptionsUndefined: Self = StObject.set(x, "poolOptions", js.undefined)
-      
-      inline def setSchema(value: String | js.Array[String]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
-      
-      inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
-      
-      inline def setSchemaVarargs(value: String*): Self = StObject.set(x, "schema", js.Array(value*))
-    }
-  }
-  
-  type CreateDatabaseResponse = js.Tuple3[Database, Operation_, IOperation]
-  
-  type CreateInstanceCallback = LongRunningCallback[Instance]
-  
-  type CreateInstanceResponse = js.Tuple3[Instance, Operation_, IOperation]
-  
-  type DeleteInstanceCallback = NormalCallback[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify instanceAdmin.protobuf.IEmpty */ Any
-  ]
-  
-  type DeleteInstanceResponse = js.Array[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify instanceAdmin.protobuf.IEmpty */ Any
-  ]
-  
-  type ExistsInstanceCallback = NormalCallback[Boolean]
-  
-  type ExistsInstanceResponse = js.Array[Boolean]
-  
-  type GetBackupOperationsCallback = RequestCallback[
-    IOperation, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify databaseAdmin.spanner.admin.database.v1.IListBackupOperationsResponse */ Any
-  ]
-  
-  type GetBackupOperationsOptions = PagedOptionsWithFilter
-  
-  type GetBackupOperationsResponse = PagedResponse[
-    IOperation, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify databaseAdmin.spanner.admin.database.v1.IListBackupOperationsResponse */ Any
-  ]
-  
-  type GetBackupsCallback = RequestCallback[
-    Backup, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify databaseAdmin.spanner.admin.database.v1.IListBackupsResponse */ Any
-  ]
-  
-  type GetBackupsOptions = PagedOptionsWithFilter
-  
-  type GetBackupsResponse = PagedResponse[
-    Backup, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify databaseAdmin.spanner.admin.database.v1.IListBackupsResponse */ Any
-  ]
-  
-  type GetDatabaseOperationsCallback = RequestCallback[
-    IOperation, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify databaseAdmin.spanner.admin.database.v1.IListDatabaseOperationsResponse */ Any
-  ]
-  
-  type GetDatabaseOperationsOptions = PagedOptionsWithFilter
-  
-  type GetDatabaseOperationsResponse = PagedResponse[
-    IOperation, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify databaseAdmin.spanner.admin.database.v1.IListDatabaseOperationsResponse */ Any
-  ]
-  
-  type GetDatabasesCallback = RequestCallback[
-    Database, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify databaseAdmin.spanner.admin.database.v1.IListDatabasesResponse */ Any
-  ]
-  
-  type GetDatabasesOptions = PagedOptions
-  
-  type GetDatabasesResponse = PagedResponse[
-    Database, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify databaseAdmin.spanner.admin.database.v1.IListDatabasesResponse */ Any
-  ]
-  
-  type GetInstanceCallback = ResourceCallback[Instance, IInstance]
-  
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.googleCloudSpanner.buildSrcInstanceMod.GetInstanceMetadataOptions because var conflicts: gaxOptions. Inlined fieldNames */ trait GetInstanceConfig
-    extends StObject
-       with GetConfig
-       with CreateInstanceRequest {
-    
-    var fieldNames: js.UndefOr[String | js.Array[String]] = js.undefined
-  }
-  object GetInstanceConfig {
-    
-    inline def apply(): GetInstanceConfig = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[GetInstanceConfig]
-    }
-    
-    extension [Self <: GetInstanceConfig](x: Self) {
-      
-      inline def setFieldNames(value: String | js.Array[String]): Self = StObject.set(x, "fieldNames", value.asInstanceOf[js.Any])
-      
-      inline def setFieldNamesUndefined: Self = StObject.set(x, "fieldNames", js.undefined)
-      
-      inline def setFieldNamesVarargs(value: String*): Self = StObject.set(x, "fieldNames", js.Array(value*))
-    }
-  }
-  
-  type GetInstanceMetadataCallback = NormalCallback[IInstance]
-  
-  trait GetInstanceMetadataOptions extends StObject {
-    
-    var fieldNames: js.UndefOr[String | js.Array[String]] = js.undefined
-    
-    var gaxOptions: js.UndefOr[CallOptions] = js.undefined
-  }
-  object GetInstanceMetadataOptions {
-    
-    inline def apply(): GetInstanceMetadataOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[GetInstanceMetadataOptions]
-    }
-    
-    extension [Self <: GetInstanceMetadataOptions](x: Self) {
-      
-      inline def setFieldNames(value: String | js.Array[String]): Self = StObject.set(x, "fieldNames", value.asInstanceOf[js.Any])
-      
-      inline def setFieldNamesUndefined: Self = StObject.set(x, "fieldNames", js.undefined)
-      
-      inline def setFieldNamesVarargs(value: String*): Self = StObject.set(x, "fieldNames", js.Array(value*))
-      
-      inline def setGaxOptions(value: CallOptions): Self = StObject.set(x, "gaxOptions", value.asInstanceOf[js.Any])
-      
-      inline def setGaxOptionsUndefined: Self = StObject.set(x, "gaxOptions", js.undefined)
-    }
-  }
-  
-  type GetInstanceMetadataResponse = js.Array[IInstance]
-  
-  type GetInstanceResponse = js.Tuple2[Instance, IInstance]
-  
-  type IBackup = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify databaseAdmin.spanner.admin.database.v1.IBackup */ Any
-  
-  type IDatabase = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify databaseAdmin.spanner.admin.database.v1.IDatabase */ Any
-  
-  type IInstance = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify instanceAdmin.spanner.admin.instance.v1.IInstance */ Any
-  
-  type IOperation = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify instanceAdmin.longrunning.IOperation */ Any
   
   /**
     * The {@link Instance} class represents a [Cloud Spanner
@@ -225,8 +50,11 @@ object buildSrcInstanceMod {
     * ```
     */
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify common.GrpcServiceObject * / any */ @js.native
-  trait Instance extends StObject {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify common.GrpcServiceObject * / any
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify common.GrpcServiceObject * / any */ @JSImport("@google-cloud/spanner/build/src/instance", "Instance")
+  @js.native
+  open class Instance protected () extends StObject {
+    def this(spanner: Spanner, name: String) = this()
     
     /**
       * Get a reference to a Backup object.
@@ -995,6 +823,206 @@ object buildSrcInstanceMod {
     def setMetadata(metadata: IInstance, gaxOptions: CallOptions): js.Promise[SetInstanceMetadataResponse] = js.native
     def setMetadata(metadata: IInstance, gaxOptions: CallOptions, callback: SetInstanceMetadataCallback): Unit = js.native
   }
+  object Instance {
+    
+    @JSImport("@google-cloud/spanner/build/src/instance", "Instance")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Format the instance name to include the project ID.
+      *
+      * @private
+      *
+      * @param {string} projectId The project ID.
+      * @param {string} name The instance name.
+      * @returns {string}
+      *
+      * @example
+      * ```
+      * Instance.formatName_('grape-spaceship-123', 'my-instance');
+      * // 'projects/grape-spaceship-123/instances/my-instance'
+      * ```
+      */
+    /* static member */
+    inline def formatName(projectId: String, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatName_")(projectId.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
+  }
+  
+  type CreateDatabaseCallback = LongRunningCallback[Database]
+  
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify databaseAdmin.spanner.admin.database.v1.ICreateDatabaseRequest * / any */ trait CreateDatabaseOptions extends StObject {
+    
+    var gaxOptions: js.UndefOr[CallOptions] = js.undefined
+    
+    var poolCtor: js.UndefOr[SessionPool] = js.undefined
+    
+    var poolOptions: js.UndefOr[SessionPoolOptions] = js.undefined
+    
+    var schema: js.UndefOr[String | js.Array[String]] = js.undefined
+  }
+  object CreateDatabaseOptions {
+    
+    inline def apply(): CreateDatabaseOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CreateDatabaseOptions]
+    }
+    
+    extension [Self <: CreateDatabaseOptions](x: Self) {
+      
+      inline def setGaxOptions(value: CallOptions): Self = StObject.set(x, "gaxOptions", value.asInstanceOf[js.Any])
+      
+      inline def setGaxOptionsUndefined: Self = StObject.set(x, "gaxOptions", js.undefined)
+      
+      inline def setPoolCtor(value: SessionPool): Self = StObject.set(x, "poolCtor", value.asInstanceOf[js.Any])
+      
+      inline def setPoolCtorUndefined: Self = StObject.set(x, "poolCtor", js.undefined)
+      
+      inline def setPoolOptions(value: SessionPoolOptions): Self = StObject.set(x, "poolOptions", value.asInstanceOf[js.Any])
+      
+      inline def setPoolOptionsUndefined: Self = StObject.set(x, "poolOptions", js.undefined)
+      
+      inline def setSchema(value: String | js.Array[String]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      
+      inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+      
+      inline def setSchemaVarargs(value: String*): Self = StObject.set(x, "schema", js.Array(value*))
+    }
+  }
+  
+  type CreateDatabaseResponse = js.Tuple3[Database, Operation_, IOperation]
+  
+  type CreateInstanceCallback = LongRunningCallback[Instance]
+  
+  type CreateInstanceResponse = js.Tuple3[Instance, Operation_, IOperation]
+  
+  type DeleteInstanceCallback = NormalCallback[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify instanceAdmin.protobuf.IEmpty */ Any
+  ]
+  
+  type DeleteInstanceResponse = js.Array[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify instanceAdmin.protobuf.IEmpty */ Any
+  ]
+  
+  type ExistsInstanceCallback = NormalCallback[Boolean]
+  
+  type ExistsInstanceResponse = js.Array[Boolean]
+  
+  type GetBackupOperationsCallback = RequestCallback[
+    IOperation, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify databaseAdmin.spanner.admin.database.v1.IListBackupOperationsResponse */ Any
+  ]
+  
+  type GetBackupOperationsOptions = PagedOptionsWithFilter
+  
+  type GetBackupOperationsResponse = PagedResponse[
+    IOperation, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify databaseAdmin.spanner.admin.database.v1.IListBackupOperationsResponse */ Any
+  ]
+  
+  type GetBackupsCallback = RequestCallback[
+    Backup, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify databaseAdmin.spanner.admin.database.v1.IListBackupsResponse */ Any
+  ]
+  
+  type GetBackupsOptions = PagedOptionsWithFilter
+  
+  type GetBackupsResponse = PagedResponse[
+    Backup, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify databaseAdmin.spanner.admin.database.v1.IListBackupsResponse */ Any
+  ]
+  
+  type GetDatabaseOperationsCallback = RequestCallback[
+    IOperation, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify databaseAdmin.spanner.admin.database.v1.IListDatabaseOperationsResponse */ Any
+  ]
+  
+  type GetDatabaseOperationsOptions = PagedOptionsWithFilter
+  
+  type GetDatabaseOperationsResponse = PagedResponse[
+    IOperation, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify databaseAdmin.spanner.admin.database.v1.IListDatabaseOperationsResponse */ Any
+  ]
+  
+  type GetDatabasesCallback = RequestCallback[
+    Database, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify databaseAdmin.spanner.admin.database.v1.IListDatabasesResponse */ Any
+  ]
+  
+  type GetDatabasesOptions = PagedOptions
+  
+  type GetDatabasesResponse = PagedResponse[
+    Database, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify databaseAdmin.spanner.admin.database.v1.IListDatabasesResponse */ Any
+  ]
+  
+  type GetInstanceCallback = ResourceCallback[Instance, IInstance]
+  
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.googleCloudSpanner.buildSrcInstanceMod.GetInstanceMetadataOptions because var conflicts: gaxOptions. Inlined fieldNames */ trait GetInstanceConfig
+    extends StObject
+       with GetConfig
+       with CreateInstanceRequest {
+    
+    var fieldNames: js.UndefOr[String | js.Array[String]] = js.undefined
+  }
+  object GetInstanceConfig {
+    
+    inline def apply(): GetInstanceConfig = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[GetInstanceConfig]
+    }
+    
+    extension [Self <: GetInstanceConfig](x: Self) {
+      
+      inline def setFieldNames(value: String | js.Array[String]): Self = StObject.set(x, "fieldNames", value.asInstanceOf[js.Any])
+      
+      inline def setFieldNamesUndefined: Self = StObject.set(x, "fieldNames", js.undefined)
+      
+      inline def setFieldNamesVarargs(value: String*): Self = StObject.set(x, "fieldNames", js.Array(value*))
+    }
+  }
+  
+  type GetInstanceMetadataCallback = NormalCallback[IInstance]
+  
+  trait GetInstanceMetadataOptions extends StObject {
+    
+    var fieldNames: js.UndefOr[String | js.Array[String]] = js.undefined
+    
+    var gaxOptions: js.UndefOr[CallOptions] = js.undefined
+  }
+  object GetInstanceMetadataOptions {
+    
+    inline def apply(): GetInstanceMetadataOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[GetInstanceMetadataOptions]
+    }
+    
+    extension [Self <: GetInstanceMetadataOptions](x: Self) {
+      
+      inline def setFieldNames(value: String | js.Array[String]): Self = StObject.set(x, "fieldNames", value.asInstanceOf[js.Any])
+      
+      inline def setFieldNamesUndefined: Self = StObject.set(x, "fieldNames", js.undefined)
+      
+      inline def setFieldNamesVarargs(value: String*): Self = StObject.set(x, "fieldNames", js.Array(value*))
+      
+      inline def setGaxOptions(value: CallOptions): Self = StObject.set(x, "gaxOptions", value.asInstanceOf[js.Any])
+      
+      inline def setGaxOptionsUndefined: Self = StObject.set(x, "gaxOptions", js.undefined)
+    }
+  }
+  
+  type GetInstanceMetadataResponse = js.Array[IInstance]
+  
+  type GetInstanceResponse = js.Tuple2[Instance, IInstance]
+  
+  type IBackup = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify databaseAdmin.spanner.admin.database.v1.IBackup */ Any
+  
+  type IDatabase = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify databaseAdmin.spanner.admin.database.v1.IDatabase */ Any
+  
+  type IInstance = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify instanceAdmin.spanner.admin.instance.v1.IInstance */ Any
+  
+  type IOperation = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify instanceAdmin.longrunning.IOperation */ Any
   
   @js.native
   trait InstanceRequest extends StObject {

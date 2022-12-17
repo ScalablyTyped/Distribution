@@ -45,9 +45,7 @@ trait PickImplonChangePartialPi
   
   def onChange(percent: Double, value: Double, total: Double): Unit
   @JSName("onChange")
-  var onChange_Original: (js.ThisFunction3[/* this */ JQuery, /* percent */ Double, /* value */ Double, /* total */ Double, Unit]) & (js.UndefOr[
-    js.ThisFunction3[/* this */ JQuery, /* percent */ Double, /* value */ Double, /* total */ Double, Unit]
-  ])
+  var onChange_Original: js.ThisFunction3[/* this */ JQuery, /* percent */ Double, /* value */ Double, /* total */ Double, Unit]
   
   var onError: js.UndefOr[
     js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]
@@ -84,9 +82,7 @@ trait PickImplonChangePartialPi
 object PickImplonChangePartialPi {
   
   inline def apply(
-    onChange: (js.ThisFunction3[/* this */ JQuery, /* percent */ Double, /* value */ Double, /* total */ Double, Unit]) & (js.UndefOr[
-      js.ThisFunction3[/* this */ JQuery, /* percent */ Double, /* value */ Double, /* total */ Double, Unit]
-    ])
+    onChange: js.ThisFunction3[/* this */ JQuery, /* percent */ Double, /* value */ Double, /* total */ Double, Unit]
   ): PickImplonChangePartialPi = {
     val __obj = js.Dynamic.literal(onChange = onChange.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonChangePartialPi]
@@ -135,9 +131,7 @@ object PickImplonChangePartialPi {
     inline def setOnActiveUndefined: Self = StObject.set(x, "onActive", js.undefined)
     
     inline def setOnChange(
-      value: (js.ThisFunction3[/* this */ JQuery, /* percent */ Double, /* value */ Double, /* total */ Double, Unit]) & (js.UndefOr[
-          js.ThisFunction3[/* this */ JQuery, /* percent */ Double, /* value */ Double, /* total */ Double, Unit]
-        ])
+      value: js.ThisFunction3[/* this */ JQuery, /* percent */ Double, /* value */ Double, /* total */ Double, Unit]
     ): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
     
     inline def setOnError(value: js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])

@@ -11,5 +11,6 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def default(): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Name]
   inline def default(release: String): js.UndefOr[Name] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(release.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Name]]
 }

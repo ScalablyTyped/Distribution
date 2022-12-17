@@ -75,7 +75,7 @@ trait PickImplfullTextSearchPar
   
   var forceSelection: js.UndefOr[Boolean] = js.undefined
   
-  var fullTextSearch: (Boolean | exact) & (js.UndefOr[Boolean | exact])
+  var fullTextSearch: Boolean | exact
   
   var glyphWidth: js.UndefOr[Double] = js.undefined
   
@@ -169,7 +169,7 @@ trait PickImplfullTextSearchPar
 }
 object PickImplfullTextSearchPar {
   
-  inline def apply(fullTextSearch: (Boolean | exact) & (js.UndefOr[Boolean | exact])): PickImplfullTextSearchPar = {
+  inline def apply(fullTextSearch: Boolean | exact): PickImplfullTextSearchPar = {
     val __obj = js.Dynamic.literal(fullTextSearch = fullTextSearch.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplfullTextSearchPar]
   }
@@ -248,7 +248,7 @@ object PickImplfullTextSearchPar {
     
     inline def setForceSelectionUndefined: Self = StObject.set(x, "forceSelection", js.undefined)
     
-    inline def setFullTextSearch(value: (Boolean | exact) & (js.UndefOr[Boolean | exact])): Self = StObject.set(x, "fullTextSearch", value.asInstanceOf[js.Any])
+    inline def setFullTextSearch(value: Boolean | exact): Self = StObject.set(x, "fullTextSearch", value.asInstanceOf[js.Any])
     
     inline def setGlyphWidth(value: Double): Self = StObject.set(x, "glyphWidth", value.asInstanceOf[js.Any])
     

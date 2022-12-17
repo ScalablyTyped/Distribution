@@ -37,7 +37,7 @@ trait PickImplonCompletePartial
   
   def onComplete(): Unit
   @JSName("onComplete")
-  var onComplete_Original: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+  var onComplete_Original: js.ThisFunction0[/* this */ JQuery, Unit]
   
   var onHide: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
@@ -59,9 +59,7 @@ trait PickImplonCompletePartial
 }
 object PickImplonCompletePartial {
   
-  inline def apply(
-    onComplete: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-  ): PickImplonCompletePartial = {
+  inline def apply(onComplete: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonCompletePartial = {
     val __obj = js.Dynamic.literal(onComplete = onComplete.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonCompletePartial]
   }
@@ -108,9 +106,7 @@ object PickImplonCompletePartial {
     
     inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
-    inline def setOnComplete(
-      value: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-    ): Self = StObject.set(x, "onComplete", value.asInstanceOf[js.Any])
+    inline def setOnComplete(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onComplete", value.asInstanceOf[js.Any])
     
     inline def setOnHide(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onHide", value.asInstanceOf[js.Any])
     

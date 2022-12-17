@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Done extends StObject {
   
   /** Called after data is loaded, but not after rendering. This is because rendering will finish after some transition and there is some time lag between loading and rendering. */
-  var done: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  var done: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   var ids: js.UndefOr[ArrayOrString] = js.undefined
 }
@@ -21,7 +21,7 @@ object Done {
   
   extension [Self <: Done](x: Self) {
     
-    inline def setDone(value: () => scala.Unit): Self = StObject.set(x, "done", js.Any.fromFunction0(value))
+    inline def setDone(value: () => Unit): Self = StObject.set(x, "done", js.Any.fromFunction0(value))
     
     inline def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
     

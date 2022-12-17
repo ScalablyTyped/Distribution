@@ -1,6 +1,6 @@
 package typings.msRest.mod
 
-import typings.msRest.anon.Version
+import typings.msRest.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +32,7 @@ open class ServiceClient () extends StObject {
     * @param {string} managementClientDir - pass the directory of the specific azure management client.
     * @returns {object} packageJsonInfo - "name" and "version" of the desired package.
     */
-  def getPackageJsonInfo(managementClientDir: String): Version = js.native
+  def getPackageJsonInfo(managementClientDir: String): Name = js.native
   
   def sendRequest[TResult](options: PathTemplateBasedRequestPrepareOptions): js.Promise[TResult] = js.native
   def sendRequest[TResult](options: PathTemplateBasedRequestPrepareOptions, callback: ServiceCallback[TResult]): Unit = js.native

@@ -10,8 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * cannot be delivered promptly. Use the {@link SyncClient.stream} method to obtain a reference to a Sync Message Stream.
   * Information about rate limits can be found [here](https://www.twilio.com/docs/sync/limits).
   */
+@JSImport("twilio-sync", "SyncStream")
 @js.native
-trait SyncStream extends Closeable {
+open class SyncStream protected () extends Closeable {
+  /**
+    * @internal
+    */
+  def this(syncStreamImpl: SyncStreamImpl) = this()
   
   def dateExpires: String = js.native
   
@@ -87,4 +92,49 @@ trait SyncStream extends Closeable {
   
   // private props
   def uri: String = js.native
+}
+object SyncStream {
+  
+  /**
+    * Fired when a message is published to the stream either locally or by a remote actor.
+    *
+    * Parameters:
+    * 1. object `args` - info object provided with the event. It has the following properties:
+    *     * {@link SyncStreamMessage} `message` -  Published message
+    *     * boolean `isLocal` - equals true if the message was published by a local actor, false otherwise
+    * @example
+    * ```typescript
+    * stream.on('messagePublished', (args) => {
+    *   console.log('Stream message published');
+    *   console.log('Message SID:', args.message.sid);
+    *   console.log('Message data: ', args.message.data);
+    *   console.log('args.isLocal:', args.isLocal);
+    * });
+    * ```
+    * @event
+    */
+  /* static member */
+  @JSImport("twilio-sync", "SyncStream.messagePublished")
+  @js.native
+  val messagePublished: /* "messagePublished" */ String = js.native
+  
+  /**
+    * Fired when a stream is removed entirely, regardless of whether the remover was local or remote.
+    *
+    * Parameters:
+    * 1. object `args` - info object provided with the event. It has the following properties:
+    *     * boolean `isLocal` - equals true if the stream was removed by a local actor, false otherwise
+    * @example
+    * ```typescript
+    * stream.on('removed', (args) => {
+    *   console.log(`Stream ${stream.sid} was removed`);
+    *   console.log('args.isLocal:', args.isLocal);
+    * });
+    * ```
+    * @event
+    */
+  /* static member */
+  @JSImport("twilio-sync", "SyncStream.removed")
+  @js.native
+  val removed: /* "removed" */ String = js.native
 }

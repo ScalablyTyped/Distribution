@@ -120,7 +120,7 @@ object distSearchControlMod {
     
     var position: js.UndefOr[ControlPosition] = js.undefined
     
-    var provider: (js.UndefOr[Provider[Any, Any]]) & (Provider[Any, Any])
+    var provider: js.UndefOr[Provider[Any, Any]] = js.undefined
     
     var resultFormat: js.UndefOr[js.Function1[/* args */ Result[Any], String]] = js.undefined
     
@@ -140,8 +140,8 @@ object distSearchControlMod {
   }
   object SearchControlOptions {
     
-    inline def apply(provider: (js.UndefOr[Provider[Any, Any]]) & (Provider[Any, Any])): SearchControlOptions = {
-      val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
+    inline def apply(): SearchControlOptions = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SearchControlOptions]
     }
     
@@ -203,7 +203,9 @@ object distSearchControlMod {
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      inline def setProvider(value: (js.UndefOr[Provider[Any, Any]]) & (Provider[Any, Any])): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+      inline def setProvider(value: Provider[Any, Any]): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+      
+      inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
       
       inline def setResultFormat(value: /* args */ Result[Any] => String): Self = StObject.set(x, "resultFormat", js.Any.fromFunction1(value))
       

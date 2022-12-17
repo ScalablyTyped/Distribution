@@ -217,18 +217,20 @@ object anon {
       * Whether an exception will be thrown if no file system entry exists, rather than returning `undefined`.
       * @default true
       */
-    var throwIfNoEntry: js.UndefOr[Boolean] & js.UndefOr[`true`]
+    var throwIfNoEntry: js.UndefOr[Boolean] = js.undefined
   }
   object StatSyncOptionsthrowIfNoE {
     
-    inline def apply(throwIfNoEntry: js.UndefOr[Boolean] & js.UndefOr[`true`]): StatSyncOptionsthrowIfNoE = {
-      val __obj = js.Dynamic.literal(throwIfNoEntry = throwIfNoEntry.asInstanceOf[js.Any])
+    inline def apply(): StatSyncOptionsthrowIfNoE = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StatSyncOptionsthrowIfNoE]
     }
     
     extension [Self <: StatSyncOptionsthrowIfNoE](x: Self) {
       
-      inline def setThrowIfNoEntry(value: js.UndefOr[Boolean] & js.UndefOr[`true`]): Self = StObject.set(x, "throwIfNoEntry", value.asInstanceOf[js.Any])
+      inline def setThrowIfNoEntry(value: Boolean): Self = StObject.set(x, "throwIfNoEntry", value.asInstanceOf[js.Any])
+      
+      inline def setThrowIfNoEntryUndefined: Self = StObject.set(x, "throwIfNoEntry", js.undefined)
     }
   }
   
@@ -239,18 +241,20 @@ object anon {
       * Whether an exception will be thrown if no file system entry exists, rather than returning `undefined`.
       * @default true
       */
-    var throwIfNoEntry: js.UndefOr[Boolean] & `false`
+    var throwIfNoEntry: js.UndefOr[Boolean] = js.undefined
   }
   object StatSyncOptionsthrowIfNoEThrowIfNoEntry {
     
-    inline def apply(throwIfNoEntry: js.UndefOr[Boolean] & `false`): StatSyncOptionsthrowIfNoEThrowIfNoEntry = {
-      val __obj = js.Dynamic.literal(throwIfNoEntry = throwIfNoEntry.asInstanceOf[js.Any])
+    inline def apply(): StatSyncOptionsthrowIfNoEThrowIfNoEntry = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StatSyncOptionsthrowIfNoEThrowIfNoEntry]
     }
     
     extension [Self <: StatSyncOptionsthrowIfNoEThrowIfNoEntry](x: Self) {
       
-      inline def setThrowIfNoEntry(value: js.UndefOr[Boolean] & `false`): Self = StObject.set(x, "throwIfNoEntry", value.asInstanceOf[js.Any])
+      inline def setThrowIfNoEntry(value: Boolean): Self = StObject.set(x, "throwIfNoEntry", value.asInstanceOf[js.Any])
+      
+      inline def setThrowIfNoEntryUndefined: Self = StObject.set(x, "throwIfNoEntry", js.undefined)
     }
   }
   

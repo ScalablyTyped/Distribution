@@ -1,7 +1,7 @@
 package typings.reactOnsenui.mod
 
+import typings.reactOnsenui.anon.Children
 import typings.reactOnsenui.anon.HTMLAttributesidclassName
-import typings.reactOnsenui.anon.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("react-onsenui", "SplitterContent")
 @js.native
 open class SplitterContent protected ()
-  extends Component[`3`, js.Object] {
-  def this(props: HTMLAttributesidclassName & `3`) = this()
+  extends Component[Children, js.Object] {
+  def this(props: HTMLAttributesidclassName & Children) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: HTMLAttributesidclassName & `3`, context: Any) = this()
+  def this(props: HTMLAttributesidclassName & Children, context: Any) = this()
 }

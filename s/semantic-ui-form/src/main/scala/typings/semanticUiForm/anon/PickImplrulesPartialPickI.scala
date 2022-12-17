@@ -74,9 +74,7 @@ trait PickImplrulesPartialPickI
   
   var revalidate: js.UndefOr[Boolean] = js.undefined
   
-  var rules: (StringDictionary[js.ThisFunction1[/* this */ HTMLElement, /* repeated */ Any, Boolean]]) & (js.UndefOr[
-    StringDictionary[js.ThisFunction1[/* this */ HTMLElement, /* repeated */ Any, Boolean]]
-  ])
+  var rules: StringDictionary[js.ThisFunction1[/* this */ HTMLElement, /* repeated */ Any, Boolean]]
   
   var selector: js.UndefOr[SelectorSettings] = js.undefined
   
@@ -92,11 +90,7 @@ trait PickImplrulesPartialPickI
 }
 object PickImplrulesPartialPickI {
   
-  inline def apply(
-    rules: (StringDictionary[js.ThisFunction1[/* this */ HTMLElement, /* repeated */ Any, Boolean]]) & (js.UndefOr[
-      StringDictionary[js.ThisFunction1[/* this */ HTMLElement, /* repeated */ Any, Boolean]]
-    ])
-  ): PickImplrulesPartialPickI = {
+  inline def apply(rules: StringDictionary[js.ThisFunction1[/* this */ HTMLElement, /* repeated */ Any, Boolean]]): PickImplrulesPartialPickI = {
     val __obj = js.Dynamic.literal(rules = rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplrulesPartialPickI]
   }
@@ -192,11 +186,7 @@ object PickImplrulesPartialPickI {
     
     inline def setRevalidateUndefined: Self = StObject.set(x, "revalidate", js.undefined)
     
-    inline def setRules(
-      value: (StringDictionary[js.ThisFunction1[/* this */ HTMLElement, /* repeated */ Any, Boolean]]) & (js.UndefOr[
-          StringDictionary[js.ThisFunction1[/* this */ HTMLElement, /* repeated */ Any, Boolean]]
-        ])
-    ): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: StringDictionary[js.ThisFunction1[/* this */ HTMLElement, /* repeated */ Any, Boolean]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
     inline def setSelector(value: SelectorSettings): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     

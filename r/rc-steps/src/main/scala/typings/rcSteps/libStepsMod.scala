@@ -33,9 +33,9 @@ object libStepsMod {
     inline def Step(props: StepProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Step")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   }
   
-  type ProgressDotRender = js.Function2[/* iconDot */ Any, /* info */ Description, ReactNode]
+  type ProgressDotRender = js.Function2[/* iconDot */ Any, /* info */ Index, ReactNode]
   
-  type StepIconRender = js.Function1[/* info */ Index, ReactNode]
+  type StepIconRender = js.Function1[/* info */ Description, ReactNode]
   
   trait StepsProps extends StObject {
     
@@ -136,7 +136,7 @@ object libStepsMod {
       
       inline def setProgressDot(value: ProgressDotRender | Boolean): Self = StObject.set(x, "progressDot", value.asInstanceOf[js.Any])
       
-      inline def setProgressDotFunction2(value: (/* iconDot */ Any, /* info */ Description) => ReactNode): Self = StObject.set(x, "progressDot", js.Any.fromFunction2(value))
+      inline def setProgressDotFunction2(value: (/* iconDot */ Any, /* info */ Index) => ReactNode): Self = StObject.set(x, "progressDot", js.Any.fromFunction2(value))
       
       inline def setProgressDotUndefined: Self = StObject.set(x, "progressDot", js.undefined)
       
@@ -148,7 +148,7 @@ object libStepsMod {
       
       inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      inline def setStepIcon(value: /* info */ Index => ReactNode): Self = StObject.set(x, "stepIcon", js.Any.fromFunction1(value))
+      inline def setStepIcon(value: /* info */ Description => ReactNode): Self = StObject.set(x, "stepIcon", js.Any.fromFunction1(value))
       
       inline def setStepIconUndefined: Self = StObject.set(x, "stepIcon", js.undefined)
       

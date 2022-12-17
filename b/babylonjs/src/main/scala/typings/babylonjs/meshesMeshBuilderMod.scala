@@ -1,31 +1,31 @@
 package typings.babylonjs
 
 import typings.babylonjs.anon.AdjustFrame
-import typings.babylonjs.anon.AlignHorizontal
-import typings.babylonjs.anon.AlphaFilter
 import typings.babylonjs.anon.Angle
-import typings.babylonjs.anon.Arc
-import typings.babylonjs.anon.BackUVs
+import typings.babylonjs.anon.BottomBaseAt
+import typings.babylonjs.anon.Cap
 import typings.babylonjs.anon.Clip
 import typings.babylonjs.anon.CloseArray
-import typings.babylonjs.anon.CloseShape
-import typings.babylonjs.anon.Colors
-import typings.babylonjs.anon.Custom
-import typings.babylonjs.anon.DashNb
-import typings.babylonjs.anon.Depth
+import typings.babylonjs.anon.ClosePath
+import typings.babylonjs.anon.ColorFilter
+import typings.babylonjs.anon.DashSize
 import typings.babylonjs.anon.DiameterX
 import typings.babylonjs.anon.FaceColors
-import typings.babylonjs.anon.Flat
-import typings.babylonjs.anon.FrontUVs
+import typings.babylonjs.anon.FaceUV
 import typings.babylonjs.anon.Holes
 import typings.babylonjs.anon.Instance
 import typings.babylonjs.anon.InvertUV
-import typings.babylonjs.anon.P
+import typings.babylonjs.anon.M
+import typings.babylonjs.anon.Material
 import typings.babylonjs.anon.Pattern
-import typings.babylonjs.anon.Precision
-import typings.babylonjs.anon.SideOrientation
-import typings.babylonjs.anon.Subdivisions
+import typings.babylonjs.anon.Q
+import typings.babylonjs.anon.RadiusX
+import typings.babylonjs.anon.Size
+import typings.babylonjs.anon.SizeX
+import typings.babylonjs.anon.SubdivisionsX
 import typings.babylonjs.anon.Tessellation
+import typings.babylonjs.anon.Thickness
+import typings.babylonjs.anon.Updatable
 import typings.babylonjs.meshesAbstractMeshMod.AbstractMesh
 import typings.babylonjs.meshesBuildersCapsuleBuilderMod.ICreateCapsuleOptions
 import typings.babylonjs.meshesBuildersGoldbergBuilderMod.GoldbergCreationOption
@@ -51,18 +51,18 @@ object meshesMeshBuilderMod {
     @js.native
     def CreateBox: js.Function3[
         /* name */ String, 
-        /* options */ js.UndefOr[BackUVs], 
+        /* options */ js.UndefOr[BottomBaseAt], 
         /* scene */ js.UndefOr[Nullable[Scene]], 
         Mesh
       ] = js.native
     inline def CreateBox(name: String): Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateBox")(name.asInstanceOf[js.Any]).asInstanceOf[Mesh]
     inline def CreateBox(name: String, options: Unit, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateBox")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
-    inline def CreateBox(name: String, options: BackUVs): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateBox")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
-    inline def CreateBox(name: String, options: BackUVs, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateBox")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    inline def CreateBox(name: String, options: BottomBaseAt): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateBox")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    inline def CreateBox(name: String, options: BottomBaseAt, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateBox")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
     inline def CreateBox_=(
       x: js.Function3[
           /* name */ String, 
-          /* options */ js.UndefOr[BackUVs], 
+          /* options */ js.UndefOr[BottomBaseAt], 
           /* scene */ js.UndefOr[Nullable[Scene]], 
           Mesh
         ]
@@ -93,18 +93,18 @@ object meshesMeshBuilderMod {
     @js.native
     def CreateCylinder: js.Function3[
         /* name */ String, 
-        /* options */ js.UndefOr[Arc], 
+        /* options */ js.UndefOr[Cap], 
         /* scene */ js.UndefOr[Nullable[Scene]], 
         Mesh
       ] = js.native
     inline def CreateCylinder(name: String): Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateCylinder")(name.asInstanceOf[js.Any]).asInstanceOf[Mesh]
     inline def CreateCylinder(name: String, options: Unit, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCylinder")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
-    inline def CreateCylinder(name: String, options: Arc): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCylinder")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
-    inline def CreateCylinder(name: String, options: Arc, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCylinder")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    inline def CreateCylinder(name: String, options: Cap): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCylinder")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    inline def CreateCylinder(name: String, options: Cap, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCylinder")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
     inline def CreateCylinder_=(
       x: js.Function3[
           /* name */ String, 
-          /* options */ js.UndefOr[Arc], 
+          /* options */ js.UndefOr[Cap], 
           /* scene */ js.UndefOr[Nullable[Scene]], 
           Mesh
         ]
@@ -114,16 +114,16 @@ object meshesMeshBuilderMod {
     @js.native
     def CreateDashedLines: js.Function3[
         /* name */ String, 
-        /* options */ DashNb, 
+        /* options */ DashSize, 
         /* scene */ js.UndefOr[Nullable[Scene]], 
         LinesMesh
       ] = js.native
-    inline def CreateDashedLines(name: String, options: DashNb): LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDashedLines")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LinesMesh]
-    inline def CreateDashedLines(name: String, options: DashNb, scene: Nullable[Scene]): LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDashedLines")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[LinesMesh]
+    inline def CreateDashedLines(name: String, options: DashSize): LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDashedLines")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LinesMesh]
+    inline def CreateDashedLines(name: String, options: DashSize, scene: Nullable[Scene]): LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDashedLines")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[LinesMesh]
     inline def CreateDashedLines_=(
       x: js.Function3[
           /* name */ String, 
-          /* options */ DashNb, 
+          /* options */ DashSize, 
           /* scene */ js.UndefOr[Nullable[Scene]], 
           LinesMesh
         ]
@@ -139,18 +139,18 @@ object meshesMeshBuilderMod {
     @js.native
     def CreateDisc: js.Function3[
         /* name */ String, 
-        /* options */ js.UndefOr[FrontUVs], 
+        /* options */ js.UndefOr[Tessellation], 
         /* scene */ js.UndefOr[Nullable[Scene]], 
         Mesh
       ] = js.native
     inline def CreateDisc(name: String): Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateDisc")(name.asInstanceOf[js.Any]).asInstanceOf[Mesh]
     inline def CreateDisc(name: String, options: Unit, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDisc")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
-    inline def CreateDisc(name: String, options: FrontUVs): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDisc")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
-    inline def CreateDisc(name: String, options: FrontUVs, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDisc")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    inline def CreateDisc(name: String, options: Tessellation): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDisc")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    inline def CreateDisc(name: String, options: Tessellation, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDisc")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
     inline def CreateDisc_=(
       x: js.Function3[
           /* name */ String, 
-          /* options */ js.UndefOr[FrontUVs], 
+          /* options */ js.UndefOr[Tessellation], 
           /* scene */ js.UndefOr[Nullable[Scene]], 
           Mesh
         ]
@@ -158,22 +158,10 @@ object meshesMeshBuilderMod {
     
     @JSImport("babylonjs/Meshes/meshBuilder", "MeshBuilder.CreateGeodesic")
     @js.native
-    def CreateGeodesic: js.Function3[
-        /* name */ String, 
-        /* options */ FaceColors, 
-        /* scene */ js.UndefOr[Nullable[Scene]], 
-        Mesh
-      ] = js.native
-    inline def CreateGeodesic(name: String, options: FaceColors): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGeodesic")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
-    inline def CreateGeodesic(name: String, options: FaceColors, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGeodesic")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
-    inline def CreateGeodesic_=(
-      x: js.Function3[
-          /* name */ String, 
-          /* options */ FaceColors, 
-          /* scene */ js.UndefOr[Nullable[Scene]], 
-          Mesh
-        ]
-    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreateGeodesic")(x.asInstanceOf[js.Any])
+    def CreateGeodesic: js.Function3[/* name */ String, /* options */ M, /* scene */ js.UndefOr[Nullable[Scene]], Mesh] = js.native
+    inline def CreateGeodesic(name: String, options: M): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGeodesic")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    inline def CreateGeodesic(name: String, options: M, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGeodesic")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    inline def CreateGeodesic_=(x: js.Function3[/* name */ String, /* options */ M, /* scene */ js.UndefOr[Nullable[Scene]], Mesh]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreateGeodesic")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Meshes/meshBuilder", "MeshBuilder.CreateGoldberg")
     @js.native
@@ -198,33 +186,33 @@ object meshesMeshBuilderMod {
     @js.native
     def CreateGround: js.Function3[
         /* name */ String, 
-        /* options */ js.UndefOr[Subdivisions], 
+        /* options */ js.UndefOr[SubdivisionsX], 
         /* scene */ js.UndefOr[Scene], 
         GroundMesh
       ] = js.native
     inline def CreateGround(name: String): GroundMesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateGround")(name.asInstanceOf[js.Any]).asInstanceOf[GroundMesh]
     inline def CreateGround(name: String, options: Unit, scene: Scene): GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGround")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[GroundMesh]
-    inline def CreateGround(name: String, options: Subdivisions): GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGround")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GroundMesh]
-    inline def CreateGround(name: String, options: Subdivisions, scene: Scene): GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGround")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[GroundMesh]
+    inline def CreateGround(name: String, options: SubdivisionsX): GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGround")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GroundMesh]
+    inline def CreateGround(name: String, options: SubdivisionsX, scene: Scene): GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGround")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[GroundMesh]
     
     @JSImport("babylonjs/Meshes/meshBuilder", "MeshBuilder.CreateGroundFromHeightMap")
     @js.native
     def CreateGroundFromHeightMap: js.Function4[
         /* name */ String, 
         /* url */ String, 
-        /* options */ js.UndefOr[AlphaFilter], 
+        /* options */ js.UndefOr[ColorFilter], 
         /* scene */ js.UndefOr[Nullable[Scene]], 
         GroundMesh
       ] = js.native
     inline def CreateGroundFromHeightMap(name: String, url: String): GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[GroundMesh]
     inline def CreateGroundFromHeightMap(name: String, url: String, options: Unit, scene: Nullable[Scene]): GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[GroundMesh]
-    inline def CreateGroundFromHeightMap(name: String, url: String, options: AlphaFilter): GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GroundMesh]
-    inline def CreateGroundFromHeightMap(name: String, url: String, options: AlphaFilter, scene: Nullable[Scene]): GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[GroundMesh]
+    inline def CreateGroundFromHeightMap(name: String, url: String, options: ColorFilter): GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GroundMesh]
+    inline def CreateGroundFromHeightMap(name: String, url: String, options: ColorFilter, scene: Nullable[Scene]): GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[GroundMesh]
     inline def CreateGroundFromHeightMap_=(
       x: js.Function4[
           /* name */ String, 
           /* url */ String, 
-          /* options */ js.UndefOr[AlphaFilter], 
+          /* options */ js.UndefOr[ColorFilter], 
           /* scene */ js.UndefOr[Nullable[Scene]], 
           GroundMesh
         ]
@@ -233,7 +221,7 @@ object meshesMeshBuilderMod {
     inline def CreateGround_=(
       x: js.Function3[
           /* name */ String, 
-          /* options */ js.UndefOr[Subdivisions], 
+          /* options */ js.UndefOr[SubdivisionsX], 
           /* scene */ js.UndefOr[Scene], 
           GroundMesh
         ]
@@ -243,18 +231,18 @@ object meshesMeshBuilderMod {
     @js.native
     def CreateIcoSphere: js.Function3[
         /* name */ String, 
-        /* options */ js.UndefOr[Flat], 
+        /* options */ js.UndefOr[RadiusX], 
         /* scene */ js.UndefOr[Nullable[Scene]], 
         Mesh
       ] = js.native
     inline def CreateIcoSphere(name: String): Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateIcoSphere")(name.asInstanceOf[js.Any]).asInstanceOf[Mesh]
     inline def CreateIcoSphere(name: String, options: Unit, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateIcoSphere")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
-    inline def CreateIcoSphere(name: String, options: Flat): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateIcoSphere")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
-    inline def CreateIcoSphere(name: String, options: Flat, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateIcoSphere")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    inline def CreateIcoSphere(name: String, options: RadiusX): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateIcoSphere")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    inline def CreateIcoSphere(name: String, options: RadiusX, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateIcoSphere")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
     inline def CreateIcoSphere_=(
       x: js.Function3[
           /* name */ String, 
-          /* options */ js.UndefOr[Flat], 
+          /* options */ js.UndefOr[RadiusX], 
           /* scene */ js.UndefOr[Nullable[Scene]], 
           Mesh
         ]
@@ -271,24 +259,24 @@ object meshesMeshBuilderMod {
     
     @JSImport("babylonjs/Meshes/meshBuilder", "MeshBuilder.CreateLineSystem")
     @js.native
-    def CreateLineSystem: js.Function3[/* name */ String, /* options */ Colors, /* scene */ Nullable[Scene], LinesMesh] = js.native
-    inline def CreateLineSystem(name: String, options: Colors, scene: Nullable[Scene]): LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLineSystem")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[LinesMesh]
-    inline def CreateLineSystem_=(x: js.Function3[/* name */ String, /* options */ Colors, /* scene */ Nullable[Scene], LinesMesh]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreateLineSystem")(x.asInstanceOf[js.Any])
+    def CreateLineSystem: js.Function3[/* name */ String, /* options */ Instance, /* scene */ Nullable[Scene], LinesMesh] = js.native
+    inline def CreateLineSystem(name: String, options: Instance, scene: Nullable[Scene]): LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLineSystem")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[LinesMesh]
+    inline def CreateLineSystem_=(x: js.Function3[/* name */ String, /* options */ Instance, /* scene */ Nullable[Scene], LinesMesh]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreateLineSystem")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Meshes/meshBuilder", "MeshBuilder.CreateLines")
     @js.native
     def CreateLines: js.Function3[
         /* name */ String, 
-        /* options */ Instance, 
+        /* options */ Material, 
         /* scene */ js.UndefOr[Nullable[Scene]], 
         LinesMesh
       ] = js.native
-    inline def CreateLines(name: String, options: Instance): LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLines")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LinesMesh]
-    inline def CreateLines(name: String, options: Instance, scene: Nullable[Scene]): LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLines")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[LinesMesh]
+    inline def CreateLines(name: String, options: Material): LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLines")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LinesMesh]
+    inline def CreateLines(name: String, options: Material, scene: Nullable[Scene]): LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLines")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[LinesMesh]
     inline def CreateLines_=(
       x: js.Function3[
           /* name */ String, 
-          /* options */ Instance, 
+          /* options */ Material, 
           /* scene */ js.UndefOr[Nullable[Scene]], 
           LinesMesh
         ]
@@ -298,18 +286,18 @@ object meshesMeshBuilderMod {
     @js.native
     def CreatePlane: js.Function3[
         /* name */ String, 
-        /* options */ js.UndefOr[SideOrientation], 
+        /* options */ js.UndefOr[Size], 
         /* scene */ js.UndefOr[Nullable[Scene]], 
         Mesh
       ] = js.native
     inline def CreatePlane(name: String): Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreatePlane")(name.asInstanceOf[js.Any]).asInstanceOf[Mesh]
     inline def CreatePlane(name: String, options: Unit, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePlane")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
-    inline def CreatePlane(name: String, options: SideOrientation): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePlane")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
-    inline def CreatePlane(name: String, options: SideOrientation, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePlane")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    inline def CreatePlane(name: String, options: Size): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePlane")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    inline def CreatePlane(name: String, options: Size, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePlane")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
     inline def CreatePlane_=(
       x: js.Function3[
           /* name */ String, 
-          /* options */ js.UndefOr[SideOrientation], 
+          /* options */ js.UndefOr[Size], 
           /* scene */ js.UndefOr[Nullable[Scene]], 
           Mesh
         ]
@@ -319,19 +307,19 @@ object meshesMeshBuilderMod {
     @js.native
     def CreatePolygon: js.Function4[
         /* name */ String, 
-        /* options */ Depth, 
+        /* options */ FaceUV, 
         /* scene */ js.UndefOr[Nullable[Scene]], 
         /* earcutInjection */ js.UndefOr[Any], 
         Mesh
       ] = js.native
-    inline def CreatePolygon(name: String, options: Depth): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
-    inline def CreatePolygon(name: String, options: Depth, scene: Unit, earcutInjection: Any): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], earcutInjection.asInstanceOf[js.Any])).asInstanceOf[Mesh]
-    inline def CreatePolygon(name: String, options: Depth, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
-    inline def CreatePolygon(name: String, options: Depth, scene: Nullable[Scene], earcutInjection: Any): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], earcutInjection.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    inline def CreatePolygon(name: String, options: FaceUV): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    inline def CreatePolygon(name: String, options: FaceUV, scene: Unit, earcutInjection: Any): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], earcutInjection.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    inline def CreatePolygon(name: String, options: FaceUV, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    inline def CreatePolygon(name: String, options: FaceUV, scene: Nullable[Scene], earcutInjection: Any): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], earcutInjection.asInstanceOf[js.Any])).asInstanceOf[Mesh]
     inline def CreatePolygon_=(
       x: js.Function4[
           /* name */ String, 
-          /* options */ Depth, 
+          /* options */ FaceUV, 
           /* scene */ js.UndefOr[Nullable[Scene]], 
           /* earcutInjection */ js.UndefOr[Any], 
           Mesh
@@ -342,18 +330,18 @@ object meshesMeshBuilderMod {
     @js.native
     def CreatePolyhedron: js.Function3[
         /* name */ String, 
-        /* options */ js.UndefOr[Custom], 
+        /* options */ js.UndefOr[SizeX], 
         /* scene */ js.UndefOr[Nullable[Scene]], 
         Mesh
       ] = js.native
     inline def CreatePolyhedron(name: String): Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolyhedron")(name.asInstanceOf[js.Any]).asInstanceOf[Mesh]
     inline def CreatePolyhedron(name: String, options: Unit, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolyhedron")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
-    inline def CreatePolyhedron(name: String, options: Custom): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolyhedron")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
-    inline def CreatePolyhedron(name: String, options: Custom, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolyhedron")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    inline def CreatePolyhedron(name: String, options: SizeX): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolyhedron")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    inline def CreatePolyhedron(name: String, options: SizeX, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolyhedron")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
     inline def CreatePolyhedron_=(
       x: js.Function3[
           /* name */ String, 
-          /* options */ js.UndefOr[Custom], 
+          /* options */ js.UndefOr[SizeX], 
           /* scene */ js.UndefOr[Nullable[Scene]], 
           Mesh
         ]
@@ -403,16 +391,16 @@ object meshesMeshBuilderMod {
     @js.native
     def CreateTiledBox: js.Function3[
         /* name */ String, 
-        /* options */ AlignHorizontal, 
+        /* options */ FaceColors, 
         /* scene */ js.UndefOr[Nullable[Scene]], 
         Mesh
       ] = js.native
-    inline def CreateTiledBox(name: String, options: AlignHorizontal): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledBox")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
-    inline def CreateTiledBox(name: String, options: AlignHorizontal, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledBox")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    inline def CreateTiledBox(name: String, options: FaceColors): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledBox")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    inline def CreateTiledBox(name: String, options: FaceColors, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledBox")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
     inline def CreateTiledBox_=(
       x: js.Function3[
           /* name */ String, 
-          /* options */ AlignHorizontal, 
+          /* options */ FaceColors, 
           /* scene */ js.UndefOr[Nullable[Scene]], 
           Mesh
         ]
@@ -422,16 +410,16 @@ object meshesMeshBuilderMod {
     @js.native
     def CreateTiledGround: js.Function3[
         /* name */ String, 
-        /* options */ Precision, 
+        /* options */ Updatable, 
         /* scene */ js.UndefOr[Nullable[Scene]], 
         Mesh
       ] = js.native
-    inline def CreateTiledGround(name: String, options: Precision): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledGround")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
-    inline def CreateTiledGround(name: String, options: Precision, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledGround")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    inline def CreateTiledGround(name: String, options: Updatable): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledGround")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    inline def CreateTiledGround(name: String, options: Updatable, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledGround")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
     inline def CreateTiledGround_=(
       x: js.Function3[
           /* name */ String, 
-          /* options */ Precision, 
+          /* options */ Updatable, 
           /* scene */ js.UndefOr[Nullable[Scene]], 
           Mesh
         ]
@@ -460,30 +448,30 @@ object meshesMeshBuilderMod {
     @js.native
     def CreateTorus: js.Function3[
         /* name */ String, 
-        /* options */ js.UndefOr[Tessellation], 
+        /* options */ js.UndefOr[Thickness], 
         /* scene */ js.UndefOr[Scene], 
         Mesh
       ] = js.native
     inline def CreateTorus(name: String): Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorus")(name.asInstanceOf[js.Any]).asInstanceOf[Mesh]
     inline def CreateTorus(name: String, options: Unit, scene: Scene): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorus")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
-    inline def CreateTorus(name: String, options: Tessellation): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorus")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
-    inline def CreateTorus(name: String, options: Tessellation, scene: Scene): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorus")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    inline def CreateTorus(name: String, options: Thickness): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorus")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    inline def CreateTorus(name: String, options: Thickness, scene: Scene): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorus")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
     
     @JSImport("babylonjs/Meshes/meshBuilder", "MeshBuilder.CreateTorusKnot")
     @js.native
-    def CreateTorusKnot: js.Function3[/* name */ String, /* options */ js.UndefOr[P], /* scene */ js.UndefOr[Scene], Mesh] = js.native
+    def CreateTorusKnot: js.Function3[/* name */ String, /* options */ js.UndefOr[Q], /* scene */ js.UndefOr[Scene], Mesh] = js.native
     inline def CreateTorusKnot(name: String): Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorusKnot")(name.asInstanceOf[js.Any]).asInstanceOf[Mesh]
     inline def CreateTorusKnot(name: String, options: Unit, scene: Scene): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorusKnot")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
-    inline def CreateTorusKnot(name: String, options: P): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorusKnot")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
-    inline def CreateTorusKnot(name: String, options: P, scene: Scene): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorusKnot")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    inline def CreateTorusKnot(name: String, options: Q): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorusKnot")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    inline def CreateTorusKnot(name: String, options: Q, scene: Scene): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorusKnot")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
     inline def CreateTorusKnot_=(
-      x: js.Function3[/* name */ String, /* options */ js.UndefOr[P], /* scene */ js.UndefOr[Scene], Mesh]
+      x: js.Function3[/* name */ String, /* options */ js.UndefOr[Q], /* scene */ js.UndefOr[Scene], Mesh]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreateTorusKnot")(x.asInstanceOf[js.Any])
     
     inline def CreateTorus_=(
       x: js.Function3[
           /* name */ String, 
-          /* options */ js.UndefOr[Tessellation], 
+          /* options */ js.UndefOr[Thickness], 
           /* scene */ js.UndefOr[Scene], 
           Mesh
         ]
@@ -546,16 +534,16 @@ object meshesMeshBuilderMod {
     @js.native
     def ExtrudeShapeCustom: js.Function3[
         /* name */ String, 
-        /* options */ CloseShape, 
+        /* options */ ClosePath, 
         /* scene */ js.UndefOr[Nullable[Scene]], 
         Mesh
       ] = js.native
-    inline def ExtrudeShapeCustom(name: String, options: CloseShape): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShapeCustom")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
-    inline def ExtrudeShapeCustom(name: String, options: CloseShape, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShapeCustom")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    inline def ExtrudeShapeCustom(name: String, options: ClosePath): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShapeCustom")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    inline def ExtrudeShapeCustom(name: String, options: ClosePath, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShapeCustom")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
     inline def ExtrudeShapeCustom_=(
       x: js.Function3[
           /* name */ String, 
-          /* options */ CloseShape, 
+          /* options */ ClosePath, 
           /* scene */ js.UndefOr[Nullable[Scene]], 
           Mesh
         ]

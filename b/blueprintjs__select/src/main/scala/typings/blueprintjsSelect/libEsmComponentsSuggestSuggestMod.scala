@@ -122,7 +122,7 @@ object libEsmComponentsSuggestSuggestMod {
     var openOnKeyDown: js.UndefOr[Boolean] = js.native
     
     /** Props to spread to `Popover`. Note that `content` cannot be changed. */
-    var popoverProps: js.UndefOr[PartialIPopoverProps & js.Object] = js.native
+    var popoverProps: js.UndefOr[PartialIPopoverProps] = js.native
     
     /**
       * Whether the active item should be reset to the first matching item _when

@@ -60,7 +60,7 @@ trait PickImplmaxSearchDepthPar
   
   var lastResort: js.UndefOr[Boolean | String] = js.undefined
   
-  var maxSearchDepth: Double & js.UndefOr[Double]
+  var maxSearchDepth: Double
   
   var metadata: js.UndefOr[MetadataSettings] = js.undefined
   
@@ -120,7 +120,7 @@ trait PickImplmaxSearchDepthPar
 }
 object PickImplmaxSearchDepthPar {
   
-  inline def apply(maxSearchDepth: Double & js.UndefOr[Double]): PickImplmaxSearchDepthPar = {
+  inline def apply(maxSearchDepth: Double): PickImplmaxSearchDepthPar = {
     val __obj = js.Dynamic.literal(maxSearchDepth = maxSearchDepth.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmaxSearchDepthPar]
   }
@@ -199,7 +199,7 @@ object PickImplmaxSearchDepthPar {
     
     inline def setLastResortUndefined: Self = StObject.set(x, "lastResort", js.undefined)
     
-    inline def setMaxSearchDepth(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "maxSearchDepth", value.asInstanceOf[js.Any])
+    inline def setMaxSearchDepth(value: Double): Self = StObject.set(x, "maxSearchDepth", value.asInstanceOf[js.Any])
     
     inline def setMetadata(value: MetadataSettings): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

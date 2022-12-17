@@ -8,9 +8,9 @@ import typings.reactSortableTree.anon.FlatData
 import typings.reactSortableTree.anon.GetNodeKey
 import typings.reactSortableTree.anon.GetNodeKeyIgnoreCollapsed
 import typings.reactSortableTree.anon.IgnoreCollapsed
-import typings.reactSortableTree.anon.Index
 import typings.reactSortableTree.anon.LowerSiblingsCounts
 import typings.reactSortableTree.anon.Matches
+import typings.reactSortableTree.anon.NewNode
 import typings.reactSortableTree.anon.ParentNode
 import typings.reactSortableTree.mod.FlatDataItem
 import typings.reactSortableTree.mod.FullTree
@@ -30,7 +30,7 @@ object utilsTreeDataUtilsMod {
   
   inline def addNodeUnderParent[T](data: FullTree[T] & AddAsFirstChild[T]): FullTree[T] & TreeIndex = ^.asInstanceOf[js.Dynamic].applyDynamic("addNodeUnderParent")(data.asInstanceOf[js.Any]).asInstanceOf[FullTree[T] & TreeIndex]
   
-  inline def changeNodeAtPath[T](data: FullTree[T] & TreePath & GetNodeKey[T]): js.Array[TreeItem[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("changeNodeAtPath")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[TreeItem[T]]]
+  inline def changeNodeAtPath[T](data: FullTree[T] & TreePath & NewNode[T]): js.Array[TreeItem[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("changeNodeAtPath")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[TreeItem[T]]]
   
   inline def find[T](data: FullTree[T] & ExpandAllMatchPaths[T]): Matches[T] & FullTree[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(data.asInstanceOf[js.Any]).asInstanceOf[Matches[T] & FullTree[T]]
   
@@ -47,7 +47,7 @@ object utilsTreeDataUtilsMod {
   
   inline def getVisibleNodeCount[T](data: FullTree[T]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getVisibleNodeCount")(data.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def getVisibleNodeInfoAtIndex[T](data: FullTree[T] & Index[T]): (TreeNode[T] & TreePath & LowerSiblingsCounts) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getVisibleNodeInfoAtIndex")(data.asInstanceOf[js.Any]).asInstanceOf[(TreeNode[T] & TreePath & LowerSiblingsCounts) | Null]
+  inline def getVisibleNodeInfoAtIndex[T](data: FullTree[T] & GetNodeKey[T]): (TreeNode[T] & TreePath & LowerSiblingsCounts) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getVisibleNodeInfoAtIndex")(data.asInstanceOf[js.Any]).asInstanceOf[(TreeNode[T] & TreePath & LowerSiblingsCounts) | Null]
   
   inline def insertNode[T](data: FullTree[T] & Depth[T]): FullTree[T] & TreeIndex & TreePath & ParentNode[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("insertNode")(data.asInstanceOf[js.Any]).asInstanceOf[FullTree[T] & TreeIndex & TreePath & ParentNode[T]]
   

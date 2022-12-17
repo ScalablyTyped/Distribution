@@ -56,7 +56,7 @@ trait ActionTogglePropertiestyp extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionBase.html#type)
     */
-  var `type`: (js.UndefOr[button | slider | toggle]) & toggle
+  var `type`: js.UndefOr[button | slider | toggle] = js.undefined
   
   /**
     * Indicates the value of whether the action is toggled on/off.
@@ -78,9 +78,8 @@ trait ActionTogglePropertiestyp extends StObject {
 }
 object ActionTogglePropertiestyp {
   
-  inline def apply(`type`: (js.UndefOr[button | slider | toggle]) & toggle): ActionTogglePropertiestyp = {
+  inline def apply(): ActionTogglePropertiestyp = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionTogglePropertiestyp]
   }
   
@@ -106,7 +105,9 @@ object ActionTogglePropertiestyp {
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setType(value: (js.UndefOr[button | slider | toggle]) & toggle): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: button | slider | toggle): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     inline def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

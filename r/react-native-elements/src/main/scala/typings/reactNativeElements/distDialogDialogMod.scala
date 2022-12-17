@@ -125,7 +125,7 @@ object distDialogDialogMod extends Shortcut {
     
     var backdropStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var children: js.UndefOr[ReactNode] & js.UndefOr[Any]
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var collapsable: js.UndefOr[Boolean] = js.undefined
     
@@ -267,8 +267,8 @@ object distDialogDialogMod extends Shortcut {
   }
   object DialogProps {
     
-    inline def apply(children: js.UndefOr[ReactNode] & js.UndefOr[Any], isVisible: Boolean): DialogProps = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], isVisible = isVisible.asInstanceOf[js.Any])
+    inline def apply(isVisible: Boolean): DialogProps = {
+      val __obj = js.Dynamic.literal(isVisible = isVisible.asInstanceOf[js.Any])
       __obj.asInstanceOf[DialogProps]
     }
     
@@ -344,7 +344,9 @@ object distDialogDialogMod extends Shortcut {
       
       inline def setBackdropStyleUndefined: Self = StObject.set(x, "backdropStyle", js.undefined)
       
-      inline def setChildren(value: js.UndefOr[ReactNode] & js.UndefOr[Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setCollapsable(value: Boolean): Self = StObject.set(x, "collapsable", value.asInstanceOf[js.Any])
       

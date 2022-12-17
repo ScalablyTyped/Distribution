@@ -8,13 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("@material/linear-progress", JSImport.Default)
-  @js.native
-  open class default ()
-    extends typings.materialLinearProgress.foundationMod.default {
-    def this(adapter: PartialMDCLinearProgressA) = this()
-  }
-  
   @JSImport("@material/linear-progress", "MDCLinearProgress")
   @js.native
   open class MDCLinearProgress protected ()

@@ -57,7 +57,7 @@ object BorderRadiusProps {
     
     inline def setBorderBottomLeftRadiusUndefined: Self = StObject.set(x, "borderBottomLeftRadius", js.undefined)
     
-    inline def setBorderBottomLeftRadiusVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderBottomLeftRadius", js.Array(value :_*))
+    inline def setBorderBottomLeftRadiusVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderBottomLeftRadius", js.Array(value*))
     
     inline def setBorderBottomRightRadius(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderBottomRightRadius", value.asInstanceOf[js.Any])
     
@@ -65,7 +65,7 @@ object BorderRadiusProps {
     
     inline def setBorderBottomRightRadiusUndefined: Self = StObject.set(x, "borderBottomRightRadius", js.undefined)
     
-    inline def setBorderBottomRightRadiusVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderBottomRightRadius", js.Array(value :_*))
+    inline def setBorderBottomRightRadiusVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderBottomRightRadius", js.Array(value*))
     
     inline def setBorderRadius(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     
@@ -73,7 +73,7 @@ object BorderRadiusProps {
     
     inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
     
-    inline def setBorderRadiusVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderRadius", js.Array(value :_*))
+    inline def setBorderRadiusVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderRadius", js.Array(value*))
     
     inline def setBorderTopLeftRadius(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderTopLeftRadius", value.asInstanceOf[js.Any])
     
@@ -81,7 +81,7 @@ object BorderRadiusProps {
     
     inline def setBorderTopLeftRadiusUndefined: Self = StObject.set(x, "borderTopLeftRadius", js.undefined)
     
-    inline def setBorderTopLeftRadiusVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderTopLeftRadius", js.Array(value :_*))
+    inline def setBorderTopLeftRadiusVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderTopLeftRadius", js.Array(value*))
     
     inline def setBorderTopRightRadius(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderTopRightRadius", value.asInstanceOf[js.Any])
     
@@ -89,6 +89,6 @@ object BorderRadiusProps {
     
     inline def setBorderTopRightRadiusUndefined: Self = StObject.set(x, "borderTopRightRadius", js.undefined)
     
-    inline def setBorderTopRightRadiusVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderTopRightRadius", js.Array(value :_*))
+    inline def setBorderTopRightRadiusVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderTopRightRadius", js.Array(value*))
   }
 }

@@ -13,43 +13,18 @@ object anon {
   
   trait Next extends StObject {
     
-    var next: js.UndefOr[Arrow] = js.undefined
-    
-    var prev: js.UndefOr[Arrow] = js.undefined
-  }
-  object Next {
-    
-    inline def apply(): Next = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Next]
-    }
-    
-    extension [Self <: Next](x: Self) {
-      
-      inline def setNext(value: Arrow): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
-      
-      inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
-      
-      inline def setPrev(value: Arrow): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
-      
-      inline def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
-    }
-  }
-  
-  trait Prev extends StObject {
-    
     var next: Selector | Null
     
     var prev: Selector | Null
   }
-  object Prev {
+  object Next {
     
-    inline def apply(): Prev = {
+    inline def apply(): Next = {
       val __obj = js.Dynamic.literal(next = null, prev = null)
-      __obj.asInstanceOf[Prev]
+      __obj.asInstanceOf[Next]
     }
     
-    extension [Self <: Prev](x: Self) {
+    extension [Self <: Next](x: Self) {
       
       inline def setNext(value: Selector): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
@@ -58,6 +33,31 @@ object anon {
       inline def setPrev(value: Selector): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
       
       inline def setPrevNull: Self = StObject.set(x, "prev", null)
+    }
+  }
+  
+  trait Prev extends StObject {
+    
+    var next: js.UndefOr[Arrow] = js.undefined
+    
+    var prev: js.UndefOr[Arrow] = js.undefined
+  }
+  object Prev {
+    
+    inline def apply(): Prev = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Prev]
+    }
+    
+    extension [Self <: Prev](x: Self) {
+      
+      inline def setNext(value: Arrow): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      
+      inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+      
+      inline def setPrev(value: Arrow): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+      
+      inline def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
     }
   }
   

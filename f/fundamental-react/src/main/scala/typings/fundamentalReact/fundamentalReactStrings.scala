@@ -29,10 +29,6 @@ object fundamentalReactStrings {
   inline def Breadcrumb: Breadcrumb = "Breadcrumb".asInstanceOf[Breadcrumb]
   
   @js.native
-  sealed trait BreadcrumbDotItem extends StObject
-  inline def BreadcrumbDotItem: BreadcrumbDotItem = "Breadcrumb.Item".asInstanceOf[BreadcrumbDotItem]
-  
-  @js.native
   sealed trait Button extends StObject
   inline def Button: Button = "Button".asInstanceOf[Button]
   
@@ -103,52 +99,12 @@ object fundamentalReactStrings {
   inline def List: List = "List".asInstanceOf[List]
   
   @js.native
-  sealed trait ListDotByline extends StObject
-  inline def ListDotByline: ListDotByline = "List.Byline".asInstanceOf[ListDotByline]
-  
-  @js.native
-  sealed trait ListDotFooter extends StObject
-  inline def ListDotFooter: ListDotFooter = "List.Footer".asInstanceOf[ListDotFooter]
-  
-  @js.native
-  sealed trait ListDotHeader extends StObject
-  inline def ListDotHeader: ListDotHeader = "List.Header".asInstanceOf[ListDotHeader]
-  
-  @js.native
-  sealed trait ListDotIcon extends StObject
-  inline def ListDotIcon: ListDotIcon = "List.Icon".asInstanceOf[ListDotIcon]
-  
-  @js.native
-  sealed trait ListDotItem extends StObject
-  inline def ListDotItem: ListDotItem = "List.Item".asInstanceOf[ListDotItem]
-  
-  @js.native
-  sealed trait ListDotSelection extends StObject
-  inline def ListDotSelection: ListDotSelection = "List.Selection".asInstanceOf[ListDotSelection]
-  
-  @js.native
-  sealed trait ListDotText extends StObject
-  inline def ListDotText: ListDotText = "List.Text".asInstanceOf[ListDotText]
-  
-  @js.native
   sealed trait LocalizationEditor extends StObject
   inline def LocalizationEditor: LocalizationEditor = "LocalizationEditor".asInstanceOf[LocalizationEditor]
   
   @js.native
   sealed trait Menu extends StObject
   inline def Menu: Menu = "Menu".asInstanceOf[Menu]
-  
-  @js.native
-  sealed trait MenuDotGroup extends StObject
-  inline def MenuDotGroup: MenuDotGroup = "Menu.Group".asInstanceOf[MenuDotGroup]
-  
-  @js.native
-  sealed trait MenuDotItem extends StObject
-  inline def MenuDotItem: MenuDotItem = "Menu.Item".asInstanceOf[MenuDotItem]
-  
-  @js.native
-  sealed trait MenuDotList extends StObject
-  inline def MenuDotList: MenuDotList = "Menu.List".asInstanceOf[MenuDotList]
   
   @js.native
   sealed trait MessageStrip extends StObject
@@ -207,18 +163,6 @@ object fundamentalReactStrings {
   @js.native
   sealed trait Tile extends StObject
   inline def Tile: Tile = "Tile".asInstanceOf[Tile]
-  
-  @js.native
-  sealed trait TileDotContent extends StObject
-  inline def TileDotContent: TileDotContent = "Tile.Content".asInstanceOf[TileDotContent]
-  
-  @js.native
-  sealed trait TileDotFooter extends StObject
-  inline def TileDotFooter: TileDotFooter = "Tile.Footer".asInstanceOf[TileDotFooter]
-  
-  @js.native
-  sealed trait TileDotHeader extends StObject
-  inline def TileDotHeader: TileDotHeader = "Tile.Header".asInstanceOf[TileDotHeader]
   
   @js.native
   sealed trait Time extends StObject

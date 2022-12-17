@@ -33,16 +33,9 @@ object PackageLockV2 {
   inline def apply(
     dependencies: NonNullable[
       /* import warning: importer.ImportType#apply Failed type conversion: @npmcli/arborist.@npmcli/arborist.PackageLockBase['dependencies'] */ js.Any
-    ],
-    packages: NonNullable[
-      js.UndefOr[
-        StringDictionary[
-          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LockDependency */ Any) & Workspaces
-        ]
-      ]
     ]
   ): PackageLockV2 = {
-    val __obj = js.Dynamic.literal(dependencies = dependencies.asInstanceOf[js.Any], lockfileVersion = 2, packages = packages.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dependencies = dependencies.asInstanceOf[js.Any], lockfileVersion = 2)
     __obj.asInstanceOf[PackageLockV2]
   }
   
@@ -65,5 +58,7 @@ object PackageLockV2 {
           ]
         ]
     ): Self = StObject.set(x, "packages", value.asInstanceOf[js.Any])
+    
+    inline def setPackagesUndefined: Self = StObject.set(x, "packages", js.undefined)
   }
 }

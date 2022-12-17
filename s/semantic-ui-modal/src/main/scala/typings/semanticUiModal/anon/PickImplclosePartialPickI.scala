@@ -12,13 +12,13 @@ trait PickImplclosePartialPickI
   
   var approve: js.UndefOr[String] = js.undefined
   
-  var close: String & js.UndefOr[String]
+  var close: String
   
   var deny: js.UndefOr[String] = js.undefined
 }
 object PickImplclosePartialPickI {
   
-  inline def apply(close: String & js.UndefOr[String]): PickImplclosePartialPickI = {
+  inline def apply(close: String): PickImplclosePartialPickI = {
     val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplclosePartialPickI]
   }
@@ -29,7 +29,7 @@ object PickImplclosePartialPickI {
     
     inline def setApproveUndefined: Self = StObject.set(x, "approve", js.undefined)
     
-    inline def setClose(value: String & js.UndefOr[String]): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
     inline def setDeny(value: String): Self = StObject.set(x, "deny", value.asInstanceOf[js.Any])
     

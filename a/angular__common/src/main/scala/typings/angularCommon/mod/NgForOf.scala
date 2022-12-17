@@ -1,9 +1,15 @@
 package typings.angularCommon.mod
 
+import typings.angularCommon.angularCommonBooleans.`true`
+import typings.angularCommon.angularCommonStrings.`[ngFor][ngForOf]`
 import typings.angularCore.mod.DoCheck
+import typings.angularCore.mod.IterableDiffers
 import typings.angularCore.mod.NgIterable
 import typings.angularCore.mod.TemplateRef
 import typings.angularCore.mod.TrackByFunction
+import typings.angularCore.mod.ViewContainerRef
+import typings.angularCore.mod.ɵɵDirectiveDeclaration
+import typings.angularCore.mod.ɵɵFactoryDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -106,10 +112,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @ngModule CommonModule
   * @publicApi
   */
+@JSImport("@angular/common", "NgForOf")
 @js.native
-trait NgForOf[T, U /* <: NgIterable[T] */]
+open class NgForOf[T, U /* <: NgIterable[T] */] protected ()
   extends StObject
      with DoCheck {
+  def this(
+    _viewContainer: ViewContainerRef,
+    _template: TemplateRef[NgForOfContext[T, U]],
+    _differs: IterableDiffers
+  ) = this()
   
   /* private */ var _applyChanges: Any = js.native
   
@@ -126,6 +138,16 @@ trait NgForOf[T, U /* <: NgIterable[T] */]
   /* private */ var _trackByFn: Any = js.native
   
   /* private */ var _viewContainer: Any = js.native
+  
+  /**
+    * A callback method that performs change-detection, invoked
+    * after the default change-detector runs.
+    * See `KeyValueDiffers` and `IterableDiffers` for implementing
+    * custom change checking for collections.
+    *
+    */
+  /* CompleteClass */
+  override def ngDoCheck(): Unit = js.native
   
   /**
     * The value of the iterable expression, which can be used as a
@@ -159,4 +181,51 @@ trait NgForOf[T, U /* <: NgIterable[T] */]
     * @see `TrackByFunction`
     */
   def ngForTrackBy_=(fn: TrackByFunction[T]): Unit = js.native
+}
+object NgForOf {
+  
+  @JSImport("@angular/common", "NgForOf")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * Asserts the correct type of the context for the template that `NgForOf` will render.
+    *
+    * The presence of this method is a signal to the Ivy template type-check compiler that the
+    * `NgForOf` structural directive renders its template with a specific context type.
+    */
+  /* static member */
+  inline def ngTemplateContextGuard[T, U /* <: NgIterable[T] */](dir: NgForOf[T, U], ctx: Any): /* is @angular/common.@angular/common.NgForOfContext<T, U> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ngTemplateContextGuard")(dir.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[/* is @angular/common.@angular/common.NgForOfContext<T, U> */ Boolean]
+  
+  /* static member */
+  @JSImport("@angular/common", "NgForOf.\u0275dir")
+  @js.native
+  def ɵdir: ɵɵDirectiveDeclaration[
+    NgForOf[Any, Any], 
+    `[ngFor][ngForOf]`, 
+    scala.Nothing, 
+    typings.angularCommon.anon.NgForOf, 
+    js.Object, 
+    scala.Nothing, 
+    scala.Nothing, 
+    `true`
+  ] = js.native
+  inline def ɵdir_=(
+    x: ɵɵDirectiveDeclaration[
+      NgForOf[Any, Any], 
+      `[ngFor][ngForOf]`, 
+      scala.Nothing, 
+      typings.angularCommon.anon.NgForOf, 
+      js.Object, 
+      scala.Nothing, 
+      scala.Nothing, 
+      `true`
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("@angular/common", "NgForOf.\u0275fac")
+  @js.native
+  def ɵfac: ɵɵFactoryDeclaration[NgForOf[Any, Any], scala.Nothing] = js.native
+  inline def ɵfac_=(x: ɵɵFactoryDeclaration[NgForOf[Any, Any], scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
 }

@@ -10,7 +10,7 @@ trait PickImplfieldPartialPickI
   extends StObject
      with Param {
   
-  var field: String & js.UndefOr[String]
+  var field: String
   
   var group: js.UndefOr[String] = js.undefined
   
@@ -24,14 +24,14 @@ trait PickImplfieldPartialPickI
 }
 object PickImplfieldPartialPickI {
   
-  inline def apply(field: String & js.UndefOr[String]): PickImplfieldPartialPickI = {
+  inline def apply(field: String): PickImplfieldPartialPickI = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplfieldPartialPickI]
   }
   
   extension [Self <: PickImplfieldPartialPickI](x: Self) {
     
-    inline def setField(value: String & js.UndefOr[String]): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     

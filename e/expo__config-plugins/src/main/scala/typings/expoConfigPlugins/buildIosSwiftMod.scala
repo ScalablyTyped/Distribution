@@ -1,8 +1,8 @@
 package typings.expoConfigPlugins
 
 import typings.expoConfigPlugins.anon.BridgingHeader
-import typings.expoConfigPlugins.anon.BridgingHeaderProject
-import typings.expoConfigPlugins.anon.Project
+import typings.expoConfigPlugins.anon.ProjectAny
+import typings.expoConfigPlugins.anon.ProjectName
 import typings.expoConfigPlugins.anon.ProjectProjectRoot
 import typings.expoConfigPlugins.buildPluginDottypesMod.ConfigPlugin
 import org.scalablytyped.runtime.StObject
@@ -15,13 +15,13 @@ object buildIosSwiftMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createBridgingHeaderFile(param0: BridgingHeader): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createBridgingHeaderFile")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def createBridgingHeaderFile(param0: ProjectName): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createBridgingHeaderFile")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def ensureSwiftBridgingHeaderSetup(param0: ProjectProjectRoot): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureSwiftBridgingHeaderSetup")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def getDesignatedSwiftBridgingHeaderFileReference(param0: Project): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDesignatedSwiftBridgingHeaderFileReference")(param0.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def getDesignatedSwiftBridgingHeaderFileReference(param0: ProjectAny): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDesignatedSwiftBridgingHeaderFileReference")(param0.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  inline def linkBridgingHeaderFile(param0: BridgingHeaderProject): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("linkBridgingHeaderFile")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def linkBridgingHeaderFile(param0: BridgingHeader): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("linkBridgingHeaderFile")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("@expo/config-plugins/build/ios/Swift", "withNoopSwiftFile")
   @js.native

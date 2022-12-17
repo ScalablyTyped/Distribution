@@ -1,5 +1,6 @@
 package typings.licenseWebpackPlugin
 
+import typings.licenseWebpackPlugin.distConstructedStatsMod.ConstructedStats
 import typings.licenseWebpackPlugin.distWebpackCompilationMod.WebpackCompilation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -7,32 +8,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distLoggerMod {
   
-  trait Logger extends StObject {
+  @JSImport("license-webpack-plugin/dist/Logger", "Logger")
+  @js.native
+  open class Logger protected () extends StObject {
+    def this(stats: ConstructedStats) = this()
     
-    def error(compilation: WebpackCompilation, message: String): Unit
+    def error(compilation: WebpackCompilation, message: String): Unit = js.native
     
-    /* private */ var stats: Any
+    /* private */ var stats: Any = js.native
     
-    def warn(compilation: WebpackCompilation, message: String): Unit
+    def warn(compilation: WebpackCompilation, message: String): Unit = js.native
   }
   object Logger {
     
-    inline def apply(
-      error: (WebpackCompilation, String) => Unit,
-      stats: Any,
-      warn: (WebpackCompilation, String) => Unit
-    ): Logger = {
-      val __obj = js.Dynamic.literal(error = js.Any.fromFunction2(error), stats = stats.asInstanceOf[js.Any], warn = js.Any.fromFunction2(warn))
-      __obj.asInstanceOf[Logger]
-    }
+    @JSImport("license-webpack-plugin/dist/Logger", "Logger")
+    @js.native
+    val ^ : js.Any = js.native
     
-    extension [Self <: Logger](x: Self) {
-      
-      inline def setError(value: (WebpackCompilation, String) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
-      
-      inline def setStats(value: Any): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
-      
-      inline def setWarn(value: (WebpackCompilation, String) => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction2(value))
-    }
+    /* static member */
+    @JSImport("license-webpack-plugin/dist/Logger", "Logger.LOG_PREFIX")
+    @js.native
+    def LOG_PREFIX: Any = js.native
+    inline def LOG_PREFIX_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOG_PREFIX")(x.asInstanceOf[js.Any])
   }
 }

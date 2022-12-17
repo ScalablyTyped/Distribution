@@ -74,7 +74,7 @@ trait PickImplonPartialPickImpl
   
   var offset: js.UndefOr[Double] = js.undefined
   
-  var on: (focus | click | hover | manual) & (js.UndefOr[focus | click | hover | manual])
+  var on: focus | click | hover | manual
   
   var onCreate: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]] = js.undefined
   
@@ -120,7 +120,7 @@ trait PickImplonPartialPickImpl
 }
 object PickImplonPartialPickImpl {
   
-  inline def apply(on: (focus | click | hover | manual) & (js.UndefOr[focus | click | hover | manual])): PickImplonPartialPickImpl = {
+  inline def apply(on: focus | click | hover | manual): PickImplonPartialPickImpl = {
     val __obj = js.Dynamic.literal(on = on.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonPartialPickImpl]
   }
@@ -227,7 +227,7 @@ object PickImplonPartialPickImpl {
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    inline def setOn(value: (focus | click | hover | manual) & (js.UndefOr[focus | click | hover | manual])): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+    inline def setOn(value: focus | click | hover | manual): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     
     inline def setOnCreate(value: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]): Self = StObject.set(x, "onCreate", value.asInstanceOf[js.Any])
     

@@ -14,15 +14,20 @@ object distSrcModulesUiCoreTooltipTypesMod {
   @js.native
   object TooltipPositionPlacement extends StObject {
     
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[TooltipPositionPlacement & String] = js.native
+    
     @js.native
     sealed trait BOTTOM
       extends StObject
          with TooltipPositionPlacement
+    /* "bottom" */ val BOTTOM: typings.playable.distSrcModulesUiCoreTooltipTypesMod.TooltipPositionPlacement.BOTTOM & String = js.native
     
     @js.native
     sealed trait TOP
       extends StObject
          with TooltipPositionPlacement
+    /* "top" */ val TOP: typings.playable.distSrcModulesUiCoreTooltipTypesMod.TooltipPositionPlacement.TOP & String = js.native
   }
   
   trait ITooltip extends StObject {

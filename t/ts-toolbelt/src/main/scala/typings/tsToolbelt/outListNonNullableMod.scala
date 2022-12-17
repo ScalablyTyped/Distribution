@@ -16,7 +16,7 @@ object outListNonNullableMod {
   
   type NonNullableDeep[O, K /* <: Key */] = _NonNullableDeep[NonNullableFlat[O, K]]
   
-  type NonNullableFlat[O, K /* <: Key */] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof O ]: P extends K? ts-toolbelt.ts-toolbelt/out/Union/NonNullable.NonNullable<O[P]> : O[P]} */ js.Any) & js.Object
+  type NonNullableFlat[O, K /* <: Key */] = /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof O ]: P extends K? ts-toolbelt.ts-toolbelt/out/Union/NonNullable.NonNullable<O[P]> : O[P]} */ js.Any
   
   type NonNullablePart[O /* <: js.Object */, K /* <: Key */, depth /* <: Depth */] = /* import warning: importer.ImportType#apply Failed type conversion: ts-toolbelt.anon.Flat<O, K>[depth] */ js.Any
   

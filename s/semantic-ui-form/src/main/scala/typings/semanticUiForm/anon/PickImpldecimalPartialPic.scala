@@ -18,7 +18,7 @@ trait PickImpldecimalPartialPic
   
   var creditCard: js.UndefOr[String] = js.undefined
   
-  var decimal: String & js.UndefOr[String]
+  var decimal: String
   
   var different: js.UndefOr[String] = js.undefined
   
@@ -64,7 +64,7 @@ trait PickImpldecimalPartialPic
 }
 object PickImpldecimalPartialPic {
   
-  inline def apply(decimal: String & js.UndefOr[String]): PickImpldecimalPartialPic = {
+  inline def apply(decimal: String): PickImpldecimalPartialPic = {
     val __obj = js.Dynamic.literal(decimal = decimal.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldecimalPartialPic]
   }
@@ -87,7 +87,7 @@ object PickImpldecimalPartialPic {
     
     inline def setCreditCardUndefined: Self = StObject.set(x, "creditCard", js.undefined)
     
-    inline def setDecimal(value: String & js.UndefOr[String]): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
+    inline def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
     
     inline def setDifferent(value: String): Self = StObject.set(x, "different", value.asInstanceOf[js.Any])
     

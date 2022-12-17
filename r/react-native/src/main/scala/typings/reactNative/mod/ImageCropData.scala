@@ -1,6 +1,6 @@
 package typings.reactNative.mod
 
-import typings.reactNative.anon.Width
+import typings.reactNative.anon.Height
 import typings.reactNative.anon.X
 import typings.reactNative.reactNativeStrings.contain
 import typings.reactNative.reactNativeStrings.cover
@@ -14,7 +14,7 @@ trait ImageCropData extends StObject {
   /**
     * (Optional) size to scale the cropped image to.
     */
-  var displaySize: js.UndefOr[Width] = js.undefined
+  var displaySize: js.UndefOr[Height] = js.undefined
   
   /**
     * The top-left corner of the cropped image, specified in the original
@@ -32,18 +32,18 @@ trait ImageCropData extends StObject {
     * The size (dimensions) of the cropped image, specified in the original
     * image's coordinate space.
     */
-  var size: Width
+  var size: Height
 }
 object ImageCropData {
   
-  inline def apply(offset: X, size: Width): ImageCropData = {
+  inline def apply(offset: X, size: Height): ImageCropData = {
     val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageCropData]
   }
   
   extension [Self <: ImageCropData](x: Self) {
     
-    inline def setDisplaySize(value: Width): Self = StObject.set(x, "displaySize", value.asInstanceOf[js.Any])
+    inline def setDisplaySize(value: Height): Self = StObject.set(x, "displaySize", value.asInstanceOf[js.Any])
     
     inline def setDisplaySizeUndefined: Self = StObject.set(x, "displaySize", js.undefined)
     
@@ -53,6 +53,6 @@ object ImageCropData {
     
     inline def setResizeModeUndefined: Self = StObject.set(x, "resizeMode", js.undefined)
     
-    inline def setSize(value: Width): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

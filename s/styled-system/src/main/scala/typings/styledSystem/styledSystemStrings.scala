@@ -215,10 +215,6 @@ object styledSystemStrings {
   inline def MozColumnFill: MozColumnFill = "MozColumnFill".asInstanceOf[MozColumnFill]
   
   @js.native
-  sealed trait MozColumnGap extends StObject
-  inline def MozColumnGap: MozColumnGap = "MozColumnGap".asInstanceOf[MozColumnGap]
-  
-  @js.native
   sealed trait MozColumnRule extends StObject
   inline def MozColumnRule: MozColumnRule = "MozColumnRule".asInstanceOf[MozColumnRule]
   
@@ -515,14 +511,6 @@ object styledSystemStrings {
   inline def OTransitionTimingFunction: OTransitionTimingFunction = "OTransitionTimingFunction".asInstanceOf[OTransitionTimingFunction]
   
   @js.native
-  sealed trait ResponsiveValue extends StObject
-  inline def ResponsiveValue: ResponsiveValue = "ResponsiveValue".asInstanceOf[ResponsiveValue]
-  
-  @js.native
-  sealed trait VariantArgs extends StObject
-  inline def VariantArgs: VariantArgs = "VariantArgs".asInstanceOf[VariantArgs]
-  
-  @js.native
   sealed trait WebkitAlignContent extends StObject
   inline def WebkitAlignContent: WebkitAlignContent = "WebkitAlignContent".asInstanceOf[WebkitAlignContent]
   
@@ -699,10 +687,6 @@ object styledSystemStrings {
   inline def WebkitColumnFill: WebkitColumnFill = "WebkitColumnFill".asInstanceOf[WebkitColumnFill]
   
   @js.native
-  sealed trait WebkitColumnGap extends StObject
-  inline def WebkitColumnGap: WebkitColumnGap = "WebkitColumnGap".asInstanceOf[WebkitColumnGap]
-  
-  @js.native
   sealed trait WebkitColumnRule extends StObject
   inline def WebkitColumnRule: WebkitColumnRule = "WebkitColumnRule".asInstanceOf[WebkitColumnRule]
   
@@ -779,8 +763,16 @@ object styledSystemStrings {
   inline def WebkitFontVariantLigatures: WebkitFontVariantLigatures = "WebkitFontVariantLigatures".asInstanceOf[WebkitFontVariantLigatures]
   
   @js.native
+  sealed trait WebkitHyphenateCharacter extends StObject
+  inline def WebkitHyphenateCharacter: WebkitHyphenateCharacter = "WebkitHyphenateCharacter".asInstanceOf[WebkitHyphenateCharacter]
+  
+  @js.native
   sealed trait WebkitHyphens extends StObject
   inline def WebkitHyphens: WebkitHyphens = "WebkitHyphens".asInstanceOf[WebkitHyphens]
+  
+  @js.native
+  sealed trait WebkitInitialLetter extends StObject
+  inline def WebkitInitialLetter: WebkitInitialLetter = "WebkitInitialLetter".asInstanceOf[WebkitInitialLetter]
   
   @js.native
   sealed trait WebkitJustifyContent extends StObject
@@ -809,6 +801,30 @@ object styledSystemStrings {
   @js.native
   sealed trait WebkitMaskAttachment extends StObject
   inline def WebkitMaskAttachment: WebkitMaskAttachment = "WebkitMaskAttachment".asInstanceOf[WebkitMaskAttachment]
+  
+  @js.native
+  sealed trait WebkitMaskBoxImage extends StObject
+  inline def WebkitMaskBoxImage: WebkitMaskBoxImage = "WebkitMaskBoxImage".asInstanceOf[WebkitMaskBoxImage]
+  
+  @js.native
+  sealed trait WebkitMaskBoxImageOutset extends StObject
+  inline def WebkitMaskBoxImageOutset: WebkitMaskBoxImageOutset = "WebkitMaskBoxImageOutset".asInstanceOf[WebkitMaskBoxImageOutset]
+  
+  @js.native
+  sealed trait WebkitMaskBoxImageRepeat extends StObject
+  inline def WebkitMaskBoxImageRepeat: WebkitMaskBoxImageRepeat = "WebkitMaskBoxImageRepeat".asInstanceOf[WebkitMaskBoxImageRepeat]
+  
+  @js.native
+  sealed trait WebkitMaskBoxImageSlice extends StObject
+  inline def WebkitMaskBoxImageSlice: WebkitMaskBoxImageSlice = "WebkitMaskBoxImageSlice".asInstanceOf[WebkitMaskBoxImageSlice]
+  
+  @js.native
+  sealed trait WebkitMaskBoxImageSource extends StObject
+  inline def WebkitMaskBoxImageSource: WebkitMaskBoxImageSource = "WebkitMaskBoxImageSource".asInstanceOf[WebkitMaskBoxImageSource]
+  
+  @js.native
+  sealed trait WebkitMaskBoxImageWidth extends StObject
+  inline def WebkitMaskBoxImageWidth: WebkitMaskBoxImageWidth = "WebkitMaskBoxImageWidth".asInstanceOf[WebkitMaskBoxImageWidth]
   
   @js.native
   sealed trait WebkitMaskClip extends StObject
@@ -1023,6 +1039,10 @@ object styledSystemStrings {
   inline def WebkitWritingMode: WebkitWritingMode = "WebkitWritingMode".asInstanceOf[WebkitWritingMode]
   
   @js.native
+  sealed trait accentColor extends StObject
+  inline def accentColor: accentColor = "accentColor".asInstanceOf[accentColor]
+  
+  @js.native
   sealed trait alignContent extends StObject
   inline def alignContent: alignContent = "alignContent".asInstanceOf[alignContent]
   
@@ -1051,6 +1071,10 @@ object styledSystemStrings {
   inline def animation: animation = "animation".asInstanceOf[animation]
   
   @js.native
+  sealed trait animationComposition extends StObject
+  inline def animationComposition: animationComposition = "animationComposition".asInstanceOf[animationComposition]
+  
+  @js.native
   sealed trait animationDelay extends StObject
   inline def animationDelay: animationDelay = "animationDelay".asInstanceOf[animationDelay]
   
@@ -1077,6 +1101,10 @@ object styledSystemStrings {
   @js.native
   sealed trait animationPlayState extends StObject
   inline def animationPlayState: animationPlayState = "animationPlayState".asInstanceOf[animationPlayState]
+  
+  @js.native
+  sealed trait animationTimeline extends StObject
+  inline def animationTimeline: animationTimeline = "animationTimeline".asInstanceOf[animationTimeline]
   
   @js.native
   sealed trait animationTimingFunction extends StObject
@@ -1511,6 +1539,10 @@ object styledSystemStrings {
   inline def colorRendering: colorRendering = "colorRendering".asInstanceOf[colorRendering]
   
   @js.native
+  sealed trait colorScheme extends StObject
+  inline def colorScheme: colorScheme = "colorScheme".asInstanceOf[colorScheme]
+  
+  @js.native
   sealed trait colors extends StObject
   inline def colors: colors = "colors".asInstanceOf[colors]
   
@@ -1561,6 +1593,10 @@ object styledSystemStrings {
   @js.native
   sealed trait content extends StObject
   inline def content: content = "content".asInstanceOf[content]
+  
+  @js.native
+  sealed trait contentVisibility extends StObject
+  inline def contentVisibility: contentVisibility = "contentVisibility".asInstanceOf[contentVisibility]
   
   @js.native
   sealed trait counterIncrement extends StObject
@@ -1743,6 +1779,10 @@ object styledSystemStrings {
   inline def fontWeights: fontWeights = "fontWeights".asInstanceOf[fontWeights]
   
   @js.native
+  sealed trait forcedColorAdjust extends StObject
+  inline def forcedColorAdjust: forcedColorAdjust = "forcedColorAdjust".asInstanceOf[forcedColorAdjust]
+  
+  @js.native
   sealed trait gap extends StObject
   inline def gap: gap = "gap".asInstanceOf[gap]
   
@@ -1831,6 +1871,10 @@ object styledSystemStrings {
   inline def height: height = "height".asInstanceOf[height]
   
   @js.native
+  sealed trait hyphenateCharacter extends StObject
+  inline def hyphenateCharacter: hyphenateCharacter = "hyphenateCharacter".asInstanceOf[hyphenateCharacter]
+  
+  @js.native
   sealed trait hyphens extends StObject
   inline def hyphens: hyphens = "hyphens".asInstanceOf[hyphens]
   
@@ -1857,6 +1901,10 @@ object styledSystemStrings {
   @js.native
   sealed trait inlineSize extends StObject
   inline def inlineSize: inlineSize = "inlineSize".asInstanceOf[inlineSize]
+  
+  @js.native
+  sealed trait inputSecurity extends StObject
+  inline def inputSecurity: inputSecurity = "inputSecurity".asInstanceOf[inputSecurity]
   
   @js.native
   sealed trait inset extends StObject
@@ -2087,8 +2135,12 @@ object styledSystemStrings {
   inline def maskType: maskType = "maskType".asInstanceOf[maskType]
   
   @js.native
-  sealed trait masonryAutoFlow extends StObject
-  inline def masonryAutoFlow: masonryAutoFlow = "masonryAutoFlow".asInstanceOf[masonryAutoFlow]
+  sealed trait mathDepth extends StObject
+  inline def mathDepth: mathDepth = "mathDepth".asInstanceOf[mathDepth]
+  
+  @js.native
+  sealed trait mathShift extends StObject
+  inline def mathShift: mathShift = "mathShift".asInstanceOf[mathShift]
   
   @js.native
   sealed trait mathStyle extends StObject
@@ -2153,10 +2205,6 @@ object styledSystemStrings {
   @js.native
   sealed trait msAccelerator extends StObject
   inline def msAccelerator: msAccelerator = "msAccelerator".asInstanceOf[msAccelerator]
-  
-  @js.native
-  sealed trait msAlignSelf extends StObject
-  inline def msAlignSelf: msAlignSelf = "msAlignSelf".asInstanceOf[msAlignSelf]
   
   @js.native
   sealed trait msBlockProgression extends StObject
@@ -2253,10 +2301,6 @@ object styledSystemStrings {
   @js.native
   sealed trait msImeMode extends StObject
   inline def msImeMode: msImeMode = "msImeMode".asInstanceOf[msImeMode]
-  
-  @js.native
-  sealed trait msJustifySelf extends StObject
-  inline def msJustifySelf: msJustifySelf = "msJustifySelf".asInstanceOf[msJustifySelf]
   
   @js.native
   sealed trait msLineBreak extends StObject
@@ -2539,6 +2583,10 @@ object styledSystemStrings {
   inline def overflowClipBox: overflowClipBox = "overflowClipBox".asInstanceOf[overflowClipBox]
   
   @js.native
+  sealed trait overflowClipMargin extends StObject
+  inline def overflowClipMargin: overflowClipMargin = "overflowClipMargin".asInstanceOf[overflowClipMargin]
+  
+  @js.native
   sealed trait overflowInline extends StObject
   inline def overflowInline: overflowInline = "overflowInline".asInstanceOf[overflowInline]
   
@@ -2661,6 +2709,10 @@ object styledSystemStrings {
   @js.native
   sealed trait position extends StObject
   inline def position: position = "position".asInstanceOf[position]
+  
+  @js.native
+  sealed trait printColorAdjust extends StObject
+  inline def printColorAdjust: printColorAdjust = "printColorAdjust".asInstanceOf[printColorAdjust]
   
   @js.native
   sealed trait quotes extends StObject
@@ -2859,10 +2911,6 @@ object styledSystemStrings {
   inline def scrollbarGutter: scrollbarGutter = "scrollbarGutter".asInstanceOf[scrollbarGutter]
   
   @js.native
-  sealed trait scrollbarTrackColor extends StObject
-  inline def scrollbarTrackColor: scrollbarTrackColor = "scrollbarTrackColor".asInstanceOf[scrollbarTrackColor]
-  
-  @js.native
   sealed trait scrollbarWidth extends StObject
   inline def scrollbarWidth: scrollbarWidth = "scrollbarWidth".asInstanceOf[scrollbarWidth]
   
@@ -2947,10 +2995,6 @@ object styledSystemStrings {
   inline def textAnchor: textAnchor = "textAnchor".asInstanceOf[textAnchor]
   
   @js.native
-  sealed trait textCombineHorizontal extends StObject
-  inline def textCombineHorizontal: textCombineHorizontal = "textCombineHorizontal".asInstanceOf[textCombineHorizontal]
-  
-  @js.native
   sealed trait textCombineUpright extends StObject
   inline def textCombineUpright: textCombineUpright = "textCombineUpright".asInstanceOf[textCombineUpright]
   
@@ -2981,10 +3025,6 @@ object styledSystemStrings {
   @js.native
   sealed trait textDecorationThickness extends StObject
   inline def textDecorationThickness: textDecorationThickness = "textDecorationThickness".asInstanceOf[textDecorationThickness]
-  
-  @js.native
-  sealed trait textDecorationWidth extends StObject
-  inline def textDecorationWidth: textDecorationWidth = "textDecorationWidth".asInstanceOf[textDecorationWidth]
   
   @js.native
   sealed trait textEmphasis extends StObject

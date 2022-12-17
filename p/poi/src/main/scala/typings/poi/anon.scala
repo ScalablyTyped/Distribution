@@ -1,8 +1,8 @@
 package typings.poi
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.htmlWebpackPlugin.anon.BodyTagsHeadTags
-import typings.htmlWebpackPlugin.anon.Favicon
+import typings.htmlWebpackPlugin.anon.BodyTags
+import typings.htmlWebpackPlugin.anon.Css
 import typings.htmlWebpackPlugin.mod.MinifyOptions
 import typings.htmlWebpackPlugin.mod.ProcessedOptions
 import typings.poi.poiBooleans.`false`
@@ -47,7 +47,7 @@ object anon {
     
     var cache: js.UndefOr[Boolean] = js.undefined
     
-    var chunks: (js.UndefOr[all | js.Array[String]]) & js.UndefOr[js.Array[String]]
+    var chunks: js.UndefOr[all | js.Array[String]] = js.undefined
     
     var chunksSortMode: js.UndefOr[
         auto | manual | (js.Function2[/* entryNameA */ String, /* entryNameB */ String, Double])
@@ -86,8 +86,8 @@ object anon {
     var templateParameters: js.UndefOr[
         `false` | (js.Function4[
           /* compilation */ Any, 
-          /* assets */ Favicon, 
-          /* assetTags */ BodyTagsHeadTags, 
+          /* assets */ Css, 
+          /* assetTags */ BodyTags, 
           /* options */ ProcessedOptions, 
           StringDictionary[Any] | js.Promise[StringDictionary[Any]]
         ]) | StringDictionary[Any]
@@ -99,8 +99,8 @@ object anon {
   }
   object PartialOptionsentrystring {
     
-    inline def apply(chunks: (js.UndefOr[all | js.Array[String]]) & js.UndefOr[js.Array[String]], entry: String): PartialOptionsentrystring = {
-      val __obj = js.Dynamic.literal(chunks = chunks.asInstanceOf[js.Any], entry = entry.asInstanceOf[js.Any])
+    inline def apply(entry: String): PartialOptionsentrystring = {
+      val __obj = js.Dynamic.literal(entry = entry.asInstanceOf[js.Any])
       __obj.asInstanceOf[PartialOptionsentrystring]
     }
     
@@ -110,13 +110,17 @@ object anon {
       
       inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      inline def setChunks(value: (js.UndefOr[all | js.Array[String]]) & js.UndefOr[js.Array[String]]): Self = StObject.set(x, "chunks", value.asInstanceOf[js.Any])
+      inline def setChunks(value: all | js.Array[String]): Self = StObject.set(x, "chunks", value.asInstanceOf[js.Any])
       
       inline def setChunksSortMode(value: auto | manual | (js.Function2[/* entryNameA */ String, /* entryNameB */ String, Double])): Self = StObject.set(x, "chunksSortMode", value.asInstanceOf[js.Any])
       
       inline def setChunksSortModeFunction2(value: (/* entryNameA */ String, /* entryNameB */ String) => Double): Self = StObject.set(x, "chunksSortMode", js.Any.fromFunction2(value))
       
       inline def setChunksSortModeUndefined: Self = StObject.set(x, "chunksSortMode", js.undefined)
+      
+      inline def setChunksUndefined: Self = StObject.set(x, "chunks", js.undefined)
+      
+      inline def setChunksVarargs(value: String*): Self = StObject.set(x, "chunks", js.Array(value*))
       
       inline def setEntry(value: String): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
       
@@ -177,15 +181,15 @@ object anon {
       inline def setTemplateParameters(
         value: `false` | (js.Function4[
               /* compilation */ Any, 
-              /* assets */ Favicon, 
-              /* assetTags */ BodyTagsHeadTags, 
+              /* assets */ Css, 
+              /* assetTags */ BodyTags, 
               /* options */ ProcessedOptions, 
               StringDictionary[Any] | js.Promise[StringDictionary[Any]]
             ]) | StringDictionary[Any]
       ): Self = StObject.set(x, "templateParameters", value.asInstanceOf[js.Any])
       
       inline def setTemplateParametersFunction4(
-        value: (/* compilation */ Any, /* assets */ Favicon, /* assetTags */ BodyTagsHeadTags, /* options */ ProcessedOptions) => StringDictionary[Any] | js.Promise[StringDictionary[Any]]
+        value: (/* compilation */ Any, /* assets */ Css, /* assetTags */ BodyTags, /* options */ ProcessedOptions) => StringDictionary[Any] | js.Promise[StringDictionary[Any]]
       ): Self = StObject.set(x, "templateParameters", js.Any.fromFunction4(value))
       
       inline def setTemplateParametersUndefined: Self = StObject.set(x, "templateParameters", js.undefined)

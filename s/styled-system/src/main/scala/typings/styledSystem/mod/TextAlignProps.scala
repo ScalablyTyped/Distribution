@@ -1,5 +1,6 @@
 package typings.styledSystem.mod
 
+import typings.csstype.mod.Property.TextAlign
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,12 +12,7 @@ trait TextAlignProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StOb
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/text-align)
     */
-  var textAlign: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextAlign */ js.Any, 
-      ThemeType
-    ]
-  ] = js.undefined
+  var textAlign: js.UndefOr[ResponsiveValue[TextAlign, ThemeType]] = js.undefined
 }
 object TextAlignProps {
   
@@ -27,19 +23,12 @@ object TextAlignProps {
   
   extension [Self <: TextAlignProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & TextAlignProps[ThemeType]) {
     
-    inline def setTextAlign(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextAlign */ js.Any, 
-          ThemeType
-        ]
-    ): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+    inline def setTextAlign(value: ResponsiveValue[TextAlign, ThemeType]): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
     
     inline def setTextAlignNull: Self = StObject.set(x, "textAlign", null)
     
     inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
     
-    inline def setTextAlignVarargs(
-      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextAlign */ js.Any) | Null)*
-    ): Self = StObject.set(x, "textAlign", js.Array(value :_*))
+    inline def setTextAlignVarargs(value: (TextAlign | Null)*): Self = StObject.set(x, "textAlign", js.Array(value*))
   }
 }

@@ -16,11 +16,11 @@ trait PickImpltriggerPartialPic
   
   var title: js.UndefOr[String] = js.undefined
   
-  var trigger: String & js.UndefOr[String]
+  var trigger: String
 }
 object PickImpltriggerPartialPic {
   
-  inline def apply(trigger: String & js.UndefOr[String]): PickImpltriggerPartialPic = {
+  inline def apply(trigger: String): PickImpltriggerPartialPic = {
     val __obj = js.Dynamic.literal(trigger = trigger.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpltriggerPartialPic]
   }
@@ -39,6 +39,6 @@ object PickImpltriggerPartialPic {
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setTrigger(value: String & js.UndefOr[String]): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+    inline def setTrigger(value: String): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
   }
 }

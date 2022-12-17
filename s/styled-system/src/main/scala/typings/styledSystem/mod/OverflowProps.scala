@@ -1,5 +1,8 @@
 package typings.styledSystem.mod
 
+import typings.csstype.mod.Property.Overflow
+import typings.csstype.mod.Property.OverflowX
+import typings.csstype.mod.Property.OverflowY
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,12 +15,7 @@ trait OverflowProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObj
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow)
     */
-  var overflow: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any, 
-      ThemeType
-    ]
-  ] = js.undefined
+  var overflow: js.UndefOr[ResponsiveValue[Overflow, ThemeType]] = js.undefined
   
   /**
     * The overflow-x CSS property sets what shows when content overflows a block-level element's left
@@ -25,12 +23,7 @@ trait OverflowProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObj
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-x)
     */
-  var overflowX: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowX */ js.Any, 
-      ThemeType
-    ]
-  ] = js.undefined
+  var overflowX: js.UndefOr[ResponsiveValue[OverflowX, ThemeType]] = js.undefined
   
   /**
     * The overflow-y CSS property sets what shows when content overflows a block-level element's top
@@ -38,12 +31,7 @@ trait OverflowProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObj
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-y)
     */
-  var overflowY: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowY */ js.Any, 
-      ThemeType
-    ]
-  ] = js.undefined
+  var overflowY: js.UndefOr[ResponsiveValue[OverflowY, ThemeType]] = js.undefined
 }
 object OverflowProps {
   
@@ -54,49 +42,28 @@ object OverflowProps {
   
   extension [Self <: OverflowProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & OverflowProps[ThemeType]) {
     
-    inline def setOverflow(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any, 
-          ThemeType
-        ]
-    ): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+    inline def setOverflow(value: ResponsiveValue[Overflow, ThemeType]): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     
     inline def setOverflowNull: Self = StObject.set(x, "overflow", null)
     
     inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
     
-    inline def setOverflowVarargs(
-      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any) | Null)*
-    ): Self = StObject.set(x, "overflow", js.Array(value :_*))
+    inline def setOverflowVarargs(value: (Overflow | Null)*): Self = StObject.set(x, "overflow", js.Array(value*))
     
-    inline def setOverflowX(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowX */ js.Any, 
-          ThemeType
-        ]
-    ): Self = StObject.set(x, "overflowX", value.asInstanceOf[js.Any])
+    inline def setOverflowX(value: ResponsiveValue[OverflowX, ThemeType]): Self = StObject.set(x, "overflowX", value.asInstanceOf[js.Any])
     
     inline def setOverflowXNull: Self = StObject.set(x, "overflowX", null)
     
     inline def setOverflowXUndefined: Self = StObject.set(x, "overflowX", js.undefined)
     
-    inline def setOverflowXVarargs(
-      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowX */ js.Any) | Null)*
-    ): Self = StObject.set(x, "overflowX", js.Array(value :_*))
+    inline def setOverflowXVarargs(value: (OverflowX | Null)*): Self = StObject.set(x, "overflowX", js.Array(value*))
     
-    inline def setOverflowY(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowY */ js.Any, 
-          ThemeType
-        ]
-    ): Self = StObject.set(x, "overflowY", value.asInstanceOf[js.Any])
+    inline def setOverflowY(value: ResponsiveValue[OverflowY, ThemeType]): Self = StObject.set(x, "overflowY", value.asInstanceOf[js.Any])
     
     inline def setOverflowYNull: Self = StObject.set(x, "overflowY", null)
     
     inline def setOverflowYUndefined: Self = StObject.set(x, "overflowY", js.undefined)
     
-    inline def setOverflowYVarargs(
-      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowY */ js.Any) | Null)*
-    ): Self = StObject.set(x, "overflowY", js.Array(value :_*))
+    inline def setOverflowYVarargs(value: (OverflowY | Null)*): Self = StObject.set(x, "overflowY", js.Array(value*))
   }
 }

@@ -12,11 +12,11 @@ trait PickImpltabsPartialPickIm
   
   var parent: js.UndefOr[String] = js.undefined
   
-  var tabs: String & js.UndefOr[String]
+  var tabs: String
 }
 object PickImpltabsPartialPickIm {
   
-  inline def apply(tabs: String & js.UndefOr[String]): PickImpltabsPartialPickIm = {
+  inline def apply(tabs: String): PickImpltabsPartialPickIm = {
     val __obj = js.Dynamic.literal(tabs = tabs.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpltabsPartialPickIm]
   }
@@ -27,6 +27,6 @@ object PickImpltabsPartialPickIm {
     
     inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
-    inline def setTabs(value: String & js.UndefOr[String]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
+    inline def setTabs(value: String): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
   }
 }

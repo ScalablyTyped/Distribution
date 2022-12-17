@@ -9,9 +9,9 @@ trait Thumb extends StObject {
   
   var opacity: js.UndefOr[OpacityType] = js.undefined
   
-  var thumb: js.UndefOr[`7`] = js.undefined
+  var thumb: js.UndefOr[`5`] = js.undefined
   
-  var track: js.UndefOr[`7`] = js.undefined
+  var track: js.UndefOr[`5`] = js.undefined
 }
 object Thumb {
   
@@ -26,11 +26,11 @@ object Thumb {
     
     inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    inline def setThumb(value: `7`): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
+    inline def setThumb(value: `5`): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
     
     inline def setThumbUndefined: Self = StObject.set(x, "thumb", js.undefined)
     
-    inline def setTrack(value: `7`): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+    inline def setTrack(value: `5`): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
     
     inline def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
   }

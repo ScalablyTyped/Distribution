@@ -1,6 +1,7 @@
 package typings.jssha.anon
 
-import typings.jssha.distSha512Mod.FixedLengthOptionsNoEncodingType
+import typings.jssha.distSha512Mod.EncodingType
+import typings.jssha.distSha512Mod.FixedLengthOptionsEncodingType
 import typings.jssha.distSha512Mod.GenericInputType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,7 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `15`
   extends StObject
-     with FixedLengthOptionsNoEncodingType {
+     with FixedLengthOptionsEncodingType {
+  
+  var encoding: js.UndefOr[EncodingType] = js.undefined
   
   var hmacKey: js.UndefOr[GenericInputType] = js.undefined
 }
@@ -20,6 +23,10 @@ object `15` {
   }
   
   extension [Self <: `15`](x: Self) {
+    
+    inline def setEncoding(value: EncodingType): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
     inline def setHmacKey(value: GenericInputType): Self = StObject.set(x, "hmacKey", value.asInstanceOf[js.Any])
     

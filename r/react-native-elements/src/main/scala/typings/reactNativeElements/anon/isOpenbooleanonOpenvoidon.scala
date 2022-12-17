@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.react.mod.Component
 import typings.react.mod.ReactChild
 import typings.react.mod.ReactElement
-import typings.react.mod.ReactNode
 import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
@@ -163,7 +162,7 @@ trait isOpenbooleanonOpenvoidon extends StObject {
   
   var buttonStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var children: js.UndefOr[js.Array[ReactChild]] & js.UndefOr[ReactNode]
+  var children: js.UndefOr[js.Array[ReactChild]] = js.undefined
   
   var color: js.UndefOr[String] = js.undefined
   
@@ -411,13 +410,8 @@ trait isOpenbooleanonOpenvoidon extends StObject {
 }
 object isOpenbooleanonOpenvoidon {
   
-  inline def apply(
-    children: js.UndefOr[js.Array[ReactChild]] & js.UndefOr[ReactNode],
-    isOpen: Boolean,
-    onClose: () => Unit,
-    onOpen: () => Unit
-  ): isOpenbooleanonOpenvoidon = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], onClose = js.Any.fromFunction0(onClose), onOpen = js.Any.fromFunction0(onOpen))
+  inline def apply(isOpen: Boolean, onClose: () => Unit, onOpen: () => Unit): isOpenbooleanonOpenvoidon = {
+    val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any], onClose = js.Any.fromFunction0(onClose), onOpen = js.Any.fromFunction0(onOpen))
     __obj.asInstanceOf[isOpenbooleanonOpenvoidon]
   }
   
@@ -493,7 +487,11 @@ object isOpenbooleanonOpenvoidon {
     
     inline def setButtonStyleUndefined: Self = StObject.set(x, "buttonStyle", js.undefined)
     
-    inline def setChildren(value: js.UndefOr[js.Array[ReactChild]] & js.UndefOr[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[ReactChild]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setChildrenVarargs(value: ReactChild*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

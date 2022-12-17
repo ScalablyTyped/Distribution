@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.HashMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,11 +45,8 @@ trait MeshVertexAttributes
 }
 object MeshVertexAttributes {
   
-  inline def apply(
-    position: js.typedarray.Float64Array,
-    set: (js.UndefOr[js.Function2[/* propertyName */ String, /* value */ Any, MeshVertexAttributes]]) & (js.UndefOr[js.Function1[/* props */ HashMap[Any], MeshVertexAttributes]])
-  ): MeshVertexAttributes = {
-    val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], set = set.asInstanceOf[js.Any])
+  inline def apply(position: js.typedarray.Float64Array): MeshVertexAttributes = {
+    val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[MeshVertexAttributes]
   }
   

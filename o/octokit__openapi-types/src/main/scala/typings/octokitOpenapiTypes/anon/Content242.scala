@@ -7,16 +7,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Content242 extends StObject {
   
   var content: `242`
+  
+  var headers: Location
 }
 object Content242 {
   
-  inline def apply(content: `242`): Content242 = {
-    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
+  inline def apply(content: `242`, headers: Location): Content242 = {
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Content242]
   }
   
   extension [Self <: Content242](x: Self) {
     
     inline def setContent(value: `242`): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    inline def setHeaders(value: Location): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
   }
 }

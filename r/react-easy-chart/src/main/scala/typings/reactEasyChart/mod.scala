@@ -5,7 +5,7 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.reactEasyChart.anon.Bottom
 import typings.reactEasyChart.anon.Color
-import typings.reactEasyChart.anon.Key
+import typings.reactEasyChart.anon.ColorString
 import typings.reactEasyChart.anon.Stroke
 import typings.reactEasyChart.anon.X
 import typings.reactEasyChart.anon.Y
@@ -336,7 +336,7 @@ object mod {
   trait LegendProps extends StObject {
     
     /** Override the color of the items */
-    var config: js.UndefOr[js.Array[Color]] = js.undefined
+    var config: js.UndefOr[js.Array[ColorString]] = js.undefined
     
     var data: js.Array[Any]
     
@@ -357,11 +357,11 @@ object mod {
     
     extension [Self <: LegendProps](x: Self) {
       
-      inline def setConfig(value: js.Array[Color]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: js.Array[ColorString]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
       inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      inline def setConfigVarargs(value: Color*): Self = StObject.set(x, "config", js.Array(value*))
+      inline def setConfigVarargs(value: ColorString*): Self = StObject.set(x, "config", js.Array(value*))
       
       inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -582,7 +582,7 @@ object mod {
     
     var clickHandler: js.UndefOr[js.Function2[/* data */ PieData, /* mouseEvent */ MouseEvent, Any]] = js.undefined
     
-    var data: js.Array[Key]
+    var data: js.Array[Color]
     
     /** Size in pixels of the inner hole (diameter) */
     var innerHoleSize: js.UndefOr[Double] = js.undefined
@@ -606,7 +606,7 @@ object mod {
   }
   object PieChartProps {
     
-    inline def apply(data: js.Array[Key]): PieChartProps = {
+    inline def apply(data: js.Array[Color]): PieChartProps = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[PieChartProps]
     }
@@ -617,9 +617,9 @@ object mod {
       
       inline def setClickHandlerUndefined: Self = StObject.set(x, "clickHandler", js.undefined)
       
-      inline def setData(value: js.Array[Key]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[Color]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: Key*): Self = StObject.set(x, "data", js.Array(value*))
+      inline def setDataVarargs(value: Color*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setInnerHoleSize(value: Double): Self = StObject.set(x, "innerHoleSize", value.asInstanceOf[js.Any])
       

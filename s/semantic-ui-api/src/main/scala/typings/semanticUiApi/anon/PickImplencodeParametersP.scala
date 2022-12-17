@@ -57,7 +57,7 @@ trait PickImplencodeParametersP
   
   var defaultData: js.UndefOr[Boolean] = js.undefined
   
-  var encodeParameters: Boolean & js.UndefOr[Boolean]
+  var encodeParameters: Boolean
   
   var error: js.UndefOr[ErrorSettings] = js.undefined
   
@@ -147,7 +147,7 @@ trait PickImplencodeParametersP
 }
 object PickImplencodeParametersP {
   
-  inline def apply(encodeParameters: Boolean & js.UndefOr[Boolean]): PickImplencodeParametersP = {
+  inline def apply(encodeParameters: Boolean): PickImplencodeParametersP = {
     val __obj = js.Dynamic.literal(encodeParameters = encodeParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplencodeParametersP]
   }
@@ -194,7 +194,7 @@ object PickImplencodeParametersP {
     
     inline def setDefaultDataUndefined: Self = StObject.set(x, "defaultData", js.undefined)
     
-    inline def setEncodeParameters(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "encodeParameters", value.asInstanceOf[js.Any])
+    inline def setEncodeParameters(value: Boolean): Self = StObject.set(x, "encodeParameters", value.asInstanceOf[js.Any])
     
     inline def setError(value: ErrorSettings): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

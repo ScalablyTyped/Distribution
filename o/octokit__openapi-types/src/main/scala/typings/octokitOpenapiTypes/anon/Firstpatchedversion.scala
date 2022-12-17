@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Firstpatchedversion extends StObject {
   
   @JSName("package")
-  var _package: EcosystemName
+  var _package: EcosystemString
   
-  var first_patched_version: Identifier | Null
+  var first_patched_version: IdentifierString | Null
   
   var severity: String
   
@@ -17,7 +17,7 @@ trait Firstpatchedversion extends StObject {
 }
 object Firstpatchedversion {
   
-  inline def apply(_package: EcosystemName, severity: String, vulnerable_version_range: String): Firstpatchedversion = {
+  inline def apply(_package: EcosystemString, severity: String, vulnerable_version_range: String): Firstpatchedversion = {
     val __obj = js.Dynamic.literal(severity = severity.asInstanceOf[js.Any], vulnerable_version_range = vulnerable_version_range.asInstanceOf[js.Any], first_patched_version = null)
     __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
     __obj.asInstanceOf[Firstpatchedversion]
@@ -25,7 +25,7 @@ object Firstpatchedversion {
   
   extension [Self <: Firstpatchedversion](x: Self) {
     
-    inline def setFirst_patched_version(value: Identifier): Self = StObject.set(x, "first_patched_version", value.asInstanceOf[js.Any])
+    inline def setFirst_patched_version(value: IdentifierString): Self = StObject.set(x, "first_patched_version", value.asInstanceOf[js.Any])
     
     inline def setFirst_patched_versionNull: Self = StObject.set(x, "first_patched_version", null)
     
@@ -33,6 +33,6 @@ object Firstpatchedversion {
     
     inline def setVulnerable_version_range(value: String): Self = StObject.set(x, "vulnerable_version_range", value.asInstanceOf[js.Any])
     
-    inline def set_package(value: EcosystemName): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+    inline def set_package(value: EcosystemString): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
   }
 }

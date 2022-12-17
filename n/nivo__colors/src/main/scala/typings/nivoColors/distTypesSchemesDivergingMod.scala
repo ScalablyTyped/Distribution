@@ -143,7 +143,7 @@ object distTypesSchemesDivergingMod {
     inline def spectral_=(x: js.Array[js.Array[String]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spectral")(x.asInstanceOf[js.Any])
   }
   
-  /* keyof @nivo/colors.anon.BrownblueGreen */ /* Rewritten from type alias, can be one of: 
+  /* keyof @nivo/colors.anon.PinkyellowGreen */ /* Rewritten from type alias, can be one of: 
     - typings.nivoColors.nivoColorsStrings.brown_blueGreen
     - typings.nivoColors.nivoColorsStrings.purpleRed_green
     - typings.nivoColors.nivoColorsStrings.pink_yellowGreen
@@ -158,7 +158,7 @@ object distTypesSchemesDivergingMod {
     extends StObject
        with ColorInterpolatorId
   
-  /* keyof @nivo/colors.anon.PinkyellowGreen */ /* Rewritten from type alias, can be one of: 
+  /* keyof @nivo/colors.anon.BrownblueGreen */ /* Rewritten from type alias, can be one of: 
     - typings.nivoColors.nivoColorsStrings.brown_blueGreen
     - typings.nivoColors.nivoColorsStrings.purpleRed_green
     - typings.nivoColors.nivoColorsStrings.pink_yellowGreen

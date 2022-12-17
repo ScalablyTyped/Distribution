@@ -1,6 +1,6 @@
 package typings.rollup.mod
 
-import typings.rollup.anon.File
+import typings.rollup.anon.Column
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +23,7 @@ trait RollupLog extends StObject {
   
   var ids: js.UndefOr[js.Array[String]] = js.undefined
   
-  var loc: js.UndefOr[File] = js.undefined
+  var loc: js.UndefOr[Column] = js.undefined
   
   var message: String
   
@@ -84,7 +84,7 @@ object RollupLog {
     
     inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value*))
     
-    inline def setLoc(value: File): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
+    inline def setLoc(value: Column): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     
     inline def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
     

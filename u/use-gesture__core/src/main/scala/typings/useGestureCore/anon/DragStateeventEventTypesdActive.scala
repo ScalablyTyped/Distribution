@@ -102,7 +102,7 @@ trait DragStateeventEventTypesdActive extends StObject {
   /**
     * The event triggering the gesture.
     */
-  var event: UIEvent & (/* import warning: importer.ImportType#apply Failed type conversion: @use-gesture/core.@use-gesture/core/dist/declarations/src/types/state.EventTypes['drag'] */ js.Any)
+  var event: UIEvent
   
   /**
     * True when it's the first event of the active gesture.
@@ -224,7 +224,7 @@ object DragStateeventEventTypesdActive {
     direction: Vector2,
     distance: Vector2,
     elapsedTime: Double,
-    event: UIEvent & (/* import warning: importer.ImportType#apply Failed type conversion: @use-gesture/core.@use-gesture/core/dist/declarations/src/types/state.EventTypes['drag'] */ js.Any),
+    event: UIEvent,
     first: Boolean,
     initial: Vector2,
     intentional: Boolean,
@@ -274,9 +274,7 @@ object DragStateeventEventTypesdActive {
     
     inline def setElapsedTime(value: Double): Self = StObject.set(x, "elapsedTime", value.asInstanceOf[js.Any])
     
-    inline def setEvent(
-      value: UIEvent & (/* import warning: importer.ImportType#apply Failed type conversion: @use-gesture/core.@use-gesture/core/dist/declarations/src/types/state.EventTypes['drag'] */ js.Any)
-    ): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: UIEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     inline def setFirst(value: Boolean): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     

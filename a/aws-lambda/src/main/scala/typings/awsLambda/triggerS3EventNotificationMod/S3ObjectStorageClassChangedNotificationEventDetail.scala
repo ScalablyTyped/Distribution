@@ -1,7 +1,7 @@
 package typings.awsLambda.triggerS3EventNotificationMod
 
-import typings.awsLambda.anon.EtagKey
 import typings.awsLambda.anon.NameString
+import typings.awsLambda.anon.Size
 import typings.awsLambda.awsLambdaStrings.DEEP_ARCHIVE
 import typings.awsLambda.awsLambdaStrings.GLACIER
 import typings.awsLambda.awsLambdaStrings.GLACIER_IR
@@ -22,7 +22,7 @@ trait S3ObjectStorageClassChangedNotificationEventDetail extends StObject {
   
   var `destination-storage-class`: STANDARD | REDUCED_REDUNDANCY | STANDARD_IA | ONEZONE_IA | INTELLIGENT_TIERING | GLACIER | DEEP_ARCHIVE | OUTPOSTS | GLACIER_IR
   
-  var `object`: EtagKey
+  var `object`: Size
   
   var `request-id`: String
   
@@ -35,7 +35,7 @@ object S3ObjectStorageClassChangedNotificationEventDetail {
   inline def apply(
     bucket: NameString,
     `destination-storage-class`: STANDARD | REDUCED_REDUNDANCY | STANDARD_IA | ONEZONE_IA | INTELLIGENT_TIERING | GLACIER | DEEP_ARCHIVE | OUTPOSTS | GLACIER_IR,
-    `object`: EtagKey,
+    `object`: Size,
     `request-id`: String,
     requester: String
   ): S3ObjectStorageClassChangedNotificationEventDetail = {
@@ -54,7 +54,7 @@ object S3ObjectStorageClassChangedNotificationEventDetail {
       value: STANDARD | REDUCED_REDUNDANCY | STANDARD_IA | ONEZONE_IA | INTELLIGENT_TIERING | GLACIER | DEEP_ARCHIVE | OUTPOSTS | GLACIER_IR
     ): Self = StObject.set(x, "destination-storage-class", value.asInstanceOf[js.Any])
     
-    inline def setObject(value: EtagKey): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: Size): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     inline def `setRequest-id`(value: String): Self = StObject.set(x, "request-id", value.asInstanceOf[js.Any])
     

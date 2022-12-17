@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CommitterEvent extends StObject {
   
   /** @description Identifying information for the git-user */
-  var author: DateEmailName
+  var author: DateString
   
   /** @description Identifying information for the git-user */
-  var committer: DateEmailName
+  var committer: DateString
   
   var event: js.UndefOr[String] = js.undefined
   
@@ -33,26 +33,26 @@ trait CommitterEvent extends StObject {
     */
   var sha: String
   
-  var tree: Sha
+  var tree: ShaUrl
   
   /** Format: uri */
   var url: String
   
-  var verification: Verified
+  var verification: PayloadReason
 }
 object CommitterEvent {
   
   inline def apply(
-    author: DateEmailName,
-    committer: DateEmailName,
+    author: DateString,
+    committer: DateString,
     html_url: String,
     message: String,
     node_id: String,
     parents: js.Array[HtmlurlString],
     sha: String,
-    tree: Sha,
+    tree: ShaUrl,
     url: String,
-    verification: Verified
+    verification: PayloadReason
   ): CommitterEvent = {
     val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], committer = committer.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], parents = parents.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], tree = tree.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], verification = verification.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommitterEvent]
@@ -60,9 +60,9 @@ object CommitterEvent {
   
   extension [Self <: CommitterEvent](x: Self) {
     
-    inline def setAuthor(value: DateEmailName): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: DateString): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    inline def setCommitter(value: DateEmailName): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
+    inline def setCommitter(value: DateString): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
     
     inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
@@ -80,10 +80,10 @@ object CommitterEvent {
     
     inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
     
-    inline def setTree(value: Sha): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
+    inline def setTree(value: ShaUrl): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    inline def setVerification(value: Verified): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
+    inline def setVerification(value: PayloadReason): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
   }
 }

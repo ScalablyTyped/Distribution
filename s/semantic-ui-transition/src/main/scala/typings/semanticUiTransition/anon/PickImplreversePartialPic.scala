@@ -47,7 +47,7 @@ trait PickImplreversePartialPic
   
   var queue: js.UndefOr[Boolean] = js.undefined
   
-  var reverse: (auto | Boolean) & (js.UndefOr[auto | Boolean])
+  var reverse: auto | Boolean
   
   var silent: js.UndefOr[Boolean] = js.undefined
   
@@ -57,7 +57,7 @@ trait PickImplreversePartialPic
 }
 object PickImplreversePartialPic {
   
-  inline def apply(reverse: (auto | Boolean) & (js.UndefOr[auto | Boolean])): PickImplreversePartialPic = {
+  inline def apply(reverse: auto | Boolean): PickImplreversePartialPic = {
     val __obj = js.Dynamic.literal(reverse = reverse.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplreversePartialPic]
   }
@@ -128,7 +128,7 @@ object PickImplreversePartialPic {
     
     inline def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
     
-    inline def setReverse(value: (auto | Boolean) & (js.UndefOr[auto | Boolean])): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+    inline def setReverse(value: auto | Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
     
     inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     

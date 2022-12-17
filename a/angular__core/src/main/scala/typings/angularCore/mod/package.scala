@@ -18,6 +18,7 @@ import typings.angularCore.anon.ContentQueries
 import typings.angularCore.anon.CtorParameters
 import typings.angularCore.anon.Declarations
 import typings.angularCore.anon.ElementInjector
+import typings.angularCore.anon.Factory
 import typings.angularCore.anon.Fn0
 import typings.angularCore.anon.FnCall
 import typings.angularCore.anon.FnCallPropNameValueSanitizer
@@ -27,7 +28,6 @@ import typings.angularCore.anon.InjectOptionsoptionalfals
 import typings.angularCore.anon.Pure
 import typings.angularCore.anon.RElementownerDocumentDocu
 import typings.angularCore.anon.Text
-import typings.angularCore.anon.Token
 import typings.angularCore.mod.^
 import typings.rxjs.distTypesInternalTypesMod.Subscribable
 import typings.rxjs.mod.Observable_
@@ -125,7 +125,7 @@ inline def createPlatformFactory(
 inline def createPlatformFactory(parentPlatformFactory: Null, name: String): js.Function1[/* extraProviders */ js.UndefOr[js.Array[StaticProvider]], PlatformRef] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPlatformFactory")(parentPlatformFactory.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* extraProviders */ js.UndefOr[js.Array[StaticProvider]], PlatformRef]]
 inline def createPlatformFactory(parentPlatformFactory: Null, name: String, providers: js.Array[StaticProvider]): js.Function1[/* extraProviders */ js.UndefOr[js.Array[StaticProvider]], PlatformRef] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPlatformFactory")(parentPlatformFactory.asInstanceOf[js.Any], name.asInstanceOf[js.Any], providers.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* extraProviders */ js.UndefOr[js.Array[StaticProvider]], PlatformRef]]
 
-inline def defineInjectable[T](opts: Token[T]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defineInjectable")(opts.asInstanceOf[js.Any]).asInstanceOf[Any]
+inline def defineInjectable[T](opts: Factory[T]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defineInjectable")(opts.asInstanceOf[js.Any]).asInstanceOf[Any]
 
 inline def destroyPlatform(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyPlatform")().asInstanceOf[Unit]
 
@@ -2040,7 +2040,7 @@ inline def ɵɵdefineComponent[T](componentDefinition: ChangeDetection[T]): Any 
 
 inline def ɵɵdefineDirective[T](directiveDefinition: ContentQueries[T]): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275defineDirective")(directiveDefinition.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
 
-inline def ɵɵdefineInjectable[T](opts: Token[T]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275defineInjectable")(opts.asInstanceOf[js.Any]).asInstanceOf[Any]
+inline def ɵɵdefineInjectable[T](opts: Factory[T]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275defineInjectable")(opts.asInstanceOf[js.Any]).asInstanceOf[Any]
 
 inline def ɵɵdefineInjector(options: Imports): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275defineInjector")(options.asInstanceOf[js.Any]).asInstanceOf[Any]
 

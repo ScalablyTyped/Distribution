@@ -246,7 +246,7 @@ object anon {
       *
       * @default false
       */
-    var parts: `true` & js.UndefOr[Boolean]
+    var parts: `true`
     
     /**
       * Support POSIX character classes ("posix brackets").
@@ -317,8 +317,8 @@ object anon {
   }
   object partstrueScanOptions {
     
-    inline def apply(parts: `true` & js.UndefOr[Boolean]): partstrueScanOptions = {
-      val __obj = js.Dynamic.literal(parts = parts.asInstanceOf[js.Any])
+    inline def apply(): partstrueScanOptions = {
+      val __obj = js.Dynamic.literal(parts = true)
       __obj.asInstanceOf[partstrueScanOptions]
     }
     
@@ -442,7 +442,7 @@ object anon {
       
       inline def setOnResultUndefined: Self = StObject.set(x, "onResult", js.undefined)
       
-      inline def setParts(value: `true` & js.UndefOr[Boolean]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
+      inline def setParts(value: `true`): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
       
       inline def setPosix(value: Boolean): Self = StObject.set(x, "posix", value.asInstanceOf[js.Any])
       
@@ -757,7 +757,7 @@ object anon {
       *
       * @default false
       */
-    var tokens: `true` & js.UndefOr[Boolean]
+    var tokens: `true`
     
     /**
       * Remove backslashes from returned matches.
@@ -786,8 +786,8 @@ object anon {
   }
   object tokenstrueScanOptions {
     
-    inline def apply(tokens: `true` & js.UndefOr[Boolean]): tokenstrueScanOptions = {
-      val __obj = js.Dynamic.literal(tokens = tokens.asInstanceOf[js.Any])
+    inline def apply(): tokenstrueScanOptions = {
+      val __obj = js.Dynamic.literal(tokens = true)
       __obj.asInstanceOf[tokenstrueScanOptions]
     }
     
@@ -935,7 +935,7 @@ object anon {
       
       inline def setStrictSlashesUndefined: Self = StObject.set(x, "strictSlashes", js.undefined)
       
-      inline def setTokens(value: `true` & js.UndefOr[Boolean]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+      inline def setTokens(value: `true`): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
       
       inline def setUnescape(value: Boolean): Self = StObject.set(x, "unescape", value.asInstanceOf[js.Any])
       

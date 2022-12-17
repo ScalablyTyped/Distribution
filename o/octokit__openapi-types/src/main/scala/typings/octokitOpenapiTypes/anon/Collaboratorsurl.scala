@@ -6,8 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Collaboratorsurl extends StObject {
   
-  var allow_auto_merge: js.UndefOr[Boolean] = js.undefined
-  
   var allow_forking: js.UndefOr[Boolean] = js.undefined
   
   var allow_merge_commit: js.UndefOr[Boolean] = js.undefined
@@ -46,14 +44,11 @@ trait Collaboratorsurl extends StObject {
   
   var default_branch: String
   
-  var delete_branch_on_merge: js.UndefOr[Boolean] = js.undefined
-  
   /** Format: uri */
   var deployments_url: String
   
   var description: String | Null
   
-  /** @description Returns whether or not this repository disabled. */
   var disabled: Boolean
   
   /** Format: uri */
@@ -119,7 +114,7 @@ trait Collaboratorsurl extends StObject {
   /** Format: uri */
   var languages_url: String
   
-  var license: Htmlurl | Null
+  var license: KeyName | Null
   
   var master_branch: js.UndefOr[String] = js.undefined
   
@@ -141,7 +136,7 @@ trait Collaboratorsurl extends StObject {
   
   var open_issues_count: Double
   
-  var owner: Avatarurl | Null
+  var owner: Gistsurl
   
   var permissions: js.UndefOr[Push] = js.undefined
   
@@ -153,8 +148,6 @@ trait Collaboratorsurl extends StObject {
   var pushed_at: String
   
   var releases_url: String
-  
-  var score: Double
   
   var size: Double
   
@@ -184,8 +177,6 @@ trait Collaboratorsurl extends StObject {
   
   var temp_clone_token: js.UndefOr[String] = js.undefined
   
-  var text_matches: js.UndefOr[js.Array[Fragment]] = js.undefined
-  
   var topics: js.UndefOr[js.Array[String]] = js.undefined
   
   var trees_url: String
@@ -203,7 +194,6 @@ trait Collaboratorsurl extends StObject {
   
   var watchers_count: Double
   
-  /** @example false */
   var web_commit_signoff_required: js.UndefOr[Boolean] = js.undefined
 }
 object Collaboratorsurl {
@@ -257,11 +247,11 @@ object Collaboratorsurl {
     notifications_url: String,
     open_issues: Double,
     open_issues_count: Double,
+    owner: Gistsurl,
     `private`: Boolean,
     pulls_url: String,
     pushed_at: String,
     releases_url: String,
-    score: Double,
     size: Double,
     ssh_url: String,
     stargazers_count: Double,
@@ -278,16 +268,12 @@ object Collaboratorsurl {
     watchers: Double,
     watchers_count: Double
   ): Collaboratorsurl = {
-    val __obj = js.Dynamic.literal(archive_url = archive_url.asInstanceOf[js.Any], archived = archived.asInstanceOf[js.Any], assignees_url = assignees_url.asInstanceOf[js.Any], blobs_url = blobs_url.asInstanceOf[js.Any], branches_url = branches_url.asInstanceOf[js.Any], clone_url = clone_url.asInstanceOf[js.Any], collaborators_url = collaborators_url.asInstanceOf[js.Any], comments_url = comments_url.asInstanceOf[js.Any], commits_url = commits_url.asInstanceOf[js.Any], compare_url = compare_url.asInstanceOf[js.Any], contents_url = contents_url.asInstanceOf[js.Any], contributors_url = contributors_url.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], default_branch = default_branch.asInstanceOf[js.Any], deployments_url = deployments_url.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], downloads_url = downloads_url.asInstanceOf[js.Any], events_url = events_url.asInstanceOf[js.Any], fork = fork.asInstanceOf[js.Any], forks = forks.asInstanceOf[js.Any], forks_count = forks_count.asInstanceOf[js.Any], forks_url = forks_url.asInstanceOf[js.Any], full_name = full_name.asInstanceOf[js.Any], git_commits_url = git_commits_url.asInstanceOf[js.Any], git_refs_url = git_refs_url.asInstanceOf[js.Any], git_tags_url = git_tags_url.asInstanceOf[js.Any], git_url = git_url.asInstanceOf[js.Any], has_downloads = has_downloads.asInstanceOf[js.Any], has_issues = has_issues.asInstanceOf[js.Any], has_pages = has_pages.asInstanceOf[js.Any], has_projects = has_projects.asInstanceOf[js.Any], has_wiki = has_wiki.asInstanceOf[js.Any], hooks_url = hooks_url.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], issue_comment_url = issue_comment_url.asInstanceOf[js.Any], issue_events_url = issue_events_url.asInstanceOf[js.Any], issues_url = issues_url.asInstanceOf[js.Any], keys_url = keys_url.asInstanceOf[js.Any], labels_url = labels_url.asInstanceOf[js.Any], languages_url = languages_url.asInstanceOf[js.Any], merges_url = merges_url.asInstanceOf[js.Any], milestones_url = milestones_url.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], notifications_url = notifications_url.asInstanceOf[js.Any], open_issues = open_issues.asInstanceOf[js.Any], open_issues_count = open_issues_count.asInstanceOf[js.Any], pulls_url = pulls_url.asInstanceOf[js.Any], pushed_at = pushed_at.asInstanceOf[js.Any], releases_url = releases_url.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], ssh_url = ssh_url.asInstanceOf[js.Any], stargazers_count = stargazers_count.asInstanceOf[js.Any], stargazers_url = stargazers_url.asInstanceOf[js.Any], statuses_url = statuses_url.asInstanceOf[js.Any], subscribers_url = subscribers_url.asInstanceOf[js.Any], subscription_url = subscription_url.asInstanceOf[js.Any], svn_url = svn_url.asInstanceOf[js.Any], tags_url = tags_url.asInstanceOf[js.Any], teams_url = teams_url.asInstanceOf[js.Any], trees_url = trees_url.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], watchers = watchers.asInstanceOf[js.Any], watchers_count = watchers_count.asInstanceOf[js.Any], description = null, homepage = null, language = null, license = null, mirror_url = null, owner = null)
+    val __obj = js.Dynamic.literal(archive_url = archive_url.asInstanceOf[js.Any], archived = archived.asInstanceOf[js.Any], assignees_url = assignees_url.asInstanceOf[js.Any], blobs_url = blobs_url.asInstanceOf[js.Any], branches_url = branches_url.asInstanceOf[js.Any], clone_url = clone_url.asInstanceOf[js.Any], collaborators_url = collaborators_url.asInstanceOf[js.Any], comments_url = comments_url.asInstanceOf[js.Any], commits_url = commits_url.asInstanceOf[js.Any], compare_url = compare_url.asInstanceOf[js.Any], contents_url = contents_url.asInstanceOf[js.Any], contributors_url = contributors_url.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], default_branch = default_branch.asInstanceOf[js.Any], deployments_url = deployments_url.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], downloads_url = downloads_url.asInstanceOf[js.Any], events_url = events_url.asInstanceOf[js.Any], fork = fork.asInstanceOf[js.Any], forks = forks.asInstanceOf[js.Any], forks_count = forks_count.asInstanceOf[js.Any], forks_url = forks_url.asInstanceOf[js.Any], full_name = full_name.asInstanceOf[js.Any], git_commits_url = git_commits_url.asInstanceOf[js.Any], git_refs_url = git_refs_url.asInstanceOf[js.Any], git_tags_url = git_tags_url.asInstanceOf[js.Any], git_url = git_url.asInstanceOf[js.Any], has_downloads = has_downloads.asInstanceOf[js.Any], has_issues = has_issues.asInstanceOf[js.Any], has_pages = has_pages.asInstanceOf[js.Any], has_projects = has_projects.asInstanceOf[js.Any], has_wiki = has_wiki.asInstanceOf[js.Any], hooks_url = hooks_url.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], issue_comment_url = issue_comment_url.asInstanceOf[js.Any], issue_events_url = issue_events_url.asInstanceOf[js.Any], issues_url = issues_url.asInstanceOf[js.Any], keys_url = keys_url.asInstanceOf[js.Any], labels_url = labels_url.asInstanceOf[js.Any], languages_url = languages_url.asInstanceOf[js.Any], merges_url = merges_url.asInstanceOf[js.Any], milestones_url = milestones_url.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], notifications_url = notifications_url.asInstanceOf[js.Any], open_issues = open_issues.asInstanceOf[js.Any], open_issues_count = open_issues_count.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], pulls_url = pulls_url.asInstanceOf[js.Any], pushed_at = pushed_at.asInstanceOf[js.Any], releases_url = releases_url.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], ssh_url = ssh_url.asInstanceOf[js.Any], stargazers_count = stargazers_count.asInstanceOf[js.Any], stargazers_url = stargazers_url.asInstanceOf[js.Any], statuses_url = statuses_url.asInstanceOf[js.Any], subscribers_url = subscribers_url.asInstanceOf[js.Any], subscription_url = subscription_url.asInstanceOf[js.Any], svn_url = svn_url.asInstanceOf[js.Any], tags_url = tags_url.asInstanceOf[js.Any], teams_url = teams_url.asInstanceOf[js.Any], trees_url = trees_url.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], watchers = watchers.asInstanceOf[js.Any], watchers_count = watchers_count.asInstanceOf[js.Any], description = null, homepage = null, language = null, license = null, mirror_url = null)
     __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Collaboratorsurl]
   }
   
   extension [Self <: Collaboratorsurl](x: Self) {
-    
-    inline def setAllow_auto_merge(value: Boolean): Self = StObject.set(x, "allow_auto_merge", value.asInstanceOf[js.Any])
-    
-    inline def setAllow_auto_mergeUndefined: Self = StObject.set(x, "allow_auto_merge", js.undefined)
     
     inline def setAllow_forking(value: Boolean): Self = StObject.set(x, "allow_forking", value.asInstanceOf[js.Any])
     
@@ -332,10 +318,6 @@ object Collaboratorsurl {
     inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
     inline def setDefault_branch(value: String): Self = StObject.set(x, "default_branch", value.asInstanceOf[js.Any])
-    
-    inline def setDelete_branch_on_merge(value: Boolean): Self = StObject.set(x, "delete_branch_on_merge", value.asInstanceOf[js.Any])
-    
-    inline def setDelete_branch_on_mergeUndefined: Self = StObject.set(x, "delete_branch_on_merge", js.undefined)
     
     inline def setDeployments_url(value: String): Self = StObject.set(x, "deployments_url", value.asInstanceOf[js.Any])
     
@@ -407,7 +389,7 @@ object Collaboratorsurl {
     
     inline def setLanguages_url(value: String): Self = StObject.set(x, "languages_url", value.asInstanceOf[js.Any])
     
-    inline def setLicense(value: Htmlurl): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
+    inline def setLicense(value: KeyName): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
     
     inline def setLicenseNull: Self = StObject.set(x, "license", null)
     
@@ -433,9 +415,7 @@ object Collaboratorsurl {
     
     inline def setOpen_issues_count(value: Double): Self = StObject.set(x, "open_issues_count", value.asInstanceOf[js.Any])
     
-    inline def setOwner(value: Avatarurl): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
-    
-    inline def setOwnerNull: Self = StObject.set(x, "owner", null)
+    inline def setOwner(value: Gistsurl): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setPermissions(value: Push): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
@@ -448,8 +428,6 @@ object Collaboratorsurl {
     inline def setPushed_at(value: String): Self = StObject.set(x, "pushed_at", value.asInstanceOf[js.Any])
     
     inline def setReleases_url(value: String): Self = StObject.set(x, "releases_url", value.asInstanceOf[js.Any])
-    
-    inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
@@ -474,12 +452,6 @@ object Collaboratorsurl {
     inline def setTemp_clone_token(value: String): Self = StObject.set(x, "temp_clone_token", value.asInstanceOf[js.Any])
     
     inline def setTemp_clone_tokenUndefined: Self = StObject.set(x, "temp_clone_token", js.undefined)
-    
-    inline def setText_matches(value: js.Array[Fragment]): Self = StObject.set(x, "text_matches", value.asInstanceOf[js.Any])
-    
-    inline def setText_matchesUndefined: Self = StObject.set(x, "text_matches", js.undefined)
-    
-    inline def setText_matchesVarargs(value: Fragment*): Self = StObject.set(x, "text_matches", js.Array(value*))
     
     inline def setTopics(value: js.Array[String]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
     

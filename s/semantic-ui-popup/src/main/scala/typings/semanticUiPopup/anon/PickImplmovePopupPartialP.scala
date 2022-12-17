@@ -64,7 +64,7 @@ trait PickImplmovePopupPartialP
   
   var metadata: js.UndefOr[MetadataSettings] = js.undefined
   
-  var movePopup: Boolean & js.UndefOr[Boolean]
+  var movePopup: Boolean
   
   var name: js.UndefOr[String] = js.undefined
   
@@ -120,7 +120,7 @@ trait PickImplmovePopupPartialP
 }
 object PickImplmovePopupPartialP {
   
-  inline def apply(movePopup: Boolean & js.UndefOr[Boolean]): PickImplmovePopupPartialP = {
+  inline def apply(movePopup: Boolean): PickImplmovePopupPartialP = {
     val __obj = js.Dynamic.literal(movePopup = movePopup.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmovePopupPartialP]
   }
@@ -207,7 +207,7 @@ object PickImplmovePopupPartialP {
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    inline def setMovePopup(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "movePopup", value.asInstanceOf[js.Any])
+    inline def setMovePopup(value: Boolean): Self = StObject.set(x, "movePopup", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

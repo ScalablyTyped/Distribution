@@ -125,7 +125,7 @@ trait containerStyleStylePropViAccessibilityActions extends StObject {
   
   var bottomDivider: js.UndefOr[Boolean] = js.undefined
   
-  var children: js.UndefOr[Any] & js.UndefOr[ReactNode]
+  var children: js.UndefOr[Any] = js.undefined
   
   var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
@@ -297,8 +297,8 @@ trait containerStyleStylePropViAccessibilityActions extends StObject {
 }
 object containerStyleStylePropViAccessibilityActions {
   
-  inline def apply(children: js.UndefOr[Any] & js.UndefOr[ReactNode]): containerStyleStylePropViAccessibilityActions = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+  inline def apply(): containerStyleStylePropViAccessibilityActions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[containerStyleStylePropViAccessibilityActions]
   }
   
@@ -372,7 +372,9 @@ object containerStyleStylePropViAccessibilityActions {
     
     inline def setBottomDividerUndefined: Self = StObject.set(x, "bottomDivider", js.undefined)
     
-    inline def setChildren(value: js.UndefOr[Any] & js.UndefOr[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setComponent(
       value: /* import warning: importer.ImportType#apply Failed type conversion: typeof React.Component */ js.Any

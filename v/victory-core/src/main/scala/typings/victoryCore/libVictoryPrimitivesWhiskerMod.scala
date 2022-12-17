@@ -2,7 +2,7 @@ package typings.victoryCore
 
 import typings.react.mod.ReactElement
 import typings.victoryCore.anon.DisableInlineStyles
-import typings.victoryCore.anon.Role
+import typings.victoryCore.anon.ShapeRendering
 import typings.victoryCore.libVictoryUtilCommonPropsMod.VictoryCommonPrimitiveProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,8 +20,8 @@ object libVictoryPrimitivesWhiskerMod {
     
     @JSImport("victory-core/lib/victory-primitives/whisker", "Whisker.defaultProps")
     @js.native
-    def defaultProps: Role = js.native
-    inline def defaultProps_=(x: Role): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: ShapeRendering = js.native
+    inline def defaultProps_=(x: ShapeRendering): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("victory-core/lib/victory-primitives/whisker", "Whisker.propTypes")
     @js.native

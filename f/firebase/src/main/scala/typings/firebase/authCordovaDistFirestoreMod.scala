@@ -5,7 +5,7 @@ import typings.firebaseFirestore.anon.CompleteError
 import typings.firebaseFirestore.anon.CompleteErrorNext
 import typings.firebaseFirestore.anon.ErrorNext
 import typings.firebaseFirestore.anon.MockUserToken
-import typings.firebaseFirestore.anon.`5`
+import typings.firebaseFirestore.anon.`4`
 import typings.firebaseFirestore.mod.AggregateSpec
 import typings.firebaseFirestore.mod.DocumentData
 import typings.firebaseFirestore.mod.FirestoreSettings
@@ -298,7 +298,7 @@ object authCordovaDistFirestoreMod {
   inline def endBefore(fieldValues: Any*): typings.firebaseFirestore.mod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")(fieldValues.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.firebaseFirestore.mod.QueryConstraint]
   inline def endBefore(snapshot: typings.firebaseFirestore.mod.DocumentSnapshot[Any]): typings.firebaseFirestore.mod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")(snapshot.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.mod.QueryConstraint]
   
-  inline def getCountFromServer(query: typings.firebaseFirestore.mod.Query_[Any]): js.Promise[typings.firebaseFirestore.mod.AggregateQuerySnapshot[`5`]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCountFromServer")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.firebaseFirestore.mod.AggregateQuerySnapshot[`5`]]]
+  inline def getCountFromServer(query: typings.firebaseFirestore.mod.Query_[Any]): js.Promise[typings.firebaseFirestore.mod.AggregateQuerySnapshot[`4`]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCountFromServer")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.firebaseFirestore.mod.AggregateQuerySnapshot[`4`]]]
   
   inline def getDoc[T](reference: typings.firebaseFirestore.mod.DocumentReference[T]): js.Promise[typings.firebaseFirestore.mod.DocumentSnapshot[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDoc")(reference.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.firebaseFirestore.mod.DocumentSnapshot[T]]]
   

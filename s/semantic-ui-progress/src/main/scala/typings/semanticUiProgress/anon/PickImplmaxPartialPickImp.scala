@@ -10,20 +10,20 @@ trait PickImplmaxPartialPickImp
   extends StObject
      with Param {
   
-  var max: Double & js.UndefOr[Double]
+  var max: Double
   
   var min: js.UndefOr[Double] = js.undefined
 }
 object PickImplmaxPartialPickImp {
   
-  inline def apply(max: Double & js.UndefOr[Double]): PickImplmaxPartialPickImp = {
+  inline def apply(max: Double): PickImplmaxPartialPickImp = {
     val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmaxPartialPickImp]
   }
   
   extension [Self <: PickImplmaxPartialPickImp](x: Self) {
     
-    inline def setMax(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     

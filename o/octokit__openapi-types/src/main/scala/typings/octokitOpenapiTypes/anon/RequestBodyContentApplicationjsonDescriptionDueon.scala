@@ -10,14 +10,14 @@ trait RequestBodyContentApplicationjsonDescriptionDueon extends StObject {
   
   var requestBody: ContentApplicationjsonDescriptionDueon
   
-  var responses: `162`
+  var responses: `283`
 }
 object RequestBodyContentApplicationjsonDescriptionDueon {
   
   inline def apply(
     parameters: PathMilestonenumber,
     requestBody: ContentApplicationjsonDescriptionDueon,
-    responses: `162`
+    responses: `283`
   ): RequestBodyContentApplicationjsonDescriptionDueon = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyContentApplicationjsonDescriptionDueon]
@@ -29,6 +29,6 @@ object RequestBodyContentApplicationjsonDescriptionDueon {
     
     inline def setRequestBody(value: ContentApplicationjsonDescriptionDueon): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `162`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `283`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

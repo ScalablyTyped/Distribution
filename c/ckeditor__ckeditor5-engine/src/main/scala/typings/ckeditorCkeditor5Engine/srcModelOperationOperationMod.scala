@@ -1,6 +1,6 @@
 package typings.ckeditorCkeditor5Engine
 
-import typings.ckeditorCkeditor5Engine.anon.`13`
+import typings.ckeditorCkeditor5Engine.anon.`12`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,7 +37,7 @@ object srcModelOperationOperationMod {
       * Custom toJSON method to solve child-parent circular dependencies.
       */
     /* CompleteClass */
-    override def toJSON(): `13` = js.native
+    override def toJSON(): `12` = js.native
     
     /**
       * Operation type.
@@ -62,7 +62,7 @@ object srcModelOperationOperationMod {
     /**
       * Creates Operation object from deserilized object, i.e. from parsed JSON string.
       */
-    inline def fromJSON(json: `13`, doc: typings.ckeditorCkeditor5Engine.srcModelDocumentMod.default): Operation = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], doc.asInstanceOf[js.Any])).asInstanceOf[Operation]
+    inline def fromJSON(json: `12`, doc: typings.ckeditorCkeditor5Engine.srcModelDocumentMod.default): Operation = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], doc.asInstanceOf[js.Any])).asInstanceOf[Operation]
   }
   
   trait Operation extends StObject {
@@ -100,7 +100,7 @@ object srcModelOperationOperationMod {
     /**
       * Custom toJSON method to solve child-parent circular dependencies.
       */
-    def toJSON(): `13`
+    def toJSON(): `12`
     
     /**
       * Operation type.
@@ -109,7 +109,7 @@ object srcModelOperationOperationMod {
   }
   object Operation {
     
-    inline def apply(isDocumentOperation: Boolean, toJSON: () => `13`, `type`: String): Operation = {
+    inline def apply(isDocumentOperation: Boolean, toJSON: () => `12`, `type`: String): Operation = {
       val __obj = js.Dynamic.literal(isDocumentOperation = isDocumentOperation.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), baseVersion = null, batch = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Operation]
@@ -135,7 +135,7 @@ object srcModelOperationOperationMod {
       
       inline def setIsDocumentOperation(value: Boolean): Self = StObject.set(x, "isDocumentOperation", value.asInstanceOf[js.Any])
       
-      inline def setToJSON(value: () => `13`): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => `12`): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

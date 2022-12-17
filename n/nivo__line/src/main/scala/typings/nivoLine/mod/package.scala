@@ -1,6 +1,6 @@
 package typings.nivoLine.mod
 
-import typings.nivoLine.anon.X
+import typings.nivoLine.anon.XFormatted
 import typings.react.mod.FunctionComponent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
@@ -11,7 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AccessorFunc = js.Function1[/* datum */ X, String]
+type AccessorFunc = js.Function1[/* datum */ XFormatted, String]
 
 type CanvasLayer = LineLayerType | CustomCanvasLayer
 

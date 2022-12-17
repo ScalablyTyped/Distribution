@@ -18,20 +18,26 @@ object libParamsParamMod {
   @js.native
   object DefType extends StObject {
     
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[DefType & Double] = js.native
+    
     @js.native
     sealed trait CONFIG
       extends StObject
          with DefType
+    /* 2 */ val CONFIG: typings.uirouterCore.libParamsParamMod.DefType.CONFIG & Double = js.native
     
     @js.native
     sealed trait PATH
       extends StObject
          with DefType
+    /* 0 */ val PATH: typings.uirouterCore.libParamsParamMod.DefType.PATH & Double = js.native
     
     @js.native
     sealed trait SEARCH
       extends StObject
          with DefType
+    /* 1 */ val SEARCH: typings.uirouterCore.libParamsParamMod.DefType.SEARCH & Double = js.native
   }
   
   @JSImport("@uirouter/core/lib/params/param", "Param")

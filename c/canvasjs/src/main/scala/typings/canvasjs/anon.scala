@@ -17,14 +17,12 @@ object anon {
     
     var chart: typings.canvasjs.mod.Chart
     
-    var label: String
-    
-    var value: Double
+    var stripline: this.type
   }
   object Axis {
     
-    inline def apply(axis: ChartAxisYOptions, chart: typings.canvasjs.mod.Chart, label: String, value: Double): Axis = {
-      val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], chart = chart.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    inline def apply(axis: ChartAxisYOptions, chart: typings.canvasjs.mod.Chart, stripline: Axis): Axis = {
+      val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], chart = chart.asInstanceOf[js.Any], stripline = stripline.asInstanceOf[js.Any])
       __obj.asInstanceOf[Axis]
     }
     
@@ -34,13 +32,66 @@ object anon {
       
       inline def setChart(value: typings.canvasjs.mod.Chart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
       
-      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
-      
-      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setStripline(value: Axis): Self = StObject.set(x, "stripline", value.asInstanceOf[js.Any])
     }
   }
   
   trait Chart extends StObject {
+    
+    var chart: typings.canvasjs.mod.Chart
+    
+    var dataPoint: ChartDataPoint
+    
+    var dataSeries: ChartDataSeriesOptions
+    
+    var legend: this.type
+  }
+  object Chart {
+    
+    inline def apply(
+      chart: typings.canvasjs.mod.Chart,
+      dataPoint: ChartDataPoint,
+      dataSeries: ChartDataSeriesOptions,
+      legend: Chart
+    ): Chart = {
+      val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any], dataPoint = dataPoint.asInstanceOf[js.Any], dataSeries = dataSeries.asInstanceOf[js.Any], legend = legend.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Chart]
+    }
+    
+    extension [Self <: Chart](x: Self) {
+      
+      inline def setChart(value: typings.canvasjs.mod.Chart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+      
+      inline def setDataPoint(value: ChartDataPoint): Self = StObject.set(x, "dataPoint", value.asInstanceOf[js.Any])
+      
+      inline def setDataSeries(value: ChartDataSeriesOptions): Self = StObject.set(x, "dataSeries", value.asInstanceOf[js.Any])
+      
+      inline def setLegend(value: Chart): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait DataPoint extends StObject {
+    
+    var dataPoint: ChartDataPoint
+    
+    var dataSeries: ChartDataSeriesOptions
+  }
+  object DataPoint {
+    
+    inline def apply(dataPoint: ChartDataPoint, dataSeries: ChartDataSeriesOptions): DataPoint = {
+      val __obj = js.Dynamic.literal(dataPoint = dataPoint.asInstanceOf[js.Any], dataSeries = dataSeries.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DataPoint]
+    }
+    
+    extension [Self <: DataPoint](x: Self) {
+      
+      inline def setDataPoint(value: ChartDataPoint): Self = StObject.set(x, "dataPoint", value.asInstanceOf[js.Any])
+      
+      inline def setDataSeries(value: ChartDataSeriesOptions): Self = StObject.set(x, "dataSeries", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait DataSeries extends StObject {
     
     var chart: typings.canvasjs.mod.Chart
     
@@ -54,14 +105,14 @@ object anon {
     
     var total: js.UndefOr[Double] = js.undefined
   }
-  object Chart {
+  object DataSeries {
     
-    inline def apply(chart: typings.canvasjs.mod.Chart, dataPoint: ChartDataPoint, dataSeries: ChartDataSeriesOptions): Chart = {
+    inline def apply(chart: typings.canvasjs.mod.Chart, dataPoint: ChartDataPoint, dataSeries: ChartDataSeriesOptions): DataSeries = {
       val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any], dataPoint = dataPoint.asInstanceOf[js.Any], dataSeries = dataSeries.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Chart]
+      __obj.asInstanceOf[DataSeries]
     }
     
-    extension [Self <: Chart](x: Self) {
+    extension [Self <: DataSeries](x: Self) {
       
       inline def setChart(value: typings.canvasjs.mod.Chart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
       
@@ -83,72 +134,17 @@ object anon {
     }
   }
   
-  trait DataPoint extends StObject {
-    
-    var chart: typings.canvasjs.mod.Chart
-    
-    var dataPoint: ChartDataPoint
-    
-    var dataSeries: ChartDataSeriesOptions
-    
-    var legend: this.type
-  }
-  object DataPoint {
-    
-    inline def apply(
-      chart: typings.canvasjs.mod.Chart,
-      dataPoint: ChartDataPoint,
-      dataSeries: ChartDataSeriesOptions,
-      legend: DataPoint
-    ): DataPoint = {
-      val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any], dataPoint = dataPoint.asInstanceOf[js.Any], dataSeries = dataSeries.asInstanceOf[js.Any], legend = legend.asInstanceOf[js.Any])
-      __obj.asInstanceOf[DataPoint]
-    }
-    
-    extension [Self <: DataPoint](x: Self) {
-      
-      inline def setChart(value: typings.canvasjs.mod.Chart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
-      
-      inline def setDataPoint(value: ChartDataPoint): Self = StObject.set(x, "dataPoint", value.asInstanceOf[js.Any])
-      
-      inline def setDataSeries(value: ChartDataSeriesOptions): Self = StObject.set(x, "dataSeries", value.asInstanceOf[js.Any])
-      
-      inline def setLegend(value: DataPoint): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait DataSeries extends StObject {
-    
-    var dataPoint: ChartDataPoint
-    
-    var dataSeries: ChartDataSeriesOptions
-  }
-  object DataSeries {
-    
-    inline def apply(dataPoint: ChartDataPoint, dataSeries: ChartDataSeriesOptions): DataSeries = {
-      val __obj = js.Dynamic.literal(dataPoint = dataPoint.asInstanceOf[js.Any], dataSeries = dataSeries.asInstanceOf[js.Any])
-      __obj.asInstanceOf[DataSeries]
-    }
-    
-    extension [Self <: DataSeries](x: Self) {
-      
-      inline def setDataPoint(value: ChartDataPoint): Self = StObject.set(x, "dataPoint", value.asInstanceOf[js.Any])
-      
-      inline def setDataSeries(value: ChartDataSeriesOptions): Self = StObject.set(x, "dataSeries", value.asInstanceOf[js.Any])
-    }
-  }
-  
   trait Entries extends StObject {
     
     var chart: typings.canvasjs.mod.Chart
     
-    var entries: js.Array[DataSeries]
+    var entries: js.Array[DataPoint]
     
     var toolTip: this.type
   }
   object Entries {
     
-    inline def apply(chart: typings.canvasjs.mod.Chart, entries: js.Array[DataSeries], toolTip: Entries): Entries = {
+    inline def apply(chart: typings.canvasjs.mod.Chart, entries: js.Array[DataPoint], toolTip: Entries): Entries = {
       val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any], entries = entries.asInstanceOf[js.Any], toolTip = toolTip.asInstanceOf[js.Any])
       __obj.asInstanceOf[Entries]
     }
@@ -157,9 +153,9 @@ object anon {
       
       inline def setChart(value: typings.canvasjs.mod.Chart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
       
-      inline def setEntries(value: js.Array[DataSeries]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+      inline def setEntries(value: js.Array[DataPoint]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
       
-      inline def setEntriesVarargs(value: DataSeries*): Self = StObject.set(x, "entries", js.Array(value*))
+      inline def setEntriesVarargs(value: DataPoint*): Self = StObject.set(x, "entries", js.Array(value*))
       
       inline def setToolTip(value: Entries): Self = StObject.set(x, "toolTip", value.asInstanceOf[js.Any])
     }
@@ -194,28 +190,32 @@ object anon {
     }
   }
   
-  trait Stripline extends StObject {
+  trait Label extends StObject {
     
     var axis: ChartAxisYOptions
     
     var chart: typings.canvasjs.mod.Chart
     
-    var stripline: this.type
-  }
-  object Stripline {
+    var label: String
     
-    inline def apply(axis: ChartAxisYOptions, chart: typings.canvasjs.mod.Chart, stripline: Stripline): Stripline = {
-      val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], chart = chart.asInstanceOf[js.Any], stripline = stripline.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Stripline]
+    var value: Double
+  }
+  object Label {
+    
+    inline def apply(axis: ChartAxisYOptions, chart: typings.canvasjs.mod.Chart, label: String, value: Double): Label = {
+      val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], chart = chart.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Label]
     }
     
-    extension [Self <: Stripline](x: Self) {
+    extension [Self <: Label](x: Self) {
       
       inline def setAxis(value: ChartAxisYOptions): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
       inline def setChart(value: typings.canvasjs.mod.Chart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
       
-      inline def setStripline(value: Stripline): Self = StObject.set(x, "stripline", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

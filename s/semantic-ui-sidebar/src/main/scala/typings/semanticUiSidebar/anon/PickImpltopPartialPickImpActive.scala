@@ -28,13 +28,13 @@ trait PickImpltopPartialPickImpActive
   
   var right: js.UndefOr[String] = js.undefined
   
-  var top: String & js.UndefOr[String]
+  var top: String
   
   var visible: js.UndefOr[String] = js.undefined
 }
 object PickImpltopPartialPickImpActive {
   
-  inline def apply(top: String & js.UndefOr[String]): PickImpltopPartialPickImpActive = {
+  inline def apply(top: String): PickImpltopPartialPickImpActive = {
     val __obj = js.Dynamic.literal(top = top.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpltopPartialPickImpActive]
   }
@@ -77,7 +77,7 @@ object PickImpltopPartialPickImpActive {
     
     inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     
-    inline def setTop(value: String & js.UndefOr[String]): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     inline def setVisible(value: String): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,7 @@
 package typings.victoryCore.libMod
 
 import typings.react.mod.ReactElement
+import typings.victoryCore.anon.Desc
 import typings.victoryCore.anon.PathComponent
 import typings.victoryCore.libVictoryPrimitivesPointMod.PointProps
 import org.scalablytyped.runtime.StObject
@@ -22,6 +23,6 @@ object Point {
   
   @JSImport("victory-core/lib", "Point.propTypes")
   @js.native
-  def propTypes: typings.victoryCore.anon.Data = js.native
-  inline def propTypes_=(x: typings.victoryCore.anon.Data): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+  def propTypes: Desc = js.native
+  inline def propTypes_=(x: Desc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
 }

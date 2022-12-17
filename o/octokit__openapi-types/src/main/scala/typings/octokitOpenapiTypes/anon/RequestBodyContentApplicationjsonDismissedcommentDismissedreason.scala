@@ -6,18 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RequestBodyContentApplicationjsonDismissedcommentDismissedreason extends StObject {
   
-  var parameters: PathAlertnumber
+  var parameters: PathAlertnumberOwnerRepo
   
   var requestBody: ContentApplicationjsonDismissedcommentDismissedreason
   
-  var responses: `200403404503`
+  var responses: `503ContentApplicationjsonCodeDocumentationurlMessage`
 }
 object RequestBodyContentApplicationjsonDismissedcommentDismissedreason {
   
   inline def apply(
-    parameters: PathAlertnumber,
+    parameters: PathAlertnumberOwnerRepo,
     requestBody: ContentApplicationjsonDismissedcommentDismissedreason,
-    responses: `200403404503`
+    responses: `503ContentApplicationjsonCodeDocumentationurlMessage`
   ): RequestBodyContentApplicationjsonDismissedcommentDismissedreason = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyContentApplicationjsonDismissedcommentDismissedreason]
@@ -25,10 +25,10 @@ object RequestBodyContentApplicationjsonDismissedcommentDismissedreason {
   
   extension [Self <: RequestBodyContentApplicationjsonDismissedcommentDismissedreason](x: Self) {
     
-    inline def setParameters(value: PathAlertnumber): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: PathAlertnumberOwnerRepo): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setRequestBody(value: ContentApplicationjsonDismissedcommentDismissedreason): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200403404503`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `503ContentApplicationjsonCodeDocumentationurlMessage`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

@@ -20,6 +20,18 @@ object libFileStorageFileStorageMod {
   @js.native
   val ^ : js.Any = js.native
   
+  object StorageKind {
+    
+    @JSImport("@nginstack/engine/lib/file-storage/FileStorage", "StorageKind.LOB")
+    @js.native
+    val LOB: String = js.native
+    
+    @JSImport("@nginstack/engine/lib/file-storage/FileStorage", "StorageKind.VFS")
+    @js.native
+    val VFS: String = js.native
+  }
+  type StorageKind = String
+  
   type DBKey = Any
   
   type FileInfo = typings.nginstackEngine.libFileStorageFileInfoMod.^
@@ -123,6 +135,4 @@ object libFileStorageFileStorageMod {
     def updateFileAttributes(fileKey: Double, attributes: Any): Unit = js.native
     def updateFileAttributes(fileKey: Double, attributes: Any, originalName: String): Unit = js.native
   }
-  
-  type StorageKind = String
 }

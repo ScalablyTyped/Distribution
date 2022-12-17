@@ -8,11 +8,11 @@ trait ParametersPathJobidOwner extends StObject {
   
   var parameters: PathJobidOwner
   
-  var responses: `200Content411`
+  var responses: `200ContentApplicationjsonCheckrunurl`
 }
 object ParametersPathJobidOwner {
   
-  inline def apply(parameters: PathJobidOwner, responses: `200Content411`): ParametersPathJobidOwner = {
+  inline def apply(parameters: PathJobidOwner, responses: `200ContentApplicationjsonCheckrunurl`): ParametersPathJobidOwner = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathJobidOwner]
   }
@@ -21,6 +21,6 @@ object ParametersPathJobidOwner {
     
     inline def setParameters(value: PathJobidOwner): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content411`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200ContentApplicationjsonCheckrunurl`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

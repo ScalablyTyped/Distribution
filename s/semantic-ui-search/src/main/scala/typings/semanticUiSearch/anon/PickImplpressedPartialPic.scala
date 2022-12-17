@@ -18,11 +18,11 @@ trait PickImplpressedPartialPic
   
   var loading: js.UndefOr[String] = js.undefined
   
-  var pressed: String & js.UndefOr[String]
+  var pressed: String
 }
 object PickImplpressedPartialPic {
   
-  inline def apply(pressed: String & js.UndefOr[String]): PickImplpressedPartialPic = {
+  inline def apply(pressed: String): PickImplpressedPartialPic = {
     val __obj = js.Dynamic.literal(pressed = pressed.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplpressedPartialPic]
   }
@@ -45,6 +45,6 @@ object PickImplpressedPartialPic {
     
     inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
     
-    inline def setPressed(value: String & js.UndefOr[String]): Self = StObject.set(x, "pressed", value.asInstanceOf[js.Any])
+    inline def setPressed(value: String): Self = StObject.set(x, "pressed", value.asInstanceOf[js.Any])
   }
 }

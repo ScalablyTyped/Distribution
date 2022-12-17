@@ -546,7 +546,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined react.react.CSSProperties & std.Partial<std.Record<'--z-index' | '--border-radius' | '--header-height', string>> */
+/* Inlined react.react.CSSProperties & std.Partial<std.Record<'--border-radius' | '--z-index' | '--header-height', string>> */
 trait CSSPropertiesPartialRecorAnimationDuration extends StObject {
   
   var `--border-radius`: js.UndefOr[String] = js.undefined

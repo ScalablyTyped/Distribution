@@ -1,5 +1,6 @@
 package typings.braintree.anon
 
+import typings.braintree.mod.DurbinRegulated
 import typings.braintree.mod.HealthCare
 import typings.braintree.mod.Payroll
 import typings.braintree.mod.Prepaid
@@ -23,7 +24,7 @@ trait Bin extends StObject {
   
   var debit: String
   
-  var durbinRegulated: typings.braintree.mod.DurbinRegulated
+  var durbinRegulated: DurbinRegulated
   
   var expirationDate: js.UndefOr[String] = js.undefined
   
@@ -56,7 +57,7 @@ object Bin {
     countryOfIssuance: String,
     customerLocation: typings.braintree.mod.CustomerLocation,
     debit: String,
-    durbinRegulated: typings.braintree.mod.DurbinRegulated,
+    durbinRegulated: DurbinRegulated,
     healthcare: HealthCare,
     issuingBank: String,
     last4: String,
@@ -88,7 +89,7 @@ object Bin {
     
     inline def setDebit(value: String): Self = StObject.set(x, "debit", value.asInstanceOf[js.Any])
     
-    inline def setDurbinRegulated(value: typings.braintree.mod.DurbinRegulated): Self = StObject.set(x, "durbinRegulated", value.asInstanceOf[js.Any])
+    inline def setDurbinRegulated(value: DurbinRegulated): Self = StObject.set(x, "durbinRegulated", value.asInstanceOf[js.Any])
     
     inline def setExpirationDate(value: String): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     

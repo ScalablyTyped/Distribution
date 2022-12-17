@@ -6,21 +6,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `214` extends StObject {
   
-  var exclude: js.UndefOr[js.Array[String]] = js.undefined
+  var secrets: js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['dependabot-secret'] */ js.Any
+  ]
+  
+  var total_count: Double
 }
 object `214` {
   
-  inline def apply(): `214` = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    secrets: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['dependabot-secret'] */ js.Any
+    ],
+    total_count: Double
+  ): `214` = {
+    val __obj = js.Dynamic.literal(secrets = secrets.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
     __obj.asInstanceOf[`214`]
   }
   
   extension [Self <: `214`](x: Self) {
     
-    inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+    inline def setSecrets(
+      value: js.Array[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['dependabot-secret'] */ js.Any
+        ]
+    ): Self = StObject.set(x, "secrets", value.asInstanceOf[js.Any])
     
-    inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+    inline def setSecretsVarargs(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['dependabot-secret'] */ js.Any)*
+    ): Self = StObject.set(x, "secrets", js.Array(value*))
     
-    inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
+    inline def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
   }
 }

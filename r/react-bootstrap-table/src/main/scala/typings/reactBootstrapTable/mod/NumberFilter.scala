@@ -1,6 +1,6 @@
 package typings.reactBootstrapTable.mod
 
-import typings.reactBootstrapTable.anon.ComparatorNumber
+import typings.reactBootstrapTable.anon.Comparator
 import typings.reactBootstrapTable.anon.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,7 +13,7 @@ trait NumberFilter
   /**
     * Default value for the filter.
     */
-  var defaultValue: js.UndefOr[Number] = js.undefined
+  var defaultValue: js.UndefOr[Comparator] = js.undefined
   
   /**
     * Delay time in milliseconds after the last key press prior to applying the filter. Defaults to 500ms.
@@ -38,7 +38,7 @@ trait NumberFilter
   /**
     * CSS Style to use for the select filter.
     */
-  var style: js.UndefOr[ComparatorNumber] = js.undefined
+  var style: js.UndefOr[Number] = js.undefined
   
   /**
     * Filter type must be 'NumberFilter'
@@ -70,7 +70,7 @@ object NumberFilter {
   
   extension [Self <: NumberFilter](x: Self) {
     
-    inline def setDefaultValue(value: Number): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: Comparator): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
@@ -94,7 +94,7 @@ object NumberFilter {
     
     inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
-    inline def setStyle(value: ComparatorNumber): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Number): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     

@@ -1,6 +1,5 @@
 package typings.fundamentalReact.anon
 
-import typings.fundamentalReact.fundamentalReactStrings.BreadcrumbDotItem
 import typings.fundamentalReact.libBreadcrumbBreadcrumbMod.BreadcrumbItemProps
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
@@ -19,7 +18,7 @@ trait FunctionComponentBreadcru extends StObject {
   
   var defaultProps: js.UndefOr[PartialBreadcrumbItemProp] = js.native
   
-  var displayName: js.UndefOr[String] & BreadcrumbDotItem = js.native
+  var displayName: js.UndefOr[String] = js.native
   
   var propTypes: js.UndefOr[WeakValidationMapBreadcruAbout] = js.native
 }

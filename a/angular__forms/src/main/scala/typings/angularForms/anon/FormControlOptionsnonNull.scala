@@ -1,6 +1,5 @@
 package typings.angularForms.anon
 
-import typings.angularForms.angularFormsBooleans.`true`
 import typings.angularForms.angularFormsStrings.blur
 import typings.angularForms.angularFormsStrings.change
 import typings.angularForms.angularFormsStrings.submit
@@ -34,7 +33,7 @@ trait FormControlOptionsnonNull extends StObject {
     * When a FormControl is reset without an explicit value, its value reverts to
     * its default value.
     */
-  var nonNullable: js.UndefOr[Boolean] & `true`
+  var nonNullable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @description
@@ -50,8 +49,8 @@ trait FormControlOptionsnonNull extends StObject {
 }
 object FormControlOptionsnonNull {
   
-  inline def apply(nonNullable: js.UndefOr[Boolean] & `true`): FormControlOptionsnonNull = {
-    val __obj = js.Dynamic.literal(nonNullable = nonNullable.asInstanceOf[js.Any])
+  inline def apply(): FormControlOptionsnonNull = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FormControlOptionsnonNull]
   }
   
@@ -73,7 +72,9 @@ object FormControlOptionsnonNull {
     
     inline def setInitialValueIsDefaultUndefined: Self = StObject.set(x, "initialValueIsDefault", js.undefined)
     
-    inline def setNonNullable(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "nonNullable", value.asInstanceOf[js.Any])
+    inline def setNonNullable(value: Boolean): Self = StObject.set(x, "nonNullable", value.asInstanceOf[js.Any])
+    
+    inline def setNonNullableUndefined: Self = StObject.set(x, "nonNullable", js.undefined)
     
     inline def setUpdateOn(value: change | blur | submit): Self = StObject.set(x, "updateOn", value.asInstanceOf[js.Any])
     

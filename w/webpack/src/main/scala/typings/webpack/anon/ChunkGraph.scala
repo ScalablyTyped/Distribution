@@ -1,5 +1,7 @@
 package typings.webpack.anon
 
+import org.scalablytyped.runtime.Instantiable0
+import typings.webpack.mod.RequestShortener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,34 +9,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChunkGraph extends StObject {
   
   /**
-  		 * the chunk graph
-  		 */
-  var chunkGraph: js.UndefOr[typings.webpack.mod.ChunkGraph] = js.undefined
+  				 * chunk graph
+  				 */
+  var chunkGraph: typings.webpack.mod.ChunkGraph
   
   /**
-  		 * chunkGraphEntries
-  		 */
-  var chunkGraphEntries: js.UndefOr[js.Iterable[typings.webpack.mod.Chunk]] = js.undefined
+  				 * the hash function to use
+  				 */
+  var hashFunction: String | Instantiable0[typings.webpack.mod.Hash]
   
   /**
-  		 * chunks
-  		 */
-  var chunks: js.UndefOr[js.Iterable[typings.webpack.mod.Chunk]] = js.undefined
-  
-  /**
-  		 * codeGenerationResults
-  		 */
-  var codeGenerationResults: js.UndefOr[typings.webpack.mod.CodeGenerationResults] = js.undefined
-  
-  /**
-  		 * modules
-  		 */
-  var modules: js.UndefOr[js.Iterable[typings.webpack.mod.Module]] = js.undefined
+  				 * requestShortener
+  				 */
+  var requestShortener: RequestShortener
 }
 object ChunkGraph {
   
-  inline def apply(): ChunkGraph = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    chunkGraph: typings.webpack.mod.ChunkGraph,
+    hashFunction: String | Instantiable0[typings.webpack.mod.Hash],
+    requestShortener: RequestShortener
+  ): ChunkGraph = {
+    val __obj = js.Dynamic.literal(chunkGraph = chunkGraph.asInstanceOf[js.Any], hashFunction = hashFunction.asInstanceOf[js.Any], requestShortener = requestShortener.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChunkGraph]
   }
   
@@ -42,22 +38,8 @@ object ChunkGraph {
     
     inline def setChunkGraph(value: typings.webpack.mod.ChunkGraph): Self = StObject.set(x, "chunkGraph", value.asInstanceOf[js.Any])
     
-    inline def setChunkGraphEntries(value: js.Iterable[typings.webpack.mod.Chunk]): Self = StObject.set(x, "chunkGraphEntries", value.asInstanceOf[js.Any])
+    inline def setHashFunction(value: String | Instantiable0[typings.webpack.mod.Hash]): Self = StObject.set(x, "hashFunction", value.asInstanceOf[js.Any])
     
-    inline def setChunkGraphEntriesUndefined: Self = StObject.set(x, "chunkGraphEntries", js.undefined)
-    
-    inline def setChunkGraphUndefined: Self = StObject.set(x, "chunkGraph", js.undefined)
-    
-    inline def setChunks(value: js.Iterable[typings.webpack.mod.Chunk]): Self = StObject.set(x, "chunks", value.asInstanceOf[js.Any])
-    
-    inline def setChunksUndefined: Self = StObject.set(x, "chunks", js.undefined)
-    
-    inline def setCodeGenerationResults(value: typings.webpack.mod.CodeGenerationResults): Self = StObject.set(x, "codeGenerationResults", value.asInstanceOf[js.Any])
-    
-    inline def setCodeGenerationResultsUndefined: Self = StObject.set(x, "codeGenerationResults", js.undefined)
-    
-    inline def setModules(value: js.Iterable[typings.webpack.mod.Module]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
-    
-    inline def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
+    inline def setRequestShortener(value: RequestShortener): Self = StObject.set(x, "requestShortener", value.asInstanceOf[js.Any])
   }
 }

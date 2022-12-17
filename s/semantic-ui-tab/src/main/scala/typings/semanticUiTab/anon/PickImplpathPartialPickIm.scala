@@ -90,7 +90,7 @@ trait PickImplpathPartialPickIm
   
   var onVisible: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* tabPath */ String, Unit]] = js.undefined
   
-  var path: (`false` | String) & (js.UndefOr[`false` | String])
+  var path: `false` | String
   
   var performance: js.UndefOr[Boolean] = js.undefined
   
@@ -104,7 +104,7 @@ trait PickImplpathPartialPickIm
 }
 object PickImplpathPartialPickIm {
   
-  inline def apply(path: (`false` | String) & (js.UndefOr[`false` | String])): PickImplpathPartialPickIm = {
+  inline def apply(path: `false` | String): PickImplpathPartialPickIm = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplpathPartialPickIm]
   }
@@ -223,7 +223,7 @@ object PickImplpathPartialPickIm {
     
     inline def setOnVisibleUndefined: Self = StObject.set(x, "onVisible", js.undefined)
     
-    inline def setPath(value: (`false` | String) & (js.UndefOr[`false` | String])): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: `false` | String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     inline def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
     

@@ -26,30 +26,38 @@ object libTransitionInterfaceMod {
   @js.native
   object TransitionHookPhase extends StObject {
     
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[TransitionHookPhase & Double] = js.native
+    
     @js.native
     sealed trait BEFORE
       extends StObject
          with TransitionHookPhase
+    /* 1 */ val BEFORE: typings.uirouterCore.libTransitionInterfaceMod.TransitionHookPhase.BEFORE & Double = js.native
     
     @js.native
     sealed trait CREATE
       extends StObject
          with TransitionHookPhase
+    /* 0 */ val CREATE: typings.uirouterCore.libTransitionInterfaceMod.TransitionHookPhase.CREATE & Double = js.native
     
     @js.native
     sealed trait ERROR
       extends StObject
          with TransitionHookPhase
+    /* 4 */ val ERROR: typings.uirouterCore.libTransitionInterfaceMod.TransitionHookPhase.ERROR & Double = js.native
     
     @js.native
     sealed trait RUN
       extends StObject
          with TransitionHookPhase
+    /* 2 */ val RUN: typings.uirouterCore.libTransitionInterfaceMod.TransitionHookPhase.RUN & Double = js.native
     
     @js.native
     sealed trait SUCCESS
       extends StObject
          with TransitionHookPhase
+    /* 3 */ val SUCCESS: typings.uirouterCore.libTransitionInterfaceMod.TransitionHookPhase.SUCCESS & Double = js.native
   }
   
   @js.native
@@ -58,15 +66,20 @@ object libTransitionInterfaceMod {
   @js.native
   object TransitionHookScope extends StObject {
     
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[TransitionHookScope & Double] = js.native
+    
     @js.native
     sealed trait STATE
       extends StObject
          with TransitionHookScope
+    /* 1 */ val STATE: typings.uirouterCore.libTransitionInterfaceMod.TransitionHookScope.STATE & Double = js.native
     
     @js.native
     sealed trait TRANSITION
       extends StObject
          with TransitionHookScope
+    /* 0 */ val TRANSITION: typings.uirouterCore.libTransitionInterfaceMod.TransitionHookScope.TRANSITION & Double = js.native
   }
   
   type HookFn = TransitionHookFn | TransitionStateHookFn | TransitionCreateHookFn

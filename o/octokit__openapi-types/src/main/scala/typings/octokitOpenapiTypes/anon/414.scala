@@ -6,31 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `414` extends StObject {
   
-  var allowed_actions: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['allowed-actions'] */ js.Any
-  ] = js.undefined
-  
-  var enabled: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['actions-enabled'] */ js.Any
+  @JSName("application/json")
+  var applicationSlashjson: js.Array[Instancesurl]
 }
 object `414` {
   
-  inline def apply(
-    enabled: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['actions-enabled'] */ js.Any
-  ): `414` = {
-    val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
+  inline def apply(applicationSlashjson: js.Array[Instancesurl]): `414` = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`414`]
   }
   
   extension [Self <: `414`](x: Self) {
     
-    inline def setAllowed_actions(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['allowed-actions'] */ js.Any
-    ): Self = StObject.set(x, "allowed_actions", value.asInstanceOf[js.Any])
+    inline def setApplicationSlashjson(value: js.Array[Instancesurl]): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
     
-    inline def setAllowed_actionsUndefined: Self = StObject.set(x, "allowed_actions", js.undefined)
-    
-    inline def setEnabled(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['actions-enabled'] */ js.Any
-    ): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setApplicationSlashjsonVarargs(value: Instancesurl*): Self = StObject.set(x, "application/json", js.Array(value*))
   }
 }

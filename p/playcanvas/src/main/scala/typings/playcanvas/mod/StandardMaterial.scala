@@ -524,8 +524,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * - ambientEncoding: one of null, "rgbm", "rgbe", "linear", "srgb"
   * @augments Material
   */
+@JSImport("playcanvas", "StandardMaterial")
 @js.native
-trait StandardMaterial extends Material {
+open class StandardMaterial () extends Material {
   
   var _activeLightingParams: Set[Any] = js.native
   
@@ -1126,4 +1127,22 @@ trait StandardMaterial extends Material {
   
   def useSkybox: Boolean = js.native
   def useSkybox_=(arg: Boolean): Unit = js.native
+}
+object StandardMaterial {
+  
+  @JSImport("playcanvas", "StandardMaterial")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("playcanvas", "StandardMaterial.CUBEMAP_PARAMETERS")
+  @js.native
+  def CUBEMAP_PARAMETERS: js.Array[Any] = js.native
+  inline def CUBEMAP_PARAMETERS_=(x: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CUBEMAP_PARAMETERS")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("playcanvas", "StandardMaterial.TEXTURE_PARAMETERS")
+  @js.native
+  def TEXTURE_PARAMETERS: js.Array[Any] = js.native
+  inline def TEXTURE_PARAMETERS_=(x: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEXTURE_PARAMETERS")(x.asInstanceOf[js.Any])
 }

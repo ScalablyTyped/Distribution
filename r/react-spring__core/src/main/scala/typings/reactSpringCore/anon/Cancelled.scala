@@ -10,12 +10,14 @@ trait Cancelled extends StObject {
   
   var finished: Boolean
   
+  var noop: Boolean
+  
   var value: Any
 }
 object Cancelled {
   
-  inline def apply(cancelled: Boolean, finished: Boolean, value: Any): Cancelled = {
-    val __obj = js.Dynamic.literal(cancelled = cancelled.asInstanceOf[js.Any], finished = finished.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  inline def apply(cancelled: Boolean, finished: Boolean, noop: Boolean, value: Any): Cancelled = {
+    val __obj = js.Dynamic.literal(cancelled = cancelled.asInstanceOf[js.Any], finished = finished.asInstanceOf[js.Any], noop = noop.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cancelled]
   }
   
@@ -24,6 +26,8 @@ object Cancelled {
     inline def setCancelled(value: Boolean): Self = StObject.set(x, "cancelled", value.asInstanceOf[js.Any])
     
     inline def setFinished(value: Boolean): Self = StObject.set(x, "finished", value.asInstanceOf[js.Any])
+    
+    inline def setNoop(value: Boolean): Self = StObject.set(x, "noop", value.asInstanceOf[js.Any])
     
     inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

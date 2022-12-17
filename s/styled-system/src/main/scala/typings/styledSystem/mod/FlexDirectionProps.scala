@@ -1,5 +1,6 @@
 package typings.styledSystem.mod
 
+import typings.csstype.mod.Property.FlexDirection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,12 +13,7 @@ trait FlexDirectionProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends 
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction)
     */
-  var flexDirection: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexDirection */ js.Any, 
-      ThemeType
-    ]
-  ] = js.undefined
+  var flexDirection: js.UndefOr[ResponsiveValue[FlexDirection, ThemeType]] = js.undefined
 }
 object FlexDirectionProps {
   
@@ -28,19 +24,12 @@ object FlexDirectionProps {
   
   extension [Self <: FlexDirectionProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & FlexDirectionProps[ThemeType]) {
     
-    inline def setFlexDirection(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexDirection */ js.Any, 
-          ThemeType
-        ]
-    ): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
+    inline def setFlexDirection(value: ResponsiveValue[FlexDirection, ThemeType]): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
     
     inline def setFlexDirectionNull: Self = StObject.set(x, "flexDirection", null)
     
     inline def setFlexDirectionUndefined: Self = StObject.set(x, "flexDirection", js.undefined)
     
-    inline def setFlexDirectionVarargs(
-      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexDirection */ js.Any) | Null)*
-    ): Self = StObject.set(x, "flexDirection", js.Array(value :_*))
+    inline def setFlexDirectionVarargs(value: (FlexDirection | Null)*): Self = StObject.set(x, "flexDirection", js.Array(value*))
   }
 }

@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait QueryPagePerpageRef extends StObject {
   
-  var path: AlertnumberOwner
+  var path: AlertnumberOwnerRepo
   
   var query: PagePerpageRef
 }
 object QueryPagePerpageRef {
   
-  inline def apply(path: AlertnumberOwner, query: PagePerpageRef): QueryPagePerpageRef = {
+  inline def apply(path: AlertnumberOwnerRepo, query: PagePerpageRef): QueryPagePerpageRef = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryPagePerpageRef]
   }
   
   extension [Self <: QueryPagePerpageRef](x: Self) {
     
-    inline def setPath(value: AlertnumberOwner): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: AlertnumberOwnerRepo): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     inline def setQuery(value: PagePerpageRef): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }

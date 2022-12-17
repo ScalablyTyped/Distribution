@@ -6,38 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RepositoriesRepositoryselectionTotalcount extends StObject {
   
-  var repositories: js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['repository'] */ js.Any
-  ]
+  var repositories: js.Array[Allowupdatebranch]
   
-  /** @example selected */
   var repository_selection: js.UndefOr[String] = js.undefined
   
   var total_count: Double
 }
 object RepositoriesRepositoryselectionTotalcount {
   
-  inline def apply(
-    repositories: js.Array[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['repository'] */ js.Any
-    ],
-    total_count: Double
-  ): RepositoriesRepositoryselectionTotalcount = {
+  inline def apply(repositories: js.Array[Allowupdatebranch], total_count: Double): RepositoriesRepositoryselectionTotalcount = {
     val __obj = js.Dynamic.literal(repositories = repositories.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
     __obj.asInstanceOf[RepositoriesRepositoryselectionTotalcount]
   }
   
   extension [Self <: RepositoriesRepositoryselectionTotalcount](x: Self) {
     
-    inline def setRepositories(
-      value: js.Array[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['repository'] */ js.Any
-        ]
-    ): Self = StObject.set(x, "repositories", value.asInstanceOf[js.Any])
+    inline def setRepositories(value: js.Array[Allowupdatebranch]): Self = StObject.set(x, "repositories", value.asInstanceOf[js.Any])
     
-    inline def setRepositoriesVarargs(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['repository'] */ js.Any)*
-    ): Self = StObject.set(x, "repositories", js.Array(value*))
+    inline def setRepositoriesVarargs(value: Allowupdatebranch*): Self = StObject.set(x, "repositories", js.Array(value*))
     
     inline def setRepository_selection(value: String): Self = StObject.set(x, "repository_selection", value.asInstanceOf[js.Any])
     

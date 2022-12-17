@@ -206,7 +206,7 @@ object libEsmDateInputMod {
       * Props to pass to the `Popover`.
       * Note that `content`, `autoFocus`, and `enforceFocus` cannot be changed.
       */
-    var popoverProps: js.UndefOr[PartialIPopoverProps & js.Object] = js.native
+    var popoverProps: js.UndefOr[PartialIPopoverProps] = js.native
     
     /**
       * Element to render on right side of input.

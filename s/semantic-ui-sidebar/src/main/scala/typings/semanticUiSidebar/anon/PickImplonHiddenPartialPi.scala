@@ -49,7 +49,7 @@ trait PickImplonHiddenPartialPi
   
   def onHidden(): Unit
   @JSName("onHidden")
-  var onHidden_Original: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+  var onHidden_Original: js.ThisFunction0[/* this */ JQuery, Unit]
   
   var onHide: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
@@ -77,9 +77,7 @@ trait PickImplonHiddenPartialPi
 }
 object PickImplonHiddenPartialPi {
   
-  inline def apply(
-    onHidden: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-  ): PickImplonHiddenPartialPi = {
+  inline def apply(onHidden: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonHiddenPartialPi = {
     val __obj = js.Dynamic.literal(onHidden = onHidden.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonHiddenPartialPi]
   }
@@ -146,9 +144,7 @@ object PickImplonHiddenPartialPi {
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    inline def setOnHidden(
-      value: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-    ): Self = StObject.set(x, "onHidden", value.asInstanceOf[js.Any])
+    inline def setOnHidden(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onHidden", value.asInstanceOf[js.Any])
     
     inline def setOnHide(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onHide", value.asInstanceOf[js.Any])
     

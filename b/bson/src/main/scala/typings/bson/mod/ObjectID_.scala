@@ -19,9 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @param inputId - Can be a 24 character hex string, 12 byte binary Buffer, or a number.
   */
-open class ObjectID_ ()
-  extends StObject
-     with ObjectId {
+open class ObjectID_ () extends ObjectId {
   def this(inputId: String) = this()
   def this(inputId: js.typedarray.Uint8Array) = this()
   def this(inputId: scala.Double) = this()

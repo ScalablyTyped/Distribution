@@ -1,6 +1,6 @@
 package typings.babylonjs.BABYLON
 
-import typings.babylonjs.anon.MaxVector3
+import typings.babylonjs.anon.MaxMin
 import typings.babylonjs.anon.OriginalValue
 import typings.babylonjs.anon.PartialIEnvironmentHelperBackgroundYRotation
 import typings.babylonjs.anon.TotalAdditiveWeight
@@ -4030,8 +4030,8 @@ trait Scene
     * @param filterPredicate the predicate - which meshes should be included when calculating the world size
     * @returns {{ min: Vector3; max: Vector3 }} min and max vectors
     */
-  def getWorldExtends(): MaxVector3 = js.native
-  def getWorldExtends(filterPredicate: js.Function1[/* mesh */ AbstractMesh, Boolean]): MaxVector3 = js.native
+  def getWorldExtends(): MaxMin = js.native
+  def getWorldExtends(filterPredicate: js.Function1[/* mesh */ AbstractMesh, Boolean]): MaxMin = js.native
   
   /**
     * Defines the gravity applied to this scene (used only for collisions)

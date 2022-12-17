@@ -2,9 +2,9 @@ package typings.rcNotification
 
 import typings.rcNotification.anon.HolderCallback
 import typings.rcNotification.anon.Left
-import typings.rcNotification.anon.Notice
 import typings.rcNotification.anon.NoticePropskeyKey
 import typings.rcNotification.anon.NotificationPropsgetConta
+import typings.rcNotification.anon.Props
 import typings.rcNotification.esNoticeMod.DivProps
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
@@ -191,7 +191,7 @@ object esNotificationMod {
       */
     var hookRefs: Map[Key, HTMLDivElement] = js.native
     
-    var noticePropsMap: Record[Key, HolderCallback] = js.native
+    var noticePropsMap: Record[Key, Props] = js.native
     
     def remove(removeKey: Key): Unit = js.native
   }
@@ -292,20 +292,20 @@ object esNotificationMod {
   
   trait NotificationState extends StObject {
     
-    var notices: js.Array[Notice]
+    var notices: js.Array[HolderCallback]
   }
   object NotificationState {
     
-    inline def apply(notices: js.Array[Notice]): NotificationState = {
+    inline def apply(notices: js.Array[HolderCallback]): NotificationState = {
       val __obj = js.Dynamic.literal(notices = notices.asInstanceOf[js.Any])
       __obj.asInstanceOf[NotificationState]
     }
     
     extension [Self <: NotificationState](x: Self) {
       
-      inline def setNotices(value: js.Array[Notice]): Self = StObject.set(x, "notices", value.asInstanceOf[js.Any])
+      inline def setNotices(value: js.Array[HolderCallback]): Self = StObject.set(x, "notices", value.asInstanceOf[js.Any])
       
-      inline def setNoticesVarargs(value: Notice*): Self = StObject.set(x, "notices", js.Array(value*))
+      inline def setNoticesVarargs(value: HolderCallback*): Self = StObject.set(x, "notices", js.Array(value*))
     }
   }
 }

@@ -1,12 +1,16 @@
 package typings.jssha.anon
 
+import typings.jssha.distSha1Mod.FixedLengthOptionsNoEncodingType
+import typings.jssha.distSha1Mod.GenericInputType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `2` extends StObject {
+trait `2`
+  extends StObject
+     with FixedLengthOptionsNoEncodingType {
   
-  var b64Pad: js.UndefOr[String] = js.undefined
+  var hmacKey: js.UndefOr[GenericInputType] = js.undefined
 }
 object `2` {
   
@@ -17,8 +21,8 @@ object `2` {
   
   extension [Self <: `2`](x: Self) {
     
-    inline def setB64Pad(value: String): Self = StObject.set(x, "b64Pad", value.asInstanceOf[js.Any])
+    inline def setHmacKey(value: GenericInputType): Self = StObject.set(x, "hmacKey", value.asInstanceOf[js.Any])
     
-    inline def setB64PadUndefined: Self = StObject.set(x, "b64Pad", js.undefined)
+    inline def setHmacKeyUndefined: Self = StObject.set(x, "hmacKey", js.undefined)
   }
 }

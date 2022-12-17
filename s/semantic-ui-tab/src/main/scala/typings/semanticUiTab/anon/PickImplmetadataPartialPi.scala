@@ -60,7 +60,7 @@ trait PickImplmetadataPartialPi
   
   var maxDepth: js.UndefOr[Double] = js.undefined
   
-  var metadata: MetadataSettings & js.UndefOr[MetadataSettings]
+  var metadata: MetadataSettings
   
   var name: js.UndefOr[String] = js.undefined
   
@@ -104,7 +104,7 @@ trait PickImplmetadataPartialPi
 }
 object PickImplmetadataPartialPi {
   
-  inline def apply(metadata: MetadataSettings & js.UndefOr[MetadataSettings]): PickImplmetadataPartialPi = {
+  inline def apply(metadata: MetadataSettings): PickImplmetadataPartialPi = {
     val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmetadataPartialPi]
   }
@@ -179,7 +179,7 @@ object PickImplmetadataPartialPi {
     
     inline def setMaxDepthUndefined: Self = StObject.set(x, "maxDepth", js.undefined)
     
-    inline def setMetadata(value: MetadataSettings & js.UndefOr[MetadataSettings]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: MetadataSettings): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

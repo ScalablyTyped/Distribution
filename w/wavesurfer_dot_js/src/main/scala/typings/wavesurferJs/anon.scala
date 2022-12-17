@@ -10,7 +10,6 @@ import typings.wavesurferJs.srcPluginSpectrogramMod.RGBA
 import typings.wavesurferJs.srcWavesurferMod.default
 import typings.wavesurferJs.typesPluginMod.PluginParams
 import typings.wavesurferJs.typesPluginMod.WaveSurferPlugin
-import typings.wavesurferJs.wavesurferJsInts.`256`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -287,7 +286,7 @@ object anon {
       * Gets or sets the length of the array. This is a number one higher than the highest index in the array.
       */
     /* standard es5 */
-    var length: Double & `256` = js.native
+    var length: Double = js.native
     
     /**
       * Calls a defined callback function on each element of an array, and returns an array that contains the results.

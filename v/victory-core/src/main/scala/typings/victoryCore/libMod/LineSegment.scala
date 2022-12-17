@@ -1,6 +1,7 @@
 package typings.victoryCore.libMod
 
 import typings.react.mod.ReactElement
+import typings.victoryCore.anon.Datum
 import typings.victoryCore.anon.LineComponent
 import typings.victoryCore.libVictoryPrimitivesLineSegmentMod.LineSegmentProps
 import org.scalablytyped.runtime.StObject
@@ -22,6 +23,6 @@ object LineSegment {
   
   @JSImport("victory-core/lib", "LineSegment.propTypes")
   @js.native
-  def propTypes: typings.victoryCore.anon.ClipPath = js.native
-  inline def propTypes_=(x: typings.victoryCore.anon.ClipPath): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+  def propTypes: Datum = js.native
+  inline def propTypes_=(x: Datum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
 }

@@ -6,91 +6,53 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Parents extends StObject {
   
-  var author: Avatarurl | Null
+  /** @description Information about the author of the commit. By default, the `author` will be the authenticated user and the current date. See the `author` and `committer` object below for details. */
+  var author: js.UndefOr[Date] = js.undefined
   
-  /**
-    * Format: uri
-    * @example https://api.github.com/repos/octocat/Hello-World/commits/6dcb09b5b57875f334f61aebed695e2e4193db5e/comments
-    */
-  var comments_url: String
+  /** @description Information about the person who is making the commit. By default, `committer` will use the information set in `author`. See the `author` and `committer` object below for details. */
+  var committer: js.UndefOr[DateEmail] = js.undefined
   
-  var commit: Commentcount
+  /** @description The commit message */
+  var message: String
   
-  var committer: Avatarurl | Null
+  /** @description The SHAs of the commits that were the parents of this commit. If omitted or empty, the commit will be written as a root commit. For a single parent, an array of one SHA should be provided; for a merge commit, an array of more than one should be provided. */
+  var parents: js.UndefOr[js.Array[String]] = js.undefined
   
-  var files: js.UndefOr[js.Array[Bloburl]] = js.undefined
+  /** @description The [PGP signature](https://en.wikipedia.org/wiki/Pretty_Good_Privacy) of the commit. GitHub adds the signature to the `gpgsig` header of the created commit. For a commit signature to be verifiable by Git or GitHub, it must be an ASCII-armored detached PGP signature over the string commit as it would be written to the object database. To pass a `signature` parameter, you need to first manually create a valid PGP signature, which can be complicated. You may find it easier to [use the command line](https://git-scm.com/book/id/v2/Git-Tools-Signing-Your-Work) to create signed commits. */
+  var signature: js.UndefOr[String] = js.undefined
   
-  /**
-    * Format: uri
-    * @example https://github.com/octocat/Hello-World/commit/6dcb09b5b57875f334f61aebed695e2e4193db5e
-    */
-  var html_url: String
-  
-  /** @example MDY6Q29tbWl0NmRjYjA5YjViNTc4NzVmMzM0ZjYxYWViZWQ2OTVlMmU0MTkzZGI1ZQ== */
-  var node_id: String
-  
-  var parents: js.Array[HtmlurlSha]
-  
-  /** @example 6dcb09b5b57875f334f61aebed695e2e4193db5e */
-  var sha: String
-  
-  var stats: js.UndefOr[Deletions] = js.undefined
-  
-  /**
-    * Format: uri
-    * @example https://api.github.com/repos/octocat/Hello-World/commits/6dcb09b5b57875f334f61aebed695e2e4193db5e
-    */
-  var url: String
+  /** @description The SHA of the tree object this commit points to */
+  var tree: String
 }
 object Parents {
   
-  inline def apply(
-    comments_url: String,
-    commit: Commentcount,
-    html_url: String,
-    node_id: String,
-    parents: js.Array[HtmlurlSha],
-    sha: String,
-    url: String
-  ): Parents = {
-    val __obj = js.Dynamic.literal(comments_url = comments_url.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], parents = parents.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], author = null, committer = null)
+  inline def apply(message: String, tree: String): Parents = {
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], tree = tree.asInstanceOf[js.Any])
     __obj.asInstanceOf[Parents]
   }
   
   extension [Self <: Parents](x: Self) {
     
-    inline def setAuthor(value: Avatarurl): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: Date): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    inline def setAuthorNull: Self = StObject.set(x, "author", null)
+    inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
     
-    inline def setComments_url(value: String): Self = StObject.set(x, "comments_url", value.asInstanceOf[js.Any])
+    inline def setCommitter(value: DateEmail): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
     
-    inline def setCommit(value: Commentcount): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+    inline def setCommitterUndefined: Self = StObject.set(x, "committer", js.undefined)
     
-    inline def setCommitter(value: Avatarurl): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    inline def setCommitterNull: Self = StObject.set(x, "committer", null)
+    inline def setParents(value: js.Array[String]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
     
-    inline def setFiles(value: js.Array[Bloburl]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setParentsUndefined: Self = StObject.set(x, "parents", js.undefined)
     
-    inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+    inline def setParentsVarargs(value: String*): Self = StObject.set(x, "parents", js.Array(value*))
     
-    inline def setFilesVarargs(value: Bloburl*): Self = StObject.set(x, "files", js.Array(value*))
+    inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
-    inline def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
+    inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
     
-    inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
-    
-    inline def setParents(value: js.Array[HtmlurlSha]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
-    
-    inline def setParentsVarargs(value: HtmlurlSha*): Self = StObject.set(x, "parents", js.Array(value*))
-    
-    inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
-    
-    inline def setStats(value: Deletions): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
-    
-    inline def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
-    
-    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setTree(value: String): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
   }
 }

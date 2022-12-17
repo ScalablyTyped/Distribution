@@ -8,11 +8,11 @@ trait ParametersQueryArchivedstatePage extends StObject {
   
   var parameters: QueryArchivedstatePage
   
-  var responses: `200Content388`
+  var responses: `200Content470`
 }
 object ParametersQueryArchivedstatePage {
   
-  inline def apply(parameters: QueryArchivedstatePage, responses: `200Content388`): ParametersQueryArchivedstatePage = {
+  inline def apply(parameters: QueryArchivedstatePage, responses: `200Content470`): ParametersQueryArchivedstatePage = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersQueryArchivedstatePage]
   }
@@ -21,6 +21,6 @@ object ParametersQueryArchivedstatePage {
     
     inline def setParameters(value: QueryArchivedstatePage): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content388`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200Content470`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

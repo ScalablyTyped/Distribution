@@ -1,6 +1,6 @@
 package typings.reactNativeSvg.libTypescriptReactNativeSVGMod
 
-import typings.reactNativeSvg.anon.Height
+import typings.reactNativeSvg.anon.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,8 +18,8 @@ object Pattern {
   
   @JSImport("react-native-svg/lib/typescript/ReactNativeSVG", "Pattern.defaultProps")
   @js.native
-  def defaultProps: Height = js.native
-  inline def defaultProps_=(x: Height): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  def defaultProps: X = js.native
+  inline def defaultProps_=(x: X): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
   @JSImport("react-native-svg/lib/typescript/ReactNativeSVG", "Pattern.displayName")
   @js.native

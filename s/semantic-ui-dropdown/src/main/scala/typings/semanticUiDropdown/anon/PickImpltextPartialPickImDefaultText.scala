@@ -16,13 +16,13 @@ trait PickImpltextPartialPickImDefaultText
   
   var placeholderText: js.UndefOr[String] = js.undefined
   
-  var text: String & js.UndefOr[String]
+  var text: String
   
   var value: js.UndefOr[String] = js.undefined
 }
 object PickImpltextPartialPickImDefaultText {
   
-  inline def apply(text: String & js.UndefOr[String]): PickImpltextPartialPickImDefaultText = {
+  inline def apply(text: String): PickImpltextPartialPickImDefaultText = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpltextPartialPickImDefaultText]
   }
@@ -41,7 +41,7 @@ object PickImpltextPartialPickImDefaultText {
     
     inline def setPlaceholderTextUndefined: Self = StObject.set(x, "placeholderText", js.undefined)
     
-    inline def setText(value: String & js.UndefOr[String]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

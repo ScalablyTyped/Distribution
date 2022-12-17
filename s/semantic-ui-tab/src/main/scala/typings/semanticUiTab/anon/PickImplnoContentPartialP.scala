@@ -16,7 +16,7 @@ trait PickImplnoContentPartialP
   
   var missingTab: js.UndefOr[String] = js.undefined
   
-  var noContent: String & js.UndefOr[String]
+  var noContent: String
   
   var path: js.UndefOr[String] = js.undefined
   
@@ -26,7 +26,7 @@ trait PickImplnoContentPartialP
 }
 object PickImplnoContentPartialP {
   
-  inline def apply(noContent: String & js.UndefOr[String]): PickImplnoContentPartialP = {
+  inline def apply(noContent: String): PickImplnoContentPartialP = {
     val __obj = js.Dynamic.literal(noContent = noContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplnoContentPartialP]
   }
@@ -45,7 +45,7 @@ object PickImplnoContentPartialP {
     
     inline def setMissingTabUndefined: Self = StObject.set(x, "missingTab", js.undefined)
     
-    inline def setNoContent(value: String & js.UndefOr[String]): Self = StObject.set(x, "noContent", value.asInstanceOf[js.Any])
+    inline def setNoContent(value: String): Self = StObject.set(x, "noContent", value.asInstanceOf[js.Any])
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

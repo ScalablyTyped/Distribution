@@ -6,27 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `116` extends StObject {
   
-  /** @description The email of the author (or committer) of the commit */
-  var email: js.UndefOr[String] = js.undefined
-  
-  /** @description The name of the author (or committer) of the commit */
-  var name: js.UndefOr[String] = js.undefined
+  @JSName("application/json")
+  var applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['team-membership'] */ js.Any
 }
 object `116` {
   
-  inline def apply(): `116` = {
+  inline def apply(
+    applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['team-membership'] */ js.Any
+  ): `116` = {
     val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`116`]
   }
   
   extension [Self <: `116`](x: Self) {
     
-    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
-    
-    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
-    
-    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    
-    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setApplicationSlashjson(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['team-membership'] */ js.Any
+    ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }
 }

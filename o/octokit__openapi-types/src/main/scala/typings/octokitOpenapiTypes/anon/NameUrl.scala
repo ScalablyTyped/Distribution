@@ -6,37 +6,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NameUrl extends StObject {
   
-  /**
-    * @description The name of the detector used.
-    * @example docker buildtime detector
-    */
+  var id: Double
+  
   var name: String
   
-  /**
-    * @description The url of the detector used.
-    * @example http://example.com/docker-buildtimer-detector
-    */
+  /** Format: uri */
   var url: String
-  
-  /**
-    * @description The version of the detector used.
-    * @example 1.0.0
-    */
-  var version: String
 }
 object NameUrl {
   
-  inline def apply(name: String, url: String, version: String): NameUrl = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+  inline def apply(id: Double, name: String, url: String): NameUrl = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[NameUrl]
   }
   
   extension [Self <: NameUrl](x: Self) {
     
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
-    
-    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

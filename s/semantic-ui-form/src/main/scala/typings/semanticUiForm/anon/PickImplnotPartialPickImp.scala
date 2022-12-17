@@ -52,7 +52,7 @@ trait PickImplnotPartialPickImp
   
   var minLength: js.UndefOr[String] = js.undefined
   
-  var not: String & js.UndefOr[String]
+  var not: String
   
   var notExactly: js.UndefOr[String] = js.undefined
   
@@ -64,7 +64,7 @@ trait PickImplnotPartialPickImp
 }
 object PickImplnotPartialPickImp {
   
-  inline def apply(not: String & js.UndefOr[String]): PickImplnotPartialPickImp = {
+  inline def apply(not: String): PickImplnotPartialPickImp = {
     val __obj = js.Dynamic.literal(not = not.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplnotPartialPickImp]
   }
@@ -155,7 +155,7 @@ object PickImplnotPartialPickImp {
     
     inline def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
     
-    inline def setNot(value: String & js.UndefOr[String]): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
+    inline def setNot(value: String): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
     
     inline def setNotExactly(value: String): Self = StObject.set(x, "notExactly", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,7 @@ trait PickImpllastResortPartial
   
   var jitter: js.UndefOr[Double] = js.undefined
   
-  var lastResort: (Boolean | String) & (js.UndefOr[Boolean | String])
+  var lastResort: Boolean | String
   
   var maxSearchDepth: js.UndefOr[Double] = js.undefined
   
@@ -120,7 +120,7 @@ trait PickImpllastResortPartial
 }
 object PickImpllastResortPartial {
   
-  inline def apply(lastResort: (Boolean | String) & (js.UndefOr[Boolean | String])): PickImpllastResortPartial = {
+  inline def apply(lastResort: Boolean | String): PickImpllastResortPartial = {
     val __obj = js.Dynamic.literal(lastResort = lastResort.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpllastResortPartial]
   }
@@ -195,7 +195,7 @@ object PickImpllastResortPartial {
     
     inline def setJitterUndefined: Self = StObject.set(x, "jitter", js.undefined)
     
-    inline def setLastResort(value: (Boolean | String) & (js.UndefOr[Boolean | String])): Self = StObject.set(x, "lastResort", value.asInstanceOf[js.Any])
+    inline def setLastResort(value: Boolean | String): Self = StObject.set(x, "lastResort", value.asInstanceOf[js.Any])
     
     inline def setMaxSearchDepth(value: Double): Self = StObject.set(x, "maxSearchDepth", value.asInstanceOf[js.Any])
     

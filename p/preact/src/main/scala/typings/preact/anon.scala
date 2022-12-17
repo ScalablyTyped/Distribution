@@ -1,7 +1,7 @@
 package typings.preact
 
-import typings.preact.srcInternalMod.ComponentChild
-import typings.preact.srcInternalMod.ComponentChildren
+import typings.preact.mod.ComponentChild
+import typings.preact.mod.ComponentChildren
 import typings.std.DOMHighResTimeStamp
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
@@ -10,18 +10,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait `0` extends StObject {
+  trait `0`[T] extends StObject {
     
-    var children: ComponentChildren
+    def children(value: T): ComponentChildren
   }
   object `0` {
     
-    inline def apply(): `0` = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[`0`]
+    inline def apply[T](children: T => ComponentChildren): `0`[T] = {
+      val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
+      __obj.asInstanceOf[`0`[T]]
     }
     
-    extension [Self <: `0`](x: Self) {
+    extension [Self <: `0`[?], T](x: Self & `0`[T]) {
+      
+      inline def setChildren(value: T => ComponentChildren): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+    }
+  }
+  
+  trait Children extends StObject {
+    
+    var children: ComponentChildren
+  }
+  object Children {
+    
+    inline def apply(): Children = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Children]
+    }
+    
+    extension [Self <: Children](x: Self) {
       
       inline def setChildren(value: ComponentChildren): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -33,26 +50,9 @@ object anon {
     }
   }
   
-  trait Children[T] extends StObject {
-    
-    def children(value: T): typings.preact.mod.ComponentChildren
-  }
-  object Children {
-    
-    inline def apply[T](children: T => typings.preact.mod.ComponentChildren): Children[T] = {
-      val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
-      __obj.asInstanceOf[Children[T]]
-    }
-    
-    extension [Self <: Children[?], T](x: Self & Children[T]) {
-      
-      inline def setChildren(value: T => typings.preact.mod.ComponentChildren): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
-    }
-  }
-  
   trait ChildrenComponentChildren extends StObject {
     
-    var children: typings.preact.mod.ComponentChildren
+    var children: typings.preact.srcInternalMod.ComponentChildren
   }
   object ChildrenComponentChildren {
     
@@ -63,13 +63,13 @@ object anon {
     
     extension [Self <: ChildrenComponentChildren](x: Self) {
       
-      inline def setChildren(value: typings.preact.mod.ComponentChildren): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: typings.preact.srcInternalMod.ComponentChildren): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenNull: Self = StObject.set(x, "children", null)
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: typings.preact.mod.ComponentChild*): Self = StObject.set(x, "children", js.Array(value*))
+      inline def setChildrenVarargs(value: typings.preact.srcInternalMod.ComponentChild*): Self = StObject.set(x, "children", js.Array(value*))
     }
   }
   
@@ -109,7 +109,7 @@ object anon {
   
   trait Ref[RefType] extends StObject {
     
-    var children: js.UndefOr[typings.preact.mod.ComponentChildren] = js.undefined
+    var children: js.UndefOr[ComponentChildren] = js.undefined
     
     var ref: js.UndefOr[typings.preact.mod.Ref[RefType]] = js.undefined
   }
@@ -122,13 +122,13 @@ object anon {
     
     extension [Self <: Ref[?], RefType](x: Self & Ref[RefType]) {
       
-      inline def setChildren(value: typings.preact.mod.ComponentChildren): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ComponentChildren): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenNull: Self = StObject.set(x, "children", null)
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: typings.preact.mod.ComponentChild*): Self = StObject.set(x, "children", js.Array(value*))
+      inline def setChildrenVarargs(value: ComponentChild*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setRef(value: typings.preact.mod.Ref[RefType]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
@@ -284,7 +284,7 @@ object anon {
   
   trait Value[T] extends StObject {
     
-    var children: typings.preact.mod.ComponentChildren
+    var children: ComponentChildren
     
     var value: T
   }
@@ -297,13 +297,13 @@ object anon {
     
     extension [Self <: Value[?], T](x: Self & Value[T]) {
       
-      inline def setChildren(value: typings.preact.mod.ComponentChildren): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ComponentChildren): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenNull: Self = StObject.set(x, "children", null)
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: typings.preact.mod.ComponentChild*): Self = StObject.set(x, "children", js.Array(value*))
+      inline def setChildrenVarargs(value: ComponentChild*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

@@ -2,11 +2,11 @@ package typings.reactBootstrapTableNext.mod
 
 import typings.react.mod.CSSProperties
 import typings.react.mod.global.JSX.Element
-import typings.reactBootstrapTableNext.anon.DataField
 import typings.reactBootstrapTableNext.anon.DataSize
-import typings.reactBootstrapTableNext.anon.Options
 import typings.reactBootstrapTableNext.anon.Order
 import typings.reactBootstrapTableNext.anon.Partialpaginationbooleanf
+import typings.reactBootstrapTableNext.anon.SortCaret
+import typings.reactBootstrapTableNext.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +39,7 @@ trait BootstrapTableProps[T /* <: js.Object */, K] extends StObject {
   
   var defaultSortDirection: js.UndefOr[SortOrder] = js.undefined
   
-  var defaultSorted: js.UndefOr[js.Array[DataField]] = js.undefined
+  var defaultSorted: js.UndefOr[js.Array[Order]] = js.undefined
   
   var expandRow: js.UndefOr[ExpandRowProps[T, K]] = js.undefined
   
@@ -81,7 +81,7 @@ trait BootstrapTableProps[T /* <: js.Object */, K] extends StObject {
   
   var overlay: js.UndefOr[Any] = js.undefined
   
-  var pagination: js.UndefOr[Options] = js.undefined
+  var pagination: js.UndefOr[`0`] = js.undefined
   
   var parentClassName: js.UndefOr[
     String | (js.Function3[/* isExpand */ Boolean, /* row */ T, /* rowIndex */ Double, String])
@@ -101,7 +101,7 @@ trait BootstrapTableProps[T /* <: js.Object */, K] extends StObject {
   
   var selectRow: js.UndefOr[SelectRowProps[T]] = js.undefined
   
-  var sort: js.UndefOr[Order] = js.undefined
+  var sort: js.UndefOr[SortCaret] = js.undefined
   
   var striped: js.UndefOr[Boolean] = js.undefined
   
@@ -158,11 +158,11 @@ object BootstrapTableProps {
     
     inline def setDefaultSortDirectionUndefined: Self = StObject.set(x, "defaultSortDirection", js.undefined)
     
-    inline def setDefaultSorted(value: js.Array[DataField]): Self = StObject.set(x, "defaultSorted", value.asInstanceOf[js.Any])
+    inline def setDefaultSorted(value: js.Array[Order]): Self = StObject.set(x, "defaultSorted", value.asInstanceOf[js.Any])
     
     inline def setDefaultSortedUndefined: Self = StObject.set(x, "defaultSorted", js.undefined)
     
-    inline def setDefaultSortedVarargs(value: DataField*): Self = StObject.set(x, "defaultSorted", js.Array(value*))
+    inline def setDefaultSortedVarargs(value: Order*): Self = StObject.set(x, "defaultSorted", js.Array(value*))
     
     inline def setExpandRow(value: ExpandRowProps[T, K]): Self = StObject.set(x, "expandRow", value.asInstanceOf[js.Any])
     
@@ -232,7 +232,7 @@ object BootstrapTableProps {
     
     inline def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
     
-    inline def setPagination(value: Options): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
+    inline def setPagination(value: `0`): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
     
     inline def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
     
@@ -270,7 +270,7 @@ object BootstrapTableProps {
     
     inline def setSelectRowUndefined: Self = StObject.set(x, "selectRow", js.undefined)
     
-    inline def setSort(value: Order): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: SortCaret): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     

@@ -12,11 +12,11 @@ trait PickImplmobilePartialPickIos
   
   var ios: js.UndefOr[js.RegExp] = js.undefined
   
-  var mobile: js.RegExp & js.UndefOr[js.RegExp]
+  var mobile: js.RegExp
 }
 object PickImplmobilePartialPickIos {
   
-  inline def apply(mobile: js.RegExp & js.UndefOr[js.RegExp]): PickImplmobilePartialPickIos = {
+  inline def apply(mobile: js.RegExp): PickImplmobilePartialPickIos = {
     val __obj = js.Dynamic.literal(mobile = mobile.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmobilePartialPickIos]
   }
@@ -27,6 +27,6 @@ object PickImplmobilePartialPickIos {
     
     inline def setIosUndefined: Self = StObject.set(x, "ios", js.undefined)
     
-    inline def setMobile(value: js.RegExp & js.UndefOr[js.RegExp]): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
+    inline def setMobile(value: js.RegExp): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
   }
 }

@@ -36,7 +36,7 @@ trait PickImplhideDelayPartialP
   
   var fields: js.UndefOr[FieldsSettings] = js.undefined
   
-  var hideDelay: Double & js.UndefOr[Double]
+  var hideDelay: Double
   
   var maxResults: js.UndefOr[Double] = js.undefined
   
@@ -92,7 +92,7 @@ trait PickImplhideDelayPartialP
 }
 object PickImplhideDelayPartialP {
   
-  inline def apply(hideDelay: Double & js.UndefOr[Double]): PickImplhideDelayPartialP = {
+  inline def apply(hideDelay: Double): PickImplhideDelayPartialP = {
     val __obj = js.Dynamic.literal(hideDelay = hideDelay.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplhideDelayPartialP]
   }
@@ -131,7 +131,7 @@ object PickImplhideDelayPartialP {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setHideDelay(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "hideDelay", value.asInstanceOf[js.Any])
+    inline def setHideDelay(value: Double): Self = StObject.set(x, "hideDelay", value.asInstanceOf[js.Any])
     
     inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

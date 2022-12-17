@@ -14,7 +14,7 @@ trait PickImplanimateChildrenPa
   extends StObject
      with Param {
   
-  var animateChildren: Boolean & js.UndefOr[Boolean]
+  var animateChildren: Boolean
   
   var className: js.UndefOr[ClassNameSettings] = js.undefined
   
@@ -60,14 +60,14 @@ trait PickImplanimateChildrenPa
 }
 object PickImplanimateChildrenPa {
   
-  inline def apply(animateChildren: Boolean & js.UndefOr[Boolean]): PickImplanimateChildrenPa = {
+  inline def apply(animateChildren: Boolean): PickImplanimateChildrenPa = {
     val __obj = js.Dynamic.literal(animateChildren = animateChildren.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplanimateChildrenPa]
   }
   
   extension [Self <: PickImplanimateChildrenPa](x: Self) {
     
-    inline def setAnimateChildren(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "animateChildren", value.asInstanceOf[js.Any])
+    inline def setAnimateChildren(value: Boolean): Self = StObject.set(x, "animateChildren", value.asInstanceOf[js.Any])
     
     inline def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

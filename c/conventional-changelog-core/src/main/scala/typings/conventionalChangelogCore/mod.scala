@@ -438,88 +438,14 @@ object mod {
     }
   }
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Options<TCommit, TContext> * / any */ trait WriterOptions[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */] extends StObject {
-    
-    /**
-      * A function to get debug information.
-      *
-      * @default
-      * options.debug
-      */
-    var debug: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: conventional-changelog-writer.conventional-changelog-writer.Options<conventional-commits-parser.conventional-commits-parser.Commit<string | number | symbol>, conventional-changelog-writer.conventional-changelog-writer.Context>['debug'] */ js.Any
-      ] = js.undefined
-    
-    /**
-      * If `true`, the stream will flush out the last bit of commits (could be empty)
-      * to changelog.
-      *
-      * @default
-      * options.outputUnreleased
-      */
-    var doFlush: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: conventional-changelog-writer.conventional-changelog-writer.Options<conventional-commits-parser.conventional-commits-parser.Commit<string | number | symbol>, conventional-changelog-writer.conventional-changelog-writer.Context>['doFlush'] */ js.Any
-      ] = js.undefined
-    
-    /**
-      * Last chance to modify your context before generating a changelog.
-      *
-      * Finalize context is used for generating above context.
-      *
-      * @remarks
-      * If you overwrite this value the above context defaults will be gone.
-      */
-    var finalizeContext: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: conventional-changelog-writer.conventional-changelog-writer.Options<TCommit, conventional-changelog-core.conventional-changelog-core.MergedContext<TContext>>['finalizeContext'] */ js.Any
-      ] = js.undefined
-    
-    /**
-      * The normal order means reverse chronological order. `reverse` order means
-      * chronological order. Are the commits from upstream in the reverse order? You
-      * should only worry about this when generating more than one blocks of logs
-      * based on `generateOn`. If you find the last commit is in the wrong block
-      * inverse this value.
-      *
-      * @default
-      * options.append
-      */
-    var reverse: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: conventional-changelog-writer.conventional-changelog-writer.Options<conventional-commits-parser.conventional-commits-parser.Commit<string | number | symbol>, conventional-changelog-writer.conventional-changelog-writer.Context>['reverse'] */ js.Any
-      ] = js.undefined
-  }
+  trait WriterOptions[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */]
+    extends StObject
+       with typings.conventionalChangelogWriter.mod.Options[TCommit, MergedContext[TContext]]
   object WriterOptions {
     
     inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](): WriterOptions[TCommit, TContext] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WriterOptions[TCommit, TContext]]
-    }
-    
-    extension [Self <: WriterOptions[?, ?], TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](x: Self & (WriterOptions[TCommit, TContext])) {
-      
-      inline def setDebug(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: conventional-changelog-writer.conventional-changelog-writer.Options<conventional-commits-parser.conventional-commits-parser.Commit<string | number | symbol>, conventional-changelog-writer.conventional-changelog-writer.Context>['debug'] */ js.Any
-      ): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
-      
-      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
-      
-      inline def setDoFlush(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: conventional-changelog-writer.conventional-changelog-writer.Options<conventional-commits-parser.conventional-commits-parser.Commit<string | number | symbol>, conventional-changelog-writer.conventional-changelog-writer.Context>['doFlush'] */ js.Any
-      ): Self = StObject.set(x, "doFlush", value.asInstanceOf[js.Any])
-      
-      inline def setDoFlushUndefined: Self = StObject.set(x, "doFlush", js.undefined)
-      
-      inline def setFinalizeContext(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: conventional-changelog-writer.conventional-changelog-writer.Options<TCommit, conventional-changelog-core.conventional-changelog-core.MergedContext<TContext>>['finalizeContext'] */ js.Any
-      ): Self = StObject.set(x, "finalizeContext", value.asInstanceOf[js.Any])
-      
-      inline def setFinalizeContextUndefined: Self = StObject.set(x, "finalizeContext", js.undefined)
-      
-      inline def setReverse(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: conventional-changelog-writer.conventional-changelog-writer.Options<conventional-commits-parser.conventional-commits-parser.Commit<string | number | symbol>, conventional-changelog-writer.conventional-changelog-writer.Context>['reverse'] */ js.Any
-      ): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
-      
-      inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
     }
   }
 }

@@ -51,5 +51,5 @@ object modalbox {
   
   @JSGlobal("webix.modalbox.pull")
   @js.native
-  val pull: obj & typings.webix.webix.obj = js.native
+  val pull: obj = js.native
 }

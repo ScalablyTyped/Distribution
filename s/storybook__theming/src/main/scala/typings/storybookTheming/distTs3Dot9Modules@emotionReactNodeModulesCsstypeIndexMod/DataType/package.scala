@@ -57,7 +57,7 @@ type ContentList = _ContentList | String
 */
 type CubicBezierTimingFunction = _CubicBezierTimingFunction | String
 
-type Dasharray[TLength] = TLength | String | (Double & js.Object)
+type Dasharray[TLength] = TLength | String | Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.DataType.CubicBezierTimingFunction
@@ -94,12 +94,12 @@ type FontStretchAbsolute = _FontStretchAbsolute | String
 /* Rewritten from type alias, can be one of: 
   - typings.storybookTheming.storybookThemingStrings.bold
   - typings.storybookTheming.storybookThemingStrings.normal
-  - scala.Double & js.Object
+  - scala.Double
   - java.lang.String
 */
-type FontWeightAbsolute = _FontWeightAbsolute | (Double & js.Object) | String
+type FontWeightAbsolute = _FontWeightAbsolute | Double | String
 
-type GridLine = auto | String | (Double & js.Object)
+type GridLine = auto | String | Double
 
 /* Rewritten from type alias, can be one of: 
   - TLength
@@ -163,9 +163,9 @@ type RepeatStyle = _RepeatStyle | String
   - typings.storybookTheming.storybookThemingStrings.paused
   - typings.storybookTheming.storybookThemingStrings.running
   - java.lang.String
-  - scala.Double & js.Object
+  - scala.Double
 */
-type SingleAnimation[TTime] = _SingleAnimation[TTime] | (Double & js.Object) | TTime | String
+type SingleAnimation[TTime] = _SingleAnimation[TTime] | TTime | String | Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.DataType.EasingFunction

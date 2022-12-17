@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.webpack.anon.Extensions
+  - typings.webpack.anon.Context
   - typings.webpack.anon.Content
 */
 trait DllReferencePluginOptions extends StObject
@@ -16,8 +16,8 @@ object DllReferencePluginOptions {
     __obj.asInstanceOf[typings.webpack.anon.Content]
   }
   
-  inline def Extensions(manifest: String | DllReferencePluginOptionsManifest): typings.webpack.anon.Extensions = {
+  inline def Context(manifest: String | DllReferencePluginOptionsManifest): typings.webpack.anon.Context = {
     val __obj = js.Dynamic.literal(manifest = manifest.asInstanceOf[js.Any])
-    __obj.asInstanceOf[typings.webpack.anon.Extensions]
+    __obj.asInstanceOf[typings.webpack.anon.Context]
   }
 }

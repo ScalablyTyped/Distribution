@@ -144,11 +144,11 @@ object badgeMod {
   
   @JSImport("baseui/badge", "StyledHintDot")
   @js.native
-  val StyledHintDot: StyletronComponent[div, Hidden] = js.native
+  val StyledHintDot: StyletronComponent[div, ColorHidden] = js.native
   
   @JSImport("baseui/badge", "StyledNotificationCircle")
   @js.native
-  val StyledNotificationCircle: StyletronComponent[div, ColorHidden] = js.native
+  val StyledNotificationCircle: StyletronComponent[div, Hidden] = js.native
   
   @JSImport("baseui/badge", "StyledPositioner")
   @js.native

@@ -29,6 +29,6 @@ object MinWidthProps {
     
     inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
-    inline def setMinWidthVarargs(value: (TVal | Null)*): Self = StObject.set(x, "minWidth", js.Array(value :_*))
+    inline def setMinWidthVarargs(value: (TVal | Null)*): Self = StObject.set(x, "minWidth", js.Array(value*))
   }
 }

@@ -2,7 +2,7 @@ package typings.victoryCore
 
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
-import typings.victoryCore.anon.Children
+import typings.victoryCore.anon.ClipId
 import typings.victoryCore.libVictoryUtilCommonPropsMod.VictoryCommonPrimitiveProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,8 +20,8 @@ object libVictoryPrimitivesClipPathMod {
     
     @JSImport("victory-core/lib/victory-primitives/clip-path", "ClipPath.propTypes")
     @js.native
-    def propTypes: Children = js.native
-    inline def propTypes_=(x: Children): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    def propTypes: ClipId = js.native
+    inline def propTypes_=(x: ClipId): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
   trait ClipPathProps

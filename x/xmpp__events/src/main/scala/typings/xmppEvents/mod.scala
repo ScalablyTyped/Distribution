@@ -30,7 +30,7 @@ object mod {
   
   @JSImport("@xmpp/events", "EventEmitter")
   @js.native
-  val EventEmitter: TypeofEventEmitter & Instantiable0[typings.node.eventsMod.EventEmitter] = js.native
+  val EventEmitter: Instantiable0[typings.node.eventsMod.EventEmitter] & TypeofEventEmitter = js.native
   type EventEmitter = typings.node.eventsMod.EventEmitter
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */

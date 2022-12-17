@@ -265,10 +265,10 @@ object mod extends Shortcut {
   @js.native
   trait MoonConstructor
     extends StObject
-       with Instantiable0[Instance[js.Object & (Record[String, Any])]]
+       with Instantiable0[Instance[Record[String, Any]]]
        with Instantiable1[
           /* options */ ConstructorOptions[String, js.Object, js.Object], 
-          Instance[js.Object & (Record[String, Any])]
+          Instance[Record[String, Any]]
         ]
   
   @js.native

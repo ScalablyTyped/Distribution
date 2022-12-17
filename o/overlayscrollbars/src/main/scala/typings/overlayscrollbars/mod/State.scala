@@ -2,8 +2,8 @@ package typings.overlayscrollbars.mod
 
 import typings.overlayscrollbars.anon.B
 import typings.overlayscrollbars.anon.Height
-import typings.overlayscrollbars.anon.X
 import typings.overlayscrollbars.anon.XBoolean
+import typings.overlayscrollbars.anon.XNumber
 import typings.overlayscrollbars.anon.Xs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -27,7 +27,7 @@ trait State extends StObject {
   
   var hostSize: Height
   
-  var overflowAmount: X
+  var overflowAmount: XNumber
   
   var padding: B
   
@@ -48,7 +48,7 @@ object State {
     heightAuto: Boolean,
     hideOverflow: Xs,
     hostSize: Height,
-    overflowAmount: X,
+    overflowAmount: XNumber,
     padding: B,
     sleeping: Boolean,
     viewportSize: Height,
@@ -76,7 +76,7 @@ object State {
     
     inline def setHostSize(value: Height): Self = StObject.set(x, "hostSize", value.asInstanceOf[js.Any])
     
-    inline def setOverflowAmount(value: X): Self = StObject.set(x, "overflowAmount", value.asInstanceOf[js.Any])
+    inline def setOverflowAmount(value: XNumber): Self = StObject.set(x, "overflowAmount", value.asInstanceOf[js.Any])
     
     inline def setPadding(value: B): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     

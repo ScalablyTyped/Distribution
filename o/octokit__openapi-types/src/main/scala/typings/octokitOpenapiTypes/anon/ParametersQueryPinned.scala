@@ -8,11 +8,11 @@ trait ParametersQueryPinned extends StObject {
   
   var parameters: QueryPinned
   
-  var responses: `200Content59`
+  var responses: `200Content108`
 }
 object ParametersQueryPinned {
   
-  inline def apply(parameters: QueryPinned, responses: `200Content59`): ParametersQueryPinned = {
+  inline def apply(parameters: QueryPinned, responses: `200Content108`): ParametersQueryPinned = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersQueryPinned]
   }
@@ -21,6 +21,6 @@ object ParametersQueryPinned {
     
     inline def setParameters(value: QueryPinned): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content59`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200Content108`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

@@ -141,13 +141,13 @@ trait PickImplurlDataPartialPic
   
   var url: js.UndefOr[String | `false`] = js.undefined
   
-  var urlData: (Any | `false`) & (js.UndefOr[Any | `false`])
+  var urlData: Any | `false`
   
   var verbose: js.UndefOr[Boolean] = js.undefined
 }
 object PickImplurlDataPartialPic {
   
-  inline def apply(urlData: (Any | `false`) & (js.UndefOr[Any | `false`])): PickImplurlDataPartialPic = {
+  inline def apply(urlData: Any | `false`): PickImplurlDataPartialPic = {
     val __obj = js.Dynamic.literal(urlData = urlData.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplurlDataPartialPic]
   }
@@ -336,7 +336,7 @@ object PickImplurlDataPartialPic {
     
     inline def setUrl(value: String | `false`): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    inline def setUrlData(value: (Any | `false`) & (js.UndefOr[Any | `false`])): Self = StObject.set(x, "urlData", value.asInstanceOf[js.Any])
+    inline def setUrlData(value: Any | `false`): Self = StObject.set(x, "urlData", value.asInstanceOf[js.Any])
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     

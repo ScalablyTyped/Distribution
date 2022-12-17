@@ -7,8 +7,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@JSImport("webpack", "Dependency")
 @js.native
-trait Dependency extends StObject {
+open class Dependency () extends StObject {
   
   def category: String = js.native
   
@@ -91,4 +92,29 @@ trait Dependency extends StObject {
   def updateHash(hash: Hash, context: UpdateHashContextDependency): Unit = js.native
   
   var weak: Boolean = js.native
+}
+object Dependency {
+  
+  @JSImport("webpack", "Dependency")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("webpack", "Dependency.EXPORTS_OBJECT_REFERENCED")
+  @js.native
+  def EXPORTS_OBJECT_REFERENCED: js.Array[js.Array[String]] = js.native
+  inline def EXPORTS_OBJECT_REFERENCED_=(x: js.Array[js.Array[String]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EXPORTS_OBJECT_REFERENCED")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("webpack", "Dependency.NO_EXPORTS_REFERENCED")
+  @js.native
+  def NO_EXPORTS_REFERENCED: js.Array[js.Array[String]] = js.native
+  inline def NO_EXPORTS_REFERENCED_=(x: js.Array[js.Array[String]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO_EXPORTS_REFERENCED")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  /* was `typeof TRANSITIVE` */
+  @JSImport("webpack", "Dependency.TRANSITIVE")
+  @js.native
+  def TRANSITIVE: js.Symbol = js.native
+  inline def TRANSITIVE_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TRANSITIVE")(x.asInstanceOf[js.Any])
 }

@@ -56,7 +56,7 @@ trait PickImpluseCSSPartialPick
   
   var transition: js.UndefOr[String] = js.undefined
   
-  var useCSS: Boolean & js.UndefOr[Boolean]
+  var useCSS: Boolean
   
   var variation: js.UndefOr[`false` | String] = js.undefined
   
@@ -64,7 +64,7 @@ trait PickImpluseCSSPartialPick
 }
 object PickImpluseCSSPartialPick {
   
-  inline def apply(useCSS: Boolean & js.UndefOr[Boolean]): PickImpluseCSSPartialPick = {
+  inline def apply(useCSS: Boolean): PickImpluseCSSPartialPick = {
     val __obj = js.Dynamic.literal(useCSS = useCSS.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpluseCSSPartialPick]
   }
@@ -143,7 +143,7 @@ object PickImpluseCSSPartialPick {
     
     inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
     
-    inline def setUseCSS(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "useCSS", value.asInstanceOf[js.Any])
+    inline def setUseCSS(value: Boolean): Self = StObject.set(x, "useCSS", value.asInstanceOf[js.Any])
     
     inline def setVariation(value: `false` | String): Self = StObject.set(x, "variation", value.asInstanceOf[js.Any])
     

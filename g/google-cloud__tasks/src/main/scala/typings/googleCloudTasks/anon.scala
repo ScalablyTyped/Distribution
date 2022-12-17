@@ -41,18 +41,18 @@ object anon {
   /* Inlined @google-cloud/tasks.@google-cloud/tasks.EnhancedPick<@google-cloud/tasks.@google-cloud/tasks.Queue, 'name', 'appEngineHttpQueue' | 'rateLimits' | 'retryConfig'> */
   trait EnhancedPickQueuenameappE extends StObject {
     
-    var name: String & js.UndefOr[String]
+    var name: String
   }
   object EnhancedPickQueuenameappE {
     
-    inline def apply(name: String & js.UndefOr[String]): EnhancedPickQueuenameappE = {
+    inline def apply(name: String): EnhancedPickQueuenameappE = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[EnhancedPickQueuenameappE]
     }
     
     extension [Self <: EnhancedPickQueuenameappE](x: Self) {
       
-      inline def setName(value: String & js.UndefOr[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

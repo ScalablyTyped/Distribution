@@ -38,44 +38,12 @@ object distPackedHistogramMod {
     */
   @JSImport("hdr-histogram-js/dist/PackedHistogram", JSImport.Default)
   @js.native
-  open class default protected ()
-    extends StObject
-       with PackedHistogram {
+  open class default protected () extends PackedHistogram {
     def this(
       lowestDiscernibleValue: Double,
       highestTrackableValue: Double,
       numberOfSignificantValueDigits: Double
     ) = this()
-    
-    /* protected */ /* CompleteClass */
-    override def _getEstimatedFootprintInBytes(): Double = js.native
-    
-    /* CompleteClass */
-    override def addToCountAtIndex(index: Double, value: Double): Unit = js.native
-    
-    /* CompleteClass */
-    override def clearCounts(): Unit = js.native
-    
-    /* CompleteClass */
-    override def copyCorrectedForCoordinatedOmission(expectedIntervalBetweenValueSamples: Double): PackedHistogram = js.native
-    
-    /* CompleteClass */
-    var encodeIntoCompressedBase64: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof doEncodeIntoCompressedBase64 */ Any = js.native
-    
-    /* CompleteClass */
-    override def getCountAtIndex(index: Double): Double = js.native
-    
-    /* CompleteClass */
-    override def incrementCountAtIndex(index: Double): Unit = js.native
-    
-    /* CompleteClass */
-    var packedCounts: PackedArray = js.native
-    
-    /* CompleteClass */
-    override def resize(newHighestTrackableValue: Double): Unit = js.native
-    
-    /* CompleteClass */
-    override def setCountAtIndex(index: Double, value: Double): Unit = js.native
   }
   
   /**
@@ -106,65 +74,9 @@ object distPackedHistogramMod {
     * incurs allocation and copying of internal data structures.
     * <p>
     */
-  trait PackedHistogram
-    extends StObject
-       with JsHistogram {
+  @js.native
+  trait PackedHistogram extends JsHistogram {
     
-    /* protected */ def _getEstimatedFootprintInBytes(): Double
-    
-    def addToCountAtIndex(index: Double, value: Double): Unit
-    
-    def clearCounts(): Unit
-    
-    def copyCorrectedForCoordinatedOmission(expectedIntervalBetweenValueSamples: Double): PackedHistogram
-    
-    def getCountAtIndex(index: Double): Double
-    
-    def incrementCountAtIndex(index: Double): Unit
-    
-    var packedCounts: PackedArray
-    
-    def resize(newHighestTrackableValue: Double): Unit
-    
-    def setCountAtIndex(index: Double, value: Double): Unit
-  }
-  object PackedHistogram {
-    
-    inline def apply(
-      _getEstimatedFootprintInBytes: () => Double,
-      addToCountAtIndex: (Double, Double) => Unit,
-      clearCounts: () => Unit,
-      copyCorrectedForCoordinatedOmission: Double => PackedHistogram,
-      encodeIntoCompressedBase64: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof doEncodeIntoCompressedBase64 */ Any,
-      getCountAtIndex: Double => Double,
-      incrementCountAtIndex: Double => Unit,
-      packedCounts: PackedArray,
-      resize: Double => Unit,
-      setCountAtIndex: (Double, Double) => Unit
-    ): PackedHistogram = {
-      val __obj = js.Dynamic.literal(_getEstimatedFootprintInBytes = js.Any.fromFunction0(_getEstimatedFootprintInBytes), addToCountAtIndex = js.Any.fromFunction2(addToCountAtIndex), clearCounts = js.Any.fromFunction0(clearCounts), copyCorrectedForCoordinatedOmission = js.Any.fromFunction1(copyCorrectedForCoordinatedOmission), encodeIntoCompressedBase64 = encodeIntoCompressedBase64.asInstanceOf[js.Any], getCountAtIndex = js.Any.fromFunction1(getCountAtIndex), incrementCountAtIndex = js.Any.fromFunction1(incrementCountAtIndex), packedCounts = packedCounts.asInstanceOf[js.Any], resize = js.Any.fromFunction1(resize), setCountAtIndex = js.Any.fromFunction2(setCountAtIndex))
-      __obj.asInstanceOf[PackedHistogram]
-    }
-    
-    extension [Self <: PackedHistogram](x: Self) {
-      
-      inline def setAddToCountAtIndex(value: (Double, Double) => Unit): Self = StObject.set(x, "addToCountAtIndex", js.Any.fromFunction2(value))
-      
-      inline def setClearCounts(value: () => Unit): Self = StObject.set(x, "clearCounts", js.Any.fromFunction0(value))
-      
-      inline def setCopyCorrectedForCoordinatedOmission(value: Double => PackedHistogram): Self = StObject.set(x, "copyCorrectedForCoordinatedOmission", js.Any.fromFunction1(value))
-      
-      inline def setGetCountAtIndex(value: Double => Double): Self = StObject.set(x, "getCountAtIndex", js.Any.fromFunction1(value))
-      
-      inline def setIncrementCountAtIndex(value: Double => Unit): Self = StObject.set(x, "incrementCountAtIndex", js.Any.fromFunction1(value))
-      
-      inline def setPackedCounts(value: PackedArray): Self = StObject.set(x, "packedCounts", value.asInstanceOf[js.Any])
-      
-      inline def setResize(value: Double => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction1(value))
-      
-      inline def setSetCountAtIndex(value: (Double, Double) => Unit): Self = StObject.set(x, "setCountAtIndex", js.Any.fromFunction2(value))
-      
-      inline def set_getEstimatedFootprintInBytes(value: () => Double): Self = StObject.set(x, "_getEstimatedFootprintInBytes", js.Any.fromFunction0(value))
-    }
+    var packedCounts: PackedArray = js.native
   }
 }

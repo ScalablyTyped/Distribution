@@ -10,10 +10,10 @@ Accessible and themeable form components for use with Rebass or Theme UI.
 | ------------------ | :-------------: |
 | Full name          | @rebass/forms |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 29 |
-| # downloads        | 561561 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 61851.0 |
+| # stars            | 7749.0 |
 
 ## Links
 - [Homepage](https://github.com/rebassjs/rebass#readme)

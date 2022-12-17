@@ -4,7 +4,7 @@ import typings.protractor.mod.ElementFinder
 import typings.protractor.mod.WebElement
 import typings.unidriverCore.mod.UniDriver
 import typings.wixUiTestUtils.anon.DataHookString
-import typings.wixUiTestUtils.anon.DataHookWrapper
+import typings.wixUiTestUtils.anon.Wrapper
 import typings.wixUiTestUtils.distSrcBaseDriverMod.BaseUniDriver
 import typings.wixUiTestUtils.distSrcProtractorProtractorHelpersMod.ILocation
 import typings.wixUiTestUtils.distSrcProtractorProtractorHelpersMod.StoryUrlParams
@@ -60,7 +60,7 @@ object distSrcProtractorMod {
   
   inline def protractorTestkitFactoryCreator[T](
     driverFactory: js.Function3[/* wrapper */ ElementFinder, /* body */ ElementFinder, /* options */ DataHookString, T]
-  ): js.Function1[/* obj */ DataHookWrapper, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("protractorTestkitFactoryCreator")(driverFactory.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ DataHookWrapper, T]]
+  ): js.Function1[/* obj */ Wrapper, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("protractorTestkitFactoryCreator")(driverFactory.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ Wrapper, T]]
   
   inline def protractorUniTestkitFactoryCreator[T /* <: BaseUniDriver */](
     driverFactory: js.Function3[/* base */ UniDriver[Any], /* body */ UniDriver[Any], /* options */ DataHookString, T]

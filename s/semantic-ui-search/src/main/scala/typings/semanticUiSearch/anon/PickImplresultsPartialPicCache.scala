@@ -12,11 +12,11 @@ trait PickImplresultsPartialPicCache
   
   var cache: js.UndefOr[String] = js.undefined
   
-  var results: String & js.UndefOr[String]
+  var results: String
 }
 object PickImplresultsPartialPicCache {
   
-  inline def apply(results: String & js.UndefOr[String]): PickImplresultsPartialPicCache = {
+  inline def apply(results: String): PickImplresultsPartialPicCache = {
     val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplresultsPartialPicCache]
   }
@@ -27,6 +27,6 @@ object PickImplresultsPartialPicCache {
     
     inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
-    inline def setResults(value: String & js.UndefOr[String]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: String): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
   }
 }

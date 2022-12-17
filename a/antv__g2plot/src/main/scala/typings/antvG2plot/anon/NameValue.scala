@@ -8,11 +8,11 @@ trait NameValue extends StObject {
   
   var name: String
   
-  var value: String | Double
+  var value: Any
 }
 object NameValue {
   
-  inline def apply(name: String, value: String | Double): NameValue = {
+  inline def apply(name: String, value: Any): NameValue = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[NameValue]
   }
@@ -21,6 +21,6 @@ object NameValue {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

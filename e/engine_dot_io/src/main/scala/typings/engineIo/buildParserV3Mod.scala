@@ -13,9 +13,9 @@ object buildParserV3Mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def decodeBase64Packet(msg: Any, binaryType: Any): Data = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeBase64Packet")(msg.asInstanceOf[js.Any], binaryType.asInstanceOf[js.Any])).asInstanceOf[Data]
+  inline def decodeBase64Packet(msg: Any, binaryType: Any): DataType = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeBase64Packet")(msg.asInstanceOf[js.Any], binaryType.asInstanceOf[js.Any])).asInstanceOf[DataType]
   
-  inline def decodePacket(data: Any, binaryType: Any, utf8decode: Any): Type | DataType = (^.asInstanceOf[js.Dynamic].applyDynamic("decodePacket")(data.asInstanceOf[js.Any], binaryType.asInstanceOf[js.Any], utf8decode.asInstanceOf[js.Any])).asInstanceOf[Type | DataType]
+  inline def decodePacket(data: Any, binaryType: Any, utf8decode: Any): Data | Type = (^.asInstanceOf[js.Dynamic].applyDynamic("decodePacket")(data.asInstanceOf[js.Any], binaryType.asInstanceOf[js.Any], utf8decode.asInstanceOf[js.Any])).asInstanceOf[Data | Type]
   
   inline def decodePayload(data: Any, binaryType: Any, callback: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("decodePayload")(data.asInstanceOf[js.Any], binaryType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
   

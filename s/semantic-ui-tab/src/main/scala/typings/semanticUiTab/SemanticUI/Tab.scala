@@ -103,12 +103,12 @@ object Tab {
     trait Param extends StObject
     object Param {
       
-      inline def PickImplactivePartialPick(active: String & js.UndefOr[String]): typings.semanticUiTab.anon.PickImplactivePartialPick = {
+      inline def PickImplactivePartialPick(active: String): typings.semanticUiTab.anon.PickImplactivePartialPick = {
         val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiTab.anon.PickImplactivePartialPick]
       }
       
-      inline def PickImplloadingPartialPic(loading: String & js.UndefOr[String]): typings.semanticUiTab.anon.PickImplloadingPartialPic = {
+      inline def PickImplloadingPartialPic(loading: String): typings.semanticUiTab.anon.PickImplloadingPartialPic = {
         val __obj = js.Dynamic.literal(loading = loading.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiTab.anon.PickImplloadingPartialPic]
       }
@@ -200,37 +200,37 @@ object Tab {
     trait Param extends StObject
     object Param {
       
-      inline def PickImplapiPartialPickImp(api: String & js.UndefOr[String]): typings.semanticUiTab.anon.PickImplapiPartialPickImp = {
+      inline def PickImplapiPartialPickImp(api: String): typings.semanticUiTab.anon.PickImplapiPartialPickImp = {
         val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiTab.anon.PickImplapiPartialPickImp]
       }
       
-      inline def PickImplmethodPartialPick(method: String & js.UndefOr[String]): typings.semanticUiTab.anon.PickImplmethodPartialPick = {
+      inline def PickImplmethodPartialPick(method: String): typings.semanticUiTab.anon.PickImplmethodPartialPick = {
         val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiTab.anon.PickImplmethodPartialPick]
       }
       
-      inline def PickImplmissingTabPartial(missingTab: String & js.UndefOr[String]): typings.semanticUiTab.anon.PickImplmissingTabPartial = {
+      inline def PickImplmissingTabPartial(missingTab: String): typings.semanticUiTab.anon.PickImplmissingTabPartial = {
         val __obj = js.Dynamic.literal(missingTab = missingTab.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiTab.anon.PickImplmissingTabPartial]
       }
       
-      inline def PickImplnoContentPartialP(noContent: String & js.UndefOr[String]): typings.semanticUiTab.anon.PickImplnoContentPartialP = {
+      inline def PickImplnoContentPartialP(noContent: String): typings.semanticUiTab.anon.PickImplnoContentPartialP = {
         val __obj = js.Dynamic.literal(noContent = noContent.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiTab.anon.PickImplnoContentPartialP]
       }
       
-      inline def PickImplpathPartialPickImApi(path: String & js.UndefOr[String]): typings.semanticUiTab.anon.PickImplpathPartialPickImApi = {
+      inline def PickImplpathPartialPickImApi(path: String): typings.semanticUiTab.anon.PickImplpathPartialPickImApi = {
         val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiTab.anon.PickImplpathPartialPickImApi]
       }
       
-      inline def PickImplrecursionPartialP(recursion: String & js.UndefOr[String]): typings.semanticUiTab.anon.PickImplrecursionPartialP = {
+      inline def PickImplrecursionPartialP(recursion: String): typings.semanticUiTab.anon.PickImplrecursionPartialP = {
         val __obj = js.Dynamic.literal(recursion = recursion.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiTab.anon.PickImplrecursionPartialP]
       }
       
-      inline def PickImplstatePartialPickI(state: String & js.UndefOr[String]): typings.semanticUiTab.anon.PickImplstatePartialPickI = {
+      inline def PickImplstatePartialPickI(state: String): typings.semanticUiTab.anon.PickImplstatePartialPickI = {
         val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiTab.anon.PickImplstatePartialPickI]
       }
@@ -282,17 +282,17 @@ object Tab {
     trait Param extends StObject
     object Param {
       
-      inline def PickImplloadedPartialPick(loaded: String & js.UndefOr[String]): typings.semanticUiTab.anon.PickImplloadedPartialPick = {
+      inline def PickImplloadedPartialPick(loaded: String): typings.semanticUiTab.anon.PickImplloadedPartialPick = {
         val __obj = js.Dynamic.literal(loaded = loaded.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiTab.anon.PickImplloadedPartialPick]
       }
       
-      inline def PickImplpromisePartialPic(promise: String & js.UndefOr[String]): typings.semanticUiTab.anon.PickImplpromisePartialPic = {
+      inline def PickImplpromisePartialPic(promise: String): typings.semanticUiTab.anon.PickImplpromisePartialPic = {
         val __obj = js.Dynamic.literal(promise = promise.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiTab.anon.PickImplpromisePartialPic]
       }
       
-      inline def PickImpltabPartialPickImp(tab: String & js.UndefOr[String]): typings.semanticUiTab.anon.PickImpltabPartialPickImp = {
+      inline def PickImpltabPartialPickImp(tab: String): typings.semanticUiTab.anon.PickImpltabPartialPickImp = {
         val __obj = js.Dynamic.literal(tab = tab.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiTab.anon.PickImpltabPartialPickImp]
       }
@@ -336,12 +336,12 @@ object Tab {
     trait Param extends StObject
     object Param {
       
-      inline def PickImplparentPartialPick(parent: String & js.UndefOr[String]): typings.semanticUiTab.anon.PickImplparentPartialPick = {
+      inline def PickImplparentPartialPick(parent: String): typings.semanticUiTab.anon.PickImplparentPartialPick = {
         val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiTab.anon.PickImplparentPartialPick]
       }
       
-      inline def PickImpltabsPartialPickIm(tabs: String & js.UndefOr[String]): typings.semanticUiTab.anon.PickImpltabsPartialPickIm = {
+      inline def PickImpltabsPartialPickIm(tabs: String): typings.semanticUiTab.anon.PickImpltabsPartialPickIm = {
         val __obj = js.Dynamic.literal(tabs = tabs.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiTab.anon.PickImpltabsPartialPickIm]
       }
@@ -354,14 +354,12 @@ object Tab {
     
     def determineTitle(tabArray: js.Array[Any]): String
     @JSName("determineTitle")
-    var determineTitle_Original: (js.Function1[/* tabArray */ js.Array[Any], String]) & (js.UndefOr[js.Function1[/* tabArray */ js.Array[Any], String]])
+    var determineTitle_Original: js.Function1[/* tabArray */ js.Array[Any], String]
   }
   object TemplatesSettings {
     
-    inline def apply(
-      determineTitle: (js.Function1[/* tabArray */ js.Array[Any], String]) & (js.UndefOr[js.Function1[/* tabArray */ js.Array[Any], String]])
-    ): TemplatesSettings = {
-      val __obj = js.Dynamic.literal(determineTitle = determineTitle.asInstanceOf[js.Any])
+    inline def apply(determineTitle: /* tabArray */ js.Array[Any] => String): TemplatesSettings = {
+      val __obj = js.Dynamic.literal(determineTitle = js.Any.fromFunction1(determineTitle))
       __obj.asInstanceOf[TemplatesSettings]
     }
     
@@ -387,9 +385,7 @@ object Tab {
     
     extension [Self <: TemplatesSettings](x: Self) {
       
-      inline def setDetermineTitle(
-        value: (js.Function1[/* tabArray */ js.Array[Any], String]) & (js.UndefOr[js.Function1[/* tabArray */ js.Array[Any], String]])
-      ): Self = StObject.set(x, "determineTitle", value.asInstanceOf[js.Any])
+      inline def setDetermineTitle(value: /* tabArray */ js.Array[Any] => String): Self = StObject.set(x, "determineTitle", js.Any.fromFunction1(value))
     }
     
     /* Inlined std.Pick<semantic-ui-tab.SemanticUI.Tab.TemplatesSettings._Impl, 'determineTitle'> & std.Partial<std.Pick<semantic-ui-tab.SemanticUI.Tab.TemplatesSettings._Impl, keyof semantic-ui-tab.SemanticUI.Tab.TemplatesSettings._Impl>> */
@@ -397,22 +393,18 @@ object Tab {
       
       def determineTitle(tabArray: js.Array[Any]): String
       @JSName("determineTitle")
-      var determineTitle_Original: (js.Function1[/* tabArray */ js.Array[Any], String]) & (js.UndefOr[js.Function1[/* tabArray */ js.Array[Any], String]])
+      var determineTitle_Original: js.Function1[/* tabArray */ js.Array[Any], String]
     }
     object Param {
       
-      inline def apply(
-        determineTitle: (js.Function1[/* tabArray */ js.Array[Any], String]) & (js.UndefOr[js.Function1[/* tabArray */ js.Array[Any], String]])
-      ): typings.semanticUiTab.SemanticUI.Tab.TemplatesSettings.Param = {
-        val __obj = js.Dynamic.literal(determineTitle = determineTitle.asInstanceOf[js.Any])
+      inline def apply(determineTitle: /* tabArray */ js.Array[Any] => String): typings.semanticUiTab.SemanticUI.Tab.TemplatesSettings.Param = {
+        val __obj = js.Dynamic.literal(determineTitle = js.Any.fromFunction1(determineTitle))
         __obj.asInstanceOf[typings.semanticUiTab.SemanticUI.Tab.TemplatesSettings.Param]
       }
       
       extension [Self <: typings.semanticUiTab.SemanticUI.Tab.TemplatesSettings.Param](x: Self) {
         
-        inline def setDetermineTitle(
-          value: (js.Function1[/* tabArray */ js.Array[Any], String]) & (js.UndefOr[js.Function1[/* tabArray */ js.Array[Any], String]])
-        ): Self = StObject.set(x, "determineTitle", value.asInstanceOf[js.Any])
+        inline def setDetermineTitle(value: /* tabArray */ js.Array[Any] => String): Self = StObject.set(x, "determineTitle", js.Any.fromFunction1(value))
       }
     }
   }

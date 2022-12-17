@@ -74,12 +74,12 @@ object anon {
     
     var options: js.UndefOr[MongoClientOptions] = js.undefined
     
-    var url: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<migrate-mongo.anon.FnCall>[0] */ js.Any
+    var url: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<migrate-mongo.anon.FnCallUrlOptionsCallback>[0] */ js.Any
   }
   object DatabaseName {
     
     inline def apply(
-      url: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<migrate-mongo.anon.FnCall>[0] */ js.Any
+      url: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<migrate-mongo.anon.FnCallUrlOptionsCallback>[0] */ js.Any
     ): DatabaseName = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[DatabaseName]
@@ -98,7 +98,7 @@ object anon {
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
       inline def setUrl(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<migrate-mongo.anon.FnCall>[0] */ js.Any
+        value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<migrate-mongo.anon.FnCallUrlOptionsCallback>[0] */ js.Any
       ): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
@@ -149,7 +149,7 @@ object anon {
     def close(force: Boolean): js.Promise[Unit] = js.native
     def close(force: Boolean, callback: Callback[Unit]): Unit = js.native
     @JSName("close")
-    var close_Original: FnCallForceCallback = js.native
+    var close_Original: FnCall = js.native
     
     /**
       * Returns a reference to a MongoDB Collection. If it does not exist it will be created implicitly.
@@ -421,19 +421,19 @@ object anon {
   @js.native
   trait FnCall extends StObject {
     
-    def apply(url: String): js.Promise[MongoClient] = js.native
-    def apply(url: String, callback: Callback[MongoClient]): Unit = js.native
-    def apply(url: String, options: MongoClientOptions): js.Promise[MongoClient] = js.native
-    def apply(url: String, options: MongoClientOptions, callback: Callback[MongoClient]): Unit = js.native
-  }
-  
-  @js.native
-  trait FnCallForceCallback extends StObject {
-    
     def apply(): js.Promise[Unit] = js.native
     def apply(callback: Callback[Unit]): Unit = js.native
     def apply(force: Boolean): js.Promise[Unit] = js.native
     def apply(force: Boolean, callback: Callback[Unit]): Unit = js.native
+  }
+  
+  @js.native
+  trait FnCallUrlOptionsCallback extends StObject {
+    
+    def apply(url: String): js.Promise[MongoClient] = js.native
+    def apply(url: String, callback: Callback[MongoClient]): Unit = js.native
+    def apply(url: String, options: MongoClientOptions): js.Promise[MongoClient] = js.native
+    def apply(url: String, options: MongoClientOptions, callback: Callback[MongoClient]): Unit = js.native
   }
   
   /* Inlined std.Partial<migrate-mongo.migrate-mongo.config.Config> */

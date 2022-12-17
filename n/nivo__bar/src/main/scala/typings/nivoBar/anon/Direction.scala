@@ -32,7 +32,7 @@ object Direction {
     
     inline def setBars(value: BarsWithHidden[RawDatum]): Self = StObject.set(x, "bars", value.asInstanceOf[js.Any])
     
-    inline def setBarsVarargs(value: (Partialkeystringxnumberyn & `0`[RawDatum])*): Self = StObject.set(x, "bars", js.Array(value*))
+    inline def setBarsVarargs(value: (Partialkeystringxnumberyn & Data[RawDatum])*): Self = StObject.set(x, "bars", js.Array(value*))
     
     inline def setDirection(value: LegendDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

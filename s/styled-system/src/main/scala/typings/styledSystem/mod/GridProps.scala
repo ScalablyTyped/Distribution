@@ -1,42 +1,28 @@
 package typings.styledSystem.mod
 
+import typings.csstype.mod.Property.GridAutoColumns
+import typings.csstype.mod.Property.GridAutoRows
+import typings.csstype.mod.Property.GridColumnGap
+import typings.csstype.mod.Property.GridGap
+import typings.csstype.mod.Property.GridRowGap
+import typings.csstype.mod.Property.GridTemplateColumns
+import typings.csstype.mod.Property.GridTemplateRows
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait GridProps[ThemeType /* <: Theme[TLengthStyledSystem] */]
   extends StObject
-     with GridGapProps[
-      ThemeType, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridGap<TLengthStyledSystem> */ js.Any
-    ]
-     with GridColumnGapProps[
-      ThemeType, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumnGap<TLengthStyledSystem> */ js.Any
-    ]
-     with GridRowGapProps[
-      ThemeType, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridRowGap<TLengthStyledSystem> */ js.Any
-    ]
+     with GridGapProps[ThemeType, GridGap[TLengthStyledSystem]]
+     with GridColumnGapProps[ThemeType, GridColumnGap[TLengthStyledSystem]]
+     with GridRowGapProps[ThemeType, GridRowGap[TLengthStyledSystem]]
      with GridColumnProps[ThemeType]
      with GridRowProps[ThemeType]
      with GridAutoFlowProps[ThemeType]
-     with GridAutoColumnsProps[
-      ThemeType, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoColumns<TLengthStyledSystem> */ js.Any
-    ]
-     with GridAutoRowsProps[
-      ThemeType, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoRows<TLengthStyledSystem> */ js.Any
-    ]
-     with GridTemplateColumnsProps[
-      ThemeType, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateColumns<TLengthStyledSystem> */ js.Any
-    ]
-     with GridTemplateRowsProps[
-      ThemeType, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateRows<TLengthStyledSystem> */ js.Any
-    ]
+     with GridAutoColumnsProps[ThemeType, GridAutoColumns[TLengthStyledSystem]]
+     with GridAutoRowsProps[ThemeType, GridAutoRows[TLengthStyledSystem]]
+     with GridTemplateColumnsProps[ThemeType, GridTemplateColumns[TLengthStyledSystem]]
+     with GridTemplateRowsProps[ThemeType, GridTemplateRows[TLengthStyledSystem]]
      with GridTemplateAreasProps[ThemeType]
      with GridAreaProps[ThemeType]
 object GridProps {

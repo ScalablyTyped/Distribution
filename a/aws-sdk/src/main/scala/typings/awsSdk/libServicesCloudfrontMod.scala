@@ -1,5 +1,7 @@
 package typings.awsSdk
 
+import org.scalablytyped.runtime.Instantiable2
+import typings.awsSdk.libCloudfrontSignerMod.Signer
 import typings.awsSdk.libServiceMod.Service
 import typings.awsSdk.libServiceMod.ServiceConfigurationOptions
 import org.scalablytyped.runtime.StObject
@@ -25,7 +27,11 @@ object libServicesCloudfrontMod {
     
     @JSImport("aws-sdk/lib/services/cloudfront", "CloudFrontCustomizations.Signer")
     @js.native
-    def Signer: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Signer */ Any = js.native
-    inline def Signer_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Signer */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Signer")(x.asInstanceOf[js.Any])
+    def Signer: Instantiable2[
+        /* keyPairId */ String, 
+        /* privateKey */ String, 
+        typings.awsSdk.libCloudfrontSignerMod.Signer
+      ] = js.native
+    inline def Signer_=(x: Instantiable2[/* keyPairId */ String, /* privateKey */ String, Signer]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Signer")(x.asInstanceOf[js.Any])
   }
 }

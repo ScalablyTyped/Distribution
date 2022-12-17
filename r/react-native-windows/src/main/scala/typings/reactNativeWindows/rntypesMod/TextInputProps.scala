@@ -1,6 +1,6 @@
 package typings.reactNativeWindows.rntypesMod
 
-import typings.reactNativeWindows.anon.End
+import typings.reactNativeWindows.anon.Start
 import typings.reactNativeWindows.reactNativeWindowsStrings.center
 import typings.reactNativeWindows.reactNativeWindowsStrings.characters
 import typings.reactNativeWindows.reactNativeWindowsStrings.left
@@ -230,7 +230,7 @@ trait TextInputProps
     * The start and end of the text input's selection. Set start and end to
     * the same value to position the cursor.
     */
-  var selection: js.UndefOr[End] = js.undefined
+  var selection: js.UndefOr[Start] = js.undefined
   
   /**
     * The highlight (and cursor on ios) color of the text input
@@ -396,7 +396,7 @@ object TextInputProps {
     
     inline def setSelectTextOnFocusUndefined: Self = StObject.set(x, "selectTextOnFocus", js.undefined)
     
-    inline def setSelection(value: End): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: Start): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
     inline def setSelectionColor(value: ColorValue): Self = StObject.set(x, "selectionColor", value.asInstanceOf[js.Any])
     

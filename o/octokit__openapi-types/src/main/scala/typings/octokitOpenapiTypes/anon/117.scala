@@ -1,26 +1,31 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.maintainer
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.member_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `117` extends StObject {
   
-  @JSName("application/json")
-  var applicationSlashjson: js.Array[Contributions]
+  /**
+    * @description The role that this user should have in the team.
+    * @default member
+    * @enum {string}
+    */
+  var role: js.UndefOr[member_ | maintainer] = js.undefined
 }
 object `117` {
   
-  inline def apply(applicationSlashjson: js.Array[Contributions]): `117` = {
+  inline def apply(): `117` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`117`]
   }
   
   extension [Self <: `117`](x: Self) {
     
-    inline def setApplicationSlashjson(value: js.Array[Contributions]): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+    inline def setRole(value: member_ | maintainer): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    inline def setApplicationSlashjsonVarargs(value: Contributions*): Self = StObject.set(x, "application/json", js.Array(value*))
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
   }
 }

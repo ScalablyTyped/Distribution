@@ -3,7 +3,7 @@ package typings.svelte
 import typings.std.Element
 import typings.std.ElementCSSInlineStyle
 import typings.svelte.anon.End
-import typings.svelte.anon.Invalidate
+import typings.svelte.anon.Run
 import typings.svelte.anon.`0`
 import typings.svelte.svelteInts.`1`
 import typings.svelte.typesRuntimeInternalTypesMod.Fragment
@@ -20,9 +20,9 @@ object typesRuntimeInternalTransitionsMod {
   
   inline def checkOutros(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("check_outros")().asInstanceOf[Unit]
   
-  inline def createBidirectionalTransition(node: Element & ElementCSSInlineStyle, fn: TransitionFn, params: Any, intro: Boolean): End = (^.asInstanceOf[js.Dynamic].applyDynamic("create_bidirectional_transition")(node.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], params.asInstanceOf[js.Any], intro.asInstanceOf[js.Any])).asInstanceOf[End]
+  inline def createBidirectionalTransition(node: Element & ElementCSSInlineStyle, fn: TransitionFn, params: Any, intro: Boolean): Run = (^.asInstanceOf[js.Dynamic].applyDynamic("create_bidirectional_transition")(node.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], params.asInstanceOf[js.Any], intro.asInstanceOf[js.Any])).asInstanceOf[Run]
   
-  inline def createInTransition(node: Element & ElementCSSInlineStyle, fn: TransitionFn, params: Any): Invalidate = (^.asInstanceOf[js.Dynamic].applyDynamic("create_in_transition")(node.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Invalidate]
+  inline def createInTransition(node: Element & ElementCSSInlineStyle, fn: TransitionFn, params: Any): End = (^.asInstanceOf[js.Dynamic].applyDynamic("create_in_transition")(node.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[End]
   
   inline def createOutTransition(node: Element & ElementCSSInlineStyle, fn: TransitionFn, params: Any): `0` = (^.asInstanceOf[js.Dynamic].applyDynamic("create_out_transition")(node.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[`0`]
   

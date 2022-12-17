@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Rewritten from type alias, can be one of: 
   - typings.vscodeLanguageserverProtocol.anon.NotebookType
-  - typings.vscodeLanguageserverProtocol.anon.Pattern
-  - typings.vscodeLanguageserverProtocol.anon.Scheme
+  - typings.vscodeLanguageserverProtocol.anon.NotebookTypePattern
+  - typings.vscodeLanguageserverProtocol.anon.PatternScheme
 */
 trait NotebookDocumentFilter extends StObject
 object NotebookDocumentFilter {

@@ -4,7 +4,7 @@ import typings.babylonjs.anon.DeepImmutableObjectMatrixAdd
 import typings.babylonjs.anon.Report
 import typings.babylonjs.anon.Strides
 import typings.babylonjs.anon.VertexBuffers
-import typings.babylonjs.anon.`1`
+import typings.babylonjs.anon.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -642,16 +642,16 @@ trait Mesh
     */
   var instances: js.Array[InstancedMesh] = js.native
   
-  def instantiateHierarchy(newParent: Unit, options: `1`): Nullable[TransformNode] = js.native
+  def instantiateHierarchy(newParent: Unit, options: `3`): Nullable[TransformNode] = js.native
   def instantiateHierarchy(
     newParent: Unit,
-    options: `1`,
+    options: `3`,
     onNewNodeCreated: js.Function2[/* source */ TransformNode, /* clone */ TransformNode, Unit]
   ): Nullable[TransformNode] = js.native
-  def instantiateHierarchy(newParent: Nullable[TransformNode], options: `1`): Nullable[TransformNode] = js.native
+  def instantiateHierarchy(newParent: Nullable[TransformNode], options: `3`): Nullable[TransformNode] = js.native
   def instantiateHierarchy(
     newParent: Nullable[TransformNode],
-    options: `1`,
+    options: `3`,
     onNewNodeCreated: js.Function2[/* source */ TransformNode, /* clone */ TransformNode, Unit]
   ): Nullable[TransformNode] = js.native
   

@@ -8,12 +8,12 @@ trait Account extends StObject {
   
   var account: Data
   
-  var release: DataType
+  var product: DataType
 }
 object Account {
   
-  inline def apply(account: Data, release: DataType): Account = {
-    val __obj = js.Dynamic.literal(account = account.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any])
+  inline def apply(account: Data, product: DataType): Account = {
+    val __obj = js.Dynamic.literal(account = account.asInstanceOf[js.Any], product = product.asInstanceOf[js.Any])
     __obj.asInstanceOf[Account]
   }
   
@@ -21,6 +21,6 @@ object Account {
     
     inline def setAccount(value: Data): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     
-    inline def setRelease(value: DataType): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
+    inline def setProduct(value: DataType): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
   }
 }

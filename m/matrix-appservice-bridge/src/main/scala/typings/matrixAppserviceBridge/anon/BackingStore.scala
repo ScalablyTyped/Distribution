@@ -11,7 +11,7 @@ trait BackingStore extends StObject {
   
   var backingStore: IntentBackingStore
   
-  var caching: Size
+  var caching: Ttl
   
   var dontCheckPowerLevel: js.UndefOr[Boolean] = js.undefined
   
@@ -27,7 +27,7 @@ trait BackingStore extends StObject {
 }
 object BackingStore {
   
-  inline def apply(backingStore: IntentBackingStore, caching: Size, enablePresence: Boolean): BackingStore = {
+  inline def apply(backingStore: IntentBackingStore, caching: Ttl, enablePresence: Boolean): BackingStore = {
     val __obj = js.Dynamic.literal(backingStore = backingStore.asInstanceOf[js.Any], caching = caching.asInstanceOf[js.Any], enablePresence = enablePresence.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackingStore]
   }
@@ -36,7 +36,7 @@ object BackingStore {
     
     inline def setBackingStore(value: IntentBackingStore): Self = StObject.set(x, "backingStore", value.asInstanceOf[js.Any])
     
-    inline def setCaching(value: Size): Self = StObject.set(x, "caching", value.asInstanceOf[js.Any])
+    inline def setCaching(value: Ttl): Self = StObject.set(x, "caching", value.asInstanceOf[js.Any])
     
     inline def setDontCheckPowerLevel(value: Boolean): Self = StObject.set(x, "dontCheckPowerLevel", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,7 @@ trait PickImpleasingPartialPick
   
   var duration: js.UndefOr[Double] = js.undefined
   
-  var easing: String & js.UndefOr[String]
+  var easing: String
   
   var error: js.UndefOr[ErrorSettings] = js.undefined
   
@@ -60,7 +60,7 @@ trait PickImpleasingPartialPick
 }
 object PickImpleasingPartialPick {
   
-  inline def apply(easing: String & js.UndefOr[String]): PickImpleasingPartialPick = {
+  inline def apply(easing: String): PickImpleasingPartialPick = {
     val __obj = js.Dynamic.literal(easing = easing.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpleasingPartialPick]
   }
@@ -91,7 +91,7 @@ object PickImpleasingPartialPick {
     
     inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    inline def setEasing(value: String & js.UndefOr[String]): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
     inline def setError(value: ErrorSettings): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

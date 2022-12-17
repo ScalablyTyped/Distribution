@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.serverlessTencentScf.anon.CosBucket
 import typings.serverlessTencentScf.anon.EventName
 import typings.serverlessTencentScf.anon.MsgBody
-import typings.serverlessTencentScf.anon.MsgId
+import typings.serverlessTencentScf.anon.MsgKey
 import typings.serverlessTencentScf.anon.SecretId
 import typings.serverlessTencentScf.anon.Stage
 import typings.serverlessTencentScf.handlerMod.Handler
@@ -158,18 +158,18 @@ object triggerMod {
   
   trait CKafkaEventRecord extends StObject {
     
-    var Ckafka: MsgBody
+    var Ckafka: MsgKey
   }
   object CKafkaEventRecord {
     
-    inline def apply(Ckafka: MsgBody): CKafkaEventRecord = {
+    inline def apply(Ckafka: MsgKey): CKafkaEventRecord = {
       val __obj = js.Dynamic.literal(Ckafka = Ckafka.asInstanceOf[js.Any])
       __obj.asInstanceOf[CKafkaEventRecord]
     }
     
     extension [Self <: CKafkaEventRecord](x: Self) {
       
-      inline def setCkafka(value: MsgBody): Self = StObject.set(x, "Ckafka", value.asInstanceOf[js.Any])
+      inline def setCkafka(value: MsgKey): Self = StObject.set(x, "Ckafka", value.asInstanceOf[js.Any])
     }
   }
   
@@ -196,18 +196,18 @@ object triggerMod {
   
   trait CMQTopicEventRecord extends StObject {
     
-    var CMQ: MsgId
+    var CMQ: MsgBody
   }
   object CMQTopicEventRecord {
     
-    inline def apply(CMQ: MsgId): CMQTopicEventRecord = {
+    inline def apply(CMQ: MsgBody): CMQTopicEventRecord = {
       val __obj = js.Dynamic.literal(CMQ = CMQ.asInstanceOf[js.Any])
       __obj.asInstanceOf[CMQTopicEventRecord]
     }
     
     extension [Self <: CMQTopicEventRecord](x: Self) {
       
-      inline def setCMQ(value: MsgId): Self = StObject.set(x, "CMQ", value.asInstanceOf[js.Any])
+      inline def setCMQ(value: MsgBody): Self = StObject.set(x, "CMQ", value.asInstanceOf[js.Any])
     }
   }
   

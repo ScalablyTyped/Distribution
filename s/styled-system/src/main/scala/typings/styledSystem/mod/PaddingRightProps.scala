@@ -9,14 +9,14 @@ trait PaddingRightProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends S
   
   var paddingRight: js.UndefOr[
     ResponsiveValue[
-      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
       ThemeType
     ]
   ] = js.undefined
   
   var pr: js.UndefOr[
     ResponsiveValue[
-      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
       ThemeType
     ]
   ] = js.undefined
@@ -32,7 +32,7 @@ object PaddingRightProps {
     
     inline def setPaddingRight(
       value: ResponsiveValue[
-          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
           ThemeType
         ]
     ): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
@@ -41,11 +41,11 @@ object PaddingRightProps {
     
     inline def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
     
-    inline def setPaddingRightVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = StObject.set(x, "paddingRight", js.Array(value :_*))
+    inline def setPaddingRightVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any]) | Null)*): Self = StObject.set(x, "paddingRight", js.Array(value*))
     
     inline def setPr(
       value: ResponsiveValue[
-          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
           ThemeType
         ]
     ): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
@@ -54,6 +54,6 @@ object PaddingRightProps {
     
     inline def setPrUndefined: Self = StObject.set(x, "pr", js.undefined)
     
-    inline def setPrVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = StObject.set(x, "pr", js.Array(value :_*))
+    inline def setPrVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any]) | Null)*): Self = StObject.set(x, "pr", js.Array(value*))
   }
 }

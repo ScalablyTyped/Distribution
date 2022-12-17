@@ -226,22 +226,22 @@ object Progress {
     trait Param extends StObject
     object Param {
       
-      inline def PickImplactivePartialPickActive(active: String & js.UndefOr[String]): typings.semanticUiProgress.anon.PickImplactivePartialPickActive = {
+      inline def PickImplactivePartialPickActive(active: String): typings.semanticUiProgress.anon.PickImplactivePartialPickActive = {
         val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiProgress.anon.PickImplactivePartialPickActive]
       }
       
-      inline def PickImplerrorPartialPickIError(error: String & js.UndefOr[String]): typings.semanticUiProgress.anon.PickImplerrorPartialPickIError = {
+      inline def PickImplerrorPartialPickIError(error: String): typings.semanticUiProgress.anon.PickImplerrorPartialPickIError = {
         val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiProgress.anon.PickImplerrorPartialPickIError]
       }
       
-      inline def PickImplsuccessPartialPicActive(success: String & js.UndefOr[String]): typings.semanticUiProgress.anon.PickImplsuccessPartialPicActive = {
+      inline def PickImplsuccessPartialPicActive(success: String): typings.semanticUiProgress.anon.PickImplsuccessPartialPicActive = {
         val __obj = js.Dynamic.literal(success = success.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiProgress.anon.PickImplsuccessPartialPicActive]
       }
       
-      inline def PickImplwarningPartialPicActive(warning: String & js.UndefOr[String]): typings.semanticUiProgress.anon.PickImplwarningPartialPicActive = {
+      inline def PickImplwarningPartialPicActive(warning: String): typings.semanticUiProgress.anon.PickImplwarningPartialPicActive = {
         val __obj = js.Dynamic.literal(warning = warning.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiProgress.anon.PickImplwarningPartialPicActive]
       }
@@ -285,12 +285,12 @@ object Progress {
     trait Param extends StObject
     object Param {
       
-      inline def PickImplmethodPartialPick(method: String & js.UndefOr[String]): typings.semanticUiProgress.anon.PickImplmethodPartialPick = {
+      inline def PickImplmethodPartialPick(method: String): typings.semanticUiProgress.anon.PickImplmethodPartialPick = {
         val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiProgress.anon.PickImplmethodPartialPick]
       }
       
-      inline def PickImplnonNumericPartial(nonNumeric: String & js.UndefOr[String]): typings.semanticUiProgress.anon.PickImplnonNumericPartial = {
+      inline def PickImplnonNumericPartial(nonNumeric: String): typings.semanticUiProgress.anon.PickImplnonNumericPartial = {
         val __obj = js.Dynamic.literal(nonNumeric = nonNumeric.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiProgress.anon.PickImplnonNumericPartial]
       }
@@ -342,17 +342,17 @@ object Progress {
     trait Param extends StObject
     object Param {
       
-      inline def PickImplpercentPartialPicPercent(percent: String & js.UndefOr[String]): typings.semanticUiProgress.anon.PickImplpercentPartialPicPercent = {
+      inline def PickImplpercentPartialPicPercent(percent: String): typings.semanticUiProgress.anon.PickImplpercentPartialPicPercent = {
         val __obj = js.Dynamic.literal(percent = percent.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiProgress.anon.PickImplpercentPartialPicPercent]
       }
       
-      inline def PickImpltotalPartialPickIPercent(total: String & js.UndefOr[String]): typings.semanticUiProgress.anon.PickImpltotalPartialPickIPercent = {
+      inline def PickImpltotalPartialPickIPercent(total: String): typings.semanticUiProgress.anon.PickImpltotalPartialPickIPercent = {
         val __obj = js.Dynamic.literal(total = total.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiProgress.anon.PickImpltotalPartialPickIPercent]
       }
       
-      inline def PickImplvaluePartialPickIPercent(value: String & js.UndefOr[String]): typings.semanticUiProgress.anon.PickImplvaluePartialPickIPercent = {
+      inline def PickImplvaluePartialPickIPercent(value: String): typings.semanticUiProgress.anon.PickImplvaluePartialPickIPercent = {
         val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiProgress.anon.PickImplvaluePartialPickIPercent]
       }
@@ -396,12 +396,12 @@ object Progress {
     trait Param extends StObject
     object Param {
       
-      inline def PickImplmaxPartialPickImp(max: Double & js.UndefOr[Double]): typings.semanticUiProgress.anon.PickImplmaxPartialPickImp = {
+      inline def PickImplmaxPartialPickImp(max: Double): typings.semanticUiProgress.anon.PickImplmaxPartialPickImp = {
         val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiProgress.anon.PickImplmaxPartialPickImp]
       }
       
-      inline def PickImplminPartialPickImp(min: Double & js.UndefOr[Double]): typings.semanticUiProgress.anon.PickImplminPartialPickImp = {
+      inline def PickImplminPartialPickImp(min: Double): typings.semanticUiProgress.anon.PickImplminPartialPickImp = {
         val __obj = js.Dynamic.literal(min = min.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiProgress.anon.PickImplminPartialPickImp]
       }
@@ -412,11 +412,11 @@ object Progress {
   /* Inlined semantic-ui-progress.SemanticUI.Progress.RegExpSettings.Param */
   trait RegExpSettings extends StObject {
     
-    var variable: js.RegExp & js.UndefOr[js.RegExp]
+    var variable: js.RegExp
   }
   object RegExpSettings {
     
-    inline def apply(variable: js.RegExp & js.UndefOr[js.RegExp]): RegExpSettings = {
+    inline def apply(variable: js.RegExp): RegExpSettings = {
       val __obj = js.Dynamic.literal(variable = variable.asInstanceOf[js.Any])
       __obj.asInstanceOf[RegExpSettings]
     }
@@ -443,24 +443,24 @@ object Progress {
     
     extension [Self <: RegExpSettings](x: Self) {
       
-      inline def setVariable(value: js.RegExp & js.UndefOr[js.RegExp]): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
+      inline def setVariable(value: js.RegExp): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
     }
     
     /* Inlined std.Pick<semantic-ui-progress.SemanticUI.Progress.RegExpSettings._Impl, 'variable'> & std.Partial<std.Pick<semantic-ui-progress.SemanticUI.Progress.RegExpSettings._Impl, keyof semantic-ui-progress.SemanticUI.Progress.RegExpSettings._Impl>> */
     trait Param extends StObject {
       
-      var variable: js.RegExp & js.UndefOr[js.RegExp]
+      var variable: js.RegExp
     }
     object Param {
       
-      inline def apply(variable: js.RegExp & js.UndefOr[js.RegExp]): typings.semanticUiProgress.SemanticUI.Progress.RegExpSettings.Param = {
+      inline def apply(variable: js.RegExp): typings.semanticUiProgress.SemanticUI.Progress.RegExpSettings.Param = {
         val __obj = js.Dynamic.literal(variable = variable.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiProgress.SemanticUI.Progress.RegExpSettings.Param]
       }
       
       extension [Self <: typings.semanticUiProgress.SemanticUI.Progress.RegExpSettings.Param](x: Self) {
         
-        inline def setVariable(value: js.RegExp & js.UndefOr[js.RegExp]): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
+        inline def setVariable(value: js.RegExp): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -509,17 +509,17 @@ object Progress {
     trait Param extends StObject
     object Param {
       
-      inline def PickImplbarPartialPickImp(bar: String & js.UndefOr[String]): typings.semanticUiProgress.anon.PickImplbarPartialPickImp = {
+      inline def PickImplbarPartialPickImp(bar: String): typings.semanticUiProgress.anon.PickImplbarPartialPickImp = {
         val __obj = js.Dynamic.literal(bar = bar.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiProgress.anon.PickImplbarPartialPickImp]
       }
       
-      inline def PickImpllabelPartialPickIBar(label: String & js.UndefOr[String]): typings.semanticUiProgress.anon.PickImpllabelPartialPickIBar = {
+      inline def PickImpllabelPartialPickIBar(label: String): typings.semanticUiProgress.anon.PickImpllabelPartialPickIBar = {
         val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiProgress.anon.PickImpllabelPartialPickIBar]
       }
       
-      inline def PickImplprogressPartialPi(progress: String & js.UndefOr[String]): typings.semanticUiProgress.anon.PickImplprogressPartialPi = {
+      inline def PickImplprogressPartialPi(progress: String): typings.semanticUiProgress.anon.PickImplprogressPartialPi = {
         val __obj = js.Dynamic.literal(progress = progress.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiProgress.anon.PickImplprogressPartialPi]
       }
@@ -602,32 +602,32 @@ object Progress {
     trait Param extends StObject
     object Param {
       
-      inline def PickImplactivePartialPick(active: (`false` | String) & (js.UndefOr[`false` | String])): typings.semanticUiProgress.anon.PickImplactivePartialPick = {
+      inline def PickImplactivePartialPick(active: `false` | String): typings.semanticUiProgress.anon.PickImplactivePartialPick = {
         val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiProgress.anon.PickImplactivePartialPick]
       }
       
-      inline def PickImplerrorPartialPickIActive(error: (`false` | String) & (js.UndefOr[`false` | String])): typings.semanticUiProgress.anon.PickImplerrorPartialPickIActive = {
+      inline def PickImplerrorPartialPickIActive(error: `false` | String): typings.semanticUiProgress.anon.PickImplerrorPartialPickIActive = {
         val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiProgress.anon.PickImplerrorPartialPickIActive]
       }
       
-      inline def PickImplpercentPartialPic(percent: (`false` | String) & (js.UndefOr[`false` | String])): typings.semanticUiProgress.anon.PickImplpercentPartialPic = {
+      inline def PickImplpercentPartialPic(percent: `false` | String): typings.semanticUiProgress.anon.PickImplpercentPartialPic = {
         val __obj = js.Dynamic.literal(percent = percent.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiProgress.anon.PickImplpercentPartialPic]
       }
       
-      inline def PickImplratioPartialPickI(ratio: (`false` | String) & (js.UndefOr[`false` | String])): typings.semanticUiProgress.anon.PickImplratioPartialPickI = {
+      inline def PickImplratioPartialPickI(ratio: `false` | String): typings.semanticUiProgress.anon.PickImplratioPartialPickI = {
         val __obj = js.Dynamic.literal(ratio = ratio.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiProgress.anon.PickImplratioPartialPickI]
       }
       
-      inline def PickImplsuccessPartialPic(success: (`false` | String) & (js.UndefOr[`false` | String])): typings.semanticUiProgress.anon.PickImplsuccessPartialPic = {
+      inline def PickImplsuccessPartialPic(success: `false` | String): typings.semanticUiProgress.anon.PickImplsuccessPartialPic = {
         val __obj = js.Dynamic.literal(success = success.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiProgress.anon.PickImplsuccessPartialPic]
       }
       
-      inline def PickImplwarningPartialPic(warning: (`false` | String) & (js.UndefOr[`false` | String])): typings.semanticUiProgress.anon.PickImplwarningPartialPic = {
+      inline def PickImplwarningPartialPic(warning: `false` | String): typings.semanticUiProgress.anon.PickImplwarningPartialPic = {
         val __obj = js.Dynamic.literal(warning = warning.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiProgress.anon.PickImplwarningPartialPic]
       }

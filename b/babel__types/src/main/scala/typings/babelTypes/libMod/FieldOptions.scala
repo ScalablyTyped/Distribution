@@ -33,6 +33,8 @@ object FieldOptions {
     
     inline def setValidate(value: Validator): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
     
+    inline def setValidateFunction3(value: (/* node */ Node, /* key */ String, /* val */ Any) => Unit): Self = StObject.set(x, "validate", js.Any.fromFunction3(value))
+    
     inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
   }
 }

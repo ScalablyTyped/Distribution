@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "rollup__plugin-commonjs"
-version := "23.0.2-6d4ada"
+version := "23.0.2-1152b1"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "estree" % "1.0-dt-20220712Z-9e7169",
-  "org.scalablytyped" %%% "rollup" % "3.3.0-8b6f2a",
-  "org.scalablytyped" %%% "rollup__pluginutils" % "5.0.2-e57a68",
-  "org.scalablytyped" %%% "std" % "4.9-c133ce")
+  "org.scalablytyped" %%% "estree" % "1.0-dt-20220712Z-1eb2b4",
+  "org.scalablytyped" %%% "rollup" % "3.3.0-1c8d6b",
+  "org.scalablytyped" %%% "rollup__pluginutils" % "5.0.2-ebc9a5",
+  "org.scalablytyped" %%% "std" % "4.9-5f989f")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

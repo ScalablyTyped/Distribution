@@ -88,7 +88,7 @@ trait PickImplonUnplaceablePart
   
   def onUnplaceable($module: JQuery): Unit
   @JSName("onUnplaceable")
-  var onUnplaceable_Original: (js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]])
+  var onUnplaceable_Original: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]
   
   var onVisible: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]] = js.undefined
   
@@ -122,9 +122,7 @@ trait PickImplonUnplaceablePart
 }
 object PickImplonUnplaceablePart {
   
-  inline def apply(
-    onUnplaceable: (js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]])
-  ): PickImplonUnplaceablePart = {
+  inline def apply(onUnplaceable: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]): PickImplonUnplaceablePart = {
     val __obj = js.Dynamic.literal(onUnplaceable = onUnplaceable.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonUnplaceablePart]
   }
@@ -255,9 +253,7 @@ object PickImplonUnplaceablePart {
     
     inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
-    inline def setOnUnplaceable(
-      value: (js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]])
-    ): Self = StObject.set(x, "onUnplaceable", value.asInstanceOf[js.Any])
+    inline def setOnUnplaceable(value: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]): Self = StObject.set(x, "onUnplaceable", value.asInstanceOf[js.Any])
     
     inline def setOnVisible(value: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]): Self = StObject.set(x, "onVisible", value.asInstanceOf[js.Any])
     

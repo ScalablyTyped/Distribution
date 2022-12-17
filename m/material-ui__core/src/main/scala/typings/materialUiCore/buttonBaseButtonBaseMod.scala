@@ -99,14 +99,14 @@ object buttonBaseButtonBaseMod extends Shortcut {
     
     var defaultComponent: /* import warning: importer.ImportType#apply Failed type conversion: M['defaultComponent'] */ js.Any
     
-    var props: (/* import warning: importer.ImportType#apply Failed type conversion: M['props'] */ js.Any) & js.Object & Action
+    var props: (/* import warning: importer.ImportType#apply Failed type conversion: M['props'] */ js.Any) & Action
   }
   object ExtendButtonBaseTypeMap {
     
     inline def apply[M /* <: OverridableTypeMap */](
       classKey: /* import warning: importer.ImportType#apply Failed type conversion: M['classKey'] */ js.Any,
       defaultComponent: /* import warning: importer.ImportType#apply Failed type conversion: M['defaultComponent'] */ js.Any,
-      props: (/* import warning: importer.ImportType#apply Failed type conversion: M['props'] */ js.Any) & js.Object & Action
+      props: (/* import warning: importer.ImportType#apply Failed type conversion: M['props'] */ js.Any) & Action
     ): ExtendButtonBaseTypeMap[M] = {
       val __obj = js.Dynamic.literal(classKey = classKey.asInstanceOf[js.Any], defaultComponent = defaultComponent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExtendButtonBaseTypeMap[M]]
@@ -123,7 +123,7 @@ object buttonBaseButtonBaseMod extends Shortcut {
       ): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       
       inline def setProps(
-        value: (/* import warning: importer.ImportType#apply Failed type conversion: M['props'] */ js.Any) & js.Object & Action
+        value: (/* import warning: importer.ImportType#apply Failed type conversion: M['props'] */ js.Any) & Action
       ): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     }
   }

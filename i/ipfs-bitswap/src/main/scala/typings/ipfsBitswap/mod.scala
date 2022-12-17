@@ -2,7 +2,6 @@ package typings.ipfsBitswap
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.ipfsBitswap.anon.HashLoader
-import typings.ipfsBitswap.anon.TypeofBitswapMessage
 import typings.libp2p.mod.Libp2p
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,12 +18,12 @@ object mod {
   
   trait BitswapMessage extends StObject {
     
-    var BitswapMessage: (Instantiable1[/* full */ Boolean, typings.ipfsBitswap.distSrcMessageMod.BitswapMessage]) & TypeofBitswapMessage
+    var BitswapMessage: Instantiable1[/* full */ Boolean, typings.ipfsBitswap.distSrcMessageMod.BitswapMessage]
   }
   object BitswapMessage {
     
     inline def apply(
-      BitswapMessage: (Instantiable1[/* full */ Boolean, typings.ipfsBitswap.distSrcMessageMod.BitswapMessage]) & TypeofBitswapMessage
+      BitswapMessage: Instantiable1[/* full */ Boolean, typings.ipfsBitswap.distSrcMessageMod.BitswapMessage]
     ): BitswapMessage = {
       val __obj = js.Dynamic.literal(BitswapMessage = BitswapMessage.asInstanceOf[js.Any])
       __obj.asInstanceOf[BitswapMessage]
@@ -32,9 +31,7 @@ object mod {
     
     extension [Self <: BitswapMessage](x: Self) {
       
-      inline def setBitswapMessage(
-        value: (Instantiable1[/* full */ Boolean, typings.ipfsBitswap.distSrcMessageMod.BitswapMessage]) & TypeofBitswapMessage
-      ): Self = StObject.set(x, "BitswapMessage", value.asInstanceOf[js.Any])
+      inline def setBitswapMessage(value: Instantiable1[/* full */ Boolean, typings.ipfsBitswap.distSrcMessageMod.BitswapMessage]): Self = StObject.set(x, "BitswapMessage", value.asInstanceOf[js.Any])
     }
   }
   

@@ -1,24 +1,23 @@
 package typings.terminalKit.anon
 
+import typings.terminalKit.terminalMod.GridMenuResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `3` extends StObject {
   
-  var shrink: js.UndefOr[Height] = js.undefined
+  var promise: js.Promise[GridMenuResponse]
 }
 object `3` {
   
-  inline def apply(): `3` = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(promise: js.Promise[GridMenuResponse]): `3` = {
+    val __obj = js.Dynamic.literal(promise = promise.asInstanceOf[js.Any])
     __obj.asInstanceOf[`3`]
   }
   
   extension [Self <: `3`](x: Self) {
     
-    inline def setShrink(value: Height): Self = StObject.set(x, "shrink", value.asInstanceOf[js.Any])
-    
-    inline def setShrinkUndefined: Self = StObject.set(x, "shrink", js.undefined)
+    inline def setPromise(value: js.Promise[GridMenuResponse]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
   }
 }

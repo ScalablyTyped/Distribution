@@ -1,10 +1,5 @@
 package typings.`11tyEleventyImg`
 
-import typings.`11tyEleventyImg`.`11tyEleventyImgStrings`.avif
-import typings.`11tyEleventyImg`.`11tyEleventyImgStrings`.jpeg
-import typings.`11tyEleventyImg`.`11tyEleventyImgStrings`.png
-import typings.`11tyEleventyImg`.`11tyEleventyImgStrings`.svg
-import typings.`11tyEleventyImg`.`11tyEleventyImgStrings`.webp
 import typings.`11tyEleventyImg`.mod.FormatHook
 import typings.`11tyEleventyImg`.mod.ImageFormat
 import typings.`11tyEleventyImg`.mod.ImageFormatWithAliases
@@ -102,7 +97,7 @@ object anon {
     
     var filename: js.UndefOr[String] = js.undefined
     
-    var format: ImageFormat & avif
+    var format: ImageFormat
     
     var height: Double
     
@@ -121,7 +116,7 @@ object anon {
   object MetadataEntryformatavif {
     
     inline def apply(
-      format: ImageFormat & avif,
+      format: ImageFormat,
       height: Double,
       sourceType: String,
       srcset: String,
@@ -138,7 +133,7 @@ object anon {
       
       inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      inline def setFormat(value: ImageFormat & avif): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: ImageFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -165,7 +160,7 @@ object anon {
     
     var filename: js.UndefOr[String] = js.undefined
     
-    var format: ImageFormat & jpeg
+    var format: ImageFormat
     
     var height: Double
     
@@ -184,7 +179,7 @@ object anon {
   object MetadataEntryformatjpeg {
     
     inline def apply(
-      format: ImageFormat & jpeg,
+      format: ImageFormat,
       height: Double,
       sourceType: String,
       srcset: String,
@@ -201,7 +196,7 @@ object anon {
       
       inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      inline def setFormat(value: ImageFormat & jpeg): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: ImageFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -228,7 +223,7 @@ object anon {
     
     var filename: js.UndefOr[String] = js.undefined
     
-    var format: ImageFormat & png
+    var format: ImageFormat
     
     var height: Double
     
@@ -247,7 +242,7 @@ object anon {
   object MetadataEntryformatpng {
     
     inline def apply(
-      format: ImageFormat & png,
+      format: ImageFormat,
       height: Double,
       sourceType: String,
       srcset: String,
@@ -264,7 +259,7 @@ object anon {
       
       inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      inline def setFormat(value: ImageFormat & png): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: ImageFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -291,7 +286,7 @@ object anon {
     
     var filename: js.UndefOr[String] = js.undefined
     
-    var format: ImageFormat & svg
+    var format: ImageFormat
     
     var height: Double
     
@@ -310,7 +305,7 @@ object anon {
   object MetadataEntryformatsvg {
     
     inline def apply(
-      format: ImageFormat & svg,
+      format: ImageFormat,
       height: Double,
       sourceType: String,
       srcset: String,
@@ -327,7 +322,7 @@ object anon {
       
       inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      inline def setFormat(value: ImageFormat & svg): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: ImageFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -354,7 +349,7 @@ object anon {
     
     var filename: js.UndefOr[String] = js.undefined
     
-    var format: ImageFormat & webp
+    var format: ImageFormat
     
     var height: Double
     
@@ -373,7 +368,7 @@ object anon {
   object MetadataEntryformatwebp {
     
     inline def apply(
-      format: ImageFormat & webp,
+      format: ImageFormat,
       height: Double,
       sourceType: String,
       srcset: String,
@@ -390,7 +385,7 @@ object anon {
       
       inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      inline def setFormat(value: ImageFormat & webp): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: ImageFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

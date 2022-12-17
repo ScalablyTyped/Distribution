@@ -56,7 +56,7 @@ object BorderColorProps {
     
     inline def setBorderBottomColorUndefined: Self = StObject.set(x, "borderBottomColor", js.undefined)
     
-    inline def setBorderBottomColorVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderBottomColor", js.Array(value :_*))
+    inline def setBorderBottomColorVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderBottomColor", js.Array(value*))
     
     inline def setBorderColor(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
@@ -64,7 +64,7 @@ object BorderColorProps {
     
     inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
-    inline def setBorderColorVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderColor", js.Array(value :_*))
+    inline def setBorderColorVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderColor", js.Array(value*))
     
     inline def setBorderLeftColor(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderLeftColor", value.asInstanceOf[js.Any])
     
@@ -72,7 +72,7 @@ object BorderColorProps {
     
     inline def setBorderLeftColorUndefined: Self = StObject.set(x, "borderLeftColor", js.undefined)
     
-    inline def setBorderLeftColorVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderLeftColor", js.Array(value :_*))
+    inline def setBorderLeftColorVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderLeftColor", js.Array(value*))
     
     inline def setBorderRightColor(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderRightColor", value.asInstanceOf[js.Any])
     
@@ -80,7 +80,7 @@ object BorderColorProps {
     
     inline def setBorderRightColorUndefined: Self = StObject.set(x, "borderRightColor", js.undefined)
     
-    inline def setBorderRightColorVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderRightColor", js.Array(value :_*))
+    inline def setBorderRightColorVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderRightColor", js.Array(value*))
     
     inline def setBorderTopColor(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderTopColor", value.asInstanceOf[js.Any])
     
@@ -88,6 +88,6 @@ object BorderColorProps {
     
     inline def setBorderTopColorUndefined: Self = StObject.set(x, "borderTopColor", js.undefined)
     
-    inline def setBorderTopColorVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderTopColor", js.Array(value :_*))
+    inline def setBorderTopColorVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderTopColor", js.Array(value*))
   }
 }

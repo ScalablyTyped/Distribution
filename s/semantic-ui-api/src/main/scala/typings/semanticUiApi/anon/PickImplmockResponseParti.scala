@@ -73,7 +73,7 @@ trait PickImplmockResponseParti
   
   var method: js.UndefOr[post | get | put | delete | head | options | patch] = js.undefined
   
-  var mockResponse: (Any | `false`) & (js.UndefOr[Any | `false`])
+  var mockResponse: Any | `false`
   
   var mockResponseAsync: js.UndefOr[
     (js.Function2[
@@ -147,7 +147,7 @@ trait PickImplmockResponseParti
 }
 object PickImplmockResponseParti {
   
-  inline def apply(mockResponse: (Any | `false`) & (js.UndefOr[Any | `false`])): PickImplmockResponseParti = {
+  inline def apply(mockResponse: Any | `false`): PickImplmockResponseParti = {
     val __obj = js.Dynamic.literal(mockResponse = mockResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmockResponseParti]
   }
@@ -226,7 +226,7 @@ object PickImplmockResponseParti {
     
     inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    inline def setMockResponse(value: (Any | `false`) & (js.UndefOr[Any | `false`])): Self = StObject.set(x, "mockResponse", value.asInstanceOf[js.Any])
+    inline def setMockResponse(value: Any | `false`): Self = StObject.set(x, "mockResponse", value.asInstanceOf[js.Any])
     
     inline def setMockResponseAsync(
       value: (js.Function2[

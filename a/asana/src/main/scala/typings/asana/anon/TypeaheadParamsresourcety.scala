@@ -1,6 +1,5 @@
 package typings.asana.anon
 
-import typings.asana.asanaStrings.custom_field
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,11 +15,11 @@ trait TypeaheadParamsresourcety extends StObject {
   
   var query: js.UndefOr[String] = js.undefined
   
-  var resource_type: String & custom_field
+  var resource_type: String
 }
 object TypeaheadParamsresourcety {
   
-  inline def apply(resource_type: String & custom_field): TypeaheadParamsresourcety = {
+  inline def apply(resource_type: String): TypeaheadParamsresourcety = {
     val __obj = js.Dynamic.literal(resource_type = resource_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeaheadParamsresourcety]
   }
@@ -43,6 +42,6 @@ object TypeaheadParamsresourcety {
     
     inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    inline def setResource_type(value: String & custom_field): Self = StObject.set(x, "resource_type", value.asInstanceOf[js.Any])
+    inline def setResource_type(value: String): Self = StObject.set(x, "resource_type", value.asInstanceOf[js.Any])
   }
 }

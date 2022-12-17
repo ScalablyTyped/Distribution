@@ -60,11 +60,11 @@ trait PickImplurlPartialPickImp
   
   var regExp: js.UndefOr[String] = js.undefined
   
-  var url: String & js.UndefOr[String]
+  var url: String
 }
 object PickImplurlPartialPickImp {
   
-  inline def apply(url: String & js.UndefOr[String]): PickImplurlPartialPickImp = {
+  inline def apply(url: String): PickImplurlPartialPickImp = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplurlPartialPickImp]
   }
@@ -171,6 +171,6 @@ object PickImplurlPartialPickImp {
     
     inline def setRegExpUndefined: Self = StObject.set(x, "regExp", js.undefined)
     
-    inline def setUrl(value: String & js.UndefOr[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

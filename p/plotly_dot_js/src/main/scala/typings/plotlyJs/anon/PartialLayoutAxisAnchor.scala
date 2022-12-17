@@ -136,7 +136,7 @@ trait PartialLayoutAxisAnchor extends StObject {
   
   var rangemode: js.UndefOr[normal | tozero | nonnegative] = js.undefined
   
-  var rangeselector: js.UndefOr[PartialRangeSelector] = js.undefined
+  var rangeselector: js.UndefOr[PartialRangeSelectorActivecolor] = js.undefined
   
   var rangeslider: js.UndefOr[PartialRangeSlider] = js.undefined
   
@@ -369,7 +369,7 @@ object PartialLayoutAxisAnchor {
     
     inline def setRangemodeUndefined: Self = StObject.set(x, "rangemode", js.undefined)
     
-    inline def setRangeselector(value: PartialRangeSelector): Self = StObject.set(x, "rangeselector", value.asInstanceOf[js.Any])
+    inline def setRangeselector(value: PartialRangeSelectorActivecolor): Self = StObject.set(x, "rangeselector", value.asInstanceOf[js.Any])
     
     inline def setRangeselectorUndefined: Self = StObject.set(x, "rangeselector", js.undefined)
     

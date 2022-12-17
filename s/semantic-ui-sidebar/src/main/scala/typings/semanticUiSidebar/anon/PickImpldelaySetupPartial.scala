@@ -27,7 +27,7 @@ trait PickImpldelaySetupPartial
   
   var defaultTransition: js.UndefOr[DefaultTransitionSettings] = js.undefined
   
-  var delaySetup: Boolean & js.UndefOr[Boolean]
+  var delaySetup: Boolean
   
   var dimPage: js.UndefOr[Boolean] = js.undefined
   
@@ -75,7 +75,7 @@ trait PickImpldelaySetupPartial
 }
 object PickImpldelaySetupPartial {
   
-  inline def apply(delaySetup: Boolean & js.UndefOr[Boolean]): PickImpldelaySetupPartial = {
+  inline def apply(delaySetup: Boolean): PickImpldelaySetupPartial = {
     val __obj = js.Dynamic.literal(delaySetup = delaySetup.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldelaySetupPartial]
   }
@@ -102,7 +102,7 @@ object PickImpldelaySetupPartial {
     
     inline def setDefaultTransitionUndefined: Self = StObject.set(x, "defaultTransition", js.undefined)
     
-    inline def setDelaySetup(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "delaySetup", value.asInstanceOf[js.Any])
+    inline def setDelaySetup(value: Boolean): Self = StObject.set(x, "delaySetup", value.asInstanceOf[js.Any])
     
     inline def setDimPage(value: Boolean): Self = StObject.set(x, "dimPage", value.asInstanceOf[js.Any])
     

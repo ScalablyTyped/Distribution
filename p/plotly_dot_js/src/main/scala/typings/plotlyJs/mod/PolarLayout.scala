@@ -1,7 +1,7 @@
 package typings.plotlyJs.mod
 
 import typings.plotlyJs.anon.PartialDomain
-import typings.plotlyJs.anon.PartialLayoutAxisAngle
+import typings.plotlyJs.anon.PartialLayoutAxisAnchor
 import typings.plotlyJs.plotlyJsStrings.circular
 import typings.plotlyJs.plotlyJsStrings.linear
 import org.scalablytyped.runtime.StObject
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PolarLayout extends StObject {
   
-  var angularaxis: PartialLayoutAxisAngle
+  var angularaxis: PartialLayoutAxisAnchor
   
   var bgcolor: Color
   
@@ -20,7 +20,7 @@ trait PolarLayout extends StObject {
   
   var hole: Double
   
-  var radialaxis: PartialLayoutAxisAngle
+  var radialaxis: PartialLayoutAxisAnchor
   
   var sector: js.Array[Double]
   
@@ -29,12 +29,12 @@ trait PolarLayout extends StObject {
 object PolarLayout {
   
   inline def apply(
-    angularaxis: PartialLayoutAxisAngle,
+    angularaxis: PartialLayoutAxisAnchor,
     bgcolor: Color,
     domain: PartialDomain,
     gridshape: circular | linear,
     hole: Double,
-    radialaxis: PartialLayoutAxisAngle,
+    radialaxis: PartialLayoutAxisAnchor,
     sector: js.Array[Double],
     uirevision: String | Double
   ): PolarLayout = {
@@ -44,7 +44,7 @@ object PolarLayout {
   
   extension [Self <: PolarLayout](x: Self) {
     
-    inline def setAngularaxis(value: PartialLayoutAxisAngle): Self = StObject.set(x, "angularaxis", value.asInstanceOf[js.Any])
+    inline def setAngularaxis(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "angularaxis", value.asInstanceOf[js.Any])
     
     inline def setBgcolor(value: Color): Self = StObject.set(x, "bgcolor", value.asInstanceOf[js.Any])
     
@@ -56,7 +56,7 @@ object PolarLayout {
     
     inline def setHole(value: Double): Self = StObject.set(x, "hole", value.asInstanceOf[js.Any])
     
-    inline def setRadialaxis(value: PartialLayoutAxisAngle): Self = StObject.set(x, "radialaxis", value.asInstanceOf[js.Any])
+    inline def setRadialaxis(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "radialaxis", value.asInstanceOf[js.Any])
     
     inline def setSector(value: js.Array[Double]): Self = StObject.set(x, "sector", value.asInstanceOf[js.Any])
     

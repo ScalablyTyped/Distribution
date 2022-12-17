@@ -51,13 +51,12 @@ trait SimpleFillSymbolPropertie extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol.html#type)
     */
-  var `type`: (js.UndefOr[`simple-fill` | `picture-fill`]) & `simple-fill`
+  var `type`: js.UndefOr[`simple-fill` | `picture-fill`] = js.undefined
 }
 object SimpleFillSymbolPropertie {
   
-  inline def apply(`type`: (js.UndefOr[`simple-fill` | `picture-fill`]) & `simple-fill`): SimpleFillSymbolPropertie = {
+  inline def apply(): SimpleFillSymbolPropertie = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleFillSymbolPropertie]
   }
   
@@ -79,6 +78,8 @@ object SimpleFillSymbolPropertie {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setType(value: (js.UndefOr[`simple-fill` | `picture-fill`]) & `simple-fill`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `simple-fill` | `picture-fill`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

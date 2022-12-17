@@ -14,13 +14,13 @@ trait PickImpltitlePartialPickI
   
   var content: js.UndefOr[String] = js.undefined
   
-  var title: String & js.UndefOr[String]
+  var title: String
   
   var trigger: js.UndefOr[String] = js.undefined
 }
 object PickImpltitlePartialPickI {
   
-  inline def apply(title: String & js.UndefOr[String]): PickImpltitlePartialPickI = {
+  inline def apply(title: String): PickImpltitlePartialPickI = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpltitlePartialPickI]
   }
@@ -35,7 +35,7 @@ object PickImpltitlePartialPickI {
     
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    inline def setTitle(value: String & js.UndefOr[String]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTrigger(value: String): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     

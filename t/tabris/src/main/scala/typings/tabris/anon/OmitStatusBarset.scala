@@ -201,7 +201,7 @@ trait OmitStatusBarset extends StObject {
   
   var height: Double
   
-  var jsxAttributes: (JSXAttributes[StatusBar_, Omit[StatusBar_, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `4`
+  var jsxAttributes: (JSXAttributes[StatusBar_, Omit[StatusBar_, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `15`
   
   def off(`type`: String, listener: js.Function1[/* event */ EventObject[NativeObject], Unit]): StatusBar_
   def off(
@@ -306,7 +306,7 @@ object OmitStatusBarset {
     constructor: /* properties */ js.UndefOr[Properties[StatusBar_, Omit[StatusBar_, set]]] => Any,
     displayMode: default | float | hide,
     height: Double,
-    jsxAttributes: (JSXAttributes[StatusBar_, Omit[StatusBar_, set | jsxAttributes]]) & `4`,
+    jsxAttributes: (JSXAttributes[StatusBar_, Omit[StatusBar_, set | jsxAttributes]]) & `15`,
     off: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Unit], /* context */ js.UndefOr[js.Object]) => StatusBar_,
     on: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Any], /* context */ js.UndefOr[js.Object]) => StatusBar_,
     onBackgroundChanged: ChangeListeners[StatusBar_, background],
@@ -372,7 +372,7 @@ object OmitStatusBarset {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    inline def setJsxAttributes(value: (JSXAttributes[StatusBar_, Omit[StatusBar_, set | jsxAttributes]]) & `4`): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
+    inline def setJsxAttributes(value: (JSXAttributes[StatusBar_, Omit[StatusBar_, set | jsxAttributes]]) & `15`): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     
     inline def setOff(
       value: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Unit], /* context */ js.UndefOr[js.Object]) => StatusBar_

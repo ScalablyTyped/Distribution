@@ -26,7 +26,7 @@ trait PickImplboundaryPartialPi
   
   var addTouchEvents: js.UndefOr[Boolean] = js.undefined
   
-  var boundary: (String | JQuery) & (js.UndefOr[String | JQuery])
+  var boundary: String | JQuery
   
   var className: js.UndefOr[ClassNameSettings] = js.undefined
   
@@ -120,7 +120,7 @@ trait PickImplboundaryPartialPi
 }
 object PickImplboundaryPartialPi {
   
-  inline def apply(boundary: (String | JQuery) & (js.UndefOr[String | JQuery])): PickImplboundaryPartialPi = {
+  inline def apply(boundary: String | JQuery): PickImplboundaryPartialPi = {
     val __obj = js.Dynamic.literal(boundary = boundary.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplboundaryPartialPi]
   }
@@ -131,7 +131,7 @@ object PickImplboundaryPartialPi {
     
     inline def setAddTouchEventsUndefined: Self = StObject.set(x, "addTouchEvents", js.undefined)
     
-    inline def setBoundary(value: (String | JQuery) & (js.UndefOr[String | JQuery])): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
+    inline def setBoundary(value: String | JQuery): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
     
     inline def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

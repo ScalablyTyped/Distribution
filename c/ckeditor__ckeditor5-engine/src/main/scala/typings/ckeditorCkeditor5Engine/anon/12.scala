@@ -6,31 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `12` extends StObject {
   
-  var converterPriority: js.UndefOr[
-    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PriorityString */ Any) | Double
-  ] = js.undefined
-  
-  var model: String | `10` | `11`
-  
-  var view: String | KeyName | NameStyles
+  var baseVersion: Double | Null
 }
 object `12` {
   
-  inline def apply(model: String | `10` | `11`, view: String | KeyName | NameStyles): `12` = {
-    val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
+  inline def apply(): `12` = {
+    val __obj = js.Dynamic.literal(baseVersion = null)
     __obj.asInstanceOf[`12`]
   }
   
   extension [Self <: `12`](x: Self) {
     
-    inline def setConverterPriority(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PriorityString */ Any) | Double
-    ): Self = StObject.set(x, "converterPriority", value.asInstanceOf[js.Any])
+    inline def setBaseVersion(value: Double): Self = StObject.set(x, "baseVersion", value.asInstanceOf[js.Any])
     
-    inline def setConverterPriorityUndefined: Self = StObject.set(x, "converterPriority", js.undefined)
-    
-    inline def setModel(value: String | `10` | `11`): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
-    
-    inline def setView(value: String | KeyName | NameStyles): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setBaseVersionNull: Self = StObject.set(x, "baseVersion", null)
   }
 }

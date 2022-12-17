@@ -17,7 +17,7 @@ trait GetId[RouteName /* <: /* keyof ParamList */ String */, ScreenOptions /* <:
     * For a given screen name, there will always be only one screen corresponding to an ID.
     * If `undefined` is returned, it acts same as no `getId` being specified.
     */
-  var getId: js.UndefOr[js.Function1[/* param0 */ `3`[ParamList, RouteName], js.UndefOr[String]]] = js.undefined
+  var getId: js.UndefOr[js.Function1[/* param0 */ `2`[ParamList, RouteName], js.UndefOr[String]]] = js.undefined
   
   /**
     * Initial params object for the route.
@@ -32,10 +32,7 @@ trait GetId[RouteName /* <: /* keyof ParamList */ String */, ScreenOptions /* <:
     * Event listeners for this screen.
     */
   var listeners: js.UndefOr[
-    (ScreenListeners[State, EventMap]) | (js.Function1[
-      /* props */ NavigationRoute[ParamList, RouteName], 
-      ScreenListeners[State, EventMap]
-    ])
+    (ScreenListeners[State, EventMap]) | (js.Function1[/* props */ Route[ParamList, RouteName], ScreenListeners[State, EventMap]])
   ] = js.undefined
   
   /**
@@ -54,7 +51,7 @@ trait GetId[RouteName /* <: /* keyof ParamList */ String */, ScreenOptions /* <:
     * Navigator options for this screen.
     */
   var options: js.UndefOr[
-    ScreenOptions | (js.Function1[/* props */ NavigationRoute[ParamList, RouteName], ScreenOptions])
+    ScreenOptions | (js.Function1[/* props */ Route[ParamList, RouteName], ScreenOptions])
   ] = js.undefined
 }
 object GetId {
@@ -66,7 +63,7 @@ object GetId {
   
   extension [Self <: GetId[?, ?, ?, ?, ?], RouteName /* <: /* keyof ParamList */ String */, ScreenOptions /* <: js.Object */, ParamList /* <: ParamListBase */, State /* <: NavigationState[ParamListBase] */, EventMap /* <: EventMapBase */](x: Self & (GetId[RouteName, ScreenOptions, ParamList, State, EventMap])) {
     
-    inline def setGetId(value: /* param0 */ `3`[ParamList, RouteName] => js.UndefOr[String]): Self = StObject.set(x, "getId", js.Any.fromFunction1(value))
+    inline def setGetId(value: /* param0 */ `2`[ParamList, RouteName] => js.UndefOr[String]): Self = StObject.set(x, "getId", js.Any.fromFunction1(value))
     
     inline def setGetIdUndefined: Self = StObject.set(x, "getId", js.undefined)
     
@@ -79,13 +76,10 @@ object GetId {
     inline def setInitialParamsUndefined: Self = StObject.set(x, "initialParams", js.undefined)
     
     inline def setListeners(
-      value: (ScreenListeners[State, EventMap]) | (js.Function1[
-          /* props */ NavigationRoute[ParamList, RouteName], 
-          ScreenListeners[State, EventMap]
-        ])
+      value: (ScreenListeners[State, EventMap]) | (js.Function1[/* props */ Route[ParamList, RouteName], ScreenListeners[State, EventMap]])
     ): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
     
-    inline def setListenersFunction1(value: /* props */ NavigationRoute[ParamList, RouteName] => ScreenListeners[State, EventMap]): Self = StObject.set(x, "listeners", js.Any.fromFunction1(value))
+    inline def setListenersFunction1(value: /* props */ Route[ParamList, RouteName] => ScreenListeners[State, EventMap]): Self = StObject.set(x, "listeners", js.Any.fromFunction1(value))
     
     inline def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
     
@@ -95,11 +89,9 @@ object GetId {
     
     inline def setNavigationKeyUndefined: Self = StObject.set(x, "navigationKey", js.undefined)
     
-    inline def setOptions(
-      value: ScreenOptions | (js.Function1[/* props */ NavigationRoute[ParamList, RouteName], ScreenOptions])
-    ): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: ScreenOptions | (js.Function1[/* props */ Route[ParamList, RouteName], ScreenOptions])): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    inline def setOptionsFunction1(value: /* props */ NavigationRoute[ParamList, RouteName] => ScreenOptions): Self = StObject.set(x, "options", js.Any.fromFunction1(value))
+    inline def setOptionsFunction1(value: /* props */ Route[ParamList, RouteName] => ScreenOptions): Self = StObject.set(x, "options", js.Any.fromFunction1(value))
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }

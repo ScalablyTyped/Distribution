@@ -1,5 +1,6 @@
 package typings.styledSystem.mod
 
+import typings.csstype.mod.Property.JustifyItems
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,12 +13,7 @@ trait JustifyItemsProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends S
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-items)
     */
-  var justifyItems: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyItems */ js.Any, 
-      ThemeType
-    ]
-  ] = js.undefined
+  var justifyItems: js.UndefOr[ResponsiveValue[JustifyItems, ThemeType]] = js.undefined
 }
 object JustifyItemsProps {
   
@@ -28,19 +24,12 @@ object JustifyItemsProps {
   
   extension [Self <: JustifyItemsProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & JustifyItemsProps[ThemeType]) {
     
-    inline def setJustifyItems(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyItems */ js.Any, 
-          ThemeType
-        ]
-    ): Self = StObject.set(x, "justifyItems", value.asInstanceOf[js.Any])
+    inline def setJustifyItems(value: ResponsiveValue[JustifyItems, ThemeType]): Self = StObject.set(x, "justifyItems", value.asInstanceOf[js.Any])
     
     inline def setJustifyItemsNull: Self = StObject.set(x, "justifyItems", null)
     
     inline def setJustifyItemsUndefined: Self = StObject.set(x, "justifyItems", js.undefined)
     
-    inline def setJustifyItemsVarargs(
-      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyItems */ js.Any) | Null)*
-    ): Self = StObject.set(x, "justifyItems", js.Array(value :_*))
+    inline def setJustifyItemsVarargs(value: (JustifyItems | Null)*): Self = StObject.set(x, "justifyItems", js.Array(value*))
   }
 }

@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait QueryVisibletoorganization extends StObject {
   
-  var path: `246`
+  var path: EnterpriseString
   
   var query: Visibletoorganization
 }
 object QueryVisibletoorganization {
   
-  inline def apply(path: `246`, query: Visibletoorganization): QueryVisibletoorganization = {
+  inline def apply(path: EnterpriseString, query: Visibletoorganization): QueryVisibletoorganization = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryVisibletoorganization]
   }
   
   extension [Self <: QueryVisibletoorganization](x: Self) {
     
-    inline def setPath(value: `246`): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: EnterpriseString): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     inline def setQuery(value: Visibletoorganization): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }

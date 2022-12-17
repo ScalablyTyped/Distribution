@@ -109,7 +109,7 @@ trait TouchableWithoutFeedbackPAccessibilityActions extends StObject {
     */
   var accessible: js.UndefOr[Boolean] = js.undefined
   
-  var children: js.UndefOr[ReactNode] & ReactNode
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   /**
     * Delay in ms, from onPressIn, before onLongPress is called.
@@ -208,7 +208,7 @@ trait TouchableWithoutFeedbackPAccessibilityActions extends StObject {
     * Called when the touch is released,
     * but not if cancelled (e.g. by a scroll that steals the responder lock).
     */
-  var onPress: (js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]) & js.UndefOr[js.Function0[Unit]]
+  var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
   var onPressIn: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
@@ -251,11 +251,8 @@ trait TouchableWithoutFeedbackPAccessibilityActions extends StObject {
 }
 object TouchableWithoutFeedbackPAccessibilityActions {
   
-  inline def apply(
-    onPress: (js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]) & js.UndefOr[js.Function0[Unit]],
-    theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
-  ): TouchableWithoutFeedbackPAccessibilityActions = {
-    val __obj = js.Dynamic.literal(onPress = onPress.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
+  inline def apply(theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): TouchableWithoutFeedbackPAccessibilityActions = {
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchableWithoutFeedbackPAccessibilityActions]
   }
   
@@ -317,7 +314,7 @@ object TouchableWithoutFeedbackPAccessibilityActions {
     
     inline def setAccessibleUndefined: Self = StObject.set(x, "accessible", js.undefined)
     
-    inline def setChildren(value: js.UndefOr[ReactNode] & ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
@@ -391,9 +388,7 @@ object TouchableWithoutFeedbackPAccessibilityActions {
     
     inline def setOnMagicTapUndefined: Self = StObject.set(x, "onMagicTap", js.undefined)
     
-    inline def setOnPress(
-      value: (js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]) & js.UndefOr[js.Function0[Unit]]
-    ): Self = StObject.set(x, "onPress", value.asInstanceOf[js.Any])
+    inline def setOnPress(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
     
     inline def setOnPressIn(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPressIn", js.Any.fromFunction1(value))
     
@@ -402,6 +397,8 @@ object TouchableWithoutFeedbackPAccessibilityActions {
     inline def setOnPressOut(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPressOut", js.Any.fromFunction1(value))
     
     inline def setOnPressOutUndefined: Self = StObject.set(x, "onPressOut", js.undefined)
+    
+    inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     
     inline def setPressRetentionOffset(value: Insets): Self = StObject.set(x, "pressRetentionOffset", value.asInstanceOf[js.Any])
     

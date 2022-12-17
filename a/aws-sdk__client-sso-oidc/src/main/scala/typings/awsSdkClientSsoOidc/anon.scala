@@ -442,7 +442,7 @@ object anon {
     }
   }
   
-  /* Inlined @aws-sdk/smithy-client.@aws-sdk/smithy-client.ExceptionOptionType<@aws-sdk/client-sso-oidc.@aws-sdk/client-sso-oidc/dist-types/models/models_0.InvalidScopeException, @aws-sdk/client-sso-oidc.@aws-sdk/client-sso-oidc/dist-types/models/SSOOIDCServiceException.SSOOIDCServiceException> */
+  /* Inlined @aws-sdk/smithy-client.@aws-sdk/smithy-client.ExceptionOptionType<@aws-sdk/client-sso-oidc.@aws-sdk/client-sso-oidc/dist-types/models/models_0.InvalidClientMetadataException, @aws-sdk/client-sso-oidc.@aws-sdk/client-sso-oidc/dist-types/models/SSOOIDCServiceException.SSOOIDCServiceException> */
   trait ExceptionOptionTypeInvali extends StObject {
     
     @JSName("$metadata")

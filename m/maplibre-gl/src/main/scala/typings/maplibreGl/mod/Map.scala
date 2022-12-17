@@ -2,10 +2,11 @@ package typings.maplibreGl.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.mapboxPointGeometry.mod.^
-import typings.maplibreGl.anon.Data
+import typings.maplibreGl.anon.DataHeight
 import typings.maplibreGl.anon.Delegates
 import typings.maplibreGl.anon.Filter
 import typings.maplibreGl.anon.PartialStyleImageMetadata
+import typings.maplibreGl.anon.`5`
 import typings.maplibreGl.anon.diffbooleanundefinedStyle
 import typings.maplibreGl.maplibreGlStrings.boxzoomcancel
 import typings.maplibreGl.maplibreGlStrings.boxzoomend
@@ -249,8 +250,8 @@ open class Map protected () extends Camera {
   def addControl(control: IControl): this.type = js.native
   def addControl(control: IControl, position: ControlPosition): this.type = js.native
   
-  def addImage(id: String, image: Data): this.type = js.native
-  def addImage(id: String, image: Data, param2: PartialStyleImageMetadata): this.type = js.native
+  def addImage(id: String, image: DataHeight): this.type = js.native
+  def addImage(id: String, image: DataHeight, param2: PartialStyleImageMetadata): this.type = js.native
   def addImage(id: String, image: StyleImageInterface): this.type = js.native
   def addImage(id: String, image: StyleImageInterface, param2: PartialStyleImageMetadata): this.type = js.native
   /**
@@ -417,8 +418,8 @@ open class Map protected () extends Camera {
   	 * @see [Add a vector tile source](https://maplibre.org/maplibre-gl-js-docs/example/vector-source/)
   	 * @see [Add a WMS source](https://maplibre.org/maplibre-gl-js-docs/example/wms/)
   	 */
-  def addLayer(layer: LayerSpecification & typings.maplibreGl.anon.Source): this.type = js.native
-  def addLayer(layer: LayerSpecification & typings.maplibreGl.anon.Source, beforeId: String): this.type = js.native
+  def addLayer(layer: LayerSpecification & `5`): this.type = js.native
+  def addLayer(layer: LayerSpecification & `5`, beforeId: String): this.type = js.native
   def addLayer(layer: CustomLayerInterface): this.type = js.native
   def addLayer(layer: CustomLayerInterface, beforeId: String): this.type = js.native
   
@@ -861,11 +862,11 @@ open class Map protected () extends Camera {
   
   def off(`type`: MapEvent, listener: Listener): this.type = js.native
   @JSName("off")
-  def off_boxzoomcancel(`type`: boxzoomcancel, listener: js.Function1[/* ev */ MapLibreZoomEvent & js.Object, scala.Unit]): this.type = js.native
+  def off_boxzoomcancel(`type`: boxzoomcancel, listener: js.Function1[/* ev */ MapLibreZoomEvent, scala.Unit]): this.type = js.native
   @JSName("off")
-  def off_boxzoomend(`type`: boxzoomend, listener: js.Function1[/* ev */ MapLibreZoomEvent & js.Object, scala.Unit]): this.type = js.native
+  def off_boxzoomend(`type`: boxzoomend, listener: js.Function1[/* ev */ MapLibreZoomEvent, scala.Unit]): this.type = js.native
   @JSName("off")
-  def off_boxzoomstart(`type`: boxzoomstart, listener: js.Function1[/* ev */ MapLibreZoomEvent & js.Object, scala.Unit]): this.type = js.native
+  def off_boxzoomstart(`type`: boxzoomstart, listener: js.Function1[/* ev */ MapLibreZoomEvent, scala.Unit]): this.type = js.native
   /**
   	 * Removes an event listener previously added with `Map#on`.
   	 *
@@ -886,122 +887,77 @@ open class Map protected () extends Camera {
   	 * @returns {Map} `this`
   	 */
   @JSName("off")
-  def off_click(
-    `type`: click,
-    layer: String,
-    listener: js.Function1[/* ev */ MapLayerMouseEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def off_click(`type`: click, layer: String, listener: js.Function1[/* ev */ MapLayerMouseEvent, scala.Unit]): this.type = js.native
   @JSName("off")
-  def off_click(`type`: click, listener: js.Function1[/* ev */ MapMouseEvent & js.Object, scala.Unit]): this.type = js.native
+  def off_click(`type`: click, listener: js.Function1[/* ev */ MapMouseEvent, scala.Unit]): this.type = js.native
   @JSName("off")
   def off_contextmenu(
     `type`: contextmenu,
     layer: String,
-    listener: js.Function1[/* ev */ MapLayerMouseEvent & js.Object, scala.Unit]
+    listener: js.Function1[/* ev */ MapLayerMouseEvent, scala.Unit]
   ): this.type = js.native
   @JSName("off")
-  def off_contextmenu(`type`: contextmenu, listener: js.Function1[/* ev */ MapMouseEvent & js.Object, scala.Unit]): this.type = js.native
+  def off_contextmenu(`type`: contextmenu, listener: js.Function1[/* ev */ MapMouseEvent, scala.Unit]): this.type = js.native
   @JSName("off")
-  def off_data(`type`: data, listener: js.Function1[/* ev */ MapDataEvent & js.Object, scala.Unit]): this.type = js.native
+  def off_data(`type`: data, listener: js.Function1[/* ev */ MapDataEvent, scala.Unit]): this.type = js.native
   @JSName("off")
-  def off_dataabort(`type`: dataabort, listener: js.Function1[/* ev */ MapDataEvent & js.Object, scala.Unit]): this.type = js.native
+  def off_dataabort(`type`: dataabort, listener: js.Function1[/* ev */ MapDataEvent, scala.Unit]): this.type = js.native
   @JSName("off")
-  def off_dataloading(`type`: dataloading, listener: js.Function1[/* ev */ MapDataEvent & js.Object, scala.Unit]): this.type = js.native
+  def off_dataloading(`type`: dataloading, listener: js.Function1[/* ev */ MapDataEvent, scala.Unit]): this.type = js.native
   @JSName("off")
-  def off_dblclick(
-    `type`: dblclick,
-    layer: String,
-    listener: js.Function1[/* ev */ MapLayerMouseEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def off_dblclick(`type`: dblclick, layer: String, listener: js.Function1[/* ev */ MapLayerMouseEvent, scala.Unit]): this.type = js.native
   @JSName("off")
-  def off_dblclick(`type`: dblclick, listener: js.Function1[/* ev */ MapMouseEvent & js.Object, scala.Unit]): this.type = js.native
+  def off_dblclick(`type`: dblclick, listener: js.Function1[/* ev */ MapMouseEvent, scala.Unit]): this.type = js.native
   @JSName("off")
   def off_drag(
     `type`: drag,
-    listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]]) & js.Object, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]], scala.Unit]
   ): this.type = js.native
   @JSName("off")
   def off_dragend(
     `type`: dragend,
-    listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]]) & js.Object, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]], scala.Unit]
   ): this.type = js.native
   @JSName("off")
   def off_dragstart(
     `type`: dragstart,
-    listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]]) & js.Object, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]], scala.Unit]
   ): this.type = js.native
   @JSName("off")
-  def off_error(`type`: error, listener: js.Function1[/* ev */ ErrorEvent & js.Object, scala.Unit]): this.type = js.native
+  def off_error(`type`: error, listener: js.Function1[/* ev */ ErrorEvent, scala.Unit]): this.type = js.native
   @JSName("off")
-  def off_idle(`type`: idle, listener: js.Function1[/* ev */ MapLibreEvent[scala.Unit] & js.Object, scala.Unit]): this.type = js.native
+  def off_idle(`type`: idle, listener: js.Function1[/* ev */ MapLibreEvent[scala.Unit], scala.Unit]): this.type = js.native
   @JSName("off")
-  def off_load(`type`: load, listener: js.Function1[/* ev */ MapLibreEvent[scala.Unit] & js.Object, scala.Unit]): this.type = js.native
+  def off_load(`type`: load, listener: js.Function1[/* ev */ MapLibreEvent[scala.Unit], scala.Unit]): this.type = js.native
   @JSName("off")
-  def off_mousedown(
-    `type`: mousedown,
-    layer: String,
-    listener: js.Function1[/* ev */ MapLayerMouseEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def off_mousedown(`type`: mousedown, layer: String, listener: js.Function1[/* ev */ MapLayerMouseEvent, scala.Unit]): this.type = js.native
   @JSName("off")
-  def off_mousedown(`type`: mousedown, listener: js.Function1[/* ev */ MapMouseEvent & js.Object, scala.Unit]): this.type = js.native
+  def off_mousedown(`type`: mousedown, listener: js.Function1[/* ev */ MapMouseEvent, scala.Unit]): this.type = js.native
   @JSName("off")
-  def off_mouseenter(
-    `type`: mouseenter,
-    layer: String,
-    listener: js.Function1[/* ev */ MapLayerMouseEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def off_mouseenter(`type`: mouseenter, layer: String, listener: js.Function1[/* ev */ MapLayerMouseEvent, scala.Unit]): this.type = js.native
   @JSName("off")
-  def off_mouseleave(
-    `type`: mouseleave,
-    layer: String,
-    listener: js.Function1[/* ev */ MapLayerMouseEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def off_mouseleave(`type`: mouseleave, layer: String, listener: js.Function1[/* ev */ MapLayerMouseEvent, scala.Unit]): this.type = js.native
   @JSName("off")
-  def off_mousemove(
-    `type`: mousemove,
-    layer: String,
-    listener: js.Function1[/* ev */ MapLayerMouseEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def off_mousemove(`type`: mousemove, layer: String, listener: js.Function1[/* ev */ MapLayerMouseEvent, scala.Unit]): this.type = js.native
   @JSName("off")
-  def off_mousemove(`type`: mousemove, listener: js.Function1[/* ev */ MapMouseEvent & js.Object, scala.Unit]): this.type = js.native
+  def off_mousemove(`type`: mousemove, listener: js.Function1[/* ev */ MapMouseEvent, scala.Unit]): this.type = js.native
   @JSName("off")
-  def off_mouseout(
-    `type`: mouseout,
-    layer: String,
-    listener: js.Function1[/* ev */ MapLayerMouseEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def off_mouseout(`type`: mouseout, layer: String, listener: js.Function1[/* ev */ MapLayerMouseEvent, scala.Unit]): this.type = js.native
   @JSName("off")
-  def off_mouseout(`type`: mouseout, listener: js.Function1[/* ev */ MapMouseEvent & js.Object, scala.Unit]): this.type = js.native
+  def off_mouseout(`type`: mouseout, listener: js.Function1[/* ev */ MapMouseEvent, scala.Unit]): this.type = js.native
   @JSName("off")
-  def off_mouseover(
-    `type`: mouseover,
-    layer: String,
-    listener: js.Function1[/* ev */ MapLayerMouseEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def off_mouseover(`type`: mouseover, layer: String, listener: js.Function1[/* ev */ MapLayerMouseEvent, scala.Unit]): this.type = js.native
   @JSName("off")
-  def off_mouseover(`type`: mouseover, listener: js.Function1[/* ev */ MapMouseEvent & js.Object, scala.Unit]): this.type = js.native
+  def off_mouseover(`type`: mouseover, listener: js.Function1[/* ev */ MapMouseEvent, scala.Unit]): this.type = js.native
   @JSName("off")
-  def off_mouseup(
-    `type`: mouseup,
-    layer: String,
-    listener: js.Function1[/* ev */ MapLayerMouseEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def off_mouseup(`type`: mouseup, layer: String, listener: js.Function1[/* ev */ MapLayerMouseEvent, scala.Unit]): this.type = js.native
   @JSName("off")
-  def off_mouseup(`type`: mouseup, listener: js.Function1[/* ev */ MapMouseEvent & js.Object, scala.Unit]): this.type = js.native
+  def off_mouseup(`type`: mouseup, listener: js.Function1[/* ev */ MapMouseEvent, scala.Unit]): this.type = js.native
   @JSName("off")
   def off_move(
     `type`: move,
     listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]) & js.Object, 
+      /* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -1009,7 +965,7 @@ open class Map protected () extends Camera {
   def off_moveend(
     `type`: moveend,
     listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]) & js.Object, 
+      /* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -1017,132 +973,91 @@ open class Map protected () extends Camera {
   def off_movestart(
     `type`: movestart,
     listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]) & js.Object, 
+      /* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]], 
       scala.Unit
     ]
   ): this.type = js.native
   @JSName("off")
   def off_pitch(
     `type`: pitch,
-    listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]]) & js.Object, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]], scala.Unit]
   ): this.type = js.native
   @JSName("off")
   def off_pitchend(
     `type`: pitchend,
-    listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]]) & js.Object, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]], scala.Unit]
   ): this.type = js.native
   @JSName("off")
   def off_pitchstart(
     `type`: pitchstart,
-    listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]]) & js.Object, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]], scala.Unit]
   ): this.type = js.native
   @JSName("off")
-  def off_remove(`type`: remove, listener: js.Function1[/* ev */ MapLibreEvent[scala.Unit] & js.Object, scala.Unit]): this.type = js.native
+  def off_remove(`type`: remove, listener: js.Function1[/* ev */ MapLibreEvent[scala.Unit], scala.Unit]): this.type = js.native
   @JSName("off")
-  def off_render(`type`: render, listener: js.Function1[/* ev */ MapLibreEvent[scala.Unit] & js.Object, scala.Unit]): this.type = js.native
+  def off_render(`type`: render, listener: js.Function1[/* ev */ MapLibreEvent[scala.Unit], scala.Unit]): this.type = js.native
   @JSName("off")
-  def off_resize(`type`: resize, listener: js.Function1[/* ev */ MapLibreEvent[scala.Unit] & js.Object, scala.Unit]): this.type = js.native
+  def off_resize(`type`: resize, listener: js.Function1[/* ev */ MapLibreEvent[scala.Unit], scala.Unit]): this.type = js.native
   @JSName("off")
   def off_rotate(
     `type`: rotate,
-    listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]]) & js.Object, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]], scala.Unit]
   ): this.type = js.native
   @JSName("off")
   def off_rotateend(
     `type`: rotateend,
-    listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]]) & js.Object, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]], scala.Unit]
   ): this.type = js.native
   @JSName("off")
   def off_rotatestart(
     `type`: rotatestart,
-    listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]]) & js.Object, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]], scala.Unit]
   ): this.type = js.native
   @JSName("off")
-  def off_sourcedata(`type`: sourcedata, listener: js.Function1[/* ev */ MapSourceDataEvent & js.Object, scala.Unit]): this.type = js.native
+  def off_sourcedata(`type`: sourcedata, listener: js.Function1[/* ev */ MapSourceDataEvent, scala.Unit]): this.type = js.native
   @JSName("off")
-  def off_sourcedataabort(
-    `type`: sourcedataabort,
-    listener: js.Function1[/* ev */ MapSourceDataEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def off_sourcedataabort(`type`: sourcedataabort, listener: js.Function1[/* ev */ MapSourceDataEvent, scala.Unit]): this.type = js.native
   @JSName("off")
-  def off_sourcedataloading(
-    `type`: sourcedataloading,
-    listener: js.Function1[/* ev */ MapSourceDataEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def off_sourcedataloading(`type`: sourcedataloading, listener: js.Function1[/* ev */ MapSourceDataEvent, scala.Unit]): this.type = js.native
   @JSName("off")
-  def off_styledata(`type`: styledata, listener: js.Function1[/* ev */ MapStyleDataEvent & js.Object, scala.Unit]): this.type = js.native
+  def off_styledata(`type`: styledata, listener: js.Function1[/* ev */ MapStyleDataEvent, scala.Unit]): this.type = js.native
   @JSName("off")
-  def off_styledataloading(
-    `type`: styledataloading,
-    listener: js.Function1[/* ev */ MapStyleDataEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def off_styledataloading(`type`: styledataloading, listener: js.Function1[/* ev */ MapStyleDataEvent, scala.Unit]): this.type = js.native
   @JSName("off")
-  def off_styleimagemissing(
-    `type`: styleimagemissing,
-    listener: js.Function1[/* ev */ MapStyleImageMissingEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def off_styleimagemissing(`type`: styleimagemissing, listener: js.Function1[/* ev */ MapStyleImageMissingEvent, scala.Unit]): this.type = js.native
   @JSName("off")
-  def off_terrain(`type`: terrain, listener: js.Function1[/* ev */ MapTerrainEvent & js.Object, scala.Unit]): this.type = js.native
+  def off_terrain(`type`: terrain, listener: js.Function1[/* ev */ MapTerrainEvent, scala.Unit]): this.type = js.native
   @JSName("off")
-  def off_tiledataloading(`type`: tiledataloading, listener: js.Function1[/* ev */ MapDataEvent & js.Object, scala.Unit]): this.type = js.native
+  def off_tiledataloading(`type`: tiledataloading, listener: js.Function1[/* ev */ MapDataEvent, scala.Unit]): this.type = js.native
   @JSName("off")
   def off_touchcancel(
     `type`: touchcancel,
     layer: String,
-    listener: js.Function1[/* ev */ MapLayerTouchEvent & js.Object, scala.Unit]
+    listener: js.Function1[/* ev */ MapLayerTouchEvent, scala.Unit]
   ): this.type = js.native
   @JSName("off")
-  def off_touchcancel(`type`: touchcancel, listener: js.Function1[/* ev */ MapTouchEvent & js.Object, scala.Unit]): this.type = js.native
+  def off_touchcancel(`type`: touchcancel, listener: js.Function1[/* ev */ MapTouchEvent, scala.Unit]): this.type = js.native
   @JSName("off")
-  def off_touchend(
-    `type`: touchend,
-    layer: String,
-    listener: js.Function1[/* ev */ MapLayerTouchEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def off_touchend(`type`: touchend, layer: String, listener: js.Function1[/* ev */ MapLayerTouchEvent, scala.Unit]): this.type = js.native
   @JSName("off")
-  def off_touchend(`type`: touchend, listener: js.Function1[/* ev */ MapTouchEvent & js.Object, scala.Unit]): this.type = js.native
+  def off_touchend(`type`: touchend, listener: js.Function1[/* ev */ MapTouchEvent, scala.Unit]): this.type = js.native
   @JSName("off")
-  def off_touchmove(`type`: touchmove, listener: js.Function1[/* ev */ MapTouchEvent & js.Object, scala.Unit]): this.type = js.native
+  def off_touchmove(`type`: touchmove, listener: js.Function1[/* ev */ MapTouchEvent, scala.Unit]): this.type = js.native
   @JSName("off")
-  def off_touchstart(
-    `type`: touchstart,
-    layer: String,
-    listener: js.Function1[/* ev */ MapLayerTouchEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def off_touchstart(`type`: touchstart, layer: String, listener: js.Function1[/* ev */ MapLayerTouchEvent, scala.Unit]): this.type = js.native
   @JSName("off")
-  def off_touchstart(`type`: touchstart, listener: js.Function1[/* ev */ MapTouchEvent & js.Object, scala.Unit]): this.type = js.native
+  def off_touchstart(`type`: touchstart, listener: js.Function1[/* ev */ MapTouchEvent, scala.Unit]): this.type = js.native
   @JSName("off")
-  def off_webglcontextlost(`type`: webglcontextlost, listener: js.Function1[/* ev */ MapContextEvent & js.Object, scala.Unit]): this.type = js.native
+  def off_webglcontextlost(`type`: webglcontextlost, listener: js.Function1[/* ev */ MapContextEvent, scala.Unit]): this.type = js.native
   @JSName("off")
-  def off_webglcontextrestored(
-    `type`: webglcontextrestored,
-    listener: js.Function1[/* ev */ MapContextEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def off_webglcontextrestored(`type`: webglcontextrestored, listener: js.Function1[/* ev */ MapContextEvent, scala.Unit]): this.type = js.native
   @JSName("off")
-  def off_wheel(`type`: wheel, listener: js.Function1[/* ev */ MapWheelEvent & js.Object, scala.Unit]): this.type = js.native
+  def off_wheel(`type`: wheel, listener: js.Function1[/* ev */ MapWheelEvent, scala.Unit]): this.type = js.native
   @JSName("off")
   def off_zoom(
     `type`: zoom,
     listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]) & js.Object, 
+      /* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -1150,7 +1065,7 @@ open class Map protected () extends Camera {
   def off_zoomend(
     `type`: zoomend,
     listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]) & js.Object, 
+      /* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -1158,18 +1073,18 @@ open class Map protected () extends Camera {
   def off_zoomstart(
     `type`: zoomstart,
     listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]) & js.Object, 
+      /* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]], 
       scala.Unit
     ]
   ): this.type = js.native
   
   def on(`type`: MapEvent, listener: Listener): this.type = js.native
   @JSName("on")
-  def on_boxzoomcancel(`type`: boxzoomcancel, listener: js.Function1[/* ev */ MapLibreZoomEvent & js.Object, scala.Unit]): this.type = js.native
+  def on_boxzoomcancel(`type`: boxzoomcancel, listener: js.Function1[/* ev */ MapLibreZoomEvent, scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_boxzoomend(`type`: boxzoomend, listener: js.Function1[/* ev */ MapLibreZoomEvent & js.Object, scala.Unit]): this.type = js.native
+  def on_boxzoomend(`type`: boxzoomend, listener: js.Function1[/* ev */ MapLibreZoomEvent, scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_boxzoomstart(`type`: boxzoomstart, listener: js.Function1[/* ev */ MapLibreZoomEvent & js.Object, scala.Unit]): this.type = js.native
+  def on_boxzoomstart(`type`: boxzoomstart, listener: js.Function1[/* ev */ MapLibreZoomEvent, scala.Unit]): this.type = js.native
   /**
   	 * Adds a listener for events of a specified type, optionally limited to features in a specified style layer.
   	 *
@@ -1272,122 +1187,77 @@ open class Map protected () extends Camera {
   	 * @see [Create a draggable marker](https://maplibre.org/maplibre-gl-js-docs/example/drag-a-point/)
   	 */
   @JSName("on")
-  def on_click(
-    `type`: click,
-    layer: String,
-    listener: js.Function1[/* ev */ MapLayerMouseEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def on_click(`type`: click, layer: String, listener: js.Function1[/* ev */ MapLayerMouseEvent, scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_click(`type`: click, listener: js.Function1[/* ev */ MapMouseEvent & js.Object, scala.Unit]): this.type = js.native
+  def on_click(`type`: click, listener: js.Function1[/* ev */ MapMouseEvent, scala.Unit]): this.type = js.native
   @JSName("on")
   def on_contextmenu(
     `type`: contextmenu,
     layer: String,
-    listener: js.Function1[/* ev */ MapLayerMouseEvent & js.Object, scala.Unit]
+    listener: js.Function1[/* ev */ MapLayerMouseEvent, scala.Unit]
   ): this.type = js.native
   @JSName("on")
-  def on_contextmenu(`type`: contextmenu, listener: js.Function1[/* ev */ MapMouseEvent & js.Object, scala.Unit]): this.type = js.native
+  def on_contextmenu(`type`: contextmenu, listener: js.Function1[/* ev */ MapMouseEvent, scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_data(`type`: data, listener: js.Function1[/* ev */ MapDataEvent & js.Object, scala.Unit]): this.type = js.native
+  def on_data(`type`: data, listener: js.Function1[/* ev */ MapDataEvent, scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_dataabort(`type`: dataabort, listener: js.Function1[/* ev */ MapDataEvent & js.Object, scala.Unit]): this.type = js.native
+  def on_dataabort(`type`: dataabort, listener: js.Function1[/* ev */ MapDataEvent, scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_dataloading(`type`: dataloading, listener: js.Function1[/* ev */ MapDataEvent & js.Object, scala.Unit]): this.type = js.native
+  def on_dataloading(`type`: dataloading, listener: js.Function1[/* ev */ MapDataEvent, scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_dblclick(
-    `type`: dblclick,
-    layer: String,
-    listener: js.Function1[/* ev */ MapLayerMouseEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def on_dblclick(`type`: dblclick, layer: String, listener: js.Function1[/* ev */ MapLayerMouseEvent, scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_dblclick(`type`: dblclick, listener: js.Function1[/* ev */ MapMouseEvent & js.Object, scala.Unit]): this.type = js.native
+  def on_dblclick(`type`: dblclick, listener: js.Function1[/* ev */ MapMouseEvent, scala.Unit]): this.type = js.native
   @JSName("on")
   def on_drag(
     `type`: drag,
-    listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]]) & js.Object, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]], scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_dragend(
     `type`: dragend,
-    listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]]) & js.Object, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]], scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_dragstart(
     `type`: dragstart,
-    listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]]) & js.Object, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]], scala.Unit]
   ): this.type = js.native
   @JSName("on")
-  def on_error(`type`: error, listener: js.Function1[/* ev */ ErrorEvent & js.Object, scala.Unit]): this.type = js.native
+  def on_error(`type`: error, listener: js.Function1[/* ev */ ErrorEvent, scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_idle(`type`: idle, listener: js.Function1[/* ev */ MapLibreEvent[scala.Unit] & js.Object, scala.Unit]): this.type = js.native
+  def on_idle(`type`: idle, listener: js.Function1[/* ev */ MapLibreEvent[scala.Unit], scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_load(`type`: load, listener: js.Function1[/* ev */ MapLibreEvent[scala.Unit] & js.Object, scala.Unit]): this.type = js.native
+  def on_load(`type`: load, listener: js.Function1[/* ev */ MapLibreEvent[scala.Unit], scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_mousedown(
-    `type`: mousedown,
-    layer: String,
-    listener: js.Function1[/* ev */ MapLayerMouseEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def on_mousedown(`type`: mousedown, layer: String, listener: js.Function1[/* ev */ MapLayerMouseEvent, scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_mousedown(`type`: mousedown, listener: js.Function1[/* ev */ MapMouseEvent & js.Object, scala.Unit]): this.type = js.native
+  def on_mousedown(`type`: mousedown, listener: js.Function1[/* ev */ MapMouseEvent, scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_mouseenter(
-    `type`: mouseenter,
-    layer: String,
-    listener: js.Function1[/* ev */ MapLayerMouseEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def on_mouseenter(`type`: mouseenter, layer: String, listener: js.Function1[/* ev */ MapLayerMouseEvent, scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_mouseleave(
-    `type`: mouseleave,
-    layer: String,
-    listener: js.Function1[/* ev */ MapLayerMouseEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def on_mouseleave(`type`: mouseleave, layer: String, listener: js.Function1[/* ev */ MapLayerMouseEvent, scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_mousemove(
-    `type`: mousemove,
-    layer: String,
-    listener: js.Function1[/* ev */ MapLayerMouseEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def on_mousemove(`type`: mousemove, layer: String, listener: js.Function1[/* ev */ MapLayerMouseEvent, scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_mousemove(`type`: mousemove, listener: js.Function1[/* ev */ MapMouseEvent & js.Object, scala.Unit]): this.type = js.native
+  def on_mousemove(`type`: mousemove, listener: js.Function1[/* ev */ MapMouseEvent, scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_mouseout(
-    `type`: mouseout,
-    layer: String,
-    listener: js.Function1[/* ev */ MapLayerMouseEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def on_mouseout(`type`: mouseout, layer: String, listener: js.Function1[/* ev */ MapLayerMouseEvent, scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_mouseout(`type`: mouseout, listener: js.Function1[/* ev */ MapMouseEvent & js.Object, scala.Unit]): this.type = js.native
+  def on_mouseout(`type`: mouseout, listener: js.Function1[/* ev */ MapMouseEvent, scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_mouseover(
-    `type`: mouseover,
-    layer: String,
-    listener: js.Function1[/* ev */ MapLayerMouseEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def on_mouseover(`type`: mouseover, layer: String, listener: js.Function1[/* ev */ MapLayerMouseEvent, scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_mouseover(`type`: mouseover, listener: js.Function1[/* ev */ MapMouseEvent & js.Object, scala.Unit]): this.type = js.native
+  def on_mouseover(`type`: mouseover, listener: js.Function1[/* ev */ MapMouseEvent, scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_mouseup(
-    `type`: mouseup,
-    layer: String,
-    listener: js.Function1[/* ev */ MapLayerMouseEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def on_mouseup(`type`: mouseup, layer: String, listener: js.Function1[/* ev */ MapLayerMouseEvent, scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_mouseup(`type`: mouseup, listener: js.Function1[/* ev */ MapMouseEvent & js.Object, scala.Unit]): this.type = js.native
+  def on_mouseup(`type`: mouseup, listener: js.Function1[/* ev */ MapMouseEvent, scala.Unit]): this.type = js.native
   @JSName("on")
   def on_move(
     `type`: move,
     listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]) & js.Object, 
+      /* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -1395,7 +1265,7 @@ open class Map protected () extends Camera {
   def on_moveend(
     `type`: moveend,
     listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]) & js.Object, 
+      /* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -1403,132 +1273,91 @@ open class Map protected () extends Camera {
   def on_movestart(
     `type`: movestart,
     listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]) & js.Object, 
+      /* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]], 
       scala.Unit
     ]
   ): this.type = js.native
   @JSName("on")
   def on_pitch(
     `type`: pitch,
-    listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]]) & js.Object, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]], scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_pitchend(
     `type`: pitchend,
-    listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]]) & js.Object, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]], scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_pitchstart(
     `type`: pitchstart,
-    listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]]) & js.Object, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]], scala.Unit]
   ): this.type = js.native
   @JSName("on")
-  def on_remove(`type`: remove, listener: js.Function1[/* ev */ MapLibreEvent[scala.Unit] & js.Object, scala.Unit]): this.type = js.native
+  def on_remove(`type`: remove, listener: js.Function1[/* ev */ MapLibreEvent[scala.Unit], scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_render(`type`: render, listener: js.Function1[/* ev */ MapLibreEvent[scala.Unit] & js.Object, scala.Unit]): this.type = js.native
+  def on_render(`type`: render, listener: js.Function1[/* ev */ MapLibreEvent[scala.Unit], scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_resize(`type`: resize, listener: js.Function1[/* ev */ MapLibreEvent[scala.Unit] & js.Object, scala.Unit]): this.type = js.native
+  def on_resize(`type`: resize, listener: js.Function1[/* ev */ MapLibreEvent[scala.Unit], scala.Unit]): this.type = js.native
   @JSName("on")
   def on_rotate(
     `type`: rotate,
-    listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]]) & js.Object, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]], scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_rotateend(
     `type`: rotateend,
-    listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]]) & js.Object, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]], scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_rotatestart(
     `type`: rotatestart,
-    listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]]) & js.Object, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]], scala.Unit]
   ): this.type = js.native
   @JSName("on")
-  def on_sourcedata(`type`: sourcedata, listener: js.Function1[/* ev */ MapSourceDataEvent & js.Object, scala.Unit]): this.type = js.native
+  def on_sourcedata(`type`: sourcedata, listener: js.Function1[/* ev */ MapSourceDataEvent, scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_sourcedataabort(
-    `type`: sourcedataabort,
-    listener: js.Function1[/* ev */ MapSourceDataEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def on_sourcedataabort(`type`: sourcedataabort, listener: js.Function1[/* ev */ MapSourceDataEvent, scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_sourcedataloading(
-    `type`: sourcedataloading,
-    listener: js.Function1[/* ev */ MapSourceDataEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def on_sourcedataloading(`type`: sourcedataloading, listener: js.Function1[/* ev */ MapSourceDataEvent, scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_styledata(`type`: styledata, listener: js.Function1[/* ev */ MapStyleDataEvent & js.Object, scala.Unit]): this.type = js.native
+  def on_styledata(`type`: styledata, listener: js.Function1[/* ev */ MapStyleDataEvent, scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_styledataloading(
-    `type`: styledataloading,
-    listener: js.Function1[/* ev */ MapStyleDataEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def on_styledataloading(`type`: styledataloading, listener: js.Function1[/* ev */ MapStyleDataEvent, scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_styleimagemissing(
-    `type`: styleimagemissing,
-    listener: js.Function1[/* ev */ MapStyleImageMissingEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def on_styleimagemissing(`type`: styleimagemissing, listener: js.Function1[/* ev */ MapStyleImageMissingEvent, scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_terrain(`type`: terrain, listener: js.Function1[/* ev */ MapTerrainEvent & js.Object, scala.Unit]): this.type = js.native
+  def on_terrain(`type`: terrain, listener: js.Function1[/* ev */ MapTerrainEvent, scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_tiledataloading(`type`: tiledataloading, listener: js.Function1[/* ev */ MapDataEvent & js.Object, scala.Unit]): this.type = js.native
+  def on_tiledataloading(`type`: tiledataloading, listener: js.Function1[/* ev */ MapDataEvent, scala.Unit]): this.type = js.native
   @JSName("on")
   def on_touchcancel(
     `type`: touchcancel,
     layer: String,
-    listener: js.Function1[/* ev */ MapLayerTouchEvent & js.Object, scala.Unit]
+    listener: js.Function1[/* ev */ MapLayerTouchEvent, scala.Unit]
   ): this.type = js.native
   @JSName("on")
-  def on_touchcancel(`type`: touchcancel, listener: js.Function1[/* ev */ MapTouchEvent & js.Object, scala.Unit]): this.type = js.native
+  def on_touchcancel(`type`: touchcancel, listener: js.Function1[/* ev */ MapTouchEvent, scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_touchend(
-    `type`: touchend,
-    layer: String,
-    listener: js.Function1[/* ev */ MapLayerTouchEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def on_touchend(`type`: touchend, layer: String, listener: js.Function1[/* ev */ MapLayerTouchEvent, scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_touchend(`type`: touchend, listener: js.Function1[/* ev */ MapTouchEvent & js.Object, scala.Unit]): this.type = js.native
+  def on_touchend(`type`: touchend, listener: js.Function1[/* ev */ MapTouchEvent, scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_touchmove(`type`: touchmove, listener: js.Function1[/* ev */ MapTouchEvent & js.Object, scala.Unit]): this.type = js.native
+  def on_touchmove(`type`: touchmove, listener: js.Function1[/* ev */ MapTouchEvent, scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_touchstart(
-    `type`: touchstart,
-    layer: String,
-    listener: js.Function1[/* ev */ MapLayerTouchEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def on_touchstart(`type`: touchstart, layer: String, listener: js.Function1[/* ev */ MapLayerTouchEvent, scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_touchstart(`type`: touchstart, listener: js.Function1[/* ev */ MapTouchEvent & js.Object, scala.Unit]): this.type = js.native
+  def on_touchstart(`type`: touchstart, listener: js.Function1[/* ev */ MapTouchEvent, scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_webglcontextlost(`type`: webglcontextlost, listener: js.Function1[/* ev */ MapContextEvent & js.Object, scala.Unit]): this.type = js.native
+  def on_webglcontextlost(`type`: webglcontextlost, listener: js.Function1[/* ev */ MapContextEvent, scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_webglcontextrestored(
-    `type`: webglcontextrestored,
-    listener: js.Function1[/* ev */ MapContextEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def on_webglcontextrestored(`type`: webglcontextrestored, listener: js.Function1[/* ev */ MapContextEvent, scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_wheel(`type`: wheel, listener: js.Function1[/* ev */ MapWheelEvent & js.Object, scala.Unit]): this.type = js.native
+  def on_wheel(`type`: wheel, listener: js.Function1[/* ev */ MapWheelEvent, scala.Unit]): this.type = js.native
   @JSName("on")
   def on_zoom(
     `type`: zoom,
     listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]) & js.Object, 
+      /* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -1536,7 +1365,7 @@ open class Map protected () extends Camera {
   def on_zoomend(
     `type`: zoomend,
     listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]) & js.Object, 
+      /* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -1544,18 +1373,18 @@ open class Map protected () extends Camera {
   def on_zoomstart(
     `type`: zoomstart,
     listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]) & js.Object, 
+      /* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]], 
       scala.Unit
     ]
   ): this.type = js.native
   
   def once(`type`: MapEvent, listener: Listener): this.type = js.native
   @JSName("once")
-  def once_boxzoomcancel(`type`: boxzoomcancel, listener: js.Function1[/* ev */ MapLibreZoomEvent & js.Object, scala.Unit]): this.type = js.native
+  def once_boxzoomcancel(`type`: boxzoomcancel, listener: js.Function1[/* ev */ MapLibreZoomEvent, scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_boxzoomend(`type`: boxzoomend, listener: js.Function1[/* ev */ MapLibreZoomEvent & js.Object, scala.Unit]): this.type = js.native
+  def once_boxzoomend(`type`: boxzoomend, listener: js.Function1[/* ev */ MapLibreZoomEvent, scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_boxzoomstart(`type`: boxzoomstart, listener: js.Function1[/* ev */ MapLibreZoomEvent & js.Object, scala.Unit]): this.type = js.native
+  def once_boxzoomstart(`type`: boxzoomstart, listener: js.Function1[/* ev */ MapLibreZoomEvent, scala.Unit]): this.type = js.native
   /**
   	 * Adds a listener that will be called only once to a specified event type.
   	 *
@@ -1585,122 +1414,77 @@ open class Map protected () extends Camera {
   	 * @returns {Map} `this`
   	 */
   @JSName("once")
-  def once_click(
-    `type`: click,
-    layer: String,
-    listener: js.Function1[/* ev */ MapLayerMouseEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def once_click(`type`: click, layer: String, listener: js.Function1[/* ev */ MapLayerMouseEvent, scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_click(`type`: click, listener: js.Function1[/* ev */ MapMouseEvent & js.Object, scala.Unit]): this.type = js.native
+  def once_click(`type`: click, listener: js.Function1[/* ev */ MapMouseEvent, scala.Unit]): this.type = js.native
   @JSName("once")
   def once_contextmenu(
     `type`: contextmenu,
     layer: String,
-    listener: js.Function1[/* ev */ MapLayerMouseEvent & js.Object, scala.Unit]
+    listener: js.Function1[/* ev */ MapLayerMouseEvent, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_contextmenu(`type`: contextmenu, listener: js.Function1[/* ev */ MapMouseEvent & js.Object, scala.Unit]): this.type = js.native
+  def once_contextmenu(`type`: contextmenu, listener: js.Function1[/* ev */ MapMouseEvent, scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_data(`type`: data, listener: js.Function1[/* ev */ MapDataEvent & js.Object, scala.Unit]): this.type = js.native
+  def once_data(`type`: data, listener: js.Function1[/* ev */ MapDataEvent, scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_dataabort(`type`: dataabort, listener: js.Function1[/* ev */ MapDataEvent & js.Object, scala.Unit]): this.type = js.native
+  def once_dataabort(`type`: dataabort, listener: js.Function1[/* ev */ MapDataEvent, scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_dataloading(`type`: dataloading, listener: js.Function1[/* ev */ MapDataEvent & js.Object, scala.Unit]): this.type = js.native
+  def once_dataloading(`type`: dataloading, listener: js.Function1[/* ev */ MapDataEvent, scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_dblclick(
-    `type`: dblclick,
-    layer: String,
-    listener: js.Function1[/* ev */ MapLayerMouseEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def once_dblclick(`type`: dblclick, layer: String, listener: js.Function1[/* ev */ MapLayerMouseEvent, scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_dblclick(`type`: dblclick, listener: js.Function1[/* ev */ MapMouseEvent & js.Object, scala.Unit]): this.type = js.native
+  def once_dblclick(`type`: dblclick, listener: js.Function1[/* ev */ MapMouseEvent, scala.Unit]): this.type = js.native
   @JSName("once")
   def once_drag(
     `type`: drag,
-    listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]]) & js.Object, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]], scala.Unit]
   ): this.type = js.native
   @JSName("once")
   def once_dragend(
     `type`: dragend,
-    listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]]) & js.Object, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]], scala.Unit]
   ): this.type = js.native
   @JSName("once")
   def once_dragstart(
     `type`: dragstart,
-    listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]]) & js.Object, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]], scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_error(`type`: error, listener: js.Function1[/* ev */ ErrorEvent & js.Object, scala.Unit]): this.type = js.native
+  def once_error(`type`: error, listener: js.Function1[/* ev */ ErrorEvent, scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_idle(`type`: idle, listener: js.Function1[/* ev */ MapLibreEvent[scala.Unit] & js.Object, scala.Unit]): this.type = js.native
+  def once_idle(`type`: idle, listener: js.Function1[/* ev */ MapLibreEvent[scala.Unit], scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_load(`type`: load, listener: js.Function1[/* ev */ MapLibreEvent[scala.Unit] & js.Object, scala.Unit]): this.type = js.native
+  def once_load(`type`: load, listener: js.Function1[/* ev */ MapLibreEvent[scala.Unit], scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_mousedown(
-    `type`: mousedown,
-    layer: String,
-    listener: js.Function1[/* ev */ MapLayerMouseEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def once_mousedown(`type`: mousedown, layer: String, listener: js.Function1[/* ev */ MapLayerMouseEvent, scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_mousedown(`type`: mousedown, listener: js.Function1[/* ev */ MapMouseEvent & js.Object, scala.Unit]): this.type = js.native
+  def once_mousedown(`type`: mousedown, listener: js.Function1[/* ev */ MapMouseEvent, scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_mouseenter(
-    `type`: mouseenter,
-    layer: String,
-    listener: js.Function1[/* ev */ MapLayerMouseEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def once_mouseenter(`type`: mouseenter, layer: String, listener: js.Function1[/* ev */ MapLayerMouseEvent, scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_mouseleave(
-    `type`: mouseleave,
-    layer: String,
-    listener: js.Function1[/* ev */ MapLayerMouseEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def once_mouseleave(`type`: mouseleave, layer: String, listener: js.Function1[/* ev */ MapLayerMouseEvent, scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_mousemove(
-    `type`: mousemove,
-    layer: String,
-    listener: js.Function1[/* ev */ MapLayerMouseEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def once_mousemove(`type`: mousemove, layer: String, listener: js.Function1[/* ev */ MapLayerMouseEvent, scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_mousemove(`type`: mousemove, listener: js.Function1[/* ev */ MapMouseEvent & js.Object, scala.Unit]): this.type = js.native
+  def once_mousemove(`type`: mousemove, listener: js.Function1[/* ev */ MapMouseEvent, scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_mouseout(
-    `type`: mouseout,
-    layer: String,
-    listener: js.Function1[/* ev */ MapLayerMouseEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def once_mouseout(`type`: mouseout, layer: String, listener: js.Function1[/* ev */ MapLayerMouseEvent, scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_mouseout(`type`: mouseout, listener: js.Function1[/* ev */ MapMouseEvent & js.Object, scala.Unit]): this.type = js.native
+  def once_mouseout(`type`: mouseout, listener: js.Function1[/* ev */ MapMouseEvent, scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_mouseover(
-    `type`: mouseover,
-    layer: String,
-    listener: js.Function1[/* ev */ MapLayerMouseEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def once_mouseover(`type`: mouseover, layer: String, listener: js.Function1[/* ev */ MapLayerMouseEvent, scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_mouseover(`type`: mouseover, listener: js.Function1[/* ev */ MapMouseEvent & js.Object, scala.Unit]): this.type = js.native
+  def once_mouseover(`type`: mouseover, listener: js.Function1[/* ev */ MapMouseEvent, scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_mouseup(
-    `type`: mouseup,
-    layer: String,
-    listener: js.Function1[/* ev */ MapLayerMouseEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def once_mouseup(`type`: mouseup, layer: String, listener: js.Function1[/* ev */ MapLayerMouseEvent, scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_mouseup(`type`: mouseup, listener: js.Function1[/* ev */ MapMouseEvent & js.Object, scala.Unit]): this.type = js.native
+  def once_mouseup(`type`: mouseup, listener: js.Function1[/* ev */ MapMouseEvent, scala.Unit]): this.type = js.native
   @JSName("once")
   def once_move(
     `type`: move,
     listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]) & js.Object, 
+      /* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -1708,7 +1492,7 @@ open class Map protected () extends Camera {
   def once_moveend(
     `type`: moveend,
     listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]) & js.Object, 
+      /* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -1716,132 +1500,91 @@ open class Map protected () extends Camera {
   def once_movestart(
     `type`: movestart,
     listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]) & js.Object, 
+      /* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]], 
       scala.Unit
     ]
   ): this.type = js.native
   @JSName("once")
   def once_pitch(
     `type`: pitch,
-    listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]]) & js.Object, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]], scala.Unit]
   ): this.type = js.native
   @JSName("once")
   def once_pitchend(
     `type`: pitchend,
-    listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]]) & js.Object, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]], scala.Unit]
   ): this.type = js.native
   @JSName("once")
   def once_pitchstart(
     `type`: pitchstart,
-    listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]]) & js.Object, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]], scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_remove(`type`: remove, listener: js.Function1[/* ev */ MapLibreEvent[scala.Unit] & js.Object, scala.Unit]): this.type = js.native
+  def once_remove(`type`: remove, listener: js.Function1[/* ev */ MapLibreEvent[scala.Unit], scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_render(`type`: render, listener: js.Function1[/* ev */ MapLibreEvent[scala.Unit] & js.Object, scala.Unit]): this.type = js.native
+  def once_render(`type`: render, listener: js.Function1[/* ev */ MapLibreEvent[scala.Unit], scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_resize(`type`: resize, listener: js.Function1[/* ev */ MapLibreEvent[scala.Unit] & js.Object, scala.Unit]): this.type = js.native
+  def once_resize(`type`: resize, listener: js.Function1[/* ev */ MapLibreEvent[scala.Unit], scala.Unit]): this.type = js.native
   @JSName("once")
   def once_rotate(
     `type`: rotate,
-    listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]]) & js.Object, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]], scala.Unit]
   ): this.type = js.native
   @JSName("once")
   def once_rotateend(
     `type`: rotateend,
-    listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]]) & js.Object, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]], scala.Unit]
   ): this.type = js.native
   @JSName("once")
   def once_rotatestart(
     `type`: rotatestart,
-    listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]]) & js.Object, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent]], scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_sourcedata(`type`: sourcedata, listener: js.Function1[/* ev */ MapSourceDataEvent & js.Object, scala.Unit]): this.type = js.native
+  def once_sourcedata(`type`: sourcedata, listener: js.Function1[/* ev */ MapSourceDataEvent, scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_sourcedataabort(
-    `type`: sourcedataabort,
-    listener: js.Function1[/* ev */ MapSourceDataEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def once_sourcedataabort(`type`: sourcedataabort, listener: js.Function1[/* ev */ MapSourceDataEvent, scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_sourcedataloading(
-    `type`: sourcedataloading,
-    listener: js.Function1[/* ev */ MapSourceDataEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def once_sourcedataloading(`type`: sourcedataloading, listener: js.Function1[/* ev */ MapSourceDataEvent, scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_styledata(`type`: styledata, listener: js.Function1[/* ev */ MapStyleDataEvent & js.Object, scala.Unit]): this.type = js.native
+  def once_styledata(`type`: styledata, listener: js.Function1[/* ev */ MapStyleDataEvent, scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_styledataloading(
-    `type`: styledataloading,
-    listener: js.Function1[/* ev */ MapStyleDataEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def once_styledataloading(`type`: styledataloading, listener: js.Function1[/* ev */ MapStyleDataEvent, scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_styleimagemissing(
-    `type`: styleimagemissing,
-    listener: js.Function1[/* ev */ MapStyleImageMissingEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def once_styleimagemissing(`type`: styleimagemissing, listener: js.Function1[/* ev */ MapStyleImageMissingEvent, scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_terrain(`type`: terrain, listener: js.Function1[/* ev */ MapTerrainEvent & js.Object, scala.Unit]): this.type = js.native
+  def once_terrain(`type`: terrain, listener: js.Function1[/* ev */ MapTerrainEvent, scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_tiledataloading(`type`: tiledataloading, listener: js.Function1[/* ev */ MapDataEvent & js.Object, scala.Unit]): this.type = js.native
+  def once_tiledataloading(`type`: tiledataloading, listener: js.Function1[/* ev */ MapDataEvent, scala.Unit]): this.type = js.native
   @JSName("once")
   def once_touchcancel(
     `type`: touchcancel,
     layer: String,
-    listener: js.Function1[/* ev */ MapLayerTouchEvent & js.Object, scala.Unit]
+    listener: js.Function1[/* ev */ MapLayerTouchEvent, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_touchcancel(`type`: touchcancel, listener: js.Function1[/* ev */ MapTouchEvent & js.Object, scala.Unit]): this.type = js.native
+  def once_touchcancel(`type`: touchcancel, listener: js.Function1[/* ev */ MapTouchEvent, scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_touchend(
-    `type`: touchend,
-    layer: String,
-    listener: js.Function1[/* ev */ MapLayerTouchEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def once_touchend(`type`: touchend, layer: String, listener: js.Function1[/* ev */ MapLayerTouchEvent, scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_touchend(`type`: touchend, listener: js.Function1[/* ev */ MapTouchEvent & js.Object, scala.Unit]): this.type = js.native
+  def once_touchend(`type`: touchend, listener: js.Function1[/* ev */ MapTouchEvent, scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_touchmove(`type`: touchmove, listener: js.Function1[/* ev */ MapTouchEvent & js.Object, scala.Unit]): this.type = js.native
+  def once_touchmove(`type`: touchmove, listener: js.Function1[/* ev */ MapTouchEvent, scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_touchstart(
-    `type`: touchstart,
-    layer: String,
-    listener: js.Function1[/* ev */ MapLayerTouchEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def once_touchstart(`type`: touchstart, layer: String, listener: js.Function1[/* ev */ MapLayerTouchEvent, scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_touchstart(`type`: touchstart, listener: js.Function1[/* ev */ MapTouchEvent & js.Object, scala.Unit]): this.type = js.native
+  def once_touchstart(`type`: touchstart, listener: js.Function1[/* ev */ MapTouchEvent, scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_webglcontextlost(`type`: webglcontextlost, listener: js.Function1[/* ev */ MapContextEvent & js.Object, scala.Unit]): this.type = js.native
+  def once_webglcontextlost(`type`: webglcontextlost, listener: js.Function1[/* ev */ MapContextEvent, scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_webglcontextrestored(
-    `type`: webglcontextrestored,
-    listener: js.Function1[/* ev */ MapContextEvent & js.Object, scala.Unit]
-  ): this.type = js.native
+  def once_webglcontextrestored(`type`: webglcontextrestored, listener: js.Function1[/* ev */ MapContextEvent, scala.Unit]): this.type = js.native
   @JSName("once")
-  def once_wheel(`type`: wheel, listener: js.Function1[/* ev */ MapWheelEvent & js.Object, scala.Unit]): this.type = js.native
+  def once_wheel(`type`: wheel, listener: js.Function1[/* ev */ MapWheelEvent, scala.Unit]): this.type = js.native
   @JSName("once")
   def once_zoom(
     `type`: zoom,
     listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]) & js.Object, 
+      /* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -1849,7 +1592,7 @@ open class Map protected () extends Camera {
   def once_zoomend(
     `type`: zoomend,
     listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]) & js.Object, 
+      /* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -1857,7 +1600,7 @@ open class Map protected () extends Camera {
   def once_zoomstart(
     `type`: zoomstart,
     listener: js.Function1[
-      /* ev */ (MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]]) & js.Object, 
+      /* ev */ MapLibreEvent[js.UndefOr[MouseEvent | TouchEvent | WheelEvent]], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -2546,7 +2289,7 @@ open class Map protected () extends Camera {
   	 */
   def unproject(point: PointLike): LngLat = js.native
   
-  def updateImage(id: String, image: Data): this.type = js.native
+  def updateImage(id: String, image: DataHeight): this.type = js.native
   def updateImage(id: String, image: StyleImageInterface): this.type = js.native
   /**
   	 * Update an existing image in a style. This image can be displayed on the map like any other icon in the style's

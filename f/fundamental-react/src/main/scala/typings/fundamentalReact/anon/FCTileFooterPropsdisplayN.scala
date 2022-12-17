@@ -1,6 +1,5 @@
 package typings.fundamentalReact.anon
 
-import typings.fundamentalReact.fundamentalReactStrings.TileDotFooter
 import typings.fundamentalReact.libTileTileMod.TileFooterProps
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
@@ -19,7 +18,7 @@ trait FCTileFooterPropsdisplayN extends StObject {
   
   var defaultProps: js.UndefOr[PartialTileFooterProps] = js.native
   
-  var displayName: js.UndefOr[String] & TileDotFooter = js.native
+  var displayName: js.UndefOr[String] = js.native
   
   var propTypes: js.UndefOr[WeakValidationMapTileFoot] = js.native
 }

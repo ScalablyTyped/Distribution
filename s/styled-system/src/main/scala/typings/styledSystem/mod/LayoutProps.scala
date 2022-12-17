@@ -1,44 +1,27 @@
 package typings.styledSystem.mod
 
+import typings.csstype.mod.Property.Height
+import typings.csstype.mod.Property.MaxHeight
+import typings.csstype.mod.Property.MaxWidth
+import typings.csstype.mod.Property.MinHeight
+import typings.csstype.mod.Property.MinWidth
+import typings.csstype.mod.Property.VerticalAlign
+import typings.csstype.mod.Property.Width
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait LayoutProps[ThemeType /* <: Theme[TLengthStyledSystem] */]
   extends StObject
-     with WidthProps[
-      ThemeType, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Width<TLengthStyledSystem> */ js.Any
-    ]
-     with HeightProps[
-      ThemeType, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any
-    ]
-     with MinWidthProps[
-      ThemeType, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLengthStyledSystem> */ js.Any
-    ]
-     with MinHeightProps[
-      ThemeType, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLengthStyledSystem> */ js.Any
-    ]
-     with MaxWidthProps[
-      ThemeType, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLengthStyledSystem> */ js.Any
-    ]
-     with MaxHeightProps[
-      ThemeType, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxHeight<TLengthStyledSystem> */ js.Any
-    ]
+     with WidthProps[ThemeType, Width[TLengthStyledSystem]]
+     with HeightProps[ThemeType, Height[TLengthStyledSystem]]
+     with MinWidthProps[ThemeType, MinWidth[TLengthStyledSystem]]
+     with MinHeightProps[ThemeType, MinHeight[TLengthStyledSystem]]
+     with MaxWidthProps[ThemeType, MaxWidth[TLengthStyledSystem]]
+     with MaxHeightProps[ThemeType, MaxHeight[TLengthStyledSystem]]
      with DisplayProps[ThemeType]
-     with VerticalAlignProps[
-      ThemeType, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLengthStyledSystem> */ js.Any
-    ]
-     with SizeProps[
-      ThemeType, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLengthStyledSystem> */ js.Any
-    ]
+     with VerticalAlignProps[ThemeType, VerticalAlign[TLengthStyledSystem]]
+     with SizeProps[ThemeType, Height[TLengthStyledSystem]]
      with OverflowProps[ThemeType]
 object LayoutProps {
   

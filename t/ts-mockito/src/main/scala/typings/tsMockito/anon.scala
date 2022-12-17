@@ -92,7 +92,7 @@ object anon {
   trait FnCallClazz extends StObject {
     
     def apply[T](): T = js.native
-    def apply[T](clazz: js.Function & js.Object): T = js.native
+    def apply[T](clazz: js.Function): T = js.native
     def apply[T](clazz: Instantiable1[/* args (repeated) */ Any, T]): T = js.native
     def apply[T](clazz: Any): T = js.native
   }

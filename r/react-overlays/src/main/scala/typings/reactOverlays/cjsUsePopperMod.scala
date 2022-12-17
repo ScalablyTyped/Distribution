@@ -1,11 +1,10 @@
 package typings.reactOverlays
 
-import typings.popperjsCore.anon.PartialModifieranyany
 import typings.popperjsCore.anon.PartialState
 import typings.popperjsCore.libTypesMod.Obj
 import typings.popperjsCore.libTypesMod.PositioningStrategy
 import typings.reactOverlays.anon.PartialCSSStyleDeclaratio
-import typings.reactOverlays.anon.PartialModifieranyanyData
+import typings.reactOverlays.anon.PartialModifieranyany
 import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -53,7 +52,7 @@ object cjsUsePopperMod {
   
   type Modifier[Name, Options /* <: js.UndefOr[Obj] */] = typings.popperjsCore.libTypesMod.Modifier[Name, OptionsWithUndefined[Options]]
   
-  type ModifierMap = Record[String, PartialModifieranyanyData]
+  type ModifierMap = Record[String, PartialModifieranyany]
   
   /* Inlined @popperjs/core.@popperjs/core.Options['modifiers'] | std.Record<string, std.Partial<react-overlays.react-overlays/cjs/usePopper.Modifier<any, any>>> */
   /* Rewritten from type alias, can be one of: 
@@ -183,7 +182,7 @@ object cjsUsePopperMod {
     
     var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var modifiers: js.UndefOr[js.Array[PartialModifieranyany]] = js.undefined
+    var modifiers: js.UndefOr[js.Array[typings.popperjsCore.anon.PartialModifieranyany]] = js.undefined
     
     var onFirstUpdate: js.UndefOr[js.Function1[/* arg0 */ PartialState, Unit]] = js.undefined
     
@@ -204,11 +203,11 @@ object cjsUsePopperMod {
       
       inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      inline def setModifiers(value: js.Array[PartialModifieranyany]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+      inline def setModifiers(value: js.Array[typings.popperjsCore.anon.PartialModifieranyany]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
       
       inline def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
       
-      inline def setModifiersVarargs(value: PartialModifieranyany*): Self = StObject.set(x, "modifiers", js.Array(value*))
+      inline def setModifiersVarargs(value: typings.popperjsCore.anon.PartialModifieranyany*): Self = StObject.set(x, "modifiers", js.Array(value*))
       
       inline def setOnFirstUpdate(value: /* arg0 */ PartialState => Unit): Self = StObject.set(x, "onFirstUpdate", js.Any.fromFunction1(value))
       

@@ -612,331 +612,293 @@ object DropdownSettings {
   object Param {
     
     inline def PickImplactionPartialPick(
-      action: (activate | select | combo | nothing | hide | (js.ThisFunction3[
+      action: activate | select | combo | nothing | hide | (js.ThisFunction3[
           /* this */ JQuery, 
           /* text */ String, 
           /* value */ String | `false`, 
           /* element */ JQuery, 
           Unit
-        ])) & (js.UndefOr[
-          activate | select | combo | nothing | hide | (js.ThisFunction3[
-            /* this */ JQuery, 
-            /* text */ String, 
-            /* value */ String | `false`, 
-            /* element */ JQuery, 
-            Unit
-          ])
         ])
     ): typings.semanticUiDropdown.anon.PickImplactionPartialPick = {
       val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplactionPartialPick]
     }
     
-    inline def PickImplallowAdditionsPar(allowAdditions: Boolean & js.UndefOr[Boolean]): typings.semanticUiDropdown.anon.PickImplallowAdditionsPar = {
+    inline def PickImplallowAdditionsPar(allowAdditions: Boolean): typings.semanticUiDropdown.anon.PickImplallowAdditionsPar = {
       val __obj = js.Dynamic.literal(allowAdditions = allowAdditions.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplallowAdditionsPar]
     }
     
-    inline def PickImplallowCategorySele(allowCategorySelection: Boolean & js.UndefOr[Boolean]): typings.semanticUiDropdown.anon.PickImplallowCategorySele = {
+    inline def PickImplallowCategorySele(allowCategorySelection: Boolean): typings.semanticUiDropdown.anon.PickImplallowCategorySele = {
       val __obj = js.Dynamic.literal(allowCategorySelection = allowCategorySelection.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplallowCategorySele]
     }
     
-    inline def PickImplallowReselectionP(allowReselection: Boolean & js.UndefOr[Boolean]): typings.semanticUiDropdown.anon.PickImplallowReselectionP = {
+    inline def PickImplallowReselectionP(allowReselection: Boolean): typings.semanticUiDropdown.anon.PickImplallowReselectionP = {
       val __obj = js.Dynamic.literal(allowReselection = allowReselection.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplallowReselectionP]
     }
     
-    inline def PickImplallowTabPartialPi(allowTab: Boolean & js.UndefOr[Boolean]): typings.semanticUiDropdown.anon.PickImplallowTabPartialPi = {
+    inline def PickImplallowTabPartialPi(allowTab: Boolean): typings.semanticUiDropdown.anon.PickImplallowTabPartialPi = {
       val __obj = js.Dynamic.literal(allowTab = allowTab.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplallowTabPartialPi]
     }
     
-    inline def PickImplapiSettingsPartia(apiSettings: (`false` | ApiSettings) & (js.UndefOr[`false` | ApiSettings])): typings.semanticUiDropdown.anon.PickImplapiSettingsPartia = {
+    inline def PickImplapiSettingsPartia(apiSettings: `false` | ApiSettings): typings.semanticUiDropdown.anon.PickImplapiSettingsPartia = {
       val __obj = js.Dynamic.literal(apiSettings = apiSettings.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplapiSettingsPartia]
     }
     
-    inline def PickImplclassNamePartialP(className: ClassNameSettings & js.UndefOr[ClassNameSettings]): typings.semanticUiDropdown.anon.PickImplclassNamePartialP = {
+    inline def PickImplclassNamePartialP(className: ClassNameSettings): typings.semanticUiDropdown.anon.PickImplclassNamePartialP = {
       val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplclassNamePartialP]
     }
     
-    inline def PickImplcontextPartialPic(context: (String | JQuery) & (js.UndefOr[String | JQuery])): typings.semanticUiDropdown.anon.PickImplcontextPartialPic = {
+    inline def PickImplcontextPartialPic(context: String | JQuery): typings.semanticUiDropdown.anon.PickImplcontextPartialPic = {
       val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplcontextPartialPic]
     }
     
-    inline def PickImpldebugPartialPickI(debug: Boolean & js.UndefOr[Boolean]): typings.semanticUiDropdown.anon.PickImpldebugPartialPickI = {
+    inline def PickImpldebugPartialPickI(debug: Boolean): typings.semanticUiDropdown.anon.PickImpldebugPartialPickI = {
       val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImpldebugPartialPickI]
     }
     
-    inline def PickImpldelayPartialPickI(delay: DelaySettings & js.UndefOr[DelaySettings]): typings.semanticUiDropdown.anon.PickImpldelayPartialPickI = {
+    inline def PickImpldelayPartialPickI(delay: DelaySettings): typings.semanticUiDropdown.anon.PickImpldelayPartialPickI = {
       val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImpldelayPartialPickI]
     }
     
-    inline def PickImpldirectionPartialP(direction: (auto | upward | downward) & (js.UndefOr[auto | upward | downward])): typings.semanticUiDropdown.anon.PickImpldirectionPartialP = {
+    inline def PickImpldirectionPartialP(direction: auto | upward | downward): typings.semanticUiDropdown.anon.PickImpldirectionPartialP = {
       val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImpldirectionPartialP]
     }
     
-    inline def PickImpldurationPartialPi(duration: Double & js.UndefOr[Double]): typings.semanticUiDropdown.anon.PickImpldurationPartialPi = {
+    inline def PickImpldurationPartialPi(duration: Double): typings.semanticUiDropdown.anon.PickImpldurationPartialPi = {
       val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImpldurationPartialPi]
     }
     
-    inline def PickImplerrorPartialPickI(error: ErrorSettings & js.UndefOr[ErrorSettings]): typings.semanticUiDropdown.anon.PickImplerrorPartialPickI = {
+    inline def PickImplerrorPartialPickI(error: ErrorSettings): typings.semanticUiDropdown.anon.PickImplerrorPartialPickI = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplerrorPartialPickI]
     }
     
-    inline def PickImplfieldsPartialPick(fields: FieldsSettings & js.UndefOr[FieldsSettings]): typings.semanticUiDropdown.anon.PickImplfieldsPartialPick = {
+    inline def PickImplfieldsPartialPick(fields: FieldsSettings): typings.semanticUiDropdown.anon.PickImplfieldsPartialPick = {
       val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplfieldsPartialPick]
     }
     
-    inline def PickImplfilterRemoteDataP(filterRemoteData: Boolean & js.UndefOr[Boolean]): typings.semanticUiDropdown.anon.PickImplfilterRemoteDataP = {
+    inline def PickImplfilterRemoteDataP(filterRemoteData: Boolean): typings.semanticUiDropdown.anon.PickImplfilterRemoteDataP = {
       val __obj = js.Dynamic.literal(filterRemoteData = filterRemoteData.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplfilterRemoteDataP]
     }
     
-    inline def PickImplforceSelectionPar(forceSelection: Boolean & js.UndefOr[Boolean]): typings.semanticUiDropdown.anon.PickImplforceSelectionPar = {
+    inline def PickImplforceSelectionPar(forceSelection: Boolean): typings.semanticUiDropdown.anon.PickImplforceSelectionPar = {
       val __obj = js.Dynamic.literal(forceSelection = forceSelection.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplforceSelectionPar]
     }
     
-    inline def PickImplfullTextSearchPar(fullTextSearch: (Boolean | exact) & (js.UndefOr[Boolean | exact])): typings.semanticUiDropdown.anon.PickImplfullTextSearchPar = {
+    inline def PickImplfullTextSearchPar(fullTextSearch: Boolean | exact): typings.semanticUiDropdown.anon.PickImplfullTextSearchPar = {
       val __obj = js.Dynamic.literal(fullTextSearch = fullTextSearch.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplfullTextSearchPar]
     }
     
-    inline def PickImplglyphWidthPartial(glyphWidth: Double & js.UndefOr[Double]): typings.semanticUiDropdown.anon.PickImplglyphWidthPartial = {
+    inline def PickImplglyphWidthPartial(glyphWidth: Double): typings.semanticUiDropdown.anon.PickImplglyphWidthPartial = {
       val __obj = js.Dynamic.literal(glyphWidth = glyphWidth.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplglyphWidthPartial]
     }
     
-    inline def PickImplhideAdditionsPart(hideAdditions: Boolean & js.UndefOr[Boolean]): typings.semanticUiDropdown.anon.PickImplhideAdditionsPart = {
+    inline def PickImplhideAdditionsPart(hideAdditions: Boolean): typings.semanticUiDropdown.anon.PickImplhideAdditionsPart = {
       val __obj = js.Dynamic.literal(hideAdditions = hideAdditions.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplhideAdditionsPart]
     }
     
-    inline def PickImplkeepOnScreenParti(keepOnScreen: Boolean & js.UndefOr[Boolean]): typings.semanticUiDropdown.anon.PickImplkeepOnScreenParti = {
+    inline def PickImplkeepOnScreenParti(keepOnScreen: Boolean): typings.semanticUiDropdown.anon.PickImplkeepOnScreenParti = {
       val __obj = js.Dynamic.literal(keepOnScreen = keepOnScreen.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplkeepOnScreenParti]
     }
     
-    inline def PickImplkeysPartialPickIm(keys: KeySettings & js.UndefOr[KeySettings]): typings.semanticUiDropdown.anon.PickImplkeysPartialPickIm = {
+    inline def PickImplkeysPartialPickIm(keys: KeySettings): typings.semanticUiDropdown.anon.PickImplkeysPartialPickIm = {
       val __obj = js.Dynamic.literal(keys = keys.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplkeysPartialPickIm]
     }
     
-    inline def PickImpllabelPartialPickI(label: LabelSettings & js.UndefOr[LabelSettings]): typings.semanticUiDropdown.anon.PickImpllabelPartialPickI = {
+    inline def PickImpllabelPartialPickI(label: LabelSettings): typings.semanticUiDropdown.anon.PickImpllabelPartialPickI = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImpllabelPartialPickI]
     }
     
-    inline def PickImplmatchPartialPickI(`match`: (both | value | text) & (js.UndefOr[both | value | text])): typings.semanticUiDropdown.anon.PickImplmatchPartialPickI = {
+    inline def PickImplmatchPartialPickI(`match`: both | value | text): typings.semanticUiDropdown.anon.PickImplmatchPartialPickI = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplmatchPartialPickI]
     }
     
-    inline def PickImplmaxSelectionsPart(maxSelections: (`false` | Double) & (js.UndefOr[`false` | Double])): typings.semanticUiDropdown.anon.PickImplmaxSelectionsPart = {
+    inline def PickImplmaxSelectionsPart(maxSelections: `false` | Double): typings.semanticUiDropdown.anon.PickImplmaxSelectionsPart = {
       val __obj = js.Dynamic.literal(maxSelections = maxSelections.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplmaxSelectionsPart]
     }
     
-    inline def PickImplmessagePartialPic(message: MessageSettings & js.UndefOr[MessageSettings]): typings.semanticUiDropdown.anon.PickImplmessagePartialPic = {
+    inline def PickImplmessagePartialPic(message: MessageSettings): typings.semanticUiDropdown.anon.PickImplmessagePartialPic = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplmessagePartialPic]
     }
     
-    inline def PickImplmetadataPartialPi(metadata: MetadataSettings & js.UndefOr[MetadataSettings]): typings.semanticUiDropdown.anon.PickImplmetadataPartialPi = {
+    inline def PickImplmetadataPartialPi(metadata: MetadataSettings): typings.semanticUiDropdown.anon.PickImplmetadataPartialPi = {
       val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplmetadataPartialPi]
     }
     
-    inline def PickImplminCharactersPart(minCharacters: Double & js.UndefOr[Double]): typings.semanticUiDropdown.anon.PickImplminCharactersPart = {
+    inline def PickImplminCharactersPart(minCharacters: Double): typings.semanticUiDropdown.anon.PickImplminCharactersPart = {
       val __obj = js.Dynamic.literal(minCharacters = minCharacters.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplminCharactersPart]
     }
     
-    inline def PickImplnamePartialPickIm(name: String & js.UndefOr[String]): typings.semanticUiDropdown.anon.PickImplnamePartialPickIm = {
+    inline def PickImplnamePartialPickIm(name: String): typings.semanticUiDropdown.anon.PickImplnamePartialPickIm = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplnamePartialPickIm]
     }
     
-    inline def PickImplnamespacePartialP(namespace: String & js.UndefOr[String]): typings.semanticUiDropdown.anon.PickImplnamespacePartialP = {
+    inline def PickImplnamespacePartialP(namespace: String): typings.semanticUiDropdown.anon.PickImplnamespacePartialP = {
       val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplnamespacePartialP]
     }
     
     inline def PickImplonAddPartialPickI(
-      onAdd: (js.ThisFunction3[
+      onAdd: js.ThisFunction3[
           /* this */ JQuery, 
           /* addedValue */ Any, 
           /* addedText */ String, 
           /* $addedChoice */ JQuery, 
           Unit
-        ]) & (js.UndefOr[
-          js.ThisFunction3[
-            /* this */ JQuery, 
-            /* addedValue */ Any, 
-            /* addedText */ String, 
-            /* $addedChoice */ JQuery, 
-            Unit
-          ]
-        ])
+        ]
     ): typings.semanticUiDropdown.anon.PickImplonAddPartialPickI = {
       val __obj = js.Dynamic.literal(onAdd = onAdd.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplonAddPartialPickI]
     }
     
     inline def PickImplonChangePartialPi(
-      onChange: (js.ThisFunction3[/* this */ JQuery, /* value */ Any, /* text */ String, /* $choice */ JQuery, Unit]) & (js.UndefOr[
-          js.ThisFunction3[/* this */ JQuery, /* value */ Any, /* text */ String, /* $choice */ JQuery, Unit]
-        ])
+      onChange: js.ThisFunction3[/* this */ JQuery, /* value */ Any, /* text */ String, /* $choice */ JQuery, Unit]
     ): typings.semanticUiDropdown.anon.PickImplonChangePartialPi = {
       val __obj = js.Dynamic.literal(onChange = onChange.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplonChangePartialPi]
     }
     
-    inline def PickImplonHidePartialPick(
-      onHide: (js.ThisFunction0[/* this */ JQuery, `false` | Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, `false` | Unit]])
-    ): typings.semanticUiDropdown.anon.PickImplonHidePartialPick = {
+    inline def PickImplonHidePartialPick(onHide: js.ThisFunction0[/* this */ JQuery, `false` | Unit]): typings.semanticUiDropdown.anon.PickImplonHidePartialPick = {
       val __obj = js.Dynamic.literal(onHide = onHide.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplonHidePartialPick]
     }
     
-    inline def PickImplonLabelCreatePart(
-      onLabelCreate: (js.ThisFunction2[/* this */ JQuery, /* value */ Any, /* text */ String, JQuery]) & (js.UndefOr[js.ThisFunction2[/* this */ JQuery, /* value */ Any, /* text */ String, JQuery]])
-    ): typings.semanticUiDropdown.anon.PickImplonLabelCreatePart = {
+    inline def PickImplonLabelCreatePart(onLabelCreate: js.ThisFunction2[/* this */ JQuery, /* value */ Any, /* text */ String, JQuery]): typings.semanticUiDropdown.anon.PickImplonLabelCreatePart = {
       val __obj = js.Dynamic.literal(onLabelCreate = onLabelCreate.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplonLabelCreatePart]
     }
     
-    inline def PickImplonLabelRemovePart(
-      onLabelRemove: (js.ThisFunction1[/* this */ JQuery, /* value */ Any, `false` | Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* value */ Any, `false` | Unit]])
-    ): typings.semanticUiDropdown.anon.PickImplonLabelRemovePart = {
+    inline def PickImplonLabelRemovePart(onLabelRemove: js.ThisFunction1[/* this */ JQuery, /* value */ Any, `false` | Unit]): typings.semanticUiDropdown.anon.PickImplonLabelRemovePart = {
       val __obj = js.Dynamic.literal(onLabelRemove = onLabelRemove.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplonLabelRemovePart]
     }
     
-    inline def PickImplonLabelSelectPart(
-      onLabelSelect: (js.ThisFunction1[/* this */ JQuery, /* $selectedLabels */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $selectedLabels */ JQuery, Unit]])
-    ): typings.semanticUiDropdown.anon.PickImplonLabelSelectPart = {
+    inline def PickImplonLabelSelectPart(onLabelSelect: js.ThisFunction1[/* this */ JQuery, /* $selectedLabels */ JQuery, Unit]): typings.semanticUiDropdown.anon.PickImplonLabelSelectPart = {
       val __obj = js.Dynamic.literal(onLabelSelect = onLabelSelect.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplonLabelSelectPart]
     }
     
-    inline def PickImplonNoResultsPartia(
-      onNoResults: (js.ThisFunction1[/* this */ JQuery, /* searchValue */ Any, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* searchValue */ Any, Unit]])
-    ): typings.semanticUiDropdown.anon.PickImplonNoResultsPartia = {
+    inline def PickImplonNoResultsPartia(onNoResults: js.ThisFunction1[/* this */ JQuery, /* searchValue */ Any, Unit]): typings.semanticUiDropdown.anon.PickImplonNoResultsPartia = {
       val __obj = js.Dynamic.literal(onNoResults = onNoResults.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplonNoResultsPartia]
     }
     
-    inline def PickImplonPartialPickImpl(on: String & js.UndefOr[String]): typings.semanticUiDropdown.anon.PickImplonPartialPickImpl = {
+    inline def PickImplonPartialPickImpl(on: String): typings.semanticUiDropdown.anon.PickImplonPartialPickImpl = {
       val __obj = js.Dynamic.literal(on = on.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplonPartialPickImpl]
     }
     
     inline def PickImplonRemovePartialPi(
-      onRemove: (js.ThisFunction3[
+      onRemove: js.ThisFunction3[
           /* this */ JQuery, 
           /* removedValue */ Any, 
           /* removedText */ String, 
           /* $removedChoice */ JQuery, 
           Unit
-        ]) & (js.UndefOr[
-          js.ThisFunction3[
-            /* this */ JQuery, 
-            /* removedValue */ Any, 
-            /* removedText */ String, 
-            /* $removedChoice */ JQuery, 
-            Unit
-          ]
-        ])
+        ]
     ): typings.semanticUiDropdown.anon.PickImplonRemovePartialPi = {
       val __obj = js.Dynamic.literal(onRemove = onRemove.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplonRemovePartialPi]
     }
     
-    inline def PickImplonShowPartialPick(
-      onShow: (js.ThisFunction0[/* this */ JQuery, `false` | Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, `false` | Unit]])
-    ): typings.semanticUiDropdown.anon.PickImplonShowPartialPick = {
+    inline def PickImplonShowPartialPick(onShow: js.ThisFunction0[/* this */ JQuery, `false` | Unit]): typings.semanticUiDropdown.anon.PickImplonShowPartialPick = {
       val __obj = js.Dynamic.literal(onShow = onShow.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplonShowPartialPick]
     }
     
-    inline def PickImplperformancePartia(performance: Boolean & js.UndefOr[Boolean]): typings.semanticUiDropdown.anon.PickImplperformancePartia = {
+    inline def PickImplperformancePartia(performance: Boolean): typings.semanticUiDropdown.anon.PickImplperformancePartia = {
       val __obj = js.Dynamic.literal(performance = performance.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplperformancePartia]
     }
     
-    inline def PickImplplaceholderPartia(placeholder: (auto | value | `false`) & (js.UndefOr[auto | value | `false`])): typings.semanticUiDropdown.anon.PickImplplaceholderPartia = {
+    inline def PickImplplaceholderPartia(placeholder: auto | value | `false`): typings.semanticUiDropdown.anon.PickImplplaceholderPartia = {
       val __obj = js.Dynamic.literal(placeholder = placeholder.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplplaceholderPartia]
     }
     
-    inline def PickImplpreserveHTMLParti(preserveHTML: Boolean & js.UndefOr[Boolean]): typings.semanticUiDropdown.anon.PickImplpreserveHTMLParti = {
+    inline def PickImplpreserveHTMLParti(preserveHTML: Boolean): typings.semanticUiDropdown.anon.PickImplpreserveHTMLParti = {
       val __obj = js.Dynamic.literal(preserveHTML = preserveHTML.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplpreserveHTMLParti]
     }
     
-    inline def PickImplregExpPartialPick(regExp: RegExpSettings & js.UndefOr[RegExpSettings]): typings.semanticUiDropdown.anon.PickImplregExpPartialPick = {
+    inline def PickImplregExpPartialPick(regExp: RegExpSettings): typings.semanticUiDropdown.anon.PickImplregExpPartialPick = {
       val __obj = js.Dynamic.literal(regExp = regExp.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplregExpPartialPick]
     }
     
-    inline def PickImplsaveRemoteDataPar(saveRemoteData: Boolean & js.UndefOr[Boolean]): typings.semanticUiDropdown.anon.PickImplsaveRemoteDataPar = {
+    inline def PickImplsaveRemoteDataPar(saveRemoteData: Boolean): typings.semanticUiDropdown.anon.PickImplsaveRemoteDataPar = {
       val __obj = js.Dynamic.literal(saveRemoteData = saveRemoteData.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplsaveRemoteDataPar]
     }
     
-    inline def PickImplselectOnKeydownPa(selectOnKeydown: Boolean & js.UndefOr[Boolean]): typings.semanticUiDropdown.anon.PickImplselectOnKeydownPa = {
+    inline def PickImplselectOnKeydownPa(selectOnKeydown: Boolean): typings.semanticUiDropdown.anon.PickImplselectOnKeydownPa = {
       val __obj = js.Dynamic.literal(selectOnKeydown = selectOnKeydown.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplselectOnKeydownPa]
     }
     
-    inline def PickImplselectorPartialPi(selector: SelectorSettings & js.UndefOr[SelectorSettings]): typings.semanticUiDropdown.anon.PickImplselectorPartialPi = {
+    inline def PickImplselectorPartialPi(selector: SelectorSettings): typings.semanticUiDropdown.anon.PickImplselectorPartialPi = {
       val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplselectorPartialPi]
     }
     
-    inline def PickImplshowOnFocusPartia(showOnFocus: Boolean & js.UndefOr[Boolean]): typings.semanticUiDropdown.anon.PickImplshowOnFocusPartia = {
+    inline def PickImplshowOnFocusPartia(showOnFocus: Boolean): typings.semanticUiDropdown.anon.PickImplshowOnFocusPartia = {
       val __obj = js.Dynamic.literal(showOnFocus = showOnFocus.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplshowOnFocusPartia]
     }
     
-    inline def PickImplsilentPartialPick(silent: Boolean & js.UndefOr[Boolean]): typings.semanticUiDropdown.anon.PickImplsilentPartialPick = {
+    inline def PickImplsilentPartialPick(silent: Boolean): typings.semanticUiDropdown.anon.PickImplsilentPartialPick = {
       val __obj = js.Dynamic.literal(silent = silent.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplsilentPartialPick]
     }
     
-    inline def PickImplsortSelectPartial(sortSelect: Boolean & js.UndefOr[Boolean]): typings.semanticUiDropdown.anon.PickImplsortSelectPartial = {
+    inline def PickImplsortSelectPartial(sortSelect: Boolean): typings.semanticUiDropdown.anon.PickImplsortSelectPartial = {
       val __obj = js.Dynamic.literal(sortSelect = sortSelect.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplsortSelectPartial]
     }
     
-    inline def PickImpltransitionPartial(transition: (auto | String) & (js.UndefOr[auto | String])): typings.semanticUiDropdown.anon.PickImpltransitionPartial = {
+    inline def PickImpltransitionPartial(transition: auto | String): typings.semanticUiDropdown.anon.PickImpltransitionPartial = {
       val __obj = js.Dynamic.literal(transition = transition.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImpltransitionPartial]
     }
     
-    inline def PickImpluseLabelsPartialP(useLabels: Boolean & js.UndefOr[Boolean]): typings.semanticUiDropdown.anon.PickImpluseLabelsPartialP = {
+    inline def PickImpluseLabelsPartialP(useLabels: Boolean): typings.semanticUiDropdown.anon.PickImpluseLabelsPartialP = {
       val __obj = js.Dynamic.literal(useLabels = useLabels.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImpluseLabelsPartialP]
     }
     
-    inline def PickImplvaluesPartialPick(values: Any & js.UndefOr[Any]): typings.semanticUiDropdown.anon.PickImplvaluesPartialPick = {
+    inline def PickImplvaluesPartialPick(values: Any): typings.semanticUiDropdown.anon.PickImplvaluesPartialPick = {
       val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplvaluesPartialPick]
     }
     
-    inline def PickImplverbosePartialPic(verbose: Boolean & js.UndefOr[Boolean]): typings.semanticUiDropdown.anon.PickImplverbosePartialPic = {
+    inline def PickImplverbosePartialPic(verbose: Boolean): typings.semanticUiDropdown.anon.PickImplverbosePartialPic = {
       val __obj = js.Dynamic.literal(verbose = verbose.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDropdown.anon.PickImplverbosePartialPic]
     }

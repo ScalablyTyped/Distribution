@@ -149,7 +149,7 @@ trait PickImplselectOnKeydownPa
   
   var saveRemoteData: js.UndefOr[Boolean] = js.undefined
   
-  var selectOnKeydown: Boolean & js.UndefOr[Boolean]
+  var selectOnKeydown: Boolean
   
   var selector: js.UndefOr[SelectorSettings] = js.undefined
   
@@ -169,7 +169,7 @@ trait PickImplselectOnKeydownPa
 }
 object PickImplselectOnKeydownPa {
   
-  inline def apply(selectOnKeydown: Boolean & js.UndefOr[Boolean]): PickImplselectOnKeydownPa = {
+  inline def apply(selectOnKeydown: Boolean): PickImplselectOnKeydownPa = {
     val __obj = js.Dynamic.literal(selectOnKeydown = selectOnKeydown.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplselectOnKeydownPa]
   }
@@ -378,7 +378,7 @@ object PickImplselectOnKeydownPa {
     
     inline def setSaveRemoteDataUndefined: Self = StObject.set(x, "saveRemoteData", js.undefined)
     
-    inline def setSelectOnKeydown(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "selectOnKeydown", value.asInstanceOf[js.Any])
+    inline def setSelectOnKeydown(value: Boolean): Self = StObject.set(x, "selectOnKeydown", value.asInstanceOf[js.Any])
     
     inline def setSelector(value: SelectorSettings): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     

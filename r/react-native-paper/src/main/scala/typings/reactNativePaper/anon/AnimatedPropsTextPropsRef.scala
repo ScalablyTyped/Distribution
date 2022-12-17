@@ -1,11 +1,5 @@
 package typings.reactNativePaper.anon
 
-import org.scalablytyped.runtime.Instantiable0
-import typings.react.mod.RefObject
-import typings.reactNative.mod.Animated.AnimatedComponent
-import typings.reactNative.mod.StyleProp
-import typings.reactNative.mod.Text
-import typings.reactNative.mod.TextStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -80,9 +74,9 @@ trait AnimatedPropsTextPropsRef extends StObject {
   /**
     * Content of the `Badge`.
     */
-  var children: (js.UndefOr[
+  var children: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: 'children' extends react-native.react-native.Animated.NonAnimatedProps ? 'children' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<react.react.ReactNode | undefined> : react.react.ReactNode | undefined : react-native.react-native.Animated.WithAnimatedValue<react.react.ReactNode | undefined> */ js.Any
-  ]) & (js.UndefOr[String | Double])
+  ] = js.undefined
   
   var dataDetectorType: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: 'dataDetectorType' extends react-native.react-native.Animated.NonAnimatedProps ? 'dataDetectorType' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<null | 'phoneNumber' | 'link' | 'email' | 'none' | 'all' | undefined> : null | 'phoneNumber' | 'link' | 'email' | 'none' | 'all' | undefined : react-native.react-native.Animated.WithAnimatedValue<null | 'phoneNumber' | 'link' | 'email' | 'none' | 'all' | undefined> */ js.Any
@@ -164,9 +158,9 @@ trait AnimatedPropsTextPropsRef extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: 'onTextLayout' extends react-native.react-native.Animated.NonAnimatedProps ? 'onTextLayout' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<(event : react-native.react-native.NativeSyntheticEvent<react-native.react-native.TextLayoutEventData>): void | undefined> : (event : react-native.react-native.NativeSyntheticEvent<react-native.react-native.TextLayoutEventData>): void | undefined : react-native.react-native.Animated.WithAnimatedValue<(event : react-native.react-native.NativeSyntheticEvent<react-native.react-native.TextLayoutEventData>): void | undefined> */ js.Any
   ] = js.undefined
   
-  var ref: (js.UndefOr[
+  var ref: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: 'ref' extends react-native.react-native.Animated.NonAnimatedProps ? 'ref' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<react.react.Ref<react-native.react-native.Text> | undefined> : react.react.Ref<react-native.react-native.Text> | undefined : react-native.react-native.Animated.WithAnimatedValue<react.react.Ref<react-native.react-native.Text> | undefined> */ js.Any
-  ]) & js.UndefOr[RefObject[AnimatedComponent[Instantiable0[Text]]]]
+  ] = js.undefined
   
   var selectable: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: 'selectable' extends react-native.react-native.Animated.NonAnimatedProps ? 'selectable' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<boolean | undefined> : boolean | undefined : react-native.react-native.Animated.WithAnimatedValue<boolean | undefined> */ js.Any
@@ -181,9 +175,9 @@ trait AnimatedPropsTextPropsRef extends StObject {
     */
   var size: js.UndefOr[Double] = js.undefined
   
-  var style: (js.UndefOr[
+  var style: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: 'style' extends react-native.react-native.Animated.NonAnimatedProps ? 'style' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<react-native.react-native.StyleProp<react-native.react-native.TextStyle> | undefined> : react-native.react-native.StyleProp<react-native.react-native.TextStyle> | undefined : react-native.react-native.Animated.WithAnimatedValue<react-native.react-native.StyleProp<react-native.react-native.TextStyle> | undefined> */ js.Any
-  ]) & js.UndefOr[StyleProp[TextStyle]]
+  ] = js.undefined
   
   var suppressHighlighting: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: 'suppressHighlighting' extends react-native.react-native.Animated.NonAnimatedProps ? 'suppressHighlighting' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<boolean | undefined> : boolean | undefined : react-native.react-native.Animated.WithAnimatedValue<boolean | undefined> */ js.Any
@@ -209,19 +203,8 @@ trait AnimatedPropsTextPropsRef extends StObject {
 }
 object AnimatedPropsTextPropsRef {
   
-  inline def apply(
-    children: (js.UndefOr[
-      /* import warning: importer.ImportType#apply Failed type conversion: 'children' extends react-native.react-native.Animated.NonAnimatedProps ? 'children' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<react.react.ReactNode | undefined> : react.react.ReactNode | undefined : react-native.react-native.Animated.WithAnimatedValue<react.react.ReactNode | undefined> */ js.Any
-    ]) & (js.UndefOr[String | Double]),
-    ref: (js.UndefOr[
-      /* import warning: importer.ImportType#apply Failed type conversion: 'ref' extends react-native.react-native.Animated.NonAnimatedProps ? 'ref' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<react.react.Ref<react-native.react-native.Text> | undefined> : react.react.Ref<react-native.react-native.Text> | undefined : react-native.react-native.Animated.WithAnimatedValue<react.react.Ref<react-native.react-native.Text> | undefined> */ js.Any
-    ]) & js.UndefOr[RefObject[AnimatedComponent[Instantiable0[Text]]]],
-    style: (js.UndefOr[
-      /* import warning: importer.ImportType#apply Failed type conversion: 'style' extends react-native.react-native.Animated.NonAnimatedProps ? 'style' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<react-native.react-native.StyleProp<react-native.react-native.TextStyle> | undefined> : react-native.react-native.StyleProp<react-native.react-native.TextStyle> | undefined : react-native.react-native.Animated.WithAnimatedValue<react-native.react-native.StyleProp<react-native.react-native.TextStyle> | undefined> */ js.Any
-    ]) & js.UndefOr[StyleProp[TextStyle]],
-    theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
-  ): AnimatedPropsTextPropsRef = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
+  inline def apply(theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): AnimatedPropsTextPropsRef = {
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimatedPropsTextPropsRef]
   }
   
@@ -324,10 +307,10 @@ object AnimatedPropsTextPropsRef {
     inline def setAndroid_hyphenationFrequencyUndefined: Self = StObject.set(x, "android_hyphenationFrequency", js.undefined)
     
     inline def setChildren(
-      value: (js.UndefOr[
-          /* import warning: importer.ImportType#apply Failed type conversion: 'children' extends react-native.react-native.Animated.NonAnimatedProps ? 'children' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<react.react.ReactNode | undefined> : react.react.ReactNode | undefined : react-native.react-native.Animated.WithAnimatedValue<react.react.ReactNode | undefined> */ js.Any
-        ]) & (js.UndefOr[String | Double])
+      value: /* import warning: importer.ImportType#apply Failed type conversion: 'children' extends react-native.react-native.Animated.NonAnimatedProps ? 'children' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<react.react.ReactNode | undefined> : react.react.ReactNode | undefined : react-native.react-native.Animated.WithAnimatedValue<react.react.ReactNode | undefined> */ js.Any
     ): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setDataDetectorType(
       value: /* import warning: importer.ImportType#apply Failed type conversion: 'dataDetectorType' extends react-native.react-native.Animated.NonAnimatedProps ? 'dataDetectorType' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<null | 'phoneNumber' | 'link' | 'email' | 'none' | 'all' | undefined> : null | 'phoneNumber' | 'link' | 'email' | 'none' | 'all' | undefined : react-native.react-native.Animated.WithAnimatedValue<null | 'phoneNumber' | 'link' | 'email' | 'none' | 'all' | undefined> */ js.Any
@@ -450,10 +433,10 @@ object AnimatedPropsTextPropsRef {
     inline def setOnTextLayoutUndefined: Self = StObject.set(x, "onTextLayout", js.undefined)
     
     inline def setRef(
-      value: (js.UndefOr[
-          /* import warning: importer.ImportType#apply Failed type conversion: 'ref' extends react-native.react-native.Animated.NonAnimatedProps ? 'ref' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<react.react.Ref<react-native.react-native.Text> | undefined> : react.react.Ref<react-native.react-native.Text> | undefined : react-native.react-native.Animated.WithAnimatedValue<react.react.Ref<react-native.react-native.Text> | undefined> */ js.Any
-        ]) & js.UndefOr[RefObject[AnimatedComponent[Instantiable0[Text]]]]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: 'ref' extends react-native.react-native.Animated.NonAnimatedProps ? 'ref' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<react.react.Ref<react-native.react-native.Text> | undefined> : react.react.Ref<react-native.react-native.Text> | undefined : react-native.react-native.Animated.WithAnimatedValue<react.react.Ref<react-native.react-native.Text> | undefined> */ js.Any
     ): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    
+    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
     inline def setSelectable(
       value: /* import warning: importer.ImportType#apply Failed type conversion: 'selectable' extends react-native.react-native.Animated.NonAnimatedProps ? 'selectable' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<boolean | undefined> : boolean | undefined : react-native.react-native.Animated.WithAnimatedValue<boolean | undefined> */ js.Any
@@ -472,10 +455,10 @@ object AnimatedPropsTextPropsRef {
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     inline def setStyle(
-      value: (js.UndefOr[
-          /* import warning: importer.ImportType#apply Failed type conversion: 'style' extends react-native.react-native.Animated.NonAnimatedProps ? 'style' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<react-native.react-native.StyleProp<react-native.react-native.TextStyle> | undefined> : react-native.react-native.StyleProp<react-native.react-native.TextStyle> | undefined : react-native.react-native.Animated.WithAnimatedValue<react-native.react-native.StyleProp<react-native.react-native.TextStyle> | undefined> */ js.Any
-        ]) & js.UndefOr[StyleProp[TextStyle]]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: 'style' extends react-native.react-native.Animated.NonAnimatedProps ? 'style' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<react-native.react-native.StyleProp<react-native.react-native.TextStyle> | undefined> : react-native.react-native.StyleProp<react-native.react-native.TextStyle> | undefined : react-native.react-native.Animated.WithAnimatedValue<react-native.react-native.StyleProp<react-native.react-native.TextStyle> | undefined> */ js.Any
     ): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     inline def setSuppressHighlighting(
       value: /* import warning: importer.ImportType#apply Failed type conversion: 'suppressHighlighting' extends react-native.react-native.Animated.NonAnimatedProps ? 'suppressHighlighting' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<boolean | undefined> : boolean | undefined : react-native.react-native.Animated.WithAnimatedValue<boolean | undefined> */ js.Any

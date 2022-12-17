@@ -9,18 +9,14 @@ trait BuildidOwner extends StObject {
   var build_id: Double
   
   /** The account owner of the repository. The name is not case sensitive. */
-  var owner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['owner'] */ js.Any
+  var owner: String
   
   /** The name of the repository. The name is not case sensitive. */
-  var repo: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo'] */ js.Any
+  var repo: String
 }
 object BuildidOwner {
   
-  inline def apply(
-    build_id: Double,
-    owner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['owner'] */ js.Any,
-    repo: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo'] */ js.Any
-  ): BuildidOwner = {
+  inline def apply(build_id: Double, owner: String, repo: String): BuildidOwner = {
     val __obj = js.Dynamic.literal(build_id = build_id.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildidOwner]
   }
@@ -29,12 +25,8 @@ object BuildidOwner {
     
     inline def setBuild_id(value: Double): Self = StObject.set(x, "build_id", value.asInstanceOf[js.Any])
     
-    inline def setOwner(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['owner'] */ js.Any
-    ): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    inline def setRepo(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo'] */ js.Any
-    ): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

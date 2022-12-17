@@ -1,7 +1,7 @@
 package typings.node.cryptoMod
 
-import typings.node.anon.Format
-import typings.node.anon.Type
+import typings.node.anon.FormatType
+import typings.node.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +23,7 @@ trait RSAPSSKeyPairOptions[PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */] ex
     */
   var modulusLength: Double
   
-  var privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] & Type
+  var privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] & `0`
   
   /**
     * Public exponent
@@ -31,7 +31,7 @@ trait RSAPSSKeyPairOptions[PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */] ex
     */
   var publicExponent: js.UndefOr[Double] = js.undefined
   
-  var publicKeyEncoding: Format[PubF]
+  var publicKeyEncoding: FormatType[PubF]
   
   /**
     * Minimal salt length in bytes
@@ -42,8 +42,8 @@ object RSAPSSKeyPairOptions {
   
   inline def apply[PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */](
     modulusLength: Double,
-    privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] & Type,
-    publicKeyEncoding: Format[PubF]
+    privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] & `0`,
+    publicKeyEncoding: FormatType[PubF]
   ): RSAPSSKeyPairOptions[PubF, PrivF] = {
     val __obj = js.Dynamic.literal(modulusLength = modulusLength.asInstanceOf[js.Any], privateKeyEncoding = privateKeyEncoding.asInstanceOf[js.Any], publicKeyEncoding = publicKeyEncoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[RSAPSSKeyPairOptions[PubF, PrivF]]
@@ -61,13 +61,13 @@ object RSAPSSKeyPairOptions {
     
     inline def setModulusLength(value: Double): Self = StObject.set(x, "modulusLength", value.asInstanceOf[js.Any])
     
-    inline def setPrivateKeyEncoding(value: BasePrivateKeyEncodingOptions[PrivF] & Type): Self = StObject.set(x, "privateKeyEncoding", value.asInstanceOf[js.Any])
+    inline def setPrivateKeyEncoding(value: BasePrivateKeyEncodingOptions[PrivF] & `0`): Self = StObject.set(x, "privateKeyEncoding", value.asInstanceOf[js.Any])
     
     inline def setPublicExponent(value: Double): Self = StObject.set(x, "publicExponent", value.asInstanceOf[js.Any])
     
     inline def setPublicExponentUndefined: Self = StObject.set(x, "publicExponent", js.undefined)
     
-    inline def setPublicKeyEncoding(value: Format[PubF]): Self = StObject.set(x, "publicKeyEncoding", value.asInstanceOf[js.Any])
+    inline def setPublicKeyEncoding(value: FormatType[PubF]): Self = StObject.set(x, "publicKeyEncoding", value.asInstanceOf[js.Any])
     
     inline def setSaltLength(value: String): Self = StObject.set(x, "saltLength", value.asInstanceOf[js.Any])
     

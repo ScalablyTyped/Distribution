@@ -6,9 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConstDependency
-  extends StObject
-     with Dependency {
+trait ConstDependency extends Dependency {
   
   var expression: String = js.native
   

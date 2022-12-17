@@ -12,7 +12,7 @@ trait Targetid extends StObject {
     */
   var access_token: String
   
-  var permissions: js.UndefOr[Actions] = js.undefined
+  var permissions: js.UndefOr[Administration] = js.undefined
   
   /** @description The list of repository names to scope the user-to-server access token to. `repositories` may not be specified if `repository_ids` is specified. */
   var repositories: js.UndefOr[js.Array[String]] = js.undefined
@@ -48,7 +48,7 @@ object Targetid {
     
     inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     
-    inline def setPermissions(value: Actions): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: Administration): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
     inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     

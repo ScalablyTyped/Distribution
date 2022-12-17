@@ -742,7 +742,7 @@ object libReduxFormMod {
     
     var pristine: Boolean = js.native
     
-    var registeredFields: js.Array[RegisteredFieldState] = js.native
+    var registeredFields: js.Array[typings.reduxForm.mod.RegisteredFieldState] = js.native
     
     def reset(): Unit = js.native
     

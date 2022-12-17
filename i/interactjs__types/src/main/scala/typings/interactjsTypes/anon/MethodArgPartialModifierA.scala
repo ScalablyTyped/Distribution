@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined @interactjs/types.@interactjs/modifiers/Modification.MethodArg & std.Partial<@interactjs/types.@interactjs/modifiers/types.ModifierArg<@interactjs/types.@interactjs/modifiers/types.ModifierState<unknown, unknown, any>>> */
 trait MethodArgPartialModifierA extends StObject {
   
-  var coords: Point & js.UndefOr[Point]
+  var coords: Point
   
   var edges: js.UndefOr[EdgeOptions] = js.undefined
   
@@ -23,9 +23,9 @@ trait MethodArgPartialModifierA extends StObject {
   
   var interaction: js.UndefOr[typings.interactjsTypes.coreInteractionMod.Interaction[ActionName]] = js.undefined
   
-  var pageCoords: Point & js.UndefOr[Point]
+  var pageCoords: Point
   
-  var phase: EventPhase & js.UndefOr[EventPhase]
+  var phase: EventPhase
   
   var preEnd: js.UndefOr[Boolean] = js.undefined
   
@@ -33,7 +33,7 @@ trait MethodArgPartialModifierA extends StObject {
   
   var prevRect: js.UndefOr[FullRect] = js.undefined
   
-  var rect: FullRect & js.UndefOr[FullRect]
+  var rect: FullRect
   
   var skipModifiers: js.UndefOr[Double] = js.undefined
   
@@ -43,19 +43,14 @@ trait MethodArgPartialModifierA extends StObject {
 }
 object MethodArgPartialModifierA {
   
-  inline def apply(
-    coords: Point & js.UndefOr[Point],
-    pageCoords: Point & js.UndefOr[Point],
-    phase: EventPhase & js.UndefOr[EventPhase],
-    rect: FullRect & js.UndefOr[FullRect]
-  ): MethodArgPartialModifierA = {
+  inline def apply(coords: Point, pageCoords: Point, phase: EventPhase, rect: FullRect): MethodArgPartialModifierA = {
     val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any], pageCoords = pageCoords.asInstanceOf[js.Any], phase = phase.asInstanceOf[js.Any], rect = rect.asInstanceOf[js.Any])
     __obj.asInstanceOf[MethodArgPartialModifierA]
   }
   
   extension [Self <: MethodArgPartialModifierA](x: Self) {
     
-    inline def setCoords(value: Point & js.UndefOr[Point]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
+    inline def setCoords(value: Point): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
     
     inline def setEdges(value: EdgeOptions): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     
@@ -73,9 +68,9 @@ object MethodArgPartialModifierA {
     
     inline def setInteractionUndefined: Self = StObject.set(x, "interaction", js.undefined)
     
-    inline def setPageCoords(value: Point & js.UndefOr[Point]): Self = StObject.set(x, "pageCoords", value.asInstanceOf[js.Any])
+    inline def setPageCoords(value: Point): Self = StObject.set(x, "pageCoords", value.asInstanceOf[js.Any])
     
-    inline def setPhase(value: EventPhase & js.UndefOr[EventPhase]): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
+    inline def setPhase(value: EventPhase): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
     
     inline def setPreEnd(value: Boolean): Self = StObject.set(x, "preEnd", value.asInstanceOf[js.Any])
     
@@ -89,7 +84,7 @@ object MethodArgPartialModifierA {
     
     inline def setPrevRectUndefined: Self = StObject.set(x, "prevRect", js.undefined)
     
-    inline def setRect(value: FullRect & js.UndefOr[FullRect]): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
+    inline def setRect(value: FullRect): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
     
     inline def setSkipModifiers(value: Double): Self = StObject.set(x, "skipModifiers", value.asInstanceOf[js.Any])
     

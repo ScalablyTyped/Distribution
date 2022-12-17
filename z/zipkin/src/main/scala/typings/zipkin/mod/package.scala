@@ -1,6 +1,6 @@
 package typings.zipkin.mod
 
-import typings.zipkin.anon.`0`
+import typings.zipkin.anon.Headers
 import typings.zipkin.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,4 +11,4 @@ inline def createNoopTracer(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("c
 
 inline def randomTraceId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("randomTraceId")().asInstanceOf[String]
 
-type RequestZipkinHeaders[T, H] = T & `0`[H]
+type RequestZipkinHeaders[T, H] = T & Headers[H]

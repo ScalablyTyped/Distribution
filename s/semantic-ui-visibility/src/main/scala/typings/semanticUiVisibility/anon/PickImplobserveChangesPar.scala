@@ -39,7 +39,7 @@ trait PickImplobserveChangesPar
   
   var namespace: js.UndefOr[String] = js.undefined
   
-  var observeChanges: Boolean & js.UndefOr[Boolean]
+  var observeChanges: Boolean
   
   var offset: js.UndefOr[Double] = js.undefined
   
@@ -103,7 +103,7 @@ trait PickImplobserveChangesPar
 }
 object PickImplobserveChangesPar {
   
-  inline def apply(observeChanges: Boolean & js.UndefOr[Boolean]): PickImplobserveChangesPar = {
+  inline def apply(observeChanges: Boolean): PickImplobserveChangesPar = {
     val __obj = js.Dynamic.literal(observeChanges = observeChanges.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplobserveChangesPar]
   }
@@ -154,7 +154,7 @@ object PickImplobserveChangesPar {
     
     inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
-    inline def setObserveChanges(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "observeChanges", value.asInstanceOf[js.Any])
+    inline def setObserveChanges(value: Boolean): Self = StObject.set(x, "observeChanges", value.asInstanceOf[js.Any])
     
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

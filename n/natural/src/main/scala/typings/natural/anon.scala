@@ -1,7 +1,5 @@
 package typings.natural
 
-import typings.natural.naturalBooleans.`false`
-import typings.natural.naturalBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +19,7 @@ object anon {
     var restricted: js.UndefOr[Boolean] = js.undefined
     
     /** @default false */
-    var search: js.UndefOr[Boolean] & `true`
+    var search: js.UndefOr[Boolean] = js.undefined
     
     /** @default 1 */
     var substitution_cost: js.UndefOr[Double] = js.undefined
@@ -31,8 +29,8 @@ object anon {
   }
   object DamerauLevenshteinDistanc {
     
-    inline def apply(search: js.UndefOr[Boolean] & `true`): DamerauLevenshteinDistanc = {
-      val __obj = js.Dynamic.literal(search = search.asInstanceOf[js.Any])
+    inline def apply(): DamerauLevenshteinDistanc = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DamerauLevenshteinDistanc]
     }
     
@@ -50,7 +48,9 @@ object anon {
       
       inline def setRestrictedUndefined: Self = StObject.set(x, "restricted", js.undefined)
       
-      inline def setSearch(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: Boolean): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      
+      inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
       
       inline def setSubstitution_cost(value: Double): Self = StObject.set(x, "substitution_cost", value.asInstanceOf[js.Any])
       
@@ -75,7 +75,7 @@ object anon {
     var restricted: js.UndefOr[Boolean] = js.undefined
     
     /** @default false */
-    var search: js.UndefOr[Boolean] & js.UndefOr[`false`]
+    var search: js.UndefOr[Boolean] = js.undefined
     
     /** @default 1 */
     var substitution_cost: js.UndefOr[Double] = js.undefined
@@ -85,8 +85,8 @@ object anon {
   }
   object DamerauLevenshteinDistancDeletioncost {
     
-    inline def apply(search: js.UndefOr[Boolean] & js.UndefOr[`false`]): DamerauLevenshteinDistancDeletioncost = {
-      val __obj = js.Dynamic.literal(search = search.asInstanceOf[js.Any])
+    inline def apply(): DamerauLevenshteinDistancDeletioncost = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DamerauLevenshteinDistancDeletioncost]
     }
     
@@ -104,7 +104,9 @@ object anon {
       
       inline def setRestrictedUndefined: Self = StObject.set(x, "restricted", js.undefined)
       
-      inline def setSearch(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: Boolean): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      
+      inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
       
       inline def setSubstitution_cost(value: Double): Self = StObject.set(x, "substitution_cost", value.asInstanceOf[js.Any])
       
@@ -129,7 +131,7 @@ object anon {
     var restricted: js.UndefOr[Boolean] = js.undefined
     
     /** @default false */
-    var search: js.UndefOr[Boolean] & Boolean
+    var search: js.UndefOr[Boolean] = js.undefined
     
     /** @default 1 */
     var substitution_cost: js.UndefOr[Double] = js.undefined
@@ -139,8 +141,8 @@ object anon {
   }
   object DamerauLevenshteinDistancInsertioncost {
     
-    inline def apply(search: js.UndefOr[Boolean] & Boolean): DamerauLevenshteinDistancInsertioncost = {
-      val __obj = js.Dynamic.literal(search = search.asInstanceOf[js.Any])
+    inline def apply(): DamerauLevenshteinDistancInsertioncost = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DamerauLevenshteinDistancInsertioncost]
     }
     
@@ -158,7 +160,9 @@ object anon {
       
       inline def setRestrictedUndefined: Self = StObject.set(x, "restricted", js.undefined)
       
-      inline def setSearch(value: js.UndefOr[Boolean] & Boolean): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: Boolean): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      
+      inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
       
       inline def setSubstitution_cost(value: Double): Self = StObject.set(x, "substitution_cost", value.asInstanceOf[js.Any])
       

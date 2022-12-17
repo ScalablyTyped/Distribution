@@ -1,6 +1,5 @@
 package typings.playcanvas.global.pc
 
-import typings.playcanvas.mod.MeshInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,5 +27,9 @@ open class Batch protected ()
     * @param {boolean} dynamic - Whether this batch is dynamic (supports transforming mesh instances at runtime).
     * @param {number} batchGroupId - Link this batch to a specific batch group. This is done automatically with default batches.
     */
-  def this(meshInstances: js.Array[MeshInstance], dynamic: Boolean, batchGroupId: Double) = this()
+  def this(
+    meshInstances: js.Array[typings.playcanvas.mod.MeshInstance],
+    dynamic: Boolean,
+    batchGroupId: Double
+  ) = this()
 }

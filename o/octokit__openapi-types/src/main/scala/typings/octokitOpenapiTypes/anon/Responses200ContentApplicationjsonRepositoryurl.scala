@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Responses200ContentApplicationjsonRepositoryurl extends StObject {
   
-  var parameters: `76`
+  var parameters: PathThreadidNumber
   
   var responses: `200ContentApplicationjsonRepositoryurl`
 }
 object Responses200ContentApplicationjsonRepositoryurl {
   
-  inline def apply(parameters: `76`, responses: `200ContentApplicationjsonRepositoryurl`): Responses200ContentApplicationjsonRepositoryurl = {
+  inline def apply(parameters: PathThreadidNumber, responses: `200ContentApplicationjsonRepositoryurl`): Responses200ContentApplicationjsonRepositoryurl = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[Responses200ContentApplicationjsonRepositoryurl]
   }
   
   extension [Self <: Responses200ContentApplicationjsonRepositoryurl](x: Self) {
     
-    inline def setParameters(value: `76`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: PathThreadidNumber): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setResponses(value: `200ContentApplicationjsonRepositoryurl`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }

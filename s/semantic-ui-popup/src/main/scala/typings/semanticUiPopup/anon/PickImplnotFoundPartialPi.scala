@@ -18,11 +18,11 @@ trait PickImplnotFoundPartialPi
   
   var noTransition: js.UndefOr[String] = js.undefined
   
-  var notFound: String & js.UndefOr[String]
+  var notFound: String
 }
 object PickImplnotFoundPartialPi {
   
-  inline def apply(notFound: String & js.UndefOr[String]): PickImplnotFoundPartialPi = {
+  inline def apply(notFound: String): PickImplnotFoundPartialPi = {
     val __obj = js.Dynamic.literal(notFound = notFound.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplnotFoundPartialPi]
   }
@@ -45,6 +45,6 @@ object PickImplnotFoundPartialPi {
     
     inline def setNoTransitionUndefined: Self = StObject.set(x, "noTransition", js.undefined)
     
-    inline def setNotFound(value: String & js.UndefOr[String]): Self = StObject.set(x, "notFound", value.asInstanceOf[js.Any])
+    inline def setNotFound(value: String): Self = StObject.set(x, "notFound", value.asInstanceOf[js.Any])
   }
 }

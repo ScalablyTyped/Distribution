@@ -305,7 +305,7 @@ trait OmitPdfViewset extends StObject {
   @JSName("isDisposed")
   var isDisposed_Original: js.Function0[Boolean]
   
-  var jsxAttributes: (JSXAttributes[PdfView, Omit[PdfView, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `12`
+  var jsxAttributes: (JSXAttributes[PdfView, Omit[PdfView, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `4`
   
   var layoutData: LayoutDataValue
   
@@ -560,7 +560,7 @@ object OmitPdfViewset {
     insertAfter: /* widget */ Widget[Any] => PdfView,
     insertBefore: /* widget */ Widget[Any] => PdfView,
     isDisposed: () => Boolean,
-    jsxAttributes: (JSXAttributes[PdfView, Omit[PdfView, set | jsxAttributes]]) & `12`,
+    jsxAttributes: (JSXAttributes[PdfView, Omit[PdfView, set | jsxAttributes]]) & `4`,
     layoutData: LayoutDataValue,
     left: ConstraintValue,
     off: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Unit], /* context */ js.UndefOr[js.Object]) => PdfView,
@@ -728,7 +728,7 @@ object OmitPdfViewset {
     
     inline def setIsDisposed(value: () => Boolean): Self = StObject.set(x, "isDisposed", js.Any.fromFunction0(value))
     
-    inline def setJsxAttributes(value: (JSXAttributes[PdfView, Omit[PdfView, set | jsxAttributes]]) & `12`): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
+    inline def setJsxAttributes(value: (JSXAttributes[PdfView, Omit[PdfView, set | jsxAttributes]]) & `4`): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     
     inline def setLayoutData(value: LayoutDataValue): Self = StObject.set(x, "layoutData", value.asInstanceOf[js.Any])
     

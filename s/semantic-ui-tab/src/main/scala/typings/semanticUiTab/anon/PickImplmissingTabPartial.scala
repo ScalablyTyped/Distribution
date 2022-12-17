@@ -14,7 +14,7 @@ trait PickImplmissingTabPartial
   
   var method: js.UndefOr[String] = js.undefined
   
-  var missingTab: String & js.UndefOr[String]
+  var missingTab: String
   
   var noContent: js.UndefOr[String] = js.undefined
   
@@ -26,7 +26,7 @@ trait PickImplmissingTabPartial
 }
 object PickImplmissingTabPartial {
   
-  inline def apply(missingTab: String & js.UndefOr[String]): PickImplmissingTabPartial = {
+  inline def apply(missingTab: String): PickImplmissingTabPartial = {
     val __obj = js.Dynamic.literal(missingTab = missingTab.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmissingTabPartial]
   }
@@ -41,7 +41,7 @@ object PickImplmissingTabPartial {
     
     inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    inline def setMissingTab(value: String & js.UndefOr[String]): Self = StObject.set(x, "missingTab", value.asInstanceOf[js.Any])
+    inline def setMissingTab(value: String): Self = StObject.set(x, "missingTab", value.asInstanceOf[js.Any])
     
     inline def setNoContent(value: String): Self = StObject.set(x, "noContent", value.asInstanceOf[js.Any])
     

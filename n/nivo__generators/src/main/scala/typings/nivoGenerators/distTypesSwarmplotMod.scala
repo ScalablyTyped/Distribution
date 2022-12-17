@@ -1,7 +1,7 @@
 package typings.nivoGenerators
 
 import typings.nivoGenerators.anon.CategoryCount
-import typings.nivoGenerators.anon.DataGroups
+import typings.nivoGenerators.anon.Data
 import typings.nivoGenerators.anon.Groups
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
@@ -14,11 +14,11 @@ object distTypesSwarmplotMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def generateSwarmPlotData(groups: js.Array[String], param1: CategoryCount): Groups = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSwarmPlotData")(groups.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Groups]
+  inline def generateSwarmPlotData(groups: js.Array[String], param1: CategoryCount): Data = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSwarmPlotData")(groups.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Data]
   
   inline def randomizeSwarmPlotData(
-    previousData: ReturnType[js.Function2[/* groups */ js.Array[String], /* param1 */ CategoryCount, Groups]]
-  ): DataGroups = ^.asInstanceOf[js.Dynamic].applyDynamic("randomizeSwarmPlotData")(previousData.asInstanceOf[js.Any]).asInstanceOf[DataGroups]
+    previousData: ReturnType[js.Function2[/* groups */ js.Array[String], /* param1 */ CategoryCount, Data]]
+  ): Groups = ^.asInstanceOf[js.Dynamic].applyDynamic("randomizeSwarmPlotData")(previousData.asInstanceOf[js.Any]).asInstanceOf[Groups]
   
   trait SwarmPlotDatum extends StObject {
     

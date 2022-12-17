@@ -10,13 +10,17 @@ trait `201ContentApplicationjsonAssetsurl` extends StObject {
   var `201`: ContentApplicationjsonAssetsurl
   
   /** Not Found if the discussion category name is invalid */
-  var `404`: ContentApplicationjson
+  var `404`: ContentApplicationjsonDocumentationurlMessage
   
-  var `422`: Content8
+  var `422`: Content397
 }
 object `201ContentApplicationjsonAssetsurl` {
   
-  inline def apply(`201`: ContentApplicationjsonAssetsurl, `404`: ContentApplicationjson, `422`: Content8): `201ContentApplicationjsonAssetsurl` = {
+  inline def apply(
+    `201`: ContentApplicationjsonAssetsurl,
+    `404`: ContentApplicationjsonDocumentationurlMessage,
+    `422`: Content397
+  ): `201ContentApplicationjsonAssetsurl` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("201")(`201`.asInstanceOf[js.Any])
     __obj.updateDynamic("404")(`404`.asInstanceOf[js.Any])
@@ -28,8 +32,8 @@ object `201ContentApplicationjsonAssetsurl` {
     
     inline def set201(value: ContentApplicationjsonAssetsurl): Self = StObject.set(x, "201", value.asInstanceOf[js.Any])
     
-    inline def set404(value: ContentApplicationjson): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    inline def set404(value: ContentApplicationjsonDocumentationurlMessage): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
     
-    inline def set422(value: Content8): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
+    inline def set422(value: Content397): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
   }
 }

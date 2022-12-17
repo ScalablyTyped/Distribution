@@ -14,7 +14,7 @@ trait PickImpllabelsPartialPick
   
   var alreadySetup: js.UndefOr[String] = js.undefined
   
-  var labels: String & js.UndefOr[String]
+  var labels: String
   
   var method: js.UndefOr[String] = js.undefined
   
@@ -22,7 +22,7 @@ trait PickImpllabelsPartialPick
 }
 object PickImpllabelsPartialPick {
   
-  inline def apply(labels: String & js.UndefOr[String]): PickImpllabelsPartialPick = {
+  inline def apply(labels: String): PickImpllabelsPartialPick = {
     val __obj = js.Dynamic.literal(labels = labels.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpllabelsPartialPick]
   }
@@ -37,7 +37,7 @@ object PickImpllabelsPartialPick {
     
     inline def setAlreadySetupUndefined: Self = StObject.set(x, "alreadySetup", js.undefined)
     
-    inline def setLabels(value: String & js.UndefOr[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: String): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

@@ -9,8 +9,8 @@ import typings.broccoliOutputWrapper.anon.FnCallTargetPathType
 import typings.broccoliOutputWrapper.anon.Recursive
 import typings.broccoliOutputWrapper.broccoliOutputWrapperStrings.buffer
 import typings.node.NodeJS.ArrayBufferView
+import typings.node.anon.Encoding
 import typings.node.anon.EncodingFlag
-import typings.node.anon.EncodingWithFileTypes
 import typings.node.anon.Flag
 import typings.node.anon.MakeDirectoryOptionsrecur
 import typings.node.anon.MakeDirectoryOptionsrecurMode
@@ -101,10 +101,10 @@ object mod {
     def readFileSync_Union(path: PathOrFileDescriptor, options: BufferEncoding): String | Buffer = js.native
     
     def readdirSync(path: PathLike): js.Array[Buffer | String] = js.native
-    def readdirSync(path: PathLike, options: EncodingWithFileTypes): js.Array[String] = js.native
+    def readdirSync(path: PathLike, options: Encoding): js.Array[Buffer] = js.native
     def readdirSync(path: PathLike, options: ObjectEncodingOptionswith): js.Array[Buffer | String] = js.native
     def readdirSync(path: PathLike, options: ObjectEncodingOptionswithEncoding): js.Array[Dirent] = js.native
-    def readdirSync(path: PathLike, options: WithFileTypes): js.Array[Buffer] = js.native
+    def readdirSync(path: PathLike, options: WithFileTypes): js.Array[String] = js.native
     def readdirSync(path: PathLike, options: BufferEncoding): js.Array[Buffer | String] = js.native
     @JSName("readdirSync")
     var readdirSync_Original: FnCallPathOptions = js.native

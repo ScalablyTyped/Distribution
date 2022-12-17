@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ApiKey extends StObject {
   
   /**
-    * Your Branch API key
+    * Your Google Maps Android SDK API key
     */
   var apiKey: js.UndefOr[String] = js.undefined
 }

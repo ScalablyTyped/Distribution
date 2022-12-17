@@ -43,7 +43,7 @@ trait typebegincausedBygestureu
     * 视野变化开始为 `begin`
     */
   /** 事件类型 */
-  var `type`: begin & String
+  var `type`: begin
 }
 object typebegincausedBygestureu {
   
@@ -52,11 +52,10 @@ object typebegincausedBygestureu {
     currentTarget: typings.wechatMiniprogram.WechatMiniprogram.Target[IAnyObject],
     detail: Rotate,
     target: typings.wechatMiniprogram.WechatMiniprogram.Target[IAnyObject],
-    timeStamp: Double,
-    `type`: begin & String
+    timeStamp: Double
   ): typebegincausedBygestureu = {
     val __obj = js.Dynamic.literal(causedBy = causedBy.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("begin")
     __obj.asInstanceOf[typebegincausedBygestureu]
   }
   
@@ -76,6 +75,6 @@ object typebegincausedBygestureu {
     
     inline def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
     
-    inline def setType(value: begin & String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: begin): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

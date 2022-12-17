@@ -12,6 +12,9 @@ object libTransitionRejectFactoryMod {
   @js.native
   object RejectType extends StObject {
     
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[RejectType & Double] = js.native
+    
     /**
       * The transition was aborted
       *
@@ -21,6 +24,7 @@ object libTransitionRejectFactoryMod {
     sealed trait ABORTED
       extends StObject
          with RejectType
+    /* 3 */ val ABORTED: typings.uirouterCore.libTransitionRejectFactoryMod.RejectType.ABORTED & Double = js.native
     
     /**
       * The transition errored.
@@ -31,6 +35,7 @@ object libTransitionRejectFactoryMod {
     sealed trait ERROR
       extends StObject
          with RejectType
+    /* 6 */ val ERROR: typings.uirouterCore.libTransitionRejectFactoryMod.RejectType.ERROR & Double = js.native
     
     /**
       * The transition was ignored
@@ -46,6 +51,7 @@ object libTransitionRejectFactoryMod {
     sealed trait IGNORED
       extends StObject
          with RejectType
+    /* 5 */ val IGNORED: typings.uirouterCore.libTransitionRejectFactoryMod.RejectType.IGNORED & Double = js.native
     
     /**
       * The transition was invalid
@@ -56,6 +62,7 @@ object libTransitionRejectFactoryMod {
     sealed trait INVALID
       extends StObject
          with RejectType
+    /* 4 */ val INVALID: typings.uirouterCore.libTransitionRejectFactoryMod.RejectType.INVALID & Double = js.native
     
     /**
       * A new transition superseded this one.
@@ -67,6 +74,7 @@ object libTransitionRejectFactoryMod {
     sealed trait SUPERSEDED
       extends StObject
          with RejectType
+    /* 2 */ val SUPERSEDED: typings.uirouterCore.libTransitionRejectFactoryMod.RejectType.SUPERSEDED & Double = js.native
   }
   
   @JSImport("@uirouter/core/lib/transition/rejectFactory", "Rejection")

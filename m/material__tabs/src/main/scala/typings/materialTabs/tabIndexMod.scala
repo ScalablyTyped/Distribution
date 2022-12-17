@@ -11,28 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object tabIndexMod {
   
-  @JSImport("@material/tabs/tab/index", JSImport.Default)
-  @js.native
-  open class default ()
-    extends typings.materialTabs.tabFoundationMod.default {
-    def this(adapter: PartialMDCTabAdapter) = this()
-  }
-  /* static members */
-  object default {
-    
-    @JSImport("@material/tabs/tab/index", "default.cssClasses")
-    @js.native
-    val cssClasses: ACTIVE = js.native
-    
-    @JSImport("@material/tabs/tab/index", "default.defaultAdapter")
-    @js.native
-    val defaultAdapter: MDCTabAdapter = js.native
-    
-    @JSImport("@material/tabs/tab/index", "default.strings")
-    @js.native
-    val strings: SELECTEDEVENT = js.native
-  }
-  
   @JSImport("@material/tabs/tab/index", "MDCTab")
   @js.native
   open class MDCTab protected ()

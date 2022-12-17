@@ -31,7 +31,7 @@ trait App[HostElement] extends StObject {
   /**
     * v2 compat only
     */
-  var filter: (js.UndefOr[js.Function1[/* name */ String, js.UndefOr[js.Function]]]) & (js.UndefOr[js.Function2[/* name */ String, /* filter */ js.Function, this.type]]) = js.native
+  var filter: js.UndefOr[js.Function1[/* name */ String, js.UndefOr[js.Function]]] = js.native
   
   def mixin(mixin: ComponentOptions[js.Object, Any, Any, Any, Any, Any, Any, Any]): this.type = js.native
   

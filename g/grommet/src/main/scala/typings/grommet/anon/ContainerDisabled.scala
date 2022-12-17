@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ContainerDisabled extends StObject {
   
-  var container: js.UndefOr[`10`] = js.undefined
+  var container: js.UndefOr[`8`] = js.undefined
   
-  var disabled: js.UndefOr[`26`] = js.undefined
+  var disabled: js.UndefOr[`24`] = js.undefined
   
   var extend: js.UndefOr[ExtendType[Record[String, Any]]] = js.undefined
 }
@@ -25,11 +25,11 @@ object ContainerDisabled {
   
   extension [Self <: ContainerDisabled](x: Self) {
     
-    inline def setContainer(value: `10`): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: `8`): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setDisabled(value: `26`): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: `24`): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     

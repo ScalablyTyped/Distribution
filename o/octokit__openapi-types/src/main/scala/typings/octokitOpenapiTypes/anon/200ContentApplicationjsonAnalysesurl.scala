@@ -9,20 +9,20 @@ trait `200ContentApplicationjsonAnalysesurl` extends StObject {
   /** Response */
   var `200`: ContentApplicationjsonAnalysesurl
   
-  var `403`: Content6
+  var `403`: Content48
   
   /** Not Found if the sarif id does not match any upload */
   var `404`: Any
   
-  var `503`: ContentApplicationjsonCodeDocumentationurl
+  var `503`: ContentApplicationjsonCodeDocumentationurlMessage
 }
 object `200ContentApplicationjsonAnalysesurl` {
   
   inline def apply(
     `200`: ContentApplicationjsonAnalysesurl,
-    `403`: Content6,
+    `403`: Content48,
     `404`: Any,
-    `503`: ContentApplicationjsonCodeDocumentationurl
+    `503`: ContentApplicationjsonCodeDocumentationurlMessage
   ): `200ContentApplicationjsonAnalysesurl` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
@@ -36,10 +36,10 @@ object `200ContentApplicationjsonAnalysesurl` {
     
     inline def set200(value: ContentApplicationjsonAnalysesurl): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set403(value: Content6): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
+    inline def set403(value: Content48): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
     
     inline def set404(value: Any): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
     
-    inline def set503(value: ContentApplicationjsonCodeDocumentationurl): Self = StObject.set(x, "503", value.asInstanceOf[js.Any])
+    inline def set503(value: ContentApplicationjsonCodeDocumentationurlMessage): Self = StObject.set(x, "503", value.asInstanceOf[js.Any])
   }
 }

@@ -1,7 +1,5 @@
 package typings.ejs
 
-import typings.ejs.ejsBooleans.`false`
-import typings.ejs.ejsBooleans.`true`
 import typings.ejs.mod.EscapeCallback
 import typings.ejs.mod.IncluderCallback
 import typings.ejs.mod.IncluderResult
@@ -50,7 +48,7 @@ object anon {
       *
       * @default false
       */
-    var async: js.UndefOr[Boolean] & `false`
+    var async: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Make sure to set this to 'false' in order to skip UglifyJS parsing,
@@ -198,14 +196,16 @@ object anon {
   }
   object Optionsasyncfalse {
     
-    inline def apply(async: js.UndefOr[Boolean] & `false`): Optionsasyncfalse = {
-      val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any])
+    inline def apply(): Optionsasyncfalse = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Optionsasyncfalse]
     }
     
     extension [Self <: Optionsasyncfalse](x: Self) {
       
-      inline def setAsync(value: js.UndefOr[Boolean] & `false`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
       inline def setBeautify(value: Boolean): Self = StObject.set(x, "beautify", value.asInstanceOf[js.Any])
       
@@ -311,7 +311,7 @@ object anon {
       *
       * @default false
       */
-    var async: js.UndefOr[Boolean] & js.UndefOr[`false`]
+    var async: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Make sure to set this to 'false' in order to skip UglifyJS parsing,
@@ -339,7 +339,7 @@ object anon {
       *
       * @default false
       */
-    var client: js.UndefOr[Boolean] & js.UndefOr[`false`]
+    var client: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The closing delimiter for all statements. This allows to to clearly delinate
@@ -459,17 +459,16 @@ object anon {
   }
   object Optionsasyncfalseundefine {
     
-    inline def apply(
-      async: js.UndefOr[Boolean] & js.UndefOr[`false`],
-      client: js.UndefOr[Boolean] & js.UndefOr[`false`]
-    ): Optionsasyncfalseundefine = {
-      val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any])
+    inline def apply(): Optionsasyncfalseundefine = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Optionsasyncfalseundefine]
     }
     
     extension [Self <: Optionsasyncfalseundefine](x: Self) {
       
-      inline def setAsync(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
       inline def setBeautify(value: Boolean): Self = StObject.set(x, "beautify", value.asInstanceOf[js.Any])
       
@@ -479,7 +478,9 @@ object anon {
       
       inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      inline def setClient(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: Boolean): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      
+      inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
       
       inline def setCloseDelimiter(value: String): Self = StObject.set(x, "closeDelimiter", value.asInstanceOf[js.Any])
       
@@ -573,7 +574,7 @@ object anon {
       *
       * @default false
       */
-    var async: js.UndefOr[Boolean] & js.UndefOr[`false`]
+    var async: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Make sure to set this to 'false' in order to skip UglifyJS parsing,
@@ -601,7 +602,7 @@ object anon {
       *
       * @default false
       */
-    var client: js.UndefOr[Boolean] & `true`
+    var client: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The closing delimiter for all statements. This allows to to clearly delinate
@@ -721,14 +722,16 @@ object anon {
   }
   object OptionsasyncfalseundefineAsync {
     
-    inline def apply(async: js.UndefOr[Boolean] & js.UndefOr[`false`], client: js.UndefOr[Boolean] & `true`): OptionsasyncfalseundefineAsync = {
-      val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any])
+    inline def apply(): OptionsasyncfalseundefineAsync = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionsasyncfalseundefineAsync]
     }
     
     extension [Self <: OptionsasyncfalseundefineAsync](x: Self) {
       
-      inline def setAsync(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
       inline def setBeautify(value: Boolean): Self = StObject.set(x, "beautify", value.asInstanceOf[js.Any])
       
@@ -738,7 +741,9 @@ object anon {
       
       inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      inline def setClient(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: Boolean): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      
+      inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
       
       inline def setCloseDelimiter(value: String): Self = StObject.set(x, "closeDelimiter", value.asInstanceOf[js.Any])
       
@@ -832,7 +837,7 @@ object anon {
       *
       * @default false
       */
-    var async: js.UndefOr[Boolean] & js.UndefOr[scala.Nothing]
+    var async: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Make sure to set this to 'false' in order to skip UglifyJS parsing,
@@ -980,14 +985,16 @@ object anon {
   }
   object Optionsasyncneverundefine {
     
-    inline def apply(async: js.UndefOr[Boolean] & js.UndefOr[scala.Nothing]): Optionsasyncneverundefine = {
-      val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any])
+    inline def apply(): Optionsasyncneverundefine = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Optionsasyncneverundefine]
     }
     
     extension [Self <: Optionsasyncneverundefine](x: Self) {
       
-      inline def setAsync(value: js.UndefOr[Boolean] & js.UndefOr[scala.Nothing]): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
       inline def setBeautify(value: Boolean): Self = StObject.set(x, "beautify", value.asInstanceOf[js.Any])
       
@@ -1093,7 +1100,7 @@ object anon {
       *
       * @default false
       */
-    var async: js.UndefOr[Boolean] & `true`
+    var async: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Make sure to set this to 'false' in order to skip UglifyJS parsing,
@@ -1241,14 +1248,16 @@ object anon {
   }
   object Optionsasynctrue {
     
-    inline def apply(async: js.UndefOr[Boolean] & `true`): Optionsasynctrue = {
-      val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any])
+    inline def apply(): Optionsasynctrue = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Optionsasynctrue]
     }
     
     extension [Self <: Optionsasynctrue](x: Self) {
       
-      inline def setAsync(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
       inline def setBeautify(value: Boolean): Self = StObject.set(x, "beautify", value.asInstanceOf[js.Any])
       
@@ -1354,7 +1363,7 @@ object anon {
       *
       * @default false
       */
-    var async: js.UndefOr[Boolean] & `true`
+    var async: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Make sure to set this to 'false' in order to skip UglifyJS parsing,
@@ -1382,7 +1391,7 @@ object anon {
       *
       * @default false
       */
-    var client: js.UndefOr[Boolean] & js.UndefOr[`false`]
+    var client: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The closing delimiter for all statements. This allows to to clearly delinate
@@ -1502,14 +1511,16 @@ object anon {
   }
   object Optionsasynctrueclientfal {
     
-    inline def apply(async: js.UndefOr[Boolean] & `true`, client: js.UndefOr[Boolean] & js.UndefOr[`false`]): Optionsasynctrueclientfal = {
-      val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any])
+    inline def apply(): Optionsasynctrueclientfal = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Optionsasynctrueclientfal]
     }
     
     extension [Self <: Optionsasynctrueclientfal](x: Self) {
       
-      inline def setAsync(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
       inline def setBeautify(value: Boolean): Self = StObject.set(x, "beautify", value.asInstanceOf[js.Any])
       
@@ -1519,7 +1530,9 @@ object anon {
       
       inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      inline def setClient(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: Boolean): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      
+      inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
       
       inline def setCloseDelimiter(value: String): Self = StObject.set(x, "closeDelimiter", value.asInstanceOf[js.Any])
       
@@ -1613,7 +1626,7 @@ object anon {
       *
       * @default false
       */
-    var async: js.UndefOr[Boolean] & `true`
+    var async: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Make sure to set this to 'false' in order to skip UglifyJS parsing,
@@ -1641,7 +1654,7 @@ object anon {
       *
       * @default false
       */
-    var client: js.UndefOr[Boolean] & `true`
+    var client: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The closing delimiter for all statements. This allows to to clearly delinate
@@ -1761,14 +1774,16 @@ object anon {
   }
   object Optionsasynctrueclienttru {
     
-    inline def apply(async: js.UndefOr[Boolean] & `true`, client: js.UndefOr[Boolean] & `true`): Optionsasynctrueclienttru = {
-      val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any])
+    inline def apply(): Optionsasynctrueclienttru = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Optionsasynctrueclienttru]
     }
     
     extension [Self <: Optionsasynctrueclienttru](x: Self) {
       
-      inline def setAsync(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
       inline def setBeautify(value: Boolean): Self = StObject.set(x, "beautify", value.asInstanceOf[js.Any])
       
@@ -1778,7 +1793,9 @@ object anon {
       
       inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      inline def setClient(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: Boolean): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      
+      inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
       
       inline def setCloseDelimiter(value: String): Self = StObject.set(x, "closeDelimiter", value.asInstanceOf[js.Any])
       

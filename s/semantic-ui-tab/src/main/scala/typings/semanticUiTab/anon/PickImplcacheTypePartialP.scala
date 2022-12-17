@@ -34,7 +34,7 @@ trait PickImplcacheTypePartialP
   
   var cache: js.UndefOr[Boolean] = js.undefined
   
-  var cacheType: (response | DOM | html) & (js.UndefOr[response | DOM | html])
+  var cacheType: response | DOM | html
   
   var childrenOnly: js.UndefOr[Boolean] = js.undefined
   
@@ -104,7 +104,7 @@ trait PickImplcacheTypePartialP
 }
 object PickImplcacheTypePartialP {
   
-  inline def apply(cacheType: (response | DOM | html) & (js.UndefOr[response | DOM | html])): PickImplcacheTypePartialP = {
+  inline def apply(cacheType: response | DOM | html): PickImplcacheTypePartialP = {
     val __obj = js.Dynamic.literal(cacheType = cacheType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplcacheTypePartialP]
   }
@@ -125,7 +125,7 @@ object PickImplcacheTypePartialP {
     
     inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
-    inline def setCacheType(value: (response | DOM | html) & (js.UndefOr[response | DOM | html])): Self = StObject.set(x, "cacheType", value.asInstanceOf[js.Any])
+    inline def setCacheType(value: response | DOM | html): Self = StObject.set(x, "cacheType", value.asInstanceOf[js.Any])
     
     inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     

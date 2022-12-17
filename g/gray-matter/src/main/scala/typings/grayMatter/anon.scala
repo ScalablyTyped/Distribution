@@ -7,37 +7,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Content[I /* <: Input */] extends StObject {
-    
-    var content: I
-  }
-  object Content {
-    
-    inline def apply[I /* <: Input */](content: I): Content[I] = {
-      val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Content[I]]
-    }
-    
-    extension [Self <: Content[?], I /* <: Input */](x: Self & Content[I]) {
-      
-      inline def setContent(value: I): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait ContentString extends StObject {
+  trait Content extends StObject {
     
     var content: String
   }
-  object ContentString {
+  object Content {
     
-    inline def apply(content: String): ContentString = {
+    inline def apply(content: String): Content = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ContentString]
+      __obj.asInstanceOf[Content]
     }
     
-    extension [Self <: ContentString](x: Self) {
+    extension [Self <: Content](x: Self) {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait ContentI[I /* <: Input */] extends StObject {
+    
+    var content: I
+  }
+  object ContentI {
+    
+    inline def apply[I /* <: Input */](content: I): ContentI[I] = {
+      val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ContentI[I]]
+    }
+    
+    extension [Self <: ContentI[?], I /* <: Input */](x: Self & ContentI[I]) {
+      
+      inline def setContent(value: I): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     }
   }
   

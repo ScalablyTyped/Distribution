@@ -1,6 +1,6 @@
 package typings.babylonjs.particlesIndexMod
 
-import typings.babylonjs.anon.Updatable
+import typings.babylonjs.anon.`0`
 import typings.babylonjs.sceneMod.Scene
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,5 +20,5 @@ open class PointsCloudSystem protected ()
     * @param options.updatable
     */
   def this(name: String, pointSize: Double, scene: Scene) = this()
-  def this(name: String, pointSize: Double, scene: Scene, options: Updatable) = this()
+  def this(name: String, pointSize: Double, scene: Scene, options: `0`) = this()
 }

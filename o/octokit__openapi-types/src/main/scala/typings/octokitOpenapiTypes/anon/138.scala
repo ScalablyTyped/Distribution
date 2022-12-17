@@ -6,27 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `138` extends StObject {
   
-  /** @description The new Git author email. */
-  var email: js.UndefOr[String] = js.undefined
-  
-  /** @description The new Git author name. */
-  var name: js.UndefOr[String] = js.undefined
+  var `410`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['gone'] */ js.Any
 }
 object `138` {
   
-  inline def apply(): `138` = {
+  inline def apply(
+    `410`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['gone'] */ js.Any
+  ): `138` = {
     val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("410")(`410`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`138`]
   }
   
   extension [Self <: `138`](x: Self) {
     
-    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
-    
-    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
-    
-    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    
-    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def set410(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['gone'] */ js.Any
+    ): Self = StObject.set(x, "410", value.asInstanceOf[js.Any])
   }
 }

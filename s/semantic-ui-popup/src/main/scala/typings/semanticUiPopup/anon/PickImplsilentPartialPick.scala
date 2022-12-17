@@ -106,7 +106,7 @@ trait PickImplsilentPartialPick
   
   var setFluidWidth: js.UndefOr[Boolean] = js.undefined
   
-  var silent: Boolean & js.UndefOr[Boolean]
+  var silent: Boolean
   
   var target: js.UndefOr[`false` | String | JQuery] = js.undefined
   
@@ -120,7 +120,7 @@ trait PickImplsilentPartialPick
 }
 object PickImplsilentPartialPick {
   
-  inline def apply(silent: Boolean & js.UndefOr[Boolean]): PickImplsilentPartialPick = {
+  inline def apply(silent: Boolean): PickImplsilentPartialPick = {
     val __obj = js.Dynamic.literal(silent = silent.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplsilentPartialPick]
   }
@@ -291,7 +291,7 @@ object PickImplsilentPartialPick {
     
     inline def setSetFluidWidthUndefined: Self = StObject.set(x, "setFluidWidth", js.undefined)
     
-    inline def setSilent(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+    inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
     inline def setTarget(value: `false` | String | JQuery): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

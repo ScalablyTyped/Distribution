@@ -10,34 +10,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.fixturifyProject.anon.BaseDir
-    - typings.fixturifyProject.anon.RequestedRange
-    - typings.fixturifyProject.anon.Project
-  */
-  trait LinkParams extends StObject
-  object LinkParams {
-    
-    inline def BaseDir(baseDir: String): typings.fixturifyProject.anon.BaseDir = {
-      val __obj = js.Dynamic.literal(baseDir = baseDir.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.fixturifyProject.anon.BaseDir]
-    }
-    
-    inline def Project(project: typings.fixturifyProject.mod.Project): typings.fixturifyProject.anon.Project = {
-      val __obj = js.Dynamic.literal(project = project.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.fixturifyProject.anon.Project]
-    }
-    
-    inline def RequestedRange(target: String): typings.fixturifyProject.anon.RequestedRange = {
-      val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.fixturifyProject.anon.RequestedRange]
-    }
-  }
-  
-  type PackageJson = typings.typeFest.sourcePackageJsonMod.PackageJson & (Record[String, Any])
-  
+  @JSImport("fixturify-project", "Project")
   @js.native
-  trait Project extends StObject {
+  open class Project () extends StObject {
+    def this(args: ProjectArgs) = this()
+    def this(name: String) = this()
+    def this(args: Unit, projectCallback: ProjectCallback) = this()
+    def this(args: ProjectArgs, projectCallback: ProjectCallback) = this()
+    def this(name: String, args: OmitProjectArgsname) = this()
+    def this(name: String, version: String) = this()
+    def this(name: Unit, args: OmitProjectArgsname) = this()
+    def this(name: Unit, version: String) = this()
+    def this(name: String, args: OmitProjectArgsname, projectCallback: ProjectCallback) = this()
+    def this(name: String, version: String, args: OmitProjectArgsnameversio) = this()
+    def this(name: String, version: String, projectCallback: ProjectCallback) = this()
+    def this(name: String, version: Unit, args: OmitProjectArgsnameversio) = this()
+    def this(name: String, version: Unit, projectCallback: ProjectCallback) = this()
+    def this(name: Unit, args: OmitProjectArgsname, projectCallback: ProjectCallback) = this()
+    def this(name: Unit, version: String, args: OmitProjectArgsnameversio) = this()
+    def this(name: Unit, version: String, projectCallback: ProjectCallback) = this()
+    def this(name: Unit, version: Unit, args: OmitProjectArgsnameversio) = this()
+    def this(name: Unit, version: Unit, projectCallback: ProjectCallback) = this()
+    def this(name: String, version: String, args: Unit, projectCallback: ProjectCallback) = this()
+    def this(name: String, version: String, args: OmitProjectArgsnameversio, projectCallback: ProjectCallback) = this()
+    def this(name: String, version: Unit, args: Unit, projectCallback: ProjectCallback) = this()
+    def this(name: String, version: Unit, args: OmitProjectArgsnameversio, projectCallback: ProjectCallback) = this()
+    def this(name: Unit, version: String, args: Unit, projectCallback: ProjectCallback) = this()
+    def this(name: Unit, version: String, args: OmitProjectArgsnameversio, projectCallback: ProjectCallback) = this()
+    def this(name: Unit, version: Unit, args: Unit, projectCallback: ProjectCallback) = this()
+    def this(name: Unit, version: Unit, args: OmitProjectArgsnameversio, projectCallback: ProjectCallback) = this()
     
     /* private */ var _baseDir: Any = js.native
     
@@ -270,6 +271,51 @@ object mod {
       */
     def writeSync(): Unit = js.native
   }
+  object Project {
+    
+    @JSImport("fixturify-project", "Project")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Reads an existing project from the specified root.
+      *
+      * @param root - The base directory to read the project from.
+      * @param opts - An options object.
+      * @param opts.linkDeps - Include linking dependencies from the Project's node_modules.
+      * @param opts.linkDevDeps - Include linking devDependencies from the Project's node_modules.
+      * @returns - The deserialized Project.
+      */
+    /* static member */
+    inline def fromDir(root: String): Project = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDir")(root.asInstanceOf[js.Any]).asInstanceOf[Project]
+    inline def fromDir(root: String, opts: ReadDirOpts): Project = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDir")(root.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Project]
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.fixturifyProject.anon.BaseDir
+    - typings.fixturifyProject.anon.RequestedRange
+    - typings.fixturifyProject.anon.Project
+  */
+  trait LinkParams extends StObject
+  object LinkParams {
+    
+    inline def BaseDir(baseDir: String): typings.fixturifyProject.anon.BaseDir = {
+      val __obj = js.Dynamic.literal(baseDir = baseDir.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.fixturifyProject.anon.BaseDir]
+    }
+    
+    inline def Project(project: typings.fixturifyProject.mod.Project): typings.fixturifyProject.anon.Project = {
+      val __obj = js.Dynamic.literal(project = project.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.fixturifyProject.anon.Project]
+    }
+    
+    inline def RequestedRange(target: String): typings.fixturifyProject.anon.RequestedRange = {
+      val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.fixturifyProject.anon.RequestedRange]
+    }
+  }
+  
+  type PackageJson = typings.typeFest.sourcePackageJsonMod.PackageJson & (Record[String, Any])
   
   trait ProjectArgs extends StObject {
     

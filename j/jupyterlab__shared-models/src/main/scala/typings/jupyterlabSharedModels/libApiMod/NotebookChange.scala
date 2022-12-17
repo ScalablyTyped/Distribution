@@ -2,7 +2,7 @@ package typings.jupyterlabSharedModels.libApiMod
 
 import typings.jupyterlabSharedModels.anon.Delete
 import typings.jupyterlabSharedModels.anon.Name
-import typings.jupyterlabSharedModels.anon.NewValueOldValue
+import typings.jupyterlabSharedModels.anon.NewValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ trait NotebookChange extends StObject {
   
   var contextChange: js.UndefOr[MapChange] = js.undefined
   
-  var metadataChange: js.UndefOr[NewValueOldValue] = js.undefined
+  var metadataChange: js.UndefOr[NewValue] = js.undefined
   
   var stateChange: js.UndefOr[js.Array[Name]] = js.undefined
 }
@@ -36,7 +36,7 @@ object NotebookChange {
     
     inline def setContextChangeUndefined: Self = StObject.set(x, "contextChange", js.undefined)
     
-    inline def setMetadataChange(value: NewValueOldValue): Self = StObject.set(x, "metadataChange", value.asInstanceOf[js.Any])
+    inline def setMetadataChange(value: NewValue): Self = StObject.set(x, "metadataChange", value.asInstanceOf[js.Any])
     
     inline def setMetadataChangeUndefined: Self = StObject.set(x, "metadataChange", js.undefined)
     

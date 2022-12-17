@@ -1,8 +1,5 @@
 package typings.reactMdForm.anon
 
-import typings.reactMdForm.reactMdFormStrings.touchend
-import typings.reactMdForm.reactMdFormStrings.touchmove
-import typings.reactMdForm.reactMdFormStrings.touchstart
 import typings.std.DOMHighResTimeStamp
 import typings.std.EventTarget
 import typings.std.TouchList
@@ -147,7 +144,7 @@ trait TouchEventtypetouchstartt extends StObject {
   
   /** Returns the type of event, e.g. "click", "hashchange", or "submit". */
   /* standard dom */
-  val `type`: String & (touchstart | touchmove | touchend) = js.native
+  val `type`: String = js.native
   
   /* standard dom */
   val view: Window | Null = js.native

@@ -58,7 +58,7 @@ trait Actionsbillingusage extends StObject {
     * @description A software package
     */
   @JSName("package")
-  var _package: Owner
+  var _package: Repository
   
   var `actions-billing-usage`: Includedminutes
   
@@ -88,19 +88,19 @@ trait Actionsbillingusage extends StObject {
   /** @description Whether GitHub Actions is enabled on the repository. */
   var `actions-enabled`: Boolean
   
-  var `actions-enterprise-permissions`: Allowedactions
+  var `actions-enterprise-permissions`: Enabledorganizations
   
   var `actions-get-default-workflow-permissions`: Canapprovepullrequestreviews
   
-  var `actions-organization-permissions`: Enabledrepositories
+  var `actions-organization-permissions`: Selectedactionsurl
   
   /**
     * ActionsPublicKey
     * @description The public key used for setting Actions Secrets.
     */
-  var `actions-public-key`: Keyid
+  var `actions-public-key`: CreatedatId
   
-  var `actions-repository-permissions`: Enabled
+  var `actions-repository-permissions`: AllowedactionsEnabled
   
   /**
     * Actions Secret
@@ -124,7 +124,7 @@ trait Actionsbillingusage extends StObject {
     */
   var `added-to-project-issue-event`: Projectcard
   
-  var `advanced-security-active-committers`: Repositories
+  var `advanced-security-active-committers`: Totaladvancedsecuritycommitters
   
   var `advanced-security-active-committers-repository`: Advancedsecuritycommitters
   
@@ -185,7 +185,7 @@ trait Actionsbillingusage extends StObject {
     *   "single_file": "read"
     * }
     */
-  var `app-permissions`: Actions
+  var `app-permissions`: Administration
   
   /**
     * Artifact
@@ -203,7 +203,7 @@ trait Actionsbillingusage extends StObject {
     * Authentication Token
     * @description Authentication Token
     */
-  var `authentication-token`: Permissions
+  var `authentication-token`: Singlefile
   
   /**
     * author_association
@@ -223,13 +223,13 @@ trait Actionsbillingusage extends StObject {
     * Auto merge
     * @description The status of auto merging a pull request.
     */
-  var `auto-merge`: Commitmessage | Null
+  var `auto-merge`: Committitle | Null
   
   /**
     * Autolink reference
     * @description An autolink reference.
     */
-  var autolink: Isalphanumeric
+  var autolink: Keyprefix
   
   /**
     * Base Gist
@@ -241,7 +241,7 @@ trait Actionsbillingusage extends StObject {
     * Basic Error
     * @description Basic Error
     */
-  var `basic-error`: Documentationurl
+  var `basic-error`: DocumentationurlMessage
   
   /**
     * Blob
@@ -253,7 +253,7 @@ trait Actionsbillingusage extends StObject {
     * Branch Protection
     * @description Branch Protection
     */
-  var `branch-protection`: Allowdeletions
+  var `branch-protection`: Allowforcepushes
   
   /**
     * Branch Restriction Policy
@@ -265,7 +265,7 @@ trait Actionsbillingusage extends StObject {
     * Branch Short
     * @description Branch Short
     */
-  var `branch-short`: Protected
+  var `branch-short`: CommitName
   
   /**
     * Branch With Protection
@@ -277,7 +277,7 @@ trait Actionsbillingusage extends StObject {
     * Check Annotation
     * @description Check Annotation
     */
-  var `check-annotation`: Annotationlevel
+  var `check-annotation`: Blobhref
   
   /**
     * CheckRun
@@ -289,7 +289,7 @@ trait Actionsbillingusage extends StObject {
     * CheckSuite
     * @description A suite of checks performed on the code of a given code change
     */
-  var `check-suite`: After
+  var `check-suite`: Checkrunsurl
   
   /**
     * Check Suite Preference
@@ -313,7 +313,7 @@ trait Actionsbillingusage extends StObject {
     * Code Of Conduct
     * @description Code Of Conduct
     */
-  var `code-of-conduct`: Body
+  var `code-of-conduct`: BodyHtmlurl
   
   /**
     * Code Of Conduct Simple
@@ -321,7 +321,7 @@ trait Actionsbillingusage extends StObject {
     */
   var `code-of-conduct-simple`: HtmlurlKey
   
-  var `code-scanning-alert`: Dismissedcomment
+  var `code-scanning-alert`: Fixedat
   
   /**
     * @description A classification of the file. For example to identify it as generated.
@@ -376,7 +376,7 @@ trait Actionsbillingusage extends StObject {
     */
   var `code-scanning-alert-state`: open | closed | dismissed | fixed
   
-  var `code-scanning-analysis`: Commitsha
+  var `code-scanning-analysis`: Deletable
   
   /** @description Identifies the configuration under which the analysis was executed. For example, in GitHub Actions this includes the workflow filename and job name. */
   var `code-scanning-analysis-analysis-key`: String
@@ -432,7 +432,7 @@ trait Actionsbillingusage extends StObject {
     * CodeQL Database
     * @description A CodeQL database.
     */
-  var `code-scanning-codeql-database`: Language
+  var `code-scanning-codeql-database`: Size
   
   var `code-scanning-organization-alert-items`: Dismissedat
   
@@ -462,7 +462,7 @@ trait Actionsbillingusage extends StObject {
     * Codespace
     * @description A codespace.
     */
-  var codespace: Billableowner
+  var codespace: Environmentid
   
   /**
     * Fetches information about an export of a codespace.
@@ -486,13 +486,13 @@ trait Actionsbillingusage extends StObject {
     * CodespacesPublicKey
     * @description The public key used for setting Codespaces secrets.
     */
-  var `codespaces-public-key`: Keyid
+  var `codespaces-public-key`: CreatedatId
   
   /**
     * Codespaces Secret
     * @description Secrets for a GitHub Codespace.
     */
-  var `codespaces-secret`: Visibility
+  var `codespaces-secret`: NameSelectedrepositoriesurl
   
   /**
     * CodespacesUserPublicKey
@@ -518,7 +518,7 @@ trait Actionsbillingusage extends StObject {
     * Commit
     * @description Commit
     */
-  var commit: Parents
+  var commit: Stats
   
   /**
     * Commit Activity
@@ -530,7 +530,7 @@ trait Actionsbillingusage extends StObject {
     * Commit Comment
     * @description Commit Comment
     */
-  var `commit-comment`: Commitid
+  var `commit-comment`: Reactions
   
   /**
     * Commit Comparison
@@ -542,7 +542,7 @@ trait Actionsbillingusage extends StObject {
     * Commit Search Result Item
     * @description Commit Search Result Item
     */
-  var `commit-search-result-item`: Repository
+  var `commit-search-result-item`: Textmatches
   
   /**
     * Community Profile
@@ -560,13 +560,13 @@ trait Actionsbillingusage extends StObject {
     * Content File
     * @description Content File
     */
-  var `content-file`: Size
+  var `content-file`: Submodulegiturl
   
   /**
     * Submodule Content
     * @description An object describing a submodule
     */
-  var `content-submodule`: Submodulegiturl
+  var `content-submodule`: DownloadurlGiturl
   
   /**
     * Symlink Content
@@ -584,7 +584,7 @@ trait Actionsbillingusage extends StObject {
     * Content Tree
     * @description Content Tree
     */
-  var `content-tree`: Encoding
+  var `content-tree`: Entries
   
   /**
     * Contributor
@@ -602,13 +602,13 @@ trait Actionsbillingusage extends StObject {
     * Converted Note to Issue Issue Event
     * @description Converted Note to Issue Issue Event
     */
-  var `converted-note-to-issue-issue-event`: ActorCommitid
+  var `converted-note-to-issue-issue-event`: CreatedatEvent
   
   /**
     * Demilestoned Issue Event
     * @description Demilestoned Issue Event
     */
-  var `demilestoned-issue-event`: Milestone
+  var `demilestoned-issue-event`: CommitidCommiturl
   
   var `dependabot-alert`: Dependency
   
@@ -636,7 +636,7 @@ trait Actionsbillingusage extends StObject {
   var `dependabot-alert-fixed-at`: String | Null
   
   /** @description The details of the vulnerable package. */
-  var `dependabot-alert-package`: Ecosystem
+  var `dependabot-alert-package`: EcosystemName
   
   /**
     * @description The scope of the vulnerable dependency.
@@ -692,7 +692,7 @@ trait Actionsbillingusage extends StObject {
     * Deployment
     * @description A request for a specific ref(branch,sha,tag) to be deployed
     */
-  var deployment: Environment
+  var deployment: Originalenvironment
   
   /**
     * Deployment branch policy
@@ -717,7 +717,7 @@ trait Actionsbillingusage extends StObject {
     * Deployment
     * @description A deployment created as the result of an Actions check run from a workflow that references an environment
     */
-  var `deployment-simple`: Originalenvironment
+  var `deployment-simple`: Performedviagithubapp
   
   /**
     * Deployment Status
@@ -759,25 +759,25 @@ trait Actionsbillingusage extends StObject {
     * Enterprise
     * @description An enterprise account
     */
-  var enterprise: Createdat
+  var enterprise: Htmlurl
   
   /**
     * Environment
     * @description Details of a deployment environment
     */
-  var environment: Deploymentbranchpolicy
+  var environment: Protectionrules
   
   /**
     * Environment Approval
     * @description An entry in the reviews log for environment deployments
     */
-  var `environment-approvals`: Environments
+  var `environment-approvals`: CommentEnvironments
   
   /**
     * Event
     * @description Event
     */
-  var event: Actor
+  var event: Public
   
   /**
     * Feed
@@ -795,19 +795,19 @@ trait Actionsbillingusage extends StObject {
     * Full Repository
     * @description Full Repository
     */
-  var `full-repository`: Allowsquashmerge
+  var `full-repository`: Anonymousaccessenabled
   
   /**
     * Gist Comment
     * @description A comment made to a gist.
     */
-  var `gist-comment`: Nodeid
+  var `gist-comment`: User
   
   /**
     * Gist Commit
     * @description Gist Commit
     */
-  var `gist-commit`: User
+  var `gist-commit`: ChangestatusCommittedat
   
   /**
     * Gist History
@@ -819,7 +819,7 @@ trait Actionsbillingusage extends StObject {
     * Gist Simple
     * @description Gist Simple
     */
-  var `gist-simple`: Files
+  var `gist-simple`: Forkof
   
   /**
     * Git Commit
@@ -831,7 +831,7 @@ trait Actionsbillingusage extends StObject {
     * Git Reference
     * @description Git references within a repository
     */
-  var `git-ref`: Object
+  var `git-ref`: NodeidObject
   
   /**
     * Git Tag
@@ -849,7 +849,7 @@ trait Actionsbillingusage extends StObject {
     * Gitignore Template
     * @description Gitignore Template
     */
-  var `gitignore-template`: Source
+  var `gitignore-template`: NameSource
   
   /**
     * GPG Key
@@ -861,7 +861,7 @@ trait Actionsbillingusage extends StObject {
     * Webhook
     * @description Webhooks for repositories.
     */
-  var hook: Config
+  var hook: Lastresponse
   
   /**
     * Webhook delivery
@@ -876,13 +876,13 @@ trait Actionsbillingusage extends StObject {
   var `hook-delivery-item`: Action
   
   /** Hook Response */
-  var `hook-response`: CodeMessage
+  var `hook-response`: MessageStatus
   
   /**
     * Hovercard
     * @description Hovercard
     */
-  var hovercard: ContextsArray
+  var hovercard: `393`
   
   /**
     * Import
@@ -906,7 +906,7 @@ trait Actionsbillingusage extends StObject {
     * GitHub app
     * @description GitHub apps are a new way to extend GitHub. They can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. GitHub apps are first class actors within GitHub.
     */
-  var integration: Clientid
+  var integration: Clientsecret
   
   /**
     * @description The duration of the interaction restriction. Default: `one_day`.
@@ -959,7 +959,7 @@ trait Actionsbillingusage extends StObject {
     * Issue Event for Issue
     * @description Issue Event for Issue
     */
-  var `issue-event-for-issue`: Partial[CommitidCommiturl] & Partial[AssignerCommitid] & Partial[CommiturlCreatedat] & Partial[CreatedatEvent] & Partial[EventId_] & Partial[Requestedteam] & Partial[CreatedatDismissedreview] & Partial[IdLockreason] & Partial[IdNodeid] & Partial[NodeidPerformedviagithubapp]
+  var `issue-event-for-issue`: Partial[EventId_] & Partial[AssignerCommitid] & Partial[IdNodeid] & Partial[IdMilestone] & Partial[NodeidPerformedviagithubapp] & Partial[Requestedteam] & Partial[CreatedatDismissedreview] & Partial[IdLockreason] & Partial[PerformedviagithubappProjectcard] & Partial[ProjectcardUrl]
   
   /**
     * Issue Event Label
@@ -971,7 +971,7 @@ trait Actionsbillingusage extends StObject {
     * Issue Event Milestone
     * @description Issue Event Milestone
     */
-  var `issue-event-milestone`: Title
+  var `issue-event-milestone`: TitleString
   
   /**
     * Issue Event Project Card
@@ -989,7 +989,7 @@ trait Actionsbillingusage extends StObject {
     * Issue Search Result Item
     * @description Issue Search Result Item
     */
-  var `issue-search-result-item`: Draft
+  var `issue-search-result-item`: Locked
   
   /**
     * Job
@@ -1001,31 +1001,31 @@ trait Actionsbillingusage extends StObject {
     * Key
     * @description Key
     */
-  var key: Readonly
+  var key: IdKey
   
   /**
     * Key Simple
     * @description Key Simple
     */
-  var `key-simple`: IdKey
+  var `key-simple`: KeyString
   
   /**
     * Label
     * @description Color-coded labels help you categorize and filter your issues (just like labels in Gmail).
     */
-  var label: DefaultDescription
+  var label: DescriptionId
   
   /**
     * Label Search Result Item
     * @description Label Search Result Item
     */
-  var `label-search-result-item`: Textmatches
+  var `label-search-result-item`: NodeidScore
   
   /**
     * Labeled Issue Event
     * @description Labeled Issue Event
     */
-  var `labeled-issue-event`: Event
+  var `labeled-issue-event`: ActorCommitid
   
   /**
     * Language
@@ -1043,13 +1043,13 @@ trait Actionsbillingusage extends StObject {
     * License Content
     * @description License Content
     */
-  var `license-content`: License
+  var `license-content`: ContentDownloadurl
   
   /**
     * License Simple
     * @description License Simple
     */
-  var `license-simple`: Htmlurl
+  var `license-simple`: Nodeid
   
   /**
     * Link
@@ -1067,12 +1067,12 @@ trait Actionsbillingusage extends StObject {
     * Locked Issue Event
     * @description Locked Issue Event
     */
-  var `locked-issue-event`: Lockreason
+  var `locked-issue-event`: CommiturlCreatedat
   
   var manifest: File
   
   /** Marketplace Account */
-  var `marketplace-account`: Login
+  var `marketplace-account`: Organizationbillingemail
   
   /**
     * Marketplace Listing Plan
@@ -1084,7 +1084,7 @@ trait Actionsbillingusage extends StObject {
     * Marketplace Purchase
     * @description Marketplace Purchase
     */
-  var `marketplace-purchase`: Email
+  var `marketplace-purchase`: Login
   
   /**
     * Merged upstream
@@ -1102,7 +1102,7 @@ trait Actionsbillingusage extends StObject {
     * Migration
     * @description A migration.
     */
-  var migration: Exclude
+  var migration: Excludemetadata
   
   /**
     * Milestone
@@ -1114,13 +1114,13 @@ trait Actionsbillingusage extends StObject {
     * Milestoned Issue Event
     * @description Milestoned Issue Event
     */
-  var `milestoned-issue-event`: Milestone
+  var `milestoned-issue-event`: CommitidCommiturl
   
   /**
     * Minimal Repository
     * @description Minimal Repository
     */
-  var `minimal-repository`: Archived
+  var `minimal-repository`: Blobsurl
   
   /**
     * Moved Column in Project Issue Event
@@ -1159,13 +1159,13 @@ trait Actionsbillingusage extends StObject {
     * Git User
     * @description Metaproperties for Git author/committer information.
     */
-  var `nullable-git-user`: Date | Null
+  var `nullable-git-user`: DateEmail | Null
   
   /**
     * GitHub app
     * @description GitHub apps are a new way to extend GitHub. They can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. GitHub apps are first class actors within GitHub.
     */
-  var `nullable-integration`: Clientid | Null
+  var `nullable-integration`: Clientsecret | Null
   
   /**
     * Issue
@@ -1177,7 +1177,7 @@ trait Actionsbillingusage extends StObject {
     * License Simple
     * @description License Simple
     */
-  var `nullable-license-simple`: Htmlurl | Null
+  var `nullable-license-simple`: Nodeid | Null
   
   /**
     * Milestone
@@ -1189,13 +1189,13 @@ trait Actionsbillingusage extends StObject {
     * Minimal Repository
     * @description Minimal Repository
     */
-  var `nullable-minimal-repository`: Archived | Null
+  var `nullable-minimal-repository`: Blobsurl | Null
   
   /**
     * Repository
     * @description A git repository
     */
-  var `nullable-repository`: Allowforking | Null
+  var `nullable-repository`: Allowsquashmerge | Null
   
   /** Scoped Installation */
   var `nullable-scoped-installation`: Account | Null
@@ -1204,7 +1204,7 @@ trait Actionsbillingusage extends StObject {
     * Simple Commit
     * @description Simple Commit
     */
-  var `nullable-simple-commit`: Committer | Null
+  var `nullable-simple-commit`: Timestamp | Null
   
   /**
     * Simple User
@@ -1222,13 +1222,13 @@ trait Actionsbillingusage extends StObject {
     * Org Hook
     * @description Org Hook
     */
-  var `org-hook`: Active
+  var `org-hook`: Deliveriesurl
   
   /**
     * Org Membership
     * @description Org Membership
     */
-  var `org-membership`: Organization
+  var `org-membership`: Organizationurl
   
   /**
     * Actions Secret for an Organization
@@ -1240,7 +1240,7 @@ trait Actionsbillingusage extends StObject {
     * Organization Custom Repository Role
     * @description Custom repository roles created by organization administrators
     */
-  var `organization-custom-repository-role`: Baserole
+  var `organization-custom-repository-role`: Organization
   
   /**
     * Dependabot Secret for an Organization
@@ -1258,7 +1258,7 @@ trait Actionsbillingusage extends StObject {
     * Organization Full
     * @description Organization Full
     */
-  var `organization-full`: Advancedsecurityenabledfornewrepositories
+  var `organization-full`: Billingemail
   
   /**
     * Organization Invitation
@@ -1272,7 +1272,7 @@ trait Actionsbillingusage extends StObject {
     * Organization Simple
     * @description Organization Simple
     */
-  var `organization-simple`: Description
+  var `organization-simple`: Hooksurl
   
   /**
     * Package Version
@@ -1286,7 +1286,7 @@ trait Actionsbillingusage extends StObject {
     * GitHub Pages
     * @description The configuration for GitHub Pages for a repository.
     */
-  var page: Buildtype
+  var page: Cname
   
   /**
     * Page Build
@@ -1316,10 +1316,10 @@ trait Actionsbillingusage extends StObject {
   var `pages-https-certificate`: Domains
   
   /** Pages Source Hash */
-  var `pages-source-hash`: Branch
+  var `pages-source-hash`: PathString
   
   /** Participation Stats */
-  var `participation-stats`: All
+  var `participation-stats`: AllOwner
   
   /**
     * Pending Deployment
@@ -1361,7 +1361,7 @@ trait Actionsbillingusage extends StObject {
     * Project Collaborator Permission
     * @description Project Collaborator Permission
     */
-  var `project-collaborator-permission`: Permission
+  var `project-collaborator-permission`: PermissionUser
   
   /**
     * Project Column
@@ -1373,7 +1373,7 @@ trait Actionsbillingusage extends StObject {
     * Protected Branch
     * @description Branch protections protect branches
     */
-  var `protected-branch`: Blockcreations
+  var `protected-branch`: Enforceadmins
   
   /**
     * Protected Branch Admin Enforced
@@ -1385,25 +1385,25 @@ trait Actionsbillingusage extends StObject {
     * Protected Branch Pull Request Review
     * @description Protected Branch Pull Request Review
     */
-  var `protected-branch-pull-request-review`: Bypasspullrequestallowances
+  var `protected-branch-pull-request-review`: Dismissalrestrictions
   
   /**
     * Protected Branch Required Status Check
     * @description Protected Branch Required Status Check
     */
-  var `protected-branch-required-status-check`: Checks
+  var `protected-branch-required-status-check`: Contextsurl
   
   /**
     * Public User
     * @description Public User
     */
-  var `public-user`: Bio
+  var `public-user`: Blog
   
   /**
     * Pull Request
     * @description Pull requests let you tell others about changes you've pushed to a repository on GitHub. Once a pull request is sent, interested parties can review the set of changes, discuss potential modifications, and even push follow-up commits if necessary.
     */
-  var `pull-request`: Automerge
+  var `pull-request`: Changedfiles
   
   /**
     * Pull Request Merge Result
@@ -1412,13 +1412,13 @@ trait Actionsbillingusage extends StObject {
   var `pull-request-merge-result`: Merged
   
   /** Pull Request Minimal */
-  var `pull-request-minimal`: Base
+  var `pull-request-minimal`: HeadId
   
   /**
     * Pull Request Review
     * @description Pull Request Reviews are reviews on pull requests.
     */
-  var `pull-request-review`: AuthorassociationBody
+  var `pull-request-review`: BodyhtmlBodytext
   
   /**
     * Pull Request Review Comment
@@ -1430,13 +1430,13 @@ trait Actionsbillingusage extends StObject {
     * Pull Request Review Request
     * @description Pull Request Review Request
     */
-  var `pull-request-review-request`: TeamsUsers
+  var `pull-request-review-request`: UsersArray
   
   /**
     * Pull Request Simple
     * @description Pull Request Simple
     */
-  var `pull-request-simple`: Assignees
+  var `pull-request-simple`: Issueurl
   
   /** Rate Limit */
   var `rate-limit`: Remaining
@@ -1454,13 +1454,13 @@ trait Actionsbillingusage extends StObject {
   var reaction: ContentCreatedat
   
   /** Reaction Rollup */
-  var `reaction-rollup`: `1`
+  var `reaction-rollup`: Confused
   
   /**
     * Referenced workflow
     * @description A workflow referenced/reused by the initial caller workflow
     */
-  var `referenced-workflow`: Path
+  var `referenced-workflow`: PathRef
   
   /**
     * Referrer Traffic
@@ -1484,7 +1484,7 @@ trait Actionsbillingusage extends StObject {
     * Generated Release Notes Content
     * @description Generated name and body describing a release
     */
-  var `release-notes-content`: BodyName
+  var `release-notes-content`: BodyString
   
   /**
     * Removed from Project Issue Event
@@ -1508,13 +1508,13 @@ trait Actionsbillingusage extends StObject {
     * Repo Search Result Item
     * @description Repo Search Result Item
     */
-  var `repo-search-result-item`: Collaboratorsurl
+  var `repo-search-result-item`: Contentsurl
   
   /**
     * Repository
     * @description A git repository
     */
-  var repository: Allowforking
+  var repository: Allowsquashmerge
   
   /**
     * Repository Collaborator Permission
@@ -1532,7 +1532,7 @@ trait Actionsbillingusage extends StObject {
     * Repository Invitation
     * @description Repository invitations let you manage who you collaborate with.
     */
-  var `repository-subscription`: Repositoryurl
+  var `repository-subscription`: CreatedatIgnored
   
   /**
     * Legacy Review Comment
@@ -1572,15 +1572,15 @@ trait Actionsbillingusage extends StObject {
     */
   var `runner-application`: Architecture
   
-  var `runner-groups-enterprise`: Allowspublicrepositories
+  var `runner-groups-enterprise`: Default
   
-  var `runner-groups-org`: Default
+  var `runner-groups-org`: Inherited
   
   /**
     * Self hosted runner label
     * @description A label for a self hosted runner
     */
-  var `runner-label`: Id
+  var `runner-label`: IdName
   
   /**
     * Scim Error
@@ -1613,7 +1613,7 @@ trait Actionsbillingusage extends StObject {
   /** @description Represents a 'commit' secret scanning location type. This location type shows that a secret was detected inside a commit to a repository. */
   var `secret-scanning-location-commit`: Blobsha
   
-  var `security-and-analysis`: Advancedsecurity | Null
+  var `security-and-analysis`: Secretscanning | Null
   
   var `selected-actions`: Githubownedallowed
   
@@ -1642,10 +1642,10 @@ trait Actionsbillingusage extends StObject {
     * Simple Commit
     * @description Simple Commit
     */
-  var `simple-commit`: Committer
+  var `simple-commit`: Timestamp
   
   /** Simple Commit Status */
-  var `simple-commit-status`: Context
+  var `simple-commit-status`: Required
   
   /**
     * Simple Installation
@@ -1675,7 +1675,7 @@ trait Actionsbillingusage extends StObject {
     * SSH Signing Key
     * @description A public SSH key used to sign Git commits
     */
-  var `ssh-signing-key`: CreatedatId
+  var `ssh-signing-key`: CreatedatIdKey
   
   /**
     * Stargazer
@@ -1699,13 +1699,13 @@ trait Actionsbillingusage extends StObject {
     * Status
     * @description The status of a commit.
     */
-  var status: State
+  var status: AvatarurlContext
   
   /**
     * Status Check Policy
     * @description Status Check Policy
     */
-  var `status-check-policy`: Contexts
+  var `status-check-policy`: Strict
   
   /**
     * Tag
@@ -1717,7 +1717,7 @@ trait Actionsbillingusage extends StObject {
     * Tag protection
     * @description Tag protection
     */
-  var `tag-protection`: Pattern
+  var `tag-protection`: CreatedatEnabled
   
   /**
     * Team
@@ -1729,13 +1729,13 @@ trait Actionsbillingusage extends StObject {
     * Team Discussion
     * @description A team discussion is a persistent record of a free-form conversation within a team.
     */
-  var `team-discussion`: Author
+  var `team-discussion`: Bodyversion
   
   /**
     * Team Discussion Comment
     * @description A reply to a discussion within a team.
     */
-  var `team-discussion-comment`: Bodyversion
+  var `team-discussion-comment`: Discussionurl
   
   /**
     * Full Team
@@ -1747,13 +1747,13 @@ trait Actionsbillingusage extends StObject {
     * Team Membership
     * @description Team Membership
     */
-  var `team-membership`: Role
+  var `team-membership`: RoleState
   
   /**
     * Team Organization
     * @description Team Organization
     */
-  var `team-organization`: Billingemail
+  var `team-organization`: Company
   
   /**
     * Team Project
@@ -1765,7 +1765,7 @@ trait Actionsbillingusage extends StObject {
     * Team Repository
     * @description A team's access to a repository.
     */
-  var `team-repository`: Allowrebasemerge
+  var `team-repository`: Cloneurl
   
   /**
     * Team Simple
@@ -1777,13 +1777,13 @@ trait Actionsbillingusage extends StObject {
     * Thread
     * @description Thread
     */
-  var thread: Lastreadat
+  var thread: Reason
   
   /**
     * Thread Subscription
     * @description Thread Subscription
     */
-  var `thread-subscription`: Ignored
+  var `thread-subscription`: Repositoryurl
   
   /**
     * Timeline Assigned Issue Event
@@ -1795,7 +1795,7 @@ trait Actionsbillingusage extends StObject {
     * Timeline Comment Event
     * @description Timeline Comment Event
     */
-  var `timeline-comment-event`: Bodytext
+  var `timeline-comment-event`: ActorAuthorassociation
   
   /**
     * Timeline Commit Commented Event
@@ -1819,7 +1819,7 @@ trait Actionsbillingusage extends StObject {
     * Timeline Event
     * @description Timeline Event
     */
-  var `timeline-issue-events`: Partial[CommitidCommiturl] & Partial[CreatedatEvent] & Partial[EventId_] & Partial[Requestedteam] & Partial[CreatedatDismissedreview] & Partial[IdLockreason] & Partial[IdNodeid] & Partial[NodeidPerformedviagithubapp] & Partial[Issueurl] & Partial[EventSource] & Partial[CommitterEvent] & Partial[Submittedat] & Partial[EventNodeid] & Partial[CommitidEvent] & Partial[PerformedviagithubappUrl] & Partial[PerformedviagithubappStatereason]
+  var `timeline-issue-events`: Partial[EventId_] & Partial[IdMilestone] & Partial[NodeidPerformedviagithubapp] & Partial[Requestedteam] & Partial[CreatedatDismissedreview] & Partial[IdLockreason] & Partial[PerformedviagithubappProjectcard] & Partial[ProjectcardUrl] & Partial[BodyBodyhtml] & Partial[EventSource] & Partial[CommitterEvent] & Partial[Submittedat] & Partial[EventNodeid] & Partial[CommitidEvent] & Partial[PerformedviagithubappUrl] & Partial[PerformedviagithubappStatereason]
   
   /**
     * Timeline Line Commented Event
@@ -1864,7 +1864,7 @@ trait Actionsbillingusage extends StObject {
     * Unlabeled Issue Event
     * @description Unlabeled Issue Event
     */
-  var `unlabeled-issue-event`: Event
+  var `unlabeled-issue-event`: ActorCommitid
   
   /**
     * User Marketplace Purchase
@@ -1876,22 +1876,22 @@ trait Actionsbillingusage extends StObject {
     * User Search Result Item
     * @description User Search Result Item
     */
-  var `user-search-result-item`: Blog
+  var `user-search-result-item`: Followers
   
   /**
     * Validation Error
     * @description Validation Error
     */
-  var `validation-error`: Message
+  var `validation-error`: DocumentationurlErrorsMessage
   
   /**
     * Validation Error Simple
     * @description Validation Error Simple
     */
-  var `validation-error-simple`: Errors
+  var `validation-error-simple`: ErrorsMessage
   
   /** Verification */
-  var verification: Reason
+  var verification: Signature
   
   /**
     * View Traffic
@@ -1909,7 +1909,7 @@ trait Actionsbillingusage extends StObject {
     * Webhook Configuration
     * @description Configuration object of the webhook
     */
-  var `webhook-config`: Contenttype
+  var `webhook-config`: ContenttypeInsecuressl
   
   /**
     * @description The media type used to serialize the payloads. Supported values include `json` and `form`. The default is `form`.
@@ -1961,7 +1961,7 @@ trait Actionsbillingusage extends StObject {
 object Actionsbillingusage {
   
   inline def apply(
-    _package: Owner,
+    _package: Repository,
     `actions-billing-usage`: Includedminutes,
     `actions-cache-list`: Actionscaches,
     `actions-cache-usage-by-repository`: Activecachescount,
@@ -1969,17 +1969,17 @@ object Actionsbillingusage {
     `actions-can-approve-pull-request-reviews`: Boolean,
     `actions-default-workflow-permissions`: read | write,
     `actions-enabled`: Boolean,
-    `actions-enterprise-permissions`: Allowedactions,
+    `actions-enterprise-permissions`: Enabledorganizations,
     `actions-get-default-workflow-permissions`: Canapprovepullrequestreviews,
-    `actions-organization-permissions`: Enabledrepositories,
-    `actions-public-key`: Keyid,
-    `actions-repository-permissions`: Enabled,
+    `actions-organization-permissions`: Selectedactionsurl,
+    `actions-public-key`: CreatedatId,
+    `actions-repository-permissions`: AllowedactionsEnabled,
     `actions-secret`: CreatedatName,
     `actions-set-default-workflow-permissions`: Defaultworkflowpermissions,
     `actions-workflow-access-to-repository`: Accesslevel,
     actor: Displaylogin,
     `added-to-project-issue-event`: Projectcard,
-    `advanced-security-active-committers`: Repositories,
+    `advanced-security-active-committers`: Totaladvancedsecuritycommitters,
     `advanced-security-active-committers-repository`: Advancedsecuritycommitters,
     `advanced-security-active-committers-user`: Lastpusheddate,
     `alert-created-at`: String,
@@ -1990,29 +1990,29 @@ object Actionsbillingusage {
     `alert-url`: String,
     `allowed-actions`: all | local_only | selected,
     `api-overview`: Api,
-    `app-permissions`: Actions,
+    `app-permissions`: Administration,
     artifact: Archivedownloadurl,
     `assigned-issue-event`: ActorAssignee,
-    `authentication-token`: Permissions,
+    `authentication-token`: Singlefile,
     `author-association`: COLLABORATOR | CONTRIBUTOR | FIRST_TIMER | FIRST_TIME_CONTRIBUTOR | MANNEQUIN | MEMBER | NONE | OWNER,
     authorization: App,
-    autolink: Isalphanumeric,
+    autolink: Keyprefix,
     `base-gist`: Commentsurl,
-    `basic-error`: Documentationurl,
+    `basic-error`: DocumentationurlMessage,
     blob: Highlightedcontent,
-    `branch-protection`: Allowdeletions,
+    `branch-protection`: Allowforcepushes,
     `branch-restriction-policy`: Appsurl,
-    `branch-short`: Protected,
+    `branch-short`: CommitName,
     `branch-with-protection`: Links,
-    `check-annotation`: Annotationlevel,
+    `check-annotation`: Blobhref,
     `check-run`: Checksuite,
-    `check-suite`: After,
+    `check-suite`: Checkrunsurl,
     `check-suite-preference`: Preferences,
     `clone-traffic`: Clones,
     `code-frequency-stat`: js.Array[Double],
-    `code-of-conduct`: Body,
+    `code-of-conduct`: BodyHtmlurl,
     `code-of-conduct-simple`: HtmlurlKey,
-    `code-scanning-alert`: Dismissedcomment,
+    `code-scanning-alert`: Fixedat,
     `code-scanning-alert-environment`: String,
     `code-scanning-alert-instance`: Analysiskey,
     `code-scanning-alert-items`: Dismissedby,
@@ -2021,7 +2021,7 @@ object Actionsbillingusage {
     `code-scanning-alert-rule-summary`: Severity,
     `code-scanning-alert-set-state`: open | dismissed,
     `code-scanning-alert-state`: open | closed | dismissed | fixed,
-    `code-scanning-analysis`: Commitsha,
+    `code-scanning-analysis`: Deletable,
     `code-scanning-analysis-analysis-key`: String,
     `code-scanning-analysis-category`: String,
     `code-scanning-analysis-commit-sha`: String,
@@ -2033,42 +2033,42 @@ object Actionsbillingusage {
     `code-scanning-analysis-tool`: Guid,
     `code-scanning-analysis-tool-name`: String,
     `code-scanning-analysis-url`: String,
-    `code-scanning-codeql-database`: Language,
+    `code-scanning-codeql-database`: Size,
     `code-scanning-organization-alert-items`: Dismissedat,
     `code-scanning-ref`: String,
     `code-scanning-sarifs-receipt`: IdUrl,
     `code-scanning-sarifs-status`: Analysesurl,
     `code-search-result-item`: Filesize,
     `codeowners-errors`: ErrorsArray,
-    codespace: Billableowner,
+    codespace: Environmentid,
     `codespace-export-details`: Exporturl,
     `codespace-machine`: Cpus,
     `codespaces-org-secret`: Selectedrepositoriesurl,
-    `codespaces-public-key`: Keyid,
-    `codespaces-secret`: Visibility,
+    `codespaces-public-key`: CreatedatId,
+    `codespaces-secret`: NameSelectedrepositoriesurl,
     `codespaces-user-public-key`: KeyKeyid,
     collaborator: Followingurl,
     `combined-billing-usage`: Daysleftinbillingcycle,
     `combined-commit-status`: Commiturl,
-    commit: Parents,
+    commit: Stats,
     `commit-activity`: Days,
-    `commit-comment`: Commitid,
+    `commit-comment`: Reactions,
     `commit-comparison`: Aheadby,
-    `commit-search-result-item`: Repository,
+    `commit-search-result-item`: Textmatches,
     `community-profile`: Contentreportsenabled,
     `content-directory`: js.Array[Giturl],
-    `content-file`: Size,
-    `content-submodule`: Submodulegiturl,
+    `content-file`: Submodulegiturl,
+    `content-submodule`: DownloadurlGiturl,
     `content-symlink`: Target,
     `content-traffic`: Uniques,
-    `content-tree`: Encoding,
+    `content-tree`: Entries,
     contributor: Contributions,
     `contributor-activity`: Total,
-    `converted-note-to-issue-issue-event`: ActorCommitid,
-    `demilestoned-issue-event`: Milestone,
+    `converted-note-to-issue-issue-event`: CreatedatEvent,
+    `demilestoned-issue-event`: CommitidCommiturl,
     `dependabot-alert`: Dependency,
     `dependabot-alert-dependency`: Manifestpath,
-    `dependabot-alert-package`: Ecosystem,
+    `dependabot-alert-package`: EcosystemName,
     `dependabot-alert-security-advisory`: Cveid,
     `dependabot-alert-security-vulnerability`: Package,
     `dependabot-alert-set-state`: dismissed | open,
@@ -2078,43 +2078,43 @@ object Actionsbillingusage {
     dependency: Dependencies,
     `dependency-graph-diff`: js.Array[Changetype],
     `deploy-key`: Addedby,
-    deployment: Environment,
+    deployment: Originalenvironment,
     `deployment-branch-policy`: NameNodeid,
     `deployment-branch-policy-name-pattern`: NameString,
     `deployment-reviewer-type`: typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.User | Team,
-    `deployment-simple`: Originalenvironment,
+    `deployment-simple`: Performedviagithubapp,
     `deployment-status`: Deploymenturl,
     `diff-entry`: Bloburl,
     email: Primary,
     `empty-object`: StringDictionary[Any],
     `enabled-organizations`: all | none_ | selected,
     `enabled-repositories`: all | none_ | selected,
-    enterprise: Createdat,
-    environment: Deploymentbranchpolicy,
-    `environment-approvals`: Environments,
-    event: Actor,
+    enterprise: Htmlurl,
+    environment: Protectionrules,
+    `environment-approvals`: CommentEnvironments,
+    event: Public,
     feed: Currentuseractorurl,
     `file-commit`: CommitContent,
-    `full-repository`: Allowsquashmerge,
-    `gist-comment`: Nodeid,
-    `gist-commit`: User,
+    `full-repository`: Anonymousaccessenabled,
+    `gist-comment`: User,
+    `gist-commit`: ChangestatusCommittedat,
     `gist-history`: Changestatus,
-    `gist-simple`: Files,
+    `gist-simple`: Forkof,
     `git-commit`: AuthorCommitter,
-    `git-ref`: Object,
+    `git-ref`: NodeidObject,
     `git-tag`: Tagger,
     `git-tree`: Truncated,
-    `gitignore-template`: Source,
+    `gitignore-template`: NameSource,
     `gpg-key`: Canencryptcomms,
-    hook: Config,
+    hook: Lastresponse,
     `hook-delivery`: Deliveredat,
     `hook-delivery-item`: Action,
-    `hook-response`: CodeMessage,
-    hovercard: ContextsArray,
+    `hook-response`: MessageStatus,
+    hovercard: `393`,
     `import`: Authorscount,
     installation: Accesstokensurl,
     `installation-token`: Expiresat,
-    integration: Clientid,
+    integration: Clientsecret,
     `interaction-expiry`: one_day | three_days | one_week | one_month | six_months,
     `interaction-group`: existing_users | contributors_only | collaborators_only,
     `interaction-limit`: Expiry,
@@ -2123,93 +2123,93 @@ object Actionsbillingusage {
     `issue-comment`: Authorassociation,
     `issue-event`: Assigner,
     `issue-event-dismissed-review`: Dismissalcommitid,
-    `issue-event-for-issue`: Partial[CommitidCommiturl] & Partial[AssignerCommitid] & Partial[CommiturlCreatedat] & Partial[CreatedatEvent] & Partial[EventId_] & Partial[Requestedteam] & Partial[CreatedatDismissedreview] & Partial[IdLockreason] & Partial[IdNodeid] & Partial[NodeidPerformedviagithubapp],
+    `issue-event-for-issue`: Partial[EventId_] & Partial[AssignerCommitid] & Partial[IdNodeid] & Partial[IdMilestone] & Partial[NodeidPerformedviagithubapp] & Partial[Requestedteam] & Partial[CreatedatDismissedreview] & Partial[IdLockreason] & Partial[PerformedviagithubappProjectcard] & Partial[ProjectcardUrl],
     `issue-event-label`: ColorName,
-    `issue-event-milestone`: Title,
+    `issue-event-milestone`: TitleString,
     `issue-event-project-card`: Previouscolumnname,
     `issue-event-rename`: From,
-    `issue-search-result-item`: Draft,
+    `issue-search-result-item`: Locked,
     job: Checkrunurl,
-    key: Readonly,
-    `key-simple`: IdKey,
-    label: DefaultDescription,
-    `label-search-result-item`: Textmatches,
-    `labeled-issue-event`: Event,
+    key: IdKey,
+    `key-simple`: KeyString,
+    label: DescriptionId,
+    `label-search-result-item`: NodeidScore,
+    `labeled-issue-event`: ActorCommitid,
     language: StringDictionary[Double],
     license: Conditions,
-    `license-content`: License,
-    `license-simple`: Htmlurl,
+    `license-content`: ContentDownloadurl,
+    `license-simple`: Nodeid,
     link: HrefString,
     `link-with-type`: Href,
-    `locked-issue-event`: Lockreason,
+    `locked-issue-event`: CommiturlCreatedat,
     manifest: File,
-    `marketplace-account`: Login,
+    `marketplace-account`: Organizationbillingemail,
     `marketplace-listing-plan`: Accountsurl,
-    `marketplace-purchase`: Email,
+    `marketplace-purchase`: Login,
     `merged-upstream`: Basebranch,
     metadata: StringDictionary[Partial[String] & Partial[Double] & Partial[Boolean]],
-    migration: Exclude,
+    migration: Excludemetadata,
     milestone: Closedat,
-    `milestoned-issue-event`: Milestone,
-    `minimal-repository`: Archived,
+    `milestoned-issue-event`: CommitidCommiturl,
+    `minimal-repository`: Blobsurl,
     `moved-column-in-project-issue-event`: Projectcard,
-    `org-hook`: Active,
-    `org-membership`: Organization,
+    `org-hook`: Deliveriesurl,
+    `org-membership`: Organizationurl,
     `organization-actions-secret`: Selectedrepositoriesurl,
-    `organization-custom-repository-role`: Baserole,
+    `organization-custom-repository-role`: Organization,
     `organization-dependabot-secret`: Selectedrepositoriesurl,
     `organization-fine-grained-permission`: DescriptionName,
-    `organization-full`: Advancedsecurityenabledfornewrepositories,
+    `organization-full`: Billingemail,
     `organization-invitation`: Failedat,
     `organization-secret-scanning-alert`: Locationsurl,
-    `organization-simple`: Description,
+    `organization-simple`: Hooksurl,
     `package-version`: Deletedat,
     `packages-billing-usage`: Includedgigabytesbandwidth,
-    page: Buildtype,
+    page: Cname,
     `page-build`: Duration,
     `page-build-status`: StatusUrl,
     `page-deployment`: Pageurl,
     `pages-health-check`: Altdomain,
     `pages-https-certificate`: Domains,
-    `pages-source-hash`: Branch,
-    `participation-stats`: All,
+    `pages-source-hash`: PathString,
+    `participation-stats`: AllOwner,
     `pending-deployment`: Currentusercanapprove,
     `porter-author`: Importurl,
     `porter-large-file`: Oid,
     `private-user`: Businessplus,
     project: Columnsurl,
     `project-card`: Columnname,
-    `project-collaborator-permission`: Permission,
+    `project-collaborator-permission`: PermissionUser,
     `project-column`: Cardsurl,
-    `protected-branch`: Blockcreations,
+    `protected-branch`: Enforceadmins,
     `protected-branch-admin-enforced`: EnabledUrl,
-    `protected-branch-pull-request-review`: Bypasspullrequestallowances,
-    `protected-branch-required-status-check`: Checks,
-    `public-user`: Bio,
-    `pull-request`: Automerge,
+    `protected-branch-pull-request-review`: Dismissalrestrictions,
+    `protected-branch-required-status-check`: Contextsurl,
+    `public-user`: Blog,
+    `pull-request`: Changedfiles,
     `pull-request-merge-result`: Merged,
-    `pull-request-minimal`: Base,
-    `pull-request-review`: AuthorassociationBody,
+    `pull-request-minimal`: HeadId,
+    `pull-request-review`: BodyhtmlBodytext,
     `pull-request-review-comment`: Diffhunk,
-    `pull-request-review-request`: TeamsUsers,
-    `pull-request-simple`: Assignees,
+    `pull-request-review-request`: UsersArray,
+    `pull-request-simple`: Issueurl,
     `rate-limit`: Remaining,
     `rate-limit-overview`: Rate,
     reaction: ContentCreatedat,
-    `reaction-rollup`: `1`,
-    `referenced-workflow`: Path,
+    `reaction-rollup`: Confused,
+    `referenced-workflow`: PathRef,
     `referrer-traffic`: Referrer,
     release: Assets,
     `release-asset`: Browserdownloadurl,
-    `release-notes-content`: BodyName,
+    `release-notes-content`: BodyString,
     `removed-from-project-issue-event`: Projectcard,
     `renamed-issue-event`: Rename,
     `repo-codespaces-secret`: CreatedatName,
-    `repo-search-result-item`: Collaboratorsurl,
-    repository: Allowforking,
+    `repo-search-result-item`: Contentsurl,
+    repository: Allowsquashmerge,
     `repository-collaborator-permission`: Rolename,
     `repository-invitation`: Expired,
-    `repository-subscription`: Repositoryurl,
+    `repository-subscription`: CreatedatIgnored,
     `review-comment`: Originalcommitid,
     `review-dismissed-issue-event`: Dismissedreview,
     `review-request-removed-issue-event`: Requestedreviewer,
@@ -2453,15 +2453,15 @@ object Actionsbillingusage {
     
     inline def `setActions-enabled`(value: Boolean): Self = StObject.set(x, "actions-enabled", value.asInstanceOf[js.Any])
     
-    inline def `setActions-enterprise-permissions`(value: Allowedactions): Self = StObject.set(x, "actions-enterprise-permissions", value.asInstanceOf[js.Any])
+    inline def `setActions-enterprise-permissions`(value: Enabledorganizations): Self = StObject.set(x, "actions-enterprise-permissions", value.asInstanceOf[js.Any])
     
     inline def `setActions-get-default-workflow-permissions`(value: Canapprovepullrequestreviews): Self = StObject.set(x, "actions-get-default-workflow-permissions", value.asInstanceOf[js.Any])
     
-    inline def `setActions-organization-permissions`(value: Enabledrepositories): Self = StObject.set(x, "actions-organization-permissions", value.asInstanceOf[js.Any])
+    inline def `setActions-organization-permissions`(value: Selectedactionsurl): Self = StObject.set(x, "actions-organization-permissions", value.asInstanceOf[js.Any])
     
-    inline def `setActions-public-key`(value: Keyid): Self = StObject.set(x, "actions-public-key", value.asInstanceOf[js.Any])
+    inline def `setActions-public-key`(value: CreatedatId): Self = StObject.set(x, "actions-public-key", value.asInstanceOf[js.Any])
     
-    inline def `setActions-repository-permissions`(value: Enabled): Self = StObject.set(x, "actions-repository-permissions", value.asInstanceOf[js.Any])
+    inline def `setActions-repository-permissions`(value: AllowedactionsEnabled): Self = StObject.set(x, "actions-repository-permissions", value.asInstanceOf[js.Any])
     
     inline def `setActions-secret`(value: CreatedatName): Self = StObject.set(x, "actions-secret", value.asInstanceOf[js.Any])
     
@@ -2473,7 +2473,7 @@ object Actionsbillingusage {
     
     inline def `setAdded-to-project-issue-event`(value: Projectcard): Self = StObject.set(x, "added-to-project-issue-event", value.asInstanceOf[js.Any])
     
-    inline def `setAdvanced-security-active-committers`(value: Repositories): Self = StObject.set(x, "advanced-security-active-committers", value.asInstanceOf[js.Any])
+    inline def `setAdvanced-security-active-committers`(value: Totaladvancedsecuritycommitters): Self = StObject.set(x, "advanced-security-active-committers", value.asInstanceOf[js.Any])
     
     inline def `setAdvanced-security-active-committers-repository`(value: Advancedsecuritycommitters): Self = StObject.set(x, "advanced-security-active-committers-repository", value.asInstanceOf[js.Any])
     
@@ -2495,13 +2495,13 @@ object Actionsbillingusage {
     
     inline def `setApi-overview`(value: Api): Self = StObject.set(x, "api-overview", value.asInstanceOf[js.Any])
     
-    inline def `setApp-permissions`(value: Actions): Self = StObject.set(x, "app-permissions", value.asInstanceOf[js.Any])
+    inline def `setApp-permissions`(value: Administration): Self = StObject.set(x, "app-permissions", value.asInstanceOf[js.Any])
     
     inline def setArtifact(value: Archivedownloadurl): Self = StObject.set(x, "artifact", value.asInstanceOf[js.Any])
     
     inline def `setAssigned-issue-event`(value: ActorAssignee): Self = StObject.set(x, "assigned-issue-event", value.asInstanceOf[js.Any])
     
-    inline def `setAuthentication-token`(value: Permissions): Self = StObject.set(x, "authentication-token", value.asInstanceOf[js.Any])
+    inline def `setAuthentication-token`(value: Singlefile): Self = StObject.set(x, "authentication-token", value.asInstanceOf[js.Any])
     
     inline def `setAuthor-association`(
       value: COLLABORATOR | CONTRIBUTOR | FIRST_TIMER | FIRST_TIME_CONTRIBUTOR | MANNEQUIN | MEMBER | NONE | OWNER
@@ -2509,31 +2509,31 @@ object Actionsbillingusage {
     
     inline def setAuthorization(value: App): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
     
-    inline def `setAuto-merge`(value: Commitmessage): Self = StObject.set(x, "auto-merge", value.asInstanceOf[js.Any])
+    inline def `setAuto-merge`(value: Committitle): Self = StObject.set(x, "auto-merge", value.asInstanceOf[js.Any])
     
     inline def `setAuto-mergeNull`: Self = StObject.set(x, "auto-merge", null)
     
-    inline def setAutolink(value: Isalphanumeric): Self = StObject.set(x, "autolink", value.asInstanceOf[js.Any])
+    inline def setAutolink(value: Keyprefix): Self = StObject.set(x, "autolink", value.asInstanceOf[js.Any])
     
     inline def `setBase-gist`(value: Commentsurl): Self = StObject.set(x, "base-gist", value.asInstanceOf[js.Any])
     
-    inline def `setBasic-error`(value: Documentationurl): Self = StObject.set(x, "basic-error", value.asInstanceOf[js.Any])
+    inline def `setBasic-error`(value: DocumentationurlMessage): Self = StObject.set(x, "basic-error", value.asInstanceOf[js.Any])
     
     inline def setBlob(value: Highlightedcontent): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
     
-    inline def `setBranch-protection`(value: Allowdeletions): Self = StObject.set(x, "branch-protection", value.asInstanceOf[js.Any])
+    inline def `setBranch-protection`(value: Allowforcepushes): Self = StObject.set(x, "branch-protection", value.asInstanceOf[js.Any])
     
     inline def `setBranch-restriction-policy`(value: Appsurl): Self = StObject.set(x, "branch-restriction-policy", value.asInstanceOf[js.Any])
     
-    inline def `setBranch-short`(value: Protected): Self = StObject.set(x, "branch-short", value.asInstanceOf[js.Any])
+    inline def `setBranch-short`(value: CommitName): Self = StObject.set(x, "branch-short", value.asInstanceOf[js.Any])
     
     inline def `setBranch-with-protection`(value: Links): Self = StObject.set(x, "branch-with-protection", value.asInstanceOf[js.Any])
     
-    inline def `setCheck-annotation`(value: Annotationlevel): Self = StObject.set(x, "check-annotation", value.asInstanceOf[js.Any])
+    inline def `setCheck-annotation`(value: Blobhref): Self = StObject.set(x, "check-annotation", value.asInstanceOf[js.Any])
     
     inline def `setCheck-run`(value: Checksuite): Self = StObject.set(x, "check-run", value.asInstanceOf[js.Any])
     
-    inline def `setCheck-suite`(value: After): Self = StObject.set(x, "check-suite", value.asInstanceOf[js.Any])
+    inline def `setCheck-suite`(value: Checkrunsurl): Self = StObject.set(x, "check-suite", value.asInstanceOf[js.Any])
     
     inline def `setCheck-suite-preference`(value: Preferences): Self = StObject.set(x, "check-suite-preference", value.asInstanceOf[js.Any])
     
@@ -2543,11 +2543,11 @@ object Actionsbillingusage {
     
     inline def `setCode-frequency-statVarargs`(value: Double*): Self = StObject.set(x, "code-frequency-stat", js.Array(value*))
     
-    inline def `setCode-of-conduct`(value: Body): Self = StObject.set(x, "code-of-conduct", value.asInstanceOf[js.Any])
+    inline def `setCode-of-conduct`(value: BodyHtmlurl): Self = StObject.set(x, "code-of-conduct", value.asInstanceOf[js.Any])
     
     inline def `setCode-of-conduct-simple`(value: HtmlurlKey): Self = StObject.set(x, "code-of-conduct-simple", value.asInstanceOf[js.Any])
     
-    inline def `setCode-scanning-alert`(value: Dismissedcomment): Self = StObject.set(x, "code-scanning-alert", value.asInstanceOf[js.Any])
+    inline def `setCode-scanning-alert`(value: Fixedat): Self = StObject.set(x, "code-scanning-alert", value.asInstanceOf[js.Any])
     
     inline def `setCode-scanning-alert-classification`(value: source | generated | test | library): Self = StObject.set(x, "code-scanning-alert-classification", value.asInstanceOf[js.Any])
     
@@ -2585,7 +2585,7 @@ object Actionsbillingusage {
     
     inline def `setCode-scanning-alert-state`(value: open | closed | dismissed | fixed): Self = StObject.set(x, "code-scanning-alert-state", value.asInstanceOf[js.Any])
     
-    inline def `setCode-scanning-analysis`(value: Commitsha): Self = StObject.set(x, "code-scanning-analysis", value.asInstanceOf[js.Any])
+    inline def `setCode-scanning-analysis`(value: Deletable): Self = StObject.set(x, "code-scanning-analysis", value.asInstanceOf[js.Any])
     
     inline def `setCode-scanning-analysis-analysis-key`(value: String): Self = StObject.set(x, "code-scanning-analysis-analysis-key", value.asInstanceOf[js.Any])
     
@@ -2617,7 +2617,7 @@ object Actionsbillingusage {
     
     inline def `setCode-scanning-analysis-url`(value: String): Self = StObject.set(x, "code-scanning-analysis-url", value.asInstanceOf[js.Any])
     
-    inline def `setCode-scanning-codeql-database`(value: Language): Self = StObject.set(x, "code-scanning-codeql-database", value.asInstanceOf[js.Any])
+    inline def `setCode-scanning-codeql-database`(value: Size): Self = StObject.set(x, "code-scanning-codeql-database", value.asInstanceOf[js.Any])
     
     inline def `setCode-scanning-organization-alert-items`(value: Dismissedat): Self = StObject.set(x, "code-scanning-organization-alert-items", value.asInstanceOf[js.Any])
     
@@ -2631,7 +2631,7 @@ object Actionsbillingusage {
     
     inline def `setCodeowners-errors`(value: ErrorsArray): Self = StObject.set(x, "codeowners-errors", value.asInstanceOf[js.Any])
     
-    inline def setCodespace(value: Billableowner): Self = StObject.set(x, "codespace", value.asInstanceOf[js.Any])
+    inline def setCodespace(value: Environmentid): Self = StObject.set(x, "codespace", value.asInstanceOf[js.Any])
     
     inline def `setCodespace-export-details`(value: Exporturl): Self = StObject.set(x, "codespace-export-details", value.asInstanceOf[js.Any])
     
@@ -2639,9 +2639,9 @@ object Actionsbillingusage {
     
     inline def `setCodespaces-org-secret`(value: Selectedrepositoriesurl): Self = StObject.set(x, "codespaces-org-secret", value.asInstanceOf[js.Any])
     
-    inline def `setCodespaces-public-key`(value: Keyid): Self = StObject.set(x, "codespaces-public-key", value.asInstanceOf[js.Any])
+    inline def `setCodespaces-public-key`(value: CreatedatId): Self = StObject.set(x, "codespaces-public-key", value.asInstanceOf[js.Any])
     
-    inline def `setCodespaces-secret`(value: Visibility): Self = StObject.set(x, "codespaces-secret", value.asInstanceOf[js.Any])
+    inline def `setCodespaces-secret`(value: NameSelectedrepositoriesurl): Self = StObject.set(x, "codespaces-secret", value.asInstanceOf[js.Any])
     
     inline def `setCodespaces-user-public-key`(value: KeyKeyid): Self = StObject.set(x, "codespaces-user-public-key", value.asInstanceOf[js.Any])
     
@@ -2651,15 +2651,15 @@ object Actionsbillingusage {
     
     inline def `setCombined-commit-status`(value: Commiturl): Self = StObject.set(x, "combined-commit-status", value.asInstanceOf[js.Any])
     
-    inline def setCommit(value: Parents): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+    inline def setCommit(value: Stats): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
     inline def `setCommit-activity`(value: Days): Self = StObject.set(x, "commit-activity", value.asInstanceOf[js.Any])
     
-    inline def `setCommit-comment`(value: Commitid): Self = StObject.set(x, "commit-comment", value.asInstanceOf[js.Any])
+    inline def `setCommit-comment`(value: Reactions): Self = StObject.set(x, "commit-comment", value.asInstanceOf[js.Any])
     
     inline def `setCommit-comparison`(value: Aheadby): Self = StObject.set(x, "commit-comparison", value.asInstanceOf[js.Any])
     
-    inline def `setCommit-search-result-item`(value: Repository): Self = StObject.set(x, "commit-search-result-item", value.asInstanceOf[js.Any])
+    inline def `setCommit-search-result-item`(value: Textmatches): Self = StObject.set(x, "commit-search-result-item", value.asInstanceOf[js.Any])
     
     inline def `setCommunity-profile`(value: Contentreportsenabled): Self = StObject.set(x, "community-profile", value.asInstanceOf[js.Any])
     
@@ -2667,23 +2667,23 @@ object Actionsbillingusage {
     
     inline def `setContent-directoryVarargs`(value: Giturl*): Self = StObject.set(x, "content-directory", js.Array(value*))
     
-    inline def `setContent-file`(value: Size): Self = StObject.set(x, "content-file", value.asInstanceOf[js.Any])
+    inline def `setContent-file`(value: Submodulegiturl): Self = StObject.set(x, "content-file", value.asInstanceOf[js.Any])
     
-    inline def `setContent-submodule`(value: Submodulegiturl): Self = StObject.set(x, "content-submodule", value.asInstanceOf[js.Any])
+    inline def `setContent-submodule`(value: DownloadurlGiturl): Self = StObject.set(x, "content-submodule", value.asInstanceOf[js.Any])
     
     inline def `setContent-symlink`(value: Target): Self = StObject.set(x, "content-symlink", value.asInstanceOf[js.Any])
     
     inline def `setContent-traffic`(value: Uniques): Self = StObject.set(x, "content-traffic", value.asInstanceOf[js.Any])
     
-    inline def `setContent-tree`(value: Encoding): Self = StObject.set(x, "content-tree", value.asInstanceOf[js.Any])
+    inline def `setContent-tree`(value: Entries): Self = StObject.set(x, "content-tree", value.asInstanceOf[js.Any])
     
     inline def setContributor(value: Contributions): Self = StObject.set(x, "contributor", value.asInstanceOf[js.Any])
     
     inline def `setContributor-activity`(value: Total): Self = StObject.set(x, "contributor-activity", value.asInstanceOf[js.Any])
     
-    inline def `setConverted-note-to-issue-issue-event`(value: ActorCommitid): Self = StObject.set(x, "converted-note-to-issue-issue-event", value.asInstanceOf[js.Any])
+    inline def `setConverted-note-to-issue-issue-event`(value: CreatedatEvent): Self = StObject.set(x, "converted-note-to-issue-issue-event", value.asInstanceOf[js.Any])
     
-    inline def `setDemilestoned-issue-event`(value: Milestone): Self = StObject.set(x, "demilestoned-issue-event", value.asInstanceOf[js.Any])
+    inline def `setDemilestoned-issue-event`(value: CommitidCommiturl): Self = StObject.set(x, "demilestoned-issue-event", value.asInstanceOf[js.Any])
     
     inline def `setDependabot-alert`(value: Dependency): Self = StObject.set(x, "dependabot-alert", value.asInstanceOf[js.Any])
     
@@ -2705,7 +2705,7 @@ object Actionsbillingusage {
     
     inline def `setDependabot-alert-fixed-atNull`: Self = StObject.set(x, "dependabot-alert-fixed-at", null)
     
-    inline def `setDependabot-alert-package`(value: Ecosystem): Self = StObject.set(x, "dependabot-alert-package", value.asInstanceOf[js.Any])
+    inline def `setDependabot-alert-package`(value: EcosystemName): Self = StObject.set(x, "dependabot-alert-package", value.asInstanceOf[js.Any])
     
     inline def `setDependabot-alert-scope`(value: development | runtime): Self = StObject.set(x, "dependabot-alert-scope", value.asInstanceOf[js.Any])
     
@@ -2731,7 +2731,7 @@ object Actionsbillingusage {
     
     inline def `setDeploy-key`(value: Addedby): Self = StObject.set(x, "deploy-key", value.asInstanceOf[js.Any])
     
-    inline def setDeployment(value: Environment): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
+    inline def setDeployment(value: Originalenvironment): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
     
     inline def `setDeployment-branch-policy`(value: NameNodeid): Self = StObject.set(x, "deployment-branch-policy", value.asInstanceOf[js.Any])
     
@@ -2743,7 +2743,7 @@ object Actionsbillingusage {
     
     inline def `setDeployment-reviewer-type`(value: typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.User | Team): Self = StObject.set(x, "deployment-reviewer-type", value.asInstanceOf[js.Any])
     
-    inline def `setDeployment-simple`(value: Originalenvironment): Self = StObject.set(x, "deployment-simple", value.asInstanceOf[js.Any])
+    inline def `setDeployment-simple`(value: Performedviagithubapp): Self = StObject.set(x, "deployment-simple", value.asInstanceOf[js.Any])
     
     inline def `setDeployment-status`(value: Deploymenturl): Self = StObject.set(x, "deployment-status", value.asInstanceOf[js.Any])
     
@@ -2757,49 +2757,49 @@ object Actionsbillingusage {
     
     inline def `setEnabled-repositories`(value: all | none_ | selected): Self = StObject.set(x, "enabled-repositories", value.asInstanceOf[js.Any])
     
-    inline def setEnterprise(value: Createdat): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
+    inline def setEnterprise(value: Htmlurl): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
     
-    inline def setEnvironment(value: Deploymentbranchpolicy): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: Protectionrules): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    inline def `setEnvironment-approvals`(value: Environments): Self = StObject.set(x, "environment-approvals", value.asInstanceOf[js.Any])
+    inline def `setEnvironment-approvals`(value: CommentEnvironments): Self = StObject.set(x, "environment-approvals", value.asInstanceOf[js.Any])
     
-    inline def setEvent(value: Actor): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: Public): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     inline def setFeed(value: Currentuseractorurl): Self = StObject.set(x, "feed", value.asInstanceOf[js.Any])
     
     inline def `setFile-commit`(value: CommitContent): Self = StObject.set(x, "file-commit", value.asInstanceOf[js.Any])
     
-    inline def `setFull-repository`(value: Allowsquashmerge): Self = StObject.set(x, "full-repository", value.asInstanceOf[js.Any])
+    inline def `setFull-repository`(value: Anonymousaccessenabled): Self = StObject.set(x, "full-repository", value.asInstanceOf[js.Any])
     
-    inline def `setGist-comment`(value: Nodeid): Self = StObject.set(x, "gist-comment", value.asInstanceOf[js.Any])
+    inline def `setGist-comment`(value: User): Self = StObject.set(x, "gist-comment", value.asInstanceOf[js.Any])
     
-    inline def `setGist-commit`(value: User): Self = StObject.set(x, "gist-commit", value.asInstanceOf[js.Any])
+    inline def `setGist-commit`(value: ChangestatusCommittedat): Self = StObject.set(x, "gist-commit", value.asInstanceOf[js.Any])
     
     inline def `setGist-history`(value: Changestatus): Self = StObject.set(x, "gist-history", value.asInstanceOf[js.Any])
     
-    inline def `setGist-simple`(value: Files): Self = StObject.set(x, "gist-simple", value.asInstanceOf[js.Any])
+    inline def `setGist-simple`(value: Forkof): Self = StObject.set(x, "gist-simple", value.asInstanceOf[js.Any])
     
     inline def `setGit-commit`(value: AuthorCommitter): Self = StObject.set(x, "git-commit", value.asInstanceOf[js.Any])
     
-    inline def `setGit-ref`(value: Object): Self = StObject.set(x, "git-ref", value.asInstanceOf[js.Any])
+    inline def `setGit-ref`(value: NodeidObject): Self = StObject.set(x, "git-ref", value.asInstanceOf[js.Any])
     
     inline def `setGit-tag`(value: Tagger): Self = StObject.set(x, "git-tag", value.asInstanceOf[js.Any])
     
     inline def `setGit-tree`(value: Truncated): Self = StObject.set(x, "git-tree", value.asInstanceOf[js.Any])
     
-    inline def `setGitignore-template`(value: Source): Self = StObject.set(x, "gitignore-template", value.asInstanceOf[js.Any])
+    inline def `setGitignore-template`(value: NameSource): Self = StObject.set(x, "gitignore-template", value.asInstanceOf[js.Any])
     
     inline def `setGpg-key`(value: Canencryptcomms): Self = StObject.set(x, "gpg-key", value.asInstanceOf[js.Any])
     
-    inline def setHook(value: Config): Self = StObject.set(x, "hook", value.asInstanceOf[js.Any])
+    inline def setHook(value: Lastresponse): Self = StObject.set(x, "hook", value.asInstanceOf[js.Any])
     
     inline def `setHook-delivery`(value: Deliveredat): Self = StObject.set(x, "hook-delivery", value.asInstanceOf[js.Any])
     
     inline def `setHook-delivery-item`(value: Action): Self = StObject.set(x, "hook-delivery-item", value.asInstanceOf[js.Any])
     
-    inline def `setHook-response`(value: CodeMessage): Self = StObject.set(x, "hook-response", value.asInstanceOf[js.Any])
+    inline def `setHook-response`(value: MessageStatus): Self = StObject.set(x, "hook-response", value.asInstanceOf[js.Any])
     
-    inline def setHovercard(value: ContextsArray): Self = StObject.set(x, "hovercard", value.asInstanceOf[js.Any])
+    inline def setHovercard(value: `393`): Self = StObject.set(x, "hovercard", value.asInstanceOf[js.Any])
     
     inline def setImport(value: Authorscount): Self = StObject.set(x, "import", value.asInstanceOf[js.Any])
     
@@ -2807,7 +2807,7 @@ object Actionsbillingusage {
     
     inline def `setInstallation-token`(value: Expiresat): Self = StObject.set(x, "installation-token", value.asInstanceOf[js.Any])
     
-    inline def setIntegration(value: Clientid): Self = StObject.set(x, "integration", value.asInstanceOf[js.Any])
+    inline def setIntegration(value: Clientsecret): Self = StObject.set(x, "integration", value.asInstanceOf[js.Any])
     
     inline def `setInteraction-expiry`(value: one_day | three_days | one_week | one_month | six_months): Self = StObject.set(x, "interaction-expiry", value.asInstanceOf[js.Any])
     
@@ -2826,64 +2826,64 @@ object Actionsbillingusage {
     inline def `setIssue-event-dismissed-review`(value: Dismissalcommitid): Self = StObject.set(x, "issue-event-dismissed-review", value.asInstanceOf[js.Any])
     
     inline def `setIssue-event-for-issue`(
-      value: Partial[CommitidCommiturl] & Partial[AssignerCommitid] & Partial[CommiturlCreatedat] & Partial[CreatedatEvent] & Partial[EventId_] & Partial[Requestedteam] & Partial[CreatedatDismissedreview] & Partial[IdLockreason] & Partial[IdNodeid] & Partial[NodeidPerformedviagithubapp]
+      value: Partial[EventId_] & Partial[AssignerCommitid] & Partial[IdNodeid] & Partial[IdMilestone] & Partial[NodeidPerformedviagithubapp] & Partial[Requestedteam] & Partial[CreatedatDismissedreview] & Partial[IdLockreason] & Partial[PerformedviagithubappProjectcard] & Partial[ProjectcardUrl]
     ): Self = StObject.set(x, "issue-event-for-issue", value.asInstanceOf[js.Any])
     
     inline def `setIssue-event-label`(value: ColorName): Self = StObject.set(x, "issue-event-label", value.asInstanceOf[js.Any])
     
-    inline def `setIssue-event-milestone`(value: Title): Self = StObject.set(x, "issue-event-milestone", value.asInstanceOf[js.Any])
+    inline def `setIssue-event-milestone`(value: TitleString): Self = StObject.set(x, "issue-event-milestone", value.asInstanceOf[js.Any])
     
     inline def `setIssue-event-project-card`(value: Previouscolumnname): Self = StObject.set(x, "issue-event-project-card", value.asInstanceOf[js.Any])
     
     inline def `setIssue-event-rename`(value: From): Self = StObject.set(x, "issue-event-rename", value.asInstanceOf[js.Any])
     
-    inline def `setIssue-search-result-item`(value: Draft): Self = StObject.set(x, "issue-search-result-item", value.asInstanceOf[js.Any])
+    inline def `setIssue-search-result-item`(value: Locked): Self = StObject.set(x, "issue-search-result-item", value.asInstanceOf[js.Any])
     
     inline def setJob(value: Checkrunurl): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
     
-    inline def setKey(value: Readonly): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: IdKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    inline def `setKey-simple`(value: IdKey): Self = StObject.set(x, "key-simple", value.asInstanceOf[js.Any])
+    inline def `setKey-simple`(value: KeyString): Self = StObject.set(x, "key-simple", value.asInstanceOf[js.Any])
     
-    inline def setLabel(value: DefaultDescription): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: DescriptionId): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    inline def `setLabel-search-result-item`(value: Textmatches): Self = StObject.set(x, "label-search-result-item", value.asInstanceOf[js.Any])
+    inline def `setLabel-search-result-item`(value: NodeidScore): Self = StObject.set(x, "label-search-result-item", value.asInstanceOf[js.Any])
     
-    inline def `setLabeled-issue-event`(value: Event): Self = StObject.set(x, "labeled-issue-event", value.asInstanceOf[js.Any])
+    inline def `setLabeled-issue-event`(value: ActorCommitid): Self = StObject.set(x, "labeled-issue-event", value.asInstanceOf[js.Any])
     
     inline def setLanguage(value: StringDictionary[Double]): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     inline def setLicense(value: Conditions): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
     
-    inline def `setLicense-content`(value: License): Self = StObject.set(x, "license-content", value.asInstanceOf[js.Any])
+    inline def `setLicense-content`(value: ContentDownloadurl): Self = StObject.set(x, "license-content", value.asInstanceOf[js.Any])
     
-    inline def `setLicense-simple`(value: Htmlurl): Self = StObject.set(x, "license-simple", value.asInstanceOf[js.Any])
+    inline def `setLicense-simple`(value: Nodeid): Self = StObject.set(x, "license-simple", value.asInstanceOf[js.Any])
     
     inline def setLink(value: HrefString): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     inline def `setLink-with-type`(value: Href): Self = StObject.set(x, "link-with-type", value.asInstanceOf[js.Any])
     
-    inline def `setLocked-issue-event`(value: Lockreason): Self = StObject.set(x, "locked-issue-event", value.asInstanceOf[js.Any])
+    inline def `setLocked-issue-event`(value: CommiturlCreatedat): Self = StObject.set(x, "locked-issue-event", value.asInstanceOf[js.Any])
     
     inline def setManifest(value: File): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
     
-    inline def `setMarketplace-account`(value: Login): Self = StObject.set(x, "marketplace-account", value.asInstanceOf[js.Any])
+    inline def `setMarketplace-account`(value: Organizationbillingemail): Self = StObject.set(x, "marketplace-account", value.asInstanceOf[js.Any])
     
     inline def `setMarketplace-listing-plan`(value: Accountsurl): Self = StObject.set(x, "marketplace-listing-plan", value.asInstanceOf[js.Any])
     
-    inline def `setMarketplace-purchase`(value: Email): Self = StObject.set(x, "marketplace-purchase", value.asInstanceOf[js.Any])
+    inline def `setMarketplace-purchase`(value: Login): Self = StObject.set(x, "marketplace-purchase", value.asInstanceOf[js.Any])
     
     inline def `setMerged-upstream`(value: Basebranch): Self = StObject.set(x, "merged-upstream", value.asInstanceOf[js.Any])
     
     inline def setMetadata(value: StringDictionary[Partial[String] & Partial[Double] & Partial[Boolean]]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    inline def setMigration(value: Exclude): Self = StObject.set(x, "migration", value.asInstanceOf[js.Any])
+    inline def setMigration(value: Excludemetadata): Self = StObject.set(x, "migration", value.asInstanceOf[js.Any])
     
     inline def setMilestone(value: Closedat): Self = StObject.set(x, "milestone", value.asInstanceOf[js.Any])
     
-    inline def `setMilestoned-issue-event`(value: Milestone): Self = StObject.set(x, "milestoned-issue-event", value.asInstanceOf[js.Any])
+    inline def `setMilestoned-issue-event`(value: CommitidCommiturl): Self = StObject.set(x, "milestoned-issue-event", value.asInstanceOf[js.Any])
     
-    inline def `setMinimal-repository`(value: Archived): Self = StObject.set(x, "minimal-repository", value.asInstanceOf[js.Any])
+    inline def `setMinimal-repository`(value: Blobsurl): Self = StObject.set(x, "minimal-repository", value.asInstanceOf[js.Any])
     
     inline def `setMoved-column-in-project-issue-event`(value: Projectcard): Self = StObject.set(x, "moved-column-in-project-issue-event", value.asInstanceOf[js.Any])
     
@@ -2907,11 +2907,11 @@ object Actionsbillingusage {
     
     inline def `setNullable-community-health-fileNull`: Self = StObject.set(x, "nullable-community-health-file", null)
     
-    inline def `setNullable-git-user`(value: Date): Self = StObject.set(x, "nullable-git-user", value.asInstanceOf[js.Any])
+    inline def `setNullable-git-user`(value: DateEmail): Self = StObject.set(x, "nullable-git-user", value.asInstanceOf[js.Any])
     
     inline def `setNullable-git-userNull`: Self = StObject.set(x, "nullable-git-user", null)
     
-    inline def `setNullable-integration`(value: Clientid): Self = StObject.set(x, "nullable-integration", value.asInstanceOf[js.Any])
+    inline def `setNullable-integration`(value: Clientsecret): Self = StObject.set(x, "nullable-integration", value.asInstanceOf[js.Any])
     
     inline def `setNullable-integrationNull`: Self = StObject.set(x, "nullable-integration", null)
     
@@ -2919,7 +2919,7 @@ object Actionsbillingusage {
     
     inline def `setNullable-issueNull`: Self = StObject.set(x, "nullable-issue", null)
     
-    inline def `setNullable-license-simple`(value: Htmlurl): Self = StObject.set(x, "nullable-license-simple", value.asInstanceOf[js.Any])
+    inline def `setNullable-license-simple`(value: Nodeid): Self = StObject.set(x, "nullable-license-simple", value.asInstanceOf[js.Any])
     
     inline def `setNullable-license-simpleNull`: Self = StObject.set(x, "nullable-license-simple", null)
     
@@ -2927,11 +2927,11 @@ object Actionsbillingusage {
     
     inline def `setNullable-milestoneNull`: Self = StObject.set(x, "nullable-milestone", null)
     
-    inline def `setNullable-minimal-repository`(value: Archived): Self = StObject.set(x, "nullable-minimal-repository", value.asInstanceOf[js.Any])
+    inline def `setNullable-minimal-repository`(value: Blobsurl): Self = StObject.set(x, "nullable-minimal-repository", value.asInstanceOf[js.Any])
     
     inline def `setNullable-minimal-repositoryNull`: Self = StObject.set(x, "nullable-minimal-repository", null)
     
-    inline def `setNullable-repository`(value: Allowforking): Self = StObject.set(x, "nullable-repository", value.asInstanceOf[js.Any])
+    inline def `setNullable-repository`(value: Allowsquashmerge): Self = StObject.set(x, "nullable-repository", value.asInstanceOf[js.Any])
     
     inline def `setNullable-repositoryNull`: Self = StObject.set(x, "nullable-repository", null)
     
@@ -2939,7 +2939,7 @@ object Actionsbillingusage {
     
     inline def `setNullable-scoped-installationNull`: Self = StObject.set(x, "nullable-scoped-installation", null)
     
-    inline def `setNullable-simple-commit`(value: Committer): Self = StObject.set(x, "nullable-simple-commit", value.asInstanceOf[js.Any])
+    inline def `setNullable-simple-commit`(value: Timestamp): Self = StObject.set(x, "nullable-simple-commit", value.asInstanceOf[js.Any])
     
     inline def `setNullable-simple-commitNull`: Self = StObject.set(x, "nullable-simple-commit", null)
     
@@ -2951,31 +2951,31 @@ object Actionsbillingusage {
     
     inline def `setNullable-team-simpleNull`: Self = StObject.set(x, "nullable-team-simple", null)
     
-    inline def `setOrg-hook`(value: Active): Self = StObject.set(x, "org-hook", value.asInstanceOf[js.Any])
+    inline def `setOrg-hook`(value: Deliveriesurl): Self = StObject.set(x, "org-hook", value.asInstanceOf[js.Any])
     
-    inline def `setOrg-membership`(value: Organization): Self = StObject.set(x, "org-membership", value.asInstanceOf[js.Any])
+    inline def `setOrg-membership`(value: Organizationurl): Self = StObject.set(x, "org-membership", value.asInstanceOf[js.Any])
     
     inline def `setOrganization-actions-secret`(value: Selectedrepositoriesurl): Self = StObject.set(x, "organization-actions-secret", value.asInstanceOf[js.Any])
     
-    inline def `setOrganization-custom-repository-role`(value: Baserole): Self = StObject.set(x, "organization-custom-repository-role", value.asInstanceOf[js.Any])
+    inline def `setOrganization-custom-repository-role`(value: Organization): Self = StObject.set(x, "organization-custom-repository-role", value.asInstanceOf[js.Any])
     
     inline def `setOrganization-dependabot-secret`(value: Selectedrepositoriesurl): Self = StObject.set(x, "organization-dependabot-secret", value.asInstanceOf[js.Any])
     
     inline def `setOrganization-fine-grained-permission`(value: DescriptionName): Self = StObject.set(x, "organization-fine-grained-permission", value.asInstanceOf[js.Any])
     
-    inline def `setOrganization-full`(value: Advancedsecurityenabledfornewrepositories): Self = StObject.set(x, "organization-full", value.asInstanceOf[js.Any])
+    inline def `setOrganization-full`(value: Billingemail): Self = StObject.set(x, "organization-full", value.asInstanceOf[js.Any])
     
     inline def `setOrganization-invitation`(value: Failedat): Self = StObject.set(x, "organization-invitation", value.asInstanceOf[js.Any])
     
     inline def `setOrganization-secret-scanning-alert`(value: Locationsurl): Self = StObject.set(x, "organization-secret-scanning-alert", value.asInstanceOf[js.Any])
     
-    inline def `setOrganization-simple`(value: Description): Self = StObject.set(x, "organization-simple", value.asInstanceOf[js.Any])
+    inline def `setOrganization-simple`(value: Hooksurl): Self = StObject.set(x, "organization-simple", value.asInstanceOf[js.Any])
     
     inline def `setPackage-version`(value: Deletedat): Self = StObject.set(x, "package-version", value.asInstanceOf[js.Any])
     
     inline def `setPackages-billing-usage`(value: Includedgigabytesbandwidth): Self = StObject.set(x, "packages-billing-usage", value.asInstanceOf[js.Any])
     
-    inline def setPage(value: Buildtype): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Cname): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     inline def `setPage-build`(value: Duration): Self = StObject.set(x, "page-build", value.asInstanceOf[js.Any])
     
@@ -2987,9 +2987,9 @@ object Actionsbillingusage {
     
     inline def `setPages-https-certificate`(value: Domains): Self = StObject.set(x, "pages-https-certificate", value.asInstanceOf[js.Any])
     
-    inline def `setPages-source-hash`(value: Branch): Self = StObject.set(x, "pages-source-hash", value.asInstanceOf[js.Any])
+    inline def `setPages-source-hash`(value: PathString): Self = StObject.set(x, "pages-source-hash", value.asInstanceOf[js.Any])
     
-    inline def `setParticipation-stats`(value: All): Self = StObject.set(x, "participation-stats", value.asInstanceOf[js.Any])
+    inline def `setParticipation-stats`(value: AllOwner): Self = StObject.set(x, "participation-stats", value.asInstanceOf[js.Any])
     
     inline def `setPending-deployment`(value: Currentusercanapprove): Self = StObject.set(x, "pending-deployment", value.asInstanceOf[js.Any])
     
@@ -3003,33 +3003,33 @@ object Actionsbillingusage {
     
     inline def `setProject-card`(value: Columnname): Self = StObject.set(x, "project-card", value.asInstanceOf[js.Any])
     
-    inline def `setProject-collaborator-permission`(value: Permission): Self = StObject.set(x, "project-collaborator-permission", value.asInstanceOf[js.Any])
+    inline def `setProject-collaborator-permission`(value: PermissionUser): Self = StObject.set(x, "project-collaborator-permission", value.asInstanceOf[js.Any])
     
     inline def `setProject-column`(value: Cardsurl): Self = StObject.set(x, "project-column", value.asInstanceOf[js.Any])
     
-    inline def `setProtected-branch`(value: Blockcreations): Self = StObject.set(x, "protected-branch", value.asInstanceOf[js.Any])
+    inline def `setProtected-branch`(value: Enforceadmins): Self = StObject.set(x, "protected-branch", value.asInstanceOf[js.Any])
     
     inline def `setProtected-branch-admin-enforced`(value: EnabledUrl): Self = StObject.set(x, "protected-branch-admin-enforced", value.asInstanceOf[js.Any])
     
-    inline def `setProtected-branch-pull-request-review`(value: Bypasspullrequestallowances): Self = StObject.set(x, "protected-branch-pull-request-review", value.asInstanceOf[js.Any])
+    inline def `setProtected-branch-pull-request-review`(value: Dismissalrestrictions): Self = StObject.set(x, "protected-branch-pull-request-review", value.asInstanceOf[js.Any])
     
-    inline def `setProtected-branch-required-status-check`(value: Checks): Self = StObject.set(x, "protected-branch-required-status-check", value.asInstanceOf[js.Any])
+    inline def `setProtected-branch-required-status-check`(value: Contextsurl): Self = StObject.set(x, "protected-branch-required-status-check", value.asInstanceOf[js.Any])
     
-    inline def `setPublic-user`(value: Bio): Self = StObject.set(x, "public-user", value.asInstanceOf[js.Any])
+    inline def `setPublic-user`(value: Blog): Self = StObject.set(x, "public-user", value.asInstanceOf[js.Any])
     
-    inline def `setPull-request`(value: Automerge): Self = StObject.set(x, "pull-request", value.asInstanceOf[js.Any])
+    inline def `setPull-request`(value: Changedfiles): Self = StObject.set(x, "pull-request", value.asInstanceOf[js.Any])
     
     inline def `setPull-request-merge-result`(value: Merged): Self = StObject.set(x, "pull-request-merge-result", value.asInstanceOf[js.Any])
     
-    inline def `setPull-request-minimal`(value: Base): Self = StObject.set(x, "pull-request-minimal", value.asInstanceOf[js.Any])
+    inline def `setPull-request-minimal`(value: HeadId): Self = StObject.set(x, "pull-request-minimal", value.asInstanceOf[js.Any])
     
-    inline def `setPull-request-review`(value: AuthorassociationBody): Self = StObject.set(x, "pull-request-review", value.asInstanceOf[js.Any])
+    inline def `setPull-request-review`(value: BodyhtmlBodytext): Self = StObject.set(x, "pull-request-review", value.asInstanceOf[js.Any])
     
     inline def `setPull-request-review-comment`(value: Diffhunk): Self = StObject.set(x, "pull-request-review-comment", value.asInstanceOf[js.Any])
     
-    inline def `setPull-request-review-request`(value: TeamsUsers): Self = StObject.set(x, "pull-request-review-request", value.asInstanceOf[js.Any])
+    inline def `setPull-request-review-request`(value: UsersArray): Self = StObject.set(x, "pull-request-review-request", value.asInstanceOf[js.Any])
     
-    inline def `setPull-request-simple`(value: Assignees): Self = StObject.set(x, "pull-request-simple", value.asInstanceOf[js.Any])
+    inline def `setPull-request-simple`(value: Issueurl): Self = StObject.set(x, "pull-request-simple", value.asInstanceOf[js.Any])
     
     inline def `setRate-limit`(value: Remaining): Self = StObject.set(x, "rate-limit", value.asInstanceOf[js.Any])
     
@@ -3037,9 +3037,9 @@ object Actionsbillingusage {
     
     inline def setReaction(value: ContentCreatedat): Self = StObject.set(x, "reaction", value.asInstanceOf[js.Any])
     
-    inline def `setReaction-rollup`(value: `1`): Self = StObject.set(x, "reaction-rollup", value.asInstanceOf[js.Any])
+    inline def `setReaction-rollup`(value: Confused): Self = StObject.set(x, "reaction-rollup", value.asInstanceOf[js.Any])
     
-    inline def `setReferenced-workflow`(value: Path): Self = StObject.set(x, "referenced-workflow", value.asInstanceOf[js.Any])
+    inline def `setReferenced-workflow`(value: PathRef): Self = StObject.set(x, "referenced-workflow", value.asInstanceOf[js.Any])
     
     inline def `setReferrer-traffic`(value: Referrer): Self = StObject.set(x, "referrer-traffic", value.asInstanceOf[js.Any])
     
@@ -3047,7 +3047,7 @@ object Actionsbillingusage {
     
     inline def `setRelease-asset`(value: Browserdownloadurl): Self = StObject.set(x, "release-asset", value.asInstanceOf[js.Any])
     
-    inline def `setRelease-notes-content`(value: BodyName): Self = StObject.set(x, "release-notes-content", value.asInstanceOf[js.Any])
+    inline def `setRelease-notes-content`(value: BodyString): Self = StObject.set(x, "release-notes-content", value.asInstanceOf[js.Any])
     
     inline def `setRemoved-from-project-issue-event`(value: Projectcard): Self = StObject.set(x, "removed-from-project-issue-event", value.asInstanceOf[js.Any])
     
@@ -3055,15 +3055,15 @@ object Actionsbillingusage {
     
     inline def `setRepo-codespaces-secret`(value: CreatedatName): Self = StObject.set(x, "repo-codespaces-secret", value.asInstanceOf[js.Any])
     
-    inline def `setRepo-search-result-item`(value: Collaboratorsurl): Self = StObject.set(x, "repo-search-result-item", value.asInstanceOf[js.Any])
+    inline def `setRepo-search-result-item`(value: Contentsurl): Self = StObject.set(x, "repo-search-result-item", value.asInstanceOf[js.Any])
     
-    inline def setRepository(value: Allowforking): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setRepository(value: Allowsquashmerge): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
     inline def `setRepository-collaborator-permission`(value: Rolename): Self = StObject.set(x, "repository-collaborator-permission", value.asInstanceOf[js.Any])
     
     inline def `setRepository-invitation`(value: Expired): Self = StObject.set(x, "repository-invitation", value.asInstanceOf[js.Any])
     
-    inline def `setRepository-subscription`(value: Repositoryurl): Self = StObject.set(x, "repository-subscription", value.asInstanceOf[js.Any])
+    inline def `setRepository-subscription`(value: CreatedatIgnored): Self = StObject.set(x, "repository-subscription", value.asInstanceOf[js.Any])
     
     inline def `setReview-comment`(value: Originalcommitid): Self = StObject.set(x, "review-comment", value.asInstanceOf[js.Any])
     
@@ -3079,11 +3079,11 @@ object Actionsbillingusage {
     
     inline def `setRunner-application`(value: Architecture): Self = StObject.set(x, "runner-application", value.asInstanceOf[js.Any])
     
-    inline def `setRunner-groups-enterprise`(value: Allowspublicrepositories): Self = StObject.set(x, "runner-groups-enterprise", value.asInstanceOf[js.Any])
+    inline def `setRunner-groups-enterprise`(value: Default): Self = StObject.set(x, "runner-groups-enterprise", value.asInstanceOf[js.Any])
     
-    inline def `setRunner-groups-org`(value: Default): Self = StObject.set(x, "runner-groups-org", value.asInstanceOf[js.Any])
+    inline def `setRunner-groups-org`(value: Inherited): Self = StObject.set(x, "runner-groups-org", value.asInstanceOf[js.Any])
     
-    inline def `setRunner-label`(value: Id): Self = StObject.set(x, "runner-label", value.asInstanceOf[js.Any])
+    inline def `setRunner-label`(value: IdName): Self = StObject.set(x, "runner-label", value.asInstanceOf[js.Any])
     
     inline def `setScim-error`(value: Detail): Self = StObject.set(x, "scim-error", value.asInstanceOf[js.Any])
     
@@ -3107,7 +3107,7 @@ object Actionsbillingusage {
     
     inline def `setSecret-scanning-location-commit`(value: Blobsha): Self = StObject.set(x, "secret-scanning-location-commit", value.asInstanceOf[js.Any])
     
-    inline def `setSecurity-and-analysis`(value: Advancedsecurity): Self = StObject.set(x, "security-and-analysis", value.asInstanceOf[js.Any])
+    inline def `setSecurity-and-analysis`(value: Secretscanning): Self = StObject.set(x, "security-and-analysis", value.asInstanceOf[js.Any])
     
     inline def `setSecurity-and-analysisNull`: Self = StObject.set(x, "security-and-analysis", null)
     
@@ -3123,9 +3123,9 @@ object Actionsbillingusage {
     
     inline def `setShort-branch`(value: Commit): Self = StObject.set(x, "short-branch", value.asInstanceOf[js.Any])
     
-    inline def `setSimple-commit`(value: Committer): Self = StObject.set(x, "simple-commit", value.asInstanceOf[js.Any])
+    inline def `setSimple-commit`(value: Timestamp): Self = StObject.set(x, "simple-commit", value.asInstanceOf[js.Any])
     
-    inline def `setSimple-commit-status`(value: Context): Self = StObject.set(x, "simple-commit-status", value.asInstanceOf[js.Any])
+    inline def `setSimple-commit-status`(value: Required): Self = StObject.set(x, "simple-commit-status", value.asInstanceOf[js.Any])
     
     inline def `setSimple-installation`(value: NodeidString): Self = StObject.set(x, "simple-installation", value.asInstanceOf[js.Any])
     
@@ -3135,7 +3135,7 @@ object Actionsbillingusage {
     
     inline def setSnapshot(value: Detector): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
     
-    inline def `setSsh-signing-key`(value: CreatedatId): Self = StObject.set(x, "ssh-signing-key", value.asInstanceOf[js.Any])
+    inline def `setSsh-signing-key`(value: CreatedatIdKey): Self = StObject.set(x, "ssh-signing-key", value.asInstanceOf[js.Any])
     
     inline def setStargazer(value: Starredat): Self = StObject.set(x, "stargazer", value.asInstanceOf[js.Any])
     
@@ -3143,39 +3143,39 @@ object Actionsbillingusage {
     
     inline def `setState-change-issue-event`(value: Statereason): Self = StObject.set(x, "state-change-issue-event", value.asInstanceOf[js.Any])
     
-    inline def setStatus(value: State): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: AvatarurlContext): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    inline def `setStatus-check-policy`(value: Contexts): Self = StObject.set(x, "status-check-policy", value.asInstanceOf[js.Any])
+    inline def `setStatus-check-policy`(value: Strict): Self = StObject.set(x, "status-check-policy", value.asInstanceOf[js.Any])
     
     inline def setTag(value: Tarballurl): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    inline def `setTag-protection`(value: Pattern): Self = StObject.set(x, "tag-protection", value.asInstanceOf[js.Any])
+    inline def `setTag-protection`(value: CreatedatEnabled): Self = StObject.set(x, "tag-protection", value.asInstanceOf[js.Any])
     
     inline def setTeam(value: Membersurl): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
     
-    inline def `setTeam-discussion`(value: Author): Self = StObject.set(x, "team-discussion", value.asInstanceOf[js.Any])
+    inline def `setTeam-discussion`(value: Bodyversion): Self = StObject.set(x, "team-discussion", value.asInstanceOf[js.Any])
     
-    inline def `setTeam-discussion-comment`(value: Bodyversion): Self = StObject.set(x, "team-discussion-comment", value.asInstanceOf[js.Any])
+    inline def `setTeam-discussion-comment`(value: Discussionurl): Self = StObject.set(x, "team-discussion-comment", value.asInstanceOf[js.Any])
     
     inline def `setTeam-full`(value: Memberscount): Self = StObject.set(x, "team-full", value.asInstanceOf[js.Any])
     
-    inline def `setTeam-membership`(value: Role): Self = StObject.set(x, "team-membership", value.asInstanceOf[js.Any])
+    inline def `setTeam-membership`(value: RoleState): Self = StObject.set(x, "team-membership", value.asInstanceOf[js.Any])
     
-    inline def `setTeam-organization`(value: Billingemail): Self = StObject.set(x, "team-organization", value.asInstanceOf[js.Any])
+    inline def `setTeam-organization`(value: Company): Self = StObject.set(x, "team-organization", value.asInstanceOf[js.Any])
     
     inline def `setTeam-project`(value: Number): Self = StObject.set(x, "team-project", value.asInstanceOf[js.Any])
     
-    inline def `setTeam-repository`(value: Allowrebasemerge): Self = StObject.set(x, "team-repository", value.asInstanceOf[js.Any])
+    inline def `setTeam-repository`(value: Cloneurl): Self = StObject.set(x, "team-repository", value.asInstanceOf[js.Any])
     
     inline def `setTeam-simple`(value: Ldapdn): Self = StObject.set(x, "team-simple", value.asInstanceOf[js.Any])
     
-    inline def setThread(value: Lastreadat): Self = StObject.set(x, "thread", value.asInstanceOf[js.Any])
+    inline def setThread(value: Reason): Self = StObject.set(x, "thread", value.asInstanceOf[js.Any])
     
-    inline def `setThread-subscription`(value: Ignored): Self = StObject.set(x, "thread-subscription", value.asInstanceOf[js.Any])
+    inline def `setThread-subscription`(value: Repositoryurl): Self = StObject.set(x, "thread-subscription", value.asInstanceOf[js.Any])
     
     inline def `setTimeline-assigned-issue-event`(value: AssigneeCommitid): Self = StObject.set(x, "timeline-assigned-issue-event", value.asInstanceOf[js.Any])
     
-    inline def `setTimeline-comment-event`(value: Bodytext): Self = StObject.set(x, "timeline-comment-event", value.asInstanceOf[js.Any])
+    inline def `setTimeline-comment-event`(value: ActorAuthorassociation): Self = StObject.set(x, "timeline-comment-event", value.asInstanceOf[js.Any])
     
     inline def `setTimeline-commit-commented-event`(value: CommentsCommitid): Self = StObject.set(x, "timeline-commit-commented-event", value.asInstanceOf[js.Any])
     
@@ -3184,7 +3184,7 @@ object Actionsbillingusage {
     inline def `setTimeline-cross-referenced-event`(value: ActorCreatedat): Self = StObject.set(x, "timeline-cross-referenced-event", value.asInstanceOf[js.Any])
     
     inline def `setTimeline-issue-events`(
-      value: Partial[CommitidCommiturl] & Partial[CreatedatEvent] & Partial[EventId_] & Partial[Requestedteam] & Partial[CreatedatDismissedreview] & Partial[IdLockreason] & Partial[IdNodeid] & Partial[NodeidPerformedviagithubapp] & Partial[Issueurl] & Partial[EventSource] & Partial[CommitterEvent] & Partial[Submittedat] & Partial[EventNodeid] & Partial[CommitidEvent] & Partial[PerformedviagithubappUrl] & Partial[PerformedviagithubappStatereason]
+      value: Partial[EventId_] & Partial[IdMilestone] & Partial[NodeidPerformedviagithubapp] & Partial[Requestedteam] & Partial[CreatedatDismissedreview] & Partial[IdLockreason] & Partial[PerformedviagithubappProjectcard] & Partial[ProjectcardUrl] & Partial[BodyBodyhtml] & Partial[EventSource] & Partial[CommitterEvent] & Partial[Submittedat] & Partial[EventNodeid] & Partial[CommitidEvent] & Partial[PerformedviagithubappUrl] & Partial[PerformedviagithubappStatereason]
     ): Self = StObject.set(x, "timeline-issue-events", value.asInstanceOf[js.Any])
     
     inline def `setTimeline-line-commented-event`(value: CommentsEvent): Self = StObject.set(x, "timeline-line-commented-event", value.asInstanceOf[js.Any])
@@ -3201,23 +3201,23 @@ object Actionsbillingusage {
     
     inline def `setUnassigned-issue-event`(value: AssigneeAssigner): Self = StObject.set(x, "unassigned-issue-event", value.asInstanceOf[js.Any])
     
-    inline def `setUnlabeled-issue-event`(value: Event): Self = StObject.set(x, "unlabeled-issue-event", value.asInstanceOf[js.Any])
+    inline def `setUnlabeled-issue-event`(value: ActorCommitid): Self = StObject.set(x, "unlabeled-issue-event", value.asInstanceOf[js.Any])
     
     inline def `setUser-marketplace-purchase`(value: Freetrialendson): Self = StObject.set(x, "user-marketplace-purchase", value.asInstanceOf[js.Any])
     
-    inline def `setUser-search-result-item`(value: Blog): Self = StObject.set(x, "user-search-result-item", value.asInstanceOf[js.Any])
+    inline def `setUser-search-result-item`(value: Followers): Self = StObject.set(x, "user-search-result-item", value.asInstanceOf[js.Any])
     
-    inline def `setValidation-error`(value: Message): Self = StObject.set(x, "validation-error", value.asInstanceOf[js.Any])
+    inline def `setValidation-error`(value: DocumentationurlErrorsMessage): Self = StObject.set(x, "validation-error", value.asInstanceOf[js.Any])
     
-    inline def `setValidation-error-simple`(value: Errors): Self = StObject.set(x, "validation-error-simple", value.asInstanceOf[js.Any])
+    inline def `setValidation-error-simple`(value: ErrorsMessage): Self = StObject.set(x, "validation-error-simple", value.asInstanceOf[js.Any])
     
-    inline def setVerification(value: Reason): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
+    inline def setVerification(value: Signature): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
     
     inline def `setView-traffic`(value: Views): Self = StObject.set(x, "view-traffic", value.asInstanceOf[js.Any])
     
     inline def `setWait-timer`(value: Double): Self = StObject.set(x, "wait-timer", value.asInstanceOf[js.Any])
     
-    inline def `setWebhook-config`(value: Contenttype): Self = StObject.set(x, "webhook-config", value.asInstanceOf[js.Any])
+    inline def `setWebhook-config`(value: ContenttypeInsecuressl): Self = StObject.set(x, "webhook-config", value.asInstanceOf[js.Any])
     
     inline def `setWebhook-config-content-type`(value: String): Self = StObject.set(x, "webhook-config-content-type", value.asInstanceOf[js.Any])
     
@@ -3237,6 +3237,6 @@ object Actionsbillingusage {
     
     inline def `setWorkflow-usage`(value: BillableWINDOWS): Self = StObject.set(x, "workflow-usage", value.asInstanceOf[js.Any])
     
-    inline def set_package(value: Owner): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+    inline def set_package(value: Repository): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
   }
 }

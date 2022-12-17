@@ -11,7 +11,7 @@ trait PickImplbackspacePartialP
   extends StObject
      with Param {
   
-  var backspace: Double & js.UndefOr[Double]
+  var backspace: Double
   
   var deleteKey: js.UndefOr[Double] = js.undefined
   
@@ -35,14 +35,14 @@ trait PickImplbackspacePartialP
 }
 object PickImplbackspacePartialP {
   
-  inline def apply(backspace: Double & js.UndefOr[Double]): PickImplbackspacePartialP = {
+  inline def apply(backspace: Double): PickImplbackspacePartialP = {
     val __obj = js.Dynamic.literal(backspace = backspace.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplbackspacePartialP]
   }
   
   extension [Self <: PickImplbackspacePartialP](x: Self) {
     
-    inline def setBackspace(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "backspace", value.asInstanceOf[js.Any])
+    inline def setBackspace(value: Double): Self = StObject.set(x, "backspace", value.asInstanceOf[js.Any])
     
     inline def setDeleteKey(value: Double): Self = StObject.set(x, "deleteKey", value.asInstanceOf[js.Any])
     

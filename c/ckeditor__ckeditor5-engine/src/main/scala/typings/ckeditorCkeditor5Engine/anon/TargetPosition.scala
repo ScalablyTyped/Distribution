@@ -12,9 +12,9 @@ trait TargetPosition extends StObject {
   
   var howMany: Double
   
-  var sourcePosition: ReturnType[js.Function0[Path]]
+  var sourcePosition: ReturnType[js.Function0[Root]]
   
-  var targetPosition: ReturnType[js.Function0[Path]]
+  var targetPosition: ReturnType[js.Function0[Root]]
   
   var `type`: remove | reinsert | move
 }
@@ -22,8 +22,8 @@ object TargetPosition {
   
   inline def apply(
     howMany: Double,
-    sourcePosition: ReturnType[js.Function0[Path]],
-    targetPosition: ReturnType[js.Function0[Path]],
+    sourcePosition: ReturnType[js.Function0[Root]],
+    targetPosition: ReturnType[js.Function0[Root]],
     `type`: remove | reinsert | move
   ): TargetPosition = {
     val __obj = js.Dynamic.literal(howMany = howMany.asInstanceOf[js.Any], sourcePosition = sourcePosition.asInstanceOf[js.Any], targetPosition = targetPosition.asInstanceOf[js.Any])
@@ -35,9 +35,9 @@ object TargetPosition {
     
     inline def setHowMany(value: Double): Self = StObject.set(x, "howMany", value.asInstanceOf[js.Any])
     
-    inline def setSourcePosition(value: ReturnType[js.Function0[Path]]): Self = StObject.set(x, "sourcePosition", value.asInstanceOf[js.Any])
+    inline def setSourcePosition(value: ReturnType[js.Function0[Root]]): Self = StObject.set(x, "sourcePosition", value.asInstanceOf[js.Any])
     
-    inline def setTargetPosition(value: ReturnType[js.Function0[Path]]): Self = StObject.set(x, "targetPosition", value.asInstanceOf[js.Any])
+    inline def setTargetPosition(value: ReturnType[js.Function0[Root]]): Self = StObject.set(x, "targetPosition", value.asInstanceOf[js.Any])
     
     inline def setType(value: remove | reinsert | move): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

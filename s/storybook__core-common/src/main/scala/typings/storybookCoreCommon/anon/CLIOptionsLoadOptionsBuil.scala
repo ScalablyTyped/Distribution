@@ -22,7 +22,7 @@ trait CLIOptionsLoadOptionsBuil extends StObject {
   
   var ci: js.UndefOr[Boolean] = js.undefined
   
-  var configDir: js.UndefOr[String] & String
+  var configDir: js.UndefOr[String] = js.undefined
   
   var configType: js.UndefOr[DEVELOPMENT | PRODUCTION] = js.undefined
   
@@ -69,7 +69,7 @@ trait CLIOptionsLoadOptionsBuil extends StObject {
   
   var https: js.UndefOr[Boolean] = js.undefined
   
-  var ignorePreview: js.UndefOr[Boolean] & Boolean
+  var ignorePreview: js.UndefOr[Boolean] = js.undefined
   
   var loglevel: js.UndefOr[String] = js.undefined
   
@@ -122,16 +122,14 @@ object CLIOptionsLoadOptionsBuil {
   
   inline def apply(
     cache: FileSystemCache,
-    configDir: js.UndefOr[String] & String,
     corePresets: js.Array[String],
     docsMode: Boolean,
     framework: String,
     frameworkPresets: js.Array[String],
-    ignorePreview: js.UndefOr[Boolean] & Boolean,
     overridePresets: js.Array[String],
     packageJson: PackageJson
   ): CLIOptionsLoadOptionsBuil = {
-    val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], configDir = configDir.asInstanceOf[js.Any], corePresets = corePresets.asInstanceOf[js.Any], docsMode = docsMode.asInstanceOf[js.Any], framework = framework.asInstanceOf[js.Any], frameworkPresets = frameworkPresets.asInstanceOf[js.Any], ignorePreview = ignorePreview.asInstanceOf[js.Any], overridePresets = overridePresets.asInstanceOf[js.Any], packageJson = packageJson.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], corePresets = corePresets.asInstanceOf[js.Any], docsMode = docsMode.asInstanceOf[js.Any], framework = framework.asInstanceOf[js.Any], frameworkPresets = frameworkPresets.asInstanceOf[js.Any], overridePresets = overridePresets.asInstanceOf[js.Any], packageJson = packageJson.asInstanceOf[js.Any])
     __obj.asInstanceOf[CLIOptionsLoadOptionsBuil]
   }
   
@@ -143,7 +141,9 @@ object CLIOptionsLoadOptionsBuil {
     
     inline def setCiUndefined: Self = StObject.set(x, "ci", js.undefined)
     
-    inline def setConfigDir(value: js.UndefOr[String] & String): Self = StObject.set(x, "configDir", value.asInstanceOf[js.Any])
+    inline def setConfigDir(value: String): Self = StObject.set(x, "configDir", value.asInstanceOf[js.Any])
+    
+    inline def setConfigDirUndefined: Self = StObject.set(x, "configDir", js.undefined)
     
     inline def setConfigType(value: DEVELOPMENT | PRODUCTION): Self = StObject.set(x, "configType", value.asInstanceOf[js.Any])
     
@@ -217,7 +217,9 @@ object CLIOptionsLoadOptionsBuil {
     
     inline def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
     
-    inline def setIgnorePreview(value: js.UndefOr[Boolean] & Boolean): Self = StObject.set(x, "ignorePreview", value.asInstanceOf[js.Any])
+    inline def setIgnorePreview(value: Boolean): Self = StObject.set(x, "ignorePreview", value.asInstanceOf[js.Any])
+    
+    inline def setIgnorePreviewUndefined: Self = StObject.set(x, "ignorePreview", js.undefined)
     
     inline def setLoglevel(value: String): Self = StObject.set(x, "loglevel", value.asInstanceOf[js.Any])
     

@@ -8,7 +8,7 @@ trait Id extends StObject {
   
   var id: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.undefined
+  var value: js.UndefOr[String] = js.undefined
 }
 object Id {
   
@@ -23,8 +23,8 @@ object Id {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

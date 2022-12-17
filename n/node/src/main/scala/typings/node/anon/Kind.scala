@@ -1,6 +1,6 @@
 package typings.node.anon
 
-import typings.node.nodeStrings.positional
+import typings.node.nodeStrings.`option-terminator`
 import typings.node.utilMod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,14 +12,12 @@ trait Kind
   
   var index: Double
   
-  var kind: positional
-  
-  var value: String
+  var kind: `option-terminator`
 }
 object Kind {
   
-  inline def apply(index: Double, value: String): Kind = {
-    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], kind = "positional", value = value.asInstanceOf[js.Any])
+  inline def apply(index: Double): Kind = {
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], kind = "option-terminator")
     __obj.asInstanceOf[Kind]
   }
   
@@ -27,8 +25,6 @@ object Kind {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    inline def setKind(value: positional): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
-    
-    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setKind(value: `option-terminator`): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }
 }

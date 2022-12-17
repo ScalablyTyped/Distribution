@@ -1,5 +1,6 @@
 package typings.webpack.mod
 
+import typings.node.NodeJS.CallSite
 import typings.std.Error
 import typings.webpack.anon.Read
 import typings.webpack.anon.Write
@@ -7,60 +8,65 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WebpackError
+@JSImport("webpack", "WebpackError")
+@js.native
+/**
+	 * Creates an instance of WebpackError.
+	 */
+open class WebpackError ()
   extends StObject
      with Error {
+  def this(message: String) = this()
   
-  var chunk: Chunk
+  var chunk: Chunk = js.native
   
-  def deserialize(__0: Read): Unit
+  def deserialize(__0: Read): Unit = js.native
   
-  var details: Any
+  var details: Any = js.native
   
-  var file: String
+  var file: String = js.native
   
-  var hideStack: Boolean
+  var hideStack: Boolean = js.native
   
-  var loc: DependencyLocation
+  var loc: DependencyLocation = js.native
   
-  var module: Module
+  /* standard es5 */
+  /* CompleteClass */
+  var message: String = js.native
   
-  def serialize(__0: Write): Unit
+  var module: Module = js.native
+  
+  /* standard es5 */
+  /* CompleteClass */
+  var name: String = js.native
+  
+  def serialize(__0: Write): Unit = js.native
 }
 object WebpackError {
   
-  inline def apply(
-    chunk: Chunk,
-    deserialize: Read => Unit,
-    details: Any,
-    file: String,
-    hideStack: Boolean,
-    loc: DependencyLocation,
-    message: String,
-    module: Module,
-    name: String,
-    serialize: Write => Unit
-  ): WebpackError = {
-    val __obj = js.Dynamic.literal(chunk = chunk.asInstanceOf[js.Any], deserialize = js.Any.fromFunction1(deserialize), details = details.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], hideStack = hideStack.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], module = module.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], serialize = js.Any.fromFunction1(serialize))
-    __obj.asInstanceOf[WebpackError]
-  }
+  @JSImport("webpack", "WebpackError")
+  @js.native
+  val ^ : js.Any = js.native
   
-  extension [Self <: WebpackError](x: Self) {
-    
-    inline def setChunk(value: Chunk): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
-    
-    inline def setDeserialize(value: Read => Unit): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
-    
-    inline def setDetails(value: Any): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
-    
-    inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
-    
-    inline def setHideStack(value: Boolean): Self = StObject.set(x, "hideStack", value.asInstanceOf[js.Any])
-    
-    inline def setLoc(value: DependencyLocation): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
-    
-    inline def setModule(value: Module): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
-    
-    inline def setSerialize(value: Write => Unit): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
-  }
+  /**
+  	 * Create .stack property on a target object
+  	 */
+  /* static member */
+  inline def captureStackTrace(targetObject: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("captureStackTrace")(targetObject.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def captureStackTrace(targetObject: js.Object, constructorOpt: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("captureStackTrace")(targetObject.asInstanceOf[js.Any], constructorOpt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /**
+  	 * Optional override for formatting stack traces
+  	 */
+  /* static member */
+  @JSImport("webpack", "WebpackError.prepareStackTrace")
+  @js.native
+  def prepareStackTrace: js.UndefOr[js.Function2[/* err */ js.Error, /* stackTraces */ js.Array[CallSite], Any]] = js.native
+  inline def prepareStackTrace_=(x: js.UndefOr[js.Function2[/* err */ js.Error, /* stackTraces */ js.Array[CallSite], Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prepareStackTrace")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("webpack", "WebpackError.stackTraceLimit")
+  @js.native
+  def stackTraceLimit: Double = js.native
+  inline def stackTraceLimit_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stackTraceLimit")(x.asInstanceOf[js.Any])
 }

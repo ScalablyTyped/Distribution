@@ -10,7 +10,7 @@ import typings.reactNative.anon.AutoscrollToTopThreshold
 import typings.reactNative.anon.AverageItemLength
 import typings.reactNative.anon.Changed
 import typings.reactNative.anon.DistanceFromEnd
-import typings.reactNative.anon.Length
+import typings.reactNative.anon.Index
 import typings.reactNative.anon.Section
 import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
@@ -316,7 +316,7 @@ object anon {
             (js.Array[/* import warning: RewrittenClass.unapply cls was tparam ItemT */ Any]) | Null
           ], 
           /* index */ Double, 
-          Length
+          Index
         ]
       ] = js.undefined
     
@@ -744,7 +744,7 @@ object anon {
       inline def setGetItemLayout(
         value: (/* data */ js.UndefOr[
               (js.Array[/* import warning: RewrittenClass.unapply cls was tparam ItemT */ Any]) | Null
-            ], /* index */ Double) => Length
+            ], /* index */ Double) => Index
       ): Self = StObject.set(x, "getItemLayout", js.Any.fromFunction2(value))
       
       inline def setGetItemLayoutUndefined: Self = StObject.set(x, "getItemLayout", js.undefined)
@@ -1963,7 +1963,7 @@ object anon {
             ]
           ]) | Null, 
           /* index */ Double, 
-          Length
+          Index
         ]
       ] = js.undefined
     
@@ -2421,7 +2421,7 @@ object anon {
                 /* import warning: RewrittenClass.unapply cls was tparam ItemT */ Any, 
                 /* import warning: RewrittenClass.unapply cls was tparam SectionT */ Any
               ]
-            ]) | Null, /* index */ Double) => Length
+            ]) | Null, /* index */ Double) => Index
       ): Self = StObject.set(x, "getItemLayout", js.Any.fromFunction2(value))
       
       inline def setGetItemLayoutUndefined: Self = StObject.set(x, "getItemLayout", js.undefined)

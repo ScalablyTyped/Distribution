@@ -1,7 +1,6 @@
 package typings.libnpmsearch
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.libnpmsearch.libnpmsearchBooleans.`true`
 import typings.libnpmsearch.libnpmsearchStrings.maintenance
 import typings.libnpmsearch.libnpmsearchStrings.optimal
 import typings.libnpmsearch.libnpmsearchStrings.popularity
@@ -151,7 +150,7 @@ object anon {
       * other two containing details about how that package scored. Useful
       * for UIs. Default: `false`
       */
-    var detailed: js.UndefOr[Boolean] & `true`
+    var detailed: js.UndefOr[Boolean] = js.undefined
     
     var email: js.UndefOr[String] = js.undefined
     
@@ -499,8 +498,8 @@ object anon {
   }
   object Optionsdetailedtrue {
     
-    inline def apply(detailed: js.UndefOr[Boolean] & `true`): Optionsdetailedtrue = {
-      val __obj = js.Dynamic.literal(detailed = detailed.asInstanceOf[js.Any])
+    inline def apply(): Optionsdetailedtrue = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Optionsdetailedtrue]
     }
     
@@ -538,7 +537,9 @@ object anon {
       
       inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
       
-      inline def setDetailed(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "detailed", value.asInstanceOf[js.Any])
+      inline def setDetailed(value: Boolean): Self = StObject.set(x, "detailed", value.asInstanceOf[js.Any])
+      
+      inline def setDetailedUndefined: Self = StObject.set(x, "detailed", js.undefined)
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       

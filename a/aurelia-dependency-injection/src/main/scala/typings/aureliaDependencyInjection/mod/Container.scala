@@ -1,7 +1,7 @@
 package typings.aureliaDependencyInjection.mod
 
-import typings.aureliaDependencyInjection.anon.Inject
 import typings.aureliaDependencyInjection.anon.TypeofContainer
+import typings.aureliaDependencyInjection.anon.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class Container () extends StObject {
   def this(configuration: ContainerConfiguration) = this()
   
-  def _createInvocationHandler[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](fn: (DependencyCtorOrFunctor[TBase, TImpl, TArgs]) & Inject): InvocationHandler[TBase, TImpl, TArgs] = js.native
+  def _createInvocationHandler[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](fn: (DependencyCtorOrFunctor[TBase, TImpl, TArgs]) & `1`): InvocationHandler[TBase, TImpl, TArgs] = js.native
   
   def _get(key: Any): Any = js.native
   

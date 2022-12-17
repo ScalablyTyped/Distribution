@@ -21,7 +21,7 @@ trait ContentDownloadurl extends StObject {
   /** Format: uri */
   var html_url: String | Null
   
-  var license: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-license-simple'] */ js.Any
+  var license: Nodeid | Null
   
   var name: String
   
@@ -42,7 +42,6 @@ object ContentDownloadurl {
     _links: Git,
     content: String,
     encoding: String,
-    license: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-license-simple'] */ js.Any,
     name: String,
     path: String,
     sha: String,
@@ -50,7 +49,7 @@ object ContentDownloadurl {
     `type`: String,
     url: String
   ): ContentDownloadurl = {
-    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], license = license.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], download_url = null, git_url = null, html_url = null)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], download_url = null, git_url = null, html_url = null, license = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentDownloadurl]
   }
@@ -73,9 +72,9 @@ object ContentDownloadurl {
     
     inline def setHtml_urlNull: Self = StObject.set(x, "html_url", null)
     
-    inline def setLicense(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-license-simple'] */ js.Any
-    ): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
+    inline def setLicense(value: Nodeid): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
+    
+    inline def setLicenseNull: Self = StObject.set(x, "license", null)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

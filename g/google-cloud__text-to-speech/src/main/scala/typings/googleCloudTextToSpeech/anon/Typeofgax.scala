@@ -275,7 +275,7 @@ trait Typeofgax extends StObject {
   
   val grpc: Typeofgrpc = js.native
   
-  val lro: Any = js.native
+  val lro: Typeoflro = js.native
   
   def operation(op: LROOperation, longrunningDescriptor: LongRunningDescriptor, backoffSettings: BackoffSettings): typings.googleGax.buildSrcLongRunningCallsLongrunningMod.Operation_ = js.native
   def operation(

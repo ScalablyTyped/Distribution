@@ -6,19 +6,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `201ContentApplicationjsonNodeidUser` extends StObject {
   
-  /** Response */
+  /** Reaction exists */
+  var `200`: ContentApplicationjsonNodeidUser
+  
+  /** Reaction created */
   var `201`: ContentApplicationjsonNodeidUser
+  
+  var `422`: Content397
 }
 object `201ContentApplicationjsonNodeidUser` {
   
-  inline def apply(`201`: ContentApplicationjsonNodeidUser): `201ContentApplicationjsonNodeidUser` = {
+  inline def apply(
+    `200`: ContentApplicationjsonNodeidUser,
+    `201`: ContentApplicationjsonNodeidUser,
+    `422`: Content397
+  ): `201ContentApplicationjsonNodeidUser` = {
     val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
     __obj.updateDynamic("201")(`201`.asInstanceOf[js.Any])
+    __obj.updateDynamic("422")(`422`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`201ContentApplicationjsonNodeidUser`]
   }
   
   extension [Self <: `201ContentApplicationjsonNodeidUser`](x: Self) {
     
+    inline def set200(value: ContentApplicationjsonNodeidUser): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+    
     inline def set201(value: ContentApplicationjsonNodeidUser): Self = StObject.set(x, "201", value.asInstanceOf[js.Any])
+    
+    inline def set422(value: Content397): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
   }
 }

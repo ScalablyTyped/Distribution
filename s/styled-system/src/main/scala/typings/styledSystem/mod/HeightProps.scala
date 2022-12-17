@@ -29,6 +29,6 @@ object HeightProps {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setHeightVarargs(value: (TVal | Null)*): Self = StObject.set(x, "height", js.Array(value :_*))
+    inline def setHeightVarargs(value: (TVal | Null)*): Self = StObject.set(x, "height", js.Array(value*))
   }
 }

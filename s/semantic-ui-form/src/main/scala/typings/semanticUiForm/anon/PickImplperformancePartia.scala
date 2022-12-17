@@ -68,7 +68,7 @@ trait PickImplperformancePartia
   
   var onValid: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
-  var performance: Boolean & js.UndefOr[Boolean]
+  var performance: Boolean
   
   var prompt: js.UndefOr[PromptSettings] = js.undefined
   
@@ -92,7 +92,7 @@ trait PickImplperformancePartia
 }
 object PickImplperformancePartia {
   
-  inline def apply(performance: Boolean & js.UndefOr[Boolean]): PickImplperformancePartia = {
+  inline def apply(performance: Boolean): PickImplperformancePartia = {
     val __obj = js.Dynamic.literal(performance = performance.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplperformancePartia]
   }
@@ -176,7 +176,7 @@ object PickImplperformancePartia {
     
     inline def setOnValidUndefined: Self = StObject.set(x, "onValid", js.undefined)
     
-    inline def setPerformance(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
+    inline def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
     
     inline def setPrompt(value: PromptSettings): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
     

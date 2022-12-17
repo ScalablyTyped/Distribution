@@ -230,42 +230,42 @@ object Dimmer {
     trait Param extends StObject
     object Param {
       
-      inline def PickImplactivePartialPick(active: String & js.UndefOr[String]): typings.semanticUiDimmer.anon.PickImplactivePartialPick = {
+      inline def PickImplactivePartialPick(active: String): typings.semanticUiDimmer.anon.PickImplactivePartialPick = {
         val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiDimmer.anon.PickImplactivePartialPick]
       }
       
-      inline def PickImpldimmablePartialPiActive(dimmable: String & js.UndefOr[String]): typings.semanticUiDimmer.anon.PickImpldimmablePartialPiActive = {
+      inline def PickImpldimmablePartialPiActive(dimmable: String): typings.semanticUiDimmer.anon.PickImpldimmablePartialPiActive = {
         val __obj = js.Dynamic.literal(dimmable = dimmable.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiDimmer.anon.PickImpldimmablePartialPiActive]
       }
       
-      inline def PickImpldimmedPartialPick(dimmed: String & js.UndefOr[String]): typings.semanticUiDimmer.anon.PickImpldimmedPartialPick = {
+      inline def PickImpldimmedPartialPick(dimmed: String): typings.semanticUiDimmer.anon.PickImpldimmedPartialPick = {
         val __obj = js.Dynamic.literal(dimmed = dimmed.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiDimmer.anon.PickImpldimmedPartialPick]
       }
       
-      inline def PickImpldisabledPartialPi(disabled: String & js.UndefOr[String]): typings.semanticUiDimmer.anon.PickImpldisabledPartialPi = {
+      inline def PickImpldisabledPartialPi(disabled: String): typings.semanticUiDimmer.anon.PickImpldisabledPartialPi = {
         val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiDimmer.anon.PickImpldisabledPartialPi]
       }
       
-      inline def PickImplhidePartialPickImActive(hide: String & js.UndefOr[String]): typings.semanticUiDimmer.anon.PickImplhidePartialPickImActive = {
+      inline def PickImplhidePartialPickImActive(hide: String): typings.semanticUiDimmer.anon.PickImplhidePartialPickImActive = {
         val __obj = js.Dynamic.literal(hide = hide.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiDimmer.anon.PickImplhidePartialPickImActive]
       }
       
-      inline def PickImplpageDimmerPartial(pageDimmer: String & js.UndefOr[String]): typings.semanticUiDimmer.anon.PickImplpageDimmerPartial = {
+      inline def PickImplpageDimmerPartial(pageDimmer: String): typings.semanticUiDimmer.anon.PickImplpageDimmerPartial = {
         val __obj = js.Dynamic.literal(pageDimmer = pageDimmer.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiDimmer.anon.PickImplpageDimmerPartial]
       }
       
-      inline def PickImplshowPartialPickImActive(show: String & js.UndefOr[String]): typings.semanticUiDimmer.anon.PickImplshowPartialPickImActive = {
+      inline def PickImplshowPartialPickImActive(show: String): typings.semanticUiDimmer.anon.PickImplshowPartialPickImActive = {
         val __obj = js.Dynamic.literal(show = show.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiDimmer.anon.PickImplshowPartialPickImActive]
       }
       
-      inline def PickImpltransitionPartialActive(transition: String & js.UndefOr[String]): typings.semanticUiDimmer.anon.PickImpltransitionPartialActive = {
+      inline def PickImpltransitionPartialActive(transition: String): typings.semanticUiDimmer.anon.PickImpltransitionPartialActive = {
         val __obj = js.Dynamic.literal(transition = transition.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiDimmer.anon.PickImpltransitionPartialActive]
       }
@@ -309,12 +309,12 @@ object Dimmer {
     trait Param extends StObject
     object Param {
       
-      inline def PickImplhidePartialPickIm(hide: Double & js.UndefOr[Double]): typings.semanticUiDimmer.anon.PickImplhidePartialPickIm = {
+      inline def PickImplhidePartialPickIm(hide: Double): typings.semanticUiDimmer.anon.PickImplhidePartialPickIm = {
         val __obj = js.Dynamic.literal(hide = hide.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiDimmer.anon.PickImplhidePartialPickIm]
       }
       
-      inline def PickImplshowPartialPickIm(show: Double & js.UndefOr[Double]): typings.semanticUiDimmer.anon.PickImplshowPartialPickIm = {
+      inline def PickImplshowPartialPickIm(show: Double): typings.semanticUiDimmer.anon.PickImplshowPartialPickIm = {
         val __obj = js.Dynamic.literal(show = show.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiDimmer.anon.PickImplshowPartialPickIm]
       }
@@ -325,11 +325,11 @@ object Dimmer {
   /* Inlined semantic-ui-dimmer.SemanticUI.Dimmer.ErrorSettings.Param */
   trait ErrorSettings extends StObject {
     
-    var method: String & js.UndefOr[String]
+    var method: String
   }
   object ErrorSettings {
     
-    inline def apply(method: String & js.UndefOr[String]): ErrorSettings = {
+    inline def apply(method: String): ErrorSettings = {
       val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrorSettings]
     }
@@ -356,24 +356,24 @@ object Dimmer {
     
     extension [Self <: ErrorSettings](x: Self) {
       
-      inline def setMethod(value: String & js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     }
     
     /* Inlined std.Pick<semantic-ui-dimmer.SemanticUI.Dimmer.ErrorSettings._Impl, 'method'> & std.Partial<std.Pick<semantic-ui-dimmer.SemanticUI.Dimmer.ErrorSettings._Impl, keyof semantic-ui-dimmer.SemanticUI.Dimmer.ErrorSettings._Impl>> */
     trait Param extends StObject {
       
-      var method: String & js.UndefOr[String]
+      var method: String
     }
     object Param {
       
-      inline def apply(method: String & js.UndefOr[String]): typings.semanticUiDimmer.SemanticUI.Dimmer.ErrorSettings.Param = {
+      inline def apply(method: String): typings.semanticUiDimmer.SemanticUI.Dimmer.ErrorSettings.Param = {
         val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiDimmer.SemanticUI.Dimmer.ErrorSettings.Param]
       }
       
       extension [Self <: typings.semanticUiDimmer.SemanticUI.Dimmer.ErrorSettings.Param](x: Self) {
         
-        inline def setMethod(value: String & js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+        inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -422,17 +422,17 @@ object Dimmer {
     trait Param extends StObject
     object Param {
       
-      inline def PickImplcontentPartialPic(content: String & js.UndefOr[String]): typings.semanticUiDimmer.anon.PickImplcontentPartialPic = {
+      inline def PickImplcontentPartialPic(content: String): typings.semanticUiDimmer.anon.PickImplcontentPartialPic = {
         val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiDimmer.anon.PickImplcontentPartialPic]
       }
       
-      inline def PickImpldimmablePartialPi(dimmable: String & js.UndefOr[String]): typings.semanticUiDimmer.anon.PickImpldimmablePartialPi = {
+      inline def PickImpldimmablePartialPi(dimmable: String): typings.semanticUiDimmer.anon.PickImpldimmablePartialPi = {
         val __obj = js.Dynamic.literal(dimmable = dimmable.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiDimmer.anon.PickImpldimmablePartialPi]
       }
       
-      inline def PickImpldimmerPartialPick(dimmer: String & js.UndefOr[String]): typings.semanticUiDimmer.anon.PickImpldimmerPartialPick = {
+      inline def PickImpldimmerPartialPick(dimmer: String): typings.semanticUiDimmer.anon.PickImpldimmerPartialPick = {
         val __obj = js.Dynamic.literal(dimmer = dimmer.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiDimmer.anon.PickImpldimmerPartialPick]
       }
@@ -445,12 +445,12 @@ object Dimmer {
     
     def dimmer(): JQuery
     @JSName("dimmer")
-    var dimmer_Original: js.Function0[JQuery] & js.UndefOr[js.Function0[JQuery]]
+    var dimmer_Original: js.Function0[JQuery]
   }
   object TemplateSettings {
     
-    inline def apply(dimmer: js.Function0[JQuery] & js.UndefOr[js.Function0[JQuery]]): TemplateSettings = {
-      val __obj = js.Dynamic.literal(dimmer = dimmer.asInstanceOf[js.Any])
+    inline def apply(dimmer: () => JQuery): TemplateSettings = {
+      val __obj = js.Dynamic.literal(dimmer = js.Any.fromFunction0(dimmer))
       __obj.asInstanceOf[TemplateSettings]
     }
     
@@ -473,7 +473,7 @@ object Dimmer {
     
     extension [Self <: TemplateSettings](x: Self) {
       
-      inline def setDimmer(value: js.Function0[JQuery] & js.UndefOr[js.Function0[JQuery]]): Self = StObject.set(x, "dimmer", value.asInstanceOf[js.Any])
+      inline def setDimmer(value: () => JQuery): Self = StObject.set(x, "dimmer", js.Any.fromFunction0(value))
     }
     
     /* Inlined std.Pick<semantic-ui-dimmer.SemanticUI.Dimmer.TemplateSettings._Impl, 'dimmer'> & std.Partial<std.Pick<semantic-ui-dimmer.SemanticUI.Dimmer.TemplateSettings._Impl, keyof semantic-ui-dimmer.SemanticUI.Dimmer.TemplateSettings._Impl>> */
@@ -481,18 +481,18 @@ object Dimmer {
       
       def dimmer(): JQuery
       @JSName("dimmer")
-      var dimmer_Original: js.Function0[JQuery] & js.UndefOr[js.Function0[JQuery]]
+      var dimmer_Original: js.Function0[JQuery]
     }
     object Param {
       
-      inline def apply(dimmer: js.Function0[JQuery] & js.UndefOr[js.Function0[JQuery]]): typings.semanticUiDimmer.SemanticUI.Dimmer.TemplateSettings.Param = {
-        val __obj = js.Dynamic.literal(dimmer = dimmer.asInstanceOf[js.Any])
+      inline def apply(dimmer: () => JQuery): typings.semanticUiDimmer.SemanticUI.Dimmer.TemplateSettings.Param = {
+        val __obj = js.Dynamic.literal(dimmer = js.Any.fromFunction0(dimmer))
         __obj.asInstanceOf[typings.semanticUiDimmer.SemanticUI.Dimmer.TemplateSettings.Param]
       }
       
       extension [Self <: typings.semanticUiDimmer.SemanticUI.Dimmer.TemplateSettings.Param](x: Self) {
         
-        inline def setDimmer(value: js.Function0[JQuery] & js.UndefOr[js.Function0[JQuery]]): Self = StObject.set(x, "dimmer", value.asInstanceOf[js.Any])
+        inline def setDimmer(value: () => JQuery): Self = StObject.set(x, "dimmer", js.Any.fromFunction0(value))
       }
     }
   }

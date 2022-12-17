@@ -39,7 +39,7 @@ trait PickImplmobileTransitionP
   
   var exclusive: js.UndefOr[Boolean] = js.undefined
   
-  var mobileTransition: String & js.UndefOr[String]
+  var mobileTransition: String
   
   var name: js.UndefOr[String] = js.undefined
   
@@ -75,7 +75,7 @@ trait PickImplmobileTransitionP
 }
 object PickImplmobileTransitionP {
   
-  inline def apply(mobileTransition: String & js.UndefOr[String]): PickImplmobileTransitionP = {
+  inline def apply(mobileTransition: String): PickImplmobileTransitionP = {
     val __obj = js.Dynamic.literal(mobileTransition = mobileTransition.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmobileTransitionP]
   }
@@ -126,7 +126,7 @@ object PickImplmobileTransitionP {
     
     inline def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
     
-    inline def setMobileTransition(value: String & js.UndefOr[String]): Self = StObject.set(x, "mobileTransition", value.asInstanceOf[js.Any])
+    inline def setMobileTransition(value: String): Self = StObject.set(x, "mobileTransition", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

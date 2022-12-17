@@ -9,98 +9,98 @@ trait MarginProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObjec
   
   var m: js.UndefOr[
     ResponsiveValue[
-      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
       ThemeType
     ]
   ] = js.undefined
   
   var margin: js.UndefOr[
     ResponsiveValue[
-      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
       ThemeType
     ]
   ] = js.undefined
   
   var marginBottom: js.UndefOr[
     ResponsiveValue[
-      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
       ThemeType
     ]
   ] = js.undefined
   
   var marginLeft: js.UndefOr[
     ResponsiveValue[
-      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
       ThemeType
     ]
   ] = js.undefined
   
   var marginRight: js.UndefOr[
     ResponsiveValue[
-      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
       ThemeType
     ]
   ] = js.undefined
   
   var marginTop: js.UndefOr[
     ResponsiveValue[
-      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
       ThemeType
     ]
   ] = js.undefined
   
   var marginX: js.UndefOr[
     ResponsiveValue[
-      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
       ThemeType
     ]
   ] = js.undefined
   
   var marginY: js.UndefOr[
     ResponsiveValue[
-      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
       ThemeType
     ]
   ] = js.undefined
   
   var mb: js.UndefOr[
     ResponsiveValue[
-      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
       ThemeType
     ]
   ] = js.undefined
   
   var ml: js.UndefOr[
     ResponsiveValue[
-      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
       ThemeType
     ]
   ] = js.undefined
   
   var mr: js.UndefOr[
     ResponsiveValue[
-      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
       ThemeType
     ]
   ] = js.undefined
   
   var mt: js.UndefOr[
     ResponsiveValue[
-      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
       ThemeType
     ]
   ] = js.undefined
   
   var mx: js.UndefOr[
     ResponsiveValue[
-      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
       ThemeType
     ]
   ] = js.undefined
   
   var my: js.UndefOr[
     ResponsiveValue[
-      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
       ThemeType
     ]
   ] = js.undefined
@@ -116,7 +116,7 @@ object MarginProps {
     
     inline def setM(
       value: ResponsiveValue[
-          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
           ThemeType
         ]
     ): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
@@ -125,18 +125,18 @@ object MarginProps {
     
     inline def setMUndefined: Self = StObject.set(x, "m", js.undefined)
     
-    inline def setMVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = StObject.set(x, "m", js.Array(value :_*))
+    inline def setMVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any]) | Null)*): Self = StObject.set(x, "m", js.Array(value*))
     
     inline def setMargin(
       value: ResponsiveValue[
-          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
           ThemeType
         ]
     ): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     inline def setMarginBottom(
       value: ResponsiveValue[
-          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
           ThemeType
         ]
     ): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
@@ -145,11 +145,11 @@ object MarginProps {
     
     inline def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
     
-    inline def setMarginBottomVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = StObject.set(x, "marginBottom", js.Array(value :_*))
+    inline def setMarginBottomVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any]) | Null)*): Self = StObject.set(x, "marginBottom", js.Array(value*))
     
     inline def setMarginLeft(
       value: ResponsiveValue[
-          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
           ThemeType
         ]
     ): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
@@ -158,13 +158,13 @@ object MarginProps {
     
     inline def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
     
-    inline def setMarginLeftVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = StObject.set(x, "marginLeft", js.Array(value :_*))
+    inline def setMarginLeftVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any]) | Null)*): Self = StObject.set(x, "marginLeft", js.Array(value*))
     
     inline def setMarginNull: Self = StObject.set(x, "margin", null)
     
     inline def setMarginRight(
       value: ResponsiveValue[
-          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
           ThemeType
         ]
     ): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
@@ -173,11 +173,11 @@ object MarginProps {
     
     inline def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
     
-    inline def setMarginRightVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = StObject.set(x, "marginRight", js.Array(value :_*))
+    inline def setMarginRightVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any]) | Null)*): Self = StObject.set(x, "marginRight", js.Array(value*))
     
     inline def setMarginTop(
       value: ResponsiveValue[
-          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
           ThemeType
         ]
     ): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
@@ -186,15 +186,15 @@ object MarginProps {
     
     inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
     
-    inline def setMarginTopVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = StObject.set(x, "marginTop", js.Array(value :_*))
+    inline def setMarginTopVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any]) | Null)*): Self = StObject.set(x, "marginTop", js.Array(value*))
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    inline def setMarginVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = StObject.set(x, "margin", js.Array(value :_*))
+    inline def setMarginVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any]) | Null)*): Self = StObject.set(x, "margin", js.Array(value*))
     
     inline def setMarginX(
       value: ResponsiveValue[
-          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
           ThemeType
         ]
     ): Self = StObject.set(x, "marginX", value.asInstanceOf[js.Any])
@@ -203,11 +203,11 @@ object MarginProps {
     
     inline def setMarginXUndefined: Self = StObject.set(x, "marginX", js.undefined)
     
-    inline def setMarginXVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = StObject.set(x, "marginX", js.Array(value :_*))
+    inline def setMarginXVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any]) | Null)*): Self = StObject.set(x, "marginX", js.Array(value*))
     
     inline def setMarginY(
       value: ResponsiveValue[
-          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
           ThemeType
         ]
     ): Self = StObject.set(x, "marginY", value.asInstanceOf[js.Any])
@@ -216,11 +216,11 @@ object MarginProps {
     
     inline def setMarginYUndefined: Self = StObject.set(x, "marginY", js.undefined)
     
-    inline def setMarginYVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = StObject.set(x, "marginY", js.Array(value :_*))
+    inline def setMarginYVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any]) | Null)*): Self = StObject.set(x, "marginY", js.Array(value*))
     
     inline def setMb(
       value: ResponsiveValue[
-          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
           ThemeType
         ]
     ): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
@@ -229,11 +229,11 @@ object MarginProps {
     
     inline def setMbUndefined: Self = StObject.set(x, "mb", js.undefined)
     
-    inline def setMbVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = StObject.set(x, "mb", js.Array(value :_*))
+    inline def setMbVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any]) | Null)*): Self = StObject.set(x, "mb", js.Array(value*))
     
     inline def setMl(
       value: ResponsiveValue[
-          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
           ThemeType
         ]
     ): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
@@ -242,11 +242,11 @@ object MarginProps {
     
     inline def setMlUndefined: Self = StObject.set(x, "ml", js.undefined)
     
-    inline def setMlVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = StObject.set(x, "ml", js.Array(value :_*))
+    inline def setMlVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any]) | Null)*): Self = StObject.set(x, "ml", js.Array(value*))
     
     inline def setMr(
       value: ResponsiveValue[
-          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
           ThemeType
         ]
     ): Self = StObject.set(x, "mr", value.asInstanceOf[js.Any])
@@ -255,11 +255,11 @@ object MarginProps {
     
     inline def setMrUndefined: Self = StObject.set(x, "mr", js.undefined)
     
-    inline def setMrVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = StObject.set(x, "mr", js.Array(value :_*))
+    inline def setMrVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any]) | Null)*): Self = StObject.set(x, "mr", js.Array(value*))
     
     inline def setMt(
       value: ResponsiveValue[
-          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
           ThemeType
         ]
     ): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
@@ -268,11 +268,11 @@ object MarginProps {
     
     inline def setMtUndefined: Self = StObject.set(x, "mt", js.undefined)
     
-    inline def setMtVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = StObject.set(x, "mt", js.Array(value :_*))
+    inline def setMtVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any]) | Null)*): Self = StObject.set(x, "mt", js.Array(value*))
     
     inline def setMx(
       value: ResponsiveValue[
-          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
           ThemeType
         ]
     ): Self = StObject.set(x, "mx", value.asInstanceOf[js.Any])
@@ -281,11 +281,11 @@ object MarginProps {
     
     inline def setMxUndefined: Self = StObject.set(x, "mx", js.undefined)
     
-    inline def setMxVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = StObject.set(x, "mx", js.Array(value :_*))
+    inline def setMxVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any]) | Null)*): Self = StObject.set(x, "mx", js.Array(value*))
     
     inline def setMy(
       value: ResponsiveValue[
-          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
           ThemeType
         ]
     ): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
@@ -294,6 +294,6 @@ object MarginProps {
     
     inline def setMyUndefined: Self = StObject.set(x, "my", js.undefined)
     
-    inline def setMyVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = StObject.set(x, "my", js.Array(value :_*))
+    inline def setMyVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any]) | Null)*): Self = StObject.set(x, "my", js.Array(value*))
   }
 }

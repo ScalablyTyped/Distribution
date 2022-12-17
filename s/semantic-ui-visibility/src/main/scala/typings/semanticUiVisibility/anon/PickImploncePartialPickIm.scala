@@ -81,7 +81,7 @@ trait PickImploncePartialPickIm
     js.ThisFunction1[/* this */ JQuery, /* calculations */ ElementCalculations, Unit]
   ] = js.undefined
   
-  var once: Boolean & js.UndefOr[Boolean]
+  var once: Boolean
   
   var performance: js.UndefOr[Boolean] = js.undefined
   
@@ -103,7 +103,7 @@ trait PickImploncePartialPickIm
 }
 object PickImploncePartialPickIm {
   
-  inline def apply(once: Boolean & js.UndefOr[Boolean]): PickImploncePartialPickIm = {
+  inline def apply(once: Boolean): PickImploncePartialPickIm = {
     val __obj = js.Dynamic.literal(once = once.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImploncePartialPickIm]
   }
@@ -234,7 +234,7 @@ object PickImploncePartialPickIm {
     
     inline def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
     
-    inline def setOnce(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
+    inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
     
     inline def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
     

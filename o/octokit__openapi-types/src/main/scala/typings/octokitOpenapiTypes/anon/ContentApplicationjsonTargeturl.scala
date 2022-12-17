@@ -7,20 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ContentApplicationjsonTargeturl extends StObject {
   
   var content: ApplicationjsonTargeturl
-  
-  var headers: Location
 }
 object ContentApplicationjsonTargeturl {
   
-  inline def apply(content: ApplicationjsonTargeturl, headers: Location): ContentApplicationjsonTargeturl = {
-    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any])
+  inline def apply(content: ApplicationjsonTargeturl): ContentApplicationjsonTargeturl = {
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentApplicationjsonTargeturl]
   }
   
   extension [Self <: ContentApplicationjsonTargeturl](x: Self) {
     
     inline def setContent(value: ApplicationjsonTargeturl): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
-    
-    inline def setHeaders(value: Location): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
   }
 }

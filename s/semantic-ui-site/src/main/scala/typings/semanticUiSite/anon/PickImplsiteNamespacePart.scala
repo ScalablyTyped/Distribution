@@ -25,13 +25,13 @@ trait PickImplsiteNamespacePart
   
   var silent: js.UndefOr[Boolean] = js.undefined
   
-  var siteNamespace: String & js.UndefOr[String]
+  var siteNamespace: String
   
   var verbose: js.UndefOr[Boolean] = js.undefined
 }
 object PickImplsiteNamespacePart {
   
-  inline def apply(siteNamespace: String & js.UndefOr[String]): PickImplsiteNamespacePart = {
+  inline def apply(siteNamespace: String): PickImplsiteNamespacePart = {
     val __obj = js.Dynamic.literal(siteNamespace = siteNamespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplsiteNamespacePart]
   }
@@ -68,7 +68,7 @@ object PickImplsiteNamespacePart {
     
     inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     
-    inline def setSiteNamespace(value: String & js.UndefOr[String]): Self = StObject.set(x, "siteNamespace", value.asInstanceOf[js.Any])
+    inline def setSiteNamespace(value: String): Self = StObject.set(x, "siteNamespace", value.asInstanceOf[js.Any])
     
     inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     

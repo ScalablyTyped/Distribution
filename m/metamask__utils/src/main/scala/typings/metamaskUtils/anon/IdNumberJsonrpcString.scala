@@ -10,13 +10,13 @@ trait IdNumberJsonrpcString extends StObject {
   
   var jsonrpc: String
   
-  var method: String
+  var method: Double
   
   var params: Unit
 }
 object IdNumberJsonrpcString {
   
-  inline def apply(id: Double, jsonrpc: String, method: String, params: Unit): IdNumberJsonrpcString = {
+  inline def apply(id: Double, jsonrpc: String, method: Double, params: Unit): IdNumberJsonrpcString = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], jsonrpc = jsonrpc.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdNumberJsonrpcString]
   }
@@ -27,7 +27,7 @@ object IdNumberJsonrpcString {
     
     inline def setJsonrpc(value: String): Self = StObject.set(x, "jsonrpc", value.asInstanceOf[js.Any])
     
-    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: Double): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     inline def setParams(value: Unit): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
   }

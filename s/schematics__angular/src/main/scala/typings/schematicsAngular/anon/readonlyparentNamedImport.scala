@@ -2,7 +2,6 @@ package typings.schematicsAngular.anon
 
 import typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.Identifier
 import typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.ModifierLike
-import typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.NamedImports
 import typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.Node
 import typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.NodeArray
 import typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.NodeFlags
@@ -102,7 +101,7 @@ trait readonlyparentNamedImport
   
   val name: Identifier = js.native
   
-  val parent: NamedImportsreadonlyparen & NamedImports = js.native
+  val parent: NamedImportsreadonlyparen = js.native
   
   val pos: Double = js.native
   

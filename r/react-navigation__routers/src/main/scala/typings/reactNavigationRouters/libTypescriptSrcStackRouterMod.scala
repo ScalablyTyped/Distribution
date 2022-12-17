@@ -9,7 +9,6 @@ import typings.reactNavigationRouters.libTypescriptSrcTypesMod.NavigationRoute
 import typings.reactNavigationRouters.libTypescriptSrcTypesMod.ParamListBase
 import typings.reactNavigationRouters.libTypescriptSrcTypesMod.Router
 import typings.reactNavigationRouters.reactNavigationRoutersBooleans.`false`
-import typings.reactNavigationRouters.reactNavigationRoutersStrings.stack
 import typings.std.Extract
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -128,7 +127,7 @@ object libTypescriptSrcStackRouterMod {
     /**
       * Type of the router, in this case, it's stack.
       */
-    val `type`: String & stack
+    val `type`: String
   }
   object StackNavigationState {
     
@@ -137,7 +136,7 @@ object libTypescriptSrcStackRouterMod {
       key: String,
       routeNames: js.Array[Extract[/* keyof ParamList */ String, String]],
       routes: js.Array[NavigationRoute[ParamList, /* keyof ParamList */ String]],
-      `type`: String & stack
+      `type`: String
     ): StackNavigationState[ParamList] = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], routeNames = routeNames.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], stale = false)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -166,7 +165,7 @@ object libTypescriptSrcStackRouterMod {
       
       inline def setStale(value: `false`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
       
-      inline def setType(value: String & stack): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

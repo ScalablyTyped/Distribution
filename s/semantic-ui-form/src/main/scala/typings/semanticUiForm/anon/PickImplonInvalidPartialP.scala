@@ -57,7 +57,7 @@ trait PickImplonInvalidPartialP
   
   def onInvalid(): Unit
   @JSName("onInvalid")
-  var onInvalid_Original: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+  var onInvalid_Original: js.ThisFunction0[/* this */ JQuery, Unit]
   
   var onSuccess: js.UndefOr[
     js.ThisFunction2[
@@ -94,9 +94,7 @@ trait PickImplonInvalidPartialP
 }
 object PickImplonInvalidPartialP {
   
-  inline def apply(
-    onInvalid: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-  ): PickImplonInvalidPartialP = {
+  inline def apply(onInvalid: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonInvalidPartialP = {
     val __obj = js.Dynamic.literal(onInvalid = onInvalid.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonInvalidPartialP]
   }
@@ -159,9 +157,7 @@ object PickImplonInvalidPartialP {
     
     inline def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
     
-    inline def setOnInvalid(
-      value: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-    ): Self = StObject.set(x, "onInvalid", value.asInstanceOf[js.Any])
+    inline def setOnInvalid(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onInvalid", value.asInstanceOf[js.Any])
     
     inline def setOnSuccess(
       value: js.ThisFunction2[

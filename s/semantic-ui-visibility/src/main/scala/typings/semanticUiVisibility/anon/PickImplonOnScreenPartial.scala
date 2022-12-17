@@ -61,7 +61,7 @@ trait PickImplonOnScreenPartial
   
   def onOnScreen(): Unit
   @JSName("onOnScreen")
-  var onOnScreen_Original: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+  var onOnScreen_Original: js.ThisFunction0[/* this */ JQuery, Unit]
   
   var onPassing: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
@@ -105,9 +105,7 @@ trait PickImplonOnScreenPartial
 }
 object PickImplonOnScreenPartial {
   
-  inline def apply(
-    onOnScreen: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-  ): PickImplonOnScreenPartial = {
+  inline def apply(onOnScreen: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonOnScreenPartial = {
     val __obj = js.Dynamic.literal(onOnScreen = onOnScreen.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonOnScreenPartial]
   }
@@ -198,9 +196,7 @@ object PickImplonOnScreenPartial {
     
     inline def setOnOffScreenUndefined: Self = StObject.set(x, "onOffScreen", js.undefined)
     
-    inline def setOnOnScreen(
-      value: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-    ): Self = StObject.set(x, "onOnScreen", value.asInstanceOf[js.Any])
+    inline def setOnOnScreen(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onOnScreen", value.asInstanceOf[js.Any])
     
     inline def setOnPassing(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onPassing", value.asInstanceOf[js.Any])
     

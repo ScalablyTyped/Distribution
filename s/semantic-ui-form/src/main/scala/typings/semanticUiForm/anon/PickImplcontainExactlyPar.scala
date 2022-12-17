@@ -14,7 +14,7 @@ trait PickImplcontainExactlyPar
   
   var contain: js.UndefOr[String] = js.undefined
   
-  var containExactly: String & js.UndefOr[String]
+  var containExactly: String
   
   var creditCard: js.UndefOr[String] = js.undefined
   
@@ -64,7 +64,7 @@ trait PickImplcontainExactlyPar
 }
 object PickImplcontainExactlyPar {
   
-  inline def apply(containExactly: String & js.UndefOr[String]): PickImplcontainExactlyPar = {
+  inline def apply(containExactly: String): PickImplcontainExactlyPar = {
     val __obj = js.Dynamic.literal(containExactly = containExactly.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplcontainExactlyPar]
   }
@@ -77,7 +77,7 @@ object PickImplcontainExactlyPar {
     
     inline def setContain(value: String): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
     
-    inline def setContainExactly(value: String & js.UndefOr[String]): Self = StObject.set(x, "containExactly", value.asInstanceOf[js.Any])
+    inline def setContainExactly(value: String): Self = StObject.set(x, "containExactly", value.asInstanceOf[js.Any])
     
     inline def setContainUndefined: Self = StObject.set(x, "contain", js.undefined)
     

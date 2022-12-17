@@ -25,7 +25,7 @@ trait PickImplcolorPartialPickI
   
   var className: js.UndefOr[ClassNameSettings] = js.undefined
   
-  var color: String & js.UndefOr[String]
+  var color: String
   
   var debug: js.UndefOr[Boolean] = js.undefined
   
@@ -71,7 +71,7 @@ trait PickImplcolorPartialPickI
 }
 object PickImplcolorPartialPickI {
   
-  inline def apply(color: String & js.UndefOr[String]): PickImplcolorPartialPickI = {
+  inline def apply(color: String): PickImplcolorPartialPickI = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplcolorPartialPickI]
   }
@@ -90,7 +90,7 @@ object PickImplcolorPartialPickI {
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    inline def setColor(value: String & js.UndefOr[String]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     

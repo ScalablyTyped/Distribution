@@ -1,6 +1,6 @@
 package typings.sketchHqSketchFileFormatTs.distCjsTypesMod
 
-import typings.sketchHqSketchFileFormatTs.anon.Kerning
+import typings.sketchHqSketchFileFormatTs.anon.MSAttributedStringColorAttribute
 import typings.sketchHqSketchFileFormatTs.sketchHqSketchFileFormatTsStrings.stringAttribute
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +12,7 @@ trait StringAttribute
   
   var _class: stringAttribute
   
-  var attributes: Kerning
+  var attributes: MSAttributedStringColorAttribute
   
   var length: Double
   
@@ -20,14 +20,14 @@ trait StringAttribute
 }
 object StringAttribute {
   
-  inline def apply(attributes: Kerning, length: Double, location: Double): StringAttribute = {
+  inline def apply(attributes: MSAttributedStringColorAttribute, length: Double, location: Double): StringAttribute = {
     val __obj = js.Dynamic.literal(_class = "stringAttribute", attributes = attributes.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
     __obj.asInstanceOf[StringAttribute]
   }
   
   extension [Self <: StringAttribute](x: Self) {
     
-    inline def setAttributes(value: Kerning): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: MSAttributedStringColorAttribute): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

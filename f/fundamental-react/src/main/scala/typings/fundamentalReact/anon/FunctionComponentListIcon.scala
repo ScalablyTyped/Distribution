@@ -1,6 +1,5 @@
 package typings.fundamentalReact.anon
 
-import typings.fundamentalReact.fundamentalReactStrings.ListDotIcon
 import typings.fundamentalReact.libListListMod.ListIconProps
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
@@ -19,7 +18,7 @@ trait FunctionComponentListIcon extends StObject {
   
   var defaultProps: js.UndefOr[PartialListIconProps] = js.native
   
-  var displayName: js.UndefOr[String] & ListDotIcon = js.native
+  var displayName: js.UndefOr[String] = js.native
   
   var propTypes: js.UndefOr[WeakValidationMapListIcon] = js.native
 }

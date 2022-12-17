@@ -75,6 +75,29 @@ object latlonNvectorEllipsoidalMod {
     inline def wrap90(degrees: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap90")(degrees.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
+  @JSImport("geodesy/latlon-nvector-ellipsoidal", "Ned")
+  @js.native
+  open class Ned protected () extends StObject {
+    def this(north: Double, east: Double, down: Double) = this()
+    
+    def bearing: Double = js.native
+    
+    def elevation: Double = js.native
+    
+    def length: Double = js.native
+    
+    def toString(dp: Double): String = js.native
+  }
+  object Ned {
+    
+    @JSImport("geodesy/latlon-nvector-ellipsoidal", "Ned")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    inline def fromDistanceBearingElevation(dist: Double, brng: Double, elev: Double): Ned = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDistanceBearingElevation")(dist.asInstanceOf[js.Any], brng.asInstanceOf[js.Any], elev.asInstanceOf[js.Any])).asInstanceOf[Ned]
+  }
+  
   @JSImport("geodesy/latlon-nvector-ellipsoidal", "Nvector")
   @js.native
   open class Nvector protected () extends NvectorEllipsoidal {
@@ -100,18 +123,6 @@ object latlonNvectorEllipsoidalMod {
     def destinationPoint(delta: Ned): LatLonNvectorEllipsoidal = js.native
     
     def toNvector(): NvectorEllipsoidal = js.native
-  }
-  
-  @js.native
-  trait Ned extends StObject {
-    
-    def bearing: Double = js.native
-    
-    def elevation: Double = js.native
-    
-    def length: Double = js.native
-    
-    def toString(dp: Double): String = js.native
   }
   
   @js.native

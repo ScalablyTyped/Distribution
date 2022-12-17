@@ -5,8 +5,7 @@ import typings.jssha.anon.OutputLen
 import typings.jssha.anon.OutputLenNumber
 import typings.jssha.anon.OutputUpper
 import typings.jssha.anon.ShakeLen
-import typings.jssha.anon.`2`
-import typings.jssha.anon.`8`
+import typings.jssha.anon.`9`
 import typings.jssha.jsshaInts.`-1`
 import typings.jssha.jsshaInts.`1`
 import typings.jssha.jsshaStrings.ARRAYBUFFER
@@ -48,38 +47,38 @@ object distSha256Mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.jssha.anon.`5`
-    - typings.jssha.anon.`6`
+    - typings.jssha.anon.`7`
+    - typings.jssha.anon.`8`
   */
   trait FixedLengthOptionsEncodingType extends StObject
   object FixedLengthOptionsEncodingType {
     
-    inline def `5`(): typings.jssha.anon.`5` = {
+    inline def `7`(): typings.jssha.anon.`7` = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[typings.jssha.anon.`5`]
+      __obj.asInstanceOf[typings.jssha.anon.`7`]
     }
+    
+    inline def `8`(): typings.jssha.anon.`8` = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[typings.jssha.anon.`8`]
+    }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.jssha.anon.`6`
+    - typings.jssha.anon.NumRounds
+  */
+  trait FixedLengthOptionsNoEncodingType extends StObject
+  object FixedLengthOptionsNoEncodingType {
     
     inline def `6`(): typings.jssha.anon.`6` = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.jssha.anon.`6`]
     }
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.jssha.anon.`7`
-    - typings.jssha.anon.`0`
-  */
-  trait FixedLengthOptionsNoEncodingType extends StObject
-  object FixedLengthOptionsNoEncodingType {
     
-    inline def `0`(): typings.jssha.anon.`0` = {
+    inline def NumRounds(): typings.jssha.anon.NumRounds = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[typings.jssha.anon.`0`]
-    }
-    
-    inline def `7`(): typings.jssha.anon.`7` = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[typings.jssha.anon.`7`]
+      __obj.asInstanceOf[typings.jssha.anon.NumRounds]
     }
   }
   
@@ -130,9 +129,9 @@ object distSha256Mod {
   
   /* Rewritten from type alias, can be one of: 
     - typings.jssha.anon.EncodingFormatValue
+    - typings.jssha.anon.Format
     - typings.jssha.anon.Value
     - typings.jssha.anon.FormatValue
-    - typings.jssha.anon.ValueUint8Array
   */
   trait GenericInputType extends StObject
   object GenericInputType {
@@ -142,19 +141,19 @@ object distSha256Mod {
       __obj.asInstanceOf[typings.jssha.anon.EncodingFormatValue]
     }
     
-    inline def FormatValue(value: js.typedarray.ArrayBuffer): typings.jssha.anon.FormatValue = {
-      val __obj = js.Dynamic.literal(format = "ARRAYBUFFER", value = value.asInstanceOf[js.Any])
+    inline def Format(format: B64 | HEX | BYTES, value: String): typings.jssha.anon.Format = {
+      val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.jssha.anon.Format]
+    }
+    
+    inline def FormatValue(value: js.typedarray.Uint8Array): typings.jssha.anon.FormatValue = {
+      val __obj = js.Dynamic.literal(format = "UINT8ARRAY", value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.jssha.anon.FormatValue]
     }
     
-    inline def Value(format: B64 | HEX | BYTES, value: String): typings.jssha.anon.Value = {
-      val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    inline def Value(value: js.typedarray.ArrayBuffer): typings.jssha.anon.Value = {
+      val __obj = js.Dynamic.literal(format = "ARRAYBUFFER", value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.jssha.anon.Value]
-    }
-    
-    inline def ValueUint8Array(value: js.typedarray.Uint8Array): typings.jssha.anon.ValueUint8Array = {
-      val __obj = js.Dynamic.literal(format = "UINT8ARRAY", value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.jssha.anon.ValueUint8Array]
     }
   }
   
@@ -215,7 +214,7 @@ object distSha256Mod {
     @JSName("getHMAC")
     def getHMAC_B64(format: B64): String = js.native
     @JSName("getHMAC")
-    def getHMAC_B64(format: B64, options: `2`): String = js.native
+    def getHMAC_B64(format: B64, options: typings.jssha.anon.`1`): String = js.native
     @JSName("getHMAC")
     def getHMAC_BYTES(format: BYTES): String = js.native
     /**
@@ -302,7 +301,7 @@ object distSha256Mod {
     @JSName("setHMACKey")
     def setHMACKey_TEXT(key: String, inputFormat: TEXT): Unit = js.native
     @JSName("setHMACKey")
-    def setHMACKey_TEXT(key: String, inputFormat: TEXT, options: `8`): Unit = js.native
+    def setHMACKey_TEXT(key: String, inputFormat: TEXT, options: `9`): Unit = js.native
     @JSName("setHMACKey")
     def setHMACKey_UINT8ARRAY(key: js.typedarray.Uint8Array, inputFormat: UINT8ARRAY): Unit = js.native
     

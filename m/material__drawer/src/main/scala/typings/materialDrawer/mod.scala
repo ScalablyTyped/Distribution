@@ -11,13 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("@material/drawer", JSImport.Default)
-  @js.native
-  open class default ()
-    extends typings.materialDrawer.modalFoundationMod.default {
-    def this(adapter: PartialMDCDrawerAdapter) = this()
-  }
-  
   @JSImport("@material/drawer", "MDCDismissibleDrawerFoundation")
   @js.native
   open class MDCDismissibleDrawerFoundation ()

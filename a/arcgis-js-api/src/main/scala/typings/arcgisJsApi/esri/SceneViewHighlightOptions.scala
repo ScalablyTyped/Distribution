@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.HashMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,12 +71,8 @@ trait SceneViewHighlightOptions
 }
 object SceneViewHighlightOptions {
   
-  inline def apply(
-    set: (js.UndefOr[
-      js.Function2[/* propertyName */ String, /* value */ Any, SceneViewHighlightOptions]
-    ]) & (js.UndefOr[js.Function1[/* props */ HashMap[Any], SceneViewHighlightOptions]])
-  ): SceneViewHighlightOptions = {
-    val __obj = js.Dynamic.literal(set = set.asInstanceOf[js.Any])
+  inline def apply(): SceneViewHighlightOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SceneViewHighlightOptions]
   }
   

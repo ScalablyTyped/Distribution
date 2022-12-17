@@ -49,9 +49,7 @@ trait PickImplonEmbedPartialPic
   
   def onEmbed(parameters: ParametersSettings): ParametersSettings
   @JSName("onEmbed")
-  var onEmbed_Original: (js.ThisFunction1[/* this */ JQuery, /* parameters */ ParametersSettings, ParametersSettings]) & (js.UndefOr[
-    js.ThisFunction1[/* this */ JQuery, /* parameters */ ParametersSettings, ParametersSettings]
-  ])
+  var onEmbed_Original: js.ThisFunction1[/* this */ JQuery, /* parameters */ ParametersSettings, ParametersSettings]
   
   var onPlaceholderDisplay: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
@@ -74,9 +72,7 @@ trait PickImplonEmbedPartialPic
 object PickImplonEmbedPartialPic {
   
   inline def apply(
-    onEmbed: (js.ThisFunction1[/* this */ JQuery, /* parameters */ ParametersSettings, ParametersSettings]) & (js.UndefOr[
-      js.ThisFunction1[/* this */ JQuery, /* parameters */ ParametersSettings, ParametersSettings]
-    ])
+    onEmbed: js.ThisFunction1[/* this */ JQuery, /* parameters */ ParametersSettings, ParametersSettings]
   ): PickImplonEmbedPartialPic = {
     val __obj = js.Dynamic.literal(onEmbed = onEmbed.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonEmbedPartialPic]
@@ -141,9 +137,7 @@ object PickImplonEmbedPartialPic {
     inline def setOnDisplayUndefined: Self = StObject.set(x, "onDisplay", js.undefined)
     
     inline def setOnEmbed(
-      value: (js.ThisFunction1[/* this */ JQuery, /* parameters */ ParametersSettings, ParametersSettings]) & (js.UndefOr[
-          js.ThisFunction1[/* this */ JQuery, /* parameters */ ParametersSettings, ParametersSettings]
-        ])
+      value: js.ThisFunction1[/* this */ JQuery, /* parameters */ ParametersSettings, ParametersSettings]
     ): Self = StObject.set(x, "onEmbed", value.asInstanceOf[js.Any])
     
     inline def setOnPlaceholderDisplay(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onPlaceholderDisplay", value.asInstanceOf[js.Any])

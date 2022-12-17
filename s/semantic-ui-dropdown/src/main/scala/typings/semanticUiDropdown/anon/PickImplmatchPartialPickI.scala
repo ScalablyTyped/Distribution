@@ -87,7 +87,7 @@ trait PickImplmatchPartialPickI
   
   var label: js.UndefOr[LabelSettings] = js.undefined
   
-  var `match`: (both | value | text) & (js.UndefOr[both | value | text])
+  var `match`: both | value | text
   
   var maxSelections: js.UndefOr[`false` | Double] = js.undefined
   
@@ -169,7 +169,7 @@ trait PickImplmatchPartialPickI
 }
 object PickImplmatchPartialPickI {
   
-  inline def apply(`match`: (both | value | text) & (js.UndefOr[both | value | text])): PickImplmatchPartialPickI = {
+  inline def apply(`match`: both | value | text): PickImplmatchPartialPickI = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmatchPartialPickI]
@@ -273,7 +273,7 @@ object PickImplmatchPartialPickI {
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    inline def setMatch(value: (both | value | text) & (js.UndefOr[both | value | text])): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    inline def setMatch(value: both | value | text): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
     inline def setMaxSelections(value: `false` | Double): Self = StObject.set(x, "maxSelections", value.asInstanceOf[js.Any])
     

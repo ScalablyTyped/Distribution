@@ -12,7 +12,7 @@ import typings.nivoCore.mod.ValueFormat
 import typings.nivoLegends.distTypesTypesMod.LegendProps
 import typings.nivoLine.anon.ReadonlyPointSymbolProps
 import typings.nivoLine.anon.X
-import typings.nivoLine.anon.Y
+import typings.nivoLine.anon.XFormatted
 import typings.nivoLine.nivoLineBooleans.`false`
 import typings.nivoLine.nivoLineStrings.basis
 import typings.nivoLine.nivoLineStrings.cardinal
@@ -102,7 +102,7 @@ trait CustomLayerProps extends StObject {
   
   var legends: js.UndefOr[js.Array[LegendProps]] = js.undefined
   
-  var lineGenerator: Line_[js.Array[Y]]
+  var lineGenerator: Line_[js.Array[X]]
   
   var lineWidth: js.UndefOr[Double] = js.undefined
   
@@ -166,7 +166,7 @@ object CustomLayerProps {
     data: js.Array[Serie],
     innerHeight: Double,
     innerWidth: Double,
-    lineGenerator: Line_[js.Array[Y]],
+    lineGenerator: Line_[js.Array[X]],
     points: js.Array[Point],
     series: js.Array[ComputedSerie],
     xScale: Scale[Any, Any],
@@ -320,7 +320,7 @@ object CustomLayerProps {
     
     inline def setLegendsVarargs(value: LegendProps*): Self = StObject.set(x, "legends", js.Array(value*))
     
-    inline def setLineGenerator(value: Line_[js.Array[Y]]): Self = StObject.set(x, "lineGenerator", value.asInstanceOf[js.Any])
+    inline def setLineGenerator(value: Line_[js.Array[X]]): Self = StObject.set(x, "lineGenerator", value.asInstanceOf[js.Any])
     
     inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
@@ -372,7 +372,7 @@ object CustomLayerProps {
     
     inline def setPointLabel(value: String | AccessorFunc): Self = StObject.set(x, "pointLabel", value.asInstanceOf[js.Any])
     
-    inline def setPointLabelFunction1(value: /* datum */ X => String): Self = StObject.set(x, "pointLabel", js.Any.fromFunction1(value))
+    inline def setPointLabelFunction1(value: /* datum */ XFormatted => String): Self = StObject.set(x, "pointLabel", js.Any.fromFunction1(value))
     
     inline def setPointLabelUndefined: Self = StObject.set(x, "pointLabel", js.undefined)
     

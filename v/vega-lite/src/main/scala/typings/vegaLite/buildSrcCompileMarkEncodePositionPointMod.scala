@@ -1,7 +1,7 @@
 package typings.vegaLite
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.vegaLite.anon.DefaultPosVgChannel
+import typings.vegaLite.anon.DefaultPos
 import typings.vegaLite.anon.MidPointParamschannelxyra
 import typings.vegaLite.anon.Model
 import typings.vegaLite.buildSrcCompileUnitMod.UnitModel
@@ -20,7 +20,7 @@ object buildSrcCompileMarkEncodePositionPointMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def pointPosition(channel: x | y | theta | radius, model: UnitModel, param2: DefaultPosVgChannel): StringDictionary[VgValueRef | js.Array[VgValueRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointPosition")(channel.asInstanceOf[js.Any], model.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[VgValueRef | js.Array[VgValueRef]]]
+  inline def pointPosition(channel: x | y | theta | radius, model: UnitModel, param2: DefaultPos): StringDictionary[VgValueRef | js.Array[VgValueRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointPosition")(channel.asInstanceOf[js.Any], model.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[VgValueRef | js.Array[VgValueRef]]]
   
   inline def pointPositionDefaultRef(param0: Model): js.Function0[VgValueRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("pointPositionDefaultRef")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Function0[VgValueRef]]
   

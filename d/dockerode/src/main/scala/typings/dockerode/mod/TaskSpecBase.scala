@@ -1,6 +1,6 @@
 package typings.dockerode.mod
 
-import typings.dockerode.anon.NameOptions
+import typings.dockerode.anon.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ trait TaskSpecBase extends StObject {
   
   var ForceUpdate: js.UndefOr[Double] = js.undefined
   
-  var LogDriver: js.UndefOr[NameOptions] = js.undefined
+  var LogDriver: js.UndefOr[Options] = js.undefined
   
   var Networks: js.UndefOr[js.Array[NetworkAttachmentConfig]] = js.undefined
   
@@ -34,7 +34,7 @@ object TaskSpecBase {
     
     inline def setForceUpdateUndefined: Self = StObject.set(x, "ForceUpdate", js.undefined)
     
-    inline def setLogDriver(value: NameOptions): Self = StObject.set(x, "LogDriver", value.asInstanceOf[js.Any])
+    inline def setLogDriver(value: Options): Self = StObject.set(x, "LogDriver", value.asInstanceOf[js.Any])
     
     inline def setLogDriverUndefined: Self = StObject.set(x, "LogDriver", js.undefined)
     

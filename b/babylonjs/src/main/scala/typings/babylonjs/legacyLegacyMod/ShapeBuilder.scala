@@ -1,8 +1,7 @@
 package typings.babylonjs.legacyLegacyMod
 
 import typings.babylonjs.anon.AdjustFrame
-import typings.babylonjs.anon.CloseShape
-import typings.babylonjs.meshesMeshMod.Mesh
+import typings.babylonjs.anon.ClosePath
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,27 +19,27 @@ object ShapeBuilder {
     /* name */ String, 
     /* options */ AdjustFrame, 
     /* scene */ js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]], 
-    Mesh
+    typings.babylonjs.meshesMeshMod.Mesh
   ] = js.native
-  inline def ExtrudeShape(name: String, options: AdjustFrame): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShape")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
-  inline def ExtrudeShape(name: String, options: AdjustFrame, scene: Nullable[typings.babylonjs.sceneMod.Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShape")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+  inline def ExtrudeShape(name: String, options: AdjustFrame): typings.babylonjs.meshesMeshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShape")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshMod.Mesh]
+  inline def ExtrudeShape(name: String, options: AdjustFrame, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshesMeshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShape")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshMod.Mesh]
   
   @JSImport("babylonjs/Legacy/legacy", "ShapeBuilder.ExtrudeShapeCustom")
   @js.native
   def ExtrudeShapeCustom: js.Function3[
     /* name */ String, 
-    /* options */ CloseShape, 
+    /* options */ ClosePath, 
     /* scene */ js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]], 
-    Mesh
+    typings.babylonjs.meshesMeshMod.Mesh
   ] = js.native
-  inline def ExtrudeShapeCustom(name: String, options: CloseShape): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShapeCustom")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
-  inline def ExtrudeShapeCustom(name: String, options: CloseShape, scene: Nullable[typings.babylonjs.sceneMod.Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShapeCustom")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+  inline def ExtrudeShapeCustom(name: String, options: ClosePath): typings.babylonjs.meshesMeshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShapeCustom")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshMod.Mesh]
+  inline def ExtrudeShapeCustom(name: String, options: ClosePath, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshesMeshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShapeCustom")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshMod.Mesh]
   inline def ExtrudeShapeCustom_=(
     x: js.Function3[
       /* name */ String, 
-      /* options */ CloseShape, 
+      /* options */ ClosePath, 
       /* scene */ js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]], 
-      Mesh
+      typings.babylonjs.meshesMeshMod.Mesh
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExtrudeShapeCustom")(x.asInstanceOf[js.Any])
   
@@ -49,7 +48,7 @@ object ShapeBuilder {
       /* name */ String, 
       /* options */ AdjustFrame, 
       /* scene */ js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]], 
-      Mesh
+      typings.babylonjs.meshesMeshMod.Mesh
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExtrudeShape")(x.asInstanceOf[js.Any])
 }

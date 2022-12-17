@@ -12,7 +12,7 @@ trait PickImpldisabledPartialPi
   
   var active: js.UndefOr[String] = js.undefined
   
-  var disabled: String & js.UndefOr[String]
+  var disabled: String
   
   var placeholder: js.UndefOr[String] = js.undefined
   
@@ -20,7 +20,7 @@ trait PickImpldisabledPartialPi
 }
 object PickImpldisabledPartialPi {
   
-  inline def apply(disabled: String & js.UndefOr[String]): PickImpldisabledPartialPi = {
+  inline def apply(disabled: String): PickImpldisabledPartialPi = {
     val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldisabledPartialPi]
   }
@@ -31,7 +31,7 @@ object PickImpldisabledPartialPi {
     
     inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    inline def setDisabled(value: String & js.UndefOr[String]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     

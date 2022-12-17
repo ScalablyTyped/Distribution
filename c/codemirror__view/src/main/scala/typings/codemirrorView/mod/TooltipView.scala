@@ -1,6 +1,6 @@
 package typings.codemirrorView.mod
 
-import typings.codemirrorView.anon.X
+import typings.codemirrorView.anon.Y
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -37,7 +37,7 @@ trait TooltipView extends StObject {
     will move the tooltip up when it is above its anchor, and down
     otherwise.
     */
-  var offset: js.UndefOr[X] = js.undefined
+  var offset: js.UndefOr[Y] = js.undefined
   
   /**
     By default, tooltips are moved when they overlap with other
@@ -75,7 +75,7 @@ object TooltipView {
     
     inline def setMountUndefined: Self = StObject.set(x, "mount", js.undefined)
     
-    inline def setOffset(value: X): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Y): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     

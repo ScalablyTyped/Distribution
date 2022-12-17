@@ -1,32 +1,37 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.admin
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.billing_manager
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.direct_member
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Email extends StObject {
   
-  var email: js.UndefOr[String | Null] = js.undefined
+  /** @description **Required unless you provide `invitee_id`**. Email address of the person you are inviting, which can be an existing GitHub user. */
+  var email: js.UndefOr[String] = js.undefined
   
-  var id: Double
+  /** @description **Required unless you provide `email`**. GitHub user ID for the person you are inviting. */
+  var invitee_id: js.UndefOr[Double] = js.undefined
   
-  var login: String
+  /**
+    * @description The role for the new member.
+    * \* `admin` - Organization owners with full administrative rights to the organization and complete access to all repositories and teams.
+    * \* `direct_member` - Non-owner organization members with ability to see other members and join teams by invitation.
+    * \* `billing_manager` - Non-owner organization members with ability to manage the billing settings of your organization.
+    * @default direct_member
+    * @enum {string}
+    */
+  var role: js.UndefOr[admin | direct_member | billing_manager] = js.undefined
   
-  var marketplace_pending_change: js.UndefOr[Effectivedate | Null] = js.undefined
-  
-  var marketplace_purchase: Billingcycle
-  
-  var organization_billing_email: js.UndefOr[String] = js.undefined
-  
-  var `type`: String
-  
-  var url: String
+  /** @description Specify IDs for the teams you want to invite new members to. */
+  var team_ids: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object Email {
   
-  inline def apply(id: Double, login: String, marketplace_purchase: Billingcycle, `type`: String, url: String): Email = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], login = login.asInstanceOf[js.Any], marketplace_purchase = marketplace_purchase.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  inline def apply(): Email = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Email]
   }
   
@@ -34,28 +39,20 @@ object Email {
     
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    inline def setEmailNull: Self = StObject.set(x, "email", null)
-    
     inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setInvitee_id(value: Double): Self = StObject.set(x, "invitee_id", value.asInstanceOf[js.Any])
     
-    inline def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
+    inline def setInvitee_idUndefined: Self = StObject.set(x, "invitee_id", js.undefined)
     
-    inline def setMarketplace_pending_change(value: Effectivedate): Self = StObject.set(x, "marketplace_pending_change", value.asInstanceOf[js.Any])
+    inline def setRole(value: admin | direct_member | billing_manager): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    inline def setMarketplace_pending_changeNull: Self = StObject.set(x, "marketplace_pending_change", null)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
-    inline def setMarketplace_pending_changeUndefined: Self = StObject.set(x, "marketplace_pending_change", js.undefined)
+    inline def setTeam_ids(value: js.Array[Double]): Self = StObject.set(x, "team_ids", value.asInstanceOf[js.Any])
     
-    inline def setMarketplace_purchase(value: Billingcycle): Self = StObject.set(x, "marketplace_purchase", value.asInstanceOf[js.Any])
+    inline def setTeam_idsUndefined: Self = StObject.set(x, "team_ids", js.undefined)
     
-    inline def setOrganization_billing_email(value: String): Self = StObject.set(x, "organization_billing_email", value.asInstanceOf[js.Any])
-    
-    inline def setOrganization_billing_emailUndefined: Self = StObject.set(x, "organization_billing_email", js.undefined)
-    
-    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    
-    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setTeam_idsVarargs(value: Double*): Self = StObject.set(x, "team_ids", js.Array(value*))
   }
 }

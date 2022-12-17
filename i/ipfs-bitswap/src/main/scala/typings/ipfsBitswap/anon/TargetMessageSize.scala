@@ -6,24 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TargetMessageSize extends StObject {
   
-  var maxSizeReplaceHasWithBlock: js.UndefOr[Double] & Double
+  var maxSizeReplaceHasWithBlock: js.UndefOr[Double] = js.undefined
   
-  var targetMessageSize: js.UndefOr[Double] & Double
+  var targetMessageSize: js.UndefOr[Double] = js.undefined
 }
 object TargetMessageSize {
   
-  inline def apply(
-    maxSizeReplaceHasWithBlock: js.UndefOr[Double] & Double,
-    targetMessageSize: js.UndefOr[Double] & Double
-  ): TargetMessageSize = {
-    val __obj = js.Dynamic.literal(maxSizeReplaceHasWithBlock = maxSizeReplaceHasWithBlock.asInstanceOf[js.Any], targetMessageSize = targetMessageSize.asInstanceOf[js.Any])
+  inline def apply(): TargetMessageSize = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TargetMessageSize]
   }
   
   extension [Self <: TargetMessageSize](x: Self) {
     
-    inline def setMaxSizeReplaceHasWithBlock(value: js.UndefOr[Double] & Double): Self = StObject.set(x, "maxSizeReplaceHasWithBlock", value.asInstanceOf[js.Any])
+    inline def setMaxSizeReplaceHasWithBlock(value: Double): Self = StObject.set(x, "maxSizeReplaceHasWithBlock", value.asInstanceOf[js.Any])
     
-    inline def setTargetMessageSize(value: js.UndefOr[Double] & Double): Self = StObject.set(x, "targetMessageSize", value.asInstanceOf[js.Any])
+    inline def setMaxSizeReplaceHasWithBlockUndefined: Self = StObject.set(x, "maxSizeReplaceHasWithBlock", js.undefined)
+    
+    inline def setTargetMessageSize(value: Double): Self = StObject.set(x, "targetMessageSize", value.asInstanceOf[js.Any])
+    
+    inline def setTargetMessageSizeUndefined: Self = StObject.set(x, "targetMessageSize", js.undefined)
   }
 }

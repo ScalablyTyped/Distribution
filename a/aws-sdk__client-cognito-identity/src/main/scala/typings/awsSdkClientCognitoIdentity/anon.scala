@@ -454,7 +454,7 @@ object anon {
     }
   }
   
-  /* Inlined @aws-sdk/smithy-client.@aws-sdk/smithy-client.ExceptionOptionType<@aws-sdk/client-cognito-identity.@aws-sdk/client-cognito-identity/dist-types/models/models_0.InvalidParameterException, @aws-sdk/client-cognito-identity.@aws-sdk/client-cognito-identity/dist-types/models/CognitoIdentityServiceException.CognitoIdentityServiceException> */
+  /* Inlined @aws-sdk/smithy-client.@aws-sdk/smithy-client.ExceptionOptionType<@aws-sdk/client-cognito-identity.@aws-sdk/client-cognito-identity/dist-types/models/models_0.InvalidIdentityPoolConfigurationException, @aws-sdk/client-cognito-identity.@aws-sdk/client-cognito-identity/dist-types/models/CognitoIdentityServiceException.CognitoIdentityServiceException> */
   trait ExceptionOptionTypeInvali extends StObject {
     
     @JSName("$metadata")

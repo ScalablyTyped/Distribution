@@ -4,8 +4,8 @@ import typings.ckeditorCkeditor5Engine.anon.Fake
 import typings.ckeditorCkeditor5Engine.anon.IsAllowedInsideAttributeElement
 import typings.ckeditorCkeditor5Engine.anon.IsAllowedInsideAttributeElementRenderUnsafeAttributes
 import typings.ckeditorCkeditor5Engine.anon.RenderUnsafeAttributes
+import typings.ckeditorCkeditor5Engine.anon.`13`
 import typings.ckeditorCkeditor5Engine.anon.`14`
-import typings.ckeditorCkeditor5Engine.anon.`15`
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.after
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.before
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.end
@@ -63,9 +63,9 @@ object srcViewDowncastwriterMod {
     def createDocumentFragment(children: typings.ckeditorCkeditor5Engine.srcViewNodeMod.default): typings.ckeditorCkeditor5Engine.srcViewDocumentfragmentMod.default = js.native
     
     def createEditableElement(name: String): typings.ckeditorCkeditor5Engine.srcViewEditableelementMod.default = js.native
-    def createEditableElement(name: String, attributes: Unit, options: `14`): typings.ckeditorCkeditor5Engine.srcViewEditableelementMod.default = js.native
+    def createEditableElement(name: String, attributes: Unit, options: `13`): typings.ckeditorCkeditor5Engine.srcViewEditableelementMod.default = js.native
     def createEditableElement(name: String, attributes: Record[String, String]): typings.ckeditorCkeditor5Engine.srcViewEditableelementMod.default = js.native
-    def createEditableElement(name: String, attributes: Record[String, String], options: `14`): typings.ckeditorCkeditor5Engine.srcViewEditableelementMod.default = js.native
+    def createEditableElement(name: String, attributes: Record[String, String], options: `13`): typings.ckeditorCkeditor5Engine.srcViewEditableelementMod.default = js.native
     
     def createEmptyElement(name: String): typings.ckeditorCkeditor5Engine.srcViewEmptyelementMod.default = js.native
     def createEmptyElement(name: String, attributes: Unit, options: IsAllowedInsideAttributeElement): typings.ckeditorCkeditor5Engine.srcViewEmptyelementMod.default = js.native
@@ -200,9 +200,9 @@ object srcViewDowncastwriterMod {
           /* domElement */ Document, 
           Unit
         ],
-      options: `15`
+      options: `14`
     ): typings.ckeditorCkeditor5Engine.srcViewUielementMod.default = js.native
-    def createUIElement(name: String, attributes: Null, renderFunction: Unit, options: `15`): typings.ckeditorCkeditor5Engine.srcViewUielementMod.default = js.native
+    def createUIElement(name: String, attributes: Null, renderFunction: Unit, options: `14`): typings.ckeditorCkeditor5Engine.srcViewUielementMod.default = js.native
     def createUIElement(
       name: String,
       attributes: Unit,
@@ -220,9 +220,9 @@ object srcViewDowncastwriterMod {
           /* domElement */ Document, 
           Unit
         ],
-      options: `15`
+      options: `14`
     ): typings.ckeditorCkeditor5Engine.srcViewUielementMod.default = js.native
-    def createUIElement(name: String, attributes: Unit, renderFunction: Unit, options: `15`): typings.ckeditorCkeditor5Engine.srcViewUielementMod.default = js.native
+    def createUIElement(name: String, attributes: Unit, renderFunction: Unit, options: `14`): typings.ckeditorCkeditor5Engine.srcViewUielementMod.default = js.native
     def createUIElement(name: String, attributes: Record[String, String]): typings.ckeditorCkeditor5Engine.srcViewUielementMod.default = js.native
     def createUIElement(
       name: String,
@@ -241,9 +241,9 @@ object srcViewDowncastwriterMod {
           /* domElement */ Document, 
           Unit
         ],
-      options: `15`
+      options: `14`
     ): typings.ckeditorCkeditor5Engine.srcViewUielementMod.default = js.native
-    def createUIElement(name: String, attributes: Record[String, String], renderFunction: Unit, options: `15`): typings.ckeditorCkeditor5Engine.srcViewUielementMod.default = js.native
+    def createUIElement(name: String, attributes: Record[String, String], renderFunction: Unit, options: `14`): typings.ckeditorCkeditor5Engine.srcViewUielementMod.default = js.native
     
     val document: D = js.native
     

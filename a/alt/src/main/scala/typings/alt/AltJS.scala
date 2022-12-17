@@ -334,21 +334,14 @@ object AltJS {
     var registerAsync: js.UndefOr[js.Function1[/* datasource */ Source, Unit]] = js.undefined
     
     //state
-    var setState: (js.UndefOr[js.Function1[/* state */ S, Unit]]) & (js.UndefOr[
-        js.Function1[/* stateFn */ js.Function2[/* currentState */ S, /* nextState */ S, S], Unit]
-      ])
+    var setState: js.UndefOr[js.Function1[/* state */ S, Unit]] = js.undefined
     
-    var waitFor: (js.UndefOr[js.Function1[/* store */ AltStore[Any], Unit]]) & (js.UndefOr[js.Function1[/* storeOrStores */ AltStore[Any] | js.Array[AltStore[Any]], Unit]])
+    var waitFor: js.UndefOr[js.Function1[/* store */ AltStore[Any], Unit]] = js.undefined
   }
   object StoreModel {
     
-    inline def apply[S](
-      setState: (js.UndefOr[js.Function1[/* state */ S, Unit]]) & (js.UndefOr[
-          js.Function1[/* stateFn */ js.Function2[/* currentState */ S, /* nextState */ S, S], Unit]
-        ]),
-      waitFor: (js.UndefOr[js.Function1[/* store */ AltStore[Any], Unit]]) & (js.UndefOr[js.Function1[/* storeOrStores */ AltStore[Any] | js.Array[AltStore[Any]], Unit]])
-    ): StoreModel[S] = {
-      val __obj = js.Dynamic.literal(setState = setState.asInstanceOf[js.Any], waitFor = waitFor.asInstanceOf[js.Any])
+    inline def apply[S](): StoreModel[S] = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StoreModel[S]]
     }
     
@@ -438,15 +431,13 @@ object AltJS {
       
       inline def setRegisterAsyncUndefined: Self = StObject.set(x, "registerAsync", js.undefined)
       
-      inline def setSetState(
-        value: (js.UndefOr[js.Function1[/* state */ S, Unit]]) & (js.UndefOr[
-              js.Function1[/* stateFn */ js.Function2[/* currentState */ S, /* nextState */ S, S], Unit]
-            ])
-      ): Self = StObject.set(x, "setState", value.asInstanceOf[js.Any])
+      inline def setSetState(value: /* state */ S => Unit): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
       
-      inline def setWaitFor(
-        value: (js.UndefOr[js.Function1[/* store */ AltStore[Any], Unit]]) & (js.UndefOr[js.Function1[/* storeOrStores */ AltStore[Any] | js.Array[AltStore[Any]], Unit]])
-      ): Self = StObject.set(x, "waitFor", value.asInstanceOf[js.Any])
+      inline def setSetStateUndefined: Self = StObject.set(x, "setState", js.undefined)
+      
+      inline def setWaitFor(value: /* store */ AltStore[Any] => Unit): Self = StObject.set(x, "waitFor", js.Any.fromFunction1(value))
+      
+      inline def setWaitForUndefined: Self = StObject.set(x, "waitFor", js.undefined)
     }
   }
   

@@ -89,7 +89,7 @@ trait PickImplsilentPartialPick
   
   var refreshOnResize: js.UndefOr[Boolean] = js.undefined
   
-  var silent: Boolean & js.UndefOr[Boolean]
+  var silent: Boolean
   
   var throttle: js.UndefOr[`false` | Double] = js.undefined
   
@@ -103,7 +103,7 @@ trait PickImplsilentPartialPick
 }
 object PickImplsilentPartialPick {
   
-  inline def apply(silent: Boolean & js.UndefOr[Boolean]): PickImplsilentPartialPick = {
+  inline def apply(silent: Boolean): PickImplsilentPartialPick = {
     val __obj = js.Dynamic.literal(silent = silent.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplsilentPartialPick]
   }
@@ -250,7 +250,7 @@ object PickImplsilentPartialPick {
     
     inline def setRefreshOnResizeUndefined: Self = StObject.set(x, "refreshOnResize", js.undefined)
     
-    inline def setSilent(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+    inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
     inline def setThrottle(value: `false` | Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
     

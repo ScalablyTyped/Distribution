@@ -73,7 +73,7 @@ trait SimpleMarkerSymbolPropert extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-MarkerSymbol.html#type)
     */
-  var `type`: (js.UndefOr[`simple-marker` | `picture-marker`]) & `simple-marker`
+  var `type`: js.UndefOr[`simple-marker` | `picture-marker`] = js.undefined
   
   /**
     * The offset on the x-axis in points.
@@ -95,9 +95,8 @@ trait SimpleMarkerSymbolPropert extends StObject {
 }
 object SimpleMarkerSymbolPropert {
   
-  inline def apply(`type`: (js.UndefOr[`simple-marker` | `picture-marker`]) & `simple-marker`): SimpleMarkerSymbolPropert = {
+  inline def apply(): SimpleMarkerSymbolPropert = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleMarkerSymbolPropert]
   }
   
@@ -131,7 +130,9 @@ object SimpleMarkerSymbolPropert {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setType(value: (js.UndefOr[`simple-marker` | `picture-marker`]) & `simple-marker`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `simple-marker` | `picture-marker`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     inline def setXoffset(value: Double | String): Self = StObject.set(x, "xoffset", value.asInstanceOf[js.Any])
     

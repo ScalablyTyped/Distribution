@@ -10,6 +10,8 @@ trait ActionsCell extends StObject {
   
   var cell: String
   
+  var choiceCell: String
+  
   var detailButton: String
   
   var detailButtonExpanded: String
@@ -39,6 +41,7 @@ object ActionsCell {
   inline def apply(
     actionsCell: String,
     cell: String,
+    choiceCell: String,
     detailButton: String,
     detailButtonExpanded: String,
     detailCell: String,
@@ -52,7 +55,7 @@ object ActionsCell {
     row: String,
     rowAdditional: String
   ): ActionsCell = {
-    val __obj = js.Dynamic.literal(actionsCell = actionsCell.asInstanceOf[js.Any], cell = cell.asInstanceOf[js.Any], detailButton = detailButton.asInstanceOf[js.Any], detailButtonExpanded = detailButtonExpanded.asInstanceOf[js.Any], detailCell = detailCell.asInstanceOf[js.Any], detailIcon = detailIcon.asInstanceOf[js.Any], detailIconExpanded = detailIconExpanded.asInstanceOf[js.Any], detailPanelCell = detailPanelCell.asInstanceOf[js.Any], detailRow = detailRow.asInstanceOf[js.Any], detailRowText = detailRowText.asInstanceOf[js.Any], headerCell = headerCell.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], rowAdditional = rowAdditional.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(actionsCell = actionsCell.asInstanceOf[js.Any], cell = cell.asInstanceOf[js.Any], choiceCell = choiceCell.asInstanceOf[js.Any], detailButton = detailButton.asInstanceOf[js.Any], detailButtonExpanded = detailButtonExpanded.asInstanceOf[js.Any], detailCell = detailCell.asInstanceOf[js.Any], detailIcon = detailIcon.asInstanceOf[js.Any], detailIconExpanded = detailIconExpanded.asInstanceOf[js.Any], detailPanelCell = detailPanelCell.asInstanceOf[js.Any], detailRow = detailRow.asInstanceOf[js.Any], detailRowText = detailRowText.asInstanceOf[js.Any], headerCell = headerCell.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], rowAdditional = rowAdditional.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionsCell]
   }
   
@@ -61,6 +64,8 @@ object ActionsCell {
     inline def setActionsCell(value: String): Self = StObject.set(x, "actionsCell", value.asInstanceOf[js.Any])
     
     inline def setCell(value: String): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+    
+    inline def setChoiceCell(value: String): Self = StObject.set(x, "choiceCell", value.asInstanceOf[js.Any])
     
     inline def setDetailButton(value: String): Self = StObject.set(x, "detailButton", value.asInstanceOf[js.Any])
     

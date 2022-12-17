@@ -1,9 +1,9 @@
 package typings.tabris.mod
 
 import org.scalablytyped.runtime.NumberDictionary
-import typings.tabris.anon.InstantiableU
 import typings.tabris.anon.Opacity
-import typings.tabris.anon.`6`
+import typings.tabris.anon.`16`
+import typings.tabris.anon.`17`
 import typings.tabris.tabrisStrings.set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -124,7 +124,7 @@ open class WidgetCollection[WidgetType /* <: AnyWidget */] ()
   /**
     * @constant
     */
-  val jsxAttributes: `6`[WidgetType] = js.native
+  val jsxAttributes: `17`[WidgetType] = js.native
   
   /**
     * Returns the last widget in the collection that is matched by the selector. Without selector, it is
@@ -132,7 +132,7 @@ open class WidgetCollection[WidgetType /* <: AnyWidget */] ()
     * @param selector A selector expression or a predicate function to filter the results.
     */
   def last[Result /* <: WidgetType */](): js.UndefOr[Result] = js.native
-  def last[U /* <: Widget[Any] */](constructor: InstantiableU[U]): U = js.native
+  def last[U /* <: Widget[Any] */](constructor: `16`[U]): U = js.native
   def last[Result /* <: WidgetType */](selector: Selector[WidgetType, Result]): js.UndefOr[Result] = js.native
   /**
     * Returns the last widget in the collection that is an instance of the given class.

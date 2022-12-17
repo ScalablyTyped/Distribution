@@ -6,25 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Recursive extends StObject {
   
-  var recursive: js.UndefOr[Boolean] = js.undefined
-  
-  var useTrash: js.UndefOr[Boolean] = js.undefined
+  val recursive: Boolean
 }
 object Recursive {
   
-  inline def apply(): Recursive = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(recursive: Boolean): Recursive = {
+    val __obj = js.Dynamic.literal(recursive = recursive.asInstanceOf[js.Any])
     __obj.asInstanceOf[Recursive]
   }
   
   extension [Self <: Recursive](x: Self) {
     
     inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
-    
-    inline def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
-    
-    inline def setUseTrash(value: Boolean): Self = StObject.set(x, "useTrash", value.asInstanceOf[js.Any])
-    
-    inline def setUseTrashUndefined: Self = StObject.set(x, "useTrash", js.undefined)
   }
 }

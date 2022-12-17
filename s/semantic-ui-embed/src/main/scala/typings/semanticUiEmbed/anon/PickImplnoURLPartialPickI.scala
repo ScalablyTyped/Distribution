@@ -12,11 +12,11 @@ trait PickImplnoURLPartialPickI
   
   var method: js.UndefOr[String] = js.undefined
   
-  var noURL: String & js.UndefOr[String]
+  var noURL: String
 }
 object PickImplnoURLPartialPickI {
   
-  inline def apply(noURL: String & js.UndefOr[String]): PickImplnoURLPartialPickI = {
+  inline def apply(noURL: String): PickImplnoURLPartialPickI = {
     val __obj = js.Dynamic.literal(noURL = noURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplnoURLPartialPickI]
   }
@@ -27,6 +27,6 @@ object PickImplnoURLPartialPickI {
     
     inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    inline def setNoURL(value: String & js.UndefOr[String]): Self = StObject.set(x, "noURL", value.asInstanceOf[js.Any])
+    inline def setNoURL(value: String): Self = StObject.set(x, "noURL", value.asInstanceOf[js.Any])
   }
 }

@@ -56,4 +56,4 @@ type IThemeRegistration = IShikiTheme | (StringLiteralUnion[Theme, String])
   * This has auto completion whereas `'foo' | string` doesn't
   * Adapted from https://github.com/microsoft/TypeScript/issues/29729
   */
-type StringLiteralUnion[T /* <: U */, U] = T | (U & js.Object)
+type StringLiteralUnion[T /* <: U */, U] = T | U

@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Package extends StObject {
   
   @JSName("package")
-  var _package: js.UndefOr[Ecosystem] = js.undefined
+  var _package: js.UndefOr[EcosystemName] = js.undefined
   
-  var first_patched_version: js.UndefOr[`2`] = js.undefined
+  var first_patched_version: js.UndefOr[`390`] = js.undefined
   
   var severity: js.UndefOr[String] = js.undefined
   
@@ -24,7 +24,7 @@ object Package {
   
   extension [Self <: Package](x: Self) {
     
-    inline def setFirst_patched_version(value: `2`): Self = StObject.set(x, "first_patched_version", value.asInstanceOf[js.Any])
+    inline def setFirst_patched_version(value: `390`): Self = StObject.set(x, "first_patched_version", value.asInstanceOf[js.Any])
     
     inline def setFirst_patched_versionUndefined: Self = StObject.set(x, "first_patched_version", js.undefined)
     
@@ -36,7 +36,7 @@ object Package {
     
     inline def setVulnerable_version_rangeUndefined: Self = StObject.set(x, "vulnerable_version_range", js.undefined)
     
-    inline def set_package(value: Ecosystem): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+    inline def set_package(value: EcosystemName): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
     
     inline def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
   }

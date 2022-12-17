@@ -4,19 +4,19 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Send[E] extends StObject {
+trait Send[T /* <: js.Function */] extends StObject {
   
-  def send(data: E): js.Promise[Unit]
+  var send: T
 }
 object Send {
   
-  inline def apply[E](send: E => js.Promise[Unit]): Send[E] = {
-    val __obj = js.Dynamic.literal(send = js.Any.fromFunction1(send))
-    __obj.asInstanceOf[Send[E]]
+  inline def apply[T /* <: js.Function */](send: T): Send[T] = {
+    val __obj = js.Dynamic.literal(send = send.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Send[T]]
   }
   
-  extension [Self <: Send[?], E](x: Self & Send[E]) {
+  extension [Self <: Send[?], T /* <: js.Function */](x: Self & Send[T]) {
     
-    inline def setSend(value: E => js.Promise[Unit]): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
+    inline def setSend(value: T): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
   }
 }

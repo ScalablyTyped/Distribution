@@ -75,5 +75,5 @@ trait NoneTAsComponentextendsElCall extends StObject {
     HelpersPropsOverrides & PickBadgeHelpersPropsFloaBackgroundColor & (Pick[Any, String | Double | js.Symbol])
   ]) = js.native
   
-  var displayName: String & js.UndefOr[String] = js.native
+  var displayName: String = js.native
 }

@@ -28,11 +28,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-/**
-  * @public
-  */
-inline def default: typings.puppeteerCore.libEsmPuppeteerNodePuppeteerNodeMod.PuppeteerNode = ^.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[typings.puppeteerCore.libEsmPuppeteerNodePuppeteerNodeMod.PuppeteerNode]
-
 inline def DEFAULT_INTERCEPT_RESOLUTION_PRIORITY: /* 0 */ Double = ^.asInstanceOf[js.Dynamic].selectDynamic("DEFAULT_INTERCEPT_RESOLUTION_PRIORITY").asInstanceOf[/* 0 */ Double]
 
 inline def DEFERRED_PROMISE_DEBUG_TIMEOUT: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("DEFERRED_PROMISE_DEBUG_TIMEOUT").asInstanceOf[Double]

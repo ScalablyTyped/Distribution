@@ -6,25 +6,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetResponses200Content331 extends StObject {
   
-  /**
-    * **Note**: This operation is in beta and subject to change.
-    *
-    * Lists the fine-grained permissions available for an organization.
-    *
-    * To use this endpoint the authenticated user must be an administrator for the organization or of an repository of the organizaiton and must use an access token with `admin:org repo` scope.
-    * GitHub Apps must have the `organization_custom_roles:read` organization permission to use this endpoint.
-    */
+  /** This endpoint should only be used to stop watching a repository. To control whether or not you wish to receive notifications from a repository, [set the repository's subscription manually](https://docs.github.com/rest/reference/activity#set-a-repository-subscription). */
+  var delete: Parameters135Responses
+  
   var get: Responses200Content331
+  
+  /** If you would like to watch a repository, set `subscribed` to `true`. If you would like to ignore notifications made within a repository, set `ignored` to `true`. If you would like to stop watching a repository, [delete the repository's subscription](https://docs.github.com/rest/reference/activity#delete-a-repository-subscription) completely. */
+  var put: RequestBodyContentApplicationjsonSubscribed
 }
 object GetResponses200Content331 {
   
-  inline def apply(get: Responses200Content331): GetResponses200Content331 = {
-    val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any])
+  inline def apply(
+    delete: Parameters135Responses,
+    get: Responses200Content331,
+    put: RequestBodyContentApplicationjsonSubscribed
+  ): GetResponses200Content331 = {
+    val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResponses200Content331]
   }
   
   extension [Self <: GetResponses200Content331](x: Self) {
     
+    inline def setDelete(value: Parameters135Responses): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    
     inline def setGet(value: Responses200Content331): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    
+    inline def setPut(value: RequestBodyContentApplicationjsonSubscribed): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
   }
 }

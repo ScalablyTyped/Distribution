@@ -1,6 +1,6 @@
 package typings.screepsArena
 
-import typings.screepsArena.anon.Object
+import typings.screepsArena.anon.Error
 import typings.screepsArena.gameConstantsMod.BuildableStructure
 import typings.screepsArena.gameConstantsMod.DirectionConstant
 import typings.screepsArena.gameConstantsMod.TERRAIN_SWAMP
@@ -23,7 +23,7 @@ object gameUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createConstructionSite(x: Double, y: Double, structureType: Constructor[BuildableStructure]): Object = (^.asInstanceOf[js.Dynamic].applyDynamic("createConstructionSite")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], structureType.asInstanceOf[js.Any])).asInstanceOf[Object]
+  inline def createConstructionSite(x: Double, y: Double, structureType: Constructor[BuildableStructure]): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("createConstructionSite")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], structureType.asInstanceOf[js.Any])).asInstanceOf[Error]
   
   inline def findClosestByPath[T /* <: RoomPosition */](fromPos: RoomPosition, positions: js.Array[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("findClosestByPath")(fromPos.asInstanceOf[js.Any], positions.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def findClosestByPath[T /* <: RoomPosition */](fromPos: RoomPosition, positions: js.Array[T], opts: FindPathOpts): T = (^.asInstanceOf[js.Dynamic].applyDynamic("findClosestByPath")(fromPos.asInstanceOf[js.Any], positions.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[T]

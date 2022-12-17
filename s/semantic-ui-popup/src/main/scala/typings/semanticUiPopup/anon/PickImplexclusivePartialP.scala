@@ -46,7 +46,7 @@ trait PickImplexclusivePartialP
   
   var error: js.UndefOr[ErrorSettings] = js.undefined
   
-  var exclusive: Boolean & js.UndefOr[Boolean]
+  var exclusive: Boolean
   
   var hideOnScroll: js.UndefOr[auto | `false`] = js.undefined
   
@@ -120,7 +120,7 @@ trait PickImplexclusivePartialP
 }
 object PickImplexclusivePartialP {
   
-  inline def apply(exclusive: Boolean & js.UndefOr[Boolean]): PickImplexclusivePartialP = {
+  inline def apply(exclusive: Boolean): PickImplexclusivePartialP = {
     val __obj = js.Dynamic.literal(exclusive = exclusive.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplexclusivePartialP]
   }
@@ -171,7 +171,7 @@ object PickImplexclusivePartialP {
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    inline def setExclusive(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
+    inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
     
     inline def setHideOnScroll(value: auto | `false`): Self = StObject.set(x, "hideOnScroll", value.asInstanceOf[js.Any])
     

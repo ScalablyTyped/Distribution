@@ -6,30 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait `0` extends StObject {
-    
-    var considerBuiltins: js.UndefOr[Boolean] = js.undefined
-  }
-  object `0` {
-    
-    inline def apply(): `0` = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[`0`]
-    }
-    
-    extension [Self <: `0`](x: Self) {
-      
-      inline def setConsiderBuiltins(value: Boolean): Self = StObject.set(x, "considerBuiltins", value.asInstanceOf[js.Any])
-      
-      inline def setConsiderBuiltinsUndefined: Self = StObject.set(x, "considerBuiltins", js.undefined)
-    }
-  }
-  
   trait ConsiderBuiltins extends StObject {
     
     var considerBuiltins: js.UndefOr[Boolean] = js.undefined
-    
-    var extensions: js.UndefOr[js.Array[String]] = js.undefined
   }
   object ConsiderBuiltins {
     
@@ -39,6 +18,27 @@ object anon {
     }
     
     extension [Self <: ConsiderBuiltins](x: Self) {
+      
+      inline def setConsiderBuiltins(value: Boolean): Self = StObject.set(x, "considerBuiltins", value.asInstanceOf[js.Any])
+      
+      inline def setConsiderBuiltinsUndefined: Self = StObject.set(x, "considerBuiltins", js.undefined)
+    }
+  }
+  
+  trait ConsiderBuiltinsExtensions extends StObject {
+    
+    var considerBuiltins: js.UndefOr[Boolean] = js.undefined
+    
+    var extensions: js.UndefOr[js.Array[String]] = js.undefined
+  }
+  object ConsiderBuiltinsExtensions {
+    
+    inline def apply(): ConsiderBuiltinsExtensions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ConsiderBuiltinsExtensions]
+    }
+    
+    extension [Self <: ConsiderBuiltinsExtensions](x: Self) {
       
       inline def setConsiderBuiltins(value: Boolean): Self = StObject.set(x, "considerBuiltins", value.asInstanceOf[js.Any])
       

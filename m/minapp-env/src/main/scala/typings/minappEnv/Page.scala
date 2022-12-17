@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Page {
   
-  type GetCurrentPages = js.Function0[Array[(PageInstance[js.Object, js.Object]) & js.Object]]
+  type GetCurrentPages = js.Function0[Array[PageInstance[js.Object, js.Object]]]
   
   trait ICustomShareContent extends StObject {
     

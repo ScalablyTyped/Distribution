@@ -1,5 +1,6 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,14 +9,18 @@ trait `531` extends StObject {
   
   @JSName("application/json")
   var applicationSlashjson: js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['label'] */ js.Any
+    Partial[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['labeled-issue-event'] */ js.Any
+    ]
   ]
 }
 object `531` {
   
   inline def apply(
     applicationSlashjson: js.Array[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['label'] */ js.Any
+      Partial[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['labeled-issue-event'] */ js.Any
+      ]
     ]
   ): `531` = {
     val __obj = js.Dynamic.literal()
@@ -27,12 +32,16 @@ object `531` {
     
     inline def setApplicationSlashjson(
       value: js.Array[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['label'] */ js.Any
+          Partial[
+            /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['labeled-issue-event'] */ js.Any
+          ]
         ]
     ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
     
     inline def setApplicationSlashjsonVarargs(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['label'] */ js.Any)*
+      value: (Partial[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['labeled-issue-event'] */ js.Any
+        ])*
     ): Self = StObject.set(x, "application/json", js.Array(value*))
   }
 }

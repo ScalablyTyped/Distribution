@@ -18,20 +18,16 @@ object mod {
     
     var colorSpace: js.UndefOr[PredefinedColorSpace] = js.undefined
     
-    var data: js.UndefOr[js.typedarray.Uint8ClampedArray] & js.typedarray.Uint8ClampedArray
+    var data: js.UndefOr[js.typedarray.Uint8ClampedArray] = js.undefined
     
-    var height: js.UndefOr[Double] & Double
+    var height: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] & Double
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ImageDataSubset {
     
-    inline def apply(
-      data: js.UndefOr[js.typedarray.Uint8ClampedArray] & js.typedarray.Uint8ClampedArray,
-      height: js.UndefOr[Double] & Double,
-      width: js.UndefOr[Double] & Double
-    ): ImageDataSubset = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    inline def apply(): ImageDataSubset = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ImageDataSubset]
     }
     
@@ -41,11 +37,17 @@ object mod {
       
       inline def setColorSpaceUndefined: Self = StObject.set(x, "colorSpace", js.undefined)
       
-      inline def setData(value: js.UndefOr[js.typedarray.Uint8ClampedArray] & js.typedarray.Uint8ClampedArray): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.typedarray.Uint8ClampedArray): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setHeight(value: js.UndefOr[Double] & Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setWidth(value: js.UndefOr[Double] & Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

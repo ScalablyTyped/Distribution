@@ -314,7 +314,7 @@ trait OmitVideospeedpositiondur extends StObject {
   @JSName("isDisposed")
   var isDisposed_Original: js.Function0[Boolean]
   
-  var jsxAttributes: (JSXAttributes[Video, Omit[Video, set | typings.tabris.tabrisStrings.jsxAttributes]]) & js.Object & `3`
+  var jsxAttributes: (JSXAttributes[Video, Omit[Video, set | typings.tabris.tabrisStrings.jsxAttributes]]) & Children
   
   var layoutData: LayoutDataValue
   
@@ -585,7 +585,7 @@ object OmitVideospeedpositiondur {
     insertAfter: /* widget */ Widget[Any] => Video,
     insertBefore: /* widget */ Widget[Any] => Video,
     isDisposed: () => Boolean,
-    jsxAttributes: (JSXAttributes[Video, Omit[Video, set | jsxAttributes]]) & js.Object & `3`,
+    jsxAttributes: (JSXAttributes[Video, Omit[Video, set | jsxAttributes]]) & Children,
     layoutData: LayoutDataValue,
     left: ConstraintValue,
     off: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Unit], /* context */ js.UndefOr[js.Object]) => Video,
@@ -764,7 +764,7 @@ object OmitVideospeedpositiondur {
     
     inline def setIsDisposed(value: () => Boolean): Self = StObject.set(x, "isDisposed", js.Any.fromFunction0(value))
     
-    inline def setJsxAttributes(value: (JSXAttributes[Video, Omit[Video, set | jsxAttributes]]) & js.Object & `3`): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
+    inline def setJsxAttributes(value: (JSXAttributes[Video, Omit[Video, set | jsxAttributes]]) & Children): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     
     inline def setLayoutData(value: LayoutDataValue): Self = StObject.set(x, "layoutData", value.asInstanceOf[js.Any])
     

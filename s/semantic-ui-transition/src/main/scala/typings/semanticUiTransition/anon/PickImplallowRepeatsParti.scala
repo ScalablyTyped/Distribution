@@ -15,7 +15,7 @@ trait PickImplallowRepeatsParti
   extends StObject
      with Param {
   
-  var allowRepeats: Boolean & js.UndefOr[Boolean]
+  var allowRepeats: Boolean
   
   var animation: js.UndefOr[String] = js.undefined
   
@@ -57,14 +57,14 @@ trait PickImplallowRepeatsParti
 }
 object PickImplallowRepeatsParti {
   
-  inline def apply(allowRepeats: Boolean & js.UndefOr[Boolean]): PickImplallowRepeatsParti = {
+  inline def apply(allowRepeats: Boolean): PickImplallowRepeatsParti = {
     val __obj = js.Dynamic.literal(allowRepeats = allowRepeats.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplallowRepeatsParti]
   }
   
   extension [Self <: PickImplallowRepeatsParti](x: Self) {
     
-    inline def setAllowRepeats(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "allowRepeats", value.asInstanceOf[js.Any])
+    inline def setAllowRepeats(value: Boolean): Self = StObject.set(x, "allowRepeats", value.asInstanceOf[js.Any])
     
     inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

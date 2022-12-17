@@ -22,7 +22,5 @@ object srcLoadersInlineResourceMod {
   val InlineAngularResourceSymbol: js.Symbol = js.native
   
   @js.native
-  trait CompilationWithInlineAngularResource
-    extends StObject
-       with Compilation
+  trait CompilationWithInlineAngularResource extends Compilation
 }

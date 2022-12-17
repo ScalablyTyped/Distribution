@@ -1,6 +1,6 @@
 package typings.reactNativeSvg.libTypescriptReactNativeSVGMod
 
-import typings.reactNativeSvg.anon.PreserveAspectRatio
+import typings.reactNativeSvg.anon.Width
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,8 +18,8 @@ object Image {
   
   @JSImport("react-native-svg/lib/typescript/ReactNativeSVG", "Image.defaultProps")
   @js.native
-  def defaultProps: PreserveAspectRatio = js.native
-  inline def defaultProps_=(x: PreserveAspectRatio): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  def defaultProps: Width = js.native
+  inline def defaultProps_=(x: Width): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
   @JSImport("react-native-svg/lib/typescript/ReactNativeSVG", "Image.displayName")
   @js.native

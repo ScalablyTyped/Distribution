@@ -3,7 +3,6 @@ package typings.chartJs.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.chartJs.anon.Date
 import typings.chartJs.anon.DisplayFormats
-import typings.chartJs.anon.Source
 import typings.chartJs.chartJsStrings.auto
 import typings.chartJs.chartJsStrings.bottom
 import typings.chartJs.chartJsStrings.center
@@ -127,7 +126,7 @@ trait TimeScaleOptions extends StObject {
   
   var suggestedMin: String | Double
   
-  var ticks: CartesianTickOptions & Source
+  var ticks: CartesianTickOptions
   
   var time: DisplayFormats
   
@@ -166,7 +165,7 @@ object TimeScaleOptions {
     reverse: Boolean,
     suggestedMax: String | Double,
     suggestedMin: String | Double,
-    ticks: CartesianTickOptions & Source,
+    ticks: CartesianTickOptions,
     time: DisplayFormats,
     title: typings.chartJs.anon.Align,
     weight: Double
@@ -245,7 +244,7 @@ object TimeScaleOptions {
     
     inline def setSuggestedMin(value: String | Double): Self = StObject.set(x, "suggestedMin", value.asInstanceOf[js.Any])
     
-    inline def setTicks(value: CartesianTickOptions & Source): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
+    inline def setTicks(value: CartesianTickOptions): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
     
     inline def setTime(value: DisplayFormats): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     

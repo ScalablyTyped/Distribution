@@ -12,11 +12,11 @@ trait PickImplfixedPartialPickI
   
   var bottom: js.UndefOr[String] = js.undefined
   
-  var fixed: String & js.UndefOr[String]
+  var fixed: String
 }
 object PickImplfixedPartialPickI {
   
-  inline def apply(fixed: String & js.UndefOr[String]): PickImplfixedPartialPickI = {
+  inline def apply(fixed: String): PickImplfixedPartialPickI = {
     val __obj = js.Dynamic.literal(fixed = fixed.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplfixedPartialPickI]
   }
@@ -27,6 +27,6 @@ object PickImplfixedPartialPickI {
     
     inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
-    inline def setFixed(value: String & js.UndefOr[String]): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+    inline def setFixed(value: String): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
   }
 }

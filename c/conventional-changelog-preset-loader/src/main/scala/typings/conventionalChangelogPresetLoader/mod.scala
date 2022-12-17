@@ -43,7 +43,7 @@ object mod {
   }
   
   type Builder = js.Function1[
-    /* config */ js.Object & Config, 
+    /* config */ Config, 
     typings.conventionalChangelogCore.mod.Options.Config[Commit[String | Double | js.Symbol], Context]
   ]
   

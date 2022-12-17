@@ -8,7 +8,7 @@ trait Analog extends StObject {
   
   var analog: js.UndefOr[Hour] = js.undefined
   
-  var digital: js.UndefOr[`16`] = js.undefined
+  var digital: js.UndefOr[`13`] = js.undefined
 }
 object Analog {
   
@@ -23,7 +23,7 @@ object Analog {
     
     inline def setAnalogUndefined: Self = StObject.set(x, "analog", js.undefined)
     
-    inline def setDigital(value: `16`): Self = StObject.set(x, "digital", value.asInstanceOf[js.Any])
+    inline def setDigital(value: `13`): Self = StObject.set(x, "digital", value.asInstanceOf[js.Any])
     
     inline def setDigitalUndefined: Self = StObject.set(x, "digital", js.undefined)
   }

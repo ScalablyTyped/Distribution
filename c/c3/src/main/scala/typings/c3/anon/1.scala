@@ -1,24 +1,24 @@
 package typings.c3.anon
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.c3.mod.FormatFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `1` extends StObject {
   
-  var show: js.UndefOr[Boolean] = js.undefined
+  var format: StringDictionary[Boolean | FormatFunction]
 }
 object `1` {
   
-  inline def apply(): `1` = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(format: StringDictionary[Boolean | FormatFunction]): `1` = {
+    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
     __obj.asInstanceOf[`1`]
   }
   
   extension [Self <: `1`](x: Self) {
     
-    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
-    
-    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setFormat(value: StringDictionary[Boolean | FormatFunction]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
   }
 }

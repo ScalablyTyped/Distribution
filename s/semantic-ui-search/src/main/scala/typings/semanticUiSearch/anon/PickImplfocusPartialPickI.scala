@@ -14,7 +14,7 @@ trait PickImplfocusPartialPickI
   
   var empty: js.UndefOr[String] = js.undefined
   
-  var focus: String & js.UndefOr[String]
+  var focus: String
   
   var loading: js.UndefOr[String] = js.undefined
   
@@ -22,7 +22,7 @@ trait PickImplfocusPartialPickI
 }
 object PickImplfocusPartialPickI {
   
-  inline def apply(focus: String & js.UndefOr[String]): PickImplfocusPartialPickI = {
+  inline def apply(focus: String): PickImplfocusPartialPickI = {
     val __obj = js.Dynamic.literal(focus = focus.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplfocusPartialPickI]
   }
@@ -37,7 +37,7 @@ object PickImplfocusPartialPickI {
     
     inline def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
     
-    inline def setFocus(value: String & js.UndefOr[String]): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+    inline def setFocus(value: String): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
     inline def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     

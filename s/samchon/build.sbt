@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "samchon"
-version := "2.1.4-25b0c2"
+version := "2.1.4-21b631"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ecol" % "1.1.1-46a877",
-  "org.scalablytyped" %%% "std" % "4.9-c133ce",
+  "org.scalablytyped" %%% "ecol" % "1.1.1-0cdbc3",
+  "org.scalablytyped" %%% "std" % "4.9-5f989f",
   "org.scalablytyped" %%% "sxml" % "1.0.4-7bcf5b",
   "org.scalablytyped" %%% "url-variables" % "1.0.3-bed333")
 publishArtifact in packageDoc := false

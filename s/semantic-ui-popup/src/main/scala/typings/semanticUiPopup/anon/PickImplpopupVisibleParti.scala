@@ -14,7 +14,7 @@ trait PickImplpopupVisibleParti
   
   var popup: js.UndefOr[String] = js.undefined
   
-  var popupVisible: String & js.UndefOr[String]
+  var popupVisible: String
   
   var position: js.UndefOr[String] = js.undefined
   
@@ -22,7 +22,7 @@ trait PickImplpopupVisibleParti
 }
 object PickImplpopupVisibleParti {
   
-  inline def apply(popupVisible: String & js.UndefOr[String]): PickImplpopupVisibleParti = {
+  inline def apply(popupVisible: String): PickImplpopupVisibleParti = {
     val __obj = js.Dynamic.literal(popupVisible = popupVisible.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplpopupVisibleParti]
   }
@@ -37,7 +37,7 @@ object PickImplpopupVisibleParti {
     
     inline def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
     
-    inline def setPopupVisible(value: String & js.UndefOr[String]): Self = StObject.set(x, "popupVisible", value.asInstanceOf[js.Any])
+    inline def setPopupVisible(value: String): Self = StObject.set(x, "popupVisible", value.asInstanceOf[js.Any])
     
     inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

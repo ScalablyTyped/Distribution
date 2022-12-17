@@ -6,20 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Label extends StObject {
   
-  var label: String
+  /** @description An alternate short description of the asset. Used in place of the filename. */
+  var label: js.UndefOr[String] = js.undefined
   
-  var ref: String
+  /** @description The file name of the asset. */
+  var name: js.UndefOr[String] = js.undefined
   
-  var repo: Allowmergecommit
-  
-  var sha: String
-  
-  var user: Avatarurl | Null
+  /** @example "uploaded" */
+  var state: js.UndefOr[String] = js.undefined
 }
 object Label {
   
-  inline def apply(label: String, ref: String, repo: Allowmergecommit, sha: String): Label = {
-    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], user = null)
+  inline def apply(): Label = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Label]
   }
   
@@ -27,14 +26,14 @@ object Label {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    inline def setRepo(value: Allowmergecommit): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setUser(value: Avatarurl): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    inline def setUserNull: Self = StObject.set(x, "user", null)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

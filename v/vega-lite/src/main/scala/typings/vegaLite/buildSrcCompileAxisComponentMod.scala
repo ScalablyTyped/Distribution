@@ -197,9 +197,7 @@ object buildSrcCompileAxisComponentMod {
     
     var labelLimit: js.UndefOr[NumberValue] = js.undefined
     
-    var labelLineHeight: js.UndefOr[NumberValue] & (js.UndefOr[
-        (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.NumberValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisNumber[SignalRef]
-      ])
+    var labelLineHeight: js.UndefOr[NumberValue] = js.undefined
     
     var labelOffset: js.UndefOr[
         (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.NumberValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisNumber[SignalRef]
@@ -314,14 +312,11 @@ object buildSrcCompileAxisComponentMod {
     inline def apply(
       disable: Boolean,
       labelExpr: String,
-      labelLineHeight: js.UndefOr[NumberValue] & (js.UndefOr[
-          (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.NumberValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisNumber[SignalRef]
-        ]),
       orient: AxisOrient | SignalRef,
       scale: String,
       title: Text | (js.Array[FieldDefBase[String, Bin]]) | SignalRef
     ): AxisComponentProps = {
-      val __obj = js.Dynamic.literal(disable = disable.asInstanceOf[js.Any], labelExpr = labelExpr.asInstanceOf[js.Any], labelLineHeight = labelLineHeight.asInstanceOf[js.Any], orient = orient.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(disable = disable.asInstanceOf[js.Any], labelExpr = labelExpr.asInstanceOf[js.Any], orient = orient.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[AxisComponentProps]
     }
     
@@ -491,11 +486,9 @@ object buildSrcCompileAxisComponentMod {
       
       inline def setLabelLimitUndefined: Self = StObject.set(x, "labelLimit", js.undefined)
       
-      inline def setLabelLineHeight(
-        value: js.UndefOr[NumberValue] & (js.UndefOr[
-              (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.NumberValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisNumber[SignalRef]
-            ])
-      ): Self = StObject.set(x, "labelLineHeight", value.asInstanceOf[js.Any])
+      inline def setLabelLineHeight(value: NumberValue): Self = StObject.set(x, "labelLineHeight", value.asInstanceOf[js.Any])
+      
+      inline def setLabelLineHeightUndefined: Self = StObject.set(x, "labelLineHeight", js.undefined)
       
       inline def setLabelOffset(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends vega-typings.vega-typings/types/spec/values.NumberValue | undefined ? std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/signal.SignalRef : std.Exclude<vega-typings.vega-typings/types/spec/values.NumberValue | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any) | ConditionalAxisNumber[SignalRef]

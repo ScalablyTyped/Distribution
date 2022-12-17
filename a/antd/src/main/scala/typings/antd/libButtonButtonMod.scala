@@ -71,7 +71,6 @@ import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
 import typings.react.mod.ForwardRefExoticComponent
-import typings.react.mod.HTMLAttributeAnchorTarget
 import typings.react.mod.HTMLAttributeReferrerPolicy
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
@@ -258,7 +257,7 @@ object libButtonButtonMod {
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var href: String & js.UndefOr[String]
+    var href: String
     
     var hrefLang: js.UndefOr[String] = js.undefined
     
@@ -495,7 +494,7 @@ object libButtonButtonMod {
     
     var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var target: js.UndefOr[String] & js.UndefOr[HTMLAttributeAnchorTarget]
+    var target: js.UndefOr[String] = js.undefined
     
     var title: js.UndefOr[String] = js.undefined
     
@@ -511,11 +510,8 @@ object libButtonButtonMod {
   }
   object AnchorButtonProps {
     
-    inline def apply(
-      href: String & js.UndefOr[String],
-      target: js.UndefOr[String] & js.UndefOr[HTMLAttributeAnchorTarget]
-    ): AnchorButtonProps = {
-      val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    inline def apply(href: String): AnchorButtonProps = {
+      val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
       __obj.asInstanceOf[AnchorButtonProps]
     }
     
@@ -805,7 +801,7 @@ object libButtonButtonMod {
       
       inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
-      inline def setHref(value: String & js.UndefOr[String]): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
       inline def setHrefLang(value: String): Self = StObject.set(x, "hrefLang", value.asInstanceOf[js.Any])
       
@@ -1267,7 +1263,9 @@ object libButtonButtonMod {
       
       inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
       
-      inline def setTarget(value: js.UndefOr[String] & js.UndefOr[HTMLAttributeAnchorTarget]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       

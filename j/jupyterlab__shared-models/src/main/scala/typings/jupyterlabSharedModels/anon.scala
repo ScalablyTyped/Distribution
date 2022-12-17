@@ -96,43 +96,18 @@ object anon {
   
   trait NewValue extends StObject {
     
-    var newValue: js.UndefOr[Double] = js.undefined
-    
-    var oldValue: js.UndefOr[Double] = js.undefined
-  }
-  object NewValue {
-    
-    inline def apply(): NewValue = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[NewValue]
-    }
-    
-    extension [Self <: NewValue](x: Self) {
-      
-      inline def setNewValue(value: Double): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
-      
-      inline def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
-      
-      inline def setOldValue(value: Double): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
-      
-      inline def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
-    }
-  }
-  
-  trait NewValueOldValue extends StObject {
-    
     var newValue: js.UndefOr[INotebookMetadata] = js.undefined
     
     var oldValue: INotebookMetadata
   }
-  object NewValueOldValue {
+  object NewValue {
     
-    inline def apply(oldValue: INotebookMetadata): NewValueOldValue = {
+    inline def apply(oldValue: INotebookMetadata): NewValue = {
       val __obj = js.Dynamic.literal(oldValue = oldValue.asInstanceOf[js.Any])
-      __obj.asInstanceOf[NewValueOldValue]
+      __obj.asInstanceOf[NewValue]
     }
     
-    extension [Self <: NewValueOldValue](x: Self) {
+    extension [Self <: NewValue](x: Self) {
       
       inline def setNewValue(value: INotebookMetadata): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
       
@@ -142,26 +117,51 @@ object anon {
     }
   }
   
-  trait OldValue[MetadataType] extends StObject {
+  trait NewValueOldValue[MetadataType] extends StObject {
     
     var newValue: js.UndefOr[Partial[MetadataType]] = js.undefined
     
     var oldValue: js.UndefOr[Partial[MetadataType]] = js.undefined
   }
-  object OldValue {
+  object NewValueOldValue {
     
-    inline def apply[MetadataType](): OldValue[MetadataType] = {
+    inline def apply[MetadataType](): NewValueOldValue[MetadataType] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[OldValue[MetadataType]]
+      __obj.asInstanceOf[NewValueOldValue[MetadataType]]
     }
     
-    extension [Self <: OldValue[?], MetadataType](x: Self & OldValue[MetadataType]) {
+    extension [Self <: NewValueOldValue[?], MetadataType](x: Self & NewValueOldValue[MetadataType]) {
       
       inline def setNewValue(value: Partial[MetadataType]): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
       
       inline def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
       
       inline def setOldValue(value: Partial[MetadataType]): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+      
+      inline def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
+    }
+  }
+  
+  trait OldValue extends StObject {
+    
+    var newValue: js.UndefOr[Double] = js.undefined
+    
+    var oldValue: js.UndefOr[Double] = js.undefined
+  }
+  object OldValue {
+    
+    inline def apply(): OldValue = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[OldValue]
+    }
+    
+    extension [Self <: OldValue](x: Self) {
+      
+      inline def setNewValue(value: Double): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+      
+      inline def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
+      
+      inline def setOldValue(value: Double): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
       
       inline def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
     }

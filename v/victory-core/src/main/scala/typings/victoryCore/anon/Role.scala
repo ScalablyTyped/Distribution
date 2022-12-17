@@ -7,9 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Role extends StObject {
   
-  var groupComponent: Element
-  
-  var lineComponent: Element
+  var rectComponent: Element
   
   var role: String
   
@@ -17,16 +15,14 @@ trait Role extends StObject {
 }
 object Role {
   
-  inline def apply(groupComponent: Element, lineComponent: Element, role: String, shapeRendering: String): Role = {
-    val __obj = js.Dynamic.literal(groupComponent = groupComponent.asInstanceOf[js.Any], lineComponent = lineComponent.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], shapeRendering = shapeRendering.asInstanceOf[js.Any])
+  inline def apply(rectComponent: Element, role: String, shapeRendering: String): Role = {
+    val __obj = js.Dynamic.literal(rectComponent = rectComponent.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], shapeRendering = shapeRendering.asInstanceOf[js.Any])
     __obj.asInstanceOf[Role]
   }
   
   extension [Self <: Role](x: Self) {
     
-    inline def setGroupComponent(value: Element): Self = StObject.set(x, "groupComponent", value.asInstanceOf[js.Any])
-    
-    inline def setLineComponent(value: Element): Self = StObject.set(x, "lineComponent", value.asInstanceOf[js.Any])
+    inline def setRectComponent(value: Element): Self = StObject.set(x, "rectComponent", value.asInstanceOf[js.Any])
     
     inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     

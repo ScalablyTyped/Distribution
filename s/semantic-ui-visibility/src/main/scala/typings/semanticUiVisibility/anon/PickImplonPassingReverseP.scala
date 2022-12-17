@@ -65,7 +65,7 @@ trait PickImplonPassingReverseP
   
   def onPassingReverse(): Unit
   @JSName("onPassingReverse")
-  var onPassingReverse_Original: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+  var onPassingReverse_Original: js.ThisFunction0[/* this */ JQuery, Unit]
   
   var onRefresh: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
@@ -105,9 +105,7 @@ trait PickImplonPassingReverseP
 }
 object PickImplonPassingReverseP {
   
-  inline def apply(
-    onPassingReverse: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-  ): PickImplonPassingReverseP = {
+  inline def apply(onPassingReverse: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonPassingReverseP = {
     val __obj = js.Dynamic.literal(onPassingReverse = onPassingReverse.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonPassingReverseP]
   }
@@ -204,9 +202,7 @@ object PickImplonPassingReverseP {
     
     inline def setOnPassing(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onPassing", value.asInstanceOf[js.Any])
     
-    inline def setOnPassingReverse(
-      value: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-    ): Self = StObject.set(x, "onPassingReverse", value.asInstanceOf[js.Any])
+    inline def setOnPassingReverse(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onPassingReverse", value.asInstanceOf[js.Any])
     
     inline def setOnPassingUndefined: Self = StObject.set(x, "onPassing", js.undefined)
     

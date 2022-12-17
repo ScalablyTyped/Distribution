@@ -6,8 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Topics extends StObject {
   
-  var timeout: js.UndefOr[Double] = js.undefined
-  
   var topics: js.Array[String]
 }
 object Topics {
@@ -18,10 +16,6 @@ object Topics {
   }
   
   extension [Self <: Topics](x: Self) {
-    
-    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
-    
-    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     inline def setTopics(value: js.Array[String]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
     

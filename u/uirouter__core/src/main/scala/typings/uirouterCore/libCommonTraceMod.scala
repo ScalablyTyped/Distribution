@@ -36,30 +36,38 @@ object libCommonTraceMod {
   @js.native
   object Category extends StObject {
     
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[Category & Double] = js.native
+    
     @js.native
     sealed trait HOOK
       extends StObject
          with Category
+    /* 2 */ val HOOK: typings.uirouterCore.libCommonTraceMod.Category.HOOK & Double = js.native
     
     @js.native
     sealed trait RESOLVE
       extends StObject
          with Category
+    /* 0 */ val RESOLVE: typings.uirouterCore.libCommonTraceMod.Category.RESOLVE & Double = js.native
     
     @js.native
     sealed trait TRANSITION
       extends StObject
          with Category
+    /* 1 */ val TRANSITION: typings.uirouterCore.libCommonTraceMod.Category.TRANSITION & Double = js.native
     
     @js.native
     sealed trait UIVIEW
       extends StObject
          with Category
+    /* 3 */ val UIVIEW: typings.uirouterCore.libCommonTraceMod.Category.UIVIEW & Double = js.native
     
     @js.native
     sealed trait VIEWCONFIG
       extends StObject
          with Category
+    /* 4 */ val VIEWCONFIG: typings.uirouterCore.libCommonTraceMod.Category.VIEWCONFIG & Double = js.native
   }
   
   @JSImport("@uirouter/core/lib/common/trace", "Trace")

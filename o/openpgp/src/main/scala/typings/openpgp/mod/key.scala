@@ -3,7 +3,6 @@ package typings.openpgp.mod
 import typings.openpgp.anon.Err
 import typings.openpgp.anon.SelfCertification
 import typings.openpgp.anon.Userid
-import typings.openpgp.anon.Valid
 import typings.openpgp.mod.`type`.keyid.Keyid
 import typings.openpgp.mod.enums.keyStatus
 import typings.openpgp.mod.packet.PublicKey
@@ -337,7 +336,7 @@ object key {
       * @param userId (optional) user ID to get instead of the primary user, if it exists
       * @returns List of signer's keyid and validity of signature
       */
-    def verifyPrimaryUser(keys: js.Array[Any], date: js.Date, userId: js.Object): js.Promise[js.Array[Valid]] = js.native
+    def verifyPrimaryUser(keys: js.Array[Any], date: js.Date, userId: js.Object): js.Promise[js.Array[typings.openpgp.anon.Keyid]] = js.native
   }
   
   /**
@@ -507,7 +506,7 @@ object key {
       */
     def verify(primaryKey: SecretKey, date: js.Date): js.Promise[keyStatus] = js.native
     
-    def verifyAllCertifications(primaryKey: PublicKey, keys: js.Array[Any], date: js.Date): js.Promise[js.Array[Valid]] = js.native
+    def verifyAllCertifications(primaryKey: PublicKey, keys: js.Array[Any], date: js.Date): js.Promise[js.Array[typings.openpgp.anon.Keyid]] = js.native
     /**
       * Verifies all user certificates
       * @param primaryKey The primary key packet
@@ -515,7 +514,7 @@ object key {
       * @param date Use the given date instead of the current time
       * @returns List of signer's keyid and validity of signature
       */
-    def verifyAllCertifications(primaryKey: SecretKey, keys: js.Array[Any], date: js.Date): js.Promise[js.Array[Valid]] = js.native
+    def verifyAllCertifications(primaryKey: SecretKey, keys: js.Array[Any], date: js.Date): js.Promise[js.Array[typings.openpgp.anon.Keyid]] = js.native
     
     def verifyCertificate(primaryKey: PublicKey, certificate: Signature, keys: js.Array[Any], date: js.Date): js.Promise[keyStatus] = js.native
     /**

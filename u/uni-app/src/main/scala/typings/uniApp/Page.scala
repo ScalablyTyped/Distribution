@@ -71,7 +71,7 @@ object Page {
     }
   }
   
-  type GetCurrentPages = js.Function0[js.Array[(PageInstance[AnyObject, js.Object]) & js.Object]]
+  type GetCurrentPages = js.Function0[js.Array[PageInstance[AnyObject, js.Object]]]
   
   trait NavigationBarButtonTapOption extends StObject {
     

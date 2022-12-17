@@ -1,5 +1,6 @@
 package typings.reactDevtoolsInline.commonsMod
 
+import typings.reactDevtoolsInline.anon.CommitIndex
 import typings.std.Map
 import typings.std.PromiseLike
 import typings.std.Record
@@ -99,4 +100,4 @@ type ViewElementSource = js.Function2[/* id */ Double, /* inspectedElement */ In
 
 type ViewUrlSourceFunction = js.Function3[/* url */ String, /* line */ Double, /* col */ Double, Unit]
 
-type getCommitTree = js.Function1[/* options */ typings.reactDevtoolsInline.anon.ProfilerStore, CommitTree]
+type getCommitTree = js.Function1[/* options */ CommitIndex, CommitTree]

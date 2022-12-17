@@ -15,6 +15,8 @@ import typings.baseui.baseuiStrings.square
 import typings.baseui.baseuiStrings.tertiary
 import typings.baseui.buttonGroupTypesMod.ButtonGroupOverrides
 import typings.baseui.buttonGroupTypesMod.ClickHandler
+import typings.react.mod.SyntheticEvent
+import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,11 +34,11 @@ trait onClickClickHandlerselect extends StObject {
   
   var mode: js.UndefOr[radio | checkbox] = js.undefined
   
-  var onClick: ClickHandler & js.UndefOr[ClickHandler]
+  var onClick: ClickHandler
   
   var overrides: js.UndefOr[ButtonGroupOverrides] = js.undefined
   
-  var selected: (Double | js.Array[Double]) & (js.UndefOr[Double | js.Array[Double]])
+  var selected: Double | js.Array[Double]
   
   var shape: js.UndefOr[pill | default_ | square | round_ | circle] = js.undefined
   
@@ -45,10 +47,10 @@ trait onClickClickHandlerselect extends StObject {
 object onClickClickHandlerselect {
   
   inline def apply(
-    onClick: ClickHandler & js.UndefOr[ClickHandler],
-    selected: (Double | js.Array[Double]) & (js.UndefOr[Double | js.Array[Double]])
+    onClick: (/* event */ SyntheticEvent[HTMLButtonElement, typings.std.Event], /* index */ Double) => Any,
+    selected: Double | js.Array[Double]
   ): onClickClickHandlerselect = {
-    val __obj = js.Dynamic.literal(onClick = onClick.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction2(onClick), selected = selected.asInstanceOf[js.Any])
     __obj.asInstanceOf[onClickClickHandlerselect]
   }
   
@@ -74,13 +76,17 @@ object onClickClickHandlerselect {
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    inline def setOnClick(value: ClickHandler & js.UndefOr[ClickHandler]): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
+    inline def setOnClick(
+      value: (/* event */ SyntheticEvent[HTMLButtonElement, typings.std.Event], /* index */ Double) => Any
+    ): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
     
     inline def setOverrides(value: ButtonGroupOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     
     inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     
-    inline def setSelected(value: (Double | js.Array[Double]) & (js.UndefOr[Double | js.Array[Double]])): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: Double | js.Array[Double]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedVarargs(value: Double*): Self = StObject.set(x, "selected", js.Array(value*))
     
     inline def setShape(value: pill | default_ | square | round_ | circle): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     

@@ -1054,7 +1054,7 @@ trait TypeofTHREE extends StObject {
   
   var PositionalAudio: Instantiable1[/* listener */ AudioListener, typings.three.mod.PositionalAudio]
   
-  var PropertyBinding: TypeofPropertyBinding & TypeofPropertyBindingComposite
+  var PropertyBinding: TypeofPropertyBinding
   
   var PropertyMixer: Instantiable3[
     /* binding */ Any, 
@@ -2788,7 +2788,7 @@ object TypeofTHREE {
     
     inline def setPositionalAudio(value: Instantiable1[/* listener */ AudioListener, PositionalAudio]): Self = StObject.set(x, "PositionalAudio", value.asInstanceOf[js.Any])
     
-    inline def setPropertyBinding(value: TypeofPropertyBinding & TypeofPropertyBindingComposite): Self = StObject.set(x, "PropertyBinding", value.asInstanceOf[js.Any])
+    inline def setPropertyBinding(value: TypeofPropertyBinding): Self = StObject.set(x, "PropertyBinding", value.asInstanceOf[js.Any])
     
     inline def setPropertyMixer(
       value: Instantiable3[/* binding */ Any, /* typeName */ String, /* valueSize */ Double, PropertyMixer]

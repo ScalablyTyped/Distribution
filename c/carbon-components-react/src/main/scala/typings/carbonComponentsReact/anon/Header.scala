@@ -1,6 +1,6 @@
 package typings.carbonComponentsReact.anon
 
-import typings.carbonComponentsReact.dataTableDataTableMod.DataTableHeader
+import typings.carbonComponentsReact.libComponentsDataTableDataTableMod.DataTableHeader
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

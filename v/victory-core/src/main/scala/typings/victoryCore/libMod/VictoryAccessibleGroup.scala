@@ -1,7 +1,7 @@
 package typings.victoryCore.libMod
 
 import typings.victoryCore.anon.Ariadescribedby
-import typings.victoryCore.anon.ClassNameString
+import typings.victoryCore.anon.ClassName
 import typings.victoryCore.libVictoryAccessibleGroupVictoryAccessibleGroupMod.VictoryAccessibleGroupProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -27,8 +27,8 @@ object VictoryAccessibleGroup {
   
   @JSImport("victory-core/lib", "VictoryAccessibleGroup.defaultProps")
   @js.native
-  def defaultProps: ClassNameString = js.native
-  inline def defaultProps_=(x: ClassNameString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  def defaultProps: ClassName = js.native
+  inline def defaultProps_=(x: ClassName): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
   @JSImport("victory-core/lib", "VictoryAccessibleGroup.displayName")
   @js.native

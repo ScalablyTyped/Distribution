@@ -33,9 +33,7 @@ trait Performedviagithubapp extends StObject {
   /** @example staging */
   var original_environment: js.UndefOr[String] = js.undefined
   
-  var performed_via_github_app: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-integration'] */ js.Any
-  ] = js.undefined
+  var performed_via_github_app: js.UndefOr[Externalurl | Null] = js.undefined
   
   /**
     * @description Specifies if the given environment is one that end-users directly interact with. Default: false.
@@ -114,9 +112,9 @@ object Performedviagithubapp {
     
     inline def setOriginal_environmentUndefined: Self = StObject.set(x, "original_environment", js.undefined)
     
-    inline def setPerformed_via_github_app(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-integration'] */ js.Any
-    ): Self = StObject.set(x, "performed_via_github_app", value.asInstanceOf[js.Any])
+    inline def setPerformed_via_github_app(value: Externalurl): Self = StObject.set(x, "performed_via_github_app", value.asInstanceOf[js.Any])
+    
+    inline def setPerformed_via_github_appNull: Self = StObject.set(x, "performed_via_github_app", null)
     
     inline def setPerformed_via_github_appUndefined: Self = StObject.set(x, "performed_via_github_app", js.undefined)
     

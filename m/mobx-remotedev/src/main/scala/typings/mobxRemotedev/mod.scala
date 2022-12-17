@@ -10,6 +10,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def default[T](): js.Function2[/* component */ Any, /* config */ js.UndefOr[RemoteDevConfig], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function2[/* component */ Any, /* config */ js.UndefOr[RemoteDevConfig], Unit]]
+  inline def default[T](config: RemoteDevConfig): js.Function2[/* component */ Any, /* config */ js.UndefOr[RemoteDevConfig], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* component */ Any, /* config */ js.UndefOr[RemoteDevConfig], Unit]]
   inline def default[T](store: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(store.asInstanceOf[js.Any]).asInstanceOf[T]
   inline def default[T](store: T, config: RemoteDevConfig): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(store.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
   

@@ -99,9 +99,7 @@ trait PickImplonErrorPartialPic
   
   def onError(errorMessage: String, element: JQuery, xhr: jqXHR[Any]): Unit
   @JSName("onError")
-  var onError_Original: (js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]) & (js.UndefOr[
-    js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]
-  ])
+  var onError_Original: js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]
   
   var onFailure: js.UndefOr[js.Function2[/* response */ Any, /* element */ JQuery, Unit]] = js.undefined
   
@@ -149,12 +147,8 @@ trait PickImplonErrorPartialPic
 }
 object PickImplonErrorPartialPic {
   
-  inline def apply(
-    onError: (js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]) & (js.UndefOr[
-      js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]
-    ])
-  ): PickImplonErrorPartialPic = {
-    val __obj = js.Dynamic.literal(onError = onError.asInstanceOf[js.Any])
+  inline def apply(onError: (/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[Any]) => Unit): PickImplonErrorPartialPic = {
+    val __obj = js.Dynamic.literal(onError = js.Any.fromFunction3(onError))
     __obj.asInstanceOf[PickImplonErrorPartialPic]
   }
   
@@ -266,11 +260,7 @@ object PickImplonErrorPartialPic {
     
     inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
     
-    inline def setOnError(
-      value: (js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]) & (js.UndefOr[
-          js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]
-        ])
-    ): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
+    inline def setOnError(value: (/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[Any]) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction3(value))
     
     inline def setOnFailure(value: (/* response */ Any, /* element */ JQuery) => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction2(value))
     

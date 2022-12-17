@@ -3,20 +3,20 @@ package typings.kafkajs.mod
 import typings.kafkajs.anon.Brokers
 import typings.kafkajs.anon.Earliest
 import typings.kafkajs.anon.Filters
-import typings.kafkajs.anon.GroupId
+import typings.kafkajs.anon.GroupIdPartitions
 import typings.kafkajs.anon.Groups
 import typings.kafkajs.anon.IncludeSynonyms
-import typings.kafkajs.anon.Partitions
 import typings.kafkajs.anon.PartitionsTopic
+import typings.kafkajs.anon.ResolveOffsets
 import typings.kafkajs.anon.Resources
 import typings.kafkajs.anon.SeekEntryhighstringlowstr
 import typings.kafkajs.anon.Timeout
 import typings.kafkajs.anon.TimeoutTopics
+import typings.kafkajs.anon.TimeoutTopicsArray
 import typings.kafkajs.anon.Topic
 import typings.kafkajs.anon.Topics
 import typings.kafkajs.anon.TopicsArray
 import typings.kafkajs.anon.`0`
-import typings.kafkajs.anon.`1`
 import typings.kafkajs.kafkajsStrings.adminDotconnect
 import typings.kafkajs.kafkajsStrings.adminDotdisconnect
 import typings.kafkajs.kafkajsStrings.adminDotnetworkDotrequest
@@ -31,7 +31,7 @@ trait Admin extends StObject {
   
   def alterConfigs(configs: Resources): js.Promise[Any] = js.native
   
-  def alterPartitionReassignments(request: TimeoutTopics): js.Promise[Unit] = js.native
+  def alterPartitionReassignments(request: TimeoutTopicsArray): js.Promise[Unit] = js.native
   
   def connect(): js.Promise[Unit] = js.native
   
@@ -47,7 +47,7 @@ trait Admin extends StObject {
   
   def deleteTopicRecords(options: PartitionsTopic): js.Promise[Unit] = js.native
   
-  def deleteTopics(options: Topics): js.Promise[Unit] = js.native
+  def deleteTopics(options: TimeoutTopics): js.Promise[Unit] = js.native
   
   def describeAcls(options: AclFilter): js.Promise[DescribeAclResponse] = js.native
   
@@ -61,10 +61,10 @@ trait Admin extends StObject {
   
   val events: AdminEvents = js.native
   
-  def fetchOffsets(options: GroupId): js.Promise[js.Array[Partitions]] = js.native
+  def fetchOffsets(options: ResolveOffsets): js.Promise[js.Array[Topic]] = js.native
   
-  def fetchTopicMetadata(): js.Promise[`0`] = js.native
-  def fetchTopicMetadata(options: TopicsArray): js.Promise[`0`] = js.native
+  def fetchTopicMetadata(): js.Promise[TopicsArray] = js.native
+  def fetchTopicMetadata(options: Topics): js.Promise[TopicsArray] = js.native
   
   def fetchTopicOffsets(topic: String): js.Promise[js.Array[SeekEntryhighstringlowstr]] = js.native
   
@@ -73,7 +73,7 @@ trait Admin extends StObject {
   
   def listGroups(): js.Promise[Groups] = js.native
   
-  def listPartitionReassignments(request: `1`): js.Promise[ListPartitionReassignmentsResponse] = js.native
+  def listPartitionReassignments(request: `0`): js.Promise[ListPartitionReassignmentsResponse] = js.native
   
   def listTopics(): js.Promise[js.Array[String]] = js.native
   
@@ -114,5 +114,5 @@ trait Admin extends StObject {
   
   def resetOffsets(options: Earliest): js.Promise[Unit] = js.native
   
-  def setOffsets(options: Topic): js.Promise[Unit] = js.native
+  def setOffsets(options: GroupIdPartitions): js.Promise[Unit] = js.native
 }

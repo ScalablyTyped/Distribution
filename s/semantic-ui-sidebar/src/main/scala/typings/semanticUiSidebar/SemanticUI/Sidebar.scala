@@ -209,57 +209,57 @@ object Sidebar {
     trait Param extends StObject
     object Param {
       
-      inline def PickImplactivePartialPick(active: String & js.UndefOr[String]): typings.semanticUiSidebar.anon.PickImplactivePartialPick = {
+      inline def PickImplactivePartialPick(active: String): typings.semanticUiSidebar.anon.PickImplactivePartialPick = {
         val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiSidebar.anon.PickImplactivePartialPick]
       }
       
-      inline def PickImplanimatingPartialP(animating: String & js.UndefOr[String]): typings.semanticUiSidebar.anon.PickImplanimatingPartialP = {
+      inline def PickImplanimatingPartialP(animating: String): typings.semanticUiSidebar.anon.PickImplanimatingPartialP = {
         val __obj = js.Dynamic.literal(animating = animating.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiSidebar.anon.PickImplanimatingPartialP]
       }
       
-      inline def PickImplbottomPartialPickActive(bottom: String & js.UndefOr[String]): typings.semanticUiSidebar.anon.PickImplbottomPartialPickActive = {
+      inline def PickImplbottomPartialPickActive(bottom: String): typings.semanticUiSidebar.anon.PickImplbottomPartialPickActive = {
         val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiSidebar.anon.PickImplbottomPartialPickActive]
       }
       
-      inline def PickImpldimmedPartialPick(dimmed: String & js.UndefOr[String]): typings.semanticUiSidebar.anon.PickImpldimmedPartialPick = {
+      inline def PickImpldimmedPartialPick(dimmed: String): typings.semanticUiSidebar.anon.PickImpldimmedPartialPick = {
         val __obj = js.Dynamic.literal(dimmed = dimmed.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiSidebar.anon.PickImpldimmedPartialPick]
       }
       
-      inline def PickImpliosPartialPickImp(ios: String & js.UndefOr[String]): typings.semanticUiSidebar.anon.PickImpliosPartialPickImp = {
+      inline def PickImpliosPartialPickImp(ios: String): typings.semanticUiSidebar.anon.PickImpliosPartialPickImp = {
         val __obj = js.Dynamic.literal(ios = ios.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiSidebar.anon.PickImpliosPartialPickImp]
       }
       
-      inline def PickImplleftPartialPickImActive(left: String & js.UndefOr[String]): typings.semanticUiSidebar.anon.PickImplleftPartialPickImActive = {
+      inline def PickImplleftPartialPickImActive(left: String): typings.semanticUiSidebar.anon.PickImplleftPartialPickImActive = {
         val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiSidebar.anon.PickImplleftPartialPickImActive]
       }
       
-      inline def PickImplpushablePartialPi(pushable: String & js.UndefOr[String]): typings.semanticUiSidebar.anon.PickImplpushablePartialPi = {
+      inline def PickImplpushablePartialPi(pushable: String): typings.semanticUiSidebar.anon.PickImplpushablePartialPi = {
         val __obj = js.Dynamic.literal(pushable = pushable.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiSidebar.anon.PickImplpushablePartialPi]
       }
       
-      inline def PickImplpushedPartialPick(pushed: String & js.UndefOr[String]): typings.semanticUiSidebar.anon.PickImplpushedPartialPick = {
+      inline def PickImplpushedPartialPick(pushed: String): typings.semanticUiSidebar.anon.PickImplpushedPartialPick = {
         val __obj = js.Dynamic.literal(pushed = pushed.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiSidebar.anon.PickImplpushedPartialPick]
       }
       
-      inline def PickImplrightPartialPickIActive(right: String & js.UndefOr[String]): typings.semanticUiSidebar.anon.PickImplrightPartialPickIActive = {
+      inline def PickImplrightPartialPickIActive(right: String): typings.semanticUiSidebar.anon.PickImplrightPartialPickIActive = {
         val __obj = js.Dynamic.literal(right = right.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiSidebar.anon.PickImplrightPartialPickIActive]
       }
       
-      inline def PickImpltopPartialPickImpActive(top: String & js.UndefOr[String]): typings.semanticUiSidebar.anon.PickImpltopPartialPickImpActive = {
+      inline def PickImpltopPartialPickImpActive(top: String): typings.semanticUiSidebar.anon.PickImpltopPartialPickImpActive = {
         val __obj = js.Dynamic.literal(top = top.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiSidebar.anon.PickImpltopPartialPickImpActive]
       }
       
-      inline def PickImplvisiblePartialPic(visible: String & js.UndefOr[String]): typings.semanticUiSidebar.anon.PickImplvisiblePartialPic = {
+      inline def PickImplvisiblePartialPic(visible: String): typings.semanticUiSidebar.anon.PickImplvisiblePartialPic = {
         val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiSidebar.anon.PickImplvisiblePartialPic]
       }
@@ -321,22 +321,22 @@ object Sidebar {
       trait Param extends StObject
       object Param {
         
-        inline def PickImplbottomPartialPick(bottom: String & js.UndefOr[String]): typings.semanticUiSidebar.anon.PickImplbottomPartialPick = {
+        inline def PickImplbottomPartialPick(bottom: String): typings.semanticUiSidebar.anon.PickImplbottomPartialPick = {
           val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.semanticUiSidebar.anon.PickImplbottomPartialPick]
         }
         
-        inline def PickImplleftPartialPickIm(left: String & js.UndefOr[String]): typings.semanticUiSidebar.anon.PickImplleftPartialPickIm = {
+        inline def PickImplleftPartialPickIm(left: String): typings.semanticUiSidebar.anon.PickImplleftPartialPickIm = {
           val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.semanticUiSidebar.anon.PickImplleftPartialPickIm]
         }
         
-        inline def PickImplrightPartialPickI(right: String & js.UndefOr[String]): typings.semanticUiSidebar.anon.PickImplrightPartialPickI = {
+        inline def PickImplrightPartialPickI(right: String): typings.semanticUiSidebar.anon.PickImplrightPartialPickI = {
           val __obj = js.Dynamic.literal(right = right.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.semanticUiSidebar.anon.PickImplrightPartialPickI]
         }
         
-        inline def PickImpltopPartialPickImp(top: String & js.UndefOr[String]): typings.semanticUiSidebar.anon.PickImpltopPartialPickImp = {
+        inline def PickImpltopPartialPickImp(top: String): typings.semanticUiSidebar.anon.PickImpltopPartialPickImp = {
           val __obj = js.Dynamic.literal(top = top.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.semanticUiSidebar.anon.PickImpltopPartialPickImp]
         }
@@ -417,22 +417,22 @@ object Sidebar {
       trait Param extends StObject
       object Param {
         
-        inline def PickImplbottomPartialPick(bottom: String & js.UndefOr[String]): typings.semanticUiSidebar.anon.PickImplbottomPartialPick = {
+        inline def PickImplbottomPartialPick(bottom: String): typings.semanticUiSidebar.anon.PickImplbottomPartialPick = {
           val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.semanticUiSidebar.anon.PickImplbottomPartialPick]
         }
         
-        inline def PickImplleftPartialPickIm(left: String & js.UndefOr[String]): typings.semanticUiSidebar.anon.PickImplleftPartialPickIm = {
+        inline def PickImplleftPartialPickIm(left: String): typings.semanticUiSidebar.anon.PickImplleftPartialPickIm = {
           val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.semanticUiSidebar.anon.PickImplleftPartialPickIm]
         }
         
-        inline def PickImplrightPartialPickI(right: String & js.UndefOr[String]): typings.semanticUiSidebar.anon.PickImplrightPartialPickI = {
+        inline def PickImplrightPartialPickI(right: String): typings.semanticUiSidebar.anon.PickImplrightPartialPickI = {
           val __obj = js.Dynamic.literal(right = right.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.semanticUiSidebar.anon.PickImplrightPartialPickI]
         }
         
-        inline def PickImpltopPartialPickImp(top: String & js.UndefOr[String]): typings.semanticUiSidebar.anon.PickImpltopPartialPickImp = {
+        inline def PickImpltopPartialPickImp(top: String): typings.semanticUiSidebar.anon.PickImpltopPartialPickImp = {
           val __obj = js.Dynamic.literal(top = top.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.semanticUiSidebar.anon.PickImpltopPartialPickImp]
         }
@@ -447,12 +447,12 @@ object Sidebar {
     trait Param extends StObject
     object Param {
       
-      inline def PickImplcomputerPartialPi(computer: ComputerSettings & js.UndefOr[ComputerSettings]): typings.semanticUiSidebar.anon.PickImplcomputerPartialPi = {
+      inline def PickImplcomputerPartialPi(computer: ComputerSettings): typings.semanticUiSidebar.anon.PickImplcomputerPartialPi = {
         val __obj = js.Dynamic.literal(computer = computer.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiSidebar.anon.PickImplcomputerPartialPi]
       }
       
-      inline def PickImplmobilePartialPick(mobile: MobileSettings & js.UndefOr[MobileSettings]): typings.semanticUiSidebar.anon.PickImplmobilePartialPick = {
+      inline def PickImplmobilePartialPick(mobile: MobileSettings): typings.semanticUiSidebar.anon.PickImplmobilePartialPick = {
         val __obj = js.Dynamic.literal(mobile = mobile.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiSidebar.anon.PickImplmobilePartialPick]
       }
@@ -520,27 +520,27 @@ object Sidebar {
     trait Param extends StObject
     object Param {
       
-      inline def PickImplmethodPartialPick(method: String & js.UndefOr[String]): typings.semanticUiSidebar.anon.PickImplmethodPartialPick = {
+      inline def PickImplmethodPartialPick(method: String): typings.semanticUiSidebar.anon.PickImplmethodPartialPick = {
         val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiSidebar.anon.PickImplmethodPartialPick]
       }
       
-      inline def PickImplmovedSidebarParti(movedSidebar: String & js.UndefOr[String]): typings.semanticUiSidebar.anon.PickImplmovedSidebarParti = {
+      inline def PickImplmovedSidebarParti(movedSidebar: String): typings.semanticUiSidebar.anon.PickImplmovedSidebarParti = {
         val __obj = js.Dynamic.literal(movedSidebar = movedSidebar.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiSidebar.anon.PickImplmovedSidebarParti]
       }
       
-      inline def PickImplnotFoundPartialPi(notFound: String & js.UndefOr[String]): typings.semanticUiSidebar.anon.PickImplnotFoundPartialPi = {
+      inline def PickImplnotFoundPartialPi(notFound: String): typings.semanticUiSidebar.anon.PickImplnotFoundPartialPi = {
         val __obj = js.Dynamic.literal(notFound = notFound.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiSidebar.anon.PickImplnotFoundPartialPi]
       }
       
-      inline def PickImploverlayPartialPic(overlay: String & js.UndefOr[String]): typings.semanticUiSidebar.anon.PickImploverlayPartialPic = {
+      inline def PickImploverlayPartialPic(overlay: String): typings.semanticUiSidebar.anon.PickImploverlayPartialPic = {
         val __obj = js.Dynamic.literal(overlay = overlay.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiSidebar.anon.PickImploverlayPartialPic]
       }
       
-      inline def PickImplpusherPartialPickMethod(pusher: String & js.UndefOr[String]): typings.semanticUiSidebar.anon.PickImplpusherPartialPickMethod = {
+      inline def PickImplpusherPartialPickMethod(pusher: String): typings.semanticUiSidebar.anon.PickImplpusherPartialPickMethod = {
         val __obj = js.Dynamic.literal(pusher = pusher.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiSidebar.anon.PickImplpusherPartialPickMethod]
       }
@@ -584,12 +584,12 @@ object Sidebar {
     trait Param extends StObject
     object Param {
       
-      inline def PickImpliosPartialPickImpIos(ios: js.RegExp & js.UndefOr[js.RegExp]): typings.semanticUiSidebar.anon.PickImpliosPartialPickImpIos = {
+      inline def PickImpliosPartialPickImpIos(ios: js.RegExp): typings.semanticUiSidebar.anon.PickImpliosPartialPickImpIos = {
         val __obj = js.Dynamic.literal(ios = ios.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiSidebar.anon.PickImpliosPartialPickImpIos]
       }
       
-      inline def PickImplmobilePartialPickIos(mobile: js.RegExp & js.UndefOr[js.RegExp]): typings.semanticUiSidebar.anon.PickImplmobilePartialPickIos = {
+      inline def PickImplmobilePartialPickIos(mobile: js.RegExp): typings.semanticUiSidebar.anon.PickImplmobilePartialPickIos = {
         val __obj = js.Dynamic.literal(mobile = mobile.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiSidebar.anon.PickImplmobilePartialPickIos]
       }
@@ -649,22 +649,22 @@ object Sidebar {
     trait Param extends StObject
     object Param {
       
-      inline def PickImplfixedPartialPickI(fixed: String & js.UndefOr[String]): typings.semanticUiSidebar.anon.PickImplfixedPartialPickI = {
+      inline def PickImplfixedPartialPickI(fixed: String): typings.semanticUiSidebar.anon.PickImplfixedPartialPickI = {
         val __obj = js.Dynamic.literal(fixed = fixed.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiSidebar.anon.PickImplfixedPartialPickI]
       }
       
-      inline def PickImplomittedPartialPic(omitted: String & js.UndefOr[String]): typings.semanticUiSidebar.anon.PickImplomittedPartialPic = {
+      inline def PickImplomittedPartialPic(omitted: String): typings.semanticUiSidebar.anon.PickImplomittedPartialPic = {
         val __obj = js.Dynamic.literal(omitted = omitted.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiSidebar.anon.PickImplomittedPartialPic]
       }
       
-      inline def PickImplpusherPartialPick(pusher: String & js.UndefOr[String]): typings.semanticUiSidebar.anon.PickImplpusherPartialPick = {
+      inline def PickImplpusherPartialPick(pusher: String): typings.semanticUiSidebar.anon.PickImplpusherPartialPick = {
         val __obj = js.Dynamic.literal(pusher = pusher.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiSidebar.anon.PickImplpusherPartialPick]
       }
       
-      inline def PickImplsidebarPartialPic(sidebar: String & js.UndefOr[String]): typings.semanticUiSidebar.anon.PickImplsidebarPartialPic = {
+      inline def PickImplsidebarPartialPic(sidebar: String): typings.semanticUiSidebar.anon.PickImplsidebarPartialPic = {
         val __obj = js.Dynamic.literal(sidebar = sidebar.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiSidebar.anon.PickImplsidebarPartialPic]
       }

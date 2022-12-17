@@ -1,8 +1,8 @@
 package typings.qiniuJs.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.qiniuJs.baseMod.Progress
-import typings.qiniuJs.helperMod.XHRHandler
+import typings.qiniuJs.esmUploadBaseMod.Progress
+import typings.qiniuJs.esmUtilsHelperMod.XHRHandler
 import typings.std.BodyInit
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject

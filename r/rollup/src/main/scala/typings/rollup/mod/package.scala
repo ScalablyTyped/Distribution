@@ -9,7 +9,7 @@ import typings.rollup.anon.Chunks
 import typings.rollup.anon.Code
 import typings.rollup.anon.Custom
 import typings.rollup.anon.Event
-import typings.rollup.anon.Format
+import typings.rollup.anon.FileName
 import typings.rollup.anon.Handler
 import typings.rollup.anon.PartialSourceDescription
 import typings.rollup.mod.^
@@ -147,7 +147,7 @@ type ResolveDynamicImportHook = js.ThisFunction3[
 /* options */ AssertionsRecord, 
 ResolveIdResult]
 
-type ResolveFileUrlHook = js.ThisFunction1[/* this */ PluginContext, /* options */ ChunkId, String | NullValue]
+type ResolveFileUrlHook = js.ThisFunction1[/* this */ PluginContext, /* options */ FileName, String | NullValue]
 
 type ResolveIdHook = js.ThisFunction3[
 /* this */ PluginContext, 
@@ -167,7 +167,7 @@ type ResolveIdResult = _ResolveIdResult | String | NullValue
 type ResolveImportMetaHook = js.ThisFunction2[
 /* this */ PluginContext, 
 /* property */ String | Null, 
-/* options */ Format, 
+/* options */ ChunkId, 
 String | NullValue]
 
 type ResolvedIdMap = StringDictionary[ResolvedId]
@@ -186,7 +186,7 @@ type ShouldTransformCachedModuleHook = js.ThisFunction1[/* this */ PluginContext
   - typings.rollup.mod.ExistingRawSourceMap
   - java.lang.String
   - scala.Null
-  - typings.rollup.anon.`2`
+  - typings.rollup.anon.`0`
 */
 type SourceMapInput = _SourceMapInput | String | Null
 

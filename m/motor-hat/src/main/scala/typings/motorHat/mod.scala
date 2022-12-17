@@ -279,7 +279,7 @@ object mod {
       * { W1: winding, W2: winding }. Each winding should be one of following: 'M1', 'M2', 'M3',
       * 'M4' depending on the port the stepper is connected to. Correct example: { W1: 'M3', W2: 'M1' }
       */
-    var steppers: js.UndefOr[js.Array[W1]] = js.undefined
+    var steppers: js.UndefOr[js.Array[W2]] = js.undefined
   }
   object MotorHatOptions {
     
@@ -310,11 +310,11 @@ object mod {
       
       inline def setServosVarargs(value: Double*): Self = StObject.set(x, "servos", js.Array(value*))
       
-      inline def setSteppers(value: js.Array[W1]): Self = StObject.set(x, "steppers", value.asInstanceOf[js.Any])
+      inline def setSteppers(value: js.Array[W2]): Self = StObject.set(x, "steppers", value.asInstanceOf[js.Any])
       
       inline def setSteppersUndefined: Self = StObject.set(x, "steppers", js.undefined)
       
-      inline def setSteppersVarargs(value: W1*): Self = StObject.set(x, "steppers", js.Array(value*))
+      inline def setSteppersVarargs(value: W2*): Self = StObject.set(x, "steppers", js.Array(value*))
     }
   }
   
@@ -688,7 +688,7 @@ object mod {
     /**
       * Pin definition for the motor
       */
-    var pins: W2
+    var pins: W1
     
     /**
       * Pulses per second
@@ -722,7 +722,7 @@ object mod {
   }
   object StepperOptions {
     
-    inline def apply(pins: W2, pwm: js.Object): StepperOptions = {
+    inline def apply(pins: W1, pwm: js.Object): StepperOptions = {
       val __obj = js.Dynamic.literal(pins = pins.asInstanceOf[js.Any], pwm = pwm.asInstanceOf[js.Any])
       __obj.asInstanceOf[StepperOptions]
     }
@@ -741,7 +741,7 @@ object mod {
       
       inline def setMicrostepsUndefined: Self = StObject.set(x, "microsteps", js.undefined)
       
-      inline def setPins(value: W2): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
+      inline def setPins(value: W1): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
       
       inline def setPps(value: Double): Self = StObject.set(x, "pps", value.asInstanceOf[js.Any])
       

@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.HashMap
 import typings.arcgisJsApi.arcgisJsApiStrings.high
 import typings.arcgisJsApi.arcgisJsApiStrings.low
 import org.scalablytyped.runtime.StObject
@@ -22,12 +21,8 @@ trait SceneViewEnvironmentAtmosphere
 }
 object SceneViewEnvironmentAtmosphere {
   
-  inline def apply(
-    set: (js.UndefOr[
-      js.Function2[/* propertyName */ String, /* value */ Any, SceneViewEnvironmentAtmosphere]
-    ]) & (js.UndefOr[js.Function1[/* props */ HashMap[Any], SceneViewEnvironmentAtmosphere]])
-  ): SceneViewEnvironmentAtmosphere = {
-    val __obj = js.Dynamic.literal(set = set.asInstanceOf[js.Any])
+  inline def apply(): SceneViewEnvironmentAtmosphere = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SceneViewEnvironmentAtmosphere]
   }
   

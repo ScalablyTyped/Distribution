@@ -16,7 +16,7 @@ trait PickImplexitConditionsPar
   
   var error: js.UndefOr[String] = js.undefined
   
-  var exitConditions: String & js.UndefOr[String]
+  var exitConditions: String
   
   var legacyParameters: js.UndefOr[String] = js.undefined
   
@@ -38,7 +38,7 @@ trait PickImplexitConditionsPar
 }
 object PickImplexitConditionsPar {
   
-  inline def apply(exitConditions: String & js.UndefOr[String]): PickImplexitConditionsPar = {
+  inline def apply(exitConditions: String): PickImplexitConditionsPar = {
     val __obj = js.Dynamic.literal(exitConditions = exitConditions.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplexitConditionsPar]
   }
@@ -53,7 +53,7 @@ object PickImplexitConditionsPar {
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    inline def setExitConditions(value: String & js.UndefOr[String]): Self = StObject.set(x, "exitConditions", value.asInstanceOf[js.Any])
+    inline def setExitConditions(value: String): Self = StObject.set(x, "exitConditions", value.asInstanceOf[js.Any])
     
     inline def setJSONParse(value: String): Self = StObject.set(x, "JSONParse", value.asInstanceOf[js.Any])
     

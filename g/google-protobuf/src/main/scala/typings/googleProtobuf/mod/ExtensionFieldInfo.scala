@@ -1,7 +1,7 @@
 package typings.googleProtobuf.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.googleProtobuf.anon.TypeofMessage
+import typings.googleProtobuf.anon.TypeofMessageInstantiable
 import typings.googleProtobuf.mod.Message.StaticToObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,12 +13,12 @@ open class ExtensionFieldInfo[T] protected () extends StObject {
   def this(
     fieldIndex: Double,
     fieldName: StringDictionary[Double],
-    ctor: TypeofMessage,
+    ctor: TypeofMessageInstantiable,
     toObjectFn: StaticToObject,
     isRepeated: Double
   ) = this()
   
-  var ctor: TypeofMessage = js.native
+  var ctor: TypeofMessageInstantiable = js.native
   
   var fieldIndex: Double = js.native
   

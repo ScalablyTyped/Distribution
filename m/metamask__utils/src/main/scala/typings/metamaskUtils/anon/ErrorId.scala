@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ErrorId extends StObject {
   
-  var error: Stack
+  var error: Data
   
   var id: String
   
@@ -14,14 +14,14 @@ trait ErrorId extends StObject {
 }
 object ErrorId {
   
-  inline def apply(error: Stack, id: String, jsonrpc: String): ErrorId = {
+  inline def apply(error: Data, id: String, jsonrpc: String): ErrorId = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], jsonrpc = jsonrpc.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorId]
   }
   
   extension [Self <: ErrorId](x: Self) {
     
-    inline def setError(value: Stack): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Data): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

@@ -22,11 +22,11 @@ trait PickImplsourcePartialPickLogging
   
   var serverError: js.UndefOr[String] = js.undefined
   
-  var source: String & js.UndefOr[String]
+  var source: String
 }
 object PickImplsourcePartialPickLogging {
   
-  inline def apply(source: String & js.UndefOr[String]): PickImplsourcePartialPickLogging = {
+  inline def apply(source: String): PickImplsourcePartialPickLogging = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplsourcePartialPickLogging]
   }
@@ -57,6 +57,6 @@ object PickImplsourcePartialPickLogging {
     
     inline def setServerErrorUndefined: Self = StObject.set(x, "serverError", js.undefined)
     
-    inline def setSource(value: String & js.UndefOr[String]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

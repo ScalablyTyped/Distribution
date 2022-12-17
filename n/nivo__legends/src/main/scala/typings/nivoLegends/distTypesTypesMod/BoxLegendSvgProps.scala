@@ -19,7 +19,7 @@ trait BoxLegendSvgProps extends StObject {
   
   var containerWidth: Double
   
-  var data: js.UndefOr[js.Array[Datum]] & js.Array[Datum]
+  var data: js.UndefOr[js.Array[Datum]] = js.undefined
   
   var direction: LegendDirection
   
@@ -77,12 +77,11 @@ object BoxLegendSvgProps {
     anchor: LegendAnchor,
     containerHeight: Double,
     containerWidth: Double,
-    data: js.UndefOr[js.Array[Datum]] & js.Array[Datum],
     direction: LegendDirection,
     itemHeight: Double,
     itemWidth: Double
   ): BoxLegendSvgProps = {
-    val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], containerHeight = containerHeight.asInstanceOf[js.Any], containerWidth = containerWidth.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], itemHeight = itemHeight.asInstanceOf[js.Any], itemWidth = itemWidth.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], containerHeight = containerHeight.asInstanceOf[js.Any], containerWidth = containerWidth.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], itemHeight = itemHeight.asInstanceOf[js.Any], itemWidth = itemWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoxLegendSvgProps]
   }
   
@@ -94,7 +93,11 @@ object BoxLegendSvgProps {
     
     inline def setContainerWidth(value: Double): Self = StObject.set(x, "containerWidth", value.asInstanceOf[js.Any])
     
-    inline def setData(value: js.UndefOr[js.Array[Datum]] & js.Array[Datum]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[Datum]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setDataVarargs(value: Datum*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setDirection(value: LegendDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

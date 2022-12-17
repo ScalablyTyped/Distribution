@@ -6,17 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `126` extends StObject {
   
-  var content: ApplicationjsonAuthorCommitter
+  /** The unique identifier of the column. */
+  var column_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['column-id'] */ js.Any
 }
 object `126` {
   
-  inline def apply(content: ApplicationjsonAuthorCommitter): `126` = {
-    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
+  inline def apply(
+    column_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['column-id'] */ js.Any
+  ): `126` = {
+    val __obj = js.Dynamic.literal(column_id = column_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[`126`]
   }
   
   extension [Self <: `126`](x: Self) {
     
-    inline def setContent(value: ApplicationjsonAuthorCommitter): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setColumn_id(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['column-id'] */ js.Any
+    ): Self = StObject.set(x, "column_id", value.asInstanceOf[js.Any])
   }
 }

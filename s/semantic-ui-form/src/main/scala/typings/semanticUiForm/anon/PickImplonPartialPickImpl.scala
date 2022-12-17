@@ -49,7 +49,7 @@ trait PickImplonPartialPickImpl
   
   var namespace: js.UndefOr[String] = js.undefined
   
-  var on: (submit | blur | change) & (js.UndefOr[submit | blur | change])
+  var on: submit | blur | change
   
   var onFailure: js.UndefOr[
     js.ThisFunction2[/* this */ JQuery, /* formErrors */ js.Array[String], /* fields */ Any, Unit]
@@ -92,7 +92,7 @@ trait PickImplonPartialPickImpl
 }
 object PickImplonPartialPickImpl {
   
-  inline def apply(on: (submit | blur | change) & (js.UndefOr[submit | blur | change])): PickImplonPartialPickImpl = {
+  inline def apply(on: submit | blur | change): PickImplonPartialPickImpl = {
     val __obj = js.Dynamic.literal(on = on.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonPartialPickImpl]
   }
@@ -147,7 +147,7 @@ object PickImplonPartialPickImpl {
     
     inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
-    inline def setOn(value: (submit | blur | change) & (js.UndefOr[submit | blur | change])): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+    inline def setOn(value: submit | blur | change): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     
     inline def setOnFailure(
       value: js.ThisFunction2[/* this */ JQuery, /* formErrors */ js.Array[String], /* fields */ Any, Unit]

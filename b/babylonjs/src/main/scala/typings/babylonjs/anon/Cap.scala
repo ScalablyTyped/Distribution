@@ -37,6 +37,8 @@ trait Cap extends StObject {
   var subdivisions: js.UndefOr[Double] = js.undefined
   
   var tessellation: js.UndefOr[Double] = js.undefined
+  
+  var updatable: js.UndefOr[Boolean] = js.undefined
 }
 object Cap {
   
@@ -110,5 +112,9 @@ object Cap {
     inline def setTessellation(value: Double): Self = StObject.set(x, "tessellation", value.asInstanceOf[js.Any])
     
     inline def setTessellationUndefined: Self = StObject.set(x, "tessellation", js.undefined)
+    
+    inline def setUpdatable(value: Boolean): Self = StObject.set(x, "updatable", value.asInstanceOf[js.Any])
+    
+    inline def setUpdatableUndefined: Self = StObject.set(x, "updatable", js.undefined)
   }
 }

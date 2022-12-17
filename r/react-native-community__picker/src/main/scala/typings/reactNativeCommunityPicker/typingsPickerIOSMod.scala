@@ -14,12 +14,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object typingsPickerIOSMod {
   
+  @JSImport("@react-native-community/picker/typings/PickerIOS", "PickerIOS")
+  @js.native
+  open class PickerIOS protected ()
+    extends Component[PickerIOSProps, js.Object, Any] {
+    def this(props: PickerIOSProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: PickerIOSProps, context: Any) = this()
+  }
   object PickerIOS {
     
     /* was `typeof PickerIOSItem` */
-    type Item = PickerIOSItem
+    @JSImport("@react-native-community/picker/typings/PickerIOS", "PickerIOS.Item")
+    @js.native
+    open class Item ()
+      extends Component[PickerIOSItemProps, js.Object, Any]
   }
-  type PickerIOS = Component[PickerIOSProps, js.Object, Any]
   
   type PickerIOSItem = Component[PickerIOSItemProps, js.Object, Any]
   

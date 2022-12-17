@@ -89,7 +89,7 @@ object anon {
       * return `true`.
       * @since v7.0.0, v6.13.0
       */
-    var URL: (Instantiable1[/* input */ String, URL_]) & TypeofURL = js.native
+    var URL: Instantiable1[/* input */ String, URL_] = js.native
     
     /**
       * The `URLSearchParams` API provides read and write access to the query of a`URL`. The `URLSearchParams` class can also be used standalone with one of the

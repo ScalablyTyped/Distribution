@@ -15,9 +15,9 @@ object mod extends Shortcut {
   val ^ : GLS = js.native
   
   type GLS = (js.Function3[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<gulp-live-server.anon.FnCall>[1] */ /* args */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<gulp-live-server.anon.FnCallCommandArgsOptions>[1] */ /* args */ js.Any, 
     /* options */ js.UndefOr[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<gulp-live-server.anon.FnCall>[2] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<gulp-live-server.anon.FnCallCommandArgsOptions>[2] */ js.Any
     ], 
     /* livereload */ js.UndefOr[Livereload], 
     GLSStatic
@@ -46,7 +46,7 @@ object mod extends Shortcut {
     var app: js.UndefOr[Application_] = js.undefined
     
     var cert: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<std.Parameters<gulp-live-server.anon.FnCallOptionsRequestListener>[0]>['cert'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<std.Parameters<gulp-live-server.anon.FnCall>[0]>['cert'] */ js.Any
       ] = js.undefined
     
     var dashboard: js.UndefOr[Boolean] = js.undefined
@@ -56,7 +56,7 @@ object mod extends Shortcut {
     var handler: js.UndefOr[Handler] = js.undefined
     
     var key: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<std.Parameters<gulp-live-server.anon.FnCallOptionsRequestListener>[0]>['key'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<std.Parameters<gulp-live-server.anon.FnCall>[0]>['key'] */ js.Any
       ] = js.undefined
     
     var liveCSS: js.UndefOr[Boolean] = js.undefined
@@ -66,7 +66,7 @@ object mod extends Shortcut {
     var livereload: js.UndefOr[String] = js.undefined
     
     var pfx: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<std.Parameters<gulp-live-server.anon.FnCallOptionsRequestListener>[0]>['pfx'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<std.Parameters<gulp-live-server.anon.FnCall>[0]>['pfx'] */ js.Any
       ] = js.undefined
     
     var port: js.UndefOr[Double] = js.undefined
@@ -87,7 +87,7 @@ object mod extends Shortcut {
       inline def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
       
       inline def setCert(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<std.Parameters<gulp-live-server.anon.FnCallOptionsRequestListener>[0]>['cert'] */ js.Any
+        value: /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<std.Parameters<gulp-live-server.anon.FnCall>[0]>['cert'] */ js.Any
       ): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
       inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
@@ -105,7 +105,7 @@ object mod extends Shortcut {
       inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
       
       inline def setKey(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<std.Parameters<gulp-live-server.anon.FnCallOptionsRequestListener>[0]>['key'] */ js.Any
+        value: /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<std.Parameters<gulp-live-server.anon.FnCall>[0]>['key'] */ js.Any
       ): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
@@ -123,7 +123,7 @@ object mod extends Shortcut {
       inline def setLivereloadUndefined: Self = StObject.set(x, "livereload", js.undefined)
       
       inline def setPfx(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<std.Parameters<gulp-live-server.anon.FnCallOptionsRequestListener>[0]>['pfx'] */ js.Any
+        value: /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<std.Parameters<gulp-live-server.anon.FnCall>[0]>['pfx'] */ js.Any
       ): Self = StObject.set(x, "pfx", value.asInstanceOf[js.Any])
       
       inline def setPfxUndefined: Self = StObject.set(x, "pfx", js.undefined)

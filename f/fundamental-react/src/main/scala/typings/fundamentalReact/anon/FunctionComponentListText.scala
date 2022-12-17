@@ -1,6 +1,5 @@
 package typings.fundamentalReact.anon
 
-import typings.fundamentalReact.fundamentalReactStrings.ListDotText
 import typings.fundamentalReact.libListListMod.ListTextProps
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
@@ -19,7 +18,7 @@ trait FunctionComponentListText extends StObject {
   
   var defaultProps: js.UndefOr[PartialListTextProps] = js.native
   
-  var displayName: js.UndefOr[String] & ListDotText = js.native
+  var displayName: js.UndefOr[String] = js.native
   
   var propTypes: js.UndefOr[WeakValidationMapListText] = js.native
 }

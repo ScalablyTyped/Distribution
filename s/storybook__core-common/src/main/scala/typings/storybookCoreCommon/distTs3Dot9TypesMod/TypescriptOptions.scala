@@ -20,7 +20,7 @@ trait TypescriptOptions extends StObject {
     * Configures `fork-ts-checker-webpack-plugin`
     */
   var checkOptions: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/plugin.ForkTsCheckerWebpackPlugin['options'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin.^['options'] */ js.Any
   ] = js.undefined
   
   /**
@@ -54,7 +54,7 @@ object TypescriptOptions {
     inline def setCheck(value: Boolean): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
     
     inline def setCheckOptions(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/plugin.ForkTsCheckerWebpackPlugin['options'] */ js.Any
+      value: /* import warning: importer.ImportType#apply Failed type conversion: fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin.^['options'] */ js.Any
     ): Self = StObject.set(x, "checkOptions", value.asInstanceOf[js.Any])
     
     inline def setCheckOptionsUndefined: Self = StObject.set(x, "checkOptions", js.undefined)

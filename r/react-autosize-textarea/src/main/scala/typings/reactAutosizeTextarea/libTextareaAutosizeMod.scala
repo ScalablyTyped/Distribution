@@ -556,7 +556,7 @@ object libTextareaAutosizeMod {
       var onReset: js.UndefOr[FormEventHandler[HTMLTextAreaElement]] = js.undefined
       
       /** Called whenever the textarea resizes */
-      var onResize: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & (js.UndefOr[js.Function1[/* e */ Event, Unit]])
+      var onResize: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] = js.undefined
       
       var onScroll: js.UndefOr[UIEventHandler[HTMLTextAreaElement]] = js.undefined
       
@@ -703,10 +703,8 @@ object libTextareaAutosizeMod {
     }
     object Props {
       
-      inline def apply(
-        onResize: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & (js.UndefOr[js.Function1[/* e */ Event, Unit]])
-      ): Props = {
-        val __obj = js.Dynamic.literal(onResize = onResize.asInstanceOf[js.Any])
+      inline def apply(): Props = {
+        val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Props]
       }
       
@@ -1554,9 +1552,9 @@ object libTextareaAutosizeMod {
         
         inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
         
-        inline def setOnResize(
-          value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & (js.UndefOr[js.Function1[/* e */ Event, Unit]])
-        ): Self = StObject.set(x, "onResize", value.asInstanceOf[js.Any])
+        inline def setOnResize(value: SyntheticEvent[HTMLTextAreaElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+        
+        inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
         
         inline def setOnScroll(value: UIEvent[HTMLTextAreaElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
         
@@ -2275,7 +2273,7 @@ object libTextareaAutosizeMod {
       var onReset: js.UndefOr[FormEventHandler[HTMLTextAreaElement]] = js.undefined
       
       /** Called whenever the textarea resizes */
-      var onResize: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & (js.UndefOr[js.Function1[/* e */ Event, Unit]])
+      var onResize: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] = js.undefined
       
       var onScroll: js.UndefOr[UIEventHandler[HTMLTextAreaElement]] = js.undefined
       
@@ -2422,10 +2420,8 @@ object libTextareaAutosizeMod {
     }
     object RequiredProps {
       
-      inline def apply(
-        onResize: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & (js.UndefOr[js.Function1[/* e */ Event, Unit]])
-      ): RequiredProps = {
-        val __obj = js.Dynamic.literal(onResize = onResize.asInstanceOf[js.Any])
+      inline def apply(): RequiredProps = {
+        val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[RequiredProps]
       }
       
@@ -3273,9 +3269,9 @@ object libTextareaAutosizeMod {
         
         inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
         
-        inline def setOnResize(
-          value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & (js.UndefOr[js.Function1[/* e */ Event, Unit]])
-        ): Self = StObject.set(x, "onResize", value.asInstanceOf[js.Any])
+        inline def setOnResize(value: SyntheticEvent[HTMLTextAreaElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+        
+        inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
         
         inline def setOnScroll(value: UIEvent[HTMLTextAreaElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
         

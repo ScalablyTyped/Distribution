@@ -31,11 +31,11 @@ trait PickImplupArrowPartialPic
   
   var rightArrow: js.UndefOr[Double] = js.undefined
   
-  var upArrow: Double & js.UndefOr[Double]
+  var upArrow: Double
 }
 object PickImplupArrowPartialPic {
   
-  inline def apply(upArrow: Double & js.UndefOr[Double]): PickImplupArrowPartialPic = {
+  inline def apply(upArrow: Double): PickImplupArrowPartialPic = {
     val __obj = js.Dynamic.literal(upArrow = upArrow.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplupArrowPartialPic]
   }
@@ -82,6 +82,6 @@ object PickImplupArrowPartialPic {
     
     inline def setRightArrowUndefined: Self = StObject.set(x, "rightArrow", js.undefined)
     
-    inline def setUpArrow(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "upArrow", value.asInstanceOf[js.Any])
+    inline def setUpArrow(value: Double): Self = StObject.set(x, "upArrow", value.asInstanceOf[js.Any])
   }
 }

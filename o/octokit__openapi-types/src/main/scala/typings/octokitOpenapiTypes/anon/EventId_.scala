@@ -18,11 +18,11 @@ trait EventId_ extends StObject {
   
   var id: Double
   
+  var label: ColorString
+  
   var node_id: String
   
   var performed_via_github_app: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-integration'] */ js.Any
-  
-  var rename: From
   
   var url: String
 }
@@ -33,12 +33,12 @@ object EventId_ {
     created_at: String,
     event: String,
     id: Double,
+    label: ColorString,
     node_id: String,
     performed_via_github_app: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-integration'] */ js.Any,
-    rename: From,
     url: String
   ): EventId_ = {
-    val __obj = js.Dynamic.literal(actor = actor.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], performed_via_github_app = performed_via_github_app.asInstanceOf[js.Any], rename = rename.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], commit_id = null, commit_url = null)
+    val __obj = js.Dynamic.literal(actor = actor.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], performed_via_github_app = performed_via_github_app.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], commit_id = null, commit_url = null)
     __obj.asInstanceOf[EventId_]
   }
   
@@ -62,13 +62,13 @@ object EventId_ {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
+    inline def setLabel(value: ColorString): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
     inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
     inline def setPerformed_via_github_app(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-integration'] */ js.Any
     ): Self = StObject.set(x, "performed_via_github_app", value.asInstanceOf[js.Any])
-    
-    inline def setRename(value: From): Self = StObject.set(x, "rename", value.asInstanceOf[js.Any])
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

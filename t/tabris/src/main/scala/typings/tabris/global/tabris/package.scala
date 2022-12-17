@@ -4,10 +4,11 @@ import typings.std.InstanceType
 import typings.std.Number
 import typings.tabris.Crypto
 import typings.tabris.RequestInit
+import typings.tabris.anon.ApplyObject
 import typings.tabris.anon.Attribute
-import typings.tabris.anon.Children
+import typings.tabris.anon.ChildrenJSXChildren
 import typings.tabris.anon.Name
-import typings.tabris.anon.`0`
+import typings.tabris.anon.`12`
 import typings.tabris.global.tabris.^
 import typings.tabris.mod.ActionFactory
 import typings.tabris.mod.ActivityIndicatorFactory
@@ -58,7 +59,7 @@ inline def Action: ActionFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("Act
 
 inline def ActivityIndicator: ActivityIndicatorFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("ActivityIndicator").asInstanceOf[ActivityIndicatorFactory]
 
-inline def Apply[WidgetConstructor /* <: BaseConstructor[typings.tabris.mod.Widget[Any]] */](attr: ApplyAttributes[WidgetConstructor]): typings.tabris.anon.Apply = ^.asInstanceOf[js.Dynamic].applyDynamic("Apply")(attr.asInstanceOf[js.Any]).asInstanceOf[typings.tabris.anon.Apply]
+inline def Apply[WidgetConstructor /* <: BaseConstructor[typings.tabris.mod.Widget[Any]] */](attr: ApplyAttributes[WidgetConstructor]): ApplyObject = ^.asInstanceOf[js.Dynamic].applyDynamic("Apply")(attr.asInstanceOf[js.Any]).asInstanceOf[ApplyObject]
 
 inline def Button: ButtonFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("Button").asInstanceOf[ButtonFactory]
 
@@ -171,17 +172,17 @@ inline def _empty(attributes: Null, children: JSXChildren[typings.tabris.mod.Wid
   * @param children The widgets to be included in the resulting WidgetCollection instance.
   */
 /* was `typeof $` */
-inline def _empty(attributes: Children, children: JSXChildren[typings.tabris.mod.Widget[Any]]): typings.tabris.mod.WidgetCollection[typings.tabris.mod.Widget[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.tabris.mod.WidgetCollection[typings.tabris.mod.Widget[Any]]]
+inline def _empty(attributes: ChildrenJSXChildren, children: JSXChildren[typings.tabris.mod.Widget[Any]]): typings.tabris.mod.WidgetCollection[typings.tabris.mod.Widget[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.tabris.mod.WidgetCollection[typings.tabris.mod.Widget[Any]]]
 /**
   * A JSX stateless functional component that joins any given content in to a single string.
   * @param attributes This parameter needs to be null since <$> does not support any attributes.
   * @param children The content of the resulting string.
   */
 /* was `typeof $` */
-inline def _empty(attributes: `0`, children: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
-inline def _empty(attributes: `0`, children: js.Array[Null | String | Double | Boolean]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
-inline def _empty(attributes: `0`, children: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
-inline def _empty(attributes: `0`, children: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def _empty(attributes: `12`, children: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def _empty(attributes: `12`, children: js.Array[Null | String | Double | Boolean]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def _empty(attributes: `12`, children: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def _empty(attributes: `12`, children: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
 /**
   * Returns the non-disposed `NativeObject` instance (e.g. a widget) associated with the given cid
   * number. The number can be obtained via the [cid](./NativeObject.md#cid) property. Example: If the cid
@@ -210,7 +211,7 @@ inline def _empty[Result /* <: typings.tabris.mod.Widget[Any] */](selector: Sele
 
 inline def app: typings.tabris.mod.App_ = ^.asInstanceOf[js.Dynamic].selectDynamic("app").asInstanceOf[typings.tabris.mod.App_]
 
-inline def asFactory[OriginalConstructor /* <: Constructor[JSXCandidate] & js.Object */, Instance /* <: JSXCandidate */](constructor: OriginalConstructor): CallableConstructor[
+inline def asFactory[OriginalConstructor /* <: Constructor[JSXCandidate] */, Instance /* <: JSXCandidate */](constructor: OriginalConstructor): CallableConstructor[
 OriginalConstructor, 
 InstanceType[OriginalConstructor], 
 js.Function1[/* repeated */ Any, typings.tabris.mod.Widget[Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("asFactory")(constructor.asInstanceOf[js.Any]).asInstanceOf[CallableConstructor[

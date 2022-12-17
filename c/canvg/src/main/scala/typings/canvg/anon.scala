@@ -121,6 +121,50 @@ object anon {
     
     var DOMParser: typings.canvg.distPresetsTypesMod.DOMParser
     
+    def createCanvas(width: Double, height: Double): OffscreenCanvas
+    
+    def createImage(url: String): js.Promise[ImageBitmap]
+    
+    var ignoreAnimation: Boolean
+    
+    var ignoreMouse: Boolean
+    
+    var window: Any
+  }
+  object CreateCanvas {
+    
+    inline def apply(
+      DOMParser: DOMParser,
+      createCanvas: (Double, Double) => OffscreenCanvas,
+      createImage: String => js.Promise[ImageBitmap],
+      ignoreAnimation: Boolean,
+      ignoreMouse: Boolean,
+      window: Any
+    ): CreateCanvas = {
+      val __obj = js.Dynamic.literal(DOMParser = DOMParser.asInstanceOf[js.Any], createCanvas = js.Any.fromFunction2(createCanvas), createImage = js.Any.fromFunction1(createImage), ignoreAnimation = ignoreAnimation.asInstanceOf[js.Any], ignoreMouse = ignoreMouse.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CreateCanvas]
+    }
+    
+    extension [Self <: CreateCanvas](x: Self) {
+      
+      inline def setCreateCanvas(value: (Double, Double) => OffscreenCanvas): Self = StObject.set(x, "createCanvas", js.Any.fromFunction2(value))
+      
+      inline def setCreateImage(value: String => js.Promise[ImageBitmap]): Self = StObject.set(x, "createImage", js.Any.fromFunction1(value))
+      
+      inline def setDOMParser(value: DOMParser): Self = StObject.set(x, "DOMParser", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreAnimation(value: Boolean): Self = StObject.set(x, "ignoreAnimation", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreMouse(value: Boolean): Self = StObject.set(x, "ignoreMouse", value.asInstanceOf[js.Any])
+      
+      inline def setWindow(value: Any): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait CreateImage extends StObject {
+    
+    var DOMParser: typings.canvg.distPresetsTypesMod.DOMParser
+    
     def createCanvas(width: Double, height: Double): Any
     
     def createImage(src: String): js.Promise[Any]
@@ -136,7 +180,7 @@ object anon {
     
     var window: Any
   }
-  object CreateCanvas {
+  object CreateImage {
     
     inline def apply(
       DOMParser: DOMParser,
@@ -146,12 +190,12 @@ object anon {
       ignoreAnimation: Boolean,
       ignoreMouse: Boolean,
       window: Any
-    ): CreateCanvas = {
+    ): CreateImage = {
       val __obj = js.Dynamic.literal(DOMParser = DOMParser.asInstanceOf[js.Any], createCanvas = js.Any.fromFunction2(createCanvas), createImage = js.Any.fromFunction1(createImage), fetch = js.Any.fromFunction2(fetch), ignoreAnimation = ignoreAnimation.asInstanceOf[js.Any], ignoreMouse = ignoreMouse.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
-      __obj.asInstanceOf[CreateCanvas]
+      __obj.asInstanceOf[CreateImage]
     }
     
-    extension [Self <: CreateCanvas](x: Self) {
+    extension [Self <: CreateImage](x: Self) {
       
       inline def setCreateCanvas(value: (Double, Double) => Any): Self = StObject.set(x, "createCanvas", js.Any.fromFunction2(value))
       
@@ -160,50 +204,6 @@ object anon {
       inline def setDOMParser(value: DOMParser): Self = StObject.set(x, "DOMParser", value.asInstanceOf[js.Any])
       
       inline def setFetch(value: (/* input */ Any, /* config */ js.UndefOr[Any]) => js.Promise[Any]): Self = StObject.set(x, "fetch", js.Any.fromFunction2(value))
-      
-      inline def setIgnoreAnimation(value: Boolean): Self = StObject.set(x, "ignoreAnimation", value.asInstanceOf[js.Any])
-      
-      inline def setIgnoreMouse(value: Boolean): Self = StObject.set(x, "ignoreMouse", value.asInstanceOf[js.Any])
-      
-      inline def setWindow(value: Any): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait CreateImage extends StObject {
-    
-    var DOMParser: typings.canvg.distPresetsTypesMod.DOMParser
-    
-    def createCanvas(width: Double, height: Double): OffscreenCanvas
-    
-    def createImage(url: String): js.Promise[ImageBitmap]
-    
-    var ignoreAnimation: Boolean
-    
-    var ignoreMouse: Boolean
-    
-    var window: Any
-  }
-  object CreateImage {
-    
-    inline def apply(
-      DOMParser: DOMParser,
-      createCanvas: (Double, Double) => OffscreenCanvas,
-      createImage: String => js.Promise[ImageBitmap],
-      ignoreAnimation: Boolean,
-      ignoreMouse: Boolean,
-      window: Any
-    ): CreateImage = {
-      val __obj = js.Dynamic.literal(DOMParser = DOMParser.asInstanceOf[js.Any], createCanvas = js.Any.fromFunction2(createCanvas), createImage = js.Any.fromFunction1(createImage), ignoreAnimation = ignoreAnimation.asInstanceOf[js.Any], ignoreMouse = ignoreMouse.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
-      __obj.asInstanceOf[CreateImage]
-    }
-    
-    extension [Self <: CreateImage](x: Self) {
-      
-      inline def setCreateCanvas(value: (Double, Double) => OffscreenCanvas): Self = StObject.set(x, "createCanvas", js.Any.fromFunction2(value))
-      
-      inline def setCreateImage(value: String => js.Promise[ImageBitmap]): Self = StObject.set(x, "createImage", js.Any.fromFunction1(value))
-      
-      inline def setDOMParser(value: DOMParser): Self = StObject.set(x, "DOMParser", value.asInstanceOf[js.Any])
       
       inline def setIgnoreAnimation(value: Boolean): Self = StObject.set(x, "ignoreAnimation", value.asInstanceOf[js.Any])
       

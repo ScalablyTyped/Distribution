@@ -104,7 +104,7 @@ trait PickImplsetFluidWidthPart
   
   var selector: js.UndefOr[SelectorSettings] = js.undefined
   
-  var setFluidWidth: Boolean & js.UndefOr[Boolean]
+  var setFluidWidth: Boolean
   
   var silent: js.UndefOr[Boolean] = js.undefined
   
@@ -120,7 +120,7 @@ trait PickImplsetFluidWidthPart
 }
 object PickImplsetFluidWidthPart {
   
-  inline def apply(setFluidWidth: Boolean & js.UndefOr[Boolean]): PickImplsetFluidWidthPart = {
+  inline def apply(setFluidWidth: Boolean): PickImplsetFluidWidthPart = {
     val __obj = js.Dynamic.literal(setFluidWidth = setFluidWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplsetFluidWidthPart]
   }
@@ -287,7 +287,7 @@ object PickImplsetFluidWidthPart {
     
     inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
-    inline def setSetFluidWidth(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "setFluidWidth", value.asInstanceOf[js.Any])
+    inline def setSetFluidWidth(value: Boolean): Self = StObject.set(x, "setFluidWidth", value.asInstanceOf[js.Any])
     
     inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     

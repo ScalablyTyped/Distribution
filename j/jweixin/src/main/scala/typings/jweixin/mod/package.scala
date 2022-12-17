@@ -1,7 +1,7 @@
 package typings.jweixin.mod
 
 import typings.jweixin.anon.AppId
-import typings.jweixin.anon.ErrMsgString
+import typings.jweixin.anon.ErrMsg
 import typings.jweixin.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -58,7 +58,7 @@ inline def downloadImage(params: IdownloadImage): Unit = ^.asInstanceOf[js.Dynam
   */
 inline def downloadVoice(params: IupdownloadVoice): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("downloadVoice")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def error(fn: js.Function1[/* err */ ErrMsgString, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def error(fn: js.Function1[/* err */ ErrMsg, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
 /**
   * 获取本地图片接口

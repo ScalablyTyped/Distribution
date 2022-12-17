@@ -120,9 +120,9 @@ trait OmitTabset extends StObject {
   @JSName("_addChild")
   var _addChild_Original: js.Function2[/* child */ Widget[Any], /* index */ js.UndefOr[Double], Unit]
   
-  def _apply[Target](options: `18`[Target], rules: RuleSet[Tab]): Tab
+  def _apply[Target](options: `10`[Target], rules: RuleSet[Tab]): Tab
   @JSName("_apply")
-  var _apply_Original: js.Function2[/* options */ `18`[Tab], /* rules */ RuleSet[Tab], Tab]
+  var _apply_Original: js.Function2[/* options */ `10`[Tab], /* rules */ RuleSet[Tab], Tab]
   
   def _checkDisposed(): Unit
   @JSName("_checkDisposed")
@@ -298,9 +298,9 @@ trait OmitTabset extends StObject {
   var append_Original: js.Function1[/* repeated */ Widget[Any], Tab]
   
   @JSName("apply")
-  def apply[Target](options: `18`[Target], rules: RuleSet[Tab]): Tab
+  def apply[Target](options: `10`[Target], rules: RuleSet[Tab]): Tab
   @JSName("apply")
-  var apply_Original: js.Function2[/* options */ `18`[Tab], /* rules */ RuleSet[Tab], Tab]
+  var apply_Original: js.Function2[/* options */ `10`[Tab], /* rules */ RuleSet[Tab], Tab]
   
   var background: LinearGradientValue | ColorValue | ImageValue
   
@@ -604,7 +604,7 @@ object OmitTabset {
     $trigger: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Unit,
     _acceptChild: /* child */ Widget[Any] => Boolean,
     _addChild: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit,
-    _apply: (/* options */ `18`[Tab], /* rules */ RuleSet[Tab]) => Tab,
+    _apply: (/* options */ `10`[Tab], /* rules */ RuleSet[Tab]) => Tab,
     _checkDisposed: () => Unit,
     _checkLayout: /* value */ typings.tabris.mod.Layout => Unit,
     _children: /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]] => WidgetCollection[Widget[Any]],
@@ -645,7 +645,7 @@ object OmitTabset {
     animate: (/* properties */ Opacity, /* options */ AnimationOptions) => js.Promise[Unit],
     append: /* repeated */ Widget[Any] => Tab,
     appendTo: /* parent */ Composite[Widget[Any]] => Tab,
-    apply: (/* options */ `18`[Tab], /* rules */ RuleSet[Tab]) => Tab,
+    apply: (/* options */ `10`[Tab], /* rules */ RuleSet[Tab]) => Tab,
     badge: Double,
     baseline: SiblingReferenceValue | auto | `true`,
     bottom: ConstraintValue,
@@ -776,7 +776,7 @@ object OmitTabset {
     
     inline def setAppendTo(value: /* parent */ Composite[Widget[Any]] => Tab): Self = StObject.set(x, "appendTo", js.Any.fromFunction1(value))
     
-    inline def setApply(value: (/* options */ `18`[Tab], /* rules */ RuleSet[Tab]) => Tab): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
+    inline def setApply(value: (/* options */ `10`[Tab], /* rules */ RuleSet[Tab]) => Tab): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
     
     inline def setBackground(value: LinearGradientValue | ColorValue | ImageValue): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
@@ -1040,7 +1040,7 @@ object OmitTabset {
     
     inline def set_addChild(value: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "_addChild", js.Any.fromFunction2(value))
     
-    inline def set_apply(value: (/* options */ `18`[Tab], /* rules */ RuleSet[Tab]) => Tab): Self = StObject.set(x, "_apply", js.Any.fromFunction2(value))
+    inline def set_apply(value: (/* options */ `10`[Tab], /* rules */ RuleSet[Tab]) => Tab): Self = StObject.set(x, "_apply", js.Any.fromFunction2(value))
     
     inline def set_checkDisposed(value: () => Unit): Self = StObject.set(x, "_checkDisposed", js.Any.fromFunction0(value))
     

@@ -9,6 +9,35 @@ object anon {
   
   trait Bottom extends StObject {
     
+    var bottom: Double
+    
+    var left: Double
+    
+    var right: Double
+    
+    var top: Double
+  }
+  object Bottom {
+    
+    inline def apply(bottom: Double, left: Double, right: Double, top: Double): Bottom = {
+      val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Bottom]
+    }
+    
+    extension [Self <: Bottom](x: Self) {
+      
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait BottomLeft extends StObject {
+    
     var bottom: js.UndefOr[Boolean] = js.undefined
     
     var bottomLeft: js.UndefOr[Boolean] = js.undefined
@@ -25,14 +54,14 @@ object anon {
     
     var topRight: js.UndefOr[Boolean] = js.undefined
   }
-  object Bottom {
+  object BottomLeft {
     
-    inline def apply(): Bottom = {
+    inline def apply(): BottomLeft = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Bottom]
+      __obj.asInstanceOf[BottomLeft]
     }
     
-    extension [Self <: Bottom](x: Self) {
+    extension [Self <: BottomLeft](x: Self) {
       
       inline def setBottom(value: Boolean): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -145,35 +174,6 @@ object anon {
     extension [Self <: Left](x: Self) {
       
       inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
-      
-      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Right extends StObject {
-    
-    var bottom: Double
-    
-    var left: Double
-    
-    var right: Double
-    
-    var top: Double
-  }
-  object Right {
-    
-    inline def apply(bottom: Double, left: Double, right: Double, top: Double): Right = {
-      val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Right]
-    }
-    
-    extension [Self <: Right](x: Self) {
-      
-      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
-      
-      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
-      
-      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
       inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     }

@@ -2,7 +2,7 @@ package typings.facebookNodejsBusinessSdk
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable21
-import typings.facebookNodejsBusinessSdk.srcObjectsEventMod.default
+import typings.facebookNodejsBusinessSdk.srcObjectsServersideUserDataMod.default
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -50,24 +50,6 @@ object anon {
   @js.native
   trait Typeofdefault
     extends StObject
-       with Instantiable0[default] {
-    
-    def Category: Record[String, Any] = js.native
-    
-    def EventStateFilter: Record[String, Any] = js.native
-    
-    def Fields: Record[String, Any] = js.native
-    
-    def OnlineEventFormat: Record[String, Any] = js.native
-    
-    def TimeFilter: Record[String, Any] = js.native
-    
-    def Type: Record[String, Any] = js.native
-  }
-  
-  @js.native
-  trait TypeofdefaultInstantiable
-    extends StObject
        with Instantiable21[
           /* email */ String, 
           /* phone */ String, 
@@ -90,9 +72,27 @@ object anon {
           /* dobd */ String, 
           /* dobm */ String, 
           /* doby */ String, 
-          typings.facebookNodejsBusinessSdk.srcObjectsServersideUserDataMod.default
+          default
         ] {
     
     def Gender: Record[String, Any] = js.native
+  }
+  
+  @js.native
+  trait TypeofdefaultInstantiable
+    extends StObject
+       with Instantiable0[typings.facebookNodejsBusinessSdk.srcObjectsEventMod.default] {
+    
+    def Category: Record[String, Any] = js.native
+    
+    def EventStateFilter: Record[String, Any] = js.native
+    
+    def Fields: Record[String, Any] = js.native
+    
+    def OnlineEventFormat: Record[String, Any] = js.native
+    
+    def TimeFilter: Record[String, Any] = js.native
+    
+    def Type: Record[String, Any] = js.native
   }
 }

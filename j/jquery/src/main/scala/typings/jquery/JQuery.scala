@@ -22579,12 +22579,8 @@ object JQuery {
   jQuery( "body" ).trigger( e );
   ```
     */
-  Instantiable1[/* event */ String, typings.jquery.JQuery.Event & js.Object]
-       with Instantiable2[
-          /* event */ String, 
-          /* properties */ js.Object, 
-          typings.jquery.JQuery.Event & js.Object
-        ] {
+  Instantiable1[/* event */ String, typings.jquery.JQuery.Event]
+       with Instantiable2[/* event */ String, /* properties */ js.Object, typings.jquery.JQuery.Event] {
     
     /**
       * The jQuery.Event constructor is exposed and can be used when calling trigger. The new operator is optional.

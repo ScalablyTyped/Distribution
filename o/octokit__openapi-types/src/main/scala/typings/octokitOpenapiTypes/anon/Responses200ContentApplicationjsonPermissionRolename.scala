@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Responses200ContentApplicationjsonPermissionRolename extends StObject {
   
-  var parameters: PathRepoUsername
+  var parameters: PathOwnerRepoUsername
   
   var responses: `200ContentApplicationjsonPermissionRolename`
 }
 object Responses200ContentApplicationjsonPermissionRolename {
   
-  inline def apply(parameters: PathRepoUsername, responses: `200ContentApplicationjsonPermissionRolename`): Responses200ContentApplicationjsonPermissionRolename = {
+  inline def apply(parameters: PathOwnerRepoUsername, responses: `200ContentApplicationjsonPermissionRolename`): Responses200ContentApplicationjsonPermissionRolename = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[Responses200ContentApplicationjsonPermissionRolename]
   }
   
   extension [Self <: Responses200ContentApplicationjsonPermissionRolename](x: Self) {
     
-    inline def setParameters(value: PathRepoUsername): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: PathOwnerRepoUsername): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setResponses(value: `200ContentApplicationjsonPermissionRolename`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }

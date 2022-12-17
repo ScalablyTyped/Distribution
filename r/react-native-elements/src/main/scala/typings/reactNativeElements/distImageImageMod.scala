@@ -25,13 +25,81 @@ object distImageImageMod extends Shortcut {
   @js.native
   val default: FunctionComponent[PickImagePropsComponentco] | ForwardRefExoticComponent[ImagePropsComponentcontexAccessibilityActions] = js.native
   
+  @JSImport("react-native-elements/dist/image/Image", "Image")
   @js.native
-  trait Image extends Component[ImagePropsPartialThemePro, ImageState, Any] {
+  open class Image protected () extends Component[ImagePropsPartialThemePro, ImageState, Any] {
+    def this(props: ImagePropsPartialThemePro) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: ImagePropsPartialThemePro, context: Any) = this()
     
     def onLoad(e: Any): Unit = js.native
     
     @JSName("state")
     var state_Image: PlaceholderOpacity = js.native
+  }
+  object Image {
+    
+    @JSImport("react-native-elements/dist/image/Image", "Image")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    /* was `typeof ImageNative.abortPrefetch` */
+    @JSImport("react-native-elements/dist/image/Image", "Image.abortPrefetch")
+    @js.native
+    def abortPrefetch: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof ImageNative.abortPrefetch */ Any = js.native
+    inline def abortPrefetch_=(
+      x: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof ImageNative.abortPrefetch */ Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("abortPrefetch")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    /* was `typeof ImageNative.getSize` */
+    @JSImport("react-native-elements/dist/image/Image", "Image.getSize")
+    @js.native
+    def getSize: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof ImageNative.getSize */ Any = js.native
+    
+    /* static member */
+    /* was `typeof ImageNative.getSizeWithHeaders` */
+    @JSImport("react-native-elements/dist/image/Image", "Image.getSizeWithHeaders")
+    @js.native
+    def getSizeWithHeaders: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof ImageNative.getSizeWithHeaders */ Any = js.native
+    inline def getSizeWithHeaders_=(
+      x: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof ImageNative.getSizeWithHeaders */ Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getSizeWithHeaders")(x.asInstanceOf[js.Any])
+    
+    inline def getSize_=(
+      x: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof ImageNative.getSize */ Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getSize")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    /* was `typeof ImageNative.prefetch` */
+    @JSImport("react-native-elements/dist/image/Image", "Image.prefetch")
+    @js.native
+    def prefetch: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof ImageNative.prefetch */ Any = js.native
+    inline def prefetch_=(
+      x: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof ImageNative.prefetch */ Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prefetch")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    /* was `typeof ImageNative.queryCache` */
+    @JSImport("react-native-elements/dist/image/Image", "Image.queryCache")
+    @js.native
+    def queryCache: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof ImageNative.queryCache */ Any = js.native
+    inline def queryCache_=(
+      x: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof ImageNative.queryCache */ Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryCache")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    /* was `typeof ImageNative.resolveAssetSource` */
+    @JSImport("react-native-elements/dist/image/Image", "Image.resolveAssetSource")
+    @js.native
+    def resolveAssetSource: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof ImageNative.resolveAssetSource */ Any = js.native
+    inline def resolveAssetSource_=(
+      x: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof ImageNative.resolveAssetSource */ Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("resolveAssetSource")(x.asInstanceOf[js.Any])
   }
   
   trait ImageProps

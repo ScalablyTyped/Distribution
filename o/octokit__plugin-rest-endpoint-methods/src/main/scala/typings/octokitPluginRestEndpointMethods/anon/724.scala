@@ -34,12 +34,9 @@ trait `724` extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/{org}/teams/{team_slug}']['response'] */ js.Any
   ] = js.native
   
-  def defaults[O /* <: RequestParameters */](newDefaults: O): RequestInterface[js.Object & O] = js.native
+  def defaults[O /* <: RequestParameters */](newDefaults: O): RequestInterface[O] = js.native
   @JSName("defaults")
-  var defaults_Original: js.Function1[
-    /* newDefaults */ RequestParameters, 
-    RequestInterface[js.Object & RequestParameters]
-  ] = js.native
+  var defaults_Original: js.Function1[/* newDefaults */ RequestParameters, RequestInterface[RequestParameters]] = js.native
   
   /**
     * Transforms a GitHub REST API endpoint into generic request options

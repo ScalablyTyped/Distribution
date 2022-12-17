@@ -111,7 +111,7 @@ trait PickImplperformancePartia
     js.Function3[/* response */ Any, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]
   ] = js.undefined
   
-  var performance: Boolean & js.UndefOr[Boolean]
+  var performance: Boolean
   
   var regExp: js.UndefOr[RegExpSettings] = js.undefined
   
@@ -147,7 +147,7 @@ trait PickImplperformancePartia
 }
 object PickImplperformancePartia {
   
-  inline def apply(performance: Boolean & js.UndefOr[Boolean]): PickImplperformancePartia = {
+  inline def apply(performance: Boolean): PickImplperformancePartia = {
     val __obj = js.Dynamic.literal(performance = performance.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplperformancePartia]
   }
@@ -282,7 +282,7 @@ object PickImplperformancePartia {
     
     inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
-    inline def setPerformance(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
+    inline def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
     
     inline def setRegExp(value: RegExpSettings): Self = StObject.set(x, "regExp", value.asInstanceOf[js.Any])
     

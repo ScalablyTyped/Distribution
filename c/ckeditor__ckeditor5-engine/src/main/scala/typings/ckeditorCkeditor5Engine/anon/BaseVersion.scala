@@ -12,7 +12,7 @@ trait BaseVersion extends StObject {
   
   var nodes: ReturnType[js.Function0[js.Array[default]]]
   
-  var position: ReturnType[js.Function0[Path]]
+  var position: ReturnType[js.Function0[Root]]
   
   var shouldReceiveAttributes: Boolean
 }
@@ -20,7 +20,7 @@ object BaseVersion {
   
   inline def apply(
     nodes: ReturnType[js.Function0[js.Array[default]]],
-    position: ReturnType[js.Function0[Path]],
+    position: ReturnType[js.Function0[Root]],
     shouldReceiveAttributes: Boolean
   ): BaseVersion = {
     val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], shouldReceiveAttributes = shouldReceiveAttributes.asInstanceOf[js.Any], baseVersion = null)
@@ -35,7 +35,7 @@ object BaseVersion {
     
     inline def setNodes(value: ReturnType[js.Function0[js.Array[default]]]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    inline def setPosition(value: ReturnType[js.Function0[Path]]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: ReturnType[js.Function0[Root]]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     inline def setShouldReceiveAttributes(value: Boolean): Self = StObject.set(x, "shouldReceiveAttributes", value.asInstanceOf[js.Any])
   }

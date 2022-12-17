@@ -9,7 +9,6 @@ import typings.materialUiCore.stylesResponsiveFontSizesMod.ResponsiveFontSizesOp
 import typings.materialUiCore.stylesStyledMod.ComponentCreator
 import typings.materialUiCore.stylesTransitionsMod.Duration_
 import typings.materialUiCore.stylesTransitionsMod.Easing_
-import typings.materialUiCore.stylesTransitionsMod.Transitions
 import typings.materialUiCore.stylesWithStylesMod.WithStyles
 import typings.materialUiCore.stylesWithThemeMod.ThemedComponentProps
 import typings.materialUiCore.stylesWithThemeMod.WithTheme
@@ -35,18 +34,12 @@ object stylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  // export type TransitionsOptions = DeepPartial<Transitions>;
-  @JSImport("@material-ui/core/styles", JSImport.Default)
-  @js.native
-  val default: Transitions = js.native
-  
   inline def MuiThemeProvider[T](props: ThemeProviderProps[T]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MuiThemeProvider")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("@material-ui/core/styles", "ServerStyleSheets")
   @js.native
   open class ServerStyleSheets ()
-    extends StObject
-       with typings.materialUiStyles.serverStyleSheetsServerStyleSheetsMod.ServerStyleSheets {
+    extends typings.materialUiStyles.mod.ServerStyleSheets {
     def this(options: js.Object) = this()
   }
   

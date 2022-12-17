@@ -9,6 +9,68 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  @JSImport("realm-network-transport", "DefaultNetworkTransport")
+  @js.native
+  open class DefaultNetworkTransport ()
+    extends StObject
+       with NetworkTransport {
+    
+    /* private */ var createTimeoutSignal: Any = js.native
+    
+    /* CompleteClass */
+    override def fetch[RequestBody](request: Request[RequestBody]): js.Promise[FetchResponse] = js.native
+    
+    /* CompleteClass */
+    override def fetchWithCallbacks[RequestBody](request: Request[RequestBody], handler: ResponseHandler): Unit = js.native
+  }
+  object DefaultNetworkTransport {
+    
+    @JSImport("realm-network-transport", "DefaultNetworkTransport")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("realm-network-transport", "DefaultNetworkTransport.AbortController")
+    @js.native
+    /**
+      * Constructs an AbortController.
+      */
+    open class AbortController ()
+      extends StObject
+         with typings.realmNetworkTransport.mod.AbortController
+    /* static member */
+    @JSImport("realm-network-transport", "DefaultNetworkTransport.AbortController")
+    @js.native
+    def AbortController: typings.realmNetworkTransport.mod.AbortController = js.native
+    inline def AbortController_=(x: typings.realmNetworkTransport.mod.AbortController): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AbortController")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    object DEFAULT_HEADERS {
+      
+      @JSImport("realm-network-transport", "DefaultNetworkTransport.DEFAULT_HEADERS")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      @JSImport("realm-network-transport", "DefaultNetworkTransport.DEFAULT_HEADERS.Content-Type")
+      @js.native
+      def ContentType: String = js.native
+      
+      inline def ContentType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Content-Type")(x.asInstanceOf[js.Any])
+    }
+    
+    /* static member */
+    @JSImport("realm-network-transport", "DefaultNetworkTransport.extraFetchOptions")
+    @js.native
+    def extraFetchOptions: js.UndefOr[Record[String, Any]] = js.native
+    inline def extraFetchOptions_=(x: js.UndefOr[Record[String, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extraFetchOptions")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("realm-network-transport", "DefaultNetworkTransport.fetch")
+    @js.native
+    def fetch: Fetch = js.native
+    inline def fetch_=(x: Fetch): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fetch")(x.asInstanceOf[js.Any])
+  }
+  
   /** A controller object that allows you to abort one or more DOM requests as and when desired. */
   @js.native
   trait AbortController
@@ -53,29 +115,6 @@ object mod {
       inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait DefaultNetworkTransport
-    extends StObject
-       with NetworkTransport {
-    
-    /* private */ var createTimeoutSignal: Any
-  }
-  object DefaultNetworkTransport {
-    
-    inline def apply(
-      createTimeoutSignal: Any,
-      fetch: Request[Any] => js.Promise[FetchResponse],
-      fetchWithCallbacks: (Request[Any], ResponseHandler) => Unit
-    ): DefaultNetworkTransport = {
-      val __obj = js.Dynamic.literal(createTimeoutSignal = createTimeoutSignal.asInstanceOf[js.Any], fetch = js.Any.fromFunction1(fetch), fetchWithCallbacks = js.Any.fromFunction2(fetchWithCallbacks))
-      __obj.asInstanceOf[DefaultNetworkTransport]
-    }
-    
-    extension [Self <: DefaultNetworkTransport](x: Self) {
-      
-      inline def setCreateTimeoutSignal(value: Any): Self = StObject.set(x, "createTimeoutSignal", value.asInstanceOf[js.Any])
     }
   }
   

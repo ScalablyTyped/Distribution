@@ -506,7 +506,7 @@ object anon {
   /* Inlined std.Readonly<{  children :react.react.ReactNode | undefined}> & std.Readonly<rmc-picker.rmc-picker/lib/MultiPickerProps.default> */
   trait ReadonlychildrenReactNode extends StObject {
     
-    val children: js.UndefOr[ReactNode] & js.UndefOr[Any]
+    val children: js.UndefOr[ReactNode] = js.undefined
     
     val className: js.UndefOr[String] = js.undefined
     
@@ -524,14 +524,16 @@ object anon {
   }
   object ReadonlychildrenReactNode {
     
-    inline def apply(children: js.UndefOr[ReactNode] & js.UndefOr[Any]): ReadonlychildrenReactNode = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    inline def apply(): ReadonlychildrenReactNode = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReadonlychildrenReactNode]
     }
     
     extension [Self <: ReadonlychildrenReactNode](x: Self) {
       
-      inline def setChildren(value: js.UndefOr[ReactNode] & js.UndefOr[Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

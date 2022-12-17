@@ -94,7 +94,7 @@ object libTypesDateTimeMod {
     
     var dateTimeFormat: Medium
     
-    var era: Narrow
+    var era: Short
     
     var formats: Record[String, js.Array[Formats]]
     
@@ -112,7 +112,7 @@ object libTypesDateTimeMod {
       */
     var hourFormat: String
     
-    var month: Long
+    var month: Narrow
     
     var nu: js.Array[String]
     
@@ -122,7 +122,7 @@ object libTypesDateTimeMod {
     
     var timeZoneName: TimeZoneNameData
     
-    var weekday: Long
+    var weekday: Narrow
   }
   object DateTimeFormatLocaleInternalData {
     
@@ -131,18 +131,18 @@ object libTypesDateTimeMod {
       ca: js.Array[String],
       dateFormat: Full,
       dateTimeFormat: Medium,
-      era: Narrow,
+      era: Short,
       formats: Record[String, js.Array[Formats]],
       gmtFormat: String,
       hc: js.Array[String],
       hourCycle: String,
       hourFormat: String,
-      month: Long,
+      month: Narrow,
       nu: js.Array[String],
       pm: String,
       timeFormat: Full,
       timeZoneName: TimeZoneNameData,
-      weekday: Long
+      weekday: Narrow
     ): DateTimeFormatLocaleInternalData = {
       val __obj = js.Dynamic.literal(am = am.asInstanceOf[js.Any], ca = ca.asInstanceOf[js.Any], dateFormat = dateFormat.asInstanceOf[js.Any], dateTimeFormat = dateTimeFormat.asInstanceOf[js.Any], era = era.asInstanceOf[js.Any], formats = formats.asInstanceOf[js.Any], gmtFormat = gmtFormat.asInstanceOf[js.Any], hc = hc.asInstanceOf[js.Any], hourCycle = hourCycle.asInstanceOf[js.Any], hourFormat = hourFormat.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], nu = nu.asInstanceOf[js.Any], pm = pm.asInstanceOf[js.Any], timeFormat = timeFormat.asInstanceOf[js.Any], timeZoneName = timeZoneName.asInstanceOf[js.Any], weekday = weekday.asInstanceOf[js.Any])
       __obj.asInstanceOf[DateTimeFormatLocaleInternalData]
@@ -160,7 +160,7 @@ object libTypesDateTimeMod {
       
       inline def setDateTimeFormat(value: Medium): Self = StObject.set(x, "dateTimeFormat", value.asInstanceOf[js.Any])
       
-      inline def setEra(value: Narrow): Self = StObject.set(x, "era", value.asInstanceOf[js.Any])
+      inline def setEra(value: Short): Self = StObject.set(x, "era", value.asInstanceOf[js.Any])
       
       inline def setFormats(value: Record[String, js.Array[Formats]]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       
@@ -174,7 +174,7 @@ object libTypesDateTimeMod {
       
       inline def setHourFormat(value: String): Self = StObject.set(x, "hourFormat", value.asInstanceOf[js.Any])
       
-      inline def setMonth(value: Long): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+      inline def setMonth(value: Narrow): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       
       inline def setNu(value: js.Array[String]): Self = StObject.set(x, "nu", value.asInstanceOf[js.Any])
       
@@ -186,7 +186,7 @@ object libTypesDateTimeMod {
       
       inline def setTimeZoneName(value: TimeZoneNameData): Self = StObject.set(x, "timeZoneName", value.asInstanceOf[js.Any])
       
-      inline def setWeekday(value: Long): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
+      inline def setWeekday(value: Narrow): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
     }
   }
   
@@ -738,7 +738,7 @@ object libTypesDateTimeMod {
     inline def year: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.year = "year".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.year]
   }
   
-  type TimeZoneNameData = Record[String, Short]
+  type TimeZoneNameData = Record[String, Long]
   
   type UnpackedZoneData = js.Tuple4[Double, String, Double, Boolean]
 }

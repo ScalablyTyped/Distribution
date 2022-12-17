@@ -5,13 +5,13 @@ import typings.reactNative.mod.Animated.WithAnimatedValue
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
+import typings.tuyaPanelKit.anon.Bottom
 import typings.tuyaPanelKit.anon.Close
 import typings.tuyaPanelKit.anon.Horizontal
-import typings.tuyaPanelKit.anon.Left
 import typings.tuyaPanelKit.anon.Style
 import typings.tuyaPanelKit.anon.StyleWithAnimatedValue
 import typings.tuyaPanelKit.anon.TintColor
-import typings.tuyaPanelKit.anon.`9`
+import typings.tuyaPanelKit.anon.TintColorString
 import typings.tuyaPanelKit.tuyaPanelKitStrings.center
 import typings.tuyaPanelKit.tuyaPanelKitStrings.left
 import typings.tuyaPanelKit.tuyaPanelKitStrings.pop_
@@ -113,7 +113,7 @@ trait StackNavigationOptions extends StObject {
     * It receives the `tintColor` in in the options object as an argument. object.
     * Defaults to Image component with a the default back icon image for the platform (a chevron on iOS and an arrow on Android).
     */
-  var headerBackImage: js.UndefOr[js.Function1[/* props */ TintColor, ReactNode]] = js.undefined
+  var headerBackImage: js.UndefOr[js.Function1[/* props */ TintColorString, ReactNode]] = js.undefined
   
   /**
     * Title string used by the back button on iOS. Defaults to the previous scene's `headerTitle`.
@@ -158,7 +158,7 @@ trait StackNavigationOptions extends StObject {
   /**
     * Function which returns a React Element to display on the right side of the header.
     */
-  var headerRight: js.UndefOr[js.Function1[/* props */ `9`, ReactNode]] = js.undefined
+  var headerRight: js.UndefOr[js.Function1[/* props */ TintColor, ReactNode]] = js.undefined
   
   /**
     * Style object for the container of the `headerRight` component, for example to add padding.
@@ -239,7 +239,7 @@ trait StackNavigationOptions extends StObject {
     * By default, the device's safe area insets are automatically detected. You can override the behavior with this option.
     * For example, to remove the extra spacing for status bar, pass `safeAreaInsets: { top: 0 }`.
     */
-  var safeAreaInsets: js.UndefOr[Left] = js.undefined
+  var safeAreaInsets: js.UndefOr[Bottom] = js.undefined
   
   /**
     * String that can be displayed in the header as a fallback for `headerTitle`.
@@ -317,7 +317,7 @@ object StackNavigationOptions {
     
     inline def setHeaderBackAllowFontScalingUndefined: Self = StObject.set(x, "headerBackAllowFontScaling", js.undefined)
     
-    inline def setHeaderBackImage(value: /* props */ TintColor => ReactNode): Self = StObject.set(x, "headerBackImage", js.Any.fromFunction1(value))
+    inline def setHeaderBackImage(value: /* props */ TintColorString => ReactNode): Self = StObject.set(x, "headerBackImage", js.Any.fromFunction1(value))
     
     inline def setHeaderBackImageUndefined: Self = StObject.set(x, "headerBackImage", js.undefined)
     
@@ -353,7 +353,7 @@ object StackNavigationOptions {
     
     inline def setHeaderPressColorAndroidUndefined: Self = StObject.set(x, "headerPressColorAndroid", js.undefined)
     
-    inline def setHeaderRight(value: /* props */ `9` => ReactNode): Self = StObject.set(x, "headerRight", js.Any.fromFunction1(value))
+    inline def setHeaderRight(value: /* props */ TintColor => ReactNode): Self = StObject.set(x, "headerRight", js.Any.fromFunction1(value))
     
     inline def setHeaderRightContainerStyle(value: WithAnimatedValue[StyleProp[ViewStyle]]): Self = StObject.set(x, "headerRightContainerStyle", value.asInstanceOf[js.Any])
     
@@ -421,7 +421,7 @@ object StackNavigationOptions {
     
     inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    inline def setSafeAreaInsets(value: Left): Self = StObject.set(x, "safeAreaInsets", value.asInstanceOf[js.Any])
+    inline def setSafeAreaInsets(value: Bottom): Self = StObject.set(x, "safeAreaInsets", value.asInstanceOf[js.Any])
     
     inline def setSafeAreaInsetsUndefined: Self = StObject.set(x, "safeAreaInsets", js.undefined)
     

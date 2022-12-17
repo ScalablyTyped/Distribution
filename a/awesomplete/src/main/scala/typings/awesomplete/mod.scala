@@ -148,7 +148,7 @@ object mod {
     
     var item: js.UndefOr[js.Function2[/* text */ String, /* input */ String, HTMLElement]] = js.undefined
     
-    var list: js.UndefOr[String | (js.Array[Label | String | (js.Tuple2[String, String])]) | Element] = js.undefined
+    var list: js.UndefOr[String | (js.Array[String | (js.Tuple2[String, String]) | Value]) | Element] = js.undefined
     
     var maxItems: js.UndefOr[Double] = js.undefined
     
@@ -183,11 +183,11 @@ object mod {
       
       inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
       
-      inline def setList(value: String | (js.Array[Label | String | (js.Tuple2[String, String])]) | Element): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+      inline def setList(value: String | (js.Array[String | (js.Tuple2[String, String]) | Value]) | Element): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       
       inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
       
-      inline def setListVarargs(value: (Label | String | (js.Tuple2[String, String]))*): Self = StObject.set(x, "list", js.Array(value*))
+      inline def setListVarargs(value: (String | (js.Tuple2[String, String]) | Value)*): Self = StObject.set(x, "list", js.Array(value*))
       
       inline def setMaxItems(value: Double): Self = StObject.set(x, "maxItems", value.asInstanceOf[js.Any])
       
@@ -211,5 +211,5 @@ object mod {
   
   type SortFunction = js.Function2[/* left */ Double | js.Array[Any], /* right */ Double | js.Array[Any], Double]
   
-  type Suggestion = String | Value | (js.Tuple2[String, String])
+  type Suggestion = String | Label | (js.Tuple2[String, String])
 }

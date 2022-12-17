@@ -22,7 +22,7 @@ trait Arialabel extends StObject {
   
   var clipId: Requireable[String | Double]
   
-  var clipPadding: Requireable[InferProps[Left]]
+  var clipPadding: Requireable[InferProps[Bottom]]
   
   var clipPathComponent: Requireable[ReactElementLike]
   
@@ -32,7 +32,7 @@ trait Arialabel extends StObject {
   
   var groupComponent: Requireable[ReactElementLike]
   
-  var origin: Requireable[InferProps[XRequireable]]
+  var origin: Requireable[InferProps[X]]
   
   var polar: Requireable[Boolean]
   
@@ -57,12 +57,12 @@ object Arialabel {
     className: Requireable[String],
     clipHeight: Requireable[js.UndefOr[Double]],
     clipId: Requireable[String | Double],
-    clipPadding: Requireable[InferProps[Left]],
+    clipPadding: Requireable[InferProps[Bottom]],
     clipPathComponent: Requireable[ReactElementLike],
     clipWidth: Requireable[js.UndefOr[Double]],
     events: Requireable[js.Object],
     groupComponent: Requireable[ReactElementLike],
-    origin: Requireable[InferProps[XRequireable]],
+    origin: Requireable[InferProps[X]],
     polar: Requireable[Boolean],
     radius: Requireable[js.UndefOr[Double]],
     style: Requireable[js.Object],
@@ -90,7 +90,7 @@ object Arialabel {
     
     inline def setClipId(value: Requireable[String | Double]): Self = StObject.set(x, "clipId", value.asInstanceOf[js.Any])
     
-    inline def setClipPadding(value: Requireable[InferProps[Left]]): Self = StObject.set(x, "clipPadding", value.asInstanceOf[js.Any])
+    inline def setClipPadding(value: Requireable[InferProps[Bottom]]): Self = StObject.set(x, "clipPadding", value.asInstanceOf[js.Any])
     
     inline def setClipPathComponent(value: Requireable[ReactElementLike]): Self = StObject.set(x, "clipPathComponent", value.asInstanceOf[js.Any])
     
@@ -100,7 +100,7 @@ object Arialabel {
     
     inline def setGroupComponent(value: Requireable[ReactElementLike]): Self = StObject.set(x, "groupComponent", value.asInstanceOf[js.Any])
     
-    inline def setOrigin(value: Requireable[InferProps[XRequireable]]): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: Requireable[InferProps[X]]): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     inline def setPolar(value: Requireable[Boolean]): Self = StObject.set(x, "polar", value.asInstanceOf[js.Any])
     

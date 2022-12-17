@@ -6,50 +6,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Readonly extends StObject {
   
-  /** Format: date-time */
-  var created_at: String
-  
-  var id: Double
-  
+  /** @description The contents of the key. */
   var key: String
   
-  var read_only: Boolean
+  /**
+    * @description If `true`, the key will only be able to read repository contents. Otherwise, the key will be able to read and write.
+    *
+    * Deploy keys with write access can perform the same actions as an organization member with admin access, or a collaborator on a personal repository. For more information, see "[Repository permission levels for an organization](https://docs.github.com/articles/repository-permission-levels-for-an-organization/)" and "[Permission levels for a user account repository](https://docs.github.com/articles/permission-levels-for-a-user-account-repository/)."
+    */
+  var read_only: js.UndefOr[Boolean] = js.undefined
   
-  var title: String
-  
-  var url: String
-  
-  var verified: Boolean
+  /** @description A name for the key. */
+  var title: js.UndefOr[String] = js.undefined
 }
 object Readonly {
   
-  inline def apply(
-    created_at: String,
-    id: Double,
-    key: String,
-    read_only: Boolean,
-    title: String,
-    url: String,
-    verified: Boolean
-  ): Readonly = {
-    val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], read_only = read_only.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], verified = verified.asInstanceOf[js.Any])
+  inline def apply(key: String): Readonly = {
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[Readonly]
   }
   
   extension [Self <: Readonly](x: Self) {
     
-    inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
-    
-    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-    
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setRead_only(value: Boolean): Self = StObject.set(x, "read_only", value.asInstanceOf[js.Any])
     
+    inline def setRead_onlyUndefined: Self = StObject.set(x, "read_only", js.undefined)
+    
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
-    
-    inline def setVerified(value: Boolean): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

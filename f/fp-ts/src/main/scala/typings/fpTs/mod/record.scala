@@ -120,7 +120,7 @@ object record {
   
   inline def difference[A](second: Record[String, A]): js.Function1[/* first */ Record[String, A], Record[String, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("difference")(second.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* first */ Record[String, A], Record[String, A]]]
   
-  inline def elem[A](E: Eq[A]): Fn30[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("elem")(E.asInstanceOf[js.Any]).asInstanceOf[Fn30[A]]
+  inline def elem[A](E: Eq[A]): Fn31[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("elem")(E.asInstanceOf[js.Any]).asInstanceOf[Fn31[A]]
   
   @JSImport("fp-ts", "record.empty")
   @js.native
@@ -295,7 +295,7 @@ object record {
   
   inline def isEmpty[A](r: Record[String, A]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(r.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isSubrecord[A](E: Eq[A]): Fn31[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("isSubrecord")(E.asInstanceOf[js.Any]).asInstanceOf[Fn31[A]]
+  inline def isSubrecord[A](E: Eq[A]): Fn30[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("isSubrecord")(E.asInstanceOf[js.Any]).asInstanceOf[Fn30[A]]
   
   inline def keys[K /* <: String */](r: Record[K, Any]): js.Array[K] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(r.asInstanceOf[js.Any]).asInstanceOf[js.Array[K]]
   

@@ -32,8 +32,8 @@ object mod {
   /* static member */
   @JSImport("@emartech/cls-adapter", "addContextStorageToInput")
   @js.native
-  def addContextStorageToInput: js.Function0[js.Function1[/* input */ js.Object, js.Object & RequestId]] = js.native
-  inline def addContextStorageToInput_=(x: js.Function0[js.Function1[/* input */ js.Object, js.Object & RequestId]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addContextStorageToInput")(x.asInstanceOf[js.Any])
+  def addContextStorageToInput: js.Function0[js.Function1[/* input */ js.Object, RequestId]] = js.native
+  inline def addContextStorageToInput_=(x: js.Function0[js.Function1[/* input */ js.Object, RequestId]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addContextStorageToInput")(x.asInstanceOf[js.Any])
   
   /**
     * Returns a function that extends the given object with the request identifier set on the current storage.
@@ -41,8 +41,8 @@ object mod {
   /* static member */
   @JSImport("@emartech/cls-adapter", "addRequestIdToInput")
   @js.native
-  def addRequestIdToInput: js.Function0[js.Function1[/* input */ js.Object, js.Object & RequestId]] = js.native
-  inline def addRequestIdToInput_=(x: js.Function0[js.Function1[/* input */ js.Object, js.Object & RequestId]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addRequestIdToInput")(x.asInstanceOf[js.Any])
+  def addRequestIdToInput: js.Function0[js.Function1[/* input */ js.Object, RequestId]] = js.native
+  inline def addRequestIdToInput_=(x: js.Function0[js.Function1[/* input */ js.Object, RequestId]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addRequestIdToInput")(x.asInstanceOf[js.Any])
   
   /**
     * Creates (or returns existing namespace) with the namespace name 'session'

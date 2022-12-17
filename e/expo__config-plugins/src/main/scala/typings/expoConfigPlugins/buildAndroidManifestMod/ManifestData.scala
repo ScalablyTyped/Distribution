@@ -1,6 +1,6 @@
 package typings.expoConfigPlugins.buildAndroidManifestMod
 
-import typings.expoConfigPlugins.anon.Androidhost
+import typings.expoConfigPlugins.anon.Dictkey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ManifestData extends StObject {
   
   @JSName("$")
-  var $: Androidhost
+  var $: Dictkey
 }
 object ManifestData {
   
-  inline def apply($: Androidhost): ManifestData = {
+  inline def apply($: Dictkey): ManifestData = {
     val __obj = js.Dynamic.literal($ = $.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManifestData]
   }
   
   extension [Self <: ManifestData](x: Self) {
     
-    inline def set$(value: Androidhost): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
+    inline def set$(value: Dictkey): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
   }
 }

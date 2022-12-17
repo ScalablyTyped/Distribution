@@ -170,7 +170,7 @@ object anon {
     /**
       * return an object of {path:stat} instead of just the resolved path names
       */
-    var return_object: js.UndefOr[Boolean] & js.UndefOr[`false`]
+    var return_object: js.UndefOr[Boolean] = js.undefined
     
     /**
       * make this syncronous. the same as calling walkdir.sync
@@ -185,8 +185,8 @@ object anon {
   }
   object WalkOptionsreturnobjectfa {
     
-    inline def apply(return_object: js.UndefOr[Boolean] & js.UndefOr[`false`]): WalkOptionsreturnobjectfa = {
-      val __obj = js.Dynamic.literal(return_object = return_object.asInstanceOf[js.Any])
+    inline def apply(): WalkOptionsreturnobjectfa = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WalkOptionsreturnobjectfa]
     }
     
@@ -222,7 +222,9 @@ object anon {
       
       inline def setNo_returnUndefined: Self = StObject.set(x, "no_return", js.undefined)
       
-      inline def setReturn_object(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "return_object", value.asInstanceOf[js.Any])
+      inline def setReturn_object(value: Boolean): Self = StObject.set(x, "return_object", value.asInstanceOf[js.Any])
+      
+      inline def setReturn_objectUndefined: Self = StObject.set(x, "return_object", js.undefined)
       
       inline def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
       
@@ -282,7 +284,7 @@ object anon {
     /**
       * return an object of {path:stat} instead of just the resolved path names
       */
-    var return_object: js.UndefOr[Boolean] & `true`
+    var return_object: js.UndefOr[Boolean] = js.undefined
     
     /**
       * make this syncronous. the same as calling walkdir.sync
@@ -297,8 +299,8 @@ object anon {
   }
   object WalkOptionsreturnobjecttr {
     
-    inline def apply(return_object: js.UndefOr[Boolean] & `true`): WalkOptionsreturnobjecttr = {
-      val __obj = js.Dynamic.literal(return_object = return_object.asInstanceOf[js.Any])
+    inline def apply(): WalkOptionsreturnobjecttr = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WalkOptionsreturnobjecttr]
     }
     
@@ -334,7 +336,9 @@ object anon {
       
       inline def setNo_returnUndefined: Self = StObject.set(x, "no_return", js.undefined)
       
-      inline def setReturn_object(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "return_object", value.asInstanceOf[js.Any])
+      inline def setReturn_object(value: Boolean): Self = StObject.set(x, "return_object", value.asInstanceOf[js.Any])
+      
+      inline def setReturn_objectUndefined: Self = StObject.set(x, "return_object", js.undefined)
       
       inline def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
       
@@ -399,7 +403,7 @@ object anon {
     /**
       * make this syncronous. the same as calling walkdir.sync
       */
-    var sync: js.UndefOr[`false`] & js.UndefOr[Boolean]
+    var sync: js.UndefOr[`false`] = js.undefined
     
     /**
       * on filesystems where inodes are not unique like windows (or perhaps hardlinks) some files may not be emitted due to inode collision.
@@ -409,8 +413,8 @@ object anon {
   }
   object syncfalseundefinedWalkOpt {
     
-    inline def apply(sync: js.UndefOr[`false`] & js.UndefOr[Boolean]): syncfalseundefinedWalkOpt = {
-      val __obj = js.Dynamic.literal(sync = sync.asInstanceOf[js.Any])
+    inline def apply(): syncfalseundefinedWalkOpt = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[syncfalseundefinedWalkOpt]
     }
     
@@ -450,7 +454,9 @@ object anon {
       
       inline def setReturn_objectUndefined: Self = StObject.set(x, "return_object", js.undefined)
       
-      inline def setSync(value: js.UndefOr[`false`] & js.UndefOr[Boolean]): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+      inline def setSync(value: `false`): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+      
+      inline def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
       
       inline def setTrack_inodes(value: Boolean): Self = StObject.set(x, "track_inodes", value.asInstanceOf[js.Any])
       
@@ -506,12 +512,12 @@ object anon {
     /**
       * return an object of {path:stat} instead of just the resolved path names
       */
-    var return_object: js.UndefOr[`false`] & js.UndefOr[Boolean]
+    var return_object: js.UndefOr[`false`] = js.undefined
     
     /**
       * make this syncronous. the same as calling walkdir.sync
       */
-    var sync: `true` & js.UndefOr[Boolean]
+    var sync: `true`
     
     /**
       * on filesystems where inodes are not unique like windows (or perhaps hardlinks) some files may not be emitted due to inode collision.
@@ -521,8 +527,8 @@ object anon {
   }
   object synctruereturnobjectfalse {
     
-    inline def apply(return_object: js.UndefOr[`false`] & js.UndefOr[Boolean], sync: `true` & js.UndefOr[Boolean]): synctruereturnobjectfalse = {
-      val __obj = js.Dynamic.literal(return_object = return_object.asInstanceOf[js.Any], sync = sync.asInstanceOf[js.Any])
+    inline def apply(): synctruereturnobjectfalse = {
+      val __obj = js.Dynamic.literal(sync = true)
       __obj.asInstanceOf[synctruereturnobjectfalse]
     }
     
@@ -558,9 +564,11 @@ object anon {
       
       inline def setNo_returnUndefined: Self = StObject.set(x, "no_return", js.undefined)
       
-      inline def setReturn_object(value: js.UndefOr[`false`] & js.UndefOr[Boolean]): Self = StObject.set(x, "return_object", value.asInstanceOf[js.Any])
+      inline def setReturn_object(value: `false`): Self = StObject.set(x, "return_object", value.asInstanceOf[js.Any])
       
-      inline def setSync(value: `true` & js.UndefOr[Boolean]): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+      inline def setReturn_objectUndefined: Self = StObject.set(x, "return_object", js.undefined)
+      
+      inline def setSync(value: `true`): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
       
       inline def setTrack_inodes(value: Boolean): Self = StObject.set(x, "track_inodes", value.asInstanceOf[js.Any])
       
@@ -616,12 +624,12 @@ object anon {
     /**
       * return an object of {path:stat} instead of just the resolved path names
       */
-    var return_object: `true` & js.UndefOr[Boolean]
+    var return_object: `true`
     
     /**
       * make this syncronous. the same as calling walkdir.sync
       */
-    var sync: `true` & js.UndefOr[Boolean]
+    var sync: `true`
     
     /**
       * on filesystems where inodes are not unique like windows (or perhaps hardlinks) some files may not be emitted due to inode collision.
@@ -631,8 +639,8 @@ object anon {
   }
   object synctruereturnobjecttrueW {
     
-    inline def apply(return_object: `true` & js.UndefOr[Boolean], sync: `true` & js.UndefOr[Boolean]): synctruereturnobjecttrueW = {
-      val __obj = js.Dynamic.literal(return_object = return_object.asInstanceOf[js.Any], sync = sync.asInstanceOf[js.Any])
+    inline def apply(): synctruereturnobjecttrueW = {
+      val __obj = js.Dynamic.literal(return_object = true, sync = true)
       __obj.asInstanceOf[synctruereturnobjecttrueW]
     }
     
@@ -668,9 +676,9 @@ object anon {
       
       inline def setNo_returnUndefined: Self = StObject.set(x, "no_return", js.undefined)
       
-      inline def setReturn_object(value: `true` & js.UndefOr[Boolean]): Self = StObject.set(x, "return_object", value.asInstanceOf[js.Any])
+      inline def setReturn_object(value: `true`): Self = StObject.set(x, "return_object", value.asInstanceOf[js.Any])
       
-      inline def setSync(value: `true` & js.UndefOr[Boolean]): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+      inline def setSync(value: `true`): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
       
       inline def setTrack_inodes(value: Boolean): Self = StObject.set(x, "track_inodes", value.asInstanceOf[js.Any])
       

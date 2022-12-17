@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RequestBodyContentApplicationjsonAllowedactionsEnabledBoolean extends StObject {
   
-  var parameters: `76`
+  var parameters: `472`
   
   var requestBody: ContentApplicationjsonAllowedactionsEnabledBoolean
 }
 object RequestBodyContentApplicationjsonAllowedactionsEnabledBoolean {
   
-  inline def apply(parameters: `76`, requestBody: ContentApplicationjsonAllowedactionsEnabledBoolean): RequestBodyContentApplicationjsonAllowedactionsEnabledBoolean = {
+  inline def apply(parameters: `472`, requestBody: ContentApplicationjsonAllowedactionsEnabledBoolean): RequestBodyContentApplicationjsonAllowedactionsEnabledBoolean = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyContentApplicationjsonAllowedactionsEnabledBoolean]
   }
   
   extension [Self <: RequestBodyContentApplicationjsonAllowedactionsEnabledBoolean](x: Self) {
     
-    inline def setParameters(value: `76`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: `472`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setRequestBody(value: ContentApplicationjsonAllowedactionsEnabledBoolean): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
   }

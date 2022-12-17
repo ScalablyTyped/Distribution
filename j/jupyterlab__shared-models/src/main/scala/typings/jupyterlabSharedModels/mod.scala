@@ -20,25 +20,6 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@jupyterlab/shared-models", JSImport.Default)
-  @js.native
-  open class default protected ()
-    extends typings.jupyterlabSharedModels.libYmodelsMod.default {
-    def this(options: IOptions) = this()
-  }
-  /* static members */
-  object default {
-    
-    @JSImport("@jupyterlab/shared-models", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /**
-      * Create a new YNotebook.
-      */
-    inline def create(disableDocumentWideUndoRedo: Boolean): ISharedNotebook = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(disableDocumentWideUndoRedo.asInstanceOf[js.Any]).asInstanceOf[ISharedNotebook]
-  }
-  
   @JSImport("@jupyterlab/shared-models", "YBaseCell")
   @js.native
   open class YBaseCell[Metadata /* <: ISharedBaseCellMetadata */] protected ()

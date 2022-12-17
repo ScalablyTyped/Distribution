@@ -60,9 +60,7 @@ trait PickImplonSelectPartialPi
   
   def onSelect(result: Any, response: Any): `false` | Unit
   @JSName("onSelect")
-  var onSelect_Original: (js.ThisFunction2[/* this */ JQuery, /* result */ Any, /* response */ Any, `false` | Unit]) & (js.UndefOr[
-    js.ThisFunction2[/* this */ JQuery, /* result */ Any, /* response */ Any, `false` | Unit]
-  ])
+  var onSelect_Original: js.ThisFunction2[/* this */ JQuery, /* result */ Any, /* response */ Any, `false` | Unit]
   
   var performance: js.UndefOr[Boolean] = js.undefined
   
@@ -95,9 +93,7 @@ trait PickImplonSelectPartialPi
 object PickImplonSelectPartialPi {
   
   inline def apply(
-    onSelect: (js.ThisFunction2[/* this */ JQuery, /* result */ Any, /* response */ Any, `false` | Unit]) & (js.UndefOr[
-      js.ThisFunction2[/* this */ JQuery, /* result */ Any, /* response */ Any, `false` | Unit]
-    ])
+    onSelect: js.ThisFunction2[/* this */ JQuery, /* result */ Any, /* response */ Any, `false` | Unit]
   ): PickImplonSelectPartialPi = {
     val __obj = js.Dynamic.literal(onSelect = onSelect.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonSelectPartialPi]
@@ -181,11 +177,7 @@ object PickImplonSelectPartialPi {
     
     inline def setOnSearchQueryUndefined: Self = StObject.set(x, "onSearchQuery", js.undefined)
     
-    inline def setOnSelect(
-      value: (js.ThisFunction2[/* this */ JQuery, /* result */ Any, /* response */ Any, `false` | Unit]) & (js.UndefOr[
-          js.ThisFunction2[/* this */ JQuery, /* result */ Any, /* response */ Any, `false` | Unit]
-        ])
-    ): Self = StObject.set(x, "onSelect", value.asInstanceOf[js.Any])
+    inline def setOnSelect(value: js.ThisFunction2[/* this */ JQuery, /* result */ Any, /* response */ Any, `false` | Unit]): Self = StObject.set(x, "onSelect", value.asInstanceOf[js.Any])
     
     inline def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
     

@@ -12,13 +12,13 @@ trait PickImplplaceholderPartia
   
   var embed: js.UndefOr[String] = js.undefined
   
-  var placeholder: String & js.UndefOr[String]
+  var placeholder: String
   
   var play: js.UndefOr[String] = js.undefined
 }
 object PickImplplaceholderPartia {
   
-  inline def apply(placeholder: String & js.UndefOr[String]): PickImplplaceholderPartia = {
+  inline def apply(placeholder: String): PickImplplaceholderPartia = {
     val __obj = js.Dynamic.literal(placeholder = placeholder.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplplaceholderPartia]
   }
@@ -29,7 +29,7 @@ object PickImplplaceholderPartia {
     
     inline def setEmbedUndefined: Self = StObject.set(x, "embed", js.undefined)
     
-    inline def setPlaceholder(value: String & js.UndefOr[String]): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     inline def setPlay(value: String): Self = StObject.set(x, "play", value.asInstanceOf[js.Any])
     

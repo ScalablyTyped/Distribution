@@ -6,33 +6,61 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Reason extends StObject {
   
-  var payload: String | Null
+  var id: String
+  
+  var last_read_at: String | Null
   
   var reason: String
   
-  var signature: String | Null
+  var repository: Branchesurl
   
-  var verified: Boolean
+  var subject: Latestcommenturl
+  
+  /** @example https://api.github.com/notifications/threads/2/subscription */
+  var subscription_url: String
+  
+  var unread: Boolean
+  
+  var updated_at: String
+  
+  var url: String
 }
 object Reason {
   
-  inline def apply(reason: String, verified: Boolean): Reason = {
-    val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], verified = verified.asInstanceOf[js.Any], payload = null, signature = null)
+  inline def apply(
+    id: String,
+    reason: String,
+    repository: Branchesurl,
+    subject: Latestcommenturl,
+    subscription_url: String,
+    unread: Boolean,
+    updated_at: String,
+    url: String
+  ): Reason = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], subscription_url = subscription_url.asInstanceOf[js.Any], unread = unread.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], last_read_at = null)
     __obj.asInstanceOf[Reason]
   }
   
   extension [Self <: Reason](x: Self) {
     
-    inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setPayloadNull: Self = StObject.set(x, "payload", null)
+    inline def setLast_read_at(value: String): Self = StObject.set(x, "last_read_at", value.asInstanceOf[js.Any])
+    
+    inline def setLast_read_atNull: Self = StObject.set(x, "last_read_at", null)
     
     inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setRepository(value: Branchesurl): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
-    inline def setSignatureNull: Self = StObject.set(x, "signature", null)
+    inline def setSubject(value: Latestcommenturl): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
-    inline def setVerified(value: Boolean): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
+    inline def setSubscription_url(value: String): Self = StObject.set(x, "subscription_url", value.asInstanceOf[js.Any])
+    
+    inline def setUnread(value: Boolean): Self = StObject.set(x, "unread", value.asInstanceOf[js.Any])
+    
+    inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

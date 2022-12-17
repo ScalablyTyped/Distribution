@@ -1,6 +1,5 @@
 package typings.babylonjs.anon
 
-import typings.babylonjs.BABYLON.Color4
 import typings.babylonjs.BABYLON.Vector4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,11 +11,9 @@ trait AlignHorizontalAlignVertical extends StObject {
   
   var alignVertical: js.UndefOr[Double] = js.undefined
   
-  var depth: js.UndefOr[Double] = js.undefined
+  var backUVs: js.UndefOr[Vector4] = js.undefined
   
-  var faceColors: js.UndefOr[js.Array[Color4]] = js.undefined
-  
-  var faceUV: js.UndefOr[js.Array[Vector4]] = js.undefined
+  var frontUVs: js.UndefOr[Vector4] = js.undefined
   
   var height: js.UndefOr[Double] = js.undefined
   
@@ -24,13 +21,13 @@ trait AlignHorizontalAlignVertical extends StObject {
   
   var sideOrientation: js.UndefOr[Double] = js.undefined
   
+  var size: js.UndefOr[Double] = js.undefined
+  
   var tileHeight: js.UndefOr[Double] = js.undefined
   
   var tileSize: js.UndefOr[Double] = js.undefined
   
   var tileWidth: js.UndefOr[Double] = js.undefined
-  
-  var updatable: js.UndefOr[Boolean] = js.undefined
   
   var width: js.UndefOr[Double] = js.undefined
 }
@@ -51,21 +48,13 @@ object AlignHorizontalAlignVertical {
     
     inline def setAlignVerticalUndefined: Self = StObject.set(x, "alignVertical", js.undefined)
     
-    inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+    inline def setBackUVs(value: Vector4): Self = StObject.set(x, "backUVs", value.asInstanceOf[js.Any])
     
-    inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
+    inline def setBackUVsUndefined: Self = StObject.set(x, "backUVs", js.undefined)
     
-    inline def setFaceColors(value: js.Array[Color4]): Self = StObject.set(x, "faceColors", value.asInstanceOf[js.Any])
+    inline def setFrontUVs(value: Vector4): Self = StObject.set(x, "frontUVs", value.asInstanceOf[js.Any])
     
-    inline def setFaceColorsUndefined: Self = StObject.set(x, "faceColors", js.undefined)
-    
-    inline def setFaceColorsVarargs(value: Color4*): Self = StObject.set(x, "faceColors", js.Array(value*))
-    
-    inline def setFaceUV(value: js.Array[Vector4]): Self = StObject.set(x, "faceUV", value.asInstanceOf[js.Any])
-    
-    inline def setFaceUVUndefined: Self = StObject.set(x, "faceUV", js.undefined)
-    
-    inline def setFaceUVVarargs(value: Vector4*): Self = StObject.set(x, "faceUV", js.Array(value*))
+    inline def setFrontUVsUndefined: Self = StObject.set(x, "frontUVs", js.undefined)
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
@@ -79,6 +68,10 @@ object AlignHorizontalAlignVertical {
     
     inline def setSideOrientationUndefined: Self = StObject.set(x, "sideOrientation", js.undefined)
     
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
     inline def setTileHeight(value: Double): Self = StObject.set(x, "tileHeight", value.asInstanceOf[js.Any])
     
     inline def setTileHeightUndefined: Self = StObject.set(x, "tileHeight", js.undefined)
@@ -90,10 +83,6 @@ object AlignHorizontalAlignVertical {
     inline def setTileWidth(value: Double): Self = StObject.set(x, "tileWidth", value.asInstanceOf[js.Any])
     
     inline def setTileWidthUndefined: Self = StObject.set(x, "tileWidth", js.undefined)
-    
-    inline def setUpdatable(value: Boolean): Self = StObject.set(x, "updatable", value.asInstanceOf[js.Any])
-    
-    inline def setUpdatableUndefined: Self = StObject.set(x, "updatable", js.undefined)
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

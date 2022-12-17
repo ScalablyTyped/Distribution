@@ -58,7 +58,7 @@ trait PickImplmaxDepthPartialPi
   
   var loadOnce: js.UndefOr[Boolean] = js.undefined
   
-  var maxDepth: Double & js.UndefOr[Double]
+  var maxDepth: Double
   
   var metadata: js.UndefOr[MetadataSettings] = js.undefined
   
@@ -104,7 +104,7 @@ trait PickImplmaxDepthPartialPi
 }
 object PickImplmaxDepthPartialPi {
   
-  inline def apply(maxDepth: Double & js.UndefOr[Double]): PickImplmaxDepthPartialPi = {
+  inline def apply(maxDepth: Double): PickImplmaxDepthPartialPi = {
     val __obj = js.Dynamic.literal(maxDepth = maxDepth.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmaxDepthPartialPi]
   }
@@ -175,7 +175,7 @@ object PickImplmaxDepthPartialPi {
     
     inline def setLoadOnceUndefined: Self = StObject.set(x, "loadOnce", js.undefined)
     
-    inline def setMaxDepth(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
+    inline def setMaxDepth(value: Double): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
     
     inline def setMetadata(value: MetadataSettings): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

@@ -1122,10 +1122,6 @@ object tuyaPanelKitStrings {
   inline def square: square = "square".asInstanceOf[square]
   
   @js.native
-  sealed trait stack extends StObject
-  inline def stack: stack = "stack".asInstanceOf[stack]
-  
-  @js.native
   sealed trait stale extends StObject
   inline def stale: stale = "stale".asInstanceOf[stale]
   
@@ -1174,10 +1170,6 @@ object tuyaPanelKitStrings {
   @js.native
   sealed trait switch extends StObject
   inline def switch: switch = "switch".asInstanceOf[switch]
-  
-  @js.native
-  sealed trait tab extends StObject
-  inline def tab: tab = "tab".asInstanceOf[tab]
   
   @js.native
   sealed trait tail extends StObject

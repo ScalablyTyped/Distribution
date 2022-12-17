@@ -85,7 +85,7 @@ trait PickImplrefreshOnLoadPart
   
   var performance: js.UndefOr[Boolean] = js.undefined
   
-  var refreshOnLoad: Boolean & js.UndefOr[Boolean]
+  var refreshOnLoad: Boolean
   
   var refreshOnResize: js.UndefOr[Boolean] = js.undefined
   
@@ -103,7 +103,7 @@ trait PickImplrefreshOnLoadPart
 }
 object PickImplrefreshOnLoadPart {
   
-  inline def apply(refreshOnLoad: Boolean & js.UndefOr[Boolean]): PickImplrefreshOnLoadPart = {
+  inline def apply(refreshOnLoad: Boolean): PickImplrefreshOnLoadPart = {
     val __obj = js.Dynamic.literal(refreshOnLoad = refreshOnLoad.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplrefreshOnLoadPart]
   }
@@ -242,7 +242,7 @@ object PickImplrefreshOnLoadPart {
     
     inline def setPerformanceUndefined: Self = StObject.set(x, "performance", js.undefined)
     
-    inline def setRefreshOnLoad(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "refreshOnLoad", value.asInstanceOf[js.Any])
+    inline def setRefreshOnLoad(value: Boolean): Self = StObject.set(x, "refreshOnLoad", value.asInstanceOf[js.Any])
     
     inline def setRefreshOnResize(value: Boolean): Self = StObject.set(x, "refreshOnResize", value.asInstanceOf[js.Any])
     

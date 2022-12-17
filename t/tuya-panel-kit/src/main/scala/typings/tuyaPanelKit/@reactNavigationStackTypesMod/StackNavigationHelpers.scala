@@ -6,11 +6,11 @@ import typings.tuyaPanelKit.`@reactNavigationCoreTypesMod`.EventArg
 import typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.NavigationAction
 import typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.NavigationState
 import typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.ParamListBase
-import typings.tuyaPanelKit.anon.A
-import typings.tuyaPanelKit.anon.KeyParams
-import typings.tuyaPanelKit.anon.NameRouteName
+import typings.tuyaPanelKit.anon.C
+import typings.tuyaPanelKit.anon.KeyNameRouteName
+import typings.tuyaPanelKit.anon.KeyString
 import typings.tuyaPanelKit.anon.PartialStateNavigationSta
-import typings.tuyaPanelKit.anon.`10`
+import typings.tuyaPanelKit.anon.`9`
 import typings.tuyaPanelKit.tuyaPanelKitStrings.gestureCancel
 import typings.tuyaPanelKit.tuyaPanelKitStrings.gestureEnd
 import typings.tuyaPanelKit.tuyaPanelKitStrings.gestureStart
@@ -35,7 +35,7 @@ trait StackNavigationHelpers extends StObject {
     * Turns out if we use an empty string, it doesn't show up in intelliSense.
     */
   /* protected */ @JSName("")
-  var _empty: js.UndefOr[A] = js.native
+  var _empty: js.UndefOr[C] = js.native
   
   /**
     * Check if dispatching back action will be handled by navigation.
@@ -79,7 +79,7 @@ trait StackNavigationHelpers extends StObject {
     /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/stack/types.StackNavigationEventMap */ transitionStart | transitionEnd | gestureStart | gestureEnd | gestureCancel, 
     String
   ] */](
-    options: `10`[EventName] & (/* import warning: importer.ImportType#apply Failed type conversion: tuya-panel-kit.tuya-panel-kit/@react-navigation/stack/types.StackNavigationEventMap[EventName]['canPreventDefault'] extends true ? {  canPreventDefault :true} : {} */ js.Any)
+    options: `9`[EventName] & (/* import warning: importer.ImportType#apply Failed type conversion: tuya-panel-kit.tuya-panel-kit/@react-navigation/stack/types.StackNavigationEventMap[EventName]['canPreventDefault'] extends true ? {  canPreventDefault :true} : {} */ js.Any)
   ): EventArg[
     EventName, 
     /* import warning: importer.ImportType#apply Failed type conversion: tuya-panel-kit.tuya-panel-kit/@react-navigation/stack/types.StackNavigationEventMap[EventName]['canPreventDefault'] */ js.Any, 
@@ -108,13 +108,13 @@ trait StackNavigationHelpers extends StObject {
   def navigate[RouteName /* <: /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase */ String */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type undefined extends ParamList[RouteName] ? [RouteName] | [RouteName, ParamList[RouteName]] : [RouteName, ParamList[RouteName]] is not an array type */ args: /* import warning: importer.ImportType#apply Failed type conversion: undefined extends tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase[RouteName] ? [RouteName] | [RouteName, tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase[RouteName]] : [RouteName, tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase[RouteName]] */ js.Any
   ): Unit = js.native
+  def navigate[RouteName /* <: /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase */ String */](route: KeyNameRouteName[RouteName]): Unit = js.native
   /**
     * Navigate to a route in current navigation tree.
     *
     * @param route Object with `key` or `name` for the route to navigate to, and a `params` object.
     */
-  def navigate[RouteName /* <: /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase */ String */](route: KeyParams[RouteName]): Unit = js.native
-  def navigate[RouteName /* <: /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase */ String */](route: NameRouteName[RouteName]): Unit = js.native
+  def navigate[RouteName /* <: /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase */ String */](route: KeyString[RouteName]): Unit = js.native
   
   /**
     * Pop a screen from the stack.

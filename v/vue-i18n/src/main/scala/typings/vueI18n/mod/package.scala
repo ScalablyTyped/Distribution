@@ -42,10 +42,10 @@ inline def VERSION: String = ^.asInstanceOf[js.Dynamic].selectDynamic("VERSION")
 inline def castToVueI18n(i18n: I18n[js.Object, js.Object, js.Object, Locale, Boolean]): VueI18nstringneverstringC = ^.asInstanceOf[js.Dynamic].applyDynamic("castToVueI18n")(i18n.asInstanceOf[js.Any]).asInstanceOf[VueI18nstringneverstringC]
 
 inline def createI18n[Legacy /* <: Boolean */, Options /* <: I18nOptions[
-Datetime, 
+Message, 
 Locale, 
 (ComposerOptions[
-  Datetime, 
+  Message, 
   Locale, 
   /* import warning: importer.ImportType#apply Failed type conversion: @intlify/core-base.@intlify/core-base.Locale extends {  messages :infer M} ? M : @intlify/core-base.@intlify/core-base.Locale extends string ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.Locale */ js.Any, 
   /* import warning: importer.ImportType#apply Failed type conversion: @intlify/core-base.@intlify/core-base.Locale extends {  datetimeFormats :infer D} ? D : @intlify/core-base.@intlify/core-base.Locale extends string ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.Locale */ js.Any, 
@@ -83,10 +83,10 @@ Locale,
     /* import warning: importer.ImportType#apply Failed type conversion: @intlify/core-base.@intlify/core-base.Locale extends {  numberFormats :infer N} ? N : @intlify/core-base.@intlify/core-base.Locale extends string ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.Locale */ js.Any
   ]
 ]) | (VueI18nOptions[
-  Datetime, 
+  Message, 
   Locale, 
   ComposerOptions[
-    Datetime, 
+    Message, 
     Locale, 
     /* import warning: importer.ImportType#apply Failed type conversion: @intlify/core-base.@intlify/core-base.Locale extends {  messages :infer M} ? M : @intlify/core-base.@intlify/core-base.Locale extends string ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.Locale */ js.Any, 
     /* import warning: importer.ImportType#apply Failed type conversion: @intlify/core-base.@intlify/core-base.Locale extends {  datetimeFormats :infer D} ? D : @intlify/core-base.@intlify/core-base.Locale extends string ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.Locale */ js.Any, 
@@ -126,10 +126,10 @@ Locale,
   ]
 ])] */, Messages, DateTimeFormats, NumberFormats, OptionLocale](options: Options): /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof options * / any['legacy'] extends true ? vue-i18n.vue-i18n.I18n<Messages, DateTimeFormats, NumberFormats, OptionLocale, true> : / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof options * / any['legacy'] extends false ? vue-i18n.vue-i18n.I18n<Messages, DateTimeFormats, NumberFormats, OptionLocale, false> : vue-i18n.vue-i18n.I18n<Messages, DateTimeFormats, NumberFormats, OptionLocale, Legacy> */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createI18n")(options.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof options * / any['legacy'] extends true ? vue-i18n.vue-i18n.I18n<Messages, DateTimeFormats, NumberFormats, OptionLocale, true> : / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof options * / any['legacy'] extends false ? vue-i18n.vue-i18n.I18n<Messages, DateTimeFormats, NumberFormats, OptionLocale, false> : vue-i18n.vue-i18n.I18n<Messages, DateTimeFormats, NumberFormats, OptionLocale, Legacy> */ js.Any]
 inline def createI18n[Legacy /* <: Boolean */, Options /* <: I18nOptions[
-Datetime, 
+Message, 
 Locale, 
 (ComposerOptions[
-  Datetime, 
+  Message, 
   Locale, 
   /* import warning: importer.ImportType#apply Failed type conversion: @intlify/core-base.@intlify/core-base.Locale extends {  messages :infer M} ? M : @intlify/core-base.@intlify/core-base.Locale extends string ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.Locale */ js.Any, 
   /* import warning: importer.ImportType#apply Failed type conversion: @intlify/core-base.@intlify/core-base.Locale extends {  datetimeFormats :infer D} ? D : @intlify/core-base.@intlify/core-base.Locale extends string ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.Locale */ js.Any, 
@@ -167,10 +167,10 @@ Locale,
     /* import warning: importer.ImportType#apply Failed type conversion: @intlify/core-base.@intlify/core-base.Locale extends {  numberFormats :infer N} ? N : @intlify/core-base.@intlify/core-base.Locale extends string ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.Locale */ js.Any
   ]
 ]) | (VueI18nOptions[
-  Datetime, 
+  Message, 
   Locale, 
   ComposerOptions[
-    Datetime, 
+    Message, 
     Locale, 
     /* import warning: importer.ImportType#apply Failed type conversion: @intlify/core-base.@intlify/core-base.Locale extends {  messages :infer M} ? M : @intlify/core-base.@intlify/core-base.Locale extends string ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.Locale */ js.Any, 
     /* import warning: importer.ImportType#apply Failed type conversion: @intlify/core-base.@intlify/core-base.Locale extends {  datetimeFormats :infer D} ? D : @intlify/core-base.@intlify/core-base.Locale extends string ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.Locale */ js.Any, 
@@ -332,10 +332,10 @@ LocaleParams[Locales, `en-US`],
 ])] */, Messages, DateTimeFormats, NumberFormats, OptionLocale](options: Options, LegacyVueI18n: Any): /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof options * / any['legacy'] extends true ? vue-i18n.vue-i18n.I18n<Messages, DateTimeFormats, NumberFormats, OptionLocale, true> : / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof options * / any['legacy'] extends false ? vue-i18n.vue-i18n.I18n<Messages, DateTimeFormats, NumberFormats, OptionLocale, false> : vue-i18n.vue-i18n.I18n<Messages, DateTimeFormats, NumberFormats, OptionLocale, Legacy> */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createI18n")(options.asInstanceOf[js.Any], LegacyVueI18n.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof options * / any['legacy'] extends true ? vue-i18n.vue-i18n.I18n<Messages, DateTimeFormats, NumberFormats, OptionLocale, true> : / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof options * / any['legacy'] extends false ? vue-i18n.vue-i18n.I18n<Messages, DateTimeFormats, NumberFormats, OptionLocale, false> : vue-i18n.vue-i18n.I18n<Messages, DateTimeFormats, NumberFormats, OptionLocale, Legacy> */ js.Any]
 
 inline def useI18n[Options /* <: UseI18nOptions[
-Datetime, 
+Message, 
 Locale, 
 ComposerOptions[
-  Datetime, 
+  Message, 
   Locale, 
   /* import warning: importer.ImportType#apply Failed type conversion: @intlify/core-base.@intlify/core-base.Locale extends {  messages :infer M} ? M : @intlify/core-base.@intlify/core-base.Locale extends string ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.Locale */ js.Any, 
   /* import warning: importer.ImportType#apply Failed type conversion: @intlify/core-base.@intlify/core-base.Locale extends {  datetimeFormats :infer D} ? D : @intlify/core-base.@intlify/core-base.Locale extends string ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.Locale */ js.Any, 
@@ -416,10 +416,10 @@ PickupLocales[
 ], 
 /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<Options['locale']> extends @intlify/core-base.@intlify/core-base.Locale ? [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<std.NonNullable<Options['messages']>>, keyof std.NonNullable<std.NonNullable<Options['messages']>>> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<std.NonNullable<Options['datetimeFormats']>>, keyof std.NonNullable<std.NonNullable<Options['datetimeFormats']>>> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<std.NonNullable<Options['numberFormats']>>, keyof std.NonNullable<std.NonNullable<Options['numberFormats']>>>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<std.NonNullable<Options['messages']>>, keyof std.NonNullable<std.NonNullable<Options['messages']>>> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<std.NonNullable<Options['datetimeFormats']>>, keyof std.NonNullable<std.NonNullable<Options['datetimeFormats']>>> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<std.NonNullable<Options['numberFormats']>>, keyof std.NonNullable<std.NonNullable<Options['numberFormats']>>> : std.NonNullable<Options['locale']> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<std.NonNullable<Options['messages']>>, keyof std.NonNullable<std.NonNullable<Options['messages']>>> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<std.NonNullable<Options['datetimeFormats']>>, keyof std.NonNullable<std.NonNullable<Options['datetimeFormats']>>> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<std.NonNullable<Options['numberFormats']>>, keyof std.NonNullable<std.NonNullable<Options['numberFormats']>>> */ js.Any]]
 inline def useI18n[Options /* <: UseI18nOptions[
-Datetime, 
+Message, 
 Locale, 
 ComposerOptions[
-  Datetime, 
+  Message, 
   Locale, 
   /* import warning: importer.ImportType#apply Failed type conversion: @intlify/core-base.@intlify/core-base.Locale extends {  messages :infer M} ? M : @intlify/core-base.@intlify/core-base.Locale extends string ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.Locale */ js.Any, 
   /* import warning: importer.ImportType#apply Failed type conversion: @intlify/core-base.@intlify/core-base.Locale extends {  datetimeFormats :infer D} ? D : @intlify/core-base.@intlify/core-base.Locale extends string ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.Locale */ js.Any, 
@@ -771,7 +771,7 @@ type DefineLocaleMessage = LocaleMessage[VueMessageType]
 
 type DefineNumberFormat = typings.intlifyCoreBase.mod.NumberFormat
 
-type I18nOptions[Schema /* <: Message */, Locales /* <: DatetimeFormats | String */, Options /* <: (ComposerOptions[
+type I18nOptions[Schema /* <: Datetime */, Locales /* <: DatetimeFormats | String */, Options /* <: (ComposerOptions[
 Schema, 
 Locales, 
 /* import warning: importer.ImportType#apply Failed type conversion: Locales extends {  messages :infer M} ? M : Locales extends string ? Locales : @intlify/core-base.@intlify/core-base.Locale */ js.Any, 
@@ -849,7 +849,7 @@ type TranslateResult = String
 
 type TranslationDirective[T] = ObjectDirective[T, Any]
 
-type UseI18nOptions[Schema /* <: Message */, Locales /* <: DatetimeFormats | String */, Options /* <: ComposerOptions[
+type UseI18nOptions[Schema /* <: Datetime */, Locales /* <: DatetimeFormats | String */, Options /* <: ComposerOptions[
 Schema, 
 Locales, 
 /* import warning: importer.ImportType#apply Failed type conversion: Locales extends {  messages :infer M} ? M : Locales extends string ? Locales : @intlify/core-base.@intlify/core-base.Locale */ js.Any, 

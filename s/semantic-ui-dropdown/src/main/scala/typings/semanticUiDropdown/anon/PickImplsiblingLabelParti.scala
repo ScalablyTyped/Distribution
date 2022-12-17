@@ -32,13 +32,13 @@ trait PickImplsiblingLabelParti
   
   var search: js.UndefOr[String] = js.undefined
   
-  var siblingLabel: String & js.UndefOr[String]
+  var siblingLabel: String
   
   var text: js.UndefOr[String] = js.undefined
 }
 object PickImplsiblingLabelParti {
   
-  inline def apply(siblingLabel: String & js.UndefOr[String]): PickImplsiblingLabelParti = {
+  inline def apply(siblingLabel: String): PickImplsiblingLabelParti = {
     val __obj = js.Dynamic.literal(siblingLabel = siblingLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplsiblingLabelParti]
   }
@@ -89,7 +89,7 @@ object PickImplsiblingLabelParti {
     
     inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     
-    inline def setSiblingLabel(value: String & js.UndefOr[String]): Self = StObject.set(x, "siblingLabel", value.asInstanceOf[js.Any])
+    inline def setSiblingLabel(value: String): Self = StObject.set(x, "siblingLabel", value.asInstanceOf[js.Any])
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

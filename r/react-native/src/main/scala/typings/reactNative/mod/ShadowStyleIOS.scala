@@ -1,6 +1,6 @@
 package typings.reactNative.mod
 
-import typings.reactNative.anon.Width
+import typings.reactNative.anon.Height
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ trait ShadowStyleIOS extends StObject {
   
   var shadowColor: js.UndefOr[ColorValue] = js.undefined
   
-  var shadowOffset: js.UndefOr[Width] = js.undefined
+  var shadowOffset: js.UndefOr[Height] = js.undefined
   
   var shadowOpacity: js.UndefOr[Double] = js.undefined
   
@@ -28,7 +28,7 @@ object ShadowStyleIOS {
     
     inline def setShadowColorUndefined: Self = StObject.set(x, "shadowColor", js.undefined)
     
-    inline def setShadowOffset(value: Width): Self = StObject.set(x, "shadowOffset", value.asInstanceOf[js.Any])
+    inline def setShadowOffset(value: Height): Self = StObject.set(x, "shadowOffset", value.asInstanceOf[js.Any])
     
     inline def setShadowOffsetUndefined: Self = StObject.set(x, "shadowOffset", js.undefined)
     

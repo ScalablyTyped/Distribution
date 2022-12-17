@@ -13,7 +13,7 @@ trait Account extends StObject {
   /** @example true */
   var has_multiple_single_files: js.UndefOr[Boolean] = js.undefined
   
-  var permissions: Actions
+  var permissions: Administration
   
   /**
     * Format: uri
@@ -42,7 +42,7 @@ object Account {
   
   inline def apply(
     account: Avatarurl,
-    permissions: Actions,
+    permissions: Administration,
     repositories_url: String,
     repository_selection: all | selected
   ): Account = {
@@ -58,7 +58,7 @@ object Account {
     
     inline def setHas_multiple_single_filesUndefined: Self = StObject.set(x, "has_multiple_single_files", js.undefined)
     
-    inline def setPermissions(value: Actions): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: Administration): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
     inline def setRepositories_url(value: String): Self = StObject.set(x, "repositories_url", value.asInstanceOf[js.Any])
     

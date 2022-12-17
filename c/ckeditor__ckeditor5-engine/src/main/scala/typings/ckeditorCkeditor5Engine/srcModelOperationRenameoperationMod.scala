@@ -1,7 +1,7 @@
 package typings.ckeditorCkeditor5Engine
 
 import typings.ckeditorCkeditor5Engine.anon.NewName
-import typings.ckeditorCkeditor5Engine.anon.`13`
+import typings.ckeditorCkeditor5Engine.anon.`12`
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.rename
 import typings.ckeditorCkeditor5Engine.srcModelOperationOperationMod.Operation
 import org.scalablytyped.runtime.StObject
@@ -82,7 +82,7 @@ object srcModelOperationRenameoperationMod {
       * Custom toJSON method to solve child-parent circular dependencies.
       */
     /* CompleteClass */
-    override def toJSON(): `13` = js.native
+    override def toJSON(): `12` = js.native
     
     /**
       * Operation type.
@@ -153,7 +153,7 @@ object srcModelOperationRenameoperationMod {
       newName: String,
       oldName: String,
       position: typings.ckeditorCkeditor5Engine.srcModelPositionMod.default,
-      toJSON: () => `13`
+      toJSON: () => `12`
     ): RenameOperation = {
       val __obj = js.Dynamic.literal(getReversed = js.Any.fromFunction0(getReversed), isDocumentOperation = isDocumentOperation.asInstanceOf[js.Any], newName = newName.asInstanceOf[js.Any], oldName = oldName.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), baseVersion = null, batch = null)
       __obj.updateDynamic("clone")(js.Any.fromFunction0(clone_))

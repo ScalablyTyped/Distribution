@@ -196,15 +196,14 @@ object distButtonsChipMod extends Shortcut {
     
     var tvParallaxProperties: js.UndefOr[TVParallaxProperties] = js.undefined
     
-    var `type`: (js.UndefOr[solid | clear | outline]) & (js.UndefOr[solid | outline])
+    var `type`: js.UndefOr[solid | clear | outline] = js.undefined
     
     var useForeground: js.UndefOr[Boolean] = js.undefined
   }
   object ChipProps {
     
-    inline def apply(`type`: (js.UndefOr[solid | clear | outline]) & (js.UndefOr[solid | outline])): ChipProps = {
+    inline def apply(): ChipProps = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChipProps]
     }
     
@@ -465,7 +464,9 @@ object distButtonsChipMod extends Shortcut {
       
       inline def setTvParallaxPropertiesUndefined: Self = StObject.set(x, "tvParallaxProperties", js.undefined)
       
-      inline def setType(value: (js.UndefOr[solid | clear | outline]) & (js.UndefOr[solid | outline])): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: solid | clear | outline): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
       inline def setUseForeground(value: Boolean): Self = StObject.set(x, "useForeground", value.asInstanceOf[js.Any])
       

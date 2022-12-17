@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ColumnName extends StObject {
   
-  var column: js.UndefOr[`31`] = js.undefined
+  var column: js.UndefOr[`30`] = js.undefined
   
   var name: js.UndefOr[TextProps] = js.undefined
   
@@ -22,7 +22,7 @@ object ColumnName {
   
   extension [Self <: ColumnName](x: Self) {
     
-    inline def setColumn(value: `31`): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: `30`): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
     

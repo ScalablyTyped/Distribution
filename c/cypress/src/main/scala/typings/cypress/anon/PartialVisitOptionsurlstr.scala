@@ -37,12 +37,12 @@ trait PartialVisitOptionsurlstr extends StObject {
   
   var timeout: js.UndefOr[Double] = js.undefined
   
-  var url: js.UndefOr[String] & String
+  var url: js.UndefOr[String] = js.undefined
 }
 object PartialVisitOptionsurlstr {
   
-  inline def apply(url: js.UndefOr[String] & String): PartialVisitOptionsurlstr = {
-    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+  inline def apply(): PartialVisitOptionsurlstr = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialVisitOptionsurlstr]
   }
   
@@ -96,6 +96,8 @@ object PartialVisitOptionsurlstr {
     
     inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    inline def setUrl(value: js.UndefOr[String] & String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

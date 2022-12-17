@@ -323,7 +323,7 @@ trait OmitVideospeedpositiondurAppendTo extends StObject {
       typings.tabris.global.tabris.widgets.Video, 
       set | typings.tabris.tabrisStrings.jsxAttributes
     ]
-  ]) & js.Object & `3`
+  ]) & Children
   
   var layoutData: LayoutDataValue
   
@@ -606,7 +606,7 @@ object OmitVideospeedpositiondurAppendTo {
     jsxAttributes: (JSXAttributes[
       typings.tabris.global.tabris.widgets.Video, 
       Omit[typings.tabris.global.tabris.widgets.Video, set | jsxAttributes]
-    ]) & js.Object & `3`,
+    ]) & Children,
     layoutData: LayoutDataValue,
     left: ConstraintValue,
     off: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Unit], /* context */ js.UndefOr[js.Object]) => typings.tabris.global.tabris.widgets.Video,
@@ -795,7 +795,7 @@ object OmitVideospeedpositiondurAppendTo {
       value: (JSXAttributes[
           typings.tabris.global.tabris.widgets.Video, 
           Omit[typings.tabris.global.tabris.widgets.Video, set | jsxAttributes]
-        ]) & js.Object & `3`
+        ]) & Children
     ): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     
     inline def setLayoutData(value: LayoutDataValue): Self = StObject.set(x, "layoutData", value.asInstanceOf[js.Any])

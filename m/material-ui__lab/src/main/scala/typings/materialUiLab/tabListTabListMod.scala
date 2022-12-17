@@ -44,15 +44,11 @@ object tabListTabListMod extends Shortcut {
     
     var defaultComponent: D
     
-    var props: P & (Omit[js.Object & Arialabelledby, value])
+    var props: P & (Omit[Arialabelledby, value])
   }
   object TabListTypeMap {
     
-    inline def apply[P, D /* <: ElementType[Any] */](
-      classKey: TabListClassKey,
-      defaultComponent: D,
-      props: P & (Omit[js.Object & Arialabelledby, value])
-    ): TabListTypeMap[P, D] = {
+    inline def apply[P, D /* <: ElementType[Any] */](classKey: TabListClassKey, defaultComponent: D, props: P & (Omit[Arialabelledby, value])): TabListTypeMap[P, D] = {
       val __obj = js.Dynamic.literal(classKey = classKey.asInstanceOf[js.Any], defaultComponent = defaultComponent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
       __obj.asInstanceOf[TabListTypeMap[P, D]]
     }
@@ -63,7 +59,7 @@ object tabListTabListMod extends Shortcut {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       
-      inline def setProps(value: P & (Omit[js.Object & Arialabelledby, value])): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: P & (Omit[Arialabelledby, value])): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     }
   }
   

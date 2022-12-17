@@ -15,13 +15,6 @@ object distMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("structured-headers/dist", JSImport.Default)
-  @js.native
-  open class default protected ()
-    extends typings.structuredHeaders.distParserMod.default {
-    def this(input: String) = this()
-  }
-  
   @JSImport("structured-headers/dist", "ByteSequence")
   @js.native
   open class ByteSequence protected ()

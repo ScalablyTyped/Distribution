@@ -3,7 +3,6 @@ package typings.luaparse
 import typings.luaparse.libAstMod.Identifier
 import typings.luaparse.libAstMod.Node
 import typings.luaparse.luaparseBooleans.`false`
-import typings.luaparse.luaparseBooleans.`true`
 import typings.luaparse.luaparseStrings.LuaJIT
 import typings.luaparse.luaparseStrings.`5Dot1`
 import typings.luaparse.luaparseStrings.`5Dot2`
@@ -172,13 +171,12 @@ object anon {
     var scope: js.UndefOr[Boolean] = js.undefined
     
     @JSName("wait")
-    var wait_FPartialOptionswaittrue: js.UndefOr[Boolean] & `true`
+    var wait_FPartialOptionswaittrue: js.UndefOr[Boolean] = js.undefined
   }
   object PartialOptionswaittrue {
     
-    inline def apply(wait_ : js.UndefOr[Boolean] & `true`): PartialOptionswaittrue = {
+    inline def apply(): PartialOptionswaittrue = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("wait")(wait_.asInstanceOf[js.Any])
       __obj.asInstanceOf[PartialOptionswaittrue]
     }
     
@@ -228,7 +226,9 @@ object anon {
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      inline def setWait_(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
+      inline def setWait_(value: Boolean): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
+      
+      inline def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
     }
   }
 }

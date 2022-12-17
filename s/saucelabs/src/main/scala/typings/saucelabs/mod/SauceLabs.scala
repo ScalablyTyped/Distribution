@@ -4,8 +4,8 @@ import typings.saucelabs.anon.All
 import typings.saucelabs.anon.AppId
 import typings.saucelabs.anon.Assets
 import typings.saucelabs.anon.AutoOnly
-import typings.saucelabs.anon.Completed
 import typings.saucelabs.anon.End
+import typings.saucelabs.anon.Errored
 import typings.saucelabs.anon.Files
 import typings.saucelabs.anon.Full
 import typings.saucelabs.anon.GroupId
@@ -250,7 +250,7 @@ trait SauceLabs extends StObject {
     * @param {number} offset - Starting numberOption
     */
   def getBuildsJobsV2(buildSource: vdc | rdc, buildId: String): js.Promise[BuildV2Job] = js.native
-  def getBuildsJobsV2(buildSource: vdc | rdc, buildId: String, options: Completed): js.Promise[BuildV2Job] = js.native
+  def getBuildsJobsV2(buildSource: vdc | rdc, buildId: String, options: Errored): js.Promise[BuildV2Job] = js.native
   
   /**
     * Get List of Builds (build_source can be vdc or rdc)

@@ -17,18 +17,20 @@ object anon {
       * The latter has the advantage that it can be immediately serialized to disk/sent over the network, and the generation of the string is performed outside the main NodeJS event loop.
       * This option is ignored by the tile plugin.
       */
-    var format: (js.UndefOr[`object` | json_buffer]) & json_buffer
+    var format: js.UndefOr[`object` | json_buffer] = js.undefined
   }
   object PluginConfigformatjsonbuf {
     
-    inline def apply(format: (js.UndefOr[`object` | json_buffer]) & json_buffer): PluginConfigformatjsonbuf = {
-      val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
+    inline def apply(): PluginConfigformatjsonbuf = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PluginConfigformatjsonbuf]
     }
     
     extension [Self <: PluginConfigformatjsonbuf](x: Self) {
       
-      inline def setFormat(value: (js.UndefOr[`object` | json_buffer]) & json_buffer): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: `object` | json_buffer): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     }
   }
 }

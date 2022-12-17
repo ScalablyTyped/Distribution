@@ -16,5 +16,5 @@ object distLibUtilsEnumMod {
   
   inline def hasAnyFlag(flags: Double, check: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasAnyFlag")(flags.asInstanceOf[js.Any], check.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def removeFlag[T /* <: Double */](flag: T, remove: T & js.Object): T = (^.asInstanceOf[js.Dynamic].applyDynamic("removeFlag")(flag.asInstanceOf[js.Any], remove.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def removeFlag[T /* <: Double */](flag: T, remove: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("removeFlag")(flag.asInstanceOf[js.Any], remove.asInstanceOf[js.Any])).asInstanceOf[T]
 }

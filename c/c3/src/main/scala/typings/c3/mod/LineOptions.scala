@@ -1,6 +1,6 @@
 package typings.c3.mod
 
-import typings.c3.anon.`4`
+import typings.c3.anon.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ trait LineOptions extends StObject {
     */
   var connectNull: js.UndefOr[Boolean] = js.undefined
   
-  var step: js.UndefOr[`4`] = js.undefined
+  var step: js.UndefOr[`3`] = js.undefined
 }
 object LineOptions {
   
@@ -29,7 +29,7 @@ object LineOptions {
     
     inline def setConnectNullUndefined: Self = StObject.set(x, "connectNull", js.undefined)
     
-    inline def setStep(value: `4`): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: `3`): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
   }

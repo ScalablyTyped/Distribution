@@ -120,7 +120,7 @@ object anon {
   
   trait Client extends StObject {
     
-    var Client: Name
+    var Client: Version
     
     var Environment: Browser
     
@@ -141,7 +141,7 @@ object anon {
   object Client {
     
     inline def apply(
-      Client: Name,
+      Client: Version,
       Environment: Browser,
       Error: ClassName,
       Request: Headers,
@@ -156,7 +156,7 @@ object anon {
     
     extension [Self <: Client](x: Self) {
       
-      inline def setClient(value: Name): Self = StObject.set(x, "Client", value.asInstanceOf[js.Any])
+      inline def setClient(value: Version): Self = StObject.set(x, "Client", value.asInstanceOf[js.Any])
       
       inline def setEnvironment(value: Browser): Self = StObject.set(x, "Environment", value.asInstanceOf[js.Any])
       
@@ -198,32 +198,6 @@ object anon {
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait DurationName extends StObject {
-    
-    var duration: Double
-    
-    var name: String
-    
-    var `type`: String
-  }
-  object DurationName {
-    
-    inline def apply(duration: Double, name: String, `type`: String): DurationName = {
-      val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[DurationName]
-    }
-    
-    extension [Self <: DurationName](x: Self) {
-      
-      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -358,22 +332,27 @@ object anon {
   
   trait Name extends StObject {
     
-    var Name: String
+    var duration: Double
     
-    var Version: String
+    var name: String
+    
+    var `type`: String
   }
   object Name {
     
-    inline def apply(Name: String, Version: String): Name = {
-      val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
+    inline def apply(duration: Double, name: String, `type`: String): Name = {
+      val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Name]
     }
     
     extension [Self <: Name](x: Self) {
       
-      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      inline def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -413,6 +392,27 @@ object anon {
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Version extends StObject {
+    
+    var Name: String
+    
+    var Version: String
+  }
+  object Version {
+    
+    inline def apply(Name: String, Version: String): Version = {
+      val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Version]
+    }
+    
+    extension [Self <: Version](x: Self) {
+      
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      
+      inline def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     }
   }
 }

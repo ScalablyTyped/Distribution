@@ -8,11 +8,11 @@ trait ParametersPathAlertnumberOwner extends StObject {
   
   var parameters: PathAlertnumberOwner
   
-  var responses: `200Content452`
+  var responses: `200Content213`
 }
 object ParametersPathAlertnumberOwner {
   
-  inline def apply(parameters: PathAlertnumberOwner, responses: `200Content452`): ParametersPathAlertnumberOwner = {
+  inline def apply(parameters: PathAlertnumberOwner, responses: `200Content213`): ParametersPathAlertnumberOwner = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathAlertnumberOwner]
   }
@@ -21,6 +21,6 @@ object ParametersPathAlertnumberOwner {
     
     inline def setParameters(value: PathAlertnumberOwner): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content452`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200Content213`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

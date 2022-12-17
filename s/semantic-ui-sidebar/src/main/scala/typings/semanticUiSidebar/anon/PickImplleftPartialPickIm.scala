@@ -13,7 +13,7 @@ trait PickImplleftPartialPickIm
   
   var bottom: js.UndefOr[String] = js.undefined
   
-  var left: String & js.UndefOr[String]
+  var left: String
   
   var right: js.UndefOr[String] = js.undefined
   
@@ -21,7 +21,7 @@ trait PickImplleftPartialPickIm
 }
 object PickImplleftPartialPickIm {
   
-  inline def apply(left: String & js.UndefOr[String]): PickImplleftPartialPickIm = {
+  inline def apply(left: String): PickImplleftPartialPickIm = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplleftPartialPickIm]
   }
@@ -32,7 +32,7 @@ object PickImplleftPartialPickIm {
     
     inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
-    inline def setLeft(value: String & js.UndefOr[String]): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     inline def setRight(value: String): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     

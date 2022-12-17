@@ -1,7 +1,6 @@
 package typings.mongodb.mod
 
 import typings.bson.mod.Document
-import typings.bson.mod.ObjectId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,5 +26,5 @@ open class CommandStartedEvent () extends StObject {
   
   var requestId: scala.Double = js.native
   
-  var serviceId: js.UndefOr[ObjectId] = js.native
+  var serviceId: js.UndefOr[typings.bson.mod.ObjectId] = js.native
 }

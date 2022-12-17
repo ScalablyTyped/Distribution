@@ -10,7 +10,7 @@ trait PickImplcategoryPartialPiCategory
   extends StObject
      with Param {
   
-  var category: String & js.UndefOr[String]
+  var category: String
   
   var prompt: js.UndefOr[String] = js.undefined
   
@@ -22,14 +22,14 @@ trait PickImplcategoryPartialPiCategory
 }
 object PickImplcategoryPartialPiCategory {
   
-  inline def apply(category: String & js.UndefOr[String]): PickImplcategoryPartialPiCategory = {
+  inline def apply(category: String): PickImplcategoryPartialPiCategory = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplcategoryPartialPiCategory]
   }
   
   extension [Self <: PickImplcategoryPartialPiCategory](x: Self) {
     
-    inline def setCategory(value: String & js.UndefOr[String]): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     inline def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
     

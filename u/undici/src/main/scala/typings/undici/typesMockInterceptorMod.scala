@@ -20,32 +20,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object typesMockInterceptorMod {
   
-  /** The scope associated with a mock dispatch. */
-  @JSImport("undici/types/mock-interceptor", "MockScope")
-  @js.native
-  open class MockScope[TData /* <: js.Object */] protected () extends StObject {
-    def this(mockDispatch: MockDispatch[TData, js.Error]) = this()
-    
-    /** Delay a reply by a set amount of time in ms. */
-    def delay(waitInMs: Double): MockScope[TData] = js.native
-    
-    /** Persist the defined mock data for the associated reply. It will return the defined mock data indefinitely. */
-    def persist(): MockScope[TData] = js.native
-    
-    /** Define a reply for a set amount of matching requests. */
-    def times(repeatTimes: Double): MockScope[TData] = js.native
-  }
-  
-  @js.native
-  trait Interceptable extends ^ {
-    
-    /** Intercepts any matching requests that use the same origin as this mock client. */
-    def intercept(options: Options): MockInterceptor = js.native
-  }
-  
   /** The interceptor for a Mock. */
+  @JSImport("undici/types/mock-interceptor", "MockInterceptor")
   @js.native
-  trait MockInterceptor extends StObject {
+  open class MockInterceptor protected () extends StObject {
+    def this(options: Options, mockDispatches: js.Array[MockDispatch[js.Object, js.Error]]) = this()
     
     /** Set default reply headers on the interceptor for subsequent mocked replies. */
     def defaultReplyHeaders(headers: IncomingHttpHeaders): MockInterceptor = js.native
@@ -280,5 +259,28 @@ object typesMockInterceptorMod {
         inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       }
     }
+  }
+  
+  /** The scope associated with a mock dispatch. */
+  @JSImport("undici/types/mock-interceptor", "MockScope")
+  @js.native
+  open class MockScope[TData /* <: js.Object */] protected () extends StObject {
+    def this(mockDispatch: MockDispatch[TData, js.Error]) = this()
+    
+    /** Delay a reply by a set amount of time in ms. */
+    def delay(waitInMs: Double): MockScope[TData] = js.native
+    
+    /** Persist the defined mock data for the associated reply. It will return the defined mock data indefinitely. */
+    def persist(): MockScope[TData] = js.native
+    
+    /** Define a reply for a set amount of matching requests. */
+    def times(repeatTimes: Double): MockScope[TData] = js.native
+  }
+  
+  @js.native
+  trait Interceptable extends ^ {
+    
+    /** Intercepts any matching requests that use the same origin as this mock client. */
+    def intercept(options: Options): MockInterceptor = js.native
   }
 }

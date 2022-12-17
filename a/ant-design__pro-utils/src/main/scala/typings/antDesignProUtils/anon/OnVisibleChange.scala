@@ -17,8 +17,8 @@ trait OnVisibleChange extends StObject {
 }
 object OnVisibleChange {
   
-  inline def apply(onOpenChange: Unit, onVisibleChange: Any, open: Unit, visible: NonNullable[js.UndefOr[Boolean]]): OnVisibleChange = {
-    val __obj = js.Dynamic.literal(onOpenChange = onOpenChange.asInstanceOf[js.Any], onVisibleChange = onVisibleChange.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
+  inline def apply(onOpenChange: Unit, onVisibleChange: Any, open: Unit): OnVisibleChange = {
+    val __obj = js.Dynamic.literal(onOpenChange = onOpenChange.asInstanceOf[js.Any], onVisibleChange = onVisibleChange.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnVisibleChange]
   }
   
@@ -31,5 +31,7 @@ object OnVisibleChange {
     inline def setOpen(value: Unit): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
     inline def setVisible(value: NonNullable[js.UndefOr[Boolean]]): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

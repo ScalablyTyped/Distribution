@@ -17,9 +17,9 @@ trait LegendLabelDatum[RawDatum] extends StObject {
   
   var formattedValue: js.UndefOr[String] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] & Boolean
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var id: (js.UndefOr[String | Double]) & (String | Double)
+  var id: js.UndefOr[String | Double] = js.undefined
   
   var index: js.UndefOr[Double] = js.undefined
   
@@ -29,8 +29,8 @@ trait LegendLabelDatum[RawDatum] extends StObject {
 }
 object LegendLabelDatum {
   
-  inline def apply[RawDatum](hidden: js.UndefOr[Boolean] & Boolean, id: (js.UndefOr[String | Double]) & (String | Double)): LegendLabelDatum[RawDatum] = {
-    val __obj = js.Dynamic.literal(hidden = hidden.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+  inline def apply[RawDatum](): LegendLabelDatum[RawDatum] = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LegendLabelDatum[RawDatum]]
   }
   
@@ -48,9 +48,13 @@ object LegendLabelDatum {
     
     inline def setFormattedValueUndefined: Self = StObject.set(x, "formattedValue", js.undefined)
     
-    inline def setHidden(value: js.UndefOr[Boolean] & Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
-    inline def setId(value: (js.UndefOr[String | Double]) & (String | Double)): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    
+    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

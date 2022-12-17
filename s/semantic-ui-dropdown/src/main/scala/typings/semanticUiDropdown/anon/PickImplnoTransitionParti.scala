@@ -18,11 +18,11 @@ trait PickImplnoTransitionParti
   
   var method: js.UndefOr[String] = js.undefined
   
-  var noTransition: String & js.UndefOr[String]
+  var noTransition: String
 }
 object PickImplnoTransitionParti {
   
-  inline def apply(noTransition: String & js.UndefOr[String]): PickImplnoTransitionParti = {
+  inline def apply(noTransition: String): PickImplnoTransitionParti = {
     val __obj = js.Dynamic.literal(noTransition = noTransition.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplnoTransitionParti]
   }
@@ -45,6 +45,6 @@ object PickImplnoTransitionParti {
     
     inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    inline def setNoTransition(value: String & js.UndefOr[String]): Self = StObject.set(x, "noTransition", value.asInstanceOf[js.Any])
+    inline def setNoTransition(value: String): Self = StObject.set(x, "noTransition", value.asInstanceOf[js.Any])
   }
 }

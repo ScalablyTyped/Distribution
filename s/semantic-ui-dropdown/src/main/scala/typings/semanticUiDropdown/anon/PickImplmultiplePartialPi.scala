@@ -34,7 +34,7 @@ trait PickImplmultiplePartialPi
   
   var message: js.UndefOr[String] = js.undefined
   
-  var multiple: String & js.UndefOr[String]
+  var multiple: String
   
   var placeholder: js.UndefOr[String] = js.undefined
   
@@ -50,7 +50,7 @@ trait PickImplmultiplePartialPi
 }
 object PickImplmultiplePartialPi {
   
-  inline def apply(multiple: String & js.UndefOr[String]): PickImplmultiplePartialPi = {
+  inline def apply(multiple: String): PickImplmultiplePartialPi = {
     val __obj = js.Dynamic.literal(multiple = multiple.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmultiplePartialPi]
   }
@@ -105,7 +105,7 @@ object PickImplmultiplePartialPi {
     
     inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    inline def setMultiple(value: String & js.UndefOr[String]): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+    inline def setMultiple(value: String): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
     inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     

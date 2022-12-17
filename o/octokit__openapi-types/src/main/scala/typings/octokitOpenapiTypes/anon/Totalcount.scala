@@ -6,7 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Totalcount extends StObject {
   
-  var runners: js.UndefOr[js.Array[Os]] = js.undefined
+  var runners: js.UndefOr[
+    js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['runner'] */ js.Any
+    ]
+  ] = js.undefined
   
   var total_count: js.UndefOr[Double] = js.undefined
 }
@@ -19,11 +23,17 @@ object Totalcount {
   
   extension [Self <: Totalcount](x: Self) {
     
-    inline def setRunners(value: js.Array[Os]): Self = StObject.set(x, "runners", value.asInstanceOf[js.Any])
+    inline def setRunners(
+      value: js.Array[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['runner'] */ js.Any
+        ]
+    ): Self = StObject.set(x, "runners", value.asInstanceOf[js.Any])
     
     inline def setRunnersUndefined: Self = StObject.set(x, "runners", js.undefined)
     
-    inline def setRunnersVarargs(value: Os*): Self = StObject.set(x, "runners", js.Array(value*))
+    inline def setRunnersVarargs(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['runner'] */ js.Any)*
+    ): Self = StObject.set(x, "runners", js.Array(value*))
     
     inline def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
     

@@ -12,11 +12,11 @@ trait PickImplembedPartialPickIActive
   
   var active: js.UndefOr[String] = js.undefined
   
-  var embed: String & js.UndefOr[String]
+  var embed: String
 }
 object PickImplembedPartialPickIActive {
   
-  inline def apply(embed: String & js.UndefOr[String]): PickImplembedPartialPickIActive = {
+  inline def apply(embed: String): PickImplembedPartialPickIActive = {
     val __obj = js.Dynamic.literal(embed = embed.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplembedPartialPickIActive]
   }
@@ -27,6 +27,6 @@ object PickImplembedPartialPickIActive {
     
     inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    inline def setEmbed(value: String & js.UndefOr[String]): Self = StObject.set(x, "embed", value.asInstanceOf[js.Any])
+    inline def setEmbed(value: String): Self = StObject.set(x, "embed", value.asInstanceOf[js.Any])
   }
 }

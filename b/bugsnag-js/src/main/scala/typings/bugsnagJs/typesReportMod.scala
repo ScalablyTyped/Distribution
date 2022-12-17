@@ -1,7 +1,7 @@
 package typings.bugsnagJs
 
 import typings.bugsnagJs.anon.Dictkey
-import typings.bugsnagJs.anon.ReleaseStage
+import typings.bugsnagJs.anon.Type
 import typings.bugsnagJs.anon.Url
 import typings.bugsnagJs.bugsnagJsStrings.error
 import typings.bugsnagJs.bugsnagJsStrings.info
@@ -45,13 +45,13 @@ object typesReportMod {
     
     var severity: String
     
-    var severityReason: Dictkey
+    var severityReason: Type
     
     var unhandled: Boolean
   }
   object IHandledState {
     
-    inline def apply(severity: String, severityReason: Dictkey, unhandled: Boolean): IHandledState = {
+    inline def apply(severity: String, severityReason: Type, unhandled: Boolean): IHandledState = {
       val __obj = js.Dynamic.literal(severity = severity.asInstanceOf[js.Any], severityReason = severityReason.asInstanceOf[js.Any], unhandled = unhandled.asInstanceOf[js.Any])
       __obj.asInstanceOf[IHandledState]
     }
@@ -60,7 +60,7 @@ object typesReportMod {
       
       inline def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
       
-      inline def setSeverityReason(value: Dictkey): Self = StObject.set(x, "severityReason", value.asInstanceOf[js.Any])
+      inline def setSeverityReason(value: Type): Self = StObject.set(x, "severityReason", value.asInstanceOf[js.Any])
       
       inline def setUnhandled(value: Boolean): Self = StObject.set(x, "unhandled", value.asInstanceOf[js.Any])
     }
@@ -118,7 +118,7 @@ object typesReportMod {
     
     var apiKey: String = js.native
     
-    var app: ReleaseStage = js.native
+    var app: Dictkey = js.native
     
     var breadcrumbs: js.Array[typings.bugsnagJs.typesBreadcrumbMod.default] = js.native
     

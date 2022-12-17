@@ -70,7 +70,7 @@ trait PickImplpromptPartialPick
   
   var performance: js.UndefOr[Boolean] = js.undefined
   
-  var prompt: PromptSettings & js.UndefOr[PromptSettings]
+  var prompt: PromptSettings
   
   var revalidate: js.UndefOr[Boolean] = js.undefined
   
@@ -92,7 +92,7 @@ trait PickImplpromptPartialPick
 }
 object PickImplpromptPartialPick {
   
-  inline def apply(prompt: PromptSettings & js.UndefOr[PromptSettings]): PickImplpromptPartialPick = {
+  inline def apply(prompt: PromptSettings): PickImplpromptPartialPick = {
     val __obj = js.Dynamic.literal(prompt = prompt.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplpromptPartialPick]
   }
@@ -180,7 +180,7 @@ object PickImplpromptPartialPick {
     
     inline def setPerformanceUndefined: Self = StObject.set(x, "performance", js.undefined)
     
-    inline def setPrompt(value: PromptSettings & js.UndefOr[PromptSettings]): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+    inline def setPrompt(value: PromptSettings): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
     
     inline def setRevalidate(value: Boolean): Self = StObject.set(x, "revalidate", value.asInstanceOf[js.Any])
     

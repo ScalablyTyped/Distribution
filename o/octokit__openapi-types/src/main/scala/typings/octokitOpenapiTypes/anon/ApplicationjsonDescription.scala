@@ -1,0 +1,24 @@
+package typings.octokitOpenapiTypes.anon
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait ApplicationjsonDescription extends StObject {
+  
+  @JSName("application/json")
+  var applicationSlashjson: Description
+}
+object ApplicationjsonDescription {
+  
+  inline def apply(applicationSlashjson: Description): ApplicationjsonDescription = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ApplicationjsonDescription]
+  }
+  
+  extension [Self <: ApplicationjsonDescription](x: Self) {
+    
+    inline def setApplicationSlashjson(value: Description): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+  }
+}

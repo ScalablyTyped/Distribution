@@ -193,7 +193,7 @@ trait NgCompilerHost extends StObject {
   @JSName("readFile")
   var readFile_Original: js.Function1[/* fileName */ String, js.UndefOr[String]] = js.native
   
-  var readResource: (js.UndefOr[js.Function1[/* fileName */ String, js.Promise[String] | String]]) & (js.UndefOr[js.Function1[/* fileName */ String, String | js.Promise[String]]]) = js.native
+  var readResource: js.UndefOr[js.Function1[/* fileName */ String, js.Promise[String] | String]] = js.native
   
   /**
     * Resolve a symbolic link.
@@ -216,7 +216,7 @@ trait NgCompilerHost extends StObject {
   /**
     * This method is a companion for 'resolveModuleNames' and is used to resolve 'types' references to actual type declaration files
     */
-  var resolveTypeReferenceDirectives: (js.UndefOr[
+  var resolveTypeReferenceDirectives: js.UndefOr[
     js.Function5[
       /* typeReferenceDirectiveNames */ js.Array[FileReference | String], 
       /* containingFile */ String, 
@@ -225,16 +225,7 @@ trait NgCompilerHost extends StObject {
       /* containingFileMode */ js.UndefOr[ESNext | CommonJS], 
       js.Array[js.UndefOr[ResolvedTypeReferenceDirective]]
     ]
-  ]) & (js.UndefOr[
-    js.Function5[
-      /* typeReferenceDirectiveNames */ js.Array[FileReference | String], 
-      /* containingFile */ String, 
-      /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
-      /* options */ CompilerOptions, 
-      /* containingFileMode */ js.UndefOr[CommonJS | ESNext], 
-      js.Array[js.UndefOr[ResolvedTypeReferenceDirective]]
-    ]
-  ]) = js.native
+  ] = js.native
   
   var resourceNameToFileName: js.UndefOr[
     js.Function3[

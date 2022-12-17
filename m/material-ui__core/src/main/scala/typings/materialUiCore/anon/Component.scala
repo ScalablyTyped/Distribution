@@ -5,24 +5,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Component[DefaultComponent /* <: ElementType[Any] */] extends StObject {
+trait Component[SubheaderTypographyComponent /* <: ElementType[Any] */] extends StObject {
   
-  /**
-    * The component used for the root node.
-    * Either a string to use a HTML element or a component.
-    */
-  var component: js.UndefOr[DefaultComponent] = js.undefined
+  var component: js.UndefOr[SubheaderTypographyComponent] = js.undefined
 }
 object Component {
   
-  inline def apply[DefaultComponent /* <: ElementType[Any] */](): Component[DefaultComponent] = {
+  inline def apply[SubheaderTypographyComponent /* <: ElementType[Any] */](): Component[SubheaderTypographyComponent] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[Component[DefaultComponent]]
+    __obj.asInstanceOf[Component[SubheaderTypographyComponent]]
   }
   
-  extension [Self <: Component[?], DefaultComponent /* <: ElementType[Any] */](x: Self & Component[DefaultComponent]) {
+  extension [Self <: Component[?], SubheaderTypographyComponent /* <: ElementType[Any] */](x: Self & Component[SubheaderTypographyComponent]) {
     
-    inline def setComponent(value: DefaultComponent): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: SubheaderTypographyComponent): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
     inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
   }

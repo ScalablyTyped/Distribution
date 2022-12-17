@@ -124,18 +124,43 @@ object anon {
     }
   }
   
-  trait I18n extends StObject {
+  trait I18n[N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */, TKPrefix] extends StObject {
     
     var i18n: typings.i18next.mod.i18n
+    
+    var ready: Boolean
+    
+    var t: TFunction[N, TKPrefix]
   }
   object I18n {
     
-    inline def apply(i18n: i18n): I18n = {
-      val __obj = js.Dynamic.literal(i18n = i18n.asInstanceOf[js.Any])
-      __obj.asInstanceOf[I18n]
+    inline def apply[N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */, TKPrefix](i18n: i18n, ready: Boolean, t: TFunction[N, TKPrefix]): I18n[N, TKPrefix] = {
+      val __obj = js.Dynamic.literal(i18n = i18n.asInstanceOf[js.Any], ready = ready.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any])
+      __obj.asInstanceOf[I18n[N, TKPrefix]]
     }
     
-    extension [Self <: I18n](x: Self) {
+    extension [Self <: I18n[?, ?], N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */, TKPrefix](x: Self & (I18n[N, TKPrefix])) {
+      
+      inline def setI18n(value: i18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
+      
+      inline def setReady(value: Boolean): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
+      
+      inline def setT(value: TFunction[N, TKPrefix]): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait I18nI18n extends StObject {
+    
+    var i18n: typings.i18next.mod.i18n
+  }
+  object I18nI18n {
+    
+    inline def apply(i18n: i18n): I18nI18n = {
+      val __obj = js.Dynamic.literal(i18n = i18n.asInstanceOf[js.Any])
+      __obj.asInstanceOf[I18nI18n]
+    }
+    
+    extension [Self <: I18nI18n](x: Self) {
       
       inline def setI18n(value: i18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
     }
@@ -226,31 +251,6 @@ object anon {
       inline def setI18n(value: i18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
       
       inline def setLng(value: String): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Ready[N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */, TKPrefix] extends StObject {
-    
-    var i18n: typings.i18next.mod.i18n
-    
-    var ready: Boolean
-    
-    var t: TFunction[N, TKPrefix]
-  }
-  object Ready {
-    
-    inline def apply[N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */, TKPrefix](i18n: i18n, ready: Boolean, t: TFunction[N, TKPrefix]): Ready[N, TKPrefix] = {
-      val __obj = js.Dynamic.literal(i18n = i18n.asInstanceOf[js.Any], ready = ready.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Ready[N, TKPrefix]]
-    }
-    
-    extension [Self <: Ready[?, ?], N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */, TKPrefix](x: Self & (Ready[N, TKPrefix])) {
-      
-      inline def setI18n(value: i18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
-      
-      inline def setReady(value: Boolean): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
-      
-      inline def setT(value: TFunction[N, TKPrefix]): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     }
   }
 }

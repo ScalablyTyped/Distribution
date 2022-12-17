@@ -110,13 +110,13 @@ object libEsmComponentsMultiSelectMultiSelectMod {
     var placeholder: js.UndefOr[String] = js.native
     
     /** Props to spread to `Popover`. Note that `content` cannot be changed. */
-    var popoverProps: js.UndefOr[PartialIPopoverProps & js.Object] = js.native
+    var popoverProps: js.UndefOr[PartialIPopoverProps] = js.native
     
     /** Controlled selected values. */
     var selectedItems: js.UndefOr[js.Array[T]] = js.native
     
     /** Props to spread to `TagInput`. Use `query` and `onQueryChange` to control the input. */
-    var tagInputProps: js.UndefOr[PartialTagInputProps & js.Object] = js.native
+    var tagInputProps: js.UndefOr[PartialTagInputProps] = js.native
     
     /** Custom renderer to transform an item into tag content. */
     def tagRenderer(item: T): ReactNode = js.native

@@ -9,18 +9,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined openpgp.openpgp.DecryptResult & {  data :std.Uint8Array | openpgp.openpgp.ReadableStream<std.Uint8Array> | openpgp.openpgp.NodeStream} */
 trait DecryptResultdataUint8Arr extends StObject {
   
-  var data: (String | (ReadableStream[String | js.typedarray.Uint8Array]) | NodeStream | js.typedarray.Uint8Array) & (js.typedarray.Uint8Array | ReadableStream[js.typedarray.Uint8Array] | NodeStream)
+  var data: String | (ReadableStream[String | js.typedarray.Uint8Array]) | NodeStream | js.typedarray.Uint8Array
   
   var filename: String
   
-  var signatures: js.Array[Keyid]
+  var signatures: js.Array[Valid]
 }
 object DecryptResultdataUint8Arr {
   
   inline def apply(
-    data: (String | (ReadableStream[String | js.typedarray.Uint8Array]) | NodeStream | js.typedarray.Uint8Array) & (js.typedarray.Uint8Array | ReadableStream[js.typedarray.Uint8Array] | NodeStream),
+    data: String | (ReadableStream[String | js.typedarray.Uint8Array]) | NodeStream | js.typedarray.Uint8Array,
     filename: String,
-    signatures: js.Array[Keyid]
+    signatures: js.Array[Valid]
   ): DecryptResultdataUint8Arr = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], signatures = signatures.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecryptResultdataUint8Arr]
@@ -29,13 +29,13 @@ object DecryptResultdataUint8Arr {
   extension [Self <: DecryptResultdataUint8Arr](x: Self) {
     
     inline def setData(
-      value: (String | (ReadableStream[String | js.typedarray.Uint8Array]) | NodeStream | js.typedarray.Uint8Array) & (js.typedarray.Uint8Array | ReadableStream[js.typedarray.Uint8Array] | NodeStream)
+      value: String | (ReadableStream[String | js.typedarray.Uint8Array]) | NodeStream | js.typedarray.Uint8Array
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    inline def setSignatures(value: js.Array[Keyid]): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
+    inline def setSignatures(value: js.Array[Valid]): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
     
-    inline def setSignaturesVarargs(value: Keyid*): Self = StObject.set(x, "signatures", js.Array(value*))
+    inline def setSignaturesVarargs(value: Valid*): Self = StObject.set(x, "signatures", js.Array(value*))
   }
 }

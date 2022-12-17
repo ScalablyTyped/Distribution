@@ -17,7 +17,6 @@ import typings.lodashDecorators.sharedMod.MemoizeConfig
 import typings.lodashDecorators.sharedMod.ThrottleOptions
 import typings.lodashDecorators.utilsMod.CompositeKeyWeakMap
 import typings.std.ClassDecorator
-import typings.std.MethodDecorator
 import typings.std.PropertyDecorator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -28,8 +27,6 @@ object mod {
   @JSImport("lodash-decorators", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
-  
-  inline def default(args: Any*): MethodDecorator & PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[MethodDecorator & PropertyDecorator]
   
   inline def AfterAll_(n: Double): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("AfterAll")(n.asInstanceOf[js.Any]).asInstanceOf[LodashDecorator]
   

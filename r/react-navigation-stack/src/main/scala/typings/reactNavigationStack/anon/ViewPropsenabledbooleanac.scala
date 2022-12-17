@@ -14,6 +14,7 @@ import typings.reactNative.mod.PointerEvent
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TVParallaxProperties
 import typings.reactNative.mod.ViewStyle
+import typings.reactNavigationStack.reactNavigationStackInts.`0`
 import typings.reactNavigationStack.reactNavigationStackInts.`1`
 import typings.reactNavigationStack.reactNavigationStackInts.`2`
 import typings.reactNavigationStack.reactNavigationStackStrings.`box-none`
@@ -111,9 +112,9 @@ trait ViewPropsenabledbooleanac extends StObject {
     */
   var accessible: js.UndefOr[Boolean] = js.undefined
   
-  var active: typings.reactNavigationStack.reactNavigationStackInts.`0` | `1` | `2` | (AnimatedInterpolation[Double | String])
+  var active: `0` | `1` | `2` | (AnimatedInterpolation[Double | String])
   
-  var children: js.UndefOr[ReactNode] & ReactNode
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   /**
     * Views that are only used to layout their children or otherwise don't draw anything
@@ -440,10 +441,7 @@ trait ViewPropsenabledbooleanac extends StObject {
 }
 object ViewPropsenabledbooleanac {
   
-  inline def apply(
-    active: typings.reactNavigationStack.reactNavigationStackInts.`0` | `1` | `2` | (AnimatedInterpolation[Double | String]),
-    enabled: Boolean
-  ): ViewPropsenabledbooleanac = {
+  inline def apply(active: `0` | `1` | `2` | (AnimatedInterpolation[Double | String]), enabled: Boolean): ViewPropsenabledbooleanac = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewPropsenabledbooleanac]
   }
@@ -506,11 +504,9 @@ object ViewPropsenabledbooleanac {
     
     inline def setAccessibleUndefined: Self = StObject.set(x, "accessible", js.undefined)
     
-    inline def setActive(
-      value: typings.reactNavigationStack.reactNavigationStackInts.`0` | `1` | `2` | (AnimatedInterpolation[Double | String])
-    ): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: `0` | `1` | `2` | (AnimatedInterpolation[Double | String])): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    inline def setChildren(value: js.UndefOr[ReactNode] & ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     

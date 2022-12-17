@@ -8,13 +8,13 @@ trait ErrorUndefined extends StObject {
   
   var error: Unit
   
-  var id: Double
+  var id: Unit
   
-  var jsonrpc: String
+  var jsonrpc: Unit
 }
 object ErrorUndefined {
   
-  inline def apply(error: Unit, id: Double, jsonrpc: String): ErrorUndefined = {
+  inline def apply(error: Unit, id: Unit, jsonrpc: Unit): ErrorUndefined = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], jsonrpc = jsonrpc.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorUndefined]
   }
@@ -23,8 +23,8 @@ object ErrorUndefined {
     
     inline def setError(value: Unit): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Unit): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setJsonrpc(value: String): Self = StObject.set(x, "jsonrpc", value.asInstanceOf[js.Any])
+    inline def setJsonrpc(value: Unit): Self = StObject.set(x, "jsonrpc", value.asInstanceOf[js.Any])
   }
 }

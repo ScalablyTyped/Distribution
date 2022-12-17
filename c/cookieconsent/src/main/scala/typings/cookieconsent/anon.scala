@@ -1,7 +1,6 @@
 package typings.cookieconsent
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.cookieconsent.cookieconsentInts.`0`
 import typings.cookieconsent.mod.Service
 import typings.cookieconsent.mod.ServiceDefinition
 import typings.cookieconsent.mod.ServiceResponse
@@ -11,6 +10,25 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
+  
+  trait `0` extends StObject {
+    
+    var code: js.UndefOr[String] = js.undefined
+  }
+  object `0` {
+    
+    inline def apply(): `0` = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[`0`]
+    }
+    
+    extension [Self <: `0`](x: Self) {
+      
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    }
+  }
   
   trait Allow extends StObject {
     
@@ -87,7 +105,9 @@ object anon {
   
   trait Background extends StObject {
     
-    var background: js.UndefOr[typings.csstype.mod.Property.Background[String | `0`]] = js.undefined
+    var background: js.UndefOr[
+        typings.csstype.mod.Property.Background[String | typings.cookieconsent.cookieconsentInts.`0`]
+      ] = js.undefined
     
     var link: js.UndefOr[Color] = js.undefined
     
@@ -102,7 +122,9 @@ object anon {
     
     extension [Self <: Background](x: Self) {
       
-      inline def setBackground(value: typings.csstype.mod.Property.Background[String | `0`]): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(
+        value: typings.csstype.mod.Property.Background[String | typings.cookieconsent.cookieconsentInts.`0`]
+      ): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
       inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
@@ -118,7 +140,9 @@ object anon {
   
   trait Border extends StObject {
     
-    var background: js.UndefOr[typings.csstype.mod.Property.Background[String | `0`]] = js.undefined
+    var background: js.UndefOr[
+        typings.csstype.mod.Property.Background[String | typings.cookieconsent.cookieconsentInts.`0`]
+      ] = js.undefined
     
     var border: js.UndefOr[Color] = js.undefined
     
@@ -133,7 +157,9 @@ object anon {
     
     extension [Self <: Border](x: Self) {
       
-      inline def setBackground(value: typings.csstype.mod.Property.Background[String | `0`]): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(
+        value: typings.csstype.mod.Property.Background[String | typings.cookieconsent.cookieconsentInts.`0`]
+      ): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
       inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
@@ -276,35 +302,16 @@ object anon {
   
   trait Code extends StObject {
     
-    var code: js.UndefOr[String] = js.undefined
+    var code: String
   }
   object Code {
     
-    inline def apply(): Code = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(code: String): Code = {
+      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
       __obj.asInstanceOf[Code]
     }
     
     extension [Self <: Code](x: Self) {
-      
-      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
-      
-      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
-    }
-  }
-  
-  trait CodeString extends StObject {
-    
-    var code: String
-  }
-  object CodeString {
-    
-    inline def apply(code: String): CodeString = {
-      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
-      __obj.asInstanceOf[CodeString]
-    }
-    
-    extension [Self <: CodeString](x: Self) {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }

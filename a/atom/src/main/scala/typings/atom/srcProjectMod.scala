@@ -1,10 +1,10 @@
 package typings.atom
 
+import typings.atom.mod.ConfigValues
 import typings.atom.mod.Directory
 import typings.atom.mod.Disposable
 import typings.atom.mod.GitRepository
 import typings.atom.mod.TextBuffer
-import typings.atom.srcConfigSchemaMod.ConfigValues
 import typings.atom.srcOtherTypesMod.FilesystemChangeEvent
 import typings.atom.srcPathWatcherMod.PathWatcher
 import org.scalablytyped.runtime.StObject

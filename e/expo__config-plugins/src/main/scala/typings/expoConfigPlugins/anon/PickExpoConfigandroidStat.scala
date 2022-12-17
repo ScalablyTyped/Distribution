@@ -1,6 +1,6 @@
 package typings.expoConfigPlugins.anon
 
-import typings.expoConfigTypes.anon.BarStyle
+import typings.expoConfigTypes.anon.BackgroundColor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Pick<@expo/config-types.@expo/config-types.ExpoConfig, 'androidStatusBar'> */
 trait PickExpoConfigandroidStat extends StObject {
   
-  var androidStatusBar: js.UndefOr[BarStyle] = js.undefined
+  var androidStatusBar: js.UndefOr[BackgroundColor] = js.undefined
 }
 object PickExpoConfigandroidStat {
   
@@ -19,7 +19,7 @@ object PickExpoConfigandroidStat {
   
   extension [Self <: PickExpoConfigandroidStat](x: Self) {
     
-    inline def setAndroidStatusBar(value: BarStyle): Self = StObject.set(x, "androidStatusBar", value.asInstanceOf[js.Any])
+    inline def setAndroidStatusBar(value: BackgroundColor): Self = StObject.set(x, "androidStatusBar", value.asInstanceOf[js.Any])
     
     inline def setAndroidStatusBarUndefined: Self = StObject.set(x, "androidStatusBar", js.undefined)
   }

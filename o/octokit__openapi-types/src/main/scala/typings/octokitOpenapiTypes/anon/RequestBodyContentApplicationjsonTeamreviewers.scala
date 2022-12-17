@@ -10,14 +10,14 @@ trait RequestBodyContentApplicationjsonTeamreviewers extends StObject {
   
   var requestBody: ContentApplicationjsonTeamreviewers
   
-  var responses: `201ContentApplicationjsonHead`
+  var responses: `200Content308`
 }
 object RequestBodyContentApplicationjsonTeamreviewers {
   
   inline def apply(
     parameters: PathPullnumber,
     requestBody: ContentApplicationjsonTeamreviewers,
-    responses: `201ContentApplicationjsonHead`
+    responses: `200Content308`
   ): RequestBodyContentApplicationjsonTeamreviewers = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyContentApplicationjsonTeamreviewers]
@@ -29,6 +29,6 @@ object RequestBodyContentApplicationjsonTeamreviewers {
     
     inline def setRequestBody(value: ContentApplicationjsonTeamreviewers): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `201ContentApplicationjsonHead`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200Content308`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

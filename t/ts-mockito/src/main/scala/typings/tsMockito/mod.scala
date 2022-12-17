@@ -151,7 +151,7 @@ object mod {
     inline def `match`(expectedValue: js.RegExp): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("match")(expectedValue.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     inline def mock[T](): T = ^.asInstanceOf[js.Dynamic].applyDynamic("mock")().asInstanceOf[T]
-    inline def mock[T](clazz: js.Function & js.Object): T = ^.asInstanceOf[js.Dynamic].applyDynamic("mock")(clazz.asInstanceOf[js.Any]).asInstanceOf[T]
+    inline def mock[T](clazz: js.Function): T = ^.asInstanceOf[js.Dynamic].applyDynamic("mock")(clazz.asInstanceOf[js.Any]).asInstanceOf[T]
     inline def mock[T](clazz: Instantiable1[/* args (repeated) */ Any, T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("mock")(clazz.asInstanceOf[js.Any]).asInstanceOf[T]
     inline def mock[T](clazz: Any): T = ^.asInstanceOf[js.Dynamic].applyDynamic("mock")(clazz.asInstanceOf[js.Any]).asInstanceOf[T]
     @JSImport("ts-mockito", "default.mock")
@@ -284,7 +284,7 @@ object mod {
   inline def `match`(expectedValue: js.RegExp): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("match")(expectedValue.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def mock[T](): T = ^.asInstanceOf[js.Dynamic].applyDynamic("mock")().asInstanceOf[T]
-  inline def mock[T](clazz: js.Function & js.Object): T = ^.asInstanceOf[js.Dynamic].applyDynamic("mock")(clazz.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def mock[T](clazz: js.Function): T = ^.asInstanceOf[js.Dynamic].applyDynamic("mock")(clazz.asInstanceOf[js.Any]).asInstanceOf[T]
   inline def mock[T](clazz: Instantiable1[/* args (repeated) */ Any, T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("mock")(clazz.asInstanceOf[js.Any]).asInstanceOf[T]
   inline def mock[T](clazz: Any): T = ^.asInstanceOf[js.Dynamic].applyDynamic("mock")(clazz.asInstanceOf[js.Any]).asInstanceOf[T]
   

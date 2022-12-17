@@ -11,7 +11,7 @@ trait PickImplbottomPartialPick
      with Param
      with typings.semanticUiSidebar.SemanticUI.Sidebar.DefaultTransitionSettings.MobileSettings.Param {
   
-  var bottom: String & js.UndefOr[String]
+  var bottom: String
   
   var left: js.UndefOr[String] = js.undefined
   
@@ -21,14 +21,14 @@ trait PickImplbottomPartialPick
 }
 object PickImplbottomPartialPick {
   
-  inline def apply(bottom: String & js.UndefOr[String]): PickImplbottomPartialPick = {
+  inline def apply(bottom: String): PickImplbottomPartialPick = {
     val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplbottomPartialPick]
   }
   
   extension [Self <: PickImplbottomPartialPick](x: Self) {
     
-    inline def setBottom(value: String & js.UndefOr[String]): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    inline def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
     inline def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     

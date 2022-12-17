@@ -296,7 +296,7 @@ object anon {
       });
       ```
       */
-    var afterResponse: js.UndefOr[js.Array[AfterResponseHook]] & js.Array[AfterResponseHook]
+    var afterResponse: js.UndefOr[js.Array[AfterResponseHook]] = js.undefined
     
     /**
       This hook enables you to modify the `HTTPError` right before it is thrown. The hook function receives a `HTTPError` as an argument and should return an instance of `HTTPError`.
@@ -320,14 +320,14 @@ object anon {
       });
       ```
       */
-    var beforeError: js.UndefOr[js.Array[BeforeErrorHook]] & js.Array[BeforeErrorHook]
+    var beforeError: js.UndefOr[js.Array[BeforeErrorHook]] = js.undefined
     
     /**
       This hook enables you to modify the request right before it is sent. Ky will make no further changes to the request after this. The hook function receives normalized input and options as arguments. You could, forf example, modiy `options.headers` here.
       A [`Response`](https://developer.mozilla.org/en-US/docs/Web/API/Response) can be returned from this hook to completely avoid making a HTTP request. This can be used to mock a request, check an internal cache, etc. An **important** consideration when returning a `Response` from this hook is that all the following hooks will be skipped, so **ensure you only return a `Response` from the last hook**.
       @default []
       */
-    var beforeRequest: js.UndefOr[js.Array[BeforeRequestHook]] & js.Array[BeforeRequestHook]
+    var beforeRequest: js.UndefOr[js.Array[BeforeRequestHook]] = js.undefined
     
     /**
       This hook enables you to modify the request right before retry. Ky will make no further changes to the request after this. The hook function receives an object with the normalized request and options, an error instance, and the retry count. You could, for example, modify `request.headers` here.
@@ -349,29 +349,40 @@ object anon {
       ```
       @default []
       */
-    var beforeRetry: js.UndefOr[js.Array[BeforeRetryHook]] & js.Array[BeforeRetryHook]
+    var beforeRetry: js.UndefOr[js.Array[BeforeRetryHook]] = js.undefined
   }
   object RequiredHookskeyofHooks {
     
-    inline def apply(
-      afterResponse: js.UndefOr[js.Array[AfterResponseHook]] & js.Array[AfterResponseHook],
-      beforeError: js.UndefOr[js.Array[BeforeErrorHook]] & js.Array[BeforeErrorHook],
-      beforeRequest: js.UndefOr[js.Array[BeforeRequestHook]] & js.Array[BeforeRequestHook],
-      beforeRetry: js.UndefOr[js.Array[BeforeRetryHook]] & js.Array[BeforeRetryHook]
-    ): RequiredHookskeyofHooks = {
-      val __obj = js.Dynamic.literal(afterResponse = afterResponse.asInstanceOf[js.Any], beforeError = beforeError.asInstanceOf[js.Any], beforeRequest = beforeRequest.asInstanceOf[js.Any], beforeRetry = beforeRetry.asInstanceOf[js.Any])
+    inline def apply(): RequiredHookskeyofHooks = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RequiredHookskeyofHooks]
     }
     
     extension [Self <: RequiredHookskeyofHooks](x: Self) {
       
-      inline def setAfterResponse(value: js.UndefOr[js.Array[AfterResponseHook]] & js.Array[AfterResponseHook]): Self = StObject.set(x, "afterResponse", value.asInstanceOf[js.Any])
+      inline def setAfterResponse(value: js.Array[AfterResponseHook]): Self = StObject.set(x, "afterResponse", value.asInstanceOf[js.Any])
       
-      inline def setBeforeError(value: js.UndefOr[js.Array[BeforeErrorHook]] & js.Array[BeforeErrorHook]): Self = StObject.set(x, "beforeError", value.asInstanceOf[js.Any])
+      inline def setAfterResponseUndefined: Self = StObject.set(x, "afterResponse", js.undefined)
       
-      inline def setBeforeRequest(value: js.UndefOr[js.Array[BeforeRequestHook]] & js.Array[BeforeRequestHook]): Self = StObject.set(x, "beforeRequest", value.asInstanceOf[js.Any])
+      inline def setAfterResponseVarargs(value: AfterResponseHook*): Self = StObject.set(x, "afterResponse", js.Array(value*))
       
-      inline def setBeforeRetry(value: js.UndefOr[js.Array[BeforeRetryHook]] & js.Array[BeforeRetryHook]): Self = StObject.set(x, "beforeRetry", value.asInstanceOf[js.Any])
+      inline def setBeforeError(value: js.Array[BeforeErrorHook]): Self = StObject.set(x, "beforeError", value.asInstanceOf[js.Any])
+      
+      inline def setBeforeErrorUndefined: Self = StObject.set(x, "beforeError", js.undefined)
+      
+      inline def setBeforeErrorVarargs(value: BeforeErrorHook*): Self = StObject.set(x, "beforeError", js.Array(value*))
+      
+      inline def setBeforeRequest(value: js.Array[BeforeRequestHook]): Self = StObject.set(x, "beforeRequest", value.asInstanceOf[js.Any])
+      
+      inline def setBeforeRequestUndefined: Self = StObject.set(x, "beforeRequest", js.undefined)
+      
+      inline def setBeforeRequestVarargs(value: BeforeRequestHook*): Self = StObject.set(x, "beforeRequest", js.Array(value*))
+      
+      inline def setBeforeRetry(value: js.Array[BeforeRetryHook]): Self = StObject.set(x, "beforeRetry", value.asInstanceOf[js.Any])
+      
+      inline def setBeforeRetryUndefined: Self = StObject.set(x, "beforeRetry", js.undefined)
+      
+      inline def setBeforeRetryVarargs(value: BeforeRetryHook*): Self = StObject.set(x, "beforeRetry", js.Array(value*))
     }
   }
   
@@ -428,56 +439,66 @@ object anon {
       The HTTP status codes allowed to retry with a `Retry-After` header.
       @default [413, 429, 503]
       */
-    var afterStatusCodes: js.UndefOr[js.Array[Double]] & js.Array[Double]
+    var afterStatusCodes: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       The number of times to retry failed requests.
       @default 2
       */
-    var limit: js.UndefOr[Double] & Double
+    var limit: js.UndefOr[Double] = js.undefined
     
     /**
       If the `Retry-After` header is greater than `maxRetryAfter`, the request will be canceled.
       @default Infinity
       */
-    var maxRetryAfter: js.UndefOr[Double] & Double
+    var maxRetryAfter: js.UndefOr[Double] = js.undefined
     
     /**
       The HTTP methods allowed to retry.
       @default ['get', 'put', 'head', 'delete', 'options', 'trace']
       */
-    var methods: js.UndefOr[js.Array[String]] & js.Array[String]
+    var methods: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       The HTTP status codes allowed to retry.
       @default [408, 413, 429, 500, 502, 503, 504]
       */
-    var statusCodes: js.UndefOr[js.Array[Double]] & js.Array[Double]
+    var statusCodes: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object RequiredRetryOptionskeyof {
     
-    inline def apply(
-      afterStatusCodes: js.UndefOr[js.Array[Double]] & js.Array[Double],
-      limit: js.UndefOr[Double] & Double,
-      maxRetryAfter: js.UndefOr[Double] & Double,
-      methods: js.UndefOr[js.Array[String]] & js.Array[String],
-      statusCodes: js.UndefOr[js.Array[Double]] & js.Array[Double]
-    ): RequiredRetryOptionskeyof = {
-      val __obj = js.Dynamic.literal(afterStatusCodes = afterStatusCodes.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], maxRetryAfter = maxRetryAfter.asInstanceOf[js.Any], methods = methods.asInstanceOf[js.Any], statusCodes = statusCodes.asInstanceOf[js.Any])
+    inline def apply(): RequiredRetryOptionskeyof = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RequiredRetryOptionskeyof]
     }
     
     extension [Self <: RequiredRetryOptionskeyof](x: Self) {
       
-      inline def setAfterStatusCodes(value: js.UndefOr[js.Array[Double]] & js.Array[Double]): Self = StObject.set(x, "afterStatusCodes", value.asInstanceOf[js.Any])
+      inline def setAfterStatusCodes(value: js.Array[Double]): Self = StObject.set(x, "afterStatusCodes", value.asInstanceOf[js.Any])
       
-      inline def setLimit(value: js.UndefOr[Double] & Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setAfterStatusCodesUndefined: Self = StObject.set(x, "afterStatusCodes", js.undefined)
       
-      inline def setMaxRetryAfter(value: js.UndefOr[Double] & Double): Self = StObject.set(x, "maxRetryAfter", value.asInstanceOf[js.Any])
+      inline def setAfterStatusCodesVarargs(value: Double*): Self = StObject.set(x, "afterStatusCodes", js.Array(value*))
       
-      inline def setMethods(value: js.UndefOr[js.Array[String]] & js.Array[String]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      inline def setStatusCodes(value: js.UndefOr[js.Array[Double]] & js.Array[Double]): Self = StObject.set(x, "statusCodes", value.asInstanceOf[js.Any])
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      
+      inline def setMaxRetryAfter(value: Double): Self = StObject.set(x, "maxRetryAfter", value.asInstanceOf[js.Any])
+      
+      inline def setMaxRetryAfterUndefined: Self = StObject.set(x, "maxRetryAfter", js.undefined)
+      
+      inline def setMethods(value: js.Array[String]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      
+      inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
+      
+      inline def setMethodsVarargs(value: String*): Self = StObject.set(x, "methods", js.Array(value*))
+      
+      inline def setStatusCodes(value: js.Array[Double]): Self = StObject.set(x, "statusCodes", value.asInstanceOf[js.Any])
+      
+      inline def setStatusCodesUndefined: Self = StObject.set(x, "statusCodes", js.undefined)
+      
+      inline def setStatusCodesVarargs(value: Double*): Self = StObject.set(x, "statusCodes", js.Array(value*))
     }
   }
   

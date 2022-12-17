@@ -1,7 +1,7 @@
 package typings.awsLambda.triggerS3EventNotificationMod
 
+import typings.awsLambda.anon.EtagKey
 import typings.awsLambda.anon.NameString
-import typings.awsLambda.anon.Versionid
 import typings.awsLambda.awsLambdaStrings.`Delete Marker Created`
 import typings.awsLambda.awsLambdaStrings.`Permanently Deleted`
 import org.scalablytyped.runtime.StObject
@@ -18,7 +18,7 @@ object S3ObjectDeletedNotificationEventDetail {
   inline def S3ObjectDeletedNotificationEventDeleteObjectDetail(
     bucket: NameString,
     `deletion-type`: (`Permanently Deleted`) | (`Delete Marker Created`),
-    `object`: Versionid,
+    `object`: EtagKey,
     `request-id`: String,
     requester: String,
     `source-ip-address`: String
@@ -34,7 +34,7 @@ object S3ObjectDeletedNotificationEventDetail {
   inline def S3ObjectDeletedNotificationEventLifecycleExpirationDetail(
     bucket: NameString,
     `deletion-type`: (`Permanently Deleted`) | (`Delete Marker Created`),
-    `object`: Versionid,
+    `object`: EtagKey,
     `request-id`: String,
     requester: String
   ): typings.awsLambda.triggerS3EventNotificationMod.S3ObjectDeletedNotificationEventLifecycleExpirationDetail = {

@@ -8,7 +8,6 @@ import typings.cookieclicker.Game.StocksMinigame
 import typings.cookieclicker.________COOKIECLICKER_TYPES_HACK_DOESNT_EXIST.Music.Track
 import typings.cookieclicker.________COOKIECLICKER_TYPES_HACK_DOESNT_EXIST.Steam.Mod
 import typings.cookieclicker.________COOKIECLICKER_TYPES_HACK_DOESNT_EXIST.Steam.SendCallback
-import typings.cookieclicker.cookieclickerInts.`8`
 import typings.cookieclicker.cookieclickerStrings.`2d`
 import typings.cookieclicker.cookieclickerStrings.`object`
 import typings.cookieclicker.cookieclickerStrings.`var`
@@ -3205,7 +3204,7 @@ object anon {
     
     /** Gets or sets the height of a canvas element on a document. */
     /* standard dom */
-    var height: Double & `8` = js.native
+    var height: Double = js.native
     
     /* standard dom */
     var hidden: Boolean = js.native
@@ -6187,7 +6186,7 @@ object anon {
     
     /** Gets or sets the width of a canvas element on a document. */
     /* standard dom */
-    var width: Double & `8` = js.native
+    var width: Double = js.native
   }
   
   trait Language extends StObject {

@@ -31,7 +31,7 @@ trait PickImpllimitValuesPartia
   
   var label: js.UndefOr[percent | ratio] = js.undefined
   
-  var limitValues: Boolean & js.UndefOr[Boolean]
+  var limitValues: Boolean
   
   var metadata: js.UndefOr[MetadataSettings] = js.undefined
   
@@ -81,7 +81,7 @@ trait PickImpllimitValuesPartia
 }
 object PickImpllimitValuesPartia {
   
-  inline def apply(limitValues: Boolean & js.UndefOr[Boolean]): PickImpllimitValuesPartia = {
+  inline def apply(limitValues: Boolean): PickImpllimitValuesPartia = {
     val __obj = js.Dynamic.literal(limitValues = limitValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpllimitValuesPartia]
   }
@@ -108,7 +108,7 @@ object PickImpllimitValuesPartia {
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    inline def setLimitValues(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "limitValues", value.asInstanceOf[js.Any])
+    inline def setLimitValues(value: Boolean): Self = StObject.set(x, "limitValues", value.asInstanceOf[js.Any])
     
     inline def setMetadata(value: MetadataSettings): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

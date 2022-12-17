@@ -11,9 +11,7 @@ object meshesGroundMeshMod {
   
   @JSImport("babylonjs/Meshes/groundMesh", "GroundMesh")
   @js.native
-  open class GroundMesh protected ()
-    extends StObject
-       with Mesh {
+  open class GroundMesh protected () extends Mesh {
     def this(name: String) = this()
     def this(name: String, scene: Scene) = this()
     
@@ -53,12 +51,6 @@ object meshesGroundMeshMod {
     var generateOctree: Boolean = js.native
     
     /**
-      * "GroundMesh"
-      * @returns "GroundMesh"
-      */
-    def getClassName(): String = js.native
-    
-    /**
       * Returns a height (y) value in the World system :
       * the ground altitude at the coordinates (x, z) expressed in the World system.
       * @param x x coordinate
@@ -96,12 +88,6 @@ object meshesGroundMeshMod {
       */
     def optimize(chunksCount: Double): Unit = js.native
     def optimize(chunksCount: Double, octreeBlocksSize: Double): Unit = js.native
-    
-    /**
-      * Serializes this ground mesh
-      * @param serializationObject object to write serialization to
-      */
-    def serialize(serializationObject: Any): Unit = js.native
     
     /**
       * The minimum of x and y subdivisions

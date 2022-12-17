@@ -251,113 +251,107 @@ object DimmerSettings {
   trait Param extends StObject
   object Param {
     
-    inline def PickImplclassNamePartialP(className: ClassNameSettings & js.UndefOr[ClassNameSettings]): typings.semanticUiDimmer.anon.PickImplclassNamePartialP = {
+    inline def PickImplclassNamePartialP(className: ClassNameSettings): typings.semanticUiDimmer.anon.PickImplclassNamePartialP = {
       val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDimmer.anon.PickImplclassNamePartialP]
     }
     
-    inline def PickImplclosablePartialPi(closable: (auto | Boolean) & (js.UndefOr[auto | Boolean])): typings.semanticUiDimmer.anon.PickImplclosablePartialPi = {
+    inline def PickImplclosablePartialPi(closable: auto | Boolean): typings.semanticUiDimmer.anon.PickImplclosablePartialPi = {
       val __obj = js.Dynamic.literal(closable = closable.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDimmer.anon.PickImplclosablePartialPi]
     }
     
-    inline def PickImpldebugPartialPickI(debug: Boolean & js.UndefOr[Boolean]): typings.semanticUiDimmer.anon.PickImpldebugPartialPickI = {
+    inline def PickImpldebugPartialPickI(debug: Boolean): typings.semanticUiDimmer.anon.PickImpldebugPartialPickI = {
       val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDimmer.anon.PickImpldebugPartialPickI]
     }
     
-    inline def PickImpldimmerNamePartial(dimmerName: (`false` | String) & (js.UndefOr[`false` | String])): typings.semanticUiDimmer.anon.PickImpldimmerNamePartial = {
+    inline def PickImpldimmerNamePartial(dimmerName: `false` | String): typings.semanticUiDimmer.anon.PickImpldimmerNamePartial = {
       val __obj = js.Dynamic.literal(dimmerName = dimmerName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDimmer.anon.PickImpldimmerNamePartial]
     }
     
-    inline def PickImpldurationPartialPi(duration: (Double | DurationSettings) & (js.UndefOr[Double | DurationSettings])): typings.semanticUiDimmer.anon.PickImpldurationPartialPi = {
+    inline def PickImpldurationPartialPi(duration: Double | DurationSettings): typings.semanticUiDimmer.anon.PickImpldurationPartialPi = {
       val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDimmer.anon.PickImpldurationPartialPi]
     }
     
-    inline def PickImplerrorPartialPickI(error: ErrorSettings & js.UndefOr[ErrorSettings]): typings.semanticUiDimmer.anon.PickImplerrorPartialPickI = {
+    inline def PickImplerrorPartialPickI(error: ErrorSettings): typings.semanticUiDimmer.anon.PickImplerrorPartialPickI = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDimmer.anon.PickImplerrorPartialPickI]
     }
     
-    inline def PickImplnamePartialPickIm(name: String & js.UndefOr[String]): typings.semanticUiDimmer.anon.PickImplnamePartialPickIm = {
+    inline def PickImplnamePartialPickIm(name: String): typings.semanticUiDimmer.anon.PickImplnamePartialPickIm = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDimmer.anon.PickImplnamePartialPickIm]
     }
     
-    inline def PickImplnamespacePartialP(namespace: String & js.UndefOr[String]): typings.semanticUiDimmer.anon.PickImplnamespacePartialP = {
+    inline def PickImplnamespacePartialP(namespace: String): typings.semanticUiDimmer.anon.PickImplnamespacePartialP = {
       val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDimmer.anon.PickImplnamespacePartialP]
     }
     
-    inline def PickImplonChangePartialPi(
-      onChange: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-    ): typings.semanticUiDimmer.anon.PickImplonChangePartialPi = {
+    inline def PickImplonChangePartialPi(onChange: js.ThisFunction0[/* this */ JQuery, Unit]): typings.semanticUiDimmer.anon.PickImplonChangePartialPi = {
       val __obj = js.Dynamic.literal(onChange = onChange.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDimmer.anon.PickImplonChangePartialPi]
     }
     
-    inline def PickImplonHidePartialPick(
-      onHide: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-    ): typings.semanticUiDimmer.anon.PickImplonHidePartialPick = {
+    inline def PickImplonHidePartialPick(onHide: js.ThisFunction0[/* this */ JQuery, Unit]): typings.semanticUiDimmer.anon.PickImplonHidePartialPick = {
       val __obj = js.Dynamic.literal(onHide = onHide.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDimmer.anon.PickImplonHidePartialPick]
     }
     
-    inline def PickImplonPartialPickImpl(on: (`false` | hover | click) & (js.UndefOr[`false` | hover | click])): typings.semanticUiDimmer.anon.PickImplonPartialPickImpl = {
+    inline def PickImplonPartialPickImpl(on: `false` | hover | click): typings.semanticUiDimmer.anon.PickImplonPartialPickImpl = {
       val __obj = js.Dynamic.literal(on = on.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDimmer.anon.PickImplonPartialPickImpl]
     }
     
-    inline def PickImplonShowPartialPick(
-      onShow: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-    ): typings.semanticUiDimmer.anon.PickImplonShowPartialPick = {
+    inline def PickImplonShowPartialPick(onShow: js.ThisFunction0[/* this */ JQuery, Unit]): typings.semanticUiDimmer.anon.PickImplonShowPartialPick = {
       val __obj = js.Dynamic.literal(onShow = onShow.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDimmer.anon.PickImplonShowPartialPick]
     }
     
-    inline def PickImplopacityPartialPic(opacity: (auto | Double) & (js.UndefOr[auto | Double])): typings.semanticUiDimmer.anon.PickImplopacityPartialPic = {
+    inline def PickImplopacityPartialPic(opacity: auto | Double): typings.semanticUiDimmer.anon.PickImplopacityPartialPic = {
       val __obj = js.Dynamic.literal(opacity = opacity.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDimmer.anon.PickImplopacityPartialPic]
     }
     
-    inline def PickImplperformancePartia(performance: Boolean & js.UndefOr[Boolean]): typings.semanticUiDimmer.anon.PickImplperformancePartia = {
+    inline def PickImplperformancePartia(performance: Boolean): typings.semanticUiDimmer.anon.PickImplperformancePartia = {
       val __obj = js.Dynamic.literal(performance = performance.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDimmer.anon.PickImplperformancePartia]
     }
     
-    inline def PickImplselectorPartialPi(selector: SelectorSettings & js.UndefOr[SelectorSettings]): typings.semanticUiDimmer.anon.PickImplselectorPartialPi = {
+    inline def PickImplselectorPartialPi(selector: SelectorSettings): typings.semanticUiDimmer.anon.PickImplselectorPartialPi = {
       val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDimmer.anon.PickImplselectorPartialPi]
     }
     
-    inline def PickImplsilentPartialPick(silent: Boolean & js.UndefOr[Boolean]): typings.semanticUiDimmer.anon.PickImplsilentPartialPick = {
+    inline def PickImplsilentPartialPick(silent: Boolean): typings.semanticUiDimmer.anon.PickImplsilentPartialPick = {
       val __obj = js.Dynamic.literal(silent = silent.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDimmer.anon.PickImplsilentPartialPick]
     }
     
-    inline def PickImpltemplatePartialPi(template: TemplateSettings & js.UndefOr[TemplateSettings]): typings.semanticUiDimmer.anon.PickImpltemplatePartialPi = {
+    inline def PickImpltemplatePartialPi(template: TemplateSettings): typings.semanticUiDimmer.anon.PickImpltemplatePartialPi = {
       val __obj = js.Dynamic.literal(template = template.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDimmer.anon.PickImpltemplatePartialPi]
     }
     
-    inline def PickImpltransitionPartial(transition: String & js.UndefOr[String]): typings.semanticUiDimmer.anon.PickImpltransitionPartial = {
+    inline def PickImpltransitionPartial(transition: String): typings.semanticUiDimmer.anon.PickImpltransitionPartial = {
       val __obj = js.Dynamic.literal(transition = transition.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDimmer.anon.PickImpltransitionPartial]
     }
     
-    inline def PickImpluseCSSPartialPick(useCSS: Boolean & js.UndefOr[Boolean]): typings.semanticUiDimmer.anon.PickImpluseCSSPartialPick = {
+    inline def PickImpluseCSSPartialPick(useCSS: Boolean): typings.semanticUiDimmer.anon.PickImpluseCSSPartialPick = {
       val __obj = js.Dynamic.literal(useCSS = useCSS.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDimmer.anon.PickImpluseCSSPartialPick]
     }
     
-    inline def PickImplvariationPartialP(variation: (`false` | String) & (js.UndefOr[`false` | String])): typings.semanticUiDimmer.anon.PickImplvariationPartialP = {
+    inline def PickImplvariationPartialP(variation: `false` | String): typings.semanticUiDimmer.anon.PickImplvariationPartialP = {
       val __obj = js.Dynamic.literal(variation = variation.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDimmer.anon.PickImplvariationPartialP]
     }
     
-    inline def PickImplverbosePartialPic(verbose: Boolean & js.UndefOr[Boolean]): typings.semanticUiDimmer.anon.PickImplverbosePartialPic = {
+    inline def PickImplverbosePartialPic(verbose: Boolean): typings.semanticUiDimmer.anon.PickImplverbosePartialPic = {
       val __obj = js.Dynamic.literal(verbose = verbose.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.semanticUiDimmer.anon.PickImplverbosePartialPic]
     }

@@ -1,6 +1,5 @@
 package typings.schematicsAngular.anon
 
-import typings.schematicsAngular.schematicsAngularBooleans.`true`
 import typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.Identifier
 import typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.Modifier
 import typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.ModuleBlock
@@ -88,7 +87,7 @@ trait ImportEqualsDeclarationre
   def getWidth(): Double = js.native
   def getWidth(sourceFile: SourceFileLike): Double = js.native
   
-  val isTypeOnly: Boolean & `true` = js.native
+  val isTypeOnly: Boolean = js.native
   
   val kind: ImportEqualsDeclaration = js.native
   

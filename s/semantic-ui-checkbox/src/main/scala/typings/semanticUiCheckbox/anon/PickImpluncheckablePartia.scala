@@ -60,13 +60,13 @@ trait PickImpluncheckablePartia
   
   var silent: js.UndefOr[Boolean] = js.undefined
   
-  var uncheckable: (auto | Boolean) & (js.UndefOr[auto | Boolean])
+  var uncheckable: auto | Boolean
   
   var verbose: js.UndefOr[Boolean] = js.undefined
 }
 object PickImpluncheckablePartia {
   
-  inline def apply(uncheckable: (auto | Boolean) & (js.UndefOr[auto | Boolean])): PickImpluncheckablePartia = {
+  inline def apply(uncheckable: auto | Boolean): PickImpluncheckablePartia = {
     val __obj = js.Dynamic.literal(uncheckable = uncheckable.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpluncheckablePartia]
   }
@@ -161,7 +161,7 @@ object PickImpluncheckablePartia {
     
     inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     
-    inline def setUncheckable(value: (auto | Boolean) & (js.UndefOr[auto | Boolean])): Self = StObject.set(x, "uncheckable", value.asInstanceOf[js.Any])
+    inline def setUncheckable(value: auto | Boolean): Self = StObject.set(x, "uncheckable", value.asInstanceOf[js.Any])
     
     inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     

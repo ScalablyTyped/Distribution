@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.Instantiable4
 import typings.babylonjs.anon.PartialISkeletonViewerOpt
 import typings.babylonjs.anon.TypeofAxesViewer
 import typings.babylonjs.anon.TypeofSkeletonViewer
-import typings.babylonjs.meshesMeshMod.Mesh
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -54,7 +53,7 @@ object Debug {
   def BoneAxesViewer: Instantiable4[
     /* scene */ typings.babylonjs.sceneMod.Scene, 
     /* bone */ typings.babylonjs.bonesBoneMod.Bone, 
-    /* mesh */ Mesh, 
+    /* mesh */ typings.babylonjs.meshesMeshMod.Mesh, 
     /* scaleLines */ js.UndefOr[Double], 
     typings.babylonjs.indexMod.BoneAxesViewer
   ] = js.native
@@ -71,11 +70,15 @@ object Debug {
       * @param mesh defines the target mesh
       * @param scaleLines defines a scaling factor for line length (1 by default)
       */
-    def this(scene: typings.babylonjs.sceneMod.Scene, bone: typings.babylonjs.bonesBoneMod.Bone, mesh: Mesh) = this()
     def this(
       scene: typings.babylonjs.sceneMod.Scene,
       bone: typings.babylonjs.bonesBoneMod.Bone,
-      mesh: Mesh,
+      mesh: typings.babylonjs.meshesMeshMod.Mesh
+    ) = this()
+    def this(
+      scene: typings.babylonjs.sceneMod.Scene,
+      bone: typings.babylonjs.bonesBoneMod.Bone,
+      mesh: typings.babylonjs.meshesMeshMod.Mesh,
       scaleLines: Double
     ) = this()
   }
@@ -84,7 +87,7 @@ object Debug {
     x: Instantiable4[
       /* scene */ typings.babylonjs.sceneMod.Scene, 
       /* bone */ typings.babylonjs.bonesBoneMod.Bone, 
-      /* mesh */ Mesh, 
+      /* mesh */ typings.babylonjs.meshesMeshMod.Mesh, 
       /* scaleLines */ js.UndefOr[Double], 
       typings.babylonjs.indexMod.BoneAxesViewer
     ]

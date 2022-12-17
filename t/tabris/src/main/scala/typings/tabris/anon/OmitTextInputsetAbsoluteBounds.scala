@@ -378,7 +378,7 @@ trait OmitTextInputsetAbsoluteBounds extends StObject {
       typings.tabris.global.tabris.widgets.TextInput, 
       set | typings.tabris.tabrisStrings.jsxAttributes
     ]
-  ]) & `3`
+  ]) & Children
   
   var keepFocus: Boolean
   
@@ -697,7 +697,7 @@ object OmitTextInputsetAbsoluteBounds {
     jsxAttributes: (JSXAttributes[
       typings.tabris.global.tabris.widgets.TextInput, 
       Omit[typings.tabris.global.tabris.widgets.TextInput, set | jsxAttributes]
-    ]) & `3`,
+    ]) & Children,
     keepFocus: Boolean,
     keyboard: ascii | decimal | default | email | number | numbersAndPunctuation | phone | url,
     keyboardAppearanceMode: never | ontouch | onfocus,
@@ -923,7 +923,7 @@ object OmitTextInputsetAbsoluteBounds {
       value: (JSXAttributes[
           typings.tabris.global.tabris.widgets.TextInput, 
           Omit[typings.tabris.global.tabris.widgets.TextInput, set | jsxAttributes]
-        ]) & `3`
+        ]) & Children
     ): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     
     inline def setKeepFocus(value: Boolean): Self = StObject.set(x, "keepFocus", value.asInstanceOf[js.Any])

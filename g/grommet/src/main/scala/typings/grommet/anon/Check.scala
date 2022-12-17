@@ -29,7 +29,7 @@ trait Check extends StObject {
   
   var icons: js.UndefOr[Checked] = js.undefined
   
-  var label: js.UndefOr[`14`] = js.undefined
+  var label: js.UndefOr[`11`] = js.undefined
   
   var pad: js.UndefOr[PadType] = js.undefined
   
@@ -80,7 +80,7 @@ object Check {
     
     inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
-    inline def setLabel(value: `14`): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: `11`): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     

@@ -15,7 +15,7 @@ trait EncryptOptionsarmorfalsed extends StObject {
   /**
     * (optional) if the return values should be ascii armored or the message/signature objects
     */
-  var armor: js.UndefOr[Boolean] & `false`
+  var armor: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (optional) which compression algorithm to compress the message with, defaults to what is specified in config
@@ -30,7 +30,7 @@ trait EncryptOptionsarmorfalsed extends StObject {
   /**
     * (optional) if the signature should be detached (if true, signature will be added to returned object)
     */
-  var detached: js.UndefOr[Boolean] & js.UndefOr[`false`]
+  var detached: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (optional) array of user IDs to sign with, one per key in `privateKeys`, e.g. [ { name:'Steve Sender', email:'steve@openpgp.org' }]
@@ -89,18 +89,16 @@ trait EncryptOptionsarmorfalsed extends StObject {
 }
 object EncryptOptionsarmorfalsed {
   
-  inline def apply(
-    armor: js.UndefOr[Boolean] & `false`,
-    detached: js.UndefOr[Boolean] & js.UndefOr[`false`],
-    message: typings.openpgp.mod.message.Message
-  ): EncryptOptionsarmorfalsed = {
-    val __obj = js.Dynamic.literal(armor = armor.asInstanceOf[js.Any], detached = detached.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+  inline def apply(message: typings.openpgp.mod.message.Message): EncryptOptionsarmorfalsed = {
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptOptionsarmorfalsed]
   }
   
   extension [Self <: EncryptOptionsarmorfalsed](x: Self) {
     
-    inline def setArmor(value: js.UndefOr[Boolean] & `false`): Self = StObject.set(x, "armor", value.asInstanceOf[js.Any])
+    inline def setArmor(value: Boolean): Self = StObject.set(x, "armor", value.asInstanceOf[js.Any])
+    
+    inline def setArmorUndefined: Self = StObject.set(x, "armor", js.undefined)
     
     inline def setCompression(value: compression): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     
@@ -110,7 +108,9 @@ object EncryptOptionsarmorfalsed {
     
     inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    inline def setDetached(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
+    inline def setDetached(value: Boolean): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
+    
+    inline def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
     
     inline def setFromUserIds(value: js.Array[UserID]): Self = StObject.set(x, "fromUserIds", value.asInstanceOf[js.Any])
     

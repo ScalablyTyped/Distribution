@@ -2,9 +2,9 @@ package typings.linq
 
 import typings.linq.anon.Dictx
 import typings.linq.anon.DictxLength
-import typings.linq.anon.DictxNumberT
 import typings.linq.anon.DictxNumberTInner
 import typings.linq.anon.DictxNumberTResult
+import typings.linq.anon.DictxNumberU
 import typings.linq.anon.Key
 import typings.linq.anon.Length
 import typings.linq.anon.Value
@@ -60,9 +60,9 @@ object mod {
     inline def from(obj: Double): IEnumerable[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(obj.asInstanceOf[js.Any]).asInstanceOf[IEnumerable[Double]]
     inline def from[T](obj: js.Array[T]): IEnumerable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(obj.asInstanceOf[js.Any]).asInstanceOf[IEnumerable[T]]
     inline def from[T](obj: js.Iterator[T]): IEnumerable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(obj.asInstanceOf[js.Any]).asInstanceOf[IEnumerable[T]]
-    inline def from[T](obj: DictxNumberT[T]): IEnumerable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(obj.asInstanceOf[js.Any]).asInstanceOf[IEnumerable[T]]
+    inline def from[T](obj: Dictx[T]): IEnumerable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(obj.asInstanceOf[js.Any]).asInstanceOf[IEnumerable[T]]
     inline def from[T](obj: IEnumerable[T]): IEnumerable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(obj.asInstanceOf[js.Any]).asInstanceOf[IEnumerable[T]]
-    inline def from[K /* <: PropertyKey */, T](obj: Record[K, T]): IEnumerable[Value[K, T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(obj.asInstanceOf[js.Any]).asInstanceOf[IEnumerable[Value[K, T]]]
+    inline def from[K /* <: PropertyKey */, T](obj: Record[K, T]): IEnumerable[Key[K, T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(obj.asInstanceOf[js.Any]).asInstanceOf[IEnumerable[Key[K, T]]]
     
     inline def generate[T](func: js.Function0[T]): IEnumerable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(func.asInstanceOf[js.Any]).asInstanceOf[IEnumerable[T]]
     inline def generate[T](func: js.Function0[T], count: Double): IEnumerable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(func.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[IEnumerable[T]]
@@ -118,7 +118,7 @@ object mod {
       
       def set(key: TKey, value: TValue): Boolean
       
-      def toEnumerable(): IEnumerable[Key[TKey, TValue]]
+      def toEnumerable(): IEnumerable[Value[TKey, TValue]]
     }
     object IDictionary {
       
@@ -130,7 +130,7 @@ object mod {
         get: TKey => TValue,
         remove: TKey => Unit,
         set: (TKey, TValue) => Boolean,
-        toEnumerable: () => IEnumerable[Key[TKey, TValue]]
+        toEnumerable: () => IEnumerable[Value[TKey, TValue]]
       ): IDictionary[TKey, TValue] = {
         val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), clear = js.Any.fromFunction0(clear), contains = js.Any.fromFunction1(contains), count = js.Any.fromFunction0(count), get = js.Any.fromFunction1(get), remove = js.Any.fromFunction1(remove), set = js.Any.fromFunction2(set), toEnumerable = js.Any.fromFunction0(toEnumerable))
         __obj.asInstanceOf[IDictionary[TKey, TValue]]
@@ -152,7 +152,7 @@ object mod {
         
         inline def setSet(value: (TKey, TValue) => Boolean): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
         
-        inline def setToEnumerable(value: () => IEnumerable[Key[TKey, TValue]]): Self = StObject.set(x, "toEnumerable", js.Any.fromFunction0(value))
+        inline def setToEnumerable(value: () => IEnumerable[Value[TKey, TValue]]): Self = StObject.set(x, "toEnumerable", js.Any.fromFunction0(value))
       }
     }
     
@@ -180,7 +180,7 @@ object mod {
       def all(predicate: js.Function1[/* element */ T, Boolean]): Boolean = js.native
       
       def alternate(alternateSequence: js.Array[T]): IEnumerable[T] = js.native
-      def alternate(alternateSequence: DictxNumberT[T]): IEnumerable[T] = js.native
+      def alternate(alternateSequence: Dictx[T]): IEnumerable[T] = js.native
       def alternate(alternateSequence: IEnumerable[T]): IEnumerable[T] = js.native
       def alternate(alternateValue: T): IEnumerable[T] = js.native
       
@@ -201,7 +201,7 @@ object mod {
       
       def choose(selector: js.Function2[/* element */ T, /* index */ Double, T]): IEnumerable[T] = js.native
       
-      def concat(sequences: (js.Array[T] | IEnumerable[T] | DictxNumberT[T])*): IEnumerable[T] = js.native
+      def concat(sequences: (js.Array[T] | IEnumerable[T] | Dictx[T])*): IEnumerable[T] = js.native
       
       def contains(value: T): Boolean = js.native
       def contains[TCompare](value: T, compareSelector: js.Function1[/* element */ T, TCompare]): Boolean = js.native
@@ -228,10 +228,10 @@ object mod {
       def elementAtOrDefault(index: Double, defaultValue: T): js.UndefOr[T] = js.native
       
       def except(second: js.Array[T]): IEnumerable[T] = js.native
-      def except(second: DictxNumberT[T]): IEnumerable[T] = js.native
+      def except(second: Dictx[T]): IEnumerable[T] = js.native
       def except(second: IEnumerable[T]): IEnumerable[T] = js.native
       def except[TCompare](second: js.Array[T], compareSelector: js.Function1[/* element */ T, TCompare]): IEnumerable[T] = js.native
-      def except[TCompare](second: DictxNumberT[T], compareSelector: js.Function1[/* element */ T, TCompare]): IEnumerable[T] = js.native
+      def except[TCompare](second: Dictx[T], compareSelector: js.Function1[/* element */ T, TCompare]): IEnumerable[T] = js.native
       def except[TCompare](second: IEnumerable[T], compareSelector: js.Function1[/* element */ T, TCompare]): IEnumerable[T] = js.native
       
       def finallyAction(finallyAction: js.Function0[Unit]): IEnumerable[T] = js.native
@@ -313,14 +313,14 @@ object mod {
       def indexOf(item: T): Double = js.native
       def indexOf(predicate: js.Function2[/* element */ T, /* index */ Double, Boolean]): Double = js.native
       
-      def insert(index: Double, second: DictxNumberT[T]): IEnumerable[T] = js.native
+      def insert(index: Double, second: Dictx[T]): IEnumerable[T] = js.native
       def insert(index: Double, second: IEnumerable[T]): IEnumerable[T] = js.native
       
       def intersect(second: js.Array[T]): IEnumerable[T] = js.native
-      def intersect(second: DictxNumberT[T]): IEnumerable[T] = js.native
+      def intersect(second: Dictx[T]): IEnumerable[T] = js.native
       def intersect(second: IEnumerable[T]): IEnumerable[T] = js.native
       def intersect[TCompare](second: js.Array[T], compareSelector: js.Function1[/* element */ T, TCompare]): IEnumerable[T] = js.native
-      def intersect[TCompare](second: DictxNumberT[T], compareSelector: js.Function1[/* element */ T, TCompare]): IEnumerable[T] = js.native
+      def intersect[TCompare](second: Dictx[T], compareSelector: js.Function1[/* element */ T, TCompare]): IEnumerable[T] = js.native
       def intersect[TCompare](second: IEnumerable[T], compareSelector: js.Function1[/* element */ T, TCompare]): IEnumerable[T] = js.native
       
       def isEmpty(): Boolean = js.native
@@ -438,7 +438,7 @@ object mod {
       def memoize(): IDisposableEnumerable[T] = js.native
       
       // last one is selector
-      def merge(params: (js.Array[T] | IEnumerable[T] | DictxNumberT[T])*): IEnumerable[T] = js.native
+      def merge(params: (js.Array[T] | IEnumerable[T] | Dictx[T])*): IEnumerable[T] = js.native
       
       def min(): Double = js.native
       def min(selector: js.Function1[/* element */ T, Double]): Double = js.native
@@ -489,23 +489,23 @@ object mod {
         collectionSelector: js.Function2[
               /* element */ T, 
               /* index */ Double, 
-              js.Array[TOther] | Dictx[TOther] | IEnumerable[TOther]
+              js.Array[TOther] | IEnumerable[TOther] | Length[TOther]
             ]
       ): IEnumerable[TOther] = js.native
       def selectMany[TCollection, TResult](
         collectionSelector: js.Function2[
               /* element */ T, 
               /* index */ Double, 
-              js.Array[TCollection] | IEnumerable[TCollection] | Length[TCollection]
+              js.Array[TCollection] | DictxLength[TCollection] | IEnumerable[TCollection]
             ],
         resultSelector: js.Function2[/* outer */ T, /* inner */ TCollection, TResult]
       ): IEnumerable[TResult] = js.native
       
       def sequenceEqual(second: js.Array[T]): Boolean = js.native
-      def sequenceEqual(second: DictxNumberT[T]): Boolean = js.native
+      def sequenceEqual(second: Dictx[T]): Boolean = js.native
       def sequenceEqual(second: IEnumerable[T]): Boolean = js.native
       def sequenceEqual[TCompare](second: js.Array[T], compareSelector: js.Function1[/* element */ T, TCompare]): Boolean = js.native
-      def sequenceEqual[TCompare](second: DictxNumberT[T], compareSelector: js.Function1[/* element */ T, TCompare]): Boolean = js.native
+      def sequenceEqual[TCompare](second: Dictx[T], compareSelector: js.Function1[/* element */ T, TCompare]): Boolean = js.native
       def sequenceEqual[TCompare](second: IEnumerable[T], compareSelector: js.Function1[/* element */ T, TCompare]): Boolean = js.native
       
       def share(): IDisposableEnumerable[T] = js.native
@@ -598,10 +598,10 @@ object mod {
       ): IEnumerable[TResult] = js.native
       
       def union(second: js.Array[T]): IEnumerable[T] = js.native
-      def union(second: DictxNumberT[T]): IEnumerable[T] = js.native
+      def union(second: Dictx[T]): IEnumerable[T] = js.native
       def union(second: IEnumerable[T]): IEnumerable[T] = js.native
       def union[TCompare](second: js.Array[T], compareSelector: js.Function1[/* element */ T, TCompare]): IEnumerable[T] = js.native
-      def union[TCompare](second: DictxNumberT[T], compareSelector: js.Function1[/* element */ T, TCompare]): IEnumerable[T] = js.native
+      def union[TCompare](second: Dictx[T], compareSelector: js.Function1[/* element */ T, TCompare]): IEnumerable[T] = js.native
       def union[TCompare](second: IEnumerable[T], compareSelector: js.Function1[/* element */ T, TCompare]): IEnumerable[T] = js.native
       
       def weightedSample(weightSelector: js.Function1[/* element */ T, Double]): IEnumerable[T] = js.native
@@ -614,7 +614,7 @@ object mod {
         resultSelector: js.Function3[/* first */ T, /* second */ U, /* index */ Double, TResult]
       ): IEnumerable[TResult] = js.native
       def zip[U, TResult](
-        second: DictxLength[U],
+        second: DictxNumberU[U],
         resultSelector: js.Function3[/* first */ T, /* second */ U, /* index */ Double, TResult]
       ): IEnumerable[TResult] = js.native
       def zip[U, TResult](

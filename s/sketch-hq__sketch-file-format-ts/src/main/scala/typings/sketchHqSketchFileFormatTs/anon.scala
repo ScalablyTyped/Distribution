@@ -291,47 +291,6 @@ object anon {
     
     var MSAttributedStringFontAttribute: FontDescriptor
     
-    var kerning: js.UndefOr[Double] = js.undefined
-    
-    var paragraphStyle: js.UndefOr[ParagraphStyle] = js.undefined
-    
-    var textStyleVerticalAlignmentKey: js.UndefOr[TextVerticalAlignment] = js.undefined
-  }
-  object Kerning {
-    
-    inline def apply(MSAttributedStringFontAttribute: FontDescriptor): Kerning = {
-      val __obj = js.Dynamic.literal(MSAttributedStringFontAttribute = MSAttributedStringFontAttribute.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Kerning]
-    }
-    
-    extension [Self <: Kerning](x: Self) {
-      
-      inline def setKerning(value: Double): Self = StObject.set(x, "kerning", value.asInstanceOf[js.Any])
-      
-      inline def setKerningUndefined: Self = StObject.set(x, "kerning", js.undefined)
-      
-      inline def setMSAttributedStringColorAttribute(value: Color): Self = StObject.set(x, "MSAttributedStringColorAttribute", value.asInstanceOf[js.Any])
-      
-      inline def setMSAttributedStringColorAttributeUndefined: Self = StObject.set(x, "MSAttributedStringColorAttribute", js.undefined)
-      
-      inline def setMSAttributedStringFontAttribute(value: FontDescriptor): Self = StObject.set(x, "MSAttributedStringFontAttribute", value.asInstanceOf[js.Any])
-      
-      inline def setParagraphStyle(value: ParagraphStyle): Self = StObject.set(x, "paragraphStyle", value.asInstanceOf[js.Any])
-      
-      inline def setParagraphStyleUndefined: Self = StObject.set(x, "paragraphStyle", js.undefined)
-      
-      inline def setTextStyleVerticalAlignmentKey(value: TextVerticalAlignment): Self = StObject.set(x, "textStyleVerticalAlignmentKey", value.asInstanceOf[js.Any])
-      
-      inline def setTextStyleVerticalAlignmentKeyUndefined: Self = StObject.set(x, "textStyleVerticalAlignmentKey", js.undefined)
-    }
-  }
-  
-  trait MSAttributedStringColorAttribute extends StObject {
-    
-    var MSAttributedStringColorAttribute: js.UndefOr[Color] = js.undefined
-    
-    var MSAttributedStringFontAttribute: FontDescriptor
-    
     var MSAttributedStringTextTransformAttribute: js.UndefOr[TextTransform] = js.undefined
     
     var kerning: js.UndefOr[Double] = js.undefined
@@ -344,14 +303,14 @@ object anon {
     
     var underlineStyle: js.UndefOr[UnderlineStyle] = js.undefined
   }
-  object MSAttributedStringColorAttribute {
+  object Kerning {
     
-    inline def apply(MSAttributedStringFontAttribute: FontDescriptor): MSAttributedStringColorAttribute = {
+    inline def apply(MSAttributedStringFontAttribute: FontDescriptor): Kerning = {
       val __obj = js.Dynamic.literal(MSAttributedStringFontAttribute = MSAttributedStringFontAttribute.asInstanceOf[js.Any])
-      __obj.asInstanceOf[MSAttributedStringColorAttribute]
+      __obj.asInstanceOf[Kerning]
     }
     
-    extension [Self <: MSAttributedStringColorAttribute](x: Self) {
+    extension [Self <: Kerning](x: Self) {
       
       inline def setKerning(value: Double): Self = StObject.set(x, "kerning", value.asInstanceOf[js.Any])
       
@@ -382,6 +341,47 @@ object anon {
       inline def setUnderlineStyle(value: UnderlineStyle): Self = StObject.set(x, "underlineStyle", value.asInstanceOf[js.Any])
       
       inline def setUnderlineStyleUndefined: Self = StObject.set(x, "underlineStyle", js.undefined)
+    }
+  }
+  
+  trait MSAttributedStringColorAttribute extends StObject {
+    
+    var MSAttributedStringColorAttribute: js.UndefOr[Color] = js.undefined
+    
+    var MSAttributedStringFontAttribute: FontDescriptor
+    
+    var kerning: js.UndefOr[Double] = js.undefined
+    
+    var paragraphStyle: js.UndefOr[ParagraphStyle] = js.undefined
+    
+    var textStyleVerticalAlignmentKey: js.UndefOr[TextVerticalAlignment] = js.undefined
+  }
+  object MSAttributedStringColorAttribute {
+    
+    inline def apply(MSAttributedStringFontAttribute: FontDescriptor): MSAttributedStringColorAttribute = {
+      val __obj = js.Dynamic.literal(MSAttributedStringFontAttribute = MSAttributedStringFontAttribute.asInstanceOf[js.Any])
+      __obj.asInstanceOf[MSAttributedStringColorAttribute]
+    }
+    
+    extension [Self <: MSAttributedStringColorAttribute](x: Self) {
+      
+      inline def setKerning(value: Double): Self = StObject.set(x, "kerning", value.asInstanceOf[js.Any])
+      
+      inline def setKerningUndefined: Self = StObject.set(x, "kerning", js.undefined)
+      
+      inline def setMSAttributedStringColorAttribute(value: Color): Self = StObject.set(x, "MSAttributedStringColorAttribute", value.asInstanceOf[js.Any])
+      
+      inline def setMSAttributedStringColorAttributeUndefined: Self = StObject.set(x, "MSAttributedStringColorAttribute", js.undefined)
+      
+      inline def setMSAttributedStringFontAttribute(value: FontDescriptor): Self = StObject.set(x, "MSAttributedStringFontAttribute", value.asInstanceOf[js.Any])
+      
+      inline def setParagraphStyle(value: ParagraphStyle): Self = StObject.set(x, "paragraphStyle", value.asInstanceOf[js.Any])
+      
+      inline def setParagraphStyleUndefined: Self = StObject.set(x, "paragraphStyle", js.undefined)
+      
+      inline def setTextStyleVerticalAlignmentKey(value: TextVerticalAlignment): Self = StObject.set(x, "textStyleVerticalAlignmentKey", value.asInstanceOf[js.Any])
+      
+      inline def setTextStyleVerticalAlignmentKeyUndefined: Self = StObject.set(x, "textStyleVerticalAlignmentKey", js.undefined)
     }
   }
   

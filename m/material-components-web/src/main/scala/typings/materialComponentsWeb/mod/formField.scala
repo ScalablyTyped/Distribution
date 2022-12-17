@@ -9,13 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object formField {
   
-  @JSImport("material-components-web", "formField.default")
-  @js.native
-  open class default ()
-    extends typings.materialFormField.mod.default {
-    def this(adapter: PartialMDCFormFieldAdapte) = this()
-  }
-  
   @JSImport("material-components-web", "formField.MDCFormField")
   @js.native
   open class MDCFormField protected ()

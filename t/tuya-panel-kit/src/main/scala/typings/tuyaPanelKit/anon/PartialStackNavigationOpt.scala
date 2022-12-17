@@ -56,7 +56,7 @@ trait PartialStackNavigationOpt extends StObject {
   
   var headerBackAllowFontScaling: js.UndefOr[Boolean] = js.undefined
   
-  var headerBackImage: js.UndefOr[js.Function1[/* props */ TintColor, ReactNode]] = js.undefined
+  var headerBackImage: js.UndefOr[js.Function1[/* props */ TintColorString, ReactNode]] = js.undefined
   
   var headerBackTitle: js.UndefOr[String] = js.undefined
   
@@ -72,7 +72,7 @@ trait PartialStackNavigationOpt extends StObject {
   
   var headerPressColorAndroid: js.UndefOr[String] = js.undefined
   
-  var headerRight: js.UndefOr[js.Function1[/* props */ `9`, ReactNode]] = js.undefined
+  var headerRight: js.UndefOr[js.Function1[/* props */ TintColor, ReactNode]] = js.undefined
   
   var headerRightContainerStyle: js.UndefOr[WithAnimatedValue[StyleProp[ViewStyle]]] = js.undefined
   
@@ -100,7 +100,7 @@ trait PartialStackNavigationOpt extends StObject {
   
   var headerTruncatedBackTitle: js.UndefOr[String] = js.undefined
   
-  var safeAreaInsets: js.UndefOr[Left] = js.undefined
+  var safeAreaInsets: js.UndefOr[Bottom] = js.undefined
   
   var title: js.UndefOr[String] = js.undefined
   
@@ -175,7 +175,7 @@ object PartialStackNavigationOpt {
     
     inline def setHeaderBackAllowFontScalingUndefined: Self = StObject.set(x, "headerBackAllowFontScaling", js.undefined)
     
-    inline def setHeaderBackImage(value: /* props */ TintColor => ReactNode): Self = StObject.set(x, "headerBackImage", js.Any.fromFunction1(value))
+    inline def setHeaderBackImage(value: /* props */ TintColorString => ReactNode): Self = StObject.set(x, "headerBackImage", js.Any.fromFunction1(value))
     
     inline def setHeaderBackImageUndefined: Self = StObject.set(x, "headerBackImage", js.undefined)
     
@@ -211,7 +211,7 @@ object PartialStackNavigationOpt {
     
     inline def setHeaderPressColorAndroidUndefined: Self = StObject.set(x, "headerPressColorAndroid", js.undefined)
     
-    inline def setHeaderRight(value: /* props */ `9` => ReactNode): Self = StObject.set(x, "headerRight", js.Any.fromFunction1(value))
+    inline def setHeaderRight(value: /* props */ TintColor => ReactNode): Self = StObject.set(x, "headerRight", js.Any.fromFunction1(value))
     
     inline def setHeaderRightContainerStyle(value: WithAnimatedValue[StyleProp[ViewStyle]]): Self = StObject.set(x, "headerRightContainerStyle", value.asInstanceOf[js.Any])
     
@@ -279,7 +279,7 @@ object PartialStackNavigationOpt {
     
     inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    inline def setSafeAreaInsets(value: Left): Self = StObject.set(x, "safeAreaInsets", value.asInstanceOf[js.Any])
+    inline def setSafeAreaInsets(value: Bottom): Self = StObject.set(x, "safeAreaInsets", value.asInstanceOf[js.Any])
     
     inline def setSafeAreaInsetsUndefined: Self = StObject.set(x, "safeAreaInsets", js.undefined)
     

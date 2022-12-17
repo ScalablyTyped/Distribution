@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LetterSpacingLineHeight extends StObject {
   
   @JSName("@media (min-width: 42rem)")
-  var `@media Leftparenthesismin-widthColon 42remRightparenthesis`: FontFamilyFontSize
+  var `@media Leftparenthesismin-widthColon 42remRightparenthesis`: LineHeight
   
   @JSName("@media (min-width: 66rem)")
-  var `@media Leftparenthesismin-widthColon 66remRightparenthesis`: FontFamily
+  var `@media Leftparenthesismin-widthColon 66remRightparenthesis`: LineHeight
   
   @JSName("@media (min-width: 82rem)")
-  var `@media Leftparenthesismin-widthColon 82remRightparenthesis`: FontFamily
+  var `@media Leftparenthesismin-widthColon 82remRightparenthesis`: LineHeight
   
   @JSName("@media (min-width: 99rem)")
-  var `@media Leftparenthesismin-widthColon 99remRightparenthesis`: FontFamily
+  var `@media Leftparenthesismin-widthColon 99remRightparenthesis`: FontSize
   
   var fontFamily: String
   
@@ -31,10 +31,10 @@ trait LetterSpacingLineHeight extends StObject {
 object LetterSpacingLineHeight {
   
   inline def apply(
-    `@media Leftparenthesismin-widthColon 42remRightparenthesis`: FontFamilyFontSize,
-    `@media Leftparenthesismin-widthColon 66remRightparenthesis`: FontFamily,
-    `@media Leftparenthesismin-widthColon 82remRightparenthesis`: FontFamily,
-    `@media Leftparenthesismin-widthColon 99remRightparenthesis`: FontFamily,
+    `@media Leftparenthesismin-widthColon 42remRightparenthesis`: LineHeight,
+    `@media Leftparenthesismin-widthColon 66remRightparenthesis`: LineHeight,
+    `@media Leftparenthesismin-widthColon 82remRightparenthesis`: LineHeight,
+    `@media Leftparenthesismin-widthColon 99remRightparenthesis`: FontSize,
     fontFamily: String,
     fontSize: String,
     fontWeight: Double,
@@ -51,13 +51,13 @@ object LetterSpacingLineHeight {
   
   extension [Self <: LetterSpacingLineHeight](x: Self) {
     
-    inline def `set@media Leftparenthesismin-widthColon 42remRightparenthesis`(value: FontFamilyFontSize): Self = StObject.set(x, "@media (min-width: 42rem)", value.asInstanceOf[js.Any])
+    inline def `set@media Leftparenthesismin-widthColon 42remRightparenthesis`(value: LineHeight): Self = StObject.set(x, "@media (min-width: 42rem)", value.asInstanceOf[js.Any])
     
-    inline def `set@media Leftparenthesismin-widthColon 66remRightparenthesis`(value: FontFamily): Self = StObject.set(x, "@media (min-width: 66rem)", value.asInstanceOf[js.Any])
+    inline def `set@media Leftparenthesismin-widthColon 66remRightparenthesis`(value: LineHeight): Self = StObject.set(x, "@media (min-width: 66rem)", value.asInstanceOf[js.Any])
     
-    inline def `set@media Leftparenthesismin-widthColon 82remRightparenthesis`(value: FontFamily): Self = StObject.set(x, "@media (min-width: 82rem)", value.asInstanceOf[js.Any])
+    inline def `set@media Leftparenthesismin-widthColon 82remRightparenthesis`(value: LineHeight): Self = StObject.set(x, "@media (min-width: 82rem)", value.asInstanceOf[js.Any])
     
-    inline def `set@media Leftparenthesismin-widthColon 99remRightparenthesis`(value: FontFamily): Self = StObject.set(x, "@media (min-width: 99rem)", value.asInstanceOf[js.Any])
+    inline def `set@media Leftparenthesismin-widthColon 99remRightparenthesis`(value: FontSize): Self = StObject.set(x, "@media (min-width: 99rem)", value.asInstanceOf[js.Any])
     
     inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     

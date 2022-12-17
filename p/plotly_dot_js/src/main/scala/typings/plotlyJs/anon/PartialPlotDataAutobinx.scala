@@ -1,6 +1,7 @@
 package typings.plotlyJs.anon
 
 import typings.plotlyJs.mod.ColorScale
+import typings.plotlyJs.mod.Data
 import typings.plotlyJs.mod.DataTransform
 import typings.plotlyJs.mod.Datum
 import typings.plotlyJs.mod.ErrorBar
@@ -128,7 +129,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.PlotData> */
-trait PartialPlotDataAutobinx extends StObject {
+trait PartialPlotDataAutobinx
+  extends StObject
+     with Data {
   
   var autobinx: js.UndefOr[Boolean] = js.undefined
   
@@ -166,7 +169,7 @@ trait PartialPlotDataAutobinx extends StObject {
   
   var fillpattern: js.UndefOr[PartialPattern] = js.undefined
   
-  var gauge: js.UndefOr[PartialGaugeBgcolor] = js.undefined
+  var gauge: js.UndefOr[PartialGaugeAxis] = js.undefined
   
   var groupnorm: js.UndefOr[_empty | fraction | percent] = js.undefined
   
@@ -178,7 +181,7 @@ trait PartialPlotDataAutobinx extends StObject {
     all | name | none | skip | text | x | xPlussigntext | xPlussignname | xPlussigny | xPlussignyPlussigntext | xPlussignyPlussignname | xPlussignyPlussignz | xPlussignyPlussignzPlussigntext | xPlussignyPlussignzPlussignname | y | yPlussignname | yPlussignx | yPlussigntext | yPlussignxPlussigntext | yPlussignxPlussignname | yPlussignz | yPlussignzPlussigntext | yPlussignzPlussignname | yPlussignxPlussignz | yPlussignxPlussignzPlussigntext | yPlussignxPlussignzPlussignname | z | zPlussignx | zPlussignxPlussigntext | zPlussignxPlussignname | zPlussignyPlussignx | zPlussignyPlussignxPlussigntext | zPlussignyPlussignxPlussignname | zPlussignxPlussigny | zPlussignxPlussignyPlussigntext | zPlussignxPlussignyPlussignname
   ] = js.undefined
   
-  var hoverlabel: js.UndefOr[PartialHoverLabelAlign] = js.undefined
+  var hoverlabel: js.UndefOr[PartialHoverLabel] = js.undefined
   
   var hoveron: js.UndefOr[points | fills] = js.undefined
   
@@ -230,7 +233,7 @@ trait PartialPlotDataAutobinx extends StObject {
   
   var lon: js.UndefOr[js.Array[Datum]] = js.undefined
   
-  var marker: js.UndefOr[PartialPlotMarkerCauto | PartialBoxPlotMarkerColor] = js.undefined
+  var marker: js.UndefOr[PartialPlotMarkerAutocolorscale | PartialBoxPlotMarkerColor] = js.undefined
   
   @JSName("marker.color")
   var markerDotcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
@@ -468,7 +471,7 @@ object PartialPlotDataAutobinx {
     
     inline def setFillpatternUndefined: Self = StObject.set(x, "fillpattern", js.undefined)
     
-    inline def setGauge(value: PartialGaugeBgcolor): Self = StObject.set(x, "gauge", value.asInstanceOf[js.Any])
+    inline def setGauge(value: PartialGaugeAxis): Self = StObject.set(x, "gauge", value.asInstanceOf[js.Any])
     
     inline def setGaugeUndefined: Self = StObject.set(x, "gauge", js.undefined)
     
@@ -490,7 +493,7 @@ object PartialPlotDataAutobinx {
     
     inline def setHoverinfoUndefined: Self = StObject.set(x, "hoverinfo", js.undefined)
     
-    inline def setHoverlabel(value: PartialHoverLabelAlign): Self = StObject.set(x, "hoverlabel", value.asInstanceOf[js.Any])
+    inline def setHoverlabel(value: PartialHoverLabel): Self = StObject.set(x, "hoverlabel", value.asInstanceOf[js.Any])
     
     inline def setHoverlabelUndefined: Self = StObject.set(x, "hoverlabel", js.undefined)
     
@@ -598,7 +601,7 @@ object PartialPlotDataAutobinx {
     
     inline def setLonVarargs(value: Datum*): Self = StObject.set(x, "lon", js.Array(value*))
     
-    inline def setMarker(value: PartialPlotMarkerCauto | PartialBoxPlotMarkerColor): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: PartialPlotMarkerAutocolorscale | PartialBoxPlotMarkerColor): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
     inline def setMarkerDotcolor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "marker.color", value.asInstanceOf[js.Any])
     

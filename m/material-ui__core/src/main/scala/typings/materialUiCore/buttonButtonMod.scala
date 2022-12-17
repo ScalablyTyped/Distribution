@@ -1,7 +1,7 @@
 package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
-import typings.materialUiCore.anon.ClassKeyDefaultComponentProps
+import typings.materialUiCore.anon.DefaultComponentProps
 import typings.materialUiCore.buttonBaseButtonBaseMod.ExtendButtonBase
 import typings.materialUiCore.buttonBaseButtonBaseMod.ExtendButtonBaseTypeMap
 import typings.materialUiCore.materialUiCoreStrings.button
@@ -124,7 +124,7 @@ object buttonButtonMod extends Shortcut {
   
   type ButtonProps[D /* <: ElementType[Any] */, P] = OverrideProps[ButtonTypeMap[P, D], D]
   
-  type ButtonTypeMap[P, D /* <: ElementType[Any] */] = ExtendButtonBaseTypeMap[ClassKeyDefaultComponentProps[P, D]]
+  type ButtonTypeMap[P, D /* <: ElementType[Any] */] = ExtendButtonBaseTypeMap[DefaultComponentProps[P, D]]
   
   type _To = ExtendButtonBase[ButtonTypeMap[js.Object, button]]
   

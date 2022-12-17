@@ -338,7 +338,7 @@ object Services {
       
       /** Raised when user no longer has rights to the license on the current device (for example, the user has acquired the license on a different device). */
       /* CompleteClass */
-      override def onlicenselost(ev: js.Object & WinRTEvent[typings.winrtUwp.Windows.Services.Store.StorePackageLicense]): Unit = js.native
+      override def onlicenselost(ev: WinRTEvent[typings.winrtUwp.Windows.Services.Store.StorePackageLicense]): Unit = js.native
       /** Raised when user no longer has rights to the license on the current device (for example, the user has acquired the license on a different device). */
       /* CompleteClass */
       @JSName("onlicenselost")

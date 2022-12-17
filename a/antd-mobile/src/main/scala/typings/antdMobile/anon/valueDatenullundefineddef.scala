@@ -45,15 +45,12 @@ import typings.antdMobile.esComponentsPickerPickerMod.PickerActions
 import typings.antdMobile.esUtilsRenderToContainerMod.GetContainer
 import typings.antdMobile.esUtilsWithStopPropagationMod.PropagationEvent
 import typings.react.mod.Booleanish
-import typings.react.mod.CSSProperties
 import typings.react.mod.Key
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.MouseEvent
-import typings.std.Partial
-import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -351,7 +348,7 @@ trait valueDatenullundefineddef extends StObject {
   
   var stopPropagation: js.UndefOr[js.Array[PropagationEvent]] = js.undefined
   
-  var style: (js.UndefOr[CSSProperties & (Partial[Record[scala.Nothing, String]])]) & js.UndefOr[CSSPropertiesPartialRecorAlignSelf]
+  var style: js.UndefOr[CSSPropertiesPartialRecorAlignSelf] = js.undefined
   
   var tabIndex: js.UndefOr[Double] = js.undefined
   
@@ -363,10 +360,8 @@ trait valueDatenullundefineddef extends StObject {
 }
 object valueDatenullundefineddef {
   
-  inline def apply(
-    style: (js.UndefOr[CSSProperties & (Partial[Record[scala.Nothing, String]])]) & js.UndefOr[CSSPropertiesPartialRecorAlignSelf]
-  ): valueDatenullundefineddef = {
-    val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
+  inline def apply(): valueDatenullundefineddef = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[valueDatenullundefineddef]
   }
   
@@ -688,9 +683,9 @@ object valueDatenullundefineddef {
     
     inline def setStopPropagationVarargs(value: PropagationEvent*): Self = StObject.set(x, "stopPropagation", js.Array(value*))
     
-    inline def setStyle(
-      value: (js.UndefOr[CSSProperties & (Partial[Record[scala.Nothing, String]])]) & js.UndefOr[CSSPropertiesPartialRecorAlignSelf]
-    ): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSPropertiesPartialRecorAlignSelf): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
     

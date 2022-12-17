@@ -13,7 +13,7 @@ trait PickImpldeleteKeyPartialP
   
   var backspace: js.UndefOr[Double] = js.undefined
   
-  var deleteKey: Double & js.UndefOr[Double]
+  var deleteKey: Double
   
   var delimiter: js.UndefOr[Double | `false`] = js.undefined
   
@@ -35,7 +35,7 @@ trait PickImpldeleteKeyPartialP
 }
 object PickImpldeleteKeyPartialP {
   
-  inline def apply(deleteKey: Double & js.UndefOr[Double]): PickImpldeleteKeyPartialP = {
+  inline def apply(deleteKey: Double): PickImpldeleteKeyPartialP = {
     val __obj = js.Dynamic.literal(deleteKey = deleteKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldeleteKeyPartialP]
   }
@@ -46,7 +46,7 @@ object PickImpldeleteKeyPartialP {
     
     inline def setBackspaceUndefined: Self = StObject.set(x, "backspace", js.undefined)
     
-    inline def setDeleteKey(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "deleteKey", value.asInstanceOf[js.Any])
+    inline def setDeleteKey(value: Double): Self = StObject.set(x, "deleteKey", value.asInstanceOf[js.Any])
     
     inline def setDelimiter(value: Double | `false`): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     

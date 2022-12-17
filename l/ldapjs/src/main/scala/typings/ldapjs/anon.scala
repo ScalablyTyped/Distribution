@@ -49,11 +49,11 @@ object anon {
     
     var attribute: String
     
-    var value: String
+    var value: String | Buffer
   }
   object Attribute {
     
-    inline def apply(attribute: String, value: String): Attribute = {
+    inline def apply(attribute: String, value: String | Buffer): Attribute = {
       val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Attribute]
     }
@@ -62,7 +62,7 @@ object anon {
       
       inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String | Buffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -286,11 +286,11 @@ object anon {
     
     var attribute: String
     
-    var value: String | Buffer
+    var value: String
   }
   object Value {
     
-    inline def apply(attribute: String, value: String | Buffer): Value = {
+    inline def apply(attribute: String, value: String): Value = {
       val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Value]
     }
@@ -299,7 +299,7 @@ object anon {
       
       inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: String | Buffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

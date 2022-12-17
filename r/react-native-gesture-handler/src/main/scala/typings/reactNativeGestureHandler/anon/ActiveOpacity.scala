@@ -8,12 +8,12 @@ trait ActiveOpacity extends StObject {
   
   var activeOpacity: Double
   
-  var borderless: Boolean
+  var underlayColor: String
 }
 object ActiveOpacity {
   
-  inline def apply(activeOpacity: Double, borderless: Boolean): ActiveOpacity = {
-    val __obj = js.Dynamic.literal(activeOpacity = activeOpacity.asInstanceOf[js.Any], borderless = borderless.asInstanceOf[js.Any])
+  inline def apply(activeOpacity: Double, underlayColor: String): ActiveOpacity = {
+    val __obj = js.Dynamic.literal(activeOpacity = activeOpacity.asInstanceOf[js.Any], underlayColor = underlayColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveOpacity]
   }
   
@@ -21,6 +21,6 @@ object ActiveOpacity {
     
     inline def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
     
-    inline def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
+    inline def setUnderlayColor(value: String): Self = StObject.set(x, "underlayColor", value.asInstanceOf[js.Any])
   }
 }

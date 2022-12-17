@@ -34,7 +34,7 @@ trait PickImplfieldsPartialPick
   
   var error: js.UndefOr[ErrorSettings] = js.undefined
   
-  var fields: FieldsSettings & js.UndefOr[FieldsSettings]
+  var fields: FieldsSettings
   
   var hideDelay: js.UndefOr[Double] = js.undefined
   
@@ -92,7 +92,7 @@ trait PickImplfieldsPartialPick
 }
 object PickImplfieldsPartialPick {
   
-  inline def apply(fields: FieldsSettings & js.UndefOr[FieldsSettings]): PickImplfieldsPartialPick = {
+  inline def apply(fields: FieldsSettings): PickImplfieldsPartialPick = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplfieldsPartialPick]
   }
@@ -127,7 +127,7 @@ object PickImplfieldsPartialPick {
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    inline def setFields(value: FieldsSettings & js.UndefOr[FieldsSettings]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: FieldsSettings): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setHideDelay(value: Double): Self = StObject.set(x, "hideDelay", value.asInstanceOf[js.Any])
     

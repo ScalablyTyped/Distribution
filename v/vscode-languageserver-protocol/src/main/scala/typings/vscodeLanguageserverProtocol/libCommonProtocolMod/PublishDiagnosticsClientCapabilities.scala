@@ -1,6 +1,6 @@
 package typings.vscodeLanguageserverProtocol.libCommonProtocolMod
 
-import typings.vscodeLanguageserverProtocol.anon.`4`
+import typings.vscodeLanguageserverProtocol.anon.ValueSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,7 +34,7 @@ trait PublishDiagnosticsClientCapabilities extends StObject {
     *
     * @since 3.15.0
     */
-  var tagSupport: js.UndefOr[`4`] = js.undefined
+  var tagSupport: js.UndefOr[ValueSet] = js.undefined
   
   /**
     * Whether the client interprets the version property of the
@@ -65,7 +65,7 @@ object PublishDiagnosticsClientCapabilities {
     
     inline def setRelatedInformationUndefined: Self = StObject.set(x, "relatedInformation", js.undefined)
     
-    inline def setTagSupport(value: `4`): Self = StObject.set(x, "tagSupport", value.asInstanceOf[js.Any])
+    inline def setTagSupport(value: ValueSet): Self = StObject.set(x, "tagSupport", value.asInstanceOf[js.Any])
     
     inline def setTagSupportUndefined: Self = StObject.set(x, "tagSupport", js.undefined)
     

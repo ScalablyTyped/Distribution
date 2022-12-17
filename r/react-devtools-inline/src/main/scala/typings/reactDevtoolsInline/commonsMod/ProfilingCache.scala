@@ -1,7 +1,7 @@
 package typings.reactDevtoolsInline.commonsMod
 
-import typings.reactDevtoolsInline.anon.CommitIndex
 import typings.reactDevtoolsInline.anon.FiberID
+import typings.reactDevtoolsInline.anon.RootID
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class ProfilingCache protected () extends StObject {
   def this(profilerStore: ProfilerStore) = this()
   
-  def getCommitTree(param0: CommitIndex): ReturnType[typings.reactDevtoolsInline.commonsMod.getCommitTree] = js.native
+  def getCommitTree(param0: RootID): ReturnType[typings.reactDevtoolsInline.commonsMod.getCommitTree] = js.native
   
   def getFiberCommits(param0: FiberID): js.Array[Double] = js.native
   

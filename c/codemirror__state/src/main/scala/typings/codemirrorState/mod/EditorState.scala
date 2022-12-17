@@ -3,6 +3,7 @@ package typings.codemirrorState.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.codemirrorState.anon.Changes
 import typings.codemirrorState.anon.Effects
+import typings.codemirrorState.anon.PickTransactionSpeceffect
 import typings.codemirrorState.codemirrorStateBooleans.`false`
 import typings.codemirrorState.codemirrorStateInts.`-1`
 import typings.codemirrorState.codemirrorStateInts.`0`
@@ -19,8 +20,9 @@ instance, without modifying the original object.
 As such, _never_ mutate properties of a state directly. That'll
 just break things.
 */
+@JSImport("@codemirror/state", "EditorState")
 @js.native
-trait EditorState extends StObject {
+/* private */ open class EditorState () extends StObject {
   
   /**
     Create a set of changes and a new selection by running the given
@@ -172,4 +174,232 @@ trait EditorState extends StObject {
     this returns null.
     */
   def wordAt(pos: Double): SelectionRange | Null = js.native
+}
+object EditorState {
+  
+  @JSImport("@codemirror/state", "EditorState")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    A facet that, when enabled, causes the editor to allow multiple
+    ranges to be selected. Be careful though, because by default the
+    editor relies on the native DOM selection, which cannot handle
+    multiple selections. An extension like
+    [`drawSelection`](https://codemirror.net/6/docs/ref/#view.drawSelection) can be used to make
+    secondary selections visible to the user.
+    */
+  /* static member */
+  @JSImport("@codemirror/state", "EditorState.allowMultipleSelections")
+  @js.native
+  def allowMultipleSelections: Facet[Boolean, Boolean] = js.native
+  inline def allowMultipleSelections_=(x: Facet[Boolean, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allowMultipleSelections")(x.asInstanceOf[js.Any])
+  
+  /**
+    Facet used to register change filters, which are called for each
+    transaction (unless explicitly
+    [disabled](https://codemirror.net/6/docs/ref/#state.TransactionSpec.filter)), and can suppress
+    part of the transaction's changes.
+    
+    Such a function can return `true` to indicate that it doesn't
+    want to do anything, `false` to completely stop the changes in
+    the transaction, or a set of ranges in which changes should be
+    suppressed. Such ranges are represented as an array of numbers,
+    with each pair of two numbers indicating the start and end of a
+    range. So for example `[10, 20, 100, 110]` suppresses changes
+    between 10 and 20, and between 100 and 110.
+    */
+  /* static member */
+  @JSImport("@codemirror/state", "EditorState.changeFilter")
+  @js.native
+  def changeFilter: Facet[
+    js.Function1[/* tr */ Transaction, Boolean | js.Array[Double]], 
+    js.Array[js.Function1[/* tr */ Transaction, Boolean | js.Array[Double]]]
+  ] = js.native
+  inline def changeFilter_=(
+    x: Facet[
+      js.Function1[/* tr */ Transaction, Boolean | js.Array[Double]], 
+      js.Array[js.Function1[/* tr */ Transaction, Boolean | js.Array[Double]]]
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("changeFilter")(x.asInstanceOf[js.Any])
+  
+  /**
+    Create a new state. You'll usually only need this when
+    initializing an editor—updated states are created by applying
+    transactions.
+    */
+  /* static member */
+  inline def create(): EditorState = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[EditorState]
+  inline def create(config: EditorStateConfig): EditorState = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[EditorState]
+  
+  /**
+    Deserialize a state from its JSON representation. When custom
+    fields should be deserialized, pass the same object you passed
+    to [`toJSON`](https://codemirror.net/6/docs/ref/#state.EditorState.toJSON) when serializing as
+    third argument.
+    */
+  /* static member */
+  inline def fromJSON(json: Any): EditorState = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[EditorState]
+  inline def fromJSON(json: Any, config: Unit, fields: StringDictionary[StateField[Any]]): EditorState = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], config.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[EditorState]
+  inline def fromJSON(json: Any, config: EditorStateConfig): EditorState = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[EditorState]
+  inline def fromJSON(json: Any, config: EditorStateConfig, fields: StringDictionary[StateField[Any]]): EditorState = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], config.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[EditorState]
+  
+  /**
+    A facet used to register [language
+    data](https://codemirror.net/6/docs/ref/#state.EditorState.languageDataAt) providers.
+    */
+  /* static member */
+  @JSImport("@codemirror/state", "EditorState.languageData")
+  @js.native
+  def languageData: Facet[
+    js.Function3[
+      /* state */ EditorState, 
+      /* pos */ Double, 
+      /* side */ `0` | `1` | `-1`, 
+      js.Array[StringDictionary[Any]]
+    ], 
+    js.Array[
+      js.Function3[
+        /* state */ EditorState, 
+        /* pos */ Double, 
+        /* side */ `0` | `1` | `-1`, 
+        js.Array[StringDictionary[Any]]
+      ]
+    ]
+  ] = js.native
+  inline def languageData_=(
+    x: Facet[
+      js.Function3[
+        /* state */ EditorState, 
+        /* pos */ Double, 
+        /* side */ `0` | `1` | `-1`, 
+        js.Array[StringDictionary[Any]]
+      ], 
+      js.Array[
+        js.Function3[
+          /* state */ EditorState, 
+          /* pos */ Double, 
+          /* side */ `0` | `1` | `-1`, 
+          js.Array[StringDictionary[Any]]
+        ]
+      ]
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("languageData")(x.asInstanceOf[js.Any])
+  
+  /**
+    The line separator to use. By default, any of `"\n"`, `"\r\n"`
+    and `"\r"` is treated as a separator when splitting lines, and
+    lines are joined with `"\n"`.
+    
+    When you configure a value here, only that precise separator
+    will be used, allowing you to round-trip documents through the
+    editor without normalizing line separators.
+    */
+  /* static member */
+  @JSImport("@codemirror/state", "EditorState.lineSeparator")
+  @js.native
+  def lineSeparator: Facet[String, js.UndefOr[String]] = js.native
+  inline def lineSeparator_=(x: Facet[String, js.UndefOr[String]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lineSeparator")(x.asInstanceOf[js.Any])
+  
+  /**
+    Registers translation phrases. The
+    [`phrase`](https://codemirror.net/6/docs/ref/#state.EditorState.phrase) method will look through
+    all objects registered with this facet to find translations for
+    its argument.
+    */
+  /* static member */
+  @JSImport("@codemirror/state", "EditorState.phrases")
+  @js.native
+  def phrases: Facet[StringDictionary[String], js.Array[StringDictionary[String]]] = js.native
+  inline def phrases_=(x: Facet[StringDictionary[String], js.Array[StringDictionary[String]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("phrases")(x.asInstanceOf[js.Any])
+  
+  /**
+    This facet controls the value of the
+    [`readOnly`](https://codemirror.net/6/docs/ref/#state.EditorState.readOnly) getter, which is
+    consulted by commands and extensions that implement editing
+    functionality to determine whether they should apply. It
+    defaults to false, but when its highest-precedence value is
+    `true`, such functionality disables itself.
+    
+    Not to be confused with
+    [`EditorView.editable`](https://codemirror.net/6/docs/ref/#view.EditorView^editable), which
+    controls whether the editor's DOM is set to be editable (and
+    thus focusable).
+    */
+  /* static member */
+  @JSImport("@codemirror/state", "EditorState.readOnly")
+  @js.native
+  def readOnly: Facet[Boolean, Boolean] = js.native
+  inline def readOnly_=(x: Facet[Boolean, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("readOnly")(x.asInstanceOf[js.Any])
+  
+  /**
+    Configures the tab size to use in this state. The first
+    (highest-precedence) value of the facet is used. If no value is
+    given, this defaults to 4.
+    */
+  /* static member */
+  @JSImport("@codemirror/state", "EditorState.tabSize")
+  @js.native
+  def tabSize: Facet[Double, Double] = js.native
+  inline def tabSize_=(x: Facet[Double, Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tabSize")(x.asInstanceOf[js.Any])
+  
+  /**
+    This is a more limited form of
+    [`transactionFilter`](https://codemirror.net/6/docs/ref/#state.EditorState^transactionFilter),
+    which can only add
+    [annotations](https://codemirror.net/6/docs/ref/#state.TransactionSpec.annotations) and
+    [effects](https://codemirror.net/6/docs/ref/#state.TransactionSpec.effects). _But_, this type
+    of filter runs even if the transaction has disabled regular
+    [filtering](https://codemirror.net/6/docs/ref/#state.TransactionSpec.filter), making it suitable
+    for effects that don't need to touch the changes or selection,
+    but do want to process every transaction.
+    
+    Extenders run _after_ filters, when both are present.
+    */
+  /* static member */
+  @JSImport("@codemirror/state", "EditorState.transactionExtender")
+  @js.native
+  def transactionExtender: Facet[
+    js.Function1[/* tr */ Transaction, PickTransactionSpeceffect | Null], 
+    js.Array[js.Function1[/* tr */ Transaction, PickTransactionSpeceffect | Null]]
+  ] = js.native
+  inline def transactionExtender_=(
+    x: Facet[
+      js.Function1[/* tr */ Transaction, PickTransactionSpeceffect | Null], 
+      js.Array[js.Function1[/* tr */ Transaction, PickTransactionSpeceffect | Null]]
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("transactionExtender")(x.asInstanceOf[js.Any])
+  
+  /**
+    Facet used to register a hook that gets a chance to update or
+    replace transaction specs before they are applied. This will
+    only be applied for transactions that don't have
+    [`filter`](https://codemirror.net/6/docs/ref/#state.TransactionSpec.filter) set to `false`. You
+    can either return a single transaction spec (possibly the input
+    transaction), or an array of specs (which will be combined in
+    the same way as the arguments to
+    [`EditorState.update`](https://codemirror.net/6/docs/ref/#state.EditorState.update)).
+    
+    When possible, it is recommended to avoid accessing
+    [`Transaction.state`](https://codemirror.net/6/docs/ref/#state.Transaction.state) in a filter,
+    since it will force creation of a state that will then be
+    discarded again, if the transaction is actually filtered.
+    
+    (This functionality should be used with care. Indiscriminately
+    modifying transaction is likely to break something or degrade
+    the user experience.)
+    */
+  /* static member */
+  @JSImport("@codemirror/state", "EditorState.transactionFilter")
+  @js.native
+  def transactionFilter: Facet[
+    js.Function1[/* tr */ Transaction, TransactionSpec | js.Array[TransactionSpec]], 
+    js.Array[js.Function1[/* tr */ Transaction, TransactionSpec | js.Array[TransactionSpec]]]
+  ] = js.native
+  inline def transactionFilter_=(
+    x: Facet[
+      js.Function1[/* tr */ Transaction, TransactionSpec | js.Array[TransactionSpec]], 
+      js.Array[js.Function1[/* tr */ Transaction, TransactionSpec | js.Array[TransactionSpec]]]
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("transactionFilter")(x.asInstanceOf[js.Any])
 }

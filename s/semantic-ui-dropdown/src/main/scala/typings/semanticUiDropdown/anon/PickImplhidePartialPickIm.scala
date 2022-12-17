@@ -10,7 +10,7 @@ trait PickImplhidePartialPickIm
   extends StObject
      with Param {
   
-  var hide: Double & js.UndefOr[Double]
+  var hide: Double
   
   var search: js.UndefOr[Double] = js.undefined
   
@@ -20,14 +20,14 @@ trait PickImplhidePartialPickIm
 }
 object PickImplhidePartialPickIm {
   
-  inline def apply(hide: Double & js.UndefOr[Double]): PickImplhidePartialPickIm = {
+  inline def apply(hide: Double): PickImplhidePartialPickIm = {
     val __obj = js.Dynamic.literal(hide = hide.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplhidePartialPickIm]
   }
   
   extension [Self <: PickImplhidePartialPickIm](x: Self) {
     
-    inline def setHide(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+    inline def setHide(value: Double): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
     
     inline def setSearch(value: Double): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     

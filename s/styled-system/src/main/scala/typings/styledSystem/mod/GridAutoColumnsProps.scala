@@ -28,6 +28,6 @@ object GridAutoColumnsProps {
     
     inline def setGridAutoColumnsUndefined: Self = StObject.set(x, "gridAutoColumns", js.undefined)
     
-    inline def setGridAutoColumnsVarargs(value: (TVal | Null)*): Self = StObject.set(x, "gridAutoColumns", js.Array(value :_*))
+    inline def setGridAutoColumnsVarargs(value: (TVal | Null)*): Self = StObject.set(x, "gridAutoColumns", js.Array(value*))
   }
 }

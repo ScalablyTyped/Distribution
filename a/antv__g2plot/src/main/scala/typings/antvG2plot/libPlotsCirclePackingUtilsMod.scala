@@ -4,7 +4,7 @@ import typings.antvG2.libInterfaceMod.ViewAppendPadding
 import typings.antvG2.libInterfaceMod.ViewPadding
 import typings.antvG2plot.anon.FinalPadding
 import typings.antvG2plot.anon.Height
-import typings.antvG2plot.anon.OmitHierarchyOptionastype
+import typings.antvG2plot.anon.OmitHierarchyOptionastypeIgnoreParentValue
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -26,7 +26,7 @@ object libPlotsCirclePackingUtilsMod {
     
     var enableDrillDown: Boolean
     
-    var hierarchyConfig: js.UndefOr[OmitHierarchyOptionastype] = js.undefined
+    var hierarchyConfig: js.UndefOr[OmitHierarchyOptionastypeIgnoreParentValue] = js.undefined
     
     var rawFields: js.UndefOr[js.Array[String]] = js.undefined
   }
@@ -45,7 +45,7 @@ object libPlotsCirclePackingUtilsMod {
       
       inline def setEnableDrillDown(value: Boolean): Self = StObject.set(x, "enableDrillDown", value.asInstanceOf[js.Any])
       
-      inline def setHierarchyConfig(value: OmitHierarchyOptionastype): Self = StObject.set(x, "hierarchyConfig", value.asInstanceOf[js.Any])
+      inline def setHierarchyConfig(value: OmitHierarchyOptionastypeIgnoreParentValue): Self = StObject.set(x, "hierarchyConfig", value.asInstanceOf[js.Any])
       
       inline def setHierarchyConfigUndefined: Self = StObject.set(x, "hierarchyConfig", js.undefined)
       

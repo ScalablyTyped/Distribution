@@ -1,5 +1,6 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `173` extends StObject {
   
   @JSName("application/json")
-  var applicationSlashjson: js.Array[BodyBodyhtml]
+  var applicationSlashjson: Partial[DictkeyConclusion] & Partial[DictkeyStatus] & Completedat
 }
 object `173` {
   
-  inline def apply(applicationSlashjson: js.Array[BodyBodyhtml]): `173` = {
+  inline def apply(applicationSlashjson: Partial[DictkeyConclusion] & Partial[DictkeyStatus] & Completedat): `173` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`173`]
@@ -19,8 +20,6 @@ object `173` {
   
   extension [Self <: `173`](x: Self) {
     
-    inline def setApplicationSlashjson(value: js.Array[BodyBodyhtml]): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
-    
-    inline def setApplicationSlashjsonVarargs(value: BodyBodyhtml*): Self = StObject.set(x, "application/json", js.Array(value*))
+    inline def setApplicationSlashjson(value: Partial[DictkeyConclusion] & Partial[DictkeyStatus] & Completedat): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }
 }

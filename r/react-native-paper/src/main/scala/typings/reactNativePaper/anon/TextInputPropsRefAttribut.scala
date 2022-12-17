@@ -1,7 +1,7 @@
 package typings.reactNativePaper.anon
 
 import typings.react.mod.ReactNode
-import typings.reactNative.anon.End
+import typings.reactNative.anon.Start
 import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
@@ -30,7 +30,6 @@ import typings.reactNative.mod.TextInputSelectionChangeEventData
 import typings.reactNative.mod.TextInputSubmitEditingEventData
 import typings.reactNative.mod.TextInputTextInputEventData
 import typings.reactNative.mod.TextStyle
-import typings.reactNativePaper.libTypescriptComponentsTextInputTextInputMod.TextInputHandles
 import typings.reactNativePaper.libTypescriptComponentsTextInputTypesMod.RenderProps
 import typings.reactNativePaper.libTypescriptComponentsTextInputTypesMod.TextInputLabelProp
 import typings.reactNativePaper.reactNativePaperStrings.URL
@@ -595,7 +594,7 @@ trait TextInputPropsRefAttribut extends StObject {
   /**
     * Callback that is called when the text input is blurred.
     */
-  var onBlur: (js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TextInputFocusEventData], Unit]]) & (js.UndefOr[js.Function1[/* args */ Any, Unit]])
+  var onBlur: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TextInputFocusEventData], Unit]] = js.undefined
   
   /**
     * Callback that is called when the text input's text changes.
@@ -609,7 +608,7 @@ trait TextInputPropsRefAttribut extends StObject {
   /**
     * Callback that is called when the text input's text changes. Changed text is passed as an argument to the callback handler.
     */
-  var onChangeText: (js.UndefOr[js.Function1[/* text */ String, Unit]]) & js.UndefOr[js.Function]
+  var onChangeText: js.UndefOr[js.Function1[/* text */ String, Unit]] = js.undefined
   
   /**
     * Callback that is called when the text input's content size changes.
@@ -633,7 +632,7 @@ trait TextInputPropsRefAttribut extends StObject {
   /**
     * Callback that is called when the text input is focused.
     */
-  var onFocus: (js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TextInputFocusEventData], Unit]]) & (js.UndefOr[js.Function1[/* args */ Any, Unit]])
+  var onFocus: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TextInputFocusEventData], Unit]] = js.undefined
   
   /**
     * Callback that is called when a key is pressed.
@@ -871,7 +870,7 @@ trait TextInputPropsRefAttribut extends StObject {
     */
   var pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.undefined
   
-  var ref: js.UndefOr[typings.react.mod.Ref[TextInput]] & js.UndefOr[typings.react.mod.Ref[TextInputHandles]]
+  var ref: js.UndefOr[typings.react.mod.Ref[TextInput]] = js.undefined
   
   /**
     * If `true`, allows TextInput to pass touch events to the parent component.
@@ -952,7 +951,7 @@ trait TextInputPropsRefAttribut extends StObject {
     * The start and end of the text input's selection. Set start and end to
     * the same value to position the cursor.
     */
-  var selection: js.UndefOr[End] = js.undefined
+  var selection: js.UndefOr[Start] = js.undefined
   
   /**
     * The highlight (and cursor on ios) color of the text input
@@ -960,7 +959,7 @@ trait TextInputPropsRefAttribut extends StObject {
   /**
     * Selection color of the input
     */
-  var selectionColor: js.UndefOr[ColorValue] & js.UndefOr[String]
+  var selectionColor: js.UndefOr[ColorValue] = js.undefined
   
   /**
     * See DocumentSelectionState.js, some state that is responsible for maintaining selection information for a document
@@ -1135,15 +1134,8 @@ trait TextInputPropsRefAttribut extends StObject {
 }
 object TextInputPropsRefAttribut {
   
-  inline def apply(
-    onBlur: (js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TextInputFocusEventData], Unit]]) & (js.UndefOr[js.Function1[/* args */ Any, Unit]]),
-    onChangeText: (js.UndefOr[js.Function1[/* text */ String, Unit]]) & js.UndefOr[js.Function],
-    onFocus: (js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TextInputFocusEventData], Unit]]) & (js.UndefOr[js.Function1[/* args */ Any, Unit]]),
-    ref: js.UndefOr[typings.react.mod.Ref[TextInput]] & js.UndefOr[typings.react.mod.Ref[TextInputHandles]],
-    selectionColor: js.UndefOr[ColorValue] & js.UndefOr[String],
-    theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
-  ): TextInputPropsRefAttribut = {
-    val __obj = js.Dynamic.literal(onBlur = onBlur.asInstanceOf[js.Any], onChangeText = onChangeText.asInstanceOf[js.Any], onFocus = onFocus.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], selectionColor = selectionColor.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
+  inline def apply(theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): TextInputPropsRefAttribut = {
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextInputPropsRefAttribut]
   }
   
@@ -1403,13 +1395,15 @@ object TextInputPropsRefAttribut {
     
     inline def setOnAccessibilityTapUndefined: Self = StObject.set(x, "onAccessibilityTap", js.undefined)
     
-    inline def setOnBlur(
-      value: (js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TextInputFocusEventData], Unit]]) & (js.UndefOr[js.Function1[/* args */ Any, Unit]])
-    ): Self = StObject.set(x, "onBlur", value.asInstanceOf[js.Any])
+    inline def setOnBlur(value: /* e */ NativeSyntheticEvent[TextInputFocusEventData] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+    
+    inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
     inline def setOnChange(value: /* e */ NativeSyntheticEvent[TextInputChangeEventData] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
-    inline def setOnChangeText(value: (js.UndefOr[js.Function1[/* text */ String, Unit]]) & js.UndefOr[js.Function]): Self = StObject.set(x, "onChangeText", value.asInstanceOf[js.Any])
+    inline def setOnChangeText(value: /* text */ String => Unit): Self = StObject.set(x, "onChangeText", js.Any.fromFunction1(value))
+    
+    inline def setOnChangeTextUndefined: Self = StObject.set(x, "onChangeText", js.undefined)
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
@@ -1421,9 +1415,9 @@ object TextInputPropsRefAttribut {
     
     inline def setOnEndEditingUndefined: Self = StObject.set(x, "onEndEditing", js.undefined)
     
-    inline def setOnFocus(
-      value: (js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TextInputFocusEventData], Unit]]) & (js.UndefOr[js.Function1[/* args */ Any, Unit]])
-    ): Self = StObject.set(x, "onFocus", value.asInstanceOf[js.Any])
+    inline def setOnFocus(value: /* e */ NativeSyntheticEvent[TextInputFocusEventData] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+    
+    inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     
     inline def setOnKeyPress(value: /* e */ NativeSyntheticEvent[TextInputKeyPressEventData] => Unit): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
     
@@ -1599,9 +1593,13 @@ object TextInputPropsRefAttribut {
     
     inline def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
     
-    inline def setRef(
-      value: js.UndefOr[typings.react.mod.Ref[TextInput]] & js.UndefOr[typings.react.mod.Ref[TextInputHandles]]
-    ): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: typings.react.mod.Ref[TextInput]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    
+    inline def setRefFunction1(value: /* instance */ TextInput | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    
+    inline def setRefNull: Self = StObject.set(x, "ref", null)
+    
+    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
     inline def setRejectResponderTermination(value: Boolean): Self = StObject.set(x, "rejectResponderTermination", value.asInstanceOf[js.Any])
     
@@ -1645,9 +1643,11 @@ object TextInputPropsRefAttribut {
     
     inline def setSelectTextOnFocusUndefined: Self = StObject.set(x, "selectTextOnFocus", js.undefined)
     
-    inline def setSelection(value: End): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: Start): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
-    inline def setSelectionColor(value: js.UndefOr[ColorValue] & js.UndefOr[String]): Self = StObject.set(x, "selectionColor", value.asInstanceOf[js.Any])
+    inline def setSelectionColor(value: ColorValue): Self = StObject.set(x, "selectionColor", value.asInstanceOf[js.Any])
+    
+    inline def setSelectionColorUndefined: Self = StObject.set(x, "selectionColor", js.undefined)
     
     inline def setSelectionState(value: DocumentSelectionState): Self = StObject.set(x, "selectionState", value.asInstanceOf[js.Any])
     

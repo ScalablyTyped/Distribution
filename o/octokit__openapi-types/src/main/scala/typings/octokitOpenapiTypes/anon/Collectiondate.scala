@@ -10,7 +10,7 @@ trait Collectiondate extends StObject {
   
   var dormant_users: js.UndefOr[Dormancythreshold] = js.undefined
   
-  var ghe_stats: js.UndefOr[Comments] = js.undefined
+  var ghe_stats: js.UndefOr[Gists] = js.undefined
   
   var ghes_version: js.UndefOr[String] = js.undefined
   
@@ -39,7 +39,7 @@ object Collectiondate {
     
     inline def setDormant_usersUndefined: Self = StObject.set(x, "dormant_users", js.undefined)
     
-    inline def setGhe_stats(value: Comments): Self = StObject.set(x, "ghe_stats", value.asInstanceOf[js.Any])
+    inline def setGhe_stats(value: Gists): Self = StObject.set(x, "ghe_stats", value.asInstanceOf[js.Any])
     
     inline def setGhe_statsUndefined: Self = StObject.set(x, "ghe_stats", js.undefined)
     

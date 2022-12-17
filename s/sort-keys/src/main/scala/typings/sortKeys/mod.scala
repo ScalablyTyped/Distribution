@@ -1,5 +1,6 @@
 package typings.sortKeys
 
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +11,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def default[T /* <: Record[String, Any] */](`object`: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(`object`.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def default[T /* <: Record[String, Any] */](`object`: T, options: Options): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def default[T](`object`: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   inline def default[T](`object`: js.Array[T], options: Options): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   

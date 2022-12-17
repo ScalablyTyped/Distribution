@@ -22,7 +22,7 @@ trait PickImplcachePartialPickI
   
   var apiSettings: js.UndefOr[ApiSettings] = js.undefined
   
-  var cache: Boolean & js.UndefOr[Boolean]
+  var cache: Boolean
   
   var className: js.UndefOr[ClassNameSettings] = js.undefined
   
@@ -92,7 +92,7 @@ trait PickImplcachePartialPickI
 }
 object PickImplcachePartialPickI {
   
-  inline def apply(cache: Boolean & js.UndefOr[Boolean]): PickImplcachePartialPickI = {
+  inline def apply(cache: Boolean): PickImplcachePartialPickI = {
     val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplcachePartialPickI]
   }
@@ -103,7 +103,7 @@ object PickImplcachePartialPickI {
     
     inline def setApiSettingsUndefined: Self = StObject.set(x, "apiSettings", js.undefined)
     
-    inline def setCache(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
     inline def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

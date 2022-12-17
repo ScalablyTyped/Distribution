@@ -6,12 +6,10 @@ import typings.twitterForWeb.twitterForWebStrings.auto
 import typings.twitterForWeb.twitterForWebStrings.dark
 import typings.twitterForWeb.twitterForWebStrings.hidden
 import typings.twitterForWeb.twitterForWebStrings.large
-import typings.twitterForWeb.twitterForWebStrings.left
 import typings.twitterForWeb.twitterForWebStrings.light
 import typings.twitterForWeb.twitterForWebStrings.medium
 import typings.twitterForWeb.twitterForWebStrings.none
 import typings.twitterForWeb.twitterForWebStrings.polite
-import typings.twitterForWeb.twitterForWebStrings.right
 import typings.twitterForWeb.twitterForWebStrings.rude
 import typings.twitterForWeb.twitterForWebStrings.visible
 import org.scalablytyped.runtime.StObject
@@ -30,7 +28,7 @@ trait TwitterTimelineWidgetOptions extends StObject {
   /**
     * The alignment of the button within an iframe; use this to ensure flush layout when aligning buttons against opposite edges of your grid.
     */
-  var align: js.UndefOr[String] & (js.UndefOr[left | right])
+  var align: js.UndefOr[String] = js.undefined
   
   /**
     * Apply the specified aria-polite behavior to the rendered timeline.
@@ -134,14 +132,16 @@ trait TwitterTimelineWidgetOptions extends StObject {
 }
 object TwitterTimelineWidgetOptions {
   
-  inline def apply(align: js.UndefOr[String] & (js.UndefOr[left | right])): TwitterTimelineWidgetOptions = {
-    val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any])
+  inline def apply(): TwitterTimelineWidgetOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TwitterTimelineWidgetOptions]
   }
   
   extension [Self <: TwitterTimelineWidgetOptions](x: Self) {
     
-    inline def setAlign(value: js.UndefOr[String] & (js.UndefOr[left | right])): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
     inline def setAriaPolite(value: polite | assertive | rude): Self = StObject.set(x, "ariaPolite", value.asInstanceOf[js.Any])
     

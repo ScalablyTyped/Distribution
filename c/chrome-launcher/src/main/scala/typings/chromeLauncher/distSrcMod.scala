@@ -13,15 +13,6 @@ object distSrcMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("chrome-launcher/dist/src", JSImport.Default)
-  @js.native
-  open class default ()
-    extends typings.chromeLauncher.distSrcChromeLauncherMod.default {
-    def this(opts: Options) = this()
-    def this(opts: Unit, moduleOverrides: ModuleOverrides) = this()
-    def this(opts: Options, moduleOverrides: ModuleOverrides) = this()
-  }
-  
   @JSImport("chrome-launcher/dist/src", "Launcher")
   @js.native
   open class Launcher ()

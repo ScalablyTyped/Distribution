@@ -19,12 +19,12 @@ object anon {
     var name: String
     
     /* standard es5 */
-    var stack: js.UndefOr[String] & String
+    var stack: js.UndefOr[String] = js.undefined
   }
   object ErrorWithStackError {
     
-    inline def apply(message: String, name: String, stack: js.UndefOr[String] & String): ErrorWithStackError = {
-      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
+    inline def apply(message: String, name: String): ErrorWithStackError = {
+      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrorWithStackError]
     }
     
@@ -38,7 +38,9 @@ object anon {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setStack(value: js.UndefOr[String] & String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      
+      inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     }
   }
   

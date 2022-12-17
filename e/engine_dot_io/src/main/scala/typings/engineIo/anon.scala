@@ -281,13 +281,13 @@ object anon {
   
   trait Data extends StObject {
     
-    var data: Buffer
+    var data: Any
     
     var `type`: String
   }
   object Data {
     
-    inline def apply(data: Buffer, `type`: String): Data = {
+    inline def apply(data: Any, `type`: String): Data = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
@@ -295,7 +295,7 @@ object anon {
     
     extension [Self <: Data](x: Self) {
       
-      inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -303,13 +303,13 @@ object anon {
   
   trait DataType extends StObject {
     
-    var data: Unit
+    var data: Buffer
     
     var `type`: String
   }
   object DataType {
     
-    inline def apply(data: Unit, `type`: String): DataType = {
+    inline def apply(data: Buffer, `type`: String): DataType = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[DataType]
@@ -317,7 +317,7 @@ object anon {
     
     extension [Self <: DataType](x: Self) {
       
-      inline def setData(value: Unit): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -342,13 +342,13 @@ object anon {
   
   trait Type extends StObject {
     
-    var data: Any
+    var data: Unit
     
     var `type`: String
   }
   object Type {
     
-    inline def apply(data: Any, `type`: String): Type = {
+    inline def apply(data: Unit, `type`: String): Type = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Type]
@@ -356,7 +356,7 @@ object anon {
     
     extension [Self <: Type](x: Self) {
       
-      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Unit): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

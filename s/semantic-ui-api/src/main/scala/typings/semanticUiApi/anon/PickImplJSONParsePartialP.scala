@@ -10,7 +10,7 @@ trait PickImplJSONParsePartialP
   extends StObject
      with Param {
   
-  var JSONParse: String & js.UndefOr[String]
+  var JSONParse: String
   
   var beforeSend: js.UndefOr[String] = js.undefined
   
@@ -38,7 +38,7 @@ trait PickImplJSONParsePartialP
 }
 object PickImplJSONParsePartialP {
   
-  inline def apply(JSONParse: String & js.UndefOr[String]): PickImplJSONParsePartialP = {
+  inline def apply(JSONParse: String): PickImplJSONParsePartialP = {
     val __obj = js.Dynamic.literal(JSONParse = JSONParse.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplJSONParsePartialP]
   }
@@ -57,7 +57,7 @@ object PickImplJSONParsePartialP {
     
     inline def setExitConditionsUndefined: Self = StObject.set(x, "exitConditions", js.undefined)
     
-    inline def setJSONParse(value: String & js.UndefOr[String]): Self = StObject.set(x, "JSONParse", value.asInstanceOf[js.Any])
+    inline def setJSONParse(value: String): Self = StObject.set(x, "JSONParse", value.asInstanceOf[js.Any])
     
     inline def setLegacyParameters(value: String): Self = StObject.set(x, "legacyParameters", value.asInstanceOf[js.Any])
     

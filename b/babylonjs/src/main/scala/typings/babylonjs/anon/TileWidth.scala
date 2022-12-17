@@ -24,13 +24,13 @@ trait TileWidth extends StObject {
   
   var sideOrientation: js.UndefOr[Double] = js.undefined
   
-  var size: js.UndefOr[Double] = js.undefined
-  
   var tileHeight: js.UndefOr[Double] = js.undefined
   
   var tileSize: js.UndefOr[Double] = js.undefined
   
   var tileWidth: js.UndefOr[Double] = js.undefined
+  
+  var updatable: js.UndefOr[Boolean] = js.undefined
   
   var width: js.UndefOr[Double] = js.undefined
 }
@@ -79,10 +79,6 @@ object TileWidth {
     
     inline def setSideOrientationUndefined: Self = StObject.set(x, "sideOrientation", js.undefined)
     
-    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-    
-    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    
     inline def setTileHeight(value: Double): Self = StObject.set(x, "tileHeight", value.asInstanceOf[js.Any])
     
     inline def setTileHeightUndefined: Self = StObject.set(x, "tileHeight", js.undefined)
@@ -94,6 +90,10 @@ object TileWidth {
     inline def setTileWidth(value: Double): Self = StObject.set(x, "tileWidth", value.asInstanceOf[js.Any])
     
     inline def setTileWidthUndefined: Self = StObject.set(x, "tileWidth", js.undefined)
+    
+    inline def setUpdatable(value: Boolean): Self = StObject.set(x, "updatable", value.asInstanceOf[js.Any])
+    
+    inline def setUpdatableUndefined: Self = StObject.set(x, "updatable", js.undefined)
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

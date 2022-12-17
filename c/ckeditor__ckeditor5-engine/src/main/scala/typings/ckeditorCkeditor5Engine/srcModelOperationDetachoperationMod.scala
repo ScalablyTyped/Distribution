@@ -1,6 +1,6 @@
 package typings.ckeditorCkeditor5Engine
 
-import typings.ckeditorCkeditor5Engine.anon.`13`
+import typings.ckeditorCkeditor5Engine.anon.`12`
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.detach
 import typings.ckeditorCkeditor5Engine.srcModelOperationOperationMod.Operation
 import org.scalablytyped.runtime.StObject
@@ -51,7 +51,7 @@ object srcModelOperationDetachoperationMod {
       * Custom toJSON method to solve child-parent circular dependencies.
       */
     /* CompleteClass */
-    override def toJSON(): `13` = js.native
+    override def toJSON(): `12` = js.native
     
     /**
       * Operation type.
@@ -93,7 +93,7 @@ object srcModelOperationDetachoperationMod {
       howMany: Double,
       isDocumentOperation: Boolean,
       sourcePosition: typings.ckeditorCkeditor5Engine.srcModelPositionMod.default,
-      toJSON: () => `13`
+      toJSON: () => `12`
     ): DetachOperation = {
       val __obj = js.Dynamic.literal(howMany = howMany.asInstanceOf[js.Any], isDocumentOperation = isDocumentOperation.asInstanceOf[js.Any], sourcePosition = sourcePosition.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), baseVersion = null, batch = null)
       __obj.updateDynamic("type")("detach")

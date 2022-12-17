@@ -22,7 +22,7 @@ trait PickImplmenuPartialPickIm
   
   var label: js.UndefOr[String] = js.undefined
   
-  var menu: String & js.UndefOr[String]
+  var menu: String
   
   var menuIcon: js.UndefOr[String] = js.undefined
   
@@ -38,7 +38,7 @@ trait PickImplmenuPartialPickIm
 }
 object PickImplmenuPartialPickIm {
   
-  inline def apply(menu: String & js.UndefOr[String]): PickImplmenuPartialPickIm = {
+  inline def apply(menu: String): PickImplmenuPartialPickIm = {
     val __obj = js.Dynamic.literal(menu = menu.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmenuPartialPickIm]
   }
@@ -69,7 +69,7 @@ object PickImplmenuPartialPickIm {
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    inline def setMenu(value: String & js.UndefOr[String]): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+    inline def setMenu(value: String): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     
     inline def setMenuIcon(value: String): Self = StObject.set(x, "menuIcon", value.asInstanceOf[js.Any])
     

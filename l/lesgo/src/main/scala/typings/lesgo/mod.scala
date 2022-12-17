@@ -11,9 +11,7 @@ import typings.lesgo.middlewaresErrorHttpResponseMiddlewareMod.ErrorHttpMiddlewa
 import typings.lesgo.middlewaresNormalizeHttpRequestMiddlewareMod.NormalizeHttpMiddlewareOptions
 import typings.lesgo.middlewaresSuccessHttpResponseMiddlewareMod.SuccessHttpMiddlewareOptions
 import typings.lesgo.servicesAuroraDbServiceMod.default
-import typings.lesgo.utilsValidateFieldsMod.Validation
 import typings.node.cryptoMod.BinaryLike
-import typings.std.Partial
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,11 +22,6 @@ object mod {
   @JSImport("lesgo", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
-  
-  inline def default[TParams /* <: Record[String, Any] */](
-    params: Partial[Record[/* keyof TParams */ String, Any]],
-    validFields: js.Array[Validation[String]]
-  ): Partial[Record[/* keyof TParams */ String, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any], validFields.asInstanceOf[js.Any])).asInstanceOf[Partial[Record[/* keyof TParams */ String, Any]]]
   
   @JSImport("lesgo", "LesgoException")
   @js.native

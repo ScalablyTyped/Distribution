@@ -24,7 +24,7 @@ trait ActorAssignee extends StObject {
   
   var node_id: String
   
-  var performed_via_github_app: Clientsecret
+  var performed_via_github_app: Externalurl
   
   var url: String
 }
@@ -38,7 +38,7 @@ object ActorAssignee {
     event: String,
     id: Double,
     node_id: String,
-    performed_via_github_app: Clientsecret,
+    performed_via_github_app: Externalurl,
     url: String
   ): ActorAssignee = {
     val __obj = js.Dynamic.literal(actor = actor.asInstanceOf[js.Any], assignee = assignee.asInstanceOf[js.Any], assigner = assigner.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], performed_via_github_app = performed_via_github_app.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], commit_id = null, commit_url = null)
@@ -69,7 +69,7 @@ object ActorAssignee {
     
     inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
-    inline def setPerformed_via_github_app(value: Clientsecret): Self = StObject.set(x, "performed_via_github_app", value.asInstanceOf[js.Any])
+    inline def setPerformed_via_github_app(value: Externalurl): Self = StObject.set(x, "performed_via_github_app", value.asInstanceOf[js.Any])
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

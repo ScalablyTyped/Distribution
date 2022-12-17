@@ -173,43 +173,15 @@ object anon {
   trait ErrMsg extends StObject {
     
     var errMsg: String
-    
-    // weixin album camera
-    var localIds: js.Array[String]
-    
-    var sourceType: String
   }
   object ErrMsg {
     
-    inline def apply(errMsg: String, localIds: js.Array[String], sourceType: String): ErrMsg = {
-      val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], localIds = localIds.asInstanceOf[js.Any], sourceType = sourceType.asInstanceOf[js.Any])
+    inline def apply(errMsg: String): ErrMsg = {
+      val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrMsg]
     }
     
     extension [Self <: ErrMsg](x: Self) {
-      
-      inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
-      
-      inline def setLocalIds(value: js.Array[String]): Self = StObject.set(x, "localIds", value.asInstanceOf[js.Any])
-      
-      inline def setLocalIdsVarargs(value: String*): Self = StObject.set(x, "localIds", js.Array(value*))
-      
-      inline def setSourceType(value: String): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait ErrMsgString extends StObject {
-    
-    var errMsg: String
-  }
-  object ErrMsgString {
-    
-    inline def apply(errMsg: String): ErrMsgString = {
-      val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ErrMsgString]
-    }
-    
-    extension [Self <: ErrMsgString](x: Self) {
       
       inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     }
@@ -229,6 +201,34 @@ object anon {
     extension [Self <: LocalData](x: Self) {
       
       inline def setLocalData(value: String): Self = StObject.set(x, "localData", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait LocalIds extends StObject {
+    
+    var errMsg: String
+    
+    // weixin album camera
+    var localIds: js.Array[String]
+    
+    var sourceType: String
+  }
+  object LocalIds {
+    
+    inline def apply(errMsg: String, localIds: js.Array[String], sourceType: String): LocalIds = {
+      val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], localIds = localIds.asInstanceOf[js.Any], sourceType = sourceType.asInstanceOf[js.Any])
+      __obj.asInstanceOf[LocalIds]
+    }
+    
+    extension [Self <: LocalIds](x: Self) {
+      
+      inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+      
+      inline def setLocalIds(value: js.Array[String]): Self = StObject.set(x, "localIds", value.asInstanceOf[js.Any])
+      
+      inline def setLocalIdsVarargs(value: String*): Self = StObject.set(x, "localIds", js.Array(value*))
+      
+      inline def setSourceType(value: String): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     }
   }
   

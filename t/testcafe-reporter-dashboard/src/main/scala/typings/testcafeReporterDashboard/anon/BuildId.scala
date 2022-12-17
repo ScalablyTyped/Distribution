@@ -4,6 +4,7 @@ import typings.ioTs.mod.ArrayC
 import typings.ioTs.mod.BrandC
 import typings.ioTs.mod.ExactC
 import typings.ioTs.mod.NumberC
+import typings.ioTs.mod.PartialC
 import typings.ioTs.mod.ReadonlyC
 import typings.ioTs.mod.StringC
 import typings.ioTs.mod.TypeC
@@ -20,27 +21,27 @@ trait BuildId extends StObject {
   
   var buildId: UnionC[js.Tuple2[BrandC[StringC, MaxLengthString[`100`]], UndefinedC]]
   
-  var endTime: DateFromISOStringC
+  var ciInfo: UnionC[js.Tuple2[UndefinedC, ReadonlyC[ExactC[PartialC[Author]]]]]
   
-  var passed: NumberC
+  var startTime: DateFromISOStringC
   
-  var result: ReadonlyC[ExactC[TypeC[FailedCount]]]
+  var taskStructure: ArrayC[ReadonlyC[ExactC[TypeC[Fixture]]]]
   
-  var warnings: ArrayC[StringC]
+  var testCount: NumberC
   
-  var warningsUploadId: UnionC[js.Tuple2[StringC, UndefinedC]]
+  var userAgents: ArrayC[StringC]
 }
 object BuildId {
   
   inline def apply(
     buildId: UnionC[js.Tuple2[BrandC[StringC, MaxLengthString[`100`]], UndefinedC]],
-    endTime: DateFromISOStringC,
-    passed: NumberC,
-    result: ReadonlyC[ExactC[TypeC[FailedCount]]],
-    warnings: ArrayC[StringC],
-    warningsUploadId: UnionC[js.Tuple2[StringC, UndefinedC]]
+    ciInfo: UnionC[js.Tuple2[UndefinedC, ReadonlyC[ExactC[PartialC[Author]]]]],
+    startTime: DateFromISOStringC,
+    taskStructure: ArrayC[ReadonlyC[ExactC[TypeC[Fixture]]]],
+    testCount: NumberC,
+    userAgents: ArrayC[StringC]
   ): BuildId = {
-    val __obj = js.Dynamic.literal(buildId = buildId.asInstanceOf[js.Any], endTime = endTime.asInstanceOf[js.Any], passed = passed.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], warnings = warnings.asInstanceOf[js.Any], warningsUploadId = warningsUploadId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(buildId = buildId.asInstanceOf[js.Any], ciInfo = ciInfo.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], taskStructure = taskStructure.asInstanceOf[js.Any], testCount = testCount.asInstanceOf[js.Any], userAgents = userAgents.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildId]
   }
   
@@ -48,14 +49,14 @@ object BuildId {
     
     inline def setBuildId(value: UnionC[js.Tuple2[BrandC[StringC, MaxLengthString[`100`]], UndefinedC]]): Self = StObject.set(x, "buildId", value.asInstanceOf[js.Any])
     
-    inline def setEndTime(value: DateFromISOStringC): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setCiInfo(value: UnionC[js.Tuple2[UndefinedC, ReadonlyC[ExactC[PartialC[Author]]]]]): Self = StObject.set(x, "ciInfo", value.asInstanceOf[js.Any])
     
-    inline def setPassed(value: NumberC): Self = StObject.set(x, "passed", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: DateFromISOStringC): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    inline def setResult(value: ReadonlyC[ExactC[TypeC[FailedCount]]]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setTaskStructure(value: ArrayC[ReadonlyC[ExactC[TypeC[Fixture]]]]): Self = StObject.set(x, "taskStructure", value.asInstanceOf[js.Any])
     
-    inline def setWarnings(value: ArrayC[StringC]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+    inline def setTestCount(value: NumberC): Self = StObject.set(x, "testCount", value.asInstanceOf[js.Any])
     
-    inline def setWarningsUploadId(value: UnionC[js.Tuple2[StringC, UndefinedC]]): Self = StObject.set(x, "warningsUploadId", value.asInstanceOf[js.Any])
+    inline def setUserAgents(value: ArrayC[StringC]): Self = StObject.set(x, "userAgents", value.asInstanceOf[js.Any])
   }
 }

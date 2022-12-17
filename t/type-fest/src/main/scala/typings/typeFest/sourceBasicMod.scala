@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object sourceBasicMod {
   
-  type Class[T, Arguments /* <: js.Array[Any] */] = (Constructor[T, Arguments]) & js.Object
+  type Class[T, Arguments /* <: js.Array[Any] */] = Constructor[T, Arguments]
   
   type Constructor[T, Arguments /* <: js.Array[Any] */] = Instantiable1[/* arguments_ */ Arguments, T]
   

@@ -42,7 +42,7 @@ trait PickImplminCharactersPart
   
   var metadata: js.UndefOr[MetadataSettings] = js.undefined
   
-  var minCharacters: Double & js.UndefOr[Double]
+  var minCharacters: Double
   
   var name: js.UndefOr[String] = js.undefined
   
@@ -92,7 +92,7 @@ trait PickImplminCharactersPart
 }
 object PickImplminCharactersPart {
   
-  inline def apply(minCharacters: Double & js.UndefOr[Double]): PickImplminCharactersPart = {
+  inline def apply(minCharacters: Double): PickImplminCharactersPart = {
     val __obj = js.Dynamic.literal(minCharacters = minCharacters.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplminCharactersPart]
   }
@@ -143,7 +143,7 @@ object PickImplminCharactersPart {
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    inline def setMinCharacters(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "minCharacters", value.asInstanceOf[js.Any])
+    inline def setMinCharacters(value: Double): Self = StObject.set(x, "minCharacters", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

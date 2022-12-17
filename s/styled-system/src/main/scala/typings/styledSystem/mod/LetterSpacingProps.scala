@@ -28,6 +28,6 @@ object LetterSpacingProps {
     
     inline def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
     
-    inline def setLetterSpacingVarargs(value: (TVal | Null)*): Self = StObject.set(x, "letterSpacing", js.Array(value :_*))
+    inline def setLetterSpacingVarargs(value: (TVal | Null)*): Self = StObject.set(x, "letterSpacing", js.Array(value*))
   }
 }

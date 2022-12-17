@@ -162,7 +162,7 @@ object Circle {
     /**
       * 多边形轮廓线的节点坐标数组
       */
-    var path: (js.Array[js.Array[LngLat] | LngLat]) & js.Array[LngLat]
+    var path: js.Array[js.Array[LngLat] | LngLat]
     
     var radius: Double
     
@@ -209,7 +209,7 @@ object Circle {
       fillOpacity: Double,
       lineJoin: StrokeLineJoin,
       map: Map,
-      path: (js.Array[js.Array[LngLat] | LngLat]) & js.Array[LngLat],
+      path: js.Array[js.Array[LngLat] | LngLat],
       radius: Double,
       strokeColor: String,
       strokeDasharray: js.Array[Double],
@@ -241,7 +241,9 @@ object Circle {
       
       inline def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      inline def setPath(value: (js.Array[js.Array[LngLat] | LngLat]) & js.Array[LngLat]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: js.Array[js.Array[LngLat] | LngLat]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      
+      inline def setPathVarargs(value: (js.Array[LngLat] | LngLat)*): Self = StObject.set(x, "path", js.Array(value*))
       
       inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       

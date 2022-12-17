@@ -6,33 +6,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Base extends StObject {
   
-  var base: Ref
+  /** @description The name of the base branch that the head will be merged into. */
+  var base: String
   
-  var head: Ref
+  /** @description Commit message to use for the merge commit. If omitted, a default message will be used. */
+  var commit_message: js.UndefOr[String] = js.undefined
   
-  var id: Double
-  
-  var number: Double
-  
-  var url: String
+  /** @description The head to merge. This can be a branch name or a commit SHA1. */
+  var head: String
 }
 object Base {
   
-  inline def apply(base: Ref, head: Ref, id: Double, number: Double, url: String): Base = {
-    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+  inline def apply(base: String, head: String): Base = {
+    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any])
     __obj.asInstanceOf[Base]
   }
   
   extension [Self <: Base](x: Self) {
     
-    inline def setBase(value: Ref): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
-    inline def setHead(value: Ref): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+    inline def setCommit_message(value: String): Self = StObject.set(x, "commit_message", value.asInstanceOf[js.Any])
     
-    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setCommit_messageUndefined: Self = StObject.set(x, "commit_message", js.undefined)
     
-    inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
-    
-    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setHead(value: String): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
   }
 }

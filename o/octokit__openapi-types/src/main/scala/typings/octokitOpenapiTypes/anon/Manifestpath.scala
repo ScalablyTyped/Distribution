@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Manifestpath extends StObject {
   
   @JSName("package")
-  var _package: js.UndefOr[Ecosystem] = js.undefined
+  var _package: js.UndefOr[EcosystemName] = js.undefined
   
   /** @description The path to the manifest filename. */
   var manifest_path: js.UndefOr[String] = js.undefined
@@ -35,7 +35,7 @@ object Manifestpath {
     
     inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    inline def set_package(value: Ecosystem): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+    inline def set_package(value: EcosystemName): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
     
     inline def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
   }

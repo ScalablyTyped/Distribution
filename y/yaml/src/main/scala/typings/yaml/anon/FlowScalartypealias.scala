@@ -20,7 +20,7 @@ trait FlowScalartypealias extends StObject {
   
   var source: String
   
-  var `type`: (alias | scalar | `single-quoted-scalar` | `double-quoted-scalar`) & alias
+  var `type`: alias | scalar | `single-quoted-scalar` | `double-quoted-scalar`
 }
 object FlowScalartypealias {
   
@@ -28,7 +28,7 @@ object FlowScalartypealias {
     indent: Double,
     offset: Double,
     source: String,
-    `type`: (alias | scalar | `single-quoted-scalar` | `double-quoted-scalar`) & alias
+    `type`: alias | scalar | `single-quoted-scalar` | `double-quoted-scalar`
   ): FlowScalartypealias = {
     val __obj = js.Dynamic.literal(indent = indent.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -49,6 +49,6 @@ object FlowScalartypealias {
     
     inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    inline def setType(value: (alias | scalar | `single-quoted-scalar` | `double-quoted-scalar`) & alias): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: alias | scalar | `single-quoted-scalar` | `double-quoted-scalar`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

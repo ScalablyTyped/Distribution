@@ -18,11 +18,11 @@ trait PickImplpusherPartialPickMethod
   
   var overlay: js.UndefOr[String] = js.undefined
   
-  var pusher: String & js.UndefOr[String]
+  var pusher: String
 }
 object PickImplpusherPartialPickMethod {
   
-  inline def apply(pusher: String & js.UndefOr[String]): PickImplpusherPartialPickMethod = {
+  inline def apply(pusher: String): PickImplpusherPartialPickMethod = {
     val __obj = js.Dynamic.literal(pusher = pusher.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplpusherPartialPickMethod]
   }
@@ -45,6 +45,6 @@ object PickImplpusherPartialPickMethod {
     
     inline def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
     
-    inline def setPusher(value: String & js.UndefOr[String]): Self = StObject.set(x, "pusher", value.asInstanceOf[js.Any])
+    inline def setPusher(value: String): Self = StObject.set(x, "pusher", value.asInstanceOf[js.Any])
   }
 }

@@ -16,13 +16,13 @@ trait PickImplpositionPartialPiLoading
   
   var popupVisible: js.UndefOr[String] = js.undefined
   
-  var position: String & js.UndefOr[String]
+  var position: String
   
   var visible: js.UndefOr[String] = js.undefined
 }
 object PickImplpositionPartialPiLoading {
   
-  inline def apply(position: String & js.UndefOr[String]): PickImplpositionPartialPiLoading = {
+  inline def apply(position: String): PickImplpositionPartialPiLoading = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplpositionPartialPiLoading]
   }
@@ -41,7 +41,7 @@ object PickImplpositionPartialPiLoading {
     
     inline def setPopupVisibleUndefined: Self = StObject.set(x, "popupVisible", js.undefined)
     
-    inline def setPosition(value: String & js.UndefOr[String]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     inline def setVisible(value: String): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     

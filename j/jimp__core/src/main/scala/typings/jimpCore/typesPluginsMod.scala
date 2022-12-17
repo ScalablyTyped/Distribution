@@ -38,12 +38,12 @@ object typesPluginsMod {
     
     var hasAlpha: js.UndefOr[StringDictionary[Boolean]] = js.undefined
     
-    var mime: js.UndefOr[StringDictionary[js.Array[String]]] & StringDictionary[js.Array[String]]
+    var mime: js.UndefOr[StringDictionary[js.Array[String]]] = js.undefined
   }
   object JimpType {
     
-    inline def apply[T /* <: Image */](mime: js.UndefOr[StringDictionary[js.Array[String]]] & StringDictionary[js.Array[String]]): JimpType[T] = {
-      val __obj = js.Dynamic.literal(mime = mime.asInstanceOf[js.Any])
+    inline def apply[T /* <: Image */](): JimpType[T] = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JimpType[T]]
     }
     
@@ -71,7 +71,9 @@ object typesPluginsMod {
       
       inline def setHasAlphaUndefined: Self = StObject.set(x, "hasAlpha", js.undefined)
       
-      inline def setMime(value: js.UndefOr[StringDictionary[js.Array[String]]] & StringDictionary[js.Array[String]]): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
+      inline def setMime(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
+      
+      inline def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
     }
   }
   

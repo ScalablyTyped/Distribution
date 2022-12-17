@@ -12,7 +12,7 @@ trait PickImplconfigPartialPick
   
   var cache: js.UndefOr[Any] = js.undefined
   
-  var config: Any & js.UndefOr[Any]
+  var config: Any
   
   var section: js.UndefOr[Any] = js.undefined
   
@@ -22,7 +22,7 @@ trait PickImplconfigPartialPick
 }
 object PickImplconfigPartialPick {
   
-  inline def apply(config: Any & js.UndefOr[Any]): PickImplconfigPartialPick = {
+  inline def apply(config: Any): PickImplconfigPartialPick = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplconfigPartialPick]
   }
@@ -33,7 +33,7 @@ object PickImplconfigPartialPick {
     
     inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
-    inline def setConfig(value: Any & js.UndefOr[Any]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     inline def setSection(value: Any): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
     

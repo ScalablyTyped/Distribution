@@ -1,6 +1,6 @@
 package typings.babylonjs.BABYLON
 
-import typings.babylonjs.anon.ColorDiameter
+import typings.babylonjs.anon.ColorDiameterSegments
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +39,7 @@ trait ParticleSystemSet
     * @param renderingGroupId defines the renderingGroupId to use for the sphere
     * @param scene defines the hosting scene
     */
-  def setEmitterAsSphere(options: ColorDiameter, renderingGroupId: Double, scene: Scene): Unit = js.native
+  def setEmitterAsSphere(options: ColorDiameterSegments, renderingGroupId: Double, scene: Scene): Unit = js.native
   
   /**
     * Starts all particle systems of the set

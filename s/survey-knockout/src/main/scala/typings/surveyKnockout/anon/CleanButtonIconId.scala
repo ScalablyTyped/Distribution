@@ -12,9 +12,15 @@ trait CleanButtonIconId extends StObject {
   
   var cleanButtonSvg: String
   
+  var cleanItemButton: String
+  
+  var cleanItemButtonIconId: String
+  
+  var cleanItemButtonSvg: String
+  
   var control: String
   
-  var controlInputFieldComponent: String
+  var controlEmpty: String
   
   var controlValue: String
   
@@ -22,9 +28,13 @@ trait CleanButtonIconId extends StObject {
   
   var other: String
   
+  var placeholderInput: String
+  
   var root: String
   
   var selectWrapper: String
+  
+  var small: String
 }
 object CleanButtonIconId {
   
@@ -32,15 +42,20 @@ object CleanButtonIconId {
     cleanButton: String,
     cleanButtonIconId: String,
     cleanButtonSvg: String,
+    cleanItemButton: String,
+    cleanItemButtonIconId: String,
+    cleanItemButtonSvg: String,
     control: String,
-    controlInputFieldComponent: String,
+    controlEmpty: String,
     controlValue: String,
     filterStringInput: String,
     other: String,
+    placeholderInput: String,
     root: String,
-    selectWrapper: String
+    selectWrapper: String,
+    small: String
   ): CleanButtonIconId = {
-    val __obj = js.Dynamic.literal(cleanButton = cleanButton.asInstanceOf[js.Any], cleanButtonIconId = cleanButtonIconId.asInstanceOf[js.Any], cleanButtonSvg = cleanButtonSvg.asInstanceOf[js.Any], control = control.asInstanceOf[js.Any], controlInputFieldComponent = controlInputFieldComponent.asInstanceOf[js.Any], controlValue = controlValue.asInstanceOf[js.Any], filterStringInput = filterStringInput.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], selectWrapper = selectWrapper.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cleanButton = cleanButton.asInstanceOf[js.Any], cleanButtonIconId = cleanButtonIconId.asInstanceOf[js.Any], cleanButtonSvg = cleanButtonSvg.asInstanceOf[js.Any], cleanItemButton = cleanItemButton.asInstanceOf[js.Any], cleanItemButtonIconId = cleanItemButtonIconId.asInstanceOf[js.Any], cleanItemButtonSvg = cleanItemButtonSvg.asInstanceOf[js.Any], control = control.asInstanceOf[js.Any], controlEmpty = controlEmpty.asInstanceOf[js.Any], controlValue = controlValue.asInstanceOf[js.Any], filterStringInput = filterStringInput.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], placeholderInput = placeholderInput.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], selectWrapper = selectWrapper.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any])
     __obj.asInstanceOf[CleanButtonIconId]
   }
   
@@ -52,9 +67,15 @@ object CleanButtonIconId {
     
     inline def setCleanButtonSvg(value: String): Self = StObject.set(x, "cleanButtonSvg", value.asInstanceOf[js.Any])
     
+    inline def setCleanItemButton(value: String): Self = StObject.set(x, "cleanItemButton", value.asInstanceOf[js.Any])
+    
+    inline def setCleanItemButtonIconId(value: String): Self = StObject.set(x, "cleanItemButtonIconId", value.asInstanceOf[js.Any])
+    
+    inline def setCleanItemButtonSvg(value: String): Self = StObject.set(x, "cleanItemButtonSvg", value.asInstanceOf[js.Any])
+    
     inline def setControl(value: String): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
     
-    inline def setControlInputFieldComponent(value: String): Self = StObject.set(x, "controlInputFieldComponent", value.asInstanceOf[js.Any])
+    inline def setControlEmpty(value: String): Self = StObject.set(x, "controlEmpty", value.asInstanceOf[js.Any])
     
     inline def setControlValue(value: String): Self = StObject.set(x, "controlValue", value.asInstanceOf[js.Any])
     
@@ -62,8 +83,12 @@ object CleanButtonIconId {
     
     inline def setOther(value: String): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
     
+    inline def setPlaceholderInput(value: String): Self = StObject.set(x, "placeholderInput", value.asInstanceOf[js.Any])
+    
     inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     inline def setSelectWrapper(value: String): Self = StObject.set(x, "selectWrapper", value.asInstanceOf[js.Any])
+    
+    inline def setSmall(value: String): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
   }
 }

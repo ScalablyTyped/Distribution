@@ -7,13 +7,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BundleGraphConfig[ConfigType] extends StObject {
+trait BundleGraphConfig extends StObject {
   
   var bundle: NamedBundle
   
   var bundleGraph: typings.parcelTypes.mod.BundleGraph[NamedBundle]
   
-  var config: ConfigType
+  var config: typings.parcelTypes.mod.Config
   
   var logger: PluginLogger
   
@@ -21,24 +21,24 @@ trait BundleGraphConfig[ConfigType] extends StObject {
 }
 object BundleGraphConfig {
   
-  inline def apply[ConfigType](
+  inline def apply(
     bundle: NamedBundle,
     bundleGraph: typings.parcelTypes.mod.BundleGraph[NamedBundle],
-    config: ConfigType,
+    config: typings.parcelTypes.mod.Config,
     logger: PluginLogger,
     options: PluginOptions
-  ): BundleGraphConfig[ConfigType] = {
+  ): BundleGraphConfig = {
     val __obj = js.Dynamic.literal(bundle = bundle.asInstanceOf[js.Any], bundleGraph = bundleGraph.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], logger = logger.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BundleGraphConfig[ConfigType]]
+    __obj.asInstanceOf[BundleGraphConfig]
   }
   
-  extension [Self <: BundleGraphConfig[?], ConfigType](x: Self & BundleGraphConfig[ConfigType]) {
+  extension [Self <: BundleGraphConfig](x: Self) {
     
     inline def setBundle(value: NamedBundle): Self = StObject.set(x, "bundle", value.asInstanceOf[js.Any])
     
     inline def setBundleGraph(value: typings.parcelTypes.mod.BundleGraph[NamedBundle]): Self = StObject.set(x, "bundleGraph", value.asInstanceOf[js.Any])
     
-    inline def setConfig(value: ConfigType): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: typings.parcelTypes.mod.Config): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     inline def setLogger(value: PluginLogger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     

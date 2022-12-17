@@ -29,6 +29,6 @@ object LeftProps {
     
     inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
-    inline def setLeftVarargs(value: (TVal | Null)*): Self = StObject.set(x, "left", js.Array(value :_*))
+    inline def setLeftVarargs(value: (TVal | Null)*): Self = StObject.set(x, "left", js.Array(value*))
   }
 }

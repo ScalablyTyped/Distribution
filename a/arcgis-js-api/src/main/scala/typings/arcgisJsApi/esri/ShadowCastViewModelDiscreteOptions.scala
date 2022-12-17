@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.HashMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,12 +35,8 @@ trait ShadowCastViewModelDiscreteOptions
 }
 object ShadowCastViewModelDiscreteOptions {
   
-  inline def apply(
-    set: (js.UndefOr[
-      js.Function2[/* propertyName */ String, /* value */ Any, ShadowCastViewModelDiscreteOptions]
-    ]) & (js.UndefOr[js.Function1[/* props */ HashMap[Any], ShadowCastViewModelDiscreteOptions]])
-  ): ShadowCastViewModelDiscreteOptions = {
-    val __obj = js.Dynamic.literal(set = set.asInstanceOf[js.Any])
+  inline def apply(): ShadowCastViewModelDiscreteOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShadowCastViewModelDiscreteOptions]
   }
   

@@ -77,80 +77,6 @@ object anon {
     
     var Encryption: js.UndefOr[KMSMasterKeyID] = js.undefined
     
-    var LegalHold: js.UndefOr[LegalHoldStatus] = js.undefined
-    
-    var Mode: js.UndefOr[typings.minio.mod.Mode] = js.undefined
-    
-    var Object: String
-    
-    var RetainUntilDate: js.UndefOr[String] = js.undefined
-    
-    var UserMetadata: js.UndefOr[Record[String, Any]] = js.undefined
-    
-    var UserTags: js.UndefOr[(Record[String, Any]) | String] = js.undefined
-  }
-  object Bucket {
-    
-    inline def apply(Bucket: String, Object: String): Bucket = {
-      val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Object = Object.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Bucket]
-    }
-    
-    extension [Self <: Bucket](x: Self) {
-      
-      inline def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
-      
-      inline def setEncryption(value: KMSMasterKeyID): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
-      
-      inline def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
-      
-      inline def setLegalHold(value: LegalHoldStatus): Self = StObject.set(x, "LegalHold", value.asInstanceOf[js.Any])
-      
-      inline def setLegalHoldUndefined: Self = StObject.set(x, "LegalHold", js.undefined)
-      
-      inline def setMode(value: Mode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
-      
-      inline def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
-      
-      inline def setObject(value: String): Self = StObject.set(x, "Object", value.asInstanceOf[js.Any])
-      
-      inline def setRetainUntilDate(value: String): Self = StObject.set(x, "RetainUntilDate", value.asInstanceOf[js.Any])
-      
-      inline def setRetainUntilDateUndefined: Self = StObject.set(x, "RetainUntilDate", js.undefined)
-      
-      inline def setUserMetadata(value: Record[String, Any]): Self = StObject.set(x, "UserMetadata", value.asInstanceOf[js.Any])
-      
-      inline def setUserMetadataUndefined: Self = StObject.set(x, "UserMetadata", js.undefined)
-      
-      inline def setUserTags(value: (Record[String, Any]) | String): Self = StObject.set(x, "UserTags", value.asInstanceOf[js.Any])
-      
-      inline def setUserTagsUndefined: Self = StObject.set(x, "UserTags", js.undefined)
-    }
-  }
-  
-  trait Enabled extends StObject {
-    
-    var Enabled: Boolean
-  }
-  object Enabled {
-    
-    inline def apply(Enabled: Boolean): Enabled = {
-      val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Enabled]
-    }
-    
-    extension [Self <: Enabled](x: Self) {
-      
-      inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Encryption extends StObject {
-    
-    var Bucket: String
-    
-    var Encryption: js.UndefOr[KMSMasterKeyID] = js.undefined
-    
     var End: js.UndefOr[Double] = js.undefined
     
     var MatchETag: js.UndefOr[String] = js.undefined
@@ -169,14 +95,14 @@ object anon {
     
     var VersionID: js.UndefOr[String] = js.undefined
   }
-  object Encryption {
+  object Bucket {
     
-    inline def apply(Bucket: String, Object: String): Encryption = {
+    inline def apply(Bucket: String, Object: String): Bucket = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Object = Object.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Encryption]
+      __obj.asInstanceOf[Bucket]
     }
     
-    extension [Self <: Encryption](x: Self) {
+    extension [Self <: Bucket](x: Self) {
       
       inline def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
       
@@ -217,6 +143,80 @@ object anon {
       inline def setVersionID(value: String): Self = StObject.set(x, "VersionID", value.asInstanceOf[js.Any])
       
       inline def setVersionIDUndefined: Self = StObject.set(x, "VersionID", js.undefined)
+    }
+  }
+  
+  trait Enabled extends StObject {
+    
+    var Enabled: Boolean
+  }
+  object Enabled {
+    
+    inline def apply(Enabled: Boolean): Enabled = {
+      val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Enabled]
+    }
+    
+    extension [Self <: Enabled](x: Self) {
+      
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Encryption extends StObject {
+    
+    var Bucket: String
+    
+    var Encryption: js.UndefOr[KMSMasterKeyID] = js.undefined
+    
+    var LegalHold: js.UndefOr[LegalHoldStatus] = js.undefined
+    
+    var Mode: js.UndefOr[typings.minio.mod.Mode] = js.undefined
+    
+    var Object: String
+    
+    var RetainUntilDate: js.UndefOr[String] = js.undefined
+    
+    var UserMetadata: js.UndefOr[Record[String, Any]] = js.undefined
+    
+    var UserTags: js.UndefOr[(Record[String, Any]) | String] = js.undefined
+  }
+  object Encryption {
+    
+    inline def apply(Bucket: String, Object: String): Encryption = {
+      val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Object = Object.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Encryption]
+    }
+    
+    extension [Self <: Encryption](x: Self) {
+      
+      inline def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+      
+      inline def setEncryption(value: KMSMasterKeyID): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
+      
+      inline def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
+      
+      inline def setLegalHold(value: LegalHoldStatus): Self = StObject.set(x, "LegalHold", value.asInstanceOf[js.Any])
+      
+      inline def setLegalHoldUndefined: Self = StObject.set(x, "LegalHold", js.undefined)
+      
+      inline def setMode(value: Mode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
+      
+      inline def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
+      
+      inline def setObject(value: String): Self = StObject.set(x, "Object", value.asInstanceOf[js.Any])
+      
+      inline def setRetainUntilDate(value: String): Self = StObject.set(x, "RetainUntilDate", value.asInstanceOf[js.Any])
+      
+      inline def setRetainUntilDateUndefined: Self = StObject.set(x, "RetainUntilDate", js.undefined)
+      
+      inline def setUserMetadata(value: Record[String, Any]): Self = StObject.set(x, "UserMetadata", value.asInstanceOf[js.Any])
+      
+      inline def setUserMetadataUndefined: Self = StObject.set(x, "UserMetadata", js.undefined)
+      
+      inline def setUserTags(value: (Record[String, Any]) | String): Self = StObject.set(x, "UserTags", value.asInstanceOf[js.Any])
+      
+      inline def setUserTagsUndefined: Self = StObject.set(x, "UserTags", js.undefined)
     }
   }
   

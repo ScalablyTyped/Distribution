@@ -12,7 +12,7 @@ trait PickImplerrorPartialPickIError
   
   var active: js.UndefOr[String] = js.undefined
   
-  var error: String & js.UndefOr[String]
+  var error: String
   
   var success: js.UndefOr[String] = js.undefined
   
@@ -20,7 +20,7 @@ trait PickImplerrorPartialPickIError
 }
 object PickImplerrorPartialPickIError {
   
-  inline def apply(error: String & js.UndefOr[String]): PickImplerrorPartialPickIError = {
+  inline def apply(error: String): PickImplerrorPartialPickIError = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplerrorPartialPickIError]
   }
@@ -31,7 +31,7 @@ object PickImplerrorPartialPickIError {
     
     inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    inline def setError(value: String & js.UndefOr[String]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     inline def setSuccess(value: String): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     

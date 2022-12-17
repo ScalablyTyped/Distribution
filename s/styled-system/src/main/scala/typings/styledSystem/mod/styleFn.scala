@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait styleFn extends StObject {
   
-  def apply(args: js.Any*): js.Any = js.native
+  def apply(args: Any*): Any = js.native
   
   var cache: js.UndefOr[js.Object] = js.native
   

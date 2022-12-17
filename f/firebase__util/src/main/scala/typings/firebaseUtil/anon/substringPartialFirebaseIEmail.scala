@@ -35,13 +35,13 @@ trait substringPartialFirebaseIEmail
   
   var provider_id: js.UndefOr[anonymous] = js.undefined
   
-  var sub: String & js.UndefOr[String]
+  var sub: String
   
   var user_id: js.UndefOr[String] = js.undefined
 }
 object substringPartialFirebaseIEmail {
   
-  inline def apply(sub: String & js.UndefOr[String]): substringPartialFirebaseIEmail = {
+  inline def apply(sub: String): substringPartialFirebaseIEmail = {
     val __obj = js.Dynamic.literal(sub = sub.asInstanceOf[js.Any])
     __obj.asInstanceOf[substringPartialFirebaseIEmail]
   }
@@ -96,7 +96,7 @@ object substringPartialFirebaseIEmail {
     
     inline def setProvider_idUndefined: Self = StObject.set(x, "provider_id", js.undefined)
     
-    inline def setSub(value: String & js.UndefOr[String]): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
+    inline def setSub(value: String): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
     
     inline def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
     

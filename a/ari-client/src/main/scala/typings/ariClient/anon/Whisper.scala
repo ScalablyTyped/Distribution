@@ -10,8 +10,6 @@ trait Whisper extends StObject {
   
   var appArgs: js.UndefOr[String] = js.undefined
   
-  var channelId: String
-  
   var snoopId: js.UndefOr[String] = js.undefined
   
   var spy: js.UndefOr[String] = js.undefined
@@ -20,8 +18,8 @@ trait Whisper extends StObject {
 }
 object Whisper {
   
-  inline def apply(app: String, channelId: String): Whisper = {
-    val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], channelId = channelId.asInstanceOf[js.Any])
+  inline def apply(app: String): Whisper = {
+    val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any])
     __obj.asInstanceOf[Whisper]
   }
   
@@ -32,8 +30,6 @@ object Whisper {
     inline def setAppArgs(value: String): Self = StObject.set(x, "appArgs", value.asInstanceOf[js.Any])
     
     inline def setAppArgsUndefined: Self = StObject.set(x, "appArgs", js.undefined)
-    
-    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
     inline def setSnoopId(value: String): Self = StObject.set(x, "snoopId", value.asInstanceOf[js.Any])
     

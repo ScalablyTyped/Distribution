@@ -126,7 +126,7 @@ object Rectangle {
     /**
       * 路径节点数组
       */
-    var path: (js.Array[js.Array[LngLat] | LngLat]) & js.Array[LngLat]
+    var path: js.Array[js.Array[LngLat] | LngLat]
     
     /**
       * 线条颜色
@@ -171,7 +171,7 @@ object Rectangle {
       fillOpacity: Double,
       lineJoin: StrokeLineJoin,
       map: Map,
-      path: (js.Array[js.Array[LngLat] | LngLat]) & js.Array[LngLat],
+      path: js.Array[js.Array[LngLat] | LngLat],
       strokeColor: String,
       strokeDasharray: js.Array[Double],
       strokeOpacity: Double,
@@ -202,7 +202,9 @@ object Rectangle {
       
       inline def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      inline def setPath(value: (js.Array[js.Array[LngLat] | LngLat]) & js.Array[LngLat]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: js.Array[js.Array[LngLat] | LngLat]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      
+      inline def setPathVarargs(value: (js.Array[LngLat] | LngLat)*): Self = StObject.set(x, "path", js.Array(value*))
       
       inline def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
       

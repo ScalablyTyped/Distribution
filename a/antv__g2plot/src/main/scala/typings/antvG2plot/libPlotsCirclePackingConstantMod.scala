@@ -1,7 +1,7 @@
 package typings.antvG2plot
 
 import typings.antvG2.libInterfaceMod.SyncViewPaddingFn
-import typings.antvG2plot.anon.OmitHierarchyOptionastype
+import typings.antvG2plot.anon.OmitHierarchyOptionastypeIgnoreParentValue
 import typings.antvG2plot.antvG2plotStrings.auto
 import typings.antvG2plot.antvG2plotStrings.canvas
 import typings.antvG2plot.antvG2plotStrings.svg
@@ -87,8 +87,8 @@ object libPlotsCirclePackingConstantMod {
     
     @JSImport("@antv/g2plot/lib/plots/circle-packing/constant", "DEFAULT_OPTIONS.hierarchyConfig")
     @js.native
-    def hierarchyConfig: js.UndefOr[OmitHierarchyOptionastype] = js.native
-    inline def hierarchyConfig_=(x: js.UndefOr[OmitHierarchyOptionastype]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hierarchyConfig")(x.asInstanceOf[js.Any])
+    def hierarchyConfig: js.UndefOr[OmitHierarchyOptionastypeIgnoreParentValue] = js.native
+    inline def hierarchyConfig_=(x: js.UndefOr[OmitHierarchyOptionastypeIgnoreParentValue]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hierarchyConfig")(x.asInstanceOf[js.Any])
     
     @JSImport("@antv/g2plot/lib/plots/circle-packing/constant", "DEFAULT_OPTIONS.interactions")
     @js.native

@@ -1,7 +1,5 @@
 package typings.jsonwebtoken
 
-import typings.jsonwebtoken.jsonwebtokenBooleans.`false`
-import typings.jsonwebtoken.jsonwebtokenBooleans.`true`
 import typings.jsonwebtoken.mod.Algorithm
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
@@ -13,20 +11,22 @@ object anon {
   /* Inlined jsonwebtoken.jsonwebtoken.DecodeOptions & {  complete :true} */
   trait DecodeOptionscompletetrue extends StObject {
     
-    var complete: js.UndefOr[Boolean] & `true`
+    var complete: js.UndefOr[Boolean] = js.undefined
     
     var json: js.UndefOr[Boolean] = js.undefined
   }
   object DecodeOptionscompletetrue {
     
-    inline def apply(complete: js.UndefOr[Boolean] & `true`): DecodeOptionscompletetrue = {
-      val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any])
+    inline def apply(): DecodeOptionscompletetrue = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DecodeOptionscompletetrue]
     }
     
     extension [Self <: DecodeOptionscompletetrue](x: Self) {
       
-      inline def setComplete(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      inline def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      
+      inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
       
       inline def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
@@ -39,12 +39,12 @@ object anon {
     
     var complete: js.UndefOr[Boolean] = js.undefined
     
-    var json: js.UndefOr[Boolean] & `true`
+    var json: js.UndefOr[Boolean] = js.undefined
   }
   object DecodeOptionsjsontrue {
     
-    inline def apply(json: js.UndefOr[Boolean] & `true`): DecodeOptionsjsontrue = {
-      val __obj = js.Dynamic.literal(json = json.asInstanceOf[js.Any])
+    inline def apply(): DecodeOptionsjsontrue = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DecodeOptionsjsontrue]
     }
     
@@ -54,7 +54,9 @@ object anon {
       
       inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
       
-      inline def setJson(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      
+      inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
     }
   }
   
@@ -91,7 +93,7 @@ object anon {
     var clockTolerance: js.UndefOr[Double] = js.undefined
     
     /** return an object with the decoded `{ payload, header, signature }` instead of only the usual content of the payload. */
-    var complete: js.UndefOr[Boolean] & js.UndefOr[`false`]
+    var complete: js.UndefOr[Boolean] = js.undefined
     
     var ignoreExpiration: js.UndefOr[Boolean] = js.undefined
     
@@ -113,8 +115,8 @@ object anon {
   }
   object VerifyOptionscompletefals {
     
-    inline def apply(complete: js.UndefOr[Boolean] & js.UndefOr[`false`]): VerifyOptionscompletefals = {
-      val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any])
+    inline def apply(): VerifyOptionscompletefals = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VerifyOptionscompletefals]
     }
     
@@ -140,7 +142,9 @@ object anon {
       
       inline def setClockToleranceUndefined: Self = StObject.set(x, "clockTolerance", js.undefined)
       
-      inline def setComplete(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      inline def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      
+      inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
       
       inline def setIgnoreExpiration(value: Boolean): Self = StObject.set(x, "ignoreExpiration", value.asInstanceOf[js.Any])
       
@@ -186,7 +190,7 @@ object anon {
     var clockTolerance: js.UndefOr[Double] = js.undefined
     
     /** return an object with the decoded `{ payload, header, signature }` instead of only the usual content of the payload. */
-    var complete: js.UndefOr[Boolean] & `true`
+    var complete: js.UndefOr[Boolean] = js.undefined
     
     var ignoreExpiration: js.UndefOr[Boolean] = js.undefined
     
@@ -208,8 +212,8 @@ object anon {
   }
   object VerifyOptionscompletetrue {
     
-    inline def apply(complete: js.UndefOr[Boolean] & `true`): VerifyOptionscompletetrue = {
-      val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any])
+    inline def apply(): VerifyOptionscompletetrue = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VerifyOptionscompletetrue]
     }
     
@@ -235,7 +239,9 @@ object anon {
       
       inline def setClockToleranceUndefined: Self = StObject.set(x, "clockTolerance", js.undefined)
       
-      inline def setComplete(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      inline def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      
+      inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
       
       inline def setIgnoreExpiration(value: Boolean): Self = StObject.set(x, "ignoreExpiration", value.asInstanceOf[js.Any])
       

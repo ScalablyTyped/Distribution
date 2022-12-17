@@ -8,7 +8,7 @@ import typings.ckeditorCkeditor5Engine.anon.End
 import typings.ckeditorCkeditor5Engine.anon.FnCall
 import typings.ckeditorCkeditor5Engine.anon.NonNullableBoxSides
 import typings.ckeditorCkeditor5Engine.anon.OperationsA
-import typings.ckeditorCkeditor5Engine.anon.Value
+import typings.ckeditorCkeditor5Engine.anon.Path
 import typings.ckeditorCkeditor5Engine.anon.`0`
 import typings.ckeditorCkeditor5Engine.anon.`1`
 import typings.ckeditorCkeditor5Engine.anon.`2`
@@ -503,7 +503,7 @@ object mod {
   
   inline def getFillerOffset(): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getFillerOffset")().asInstanceOf[Double | Null]
   
-  inline def getPositionShorthandNormalizer(shorthand: String): js.Function1[/* value */ String, Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPositionShorthandNormalizer")(shorthand.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* value */ String, Value]]
+  inline def getPositionShorthandNormalizer(shorthand: String): js.Function1[/* value */ String, Path] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPositionShorthandNormalizer")(shorthand.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* value */ String, Path]]
   
   inline def getShorthandValues(string: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getShorthandValues")(string.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   

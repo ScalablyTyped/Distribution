@@ -1,8 +1,8 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antd.anon.`4`
-import typings.antd.anon.`6`
+import typings.antd.anon.`3`
+import typings.antd.anon.`5`
 import typings.antd.libTreeTreeMod.TreeProps
 import typings.rcTree.esInterfaceMod.BasicDataNode
 import typings.rcTree.esInterfaceMod.DataNode
@@ -19,7 +19,7 @@ object libTreeDirectoryTreeMod extends Shortcut {
   @js.native
   val default: DirectoryTreeCompoundedComponent = js.native
   
-  type DirectoryTreeCompoundedComponent = (js.Function1[/* props */ PropsWithChildren[DirectoryTreeProps[DataNode]] & `6`, ReactElement]) & `4`
+  type DirectoryTreeCompoundedComponent = (js.Function1[/* props */ PropsWithChildren[DirectoryTreeProps[DataNode]] & `5`, ReactElement]) & `3`
   
   trait DirectoryTreeProps[T /* <: BasicDataNode */]
     extends StObject

@@ -1,6 +1,5 @@
 package typings.fundamentalReact.anon
 
-import typings.fundamentalReact.fundamentalReactStrings.MenuDotItem
 import typings.fundamentalReact.libMenuMenuMod.MenuItemProps
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
@@ -19,7 +18,7 @@ trait FunctionComponentMenuItem extends StObject {
   
   var defaultProps: js.UndefOr[PartialMenuItemProps] = js.native
   
-  var displayName: js.UndefOr[String] & MenuDotItem = js.native
+  var displayName: js.UndefOr[String] = js.native
   
   var propTypes: js.UndefOr[WeakValidationMapMenuItem] = js.native
 }

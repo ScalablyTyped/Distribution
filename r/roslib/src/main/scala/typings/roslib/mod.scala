@@ -9,7 +9,7 @@ import typings.roslib.anon.Name
 import typings.roslib.anon.Orientation
 import typings.roslib.anon.Publishing
 import typings.roslib.anon.Rotation
-import typings.roslib.anon.ServiceType
+import typings.roslib.anon.ServerName
 import typings.roslib.anon.StringString
 import typings.roslib.anon.Topics
 import typings.roslib.anon.Typedefs
@@ -93,7 +93,7 @@ object mod {
       * @param {string} options.serverName - The action server name, like '/fibonacci'.
       * @param {string} options.actionName - The action message name, like 'actionlib_tutorials/FibonacciAction'.
       */
-    def this(options: typings.roslib.anon.Ros) = this()
+    def this(options: ServerName) = this()
   }
   
   @JSImport("roslib", "Goal")
@@ -642,7 +642,7 @@ object mod {
       * @param {string} options.name - The service name, like '/add_two_ints'.
       * @param {string} options.serviceType - The service type, like 'rospy_tutorials/AddTwoInts'.
       */
-    def this(data: ServiceType) = this()
+    def this(data: typings.roslib.anon.Ros) = this()
     
     /**
       * Advertise the service. This turns the Service object from a client
@@ -726,7 +726,7 @@ object mod {
       * @param {string} options.serverName - The action server name, like '/fibonacci'.
       * @param {string} options.actionName - The action message name, like 'actionlib_tutorials/FibonacciAction'.
       */
-    def this(options: typings.roslib.anon.Ros) = this()
+    def this(options: ServerName) = this()
     
     /**
       * Send a feedback message.

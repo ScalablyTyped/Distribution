@@ -12,7 +12,7 @@ trait BodyFooter extends StObject {
   
   var header: js.UndefOr[VerticalAlign] = js.undefined
   
-  var row: js.UndefOr[`36`] = js.undefined
+  var row: js.UndefOr[`34`] = js.undefined
 }
 object BodyFooter {
   
@@ -35,7 +35,7 @@ object BodyFooter {
     
     inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    inline def setRow(value: `36`): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: `34`): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
     inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
   }

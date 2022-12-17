@@ -1,29 +1,43 @@
 package typings.reactNavigation.anon
 
-import typings.reactNavigation.mod.NavigationParams
+import org.scalablytyped.runtime.StringDictionary
+import typings.reactNavigation.mod.NavigationScreenConfig
+import typings.reactNavigation.mod.NavigationScreenConfigProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Path extends StObject {
+trait Path[Options, NavigationScreenPropType, ScreenProps] extends StObject {
   
-  var params: js.UndefOr[NavigationParams] = js.undefined
+  var navigationOptions: js.UndefOr[NavigationScreenConfig[Options, NavigationScreenPropType, ScreenProps]] = js.undefined
   
-  var path: String
+  var params: js.UndefOr[StringDictionary[Any]] = js.undefined
+  
+  var path: js.UndefOr[String] = js.undefined
 }
 object Path {
   
-  inline def apply(path: String): Path = {
-    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Path]
+  inline def apply[Options, NavigationScreenPropType, ScreenProps](): Path[Options, NavigationScreenPropType, ScreenProps] = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[Path[Options, NavigationScreenPropType, ScreenProps]]
   }
   
-  extension [Self <: Path](x: Self) {
+  extension [Self <: Path[?, ?, ?], Options, NavigationScreenPropType, ScreenProps](x: Self & (Path[Options, NavigationScreenPropType, ScreenProps])) {
     
-    inline def setParams(value: NavigationParams): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setNavigationOptions(value: NavigationScreenConfig[Options, NavigationScreenPropType, ScreenProps]): Self = StObject.set(x, "navigationOptions", value.asInstanceOf[js.Any])
+    
+    inline def setNavigationOptionsFunction1(
+      value: /* navigationOptionsContainer */ (NavigationScreenConfigProps[NavigationScreenPropType, ScreenProps]) & NavigationOptionsOptions[Options] => Options
+    ): Self = StObject.set(x, "navigationOptions", js.Any.fromFunction1(value))
+    
+    inline def setNavigationOptionsUndefined: Self = StObject.set(x, "navigationOptions", js.undefined)
+    
+    inline def setParams(value: StringDictionary[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

@@ -1,8 +1,8 @@
 package typings.lesgo
 
 import typings.lesgo.servicesPaginationPaginatorMod.PaginatorObject
+import typings.mysql2.promiseMod.Connection
 import typings.mysql2.typingsMysqlLibProtocolPacketsFieldPacketMod.FieldPacket
-import typings.mysql2.typingsMysqlMod.Connection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

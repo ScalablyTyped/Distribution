@@ -34,209 +34,209 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def ApiKeysApiFactory(): CreateApiKey = ^.asInstanceOf[js.Dynamic].applyDynamic("ApiKeysApiFactory")().asInstanceOf[CreateApiKey]
-inline def ApiKeysApiFactory(configuration: Unit, fetch: Unit, basePath: String): CreateApiKey = (^.asInstanceOf[js.Dynamic].applyDynamic("ApiKeysApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[CreateApiKey]
-inline def ApiKeysApiFactory(configuration: Unit, fetch: FetchAPI): CreateApiKey = (^.asInstanceOf[js.Dynamic].applyDynamic("ApiKeysApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[CreateApiKey]
-inline def ApiKeysApiFactory(configuration: Unit, fetch: FetchAPI, basePath: String): CreateApiKey = (^.asInstanceOf[js.Dynamic].applyDynamic("ApiKeysApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[CreateApiKey]
-inline def ApiKeysApiFactory(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): CreateApiKey = ^.asInstanceOf[js.Dynamic].applyDynamic("ApiKeysApiFactory")(configuration.asInstanceOf[js.Any]).asInstanceOf[CreateApiKey]
+inline def ApiKeysApiFactory(): DeleteApiKey = ^.asInstanceOf[js.Dynamic].applyDynamic("ApiKeysApiFactory")().asInstanceOf[DeleteApiKey]
+inline def ApiKeysApiFactory(configuration: Unit, fetch: Unit, basePath: String): DeleteApiKey = (^.asInstanceOf[js.Dynamic].applyDynamic("ApiKeysApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[DeleteApiKey]
+inline def ApiKeysApiFactory(configuration: Unit, fetch: FetchAPI): DeleteApiKey = (^.asInstanceOf[js.Dynamic].applyDynamic("ApiKeysApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[DeleteApiKey]
+inline def ApiKeysApiFactory(configuration: Unit, fetch: FetchAPI, basePath: String): DeleteApiKey = (^.asInstanceOf[js.Dynamic].applyDynamic("ApiKeysApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[DeleteApiKey]
+inline def ApiKeysApiFactory(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): DeleteApiKey = ^.asInstanceOf[js.Dynamic].applyDynamic("ApiKeysApiFactory")(configuration.asInstanceOf[js.Any]).asInstanceOf[DeleteApiKey]
 inline def ApiKeysApiFactory(
   configuration: typings.rockset.distCodegenConfigurationMod.Configuration,
   fetch: Unit,
   basePath: String
-): CreateApiKey = (^.asInstanceOf[js.Dynamic].applyDynamic("ApiKeysApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[CreateApiKey]
-inline def ApiKeysApiFactory(configuration: typings.rockset.distCodegenConfigurationMod.Configuration, fetch: FetchAPI): CreateApiKey = (^.asInstanceOf[js.Dynamic].applyDynamic("ApiKeysApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[CreateApiKey]
+): DeleteApiKey = (^.asInstanceOf[js.Dynamic].applyDynamic("ApiKeysApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[DeleteApiKey]
+inline def ApiKeysApiFactory(configuration: typings.rockset.distCodegenConfigurationMod.Configuration, fetch: FetchAPI): DeleteApiKey = (^.asInstanceOf[js.Dynamic].applyDynamic("ApiKeysApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[DeleteApiKey]
 inline def ApiKeysApiFactory(
   configuration: typings.rockset.distCodegenConfigurationMod.Configuration,
   fetch: FetchAPI,
   basePath: String
-): CreateApiKey = (^.asInstanceOf[js.Dynamic].applyDynamic("ApiKeysApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[CreateApiKey]
+): DeleteApiKey = (^.asInstanceOf[js.Dynamic].applyDynamic("ApiKeysApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[DeleteApiKey]
 
-inline def ApiKeysApiFetchParamCreator(): CreateApiKeyAdmin = ^.asInstanceOf[js.Dynamic].applyDynamic("ApiKeysApiFetchParamCreator")().asInstanceOf[CreateApiKeyAdmin]
-inline def ApiKeysApiFetchParamCreator(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): CreateApiKeyAdmin = ^.asInstanceOf[js.Dynamic].applyDynamic("ApiKeysApiFetchParamCreator")(configuration.asInstanceOf[js.Any]).asInstanceOf[CreateApiKeyAdmin]
+inline def ApiKeysApiFetchParamCreator(): CreateApiKey = ^.asInstanceOf[js.Dynamic].applyDynamic("ApiKeysApiFetchParamCreator")().asInstanceOf[CreateApiKey]
+inline def ApiKeysApiFetchParamCreator(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): CreateApiKey = ^.asInstanceOf[js.Dynamic].applyDynamic("ApiKeysApiFetchParamCreator")(configuration.asInstanceOf[js.Any]).asInstanceOf[CreateApiKey]
 
-inline def ApiKeysApiFp(): DeleteApiKey = ^.asInstanceOf[js.Dynamic].applyDynamic("ApiKeysApiFp")().asInstanceOf[DeleteApiKey]
-inline def ApiKeysApiFp(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): DeleteApiKey = ^.asInstanceOf[js.Dynamic].applyDynamic("ApiKeysApiFp")(configuration.asInstanceOf[js.Any]).asInstanceOf[DeleteApiKey]
+inline def ApiKeysApiFp(): CreateApiKeyAdmin = ^.asInstanceOf[js.Dynamic].applyDynamic("ApiKeysApiFp")().asInstanceOf[CreateApiKeyAdmin]
+inline def ApiKeysApiFp(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): CreateApiKeyAdmin = ^.asInstanceOf[js.Dynamic].applyDynamic("ApiKeysApiFp")(configuration.asInstanceOf[js.Any]).asInstanceOf[CreateApiKeyAdmin]
 
-inline def CollectionsApiFactory(): CreateCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("CollectionsApiFactory")().asInstanceOf[CreateCollection]
-inline def CollectionsApiFactory(configuration: Unit, fetch: Unit, basePath: String): CreateCollection = (^.asInstanceOf[js.Dynamic].applyDynamic("CollectionsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[CreateCollection]
-inline def CollectionsApiFactory(configuration: Unit, fetch: FetchAPI): CreateCollection = (^.asInstanceOf[js.Dynamic].applyDynamic("CollectionsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[CreateCollection]
-inline def CollectionsApiFactory(configuration: Unit, fetch: FetchAPI, basePath: String): CreateCollection = (^.asInstanceOf[js.Dynamic].applyDynamic("CollectionsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[CreateCollection]
-inline def CollectionsApiFactory(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): CreateCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("CollectionsApiFactory")(configuration.asInstanceOf[js.Any]).asInstanceOf[CreateCollection]
+inline def CollectionsApiFactory(): GetCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("CollectionsApiFactory")().asInstanceOf[GetCollection]
+inline def CollectionsApiFactory(configuration: Unit, fetch: Unit, basePath: String): GetCollection = (^.asInstanceOf[js.Dynamic].applyDynamic("CollectionsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[GetCollection]
+inline def CollectionsApiFactory(configuration: Unit, fetch: FetchAPI): GetCollection = (^.asInstanceOf[js.Dynamic].applyDynamic("CollectionsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[GetCollection]
+inline def CollectionsApiFactory(configuration: Unit, fetch: FetchAPI, basePath: String): GetCollection = (^.asInstanceOf[js.Dynamic].applyDynamic("CollectionsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[GetCollection]
+inline def CollectionsApiFactory(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): GetCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("CollectionsApiFactory")(configuration.asInstanceOf[js.Any]).asInstanceOf[GetCollection]
 inline def CollectionsApiFactory(
   configuration: typings.rockset.distCodegenConfigurationMod.Configuration,
   fetch: Unit,
   basePath: String
-): CreateCollection = (^.asInstanceOf[js.Dynamic].applyDynamic("CollectionsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[CreateCollection]
-inline def CollectionsApiFactory(configuration: typings.rockset.distCodegenConfigurationMod.Configuration, fetch: FetchAPI): CreateCollection = (^.asInstanceOf[js.Dynamic].applyDynamic("CollectionsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[CreateCollection]
+): GetCollection = (^.asInstanceOf[js.Dynamic].applyDynamic("CollectionsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[GetCollection]
+inline def CollectionsApiFactory(configuration: typings.rockset.distCodegenConfigurationMod.Configuration, fetch: FetchAPI): GetCollection = (^.asInstanceOf[js.Dynamic].applyDynamic("CollectionsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[GetCollection]
 inline def CollectionsApiFactory(
   configuration: typings.rockset.distCodegenConfigurationMod.Configuration,
   fetch: FetchAPI,
   basePath: String
-): CreateCollection = (^.asInstanceOf[js.Dynamic].applyDynamic("CollectionsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[CreateCollection]
+): GetCollection = (^.asInstanceOf[js.Dynamic].applyDynamic("CollectionsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[GetCollection]
 
-inline def CollectionsApiFetchParamCreator(): DeleteCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("CollectionsApiFetchParamCreator")().asInstanceOf[DeleteCollection]
-inline def CollectionsApiFetchParamCreator(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): DeleteCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("CollectionsApiFetchParamCreator")(configuration.asInstanceOf[js.Any]).asInstanceOf[DeleteCollection]
+inline def CollectionsApiFetchParamCreator(): CreateCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("CollectionsApiFetchParamCreator")().asInstanceOf[CreateCollection]
+inline def CollectionsApiFetchParamCreator(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): CreateCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("CollectionsApiFetchParamCreator")(configuration.asInstanceOf[js.Any]).asInstanceOf[CreateCollection]
 
-inline def CollectionsApiFp(): GetCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("CollectionsApiFp")().asInstanceOf[GetCollection]
-inline def CollectionsApiFp(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): GetCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("CollectionsApiFp")(configuration.asInstanceOf[js.Any]).asInstanceOf[GetCollection]
+inline def CollectionsApiFp(): DeleteCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("CollectionsApiFp")().asInstanceOf[DeleteCollection]
+inline def CollectionsApiFp(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): DeleteCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("CollectionsApiFp")(configuration.asInstanceOf[js.Any]).asInstanceOf[DeleteCollection]
 
-inline def DocumentsApiFactory(): AddDocuments = ^.asInstanceOf[js.Dynamic].applyDynamic("DocumentsApiFactory")().asInstanceOf[AddDocuments]
-inline def DocumentsApiFactory(configuration: Unit, fetch: Unit, basePath: String): AddDocuments = (^.asInstanceOf[js.Dynamic].applyDynamic("DocumentsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[AddDocuments]
-inline def DocumentsApiFactory(configuration: Unit, fetch: FetchAPI): AddDocuments = (^.asInstanceOf[js.Dynamic].applyDynamic("DocumentsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[AddDocuments]
-inline def DocumentsApiFactory(configuration: Unit, fetch: FetchAPI, basePath: String): AddDocuments = (^.asInstanceOf[js.Dynamic].applyDynamic("DocumentsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[AddDocuments]
-inline def DocumentsApiFactory(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): AddDocuments = ^.asInstanceOf[js.Dynamic].applyDynamic("DocumentsApiFactory")(configuration.asInstanceOf[js.Any]).asInstanceOf[AddDocuments]
+inline def DocumentsApiFactory(): PatchDocuments = ^.asInstanceOf[js.Dynamic].applyDynamic("DocumentsApiFactory")().asInstanceOf[PatchDocuments]
+inline def DocumentsApiFactory(configuration: Unit, fetch: Unit, basePath: String): PatchDocuments = (^.asInstanceOf[js.Dynamic].applyDynamic("DocumentsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[PatchDocuments]
+inline def DocumentsApiFactory(configuration: Unit, fetch: FetchAPI): PatchDocuments = (^.asInstanceOf[js.Dynamic].applyDynamic("DocumentsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[PatchDocuments]
+inline def DocumentsApiFactory(configuration: Unit, fetch: FetchAPI, basePath: String): PatchDocuments = (^.asInstanceOf[js.Dynamic].applyDynamic("DocumentsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[PatchDocuments]
+inline def DocumentsApiFactory(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): PatchDocuments = ^.asInstanceOf[js.Dynamic].applyDynamic("DocumentsApiFactory")(configuration.asInstanceOf[js.Any]).asInstanceOf[PatchDocuments]
 inline def DocumentsApiFactory(
   configuration: typings.rockset.distCodegenConfigurationMod.Configuration,
   fetch: Unit,
   basePath: String
-): AddDocuments = (^.asInstanceOf[js.Dynamic].applyDynamic("DocumentsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[AddDocuments]
-inline def DocumentsApiFactory(configuration: typings.rockset.distCodegenConfigurationMod.Configuration, fetch: FetchAPI): AddDocuments = (^.asInstanceOf[js.Dynamic].applyDynamic("DocumentsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[AddDocuments]
+): PatchDocuments = (^.asInstanceOf[js.Dynamic].applyDynamic("DocumentsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[PatchDocuments]
+inline def DocumentsApiFactory(configuration: typings.rockset.distCodegenConfigurationMod.Configuration, fetch: FetchAPI): PatchDocuments = (^.asInstanceOf[js.Dynamic].applyDynamic("DocumentsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[PatchDocuments]
 inline def DocumentsApiFactory(
   configuration: typings.rockset.distCodegenConfigurationMod.Configuration,
   fetch: FetchAPI,
   basePath: String
-): AddDocuments = (^.asInstanceOf[js.Dynamic].applyDynamic("DocumentsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[AddDocuments]
+): PatchDocuments = (^.asInstanceOf[js.Dynamic].applyDynamic("DocumentsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[PatchDocuments]
 
-inline def DocumentsApiFetchParamCreator(): DeleteDocuments = ^.asInstanceOf[js.Dynamic].applyDynamic("DocumentsApiFetchParamCreator")().asInstanceOf[DeleteDocuments]
-inline def DocumentsApiFetchParamCreator(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): DeleteDocuments = ^.asInstanceOf[js.Dynamic].applyDynamic("DocumentsApiFetchParamCreator")(configuration.asInstanceOf[js.Any]).asInstanceOf[DeleteDocuments]
+inline def DocumentsApiFetchParamCreator(): AddDocuments = ^.asInstanceOf[js.Dynamic].applyDynamic("DocumentsApiFetchParamCreator")().asInstanceOf[AddDocuments]
+inline def DocumentsApiFetchParamCreator(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): AddDocuments = ^.asInstanceOf[js.Dynamic].applyDynamic("DocumentsApiFetchParamCreator")(configuration.asInstanceOf[js.Any]).asInstanceOf[AddDocuments]
 
-inline def DocumentsApiFp(): PatchDocuments = ^.asInstanceOf[js.Dynamic].applyDynamic("DocumentsApiFp")().asInstanceOf[PatchDocuments]
-inline def DocumentsApiFp(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): PatchDocuments = ^.asInstanceOf[js.Dynamic].applyDynamic("DocumentsApiFp")(configuration.asInstanceOf[js.Any]).asInstanceOf[PatchDocuments]
+inline def DocumentsApiFp(): DeleteDocuments = ^.asInstanceOf[js.Dynamic].applyDynamic("DocumentsApiFp")().asInstanceOf[DeleteDocuments]
+inline def DocumentsApiFp(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): DeleteDocuments = ^.asInstanceOf[js.Dynamic].applyDynamic("DocumentsApiFp")(configuration.asInstanceOf[js.Any]).asInstanceOf[DeleteDocuments]
 
-inline def IntegrationsApiFactory(): CreateIntegration = ^.asInstanceOf[js.Dynamic].applyDynamic("IntegrationsApiFactory")().asInstanceOf[CreateIntegration]
-inline def IntegrationsApiFactory(configuration: Unit, fetch: Unit, basePath: String): CreateIntegration = (^.asInstanceOf[js.Dynamic].applyDynamic("IntegrationsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[CreateIntegration]
-inline def IntegrationsApiFactory(configuration: Unit, fetch: FetchAPI): CreateIntegration = (^.asInstanceOf[js.Dynamic].applyDynamic("IntegrationsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[CreateIntegration]
-inline def IntegrationsApiFactory(configuration: Unit, fetch: FetchAPI, basePath: String): CreateIntegration = (^.asInstanceOf[js.Dynamic].applyDynamic("IntegrationsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[CreateIntegration]
-inline def IntegrationsApiFactory(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): CreateIntegration = ^.asInstanceOf[js.Dynamic].applyDynamic("IntegrationsApiFactory")(configuration.asInstanceOf[js.Any]).asInstanceOf[CreateIntegration]
+inline def IntegrationsApiFactory(): GetIntegration = ^.asInstanceOf[js.Dynamic].applyDynamic("IntegrationsApiFactory")().asInstanceOf[GetIntegration]
+inline def IntegrationsApiFactory(configuration: Unit, fetch: Unit, basePath: String): GetIntegration = (^.asInstanceOf[js.Dynamic].applyDynamic("IntegrationsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[GetIntegration]
+inline def IntegrationsApiFactory(configuration: Unit, fetch: FetchAPI): GetIntegration = (^.asInstanceOf[js.Dynamic].applyDynamic("IntegrationsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[GetIntegration]
+inline def IntegrationsApiFactory(configuration: Unit, fetch: FetchAPI, basePath: String): GetIntegration = (^.asInstanceOf[js.Dynamic].applyDynamic("IntegrationsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[GetIntegration]
+inline def IntegrationsApiFactory(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): GetIntegration = ^.asInstanceOf[js.Dynamic].applyDynamic("IntegrationsApiFactory")(configuration.asInstanceOf[js.Any]).asInstanceOf[GetIntegration]
 inline def IntegrationsApiFactory(
   configuration: typings.rockset.distCodegenConfigurationMod.Configuration,
   fetch: Unit,
   basePath: String
-): CreateIntegration = (^.asInstanceOf[js.Dynamic].applyDynamic("IntegrationsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[CreateIntegration]
-inline def IntegrationsApiFactory(configuration: typings.rockset.distCodegenConfigurationMod.Configuration, fetch: FetchAPI): CreateIntegration = (^.asInstanceOf[js.Dynamic].applyDynamic("IntegrationsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[CreateIntegration]
+): GetIntegration = (^.asInstanceOf[js.Dynamic].applyDynamic("IntegrationsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[GetIntegration]
+inline def IntegrationsApiFactory(configuration: typings.rockset.distCodegenConfigurationMod.Configuration, fetch: FetchAPI): GetIntegration = (^.asInstanceOf[js.Dynamic].applyDynamic("IntegrationsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[GetIntegration]
 inline def IntegrationsApiFactory(
   configuration: typings.rockset.distCodegenConfigurationMod.Configuration,
   fetch: FetchAPI,
   basePath: String
-): CreateIntegration = (^.asInstanceOf[js.Dynamic].applyDynamic("IntegrationsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[CreateIntegration]
+): GetIntegration = (^.asInstanceOf[js.Dynamic].applyDynamic("IntegrationsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[GetIntegration]
 
-inline def IntegrationsApiFetchParamCreator(): DeleteIntegration = ^.asInstanceOf[js.Dynamic].applyDynamic("IntegrationsApiFetchParamCreator")().asInstanceOf[DeleteIntegration]
-inline def IntegrationsApiFetchParamCreator(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): DeleteIntegration = ^.asInstanceOf[js.Dynamic].applyDynamic("IntegrationsApiFetchParamCreator")(configuration.asInstanceOf[js.Any]).asInstanceOf[DeleteIntegration]
+inline def IntegrationsApiFetchParamCreator(): CreateIntegration = ^.asInstanceOf[js.Dynamic].applyDynamic("IntegrationsApiFetchParamCreator")().asInstanceOf[CreateIntegration]
+inline def IntegrationsApiFetchParamCreator(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): CreateIntegration = ^.asInstanceOf[js.Dynamic].applyDynamic("IntegrationsApiFetchParamCreator")(configuration.asInstanceOf[js.Any]).asInstanceOf[CreateIntegration]
 
-inline def IntegrationsApiFp(): GetIntegration = ^.asInstanceOf[js.Dynamic].applyDynamic("IntegrationsApiFp")().asInstanceOf[GetIntegration]
-inline def IntegrationsApiFp(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): GetIntegration = ^.asInstanceOf[js.Dynamic].applyDynamic("IntegrationsApiFp")(configuration.asInstanceOf[js.Any]).asInstanceOf[GetIntegration]
+inline def IntegrationsApiFp(): DeleteIntegration = ^.asInstanceOf[js.Dynamic].applyDynamic("IntegrationsApiFp")().asInstanceOf[DeleteIntegration]
+inline def IntegrationsApiFp(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): DeleteIntegration = ^.asInstanceOf[js.Dynamic].applyDynamic("IntegrationsApiFp")(configuration.asInstanceOf[js.Any]).asInstanceOf[DeleteIntegration]
 
-inline def OrganizationsApiFactory(): GetOrganization = ^.asInstanceOf[js.Dynamic].applyDynamic("OrganizationsApiFactory")().asInstanceOf[GetOrganization]
-inline def OrganizationsApiFactory(configuration: Unit, fetch: Unit, basePath: String): GetOrganization = (^.asInstanceOf[js.Dynamic].applyDynamic("OrganizationsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[GetOrganization]
-inline def OrganizationsApiFactory(configuration: Unit, fetch: FetchAPI): GetOrganization = (^.asInstanceOf[js.Dynamic].applyDynamic("OrganizationsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[GetOrganization]
-inline def OrganizationsApiFactory(configuration: Unit, fetch: FetchAPI, basePath: String): GetOrganization = (^.asInstanceOf[js.Dynamic].applyDynamic("OrganizationsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[GetOrganization]
-inline def OrganizationsApiFactory(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): GetOrganization = ^.asInstanceOf[js.Dynamic].applyDynamic("OrganizationsApiFactory")(configuration.asInstanceOf[js.Any]).asInstanceOf[GetOrganization]
+inline def OrganizationsApiFactory(): `1` = ^.asInstanceOf[js.Dynamic].applyDynamic("OrganizationsApiFactory")().asInstanceOf[`1`]
+inline def OrganizationsApiFactory(configuration: Unit, fetch: Unit, basePath: String): `1` = (^.asInstanceOf[js.Dynamic].applyDynamic("OrganizationsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[`1`]
+inline def OrganizationsApiFactory(configuration: Unit, fetch: FetchAPI): `1` = (^.asInstanceOf[js.Dynamic].applyDynamic("OrganizationsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[`1`]
+inline def OrganizationsApiFactory(configuration: Unit, fetch: FetchAPI, basePath: String): `1` = (^.asInstanceOf[js.Dynamic].applyDynamic("OrganizationsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[`1`]
+inline def OrganizationsApiFactory(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): `1` = ^.asInstanceOf[js.Dynamic].applyDynamic("OrganizationsApiFactory")(configuration.asInstanceOf[js.Any]).asInstanceOf[`1`]
 inline def OrganizationsApiFactory(
   configuration: typings.rockset.distCodegenConfigurationMod.Configuration,
   fetch: Unit,
   basePath: String
-): GetOrganization = (^.asInstanceOf[js.Dynamic].applyDynamic("OrganizationsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[GetOrganization]
-inline def OrganizationsApiFactory(configuration: typings.rockset.distCodegenConfigurationMod.Configuration, fetch: FetchAPI): GetOrganization = (^.asInstanceOf[js.Dynamic].applyDynamic("OrganizationsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[GetOrganization]
+): `1` = (^.asInstanceOf[js.Dynamic].applyDynamic("OrganizationsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[`1`]
+inline def OrganizationsApiFactory(configuration: typings.rockset.distCodegenConfigurationMod.Configuration, fetch: FetchAPI): `1` = (^.asInstanceOf[js.Dynamic].applyDynamic("OrganizationsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[`1`]
 inline def OrganizationsApiFactory(
   configuration: typings.rockset.distCodegenConfigurationMod.Configuration,
   fetch: FetchAPI,
   basePath: String
-): GetOrganization = (^.asInstanceOf[js.Dynamic].applyDynamic("OrganizationsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[GetOrganization]
+): `1` = (^.asInstanceOf[js.Dynamic].applyDynamic("OrganizationsApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[`1`]
 
-inline def OrganizationsApiFetchParamCreator(): `0` = ^.asInstanceOf[js.Dynamic].applyDynamic("OrganizationsApiFetchParamCreator")().asInstanceOf[`0`]
-inline def OrganizationsApiFetchParamCreator(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): `0` = ^.asInstanceOf[js.Dynamic].applyDynamic("OrganizationsApiFetchParamCreator")(configuration.asInstanceOf[js.Any]).asInstanceOf[`0`]
+inline def OrganizationsApiFetchParamCreator(): GetOrganization = ^.asInstanceOf[js.Dynamic].applyDynamic("OrganizationsApiFetchParamCreator")().asInstanceOf[GetOrganization]
+inline def OrganizationsApiFetchParamCreator(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): GetOrganization = ^.asInstanceOf[js.Dynamic].applyDynamic("OrganizationsApiFetchParamCreator")(configuration.asInstanceOf[js.Any]).asInstanceOf[GetOrganization]
 
-inline def OrganizationsApiFp(): `1` = ^.asInstanceOf[js.Dynamic].applyDynamic("OrganizationsApiFp")().asInstanceOf[`1`]
-inline def OrganizationsApiFp(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): `1` = ^.asInstanceOf[js.Dynamic].applyDynamic("OrganizationsApiFp")(configuration.asInstanceOf[js.Any]).asInstanceOf[`1`]
+inline def OrganizationsApiFp(): `0` = ^.asInstanceOf[js.Dynamic].applyDynamic("OrganizationsApiFp")().asInstanceOf[`0`]
+inline def OrganizationsApiFp(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): `0` = ^.asInstanceOf[js.Dynamic].applyDynamic("OrganizationsApiFp")(configuration.asInstanceOf[js.Any]).asInstanceOf[`0`]
 
-inline def QueriesApiFactory(): Query = ^.asInstanceOf[js.Dynamic].applyDynamic("QueriesApiFactory")().asInstanceOf[Query]
-inline def QueriesApiFactory(configuration: Unit, fetch: Unit, basePath: String): Query = (^.asInstanceOf[js.Dynamic].applyDynamic("QueriesApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[Query]
-inline def QueriesApiFactory(configuration: Unit, fetch: FetchAPI): Query = (^.asInstanceOf[js.Dynamic].applyDynamic("QueriesApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[Query]
-inline def QueriesApiFactory(configuration: Unit, fetch: FetchAPI, basePath: String): Query = (^.asInstanceOf[js.Dynamic].applyDynamic("QueriesApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[Query]
-inline def QueriesApiFactory(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): Query = ^.asInstanceOf[js.Dynamic].applyDynamic("QueriesApiFactory")(configuration.asInstanceOf[js.Any]).asInstanceOf[Query]
+inline def QueriesApiFactory(): `3` = ^.asInstanceOf[js.Dynamic].applyDynamic("QueriesApiFactory")().asInstanceOf[`3`]
+inline def QueriesApiFactory(configuration: Unit, fetch: Unit, basePath: String): `3` = (^.asInstanceOf[js.Dynamic].applyDynamic("QueriesApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[`3`]
+inline def QueriesApiFactory(configuration: Unit, fetch: FetchAPI): `3` = (^.asInstanceOf[js.Dynamic].applyDynamic("QueriesApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[`3`]
+inline def QueriesApiFactory(configuration: Unit, fetch: FetchAPI, basePath: String): `3` = (^.asInstanceOf[js.Dynamic].applyDynamic("QueriesApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[`3`]
+inline def QueriesApiFactory(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): `3` = ^.asInstanceOf[js.Dynamic].applyDynamic("QueriesApiFactory")(configuration.asInstanceOf[js.Any]).asInstanceOf[`3`]
 inline def QueriesApiFactory(
   configuration: typings.rockset.distCodegenConfigurationMod.Configuration,
   fetch: Unit,
   basePath: String
-): Query = (^.asInstanceOf[js.Dynamic].applyDynamic("QueriesApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[Query]
-inline def QueriesApiFactory(configuration: typings.rockset.distCodegenConfigurationMod.Configuration, fetch: FetchAPI): Query = (^.asInstanceOf[js.Dynamic].applyDynamic("QueriesApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[Query]
+): `3` = (^.asInstanceOf[js.Dynamic].applyDynamic("QueriesApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[`3`]
+inline def QueriesApiFactory(configuration: typings.rockset.distCodegenConfigurationMod.Configuration, fetch: FetchAPI): `3` = (^.asInstanceOf[js.Dynamic].applyDynamic("QueriesApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[`3`]
 inline def QueriesApiFactory(
   configuration: typings.rockset.distCodegenConfigurationMod.Configuration,
   fetch: FetchAPI,
   basePath: String
-): Query = (^.asInstanceOf[js.Dynamic].applyDynamic("QueriesApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[Query]
+): `3` = (^.asInstanceOf[js.Dynamic].applyDynamic("QueriesApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[`3`]
 
-inline def QueriesApiFetchParamCreator(): `2` = ^.asInstanceOf[js.Dynamic].applyDynamic("QueriesApiFetchParamCreator")().asInstanceOf[`2`]
-inline def QueriesApiFetchParamCreator(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): `2` = ^.asInstanceOf[js.Dynamic].applyDynamic("QueriesApiFetchParamCreator")(configuration.asInstanceOf[js.Any]).asInstanceOf[`2`]
+inline def QueriesApiFetchParamCreator(): Query = ^.asInstanceOf[js.Dynamic].applyDynamic("QueriesApiFetchParamCreator")().asInstanceOf[Query]
+inline def QueriesApiFetchParamCreator(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): Query = ^.asInstanceOf[js.Dynamic].applyDynamic("QueriesApiFetchParamCreator")(configuration.asInstanceOf[js.Any]).asInstanceOf[Query]
 
-inline def QueriesApiFp(): `3` = ^.asInstanceOf[js.Dynamic].applyDynamic("QueriesApiFp")().asInstanceOf[`3`]
-inline def QueriesApiFp(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): `3` = ^.asInstanceOf[js.Dynamic].applyDynamic("QueriesApiFp")(configuration.asInstanceOf[js.Any]).asInstanceOf[`3`]
+inline def QueriesApiFp(): `2` = ^.asInstanceOf[js.Dynamic].applyDynamic("QueriesApiFp")().asInstanceOf[`2`]
+inline def QueriesApiFp(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): `2` = ^.asInstanceOf[js.Dynamic].applyDynamic("QueriesApiFp")(configuration.asInstanceOf[js.Any]).asInstanceOf[`2`]
 
-inline def QueryLambdasApiFactory(): CreateQueryLambda = ^.asInstanceOf[js.Dynamic].applyDynamic("QueryLambdasApiFactory")().asInstanceOf[CreateQueryLambda]
-inline def QueryLambdasApiFactory(configuration: Unit, fetch: Unit, basePath: String): CreateQueryLambda = (^.asInstanceOf[js.Dynamic].applyDynamic("QueryLambdasApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[CreateQueryLambda]
-inline def QueryLambdasApiFactory(configuration: Unit, fetch: FetchAPI): CreateQueryLambda = (^.asInstanceOf[js.Dynamic].applyDynamic("QueryLambdasApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[CreateQueryLambda]
-inline def QueryLambdasApiFactory(configuration: Unit, fetch: FetchAPI, basePath: String): CreateQueryLambda = (^.asInstanceOf[js.Dynamic].applyDynamic("QueryLambdasApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[CreateQueryLambda]
-inline def QueryLambdasApiFactory(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): CreateQueryLambda = ^.asInstanceOf[js.Dynamic].applyDynamic("QueryLambdasApiFactory")(configuration.asInstanceOf[js.Any]).asInstanceOf[CreateQueryLambda]
+inline def QueryLambdasApiFactory(): DeleteQueryLambda = ^.asInstanceOf[js.Dynamic].applyDynamic("QueryLambdasApiFactory")().asInstanceOf[DeleteQueryLambda]
+inline def QueryLambdasApiFactory(configuration: Unit, fetch: Unit, basePath: String): DeleteQueryLambda = (^.asInstanceOf[js.Dynamic].applyDynamic("QueryLambdasApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[DeleteQueryLambda]
+inline def QueryLambdasApiFactory(configuration: Unit, fetch: FetchAPI): DeleteQueryLambda = (^.asInstanceOf[js.Dynamic].applyDynamic("QueryLambdasApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[DeleteQueryLambda]
+inline def QueryLambdasApiFactory(configuration: Unit, fetch: FetchAPI, basePath: String): DeleteQueryLambda = (^.asInstanceOf[js.Dynamic].applyDynamic("QueryLambdasApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[DeleteQueryLambda]
+inline def QueryLambdasApiFactory(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): DeleteQueryLambda = ^.asInstanceOf[js.Dynamic].applyDynamic("QueryLambdasApiFactory")(configuration.asInstanceOf[js.Any]).asInstanceOf[DeleteQueryLambda]
 inline def QueryLambdasApiFactory(
   configuration: typings.rockset.distCodegenConfigurationMod.Configuration,
   fetch: Unit,
   basePath: String
-): CreateQueryLambda = (^.asInstanceOf[js.Dynamic].applyDynamic("QueryLambdasApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[CreateQueryLambda]
-inline def QueryLambdasApiFactory(configuration: typings.rockset.distCodegenConfigurationMod.Configuration, fetch: FetchAPI): CreateQueryLambda = (^.asInstanceOf[js.Dynamic].applyDynamic("QueryLambdasApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[CreateQueryLambda]
+): DeleteQueryLambda = (^.asInstanceOf[js.Dynamic].applyDynamic("QueryLambdasApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[DeleteQueryLambda]
+inline def QueryLambdasApiFactory(configuration: typings.rockset.distCodegenConfigurationMod.Configuration, fetch: FetchAPI): DeleteQueryLambda = (^.asInstanceOf[js.Dynamic].applyDynamic("QueryLambdasApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[DeleteQueryLambda]
 inline def QueryLambdasApiFactory(
   configuration: typings.rockset.distCodegenConfigurationMod.Configuration,
   fetch: FetchAPI,
   basePath: String
-): CreateQueryLambda = (^.asInstanceOf[js.Dynamic].applyDynamic("QueryLambdasApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[CreateQueryLambda]
+): DeleteQueryLambda = (^.asInstanceOf[js.Dynamic].applyDynamic("QueryLambdasApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[DeleteQueryLambda]
 
-inline def QueryLambdasApiFetchParamCreator(): CreateQueryLambdaTag = ^.asInstanceOf[js.Dynamic].applyDynamic("QueryLambdasApiFetchParamCreator")().asInstanceOf[CreateQueryLambdaTag]
-inline def QueryLambdasApiFetchParamCreator(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): CreateQueryLambdaTag = ^.asInstanceOf[js.Dynamic].applyDynamic("QueryLambdasApiFetchParamCreator")(configuration.asInstanceOf[js.Any]).asInstanceOf[CreateQueryLambdaTag]
+inline def QueryLambdasApiFetchParamCreator(): CreateQueryLambda = ^.asInstanceOf[js.Dynamic].applyDynamic("QueryLambdasApiFetchParamCreator")().asInstanceOf[CreateQueryLambda]
+inline def QueryLambdasApiFetchParamCreator(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): CreateQueryLambda = ^.asInstanceOf[js.Dynamic].applyDynamic("QueryLambdasApiFetchParamCreator")(configuration.asInstanceOf[js.Any]).asInstanceOf[CreateQueryLambda]
 
-inline def QueryLambdasApiFp(): DeleteQueryLambda = ^.asInstanceOf[js.Dynamic].applyDynamic("QueryLambdasApiFp")().asInstanceOf[DeleteQueryLambda]
-inline def QueryLambdasApiFp(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): DeleteQueryLambda = ^.asInstanceOf[js.Dynamic].applyDynamic("QueryLambdasApiFp")(configuration.asInstanceOf[js.Any]).asInstanceOf[DeleteQueryLambda]
+inline def QueryLambdasApiFp(): CreateQueryLambdaTag = ^.asInstanceOf[js.Dynamic].applyDynamic("QueryLambdasApiFp")().asInstanceOf[CreateQueryLambdaTag]
+inline def QueryLambdasApiFp(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): CreateQueryLambdaTag = ^.asInstanceOf[js.Dynamic].applyDynamic("QueryLambdasApiFp")(configuration.asInstanceOf[js.Any]).asInstanceOf[CreateQueryLambdaTag]
 
-inline def UsersApiFactory(): CreateUser = ^.asInstanceOf[js.Dynamic].applyDynamic("UsersApiFactory")().asInstanceOf[CreateUser]
-inline def UsersApiFactory(configuration: Unit, fetch: Unit, basePath: String): CreateUser = (^.asInstanceOf[js.Dynamic].applyDynamic("UsersApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[CreateUser]
-inline def UsersApiFactory(configuration: Unit, fetch: FetchAPI): CreateUser = (^.asInstanceOf[js.Dynamic].applyDynamic("UsersApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[CreateUser]
-inline def UsersApiFactory(configuration: Unit, fetch: FetchAPI, basePath: String): CreateUser = (^.asInstanceOf[js.Dynamic].applyDynamic("UsersApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[CreateUser]
-inline def UsersApiFactory(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): CreateUser = ^.asInstanceOf[js.Dynamic].applyDynamic("UsersApiFactory")(configuration.asInstanceOf[js.Any]).asInstanceOf[CreateUser]
+inline def UsersApiFactory(): GetCurrentUser = ^.asInstanceOf[js.Dynamic].applyDynamic("UsersApiFactory")().asInstanceOf[GetCurrentUser]
+inline def UsersApiFactory(configuration: Unit, fetch: Unit, basePath: String): GetCurrentUser = (^.asInstanceOf[js.Dynamic].applyDynamic("UsersApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[GetCurrentUser]
+inline def UsersApiFactory(configuration: Unit, fetch: FetchAPI): GetCurrentUser = (^.asInstanceOf[js.Dynamic].applyDynamic("UsersApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[GetCurrentUser]
+inline def UsersApiFactory(configuration: Unit, fetch: FetchAPI, basePath: String): GetCurrentUser = (^.asInstanceOf[js.Dynamic].applyDynamic("UsersApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[GetCurrentUser]
+inline def UsersApiFactory(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): GetCurrentUser = ^.asInstanceOf[js.Dynamic].applyDynamic("UsersApiFactory")(configuration.asInstanceOf[js.Any]).asInstanceOf[GetCurrentUser]
 inline def UsersApiFactory(
   configuration: typings.rockset.distCodegenConfigurationMod.Configuration,
   fetch: Unit,
   basePath: String
-): CreateUser = (^.asInstanceOf[js.Dynamic].applyDynamic("UsersApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[CreateUser]
-inline def UsersApiFactory(configuration: typings.rockset.distCodegenConfigurationMod.Configuration, fetch: FetchAPI): CreateUser = (^.asInstanceOf[js.Dynamic].applyDynamic("UsersApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[CreateUser]
+): GetCurrentUser = (^.asInstanceOf[js.Dynamic].applyDynamic("UsersApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[GetCurrentUser]
+inline def UsersApiFactory(configuration: typings.rockset.distCodegenConfigurationMod.Configuration, fetch: FetchAPI): GetCurrentUser = (^.asInstanceOf[js.Dynamic].applyDynamic("UsersApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[GetCurrentUser]
 inline def UsersApiFactory(
   configuration: typings.rockset.distCodegenConfigurationMod.Configuration,
   fetch: FetchAPI,
   basePath: String
-): CreateUser = (^.asInstanceOf[js.Dynamic].applyDynamic("UsersApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[CreateUser]
+): GetCurrentUser = (^.asInstanceOf[js.Dynamic].applyDynamic("UsersApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[GetCurrentUser]
 
-inline def UsersApiFetchParamCreator(): DeleteUser = ^.asInstanceOf[js.Dynamic].applyDynamic("UsersApiFetchParamCreator")().asInstanceOf[DeleteUser]
-inline def UsersApiFetchParamCreator(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): DeleteUser = ^.asInstanceOf[js.Dynamic].applyDynamic("UsersApiFetchParamCreator")(configuration.asInstanceOf[js.Any]).asInstanceOf[DeleteUser]
+inline def UsersApiFetchParamCreator(): CreateUser = ^.asInstanceOf[js.Dynamic].applyDynamic("UsersApiFetchParamCreator")().asInstanceOf[CreateUser]
+inline def UsersApiFetchParamCreator(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): CreateUser = ^.asInstanceOf[js.Dynamic].applyDynamic("UsersApiFetchParamCreator")(configuration.asInstanceOf[js.Any]).asInstanceOf[CreateUser]
 
-inline def UsersApiFp(): GetCurrentUser = ^.asInstanceOf[js.Dynamic].applyDynamic("UsersApiFp")().asInstanceOf[GetCurrentUser]
-inline def UsersApiFp(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): GetCurrentUser = ^.asInstanceOf[js.Dynamic].applyDynamic("UsersApiFp")(configuration.asInstanceOf[js.Any]).asInstanceOf[GetCurrentUser]
+inline def UsersApiFp(): DeleteUser = ^.asInstanceOf[js.Dynamic].applyDynamic("UsersApiFp")().asInstanceOf[DeleteUser]
+inline def UsersApiFp(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): DeleteUser = ^.asInstanceOf[js.Dynamic].applyDynamic("UsersApiFp")(configuration.asInstanceOf[js.Any]).asInstanceOf[DeleteUser]
 
-inline def WorkspacesApiFactory(): ChildWorkspaces = ^.asInstanceOf[js.Dynamic].applyDynamic("WorkspacesApiFactory")().asInstanceOf[ChildWorkspaces]
-inline def WorkspacesApiFactory(configuration: Unit, fetch: Unit, basePath: String): ChildWorkspaces = (^.asInstanceOf[js.Dynamic].applyDynamic("WorkspacesApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[ChildWorkspaces]
-inline def WorkspacesApiFactory(configuration: Unit, fetch: FetchAPI): ChildWorkspaces = (^.asInstanceOf[js.Dynamic].applyDynamic("WorkspacesApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[ChildWorkspaces]
-inline def WorkspacesApiFactory(configuration: Unit, fetch: FetchAPI, basePath: String): ChildWorkspaces = (^.asInstanceOf[js.Dynamic].applyDynamic("WorkspacesApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[ChildWorkspaces]
-inline def WorkspacesApiFactory(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): ChildWorkspaces = ^.asInstanceOf[js.Dynamic].applyDynamic("WorkspacesApiFactory")(configuration.asInstanceOf[js.Any]).asInstanceOf[ChildWorkspaces]
+inline def WorkspacesApiFactory(): DeleteWorkspace = ^.asInstanceOf[js.Dynamic].applyDynamic("WorkspacesApiFactory")().asInstanceOf[DeleteWorkspace]
+inline def WorkspacesApiFactory(configuration: Unit, fetch: Unit, basePath: String): DeleteWorkspace = (^.asInstanceOf[js.Dynamic].applyDynamic("WorkspacesApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[DeleteWorkspace]
+inline def WorkspacesApiFactory(configuration: Unit, fetch: FetchAPI): DeleteWorkspace = (^.asInstanceOf[js.Dynamic].applyDynamic("WorkspacesApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[DeleteWorkspace]
+inline def WorkspacesApiFactory(configuration: Unit, fetch: FetchAPI, basePath: String): DeleteWorkspace = (^.asInstanceOf[js.Dynamic].applyDynamic("WorkspacesApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[DeleteWorkspace]
+inline def WorkspacesApiFactory(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): DeleteWorkspace = ^.asInstanceOf[js.Dynamic].applyDynamic("WorkspacesApiFactory")(configuration.asInstanceOf[js.Any]).asInstanceOf[DeleteWorkspace]
 inline def WorkspacesApiFactory(
   configuration: typings.rockset.distCodegenConfigurationMod.Configuration,
   fetch: Unit,
   basePath: String
-): ChildWorkspaces = (^.asInstanceOf[js.Dynamic].applyDynamic("WorkspacesApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[ChildWorkspaces]
-inline def WorkspacesApiFactory(configuration: typings.rockset.distCodegenConfigurationMod.Configuration, fetch: FetchAPI): ChildWorkspaces = (^.asInstanceOf[js.Dynamic].applyDynamic("WorkspacesApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[ChildWorkspaces]
+): DeleteWorkspace = (^.asInstanceOf[js.Dynamic].applyDynamic("WorkspacesApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[DeleteWorkspace]
+inline def WorkspacesApiFactory(configuration: typings.rockset.distCodegenConfigurationMod.Configuration, fetch: FetchAPI): DeleteWorkspace = (^.asInstanceOf[js.Dynamic].applyDynamic("WorkspacesApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[DeleteWorkspace]
 inline def WorkspacesApiFactory(
   configuration: typings.rockset.distCodegenConfigurationMod.Configuration,
   fetch: FetchAPI,
   basePath: String
-): ChildWorkspaces = (^.asInstanceOf[js.Dynamic].applyDynamic("WorkspacesApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[ChildWorkspaces]
+): DeleteWorkspace = (^.asInstanceOf[js.Dynamic].applyDynamic("WorkspacesApiFactory")(configuration.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[DeleteWorkspace]
 
-inline def WorkspacesApiFetchParamCreator(): CreateWorkspace = ^.asInstanceOf[js.Dynamic].applyDynamic("WorkspacesApiFetchParamCreator")().asInstanceOf[CreateWorkspace]
-inline def WorkspacesApiFetchParamCreator(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): CreateWorkspace = ^.asInstanceOf[js.Dynamic].applyDynamic("WorkspacesApiFetchParamCreator")(configuration.asInstanceOf[js.Any]).asInstanceOf[CreateWorkspace]
+inline def WorkspacesApiFetchParamCreator(): ChildWorkspaces = ^.asInstanceOf[js.Dynamic].applyDynamic("WorkspacesApiFetchParamCreator")().asInstanceOf[ChildWorkspaces]
+inline def WorkspacesApiFetchParamCreator(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): ChildWorkspaces = ^.asInstanceOf[js.Dynamic].applyDynamic("WorkspacesApiFetchParamCreator")(configuration.asInstanceOf[js.Any]).asInstanceOf[ChildWorkspaces]
 
-inline def WorkspacesApiFp(): DeleteWorkspace = ^.asInstanceOf[js.Dynamic].applyDynamic("WorkspacesApiFp")().asInstanceOf[DeleteWorkspace]
-inline def WorkspacesApiFp(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): DeleteWorkspace = ^.asInstanceOf[js.Dynamic].applyDynamic("WorkspacesApiFp")(configuration.asInstanceOf[js.Any]).asInstanceOf[DeleteWorkspace]
+inline def WorkspacesApiFp(): CreateWorkspace = ^.asInstanceOf[js.Dynamic].applyDynamic("WorkspacesApiFp")().asInstanceOf[CreateWorkspace]
+inline def WorkspacesApiFp(configuration: typings.rockset.distCodegenConfigurationMod.Configuration): CreateWorkspace = ^.asInstanceOf[js.Dynamic].applyDynamic("WorkspacesApiFp")(configuration.asInstanceOf[js.Any]).asInstanceOf[CreateWorkspace]

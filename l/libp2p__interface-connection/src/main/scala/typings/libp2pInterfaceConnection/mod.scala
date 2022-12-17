@@ -229,7 +229,7 @@ object mod {
     /**
       * The current status of the connection
       */
-    var status: /* keyof @libp2p/interface-connection.anon.TypeofStatus */ CLOSED | CLOSING | OPEN
+    var status: /* keyof @libp2p/interface-connection.anon.TypeofStatus */ OPEN | CLOSING | CLOSED
     
     /**
       * Lifecycle times for the connection
@@ -240,7 +240,7 @@ object mod {
     
     inline def apply(
       direction: Direction,
-      status: /* keyof @libp2p/interface-connection.anon.TypeofStatus */ CLOSED | CLOSING | OPEN,
+      status: /* keyof @libp2p/interface-connection.anon.TypeofStatus */ OPEN | CLOSING | CLOSED,
       timeline: ConnectionTimeline
     ): ConnectionStat = {
       val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], timeline = timeline.asInstanceOf[js.Any])
@@ -259,7 +259,7 @@ object mod {
       
       inline def setMultiplexerUndefined: Self = StObject.set(x, "multiplexer", js.undefined)
       
-      inline def setStatus(value: /* keyof @libp2p/interface-connection.anon.TypeofStatus */ CLOSED | CLOSING | OPEN): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: /* keyof @libp2p/interface-connection.anon.TypeofStatus */ OPEN | CLOSING | CLOSED): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
       inline def setTimeline(value: ConnectionTimeline): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
     }

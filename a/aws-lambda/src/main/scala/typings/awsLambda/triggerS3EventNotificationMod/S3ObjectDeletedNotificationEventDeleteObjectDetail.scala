@@ -1,7 +1,7 @@
 package typings.awsLambda.triggerS3EventNotificationMod
 
+import typings.awsLambda.anon.EtagKey
 import typings.awsLambda.anon.NameString
-import typings.awsLambda.anon.Versionid
 import typings.awsLambda.awsLambdaStrings.DeleteObject
 import typings.awsLambda.awsLambdaStrings.`0`
 import typings.awsLambda.awsLambdaStrings.`Delete Marker Created`
@@ -18,7 +18,7 @@ trait S3ObjectDeletedNotificationEventDeleteObjectDetail
   
   var `deletion-type`: (`Permanently Deleted`) | (`Delete Marker Created`)
   
-  var `object`: Versionid
+  var `object`: EtagKey
   
   var reason: DeleteObject
   
@@ -35,7 +35,7 @@ object S3ObjectDeletedNotificationEventDeleteObjectDetail {
   inline def apply(
     bucket: NameString,
     `deletion-type`: (`Permanently Deleted`) | (`Delete Marker Created`),
-    `object`: Versionid,
+    `object`: EtagKey,
     `request-id`: String,
     requester: String,
     `source-ip-address`: String
@@ -54,7 +54,7 @@ object S3ObjectDeletedNotificationEventDeleteObjectDetail {
     
     inline def `setDeletion-type`(value: (`Permanently Deleted`) | (`Delete Marker Created`)): Self = StObject.set(x, "deletion-type", value.asInstanceOf[js.Any])
     
-    inline def setObject(value: Versionid): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: EtagKey): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     inline def setReason(value: DeleteObject): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     

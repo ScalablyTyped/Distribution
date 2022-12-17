@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.HashMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ trait AnonymousAccessor extends StObject {
   
   var get: js.UndefOr[js.Function1[/* propertyName */ String, Any]] = js.undefined
   
-  var set: (js.UndefOr[js.Function2[/* propertyName */ String, /* value */ Any, this.type]]) & (js.UndefOr[js.Function1[/* props */ HashMap[Any], this.type]])
+  var set: js.UndefOr[js.Function2[/* propertyName */ String, /* value */ Any, this.type]] = js.undefined
   
   var watch: js.UndefOr[
     js.Function3[
@@ -22,10 +21,8 @@ trait AnonymousAccessor extends StObject {
 }
 object AnonymousAccessor {
   
-  inline def apply(
-    set: (js.UndefOr[js.Function2[/* propertyName */ String, /* value */ Any, AnonymousAccessor]]) & (js.UndefOr[js.Function1[/* props */ HashMap[Any], AnonymousAccessor]])
-  ): AnonymousAccessor = {
-    val __obj = js.Dynamic.literal(set = set.asInstanceOf[js.Any])
+  inline def apply(): AnonymousAccessor = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnonymousAccessor]
   }
   
@@ -35,9 +32,9 @@ object AnonymousAccessor {
     
     inline def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     
-    inline def setSet(
-      value: (js.UndefOr[js.Function2[/* propertyName */ String, /* value */ Any, AnonymousAccessor]]) & (js.UndefOr[js.Function1[/* props */ HashMap[Any], AnonymousAccessor]])
-    ): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
+    inline def setSet(value: (/* propertyName */ String, /* value */ Any) => AnonymousAccessor): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+    
+    inline def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
     
     inline def setWatch(
       value: (/* path */ String | js.Array[String], /* callback */ WatchCallback, /* sync */ js.UndefOr[Boolean]) => WatchHandle

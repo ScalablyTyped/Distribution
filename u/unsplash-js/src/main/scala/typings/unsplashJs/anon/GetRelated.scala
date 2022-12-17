@@ -12,14 +12,14 @@ trait GetRelated extends StObject {
   def get(a: CollectionId): js.Promise[ApiResponse[Any]] = js.native
   def get(a: CollectionId, additionalFetchOptions: AdditionalFetchOptions): js.Promise[ApiResponse[Any]] = js.native
   
-  def getPhotos(a: collectionIdstringPaginat): js.Promise[ApiResponse[Results]] = js.native
-  def getPhotos(a: collectionIdstringPaginat, additionalFetchOptions: AdditionalFetchOptions): js.Promise[ApiResponse[Results]] = js.native
+  def getPhotos(a: collectionIdstringPaginat): js.Promise[ApiResponse[Total]] = js.native
+  def getPhotos(a: collectionIdstringPaginat, additionalFetchOptions: AdditionalFetchOptions): js.Promise[ApiResponse[Total]] = js.native
   
   def getRelated(a: CollectionId): js.Promise[ApiResponse[Any]] = js.native
   def getRelated(a: CollectionId, additionalFetchOptions: AdditionalFetchOptions): js.Promise[ApiResponse[Any]] = js.native
   
-  def list(): js.Promise[ApiResponse[Results]] = js.native
-  def list(a: Unit, additionalFetchOptions: AdditionalFetchOptions): js.Promise[ApiResponse[Results]] = js.native
-  def list(a: PickPaginationParamspagep): js.Promise[ApiResponse[Results]] = js.native
-  def list(a: PickPaginationParamspagep, additionalFetchOptions: AdditionalFetchOptions): js.Promise[ApiResponse[Results]] = js.native
+  def list(): js.Promise[ApiResponse[Total]] = js.native
+  def list(a: Unit, additionalFetchOptions: AdditionalFetchOptions): js.Promise[ApiResponse[Total]] = js.native
+  def list(a: PickPaginationParamspagep): js.Promise[ApiResponse[Total]] = js.native
+  def list(a: PickPaginationParamspagep, additionalFetchOptions: AdditionalFetchOptions): js.Promise[ApiResponse[Total]] = js.native
 }

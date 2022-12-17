@@ -20,9 +20,9 @@ trait Projectcard extends StObject {
   
   var node_id: String
   
-  var performed_via_github_app: Clientsecret | Null
+  var performed_via_github_app: Externalurl | Null
   
-  var project_card: js.UndefOr[Projectid] = js.undefined
+  var project_card: js.UndefOr[Projecturl] = js.undefined
   
   var url: String
 }
@@ -53,11 +53,11 @@ object Projectcard {
     
     inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
-    inline def setPerformed_via_github_app(value: Clientsecret): Self = StObject.set(x, "performed_via_github_app", value.asInstanceOf[js.Any])
+    inline def setPerformed_via_github_app(value: Externalurl): Self = StObject.set(x, "performed_via_github_app", value.asInstanceOf[js.Any])
     
     inline def setPerformed_via_github_appNull: Self = StObject.set(x, "performed_via_github_app", null)
     
-    inline def setProject_card(value: Projectid): Self = StObject.set(x, "project_card", value.asInstanceOf[js.Any])
+    inline def setProject_card(value: Projecturl): Self = StObject.set(x, "project_card", value.asInstanceOf[js.Any])
     
     inline def setProject_cardUndefined: Self = StObject.set(x, "project_card", js.undefined)
     

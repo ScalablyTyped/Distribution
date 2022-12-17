@@ -1,7 +1,7 @@
 package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
-import typings.materialUiCore.anon.ClassKeyFabClassKeyDefaultComponentD
+import typings.materialUiCore.anon.ClassKeyFabClassKey
 import typings.materialUiCore.buttonBaseButtonBaseMod.ExtendButtonBase
 import typings.materialUiCore.buttonBaseButtonBaseMod.ExtendButtonBaseTypeMap
 import typings.materialUiCore.materialUiCoreStrings.button
@@ -66,7 +66,7 @@ object fabFabMod extends Shortcut {
   
   type FabProps[D /* <: ElementType[Any] */, P] = OverrideProps[FabTypeMap[P, D], D]
   
-  type FabTypeMap[P, D /* <: ElementType[Any] */] = ExtendButtonBaseTypeMap[ClassKeyFabClassKeyDefaultComponentD[P, D]]
+  type FabTypeMap[P, D /* <: ElementType[Any] */] = ExtendButtonBaseTypeMap[ClassKeyFabClassKey[P, D]]
   
   type _To = ExtendButtonBase[FabTypeMap[js.Object, button]]
   

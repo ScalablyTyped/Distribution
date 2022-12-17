@@ -8,12 +8,12 @@ trait Pageinfo extends StObject {
   
   var page_info: Currentpage
   
-  var paymentplans: js.Array[Datecreated]
+  var transfers: js.Array[Bankcode]
 }
 object Pageinfo {
   
-  inline def apply(page_info: Currentpage, paymentplans: js.Array[Datecreated]): Pageinfo = {
-    val __obj = js.Dynamic.literal(page_info = page_info.asInstanceOf[js.Any], paymentplans = paymentplans.asInstanceOf[js.Any])
+  inline def apply(page_info: Currentpage, transfers: js.Array[Bankcode]): Pageinfo = {
+    val __obj = js.Dynamic.literal(page_info = page_info.asInstanceOf[js.Any], transfers = transfers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pageinfo]
   }
   
@@ -21,8 +21,8 @@ object Pageinfo {
     
     inline def setPage_info(value: Currentpage): Self = StObject.set(x, "page_info", value.asInstanceOf[js.Any])
     
-    inline def setPaymentplans(value: js.Array[Datecreated]): Self = StObject.set(x, "paymentplans", value.asInstanceOf[js.Any])
+    inline def setTransfers(value: js.Array[Bankcode]): Self = StObject.set(x, "transfers", value.asInstanceOf[js.Any])
     
-    inline def setPaymentplansVarargs(value: Datecreated*): Self = StObject.set(x, "paymentplans", js.Array(value*))
+    inline def setTransfersVarargs(value: Bankcode*): Self = StObject.set(x, "transfers", js.Array(value*))
   }
 }

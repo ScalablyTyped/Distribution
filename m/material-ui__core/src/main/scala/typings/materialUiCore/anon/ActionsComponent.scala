@@ -26,7 +26,7 @@ trait ActionsComponent extends StObject {
   var backIconButtonProps: js.UndefOr[
     Partial[
       IconButtonProps[
-        /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.DefaultComponent['defaultComponent'] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKey['defaultComponent'] */ js.Any, 
         js.Object
       ]
     ]
@@ -43,7 +43,7 @@ trait ActionsComponent extends StObject {
   var nextIconButtonProps: js.UndefOr[
     Partial[
       IconButtonProps[
-        /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.DefaultComponent['defaultComponent'] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKey['defaultComponent'] */ js.Any, 
         js.Object
       ]
     ]

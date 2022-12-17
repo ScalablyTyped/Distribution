@@ -1,9 +1,9 @@
 package typings.terminalKit
 
+import typings.terminalKit.anon.Attr
 import typings.terminalKit.anon.Blending
 import typings.terminalKit.anon.DstRect
 import typings.terminalKit.anon.Shrink
-import typings.terminalKit.anon.TransparencyChar
 import typings.terminalKit.anon.`0`
 import typings.terminalKit.rectMod.AbsoluteOptions
 import typings.terminalKit.rectMod.Region
@@ -62,7 +62,7 @@ object mod {
     inline def create(options: Options): typings.terminalKit.screenBufferMod.ScreenBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[typings.terminalKit.screenBufferMod.ScreenBuffer]
     
     /* static member */
-    inline def createFromString(options: TransparencyChar, str: String): typings.terminalKit.screenBufferMod.ScreenBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromString")(options.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[typings.terminalKit.screenBufferMod.ScreenBuffer]
+    inline def createFromString(options: Attr, str: String): typings.terminalKit.screenBufferMod.ScreenBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromString")(options.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[typings.terminalKit.screenBufferMod.ScreenBuffer]
     
     /* static member */
     inline def loadImage(

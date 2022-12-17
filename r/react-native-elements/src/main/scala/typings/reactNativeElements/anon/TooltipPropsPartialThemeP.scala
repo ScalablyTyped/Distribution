@@ -23,15 +23,15 @@ trait TooltipPropsPartialThemeP extends StObject {
     ])
   ] = js.native
   
-  var backgroundColor: js.UndefOr[ColorValue] & String = js.native
+  var backgroundColor: js.UndefOr[ColorValue] = js.native
   
-  var closeOnlyOnBackdropPress: js.UndefOr[Boolean] & Boolean = js.native
+  var closeOnlyOnBackdropPress: js.UndefOr[Boolean] = js.native
   
-  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] & js.Object = js.native
+  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
   
-  var height: (js.UndefOr[Double | String]) & Double = js.native
+  var height: js.UndefOr[Double | String] = js.native
   
-  var highlightColor: js.UndefOr[ColorValue] & String = js.native
+  var highlightColor: js.UndefOr[ColorValue] = js.native
   
   def onClose(): Unit = js.native
   @JSName("onClose")
@@ -41,7 +41,7 @@ trait TooltipPropsPartialThemeP extends StObject {
   @JSName("onOpen")
   var onOpen_FTooltipPropsPartialThemeP: js.UndefOr[js.Function0[Unit]] = js.native
   
-  var overlayColor: js.UndefOr[ColorValue] & String = js.native
+  var overlayColor: js.UndefOr[ColorValue] = js.native
   
   var pointerColor: js.UndefOr[ColorValue] = js.native
   
@@ -49,19 +49,19 @@ trait TooltipPropsPartialThemeP extends StObject {
   
   var replaceTheme: js.UndefOr[js.Function1[/* updates */ RecursivePartialFullTheme, Unit]] = js.native
   
-  var skipAndroidStatusBar: js.UndefOr[Boolean] & Boolean = js.native
+  var skipAndroidStatusBar: js.UndefOr[Boolean] = js.native
   
   var theme: js.UndefOr[ThemeTooltipProps] = js.native
   
-  var toggleAction: (js.UndefOr[String | onPress | onLongPress]) & String = js.native
+  var toggleAction: js.UndefOr[String | onPress | onLongPress] = js.native
   
-  var toggleOnPress: js.UndefOr[Boolean] & Boolean = js.native
+  var toggleOnPress: js.UndefOr[Boolean] = js.native
   
   var updateTheme: js.UndefOr[js.Function1[/* updates */ RecursivePartialFullTheme, Unit]] = js.native
   
-  var width: (js.UndefOr[Double | String]) & Double = js.native
+  var width: js.UndefOr[Double | String] = js.native
   
-  var withOverlay: js.UndefOr[Boolean] & Boolean = js.native
+  var withOverlay: js.UndefOr[Boolean] = js.native
   
-  var withPointer: js.UndefOr[Boolean] & Boolean = js.native
+  var withPointer: js.UndefOr[Boolean] = js.native
 }

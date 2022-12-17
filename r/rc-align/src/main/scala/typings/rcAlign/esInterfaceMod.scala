@@ -15,7 +15,7 @@ object esInterfaceMod {
     
     var offset: js.Array[Double]
     
-    var overflow: AdjustX
+    var overflow: AdjustY
     
     var points: js.Array[AlignPoint]
     
@@ -25,7 +25,7 @@ object esInterfaceMod {
     
     inline def apply(
       offset: js.Array[Double],
-      overflow: AdjustX,
+      overflow: AdjustY,
       points: js.Array[AlignPoint],
       targetOffset: js.Array[Double]
     ): AlignResult = {
@@ -39,7 +39,7 @@ object esInterfaceMod {
       
       inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value*))
       
-      inline def setOverflow(value: AdjustX): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+      inline def setOverflow(value: AdjustY): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
       
       inline def setPoints(value: js.Array[AlignPoint]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
       
@@ -63,7 +63,7 @@ object esInterfaceMod {
       * If adjustX field is true, will adjust source node in x direction if source node is invisible.
       * If adjustY field is true, will adjust source node in y direction if source node is invisible.
       */
-    var overflow: js.UndefOr[AdjustY] = js.undefined
+    var overflow: js.UndefOr[AdjustX] = js.undefined
     
     /**
       * move point of source node to align with point of target node.
@@ -108,7 +108,7 @@ object esInterfaceMod {
       
       inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value*))
       
-      inline def setOverflow(value: AdjustY): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+      inline def setOverflow(value: AdjustX): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
       
       inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
       

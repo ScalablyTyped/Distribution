@@ -53,13 +53,18 @@ object fsMod {
   
   inline def appendFile(filename: String, data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def appendFile(filename: String, data: Any, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def appendFile(filename: String, data: Any, options: Flag): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def appendFile(filename: String, data: Any, options: Flag, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def appendFile(filename: String, data: Any, options: EncodingFlag): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def appendFile(
+    filename: String,
+    data: Any,
+    options: EncodingFlag,
+    callback: js.Function1[/* err */ ErrnoException, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def appendFile(filename: String, data: Any, options: Mode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def appendFile(filename: String, data: Any, options: Mode, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def appendFileSync(filename: String, data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFileSync")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def appendFileSync(filename: String, data: Any, options: Flag): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFileSync")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def appendFileSync(filename: String, data: Any, options: EncodingFlag): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFileSync")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def appendFileSync(filename: String, data: Any, options: Mode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFileSync")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def chmod(path: String, mode: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -237,7 +242,7 @@ object fsMod {
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(filename.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def readFile(
     filename: String,
-    options: EncodingFlag,
+    options: Flag,
     callback: js.Function2[/* err */ ErrnoException, /* data */ String, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def readFile(
@@ -248,7 +253,7 @@ object fsMod {
   
   inline def readFileSync(filename: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(filename.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   inline def readFileSync(filename: String, encoding: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(filename.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def readFileSync(filename: String, options: EncodingFlag): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def readFileSync(filename: String, options: Flag): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def readFileSync(filename: String, options: `1`): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
   inline def readSync(fd: Double, buffer: Buffer, offset: Double, length: Double, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
@@ -373,13 +378,18 @@ object fsMod {
   
   inline def writeFile(filename: String, data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def writeFile(filename: String, data: Any, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def writeFile(filename: String, data: Any, options: Flag): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def writeFile(filename: String, data: Any, options: Flag, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def writeFile(filename: String, data: Any, options: EncodingFlag): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def writeFile(
+    filename: String,
+    data: Any,
+    options: EncodingFlag,
+    callback: js.Function1[/* err */ ErrnoException, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def writeFile(filename: String, data: Any, options: Mode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def writeFile(filename: String, data: Any, options: Mode, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def writeFileSync(filename: String, data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def writeFileSync(filename: String, data: Any, options: Flag): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def writeFileSync(filename: String, data: Any, options: EncodingFlag): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def writeFileSync(filename: String, data: Any, options: Mode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def writeSync(fd: Double, buffer: Buffer, offset: Double, length: Double, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]

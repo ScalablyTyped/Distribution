@@ -16,13 +16,13 @@ trait PickImploverlayPartialPic
   
   var notFound: js.UndefOr[String] = js.undefined
   
-  var overlay: String & js.UndefOr[String]
+  var overlay: String
   
   var pusher: js.UndefOr[String] = js.undefined
 }
 object PickImploverlayPartialPic {
   
-  inline def apply(overlay: String & js.UndefOr[String]): PickImploverlayPartialPic = {
+  inline def apply(overlay: String): PickImploverlayPartialPic = {
     val __obj = js.Dynamic.literal(overlay = overlay.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImploverlayPartialPic]
   }
@@ -41,7 +41,7 @@ object PickImploverlayPartialPic {
     
     inline def setNotFoundUndefined: Self = StObject.set(x, "notFound", js.undefined)
     
-    inline def setOverlay(value: String & js.UndefOr[String]): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+    inline def setOverlay(value: String): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     
     inline def setPusher(value: String): Self = StObject.set(x, "pusher", value.asInstanceOf[js.Any])
     

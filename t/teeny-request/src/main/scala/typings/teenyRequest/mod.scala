@@ -6,6 +6,7 @@ import typings.node.httpsMod.AgentOptions
 import typings.node.streamMod.PassThrough
 import typings.node.streamMod.Readable
 import typings.std.Error
+import typings.teenyRequest.buildSrcTeenyStatisticsMod.TeenyStatistics
 import typings.teenyRequest.teenyRequestBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -28,6 +29,47 @@ object mod {
     /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
+  }
+  
+  object teenyRequest {
+    
+    inline def apply(reqOpts: Options): Request = ^.asInstanceOf[js.Dynamic].apply(reqOpts.asInstanceOf[js.Any]).asInstanceOf[Request]
+    inline def apply(reqOpts: Options, callback: RequestCallback[Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(reqOpts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @JSImport("teeny-request", "teenyRequest")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("teeny-request", "teenyRequest.defaults")
+    @js.native
+    def defaults: js.Function1[
+        /* defaults */ CoreOptions, 
+        js.Function2[
+          /* reqOpts */ Options, 
+          /* callback */ js.UndefOr[RequestCallback[Any]], 
+          Unit | Request
+        ]
+      ] = js.native
+    inline def defaults_=(
+      x: js.Function1[
+          /* defaults */ CoreOptions, 
+          js.Function2[
+            /* reqOpts */ Options, 
+            /* callback */ js.UndefOr[RequestCallback[Any]], 
+            Unit | Request
+          ]
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaults")(x.asInstanceOf[js.Any])
+    
+    @JSImport("teeny-request", "teenyRequest.resetStats")
+    @js.native
+    def resetStats: js.Function0[Unit] = js.native
+    inline def resetStats_=(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("resetStats")(x.asInstanceOf[js.Any])
+    
+    @JSImport("teeny-request", "teenyRequest.stats")
+    @js.native
+    def stats: TeenyStatistics = js.native
+    inline def stats_=(x: TeenyStatistics): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stats")(x.asInstanceOf[js.Any])
   }
   
   trait CoreOptions extends StObject {

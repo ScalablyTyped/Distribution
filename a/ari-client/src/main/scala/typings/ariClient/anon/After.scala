@@ -12,14 +12,16 @@ trait After extends StObject {
   
   var between: js.UndefOr[Double] = js.undefined
   
+  var channelId: String
+  
   var dtmf: js.UndefOr[String] = js.undefined
   
   var duration: js.UndefOr[Double] = js.undefined
 }
 object After {
   
-  inline def apply(): After = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(channelId: String): After = {
+    val __obj = js.Dynamic.literal(channelId = channelId.asInstanceOf[js.Any])
     __obj.asInstanceOf[After]
   }
   
@@ -36,6 +38,8 @@ object After {
     inline def setBetween(value: Double): Self = StObject.set(x, "between", value.asInstanceOf[js.Any])
     
     inline def setBetweenUndefined: Self = StObject.set(x, "between", js.undefined)
+    
+    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
     inline def setDtmf(value: String): Self = StObject.set(x, "dtmf", value.asInstanceOf[js.Any])
     

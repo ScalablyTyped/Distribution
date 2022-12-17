@@ -45,7 +45,7 @@ trait PickImplallowAdditionsPar
     ])
   ] = js.undefined
   
-  var allowAdditions: Boolean & js.UndefOr[Boolean]
+  var allowAdditions: Boolean
   
   var allowCategorySelection: js.UndefOr[Boolean] = js.undefined
   
@@ -169,7 +169,7 @@ trait PickImplallowAdditionsPar
 }
 object PickImplallowAdditionsPar {
   
-  inline def apply(allowAdditions: Boolean & js.UndefOr[Boolean]): PickImplallowAdditionsPar = {
+  inline def apply(allowAdditions: Boolean): PickImplallowAdditionsPar = {
     val __obj = js.Dynamic.literal(allowAdditions = allowAdditions.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplallowAdditionsPar]
   }
@@ -188,7 +188,7 @@ object PickImplallowAdditionsPar {
     
     inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    inline def setAllowAdditions(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "allowAdditions", value.asInstanceOf[js.Any])
+    inline def setAllowAdditions(value: Boolean): Self = StObject.set(x, "allowAdditions", value.asInstanceOf[js.Any])
     
     inline def setAllowCategorySelection(value: Boolean): Self = StObject.set(x, "allowCategorySelection", value.asInstanceOf[js.Any])
     

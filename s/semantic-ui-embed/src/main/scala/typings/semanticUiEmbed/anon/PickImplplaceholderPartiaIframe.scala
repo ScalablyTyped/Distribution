@@ -14,14 +14,12 @@ trait PickImplplaceholderPartiaIframe
   
   def placeholder(image: String, icon: String): String
   @JSName("placeholder")
-  var placeholder_Original: (js.Function2[/* image */ String, /* icon */ String, String]) & (js.UndefOr[js.Function2[/* image */ String, /* icon */ String, String]])
+  var placeholder_Original: js.Function2[/* image */ String, /* icon */ String, String]
 }
 object PickImplplaceholderPartiaIframe {
   
-  inline def apply(
-    placeholder: (js.Function2[/* image */ String, /* icon */ String, String]) & (js.UndefOr[js.Function2[/* image */ String, /* icon */ String, String]])
-  ): PickImplplaceholderPartiaIframe = {
-    val __obj = js.Dynamic.literal(placeholder = placeholder.asInstanceOf[js.Any])
+  inline def apply(placeholder: (/* image */ String, /* icon */ String) => String): PickImplplaceholderPartiaIframe = {
+    val __obj = js.Dynamic.literal(placeholder = js.Any.fromFunction2(placeholder))
     __obj.asInstanceOf[PickImplplaceholderPartiaIframe]
   }
   
@@ -31,8 +29,6 @@ object PickImplplaceholderPartiaIframe {
     
     inline def setIframeUndefined: Self = StObject.set(x, "iframe", js.undefined)
     
-    inline def setPlaceholder(
-      value: (js.Function2[/* image */ String, /* icon */ String, String]) & (js.UndefOr[js.Function2[/* image */ String, /* icon */ String, String]])
-    ): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: (/* image */ String, /* icon */ String) => String): Self = StObject.set(x, "placeholder", js.Any.fromFunction2(value))
   }
 }

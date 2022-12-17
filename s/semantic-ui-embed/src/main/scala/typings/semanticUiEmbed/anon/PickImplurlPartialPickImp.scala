@@ -65,13 +65,13 @@ trait PickImplurlPartialPickImp
   
   var templates: js.UndefOr[TemplatesSettings] = js.undefined
   
-  var url: (`false` | String) & (js.UndefOr[`false` | String])
+  var url: `false` | String
   
   var verbose: js.UndefOr[Boolean] = js.undefined
 }
 object PickImplurlPartialPickImp {
   
-  inline def apply(url: (`false` | String) & (js.UndefOr[`false` | String])): PickImplurlPartialPickImp = {
+  inline def apply(url: `false` | String): PickImplurlPartialPickImp = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplurlPartialPickImp]
   }
@@ -168,7 +168,7 @@ object PickImplurlPartialPickImp {
     
     inline def setTemplatesUndefined: Self = StObject.set(x, "templates", js.undefined)
     
-    inline def setUrl(value: (`false` | String) & (js.UndefOr[`false` | String])): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: `false` | String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     

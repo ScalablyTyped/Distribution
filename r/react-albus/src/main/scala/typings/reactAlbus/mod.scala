@@ -60,14 +60,16 @@ object mod {
   }
   object StepsProps {
     
-    inline def apply(children: NonNullable[ReactNode]): StepsProps = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    inline def apply(): StepsProps = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StepsProps]
     }
     
     extension [Self <: StepsProps](x: Self) {
       
       inline def setChildren(value: NonNullable[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setStep(value: StepObject): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       

@@ -1,16 +1,22 @@
 package typings.gremlin.mod
 
 import typings.gremlin.mod.process.Bytecode
-import typings.gremlin.mod.process.Traversal
+import typings.gremlin.mod.process.TraversalSideEffects
 import typings.gremlin.mod.process.TraversalStrategy
+import typings.gremlin.mod.process.Traversal_
+import typings.gremlin.mod.process.Traverser
+import typings.std.MapConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object driver {
   
+  @JSImport("gremlin", "driver.Client")
   @js.native
-  trait Client extends StObject {
+  open class Client protected () extends StObject {
+    def this(url: String) = this()
+    def this(url: String, options: Any) = this()
     
     def close(): js.Promise[Unit] = js.native
     
@@ -37,10 +43,11 @@ object driver {
     def submit(message: Bytecode, bindings: Unit, requestOptions: RequestOptions): js.Promise[Any] = js.native
   }
   
+  @JSImport("gremlin", "driver.DriverRemoteConnection")
   @js.native
-  trait DriverRemoteConnection
-    extends StObject
-       with RemoteConnection {
+  open class DriverRemoteConnection protected () extends RemoteConnection {
+    def this(url: String) = this()
+    def this(url: String, options: Any) = this()
     
     def addListener(event: String, handler: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
     def addListener(event: js.Symbol, handler: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
@@ -59,43 +66,64 @@ object driver {
     def rollback(): js.Promise[Any] = js.native
   }
   
-  trait RemoteConnection extends StObject {
+  @JSImport("gremlin", "driver.RemoteConnection")
+  @js.native
+  open class RemoteConnection protected () extends StObject {
+    def this(url: String) = this()
+    def this(url: String, options: Any) = this()
     
-    def close(): js.Promise[Unit]
+    def close(): js.Promise[Unit] = js.native
     
-    def open(): js.Promise[Unit]
+    def open(): js.Promise[Unit] = js.native
     
-    def submit(bytecode: Bytecode): js.Promise[Any]
-  }
-  object RemoteConnection {
-    
-    inline def apply(close: () => js.Promise[Unit], open: () => js.Promise[Unit], submit: Bytecode => js.Promise[Any]): RemoteConnection = {
-      val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), open = js.Any.fromFunction0(open), submit = js.Any.fromFunction1(submit))
-      __obj.asInstanceOf[RemoteConnection]
-    }
-    
-    extension [Self <: RemoteConnection](x: Self) {
-      
-      inline def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
-      
-      inline def setOpen(value: () => js.Promise[Unit]): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
-      
-      inline def setSubmit(value: Bytecode => js.Promise[Any]): Self = StObject.set(x, "submit", js.Any.fromFunction1(value))
-    }
+    def submit(bytecode: Bytecode): js.Promise[Any] = js.native
   }
   
-  trait RemoteStrategy
-    extends StObject
-       with TraversalStrategy
-  object RemoteStrategy {
+  @JSImport("gremlin", "driver.RemoteStrategy")
+  @js.native
+  open class RemoteStrategy protected () extends TraversalStrategy {
+    def this(connection: RemoteConnection) = this()
     
-    inline def apply(apply: Traversal => js.Promise[Traversal]): RemoteStrategy = {
-      val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply))
-      __obj.asInstanceOf[RemoteStrategy]
-    }
+    @JSName("apply")
+    def apply(traversal: RemoteTraversal): js.Promise[Any] = js.native
   }
   
-  type RemoteTraversal = Traversal
+  @JSImport("gremlin", "driver.RemoteTraversal")
+  @js.native
+  open class RemoteTraversal () extends Traversal_ {
+    def this(traversers: js.Array[Traverser]) = this()
+    def this(traversers: js.Array[Traverser], sideEffects: TraversalSideEffects) = this()
+    def this(traversers: Unit, sideEffects: TraversalSideEffects) = this()
+  }
+  
+  @JSImport("gremlin", "driver.ResultSet")
+  @js.native
+  open class ResultSet protected () extends StObject {
+    def this(items: js.Array[Any]) = this()
+    def this(items: js.Array[Any], attributes: MapConstructor) = this()
+    
+    def first(): Any = js.native
+    
+    def toArray(): js.Array[Any] = js.native
+  }
+  
+  object auth {
+    
+    @JSImport("gremlin", "driver.auth.Authenticator")
+    @js.native
+    open class Authenticator () extends StObject {
+      def this(options: Any) = this()
+      
+      def evaluateChallenge(challenge: String): Any = js.native
+    }
+    
+    @JSImport("gremlin", "driver.auth.PlainTextSaslAuthenticator")
+    @js.native
+    open class PlainTextSaslAuthenticator protected () extends Authenticator {
+      def this(username: String, password: String) = this()
+      def this(username: String, password: String, authzid: String) = this()
+    }
+  }
   
   trait RequestOptions extends StObject {
     
@@ -123,58 +151,6 @@ object driver {
       inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
       
       inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait ResultSet extends StObject {
-    
-    def first(): Any
-    
-    def toArray(): js.Array[Any]
-  }
-  object ResultSet {
-    
-    inline def apply(first: () => Any, toArray: () => js.Array[Any]): ResultSet = {
-      val __obj = js.Dynamic.literal(first = js.Any.fromFunction0(first), toArray = js.Any.fromFunction0(toArray))
-      __obj.asInstanceOf[ResultSet]
-    }
-    
-    extension [Self <: ResultSet](x: Self) {
-      
-      inline def setFirst(value: () => Any): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
-      
-      inline def setToArray(value: () => js.Array[Any]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
-    }
-  }
-  
-  object auth {
-    
-    trait Authenticator extends StObject {
-      
-      def evaluateChallenge(challenge: String): Any
-    }
-    object Authenticator {
-      
-      inline def apply(evaluateChallenge: String => Any): Authenticator = {
-        val __obj = js.Dynamic.literal(evaluateChallenge = js.Any.fromFunction1(evaluateChallenge))
-        __obj.asInstanceOf[Authenticator]
-      }
-      
-      extension [Self <: Authenticator](x: Self) {
-        
-        inline def setEvaluateChallenge(value: String => Any): Self = StObject.set(x, "evaluateChallenge", js.Any.fromFunction1(value))
-      }
-    }
-    
-    trait PlainTextSaslAuthenticator
-      extends StObject
-         with Authenticator
-    object PlainTextSaslAuthenticator {
-      
-      inline def apply(evaluateChallenge: String => Any): PlainTextSaslAuthenticator = {
-        val __obj = js.Dynamic.literal(evaluateChallenge = js.Any.fromFunction1(evaluateChallenge))
-        __obj.asInstanceOf[PlainTextSaslAuthenticator]
-      }
     }
   }
 }

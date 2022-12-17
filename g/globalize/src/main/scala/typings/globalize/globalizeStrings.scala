@@ -28,6 +28,7 @@ object globalizeStrings {
   sealed trait compact
     extends StObject
        with NumberFormatPartTypes
+       with typings.globalize.distGlobalizeDateMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes
        with typings.globalize.distGlobalizeMod.NumberFormatPartTypes
   inline def compact: compact = "compact".asInstanceOf[compact]
   
@@ -49,6 +50,7 @@ object globalizeStrings {
   sealed trait decimal
     extends StObject
        with NumberFormatPartTypes
+       with typings.globalize.distGlobalizeDateMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes
        with typings.globalize.distGlobalizeMod.NumberFormatPartTypes
   inline def decimal: decimal = "decimal".asInstanceOf[decimal]
   
@@ -67,6 +69,7 @@ object globalizeStrings {
   sealed trait fraction
     extends StObject
        with NumberFormatPartTypes
+       with typings.globalize.distGlobalizeDateMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes
        with typings.globalize.distGlobalizeMod.NumberFormatPartTypes
   inline def fraction: fraction = "fraction".asInstanceOf[fraction]
   
@@ -78,6 +81,7 @@ object globalizeStrings {
   sealed trait group
     extends StObject
        with NumberFormatPartTypes
+       with typings.globalize.distGlobalizeDateMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes
        with typings.globalize.distGlobalizeMod.NumberFormatPartTypes
   inline def group: group = "group".asInstanceOf[group]
   
@@ -92,6 +96,7 @@ object globalizeStrings {
   sealed trait infinity
     extends StObject
        with NumberFormatPartTypes
+       with typings.globalize.distGlobalizeDateMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes
        with typings.globalize.distGlobalizeMod.NumberFormatPartTypes
   inline def infinity: infinity = "infinity".asInstanceOf[infinity]
   
@@ -99,6 +104,7 @@ object globalizeStrings {
   sealed trait integer
     extends StObject
        with NumberFormatPartTypes
+       with typings.globalize.distGlobalizeDateMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes
        with typings.globalize.distGlobalizeMod.NumberFormatPartTypes
   inline def integer: integer = "integer".asInstanceOf[integer]
   
@@ -108,6 +114,7 @@ object globalizeStrings {
        with DateFormatPartTypes
        with typings.globalize.distGlobalizeMod.DateFormatPartTypes
        with NumberFormatPartTypes
+       with typings.globalize.distGlobalizeDateMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes
        with typings.globalize.distGlobalizeMod.NumberFormatPartTypes
   inline def literal: literal = "literal".asInstanceOf[literal]
   
@@ -123,6 +130,7 @@ object globalizeStrings {
   sealed trait minusSign
     extends StObject
        with NumberFormatPartTypes
+       with typings.globalize.distGlobalizeDateMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes
        with typings.globalize.distGlobalizeMod.NumberFormatPartTypes
   inline def minusSign: minusSign = "minusSign".asInstanceOf[minusSign]
   
@@ -148,6 +156,7 @@ object globalizeStrings {
   sealed trait nan
     extends StObject
        with NumberFormatPartTypes
+       with typings.globalize.distGlobalizeDateMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes
        with typings.globalize.distGlobalizeMod.NumberFormatPartTypes
   inline def nan: nan = "nan".asInstanceOf[nan]
   
@@ -167,6 +176,7 @@ object globalizeStrings {
   sealed trait percentSign
     extends StObject
        with NumberFormatPartTypes
+       with typings.globalize.distGlobalizeDateMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes
        with typings.globalize.distGlobalizeMod.NumberFormatPartTypes
   inline def percentSign: percentSign = "percentSign".asInstanceOf[percentSign]
   
@@ -174,6 +184,7 @@ object globalizeStrings {
   sealed trait plusSign
     extends StObject
        with NumberFormatPartTypes
+       with typings.globalize.distGlobalizeDateMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes
        with typings.globalize.distGlobalizeMod.NumberFormatPartTypes
   inline def plusSign: plusSign = "plusSign".asInstanceOf[plusSign]
   

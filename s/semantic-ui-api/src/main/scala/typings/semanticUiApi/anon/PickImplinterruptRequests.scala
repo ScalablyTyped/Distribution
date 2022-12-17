@@ -65,7 +65,7 @@ trait PickImplinterruptRequests
   
   var hideError: js.UndefOr[auto | Boolean] = js.undefined
   
-  var interruptRequests: Boolean & js.UndefOr[Boolean]
+  var interruptRequests: Boolean
   
   var loadingDuration: js.UndefOr[Double] = js.undefined
   
@@ -147,7 +147,7 @@ trait PickImplinterruptRequests
 }
 object PickImplinterruptRequests {
   
-  inline def apply(interruptRequests: Boolean & js.UndefOr[Boolean]): PickImplinterruptRequests = {
+  inline def apply(interruptRequests: Boolean): PickImplinterruptRequests = {
     val __obj = js.Dynamic.literal(interruptRequests = interruptRequests.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplinterruptRequests]
   }
@@ -210,7 +210,7 @@ object PickImplinterruptRequests {
     
     inline def setHideErrorUndefined: Self = StObject.set(x, "hideError", js.undefined)
     
-    inline def setInterruptRequests(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "interruptRequests", value.asInstanceOf[js.Any])
+    inline def setInterruptRequests(value: Boolean): Self = StObject.set(x, "interruptRequests", value.asInstanceOf[js.Any])
     
     inline def setLoadingDuration(value: Double): Self = StObject.set(x, "loadingDuration", value.asInstanceOf[js.Any])
     

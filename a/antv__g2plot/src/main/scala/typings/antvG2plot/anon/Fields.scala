@@ -9,7 +9,7 @@ trait Fields extends StObject {
   
   var fields: js.Array[String]
   
-  def formatter(datum: Datum): Value
+  def formatter(datum: Datum): NameValue
   
   def showContent(items: Any): Boolean
   
@@ -21,7 +21,7 @@ object Fields {
   
   inline def apply(
     fields: js.Array[String],
-    formatter: Datum => Value,
+    formatter: Datum => NameValue,
     showContent: Any => Boolean,
     showMarkers: Boolean,
     showTitle: Boolean
@@ -36,7 +36,7 @@ object Fields {
     
     inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
     
-    inline def setFormatter(value: Datum => Value): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
+    inline def setFormatter(value: Datum => NameValue): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
     
     inline def setShowContent(value: Any => Boolean): Self = StObject.set(x, "showContent", js.Any.fromFunction1(value))
     

@@ -1,9 +1,9 @@
 package typings.nivoChord
 
 import typings.d3Shape.mod.Arc_
-import typings.nivoChord.anon.EndAngle
 import typings.nivoChord.anon.OmitArcDatumlabelcolor
 import typings.nivoChord.anon.Source
+import typings.nivoChord.anon.StartAngle
 import typings.nivoColors.distTypesInheritedColorMod.InheritedColorConfig
 import typings.nivoColors.distTypesScalesOrdinalColorScaleMod.OrdinalColorScaleConfig
 import typings.nivoCore.mod.Box
@@ -110,7 +110,7 @@ object distTypesTypesMod {
     }
   }
   
-  type ArcGenerator = Arc_[Any, ArcDatum | EndAngle]
+  type ArcGenerator = Arc_[Any, ArcDatum | StartAngle]
   
   type ArcTooltipComponent = FunctionComponent[ArcTooltipComponentProps]
   

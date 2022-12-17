@@ -1,6 +1,6 @@
 package typings.antdMobile
 
-import typings.antdMobile.anon.CSSPropertiesPartialRecorAnimationFillMode
+import typings.antdMobile.anon.CSSPropertiesPartialRecorAnimationDuration
 import typings.antdMobile.anon.Immediate
 import typings.antdMobile.anon.anchorsArraynumberchildre
 import typings.antdMobile.antdMobileStrings.`additions removals`
@@ -303,7 +303,7 @@ object esComponentsFloatingPanelFloatingPanelMod {
     
     var onHeightChange: js.UndefOr[js.Function2[/* height */ Double, /* animating */ Boolean, Unit]] = js.undefined
     
-    var style: js.UndefOr[CSSPropertiesPartialRecorAnimationFillMode] = js.undefined
+    var style: js.UndefOr[CSSPropertiesPartialRecorAnimationDuration] = js.undefined
     
     var tabIndex: js.UndefOr[Double] = js.undefined
   }
@@ -530,7 +530,7 @@ object esComponentsFloatingPanelFloatingPanelMod {
       
       inline def setOnHeightChangeUndefined: Self = StObject.set(x, "onHeightChange", js.undefined)
       
-      inline def setStyle(value: CSSPropertiesPartialRecorAnimationFillMode): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSPropertiesPartialRecorAnimationDuration): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       

@@ -1,23 +1,23 @@
 organization := "org.scalablytyped"
 name := "easy-api-request"
-version := "0.0-unknown-dt-20220818Z-b34b89"
+version := "0.0-unknown-dt-20220818Z-1be52c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20211202Z-730932",
+  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20211202Z-c4ac72",
   "org.scalablytyped" %%% "caseless" % "0.12-dt-20220624Z-1ebd5d",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-2966c9",
-  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-5cc384",
-  "org.scalablytyped" %%% "form-data" % "4.0.0-24b0ef",
-  "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-4d0efa",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-4346d8",
-  "org.scalablytyped" %%% "q" % "1.5-dt-20220819Z-ed8b8d",
-  "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-fa36ba",
-  "org.scalablytyped" %%% "request" % "2.48-dt-20220101Z-c36fd1",
-  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-088887",
-  "org.scalablytyped" %%% "std" % "4.9-c133ce",
-  "org.scalablytyped" %%% "tough-cookie" % "4.0-dt-20220414Z-06bffe")
+  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-cb1e35",
+  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-5f1c10",
+  "org.scalablytyped" %%% "form-data" % "4.0.0-fb5693",
+  "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-85c9dc",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-def929",
+  "org.scalablytyped" %%% "q" % "1.5-dt-20220819Z-6140fe",
+  "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-137229",
+  "org.scalablytyped" %%% "request" % "2.48-dt-20220101Z-8eb35c",
+  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-d3379f",
+  "org.scalablytyped" %%% "std" % "4.9-5f989f",
+  "org.scalablytyped" %%% "tough-cookie" % "4.0-dt-20220414Z-127627")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

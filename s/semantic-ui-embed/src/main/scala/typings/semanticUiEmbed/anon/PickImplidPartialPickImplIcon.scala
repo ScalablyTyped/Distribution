@@ -12,7 +12,7 @@ trait PickImplidPartialPickImplIcon
   
   var icon: js.UndefOr[String] = js.undefined
   
-  var id: String & js.UndefOr[String]
+  var id: String
   
   var placeholder: js.UndefOr[String] = js.undefined
   
@@ -22,7 +22,7 @@ trait PickImplidPartialPickImplIcon
 }
 object PickImplidPartialPickImplIcon {
   
-  inline def apply(id: String & js.UndefOr[String]): PickImplidPartialPickImplIcon = {
+  inline def apply(id: String): PickImplidPartialPickImplIcon = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplidPartialPickImplIcon]
   }
@@ -33,7 +33,7 @@ object PickImplidPartialPickImplIcon {
     
     inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    inline def setId(value: String & js.UndefOr[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     

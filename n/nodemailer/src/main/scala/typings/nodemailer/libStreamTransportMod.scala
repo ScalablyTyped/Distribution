@@ -41,11 +41,6 @@ object libStreamTransportMod {
     ): Unit = js.native
     
     /* CompleteClass */
-    var verify: (js.UndefOr[
-        js.Function1[/* callback */ js.Function2[/* err */ js.Error | Null, `true`, Unit], Unit]
-      ]) & js.UndefOr[js.Function0[js.Promise[`true`]]] = js.native
-    
-    /* CompleteClass */
     var version: String = js.native
     
     /* CompleteClass */
@@ -167,13 +162,10 @@ object libStreamTransportMod {
       name: String,
       options: Options,
       send: (typings.nodemailer.libMailerMailMessageMod.^[SentMessageInfo], js.Function2[/* err */ js.Error | Null, SentMessageInfo, Unit]) => Unit,
-      verify: (js.UndefOr[
-          js.Function1[/* callback */ js.Function2[/* err */ js.Error | Null, `true`, Unit], Unit]
-        ]) & js.UndefOr[js.Function0[js.Promise[`true`]]],
       version: String,
       winbreak: Boolean
     ): StreamTransport = {
-      val __obj = js.Dynamic.literal(logger = logger.asInstanceOf[js.Any], mailer = mailer.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], send = js.Any.fromFunction2(send), verify = verify.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], winbreak = winbreak.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(logger = logger.asInstanceOf[js.Any], mailer = mailer.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], send = js.Any.fromFunction2(send), version = version.asInstanceOf[js.Any], winbreak = winbreak.asInstanceOf[js.Any])
       __obj.asInstanceOf[StreamTransport]
     }
     

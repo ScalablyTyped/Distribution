@@ -34,11 +34,11 @@ trait PickImpltimeoutPartialPic
   
   var statusMessage: js.UndefOr[String] = js.undefined
   
-  var timeout: String & js.UndefOr[String]
+  var timeout: String
 }
 object PickImpltimeoutPartialPic {
   
-  inline def apply(timeout: String & js.UndefOr[String]): PickImpltimeoutPartialPic = {
+  inline def apply(timeout: String): PickImpltimeoutPartialPic = {
     val __obj = js.Dynamic.literal(timeout = timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpltimeoutPartialPic]
   }
@@ -93,6 +93,6 @@ object PickImpltimeoutPartialPic {
     
     inline def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
     
-    inline def setTimeout(value: String & js.UndefOr[String]): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

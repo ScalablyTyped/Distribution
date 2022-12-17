@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.prosemirrorModel.mod.DOMParser
 import typings.prosemirrorModel.mod.DOMSerializer
 import typings.prosemirrorModel.mod.Mark
+import typings.prosemirrorModel.mod.Node
 import typings.prosemirrorModel.mod.ParseRule
 import typings.prosemirrorModel.mod.ResolvedPos
 import typings.prosemirrorModel.mod.Slice
@@ -15,12 +16,13 @@ import typings.prosemirrorTransform.mod.Mapping
 import typings.prosemirrorView.anon.Atom
 import typings.prosemirrorView.anon.Bottom
 import typings.prosemirrorView.anon.ContentDOM
+import typings.prosemirrorView.anon.Dictkey
 import typings.prosemirrorView.anon.From
+import typings.prosemirrorView.anon.InclusiveEnd
 import typings.prosemirrorView.anon.Inside
 import typings.prosemirrorView.anon.Left
 import typings.prosemirrorView.anon.Mount
 import typings.prosemirrorView.anon.Move
-import typings.prosemirrorView.anon.Node
 import typings.prosemirrorView.anon.OnRemove
 import typings.prosemirrorView.anon.PartialDirectEditorProps
 import typings.prosemirrorView.anon.Right
@@ -92,6 +94,147 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  /**
+  Decoration objects can be provided to the view through the
+  [`decorations` prop](https://prosemirror.net/docs/ref/#view.EditorProps.decorations). They come in
+  several variants—see the static members of this class for details.
+  */
+  @JSImport("prosemirror-view", "Decoration")
+  @js.native
+  open class Decoration () extends StObject {
+    
+    /**
+      The start position of the decoration.
+      */
+    val from: Double = js.native
+    
+    /**
+      The spec provided when creating this decoration. Can be useful
+      if you've stored extra information in that object.
+      */
+    def spec: Any = js.native
+    
+    /**
+      The end position. Will be the same as `from` for [widget
+      decorations](https://prosemirror.net/docs/ref/#view.Decoration^widget).
+      */
+    val to: Double = js.native
+  }
+  object Decoration {
+    
+    @JSImport("prosemirror-view", "Decoration")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      Creates an inline decoration, which adds the given attributes to
+      each inline node between `from` and `to`.
+      */
+    /* static member */
+    inline def `inline`(from: Double, to: Double, attrs: DecorationAttrs): Decoration = (^.asInstanceOf[js.Dynamic].applyDynamic("inline")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[Decoration]
+    inline def `inline`(from: Double, to: Double, attrs: DecorationAttrs, spec: InclusiveEnd): Decoration = (^.asInstanceOf[js.Dynamic].applyDynamic("inline")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Decoration]
+    
+    /**
+      Creates a node decoration. `from` and `to` should point precisely
+      before and after a node in the document. That node, and only that
+      node, will receive the given attributes.
+      */
+    /* static member */
+    inline def node(from: Double, to: Double, attrs: DecorationAttrs): Decoration = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[Decoration]
+    inline def node(from: Double, to: Double, attrs: DecorationAttrs, spec: Any): Decoration = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Decoration]
+    
+    /**
+      Creates a widget decoration, which is a DOM node that's shown in
+      the document at the given position. It is recommended that you
+      delay rendering the widget by passing a function that will be
+      called when the widget is actually drawn in a view, but you can
+      also directly pass a DOM node. `getPos` can be used to find the
+      widget's current document position.
+      */
+    /* static member */
+    inline def widget(pos: Double, toDOM: WidgetConstructor): Decoration = (^.asInstanceOf[js.Dynamic].applyDynamic("widget")(pos.asInstanceOf[js.Any], toDOM.asInstanceOf[js.Any])).asInstanceOf[Decoration]
+    inline def widget(pos: Double, toDOM: WidgetConstructor, spec: Dictkey): Decoration = (^.asInstanceOf[js.Dynamic].applyDynamic("widget")(pos.asInstanceOf[js.Any], toDOM.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Decoration]
+  }
+  
+  /**
+  A collection of [decorations](https://prosemirror.net/docs/ref/#view.Decoration), organized in such
+  a way that the drawing algorithm can efficiently use and compare
+  them. This is a persistent data structure—it is not modified,
+  updates create a new value.
+  */
+  @JSImport("prosemirror-view", "DecorationSet")
+  @js.native
+  open class DecorationSet ()
+    extends StObject
+       with DecorationSource {
+    
+    /**
+      Add the given array of decorations to the ones in the set,
+      producing a new set. Needs access to the current document to
+      create the appropriate tree structure.
+      */
+    def add(doc: Node, decorations: js.Array[Decoration]): DecorationSet = js.native
+    
+    /* private */ var addInner: Any = js.native
+    
+    /**
+      Find all decorations in this set which touch the given range
+      (including decorations that start or end directly at the
+      boundaries) and match the given predicate on their spec. When
+      `start` and `end` are omitted, all decorations in the set are
+      considered. When `predicate` isn't given, all decorations are
+      assumed to match.
+      */
+    def find(): js.Array[Decoration] = js.native
+    def find(start: Double): js.Array[Decoration] = js.native
+    def find(start: Double, end: Double): js.Array[Decoration] = js.native
+    def find(start: Double, end: Double, predicate: js.Function1[/* spec */ Any, Boolean]): js.Array[Decoration] = js.native
+    def find(start: Double, end: Unit, predicate: js.Function1[/* spec */ Any, Boolean]): js.Array[Decoration] = js.native
+    def find(start: Unit, end: Double): js.Array[Decoration] = js.native
+    def find(start: Unit, end: Double, predicate: js.Function1[/* spec */ Any, Boolean]): js.Array[Decoration] = js.native
+    def find(start: Unit, end: Unit, predicate: js.Function1[/* spec */ Any, Boolean]): js.Array[Decoration] = js.native
+    
+    /* private */ var findInner: Any = js.native
+    
+    def map(mapping: Mapping, doc: Node, options: OnRemove): DecorationSet = js.native
+    /**
+      Map the set of decorations in response to a change in the
+      document.
+      */
+    /* CompleteClass */
+    override def map(mapping: Mapping, node: Node): DecorationSource = js.native
+    
+    /**
+      Create a new set that contains the decorations in this set, minus
+      the ones in the given array.
+      */
+    def remove(decorations: js.Array[Decoration]): DecorationSet = js.native
+    
+    /* private */ var removeInner: Any = js.native
+  }
+  object DecorationSet {
+    
+    @JSImport("prosemirror-view", "DecorationSet")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      Create a set of decorations, using the structure of the given
+      document.
+      */
+    /* static member */
+    inline def create(doc: Node, decorations: js.Array[Decoration]): DecorationSet = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(doc.asInstanceOf[js.Any], decorations.asInstanceOf[js.Any])).asInstanceOf[DecorationSet]
+    
+    /**
+      The empty set of decorations.
+      */
+    /* static member */
+    @JSImport("prosemirror-view", "DecorationSet.empty")
+    @js.native
+    def empty: DecorationSet = js.native
+    inline def empty_=(x: DecorationSet): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("empty")(x.asInstanceOf[js.Any])
+  }
   
   /**
   An editor view manages the DOM structure that represents an
@@ -177,8 +320,8 @@ object mod {
       Note that you should **not** mutate the editor's internal DOM,
       only inspect it (and even that is usually not necessary).
       */
-    def domAtPos(pos: Double): Node = js.native
-    def domAtPos(pos: Double, side: Double): Node = js.native
+    def domAtPos(pos: Double): typings.prosemirrorView.anon.Node = js.native
+    def domAtPos(pos: Double, side: Double): typings.prosemirrorView.anon.Node = js.native
     
     /**
       When editor content is being dragged, this object contains
@@ -475,7 +618,7 @@ object mod {
               /* this */ Any, 
               /* view */ this.type, 
               /* pos */ Double, 
-              /* node */ typings.prosemirrorModel.mod.Node, 
+              /* node */ Node, 
               /* nodePos */ Double, 
               /* event */ MouseEvent, 
               /* direct */ Boolean, 
@@ -494,7 +637,7 @@ object mod {
                 /* this */ Any, 
                 /* view */ this.type, 
                 /* pos */ Double, 
-                /* node */ typings.prosemirrorModel.mod.Node, 
+                /* node */ Node, 
                 /* nodePos */ Double, 
                 /* event */ MouseEvent, 
                 /* direct */ Boolean, 
@@ -573,7 +716,7 @@ object mod {
               /* this */ Any, 
               /* view */ this.type, 
               /* pos */ Double, 
-              /* node */ typings.prosemirrorModel.mod.Node, 
+              /* node */ Node, 
               /* nodePos */ Double, 
               /* event */ MouseEvent, 
               /* direct */ Boolean, 
@@ -592,7 +735,7 @@ object mod {
                 /* this */ Any, 
                 /* view */ this.type, 
                 /* pos */ Double, 
-                /* node */ typings.prosemirrorModel.mod.Node, 
+                /* node */ Node, 
                 /* nodePos */ Double, 
                 /* event */ MouseEvent, 
                 /* direct */ Boolean, 
@@ -795,7 +938,7 @@ object mod {
               /* this */ Any, 
               /* view */ this.type, 
               /* pos */ Double, 
-              /* node */ typings.prosemirrorModel.mod.Node, 
+              /* node */ Node, 
               /* nodePos */ Double, 
               /* event */ MouseEvent, 
               /* direct */ Boolean, 
@@ -814,7 +957,7 @@ object mod {
                 /* this */ Any, 
                 /* view */ this.type, 
                 /* pos */ Double, 
-                /* node */ typings.prosemirrorModel.mod.Node, 
+                /* node */ Node, 
                 /* nodePos */ Double, 
                 /* event */ MouseEvent, 
                 /* direct */ Boolean, 
@@ -1072,32 +1215,6 @@ object mod {
   ]
   
   /**
-  Decoration objects can be provided to the view through the
-  [`decorations` prop](https://prosemirror.net/docs/ref/#view.EditorProps.decorations). They come in
-  several variants—see the static members of this class for details.
-  */
-  @js.native
-  trait Decoration extends StObject {
-    
-    /**
-      The start position of the decoration.
-      */
-    val from: Double = js.native
-    
-    /**
-      The spec provided when creating this decoration. Can be useful
-      if you've stored extra information in that object.
-      */
-    def spec: Any = js.native
-    
-    /**
-      The end position. Will be the same as `from` for [widget
-      decorations](https://prosemirror.net/docs/ref/#view.Decoration^widget).
-      */
-    val to: Double = js.native
-  }
-  
-  /**
   A set of attributes to add to a decorated node. Most properties
   simply directly correspond to DOM attributes of the same name,
   which will be set to the property's value. These are exceptions:
@@ -1150,56 +1267,6 @@ object mod {
   }
   
   /**
-  A collection of [decorations](https://prosemirror.net/docs/ref/#view.Decoration), organized in such
-  a way that the drawing algorithm can efficiently use and compare
-  them. This is a persistent data structure—it is not modified,
-  updates create a new value.
-  */
-  @js.native
-  trait DecorationSet
-    extends StObject
-       with DecorationSource {
-    
-    /**
-      Add the given array of decorations to the ones in the set,
-      producing a new set. Needs access to the current document to
-      create the appropriate tree structure.
-      */
-    def add(doc: typings.prosemirrorModel.mod.Node, decorations: js.Array[Decoration]): DecorationSet = js.native
-    
-    /* private */ var addInner: Any = js.native
-    
-    /**
-      Find all decorations in this set which touch the given range
-      (including decorations that start or end directly at the
-      boundaries) and match the given predicate on their spec. When
-      `start` and `end` are omitted, all decorations in the set are
-      considered. When `predicate` isn't given, all decorations are
-      assumed to match.
-      */
-    def find(): js.Array[Decoration] = js.native
-    def find(start: Double): js.Array[Decoration] = js.native
-    def find(start: Double, end: Double): js.Array[Decoration] = js.native
-    def find(start: Double, end: Double, predicate: js.Function1[/* spec */ Any, Boolean]): js.Array[Decoration] = js.native
-    def find(start: Double, end: Unit, predicate: js.Function1[/* spec */ Any, Boolean]): js.Array[Decoration] = js.native
-    def find(start: Unit, end: Double): js.Array[Decoration] = js.native
-    def find(start: Unit, end: Double, predicate: js.Function1[/* spec */ Any, Boolean]): js.Array[Decoration] = js.native
-    def find(start: Unit, end: Unit, predicate: js.Function1[/* spec */ Any, Boolean]): js.Array[Decoration] = js.native
-    
-    /* private */ var findInner: Any = js.native
-    
-    def map(mapping: Mapping, doc: typings.prosemirrorModel.mod.Node, options: OnRemove): DecorationSet = js.native
-    
-    /**
-      Create a new set that contains the decorations in this set, minus
-      the ones in the given array.
-      */
-    def remove(decorations: js.Array[Decoration]): DecorationSet = js.native
-    
-    /* private */ var removeInner: Any = js.native
-  }
-  
-  /**
   An object that can [provide](https://prosemirror.net/docs/ref/#view.EditorProps.decorations)
   decorations. Implemented by [`DecorationSet`](https://prosemirror.net/docs/ref/#view.DecorationSet),
   and passed to [node views](https://prosemirror.net/docs/ref/#view.EditorProps.nodeViews).
@@ -1210,18 +1277,18 @@ object mod {
       Map the set of decorations in response to a change in the
       document.
       */
-    def map(mapping: Mapping, node: typings.prosemirrorModel.mod.Node): DecorationSource
+    def map(mapping: Mapping, node: Node): DecorationSource
   }
   object DecorationSource {
     
-    inline def apply(map: (Mapping, typings.prosemirrorModel.mod.Node) => DecorationSource): DecorationSource = {
+    inline def apply(map: (Mapping, Node) => DecorationSource): DecorationSource = {
       val __obj = js.Dynamic.literal(map = js.Any.fromFunction2(map))
       __obj.asInstanceOf[DecorationSource]
     }
     
     extension [Self <: DecorationSource](x: Self) {
       
-      inline def setMap(value: (Mapping, typings.prosemirrorModel.mod.Node) => DecorationSource): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
+      inline def setMap(value: (Mapping, Node) => DecorationSource): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
     }
   }
   
@@ -1422,7 +1489,7 @@ object mod {
           /* this */ P, 
           /* view */ EditorView, 
           /* pos */ Double, 
-          /* node */ typings.prosemirrorModel.mod.Node, 
+          /* node */ Node, 
           /* nodePos */ Double, 
           /* event */ MouseEvent, 
           /* direct */ Boolean, 
@@ -1464,7 +1531,7 @@ object mod {
           /* this */ P, 
           /* view */ EditorView, 
           /* pos */ Double, 
-          /* node */ typings.prosemirrorModel.mod.Node, 
+          /* node */ Node, 
           /* nodePos */ Double, 
           /* event */ MouseEvent, 
           /* direct */ Boolean, 
@@ -1562,7 +1629,7 @@ object mod {
           /* this */ P, 
           /* view */ EditorView, 
           /* pos */ Double, 
-          /* node */ typings.prosemirrorModel.mod.Node, 
+          /* node */ Node, 
           /* nodePos */ Double, 
           /* event */ MouseEvent, 
           /* direct */ Boolean, 
@@ -1728,7 +1795,7 @@ object mod {
               /* this */ P, 
               /* view */ EditorView, 
               /* pos */ Double, 
-              /* node */ typings.prosemirrorModel.mod.Node, 
+              /* node */ Node, 
               /* nodePos */ Double, 
               /* event */ MouseEvent, 
               /* direct */ Boolean, 
@@ -1761,7 +1828,7 @@ object mod {
               /* this */ P, 
               /* view */ EditorView, 
               /* pos */ Double, 
-              /* node */ typings.prosemirrorModel.mod.Node, 
+              /* node */ Node, 
               /* nodePos */ Double, 
               /* event */ MouseEvent, 
               /* direct */ Boolean, 
@@ -1842,7 +1909,7 @@ object mod {
               /* this */ P, 
               /* view */ EditorView, 
               /* pos */ Double, 
-              /* node */ typings.prosemirrorModel.mod.Node, 
+              /* node */ Node, 
               /* nodePos */ Double, 
               /* event */ MouseEvent, 
               /* direct */ Boolean, 
@@ -1986,7 +2053,7 @@ object mod {
       */
     var update: js.UndefOr[
         js.Function3[
-          /* node */ typings.prosemirrorModel.mod.Node, 
+          /* node */ Node, 
           /* decorations */ js.Array[Decoration], 
           /* innerDecorations */ DecorationSource, 
           Boolean
@@ -2035,7 +2102,7 @@ object mod {
       inline def setStopEventUndefined: Self = StObject.set(x, "stopEvent", js.undefined)
       
       inline def setUpdate(
-        value: (/* node */ typings.prosemirrorModel.mod.Node, /* decorations */ js.Array[Decoration], /* innerDecorations */ DecorationSource) => Boolean
+        value: (/* node */ Node, /* decorations */ js.Array[Decoration], /* innerDecorations */ DecorationSource) => Boolean
       ): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
       
       inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
@@ -2047,7 +2114,7 @@ object mod {
   create [node views](https://prosemirror.net/docs/ref/#view.NodeView).
   */
   type NodeViewConstructor = js.Function5[
-    /* node */ typings.prosemirrorModel.mod.Node, 
+    /* node */ Node, 
     /* view */ EditorView, 
     /* getPos */ js.Function0[Double], 
     /* decorations */ js.Array[Decoration], 
@@ -2098,18 +2165,14 @@ object mod {
     
     def matchesMark(mark: Mark): Boolean = js.native
     
-    def matchesNode(
-      node: typings.prosemirrorModel.mod.Node,
-      outerDeco: js.Array[Decoration],
-      innerDeco: DecorationSource
-    ): Boolean = js.native
+    def matchesNode(node: Node, outerDeco: js.Array[Decoration], innerDeco: DecorationSource): Boolean = js.native
     
     def matchesWidget(widget: Decoration): Boolean = js.native
     
     def nearestDesc(dom: DOMNode): js.UndefOr[ViewDesc] = js.native
     def nearestDesc(dom: DOMNode, onlyNodes: Boolean): js.UndefOr[ViewDesc] = js.native
     
-    var node: typings.prosemirrorModel.mod.Node | Null = js.native
+    var node: Node | Null = js.native
     
     var parent: js.UndefOr[ViewDesc] = js.native
     

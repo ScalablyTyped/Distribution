@@ -1,6 +1,8 @@
 package typings.hexRgb
 
+import typings.hexRgb.anon.Optionsformatarray
 import typings.hexRgb.anon.Optionsformatcss
+import typings.hexRgb.anon.Optionsformatobject
 import typings.hexRgb.hexRgbStrings.`object`
 import typings.hexRgb.hexRgbStrings.array
 import typings.hexRgb.hexRgbStrings.css
@@ -14,7 +16,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def default(hex: String): RgbaObject = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hex.asInstanceOf[js.Any]).asInstanceOf[RgbaObject]
+  inline def default(hex: String, options: Optionsformatarray): RgbaTuple = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(hex.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RgbaTuple]
   inline def default(hex: String, options: Optionsformatcss): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(hex.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(hex: String, options: Optionsformatobject): RgbaObject = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(hex.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RgbaObject]
   
   trait Options extends StObject {
     

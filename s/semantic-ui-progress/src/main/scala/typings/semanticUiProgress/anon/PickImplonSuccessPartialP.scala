@@ -53,7 +53,7 @@ trait PickImplonSuccessPartialP
   
   def onSuccess(total: Double): Unit
   @JSName("onSuccess")
-  var onSuccess_Original: (js.ThisFunction1[/* this */ JQuery, /* total */ Double, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* total */ Double, Unit]])
+  var onSuccess_Original: js.ThisFunction1[/* this */ JQuery, /* total */ Double, Unit]
   
   var onWarning: js.UndefOr[
     js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]
@@ -83,9 +83,7 @@ trait PickImplonSuccessPartialP
 }
 object PickImplonSuccessPartialP {
   
-  inline def apply(
-    onSuccess: (js.ThisFunction1[/* this */ JQuery, /* total */ Double, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* total */ Double, Unit]])
-  ): PickImplonSuccessPartialP = {
+  inline def apply(onSuccess: js.ThisFunction1[/* this */ JQuery, /* total */ Double, Unit]): PickImplonSuccessPartialP = {
     val __obj = js.Dynamic.literal(onSuccess = onSuccess.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonSuccessPartialP]
   }
@@ -142,9 +140,7 @@ object PickImplonSuccessPartialP {
     
     inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
-    inline def setOnSuccess(
-      value: (js.ThisFunction1[/* this */ JQuery, /* total */ Double, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* total */ Double, Unit]])
-    ): Self = StObject.set(x, "onSuccess", value.asInstanceOf[js.Any])
+    inline def setOnSuccess(value: js.ThisFunction1[/* this */ JQuery, /* total */ Double, Unit]): Self = StObject.set(x, "onSuccess", value.asInstanceOf[js.Any])
     
     inline def setOnWarning(value: js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]): Self = StObject.set(x, "onWarning", value.asInstanceOf[js.Any])
     

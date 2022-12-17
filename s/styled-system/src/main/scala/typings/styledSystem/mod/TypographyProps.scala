@@ -11,10 +11,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypographyProps[ThemeType /* <: Theme[TLengthStyledSystem] */]
   extends StObject
      with FontFamilyProps[ThemeType]
-     with FontSizeProps[ThemeType, ThemeValue[fontSizes, ThemeType, js.Any]]
-     with FontWeightProps[ThemeType, ThemeValue[fontWeights, ThemeType, js.Any]]
-     with LineHeightProps[ThemeType, ThemeValue[lineHeights, ThemeType, js.Any]]
-     with LetterSpacingProps[ThemeType, ThemeValue[letterSpacings, ThemeType, js.Any]]
+     with FontSizeProps[ThemeType, ThemeValue[fontSizes, ThemeType, Any]]
+     with FontWeightProps[ThemeType, ThemeValue[fontWeights, ThemeType, Any]]
+     with LineHeightProps[ThemeType, ThemeValue[lineHeights, ThemeType, Any]]
+     with LetterSpacingProps[ThemeType, ThemeValue[letterSpacings, ThemeType, Any]]
      with FontStyleProps[ThemeType]
      with TextAlignProps[ThemeType]
 object TypographyProps {

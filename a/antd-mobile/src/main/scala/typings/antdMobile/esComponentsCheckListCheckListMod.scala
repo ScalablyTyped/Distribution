@@ -44,11 +44,8 @@ import typings.antdMobile.antdMobileStrings.time
 import typings.antdMobile.antdMobileStrings.tree
 import typings.antdMobile.antdMobileStrings.vertical
 import typings.react.mod.Booleanish
-import typings.react.mod.CSSProperties
 import typings.react.mod.FC
 import typings.react.mod.ReactNode
-import typings.std.Partial
-import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -314,7 +311,7 @@ object esComponentsCheckListCheckListMod {
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSPropertiesPartialRecorAlignitems] & (js.UndefOr[CSSProperties & (Partial[Record[scala.Nothing, String]])])
+    var style: js.UndefOr[CSSPropertiesPartialRecorAlignitems] = js.undefined
     
     var tabIndex: js.UndefOr[Double] = js.undefined
     
@@ -322,10 +319,8 @@ object esComponentsCheckListCheckListMod {
   }
   object CheckListProps {
     
-    inline def apply(
-      style: js.UndefOr[CSSPropertiesPartialRecorAlignitems] & (js.UndefOr[CSSProperties & (Partial[Record[scala.Nothing, String]])])
-    ): CheckListProps = {
-      val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
+    inline def apply(): CheckListProps = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CheckListProps]
     }
     
@@ -563,9 +558,9 @@ object esComponentsCheckListCheckListMod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
-      inline def setStyle(
-        value: js.UndefOr[CSSPropertiesPartialRecorAlignitems] & (js.UndefOr[CSSProperties & (Partial[Record[scala.Nothing, String]])])
-      ): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSPropertiesPartialRecorAlignitems): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
       inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
       

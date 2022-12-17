@@ -31,7 +31,7 @@ trait SyntaxHighlighterBaseProp extends StObject {
     js.Function2[/* type */ SyntaxHighlighterFormatTypes, /* source */ String, String]
   ] = js.undefined
   
-  var language: js.UndefOr[String] & String
+  var language: js.UndefOr[String] = js.undefined
   
   var lineNumberStyle: js.UndefOr[Any] = js.undefined
   
@@ -51,8 +51,8 @@ trait SyntaxHighlighterBaseProp extends StObject {
 }
 object SyntaxHighlighterBaseProp {
   
-  inline def apply(language: js.UndefOr[String] & String): SyntaxHighlighterBaseProp = {
-    val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any])
+  inline def apply(): SyntaxHighlighterBaseProp = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SyntaxHighlighterBaseProp]
   }
   
@@ -90,7 +90,9 @@ object SyntaxHighlighterBaseProp {
     
     inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     
-    inline def setLanguage(value: js.UndefOr[String] & String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     inline def setLineNumberStyle(value: Any): Self = StObject.set(x, "lineNumberStyle", value.asInstanceOf[js.Any])
     

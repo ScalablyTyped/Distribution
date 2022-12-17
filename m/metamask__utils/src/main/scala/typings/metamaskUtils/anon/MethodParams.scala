@@ -8,15 +8,15 @@ trait MethodParams extends StObject {
   
   var id: Unit
   
-  var jsonrpc: Unit
+  var jsonrpc: Double
   
-  var method: Unit
+  var method: String
   
   var params: Unit
 }
 object MethodParams {
   
-  inline def apply(id: Unit, jsonrpc: Unit, method: Unit, params: Unit): MethodParams = {
+  inline def apply(id: Unit, jsonrpc: Double, method: String, params: Unit): MethodParams = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], jsonrpc = jsonrpc.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
     __obj.asInstanceOf[MethodParams]
   }
@@ -25,9 +25,9 @@ object MethodParams {
     
     inline def setId(value: Unit): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setJsonrpc(value: Unit): Self = StObject.set(x, "jsonrpc", value.asInstanceOf[js.Any])
+    inline def setJsonrpc(value: Double): Self = StObject.set(x, "jsonrpc", value.asInstanceOf[js.Any])
     
-    inline def setMethod(value: Unit): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     inline def setParams(value: Unit): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
   }

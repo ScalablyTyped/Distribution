@@ -31,7 +31,7 @@ object outObjectReadonlyMod {
   @js.native
   trait ReadonlyDeep[O] extends StObject
   
-  type ReadonlyFlat[O] = (/* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in keyof O ]: O[K]} */ js.Any) & js.Object
+  type ReadonlyFlat[O] = /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in keyof O ]: O[K]} */ js.Any
   
   type ReadonlyPart[O /* <: js.Object */, depth /* <: Depth */] = /* import warning: importer.ImportType#apply Failed type conversion: ts-toolbelt.anon.DeepReadonlyDeep<O>[depth] */ js.Any
   

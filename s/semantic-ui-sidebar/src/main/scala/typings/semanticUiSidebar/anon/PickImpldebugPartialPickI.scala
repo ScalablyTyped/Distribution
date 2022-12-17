@@ -23,7 +23,7 @@ trait PickImpldebugPartialPickI
   
   var context: js.UndefOr[String | JQuery] = js.undefined
   
-  var debug: Boolean & js.UndefOr[Boolean]
+  var debug: Boolean
   
   var defaultTransition: js.UndefOr[DefaultTransitionSettings] = js.undefined
   
@@ -75,7 +75,7 @@ trait PickImpldebugPartialPickI
 }
 object PickImpldebugPartialPickI {
   
-  inline def apply(debug: Boolean & js.UndefOr[Boolean]): PickImpldebugPartialPickI = {
+  inline def apply(debug: Boolean): PickImpldebugPartialPickI = {
     val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldebugPartialPickI]
   }
@@ -94,7 +94,7 @@ object PickImpldebugPartialPickI {
     
     inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    inline def setDebug(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     inline def setDefaultTransition(value: DefaultTransitionSettings): Self = StObject.set(x, "defaultTransition", value.asInstanceOf[js.Any])
     

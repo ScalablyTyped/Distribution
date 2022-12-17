@@ -14,7 +14,7 @@ trait PickImplplaceholderTextPa
   
   var defaultValue: js.UndefOr[String] = js.undefined
   
-  var placeholderText: String & js.UndefOr[String]
+  var placeholderText: String
   
   var text: js.UndefOr[String] = js.undefined
   
@@ -22,7 +22,7 @@ trait PickImplplaceholderTextPa
 }
 object PickImplplaceholderTextPa {
   
-  inline def apply(placeholderText: String & js.UndefOr[String]): PickImplplaceholderTextPa = {
+  inline def apply(placeholderText: String): PickImplplaceholderTextPa = {
     val __obj = js.Dynamic.literal(placeholderText = placeholderText.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplplaceholderTextPa]
   }
@@ -37,7 +37,7 @@ object PickImplplaceholderTextPa {
     
     inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    inline def setPlaceholderText(value: String & js.UndefOr[String]): Self = StObject.set(x, "placeholderText", value.asInstanceOf[js.Any])
+    inline def setPlaceholderText(value: String): Self = StObject.set(x, "placeholderText", value.asInstanceOf[js.Any])
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

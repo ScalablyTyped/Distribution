@@ -1,9 +1,9 @@
 package typings.grpcGrpcJs
 
 import typings.grpcGrpcJs.anon.End
-import typings.grpcGrpcJs.anon.EndRequest
 import typings.grpcGrpcJs.anon.PartialServerStatusRespon
 import typings.grpcGrpcJs.anon.Request
+import typings.grpcGrpcJs.anon.`0`
 import typings.grpcGrpcJs.buildSrcCallStreamMod.Deadline
 import typings.grpcGrpcJs.buildSrcCallStreamMod.PartialStatusObject
 import typings.grpcGrpcJs.buildSrcChannelOptionsMod.ChannelOptions
@@ -149,7 +149,7 @@ object buildSrcServerCallMod {
   @js.native
   open class ServerDuplexStreamImpl[RequestType, ResponseType] protected ()
     extends Duplex
-       with End
+       with `0`
        with EmitterAugmentation1[data, RequestType]
        with typings.node.eventsMod.global.NodeJS.EventEmitter
        with ReadableStream {
@@ -880,7 +880,7 @@ object buildSrcServerCallMod {
   @js.native
   open class ServerWritableStreamImpl[RequestType, ResponseType] protected ()
     extends ServerSurfaceCall
-       with EndRequest[RequestType]
+       with End[RequestType]
        with WritableStream {
     def this(
       call: Http2ServerCallStream[RequestType, ResponseType],
@@ -1350,7 +1350,7 @@ object buildSrcServerCallMod {
     inline def unary: typings.grpcGrpcJs.grpcGrpcJsStrings.unary = "unary".asInstanceOf[typings.grpcGrpcJs.grpcGrpcJsStrings.unary]
   }
   
-  type ServerDuplexStream[RequestType, ResponseType] = ServerSurfaceCall & ObjectReadable[RequestType] & ObjectWritable[ResponseType] & End
+  type ServerDuplexStream[RequestType, ResponseType] = ServerSurfaceCall & ObjectReadable[RequestType] & ObjectWritable[ResponseType] & `0`
   
   /* Inlined @grpc/grpc-js.@grpc/grpc-js/build/src/server-call.ServerStatusResponse & std.Error */
   trait ServerErrorResponse extends StObject {
@@ -1508,7 +1508,7 @@ object buildSrcServerCallMod {
   
   type ServerUnaryCall[RequestType, ResponseType] = ServerSurfaceCall & Request[RequestType]
   
-  type ServerWritableStream[RequestType, ResponseType] = ServerSurfaceCall & ObjectWritable[ResponseType] & EndRequest[RequestType]
+  type ServerWritableStream[RequestType, ResponseType] = ServerSurfaceCall & ObjectWritable[ResponseType] & End[RequestType]
   
   trait UnaryHandler[RequestType, ResponseType]
     extends StObject

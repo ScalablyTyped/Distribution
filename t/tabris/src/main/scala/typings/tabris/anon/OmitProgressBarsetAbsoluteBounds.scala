@@ -315,7 +315,7 @@ trait OmitProgressBarsetAbsoluteBounds extends StObject {
       typings.tabris.global.tabris.widgets.ProgressBar, 
       set | typings.tabris.tabrisStrings.jsxAttributes
     ]
-  ]) & `3`
+  ]) & Children
   
   var layoutData: LayoutDataValue
   
@@ -571,7 +571,7 @@ object OmitProgressBarsetAbsoluteBounds {
     jsxAttributes: (JSXAttributes[
       typings.tabris.global.tabris.widgets.ProgressBar, 
       Omit[typings.tabris.global.tabris.widgets.ProgressBar, set | jsxAttributes]
-    ]) & `3`,
+    ]) & Children,
     layoutData: LayoutDataValue,
     left: ConstraintValue,
     maximum: Double,
@@ -743,7 +743,7 @@ object OmitProgressBarsetAbsoluteBounds {
       value: (JSXAttributes[
           typings.tabris.global.tabris.widgets.ProgressBar, 
           Omit[typings.tabris.global.tabris.widgets.ProgressBar, set | jsxAttributes]
-        ]) & `3`
+        ]) & Children
     ): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     
     inline def setLayoutData(value: LayoutDataValue): Self = StObject.set(x, "layoutData", value.asInstanceOf[js.Any])

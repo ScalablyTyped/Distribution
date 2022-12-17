@@ -1,7 +1,7 @@
 package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
-import typings.materialUiCore.anon.Props
+import typings.materialUiCore.anon.DefaultComponent
 import typings.materialUiCore.buttonBaseButtonBaseMod.ExtendButtonBase
 import typings.materialUiCore.buttonBaseButtonBaseMod.ExtendButtonBaseTypeMap
 import typings.materialUiCore.materialUiCoreStrings.div
@@ -57,7 +57,7 @@ object accordionSummaryAccordionSummaryMod extends Shortcut {
   
   type AccordionSummaryProps[D /* <: ElementType[Any] */, P] = OverrideProps[AccordionSummaryTypeMap[P, D], D]
   
-  type AccordionSummaryTypeMap[P, D /* <: ElementType[Any] */] = ExtendButtonBaseTypeMap[Props[P, D]]
+  type AccordionSummaryTypeMap[P, D /* <: ElementType[Any] */] = ExtendButtonBaseTypeMap[DefaultComponent[P, D]]
   
   type _To = ExtendButtonBase[AccordionSummaryTypeMap[js.Object, div]]
   

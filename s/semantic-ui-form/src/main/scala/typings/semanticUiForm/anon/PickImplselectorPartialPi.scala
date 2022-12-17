@@ -78,7 +78,7 @@ trait PickImplselectorPartialPi
     StringDictionary[js.ThisFunction1[/* this */ HTMLElement, /* repeated */ Any, Boolean]]
   ] = js.undefined
   
-  var selector: SelectorSettings & js.UndefOr[SelectorSettings]
+  var selector: SelectorSettings
   
   var silent: js.UndefOr[Boolean] = js.undefined
   
@@ -92,7 +92,7 @@ trait PickImplselectorPartialPi
 }
 object PickImplselectorPartialPi {
   
-  inline def apply(selector: SelectorSettings & js.UndefOr[SelectorSettings]): PickImplselectorPartialPi = {
+  inline def apply(selector: SelectorSettings): PickImplselectorPartialPi = {
     val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplselectorPartialPi]
   }
@@ -192,7 +192,7 @@ object PickImplselectorPartialPi {
     
     inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    inline def setSelector(value: SelectorSettings & js.UndefOr[SelectorSettings]): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: SelectorSettings): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     

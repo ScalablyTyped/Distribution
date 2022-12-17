@@ -12,7 +12,7 @@ trait PickImpladditionPartialPiActive
   
   var active: js.UndefOr[String] = js.undefined
   
-  var addition: String & js.UndefOr[String]
+  var addition: String
   
   var animating: js.UndefOr[String] = js.undefined
   
@@ -50,7 +50,7 @@ trait PickImpladditionPartialPiActive
 }
 object PickImpladditionPartialPiActive {
   
-  inline def apply(addition: String & js.UndefOr[String]): PickImpladditionPartialPiActive = {
+  inline def apply(addition: String): PickImpladditionPartialPiActive = {
     val __obj = js.Dynamic.literal(addition = addition.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpladditionPartialPiActive]
   }
@@ -61,7 +61,7 @@ object PickImpladditionPartialPiActive {
     
     inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    inline def setAddition(value: String & js.UndefOr[String]): Self = StObject.set(x, "addition", value.asInstanceOf[js.Any])
+    inline def setAddition(value: String): Self = StObject.set(x, "addition", value.asInstanceOf[js.Any])
     
     inline def setAnimating(value: String): Self = StObject.set(x, "animating", value.asInstanceOf[js.Any])
     

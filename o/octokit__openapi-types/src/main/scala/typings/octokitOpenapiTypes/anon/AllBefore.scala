@@ -18,7 +18,7 @@ trait AllBefore extends StObject {
   /** If `true`, only shows notifications in which the user is directly participating or mentioned. */
   var participating: js.UndefOr[Boolean] = js.undefined
   
-  /** The number of results per page (max 100). */
+  /** The number of results per page (max 50). */
   var per_page: js.UndefOr[Double] = js.undefined
   
   /** Only show notifications updated after the given time. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`. */

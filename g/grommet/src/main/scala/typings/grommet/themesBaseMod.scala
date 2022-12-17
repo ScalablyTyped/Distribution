@@ -19,11 +19,12 @@ import typings.grommet.anon.CheckBox
 import typings.grommet.anon.Clear
 import typings.grommet.anon.ColorColors
 import typings.grommet.anon.ColorExtend
+import typings.grommet.anon.ColorRadius
 import typings.grommet.anon.ColumnName
-import typings.grommet.anon.Container
 import typings.grommet.anon.ContainerDisabled
 import typings.grommet.anon.ContainerIcon
 import typings.grommet.anon.ContainerLabel
+import typings.grommet.anon.ContainerSize
 import typings.grommet.anon.ContentDrop
 import typings.grommet.anon.Continent
 import typings.grommet.anon.Day
@@ -39,7 +40,7 @@ import typings.grommet.anon.GroupEnd
 import typings.grommet.anon.HorizontalVertical
 import typings.grommet.anon.Hover
 import typings.grommet.anon.Item
-import typings.grommet.anon.Large
+import typings.grommet.anon.LargeMediumSmall
 import typings.grommet.anon.Line
 import typings.grommet.anon.MaxHeight
 import typings.grommet.anon.MaxInline
@@ -50,18 +51,17 @@ import typings.grommet.anon.Parent
 import typings.grommet.anon.PartialCSSStyleDeclaratio
 import typings.grommet.anon.Placeholder
 import typings.grommet.anon.Properties
-import typings.grommet.anon.Radius
 import typings.grommet.anon.ResponsiveBreakpoint
 import typings.grommet.anon.Sticky
 import typings.grommet.anon.Text
 import typings.grommet.anon.Track
-import typings.grommet.anon.Weight
 import typings.grommet.anon.Xxlarge
-import typings.grommet.anon.`10`
-import typings.grommet.anon.`15`
-import typings.grommet.anon.`25`
+import typings.grommet.anon.`12`
+import typings.grommet.anon.`22`
+import typings.grommet.anon.`27`
 import typings.grommet.anon.`2xl`
-import typings.grommet.anon.`37`
+import typings.grommet.anon.`35`
+import typings.grommet.anon.`8`
 import typings.grommet.componentsTextMod.TextProps
 import typings.grommet.utilsMod.BackgroundType
 import typings.grommet.utilsMod.ColorType
@@ -423,13 +423,13 @@ object themesBaseMod {
     
     var background: js.UndefOr[BackgroundType] = js.undefined
     
-    var border: js.UndefOr[Radius | Boolean] = js.undefined
+    var border: js.UndefOr[ColorRadius | Boolean] = js.undefined
     
     var color: js.UndefOr[ColorType] = js.undefined
     
     var extend: js.UndefOr[ExtendType[Record[String, Any]]] = js.undefined
     
-    var font: js.UndefOr[Weight] = js.undefined
+    var font: js.UndefOr[`27`] = js.undefined
     
     var icon: js.UndefOr[ReactNode | Icon] = js.undefined
     
@@ -450,7 +450,7 @@ object themesBaseMod {
       
       inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
-      inline def setBorder(value: Radius | Boolean): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+      inline def setBorder(value: ColorRadius | Boolean): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
       inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
       
@@ -464,7 +464,7 @@ object themesBaseMod {
       
       inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
       
-      inline def setFont(value: Weight): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+      inline def setFont(value: `27`): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
       inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
       
@@ -488,9 +488,9 @@ object themesBaseMod {
     
     var active: js.UndefOr[ButtonKindTypedefaultButt | StringDictionary[ButtonKindType]] = js.undefined
     
-    var badge: js.UndefOr[Container] = js.undefined
+    var badge: js.UndefOr[ContainerSize] = js.undefined
     
-    var border: js.UndefOr[Radius] = js.undefined
+    var border: js.UndefOr[ColorRadius] = js.undefined
     
     var color: js.UndefOr[ColorType] = js.undefined
     
@@ -514,7 +514,7 @@ object themesBaseMod {
     
     var secondary: js.UndefOr[ButtonKindType] = js.undefined
     
-    var size: js.UndefOr[Large] = js.undefined
+    var size: js.UndefOr[LargeMediumSmall] = js.undefined
     
     var style: js.UndefOr[PartialCSSStyleDeclaratio] = js.undefined
     
@@ -533,11 +533,11 @@ object themesBaseMod {
       
       inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      inline def setBadge(value: Container): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+      inline def setBadge(value: ContainerSize): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
       
       inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
       
-      inline def setBorder(value: Radius): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+      inline def setBorder(value: ColorRadius): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
       inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
       
@@ -591,7 +591,7 @@ object themesBaseMod {
       
       inline def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
       
-      inline def setSize(value: Large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: LargeMediumSmall): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
@@ -979,7 +979,7 @@ object themesBaseMod {
     
     var checkBox: js.UndefOr[Check] = js.undefined
     
-    var checkBoxGroup: js.UndefOr[`15`] = js.undefined
+    var checkBoxGroup: js.UndefOr[`12`] = js.undefined
     
     var clock: js.UndefOr[Analog] = js.undefined
     
@@ -999,13 +999,13 @@ object themesBaseMod {
     
     var global: js.UndefOr[Active] = js.undefined
     
-    var grommet: js.UndefOr[`10`] = js.undefined
+    var grommet: js.UndefOr[`8`] = js.undefined
     
     var header: js.UndefOr[Sticky] = js.undefined
     
     var heading: js.UndefOr[ExtendFont] = js.undefined
     
-    var icon: js.UndefOr[`25`] = js.undefined
+    var icon: js.UndefOr[`22`] = js.undefined
     
     var layer: js.UndefOr[Overlay] = js.undefined
     
@@ -1033,7 +1033,7 @@ object themesBaseMod {
     
     var radioButton: js.UndefOr[BorderCheck] = js.undefined
     
-    var radioButtonGroup: js.UndefOr[`15`] = js.undefined
+    var radioButtonGroup: js.UndefOr[`12`] = js.undefined
     
     var rangeInput: js.UndefOr[Track] = js.undefined
     
@@ -1057,7 +1057,7 @@ object themesBaseMod {
     
     var text: js.UndefOr[`2xl`] = js.undefined
     
-    var textArea: js.UndefOr[`37`] = js.undefined
+    var textArea: js.UndefOr[`35`] = js.undefined
     
     var textInput: js.UndefOr[Placeholder] = js.undefined
     
@@ -1114,7 +1114,7 @@ object themesBaseMod {
       
       inline def setCheckBox(value: Check): Self = StObject.set(x, "checkBox", value.asInstanceOf[js.Any])
       
-      inline def setCheckBoxGroup(value: `15`): Self = StObject.set(x, "checkBoxGroup", value.asInstanceOf[js.Any])
+      inline def setCheckBoxGroup(value: `12`): Self = StObject.set(x, "checkBoxGroup", value.asInstanceOf[js.Any])
       
       inline def setCheckBoxGroupUndefined: Self = StObject.set(x, "checkBoxGroup", js.undefined)
       
@@ -1156,7 +1156,7 @@ object themesBaseMod {
       
       inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
       
-      inline def setGrommet(value: `10`): Self = StObject.set(x, "grommet", value.asInstanceOf[js.Any])
+      inline def setGrommet(value: `8`): Self = StObject.set(x, "grommet", value.asInstanceOf[js.Any])
       
       inline def setGrommetUndefined: Self = StObject.set(x, "grommet", js.undefined)
       
@@ -1168,7 +1168,7 @@ object themesBaseMod {
       
       inline def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
       
-      inline def setIcon(value: `25`): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: `22`): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
@@ -1222,7 +1222,7 @@ object themesBaseMod {
       
       inline def setRadioButton(value: BorderCheck): Self = StObject.set(x, "radioButton", value.asInstanceOf[js.Any])
       
-      inline def setRadioButtonGroup(value: `15`): Self = StObject.set(x, "radioButtonGroup", value.asInstanceOf[js.Any])
+      inline def setRadioButtonGroup(value: `12`): Self = StObject.set(x, "radioButtonGroup", value.asInstanceOf[js.Any])
       
       inline def setRadioButtonGroupUndefined: Self = StObject.set(x, "radioButtonGroup", js.undefined)
       
@@ -1270,7 +1270,7 @@ object themesBaseMod {
       
       inline def setText(value: `2xl`): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      inline def setTextArea(value: `37`): Self = StObject.set(x, "textArea", value.asInstanceOf[js.Any])
+      inline def setTextArea(value: `35`): Self = StObject.set(x, "textArea", value.asInstanceOf[js.Any])
       
       inline def setTextAreaUndefined: Self = StObject.set(x, "textArea", js.undefined)
       

@@ -1,6 +1,5 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.meshesMeshMod.Mesh
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,5 +12,5 @@ open class QuadraticErrorSimplification protected ()
     * Creates a new QuadraticErrorSimplification
     * @param _mesh defines the target mesh
     */
-  def this(_mesh: Mesh) = this()
+  def this(_mesh: typings.babylonjs.meshesMeshMod.Mesh) = this()
 }

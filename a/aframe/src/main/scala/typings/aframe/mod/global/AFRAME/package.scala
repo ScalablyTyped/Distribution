@@ -65,11 +65,11 @@ inline def registerPrimitive: js.Function2[/* name */ String, /* primitive */ Pr
 
 inline def registerShader: js.Function2[
 /* name */ String, 
-/* shader */ ShaderDefinition[MinimalShaderDefinition & js.Object], 
-ShaderConstructor[MinimalShaderDefinition & js.Object]] = ^.asInstanceOf[js.Dynamic].selectDynamic("registerShader").asInstanceOf[js.Function2[
+/* shader */ ShaderDefinition[MinimalShaderDefinition], 
+ShaderConstructor[MinimalShaderDefinition]] = ^.asInstanceOf[js.Dynamic].selectDynamic("registerShader").asInstanceOf[js.Function2[
 /* name */ String, 
-/* shader */ ShaderDefinition[MinimalShaderDefinition & js.Object], 
-ShaderConstructor[MinimalShaderDefinition & js.Object]]]
+/* shader */ ShaderDefinition[MinimalShaderDefinition], 
+ShaderConstructor[MinimalShaderDefinition]]]
 
 inline def registerSystem: js.Function2[
 /* name */ String, 

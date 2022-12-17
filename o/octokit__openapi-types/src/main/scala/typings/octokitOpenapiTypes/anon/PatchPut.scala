@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PatchPut extends StObject {
   
   /** Stop an import for a repository. */
-  var delete: Parameters395Responses
+  var delete: Parameters135Responses
   
   /**
     * View the progress of an import.
@@ -45,7 +45,7 @@ trait PatchPut extends StObject {
     * *   `large_files_size` - the total size in gigabytes of files larger than 100MB found in the originating repository.
     * *   `large_files_count` - the total number of files larger than 100MB found in the originating repository. To see a list of these files, make a "Get Large Files" request.
     */
-  var get: Responses200Content517
+  var get: Responses200Content245
   
   /**
     * An import can be updated with credentials or a project choice by passing in the appropriate parameters in this API
@@ -55,18 +55,18 @@ trait PatchPut extends StObject {
     * have the status `detection_found_multiple` and the Import Progress response will include a `project_choices` array.
     * You can select the project to import by providing one of the objects in the `project_choices` array in the update request.
     */
-  var patch: Responses518
+  var patch: RequestBodyContent247
   
   /** Start a source import to a GitHub repository using GitHub Importer. */
-  var put: Responses201Content517HeadersLocation
+  var put: RequestBodyContentApplicationjsonTfvcproject
 }
 object PatchPut {
   
   inline def apply(
-    delete: Parameters395Responses,
-    get: Responses200Content517,
-    patch: Responses518,
-    put: Responses201Content517HeadersLocation
+    delete: Parameters135Responses,
+    get: Responses200Content245,
+    patch: RequestBodyContent247,
+    put: RequestBodyContentApplicationjsonTfvcproject
   ): PatchPut = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatchPut]
@@ -74,12 +74,12 @@ object PatchPut {
   
   extension [Self <: PatchPut](x: Self) {
     
-    inline def setDelete(value: Parameters395Responses): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: Parameters135Responses): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    inline def setGet(value: Responses200Content517): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: Responses200Content245): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPatch(value: Responses518): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+    inline def setPatch(value: RequestBodyContent247): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
     
-    inline def setPut(value: Responses201Content517HeadersLocation): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
+    inline def setPut(value: RequestBodyContentApplicationjsonTfvcproject): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
   }
 }

@@ -22,11 +22,11 @@ trait PickImplstatePartialPickI
   
   var recursion: js.UndefOr[String] = js.undefined
   
-  var state: String & js.UndefOr[String]
+  var state: String
 }
 object PickImplstatePartialPickI {
   
-  inline def apply(state: String & js.UndefOr[String]): PickImplstatePartialPickI = {
+  inline def apply(state: String): PickImplstatePartialPickI = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplstatePartialPickI]
   }
@@ -57,6 +57,6 @@ object PickImplstatePartialPickI {
     
     inline def setRecursionUndefined: Self = StObject.set(x, "recursion", js.undefined)
     
-    inline def setState(value: String & js.UndefOr[String]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

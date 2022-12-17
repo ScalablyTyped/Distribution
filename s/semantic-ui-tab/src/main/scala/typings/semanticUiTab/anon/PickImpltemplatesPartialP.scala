@@ -98,13 +98,13 @@ trait PickImpltemplatesPartialP
   
   var silent: js.UndefOr[Boolean] = js.undefined
   
-  var templates: TemplatesSettings & js.UndefOr[TemplatesSettings]
+  var templates: TemplatesSettings
   
   var verbose: js.UndefOr[Boolean] = js.undefined
 }
 object PickImpltemplatesPartialP {
   
-  inline def apply(templates: TemplatesSettings & js.UndefOr[TemplatesSettings]): PickImpltemplatesPartialP = {
+  inline def apply(templates: TemplatesSettings): PickImpltemplatesPartialP = {
     val __obj = js.Dynamic.literal(templates = templates.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpltemplatesPartialP]
   }
@@ -239,7 +239,7 @@ object PickImpltemplatesPartialP {
     
     inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     
-    inline def setTemplates(value: TemplatesSettings & js.UndefOr[TemplatesSettings]): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
+    inline def setTemplates(value: TemplatesSettings): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
     
     inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     

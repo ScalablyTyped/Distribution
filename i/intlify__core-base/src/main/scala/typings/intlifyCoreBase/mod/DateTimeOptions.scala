@@ -1,7 +1,5 @@
 package typings.intlifyCoreBase.mod
 
-import typings.std.stdStrings.`best fit`
-import typings.std.stdStrings.basic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,8 +40,8 @@ trait DateTimeOptions[Key, Locales]
 }
 object DateTimeOptions {
   
-  inline def apply[Key, Locales](formatMatcher: (js.UndefOr[(`best fit`) | basic]) & (js.UndefOr[basic | (`best fit`)])): DateTimeOptions[Key, Locales] = {
-    val __obj = js.Dynamic.literal(formatMatcher = formatMatcher.asInstanceOf[js.Any])
+  inline def apply[Key, Locales](): DateTimeOptions[Key, Locales] = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DateTimeOptions[Key, Locales]]
   }
   

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `1` extends StObject {
   
-  var children: js.UndefOr[Flatten[String | Image]] = js.undefined
+  var children: js.UndefOr[Flatten[String | js.Object]] = js.undefined
 }
 object `1` {
   
@@ -18,10 +18,10 @@ object `1` {
   
   extension [Self <: `1`](x: Self) {
     
-    inline def setChildren(value: Flatten[String | Image]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Flatten[String | js.Object]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setChildrenVarargs(value: (String | Image)*): Self = StObject.set(x, "children", js.Array(value*))
+    inline def setChildrenVarargs(value: (String | js.Object)*): Self = StObject.set(x, "children", js.Array(value*))
   }
 }

@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.mod
 
-import typings.antDesignReactNative.anon.OnChange
+import typings.antDesignReactNative.anon.Cascade
 import typings.antDesignReactNative.libPickerViewMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,6 +18,6 @@ object PickerView {
   
   @JSImport("@ant-design/react-native", "PickerView.defaultProps")
   @js.native
-  def defaultProps: OnChange = js.native
-  inline def defaultProps_=(x: OnChange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  def defaultProps: Cascade = js.native
+  inline def defaultProps_=(x: Cascade): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

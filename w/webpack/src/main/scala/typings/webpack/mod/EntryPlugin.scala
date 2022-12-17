@@ -4,35 +4,36 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EntryPlugin extends StObject {
+@JSImport("webpack", "EntryPlugin")
+@js.native
+open class EntryPlugin protected () extends StObject {
+  /**
+  	 * An entry plugin which will handle
+  	 * creation of the EntryDependency
+  	 */
+  def this(context: String, entry: String) = this()
+  def this(context: String, entry: String, options: String) = this()
+  def this(context: String, entry: String, options: EntryOptions) = this()
   
   /**
   	 * Apply the plugin
   	 */
   @JSName("apply")
-  def apply(compiler: Compiler): Unit
+  def apply(compiler: Compiler): Unit = js.native
   
-  var context: String
+  var context: String = js.native
   
-  var entry: String
+  var entry: String = js.native
   
-  var options: String | EntryOptions
+  var options: String | EntryOptions = js.native
 }
 object EntryPlugin {
   
-  inline def apply(apply: Compiler => Unit, context: String, entry: String, options: String | EntryOptions): EntryPlugin = {
-    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), context = context.asInstanceOf[js.Any], entry = entry.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
-    __obj.asInstanceOf[EntryPlugin]
-  }
+  @JSImport("webpack", "EntryPlugin")
+  @js.native
+  val ^ : js.Any = js.native
   
-  extension [Self <: EntryPlugin](x: Self) {
-    
-    inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
-    
-    inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
-    
-    inline def setEntry(value: String): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
-    
-    inline def setOptions(value: String | EntryOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
-  }
+  /* static member */
+  inline def createDependency(entry: String, options: String): EntryDependency = (^.asInstanceOf[js.Dynamic].applyDynamic("createDependency")(entry.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EntryDependency]
+  inline def createDependency(entry: String, options: EntryOptions): EntryDependency = (^.asInstanceOf[js.Dynamic].applyDynamic("createDependency")(entry.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EntryDependency]
 }

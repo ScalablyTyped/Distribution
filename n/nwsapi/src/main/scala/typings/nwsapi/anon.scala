@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.nwsapi.mod.AttributeOperator
 import typings.nwsapi.mod.CustomSelectorResult
 import typings.nwsapi.mod.MatcherMode
-import typings.nwsapi.nwsapiStrings.$
-import typings.nwsapi.nwsapiStrings.^
-import typings.nwsapi.nwsapiStrings._empty
 import typings.nwsapi.nwsapiStrings.`false`
 import typings.nwsapi.nwsapiStrings.`true`
 import typings.std.Element
@@ -24,77 +21,7 @@ object anon {
     /**
       * The RegExp string before the expected attribute value.
       */
-    val p1: String & ^
-    
-    /**
-      * The RegExp string after the expected attribute value.
-      */
-    val p2: String & $
-    
-    /**
-      * The expected result of the invocation of the RegExp `test` method.
-      */
-    val p3: (`true` | `false`) & `true`
-  }
-  object AttributeOperatorp1p2p3tr {
-    
-    inline def apply(p1: String & ^, p2: String & $, p3: (`true` | `false`) & `true`): AttributeOperatorp1p2p3tr = {
-      val __obj = js.Dynamic.literal(p1 = p1.asInstanceOf[js.Any], p2 = p2.asInstanceOf[js.Any], p3 = p3.asInstanceOf[js.Any])
-      __obj.asInstanceOf[AttributeOperatorp1p2p3tr]
-    }
-    
-    extension [Self <: AttributeOperatorp1p2p3tr](x: Self) {
-      
-      inline def setP1(value: String & ^): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
-      
-      inline def setP2(value: String & $): Self = StObject.set(x, "p2", value.asInstanceOf[js.Any])
-      
-      inline def setP3(value: (`true` | `false`) & `true`): Self = StObject.set(x, "p3", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  /* Inlined nwsapi.nwsapi.AttributeOperator & {  p1 :'^',   p2 :'',   p3 :'true'} */
-  trait AttributeOperatorp1p2p3trP1 extends StObject {
-    
-    /**
-      * The RegExp string before the expected attribute value.
-      */
-    val p1: String & ^
-    
-    /**
-      * The RegExp string after the expected attribute value.
-      */
-    val p2: String & _empty
-    
-    /**
-      * The expected result of the invocation of the RegExp `test` method.
-      */
-    val p3: (`true` | `false`) & `true`
-  }
-  object AttributeOperatorp1p2p3trP1 {
-    
-    inline def apply(p1: String & ^, p2: String & _empty, p3: (`true` | `false`) & `true`): AttributeOperatorp1p2p3trP1 = {
-      val __obj = js.Dynamic.literal(p1 = p1.asInstanceOf[js.Any], p2 = p2.asInstanceOf[js.Any], p3 = p3.asInstanceOf[js.Any])
-      __obj.asInstanceOf[AttributeOperatorp1p2p3trP1]
-    }
-    
-    extension [Self <: AttributeOperatorp1p2p3trP1](x: Self) {
-      
-      inline def setP1(value: String & ^): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
-      
-      inline def setP2(value: String & _empty): Self = StObject.set(x, "p2", value.asInstanceOf[js.Any])
-      
-      inline def setP3(value: (`true` | `false`) & `true`): Self = StObject.set(x, "p3", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  /* Inlined nwsapi.nwsapi.AttributeOperator & {  p1 :'^',   p2 :'(-|$)',   p3 :'true'} */
-  trait AttributeOperatorp1p2p3trP1P1 extends StObject {
-    
-    /**
-      * The RegExp string before the expected attribute value.
-      */
-    val p1: String & ^
+    val p1: String
     
     /**
       * The RegExp string after the expected attribute value.
@@ -104,22 +31,92 @@ object anon {
     /**
       * The expected result of the invocation of the RegExp `test` method.
       */
-    val p3: (`true` | `false`) & `true`
+    val p3: `true` | `false`
+  }
+  object AttributeOperatorp1p2p3tr {
+    
+    inline def apply(p1: String, p2: String, p3: `true` | `false`): AttributeOperatorp1p2p3tr = {
+      val __obj = js.Dynamic.literal(p1 = p1.asInstanceOf[js.Any], p2 = p2.asInstanceOf[js.Any], p3 = p3.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AttributeOperatorp1p2p3tr]
+    }
+    
+    extension [Self <: AttributeOperatorp1p2p3tr](x: Self) {
+      
+      inline def setP1(value: String): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
+      
+      inline def setP2(value: String): Self = StObject.set(x, "p2", value.asInstanceOf[js.Any])
+      
+      inline def setP3(value: `true` | `false`): Self = StObject.set(x, "p3", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Inlined nwsapi.nwsapi.AttributeOperator & {  p1 :'^',   p2 :'',   p3 :'true'} */
+  trait AttributeOperatorp1p2p3trP1 extends StObject {
+    
+    /**
+      * The RegExp string before the expected attribute value.
+      */
+    val p1: String
+    
+    /**
+      * The RegExp string after the expected attribute value.
+      */
+    val p2: String
+    
+    /**
+      * The expected result of the invocation of the RegExp `test` method.
+      */
+    val p3: `true` | `false`
+  }
+  object AttributeOperatorp1p2p3trP1 {
+    
+    inline def apply(p1: String, p2: String, p3: `true` | `false`): AttributeOperatorp1p2p3trP1 = {
+      val __obj = js.Dynamic.literal(p1 = p1.asInstanceOf[js.Any], p2 = p2.asInstanceOf[js.Any], p3 = p3.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AttributeOperatorp1p2p3trP1]
+    }
+    
+    extension [Self <: AttributeOperatorp1p2p3trP1](x: Self) {
+      
+      inline def setP1(value: String): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
+      
+      inline def setP2(value: String): Self = StObject.set(x, "p2", value.asInstanceOf[js.Any])
+      
+      inline def setP3(value: `true` | `false`): Self = StObject.set(x, "p3", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Inlined nwsapi.nwsapi.AttributeOperator & {  p1 :'^',   p2 :'(-|$)',   p3 :'true'} */
+  trait AttributeOperatorp1p2p3trP1P1 extends StObject {
+    
+    /**
+      * The RegExp string before the expected attribute value.
+      */
+    val p1: String
+    
+    /**
+      * The RegExp string after the expected attribute value.
+      */
+    val p2: String
+    
+    /**
+      * The expected result of the invocation of the RegExp `test` method.
+      */
+    val p3: `true` | `false`
   }
   object AttributeOperatorp1p2p3trP1P1 {
     
-    inline def apply(p1: String & ^, p2: String, p3: (`true` | `false`) & `true`): AttributeOperatorp1p2p3trP1P1 = {
+    inline def apply(p1: String, p2: String, p3: `true` | `false`): AttributeOperatorp1p2p3trP1P1 = {
       val __obj = js.Dynamic.literal(p1 = p1.asInstanceOf[js.Any], p2 = p2.asInstanceOf[js.Any], p3 = p3.asInstanceOf[js.Any])
       __obj.asInstanceOf[AttributeOperatorp1p2p3trP1P1]
     }
     
     extension [Self <: AttributeOperatorp1p2p3trP1P1](x: Self) {
       
-      inline def setP1(value: String & ^): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
+      inline def setP1(value: String): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
       
       inline def setP2(value: String): Self = StObject.set(x, "p2", value.asInstanceOf[js.Any])
       
-      inline def setP3(value: (`true` | `false`) & `true`): Self = StObject.set(x, "p3", value.asInstanceOf[js.Any])
+      inline def setP3(value: `true` | `false`): Self = StObject.set(x, "p3", value.asInstanceOf[js.Any])
     }
   }
   
@@ -129,32 +126,32 @@ object anon {
     /**
       * The RegExp string before the expected attribute value.
       */
-    val p1: String & _empty
+    val p1: String
     
     /**
       * The RegExp string after the expected attribute value.
       */
-    val p2: String & $
+    val p2: String
     
     /**
       * The expected result of the invocation of the RegExp `test` method.
       */
-    val p3: (`true` | `false`) & `true`
+    val p3: `true` | `false`
   }
   object AttributeOperatorp1p2p3trP2 {
     
-    inline def apply(p1: String & _empty, p2: String & $, p3: (`true` | `false`) & `true`): AttributeOperatorp1p2p3trP2 = {
+    inline def apply(p1: String, p2: String, p3: `true` | `false`): AttributeOperatorp1p2p3trP2 = {
       val __obj = js.Dynamic.literal(p1 = p1.asInstanceOf[js.Any], p2 = p2.asInstanceOf[js.Any], p3 = p3.asInstanceOf[js.Any])
       __obj.asInstanceOf[AttributeOperatorp1p2p3trP2]
     }
     
     extension [Self <: AttributeOperatorp1p2p3trP2](x: Self) {
       
-      inline def setP1(value: String & _empty): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
+      inline def setP1(value: String): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
       
-      inline def setP2(value: String & $): Self = StObject.set(x, "p2", value.asInstanceOf[js.Any])
+      inline def setP2(value: String): Self = StObject.set(x, "p2", value.asInstanceOf[js.Any])
       
-      inline def setP3(value: (`true` | `false`) & `true`): Self = StObject.set(x, "p3", value.asInstanceOf[js.Any])
+      inline def setP3(value: `true` | `false`): Self = StObject.set(x, "p3", value.asInstanceOf[js.Any])
     }
   }
   
@@ -164,32 +161,32 @@ object anon {
     /**
       * The RegExp string before the expected attribute value.
       */
-    val p1: String & _empty
+    val p1: String
     
     /**
       * The RegExp string after the expected attribute value.
       */
-    val p2: String & _empty
+    val p2: String
     
     /**
       * The expected result of the invocation of the RegExp `test` method.
       */
-    val p3: (`true` | `false`) & `true`
+    val p3: `true` | `false`
   }
   object AttributeOperatorp1p2p3trP3 {
     
-    inline def apply(p1: String & _empty, p2: String & _empty, p3: (`true` | `false`) & `true`): AttributeOperatorp1p2p3trP3 = {
+    inline def apply(p1: String, p2: String, p3: `true` | `false`): AttributeOperatorp1p2p3trP3 = {
       val __obj = js.Dynamic.literal(p1 = p1.asInstanceOf[js.Any], p2 = p2.asInstanceOf[js.Any], p3 = p3.asInstanceOf[js.Any])
       __obj.asInstanceOf[AttributeOperatorp1p2p3trP3]
     }
     
     extension [Self <: AttributeOperatorp1p2p3trP3](x: Self) {
       
-      inline def setP1(value: String & _empty): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
+      inline def setP1(value: String): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
       
-      inline def setP2(value: String & _empty): Self = StObject.set(x, "p2", value.asInstanceOf[js.Any])
+      inline def setP2(value: String): Self = StObject.set(x, "p2", value.asInstanceOf[js.Any])
       
-      inline def setP3(value: (`true` | `false`) & `true`): Self = StObject.set(x, "p3", value.asInstanceOf[js.Any])
+      inline def setP3(value: `true` | `false`): Self = StObject.set(x, "p3", value.asInstanceOf[js.Any])
     }
   }
   
@@ -209,11 +206,11 @@ object anon {
     /**
       * The expected result of the invocation of the RegExp `test` method.
       */
-    val p3: (`true` | `false`) & `true`
+    val p3: `true` | `false`
   }
   object AttributeOperatorp1sp2sp3 {
     
-    inline def apply(p1: String, p2: String, p3: (`true` | `false`) & `true`): AttributeOperatorp1sp2sp3 = {
+    inline def apply(p1: String, p2: String, p3: `true` | `false`): AttributeOperatorp1sp2sp3 = {
       val __obj = js.Dynamic.literal(p1 = p1.asInstanceOf[js.Any], p2 = p2.asInstanceOf[js.Any], p3 = p3.asInstanceOf[js.Any])
       __obj.asInstanceOf[AttributeOperatorp1sp2sp3]
     }
@@ -224,7 +221,7 @@ object anon {
       
       inline def setP2(value: String): Self = StObject.set(x, "p2", value.asInstanceOf[js.Any])
       
-      inline def setP3(value: (`true` | `false`) & `true`): Self = StObject.set(x, "p3", value.asInstanceOf[js.Any])
+      inline def setP3(value: `true` | `false`): Self = StObject.set(x, "p3", value.asInstanceOf[js.Any])
     }
   }
   

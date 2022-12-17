@@ -3,7 +3,7 @@ package typings.tabris
 import typings.tabris.anon.Href
 import typings.tabris.anon.InstantiableAny
 import typings.tabris.anon.TextColor
-import typings.tabris.anon.`4`
+import typings.tabris.anon.`15`
 import typings.tabris.mod.JsxProcessor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -63,7 +63,7 @@ object JSX {
     
     var big: TextColor
     
-    var br: `4`
+    var br: `15`
     
     var del: TextColor
     
@@ -83,7 +83,7 @@ object JSX {
       a: Href,
       b: TextColor,
       big: TextColor,
-      br: `4`,
+      br: `15`,
       del: TextColor,
       i: TextColor,
       ins: TextColor,
@@ -103,7 +103,7 @@ object JSX {
       
       inline def setBig(value: TextColor): Self = StObject.set(x, "big", value.asInstanceOf[js.Any])
       
-      inline def setBr(value: `4`): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
+      inline def setBr(value: `15`): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
       
       inline def setDel(value: TextColor): Self = StObject.set(x, "del", value.asInstanceOf[js.Any])
       

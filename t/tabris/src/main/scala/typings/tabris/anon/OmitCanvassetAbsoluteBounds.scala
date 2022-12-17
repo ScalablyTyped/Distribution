@@ -120,10 +120,10 @@ trait OmitCanvassetAbsoluteBounds extends StObject {
   @JSName("_addChild")
   var _addChild_Original: js.Function2[/* child */ Widget[Any], /* index */ js.UndefOr[Double], Unit]
   
-  def _apply[Target](options: `22`[Target], rules: RuleSet[typings.tabris.global.tabris.widgets.Canvas]): typings.tabris.global.tabris.widgets.Canvas
+  def _apply[Target](options: `20`[Target], rules: RuleSet[typings.tabris.global.tabris.widgets.Canvas]): typings.tabris.global.tabris.widgets.Canvas
   @JSName("_apply")
   var _apply_Original: js.Function2[
-    /* options */ `22`[typings.tabris.global.tabris.widgets.Canvas], 
+    /* options */ `20`[typings.tabris.global.tabris.widgets.Canvas], 
     /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Canvas], 
     typings.tabris.global.tabris.widgets.Canvas
   ]
@@ -302,10 +302,10 @@ trait OmitCanvassetAbsoluteBounds extends StObject {
   var append_Original: js.Function1[/* repeated */ Widget[Any], typings.tabris.global.tabris.widgets.Canvas]
   
   @JSName("apply")
-  def apply[Target](options: `22`[Target], rules: RuleSet[typings.tabris.global.tabris.widgets.Canvas]): typings.tabris.global.tabris.widgets.Canvas
+  def apply[Target](options: `20`[Target], rules: RuleSet[typings.tabris.global.tabris.widgets.Canvas]): typings.tabris.global.tabris.widgets.Canvas
   @JSName("apply")
   var apply_Original: js.Function2[
-    /* options */ `22`[typings.tabris.global.tabris.widgets.Canvas], 
+    /* options */ `20`[typings.tabris.global.tabris.widgets.Canvas], 
     /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Canvas], 
     typings.tabris.global.tabris.widgets.Canvas
   ]
@@ -607,7 +607,7 @@ object OmitCanvassetAbsoluteBounds {
     $trigger: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Unit,
     _acceptChild: /* child */ Widget[Any] => Boolean,
     _addChild: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit,
-    _apply: (/* options */ `22`[typings.tabris.global.tabris.widgets.Canvas], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Canvas]) => typings.tabris.global.tabris.widgets.Canvas,
+    _apply: (/* options */ `20`[typings.tabris.global.tabris.widgets.Canvas], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Canvas]) => typings.tabris.global.tabris.widgets.Canvas,
     _checkDisposed: () => Unit,
     _checkLayout: /* value */ typings.tabris.mod.Layout => Unit,
     _children: /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]] => WidgetCollection[Widget[Any]],
@@ -648,7 +648,7 @@ object OmitCanvassetAbsoluteBounds {
     animate: (/* properties */ Opacity, /* options */ AnimationOptions) => js.Promise[Unit],
     append: /* repeated */ Widget[Any] => typings.tabris.global.tabris.widgets.Canvas,
     appendTo: /* parent */ Composite[Widget[Any]] => typings.tabris.global.tabris.widgets.Canvas,
-    apply: (/* options */ `22`[typings.tabris.global.tabris.widgets.Canvas], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Canvas]) => typings.tabris.global.tabris.widgets.Canvas,
+    apply: (/* options */ `20`[typings.tabris.global.tabris.widgets.Canvas], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Canvas]) => typings.tabris.global.tabris.widgets.Canvas,
     baseline: SiblingReferenceValue | auto | `true`,
     bottom: ConstraintValue,
     bounds: Bounds,
@@ -771,7 +771,7 @@ object OmitCanvassetAbsoluteBounds {
     inline def setAppendTo(value: /* parent */ Composite[Widget[Any]] => typings.tabris.global.tabris.widgets.Canvas): Self = StObject.set(x, "appendTo", js.Any.fromFunction1(value))
     
     inline def setApply(
-      value: (/* options */ `22`[typings.tabris.global.tabris.widgets.Canvas], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Canvas]) => typings.tabris.global.tabris.widgets.Canvas
+      value: (/* options */ `20`[typings.tabris.global.tabris.widgets.Canvas], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Canvas]) => typings.tabris.global.tabris.widgets.Canvas
     ): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
     
     inline def setBackground(value: LinearGradientValue | ColorValue | ImageValue): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
@@ -1009,7 +1009,7 @@ object OmitCanvassetAbsoluteBounds {
     inline def set_addChild(value: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "_addChild", js.Any.fromFunction2(value))
     
     inline def set_apply(
-      value: (/* options */ `22`[typings.tabris.global.tabris.widgets.Canvas], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Canvas]) => typings.tabris.global.tabris.widgets.Canvas
+      value: (/* options */ `20`[typings.tabris.global.tabris.widgets.Canvas], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Canvas]) => typings.tabris.global.tabris.widgets.Canvas
     ): Self = StObject.set(x, "_apply", js.Any.fromFunction2(value))
     
     inline def set_checkDisposed(value: () => Unit): Self = StObject.set(x, "_checkDisposed", js.Any.fromFunction0(value))

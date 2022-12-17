@@ -572,11 +572,11 @@ object distMod {
     */
   type _IsSubsetOf[Sub, Super] = `true`
   
-  type constnumber = (Double & js.Object) | `0`
+  type constnumber = Double | `0`
   
   type conststring = String | _empty
   
-  type constsymbol = (js.Symbol & js.Object) | js.Symbol
+  type constsymbol = js.Symbol
   
   type consttuple[T] = js.Array[Any | T]
   

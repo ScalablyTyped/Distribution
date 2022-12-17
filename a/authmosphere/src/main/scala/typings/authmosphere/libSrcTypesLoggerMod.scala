@@ -12,35 +12,44 @@ object libSrcTypesLoggerMod {
   @js.native
   object LogLevel extends StObject {
     
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[LogLevel & String] = js.native
+    
     @js.native
     sealed trait debug
       extends StObject
          with LogLevel
+    /* "debug" */ val debug: typings.authmosphere.libSrcTypesLoggerMod.LogLevel.debug & String = js.native
     
     @js.native
     sealed trait error
       extends StObject
          with LogLevel
+    /* "error" */ val error: typings.authmosphere.libSrcTypesLoggerMod.LogLevel.error & String = js.native
     
     @js.native
     sealed trait fatal
       extends StObject
          with LogLevel
+    /* "fatal" */ val fatal: typings.authmosphere.libSrcTypesLoggerMod.LogLevel.fatal & String = js.native
     
     @js.native
     sealed trait info
       extends StObject
          with LogLevel
+    /* "info" */ val info: typings.authmosphere.libSrcTypesLoggerMod.LogLevel.info & String = js.native
     
     @js.native
     sealed trait trace
       extends StObject
          with LogLevel
+    /* "trace" */ val trace: typings.authmosphere.libSrcTypesLoggerMod.LogLevel.trace & String = js.native
     
     @js.native
     sealed trait warn
       extends StObject
          with LogLevel
+    /* "warn" */ val warn: typings.authmosphere.libSrcTypesLoggerMod.LogLevel.warn & String = js.native
   }
   
   @js.native

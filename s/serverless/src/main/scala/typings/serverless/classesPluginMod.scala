@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.serverless.anon.Create
 import typings.serverless.anon.Debug
 import typings.serverless.anon.IsDisabledAtPrepopulation
-import typings.serverless.anon.Resolver
+import typings.serverless.anon.Resolve
 import typings.serverless.mod.Options
 import typings.serverless.mod.^
 import org.scalablytyped.runtime.StObject
@@ -18,7 +18,7 @@ object classesPluginMod {
   
   type ConfigurationVariablesSource = js.Function1[/* variableSource */ Any, js.Promise[Any]]
   
-  type ConfigurationVariablesSources = StringDictionary[ConfigurationVariablesSource | IsDisabledAtPrepopulation]
+  type ConfigurationVariablesSources = StringDictionary[ConfigurationVariablesSource | Resolve]
   
   type Hooks = StringDictionary[js.Function1[/* repeated */ Any, Any]]
   
@@ -119,5 +119,5 @@ object classesPluginMod {
   
   type VariableResolver = js.Function1[/* variableSource */ String, js.Promise[Any]]
   
-  type VariableResolvers = StringDictionary[VariableResolver | Resolver]
+  type VariableResolvers = StringDictionary[VariableResolver | IsDisabledAtPrepopulation]
 }

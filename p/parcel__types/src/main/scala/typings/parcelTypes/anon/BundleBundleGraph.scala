@@ -7,13 +7,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BundleBundleGraph extends StObject {
+trait BundleBundleGraph[ConfigType] extends StObject {
   
   var bundle: NamedBundle
   
   var bundleGraph: typings.parcelTypes.mod.BundleGraph[NamedBundle]
   
-  var config: typings.parcelTypes.mod.Config
+  var config: ConfigType
   
   var logger: PluginLogger
   
@@ -21,24 +21,24 @@ trait BundleBundleGraph extends StObject {
 }
 object BundleBundleGraph {
   
-  inline def apply(
+  inline def apply[ConfigType](
     bundle: NamedBundle,
     bundleGraph: typings.parcelTypes.mod.BundleGraph[NamedBundle],
-    config: typings.parcelTypes.mod.Config,
+    config: ConfigType,
     logger: PluginLogger,
     options: PluginOptions
-  ): BundleBundleGraph = {
+  ): BundleBundleGraph[ConfigType] = {
     val __obj = js.Dynamic.literal(bundle = bundle.asInstanceOf[js.Any], bundleGraph = bundleGraph.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], logger = logger.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BundleBundleGraph]
+    __obj.asInstanceOf[BundleBundleGraph[ConfigType]]
   }
   
-  extension [Self <: BundleBundleGraph](x: Self) {
+  extension [Self <: BundleBundleGraph[?], ConfigType](x: Self & BundleBundleGraph[ConfigType]) {
     
     inline def setBundle(value: NamedBundle): Self = StObject.set(x, "bundle", value.asInstanceOf[js.Any])
     
     inline def setBundleGraph(value: typings.parcelTypes.mod.BundleGraph[NamedBundle]): Self = StObject.set(x, "bundleGraph", value.asInstanceOf[js.Any])
     
-    inline def setConfig(value: typings.parcelTypes.mod.Config): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: ConfigType): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     inline def setLogger(value: PluginLogger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     

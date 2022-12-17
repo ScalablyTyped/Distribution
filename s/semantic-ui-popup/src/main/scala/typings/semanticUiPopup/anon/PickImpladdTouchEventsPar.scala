@@ -24,7 +24,7 @@ trait PickImpladdTouchEventsPar
   extends StObject
      with Param {
   
-  var addTouchEvents: Boolean & js.UndefOr[Boolean]
+  var addTouchEvents: Boolean
   
   var boundary: js.UndefOr[String | JQuery] = js.undefined
   
@@ -120,14 +120,14 @@ trait PickImpladdTouchEventsPar
 }
 object PickImpladdTouchEventsPar {
   
-  inline def apply(addTouchEvents: Boolean & js.UndefOr[Boolean]): PickImpladdTouchEventsPar = {
+  inline def apply(addTouchEvents: Boolean): PickImpladdTouchEventsPar = {
     val __obj = js.Dynamic.literal(addTouchEvents = addTouchEvents.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpladdTouchEventsPar]
   }
   
   extension [Self <: PickImpladdTouchEventsPar](x: Self) {
     
-    inline def setAddTouchEvents(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "addTouchEvents", value.asInstanceOf[js.Any])
+    inline def setAddTouchEvents(value: Boolean): Self = StObject.set(x, "addTouchEvents", value.asInstanceOf[js.Any])
     
     inline def setBoundary(value: String | JQuery): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
     

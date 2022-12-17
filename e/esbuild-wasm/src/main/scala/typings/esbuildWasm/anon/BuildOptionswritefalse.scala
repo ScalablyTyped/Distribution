@@ -219,12 +219,12 @@ trait BuildOptionswritefalse extends StObject {
   var watch: js.UndefOr[Boolean | WatchMode] = js.undefined
   
   /** Documentation: https://esbuild.github.io/api/#write */
-  var write: js.UndefOr[Boolean] & `false`
+  var write: js.UndefOr[Boolean] = js.undefined
 }
 object BuildOptionswritefalse {
   
-  inline def apply(write: js.UndefOr[Boolean] & `false`): BuildOptionswritefalse = {
-    val __obj = js.Dynamic.literal(write = write.asInstanceOf[js.Any])
+  inline def apply(): BuildOptionswritefalse = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuildOptionswritefalse]
   }
   
@@ -504,6 +504,8 @@ object BuildOptionswritefalse {
     
     inline def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
     
-    inline def setWrite(value: js.UndefOr[Boolean] & `false`): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
+    inline def setWrite(value: Boolean): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
+    
+    inline def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
   }
 }

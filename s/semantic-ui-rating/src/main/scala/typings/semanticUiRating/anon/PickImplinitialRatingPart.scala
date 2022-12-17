@@ -25,7 +25,7 @@ trait PickImplinitialRatingPart
   
   var fireOnInit: js.UndefOr[Boolean] = js.undefined
   
-  var initialRating: Double & js.UndefOr[Double]
+  var initialRating: Double
   
   var interactive: js.UndefOr[Boolean] = js.undefined
   
@@ -45,7 +45,7 @@ trait PickImplinitialRatingPart
 }
 object PickImplinitialRatingPart {
   
-  inline def apply(initialRating: Double & js.UndefOr[Double]): PickImplinitialRatingPart = {
+  inline def apply(initialRating: Double): PickImplinitialRatingPart = {
     val __obj = js.Dynamic.literal(initialRating = initialRating.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplinitialRatingPart]
   }
@@ -72,7 +72,7 @@ object PickImplinitialRatingPart {
     
     inline def setFireOnInitUndefined: Self = StObject.set(x, "fireOnInit", js.undefined)
     
-    inline def setInitialRating(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "initialRating", value.asInstanceOf[js.Any])
+    inline def setInitialRating(value: Double): Self = StObject.set(x, "initialRating", value.asInstanceOf[js.Any])
     
     inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
     

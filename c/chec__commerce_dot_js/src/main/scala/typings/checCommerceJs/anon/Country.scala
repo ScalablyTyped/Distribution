@@ -8,14 +8,16 @@ trait Country extends StObject {
   
   var country: String
   
-  var region: js.UndefOr[String] = js.undefined
+  var ip_address: String
   
-  var shipping_option_id: String
+  var postal_zip_code: String
+  
+  var region: String
 }
 object Country {
   
-  inline def apply(country: String, shipping_option_id: String): Country = {
-    val __obj = js.Dynamic.literal(country = country.asInstanceOf[js.Any], shipping_option_id = shipping_option_id.asInstanceOf[js.Any])
+  inline def apply(country: String, ip_address: String, postal_zip_code: String, region: String): Country = {
+    val __obj = js.Dynamic.literal(country = country.asInstanceOf[js.Any], ip_address = ip_address.asInstanceOf[js.Any], postal_zip_code = postal_zip_code.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any])
     __obj.asInstanceOf[Country]
   }
   
@@ -23,10 +25,10 @@ object Country {
     
     inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
+    inline def setIp_address(value: String): Self = StObject.set(x, "ip_address", value.asInstanceOf[js.Any])
+    
+    inline def setPostal_zip_code(value: String): Self = StObject.set(x, "postal_zip_code", value.asInstanceOf[js.Any])
+    
     inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
-    
-    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
-    
-    inline def setShipping_option_id(value: String): Self = StObject.set(x, "shipping_option_id", value.asInstanceOf[js.Any])
   }
 }

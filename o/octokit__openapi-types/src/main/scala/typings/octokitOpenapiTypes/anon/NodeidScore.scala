@@ -20,9 +20,7 @@ trait NodeidScore extends StObject {
   
   var score: Double
   
-  var text_matches: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['search-result-text-matches'] */ js.Any
-  ] = js.undefined
+  var text_matches: js.UndefOr[js.Array[Fragment]] = js.undefined
   
   /** Format: uri */
   var url: String
@@ -60,11 +58,11 @@ object NodeidScore {
     
     inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
-    inline def setText_matches(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['search-result-text-matches'] */ js.Any
-    ): Self = StObject.set(x, "text_matches", value.asInstanceOf[js.Any])
+    inline def setText_matches(value: js.Array[Fragment]): Self = StObject.set(x, "text_matches", value.asInstanceOf[js.Any])
     
     inline def setText_matchesUndefined: Self = StObject.set(x, "text_matches", js.undefined)
+    
+    inline def setText_matchesVarargs(value: Fragment*): Self = StObject.set(x, "text_matches", js.Array(value*))
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

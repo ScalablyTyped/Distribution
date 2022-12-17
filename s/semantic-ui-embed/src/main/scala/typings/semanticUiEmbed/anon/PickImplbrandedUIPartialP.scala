@@ -21,7 +21,7 @@ trait PickImplbrandedUIPartialP
   
   var autoplay: js.UndefOr[auto | Boolean] = js.undefined
   
-  var brandedUI: Boolean & js.UndefOr[Boolean]
+  var brandedUI: Boolean
   
   var className: js.UndefOr[ClassNameSettings] = js.undefined
   
@@ -71,7 +71,7 @@ trait PickImplbrandedUIPartialP
 }
 object PickImplbrandedUIPartialP {
   
-  inline def apply(brandedUI: Boolean & js.UndefOr[Boolean]): PickImplbrandedUIPartialP = {
+  inline def apply(brandedUI: Boolean): PickImplbrandedUIPartialP = {
     val __obj = js.Dynamic.literal(brandedUI = brandedUI.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplbrandedUIPartialP]
   }
@@ -82,7 +82,7 @@ object PickImplbrandedUIPartialP {
     
     inline def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
     
-    inline def setBrandedUI(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "brandedUI", value.asInstanceOf[js.Any])
+    inline def setBrandedUI(value: Boolean): Self = StObject.set(x, "brandedUI", value.asInstanceOf[js.Any])
     
     inline def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

@@ -115,7 +115,7 @@ trait PickImplresponsePartialPi
   
   var regExp: js.UndefOr[RegExpSettings] = js.undefined
   
-  var response: (Any | `false`) & (js.UndefOr[Any | `false`])
+  var response: Any | `false`
   
   var responseAsync: js.UndefOr[
     (js.Function2[
@@ -147,7 +147,7 @@ trait PickImplresponsePartialPi
 }
 object PickImplresponsePartialPi {
   
-  inline def apply(response: (Any | `false`) & (js.UndefOr[Any | `false`])): PickImplresponsePartialPi = {
+  inline def apply(response: Any | `false`): PickImplresponsePartialPi = {
     val __obj = js.Dynamic.literal(response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplresponsePartialPi]
   }
@@ -290,7 +290,7 @@ object PickImplresponsePartialPi {
     
     inline def setRegExpUndefined: Self = StObject.set(x, "regExp", js.undefined)
     
-    inline def setResponse(value: (Any | `false`) & (js.UndefOr[Any | `false`])): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: Any | `false`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     inline def setResponseAsync(
       value: (js.Function2[

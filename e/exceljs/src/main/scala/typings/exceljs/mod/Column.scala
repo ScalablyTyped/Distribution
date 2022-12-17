@@ -2,7 +2,7 @@ package typings.exceljs.mod
 
 import typings.exceljs.anon.IncludeEmpty
 import typings.exceljs.anon.PartialAlignment
-import typings.exceljs.anon.PartialBordersBottom
+import typings.exceljs.anon.PartialBorders
 import typings.exceljs.anon.PartialFont
 import typings.exceljs.anon.PartialProtection
 import typings.exceljs.anon.PartialStyle
@@ -18,7 +18,7 @@ trait Column extends StObject {
   /**
   	 * Below properties read from style
   	 */
-  var border: js.UndefOr[PartialBordersBottom] = js.native
+  var border: js.UndefOr[PartialBorders] = js.native
   
   /**
   	 * indicate the collapsed state based on outlineLevel

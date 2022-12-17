@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.accepts.mod.Accepts
 import typings.contentDisposition.mod.Options
 import typings.cookies.mod.Cookies
-import typings.koa.anon.BodyResponseBodyT
+import typings.koa.anon.Body
 import typings.koa.anon.FnCall
 import typings.koa.mod.Application
 import typings.koa.mod.DefaultContext
@@ -12,7 +12,6 @@ import typings.koa.mod.DefaultState
 import typings.koa.mod.Middleware
 import typings.koa.mod.ParameterizedContext
 import typings.koa.mod.Request
-import typings.koa.mod.Response
 import typings.koaRouter.koaRouterBooleans.`false`
 import typings.node.httpMod.IncomingHttpHeaders
 import typings.node.httpMod.IncomingMessage
@@ -692,7 +691,7 @@ object mod {
       */
     var respond: js.UndefOr[Boolean] = js.native
     
-    var response: BodyResponseBodyT[Any] & Response = js.native
+    var response: Body[Any] = js.native
     
     /**
       * the router instance

@@ -29,9 +29,9 @@ object mod {
     
     var callbackURL: js.UndefOr[String] = js.undefined
     
-    var clientID: String & js.UndefOr[String]
+    var clientID: String
     
-    var clientSecret: String & js.UndefOr[String]
+    var clientSecret: String
     
     var customHeaders: js.UndefOr[OutgoingHttpHeaders] = js.undefined
     
@@ -57,7 +57,7 @@ object mod {
   }
   object MicrosoftStrategyOptions {
     
-    inline def apply(clientID: String & js.UndefOr[String], clientSecret: String & js.UndefOr[String]): MicrosoftStrategyOptions = {
+    inline def apply(clientID: String, clientSecret: String): MicrosoftStrategyOptions = {
       val __obj = js.Dynamic.literal(clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any])
       __obj.asInstanceOf[MicrosoftStrategyOptions]
     }
@@ -72,9 +72,9 @@ object mod {
       
       inline def setCallbackURLUndefined: Self = StObject.set(x, "callbackURL", js.undefined)
       
-      inline def setClientID(value: String & js.UndefOr[String]): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
+      inline def setClientID(value: String): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
       
-      inline def setClientSecret(value: String & js.UndefOr[String]): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
+      inline def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
       
       inline def setCustomHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
       
@@ -131,13 +131,13 @@ object mod {
     
     var callbackURL: js.UndefOr[String] = js.undefined
     
-    var clientID: String & js.UndefOr[String]
+    var clientID: String
     
-    var clientSecret: String & js.UndefOr[String]
+    var clientSecret: String
     
     var customHeaders: js.UndefOr[OutgoingHttpHeaders] = js.undefined
     
-    var passReqToCallback: `true` & js.UndefOr[`true`]
+    var passReqToCallback: `true`
     
     var pkce: js.UndefOr[Boolean] = js.undefined
     
@@ -159,12 +159,8 @@ object mod {
   }
   object MicrosoftStrategyOptionsWithRequest {
     
-    inline def apply(
-      clientID: String & js.UndefOr[String],
-      clientSecret: String & js.UndefOr[String],
-      passReqToCallback: `true` & js.UndefOr[`true`]
-    ): MicrosoftStrategyOptionsWithRequest = {
-      val __obj = js.Dynamic.literal(clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], passReqToCallback = passReqToCallback.asInstanceOf[js.Any])
+    inline def apply(clientID: String, clientSecret: String): MicrosoftStrategyOptionsWithRequest = {
+      val __obj = js.Dynamic.literal(clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], passReqToCallback = true)
       __obj.asInstanceOf[MicrosoftStrategyOptionsWithRequest]
     }
     
@@ -178,15 +174,15 @@ object mod {
       
       inline def setCallbackURLUndefined: Self = StObject.set(x, "callbackURL", js.undefined)
       
-      inline def setClientID(value: String & js.UndefOr[String]): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
+      inline def setClientID(value: String): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
       
-      inline def setClientSecret(value: String & js.UndefOr[String]): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
+      inline def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
       
       inline def setCustomHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
       
       inline def setCustomHeadersUndefined: Self = StObject.set(x, "customHeaders", js.undefined)
       
-      inline def setPassReqToCallback(value: `true` & js.UndefOr[`true`]): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
+      inline def setPassReqToCallback(value: `true`): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
       
       inline def setPkce(value: Boolean): Self = StObject.set(x, "pkce", value.asInstanceOf[js.Any])
       

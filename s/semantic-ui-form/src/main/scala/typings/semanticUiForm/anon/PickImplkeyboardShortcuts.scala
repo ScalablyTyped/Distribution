@@ -41,7 +41,7 @@ trait PickImplkeyboardShortcuts
   
   var `inline`: js.UndefOr[Boolean] = js.undefined
   
-  var keyboardShortcuts: Boolean & js.UndefOr[Boolean]
+  var keyboardShortcuts: Boolean
   
   var metadata: js.UndefOr[MetadataSettings] = js.undefined
   
@@ -92,7 +92,7 @@ trait PickImplkeyboardShortcuts
 }
 object PickImplkeyboardShortcuts {
   
-  inline def apply(keyboardShortcuts: Boolean & js.UndefOr[Boolean]): PickImplkeyboardShortcuts = {
+  inline def apply(keyboardShortcuts: Boolean): PickImplkeyboardShortcuts = {
     val __obj = js.Dynamic.literal(keyboardShortcuts = keyboardShortcuts.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplkeyboardShortcuts]
   }
@@ -131,7 +131,7 @@ object PickImplkeyboardShortcuts {
     
     inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
     
-    inline def setKeyboardShortcuts(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "keyboardShortcuts", value.asInstanceOf[js.Any])
+    inline def setKeyboardShortcuts(value: Boolean): Self = StObject.set(x, "keyboardShortcuts", value.asInstanceOf[js.Any])
     
     inline def setMetadata(value: MetadataSettings): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

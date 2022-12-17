@@ -3,7 +3,7 @@ package typings.victoryCore
 import typings.react.mod.Component
 import typings.react.mod.ReactElement
 import typings.victoryCore.anon.Ariadescribedby
-import typings.victoryCore.anon.ClassNameString
+import typings.victoryCore.anon.ClassName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,8 +30,8 @@ object libVictoryAccessibleGroupVictoryAccessibleGroupMod {
     
     @JSImport("victory-core/lib/victory-accessible-group/victory-accessible-group", "VictoryAccessibleGroup.defaultProps")
     @js.native
-    def defaultProps: ClassNameString = js.native
-    inline def defaultProps_=(x: ClassNameString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: ClassName = js.native
+    inline def defaultProps_=(x: ClassName): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("victory-core/lib/victory-accessible-group/victory-accessible-group", "VictoryAccessibleGroup.displayName")
     @js.native

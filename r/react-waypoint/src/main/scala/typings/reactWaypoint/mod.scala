@@ -10,7 +10,43 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  @JSImport("react-waypoint", "Waypoint")
+  @js.native
+  open class Waypoint protected ()
+    extends Component[WaypointProps, js.Object, Any] {
+    def this(props: WaypointProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: WaypointProps, context: Any) = this()
+  }
+  /* static members */
   object Waypoint {
+    
+    @JSImport("react-waypoint", "Waypoint")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("react-waypoint", "Waypoint.above")
+    @js.native
+    def above: String = js.native
+    inline def above_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("above")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-waypoint", "Waypoint.below")
+    @js.native
+    def below: String = js.native
+    inline def below_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("below")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-waypoint", "Waypoint.inside")
+    @js.native
+    def inside: String = js.native
+    inline def inside_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inside")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-waypoint", "Waypoint.invisible")
+    @js.native
+    def invisible: String = js.native
+    inline def invisible_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invisible")(x.asInstanceOf[js.Any])
     
     trait CallbackArgs extends StObject {
       
@@ -203,5 +239,4 @@ object mod {
       }
     }
   }
-  type Waypoint = Component[WaypointProps, js.Object, Any]
 }

@@ -2207,7 +2207,7 @@ object mod {
     
     val onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onChange: js.UndefOr[HandlerCallback] & js.UndefOr[FormEventHandler[HTMLDivElement]]
+    var onChange: js.UndefOr[HandlerCallback] = js.undefined
     
     var onChanged: js.UndefOr[HandlerCallback] = js.undefined
     
@@ -2227,7 +2227,7 @@ object mod {
     
     val onDoubleClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onDrag: js.UndefOr[HandlerCallback] & js.UndefOr[DragEventHandler[HTMLDivElement]]
+    var onDrag: js.UndefOr[HandlerCallback] = js.undefined
     
     val onDragEnd: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
     
@@ -2333,7 +2333,7 @@ object mod {
     
     val onReset: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
     
-    var onResize: js.UndefOr[HandlerCallback] & js.UndefOr[ReactEventHandler[HTMLDivElement]]
+    var onResize: js.UndefOr[HandlerCallback] = js.undefined
     
     var onResized: js.UndefOr[HandlerCallback] = js.undefined
     
@@ -2525,12 +2525,8 @@ object mod {
   }
   object OwlCarouselProps {
     
-    inline def apply(
-      onChange: js.UndefOr[HandlerCallback] & js.UndefOr[FormEventHandler[HTMLDivElement]],
-      onDrag: js.UndefOr[HandlerCallback] & js.UndefOr[DragEventHandler[HTMLDivElement]],
-      onResize: js.UndefOr[HandlerCallback] & js.UndefOr[ReactEventHandler[HTMLDivElement]]
-    ): OwlCarouselProps = {
-      val __obj = js.Dynamic.literal(onChange = onChange.asInstanceOf[js.Any], onDrag = onDrag.asInstanceOf[js.Any], onResize = onResize.asInstanceOf[js.Any])
+    inline def apply(): OwlCarouselProps = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OwlCarouselProps]
     }
     
@@ -3324,7 +3320,9 @@ object mod {
       
       inline def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
       
-      inline def setOnChange(value: js.UndefOr[HandlerCallback] & js.UndefOr[FormEventHandler[HTMLDivElement]]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
+      inline def setOnChange(value: HandlerCallback): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
+      
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
       inline def setOnChanged(value: HandlerCallback): Self = StObject.set(x, "onChanged", value.asInstanceOf[js.Any])
       
@@ -3362,7 +3360,7 @@ object mod {
       
       inline def setOnDoubleClickUndefined: Self = StObject.set(x, "onDoubleClick", js.undefined)
       
-      inline def setOnDrag(value: js.UndefOr[HandlerCallback] & js.UndefOr[DragEventHandler[HTMLDivElement]]): Self = StObject.set(x, "onDrag", value.asInstanceOf[js.Any])
+      inline def setOnDrag(value: HandlerCallback): Self = StObject.set(x, "onDrag", value.asInstanceOf[js.Any])
       
       inline def setOnDragEnd(value: DragEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
       
@@ -3387,6 +3385,8 @@ object mod {
       inline def setOnDragStart(value: DragEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
       
       inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
+      
+      inline def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
       
       inline def setOnDragged(value: HandlerCallback): Self = StObject.set(x, "onDragged", value.asInstanceOf[js.Any])
       
@@ -3572,7 +3572,9 @@ object mod {
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
-      inline def setOnResize(value: js.UndefOr[HandlerCallback] & js.UndefOr[ReactEventHandler[HTMLDivElement]]): Self = StObject.set(x, "onResize", value.asInstanceOf[js.Any])
+      inline def setOnResize(value: HandlerCallback): Self = StObject.set(x, "onResize", value.asInstanceOf[js.Any])
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
       
       inline def setOnResized(value: HandlerCallback): Self = StObject.set(x, "onResized", value.asInstanceOf[js.Any])
       

@@ -1,7 +1,5 @@
 package typings.playcanvas.global.pc
 
-import typings.playcanvas.anon.Color
-import typings.playcanvas.mod.AppBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,6 +30,6 @@ open class CanvasFont protected ()
     * @param {number} [options.padding] - Amount of glyph padding in pixels that is added to each
     * glyph in the atlas. Defaults to 0.
     */
-  def this(app: AppBase) = this()
-  def this(app: AppBase, options: Color) = this()
+  def this(app: typings.playcanvas.mod.AppBase) = this()
+  def this(app: typings.playcanvas.mod.AppBase, options: typings.playcanvas.anon.Color) = this()
 }

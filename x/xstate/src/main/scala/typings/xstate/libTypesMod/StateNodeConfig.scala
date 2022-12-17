@@ -1,7 +1,7 @@
 package typings.xstate.libTypesMod
 
 import typings.xstate.anon.Context
-import typings.xstate.anon.`3`
+import typings.xstate.anon.`0`
 import typings.xstate.libStateNodeMod.StateNode
 import typings.xstate.libTypegenTypesMod.TypegenDisabled
 import typings.xstate.xstateStrings.`final`
@@ -296,7 +296,7 @@ object StateNodeConfig {
     inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
     inline def setOnVarargs(
-      value: ((/* import warning: importer.ImportType#apply Failed type conversion: TEvent extends xstate.xstate/lib/types.EventObject ? xstate.xstate/lib/types.TransitionConfig<TContext, TEvent> & {  event :TEvent['type']} : never */ js.Any) | ((TransitionConfig[TContext, TEvent]) & typings.xstate.anon.Event) | ((TransitionConfig[TContext, TEvent]) & `3`))*
+      value: ((/* import warning: importer.ImportType#apply Failed type conversion: TEvent extends xstate.xstate/lib/types.EventObject ? xstate.xstate/lib/types.TransitionConfig<TContext, TEvent> & {  event :TEvent['type']} : never */ js.Any) | ((TransitionConfig[TContext, TEvent]) & typings.xstate.anon.Event) | ((TransitionConfig[TContext, TEvent]) & `0`))*
     ): Self = StObject.set(x, "on", js.Array(value*))
     
     inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])

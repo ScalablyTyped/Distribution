@@ -34,11 +34,11 @@ trait PickImpltextPartialPickIm
   
   var siblingLabel: js.UndefOr[String] = js.undefined
   
-  var text: String & js.UndefOr[String]
+  var text: String
 }
 object PickImpltextPartialPickIm {
   
-  inline def apply(text: String & js.UndefOr[String]): PickImpltextPartialPickIm = {
+  inline def apply(text: String): PickImpltextPartialPickIm = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpltextPartialPickIm]
   }
@@ -93,6 +93,6 @@ object PickImpltextPartialPickIm {
     
     inline def setSiblingLabelUndefined: Self = StObject.set(x, "siblingLabel", js.undefined)
     
-    inline def setText(value: String & js.UndefOr[String]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

@@ -17,23 +17,23 @@ import typings.std.Record
 import typings.std.SVGElement
 import typings.victoryCore.anon.Angle
 import typings.victoryCore.anon.AnimationTimer
-import typings.victoryCore.anon.Bottom
 import typings.victoryCore.anon.ChildComponents
 import typings.victoryCore.anon.ChildrenTransitions
 import typings.victoryCore.anon.GetAnimationProps
 import typings.victoryCore.anon.Instantiable
 import typings.victoryCore.anon.Labels
+import typings.victoryCore.anon.Left
 import typings.victoryCore.anon.PickSyntheticEventElement
 import typings.victoryCore.anon.PickVictoryCommonPropssca
 import typings.victoryCore.anon.WeakValidationMapVictoryC
 import typings.victoryCore.anon.WeakValidationMapVictoryCActive
 import typings.victoryCore.anon.WeakValidationMapVictoryD
 import typings.victoryCore.anon.Width
-import typings.victoryCore.anon.X
 import typings.victoryCore.anon.X0
 import typings.victoryCore.anon.XAny
 import typings.victoryCore.anon.XArray
 import typings.victoryCore.anon.XNumber
+import typings.victoryCore.anon.XY
 import typings.victoryCore.anon.Y
 import typings.victoryCore.anon.YArray
 import typings.victoryCore.libTypesCallbacksMod.CallbackArgs
@@ -94,7 +94,7 @@ object libVictoryUtilMod {
     inline def getDomain(props: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getDomain")(props.asInstanceOf[js.Any]).asInstanceOf[Any]
     inline def getDomain(props: Any, axis: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getDomain")(props.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def getOrigin(domain: Any): X = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrigin")(domain.asInstanceOf[js.Any]).asInstanceOf[X]
+    inline def getOrigin(domain: Any): Y = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrigin")(domain.asInstanceOf[js.Any]).asInstanceOf[Y]
     
     inline def getOriginSign(origin: Any, domain: Any): positive | negative = (^.asInstanceOf[js.Dynamic].applyDynamic("getOriginSign")(origin.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[positive | negative]
     
@@ -174,7 +174,7 @@ object libVictoryUtilMod {
     inline def formatDataFromDomain(dataset: Any, domain: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDataFromDomain")(dataset.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[Any]
     inline def formatDataFromDomain(dataset: Any, domain: Any, defaultBaseline: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDataFromDomain")(dataset.asInstanceOf[js.Any], domain.asInstanceOf[js.Any], defaultBaseline.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def generateData(props: Any): js.Array[Y] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateData")(props.asInstanceOf[js.Any]).asInstanceOf[js.Array[Y]]
+    inline def generateData(props: Any): js.Array[XY] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateData")(props.asInstanceOf[js.Any]).asInstanceOf[js.Array[XY]]
     
     inline def getCategories(props: Any, axis: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getCategories")(props.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[Any]
     
@@ -288,12 +288,12 @@ object libVictoryUtilMod {
     
     inline def getDefaultStyles(props: Any, role: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultStyles")(props.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def getPadding(props: Any): Bottom = ^.asInstanceOf[js.Dynamic].applyDynamic("getPadding")(props.asInstanceOf[js.Any]).asInstanceOf[Bottom]
-    inline def getPadding(props: Any, name: String): Bottom = (^.asInstanceOf[js.Dynamic].applyDynamic("getPadding")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Bottom]
+    inline def getPadding(props: Any): Left = ^.asInstanceOf[js.Dynamic].applyDynamic("getPadding")(props.asInstanceOf[js.Any]).asInstanceOf[Left]
+    inline def getPadding(props: Any, name: String): Left = (^.asInstanceOf[js.Dynamic].applyDynamic("getPadding")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Left]
     
     inline def getPoint(datum: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getPoint")(datum.asInstanceOf[js.Any]).asInstanceOf[Any]
     
-    inline def getPolarOrigin(props: Any): Y = ^.asInstanceOf[js.Dynamic].applyDynamic("getPolarOrigin")(props.asInstanceOf[js.Any]).asInstanceOf[Y]
+    inline def getPolarOrigin(props: Any): XY = ^.asInstanceOf[js.Dynamic].applyDynamic("getPolarOrigin")(props.asInstanceOf[js.Any]).asInstanceOf[XY]
     
     inline def getRadius(props: Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getRadius")(props.asInstanceOf[js.Any]).asInstanceOf[Double]
     

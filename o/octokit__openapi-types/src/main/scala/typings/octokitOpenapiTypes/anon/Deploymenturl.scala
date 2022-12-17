@@ -63,7 +63,7 @@ trait Deploymenturl extends StObject {
   /** @example MDE2OkRlcGxveW1lbnRTdGF0dXMx */
   var node_id: String
   
-  var performed_via_github_app: js.UndefOr[Clientsecret | Null] = js.undefined
+  var performed_via_github_app: js.UndefOr[Externalurl | Null] = js.undefined
   
   /**
     * Format: uri
@@ -144,7 +144,7 @@ object Deploymenturl {
     
     inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
-    inline def setPerformed_via_github_app(value: Clientsecret): Self = StObject.set(x, "performed_via_github_app", value.asInstanceOf[js.Any])
+    inline def setPerformed_via_github_app(value: Externalurl): Self = StObject.set(x, "performed_via_github_app", value.asInstanceOf[js.Any])
     
     inline def setPerformed_via_github_appNull: Self = StObject.set(x, "performed_via_github_app", null)
     

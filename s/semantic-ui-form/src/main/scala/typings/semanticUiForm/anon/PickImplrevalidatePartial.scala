@@ -72,7 +72,7 @@ trait PickImplrevalidatePartial
   
   var prompt: js.UndefOr[PromptSettings] = js.undefined
   
-  var revalidate: Boolean & js.UndefOr[Boolean]
+  var revalidate: Boolean
   
   var rules: js.UndefOr[
     StringDictionary[js.ThisFunction1[/* this */ HTMLElement, /* repeated */ Any, Boolean]]
@@ -92,7 +92,7 @@ trait PickImplrevalidatePartial
 }
 object PickImplrevalidatePartial {
   
-  inline def apply(revalidate: Boolean & js.UndefOr[Boolean]): PickImplrevalidatePartial = {
+  inline def apply(revalidate: Boolean): PickImplrevalidatePartial = {
     val __obj = js.Dynamic.literal(revalidate = revalidate.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplrevalidatePartial]
   }
@@ -184,7 +184,7 @@ object PickImplrevalidatePartial {
     
     inline def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
     
-    inline def setRevalidate(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "revalidate", value.asInstanceOf[js.Any])
+    inline def setRevalidate(value: Boolean): Self = StObject.set(x, "revalidate", value.asInstanceOf[js.Any])
     
     inline def setRules(value: StringDictionary[js.ThisFunction1[/* this */ HTMLElement, /* repeated */ Any, Boolean]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     

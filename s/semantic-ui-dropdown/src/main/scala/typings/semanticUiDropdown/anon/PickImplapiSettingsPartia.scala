@@ -53,7 +53,7 @@ trait PickImplapiSettingsPartia
   
   var allowTab: js.UndefOr[Boolean] = js.undefined
   
-  var apiSettings: (`false` | ApiSettings) & (js.UndefOr[`false` | ApiSettings])
+  var apiSettings: `false` | ApiSettings
   
   var className: js.UndefOr[ClassNameSettings] = js.undefined
   
@@ -169,7 +169,7 @@ trait PickImplapiSettingsPartia
 }
 object PickImplapiSettingsPartia {
   
-  inline def apply(apiSettings: (`false` | ApiSettings) & (js.UndefOr[`false` | ApiSettings])): PickImplapiSettingsPartia = {
+  inline def apply(apiSettings: `false` | ApiSettings): PickImplapiSettingsPartia = {
     val __obj = js.Dynamic.literal(apiSettings = apiSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplapiSettingsPartia]
   }
@@ -204,7 +204,7 @@ object PickImplapiSettingsPartia {
     
     inline def setAllowTabUndefined: Self = StObject.set(x, "allowTab", js.undefined)
     
-    inline def setApiSettings(value: (`false` | ApiSettings) & (js.UndefOr[`false` | ApiSettings])): Self = StObject.set(x, "apiSettings", value.asInstanceOf[js.Any])
+    inline def setApiSettings(value: `false` | ApiSettings): Self = StObject.set(x, "apiSettings", value.asInstanceOf[js.Any])
     
     inline def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

@@ -14,7 +14,7 @@ trait ChildrenComponent[ParamList /* <: ParamListBase */, RouteName /* <: /* key
   /**
     * Render callback to render content of this screen.
     */
-  def children(props: NavigationRoute[ParamList, RouteName]): ReactNode
+  def children(props: Route[ParamList, RouteName]): ReactNode
   
   var component: js.UndefOr[scala.Nothing] = js.undefined
   
@@ -22,13 +22,13 @@ trait ChildrenComponent[ParamList /* <: ParamListBase */, RouteName /* <: /* key
 }
 object ChildrenComponent {
   
-  inline def apply[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */](children: NavigationRoute[ParamList, RouteName] => ReactNode): ChildrenComponent[ParamList, RouteName] = {
+  inline def apply[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */](children: Route[ParamList, RouteName] => ReactNode): ChildrenComponent[ParamList, RouteName] = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
     __obj.asInstanceOf[ChildrenComponent[ParamList, RouteName]]
   }
   
   extension [Self <: ChildrenComponent[?, ?], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */](x: Self & (ChildrenComponent[ParamList, RouteName])) {
     
-    inline def setChildren(value: NavigationRoute[ParamList, RouteName] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+    inline def setChildren(value: Route[ParamList, RouteName] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
   }
 }

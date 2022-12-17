@@ -2,7 +2,7 @@ package typings.reactInstantsearchCore.mod
 
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactChild
-import typings.reactInstantsearchCore.anon.Attribute
+import typings.reactInstantsearchCore.anon.AttributeString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ trait DynamicWidgetsProvided extends StObject {
   
   var children: js.UndefOr[ReactChild] = js.undefined
   
-  var fallbackComponent: js.UndefOr[ComponentType[Attribute]] = js.undefined
+  var fallbackComponent: js.UndefOr[ComponentType[AttributeString]] = js.undefined
 }
 object DynamicWidgetsProvided {
   
@@ -34,7 +34,7 @@ object DynamicWidgetsProvided {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setFallbackComponent(value: ComponentType[Attribute]): Self = StObject.set(x, "fallbackComponent", value.asInstanceOf[js.Any])
+    inline def setFallbackComponent(value: ComponentType[AttributeString]): Self = StObject.set(x, "fallbackComponent", value.asInstanceOf[js.Any])
     
     inline def setFallbackComponentUndefined: Self = StObject.set(x, "fallbackComponent", js.undefined)
   }

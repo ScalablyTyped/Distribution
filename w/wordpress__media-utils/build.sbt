@@ -1,26 +1,26 @@
 organization := "org.scalablytyped"
 name := "wordpress__media-utils"
-version := "3.0-dt-20220421Z-7e512f"
+version := "3.0-dt-20220421Z-9705e7"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "csstype" % "3.1.1-ab3df7",
-  "org.scalablytyped" %%% "downshift" % "7.0.1-9ec13d",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-53873f",
-  "org.scalablytyped" %%% "re-resizable" % "6.9.9-7f0f4e",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-9ff1b2",
-  "org.scalablytyped" %%% "react-autosize-textarea" % "7.1.0-48dedd",
-  "org.scalablytyped" %%% "react-dom" % "18.0-dt-20221114Z-6bbe70",
-  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-ea4558",
-  "org.scalablytyped" %%% "std" % "4.9-c133ce",
-  "org.scalablytyped" %%% "tinycolor2" % "1.4-dt-20211202Z-a8c68b",
-  "org.scalablytyped" %%% "wordpress__block-editor" % "7.0-dt-20220413Z-2fa5a0",
-  "org.scalablytyped" %%% "wordpress__blocks" % "11.0-dt-20221114Z-fbff47",
-  "org.scalablytyped" %%% "wordpress__components" % "19.10-dt-20220829Z-00f1d4",
-  "org.scalablytyped" %%% "wordpress__element" % "4.19.0-f295d0",
-  "org.scalablytyped" %%% "wordpress__notices" % "3.5-dt-20220601Z-041216",
-  "org.scalablytyped" %%% "wordpress__rich-text" % "3.4-dt-20211202Z-ccf15a")
+  "org.scalablytyped" %%% "csstype" % "3.1.1-4db30e",
+  "org.scalablytyped" %%% "downshift" % "7.0.1-14cdd0",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-8a1cd9",
+  "org.scalablytyped" %%% "re-resizable" % "6.9.9-6cf62f",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-cf549b",
+  "org.scalablytyped" %%% "react-autosize-textarea" % "7.1.0-e318b6",
+  "org.scalablytyped" %%% "react-dom" % "18.0-dt-20221114Z-e55fa5",
+  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-6206c7",
+  "org.scalablytyped" %%% "std" % "4.9-5f989f",
+  "org.scalablytyped" %%% "tinycolor2" % "1.4-dt-20211202Z-cbda17",
+  "org.scalablytyped" %%% "wordpress__block-editor" % "7.0-dt-20220413Z-4d8935",
+  "org.scalablytyped" %%% "wordpress__blocks" % "11.0-dt-20221114Z-839999",
+  "org.scalablytyped" %%% "wordpress__components" % "19.10-dt-20220829Z-b36235",
+  "org.scalablytyped" %%% "wordpress__element" % "4.19.0-153f25",
+  "org.scalablytyped" %%% "wordpress__notices" % "3.5-dt-20220601Z-e0b064",
+  "org.scalablytyped" %%% "wordpress__rich-text" % "3.4-dt-20211202Z-5de4ab")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -36,7 +36,7 @@ trait PickImplplaceholderPartiaActive
   
   var multiple: js.UndefOr[String] = js.undefined
   
-  var placeholder: String & js.UndefOr[String]
+  var placeholder: String
   
   var search: js.UndefOr[String] = js.undefined
   
@@ -50,7 +50,7 @@ trait PickImplplaceholderPartiaActive
 }
 object PickImplplaceholderPartiaActive {
   
-  inline def apply(placeholder: String & js.UndefOr[String]): PickImplplaceholderPartiaActive = {
+  inline def apply(placeholder: String): PickImplplaceholderPartiaActive = {
     val __obj = js.Dynamic.literal(placeholder = placeholder.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplplaceholderPartiaActive]
   }
@@ -109,7 +109,7 @@ object PickImplplaceholderPartiaActive {
     
     inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
     
-    inline def setPlaceholder(value: String & js.UndefOr[String]): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     

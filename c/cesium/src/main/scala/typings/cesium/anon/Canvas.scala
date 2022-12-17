@@ -2,6 +2,7 @@ package typings.cesium.anon
 
 import typings.cesium.mod.MapMode2D
 import typings.cesium.mod.MapProjection
+import typings.std.Element
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,9 +14,9 @@ trait Canvas extends StObject {
   
   var contextOptions: js.UndefOr[Any] = js.undefined
   
-  var creditContainer: js.UndefOr[typings.std.Element] = js.undefined
+  var creditContainer: js.UndefOr[Element] = js.undefined
   
-  var creditViewport: js.UndefOr[typings.std.Element] = js.undefined
+  var creditViewport: js.UndefOr[Element] = js.undefined
   
   var mapMode2D: js.UndefOr[MapMode2D] = js.undefined
   
@@ -48,11 +49,11 @@ object Canvas {
     
     inline def setContextOptionsUndefined: Self = StObject.set(x, "contextOptions", js.undefined)
     
-    inline def setCreditContainer(value: typings.std.Element): Self = StObject.set(x, "creditContainer", value.asInstanceOf[js.Any])
+    inline def setCreditContainer(value: Element): Self = StObject.set(x, "creditContainer", value.asInstanceOf[js.Any])
     
     inline def setCreditContainerUndefined: Self = StObject.set(x, "creditContainer", js.undefined)
     
-    inline def setCreditViewport(value: typings.std.Element): Self = StObject.set(x, "creditViewport", value.asInstanceOf[js.Any])
+    inline def setCreditViewport(value: Element): Self = StObject.set(x, "creditViewport", value.asInstanceOf[js.Any])
     
     inline def setCreditViewportUndefined: Self = StObject.set(x, "creditViewport", js.undefined)
     

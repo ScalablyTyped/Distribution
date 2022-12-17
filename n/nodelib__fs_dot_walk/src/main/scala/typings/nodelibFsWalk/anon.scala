@@ -2,6 +2,7 @@ package typings.nodelibFsWalk
 
 import typings.node.fsMod.Stats
 import typings.nodelibFsScandir.anon.WithFileTypes
+import typings.nodelibFsScandir.mod.AsyncCallback
 import typings.nodelibFsScandir.outSettingsMod.Options
 import typings.nodelibFsScandir.outSettingsMod.default
 import typings.nodelibFsScandir.outTypesMod.Dirent
@@ -94,5 +95,13 @@ object anon {
       
       inline def setStatUndefined: Self = StObject.set(x, "stat", js.undefined)
     }
+  }
+  
+  @js.native
+  trait Typeofscandir extends StObject {
+    
+    def apply(path: String, callback: AsyncCallback): Unit = js.native
+    def apply(path: String, optionsOrSettings: Options, callback: AsyncCallback): Unit = js.native
+    def apply(path: String, optionsOrSettings: default, callback: AsyncCallback): Unit = js.native
   }
 }

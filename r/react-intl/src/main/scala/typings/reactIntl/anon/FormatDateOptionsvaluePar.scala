@@ -42,7 +42,7 @@ trait FormatDateOptionsvaluePar extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: 'date' extends keyof @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats ? @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats['date'] : string */ js.Any
   ] = js.undefined
   
-  var formatMatcher: (js.UndefOr[(`best fit`) | basic]) & (js.UndefOr[basic | (`best fit`)])
+  var formatMatcher: js.UndefOr[(`best fit`) | basic] = js.undefined
   
   var fractionalSecondDigits: js.UndefOr[
     typings.reactIntl.reactIntlInts.`1` | typings.reactIntl.reactIntlInts.`2` | typings.reactIntl.reactIntlInts.`3`
@@ -78,10 +78,9 @@ object FormatDateOptionsvaluePar {
   
   inline def apply(
     children: js.Array[DateTimeFormatPart] => ReactElement | Null,
-    formatMatcher: (js.UndefOr[(`best fit`) | basic]) & (js.UndefOr[basic | (`best fit`)]),
     value: (/* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.anon.FnCall>[0] */ js.Any) | String
   ): FormatDateOptionsvaluePar = {
-    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), formatMatcher = formatMatcher.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatDateOptionsvaluePar]
   }
   
@@ -113,7 +112,9 @@ object FormatDateOptionsvaluePar {
       value: /* import warning: importer.ImportType#apply Failed type conversion: 'date' extends keyof @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats ? @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats['date'] : string */ js.Any
     ): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    inline def setFormatMatcher(value: (js.UndefOr[(`best fit`) | basic]) & (js.UndefOr[basic | (`best fit`)])): Self = StObject.set(x, "formatMatcher", value.asInstanceOf[js.Any])
+    inline def setFormatMatcher(value: (`best fit`) | basic): Self = StObject.set(x, "formatMatcher", value.asInstanceOf[js.Any])
+    
+    inline def setFormatMatcherUndefined: Self = StObject.set(x, "formatMatcher", js.undefined)
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     

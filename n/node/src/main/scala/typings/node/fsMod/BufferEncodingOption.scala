@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Rewritten from type alias, can be one of: 
   - typings.node.nodeStrings.buffer_
-  - typings.node.anon.Encoding
+  - typings.node.anon.`2`
 */
 trait BufferEncodingOption extends StObject

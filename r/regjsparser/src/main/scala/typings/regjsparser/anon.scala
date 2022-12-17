@@ -17,20 +17,23 @@ object anon {
   
   trait Behavior[F /* <: Features */] extends StObject {
     
-    var behavior: normal
+    var behavior: lookahead | lookbehind | negativeLookahead | negativeLookbehind
     
     var body: js.Array[RootNode[F]]
   }
   object Behavior {
     
-    inline def apply[F /* <: Features */](body: js.Array[RootNode[F]]): Behavior[F] = {
-      val __obj = js.Dynamic.literal(behavior = "normal", body = body.asInstanceOf[js.Any])
+    inline def apply[F /* <: Features */](
+      behavior: lookahead | lookbehind | negativeLookahead | negativeLookbehind,
+      body: js.Array[RootNode[F]]
+    ): Behavior[F] = {
+      val __obj = js.Dynamic.literal(behavior = behavior.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any])
       __obj.asInstanceOf[Behavior[F]]
     }
     
     extension [Self <: Behavior[?], F /* <: Features */](x: Self & Behavior[F]) {
       
-      inline def setBehavior(value: normal): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
+      inline def setBehavior(value: lookahead | lookbehind | negativeLookahead | negativeLookbehind): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
       
       inline def setBody(value: js.Array[RootNode[F]]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -40,20 +43,20 @@ object anon {
   
   trait BehaviorBody[F /* <: Features */] extends StObject {
     
-    var behavior: ignore
+    var behavior: normal
     
     var body: js.Array[RootNode[F]]
   }
   object BehaviorBody {
     
     inline def apply[F /* <: Features */](body: js.Array[RootNode[F]]): BehaviorBody[F] = {
-      val __obj = js.Dynamic.literal(behavior = "ignore", body = body.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(behavior = "normal", body = body.asInstanceOf[js.Any])
       __obj.asInstanceOf[BehaviorBody[F]]
     }
     
     extension [Self <: BehaviorBody[?], F /* <: Features */](x: Self & BehaviorBody[F]) {
       
-      inline def setBehavior(value: ignore): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
+      inline def setBehavior(value: normal): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
       
       inline def setBody(value: js.Array[RootNode[F]]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -63,23 +66,20 @@ object anon {
   
   trait Body[F /* <: Features */] extends StObject {
     
-    var behavior: lookahead | lookbehind | negativeLookahead | negativeLookbehind
+    var behavior: ignore
     
     var body: js.Array[RootNode[F]]
   }
   object Body {
     
-    inline def apply[F /* <: Features */](
-      behavior: lookahead | lookbehind | negativeLookahead | negativeLookbehind,
-      body: js.Array[RootNode[F]]
-    ): Body[F] = {
-      val __obj = js.Dynamic.literal(behavior = behavior.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any])
+    inline def apply[F /* <: Features */](body: js.Array[RootNode[F]]): Body[F] = {
+      val __obj = js.Dynamic.literal(behavior = "ignore", body = body.asInstanceOf[js.Any])
       __obj.asInstanceOf[Body[F]]
     }
     
     extension [Self <: Body[?], F /* <: Features */](x: Self & Body[F]) {
       
-      inline def setBehavior(value: lookahead | lookbehind | negativeLookahead | negativeLookbehind): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
+      inline def setBehavior(value: ignore): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
       
       inline def setBody(value: js.Array[RootNode[F]]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

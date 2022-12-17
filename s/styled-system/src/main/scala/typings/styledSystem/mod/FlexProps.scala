@@ -29,6 +29,6 @@ object FlexProps {
     
     inline def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
     
-    inline def setFlexVarargs(value: (TVal | Null)*): Self = StObject.set(x, "flex", js.Array(value :_*))
+    inline def setFlexVarargs(value: (TVal | Null)*): Self = StObject.set(x, "flex", js.Array(value*))
   }
 }

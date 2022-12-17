@@ -1,7 +1,7 @@
 package typings.victoryCore
 
 import typings.std.Omit
-import typings.victoryCore.anon.`0`
+import typings.victoryCore.anon.`1`
 import typings.victoryCore.libTypesPropTypesMod.Datum
 import typings.victoryCore.libTypesPropTypesMod.ID
 import typings.victoryCore.libVictoryThemeTypesMod.BlockProps
@@ -24,7 +24,7 @@ object libTypesCallbacksMod {
     
     var index: js.UndefOr[ID] = js.undefined
     
-    var scale: js.UndefOr[`0`] = js.undefined
+    var scale: js.UndefOr[`1`] = js.undefined
     
     var text: js.UndefOr[Any] = js.undefined
     
@@ -67,7 +67,7 @@ object libTypesCallbacksMod {
       
       inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      inline def setScale(value: `0`): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: `1`): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
       inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       

@@ -1,5 +1,6 @@
 package typings.codemirrorState
 
+import typings.codemirrorState.mod.Annotation
 import typings.codemirrorState.mod.ChangeSet
 import typings.codemirrorState.mod.ChangeSpec
 import typings.codemirrorState.mod.EditorSelection
@@ -165,6 +166,36 @@ object anon {
       inline def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
       inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    }
+  }
+  
+  /* Inlined std.Pick<@codemirror/state.@codemirror/state.TransactionSpec, 'effects' | 'annotations'> */
+  trait PickTransactionSpeceffect extends StObject {
+    
+    var annotations: js.UndefOr[Annotation[Any] | js.Array[Annotation[Any]]] = js.undefined
+    
+    var effects: js.UndefOr[StateEffect[Any] | js.Array[StateEffect[Any]]] = js.undefined
+  }
+  object PickTransactionSpeceffect {
+    
+    inline def apply(): PickTransactionSpeceffect = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PickTransactionSpeceffect]
+    }
+    
+    extension [Self <: PickTransactionSpeceffect](x: Self) {
+      
+      inline def setAnnotations(value: Annotation[Any] | js.Array[Annotation[Any]]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
+      
+      inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
+      
+      inline def setAnnotationsVarargs(value: Annotation[Any]*): Self = StObject.set(x, "annotations", js.Array(value*))
+      
+      inline def setEffects(value: StateEffect[Any] | js.Array[StateEffect[Any]]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
+      
+      inline def setEffectsUndefined: Self = StObject.set(x, "effects", js.undefined)
+      
+      inline def setEffectsVarargs(value: StateEffect[Any]*): Self = StObject.set(x, "effects", js.Array(value*))
     }
   }
 }

@@ -1,7 +1,7 @@
 package typings.reactNavigation.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.reactNavigation.anon.Path
+import typings.reactNavigation.anon.Params
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +28,7 @@ trait NavigationRouter[State, Options] extends StObject {
     NavigationScreenProp[NavigationRoute[NavigationParams], NavigationParams]
   ] = js.native
   
-  def getPathAndParamsForState(state: State): Path = js.native
+  def getPathAndParamsForState(state: State): Params = js.native
   
   /**
     * Gets the screen navigation options for a given screen.

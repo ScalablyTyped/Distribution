@@ -6,9 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Totaladvancedsecuritycommitters extends StObject {
   
-  var repositories: js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['advanced-security-active-committers-repository'] */ js.Any
-  ]
+  var repositories: js.Array[Advancedsecuritycommittersbreakdown]
   
   /** @example 25 */
   var total_advanced_security_committers: js.UndefOr[Double] = js.undefined
@@ -18,26 +16,16 @@ trait Totaladvancedsecuritycommitters extends StObject {
 }
 object Totaladvancedsecuritycommitters {
   
-  inline def apply(
-    repositories: js.Array[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['advanced-security-active-committers-repository'] */ js.Any
-    ]
-  ): Totaladvancedsecuritycommitters = {
+  inline def apply(repositories: js.Array[Advancedsecuritycommittersbreakdown]): Totaladvancedsecuritycommitters = {
     val __obj = js.Dynamic.literal(repositories = repositories.asInstanceOf[js.Any])
     __obj.asInstanceOf[Totaladvancedsecuritycommitters]
   }
   
   extension [Self <: Totaladvancedsecuritycommitters](x: Self) {
     
-    inline def setRepositories(
-      value: js.Array[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['advanced-security-active-committers-repository'] */ js.Any
-        ]
-    ): Self = StObject.set(x, "repositories", value.asInstanceOf[js.Any])
+    inline def setRepositories(value: js.Array[Advancedsecuritycommittersbreakdown]): Self = StObject.set(x, "repositories", value.asInstanceOf[js.Any])
     
-    inline def setRepositoriesVarargs(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['advanced-security-active-committers-repository'] */ js.Any)*
-    ): Self = StObject.set(x, "repositories", js.Array(value*))
+    inline def setRepositoriesVarargs(value: Advancedsecuritycommittersbreakdown*): Self = StObject.set(x, "repositories", js.Array(value*))
     
     inline def setTotal_advanced_security_committers(value: Double): Self = StObject.set(x, "total_advanced_security_committers", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,6 @@
 package typings.muiDatatables.mod
 
-import typings.muiDatatables.anon.DataIndex
+import typings.muiDatatables.anon.RowIndex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +21,7 @@ trait MUIDataTableBody extends StObject {
   
   var filterList: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
   
-  var onRowClick: js.UndefOr[js.Function2[/* rowData */ js.Array[String], /* rowMeta */ DataIndex, Unit]] = js.undefined
+  var onRowClick: js.UndefOr[js.Function2[/* rowData */ js.Array[String], /* rowMeta */ RowIndex, Unit]] = js.undefined
   
   var options: MUIDataTableOptions
   
@@ -84,7 +84,7 @@ object MUIDataTableBody {
     
     inline def setFilterListVarargs(value: js.Array[String]*): Self = StObject.set(x, "filterList", js.Array(value*))
     
-    inline def setOnRowClick(value: (/* rowData */ js.Array[String], /* rowMeta */ DataIndex) => Unit): Self = StObject.set(x, "onRowClick", js.Any.fromFunction2(value))
+    inline def setOnRowClick(value: (/* rowData */ js.Array[String], /* rowMeta */ RowIndex) => Unit): Self = StObject.set(x, "onRowClick", js.Any.fromFunction2(value))
     
     inline def setOnRowClickUndefined: Self = StObject.set(x, "onRowClick", js.undefined)
     

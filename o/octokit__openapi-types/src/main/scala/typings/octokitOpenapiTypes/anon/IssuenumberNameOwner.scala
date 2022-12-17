@@ -7,42 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IssuenumberNameOwner extends StObject {
   
   /** The number that identifies the issue. */
-  var issue_number: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['issue-number'] */ js.Any
+  var issue_number: Double
   
   var name: String
   
   /** The account owner of the repository. The name is not case sensitive. */
-  var owner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['owner'] */ js.Any
+  var owner: String
   
   /** The name of the repository. The name is not case sensitive. */
-  var repo: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo'] */ js.Any
+  var repo: String
 }
 object IssuenumberNameOwner {
   
-  inline def apply(
-    issue_number: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['issue-number'] */ js.Any,
-    name: String,
-    owner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['owner'] */ js.Any,
-    repo: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo'] */ js.Any
-  ): IssuenumberNameOwner = {
+  inline def apply(issue_number: Double, name: String, owner: String, repo: String): IssuenumberNameOwner = {
     val __obj = js.Dynamic.literal(issue_number = issue_number.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[IssuenumberNameOwner]
   }
   
   extension [Self <: IssuenumberNameOwner](x: Self) {
     
-    inline def setIssue_number(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['issue-number'] */ js.Any
-    ): Self = StObject.set(x, "issue_number", value.asInstanceOf[js.Any])
+    inline def setIssue_number(value: Double): Self = StObject.set(x, "issue_number", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setOwner(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['owner'] */ js.Any
-    ): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    inline def setRepo(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo'] */ js.Any
-    ): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

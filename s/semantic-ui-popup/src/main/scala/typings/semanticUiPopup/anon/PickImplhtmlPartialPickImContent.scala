@@ -12,7 +12,7 @@ trait PickImplhtmlPartialPickImContent
   
   var content: js.UndefOr[String] = js.undefined
   
-  var html: String & js.UndefOr[String]
+  var html: String
   
   var offset: js.UndefOr[String] = js.undefined
   
@@ -24,7 +24,7 @@ trait PickImplhtmlPartialPickImContent
 }
 object PickImplhtmlPartialPickImContent {
   
-  inline def apply(html: String & js.UndefOr[String]): PickImplhtmlPartialPickImContent = {
+  inline def apply(html: String): PickImplhtmlPartialPickImContent = {
     val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplhtmlPartialPickImContent]
   }
@@ -35,7 +35,7 @@ object PickImplhtmlPartialPickImContent {
     
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    inline def setHtml(value: String & js.UndefOr[String]): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
     inline def setOffset(value: String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

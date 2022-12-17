@@ -7,7 +7,7 @@ import typings.std.ReturnType
 import typings.webpack.mod.CallbackFunction
 import typings.webpack.mod.StatsOptions
 import typings.webpackDevMiddleware.anon.CreateReadStream
-import typings.webpackDevMiddleware.anon.FnCall
+import typings.webpackDevMiddleware.anon.FnCallName
 import typings.webpackDevMiddleware.anon.Key
 import typings.webpackDevMiddleware.anon.Webpack
 import typings.webpackDevMiddleware.webpackDevMiddlewareStrings.`errors-only`
@@ -305,7 +305,7 @@ object mod {
   
   type Invalidate = js.Function1[/* callback */ Callback, Any]
   
-  type Logger = ReturnType[FnCall]
+  type Logger = ReturnType[FnCallName]
   
   type Middleware[Request_1 /* <: typings.node.httpMod.IncomingMessage */, Response_1 /* <: ServerResponse */] = js.Function3[/* req */ Request_1, /* res */ Response_1, /* next */ NextFunction, js.Promise[Unit]]
   

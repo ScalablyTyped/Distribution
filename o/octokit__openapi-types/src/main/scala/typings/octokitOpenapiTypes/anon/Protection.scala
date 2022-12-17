@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Protection extends StObject {
   
-  var commit: Sha
+  var commit: ShaUrl
   
   var name: String
   
@@ -21,7 +21,7 @@ trait Protection extends StObject {
 }
 object Protection {
   
-  inline def apply(commit: Sha, name: String, `protected`: Boolean): Protection = {
+  inline def apply(commit: ShaUrl, name: String, `protected`: Boolean): Protection = {
     val __obj = js.Dynamic.literal(commit = commit.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("protected")(`protected`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Protection]
@@ -29,7 +29,7 @@ object Protection {
   
   extension [Self <: Protection](x: Self) {
     
-    inline def setCommit(value: Sha): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+    inline def setCommit(value: ShaUrl): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

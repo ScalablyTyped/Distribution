@@ -18,14 +18,12 @@ trait PickImplstandardPartialPi
   
   def standard(response: Any): String
   @JSName("standard")
-  var standard_Original: (js.Function1[/* response */ Any, String]) & (js.UndefOr[js.Function1[/* response */ Any, String]])
+  var standard_Original: js.Function1[/* response */ Any, String]
 }
 object PickImplstandardPartialPi {
   
-  inline def apply(
-    standard: (js.Function1[/* response */ Any, String]) & (js.UndefOr[js.Function1[/* response */ Any, String]])
-  ): PickImplstandardPartialPi = {
-    val __obj = js.Dynamic.literal(standard = standard.asInstanceOf[js.Any])
+  inline def apply(standard: /* response */ Any => String): PickImplstandardPartialPi = {
+    val __obj = js.Dynamic.literal(standard = js.Any.fromFunction1(standard))
     __obj.asInstanceOf[PickImplstandardPartialPi]
   }
   
@@ -43,8 +41,6 @@ object PickImplstandardPartialPi {
     
     inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    inline def setStandard(
-      value: (js.Function1[/* response */ Any, String]) & (js.UndefOr[js.Function1[/* response */ Any, String]])
-    ): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
+    inline def setStandard(value: /* response */ Any => String): Self = StObject.set(x, "standard", js.Any.fromFunction1(value))
   }
 }

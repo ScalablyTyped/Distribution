@@ -40,7 +40,7 @@ trait PickImplonCheckedPartialP
   
   def onChecked(): Unit
   @JSName("onChecked")
-  var onChecked_Original: (js.ThisFunction0[/* this */ HTMLInputElement, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]])
+  var onChecked_Original: js.ThisFunction0[/* this */ HTMLInputElement, Unit]
   
   var onDeterminate: js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]] = js.undefined
   
@@ -68,9 +68,7 @@ trait PickImplonCheckedPartialP
 }
 object PickImplonCheckedPartialP {
   
-  inline def apply(
-    onChecked: (js.ThisFunction0[/* this */ HTMLInputElement, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]])
-  ): PickImplonCheckedPartialP = {
+  inline def apply(onChecked: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): PickImplonCheckedPartialP = {
     val __obj = js.Dynamic.literal(onChecked = onChecked.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonCheckedPartialP]
   }
@@ -121,9 +119,7 @@ object PickImplonCheckedPartialP {
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    inline def setOnChecked(
-      value: (js.ThisFunction0[/* this */ HTMLInputElement, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]])
-    ): Self = StObject.set(x, "onChecked", value.asInstanceOf[js.Any])
+    inline def setOnChecked(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): Self = StObject.set(x, "onChecked", value.asInstanceOf[js.Any])
     
     inline def setOnDeterminate(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): Self = StObject.set(x, "onDeterminate", value.asInstanceOf[js.Any])
     

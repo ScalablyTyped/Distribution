@@ -127,7 +127,7 @@ trait PickImplonNoResultsPartia
   
   def onNoResults(searchValue: Any): Unit
   @JSName("onNoResults")
-  var onNoResults_Original: (js.ThisFunction1[/* this */ JQuery, /* searchValue */ Any, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* searchValue */ Any, Unit]])
+  var onNoResults_Original: js.ThisFunction1[/* this */ JQuery, /* searchValue */ Any, Unit]
   
   var onRemove: js.UndefOr[
     js.ThisFunction3[
@@ -171,9 +171,7 @@ trait PickImplonNoResultsPartia
 }
 object PickImplonNoResultsPartia {
   
-  inline def apply(
-    onNoResults: (js.ThisFunction1[/* this */ JQuery, /* searchValue */ Any, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* searchValue */ Any, Unit]])
-  ): PickImplonNoResultsPartia = {
+  inline def apply(onNoResults: js.ThisFunction1[/* this */ JQuery, /* searchValue */ Any, Unit]): PickImplonNoResultsPartia = {
     val __obj = js.Dynamic.literal(onNoResults = onNoResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonNoResultsPartia]
   }
@@ -340,9 +338,7 @@ object PickImplonNoResultsPartia {
     
     inline def setOnLabelSelectUndefined: Self = StObject.set(x, "onLabelSelect", js.undefined)
     
-    inline def setOnNoResults(
-      value: (js.ThisFunction1[/* this */ JQuery, /* searchValue */ Any, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* searchValue */ Any, Unit]])
-    ): Self = StObject.set(x, "onNoResults", value.asInstanceOf[js.Any])
+    inline def setOnNoResults(value: js.ThisFunction1[/* this */ JQuery, /* searchValue */ Any, Unit]): Self = StObject.set(x, "onNoResults", value.asInstanceOf[js.Any])
     
     inline def setOnRemove(
       value: js.ThisFunction3[

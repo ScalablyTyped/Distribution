@@ -14,7 +14,7 @@ object anon {
     
     var formatter: js.UndefOr[WordFormatter] = js.undefined
     
-    var join: js.UndefOr[String] & String
+    var join: js.UndefOr[String] = js.undefined
     
     var max: js.UndefOr[Double] = js.undefined
     
@@ -28,8 +28,8 @@ object anon {
   }
   object Optionsjoinstring {
     
-    inline def apply(join: js.UndefOr[String] & String): Optionsjoinstring = {
-      val __obj = js.Dynamic.literal(join = join.asInstanceOf[js.Any])
+    inline def apply(): Optionsjoinstring = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Optionsjoinstring]
     }
     
@@ -43,7 +43,9 @@ object anon {
       
       inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
       
-      inline def setJoin(value: js.UndefOr[String] & String): Self = StObject.set(x, "join", value.asInstanceOf[js.Any])
+      inline def setJoin(value: String): Self = StObject.set(x, "join", value.asInstanceOf[js.Any])
+      
+      inline def setJoinUndefined: Self = StObject.set(x, "join", js.undefined)
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       

@@ -149,26 +149,22 @@ object anon {
     
     var allowPrivate: js.UndefOr[Boolean] = js.undefined
     
-    var collection: js.UndefOr[String] & String
+    var collection: js.UndefOr[String] = js.undefined
     
     var debug: js.UndefOr[Boolean] = js.undefined
     
     var logger: js.UndefOr[Logger] = js.undefined
     
-    var options: js.UndefOr[js.Object] & js.Object
+    var options: js.UndefOr[js.Object] = js.undefined
     
     var parentContext: js.UndefOr[ReadonlyWorkflowExecution] = js.undefined
     
-    var schematic: js.UndefOr[String] & String
+    var schematic: js.UndefOr[String] = js.undefined
   }
   object PartialWorkflowExecutionC {
     
-    inline def apply(
-      collection: js.UndefOr[String] & String,
-      options: js.UndefOr[js.Object] & js.Object,
-      schematic: js.UndefOr[String] & String
-    ): PartialWorkflowExecutionC = {
-      val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], schematic = schematic.asInstanceOf[js.Any])
+    inline def apply(): PartialWorkflowExecutionC = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialWorkflowExecutionC]
     }
     
@@ -178,7 +174,9 @@ object anon {
       
       inline def setAllowPrivateUndefined: Self = StObject.set(x, "allowPrivate", js.undefined)
       
-      inline def setCollection(value: js.UndefOr[String] & String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+      inline def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+      
+      inline def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -188,13 +186,17 @@ object anon {
       
       inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      inline def setOptions(value: js.UndefOr[js.Object] & js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
       inline def setParentContext(value: ReadonlyWorkflowExecution): Self = StObject.set(x, "parentContext", value.asInstanceOf[js.Any])
       
       inline def setParentContextUndefined: Self = StObject.set(x, "parentContext", js.undefined)
       
-      inline def setSchematic(value: js.UndefOr[String] & String): Self = StObject.set(x, "schematic", value.asInstanceOf[js.Any])
+      inline def setSchematic(value: String): Self = StObject.set(x, "schematic", value.asInstanceOf[js.Any])
+      
+      inline def setSchematicUndefined: Self = StObject.set(x, "schematic", js.undefined)
     }
   }
   

@@ -1260,6 +1260,7 @@
 | [capture-console](./c/capture-console) | Simple and easy stdio capture for Node.js | stdio, stderr, stdout, logging, capture, console, intercept |
 | [car-names](./c/car-names) | Used to get random Car Names | car, names, random, all |
 | [carbon-components](./c/carbon-components) | The Carbon Design System is IBM’s open-source desi | carbon, component, components, css, html, ibm, javascript, js, library, pattern, patterns, sass, scss, style guide, eyeglass-module, carbon-design-system, react |
+| [carbon-components-react](./c/carbon-components-react) | The Carbon Design System is IBM’s open-source desi | react, carbon, carbon-components, ibm, carbon-design-system, components |
 | [carbon__colors](./c/carbon__colors) | Colors for digital and software products using the | eyeglass-module, ibm, elements, carbon, carbon-elements, carbon-design-system, components, react |
 | [carbon__elements](./c/carbon__elements) | A collection of design elements in code for the IB | ibm, elements, carbon, carbon-elements, carbon-design-system, components, react |
 | [carbon__feature-flags](./c/carbon__feature-flags) | Build with feature flags in Carbon | ibm, carbon, carbon-design-system, components, react |
@@ -7626,8 +7627,6 @@
 | [nexpect](./n/nexpect) | Spawns and interacts with child processes using sp | nexpect, spawn, child process, terminal |
 | [next-biz-date](./n/next-biz-date) | Returns the next business date for a given referen | next, business, day, days, counting, counter, finder, workdays, weekend days, holidays, date, business days counting, business days counter |
 | [next-nprogress](./n/next-nprogress) | Next.js HOC to integrate NProgress inside your app | nextjs, react, nprogress, progress bar, hoc, high order component |
-| [next-redux-saga](./n/next-redux-saga) | redux-saga HOC for Next.js | next, nextjs, Next.js, next-redux, next-redux-wrapper, react, react-redux, redux, redux-saga |
-| [next-seo](./n/next-seo) | SEO plugin for Next.js projects | next.js, seo, react, node, ssr |
 | [next-server](./n/next-server) | - | - |
 | [next-tick](./n/next-tick) | Environment agnostic nextTick polyfill | nexttick, setImmediate, setTimeout, async |
 | [next__env](./n/next__env) | Next.js dotenv file loading | react, next, next.js, dotenv |
@@ -8948,6 +8947,7 @@
 | [qbittorrent-api-v2](./q/qbittorrent-api-v2) | Wrapper around qBittorrent's Web API v2 to manage  | qbittorrent, bittorrent, torrent, client, interface, api |
 | [qhistory](./q/qhistory) | Wrap history with query support | history, query, search |
 | [qiniu](./q/qiniu) | Node wrapper for Qiniu Resource (Cloud) Storage AP | cloud, storage, s3, qiniu, web-service |
+| [qiniu-js](./q/qiniu-js) | Javascript SDK for Qiniu Resource (Cloud) Storage  | - |
 | [qixian_dot_cs__path-to-re](./q/qixian_dot_cs__path-to-regexp) | Express style path to RegExp utility | express, regexp, route, routing |
 | [qlik](./q/qlik) | - | - |
 | [qlik-engineapi](./q/qlik-engineapi) | - | - |
@@ -10008,6 +10008,10 @@
 | [realm_dot_io__common](./r/realm_dot_io__common) | Cross-product common code used by Realm | - |
 | [reapop](./r/reapop) | A simple & customizable notifications system for R | reapop, react, redux, mobx, notifications, notification, toast, toasts, component |
 | [reaptcha](./r/reaptcha) | Google reCAPTCHA for React | - |
+| [rebass](./r/rebass) | React primitive UI components built with Styled Sy | components, react, react-component, ui, design-system, styled-system, styled-components, emotion, theming, presentational, stateless, functional |
+| [rebass__forms](./r/rebass__forms) | Accessible and themeable form components for use w | - |
+| [rebass__grid](./r/rebass__grid) | Responsive React grid system built with styled-sys | react, styled-components, styled-system, grid, flexbox, layout, css |
+| [rebass__layout](./r/rebass__layout) | @rebass/layout | - |
 | [rebind-host](./r/rebind-host) | Express middleware to bind the correct host | - |
 | [recaptcha2](./r/recaptcha2) | Easy API for Google reCAPTCHA version 2 for Node.j | recaptcha, captcha, security, csrf, express |
 | [recase](./r/recase) | Deep rekey Objects and Arrays as either camel case | rekey, key, recase, deep, copy, camel, snake, case, camelcase, snakecase, underscore, underscored |
@@ -10132,6 +10136,7 @@
 | [ref-union](./r/ref-union) | Create ABI-compliant "union" instances on top of B | union, ref, abi, c, c++, ffi |
 | [ref-union-di](./r/ref-union-di) | Create ABI-compliant "union" instances on top of B | union, ref, abi, c, c++, ffi |
 | [reflect-metadata](./r/reflect-metadata) | Polyfill for Metadata Reflection API | decorator, metadata, javascript, reflect |
+| [reflexbox](./r/reflexbox) | Responsive React grid system built with Styled Sys | reflexbox, flexbox, grid-styled, rebass, rebass-grid, layout, emotion, css, style |
 | [reflux](./r/reflux) | A simple library for uni-directional dataflow appl | reflux, react, flux, architecture, dataflow, action, event, data |
 | [refractor](./r/refractor) | Lightweight, robust, elegant virtual syntax highli | syntax, code, ast, virtual, dom, highlight, highlighting, prism |
 | [refresh-fetch](./r/refresh-fetch) | Wrapper around fetch capable of graceful authentic | api, fetch, auth, token, refresh |
@@ -11235,6 +11240,7 @@
 | [styled-components-react-n](./s/styled-components-react-native) | @types/styled-components-react-native contains the | - |
 | [styled-jsx](./s/styled-jsx) | Full CSS support for JSX without compromises | babel-plugin-macros, vercel, zeit, css-in-js, css |
 | [styled-react-modal](./s/styled-react-modal) | A React modal built with styled-components. | react-modal, styled-components, modal, react |
+| [styled-system](./s/styled-system) | Responsive, theme-based style props for building d | react, css-in-js, styled-components, emotion |
 | [styled-system__core](./s/styled-system__core) | - | - |
 | [styled-system__css](./s/styled-system__css) | Styled System for the css prop | css, css-in-js, emotion, styled-components, style, react |
 | [styled-system__props](./s/styled-system__props) | Utilities for using Styled System props | - |
@@ -12762,7 +12768,6 @@
 | [yauzl-promise](./y/yauzl-promise) | yauzl unzipping with Promises | yauzl, unzip, zip, promise, async, await |
 | [yawn-yaml](./y/yawn-yaml) | YAML parser that preserves comments and styling | yaml |
 | [yayson](./y/yayson) | A library for serializing and reading JSON API sta | json-api, json, api, response, format, serialization, deserialization, yay, wow, omg |
-| [yazl](./y/yazl) | yet another zip library for node | zip, stream, archive, file |
 | [ydn-db](./y/ydn-db) | - | - |
 | [year-days](./y/year-days) | Get the number of days in a year | year, days, date, number, count |
 | [yeast](./y/yeast) | Tiny but linear growing unique id generator | yeast, id, generator, unique |

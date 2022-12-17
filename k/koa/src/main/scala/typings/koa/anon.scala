@@ -7,37 +7,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Body extends StObject {
-    
-    var body: Any
-  }
-  object Body {
-    
-    inline def apply(body: Any): Body = {
-      val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Body]
-    }
-    
-    extension [Self <: Body](x: Self) {
-      
-      inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait BodyResponseBodyT[ResponseBodyT] extends StObject {
+  trait Body[ResponseBodyT] extends StObject {
     
     var body: ResponseBodyT
   }
-  object BodyResponseBodyT {
+  object Body {
     
-    inline def apply[ResponseBodyT](body: ResponseBodyT): BodyResponseBodyT[ResponseBodyT] = {
+    inline def apply[ResponseBodyT](body: ResponseBodyT): Body[ResponseBodyT] = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
-      __obj.asInstanceOf[BodyResponseBodyT[ResponseBodyT]]
+      __obj.asInstanceOf[Body[ResponseBodyT]]
     }
     
-    extension [Self <: BodyResponseBodyT[?], ResponseBodyT](x: Self & BodyResponseBodyT[ResponseBodyT]) {
+    extension [Self <: Body[?], ResponseBodyT](x: Self & Body[ResponseBodyT]) {
       
       inline def setBody(value: ResponseBodyT): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait BodyUnknown extends StObject {
+    
+    var body: Any
+  }
+  object BodyUnknown {
+    
+    inline def apply(body: Any): BodyUnknown = {
+      val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
+      __obj.asInstanceOf[BodyUnknown]
+    }
+    
+    extension [Self <: BodyUnknown](x: Self) {
+      
+      inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     }
   }
   
@@ -111,13 +111,13 @@ object anon {
     
     var body: ResponseBodyT
     
-    var response: BodyResponseBodyT[ResponseBodyT]
+    var response: Body[ResponseBodyT]
     
     var state: StateT
   }
   object Response {
     
-    inline def apply[StateT, ResponseBodyT](body: ResponseBodyT, response: BodyResponseBodyT[ResponseBodyT], state: StateT): Response[StateT, ResponseBodyT] = {
+    inline def apply[StateT, ResponseBodyT](body: ResponseBodyT, response: Body[ResponseBodyT], state: StateT): Response[StateT, ResponseBodyT] = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[Response[StateT, ResponseBodyT]]
     }
@@ -126,7 +126,7 @@ object anon {
       
       inline def setBody(value: ResponseBodyT): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      inline def setResponse(value: BodyResponseBodyT[ResponseBodyT]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: Body[ResponseBodyT]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
       inline def setState(value: StateT): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }

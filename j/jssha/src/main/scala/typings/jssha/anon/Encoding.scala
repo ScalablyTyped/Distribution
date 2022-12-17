@@ -1,7 +1,7 @@
 package typings.jssha.anon
 
+import typings.jssha.jsshaStrings.TEXT
 import typings.jssha.mod.EncodingType
-import typings.jssha.mod.FixedLengthOptionsEncodingType
 import typings.jssha.mod.GenericInputType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,16 +9,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Encoding
   extends StObject
-     with FixedLengthOptionsEncodingType {
+     with GenericInputType {
   
   var encoding: js.UndefOr[EncodingType] = js.undefined
   
-  var hmacKey: js.UndefOr[GenericInputType] = js.undefined
+  var format: TEXT
+  
+  var value: String
 }
 object Encoding {
   
-  inline def apply(): Encoding = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(value: String): Encoding = {
+    val __obj = js.Dynamic.literal(format = "TEXT", value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Encoding]
   }
   
@@ -28,8 +30,8 @@ object Encoding {
     
     inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    inline def setHmacKey(value: GenericInputType): Self = StObject.set(x, "hmacKey", value.asInstanceOf[js.Any])
+    inline def setFormat(value: TEXT): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    inline def setHmacKeyUndefined: Self = StObject.set(x, "hmacKey", js.undefined)
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

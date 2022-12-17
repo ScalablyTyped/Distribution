@@ -34,7 +34,7 @@ object BackgroundColorProps {
     
     inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    inline def setBackgroundColorVarargs(value: (TVal | Null)*): Self = StObject.set(x, "backgroundColor", js.Array(value :_*))
+    inline def setBackgroundColorVarargs(value: (TVal | Null)*): Self = StObject.set(x, "backgroundColor", js.Array(value*))
     
     inline def setBg(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
     
@@ -42,6 +42,6 @@ object BackgroundColorProps {
     
     inline def setBgUndefined: Self = StObject.set(x, "bg", js.undefined)
     
-    inline def setBgVarargs(value: (TVal | Null)*): Self = StObject.set(x, "bg", js.Array(value :_*))
+    inline def setBgVarargs(value: (TVal | Null)*): Self = StObject.set(x, "bg", js.Array(value*))
   }
 }

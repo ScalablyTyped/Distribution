@@ -13,7 +13,7 @@ trait Nodes extends StObject {
   
   var nodes: ReturnType[js.Function0[js.Array[default]]]
   
-  var position: ReturnType[js.Function0[Path]]
+  var position: ReturnType[js.Function0[Root]]
   
   var shouldReceiveAttributes: Boolean
   
@@ -24,7 +24,7 @@ object Nodes {
   inline def apply(
     howMany: Double,
     nodes: ReturnType[js.Function0[js.Array[default]]],
-    position: ReturnType[js.Function0[Path]],
+    position: ReturnType[js.Function0[Root]],
     shouldReceiveAttributes: Boolean
   ): Nodes = {
     val __obj = js.Dynamic.literal(howMany = howMany.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], shouldReceiveAttributes = shouldReceiveAttributes.asInstanceOf[js.Any])
@@ -38,7 +38,7 @@ object Nodes {
     
     inline def setNodes(value: ReturnType[js.Function0[js.Array[default]]]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    inline def setPosition(value: ReturnType[js.Function0[Path]]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: ReturnType[js.Function0[Root]]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     inline def setShouldReceiveAttributes(value: Boolean): Self = StObject.set(x, "shouldReceiveAttributes", value.asInstanceOf[js.Any])
     

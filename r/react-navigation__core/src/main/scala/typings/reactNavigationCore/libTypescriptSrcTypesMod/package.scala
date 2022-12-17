@@ -4,7 +4,6 @@ import typings.react.mod.ComponentType
 import typings.reactNavigationCore.anon.CanPreventDefault
 import typings.reactNavigationCore.anon.GetId
 import typings.reactNavigationCore.anon.Initial
-import typings.reactNavigationCore.anon.NavigationRoute
 import typings.reactNavigationCore.anon.Target
 import typings.reactNavigationCore.reactNavigationCoreStrings._empty
 import typings.reactNavigationCore.reactNavigationCoreStrings.addListener
@@ -75,7 +74,7 @@ type RouteProp[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamL
 Extract[RouteName, String], 
 /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ js.Any]
 
-type ScreenComponentType[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] = ComponentType[(NavigationRoute[ParamList, RouteName]) | js.Object]
+type ScreenComponentType[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] = ComponentType[js.Object | (typings.reactNavigationCore.anon.Route[ParamList, RouteName])]
 
 type ScreenListeners[State /* <: NavigationState[ParamListBase] */, EventMap /* <: EventMapBase */] = Partial[
 /* import warning: importer.ImportType#apply Failed type conversion: {[ EventName in keyof EventMap & @react-navigation/core.@react-navigation/core/lib/typescript/src/types.EventMapCore<State> ]: @react-navigation/core.@react-navigation/core/lib/typescript/src/types.EventListenerCallback<EventMap, EventName>} */ js.Any]

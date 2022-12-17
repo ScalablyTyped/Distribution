@@ -13,7 +13,7 @@ trait ConfigEvents extends StObject {
   var active: js.UndefOr[Boolean] = js.undefined
   
   /** @description Key/value pairs to provide settings for this webhook. [These are defined below](https://docs.github.com/rest/reference/orgs#update-hook-config-params). */
-  var config: js.UndefOr[ContenttypeInsecuressl] = js.undefined
+  var config: js.UndefOr[SecretUrl] = js.undefined
   
   /**
     * @description Determines what [events](https://docs.github.com/webhooks/event-payloads) the hook is triggered for.
@@ -39,7 +39,7 @@ object ConfigEvents {
     
     inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    inline def setConfig(value: ContenttypeInsecuressl): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: SecretUrl): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     

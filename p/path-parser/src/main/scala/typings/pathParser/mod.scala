@@ -8,24 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("path-parser", JSImport.Default)
-  @js.native
-  open class default[T /* <: Record[String, Any] */] protected ()
-    extends typings.pathParser.distPathMod.default[T] {
-    def this(path: String) = this()
-    def this(path: String, options: PathOptions) = this()
-  }
-  /* static members */
-  object default {
-    
-    @JSImport("path-parser", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    inline def createPath[T /* <: Record[String, Any] */](path: String): typings.pathParser.distPathMod.Path[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(path.asInstanceOf[js.Any]).asInstanceOf[typings.pathParser.distPathMod.Path[T]]
-    inline def createPath[T /* <: Record[String, Any] */](path: String, options: PathOptions): typings.pathParser.distPathMod.Path[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pathParser.distPathMod.Path[T]]
-  }
-  
   @JSImport("path-parser", "Path")
   @js.native
   open class Path[T /* <: Record[String, Any] */] protected ()

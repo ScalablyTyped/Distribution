@@ -3,10 +3,10 @@ package typings.checCommerceJs
 import org.scalablytyped.runtime.StringDictionary
 import typings.checCommerceJs.anon.Code
 import typings.checCommerceJs.anon.Country
+import typings.checCommerceJs.anon.CountryRegion
 import typings.checCommerceJs.anon.Customersetprice
 import typings.checCommerceJs.anon.Digits
 import typings.checCommerceJs.anon.Ipaddress
-import typings.checCommerceJs.anon.Postalzipcode
 import typings.checCommerceJs.anon.Region
 import typings.checCommerceJs.checCommerceJsBooleans.`true`
 import typings.checCommerceJs.mod.^
@@ -37,7 +37,7 @@ object featuresCheckoutMod {
     
     def checkQuantity(token: String, lineItemId: String, data: js.Object): js.Promise[CheckQuantityResponse] = js.native
     
-    def checkShippingOption(token: String, data: Country): js.Promise[CheckShippingOptionResponse] = js.native
+    def checkShippingOption(token: String, data: Region): js.Promise[CheckShippingOptionResponse] = js.native
     
     def checkVariant(token: String, lineItemId: String, data: js.Object): js.Promise[CheckVariantResponse] = js.native
     
@@ -52,7 +52,7 @@ object featuresCheckoutMod {
     def getLocationFromIP(token: String): js.Promise[GetLocationFromIPResponse] = js.native
     def getLocationFromIP(token: String, ipAddress: String): js.Promise[GetLocationFromIPResponse] = js.native
     
-    def getShippingOptions(token: String, data: Region): js.Promise[js.Array[GetShippingOptionsResponse]] = js.native
+    def getShippingOptions(token: String, data: CountryRegion): js.Promise[js.Array[GetShippingOptionsResponse]] = js.native
     
     def getToken(token: String): js.Promise[CheckoutToken] = js.native
     
@@ -417,13 +417,13 @@ object featuresCheckoutMod {
     
     var live: Live
     
-    var tax_region: Postalzipcode
+    var tax_region: Country
     
     var valid: `true`
   }
   object SetTaxZoneResponse {
     
-    inline def apply(live: Live, tax_region: Postalzipcode): SetTaxZoneResponse = {
+    inline def apply(live: Live, tax_region: Country): SetTaxZoneResponse = {
       val __obj = js.Dynamic.literal(live = live.asInstanceOf[js.Any], tax_region = tax_region.asInstanceOf[js.Any], valid = true)
       __obj.asInstanceOf[SetTaxZoneResponse]
     }
@@ -432,7 +432,7 @@ object featuresCheckoutMod {
       
       inline def setLive(value: Live): Self = StObject.set(x, "live", value.asInstanceOf[js.Any])
       
-      inline def setTax_region(value: Postalzipcode): Self = StObject.set(x, "tax_region", value.asInstanceOf[js.Any])
+      inline def setTax_region(value: Country): Self = StObject.set(x, "tax_region", value.asInstanceOf[js.Any])
       
       inline def setValid(value: `true`): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
     }

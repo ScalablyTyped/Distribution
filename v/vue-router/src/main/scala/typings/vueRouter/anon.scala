@@ -35,7 +35,7 @@ object anon {
     
     var default: js.UndefOr[
         js.Function1[
-          /* param0 */ UnwrapRef[ReturnType[js.Function1[/* props */ UseLinkOptions, IsActive]]], 
+          /* param0 */ Component, 
           js.Array[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
         ]
       ] = js.undefined
@@ -50,7 +50,7 @@ object anon {
     extension [Self <: `0`](x: Self) {
       
       inline def setDefault(
-        value: /* param0 */ UnwrapRef[ReturnType[js.Function1[/* props */ UseLinkOptions, IsActive]]] => js.Array[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
+        value: /* param0 */ Component => js.Array[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
       ): Self = StObject.set(x, "default", js.Any.fromFunction1(value))
       
       inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
@@ -85,7 +85,7 @@ object anon {
     
     var default: js.UndefOr[
         js.Function1[
-          /* param0 */ Component, 
+          /* param0 */ UnwrapRef[ReturnType[js.Function1[/* props */ UseLinkOptions, IsActive]]], 
           js.Array[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
         ]
       ] = js.undefined
@@ -100,7 +100,7 @@ object anon {
     extension [Self <: Default](x: Self) {
       
       inline def setDefault(
-        value: /* param0 */ Component => js.Array[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
+        value: /* param0 */ UnwrapRef[ReturnType[js.Function1[/* props */ UseLinkOptions, IsActive]]] => js.Array[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
       ): Self = StObject.set(x, "default", js.Any.fromFunction1(value))
       
       inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
@@ -157,7 +157,7 @@ object anon {
   trait Props extends StObject {
     
     @JSName("$props")
-    var $props: AllowedComponentProps & ComponentCustomProps & VNodeProps & RouterViewProps
+    var $props: AllowedComponentProps & ComponentCustomProps & VNodeProps & RouterLinkProps
     
     @JSName("$slots")
     var $slots: Default
@@ -165,7 +165,7 @@ object anon {
   object Props {
     
     inline def apply(
-      $props: AllowedComponentProps & ComponentCustomProps & VNodeProps & RouterViewProps,
+      $props: AllowedComponentProps & ComponentCustomProps & VNodeProps & RouterLinkProps,
       $slots: Default
     ): Props = {
       val __obj = js.Dynamic.literal($props = $props.asInstanceOf[js.Any], $slots = $slots.asInstanceOf[js.Any])
@@ -174,7 +174,7 @@ object anon {
     
     extension [Self <: Props](x: Self) {
       
-      inline def set$props(value: AllowedComponentProps & ComponentCustomProps & VNodeProps & RouterViewProps): Self = StObject.set(x, "$props", value.asInstanceOf[js.Any])
+      inline def set$props(value: AllowedComponentProps & ComponentCustomProps & VNodeProps & RouterLinkProps): Self = StObject.set(x, "$props", value.asInstanceOf[js.Any])
       
       inline def set$slots(value: Default): Self = StObject.set(x, "$slots", value.asInstanceOf[js.Any])
     }
@@ -645,21 +645,21 @@ object anon {
   trait Slots extends StObject {
     
     @JSName("$props")
-    var $props: AllowedComponentProps & ComponentCustomProps & VNodeProps & RouterLinkProps
+    var $props: AllowedComponentProps & ComponentCustomProps & VNodeProps & RouterViewProps
     
     @JSName("$slots")
     var $slots: `0`
   }
   object Slots {
     
-    inline def apply($props: AllowedComponentProps & ComponentCustomProps & VNodeProps & RouterLinkProps, $slots: `0`): Slots = {
+    inline def apply($props: AllowedComponentProps & ComponentCustomProps & VNodeProps & RouterViewProps, $slots: `0`): Slots = {
       val __obj = js.Dynamic.literal($props = $props.asInstanceOf[js.Any], $slots = $slots.asInstanceOf[js.Any])
       __obj.asInstanceOf[Slots]
     }
     
     extension [Self <: Slots](x: Self) {
       
-      inline def set$props(value: AllowedComponentProps & ComponentCustomProps & VNodeProps & RouterLinkProps): Self = StObject.set(x, "$props", value.asInstanceOf[js.Any])
+      inline def set$props(value: AllowedComponentProps & ComponentCustomProps & VNodeProps & RouterViewProps): Self = StObject.set(x, "$props", value.asInstanceOf[js.Any])
       
       inline def set$slots(value: `0`): Self = StObject.set(x, "$slots", value.asInstanceOf[js.Any])
     }

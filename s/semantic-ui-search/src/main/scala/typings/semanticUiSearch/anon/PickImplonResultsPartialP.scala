@@ -57,7 +57,7 @@ trait PickImplonResultsPartialP
   var onResultsOpen: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
   @JSName("onResults")
-  var onResults_Original: (js.ThisFunction1[/* this */ JQuery, /* response */ Any, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* response */ Any, Unit]])
+  var onResults_Original: js.ThisFunction1[/* this */ JQuery, /* response */ Any, Unit]
   
   var onSearchQuery: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* query */ String, Unit]] = js.undefined
   
@@ -95,9 +95,7 @@ trait PickImplonResultsPartialP
 }
 object PickImplonResultsPartialP {
   
-  inline def apply(
-    onResults: (js.ThisFunction1[/* this */ JQuery, /* response */ Any, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* response */ Any, Unit]])
-  ): PickImplonResultsPartialP = {
+  inline def apply(onResults: js.ThisFunction1[/* this */ JQuery, /* response */ Any, Unit]): PickImplonResultsPartialP = {
     val __obj = js.Dynamic.literal(onResults = onResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonResultsPartialP]
   }
@@ -160,9 +158,7 @@ object PickImplonResultsPartialP {
     
     inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
-    inline def setOnResults(
-      value: (js.ThisFunction1[/* this */ JQuery, /* response */ Any, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* response */ Any, Unit]])
-    ): Self = StObject.set(x, "onResults", value.asInstanceOf[js.Any])
+    inline def setOnResults(value: js.ThisFunction1[/* this */ JQuery, /* response */ Any, Unit]): Self = StObject.set(x, "onResults", value.asInstanceOf[js.Any])
     
     inline def setOnResultsAdd(value: js.ThisFunction1[/* this */ JQuery, /* html */ String, `false` | Unit]): Self = StObject.set(x, "onResultsAdd", value.asInstanceOf[js.Any])
     

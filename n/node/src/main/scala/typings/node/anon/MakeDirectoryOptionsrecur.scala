@@ -1,7 +1,6 @@
 package typings.node.anon
 
 import typings.node.fsMod.Mode
-import typings.node.nodeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,12 +19,12 @@ trait MakeDirectoryOptionsrecur extends StObject {
     * If a folder was created, the path to the first created folder will be returned.
     * @default false
     */
-  var recursive: js.UndefOr[Boolean] & `true`
+  var recursive: js.UndefOr[Boolean] = js.undefined
 }
 object MakeDirectoryOptionsrecur {
   
-  inline def apply(recursive: js.UndefOr[Boolean] & `true`): MakeDirectoryOptionsrecur = {
-    val __obj = js.Dynamic.literal(recursive = recursive.asInstanceOf[js.Any])
+  inline def apply(): MakeDirectoryOptionsrecur = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MakeDirectoryOptionsrecur]
   }
   
@@ -35,6 +34,8 @@ object MakeDirectoryOptionsrecur {
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    inline def setRecursive(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+    inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+    
+    inline def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
   }
 }

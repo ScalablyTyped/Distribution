@@ -9,12 +9,12 @@ trait `0` extends StObject {
   
   var children: js.UndefOr[js.Function1[/* val */ String, ReactElement | Null]] = js.undefined
   
-  var value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.anon.FnCallValueOpts>[0] */ js.Any
+  var value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.anon.Fn0>[0] */ js.Any
 }
 object `0` {
   
   inline def apply(
-    value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.anon.FnCallValueOpts>[0] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.anon.Fn0>[0] */ js.Any
   ): `0` = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[`0`]
@@ -27,7 +27,7 @@ object `0` {
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setValue(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.anon.FnCallValueOpts>[0] */ js.Any
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.anon.Fn0>[0] */ js.Any
     ): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

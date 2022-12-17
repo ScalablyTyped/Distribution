@@ -2,7 +2,7 @@ package typings.hellosignSdk.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.hellosignSdk.anon.OmitSignatureRequestReque
-import typings.hellosignSdk.anon.Pagesize
+import typings.hellosignSdk.anon.Page
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,7 +30,7 @@ trait SignatureRequestModule extends StObject {
   def get(signatureRequestId: String): js.Promise[SignatureRequestResponse] = js.native
   
   def list(): js.Promise[SignatureListRequestResponse] = js.native
-  def list(params: Pagesize): js.Promise[SignatureListRequestResponse] = js.native
+  def list(params: Page): js.Promise[SignatureListRequestResponse] = js.native
   
   def releaseHold(requestId: String): js.Promise[BaseResponse] = js.native
   

@@ -30,6 +30,6 @@ object FontWeightProps {
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
-    inline def setFontWeightVarargs(value: (TVal | Null)*): Self = StObject.set(x, "fontWeight", js.Array(value :_*))
+    inline def setFontWeightVarargs(value: (TVal | Null)*): Self = StObject.set(x, "fontWeight", js.Array(value*))
   }
 }

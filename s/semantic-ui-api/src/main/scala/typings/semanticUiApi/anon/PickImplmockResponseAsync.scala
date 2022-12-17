@@ -75,17 +75,11 @@ trait PickImplmockResponseAsync
   
   var mockResponse: js.UndefOr[Any | `false`] = js.undefined
   
-  var mockResponseAsync: ((js.Function2[
+  var mockResponseAsync: (js.Function2[
     /* settings */ ApiSettings, 
     /* callback */ js.Function1[/* response */ Any, Unit], 
     Unit
-  ]) | `false`) & (js.UndefOr[
-    (js.Function2[
-      /* settings */ ApiSettings, 
-      /* callback */ js.Function1[/* response */ Any, Unit], 
-      Unit
-    ]) | `false`
-  ])
+  ]) | `false`
   
   var name: js.UndefOr[String] = js.undefined
   
@@ -152,17 +146,11 @@ trait PickImplmockResponseAsync
 object PickImplmockResponseAsync {
   
   inline def apply(
-    mockResponseAsync: ((js.Function2[
+    mockResponseAsync: (js.Function2[
       /* settings */ ApiSettings, 
       /* callback */ js.Function1[/* response */ Any, Unit], 
       Unit
-    ]) | `false`) & (js.UndefOr[
-      (js.Function2[
-        /* settings */ ApiSettings, 
-        /* callback */ js.Function1[/* response */ Any, Unit], 
-        Unit
-      ]) | `false`
-    ])
+    ]) | `false`
   ): PickImplmockResponseAsync = {
     val __obj = js.Dynamic.literal(mockResponseAsync = mockResponseAsync.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmockResponseAsync]
@@ -245,18 +233,14 @@ object PickImplmockResponseAsync {
     inline def setMockResponse(value: Any | `false`): Self = StObject.set(x, "mockResponse", value.asInstanceOf[js.Any])
     
     inline def setMockResponseAsync(
-      value: ((js.Function2[
+      value: (js.Function2[
           /* settings */ ApiSettings, 
           /* callback */ js.Function1[/* response */ Any, Unit], 
           Unit
-        ]) | `false`) & (js.UndefOr[
-          (js.Function2[
-            /* settings */ ApiSettings, 
-            /* callback */ js.Function1[/* response */ Any, Unit], 
-            Unit
-          ]) | `false`
-        ])
+        ]) | `false`
     ): Self = StObject.set(x, "mockResponseAsync", value.asInstanceOf[js.Any])
+    
+    inline def setMockResponseAsyncFunction2(value: (/* settings */ ApiSettings, /* callback */ js.Function1[/* response */ Any, Unit]) => Unit): Self = StObject.set(x, "mockResponseAsync", js.Any.fromFunction2(value))
     
     inline def setMockResponseUndefined: Self = StObject.set(x, "mockResponse", js.undefined)
     

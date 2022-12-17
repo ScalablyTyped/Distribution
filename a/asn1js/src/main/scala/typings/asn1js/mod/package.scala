@@ -42,7 +42,7 @@ inline def verifySchema(inputBuffer: BufferSource, inputSchema: AsnSchemaType): 
   - typings.asn1js.mod.Choice
   - typings.asn1js.mod.Repeated
 */
-type AsnSchemaType = _AsnSchemaType | (BaseBlock[ValueBlock, ValueBlockJson]) | EndOfContent | Enumerated | Utf8String | TIME | Sequence | Set | NumericString | PrintableString | TeletexString | VideotexString | IA5String | GraphicString | VisibleString | GeneralString | UniversalString | CharacterString | BmpString | DATE | TimeOfDay | DateTime | Duration | Primitive
+type AsnSchemaType = _AsnSchemaType | (BaseBlock[ValueBlock, ValueBlockJson])
 
 /* Rewritten from type alias, can be one of: 
   - typings.asn1js.mod.BaseBlock[typings.asn1js.mod.ValueBlock, typings.asn1js.mod.ValueBlockJson]
@@ -79,21 +79,17 @@ type AsnSchemaType = _AsnSchemaType | (BaseBlock[ValueBlock, ValueBlockJson]) | 
   - typings.asn1js.mod.Constructed
   - typings.asn1js.mod.Primitive
 */
-type AsnType = _AsnType | (BaseBlock[ValueBlock, ValueBlockJson]) | EndOfContent | Enumerated | Utf8String | TIME | Sequence | Set | NumericString | PrintableString | TeletexString | VideotexString | IA5String | GraphicString | VisibleString | GeneralString | UniversalString | CharacterString | BmpString | DATE | TimeOfDay | DateTime | Duration | Primitive
+type AsnType = _AsnType | (BaseBlock[ValueBlock, ValueBlockJson])
 
 type BaseStringBlockJson = LocalStringValueBlockJson
 
 type BitStringJson = BaseBlockJson[LocalBitStringValueBlockJson]
-
-type BmpString = LocalBmpStringValueBlock
 
 type BmpStringJson = LocalBmpStringValueBlockJson
 
 type BmpStringParams = LocalBmpStringValueBlockParams
 
 type BooleanJson = BaseBlockJson[LocalBooleanValueBlockJson]
-
-type CharacterString = LocalSimpleStringBlock
 
 type CharacterStringJson = LocalSimpleStringBlockJson
 
@@ -103,29 +99,17 @@ type ConstructedItem = (BaseBlock[ValueBlock, ValueBlockJson]) | Any
 
 type ConstructedJson = BaseBlockJson[LocalConstructedValueBlockJson]
 
-type DATE = Utf8String
-
 type DATEParams = Utf8StringParams
-
-type DateTime = Utf8String
 
 type DateTimeParams = Utf8StringParams
 
-type Duration = Utf8String
-
 type DurationParams = Utf8StringParams
-
-type EndOfContent = BaseBlock[LocalEndOfContentValueBlock, ValueBlockJson]
 
 type EndOfContentJson = BaseBlockJson[LocalBaseBlockJson]
 
 type EndOfContentParams = BaseBlockParams
 
-type Enumerated = Integer
-
 type EnumeratedParams = IntegerParams
-
-type GeneralString = LocalSimpleStringBlock
 
 type GeneralStringJson = LocalSimpleStringBlockJson
 
@@ -133,13 +117,9 @@ type GeneralStringParams = LocalSimpleStringBlockParams
 
 type GeneralizedTimeParams = UTCTimeParams
 
-type GraphicString = LocalSimpleStringBlock
-
 type GraphicStringJson = LocalSimpleStringBlockJson
 
 type GraphicStringParams = LocalSimpleStringBlockParams
-
-type IA5String = LocalSimpleStringBlock
 
 type IA5StringJson = LocalSimpleStringBlockJson
 
@@ -173,53 +153,33 @@ type NullJson = BaseBlockJson[ValueBlockJson]
 
 type NullParams = BaseBlockParams
 
-type NumericString = LocalSimpleStringBlock
-
 type NumericStringJson = LocalSimpleStringBlockJson
 
 type NumericStringParams = LocalSimpleStringBlockParams
 
 type OctetStringJson = BaseBlockJson[LocalOctetStringValueBlockJson]
 
-type Primitive = BaseBlock[LocalPrimitiveValueBlock, LocalPrimitiveValueBlockJson]
-
 type PrimitiveJson = BaseBlockJson[LocalPrimitiveValueBlockJson]
-
-type PrintableString = LocalSimpleStringBlock
 
 type PrintableStringJson = LocalSimpleStringBlockJson
 
 type PrintableStringParams = LocalSimpleStringBlockParams
 
-type Sequence = Constructed
-
 type SequenceParams = ConstructedParams
-
-type Set = Constructed
 
 type SetParams = ConstructedParams
 
-type TIME = Utf8String
-
 type TIMEParams = Utf8StringParams
-
-type TeletexString = LocalSimpleStringBlock
 
 type TeletexStringJson = LocalSimpleStringBlockJson
 
 type TeletexStringParams = LocalSimpleStringBlockParams
 
-type TimeOfDay = Utf8String
-
 type TimeOfDayParams = Utf8StringParams
-
-type UniversalString = LocalUniversalStringValueBlock
 
 type UniversalStringJson = LocalUniversalStringValueBlockJson
 
 type UniversalStringParams = LocalUniversalStringValueBlockParams
-
-type Utf8String = LocalUtf8StringValueBlock
 
 type Utf8StringJson = BaseBlockJson[LocalUtf8StringValueBlockJson]
 
@@ -227,13 +187,9 @@ type ValueBlockJson = LocalBaseBlockJson
 
 type ValueBlockParams = LocalBaseBlockParams
 
-type VideotexString = LocalSimpleStringBlock
-
 type VideotexStringJson = LocalSimpleStringBlockJson
 
 type VideotexStringParams = LocalSimpleStringBlockParams
-
-type VisibleString = LocalSimpleStringBlock
 
 type VisibleStringJson = LocalSimpleStringBlockJson
 

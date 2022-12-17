@@ -1,8 +1,8 @@
 package typings.orbitUiReactComponents
 
 import typings.orbitUiReactComponents.anon.OnClick
-import typings.orbitUiReactComponents.anon.OnKeyUp
-import typings.orbitUiReactComponents.anon.OnMouseEnter
+import typings.orbitUiReactComponents.anon.OnFocus
+import typings.orbitUiReactComponents.anon.OnKeyDown
 import typings.react.mod.SyntheticEvent
 import typings.std.Element
 import typings.std.Event
@@ -16,8 +16,8 @@ object distOverlaySrcUseOverlayTriggerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useOverlayTrigger(isOpen: Boolean): OnClick | OnKeyUp | OnMouseEnter = ^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayTrigger")(isOpen.asInstanceOf[js.Any]).asInstanceOf[OnClick | OnKeyUp | OnMouseEnter]
-  inline def useOverlayTrigger(isOpen: Boolean, param1: UseOverlayTriggerOptions): OnClick | OnKeyUp | OnMouseEnter = (^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayTrigger")(isOpen.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[OnClick | OnKeyUp | OnMouseEnter]
+  inline def useOverlayTrigger(isOpen: Boolean): OnClick | OnFocus | OnKeyDown = ^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayTrigger")(isOpen.asInstanceOf[js.Any]).asInstanceOf[OnClick | OnFocus | OnKeyDown]
+  inline def useOverlayTrigger(isOpen: Boolean, param1: UseOverlayTriggerOptions): OnClick | OnFocus | OnKeyDown = (^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayTrigger")(isOpen.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[OnClick | OnFocus | OnKeyDown]
   
   /* Rewritten from type alias, can be one of: 
     - typings.orbitUiReactComponents.orbitUiReactComponentsStrings.none

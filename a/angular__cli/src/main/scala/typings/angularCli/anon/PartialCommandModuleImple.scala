@@ -31,7 +31,7 @@ trait PartialCommandModuleImple extends StObject {
   ] = js.native
   def builder(argv: Argv[js.Object]): js.Promise[Argv[js.Object]] | Argv[js.Object] = js.native
   
-  var command: (js.UndefOr[js.Array[String] | String]) & String = js.native
+  var command: js.UndefOr[js.Array[String] | String] = js.native
   
   /* protected */ def commandName: String = js.native
   
@@ -39,7 +39,7 @@ trait PartialCommandModuleImple extends StObject {
   
   var deprecated: js.UndefOr[Boolean | String] = js.native
   
-  var describe: (js.UndefOr[String | `false`]) & (String | `false`) = js.native
+  var describe: js.UndefOr[String | `false`] = js.native
   
   /**
     * Description object which contains the long command descroption.
@@ -67,28 +67,6 @@ trait PartialCommandModuleImple extends StObject {
     */
   /* private */ var periodicAnalyticsFlush: Any = js.native
   
-  def reportAnalytics(options: js.Object & OtherOptions): js.Promise[Unit] = js.native
-  def reportAnalytics(options: js.Object & OtherOptions, paths: js.Array[String]): js.Promise[Unit] = js.native
-  def reportAnalytics(
-    options: js.Object & OtherOptions,
-    paths: js.Array[String],
-    dimensions: js.Array[Boolean | Double | String]
-  ): js.Promise[Unit] = js.native
-  def reportAnalytics(
-    options: js.Object & OtherOptions,
-    paths: js.Array[String],
-    dimensions: js.Array[Boolean | Double | String],
-    title: String
-  ): js.Promise[Unit] = js.native
-  def reportAnalytics(options: js.Object & OtherOptions, paths: js.Array[String], dimensions: Unit, title: String): js.Promise[Unit] = js.native
-  def reportAnalytics(options: js.Object & OtherOptions, paths: Unit, dimensions: js.Array[Boolean | Double | String]): js.Promise[Unit] = js.native
-  def reportAnalytics(
-    options: js.Object & OtherOptions,
-    paths: Unit,
-    dimensions: js.Array[Boolean | Double | String],
-    title: String
-  ): js.Promise[Unit] = js.native
-  def reportAnalytics(options: js.Object & OtherOptions, paths: Unit, dimensions: Unit, title: String): js.Promise[Unit] = js.native
   def reportAnalytics(options: OtherOptions): js.Promise[Unit] = js.native
   def reportAnalytics(options: OtherOptions, paths: js.Array[String]): js.Promise[Unit] = js.native
   def reportAnalytics(options: OtherOptions, paths: js.Array[String], dimensions: js.Array[Boolean | Double | String]): js.Promise[Unit] = js.native
@@ -104,14 +82,11 @@ trait PartialCommandModuleImple extends StObject {
   def reportAnalytics(options: OtherOptions, paths: Unit, dimensions: Unit, title: String): js.Promise[Unit] = js.native
   
   var run: js.UndefOr[
-    js.Function1[
-      /* options */ js.Object & OtherOptions, 
-      (js.Promise[Double | Unit]) | Double | Unit
-    ]
+    js.Function1[/* options */ OtherOptions, (js.Promise[Double | Unit]) | Double | Unit]
   ] = js.native
-  def run(options: js.Object & OtherOptions): (js.Promise[Double | Unit]) | Double | Unit = js.native
+  def run(options: OtherOptions): (js.Promise[Double | Unit]) | Double | Unit = js.native
   
-  var scope: js.UndefOr[CommandScope] & CommandScope = js.native
+  var scope: js.UndefOr[CommandScope] = js.native
   
   /* protected */ val shouldReportAnalytics: Boolean = js.native
 }

@@ -1,8 +1,8 @@
 package typings.victoryCore
 
 import typings.react.mod.ReactElement
-import typings.victoryCore.anon.ClassName
-import typings.victoryCore.anon.RectComponent
+import typings.victoryCore.anon.ClipPath
+import typings.victoryCore.anon.Role
 import typings.victoryCore.libVictoryUtilCommonPropsMod.VictoryCommonPrimitiveProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,13 +20,13 @@ object libVictoryPrimitivesBorderMod {
     
     @JSImport("victory-core/lib/victory-primitives/border", "Border.defaultProps")
     @js.native
-    def defaultProps: RectComponent = js.native
-    inline def defaultProps_=(x: RectComponent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: Role = js.native
+    inline def defaultProps_=(x: Role): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("victory-core/lib/victory-primitives/border", "Border.propTypes")
     @js.native
-    def propTypes: ClassName = js.native
-    inline def propTypes_=(x: ClassName): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    def propTypes: ClipPath = js.native
+    inline def propTypes_=(x: ClipPath): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
   trait BorderProps

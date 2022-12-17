@@ -10,7 +10,6 @@ import typings.typescript.mod.NodeArray
 import typings.typescript.mod.NodeFlags
 import typings.typescript.mod.SourceFile
 import typings.typescript.mod.SourceFileLike
-import typings.typescript.mod.StringLiteral
 import typings.typescript.mod.SyntaxKind.ImportDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -93,7 +92,7 @@ trait ImportDeclarationmoduleSp extends StObject {
   val modifiers: js.UndefOr[NodeArray[Modifier]] = js.native
   
   /** If this is not a StringLiteral it will be a grammar error. */
-  val moduleSpecifier: Expression & StringLiteral = js.native
+  val moduleSpecifier: Expression = js.native
   
   val parent: SourceFile | ModuleBlock = js.native
   

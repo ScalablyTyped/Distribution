@@ -8,8 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * A 3x3 matrix.
   */
+@JSImport("playcanvas", "Mat3")
 @js.native
-trait Mat3 extends StObject {
+open class Mat3 () extends StObject {
   
   /**
     * Copies the contents of a source 3x3 matrix to a destination 3x3 matrix.
@@ -104,4 +105,28 @@ trait Mat3 extends StObject {
     * m.transpose();
     */
   def transpose(): Mat3 = js.native
+}
+object Mat3 {
+  
+  /**
+    * A constant matrix set to the identity.
+    *
+    * @type {Mat3}
+    * @readonly
+    */
+  /* static member */
+  @JSImport("playcanvas", "Mat3.IDENTITY")
+  @js.native
+  val IDENTITY: Mat3 = js.native
+  
+  /**
+    * A constant matrix with all elements set to 0.
+    *
+    * @type {Mat3}
+    * @readonly
+    */
+  /* static member */
+  @JSImport("playcanvas", "Mat3.ZERO")
+  @js.native
+  val ZERO: Mat3 = js.native
 }

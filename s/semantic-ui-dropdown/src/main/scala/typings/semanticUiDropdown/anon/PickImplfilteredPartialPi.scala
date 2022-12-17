@@ -20,7 +20,7 @@ trait PickImplfilteredPartialPi
   
   var dropdown: js.UndefOr[String] = js.undefined
   
-  var filtered: String & js.UndefOr[String]
+  var filtered: String
   
   var hidden: js.UndefOr[String] = js.undefined
   
@@ -50,7 +50,7 @@ trait PickImplfilteredPartialPi
 }
 object PickImplfilteredPartialPi {
   
-  inline def apply(filtered: String & js.UndefOr[String]): PickImplfilteredPartialPi = {
+  inline def apply(filtered: String): PickImplfilteredPartialPi = {
     val __obj = js.Dynamic.literal(filtered = filtered.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplfilteredPartialPi]
   }
@@ -77,7 +77,7 @@ object PickImplfilteredPartialPi {
     
     inline def setDropdownUndefined: Self = StObject.set(x, "dropdown", js.undefined)
     
-    inline def setFiltered(value: String & js.UndefOr[String]): Self = StObject.set(x, "filtered", value.asInstanceOf[js.Any])
+    inline def setFiltered(value: String): Self = StObject.set(x, "filtered", value.asInstanceOf[js.Any])
     
     inline def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     

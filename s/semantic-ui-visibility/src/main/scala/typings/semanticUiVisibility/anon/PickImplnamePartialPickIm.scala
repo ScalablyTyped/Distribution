@@ -35,7 +35,7 @@ trait PickImplnamePartialPickIm
   
   var initialCheck: js.UndefOr[Boolean] = js.undefined
   
-  var name: String & js.UndefOr[String]
+  var name: String
   
   var namespace: js.UndefOr[String] = js.undefined
   
@@ -103,7 +103,7 @@ trait PickImplnamePartialPickIm
 }
 object PickImplnamePartialPickIm {
   
-  inline def apply(name: String & js.UndefOr[String]): PickImplnamePartialPickIm = {
+  inline def apply(name: String): PickImplnamePartialPickIm = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplnamePartialPickIm]
   }
@@ -146,7 +146,7 @@ object PickImplnamePartialPickIm {
     
     inline def setInitialCheckUndefined: Self = StObject.set(x, "initialCheck", js.undefined)
     
-    inline def setName(value: String & js.UndefOr[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     

@@ -467,19 +467,8 @@ object libMongoMemoryServerMod {
   }
   object MongoInstanceData {
     
-    inline def apply(
-      dbName: NonNullable[js.UndefOr[String]],
-      dbPath: NonNullable[
-          js.UndefOr[
-            /* import warning: importer.ImportType#apply Failed type conversion: mongodb-memory-server-core.mongodb-memory-server-core/lib/util/MongoInstance.MongoMemoryInstanceOpts['dbPath'] */ js.Any
-          ]
-        ],
-      instance: MongoInstance,
-      ip: NonNullable[js.UndefOr[String]],
-      port: NonNullable[js.UndefOr[Double]],
-      storageEngine: NonNullable[js.UndefOr[StorageEngine]]
-    ): MongoInstanceData = {
-      val __obj = js.Dynamic.literal(dbName = dbName.asInstanceOf[js.Any], dbPath = dbPath.asInstanceOf[js.Any], instance = instance.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], storageEngine = storageEngine.asInstanceOf[js.Any])
+    inline def apply(instance: MongoInstance): MongoInstanceData = {
+      val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any])
       __obj.asInstanceOf[MongoInstanceData]
     }
     
@@ -492,6 +481,8 @@ object libMongoMemoryServerMod {
               ]
             ]
       ): Self = StObject.set(x, "dbPath", value.asInstanceOf[js.Any])
+      
+      inline def setDbPathUndefined: Self = StObject.set(x, "dbPath", js.undefined)
       
       inline def setInstance(value: MongoInstance): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     }
@@ -585,13 +576,8 @@ object libMongoMemoryServerMod {
   }
   object StartupInstanceData {
     
-    inline def apply(
-      dbName: NonNullable[js.UndefOr[String]],
-      ip: NonNullable[js.UndefOr[String]],
-      port: NonNullable[js.UndefOr[Double]],
-      storageEngine: NonNullable[js.UndefOr[StorageEngine]]
-    ): StartupInstanceData = {
-      val __obj = js.Dynamic.literal(dbName = dbName.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], storageEngine = storageEngine.asInstanceOf[js.Any])
+    inline def apply(): StartupInstanceData = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StartupInstanceData]
     }
     
@@ -599,11 +585,15 @@ object libMongoMemoryServerMod {
       
       inline def setDbName(value: NonNullable[js.UndefOr[String]]): Self = StObject.set(x, "dbName", value.asInstanceOf[js.Any])
       
+      inline def setDbNameUndefined: Self = StObject.set(x, "dbName", js.undefined)
+      
       inline def setDbPath(value: String): Self = StObject.set(x, "dbPath", value.asInstanceOf[js.Any])
       
       inline def setDbPathUndefined: Self = StObject.set(x, "dbPath", js.undefined)
       
       inline def setIp(value: NonNullable[js.UndefOr[String]]): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+      
+      inline def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
       
       inline def setKeyfileLocation(value: NonNullable[js.UndefOr[String]]): Self = StObject.set(x, "keyfileLocation", value.asInstanceOf[js.Any])
       
@@ -615,11 +605,15 @@ object libMongoMemoryServerMod {
       
       inline def setPort(value: NonNullable[js.UndefOr[Double]]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      
       inline def setReplSet(value: NonNullable[js.UndefOr[String]]): Self = StObject.set(x, "replSet", value.asInstanceOf[js.Any])
       
       inline def setReplSetUndefined: Self = StObject.set(x, "replSet", js.undefined)
       
       inline def setStorageEngine(value: NonNullable[js.UndefOr[StorageEngine]]): Self = StObject.set(x, "storageEngine", value.asInstanceOf[js.Any])
+      
+      inline def setStorageEngineUndefined: Self = StObject.set(x, "storageEngine", js.undefined)
       
       inline def setTmpDir(value: DirResult): Self = StObject.set(x, "tmpDir", value.asInstanceOf[js.Any])
       

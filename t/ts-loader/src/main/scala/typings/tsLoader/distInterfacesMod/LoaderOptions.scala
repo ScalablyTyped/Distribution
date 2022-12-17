@@ -1,7 +1,7 @@
 package typings.tsLoader.distInterfacesMod
 
 import typings.chalk.mod.Chalk
-import typings.tsLoader.anon.FnCall
+import typings.tsLoader.anon.FnCallTypeReferenceDirectiveNameContainingFileOptionsHostRedirectedReferenceCacheResolutionMode
 import typings.typescript.mod.CompilerOptions
 import typings.typescript.mod.CustomTransformers
 import typings.typescript.mod.ModuleResolutionHost
@@ -73,7 +73,7 @@ trait LoaderOptions extends StObject {
     containingFile: String,
     compilerOptions: CompilerOptions,
     moduleResolutionHost: ModuleResolutionHost,
-    parentResolver: FnCall
+    parentResolver: FnCallTypeReferenceDirectiveNameContainingFileOptionsHostRedirectedReferenceCacheResolutionMode
   ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations
   @JSName("resolveTypeReferenceDirective")
   var resolveTypeReferenceDirective_Original: CustomResolveTypeReferenceDirective
@@ -112,7 +112,7 @@ object LoaderOptions {
     projectReferences: Boolean,
     reportFiles: js.Array[String],
     resolveModuleName: (/* moduleName */ String, /* containingFile */ String, /* compilerOptions */ CompilerOptions, /* moduleResolutionHost */ ModuleResolutionHost, /* parentResolver */ ResolveModuleName) => ResolvedModuleWithFailedLookupLocations,
-    resolveTypeReferenceDirective: (/* typeDirectiveName */ String, /* containingFile */ String, /* compilerOptions */ CompilerOptions, /* moduleResolutionHost */ ModuleResolutionHost, /* parentResolver */ FnCall) => ResolvedTypeReferenceDirectiveWithFailedLookupLocations,
+    resolveTypeReferenceDirective: (/* typeDirectiveName */ String, /* containingFile */ String, /* compilerOptions */ CompilerOptions, /* moduleResolutionHost */ ModuleResolutionHost, /* parentResolver */ FnCallTypeReferenceDirectiveNameContainingFileOptionsHostRedirectedReferenceCacheResolutionMode) => ResolvedTypeReferenceDirectiveWithFailedLookupLocations,
     silent: Boolean,
     transpileOnly: Boolean
   ): LoaderOptions = {
@@ -185,7 +185,7 @@ object LoaderOptions {
     ): Self = StObject.set(x, "resolveModuleName", js.Any.fromFunction5(value))
     
     inline def setResolveTypeReferenceDirective(
-      value: (/* typeDirectiveName */ String, /* containingFile */ String, /* compilerOptions */ CompilerOptions, /* moduleResolutionHost */ ModuleResolutionHost, /* parentResolver */ FnCall) => ResolvedTypeReferenceDirectiveWithFailedLookupLocations
+      value: (/* typeDirectiveName */ String, /* containingFile */ String, /* compilerOptions */ CompilerOptions, /* moduleResolutionHost */ ModuleResolutionHost, /* parentResolver */ FnCallTypeReferenceDirectiveNameContainingFileOptionsHostRedirectedReferenceCacheResolutionMode) => ResolvedTypeReferenceDirectiveWithFailedLookupLocations
     ): Self = StObject.set(x, "resolveTypeReferenceDirective", js.Any.fromFunction5(value))
     
     inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])

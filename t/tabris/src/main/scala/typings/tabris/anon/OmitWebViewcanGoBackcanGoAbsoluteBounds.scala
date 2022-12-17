@@ -325,7 +325,7 @@ trait OmitWebViewcanGoBackcanGoAbsoluteBounds extends StObject {
   @JSName("isDisposed")
   var isDisposed_Original: js.Function0[Boolean]
   
-  var jsxAttributes: (JSXAttributes[WebView, Omit[WebView, set | typings.tabris.tabrisStrings.jsxAttributes]]) & js.Object
+  var jsxAttributes: JSXAttributes[WebView, Omit[WebView, set | typings.tabris.tabrisStrings.jsxAttributes]]
   
   var layoutData: LayoutDataValue
   
@@ -594,7 +594,7 @@ object OmitWebViewcanGoBackcanGoAbsoluteBounds {
     insertAfter: /* widget */ Widget[Any] => WebView,
     insertBefore: /* widget */ Widget[Any] => WebView,
     isDisposed: () => Boolean,
-    jsxAttributes: (JSXAttributes[WebView, Omit[WebView, set | jsxAttributes]]) & js.Object,
+    jsxAttributes: JSXAttributes[WebView, Omit[WebView, set | jsxAttributes]],
     layoutData: LayoutDataValue,
     left: ConstraintValue,
     off: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Unit], /* context */ js.UndefOr[js.Object]) => WebView,
@@ -779,7 +779,7 @@ object OmitWebViewcanGoBackcanGoAbsoluteBounds {
     
     inline def setIsDisposed(value: () => Boolean): Self = StObject.set(x, "isDisposed", js.Any.fromFunction0(value))
     
-    inline def setJsxAttributes(value: (JSXAttributes[WebView, Omit[WebView, set | jsxAttributes]]) & js.Object): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
+    inline def setJsxAttributes(value: JSXAttributes[WebView, Omit[WebView, set | jsxAttributes]]): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     
     inline def setLayoutData(value: LayoutDataValue): Self = StObject.set(x, "layoutData", value.asInstanceOf[js.Any])
     

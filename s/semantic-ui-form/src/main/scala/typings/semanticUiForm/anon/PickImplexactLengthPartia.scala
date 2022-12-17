@@ -32,7 +32,7 @@ trait PickImplexactLengthPartia
   
   var exactCount: js.UndefOr[String] = js.undefined
   
-  var exactLength: String & js.UndefOr[String]
+  var exactLength: String
   
   var integer: js.UndefOr[String] = js.undefined
   
@@ -64,7 +64,7 @@ trait PickImplexactLengthPartia
 }
 object PickImplexactLengthPartia {
   
-  inline def apply(exactLength: String & js.UndefOr[String]): PickImplexactLengthPartia = {
+  inline def apply(exactLength: String): PickImplexactLengthPartia = {
     val __obj = js.Dynamic.literal(exactLength = exactLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplexactLengthPartia]
   }
@@ -115,7 +115,7 @@ object PickImplexactLengthPartia {
     
     inline def setExactCountUndefined: Self = StObject.set(x, "exactCount", js.undefined)
     
-    inline def setExactLength(value: String & js.UndefOr[String]): Self = StObject.set(x, "exactLength", value.asInstanceOf[js.Any])
+    inline def setExactLength(value: String): Self = StObject.set(x, "exactLength", value.asInstanceOf[js.Any])
     
     inline def setInteger(value: String): Self = StObject.set(x, "integer", value.asInstanceOf[js.Any])
     

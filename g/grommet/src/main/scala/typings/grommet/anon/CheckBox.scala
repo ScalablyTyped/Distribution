@@ -16,7 +16,7 @@ trait CheckBox extends StObject {
   
   var border: js.UndefOr[BorderType & Error] = js.undefined
   
-  var checkBox: js.UndefOr[`23`] = js.undefined
+  var checkBox: js.UndefOr[`20`] = js.undefined
   
   var content: js.UndefOr[Margin] = js.undefined
   
@@ -26,7 +26,7 @@ trait CheckBox extends StObject {
   
   var extend: js.UndefOr[ExtendType[Record[String, Any]]] = js.undefined
   
-  var focus: js.UndefOr[`24`] = js.undefined
+  var focus: js.UndefOr[`21`] = js.undefined
   
   var help: js.UndefOr[ColorMargin] = js.undefined
   
@@ -51,7 +51,7 @@ object CheckBox {
     
     inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
-    inline def setCheckBox(value: `23`): Self = StObject.set(x, "checkBox", value.asInstanceOf[js.Any])
+    inline def setCheckBox(value: `20`): Self = StObject.set(x, "checkBox", value.asInstanceOf[js.Any])
     
     inline def setCheckBoxUndefined: Self = StObject.set(x, "checkBox", js.undefined)
     
@@ -73,7 +73,7 @@ object CheckBox {
     
     inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    inline def setFocus(value: `24`): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+    inline def setFocus(value: `21`): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
     inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
     

@@ -8,8 +8,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * A member represents a remote client in a channel.
   */
+@JSImport("twilio-chat", "Member")
 @js.native
-trait Member extends ReplayEventEmitter[MemberEvents] {
+open class Member protected () extends ReplayEventEmitter[MemberEvents] {
+  /**
+    * @internal
+    */
+  def this(
+    data: MemberDescriptor,
+    sid: String,
+    channel: Channel,
+    links: MemberLinks,
+    services: MemberServices
+  ) = this()
   
   /**
     * Internal method function used to stop typing indicator timeout (with event emitting).
@@ -110,4 +121,44 @@ trait Member extends ReplayEventEmitter[MemberEvents] {
     * @param attributes New attributes.
     */
   def updateAttributes(attributes: Any): js.Promise[Member] = js.native
+}
+object Member {
+  
+  /**
+    * Fired when the member has stopped typing.
+    *
+    * Parameters:
+    * 1. {@link Member} `member` - the member in question
+    * @event
+    */
+  /* static member */
+  @JSImport("twilio-chat", "Member.typingEnded")
+  @js.native
+  val typingEnded: /* "typingEnded" */ String = js.native
+  
+  /**
+    * Fired when the member has started typing.
+    *
+    * Parameters:
+    * 1. {@link Member} `member` - the member in question
+    * @event
+    */
+  /* static member */
+  @JSImport("twilio-chat", "Member.typingStarted")
+  @js.native
+  val typingStarted: /* "typingStarted" */ String = js.native
+  
+  /**
+    * Fired when the fields of the member have been updated.
+    *
+    * Parameters:
+    * 1. object `data` - info object provided with the event. It has the following properties:
+    *     * {@link Member} member - the member in question
+    *     * {@link MemberUpdateReason}[] updateReasons - array of reasons for the update
+    * @event
+    */
+  /* static member */
+  @JSImport("twilio-chat", "Member.updated")
+  @js.native
+  val updated: /* "updated" */ String = js.native
 }

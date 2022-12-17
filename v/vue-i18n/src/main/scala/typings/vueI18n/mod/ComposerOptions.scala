@@ -11,14 +11,14 @@ import typings.intlifyCoreBase.mod.NumberFormats
 import typings.intlifyCoreBase.mod.Path
 import typings.intlifyCoreBase.mod.PluralizationRules
 import typings.intlifyCoreBase.mod.PostTranslationHandler
+import typings.vueI18n.anon.Datetime
 import typings.vueI18n.anon.DatetimeFormats
-import typings.vueI18n.anon.Message
 import typings.vueRuntimeCore.mod.ComponentInternalInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ComposerOptions[Schema /* <: Message */, Locales /* <: DatetimeFormats | String */, MessagesLocales, DateTimeFormatsLocales, NumberFormatsLocales, MessageSchema, DateTimeSchema, NumberSchema, _Messages /* <: LocaleMessages[MessageSchema, MessagesLocales, VueMessageType] */, _DateTimeFormats /* <: DateTimeFormats[DateTimeSchema, DateTimeFormatsLocales] */, _NumberFormats /* <: NumberFormats[NumberSchema, NumberFormatsLocales] */] extends StObject {
+trait ComposerOptions[Schema /* <: Datetime */, Locales /* <: DatetimeFormats | String */, MessagesLocales, DateTimeFormatsLocales, NumberFormatsLocales, MessageSchema, DateTimeSchema, NumberSchema, _Messages /* <: LocaleMessages[MessageSchema, MessagesLocales, VueMessageType] */, _DateTimeFormats /* <: DateTimeFormats[DateTimeSchema, DateTimeFormatsLocales] */, _NumberFormats /* <: NumberFormats[NumberSchema, NumberFormatsLocales] */] extends StObject {
   
   /**
     * @remarks
@@ -290,7 +290,7 @@ trait ComposerOptions[Schema /* <: Message */, Locales /* <: DatetimeFormats | S
 }
 object ComposerOptions {
   
-  inline def apply[Schema /* <: Message */, Locales /* <: DatetimeFormats | String */, MessagesLocales, DateTimeFormatsLocales, NumberFormatsLocales, MessageSchema, DateTimeSchema, NumberSchema, _Messages /* <: LocaleMessages[MessageSchema, MessagesLocales, VueMessageType] */, _DateTimeFormats /* <: DateTimeFormats[DateTimeSchema, DateTimeFormatsLocales] */, _NumberFormats /* <: NumberFormats[NumberSchema, NumberFormatsLocales] */](): ComposerOptions[
+  inline def apply[Schema /* <: Datetime */, Locales /* <: DatetimeFormats | String */, MessagesLocales, DateTimeFormatsLocales, NumberFormatsLocales, MessageSchema, DateTimeSchema, NumberSchema, _Messages /* <: LocaleMessages[MessageSchema, MessagesLocales, VueMessageType] */, _DateTimeFormats /* <: DateTimeFormats[DateTimeSchema, DateTimeFormatsLocales] */, _NumberFormats /* <: NumberFormats[NumberSchema, NumberFormatsLocales] */](): ComposerOptions[
     Schema, 
     Locales, 
     MessagesLocales, 
@@ -319,7 +319,7 @@ object ComposerOptions {
   ]]
   }
   
-  extension [Self <: ComposerOptions[?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?], Schema /* <: Message */, Locales /* <: DatetimeFormats | String */, MessagesLocales, DateTimeFormatsLocales, NumberFormatsLocales, MessageSchema, DateTimeSchema, NumberSchema, _Messages /* <: LocaleMessages[MessageSchema, MessagesLocales, VueMessageType] */, _DateTimeFormats /* <: DateTimeFormats[DateTimeSchema, DateTimeFormatsLocales] */, _NumberFormats /* <: NumberFormats[NumberSchema, NumberFormatsLocales] */](x: Self & (ComposerOptions[
+  extension [Self <: ComposerOptions[?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?], Schema /* <: Datetime */, Locales /* <: DatetimeFormats | String */, MessagesLocales, DateTimeFormatsLocales, NumberFormatsLocales, MessageSchema, DateTimeSchema, NumberSchema, _Messages /* <: LocaleMessages[MessageSchema, MessagesLocales, VueMessageType] */, _DateTimeFormats /* <: DateTimeFormats[DateTimeSchema, DateTimeFormatsLocales] */, _NumberFormats /* <: NumberFormats[NumberSchema, NumberFormatsLocales] */](x: Self & (ComposerOptions[
         Schema, 
         Locales, 
         MessagesLocales, 

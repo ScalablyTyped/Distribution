@@ -1,6 +1,7 @@
 package typings.isErrorInstance
 
 import typings.isErrorInstance.isErrorInstanceBooleans.`false`
+import typings.isErrorInstance.isErrorInstanceBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,5 +12,6 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def default(value: js.Error): `true` = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[`true`]
   inline def default(value: Any): `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[`false`]
 }

@@ -14,7 +14,7 @@ trait PickImplplaceholderPartiaIcon
   
   var id: js.UndefOr[String] = js.undefined
   
-  var placeholder: String & js.UndefOr[String]
+  var placeholder: String
   
   var source: js.UndefOr[String] = js.undefined
   
@@ -22,7 +22,7 @@ trait PickImplplaceholderPartiaIcon
 }
 object PickImplplaceholderPartiaIcon {
   
-  inline def apply(placeholder: String & js.UndefOr[String]): PickImplplaceholderPartiaIcon = {
+  inline def apply(placeholder: String): PickImplplaceholderPartiaIcon = {
     val __obj = js.Dynamic.literal(placeholder = placeholder.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplplaceholderPartiaIcon]
   }
@@ -37,7 +37,7 @@ object PickImplplaceholderPartiaIcon {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setPlaceholder(value: String & js.UndefOr[String]): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

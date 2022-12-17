@@ -6,16 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AppidContext extends StObject {
   
-  /** @description The ID of the GitHub App that must provide this check. Omit this field to automatically select the GitHub App that has recently provided this check, or any app if it was not set by a GitHub App. Pass -1 to explicitly allow any app to set the status. */
-  var app_id: js.UndefOr[Double] = js.undefined
+  var app_id: Double | Null
   
-  /** @description The name of the required check */
+  /** @example continuous-integration/travis-ci */
   var context: String
 }
 object AppidContext {
   
   inline def apply(context: String): AppidContext = {
-    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], app_id = null)
     __obj.asInstanceOf[AppidContext]
   }
   
@@ -23,7 +22,7 @@ object AppidContext {
     
     inline def setApp_id(value: Double): Self = StObject.set(x, "app_id", value.asInstanceOf[js.Any])
     
-    inline def setApp_idUndefined: Self = StObject.set(x, "app_id", js.undefined)
+    inline def setApp_idNull: Self = StObject.set(x, "app_id", null)
     
     inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
   }

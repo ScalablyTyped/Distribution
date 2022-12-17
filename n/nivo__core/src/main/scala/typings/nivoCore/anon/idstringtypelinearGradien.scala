@@ -545,7 +545,7 @@ trait idstringtypelinearGradien extends StObject {
   
   var href: js.UndefOr[String] = js.undefined
   
-  var id: String & js.UndefOr[String]
+  var id: String
   
   var ideographic: js.UndefOr[Double | String] = js.undefined
   
@@ -969,7 +969,7 @@ trait idstringtypelinearGradien extends StObject {
   
   var transform: js.UndefOr[String] = js.undefined
   
-  var `type`: linearGradient & js.UndefOr[String]
+  var `type`: linearGradient
   
   var u1: js.UndefOr[Double | String] = js.undefined
   
@@ -1069,13 +1069,9 @@ trait idstringtypelinearGradien extends StObject {
 }
 object idstringtypelinearGradien {
   
-  inline def apply(
-    colors: js.Array[GradientColor],
-    id: String & js.UndefOr[String],
-    `type`: linearGradient & js.UndefOr[String]
-  ): idstringtypelinearGradien = {
+  inline def apply(colors: js.Array[GradientColor], id: String): idstringtypelinearGradien = {
     val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("linearGradient")
     __obj.asInstanceOf[idstringtypelinearGradien]
   }
   
@@ -1645,7 +1641,7 @@ object idstringtypelinearGradien {
     
     inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
     
-    inline def setId(value: String & js.UndefOr[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setIdeographic(value: Double | String): Self = StObject.set(x, "ideographic", value.asInstanceOf[js.Any])
     
@@ -2461,7 +2457,7 @@ object idstringtypelinearGradien {
     
     inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
-    inline def setType(value: linearGradient & js.UndefOr[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: linearGradient): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setU1(value: Double | String): Self = StObject.set(x, "u1", value.asInstanceOf[js.Any])
     

@@ -6,23 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `200Content26` extends StObject {
   
-  /** Response */
+  /** Success */
   var `200`: Content26
   
-  var `304`: Any
-  
-  var `403`: Content6
-  
-  var `404`: Content6
+  var `403`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['code_scanning_forbidden_read'] */ js.Any
 }
 object `200Content26` {
   
-  inline def apply(`200`: Content26, `304`: Any, `403`: Content6, `404`: Content6): `200Content26` = {
+  inline def apply(
+    `200`: Content26,
+    `403`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['code_scanning_forbidden_read'] */ js.Any
+  ): `200Content26` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
-    __obj.updateDynamic("304")(`304`.asInstanceOf[js.Any])
     __obj.updateDynamic("403")(`403`.asInstanceOf[js.Any])
-    __obj.updateDynamic("404")(`404`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`200Content26`]
   }
   
@@ -30,10 +27,8 @@ object `200Content26` {
     
     inline def set200(value: Content26): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set304(value: Any): Self = StObject.set(x, "304", value.asInstanceOf[js.Any])
-    
-    inline def set403(value: Content6): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
-    
-    inline def set404(value: Content6): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    inline def set403(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['code_scanning_forbidden_read'] */ js.Any
+    ): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
   }
 }

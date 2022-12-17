@@ -13,18 +13,19 @@ trait FeatureReductionSelection extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionSelection.html#type)
     */
-  var `type`: js.UndefOr[selection] & selection
+  var `type`: js.UndefOr[selection] = js.undefined
 }
 object FeatureReductionSelection {
   
-  inline def apply(`type`: js.UndefOr[selection] & selection): FeatureReductionSelection = {
+  inline def apply(): FeatureReductionSelection = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureReductionSelection]
   }
   
   extension [Self <: FeatureReductionSelection](x: Self) {
     
-    inline def setType(value: js.UndefOr[selection] & selection): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: selection): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

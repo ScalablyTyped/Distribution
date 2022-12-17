@@ -24,7 +24,7 @@ trait Display extends StObject {
   var font: ScriptableAndScriptableOptions[Partial[FontSpec], ScriptableCartesianScaleContext]
   
   /** Padding to apply around scale labels. */
-  var padding: Double | Top
+  var padding: Double | Y
   
   /** The text for the title, e.g. "# of People" or "Response Choices". */
   var text: String | js.Array[String]
@@ -36,7 +36,7 @@ object Display {
     color: typings.chartJs.typesColorMod.Color,
     display: Boolean,
     font: ScriptableAndScriptableOptions[Partial[FontSpec], ScriptableCartesianScaleContext],
-    padding: Double | Top,
+    padding: Double | Y,
     text: String | js.Array[String]
   ): Display = {
     val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
@@ -55,7 +55,7 @@ object Display {
     
     inline def setFontFunction2(value: (ScriptableCartesianScaleContext, /* options */ AnyObject) => js.UndefOr[Partial[FontSpec]]): Self = StObject.set(x, "font", js.Any.fromFunction2(value))
     
-    inline def setPadding(value: Double | Top): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double | Y): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     inline def setText(value: String | js.Array[String]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

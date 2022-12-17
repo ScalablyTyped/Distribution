@@ -49,11 +49,9 @@ open class Point () extends StObject {
     *
     * - `dataGroup.length` is the amount of points in the group.
     */
-  var dataGroup: (js.UndefOr[
+  var dataGroup: js.UndefOr[
     typings.highcharts.modulesDatagroupingMod.highchartsAugmentingMod.DataGroupingInfoObject
-  ]) & (js.UndefOr[
-    typings.highcharts.modulesStockMod.highchartsAugmentingMod.DataGroupingInfoObject
-  ]) = js.native
+  ] = js.native
   
   /**
     * Perform drilldown on a point instance. The drilldown property must be

@@ -12,15 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   def create(
     parent: String,
     $requestBody: Index,
-    __namedParams__ : ProjectsDatabasesIndexesCreateNamedParameters & js.Object
+    __namedParams__ : ProjectsDatabasesIndexesCreateNamedParameters
   ): js.Promise[Operation] = js.native
   
   def delete(name: String): js.Promise[Empty] = js.native
-  def delete(name: String, __namedParams__ : ProjectsDatabasesIndexesDeleteNamedParameters & js.Object): js.Promise[Empty] = js.native
+  def delete(name: String, __namedParams__ : ProjectsDatabasesIndexesDeleteNamedParameters): js.Promise[Empty] = js.native
   
   def get(name: String): js.Promise[Index] = js.native
-  def get(name: String, __namedParams__ : ProjectsDatabasesIndexesGetNamedParameters & js.Object): js.Promise[Index] = js.native
+  def get(name: String, __namedParams__ : ProjectsDatabasesIndexesGetNamedParameters): js.Promise[Index] = js.native
   
   def list(parent: String): js.Promise[ListIndexesResponse] = js.native
-  def list(parent: String, __namedParams__ : ProjectsDatabasesIndexesListNamedParameters & js.Object): js.Promise[ListIndexesResponse] = js.native
+  def list(parent: String, __namedParams__ : ProjectsDatabasesIndexesListNamedParameters): js.Promise[ListIndexesResponse] = js.native
 }

@@ -7,7 +7,7 @@ import typings.roslib.anon.GroovyCompatibility
 import typings.roslib.anon.Name
 import typings.roslib.anon.Orientation
 import typings.roslib.anon.Rotation
-import typings.roslib.anon.ServiceType
+import typings.roslib.anon.ServerName
 import typings.roslib.anon.String
 import typings.roslib.anon.StringString
 import typings.roslib.anon.W
@@ -69,7 +69,7 @@ object global {
         * @param {string} options.serverName - The action server name, like '/fibonacci'.
         * @param {string} options.actionName - The action message name, like 'actionlib_tutorials/FibonacciAction'.
         */
-      def this(options: typings.roslib.anon.Ros) = this()
+      def this(options: ServerName) = this()
     }
     
     @JSGlobal("ROSLIB.Goal")
@@ -187,7 +187,7 @@ object global {
         * @param {string} options.name - The service name, like '/add_two_ints'.
         * @param {string} options.serviceType - The service type, like 'rospy_tutorials/AddTwoInts'.
         */
-      def this(data: ServiceType) = this()
+      def this(data: typings.roslib.anon.Ros) = this()
     }
     
     @JSGlobal("ROSLIB.ServiceRequest")
@@ -233,7 +233,7 @@ object global {
         * @param {string} options.serverName - The action server name, like '/fibonacci'.
         * @param {string} options.actionName - The action message name, like 'actionlib_tutorials/FibonacciAction'.
         */
-      def this(options: typings.roslib.anon.Ros) = this()
+      def this(options: ServerName) = this()
     }
     
     @JSGlobal("ROSLIB.TFClient")

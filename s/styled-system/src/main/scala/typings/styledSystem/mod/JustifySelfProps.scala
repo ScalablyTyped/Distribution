@@ -1,5 +1,6 @@
 package typings.styledSystem.mod
 
+import typings.csstype.mod.Property.JustifySelf
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,12 +13,7 @@ trait JustifySelfProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends St
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-self)
     */
-  var justifySelf: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifySelf */ js.Any, 
-      ThemeType
-    ]
-  ] = js.undefined
+  var justifySelf: js.UndefOr[ResponsiveValue[JustifySelf, ThemeType]] = js.undefined
 }
 object JustifySelfProps {
   
@@ -28,19 +24,12 @@ object JustifySelfProps {
   
   extension [Self <: JustifySelfProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & JustifySelfProps[ThemeType]) {
     
-    inline def setJustifySelf(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifySelf */ js.Any, 
-          ThemeType
-        ]
-    ): Self = StObject.set(x, "justifySelf", value.asInstanceOf[js.Any])
+    inline def setJustifySelf(value: ResponsiveValue[JustifySelf, ThemeType]): Self = StObject.set(x, "justifySelf", value.asInstanceOf[js.Any])
     
     inline def setJustifySelfNull: Self = StObject.set(x, "justifySelf", null)
     
     inline def setJustifySelfUndefined: Self = StObject.set(x, "justifySelf", js.undefined)
     
-    inline def setJustifySelfVarargs(
-      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifySelf */ js.Any) | Null)*
-    ): Self = StObject.set(x, "justifySelf", js.Array(value :_*))
+    inline def setJustifySelfVarargs(value: (JustifySelf | Null)*): Self = StObject.set(x, "justifySelf", js.Array(value*))
   }
 }

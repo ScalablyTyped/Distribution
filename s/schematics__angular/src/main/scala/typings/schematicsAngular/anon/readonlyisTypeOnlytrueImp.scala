@@ -85,7 +85,7 @@ trait readonlyisTypeOnlytrueImp
   def getWidth(): Double = js.native
   def getWidth(sourceFile: SourceFileLike): Double = js.native
   
-  val isTypeOnly: `true` & Boolean = js.native
+  val isTypeOnly: `true` = js.native
   
   val kind: ImportSpecifier = js.native
   

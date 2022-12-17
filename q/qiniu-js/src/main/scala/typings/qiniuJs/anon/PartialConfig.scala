@@ -1,6 +1,6 @@
 package typings.qiniuJs.anon
 
-import typings.qiniuJs.loggerMod.LogLevel
+import typings.qiniuJs.esmLoggerMod.LogLevel
 import typings.qiniuJs.qiniuJsStrings.`cn-east-2`
 import typings.qiniuJs.qiniuJsStrings.as0
 import typings.qiniuJs.qiniuJsStrings.http

@@ -31,6 +31,6 @@ object LineHeightProps {
     
     inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
     
-    inline def setLineHeightVarargs(value: (TVal | Null)*): Self = StObject.set(x, "lineHeight", js.Array(value :_*))
+    inline def setLineHeightVarargs(value: (TVal | Null)*): Self = StObject.set(x, "lineHeight", js.Array(value*))
   }
 }

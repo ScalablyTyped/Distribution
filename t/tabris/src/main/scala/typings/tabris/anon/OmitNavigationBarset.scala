@@ -205,7 +205,7 @@ trait OmitNavigationBarset extends StObject {
   var jsxAttributes: (JSXAttributes[
     NavigationBar_, 
     Omit[NavigationBar_, set | typings.tabris.tabrisStrings.jsxAttributes]
-  ]) & `4`
+  ]) & `15`
   
   def off(`type`: String, listener: js.Function1[/* event */ EventObject[NativeObject], Unit]): NavigationBar_
   def off(
@@ -308,7 +308,7 @@ object OmitNavigationBarset {
     constructor: /* properties */ js.UndefOr[Properties[NavigationBar_, Omit[NavigationBar_, set]]] => Any,
     displayMode: default | float | hide,
     height: Double,
-    jsxAttributes: (JSXAttributes[NavigationBar_, Omit[NavigationBar_, set | jsxAttributes]]) & `4`,
+    jsxAttributes: (JSXAttributes[NavigationBar_, Omit[NavigationBar_, set | jsxAttributes]]) & `15`,
     off: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Unit], /* context */ js.UndefOr[js.Object]) => NavigationBar_,
     on: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Any], /* context */ js.UndefOr[js.Object]) => NavigationBar_,
     onBackgroundChanged: ChangeListeners[NavigationBar_, background],
@@ -373,7 +373,7 @@ object OmitNavigationBarset {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    inline def setJsxAttributes(value: (JSXAttributes[NavigationBar_, Omit[NavigationBar_, set | jsxAttributes]]) & `4`): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
+    inline def setJsxAttributes(value: (JSXAttributes[NavigationBar_, Omit[NavigationBar_, set | jsxAttributes]]) & `15`): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     
     inline def setOff(
       value: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Unit], /* context */ js.UndefOr[js.Object]) => NavigationBar_

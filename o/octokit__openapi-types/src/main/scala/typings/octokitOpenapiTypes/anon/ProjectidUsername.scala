@@ -7,22 +7,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ProjectidUsername extends StObject {
   
   /** The unique identifier of the project. */
-  var project_id: Double
+  var project_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['project-id'] */ js.Any
   
   /** The handle for the GitHub user account. */
-  var username: String
+  var username: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['username'] */ js.Any
 }
 object ProjectidUsername {
   
-  inline def apply(project_id: Double, username: String): ProjectidUsername = {
+  inline def apply(
+    project_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['project-id'] */ js.Any,
+    username: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['username'] */ js.Any
+  ): ProjectidUsername = {
     val __obj = js.Dynamic.literal(project_id = project_id.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectidUsername]
   }
   
   extension [Self <: ProjectidUsername](x: Self) {
     
-    inline def setProject_id(value: Double): Self = StObject.set(x, "project_id", value.asInstanceOf[js.Any])
+    inline def setProject_id(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['project-id'] */ js.Any
+    ): Self = StObject.set(x, "project_id", value.asInstanceOf[js.Any])
     
-    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['username'] */ js.Any
+    ): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

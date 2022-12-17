@@ -1,5 +1,6 @@
 package typings.nodeOsUtils
 
+import typings.nodeOsUtils.libCpuMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,14 +11,9 @@ object libMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("node-os-utils/lib", JSImport.Default)
-  @js.native
-  open class default ()
-    extends typings.nodeOsUtils.libUsersMod.default
-  
   @JSImport("node-os-utils/lib", "cpu")
   @js.native
-  val cpu: typings.nodeOsUtils.libCpuMod.default = js.native
+  val cpu: default = js.native
   
   @JSImport("node-os-utils/lib", "drive")
   @js.native

@@ -100,17 +100,17 @@ object SemanticUI {
       trait Param extends StObject
       object Param {
         
-        inline def PickImplactivePartialPick(active: String & js.UndefOr[String]): typings.semanticUiRating.anon.PickImplactivePartialPick = {
+        inline def PickImplactivePartialPick(active: String): typings.semanticUiRating.anon.PickImplactivePartialPick = {
           val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.semanticUiRating.anon.PickImplactivePartialPick]
         }
         
-        inline def PickImplhoverPartialPickI(hover: String & js.UndefOr[String]): typings.semanticUiRating.anon.PickImplhoverPartialPickI = {
+        inline def PickImplhoverPartialPickI(hover: String): typings.semanticUiRating.anon.PickImplhoverPartialPickI = {
           val __obj = js.Dynamic.literal(hover = hover.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.semanticUiRating.anon.PickImplhoverPartialPickI]
         }
         
-        inline def PickImplloadingPartialPic(loading: String & js.UndefOr[String]): typings.semanticUiRating.anon.PickImplloadingPartialPic = {
+        inline def PickImplloadingPartialPic(loading: String): typings.semanticUiRating.anon.PickImplloadingPartialPic = {
           val __obj = js.Dynamic.literal(loading = loading.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.semanticUiRating.anon.PickImplloadingPartialPic]
         }
@@ -121,11 +121,11 @@ object SemanticUI {
     /* Inlined semantic-ui-rating.SemanticUI.Rating.ErrorSettings.Param */
     trait ErrorSettings extends StObject {
       
-      var action: String & js.UndefOr[String]
+      var action: String
     }
     object ErrorSettings {
       
-      inline def apply(action: String & js.UndefOr[String]): ErrorSettings = {
+      inline def apply(action: String): ErrorSettings = {
         val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
         __obj.asInstanceOf[ErrorSettings]
       }
@@ -152,24 +152,24 @@ object SemanticUI {
       
       extension [Self <: ErrorSettings](x: Self) {
         
-        inline def setAction(value: String & js.UndefOr[String]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+        inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       }
       
       /* Inlined std.Pick<semantic-ui-rating.SemanticUI.Rating.ErrorSettings._Impl, 'action'> & std.Partial<std.Pick<semantic-ui-rating.SemanticUI.Rating.ErrorSettings._Impl, keyof semantic-ui-rating.SemanticUI.Rating.ErrorSettings._Impl>> */
       trait Param extends StObject {
         
-        var action: String & js.UndefOr[String]
+        var action: String
       }
       object Param {
         
-        inline def apply(action: String & js.UndefOr[String]): typings.semanticUiRating.SemanticUI.Rating.ErrorSettings.Param = {
+        inline def apply(action: String): typings.semanticUiRating.SemanticUI.Rating.ErrorSettings.Param = {
           val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.semanticUiRating.SemanticUI.Rating.ErrorSettings.Param]
         }
         
         extension [Self <: typings.semanticUiRating.SemanticUI.Rating.ErrorSettings.Param](x: Self) {
           
-          inline def setAction(value: String & js.UndefOr[String]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+          inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
         }
       }
     }
@@ -177,11 +177,11 @@ object SemanticUI {
     /* Inlined semantic-ui-rating.SemanticUI.Rating.SelectorSettings.Param */
     trait SelectorSettings extends StObject {
       
-      var icon: String & js.UndefOr[String]
+      var icon: String
     }
     object SelectorSettings {
       
-      inline def apply(icon: String & js.UndefOr[String]): SelectorSettings = {
+      inline def apply(icon: String): SelectorSettings = {
         val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
         __obj.asInstanceOf[SelectorSettings]
       }
@@ -208,24 +208,24 @@ object SemanticUI {
       
       extension [Self <: SelectorSettings](x: Self) {
         
-        inline def setIcon(value: String & js.UndefOr[String]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       }
       
       /* Inlined std.Pick<semantic-ui-rating.SemanticUI.Rating.SelectorSettings._Impl, 'icon'> & std.Partial<std.Pick<semantic-ui-rating.SemanticUI.Rating.SelectorSettings._Impl, keyof semantic-ui-rating.SemanticUI.Rating.SelectorSettings._Impl>> */
       trait Param extends StObject {
         
-        var icon: String & js.UndefOr[String]
+        var icon: String
       }
       object Param {
         
-        inline def apply(icon: String & js.UndefOr[String]): typings.semanticUiRating.SemanticUI.Rating.SelectorSettings.Param = {
+        inline def apply(icon: String): typings.semanticUiRating.SemanticUI.Rating.SelectorSettings.Param = {
           val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.semanticUiRating.SemanticUI.Rating.SelectorSettings.Param]
         }
         
         extension [Self <: typings.semanticUiRating.SemanticUI.Rating.SelectorSettings.Param](x: Self) {
           
-          inline def setIcon(value: String & js.UndefOr[String]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+          inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         }
       }
     }
@@ -389,74 +389,72 @@ object SemanticUI {
     trait Param extends StObject
     object Param {
       
-      inline def PickImplclassNamePartialP(className: ClassNameSettings & js.UndefOr[ClassNameSettings]): typings.semanticUiRating.anon.PickImplclassNamePartialP = {
+      inline def PickImplclassNamePartialP(className: ClassNameSettings): typings.semanticUiRating.anon.PickImplclassNamePartialP = {
         val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiRating.anon.PickImplclassNamePartialP]
       }
       
-      inline def PickImplclearablePartialP(clearable: (auto | Boolean) & (js.UndefOr[auto | Boolean])): typings.semanticUiRating.anon.PickImplclearablePartialP = {
+      inline def PickImplclearablePartialP(clearable: auto | Boolean): typings.semanticUiRating.anon.PickImplclearablePartialP = {
         val __obj = js.Dynamic.literal(clearable = clearable.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiRating.anon.PickImplclearablePartialP]
       }
       
-      inline def PickImpldebugPartialPickI(debug: Boolean & js.UndefOr[Boolean]): typings.semanticUiRating.anon.PickImpldebugPartialPickI = {
+      inline def PickImpldebugPartialPickI(debug: Boolean): typings.semanticUiRating.anon.PickImpldebugPartialPickI = {
         val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiRating.anon.PickImpldebugPartialPickI]
       }
       
-      inline def PickImplerrorPartialPickI(error: ErrorSettings & js.UndefOr[ErrorSettings]): typings.semanticUiRating.anon.PickImplerrorPartialPickI = {
+      inline def PickImplerrorPartialPickI(error: ErrorSettings): typings.semanticUiRating.anon.PickImplerrorPartialPickI = {
         val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiRating.anon.PickImplerrorPartialPickI]
       }
       
-      inline def PickImplfireOnInitPartial(fireOnInit: Boolean & js.UndefOr[Boolean]): typings.semanticUiRating.anon.PickImplfireOnInitPartial = {
+      inline def PickImplfireOnInitPartial(fireOnInit: Boolean): typings.semanticUiRating.anon.PickImplfireOnInitPartial = {
         val __obj = js.Dynamic.literal(fireOnInit = fireOnInit.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiRating.anon.PickImplfireOnInitPartial]
       }
       
-      inline def PickImplinitialRatingPart(initialRating: Double & js.UndefOr[Double]): typings.semanticUiRating.anon.PickImplinitialRatingPart = {
+      inline def PickImplinitialRatingPart(initialRating: Double): typings.semanticUiRating.anon.PickImplinitialRatingPart = {
         val __obj = js.Dynamic.literal(initialRating = initialRating.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiRating.anon.PickImplinitialRatingPart]
       }
       
-      inline def PickImplinteractivePartia(interactive: Boolean & js.UndefOr[Boolean]): typings.semanticUiRating.anon.PickImplinteractivePartia = {
+      inline def PickImplinteractivePartia(interactive: Boolean): typings.semanticUiRating.anon.PickImplinteractivePartia = {
         val __obj = js.Dynamic.literal(interactive = interactive.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiRating.anon.PickImplinteractivePartia]
       }
       
-      inline def PickImplnamePartialPickIm(name: String & js.UndefOr[String]): typings.semanticUiRating.anon.PickImplnamePartialPickIm = {
+      inline def PickImplnamePartialPickIm(name: String): typings.semanticUiRating.anon.PickImplnamePartialPickIm = {
         val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiRating.anon.PickImplnamePartialPickIm]
       }
       
-      inline def PickImplnamespacePartialP(namespace: String & js.UndefOr[String]): typings.semanticUiRating.anon.PickImplnamespacePartialP = {
+      inline def PickImplnamespacePartialP(namespace: String): typings.semanticUiRating.anon.PickImplnamespacePartialP = {
         val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiRating.anon.PickImplnamespacePartialP]
       }
       
-      inline def PickImplonRatePartialPick(
-        onRate: (js.ThisFunction1[/* this */ JQuery, /* value */ Double, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* value */ Double, Unit]])
-      ): typings.semanticUiRating.anon.PickImplonRatePartialPick = {
+      inline def PickImplonRatePartialPick(onRate: js.ThisFunction1[/* this */ JQuery, /* value */ Double, Unit]): typings.semanticUiRating.anon.PickImplonRatePartialPick = {
         val __obj = js.Dynamic.literal(onRate = onRate.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiRating.anon.PickImplonRatePartialPick]
       }
       
-      inline def PickImplperformancePartia(performance: Boolean & js.UndefOr[Boolean]): typings.semanticUiRating.anon.PickImplperformancePartia = {
+      inline def PickImplperformancePartia(performance: Boolean): typings.semanticUiRating.anon.PickImplperformancePartia = {
         val __obj = js.Dynamic.literal(performance = performance.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiRating.anon.PickImplperformancePartia]
       }
       
-      inline def PickImplselectorPartialPi(selector: SelectorSettings & js.UndefOr[SelectorSettings]): typings.semanticUiRating.anon.PickImplselectorPartialPi = {
+      inline def PickImplselectorPartialPi(selector: SelectorSettings): typings.semanticUiRating.anon.PickImplselectorPartialPi = {
         val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiRating.anon.PickImplselectorPartialPi]
       }
       
-      inline def PickImplsilentPartialPick(silent: Boolean & js.UndefOr[Boolean]): typings.semanticUiRating.anon.PickImplsilentPartialPick = {
+      inline def PickImplsilentPartialPick(silent: Boolean): typings.semanticUiRating.anon.PickImplsilentPartialPick = {
         val __obj = js.Dynamic.literal(silent = silent.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiRating.anon.PickImplsilentPartialPick]
       }
       
-      inline def PickImplverbosePartialPic(verbose: Boolean & js.UndefOr[Boolean]): typings.semanticUiRating.anon.PickImplverbosePartialPic = {
+      inline def PickImplverbosePartialPic(verbose: Boolean): typings.semanticUiRating.anon.PickImplverbosePartialPic = {
         val __obj = js.Dynamic.literal(verbose = verbose.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiRating.anon.PickImplverbosePartialPic]
       }

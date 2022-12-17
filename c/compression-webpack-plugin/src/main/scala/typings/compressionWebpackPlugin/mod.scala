@@ -136,7 +136,7 @@ object mod {
     /* options */ CompressionOptions[T], 
     /* callback */ js.Function2[
       /* error */ js.UndefOr[js.Error | Null], 
-      /* result */ String | js.typedarray.ArrayBuffer | SharedArrayBuffer | js.typedarray.Uint8Array | js.Array[Double] | ValueOf | `0` | `1` | ToPrimitive, 
+      /* result */ String | js.typedarray.ArrayBuffer | SharedArrayBuffer | js.typedarray.Uint8Array | js.Array[Double] | `0` | `1` | `2` | ToPrimitive, 
       Unit
     ], 
     Any
@@ -402,7 +402,7 @@ object mod {
       inline def setAlgorithmFunction3(
         value: (/* input */ Buffer, /* options */ CompressionOptions[T], /* callback */ js.Function2[
               /* error */ js.UndefOr[js.Error | Null], 
-              /* result */ String | js.typedarray.ArrayBuffer | SharedArrayBuffer | js.typedarray.Uint8Array | js.Array[Double] | ValueOf | `0` | `1` | ToPrimitive, 
+              /* result */ String | js.typedarray.ArrayBuffer | SharedArrayBuffer | js.typedarray.Uint8Array | js.Array[Double] | `0` | `1` | `2` | ToPrimitive, 
               Unit
             ]) => Any
       ): Self = StObject.set(x, "algorithm", js.Any.fromFunction3(value))
@@ -435,7 +435,7 @@ object mod {
   
   type WebpackPluginInstance = typings.webpack.mod.WebpackPluginInstance
   
-  type WithImplicitCoercion[T] = T | `2`[T]
+  type WithImplicitCoercion[T] = T | ValueOf[T]
   
   type ZlibOptions = typings.node.zlibMod.ZlibOptions
 }

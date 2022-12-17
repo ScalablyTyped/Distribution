@@ -32,13 +32,13 @@ trait PickImplstatusMessagePart
   
   var requiredParameter: js.UndefOr[String] = js.undefined
   
-  var statusMessage: String & js.UndefOr[String]
+  var statusMessage: String
   
   var timeout: js.UndefOr[String] = js.undefined
 }
 object PickImplstatusMessagePart {
   
-  inline def apply(statusMessage: String & js.UndefOr[String]): PickImplstatusMessagePart = {
+  inline def apply(statusMessage: String): PickImplstatusMessagePart = {
     val __obj = js.Dynamic.literal(statusMessage = statusMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplstatusMessagePart]
   }
@@ -89,7 +89,7 @@ object PickImplstatusMessagePart {
     
     inline def setRequiredParameterUndefined: Self = StObject.set(x, "requiredParameter", js.undefined)
     
-    inline def setStatusMessage(value: String & js.UndefOr[String]): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
     
     inline def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,6 @@ object typingsModulesMarkupMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("sweetalert/typings/modules/markup", JSImport.Default)
-  @js.native
-  val default: String = js.native
-  
   @JSImport("sweetalert/typings/modules/markup", "buttonMarkup")
   @js.native
   val buttonMarkup: String = js.native

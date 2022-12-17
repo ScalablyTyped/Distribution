@@ -1,7 +1,7 @@
 package typings.tuyaPanelKit.mod
 
 import typings.reactNative.mod.TouchableOpacityProps
-import typings.tuyaPanelKit.anon.CellBg
+import typings.tuyaPanelKit.anon.BoardBg
 import typings.tuyaPanelKit.anon.Container
 import typings.tuyaPanelKit.tuyaPanelKitStrings.auto
 import typings.tuyaPanelKit.tuyaPanelKitStrings.iconfont
@@ -205,7 +205,7 @@ trait TYListItemProps
     * @description Theme configuration
     * @defaultValue {}
     */
-  var theme: js.UndefOr[CellBg] = js.undefined
+  var theme: js.UndefOr[BoardBg] = js.undefined
   
   /**
     * @language zh-CN
@@ -300,7 +300,7 @@ object TYListItemProps {
     
     inline def setSubTitleUndefined: Self = StObject.set(x, "subTitle", js.undefined)
     
-    inline def setTheme(value: CellBg): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: BoardBg): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     

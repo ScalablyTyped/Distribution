@@ -1,7 +1,7 @@
 package typings.reactNativeSvg
 
 import typings.react.mod.ReactNode
-import typings.reactNativeSvg.anon.Width
+import typings.reactNativeSvg.anon.Height
 import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.CommonPathProps
 import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.NumberProp
 import org.scalablytyped.runtime.StObject
@@ -22,8 +22,8 @@ object libTypescriptElementsUseMod {
     
     @JSImport("react-native-svg/lib/typescript/elements/Use", "default.defaultProps")
     @js.native
-    def defaultProps: Width = js.native
-    inline def defaultProps_=(x: Width): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: Height = js.native
+    inline def defaultProps_=(x: Height): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("react-native-svg/lib/typescript/elements/Use", "default.displayName")
     @js.native

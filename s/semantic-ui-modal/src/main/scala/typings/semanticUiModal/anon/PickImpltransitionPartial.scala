@@ -66,13 +66,13 @@ trait PickImpltransitionPartial
   
   var silent: js.UndefOr[Boolean] = js.undefined
   
-  var transition: String & js.UndefOr[String]
+  var transition: String
   
   var verbose: js.UndefOr[Boolean] = js.undefined
 }
 object PickImpltransitionPartial {
   
-  inline def apply(transition: String & js.UndefOr[String]): PickImpltransitionPartial = {
+  inline def apply(transition: String): PickImpltransitionPartial = {
     val __obj = js.Dynamic.literal(transition = transition.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpltransitionPartial]
   }
@@ -179,7 +179,7 @@ object PickImpltransitionPartial {
     
     inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     
-    inline def setTransition(value: String & js.UndefOr[String]): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+    inline def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
     inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     

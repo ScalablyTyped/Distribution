@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BreakpointsFontFamilyFontSize extends StObject {
   
-  var breakpoints: LgMaxMd
+  var breakpoints: MdXlg
   
   var fontFamily: /* 'IBM Plex Serif', 'Georgia', Times, serif */ String
   
@@ -22,14 +22,14 @@ trait BreakpointsFontFamilyFontSize extends StObject {
 }
 object BreakpointsFontFamilyFontSize {
   
-  inline def apply(breakpoints: LgMaxMd): BreakpointsFontFamilyFontSize = {
+  inline def apply(breakpoints: MdXlg): BreakpointsFontFamilyFontSize = {
     val __obj = js.Dynamic.literal(breakpoints = breakpoints.asInstanceOf[js.Any], fontFamily = "'IBM Plex Serif', 'Georgia', Times, serif", fontSize = "2rem", fontWeight = 300, letterSpacing = 0, lineHeight = 1.25d)
     __obj.asInstanceOf[BreakpointsFontFamilyFontSize]
   }
   
   extension [Self <: BreakpointsFontFamilyFontSize](x: Self) {
     
-    inline def setBreakpoints(value: LgMaxMd): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
+    inline def setBreakpoints(value: MdXlg): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
     
     inline def setFontFamily(value: /* 'IBM Plex Serif', 'Georgia', Times, serif */ String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     

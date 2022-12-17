@@ -29,7 +29,7 @@ trait PickImplintervalPartialPi
   
   var error: js.UndefOr[ErrorSettings] = js.undefined
   
-  var interval: Double & js.UndefOr[Double]
+  var interval: Double
   
   var name: js.UndefOr[String] = js.undefined
   
@@ -57,7 +57,7 @@ trait PickImplintervalPartialPi
 }
 object PickImplintervalPartialPi {
   
-  inline def apply(interval: Double & js.UndefOr[Double]): PickImplintervalPartialPi = {
+  inline def apply(interval: Double): PickImplintervalPartialPi = {
     val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplintervalPartialPi]
   }
@@ -92,7 +92,7 @@ object PickImplintervalPartialPi {
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    inline def setInterval(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

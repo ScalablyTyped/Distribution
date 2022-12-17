@@ -84,7 +84,7 @@ trait PickImpltextPartialPickIm
   
   var templates: js.UndefOr[TemplatesSettings] = js.undefined
   
-  var text: TextSettings & js.UndefOr[TextSettings]
+  var text: TextSettings
   
   var transition: js.UndefOr[String] = js.undefined
   
@@ -92,7 +92,7 @@ trait PickImpltextPartialPickIm
 }
 object PickImpltextPartialPickIm {
   
-  inline def apply(text: TextSettings & js.UndefOr[TextSettings]): PickImpltextPartialPickIm = {
+  inline def apply(text: TextSettings): PickImpltextPartialPickIm = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpltextPartialPickIm]
   }
@@ -204,7 +204,7 @@ object PickImpltextPartialPickIm {
     
     inline def setTemplatesUndefined: Self = StObject.set(x, "templates", js.undefined)
     
-    inline def setText(value: TextSettings & js.UndefOr[TextSettings]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: TextSettings): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     inline def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     

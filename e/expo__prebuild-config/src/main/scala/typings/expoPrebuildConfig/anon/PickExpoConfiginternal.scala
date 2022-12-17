@@ -1,6 +1,6 @@
 package typings.expoPrebuildConfig.anon
 
-import typings.expoConfigTypes.anon.PluginHistory
+import typings.expoConfigTypes.anon.Dictk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Pick<@expo/config-types.@expo/config-types.ExpoConfig, '_internal'> */
 trait PickExpoConfiginternal extends StObject {
   
-  var _internal: js.UndefOr[PluginHistory] = js.undefined
+  var _internal: js.UndefOr[Dictk] = js.undefined
 }
 object PickExpoConfiginternal {
   
@@ -19,7 +19,7 @@ object PickExpoConfiginternal {
   
   extension [Self <: PickExpoConfiginternal](x: Self) {
     
-    inline def set_internal(value: PluginHistory): Self = StObject.set(x, "_internal", value.asInstanceOf[js.Any])
+    inline def set_internal(value: Dictk): Self = StObject.set(x, "_internal", value.asInstanceOf[js.Any])
     
     inline def set_internalUndefined: Self = StObject.set(x, "_internal", js.undefined)
   }

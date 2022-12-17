@@ -13,8 +13,6 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(karma: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(karma.asInstanceOf[js.Any]).asInstanceOf[js.Object]
-  
   @JSImport("grumbler-scripts", "ENV")
   @js.native
   object ENV extends StObject {

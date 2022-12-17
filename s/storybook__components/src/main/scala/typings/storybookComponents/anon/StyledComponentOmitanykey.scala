@@ -415,7 +415,7 @@ trait StyledComponentOmitanykey extends StObject {
     ]
   ] = js.native
   
-  var displayName: js.UndefOr[String] & String = js.native
+  var displayName: js.UndefOr[String] = js.native
   
   var propTypes: js.UndefOr[
     WeakValidationMap[

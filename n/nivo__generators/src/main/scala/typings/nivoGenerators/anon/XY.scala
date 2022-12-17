@@ -6,21 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait XY extends StObject {
   
-  var x: String | Double
+  var x: String
   
-  var y: String | Double
+  var y: Double
 }
 object XY {
   
-  inline def apply(x: String | Double, y: String | Double): XY = {
+  inline def apply(x: String, y: Double): XY = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[XY]
   }
   
   extension [Self <: XY](x: Self) {
     
-    inline def setX(value: String | Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    inline def setY(value: String | Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

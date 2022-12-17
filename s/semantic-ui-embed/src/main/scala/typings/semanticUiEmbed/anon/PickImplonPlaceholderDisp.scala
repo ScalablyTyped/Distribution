@@ -53,7 +53,7 @@ trait PickImplonPlaceholderDisp
   
   def onPlaceholderDisplay(): Unit
   @JSName("onPlaceholderDisplay")
-  var onPlaceholderDisplay_Original: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+  var onPlaceholderDisplay_Original: js.ThisFunction0[/* this */ JQuery, Unit]
   
   var parameters: js.UndefOr[`false` | ParametersSettings] = js.undefined
   
@@ -73,9 +73,7 @@ trait PickImplonPlaceholderDisp
 }
 object PickImplonPlaceholderDisp {
   
-  inline def apply(
-    onPlaceholderDisplay: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-  ): PickImplonPlaceholderDisp = {
+  inline def apply(onPlaceholderDisplay: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonPlaceholderDisp = {
     val __obj = js.Dynamic.literal(onPlaceholderDisplay = onPlaceholderDisplay.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonPlaceholderDisp]
   }
@@ -144,9 +142,7 @@ object PickImplonPlaceholderDisp {
     
     inline def setOnEmbedUndefined: Self = StObject.set(x, "onEmbed", js.undefined)
     
-    inline def setOnPlaceholderDisplay(
-      value: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-    ): Self = StObject.set(x, "onPlaceholderDisplay", value.asInstanceOf[js.Any])
+    inline def setOnPlaceholderDisplay(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onPlaceholderDisplay", value.asInstanceOf[js.Any])
     
     inline def setParameters(value: `false` | ParametersSettings): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

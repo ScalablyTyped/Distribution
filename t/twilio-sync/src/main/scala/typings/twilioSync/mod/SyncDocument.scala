@@ -9,8 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Use the {@link SyncClient.document} method to obtain a reference to a Sync document.
   * Information about rate limits can be found [here](https://www.twilio.com/docs/sync/limits).
   */
+@JSImport("twilio-sync", "SyncDocument")
 @js.native
-trait SyncDocument extends Closeable {
+open class SyncDocument protected () extends Closeable {
+  /**
+    * @internal
+    */
+  def this(syncDocumentImpl: SyncDocumentImpl) = this()
   
   /**
     * The contents of this document.
@@ -151,4 +156,52 @@ trait SyncDocument extends Closeable {
   
   // private props
   def uri: String = js.native
+}
+object SyncDocument {
+  
+  /**
+    * Fired when the document is removed, regardless of whether the remover was local or remote.
+    *
+    * Parameters:
+    * 1. object `args` - info object provided with the event. It has following properties:
+    *     * boolean `isLocal` - is true if document was removed by a local actor, false otherwise
+    *     * object `previousData` - contains a snapshot of the document data before removal
+    * @example
+    * ```typescript
+    * document.on('removed', (args) => {
+    *   console.log(`Document ${document.sid} was removed`);
+    *   console.log('args.isLocal:', args.isLocal);
+    *   console.log('args.previousData:', args.previousData);
+    * });
+    * ```
+    * @event
+    */
+  /* static member */
+  @JSImport("twilio-sync", "SyncDocument.removed")
+  @js.native
+  val removed: /* "removed" */ String = js.native
+  
+  /**
+    * Fired when the document's contents have changed, regardless of whether the updater was local or remote.
+    *
+    * Parameters:
+    * 1. object `args` - info object provided with the event. It has the following properties:
+    *     * boolean `isLocal` - is true if document was updated by a local actor, false otherwise
+    *     * object `data` - a snapshot of the document's new contents
+    *     * object `previousData` - contains a snapshot of the document data before the update
+    * @example
+    * ```typescript
+    * document.on('updated', (args) => {
+    *   console.log(`Document ${document.sid} was updated`);
+    *   console.log('args.data:', args.data);
+    *   console.log('args.isLocal:', args.isLocal);
+    *   console.log('args.previousData:', args.previousData);
+    * });
+    * ```
+    * @event
+    */
+  /* static member */
+  @JSImport("twilio-sync", "SyncDocument.updated")
+  @js.native
+  val updated: /* "updated" */ String = js.native
 }

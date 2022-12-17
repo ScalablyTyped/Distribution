@@ -3,7 +3,7 @@ package typings.terminalKit
 import typings.terminalKit.anon.FinalCall
 import typings.terminalKit.anon.Height
 import typings.terminalKit.anon.Misc
-import typings.terminalKit.anon.`4`
+import typings.terminalKit.anon.`5`
 import typings.terminalKit.rectMod.Region
 import typings.terminalKit.screenBufferMod.Attributes
 import typings.terminalKit.screenBufferMod.DrawOptions
@@ -99,7 +99,7 @@ object textBufferMod {
     def draw(options: DrawOptions): Unit = js.native
     
     def drawCursor(): Unit = js.native
-    def drawCursor(options: `4`): Unit = js.native
+    def drawCursor(options: `5`): Unit = js.native
     
     def getContentSize(): Height = js.native
     

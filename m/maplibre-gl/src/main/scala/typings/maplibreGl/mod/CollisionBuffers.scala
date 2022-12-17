@@ -1,6 +1,6 @@
 package typings.maplibreGl.mod
 
-import typings.maplibreGl.anon.Instantiable
+import typings.maplibreGl.anon.InstantiableStructArray
 import typings.maplibreGl.anon.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("maplibre-gl", "CollisionBuffers")
 @js.native
 open class CollisionBuffers protected () extends StObject {
-  def this(LayoutArray: Instantiable, layoutAttributes: js.Array[StructArrayMember], IndexArray: `1`) = this()
+  def this(
+    LayoutArray: InstantiableStructArray,
+    layoutAttributes: js.Array[StructArrayMember],
+    IndexArray: `1`
+  ) = this()
   
   var collisionVertexArray: CollisionVertexArray = js.native
   

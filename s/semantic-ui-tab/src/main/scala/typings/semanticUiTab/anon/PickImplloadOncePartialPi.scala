@@ -56,7 +56,7 @@ trait PickImplloadOncePartialPi
   
   var ignoreFirstLoad: js.UndefOr[Boolean] = js.undefined
   
-  var loadOnce: Boolean & js.UndefOr[Boolean]
+  var loadOnce: Boolean
   
   var maxDepth: js.UndefOr[Double] = js.undefined
   
@@ -104,7 +104,7 @@ trait PickImplloadOncePartialPi
 }
 object PickImplloadOncePartialPi {
   
-  inline def apply(loadOnce: Boolean & js.UndefOr[Boolean]): PickImplloadOncePartialPi = {
+  inline def apply(loadOnce: Boolean): PickImplloadOncePartialPi = {
     val __obj = js.Dynamic.literal(loadOnce = loadOnce.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplloadOncePartialPi]
   }
@@ -171,7 +171,7 @@ object PickImplloadOncePartialPi {
     
     inline def setIgnoreFirstLoadUndefined: Self = StObject.set(x, "ignoreFirstLoad", js.undefined)
     
-    inline def setLoadOnce(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "loadOnce", value.asInstanceOf[js.Any])
+    inline def setLoadOnce(value: Boolean): Self = StObject.set(x, "loadOnce", value.asInstanceOf[js.Any])
     
     inline def setMaxDepth(value: Double): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
     

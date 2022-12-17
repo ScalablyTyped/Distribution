@@ -45,7 +45,7 @@ trait PickImplbeforeXHRPartialP
   
   def beforeXHR(xhrObject: jqXHR[Any]): Any
   @JSName("beforeXHR")
-  var beforeXHR_Original: (js.Function1[/* xhrObject */ jqXHR[Any], Any]) & (js.UndefOr[js.Function1[/* xhrObject */ jqXHR[Any], Any]])
+  var beforeXHR_Original: js.Function1[/* xhrObject */ jqXHR[Any], Any]
   
   var cache: js.UndefOr[local | Boolean] = js.undefined
   
@@ -149,10 +149,8 @@ trait PickImplbeforeXHRPartialP
 }
 object PickImplbeforeXHRPartialP {
   
-  inline def apply(
-    beforeXHR: (js.Function1[/* xhrObject */ jqXHR[Any], Any]) & (js.UndefOr[js.Function1[/* xhrObject */ jqXHR[Any], Any]])
-  ): PickImplbeforeXHRPartialP = {
-    val __obj = js.Dynamic.literal(beforeXHR = beforeXHR.asInstanceOf[js.Any])
+  inline def apply(beforeXHR: /* xhrObject */ jqXHR[Any] => Any): PickImplbeforeXHRPartialP = {
+    val __obj = js.Dynamic.literal(beforeXHR = js.Any.fromFunction1(beforeXHR))
     __obj.asInstanceOf[PickImplbeforeXHRPartialP]
   }
   
@@ -170,9 +168,7 @@ object PickImplbeforeXHRPartialP {
     
     inline def setBeforeSendUndefined: Self = StObject.set(x, "beforeSend", js.undefined)
     
-    inline def setBeforeXHR(
-      value: (js.Function1[/* xhrObject */ jqXHR[Any], Any]) & (js.UndefOr[js.Function1[/* xhrObject */ jqXHR[Any], Any]])
-    ): Self = StObject.set(x, "beforeXHR", value.asInstanceOf[js.Any])
+    inline def setBeforeXHR(value: /* xhrObject */ jqXHR[Any] => Any): Self = StObject.set(x, "beforeXHR", js.Any.fromFunction1(value))
     
     inline def setCache(value: local | Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     

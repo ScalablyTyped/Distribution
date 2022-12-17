@@ -11,13 +11,6 @@ object libEsmPuppeteerTypesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-    * @public
-    */
-  @JSImport("puppeteer/lib/esm/puppeteer/types", JSImport.Default)
-  @js.native
-  val default: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PuppeteerNode */ Any = js.native
-  
   /* import warning: parser.TsParser#tsDeclVar Dropped IArray(createBrowserFetcher, defaultArgs, executablePath, launch) */ inline def connect(
     options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_Puppeteer.ConnectOptions */ Any
   ): js.Promise[

@@ -2,7 +2,6 @@ package typings.devextreme.anon
 
 import typings.std.DOMHighResTimeStamp
 import typings.std.EventTarget
-import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -138,7 +137,7 @@ trait UIEventtargetHTMLInputEle extends StObject {
   
   /** Returns the object to which event is dispatched (its target). */
   /* standard dom */
-  val target: (EventTarget | Null) & HTMLInputElement = js.native
+  val target: EventTarget | Null = js.native
   
   /** Returns the event's timestamp as the number of milliseconds measured relative to the time origin. */
   /* standard dom */

@@ -95,9 +95,7 @@ trait PickImplonCompletePartial
   
   def onComplete(response: Any, element: JQuery, xhr: jqXHR[Any]): Unit
   @JSName("onComplete")
-  var onComplete_Original: (js.Function3[/* response */ Any, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]) & (js.UndefOr[
-    js.Function3[/* response */ Any, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]
-  ])
+  var onComplete_Original: js.Function3[/* response */ Any, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]
   
   var onError: js.UndefOr[
     js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]
@@ -149,12 +147,8 @@ trait PickImplonCompletePartial
 }
 object PickImplonCompletePartial {
   
-  inline def apply(
-    onComplete: (js.Function3[/* response */ Any, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]) & (js.UndefOr[
-      js.Function3[/* response */ Any, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]
-    ])
-  ): PickImplonCompletePartial = {
-    val __obj = js.Dynamic.literal(onComplete = onComplete.asInstanceOf[js.Any])
+  inline def apply(onComplete: (/* response */ Any, /* element */ JQuery, /* xhr */ jqXHR[Any]) => Unit): PickImplonCompletePartial = {
+    val __obj = js.Dynamic.literal(onComplete = js.Any.fromFunction3(onComplete))
     __obj.asInstanceOf[PickImplonCompletePartial]
   }
   
@@ -262,11 +256,7 @@ object PickImplonCompletePartial {
     
     inline def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
     
-    inline def setOnComplete(
-      value: (js.Function3[/* response */ Any, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]) & (js.UndefOr[
-          js.Function3[/* response */ Any, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]
-        ])
-    ): Self = StObject.set(x, "onComplete", value.asInstanceOf[js.Any])
+    inline def setOnComplete(value: (/* response */ Any, /* element */ JQuery, /* xhr */ jqXHR[Any]) => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction3(value))
     
     inline def setOnError(value: (/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[Any]) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction3(value))
     

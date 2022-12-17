@@ -14,13 +14,13 @@ trait PickImplpusherPartialPick
   
   var omitted: js.UndefOr[String] = js.undefined
   
-  var pusher: String & js.UndefOr[String]
+  var pusher: String
   
   var sidebar: js.UndefOr[String] = js.undefined
 }
 object PickImplpusherPartialPick {
   
-  inline def apply(pusher: String & js.UndefOr[String]): PickImplpusherPartialPick = {
+  inline def apply(pusher: String): PickImplpusherPartialPick = {
     val __obj = js.Dynamic.literal(pusher = pusher.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplpusherPartialPick]
   }
@@ -35,7 +35,7 @@ object PickImplpusherPartialPick {
     
     inline def setOmittedUndefined: Self = StObject.set(x, "omitted", js.undefined)
     
-    inline def setPusher(value: String & js.UndefOr[String]): Self = StObject.set(x, "pusher", value.asInstanceOf[js.Any])
+    inline def setPusher(value: String): Self = StObject.set(x, "pusher", value.asInstanceOf[js.Any])
     
     inline def setSidebar(value: String): Self = StObject.set(x, "sidebar", value.asInstanceOf[js.Any])
     

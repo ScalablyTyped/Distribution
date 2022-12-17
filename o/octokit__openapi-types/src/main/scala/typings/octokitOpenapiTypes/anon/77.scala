@@ -6,20 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `77` extends StObject {
   
-  /** @description Can be `enabled` or `disabled`. */
-  var status: js.UndefOr[String] = js.undefined
+  var content: `76`
 }
 object `77` {
   
-  inline def apply(): `77` = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(content: `76`): `77` = {
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     __obj.asInstanceOf[`77`]
   }
   
   extension [Self <: `77`](x: Self) {
     
-    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
-    
-    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setContent(value: `76`): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }
 }

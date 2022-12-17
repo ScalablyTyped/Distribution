@@ -72,7 +72,7 @@ object MappingOptionsPickPointGe {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setTooltip(value: /* datum */ Datum => NameValue): Self = StObject.set(x, "tooltip", js.Any.fromFunction1(value))
+    inline def setTooltip(value: /* datum */ Datum => NameString): Self = StObject.set(x, "tooltip", js.Any.fromFunction1(value))
     
     inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
   }

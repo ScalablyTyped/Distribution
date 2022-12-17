@@ -47,6 +47,219 @@ object mod {
     val n: js.BigInt = js.native
   }
   
+  @JSImport("@noble/ed25519", "ExtendedPoint")
+  @js.native
+  open class ExtendedPoint protected () extends StObject {
+    def this(x: js.BigInt, y: js.BigInt, z: js.BigInt, t: js.BigInt) = this()
+    
+    def add(other: ExtendedPoint): ExtendedPoint = js.native
+    
+    def double(): ExtendedPoint = js.native
+    
+    def equals(other: ExtendedPoint): Boolean = js.native
+    
+    def fromRistrettoBytes(): Unit = js.native
+    
+    def fromRistrettoHash(): Unit = js.native
+    
+    def isSmallOrder(): Boolean = js.native
+    
+    def isTorsionFree(): Boolean = js.native
+    
+    def multiply(scalar: js.BigInt): ExtendedPoint = js.native
+    def multiply(scalar: js.BigInt, affinePoint: Point): ExtendedPoint = js.native
+    def multiply(scalar: Double): ExtendedPoint = js.native
+    def multiply(scalar: Double, affinePoint: Point): ExtendedPoint = js.native
+    
+    def multiplyUnsafe(scalar: js.BigInt): ExtendedPoint = js.native
+    def multiplyUnsafe(scalar: Double): ExtendedPoint = js.native
+    
+    def negate(): ExtendedPoint = js.native
+    
+    /* private */ var precomputeWindow: Any = js.native
+    
+    def subtract(other: ExtendedPoint): ExtendedPoint = js.native
+    
+    val t: js.BigInt = js.native
+    
+    def toAffine(): Point = js.native
+    def toAffine(invZ: js.BigInt): Point = js.native
+    
+    def toRistrettoBytes(): Unit = js.native
+    
+    /* private */ var wNAF: Any = js.native
+    
+    val x: js.BigInt = js.native
+    
+    val y: js.BigInt = js.native
+    
+    val z: js.BigInt = js.native
+  }
+  object ExtendedPoint {
+    
+    @JSImport("@noble/ed25519", "ExtendedPoint")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("@noble/ed25519", "ExtendedPoint.BASE")
+    @js.native
+    def BASE: ExtendedPoint = js.native
+    inline def BASE_=(x: ExtendedPoint): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BASE")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("@noble/ed25519", "ExtendedPoint.ZERO")
+    @js.native
+    def ZERO: ExtendedPoint = js.native
+    inline def ZERO_=(x: ExtendedPoint): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    inline def fromAffine(p: Point): ExtendedPoint = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAffine")(p.asInstanceOf[js.Any]).asInstanceOf[ExtendedPoint]
+    
+    /* static member */
+    inline def normalizeZ(points: js.Array[ExtendedPoint]): js.Array[ExtendedPoint] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeZ")(points.asInstanceOf[js.Any]).asInstanceOf[js.Array[ExtendedPoint]]
+    
+    /* static member */
+    inline def toAffineBatch(points: js.Array[ExtendedPoint]): js.Array[Point] = ^.asInstanceOf[js.Dynamic].applyDynamic("toAffineBatch")(points.asInstanceOf[js.Any]).asInstanceOf[js.Array[Point]]
+  }
+  
+  @JSImport("@noble/ed25519", "Point")
+  @js.native
+  open class Point protected () extends StObject {
+    def this(x: js.BigInt, y: js.BigInt) = this()
+    
+    var _WINDOW_SIZE: js.UndefOr[Double] = js.native
+    
+    def _setWindowSize(windowSize: Double): Unit = js.native
+    
+    def add(other: Point): Point = js.native
+    
+    def equals(other: Point): Boolean = js.native
+    
+    def isTorsionFree(): Boolean = js.native
+    
+    def multiply(scalar: js.BigInt): Point = js.native
+    def multiply(scalar: Double): Point = js.native
+    
+    def negate(): Point = js.native
+    
+    def subtract(other: Point): Point = js.native
+    
+    def toHex(): String = js.native
+    
+    def toRawBytes(): js.typedarray.Uint8Array = js.native
+    
+    def toX25519(): js.typedarray.Uint8Array = js.native
+    
+    val x: js.BigInt = js.native
+    
+    val y: js.BigInt = js.native
+  }
+  object Point {
+    
+    @JSImport("@noble/ed25519", "Point")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("@noble/ed25519", "Point.BASE")
+    @js.native
+    def BASE: Point = js.native
+    inline def BASE_=(x: Point): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BASE")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("@noble/ed25519", "Point.ZERO")
+    @js.native
+    def ZERO: Point = js.native
+    inline def ZERO_=(x: Point): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    inline def fromHex(hex: Hex): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hex.asInstanceOf[js.Any]).asInstanceOf[Point]
+    inline def fromHex(hex: Hex, strict: Boolean): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hex.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Point]
+    
+    /* static member */
+    inline def fromPrivateKey(privateKey: PrivKey): js.Promise[Point] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivateKey")(privateKey.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Point]]
+  }
+  
+  @JSImport("@noble/ed25519", "RistrettoPoint")
+  @js.native
+  open class RistrettoPoint protected () extends StObject {
+    def this(ep: ExtendedPoint) = this()
+    
+    def add(other: RistrettoPoint): RistrettoPoint = js.native
+    
+    /* private */ val ep: Any = js.native
+    
+    def equals(other: RistrettoPoint): Boolean = js.native
+    
+    def multiply(scalar: js.BigInt): RistrettoPoint = js.native
+    def multiply(scalar: Double): RistrettoPoint = js.native
+    
+    def multiplyUnsafe(scalar: js.BigInt): RistrettoPoint = js.native
+    def multiplyUnsafe(scalar: Double): RistrettoPoint = js.native
+    
+    def subtract(other: RistrettoPoint): RistrettoPoint = js.native
+    
+    def toHex(): String = js.native
+    
+    def toRawBytes(): js.typedarray.Uint8Array = js.native
+  }
+  object RistrettoPoint {
+    
+    @JSImport("@noble/ed25519", "RistrettoPoint")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("@noble/ed25519", "RistrettoPoint.BASE")
+    @js.native
+    def BASE: RistrettoPoint = js.native
+    inline def BASE_=(x: RistrettoPoint): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BASE")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("@noble/ed25519", "RistrettoPoint.ZERO")
+    @js.native
+    def ZERO: RistrettoPoint = js.native
+    inline def ZERO_=(x: RistrettoPoint): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("@noble/ed25519", "RistrettoPoint.calcElligatorRistrettoMap")
+    @js.native
+    def calcElligatorRistrettoMap: Any = js.native
+    inline def calcElligatorRistrettoMap_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("calcElligatorRistrettoMap")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    inline def fromHex(hex: Hex): RistrettoPoint = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hex.asInstanceOf[js.Any]).asInstanceOf[RistrettoPoint]
+    
+    /* static member */
+    inline def hashToCurve(hex: Hex): RistrettoPoint = ^.asInstanceOf[js.Dynamic].applyDynamic("hashToCurve")(hex.asInstanceOf[js.Any]).asInstanceOf[RistrettoPoint]
+  }
+  
+  @JSImport("@noble/ed25519", "Signature")
+  @js.native
+  open class Signature protected () extends StObject {
+    def this(r: Point, s: js.BigInt) = this()
+    
+    def assertValidity(): this.type = js.native
+    
+    val r: Point = js.native
+    
+    val s: js.BigInt = js.native
+    
+    def toHex(): String = js.native
+    
+    def toRawBytes(): js.typedarray.Uint8Array = js.native
+  }
+  object Signature {
+    
+    @JSImport("@noble/ed25519", "Signature")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    inline def fromHex(hex: Hex): Signature = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hex.asInstanceOf[js.Any]).asInstanceOf[Signature]
+  }
+  
   object curve25519 {
     
     @JSImport("@noble/ed25519", "curve25519")
@@ -171,152 +384,13 @@ object mod {
   
   inline def verify(sig: SigType, message: Hex, publicKey: PubKey): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(sig.asInstanceOf[js.Any], message.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   
-  @js.native
-  trait ExtendedPoint extends StObject {
-    
-    def add(other: ExtendedPoint): ExtendedPoint = js.native
-    
-    def double(): ExtendedPoint = js.native
-    
-    def equals(other: ExtendedPoint): Boolean = js.native
-    
-    def fromRistrettoBytes(): Unit = js.native
-    
-    def fromRistrettoHash(): Unit = js.native
-    
-    def isSmallOrder(): Boolean = js.native
-    
-    def isTorsionFree(): Boolean = js.native
-    
-    def multiply(scalar: js.BigInt): ExtendedPoint = js.native
-    def multiply(scalar: js.BigInt, affinePoint: Point): ExtendedPoint = js.native
-    def multiply(scalar: Double): ExtendedPoint = js.native
-    def multiply(scalar: Double, affinePoint: Point): ExtendedPoint = js.native
-    
-    def multiplyUnsafe(scalar: js.BigInt): ExtendedPoint = js.native
-    def multiplyUnsafe(scalar: Double): ExtendedPoint = js.native
-    
-    def negate(): ExtendedPoint = js.native
-    
-    /* private */ var precomputeWindow: Any = js.native
-    
-    def subtract(other: ExtendedPoint): ExtendedPoint = js.native
-    
-    val t: js.BigInt = js.native
-    
-    def toAffine(): Point = js.native
-    def toAffine(invZ: js.BigInt): Point = js.native
-    
-    def toRistrettoBytes(): Unit = js.native
-    
-    /* private */ var wNAF: Any = js.native
-    
-    val x: js.BigInt = js.native
-    
-    val y: js.BigInt = js.native
-    
-    val z: js.BigInt = js.native
-  }
-  
   type Hex = js.typedarray.Uint8Array | String
-  
-  @js.native
-  trait Point extends StObject {
-    
-    var _WINDOW_SIZE: js.UndefOr[Double] = js.native
-    
-    def _setWindowSize(windowSize: Double): Unit = js.native
-    
-    def add(other: Point): Point = js.native
-    
-    def equals(other: Point): Boolean = js.native
-    
-    def isTorsionFree(): Boolean = js.native
-    
-    def multiply(scalar: js.BigInt): Point = js.native
-    def multiply(scalar: Double): Point = js.native
-    
-    def negate(): Point = js.native
-    
-    def subtract(other: Point): Point = js.native
-    
-    def toHex(): String = js.native
-    
-    def toRawBytes(): js.typedarray.Uint8Array = js.native
-    
-    def toX25519(): js.typedarray.Uint8Array = js.native
-    
-    val x: js.BigInt = js.native
-    
-    val y: js.BigInt = js.native
-  }
   
   type PrivKey = Hex | js.BigInt | Double
   
   type PubKey = Hex | Point
   
-  @js.native
-  trait RistrettoPoint extends StObject {
-    
-    def add(other: RistrettoPoint): RistrettoPoint = js.native
-    
-    /* private */ val ep: Any = js.native
-    
-    def equals(other: RistrettoPoint): Boolean = js.native
-    
-    def multiply(scalar: js.BigInt): RistrettoPoint = js.native
-    def multiply(scalar: Double): RistrettoPoint = js.native
-    
-    def multiplyUnsafe(scalar: js.BigInt): RistrettoPoint = js.native
-    def multiplyUnsafe(scalar: Double): RistrettoPoint = js.native
-    
-    def subtract(other: RistrettoPoint): RistrettoPoint = js.native
-    
-    def toHex(): String = js.native
-    
-    def toRawBytes(): js.typedarray.Uint8Array = js.native
-  }
-  
   type Sha512FnSync = js.UndefOr[js.Function1[/* repeated */ js.typedarray.Uint8Array, js.typedarray.Uint8Array]]
   
   type SigType = Hex | Signature
-  
-  trait Signature extends StObject {
-    
-    def assertValidity(): this.type
-    
-    val r: Point
-    
-    val s: js.BigInt
-    
-    def toHex(): String
-    
-    def toRawBytes(): js.typedarray.Uint8Array
-  }
-  object Signature {
-    
-    inline def apply(
-      assertValidity: () => Signature,
-      r: Point,
-      s: js.BigInt,
-      toHex: () => String,
-      toRawBytes: () => js.typedarray.Uint8Array
-    ): Signature = {
-      val __obj = js.Dynamic.literal(assertValidity = js.Any.fromFunction0(assertValidity), r = r.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], toHex = js.Any.fromFunction0(toHex), toRawBytes = js.Any.fromFunction0(toRawBytes))
-      __obj.asInstanceOf[Signature]
-    }
-    
-    extension [Self <: Signature](x: Self) {
-      
-      inline def setAssertValidity(value: () => Signature): Self = StObject.set(x, "assertValidity", js.Any.fromFunction0(value))
-      
-      inline def setR(value: Point): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
-      
-      inline def setS(value: js.BigInt): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
-      
-      inline def setToHex(value: () => String): Self = StObject.set(x, "toHex", js.Any.fromFunction0(value))
-      
-      inline def setToRawBytes(value: () => js.typedarray.Uint8Array): Self = StObject.set(x, "toRawBytes", js.Any.fromFunction0(value))
-    }
-  }
 }

@@ -20,7 +20,7 @@ trait BuildIncrementalmetafileM extends StObject {
   var mangleCache: js.UndefOr[Record[String, String | `false`]] = js.undefined
   
   /** Only when "metafile: true" */
-  var metafile: js.UndefOr[Metafile] & Metafile
+  var metafile: js.UndefOr[Metafile] = js.undefined
   
   /** Only when "write: false" */
   var outputFiles: js.UndefOr[js.Array[OutputFile]] = js.undefined
@@ -36,13 +36,8 @@ trait BuildIncrementalmetafileM extends StObject {
 }
 object BuildIncrementalmetafileM {
   
-  inline def apply(
-    errors: js.Array[Message],
-    metafile: js.UndefOr[Metafile] & Metafile,
-    rebuild: BuildInvalidate,
-    warnings: js.Array[Message]
-  ): BuildIncrementalmetafileM = {
-    val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], metafile = metafile.asInstanceOf[js.Any], rebuild = rebuild.asInstanceOf[js.Any], warnings = warnings.asInstanceOf[js.Any])
+  inline def apply(errors: js.Array[Message], rebuild: BuildInvalidate, warnings: js.Array[Message]): BuildIncrementalmetafileM = {
+    val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], rebuild = rebuild.asInstanceOf[js.Any], warnings = warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildIncrementalmetafileM]
   }
   
@@ -56,7 +51,9 @@ object BuildIncrementalmetafileM {
     
     inline def setMangleCacheUndefined: Self = StObject.set(x, "mangleCache", js.undefined)
     
-    inline def setMetafile(value: js.UndefOr[Metafile] & Metafile): Self = StObject.set(x, "metafile", value.asInstanceOf[js.Any])
+    inline def setMetafile(value: Metafile): Self = StObject.set(x, "metafile", value.asInstanceOf[js.Any])
+    
+    inline def setMetafileUndefined: Self = StObject.set(x, "metafile", js.undefined)
     
     inline def setOutputFiles(value: js.Array[OutputFile]): Self = StObject.set(x, "outputFiles", value.asInstanceOf[js.Any])
     

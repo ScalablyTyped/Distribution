@@ -1,5 +1,6 @@
 package typings.ow
 
+import org.scalablytyped.runtime.Shortcut
 import typings.ow.distModifiersMod.Modifiers
 import typings.ow.distPredicatesBasePredicateMod.BasePredicate
 import typings.ow.distPredicatesMod.Predicates
@@ -12,14 +13,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object distMod {
+object distMod extends Shortcut {
   
-  @JSImport("ow/dist", JSImport.Namespace)
+  @JSImport("ow/dist", JSImport.Default)
   @js.native
-  val ^ : js.Any = js.native
-  
-  inline def default[T](`object`: T): T & Predicates = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(`object`.asInstanceOf[js.Any]).asInstanceOf[T & Predicates]
-  inline def default[T](`object`: T, options: PredicateOptions): T & Predicates = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T & Predicates]
+  val default: Ow = js.native
   
   @JSImport("ow/dist", "AnyPredicate")
   @js.native
@@ -265,4 +263,9 @@ object distMod {
   }
   
   type ReusableValidator[T] = js.Function2[/* value */ Any | T, /* label */ js.UndefOr[String], Unit]
+  
+  type _To = Ow
+  
+  /* This means you don't have to write `default`, but can instead just say `distMod.foo` */
+  override def _to: Ow = default
 }

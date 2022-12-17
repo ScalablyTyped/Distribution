@@ -1,7 +1,6 @@
 package typings.ow
 
 import typings.ow.distPredicatesBasePredicateMod.BasePredicate
-import typings.ow.distPredicatesMod.Predicates
 import typings.ow.distPredicatesPredicateMod.PredicateOptions
 import typings.std.ArrayBufferLike
 import typings.std.Map
@@ -13,13 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* from `exports` in `package.json` */
 object devOnlyMod {
-  
-  @JSImport("ow/dev-only", JSImport.Namespace)
-  @js.native
-  val ^ : js.Any = js.native
-  
-  inline def default[T](`object`: T): T & Predicates = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(`object`.asInstanceOf[js.Any]).asInstanceOf[T & Predicates]
-  inline def default[T](`object`: T, options: PredicateOptions): T & Predicates = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T & Predicates]
   
   @JSImport("ow/dev-only", "AnyPredicate")
   @js.native

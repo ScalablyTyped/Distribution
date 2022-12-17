@@ -5,7 +5,6 @@ import typings.babylonjs.anon.Animations
 import typings.babylonjs.anon.PartialIEnvironmentHelper
 import typings.babylonjs.camerasVRVrExperienceHelperMod.VRExperienceHelperOptions
 import typings.babylonjs.cullingRayMod.TrianglePickingPredicate
-import typings.babylonjs.meshesMeshMod.Mesh
 import typings.babylonjs.particlesIparticlesystemMod.IParticleSystem
 import typings.babylonjs.physicsIphysicsengineMod.IPhysicsEngine
 import typings.babylonjs.physicsIphysicsengineMod.IPhysicsEnginePlugin
@@ -1463,114 +1462,114 @@ object babylonjsSceneAugmentingMod {
       * @param setGlobalEnvTexture has default true indicating that scene.environmentTexture must match the current skybox texture
       * @returns a new mesh holding the sky box
       */
-    def createDefaultSkybox(): Nullable[Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean): Nullable[Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean, scale: Double): Nullable[Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean, scale: Double, blur: Double): Nullable[Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean, scale: Double, blur: Double, setGlobalEnvTexture: Boolean): Nullable[Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean, scale: Double, blur: Unit, setGlobalEnvTexture: Boolean): Nullable[Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean, scale: Unit, blur: Double): Nullable[Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean, scale: Unit, blur: Double, setGlobalEnvTexture: Boolean): Nullable[Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean, scale: Unit, blur: Unit, setGlobalEnvTexture: Boolean): Nullable[Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: Unit, pbr: Unit, scale: Double): Nullable[Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: Unit, pbr: Unit, scale: Double, blur: Double): Nullable[Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: Unit, pbr: Unit, scale: Double, blur: Double, setGlobalEnvTexture: Boolean): Nullable[Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: Unit, pbr: Unit, scale: Double, blur: Unit, setGlobalEnvTexture: Boolean): Nullable[Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: Unit, pbr: Unit, scale: Unit, blur: Double): Nullable[Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: Unit, pbr: Unit, scale: Unit, blur: Double, setGlobalEnvTexture: Boolean): Nullable[Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: Unit, pbr: Unit, scale: Unit, blur: Unit, setGlobalEnvTexture: Boolean): Nullable[Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture): Nullable[Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture, pbr: Boolean): Nullable[Mesh] = js.native
+    def createDefaultSkybox(): Nullable[typings.babylonjs.meshesMeshMod.Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean): Nullable[typings.babylonjs.meshesMeshMod.Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean, scale: Double): Nullable[typings.babylonjs.meshesMeshMod.Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean, scale: Double, blur: Double): Nullable[typings.babylonjs.meshesMeshMod.Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean, scale: Double, blur: Double, setGlobalEnvTexture: Boolean): Nullable[typings.babylonjs.meshesMeshMod.Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean, scale: Double, blur: Unit, setGlobalEnvTexture: Boolean): Nullable[typings.babylonjs.meshesMeshMod.Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean, scale: Unit, blur: Double): Nullable[typings.babylonjs.meshesMeshMod.Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean, scale: Unit, blur: Double, setGlobalEnvTexture: Boolean): Nullable[typings.babylonjs.meshesMeshMod.Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean, scale: Unit, blur: Unit, setGlobalEnvTexture: Boolean): Nullable[typings.babylonjs.meshesMeshMod.Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Unit, scale: Double): Nullable[typings.babylonjs.meshesMeshMod.Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Unit, scale: Double, blur: Double): Nullable[typings.babylonjs.meshesMeshMod.Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Unit, scale: Double, blur: Double, setGlobalEnvTexture: Boolean): Nullable[typings.babylonjs.meshesMeshMod.Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Unit, scale: Double, blur: Unit, setGlobalEnvTexture: Boolean): Nullable[typings.babylonjs.meshesMeshMod.Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Unit, scale: Unit, blur: Double): Nullable[typings.babylonjs.meshesMeshMod.Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Unit, scale: Unit, blur: Double, setGlobalEnvTexture: Boolean): Nullable[typings.babylonjs.meshesMeshMod.Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Unit, scale: Unit, blur: Unit, setGlobalEnvTexture: Boolean): Nullable[typings.babylonjs.meshesMeshMod.Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture): Nullable[typings.babylonjs.meshesMeshMod.Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture, pbr: Boolean): Nullable[typings.babylonjs.meshesMeshMod.Mesh] = js.native
     def createDefaultSkybox(
       environmentTexture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture,
       pbr: Boolean,
       scale: Double
-    ): Nullable[Mesh] = js.native
+    ): Nullable[typings.babylonjs.meshesMeshMod.Mesh] = js.native
     def createDefaultSkybox(
       environmentTexture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture,
       pbr: Boolean,
       scale: Double,
       blur: Double
-    ): Nullable[Mesh] = js.native
+    ): Nullable[typings.babylonjs.meshesMeshMod.Mesh] = js.native
     def createDefaultSkybox(
       environmentTexture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture,
       pbr: Boolean,
       scale: Double,
       blur: Double,
       setGlobalEnvTexture: Boolean
-    ): Nullable[Mesh] = js.native
+    ): Nullable[typings.babylonjs.meshesMeshMod.Mesh] = js.native
     def createDefaultSkybox(
       environmentTexture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture,
       pbr: Boolean,
       scale: Double,
       blur: Unit,
       setGlobalEnvTexture: Boolean
-    ): Nullable[Mesh] = js.native
+    ): Nullable[typings.babylonjs.meshesMeshMod.Mesh] = js.native
     def createDefaultSkybox(
       environmentTexture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture,
       pbr: Boolean,
       scale: Unit,
       blur: Double
-    ): Nullable[Mesh] = js.native
+    ): Nullable[typings.babylonjs.meshesMeshMod.Mesh] = js.native
     def createDefaultSkybox(
       environmentTexture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture,
       pbr: Boolean,
       scale: Unit,
       blur: Double,
       setGlobalEnvTexture: Boolean
-    ): Nullable[Mesh] = js.native
+    ): Nullable[typings.babylonjs.meshesMeshMod.Mesh] = js.native
     def createDefaultSkybox(
       environmentTexture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture,
       pbr: Boolean,
       scale: Unit,
       blur: Unit,
       setGlobalEnvTexture: Boolean
-    ): Nullable[Mesh] = js.native
+    ): Nullable[typings.babylonjs.meshesMeshMod.Mesh] = js.native
     def createDefaultSkybox(
       environmentTexture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture,
       pbr: Unit,
       scale: Double
-    ): Nullable[Mesh] = js.native
+    ): Nullable[typings.babylonjs.meshesMeshMod.Mesh] = js.native
     def createDefaultSkybox(
       environmentTexture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture,
       pbr: Unit,
       scale: Double,
       blur: Double
-    ): Nullable[Mesh] = js.native
+    ): Nullable[typings.babylonjs.meshesMeshMod.Mesh] = js.native
     def createDefaultSkybox(
       environmentTexture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture,
       pbr: Unit,
       scale: Double,
       blur: Double,
       setGlobalEnvTexture: Boolean
-    ): Nullable[Mesh] = js.native
+    ): Nullable[typings.babylonjs.meshesMeshMod.Mesh] = js.native
     def createDefaultSkybox(
       environmentTexture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture,
       pbr: Unit,
       scale: Double,
       blur: Unit,
       setGlobalEnvTexture: Boolean
-    ): Nullable[Mesh] = js.native
+    ): Nullable[typings.babylonjs.meshesMeshMod.Mesh] = js.native
     def createDefaultSkybox(
       environmentTexture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture,
       pbr: Unit,
       scale: Unit,
       blur: Double
-    ): Nullable[Mesh] = js.native
+    ): Nullable[typings.babylonjs.meshesMeshMod.Mesh] = js.native
     def createDefaultSkybox(
       environmentTexture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture,
       pbr: Unit,
       scale: Unit,
       blur: Double,
       setGlobalEnvTexture: Boolean
-    ): Nullable[Mesh] = js.native
+    ): Nullable[typings.babylonjs.meshesMeshMod.Mesh] = js.native
     def createDefaultSkybox(
       environmentTexture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture,
       pbr: Unit,
       scale: Unit,
       blur: Unit,
       setGlobalEnvTexture: Boolean
-    ): Nullable[Mesh] = js.native
+    ): Nullable[typings.babylonjs.meshesMeshMod.Mesh] = js.native
     
     /**
       * Creates a new VREXperienceHelper

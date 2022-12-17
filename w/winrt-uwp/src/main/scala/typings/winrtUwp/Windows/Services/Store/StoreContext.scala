@@ -112,7 +112,7 @@ trait StoreContext extends StObject {
   def getUserCollectionWithPagingAsync(productKinds: IIterable[String], maxItemsToRetrievePerPage: Double): IPromiseWithIAsyncOperation[StoreProductPagedQueryResult] = js.native
   
   /** Raised when the status of the app's license changes (for example, the trial period has expired or the user has purchased the full version of the app). */
-  def onofflinelicenseschanged(ev: js.Object & WinRTEvent[StoreContext]): Unit = js.native
+  def onofflinelicenseschanged(ev: WinRTEvent[StoreContext]): Unit = js.native
   /** Raised when the status of the app's license changes (for example, the trial period has expired or the user has purchased the full version of the app). */
   @JSName("onofflinelicenseschanged")
   var onofflinelicenseschanged_Original: TypedEventHandler[StoreContext, js.Object] = js.native

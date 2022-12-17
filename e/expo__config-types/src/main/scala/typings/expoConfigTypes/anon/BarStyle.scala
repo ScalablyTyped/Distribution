@@ -2,6 +2,9 @@ package typings.expoConfigTypes.anon
 
 import typings.expoConfigTypes.expoConfigTypesStrings.`dark-content`
 import typings.expoConfigTypes.expoConfigTypesStrings.`light-content`
+import typings.expoConfigTypes.expoConfigTypesStrings.`sticky-immersive`
+import typings.expoConfigTypes.expoConfigTypesStrings.immersive
+import typings.expoConfigTypes.expoConfigTypesStrings.leanback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,24 +12,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BarStyle extends StObject {
   
   /**
-    * Specifies the background color of the status bar. Defaults to `#00000000` (transparent) for `dark-content` bar style and `#00000088` (semi-transparent black) for `light-content` bar style
+    * Specifies the background color of the navigation bar.
     */
   var backgroundColor: js.UndefOr[String] = js.undefined
   
   /**
-    * Configures the status bar icons to have a light or dark color. Valid values: `light-content`, `dark-content`. Defaults to `dark-content`
+    * Configure the navigation bar icons to have a light or dark color. Supported on Android Oreo and newer. Valid values: `'light-content'`, `'dark-content'`
     */
   var barStyle: js.UndefOr[`light-content` | `dark-content`] = js.undefined
   
   /**
-    * Instructs the system whether the status bar should be visible or not. Defaults to `false`
+    * Determines how and when the navigation bar is shown. [Learn more](https://developer.android.com/training/system-ui/immersive). Requires `expo-navigation-bar` be installed in your project. Valid values: `leanback`, `immersive`, `sticky-immersive`
+    *
+    *  `leanback` results in the navigation bar being hidden until the first touch gesture is registered.
+    *
+    *  `immersive` results in the navigation bar being hidden until the user swipes up from the edge where the navigation bar is hidden.
+    *
+    *  `sticky-immersive` is identical to `'immersive'` except that the navigation bar will be semi-transparent and will be hidden again after a short period of time.
     */
-  var hidden: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * Sets `android:windowTranslucentStatus` in `styles.xml`. When false, the system status bar pushes the content of your app down (similar to `position: relative`). When true, the status bar floats above the content in your app (similar to `position: absolute`). Defaults to `true` to match the iOS status bar behavior (which can only float above content).
-    */
-  var translucent: js.UndefOr[Boolean] = js.undefined
+  var visible: js.UndefOr[leanback | immersive | `sticky-immersive`] = js.undefined
 }
 object BarStyle {
   
@@ -45,12 +49,8 @@ object BarStyle {
     
     inline def setBarStyleUndefined: Self = StObject.set(x, "barStyle", js.undefined)
     
-    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    inline def setVisible(value: leanback | immersive | `sticky-immersive`): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
-    
-    inline def setTranslucent(value: Boolean): Self = StObject.set(x, "translucent", value.asInstanceOf[js.Any])
-    
-    inline def setTranslucentUndefined: Self = StObject.set(x, "translucent", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

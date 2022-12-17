@@ -90,7 +90,7 @@ trait PickImplonVisiblePartialP
   
   def onVisible($module: JQuery): Unit
   @JSName("onVisible")
-  var onVisible_Original: (js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]])
+  var onVisible_Original: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]
   
   var performance: js.UndefOr[Boolean] = js.undefined
   
@@ -122,9 +122,7 @@ trait PickImplonVisiblePartialP
 }
 object PickImplonVisiblePartialP {
   
-  inline def apply(
-    onVisible: (js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]])
-  ): PickImplonVisiblePartialP = {
+  inline def apply(onVisible: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]): PickImplonVisiblePartialP = {
     val __obj = js.Dynamic.literal(onVisible = onVisible.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonVisiblePartialP]
   }
@@ -259,9 +257,7 @@ object PickImplonVisiblePartialP {
     
     inline def setOnUnplaceableUndefined: Self = StObject.set(x, "onUnplaceable", js.undefined)
     
-    inline def setOnVisible(
-      value: (js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]])
-    ): Self = StObject.set(x, "onVisible", value.asInstanceOf[js.Any])
+    inline def setOnVisible(value: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]): Self = StObject.set(x, "onVisible", value.asInstanceOf[js.Any])
     
     inline def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
     

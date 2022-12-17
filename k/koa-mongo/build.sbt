@@ -1,27 +1,27 @@
 organization := "org.scalablytyped"
 name := "koa-mongo"
-version := "1.9-dt-20220422Z-0a2f1a"
+version := "1.9-dt-20220422Z-5dc24b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "accepts" % "1.3-dt-20211202Z-3fcf45",
-  "org.scalablytyped" %%% "bson" % "4.7.0-16c8c2",
-  "org.scalablytyped" %%% "buffer" % "6.0.3-61ce95",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20220818Z-fdb527",
+  "org.scalablytyped" %%% "accepts" % "1.3-dt-20211202Z-216748",
+  "org.scalablytyped" %%% "bson" % "4.7.0-862777",
+  "org.scalablytyped" %%% "buffer" % "6.0.3-053422",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20220818Z-36a2d0",
   "org.scalablytyped" %%% "content-disposition" % "0.5-dt-20220505Z-0b924b",
-  "org.scalablytyped" %%% "cookies" % "0.7-dt-20211202Z-bf413b",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-2966c9",
-  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-5cc384",
-  "org.scalablytyped" %%% "generic-pool" % "3.9.0-92c569",
-  "org.scalablytyped" %%% "keygrip" % "1.0-dt-20211202Z-a3843d",
-  "org.scalablytyped" %%% "koa" % "2.13.1-dt-20220818Z-f9052f",
-  "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-4d0efa",
-  "org.scalablytyped" %%% "mongodb" % "4.11.0-d3cec1",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-4346d8",
-  "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-fa36ba",
-  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-088887",
-  "org.scalablytyped" %%% "std" % "4.9-c133ce")
+  "org.scalablytyped" %%% "cookies" % "0.7-dt-20211202Z-683786",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-cb1e35",
+  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-5f1c10",
+  "org.scalablytyped" %%% "generic-pool" % "3.9.0-0d26e8",
+  "org.scalablytyped" %%% "keygrip" % "1.0-dt-20211202Z-10d7c9",
+  "org.scalablytyped" %%% "koa" % "2.13.1-dt-20220818Z-58744c",
+  "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-85c9dc",
+  "org.scalablytyped" %%% "mongodb" % "4.11.0-ad052b",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-def929",
+  "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-137229",
+  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-d3379f",
+  "org.scalablytyped" %%% "std" % "4.9-5f989f")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

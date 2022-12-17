@@ -13,7 +13,7 @@ object srcDeployCodeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def deployContract(props: AddressMap): js.Promise[TransactionResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("deployContract")(props.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TransactionResponse]]
+  inline def deployContract(props: Args): js.Promise[TransactionResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("deployContract")(props.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TransactionResponse]]
   
-  inline def deployContractByName(props: Args): js.Promise[TransactionResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("deployContractByName")(props.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TransactionResponse]]
+  inline def deployContractByName(props: AddressMap): js.Promise[TransactionResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("deployContractByName")(props.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TransactionResponse]]
 }

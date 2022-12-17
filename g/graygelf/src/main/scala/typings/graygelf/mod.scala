@@ -270,7 +270,7 @@ object mod {
     def alert(short_message: String, args: String*): GelfMessage = js.native
     def alert(short_message: js.Error, args: String*): GelfMessage = js.native
     @JSName("alert")
-    var alert_Original: (js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage]) & A = js.native
+    var alert_Original: js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage] = js.native
     
     /**
       * Should always compress
@@ -296,27 +296,27 @@ object mod {
     def crit(short_message: String, args: String*): GelfMessage = js.native
     def crit(short_message: js.Error, args: String*): GelfMessage = js.native
     @JSName("crit")
-    var crit_Original: (js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage]) & A = js.native
+    var crit_Original: js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage] = js.native
     
     def debug(short_message: String, args: String*): GelfMessage = js.native
     def debug(short_message: js.Error, args: String*): GelfMessage = js.native
     @JSName("debug")
-    var debug_Original: (js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage]) & A = js.native
+    var debug_Original: js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage] = js.native
     
     def emerg(short_message: String, args: String*): GelfMessage = js.native
     def emerg(short_message: js.Error, args: String*): GelfMessage = js.native
     @JSName("emerg")
-    var emerg_Original: (js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage]) & A = js.native
+    var emerg_Original: js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage] = js.native
     
     def err(short_message: String, args: String*): GelfMessage = js.native
     def err(short_message: js.Error, args: String*): GelfMessage = js.native
     @JSName("err")
-    var err_Original: (js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage]) & A = js.native
+    var err_Original: js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage] = js.native
     
     def error(short_message: String, args: String*): GelfMessage = js.native
     def error(short_message: js.Error, args: String*): GelfMessage = js.native
     @JSName("error")
-    var error_Original: (js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage]) & A = js.native
+    var error_Original: js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage] = js.native
     
     /**
       * Setup global custom fields to be passed with every message
@@ -340,12 +340,12 @@ object mod {
     def info(short_message: String, args: String*): GelfMessage = js.native
     def info(short_message: js.Error, args: String*): GelfMessage = js.native
     @JSName("info")
-    var info_Original: (js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage]) & A = js.native
+    var info_Original: js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage] = js.native
     
     def notice(short_message: String, args: String*): GelfMessage = js.native
     def notice(short_message: js.Error, args: String*): GelfMessage = js.native
     @JSName("notice")
-    var notice_Original: (js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage]) & A = js.native
+    var notice_Original: js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage] = js.native
     
     def on(evt: Event): Unit = js.native
     @JSName("on")
@@ -358,7 +358,7 @@ object mod {
     def panic(short_message: String, args: String*): GelfMessage = js.native
     def panic(short_message: js.Error, args: String*): GelfMessage = js.native
     @JSName("panic")
-    var panic_Original: (js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage]) & A = js.native
+    var panic_Original: js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage] = js.native
     
     /**
       * Send a complete custom GELF message.
@@ -376,12 +376,12 @@ object mod {
     def warn(short_message: String, args: String*): GelfMessage = js.native
     def warn(short_message: js.Error, args: String*): GelfMessage = js.native
     @JSName("warn")
-    var warn_Original: (js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage]) & A = js.native
+    var warn_Original: js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage] = js.native
     
     def warning(short_message: String, args: String*): GelfMessage = js.native
     def warning(short_message: js.Error, args: String*): GelfMessage = js.native
     @JSName("warning")
-    var warning_Original: (js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage]) & A = js.native
+    var warning_Original: js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage] = js.native
     
     /**
       * send udp message
@@ -395,8 +395,32 @@ object mod {
     extends StObject
        with Instance {
     
+    @JSName("alert")
+    var alert_Original_graygelf: (js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage]) & A = js.native
+    
+    @JSName("crit")
+    var crit_Original_graygelf: (js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage]) & A = js.native
+    
+    @JSName("debug")
+    var debug_Original_graygelf: (js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage]) & A = js.native
+    
+    @JSName("emerg")
+    var emerg_Original_graygelf: (js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage]) & A = js.native
+    
+    @JSName("err")
+    var err_Original_graygelf: (js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage]) & A = js.native
+    
+    @JSName("error")
+    var error_Original_graygelf: (js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage]) & A = js.native
+    
     @JSName("fields")
     var fields_graygelf: Facility = js.native
+    
+    @JSName("info")
+    var info_Original_graygelf: (js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage]) & A = js.native
+    
+    @JSName("notice")
+    var notice_Original_graygelf: (js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage]) & A = js.native
     
     @JSName("on")
     var on_Original_graygelf: EventListener = js.native
@@ -435,6 +459,15 @@ object mod {
       */
     @JSName("once")
     def once_message(event: message, cb: js.Function1[/* message */ GelfMessage, Unit]): Unit = js.native
+    
+    @JSName("panic")
+    var panic_Original_graygelf: (js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage]) & A = js.native
+    
+    @JSName("warn")
+    var warn_Original_graygelf: (js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage]) & A = js.native
+    
+    @JSName("warning")
+    var warning_Original_graygelf: (js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage]) & A = js.native
   }
   
   type setup = String | AlwaysCompress

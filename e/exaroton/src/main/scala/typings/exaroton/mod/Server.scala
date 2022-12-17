@@ -1,7 +1,6 @@
 package typings.exaroton.mod
 
 import typings.exaroton.anon.CRASHED
-import typings.exaroton.exarotonBooleans.`false`
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -185,7 +184,7 @@ open class Server protected () extends EventEmitter {
   /**
     * Check if this is an owned or shared server
     */
-  val shared: (`false` & Boolean) | Boolean = js.native
+  val shared: Boolean = js.native
   
   /**
     * Server software

@@ -1,6 +1,5 @@
 package typings.antDesignReactNative.anon
 
-import typings.react.mod.ReactNode
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Readonly<@ant-design/react-native.@ant-design/react-native/lib/picker/MultiPickerProps.default> & std.Readonly<{  children :react.react.ReactNode | undefined}> */
 trait ReadonlydefaultReadonlych extends StObject {
   
-  val children: js.UndefOr[Any] & js.UndefOr[ReactNode]
+  val children: js.UndefOr[Any] = js.undefined
   
   val onScrollChange: js.UndefOr[js.Function2[/* v */ js.UndefOr[Any], /* i */ js.UndefOr[Double], Unit]] = js.undefined
   
@@ -24,14 +23,16 @@ trait ReadonlydefaultReadonlych extends StObject {
 }
 object ReadonlydefaultReadonlych {
   
-  inline def apply(children: js.UndefOr[Any] & js.UndefOr[ReactNode]): ReadonlydefaultReadonlych = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+  inline def apply(): ReadonlydefaultReadonlych = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReadonlydefaultReadonlych]
   }
   
   extension [Self <: ReadonlydefaultReadonlych](x: Self) {
     
-    inline def setChildren(value: js.UndefOr[Any] & js.UndefOr[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setOnScrollChange(value: (/* v */ js.UndefOr[Any], /* i */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "onScrollChange", js.Any.fromFunction2(value))
     

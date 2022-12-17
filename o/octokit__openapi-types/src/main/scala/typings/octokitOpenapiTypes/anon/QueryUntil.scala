@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait QueryUntil extends StObject {
   
-  var path: OwnerRepo
+  var path: OwnerString
   
   var query: Until
 }
 object QueryUntil {
   
-  inline def apply(path: OwnerRepo, query: Until): QueryUntil = {
+  inline def apply(path: OwnerString, query: Until): QueryUntil = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryUntil]
   }
   
   extension [Self <: QueryUntil](x: Self) {
     
-    inline def setPath(value: OwnerRepo): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: OwnerString): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     inline def setQuery(value: Until): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }

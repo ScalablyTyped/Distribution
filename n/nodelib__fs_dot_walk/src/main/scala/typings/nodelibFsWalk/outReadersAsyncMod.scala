@@ -1,6 +1,7 @@
 package typings.nodelibFsWalk
 
 import typings.node.eventsMod.EventEmitter
+import typings.nodelibFsWalk.anon.Typeofscandir
 import typings.nodelibFsWalk.outTypesMod.Entry
 import typings.nodelibFsWalk.outTypesMod.Errno
 import org.scalablytyped.runtime.StObject
@@ -35,7 +36,7 @@ object outReadersAsyncMod {
     
     /* private */ val _queue: Any = js.native
     
-    /* protected */ val _scandir: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fsScandir.scandir */ Any = js.native
+    /* protected */ val _scandir: Typeofscandir = js.native
     
     /* private */ var _worker: Any = js.native
     

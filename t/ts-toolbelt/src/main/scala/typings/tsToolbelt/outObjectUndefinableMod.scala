@@ -31,7 +31,7 @@ object outObjectUndefinableMod {
   @js.native
   trait UndefinableDeep[O] extends StObject
   
-  type UndefinableFlat[O] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof O ]: O[K] | undefined} */ js.Any) & js.Object
+  type UndefinableFlat[O] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof O ]: O[K] | undefined} */ js.Any
   
   /**
     * @hidden

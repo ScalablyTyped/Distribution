@@ -27,7 +27,7 @@ object tablePaginationTablePaginationActionsMod extends Shortcut {
     var backIconButtonProps: js.UndefOr[
         Partial[
           IconButtonProps[
-            /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.DefaultComponent['defaultComponent'] */ js.Any, 
+            /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKey['defaultComponent'] */ js.Any, 
             js.Object
           ]
         ]
@@ -38,7 +38,7 @@ object tablePaginationTablePaginationActionsMod extends Shortcut {
     var nextIconButtonProps: js.UndefOr[
         Partial[
           IconButtonProps[
-            /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.DefaultComponent['defaultComponent'] */ js.Any, 
+            /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKey['defaultComponent'] */ js.Any, 
             js.Object
           ]
         ]

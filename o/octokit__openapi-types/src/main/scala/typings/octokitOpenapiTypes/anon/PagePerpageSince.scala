@@ -1,18 +1,10 @@
 package typings.octokitOpenapiTypes.anon
 
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.asc
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.created_
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.created_at
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.desc
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.updated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait PagePerpageSince extends StObject {
-  
-  /** The direction to sort results. Ignored without `sort` parameter. */
-  var direction: js.UndefOr[asc | desc] = js.undefined
   
   /** Page number of the results to fetch. */
   var page: js.UndefOr[Double] = js.undefined
@@ -22,8 +14,6 @@ trait PagePerpageSince extends StObject {
   
   /** Only show notifications updated after the given time. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`. */
   var since: js.UndefOr[String] = js.undefined
-  
-  var sort: js.UndefOr[created_ | updated | created_at] = js.undefined
 }
 object PagePerpageSince {
   
@@ -33,10 +23,6 @@ object PagePerpageSince {
   }
   
   extension [Self <: PagePerpageSince](x: Self) {
-    
-    inline def setDirection(value: asc | desc): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
-    
-    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
@@ -49,9 +35,5 @@ object PagePerpageSince {
     inline def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     
     inline def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
-    
-    inline def setSort(value: created_ | updated | created_at): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
-    
-    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
   }
 }

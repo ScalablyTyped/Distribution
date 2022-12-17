@@ -31,7 +31,7 @@ object outObjectCompulsoryMod {
   @js.native
   trait CompulsoryDeep[O] extends StObject
   
-  type CompulsoryFlat[O] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof O ]: -? ts-toolbelt.ts-toolbelt/out/Union/NonNullable.NonNullable<O[K]>} */ js.Any) & js.Object
+  type CompulsoryFlat[O] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof O ]: -? ts-toolbelt.ts-toolbelt/out/Union/NonNullable.NonNullable<O[K]>} */ js.Any
   
   type CompulsoryPart[O /* <: js.Object */, depth /* <: Depth */] = /* import warning: importer.ImportType#apply Failed type conversion: ts-toolbelt.anon.DeepFlat<O>[depth] */ js.Any
   

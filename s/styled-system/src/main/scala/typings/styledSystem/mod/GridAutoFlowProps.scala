@@ -1,5 +1,6 @@
 package typings.styledSystem.mod
 
+import typings.csstype.mod.Property.GridAutoFlow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,12 +13,7 @@ trait GridAutoFlowProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends S
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-flow)
     */
-  var gridAutoFlow: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoFlow */ js.Any, 
-      ThemeType
-    ]
-  ] = js.undefined
+  var gridAutoFlow: js.UndefOr[ResponsiveValue[GridAutoFlow, ThemeType]] = js.undefined
 }
 object GridAutoFlowProps {
   
@@ -28,19 +24,12 @@ object GridAutoFlowProps {
   
   extension [Self <: GridAutoFlowProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & GridAutoFlowProps[ThemeType]) {
     
-    inline def setGridAutoFlow(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoFlow */ js.Any, 
-          ThemeType
-        ]
-    ): Self = StObject.set(x, "gridAutoFlow", value.asInstanceOf[js.Any])
+    inline def setGridAutoFlow(value: ResponsiveValue[GridAutoFlow, ThemeType]): Self = StObject.set(x, "gridAutoFlow", value.asInstanceOf[js.Any])
     
     inline def setGridAutoFlowNull: Self = StObject.set(x, "gridAutoFlow", null)
     
     inline def setGridAutoFlowUndefined: Self = StObject.set(x, "gridAutoFlow", js.undefined)
     
-    inline def setGridAutoFlowVarargs(
-      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoFlow */ js.Any) | Null)*
-    ): Self = StObject.set(x, "gridAutoFlow", js.Array(value :_*))
+    inline def setGridAutoFlowVarargs(value: (GridAutoFlow | Null)*): Self = StObject.set(x, "gridAutoFlow", js.Array(value*))
   }
 }

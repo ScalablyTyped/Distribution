@@ -2,7 +2,7 @@ package typings.maplibreGl.mod
 
 import typings.mapboxPointGeometry.mod.^
 import typings.maplibreGl.anon.TypeofsetTimeout
-import typings.maplibreGl.anon.`2`
+import typings.maplibreGl.anon.`6`
 import typings.maplibreGl.maplibreGlStrings.active
 import typings.maplibreGl.maplibreGlStrings.inactive
 import typings.maplibreGl.maplibreGlStrings.pending
@@ -75,7 +75,7 @@ open class Marker () extends Evented {
   var _state: inactive | pending | active = js.native
   
   def _update(): scala.Unit = js.native
-  def _update(e: `2`): scala.Unit = js.native
+  def _update(e: `6`): scala.Unit = js.native
   
   /**
   	 * Attaches the `Marker` to a `Map` object.

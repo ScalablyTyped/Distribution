@@ -14,7 +14,7 @@ trait PickImplactionURLPartialP
   
   var actionText: js.UndefOr[String] = js.undefined
   
-  var actionURL: String & js.UndefOr[String]
+  var actionURL: String
   
   var categories: js.UndefOr[String] = js.undefined
   
@@ -34,7 +34,7 @@ trait PickImplactionURLPartialP
 }
 object PickImplactionURLPartialP {
   
-  inline def apply(actionURL: String & js.UndefOr[String]): PickImplactionURLPartialP = {
+  inline def apply(actionURL: String): PickImplactionURLPartialP = {
     val __obj = js.Dynamic.literal(actionURL = actionURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplactionURLPartialP]
   }
@@ -47,7 +47,7 @@ object PickImplactionURLPartialP {
     
     inline def setActionTextUndefined: Self = StObject.set(x, "actionText", js.undefined)
     
-    inline def setActionURL(value: String & js.UndefOr[String]): Self = StObject.set(x, "actionURL", value.asInstanceOf[js.Any])
+    inline def setActionURL(value: String): Self = StObject.set(x, "actionURL", value.asInstanceOf[js.Any])
     
     inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     

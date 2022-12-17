@@ -44,7 +44,7 @@ trait Primnamebool extends StObject {
   def isEmpty(args: Any*): Boolean = js.native
   
   /** The name of the type, if any. */
-  var name: (string | bool | number) & bool = js.native
+  var name: string | bool | number = js.native
   
   /** The origin file of the type. */
   var origin: String = js.native

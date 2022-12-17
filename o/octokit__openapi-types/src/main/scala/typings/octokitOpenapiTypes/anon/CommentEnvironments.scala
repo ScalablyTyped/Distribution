@@ -24,7 +24,7 @@ trait CommentEnvironments extends StObject {
     */
   var state: approved | rejected
   
-  var user: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
+  var user: Avatarurl
 }
 object CommentEnvironments {
   
@@ -32,7 +32,7 @@ object CommentEnvironments {
     comment: String,
     environments: js.Array[CreatedatHtmlurl],
     state: approved | rejected,
-    user: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
+    user: Avatarurl
   ): CommentEnvironments = {
     val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], environments = environments.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentEnvironments]
@@ -48,8 +48,6 @@ object CommentEnvironments {
     
     inline def setState(value: approved | rejected): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    inline def setUser(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
-    ): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: Avatarurl): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

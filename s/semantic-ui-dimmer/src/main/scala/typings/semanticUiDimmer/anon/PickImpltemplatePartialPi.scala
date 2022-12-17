@@ -52,7 +52,7 @@ trait PickImpltemplatePartialPi
   
   var silent: js.UndefOr[Boolean] = js.undefined
   
-  var template: TemplateSettings & js.UndefOr[TemplateSettings]
+  var template: TemplateSettings
   
   var transition: js.UndefOr[String] = js.undefined
   
@@ -64,7 +64,7 @@ trait PickImpltemplatePartialPi
 }
 object PickImpltemplatePartialPi {
   
-  inline def apply(template: TemplateSettings & js.UndefOr[TemplateSettings]): PickImpltemplatePartialPi = {
+  inline def apply(template: TemplateSettings): PickImpltemplatePartialPi = {
     val __obj = js.Dynamic.literal(template = template.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpltemplatePartialPi]
   }
@@ -135,7 +135,7 @@ object PickImpltemplatePartialPi {
     
     inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     
-    inline def setTemplate(value: TemplateSettings & js.UndefOr[TemplateSettings]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: TemplateSettings): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     inline def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     

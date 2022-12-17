@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactElement
-import typings.reactBootstrapTable.anon.Value
+import typings.reactBootstrapTable.anon.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -1067,7 +1067,7 @@ object Options {
     
     inline def setSizePerPageListUndefined: Self = StObject.set(x, "sizePerPageList", js.undefined)
     
-    inline def setSizePerPageListVarargs(value: (Double | Value)*): Self = StObject.set(x, "sizePerPageList", js.Array(value*))
+    inline def setSizePerPageListVarargs(value: (Double | Text)*): Self = StObject.set(x, "sizePerPageList", js.Array(value*))
     
     inline def setSizePerPageUndefined: Self = StObject.set(x, "sizePerPage", js.undefined)
     

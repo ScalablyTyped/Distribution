@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.catbox.mod.Policy
 import typings.hapi.anon.Apply
 import typings.hapi.anon.ApplyExtend
-import typings.hapi.anon.Concurrent
+import typings.hapi.anon.EventLoopDelay
 import typings.hapi.anon.Extend
 import typings.hapi.anon.Timeout
 import typings.hapi.anon.Validate
@@ -390,7 +390,7 @@ open class Server () extends StObject {
     * * rss - RSS memory usage.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverload)
     */
-  val load: Concurrent = js.native
+  val load: EventLoopDelay = js.native
   
   /**
     * Logs server events that cannot be associated with a specific request. When called the server emits a 'log' event which can be used by other listeners or plugins to record the information or

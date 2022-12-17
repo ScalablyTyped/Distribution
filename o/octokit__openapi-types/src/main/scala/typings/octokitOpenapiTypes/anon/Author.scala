@@ -6,160 +6,74 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Author extends StObject {
   
-  var author: Avatarurl | Null
+  /** GitHub login or email address by which to filter by commit author. */
+  var author: js.UndefOr[String] = js.undefined
   
-  /**
-    * @description The main text of the discussion.
-    * @example Please suggest improvements to our workflow in comments.
-    */
-  var body: String
+  /** Page number of the results to fetch. */
+  var page: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['page'] */ js.Any
+  ] = js.undefined
   
-  /** @example <p>Hi! This is an area for us to collaborate as a team</p> */
-  var body_html: String
+  /** Only commits containing this file path will be returned. */
+  var path: js.UndefOr[String] = js.undefined
   
-  /**
-    * @description The current version of the body content. If provided, this update operation will be rejected if the given version does not match the latest version on the server.
-    * @example 0307116bbf7ced493b8d8a346c650b71
-    */
-  var body_version: String
+  /** The number of results per page (max 100). */
+  var per_page: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['per-page'] */ js.Any
+  ] = js.undefined
   
-  /** @example 0 */
-  var comments_count: Double
+  /** SHA or branch to start listing commits from. Default: the repository’s default branch (usually `master`). */
+  var sha: js.UndefOr[String] = js.undefined
   
-  /**
-    * Format: uri
-    * @example https://api.github.com/organizations/1/team/2343027/discussions/1/comments
-    */
-  var comments_url: String
+  /** Only show notifications updated after the given time. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`. */
+  var since: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['since'] */ js.Any
+  ] = js.undefined
   
-  /**
-    * Format: date-time
-    * @example 2018-01-25T18:56:31Z
-    */
-  var created_at: String
-  
-  /**
-    * Format: uri
-    * @example https://github.com/orgs/github/teams/justice-league/discussions/1
-    */
-  var html_url: String
-  
-  /** Format: date-time */
-  var last_edited_at: String | Null
-  
-  /** @example MDE0OlRlYW1EaXNjdXNzaW9uMQ== */
-  var node_id: String
-  
-  /**
-    * @description The unique sequence number of a team discussion.
-    * @example 42
-    */
-  var number: Double
-  
-  /**
-    * @description Whether or not this discussion should be pinned for easy retrieval.
-    * @example true
-    */
-  var pinned: Boolean
-  
-  /**
-    * @description Whether or not this discussion should be restricted to team members and organization administrators.
-    * @example true
-    */
-  var `private`: Boolean
-  
-  var reactions: js.UndefOr[`1`] = js.undefined
-  
-  /**
-    * Format: uri
-    * @example https://api.github.com/organizations/1/team/2343027
-    */
-  var team_url: String
-  
-  /**
-    * @description The title of the discussion.
-    * @example How can we improve our workflow?
-    */
-  var title: String
-  
-  /**
-    * Format: date-time
-    * @example 2018-01-25T18:56:31Z
-    */
-  var updated_at: String
-  
-  /**
-    * Format: uri
-    * @example https://api.github.com/organizations/1/team/2343027/discussions/1
-    */
-  var url: String
+  /** Only commits before this date will be returned. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`. */
+  var until: js.UndefOr[String] = js.undefined
 }
 object Author {
   
-  inline def apply(
-    body: String,
-    body_html: String,
-    body_version: String,
-    comments_count: Double,
-    comments_url: String,
-    created_at: String,
-    html_url: String,
-    node_id: String,
-    number: Double,
-    pinned: Boolean,
-    `private`: Boolean,
-    team_url: String,
-    title: String,
-    updated_at: String,
-    url: String
-  ): Author = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], body_html = body_html.asInstanceOf[js.Any], body_version = body_version.asInstanceOf[js.Any], comments_count = comments_count.asInstanceOf[js.Any], comments_url = comments_url.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], pinned = pinned.asInstanceOf[js.Any], team_url = team_url.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], author = null, last_edited_at = null)
-    __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
+  inline def apply(): Author = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Author]
   }
   
   extension [Self <: Author](x: Self) {
     
-    inline def setAuthor(value: Avatarurl): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    inline def setAuthorNull: Self = StObject.set(x, "author", null)
+    inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
     
-    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setPage(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['page'] */ js.Any
+    ): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    inline def setBody_html(value: String): Self = StObject.set(x, "body_html", value.asInstanceOf[js.Any])
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
-    inline def setBody_version(value: String): Self = StObject.set(x, "body_version", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setComments_count(value: Double): Self = StObject.set(x, "comments_count", value.asInstanceOf[js.Any])
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    inline def setComments_url(value: String): Self = StObject.set(x, "comments_url", value.asInstanceOf[js.Any])
+    inline def setPer_page(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['per-page'] */ js.Any
+    ): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
     
-    inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+    inline def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
     
-    inline def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
+    inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
     
-    inline def setLast_edited_at(value: String): Self = StObject.set(x, "last_edited_at", value.asInstanceOf[js.Any])
+    inline def setShaUndefined: Self = StObject.set(x, "sha", js.undefined)
     
-    inline def setLast_edited_atNull: Self = StObject.set(x, "last_edited_at", null)
+    inline def setSince(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['since'] */ js.Any
+    ): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     
-    inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
+    inline def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
     
-    inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setUntil(value: String): Self = StObject.set(x, "until", value.asInstanceOf[js.Any])
     
-    inline def setPinned(value: Boolean): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
-    
-    inline def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
-    
-    inline def setReactions(value: `1`): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
-    
-    inline def setReactionsUndefined: Self = StObject.set(x, "reactions", js.undefined)
-    
-    inline def setTeam_url(value: String): Self = StObject.set(x, "team_url", value.asInstanceOf[js.Any])
-    
-    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
-    
-    inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
-    
-    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUntilUndefined: Self = StObject.set(x, "until", js.undefined)
   }
 }

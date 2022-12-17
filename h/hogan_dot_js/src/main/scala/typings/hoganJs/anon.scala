@@ -1,7 +1,5 @@
 package typings.hoganJs
 
-import typings.hoganJs.hoganJsBooleans.`false`
-import typings.hoganJs.hoganJsBooleans.`true`
 import typings.hoganJs.mod.SectionTags
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +10,7 @@ object anon {
   /* Inlined hogan.js.hogan.js.HoganOptions & {  asString :false} */
   trait HoganOptionsasStringfalse extends StObject {
     
-    var asString: js.UndefOr[Boolean] & `false`
+    var asString: js.UndefOr[Boolean] = js.undefined
     
     var delimiters: js.UndefOr[String] = js.undefined
     
@@ -22,14 +20,16 @@ object anon {
   }
   object HoganOptionsasStringfalse {
     
-    inline def apply(asString: js.UndefOr[Boolean] & `false`): HoganOptionsasStringfalse = {
-      val __obj = js.Dynamic.literal(asString = asString.asInstanceOf[js.Any])
+    inline def apply(): HoganOptionsasStringfalse = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HoganOptionsasStringfalse]
     }
     
     extension [Self <: HoganOptionsasStringfalse](x: Self) {
       
-      inline def setAsString(value: js.UndefOr[Boolean] & `false`): Self = StObject.set(x, "asString", value.asInstanceOf[js.Any])
+      inline def setAsString(value: Boolean): Self = StObject.set(x, "asString", value.asInstanceOf[js.Any])
+      
+      inline def setAsStringUndefined: Self = StObject.set(x, "asString", js.undefined)
       
       inline def setDelimiters(value: String): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
       
@@ -50,7 +50,7 @@ object anon {
   /* Inlined hogan.js.hogan.js.HoganOptions & {  asString :true} */
   trait HoganOptionsasStringtrue extends StObject {
     
-    var asString: js.UndefOr[Boolean] & `true`
+    var asString: js.UndefOr[Boolean] = js.undefined
     
     var delimiters: js.UndefOr[String] = js.undefined
     
@@ -60,14 +60,16 @@ object anon {
   }
   object HoganOptionsasStringtrue {
     
-    inline def apply(asString: js.UndefOr[Boolean] & `true`): HoganOptionsasStringtrue = {
-      val __obj = js.Dynamic.literal(asString = asString.asInstanceOf[js.Any])
+    inline def apply(): HoganOptionsasStringtrue = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HoganOptionsasStringtrue]
     }
     
     extension [Self <: HoganOptionsasStringtrue](x: Self) {
       
-      inline def setAsString(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "asString", value.asInstanceOf[js.Any])
+      inline def setAsString(value: Boolean): Self = StObject.set(x, "asString", value.asInstanceOf[js.Any])
+      
+      inline def setAsStringUndefined: Self = StObject.set(x, "asString", js.undefined)
       
       inline def setDelimiters(value: String): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
       

@@ -1,5 +1,6 @@
 package typings.nodeRedEditorClient.anon
 
+import typings.nodeRedEditorClient.nodeRedEditorClientInts.`0`
 import typings.nodeRedEditorClient.nodeRedEditorClientInts.`1`
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -19,7 +20,7 @@ trait ReadonlyI18nTFunctionidst extends StObject {
   
   val id: String = js.native
   
-  val inputs: typings.nodeRedEditorClient.nodeRedEditorClientInts.`0` | `1` = js.native
+  val inputs: `0` | `1` = js.native
   
   val outputs: Double = js.native
   

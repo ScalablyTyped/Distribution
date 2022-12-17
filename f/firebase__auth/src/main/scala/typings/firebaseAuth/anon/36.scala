@@ -6,18 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `36` extends StObject {
   
-  var appName: js.UndefOr[typings.firebaseAuth.distSrcModelAuthMod.AppName] = js.undefined
+  var appName: typings.firebaseAuth.distSrcModelAuthMod.AppName
   
-  var email: js.UndefOr[String] = js.undefined
-  
-  var message: js.UndefOr[String] = js.undefined
-  
-  var phoneNumber: js.UndefOr[String] = js.undefined
+  var missingPlugin: js.UndefOr[String] = js.undefined
 }
 object `36` {
   
-  inline def apply(): `36` = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(appName: typings.firebaseAuth.distSrcModelAuthMod.AppName): `36` = {
+    val __obj = js.Dynamic.literal(appName = appName.asInstanceOf[js.Any])
     __obj.asInstanceOf[`36`]
   }
   
@@ -25,18 +21,8 @@ object `36` {
     
     inline def setAppName(value: typings.firebaseAuth.distSrcModelAuthMod.AppName): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
     
-    inline def setAppNameUndefined: Self = StObject.set(x, "appName", js.undefined)
+    inline def setMissingPlugin(value: String): Self = StObject.set(x, "missingPlugin", value.asInstanceOf[js.Any])
     
-    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
-    
-    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
-    
-    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
-    
-    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
-    
-    inline def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
-    
-    inline def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
+    inline def setMissingPluginUndefined: Self = StObject.set(x, "missingPlugin", js.undefined)
   }
 }

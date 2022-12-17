@@ -29,6 +29,6 @@ object MaxHeightProps {
     
     inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
     
-    inline def setMaxHeightVarargs(value: (TVal | Null)*): Self = StObject.set(x, "maxHeight", js.Array(value :_*))
+    inline def setMaxHeightVarargs(value: (TVal | Null)*): Self = StObject.set(x, "maxHeight", js.Array(value*))
   }
 }

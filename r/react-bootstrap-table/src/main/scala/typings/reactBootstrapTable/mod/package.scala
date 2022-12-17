@@ -13,7 +13,7 @@ type CustomAttrs = StringDictionary[String | Double | Boolean]
 
 type EditCheckboxOptionValue = String
 
-type EditSelectOptionValue = js.Array[Double | String | Text]
+type EditSelectOptionValue = js.Array[Double | String | Value]
 
 /* Rewritten from type alias, can be one of: 
   - typings.reactBootstrapTable.mod.TextFilter
@@ -38,4 +38,4 @@ type FilterValueData = _FilterValueData | (js.Array[Double | String]) | String |
 
 type SelectFilterOptionsType = (StringDictionary[String | Double | Boolean]) & (NumberDictionary[String | Double | Boolean])
 
-type SizePerPageList = js.Array[Double | Value]
+type SizePerPageList = js.Array[Double | Text]

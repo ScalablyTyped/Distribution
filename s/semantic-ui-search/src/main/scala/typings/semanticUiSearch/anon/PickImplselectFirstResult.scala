@@ -72,7 +72,7 @@ trait PickImplselectFirstResult
   
   var searchFullText: js.UndefOr[Boolean] = js.undefined
   
-  var selectFirstResult: Boolean & js.UndefOr[Boolean]
+  var selectFirstResult: Boolean
   
   var selector: js.UndefOr[SelectorSettings] = js.undefined
   
@@ -92,7 +92,7 @@ trait PickImplselectFirstResult
 }
 object PickImplselectFirstResult {
   
-  inline def apply(selectFirstResult: Boolean & js.UndefOr[Boolean]): PickImplselectFirstResult = {
+  inline def apply(selectFirstResult: Boolean): PickImplselectFirstResult = {
     val __obj = js.Dynamic.literal(selectFirstResult = selectFirstResult.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplselectFirstResult]
   }
@@ -201,7 +201,7 @@ object PickImplselectFirstResult {
     
     inline def setSearchFullTextUndefined: Self = StObject.set(x, "searchFullText", js.undefined)
     
-    inline def setSelectFirstResult(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "selectFirstResult", value.asInstanceOf[js.Any])
+    inline def setSelectFirstResult(value: Boolean): Self = StObject.set(x, "selectFirstResult", value.asInstanceOf[js.Any])
     
     inline def setSelector(value: SelectorSettings): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     

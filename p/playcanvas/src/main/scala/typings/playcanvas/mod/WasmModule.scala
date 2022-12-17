@@ -1,5 +1,6 @@
 package typings.playcanvas.mod
 
+import typings.playcanvas.anon.ErrorHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,4 +20,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * A pure static utility class which supports immediate and lazy loading of wasm modules.
   */
-trait WasmModule extends StObject
+@JSImport("playcanvas", "WasmModule")
+@js.native
+open class WasmModule () extends StObject
+object WasmModule {
+  
+  @JSImport("playcanvas", "WasmModule")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * Get a wasm module instance. The instance will be created if necessary and returned
+    * in the second parameter to callback.
+    *
+    * @param {string} moduleName - Name of the module.
+    * @param {ModuleInstanceCallback} callback - The function called when the instance is
+    * available.
+    */
+  /* static member */
+  inline def getInstance(moduleName: String, callback: ModuleInstanceCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(moduleName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /**
+    * Set a wasm module's configuration.
+    *
+    * @param {string} moduleName - Name of the module.
+    * @param {object} [config] - The configuration object.
+    * @param {string} [config.glueUrl] - URL of glue script.
+    * @param {string} [config.wasmUrl] - URL of the wasm script.
+    * @param {string} [config.fallbackUrl] - URL of the fallback script to use when wasm modules
+    * aren't supported.
+    * @param {ModuleErrorCallback} [config.errorHandler] - Function to be called if the module fails
+    * to download.
+    */
+  /* static member */
+  inline def setConfig(moduleName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setConfig")(moduleName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setConfig(moduleName: String, config: ErrorHandler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setConfig")(moduleName.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+}

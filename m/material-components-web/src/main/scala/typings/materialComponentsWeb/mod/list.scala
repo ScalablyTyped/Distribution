@@ -8,13 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object list {
   
-  @JSImport("material-components-web", "list.default")
-  @js.native
-  open class default ()
-    extends typings.materialList.mod.default {
-    def this(adapter: PartialMDCListAdapter) = this()
-  }
-  
   @JSImport("material-components-web", "list.MDCList")
   @js.native
   open class MDCList protected ()

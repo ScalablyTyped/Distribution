@@ -1,6 +1,5 @@
 package typings.canvasjs.mod
 
-import typings.canvasjs.anon.DataPoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -74,7 +73,7 @@ trait ChartLegendOptions extends StObject {
   /**
     * A custom formatter function that returns text to be displayed inside individual legend items.
     */
-  var itemTextFormatter: js.UndefOr[js.Function1[/* e */ js.UndefOr[DataPoint], String]] = js.undefined
+  var itemTextFormatter: js.UndefOr[js.Function1[/* e */ js.UndefOr[typings.canvasjs.anon.Chart], String]] = js.undefined
   
   /**
     * Sets the width of individual legend items after which the it gets wrapped or clipped depending on whether itemWrap is set to true (default) or false.
@@ -204,7 +203,7 @@ object ChartLegendOptions {
     
     inline def setItemMaxWidthUndefined: Self = StObject.set(x, "itemMaxWidth", js.undefined)
     
-    inline def setItemTextFormatter(value: /* e */ js.UndefOr[DataPoint] => String): Self = StObject.set(x, "itemTextFormatter", js.Any.fromFunction1(value))
+    inline def setItemTextFormatter(value: /* e */ js.UndefOr[typings.canvasjs.anon.Chart] => String): Self = StObject.set(x, "itemTextFormatter", js.Any.fromFunction1(value))
     
     inline def setItemTextFormatterUndefined: Self = StObject.set(x, "itemTextFormatter", js.undefined)
     

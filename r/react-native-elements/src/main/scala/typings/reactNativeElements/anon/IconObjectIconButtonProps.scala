@@ -197,7 +197,7 @@ trait IconObjectIconButtonProps extends StObject {
     *
     * @default 'white'
     */
-  var color: js.UndefOr[String] & (js.UndefOr[ColorValue | Double])
+  var color: js.UndefOr[String] = js.undefined
   
   var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
@@ -281,7 +281,7 @@ trait IconObjectIconButtonProps extends StObject {
     *
     * @default {marginRight: 10}
     */
-  var iconStyle: js.UndefOr[StyleProp[TextStyle]] & js.UndefOr[TextStyle]
+  var iconStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   /**
     * Controls how view is important for accessibility which is if it fires accessibility events
@@ -321,7 +321,7 @@ trait IconObjectIconButtonProps extends StObject {
     * See Icon Explorer app
     * {@link https://github.com/oblador/react-native-vector-icons/tree/master/Examples/IconExplorer}
     */
-  var name: js.UndefOr[String] & String
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Used to reference react managed views from native code.
@@ -515,7 +515,7 @@ trait IconObjectIconButtonProps extends StObject {
     * Only exist here so we can have ViewStyle or TextStyle
     *
     */
-  var style: js.UndefOr[StyleProp[ViewStyle]] & (js.UndefOr[ViewStyle | TextStyle])
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * When `true`, no visual change is made when text is pressed down. By
@@ -541,7 +541,7 @@ trait IconObjectIconButtonProps extends StObject {
     */
   var touchSoundDisabled: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: js.UndefOr[IconType] & js.UndefOr[String]
+  var `type`: js.UndefOr[IconType] = js.undefined
   
   /**
     * The color of the underlay that will show through when the touch is active.
@@ -552,15 +552,8 @@ trait IconObjectIconButtonProps extends StObject {
 }
 object IconObjectIconButtonProps {
   
-  inline def apply(
-    color: js.UndefOr[String] & (js.UndefOr[ColorValue | Double]),
-    iconStyle: js.UndefOr[StyleProp[TextStyle]] & js.UndefOr[TextStyle],
-    name: js.UndefOr[String] & String,
-    style: js.UndefOr[StyleProp[ViewStyle]] & (js.UndefOr[ViewStyle | TextStyle]),
-    `type`: js.UndefOr[IconType] & js.UndefOr[String]
-  ): IconObjectIconButtonProps = {
-    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], iconStyle = iconStyle.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  inline def apply(): IconObjectIconButtonProps = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IconObjectIconButtonProps]
   }
   
@@ -658,7 +651,9 @@ object IconObjectIconButtonProps {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setColor(value: js.UndefOr[String] & (js.UndefOr[ColorValue | Double])): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     inline def setComponent(
       value: TypeofComponent & (Instantiable1[
@@ -719,7 +714,11 @@ object IconObjectIconButtonProps {
     
     inline def setIconPropsUndefined: Self = StObject.set(x, "iconProps", js.undefined)
     
-    inline def setIconStyle(value: js.UndefOr[StyleProp[TextStyle]] & js.UndefOr[TextStyle]): Self = StObject.set(x, "iconStyle", value.asInstanceOf[js.Any])
+    inline def setIconStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "iconStyle", value.asInstanceOf[js.Any])
+    
+    inline def setIconStyleNull: Self = StObject.set(x, "iconStyle", null)
+    
+    inline def setIconStyleUndefined: Self = StObject.set(x, "iconStyle", js.undefined)
     
     inline def setImportantForAccessibility(value: auto | yes | no | `no-hide-descendants`): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
     
@@ -739,7 +738,9 @@ object IconObjectIconButtonProps {
     
     inline def setMinimumFontScaleUndefined: Self = StObject.set(x, "minimumFontScale", js.undefined)
     
-    inline def setName(value: js.UndefOr[String] & String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setNativeID(value: String): Self = StObject.set(x, "nativeID", value.asInstanceOf[js.Any])
     
@@ -857,7 +858,11 @@ object IconObjectIconButtonProps {
     
     inline def setSolidUndefined: Self = StObject.set(x, "solid", js.undefined)
     
-    inline def setStyle(value: js.UndefOr[StyleProp[ViewStyle]] & (js.UndefOr[ViewStyle | TextStyle])): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleNull: Self = StObject.set(x, "style", null)
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     inline def setSuppressHighlighting(value: Boolean): Self = StObject.set(x, "suppressHighlighting", value.asInstanceOf[js.Any])
     
@@ -875,7 +880,9 @@ object IconObjectIconButtonProps {
     
     inline def setTouchSoundDisabledUndefined: Self = StObject.set(x, "touchSoundDisabled", js.undefined)
     
-    inline def setType(value: js.UndefOr[IconType] & js.UndefOr[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: IconType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     inline def setUnderlayColor(value: ColorValue): Self = StObject.set(x, "underlayColor", value.asInstanceOf[js.Any])
     

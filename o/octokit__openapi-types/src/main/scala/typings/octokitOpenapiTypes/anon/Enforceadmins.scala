@@ -14,7 +14,7 @@ trait Enforceadmins extends StObject {
   
   var enforce_admins: js.UndefOr[EnabledUrl] = js.undefined
   
-  var required_conversation_resolution: js.UndefOr[`0`] = js.undefined
+  var required_conversation_resolution: js.UndefOr[`388`] = js.undefined
   
   var required_linear_history: js.UndefOr[EnabledBoolean] = js.undefined
   
@@ -22,13 +22,9 @@ trait Enforceadmins extends StObject {
   
   var required_signatures: js.UndefOr[EnabledUrl] = js.undefined
   
-  var required_status_checks: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['status-check-policy'] */ js.Any
-  ] = js.undefined
+  var required_status_checks: js.UndefOr[Strict] = js.undefined
   
-  var restrictions: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['branch-restriction-policy'] */ js.Any
-  ] = js.undefined
+  var restrictions: js.UndefOr[Appsurl] = js.undefined
   
   /** Format: uri */
   var url: String
@@ -58,7 +54,7 @@ object Enforceadmins {
     
     inline def setEnforce_adminsUndefined: Self = StObject.set(x, "enforce_admins", js.undefined)
     
-    inline def setRequired_conversation_resolution(value: `0`): Self = StObject.set(x, "required_conversation_resolution", value.asInstanceOf[js.Any])
+    inline def setRequired_conversation_resolution(value: `388`): Self = StObject.set(x, "required_conversation_resolution", value.asInstanceOf[js.Any])
     
     inline def setRequired_conversation_resolutionUndefined: Self = StObject.set(x, "required_conversation_resolution", js.undefined)
     
@@ -74,15 +70,11 @@ object Enforceadmins {
     
     inline def setRequired_signaturesUndefined: Self = StObject.set(x, "required_signatures", js.undefined)
     
-    inline def setRequired_status_checks(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['status-check-policy'] */ js.Any
-    ): Self = StObject.set(x, "required_status_checks", value.asInstanceOf[js.Any])
+    inline def setRequired_status_checks(value: Strict): Self = StObject.set(x, "required_status_checks", value.asInstanceOf[js.Any])
     
     inline def setRequired_status_checksUndefined: Self = StObject.set(x, "required_status_checks", js.undefined)
     
-    inline def setRestrictions(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['branch-restriction-policy'] */ js.Any
-    ): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
+    inline def setRestrictions(value: Appsurl): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
     
     inline def setRestrictionsUndefined: Self = StObject.set(x, "restrictions", js.undefined)
     

@@ -42,7 +42,7 @@ trait PickImplmatchPartialPickI
   
   var length: js.UndefOr[String] = js.undefined
   
-  var `match`: String & js.UndefOr[String]
+  var `match`: String
   
   var maxCount: js.UndefOr[String] = js.undefined
   
@@ -64,7 +64,7 @@ trait PickImplmatchPartialPickI
 }
 object PickImplmatchPartialPickI {
   
-  inline def apply(`match`: String & js.UndefOr[String]): PickImplmatchPartialPickI = {
+  inline def apply(`match`: String): PickImplmatchPartialPickI = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmatchPartialPickI]
@@ -136,7 +136,7 @@ object PickImplmatchPartialPickI {
     
     inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    inline def setMatch(value: String & js.UndefOr[String]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    inline def setMatch(value: String): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
     inline def setMaxCount(value: String): Self = StObject.set(x, "maxCount", value.asInstanceOf[js.Any])
     

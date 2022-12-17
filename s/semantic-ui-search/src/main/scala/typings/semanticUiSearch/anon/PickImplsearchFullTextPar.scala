@@ -70,7 +70,7 @@ trait PickImplsearchFullTextPar
   
   var searchFields: js.UndefOr[js.Array[String]] = js.undefined
   
-  var searchFullText: Boolean & js.UndefOr[Boolean]
+  var searchFullText: Boolean
   
   var selectFirstResult: js.UndefOr[Boolean] = js.undefined
   
@@ -92,7 +92,7 @@ trait PickImplsearchFullTextPar
 }
 object PickImplsearchFullTextPar {
   
-  inline def apply(searchFullText: Boolean & js.UndefOr[Boolean]): PickImplsearchFullTextPar = {
+  inline def apply(searchFullText: Boolean): PickImplsearchFullTextPar = {
     val __obj = js.Dynamic.literal(searchFullText = searchFullText.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplsearchFullTextPar]
   }
@@ -197,7 +197,7 @@ object PickImplsearchFullTextPar {
     
     inline def setSearchFieldsVarargs(value: String*): Self = StObject.set(x, "searchFields", js.Array(value*))
     
-    inline def setSearchFullText(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "searchFullText", value.asInstanceOf[js.Any])
+    inline def setSearchFullText(value: Boolean): Self = StObject.set(x, "searchFullText", value.asInstanceOf[js.Any])
     
     inline def setSelectFirstResult(value: Boolean): Self = StObject.set(x, "selectFirstResult", value.asInstanceOf[js.Any])
     

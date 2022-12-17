@@ -24,7 +24,6 @@ import typings.reactNative.mod.TVParallaxProperties
 import typings.reactNative.mod.ViewStyle
 import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.GestureEvent
 import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.HandlerStateChangeEvent
-import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.HitSlop
 import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.UserSelect
 import typings.reactNativeGestureHandler.libTypescriptHandlersNativeViewGestureHandlerMod.NativeViewGestureHandlerPayload
 import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.`box-none`
@@ -341,7 +340,7 @@ trait ScrollViewPropschildrenRe extends StObject {
     * the Z-index of sibling views always takes precedence if a touch
     * hits two overlapping views.
     */
-  var hitSlop: js.UndefOr[Insets] & js.UndefOr[HitSlop]
+  var hitSlop: js.UndefOr[Insets] = js.undefined
   
   /**
     * When true the scroll view's children are arranged horizontally in a row
@@ -947,8 +946,8 @@ trait ScrollViewPropschildrenRe extends StObject {
 }
 object ScrollViewPropschildrenRe {
   
-  inline def apply(hitSlop: js.UndefOr[Insets] & js.UndefOr[HitSlop]): ScrollViewPropschildrenRe = {
-    val __obj = js.Dynamic.literal(hitSlop = hitSlop.asInstanceOf[js.Any])
+  inline def apply(): ScrollViewPropschildrenRe = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScrollViewPropschildrenRe]
   }
   
@@ -1116,7 +1115,9 @@ object ScrollViewPropschildrenRe {
     
     inline def setHasTVPreferredFocusUndefined: Self = StObject.set(x, "hasTVPreferredFocus", js.undefined)
     
-    inline def setHitSlop(value: js.UndefOr[Insets] & js.UndefOr[HitSlop]): Self = StObject.set(x, "hitSlop", value.asInstanceOf[js.Any])
+    inline def setHitSlop(value: Insets): Self = StObject.set(x, "hitSlop", value.asInstanceOf[js.Any])
+    
+    inline def setHitSlopUndefined: Self = StObject.set(x, "hitSlop", js.undefined)
     
     inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     

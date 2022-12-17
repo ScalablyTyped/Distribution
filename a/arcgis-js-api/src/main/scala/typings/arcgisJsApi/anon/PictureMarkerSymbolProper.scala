@@ -42,7 +42,7 @@ trait PictureMarkerSymbolProper extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-MarkerSymbol.html#type)
     */
-  var `type`: (js.UndefOr[`simple-marker` | `picture-marker`]) & `picture-marker`
+  var `type`: js.UndefOr[`simple-marker` | `picture-marker`] = js.undefined
   
   /**
     * The URL to an image or SVG document.
@@ -80,9 +80,8 @@ trait PictureMarkerSymbolProper extends StObject {
 }
 object PictureMarkerSymbolProper {
   
-  inline def apply(`type`: (js.UndefOr[`simple-marker` | `picture-marker`]) & `picture-marker`): PictureMarkerSymbolProper = {
+  inline def apply(): PictureMarkerSymbolProper = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PictureMarkerSymbolProper]
   }
   
@@ -102,7 +101,9 @@ object PictureMarkerSymbolProper {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setType(value: (js.UndefOr[`simple-marker` | `picture-marker`]) & `picture-marker`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `simple-marker` | `picture-marker`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

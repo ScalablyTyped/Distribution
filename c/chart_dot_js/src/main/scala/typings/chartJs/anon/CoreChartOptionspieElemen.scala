@@ -16,7 +16,6 @@ import typings.chartJs.mod.AnimationsSpec
 import typings.chartJs.mod.ChartEvent
 import typings.chartJs.mod.ChartType
 import typings.chartJs.mod.CoreInteractionOptions
-import typings.chartJs.mod.DoughnutAnimationOptions
 import typings.chartJs.mod.ElementOptionsByType
 import typings.chartJs.mod.PluginOptionsByType
 import typings.chartJs.mod.ScaleOptionsByType
@@ -32,7 +31,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined chart.js.chart.js.CoreChartOptions<'pie'> & chart.js.chart.js.ElementChartOptions<'pie'> & chart.js.chart.js.PluginChartOptions<'pie'> & chart.js.chart.js.DatasetChartOptions<chart.js.chart.js.ChartType> & chart.js.chart.js.ScaleChartOptions<'pie'> & chart.js.chart.js.PieControllerChartOptions */
 trait CoreChartOptionspieElemen extends StObject {
   
-  var animation: (`false` | AnimationSpecpieonProgres) & (`false` | DoughnutAnimationOptions)
+  var animation: `false` | AnimationSpecpieonProgres
   
   var animations: AnimationsSpec[pie]
   
@@ -222,7 +221,7 @@ trait CoreChartOptionspieElemen extends StObject {
 object CoreChartOptionspieElemen {
   
   inline def apply(
-    animation: (`false` | AnimationSpecpieonProgres) & (`false` | DoughnutAnimationOptions),
+    animation: `false` | AnimationSpecpieonProgres,
     animations: AnimationsSpec[pie],
     aspectRatio: Double,
     backgroundColor: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableContext[pie]],
@@ -273,7 +272,7 @@ object CoreChartOptionspieElemen {
   
   extension [Self <: CoreChartOptionspieElemen](x: Self) {
     
-    inline def setAnimation(value: (`false` | AnimationSpecpieonProgres) & (`false` | DoughnutAnimationOptions)): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: `false` | AnimationSpecpieonProgres): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     inline def setAnimations(value: AnimationsSpec[pie]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     

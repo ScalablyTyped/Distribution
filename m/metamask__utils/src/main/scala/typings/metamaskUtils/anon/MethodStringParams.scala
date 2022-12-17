@@ -8,8 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MethodStringParams extends StObject {
   
-  var id: String | Double | Null
-  
   var jsonrpc: `2Dot0`
   
   var method: String
@@ -19,15 +17,11 @@ trait MethodStringParams extends StObject {
 object MethodStringParams {
   
   inline def apply(method: String): MethodStringParams = {
-    val __obj = js.Dynamic.literal(jsonrpc = "2.0", method = method.asInstanceOf[js.Any], id = null)
+    val __obj = js.Dynamic.literal(jsonrpc = "2.0", method = method.asInstanceOf[js.Any])
     __obj.asInstanceOf[MethodStringParams]
   }
   
   extension [Self <: MethodStringParams](x: Self) {
-    
-    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-    
-    inline def setIdNull: Self = StObject.set(x, "id", null)
     
     inline def setJsonrpc(value: `2Dot0`): Self = StObject.set(x, "jsonrpc", value.asInstanceOf[js.Any])
     

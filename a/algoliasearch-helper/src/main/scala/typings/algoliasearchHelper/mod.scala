@@ -1794,8 +1794,8 @@ object mod {
   type ISearchResponse[T] = (Omit[SearchResponse[T], facets | params]) & SearchResultsOptions
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped algoliasearch-helper.algoliasearch-helper/types/algoliasearch.ClientV5 extends algoliasearch-helper.algoliasearch-helper/types/algoliasearch.SearchClientShape ? algoliasearch-helper.anon.V4SearchOptions['v5'] : // @ts-ignore
-  algoliasearch-helper.algoliasearch-helper/types/algoliasearch.ClientV3_4 extends algoliasearch-helper.algoliasearch-helper/types/algoliasearch.SearchClientV4Shape ? algoliasearch-helper.anon.V4SearchOptions['v4'] : algoliasearch-helper.anon.V4SearchOptions['v3'] */ trait PlainSearchParameters extends StObject {
+  - Dropped algoliasearch-helper.algoliasearch-helper/types/algoliasearch.ClientV5 extends algoliasearch-helper.algoliasearch-helper/types/algoliasearch.SearchClientShape ? algoliasearch-helper.anon.V3V4V5['v5'] : // @ts-ignore
+  algoliasearch-helper.algoliasearch-helper/types/algoliasearch.ClientV3_4 extends algoliasearch-helper.algoliasearch-helper/types/algoliasearch.SearchClientV4Shape ? algoliasearch-helper.anon.V3V4V5['v4'] : algoliasearch-helper.anon.V3V4V5['v3'] */ trait PlainSearchParameters extends StObject {
     
     /**
       * This attribute contains the list of all the disjunctive facets

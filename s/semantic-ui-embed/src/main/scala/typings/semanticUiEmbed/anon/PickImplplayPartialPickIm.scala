@@ -14,11 +14,11 @@ trait PickImplplayPartialPickIm
   
   var placeholder: js.UndefOr[String] = js.undefined
   
-  var play: String & js.UndefOr[String]
+  var play: String
 }
 object PickImplplayPartialPickIm {
   
-  inline def apply(play: String & js.UndefOr[String]): PickImplplayPartialPickIm = {
+  inline def apply(play: String): PickImplplayPartialPickIm = {
     val __obj = js.Dynamic.literal(play = play.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplplayPartialPickIm]
   }
@@ -33,6 +33,6 @@ object PickImplplayPartialPickIm {
     
     inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
-    inline def setPlay(value: String & js.UndefOr[String]): Self = StObject.set(x, "play", value.asInstanceOf[js.Any])
+    inline def setPlay(value: String): Self = StObject.set(x, "play", value.asInstanceOf[js.Any])
   }
 }

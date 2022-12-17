@@ -1,6 +1,6 @@
 package typings.hippyReact.mod
 
-import typings.hippyReact.anon.Height
+import typings.hippyReact.anon.NavigatorBarHeight
 import typings.hippyReact.hippyReactStrings.screen
 import typings.hippyReact.hippyReactStrings.window
 import org.scalablytyped.runtime.StObject
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Dimensions extends StObject {
   
-  def get(dim: window | screen): Height
+  def get(dim: window | screen): NavigatorBarHeight
 }
 object Dimensions {
   
@@ -19,6 +19,6 @@ object Dimensions {
   
   extension [Self <: Dimensions](x: Self) {
     
-    inline def setGet(value: window | screen => Height): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: window | screen => NavigatorBarHeight): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
   }
 }

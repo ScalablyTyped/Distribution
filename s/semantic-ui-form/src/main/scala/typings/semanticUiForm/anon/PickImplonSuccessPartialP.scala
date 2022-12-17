@@ -59,19 +59,12 @@ trait PickImplonSuccessPartialP
   
   def onSuccess(event: TriggeredEvent[HTMLElement, Any, Any, Any], fields: Any): Unit
   @JSName("onSuccess")
-  var onSuccess_Original: (js.ThisFunction2[
+  var onSuccess_Original: js.ThisFunction2[
     /* this */ JQuery, 
     /* event */ TriggeredEvent[HTMLElement, Any, Any, Any], 
     /* fields */ Any, 
     Unit
-  ]) & (js.UndefOr[
-    js.ThisFunction2[
-      /* this */ JQuery, 
-      /* event */ TriggeredEvent[HTMLElement, Any, Any, Any], 
-      /* fields */ Any, 
-      Unit
-    ]
-  ])
+  ]
   
   var onValid: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
@@ -100,19 +93,12 @@ trait PickImplonSuccessPartialP
 object PickImplonSuccessPartialP {
   
   inline def apply(
-    onSuccess: (js.ThisFunction2[
+    onSuccess: js.ThisFunction2[
       /* this */ JQuery, 
       /* event */ TriggeredEvent[HTMLElement, Any, Any, Any], 
       /* fields */ Any, 
       Unit
-    ]) & (js.UndefOr[
-      js.ThisFunction2[
-        /* this */ JQuery, 
-        /* event */ TriggeredEvent[HTMLElement, Any, Any, Any], 
-        /* fields */ Any, 
-        Unit
-      ]
-    ])
+    ]
   ): PickImplonSuccessPartialP = {
     val __obj = js.Dynamic.literal(onSuccess = onSuccess.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonSuccessPartialP]
@@ -181,19 +167,12 @@ object PickImplonSuccessPartialP {
     inline def setOnInvalidUndefined: Self = StObject.set(x, "onInvalid", js.undefined)
     
     inline def setOnSuccess(
-      value: (js.ThisFunction2[
+      value: js.ThisFunction2[
           /* this */ JQuery, 
           /* event */ TriggeredEvent[HTMLElement, Any, Any, Any], 
           /* fields */ Any, 
           Unit
-        ]) & (js.UndefOr[
-          js.ThisFunction2[
-            /* this */ JQuery, 
-            /* event */ TriggeredEvent[HTMLElement, Any, Any, Any], 
-            /* fields */ Any, 
-            Unit
-          ]
-        ])
+        ]
     ): Self = StObject.set(x, "onSuccess", value.asInstanceOf[js.Any])
     
     inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)

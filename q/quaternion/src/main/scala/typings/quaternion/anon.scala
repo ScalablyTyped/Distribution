@@ -37,7 +37,7 @@ object anon {
     extends StObject
        with QuaternionRecord {
     
-    var w: Double & js.UndefOr[Double]
+    var w: Double
     
     var x: js.UndefOr[Double] = js.undefined
     
@@ -47,14 +47,14 @@ object anon {
   }
   object wnumberwnumberundefinedxn {
     
-    inline def apply(w: Double & js.UndefOr[Double]): wnumberwnumberundefinedxn = {
+    inline def apply(w: Double): wnumberwnumberundefinedxn = {
       val __obj = js.Dynamic.literal(w = w.asInstanceOf[js.Any])
       __obj.asInstanceOf[wnumberwnumberundefinedxn]
     }
     
     extension [Self <: wnumberwnumberundefinedxn](x: Self) {
       
-      inline def setW(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+      inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -77,7 +77,7 @@ object anon {
     
     var w: js.UndefOr[Double] = js.undefined
     
-    var x: Double & js.UndefOr[Double]
+    var x: Double
     
     var y: js.UndefOr[Double] = js.undefined
     
@@ -85,7 +85,7 @@ object anon {
   }
   object xnumberwnumberundefinedxn {
     
-    inline def apply(x: Double & js.UndefOr[Double]): xnumberwnumberundefinedxn = {
+    inline def apply(x: Double): xnumberwnumberundefinedxn = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any])
       __obj.asInstanceOf[xnumberwnumberundefinedxn]
     }
@@ -96,7 +96,7 @@ object anon {
       
       inline def setWUndefined: Self = StObject.set(x, "w", js.undefined)
       
-      inline def setX(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
       inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
@@ -117,13 +117,13 @@ object anon {
     
     var x: js.UndefOr[Double] = js.undefined
     
-    var y: Double & js.UndefOr[Double]
+    var y: Double
     
     var z: js.UndefOr[Double] = js.undefined
   }
   object ynumberwnumberundefinedxn {
     
-    inline def apply(y: Double & js.UndefOr[Double]): ynumberwnumberundefinedxn = {
+    inline def apply(y: Double): ynumberwnumberundefinedxn = {
       val __obj = js.Dynamic.literal(y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[ynumberwnumberundefinedxn]
     }
@@ -138,7 +138,7 @@ object anon {
       
       inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      inline def setY(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
       inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
       
@@ -157,11 +157,11 @@ object anon {
     
     var y: js.UndefOr[Double] = js.undefined
     
-    var z: Double & js.UndefOr[Double]
+    var z: Double
   }
   object znumberwnumberundefinedxn {
     
-    inline def apply(z: Double & js.UndefOr[Double]): znumberwnumberundefinedxn = {
+    inline def apply(z: Double): znumberwnumberundefinedxn = {
       val __obj = js.Dynamic.literal(z = z.asInstanceOf[js.Any])
       __obj.asInstanceOf[znumberwnumberundefinedxn]
     }
@@ -180,7 +180,7 @@ object anon {
       
       inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
       
-      inline def setZ(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+      inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -6,26 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Url extends StObject {
   
-  var id: Double
+  var message: js.UndefOr[String] = js.undefined
   
-  var name: String
-  
-  /** Format: uri */
-  var url: String
+  var url: js.UndefOr[String] = js.undefined
 }
 object Url {
   
-  inline def apply(id: Double, name: String, url: String): Url = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+  inline def apply(): Url = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Url]
   }
   
   extension [Self <: Url](x: Self) {
     
-    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

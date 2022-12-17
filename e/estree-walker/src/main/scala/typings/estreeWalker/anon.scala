@@ -16,7 +16,7 @@ object anon {
           /* parent */ BaseNode, 
           /* key */ String, 
           /* index */ Double, 
-          js.Promise[Unit]
+          Unit
         ]
       ] = js.undefined
     
@@ -27,7 +27,7 @@ object anon {
           /* parent */ BaseNode, 
           /* key */ String, 
           /* index */ Double, 
-          js.Promise[Unit]
+          Unit
         ]
       ] = js.undefined
   }
@@ -47,7 +47,7 @@ object anon {
               /* parent */ BaseNode, 
               /* key */ String, 
               /* index */ Double, 
-              js.Promise[Unit]
+              Unit
             ]
       ): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
       
@@ -60,7 +60,7 @@ object anon {
               /* parent */ BaseNode, 
               /* key */ String, 
               /* index */ Double, 
-              js.Promise[Unit]
+              Unit
             ]
       ): Self = StObject.set(x, "leave", value.asInstanceOf[js.Any])
       
@@ -77,7 +77,7 @@ object anon {
           /* parent */ BaseNode, 
           /* key */ String, 
           /* index */ Double, 
-          Unit
+          js.Promise[Unit]
         ]
       ] = js.undefined
     
@@ -88,7 +88,7 @@ object anon {
           /* parent */ BaseNode, 
           /* key */ String, 
           /* index */ Double, 
-          Unit
+          js.Promise[Unit]
         ]
       ] = js.undefined
   }
@@ -108,7 +108,7 @@ object anon {
               /* parent */ BaseNode, 
               /* key */ String, 
               /* index */ Double, 
-              Unit
+              js.Promise[Unit]
             ]
       ): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
       
@@ -121,7 +121,7 @@ object anon {
               /* parent */ BaseNode, 
               /* key */ String, 
               /* index */ Double, 
-              Unit
+              js.Promise[Unit]
             ]
       ): Self = StObject.set(x, "leave", value.asInstanceOf[js.Any])
       

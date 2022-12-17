@@ -1,6 +1,5 @@
 package typings.fundamentalReact.anon
 
-import typings.fundamentalReact.fundamentalReactStrings.ListDotFooter
 import typings.fundamentalReact.libListListMod.ListFooterProps
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
@@ -19,7 +18,7 @@ trait FunctionComponentListFoot extends StObject {
   
   var defaultProps: js.UndefOr[PartialListFooterProps] = js.native
   
-  var displayName: js.UndefOr[String] & ListDotFooter = js.native
+  var displayName: js.UndefOr[String] = js.native
   
   var propTypes: js.UndefOr[WeakValidationMapListFoot] = js.native
 }

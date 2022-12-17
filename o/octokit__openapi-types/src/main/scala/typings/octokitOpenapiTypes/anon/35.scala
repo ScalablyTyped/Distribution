@@ -6,23 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `35` extends StObject {
   
-  /**
-    * @description Whether to block all notifications from a thread.
-    * @default false
-    */
-  var ignored: js.UndefOr[Boolean] = js.undefined
+  @JSName("application/json")
+  var applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['gist-comment'] */ js.Any
 }
 object `35` {
   
-  inline def apply(): `35` = {
+  inline def apply(
+    applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['gist-comment'] */ js.Any
+  ): `35` = {
     val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`35`]
   }
   
   extension [Self <: `35`](x: Self) {
     
-    inline def setIgnored(value: Boolean): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
-    
-    inline def setIgnoredUndefined: Self = StObject.set(x, "ignored", js.undefined)
+    inline def setApplicationSlashjson(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['gist-comment'] */ js.Any
+    ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }
 }

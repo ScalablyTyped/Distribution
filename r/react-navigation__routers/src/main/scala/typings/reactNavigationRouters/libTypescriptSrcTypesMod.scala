@@ -72,14 +72,14 @@ object libTypescriptSrcTypesMod {
         (Omit[
           Route[String, js.UndefOr[js.Object]], 
           typings.reactNavigationRouters.reactNavigationRoutersStrings.key
-        ]) & State
+        ]) & `0`
       ]
     
     val `type`: js.UndefOr[String] = js.undefined
   }
   object InitialState {
     
-    inline def apply(routes: js.Array[(Omit[Route[String, js.UndefOr[js.Object]], key]) & State]): InitialState = {
+    inline def apply(routes: js.Array[(Omit[Route[String, js.UndefOr[js.Object]], key]) & `0`]): InitialState = {
       val __obj = js.Dynamic.literal(routes = routes.asInstanceOf[js.Any])
       __obj.asInstanceOf[InitialState]
     }
@@ -118,9 +118,9 @@ object libTypescriptSrcTypesMod {
             ])*
       ): Self = StObject.set(x, "routeNames", js.Array(value*))
       
-      inline def setRoutes(value: js.Array[(Omit[Route[String, js.UndefOr[js.Object]], key]) & State]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+      inline def setRoutes(value: js.Array[(Omit[Route[String, js.UndefOr[js.Object]], key]) & `0`]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
-      inline def setRoutesVarargs(value: ((Omit[Route[String, js.UndefOr[js.Object]], key]) & State)*): Self = StObject.set(x, "routes", js.Array(value*))
+      inline def setRoutesVarargs(value: ((Omit[Route[String, js.UndefOr[js.Object]], key]) & `0`)*): Self = StObject.set(x, "routes", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -168,7 +168,7 @@ object libTypescriptSrcTypesMod {
   type NavigationRoute[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] = (Route[
     Extract[RouteName, String], 
     /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ js.Any
-  ]) & `0`
+  ]) & State
   
   /* Inlined std.Readonly<{  key :string,   index :number,   routeNames :std.Array<std.Extract<keyof ParamList, string>>,   history :std.Array<unknown> | undefined,   routes :std.Array<@react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.NavigationRoute<ParamList, keyof ParamList>>,   type :string,   stale :false}> */
   trait NavigationState[ParamList /* <: ParamListBase */] extends StObject {

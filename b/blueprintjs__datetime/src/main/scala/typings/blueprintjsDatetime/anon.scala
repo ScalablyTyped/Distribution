@@ -87,7 +87,7 @@ object anon {
     
     var placeholder: js.UndefOr[String] = js.undefined
     
-    var popoverProps: js.UndefOr[PartialIPopoverProps & js.Object] = js.undefined
+    var popoverProps: js.UndefOr[PartialIPopoverProps] = js.undefined
     
     var reverseMonthAndYearMenus: js.UndefOr[Boolean] = js.undefined
     
@@ -210,7 +210,7 @@ object anon {
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      inline def setPopoverProps(value: PartialIPopoverProps & js.Object): Self = StObject.set(x, "popoverProps", value.asInstanceOf[js.Any])
+      inline def setPopoverProps(value: PartialIPopoverProps): Self = StObject.set(x, "popoverProps", value.asInstanceOf[js.Any])
       
       inline def setPopoverPropsUndefined: Self = StObject.set(x, "popoverProps", js.undefined)
       

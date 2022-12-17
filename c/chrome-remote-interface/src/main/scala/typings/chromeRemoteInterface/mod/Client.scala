@@ -246,16 +246,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Accessibility.loadComplete")
-  var AccessibilityDotloadComplete_Original: (js.Function0[
+  var AccessibilityDotloadComplete_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Accessibility.LoadCompleteEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Accessibility.LoadCompleteEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Accessibility.LoadCompleteEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Accessibility.LoadCompleteEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Accessibility.nodesUpdated")
   def AccessibilityDotnodesUpdated(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Accessibility.NodesUpdatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Accessibility.NodesUpdatedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -268,16 +261,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Accessibility.nodesUpdated")
-  var AccessibilityDotnodesUpdated_Original: (js.Function0[
+  var AccessibilityDotnodesUpdated_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Accessibility.NodesUpdatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Accessibility.NodesUpdatedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Accessibility.NodesUpdatedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Accessibility.NodesUpdatedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   /** @deprecated this API is experimental. */
   var Animation: AnimationApi = js.native
@@ -293,16 +279,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Animation.animationCanceled")
-  var AnimationDotanimationCanceled_Original: (js.Function0[
+  var AnimationDotanimationCanceled_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Animation.AnimationCanceledEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Animation.AnimationCanceledEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Animation.AnimationCanceledEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Animation.AnimationCanceledEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Animation.animationCreated")
   def AnimationDotanimationCreated(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Animation.AnimationCreatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Animation.AnimationCreatedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -315,16 +294,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Animation.animationCreated")
-  var AnimationDotanimationCreated_Original: (js.Function0[
+  var AnimationDotanimationCreated_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Animation.AnimationCreatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Animation.AnimationCreatedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Animation.AnimationCreatedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Animation.AnimationCreatedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Animation.animationStarted")
   def AnimationDotanimationStarted(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Animation.AnimationStartedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Animation.AnimationStartedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -337,16 +309,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Animation.animationStarted")
-  var AnimationDotanimationStarted_Original: (js.Function0[
+  var AnimationDotanimationStarted_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Animation.AnimationStartedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Animation.AnimationStartedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Animation.AnimationStartedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Animation.AnimationStartedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   /** @deprecated this API is experimental. */
   var ApplicationCache: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ProtocolProxyApi.ApplicationCacheApi */ Any = js.native
@@ -365,16 +330,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Audits.issueAdded")
-  var AuditsDotissueAdded_Original: (js.Function0[
+  var AuditsDotissueAdded_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Audits.IssueAddedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Audits.IssueAddedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Audits.IssueAddedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Audits.IssueAddedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   /** @deprecated this API is experimental. */
   var BackgroundService: BackgroundServiceApi = js.native
@@ -390,16 +348,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("BackgroundService.backgroundServiceEventReceived")
-  var BackgroundServiceDotbackgroundServiceEventReceived_Original: (js.Function0[
+  var BackgroundServiceDotbackgroundServiceEventReceived_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.BackgroundService.BackgroundServiceEventReceivedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.BackgroundService.BackgroundServiceEventReceivedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.BackgroundService.BackgroundServiceEventReceivedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.BackgroundService.BackgroundServiceEventReceivedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("BackgroundService.recordingStateChanged")
   def BackgroundServiceDotrecordingStateChanged(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.BackgroundService.RecordingStateChangedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.BackgroundService.RecordingStateChangedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -412,16 +363,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("BackgroundService.recordingStateChanged")
-  var BackgroundServiceDotrecordingStateChanged_Original: (js.Function0[
+  var BackgroundServiceDotrecordingStateChanged_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.BackgroundService.RecordingStateChangedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.BackgroundService.RecordingStateChangedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.BackgroundService.RecordingStateChangedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.BackgroundService.RecordingStateChangedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   // stable domains
   var Browser: BrowserApi = js.native
@@ -437,16 +381,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Browser.downloadProgress")
-  var BrowserDotdownloadProgress_Original: (js.Function0[
+  var BrowserDotdownloadProgress_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Browser.DownloadProgressEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Browser.DownloadProgressEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Browser.DownloadProgressEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Browser.DownloadProgressEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Browser.downloadWillBegin")
   def BrowserDotdownloadWillBegin(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Browser.DownloadWillBeginEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Browser.DownloadWillBeginEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -459,16 +396,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Browser.downloadWillBegin")
-  var BrowserDotdownloadWillBegin_Original: (js.Function0[
+  var BrowserDotdownloadWillBegin_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Browser.DownloadWillBeginEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Browser.DownloadWillBeginEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Browser.DownloadWillBeginEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Browser.DownloadWillBeginEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   /** @deprecated this API is experimental. */
   var CSS: CSSApi = js.native
@@ -484,16 +414,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("CSS.fontsUpdated")
-  var CSSDotfontsUpdated_Original: (js.Function0[
+  var CSSDotfontsUpdated_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.CSS.FontsUpdatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.CSS.FontsUpdatedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.CSS.FontsUpdatedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.CSS.FontsUpdatedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("CSS.mediaQueryResultChanged")
   def CSSDotmediaQueryResultChanged(): /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? std.Promise<[][0]> : std.Promise<void> */ js.Any = js.native
@@ -506,16 +429,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("CSS.mediaQueryResultChanged")
-  var CSSDotmediaQueryResultChanged_Original: (js.Function0[
+  var CSSDotmediaQueryResultChanged_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? std.Promise<[][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? [][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("CSS.styleSheetAdded")
   def CSSDotstyleSheetAdded(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.CSS.StyleSheetAddedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.CSS.StyleSheetAddedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -528,16 +444,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("CSS.styleSheetAdded")
-  var CSSDotstyleSheetAdded_Original: (js.Function0[
+  var CSSDotstyleSheetAdded_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.CSS.StyleSheetAddedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.CSS.StyleSheetAddedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.CSS.StyleSheetAddedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.CSS.StyleSheetAddedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("CSS.styleSheetChanged")
   def CSSDotstyleSheetChanged(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.CSS.StyleSheetChangedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.CSS.StyleSheetChangedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -550,16 +459,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("CSS.styleSheetChanged")
-  var CSSDotstyleSheetChanged_Original: (js.Function0[
+  var CSSDotstyleSheetChanged_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.CSS.StyleSheetChangedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.CSS.StyleSheetChangedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.CSS.StyleSheetChangedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.CSS.StyleSheetChangedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("CSS.styleSheetRemoved")
   def CSSDotstyleSheetRemoved(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.CSS.StyleSheetRemovedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.CSS.StyleSheetRemovedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -572,16 +474,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("CSS.styleSheetRemoved")
-  var CSSDotstyleSheetRemoved_Original: (js.Function0[
+  var CSSDotstyleSheetRemoved_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.CSS.StyleSheetRemovedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.CSS.StyleSheetRemovedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.CSS.StyleSheetRemovedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.CSS.StyleSheetRemovedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   /** @deprecated this API is experimental. */
   var CacheStorage: CacheStorageApi = js.native
@@ -600,16 +495,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Cast.issueUpdated")
-  var CastDotissueUpdated_Original: (js.Function0[
+  var CastDotissueUpdated_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Cast.IssueUpdatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Cast.IssueUpdatedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Cast.IssueUpdatedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Cast.IssueUpdatedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Cast.sinksUpdated")
   def CastDotsinksUpdated(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Cast.SinksUpdatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Cast.SinksUpdatedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -622,16 +510,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Cast.sinksUpdated")
-  var CastDotsinksUpdated_Original: (js.Function0[
+  var CastDotsinksUpdated_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Cast.SinksUpdatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Cast.SinksUpdatedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Cast.SinksUpdatedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Cast.SinksUpdatedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   // deprecated domains
   /** @deprecated This domain is deprecated - use Runtime or Log instead. */
@@ -648,16 +529,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Console.messageAdded")
-  var ConsoleDotmessageAdded_Original: (js.Function0[
+  var ConsoleDotmessageAdded_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Console.MessageAddedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Console.MessageAddedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Console.MessageAddedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Console.MessageAddedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   var DOM: DOMApi = js.native
   
@@ -674,16 +548,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("DOM.attributeModified")
-  var DOMDotattributeModified_Original: (js.Function0[
+  var DOMDotattributeModified_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOM.AttributeModifiedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.DOM.AttributeModifiedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOM.AttributeModifiedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.DOM.AttributeModifiedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("DOM.attributeRemoved")
   def DOMDotattributeRemoved(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOM.AttributeRemovedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.DOM.AttributeRemovedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -696,16 +563,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("DOM.attributeRemoved")
-  var DOMDotattributeRemoved_Original: (js.Function0[
+  var DOMDotattributeRemoved_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOM.AttributeRemovedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.DOM.AttributeRemovedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOM.AttributeRemovedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.DOM.AttributeRemovedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("DOM.characterDataModified")
   def DOMDotcharacterDataModified(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOM.CharacterDataModifiedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.DOM.CharacterDataModifiedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -718,16 +578,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("DOM.characterDataModified")
-  var DOMDotcharacterDataModified_Original: (js.Function0[
+  var DOMDotcharacterDataModified_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOM.CharacterDataModifiedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.DOM.CharacterDataModifiedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOM.CharacterDataModifiedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.DOM.CharacterDataModifiedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("DOM.childNodeCountUpdated")
   def DOMDotchildNodeCountUpdated(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOM.ChildNodeCountUpdatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.DOM.ChildNodeCountUpdatedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -740,16 +593,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("DOM.childNodeCountUpdated")
-  var DOMDotchildNodeCountUpdated_Original: (js.Function0[
+  var DOMDotchildNodeCountUpdated_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOM.ChildNodeCountUpdatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.DOM.ChildNodeCountUpdatedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOM.ChildNodeCountUpdatedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.DOM.ChildNodeCountUpdatedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("DOM.childNodeInserted")
   def DOMDotchildNodeInserted(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOM.ChildNodeInsertedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.DOM.ChildNodeInsertedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -762,16 +608,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("DOM.childNodeInserted")
-  var DOMDotchildNodeInserted_Original: (js.Function0[
+  var DOMDotchildNodeInserted_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOM.ChildNodeInsertedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.DOM.ChildNodeInsertedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOM.ChildNodeInsertedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.DOM.ChildNodeInsertedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("DOM.childNodeRemoved")
   def DOMDotchildNodeRemoved(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOM.ChildNodeRemovedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.DOM.ChildNodeRemovedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -784,16 +623,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("DOM.childNodeRemoved")
-  var DOMDotchildNodeRemoved_Original: (js.Function0[
+  var DOMDotchildNodeRemoved_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOM.ChildNodeRemovedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.DOM.ChildNodeRemovedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOM.ChildNodeRemovedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.DOM.ChildNodeRemovedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("DOM.distributedNodesUpdated")
   def DOMDotdistributedNodesUpdated(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOM.DistributedNodesUpdatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.DOM.DistributedNodesUpdatedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -806,16 +638,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("DOM.distributedNodesUpdated")
-  var DOMDotdistributedNodesUpdated_Original: (js.Function0[
+  var DOMDotdistributedNodesUpdated_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOM.DistributedNodesUpdatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.DOM.DistributedNodesUpdatedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOM.DistributedNodesUpdatedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.DOM.DistributedNodesUpdatedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("DOM.documentUpdated")
   def DOMDotdocumentUpdated(): /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? std.Promise<[][0]> : std.Promise<void> */ js.Any = js.native
@@ -828,16 +653,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("DOM.documentUpdated")
-  var DOMDotdocumentUpdated_Original: (js.Function0[
+  var DOMDotdocumentUpdated_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? std.Promise<[][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? [][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("DOM.inlineStyleInvalidated")
   def DOMDotinlineStyleInvalidated(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOM.InlineStyleInvalidatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.DOM.InlineStyleInvalidatedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -850,16 +668,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("DOM.inlineStyleInvalidated")
-  var DOMDotinlineStyleInvalidated_Original: (js.Function0[
+  var DOMDotinlineStyleInvalidated_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOM.InlineStyleInvalidatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.DOM.InlineStyleInvalidatedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOM.InlineStyleInvalidatedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.DOM.InlineStyleInvalidatedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("DOM.pseudoElementAdded")
   def DOMDotpseudoElementAdded(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOM.PseudoElementAddedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.DOM.PseudoElementAddedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -872,16 +683,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("DOM.pseudoElementAdded")
-  var DOMDotpseudoElementAdded_Original: (js.Function0[
+  var DOMDotpseudoElementAdded_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOM.PseudoElementAddedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.DOM.PseudoElementAddedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOM.PseudoElementAddedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.DOM.PseudoElementAddedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("DOM.pseudoElementRemoved")
   def DOMDotpseudoElementRemoved(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOM.PseudoElementRemovedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.DOM.PseudoElementRemovedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -894,16 +698,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("DOM.pseudoElementRemoved")
-  var DOMDotpseudoElementRemoved_Original: (js.Function0[
+  var DOMDotpseudoElementRemoved_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOM.PseudoElementRemovedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.DOM.PseudoElementRemovedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOM.PseudoElementRemovedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.DOM.PseudoElementRemovedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("DOM.setChildNodes")
   def DOMDotsetChildNodes(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOM.SetChildNodesEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.DOM.SetChildNodesEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -916,16 +713,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("DOM.setChildNodes")
-  var DOMDotsetChildNodes_Original: (js.Function0[
+  var DOMDotsetChildNodes_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOM.SetChildNodesEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.DOM.SetChildNodesEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOM.SetChildNodesEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.DOM.SetChildNodesEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("DOM.shadowRootPopped")
   def DOMDotshadowRootPopped(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOM.ShadowRootPoppedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.DOM.ShadowRootPoppedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -938,16 +728,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("DOM.shadowRootPopped")
-  var DOMDotshadowRootPopped_Original: (js.Function0[
+  var DOMDotshadowRootPopped_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOM.ShadowRootPoppedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.DOM.ShadowRootPoppedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOM.ShadowRootPoppedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.DOM.ShadowRootPoppedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("DOM.shadowRootPushed")
   def DOMDotshadowRootPushed(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOM.ShadowRootPushedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.DOM.ShadowRootPushedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -960,16 +743,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("DOM.shadowRootPushed")
-  var DOMDotshadowRootPushed_Original: (js.Function0[
+  var DOMDotshadowRootPushed_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOM.ShadowRootPushedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.DOM.ShadowRootPushedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOM.ShadowRootPushedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.DOM.ShadowRootPushedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("DOM.topLayerElementsUpdated")
   def DOMDottopLayerElementsUpdated(): /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? std.Promise<[][0]> : std.Promise<void> */ js.Any = js.native
@@ -982,16 +758,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("DOM.topLayerElementsUpdated")
-  var DOMDottopLayerElementsUpdated_Original: (js.Function0[
+  var DOMDottopLayerElementsUpdated_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? std.Promise<[][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? [][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   /** @deprecated this API is experimental. */
   var DOMSnapshot: DOMSnapshotApi = js.native
@@ -1010,16 +779,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("DOMStorage.domStorageItemAdded")
-  var DOMStorageDotdomStorageItemAdded_Original: (js.Function0[
+  var DOMStorageDotdomStorageItemAdded_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOMStorage.DomStorageItemAddedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.DOMStorage.DomStorageItemAddedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOMStorage.DomStorageItemAddedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.DOMStorage.DomStorageItemAddedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("DOMStorage.domStorageItemRemoved")
   def DOMStorageDotdomStorageItemRemoved(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOMStorage.DomStorageItemRemovedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.DOMStorage.DomStorageItemRemovedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -1032,16 +794,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("DOMStorage.domStorageItemRemoved")
-  var DOMStorageDotdomStorageItemRemoved_Original: (js.Function0[
+  var DOMStorageDotdomStorageItemRemoved_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOMStorage.DomStorageItemRemovedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.DOMStorage.DomStorageItemRemovedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOMStorage.DomStorageItemRemovedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.DOMStorage.DomStorageItemRemovedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("DOMStorage.domStorageItemUpdated")
   def DOMStorageDotdomStorageItemUpdated(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOMStorage.DomStorageItemUpdatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.DOMStorage.DomStorageItemUpdatedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -1054,16 +809,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("DOMStorage.domStorageItemUpdated")
-  var DOMStorageDotdomStorageItemUpdated_Original: (js.Function0[
+  var DOMStorageDotdomStorageItemUpdated_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOMStorage.DomStorageItemUpdatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.DOMStorage.DomStorageItemUpdatedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOMStorage.DomStorageItemUpdatedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.DOMStorage.DomStorageItemUpdatedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("DOMStorage.domStorageItemsCleared")
   def DOMStorageDotdomStorageItemsCleared(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOMStorage.DomStorageItemsClearedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.DOMStorage.DomStorageItemsClearedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -1076,16 +824,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("DOMStorage.domStorageItemsCleared")
-  var DOMStorageDotdomStorageItemsCleared_Original: (js.Function0[
+  var DOMStorageDotdomStorageItemsCleared_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOMStorage.DomStorageItemsClearedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.DOMStorage.DomStorageItemsClearedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOMStorage.DomStorageItemsClearedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.DOMStorage.DomStorageItemsClearedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   /** @deprecated this API is experimental. */
   var Database: DatabaseApi = js.native
@@ -1101,16 +842,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Database.addDatabase")
-  var DatabaseDotaddDatabase_Original: (js.Function0[
+  var DatabaseDotaddDatabase_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Database.AddDatabaseEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Database.AddDatabaseEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Database.AddDatabaseEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Database.AddDatabaseEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   var Debugger: DebuggerApi = js.native
   
@@ -1125,16 +859,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Debugger.breakpointResolved")
-  var DebuggerDotbreakpointResolved_Original: (js.Function0[
+  var DebuggerDotbreakpointResolved_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Debugger.BreakpointResolvedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Debugger.BreakpointResolvedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Debugger.BreakpointResolvedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Debugger.BreakpointResolvedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Debugger.paused")
   def DebuggerDotpaused(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Debugger.PausedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Debugger.PausedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -1147,16 +874,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Debugger.paused")
-  var DebuggerDotpaused_Original: (js.Function0[
+  var DebuggerDotpaused_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Debugger.PausedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Debugger.PausedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Debugger.PausedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Debugger.PausedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Debugger.resumed")
   def DebuggerDotresumed(): /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? std.Promise<[][0]> : std.Promise<void> */ js.Any = js.native
@@ -1169,16 +889,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Debugger.resumed")
-  var DebuggerDotresumed_Original: (js.Function0[
+  var DebuggerDotresumed_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? std.Promise<[][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? [][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Debugger.scriptFailedToParse")
   def DebuggerDotscriptFailedToParse(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Debugger.ScriptFailedToParseEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Debugger.ScriptFailedToParseEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -1191,16 +904,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Debugger.scriptFailedToParse")
-  var DebuggerDotscriptFailedToParse_Original: (js.Function0[
+  var DebuggerDotscriptFailedToParse_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Debugger.ScriptFailedToParseEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Debugger.ScriptFailedToParseEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Debugger.ScriptFailedToParseEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Debugger.ScriptFailedToParseEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Debugger.scriptParsed")
   def DebuggerDotscriptParsed(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Debugger.ScriptParsedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Debugger.ScriptParsedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -1213,16 +919,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Debugger.scriptParsed")
-  var DebuggerDotscriptParsed_Original: (js.Function0[
+  var DebuggerDotscriptParsed_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Debugger.ScriptParsedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Debugger.ScriptParsedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Debugger.ScriptParsedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Debugger.ScriptParsedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   /** @deprecated this API is experimental. */
   var DeviceOrientation: DeviceOrientationApi = js.native
@@ -1240,16 +939,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Emulation.virtualTimeBudgetExpired")
-  var EmulationDotvirtualTimeBudgetExpired_Original: (js.Function0[
+  var EmulationDotvirtualTimeBudgetExpired_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? std.Promise<[][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? [][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   /** @deprecated this API is experimental. */
   var Fetch: FetchApi = js.native
@@ -1265,16 +957,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Fetch.authRequired")
-  var FetchDotauthRequired_Original: (js.Function0[
+  var FetchDotauthRequired_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Fetch.AuthRequiredEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Fetch.AuthRequiredEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Fetch.AuthRequiredEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Fetch.AuthRequiredEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Fetch.requestPaused")
   def FetchDotrequestPaused(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Fetch.RequestPausedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Fetch.RequestPausedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -1287,16 +972,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Fetch.requestPaused")
-  var FetchDotrequestPaused_Original: (js.Function0[
+  var FetchDotrequestPaused_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Fetch.RequestPausedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Fetch.RequestPausedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Fetch.RequestPausedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Fetch.RequestPausedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   /** @deprecated this API is experimental. */
   var HeadlessExperimental: HeadlessExperimentalApi = js.native
@@ -1315,16 +993,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("HeapProfiler.addHeapSnapshotChunk")
-  var HeapProfilerDotaddHeapSnapshotChunk_Original: (js.Function0[
+  var HeapProfilerDotaddHeapSnapshotChunk_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.HeapProfiler.AddHeapSnapshotChunkEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.HeapProfiler.AddHeapSnapshotChunkEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.HeapProfiler.AddHeapSnapshotChunkEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.HeapProfiler.AddHeapSnapshotChunkEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("HeapProfiler.heapStatsUpdate")
   def HeapProfilerDotheapStatsUpdate(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.HeapProfiler.HeapStatsUpdateEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.HeapProfiler.HeapStatsUpdateEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -1337,16 +1008,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("HeapProfiler.heapStatsUpdate")
-  var HeapProfilerDotheapStatsUpdate_Original: (js.Function0[
+  var HeapProfilerDotheapStatsUpdate_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.HeapProfiler.HeapStatsUpdateEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.HeapProfiler.HeapStatsUpdateEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.HeapProfiler.HeapStatsUpdateEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.HeapProfiler.HeapStatsUpdateEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("HeapProfiler.lastSeenObjectId")
   def HeapProfilerDotlastSeenObjectId(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.HeapProfiler.LastSeenObjectIdEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.HeapProfiler.LastSeenObjectIdEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -1359,16 +1023,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("HeapProfiler.lastSeenObjectId")
-  var HeapProfilerDotlastSeenObjectId_Original: (js.Function0[
+  var HeapProfilerDotlastSeenObjectId_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.HeapProfiler.LastSeenObjectIdEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.HeapProfiler.LastSeenObjectIdEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.HeapProfiler.LastSeenObjectIdEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.HeapProfiler.LastSeenObjectIdEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("HeapProfiler.reportHeapSnapshotProgress")
   def HeapProfilerDotreportHeapSnapshotProgress(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.HeapProfiler.ReportHeapSnapshotProgressEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.HeapProfiler.ReportHeapSnapshotProgressEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -1381,16 +1038,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("HeapProfiler.reportHeapSnapshotProgress")
-  var HeapProfilerDotreportHeapSnapshotProgress_Original: (js.Function0[
+  var HeapProfilerDotreportHeapSnapshotProgress_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.HeapProfiler.ReportHeapSnapshotProgressEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.HeapProfiler.ReportHeapSnapshotProgressEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.HeapProfiler.ReportHeapSnapshotProgressEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.HeapProfiler.ReportHeapSnapshotProgressEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("HeapProfiler.resetProfiles")
   def HeapProfilerDotresetProfiles(): /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? std.Promise<[][0]> : std.Promise<void> */ js.Any = js.native
@@ -1403,16 +1053,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("HeapProfiler.resetProfiles")
-  var HeapProfilerDotresetProfiles_Original: (js.Function0[
+  var HeapProfilerDotresetProfiles_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? std.Promise<[][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? [][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   var IO: IOApi = js.native
   
@@ -1432,16 +1075,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Input.dragIntercepted")
-  var InputDotdragIntercepted_Original: (js.Function0[
+  var InputDotdragIntercepted_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Input.DragInterceptedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Input.DragInterceptedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Input.DragInterceptedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Input.DragInterceptedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   /** @deprecated this API is experimental. */
   var Inspector: InspectorApi = js.native
@@ -1457,16 +1093,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Inspector.detached")
-  var InspectorDotdetached_Original: (js.Function0[
+  var InspectorDotdetached_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Inspector.DetachedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Inspector.DetachedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Inspector.DetachedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Inspector.DetachedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Inspector.targetCrashed")
   def InspectorDottargetCrashed(): /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? std.Promise<[][0]> : std.Promise<void> */ js.Any = js.native
@@ -1479,16 +1108,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Inspector.targetCrashed")
-  var InspectorDottargetCrashed_Original: (js.Function0[
+  var InspectorDottargetCrashed_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? std.Promise<[][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? [][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Inspector.targetReloadedAfterCrash")
   def InspectorDottargetReloadedAfterCrash(): /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? std.Promise<[][0]> : std.Promise<void> */ js.Any = js.native
@@ -1501,16 +1123,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Inspector.targetReloadedAfterCrash")
-  var InspectorDottargetReloadedAfterCrash_Original: (js.Function0[
+  var InspectorDottargetReloadedAfterCrash_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? std.Promise<[][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? [][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   /** @deprecated this API is experimental. */
   var LayerTree: LayerTreeApi = js.native
@@ -1526,16 +1141,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("LayerTree.layerPainted")
-  var LayerTreeDotlayerPainted_Original: (js.Function0[
+  var LayerTreeDotlayerPainted_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.LayerTree.LayerPaintedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.LayerTree.LayerPaintedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.LayerTree.LayerPaintedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.LayerTree.LayerPaintedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("LayerTree.layerTreeDidChange")
   def LayerTreeDotlayerTreeDidChange(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.LayerTree.LayerTreeDidChangeEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.LayerTree.LayerTreeDidChangeEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -1548,16 +1156,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("LayerTree.layerTreeDidChange")
-  var LayerTreeDotlayerTreeDidChange_Original: (js.Function0[
+  var LayerTreeDotlayerTreeDidChange_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.LayerTree.LayerTreeDidChangeEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.LayerTree.LayerTreeDidChangeEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.LayerTree.LayerTreeDidChangeEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.LayerTree.LayerTreeDidChangeEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   var Log: LogApi = js.native
   
@@ -1572,16 +1173,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Log.entryAdded")
-  var LogDotentryAdded_Original: (js.Function0[
+  var LogDotentryAdded_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Log.EntryAddedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Log.EntryAddedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Log.EntryAddedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Log.EntryAddedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   /** @deprecated this API is experimental. */
   var Media: MediaApi = js.native
@@ -1597,16 +1191,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Media.playerErrorsRaised")
-  var MediaDotplayerErrorsRaised_Original: (js.Function0[
+  var MediaDotplayerErrorsRaised_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Media.PlayerErrorsRaisedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Media.PlayerErrorsRaisedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Media.PlayerErrorsRaisedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Media.PlayerErrorsRaisedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Media.playerEventsAdded")
   def MediaDotplayerEventsAdded(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Media.PlayerEventsAddedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Media.PlayerEventsAddedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -1619,16 +1206,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Media.playerEventsAdded")
-  var MediaDotplayerEventsAdded_Original: (js.Function0[
+  var MediaDotplayerEventsAdded_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Media.PlayerEventsAddedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Media.PlayerEventsAddedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Media.PlayerEventsAddedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Media.PlayerEventsAddedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Media.playerMessagesLogged")
   def MediaDotplayerMessagesLogged(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Media.PlayerMessagesLoggedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Media.PlayerMessagesLoggedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -1641,16 +1221,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Media.playerMessagesLogged")
-  var MediaDotplayerMessagesLogged_Original: (js.Function0[
+  var MediaDotplayerMessagesLogged_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Media.PlayerMessagesLoggedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Media.PlayerMessagesLoggedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Media.PlayerMessagesLoggedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Media.PlayerMessagesLoggedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Media.playerPropertiesChanged")
   def MediaDotplayerPropertiesChanged(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Media.PlayerPropertiesChangedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Media.PlayerPropertiesChangedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -1663,16 +1236,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Media.playerPropertiesChanged")
-  var MediaDotplayerPropertiesChanged_Original: (js.Function0[
+  var MediaDotplayerPropertiesChanged_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Media.PlayerPropertiesChangedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Media.PlayerPropertiesChangedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Media.PlayerPropertiesChangedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Media.PlayerPropertiesChangedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Media.playersCreated")
   def MediaDotplayersCreated(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Media.PlayersCreatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Media.PlayersCreatedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -1685,16 +1251,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Media.playersCreated")
-  var MediaDotplayersCreated_Original: (js.Function0[
+  var MediaDotplayersCreated_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Media.PlayersCreatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Media.PlayersCreatedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Media.PlayersCreatedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Media.PlayersCreatedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   /** @deprecated this API is experimental. */
   var Memory: MemoryApi = js.native
@@ -1712,16 +1271,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Network.dataReceived")
-  var NetworkDotdataReceived_Original: (js.Function0[
+  var NetworkDotdataReceived_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.DataReceivedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.DataReceivedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.DataReceivedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Network.DataReceivedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Network.eventSourceMessageReceived")
   def NetworkDoteventSourceMessageReceived(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.EventSourceMessageReceivedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.EventSourceMessageReceivedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -1734,16 +1286,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Network.eventSourceMessageReceived")
-  var NetworkDoteventSourceMessageReceived_Original: (js.Function0[
+  var NetworkDoteventSourceMessageReceived_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.EventSourceMessageReceivedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.EventSourceMessageReceivedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.EventSourceMessageReceivedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Network.EventSourceMessageReceivedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Network.loadingFailed")
   def NetworkDotloadingFailed(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.LoadingFailedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.LoadingFailedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -1756,16 +1301,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Network.loadingFailed")
-  var NetworkDotloadingFailed_Original: (js.Function0[
+  var NetworkDotloadingFailed_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.LoadingFailedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.LoadingFailedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.LoadingFailedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Network.LoadingFailedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Network.loadingFinished")
   def NetworkDotloadingFinished(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.LoadingFinishedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.LoadingFinishedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -1778,16 +1316,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Network.loadingFinished")
-  var NetworkDotloadingFinished_Original: (js.Function0[
+  var NetworkDotloadingFinished_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.LoadingFinishedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.LoadingFinishedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.LoadingFinishedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Network.LoadingFinishedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Network.reportingApiEndpointsChangedForOrigin")
   def NetworkDotreportingApiEndpointsChangedForOrigin(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.ReportingApiEndpointsChangedForOriginEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.ReportingApiEndpointsChangedForOriginEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -1800,16 +1331,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Network.reportingApiEndpointsChangedForOrigin")
-  var NetworkDotreportingApiEndpointsChangedForOrigin_Original: (js.Function0[
+  var NetworkDotreportingApiEndpointsChangedForOrigin_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.ReportingApiEndpointsChangedForOriginEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.ReportingApiEndpointsChangedForOriginEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.ReportingApiEndpointsChangedForOriginEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Network.ReportingApiEndpointsChangedForOriginEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Network.reportingApiReportAdded")
   def NetworkDotreportingApiReportAdded(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.ReportingApiReportAddedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.ReportingApiReportAddedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -1822,16 +1346,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Network.reportingApiReportAdded")
-  var NetworkDotreportingApiReportAdded_Original: (js.Function0[
+  var NetworkDotreportingApiReportAdded_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.ReportingApiReportAddedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.ReportingApiReportAddedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.ReportingApiReportAddedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Network.ReportingApiReportAddedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Network.reportingApiReportUpdated")
   def NetworkDotreportingApiReportUpdated(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.ReportingApiReportUpdatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.ReportingApiReportUpdatedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -1844,16 +1361,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Network.reportingApiReportUpdated")
-  var NetworkDotreportingApiReportUpdated_Original: (js.Function0[
+  var NetworkDotreportingApiReportUpdated_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.ReportingApiReportUpdatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.ReportingApiReportUpdatedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.ReportingApiReportUpdatedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Network.ReportingApiReportUpdatedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Network.requestIntercepted")
   def NetworkDotrequestIntercepted(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.RequestInterceptedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.RequestInterceptedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -1866,16 +1376,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Network.requestIntercepted")
-  var NetworkDotrequestIntercepted_Original: (js.Function0[
+  var NetworkDotrequestIntercepted_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.RequestInterceptedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.RequestInterceptedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.RequestInterceptedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Network.RequestInterceptedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Network.requestServedFromCache")
   def NetworkDotrequestServedFromCache(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.RequestServedFromCacheEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.RequestServedFromCacheEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -1888,16 +1391,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Network.requestServedFromCache")
-  var NetworkDotrequestServedFromCache_Original: (js.Function0[
+  var NetworkDotrequestServedFromCache_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.RequestServedFromCacheEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.RequestServedFromCacheEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.RequestServedFromCacheEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Network.RequestServedFromCacheEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Network.requestWillBeSent")
   def NetworkDotrequestWillBeSent(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.RequestWillBeSentEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.RequestWillBeSentEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -1913,16 +1409,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Network.requestWillBeSentExtraInfo")
-  var NetworkDotrequestWillBeSentExtraInfo_Original: (js.Function0[
+  var NetworkDotrequestWillBeSentExtraInfo_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.RequestWillBeSentExtraInfoEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.RequestWillBeSentExtraInfoEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.RequestWillBeSentExtraInfoEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Network.RequestWillBeSentExtraInfoEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Network.requestWillBeSent")
   def NetworkDotrequestWillBeSent_0(
@@ -1933,16 +1422,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Network.requestWillBeSent")
-  var NetworkDotrequestWillBeSent_Original: (js.Function0[
+  var NetworkDotrequestWillBeSent_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.RequestWillBeSentEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.RequestWillBeSentEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.RequestWillBeSentEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Network.RequestWillBeSentEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Network.resourceChangedPriority")
   def NetworkDotresourceChangedPriority(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.ResourceChangedPriorityEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.ResourceChangedPriorityEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -1955,16 +1437,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Network.resourceChangedPriority")
-  var NetworkDotresourceChangedPriority_Original: (js.Function0[
+  var NetworkDotresourceChangedPriority_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.ResourceChangedPriorityEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.ResourceChangedPriorityEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.ResourceChangedPriorityEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Network.ResourceChangedPriorityEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Network.responseReceived")
   def NetworkDotresponseReceived(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.ResponseReceivedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.ResponseReceivedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -1980,16 +1455,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Network.responseReceivedExtraInfo")
-  var NetworkDotresponseReceivedExtraInfo_Original: (js.Function0[
+  var NetworkDotresponseReceivedExtraInfo_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.ResponseReceivedExtraInfoEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.ResponseReceivedExtraInfoEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.ResponseReceivedExtraInfoEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Network.ResponseReceivedExtraInfoEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Network.responseReceived")
   def NetworkDotresponseReceived_0(
@@ -2000,16 +1468,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Network.responseReceived")
-  var NetworkDotresponseReceived_Original: (js.Function0[
+  var NetworkDotresponseReceived_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.ResponseReceivedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.ResponseReceivedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.ResponseReceivedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Network.ResponseReceivedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Network.signedExchangeReceived")
   def NetworkDotsignedExchangeReceived(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.SignedExchangeReceivedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.SignedExchangeReceivedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2022,16 +1483,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Network.signedExchangeReceived")
-  var NetworkDotsignedExchangeReceived_Original: (js.Function0[
+  var NetworkDotsignedExchangeReceived_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.SignedExchangeReceivedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.SignedExchangeReceivedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.SignedExchangeReceivedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Network.SignedExchangeReceivedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Network.subresourceWebBundleInnerResponseError")
   def NetworkDotsubresourceWebBundleInnerResponseError(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.SubresourceWebBundleInnerResponseErrorEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.SubresourceWebBundleInnerResponseErrorEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2044,16 +1498,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Network.subresourceWebBundleInnerResponseError")
-  var NetworkDotsubresourceWebBundleInnerResponseError_Original: (js.Function0[
+  var NetworkDotsubresourceWebBundleInnerResponseError_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.SubresourceWebBundleInnerResponseErrorEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.SubresourceWebBundleInnerResponseErrorEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.SubresourceWebBundleInnerResponseErrorEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Network.SubresourceWebBundleInnerResponseErrorEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Network.subresourceWebBundleInnerResponseParsed")
   def NetworkDotsubresourceWebBundleInnerResponseParsed(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.SubresourceWebBundleInnerResponseParsedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.SubresourceWebBundleInnerResponseParsedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2066,16 +1513,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Network.subresourceWebBundleInnerResponseParsed")
-  var NetworkDotsubresourceWebBundleInnerResponseParsed_Original: (js.Function0[
+  var NetworkDotsubresourceWebBundleInnerResponseParsed_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.SubresourceWebBundleInnerResponseParsedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.SubresourceWebBundleInnerResponseParsedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.SubresourceWebBundleInnerResponseParsedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Network.SubresourceWebBundleInnerResponseParsedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Network.subresourceWebBundleMetadataError")
   def NetworkDotsubresourceWebBundleMetadataError(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.SubresourceWebBundleMetadataErrorEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.SubresourceWebBundleMetadataErrorEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2088,16 +1528,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Network.subresourceWebBundleMetadataError")
-  var NetworkDotsubresourceWebBundleMetadataError_Original: (js.Function0[
+  var NetworkDotsubresourceWebBundleMetadataError_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.SubresourceWebBundleMetadataErrorEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.SubresourceWebBundleMetadataErrorEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.SubresourceWebBundleMetadataErrorEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Network.SubresourceWebBundleMetadataErrorEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Network.subresourceWebBundleMetadataReceived")
   def NetworkDotsubresourceWebBundleMetadataReceived(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.SubresourceWebBundleMetadataReceivedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.SubresourceWebBundleMetadataReceivedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2110,16 +1543,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Network.subresourceWebBundleMetadataReceived")
-  var NetworkDotsubresourceWebBundleMetadataReceived_Original: (js.Function0[
+  var NetworkDotsubresourceWebBundleMetadataReceived_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.SubresourceWebBundleMetadataReceivedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.SubresourceWebBundleMetadataReceivedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.SubresourceWebBundleMetadataReceivedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Network.SubresourceWebBundleMetadataReceivedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Network.trustTokenOperationDone")
   def NetworkDottrustTokenOperationDone(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.TrustTokenOperationDoneEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.TrustTokenOperationDoneEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2132,16 +1558,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Network.trustTokenOperationDone")
-  var NetworkDottrustTokenOperationDone_Original: (js.Function0[
+  var NetworkDottrustTokenOperationDone_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.TrustTokenOperationDoneEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.TrustTokenOperationDoneEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.TrustTokenOperationDoneEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Network.TrustTokenOperationDoneEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Network.webSocketClosed")
   def NetworkDotwebSocketClosed(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.WebSocketClosedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.WebSocketClosedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2154,16 +1573,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Network.webSocketClosed")
-  var NetworkDotwebSocketClosed_Original: (js.Function0[
+  var NetworkDotwebSocketClosed_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.WebSocketClosedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.WebSocketClosedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.WebSocketClosedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Network.WebSocketClosedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Network.webSocketCreated")
   def NetworkDotwebSocketCreated(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.WebSocketCreatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.WebSocketCreatedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2176,16 +1588,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Network.webSocketCreated")
-  var NetworkDotwebSocketCreated_Original: (js.Function0[
+  var NetworkDotwebSocketCreated_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.WebSocketCreatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.WebSocketCreatedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.WebSocketCreatedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Network.WebSocketCreatedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Network.webSocketFrameError")
   def NetworkDotwebSocketFrameError(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.WebSocketFrameErrorEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.WebSocketFrameErrorEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2198,16 +1603,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Network.webSocketFrameError")
-  var NetworkDotwebSocketFrameError_Original: (js.Function0[
+  var NetworkDotwebSocketFrameError_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.WebSocketFrameErrorEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.WebSocketFrameErrorEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.WebSocketFrameErrorEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Network.WebSocketFrameErrorEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Network.webSocketFrameReceived")
   def NetworkDotwebSocketFrameReceived(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.WebSocketFrameReceivedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.WebSocketFrameReceivedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2220,16 +1618,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Network.webSocketFrameReceived")
-  var NetworkDotwebSocketFrameReceived_Original: (js.Function0[
+  var NetworkDotwebSocketFrameReceived_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.WebSocketFrameReceivedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.WebSocketFrameReceivedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.WebSocketFrameReceivedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Network.WebSocketFrameReceivedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Network.webSocketFrameSent")
   def NetworkDotwebSocketFrameSent(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.WebSocketFrameSentEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.WebSocketFrameSentEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2242,16 +1633,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Network.webSocketFrameSent")
-  var NetworkDotwebSocketFrameSent_Original: (js.Function0[
+  var NetworkDotwebSocketFrameSent_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.WebSocketFrameSentEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.WebSocketFrameSentEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.WebSocketFrameSentEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Network.WebSocketFrameSentEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Network.webSocketHandshakeResponseReceived")
   def NetworkDotwebSocketHandshakeResponseReceived(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.WebSocketHandshakeResponseReceivedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.WebSocketHandshakeResponseReceivedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2264,16 +1648,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Network.webSocketHandshakeResponseReceived")
-  var NetworkDotwebSocketHandshakeResponseReceived_Original: (js.Function0[
+  var NetworkDotwebSocketHandshakeResponseReceived_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.WebSocketHandshakeResponseReceivedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.WebSocketHandshakeResponseReceivedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.WebSocketHandshakeResponseReceivedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Network.WebSocketHandshakeResponseReceivedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Network.webSocketWillSendHandshakeRequest")
   def NetworkDotwebSocketWillSendHandshakeRequest(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.WebSocketWillSendHandshakeRequestEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.WebSocketWillSendHandshakeRequestEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2286,16 +1663,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Network.webSocketWillSendHandshakeRequest")
-  var NetworkDotwebSocketWillSendHandshakeRequest_Original: (js.Function0[
+  var NetworkDotwebSocketWillSendHandshakeRequest_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.WebSocketWillSendHandshakeRequestEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.WebSocketWillSendHandshakeRequestEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.WebSocketWillSendHandshakeRequestEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Network.WebSocketWillSendHandshakeRequestEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Network.webTransportClosed")
   def NetworkDotwebTransportClosed(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.WebTransportClosedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.WebTransportClosedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2308,16 +1678,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Network.webTransportClosed")
-  var NetworkDotwebTransportClosed_Original: (js.Function0[
+  var NetworkDotwebTransportClosed_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.WebTransportClosedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.WebTransportClosedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.WebTransportClosedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Network.WebTransportClosedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Network.webTransportConnectionEstablished")
   def NetworkDotwebTransportConnectionEstablished(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.WebTransportConnectionEstablishedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.WebTransportConnectionEstablishedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2330,16 +1693,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Network.webTransportConnectionEstablished")
-  var NetworkDotwebTransportConnectionEstablished_Original: (js.Function0[
+  var NetworkDotwebTransportConnectionEstablished_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.WebTransportConnectionEstablishedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.WebTransportConnectionEstablishedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.WebTransportConnectionEstablishedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Network.WebTransportConnectionEstablishedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Network.webTransportCreated")
   def NetworkDotwebTransportCreated(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.WebTransportCreatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.WebTransportCreatedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2352,16 +1708,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Network.webTransportCreated")
-  var NetworkDotwebTransportCreated_Original: (js.Function0[
+  var NetworkDotwebTransportCreated_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.WebTransportCreatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.WebTransportCreatedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.WebTransportCreatedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Network.WebTransportCreatedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   /** @deprecated this API is experimental. */
   var Overlay: OverlayApi = js.native
@@ -2377,16 +1726,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Overlay.inspectModeCanceled")
-  var OverlayDotinspectModeCanceled_Original: (js.Function0[
+  var OverlayDotinspectModeCanceled_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? std.Promise<[][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? [][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Overlay.inspectNodeRequested")
   def OverlayDotinspectNodeRequested(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Overlay.InspectNodeRequestedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Overlay.InspectNodeRequestedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2399,16 +1741,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Overlay.inspectNodeRequested")
-  var OverlayDotinspectNodeRequested_Original: (js.Function0[
+  var OverlayDotinspectNodeRequested_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Overlay.InspectNodeRequestedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Overlay.InspectNodeRequestedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Overlay.InspectNodeRequestedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Overlay.InspectNodeRequestedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Overlay.nodeHighlightRequested")
   def OverlayDotnodeHighlightRequested(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Overlay.NodeHighlightRequestedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Overlay.NodeHighlightRequestedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2421,16 +1756,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Overlay.nodeHighlightRequested")
-  var OverlayDotnodeHighlightRequested_Original: (js.Function0[
+  var OverlayDotnodeHighlightRequested_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Overlay.NodeHighlightRequestedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Overlay.NodeHighlightRequestedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Overlay.NodeHighlightRequestedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Overlay.NodeHighlightRequestedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Overlay.screenshotRequested")
   def OverlayDotscreenshotRequested(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Overlay.ScreenshotRequestedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Overlay.ScreenshotRequestedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2443,16 +1771,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Overlay.screenshotRequested")
-  var OverlayDotscreenshotRequested_Original: (js.Function0[
+  var OverlayDotscreenshotRequested_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Overlay.ScreenshotRequestedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Overlay.ScreenshotRequestedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Overlay.ScreenshotRequestedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Overlay.ScreenshotRequestedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   var Page: PageApi = js.native
   
@@ -2467,16 +1788,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Page.backForwardCacheNotUsed")
-  var PageDotbackForwardCacheNotUsed_Original: (js.Function0[
+  var PageDotbackForwardCacheNotUsed_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.BackForwardCacheNotUsedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.BackForwardCacheNotUsedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.BackForwardCacheNotUsedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Page.BackForwardCacheNotUsedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Page.compilationCacheProduced")
   def PageDotcompilationCacheProduced(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.CompilationCacheProducedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.CompilationCacheProducedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2489,16 +1803,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Page.compilationCacheProduced")
-  var PageDotcompilationCacheProduced_Original: (js.Function0[
+  var PageDotcompilationCacheProduced_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.CompilationCacheProducedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.CompilationCacheProducedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.CompilationCacheProducedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Page.CompilationCacheProducedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Page.documentOpened")
   def PageDotdocumentOpened(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.DocumentOpenedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.DocumentOpenedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2511,16 +1818,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Page.documentOpened")
-  var PageDotdocumentOpened_Original: (js.Function0[
+  var PageDotdocumentOpened_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.DocumentOpenedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.DocumentOpenedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.DocumentOpenedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Page.DocumentOpenedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Page.domContentEventFired")
   def PageDotdomContentEventFired(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.DomContentEventFiredEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.DomContentEventFiredEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2533,16 +1833,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Page.domContentEventFired")
-  var PageDotdomContentEventFired_Original: (js.Function0[
+  var PageDotdomContentEventFired_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.DomContentEventFiredEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.DomContentEventFiredEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.DomContentEventFiredEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Page.DomContentEventFiredEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Page.downloadProgress")
   def PageDotdownloadProgress(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.DownloadProgressEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.DownloadProgressEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2555,16 +1848,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Page.downloadProgress")
-  var PageDotdownloadProgress_Original: (js.Function0[
+  var PageDotdownloadProgress_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.DownloadProgressEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.DownloadProgressEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.DownloadProgressEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Page.DownloadProgressEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Page.downloadWillBegin")
   def PageDotdownloadWillBegin(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.DownloadWillBeginEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.DownloadWillBeginEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2577,16 +1863,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Page.downloadWillBegin")
-  var PageDotdownloadWillBegin_Original: (js.Function0[
+  var PageDotdownloadWillBegin_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.DownloadWillBeginEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.DownloadWillBeginEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.DownloadWillBeginEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Page.DownloadWillBeginEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Page.fileChooserOpened")
   def PageDotfileChooserOpened(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.FileChooserOpenedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.FileChooserOpenedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2599,16 +1878,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Page.fileChooserOpened")
-  var PageDotfileChooserOpened_Original: (js.Function0[
+  var PageDotfileChooserOpened_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.FileChooserOpenedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.FileChooserOpenedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.FileChooserOpenedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Page.FileChooserOpenedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Page.frameAttached")
   def PageDotframeAttached(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.FrameAttachedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.FrameAttachedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2621,16 +1893,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Page.frameAttached")
-  var PageDotframeAttached_Original: (js.Function0[
+  var PageDotframeAttached_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.FrameAttachedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.FrameAttachedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.FrameAttachedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Page.FrameAttachedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Page.frameClearedScheduledNavigation")
   def PageDotframeClearedScheduledNavigation(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.FrameClearedScheduledNavigationEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.FrameClearedScheduledNavigationEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2643,16 +1908,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Page.frameClearedScheduledNavigation")
-  var PageDotframeClearedScheduledNavigation_Original: (js.Function0[
+  var PageDotframeClearedScheduledNavigation_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.FrameClearedScheduledNavigationEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.FrameClearedScheduledNavigationEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.FrameClearedScheduledNavigationEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Page.FrameClearedScheduledNavigationEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Page.frameDetached")
   def PageDotframeDetached(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.FrameDetachedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.FrameDetachedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2665,16 +1923,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Page.frameDetached")
-  var PageDotframeDetached_Original: (js.Function0[
+  var PageDotframeDetached_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.FrameDetachedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.FrameDetachedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.FrameDetachedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Page.FrameDetachedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Page.frameNavigated")
   def PageDotframeNavigated(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.FrameNavigatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.FrameNavigatedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2687,16 +1938,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Page.frameNavigated")
-  var PageDotframeNavigated_Original: (js.Function0[
+  var PageDotframeNavigated_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.FrameNavigatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.FrameNavigatedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.FrameNavigatedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Page.FrameNavigatedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Page.frameRequestedNavigation")
   def PageDotframeRequestedNavigation(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.FrameRequestedNavigationEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.FrameRequestedNavigationEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2709,16 +1953,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Page.frameRequestedNavigation")
-  var PageDotframeRequestedNavigation_Original: (js.Function0[
+  var PageDotframeRequestedNavigation_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.FrameRequestedNavigationEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.FrameRequestedNavigationEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.FrameRequestedNavigationEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Page.FrameRequestedNavigationEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Page.frameResized")
   def PageDotframeResized(): /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? std.Promise<[][0]> : std.Promise<void> */ js.Any = js.native
@@ -2731,16 +1968,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Page.frameResized")
-  var PageDotframeResized_Original: (js.Function0[
+  var PageDotframeResized_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? std.Promise<[][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? [][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Page.frameScheduledNavigation")
   def PageDotframeScheduledNavigation(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.FrameScheduledNavigationEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.FrameScheduledNavigationEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2753,16 +1983,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Page.frameScheduledNavigation")
-  var PageDotframeScheduledNavigation_Original: (js.Function0[
+  var PageDotframeScheduledNavigation_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.FrameScheduledNavigationEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.FrameScheduledNavigationEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.FrameScheduledNavigationEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Page.FrameScheduledNavigationEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Page.frameStartedLoading")
   def PageDotframeStartedLoading(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.FrameStartedLoadingEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.FrameStartedLoadingEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2775,16 +1998,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Page.frameStartedLoading")
-  var PageDotframeStartedLoading_Original: (js.Function0[
+  var PageDotframeStartedLoading_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.FrameStartedLoadingEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.FrameStartedLoadingEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.FrameStartedLoadingEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Page.FrameStartedLoadingEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Page.frameStoppedLoading")
   def PageDotframeStoppedLoading(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.FrameStoppedLoadingEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.FrameStoppedLoadingEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2797,16 +2013,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Page.frameStoppedLoading")
-  var PageDotframeStoppedLoading_Original: (js.Function0[
+  var PageDotframeStoppedLoading_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.FrameStoppedLoadingEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.FrameStoppedLoadingEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.FrameStoppedLoadingEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Page.FrameStoppedLoadingEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Page.interstitialHidden")
   def PageDotinterstitialHidden(): /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? std.Promise<[][0]> : std.Promise<void> */ js.Any = js.native
@@ -2819,16 +2028,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Page.interstitialHidden")
-  var PageDotinterstitialHidden_Original: (js.Function0[
+  var PageDotinterstitialHidden_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? std.Promise<[][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? [][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Page.interstitialShown")
   def PageDotinterstitialShown(): /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? std.Promise<[][0]> : std.Promise<void> */ js.Any = js.native
@@ -2841,16 +2043,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Page.interstitialShown")
-  var PageDotinterstitialShown_Original: (js.Function0[
+  var PageDotinterstitialShown_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? std.Promise<[][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? [][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Page.javascriptDialogClosed")
   def PageDotjavascriptDialogClosed(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.JavascriptDialogClosedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.JavascriptDialogClosedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2863,16 +2058,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Page.javascriptDialogClosed")
-  var PageDotjavascriptDialogClosed_Original: (js.Function0[
+  var PageDotjavascriptDialogClosed_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.JavascriptDialogClosedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.JavascriptDialogClosedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.JavascriptDialogClosedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Page.JavascriptDialogClosedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Page.javascriptDialogOpening")
   def PageDotjavascriptDialogOpening(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.JavascriptDialogOpeningEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.JavascriptDialogOpeningEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2885,16 +2073,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Page.javascriptDialogOpening")
-  var PageDotjavascriptDialogOpening_Original: (js.Function0[
+  var PageDotjavascriptDialogOpening_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.JavascriptDialogOpeningEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.JavascriptDialogOpeningEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.JavascriptDialogOpeningEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Page.JavascriptDialogOpeningEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Page.lifecycleEvent")
   def PageDotlifecycleEvent(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.LifecycleEventEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.LifecycleEventEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2907,16 +2088,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Page.lifecycleEvent")
-  var PageDotlifecycleEvent_Original: (js.Function0[
+  var PageDotlifecycleEvent_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.LifecycleEventEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.LifecycleEventEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.LifecycleEventEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Page.LifecycleEventEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Page.loadEventFired")
   def PageDotloadEventFired(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.LoadEventFiredEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.LoadEventFiredEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2929,16 +2103,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Page.loadEventFired")
-  var PageDotloadEventFired_Original: (js.Function0[
+  var PageDotloadEventFired_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.LoadEventFiredEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.LoadEventFiredEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.LoadEventFiredEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Page.LoadEventFiredEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Page.navigatedWithinDocument")
   def PageDotnavigatedWithinDocument(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.NavigatedWithinDocumentEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.NavigatedWithinDocumentEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2951,16 +2118,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Page.navigatedWithinDocument")
-  var PageDotnavigatedWithinDocument_Original: (js.Function0[
+  var PageDotnavigatedWithinDocument_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.NavigatedWithinDocumentEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.NavigatedWithinDocumentEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.NavigatedWithinDocumentEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Page.NavigatedWithinDocumentEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Page.prerenderAttemptCompleted")
   def PageDotprerenderAttemptCompleted(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.PrerenderAttemptCompletedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.PrerenderAttemptCompletedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2973,16 +2133,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Page.prerenderAttemptCompleted")
-  var PageDotprerenderAttemptCompleted_Original: (js.Function0[
+  var PageDotprerenderAttemptCompleted_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.PrerenderAttemptCompletedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.PrerenderAttemptCompletedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.PrerenderAttemptCompletedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Page.PrerenderAttemptCompletedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Page.screencastFrame")
   def PageDotscreencastFrame(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.ScreencastFrameEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.ScreencastFrameEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2995,16 +2148,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Page.screencastFrame")
-  var PageDotscreencastFrame_Original: (js.Function0[
+  var PageDotscreencastFrame_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.ScreencastFrameEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.ScreencastFrameEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.ScreencastFrameEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Page.ScreencastFrameEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Page.screencastVisibilityChanged")
   def PageDotscreencastVisibilityChanged(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.ScreencastVisibilityChangedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.ScreencastVisibilityChangedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -3017,16 +2163,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Page.screencastVisibilityChanged")
-  var PageDotscreencastVisibilityChanged_Original: (js.Function0[
+  var PageDotscreencastVisibilityChanged_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.ScreencastVisibilityChangedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.ScreencastVisibilityChangedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.ScreencastVisibilityChangedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Page.ScreencastVisibilityChangedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Page.windowOpen")
   def PageDotwindowOpen(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.WindowOpenEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.WindowOpenEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -3039,16 +2178,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Page.windowOpen")
-  var PageDotwindowOpen_Original: (js.Function0[
+  var PageDotwindowOpen_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.WindowOpenEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.WindowOpenEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.WindowOpenEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Page.WindowOpenEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   var Performance: PerformanceApi = js.native
   
@@ -3063,16 +2195,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Performance.metrics")
-  var PerformanceDotmetrics_Original: (js.Function0[
+  var PerformanceDotmetrics_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Performance.MetricsEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Performance.MetricsEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Performance.MetricsEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Performance.MetricsEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("PerformanceTimeline.timelineEventAdded")
   def PerformanceTimelineDottimelineEventAdded(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.PerformanceTimeline.TimelineEventAddedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.PerformanceTimeline.TimelineEventAddedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -3085,16 +2210,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("PerformanceTimeline.timelineEventAdded")
-  var PerformanceTimelineDottimelineEventAdded_Original: (js.Function0[
+  var PerformanceTimelineDottimelineEventAdded_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.PerformanceTimeline.TimelineEventAddedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.PerformanceTimeline.TimelineEventAddedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.PerformanceTimeline.TimelineEventAddedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.PerformanceTimeline.TimelineEventAddedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   var Profiler: ProfilerApi = js.native
   
@@ -3109,16 +2227,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Profiler.consoleProfileFinished")
-  var ProfilerDotconsoleProfileFinished_Original: (js.Function0[
+  var ProfilerDotconsoleProfileFinished_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Profiler.ConsoleProfileFinishedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Profiler.ConsoleProfileFinishedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Profiler.ConsoleProfileFinishedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Profiler.ConsoleProfileFinishedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Profiler.consoleProfileStarted")
   def ProfilerDotconsoleProfileStarted(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Profiler.ConsoleProfileStartedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Profiler.ConsoleProfileStartedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -3131,16 +2242,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Profiler.consoleProfileStarted")
-  var ProfilerDotconsoleProfileStarted_Original: (js.Function0[
+  var ProfilerDotconsoleProfileStarted_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Profiler.ConsoleProfileStartedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Profiler.ConsoleProfileStartedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Profiler.ConsoleProfileStartedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Profiler.ConsoleProfileStartedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Profiler.preciseCoverageDeltaUpdate")
   def ProfilerDotpreciseCoverageDeltaUpdate(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Profiler.PreciseCoverageDeltaUpdateEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Profiler.PreciseCoverageDeltaUpdateEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -3153,16 +2257,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Profiler.preciseCoverageDeltaUpdate")
-  var ProfilerDotpreciseCoverageDeltaUpdate_Original: (js.Function0[
+  var ProfilerDotpreciseCoverageDeltaUpdate_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Profiler.PreciseCoverageDeltaUpdateEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Profiler.PreciseCoverageDeltaUpdateEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Profiler.PreciseCoverageDeltaUpdateEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Profiler.PreciseCoverageDeltaUpdateEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   var Runtime: RuntimeApi = js.native
   
@@ -3177,16 +2274,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Runtime.bindingCalled")
-  var RuntimeDotbindingCalled_Original: (js.Function0[
+  var RuntimeDotbindingCalled_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Runtime.BindingCalledEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Runtime.BindingCalledEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Runtime.BindingCalledEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Runtime.BindingCalledEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Runtime.consoleAPICalled")
   def RuntimeDotconsoleAPICalled(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Runtime.ConsoleAPICalledEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Runtime.ConsoleAPICalledEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -3199,16 +2289,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Runtime.consoleAPICalled")
-  var RuntimeDotconsoleAPICalled_Original: (js.Function0[
+  var RuntimeDotconsoleAPICalled_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Runtime.ConsoleAPICalledEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Runtime.ConsoleAPICalledEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Runtime.ConsoleAPICalledEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Runtime.ConsoleAPICalledEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Runtime.exceptionRevoked")
   def RuntimeDotexceptionRevoked(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Runtime.ExceptionRevokedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Runtime.ExceptionRevokedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -3221,16 +2304,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Runtime.exceptionRevoked")
-  var RuntimeDotexceptionRevoked_Original: (js.Function0[
+  var RuntimeDotexceptionRevoked_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Runtime.ExceptionRevokedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Runtime.ExceptionRevokedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Runtime.ExceptionRevokedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Runtime.ExceptionRevokedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Runtime.exceptionThrown")
   def RuntimeDotexceptionThrown(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Runtime.ExceptionThrownEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Runtime.ExceptionThrownEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -3243,16 +2319,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Runtime.exceptionThrown")
-  var RuntimeDotexceptionThrown_Original: (js.Function0[
+  var RuntimeDotexceptionThrown_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Runtime.ExceptionThrownEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Runtime.ExceptionThrownEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Runtime.ExceptionThrownEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Runtime.ExceptionThrownEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Runtime.executionContextCreated")
   def RuntimeDotexecutionContextCreated(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Runtime.ExecutionContextCreatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Runtime.ExecutionContextCreatedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -3265,16 +2334,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Runtime.executionContextCreated")
-  var RuntimeDotexecutionContextCreated_Original: (js.Function0[
+  var RuntimeDotexecutionContextCreated_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Runtime.ExecutionContextCreatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Runtime.ExecutionContextCreatedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Runtime.ExecutionContextCreatedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Runtime.ExecutionContextCreatedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Runtime.executionContextDestroyed")
   def RuntimeDotexecutionContextDestroyed(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Runtime.ExecutionContextDestroyedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Runtime.ExecutionContextDestroyedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -3287,16 +2349,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Runtime.executionContextDestroyed")
-  var RuntimeDotexecutionContextDestroyed_Original: (js.Function0[
+  var RuntimeDotexecutionContextDestroyed_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Runtime.ExecutionContextDestroyedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Runtime.ExecutionContextDestroyedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Runtime.ExecutionContextDestroyedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Runtime.ExecutionContextDestroyedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Runtime.executionContextsCleared")
   def RuntimeDotexecutionContextsCleared(): /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? std.Promise<[][0]> : std.Promise<void> */ js.Any = js.native
@@ -3309,16 +2364,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Runtime.executionContextsCleared")
-  var RuntimeDotexecutionContextsCleared_Original: (js.Function0[
+  var RuntimeDotexecutionContextsCleared_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? std.Promise<[][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? [][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Runtime.inspectRequested")
   def RuntimeDotinspectRequested(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Runtime.InspectRequestedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Runtime.InspectRequestedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -3331,16 +2379,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Runtime.inspectRequested")
-  var RuntimeDotinspectRequested_Original: (js.Function0[
+  var RuntimeDotinspectRequested_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Runtime.InspectRequestedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Runtime.InspectRequestedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Runtime.InspectRequestedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Runtime.InspectRequestedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   /** @deprecated This domain is deprecated. */
   var Schema: SchemaApi = js.native
@@ -3358,16 +2399,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Security.certificateError")
-  var SecurityDotcertificateError_Original: (js.Function0[
+  var SecurityDotcertificateError_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Security.CertificateErrorEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Security.CertificateErrorEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Security.CertificateErrorEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Security.CertificateErrorEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Security.securityStateChanged")
   def SecurityDotsecurityStateChanged(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Security.SecurityStateChangedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Security.SecurityStateChangedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -3380,16 +2414,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Security.securityStateChanged")
-  var SecurityDotsecurityStateChanged_Original: (js.Function0[
+  var SecurityDotsecurityStateChanged_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Security.SecurityStateChangedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Security.SecurityStateChangedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Security.SecurityStateChangedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Security.SecurityStateChangedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Security.visibleSecurityStateChanged")
   def SecurityDotvisibleSecurityStateChanged(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Security.VisibleSecurityStateChangedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Security.VisibleSecurityStateChangedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -3402,16 +2429,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Security.visibleSecurityStateChanged")
-  var SecurityDotvisibleSecurityStateChanged_Original: (js.Function0[
+  var SecurityDotvisibleSecurityStateChanged_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Security.VisibleSecurityStateChangedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Security.VisibleSecurityStateChangedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Security.VisibleSecurityStateChangedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Security.VisibleSecurityStateChangedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   /** @deprecated this API is experimental. */
   var ServiceWorker: ServiceWorkerApi = js.native
@@ -3427,16 +2447,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("ServiceWorker.workerErrorReported")
-  var ServiceWorkerDotworkerErrorReported_Original: (js.Function0[
+  var ServiceWorkerDotworkerErrorReported_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.ServiceWorker.WorkerErrorReportedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.ServiceWorker.WorkerErrorReportedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.ServiceWorker.WorkerErrorReportedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.ServiceWorker.WorkerErrorReportedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("ServiceWorker.workerRegistrationUpdated")
   def ServiceWorkerDotworkerRegistrationUpdated(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.ServiceWorker.WorkerRegistrationUpdatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.ServiceWorker.WorkerRegistrationUpdatedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -3449,16 +2462,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("ServiceWorker.workerRegistrationUpdated")
-  var ServiceWorkerDotworkerRegistrationUpdated_Original: (js.Function0[
+  var ServiceWorkerDotworkerRegistrationUpdated_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.ServiceWorker.WorkerRegistrationUpdatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.ServiceWorker.WorkerRegistrationUpdatedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.ServiceWorker.WorkerRegistrationUpdatedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.ServiceWorker.WorkerRegistrationUpdatedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("ServiceWorker.workerVersionUpdated")
   def ServiceWorkerDotworkerVersionUpdated(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.ServiceWorker.WorkerVersionUpdatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.ServiceWorker.WorkerVersionUpdatedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -3471,16 +2477,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("ServiceWorker.workerVersionUpdated")
-  var ServiceWorkerDotworkerVersionUpdated_Original: (js.Function0[
+  var ServiceWorkerDotworkerVersionUpdated_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.ServiceWorker.WorkerVersionUpdatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.ServiceWorker.WorkerVersionUpdatedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.ServiceWorker.WorkerVersionUpdatedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.ServiceWorker.WorkerVersionUpdatedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   /** @deprecated this API is experimental. */
   var Storage: StorageApi = js.native
@@ -3496,16 +2495,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Storage.cacheStorageContentUpdated")
-  var StorageDotcacheStorageContentUpdated_Original: (js.Function0[
+  var StorageDotcacheStorageContentUpdated_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Storage.CacheStorageContentUpdatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Storage.CacheStorageContentUpdatedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Storage.CacheStorageContentUpdatedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Storage.CacheStorageContentUpdatedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Storage.cacheStorageListUpdated")
   def StorageDotcacheStorageListUpdated(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Storage.CacheStorageListUpdatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Storage.CacheStorageListUpdatedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -3518,16 +2510,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Storage.cacheStorageListUpdated")
-  var StorageDotcacheStorageListUpdated_Original: (js.Function0[
+  var StorageDotcacheStorageListUpdated_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Storage.CacheStorageListUpdatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Storage.CacheStorageListUpdatedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Storage.CacheStorageListUpdatedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Storage.CacheStorageListUpdatedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Storage.indexedDBContentUpdated")
   def StorageDotindexedDBContentUpdated(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Storage.IndexedDBContentUpdatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Storage.IndexedDBContentUpdatedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -3540,16 +2525,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Storage.indexedDBContentUpdated")
-  var StorageDotindexedDBContentUpdated_Original: (js.Function0[
+  var StorageDotindexedDBContentUpdated_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Storage.IndexedDBContentUpdatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Storage.IndexedDBContentUpdatedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Storage.IndexedDBContentUpdatedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Storage.IndexedDBContentUpdatedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Storage.indexedDBListUpdated")
   def StorageDotindexedDBListUpdated(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Storage.IndexedDBListUpdatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Storage.IndexedDBListUpdatedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -3562,16 +2540,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Storage.indexedDBListUpdated")
-  var StorageDotindexedDBListUpdated_Original: (js.Function0[
+  var StorageDotindexedDBListUpdated_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Storage.IndexedDBListUpdatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Storage.IndexedDBListUpdatedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Storage.IndexedDBListUpdatedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Storage.IndexedDBListUpdatedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Storage.interestGroupAccessed")
   def StorageDotinterestGroupAccessed(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Storage.InterestGroupAccessedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Storage.InterestGroupAccessedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -3584,16 +2555,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Storage.interestGroupAccessed")
-  var StorageDotinterestGroupAccessed_Original: (js.Function0[
+  var StorageDotinterestGroupAccessed_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Storage.InterestGroupAccessedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Storage.InterestGroupAccessedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Storage.InterestGroupAccessedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Storage.InterestGroupAccessedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Storage.sharedStorageAccessed")
   def StorageDotsharedStorageAccessed(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Storage.SharedStorageAccessedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Storage.SharedStorageAccessedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -3606,16 +2570,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Storage.sharedStorageAccessed")
-  var StorageDotsharedStorageAccessed_Original: (js.Function0[
+  var StorageDotsharedStorageAccessed_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Storage.SharedStorageAccessedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Storage.SharedStorageAccessedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Storage.SharedStorageAccessedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Storage.SharedStorageAccessedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   /** @deprecated this API is experimental. */
   var SystemInfo: SystemInfoApi = js.native
@@ -3633,16 +2590,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Target.attachedToTarget")
-  var TargetDotattachedToTarget_Original: (js.Function0[
+  var TargetDotattachedToTarget_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Target.AttachedToTargetEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Target.AttachedToTargetEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Target.AttachedToTargetEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Target.AttachedToTargetEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Target.detachedFromTarget")
   def TargetDotdetachedFromTarget(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Target.DetachedFromTargetEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Target.DetachedFromTargetEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -3655,16 +2605,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Target.detachedFromTarget")
-  var TargetDotdetachedFromTarget_Original: (js.Function0[
+  var TargetDotdetachedFromTarget_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Target.DetachedFromTargetEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Target.DetachedFromTargetEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Target.DetachedFromTargetEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Target.DetachedFromTargetEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Target.receivedMessageFromTarget")
   def TargetDotreceivedMessageFromTarget(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Target.ReceivedMessageFromTargetEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Target.ReceivedMessageFromTargetEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -3677,16 +2620,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Target.receivedMessageFromTarget")
-  var TargetDotreceivedMessageFromTarget_Original: (js.Function0[
+  var TargetDotreceivedMessageFromTarget_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Target.ReceivedMessageFromTargetEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Target.ReceivedMessageFromTargetEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Target.ReceivedMessageFromTargetEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Target.ReceivedMessageFromTargetEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Target.targetCrashed")
   def TargetDottargetCrashed(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Target.TargetCrashedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Target.TargetCrashedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -3699,16 +2635,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Target.targetCrashed")
-  var TargetDottargetCrashed_Original: (js.Function0[
+  var TargetDottargetCrashed_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Target.TargetCrashedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Target.TargetCrashedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Target.TargetCrashedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Target.TargetCrashedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Target.targetCreated")
   def TargetDottargetCreated(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Target.TargetCreatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Target.TargetCreatedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -3721,16 +2650,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Target.targetCreated")
-  var TargetDottargetCreated_Original: (js.Function0[
+  var TargetDottargetCreated_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Target.TargetCreatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Target.TargetCreatedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Target.TargetCreatedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Target.TargetCreatedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Target.targetDestroyed")
   def TargetDottargetDestroyed(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Target.TargetDestroyedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Target.TargetDestroyedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -3743,16 +2665,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Target.targetDestroyed")
-  var TargetDottargetDestroyed_Original: (js.Function0[
+  var TargetDottargetDestroyed_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Target.TargetDestroyedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Target.TargetDestroyedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Target.TargetDestroyedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Target.TargetDestroyedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Target.targetInfoChanged")
   def TargetDottargetInfoChanged(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Target.TargetInfoChangedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Target.TargetInfoChangedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -3765,16 +2680,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Target.targetInfoChanged")
-  var TargetDottargetInfoChanged_Original: (js.Function0[
+  var TargetDottargetInfoChanged_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Target.TargetInfoChangedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Target.TargetInfoChangedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Target.TargetInfoChangedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Target.TargetInfoChangedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   /** @deprecated this API is experimental. */
   var Tethering: TetheringApi = js.native
@@ -3790,16 +2698,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Tethering.accepted")
-  var TetheringDotaccepted_Original: (js.Function0[
+  var TetheringDotaccepted_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Tethering.AcceptedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Tethering.AcceptedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Tethering.AcceptedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Tethering.AcceptedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   /** @deprecated this API is experimental. */
   var Tracing: TracingApi = js.native
@@ -3815,16 +2716,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Tracing.bufferUsage")
-  var TracingDotbufferUsage_Original: (js.Function0[
+  var TracingDotbufferUsage_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Tracing.BufferUsageEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Tracing.BufferUsageEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Tracing.BufferUsageEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Tracing.BufferUsageEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Tracing.dataCollected")
   def TracingDotdataCollected(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Tracing.DataCollectedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Tracing.DataCollectedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -3837,16 +2731,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Tracing.dataCollected")
-  var TracingDotdataCollected_Original: (js.Function0[
+  var TracingDotdataCollected_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Tracing.DataCollectedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Tracing.DataCollectedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Tracing.DataCollectedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Tracing.DataCollectedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("Tracing.tracingComplete")
   def TracingDottracingComplete(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Tracing.TracingCompleteEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Tracing.TracingCompleteEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -3859,16 +2746,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("Tracing.tracingComplete")
-  var TracingDottracingComplete_Original: (js.Function0[
+  var TracingDottracingComplete_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Tracing.TracingCompleteEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Tracing.TracingCompleteEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Tracing.TracingCompleteEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.Tracing.TracingCompleteEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   /** @deprecated this API is experimental. */
   var WebAudio: WebAudioApi = js.native
@@ -3884,16 +2764,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("WebAudio.audioListenerCreated")
-  var WebAudioDotaudioListenerCreated_Original: (js.Function0[
+  var WebAudioDotaudioListenerCreated_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.AudioListenerCreatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.WebAudio.AudioListenerCreatedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.AudioListenerCreatedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.WebAudio.AudioListenerCreatedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("WebAudio.audioListenerWillBeDestroyed")
   def WebAudioDotaudioListenerWillBeDestroyed(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.AudioListenerWillBeDestroyedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.WebAudio.AudioListenerWillBeDestroyedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -3906,16 +2779,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("WebAudio.audioListenerWillBeDestroyed")
-  var WebAudioDotaudioListenerWillBeDestroyed_Original: (js.Function0[
+  var WebAudioDotaudioListenerWillBeDestroyed_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.AudioListenerWillBeDestroyedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.WebAudio.AudioListenerWillBeDestroyedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.AudioListenerWillBeDestroyedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.WebAudio.AudioListenerWillBeDestroyedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("WebAudio.audioNodeCreated")
   def WebAudioDotaudioNodeCreated(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.AudioNodeCreatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.WebAudio.AudioNodeCreatedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -3928,16 +2794,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("WebAudio.audioNodeCreated")
-  var WebAudioDotaudioNodeCreated_Original: (js.Function0[
+  var WebAudioDotaudioNodeCreated_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.AudioNodeCreatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.WebAudio.AudioNodeCreatedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.AudioNodeCreatedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.WebAudio.AudioNodeCreatedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("WebAudio.audioNodeWillBeDestroyed")
   def WebAudioDotaudioNodeWillBeDestroyed(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.AudioNodeWillBeDestroyedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.WebAudio.AudioNodeWillBeDestroyedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -3950,16 +2809,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("WebAudio.audioNodeWillBeDestroyed")
-  var WebAudioDotaudioNodeWillBeDestroyed_Original: (js.Function0[
+  var WebAudioDotaudioNodeWillBeDestroyed_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.AudioNodeWillBeDestroyedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.WebAudio.AudioNodeWillBeDestroyedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.AudioNodeWillBeDestroyedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.WebAudio.AudioNodeWillBeDestroyedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("WebAudio.audioParamCreated")
   def WebAudioDotaudioParamCreated(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.AudioParamCreatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.WebAudio.AudioParamCreatedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -3972,16 +2824,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("WebAudio.audioParamCreated")
-  var WebAudioDotaudioParamCreated_Original: (js.Function0[
+  var WebAudioDotaudioParamCreated_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.AudioParamCreatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.WebAudio.AudioParamCreatedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.AudioParamCreatedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.WebAudio.AudioParamCreatedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("WebAudio.audioParamWillBeDestroyed")
   def WebAudioDotaudioParamWillBeDestroyed(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.AudioParamWillBeDestroyedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.WebAudio.AudioParamWillBeDestroyedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -3994,16 +2839,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("WebAudio.audioParamWillBeDestroyed")
-  var WebAudioDotaudioParamWillBeDestroyed_Original: (js.Function0[
+  var WebAudioDotaudioParamWillBeDestroyed_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.AudioParamWillBeDestroyedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.WebAudio.AudioParamWillBeDestroyedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.AudioParamWillBeDestroyedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.WebAudio.AudioParamWillBeDestroyedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("WebAudio.contextChanged")
   def WebAudioDotcontextChanged(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.ContextChangedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.WebAudio.ContextChangedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -4016,16 +2854,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("WebAudio.contextChanged")
-  var WebAudioDotcontextChanged_Original: (js.Function0[
+  var WebAudioDotcontextChanged_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.ContextChangedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.WebAudio.ContextChangedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.ContextChangedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.WebAudio.ContextChangedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("WebAudio.contextCreated")
   def WebAudioDotcontextCreated(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.ContextCreatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.WebAudio.ContextCreatedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -4038,16 +2869,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("WebAudio.contextCreated")
-  var WebAudioDotcontextCreated_Original: (js.Function0[
+  var WebAudioDotcontextCreated_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.ContextCreatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.WebAudio.ContextCreatedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.ContextCreatedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.WebAudio.ContextCreatedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("WebAudio.contextWillBeDestroyed")
   def WebAudioDotcontextWillBeDestroyed(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.ContextWillBeDestroyedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.WebAudio.ContextWillBeDestroyedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -4060,16 +2884,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("WebAudio.contextWillBeDestroyed")
-  var WebAudioDotcontextWillBeDestroyed_Original: (js.Function0[
+  var WebAudioDotcontextWillBeDestroyed_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.ContextWillBeDestroyedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.WebAudio.ContextWillBeDestroyedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.ContextWillBeDestroyedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.WebAudio.ContextWillBeDestroyedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("WebAudio.nodeParamConnected")
   def WebAudioDotnodeParamConnected(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.NodeParamConnectedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.WebAudio.NodeParamConnectedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -4082,16 +2899,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("WebAudio.nodeParamConnected")
-  var WebAudioDotnodeParamConnected_Original: (js.Function0[
+  var WebAudioDotnodeParamConnected_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.NodeParamConnectedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.WebAudio.NodeParamConnectedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.NodeParamConnectedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.WebAudio.NodeParamConnectedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("WebAudio.nodeParamDisconnected")
   def WebAudioDotnodeParamDisconnected(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.NodeParamDisconnectedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.WebAudio.NodeParamDisconnectedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -4104,16 +2914,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("WebAudio.nodeParamDisconnected")
-  var WebAudioDotnodeParamDisconnected_Original: (js.Function0[
+  var WebAudioDotnodeParamDisconnected_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.NodeParamDisconnectedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.WebAudio.NodeParamDisconnectedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.NodeParamDisconnectedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.WebAudio.NodeParamDisconnectedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("WebAudio.nodesConnected")
   def WebAudioDotnodesConnected(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.NodesConnectedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.WebAudio.NodesConnectedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -4126,16 +2929,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("WebAudio.nodesConnected")
-  var WebAudioDotnodesConnected_Original: (js.Function0[
+  var WebAudioDotnodesConnected_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.NodesConnectedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.WebAudio.NodesConnectedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.NodesConnectedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.WebAudio.NodesConnectedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   @JSName("WebAudio.nodesDisconnected")
   def WebAudioDotnodesDisconnected(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.NodesDisconnectedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.WebAudio.NodesDisconnectedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -4148,16 +2944,9 @@ trait Client extends StObject {
     ]
   ): js.Function0[this.type] = js.native
   @JSName("WebAudio.nodesDisconnected")
-  var WebAudioDotnodesDisconnected_Original: (js.Function0[
+  var WebAudioDotnodesDisconnected_Original: js.Function0[
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.NodesDisconnectedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.WebAudio.NodesDisconnectedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.NodesDisconnectedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.WebAudio.NodesDisconnectedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
+  ] = js.native
   
   /** @deprecated this API is experimental. */
   var WebAuthn: WebAuthnApi = js.native

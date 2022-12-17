@@ -25,7 +25,7 @@ trait PickImpldefaultTransition
   
   var debug: js.UndefOr[Boolean] = js.undefined
   
-  var defaultTransition: DefaultTransitionSettings & js.UndefOr[DefaultTransitionSettings]
+  var defaultTransition: DefaultTransitionSettings
   
   var delaySetup: js.UndefOr[Boolean] = js.undefined
   
@@ -75,7 +75,7 @@ trait PickImpldefaultTransition
 }
 object PickImpldefaultTransition {
   
-  inline def apply(defaultTransition: DefaultTransitionSettings & js.UndefOr[DefaultTransitionSettings]): PickImpldefaultTransition = {
+  inline def apply(defaultTransition: DefaultTransitionSettings): PickImpldefaultTransition = {
     val __obj = js.Dynamic.literal(defaultTransition = defaultTransition.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldefaultTransition]
   }
@@ -98,7 +98,7 @@ object PickImpldefaultTransition {
     
     inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    inline def setDefaultTransition(value: DefaultTransitionSettings & js.UndefOr[DefaultTransitionSettings]): Self = StObject.set(x, "defaultTransition", value.asInstanceOf[js.Any])
+    inline def setDefaultTransition(value: DefaultTransitionSettings): Self = StObject.set(x, "defaultTransition", value.asInstanceOf[js.Any])
     
     inline def setDelaySetup(value: Boolean): Self = StObject.set(x, "delaySetup", value.asInstanceOf[js.Any])
     

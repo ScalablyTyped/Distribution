@@ -152,39 +152,6 @@ object anon {
     
     var msgBody: String
     
-    var msgKey: String
-    
-    var offset: Double
-    
-    var partition: Double
-    
-    var topic: String
-  }
-  object MsgBody {
-    
-    inline def apply(msgBody: String, msgKey: String, offset: Double, partition: Double, topic: String): MsgBody = {
-      val __obj = js.Dynamic.literal(msgBody = msgBody.asInstanceOf[js.Any], msgKey = msgKey.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], partition = partition.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
-      __obj.asInstanceOf[MsgBody]
-    }
-    
-    extension [Self <: MsgBody](x: Self) {
-      
-      inline def setMsgBody(value: String): Self = StObject.set(x, "msgBody", value.asInstanceOf[js.Any])
-      
-      inline def setMsgKey(value: String): Self = StObject.set(x, "msgKey", value.asInstanceOf[js.Any])
-      
-      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
-      
-      inline def setPartition(value: Double): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
-      
-      inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait MsgId extends StObject {
-    
-    var msgBody: String
-    
     var msgId: String
     
     var msgTag: String
@@ -201,7 +168,7 @@ object anon {
     
     var `type`: String
   }
-  object MsgId {
+  object MsgBody {
     
     inline def apply(
       msgBody: String,
@@ -213,13 +180,13 @@ object anon {
       topicName: String,
       topicOwner: Double,
       `type`: String
-    ): MsgId = {
+    ): MsgBody = {
       val __obj = js.Dynamic.literal(msgBody = msgBody.asInstanceOf[js.Any], msgId = msgId.asInstanceOf[js.Any], msgTag = msgTag.asInstanceOf[js.Any], publishTime = publishTime.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any], subscriptionName = subscriptionName.asInstanceOf[js.Any], topicName = topicName.asInstanceOf[js.Any], topicOwner = topicOwner.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[MsgId]
+      __obj.asInstanceOf[MsgBody]
     }
     
-    extension [Self <: MsgId](x: Self) {
+    extension [Self <: MsgBody](x: Self) {
       
       inline def setMsgBody(value: String): Self = StObject.set(x, "msgBody", value.asInstanceOf[js.Any])
       
@@ -238,6 +205,39 @@ object anon {
       inline def setTopicOwner(value: Double): Self = StObject.set(x, "topicOwner", value.asInstanceOf[js.Any])
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait MsgKey extends StObject {
+    
+    var msgBody: String
+    
+    var msgKey: String
+    
+    var offset: Double
+    
+    var partition: Double
+    
+    var topic: String
+  }
+  object MsgKey {
+    
+    inline def apply(msgBody: String, msgKey: String, offset: Double, partition: Double, topic: String): MsgKey = {
+      val __obj = js.Dynamic.literal(msgBody = msgBody.asInstanceOf[js.Any], msgKey = msgKey.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], partition = partition.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
+      __obj.asInstanceOf[MsgKey]
+    }
+    
+    extension [Self <: MsgKey](x: Self) {
+      
+      inline def setMsgBody(value: String): Self = StObject.set(x, "msgBody", value.asInstanceOf[js.Any])
+      
+      inline def setMsgKey(value: String): Self = StObject.set(x, "msgKey", value.asInstanceOf[js.Any])
+      
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      
+      inline def setPartition(value: Double): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
+      
+      inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     }
   }
   

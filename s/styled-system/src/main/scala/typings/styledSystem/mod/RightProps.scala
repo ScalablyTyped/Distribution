@@ -29,6 +29,6 @@ object RightProps {
     
     inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     
-    inline def setRightVarargs(value: (TVal | Null)*): Self = StObject.set(x, "right", js.Array(value :_*))
+    inline def setRightVarargs(value: (TVal | Null)*): Self = StObject.set(x, "right", js.Array(value*))
   }
 }

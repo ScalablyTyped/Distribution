@@ -2,7 +2,6 @@ package typings.readableStream.mod
 
 import typings.node.bufferMod.global.BufferEncoding
 import typings.readableStream.anon.Chunk
-import typings.readableStream.anon.Encoding
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,44 +15,24 @@ trait TransformOptions extends StObject {
   
   var defaultEncoding: js.UndefOr[BufferEncoding] = js.undefined
   
-  var destroy: (js.UndefOr[
+  var destroy: js.UndefOr[
     js.ThisFunction2[
       /* this */ IReadable, 
       /* error */ js.Error | Null, 
       /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
       Unit
     ]
-  ]) & (js.UndefOr[
-    js.ThisFunction2[
-      /* this */ IWritable, 
-      /* error */ js.Error | Null, 
-      /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
-      Unit
-    ]
-  ]) & (js.UndefOr[
-    js.ThisFunction2[
-      /* this */ ITransform, 
-      /* error */ js.Error | Null, 
-      /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
-      Unit
-    ]
-  ])
+  ] = js.undefined
   
   var encoding: js.UndefOr[BufferEncoding] = js.undefined
   
-  var `final`: (js.UndefOr[
+  var `final`: js.UndefOr[
     js.ThisFunction1[
       /* this */ IWritable, 
       /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
       Unit
     ]
-  ]) & (js.UndefOr[
-    js.ThisFunction1[
-      /* this */ ITransform, 
-      /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
-      Unit
-    ]
-  ])
+  ] = js.undefined
   
   var flush: js.UndefOr[
     js.Function1[
@@ -66,7 +45,7 @@ trait TransformOptions extends StObject {
   
   var objectMode: js.UndefOr[Boolean] = js.undefined
   
-  var read: (js.UndefOr[js.ThisFunction1[/* this */ IReadable, /* size */ Double, Unit]]) & (js.UndefOr[js.ThisFunction1[/* this */ ITransform, /* size */ Double, Unit]])
+  var read: js.UndefOr[js.ThisFunction1[/* this */ IReadable, /* size */ Double, Unit]] = js.undefined
   
   var readableHighWaterMark: js.UndefOr[Double] = js.undefined
   
@@ -86,7 +65,7 @@ trait TransformOptions extends StObject {
   
   var writableObjectMode: js.UndefOr[Boolean] = js.undefined
   
-  var write: (js.UndefOr[
+  var write: js.UndefOr[
     js.ThisFunction3[
       /* this */ IWritable, 
       /* chunk */ Any, 
@@ -94,106 +73,21 @@ trait TransformOptions extends StObject {
       /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
       Unit
     ]
-  ]) & (js.UndefOr[
-    js.ThisFunction3[
-      /* this */ ITransform, 
-      /* chunk */ Any, 
-      /* encoding */ BufferEncoding, 
-      /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
-      Unit
-    ]
-  ])
+  ] = js.undefined
   
-  var writev: (js.UndefOr[
+  var writev: js.UndefOr[
     js.ThisFunction2[
       /* this */ IWritable, 
       /* chunk */ ArrayLike[Chunk], 
       /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
       Unit
     ]
-  ]) & (js.UndefOr[
-    js.ThisFunction2[
-      /* this */ ITransform, 
-      /* chunks */ js.Array[Encoding], 
-      /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
-      Unit
-    ]
-  ])
+  ] = js.undefined
 }
 object TransformOptions {
   
-  inline def apply(
-    destroy: (js.UndefOr[
-      js.ThisFunction2[
-        /* this */ IReadable, 
-        /* error */ js.Error | Null, 
-        /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
-        Unit
-      ]
-    ]) & (js.UndefOr[
-      js.ThisFunction2[
-        /* this */ IWritable, 
-        /* error */ js.Error | Null, 
-        /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
-        Unit
-      ]
-    ]) & (js.UndefOr[
-      js.ThisFunction2[
-        /* this */ ITransform, 
-        /* error */ js.Error | Null, 
-        /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
-        Unit
-      ]
-    ]),
-    `final`: (js.UndefOr[
-      js.ThisFunction1[
-        /* this */ IWritable, 
-        /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
-        Unit
-      ]
-    ]) & (js.UndefOr[
-      js.ThisFunction1[
-        /* this */ ITransform, 
-        /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
-        Unit
-      ]
-    ]),
-    read: (js.UndefOr[js.ThisFunction1[/* this */ IReadable, /* size */ Double, Unit]]) & (js.UndefOr[js.ThisFunction1[/* this */ ITransform, /* size */ Double, Unit]]),
-    write: (js.UndefOr[
-      js.ThisFunction3[
-        /* this */ IWritable, 
-        /* chunk */ Any, 
-        /* encoding */ BufferEncoding | String, 
-        /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
-        Unit
-      ]
-    ]) & (js.UndefOr[
-      js.ThisFunction3[
-        /* this */ ITransform, 
-        /* chunk */ Any, 
-        /* encoding */ BufferEncoding, 
-        /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
-        Unit
-      ]
-    ]),
-    writev: (js.UndefOr[
-      js.ThisFunction2[
-        /* this */ IWritable, 
-        /* chunk */ ArrayLike[Chunk], 
-        /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
-        Unit
-      ]
-    ]) & (js.UndefOr[
-      js.ThisFunction2[
-        /* this */ ITransform, 
-        /* chunks */ js.Array[Encoding], 
-        /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
-        Unit
-      ]
-    ])
-  ): TransformOptions = {
-    val __obj = js.Dynamic.literal(destroy = destroy.asInstanceOf[js.Any], read = read.asInstanceOf[js.Any], write = write.asInstanceOf[js.Any], writev = writev.asInstanceOf[js.Any])
-    __obj.updateDynamic("final")(`final`.asInstanceOf[js.Any])
+  inline def apply(): TransformOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransformOptions]
   }
   
@@ -208,49 +102,29 @@ object TransformOptions {
     inline def setDefaultEncodingUndefined: Self = StObject.set(x, "defaultEncoding", js.undefined)
     
     inline def setDestroy(
-      value: (js.UndefOr[
-          js.ThisFunction2[
-            /* this */ IReadable, 
-            /* error */ js.Error | Null, 
-            /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
-            Unit
-          ]
-        ]) & (js.UndefOr[
-          js.ThisFunction2[
-            /* this */ IWritable, 
-            /* error */ js.Error | Null, 
-            /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
-            Unit
-          ]
-        ]) & (js.UndefOr[
-          js.ThisFunction2[
-            /* this */ ITransform, 
-            /* error */ js.Error | Null, 
-            /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
-            Unit
-          ]
-        ])
+      value: js.ThisFunction2[
+          /* this */ IReadable, 
+          /* error */ js.Error | Null, 
+          /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
+          Unit
+        ]
     ): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
+    
+    inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
     inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
     inline def setFinal(
-      value: (js.UndefOr[
-          js.ThisFunction1[
-            /* this */ IWritable, 
-            /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
-            Unit
-          ]
-        ]) & (js.UndefOr[
-          js.ThisFunction1[
-            /* this */ ITransform, 
-            /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
-            Unit
-          ]
-        ])
+      value: js.ThisFunction1[
+          /* this */ IWritable, 
+          /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
+          Unit
+        ]
     ): Self = StObject.set(x, "final", value.asInstanceOf[js.Any])
+    
+    inline def setFinalUndefined: Self = StObject.set(x, "final", js.undefined)
     
     inline def setFlush(
       value: /* callback */ js.Function2[/* error */ js.UndefOr[js.Error | Null], /* data */ js.UndefOr[Any], Unit] => Unit
@@ -266,9 +140,9 @@ object TransformOptions {
     
     inline def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
     
-    inline def setRead(
-      value: (js.UndefOr[js.ThisFunction1[/* this */ IReadable, /* size */ Double, Unit]]) & (js.UndefOr[js.ThisFunction1[/* this */ ITransform, /* size */ Double, Unit]])
-    ): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+    inline def setRead(value: js.ThisFunction1[/* this */ IReadable, /* size */ Double, Unit]): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+    
+    inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
     
     inline def setReadableHighWaterMark(value: Double): Self = StObject.set(x, "readableHighWaterMark", value.asInstanceOf[js.Any])
     
@@ -299,41 +173,26 @@ object TransformOptions {
     inline def setWritableObjectModeUndefined: Self = StObject.set(x, "writableObjectMode", js.undefined)
     
     inline def setWrite(
-      value: (js.UndefOr[
-          js.ThisFunction3[
-            /* this */ IWritable, 
-            /* chunk */ Any, 
-            /* encoding */ BufferEncoding | String, 
-            /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
-            Unit
-          ]
-        ]) & (js.UndefOr[
-          js.ThisFunction3[
-            /* this */ ITransform, 
-            /* chunk */ Any, 
-            /* encoding */ BufferEncoding, 
-            /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
-            Unit
-          ]
-        ])
+      value: js.ThisFunction3[
+          /* this */ IWritable, 
+          /* chunk */ Any, 
+          /* encoding */ BufferEncoding | String, 
+          /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
+          Unit
+        ]
     ): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
     
+    inline def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
+    
     inline def setWritev(
-      value: (js.UndefOr[
-          js.ThisFunction2[
-            /* this */ IWritable, 
-            /* chunk */ ArrayLike[Chunk], 
-            /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
-            Unit
-          ]
-        ]) & (js.UndefOr[
-          js.ThisFunction2[
-            /* this */ ITransform, 
-            /* chunks */ js.Array[Encoding], 
-            /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
-            Unit
-          ]
-        ])
+      value: js.ThisFunction2[
+          /* this */ IWritable, 
+          /* chunk */ ArrayLike[Chunk], 
+          /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
+          Unit
+        ]
     ): Self = StObject.set(x, "writev", value.asInstanceOf[js.Any])
+    
+    inline def setWritevUndefined: Self = StObject.set(x, "writev", js.undefined)
   }
 }

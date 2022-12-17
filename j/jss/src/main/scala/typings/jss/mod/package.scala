@@ -60,7 +60,7 @@ to avoid circular code involving:
 type JssStyle[Props, Theme] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof jss.jss.NormalCssProperties ]: jss.jss.NormalCssValues<K> | any | jss.jss.Func<Props, Theme, jss.jss.NormalCssValues<K> | any | undefined> | jss.jss.MinimalObservable<jss.jss.NormalCssValues<K> | any | undefined>} */ js.Any) | (StringDictionary[
 JssValue | Any | (Func[Props, Theme, js.UndefOr[JssValue | Any]]) | (MinimalObservable[js.UndefOr[JssValue | Any]])])
 
-type JssValue = String | (Double & js.Object) | (js.Array[String | Double | (js.Array[String | Double]) | Exclamationmarkimportant]) | Null | `false`
+type JssValue = String | Double | (js.Array[String | Double | (js.Array[String | Double]) | Exclamationmarkimportant]) | Null | `false`
 
 type Keyframes[Name /* <: String */] = Record[Name, String]
 

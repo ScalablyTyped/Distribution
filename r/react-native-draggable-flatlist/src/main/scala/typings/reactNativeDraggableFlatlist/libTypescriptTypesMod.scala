@@ -8,7 +8,7 @@ import typings.reactNative.anon.AutoscrollToTopThreshold
 import typings.reactNative.anon.AverageItemLength
 import typings.reactNative.anon.Changed
 import typings.reactNative.anon.DistanceFromEnd
-import typings.reactNative.anon.Length
+import typings.reactNative.anon.Index
 import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
@@ -30,7 +30,6 @@ import typings.reactNative.mod.ViewStyle
 import typings.reactNative.mod.ViewabilityConfigCallbackPair
 import typings.reactNative.mod.ViewabilityConfigCallbackPairs
 import typings.reactNativeDraggableFlatlist.anon.ActiveIndexAnim
-import typings.reactNativeDraggableFlatlist.anon.Index
 import typings.reactNativeDraggableFlatlist.anon.Layout
 import typings.reactNativeDraggableFlatlist.anon.Offset
 import typings.reactNativeDraggableFlatlist.anon.PartialWithSpringConfig
@@ -219,7 +218,7 @@ object libTypescriptTypesMod {
     
     var alwaysBounceVertical: js.UndefOr[Boolean] = js.undefined
     
-    var animationConfig: js.UndefOr[PartialWithSpringConfig] & js.UndefOr[WithSpringConfig]
+    var animationConfig: js.UndefOr[PartialWithSpringConfig] = js.undefined
     
     var automaticallyAdjustContentInsets: js.UndefOr[Boolean] = js.undefined
     
@@ -286,7 +285,7 @@ object libTypescriptTypesMod {
     var getItemCount: js.UndefOr[js.Function1[/* data */ Any, Double]] = js.undefined
     
     var getItemLayout: js.UndefOr[
-        js.Function2[/* data */ js.UndefOr[js.Array[T] | Null], /* index */ Double, Length]
+        js.Function2[/* data */ js.UndefOr[js.Array[T] | Null], /* index */ Double, Index]
       ] = js.undefined
     
     var hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined
@@ -532,12 +531,11 @@ object libTypescriptTypesMod {
   object DraggableFlatListProps {
     
     inline def apply[T](
-      animationConfig: js.UndefOr[PartialWithSpringConfig] & js.UndefOr[WithSpringConfig],
       data: js.Array[T],
       keyExtractor: (T, Double) => String,
       renderItem: /* params */ RenderItemParams[T] => ReactNode
     ): DraggableFlatListProps[T] = {
-      val __obj = js.Dynamic.literal(animationConfig = animationConfig.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], keyExtractor = js.Any.fromFunction2(keyExtractor), renderItem = js.Any.fromFunction1(renderItem))
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], keyExtractor = js.Any.fromFunction2(keyExtractor), renderItem = js.Any.fromFunction1(renderItem))
       __obj.asInstanceOf[DraggableFlatListProps[T]]
     }
     
@@ -611,7 +609,9 @@ object libTypescriptTypesMod {
       
       inline def setAlwaysBounceVerticalUndefined: Self = StObject.set(x, "alwaysBounceVertical", js.undefined)
       
-      inline def setAnimationConfig(value: js.UndefOr[PartialWithSpringConfig] & js.UndefOr[WithSpringConfig]): Self = StObject.set(x, "animationConfig", value.asInstanceOf[js.Any])
+      inline def setAnimationConfig(value: PartialWithSpringConfig): Self = StObject.set(x, "animationConfig", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationConfigUndefined: Self = StObject.set(x, "animationConfig", js.undefined)
       
       inline def setAutomaticallyAdjustContentInsets(value: Boolean): Self = StObject.set(x, "automaticallyAdjustContentInsets", value.asInstanceOf[js.Any])
       
@@ -749,7 +749,7 @@ object libTypescriptTypesMod {
       
       inline def setGetItemCountUndefined: Self = StObject.set(x, "getItemCount", js.undefined)
       
-      inline def setGetItemLayout(value: (/* data */ js.UndefOr[js.Array[T] | Null], /* index */ Double) => Length): Self = StObject.set(x, "getItemLayout", js.Any.fromFunction2(value))
+      inline def setGetItemLayout(value: (/* data */ js.UndefOr[js.Array[T] | Null], /* index */ Double) => Index): Self = StObject.set(x, "getItemLayout", js.Any.fromFunction2(value))
       
       inline def setGetItemLayoutUndefined: Self = StObject.set(x, "getItemLayout", js.undefined)
       
@@ -1157,7 +1157,7 @@ object libTypescriptTypesMod {
       
       inline def setRenderItem(value: /* params */ RenderItemParams[T] => ReactNode): Self = StObject.set(x, "renderItem", js.Any.fromFunction1(value))
       
-      inline def setRenderPlaceholder(value: /* params */ Index[T] => Element): Self = StObject.set(x, "renderPlaceholder", js.Any.fromFunction1(value))
+      inline def setRenderPlaceholder(value: /* params */ typings.reactNativeDraggableFlatlist.anon.Index[T] => Element): Self = StObject.set(x, "renderPlaceholder", js.Any.fromFunction1(value))
       
       inline def setRenderPlaceholderUndefined: Self = StObject.set(x, "renderPlaceholder", js.undefined)
       
@@ -1338,5 +1338,5 @@ object libTypescriptTypesMod {
     }
   }
   
-  type RenderPlaceholder[T] = js.Function1[/* params */ Index[T], Element]
+  type RenderPlaceholder[T] = js.Function1[/* params */ typings.reactNativeDraggableFlatlist.anon.Index[T], Element]
 }

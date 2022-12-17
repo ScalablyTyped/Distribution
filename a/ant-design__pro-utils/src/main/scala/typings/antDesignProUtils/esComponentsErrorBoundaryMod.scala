@@ -9,10 +9,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object esComponentsErrorBoundaryMod {
   
+  @JSImport("@ant-design/pro-utils/es/components/ErrorBoundary", "ErrorBoundary")
   @js.native
-  trait ErrorBoundary extends Component[Children, ErrorInfo, Any] {
+  open class ErrorBoundary protected () extends Component[Children, ErrorInfo, Any] {
+    def this(props: Children) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: Children, context: Any) = this()
     
     @JSName("componentDidCatch")
     def componentDidCatch_MErrorBoundary(error: Any, errorInfo: typings.react.mod.ErrorInfo): Unit = js.native
+  }
+  object ErrorBoundary {
+    
+    @JSImport("@ant-design/pro-utils/es/components/ErrorBoundary", "ErrorBoundary")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    inline def getDerivedStateFromError(error: js.Error): ErrorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromError")(error.asInstanceOf[js.Any]).asInstanceOf[ErrorInfo]
   }
 }

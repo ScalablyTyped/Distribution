@@ -1,5 +1,7 @@
 package typings.styledSystem.mod
 
+import typings.csstype.mod.Property.Flex
+import typings.csstype.mod.Property.FlexBasis
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,16 +14,10 @@ trait FlexboxProps[ThemeType /* <: Theme[TLengthStyledSystem] */]
      with JustifyContentProps[ThemeType]
      with FlexWrapProps[ThemeType]
      with FlexDirectionProps[ThemeType]
-     with FlexProps[
-      ThemeType, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLengthStyledSystem> */ js.Any
-    ]
+     with FlexProps[ThemeType, Flex[TLengthStyledSystem]]
      with FlexGrowProps[ThemeType]
      with FlexShrinkProps[ThemeType]
-     with FlexBasisProps[
-      ThemeType, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexBasis<TLengthStyledSystem> */ js.Any
-    ]
+     with FlexBasisProps[ThemeType, FlexBasis[TLengthStyledSystem]]
      with JustifySelfProps[ThemeType]
      with AlignSelfProps[ThemeType]
      with OrderProps[ThemeType]

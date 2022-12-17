@@ -1,47 +1,47 @@
 package typings.carbonComponentsReact
 
-import typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioValue
-import typings.carbonComponentsReact.buttonButtonMod.ButtonKind
-import typings.carbonComponentsReact.buttonButtonMod.ButtonSize
-import typings.carbonComponentsReact.codeSnippetCodeSnippetMod._CodeSnippetType
-import typings.carbonComponentsReact.dataTableDataTableMod.DataTableTranslationKey
-import typings.carbonComponentsReact.dialogMod.ExcludedDialogPropKeys
-import typings.carbonComponentsReact.headerGlobalActionMod.ExcludedProps
-import typings.carbonComponentsReact.inlineLoadingInlineLoadingMod.InlineLoadingStatus
-import typings.carbonComponentsReact.listBoxListBoxSelectionMod.ListBoxSelectionTranslationKey
-import typings.carbonComponentsReact.listBoxMenuIconMod.ListBoxMenuIconTranslationKey
-import typings.carbonComponentsReact.listBoxPropTypesMod.ListBoxSize
-import typings.carbonComponentsReact.listBoxPropTypesMod.ListBoxType
-import typings.carbonComponentsReact.listBoxTriggerMod.ExcludedButtonPropKeys
-import typings.carbonComponentsReact.loadingLoadingMod.ExcludedAttributes
-import typings.carbonComponentsReact.menuOptionMod.ExcludedPropKeys
-import typings.carbonComponentsReact.modalWrapperModalWrapperMod.ExcludedModalProps
-import typings.carbonComponentsReact.nextMod.ExcludedContentPanelPropKeys
-import typings.carbonComponentsReact.nextMod.ExcludedContentTabPropKeys
-import typings.carbonComponentsReact.nextMod.ExcludedContentTabsPropsKeys
-import typings.carbonComponentsReact.notificationNotificationMod.ExcludedDetailDivAttributes
-import typings.carbonComponentsReact.notificationNotificationMod.NotificationKind
-import typings.carbonComponentsReact.notificationNotificationMod.NotificationType
-import typings.carbonComponentsReact.numberInputNumberInputMod.ExcludedInputPropKeys
-import typings.carbonComponentsReact.numberInputNumberInputMod.NumberInputArrowDirection
-import typings.carbonComponentsReact.numberInputNumberInputMod.NumberInputTranslationKey
-import typings.carbonComponentsReact.paginationNavPaginationNavMod.PaginationNavTranslationKey
-import typings.carbonComponentsReact.progressIndicatorProgressIndicatorMod.ProgressStepTranslationKey
-import typings.carbonComponentsReact.searchLayoutButtonSearchLayoutButtonMod.SearchLayoutButtonFormat
-import typings.carbonComponentsReact.sharedMod.FileStatus
-import typings.carbonComponentsReact.sharedMod.FileUploaderSize
-import typings.carbonComponentsReact.sideNavMod.SideNavTranslationKey
-import typings.carbonComponentsReact.sortingMod.DataTableSortState
-import typings.carbonComponentsReact.structuredListStructuredListMod.ExcludedListInputPropKeys
-import typings.carbonComponentsReact.tabTabMod.TabsProvidedPropKeys
-import typings.carbonComponentsReact.tableBatchActionsMod.TableBatchActionsTranslationKey
-import typings.carbonComponentsReact.tableMod.DataTableSize
-import typings.carbonComponentsReact.tableToolbarSearchMod.ExcludedInheritedProps
-import typings.carbonComponentsReact.tableToolbarSearchMod.TableToolbarTranslationKey
-import typings.carbonComponentsReact.tagTagMod.TagTypeName
-import typings.carbonComponentsReact.textDirectionContextMod.TextDirection
-import typings.carbonComponentsReact.tooltipDefinitionTooltipDefinitionMod.ExcludedPropsKeys
-import typings.carbonComponentsReact.treeNodeMod.TreeViewProvidedProps
+import typings.carbonComponentsReact.libComponentsAspectRatioAspectRatioMod.AspectRatioValue
+import typings.carbonComponentsReact.libComponentsButtonButtonMod.ButtonKind
+import typings.carbonComponentsReact.libComponentsButtonButtonMod.ButtonSize
+import typings.carbonComponentsReact.libComponentsCodeSnippetCodeSnippetMod._CodeSnippetType
+import typings.carbonComponentsReact.libComponentsContentSwitcherNextMod.ExcludedContentPanelPropKeys
+import typings.carbonComponentsReact.libComponentsContentSwitcherNextMod.ExcludedContentTabPropKeys
+import typings.carbonComponentsReact.libComponentsContentSwitcherNextMod.ExcludedContentTabsPropsKeys
+import typings.carbonComponentsReact.libComponentsDataTableDataTableMod.DataTableTranslationKey
+import typings.carbonComponentsReact.libComponentsDataTableStateSortingMod.DataTableSortState
+import typings.carbonComponentsReact.libComponentsDataTableTableBatchActionsMod.TableBatchActionsTranslationKey
+import typings.carbonComponentsReact.libComponentsDataTableTableMod.DataTableSize
+import typings.carbonComponentsReact.libComponentsDataTableTableToolbarSearchMod.ExcludedInheritedProps
+import typings.carbonComponentsReact.libComponentsDataTableTableToolbarSearchMod.TableToolbarTranslationKey
+import typings.carbonComponentsReact.libComponentsDialogMod.ExcludedDialogPropKeys
+import typings.carbonComponentsReact.libComponentsFileUploaderSharedMod.FileStatus
+import typings.carbonComponentsReact.libComponentsFileUploaderSharedMod.FileUploaderSize
+import typings.carbonComponentsReact.libComponentsInlineLoadingInlineLoadingMod.InlineLoadingStatus
+import typings.carbonComponentsReact.libComponentsListBoxListBoxMenuIconMod.ListBoxMenuIconTranslationKey
+import typings.carbonComponentsReact.libComponentsListBoxListBoxPropTypesMod.ListBoxSize
+import typings.carbonComponentsReact.libComponentsListBoxListBoxPropTypesMod.ListBoxType
+import typings.carbonComponentsReact.libComponentsListBoxListBoxSelectionMod.ListBoxSelectionTranslationKey
+import typings.carbonComponentsReact.libComponentsListBoxNextListBoxSelectionMod.ExcludedButtonPropKeys
+import typings.carbonComponentsReact.libComponentsLoadingLoadingMod.ExcludedAttributes
+import typings.carbonComponentsReact.libComponentsMenuMenuOptionMod.ExcludedPropKeys
+import typings.carbonComponentsReact.libComponentsModalWrapperModalWrapperMod.ExcludedModalProps
+import typings.carbonComponentsReact.libComponentsNotificationNotificationMod.ExcludedDetailDivAttributes
+import typings.carbonComponentsReact.libComponentsNotificationNotificationMod.NotificationKind
+import typings.carbonComponentsReact.libComponentsNotificationNotificationMod.NotificationType
+import typings.carbonComponentsReact.libComponentsNumberInputNumberInputMod.ExcludedInputPropKeys
+import typings.carbonComponentsReact.libComponentsNumberInputNumberInputMod.NumberInputArrowDirection
+import typings.carbonComponentsReact.libComponentsNumberInputNumberInputMod.NumberInputTranslationKey
+import typings.carbonComponentsReact.libComponentsPaginationNavPaginationNavMod.PaginationNavTranslationKey
+import typings.carbonComponentsReact.libComponentsProgressIndicatorProgressIndicatorMod.ProgressStepTranslationKey
+import typings.carbonComponentsReact.libComponentsSearchLayoutButtonSearchLayoutButtonMod.SearchLayoutButtonFormat
+import typings.carbonComponentsReact.libComponentsStructuredListStructuredListMod.ExcludedListInputPropKeys
+import typings.carbonComponentsReact.libComponentsTabTabMod.TabsProvidedPropKeys
+import typings.carbonComponentsReact.libComponentsTagTagMod.TagTypeName
+import typings.carbonComponentsReact.libComponentsTextTextDirectionContextMod.TextDirection
+import typings.carbonComponentsReact.libComponentsTooltipDefinitionTooltipDefinitionMod.ExcludedPropsKeys
+import typings.carbonComponentsReact.libComponentsTreeViewTreeNodeMod.TreeViewProvidedProps
+import typings.carbonComponentsReact.libComponentsUishellHeaderGlobalActionMod.ExcludedProps
+import typings.carbonComponentsReact.libComponentsUishellSideNavMod.SideNavTranslationKey
 import typings.carbonComponentsReact.typingsSharedMod.CarbonInputSize
 import typings.carbonComponentsReact.typingsSharedMod.CarbonSize
 import typings.carbonComponentsReact.typingsSharedMod.Direction
@@ -196,54 +196,54 @@ object carbonComponentsReactStrings {
   @js.native
   sealed trait `aria-controls`
     extends StObject
-       with typings.carbonComponentsReact.tabTabMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsTabTabMod.ExcludedAttributes
        with ExcludedContentTabPropKeys
   inline def `aria-controls`: `aria-controls` = "aria-controls".asInstanceOf[`aria-controls`]
   
   @js.native
   sealed trait `aria-describedby`
     extends StObject
-       with typings.carbonComponentsReact.textAreaTextAreaMod.ExcludedAttributes
-       with typings.carbonComponentsReact.tooltipIconTooltipIconMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsTextAreaTextAreaMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsTooltipIconTooltipIconMod.ExcludedAttributes
   inline def `aria-describedby`: `aria-describedby` = "aria-describedby".asInstanceOf[`aria-describedby`]
   
   @js.native
   sealed trait `aria-disabled`
     extends StObject
-       with typings.carbonComponentsReact.tabTabMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsTabTabMod.ExcludedAttributes
        with ExcludedPropKeys
   inline def `aria-disabled`: `aria-disabled` = "aria-disabled".asInstanceOf[`aria-disabled`]
   
   @js.native
   sealed trait `aria-expanded`
     extends StObject
-       with typings.carbonComponentsReact.overflowMenuOverflowMenuMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsOverflowMenuOverflowMenuMod.ExcludedAttributes
        with ExcludedPropKeys
   inline def `aria-expanded`: `aria-expanded` = "aria-expanded".asInstanceOf[`aria-expanded`]
   
   @js.native
   sealed trait `aria-haspopup`
     extends StObject
-       with typings.carbonComponentsReact.overflowMenuOverflowMenuMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsOverflowMenuOverflowMenuMod.ExcludedAttributes
        with ExcludedPropKeys
   inline def `aria-haspopup`: `aria-haspopup` = "aria-haspopup".asInstanceOf[`aria-haspopup`]
   
   @js.native
   sealed trait `aria-invalid`
     extends StObject
-       with typings.carbonComponentsReact.selectSelectMod.ExcludedAttributes
-       with typings.carbonComponentsReact.textAreaTextAreaMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsTextAreaTextAreaMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsSelectSelectMod.ExcludedAttributes
   inline def `aria-invalid`: `aria-invalid` = "aria-invalid".asInstanceOf[`aria-invalid`]
   
   @js.native
   sealed trait `aria-label`
     extends StObject
-       with typings.carbonComponentsReact.overflowMenuOverflowMenuMod.ExcludedAttributes
-       with typings.carbonComponentsReact.inlineCheckboxInlineCheckboxMod.ExcludedAttributes
-       with typings.carbonComponentsReact.toggleSmallToggleSmallMod.ExcludedAttributes
-       with typings.carbonComponentsReact.treeViewTreeViewMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsToggleSmallToggleSmallMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsOverflowMenuOverflowMenuMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsTreeViewTreeViewMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsInlineCheckboxInlineCheckboxMod.ExcludedAttributes
        with ExcludedButtonPropKeys
-       with typings.carbonComponentsReact.listBoxSelectionMod.ExcludedButtonPropKeys
+       with typings.carbonComponentsReact.libComponentsListBoxNextListBoxTriggerMod.ExcludedButtonPropKeys
        with ExcludedContentTabsPropsKeys
        with ExcludedInputPropKeys
   inline def `aria-label`: `aria-label` = "aria-label".asInstanceOf[`aria-label`]
@@ -251,9 +251,9 @@ object carbonComponentsReactStrings {
   @js.native
   sealed trait `aria-labelledby`
     extends StObject
-       with typings.carbonComponentsReact.toggleToggleMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsToggleToggleMod.ExcludedAttributes
        with ExcludedAttributes
-       with typings.carbonComponentsReact.treeViewTreeViewMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsTreeViewTreeViewMod.ExcludedAttributes
        with ExcludedContentPanelPropKeys
        with ExcludedDialogPropKeys
   inline def `aria-labelledby`: `aria-labelledby` = "aria-labelledby".asInstanceOf[`aria-labelledby`]
@@ -273,13 +273,13 @@ object carbonComponentsReactStrings {
   @js.native
   sealed trait `aria-placeholder`
     extends StObject
-       with typings.carbonComponentsReact.textAreaTextAreaMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsTextAreaTextAreaMod.ExcludedAttributes
   inline def `aria-placeholder`: `aria-placeholder` = "aria-placeholder".asInstanceOf[`aria-placeholder`]
   
   @js.native
   sealed trait `aria-selected`
     extends StObject
-       with typings.carbonComponentsReact.tabTabMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsTabTabMod.ExcludedAttributes
        with ExcludedContentTabPropKeys
   inline def `aria-selected`: `aria-selected` = "aria-selected".asInstanceOf[`aria-selected`]
   
@@ -547,8 +547,8 @@ object carbonComponentsReactStrings {
   @js.native
   sealed trait children
     extends StObject
-       with typings.carbonComponentsReact.headerMenuItemMod.ExcludedAttributes
-       with typings.carbonComponentsReact.tooltipIconTooltipIconMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsUishellHeaderMenuItemMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsTooltipIconTooltipIconMod.ExcludedAttributes
   inline def children: children = "children".asInstanceOf[children]
   
   @js.native
@@ -562,10 +562,10 @@ object carbonComponentsReactStrings {
   @js.native
   sealed trait className
     extends StObject
-       with typings.carbonComponentsReact.inlineCheckboxInlineCheckboxMod.ExcludedAttributes
-       with typings.carbonComponentsReact.datePickerInputDatePickerInputMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsDatePickerInputDatePickerInputMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsInlineCheckboxInlineCheckboxMod.ExcludedAttributes
        with ExcludedButtonPropKeys
-       with typings.carbonComponentsReact.listBoxSelectionMod.ExcludedButtonPropKeys
+       with typings.carbonComponentsReact.libComponentsListBoxNextListBoxTriggerMod.ExcludedButtonPropKeys
        with ExcludedDetailDivAttributes
        with ExcludedPropKeys
   inline def className: className = "className".asInstanceOf[className]
@@ -701,9 +701,9 @@ object carbonComponentsReactStrings {
   @js.native
   sealed trait defaultValue
     extends StObject
-       with typings.carbonComponentsReact.searchSearchMod.ExcludedAttributes
-       with typings.carbonComponentsReact.propsMod.ExcludedAttributes
-       with typings.carbonComponentsReact.textAreaTextAreaMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsTextAreaTextAreaMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsTextInputPropsMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsSearchSearchMod.ExcludedAttributes
   inline def defaultValue: defaultValue = "defaultValue".asInstanceOf[defaultValue]
   
   @js.native
@@ -743,7 +743,7 @@ object carbonComponentsReactStrings {
   @js.native
   sealed trait disabled
     extends StObject
-       with typings.carbonComponentsReact.overflowMenuItemOverflowMenuItemMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsOverflowMenuItemOverflowMenuItemMod.ExcludedAttributes
   inline def disabled: disabled = "disabled".asInstanceOf[disabled]
   
   @js.native
@@ -1089,7 +1089,7 @@ object carbonComponentsReactStrings {
   @js.native
   sealed trait href
     extends StObject
-       with typings.carbonComponentsReact.overflowMenuItemOverflowMenuItemMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsOverflowMenuItemOverflowMenuItemMod.ExcludedAttributes
   inline def href: href = "href".asInstanceOf[href]
   
   @js.native
@@ -1109,15 +1109,15 @@ object carbonComponentsReactStrings {
   @js.native
   sealed trait id
     extends StObject
-       with typings.carbonComponentsReact.checkboxCheckboxMod.ExcludedAttributes
-       with typings.carbonComponentsReact.inlineCheckboxInlineCheckboxMod.ExcludedAttributes
-       with typings.carbonComponentsReact.selectSelectMod.ExcludedAttributes
-       with typings.carbonComponentsReact.toggleToggleMod.ExcludedAttributes
-       with typings.carbonComponentsReact.propsMod.ExcludedAttributes
-       with typings.carbonComponentsReact.toggleSmallToggleSmallMod.ExcludedAttributes
-       with typings.carbonComponentsReact.datePickerInputDatePickerInputMod.ExcludedAttributes
-       with typings.carbonComponentsReact.paginationPaginationMod.ExcludedAttributes
-       with typings.carbonComponentsReact.comboBoxComboBoxMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsToggleSmallToggleSmallMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsToggleToggleMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsDatePickerInputDatePickerInputMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsSelectSelectMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsTextInputPropsMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsComboBoxComboBoxMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsCheckboxCheckboxMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsPaginationPaginationMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsInlineCheckboxInlineCheckboxMod.ExcludedAttributes
        with ExcludedContentPanelPropKeys
        with ExcludedContentTabPropKeys
        with ExcludedInputPropKeys
@@ -1429,26 +1429,26 @@ object carbonComponentsReactStrings {
   @js.native
   sealed trait onBlur
     extends StObject
-       with typings.carbonComponentsReact.composedModalComposedModalMod.ExcludedAttributes
-       with typings.carbonComponentsReact.tooltipTooltipMod.ExcludedAttributes
-       with typings.carbonComponentsReact.modalModalMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsComposedModalComposedModalMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsTooltipTooltipMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsModalModalMod.ExcludedAttributes
        with ExcludedInheritedProps
-       with typings.carbonComponentsReact.expandableSearchExpandableSearchMod.ExcludedPropKeys
+       with typings.carbonComponentsReact.libComponentsExpandableSearchExpandableSearchMod.ExcludedPropKeys
        with ExcludedPropsKeys
   inline def onBlur: onBlur = "onBlur".asInstanceOf[onBlur]
   
   @js.native
   sealed trait onChange
     extends StObject
-       with typings.carbonComponentsReact.checkboxCheckboxMod.ExcludedAttributes
-       with typings.carbonComponentsReact.radioTileRadioTileMod.ExcludedAttributes
-       with typings.carbonComponentsReact.inlineCheckboxInlineCheckboxMod.ExcludedAttributes
-       with typings.carbonComponentsReact.toggleToggleMod.ExcludedAttributes
-       with typings.carbonComponentsReact.toggleSmallToggleSmallMod.ExcludedAttributes
-       with typings.carbonComponentsReact.paginationPaginationMod.ExcludedAttributes
-       with typings.carbonComponentsReact.radioButtonRadioButtonMod.ExcludedAttributes
-       with typings.carbonComponentsReact.tooltipTooltipMod.ExcludedAttributes
-       with typings.carbonComponentsReact.comboBoxComboBoxMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsToggleSmallToggleSmallMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsToggleToggleMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsRadioButtonRadioButtonMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsRadioTileRadioTileMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsComboBoxComboBoxMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsTooltipTooltipMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsCheckboxCheckboxMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsPaginationPaginationMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsInlineCheckboxInlineCheckboxMod.ExcludedAttributes
        with ExcludedInputPropKeys
        with ExcludedListInputPropKeys
   inline def onChange: onChange = "onChange".asInstanceOf[onChange]
@@ -1456,11 +1456,11 @@ object carbonComponentsReactStrings {
   @js.native
   sealed trait onClick
     extends StObject
-       with typings.carbonComponentsReact.checkboxCheckboxMod.ExcludedAttributes
-       with typings.carbonComponentsReact.overflowMenuOverflowMenuMod.ExcludedAttributes
-       with typings.carbonComponentsReact.composedModalComposedModalMod.ExcludedAttributes
-       with typings.carbonComponentsReact.modalModalMod.ExcludedAttributes
-       with typings.carbonComponentsReact.listBoxSelectionMod.ExcludedButtonPropKeys
+       with typings.carbonComponentsReact.libComponentsComposedModalComposedModalMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsOverflowMenuOverflowMenuMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsCheckboxCheckboxMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsModalModalMod.ExcludedAttributes
+       with ExcludedButtonPropKeys
        with ExcludedContentTabPropKeys
        with ExcludedInputPropKeys
        with ExcludedPropKeys
@@ -1469,26 +1469,26 @@ object carbonComponentsReactStrings {
   @js.native
   sealed trait onContextMenu
     extends StObject
-       with typings.carbonComponentsReact.tooltipTooltipMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsTooltipTooltipMod.ExcludedAttributes
   inline def onContextMenu: onContextMenu = "onContextMenu".asInstanceOf[onContextMenu]
   
   @js.native
   sealed trait onFocus
     extends StObject
-       with typings.carbonComponentsReact.tooltipTooltipMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsTooltipTooltipMod.ExcludedAttributes
        with ExcludedInheritedProps
-       with typings.carbonComponentsReact.expandableSearchExpandableSearchMod.ExcludedPropKeys
+       with typings.carbonComponentsReact.libComponentsExpandableSearchExpandableSearchMod.ExcludedPropKeys
        with ExcludedPropsKeys
   inline def onFocus: onFocus = "onFocus".asInstanceOf[onFocus]
   
   @js.native
   sealed trait onKeyDown
     extends StObject
-       with typings.carbonComponentsReact.overflowMenuOverflowMenuMod.ExcludedAttributes
-       with typings.carbonComponentsReact.radioTileRadioTileMod.ExcludedAttributes
-       with typings.carbonComponentsReact.listBoxListBoxMod.ExcludedAttributes
-       with typings.carbonComponentsReact.modalModalMod.ExcludedAttributes
-       with typings.carbonComponentsReact.listBoxSelectionMod.ExcludedButtonPropKeys
+       with typings.carbonComponentsReact.libComponentsRadioTileRadioTileMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsListBoxListBoxMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsOverflowMenuOverflowMenuMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsModalModalMod.ExcludedAttributes
+       with ExcludedButtonPropKeys
        with ExcludedContentTabsPropsKeys
        with ExcludedDialogPropKeys
        with ExcludedPropKeys
@@ -1497,14 +1497,14 @@ object carbonComponentsReactStrings {
   @js.native
   sealed trait onKeyPress
     extends StObject
-       with typings.carbonComponentsReact.listBoxListBoxMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsListBoxListBoxMod.ExcludedAttributes
   inline def onKeyPress: onKeyPress = "onKeyPress".asInstanceOf[onKeyPress]
   
   @js.native
   sealed trait onKeyUp
     extends StObject
-       with typings.carbonComponentsReact.toggleToggleMod.ExcludedAttributes
-       with typings.carbonComponentsReact.toggleSmallToggleSmallMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsToggleSmallToggleSmallMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsToggleToggleMod.ExcludedAttributes
   inline def onKeyUp: onKeyUp = "onKeyUp".asInstanceOf[onKeyUp]
   
   @js.native
@@ -1522,13 +1522,13 @@ object carbonComponentsReactStrings {
   @js.native
   sealed trait onMouseOut
     extends StObject
-       with typings.carbonComponentsReact.tooltipTooltipMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsTooltipTooltipMod.ExcludedAttributes
   inline def onMouseOut: onMouseOut = "onMouseOut".asInstanceOf[onMouseOut]
   
   @js.native
   sealed trait onMouseOver
     extends StObject
-       with typings.carbonComponentsReact.tooltipTooltipMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsTooltipTooltipMod.ExcludedAttributes
   inline def onMouseOver: onMouseOver = "onMouseOver".asInstanceOf[onMouseOver]
   
   @js.native
@@ -1552,14 +1552,14 @@ object carbonComponentsReactStrings {
   @js.native
   sealed trait onSelect
     extends StObject
-       with typings.carbonComponentsReact.treeViewTreeViewMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsTreeViewTreeViewMod.ExcludedAttributes
   inline def onSelect: onSelect = "onSelect".asInstanceOf[onSelect]
   
   @js.native
   sealed trait onTransitionEnd
     extends StObject
-       with typings.carbonComponentsReact.composedModalComposedModalMod.ExcludedAttributes
-       with typings.carbonComponentsReact.modalModalMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsComposedModalComposedModalMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsModalModalMod.ExcludedAttributes
   inline def onTransitionEnd: onTransitionEnd = "onTransitionEnd".asInstanceOf[onTransitionEnd]
   
   @js.native
@@ -1695,21 +1695,21 @@ object carbonComponentsReactStrings {
   @js.native
   sealed trait ref
     extends StObject
-       with typings.carbonComponentsReact.composedModalComposedModalMod.ExcludedAttributes
-       with typings.carbonComponentsReact.searchSearchMod.ExcludedAttributes
-       with typings.carbonComponentsReact.inlineCheckboxInlineCheckboxMod.ExcludedAttributes
-       with typings.carbonComponentsReact.selectSelectMod.ExcludedAttributes
-       with typings.carbonComponentsReact.toggleSmallToggleSmallMod.ExcludedAttributes
-       with typings.carbonComponentsReact.treeViewTreeViewMod.ExcludedAttributes
-       with typings.carbonComponentsReact.radioButtonRadioButtonMod.ExcludedAttributes
-       with typings.carbonComponentsReact.headerMenuItemMod.ExcludedAttributes
-       with typings.carbonComponentsReact.listBoxListBoxMod.ExcludedAttributes
-       with typings.carbonComponentsReact.overflowMenuItemOverflowMenuItemMod.ExcludedAttributes
-       with typings.carbonComponentsReact.modalModalMod.ExcludedAttributes
-       with typings.carbonComponentsReact.comboBoxComboBoxMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsToggleSmallToggleSmallMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsComposedModalComposedModalMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsRadioButtonRadioButtonMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsSelectSelectMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsListBoxListBoxMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsComboBoxComboBoxMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsUishellHeaderMenuItemMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsModalModalMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsOverflowMenuItemOverflowMenuItemMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsSearchSearchMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsTreeViewTreeViewMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsInlineCheckboxInlineCheckboxMod.ExcludedAttributes
        with ExcludedInputPropKeys
+       with typings.carbonComponentsReact.libComponentsExpandableSearchExpandableSearchMod.ExcludedPropKeys
        with ExcludedPropKeys
-       with typings.carbonComponentsReact.expandableSearchExpandableSearchMod.ExcludedPropKeys
        with ExcludedProps
        with TabsProvidedPropKeys
   inline def ref: ref = "ref".asInstanceOf[ref]
@@ -1752,11 +1752,11 @@ object carbonComponentsReactStrings {
   @js.native
   sealed trait role
     extends StObject
-       with typings.carbonComponentsReact.composedModalComposedModalMod.ExcludedAttributes
-       with typings.carbonComponentsReact.treeViewTreeViewMod.ExcludedAttributes
-       with typings.carbonComponentsReact.tooltipTooltipMod.ExcludedAttributes
-       with typings.carbonComponentsReact.modalModalMod.ExcludedAttributes
-       with typings.carbonComponentsReact.tabTabMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsComposedModalComposedModalMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsTooltipTooltipMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsModalModalMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsTreeViewTreeViewMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsTabTabMod.ExcludedAttributes
        with ExcludedContentPanelPropKeys
        with ExcludedContentTabPropKeys
        with ExcludedContentTabsPropsKeys
@@ -1841,12 +1841,12 @@ object carbonComponentsReactStrings {
   @js.native
   sealed trait size
     extends StObject
-       with typings.carbonComponentsReact.searchSearchMod.ExcludedAttributes
-       with typings.carbonComponentsReact.selectSelectMod.ExcludedAttributes
-       with typings.carbonComponentsReact.toggleToggleMod.ExcludedAttributes
-       with typings.carbonComponentsReact.propsMod.ExcludedAttributes
-       with typings.carbonComponentsReact.datePickerInputDatePickerInputMod.ExcludedAttributes
-       with typings.carbonComponentsReact.comboBoxComboBoxMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsToggleToggleMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsDatePickerInputDatePickerInputMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsSelectSelectMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsTextInputPropsMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsComboBoxComboBoxMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsSearchSearchMod.ExcludedAttributes
        with ExcludedInputPropKeys
   inline def size: size = "size".asInstanceOf[size]
   
@@ -1943,12 +1943,12 @@ object carbonComponentsReactStrings {
   @js.native
   sealed trait tabIndex
     extends StObject
-       with typings.carbonComponentsReact.composedModalComposedModalMod.ExcludedAttributes
-       with typings.carbonComponentsReact.headerMenuItemMod.ExcludedAttributes
-       with typings.carbonComponentsReact.overflowMenuItemOverflowMenuItemMod.ExcludedAttributes
-       with typings.carbonComponentsReact.tabTabMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsComposedModalComposedModalMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsUishellHeaderMenuItemMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsOverflowMenuItemOverflowMenuItemMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsTabTabMod.ExcludedAttributes
        with ExcludedButtonPropKeys
-       with typings.carbonComponentsReact.listBoxSelectionMod.ExcludedButtonPropKeys
+       with typings.carbonComponentsReact.libComponentsListBoxNextListBoxTriggerMod.ExcludedButtonPropKeys
        with ExcludedContentPanelPropKeys
        with ExcludedContentTabPropKeys
        with ExcludedDialogPropKeys
@@ -2035,9 +2035,9 @@ object carbonComponentsReactStrings {
   @js.native
   sealed trait title
     extends StObject
-       with typings.carbonComponentsReact.headerMenuButtonMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsUishellHeaderMenuButtonMod.ExcludedAttributes
        with ExcludedButtonPropKeys
-       with typings.carbonComponentsReact.listBoxSelectionMod.ExcludedButtonPropKeys
+       with typings.carbonComponentsReact.libComponentsListBoxNextListBoxTriggerMod.ExcludedButtonPropKeys
        with ExcludedDetailDivAttributes
   inline def title: title = "title".asInstanceOf[title]
   
@@ -2095,17 +2095,17 @@ object carbonComponentsReactStrings {
   @js.native
   sealed trait `type`
     extends StObject
-       with typings.carbonComponentsReact.headerMenuButtonMod.ExcludedAttributes
-       with typings.carbonComponentsReact.checkboxCheckboxMod.ExcludedAttributes
-       with typings.carbonComponentsReact.overflowMenuOverflowMenuMod.ExcludedAttributes
-       with typings.carbonComponentsReact.radioTileRadioTileMod.ExcludedAttributes
-       with typings.carbonComponentsReact.inlineCheckboxInlineCheckboxMod.ExcludedAttributes
-       with typings.carbonComponentsReact.toggleToggleMod.ExcludedAttributes
-       with typings.carbonComponentsReact.toggleSmallToggleSmallMod.ExcludedAttributes
-       with typings.carbonComponentsReact.radioButtonRadioButtonMod.ExcludedAttributes
-       with typings.carbonComponentsReact.tooltipIconTooltipIconMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsUishellHeaderMenuButtonMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsToggleSmallToggleSmallMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsToggleToggleMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsRadioButtonRadioButtonMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsRadioTileRadioTileMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsOverflowMenuOverflowMenuMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsCheckboxCheckboxMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsTooltipIconTooltipIconMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsInlineCheckboxInlineCheckboxMod.ExcludedAttributes
        with ExcludedButtonPropKeys
-       with typings.carbonComponentsReact.listBoxSelectionMod.ExcludedButtonPropKeys
+       with typings.carbonComponentsReact.libComponentsListBoxNextListBoxTriggerMod.ExcludedButtonPropKeys
        with ExcludedContentTabPropKeys
        with ExcludedListInputPropKeys
        with ExcludedProps
@@ -2146,11 +2146,11 @@ object carbonComponentsReactStrings {
   @js.native
   sealed trait value
     extends StObject
-       with typings.carbonComponentsReact.searchSearchMod.ExcludedAttributes
-       with typings.carbonComponentsReact.radioTileRadioTileMod.ExcludedAttributes
-       with typings.carbonComponentsReact.propsMod.ExcludedAttributes
-       with typings.carbonComponentsReact.radioButtonRadioButtonMod.ExcludedAttributes
-       with typings.carbonComponentsReact.textAreaTextAreaMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsTextAreaTextAreaMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsRadioButtonRadioButtonMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsRadioTileRadioTileMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsTextInputPropsMod.ExcludedAttributes
+       with typings.carbonComponentsReact.libComponentsSearchSearchMod.ExcludedAttributes
        with ExcludedListInputPropKeys
   inline def value: value = "value".asInstanceOf[value]
   

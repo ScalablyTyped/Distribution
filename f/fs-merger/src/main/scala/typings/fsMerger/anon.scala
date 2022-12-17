@@ -3,7 +3,6 @@ package typings.fsMerger
 import typings.fsMerger.fsMergerBooleans.`false`
 import typings.fsMerger.fsMergerStrings.buffer
 import typings.node.NodeJS.ErrnoException
-import typings.node.anon.EncodingWithFileTypes
 import typings.node.anon.ObjectEncodingOptionswith
 import typings.node.anon.ObjectEncodingOptionswithEncoding
 import typings.node.bufferMod.global.Buffer
@@ -88,8 +87,8 @@ object anon {
     ): Unit = js.native
     def apply(
       path: PathLike,
-      options: EncodingWithFileTypes,
-      callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[String], Unit]
+      options: typings.node.anon.Encoding,
+      callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[Buffer], Unit]
     ): Unit = js.native
     def apply(
       path: PathLike,
@@ -104,7 +103,7 @@ object anon {
     def apply(
       path: PathLike,
       options: typings.node.anon.WithFileTypes,
-      callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[Buffer], Unit]
+      callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[String], Unit]
     ): Unit = js.native
     def apply(
       path: PathLike,

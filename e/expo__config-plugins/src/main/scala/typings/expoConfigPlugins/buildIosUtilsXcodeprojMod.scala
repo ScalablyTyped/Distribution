@@ -5,7 +5,7 @@ import typings.expoConfigPlugins.anon.ConfigurationListId
 import typings.expoConfigPlugins.anon.Filepath
 import typings.expoConfigPlugins.anon.Framework
 import typings.expoConfigPlugins.anon.GroupName
-import typings.expoConfigPlugins.anon.ProjectName
+import typings.expoConfigPlugins.anon.Project
 import typings.expoConfigPlugins.anon.Target
 import typings.expoConfigTypes.mod.ExpoConfig
 import typings.std.Record
@@ -19,20 +19,20 @@ object buildIosUtilsXcodeprojMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def addBuildSourceFileToGroup(param0: Filepath): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addBuildSourceFileToGroup")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def addBuildSourceFileToGroup(param0: GroupName): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addBuildSourceFileToGroup")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def addFileToGroupAndLink(param0: AddFileToProject): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addFileToGroupAndLink")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def addFramework(param0: Framework): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addFramework")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def addResourceFileToGroup(param0: GroupName): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addResourceFileToGroup")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def addResourceFileToGroup(param0: Filepath): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addResourceFileToGroup")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def ensureGroupRecursively(
     project: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XcodeProject */ Any,
     filepath: String
   ): (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PBXGroup */ Any) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureGroupRecursively")(project.asInstanceOf[js.Any], filepath.asInstanceOf[js.Any])).asInstanceOf[(/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PBXGroup */ Any) | Null]
   
-  inline def getApplicationNativeTarget(param0: ProjectName): Target = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplicationNativeTarget")(param0.asInstanceOf[js.Any]).asInstanceOf[Target]
+  inline def getApplicationNativeTarget(param0: Project): Target = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplicationNativeTarget")(param0.asInstanceOf[js.Any]).asInstanceOf[Target]
   
   inline def getBuildConfigurationForListIdAndName(
     project: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XcodeProject */ Any,

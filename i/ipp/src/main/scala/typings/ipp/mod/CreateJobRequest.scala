@@ -1,6 +1,6 @@
 package typings.ipp.mod
 
-import typings.ipp.anon.Attributesnaturallanguage
+import typings.ipp.anon.Ippattributefidelity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,11 +9,11 @@ trait CreateJobRequest extends StObject {
   
   var `job-attributes-tag`: js.UndefOr[JobTemplateAttributes] = js.undefined
   
-  var `operation-attributes-tag`: Attributesnaturallanguage
+  var `operation-attributes-tag`: Ippattributefidelity
 }
 object CreateJobRequest {
   
-  inline def apply(`operation-attributes-tag`: Attributesnaturallanguage): CreateJobRequest = {
+  inline def apply(`operation-attributes-tag`: Ippattributefidelity): CreateJobRequest = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("operation-attributes-tag")(`operation-attributes-tag`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateJobRequest]
@@ -25,6 +25,6 @@ object CreateJobRequest {
     
     inline def `setJob-attributes-tagUndefined`: Self = StObject.set(x, "job-attributes-tag", js.undefined)
     
-    inline def `setOperation-attributes-tag`(value: Attributesnaturallanguage): Self = StObject.set(x, "operation-attributes-tag", value.asInstanceOf[js.Any])
+    inline def `setOperation-attributes-tag`(value: Ippattributefidelity): Self = StObject.set(x, "operation-attributes-tag", value.asInstanceOf[js.Any])
   }
 }

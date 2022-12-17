@@ -305,7 +305,7 @@ trait OmitActivityIndicatorset extends StObject {
   var jsxAttributes: (JSXAttributes[
     ActivityIndicator, 
     Omit[ActivityIndicator, set | typings.tabris.tabrisStrings.jsxAttributes]
-  ]) & `3`
+  ]) & Children
   
   var layoutData: LayoutDataValue
   
@@ -542,7 +542,7 @@ object OmitActivityIndicatorset {
     insertAfter: /* widget */ Widget[Any] => ActivityIndicator,
     insertBefore: /* widget */ Widget[Any] => ActivityIndicator,
     isDisposed: () => Boolean,
-    jsxAttributes: (JSXAttributes[ActivityIndicator, Omit[ActivityIndicator, set | jsxAttributes]]) & `3`,
+    jsxAttributes: (JSXAttributes[ActivityIndicator, Omit[ActivityIndicator, set | jsxAttributes]]) & Children,
     layoutData: LayoutDataValue,
     left: ConstraintValue,
     off: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Unit], /* context */ js.UndefOr[js.Object]) => ActivityIndicator,
@@ -704,7 +704,7 @@ object OmitActivityIndicatorset {
     
     inline def setIsDisposed(value: () => Boolean): Self = StObject.set(x, "isDisposed", js.Any.fromFunction0(value))
     
-    inline def setJsxAttributes(value: (JSXAttributes[ActivityIndicator, Omit[ActivityIndicator, set | jsxAttributes]]) & `3`): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
+    inline def setJsxAttributes(value: (JSXAttributes[ActivityIndicator, Omit[ActivityIndicator, set | jsxAttributes]]) & Children): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     
     inline def setLayoutData(value: LayoutDataValue): Self = StObject.set(x, "layoutData", value.asInstanceOf[js.Any])
     

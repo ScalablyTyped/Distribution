@@ -134,7 +134,7 @@ trait childrenReactNodestyleSty extends StObject {
     */
   var android_hyphenationFrequency: js.UndefOr[normal | none | full] = js.undefined
   
-  var children: ReactNode & js.UndefOr[ReactNode]
+  var children: ReactNode
   
   /**
     * Determines the types of data converted to clickable URLs in the text element.
@@ -374,7 +374,7 @@ object childrenReactNodestyleSty {
     
     inline def setAndroid_hyphenationFrequencyUndefined: Self = StObject.set(x, "android_hyphenationFrequency", js.undefined)
     
-    inline def setChildren(value: ReactNode & js.UndefOr[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     

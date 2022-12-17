@@ -20,7 +20,7 @@ trait BlockExampleInnerBlock extends StObject {
   
   var apiVersion: js.UndefOr[Double] = js.undefined
   
-  var attributes: js.UndefOr[js.Object] & js.Object
+  var attributes: js.UndefOr[js.Object] = js.undefined
   
   var category: js.UndefOr[String] = js.undefined
   
@@ -48,7 +48,7 @@ trait BlockExampleInnerBlock extends StObject {
     js.Function2[/* attributes */ js.Object, /* attributesToMerge */ js.Object, js.Object]
   ] = js.undefined
   
-  var name: js.UndefOr[String] & String
+  var name: js.UndefOr[String] = js.undefined
   
   var parent: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -76,8 +76,8 @@ trait BlockExampleInnerBlock extends StObject {
 }
 object BlockExampleInnerBlock {
   
-  inline def apply(attributes: js.UndefOr[js.Object] & js.Object, name: js.UndefOr[String] & String): BlockExampleInnerBlock = {
-    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  inline def apply(): BlockExampleInnerBlock = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BlockExampleInnerBlock]
   }
   
@@ -87,7 +87,9 @@ object BlockExampleInnerBlock {
     
     inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     
-    inline def setAttributes(value: js.UndefOr[js.Object] & js.Object): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: js.Object): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
@@ -143,7 +145,9 @@ object BlockExampleInnerBlock {
     
     inline def setMergeUndefined: Self = StObject.set(x, "merge", js.undefined)
     
-    inline def setName(value: js.UndefOr[String] & String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setParent(value: js.Array[String]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

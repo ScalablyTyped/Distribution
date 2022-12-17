@@ -10,14 +10,14 @@ trait RequestBodyContentApplicationjsonEncryptedvalueString extends StObject {
   
   var requestBody: ContentApplicationjsonEncryptedvalueString
   
-  var responses: `201Content4`
+  var responses: `201Content60`
 }
 object RequestBodyContentApplicationjsonEncryptedvalueString {
   
   inline def apply(
     parameters: PathRepositoryidSecretname,
     requestBody: ContentApplicationjsonEncryptedvalueString,
-    responses: `201Content4`
+    responses: `201Content60`
   ): RequestBodyContentApplicationjsonEncryptedvalueString = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyContentApplicationjsonEncryptedvalueString]
@@ -29,6 +29,6 @@ object RequestBodyContentApplicationjsonEncryptedvalueString {
     
     inline def setRequestBody(value: ContentApplicationjsonEncryptedvalueString): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `201Content4`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `201Content60`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

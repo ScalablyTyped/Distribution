@@ -31,6 +31,6 @@ object GridGapProps {
     
     inline def setGridGapUndefined: Self = StObject.set(x, "gridGap", js.undefined)
     
-    inline def setGridGapVarargs(value: (TVal | Null)*): Self = StObject.set(x, "gridGap", js.Array(value :_*))
+    inline def setGridGapVarargs(value: (TVal | Null)*): Self = StObject.set(x, "gridGap", js.Array(value*))
   }
 }

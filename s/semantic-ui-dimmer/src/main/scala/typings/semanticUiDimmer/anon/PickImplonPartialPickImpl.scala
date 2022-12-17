@@ -36,7 +36,7 @@ trait PickImplonPartialPickImpl
   
   var namespace: js.UndefOr[String] = js.undefined
   
-  var on: (`false` | hover | click) & (js.UndefOr[`false` | hover | click])
+  var on: `false` | hover | click
   
   var onChange: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
@@ -64,7 +64,7 @@ trait PickImplonPartialPickImpl
 }
 object PickImplonPartialPickImpl {
   
-  inline def apply(on: (`false` | hover | click) & (js.UndefOr[`false` | hover | click])): PickImplonPartialPickImpl = {
+  inline def apply(on: `false` | hover | click): PickImplonPartialPickImpl = {
     val __obj = js.Dynamic.literal(on = on.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonPartialPickImpl]
   }
@@ -103,7 +103,7 @@ object PickImplonPartialPickImpl {
     
     inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
-    inline def setOn(value: (`false` | hover | click) & (js.UndefOr[`false` | hover | click])): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+    inline def setOn(value: `false` | hover | click): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     
     inline def setOnChange(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
     

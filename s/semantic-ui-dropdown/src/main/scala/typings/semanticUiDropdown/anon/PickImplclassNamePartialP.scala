@@ -55,7 +55,7 @@ trait PickImplclassNamePartialP
   
   var apiSettings: js.UndefOr[`false` | ApiSettings] = js.undefined
   
-  var className: ClassNameSettings & js.UndefOr[ClassNameSettings]
+  var className: ClassNameSettings
   
   var context: js.UndefOr[String | JQuery] = js.undefined
   
@@ -169,7 +169,7 @@ trait PickImplclassNamePartialP
 }
 object PickImplclassNamePartialP {
   
-  inline def apply(className: ClassNameSettings & js.UndefOr[ClassNameSettings]): PickImplclassNamePartialP = {
+  inline def apply(className: ClassNameSettings): PickImplclassNamePartialP = {
     val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplclassNamePartialP]
   }
@@ -208,7 +208,7 @@ object PickImplclassNamePartialP {
     
     inline def setApiSettingsUndefined: Self = StObject.set(x, "apiSettings", js.undefined)
     
-    inline def setClassName(value: ClassNameSettings & js.UndefOr[ClassNameSettings]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     inline def setContext(value: String | JQuery): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

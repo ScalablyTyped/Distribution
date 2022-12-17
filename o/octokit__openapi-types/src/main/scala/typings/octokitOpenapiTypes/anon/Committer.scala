@@ -6,42 +6,51 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Committer extends StObject {
   
-  var author: EmailName | Null
+  /** @description The author of the file. Default: The `committer` or the authenticated user if you omit `committer`. */
+  var author: js.UndefOr[Date] = js.undefined
   
-  var committer: EmailName | Null
+  /** @description The branch name. Default: the repository’s default branch (usually `master`) */
+  var branch: js.UndefOr[String] = js.undefined
   
-  var id: String
+  /** @description The person that committed the file. Default: the authenticated user. */
+  var committer: js.UndefOr[Date] = js.undefined
   
+  /** @description The new file content, using Base64 encoding. */
+  var content: String
+  
+  /** @description The commit message. */
   var message: String
   
-  /** Format: date-time */
-  var timestamp: String
-  
-  var tree_id: String
+  /** @description **Required if you are updating a file**. The blob SHA of the file being replaced. */
+  var sha: js.UndefOr[String] = js.undefined
 }
 object Committer {
   
-  inline def apply(id: String, message: String, timestamp: String, tree_id: String): Committer = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], tree_id = tree_id.asInstanceOf[js.Any], author = null, committer = null)
+  inline def apply(content: String, message: String): Committer = {
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[Committer]
   }
   
   extension [Self <: Committer](x: Self) {
     
-    inline def setAuthor(value: EmailName): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: Date): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    inline def setAuthorNull: Self = StObject.set(x, "author", null)
+    inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
     
-    inline def setCommitter(value: EmailName): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
+    inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     
-    inline def setCommitterNull: Self = StObject.set(x, "committer", null)
+    inline def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
     
-    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setCommitter(value: Date): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
+    
+    inline def setCommitterUndefined: Self = StObject.set(x, "committer", js.undefined)
+    
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
     
-    inline def setTree_id(value: String): Self = StObject.set(x, "tree_id", value.asInstanceOf[js.Any])
+    inline def setShaUndefined: Self = StObject.set(x, "sha", js.undefined)
   }
 }

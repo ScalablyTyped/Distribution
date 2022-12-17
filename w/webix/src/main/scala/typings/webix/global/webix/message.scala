@@ -55,7 +55,7 @@ object message {
   
   @JSGlobal("webix.message.pull")
   @js.native
-  val pull: obj & typings.webix.webix.obj = js.native
+  val pull: obj = js.native
   
   @JSGlobal("webix.message.timers")
   @js.native

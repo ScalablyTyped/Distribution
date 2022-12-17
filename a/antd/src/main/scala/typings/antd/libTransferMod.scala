@@ -94,14 +94,14 @@ object libTransferMod {
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var key: js.UndefOr[String] & String
+    var key: js.UndefOr[String] = js.undefined
     
     var title: js.UndefOr[String] = js.undefined
   }
   object KeyWiseTransferItem {
     
-    inline def apply(key: js.UndefOr[String] & String): KeyWiseTransferItem = {
-      val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    inline def apply(): KeyWiseTransferItem = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KeyWiseTransferItem]
     }
     
@@ -115,7 +115,9 @@ object libTransferMod {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setKey(value: js.UndefOr[String] & String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       

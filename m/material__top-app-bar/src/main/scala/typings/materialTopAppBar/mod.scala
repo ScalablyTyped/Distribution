@@ -8,13 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("@material/top-app-bar", JSImport.Default)
-  @js.native
-  open class default ()
-    extends typings.materialTopAppBar.standardFoundationMod.default {
-    def this(adapter: PartialMDCTopAppBarAdapte) = this()
-  }
-  
   @JSImport("@material/top-app-bar", "MDCFixedTopAppBarFoundation")
   @js.native
   open class MDCFixedTopAppBarFoundation ()

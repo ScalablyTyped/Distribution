@@ -11,7 +11,7 @@ trait PickVictoryCommonPropssca extends StObject {
   
   var horizontal: js.UndefOr[Boolean] = js.undefined
   
-  var scale: js.UndefOr[ScalePropType | D3Scale[Any] | XY] = js.undefined
+  var scale: js.UndefOr[ScalePropType | D3Scale[Any] | `0`] = js.undefined
 }
 object PickVictoryCommonPropssca {
   
@@ -26,7 +26,7 @@ object PickVictoryCommonPropssca {
     
     inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
     
-    inline def setScale(value: ScalePropType | D3Scale[Any] | XY): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: ScalePropType | D3Scale[Any] | `0`): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
   }

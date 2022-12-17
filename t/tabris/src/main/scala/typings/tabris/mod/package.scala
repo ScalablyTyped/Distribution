@@ -8,18 +8,18 @@ import typings.std.Partial
 import typings.std.Pick
 import typings.tabris.Crypto
 import typings.tabris.RequestInit
-import typings.tabris.anon.ApplyChildren
+import typings.tabris.anon.ApplyObject
 import typings.tabris.anon.Attribute
 import typings.tabris.anon.Bottom
-import typings.tabris.anon.Children
+import typings.tabris.anon.ChildrenJSXChildren
 import typings.tabris.anon.Cid
-import typings.tabris.anon.CidData
 import typings.tabris.anon.Data
 import typings.tabris.anon.Family
 import typings.tabris.anon.Name
+import typings.tabris.anon.SetAny
 import typings.tabris.anon.Unsubscribe
 import typings.tabris.anon.`0`
-import typings.tabris.anon.`5`
+import typings.tabris.anon.`12`
 import typings.tabris.mod.^
 import typings.tabris.tabrisStrings.`type`
 import typings.tabris.tabrisStrings.constructor
@@ -38,7 +38,7 @@ type Action = typings.tabris.mod.widgets.Action
 inline def ActivityIndicator: ActivityIndicatorFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("ActivityIndicator").asInstanceOf[ActivityIndicatorFactory]
 type ActivityIndicator = typings.tabris.mod.widgets.ActivityIndicator
 
-inline def Apply[WidgetConstructor /* <: BaseConstructor[Widget[Any]] */](attr: ApplyAttributes[WidgetConstructor]): typings.tabris.anon.Apply = ^.asInstanceOf[js.Dynamic].applyDynamic("Apply")(attr.asInstanceOf[js.Any]).asInstanceOf[typings.tabris.anon.Apply]
+inline def Apply[WidgetConstructor /* <: BaseConstructor[Widget[Any]] */](attr: ApplyAttributes[WidgetConstructor]): ApplyObject = ^.asInstanceOf[js.Dynamic].applyDynamic("Apply")(attr.asInstanceOf[js.Any]).asInstanceOf[ApplyObject]
 
 inline def Button: ButtonFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("Button").asInstanceOf[ButtonFactory]
 type Button = typings.tabris.mod.widgets.Button
@@ -179,17 +179,17 @@ inline def _empty(attributes: Null, children: JSXChildren[Widget[Any]]): WidgetC
   * @param children The widgets to be included in the resulting WidgetCollection instance.
   */
 /* was `typeof $` */
-inline def _empty(attributes: Children, children: JSXChildren[Widget[Any]]): WidgetCollection[Widget[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[WidgetCollection[Widget[Any]]]
+inline def _empty(attributes: ChildrenJSXChildren, children: JSXChildren[Widget[Any]]): WidgetCollection[Widget[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[WidgetCollection[Widget[Any]]]
 /**
   * A JSX stateless functional component that joins any given content in to a single string.
   * @param attributes This parameter needs to be null since <$> does not support any attributes.
   * @param children The content of the resulting string.
   */
 /* was `typeof $` */
-inline def _empty(attributes: `0`, children: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
-inline def _empty(attributes: `0`, children: js.Array[Null | String | Double | Boolean]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
-inline def _empty(attributes: `0`, children: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
-inline def _empty(attributes: `0`, children: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def _empty(attributes: `12`, children: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def _empty(attributes: `12`, children: js.Array[Null | String | Double | Boolean]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def _empty(attributes: `12`, children: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def _empty(attributes: `12`, children: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("$")(attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[String]
 /**
   * Returns the non-disposed `NativeObject` instance (e.g. a widget) associated with the given cid
   * number. The number can be obtained via the [cid](./NativeObject.md#cid) property. Example: If the cid
@@ -218,7 +218,7 @@ inline def _empty[Result /* <: Widget[Any] */](selector: Selector[Widget[Any], R
 
 inline def app: App_ = ^.asInstanceOf[js.Dynamic].selectDynamic("app").asInstanceOf[App_]
 
-inline def asFactory[OriginalConstructor /* <: Constructor[JSXCandidate] & js.Object */, Instance /* <: JSXCandidate */](constructor: OriginalConstructor): CallableConstructor[
+inline def asFactory[OriginalConstructor /* <: Constructor[JSXCandidate] */, Instance /* <: JSXCandidate */](constructor: OriginalConstructor): CallableConstructor[
 OriginalConstructor, 
 InstanceType[OriginalConstructor], 
 js.Function1[/* repeated */ Any, Widget[Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("asFactory")(constructor.asInstanceOf[js.Any]).asInstanceOf[CallableConstructor[
@@ -288,7 +288,7 @@ type ActionConstructor = ActionFactory
 
 type ActivityIndicatorConstructor = ActivityIndicatorFactory
 
-type Attributes[T /* <: JSXCandidate */, TData] = (/* import warning: importer.ImportType#apply Failed type conversion: T['jsxAttributes'] */ js.Any) & Data[TData]
+type Attributes[T /* <: JSXCandidate */, TData] = (/* import warning: importer.ImportType#apply Failed type conversion: T['jsxAttributes'] */ js.Any) & `0`[TData]
 
 type BaseConstructor[T] = js.Function
 
@@ -348,7 +348,7 @@ type ErrorCb = js.Function1[/* value */ Any, Unit]
 
 type ExtendedEvent[EventData, Target] = EventObject[Target] & EventData
 
-type Factory[OriginalConstructor /* <: Constructor[JSXCandidate] & js.Object */, Instance /* <: JSXCandidate */, Selector /* <: js.Function */] = js.Function2[
+type Factory[OriginalConstructor /* <: Constructor[JSXCandidate] */, Instance /* <: JSXCandidate */, Selector /* <: js.Function */] = js.Function2[
 /* attributes */ js.UndefOr[Attributes[Instance, Any]], 
 /* selector */ js.UndefOr[Selector], 
 Instance]
@@ -396,7 +396,7 @@ type ImageValue = _ImageValue | Null | String
 
 type ImageViewConstructor = ImageViewFactory
 
-type JSXAttributes[T /* <: JSXCandidate */, U] = (Properties[U & typings.tabris.anon.Set, Omit[U & typings.tabris.anon.Set, set]]) & ListenersMap[U] & JSXShorthands[U]
+type JSXAttributes[T /* <: JSXCandidate */, U] = (Properties[U & SetAny, Omit[U & SetAny, set]]) & ListenersMap[U] & JSXShorthands[U]
 
 /* Rewritten from type alias, can be one of: 
   - T
@@ -407,10 +407,10 @@ type JSXAttributes[T /* <: JSXCandidate */, U] = (Properties[U & typings.tabris.
 */
 type JSXChildren[T /* <: AnyWidget */] = js.UndefOr[_JSXChildren[T] | (js.Array[T | WidgetCollection[T]]) | T]
 
-type JSXCompositeAttributes[ThisType /* <: JSXCandidate */, ChildType /* <: AnyWidget */] = (JSXAttributes[ThisType, Omit[ThisType, set | jsxAttributes]]) & (ApplyChildren[ThisType, ChildType])
+type JSXCompositeAttributes[ThisType /* <: JSXCandidate */, ChildType /* <: AnyWidget */] = (JSXAttributes[ThisType, Omit[ThisType, set | jsxAttributes]]) & (typings.tabris.anon.Apply[ThisType, ChildType])
 
 // Tabris.js Helper Types
-type JSXDefaultChildren = Flatten[String | (Cid & js.Object)]
+type JSXDefaultChildren = Flatten[String | Cid]
 
 /* Rewritten from type alias, can be one of: 
   - typings.tabris.mod.LinearGradientLikeObject
@@ -467,7 +467,7 @@ type PrevString = /* prev() */ String
 
 type ProgressBarConstructor = ProgressBarFactory
 
-type Properties[T /* <: `5` */, U] = (Partial[Omit[U, MethodKeysOf[U] | ReadOnlyWidgetKeys[U]]]) & CidData
+type Properties[T /* <: typings.tabris.anon.Set */, U] = (Partial[Omit[U, MethodKeysOf[U] | ReadOnlyWidgetKeys[U]]]) & Data
 
 type RadioButtonConstructor = RadioButtonFactory
 
@@ -509,7 +509,7 @@ type ReservedResourceKeys = _ReservedResourceKeys | js.Symbol | Double
 
 type ResourceDataWithConfig[RawType] = NeverResources & Selectable[RawType] & ResourceInlineConfig
 
-type ResourceRawData[RawType] = NeverResources & Selectable[RawType] & js.Object
+type ResourceRawData[RawType] = NeverResources & Selectable[RawType]
 
 // Response
 /**

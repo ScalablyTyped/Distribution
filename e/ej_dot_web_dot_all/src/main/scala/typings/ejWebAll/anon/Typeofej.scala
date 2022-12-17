@@ -21,57 +21,57 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Typeofej extends StObject {
   
-  val Accordion: (Instantiable2[
+  val Accordion: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.Accordion
-  ]) & TypeofAccordion = js.native
+  ] = js.native
   
   var Adaptor: Instantiable1[/* ds */ Any, typings.ejWebAll.ej.Adaptor] = js.native
   
-  val Autocomplete: (Instantiable2[
+  val Autocomplete: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.Autocomplete
-  ]) & TypeofAutocomplete = js.native
+  ] = js.native
   
-  val Button: (Instantiable2[
+  val Button: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.Button
-  ]) & TypeofButton = js.native
+  ] = js.native
   
   var CacheAdaptor: Instantiable0[typings.ejWebAll.ej.CacheAdaptor] = js.native
   
-  val Calculate: (Instantiable2[
+  val Calculate: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.Calculate
-  ]) & TypeofCalculate = js.native
+  ] = js.native
   
-  val Captcha: (Instantiable2[
+  val Captcha: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.Captcha
-  ]) & TypeofCaptcha = js.native
+  ] = js.native
   
-  val CheckBox: (Instantiable2[
+  val CheckBox: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.CheckBox
-  ]) & TypeofCheckBox = js.native
+  ] = js.native
   
-  val ColorPicker: (Instantiable2[
+  val ColorPicker: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.ColorPicker
-  ]) & TypeofColorPicker = js.native
+  ] = js.native
   
-  val ComboBox: (Instantiable2[
+  val ComboBox: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.ComboBox
-  ]) & TypeofComboBox = js.native
+  ] = js.native
   
   var CurrencyTextbox: Instantiable0[typings.ejWebAll.ej.CurrencyTextbox] = js.native
   
@@ -82,131 +82,131 @@ trait Typeofej extends StObject {
     typings.ejWebAll.ej.DataManager
   ] = js.native
   
-  val DatePicker: (Instantiable2[
+  val DatePicker: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.DatePicker
-  ]) & TypeofDatePicker = js.native
+  ] = js.native
   
-  val DateRangePicker: (Instantiable2[
+  val DateRangePicker: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.DateRangePicker
-  ]) & TypeofDateRangePicker = js.native
+  ] = js.native
   
-  val DateTimePicker: (Instantiable2[
+  val DateTimePicker: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.DateTimePicker
-  ]) & TypeofDateTimePicker = js.native
+  ] = js.native
   
-  val Dialog: (Instantiable2[
+  val Dialog: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.Dialog
-  ]) & TypeofDialog = js.native
+  ] = js.native
   
-  val DocumentEditor: (Instantiable2[
+  val DocumentEditor: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.DocumentEditor
-  ]) & TypeofDocumentEditor = js.native
+  ] = js.native
   
-  val Draggable: (Instantiable2[
+  val Draggable: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.Draggable
-  ]) & TypeofDraggable = js.native
+  ] = js.native
   
-  val DropDownList: (Instantiable2[
+  val DropDownList: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.DropDownList
-  ]) & TypeofDropDownList = js.native
+  ] = js.native
   
-  val DropDownTree: (Instantiable2[
+  val DropDownTree: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.DropDownTree
-  ]) & TypeofDropDownTree = js.native
+  ] = js.native
   
-  val Droppable: (Instantiable2[
+  val Droppable: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.Droppable
-  ]) & TypeofDroppable = js.native
+  ] = js.native
   
-  val Editor: (Instantiable2[
+  val Editor: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.Editor
-  ]) & TypeofEditor = js.native
+  ] = js.native
   
-  val FileExplorer: (Instantiable2[
+  val FileExplorer: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.FileExplorer
-  ]) & TypeofFileExplorer = js.native
+  ] = js.native
   
   var ForeignKeyAdaptor: Instantiable2[/* data */ Any, /* type */ String, typings.ejWebAll.ej.ForeignKeyAdaptor] = js.native
   
-  val Gantt: (Instantiable2[
+  val Gantt: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.Gantt
-  ]) & TypeofGantt = js.native
+  ] = js.native
   
-  val Grid: (Instantiable2[
+  val Grid: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.Grid
-  ]) & TypeofGrid = js.native
+  ] = js.native
   
-  val GroupButton: (Instantiable2[
+  val GroupButton: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.GroupButton
-  ]) & TypeofGroupButton = js.native
+  ] = js.native
   
   var JsonAdaptor: Instantiable0[typings.ejWebAll.ej.JsonAdaptor] = js.native
   
-  val Kanban: (Instantiable2[
+  val Kanban: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.Kanban
-  ]) & TypeofKanban = js.native
+  ] = js.native
   
-  val ListBox: (Instantiable2[
+  val ListBox: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.ListBox
-  ]) & TypeofListBox = js.native
+  ] = js.native
   
-  val ListView: (Instantiable2[
+  val ListView: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.ListView
-  ]) & TypeofListView = js.native
+  ] = js.native
   
-  val MaskEdit: (Instantiable2[
+  val MaskEdit: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.MaskEdit
-  ]) & TypeofMaskEdit = js.native
+  ] = js.native
   
-  val Menu: (Instantiable2[
+  val Menu: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.Menu
-  ]) & TypeofMenu = js.native
+  ] = js.native
   
   var Model: Instantiable3[/* json */ Any, /* table */ String, /* name */ String, typings.ejWebAll.ej.Model] = js.native
   
-  val NavigationDrawer: (Instantiable2[
+  val NavigationDrawer: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.NavigationDrawer
-  ]) & TypeofNavigationDrawer = js.native
+  ] = js.native
   
   var NumericTextbox: Instantiable0[typings.ejWebAll.ej.NumericTextbox] = js.native
   
@@ -214,17 +214,17 @@ trait Typeofej extends StObject {
   
   var ODataV4Adaptor: Instantiable0[typings.ejWebAll.ej.ODataV4Adaptor] = js.native
   
-  val Pager: (Instantiable2[
+  val Pager: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.Pager
-  ]) & TypeofPager = js.native
+  ] = js.native
   
-  val PdfViewer: (Instantiable2[
+  val PdfViewer: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.PdfViewer
-  ]) & TypeofPdfViewer = js.native
+  ] = js.native
   
   var PercentageTextbox: Instantiable0[typings.ejWebAll.ej.PercentageTextbox] = js.native
   
@@ -232,181 +232,181 @@ trait Typeofej extends StObject {
   
   val PivotAnalysis: Any = js.native
   
-  val PivotChart: (Instantiable2[
+  val PivotChart: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.PivotChart
-  ]) & TypeofPivotChart = js.native
+  ] = js.native
   
-  val PivotClient: (Instantiable2[
+  val PivotClient: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.PivotClient
-  ]) & TypeofPivotClient = js.native
+  ] = js.native
   
-  val PivotGauge: (Instantiable2[
+  val PivotGauge: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.PivotGauge
-  ]) & TypeofPivotGauge = js.native
+  ] = js.native
   
-  val PivotGrid: (Instantiable2[
+  val PivotGrid: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.PivotGrid
-  ]) & TypeofPivotGrid = js.native
+  ] = js.native
   
-  val PivotPager: (Instantiable2[
+  val PivotPager: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.PivotPager
-  ]) & TypeofPivotPager = js.native
+  ] = js.native
   
-  val PivotSchemaDesigner: (Instantiable2[
+  val PivotSchemaDesigner: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.PivotSchemaDesigner
-  ]) & TypeofPivotSchemaDesigner = js.native
+  ] = js.native
   
-  val PivotTreeMap: (Instantiable2[
+  val PivotTreeMap: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.PivotTreeMap
-  ]) & TypeofPivotTreeMap = js.native
+  ] = js.native
   
   var Predicate: Instantiable0[typings.ejWebAll.ej.Predicate] = js.native
   
-  val Print: (Instantiable2[
+  val Print: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.Print
-  ]) & TypeofPrint = js.native
+  ] = js.native
   
-  val ProgressBar: (Instantiable2[
+  val ProgressBar: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.ProgressBar
-  ]) & TypeofProgressBar = js.native
+  ] = js.native
   
-  var Query: Instantiable0[typings.ejWebAll.ej.Query] & TypeofQuery = js.native
+  var Query: Instantiable0[typings.ejWebAll.ej.Query] = js.native
   
-  val RTE: (Instantiable2[
+  val RTE: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.RTE
-  ]) & TypeofRTE = js.native
+  ] = js.native
   
-  val RadialMenu: (Instantiable2[
+  val RadialMenu: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.RadialMenu
-  ]) & TypeofRadialMenu = js.native
+  ] = js.native
   
-  val RadialSlider: (Instantiable2[
+  val RadialSlider: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.RadialSlider
-  ]) & TypeofRadialSlider = js.native
+  ] = js.native
   
-  val RadioButton: (Instantiable2[
+  val RadioButton: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.RadioButton
-  ]) & TypeofRadioButton = js.native
+  ] = js.native
   
-  val Rating: (Instantiable2[
+  val Rating: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.Rating
-  ]) & TypeofRating = js.native
+  ] = js.native
   
-  val RecurrenceEditor: (Instantiable2[
+  val RecurrenceEditor: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.RecurrenceEditor
-  ]) & TypeofRecurrenceEditor = js.native
+  ] = js.native
   
-  val Resizable: (Instantiable2[
+  val Resizable: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.Resizable
-  ]) & TypeofResizable = js.native
+  ] = js.native
   
-  val Ribbon: (Instantiable2[
+  val Ribbon: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.Ribbon
-  ]) & TypeofRibbon = js.native
+  ] = js.native
   
-  val Rotator: (Instantiable2[
+  val Rotator: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.Rotator
-  ]) & TypeofRotator = js.native
+  ] = js.native
   
-  val Schedule: (Instantiable2[
+  val Schedule: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.Schedule
-  ]) & TypeofSchedule = js.native
+  ] = js.native
   
-  val Scroller: (Instantiable2[
+  val Scroller: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.Scroller
-  ]) & TypeofScroller = js.native
+  ] = js.native
   
-  val Signature: (Instantiable2[
+  val Signature: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.Signature
-  ]) & TypeofSignature = js.native
+  ] = js.native
   
-  val Slider: (Instantiable2[/* element */ JQuery | Element, /* options */ js.UndefOr[Model], Slider_]) & TypeofSlider = js.native
+  val Slider: Instantiable2[/* element */ JQuery | Element, /* options */ js.UndefOr[Model], Slider_] = js.native
   
-  val Sparkline: (Instantiable2[
+  val Sparkline: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.Sparkline
-  ]) & TypeofSparkline = js.native
+  ] = js.native
   
-  val SpellCheck: (Instantiable2[
+  val SpellCheck: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.SpellCheck
-  ]) & TypeofSpellCheck = js.native
+  ] = js.native
   
-  val SplitButton: (Instantiable2[
+  val SplitButton: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.SplitButton
-  ]) & TypeofSplitButton = js.native
+  ] = js.native
   
-  val Splitter: (Instantiable2[
+  val Splitter: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.Splitter
-  ]) & TypeofSplitter = js.native
+  ] = js.native
   
-  val Spreadsheet: (Instantiable2[
+  val Spreadsheet: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.Spreadsheet
-  ]) & TypeofSpreadsheet = js.native
+  ] = js.native
   
   val Sunburst: Any = js.native
   
-  val SunburstChart: (Instantiable2[
+  val SunburstChart: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.SunburstChart
-  ]) & TypeofSunburstChart = js.native
+  ] = js.native
   
-  val Tab: (Instantiable2[
+  val Tab: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.Tab
-  ]) & TypeofTab = js.native
+  ] = js.native
   
   var TableModel: Instantiable4[
     /* name */ String, 
@@ -416,73 +416,73 @@ trait Typeofej extends StObject {
     typings.ejWebAll.ej.TableModel
   ] = js.native
   
-  val TagCloud: (Instantiable2[
+  val TagCloud: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.TagCloud
-  ]) & TypeofTagCloud = js.native
+  ] = js.native
   
-  val Tile: (Instantiable2[
+  val Tile: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.Tile
-  ]) & TypeofTile = js.native
+  ] = js.native
   
-  val TimePicker: (Instantiable2[
+  val TimePicker: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.TimePicker
-  ]) & TypeofTimePicker = js.native
+  ] = js.native
   
-  val ToggleButton: (Instantiable2[
+  val ToggleButton: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.ToggleButton
-  ]) & TypeofToggleButton = js.native
+  ] = js.native
   
-  val Toolbar: (Instantiable2[
+  val Toolbar: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.Toolbar
-  ]) & TypeofToolbar = js.native
+  ] = js.native
   
-  val Tooltip: (Instantiable2[
+  val Tooltip: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.Tooltip
-  ]) & TypeofTooltip = js.native
+  ] = js.native
   
-  val TreeGrid: (Instantiable2[
+  val TreeGrid: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.TreeGrid
-  ]) & TypeofTreeGrid = js.native
+  ] = js.native
   
-  val TreeView: (Instantiable2[
+  val TreeView: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.TreeView
-  ]) & TypeofTreeView = js.native
+  ] = js.native
   
-  val Uploadbox: (Instantiable2[
+  val Uploadbox: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.Uploadbox
-  ]) & TypeofUploadbox = js.native
+  ] = js.native
   
   var UrlAdaptor: Instantiable0[typings.ejWebAll.ej.UrlAdaptor] = js.native
   
-  val WaitingPopup: (Instantiable2[
+  val WaitingPopup: Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
     typings.ejWebAll.ej.WaitingPopup
-  ]) & TypeofWaitingPopup = js.native
+  ] = js.native
   
   var WebApiAdaptor: Instantiable0[typings.ejWebAll.ej.WebApiAdaptor] = js.native
   
   var WebMethodAdaptor: Instantiable0[typings.ejWebAll.ej.WebMethodAdaptor] = js.native
   
-  var Widget: (Instantiable3[/* pluginName */ String, /* className */ String, /* proto */ Any, Widget_]) & TypeofWidget_ = js.native
+  var Widget: Instantiable3[/* pluginName */ String, /* className */ String, /* proto */ Any, Widget_] = js.native
   
   var WidgetBase: Instantiable0[typings.ejWebAll.ej.WidgetBase] = js.native
   

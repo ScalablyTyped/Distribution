@@ -21,7 +21,6 @@ import typings.react.mod.TouchEventHandler
 import typings.react.mod.TransitionEventHandler
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEventHandler
-import typings.react.mod.global.JSX.Element
 import typings.reactWebcam.anon.Audio
 import typings.reactWebcam.reactWebcamStrings.`additions removals`
 import typings.reactWebcam.reactWebcamStrings.`additions text`
@@ -329,7 +328,7 @@ object mod {
     
     var checked: js.UndefOr[Boolean] = js.native
     
-    var children: js.UndefOr[ReactNode] & (js.UndefOr[js.Function1[/* childrenProps */ ChildrenProps, Element]]) = js.native
+    var children: js.UndefOr[ReactNode] = js.native
     
     var cite: js.UndefOr[String] = js.native
     

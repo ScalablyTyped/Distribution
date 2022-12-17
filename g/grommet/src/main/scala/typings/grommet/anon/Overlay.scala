@@ -19,7 +19,7 @@ trait Overlay extends StObject {
   
   var extend: js.UndefOr[ExtendType[Record[String, Any]]] = js.undefined
   
-  var overlay: js.UndefOr[`18`] = js.undefined
+  var overlay: js.UndefOr[`15`] = js.undefined
   
   var responsiveBreakpoint: js.UndefOr[String] = js.undefined
   
@@ -52,7 +52,7 @@ object Overlay {
     
     inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    inline def setOverlay(value: `18`): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+    inline def setOverlay(value: `15`): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     
     inline def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
     

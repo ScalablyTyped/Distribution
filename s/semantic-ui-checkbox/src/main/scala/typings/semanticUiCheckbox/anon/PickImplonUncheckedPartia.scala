@@ -54,7 +54,7 @@ trait PickImplonUncheckedPartia
   
   def onUnchecked(): Unit
   @JSName("onUnchecked")
-  var onUnchecked_Original: (js.ThisFunction0[/* this */ HTMLInputElement, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]])
+  var onUnchecked_Original: js.ThisFunction0[/* this */ HTMLInputElement, Unit]
   
   var performance: js.UndefOr[Boolean] = js.undefined
   
@@ -68,9 +68,7 @@ trait PickImplonUncheckedPartia
 }
 object PickImplonUncheckedPartia {
   
-  inline def apply(
-    onUnchecked: (js.ThisFunction0[/* this */ HTMLInputElement, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]])
-  ): PickImplonUncheckedPartia = {
+  inline def apply(onUnchecked: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): PickImplonUncheckedPartia = {
     val __obj = js.Dynamic.literal(onUnchecked = onUnchecked.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonUncheckedPartia]
   }
@@ -149,9 +147,7 @@ object PickImplonUncheckedPartia {
     
     inline def setOnIndeterminateUndefined: Self = StObject.set(x, "onIndeterminate", js.undefined)
     
-    inline def setOnUnchecked(
-      value: (js.ThisFunction0[/* this */ HTMLInputElement, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]])
-    ): Self = StObject.set(x, "onUnchecked", value.asInstanceOf[js.Any])
+    inline def setOnUnchecked(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): Self = StObject.set(x, "onUnchecked", value.asInstanceOf[js.Any])
     
     inline def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,7 @@ open class ORID ()
     js.Function1[/* input */ js.UndefOr[java.lang.String | this.type | Any], Boolean]
   ] = js.native
   
-  var parse: (js.UndefOr[js.Function1[/* input */ java.lang.String, Boolean]]) & (js.UndefOr[js.Function1[/* input */ java.lang.String, this.type]]) & (js.UndefOr[js.Function1[/* input */ java.lang.String, js.Array[this.type]]]) = js.native
+  var parse: js.UndefOr[js.Function1[/* input */ java.lang.String, Boolean]] = js.native
   
   var position: js.UndefOr[Double] = js.native
   

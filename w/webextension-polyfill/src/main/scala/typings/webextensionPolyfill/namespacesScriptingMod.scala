@@ -46,7 +46,7 @@ object namespacesScriptingMod {
         * The style origin for the injection. Defaults to 'AUTHOR'.
         * Optional.
         */
-      var origin: js.UndefOr[CSSInjectionOriginEnum] & js.UndefOr[StyleOrigin]
+      var origin: js.UndefOr[CSSInjectionOriginEnum] = js.undefined
       
       /**
         * Details specifying the target into which to inject the CSS.
@@ -75,7 +75,7 @@ object namespacesScriptingMod {
         
         inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value*))
         
-        inline def setOrigin(value: js.UndefOr[CSSInjectionOriginEnum] & js.UndefOr[StyleOrigin]): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+        inline def setOrigin(value: CSSInjectionOriginEnum): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
         
         inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
         

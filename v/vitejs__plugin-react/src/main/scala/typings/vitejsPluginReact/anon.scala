@@ -1,7 +1,6 @@
 package typings.vitejsPluginReact
 
 import typings.babelParser.mod.ParserPlugin
-import typings.std.Extract
 import typings.vite.mod.ResolvedConfig
 import typings.vitejsPluginReact.mod.ReactBabelHook
 import typings.vitejsPluginReact.mod.ReactBabelHookContext
@@ -73,7 +72,7 @@ object anon {
     /**
       * Array containing the plugins that you want to enable.
       */
-    var plugins: js.UndefOr[js.Array[ParserPlugin]] & (Extract[js.UndefOr[js.Array[ParserPlugin]], js.Array[Any]])
+    var plugins: js.UndefOr[js.Array[ParserPlugin]] = js.undefined
     
     /**
       * Adds a ranges property to each node: [node.start, node.end]
@@ -161,9 +160,7 @@ object anon {
       
       inline def setErrorRecoveryUndefined: Self = StObject.set(x, "errorRecovery", js.undefined)
       
-      inline def setPlugins(
-        value: js.UndefOr[js.Array[ParserPlugin]] & (Extract[js.UndefOr[js.Array[ParserPlugin]], js.Array[Any]])
-      ): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Array[ParserPlugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       

@@ -40,13 +40,13 @@ trait PickImplverbosePartialPic
   
   var silent: js.UndefOr[Boolean] = js.undefined
   
-  var verbose: Boolean & js.UndefOr[Boolean]
+  var verbose: Boolean
   
   var width: js.UndefOr[next | initial | Double] = js.undefined
 }
 object PickImplverbosePartialPic {
   
-  inline def apply(verbose: Boolean & js.UndefOr[Boolean]): PickImplverbosePartialPic = {
+  inline def apply(verbose: Boolean): PickImplverbosePartialPic = {
     val __obj = js.Dynamic.literal(verbose = verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplverbosePartialPic]
   }
@@ -101,7 +101,7 @@ object PickImplverbosePartialPic {
     
     inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     
-    inline def setVerbose(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+    inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     
     inline def setWidth(value: next | initial | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

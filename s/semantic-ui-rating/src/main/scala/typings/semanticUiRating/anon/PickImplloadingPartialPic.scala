@@ -14,11 +14,11 @@ trait PickImplloadingPartialPic
   
   var hover: js.UndefOr[String] = js.undefined
   
-  var loading: String & js.UndefOr[String]
+  var loading: String
 }
 object PickImplloadingPartialPic {
   
-  inline def apply(loading: String & js.UndefOr[String]): PickImplloadingPartialPic = {
+  inline def apply(loading: String): PickImplloadingPartialPic = {
     val __obj = js.Dynamic.literal(loading = loading.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplloadingPartialPic]
   }
@@ -33,6 +33,6 @@ object PickImplloadingPartialPic {
     
     inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     
-    inline def setLoading(value: String & js.UndefOr[String]): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+    inline def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
   }
 }

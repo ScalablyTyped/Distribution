@@ -1,7 +1,7 @@
 package typings.reactNavigationStack.libTypescriptSrcVendorTypesMod
 
 import typings.reactNative.mod.Animated.AnimatedInterpolation
-import typings.reactNavigationStack.anon.Bottom
+import typings.reactNavigationStack.anon.Left
 import typings.reactNavigationStack.anon.Progress
 import typings.reactNavigationStack.anon.Screen
 import org.scalablytyped.runtime.StObject
@@ -28,7 +28,7 @@ trait StackCardInterpolationProps extends StObject {
   /**
     * Safe area insets
     */
-  var insets: Bottom
+  var insets: Left
   
   /**
     * Animated node representing multiplier when direction is inverted (-1 - inverted, 1 - normal).
@@ -57,7 +57,7 @@ object StackCardInterpolationProps {
     closing: AnimatedInterpolation[Double | String],
     current: Progress,
     index: Double,
-    insets: Bottom,
+    insets: Left,
     inverted: AnimatedInterpolation[Double | String],
     layouts: Screen,
     swiping: AnimatedInterpolation[Double | String]
@@ -74,7 +74,7 @@ object StackCardInterpolationProps {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    inline def setInsets(value: Bottom): Self = StObject.set(x, "insets", value.asInstanceOf[js.Any])
+    inline def setInsets(value: Left): Self = StObject.set(x, "insets", value.asInstanceOf[js.Any])
     
     inline def setInverted(value: AnimatedInterpolation[Double | String]): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
     

@@ -309,7 +309,7 @@ trait OmitSlidersetAbsoluteBounds extends StObject {
       typings.tabris.global.tabris.widgets.Slider, 
       set | typings.tabris.tabrisStrings.jsxAttributes
     ]
-  ]) & `3`
+  ]) & Children
   
   var layoutData: LayoutDataValue
   
@@ -563,7 +563,7 @@ object OmitSlidersetAbsoluteBounds {
     jsxAttributes: (JSXAttributes[
       typings.tabris.global.tabris.widgets.Slider, 
       Omit[typings.tabris.global.tabris.widgets.Slider, set | jsxAttributes]
-    ]) & `3`,
+    ]) & Children,
     layoutData: LayoutDataValue,
     left: ConstraintValue,
     maximum: Double,
@@ -734,7 +734,7 @@ object OmitSlidersetAbsoluteBounds {
       value: (JSXAttributes[
           typings.tabris.global.tabris.widgets.Slider, 
           Omit[typings.tabris.global.tabris.widgets.Slider, set | jsxAttributes]
-        ]) & `3`
+        ]) & Children
     ): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     
     inline def setLayoutData(value: LayoutDataValue): Self = StObject.set(x, "layoutData", value.asInstanceOf[js.Any])

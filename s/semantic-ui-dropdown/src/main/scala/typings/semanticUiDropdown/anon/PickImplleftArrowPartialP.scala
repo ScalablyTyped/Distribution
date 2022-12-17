@@ -23,7 +23,7 @@ trait PickImplleftArrowPartialP
   
   var escape: js.UndefOr[Double] = js.undefined
   
-  var leftArrow: Double & js.UndefOr[Double]
+  var leftArrow: Double
   
   var pageDown: js.UndefOr[Double] = js.undefined
   
@@ -35,7 +35,7 @@ trait PickImplleftArrowPartialP
 }
 object PickImplleftArrowPartialP {
   
-  inline def apply(leftArrow: Double & js.UndefOr[Double]): PickImplleftArrowPartialP = {
+  inline def apply(leftArrow: Double): PickImplleftArrowPartialP = {
     val __obj = js.Dynamic.literal(leftArrow = leftArrow.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplleftArrowPartialP]
   }
@@ -66,7 +66,7 @@ object PickImplleftArrowPartialP {
     
     inline def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
     
-    inline def setLeftArrow(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "leftArrow", value.asInstanceOf[js.Any])
+    inline def setLeftArrow(value: Double): Self = StObject.set(x, "leftArrow", value.asInstanceOf[js.Any])
     
     inline def setPageDown(value: Double): Self = StObject.set(x, "pageDown", value.asInstanceOf[js.Any])
     

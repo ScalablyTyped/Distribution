@@ -75,11 +75,11 @@ trait reqBlankNoderesourceQuadS extends StObject {
   
   var referringTerm: js.UndefOr[NamedNode] = js.undefined
   
-  var req: BlankNode & js.UndefOr[BlankNode]
+  var req: BlankNode
   
   var requestedURI: js.UndefOr[String] = js.undefined
   
-  var resource: QuadSubject & js.UndefOr[QuadSubject]
+  var resource: QuadSubject
   
   var retriedWithNoCredentials: js.UndefOr[scala.Boolean] = js.undefined
   
@@ -93,7 +93,7 @@ trait reqBlankNoderesourceQuadS extends StObject {
 }
 object reqBlankNoderesourceQuadS {
   
-  inline def apply(req: BlankNode & js.UndefOr[BlankNode], resource: QuadSubject & js.UndefOr[QuadSubject]): reqBlankNoderesourceQuadS = {
+  inline def apply(req: BlankNode, resource: QuadSubject): reqBlankNoderesourceQuadS = {
     val __obj = js.Dynamic.literal(req = req.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[reqBlankNoderesourceQuadS]
   }
@@ -206,13 +206,13 @@ object reqBlankNoderesourceQuadS {
     
     inline def setReferringTermUndefined: Self = StObject.set(x, "referringTerm", js.undefined)
     
-    inline def setReq(value: BlankNode & js.UndefOr[BlankNode]): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+    inline def setReq(value: BlankNode): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
     
     inline def setRequestedURI(value: String): Self = StObject.set(x, "requestedURI", value.asInstanceOf[js.Any])
     
     inline def setRequestedURIUndefined: Self = StObject.set(x, "requestedURI", js.undefined)
     
-    inline def setResource(value: QuadSubject & js.UndefOr[QuadSubject]): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: QuadSubject): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setRetriedWithNoCredentials(value: scala.Boolean): Self = StObject.set(x, "retriedWithNoCredentials", value.asInstanceOf[js.Any])
     

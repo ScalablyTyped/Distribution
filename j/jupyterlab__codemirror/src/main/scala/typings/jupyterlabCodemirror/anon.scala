@@ -1,11 +1,31 @@
 package typings.jupyterlabCodemirror
 
+import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StringDictionary
+import typings.codemirror.mod.EditorView
 import typings.codemirrorState.mod.Extension
+import typings.codemirrorState.mod.Facet
+import typings.codemirrorState.mod.RangeSet
+import typings.codemirrorState.mod.SelectionRange
+import typings.codemirrorState.mod.StateEffect
+import typings.codemirrorState.mod.StateEffectType
+import typings.codemirrorView.anon.Dark
+import typings.codemirrorView.anon.PartialRect
+import typings.codemirrorView.anon.X
+import typings.codemirrorView.mod.AttrSource
+import typings.codemirrorView.mod.DOMEventHandlers
+import typings.codemirrorView.mod.DecorationSet
+import typings.codemirrorView.mod.MakeSelectionStyle
+import typings.codemirrorView.mod.ViewUpdate
 import typings.jupyterlabCodemirror.jupyterlabCodemirrorStrings.bounded
 import typings.jupyterlabCodemirror.jupyterlabCodemirrorStrings.off
 import typings.jupyterlabCodemirror.jupyterlabCodemirrorStrings.on
 import typings.jupyterlabCodemirror.jupyterlabCodemirrorStrings.wordWrapColumn
 import typings.jupyterlabCodemirror.libModeMod.Mode.IMode
+import typings.std.HTMLElement
+import typings.std.MouseEvent
+import typings.styleMod.mod.StyleModule
+import typings.styleMod.mod.StyleSpec
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -344,7 +364,13 @@ object anon {
   
   trait TypeofCodeMirror extends StObject {
     
-    val EditorView: Any
+    /**
+    An editor view represents the editor's user interface. It holds
+    the editable DOM surface, and possibly other elements such as the
+    line number gutter. It handles events and dispatches state
+    transactions for editing actions.
+    */
+    var EditorView: Instantiable0[typings.codemirror.mod.EditorView]
     
     /**
     This is an extension value that just pulls together a number of
@@ -393,7 +419,7 @@ object anon {
   }
   object TypeofCodeMirror {
     
-    inline def apply(EditorView: Any, basicSetup: Extension, minimalSetup: Extension): TypeofCodeMirror = {
+    inline def apply(EditorView: Instantiable0[EditorView], basicSetup: Extension, minimalSetup: Extension): TypeofCodeMirror = {
       val __obj = js.Dynamic.literal(EditorView = EditorView.asInstanceOf[js.Any], basicSetup = basicSetup.asInstanceOf[js.Any], minimalSetup = minimalSetup.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeofCodeMirror]
     }
@@ -404,11 +430,290 @@ object anon {
       
       inline def setBasicSetupVarargs(value: Any*): Self = StObject.set(x, "basicSetup", js.Array(value*))
       
-      inline def setEditorView(value: Any): Self = StObject.set(x, "EditorView", value.asInstanceOf[js.Any])
+      inline def setEditorView(value: Instantiable0[EditorView]): Self = StObject.set(x, "EditorView", value.asInstanceOf[js.Any])
       
       inline def setMinimalSetup(value: Extension): Self = StObject.set(x, "minimalSetup", value.asInstanceOf[js.Any])
       
       inline def setMinimalSetupVarargs(value: Any*): Self = StObject.set(x, "minimalSetup", js.Array(value*))
     }
+  }
+  
+  @js.native
+  trait TypeofEditorView extends StObject {
+    
+    /**
+      State effect used to include screen reader announcements in a
+      transaction. These will be added to the DOM in a visually hidden
+      element with `aria-live="polite"` set, and should be used to
+      describe effects that are visually obvious but may not be
+      noticed by screen reader users (such as moving to the next
+      search match).
+      */
+    /* static member */
+    var announce: StateEffectType[String] = js.native
+    
+    /**
+      Used to provide ranges that should be treated as atoms as far as
+      cursor motion is concerned. This causes methods like
+      [`moveByChar`](https://codemirror.net/6/docs/ref/#view.EditorView.moveByChar) and
+      [`moveVertically`](https://codemirror.net/6/docs/ref/#view.EditorView.moveVertically) (and the
+      commands built on top of them) to skip across such regions when
+      a selection endpoint would enter them. This does _not_ prevent
+      direct programmatic [selection
+      updates](https://codemirror.net/6/docs/ref/#state.TransactionSpec.selection) from moving into such
+      regions.
+      */
+    /* static member */
+    var atomicRanges: Facet[
+        js.Function1[/* view */ typings.codemirrorView.mod.EditorView, RangeSet[Any]], 
+        js.Array[js.Function1[/* view */ typings.codemirrorView.mod.EditorView, RangeSet[Any]]]
+      ] = js.native
+    
+    /**
+      Create an extension that adds styles to the base theme. Like
+      with [`theme`](https://codemirror.net/6/docs/ref/#view.EditorView^theme), use `&` to indicate the
+      place of the editor wrapper element when directly targeting
+      that. You can also use `&dark` or `&light` instead to only
+      target editors with a dark or light theme.
+      */
+    /* static member */
+    def baseTheme(spec: StringDictionary[StyleSpec]): Extension = js.native
+    
+    /**
+      Facet used to configure whether a given selecting click adds a
+      new range to the existing selection or replaces it entirely. The
+      default behavior is to check `event.metaKey` on macOS, and
+      `event.ctrlKey` elsewhere.
+      */
+    /* static member */
+    var clickAddsSelectionRange: Facet[
+        js.Function1[/* event */ MouseEvent, Boolean], 
+        js.Array[js.Function1[/* event */ MouseEvent, Boolean]]
+      ] = js.native
+    
+    /**
+      Facet that provides additional DOM attributes for the editor's
+      editable DOM element.
+      */
+    /* static member */
+    var contentAttributes: Facet[AttrSource, js.Array[AttrSource]] = js.native
+    
+    /**
+      This facet records whether a dark theme is active. The extension
+      returned by [`theme`](https://codemirror.net/6/docs/ref/#view.EditorView^theme) automatically
+      includes an instance of this when the `dark` option is set to
+      true.
+      */
+    /* static member */
+    var darkTheme: Facet[Boolean, Boolean] = js.native
+    
+    /**
+      A facet that determines which [decorations](https://codemirror.net/6/docs/ref/#view.Decoration)
+      are shown in the view. Decorations can be provided in two
+      ways—directly, or via a function that takes an editor view.
+      
+      Only decoration sets provided directly are allowed to influence
+      the editor's vertical layout structure. The ones provided as
+      functions are called _after_ the new viewport has been computed,
+      and thus **must not** introduce block widgets or replacing
+      decorations that cover line breaks.
+      
+      If you want decorated ranges to behave like atomic units for
+      cursor motion and deletion purposes, also provide the range set
+      containing the decorations to
+      [`EditorView.atomicRanges`](https://codemirror.net/6/docs/ref/#view.EditorView^atomicRanges).
+      */
+    /* static member */
+    var decorations: Facet[
+        DecorationSet | (js.Function1[/* view */ typings.codemirrorView.mod.EditorView, DecorationSet]), 
+        js.Array[
+          DecorationSet | (js.Function1[/* view */ typings.codemirrorView.mod.EditorView, DecorationSet])
+        ]
+      ] = js.native
+    
+    /**
+      Returns an extension that can be used to add DOM event handlers.
+      The value should be an object mapping event names to handler
+      functions. For any given event, such functions are ordered by
+      extension precedence, and the first handler to return true will
+      be assumed to have handled that event, and no other handlers or
+      built-in behavior will be activated for it. These are registered
+      on the [content element](https://codemirror.net/6/docs/ref/#view.EditorView.contentDOM), except
+      for `scroll` handlers, which will be called any time the
+      editor's [scroll element](https://codemirror.net/6/docs/ref/#view.EditorView.scrollDOM) or one of
+      its parent nodes is scrolled.
+      */
+    /* static member */
+    def domEventHandlers(handlers: DOMEventHandlers[Any]): Extension = js.native
+    
+    /**
+      Facet used to configure whether a given selection drag event
+      should move or copy the selection. The given predicate will be
+      called with the `mousedown` event, and can return `true` when
+      the drag should move the content.
+      */
+    /* static member */
+    var dragMovesSelection: Facet[
+        js.Function1[/* event */ MouseEvent, Boolean], 
+        js.Array[js.Function1[/* event */ MouseEvent, Boolean]]
+      ] = js.native
+    
+    /**
+      Facet that controls whether the editor content DOM is editable.
+      When its highest-precedence value is `false`, the element will
+      not have its `contenteditable` attribute set. (Note that this
+      doesn't affect API calls that change the editor content, even
+      when those are bound to keys or buttons. See the
+      [`readOnly`](https://codemirror.net/6/docs/ref/#state.EditorState.readOnly) facet for that.)
+      */
+    /* static member */
+    var editable: Facet[Boolean, Boolean] = js.native
+    
+    /**
+      Facet that provides DOM attributes for the editor's outer
+      element.
+      */
+    /* static member */
+    var editorAttributes: Facet[AttrSource, js.Array[AttrSource]] = js.native
+    
+    /**
+      Allows you to provide a function that should be called when the
+      library catches an exception from an extension (mostly from view
+      plugins, but may be used by other extensions to route exceptions
+      from user-code-provided callbacks). This is mostly useful for
+      debugging and logging. See [`logException`](https://codemirror.net/6/docs/ref/#view.logException).
+      */
+    /* static member */
+    var exceptionSink: Facet[
+        js.Function1[/* exception */ Any, Unit], 
+        js.Array[js.Function1[/* exception */ Any, Unit]]
+      ] = js.native
+    
+    /**
+      Retrieve an editor view instance from the view's DOM
+      representation.
+      */
+    /* static member */
+    def findFromDOM(dom: HTMLElement): typings.codemirrorView.mod.EditorView | Null = js.native
+    
+    /**
+      An input handler can override the way changes to the editable
+      DOM content are handled. Handlers are passed the document
+      positions between which the change was found, and the new
+      content. When one returns true, no further input handlers are
+      called and the default behavior is prevented.
+      */
+    /* static member */
+    var inputHandler: Facet[
+        js.Function4[
+          /* view */ typings.codemirrorView.mod.EditorView, 
+          /* from */ Double, 
+          /* to */ Double, 
+          /* text */ String, 
+          Boolean
+        ], 
+        js.Array[
+          js.Function4[
+            /* view */ typings.codemirrorView.mod.EditorView, 
+            /* from */ Double, 
+            /* to */ Double, 
+            /* text */ String, 
+            Boolean
+          ]
+        ]
+      ] = js.native
+    
+    /**
+      An extension that enables line wrapping in the editor (by
+      setting CSS `white-space` to `pre-wrap` in the content).
+      */
+    /* static member */
+    var lineWrapping: Extension = js.native
+    
+    /**
+      Allows you to influence the way mouse selection happens. The
+      functions in this facet will be called for a `mousedown` event
+      on the editor, and can return an object that overrides the way a
+      selection is computed from that mouse click or drag.
+      */
+    /* static member */
+    var mouseSelectionStyle: Facet[MakeSelectionStyle, js.Array[MakeSelectionStyle]] = js.native
+    
+    /**
+      By default, the editor assumes all its content has the same
+      [text direction](https://codemirror.net/6/docs/ref/#view.Direction). Configure this with a `true`
+      value to make it read the text direction of every (rendered)
+      line separately.
+      */
+    /* static member */
+    var perLineTextDirection: Facet[Boolean, Boolean] = js.native
+    
+    /**
+      Returns an effect that can be
+      [added](https://codemirror.net/6/docs/ref/#state.TransactionSpec.effects) to a transaction to
+      cause it to scroll the given position or range into view.
+      */
+    /* static member */
+    def scrollIntoView(pos: Double): StateEffect[Any] = js.native
+    def scrollIntoView(pos: Double, options: X): StateEffect[Any] = js.native
+    def scrollIntoView(pos: SelectionRange): StateEffect[Any] = js.native
+    def scrollIntoView(pos: SelectionRange, options: X): StateEffect[Any] = js.native
+    
+    /**
+      Facet that allows extensions to provide additional scroll
+      margins (space around the sides of the scrolling element that
+      should be considered invisible). This can be useful when the
+      plugin introduces elements that cover part of that element (for
+      example a horizontally fixed gutter).
+      */
+    /* static member */
+    var scrollMargins: Facet[
+        js.Function1[/* view */ typings.codemirrorView.mod.EditorView, PartialRect | Null], 
+        js.Array[
+          js.Function1[/* view */ typings.codemirrorView.mod.EditorView, PartialRect | Null]
+        ]
+      ] = js.native
+    
+    /**
+      Facet to add a [style
+      module](https://github.com/marijnh/style-mod#documentation) to
+      an editor view. The view will ensure that the module is
+      mounted in its [document
+      root](https://codemirror.net/6/docs/ref/#view.EditorView.constructor^config.root).
+      */
+    /* static member */
+    var styleModule: Facet[StyleModule, js.Array[StyleModule]] = js.native
+    
+    /**
+      Create a theme extension. The first argument can be a
+      [`style-mod`](https://github.com/marijnh/style-mod#documentation)
+      style spec providing the styles for the theme. These will be
+      prefixed with a generated class for the style.
+      
+      Because the selectors will be prefixed with a scope class, rule
+      that directly match the editor's [wrapper
+      element](https://codemirror.net/6/docs/ref/#view.EditorView.dom)—to which the scope class will be
+      added—need to be explicitly differentiated by adding an `&` to
+      the selector for that element—for example
+      `&.cm-focused`.
+      
+      When `dark` is set to true, the theme will be marked as dark,
+      which will cause the `&dark` rules from [base
+      themes](https://codemirror.net/6/docs/ref/#view.EditorView^baseTheme) to be used (as opposed to
+      `&light` when a light theme is active).
+      */
+    /* static member */
+    def theme(spec: StringDictionary[StyleSpec]): Extension = js.native
+    def theme(spec: StringDictionary[StyleSpec], options: Dark): Extension = js.native
+    
+    /**
+      A facet that can be used to register a function to be called
+      every time the view updates.
+      */
+    /* static member */
+    var updateListener: Facet[
+        js.Function1[/* update */ ViewUpdate, Unit], 
+        js.Array[js.Function1[/* update */ ViewUpdate, Unit]]
+      ] = js.native
   }
 }

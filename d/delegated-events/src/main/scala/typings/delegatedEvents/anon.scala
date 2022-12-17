@@ -64,7 +64,7 @@ object anon {
     
     /** Returns the object whose event listener's callback is currently being invoked. */
     /* standard dom */
-    val currentTarget: (EventTarget | Null) & Element = js.native
+    val currentTarget: EventTarget | Null = js.native
     
     /** Returns true if preventDefault() was invoked successfully to indicate cancelation, and false otherwise. */
     /* standard dom */

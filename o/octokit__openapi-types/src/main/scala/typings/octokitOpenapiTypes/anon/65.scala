@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `65` extends StObject {
   
-  /** if team synchronization is set up */
-  var `403`: Any
+  /** Response */
+  var `200`: ContentApplicationjsonRepositoriesTotalcount
 }
 object `65` {
   
-  inline def apply(`403`: Any): `65` = {
+  inline def apply(`200`: ContentApplicationjsonRepositoriesTotalcount): `65` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("403")(`403`.asInstanceOf[js.Any])
+    __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`65`]
   }
   
   extension [Self <: `65`](x: Self) {
     
-    inline def set403(value: Any): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
+    inline def set200(value: ContentApplicationjsonRepositoriesTotalcount): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
   }
 }

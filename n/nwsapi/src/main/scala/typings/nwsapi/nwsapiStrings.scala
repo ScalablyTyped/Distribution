@@ -7,18 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object nwsapiStrings {
   
   @js.native
-  sealed trait ^ extends StObject
-  inline def ^ : ^ = "^".asInstanceOf[^]
-  
-  @js.native
-  sealed trait $ extends StObject
-  inline def $: $ = "$".asInstanceOf[$]
-  
-  @js.native
-  sealed trait _empty extends StObject
-  inline def _empty: _empty = "".asInstanceOf[_empty]
-  
-  @js.native
   sealed trait `false` extends StObject
   inline def `false`: `false` = "false".asInstanceOf[`false`]
   

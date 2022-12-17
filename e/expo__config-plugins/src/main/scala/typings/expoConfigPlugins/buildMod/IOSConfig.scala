@@ -2,7 +2,6 @@ package typings.expoConfigPlugins.buildMod
 
 import typings.expoConfigPlugins.anon.AddFileToProject
 import typings.expoConfigPlugins.anon.BridgingHeader
-import typings.expoConfigPlugins.anon.BridgingHeaderProject
 import typings.expoConfigPlugins.anon.BuildConfiguration
 import typings.expoConfigPlugins.anon.Configuration
 import typings.expoConfigPlugins.anon.ConfigurationListId
@@ -24,6 +23,7 @@ import typings.expoConfigPlugins.anon.PickExpoConfigorientation
 import typings.expoConfigPlugins.anon.PickExpoConfigversion
 import typings.expoConfigPlugins.anon.PickModPropsInfoPlistproj
 import typings.expoConfigPlugins.anon.Project
+import typings.expoConfigPlugins.anon.ProjectAny
 import typings.expoConfigPlugins.anon.ProjectName
 import typings.expoConfigPlugins.anon.ProjectProjectRoot
 import typings.expoConfigPlugins.anon.ProjectRoot
@@ -70,9 +70,9 @@ object IOSConfig {
     
     inline def getBitcode(config: PickExpoConfigios): typings.expoConfigPlugins.buildIosBitcodeMod.Bitcode = ^.asInstanceOf[js.Dynamic].applyDynamic("getBitcode")(config.asInstanceOf[js.Any]).asInstanceOf[typings.expoConfigPlugins.buildIosBitcodeMod.Bitcode]
     
-    inline def setBitcode(bitcode: typings.expoConfigPlugins.buildIosBitcodeMod.Bitcode, param1: Project): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setBitcode")(bitcode.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def setBitcode(bitcode: typings.expoConfigPlugins.buildIosBitcodeMod.Bitcode, param1: ProjectAny): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setBitcode")(bitcode.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def setBitcodeWithConfig(config: PickExpoConfigios, param1: Project): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setBitcodeWithConfig")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def setBitcodeWithConfig(config: PickExpoConfigios, param1: ProjectAny): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setBitcodeWithConfig")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     @JSImport("@expo/config-plugins/build", "IOSConfig.Bitcode.withBitcode")
     @js.native
@@ -223,7 +223,7 @@ object IOSConfig {
     
     inline def getSupportsTablet(config: PickExpoConfigios): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportsTablet")(config.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    inline def setDeviceFamily(config: PickExpoConfigios, param1: Project): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setDeviceFamily")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def setDeviceFamily(config: PickExpoConfigios, param1: ProjectAny): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setDeviceFamily")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     @JSImport("@expo/config-plugins/build", "IOSConfig.DeviceFamily.withDeviceFamily")
     @js.native
@@ -496,13 +496,13 @@ object IOSConfig {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def createBridgingHeaderFile(param0: BridgingHeader): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createBridgingHeaderFile")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def createBridgingHeaderFile(param0: ProjectName): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createBridgingHeaderFile")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     inline def ensureSwiftBridgingHeaderSetup(param0: ProjectProjectRoot): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureSwiftBridgingHeaderSetup")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
     
-    inline def getDesignatedSwiftBridgingHeaderFileReference(param0: Project): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDesignatedSwiftBridgingHeaderFileReference")(param0.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def getDesignatedSwiftBridgingHeaderFileReference(param0: ProjectAny): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDesignatedSwiftBridgingHeaderFileReference")(param0.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     
-    inline def linkBridgingHeaderFile(param0: BridgingHeaderProject): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("linkBridgingHeaderFile")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def linkBridgingHeaderFile(param0: BridgingHeader): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("linkBridgingHeaderFile")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     @JSImport("@expo/config-plugins/build", "IOSConfig.Swift.withNoopSwiftFile")
     @js.native
@@ -708,20 +708,20 @@ object IOSConfig {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def addBuildSourceFileToGroup(param0: Filepath): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addBuildSourceFileToGroup")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def addBuildSourceFileToGroup(param0: GroupName): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addBuildSourceFileToGroup")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     inline def addFileToGroupAndLink(param0: AddFileToProject): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addFileToGroupAndLink")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     inline def addFramework(param0: Framework): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addFramework")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
     
-    inline def addResourceFileToGroup(param0: GroupName): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addResourceFileToGroup")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def addResourceFileToGroup(param0: Filepath): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addResourceFileToGroup")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     inline def ensureGroupRecursively(
       project: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XcodeProject */ Any,
       filepath: String
     ): (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PBXGroup */ Any) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureGroupRecursively")(project.asInstanceOf[js.Any], filepath.asInstanceOf[js.Any])).asInstanceOf[(/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PBXGroup */ Any) | Null]
     
-    inline def getApplicationNativeTarget(param0: ProjectName): Target = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplicationNativeTarget")(param0.asInstanceOf[js.Any]).asInstanceOf[Target]
+    inline def getApplicationNativeTarget(param0: Project): Target = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplicationNativeTarget")(param0.asInstanceOf[js.Any]).asInstanceOf[Target]
     
     inline def getBuildConfigurationForListIdAndName(
       project: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XcodeProject */ Any,

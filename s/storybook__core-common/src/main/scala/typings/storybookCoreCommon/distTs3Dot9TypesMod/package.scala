@@ -3,7 +3,6 @@ package typings.storybookCoreCommon.distTs3Dot9TypesMod
 import typings.std.Record
 import typings.storybookCoreCommon.anon.Disable
 import typings.storybookCoreCommon.anon.Name
-import typings.storybookCoreCommon.anon.NameOptions
 import typings.storybookCoreCommon.anon.Title
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -29,7 +28,7 @@ type Entry = String
 
 type Preset = String | Name
 
-type PresetConfig = String | NameOptions
+type PresetConfig = String | typings.storybookCoreCommon.anon.Options
 
 type StoriesEntry = String | StoriesSpecifier
 

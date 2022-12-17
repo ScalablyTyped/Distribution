@@ -20,7 +20,7 @@ trait PickImplcollapsiblePartia
   
   var closeNested: js.UndefOr[Boolean] = js.undefined
   
-  var collapsible: Boolean & js.UndefOr[Boolean]
+  var collapsible: Boolean
   
   var debug: js.UndefOr[Boolean] = js.undefined
   
@@ -60,7 +60,7 @@ trait PickImplcollapsiblePartia
 }
 object PickImplcollapsiblePartia {
   
-  inline def apply(collapsible: Boolean & js.UndefOr[Boolean]): PickImplcollapsiblePartia = {
+  inline def apply(collapsible: Boolean): PickImplcollapsiblePartia = {
     val __obj = js.Dynamic.literal(collapsible = collapsible.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplcollapsiblePartia]
   }
@@ -79,7 +79,7 @@ object PickImplcollapsiblePartia {
     
     inline def setCloseNestedUndefined: Self = StObject.set(x, "closeNested", js.undefined)
     
-    inline def setCollapsible(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
+    inline def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
     
     inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     

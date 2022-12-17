@@ -1,11 +1,11 @@
 package typings.chevrotainTypes
 
 import typings.chevrotainTypes.anon.Definition
+import typings.chevrotainTypes.anon.DefinitionIdx
 import typings.chevrotainTypes.anon.Idx
 import typings.chevrotainTypes.anon.IgnoreAmbiguities
 import typings.chevrotainTypes.anon.Label
 import typings.chevrotainTypes.anon.Name
-import typings.chevrotainTypes.anon.OrgText
 import typings.chevrotainTypes.anon.Separator
 import typings.chevrotainTypes.mod.GenerateDtsOptions
 import typings.chevrotainTypes.mod.ICreateSyntaxDiagramsConfig
@@ -35,7 +35,7 @@ object global {
     @js.native
     open class Alternation protected ()
       extends typings.chevrotainTypes.mod.Alternation {
-      def this(options: Definition) = this()
+      def this(options: DefinitionIdx) = this()
     }
     
     @JSGlobal("chevrotain.Alternative")
@@ -253,7 +253,7 @@ object global {
     @js.native
     open class Rule protected ()
       extends typings.chevrotainTypes.mod.Rule {
-      def this(options: OrgText) = this()
+      def this(options: Definition) = this()
     }
     
     @JSGlobal("chevrotain.Terminal")

@@ -1,8 +1,6 @@
 package typings.reactIntl
 
 import org.scalablytyped.runtime.Shortcut
-import typings.formatjsIntl.formatjsIntlStrings.`best fit`
-import typings.formatjsIntl.formatjsIntlStrings.basic
 import typings.formatjsIntl.srcTypesMod.FormatDateOptions
 import typings.react.mod.FC
 import typings.react.mod.ReactElement
@@ -30,11 +28,10 @@ object libSrcComponentsDateTimeRangeMod extends Shortcut {
   object Props {
     
     inline def apply(
-      formatMatcher: (js.UndefOr[(`best fit`) | basic]) & (js.UndefOr[basic | (`best fit`)]),
       from: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.anon.FnCallStartDateEndDate>[0] */ js.Any,
       to: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.anon.FnCallStartDateEndDate>[1] */ js.Any
     ): Props = {
-      val __obj = js.Dynamic.literal(formatMatcher = formatMatcher.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
     

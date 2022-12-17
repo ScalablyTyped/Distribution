@@ -1,8 +1,8 @@
 package typings.vegaLite
 
+import typings.vegaLite.anon.ExplicitValue
 import typings.vegaLite.anon.IgnoreVgConfig
 import typings.vegaLite.anon.PartialRecordVgEncodeChan
-import typings.vegaLite.anon.ValueT
 import typings.vegaLite.anon.VgChannel
 import typings.vegaLite.buildSrcAxisMod.ConditionalAxisProperty
 import typings.vegaLite.buildSrcBinMod.Bin
@@ -2165,16 +2165,16 @@ object buildSrcCompileCommonMod {
   inline def mergeTitle(title1: SignalRef, title2: Text): SignalRef | Text = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeTitle")(title1.asInstanceOf[js.Any], title2.asInstanceOf[js.Any])).asInstanceOf[SignalRef | Text]
   inline def mergeTitle(title1: SignalRef, title2: SignalRef): SignalRef | Text = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeTitle")(title1.asInstanceOf[js.Any], title2.asInstanceOf[js.Any])).asInstanceOf[SignalRef | Text]
   
-  inline def mergeTitleComponent(v1: Explicit[AxisTitleComponent], v2: Explicit[AxisTitleComponent]): typings.vegaLite.anon.Explicit | typings.vegaLite.anon.Value = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeTitleComponent")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[typings.vegaLite.anon.Explicit | typings.vegaLite.anon.Value]
+  inline def mergeTitleComponent(v1: Explicit[AxisTitleComponent], v2: Explicit[AxisTitleComponent]): typings.vegaLite.anon.Explicit | ExplicitValue = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeTitleComponent")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[typings.vegaLite.anon.Explicit | ExplicitValue]
   
   inline def mergeTitleFieldDefs(f1: js.Array[FieldDefBase[String, Bin]], f2: js.Array[FieldDefBase[String, Bin]]): js.Array[FieldDefBase[String, Bin]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeTitleFieldDefs")(f1.asInstanceOf[js.Any], f2.asInstanceOf[js.Any])).asInstanceOf[js.Array[FieldDefBase[String, Bin]]]
   
   inline def signalOrStringValue(v: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("signalOrStringValue")(v.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def signalOrStringValue(v: SignalRef): String = ^.asInstanceOf[js.Dynamic].applyDynamic("signalOrStringValue")(v.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def signalOrValueRef[T](value: T): ValueT[T] | SignalRef = ^.asInstanceOf[js.Dynamic].applyDynamic("signalOrValueRef")(value.asInstanceOf[js.Any]).asInstanceOf[ValueT[T] | SignalRef]
-  inline def signalOrValueRef[T](value: typings.vegaTypings.typesSpecExprMod.ExprRef): ValueT[T] | SignalRef = ^.asInstanceOf[js.Dynamic].applyDynamic("signalOrValueRef")(value.asInstanceOf[js.Any]).asInstanceOf[ValueT[T] | SignalRef]
-  inline def signalOrValueRef[T](value: SignalRef): ValueT[T] | SignalRef = ^.asInstanceOf[js.Dynamic].applyDynamic("signalOrValueRef")(value.asInstanceOf[js.Any]).asInstanceOf[ValueT[T] | SignalRef]
+  inline def signalOrValueRef[T](value: T): typings.vegaLite.anon.Value[T] | SignalRef = ^.asInstanceOf[js.Dynamic].applyDynamic("signalOrValueRef")(value.asInstanceOf[js.Any]).asInstanceOf[typings.vegaLite.anon.Value[T] | SignalRef]
+  inline def signalOrValueRef[T](value: typings.vegaTypings.typesSpecExprMod.ExprRef): typings.vegaLite.anon.Value[T] | SignalRef = ^.asInstanceOf[js.Dynamic].applyDynamic("signalOrValueRef")(value.asInstanceOf[js.Any]).asInstanceOf[typings.vegaLite.anon.Value[T] | SignalRef]
+  inline def signalOrValueRef[T](value: SignalRef): typings.vegaLite.anon.Value[T] | SignalRef = ^.asInstanceOf[js.Dynamic].applyDynamic("signalOrValueRef")(value.asInstanceOf[js.Any]).asInstanceOf[typings.vegaLite.anon.Value[T] | SignalRef]
   
   inline def signalOrValueRefWithCondition[V /* <: (Value[ExprRef | SignalRef]) | js.Array[Double] */](`val`: ConditionalAxisProperty[V, SignalRef | typings.vegaTypings.typesSpecExprMod.ExprRef]): ConditionalAxisProperty[V, SignalRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("signalOrValueRefWithCondition")(`val`.asInstanceOf[js.Any]).asInstanceOf[ConditionalAxisProperty[V, SignalRef]]
   

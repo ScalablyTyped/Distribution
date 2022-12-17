@@ -1,8 +1,11 @@
 package typings.elasticElasticsearch.anon
 
-import typings.elasticElasticsearch.libApiTypesMod.ExplainRequest
-import typings.elasticElasticsearch.libApiTypesMod.ExplainResponse
+import typings.elasticElasticsearch.libApiTypesMod.ClosePointInTimeRequest
+import typings.elasticElasticsearch.libApiTypesMod.ClosePointInTimeResponse
 import typings.elasticTransport.libTransportMod.TransportRequestOptions
+import typings.elasticTransport.libTransportMod.TransportRequestOptionsWithMeta
+import typings.elasticTransport.libTransportMod.TransportRequestOptionsWithOutMeta
+import typings.elasticTransport.libTypesMod.TransportResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,11 +13,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Fn0 extends StObject {
   
-  def apply[TDocument](params: ExplainRequest): js.Promise[ExplainResponse[TDocument]] = js.native
-  def apply[TDocument](params: ExplainRequest, options: TransportRequestOptions): js.Promise[ExplainResponse[TDocument]] = js.native
-  def apply[TDocument](params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.ExplainRequest): js.Promise[ExplainResponse[TDocument]] = js.native
-  def apply[TDocument](
-    params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.ExplainRequest,
+  def apply(params: ClosePointInTimeRequest): js.Promise[ClosePointInTimeResponse] = js.native
+  def apply(params: ClosePointInTimeRequest, options: TransportRequestOptions): js.Promise[ClosePointInTimeResponse] = js.native
+  def apply(params: ClosePointInTimeRequest, options: TransportRequestOptionsWithMeta): js.Promise[TransportResult[ClosePointInTimeResponse, Any]] = js.native
+  def apply(params: ClosePointInTimeRequest, options: TransportRequestOptionsWithOutMeta): js.Promise[ClosePointInTimeResponse] = js.native
+  def apply(params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.ClosePointInTimeRequest): js.Promise[ClosePointInTimeResponse] = js.native
+  def apply(
+    params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.ClosePointInTimeRequest,
     options: TransportRequestOptions
-  ): js.Promise[ExplainResponse[TDocument]] = js.native
+  ): js.Promise[ClosePointInTimeResponse] = js.native
+  def apply(
+    params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.ClosePointInTimeRequest,
+    options: TransportRequestOptionsWithMeta
+  ): js.Promise[TransportResult[ClosePointInTimeResponse, Any]] = js.native
+  def apply(
+    params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.ClosePointInTimeRequest,
+    options: TransportRequestOptionsWithOutMeta
+  ): js.Promise[ClosePointInTimeResponse] = js.native
 }

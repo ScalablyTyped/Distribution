@@ -14,13 +14,13 @@ trait PickImplsuccessPartialPicActive
   
   var error: js.UndefOr[String] = js.undefined
   
-  var success: String & js.UndefOr[String]
+  var success: String
   
   var warning: js.UndefOr[String] = js.undefined
 }
 object PickImplsuccessPartialPicActive {
   
-  inline def apply(success: String & js.UndefOr[String]): PickImplsuccessPartialPicActive = {
+  inline def apply(success: String): PickImplsuccessPartialPicActive = {
     val __obj = js.Dynamic.literal(success = success.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplsuccessPartialPicActive]
   }
@@ -35,7 +35,7 @@ object PickImplsuccessPartialPicActive {
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    inline def setSuccess(value: String & js.UndefOr[String]): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: String): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
     inline def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     

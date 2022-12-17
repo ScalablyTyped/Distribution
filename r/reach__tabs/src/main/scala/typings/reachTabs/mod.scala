@@ -83,15 +83,20 @@ object mod {
   @js.native
   object TabsKeyboardActivation extends StObject {
     
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[TabsKeyboardActivation & String] = js.native
+    
     @js.native
     sealed trait Auto
       extends StObject
          with TabsKeyboardActivation
+    /* "auto" */ val Auto: typings.reachTabs.mod.TabsKeyboardActivation.Auto & String = js.native
     
     @js.native
     sealed trait Manual
       extends StObject
          with TabsKeyboardActivation
+    /* "manual" */ val Manual: typings.reachTabs.mod.TabsKeyboardActivation.Manual & String = js.native
   }
   
   @js.native
@@ -100,15 +105,20 @@ object mod {
   @js.native
   object TabsOrientation extends StObject {
     
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[TabsOrientation & String] = js.native
+    
     @js.native
     sealed trait Horizontal
       extends StObject
          with TabsOrientation
+    /* "horizontal" */ val Horizontal: typings.reachTabs.mod.TabsOrientation.Horizontal & String = js.native
     
     @js.native
     sealed trait Vertical
       extends StObject
          with TabsOrientation
+    /* "vertical" */ val Vertical: typings.reachTabs.mod.TabsOrientation.Vertical & String = js.native
   }
   
   /**

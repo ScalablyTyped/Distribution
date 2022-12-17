@@ -311,7 +311,7 @@ trait OmitPdfViewsetAbsoluteBounds extends StObject {
       typings.tabris.global.tabris.widgets.PdfView, 
       set | typings.tabris.tabrisStrings.jsxAttributes
     ]
-  ]) & `12`
+  ]) & `4`
   
   var layoutData: LayoutDataValue
   
@@ -569,7 +569,7 @@ object OmitPdfViewsetAbsoluteBounds {
     jsxAttributes: (JSXAttributes[
       typings.tabris.global.tabris.widgets.PdfView, 
       Omit[typings.tabris.global.tabris.widgets.PdfView, set | jsxAttributes]
-    ]) & `12`,
+    ]) & `4`,
     layoutData: LayoutDataValue,
     left: ConstraintValue,
     off: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Unit], /* context */ js.UndefOr[js.Object]) => typings.tabris.global.tabris.widgets.PdfView,
@@ -741,7 +741,7 @@ object OmitPdfViewsetAbsoluteBounds {
       value: (JSXAttributes[
           typings.tabris.global.tabris.widgets.PdfView, 
           Omit[typings.tabris.global.tabris.widgets.PdfView, set | jsxAttributes]
-        ]) & `12`
+        ]) & `4`
     ): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     
     inline def setLayoutData(value: LayoutDataValue): Self = StObject.set(x, "layoutData", value.asInstanceOf[js.Any])

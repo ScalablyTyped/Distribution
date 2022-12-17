@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hapi__pinpoint"
-version := "2.0.0-db1630"
+version := "2.0.0-3bcf5c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

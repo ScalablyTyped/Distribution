@@ -1,6 +1,6 @@
 package typings.relayRuntime.libUtilReaderNodeMod
 
-import typings.relayRuntime.anon.Refetch
+import typings.relayRuntime.anon.ConnectionRefetch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,14 +10,14 @@ trait ReaderPaginationFragment
      with ReaderFragment {
   
   @JSName("metadata")
-  val metadata_ReaderPaginationFragment: Refetch
+  val metadata_ReaderPaginationFragment: ConnectionRefetch
 }
 object ReaderPaginationFragment {
   
   inline def apply(
     argumentDefinitions: js.Array[ReaderArgumentDefinition],
     kind: String,
-    metadata: Refetch,
+    metadata: ConnectionRefetch,
     name: String,
     selections: js.Array[ReaderSelection],
     `type`: String
@@ -29,6 +29,6 @@ object ReaderPaginationFragment {
   
   extension [Self <: ReaderPaginationFragment](x: Self) {
     
-    inline def setMetadata(value: Refetch): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: ConnectionRefetch): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
   }
 }

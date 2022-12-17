@@ -1,6 +1,6 @@
 package typings.elasticElasticsearch.libApiTypesWithBodyKeyMod
 
-import typings.elasticElasticsearch.anon.Exactbounds
+import typings.elasticElasticsearch.anon.Aggs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ trait SearchMvtRequest
      with SpecUtilsCommonQueryParameters {
   
   /** @deprecated The use of the 'body' key has been deprecated, move the nested keys to the top level object. */
-  var body: js.UndefOr[Exactbounds] = js.undefined
+  var body: js.UndefOr[Aggs] = js.undefined
   
   var field: Field
   
@@ -37,7 +37,7 @@ object SearchMvtRequest {
   
   extension [Self <: SearchMvtRequest](x: Self) {
     
-    inline def setBody(value: Exactbounds): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Aggs): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     

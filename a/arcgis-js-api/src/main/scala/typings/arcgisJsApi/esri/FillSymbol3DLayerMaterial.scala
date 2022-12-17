@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.HashMap
 import typings.arcgisJsApi.arcgisJsApiStrings.multiply
 import typings.arcgisJsApi.arcgisJsApiStrings.replace
 import typings.arcgisJsApi.arcgisJsApiStrings.tint
@@ -32,12 +31,8 @@ trait FillSymbol3DLayerMaterial
 }
 object FillSymbol3DLayerMaterial {
   
-  inline def apply(
-    set: (js.UndefOr[
-      js.Function2[/* propertyName */ String, /* value */ Any, FillSymbol3DLayerMaterial]
-    ]) & (js.UndefOr[js.Function1[/* props */ HashMap[Any], FillSymbol3DLayerMaterial]])
-  ): FillSymbol3DLayerMaterial = {
-    val __obj = js.Dynamic.literal(set = set.asInstanceOf[js.Any])
+  inline def apply(): FillSymbol3DLayerMaterial = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FillSymbol3DLayerMaterial]
   }
   

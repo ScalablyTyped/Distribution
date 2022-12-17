@@ -48,7 +48,7 @@ trait PickImplpushingPartialPic
   
   var performance: js.UndefOr[Boolean] = js.undefined
   
-  var pushing: Boolean & js.UndefOr[Boolean]
+  var pushing: Boolean
   
   var scrollContext: js.UndefOr[String | JQuery] = js.undefined
   
@@ -60,7 +60,7 @@ trait PickImplpushingPartialPic
 }
 object PickImplpushingPartialPic {
   
-  inline def apply(pushing: Boolean & js.UndefOr[Boolean]): PickImplpushingPartialPic = {
+  inline def apply(pushing: Boolean): PickImplpushingPartialPic = {
     val __obj = js.Dynamic.literal(pushing = pushing.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplpushingPartialPic]
   }
@@ -135,7 +135,7 @@ object PickImplpushingPartialPic {
     
     inline def setPerformanceUndefined: Self = StObject.set(x, "performance", js.undefined)
     
-    inline def setPushing(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "pushing", value.asInstanceOf[js.Any])
+    inline def setPushing(value: Boolean): Self = StObject.set(x, "pushing", value.asInstanceOf[js.Any])
     
     inline def setScrollContext(value: String | JQuery): Self = StObject.set(x, "scrollContext", value.asInstanceOf[js.Any])
     

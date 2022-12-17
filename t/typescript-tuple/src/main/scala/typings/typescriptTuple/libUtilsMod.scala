@@ -18,7 +18,7 @@ object libUtilsMod {
   
   type Concat[Left /* <: js.Array[Any] */, Right /* <: js.Array[Any] */] = /* import warning: importer.ImportType#apply c repeated non-array type: Left */ js.Array[Left]
   
-  type ConcatMultiple[TupleSet /* <: js.Array[js.Array[Any]] */] = /* import warning: importer.ImportType#apply Failed type conversion: typescript-tuple.anon.Empty<TupleSet>[TupleSet extends [] ? 'empty' : typescript-tuple.typescript-tuple/lib/utils.IsFinite<TupleSet, 'nonEmpty', 'infinite'>] */ js.Any
+  type ConcatMultiple[TupleSet /* <: js.Array[js.Array[Any]] */] = /* import warning: importer.ImportType#apply Failed type conversion: typescript-tuple.anon.Infinite<TupleSet>[TupleSet extends [] ? 'empty' : typescript-tuple.typescript-tuple/lib/utils.IsFinite<TupleSet, 'nonEmpty', 'infinite'>] */ js.Any
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
@@ -29,7 +29,7 @@ object libUtilsMod {
     */
   type Drop[Tuple /* <: js.Array[Any] */, Quantity /* <: Double */, Count /* <: js.Array[Any] */] = Tuple
   
-  type FillTuple[Tuple /* <: js.Array[Any] */, Replacement, Holder /* <: js.Array[Any] */] = /* import warning: importer.ImportType#apply Failed type conversion: typescript-tuple.anon.Infinite<Holder, Tuple, Replacement>[Tuple extends [] ? 'empty' : typescript-tuple.typescript-tuple/lib/utils.IsFinite<Tuple, 'nonEmpty', 'infinite'>] */ js.Any
+  type FillTuple[Tuple /* <: js.Array[Any] */, Replacement, Holder /* <: js.Array[Any] */] = /* import warning: importer.ImportType#apply Failed type conversion: typescript-tuple.anon.NonEmpty<Holder, Tuple, Replacement>[Tuple extends [] ? 'empty' : typescript-tuple.typescript-tuple/lib/utils.IsFinite<Tuple, 'nonEmpty', 'infinite'>] */ js.Any
   
   type FilterTuple[Tuple /* <: js.Array[Any] */, Mask] = ConcatMultiple[
     /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Tuple ]: Tuple[K] extends Mask? [Tuple[K]] : []} */ js.Any
@@ -62,7 +62,7 @@ object libUtilsMod {
     */
   type Last[Tuple /* <: js.Array[Any] */, Default] = Default
   
-  type LongestTuple[TupleSet /* <: js.Array[js.Array[Any]] */, Longest] = /* import warning: importer.ImportType#apply Failed type conversion: typescript-tuple.anon.NonEmpty<Longest, TupleSet>[TupleSet extends [] ? 'empty' : 'nonEmpty'] */ js.Any
+  type LongestTuple[TupleSet /* <: js.Array[js.Array[Any]] */, Longest] = /* import warning: importer.ImportType#apply Failed type conversion: typescript-tuple.anon.EmptyNonEmpty<Longest, TupleSet>[TupleSet extends [] ? 'empty' : 'nonEmpty'] */ js.Any
   
   type Prepend[Tuple /* <: js.Array[Any] */, Addend] = /* import warning: importer.ImportType#apply c repeated non-array type: Tuple */ js.Array[Tuple]
   
@@ -75,7 +75,7 @@ object libUtilsMod {
     */
   type Repeat[Type, Count /* <: Double */, Holder /* <: js.Array[Any] */] = js.Array[Type]
   
-  type Reverse[Tuple /* <: js.Array[Any] */, Prefix /* <: js.Array[Any] */] = /* import warning: importer.ImportType#apply Failed type conversion: typescript-tuple.anon.EmptyInfinite<Prefix, Tuple>[Tuple extends [any, ...std.Array<any>] ? typescript-tuple.typescript-tuple/lib/utils.IsFinite<Tuple, 'nonEmpty', 'infinite'> : 'empty'] */ js.Any
+  type Reverse[Tuple /* <: js.Array[Any] */, Prefix /* <: js.Array[Any] */] = /* import warning: importer.ImportType#apply Failed type conversion: typescript-tuple.anon.Empty<Prefix, Tuple>[Tuple extends [any, ...std.Array<any>] ? typescript-tuple.typescript-tuple/lib/utils.IsFinite<Tuple, 'nonEmpty', 'infinite'> : 'empty'] */ js.Any
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.

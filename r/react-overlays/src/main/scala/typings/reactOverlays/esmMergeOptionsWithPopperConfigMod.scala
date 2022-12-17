@@ -22,11 +22,11 @@ object esmMergeOptionsWithPopperConfigMod {
   
   inline def default(param0: Config): UsePopperOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[UsePopperOptions]
   
-  inline def toModifierArray(): js.Array[PartialModifieranyany] = ^.asInstanceOf[js.Dynamic].applyDynamic("toModifierArray")().asInstanceOf[js.Array[PartialModifieranyany]]
-  inline def toModifierArray(map: Modifiers): js.Array[PartialModifieranyany] = ^.asInstanceOf[js.Dynamic].applyDynamic("toModifierArray")(map.asInstanceOf[js.Any]).asInstanceOf[js.Array[PartialModifieranyany]]
+  inline def toModifierArray(): js.Array[PartialModifieranyanyData] = ^.asInstanceOf[js.Dynamic].applyDynamic("toModifierArray")().asInstanceOf[js.Array[PartialModifieranyanyData]]
+  inline def toModifierArray(map: Modifiers): js.Array[PartialModifieranyanyData] = ^.asInstanceOf[js.Dynamic].applyDynamic("toModifierArray")(map.asInstanceOf[js.Any]).asInstanceOf[js.Array[PartialModifieranyanyData]]
   
-  inline def toModifierMap(): Record[String, PartialModifieranyanyData] = ^.asInstanceOf[js.Dynamic].applyDynamic("toModifierMap")().asInstanceOf[Record[String, PartialModifieranyanyData]]
-  inline def toModifierMap(modifiers: Modifiers): Record[String, PartialModifieranyanyData] = ^.asInstanceOf[js.Dynamic].applyDynamic("toModifierMap")(modifiers.asInstanceOf[js.Any]).asInstanceOf[Record[String, PartialModifieranyanyData]]
+  inline def toModifierMap(): Record[String, PartialModifieranyany] = ^.asInstanceOf[js.Dynamic].applyDynamic("toModifierMap")().asInstanceOf[Record[String, PartialModifieranyany]]
+  inline def toModifierMap(modifiers: Modifiers): Record[String, PartialModifieranyany] = ^.asInstanceOf[js.Dynamic].applyDynamic("toModifierMap")(modifiers.asInstanceOf[js.Any]).asInstanceOf[Record[String, PartialModifieranyany]]
   
   trait Config extends StObject {
     

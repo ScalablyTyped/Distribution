@@ -67,14 +67,14 @@ object `@reactNavigationRoutersTypesMod` {
       ] = js.undefined
     
     val routes: js.Array[
-        (Omit[Route[String, js.UndefOr[js.Object]], typings.tuyaPanelKit.tuyaPanelKitStrings.key]) & `7`
+        (Omit[Route[String, js.UndefOr[js.Object]], typings.tuyaPanelKit.tuyaPanelKitStrings.key]) & `8`
       ]
     
     val `type`: js.UndefOr[String] = js.undefined
   }
   object InitialState {
     
-    inline def apply(routes: js.Array[(Omit[Route[String, js.UndefOr[js.Object]], key]) & `7`]): InitialState = {
+    inline def apply(routes: js.Array[(Omit[Route[String, js.UndefOr[js.Object]], key]) & `8`]): InitialState = {
       val __obj = js.Dynamic.literal(routes = routes.asInstanceOf[js.Any])
       __obj.asInstanceOf[InitialState]
     }
@@ -113,9 +113,9 @@ object `@reactNavigationRoutersTypesMod` {
             ])*
       ): Self = StObject.set(x, "routeNames", js.Array(value*))
       
-      inline def setRoutes(value: js.Array[(Omit[Route[String, js.UndefOr[js.Object]], key]) & `7`]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+      inline def setRoutes(value: js.Array[(Omit[Route[String, js.UndefOr[js.Object]], key]) & `8`]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
-      inline def setRoutesVarargs(value: ((Omit[Route[String, js.UndefOr[js.Object]], key]) & `7`)*): Self = StObject.set(x, "routes", js.Array(value*))
+      inline def setRoutesVarargs(value: ((Omit[Route[String, js.UndefOr[js.Object]], key]) & `8`)*): Self = StObject.set(x, "routes", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -164,7 +164,7 @@ object `@reactNavigationRoutersTypesMod` {
   type NavigationRoute[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] = (Route[
     Extract[RouteName, String], 
     /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ js.Any
-  ]) & `8`
+  ]) & `7`
   
   /* Inlined std.Readonly<{  key :string,   index :number,   routeNames :std.Array<std.Extract<keyof ParamList, string>>,   history :std.Array<unknown> | undefined,   routes :std.Array<tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.NavigationRoute<ParamList, keyof ParamList>>,   type :string,   stale :false}> */
   trait NavigationState[ParamList /* <: ParamListBase */] extends StObject {

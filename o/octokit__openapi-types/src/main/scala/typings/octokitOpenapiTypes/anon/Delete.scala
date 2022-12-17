@@ -11,26 +11,26 @@ trait Delete extends StObject {
     *
     * You must use a [JWT](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     */
-  var delete: Responses236
+  var delete: Responses6
   
   /**
     * Enables an authenticated GitHub App to find an installation's information using the installation id.
     *
     * You must use a [JWT](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     */
-  var get: ParametersPath234
+  var get: ParametersPathInstallationid
 }
 object Delete {
   
-  inline def apply(delete: Responses236, get: ParametersPath234): Delete = {
+  inline def apply(delete: Responses6, get: ParametersPathInstallationid): Delete = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Delete]
   }
   
   extension [Self <: Delete](x: Self) {
     
-    inline def setDelete(value: Responses236): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: Responses6): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    inline def setGet(value: ParametersPath234): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: ParametersPathInstallationid): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
   }
 }

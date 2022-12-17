@@ -180,22 +180,22 @@ object anon {
   
   trait From extends StObject {
     
-    def from(value: Any): Any
+    var from: String
     
-    def to(value: Any, helpers: CustomHelpers[Any]): Any
+    var to: String
   }
   object From {
     
-    inline def apply(from: Any => Any, to: (Any, CustomHelpers[Any]) => Any): From = {
-      val __obj = js.Dynamic.literal(from = js.Any.fromFunction1(from), to = js.Any.fromFunction2(to))
+    inline def apply(from: String, to: String): From = {
+      val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[From]
     }
     
     extension [Self <: From](x: Self) {
       
-      inline def setFrom(value: Any => Any): Self = StObject.set(x, "from", js.Any.fromFunction1(value))
+      inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      inline def setTo(value: (Any, CustomHelpers[Any]) => Any): Self = StObject.set(x, "to", js.Any.fromFunction2(value))
+      inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }
   }
   
@@ -265,22 +265,22 @@ object anon {
   
   trait To extends StObject {
     
-    var from: String
+    def from(value: Any): Any
     
-    var to: String
+    def to(value: Any, helpers: CustomHelpers[Any]): Any
   }
   object To {
     
-    inline def apply(from: String, to: String): To = {
-      val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
+    inline def apply(from: Any => Any, to: (Any, CustomHelpers[Any]) => Any): To = {
+      val __obj = js.Dynamic.literal(from = js.Any.fromFunction1(from), to = js.Any.fromFunction2(to))
       __obj.asInstanceOf[To]
     }
     
     extension [Self <: To](x: Self) {
       
-      inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: Any => Any): Self = StObject.set(x, "from", js.Any.fromFunction1(value))
       
-      inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: (Any, CustomHelpers[Any]) => Any): Self = StObject.set(x, "to", js.Any.fromFunction2(value))
     }
   }
 }

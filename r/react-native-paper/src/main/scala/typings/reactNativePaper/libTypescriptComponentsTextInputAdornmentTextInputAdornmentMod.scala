@@ -6,7 +6,7 @@ import typings.reactNative.mod.Animated.Value
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNativePaper.anon.Affix
-import typings.reactNativePaper.anon.LeftRight
+import typings.reactNativePaper.anon.Right
 import typings.reactNativePaper.anon.`28`
 import typings.reactNativePaper.libTypescriptComponentsTextInputAdornmentTypesMod.AdornmentConfig
 import typings.reactNativePaper.libTypescriptComponentsTextInputAdornmentTypesMod.AdornmentStyleAdjustmentForNativeInput
@@ -24,7 +24,7 @@ object libTypescriptComponentsTextInputAdornmentTextInputAdornmentMod {
   @js.native
   val default: FunctionComponent[TextInputAdornmentProps] = js.native
   
-  inline def getAdornmentConfig(param0: `28`): js.Array[AdornmentConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAdornmentConfig")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[AdornmentConfig]]
+  inline def getAdornmentConfig(param0: Right): js.Array[AdornmentConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAdornmentConfig")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[AdornmentConfig]]
   
   inline def getAdornmentStyleAdjustmentForNativeInput(param0: typings.reactNativePaper.anon.AdornmentConfig): AdornmentStyleAdjustmentForNativeInput | js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getAdornmentStyleAdjustmentForNativeInput")(param0.asInstanceOf[js.Any]).asInstanceOf[AdornmentStyleAdjustmentForNativeInput | js.Object]
   
@@ -40,7 +40,7 @@ object libTypescriptComponentsTextInputAdornmentTextInputAdornmentMod {
     
     var maxFontSizeMultiplier: js.UndefOr[Double | Null] = js.undefined
     
-    var onAffixChange: LeftRight
+    var onAffixChange: `28`
     
     var paddingHorizontal: js.UndefOr[Double | String] = js.undefined
     
@@ -58,7 +58,7 @@ object libTypescriptComponentsTextInputAdornmentTextInputAdornmentMod {
       adornmentConfig: js.Array[AdornmentConfig],
       forceFocus: () => Unit,
       isTextInputFocused: Boolean,
-      onAffixChange: LeftRight,
+      onAffixChange: `28`,
       topPosition: Affix
     ): TextInputAdornmentProps = {
       val __obj = js.Dynamic.literal(adornmentConfig = adornmentConfig.asInstanceOf[js.Any], forceFocus = js.Any.fromFunction0(forceFocus), isTextInputFocused = isTextInputFocused.asInstanceOf[js.Any], onAffixChange = onAffixChange.asInstanceOf[js.Any], topPosition = topPosition.asInstanceOf[js.Any])
@@ -85,7 +85,7 @@ object libTypescriptComponentsTextInputAdornmentTextInputAdornmentMod {
       
       inline def setMaxFontSizeMultiplierUndefined: Self = StObject.set(x, "maxFontSizeMultiplier", js.undefined)
       
-      inline def setOnAffixChange(value: LeftRight): Self = StObject.set(x, "onAffixChange", value.asInstanceOf[js.Any])
+      inline def setOnAffixChange(value: `28`): Self = StObject.set(x, "onAffixChange", value.asInstanceOf[js.Any])
       
       inline def setPaddingHorizontal(value: Double | String): Self = StObject.set(x, "paddingHorizontal", value.asInstanceOf[js.Any])
       

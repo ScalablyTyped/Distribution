@@ -1,7 +1,5 @@
 package typings.downscale
 
-import typings.downscale.downscaleBooleans.`false`
-import typings.downscale.downscaleBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +13,7 @@ object anon {
     
     var quality: js.UndefOr[Double] = js.undefined
     
-    var returnBlob: js.UndefOr[Boolean] & `true`
+    var returnBlob: js.UndefOr[Boolean] = js.undefined
     
     var returnCanvas: js.UndefOr[Boolean] = js.undefined
     
@@ -25,8 +23,8 @@ object anon {
   }
   object DownscaleOptionsreturnBlo {
     
-    inline def apply(returnBlob: js.UndefOr[Boolean] & `true`): DownscaleOptionsreturnBlo = {
-      val __obj = js.Dynamic.literal(returnBlob = returnBlob.asInstanceOf[js.Any])
+    inline def apply(): DownscaleOptionsreturnBlo = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DownscaleOptionsreturnBlo]
     }
     
@@ -40,7 +38,9 @@ object anon {
       
       inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
       
-      inline def setReturnBlob(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "returnBlob", value.asInstanceOf[js.Any])
+      inline def setReturnBlob(value: Boolean): Self = StObject.set(x, "returnBlob", value.asInstanceOf[js.Any])
+      
+      inline def setReturnBlobUndefined: Self = StObject.set(x, "returnBlob", js.undefined)
       
       inline def setReturnCanvas(value: Boolean): Self = StObject.set(x, "returnCanvas", value.asInstanceOf[js.Any])
       
@@ -63,9 +63,9 @@ object anon {
     
     var quality: js.UndefOr[Double] = js.undefined
     
-    var returnBlob: js.UndefOr[Boolean] & js.UndefOr[`false`]
+    var returnBlob: js.UndefOr[Boolean] = js.undefined
     
-    var returnCanvas: js.UndefOr[Boolean] & js.UndefOr[`false`]
+    var returnCanvas: js.UndefOr[Boolean] = js.undefined
     
     var sourceX: js.UndefOr[Double] = js.undefined
     
@@ -73,11 +73,8 @@ object anon {
   }
   object DownscaleOptionsreturnBloImageType {
     
-    inline def apply(
-      returnBlob: js.UndefOr[Boolean] & js.UndefOr[`false`],
-      returnCanvas: js.UndefOr[Boolean] & js.UndefOr[`false`]
-    ): DownscaleOptionsreturnBloImageType = {
-      val __obj = js.Dynamic.literal(returnBlob = returnBlob.asInstanceOf[js.Any], returnCanvas = returnCanvas.asInstanceOf[js.Any])
+    inline def apply(): DownscaleOptionsreturnBloImageType = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DownscaleOptionsreturnBloImageType]
     }
     
@@ -91,9 +88,13 @@ object anon {
       
       inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
       
-      inline def setReturnBlob(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "returnBlob", value.asInstanceOf[js.Any])
+      inline def setReturnBlob(value: Boolean): Self = StObject.set(x, "returnBlob", value.asInstanceOf[js.Any])
       
-      inline def setReturnCanvas(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "returnCanvas", value.asInstanceOf[js.Any])
+      inline def setReturnBlobUndefined: Self = StObject.set(x, "returnBlob", js.undefined)
+      
+      inline def setReturnCanvas(value: Boolean): Self = StObject.set(x, "returnCanvas", value.asInstanceOf[js.Any])
+      
+      inline def setReturnCanvasUndefined: Self = StObject.set(x, "returnCanvas", js.undefined)
       
       inline def setSourceX(value: Double): Self = StObject.set(x, "sourceX", value.asInstanceOf[js.Any])
       
@@ -114,7 +115,7 @@ object anon {
     
     var returnBlob: js.UndefOr[Boolean] = js.undefined
     
-    var returnCanvas: js.UndefOr[Boolean] & `true`
+    var returnCanvas: js.UndefOr[Boolean] = js.undefined
     
     var sourceX: js.UndefOr[Double] = js.undefined
     
@@ -122,8 +123,8 @@ object anon {
   }
   object DownscaleOptionsreturnCan {
     
-    inline def apply(returnCanvas: js.UndefOr[Boolean] & `true`): DownscaleOptionsreturnCan = {
-      val __obj = js.Dynamic.literal(returnCanvas = returnCanvas.asInstanceOf[js.Any])
+    inline def apply(): DownscaleOptionsreturnCan = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DownscaleOptionsreturnCan]
     }
     
@@ -141,7 +142,9 @@ object anon {
       
       inline def setReturnBlobUndefined: Self = StObject.set(x, "returnBlob", js.undefined)
       
-      inline def setReturnCanvas(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "returnCanvas", value.asInstanceOf[js.Any])
+      inline def setReturnCanvas(value: Boolean): Self = StObject.set(x, "returnCanvas", value.asInstanceOf[js.Any])
+      
+      inline def setReturnCanvasUndefined: Self = StObject.set(x, "returnCanvas", js.undefined)
       
       inline def setSourceX(value: Double): Self = StObject.set(x, "sourceX", value.asInstanceOf[js.Any])
       

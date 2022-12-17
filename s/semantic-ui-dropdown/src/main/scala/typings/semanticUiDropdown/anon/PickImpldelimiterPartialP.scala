@@ -15,7 +15,7 @@ trait PickImpldelimiterPartialP
   
   var deleteKey: js.UndefOr[Double] = js.undefined
   
-  var delimiter: (Double | `false`) & (js.UndefOr[Double | `false`])
+  var delimiter: Double | `false`
   
   var downArrow: js.UndefOr[Double] = js.undefined
   
@@ -35,7 +35,7 @@ trait PickImpldelimiterPartialP
 }
 object PickImpldelimiterPartialP {
   
-  inline def apply(delimiter: (Double | `false`) & (js.UndefOr[Double | `false`])): PickImpldelimiterPartialP = {
+  inline def apply(delimiter: Double | `false`): PickImpldelimiterPartialP = {
     val __obj = js.Dynamic.literal(delimiter = delimiter.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldelimiterPartialP]
   }
@@ -50,7 +50,7 @@ object PickImpldelimiterPartialP {
     
     inline def setDeleteKeyUndefined: Self = StObject.set(x, "deleteKey", js.undefined)
     
-    inline def setDelimiter(value: (Double | `false`) & (js.UndefOr[Double | `false`])): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+    inline def setDelimiter(value: Double | `false`): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     
     inline def setDownArrow(value: Double): Self = StObject.set(x, "downArrow", value.asInstanceOf[js.Any])
     

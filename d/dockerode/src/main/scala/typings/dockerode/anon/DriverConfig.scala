@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DriverConfig extends StObject {
   
-  var DriverConfig: Options
+  var DriverConfig: Name
   
   var Labels: StringDictionary[String]
   
@@ -15,14 +15,14 @@ trait DriverConfig extends StObject {
 }
 object DriverConfig {
   
-  inline def apply(DriverConfig: Options, Labels: StringDictionary[String], NoCopy: Boolean): DriverConfig = {
+  inline def apply(DriverConfig: Name, Labels: StringDictionary[String], NoCopy: Boolean): DriverConfig = {
     val __obj = js.Dynamic.literal(DriverConfig = DriverConfig.asInstanceOf[js.Any], Labels = Labels.asInstanceOf[js.Any], NoCopy = NoCopy.asInstanceOf[js.Any])
     __obj.asInstanceOf[DriverConfig]
   }
   
   extension [Self <: DriverConfig](x: Self) {
     
-    inline def setDriverConfig(value: Options): Self = StObject.set(x, "DriverConfig", value.asInstanceOf[js.Any])
+    inline def setDriverConfig(value: Name): Self = StObject.set(x, "DriverConfig", value.asInstanceOf[js.Any])
     
     inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "Labels", value.asInstanceOf[js.Any])
     

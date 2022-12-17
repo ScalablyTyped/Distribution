@@ -6,18 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RequestBodyContentApplicationjsonKeyidSelectedrepositoryids extends StObject {
   
-  var parameters: PathSecretname
+  var parameters: Path353
   
   var requestBody: ContentApplicationjsonKeyidSelectedrepositoryids
   
-  var responses: `201Content4`
+  var responses: `201Content40404`
 }
 object RequestBodyContentApplicationjsonKeyidSelectedrepositoryids {
   
   inline def apply(
-    parameters: PathSecretname,
+    parameters: Path353,
     requestBody: ContentApplicationjsonKeyidSelectedrepositoryids,
-    responses: `201Content4`
+    responses: `201Content40404`
   ): RequestBodyContentApplicationjsonKeyidSelectedrepositoryids = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyContentApplicationjsonKeyidSelectedrepositoryids]
@@ -25,10 +25,10 @@ object RequestBodyContentApplicationjsonKeyidSelectedrepositoryids {
   
   extension [Self <: RequestBodyContentApplicationjsonKeyidSelectedrepositoryids](x: Self) {
     
-    inline def setParameters(value: PathSecretname): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: Path353): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setRequestBody(value: ContentApplicationjsonKeyidSelectedrepositoryids): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `201Content4`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `201Content40404`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

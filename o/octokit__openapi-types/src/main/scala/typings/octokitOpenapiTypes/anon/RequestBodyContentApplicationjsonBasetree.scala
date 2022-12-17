@@ -6,29 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RequestBodyContentApplicationjsonBasetree extends StObject {
   
-  var parameters: `76`
+  var parameters: `135`
   
   var requestBody: ContentApplicationjsonBasetree
   
-  var responses: `201ContentApplicationjsonTruncated`
+  var responses: `201Content239`
 }
 object RequestBodyContentApplicationjsonBasetree {
   
-  inline def apply(
-    parameters: `76`,
-    requestBody: ContentApplicationjsonBasetree,
-    responses: `201ContentApplicationjsonTruncated`
-  ): RequestBodyContentApplicationjsonBasetree = {
+  inline def apply(parameters: `135`, requestBody: ContentApplicationjsonBasetree, responses: `201Content239`): RequestBodyContentApplicationjsonBasetree = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyContentApplicationjsonBasetree]
   }
   
   extension [Self <: RequestBodyContentApplicationjsonBasetree](x: Self) {
     
-    inline def setParameters(value: `76`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: `135`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setRequestBody(value: ContentApplicationjsonBasetree): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `201ContentApplicationjsonTruncated`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `201Content239`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

@@ -1,7 +1,7 @@
 package typings.ckeditorCkeditor5Engine
 
 import typings.ckeditorCkeditor5Engine.anon.NewValue
-import typings.ckeditorCkeditor5Engine.anon.`13`
+import typings.ckeditorCkeditor5Engine.anon.`12`
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.addAttribute
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.changeAttribute
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.removeAttribute
@@ -101,7 +101,7 @@ object srcModelOperationAttributeoperationMod {
       * Custom toJSON method to solve child-parent circular dependencies.
       */
     /* CompleteClass */
-    override def toJSON(): `13` = js.native
+    override def toJSON(): `12` = js.native
     
     /**
       * Operation type.
@@ -178,7 +178,7 @@ object srcModelOperationAttributeoperationMod {
       newValue: /* import warning: importer.ImportType#apply Failed type conversion: N extends undefined ? null : N */ js.Any,
       oldValue: /* import warning: importer.ImportType#apply Failed type conversion: O extends undefined ? null : O */ js.Any,
       range: typings.ckeditorCkeditor5Engine.srcModelRangeMod.default,
-      toJSON: () => `13`,
+      toJSON: () => `12`,
       `type`: addAttribute | removeAttribute | changeAttribute
     ): AttributeOperation[O, N] = {
       val __obj = js.Dynamic.literal(getReversed = js.Any.fromFunction0(getReversed), isDocumentOperation = isDocumentOperation.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), baseVersion = null, batch = null)

@@ -15,25 +15,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait `0` extends StObject {
-    
-    var context: js.UndefOr[Any] = js.undefined
-  }
-  object `0` {
-    
-    inline def apply(): `0` = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[`0`]
-    }
-    
-    extension [Self <: `0`](x: Self) {
-      
-      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
-      
-      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
-    }
-  }
-  
   trait ApiNamespace extends StObject {
     
     var apiNamespace: js.UndefOr[String] = js.undefined
@@ -113,8 +94,6 @@ object anon {
   trait Context extends StObject {
     
     var context: js.UndefOr[Any] = js.undefined
-    
-    var key: js.UndefOr[String] = js.undefined
   }
   object Context {
     
@@ -128,10 +107,6 @@ object anon {
       inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
-      
-      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
-      
-      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     }
   }
   
@@ -139,15 +114,11 @@ object anon {
     extends StObject
        with /* key */ StringDictionary[Any] {
     
-    var disableSortingHarEntries: js.UndefOr[Boolean] = js.undefined
+    var fetch: js.UndefOr[Context] = js.undefined
     
-    var fs: js.UndefOr[RecordingsDir] = js.undefined
+    var puppeteer: js.UndefOr[Page] = js.undefined
     
-    var keepUnusedRequests: js.UndefOr[Boolean] = js.undefined
-    
-    var `local-storage`: js.UndefOr[Context] = js.undefined
-    
-    var rest: js.UndefOr[ApiNamespace] = js.undefined
+    var xhr: js.UndefOr[Context] = js.undefined
   }
   object Dictkey {
     
@@ -157,6 +128,43 @@ object anon {
     }
     
     extension [Self <: Dictkey](x: Self) {
+      
+      inline def setFetch(value: Context): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
+      
+      inline def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
+      
+      inline def setPuppeteer(value: Page): Self = StObject.set(x, "puppeteer", value.asInstanceOf[js.Any])
+      
+      inline def setPuppeteerUndefined: Self = StObject.set(x, "puppeteer", js.undefined)
+      
+      inline def setXhr(value: Context): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+      
+      inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
+    }
+  }
+  
+  trait DisableSortingHarEntries
+    extends StObject
+       with /* key */ StringDictionary[Any] {
+    
+    var disableSortingHarEntries: js.UndefOr[Boolean] = js.undefined
+    
+    var fs: js.UndefOr[RecordingsDir] = js.undefined
+    
+    var keepUnusedRequests: js.UndefOr[Boolean] = js.undefined
+    
+    var `local-storage`: js.UndefOr[Key] = js.undefined
+    
+    var rest: js.UndefOr[ApiNamespace] = js.undefined
+  }
+  object DisableSortingHarEntries {
+    
+    inline def apply(): DisableSortingHarEntries = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DisableSortingHarEntries]
+    }
+    
+    extension [Self <: DisableSortingHarEntries](x: Self) {
       
       inline def setDisableSortingHarEntries(value: Boolean): Self = StObject.set(x, "disableSortingHarEntries", value.asInstanceOf[js.Any])
       
@@ -170,7 +178,7 @@ object anon {
       
       inline def setKeepUnusedRequestsUndefined: Self = StObject.set(x, "keepUnusedRequests", js.undefined)
       
-      inline def `setLocal-storage`(value: Context): Self = StObject.set(x, "local-storage", value.asInstanceOf[js.Any])
+      inline def `setLocal-storage`(value: Key): Self = StObject.set(x, "local-storage", value.asInstanceOf[js.Any])
       
       inline def `setLocal-storageUndefined`: Self = StObject.set(x, "local-storage", js.undefined)
       
@@ -196,39 +204,6 @@ object anon {
       inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
       inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
-    }
-  }
-  
-  trait Fetch
-    extends StObject
-       with /* key */ StringDictionary[Any] {
-    
-    var fetch: js.UndefOr[`0`] = js.undefined
-    
-    var puppeteer: js.UndefOr[Page] = js.undefined
-    
-    var xhr: js.UndefOr[`0`] = js.undefined
-  }
-  object Fetch {
-    
-    inline def apply(): Fetch = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Fetch]
-    }
-    
-    extension [Self <: Fetch](x: Self) {
-      
-      inline def setFetch(value: `0`): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
-      
-      inline def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
-      
-      inline def setPuppeteer(value: Page): Self = StObject.set(x, "puppeteer", value.asInstanceOf[js.Any])
-      
-      inline def setPuppeteerUndefined: Self = StObject.set(x, "puppeteer", js.undefined)
-      
-      inline def setXhr(value: `0`): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
-      
-      inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
     }
   }
   
@@ -309,6 +284,31 @@ object anon {
     }
   }
   
+  trait Key extends StObject {
+    
+    var context: js.UndefOr[Any] = js.undefined
+    
+    var key: js.UndefOr[String] = js.undefined
+  }
+  object Key {
+    
+    inline def apply(): Key = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Key]
+    }
+    
+    extension [Self <: Key](x: Self) {
+      
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    }
+  }
+  
   trait Page extends StObject {
     
     var page: js.UndefOr[Any] = js.undefined
@@ -339,7 +339,7 @@ object anon {
   /* Inlined std.Partial<@pollyjs/core.@pollyjs/core.PollyConfig> */
   trait PartialPollyConfig extends StObject {
     
-    var adapterOptions: js.UndefOr[Fetch] = js.undefined
+    var adapterOptions: js.UndefOr[Dictkey] = js.undefined
     
     var adapters: js.UndefOr[
         js.Array[
@@ -363,7 +363,7 @@ object anon {
     
     var persister: js.UndefOr[String | Newable[default[js.Object]]] = js.undefined
     
-    var persisterOptions: js.UndefOr[Dictkey] = js.undefined
+    var persisterOptions: js.UndefOr[DisableSortingHarEntries] = js.undefined
     
     var recordFailedRequests: js.UndefOr[Boolean] = js.undefined
     
@@ -382,7 +382,7 @@ object anon {
     
     extension [Self <: PartialPollyConfig](x: Self) {
       
-      inline def setAdapterOptions(value: Fetch): Self = StObject.set(x, "adapterOptions", value.asInstanceOf[js.Any])
+      inline def setAdapterOptions(value: Dictkey): Self = StObject.set(x, "adapterOptions", value.asInstanceOf[js.Any])
       
       inline def setAdapterOptionsUndefined: Self = StObject.set(x, "adapterOptions", js.undefined)
       
@@ -430,7 +430,7 @@ object anon {
       
       inline def setPersister(value: String | Newable[default[js.Object]]): Self = StObject.set(x, "persister", value.asInstanceOf[js.Any])
       
-      inline def setPersisterOptions(value: Dictkey): Self = StObject.set(x, "persisterOptions", value.asInstanceOf[js.Any])
+      inline def setPersisterOptions(value: DisableSortingHarEntries): Self = StObject.set(x, "persisterOptions", value.asInstanceOf[js.Any])
       
       inline def setPersisterOptionsUndefined: Self = StObject.set(x, "persisterOptions", js.undefined)
       

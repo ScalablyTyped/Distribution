@@ -56,7 +56,7 @@ object themeAugmentationPropsMod {
     var MuiTabPanel: TabPanelProps
     
     var MuiToggleButton: ToggleButtonProps[
-        /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/lab.anon.ClassKey['defaultComponent'] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/lab.anon.DefaultComponent['defaultComponent'] */ js.Any, 
         js.Object
       ]
     
@@ -83,7 +83,7 @@ object themeAugmentationPropsMod {
       MuiTabList: TabListProps[ExtendButtonBase[ButtonBaseTypeMap[js.Object, button]], js.Object],
       MuiTabPanel: TabPanelProps,
       MuiToggleButton: ToggleButtonProps[
-          /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/lab.anon.ClassKey['defaultComponent'] */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/lab.anon.DefaultComponent['defaultComponent'] */ js.Any, 
           js.Object
         ],
       MuiToggleButtonGroup: ToggleButtonGroupProps,
@@ -124,7 +124,7 @@ object themeAugmentationPropsMod {
       
       inline def setMuiToggleButton(
         value: ToggleButtonProps[
-              /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/lab.anon.ClassKey['defaultComponent'] */ js.Any, 
+              /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/lab.anon.DefaultComponent['defaultComponent'] */ js.Any, 
               js.Object
             ]
       ): Self = StObject.set(x, "MuiToggleButton", value.asInstanceOf[js.Any])

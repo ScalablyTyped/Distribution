@@ -1,14 +1,14 @@
 package typings.c3.mod
 
 import typings.c3.anon.HeightNumber
-import typings.c3.anon.`5`
+import typings.c3.anon.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SubchartOptions extends StObject {
   
-  var axis: js.UndefOr[`5`] = js.undefined
+  var axis: js.UndefOr[`2`] = js.undefined
   
   /**
     * Set callback for brush event.
@@ -33,7 +33,7 @@ object SubchartOptions {
   
   extension [Self <: SubchartOptions](x: Self) {
     
-    inline def setAxis(value: `5`): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: `2`): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
     inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     

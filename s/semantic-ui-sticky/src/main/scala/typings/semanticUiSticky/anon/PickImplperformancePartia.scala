@@ -46,7 +46,7 @@ trait PickImplperformancePartia
   
   var onUnstick: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
-  var performance: Boolean & js.UndefOr[Boolean]
+  var performance: Boolean
   
   var pushing: js.UndefOr[Boolean] = js.undefined
   
@@ -60,7 +60,7 @@ trait PickImplperformancePartia
 }
 object PickImplperformancePartia {
   
-  inline def apply(performance: Boolean & js.UndefOr[Boolean]): PickImplperformancePartia = {
+  inline def apply(performance: Boolean): PickImplperformancePartia = {
     val __obj = js.Dynamic.literal(performance = performance.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplperformancePartia]
   }
@@ -131,7 +131,7 @@ object PickImplperformancePartia {
     
     inline def setOnUnstickUndefined: Self = StObject.set(x, "onUnstick", js.undefined)
     
-    inline def setPerformance(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
+    inline def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
     
     inline def setPushing(value: Boolean): Self = StObject.set(x, "pushing", value.asInstanceOf[js.Any])
     

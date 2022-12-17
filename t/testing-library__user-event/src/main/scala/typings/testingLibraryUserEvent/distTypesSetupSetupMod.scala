@@ -42,15 +42,15 @@ object distTypesSetupSetupMod {
   inline def createConfig(options: Options, defaults: RequiredOptions): Config = (^.asInstanceOf[js.Dynamic].applyDynamic("createConfig")(options.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Config]
   inline def createConfig(options: Options, defaults: RequiredOptions, node: Node): Config = (^.asInstanceOf[js.Dynamic].applyDynamic("createConfig")(options.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Config]
   
-  inline def createInstance(config: Config): Api = ^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(config.asInstanceOf[js.Any]).asInstanceOf[Api]
-  inline def createInstance(config: Config, system: System): Api = (^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(config.asInstanceOf[js.Any], system.asInstanceOf[js.Any])).asInstanceOf[Api]
+  inline def createInstance(config: Config): typings.testingLibraryUserEvent.anon.Instance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(config.asInstanceOf[js.Any]).asInstanceOf[typings.testingLibraryUserEvent.anon.Instance]
+  inline def createInstance(config: Config, system: System): typings.testingLibraryUserEvent.anon.Instance = (^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(config.asInstanceOf[js.Any], system.asInstanceOf[js.Any])).asInstanceOf[typings.testingLibraryUserEvent.anon.Instance]
   
-  inline def setupDirect(): typings.testingLibraryUserEvent.anon.System = ^.asInstanceOf[js.Dynamic].applyDynamic("setupDirect")().asInstanceOf[typings.testingLibraryUserEvent.anon.System]
+  inline def setupDirect(): Api = ^.asInstanceOf[js.Dynamic].applyDynamic("setupDirect")().asInstanceOf[Api]
   inline def setupDirect(param0: Unit, // backward-compatibility
-  node: Node): typings.testingLibraryUserEvent.anon.System = (^.asInstanceOf[js.Dynamic].applyDynamic("setupDirect")(param0.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[typings.testingLibraryUserEvent.anon.System]
-  inline def setupDirect(param0: DirectOptionskeyboardStat): typings.testingLibraryUserEvent.anon.System = ^.asInstanceOf[js.Dynamic].applyDynamic("setupDirect")(param0.asInstanceOf[js.Any]).asInstanceOf[typings.testingLibraryUserEvent.anon.System]
+  node: Node): Api = (^.asInstanceOf[js.Dynamic].applyDynamic("setupDirect")(param0.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Api]
+  inline def setupDirect(param0: DirectOptionskeyboardStat): Api = ^.asInstanceOf[js.Dynamic].applyDynamic("setupDirect")(param0.asInstanceOf[js.Any]).asInstanceOf[Api]
   inline def setupDirect(param0: DirectOptionskeyboardStat, // backward-compatibility
-  node: Node): typings.testingLibraryUserEvent.anon.System = (^.asInstanceOf[js.Dynamic].applyDynamic("setupDirect")(param0.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[typings.testingLibraryUserEvent.anon.System]
+  node: Node): Api = (^.asInstanceOf[js.Dynamic].applyDynamic("setupDirect")(param0.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Api]
   
   inline def setupMain(): UserEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("setupMain")().asInstanceOf[UserEvent]
   inline def setupMain(options: Options): UserEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("setupMain")(options.asInstanceOf[js.Any]).asInstanceOf[UserEvent]

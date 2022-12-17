@@ -30,6 +30,50 @@ object libSimpleLayoutColumnMod {
   @js.native
   val ^ : js.Any = js.native
   
+  object TextAligns {
+    
+    @JSImport("@nginstack/web-framework/lib/simple-layout/Column", "TextAligns.CENTER")
+    @js.native
+    val CENTER: String = js.native
+    
+    @JSImport("@nginstack/web-framework/lib/simple-layout/Column", "TextAligns.INHERIT")
+    @js.native
+    val INHERIT: String = js.native
+    
+    @JSImport("@nginstack/web-framework/lib/simple-layout/Column", "TextAligns.JUSTIFY")
+    @js.native
+    val JUSTIFY: String = js.native
+    
+    @JSImport("@nginstack/web-framework/lib/simple-layout/Column", "TextAligns.LEFT")
+    @js.native
+    val LEFT: String = js.native
+    
+    @JSImport("@nginstack/web-framework/lib/simple-layout/Column", "TextAligns.RIGHT")
+    @js.native
+    val RIGHT: String = js.native
+  }
+  type TextAligns = String
+  
+  object VerticalAligns {
+    
+    @JSImport("@nginstack/web-framework/lib/simple-layout/Column", "VerticalAligns.BASELINE")
+    @js.native
+    val BASELINE: String = js.native
+    
+    @JSImport("@nginstack/web-framework/lib/simple-layout/Column", "VerticalAligns.BOTTOM")
+    @js.native
+    val BOTTOM: String = js.native
+    
+    @JSImport("@nginstack/web-framework/lib/simple-layout/Column", "VerticalAligns.MIDDLE")
+    @js.native
+    val MIDDLE: String = js.native
+    
+    @JSImport("@nginstack/web-framework/lib/simple-layout/Column", "VerticalAligns.TOP")
+    @js.native
+    val TOP: String = js.native
+  }
+  type VerticalAligns = String
+  
   type AngleFormat = /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof imported_AngleFormat */ Any
   
   @js.native
@@ -199,8 +243,4 @@ object libSimpleLayoutColumnMod {
   type Link = typings.nginstackWebFramework.libAnchorLinkMod.^
   
   type LongitudeFormat = /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof imported_LongitudeFormat */ Any
-  
-  type TextAligns = String
-  
-  type VerticalAligns = String
 }

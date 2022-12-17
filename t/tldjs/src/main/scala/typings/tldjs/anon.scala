@@ -9,54 +9,30 @@ object anon {
   
   trait Domain extends StObject {
     
-    var domain: ReturnType[
-        /* import warning: importer.ImportType#apply Failed type conversion: typeof getDomain */ js.Any
-      ]
+    var domain: ReturnType[js.Function1[/* host */ String, String | Null]]
     
-    var hostname: ReturnType[
-        /* import warning: importer.ImportType#apply Failed type conversion: typeof extractHostname */ js.Any
-      ]
+    var hostname: ReturnType[js.Function1[/* host */ String, String | Null]]
     
     var isIp: Boolean
     
-    var isValid: ReturnType[
-        /* import warning: importer.ImportType#apply Failed type conversion: typeof isValid */ js.Any
-      ]
+    var isValid: ReturnType[js.Function1[/* host */ String, Boolean]]
     
-    var publicSuffix: ReturnType[
-        /* import warning: importer.ImportType#apply Failed type conversion: typeof getPublicSuffix */ js.Any
-      ]
+    var publicSuffix: ReturnType[js.Function1[/* host */ String, String | Null]]
     
-    var subdomain: ReturnType[
-        /* import warning: importer.ImportType#apply Failed type conversion: typeof getSubdomain */ js.Any
-      ]
+    var subdomain: ReturnType[js.Function1[/* host */ String, String | Null]]
     
-    var tldExists: ReturnType[
-        /* import warning: importer.ImportType#apply Failed type conversion: typeof tldExists */ js.Any
-      ]
+    var tldExists: ReturnType[js.Function1[/* host */ String, Boolean]]
   }
   object Domain {
     
     inline def apply(
-      domain: ReturnType[
-          /* import warning: importer.ImportType#apply Failed type conversion: typeof getDomain */ js.Any
-        ],
-      hostname: ReturnType[
-          /* import warning: importer.ImportType#apply Failed type conversion: typeof extractHostname */ js.Any
-        ],
+      domain: ReturnType[js.Function1[/* host */ String, String | Null]],
+      hostname: ReturnType[js.Function1[/* host */ String, String | Null]],
       isIp: Boolean,
-      isValid: ReturnType[
-          /* import warning: importer.ImportType#apply Failed type conversion: typeof isValid */ js.Any
-        ],
-      publicSuffix: ReturnType[
-          /* import warning: importer.ImportType#apply Failed type conversion: typeof getPublicSuffix */ js.Any
-        ],
-      subdomain: ReturnType[
-          /* import warning: importer.ImportType#apply Failed type conversion: typeof getSubdomain */ js.Any
-        ],
-      tldExists: ReturnType[
-          /* import warning: importer.ImportType#apply Failed type conversion: typeof tldExists */ js.Any
-        ]
+      isValid: ReturnType[js.Function1[/* host */ String, Boolean]],
+      publicSuffix: ReturnType[js.Function1[/* host */ String, String | Null]],
+      subdomain: ReturnType[js.Function1[/* host */ String, String | Null]],
+      tldExists: ReturnType[js.Function1[/* host */ String, Boolean]]
     ): Domain = {
       val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any], isIp = isIp.asInstanceOf[js.Any], isValid = isValid.asInstanceOf[js.Any], publicSuffix = publicSuffix.asInstanceOf[js.Any], subdomain = subdomain.asInstanceOf[js.Any], tldExists = tldExists.asInstanceOf[js.Any])
       __obj.asInstanceOf[Domain]
@@ -64,43 +40,19 @@ object anon {
     
     extension [Self <: Domain](x: Self) {
       
-      inline def setDomain(
-        value: ReturnType[
-              /* import warning: importer.ImportType#apply Failed type conversion: typeof getDomain */ js.Any
-            ]
-      ): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: ReturnType[js.Function1[/* host */ String, String | Null]]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      inline def setHostname(
-        value: ReturnType[
-              /* import warning: importer.ImportType#apply Failed type conversion: typeof extractHostname */ js.Any
-            ]
-      ): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(value: ReturnType[js.Function1[/* host */ String, String | Null]]): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
       inline def setIsIp(value: Boolean): Self = StObject.set(x, "isIp", value.asInstanceOf[js.Any])
       
-      inline def setIsValid(
-        value: ReturnType[
-              /* import warning: importer.ImportType#apply Failed type conversion: typeof isValid */ js.Any
-            ]
-      ): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
+      inline def setIsValid(value: ReturnType[js.Function1[/* host */ String, Boolean]]): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
       
-      inline def setPublicSuffix(
-        value: ReturnType[
-              /* import warning: importer.ImportType#apply Failed type conversion: typeof getPublicSuffix */ js.Any
-            ]
-      ): Self = StObject.set(x, "publicSuffix", value.asInstanceOf[js.Any])
+      inline def setPublicSuffix(value: ReturnType[js.Function1[/* host */ String, String | Null]]): Self = StObject.set(x, "publicSuffix", value.asInstanceOf[js.Any])
       
-      inline def setSubdomain(
-        value: ReturnType[
-              /* import warning: importer.ImportType#apply Failed type conversion: typeof getSubdomain */ js.Any
-            ]
-      ): Self = StObject.set(x, "subdomain", value.asInstanceOf[js.Any])
+      inline def setSubdomain(value: ReturnType[js.Function1[/* host */ String, String | Null]]): Self = StObject.set(x, "subdomain", value.asInstanceOf[js.Any])
       
-      inline def setTldExists(
-        value: ReturnType[
-              /* import warning: importer.ImportType#apply Failed type conversion: typeof tldExists */ js.Any
-            ]
-      ): Self = StObject.set(x, "tldExists", value.asInstanceOf[js.Any])
+      inline def setTldExists(value: ReturnType[js.Function1[/* host */ String, Boolean]]): Self = StObject.set(x, "tldExists", value.asInstanceOf[js.Any])
     }
   }
   
@@ -170,9 +122,9 @@ object anon {
     @JSName("isValid")
     var isValid_Original: js.Function1[/* host */ String, Boolean]
     
-    def parse(host: String): Domain
+    def parse(host: String): Hostname
     @JSName("parse")
-    var parse_Original: js.Function1[/* host */ String, Domain]
+    var parse_Original: js.Function1[/* host */ String, Hostname]
     
     def tldExists(host: String): Boolean
     @JSName("tldExists")
@@ -188,7 +140,7 @@ object anon {
       getSubdomain: /* host */ String => String | Null,
       isValid: /* host */ String => Boolean,
       isValidHostname: /* host */ String => Boolean,
-      parse: /* host */ String => Domain,
+      parse: /* host */ String => Hostname,
       tldExists: /* host */ String => Boolean
     ): GetDomain = {
       val __obj = js.Dynamic.literal(extractHostname = js.Any.fromFunction1(extractHostname), fromUserSettings = js.Any.fromFunction1(fromUserSettings), getDomain = js.Any.fromFunction1(getDomain), getPublicSuffix = js.Any.fromFunction1(getPublicSuffix), getSubdomain = js.Any.fromFunction1(getSubdomain), isValid = js.Any.fromFunction1(isValid), isValidHostname = js.Any.fromFunction1(isValidHostname), parse = js.Any.fromFunction1(parse), tldExists = js.Any.fromFunction1(tldExists))
@@ -211,7 +163,7 @@ object anon {
       
       inline def setIsValidHostname(value: /* host */ String => Boolean): Self = StObject.set(x, "isValidHostname", js.Any.fromFunction1(value))
       
-      inline def setParse(value: /* host */ String => Domain): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+      inline def setParse(value: /* host */ String => Hostname): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
       
       inline def setTldExists(value: /* host */ String => Boolean): Self = StObject.set(x, "tldExists", js.Any.fromFunction1(value))
     }
@@ -219,30 +171,54 @@ object anon {
   
   trait Hostname extends StObject {
     
-    var domain: ReturnType[js.Function1[/* host */ String, String | Null]]
+    var domain: ReturnType[
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof getDomain */ js.Any
+      ]
     
-    var hostname: ReturnType[js.Function1[/* host */ String, String | Null]]
+    var hostname: ReturnType[
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof extractHostname */ js.Any
+      ]
     
     var isIp: Boolean
     
-    var isValid: ReturnType[js.Function1[/* host */ String, Boolean]]
+    var isValid: ReturnType[
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof isValid */ js.Any
+      ]
     
-    var publicSuffix: ReturnType[js.Function1[/* host */ String, String | Null]]
+    var publicSuffix: ReturnType[
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof getPublicSuffix */ js.Any
+      ]
     
-    var subdomain: ReturnType[js.Function1[/* host */ String, String | Null]]
+    var subdomain: ReturnType[
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof getSubdomain */ js.Any
+      ]
     
-    var tldExists: ReturnType[js.Function1[/* host */ String, Boolean]]
+    var tldExists: ReturnType[
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof tldExists */ js.Any
+      ]
   }
   object Hostname {
     
     inline def apply(
-      domain: ReturnType[js.Function1[/* host */ String, String | Null]],
-      hostname: ReturnType[js.Function1[/* host */ String, String | Null]],
+      domain: ReturnType[
+          /* import warning: importer.ImportType#apply Failed type conversion: typeof getDomain */ js.Any
+        ],
+      hostname: ReturnType[
+          /* import warning: importer.ImportType#apply Failed type conversion: typeof extractHostname */ js.Any
+        ],
       isIp: Boolean,
-      isValid: ReturnType[js.Function1[/* host */ String, Boolean]],
-      publicSuffix: ReturnType[js.Function1[/* host */ String, String | Null]],
-      subdomain: ReturnType[js.Function1[/* host */ String, String | Null]],
-      tldExists: ReturnType[js.Function1[/* host */ String, Boolean]]
+      isValid: ReturnType[
+          /* import warning: importer.ImportType#apply Failed type conversion: typeof isValid */ js.Any
+        ],
+      publicSuffix: ReturnType[
+          /* import warning: importer.ImportType#apply Failed type conversion: typeof getPublicSuffix */ js.Any
+        ],
+      subdomain: ReturnType[
+          /* import warning: importer.ImportType#apply Failed type conversion: typeof getSubdomain */ js.Any
+        ],
+      tldExists: ReturnType[
+          /* import warning: importer.ImportType#apply Failed type conversion: typeof tldExists */ js.Any
+        ]
     ): Hostname = {
       val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any], isIp = isIp.asInstanceOf[js.Any], isValid = isValid.asInstanceOf[js.Any], publicSuffix = publicSuffix.asInstanceOf[js.Any], subdomain = subdomain.asInstanceOf[js.Any], tldExists = tldExists.asInstanceOf[js.Any])
       __obj.asInstanceOf[Hostname]
@@ -250,19 +226,43 @@ object anon {
     
     extension [Self <: Hostname](x: Self) {
       
-      inline def setDomain(value: ReturnType[js.Function1[/* host */ String, String | Null]]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(
+        value: ReturnType[
+              /* import warning: importer.ImportType#apply Failed type conversion: typeof getDomain */ js.Any
+            ]
+      ): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      inline def setHostname(value: ReturnType[js.Function1[/* host */ String, String | Null]]): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(
+        value: ReturnType[
+              /* import warning: importer.ImportType#apply Failed type conversion: typeof extractHostname */ js.Any
+            ]
+      ): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
       inline def setIsIp(value: Boolean): Self = StObject.set(x, "isIp", value.asInstanceOf[js.Any])
       
-      inline def setIsValid(value: ReturnType[js.Function1[/* host */ String, Boolean]]): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
+      inline def setIsValid(
+        value: ReturnType[
+              /* import warning: importer.ImportType#apply Failed type conversion: typeof isValid */ js.Any
+            ]
+      ): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
       
-      inline def setPublicSuffix(value: ReturnType[js.Function1[/* host */ String, String | Null]]): Self = StObject.set(x, "publicSuffix", value.asInstanceOf[js.Any])
+      inline def setPublicSuffix(
+        value: ReturnType[
+              /* import warning: importer.ImportType#apply Failed type conversion: typeof getPublicSuffix */ js.Any
+            ]
+      ): Self = StObject.set(x, "publicSuffix", value.asInstanceOf[js.Any])
       
-      inline def setSubdomain(value: ReturnType[js.Function1[/* host */ String, String | Null]]): Self = StObject.set(x, "subdomain", value.asInstanceOf[js.Any])
+      inline def setSubdomain(
+        value: ReturnType[
+              /* import warning: importer.ImportType#apply Failed type conversion: typeof getSubdomain */ js.Any
+            ]
+      ): Self = StObject.set(x, "subdomain", value.asInstanceOf[js.Any])
       
-      inline def setTldExists(value: ReturnType[js.Function1[/* host */ String, Boolean]]): Self = StObject.set(x, "tldExists", value.asInstanceOf[js.Any])
+      inline def setTldExists(
+        value: ReturnType[
+              /* import warning: importer.ImportType#apply Failed type conversion: typeof tldExists */ js.Any
+            ]
+      ): Self = StObject.set(x, "tldExists", value.asInstanceOf[js.Any])
     }
   }
   

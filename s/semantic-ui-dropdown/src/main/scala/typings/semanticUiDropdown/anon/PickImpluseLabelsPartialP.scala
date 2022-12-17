@@ -161,7 +161,7 @@ trait PickImpluseLabelsPartialP
   
   var transition: js.UndefOr[auto | String] = js.undefined
   
-  var useLabels: Boolean & js.UndefOr[Boolean]
+  var useLabels: Boolean
   
   var values: js.UndefOr[Any] = js.undefined
   
@@ -169,7 +169,7 @@ trait PickImpluseLabelsPartialP
 }
 object PickImpluseLabelsPartialP {
   
-  inline def apply(useLabels: Boolean & js.UndefOr[Boolean]): PickImpluseLabelsPartialP = {
+  inline def apply(useLabels: Boolean): PickImpluseLabelsPartialP = {
     val __obj = js.Dynamic.literal(useLabels = useLabels.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpluseLabelsPartialP]
   }
@@ -402,7 +402,7 @@ object PickImpluseLabelsPartialP {
     
     inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
     
-    inline def setUseLabels(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "useLabels", value.asInstanceOf[js.Any])
+    inline def setUseLabels(value: Boolean): Self = StObject.set(x, "useLabels", value.asInstanceOf[js.Any])
     
     inline def setValues(value: Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     

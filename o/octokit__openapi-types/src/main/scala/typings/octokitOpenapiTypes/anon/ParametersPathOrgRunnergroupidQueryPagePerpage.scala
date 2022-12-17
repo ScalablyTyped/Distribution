@@ -8,11 +8,11 @@ trait ParametersPathOrgRunnergroupidQueryPagePerpage extends StObject {
   
   var parameters: PathOrgRunnergroupidQueryPagePerpage
   
-  var responses: `39`
+  var responses: `65`
 }
 object ParametersPathOrgRunnergroupidQueryPagePerpage {
   
-  inline def apply(parameters: PathOrgRunnergroupidQueryPagePerpage, responses: `39`): ParametersPathOrgRunnergroupidQueryPagePerpage = {
+  inline def apply(parameters: PathOrgRunnergroupidQueryPagePerpage, responses: `65`): ParametersPathOrgRunnergroupidQueryPagePerpage = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathOrgRunnergroupidQueryPagePerpage]
   }
@@ -21,6 +21,6 @@ object ParametersPathOrgRunnergroupidQueryPagePerpage {
     
     inline def setParameters(value: PathOrgRunnergroupidQueryPagePerpage): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `39`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `65`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

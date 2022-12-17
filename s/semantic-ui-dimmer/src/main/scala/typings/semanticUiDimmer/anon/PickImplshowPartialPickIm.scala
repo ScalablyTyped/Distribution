@@ -12,11 +12,11 @@ trait PickImplshowPartialPickIm
   
   var hide: js.UndefOr[Double] = js.undefined
   
-  var show: Double & js.UndefOr[Double]
+  var show: Double
 }
 object PickImplshowPartialPickIm {
   
-  inline def apply(show: Double & js.UndefOr[Double]): PickImplshowPartialPickIm = {
+  inline def apply(show: Double): PickImplshowPartialPickIm = {
     val __obj = js.Dynamic.literal(show = show.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplshowPartialPickIm]
   }
@@ -27,6 +27,6 @@ object PickImplshowPartialPickIm {
     
     inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
-    inline def setShow(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Double): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
   }
 }

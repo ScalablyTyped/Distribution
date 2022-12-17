@@ -10,20 +10,20 @@ trait PickImplparentPartialPick
   extends StObject
      with Param {
   
-  var parent: String & js.UndefOr[String]
+  var parent: String
   
   var tabs: js.UndefOr[String] = js.undefined
 }
 object PickImplparentPartialPick {
   
-  inline def apply(parent: String & js.UndefOr[String]): PickImplparentPartialPick = {
+  inline def apply(parent: String): PickImplparentPartialPick = {
     val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplparentPartialPick]
   }
   
   extension [Self <: PickImplparentPartialPick](x: Self) {
     
-    inline def setParent(value: String & js.UndefOr[String]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setTabs(value: String): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
     

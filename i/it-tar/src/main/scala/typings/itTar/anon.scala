@@ -25,7 +25,7 @@ object anon {
     
     var mtime: js.UndefOr[js.Date] = js.undefined
     
-    var name: js.UndefOr[String] & String
+    var name: js.UndefOr[String] = js.undefined
     
     var pax: js.UndefOr[Record[String, String]] = js.undefined
     
@@ -41,8 +41,8 @@ object anon {
   }
   object PartialTarEntryHeadername {
     
-    inline def apply(name: js.UndefOr[String] & String): PartialTarEntryHeadername = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    inline def apply(): PartialTarEntryHeadername = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialTarEntryHeadername]
     }
     
@@ -76,7 +76,9 @@ object anon {
       
       inline def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
       
-      inline def setName(value: js.UndefOr[String] & String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
       inline def setPax(value: Record[String, String]): Self = StObject.set(x, "pax", value.asInstanceOf[js.Any])
       

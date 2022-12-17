@@ -62,7 +62,7 @@ object anon {
       * The text to be displayed on the button, 0-64 characters.
       * Required if type is default or destructive. Irrelevant for other types.
       */
-    var text: String & js.UndefOr[String]
+    var text: String
     
     /**
       * Type of the button. Set to default by default.
@@ -73,14 +73,11 @@ object anon {
       * - `cancel`, a button with the localized text “Cancel”,
       * - `destructive`, a button with a style that indicates a destructive action (e.g. “Remove”, “Delete”, etc.).
       */
-    var `type`: (default | destructive) & (js.UndefOr[default | ok | close | cancel | destructive])
+    var `type`: default | destructive
   }
   object typedefaultdestructivetex {
     
-    inline def apply(
-      text: String & js.UndefOr[String],
-      `type`: (default | destructive) & (js.UndefOr[default | ok | close | cancel | destructive])
-    ): typedefaultdestructivetex = {
+    inline def apply(text: String, `type`: default | destructive): typedefaultdestructivetex = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typedefaultdestructivetex]
@@ -92,9 +89,9 @@ object anon {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setText(value: String & js.UndefOr[String]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      inline def setType(value: (default | destructive) & (js.UndefOr[default | ok | close | cancel | destructive])): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: default | destructive): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -124,11 +121,11 @@ object anon {
       * - `cancel`, a button with the localized text “Cancel”,
       * - `destructive`, a button with a style that indicates a destructive action (e.g. “Remove”, “Delete”, etc.).
       */
-    var `type`: (ok | close | cancel) & (js.UndefOr[default | ok | close | cancel | destructive])
+    var `type`: ok | close | cancel
   }
   object typeokclosecanceltextstri {
     
-    inline def apply(`type`: (ok | close | cancel) & (js.UndefOr[default | ok | close | cancel | destructive])): typeokclosecanceltextstri = {
+    inline def apply(`type`: ok | close | cancel): typeokclosecanceltextstri = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typeokclosecanceltextstri]
@@ -144,7 +141,7 @@ object anon {
       
       inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      inline def setType(value: (ok | close | cancel) & (js.UndefOr[default | ok | close | cancel | destructive])): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ok | close | cancel): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

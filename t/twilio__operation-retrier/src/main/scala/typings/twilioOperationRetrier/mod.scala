@@ -33,6 +33,50 @@ object mod {
     def run[T](handler: js.Function0[js.Promise[T]]): js.Promise[T] = js.native
   }
   
+  @JSImport("@twilio/operation-retrier", "Backoff")
+  @js.native
+  open class Backoff protected () extends EventEmitter {
+    def this(options: BackoffOptions) = this()
+    
+    def backoff(): Unit = js.native
+    def backoff(err: js.Error): Unit = js.native
+    
+    /* private */ var backoffDelay: Any = js.native
+    
+    /* private */ var backoffNumber: Any = js.native
+    
+    /* private */ val factor: Any = js.native
+    
+    def failAfter(maxNumberOfRetry: Double): Unit = js.native
+    
+    /* private */ val initialDelay: Any = js.native
+    
+    /* private */ val maxDelay: Any = js.native
+    
+    /* private */ var maxNumberOfRetry: Any = js.native
+    
+    def next(): Double = js.native
+    
+    /* private */ var nextBackoffDelay: Any = js.native
+    
+    def onBackoff(): Unit = js.native
+    
+    /* private */ val randomisationFactor: Any = js.native
+    
+    def reset(): Unit = js.native
+    
+    /* private */ var timeoutID: Any = js.native
+  }
+  object Backoff {
+    
+    @JSImport("@twilio/operation-retrier", "Backoff")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    inline def exponential(options: BackoffOptions): Backoff = ^.asInstanceOf[js.Dynamic].applyDynamic("exponential")(options.asInstanceOf[js.Any]).asInstanceOf[Backoff]
+  }
+  
   /**
     * Provides retrier service
     */
@@ -90,39 +134,6 @@ object mod {
     def succeeded(arg: Any): Unit = js.native
     
     /* private */ var timeout: Any = js.native
-  }
-  
-  @js.native
-  trait Backoff extends EventEmitter {
-    
-    def backoff(): Unit = js.native
-    def backoff(err: js.Error): Unit = js.native
-    
-    /* private */ var backoffDelay: Any = js.native
-    
-    /* private */ var backoffNumber: Any = js.native
-    
-    /* private */ val factor: Any = js.native
-    
-    def failAfter(maxNumberOfRetry: Double): Unit = js.native
-    
-    /* private */ val initialDelay: Any = js.native
-    
-    /* private */ val maxDelay: Any = js.native
-    
-    /* private */ var maxNumberOfRetry: Any = js.native
-    
-    def next(): Double = js.native
-    
-    /* private */ var nextBackoffDelay: Any = js.native
-    
-    def onBackoff(): Unit = js.native
-    
-    /* private */ val randomisationFactor: Any = js.native
-    
-    def reset(): Unit = js.native
-    
-    /* private */ var timeoutID: Any = js.native
   }
   
   trait BackoffOptions extends StObject {

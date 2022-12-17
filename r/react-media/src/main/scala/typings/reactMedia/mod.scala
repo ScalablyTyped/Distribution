@@ -15,6 +15,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def default(props: SingleQueryProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   inline def default[Q](props: MultiQueryProps[Q]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   trait BaseProps extends StObject {

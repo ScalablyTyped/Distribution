@@ -61,7 +61,7 @@ trait PickImplerrorDurationPart
   
   var error: js.UndefOr[ErrorSettings] = js.undefined
   
-  var errorDuration: (`true` | Double) & (js.UndefOr[`true` | Double])
+  var errorDuration: `true` | Double
   
   var hideError: js.UndefOr[auto | Boolean] = js.undefined
   
@@ -147,7 +147,7 @@ trait PickImplerrorDurationPart
 }
 object PickImplerrorDurationPart {
   
-  inline def apply(errorDuration: (`true` | Double) & (js.UndefOr[`true` | Double])): PickImplerrorDurationPart = {
+  inline def apply(errorDuration: `true` | Double): PickImplerrorDurationPart = {
     val __obj = js.Dynamic.literal(errorDuration = errorDuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplerrorDurationPart]
   }
@@ -200,7 +200,7 @@ object PickImplerrorDurationPart {
     
     inline def setError(value: ErrorSettings): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    inline def setErrorDuration(value: (`true` | Double) & (js.UndefOr[`true` | Double])): Self = StObject.set(x, "errorDuration", value.asInstanceOf[js.Any])
+    inline def setErrorDuration(value: `true` | Double): Self = StObject.set(x, "errorDuration", value.asInstanceOf[js.Any])
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     

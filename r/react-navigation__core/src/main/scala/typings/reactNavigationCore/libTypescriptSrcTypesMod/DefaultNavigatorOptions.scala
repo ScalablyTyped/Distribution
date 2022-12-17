@@ -2,7 +2,7 @@ package typings.reactNavigationCore.libTypescriptSrcTypesMod
 
 import typings.react.mod.ReactNode
 import typings.reactNavigationCore.anon.NavigationOptions
-import typings.reactNavigationCore.anon.Route
+import typings.reactNavigationCore.anon.NavigationRoute
 import typings.reactNavigationRouters.libTypescriptSrcTypesMod.DefaultRouterOptions
 import typings.reactNavigationRouters.libTypescriptSrcTypesMod.NavigationState
 import typings.reactNavigationRouters.libTypescriptSrcTypesMod.ParamListBase
@@ -37,13 +37,15 @@ trait DefaultNavigatorOptions[ParamList /* <: ParamListBase */, State /* <: Navi
     * Event listeners for all the screens in the navigator.
     */
   var screenListeners: js.UndefOr[
-    (ScreenListeners[State, EventMap]) | (js.Function1[/* props */ Route[ParamList], ScreenListeners[State, EventMap]])
+    (ScreenListeners[State, EventMap]) | (js.Function1[/* props */ NavigationRoute[ParamList], ScreenListeners[State, EventMap]])
   ] = js.undefined
   
   /**
     * Default options for all screens under this navigator.
     */
-  var screenOptions: js.UndefOr[ScreenOptions | (js.Function1[/* props */ Route[ParamList], ScreenOptions])] = js.undefined
+  var screenOptions: js.UndefOr[
+    ScreenOptions | (js.Function1[/* props */ NavigationRoute[ParamList], ScreenOptions])
+  ] = js.undefined
 }
 object DefaultNavigatorOptions {
   
@@ -71,16 +73,16 @@ object DefaultNavigatorOptions {
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setScreenListeners(
-      value: (ScreenListeners[State, EventMap]) | (js.Function1[/* props */ Route[ParamList], ScreenListeners[State, EventMap]])
+      value: (ScreenListeners[State, EventMap]) | (js.Function1[/* props */ NavigationRoute[ParamList], ScreenListeners[State, EventMap]])
     ): Self = StObject.set(x, "screenListeners", value.asInstanceOf[js.Any])
     
-    inline def setScreenListenersFunction1(value: /* props */ Route[ParamList] => ScreenListeners[State, EventMap]): Self = StObject.set(x, "screenListeners", js.Any.fromFunction1(value))
+    inline def setScreenListenersFunction1(value: /* props */ NavigationRoute[ParamList] => ScreenListeners[State, EventMap]): Self = StObject.set(x, "screenListeners", js.Any.fromFunction1(value))
     
     inline def setScreenListenersUndefined: Self = StObject.set(x, "screenListeners", js.undefined)
     
-    inline def setScreenOptions(value: ScreenOptions | (js.Function1[/* props */ Route[ParamList], ScreenOptions])): Self = StObject.set(x, "screenOptions", value.asInstanceOf[js.Any])
+    inline def setScreenOptions(value: ScreenOptions | (js.Function1[/* props */ NavigationRoute[ParamList], ScreenOptions])): Self = StObject.set(x, "screenOptions", value.asInstanceOf[js.Any])
     
-    inline def setScreenOptionsFunction1(value: /* props */ Route[ParamList] => ScreenOptions): Self = StObject.set(x, "screenOptions", js.Any.fromFunction1(value))
+    inline def setScreenOptionsFunction1(value: /* props */ NavigationRoute[ParamList] => ScreenOptions): Self = StObject.set(x, "screenOptions", js.Any.fromFunction1(value))
     
     inline def setScreenOptionsUndefined: Self = StObject.set(x, "screenOptions", js.undefined)
   }

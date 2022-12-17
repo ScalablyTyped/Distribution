@@ -28,7 +28,7 @@ trait PickImpldurationPartialPi
   
   var dimmerName: js.UndefOr[`false` | String] = js.undefined
   
-  var duration: (Double | DurationSettings) & (js.UndefOr[Double | DurationSettings])
+  var duration: Double | DurationSettings
   
   var error: js.UndefOr[ErrorSettings] = js.undefined
   
@@ -64,7 +64,7 @@ trait PickImpldurationPartialPi
 }
 object PickImpldurationPartialPi {
   
-  inline def apply(duration: (Double | DurationSettings) & (js.UndefOr[Double | DurationSettings])): PickImpldurationPartialPi = {
+  inline def apply(duration: Double | DurationSettings): PickImpldurationPartialPi = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldurationPartialPi]
   }
@@ -87,7 +87,7 @@ object PickImpldurationPartialPi {
     
     inline def setDimmerNameUndefined: Self = StObject.set(x, "dimmerName", js.undefined)
     
-    inline def setDuration(value: (Double | DurationSettings) & (js.UndefOr[Double | DurationSettings])): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double | DurationSettings): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     inline def setError(value: ErrorSettings): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

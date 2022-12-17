@@ -36,7 +36,7 @@ trait PickImplchildrenOnlyParti
   
   var cacheType: js.UndefOr[response | DOM | html] = js.undefined
   
-  var childrenOnly: Boolean & js.UndefOr[Boolean]
+  var childrenOnly: Boolean
   
   var className: js.UndefOr[ClassNameSettings] = js.undefined
   
@@ -104,7 +104,7 @@ trait PickImplchildrenOnlyParti
 }
 object PickImplchildrenOnlyParti {
   
-  inline def apply(childrenOnly: Boolean & js.UndefOr[Boolean]): PickImplchildrenOnlyParti = {
+  inline def apply(childrenOnly: Boolean): PickImplchildrenOnlyParti = {
     val __obj = js.Dynamic.literal(childrenOnly = childrenOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplchildrenOnlyParti]
   }
@@ -131,7 +131,7 @@ object PickImplchildrenOnlyParti {
     
     inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
-    inline def setChildrenOnly(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "childrenOnly", value.asInstanceOf[js.Any])
+    inline def setChildrenOnly(value: Boolean): Self = StObject.set(x, "childrenOnly", value.asInstanceOf[js.Any])
     
     inline def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

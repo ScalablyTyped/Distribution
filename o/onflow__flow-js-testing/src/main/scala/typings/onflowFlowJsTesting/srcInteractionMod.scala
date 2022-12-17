@@ -23,19 +23,19 @@ object srcInteractionMod {
   type Interaction = js.Promise[Any] | js.Function0[js.Promise[Any]]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.onflowFlowJsTesting.anon.Code
     - typings.onflowFlowJsTesting.anon.Transformers
+    - typings.onflowFlowJsTesting.anon.ArgsCode
   */
   trait ScriptProps extends StObject
   object ScriptProps {
     
-    inline def Code(name: String): typings.onflowFlowJsTesting.anon.Code = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.onflowFlowJsTesting.anon.Code]
+    inline def ArgsCode(code: String): typings.onflowFlowJsTesting.anon.ArgsCode = {
+      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.onflowFlowJsTesting.anon.ArgsCode]
     }
     
-    inline def Transformers(code: String): typings.onflowFlowJsTesting.anon.Transformers = {
-      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
+    inline def Transformers(name: String): typings.onflowFlowJsTesting.anon.Transformers = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.onflowFlowJsTesting.anon.Transformers]
     }
   }
@@ -77,19 +77,19 @@ object srcInteractionMod {
   }
   
   /* Rewritten from type alias, can be one of: 
+    - typings.onflowFlowJsTesting.anon.Code
     - typings.onflowFlowJsTesting.anon.Signers
-    - typings.onflowFlowJsTesting.anon.AddressMapArgs
   */
   trait TransactionProps extends StObject
   object TransactionProps {
     
-    inline def AddressMapArgs(code: String, signers: js.Array[Address | SignerInfo]): typings.onflowFlowJsTesting.anon.AddressMapArgs = {
-      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], signers = signers.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.onflowFlowJsTesting.anon.AddressMapArgs]
+    inline def Code(name: String, signers: js.Array[Address | SignerInfo]): typings.onflowFlowJsTesting.anon.Code = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], signers = signers.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.onflowFlowJsTesting.anon.Code]
     }
     
-    inline def Signers(name: String, signers: js.Array[Address | SignerInfo]): typings.onflowFlowJsTesting.anon.Signers = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], signers = signers.asInstanceOf[js.Any])
+    inline def Signers(code: String, signers: js.Array[Address | SignerInfo]): typings.onflowFlowJsTesting.anon.Signers = {
+      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], signers = signers.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.onflowFlowJsTesting.anon.Signers]
     }
   }

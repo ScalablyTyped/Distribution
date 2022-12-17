@@ -1,6 +1,7 @@
 package typings.nodelibFsWalk
 
 import typings.node.streamMod.Readable
+import typings.nodelibFsWalk.outProvidersAsyncMod.AsyncCallback
 import typings.nodelibFsWalk.outSettingsMod.Options
 import typings.nodelibFsWalk.outSettingsMod.default
 import typings.nodelibFsWalk.outTypesMod.Entry
@@ -19,6 +20,10 @@ object mod {
   open class Settings () extends default {
     def this(_options: Options) = this()
   }
+  
+  inline def walk(directory: String, callback: AsyncCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("walk")(directory.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def walk(directory: String, optionsOrSettings: Options, callback: AsyncCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("walk")(directory.asInstanceOf[js.Any], optionsOrSettings.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def walk(directory: String, optionsOrSettings: default, callback: AsyncCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("walk")(directory.asInstanceOf[js.Any], optionsOrSettings.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def walkStream(directory: String): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("walkStream")(directory.asInstanceOf[js.Any]).asInstanceOf[Readable]
   inline def walkStream(directory: String, optionsOrSettings: Options): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("walkStream")(directory.asInstanceOf[js.Any], optionsOrSettings.asInstanceOf[js.Any])).asInstanceOf[Readable]

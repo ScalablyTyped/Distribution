@@ -22,15 +22,20 @@ object distSrcModulesPlaybackEngineTypesMod {
   @js.native
   object CrossOriginValue extends StObject {
     
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[CrossOriginValue & String] = js.native
+    
     @js.native
     sealed trait ANONYMUS
       extends StObject
          with CrossOriginValue
+    /* "anonymous" */ val ANONYMUS: typings.playable.distSrcModulesPlaybackEngineTypesMod.CrossOriginValue.ANONYMUS & String = js.native
     
     @js.native
     sealed trait CREDENTIALS
       extends StObject
          with CrossOriginValue
+    /* "use-credentials" */ val CREDENTIALS: typings.playable.distSrcModulesPlaybackEngineTypesMod.CrossOriginValue.CREDENTIALS & String = js.native
   }
   
   @js.native
@@ -39,20 +44,26 @@ object distSrcModulesPlaybackEngineTypesMod {
   @js.native
   object PreloadType extends StObject {
     
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[PreloadType & String] = js.native
+    
     @js.native
     sealed trait AUTO
       extends StObject
          with PreloadType
+    /* "auto" */ val AUTO: typings.playable.distSrcModulesPlaybackEngineTypesMod.PreloadType.AUTO & String = js.native
     
     @js.native
     sealed trait METADATA
       extends StObject
          with PreloadType
+    /* "metadata" */ val METADATA: typings.playable.distSrcModulesPlaybackEngineTypesMod.PreloadType.METADATA & String = js.native
     
     @js.native
     sealed trait NONE
       extends StObject
          with PreloadType
+    /* "none" */ val NONE: typings.playable.distSrcModulesPlaybackEngineTypesMod.PreloadType.NONE & String = js.native
   }
   
   trait IEngineDebugInfo extends StObject {

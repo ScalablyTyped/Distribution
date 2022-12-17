@@ -131,7 +131,7 @@ trait InitialOptionsWithRootDir extends StObject {
   
   var restoreMocks: js.UndefOr[Boolean] = js.undefined
   
-  var rootDir: js.UndefOr[String] & String
+  var rootDir: js.UndefOr[String] = js.undefined
   
   var roots: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -213,8 +213,8 @@ trait InitialOptionsWithRootDir extends StObject {
 }
 object InitialOptionsWithRootDir {
   
-  inline def apply(rootDir: js.UndefOr[String] & String): InitialOptionsWithRootDir = {
-    val __obj = js.Dynamic.literal(rootDir = rootDir.asInstanceOf[js.Any])
+  inline def apply(): InitialOptionsWithRootDir = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InitialOptionsWithRootDir]
   }
   
@@ -494,7 +494,9 @@ object InitialOptionsWithRootDir {
     
     inline def setRestoreMocksUndefined: Self = StObject.set(x, "restoreMocks", js.undefined)
     
-    inline def setRootDir(value: js.UndefOr[String] & String): Self = StObject.set(x, "rootDir", value.asInstanceOf[js.Any])
+    inline def setRootDir(value: String): Self = StObject.set(x, "rootDir", value.asInstanceOf[js.Any])
+    
+    inline def setRootDirUndefined: Self = StObject.set(x, "rootDir", js.undefined)
     
     inline def setRoots(value: js.Array[String]): Self = StObject.set(x, "roots", value.asInstanceOf[js.Any])
     

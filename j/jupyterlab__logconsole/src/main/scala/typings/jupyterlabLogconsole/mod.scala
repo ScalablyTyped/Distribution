@@ -1,6 +1,6 @@
 package typings.jupyterlabLogconsole
 
-import typings.jupyterlabLogconsole.libLoggerMod.Logger.IOptions
+import typings.jupyterlabLogconsole.libLoggerMod.LogOutputModel.IOptions
 import typings.jupyterlabTranslation.libTokensMod.ITranslator
 import typings.luminoCoreutils.mod.Token
 import typings.luminoWidgets.mod.Widget
@@ -28,6 +28,18 @@ object mod {
     def this(loggerRegistry: typings.jupyterlabLogconsole.libTokensMod.ILoggerRegistry, translator: ITranslator) = this()
   }
   
+  @JSImport("@jupyterlab/logconsole", "LogOutputModel")
+  @js.native
+  open class LogOutputModel protected ()
+    extends typings.jupyterlabLogconsole.libLoggerMod.LogOutputModel {
+    /**
+      * Construct a LogOutputModel.
+      *
+      * @param options - The model initialization options.
+      */
+    def this(options: IOptions) = this()
+  }
+  
   @JSImport("@jupyterlab/logconsole", "Logger")
   @js.native
   open class Logger protected ()
@@ -37,7 +49,7 @@ object mod {
       *
       * @param source - The name of the log source.
       */
-    def this(options: IOptions) = this()
+    def this(options: typings.jupyterlabLogconsole.libLoggerMod.Logger.IOptions) = this()
   }
   
   @JSImport("@jupyterlab/logconsole", "LoggerOutputAreaModel")

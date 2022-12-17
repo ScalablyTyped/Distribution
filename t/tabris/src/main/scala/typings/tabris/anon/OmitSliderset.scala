@@ -303,7 +303,7 @@ trait OmitSliderset extends StObject {
   @JSName("isDisposed")
   var isDisposed_Original: js.Function0[Boolean]
   
-  var jsxAttributes: (JSXAttributes[Slider, Omit[Slider, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `3`
+  var jsxAttributes: (JSXAttributes[Slider, Omit[Slider, set | typings.tabris.tabrisStrings.jsxAttributes]]) & Children
   
   var layoutData: LayoutDataValue
   
@@ -554,7 +554,7 @@ object OmitSliderset {
     insertAfter: /* widget */ Widget[Any] => Slider,
     insertBefore: /* widget */ Widget[Any] => Slider,
     isDisposed: () => Boolean,
-    jsxAttributes: (JSXAttributes[Slider, Omit[Slider, set | jsxAttributes]]) & `3`,
+    jsxAttributes: (JSXAttributes[Slider, Omit[Slider, set | jsxAttributes]]) & Children,
     layoutData: LayoutDataValue,
     left: ConstraintValue,
     maximum: Double,
@@ -721,7 +721,7 @@ object OmitSliderset {
     
     inline def setIsDisposed(value: () => Boolean): Self = StObject.set(x, "isDisposed", js.Any.fromFunction0(value))
     
-    inline def setJsxAttributes(value: (JSXAttributes[Slider, Omit[Slider, set | jsxAttributes]]) & `3`): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
+    inline def setJsxAttributes(value: (JSXAttributes[Slider, Omit[Slider, set | jsxAttributes]]) & Children): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     
     inline def setLayoutData(value: LayoutDataValue): Self = StObject.set(x, "layoutData", value.asInstanceOf[js.Any])
     

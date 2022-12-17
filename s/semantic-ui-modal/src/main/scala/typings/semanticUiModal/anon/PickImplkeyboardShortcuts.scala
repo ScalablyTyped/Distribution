@@ -36,7 +36,7 @@ trait PickImplkeyboardShortcuts
   
   var error: js.UndefOr[ErrorSettings] = js.undefined
   
-  var keyboardShortcuts: Boolean & js.UndefOr[Boolean]
+  var keyboardShortcuts: Boolean
   
   var name: js.UndefOr[String] = js.undefined
   
@@ -72,7 +72,7 @@ trait PickImplkeyboardShortcuts
 }
 object PickImplkeyboardShortcuts {
   
-  inline def apply(keyboardShortcuts: Boolean & js.UndefOr[Boolean]): PickImplkeyboardShortcuts = {
+  inline def apply(keyboardShortcuts: Boolean): PickImplkeyboardShortcuts = {
     val __obj = js.Dynamic.literal(keyboardShortcuts = keyboardShortcuts.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplkeyboardShortcuts]
   }
@@ -119,7 +119,7 @@ object PickImplkeyboardShortcuts {
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    inline def setKeyboardShortcuts(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "keyboardShortcuts", value.asInstanceOf[js.Any])
+    inline def setKeyboardShortcuts(value: Boolean): Self = StObject.set(x, "keyboardShortcuts", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -12,20 +12,20 @@ trait PickImplcomputerPartialPi
   extends StObject
      with Param {
   
-  var computer: ComputerSettings & js.UndefOr[ComputerSettings]
+  var computer: ComputerSettings
   
   var mobile: js.UndefOr[MobileSettings] = js.undefined
 }
 object PickImplcomputerPartialPi {
   
-  inline def apply(computer: ComputerSettings & js.UndefOr[ComputerSettings]): PickImplcomputerPartialPi = {
+  inline def apply(computer: ComputerSettings): PickImplcomputerPartialPi = {
     val __obj = js.Dynamic.literal(computer = computer.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplcomputerPartialPi]
   }
   
   extension [Self <: PickImplcomputerPartialPi](x: Self) {
     
-    inline def setComputer(value: ComputerSettings & js.UndefOr[ComputerSettings]): Self = StObject.set(x, "computer", value.asInstanceOf[js.Any])
+    inline def setComputer(value: ComputerSettings): Self = StObject.set(x, "computer", value.asInstanceOf[js.Any])
     
     inline def setMobile(value: MobileSettings): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
     

@@ -1,8 +1,8 @@
 package typings.micromarkUtilTypes.mod
 
 import typings.micromarkUtilTypes.anon.NullArray
+import typings.micromarkUtilTypes.anon.`2`
 import typings.micromarkUtilTypes.anon.`3`
-import typings.micromarkUtilTypes.anon.`4`
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,7 +22,7 @@ trait NormalizedExtensionFields extends StObject {
   
   var flowInitial: Record[String, js.Array[Construct]]
   
-  var insideSpan: `4`
+  var insideSpan: `2`
   
   var string: Record[String, js.Array[Construct]]
   
@@ -37,7 +37,7 @@ object NormalizedExtensionFields {
     document: Record[String, js.Array[Construct]],
     flow: Record[String, js.Array[Construct]],
     flowInitial: Record[String, js.Array[Construct]],
-    insideSpan: `4`,
+    insideSpan: `2`,
     string: Record[String, js.Array[Construct]],
     text: Record[String, js.Array[Construct]]
   ): NormalizedExtensionFields = {
@@ -59,7 +59,7 @@ object NormalizedExtensionFields {
     
     inline def setFlowInitial(value: Record[String, js.Array[Construct]]): Self = StObject.set(x, "flowInitial", value.asInstanceOf[js.Any])
     
-    inline def setInsideSpan(value: `4`): Self = StObject.set(x, "insideSpan", value.asInstanceOf[js.Any])
+    inline def setInsideSpan(value: `2`): Self = StObject.set(x, "insideSpan", value.asInstanceOf[js.Any])
     
     inline def setString(value: Record[String, js.Array[Construct]]): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     

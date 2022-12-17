@@ -85,21 +85,21 @@ trait ActiveLightUI extends StObject {
   
   var backgroundSelectedHover: Numbersign656565
   
-  var body01: `21`
+  var body01: FontWeightLetterSpacing
   
-  var body02: `23`
+  var body02: FontWeightLetterSpacingLineHeight
   
-  var bodyCompact01: `17`
+  var bodyCompact01: FontSizeFontWeight
   
-  var bodyCompact02: `22`
+  var bodyCompact02: FontSizeFontWeightLetterSpacing
   
-  var bodyLong01: `21`
+  var bodyLong01: FontWeightLetterSpacing
   
-  var bodyLong02: `23`
+  var bodyLong02: FontWeightLetterSpacingLineHeight
   
-  var bodyShort01: `17`
+  var bodyShort01: FontSizeFontWeight
   
-  var bodyShort02: `22`
+  var bodyShort02: FontSizeFontWeightLetterSpacing
   
   var borderDisabled: Numbersign393939
   
@@ -149,9 +149,9 @@ trait ActiveLightUI extends StObject {
   
   var buttonTertiaryHover: Numbersignf4f4f4
   
-  var caption01: FontSizeFontWeightLetterSpacingLineHeight
+  var caption01: LetterSpacing
   
-  var caption02: `16`
+  var caption02: LineHeight
   
   var code01: FontFamilyFontSize
   
@@ -181,17 +181,17 @@ trait ActiveLightUI extends StObject {
   
   var disabled03: Numbersigna8a8a8
   
-  var display01: BreakpointsLg
+  var display01: BreakpointsLgMaxMd
   
-  var display02: BreakpointsMax
+  var display02: BreakpointsMaxMdXlg
   
-  var display03: BreakpointsMd
+  var display03: BreakpointsLgMaxMdXlg
   
-  var display04: BreakpointsXlg
+  var display04: BreakpointsLg43
   
-  var expressiveHeading01: `34`
+  var expressiveHeading01: `12`
   
-  var expressiveHeading02: `26`
+  var expressiveHeading02: `4`
   
   var expressiveHeading03: Breakpoints
   
@@ -211,13 +211,13 @@ trait ActiveLightUI extends StObject {
   
   var fieldHover: Numbersign4c4c4c
   
-  var fluidDisplay01: BreakpointsLg
+  var fluidDisplay01: BreakpointsLgMaxMd
   
-  var fluidDisplay02: BreakpointsMax
+  var fluidDisplay02: BreakpointsMaxMdXlg
   
-  var fluidDisplay03: BreakpointsMd
+  var fluidDisplay03: BreakpointsLgMaxMdXlg
   
-  var fluidDisplay04: BreakpointsXlg
+  var fluidDisplay04: BreakpointsLg43
   
   var fluidHeading03: Breakpoints
   
@@ -247,27 +247,27 @@ trait ActiveLightUI extends StObject {
   
   var focusInverse: Numbersign0f62fe
   
-  var heading01: `24`
+  var heading01: FontSizeFontWeightLetterSpacingLineHeight
   
-  var heading02: `26`
+  var heading02: `4`
   
-  var heading03: `28`
+  var heading03: `6`
   
-  var heading04: `29`
+  var heading04: `7`
   
-  var heading05: `31`
+  var heading05: `8`
   
-  var heading06: `32`
+  var heading06: `9`
   
-  var heading07: `33`
+  var heading07: `11`
   
-  var headingCompact01: `25`
+  var headingCompact01: `3`
   
-  var headingCompact02: `27`
+  var headingCompact02: `5`
   
-  var helperText01: `18`
+  var helperText01: FontSizeLetterSpacing
   
-  var helperText02: `19`
+  var helperText02: LetterSpacingLineHeight
   
   var highlight: Numbersign0043ce
   
@@ -341,9 +341,9 @@ trait ActiveLightUI extends StObject {
   
   var inverseSupport04: Numbersign0f62fe
   
-  var label01: FontSizeFontWeightLetterSpacingLineHeight
+  var label01: LetterSpacing
   
-  var label02: `17`
+  var label02: FontSizeFontWeight
   
   var layer: Numbersign393939
   
@@ -365,9 +365,9 @@ trait ActiveLightUI extends StObject {
   
   var layerSelectedInverse: Numbersignf4f4f4
   
-  var legal01: FontSizeFontWeightLetterSpacingLineHeight
+  var legal01: LetterSpacing
   
-  var legal02: `17`
+  var legal02: FontSizeFontWeight
   
   var link01: Numbersign78a9ff
   
@@ -387,19 +387,19 @@ trait ActiveLightUI extends StObject {
   
   var overlay01: /* rgba(0, 0, 0, 0.65) */ String
   
-  var productiveHeading01: `25`
+  var productiveHeading01: `3`
   
-  var productiveHeading02: `27`
+  var productiveHeading02: `5`
   
-  var productiveHeading03: `28`
+  var productiveHeading03: `6`
   
-  var productiveHeading04: `29`
+  var productiveHeading04: `7`
   
-  var productiveHeading05: `31`
+  var productiveHeading05: `8`
   
-  var productiveHeading06: `32`
+  var productiveHeading06: `9`
   
-  var productiveHeading07: `33`
+  var productiveHeading07: `11`
   
   var quotation01: BreakpointsFontFamily
   
@@ -528,33 +528,33 @@ trait ActiveLightUI extends StObject {
 object ActiveLightUI {
   
   inline def apply(
-    body01: `21`,
-    body02: `23`,
-    bodyCompact01: `17`,
-    bodyCompact02: `22`,
-    bodyLong01: `21`,
-    bodyLong02: `23`,
-    bodyShort01: `17`,
-    bodyShort02: `22`,
-    caption01: FontSizeFontWeightLetterSpacingLineHeight,
-    caption02: `16`,
+    body01: FontWeightLetterSpacing,
+    body02: FontWeightLetterSpacingLineHeight,
+    bodyCompact01: FontSizeFontWeight,
+    bodyCompact02: FontSizeFontWeightLetterSpacing,
+    bodyLong01: FontWeightLetterSpacing,
+    bodyLong02: FontWeightLetterSpacingLineHeight,
+    bodyShort01: FontSizeFontWeight,
+    bodyShort02: FontSizeFontWeightLetterSpacing,
+    caption01: LetterSpacing,
+    caption02: LineHeight,
     code01: FontFamilyFontSize,
     code02: FontFamilyFontSizeFontWeight,
-    display01: BreakpointsLg,
-    display02: BreakpointsMax,
-    display03: BreakpointsMd,
-    display04: BreakpointsXlg,
-    expressiveHeading01: `34`,
-    expressiveHeading02: `26`,
+    display01: BreakpointsLgMaxMd,
+    display02: BreakpointsMaxMdXlg,
+    display03: BreakpointsLgMaxMdXlg,
+    display04: BreakpointsLg43,
+    expressiveHeading01: `12`,
+    expressiveHeading02: `4`,
     expressiveHeading03: Breakpoints,
     expressiveHeading04: BreakpointsFontSize,
     expressiveHeading05: BreakpointsFontSizeFontWeight,
     expressiveHeading06: BreakpointsFontSizeFontWeightLetterSpacing,
     expressiveParagraph01: BreakpointsFontSizeFontWeightLetterSpacingLineHeight,
-    fluidDisplay01: BreakpointsLg,
-    fluidDisplay02: BreakpointsMax,
-    fluidDisplay03: BreakpointsMd,
-    fluidDisplay04: BreakpointsXlg,
+    fluidDisplay01: BreakpointsLgMaxMd,
+    fluidDisplay02: BreakpointsMaxMdXlg,
+    fluidDisplay03: BreakpointsLgMaxMdXlg,
+    fluidDisplay04: BreakpointsLg43,
     fluidHeading03: Breakpoints,
     fluidHeading04: BreakpointsFontSize,
     fluidHeading05: BreakpointsFontSizeFontWeight,
@@ -562,28 +562,28 @@ object ActiveLightUI {
     fluidParagraph01: BreakpointsFontSizeFontWeightLetterSpacingLineHeight,
     fluidQuotation01: BreakpointsFontFamily,
     fluidQuotation02: BreakpointsFontFamilyFontSize,
-    heading01: `24`,
-    heading02: `26`,
-    heading03: `28`,
-    heading04: `29`,
-    heading05: `31`,
-    heading06: `32`,
-    heading07: `33`,
-    headingCompact01: `25`,
-    headingCompact02: `27`,
-    helperText01: `18`,
-    helperText02: `19`,
-    label01: FontSizeFontWeightLetterSpacingLineHeight,
-    label02: `17`,
-    legal01: FontSizeFontWeightLetterSpacingLineHeight,
-    legal02: `17`,
-    productiveHeading01: `25`,
-    productiveHeading02: `27`,
-    productiveHeading03: `28`,
-    productiveHeading04: `29`,
-    productiveHeading05: `31`,
-    productiveHeading06: `32`,
-    productiveHeading07: `33`,
+    heading01: FontSizeFontWeightLetterSpacingLineHeight,
+    heading02: `4`,
+    heading03: `6`,
+    heading04: `7`,
+    heading05: `8`,
+    heading06: `9`,
+    heading07: `11`,
+    headingCompact01: `3`,
+    headingCompact02: `5`,
+    helperText01: FontSizeLetterSpacing,
+    helperText02: LetterSpacingLineHeight,
+    label01: LetterSpacing,
+    label02: FontSizeFontWeight,
+    legal01: LetterSpacing,
+    legal02: FontSizeFontWeight,
+    productiveHeading01: `3`,
+    productiveHeading02: `5`,
+    productiveHeading03: `6`,
+    productiveHeading04: `7`,
+    productiveHeading05: `8`,
+    productiveHeading06: `9`,
+    productiveHeading07: `11`,
     quotation01: BreakpointsFontFamily,
     quotation02: BreakpointsFontFamilyFontSize
   ): ActiveLightUI = {
@@ -623,21 +623,21 @@ object ActiveLightUI {
     
     inline def setBackgroundSelectedHover(value: Numbersign656565): Self = StObject.set(x, "backgroundSelectedHover", value.asInstanceOf[js.Any])
     
-    inline def setBody01(value: `21`): Self = StObject.set(x, "body01", value.asInstanceOf[js.Any])
+    inline def setBody01(value: FontWeightLetterSpacing): Self = StObject.set(x, "body01", value.asInstanceOf[js.Any])
     
-    inline def setBody02(value: `23`): Self = StObject.set(x, "body02", value.asInstanceOf[js.Any])
+    inline def setBody02(value: FontWeightLetterSpacingLineHeight): Self = StObject.set(x, "body02", value.asInstanceOf[js.Any])
     
-    inline def setBodyCompact01(value: `17`): Self = StObject.set(x, "bodyCompact01", value.asInstanceOf[js.Any])
+    inline def setBodyCompact01(value: FontSizeFontWeight): Self = StObject.set(x, "bodyCompact01", value.asInstanceOf[js.Any])
     
-    inline def setBodyCompact02(value: `22`): Self = StObject.set(x, "bodyCompact02", value.asInstanceOf[js.Any])
+    inline def setBodyCompact02(value: FontSizeFontWeightLetterSpacing): Self = StObject.set(x, "bodyCompact02", value.asInstanceOf[js.Any])
     
-    inline def setBodyLong01(value: `21`): Self = StObject.set(x, "bodyLong01", value.asInstanceOf[js.Any])
+    inline def setBodyLong01(value: FontWeightLetterSpacing): Self = StObject.set(x, "bodyLong01", value.asInstanceOf[js.Any])
     
-    inline def setBodyLong02(value: `23`): Self = StObject.set(x, "bodyLong02", value.asInstanceOf[js.Any])
+    inline def setBodyLong02(value: FontWeightLetterSpacingLineHeight): Self = StObject.set(x, "bodyLong02", value.asInstanceOf[js.Any])
     
-    inline def setBodyShort01(value: `17`): Self = StObject.set(x, "bodyShort01", value.asInstanceOf[js.Any])
+    inline def setBodyShort01(value: FontSizeFontWeight): Self = StObject.set(x, "bodyShort01", value.asInstanceOf[js.Any])
     
-    inline def setBodyShort02(value: `22`): Self = StObject.set(x, "bodyShort02", value.asInstanceOf[js.Any])
+    inline def setBodyShort02(value: FontSizeFontWeightLetterSpacing): Self = StObject.set(x, "bodyShort02", value.asInstanceOf[js.Any])
     
     inline def setBorderDisabled(value: Numbersign393939): Self = StObject.set(x, "borderDisabled", value.asInstanceOf[js.Any])
     
@@ -687,9 +687,9 @@ object ActiveLightUI {
     
     inline def setButtonTertiaryHover(value: Numbersignf4f4f4): Self = StObject.set(x, "buttonTertiaryHover", value.asInstanceOf[js.Any])
     
-    inline def setCaption01(value: FontSizeFontWeightLetterSpacingLineHeight): Self = StObject.set(x, "caption01", value.asInstanceOf[js.Any])
+    inline def setCaption01(value: LetterSpacing): Self = StObject.set(x, "caption01", value.asInstanceOf[js.Any])
     
-    inline def setCaption02(value: `16`): Self = StObject.set(x, "caption02", value.asInstanceOf[js.Any])
+    inline def setCaption02(value: LineHeight): Self = StObject.set(x, "caption02", value.asInstanceOf[js.Any])
     
     inline def setCode01(value: FontFamilyFontSize): Self = StObject.set(x, "code01", value.asInstanceOf[js.Any])
     
@@ -719,17 +719,17 @@ object ActiveLightUI {
     
     inline def setDisabled03(value: Numbersigna8a8a8): Self = StObject.set(x, "disabled03", value.asInstanceOf[js.Any])
     
-    inline def setDisplay01(value: BreakpointsLg): Self = StObject.set(x, "display01", value.asInstanceOf[js.Any])
+    inline def setDisplay01(value: BreakpointsLgMaxMd): Self = StObject.set(x, "display01", value.asInstanceOf[js.Any])
     
-    inline def setDisplay02(value: BreakpointsMax): Self = StObject.set(x, "display02", value.asInstanceOf[js.Any])
+    inline def setDisplay02(value: BreakpointsMaxMdXlg): Self = StObject.set(x, "display02", value.asInstanceOf[js.Any])
     
-    inline def setDisplay03(value: BreakpointsMd): Self = StObject.set(x, "display03", value.asInstanceOf[js.Any])
+    inline def setDisplay03(value: BreakpointsLgMaxMdXlg): Self = StObject.set(x, "display03", value.asInstanceOf[js.Any])
     
-    inline def setDisplay04(value: BreakpointsXlg): Self = StObject.set(x, "display04", value.asInstanceOf[js.Any])
+    inline def setDisplay04(value: BreakpointsLg43): Self = StObject.set(x, "display04", value.asInstanceOf[js.Any])
     
-    inline def setExpressiveHeading01(value: `34`): Self = StObject.set(x, "expressiveHeading01", value.asInstanceOf[js.Any])
+    inline def setExpressiveHeading01(value: `12`): Self = StObject.set(x, "expressiveHeading01", value.asInstanceOf[js.Any])
     
-    inline def setExpressiveHeading02(value: `26`): Self = StObject.set(x, "expressiveHeading02", value.asInstanceOf[js.Any])
+    inline def setExpressiveHeading02(value: `4`): Self = StObject.set(x, "expressiveHeading02", value.asInstanceOf[js.Any])
     
     inline def setExpressiveHeading03(value: Breakpoints): Self = StObject.set(x, "expressiveHeading03", value.asInstanceOf[js.Any])
     
@@ -749,13 +749,13 @@ object ActiveLightUI {
     
     inline def setFieldHover(value: Numbersign4c4c4c): Self = StObject.set(x, "fieldHover", value.asInstanceOf[js.Any])
     
-    inline def setFluidDisplay01(value: BreakpointsLg): Self = StObject.set(x, "fluidDisplay01", value.asInstanceOf[js.Any])
+    inline def setFluidDisplay01(value: BreakpointsLgMaxMd): Self = StObject.set(x, "fluidDisplay01", value.asInstanceOf[js.Any])
     
-    inline def setFluidDisplay02(value: BreakpointsMax): Self = StObject.set(x, "fluidDisplay02", value.asInstanceOf[js.Any])
+    inline def setFluidDisplay02(value: BreakpointsMaxMdXlg): Self = StObject.set(x, "fluidDisplay02", value.asInstanceOf[js.Any])
     
-    inline def setFluidDisplay03(value: BreakpointsMd): Self = StObject.set(x, "fluidDisplay03", value.asInstanceOf[js.Any])
+    inline def setFluidDisplay03(value: BreakpointsLgMaxMdXlg): Self = StObject.set(x, "fluidDisplay03", value.asInstanceOf[js.Any])
     
-    inline def setFluidDisplay04(value: BreakpointsXlg): Self = StObject.set(x, "fluidDisplay04", value.asInstanceOf[js.Any])
+    inline def setFluidDisplay04(value: BreakpointsLg43): Self = StObject.set(x, "fluidDisplay04", value.asInstanceOf[js.Any])
     
     inline def setFluidHeading03(value: Breakpoints): Self = StObject.set(x, "fluidHeading03", value.asInstanceOf[js.Any])
     
@@ -785,27 +785,27 @@ object ActiveLightUI {
     
     inline def setFocusInverse(value: Numbersign0f62fe): Self = StObject.set(x, "focusInverse", value.asInstanceOf[js.Any])
     
-    inline def setHeading01(value: `24`): Self = StObject.set(x, "heading01", value.asInstanceOf[js.Any])
+    inline def setHeading01(value: FontSizeFontWeightLetterSpacingLineHeight): Self = StObject.set(x, "heading01", value.asInstanceOf[js.Any])
     
-    inline def setHeading02(value: `26`): Self = StObject.set(x, "heading02", value.asInstanceOf[js.Any])
+    inline def setHeading02(value: `4`): Self = StObject.set(x, "heading02", value.asInstanceOf[js.Any])
     
-    inline def setHeading03(value: `28`): Self = StObject.set(x, "heading03", value.asInstanceOf[js.Any])
+    inline def setHeading03(value: `6`): Self = StObject.set(x, "heading03", value.asInstanceOf[js.Any])
     
-    inline def setHeading04(value: `29`): Self = StObject.set(x, "heading04", value.asInstanceOf[js.Any])
+    inline def setHeading04(value: `7`): Self = StObject.set(x, "heading04", value.asInstanceOf[js.Any])
     
-    inline def setHeading05(value: `31`): Self = StObject.set(x, "heading05", value.asInstanceOf[js.Any])
+    inline def setHeading05(value: `8`): Self = StObject.set(x, "heading05", value.asInstanceOf[js.Any])
     
-    inline def setHeading06(value: `32`): Self = StObject.set(x, "heading06", value.asInstanceOf[js.Any])
+    inline def setHeading06(value: `9`): Self = StObject.set(x, "heading06", value.asInstanceOf[js.Any])
     
-    inline def setHeading07(value: `33`): Self = StObject.set(x, "heading07", value.asInstanceOf[js.Any])
+    inline def setHeading07(value: `11`): Self = StObject.set(x, "heading07", value.asInstanceOf[js.Any])
     
-    inline def setHeadingCompact01(value: `25`): Self = StObject.set(x, "headingCompact01", value.asInstanceOf[js.Any])
+    inline def setHeadingCompact01(value: `3`): Self = StObject.set(x, "headingCompact01", value.asInstanceOf[js.Any])
     
-    inline def setHeadingCompact02(value: `27`): Self = StObject.set(x, "headingCompact02", value.asInstanceOf[js.Any])
+    inline def setHeadingCompact02(value: `5`): Self = StObject.set(x, "headingCompact02", value.asInstanceOf[js.Any])
     
-    inline def setHelperText01(value: `18`): Self = StObject.set(x, "helperText01", value.asInstanceOf[js.Any])
+    inline def setHelperText01(value: FontSizeLetterSpacing): Self = StObject.set(x, "helperText01", value.asInstanceOf[js.Any])
     
-    inline def setHelperText02(value: `19`): Self = StObject.set(x, "helperText02", value.asInstanceOf[js.Any])
+    inline def setHelperText02(value: LetterSpacingLineHeight): Self = StObject.set(x, "helperText02", value.asInstanceOf[js.Any])
     
     inline def setHighlight(value: Numbersign0043ce): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
     
@@ -879,9 +879,9 @@ object ActiveLightUI {
     
     inline def setInverseSupport04(value: Numbersign0f62fe): Self = StObject.set(x, "inverseSupport04", value.asInstanceOf[js.Any])
     
-    inline def setLabel01(value: FontSizeFontWeightLetterSpacingLineHeight): Self = StObject.set(x, "label01", value.asInstanceOf[js.Any])
+    inline def setLabel01(value: LetterSpacing): Self = StObject.set(x, "label01", value.asInstanceOf[js.Any])
     
-    inline def setLabel02(value: `17`): Self = StObject.set(x, "label02", value.asInstanceOf[js.Any])
+    inline def setLabel02(value: FontSizeFontWeight): Self = StObject.set(x, "label02", value.asInstanceOf[js.Any])
     
     inline def setLayer(value: Numbersign393939): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
@@ -903,9 +903,9 @@ object ActiveLightUI {
     
     inline def setLayerSelectedInverse(value: Numbersignf4f4f4): Self = StObject.set(x, "layerSelectedInverse", value.asInstanceOf[js.Any])
     
-    inline def setLegal01(value: FontSizeFontWeightLetterSpacingLineHeight): Self = StObject.set(x, "legal01", value.asInstanceOf[js.Any])
+    inline def setLegal01(value: LetterSpacing): Self = StObject.set(x, "legal01", value.asInstanceOf[js.Any])
     
-    inline def setLegal02(value: `17`): Self = StObject.set(x, "legal02", value.asInstanceOf[js.Any])
+    inline def setLegal02(value: FontSizeFontWeight): Self = StObject.set(x, "legal02", value.asInstanceOf[js.Any])
     
     inline def setLink01(value: Numbersign78a9ff): Self = StObject.set(x, "link01", value.asInstanceOf[js.Any])
     
@@ -925,19 +925,19 @@ object ActiveLightUI {
     
     inline def setOverlay01(value: /* rgba(0, 0, 0, 0.65) */ String): Self = StObject.set(x, "overlay01", value.asInstanceOf[js.Any])
     
-    inline def setProductiveHeading01(value: `25`): Self = StObject.set(x, "productiveHeading01", value.asInstanceOf[js.Any])
+    inline def setProductiveHeading01(value: `3`): Self = StObject.set(x, "productiveHeading01", value.asInstanceOf[js.Any])
     
-    inline def setProductiveHeading02(value: `27`): Self = StObject.set(x, "productiveHeading02", value.asInstanceOf[js.Any])
+    inline def setProductiveHeading02(value: `5`): Self = StObject.set(x, "productiveHeading02", value.asInstanceOf[js.Any])
     
-    inline def setProductiveHeading03(value: `28`): Self = StObject.set(x, "productiveHeading03", value.asInstanceOf[js.Any])
+    inline def setProductiveHeading03(value: `6`): Self = StObject.set(x, "productiveHeading03", value.asInstanceOf[js.Any])
     
-    inline def setProductiveHeading04(value: `29`): Self = StObject.set(x, "productiveHeading04", value.asInstanceOf[js.Any])
+    inline def setProductiveHeading04(value: `7`): Self = StObject.set(x, "productiveHeading04", value.asInstanceOf[js.Any])
     
-    inline def setProductiveHeading05(value: `31`): Self = StObject.set(x, "productiveHeading05", value.asInstanceOf[js.Any])
+    inline def setProductiveHeading05(value: `8`): Self = StObject.set(x, "productiveHeading05", value.asInstanceOf[js.Any])
     
-    inline def setProductiveHeading06(value: `32`): Self = StObject.set(x, "productiveHeading06", value.asInstanceOf[js.Any])
+    inline def setProductiveHeading06(value: `9`): Self = StObject.set(x, "productiveHeading06", value.asInstanceOf[js.Any])
     
-    inline def setProductiveHeading07(value: `33`): Self = StObject.set(x, "productiveHeading07", value.asInstanceOf[js.Any])
+    inline def setProductiveHeading07(value: `11`): Self = StObject.set(x, "productiveHeading07", value.asInstanceOf[js.Any])
     
     inline def setQuotation01(value: BreakpointsFontFamily): Self = StObject.set(x, "quotation01", value.asInstanceOf[js.Any])
     

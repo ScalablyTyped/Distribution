@@ -1,7 +1,5 @@
 package typings.canvasSize
 
-import typings.canvasSize.canvasSizeBooleans.`false`
-import typings.canvasSize.canvasSizeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,14 +23,14 @@ object anon {
     
     var step: js.UndefOr[Double] = js.undefined
     
-    var usePromise: js.UndefOr[Boolean] & js.UndefOr[`false`]
+    var usePromise: js.UndefOr[Boolean] = js.undefined
     
     var useWorker: js.UndefOr[Boolean] = js.undefined
   }
   object CanvasSizeMaxOptionsusePr {
     
-    inline def apply(usePromise: js.UndefOr[Boolean] & js.UndefOr[`false`]): CanvasSizeMaxOptionsusePr = {
-      val __obj = js.Dynamic.literal(usePromise = usePromise.asInstanceOf[js.Any])
+    inline def apply(): CanvasSizeMaxOptionsusePr = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CanvasSizeMaxOptionsusePr]
     }
     
@@ -58,7 +56,9 @@ object anon {
       
       inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
       
-      inline def setUsePromise(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "usePromise", value.asInstanceOf[js.Any])
+      inline def setUsePromise(value: Boolean): Self = StObject.set(x, "usePromise", value.asInstanceOf[js.Any])
+      
+      inline def setUsePromiseUndefined: Self = StObject.set(x, "usePromise", js.undefined)
       
       inline def setUseWorker(value: Boolean): Self = StObject.set(x, "useWorker", value.asInstanceOf[js.Any])
       
@@ -83,14 +83,14 @@ object anon {
     
     var step: js.UndefOr[Double] = js.undefined
     
-    var usePromise: js.UndefOr[Boolean] & `true`
+    var usePromise: js.UndefOr[Boolean] = js.undefined
     
     var useWorker: js.UndefOr[Boolean] = js.undefined
   }
   object CanvasSizeMaxOptionsusePrMax {
     
-    inline def apply(usePromise: js.UndefOr[Boolean] & `true`): CanvasSizeMaxOptionsusePrMax = {
-      val __obj = js.Dynamic.literal(usePromise = usePromise.asInstanceOf[js.Any])
+    inline def apply(): CanvasSizeMaxOptionsusePrMax = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CanvasSizeMaxOptionsusePrMax]
     }
     
@@ -116,7 +116,9 @@ object anon {
       
       inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
       
-      inline def setUsePromise(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "usePromise", value.asInstanceOf[js.Any])
+      inline def setUsePromise(value: Boolean): Self = StObject.set(x, "usePromise", value.asInstanceOf[js.Any])
+      
+      inline def setUsePromiseUndefined: Self = StObject.set(x, "usePromise", js.undefined)
       
       inline def setUseWorker(value: Boolean): Self = StObject.set(x, "useWorker", value.asInstanceOf[js.Any])
       

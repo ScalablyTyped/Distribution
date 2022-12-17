@@ -1,7 +1,7 @@
 package typings.rimraf
 
 import typings.node.NodeJS.ErrnoException
-import typings.node.anon.EncodingWithFileTypes
+import typings.node.anon.Encoding
 import typings.node.anon.ObjectEncodingOptionswith
 import typings.node.anon.ObjectEncodingOptionswithEncoding
 import typings.node.anon.StatOptionsbigintfalseund
@@ -35,10 +35,10 @@ object anon {
   trait FnCallPathOptions extends StObject {
     
     def apply(path: PathLike): js.Array[Buffer | String] = js.native
-    def apply(path: PathLike, options: EncodingWithFileTypes): js.Array[String] = js.native
+    def apply(path: PathLike, options: Encoding): js.Array[Buffer] = js.native
     def apply(path: PathLike, options: ObjectEncodingOptionswith): js.Array[Buffer | String] = js.native
     def apply(path: PathLike, options: ObjectEncodingOptionswithEncoding): js.Array[Dirent] = js.native
-    def apply(path: PathLike, options: WithFileTypes): js.Array[Buffer] = js.native
+    def apply(path: PathLike, options: WithFileTypes): js.Array[String] = js.native
     def apply(path: PathLike, options: BufferEncoding): js.Array[Buffer | String] = js.native
     def apply(path: PathLike, options: buffer): js.Array[Buffer] = js.native
   }
@@ -94,8 +94,8 @@ object anon {
     ): Unit = js.native
     def apply(
       path: PathLike,
-      options: EncodingWithFileTypes,
-      callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[String], Unit]
+      options: Encoding,
+      callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[Buffer], Unit]
     ): Unit = js.native
     def apply(
       path: PathLike,
@@ -110,7 +110,7 @@ object anon {
     def apply(
       path: PathLike,
       options: WithFileTypes,
-      callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[Buffer], Unit]
+      callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[String], Unit]
     ): Unit = js.native
     def apply(
       path: PathLike,

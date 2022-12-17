@@ -1,6 +1,8 @@
 package typings.prosemirrorTransform
 
 import typings.prosemirrorModel.mod.NodeType
+import typings.prosemirrorModel.mod.Schema
+import typings.prosemirrorTransform.mod.Step
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,6 +32,23 @@ object anon {
       inline def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
       
       inline def setType(value: NodeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait FromJSON extends StObject {
+    
+    def fromJSON(schema: Schema[Any, Any], json: Any): Step
+  }
+  object FromJSON {
+    
+    inline def apply(fromJSON: (Schema[Any, Any], Any) => Step): FromJSON = {
+      val __obj = js.Dynamic.literal(fromJSON = js.Any.fromFunction2(fromJSON))
+      __obj.asInstanceOf[FromJSON]
+    }
+    
+    extension [Self <: FromJSON](x: Self) {
+      
+      inline def setFromJSON(value: (Schema[Any, Any], Any) => Step): Self = StObject.set(x, "fromJSON", js.Any.fromFunction2(value))
     }
   }
   

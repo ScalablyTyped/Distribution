@@ -1,62 +1,53 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.`private`
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.all
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.selected
+import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Keyid extends StObject {
   
-  /** @example 2011-01-26T19:01:12Z */
-  var created_at: js.UndefOr[String] = js.undefined
+  /** @description Value for your secret, encrypted with [LibSodium](https://libsodium.gitbook.io/doc/bindings_for_other_languages) using the public key retrieved from the [Get an organization public key](https://docs.github.com/rest/reference/actions#get-an-organization-public-key) endpoint. */
+  var encrypted_value: js.UndefOr[String] = js.undefined
   
-  /** @example 2 */
-  var id: js.UndefOr[Double] = js.undefined
+  /** @description ID of the key you used to encrypt the secret. */
+  var key_id: js.UndefOr[String] = js.undefined
   
-  /**
-    * @description The Base64 encoded public key.
-    * @example hBT5WZEj8ZoOv6TYJsfWq7MxTEQopZO5/IT3ZCVQPzs=
-    */
-  var key: String
+  /** @description An array of repository ids that can access the organization secret. You can only provide a list of repository ids when the `visibility` is set to `selected`. You can manage the list of selected repositories using the [List selected repositories for an organization secret](https://docs.github.com/rest/reference/actions#list-selected-repositories-for-an-organization-secret), [Set selected repositories for an organization secret](https://docs.github.com/rest/reference/actions#set-selected-repositories-for-an-organization-secret), and [Remove selected repository from an organization secret](https://docs.github.com/rest/reference/actions#remove-selected-repository-from-an-organization-secret) endpoints. */
+  var selected_repository_ids: js.UndefOr[js.Array[Partial[Double] & Partial[String]]] = js.undefined
   
   /**
-    * @description The identifier for the key.
-    * @example 1234567
+    * @description Which type of organization repositories have access to the organization secret. `selected` means only the repositories specified by `selected_repository_ids` can access the secret.
+    * @enum {string}
     */
-  var key_id: String
-  
-  /** @example ssh-rsa AAAAB3NzaC1yc2EAAA */
-  var title: js.UndefOr[String] = js.undefined
-  
-  /** @example https://api.github.com/user/keys/2 */
-  var url: js.UndefOr[String] = js.undefined
+  var visibility: all | `private` | selected
 }
 object Keyid {
   
-  inline def apply(key: String, key_id: String): Keyid = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], key_id = key_id.asInstanceOf[js.Any])
+  inline def apply(visibility: all | `private` | selected): Keyid = {
+    val __obj = js.Dynamic.literal(visibility = visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[Keyid]
   }
   
   extension [Self <: Keyid](x: Self) {
     
-    inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+    inline def setEncrypted_value(value: String): Self = StObject.set(x, "encrypted_value", value.asInstanceOf[js.Any])
     
-    inline def setCreated_atUndefined: Self = StObject.set(x, "created_at", js.undefined)
-    
-    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-    
-    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
-    
-    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setEncrypted_valueUndefined: Self = StObject.set(x, "encrypted_value", js.undefined)
     
     inline def setKey_id(value: String): Self = StObject.set(x, "key_id", value.asInstanceOf[js.Any])
     
-    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setKey_idUndefined: Self = StObject.set(x, "key_id", js.undefined)
     
-    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setSelected_repository_ids(value: js.Array[Partial[Double] & Partial[String]]): Self = StObject.set(x, "selected_repository_ids", value.asInstanceOf[js.Any])
     
-    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setSelected_repository_idsUndefined: Self = StObject.set(x, "selected_repository_ids", js.undefined)
     
-    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setSelected_repository_idsVarargs(value: (Partial[Double] & Partial[String])*): Self = StObject.set(x, "selected_repository_ids", js.Array(value*))
+    
+    inline def setVisibility(value: all | `private` | selected): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
   }
 }

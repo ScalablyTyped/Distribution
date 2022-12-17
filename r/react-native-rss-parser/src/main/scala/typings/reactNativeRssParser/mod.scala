@@ -32,7 +32,7 @@ object mod {
     
     var items: js.Array[FeedItem]
     
-    var itunes: Authors
+    var itunes: Block
     
     var language: String
     
@@ -54,7 +54,7 @@ object mod {
       description: String,
       image: Description,
       items: js.Array[FeedItem],
-      itunes: Authors,
+      itunes: Block,
       language: String,
       lastPublished: String,
       lastUpdated: String,
@@ -89,7 +89,7 @@ object mod {
       
       inline def setItemsVarargs(value: FeedItem*): Self = StObject.set(x, "items", js.Array(value*))
       
-      inline def setItunes(value: Authors): Self = StObject.set(x, "itunes", value.asInstanceOf[js.Any])
+      inline def setItunes(value: Block): Self = StObject.set(x, "itunes", value.asInstanceOf[js.Any])
       
       inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
@@ -121,7 +121,7 @@ object mod {
     
     var id: String
     
-    var itunes: Block
+    var itunes: Authors
     
     var links: js.Array[Rel]
     
@@ -138,7 +138,7 @@ object mod {
       description: String,
       enclosures: js.Array[Length],
       id: String,
-      itunes: Block,
+      itunes: Authors,
       links: js.Array[Rel],
       published: String,
       title: String
@@ -167,7 +167,7 @@ object mod {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setItunes(value: Block): Self = StObject.set(x, "itunes", value.asInstanceOf[js.Any])
+      inline def setItunes(value: Authors): Self = StObject.set(x, "itunes", value.asInstanceOf[js.Any])
       
       inline def setLinks(value: js.Array[Rel]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       

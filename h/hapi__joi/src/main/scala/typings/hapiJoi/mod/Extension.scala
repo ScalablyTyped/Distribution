@@ -1,7 +1,7 @@
 package typings.hapiJoi.mod
 
 import typings.hapiJoi.anon.Build
-import typings.hapiJoi.anon.From
+import typings.hapiJoi.anon.To
 import typings.std.Record
 import typings.std.ThisType
 import org.scalablytyped.runtime.StObject
@@ -17,7 +17,7 @@ trait Extension extends StObject {
   /**
     * undocumented options
     */
-  var cast: js.UndefOr[Record[String, From]] = js.undefined
+  var cast: js.UndefOr[Record[String, To]] = js.undefined
   
   var coerce: js.UndefOr[CoerceFunction | CoerceObject] = js.undefined
   
@@ -65,7 +65,7 @@ object Extension {
     
     inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
     
-    inline def setCast(value: Record[String, From]): Self = StObject.set(x, "cast", value.asInstanceOf[js.Any])
+    inline def setCast(value: Record[String, To]): Self = StObject.set(x, "cast", value.asInstanceOf[js.Any])
     
     inline def setCastUndefined: Self = StObject.set(x, "cast", js.undefined)
     

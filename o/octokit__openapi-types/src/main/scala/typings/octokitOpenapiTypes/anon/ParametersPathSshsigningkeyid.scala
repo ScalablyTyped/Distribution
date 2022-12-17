@@ -8,11 +8,11 @@ trait ParametersPathSshsigningkeyid extends StObject {
   
   var parameters: PathSshsigningkeyid
   
-  var responses: `200ContentApplicationjsonCreatedatId`
+  var responses: `200Content378`
 }
 object ParametersPathSshsigningkeyid {
   
-  inline def apply(parameters: PathSshsigningkeyid, responses: `200ContentApplicationjsonCreatedatId`): ParametersPathSshsigningkeyid = {
+  inline def apply(parameters: PathSshsigningkeyid, responses: `200Content378`): ParametersPathSshsigningkeyid = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathSshsigningkeyid]
   }
@@ -21,6 +21,6 @@ object ParametersPathSshsigningkeyid {
     
     inline def setParameters(value: PathSshsigningkeyid): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200ContentApplicationjsonCreatedatId`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200Content378`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

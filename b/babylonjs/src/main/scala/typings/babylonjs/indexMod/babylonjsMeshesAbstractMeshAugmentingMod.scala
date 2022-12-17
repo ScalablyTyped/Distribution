@@ -1,6 +1,5 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.meshesMeshMod.Mesh
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -158,12 +157,12 @@ object babylonjsMeshesAbstractMeshAugmentingMod {
       * @see https://www.babylonjs-playground.com/#0BS5U0#0
       */
     def setPhysicsLinkWith(
-      otherMesh: Mesh,
+      otherMesh: typings.babylonjs.meshesMeshMod.Mesh,
       pivot1: typings.babylonjs.mathsMathDotvectorMod.Vector3,
       pivot2: typings.babylonjs.mathsMathDotvectorMod.Vector3
     ): typings.babylonjs.physicsPhysicsEngineComponentMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh = js.native
     def setPhysicsLinkWith(
-      otherMesh: Mesh,
+      otherMesh: typings.babylonjs.meshesMeshMod.Mesh,
       pivot1: typings.babylonjs.mathsMathDotvectorMod.Vector3,
       pivot2: typings.babylonjs.mathsMathDotvectorMod.Vector3,
       options: Any

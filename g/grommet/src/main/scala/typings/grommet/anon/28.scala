@@ -1,18 +1,12 @@
 package typings.grommet.anon
 
-import typings.grommet.themesBaseMod.ExtendProps
-import typings.grommet.themesBaseMod.ExtendType
-import typings.grommet.themesBaseMod.ExtendValue
-import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `28` extends StObject {
   
-  var extend: js.UndefOr[ExtendType[Record[String, Any]]] = js.undefined
-  
-  var size: js.UndefOr[String] = js.undefined
+  var gap: js.UndefOr[Row] = js.undefined
 }
 object `28` {
   
@@ -23,14 +17,8 @@ object `28` {
   
   extension [Self <: `28`](x: Self) {
     
-    inline def setExtend(value: ExtendType[Record[String, Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+    inline def setGap(value: Row): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
     
-    inline def setExtendFunction1(value: /* props */ ExtendProps[Record[String, Any]] => ExtendValue[Record[String, Any]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
-    
-    inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
-    
-    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-    
-    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
   }
 }

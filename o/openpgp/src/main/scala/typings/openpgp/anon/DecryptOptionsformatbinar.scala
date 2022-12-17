@@ -20,7 +20,7 @@ trait DecryptOptionsformatbinar extends StObject {
   /**
     * (optional) whether to return data as a string(Stream) or Uint8Array(Stream). If 'utf8' (the default), also normalize newlines.
     */
-  var format: (js.UndefOr[utf8 | binary]) & binary
+  var format: js.UndefOr[utf8 | binary] = js.undefined
   
   /**
     * the message object with the encrypted data
@@ -59,8 +59,8 @@ trait DecryptOptionsformatbinar extends StObject {
 }
 object DecryptOptionsformatbinar {
   
-  inline def apply(format: (js.UndefOr[utf8 | binary]) & binary, message: typings.openpgp.mod.message.Message): DecryptOptionsformatbinar = {
-    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+  inline def apply(message: typings.openpgp.mod.message.Message): DecryptOptionsformatbinar = {
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecryptOptionsformatbinar]
   }
   
@@ -70,7 +70,9 @@ object DecryptOptionsformatbinar {
     
     inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    inline def setFormat(value: (js.UndefOr[utf8 | binary]) & binary): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: utf8 | binary): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     inline def setMessage(value: typings.openpgp.mod.message.Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

@@ -7,10 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libContainerContainerMod {
   
+  @JSImport("inversify/lib/container/container", "Container")
   @js.native
-  trait Container
+  open class Container ()
     extends StObject
        with typings.inversify.libInterfacesInterfacesMod.interfaces.Container {
+    def this(containerOptions: ContainerOptions) = this()
     
     /* private */ var _activations: Any = js.native
     
@@ -71,5 +73,18 @@ object libContainerContainerMod {
     /* private */ var _snapshots: Any = js.native
     
     def createChild(containerOptions: ContainerOptions): Container = js.native
+  }
+  object Container {
+    
+    @JSImport("inversify/lib/container/container", "Container")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    inline def merge(
+      container1: typings.inversify.libInterfacesInterfacesMod.interfaces.Container,
+      container2: typings.inversify.libInterfacesInterfacesMod.interfaces.Container,
+      containers: typings.inversify.libInterfacesInterfacesMod.interfaces.Container*
+    ): typings.inversify.libInterfacesInterfacesMod.interfaces.Container = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")((scala.List(container1.asInstanceOf[js.Any], container2.asInstanceOf[js.Any])).`++`(containers.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.inversify.libInterfacesInterfacesMod.interfaces.Container]
   }
 }

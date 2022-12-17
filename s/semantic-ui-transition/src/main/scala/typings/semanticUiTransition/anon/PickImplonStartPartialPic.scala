@@ -43,7 +43,7 @@ trait PickImplonStartPartialPic
   
   def onStart(): Unit
   @JSName("onStart")
-  var onStart_Original: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+  var onStart_Original: js.ThisFunction0[/* this */ JQuery, Unit]
   
   var performance: js.UndefOr[Boolean] = js.undefined
   
@@ -59,9 +59,7 @@ trait PickImplonStartPartialPic
 }
 object PickImplonStartPartialPic {
   
-  inline def apply(
-    onStart: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-  ): PickImplonStartPartialPic = {
+  inline def apply(onStart: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonStartPartialPic = {
     val __obj = js.Dynamic.literal(onStart = onStart.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonStartPartialPic]
   }
@@ -120,9 +118,7 @@ object PickImplonStartPartialPic {
     
     inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     
-    inline def setOnStart(
-      value: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-    ): Self = StObject.set(x, "onStart", value.asInstanceOf[js.Any])
+    inline def setOnStart(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onStart", value.asInstanceOf[js.Any])
     
     inline def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
     

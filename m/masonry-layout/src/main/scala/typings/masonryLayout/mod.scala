@@ -17,9 +17,6 @@ object mod {
     def this(selector: Element) = this()
     def this(selector: String, options: Options) = this()
     def this(selector: Element, options: Options) = this()
-    
-    /* CompleteClass */
-    var masonry: js.UndefOr[js.Function0[Unit]] & (js.UndefOr[js.Function2[/* eventName */ String, /* listener */ Any, Unit]]) = js.native
   }
   
   trait HiddenOrVisibleStyleOption extends StObject {
@@ -65,7 +62,7 @@ object mod {
     
     var layoutItems: js.UndefOr[js.Function2[/* items */ js.Array[Any], /* isStill */ js.UndefOr[Boolean], Unit]] = js.undefined
     
-    var masonry: js.UndefOr[js.Function0[Unit]] & (js.UndefOr[js.Function2[/* eventName */ String, /* listener */ Any, Unit]])
+    var masonry: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var off: js.UndefOr[js.Function2[/* eventName */ String, /* listener */ Any, Unit]] = js.undefined
     
@@ -87,10 +84,8 @@ object mod {
   }
   object Masonry {
     
-    inline def apply(
-      masonry: js.UndefOr[js.Function0[Unit]] & (js.UndefOr[js.Function2[/* eventName */ String, /* listener */ Any, Unit]])
-    ): Masonry = {
-      val __obj = js.Dynamic.literal(masonry = masonry.asInstanceOf[js.Any])
+    inline def apply(): Masonry = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Masonry]
     }
     
@@ -124,9 +119,9 @@ object mod {
       
       inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       
-      inline def setMasonry(
-        value: js.UndefOr[js.Function0[Unit]] & (js.UndefOr[js.Function2[/* eventName */ String, /* listener */ Any, Unit]])
-      ): Self = StObject.set(x, "masonry", value.asInstanceOf[js.Any])
+      inline def setMasonry(value: () => Unit): Self = StObject.set(x, "masonry", js.Any.fromFunction0(value))
+      
+      inline def setMasonryUndefined: Self = StObject.set(x, "masonry", js.undefined)
       
       inline def setOff(value: (/* eventName */ String, /* listener */ Any) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
       

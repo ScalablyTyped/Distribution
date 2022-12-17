@@ -45,7 +45,7 @@ trait typeendcausedBydragscaleu
     * 视野变化结束为 `end`
     */
   /** 事件类型 */
-  var `type`: end & String
+  var `type`: end
 }
 object typeendcausedBydragscaleu {
   
@@ -54,11 +54,10 @@ object typeendcausedBydragscaleu {
     currentTarget: typings.wechatMiniprogram.WechatMiniprogram.Target[IAnyObject],
     detail: Rotate,
     target: typings.wechatMiniprogram.WechatMiniprogram.Target[IAnyObject],
-    timeStamp: Double,
-    `type`: end & String
+    timeStamp: Double
   ): typeendcausedBydragscaleu = {
     val __obj = js.Dynamic.literal(causedBy = causedBy.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("end")
     __obj.asInstanceOf[typeendcausedBydragscaleu]
   }
   
@@ -78,6 +77,6 @@ object typeendcausedBydragscaleu {
     
     inline def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
     
-    inline def setType(value: end & String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: end): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

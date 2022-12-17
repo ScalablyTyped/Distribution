@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.react.mod.Component
 import typings.react.mod.ReactElement
 import typings.reactNative.mod.ColorValue
-import typings.reactNative.mod.Modal
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
@@ -15,22 +14,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait withPointerbooleanundefin extends StObject {
   
-  var ModalComponent: (js.UndefOr[
+  var ModalComponent: js.UndefOr[
     TypeofComponent & (Instantiable1[
       /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
       Component[js.Object, js.Object, js.Object]
     ])
-  ]) & (Instantiable1[/* props */ ReadonlyModalProps, Modal]) = js.native
+  ] = js.native
   
-  var backgroundColor: js.UndefOr[ColorValue] & String = js.native
+  var backgroundColor: js.UndefOr[ColorValue] = js.native
   
-  var closeOnlyOnBackdropPress: js.UndefOr[Boolean] & Boolean = js.native
+  var closeOnlyOnBackdropPress: js.UndefOr[Boolean] = js.native
   
-  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] & js.Object = js.native
+  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
   
-  var height: (js.UndefOr[String | Double]) & Double = js.native
+  var height: js.UndefOr[String | Double] = js.native
   
-  var highlightColor: js.UndefOr[ColorValue] & String = js.native
+  var highlightColor: js.UndefOr[ColorValue] = js.native
   
   def onClose(): Unit = js.native
   @JSName("onClose")
@@ -40,7 +39,7 @@ trait withPointerbooleanundefin extends StObject {
   @JSName("onOpen")
   var onOpen_FwithPointerbooleanundefin: js.UndefOr[js.Function0[Unit]] = js.native
   
-  var overlayColor: js.UndefOr[ColorValue] & String = js.native
+  var overlayColor: js.UndefOr[ColorValue] = js.native
   
   var pointerColor: js.UndefOr[ColorValue] = js.native
   
@@ -48,19 +47,19 @@ trait withPointerbooleanundefin extends StObject {
   
   var replaceTheme: js.UndefOr[js.Function1[/* updates */ RecursivePartialFullTheme, Unit]] = js.native
   
-  var skipAndroidStatusBar: js.UndefOr[Boolean] & Boolean = js.native
+  var skipAndroidStatusBar: js.UndefOr[Boolean] = js.native
   
   var theme: js.UndefOr[ThemeTooltipProps] = js.native
   
-  var toggleAction: js.UndefOr[String] & String = js.native
+  var toggleAction: js.UndefOr[String] = js.native
   
-  var toggleOnPress: js.UndefOr[Boolean] & Boolean = js.native
+  var toggleOnPress: js.UndefOr[Boolean] = js.native
   
   var updateTheme: js.UndefOr[js.Function1[/* updates */ RecursivePartialFullTheme, Unit]] = js.native
   
-  var width: (js.UndefOr[String | Double]) & Double = js.native
+  var width: js.UndefOr[String | Double] = js.native
   
-  var withOverlay: js.UndefOr[Boolean] & Boolean = js.native
+  var withOverlay: js.UndefOr[Boolean] = js.native
   
-  var withPointer: js.UndefOr[Boolean] & Boolean = js.native
+  var withPointer: js.UndefOr[Boolean] = js.native
 }

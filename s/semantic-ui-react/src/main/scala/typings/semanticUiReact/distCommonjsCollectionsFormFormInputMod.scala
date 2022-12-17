@@ -136,12 +136,8 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
        with /* key */ StringDictionary[Any]
   object FormInputProps {
     
-    inline def apply(
-      id: (js.UndefOr[Double | String]) & js.UndefOr[String],
-      required: js.UndefOr[Any] & js.UndefOr[Boolean],
-      width: js.UndefOr[SemanticWIDTHS] & (js.UndefOr[Double | String])
-    ): FormInputProps = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    inline def apply(): FormInputProps = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FormInputProps]
     }
   }
@@ -487,7 +483,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
     /** An Icon can appear inside an Input on the left. */
     var iconPosition: js.UndefOr[left] = js.undefined
     
-    var id: (js.UndefOr[Double | String]) & js.UndefOr[String]
+    var id: js.UndefOr[Double | String] = js.undefined
     
     var `inline`: js.UndefOr[Boolean] = js.undefined
     
@@ -746,7 +742,7 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var required: js.UndefOr[Any] & js.UndefOr[Boolean]
+    var required: js.UndefOr[Any] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
@@ -796,16 +792,12 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
     
     var vocab: js.UndefOr[String] = js.undefined
     
-    var width: js.UndefOr[SemanticWIDTHS] & (js.UndefOr[Double | String])
+    var width: js.UndefOr[SemanticWIDTHS] = js.undefined
   }
   object StrictFormInputProps {
     
-    inline def apply(
-      id: (js.UndefOr[Double | String]) & js.UndefOr[String],
-      required: js.UndefOr[Any] & js.UndefOr[Boolean],
-      width: js.UndefOr[SemanticWIDTHS] & (js.UndefOr[Double | String])
-    ): StrictFormInputProps = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    inline def apply(): StrictFormInputProps = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictFormInputProps]
     }
     
@@ -1183,7 +1175,9 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      inline def setId(value: (js.UndefOr[Double | String]) & js.UndefOr[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
       inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       
@@ -1629,7 +1623,9 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
-      inline def setRequired(value: js.UndefOr[Any] & js.UndefOr[Boolean]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Any): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      
+      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
@@ -1717,7 +1713,9 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
       
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
       
-      inline def setWidth(value: js.UndefOr[SemanticWIDTHS] & (js.UndefOr[Double | String])): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: SemanticWIDTHS): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   

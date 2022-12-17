@@ -44,7 +44,7 @@ trait PickImplopacityPartialPic
   
   var onShow: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
-  var opacity: (auto | Double) & (js.UndefOr[auto | Double])
+  var opacity: auto | Double
   
   var performance: js.UndefOr[Boolean] = js.undefined
   
@@ -64,7 +64,7 @@ trait PickImplopacityPartialPic
 }
 object PickImplopacityPartialPic {
   
-  inline def apply(opacity: (auto | Double) & (js.UndefOr[auto | Double])): PickImplopacityPartialPic = {
+  inline def apply(opacity: auto | Double): PickImplopacityPartialPic = {
     val __obj = js.Dynamic.literal(opacity = opacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplopacityPartialPic]
   }
@@ -119,7 +119,7 @@ object PickImplopacityPartialPic {
     
     inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
-    inline def setOpacity(value: (auto | Double) & (js.UndefOr[auto | Double])): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: auto | Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     inline def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
     

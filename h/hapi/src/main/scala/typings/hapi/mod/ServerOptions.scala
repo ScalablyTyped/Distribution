@@ -2,10 +2,10 @@ package typings.hapi.mod
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.catbox.mod.ClientOptions
+import typings.hapi.anon.Concurrent
 import typings.hapi.anon.Encoding
 import typings.hapi.anon.IsCaseSensitive
 import typings.hapi.anon.Log
-import typings.hapi.anon.MaxEventLoopDelay
 import typings.hapi.anon.Parser
 import typings.hapi.hapiBooleans.`false`
 import typings.mimos.mod.MimosOptions
@@ -111,7 +111,7 @@ trait ServerOptions extends StObject {
     * * maxRssBytes - maximum process RSS size over which incoming requests are rejected with an HTTP Server Timeout (503) response. Defaults to 0 (no limit).
     * * maxEventLoopDelay - maximum event loop delay duration in milliseconds over which incoming requests are rejected with an HTTP Server Timeout (503) response. Defaults to 0 (no limit).
     */
-  var load: js.UndefOr[MaxEventLoopDelay] = js.undefined
+  var load: js.UndefOr[Concurrent] = js.undefined
   
   /**
     * Default value: none.
@@ -245,7 +245,7 @@ object ServerOptions {
     
     inline def setListenerUndefined: Self = StObject.set(x, "listener", js.undefined)
     
-    inline def setLoad(value: MaxEventLoopDelay): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
+    inline def setLoad(value: Concurrent): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     
     inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
     

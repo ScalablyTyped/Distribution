@@ -1,9 +1,9 @@
 package typings.dmgLicense
 
-import typings.dmgLicense.dmgLicenseBooleans.`false`
-import typings.dmgLicense.dmgLicenseBooleans.`true`
 import typings.dmgLicense.dmgLicenseStrings.TEXT
 import typings.dmgLicense.dmgLicenseStrings.`RTF `
+import typings.dmgLicense.libLanguageMod.Language
+import typings.dmgLicense.libLanguageMod.Localization
 import typings.node.bufferMod.global.Buffer
 import typings.plist.mod.PlistObject
 import org.scalablytyped.runtime.StObject
@@ -46,39 +46,60 @@ object anon {
     }
   }
   
+  trait `2`[T /* <: Localization */, U] extends StObject {
+    
+    def map(`object`: T, lang: Language): U
+  }
+  object `2` {
+    
+    inline def apply[T /* <: Localization */, U](map: (T, Language) => U): `2`[T, U] = {
+      val __obj = js.Dynamic.literal(map = js.Any.fromFunction2(map))
+      __obj.asInstanceOf[`2`[T, U]]
+    }
+    
+    extension [Self <: `2`[?, ?], T /* <: Localization */, U](x: Self & (`2`[T, U])) {
+      
+      inline def setMap(value: (T, Language) => U): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
+    }
+  }
+  
   /* Inlined dmg-license.dmg-license/lib/Labels.Labels.CreateOptions & {  includeLanguageName :true} */
   trait CreateOptionsincludeLangu extends StObject {
     
-    var includeLanguageName: js.UndefOr[Boolean] & `true`
+    var includeLanguageName: js.UndefOr[Boolean] = js.undefined
   }
   object CreateOptionsincludeLangu {
     
-    inline def apply(includeLanguageName: js.UndefOr[Boolean] & `true`): CreateOptionsincludeLangu = {
-      val __obj = js.Dynamic.literal(includeLanguageName = includeLanguageName.asInstanceOf[js.Any])
+    inline def apply(): CreateOptionsincludeLangu = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateOptionsincludeLangu]
     }
     
     extension [Self <: CreateOptionsincludeLangu](x: Self) {
       
-      inline def setIncludeLanguageName(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "includeLanguageName", value.asInstanceOf[js.Any])
+      inline def setIncludeLanguageName(value: Boolean): Self = StObject.set(x, "includeLanguageName", value.asInstanceOf[js.Any])
+      
+      inline def setIncludeLanguageNameUndefined: Self = StObject.set(x, "includeLanguageName", js.undefined)
     }
   }
   
   /* Inlined dmg-license.dmg-license/lib/Labels.Labels.CreateOptions & {  includeLanguageName :false | undefined} */
   trait CreateOptionsincludeLanguIncludeLanguageName extends StObject {
     
-    var includeLanguageName: js.UndefOr[Boolean] & js.UndefOr[`false`]
+    var includeLanguageName: js.UndefOr[Boolean] = js.undefined
   }
   object CreateOptionsincludeLanguIncludeLanguageName {
     
-    inline def apply(includeLanguageName: js.UndefOr[Boolean] & js.UndefOr[`false`]): CreateOptionsincludeLanguIncludeLanguageName = {
-      val __obj = js.Dynamic.literal(includeLanguageName = includeLanguageName.asInstanceOf[js.Any])
+    inline def apply(): CreateOptionsincludeLanguIncludeLanguageName = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateOptionsincludeLanguIncludeLanguageName]
     }
     
     extension [Self <: CreateOptionsincludeLanguIncludeLanguageName](x: Self) {
       
-      inline def setIncludeLanguageName(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "includeLanguageName", value.asInstanceOf[js.Any])
+      inline def setIncludeLanguageName(value: Boolean): Self = StObject.set(x, "includeLanguageName", value.asInstanceOf[js.Any])
+      
+      inline def setIncludeLanguageNameUndefined: Self = StObject.set(x, "includeLanguageName", js.undefined)
     }
   }
   
@@ -102,6 +123,11 @@ object anon {
       
       inline def setType(value: (`RTF `) | TEXT): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
+  }
+  
+  trait Map extends StObject {
+    
+    var map: js.UndefOr[scala.Nothing] = js.undefined
   }
   
   trait OnNoLanguageName extends StObject {

@@ -13,10 +13,6 @@ object anon {
     
     var angle: Double
     
-    var time: Any
-    
-    var velocity: Double
-    
     var x: Double
     
     var y: Double
@@ -25,18 +21,14 @@ object anon {
   }
   object Angle {
     
-    inline def apply(angle: Double, time: Any, velocity: Double, x: Double, y: Double, z: Double): Angle = {
-      val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], velocity = velocity.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
+    inline def apply(angle: Double, x: Double, y: Double, z: Double): Angle = {
+      val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
       __obj.asInstanceOf[Angle]
     }
     
     extension [Self <: Angle](x: Self) {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
-      
-      inline def setTime(value: Any): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
-      
-      inline def setVelocity(value: Double): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -197,9 +189,13 @@ object anon {
     }
   }
   
-  trait X extends StObject {
+  trait Time extends StObject {
     
     var angle: Double
+    
+    var time: Any
+    
+    var velocity: Double
     
     var x: Double
     
@@ -207,16 +203,20 @@ object anon {
     
     var z: Double
   }
-  object X {
+  object Time {
     
-    inline def apply(angle: Double, x: Double, y: Double, z: Double): X = {
-      val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
-      __obj.asInstanceOf[X]
+    inline def apply(angle: Double, time: Any, velocity: Double, x: Double, y: Double, z: Double): Time = {
+      val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], velocity = velocity.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Time]
     }
     
-    extension [Self <: X](x: Self) {
+    extension [Self <: Time](x: Self) {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+      
+      inline def setTime(value: Any): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      
+      inline def setVelocity(value: Double): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

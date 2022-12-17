@@ -1,23 +1,24 @@
 package typings.babylonjs.indexMod
 
+import typings.babylonjs.anon.AlignHorizontal
+import typings.babylonjs.anon.AlignVertical
+import typings.babylonjs.anon.AlphaFilter
+import typings.babylonjs.anon.Arc
 import typings.babylonjs.anon.BInfo
-import typings.babylonjs.anon.BackUVsDepth
-import typings.babylonjs.anon.ClosePath
-import typings.babylonjs.anon.DashSize
-import typings.babylonjs.anon.DiameterBottom
-import typings.babylonjs.anon.DiameterY
-import typings.babylonjs.anon.FaceUV
-import typings.babylonjs.anon.Lines
-import typings.babylonjs.anon.Q
+import typings.babylonjs.anon.BackUVs
+import typings.babylonjs.anon.Colors
+import typings.babylonjs.anon.Custom
+import typings.babylonjs.anon.DashNb
+import typings.babylonjs.anon.Depth
+import typings.babylonjs.anon.Diameter
+import typings.babylonjs.anon.Flat
+import typings.babylonjs.anon.FrontUVs
+import typings.babylonjs.anon.P
+import typings.babylonjs.anon.Precision
 import typings.babylonjs.anon.Radius
-import typings.babylonjs.anon.RadiusX
-import typings.babylonjs.anon.SubdivisionsX
-import typings.babylonjs.anon.Thickness
-import typings.babylonjs.anon.TileHeight
-import typings.babylonjs.anon.TileSize
-import typings.babylonjs.anon.Xmax
+import typings.babylonjs.anon.SideOrientation
+import typings.babylonjs.anon.Subdivisions
 import typings.babylonjs.meshesBuildersCapsuleBuilderMod.ICreateCapsuleOptions
-import typings.babylonjs.meshesMeshMod.Mesh
 import typings.babylonjs.typesMod.FloatArray
 import typings.babylonjs.typesMod.IndicesArray
 import org.scalablytyped.runtime.StObject
@@ -98,7 +99,7 @@ object VertexData {
     * @returns the VertexData of the box
     * @deprecated Please use CreateBoxVertexData from the BoxBuilder file instead
     */
-  inline def CreateBox(options: BackUVsDepth): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateBox")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
+  inline def CreateBox(options: Depth): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateBox")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   
   /**
     * Creates the VertexData for a Capsule, inspired from https://github.com/maximeq/three-js-capsule-geometry/blob/master/src/CapsuleBufferGeometry.js
@@ -143,7 +144,7 @@ object VertexData {
     * @returns the VertexData of the cylinder, cone or prism
     * @deprecated please use CreateCylinderVertexData instead
     */
-  inline def CreateCylinder(options: DiameterBottom): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateCylinder")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
+  inline def CreateCylinder(options: Diameter): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateCylinder")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   
   /**
     * Create the VertexData for a DashedLines
@@ -159,7 +160,7 @@ object VertexData {
     * @returns the VertexData for the DashedLines
     * @deprecated use CreateDashedLinesVertexData instead
     */
-  inline def CreateDashedLines(options: DashSize): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateDashedLines")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
+  inline def CreateDashedLines(options: DashNb): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateDashedLines")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   
   /**
     * Creates the VertexData of the Disc or regular Polygon
@@ -195,7 +196,7 @@ object VertexData {
     * @returns the VertexData of the Ground
     * @deprecated Please use CreateGroundVertexData instead
     */
-  inline def CreateGround(options: SubdivisionsX): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateGround")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
+  inline def CreateGround(options: Subdivisions): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateGround")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   
   /**
     * Creates the VertexData of the Ground designed from a heightmap
@@ -223,7 +224,7 @@ object VertexData {
     * @returns the VertexData of the Ground designed from a heightmap
     * @deprecated use CreateGroundFromHeightMapVertexData instead
     */
-  inline def CreateGroundFromHeightMap(options: typings.babylonjs.anon.Buffer): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
+  inline def CreateGroundFromHeightMap(options: AlphaFilter): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   
   /**
     * Creates the VertexData of the IcoSphere
@@ -249,7 +250,7 @@ object VertexData {
     * @returns the VertexData of the IcoSphere
     * @deprecated use CreateIcoSphereVertexData instead
     */
-  inline def CreateIcoSphere(options: RadiusX): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateIcoSphere")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
+  inline def CreateIcoSphere(options: Flat): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateIcoSphere")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   
   /**
     * Creates the VertexData of the LineSystem
@@ -261,7 +262,7 @@ object VertexData {
     * @returns the VertexData of the LineSystem
     * @deprecated use CreateLineSystemVertexData instead
     */
-  inline def CreateLineSystem(options: Lines): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateLineSystem")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
+  inline def CreateLineSystem(options: Colors): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateLineSystem")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   
   /**
     * Creates the VertexData for a Plane
@@ -281,7 +282,7 @@ object VertexData {
     * @returns the VertexData of the box
     * @deprecated use CreatePlaneVertexData instead
     */
-  inline def CreatePlane(options: typings.babylonjs.anon.Size): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreatePlane")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
+  inline def CreatePlane(options: SideOrientation): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreatePlane")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   
   /**
     * Creates the VertexData for an irregular Polygon in the XoZ plane using a mesh built by polygonTriangulation.build()
@@ -296,20 +297,20 @@ object VertexData {
     * @returns the VertexData of the Polygon
     * @deprecated use CreatePolygonVertexData instead
     */
-  inline def CreatePolygon(polygon: Mesh, sideOrientation: Double): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
+  inline def CreatePolygon(polygon: typings.babylonjs.meshesMeshMod.Mesh, sideOrientation: Double): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   inline def CreatePolygon(
-    polygon: Mesh,
+    polygon: typings.babylonjs.meshesMeshMod.Mesh,
     sideOrientation: Double,
     fUV: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector4]
   ): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   inline def CreatePolygon(
-    polygon: Mesh,
+    polygon: typings.babylonjs.meshesMeshMod.Mesh,
     sideOrientation: Double,
     fUV: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector4],
     fColors: js.Array[typings.babylonjs.mathsMathDotcolorMod.Color4]
   ): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   inline def CreatePolygon(
-    polygon: Mesh,
+    polygon: typings.babylonjs.meshesMeshMod.Mesh,
     sideOrientation: Double,
     fUV: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector4],
     fColors: js.Array[typings.babylonjs.mathsMathDotcolorMod.Color4],
@@ -318,7 +319,7 @@ object VertexData {
     wrap: Boolean
   ): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrap.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   inline def CreatePolygon(
-    polygon: Mesh,
+    polygon: typings.babylonjs.meshesMeshMod.Mesh,
     sideOrientation: Double,
     fUV: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector4],
     fColors: js.Array[typings.babylonjs.mathsMathDotcolorMod.Color4],
@@ -326,7 +327,7 @@ object VertexData {
     backUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4
   ): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   inline def CreatePolygon(
-    polygon: Mesh,
+    polygon: typings.babylonjs.meshesMeshMod.Mesh,
     sideOrientation: Double,
     fUV: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector4],
     fColors: js.Array[typings.babylonjs.mathsMathDotcolorMod.Color4],
@@ -335,14 +336,14 @@ object VertexData {
     wrap: Boolean
   ): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrap.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   inline def CreatePolygon(
-    polygon: Mesh,
+    polygon: typings.babylonjs.meshesMeshMod.Mesh,
     sideOrientation: Double,
     fUV: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector4],
     fColors: js.Array[typings.babylonjs.mathsMathDotcolorMod.Color4],
     frontUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4
   ): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   inline def CreatePolygon(
-    polygon: Mesh,
+    polygon: typings.babylonjs.meshesMeshMod.Mesh,
     sideOrientation: Double,
     fUV: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector4],
     fColors: js.Array[typings.babylonjs.mathsMathDotcolorMod.Color4],
@@ -351,7 +352,7 @@ object VertexData {
     wrap: Boolean
   ): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrap.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   inline def CreatePolygon(
-    polygon: Mesh,
+    polygon: typings.babylonjs.meshesMeshMod.Mesh,
     sideOrientation: Double,
     fUV: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector4],
     fColors: js.Array[typings.babylonjs.mathsMathDotcolorMod.Color4],
@@ -359,7 +360,7 @@ object VertexData {
     backUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4
   ): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   inline def CreatePolygon(
-    polygon: Mesh,
+    polygon: typings.babylonjs.meshesMeshMod.Mesh,
     sideOrientation: Double,
     fUV: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector4],
     fColors: js.Array[typings.babylonjs.mathsMathDotcolorMod.Color4],
@@ -368,7 +369,7 @@ object VertexData {
     wrap: Boolean
   ): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrap.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   inline def CreatePolygon(
-    polygon: Mesh,
+    polygon: typings.babylonjs.meshesMeshMod.Mesh,
     sideOrientation: Double,
     fUV: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector4],
     fColors: Unit,
@@ -377,7 +378,7 @@ object VertexData {
     wrap: Boolean
   ): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrap.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   inline def CreatePolygon(
-    polygon: Mesh,
+    polygon: typings.babylonjs.meshesMeshMod.Mesh,
     sideOrientation: Double,
     fUV: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector4],
     fColors: Unit,
@@ -385,7 +386,7 @@ object VertexData {
     backUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4
   ): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   inline def CreatePolygon(
-    polygon: Mesh,
+    polygon: typings.babylonjs.meshesMeshMod.Mesh,
     sideOrientation: Double,
     fUV: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector4],
     fColors: Unit,
@@ -394,14 +395,14 @@ object VertexData {
     wrap: Boolean
   ): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrap.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   inline def CreatePolygon(
-    polygon: Mesh,
+    polygon: typings.babylonjs.meshesMeshMod.Mesh,
     sideOrientation: Double,
     fUV: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector4],
     fColors: Unit,
     frontUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4
   ): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   inline def CreatePolygon(
-    polygon: Mesh,
+    polygon: typings.babylonjs.meshesMeshMod.Mesh,
     sideOrientation: Double,
     fUV: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector4],
     fColors: Unit,
@@ -410,7 +411,7 @@ object VertexData {
     wrap: Boolean
   ): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrap.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   inline def CreatePolygon(
-    polygon: Mesh,
+    polygon: typings.babylonjs.meshesMeshMod.Mesh,
     sideOrientation: Double,
     fUV: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector4],
     fColors: Unit,
@@ -418,7 +419,7 @@ object VertexData {
     backUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4
   ): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   inline def CreatePolygon(
-    polygon: Mesh,
+    polygon: typings.babylonjs.meshesMeshMod.Mesh,
     sideOrientation: Double,
     fUV: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector4],
     fColors: Unit,
@@ -427,13 +428,13 @@ object VertexData {
     wrap: Boolean
   ): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrap.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   inline def CreatePolygon(
-    polygon: Mesh,
+    polygon: typings.babylonjs.meshesMeshMod.Mesh,
     sideOrientation: Double,
     fUV: Unit,
     fColors: js.Array[typings.babylonjs.mathsMathDotcolorMod.Color4]
   ): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   inline def CreatePolygon(
-    polygon: Mesh,
+    polygon: typings.babylonjs.meshesMeshMod.Mesh,
     sideOrientation: Double,
     fUV: Unit,
     fColors: js.Array[typings.babylonjs.mathsMathDotcolorMod.Color4],
@@ -442,7 +443,7 @@ object VertexData {
     wrap: Boolean
   ): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrap.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   inline def CreatePolygon(
-    polygon: Mesh,
+    polygon: typings.babylonjs.meshesMeshMod.Mesh,
     sideOrientation: Double,
     fUV: Unit,
     fColors: js.Array[typings.babylonjs.mathsMathDotcolorMod.Color4],
@@ -450,7 +451,7 @@ object VertexData {
     backUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4
   ): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   inline def CreatePolygon(
-    polygon: Mesh,
+    polygon: typings.babylonjs.meshesMeshMod.Mesh,
     sideOrientation: Double,
     fUV: Unit,
     fColors: js.Array[typings.babylonjs.mathsMathDotcolorMod.Color4],
@@ -459,14 +460,14 @@ object VertexData {
     wrap: Boolean
   ): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrap.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   inline def CreatePolygon(
-    polygon: Mesh,
+    polygon: typings.babylonjs.meshesMeshMod.Mesh,
     sideOrientation: Double,
     fUV: Unit,
     fColors: js.Array[typings.babylonjs.mathsMathDotcolorMod.Color4],
     frontUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4
   ): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   inline def CreatePolygon(
-    polygon: Mesh,
+    polygon: typings.babylonjs.meshesMeshMod.Mesh,
     sideOrientation: Double,
     fUV: Unit,
     fColors: js.Array[typings.babylonjs.mathsMathDotcolorMod.Color4],
@@ -475,7 +476,7 @@ object VertexData {
     wrap: Boolean
   ): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrap.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   inline def CreatePolygon(
-    polygon: Mesh,
+    polygon: typings.babylonjs.meshesMeshMod.Mesh,
     sideOrientation: Double,
     fUV: Unit,
     fColors: js.Array[typings.babylonjs.mathsMathDotcolorMod.Color4],
@@ -483,7 +484,7 @@ object VertexData {
     backUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4
   ): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   inline def CreatePolygon(
-    polygon: Mesh,
+    polygon: typings.babylonjs.meshesMeshMod.Mesh,
     sideOrientation: Double,
     fUV: Unit,
     fColors: js.Array[typings.babylonjs.mathsMathDotcolorMod.Color4],
@@ -492,7 +493,7 @@ object VertexData {
     wrap: Boolean
   ): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrap.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   inline def CreatePolygon(
-    polygon: Mesh,
+    polygon: typings.babylonjs.meshesMeshMod.Mesh,
     sideOrientation: Double,
     fUV: Unit,
     fColors: Unit,
@@ -501,7 +502,7 @@ object VertexData {
     wrap: Boolean
   ): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrap.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   inline def CreatePolygon(
-    polygon: Mesh,
+    polygon: typings.babylonjs.meshesMeshMod.Mesh,
     sideOrientation: Double,
     fUV: Unit,
     fColors: Unit,
@@ -509,7 +510,7 @@ object VertexData {
     backUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4
   ): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   inline def CreatePolygon(
-    polygon: Mesh,
+    polygon: typings.babylonjs.meshesMeshMod.Mesh,
     sideOrientation: Double,
     fUV: Unit,
     fColors: Unit,
@@ -518,14 +519,14 @@ object VertexData {
     wrap: Boolean
   ): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrap.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   inline def CreatePolygon(
-    polygon: Mesh,
+    polygon: typings.babylonjs.meshesMeshMod.Mesh,
     sideOrientation: Double,
     fUV: Unit,
     fColors: Unit,
     frontUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4
   ): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   inline def CreatePolygon(
-    polygon: Mesh,
+    polygon: typings.babylonjs.meshesMeshMod.Mesh,
     sideOrientation: Double,
     fUV: Unit,
     fColors: Unit,
@@ -534,7 +535,7 @@ object VertexData {
     wrap: Boolean
   ): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any], wrap.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   inline def CreatePolygon(
-    polygon: Mesh,
+    polygon: typings.babylonjs.meshesMeshMod.Mesh,
     sideOrientation: Double,
     fUV: Unit,
     fColors: Unit,
@@ -542,7 +543,7 @@ object VertexData {
     backUVs: typings.babylonjs.mathsMathDotvectorMod.Vector4
   ): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolygon")(polygon.asInstanceOf[js.Any], sideOrientation.asInstanceOf[js.Any], fUV.asInstanceOf[js.Any], fColors.asInstanceOf[js.Any], frontUVs.asInstanceOf[js.Any], backUVs.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   inline def CreatePolygon(
-    polygon: Mesh,
+    polygon: typings.babylonjs.meshesMeshMod.Mesh,
     sideOrientation: Double,
     fUV: Unit,
     fColors: Unit,
@@ -584,7 +585,7 @@ object VertexData {
     * @returns the VertexData of the Polyhedron
     * @deprecated use CreatePolyhedronVertexData instead
     */
-  inline def CreatePolyhedron(options: FaceUV): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolyhedron")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
+  inline def CreatePolyhedron(options: Custom): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolyhedron")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   
   /**
     * Creates the VertexData for a Ribbon
@@ -612,7 +613,7 @@ object VertexData {
     * @returns the VertexData of the ribbon
     * @deprecated use CreateRibbonVertexData instead
     */
-  inline def CreateRibbon(options: ClosePath): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateRibbon")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
+  inline def CreateRibbon(options: BackUVs): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateRibbon")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   
   /**
     * Creates the VertexData for an ellipsoid, defaults to a sphere
@@ -640,7 +641,7 @@ object VertexData {
     * @returns the VertexData of the ellipsoid
     * @deprecated use CreateSphereVertexData instead
     */
-  inline def CreateSphere(options: DiameterY): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateSphere")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
+  inline def CreateSphere(options: Arc): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateSphere")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   
   /**
     * Creates the VertexData for a tiled box
@@ -664,7 +665,7 @@ object VertexData {
     * @returns the VertexData of the box
     * @deprecated Please use CreateTiledBoxVertexData instead
     */
-  inline def CreateTiledBox(options: TileSize): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledBox")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
+  inline def CreateTiledBox(options: AlignHorizontal): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledBox")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   
   /**
     * Creates the VertexData for a TiledGround by subdividing the ground into tiles
@@ -688,7 +689,7 @@ object VertexData {
     * @returns the VertexData of the TiledGround
     * @deprecated use CreateTiledGroundVertexData instead
     */
-  inline def CreateTiledGround(options: Xmax): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledGround")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
+  inline def CreateTiledGround(options: Precision): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledGround")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   
   /**
     * Creates the VertexData for a tiled plane
@@ -715,7 +716,7 @@ object VertexData {
     * @returns the VertexData of the tiled plane
     * @deprecated use CreateTiledPlaneVertexData instead
     */
-  inline def CreateTiledPlane(options: TileHeight): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledPlane")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
+  inline def CreateTiledPlane(options: AlignVertical): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledPlane")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   
   /**
     * Creates the VertexData for a torus
@@ -735,7 +736,7 @@ object VertexData {
     * @returns the VertexData of the torus
     * @deprecated use CreateTorusVertexData instead
     */
-  inline def CreateTorus(options: Thickness): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorus")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
+  inline def CreateTorus(options: FrontUVs): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorus")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   
   /**
     * Creates the VertexData for a TorusKnot
@@ -761,7 +762,7 @@ object VertexData {
     * @returns the VertexData of the Torus Knot
     * @deprecated use CreateTorusKnotVertexData instead
     */
-  inline def CreateTorusKnot(options: Q): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorusKnot")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
+  inline def CreateTorusKnot(options: P): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorusKnot")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   
   /**
     * Mesh side orientation : by default, `FRONTSIDE`
@@ -800,10 +801,10 @@ object VertexData {
     * @param forceCopy indicating that the VertexData must be cloned, optional, default false
     * @returns the object VertexData associated to the passed mesh
     */
-  inline def ExtractFromMesh(mesh: Mesh): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("ExtractFromMesh")(mesh.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
-  inline def ExtractFromMesh(mesh: Mesh, copyWhenShared: Boolean): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtractFromMesh")(mesh.asInstanceOf[js.Any], copyWhenShared.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
-  inline def ExtractFromMesh(mesh: Mesh, copyWhenShared: Boolean, forceCopy: Boolean): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtractFromMesh")(mesh.asInstanceOf[js.Any], copyWhenShared.asInstanceOf[js.Any], forceCopy.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
-  inline def ExtractFromMesh(mesh: Mesh, copyWhenShared: Unit, forceCopy: Boolean): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtractFromMesh")(mesh.asInstanceOf[js.Any], copyWhenShared.asInstanceOf[js.Any], forceCopy.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
+  inline def ExtractFromMesh(mesh: typings.babylonjs.meshesMeshMod.Mesh): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("ExtractFromMesh")(mesh.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
+  inline def ExtractFromMesh(mesh: typings.babylonjs.meshesMeshMod.Mesh, copyWhenShared: Boolean): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtractFromMesh")(mesh.asInstanceOf[js.Any], copyWhenShared.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
+  inline def ExtractFromMesh(mesh: typings.babylonjs.meshesMeshMod.Mesh, copyWhenShared: Boolean, forceCopy: Boolean): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtractFromMesh")(mesh.asInstanceOf[js.Any], copyWhenShared.asInstanceOf[js.Any], forceCopy.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
+  inline def ExtractFromMesh(mesh: typings.babylonjs.meshesMeshMod.Mesh, copyWhenShared: Unit, forceCopy: Boolean): typings.babylonjs.meshesMeshDotvertexDataMod.VertexData = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtractFromMesh")(mesh.asInstanceOf[js.Any], copyWhenShared.asInstanceOf[js.Any], forceCopy.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesMeshDotvertexDataMod.VertexData]
   
   /**
     * Mesh side orientation : usually the external or front surface

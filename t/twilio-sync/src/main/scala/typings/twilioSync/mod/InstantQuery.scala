@@ -12,8 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Use the {@link SyncClient.instantQuery} method to create an Instant Query.
   */
+@JSImport("twilio-sync", "InstantQuery")
 @js.native
-trait InstantQuery extends EventEmitter {
+open class InstantQuery protected () extends EventEmitter {
+  /**
+    * @internal
+    */
+  def this(params: Any) = this()
   
   /* private */ var generateQueryUri: Any = js.native
   
@@ -60,4 +65,27 @@ trait InstantQuery extends EventEmitter {
     * @param indexName New index name to set
     */
   def updateIndexName(indexName: String): Unit = js.native
+}
+object InstantQuery {
+  
+  /**
+    * Fired when a search result is ready.
+    *
+    * Parameters:
+    * 1. {@link ItemsSnapshot} `items` - a snapshot of items matching current query expression.
+    * @example
+    * ```typescript
+    * instantQuery.on('searchResult', (items) => {
+    *    Object.entries(items).forEach(([key, value]) => {
+    *      console.log('Search result item key:', key);
+    *      console.log('Search result item value:', value);
+    *    });
+    * });
+    * ```
+    * @event
+    */
+  /* static member */
+  @JSImport("twilio-sync", "InstantQuery.searchResult")
+  @js.native
+  val searchResult: /* "searchResult" */ String = js.native
 }

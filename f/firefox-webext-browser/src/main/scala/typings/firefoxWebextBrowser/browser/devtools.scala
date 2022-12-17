@@ -284,29 +284,12 @@ object devtools {
         * @param disabled Whether the button is disabled.
         * @deprecated Unsupported on Firefox at this time.
         */
-      var update: js.UndefOr[js.Function0[Unit]] & (js.UndefOr[
-            js.Function3[
-              /* iconPath */ String, 
-              /* tooltipText */ js.UndefOr[String], 
-              /* disabled */ js.UndefOr[Boolean], 
-              Unit
-            ]
-          ]) & (js.UndefOr[js.Function2[/* tooltipText */ String, /* disabled */ Boolean, Unit]]) & (js.UndefOr[js.Function1[/* disabled */ Boolean, Unit]])
+      var update: js.UndefOr[js.Function0[Unit]] = js.undefined
     }
     object Button {
       
-      inline def apply(
-        onClicked: WebExtEvent[js.Function0[Unit]],
-        update: js.UndefOr[js.Function0[Unit]] & (js.UndefOr[
-              js.Function3[
-                /* iconPath */ String, 
-                /* tooltipText */ js.UndefOr[String], 
-                /* disabled */ js.UndefOr[Boolean], 
-                Unit
-              ]
-            ]) & (js.UndefOr[js.Function2[/* tooltipText */ String, /* disabled */ Boolean, Unit]]) & (js.UndefOr[js.Function1[/* disabled */ Boolean, Unit]])
-      ): Button = {
-        val __obj = js.Dynamic.literal(onClicked = onClicked.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any])
+      inline def apply(onClicked: WebExtEvent[js.Function0[Unit]]): Button = {
+        val __obj = js.Dynamic.literal(onClicked = onClicked.asInstanceOf[js.Any])
         __obj.asInstanceOf[Button]
       }
       
@@ -314,16 +297,9 @@ object devtools {
         
         inline def setOnClicked(value: WebExtEvent[js.Function0[Unit]]): Self = StObject.set(x, "onClicked", value.asInstanceOf[js.Any])
         
-        inline def setUpdate(
-          value: js.UndefOr[js.Function0[Unit]] & (js.UndefOr[
-                  js.Function3[
-                    /* iconPath */ String, 
-                    /* tooltipText */ js.UndefOr[String], 
-                    /* disabled */ js.UndefOr[Boolean], 
-                    Unit
-                  ]
-                ]) & (js.UndefOr[js.Function2[/* tooltipText */ String, /* disabled */ Boolean, Unit]]) & (js.UndefOr[js.Function1[/* disabled */ Boolean, Unit]])
-        ): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+        inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+        
+        inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
       }
     }
     

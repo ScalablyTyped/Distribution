@@ -1,6 +1,6 @@
 package typings.carbonComponentsReact.anon
 
-import typings.carbonComponentsReact.searchLayoutButtonSearchLayoutButtonMod.SearchLayoutButtonFormat
+import typings.carbonComponentsReact.libComponentsSearchLayoutButtonSearchLayoutButtonMod.SearchLayoutButtonFormat
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,13 +12,15 @@ trait Format extends StObject {
 }
 object Format {
   
-  inline def apply(format: NonNullable[js.UndefOr[SearchLayoutButtonFormat]]): Format = {
-    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
+  inline def apply(): Format = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Format]
   }
   
   extension [Self <: Format](x: Self) {
     
     inline def setFormat(value: NonNullable[js.UndefOr[SearchLayoutButtonFormat]]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
   }
 }

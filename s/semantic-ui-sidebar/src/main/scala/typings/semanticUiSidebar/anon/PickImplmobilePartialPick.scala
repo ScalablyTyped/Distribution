@@ -14,11 +14,11 @@ trait PickImplmobilePartialPick
   
   var computer: js.UndefOr[ComputerSettings] = js.undefined
   
-  var mobile: MobileSettings & js.UndefOr[MobileSettings]
+  var mobile: MobileSettings
 }
 object PickImplmobilePartialPick {
   
-  inline def apply(mobile: MobileSettings & js.UndefOr[MobileSettings]): PickImplmobilePartialPick = {
+  inline def apply(mobile: MobileSettings): PickImplmobilePartialPick = {
     val __obj = js.Dynamic.literal(mobile = mobile.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmobilePartialPick]
   }
@@ -29,6 +29,6 @@ object PickImplmobilePartialPick {
     
     inline def setComputerUndefined: Self = StObject.set(x, "computer", js.undefined)
     
-    inline def setMobile(value: MobileSettings & js.UndefOr[MobileSettings]): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
+    inline def setMobile(value: MobileSettings): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
   }
 }

@@ -10,8 +10,8 @@ import typings.ioTs.mod.UndefinedC
 import typings.ioTs.mod.UnionC
 import typings.testcafeReporterDashboard.anon.Author
 import typings.testcafeReporterDashboard.anon.BuildId
-import typings.testcafeReporterDashboard.anon.CiInfo
 import typings.testcafeReporterDashboard.anon.Duration
+import typings.testcafeReporterDashboard.anon.EndTime
 import typings.testcafeReporterDashboard.anon.FailedCount
 import typings.testcafeReporterDashboard.anon.Fixture
 import typings.testcafeReporterDashboard.anon.Id
@@ -168,7 +168,7 @@ object mod {
   
   @JSImport("testcafe-reporter-dashboard", "TaskDoneArgsSchema")
   @js.native
-  val TaskDoneArgsSchema: ReadonlyC[ExactC[TypeC[BuildId]]] = js.native
+  val TaskDoneArgsSchema: ReadonlyC[ExactC[TypeC[EndTime]]] = js.native
   
   @JSImport("testcafe-reporter-dashboard", "TaskResultSchema")
   @js.native
@@ -176,7 +176,7 @@ object mod {
   
   @JSImport("testcafe-reporter-dashboard", "TaskStartArgsSchema")
   @js.native
-  val TaskStartArgsSchema: ReadonlyC[ExactC[TypeC[CiInfo]]] = js.native
+  val TaskStartArgsSchema: ReadonlyC[ExactC[TypeC[BuildId]]] = js.native
   
   @JSImport("testcafe-reporter-dashboard", "TestDoneArgsSchema")
   @js.native

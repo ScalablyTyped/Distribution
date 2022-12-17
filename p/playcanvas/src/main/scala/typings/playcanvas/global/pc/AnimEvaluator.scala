@@ -1,6 +1,5 @@
 package typings.playcanvas.global.pc
 
-import typings.playcanvas.mod.AnimBinder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,5 +20,5 @@ open class AnimEvaluator protected ()
     *
     * @param {AnimBinder} binder - interface resolves curve paths to instances of {@link AnimTarget}.
     */
-  def this(binder: AnimBinder) = this()
+  def this(binder: typings.playcanvas.mod.AnimBinder) = this()
 }

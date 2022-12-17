@@ -19,7 +19,7 @@ trait LowLevelStyleFunctionArguments[N, S] extends StObject {
   
   var scale: js.UndefOr[S] = js.undefined
   
-  var transformValue: js.UndefOr[js.Function2[/* n */ N, /* scale */ js.UndefOr[S], js.Any]] = js.undefined
+  var transformValue: js.UndefOr[js.Function2[/* n */ N, /* scale */ js.UndefOr[S], Any]] = js.undefined
 }
 object LowLevelStyleFunctionArguments {
   
@@ -48,13 +48,13 @@ object LowLevelStyleFunctionArguments {
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    inline def setPropertiesVarargs(value: String*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: String*): Self = StObject.set(x, "properties", js.Array(value*))
     
     inline def setScale(value: S): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    inline def setTransformValue(value: (/* n */ N, /* scale */ js.UndefOr[S]) => js.Any): Self = StObject.set(x, "transformValue", js.Any.fromFunction2(value))
+    inline def setTransformValue(value: (/* n */ N, /* scale */ js.UndefOr[S]) => Any): Self = StObject.set(x, "transformValue", js.Any.fromFunction2(value))
     
     inline def setTransformValueUndefined: Self = StObject.set(x, "transformValue", js.undefined)
   }

@@ -72,9 +72,7 @@ trait themeDeepPartialThemeunde extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: 'android_hyphenationFrequency' extends react-native.react-native.Animated.NonAnimatedProps ? 'android_hyphenationFrequency' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<'normal' | 'none' | 'full' | undefined> : 'normal' | 'none' | 'full' | undefined : react-native.react-native.Animated.WithAnimatedValue<'normal' | 'none' | 'full' | undefined> */ js.Any
   ] = js.undefined
   
-  var children: js.UndefOr[ReactNode] & (js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: 'children' extends react-native.react-native.Animated.NonAnimatedProps ? 'children' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<react.react.ReactNode | undefined> : react.react.ReactNode | undefined : react-native.react-native.Animated.WithAnimatedValue<react.react.ReactNode | undefined> */ js.Any
-  ])
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   var dataDetectorType: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: 'dataDetectorType' extends react-native.react-native.Animated.NonAnimatedProps ? 'dataDetectorType' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<null | 'phoneNumber' | 'link' | 'email' | 'none' | 'all' | undefined> : null | 'phoneNumber' | 'link' | 'email' | 'none' | 'all' | undefined : react-native.react-native.Animated.WithAnimatedValue<null | 'phoneNumber' | 'link' | 'email' | 'none' | 'all' | undefined> */ js.Any
@@ -188,12 +186,8 @@ trait themeDeepPartialThemeunde extends StObject {
 }
 object themeDeepPartialThemeunde {
   
-  inline def apply(
-    children: js.UndefOr[ReactNode] & (js.UndefOr[
-      /* import warning: importer.ImportType#apply Failed type conversion: 'children' extends react-native.react-native.Animated.NonAnimatedProps ? 'children' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<react.react.ReactNode | undefined> : react.react.ReactNode | undefined : react-native.react-native.Animated.WithAnimatedValue<react.react.ReactNode | undefined> */ js.Any
-    ])
-  ): themeDeepPartialThemeunde = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+  inline def apply(): themeDeepPartialThemeunde = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[themeDeepPartialThemeunde]
   }
   
@@ -295,11 +289,9 @@ object themeDeepPartialThemeunde {
     
     inline def setAndroid_hyphenationFrequencyUndefined: Self = StObject.set(x, "android_hyphenationFrequency", js.undefined)
     
-    inline def setChildren(
-      value: js.UndefOr[ReactNode] & (js.UndefOr[
-          /* import warning: importer.ImportType#apply Failed type conversion: 'children' extends react-native.react-native.Animated.NonAnimatedProps ? 'children' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<react.react.ReactNode | undefined> : react.react.ReactNode | undefined : react-native.react-native.Animated.WithAnimatedValue<react.react.ReactNode | undefined> */ js.Any
-        ])
-    ): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setDataDetectorType(
       value: /* import warning: importer.ImportType#apply Failed type conversion: 'dataDetectorType' extends react-native.react-native.Animated.NonAnimatedProps ? 'dataDetectorType' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<null | 'phoneNumber' | 'link' | 'email' | 'none' | 'all' | undefined> : null | 'phoneNumber' | 'link' | 'email' | 'none' | 'all' | undefined : react-native.react-native.Animated.WithAnimatedValue<null | 'phoneNumber' | 'link' | 'email' | 'none' | 'all' | undefined> */ js.Any

@@ -1,6 +1,5 @@
 package typings.fundamentalReact.anon
 
-import typings.fundamentalReact.fundamentalReactStrings.ListDotSelection
 import typings.fundamentalReact.libListListMod.ListSelectionProps
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
@@ -19,7 +18,7 @@ trait FunctionComponentListSele extends StObject {
   
   var defaultProps: js.UndefOr[PartialListSelectionProps] = js.native
   
-  var displayName: js.UndefOr[String] & ListDotSelection = js.native
+  var displayName: js.UndefOr[String] = js.native
   
   var propTypes: js.UndefOr[WeakValidationMapListSele] = js.native
 }

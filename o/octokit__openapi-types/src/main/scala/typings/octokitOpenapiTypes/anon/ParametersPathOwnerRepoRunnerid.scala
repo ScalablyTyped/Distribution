@@ -8,11 +8,11 @@ trait ParametersPathOwnerRepoRunnerid extends StObject {
   
   var parameters: PathOwnerRepoRunnerid
   
-  var responses: `200Content260`
+  var responses: `422Content395`
 }
 object ParametersPathOwnerRepoRunnerid {
   
-  inline def apply(parameters: PathOwnerRepoRunnerid, responses: `200Content260`): ParametersPathOwnerRepoRunnerid = {
+  inline def apply(parameters: PathOwnerRepoRunnerid, responses: `422Content395`): ParametersPathOwnerRepoRunnerid = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathOwnerRepoRunnerid]
   }
@@ -21,6 +21,6 @@ object ParametersPathOwnerRepoRunnerid {
     
     inline def setParameters(value: PathOwnerRepoRunnerid): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content260`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `422Content395`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

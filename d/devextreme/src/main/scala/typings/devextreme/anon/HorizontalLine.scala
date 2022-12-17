@@ -29,7 +29,7 @@ trait HorizontalLine extends StObject {
   /**
     * Configures the crosshair labels.
     */
-  var label: js.UndefOr[BackgroundColor] = js.undefined
+  var label: js.UndefOr[BackgroundColorCustomizeText] = js.undefined
   
   /**
     * Specifies how transparent the crosshair lines should be.
@@ -71,7 +71,7 @@ object HorizontalLine {
     
     inline def setHorizontalLineUndefined: Self = StObject.set(x, "horizontalLine", js.undefined)
     
-    inline def setLabel(value: BackgroundColor): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: BackgroundColorCustomizeText): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     

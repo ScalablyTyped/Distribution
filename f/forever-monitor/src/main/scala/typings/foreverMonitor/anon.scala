@@ -8,22 +8,20 @@ object anon {
   
   trait Args extends StObject {
     
-    var args: js.UndefOr[js.Array[String]] = js.undefined
+    var args: js.Array[String]
     
     var command: String
   }
   object Args {
     
-    inline def apply(command: String): Args = {
-      val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any])
+    inline def apply(args: js.Array[String], command: String): Args = {
+      val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any])
       __obj.asInstanceOf[Args]
     }
     
     extension [Self <: Args](x: Self) {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
-      
-      inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
       inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
       
@@ -33,20 +31,22 @@ object anon {
   
   trait Command extends StObject {
     
-    var args: js.Array[String]
+    var args: js.UndefOr[js.Array[String]] = js.undefined
     
     var command: String
   }
   object Command {
     
-    inline def apply(args: js.Array[String], command: String): Command = {
-      val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any])
+    inline def apply(command: String): Command = {
+      val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any])
       __obj.asInstanceOf[Command]
     }
     
     extension [Self <: Command](x: Self) {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      
+      inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
       inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
       

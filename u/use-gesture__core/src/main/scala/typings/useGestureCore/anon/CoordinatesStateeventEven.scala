@@ -2,7 +2,6 @@ package typings.useGestureCore.anon
 
 import typings.std.EventTarget
 import typings.std.UIEvent
-import typings.std.WheelEvent
 import typings.useGestureCore.distDeclarationsSrcTypesUtilsMod.Vector2
 import typings.useGestureCore.useGestureCoreBooleans.`false`
 import typings.useGestureCore.useGestureCoreStrings.x
@@ -83,7 +82,7 @@ trait CoordinatesStateeventEven extends StObject {
   /**
     * The event triggering the gesture.
     */
-  var event: UIEvent & WheelEvent
+  var event: UIEvent
   
   /**
     * True when it's the first event of the active gesture.
@@ -188,7 +187,7 @@ object CoordinatesStateeventEven {
     direction: Vector2,
     distance: Vector2,
     elapsedTime: Double,
-    event: UIEvent & WheelEvent,
+    event: UIEvent,
     first: Boolean,
     initial: Vector2,
     intentional: Boolean,
@@ -232,7 +231,7 @@ object CoordinatesStateeventEven {
     
     inline def setElapsedTime(value: Double): Self = StObject.set(x, "elapsedTime", value.asInstanceOf[js.Any])
     
-    inline def setEvent(value: UIEvent & WheelEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: UIEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     inline def setFirst(value: Boolean): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     

@@ -8,7 +8,7 @@ import typings.wdioConfig.buildTypesMod.ModuleRequireService
 import typings.wdioConfig.buildTypesMod.PathService
 import typings.wdioConfig.wdioConfigStrings.local
 import typings.wdioTypes.anon.Http
-import typings.wdioTypes.anon.OmitTestrunnercapabilitieAfter
+import typings.wdioTypes.anon.OmitTestrunnercapabilitie
 import typings.wdioTypes.buildCapabilitiesMod.DesiredCapabilities
 import typings.wdioTypes.buildCapabilitiesMod.RemoteCapabilities
 import typings.wdioTypes.buildCapabilitiesMod.RemoteCapability
@@ -271,7 +271,7 @@ object buildLibConfigParserMod {
     
     var beforeSession: js.UndefOr[
         (js.Function4[
-          /* config */ OmitTestrunnercapabilitieAfter, 
+          /* config */ OmitTestrunnercapabilitie, 
           /* capabilities */ RemoteCapability, 
           /* specs */ js.Array[String], 
           /* cid */ String, 
@@ -280,7 +280,7 @@ object buildLibConfigParserMod {
           NonNullable[
             js.UndefOr[
               js.Function4[
-                /* config */ OmitTestrunnercapabilitieAfter, 
+                /* config */ OmitTestrunnercapabilitie, 
                 /* capabilities */ RemoteCapability, 
                 /* specs */ js.Array[String], 
                 /* cid */ String, 
@@ -342,7 +342,7 @@ object buildLibConfigParserMod {
     var onComplete: js.UndefOr[
         (js.Function4[
           /* exitCode */ Double, 
-          /* config */ OmitTestrunnercapabilitieAfter, 
+          /* config */ OmitTestrunnercapabilitie, 
           /* capabilities */ RemoteCapabilities, 
           /* results */ Any, 
           Unit
@@ -351,7 +351,7 @@ object buildLibConfigParserMod {
             js.UndefOr[
               js.Function4[
                 /* exitCode */ Double, 
-                /* config */ OmitTestrunnercapabilitieAfter, 
+                /* config */ OmitTestrunnercapabilitie, 
                 /* capabilities */ RemoteCapabilities, 
                 /* results */ Any, 
                 Unit
@@ -715,7 +715,7 @@ object buildLibConfigParserMod {
       
       inline def setBeforeSession(
         value: (js.Function4[
-              /* config */ OmitTestrunnercapabilitieAfter, 
+              /* config */ OmitTestrunnercapabilitie, 
               /* capabilities */ RemoteCapability, 
               /* specs */ js.Array[String], 
               /* cid */ String, 
@@ -724,7 +724,7 @@ object buildLibConfigParserMod {
               NonNullable[
                 js.UndefOr[
                   js.Function4[
-                    /* config */ OmitTestrunnercapabilitieAfter, 
+                    /* config */ OmitTestrunnercapabilitie, 
                     /* capabilities */ RemoteCapability, 
                     /* specs */ js.Array[String], 
                     /* cid */ String, 
@@ -736,7 +736,7 @@ object buildLibConfigParserMod {
       ): Self = StObject.set(x, "beforeSession", value.asInstanceOf[js.Any])
       
       inline def setBeforeSessionFunction4(
-        value: (/* config */ OmitTestrunnercapabilitieAfter, /* capabilities */ RemoteCapability, /* specs */ js.Array[String], /* cid */ String) => Unit
+        value: (/* config */ OmitTestrunnercapabilitie, /* capabilities */ RemoteCapability, /* specs */ js.Array[String], /* cid */ String) => Unit
       ): Self = StObject.set(x, "beforeSession", js.Any.fromFunction4(value))
       
       inline def setBeforeSessionUndefined: Self = StObject.set(x, "beforeSession", js.undefined)
@@ -745,7 +745,7 @@ object buildLibConfigParserMod {
         value: (NonNullable[
               js.UndefOr[
                 js.Function4[
-                  /* config */ OmitTestrunnercapabilitieAfter, 
+                  /* config */ OmitTestrunnercapabilitie, 
                   /* capabilities */ RemoteCapability, 
                   /* specs */ js.Array[String], 
                   /* cid */ String, 
@@ -883,7 +883,7 @@ object buildLibConfigParserMod {
       inline def setOnComplete(
         value: (js.Function4[
               /* exitCode */ Double, 
-              /* config */ OmitTestrunnercapabilitieAfter, 
+              /* config */ OmitTestrunnercapabilitie, 
               /* capabilities */ RemoteCapabilities, 
               /* results */ Any, 
               Unit
@@ -892,7 +892,7 @@ object buildLibConfigParserMod {
                 js.UndefOr[
                   js.Function4[
                     /* exitCode */ Double, 
-                    /* config */ OmitTestrunnercapabilitieAfter, 
+                    /* config */ OmitTestrunnercapabilitie, 
                     /* capabilities */ RemoteCapabilities, 
                     /* results */ Any, 
                     Unit
@@ -903,7 +903,7 @@ object buildLibConfigParserMod {
       ): Self = StObject.set(x, "onComplete", value.asInstanceOf[js.Any])
       
       inline def setOnCompleteFunction4(
-        value: (/* exitCode */ Double, /* config */ OmitTestrunnercapabilitieAfter, /* capabilities */ RemoteCapabilities, /* results */ Any) => Unit
+        value: (/* exitCode */ Double, /* config */ OmitTestrunnercapabilitie, /* capabilities */ RemoteCapabilities, /* results */ Any) => Unit
       ): Self = StObject.set(x, "onComplete", js.Any.fromFunction4(value))
       
       inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
@@ -913,7 +913,7 @@ object buildLibConfigParserMod {
               js.UndefOr[
                 js.Function4[
                   /* exitCode */ Double, 
-                  /* config */ OmitTestrunnercapabilitieAfter, 
+                  /* config */ OmitTestrunnercapabilitie, 
                   /* capabilities */ RemoteCapabilities, 
                   /* results */ Any, 
                   Unit
@@ -1294,7 +1294,7 @@ object buildLibConfigParserMod {
     
     var beforeSession: js.UndefOr[
         (js.Function4[
-          /* config */ OmitTestrunnercapabilitieAfter, 
+          /* config */ OmitTestrunnercapabilitie, 
           /* capabilities */ RemoteCapability, 
           /* specs */ js.Array[String], 
           /* cid */ String, 
@@ -1303,7 +1303,7 @@ object buildLibConfigParserMod {
           NonNullable[
             js.UndefOr[
               js.Function4[
-                /* config */ OmitTestrunnercapabilitieAfter, 
+                /* config */ OmitTestrunnercapabilitie, 
                 /* capabilities */ RemoteCapability, 
                 /* specs */ js.Array[String], 
                 /* cid */ String, 
@@ -1365,7 +1365,7 @@ object buildLibConfigParserMod {
     var onComplete: js.UndefOr[
         (js.Function4[
           /* exitCode */ Double, 
-          /* config */ OmitTestrunnercapabilitieAfter, 
+          /* config */ OmitTestrunnercapabilitie, 
           /* capabilities */ RemoteCapabilities, 
           /* results */ Any, 
           Unit
@@ -1374,7 +1374,7 @@ object buildLibConfigParserMod {
             js.UndefOr[
               js.Function4[
                 /* exitCode */ Double, 
-                /* config */ OmitTestrunnercapabilitieAfter, 
+                /* config */ OmitTestrunnercapabilitie, 
                 /* capabilities */ RemoteCapabilities, 
                 /* results */ Any, 
                 Unit
@@ -1755,7 +1755,7 @@ object buildLibConfigParserMod {
       
       inline def setBeforeSession(
         value: (js.Function4[
-              /* config */ OmitTestrunnercapabilitieAfter, 
+              /* config */ OmitTestrunnercapabilitie, 
               /* capabilities */ RemoteCapability, 
               /* specs */ js.Array[String], 
               /* cid */ String, 
@@ -1764,7 +1764,7 @@ object buildLibConfigParserMod {
               NonNullable[
                 js.UndefOr[
                   js.Function4[
-                    /* config */ OmitTestrunnercapabilitieAfter, 
+                    /* config */ OmitTestrunnercapabilitie, 
                     /* capabilities */ RemoteCapability, 
                     /* specs */ js.Array[String], 
                     /* cid */ String, 
@@ -1776,7 +1776,7 @@ object buildLibConfigParserMod {
       ): Self = StObject.set(x, "beforeSession", value.asInstanceOf[js.Any])
       
       inline def setBeforeSessionFunction4(
-        value: (/* config */ OmitTestrunnercapabilitieAfter, /* capabilities */ RemoteCapability, /* specs */ js.Array[String], /* cid */ String) => Unit
+        value: (/* config */ OmitTestrunnercapabilitie, /* capabilities */ RemoteCapability, /* specs */ js.Array[String], /* cid */ String) => Unit
       ): Self = StObject.set(x, "beforeSession", js.Any.fromFunction4(value))
       
       inline def setBeforeSessionUndefined: Self = StObject.set(x, "beforeSession", js.undefined)
@@ -1785,7 +1785,7 @@ object buildLibConfigParserMod {
         value: (NonNullable[
               js.UndefOr[
                 js.Function4[
-                  /* config */ OmitTestrunnercapabilitieAfter, 
+                  /* config */ OmitTestrunnercapabilitie, 
                   /* capabilities */ RemoteCapability, 
                   /* specs */ js.Array[String], 
                   /* cid */ String, 
@@ -1923,7 +1923,7 @@ object buildLibConfigParserMod {
       inline def setOnComplete(
         value: (js.Function4[
               /* exitCode */ Double, 
-              /* config */ OmitTestrunnercapabilitieAfter, 
+              /* config */ OmitTestrunnercapabilitie, 
               /* capabilities */ RemoteCapabilities, 
               /* results */ Any, 
               Unit
@@ -1932,7 +1932,7 @@ object buildLibConfigParserMod {
                 js.UndefOr[
                   js.Function4[
                     /* exitCode */ Double, 
-                    /* config */ OmitTestrunnercapabilitieAfter, 
+                    /* config */ OmitTestrunnercapabilitie, 
                     /* capabilities */ RemoteCapabilities, 
                     /* results */ Any, 
                     Unit
@@ -1943,7 +1943,7 @@ object buildLibConfigParserMod {
       ): Self = StObject.set(x, "onComplete", value.asInstanceOf[js.Any])
       
       inline def setOnCompleteFunction4(
-        value: (/* exitCode */ Double, /* config */ OmitTestrunnercapabilitieAfter, /* capabilities */ RemoteCapabilities, /* results */ Any) => Unit
+        value: (/* exitCode */ Double, /* config */ OmitTestrunnercapabilitie, /* capabilities */ RemoteCapabilities, /* results */ Any) => Unit
       ): Self = StObject.set(x, "onComplete", js.Any.fromFunction4(value))
       
       inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
@@ -1953,7 +1953,7 @@ object buildLibConfigParserMod {
               js.UndefOr[
                 js.Function4[
                   /* exitCode */ Double, 
-                  /* config */ OmitTestrunnercapabilitieAfter, 
+                  /* config */ OmitTestrunnercapabilitie, 
                   /* capabilities */ RemoteCapabilities, 
                   /* results */ Any, 
                   Unit

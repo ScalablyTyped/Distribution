@@ -10,7 +10,7 @@ trait PickImplapprovePartialPic
   extends StObject
      with Param {
   
-  var approve: String & js.UndefOr[String]
+  var approve: String
   
   var close: js.UndefOr[String] = js.undefined
   
@@ -18,14 +18,14 @@ trait PickImplapprovePartialPic
 }
 object PickImplapprovePartialPic {
   
-  inline def apply(approve: String & js.UndefOr[String]): PickImplapprovePartialPic = {
+  inline def apply(approve: String): PickImplapprovePartialPic = {
     val __obj = js.Dynamic.literal(approve = approve.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplapprovePartialPic]
   }
   
   extension [Self <: PickImplapprovePartialPic](x: Self) {
     
-    inline def setApprove(value: String & js.UndefOr[String]): Self = StObject.set(x, "approve", value.asInstanceOf[js.Any])
+    inline def setApprove(value: String): Self = StObject.set(x, "approve", value.asInstanceOf[js.Any])
     
     inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     

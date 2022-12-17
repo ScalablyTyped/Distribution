@@ -171,26 +171,22 @@ object anon {
   
   trait Openssh extends StObject {
     
-    var openssh: js.UndefOr[OpenSshSignature] = js.undefined
+    var openssh: Signature
     
-    var x509: js.UndefOr[x509Signature] = js.undefined
+    var x509: Signature
   }
   object Openssh {
     
-    inline def apply(): Openssh = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(openssh: Signature, x509: Signature): Openssh = {
+      val __obj = js.Dynamic.literal(openssh = openssh.asInstanceOf[js.Any], x509 = x509.asInstanceOf[js.Any])
       __obj.asInstanceOf[Openssh]
     }
     
     extension [Self <: Openssh](x: Self) {
       
-      inline def setOpenssh(value: OpenSshSignature): Self = StObject.set(x, "openssh", value.asInstanceOf[js.Any])
+      inline def setOpenssh(value: Signature): Self = StObject.set(x, "openssh", value.asInstanceOf[js.Any])
       
-      inline def setOpensshUndefined: Self = StObject.set(x, "openssh", js.undefined)
-      
-      inline def setX509(value: x509Signature): Self = StObject.set(x, "x509", value.asInstanceOf[js.Any])
-      
-      inline def setX509Undefined: Self = StObject.set(x, "x509", js.undefined)
+      inline def setX509(value: Signature): Self = StObject.set(x, "x509", value.asInstanceOf[js.Any])
     }
   }
   
@@ -245,22 +241,26 @@ object anon {
   
   trait X509 extends StObject {
     
-    var openssh: Signature
+    var openssh: js.UndefOr[OpenSshSignature] = js.undefined
     
-    var x509: Signature
+    var x509: js.UndefOr[x509Signature] = js.undefined
   }
   object X509 {
     
-    inline def apply(openssh: Signature, x509: Signature): X509 = {
-      val __obj = js.Dynamic.literal(openssh = openssh.asInstanceOf[js.Any], x509 = x509.asInstanceOf[js.Any])
+    inline def apply(): X509 = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[X509]
     }
     
     extension [Self <: X509](x: Self) {
       
-      inline def setOpenssh(value: Signature): Self = StObject.set(x, "openssh", value.asInstanceOf[js.Any])
+      inline def setOpenssh(value: OpenSshSignature): Self = StObject.set(x, "openssh", value.asInstanceOf[js.Any])
       
-      inline def setX509(value: Signature): Self = StObject.set(x, "x509", value.asInstanceOf[js.Any])
+      inline def setOpensshUndefined: Self = StObject.set(x, "openssh", js.undefined)
+      
+      inline def setX509(value: x509Signature): Self = StObject.set(x, "x509", value.asInstanceOf[js.Any])
+      
+      inline def setX509Undefined: Self = StObject.set(x, "x509", js.undefined)
     }
   }
   

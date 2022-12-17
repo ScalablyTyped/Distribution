@@ -24,7 +24,7 @@ trait NavigationProp[ParamList /* <: js.Object */, RouteName /* <: /* keyof Para
     * Turns out if we use an empty string, it doesn't show up in intelliSense.
     */
   @JSName("")
-  var _empty: (js.UndefOr[js.Tuple3[ParamList, Any, Any]]) & (js.UndefOr[js.Tuple3[ParamList, RouteName, EventMap]]) = js.native
+  var _empty: js.UndefOr[js.Tuple3[ParamList, Any, Any]] = js.native
   
   /**
     * Subscribe to events from the parent navigator.

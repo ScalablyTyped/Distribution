@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Stats extends StObject {
   
-  var author: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
+  var author: Avatarurl | Null
   
   /**
     * Format: uri
@@ -14,15 +14,11 @@ trait Stats extends StObject {
     */
   var comments_url: String
   
-  var commit: Tree
+  var commit: Commentcount
   
-  var committer: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
+  var committer: Avatarurl | Null
   
-  var files: js.UndefOr[
-    js.Array[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['diff-entry'] */ js.Any
-    ]
-  ] = js.undefined
+  var files: js.UndefOr[js.Array[Bloburl]] = js.undefined
   
   /**
     * Format: uri
@@ -49,45 +45,37 @@ trait Stats extends StObject {
 object Stats {
   
   inline def apply(
-    author: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any,
     comments_url: String,
-    commit: Tree,
-    committer: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any,
+    commit: Commentcount,
     html_url: String,
     node_id: String,
     parents: js.Array[HtmlurlSha],
     sha: String,
     url: String
   ): Stats = {
-    val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], comments_url = comments_url.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], committer = committer.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], parents = parents.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(comments_url = comments_url.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], parents = parents.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], author = null, committer = null)
     __obj.asInstanceOf[Stats]
   }
   
   extension [Self <: Stats](x: Self) {
     
-    inline def setAuthor(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
-    ): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: Avatarurl): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    
+    inline def setAuthorNull: Self = StObject.set(x, "author", null)
     
     inline def setComments_url(value: String): Self = StObject.set(x, "comments_url", value.asInstanceOf[js.Any])
     
-    inline def setCommit(value: Tree): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+    inline def setCommit(value: Commentcount): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
-    inline def setCommitter(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
-    ): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
+    inline def setCommitter(value: Avatarurl): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
     
-    inline def setFiles(
-      value: js.Array[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['diff-entry'] */ js.Any
-        ]
-    ): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setCommitterNull: Self = StObject.set(x, "committer", null)
+    
+    inline def setFiles(value: js.Array[Bloburl]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    inline def setFilesVarargs(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['diff-entry'] */ js.Any)*
-    ): Self = StObject.set(x, "files", js.Array(value*))
+    inline def setFilesVarargs(value: Bloburl*): Self = StObject.set(x, "files", js.Array(value*))
     
     inline def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
     

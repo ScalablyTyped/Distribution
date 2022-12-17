@@ -3,7 +3,6 @@ package typings.openpgp.anon
 import typings.openpgp.mod.UserID
 import typings.openpgp.mod.cleartext.CleartextMessage
 import typings.openpgp.openpgpBooleans.`false`
-import typings.openpgp.openpgpBooleans.`true`
 import typings.openpgp.openpgpStrings.node
 import typings.openpgp.openpgpStrings.web
 import org.scalablytyped.runtime.StObject
@@ -16,7 +15,7 @@ trait SignOptionsarmorfalsedetaArmor extends StObject {
   /**
     * (optional) if the return value should be ascii armored or the message object
     */
-  var armor: js.UndefOr[Boolean] & `false`
+  var armor: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (optional) override the creation date of the signature
@@ -26,7 +25,7 @@ trait SignOptionsarmorfalsedetaArmor extends StObject {
   /**
     * (optional) if the return value should contain a detached signature
     */
-  var detached: js.UndefOr[Boolean] & `true`
+  var detached: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  (optional) array of user IDs to sign with, one per key in `privateKeys`, e.g. [ { name:'Steve Sender', email:'steve@openpgp.org' }]
@@ -51,24 +50,26 @@ trait SignOptionsarmorfalsedetaArmor extends StObject {
 object SignOptionsarmorfalsedetaArmor {
   
   inline def apply(
-    armor: js.UndefOr[Boolean] & `false`,
-    detached: js.UndefOr[Boolean] & `true`,
     message: CleartextMessage | typings.openpgp.mod.message.Message,
     privateKeys: typings.openpgp.mod.key.Key | js.Array[Any]
   ): SignOptionsarmorfalsedetaArmor = {
-    val __obj = js.Dynamic.literal(armor = armor.asInstanceOf[js.Any], detached = detached.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], privateKeys = privateKeys.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], privateKeys = privateKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignOptionsarmorfalsedetaArmor]
   }
   
   extension [Self <: SignOptionsarmorfalsedetaArmor](x: Self) {
     
-    inline def setArmor(value: js.UndefOr[Boolean] & `false`): Self = StObject.set(x, "armor", value.asInstanceOf[js.Any])
+    inline def setArmor(value: Boolean): Self = StObject.set(x, "armor", value.asInstanceOf[js.Any])
+    
+    inline def setArmorUndefined: Self = StObject.set(x, "armor", js.undefined)
     
     inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    inline def setDetached(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
+    inline def setDetached(value: Boolean): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
+    
+    inline def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
     
     inline def setFromUserIds(value: js.Array[UserID]): Self = StObject.set(x, "fromUserIds", value.asInstanceOf[js.Any])
     

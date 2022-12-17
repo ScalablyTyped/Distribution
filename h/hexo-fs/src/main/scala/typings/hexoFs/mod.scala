@@ -8,14 +8,13 @@ import typings.hexoFs.anon.BytesRead
 import typings.hexoFs.anon.BytesWritten
 import typings.hexoFs.anon.DirectoryOptionsexcludeAr
 import typings.hexoFs.anon.Encoding
+import typings.hexoFs.anon.Escape
 import typings.hexoFs.anon.Flag
 import typings.hexoFs.anon.`0`
 import typings.hexoFs.anon.`1`
 import typings.hexoFs.anon.`2`
-import typings.hexoFs.anon.`3`
 import typings.hexoFs.hexoFsStrings.buffer
 import typings.node.NodeJS.ArrayBufferView
-import typings.node.anon.EncodingWithFileTypes
 import typings.node.anon.MakeDirectoryOptionsrecur
 import typings.node.anon.MakeDirectoryOptionsrecurMode
 import typings.node.anon.ObjectEncodingOptionswith
@@ -351,10 +350,10 @@ object mod {
     options: Unit,
     callback: js.Function2[/* err */ Any, /* value */ js.UndefOr[String], Unit]
   ): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
-  inline def readFile(path: Double, options: Encoding): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
+  inline def readFile(path: Double, options: Escape): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
   inline def readFile(
     path: Double,
-    options: Encoding,
+    options: Escape,
     callback: js.Function2[/* err */ Any, /* value */ js.UndefOr[String], Unit]
   ): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
   inline def readFile(path: PathLike): typings.bluebird.mod.^[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[String]]
@@ -364,17 +363,17 @@ object mod {
     options: Unit,
     callback: js.Function2[/* err */ Any, /* value */ js.UndefOr[String], Unit]
   ): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
-  inline def readFile(path: PathLike, options: Encoding): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
+  inline def readFile(path: PathLike, options: Escape): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
   inline def readFile(
     path: PathLike,
-    options: Encoding,
+    options: Escape,
     callback: js.Function2[/* err */ Any, /* value */ js.UndefOr[String], Unit]
   ): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
   
   inline def readFileSync(path: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def readFileSync(path: Double, options: Encoding): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def readFileSync(path: Double, options: Escape): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def readFileSync(path: PathLike): String = ^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def readFileSync(path: PathLike, options: Encoding): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def readFileSync(path: PathLike, options: Escape): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def readSync(fd: Double, buffer: ArrayBufferView): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def readSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
@@ -383,16 +382,16 @@ object mod {
   
   inline def readdir(path: PathLike): typings.bluebird.mod.^[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[js.Array[String]]]
   inline def readdir(path: PathLike, options: String): typings.bluebird.mod.^[js.Array[String | Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[js.Array[String | Buffer]]]
-  inline def readdir(path: PathLike, options: `0`): typings.bluebird.mod.^[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[js.Array[String]]]
-  inline def readdir(path: PathLike, options: `1`): typings.bluebird.mod.^[js.Array[Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[js.Array[Buffer]]]
-  inline def readdir(path: PathLike, options: `2`): typings.bluebird.mod.^[js.Array[String | Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[js.Array[String | Buffer]]]
+  inline def readdir(path: PathLike, options: Encoding): typings.bluebird.mod.^[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[js.Array[String]]]
+  inline def readdir(path: PathLike, options: `0`): typings.bluebird.mod.^[js.Array[Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[js.Array[Buffer]]]
+  inline def readdir(path: PathLike, options: `1`): typings.bluebird.mod.^[js.Array[String | Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[js.Array[String | Buffer]]]
   inline def readdir(path: PathLike, options: BufferEncoding): typings.bluebird.mod.^[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[js.Array[String]]]
   
   inline def readdirSync(path: PathLike): js.Array[Buffer | String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[Buffer | String]]
-  inline def readdirSync(path: PathLike, options: EncodingWithFileTypes): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def readdirSync(path: PathLike, options: typings.node.anon.Encoding): js.Array[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Buffer]]
   inline def readdirSync(path: PathLike, options: ObjectEncodingOptionswith): js.Array[Buffer | String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Buffer | String]]
   inline def readdirSync(path: PathLike, options: ObjectEncodingOptionswithEncoding): js.Array[Dirent] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Dirent]]
-  inline def readdirSync(path: PathLike, options: WithFileTypes): js.Array[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Buffer]]
+  inline def readdirSync(path: PathLike, options: WithFileTypes): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   inline def readdirSync(path: PathLike, options: BufferEncoding): js.Array[Buffer | String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Buffer | String]]
   
   inline def readdirSync_buffer(path: PathLike, options: buffer): js.Array[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Buffer]]
@@ -401,9 +400,9 @@ object mod {
   
   inline def readlink(path: PathLike): typings.bluebird.mod.^[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[String]]
   inline def readlink(path: PathLike, options: String): typings.bluebird.mod.^[String | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String | Buffer]]
-  inline def readlink(path: PathLike, options: `1`): typings.bluebird.mod.^[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Buffer]]
-  inline def readlink(path: PathLike, options: `2`): typings.bluebird.mod.^[String | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String | Buffer]]
-  inline def readlink(path: PathLike, options: `3`): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
+  inline def readlink(path: PathLike, options: `0`): typings.bluebird.mod.^[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Buffer]]
+  inline def readlink(path: PathLike, options: `1`): typings.bluebird.mod.^[String | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String | Buffer]]
+  inline def readlink(path: PathLike, options: `2`): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
   inline def readlink(path: PathLike, options: BufferEncoding): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
   
   inline def readlinkSync(path: PathLike): String = ^.asInstanceOf[js.Dynamic].applyDynamic("readlinkSync")(path.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -417,9 +416,9 @@ object mod {
   
   inline def realpath(path: PathLike): typings.bluebird.mod.^[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("realpath")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[String]]
   inline def realpath(path: PathLike, options: String): typings.bluebird.mod.^[String | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("realpath")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String | Buffer]]
-  inline def realpath(path: PathLike, options: `1`): typings.bluebird.mod.^[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("realpath")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Buffer]]
-  inline def realpath(path: PathLike, options: `2`): typings.bluebird.mod.^[String | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("realpath")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String | Buffer]]
-  inline def realpath(path: PathLike, options: `3`): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("realpath")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
+  inline def realpath(path: PathLike, options: `0`): typings.bluebird.mod.^[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("realpath")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Buffer]]
+  inline def realpath(path: PathLike, options: `1`): typings.bluebird.mod.^[String | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("realpath")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String | Buffer]]
+  inline def realpath(path: PathLike, options: `2`): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("realpath")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
   inline def realpath(path: PathLike, options: BufferEncoding): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("realpath")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
   
   object realpathSync {

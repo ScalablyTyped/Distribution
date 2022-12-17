@@ -3,7 +3,6 @@ package typings.whatwgUrl
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.IterableIterator
 import typings.whatwgUrl.anon.BaseURL
-import typings.whatwgUrl.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -118,14 +117,14 @@ object mod {
   }
   
   inline def basicURLParse(input: String): URLRecord | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("basicURLParse")(input.asInstanceOf[js.Any]).asInstanceOf[URLRecord | Null]
-  inline def basicURLParse(input: String, options: BaseURL): URLRecord | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("basicURLParse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[URLRecord | Null]
+  inline def basicURLParse(input: String, options: typings.whatwgUrl.anon.StateOverride): URLRecord | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("basicURLParse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[URLRecord | Null]
   
   inline def cannotHaveAUsernamePasswordPort(urlRecord: URLRecord): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("cannotHaveAUsernamePasswordPort")(urlRecord.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def hasAnOpaquePath(urlRecord: URLRecord): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasAnOpaquePath")(urlRecord.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def parseURL(input: String): URLRecord | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseURL")(input.asInstanceOf[js.Any]).asInstanceOf[URLRecord | Null]
-  inline def parseURL(input: String, options: `0`): URLRecord | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parseURL")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[URLRecord | Null]
+  inline def parseURL(input: String, options: BaseURL): URLRecord | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parseURL")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[URLRecord | Null]
   
   inline def percentDecodeBytes(buffer: TypedArray): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("percentDecodeBytes")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   

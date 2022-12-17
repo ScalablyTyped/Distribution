@@ -34,7 +34,7 @@ object datepickerUtilsMod {
   
   inline def getDate(dirtyDate: DirtyDate): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getDate")(dirtyDate.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def getEffectiveMaxDate(a: `11`): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getEffectiveMaxDate")(a.asInstanceOf[js.Any]).asInstanceOf[js.Date]
+  inline def getEffectiveMaxDate(a: `12`): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getEffectiveMaxDate")(a.asInstanceOf[js.Any]).asInstanceOf[js.Date]
   
   inline def getEffectiveMinDate(a: IncludeDatesMinDate): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getEffectiveMinDate")(a.asInstanceOf[js.Any]).asInstanceOf[js.Date]
   
@@ -73,7 +73,7 @@ object datepickerUtilsMod {
   
   inline def isEndOfMonth(a: js.Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEndOfMonth")(a.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isOutOfBounds(b: js.Date, a: `12`): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isOutOfBounds")(b.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isOutOfBounds(b: js.Date, a: `11`): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isOutOfBounds")(b.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def isSameDay(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSameDay")().asInstanceOf[Boolean]
   inline def isSameDay(b: js.Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSameDay")(b.asInstanceOf[js.Any]).asInstanceOf[Boolean]
@@ -92,7 +92,7 @@ object datepickerUtilsMod {
   
   inline def isStartOfMonth(a: js.Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStartOfMonth")(a.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def monthDisabledAfter(b: js.Date, a: `11`): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("monthDisabledAfter")(b.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def monthDisabledAfter(b: js.Date, a: `12`): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("monthDisabledAfter")(b.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def monthDisabledBefore(b: js.Date, a: IncludeDatesMinDate): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("monthDisabledBefore")(b.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   

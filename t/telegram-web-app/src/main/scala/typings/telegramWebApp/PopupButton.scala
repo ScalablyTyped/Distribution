@@ -19,16 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PopupButton extends StObject
 object PopupButton {
   
-  inline def typedefaultdestructivetex(
-    text: String & js.UndefOr[String],
-    `type`: (default | destructive) & (js.UndefOr[default | ok | close | cancel | destructive])
-  ): typings.telegramWebApp.anon.typedefaultdestructivetex = {
+  inline def typedefaultdestructivetex(text: String, `type`: default | destructive): typings.telegramWebApp.anon.typedefaultdestructivetex = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.telegramWebApp.anon.typedefaultdestructivetex]
   }
   
-  inline def typeokclosecanceltextstri(`type`: (ok | close | cancel) & (js.UndefOr[default | ok | close | cancel | destructive])): typings.telegramWebApp.anon.typeokclosecanceltextstri = {
+  inline def typeokclosecanceltextstri(`type`: ok | close | cancel): typings.telegramWebApp.anon.typeokclosecanceltextstri = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.telegramWebApp.anon.typeokclosecanceltextstri]

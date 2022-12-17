@@ -11,8 +11,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@JSImport("tabulator-tables", "Tabulator")
 @js.native
-trait Tabulator extends StObject {
+open class Tabulator protected () extends StObject {
+  def this(selector: String) = this()
+  def this(selector: HTMLElement) = this()
+  def this(selector: String, options: Options) = this()
+  def this(selector: HTMLElement, options: Options) = this()
   
   /**
     * If you wish to add a single column to the table, you can do this using the addColumn function.
@@ -718,4 +723,50 @@ trait Tabulator extends StObject {
     * This will return a value of true if every cell passes validation, if any cells fail, then it will return an array of Cell Components representing each cell that has failed validation.
     */
   def validate(): `true` | js.Array[CellComponent] = js.native
+}
+object Tabulator {
+  
+  @JSImport("tabulator-tables", "Tabulator")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("tabulator-tables", "Tabulator.bindModules")
+  @js.native
+  def bindModules: js.Function1[/* param0 */ Any, Unit] = js.native
+  inline def bindModules_=(x: js.Function1[/* param0 */ Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bindModules")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("tabulator-tables", "Tabulator.defaultOptions")
+  @js.native
+  def defaultOptions: Options = js.native
+  inline def defaultOptions_=(x: Options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
+  
+  /**
+    * A lot of the modules come with a range of default settings to make setting up your table easier, for example the sorters, formatters and editors that ship with Tabulator as standard.
+    *
+    * If you are using a lot of custom settings over and over again (for example a custom sorter). you can end up re-declaring it several time for different tables. To make your life easier Tabulator allows you to extend the default setup of each module to make your custom options as easily accessible as the defaults.
+    *
+    * Using the extendModule function on the global Tabulator variable allows you to globally add these options to all tables.
+    *
+    * The function takes three arguments, the name of the module, the name of the property you want to extend, and an object containing the elements you want to add in your module. In the example below we extend the format module to add two new default formatters:
+    */
+  /* static member */
+  @JSImport("tabulator-tables", "Tabulator.extendModule")
+  @js.native
+  def extendModule: js.Function3[/* name */ String, /* property */ String, /* values */ js.Object, Unit] = js.native
+  inline def extendModule_=(x: js.Function3[/* name */ String, /* property */ String, /* values */ js.Object, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extendModule")(x.asInstanceOf[js.Any])
+  
+  /** Lookup table objects for any existing table using the element they were created on. */
+  /* static member */
+  @JSImport("tabulator-tables", "Tabulator.findTable")
+  @js.native
+  def findTable: js.Function1[/* query */ String, js.Array[Tabulator]] = js.native
+  inline def findTable_=(x: js.Function1[/* query */ String, js.Array[Tabulator]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findTable")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("tabulator-tables", "Tabulator.registerModule")
+  @js.native
+  def registerModule: js.Function1[/* module */ Module, Unit] = js.native
+  inline def registerModule_=(x: js.Function1[/* module */ Module, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("registerModule")(x.asInstanceOf[js.Any])
 }

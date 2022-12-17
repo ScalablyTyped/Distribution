@@ -10,8 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libRdsSignerMod {
   
+  @JSImport("aws-sdk/lib/rds/signer", "Signer")
   @js.native
-  trait Signer extends StObject {
+  /**
+    * A signer object can be used to generate an auth token to a database.
+    */
+  open class Signer () extends StObject {
+    def this(options: SignerOptions) = this()
     
     /**
       * Generate an auth token to a database.

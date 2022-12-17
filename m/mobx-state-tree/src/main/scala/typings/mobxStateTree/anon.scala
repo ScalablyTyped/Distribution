@@ -103,15 +103,15 @@ object anon {
     
     var SnapshotType: Any = js.native
     
-    var Type: Any = js.native
+    var TypeWithoutSTN: Any = js.native
   }
   
   @js.native
   trait Fn0 extends StObject {
     
     def apply[IT /* <: IAnyComplexType */](subType: IT): IMaybe[IReferenceType[IT]] = js.native
-    def apply[IT /* <: IAnyComplexType */](subType: IT, options: ReferenceOptionsGetSet[IT] & OnInvalidated[IT]): IReferenceType[IT] = js.native
-    def apply[IT /* <: IAnyComplexType */](subType: IT, options: js.Object & OnInvalidated[IT]): IReferenceType[IT] = js.native
+    def apply[IT /* <: IAnyComplexType */](subType: IT, options: (ReferenceOptionsGetSet[IT] & OnInvalidated[IT]) | OnInvalidated[IT]): IReferenceType[IT] = js.native
+    def apply[IT /* <: IAnyComplexType */](subType: IT, options: (ReferenceOptionsGetSet[IT] & AcceptsUndefined[IT]) | AcceptsUndefined[IT]): IMaybe[IReferenceType[IT]] = js.native
   }
   
   @js.native
@@ -940,6 +940,6 @@ object anon {
     
     var SnapshotType: Any = js.native
     
-    var TypeWithoutSTN: Any = js.native
+    var Type: Any = js.native
   }
 }

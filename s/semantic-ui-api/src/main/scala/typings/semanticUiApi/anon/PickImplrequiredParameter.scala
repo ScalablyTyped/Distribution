@@ -30,7 +30,7 @@ trait PickImplrequiredParameter
   
   var parseError: js.UndefOr[String] = js.undefined
   
-  var requiredParameter: String & js.UndefOr[String]
+  var requiredParameter: String
   
   var statusMessage: js.UndefOr[String] = js.undefined
   
@@ -38,7 +38,7 @@ trait PickImplrequiredParameter
 }
 object PickImplrequiredParameter {
   
-  inline def apply(requiredParameter: String & js.UndefOr[String]): PickImplrequiredParameter = {
+  inline def apply(requiredParameter: String): PickImplrequiredParameter = {
     val __obj = js.Dynamic.literal(requiredParameter = requiredParameter.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplrequiredParameter]
   }
@@ -85,7 +85,7 @@ object PickImplrequiredParameter {
     
     inline def setParseErrorUndefined: Self = StObject.set(x, "parseError", js.undefined)
     
-    inline def setRequiredParameter(value: String & js.UndefOr[String]): Self = StObject.set(x, "requiredParameter", value.asInstanceOf[js.Any])
+    inline def setRequiredParameter(value: String): Self = StObject.set(x, "requiredParameter", value.asInstanceOf[js.Any])
     
     inline def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
     

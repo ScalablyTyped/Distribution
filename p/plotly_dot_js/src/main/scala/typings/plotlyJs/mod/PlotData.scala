@@ -1,16 +1,16 @@
 package typings.plotlyJs.mod
 
 import typings.plotlyJs.anon.End
-import typings.plotlyJs.anon.PartialBoxPlotMarker
-import typings.plotlyJs.anon.PartialColorBar
-import typings.plotlyJs.anon.PartialDataTitle
+import typings.plotlyJs.anon.PartialBoxPlotMarkerColor
+import typings.plotlyJs.anon.PartialColorBarBgcolor
+import typings.plotlyJs.anon.PartialDataTitleFont
 import typings.plotlyJs.anon.PartialDelta
 import typings.plotlyJs.anon.PartialFont
-import typings.plotlyJs.anon.PartialGaugeAxis
+import typings.plotlyJs.anon.PartialGaugeBgcolor
 import typings.plotlyJs.anon.PartialHoverLabel
 import typings.plotlyJs.anon.PartialPattern
-import typings.plotlyJs.anon.PartialPlotMarkerAutocolorscale
-import typings.plotlyJs.anon.PartialPlotNumber
+import typings.plotlyJs.anon.PartialPlotMarkerCauto
+import typings.plotlyJs.anon.PartialPlotNumberFont
 import typings.plotlyJs.anon.PartialScatterLine
 import typings.plotlyJs.anon.PartialScatterMarkerLine
 import typings.plotlyJs.anon.Partialrownumbercolumnnum
@@ -148,7 +148,7 @@ trait PlotData extends StObject {
   
   var cliponaxis: Boolean
   
-  var colorbar: PartialColorBar
+  var colorbar: PartialColorBarBgcolor
   
   var colorscale: ColorScale
   
@@ -172,7 +172,7 @@ trait PlotData extends StObject {
   
   var fillpattern: PartialPattern
   
-  var gauge: PartialGaugeAxis
+  var gauge: PartialGaugeBgcolor
   
   var groupnorm: _empty | fraction | percent
   
@@ -234,7 +234,7 @@ trait PlotData extends StObject {
   
   var lon: js.Array[Datum]
   
-  var marker: PartialPlotMarkerAutocolorscale | PartialBoxPlotMarker
+  var marker: PartialPlotMarkerCauto | PartialBoxPlotMarkerColor
   
   @JSName("marker.color")
   var markerDotcolor: Color
@@ -295,7 +295,7 @@ trait PlotData extends StObject {
   
   var name: String
   
-  var number: PartialPlotNumber
+  var number: PartialPlotNumberFont
   
   var offset: Double
   
@@ -335,7 +335,7 @@ trait PlotData extends StObject {
   
   var theta: js.Array[Datum]
   
-  var title: PartialDataTitle
+  var title: PartialDataTitleFont
   
   var transforms: js.Array[DataTransform]
   
@@ -388,7 +388,7 @@ object PlotData {
     boxpoints: all | outliers | suspectedoutliers | `false`,
     branchvalues: total | remainder,
     cliponaxis: Boolean,
-    colorbar: PartialColorBar,
+    colorbar: PartialColorBarBgcolor,
     colorscale: ColorScale,
     connectgaps: Boolean,
     customdata: js.Array[js.Array[Datum] | Datum],
@@ -400,7 +400,7 @@ object PlotData {
     fill: none | tozeroy | tozerox | tonexty | tonextx | toself | tonext,
     fillcolor: String,
     fillpattern: PartialPattern,
-    gauge: PartialGaugeAxis,
+    gauge: PartialGaugeBgcolor,
     groupnorm: _empty | fraction | percent,
     histfunc: count | sum | avg | min | max,
     hole: Double,
@@ -428,7 +428,7 @@ object PlotData {
     locationmode: `ISO-3` | `USA-states` | (`country names`) | `geojson-id`,
     locations: js.Array[Datum],
     lon: js.Array[Datum],
-    marker: PartialPlotMarkerAutocolorscale | PartialBoxPlotMarker,
+    marker: PartialPlotMarkerCauto | PartialBoxPlotMarkerColor,
     markerDotcolor: Color,
     markerDotcolorscale: ColorScale | js.Array[ColorScale],
     markerDotline: PartialScatterMarkerLine,
@@ -449,7 +449,7 @@ object PlotData {
     markerDotsymbol: MarkerSymbol | js.Array[MarkerSymbol],
     mode: lines | markers | text | linesPlussignmarkers | textPlussignmarkers | textPlussignlines | textPlussignlinesPlussignmarkers | none | gauge | number | delta | numberPlussigndelta | gaugePlussignnumber | gaugePlussignnumberPlussigndelta | gaugePlussigndelta,
     name: String,
-    number: PartialPlotNumber,
+    number: PartialPlotNumberFont,
     offset: Double,
     opacity: Double,
     orientation: v | h,
@@ -469,7 +469,7 @@ object PlotData {
     textposition: (`top left`) | (`top center`) | (`top right`) | (`middle left`) | (`middle center`) | (`middle right`) | (`bottom left`) | (`bottom center`) | (`bottom right`) | inside | outside | auto | none,
     texttemplate: String | js.Array[String],
     theta: js.Array[Datum],
-    title: PartialDataTitle,
+    title: PartialDataTitleFont,
     transforms: js.Array[DataTransform],
     transpose: Boolean,
     `type`: PlotType,
@@ -535,7 +535,7 @@ object PlotData {
     
     inline def setCliponaxis(value: Boolean): Self = StObject.set(x, "cliponaxis", value.asInstanceOf[js.Any])
     
-    inline def setColorbar(value: PartialColorBar): Self = StObject.set(x, "colorbar", value.asInstanceOf[js.Any])
+    inline def setColorbar(value: PartialColorBarBgcolor): Self = StObject.set(x, "colorbar", value.asInstanceOf[js.Any])
     
     inline def setColorscale(value: ColorScale): Self = StObject.set(x, "colorscale", value.asInstanceOf[js.Any])
     
@@ -563,7 +563,7 @@ object PlotData {
     
     inline def setFillpattern(value: PartialPattern): Self = StObject.set(x, "fillpattern", value.asInstanceOf[js.Any])
     
-    inline def setGauge(value: PartialGaugeAxis): Self = StObject.set(x, "gauge", value.asInstanceOf[js.Any])
+    inline def setGauge(value: PartialGaugeBgcolor): Self = StObject.set(x, "gauge", value.asInstanceOf[js.Any])
     
     inline def setGroupnorm(value: _empty | fraction | percent): Self = StObject.set(x, "groupnorm", value.asInstanceOf[js.Any])
     
@@ -637,7 +637,7 @@ object PlotData {
     
     inline def setLonVarargs(value: Datum*): Self = StObject.set(x, "lon", js.Array(value*))
     
-    inline def setMarker(value: PartialPlotMarkerAutocolorscale | PartialBoxPlotMarker): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: PartialPlotMarkerCauto | PartialBoxPlotMarkerColor): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
     inline def setMarkerDotcolor(value: Color): Self = StObject.set(x, "marker.color", value.asInstanceOf[js.Any])
     
@@ -695,7 +695,7 @@ object PlotData {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setNumber(value: PartialPlotNumber): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: PartialPlotNumberFont): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
@@ -751,7 +751,7 @@ object PlotData {
     
     inline def setThetaVarargs(value: Datum*): Self = StObject.set(x, "theta", js.Array(value*))
     
-    inline def setTitle(value: PartialDataTitle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: PartialDataTitleFont): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTransforms(value: js.Array[DataTransform]): Self = StObject.set(x, "transforms", value.asInstanceOf[js.Any])
     

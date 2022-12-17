@@ -505,7 +505,7 @@ object distNajaMod {
   
   type BeforeEvent = CustomEvent[Data]
   
-  type CompleteEvent = CustomEvent[typings.naja.anon.Options]
+  type CompleteEvent = CustomEvent[typings.naja.anon.Payload]
   
   type ErrorEvent = CustomEvent[Request]
   
@@ -676,9 +676,9 @@ object distNajaMod {
     }
   }
   
-  type PayloadEvent = CustomEvent[typings.naja.anon.Payload]
+  type PayloadEvent = CustomEvent[typings.naja.anon.Options]
   
   type StartEvent = CustomEvent[AbortController]
   
-  type SuccessEvent = CustomEvent[typings.naja.anon.Payload]
+  type SuccessEvent = CustomEvent[typings.naja.anon.Options]
 }

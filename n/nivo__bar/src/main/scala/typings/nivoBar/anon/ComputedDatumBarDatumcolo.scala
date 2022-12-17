@@ -2,6 +2,7 @@ package typings.nivoBar.anon
 
 import typings.nivoBar.distTypesTypesMod.BarDatum
 import typings.nivoBar.nivoBarBooleans.`false`
+import typings.nivoBar.nivoBarInts.`0`
 import typings.nivoBar.nivoBarStrings._empty
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
@@ -13,7 +14,7 @@ trait ComputedDatumBarDatumcolo extends StObject {
   
   var color: String
   
-  var data: Exclude[BarDatum, js.UndefOr[Null | `false` | _empty | typings.nivoBar.nivoBarInts.`0`]]
+  var data: Exclude[BarDatum, js.UndefOr[Null | `false` | _empty | `0`]]
   
   var fill: js.UndefOr[String] = js.undefined
   
@@ -33,7 +34,7 @@ object ComputedDatumBarDatumcolo {
   
   inline def apply(
     color: String,
-    data: Exclude[BarDatum, js.UndefOr[Null | `false` | _empty | typings.nivoBar.nivoBarInts.`0`]],
+    data: Exclude[BarDatum, js.UndefOr[Null | `false` | _empty | `0`]],
     formattedValue: String,
     hidden: Boolean,
     id: String | Double,
@@ -48,7 +49,7 @@ object ComputedDatumBarDatumcolo {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    inline def setData(value: Exclude[BarDatum, js.UndefOr[Null | `false` | _empty | typings.nivoBar.nivoBarInts.`0`]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Exclude[BarDatum, js.UndefOr[Null | `false` | _empty | `0`]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

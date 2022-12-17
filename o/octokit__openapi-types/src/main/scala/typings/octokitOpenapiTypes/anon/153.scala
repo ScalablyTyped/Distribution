@@ -7,20 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `153` extends StObject {
   
   @JSName("application/json")
-  var applicationSlashjson: `152` | Null
+  var applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['workflow-run-usage'] */ js.Any
 }
 object `153` {
   
-  inline def apply(): `153` = {
+  inline def apply(
+    applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['workflow-run-usage'] */ js.Any
+  ): `153` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("application/json")(null)
+    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`153`]
   }
   
   extension [Self <: `153`](x: Self) {
     
-    inline def setApplicationSlashjson(value: `152`): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
-    
-    inline def setApplicationSlashjsonNull: Self = StObject.set(x, "application/json", null)
+    inline def setApplicationSlashjson(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['workflow-run-usage'] */ js.Any
+    ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }
 }

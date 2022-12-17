@@ -71,7 +71,7 @@ trait PickImplmethodPartialPick
   
   var metadata: js.UndefOr[MetadataSettings] = js.undefined
   
-  var method: (post | get | put | delete | head | options | patch) & (js.UndefOr[post | get | put | delete | head | options | patch])
+  var method: post | get | put | delete | head | options | patch
   
   var mockResponse: js.UndefOr[Any | `false`] = js.undefined
   
@@ -147,9 +147,7 @@ trait PickImplmethodPartialPick
 }
 object PickImplmethodPartialPick {
   
-  inline def apply(
-    method: (post | get | put | delete | head | options | patch) & (js.UndefOr[post | get | put | delete | head | options | patch])
-  ): PickImplmethodPartialPick = {
+  inline def apply(method: post | get | put | delete | head | options | patch): PickImplmethodPartialPick = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmethodPartialPick]
   }
@@ -224,9 +222,7 @@ object PickImplmethodPartialPick {
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    inline def setMethod(
-      value: (post | get | put | delete | head | options | patch) & (js.UndefOr[post | get | put | delete | head | options | patch])
-    ): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: post | get | put | delete | head | options | patch): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     inline def setMockResponse(value: Any | `false`): Self = StObject.set(x, "mockResponse", value.asInstanceOf[js.Any])
     

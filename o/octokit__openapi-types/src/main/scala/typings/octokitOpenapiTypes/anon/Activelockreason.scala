@@ -65,13 +65,13 @@ trait Activelockreason extends StObject {
     *   "registration"
     * ]
     */
-  var labels: js.Array[String | Color]
+  var labels: js.Array[String | ColorDefault]
   
   var labels_url: String
   
   var locked: Boolean
   
-  var milestone: Creator | Null
+  var milestone: Labelsurl | Null
   
   var node_id: String
   
@@ -81,13 +81,13 @@ trait Activelockreason extends StObject {
     */
   var number: Double
   
-  var performed_via_github_app: js.UndefOr[Clientsecret | Null] = js.undefined
+  var performed_via_github_app: js.UndefOr[Externalurl | Null] = js.undefined
   
   var pull_request: js.UndefOr[Diffurl] = js.undefined
   
-  var reactions: js.UndefOr[`1`] = js.undefined
+  var reactions: js.UndefOr[Confused] = js.undefined
   
-  var repository: js.UndefOr[Allowmergecommit] = js.undefined
+  var repository: js.UndefOr[Allowupdatebranch] = js.undefined
   
   /** Format: uri */
   var repository_url: String
@@ -136,7 +136,7 @@ object Activelockreason {
     events_url: String,
     html_url: String,
     id: Double,
-    labels: js.Array[String | Color],
+    labels: js.Array[String | ColorDefault],
     labels_url: String,
     locked: Boolean,
     node_id: String,
@@ -215,15 +215,15 @@ object Activelockreason {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setLabels(value: js.Array[String | Color]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: js.Array[String | ColorDefault]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    inline def setLabelsVarargs(value: (String | Color)*): Self = StObject.set(x, "labels", js.Array(value*))
+    inline def setLabelsVarargs(value: (String | ColorDefault)*): Self = StObject.set(x, "labels", js.Array(value*))
     
     inline def setLabels_url(value: String): Self = StObject.set(x, "labels_url", value.asInstanceOf[js.Any])
     
     inline def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
     
-    inline def setMilestone(value: Creator): Self = StObject.set(x, "milestone", value.asInstanceOf[js.Any])
+    inline def setMilestone(value: Labelsurl): Self = StObject.set(x, "milestone", value.asInstanceOf[js.Any])
     
     inline def setMilestoneNull: Self = StObject.set(x, "milestone", null)
     
@@ -231,7 +231,7 @@ object Activelockreason {
     
     inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    inline def setPerformed_via_github_app(value: Clientsecret): Self = StObject.set(x, "performed_via_github_app", value.asInstanceOf[js.Any])
+    inline def setPerformed_via_github_app(value: Externalurl): Self = StObject.set(x, "performed_via_github_app", value.asInstanceOf[js.Any])
     
     inline def setPerformed_via_github_appNull: Self = StObject.set(x, "performed_via_github_app", null)
     
@@ -241,11 +241,11 @@ object Activelockreason {
     
     inline def setPull_requestUndefined: Self = StObject.set(x, "pull_request", js.undefined)
     
-    inline def setReactions(value: `1`): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
+    inline def setReactions(value: Confused): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
     
     inline def setReactionsUndefined: Self = StObject.set(x, "reactions", js.undefined)
     
-    inline def setRepository(value: Allowmergecommit): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setRepository(value: Allowupdatebranch): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
     inline def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
     

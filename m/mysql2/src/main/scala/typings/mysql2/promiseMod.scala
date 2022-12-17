@@ -1,13 +1,13 @@
 package typings.mysql2
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.mysql2.mod.ConnectionOptions
+import typings.mysql2.mod.PoolOptions
 import typings.mysql2.mysql2Strings.acquire
 import typings.mysql2.mysql2Strings.connection
 import typings.mysql2.mysql2Strings.enqueue
 import typings.mysql2.mysql2Strings.release
-import typings.mysql2.typingsMysqlLibConnectionMod.ConnectionOptions
 import typings.mysql2.typingsMysqlLibPoolClusterMod.PoolClusterOptions
-import typings.mysql2.typingsMysqlLibPoolMod.PoolOptions
 import typings.mysql2.typingsMysqlLibProtocolPacketsFieldPacketMod.FieldPacket
 import typings.mysql2.typingsMysqlLibProtocolPacketsOkPacketMod.OkPacket
 import typings.mysql2.typingsMysqlLibProtocolPacketsResultSetHeaderMod.ResultSetHeader
@@ -25,13 +25,10 @@ object promiseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createConnection(config: ConnectionOptions): typings.mysql2.typingsMysqlMod.Connection = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(config.asInstanceOf[js.Any]).asInstanceOf[typings.mysql2.typingsMysqlMod.Connection]
-  inline def createConnection(connectionUri: String): typings.mysql2.typingsMysqlMod.Connection = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(connectionUri.asInstanceOf[js.Any]).asInstanceOf[typings.mysql2.typingsMysqlMod.Connection]
+  inline def createConnection(config: ConnectionOptions): js.Promise[Connection] = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Connection]]
+  inline def createConnection(connectionUri: String): js.Promise[Connection] = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(connectionUri.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Connection]]
   
-  inline def createConnection_Promise(config: ConnectionOptions): js.Promise[typings.mysql2.typingsMysqlMod.Connection] = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.mysql2.typingsMysqlMod.Connection]]
-  inline def createConnection_Promise(connectionUri: String): js.Promise[typings.mysql2.typingsMysqlMod.Connection] = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(connectionUri.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.mysql2.typingsMysqlMod.Connection]]
-  
-  inline def createPool(config: PoolOptions): typings.mysql2.typingsMysqlMod.Pool = ^.asInstanceOf[js.Dynamic].applyDynamic("createPool")(config.asInstanceOf[js.Any]).asInstanceOf[typings.mysql2.typingsMysqlMod.Pool]
+  inline def createPool(config: PoolOptions): Pool = ^.asInstanceOf[js.Dynamic].applyDynamic("createPool")(config.asInstanceOf[js.Any]).asInstanceOf[Pool]
   
   inline def createPoolCluster(): PoolCluster = ^.asInstanceOf[js.Dynamic].applyDynamic("createPoolCluster")().asInstanceOf[PoolCluster]
   inline def createPoolCluster(config: PoolClusterOptions): PoolCluster = ^.asInstanceOf[js.Dynamic].applyDynamic("createPoolCluster")(config.asInstanceOf[js.Any]).asInstanceOf[PoolCluster]
@@ -115,25 +112,16 @@ object promiseMod {
     def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: StringDictionary[Any]): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
     def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: Any): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
     
-    def getConnection(): js.Promise[typings.mysql2.typingsMysqlMod.PoolConnection] = js.native
+    def getConnection(): js.Promise[PoolConnection] = js.native
     
     @JSName("on")
-    def on_acquire(
-      event: acquire,
-      listener: js.Function1[/* connection */ typings.mysql2.typingsMysqlMod.PoolConnection, Any]
-    ): this.type = js.native
+    def on_acquire(event: acquire, listener: js.Function1[/* connection */ PoolConnection, Any]): this.type = js.native
     @JSName("on")
-    def on_connection(
-      event: connection,
-      listener: js.Function1[/* connection */ typings.mysql2.typingsMysqlMod.PoolConnection, Any]
-    ): this.type = js.native
+    def on_connection(event: connection, listener: js.Function1[/* connection */ PoolConnection, Any]): this.type = js.native
     @JSName("on")
     def on_enqueue(event: enqueue, listener: js.Function0[Any]): this.type = js.native
     @JSName("on")
-    def on_release(
-      event: release,
-      listener: js.Function1[/* connection */ typings.mysql2.typingsMysqlMod.PoolConnection, Any]
-    ): this.type = js.native
+    def on_release(event: release, listener: js.Function1[/* connection */ PoolConnection, Any]): this.type = js.native
     
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: js.Array[Any]): js.Promise[js.Tuple2[T, js.Array[FieldPacket]]] = js.native
@@ -146,8 +134,7 @@ object promiseMod {
   }
   
   @js.native
-  trait PoolConnection
-    extends typings.mysql2.typingsMysqlLibConnectionMod.^ {
+  trait PoolConnection extends Connection {
     
     def release(): Unit = js.native
   }

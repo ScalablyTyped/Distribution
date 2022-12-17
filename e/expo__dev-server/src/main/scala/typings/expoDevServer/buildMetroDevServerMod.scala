@@ -11,6 +11,7 @@ import typings.expoDevServer.buildLogReporterMod.default
 import typings.expoDevServer.expoDevServerStrings.android
 import typings.expoDevServer.expoDevServerStrings.ios
 import typings.expoDevServer.expoDevServerStrings.web
+import typings.metro.assetMod.AssetData
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -54,15 +55,27 @@ object buildMetroDevServerMod {
   
   inline def runMetroDevServerAsync(projectRoot: String, options: MetroDevServerOptions): js.Promise[typings.expoDevServer.anon.MessageSocket] = (^.asInstanceOf[js.Dynamic].applyDynamic("runMetroDevServerAsync")(projectRoot.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.expoDevServer.anon.MessageSocket]]
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Metro.AssetData * / any */ trait BundleAssetWithFileHashes extends StObject {
+  trait BundleAssetWithFileHashes
+    extends StObject
+       with AssetData {
     
     var fileHashes: js.Array[String]
   }
   object BundleAssetWithFileHashes {
     
-    inline def apply(fileHashes: js.Array[String]): BundleAssetWithFileHashes = {
-      val __obj = js.Dynamic.literal(fileHashes = fileHashes.asInstanceOf[js.Any])
+    inline def apply(
+      __packager_asset: Boolean,
+      fileHashes: js.Array[String],
+      fileSystemLocation: String,
+      files: js.Array[String],
+      hash: String,
+      httpServerLocation: String,
+      name: String,
+      scales: js.Array[Double],
+      `type`: String
+    ): BundleAssetWithFileHashes = {
+      val __obj = js.Dynamic.literal(__packager_asset = __packager_asset.asInstanceOf[js.Any], fileHashes = fileHashes.asInstanceOf[js.Any], fileSystemLocation = fileSystemLocation.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], httpServerLocation = httpServerLocation.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], scales = scales.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[BundleAssetWithFileHashes]
     }
     

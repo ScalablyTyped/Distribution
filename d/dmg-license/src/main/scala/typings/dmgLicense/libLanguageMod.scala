@@ -1,9 +1,12 @@
 package typings.dmgLicense
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.dmgLicense.anon.`2`
 import typings.dmgLicense.libLabelsMod.Labels
 import typings.iconvCorefoundation.mod.StringEncoding
 import typings.std.Error
+import typings.std.Exclude
+import typings.std.Map
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -96,30 +99,15 @@ object libLanguageMod {
     var name: String = js.native
   }
   
-  type LangSpec = String | Double
-  
-  type LangSpecs = LangSpec | js.Array[LangSpec]
-  
-  trait Localization extends StObject {
-    
-    var lang: LangSpecs
-  }
-  object Localization {
-    
-    inline def apply(lang: LangSpecs): Localization = {
-      val __obj = js.Dynamic.literal(lang = lang.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Localization]
-    }
-    
-    extension [Self <: Localization](x: Self) {
-      
-      inline def setLang(value: LangSpecs): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
-      
-      inline def setLangVarargs(value: LangSpec*): Self = StObject.set(x, "lang", js.Array(value*))
-    }
-  }
-  
   object indexByLanguage {
+    
+    inline def apply[T /* <: Localization */](objects: js.Iterable[T]): Map[Double, T] = ^.asInstanceOf[js.Dynamic].apply(objects.asInstanceOf[js.Any]).asInstanceOf[Map[Double, T]]
+    inline def apply[T /* <: Localization */](objects: js.Iterable[T], options: (Options[T, T]) & typings.dmgLicense.anon.Map): Map[Double, T] = (^.asInstanceOf[js.Dynamic].apply(objects.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Map[Double, T]]
+    inline def apply[T /* <: Localization */, U](objects: js.Iterable[T], options: (Options[T, U]) & (`2`[T, U])): Map[Double, Exclude[U, Unit]] = (^.asInstanceOf[js.Dynamic].apply(objects.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Map[Double, Exclude[U, Unit]]]
+    
+    @JSImport("dmg-license/lib/Language", "indexByLanguage")
+    @js.native
+    val ^ : js.Any = js.native
     
     trait Options[T, U] extends StObject {
       
@@ -150,6 +138,29 @@ object libLanguageMod {
         
         inline def setOnCollisionsUndefined: Self = StObject.set(x, "onCollisions", js.undefined)
       }
+    }
+  }
+  
+  type LangSpec = String | Double
+  
+  type LangSpecs = LangSpec | js.Array[LangSpec]
+  
+  trait Localization extends StObject {
+    
+    var lang: LangSpecs
+  }
+  object Localization {
+    
+    inline def apply(lang: LangSpecs): Localization = {
+      val __obj = js.Dynamic.literal(lang = lang.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Localization]
+    }
+    
+    extension [Self <: Localization](x: Self) {
+      
+      inline def setLang(value: LangSpecs): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+      
+      inline def setLangVarargs(value: LangSpec*): Self = StObject.set(x, "lang", js.Array(value*))
     }
   }
 }

@@ -8,8 +8,8 @@ import typings.reactNative.mod.HostComponent
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import typings.reactNativeGestureHandler.anon.ActiveOpacity
+import typings.reactNativeGestureHandler.anon.Borderless
 import typings.reactNativeGestureHandler.anon.DelayLongPress
-import typings.reactNativeGestureHandler.anon.UnderlayColor
 import typings.reactNativeGestureHandler.libTypescriptHandlersNativeViewGestureHandlerMod.NativeViewGestureHandlerProps_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -69,8 +69,8 @@ object libTypescriptComponentsGestureButtonsMod {
     
     @JSImport("react-native-gesture-handler/lib/typescript/components/GestureButtons", "BorderlessButton.defaultProps")
     @js.native
-    def defaultProps: ActiveOpacity = js.native
-    inline def defaultProps_=(x: ActiveOpacity): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: Borderless = js.native
+    inline def defaultProps_=(x: Borderless): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-native-gesture-handler/lib/typescript/components/GestureButtons", "PureNativeButton")
@@ -102,8 +102,8 @@ object libTypescriptComponentsGestureButtonsMod {
     
     @JSImport("react-native-gesture-handler/lib/typescript/components/GestureButtons", "RectButton.defaultProps")
     @js.native
-    def defaultProps: UnderlayColor = js.native
-    inline def defaultProps_=(x: UnderlayColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: ActiveOpacity = js.native
+    inline def defaultProps_=(x: ActiveOpacity): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait BaseButtonProps

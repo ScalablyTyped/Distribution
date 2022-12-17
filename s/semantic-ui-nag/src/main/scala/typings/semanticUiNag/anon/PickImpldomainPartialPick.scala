@@ -31,7 +31,7 @@ trait PickImpldomainPartialPick
   
   var displayTime: js.UndefOr[Double] = js.undefined
   
-  var domain: (`false` | String) & (js.UndefOr[`false` | String])
+  var domain: `false` | String
   
   var easing: js.UndefOr[String] = js.undefined
   
@@ -67,7 +67,7 @@ trait PickImpldomainPartialPick
 }
 object PickImpldomainPartialPick {
   
-  inline def apply(domain: (`false` | String) & (js.UndefOr[`false` | String])): PickImpldomainPartialPick = {
+  inline def apply(domain: `false` | String): PickImpldomainPartialPick = {
     val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldomainPartialPick]
   }
@@ -98,7 +98,7 @@ object PickImpldomainPartialPick {
     
     inline def setDisplayTimeUndefined: Self = StObject.set(x, "displayTime", js.undefined)
     
-    inline def setDomain(value: (`false` | String) & (js.UndefOr[`false` | String])): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: `false` | String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     

@@ -2,7 +2,7 @@ package typings.reactNative.mod
 
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactElement
-import typings.reactNative.anon.Length
+import typings.reactNative.anon.Index
 import typings.reactNative.anon.Section
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -47,7 +47,7 @@ trait SectionListProps[ItemT, SectionT]
     js.Function2[
       /* data */ (js.Array[SectionListData[ItemT, SectionT]]) | Null, 
       /* index */ Double, 
-      Length
+      Index
     ]
   ] = js.undefined
   
@@ -92,7 +92,7 @@ object SectionListProps {
   extension [Self <: SectionListProps[?, ?], ItemT, SectionT](x: Self & (SectionListProps[ItemT, SectionT])) {
     
     inline def setGetItemLayout(
-      value: (/* data */ (js.Array[SectionListData[ItemT, SectionT]]) | Null, /* index */ Double) => Length
+      value: (/* data */ (js.Array[SectionListData[ItemT, SectionT]]) | Null, /* index */ Double) => Index
     ): Self = StObject.set(x, "getItemLayout", js.Any.fromFunction2(value))
     
     inline def setGetItemLayoutUndefined: Self = StObject.set(x, "getItemLayout", js.undefined)

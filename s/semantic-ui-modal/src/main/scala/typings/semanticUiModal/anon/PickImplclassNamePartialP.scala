@@ -20,7 +20,7 @@ trait PickImplclassNamePartialP
   
   var autofocus: js.UndefOr[Boolean] = js.undefined
   
-  var className: ClassNameSettings & js.UndefOr[ClassNameSettings]
+  var className: ClassNameSettings
   
   var closable: js.UndefOr[Boolean] = js.undefined
   
@@ -72,7 +72,7 @@ trait PickImplclassNamePartialP
 }
 object PickImplclassNamePartialP {
   
-  inline def apply(className: ClassNameSettings & js.UndefOr[ClassNameSettings]): PickImplclassNamePartialP = {
+  inline def apply(className: ClassNameSettings): PickImplclassNamePartialP = {
     val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplclassNamePartialP]
   }
@@ -87,7 +87,7 @@ object PickImplclassNamePartialP {
     
     inline def setAutofocusUndefined: Self = StObject.set(x, "autofocus", js.undefined)
     
-    inline def setClassName(value: ClassNameSettings & js.UndefOr[ClassNameSettings]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     inline def setClosable(value: Boolean): Self = StObject.set(x, "closable", value.asInstanceOf[js.Any])
     

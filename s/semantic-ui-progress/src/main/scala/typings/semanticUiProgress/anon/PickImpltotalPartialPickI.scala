@@ -73,7 +73,7 @@ trait PickImpltotalPartialPickI
   
   var text: js.UndefOr[TextSettings] = js.undefined
   
-  var total: (`false` | Double) & (js.UndefOr[`false` | Double])
+  var total: `false` | Double
   
   var value: js.UndefOr[`false` | Double] = js.undefined
   
@@ -81,7 +81,7 @@ trait PickImpltotalPartialPickI
 }
 object PickImpltotalPartialPickI {
   
-  inline def apply(total: (`false` | Double) & (js.UndefOr[`false` | Double])): PickImpltotalPartialPickI = {
+  inline def apply(total: `false` | Double): PickImpltotalPartialPickI = {
     val __obj = js.Dynamic.literal(total = total.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpltotalPartialPickI]
   }
@@ -178,7 +178,7 @@ object PickImpltotalPartialPickI {
     
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    inline def setTotal(value: (`false` | Double) & (js.UndefOr[`false` | Double])): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: `false` | Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
     inline def setValue(value: `false` | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

@@ -61,7 +61,7 @@ trait PickImplscrollLockPartial
   
   var returnScroll: js.UndefOr[Boolean] = js.undefined
   
-  var scrollLock: Boolean & js.UndefOr[Boolean]
+  var scrollLock: Boolean
   
   var selector: js.UndefOr[SelectorSettings] = js.undefined
   
@@ -75,7 +75,7 @@ trait PickImplscrollLockPartial
 }
 object PickImplscrollLockPartial {
   
-  inline def apply(scrollLock: Boolean & js.UndefOr[Boolean]): PickImplscrollLockPartial = {
+  inline def apply(scrollLock: Boolean): PickImplscrollLockPartial = {
     val __obj = js.Dynamic.literal(scrollLock = scrollLock.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplscrollLockPartial]
   }
@@ -170,7 +170,7 @@ object PickImplscrollLockPartial {
     
     inline def setReturnScrollUndefined: Self = StObject.set(x, "returnScroll", js.undefined)
     
-    inline def setScrollLock(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "scrollLock", value.asInstanceOf[js.Any])
+    inline def setScrollLock(value: Boolean): Self = StObject.set(x, "scrollLock", value.asInstanceOf[js.Any])
     
     inline def setSelector(value: SelectorSettings): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     

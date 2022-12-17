@@ -58,7 +58,7 @@ trait PickImplonVisiblePartialP
   
   def onVisible(): Unit
   @JSName("onVisible")
-  var onVisible_Original: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+  var onVisible_Original: js.ThisFunction0[/* this */ JQuery, Unit]
   
   var performance: js.UndefOr[Boolean] = js.undefined
   
@@ -74,9 +74,7 @@ trait PickImplonVisiblePartialP
 }
 object PickImplonVisiblePartialP {
   
-  inline def apply(
-    onVisible: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-  ): PickImplonVisiblePartialP = {
+  inline def apply(onVisible: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonVisiblePartialP = {
     val __obj = js.Dynamic.literal(onVisible = onVisible.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonVisiblePartialP]
   }
@@ -163,9 +161,7 @@ object PickImplonVisiblePartialP {
     
     inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     
-    inline def setOnVisible(
-      value: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-    ): Self = StObject.set(x, "onVisible", value.asInstanceOf[js.Any])
+    inline def setOnVisible(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onVisible", value.asInstanceOf[js.Any])
     
     inline def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
     

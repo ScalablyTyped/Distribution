@@ -6,44 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
+  @js.native
   trait CanInstrument extends StObject {
     
-    var canInstrument: Boolean
+    var canInstrument: Boolean = js.native
     
-    def getCacheKey(fileData: String, filename: String, configString: String): String
-    def getCacheKey(fileData: String, filename: String, configString: String, options: Instrument): String
-    @JSName("getCacheKey")
-    var getCacheKey_Original: js.Function4[
-        /* fileData */ String, 
-        /* filename */ String, 
-        /* configString */ String, 
-        /* options */ js.UndefOr[Instrument], 
-        String
-      ]
+    def getCacheKey(fileData: String, filename: String, configString: String): String = js.native
+    def getCacheKey(fileData: String, filename: String, configString: String, options: Instrument): String = js.native
     
-    def process(source: String, path: String): Code
-  }
-  object CanInstrument {
-    
-    inline def apply(
-      canInstrument: Boolean,
-      getCacheKey: (/* fileData */ String, /* filename */ String, /* configString */ String, /* options */ js.UndefOr[Instrument]) => String,
-      process: (String, String) => Code
-    ): CanInstrument = {
-      val __obj = js.Dynamic.literal(canInstrument = canInstrument.asInstanceOf[js.Any], getCacheKey = js.Any.fromFunction4(getCacheKey), process = js.Any.fromFunction2(process))
-      __obj.asInstanceOf[CanInstrument]
-    }
-    
-    extension [Self <: CanInstrument](x: Self) {
-      
-      inline def setCanInstrument(value: Boolean): Self = StObject.set(x, "canInstrument", value.asInstanceOf[js.Any])
-      
-      inline def setGetCacheKey(
-        value: (/* fileData */ String, /* filename */ String, /* configString */ String, /* options */ js.UndefOr[Instrument]) => String
-      ): Self = StObject.set(x, "getCacheKey", js.Any.fromFunction4(value))
-      
-      inline def setProcess(value: (String, String) => Code): Self = StObject.set(x, "process", js.Any.fromFunction2(value))
-    }
+    def process(source: String, path: String): Code = js.native
   }
   
   trait Code extends StObject {
@@ -63,15 +34,44 @@ object anon {
     }
   }
   
-  @js.native
   trait GetCacheKey extends StObject {
     
-    var canInstrument: Boolean = js.native
+    var canInstrument: Boolean
     
-    def getCacheKey(fileData: String, filename: String, configString: String): String = js.native
-    def getCacheKey(fileData: String, filename: String, configString: String, options: Instrument): String = js.native
+    def getCacheKey(fileData: String, filename: String, configString: String): String
+    def getCacheKey(fileData: String, filename: String, configString: String, options: Instrument): String
+    @JSName("getCacheKey")
+    var getCacheKey_Original: js.Function4[
+        /* fileData */ String, 
+        /* filename */ String, 
+        /* configString */ String, 
+        /* options */ js.UndefOr[Instrument], 
+        String
+      ]
     
-    def process(source: String, path: String): Code = js.native
+    def process(source: String, path: String): Code
+  }
+  object GetCacheKey {
+    
+    inline def apply(
+      canInstrument: Boolean,
+      getCacheKey: (/* fileData */ String, /* filename */ String, /* configString */ String, /* options */ js.UndefOr[Instrument]) => String,
+      process: (String, String) => Code
+    ): GetCacheKey = {
+      val __obj = js.Dynamic.literal(canInstrument = canInstrument.asInstanceOf[js.Any], getCacheKey = js.Any.fromFunction4(getCacheKey), process = js.Any.fromFunction2(process))
+      __obj.asInstanceOf[GetCacheKey]
+    }
+    
+    extension [Self <: GetCacheKey](x: Self) {
+      
+      inline def setCanInstrument(value: Boolean): Self = StObject.set(x, "canInstrument", value.asInstanceOf[js.Any])
+      
+      inline def setGetCacheKey(
+        value: (/* fileData */ String, /* filename */ String, /* configString */ String, /* options */ js.UndefOr[Instrument]) => String
+      ): Self = StObject.set(x, "getCacheKey", js.Any.fromFunction4(value))
+      
+      inline def setProcess(value: (String, String) => Code): Self = StObject.set(x, "process", js.Any.fromFunction2(value))
+    }
   }
   
   trait Instrument extends StObject {

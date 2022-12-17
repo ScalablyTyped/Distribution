@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
 import typings.kefir.anon.Ap
 import typings.kefir.anon.Convert
-import typings.kefir.anon.ConvertValue
 import typings.kefir.anon.FlushOnChange
 import typings.kefir.anon.FlushOnEnd
 import typings.kefir.anon.Fn0
@@ -28,6 +27,7 @@ import typings.kefir.anon.Immediate
 import typings.kefir.anon.Leading
 import typings.kefir.anon.Off
 import typings.kefir.anon.Unsubscribe
+import typings.kefir.anon.Value
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.std.EventTarget
 import typings.std.PromiseLike
@@ -312,7 +312,7 @@ object mod {
     def endOnError(): Observable[T, S] = js.native
     
     def errorsToValues[U](): Observable[T | U, scala.Nothing] = js.native
-    def errorsToValues[U](handler: js.Function1[/* error */ S, ConvertValue[U]]): Observable[T | U, scala.Nothing] = js.native
+    def errorsToValues[U](handler: js.Function1[/* error */ S, Value[U]]): Observable[T | U, scala.Nothing] = js.native
     
     def filter(): Observable[T, S] = js.native
     def filter(predicate: js.Function1[/* value */ T, Boolean]): Observable[T, S] = js.native
@@ -690,8 +690,8 @@ object mod {
   
   /* Rewritten from type alias, can be one of: 
     - typings.kefir.anon.Type[V]
-    - typings.kefir.anon.Value[E]
-    - typings.kefir.anon.TypeValue
+    - typings.kefir.anon.TypeValue[E]
+    - typings.kefir.anon.ValueVoid
   */
   trait Event[V, E] extends StObject
   object Event {
@@ -702,16 +702,16 @@ object mod {
       __obj.asInstanceOf[typings.kefir.anon.Type[V]]
     }
     
-    inline def TypeValue(value: Unit): typings.kefir.anon.TypeValue = {
-      val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("end")
-      __obj.asInstanceOf[typings.kefir.anon.TypeValue]
-    }
-    
-    inline def Value[E](value: E): typings.kefir.anon.Value[E] = {
+    inline def TypeValue[E](value: E): typings.kefir.anon.TypeValue[E] = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("error")
-      __obj.asInstanceOf[typings.kefir.anon.Value[E]]
+      __obj.asInstanceOf[typings.kefir.anon.TypeValue[E]]
+    }
+    
+    inline def ValueVoid(value: Unit): typings.kefir.anon.ValueVoid = {
+      val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("end")
+      __obj.asInstanceOf[typings.kefir.anon.ValueVoid]
     }
   }
   

@@ -1,6 +1,5 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.meshesMeshMod.Mesh
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,6 +18,6 @@ open class MeshLODLevel protected ()
     /** Either distance from the center of the object to show this level or the screen coverage if `useLODScreenCoverage` is set to `true` on the mesh*/
   distanceOrScreenCoverage: Double,
     /** Defines the mesh to use to render this level */
-  mesh: Nullable[Mesh]
+  mesh: Nullable[typings.babylonjs.meshesMeshMod.Mesh]
   ) = this()
 }

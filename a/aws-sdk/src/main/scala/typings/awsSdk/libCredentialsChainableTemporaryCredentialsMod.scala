@@ -4,6 +4,7 @@ import typings.awsSdk.clientsStsMod.AssumeRoleRequest
 import typings.awsSdk.clientsStsMod.ClientConfiguration
 import typings.awsSdk.clientsStsMod.GetSessionTokenRequest
 import typings.awsSdk.clientsStsMod.^
+import typings.awsSdk.libCredentialsChainableTemporaryCredentialsMod.ChainableTemporaryCredentials.ChainableTemporaryCredentialsOptions
 import typings.awsSdk.libCredentialsMod.Credentials
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libCredentialsChainableTemporaryCredentialsMod {
   
+  @JSImport("aws-sdk/lib/credentials/chainable_temporary_credentials", "ChainableTemporaryCredentials")
   @js.native
-  trait ChainableTemporaryCredentials extends Credentials {
+  /**
+    * Creates a new temporary credentials object.
+    */
+  open class ChainableTemporaryCredentials () extends Credentials {
+    def this(options: ChainableTemporaryCredentialsOptions) = this()
     
     /**
       * The STS service instance used to get and refresh temporary credentials from AWS STS.

@@ -1,8 +1,11 @@
 package typings.elasticElasticsearch.anon
 
-import typings.elasticElasticsearch.libApiTypesMod.ScriptsPainlessExecuteRequest
-import typings.elasticElasticsearch.libApiTypesMod.ScriptsPainlessExecuteResponse
+import typings.elasticElasticsearch.libApiTypesMod.ExistsSourceRequest
+import typings.elasticElasticsearch.libApiTypesMod.ExistsSourceResponse
 import typings.elasticTransport.libTransportMod.TransportRequestOptions
+import typings.elasticTransport.libTransportMod.TransportRequestOptionsWithMeta
+import typings.elasticTransport.libTransportMod.TransportRequestOptionsWithOutMeta
+import typings.elasticTransport.libTypesMod.TransportResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,13 +13,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Fn8 extends StObject {
   
-  def apply[TResult](): js.Promise[ScriptsPainlessExecuteResponse[TResult]] = js.native
-  def apply[TResult](params: Unit, options: TransportRequestOptions): js.Promise[ScriptsPainlessExecuteResponse[TResult]] = js.native
-  def apply[TResult](params: ScriptsPainlessExecuteRequest): js.Promise[ScriptsPainlessExecuteResponse[TResult]] = js.native
-  def apply[TResult](params: ScriptsPainlessExecuteRequest, options: TransportRequestOptions): js.Promise[ScriptsPainlessExecuteResponse[TResult]] = js.native
-  def apply[TResult](params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.ScriptsPainlessExecuteRequest): js.Promise[ScriptsPainlessExecuteResponse[TResult]] = js.native
-  def apply[TResult](
-    params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.ScriptsPainlessExecuteRequest,
+  def apply(params: ExistsSourceRequest): js.Promise[ExistsSourceResponse] = js.native
+  def apply(params: ExistsSourceRequest, options: TransportRequestOptions): js.Promise[ExistsSourceResponse] = js.native
+  def apply(params: ExistsSourceRequest, options: TransportRequestOptionsWithMeta): js.Promise[TransportResult[ExistsSourceResponse, Any]] = js.native
+  def apply(params: ExistsSourceRequest, options: TransportRequestOptionsWithOutMeta): js.Promise[ExistsSourceResponse] = js.native
+  def apply(params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.ExistsSourceRequest): js.Promise[ExistsSourceResponse] = js.native
+  def apply(
+    params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.ExistsSourceRequest,
     options: TransportRequestOptions
-  ): js.Promise[ScriptsPainlessExecuteResponse[TResult]] = js.native
+  ): js.Promise[ExistsSourceResponse] = js.native
+  def apply(
+    params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.ExistsSourceRequest,
+    options: TransportRequestOptionsWithMeta
+  ): js.Promise[TransportResult[ExistsSourceResponse, Any]] = js.native
+  def apply(
+    params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.ExistsSourceRequest,
+    options: TransportRequestOptionsWithOutMeta
+  ): js.Promise[ExistsSourceResponse] = js.native
 }

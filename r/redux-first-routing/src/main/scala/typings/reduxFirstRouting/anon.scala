@@ -13,12 +13,14 @@ object anon {
     
     var pathname: P
     
+    var queries: Any
+    
     var search: S
   }
   object Hash {
     
-    inline def apply[P /* <: typings.history.mod.Pathname */, S /* <: Search */, H /* <: typings.history.mod.Hash */](hash: H, pathname: P, search: S): Hash[P, S, H] = {
-      val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any])
+    inline def apply[P /* <: typings.history.mod.Pathname */, S /* <: Search */, H /* <: typings.history.mod.Hash */](hash: H, pathname: P, queries: Any, search: S): Hash[P, S, H] = {
+      val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], queries = queries.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any])
       __obj.asInstanceOf[Hash[P, S, H]]
     }
     
@@ -27,6 +29,8 @@ object anon {
       inline def setHash(value: H): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
       inline def setPathname(value: P): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+      
+      inline def setQueries(value: Any): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
       
       inline def setSearch(value: S): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     }
@@ -38,14 +42,12 @@ object anon {
     
     var pathname: P
     
-    var queries: Any
-    
     var search: S
   }
   object Pathname {
     
-    inline def apply[P /* <: typings.history.mod.Pathname */, S /* <: Search */, H /* <: typings.history.mod.Hash */](hash: H, pathname: P, queries: Any, search: S): Pathname[P, S, H] = {
-      val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], queries = queries.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any])
+    inline def apply[P /* <: typings.history.mod.Pathname */, S /* <: Search */, H /* <: typings.history.mod.Hash */](hash: H, pathname: P, search: S): Pathname[P, S, H] = {
+      val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any])
       __obj.asInstanceOf[Pathname[P, S, H]]
     }
     
@@ -54,8 +56,6 @@ object anon {
       inline def setHash(value: H): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
       inline def setPathname(value: P): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
-      
-      inline def setQueries(value: Any): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
       
       inline def setSearch(value: S): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     }

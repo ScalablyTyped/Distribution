@@ -20,7 +20,7 @@ trait PickImplmissingActionPart
   
   var legacyParameters: js.UndefOr[String] = js.undefined
   
-  var missingAction: String & js.UndefOr[String]
+  var missingAction: String
   
   var missingSerialize: js.UndefOr[String] = js.undefined
   
@@ -38,7 +38,7 @@ trait PickImplmissingActionPart
 }
 object PickImplmissingActionPart {
   
-  inline def apply(missingAction: String & js.UndefOr[String]): PickImplmissingActionPart = {
+  inline def apply(missingAction: String): PickImplmissingActionPart = {
     val __obj = js.Dynamic.literal(missingAction = missingAction.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmissingActionPart]
   }
@@ -65,7 +65,7 @@ object PickImplmissingActionPart {
     
     inline def setLegacyParametersUndefined: Self = StObject.set(x, "legacyParameters", js.undefined)
     
-    inline def setMissingAction(value: String & js.UndefOr[String]): Self = StObject.set(x, "missingAction", value.asInstanceOf[js.Any])
+    inline def setMissingAction(value: String): Self = StObject.set(x, "missingAction", value.asInstanceOf[js.Any])
     
     inline def setMissingSerialize(value: String): Self = StObject.set(x, "missingSerialize", value.asInstanceOf[js.Any])
     

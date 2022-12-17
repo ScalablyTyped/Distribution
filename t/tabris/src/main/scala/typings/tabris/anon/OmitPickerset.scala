@@ -328,7 +328,7 @@ trait OmitPickerset extends StObject {
   @JSName("itemText")
   var itemText_Original: js.Function1[/* index */ Double, String]
   
-  var jsxAttributes: (JSXAttributes[Picker, Omit[Picker, set | typings.tabris.tabrisStrings.jsxAttributes]]) & PartialPickPickeritemText & `3`
+  var jsxAttributes: (JSXAttributes[Picker, Omit[Picker, set | typings.tabris.tabrisStrings.jsxAttributes]]) & PartialPickPickeritemText & Children
   
   var layoutData: LayoutDataValue
   
@@ -590,7 +590,7 @@ object OmitPickerset {
     isDisposed: () => Boolean,
     itemCount: Double,
     itemText: /* index */ Double => String,
-    jsxAttributes: (JSXAttributes[Picker, Omit[Picker, set | jsxAttributes]]) & PartialPickPickeritemText & `3`,
+    jsxAttributes: (JSXAttributes[Picker, Omit[Picker, set | jsxAttributes]]) & PartialPickPickeritemText & Children,
     layoutData: LayoutDataValue,
     left: ConstraintValue,
     message: String,
@@ -778,7 +778,7 @@ object OmitPickerset {
     inline def setItemText(value: /* index */ Double => String): Self = StObject.set(x, "itemText", js.Any.fromFunction1(value))
     
     inline def setJsxAttributes(
-      value: (JSXAttributes[Picker, Omit[Picker, set | jsxAttributes]]) & PartialPickPickeritemText & `3`
+      value: (JSXAttributes[Picker, Omit[Picker, set | jsxAttributes]]) & PartialPickPickeritemText & Children
     ): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     
     inline def setLayoutData(value: LayoutDataValue): Self = StObject.set(x, "layoutData", value.asInstanceOf[js.Any])

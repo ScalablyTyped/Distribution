@@ -1805,7 +1805,7 @@ trait strokestringstrokeWidthnu extends StObject {
   
   var outline: js.UndefOr[Outline[String | Double]] = js.undefined
   
-  var outlineColor: String & js.UndefOr[OutlineColor]
+  var outlineColor: String
   
   var outlineOffset: js.UndefOr[OutlineOffset[String | Double]] = js.undefined
   
@@ -1813,7 +1813,7 @@ trait strokestringstrokeWidthnu extends StObject {
   
   var outlineStyle: js.UndefOr[OutlineStyle] = js.undefined
   
-  var outlineWidth: Double & (js.UndefOr[OutlineWidth[String | Double]])
+  var outlineWidth: Double
   
   var overflow: js.UndefOr[Overflow] = js.undefined
   
@@ -2126,9 +2126,9 @@ trait strokestringstrokeWidthnu extends StObject {
 object strokestringstrokeWidthnu {
   
   inline def apply(
-    outlineColor: String & js.UndefOr[OutlineColor],
+    outlineColor: String,
     outlineOpacity: Double,
-    outlineWidth: Double & (js.UndefOr[OutlineWidth[String | Double]]),
+    outlineWidth: Double,
     stroke: String,
     strokeWidth: Double
   ): strokestringstrokeWidthnu = {
@@ -4132,7 +4132,7 @@ object strokestringstrokeWidthnu {
     
     inline def setOutline(value: Outline[String | Double]): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
     
-    inline def setOutlineColor(value: String & js.UndefOr[OutlineColor]): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
+    inline def setOutlineColor(value: String): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
     
     inline def setOutlineOffset(value: OutlineOffset[String | Double]): Self = StObject.set(x, "outlineOffset", value.asInstanceOf[js.Any])
     
@@ -4146,7 +4146,7 @@ object strokestringstrokeWidthnu {
     
     inline def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
     
-    inline def setOutlineWidth(value: Double & (js.UndefOr[OutlineWidth[String | Double]])): Self = StObject.set(x, "outlineWidth", value.asInstanceOf[js.Any])
+    inline def setOutlineWidth(value: Double): Self = StObject.set(x, "outlineWidth", value.asInstanceOf[js.Any])
     
     inline def setOverflow(value: Overflow): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     

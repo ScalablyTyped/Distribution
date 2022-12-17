@@ -2,14 +2,12 @@ package typings.metro
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.metro.anon.Errorcodestringundefined
-import typings.metro.assetMod.AssetData
-import typings.metro.sharedTypesMod.BundleOptions
 import typings.metro.srcServerMod.DefaultBundleOptions
 import typings.metro.srcServerMod.DefaultGraphOptions
-import typings.metro.srcServerMod.ServerOptions
 import typings.metroConfig.configTypesMod.ConfigT
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.RequestListener
+import typings.node.httpMod.ServerOptions
 import typings.node.httpMod.ServerResponse
 import typings.node.nodeColonnetMod.Socket
 import typings.std.Record
@@ -23,31 +21,6 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("metro", JSImport.Default)
-  @js.native
-  open class default protected ()
-    extends typings.metro.serverMod.default {
-    def this(config: ConfigT) = this()
-    def this(config: ConfigT, options: ServerOptions) = this()
-  }
-  /* static members */
-  object default {
-    
-    @JSImport("metro", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("metro", "default.DEFAULT_BUNDLE_OPTIONS")
-    @js.native
-    def DEFAULT_BUNDLE_OPTIONS: DefaultBundleOptions = js.native
-    inline def DEFAULT_BUNDLE_OPTIONS_=(x: DefaultBundleOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_BUNDLE_OPTIONS")(x.asInstanceOf[js.Any])
-    
-    @JSImport("metro", "default.DEFAULT_GRAPH_OPTIONS")
-    @js.native
-    def DEFAULT_GRAPH_OPTIONS: DefaultGraphOptions = js.native
-    inline def DEFAULT_GRAPH_OPTIONS_=(x: DefaultGraphOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_GRAPH_OPTIONS")(x.asInstanceOf[js.Any])
-  }
-  
   /**
     * @since v0.1.17
     */
@@ -58,12 +31,9 @@ object mod {
     ServerResponse[IncomingMessage]
   ] */] ()
     extends typings.node.httpMod.Server[Request, Response] {
-    def this(options: typings.node.httpMod.ServerOptions[Request, Response]) = this()
+    def this(options: ServerOptions[Request, Response]) = this()
     def this(requestListener: RequestListener[Request, Response]) = this()
-    def this(
-      options: typings.node.httpMod.ServerOptions[Request, Response],
-      requestListener: RequestListener[Request, Response]
-    ) = this()
+    def this(options: ServerOptions[Request, Response], requestListener: RequestListener[Request, Response]) = this()
   }
   
   /**
@@ -88,16 +58,9 @@ object mod {
   @JSImport("metro", "Server")
   @js.native
   open class Server protected ()
-    extends StObject
-       with typings.metro.srcServerMod.Server {
+    extends typings.metro.serverMod.Server {
     def this(config: ConfigT) = this()
-    def this(config: ConfigT, options: ServerOptions) = this()
-    
-    /* CompleteClass */
-    override def end(): Unit = js.native
-    
-    /* CompleteClass */
-    override def getAssets(options: BundleOptions): js.Promise[js.Array[AssetData]] = js.native
+    def this(config: ConfigT, options: typings.metro.srcServerMod.ServerOptions) = this()
   }
   /* static members */
   object Server {

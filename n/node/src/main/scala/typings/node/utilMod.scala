@@ -5,7 +5,7 @@ import typings.node.NodeJS.ArrayBufferView
 import typings.node.NodeJS.Dict
 import typings.node.NodeJS.ErrnoException
 import typings.node.anon.Fatal
-import typings.node.anon.IndexKind
+import typings.node.anon.Index
 import typings.node.anon.Kind
 import typings.node.anon.Positionals
 import typings.node.anon.Stream
@@ -819,22 +819,22 @@ object utilMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.node.anon.Index
     - typings.node.anon.InlineValue
+    - typings.node.anon.Name
   */
   trait OptionToken
     extends StObject
        with Token
   object OptionToken {
     
-    inline def Index(index: Double, inlineValue: Boolean, name: String, rawName: String, value: String): typings.node.anon.Index = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.node.anon.Index]
-    }
-    
-    inline def InlineValue(index: Double, inlineValue: Unit, name: String, rawName: String, value: Unit): typings.node.anon.InlineValue = {
+    inline def InlineValue(index: Double, inlineValue: Boolean, name: String, rawName: String, value: String): typings.node.anon.InlineValue = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.node.anon.InlineValue]
+    }
+    
+    inline def Name(index: Double, inlineValue: Unit, name: String, rawName: String, value: Unit): typings.node.anon.Name = {
+      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.node.anon.Name]
     }
   }
   
@@ -939,12 +939,12 @@ object utilMod {
     /* import warning: importer.ImportType#apply Failed type conversion: T['strict'] */ js.Any, 
     IfDefaultsFalse[
       /* import warning: importer.ImportType#apply Failed type conversion: T['allowPositionals'] */ js.Any, 
-      Kind, 
+      Index, 
       scala.Nothing
     ], 
     IfDefaultsTrue[
       /* import warning: importer.ImportType#apply Failed type conversion: T['allowPositionals'] */ js.Any, 
-      Kind, 
+      Index, 
       scala.Nothing
     ]
   ]
@@ -974,7 +974,7 @@ object utilMod {
     */
   type ParsedResults[T /* <: ParseArgsConfig */] = Values[T]
   
-  type ParsedTokens[T /* <: ParseArgsConfig */] = js.Array[ParsedOptionToken[T] | ParsedPositionalToken[T] | IndexKind]
+  type ParsedTokens[T /* <: ParseArgsConfig */] = js.Array[ParsedOptionToken[T] | ParsedPositionalToken[T] | Kind]
   
   type ParsedValues[T /* <: ParseArgsConfig */] = (IfDefaultsTrue[
     /* import warning: importer.ImportType#apply Failed type conversion: T['strict'] */ js.Any, 
@@ -1038,30 +1038,30 @@ object utilMod {
   
   /* Rewritten from type alias, can be one of: 
     - typings.node.utilMod.OptionToken
+    - typings.node.anon.Index
     - typings.node.anon.Kind
-    - typings.node.anon.IndexKind
   */
   trait Token extends StObject
   object Token {
     
-    inline def Index(index: Double, inlineValue: Boolean, name: String, rawName: String, value: String): typings.node.anon.Index = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    inline def Index(index: Double, value: String): typings.node.anon.Index = {
+      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], kind = "positional", value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.node.anon.Index]
     }
     
-    inline def IndexKind(index: Double): typings.node.anon.IndexKind = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], kind = "option-terminator")
-      __obj.asInstanceOf[typings.node.anon.IndexKind]
-    }
-    
-    inline def InlineValue(index: Double, inlineValue: Unit, name: String, rawName: String, value: Unit): typings.node.anon.InlineValue = {
+    inline def InlineValue(index: Double, inlineValue: Boolean, name: String, rawName: String, value: String): typings.node.anon.InlineValue = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.node.anon.InlineValue]
     }
     
-    inline def Kind(index: Double, value: String): typings.node.anon.Kind = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], kind = "positional", value = value.asInstanceOf[js.Any])
+    inline def Kind(index: Double): typings.node.anon.Kind = {
+      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], kind = "option-terminator")
       __obj.asInstanceOf[typings.node.anon.Kind]
+    }
+    
+    inline def Name(index: Double, inlineValue: Unit, name: String, rawName: String, value: Unit): typings.node.anon.Name = {
+      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.node.anon.Name]
     }
   }
   

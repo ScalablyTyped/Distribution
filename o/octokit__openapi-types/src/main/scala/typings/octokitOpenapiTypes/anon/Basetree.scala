@@ -13,11 +13,11 @@ trait Basetree extends StObject {
   var base_tree: js.UndefOr[String] = js.undefined
   
   /** @description Objects (of `path`, `mode`, `type`, and `sha`) specifying a tree structure. */
-  var tree: js.Array[ContentMode]
+  var tree: js.Array[Mode]
 }
 object Basetree {
   
-  inline def apply(tree: js.Array[ContentMode]): Basetree = {
+  inline def apply(tree: js.Array[Mode]): Basetree = {
     val __obj = js.Dynamic.literal(tree = tree.asInstanceOf[js.Any])
     __obj.asInstanceOf[Basetree]
   }
@@ -28,8 +28,8 @@ object Basetree {
     
     inline def setBase_treeUndefined: Self = StObject.set(x, "base_tree", js.undefined)
     
-    inline def setTree(value: js.Array[ContentMode]): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
+    inline def setTree(value: js.Array[Mode]): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
     
-    inline def setTreeVarargs(value: ContentMode*): Self = StObject.set(x, "tree", js.Array(value*))
+    inline def setTreeVarargs(value: Mode*): Self = StObject.set(x, "tree", js.Array(value*))
   }
 }

@@ -6,19 +6,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `351` extends StObject {
   
-  /** Response */
-  var `200`: Content324Headers
+  var secrets: js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['codespaces-secret'] */ js.Any
+  ]
+  
+  var total_count: Double
 }
 object `351` {
   
-  inline def apply(`200`: Content324Headers): `351` = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
+  inline def apply(
+    secrets: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['codespaces-secret'] */ js.Any
+    ],
+    total_count: Double
+  ): `351` = {
+    val __obj = js.Dynamic.literal(secrets = secrets.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
     __obj.asInstanceOf[`351`]
   }
   
   extension [Self <: `351`](x: Self) {
     
-    inline def set200(value: Content324Headers): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+    inline def setSecrets(
+      value: js.Array[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['codespaces-secret'] */ js.Any
+        ]
+    ): Self = StObject.set(x, "secrets", value.asInstanceOf[js.Any])
+    
+    inline def setSecretsVarargs(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['codespaces-secret'] */ js.Any)*
+    ): Self = StObject.set(x, "secrets", js.Array(value*))
+    
+    inline def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
   }
 }

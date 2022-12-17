@@ -24,12 +24,12 @@ object anon {
   @js.native
   trait Instantiable
     extends StObject
-       with Instantiable1[/* options */ ActionConstructorOptions, Action]
+       with Instantiable0[Any]
   
   @js.native
-  trait InstantiableAny
+  trait InstantiableAction
     extends StObject
-       with Instantiable0[Any]
+       with Instantiable1[/* options */ ActionConstructorOptions, Action]
   
   trait Required extends StObject {
     

@@ -6,7 +6,7 @@ import typings.agenda.anon.InsertOnly
 import typings.agenda.anon.PartialJobAttributesJobAt
 import typings.agenda.distAgendaMod.Agenda
 import typings.agenda.distJobRepeatEveryMod.JobOptions
-import typings.bson.mod.ObjectId
+import typings.mongodb.mod.ObjectId
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

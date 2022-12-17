@@ -1,6 +1,7 @@
 package typings.expoConfigPlugins.buildMod
 
 import typings.expoConfigPlugins.anon.Action
+import typings.expoConfigPlugins.anon.ActionMod
 import typings.expoConfigPlugins.anon.AssertMissingModProviders
 import typings.expoConfigPlugins.anon.Introspect
 import typings.expoConfigPlugins.anon.IsLegacyPlugin
@@ -46,7 +47,7 @@ inline def withAppBuildGradle: ConfigPlugin[Mod[GradleProjectFile]] = ^.asInstan
 
 inline def withAppDelegate: ConfigPlugin[Mod[AppDelegateProjectFile]] = ^.asInstanceOf[js.Dynamic].selectDynamic("withAppDelegate").asInstanceOf[ConfigPlugin[Mod[AppDelegateProjectFile]]]
 
-inline def withBaseMod[T](config: ExportedConfig, param1: BaseModOptions & Action[T]): ExportedConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("withBaseMod")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[ExportedConfig]
+inline def withBaseMod[T](config: ExportedConfig, param1: BaseModOptions & ActionMod[T]): ExportedConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("withBaseMod")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[ExportedConfig]
 
 inline def withDangerousMod: ConfigPlugin[js.Tuple2[ModPlatform, Mod[Any]]] = ^.asInstanceOf[js.Dynamic].selectDynamic("withDangerousMod").asInstanceOf[ConfigPlugin[js.Tuple2[ModPlatform, Mod[Any]]]]
 
@@ -71,7 +72,7 @@ inline def withMainActivity: ConfigPlugin[Mod[ApplicationProjectFile]] = ^.asIns
 
 inline def withMainApplication: ConfigPlugin[Mod[ApplicationProjectFile]] = ^.asInstanceOf[js.Dynamic].selectDynamic("withMainApplication").asInstanceOf[ConfigPlugin[Mod[ApplicationProjectFile]]]
 
-inline def withMod[T](config: ExportedConfig, param1: typings.expoConfigPlugins.anon.Mod[T]): ExportedConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("withMod")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[ExportedConfig]
+inline def withMod[T](config: ExportedConfig, param1: Action[T]): ExportedConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("withMod")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[ExportedConfig]
 
 inline def withPlugins: ConfigPlugin[js.Array[StaticPlugin[Any] | ConfigPlugin[Unit] | String]] = ^.asInstanceOf[js.Dynamic].selectDynamic("withPlugins").asInstanceOf[ConfigPlugin[js.Array[StaticPlugin[Any] | ConfigPlugin[Unit] | String]]]
 

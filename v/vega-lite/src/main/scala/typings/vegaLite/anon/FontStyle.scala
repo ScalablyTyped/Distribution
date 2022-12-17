@@ -43,9 +43,7 @@ trait FontStyle extends StObject {
   
   var fontWeight: js.UndefOr[FontWeightValue] = js.undefined
   
-  var frame: js.UndefOr[
-    String | SignalRef | FieldField | Scale | FieldScale | Band | Range | ValueString
-  ] = js.undefined
+  var frame: String | SignalRef | FieldField | Scale | Band | Range | ValueString
   
   var interactive: js.UndefOr[Boolean] = js.undefined
   
@@ -83,8 +81,12 @@ trait FontStyle extends StObject {
 }
 object FontStyle {
   
-  inline def apply(style: String | js.Array[String], text: SignalRef | Text): FontStyle = {
-    val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+  inline def apply(
+    frame: String | SignalRef | FieldField | Scale | Band | Range | ValueString,
+    style: String | js.Array[String],
+    text: SignalRef | Text
+  ): FontStyle = {
+    val __obj = js.Dynamic.literal(frame = frame.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontStyle]
   }
   
@@ -146,9 +148,7 @@ object FontStyle {
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
-    inline def setFrame(value: String | SignalRef | FieldField | Scale | FieldScale | Band | Range | ValueString): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
-    
-    inline def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
+    inline def setFrame(value: String | SignalRef | FieldField | Scale | Band | Range | ValueString): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     
     inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
     

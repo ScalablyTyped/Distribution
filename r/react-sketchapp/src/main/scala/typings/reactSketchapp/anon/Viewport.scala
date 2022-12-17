@@ -11,11 +11,11 @@ trait Viewport extends StObject {
   
   var children: Requireable[ReactNodeLike]
   
-  var viewport: Requireable[InferProps[Width]]
+  var viewport: Requireable[InferProps[Scale]]
 }
 object Viewport {
   
-  inline def apply(children: Requireable[ReactNodeLike], viewport: Requireable[InferProps[Width]]): Viewport = {
+  inline def apply(children: Requireable[ReactNodeLike], viewport: Requireable[InferProps[Scale]]): Viewport = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any])
     __obj.asInstanceOf[Viewport]
   }
@@ -24,6 +24,6 @@ object Viewport {
     
     inline def setChildren(value: Requireable[ReactNodeLike]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setViewport(value: Requireable[InferProps[Width]]): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
+    inline def setViewport(value: Requireable[InferProps[Scale]]): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
   }
 }

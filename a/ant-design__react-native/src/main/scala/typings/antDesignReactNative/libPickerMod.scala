@@ -1,7 +1,7 @@
 package typings.antDesignReactNative
 
-import typings.antDesignReactNative.anon.Cascade
 import typings.antDesignReactNative.anon.Cascader
+import typings.antDesignReactNative.anon.Format
 import typings.antDesignReactNative.libPickerPropsTypeMod.PickerData
 import typings.antDesignReactNative.libPickerPropsTypeMod.PickerPropsType
 import typings.antDesignReactNative.libPickerStyleMod.PickerStyle
@@ -37,11 +37,11 @@ object libPickerMod {
     
     @JSImport("@ant-design/react-native/lib/picker", "default.defaultProps")
     @js.native
-    def defaultProps: Cascade = js.native
-    inline def defaultProps_=(x: Cascade): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: Format = js.native
+    inline def defaultProps_=(x: Format): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  inline def getDefaultProps(): Cascade = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultProps")().asInstanceOf[Cascade]
+  inline def getDefaultProps(): Format = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultProps")().asInstanceOf[Format]
   
   @js.native
   trait Picker extends Component[PickerProps, Any, Any] {

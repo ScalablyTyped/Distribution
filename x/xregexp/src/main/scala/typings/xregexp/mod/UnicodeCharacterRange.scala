@@ -17,18 +17,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UnicodeCharacterRange extends StObject
 object UnicodeCharacterRange {
   
-  inline def PickRequiredUnicodeCharac(astral: js.UndefOr[String] & String, name: String): typings.xregexp.anon.PickRequiredUnicodeCharac = {
-    val __obj = js.Dynamic.literal(astral = astral.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  inline def PickRequiredUnicodeCharac(name: String): typings.xregexp.anon.PickRequiredUnicodeCharac = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.xregexp.anon.PickRequiredUnicodeCharac]
   }
   
-  inline def PickRequiredUnicodeCharacAlias(bmp: js.UndefOr[String] & String, name: String): typings.xregexp.anon.PickRequiredUnicodeCharacAlias = {
-    val __obj = js.Dynamic.literal(bmp = bmp.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  inline def PickRequiredUnicodeCharacAlias(name: String): typings.xregexp.anon.PickRequiredUnicodeCharacAlias = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.xregexp.anon.PickRequiredUnicodeCharacAlias]
   }
   
-  inline def PickRequiredUnicodeCharacAstral(inverseOf: js.UndefOr[String] & String, name: String): typings.xregexp.anon.PickRequiredUnicodeCharacAstral = {
-    val __obj = js.Dynamic.literal(inverseOf = inverseOf.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  inline def PickRequiredUnicodeCharacAstral(name: String): typings.xregexp.anon.PickRequiredUnicodeCharacAstral = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.xregexp.anon.PickRequiredUnicodeCharacAstral]
   }
 }

@@ -11,7 +11,7 @@ import typings.std.HTMLElement
 import typings.victoryCore.anon.Arialabelledby
 import typings.victoryCore.anon.PortalComponent
 import typings.victoryCore.anon.TransitionTimer
-import typings.victoryCore.anon.`0`
+import typings.victoryCore.anon.`1`
 import typings.victoryCore.libVictoryLabelVictoryLabelMod.OriginType
 import typings.victoryCore.libVictoryThemeTypesMod.VictoryThemeDefinition
 import org.scalablytyped.runtime.StObject
@@ -135,7 +135,7 @@ object libVictoryContainerVictoryContainerMod {
     
     var role: js.UndefOr[String] = js.undefined
     
-    var scale: js.UndefOr[`0`] = js.undefined
+    var scale: js.UndefOr[`1`] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
@@ -242,7 +242,7 @@ object libVictoryContainerVictoryContainerMod {
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
-      inline def setScale(value: `0`): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: `1`): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
       inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       

@@ -20,7 +20,7 @@ trait PartialDoAnyPhaseArgphase extends StObject {
   
   var modifiedCoords: js.UndefOr[Point] = js.undefined
   
-  var phase: js.UndefOr[EventPhase] & EventPhase
+  var phase: js.UndefOr[EventPhase] = js.undefined
   
   var preEnd: js.UndefOr[Boolean] = js.undefined
   
@@ -30,8 +30,8 @@ trait PartialDoAnyPhaseArgphase extends StObject {
 }
 object PartialDoAnyPhaseArgphase {
   
-  inline def apply(phase: js.UndefOr[EventPhase] & EventPhase): PartialDoAnyPhaseArgphase = {
-    val __obj = js.Dynamic.literal(phase = phase.asInstanceOf[js.Any])
+  inline def apply(): PartialDoAnyPhaseArgphase = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialDoAnyPhaseArgphase]
   }
   
@@ -53,7 +53,9 @@ object PartialDoAnyPhaseArgphase {
     
     inline def setModifiedCoordsUndefined: Self = StObject.set(x, "modifiedCoords", js.undefined)
     
-    inline def setPhase(value: js.UndefOr[EventPhase] & EventPhase): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
+    inline def setPhase(value: EventPhase): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
+    
+    inline def setPhaseUndefined: Self = StObject.set(x, "phase", js.undefined)
     
     inline def setPreEnd(value: Boolean): Self = StObject.set(x, "preEnd", value.asInstanceOf[js.Any])
     

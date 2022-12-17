@@ -460,13 +460,13 @@ object mod extends Shortcut {
         * **Warning**: The Timegraph extension isn't required by default, you would need to include at "gun/lib/time.js"
         */
       /** Pushes data to a Timegraph with it's time set to Gun.state()'s time */
-      var time: (js.UndefOr[
+      var time: js.UndefOr[
             js.Function2[
               /* callback */ js.Function3[/* data */ ArrayOf[DataType], /* key */ ReferenceKey, /* time */ Double, Unit], 
               /* alsoReceiveNOldEvents */ js.UndefOr[Double], 
               ChainReference[DataType, ReferenceKey, `false`]
             ]
-          ]) & (js.UndefOr[js.Function1[/* data */ ArrayOf[DataType], Unit]]) = js.native
+          ] = js.native
       
       /**
         * After you save some data in an unordered list, you may need to remove it.

@@ -1,5 +1,10 @@
 package typings.styledSystem.mod
 
+import typings.csstype.mod.Property.Bottom
+import typings.csstype.mod.Property.Left
+import typings.csstype.mod.Property.Position
+import typings.csstype.mod.Property.Right
+import typings.csstype.mod.Property.Top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,22 +12,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PositionProps[ThemeType /* <: Theme[TLengthStyledSystem] */]
   extends StObject
      with ZIndexProps[ThemeType]
-     with TopProps[
-      ThemeType, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Top<TLengthStyledSystem> */ js.Any
-    ]
-     with RightProps[
-      ThemeType, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Right<TLengthStyledSystem> */ js.Any
-    ]
-     with BottomProps[
-      ThemeType, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Bottom<TLengthStyledSystem> */ js.Any
-    ]
-     with LeftProps[
-      ThemeType, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Left<TLengthStyledSystem> */ js.Any
-    ] {
+     with TopProps[ThemeType, Top[TLengthStyledSystem]]
+     with RightProps[ThemeType, Right[TLengthStyledSystem]]
+     with BottomProps[ThemeType, Bottom[TLengthStyledSystem]]
+     with LeftProps[ThemeType, Left[TLengthStyledSystem]] {
   
   /**
     * The position CSS property specifies how an element is positioned in a document.
@@ -30,12 +23,7 @@ trait PositionProps[ThemeType /* <: Theme[TLengthStyledSystem] */]
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
     */
-  var position: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Position */ js.Any, 
-      ThemeType
-    ]
-  ] = js.undefined
+  var position: js.UndefOr[ResponsiveValue[Position, ThemeType]] = js.undefined
 }
 object PositionProps {
   
@@ -46,19 +34,12 @@ object PositionProps {
   
   extension [Self <: PositionProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & PositionProps[ThemeType]) {
     
-    inline def setPosition(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Position */ js.Any, 
-          ThemeType
-        ]
-    ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: ResponsiveValue[Position, ThemeType]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     inline def setPositionNull: Self = StObject.set(x, "position", null)
     
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    inline def setPositionVarargs(
-      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Position */ js.Any) | Null)*
-    ): Self = StObject.set(x, "position", js.Array(value :_*))
+    inline def setPositionVarargs(value: (Position | Null)*): Self = StObject.set(x, "position", js.Array(value*))
   }
 }

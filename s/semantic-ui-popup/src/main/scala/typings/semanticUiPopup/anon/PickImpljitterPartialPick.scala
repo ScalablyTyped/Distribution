@@ -56,7 +56,7 @@ trait PickImpljitterPartialPick
   
   var `inline`: js.UndefOr[Boolean] = js.undefined
   
-  var jitter: Double & js.UndefOr[Double]
+  var jitter: Double
   
   var lastResort: js.UndefOr[Boolean | String] = js.undefined
   
@@ -120,7 +120,7 @@ trait PickImpljitterPartialPick
 }
 object PickImpljitterPartialPick {
   
-  inline def apply(jitter: Double & js.UndefOr[Double]): PickImpljitterPartialPick = {
+  inline def apply(jitter: Double): PickImpljitterPartialPick = {
     val __obj = js.Dynamic.literal(jitter = jitter.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpljitterPartialPick]
   }
@@ -191,7 +191,7 @@ object PickImpljitterPartialPick {
     
     inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
     
-    inline def setJitter(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "jitter", value.asInstanceOf[js.Any])
+    inline def setJitter(value: Double): Self = StObject.set(x, "jitter", value.asInstanceOf[js.Any])
     
     inline def setLastResort(value: Boolean | String): Self = StObject.set(x, "lastResort", value.asInstanceOf[js.Any])
     

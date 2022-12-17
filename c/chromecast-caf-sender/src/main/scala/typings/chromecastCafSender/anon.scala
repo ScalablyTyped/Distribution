@@ -96,7 +96,7 @@ object anon {
         typings.chromecastCafSender.cast.framework.ApplicationStatusEventData
       ]
     
-    var CastContext: Instantiable0[typings.chromecastCafSender.cast.framework.CastContext] & TypeofCastContext
+    var CastContext: Instantiable0[typings.chromecastCafSender.cast.framework.CastContext]
     
     var CastSession: Instantiable2[
         /* sessionObj */ Session, 
@@ -154,7 +154,7 @@ object anon {
       ApplicationMetadata: Instantiable1[/* sessionObj */ Session, ApplicationMetadata],
       ApplicationMetadataEventData: Instantiable1[/* metadata */ ApplicationMetadata, ApplicationMetadataEventData],
       ApplicationStatusEventData: Instantiable1[/* status */ String, ApplicationStatusEventData],
-      CastContext: Instantiable0[CastContext] & TypeofCastContext,
+      CastContext: Instantiable0[CastContext],
       CastSession: Instantiable2[/* sessionObj */ Session, /* state */ SessionState, CastSession],
       CastStateEventData: Instantiable1[/* castState */ CastState, CastStateEventData],
       EventData: Instantiable1[/* type */ String, EventData],
@@ -191,7 +191,7 @@ object anon {
       
       inline def setApplicationStatusEventData(value: Instantiable1[/* status */ String, ApplicationStatusEventData]): Self = StObject.set(x, "ApplicationStatusEventData", value.asInstanceOf[js.Any])
       
-      inline def setCastContext(value: Instantiable0[CastContext] & TypeofCastContext): Self = StObject.set(x, "CastContext", value.asInstanceOf[js.Any])
+      inline def setCastContext(value: Instantiable0[CastContext]): Self = StObject.set(x, "CastContext", value.asInstanceOf[js.Any])
       
       inline def setCastSession(value: Instantiable2[/* sessionObj */ Session, /* state */ SessionState, CastSession]): Self = StObject.set(x, "CastSession", value.asInstanceOf[js.Any])
       

@@ -1,5 +1,6 @@
 package typings.styledSystem.mod
 
+import typings.csstype.mod.Property.GridRow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,12 +14,7 @@ trait GridRowProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObje
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row)
     */
-  var gridRow: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridRow */ js.Any, 
-      ThemeType
-    ]
-  ] = js.undefined
+  var gridRow: js.UndefOr[ResponsiveValue[GridRow, ThemeType]] = js.undefined
 }
 object GridRowProps {
   
@@ -29,19 +25,12 @@ object GridRowProps {
   
   extension [Self <: GridRowProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & GridRowProps[ThemeType]) {
     
-    inline def setGridRow(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridRow */ js.Any, 
-          ThemeType
-        ]
-    ): Self = StObject.set(x, "gridRow", value.asInstanceOf[js.Any])
+    inline def setGridRow(value: ResponsiveValue[GridRow, ThemeType]): Self = StObject.set(x, "gridRow", value.asInstanceOf[js.Any])
     
     inline def setGridRowNull: Self = StObject.set(x, "gridRow", null)
     
     inline def setGridRowUndefined: Self = StObject.set(x, "gridRow", js.undefined)
     
-    inline def setGridRowVarargs(
-      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridRow */ js.Any) | Null)*
-    ): Self = StObject.set(x, "gridRow", js.Array(value :_*))
+    inline def setGridRowVarargs(value: (GridRow | Null)*): Self = StObject.set(x, "gridRow", js.Array(value*))
   }
 }

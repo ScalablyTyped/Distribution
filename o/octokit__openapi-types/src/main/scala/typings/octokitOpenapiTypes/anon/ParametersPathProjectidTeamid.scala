@@ -8,11 +8,11 @@ trait ParametersPathProjectidTeamid extends StObject {
   
   var parameters: PathProjectidTeamid
   
-  var responses: `200ContentApplicationjsonOwnerurl`
+  var responses: `200Content120`
 }
 object ParametersPathProjectidTeamid {
   
-  inline def apply(parameters: PathProjectidTeamid, responses: `200ContentApplicationjsonOwnerurl`): ParametersPathProjectidTeamid = {
+  inline def apply(parameters: PathProjectidTeamid, responses: `200Content120`): ParametersPathProjectidTeamid = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathProjectidTeamid]
   }
@@ -21,6 +21,6 @@ object ParametersPathProjectidTeamid {
     
     inline def setParameters(value: PathProjectidTeamid): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200ContentApplicationjsonOwnerurl`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200Content120`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

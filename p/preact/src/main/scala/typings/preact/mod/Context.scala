@@ -1,15 +1,15 @@
 package typings.preact.mod
 
-import typings.preact.anon.Children
 import typings.preact.anon.Value
+import typings.preact.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Context[T] extends StObject {
   
-  def Consumer(props: RenderableProps[Children[T], Any]): VNode[Any] | Null
-  def Consumer(props: RenderableProps[Children[T], Any], context: Any): VNode[Any] | Null
+  def Consumer(props: RenderableProps[`0`[T], Any]): VNode[Any] | Null
+  def Consumer(props: RenderableProps[`0`[T], Any], context: Any): VNode[Any] | Null
   @JSName("Consumer")
   var Consumer_Original: Consumer[T]
   

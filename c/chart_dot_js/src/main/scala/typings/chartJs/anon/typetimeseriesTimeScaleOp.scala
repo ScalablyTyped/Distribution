@@ -128,7 +128,7 @@ trait typetimeseriesTimeScaleOp extends StObject {
   
   var suggestedMin: String | Double
   
-  var ticks: CartesianTickOptions & Source
+  var ticks: CartesianTickOptions
   
   var time: DisplayFormats
   
@@ -169,7 +169,7 @@ object typetimeseriesTimeScaleOp {
     reverse: Boolean,
     suggestedMax: String | Double,
     suggestedMin: String | Double,
-    ticks: CartesianTickOptions & Source,
+    ticks: CartesianTickOptions,
     time: DisplayFormats,
     title: Display,
     weight: Double
@@ -249,7 +249,7 @@ object typetimeseriesTimeScaleOp {
     
     inline def setSuggestedMin(value: String | Double): Self = StObject.set(x, "suggestedMin", value.asInstanceOf[js.Any])
     
-    inline def setTicks(value: CartesianTickOptions & Source): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
+    inline def setTicks(value: CartesianTickOptions): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
     
     inline def setTime(value: DisplayFormats): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     

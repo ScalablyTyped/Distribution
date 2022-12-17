@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ActiveBackground extends StObject {
   
-  var active: js.UndefOr[`8`] = js.undefined
+  var active: js.UndefOr[`6`] = js.undefined
   
   var background: js.UndefOr[BackgroundType] = js.undefined
   
@@ -22,11 +22,11 @@ trait ActiveBackground extends StObject {
   
   var color: js.UndefOr[ColorType] = js.undefined
   
-  var disabled: js.UndefOr[`7`] = js.undefined
+  var disabled: js.UndefOr[`5`] = js.undefined
   
   var extend: js.UndefOr[ExtendType[Record[String, Any]]] = js.undefined
   
-  var hover: js.UndefOr[`35`] = js.undefined
+  var hover: js.UndefOr[`33`] = js.undefined
   
   var margin: js.UndefOr[MarginType] = js.undefined
   
@@ -41,7 +41,7 @@ object ActiveBackground {
   
   extension [Self <: ActiveBackground](x: Self) {
     
-    inline def setActive(value: `8`): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: `6`): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
@@ -57,7 +57,7 @@ object ActiveBackground {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setDisabled(value: `7`): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: `5`): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
@@ -67,7 +67,7 @@ object ActiveBackground {
     
     inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    inline def setHover(value: `35`): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+    inline def setHover(value: `33`): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
     inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     

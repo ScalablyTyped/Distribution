@@ -93,7 +93,7 @@ trait Originalcommitid extends StObject {
     */
   var pull_request_url: String
   
-  var reactions: js.UndefOr[`1`] = js.undefined
+  var reactions: js.UndefOr[Confused] = js.undefined
   
   /**
     * @description The side of the first line of the range for a multi-line comment.
@@ -214,7 +214,7 @@ object Originalcommitid {
     
     inline def setPull_request_url(value: String): Self = StObject.set(x, "pull_request_url", value.asInstanceOf[js.Any])
     
-    inline def setReactions(value: `1`): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
+    inline def setReactions(value: Confused): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
     
     inline def setReactionsUndefined: Self = StObject.set(x, "reactions", js.undefined)
     

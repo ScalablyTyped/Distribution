@@ -21,5 +21,5 @@ object outObjectPickMod {
   /**
     * @hidden
     */
-  type __Pick[O /* <: js.Object */, K /* <: /* keyof O */ String */] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in K ]: O[P]} */ js.Any) & js.Object
+  type __Pick[O /* <: js.Object */, K /* <: /* keyof O */ String */] = /* import warning: importer.ImportType#apply Failed type conversion: {[ P in K ]: O[P]} */ js.Any
 }

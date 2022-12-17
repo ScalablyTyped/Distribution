@@ -1,6 +1,7 @@
 package typings.fullcalendarCommon.mod
 
 import typings.fullcalendarCommon.anon.End
+import typings.fullcalendarCommon.anon.Range
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ open class DateProfileGenerator protected () extends StObject {
   def build(currentDate: js.Date, direction: Any, forceToValid: Boolean): DateProfile = js.native
   def build(currentDate: js.Date, direction: Unit, forceToValid: Boolean): DateProfile = js.native
   
-  def buildCurrentRangeInfo(date: js.Date, direction: Any): typings.fullcalendarCommon.anon.Duration = js.native
+  def buildCurrentRangeInfo(date: js.Date, direction: Any): Range = js.native
   
   def buildCustomVisibleRange(date: js.Date): DateRange = js.native
   

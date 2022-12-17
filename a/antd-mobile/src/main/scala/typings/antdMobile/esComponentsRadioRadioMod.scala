@@ -1,6 +1,6 @@
 package typings.antdMobile
 
-import typings.antdMobile.anon.CSSPropertiesPartialRecorAnimationComposition
+import typings.antdMobile.anon.CSSPropertiesPartialRecorAnimation
 import typings.antdMobile.antdMobileStrings.`additions removals`
 import typings.antdMobile.antdMobileStrings.`additions text`
 import typings.antdMobile.antdMobileStrings.`inline`
@@ -309,7 +309,7 @@ object esComponentsRadioRadioMod {
     
     var onChange: js.UndefOr[js.Function1[/* checked */ Boolean, Unit]] = js.undefined
     
-    var style: js.UndefOr[CSSPropertiesPartialRecorAnimationComposition] = js.undefined
+    var style: js.UndefOr[CSSPropertiesPartialRecorAnimation] = js.undefined
     
     var tabIndex: js.UndefOr[Double] = js.undefined
     
@@ -554,7 +554,7 @@ object esComponentsRadioRadioMod {
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setStyle(value: CSSPropertiesPartialRecorAnimationComposition): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSPropertiesPartialRecorAnimation): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       

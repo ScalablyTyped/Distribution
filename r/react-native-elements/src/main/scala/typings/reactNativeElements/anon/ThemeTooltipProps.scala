@@ -118,17 +118,17 @@ trait ThemeTooltipProps extends StObject {
   
   var Tooltip: js.UndefOr[PartialTooltipProps] = js.native
   
-  var backgroundColor: js.UndefOr[ColorValue] & String = js.native
+  var backgroundColor: js.UndefOr[ColorValue] = js.native
   
-  var closeOnlyOnBackdropPress: js.UndefOr[Boolean] & Boolean = js.native
+  var closeOnlyOnBackdropPress: js.UndefOr[Boolean] = js.native
   
   var colors: js.UndefOr[RecursivePartialColors] = js.native
   
-  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] & js.Object = js.native
+  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
   
-  var height: (js.UndefOr[Double | String]) & Double = js.native
+  var height: js.UndefOr[Double | String] = js.native
   
-  var highlightColor: js.UndefOr[ColorValue] & String = js.native
+  var highlightColor: js.UndefOr[ColorValue] = js.native
   
   def onClose(): Unit = js.native
   @JSName("onClose")
@@ -138,21 +138,21 @@ trait ThemeTooltipProps extends StObject {
   @JSName("onOpen")
   var onOpen_FThemeTooltipProps: js.UndefOr[js.Function0[Unit]] = js.native
   
-  var overlayColor: js.UndefOr[ColorValue] & String = js.native
+  var overlayColor: js.UndefOr[ColorValue] = js.native
   
   var pointerColor: js.UndefOr[ColorValue] = js.native
   
   var popover: js.UndefOr[ReactElement] = js.native
   
-  var skipAndroidStatusBar: js.UndefOr[Boolean] & Boolean = js.native
+  var skipAndroidStatusBar: js.UndefOr[Boolean] = js.native
   
-  var toggleAction: (js.UndefOr[String | onPress | onLongPress]) & String = js.native
+  var toggleAction: js.UndefOr[String | onPress | onLongPress] = js.native
   
-  var toggleOnPress: js.UndefOr[Boolean] & Boolean = js.native
+  var toggleOnPress: js.UndefOr[Boolean] = js.native
   
-  var width: (js.UndefOr[Double | String]) & Double = js.native
+  var width: js.UndefOr[Double | String] = js.native
   
-  var withOverlay: js.UndefOr[Boolean] & Boolean = js.native
+  var withOverlay: js.UndefOr[Boolean] = js.native
   
-  var withPointer: js.UndefOr[Boolean] & Boolean = js.native
+  var withPointer: js.UndefOr[Boolean] = js.native
 }

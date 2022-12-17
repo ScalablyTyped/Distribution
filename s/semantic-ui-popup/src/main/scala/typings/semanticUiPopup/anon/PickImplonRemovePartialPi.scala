@@ -84,7 +84,7 @@ trait PickImplonRemovePartialPi
   
   def onRemove($module: JQuery): Unit
   @JSName("onRemove")
-  var onRemove_Original: (js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]])
+  var onRemove_Original: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]
   
   var onShow: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, `false` | Unit]] = js.undefined
   
@@ -122,9 +122,7 @@ trait PickImplonRemovePartialPi
 }
 object PickImplonRemovePartialPi {
   
-  inline def apply(
-    onRemove: (js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]])
-  ): PickImplonRemovePartialPi = {
+  inline def apply(onRemove: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]): PickImplonRemovePartialPi = {
     val __obj = js.Dynamic.literal(onRemove = onRemove.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonRemovePartialPi]
   }
@@ -245,9 +243,7 @@ object PickImplonRemovePartialPi {
     
     inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
     
-    inline def setOnRemove(
-      value: (js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]])
-    ): Self = StObject.set(x, "onRemove", value.asInstanceOf[js.Any])
+    inline def setOnRemove(value: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]): Self = StObject.set(x, "onRemove", value.asInstanceOf[js.Any])
     
     inline def setOnShow(value: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, `false` | Unit]): Self = StObject.set(x, "onShow", value.asInstanceOf[js.Any])
     

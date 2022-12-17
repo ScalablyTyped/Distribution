@@ -18,14 +18,13 @@ import typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.PartialState
 import typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.Route
 import typings.tuyaPanelKit.anon.A
 import typings.tuyaPanelKit.anon.AB
-import typings.tuyaPanelKit.anon.B
 import typings.tuyaPanelKit.anon.C
 import typings.tuyaPanelKit.anon.CanPreventDefault
 import typings.tuyaPanelKit.anon.CanPreventDefaultData
 import typings.tuyaPanelKit.anon.Children
 import typings.tuyaPanelKit.anon.Component
 import typings.tuyaPanelKit.anon.Data
-import typings.tuyaPanelKit.anon.Data2
+import typings.tuyaPanelKit.anon.Data3
 import typings.tuyaPanelKit.anon.DataNoop
 import typings.tuyaPanelKit.anon.DataOptionsObject
 import typings.tuyaPanelKit.anon.DataStateState
@@ -40,7 +39,7 @@ import typings.tuyaPanelKit.anon.Navigation
 import typings.tuyaPanelKit.anon.PartialStateNavigationSta
 import typings.tuyaPanelKit.anon.TargetTypeEventName
 import typings.tuyaPanelKit.anon.TypeEventName
-import typings.tuyaPanelKit.anon.`3`
+import typings.tuyaPanelKit.anon.`2`
 import typings.tuyaPanelKit.anon.`4`
 import typings.tuyaPanelKit.tuyaPanelKitStrings.__unsafe_action__
 import typings.tuyaPanelKit.tuyaPanelKitStrings._empty
@@ -316,11 +315,11 @@ object `@reactNavigationCoreTypesMod` {
     /**
       * Event which fires when the navigation state changes.
       */
-    var state: Data2
+    var state: Data3
   }
   object NavigationContainerEventMap {
     
-    inline def apply(__unsafe_action__ : DataNoop, options: DataOptionsObject, state: Data2): NavigationContainerEventMap = {
+    inline def apply(__unsafe_action__ : DataNoop, options: DataOptionsObject, state: Data3): NavigationContainerEventMap = {
       val __obj = js.Dynamic.literal(__unsafe_action__ = __unsafe_action__.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[NavigationContainerEventMap]
     }
@@ -329,7 +328,7 @@ object `@reactNavigationCoreTypesMod` {
       
       inline def setOptions(value: DataOptionsObject): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      inline def setState(value: Data2): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: Data3): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
       inline def set__unsafe_action__(value: DataNoop): Self = StObject.set(x, "__unsafe_action__", value.asInstanceOf[js.Any])
     }
@@ -410,7 +409,7 @@ object `@reactNavigationCoreTypesMod` {
       * Turns out if we use an empty string, it doesn't show up in intelliSense.
       */
     /* protected */ @JSName("")
-    var _empty: js.UndefOr[A] = js.native
+    var _empty: js.UndefOr[C] = js.native
     
     /**
       * Subscribe to events from the parent navigator.
@@ -462,7 +461,7 @@ object `@reactNavigationCoreTypesMod` {
       * If not specified, all routes receive the event.
       */
     def emit[EventName /* <: Extract[/* keyof {} */ String, String] */](
-      options: `3`[EventName] & (/* import warning: importer.ImportType#apply Failed type conversion: {}[EventName]['canPreventDefault'] extends true ? {  canPreventDefault :true} : {} */ js.Any)
+      options: `4`[EventName] & (/* import warning: importer.ImportType#apply Failed type conversion: {}[EventName]['canPreventDefault'] extends true ? {  canPreventDefault :true} : {} */ js.Any)
     ): EventArg[
         EventName, 
         /* import warning: importer.ImportType#apply Failed type conversion: {}[EventName]['canPreventDefault'] */ js.Any, 
@@ -506,13 +505,13 @@ object `@reactNavigationCoreTypesMod` {
     def navigate[RouteName /* <: /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase */ String */](
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type undefined extends ParamList[RouteName] ? [RouteName] | [RouteName, ParamList[RouteName]] : [RouteName, ParamList[RouteName]] is not an array type */ args: /* import warning: importer.ImportType#apply Failed type conversion: undefined extends tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase[RouteName] ? [RouteName] | [RouteName, tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase[RouteName]] : [RouteName, tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase[RouteName]] */ js.Any
     ): Unit = js.native
+    def navigate[RouteName /* <: /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase */ String */](route: KeyNameRouteName[RouteName]): Unit = js.native
     /**
       * Navigate to a route in current navigation tree.
       *
       * @param route Object with `key` or `name` for the route to navigate to, and a `params` object.
       */
-    def navigate[RouteName /* <: /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase */ String */](route: KeyParams[RouteName]): Unit = js.native
-    def navigate[RouteName /* <: /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase */ String */](route: NameRouteName[RouteName]): Unit = js.native
+    def navigate[RouteName /* <: /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase */ String */](route: KeyString[RouteName]): Unit = js.native
     
     def removeListener[EventName /* <: Extract[
         /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/core/types.NavigationContainerEventMap */ state | options | __unsafe_action__, 
@@ -565,7 +564,7 @@ object `@reactNavigationCoreTypesMod` {
       * Turns out if we use an empty string, it doesn't show up in intelliSense.
       */
     /* protected */ @JSName("")
-    var _empty: js.UndefOr[B[ParamList]] = js.native
+    var _empty: js.UndefOr[A[ParamList]] = js.native
     
     /**
       * Check if dispatching back action will be handled by navigation.
@@ -606,7 +605,7 @@ object `@reactNavigationCoreTypesMod` {
       * If not specified, all routes receive the event.
       */
     def emit[EventName /* <: Extract[/* keyof EventMap */ String, String] */](
-      options: (`4`[EventName, EventMap]) & (/* import warning: importer.ImportType#apply Failed type conversion: EventMap[EventName]['canPreventDefault'] extends true ? {  canPreventDefault :true} : {} */ js.Any)
+      options: (`2`[EventName, EventMap]) & (/* import warning: importer.ImportType#apply Failed type conversion: EventMap[EventName]['canPreventDefault'] extends true ? {  canPreventDefault :true} : {} */ js.Any)
     ): EventArg[
         EventName, 
         /* import warning: importer.ImportType#apply Failed type conversion: EventMap[EventName]['canPreventDefault'] */ js.Any, 
@@ -635,13 +634,13 @@ object `@reactNavigationCoreTypesMod` {
     def navigate[RouteName /* <: /* keyof ParamList */ String */](
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type undefined extends ParamList[RouteName] ? [RouteName] | [RouteName, ParamList[RouteName]] : [RouteName, ParamList[RouteName]] is not an array type */ args: /* import warning: importer.ImportType#apply Failed type conversion: undefined extends ParamList[RouteName] ? [RouteName] | [RouteName, ParamList[RouteName]] : [RouteName, ParamList[RouteName]] */ js.Any
     ): Unit = js.native
-    def navigate[RouteName /* <: /* keyof ParamList */ String */](route: KeyNameRouteName[RouteName, ParamList]): Unit = js.native
     /**
       * Navigate to a route in current navigation tree.
       *
       * @param route Object with `key` or `name` for the route to navigate to, and a `params` object.
       */
-    def navigate[RouteName /* <: /* keyof ParamList */ String */](route: KeyString[ParamList, RouteName]): Unit = js.native
+    def navigate[RouteName /* <: /* keyof ParamList */ String */](route: KeyParams[ParamList, RouteName]): Unit = js.native
+    def navigate[RouteName /* <: /* keyof ParamList */ String */](route: NameRouteName[RouteName, ParamList]): Unit = js.native
     
     def reset(state: NavigationState[ParamListBase]): Unit = js.native
     /**
@@ -722,13 +721,13 @@ object `@reactNavigationCoreTypesMod` {
     def navigate[RouteName /* <: /* keyof ParamList */ String */](
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type undefined extends ParamList[RouteName] ? [RouteName] | [RouteName, ParamList[RouteName]] : [RouteName, ParamList[RouteName]] is not an array type */ args: /* import warning: importer.ImportType#apply Failed type conversion: undefined extends ParamList[RouteName] ? [RouteName] | [RouteName, ParamList[RouteName]] : [RouteName, ParamList[RouteName]] */ js.Any
     ): Unit = js.native
-    def navigate[RouteName /* <: /* keyof ParamList */ String */](route: KeyNameRouteName[RouteName, ParamList]): Unit = js.native
     /**
       * Navigate to a route in current navigation tree.
       *
       * @param route Object with `key` or `name` for the route to navigate to, and a `params` object.
       */
-    def navigate[RouteName /* <: /* keyof ParamList */ String */](route: KeyString[ParamList, RouteName]): Unit = js.native
+    def navigate[RouteName /* <: /* keyof ParamList */ String */](route: KeyParams[ParamList, RouteName]): Unit = js.native
+    def navigate[RouteName /* <: /* keyof ParamList */ String */](route: NameRouteName[RouteName, ParamList]): Unit = js.native
     
     /**
       * Reset the navigation state to the provided state.
@@ -753,7 +752,7 @@ object `@reactNavigationCoreTypesMod` {
       * Turns out if we use an empty string, it doesn't show up in intelliSense.
       */
     /* protected */ @JSName("")
-    var _empty: js.UndefOr[B[ParamList]] & (js.UndefOr[C[ParamList, RouteName, EventMap]]) = js.native
+    var _empty: js.UndefOr[A[ParamList]] = js.native
     
     /**
       * Subscribe to events from the parent navigator.
@@ -818,13 +817,13 @@ object `@reactNavigationCoreTypesMod` {
     def navigate[RouteName /* <: /* keyof ParamList */ String */](
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type undefined extends ParamList[RouteName] ? [RouteName] | [RouteName, ParamList[RouteName]] : [RouteName, ParamList[RouteName]] is not an array type */ args: /* import warning: importer.ImportType#apply Failed type conversion: undefined extends ParamList[RouteName] ? [RouteName] | [RouteName, ParamList[RouteName]] : [RouteName, ParamList[RouteName]] */ js.Any
     ): Unit = js.native
-    def navigate[RouteName /* <: /* keyof ParamList */ String */](route: KeyNameRouteName[RouteName, ParamList]): Unit = js.native
     /**
       * Navigate to a route in current navigation tree.
       *
       * @param route Object with `key` or `name` for the route to navigate to, and a `params` object.
       */
-    def navigate[RouteName /* <: /* keyof ParamList */ String */](route: KeyString[ParamList, RouteName]): Unit = js.native
+    def navigate[RouteName /* <: /* keyof ParamList */ String */](route: KeyParams[ParamList, RouteName]): Unit = js.native
+    def navigate[RouteName /* <: /* keyof ParamList */ String */](route: NameRouteName[RouteName, ParamList]): Unit = js.native
     
     def removeListener[EventName /* <: Extract[
         /* keyof EventMap & tuya-panel-kit.tuya-panel-kit/@react-navigation/core/types.EventMapCore<State> */ focus | blur | state | beforeRemove, 

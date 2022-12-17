@@ -1,8 +1,6 @@
 package typings.atlaskitTokens.anon
 
-import typings.atlaskitTokens.distTypesArtifactsTypesInternalMod.InternalTokenIds
-import typings.atlaskitTokens.distTypesTypesMod.ExperimentalReplacement
-import typings.atlaskitTokens.distTypesTypesMod.ExperimentalTokenState
+import typings.atlaskitTokens.distTypesTypesMod.ActiveTokenState
 import typings.atlaskitTokens.distTypesTypesMod.Groups
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,15 +14,13 @@ trait Suggest[Group /* <: Groups */] extends StObject {
   
   var introduced: String
   
-  var replacement: js.UndefOr[ExperimentalReplacement] = js.undefined
-  
-  var state: ExperimentalTokenState
+  var state: ActiveTokenState
   
   var suggest: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Suggest {
   
-  inline def apply[Group /* <: Groups */](description: String, group: Group, introduced: String, state: ExperimentalTokenState): Suggest[Group] = {
+  inline def apply[Group /* <: Groups */](description: String, group: Group, introduced: String, state: ActiveTokenState): Suggest[Group] = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], introduced = introduced.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[Suggest[Group]]
   }
@@ -37,13 +33,7 @@ object Suggest {
     
     inline def setIntroduced(value: String): Self = StObject.set(x, "introduced", value.asInstanceOf[js.Any])
     
-    inline def setReplacement(value: ExperimentalReplacement): Self = StObject.set(x, "replacement", value.asInstanceOf[js.Any])
-    
-    inline def setReplacementUndefined: Self = StObject.set(x, "replacement", js.undefined)
-    
-    inline def setReplacementVarargs(value: InternalTokenIds*): Self = StObject.set(x, "replacement", js.Array(value*))
-    
-    inline def setState(value: ExperimentalTokenState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: ActiveTokenState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setSuggest(value: js.Array[String]): Self = StObject.set(x, "suggest", value.asInstanceOf[js.Any])
     

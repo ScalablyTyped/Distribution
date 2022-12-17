@@ -16,7 +16,7 @@ trait Tree extends StObject {
   /** @example Fix all the bugs */
   var message: String
   
-  var tree: Sha
+  var tree: ShaUrl
   
   /**
     * Format: uri
@@ -35,7 +35,7 @@ object Tree {
     comment_count: Double,
     committer: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-git-user'] */ js.Any,
     message: String,
-    tree: Sha,
+    tree: ShaUrl,
     url: String
   ): Tree = {
     val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], comment_count = comment_count.asInstanceOf[js.Any], committer = committer.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], tree = tree.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
@@ -56,7 +56,7 @@ object Tree {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    inline def setTree(value: Sha): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
+    inline def setTree(value: ShaUrl): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

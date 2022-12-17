@@ -8,7 +8,6 @@ import typings.node.NodeJS.ReadableStream
 import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.Agent
 import typings.zapierPlatformCore.mod.HttpMethod
-import typings.zapierPlatformCore.zapierPlatformCoreBooleans.`true`
 import typings.zapierPlatformCore.zapierPlatformCoreStrings.error
 import typings.zapierPlatformCore.zapierPlatformCoreStrings.follow
 import typings.zapierPlatformCore.zapierPlatformCoreStrings.manual
@@ -184,7 +183,7 @@ object anon {
     
     var params: js.UndefOr[js.Object] = js.undefined
     
-    var raw: js.UndefOr[Boolean] & `true`
+    var raw: js.UndefOr[Boolean] = js.undefined
     
     var redirect: js.UndefOr[manual | error | follow] = js.undefined
     
@@ -200,8 +199,8 @@ object anon {
   }
   object HttpRequestOptionsrawtrue {
     
-    inline def apply(raw: js.UndefOr[Boolean] & `true`): HttpRequestOptionsrawtrue = {
-      val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
+    inline def apply(): HttpRequestOptionsrawtrue = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HttpRequestOptionsrawtrue]
     }
     
@@ -245,7 +244,9 @@ object anon {
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      inline def setRaw(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      
+      inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
       
       inline def setRedirect(value: manual | error | follow): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
       
@@ -294,7 +295,7 @@ object anon {
     
     var params: js.UndefOr[js.Object] = js.undefined
     
-    var raw: js.UndefOr[Boolean] & `true`
+    var raw: js.UndefOr[Boolean] = js.undefined
     
     var redirect: js.UndefOr[manual | error | follow] = js.undefined
     
@@ -306,12 +307,12 @@ object anon {
     
     var timeout: js.UndefOr[Double] = js.undefined
     
-    var url: js.UndefOr[String] & String
+    var url: js.UndefOr[String] = js.undefined
   }
   object HttpRequestOptionsrawtrueAgent {
     
-    inline def apply(raw: js.UndefOr[Boolean] & `true`, url: js.UndefOr[String] & String): HttpRequestOptionsrawtrueAgent = {
-      val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    inline def apply(): HttpRequestOptionsrawtrueAgent = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HttpRequestOptionsrawtrueAgent]
     }
     
@@ -355,7 +356,9 @@ object anon {
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      inline def setRaw(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      
+      inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
       
       inline def setRedirect(value: manual | error | follow): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
       
@@ -377,7 +380,9 @@ object anon {
       
       inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      inline def setUrl(value: js.UndefOr[String] & String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -414,12 +419,12 @@ object anon {
     
     var timeout: js.UndefOr[Double] = js.undefined
     
-    var url: js.UndefOr[String] & String
+    var url: js.UndefOr[String] = js.undefined
   }
   object HttpRequestOptionsurlstri {
     
-    inline def apply(url: js.UndefOr[String] & String): HttpRequestOptionsurlstri = {
-      val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    inline def apply(): HttpRequestOptionsurlstri = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HttpRequestOptionsurlstri]
     }
     
@@ -487,7 +492,9 @@ object anon {
       
       inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      inline def setUrl(value: js.UndefOr[String] & String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   

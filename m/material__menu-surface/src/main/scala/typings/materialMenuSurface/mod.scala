@@ -8,13 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("@material/menu-surface", JSImport.Default)
-  @js.native
-  open class default ()
-    extends typings.materialMenuSurface.foundationMod.default {
-    def this(adapter: PartialMDCMenuSurfaceAdap) = this()
-  }
-  
   /**
     * Enum for representing an element corner for positioning the menu-surface.
     *

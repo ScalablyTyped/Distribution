@@ -9,11 +9,13 @@ trait AppAppArgs extends StObject {
   var app: String
   
   var appArgs: js.UndefOr[String] = js.undefined
+  
+  var channelId: String
 }
 object AppAppArgs {
   
-  inline def apply(app: String): AppAppArgs = {
-    val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any])
+  inline def apply(app: String, channelId: String): AppAppArgs = {
+    val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], channelId = channelId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppAppArgs]
   }
   
@@ -24,5 +26,7 @@ object AppAppArgs {
     inline def setAppArgs(value: String): Self = StObject.set(x, "appArgs", value.asInstanceOf[js.Any])
     
     inline def setAppArgsUndefined: Self = StObject.set(x, "appArgs", js.undefined)
+    
+    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
   }
 }

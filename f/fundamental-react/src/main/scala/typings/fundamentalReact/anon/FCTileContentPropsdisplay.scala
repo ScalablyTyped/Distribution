@@ -1,6 +1,5 @@
 package typings.fundamentalReact.anon
 
-import typings.fundamentalReact.fundamentalReactStrings.TileDotContent
 import typings.fundamentalReact.libTileTileMod.TileContentProps
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
@@ -19,7 +18,7 @@ trait FCTileContentPropsdisplay extends StObject {
   
   var defaultProps: js.UndefOr[PartialTileContentProps] = js.native
   
-  var displayName: js.UndefOr[String] & TileDotContent = js.native
+  var displayName: js.UndefOr[String] = js.native
   
   var propTypes: js.UndefOr[WeakValidationMapTileCont] = js.native
 }

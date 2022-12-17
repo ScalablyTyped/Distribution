@@ -304,22 +304,22 @@ object mod extends Shortcut {
   trait QuaternionRecord extends StObject
   object QuaternionRecord {
     
-    inline def wnumberwnumberundefinedxn(w: Double & js.UndefOr[Double]): typings.quaternion.anon.wnumberwnumberundefinedxn = {
+    inline def wnumberwnumberundefinedxn(w: Double): typings.quaternion.anon.wnumberwnumberundefinedxn = {
       val __obj = js.Dynamic.literal(w = w.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.quaternion.anon.wnumberwnumberundefinedxn]
     }
     
-    inline def xnumberwnumberundefinedxn(x: Double & js.UndefOr[Double]): typings.quaternion.anon.xnumberwnumberundefinedxn = {
+    inline def xnumberwnumberundefinedxn(x: Double): typings.quaternion.anon.xnumberwnumberundefinedxn = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.quaternion.anon.xnumberwnumberundefinedxn]
     }
     
-    inline def ynumberwnumberundefinedxn(y: Double & js.UndefOr[Double]): typings.quaternion.anon.ynumberwnumberundefinedxn = {
+    inline def ynumberwnumberundefinedxn(y: Double): typings.quaternion.anon.ynumberwnumberundefinedxn = {
       val __obj = js.Dynamic.literal(y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.quaternion.anon.ynumberwnumberundefinedxn]
     }
     
-    inline def znumberwnumberundefinedxn(z: Double & js.UndefOr[Double]): typings.quaternion.anon.znumberwnumberundefinedxn = {
+    inline def znumberwnumberundefinedxn(z: Double): typings.quaternion.anon.znumberwnumberundefinedxn = {
       val __obj = js.Dynamic.literal(z = z.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.quaternion.anon.znumberwnumberundefinedxn]
     }

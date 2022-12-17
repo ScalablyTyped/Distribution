@@ -16,7 +16,7 @@ trait PickImplmessagePartialPic
   
   var input: js.UndefOr[String] = js.undefined
   
-  var message: String & js.UndefOr[String]
+  var message: String
   
   var prompt: js.UndefOr[String] = js.undefined
   
@@ -24,7 +24,7 @@ trait PickImplmessagePartialPic
 }
 object PickImplmessagePartialPic {
   
-  inline def apply(message: String & js.UndefOr[String]): PickImplmessagePartialPic = {
+  inline def apply(message: String): PickImplmessagePartialPic = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmessagePartialPic]
   }
@@ -43,7 +43,7 @@ object PickImplmessagePartialPic {
     
     inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    inline def setMessage(value: String & js.UndefOr[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     inline def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
     

@@ -5,7 +5,7 @@ import typings.react.mod.Component
 import typings.react.mod.Key
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
-import typings.reactNative.anon.End
+import typings.reactNative.anon.Start
 import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
@@ -29,7 +29,6 @@ import typings.reactNative.mod.TextInput
 import typings.reactNative.mod.TextInputChangeEventData
 import typings.reactNative.mod.TextInputContentSizeChangeEventData
 import typings.reactNative.mod.TextInputEndEditingEventData
-import typings.reactNative.mod.TextInputFocusEventData
 import typings.reactNative.mod.TextInputKeyPressEventData
 import typings.reactNative.mod.TextInputScrollEventData
 import typings.reactNative.mod.TextInputSelectionChangeEventData
@@ -310,9 +309,7 @@ trait platformiosandroiddefault extends StObject {
     */
   var blurOnSubmit: js.UndefOr[Boolean] = js.native
   
-  var cancelButtonProps: js.Object & js.UndefOr[PartialTouchableOpacityPr] = js.native
-  
-  var cancelButtonTitle: String & js.UndefOr[String] = js.native
+  var cancelButtonTitle: String = js.native
   
   var cancelIcon: js.UndefOr[IconNode] = js.native
   
@@ -329,7 +326,7 @@ trait platformiosandroiddefault extends StObject {
     */
   var clearButtonMode: js.UndefOr[never | `while-editing` | `unless-editing` | always] = js.native
   
-  var clearIcon: js.UndefOr[IconNode] & Name = js.native
+  var clearIcon: js.UndefOr[IconNode] = js.native
   
   /**
     * If true, clears the text field automatically when editing begins
@@ -524,7 +521,7 @@ trait platformiosandroiddefault extends StObject {
   
   var lightTheme: Boolean = js.native
   
-  var loadingProps: js.UndefOr[ActivityIndicatorProps] & js.Object = js.native
+  var loadingProps: js.UndefOr[ActivityIndicatorProps] = js.native
   
   /**
     * Specifies largest possible scale a font can reach when allowFontScaling is enabled. Possible values:
@@ -594,7 +591,7 @@ trait platformiosandroiddefault extends StObject {
     * Callback that is called when the text input is blurred
     */
   @JSName("onBlur")
-  var onBlur_Fplatformiosandroiddefault: js.UndefOr[js.Function0[Unit]] & (js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TextInputFocusEventData], Unit]]) = js.native
+  var onBlur_Fplatformiosandroiddefault: js.UndefOr[js.Function0[Unit]] = js.native
   
   def onCancel(): Any = js.native
   @JSName("onCancel")
@@ -638,7 +635,7 @@ trait platformiosandroiddefault extends StObject {
     * Callback that is called when the text input is focused
     */
   @JSName("onFocus")
-  var onFocus_Fplatformiosandroiddefault: js.UndefOr[js.Function0[Unit]] & (js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TextInputFocusEventData], Unit]]) = js.native
+  var onFocus_Fplatformiosandroiddefault: js.UndefOr[js.Function0[Unit]] = js.native
   
   /**
     * Callback that is called when a key is pressed.
@@ -924,7 +921,7 @@ trait platformiosandroiddefault extends StObject {
     */
   var scrollEnabled: js.UndefOr[Boolean] = js.native
   
-  var searchIcon: js.UndefOr[IconNode] & Name = js.native
+  var searchIcon: js.UndefOr[IconNode] = js.native
   
   /**
     * If true, the text input obscures the text entered so that sensitive text like passwords stay secure.
@@ -941,7 +938,7 @@ trait platformiosandroiddefault extends StObject {
     * The start and end of the text input's selection. Set start and end to
     * the same value to position the cursor.
     */
-  var selection: js.UndefOr[End] = js.native
+  var selection: js.UndefOr[Start] = js.native
   
   /**
     * The highlight (and cursor on ios) color of the text input
@@ -965,9 +962,9 @@ trait platformiosandroiddefault extends StObject {
     */
   var shouldRasterizeIOS: js.UndefOr[Boolean] = js.native
   
-  var showCancel: Boolean & js.UndefOr[Boolean] = js.native
+  var showCancel: Boolean = js.native
   
-  var showLoading: js.UndefOr[Boolean] & Boolean = js.native
+  var showLoading: js.UndefOr[Boolean] = js.native
   
   /**
     * When false, it will prevent the soft keyboard from showing when the field is focused. The default value is true
@@ -1105,5 +1102,5 @@ trait platformiosandroiddefault extends StObject {
     * In addition to simply setting the same value, either set editable={false},
     * or set/update maxLength to prevent unwanted edits without flicker.
     */
-  var value: String & js.UndefOr[String] = js.native
+  var value: String = js.native
 }

@@ -10,7 +10,7 @@ trait PickImplcontentPartialPic
   extends StObject
      with Param {
   
-  var content: String & js.UndefOr[String]
+  var content: String
   
   var dimmable: js.UndefOr[String] = js.undefined
   
@@ -18,14 +18,14 @@ trait PickImplcontentPartialPic
 }
 object PickImplcontentPartialPic {
   
-  inline def apply(content: String & js.UndefOr[String]): PickImplcontentPartialPic = {
+  inline def apply(content: String): PickImplcontentPartialPic = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplcontentPartialPic]
   }
   
   extension [Self <: PickImplcontentPartialPic](x: Self) {
     
-    inline def setContent(value: String & js.UndefOr[String]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setDimmable(value: String): Self = StObject.set(x, "dimmable", value.asInstanceOf[js.Any])
     

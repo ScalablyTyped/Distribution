@@ -1,6 +1,5 @@
 package typings.angularCore.anon
 
-import typings.angularCore.angularCoreBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ trait InjectOptionsoptionalfals extends StObject {
   /**
     * Use optional injection, and return `null` if the requested token is not found.
     */
-  var optional: js.UndefOr[Boolean] & js.UndefOr[`false`]
+  var optional: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Only query the current injector for the token, and don't fall back to the parent injector if
@@ -32,8 +31,8 @@ trait InjectOptionsoptionalfals extends StObject {
 }
 object InjectOptionsoptionalfals {
   
-  inline def apply(optional: js.UndefOr[Boolean] & js.UndefOr[`false`]): InjectOptionsoptionalfals = {
-    val __obj = js.Dynamic.literal(optional = optional.asInstanceOf[js.Any])
+  inline def apply(): InjectOptionsoptionalfals = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InjectOptionsoptionalfals]
   }
   
@@ -43,7 +42,9 @@ object InjectOptionsoptionalfals {
     
     inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    inline def setOptional(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    
+    inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
     
     inline def setSelf(value: Boolean): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
     

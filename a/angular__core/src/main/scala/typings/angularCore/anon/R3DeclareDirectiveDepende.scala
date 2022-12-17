@@ -17,7 +17,7 @@ trait R3DeclareDirectiveDepende
   
   var inputs: js.UndefOr[js.Array[String]] = js.undefined
   
-  var kind: (js.UndefOr[directive | component]) & String
+  var kind: js.UndefOr[directive | component] = js.undefined
   
   var outputs: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -27,12 +27,8 @@ trait R3DeclareDirectiveDepende
 }
 object R3DeclareDirectiveDepende {
   
-  inline def apply(
-    kind: (js.UndefOr[directive | component]) & String,
-    selector: String,
-    `type`: OpaqueValue | js.Function0[OpaqueValue]
-  ): R3DeclareDirectiveDepende = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
+  inline def apply(selector: String, `type`: OpaqueValue | js.Function0[OpaqueValue]): R3DeclareDirectiveDepende = {
+    val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[R3DeclareDirectiveDepende]
   }
@@ -51,7 +47,9 @@ object R3DeclareDirectiveDepende {
     
     inline def setInputsVarargs(value: String*): Self = StObject.set(x, "inputs", js.Array(value*))
     
-    inline def setKind(value: (js.UndefOr[directive | component]) & String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: directive | component): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setOutputs(value: js.Array[String]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     

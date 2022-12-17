@@ -8,11 +8,11 @@ trait PathDirOwner extends StObject {
   
   var path: DirOwner
   
-  var query: `107`
+  var query: `188`
 }
 object PathDirOwner {
   
-  inline def apply(path: DirOwner, query: `107`): PathDirOwner = {
+  inline def apply(path: DirOwner, query: `188`): PathDirOwner = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathDirOwner]
   }
@@ -21,6 +21,6 @@ object PathDirOwner {
     
     inline def setPath(value: DirOwner): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setQuery(value: `107`): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: `188`): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }
 }

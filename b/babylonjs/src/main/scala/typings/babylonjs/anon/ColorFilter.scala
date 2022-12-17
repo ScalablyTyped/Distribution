@@ -1,7 +1,7 @@
 package typings.babylonjs.anon
 
-import typings.babylonjs.BABYLON.Color3
-import typings.babylonjs.BABYLON.GroundMesh
+import typings.babylonjs.mathsMathDotcolorMod.Color3
+import typings.babylonjs.meshesGroundMeshMod.GroundMesh
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

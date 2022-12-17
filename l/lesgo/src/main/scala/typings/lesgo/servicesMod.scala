@@ -1,18 +1,10 @@
 package typings.lesgo
 
-import typings.lesgo.servicesJwtserviceMod.Config
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object servicesMod {
-  
-  @JSImport("lesgo/services", JSImport.Default)
-  @js.native
-  open class default[TDecoded /* <: js.Object | String */] protected ()
-    extends typings.lesgo.servicesJwtserviceMod.default[TDecoded] {
-    def this(token: String, config: Config[TDecoded]) = this()
-  }
   
   @JSImport("lesgo/services", "LogLevels")
   @js.native

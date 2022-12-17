@@ -1,33 +1,35 @@
 package typings.pubnub.anon
 
-import typings.pubnub.pubnubStrings.channel
-import typings.pubnub.pubnubStrings.delete
+import typings.pubnub.mod.ObjectCustom
+import typings.pubnub.mod.UUIDMetadataObject
+import typings.pubnub.pubnubStrings.set
+import typings.pubnub.pubnubStrings.uuid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Event extends StObject {
+trait Event[UUIDCustom /* <: ObjectCustom */] extends StObject {
   
-  var data: Id
+  var data: UUIDMetadataObject[UUIDCustom]
   
-  var event: delete
+  var event: set
   
-  var `type`: channel
+  var `type`: uuid
 }
 object Event {
   
-  inline def apply(data: Id): Event = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = "delete")
-    __obj.updateDynamic("type")("channel")
-    __obj.asInstanceOf[Event]
+  inline def apply[UUIDCustom /* <: ObjectCustom */](data: UUIDMetadataObject[UUIDCustom]): Event[UUIDCustom] = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = "set")
+    __obj.updateDynamic("type")("uuid")
+    __obj.asInstanceOf[Event[UUIDCustom]]
   }
   
-  extension [Self <: Event](x: Self) {
+  extension [Self <: Event[?], UUIDCustom /* <: ObjectCustom */](x: Self & Event[UUIDCustom]) {
     
-    inline def setData(value: Id): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: UUIDMetadataObject[UUIDCustom]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setEvent(value: delete): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: set): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    inline def setType(value: channel): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: uuid): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,7 +1,7 @@
 package typings.baseui.datepickerTypesMod
 
+import typings.baseui.anon.`10`
 import typings.baseui.anon.`2`
-import typings.baseui.anon.`9`
 import typings.baseui.datepickerUtilsTypesMod.DateIOAdapter
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
@@ -18,7 +18,7 @@ trait StatefulContainerProps[Props, T] extends StObject {
   var initialState: js.UndefOr[ContainerState[T]] = js.undefined
   
   /** When single picker, fn is called when date/time is selected. When range picker, fn is called when both start and end are selected. */
-  var onChange: js.UndefOr[js.Function1[/* a */ `9`[T], Any]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* a */ `10`[T], Any]] = js.undefined
   
   /** When single picker, fn is called when date/time is selected. When range picker, fn is called when either start or end date changes. */
   var onRangeChange: js.UndefOr[js.Function1[/* a */ `2`[T], Any]] = js.undefined
@@ -48,7 +48,7 @@ object StatefulContainerProps {
     
     inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
     
-    inline def setOnChange(value: /* a */ `9`[T] => Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: /* a */ `10`[T] => Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     

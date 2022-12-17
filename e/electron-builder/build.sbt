@@ -1,24 +1,24 @@
 organization := "org.scalablytyped"
 name := "electron-builder"
-version := "23.6.0-9b0c47"
+version := "23.6.0-086dc7"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "app-builder-lib" % "23.6.0-075afa",
-  "org.scalablytyped" %%% "builder-util" % "23.6.0-ddd4de",
-  "org.scalablytyped" %%% "builder-util-runtime" % "9.1.1-08a8ed",
-  "org.scalablytyped" %%% "debug" % "4.1-dt-20211202Z-46fecc",
-  "org.scalablytyped" %%% "electron-osx-sign" % "0.6.0-bf05f7",
-  "org.scalablytyped" %%% "electron-publish" % "23.6.0-fd88a4",
-  "org.scalablytyped" %%% "fs-extra" % "9.0-dt-20211202Z-2c3f54",
-  "org.scalablytyped" %%% "lazy-val" % "1.0.5-fd205b",
+  "org.scalablytyped" %%% "app-builder-lib" % "23.6.0-2d99b1",
+  "org.scalablytyped" %%% "builder-util" % "23.6.0-b6b267",
+  "org.scalablytyped" %%% "builder-util-runtime" % "9.1.1-3233a7",
+  "org.scalablytyped" %%% "debug" % "4.1-dt-20211202Z-00fd1d",
+  "org.scalablytyped" %%% "electron-osx-sign" % "0.6.0-86bf34",
+  "org.scalablytyped" %%% "electron-publish" % "23.6.0-e5ceff",
+  "org.scalablytyped" %%% "fs-extra" % "9.0-dt-20211202Z-7cad88",
+  "org.scalablytyped" %%% "lazy-val" % "1.0.5-44eadb",
   "org.scalablytyped" %%% "ms" % "v0.7.1-dt-20220818Z-c5fb11",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-4346d8",
-  "org.scalablytyped" %%% "std" % "4.9-c133ce",
-  "org.scalablytyped" %%% "temp-file" % "3.4.0-ad96d4",
-  "org.scalablytyped" %%% "yargs" % "17.0-dt-20221114Z-968869",
-  "org.scalablytyped" %%% "yargs-parser" % "21.0-dt-20220624Z-42d3da")
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-def929",
+  "org.scalablytyped" %%% "std" % "4.9-5f989f",
+  "org.scalablytyped" %%% "temp-file" % "3.4.0-bb7ae5",
+  "org.scalablytyped" %%% "yargs" % "17.0-dt-20221114Z-f77e52",
+  "org.scalablytyped" %%% "yargs-parser" % "21.0-dt-20220624Z-8e893f")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

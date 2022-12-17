@@ -1,7 +1,7 @@
 package typings.ckeditorCkeditor5Engine
 
-import typings.ckeditorCkeditor5Engine.anon.Root
-import typings.ckeditorCkeditor5Engine.anon.`13`
+import typings.ckeditorCkeditor5Engine.anon.BaseVersionKey
+import typings.ckeditorCkeditor5Engine.anon.`12`
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.addRootAttribute
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.changeRootAttribute
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.removeRootAttribute
@@ -92,7 +92,7 @@ object srcModelOperationRootattributeoperationMod {
       * Custom toJSON method to solve child-parent circular dependencies.
       */
     /* CompleteClass */
-    override def toJSON(): `13` = js.native
+    override def toJSON(): `12` = js.native
     
     /**
       * Operation type.
@@ -117,7 +117,7 @@ object srcModelOperationRootattributeoperationMod {
     /**
       * Creates RootAttributeOperation object from deserilized object, i.e. from parsed JSON string.
       */
-    inline def fromJSON(json: Root, document: typings.ckeditorCkeditor5Engine.srcModelDocumentMod.default): RootAttributeOperation[Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[RootAttributeOperation[Any, Any]]
+    inline def fromJSON(json: BaseVersionKey, document: typings.ckeditorCkeditor5Engine.srcModelDocumentMod.default): RootAttributeOperation[Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[RootAttributeOperation[Any, Any]]
   }
   
   trait RootAttributeOperation[O, N]
@@ -169,7 +169,7 @@ object srcModelOperationRootattributeoperationMod {
       newValue: N,
       oldValue: O,
       root: typings.ckeditorCkeditor5Engine.srcModelRootelementMod.default,
-      toJSON: () => `13`,
+      toJSON: () => `12`,
       `type`: addRootAttribute | removeRootAttribute | changeRootAttribute
     ): RootAttributeOperation[O, N] = {
       val __obj = js.Dynamic.literal(getReversed = js.Any.fromFunction0(getReversed), isDocumentOperation = isDocumentOperation.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), baseVersion = null, batch = null)

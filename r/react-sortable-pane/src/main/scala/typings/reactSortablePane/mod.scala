@@ -6,6 +6,7 @@ import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactElement
 import typings.react.mod.TouchEvent
+import typings.react.mod.global.JSX.Element
 import typings.reactMotion.mod.SpringHelperConfig
 import typings.reactSortablePane.anon.ClassName
 import typings.reactSortablePane.anon.Next
@@ -13,7 +14,6 @@ import typings.reactSortablePane.anon.PageX
 import typings.reactSortablePane.libPaneMod.PaneProps
 import typings.reactSortablePane.reactSortablePaneStrings.horizontal
 import typings.reactSortablePane.reactSortablePaneStrings.vertical
-import typings.std.Element
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.ResizeObserver
@@ -47,95 +47,10 @@ object mod {
     inline def defaultProps_=(x: ClassName): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.reactSortablePane.reactSortablePaneStrings.horizontal
-    - typings.reactSortablePane.reactSortablePaneStrings.vertical
-  */
-  trait PaneDirection extends StObject
-  object PaneDirection {
-    
-    inline def horizontal: typings.reactSortablePane.reactSortablePaneStrings.horizontal = "horizontal".asInstanceOf[typings.reactSortablePane.reactSortablePaneStrings.horizontal]
-    
-    inline def vertical: typings.reactSortablePane.reactSortablePaneStrings.vertical = "vertical".asInstanceOf[typings.reactSortablePane.reactSortablePaneStrings.vertical]
-  }
-  
-  type PaneKey = String | Double | Null
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.reactSortablePane.reactSortablePaneStrings.add
-    - typings.reactSortablePane.reactSortablePaneStrings.remove
-  */
-  trait PaneMode extends StObject
-  object PaneMode {
-    
-    inline def add: typings.reactSortablePane.reactSortablePaneStrings.add = "add".asInstanceOf[typings.reactSortablePane.reactSortablePaneStrings.add]
-    
-    inline def remove: typings.reactSortablePane.reactSortablePaneStrings.remove = "remove".asInstanceOf[typings.reactSortablePane.reactSortablePaneStrings.remove]
-  }
-  
-  trait PaneProperty extends StObject {
-    
-    var key: PaneKey
-    
-    var ref: Element | Null
-  }
-  object PaneProperty {
-    
-    inline def apply(): PaneProperty = {
-      val __obj = js.Dynamic.literal(key = null, ref = null)
-      __obj.asInstanceOf[PaneProperty]
-    }
-    
-    extension [Self <: PaneProperty](x: Self) {
-      
-      inline def setKey(value: PaneKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
-      
-      inline def setKeyNull: Self = StObject.set(x, "key", null)
-      
-      inline def setRef(value: Element): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
-      
-      inline def setRefNull: Self = StObject.set(x, "ref", null)
-    }
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.reactSortablePane.reactSortablePaneStrings.x
-    - typings.reactSortablePane.reactSortablePaneStrings.y
-    - typings.reactSortablePane.reactSortablePaneStrings.xy
-  */
-  trait PaneResizeDirection extends StObject
-  object PaneResizeDirection {
-    
-    inline def x: typings.reactSortablePane.reactSortablePaneStrings.x = "x".asInstanceOf[typings.reactSortablePane.reactSortablePaneStrings.x]
-    
-    inline def xy: typings.reactSortablePane.reactSortablePaneStrings.xy = "xy".asInstanceOf[typings.reactSortablePane.reactSortablePaneStrings.xy]
-    
-    inline def y: typings.reactSortablePane.reactSortablePaneStrings.y = "y".asInstanceOf[typings.reactSortablePane.reactSortablePaneStrings.y]
-  }
-  
-  trait PaneSize extends StObject {
-    
-    var height: Double
-    
-    var width: Double
-  }
-  object PaneSize {
-    
-    inline def apply(height: Double, width: Double): PaneSize = {
-      val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-      __obj.asInstanceOf[PaneSize]
-    }
-    
-    extension [Self <: PaneSize](x: Self) {
-      
-      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
-      
-      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-    }
-  }
-  
+  @JSImport("react-sortable-pane", "SortablePane")
   @js.native
-  trait SortablePane extends Component[SortablePaneProps, State, Any] {
+  open class SortablePane protected () extends Component[SortablePaneProps, State, Any] {
+    def this(props: SortablePaneProps) = this()
     
     def addPane(): Unit = js.native
     
@@ -252,11 +167,159 @@ object mod {
     
     def removePane(): Unit = js.native
     
-    def renderPanes(): js.Array[typings.react.mod.global.JSX.Element] = js.native
+    def renderPanes(): js.Array[Element] = js.native
     
     var resizeObserver: ResizeObserver = js.native
     
     var sizePropsUpdated: Boolean = js.native
+  }
+  object SortablePane {
+    
+    /* static member */
+    object defaultProps {
+      
+      @JSImport("react-sortable-pane", "SortablePane.defaultProps")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      @JSImport("react-sortable-pane", "SortablePane.defaultProps.children")
+      @js.native
+      def children: js.Array[scala.Nothing] = js.native
+      inline def children_=(x: js.Array[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-sortable-pane", "SortablePane.defaultProps.className")
+      @js.native
+      def className: String = js.native
+      inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-sortable-pane", "SortablePane.defaultProps.direction")
+      @js.native
+      def direction: String = js.native
+      inline def direction_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("direction")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-sortable-pane", "SortablePane.defaultProps.disableEffect")
+      @js.native
+      def disableEffect: Boolean = js.native
+      inline def disableEffect_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disableEffect")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-sortable-pane", "SortablePane.defaultProps.isSortable")
+      @js.native
+      def isSortable: Boolean = js.native
+      inline def isSortable_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isSortable")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-sortable-pane", "SortablePane.defaultProps.margin")
+      @js.native
+      def margin: Double = js.native
+      inline def margin_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("margin")(x.asInstanceOf[js.Any])
+      
+      inline def onClick(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("onClick")().asInstanceOf[Null]
+      
+      inline def onDragStart(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("onDragStart")().asInstanceOf[Null]
+      
+      inline def onDragStop(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("onDragStop")().asInstanceOf[Null]
+      
+      inline def onOrderChange(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("onOrderChange")().asInstanceOf[Null]
+      
+      inline def onResize(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("onResize")().asInstanceOf[Null]
+      
+      inline def onResizeStart(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("onResizeStart")().asInstanceOf[Null]
+      
+      inline def onResizeStop(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("onResizeStop")().asInstanceOf[Null]
+      
+      inline def onTouchStart(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("onTouchStart")().asInstanceOf[Null]
+      
+      @JSImport("react-sortable-pane", "SortablePane.defaultProps.springConfig")
+      @js.native
+      def springConfig: SpringHelperConfig = js.native
+      inline def springConfig_=(x: SpringHelperConfig): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("springConfig")(x.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.reactSortablePane.reactSortablePaneStrings.horizontal
+    - typings.reactSortablePane.reactSortablePaneStrings.vertical
+  */
+  trait PaneDirection extends StObject
+  object PaneDirection {
+    
+    inline def horizontal: typings.reactSortablePane.reactSortablePaneStrings.horizontal = "horizontal".asInstanceOf[typings.reactSortablePane.reactSortablePaneStrings.horizontal]
+    
+    inline def vertical: typings.reactSortablePane.reactSortablePaneStrings.vertical = "vertical".asInstanceOf[typings.reactSortablePane.reactSortablePaneStrings.vertical]
+  }
+  
+  type PaneKey = String | Double | Null
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.reactSortablePane.reactSortablePaneStrings.add
+    - typings.reactSortablePane.reactSortablePaneStrings.remove
+  */
+  trait PaneMode extends StObject
+  object PaneMode {
+    
+    inline def add: typings.reactSortablePane.reactSortablePaneStrings.add = "add".asInstanceOf[typings.reactSortablePane.reactSortablePaneStrings.add]
+    
+    inline def remove: typings.reactSortablePane.reactSortablePaneStrings.remove = "remove".asInstanceOf[typings.reactSortablePane.reactSortablePaneStrings.remove]
+  }
+  
+  trait PaneProperty extends StObject {
+    
+    var key: PaneKey
+    
+    var ref: typings.std.Element | Null
+  }
+  object PaneProperty {
+    
+    inline def apply(): PaneProperty = {
+      val __obj = js.Dynamic.literal(key = null, ref = null)
+      __obj.asInstanceOf[PaneProperty]
+    }
+    
+    extension [Self <: PaneProperty](x: Self) {
+      
+      inline def setKey(value: PaneKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setKeyNull: Self = StObject.set(x, "key", null)
+      
+      inline def setRef(value: typings.std.Element): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+    }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.reactSortablePane.reactSortablePaneStrings.x
+    - typings.reactSortablePane.reactSortablePaneStrings.y
+    - typings.reactSortablePane.reactSortablePaneStrings.xy
+  */
+  trait PaneResizeDirection extends StObject
+  object PaneResizeDirection {
+    
+    inline def x: typings.reactSortablePane.reactSortablePaneStrings.x = "x".asInstanceOf[typings.reactSortablePane.reactSortablePaneStrings.x]
+    
+    inline def xy: typings.reactSortablePane.reactSortablePaneStrings.xy = "xy".asInstanceOf[typings.reactSortablePane.reactSortablePaneStrings.xy]
+    
+    inline def y: typings.reactSortablePane.reactSortablePaneStrings.y = "y".asInstanceOf[typings.reactSortablePane.reactSortablePaneStrings.y]
+  }
+  
+  trait PaneSize extends StObject {
+    
+    var height: Double
+    
+    var width: Double
+  }
+  object PaneSize {
+    
+    inline def apply(height: Double, width: Double): PaneSize = {
+      val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PaneSize]
+    }
+    
+    extension [Self <: PaneSize](x: Self) {
+      
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    }
   }
   
   trait SortablePaneProps extends StObject {

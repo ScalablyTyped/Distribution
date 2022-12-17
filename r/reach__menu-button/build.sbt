@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "reach__menu-button"
-version := "0.18.0-e711ff"
+version := "0.18.0-0c1fb2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "csstype" % "3.1.1-ab3df7",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-53873f",
-  "org.scalablytyped" %%% "reach__polymorphic" % "0.18.0-09a4d0",
-  "org.scalablytyped" %%% "reach__popover" % "0.18.0-422817",
-  "org.scalablytyped" %%% "reach__rect" % "0.18.0-7eab93",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-9ff1b2",
-  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-ea4558",
-  "org.scalablytyped" %%% "std" % "4.9-c133ce")
+  "org.scalablytyped" %%% "csstype" % "3.1.1-4db30e",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-8a1cd9",
+  "org.scalablytyped" %%% "reach__polymorphic" % "0.18.0-35a7c5",
+  "org.scalablytyped" %%% "reach__popover" % "0.18.0-1a0458",
+  "org.scalablytyped" %%% "reach__rect" % "0.18.0-654243",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-cf549b",
+  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-6206c7",
+  "org.scalablytyped" %%% "std" % "4.9-5f989f")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

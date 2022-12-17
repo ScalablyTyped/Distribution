@@ -115,22 +115,30 @@ object anon {
   
   trait EndTime extends StObject {
     
-    var endTime: Moment
+    var endTime: Double
     
-    var startTime: Moment
+    var labelWidth: Double
+    
+    var left: Double
+    
+    var startTime: Double
   }
   object EndTime {
     
-    inline def apply(endTime: Moment, startTime: Moment): EndTime = {
-      val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
+    inline def apply(endTime: Double, labelWidth: Double, left: Double, startTime: Double): EndTime = {
+      val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], labelWidth = labelWidth.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
       __obj.asInstanceOf[EndTime]
     }
     
     extension [Self <: EndTime](x: Self) {
       
-      inline def setEndTime(value: Moment): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+      inline def setEndTime(value: Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       
-      inline def setStartTime(value: Moment): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setLabelWidth(value: Double): Self = StObject.set(x, "labelWidth", value.asInstanceOf[js.Any])
+      
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      
+      inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     }
   }
   
@@ -239,35 +247,6 @@ object anon {
     }
   }
   
-  trait LabelWidth extends StObject {
-    
-    var endTime: Double
-    
-    var labelWidth: Double
-    
-    var left: Double
-    
-    var startTime: Double
-  }
-  object LabelWidth {
-    
-    inline def apply(endTime: Double, labelWidth: Double, left: Double, startTime: Double): LabelWidth = {
-      val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], labelWidth = labelWidth.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
-      __obj.asInstanceOf[LabelWidth]
-    }
-    
-    extension [Self <: LabelWidth](x: Self) {
-      
-      inline def setEndTime(value: Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
-      
-      inline def setLabelWidth(value: Double): Self = StObject.set(x, "labelWidth", value.asInstanceOf[js.Any])
-      
-      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
-      
-      inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
-    }
-  }
-  
   /* Inlined std.Required<react-calendar-timeline.react-calendar-timeline.GetIntervalProps> & {  key :string | number} */
   trait RequiredGetIntervalPropsk extends StObject {
     
@@ -300,6 +279,27 @@ object anon {
       inline def setOnClick(value: MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait StartTime extends StObject {
+    
+    var endTime: Moment
+    
+    var startTime: Moment
+  }
+  object StartTime {
+    
+    inline def apply(endTime: Moment, startTime: Moment): StartTime = {
+      val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
+      __obj.asInstanceOf[StartTime]
+    }
+    
+    extension [Self <: StartTime](x: Self) {
+      
+      inline def setEndTime(value: Moment): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+      
+      inline def setStartTime(value: Moment): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     }
   }
   

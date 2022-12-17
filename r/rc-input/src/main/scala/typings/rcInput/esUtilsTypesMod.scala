@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object esUtilsTypesMod {
   
-  type LiteralUnion[T /* <: U */, U] = T | (U & js.Object)
+  type LiteralUnion[T /* <: U */, U] = T | U
 }

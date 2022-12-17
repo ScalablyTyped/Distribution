@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BorderDisabled extends StObject {
   
-  var border: js.UndefOr[Width] = js.undefined
+  var border: js.UndefOr[Radius] = js.undefined
   
   var disabled: js.UndefOr[OpacityOpacityType] = js.undefined
 }
@@ -19,7 +19,7 @@ object BorderDisabled {
   
   extension [Self <: BorderDisabled](x: Self) {
     
-    inline def setBorder(value: Width): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: Radius): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     

@@ -101,7 +101,7 @@ trait PickImplonPartialPickImpl
   
   var namespace: js.UndefOr[String] = js.undefined
   
-  var on: String & js.UndefOr[String]
+  var on: String
   
   var onAdd: js.UndefOr[
     js.ThisFunction3[
@@ -169,7 +169,7 @@ trait PickImplonPartialPickImpl
 }
 object PickImplonPartialPickImpl {
   
-  inline def apply(on: String & js.UndefOr[String]): PickImplonPartialPickImpl = {
+  inline def apply(on: String): PickImplonPartialPickImpl = {
     val __obj = js.Dynamic.literal(on = on.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonPartialPickImpl]
   }
@@ -300,7 +300,7 @@ object PickImplonPartialPickImpl {
     
     inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
-    inline def setOn(value: String & js.UndefOr[String]): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+    inline def setOn(value: String): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     
     inline def setOnAdd(
       value: js.ThisFunction3[

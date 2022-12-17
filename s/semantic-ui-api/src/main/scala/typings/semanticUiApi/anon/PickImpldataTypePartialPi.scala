@@ -51,7 +51,7 @@ trait PickImpldataTypePartialPi
   
   var data: js.UndefOr[Any] = js.undefined
   
-  var dataType: (xml | json | jsonp | script | html | text) & (js.UndefOr[xml | json | jsonp | script | html | text])
+  var dataType: xml | json | jsonp | script | html | text
   
   var debug: js.UndefOr[Boolean] = js.undefined
   
@@ -147,9 +147,7 @@ trait PickImpldataTypePartialPi
 }
 object PickImpldataTypePartialPi {
   
-  inline def apply(
-    dataType: (xml | json | jsonp | script | html | text) & (js.UndefOr[xml | json | jsonp | script | html | text])
-  ): PickImpldataTypePartialPi = {
+  inline def apply(dataType: xml | json | jsonp | script | html | text): PickImpldataTypePartialPi = {
     val __obj = js.Dynamic.literal(dataType = dataType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldataTypePartialPi]
   }
@@ -182,9 +180,7 @@ object PickImpldataTypePartialPi {
     
     inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataType(
-      value: (xml | json | jsonp | script | html | text) & (js.UndefOr[xml | json | jsonp | script | html | text])
-    ): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+    inline def setDataType(value: xml | json | jsonp | script | html | text): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     

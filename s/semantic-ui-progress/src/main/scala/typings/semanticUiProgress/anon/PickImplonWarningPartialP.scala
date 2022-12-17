@@ -55,9 +55,7 @@ trait PickImplonWarningPartialP
   
   def onWarning(value: Double, total: Double): Unit
   @JSName("onWarning")
-  var onWarning_Original: (js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]) & (js.UndefOr[
-    js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]
-  ])
+  var onWarning_Original: js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]
   
   var performance: js.UndefOr[Boolean] = js.undefined
   
@@ -83,11 +81,7 @@ trait PickImplonWarningPartialP
 }
 object PickImplonWarningPartialP {
   
-  inline def apply(
-    onWarning: (js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]) & (js.UndefOr[
-      js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]
-    ])
-  ): PickImplonWarningPartialP = {
+  inline def apply(onWarning: js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]): PickImplonWarningPartialP = {
     val __obj = js.Dynamic.literal(onWarning = onWarning.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonWarningPartialP]
   }
@@ -148,11 +142,7 @@ object PickImplonWarningPartialP {
     
     inline def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
     
-    inline def setOnWarning(
-      value: (js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]) & (js.UndefOr[
-          js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]
-        ])
-    ): Self = StObject.set(x, "onWarning", value.asInstanceOf[js.Any])
+    inline def setOnWarning(value: js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]): Self = StObject.set(x, "onWarning", value.asInstanceOf[js.Any])
     
     inline def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
     

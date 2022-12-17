@@ -2,7 +2,6 @@ package typings.esbuildWasm.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.esbuildWasm.esbuildWasmBooleans.`false`
-import typings.esbuildWasm.esbuildWasmBooleans.`true`
 import typings.esbuildWasm.esbuildWasmStrings.`inline`
 import typings.esbuildWasm.esbuildWasmStrings.automatic
 import typings.esbuildWasm.esbuildWasmStrings.both
@@ -138,7 +137,7 @@ trait BuildOptionsmetafiletrueAbsWorkingDir extends StObject {
   var mangleQuoted: js.UndefOr[Boolean] = js.undefined
   
   /** Documentation: https://esbuild.github.io/api/#metafile */
-  var metafile: js.UndefOr[Boolean] & `true`
+  var metafile: js.UndefOr[Boolean] = js.undefined
   
   /** Documentation: https://esbuild.github.io/api/#minify */
   var minify: js.UndefOr[Boolean] = js.undefined
@@ -224,8 +223,8 @@ trait BuildOptionsmetafiletrueAbsWorkingDir extends StObject {
 }
 object BuildOptionsmetafiletrueAbsWorkingDir {
   
-  inline def apply(metafile: js.UndefOr[Boolean] & `true`): BuildOptionsmetafiletrueAbsWorkingDir = {
-    val __obj = js.Dynamic.literal(metafile = metafile.asInstanceOf[js.Any])
+  inline def apply(): BuildOptionsmetafiletrueAbsWorkingDir = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuildOptionsmetafiletrueAbsWorkingDir]
   }
   
@@ -387,7 +386,9 @@ object BuildOptionsmetafiletrueAbsWorkingDir {
     
     inline def setMangleQuotedUndefined: Self = StObject.set(x, "mangleQuoted", js.undefined)
     
-    inline def setMetafile(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "metafile", value.asInstanceOf[js.Any])
+    inline def setMetafile(value: Boolean): Self = StObject.set(x, "metafile", value.asInstanceOf[js.Any])
+    
+    inline def setMetafileUndefined: Self = StObject.set(x, "metafile", js.undefined)
     
     inline def setMinify(value: Boolean): Self = StObject.set(x, "minify", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,7 @@ object Style {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setChildrenVarargs(value: (String | (Cid & js.Object))*): Self = StObject.set(x, "children", js.Array(value*))
+    inline def setChildrenVarargs(value: (String | Cid)*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setImage(value: ImageValue): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

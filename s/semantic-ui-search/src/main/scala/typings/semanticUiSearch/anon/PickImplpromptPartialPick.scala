@@ -12,7 +12,7 @@ trait PickImplpromptPartialPick
   
   var category: js.UndefOr[String] = js.undefined
   
-  var prompt: String & js.UndefOr[String]
+  var prompt: String
   
   var result: js.UndefOr[String] = js.undefined
   
@@ -22,7 +22,7 @@ trait PickImplpromptPartialPick
 }
 object PickImplpromptPartialPick {
   
-  inline def apply(prompt: String & js.UndefOr[String]): PickImplpromptPartialPick = {
+  inline def apply(prompt: String): PickImplpromptPartialPick = {
     val __obj = js.Dynamic.literal(prompt = prompt.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplpromptPartialPick]
   }
@@ -33,7 +33,7 @@ object PickImplpromptPartialPick {
     
     inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
-    inline def setPrompt(value: String & js.UndefOr[String]): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+    inline def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
     
     inline def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     

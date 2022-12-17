@@ -1,6 +1,5 @@
 package typings.angularCompilerCli.anon
 
-import typings.typescript.mod.ArrayLiteralExpression
 import typings.typescript.mod.Expression
 import typings.typescript.mod.LeftHandSideExpression
 import typings.typescript.mod.ModifierLike
@@ -10,7 +9,6 @@ import typings.typescript.mod.NodeFlags
 import typings.typescript.mod.QuestionDotToken
 import typings.typescript.mod.SourceFile
 import typings.typescript.mod.SourceFileLike
-import typings.typescript.mod.StringLiteral
 import typings.typescript.mod.SyntaxKind.CallExpression
 import typings.typescript.mod.TypeNode
 import org.scalablytyped.runtime.StObject
@@ -31,7 +29,7 @@ trait CallExpressionargumentsArArguments extends StObject {
   
   var _updateExpressionBrand: Any = js.native
   
-  val arguments: NodeArray[Expression] & (js.Tuple3[ArrayLiteralExpression, StringLiteral, StringLiteral]) = js.native
+  val arguments: NodeArray[Expression] = js.native
   
   /**
     * @deprecated `decorators` has been removed from `Node` and merged with `modifiers` on the `Node` subtypes that support them.

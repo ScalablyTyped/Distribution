@@ -8,11 +8,11 @@ trait ParametersQueryAfterBefore extends StObject {
   
   var parameters: QueryAfterBefore
   
-  var responses: `200Content265`
+  var responses: `200Content415`
 }
 object ParametersQueryAfterBefore {
   
-  inline def apply(parameters: QueryAfterBefore, responses: `200Content265`): ParametersQueryAfterBefore = {
+  inline def apply(parameters: QueryAfterBefore, responses: `200Content415`): ParametersQueryAfterBefore = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersQueryAfterBefore]
   }
@@ -21,6 +21,6 @@ object ParametersQueryAfterBefore {
     
     inline def setParameters(value: QueryAfterBefore): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content265`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200Content415`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

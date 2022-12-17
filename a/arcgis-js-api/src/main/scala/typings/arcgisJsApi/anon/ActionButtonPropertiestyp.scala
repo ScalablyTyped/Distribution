@@ -63,7 +63,7 @@ trait ActionButtonPropertiestyp extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionBase.html#type)
     */
-  var `type`: (js.UndefOr[button | slider | toggle]) & button
+  var `type`: js.UndefOr[button | slider | toggle] = js.undefined
   
   /**
     * Indicates if the action is visible.
@@ -76,9 +76,8 @@ trait ActionButtonPropertiestyp extends StObject {
 }
 object ActionButtonPropertiestyp {
   
-  inline def apply(`type`: (js.UndefOr[button | slider | toggle]) & button): ActionButtonPropertiestyp = {
+  inline def apply(): ActionButtonPropertiestyp = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionButtonPropertiestyp]
   }
   
@@ -108,7 +107,9 @@ object ActionButtonPropertiestyp {
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setType(value: (js.UndefOr[button | slider | toggle]) & button): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: button | slider | toggle): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     

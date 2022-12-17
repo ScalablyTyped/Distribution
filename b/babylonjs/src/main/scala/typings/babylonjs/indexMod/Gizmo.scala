@@ -1,7 +1,6 @@
 package typings.babylonjs.indexMod
 
 import typings.babylonjs.gizmosGizmoMod.GizmoAxisCache
-import typings.babylonjs.meshesMeshMod.Mesh
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -33,7 +32,7 @@ object Gizmo {
     */
   inline def GizmoAxisPointerObserver(
     gizmoLayer: typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer,
-    gizmoAxisCache: Map[Mesh, GizmoAxisCache]
+    gizmoAxisCache: Map[typings.babylonjs.meshesMeshMod.Mesh, GizmoAxisCache]
   ): typings.babylonjs.miscObservableMod.Observer[typings.babylonjs.eventsPointerEventsMod.PointerInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("GizmoAxisPointerObserver")(gizmoLayer.asInstanceOf[js.Any], gizmoAxisCache.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.miscObservableMod.Observer[typings.babylonjs.eventsPointerEventsMod.PointerInfo]]
   
   /**

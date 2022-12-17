@@ -2,6 +2,8 @@ package typings.lruMemoizer
 
 import typings.lruCache.mod.DeprecatedOptions
 import typings.lruCache.mod.SharedOptions
+import typings.lruMemoizer.libSyncMod.IMemoizedSync
+import typings.lruMemoizer.libSyncMod.SyncParams
 import typings.lruMemoizer.libUtilMod.IBypassFunction
 import typings.lruMemoizer.libUtilMod.IHashingFunction
 import typings.lruMemoizer.libUtilMod.IMaxAgeFunction
@@ -12,6 +14,18 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libAsyncMod {
+  
+  object asyncMemoizer {
+    
+    inline def apply[T1, T2, T3, T4, T5, T6, TResult](options: AsyncParams[T1, T2, T3, T4, T5, T6, TResult]): IMemoized[T1, T2, T3, T4, T5, T6, TResult] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[IMemoized[T1, T2, T3, T4, T5, T6, TResult]]
+    
+    @JSImport("lru-memoizer/lib/async", "asyncMemoizer")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* was `typeof syncMemoizer` */
+    inline def sync[T1, T2, T3, T4, T5, T6, TResult](options: SyncParams[T1, T2, T3, T4, T5, T6, TResult]): IMemoizedSync[T1, T2, T3, T4, T5, T6, TResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[IMemoizedSync[T1, T2, T3, T4, T5, T6, TResult]]
+  }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.lruMemoizer.libUtilMod.IParamsBase because var conflicts: clone. Inlined hash, hash, hash, hash, hash, hash, hash, hash, hash_Original, bypass, itemMaxAge, itemMaxAge, itemMaxAge, itemMaxAge, itemMaxAge, itemMaxAge, itemMaxAge, itemMaxAge, itemMaxAge_Original, freeze, disable, queueMaxAge */ trait AsyncParams[T1, T2, T3, T4, T5, T6, TResult]

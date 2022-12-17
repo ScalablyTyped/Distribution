@@ -9,27 +9,29 @@ trait Concurrent extends StObject {
   /**
     * Max concurrent requests.
     */
-  var concurrent: Double
+  var concurrent: js.UndefOr[Double] = js.undefined
   
   /**
-    * event loop delay milliseconds.
+    * maximum event loop delay duration in milliseconds over which incoming requests are rejected with an HTTP Server Timeout (503) response.
+    * Defaults to 0 (no limit).
     */
-  var eventLoopDelay: Double
+  var maxEventLoopDelay: js.UndefOr[Double] = js.undefined
+  
+  /** maximum V8 heap size over which incoming requests are rejected with an HTTP Server Timeout (503) response. Defaults to 0 (no limit). */
+  var maxHeapUsedBytes: js.UndefOr[Double] = js.undefined
   
   /**
-    * V8 heap usage.
+    * maximum process RSS size over which incoming requests are rejected with an HTTP Server Timeout (503) response. Defaults to 0 (no limit).
     */
-  var heapUsed: Double
+  var maxRssBytes: js.UndefOr[Double] = js.undefined
   
-  /**
-    * RSS memory usage.
-    */
-  var rss: Double
+  /** the frequency of sampling in milliseconds. When set to 0, the other load options are ignored. Defaults to 0 (no sampling). */
+  var sampleInterval: js.UndefOr[Double] = js.undefined
 }
 object Concurrent {
   
-  inline def apply(concurrent: Double, eventLoopDelay: Double, heapUsed: Double, rss: Double): Concurrent = {
-    val __obj = js.Dynamic.literal(concurrent = concurrent.asInstanceOf[js.Any], eventLoopDelay = eventLoopDelay.asInstanceOf[js.Any], heapUsed = heapUsed.asInstanceOf[js.Any], rss = rss.asInstanceOf[js.Any])
+  inline def apply(): Concurrent = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Concurrent]
   }
   
@@ -37,10 +39,22 @@ object Concurrent {
     
     inline def setConcurrent(value: Double): Self = StObject.set(x, "concurrent", value.asInstanceOf[js.Any])
     
-    inline def setEventLoopDelay(value: Double): Self = StObject.set(x, "eventLoopDelay", value.asInstanceOf[js.Any])
+    inline def setConcurrentUndefined: Self = StObject.set(x, "concurrent", js.undefined)
     
-    inline def setHeapUsed(value: Double): Self = StObject.set(x, "heapUsed", value.asInstanceOf[js.Any])
+    inline def setMaxEventLoopDelay(value: Double): Self = StObject.set(x, "maxEventLoopDelay", value.asInstanceOf[js.Any])
     
-    inline def setRss(value: Double): Self = StObject.set(x, "rss", value.asInstanceOf[js.Any])
+    inline def setMaxEventLoopDelayUndefined: Self = StObject.set(x, "maxEventLoopDelay", js.undefined)
+    
+    inline def setMaxHeapUsedBytes(value: Double): Self = StObject.set(x, "maxHeapUsedBytes", value.asInstanceOf[js.Any])
+    
+    inline def setMaxHeapUsedBytesUndefined: Self = StObject.set(x, "maxHeapUsedBytes", js.undefined)
+    
+    inline def setMaxRssBytes(value: Double): Self = StObject.set(x, "maxRssBytes", value.asInstanceOf[js.Any])
+    
+    inline def setMaxRssBytesUndefined: Self = StObject.set(x, "maxRssBytes", js.undefined)
+    
+    inline def setSampleInterval(value: Double): Self = StObject.set(x, "sampleInterval", value.asInstanceOf[js.Any])
+    
+    inline def setSampleIntervalUndefined: Self = StObject.set(x, "sampleInterval", js.undefined)
   }
 }

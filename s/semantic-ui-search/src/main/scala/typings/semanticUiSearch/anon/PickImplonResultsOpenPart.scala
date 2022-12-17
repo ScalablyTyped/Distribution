@@ -56,7 +56,7 @@ trait PickImplonResultsOpenPart
   
   def onResultsOpen(): Unit
   @JSName("onResultsOpen")
-  var onResultsOpen_Original: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+  var onResultsOpen_Original: js.ThisFunction0[/* this */ JQuery, Unit]
   
   var onSearchQuery: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* query */ String, Unit]] = js.undefined
   
@@ -94,9 +94,7 @@ trait PickImplonResultsOpenPart
 }
 object PickImplonResultsOpenPart {
   
-  inline def apply(
-    onResultsOpen: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-  ): PickImplonResultsOpenPart = {
+  inline def apply(onResultsOpen: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonResultsOpenPart = {
     val __obj = js.Dynamic.literal(onResultsOpen = onResultsOpen.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonResultsOpenPart]
   }
@@ -169,9 +167,7 @@ object PickImplonResultsOpenPart {
     
     inline def setOnResultsCloseUndefined: Self = StObject.set(x, "onResultsClose", js.undefined)
     
-    inline def setOnResultsOpen(
-      value: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-    ): Self = StObject.set(x, "onResultsOpen", value.asInstanceOf[js.Any])
+    inline def setOnResultsOpen(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onResultsOpen", value.asInstanceOf[js.Any])
     
     inline def setOnResultsUndefined: Self = StObject.set(x, "onResults", js.undefined)
     

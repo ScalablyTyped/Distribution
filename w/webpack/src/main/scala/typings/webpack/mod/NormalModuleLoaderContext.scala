@@ -46,7 +46,7 @@ trait NormalModuleLoaderContext[OptionsType] extends StObject {
   def getOptions(): OptionsType = js.native
   @JSName("getOptions")
   def getOptions_0(
-    schema: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<webpack.anon.FnCallSchemaOptionsConfiguration>[0] */ js.Any
+    schema: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<webpack.anon.FnCall>[0] */ js.Any
   ): OptionsType = js.native
   
   def getResolve(): FnCallContextRequestCallback = js.native

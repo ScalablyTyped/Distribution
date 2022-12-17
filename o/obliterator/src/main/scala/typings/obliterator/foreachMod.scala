@@ -1,6 +1,7 @@
 package typings.obliterator
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.obliterator.typesMod.Sequence
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,11 @@ object foreachMod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def default[T](iterable: js.Iterable[T], callback: js.Function2[/* item */ T, /* index */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(iterable.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default[T](iterable: js.Iterator[T], callback: js.Function2[/* item */ T, /* index */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(iterable.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default[T](iterable: Sequence[T], callback: js.Function2[/* item */ T, /* index */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(iterable.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default[T](`object`: PlainObject[T], callback: js.Function2[/* value */ T, /* key */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default[K, V](iterable: ForEachTrait[K, V], callback: js.Function2[/* value */ V, /* key */ K, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(iterable.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait ForEachTrait[K, V] extends StObject {
     

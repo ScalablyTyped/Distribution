@@ -1,8 +1,5 @@
 package typings.reactMdForm.anon
 
-import typings.reactMdForm.reactMdFormStrings.mousedown
-import typings.reactMdForm.reactMdFormStrings.mousemove
-import typings.reactMdForm.reactMdFormStrings.mouseup
 import typings.std.DOMHighResTimeStamp
 import typings.std.EventTarget
 import typings.std.Window
@@ -215,7 +212,7 @@ trait MouseEventtypemousedownmo extends StObject {
   
   /** Returns the type of event, e.g. "click", "hashchange", or "submit". */
   /* standard dom */
-  val `type`: String & (mousedown | mousemove | mouseup) = js.native
+  val `type`: String = js.native
   
   /* standard dom */
   val view: Window | Null = js.native

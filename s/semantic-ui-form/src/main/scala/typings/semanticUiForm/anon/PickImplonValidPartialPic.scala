@@ -68,7 +68,7 @@ trait PickImplonValidPartialPic
   
   def onValid(): Unit
   @JSName("onValid")
-  var onValid_Original: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+  var onValid_Original: js.ThisFunction0[/* this */ JQuery, Unit]
   
   var performance: js.UndefOr[Boolean] = js.undefined
   
@@ -94,9 +94,7 @@ trait PickImplonValidPartialPic
 }
 object PickImplonValidPartialPic {
   
-  inline def apply(
-    onValid: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-  ): PickImplonValidPartialPic = {
+  inline def apply(onValid: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonValidPartialPic = {
     val __obj = js.Dynamic.literal(onValid = onValid.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonValidPartialPic]
   }
@@ -176,9 +174,7 @@ object PickImplonValidPartialPic {
     
     inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
-    inline def setOnValid(
-      value: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-    ): Self = StObject.set(x, "onValid", value.asInstanceOf[js.Any])
+    inline def setOnValid(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onValid", value.asInstanceOf[js.Any])
     
     inline def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
     

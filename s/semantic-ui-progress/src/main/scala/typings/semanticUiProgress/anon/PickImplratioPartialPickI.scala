@@ -17,7 +17,7 @@ trait PickImplratioPartialPickI
   
   var percent: js.UndefOr[`false` | String] = js.undefined
   
-  var ratio: (`false` | String) & (js.UndefOr[`false` | String])
+  var ratio: `false` | String
   
   var success: js.UndefOr[`false` | String] = js.undefined
   
@@ -25,7 +25,7 @@ trait PickImplratioPartialPickI
 }
 object PickImplratioPartialPickI {
   
-  inline def apply(ratio: (`false` | String) & (js.UndefOr[`false` | String])): PickImplratioPartialPickI = {
+  inline def apply(ratio: `false` | String): PickImplratioPartialPickI = {
     val __obj = js.Dynamic.literal(ratio = ratio.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplratioPartialPickI]
   }
@@ -44,7 +44,7 @@ object PickImplratioPartialPickI {
     
     inline def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
     
-    inline def setRatio(value: (`false` | String) & (js.UndefOr[`false` | String])): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
+    inline def setRatio(value: `false` | String): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
     
     inline def setSuccess(value: `false` | String): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     

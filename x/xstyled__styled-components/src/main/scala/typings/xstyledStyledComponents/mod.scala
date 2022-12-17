@@ -85,7 +85,6 @@ import typings.xstyledStyledComponents.anon.Target
 import typings.xstyledSystem.anon.CssProperty
 import typings.xstyledSystem.anon.TypeofReact
 import typings.xstyledSystem.mod.AliasKey
-import typings.xstyledSystem.mod.BreakPointsRules
 import typings.xstyledSystem.mod.RPXTransformers_
 import typings.xstyledSystem.mod.ResponsiveValue
 import typings.xstyledSystem.mod.StyleFunc
@@ -245,7 +244,6 @@ object mod {
       (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FlattenSimpleInterpolation */ Any) | String
     ]
   ): TemplateStringsArray = ^.asInstanceOf[js.Dynamic].applyDynamic("breakpoints")(styles.asInstanceOf[js.Any]).asInstanceOf[TemplateStringsArray]
-  inline def breakpoints(values: BreakPointsRules): js.Function1[/* props */ Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("breakpoints")(values.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* props */ Any, Any]]
   
   @JSImport("@xstyled/styled-components", "col")
   @js.native

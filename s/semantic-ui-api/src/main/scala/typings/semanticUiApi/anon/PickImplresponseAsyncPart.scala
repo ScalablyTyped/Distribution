@@ -117,17 +117,11 @@ trait PickImplresponseAsyncPart
   
   var response: js.UndefOr[Any | `false`] = js.undefined
   
-  var responseAsync: ((js.Function2[
+  var responseAsync: (js.Function2[
     /* settings */ ApiSettings, 
     /* callback */ js.Function1[/* response */ Any, Unit], 
     Unit
-  ]) | `false`) & (js.UndefOr[
-    (js.Function2[
-      /* settings */ ApiSettings, 
-      /* callback */ js.Function1[/* response */ Any, Unit], 
-      Unit
-    ]) | `false`
-  ])
+  ]) | `false`
   
   var selector: js.UndefOr[SelectorSettings] = js.undefined
   
@@ -152,17 +146,11 @@ trait PickImplresponseAsyncPart
 object PickImplresponseAsyncPart {
   
   inline def apply(
-    responseAsync: ((js.Function2[
+    responseAsync: (js.Function2[
       /* settings */ ApiSettings, 
       /* callback */ js.Function1[/* response */ Any, Unit], 
       Unit
-    ]) | `false`) & (js.UndefOr[
-      (js.Function2[
-        /* settings */ ApiSettings, 
-        /* callback */ js.Function1[/* response */ Any, Unit], 
-        Unit
-      ]) | `false`
-    ])
+    ]) | `false`
   ): PickImplresponseAsyncPart = {
     val __obj = js.Dynamic.literal(responseAsync = responseAsync.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplresponseAsyncPart]
@@ -309,18 +297,14 @@ object PickImplresponseAsyncPart {
     inline def setResponse(value: Any | `false`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     inline def setResponseAsync(
-      value: ((js.Function2[
+      value: (js.Function2[
           /* settings */ ApiSettings, 
           /* callback */ js.Function1[/* response */ Any, Unit], 
           Unit
-        ]) | `false`) & (js.UndefOr[
-          (js.Function2[
-            /* settings */ ApiSettings, 
-            /* callback */ js.Function1[/* response */ Any, Unit], 
-            Unit
-          ]) | `false`
-        ])
+        ]) | `false`
     ): Self = StObject.set(x, "responseAsync", value.asInstanceOf[js.Any])
+    
+    inline def setResponseAsyncFunction2(value: (/* settings */ ApiSettings, /* callback */ js.Function1[/* response */ Any, Unit]) => Unit): Self = StObject.set(x, "responseAsync", js.Any.fromFunction2(value))
     
     inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     

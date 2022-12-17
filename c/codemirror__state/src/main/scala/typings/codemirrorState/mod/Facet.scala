@@ -13,8 +13,9 @@ size](https://codemirror.net/6/docs/ref/#state.EditorState^tabSize), [editor
 attributes](https://codemirror.net/6/docs/ref/#view.EditorView^editorAttributes), and [update
 listeners](https://codemirror.net/6/docs/ref/#view.EditorView^updateListener).
 */
+@JSImport("@codemirror/state", "Facet")
 @js.native
-trait Facet[Input, Output] extends StObject {
+/* private */ open class Facet[Input, Output] () extends StObject {
   
   /**
     Create an extension that computes a value for the facet from a
@@ -48,4 +49,17 @@ trait Facet[Input, Output] extends StObject {
     Returns an extension that adds the given value to this facet.
     */
   def of(value: Input): Extension = js.native
+}
+object Facet {
+  
+  @JSImport("@codemirror/state", "Facet")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    Define a new facet.
+    */
+  /* static member */
+  inline def define[Input, Output](): Facet[Input, Output] = ^.asInstanceOf[js.Dynamic].applyDynamic("define")().asInstanceOf[Facet[Input, Output]]
+  inline def define[Input, Output](config: FacetConfig[Input, Output]): Facet[Input, Output] = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(config.asInstanceOf[js.Any]).asInstanceOf[Facet[Input, Output]]
 }

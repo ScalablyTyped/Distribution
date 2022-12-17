@@ -1,7 +1,7 @@
 package typings.ipp.mod
 
-import typings.ipp.anon.Detailedstatusmessage
-import typings.ipp.anon.Jobstatemessage
+import typings.ipp.anon.Attributesnaturallanguage
+import typings.ipp.anon.Jobstate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +10,9 @@ trait SendDocumentResponse extends StObject {
   
   var id: Double
   
-  var `job-attributes-tag`: Jobstatemessage
+  var `job-attributes-tag`: Jobstate
   
-  var `operation-attributes-tag`: Detailedstatusmessage
+  var `operation-attributes-tag`: Attributesnaturallanguage
   
   var statusCode: StatusCode
   
@@ -24,8 +24,8 @@ object SendDocumentResponse {
   
   inline def apply(
     id: Double,
-    `job-attributes-tag`: Jobstatemessage,
-    `operation-attributes-tag`: Detailedstatusmessage,
+    `job-attributes-tag`: Jobstate,
+    `operation-attributes-tag`: Attributesnaturallanguage,
     statusCode: StatusCode,
     version: IPPVersion
   ): SendDocumentResponse = {
@@ -39,9 +39,9 @@ object SendDocumentResponse {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def `setJob-attributes-tag`(value: Jobstatemessage): Self = StObject.set(x, "job-attributes-tag", value.asInstanceOf[js.Any])
+    inline def `setJob-attributes-tag`(value: Jobstate): Self = StObject.set(x, "job-attributes-tag", value.asInstanceOf[js.Any])
     
-    inline def `setOperation-attributes-tag`(value: Detailedstatusmessage): Self = StObject.set(x, "operation-attributes-tag", value.asInstanceOf[js.Any])
+    inline def `setOperation-attributes-tag`(value: Attributesnaturallanguage): Self = StObject.set(x, "operation-attributes-tag", value.asInstanceOf[js.Any])
     
     inline def setStatusCode(value: StatusCode): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     

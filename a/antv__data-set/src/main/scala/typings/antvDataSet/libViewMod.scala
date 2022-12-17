@@ -389,7 +389,7 @@ object libViewMod {
     inline def DataSet_=(x: TypeofDataSetInstantiable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataSet")(x.asInstanceOf[js.Any])
   }
   
-  type ConnectorOptions[T /* <: csv | tsv | dsv | graph | diagram | hex | hexjson_ | `hex-json` | HexJSON | geo | geojson_ | GeoJSON | hierarchy | tree | topojson_ | TopoJSON */] = Type[T] & (/* import warning: importer.ImportType#apply Failed type conversion: @antv/data-set.@antv/data-set/lib/connector-params.ConnectorParams[T][1] */ js.Any)
+  type ConnectorOptions[T /* <: csv | tsv | dsv | graph | diagram | hex | hexjson_ | `hex-json` | HexJSON | geo | geojson_ | GeoJSON | hierarchy | tree | topojson_ | TopoJSON */] = TypeT[T] & (/* import warning: importer.ImportType#apply Failed type conversion: @antv/data-set.@antv/data-set/lib/connector-params.ConnectorParams[T][1] */ js.Any)
   
   trait CustomSource extends StObject {
     
@@ -412,7 +412,7 @@ object libViewMod {
     }
   }
   
-  type TransformOptions[T /* <: filter | map | pick | rename | `rename-fields` | reverse | default | sort | sortBy | `sort-by` | subset | partition | group | groups | fold | `fill-rows` | fillRows | impute | aggregate | summary | percent | proportion | regression | kernelDotdensity | `kernel-smoothDotdensity` | kernelDotregression | `kernel-smoothDotregression` | binDothistogram | binDotdot | binDothexagon | binDothex | hexbin | binDotquantile | binDotrectangle | binDotrect | treemap | hierarchyDottreemap | adjacency | hierarchyDotpartition | voronoi | diagramDotvoronoi | diagramDotsankey | sankey | diagramDotarc | arc | geoDotregion | geoDotprojection | geoDotcentroid | `tag-cloud` | `word-cloud` */] = TypeT[T] & (/* import warning: importer.ImportType#apply Failed type conversion: @antv/data-set.@antv/data-set/lib/transform-params.TransformsParams[T] */ js.Any)
+  type TransformOptions[T /* <: filter | map | pick | rename | `rename-fields` | reverse | default | sort | sortBy | `sort-by` | subset | partition | group | groups | fold | `fill-rows` | fillRows | impute | aggregate | summary | percent | proportion | regression | kernelDotdensity | `kernel-smoothDotdensity` | kernelDotregression | `kernel-smoothDotregression` | binDothistogram | binDotdot | binDothexagon | binDothex | hexbin | binDotquantile | binDotrectangle | binDotrect | treemap | hierarchyDottreemap | adjacency | hierarchyDotpartition | voronoi | diagramDotvoronoi | diagramDotsankey | sankey | diagramDotarc | arc | geoDotregion | geoDotprojection | geoDotcentroid | `tag-cloud` | `word-cloud` */] = Type[T] & (/* import warning: importer.ImportType#apply Failed type conversion: @antv/data-set.@antv/data-set/lib/transform-params.TransformsParams[T] */ js.Any)
   
   trait ViewOptions extends StObject {
     

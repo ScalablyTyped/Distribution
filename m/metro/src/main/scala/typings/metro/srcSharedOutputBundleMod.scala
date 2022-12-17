@@ -1,9 +1,9 @@
 package typings.metro
 
 import typings.metro.anon.Map
+import typings.metro.serverMod.Server
 import typings.metro.sharedTypesMod.OutputOptions
 import typings.metro.sharedTypesMod.RequestOptions
-import typings.metro.srcServerMod.Server
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

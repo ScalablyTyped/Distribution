@@ -1,7 +1,7 @@
 package typings.antvG2plot
 
 import typings.antvG2.libInterfaceMod.TooltipCfg
-import typings.antvG2plot.anon.NameValue
+import typings.antvG2plot.anon.NameString
 import typings.antvG2plot.antvG2plotBooleans.`false`
 import typings.antvG2plot.libTypesAttrMod.TooltipAttr
 import typings.antvG2plot.libTypesCommonMod.Datum
@@ -45,7 +45,7 @@ object libTypesTooltipMod {
       
       inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
       
-      inline def setFormatter(value: /* datum */ Datum => NameValue): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
+      inline def setFormatter(value: /* datum */ Datum => NameString): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
       
       inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     }

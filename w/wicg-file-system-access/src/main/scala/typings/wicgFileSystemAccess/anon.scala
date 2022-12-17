@@ -165,14 +165,14 @@ object anon {
     
     var excludeAcceptAllOption: js.UndefOr[Boolean] = js.undefined
     
-    var multiple: js.UndefOr[Boolean] & js.UndefOr[`false`]
+    var multiple: js.UndefOr[Boolean] = js.undefined
     
     var types: js.UndefOr[js.Array[FilePickerAcceptType]] = js.undefined
   }
   object OpenFilePickerOptionsmult {
     
-    inline def apply(multiple: js.UndefOr[Boolean] & js.UndefOr[`false`]): OpenFilePickerOptionsmult = {
-      val __obj = js.Dynamic.literal(multiple = multiple.asInstanceOf[js.Any])
+    inline def apply(): OpenFilePickerOptionsmult = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OpenFilePickerOptionsmult]
     }
     
@@ -182,7 +182,9 @@ object anon {
       
       inline def setExcludeAcceptAllOptionUndefined: Self = StObject.set(x, "excludeAcceptAllOption", js.undefined)
       
-      inline def setMultiple(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+      inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+      
+      inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
       
       inline def setTypes(value: js.Array[FilePickerAcceptType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
       

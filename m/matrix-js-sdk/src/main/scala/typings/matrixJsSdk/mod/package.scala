@@ -43,7 +43,7 @@ String]
 
 type FilterComponent = Any
 
-type LiteralUnion[T /* <: U */, U] = T | (U & js.Object)
+type LiteralUnion[T /* <: U */, U] = T | U
 
 type MatrixCallback = js.Function2[/* err */ Null | js.Object, /* data */ Any, Unit]
 

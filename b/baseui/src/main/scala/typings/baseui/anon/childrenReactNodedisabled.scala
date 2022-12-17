@@ -20,7 +20,7 @@ trait childrenReactNodedisabled extends StObject {
   
   var expanded: js.UndefOr[Boolean] = js.undefined
   
-  var key: js.UndefOr[typings.react.mod.Key] & (js.UndefOr[typings.react.mod.Key | Null])
+  var key: js.UndefOr[typings.react.mod.Key] = js.undefined
   
   var onChange: js.UndefOr[OnChangeHandler] = js.undefined
   
@@ -40,8 +40,8 @@ trait childrenReactNodedisabled extends StObject {
 }
 object childrenReactNodedisabled {
   
-  inline def apply(key: js.UndefOr[typings.react.mod.Key] & (js.UndefOr[typings.react.mod.Key | Null])): childrenReactNodedisabled = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+  inline def apply(): childrenReactNodedisabled = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[childrenReactNodedisabled]
   }
   
@@ -63,7 +63,9 @@ object childrenReactNodedisabled {
     
     inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
     
-    inline def setKey(value: js.UndefOr[typings.react.mod.Key] & (js.UndefOr[typings.react.mod.Key | Null])): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: typings.react.mod.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     inline def setOnChange(value: /* a */ ExpandedBoolean => Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     

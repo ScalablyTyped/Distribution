@@ -7,7 +7,7 @@ import typings.fabric.anon.DeltaY
 import typings.fabric.anon.FontFamily
 import typings.fabric.anon.GraphemeLines
 import typings.fabric.anon.KernedWidth
-import typings.fabric.anon.LeftTop
+import typings.fabric.anon.Left
 import typings.fabric.anon.NumOfSpaces
 import typings.fabric.fabricStrings._empty
 import typings.fabric.fabricStrings.italic
@@ -326,7 +326,7 @@ open class Text protected () extends Object {
     */
   def cleanStyle(property: String): Unit = js.native
   
-  var cursorOffsetCache: LeftTop = js.native
+  var cursorOffsetCache: Left = js.native
   
   /**
     * Baseline shift, stlyes only, keep at 0 for the main text object

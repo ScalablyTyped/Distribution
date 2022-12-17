@@ -1,8 +1,8 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.Nullable
+import typings.babylonjs.anon.CloseShape
 import typings.babylonjs.anon.FirstNormal
-import typings.babylonjs.anon.RibbonCloseArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,27 +17,27 @@ object ShapeBuilder {
   @js.native
   def ExtrudeShape: js.Function3[
     /* name */ String, 
-    /* options */ FirstNormal, 
+    /* options */ CloseShape, 
     /* scene */ js.UndefOr[Nullable[typings.babylonjs.BABYLON.Scene]], 
     typings.babylonjs.BABYLON.Mesh
   ] = js.native
-  inline def ExtrudeShape(name: String, options: FirstNormal): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShape")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
-  inline def ExtrudeShape(name: String, options: FirstNormal, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShape")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def ExtrudeShape(name: String, options: CloseShape): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShape")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def ExtrudeShape(name: String, options: CloseShape, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShape")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
   
   @JSGlobal("BABYLON.ShapeBuilder.ExtrudeShapeCustom")
   @js.native
   def ExtrudeShapeCustom: js.Function3[
     /* name */ String, 
-    /* options */ RibbonCloseArray, 
+    /* options */ FirstNormal, 
     /* scene */ js.UndefOr[Nullable[typings.babylonjs.BABYLON.Scene]], 
     typings.babylonjs.BABYLON.Mesh
   ] = js.native
-  inline def ExtrudeShapeCustom(name: String, options: RibbonCloseArray): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShapeCustom")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
-  inline def ExtrudeShapeCustom(name: String, options: RibbonCloseArray, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShapeCustom")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def ExtrudeShapeCustom(name: String, options: FirstNormal): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShapeCustom")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def ExtrudeShapeCustom(name: String, options: FirstNormal, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShapeCustom")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
   inline def ExtrudeShapeCustom_=(
     x: js.Function3[
       /* name */ String, 
-      /* options */ RibbonCloseArray, 
+      /* options */ FirstNormal, 
       /* scene */ js.UndefOr[Nullable[typings.babylonjs.BABYLON.Scene]], 
       typings.babylonjs.BABYLON.Mesh
     ]
@@ -46,7 +46,7 @@ object ShapeBuilder {
   inline def ExtrudeShape_=(
     x: js.Function3[
       /* name */ String, 
-      /* options */ FirstNormal, 
+      /* options */ CloseShape, 
       /* scene */ js.UndefOr[Nullable[typings.babylonjs.BABYLON.Scene]], 
       typings.babylonjs.BABYLON.Mesh
     ]

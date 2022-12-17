@@ -10,7 +10,7 @@ trait PickImplcontentPartialPicContent
   extends StObject
      with Param {
   
-  var content: String & js.UndefOr[String]
+  var content: String
   
   var html: js.UndefOr[String] = js.undefined
   
@@ -24,14 +24,14 @@ trait PickImplcontentPartialPicContent
 }
 object PickImplcontentPartialPicContent {
   
-  inline def apply(content: String & js.UndefOr[String]): PickImplcontentPartialPicContent = {
+  inline def apply(content: String): PickImplcontentPartialPicContent = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplcontentPartialPicContent]
   }
   
   extension [Self <: PickImplcontentPartialPicContent](x: Self) {
     
-    inline def setContent(value: String & js.UndefOr[String]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     

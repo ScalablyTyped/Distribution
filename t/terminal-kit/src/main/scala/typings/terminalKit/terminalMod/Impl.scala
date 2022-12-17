@@ -9,9 +9,9 @@ import typings.terminalKit.anon.Mouse
 import typings.terminalKit.anon.NoAlternate
 import typings.terminalKit.anon.Promise
 import typings.terminalKit.anon.PromisePromise
-import typings.terminalKit.anon.`1`
 import typings.terminalKit.anon.`2`
 import typings.terminalKit.anon.`3`
+import typings.terminalKit.anon.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -340,8 +340,8 @@ trait Impl extends StObject {
   
   def drawImage(url: String): js.Promise[Unit] = js.native
   def drawImage(url: String, callback: Callback[Unit]): Unit = js.native
-  def drawImage(url: String, options: `3`): js.Promise[Unit] = js.native
-  def drawImage(url: String, options: `3`, callback: Callback[Unit]): Unit = js.native
+  def drawImage(url: String, options: `4`): js.Promise[Unit] = js.native
+  def drawImage(url: String, options: `4`, callback: Callback[Unit]): Unit = js.native
   
   def eraseArea(x: Double, y: Double): Terminal = js.native
   def eraseArea(x: Double, y: Double, width: Double): Terminal = js.native
@@ -448,9 +448,9 @@ trait Impl extends StObject {
   @JSName("grey")
   var grey_Original: CTerminal = js.native
   
-  def gridMenu(menuItems: js.Array[String]): `2` = js.native
+  def gridMenu(menuItems: js.Array[String]): `3` = js.native
   def gridMenu(menuItems: js.Array[String], callback: Callback[GridMenuResponse]): Unit = js.native
-  def gridMenu(menuItems: js.Array[String], options: GridMenuOptions): `2` = js.native
+  def gridMenu(menuItems: js.Array[String], options: GridMenuOptions): `3` = js.native
   def gridMenu(menuItems: js.Array[String], options: GridMenuOptions, callback: Callback[GridMenuResponse]): Unit = js.native
   
   var height: Double = js.native
@@ -649,9 +649,9 @@ trait Impl extends StObject {
   def setPalette(palette: String): Unit = js.native
   def setPalette(palette: Palette): Unit = js.native
   
-  def singleColumnMenu(menuItems: js.Array[String]): `1` = js.native
+  def singleColumnMenu(menuItems: js.Array[String]): `2` = js.native
   def singleColumnMenu(menuItems: js.Array[String], callback: Callback[SingleColumnMenuResponse]): Unit = js.native
-  def singleColumnMenu(menuItems: js.Array[String], options: SingleColumnMenuOptions): `1` = js.native
+  def singleColumnMenu(menuItems: js.Array[String], options: SingleColumnMenuOptions): `2` = js.native
   def singleColumnMenu(
     menuItems: js.Array[String],
     options: SingleColumnMenuOptions,

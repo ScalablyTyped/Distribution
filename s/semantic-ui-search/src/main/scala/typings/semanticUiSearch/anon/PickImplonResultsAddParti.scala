@@ -52,7 +52,7 @@ trait PickImplonResultsAddParti
   
   def onResultsAdd(html: String): `false` | Unit
   @JSName("onResultsAdd")
-  var onResultsAdd_Original: (js.ThisFunction1[/* this */ JQuery, /* html */ String, `false` | Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* html */ String, `false` | Unit]])
+  var onResultsAdd_Original: js.ThisFunction1[/* this */ JQuery, /* html */ String, `false` | Unit]
   
   var onResultsClose: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
@@ -94,9 +94,7 @@ trait PickImplonResultsAddParti
 }
 object PickImplonResultsAddParti {
   
-  inline def apply(
-    onResultsAdd: (js.ThisFunction1[/* this */ JQuery, /* html */ String, `false` | Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* html */ String, `false` | Unit]])
-  ): PickImplonResultsAddParti = {
+  inline def apply(onResultsAdd: js.ThisFunction1[/* this */ JQuery, /* html */ String, `false` | Unit]): PickImplonResultsAddParti = {
     val __obj = js.Dynamic.literal(onResultsAdd = onResultsAdd.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonResultsAddParti]
   }
@@ -161,9 +159,7 @@ object PickImplonResultsAddParti {
     
     inline def setOnResults(value: js.ThisFunction1[/* this */ JQuery, /* response */ Any, Unit]): Self = StObject.set(x, "onResults", value.asInstanceOf[js.Any])
     
-    inline def setOnResultsAdd(
-      value: (js.ThisFunction1[/* this */ JQuery, /* html */ String, `false` | Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* html */ String, `false` | Unit]])
-    ): Self = StObject.set(x, "onResultsAdd", value.asInstanceOf[js.Any])
+    inline def setOnResultsAdd(value: js.ThisFunction1[/* this */ JQuery, /* html */ String, `false` | Unit]): Self = StObject.set(x, "onResultsAdd", value.asInstanceOf[js.Any])
     
     inline def setOnResultsClose(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onResultsClose", value.asInstanceOf[js.Any])
     

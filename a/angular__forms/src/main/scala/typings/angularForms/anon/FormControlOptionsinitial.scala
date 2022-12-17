@@ -1,6 +1,5 @@
 package typings.angularForms.anon
 
-import typings.angularForms.angularFormsBooleans.`true`
 import typings.angularForms.angularFormsStrings.blur
 import typings.angularForms.angularFormsStrings.change
 import typings.angularForms.angularFormsStrings.submit
@@ -25,7 +24,7 @@ trait FormControlOptionsinitial extends StObject {
   /**
     * @deprecated Use `nonNullable` instead.
     */
-  var initialValueIsDefault: js.UndefOr[Boolean] & `true`
+  var initialValueIsDefault: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @description
@@ -50,8 +49,8 @@ trait FormControlOptionsinitial extends StObject {
 }
 object FormControlOptionsinitial {
   
-  inline def apply(initialValueIsDefault: js.UndefOr[Boolean] & `true`): FormControlOptionsinitial = {
-    val __obj = js.Dynamic.literal(initialValueIsDefault = initialValueIsDefault.asInstanceOf[js.Any])
+  inline def apply(): FormControlOptionsinitial = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FormControlOptionsinitial]
   }
   
@@ -69,7 +68,9 @@ object FormControlOptionsinitial {
     
     inline def setAsyncValidatorsVarargs(value: AsyncValidatorFn*): Self = StObject.set(x, "asyncValidators", js.Array(value*))
     
-    inline def setInitialValueIsDefault(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "initialValueIsDefault", value.asInstanceOf[js.Any])
+    inline def setInitialValueIsDefault(value: Boolean): Self = StObject.set(x, "initialValueIsDefault", value.asInstanceOf[js.Any])
+    
+    inline def setInitialValueIsDefaultUndefined: Self = StObject.set(x, "initialValueIsDefault", js.undefined)
     
     inline def setNonNullable(value: Boolean): Self = StObject.set(x, "nonNullable", value.asInstanceOf[js.Any])
     

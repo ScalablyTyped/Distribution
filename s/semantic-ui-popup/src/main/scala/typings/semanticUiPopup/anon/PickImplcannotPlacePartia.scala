@@ -10,7 +10,7 @@ trait PickImplcannotPlacePartia
   extends StObject
      with Param {
   
-  var cannotPlace: String & js.UndefOr[String]
+  var cannotPlace: String
   
   var invalidPosition: js.UndefOr[String] = js.undefined
   
@@ -22,14 +22,14 @@ trait PickImplcannotPlacePartia
 }
 object PickImplcannotPlacePartia {
   
-  inline def apply(cannotPlace: String & js.UndefOr[String]): PickImplcannotPlacePartia = {
+  inline def apply(cannotPlace: String): PickImplcannotPlacePartia = {
     val __obj = js.Dynamic.literal(cannotPlace = cannotPlace.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplcannotPlacePartia]
   }
   
   extension [Self <: PickImplcannotPlacePartia](x: Self) {
     
-    inline def setCannotPlace(value: String & js.UndefOr[String]): Self = StObject.set(x, "cannotPlace", value.asInstanceOf[js.Any])
+    inline def setCannotPlace(value: String): Self = StObject.set(x, "cannotPlace", value.asInstanceOf[js.Any])
     
     inline def setInvalidPosition(value: String): Self = StObject.set(x, "invalidPosition", value.asInstanceOf[js.Any])
     

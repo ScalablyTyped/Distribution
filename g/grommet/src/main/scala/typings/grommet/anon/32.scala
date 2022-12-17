@@ -1,18 +1,17 @@
 package typings.grommet.anon
 
-import typings.grommet.componentsBoxMod.BoxExtendedProps
-import typings.grommet.componentsTextMod.TextExtendedProps
-import typings.grommet.utilsMod.PropsOf
-import typings.react.mod.FC
+import typings.grommet.grommetStrings.large
+import typings.grommet.grommetStrings.medium
+import typings.grommet.grommetStrings.small
+import typings.grommet.grommetStrings.xlarge
+import typings.grommet.grommetStrings.xsmall
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `32` extends StObject {
   
-  var container: js.UndefOr[PropsOf[FC[BoxExtendedProps]]] = js.undefined
-  
-  var text: js.UndefOr[PropsOf[FC[TextExtendedProps]]] = js.undefined
+  var size: js.UndefOr[xsmall | small | medium | large | xlarge | String] = js.undefined
 }
 object `32` {
   
@@ -23,12 +22,8 @@ object `32` {
   
   extension [Self <: `32`](x: Self) {
     
-    inline def setContainer(value: PropsOf[FC[BoxExtendedProps]]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setSize(value: xsmall | small | medium | large | xlarge | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
-    
-    inline def setText(value: PropsOf[FC[TextExtendedProps]]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
-    
-    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

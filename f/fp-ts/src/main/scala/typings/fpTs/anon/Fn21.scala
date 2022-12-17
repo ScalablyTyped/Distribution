@@ -6,8 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Fn21[A] extends StObject {
+trait Fn21[K] extends StObject {
   
-  def apply(a: A): js.Function1[/* m */ ReadonlyMap[Any, A], Boolean] = js.native
-  def apply[K](a: A, m: ReadonlyMap[K, A]): Boolean = js.native
+  def apply(k: K): js.Function1[/* m */ ReadonlyMap[K, Any], Boolean] = js.native
+  def apply[A](k: K, m: ReadonlyMap[K, A]): Boolean = js.native
 }

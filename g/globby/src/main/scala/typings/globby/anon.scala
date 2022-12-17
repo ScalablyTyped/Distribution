@@ -2,7 +2,6 @@ package typings.globby
 
 import typings.fastGlob.anon.PartialFileSystemAdapter
 import typings.fastGlob.outTypesMod.Pattern
-import typings.globby.globbyBooleans.`true`
 import typings.globby.mod.ExpandDirectoriesOption
 import typings.node.nodeColonurlMod.URL
 import org.scalablytyped.runtime.StObject
@@ -253,7 +252,7 @@ object anon {
     
     var markDirectories: js.UndefOr[Boolean] = js.undefined
     
-    var objectMode: js.UndefOr[Boolean] & `true`
+    var objectMode: js.UndefOr[Boolean] = js.undefined
     
     var onlyDirectories: js.UndefOr[Boolean] = js.undefined
     
@@ -269,8 +268,8 @@ object anon {
   }
   object OptionsobjectModetrue {
     
-    inline def apply(objectMode: js.UndefOr[Boolean] & `true`): OptionsobjectModetrue = {
-      val __obj = js.Dynamic.literal(objectMode = objectMode.asInstanceOf[js.Any])
+    inline def apply(): OptionsobjectModetrue = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionsobjectModetrue]
     }
     
@@ -350,7 +349,9 @@ object anon {
       
       inline def setMarkDirectoriesUndefined: Self = StObject.set(x, "markDirectories", js.undefined)
       
-      inline def setObjectMode(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
+      inline def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
+      
+      inline def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
       
       inline def setOnlyDirectories(value: Boolean): Self = StObject.set(x, "onlyDirectories", value.asInstanceOf[js.Any])
       

@@ -1,7 +1,7 @@
 package typings.hellosignSdk.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.hellosignSdk.anon.Pagesize
+import typings.hellosignSdk.anon.Page
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +29,7 @@ trait TemplateModule extends StObject {
   def get(templateId: String): js.Promise[TemplateResponse] = js.native
   
   def list(): js.Promise[TemplatesResponse] = js.native
-  def list(params: Pagesize): js.Promise[TemplatesResponse] = js.native
+  def list(params: Page): js.Promise[TemplatesResponse] = js.native
   
   def removeUser(templateId: String, user: AccountIdOrEmailRequestOptions): js.Promise[TemplateResponse] = js.native
 }

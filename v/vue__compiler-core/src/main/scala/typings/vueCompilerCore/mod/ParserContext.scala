@@ -33,12 +33,11 @@ object ParserContext {
     inVPre: Boolean,
     line: Double,
     offset: Double,
-    onWarn: NonNullable[js.UndefOr[js.Function1[/* warning */ CompilerError, Unit]]],
     options: MergedParserOptions,
     originalSource: String,
     source: String
   ): ParserContext = {
-    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], inPre = inPre.asInstanceOf[js.Any], inVPre = inVPre.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], onWarn = onWarn.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], originalSource = originalSource.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], inPre = inPre.asInstanceOf[js.Any], inVPre = inVPre.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], originalSource = originalSource.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParserContext]
   }
   
@@ -54,7 +53,9 @@ object ParserContext {
     
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    inline def setOnWarn(value: NonNullable[js.UndefOr[js.Function1[/* warning */ CompilerError, Unit]]]): Self = StObject.set(x, "onWarn", value.asInstanceOf[js.Any])
+    inline def setOnWarn(value: /* warning */ CompilerError => Unit): Self = StObject.set(x, "onWarn", js.Any.fromFunction1(value))
+    
+    inline def setOnWarnUndefined: Self = StObject.set(x, "onWarn", js.undefined)
     
     inline def setOptions(value: MergedParserOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,6 @@
 package typings.firebaseFirestore.distLitePrivateMod
 
-import typings.firebaseFirestore.anon.`36`
+import typings.firebaseFirestore.anon.`38`
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -69,7 +69,7 @@ trait ObjectValue extends StObject {
     ]
   ): Unit
   
-  val value: `36`
+  val value: `38`
 }
 object ObjectValue {
   
@@ -84,7 +84,7 @@ object ObjectValue {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FieldPath_2 */ Any, 
       Value | Null
     ] => Unit,
-    value: `36`
+    value: `38`
   ): ObjectValue = {
     val __obj = js.Dynamic.literal(applyChanges = applyChanges.asInstanceOf[js.Any], delete = js.Any.fromFunction1(delete), field = js.Any.fromFunction1(field), getFieldsMap = getFieldsMap.asInstanceOf[js.Any], isEqual = js.Any.fromFunction1(isEqual), set = js.Any.fromFunction2(set), setAll = js.Any.fromFunction1(setAll), value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectValue]
@@ -117,6 +117,6 @@ object ObjectValue {
         ] => Unit
     ): Self = StObject.set(x, "setAll", js.Any.fromFunction1(value))
     
-    inline def setValue(value: `36`): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: `38`): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

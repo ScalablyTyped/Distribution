@@ -10,20 +10,20 @@ trait PickImploptionalPartialPi
   extends StObject
      with Param {
   
-  var optional: js.RegExp & js.UndefOr[js.RegExp]
+  var optional: js.RegExp
   
   var required: js.UndefOr[js.RegExp] = js.undefined
 }
 object PickImploptionalPartialPi {
   
-  inline def apply(optional: js.RegExp & js.UndefOr[js.RegExp]): PickImploptionalPartialPi = {
+  inline def apply(optional: js.RegExp): PickImploptionalPartialPi = {
     val __obj = js.Dynamic.literal(optional = optional.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImploptionalPartialPi]
   }
   
   extension [Self <: PickImploptionalPartialPi](x: Self) {
     
-    inline def setOptional(value: js.RegExp & js.UndefOr[js.RegExp]): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: js.RegExp): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
     inline def setRequired(value: js.RegExp): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     

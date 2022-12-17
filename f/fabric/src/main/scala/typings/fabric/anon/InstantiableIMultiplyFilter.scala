@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InstantiableIMultiplyFilter
   extends StObject
      with Instantiable0[IMultiplyFilter]
-     with Instantiable1[/* options */ Color, IMultiplyFilter] {
+     with Instantiable1[/* options */ ColorString, IMultiplyFilter] {
   
   /**
     * Returns filter instance from an object representation

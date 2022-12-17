@@ -3,9 +3,9 @@ package typings.wxServerSdk.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.wxServerSdk.anon.APPID
 import typings.wxServerSdk.anon.CloudPath
-import typings.wxServerSdk.anon.FileIDString
+import typings.wxServerSdk.anon.Data
+import typings.wxServerSdk.anon.FileID
 import typings.wxServerSdk.anon.FileList
-import typings.wxServerSdk.anon.Name
 import typings.wxServerSdk.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 
 // 云函数
-inline def callFunction(options: Name): js.Promise[CallFunctionSuccess] = ^.asInstanceOf[js.Dynamic].applyDynamic("callFunction")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CallFunctionSuccess]]
+inline def callFunction(options: Data): js.Promise[CallFunctionSuccess] = ^.asInstanceOf[js.Dynamic].applyDynamic("callFunction")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CallFunctionSuccess]]
 
 // 数据库 API
 inline def database(): Database_ = ^.asInstanceOf[js.Dynamic].applyDynamic("database")().asInstanceOf[Database_]
@@ -21,7 +21,7 @@ inline def database(options: DatabaseOptions): Database_ = ^.asInstanceOf[js.Dyn
 
 inline def deleteFile(options: FileList): js.Promise[DeleteFileSuccess] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteFile")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DeleteFileSuccess]]
 
-inline def downloadFile(options: FileIDString): js.Promise[DownloadFileSuccess] = ^.asInstanceOf[js.Dynamic].applyDynamic("downloadFile")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DownloadFileSuccess]]
+inline def downloadFile(options: FileID): js.Promise[DownloadFileSuccess] = ^.asInstanceOf[js.Dynamic].applyDynamic("downloadFile")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DownloadFileSuccess]]
 
 inline def getTempFileURL(options: FileList): js.Promise[TetTempFileURLSuccess] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTempFileURL")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TetTempFileURLSuccess]]
 

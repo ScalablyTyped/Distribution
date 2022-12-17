@@ -16,13 +16,13 @@ trait PickImplsupportedPartialP
   
   var fixed: js.UndefOr[String] = js.undefined
   
-  var supported: String & js.UndefOr[String]
+  var supported: String
   
   var top: js.UndefOr[String] = js.undefined
 }
 object PickImplsupportedPartialP {
   
-  inline def apply(supported: String & js.UndefOr[String]): PickImplsupportedPartialP = {
+  inline def apply(supported: String): PickImplsupportedPartialP = {
     val __obj = js.Dynamic.literal(supported = supported.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplsupportedPartialP]
   }
@@ -41,7 +41,7 @@ object PickImplsupportedPartialP {
     
     inline def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
     
-    inline def setSupported(value: String & js.UndefOr[String]): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
+    inline def setSupported(value: String): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
     
     inline def setTop(value: String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     

@@ -49,7 +49,7 @@ trait Truncated extends StObject {
     *   }
     * ]
     */
-  var tree: js.Array[Mode]
+  var tree: js.Array[ModePath]
   
   var truncated: Boolean
   
@@ -58,7 +58,7 @@ trait Truncated extends StObject {
 }
 object Truncated {
   
-  inline def apply(sha: String, tree: js.Array[Mode], truncated: Boolean, url: String): Truncated = {
+  inline def apply(sha: String, tree: js.Array[ModePath], truncated: Boolean, url: String): Truncated = {
     val __obj = js.Dynamic.literal(sha = sha.asInstanceOf[js.Any], tree = tree.asInstanceOf[js.Any], truncated = truncated.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Truncated]
   }
@@ -67,9 +67,9 @@ object Truncated {
     
     inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
     
-    inline def setTree(value: js.Array[Mode]): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
+    inline def setTree(value: js.Array[ModePath]): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
     
-    inline def setTreeVarargs(value: Mode*): Self = StObject.set(x, "tree", js.Array(value*))
+    inline def setTreeVarargs(value: ModePath*): Self = StObject.set(x, "tree", js.Array(value*))
     
     inline def setTruncated(value: Boolean): Self = StObject.set(x, "truncated", value.asInstanceOf[js.Any])
     

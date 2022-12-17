@@ -1,7 +1,7 @@
 package typings.orbitUiReactComponents
 
 import typings.orbitUiReactComponents.anon.OnBlurOnFocus
-import typings.orbitUiReactComponents.anon.OnFocus
+import typings.orbitUiReactComponents.anon.`2`
 import typings.react.mod.FocusEvent
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
@@ -14,8 +14,8 @@ object distSharedSrcUseFocusWithinMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useFocusWithin(): OnFocus | OnBlurOnFocus = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusWithin")().asInstanceOf[OnFocus | OnBlurOnFocus]
-  inline def useFocusWithin(param0: UseFocusWithinOptions): OnFocus | OnBlurOnFocus = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusWithin")(param0.asInstanceOf[js.Any]).asInstanceOf[OnFocus | OnBlurOnFocus]
+  inline def useFocusWithin(): OnBlurOnFocus | `2` = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusWithin")().asInstanceOf[OnBlurOnFocus | `2`]
+  inline def useFocusWithin(param0: UseFocusWithinOptions): OnBlurOnFocus | `2` = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusWithin")(param0.asInstanceOf[js.Any]).asInstanceOf[OnBlurOnFocus | `2`]
   
   trait UseFocusWithinOptions extends StObject {
     

@@ -1,7 +1,7 @@
 package typings.carbonElements.mod
 
 import typings.carbonElements.anon.FontFamily
-import typings.carbonElements.anon.FontWeightAny
+import typings.carbonElements.anon.FontWeight
 import typings.carbonElements.carbonElementsInts.`0`
 import typings.carbonElements.carbonElementsInts.`16`
 import typings.carbonElements.carbonElementsInts.`8`
@@ -310,7 +310,7 @@ inline def focusInverse: Numbersignffffff = ^.asInstanceOf[js.Dynamic].selectDyn
 
 inline def fontFamily(name: Any): FontFamily = ^.asInstanceOf[js.Dynamic].applyDynamic("fontFamily")(name.asInstanceOf[js.Any]).asInstanceOf[FontFamily]
 
-inline def fontWeight(weight: Any): FontWeightAny = ^.asInstanceOf[js.Dynamic].applyDynamic("fontWeight")(weight.asInstanceOf[js.Any]).asInstanceOf[FontWeightAny]
+inline def fontWeight(weight: Any): FontWeight = ^.asInstanceOf[js.Dynamic].applyDynamic("fontWeight")(weight.asInstanceOf[js.Any]).asInstanceOf[FontWeight]
 
 inline def getTypeSize(step: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeSize")(step.asInstanceOf[js.Any]).asInstanceOf[Any]
 

@@ -317,7 +317,7 @@ trait OmitToggleButtonset extends StObject {
   @JSName("isDisposed")
   var isDisposed_Original: js.Function0[Boolean]
   
-  var jsxAttributes: (JSXAttributes[ToggleButton, Omit[ToggleButton, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `3`
+  var jsxAttributes: (JSXAttributes[ToggleButton, Omit[ToggleButton, set | typings.tabris.tabrisStrings.jsxAttributes]]) & Children
   
   var layoutData: LayoutDataValue
   
@@ -570,7 +570,7 @@ object OmitToggleButtonset {
     insertAfter: /* widget */ Widget[Any] => ToggleButton,
     insertBefore: /* widget */ Widget[Any] => ToggleButton,
     isDisposed: () => Boolean,
-    jsxAttributes: (JSXAttributes[ToggleButton, Omit[ToggleButton, set | jsxAttributes]]) & `3`,
+    jsxAttributes: (JSXAttributes[ToggleButton, Omit[ToggleButton, set | jsxAttributes]]) & Children,
     layoutData: LayoutDataValue,
     left: ConstraintValue,
     off: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Unit], /* context */ js.UndefOr[js.Object]) => ToggleButton,
@@ -749,7 +749,7 @@ object OmitToggleButtonset {
     
     inline def setIsDisposed(value: () => Boolean): Self = StObject.set(x, "isDisposed", js.Any.fromFunction0(value))
     
-    inline def setJsxAttributes(value: (JSXAttributes[ToggleButton, Omit[ToggleButton, set | jsxAttributes]]) & `3`): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
+    inline def setJsxAttributes(value: (JSXAttributes[ToggleButton, Omit[ToggleButton, set | jsxAttributes]]) & Children): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     
     inline def setLayoutData(value: LayoutDataValue): Self = StObject.set(x, "layoutData", value.asInstanceOf[js.Any])
     

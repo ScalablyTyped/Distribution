@@ -1,7 +1,7 @@
 package typings.ckeditorCkeditor5Engine
 
 import typings.ckeditorCkeditor5Engine.anon.GraveyardPosition
-import typings.ckeditorCkeditor5Engine.anon.`13`
+import typings.ckeditorCkeditor5Engine.anon.`12`
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.merge
 import typings.ckeditorCkeditor5Engine.srcModelOperationOperationMod.Operation
 import org.scalablytyped.runtime.StObject
@@ -103,7 +103,7 @@ object srcModelOperationMergeoperationMod {
       * Custom toJSON method to solve child-parent circular dependencies.
       */
     /* CompleteClass */
-    override def toJSON(): `13` = js.native
+    override def toJSON(): `12` = js.native
     
     /**
       * Operation type.
@@ -193,7 +193,7 @@ object srcModelOperationMergeoperationMod {
       movedRange: typings.ckeditorCkeditor5Engine.srcModelRangeMod.default,
       sourcePosition: typings.ckeditorCkeditor5Engine.srcModelPositionMod.default,
       targetPosition: typings.ckeditorCkeditor5Engine.srcModelPositionMod.default,
-      toJSON: () => `13`
+      toJSON: () => `12`
     ): MergeOperation = {
       val __obj = js.Dynamic.literal(deletionPosition = deletionPosition.asInstanceOf[js.Any], getReversed = js.Any.fromFunction0(getReversed), graveyardPosition = graveyardPosition.asInstanceOf[js.Any], howMany = howMany.asInstanceOf[js.Any], isDocumentOperation = isDocumentOperation.asInstanceOf[js.Any], movedRange = movedRange.asInstanceOf[js.Any], sourcePosition = sourcePosition.asInstanceOf[js.Any], targetPosition = targetPosition.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), baseVersion = null, batch = null)
       __obj.updateDynamic("clone")(js.Any.fromFunction0(clone_))

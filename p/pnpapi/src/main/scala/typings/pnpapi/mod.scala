@@ -1,8 +1,8 @@
 package typings.pnpapi
 
 import typings.pnpapi.anon.ConsiderBuiltins
+import typings.pnpapi.anon.ConsiderBuiltinsExtensions
 import typings.pnpapi.anon.Extensions
-import typings.pnpapi.anon.`0`
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -32,13 +32,13 @@ object mod {
   
   inline def resolveRequest(request: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveRequest")(request.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   inline def resolveRequest(request: String, issuer: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveRequest")(request.asInstanceOf[js.Any], issuer.asInstanceOf[js.Any])).asInstanceOf[String | Null]
-  inline def resolveRequest(request: String, issuer: String, opts: ConsiderBuiltins): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveRequest")(request.asInstanceOf[js.Any], issuer.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String | Null]
-  inline def resolveRequest(request: String, issuer: Null, opts: ConsiderBuiltins): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveRequest")(request.asInstanceOf[js.Any], issuer.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def resolveRequest(request: String, issuer: String, opts: ConsiderBuiltinsExtensions): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveRequest")(request.asInstanceOf[js.Any], issuer.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def resolveRequest(request: String, issuer: Null, opts: ConsiderBuiltinsExtensions): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveRequest")(request.asInstanceOf[js.Any], issuer.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
   inline def resolveToUnqualified(request: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveToUnqualified")(request.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   inline def resolveToUnqualified(request: String, issuer: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveToUnqualified")(request.asInstanceOf[js.Any], issuer.asInstanceOf[js.Any])).asInstanceOf[String | Null]
-  inline def resolveToUnqualified(request: String, issuer: String, opts: `0`): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveToUnqualified")(request.asInstanceOf[js.Any], issuer.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String | Null]
-  inline def resolveToUnqualified(request: String, issuer: Null, opts: `0`): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveToUnqualified")(request.asInstanceOf[js.Any], issuer.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def resolveToUnqualified(request: String, issuer: String, opts: ConsiderBuiltins): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveToUnqualified")(request.asInstanceOf[js.Any], issuer.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def resolveToUnqualified(request: String, issuer: Null, opts: ConsiderBuiltins): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveToUnqualified")(request.asInstanceOf[js.Any], issuer.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
   inline def resolveUnqualified(unqualified: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveUnqualified")(unqualified.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def resolveUnqualified(unqualified: String, opts: Extensions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveUnqualified")(unqualified.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]

@@ -55,7 +55,7 @@ trait PartialViewPropsRefAttrib extends StObject {
   
   var accessible: js.UndefOr[Boolean] = js.undefined
   
-  var children: js.UndefOr[ReactNode] & ReactNode
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   var collapsable: js.UndefOr[Boolean] = js.undefined
   
@@ -236,7 +236,7 @@ object PartialViewPropsRefAttrib {
     
     inline def setAccessibleUndefined: Self = StObject.set(x, "accessible", js.undefined)
     
-    inline def setChildren(value: js.UndefOr[ReactNode] & ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     

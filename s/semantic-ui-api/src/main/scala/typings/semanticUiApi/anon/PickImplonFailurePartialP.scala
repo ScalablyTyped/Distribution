@@ -103,7 +103,7 @@ trait PickImplonFailurePartialP
   
   def onFailure(response: Any, element: JQuery): Unit
   @JSName("onFailure")
-  var onFailure_Original: (js.Function2[/* response */ Any, /* element */ JQuery, Unit]) & (js.UndefOr[js.Function2[/* response */ Any, /* element */ JQuery, Unit]])
+  var onFailure_Original: js.Function2[/* response */ Any, /* element */ JQuery, Unit]
   
   var onRequest: js.UndefOr[js.Function2[/* promise */ Deferred[Any, Any, Any], /* xhr */ jqXHR[Any], Unit]] = js.undefined
   
@@ -149,10 +149,8 @@ trait PickImplonFailurePartialP
 }
 object PickImplonFailurePartialP {
   
-  inline def apply(
-    onFailure: (js.Function2[/* response */ Any, /* element */ JQuery, Unit]) & (js.UndefOr[js.Function2[/* response */ Any, /* element */ JQuery, Unit]])
-  ): PickImplonFailurePartialP = {
-    val __obj = js.Dynamic.literal(onFailure = onFailure.asInstanceOf[js.Any])
+  inline def apply(onFailure: (/* response */ Any, /* element */ JQuery) => Unit): PickImplonFailurePartialP = {
+    val __obj = js.Dynamic.literal(onFailure = js.Any.fromFunction2(onFailure))
     __obj.asInstanceOf[PickImplonFailurePartialP]
   }
   
@@ -268,9 +266,7 @@ object PickImplonFailurePartialP {
     
     inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
-    inline def setOnFailure(
-      value: (js.Function2[/* response */ Any, /* element */ JQuery, Unit]) & (js.UndefOr[js.Function2[/* response */ Any, /* element */ JQuery, Unit]])
-    ): Self = StObject.set(x, "onFailure", value.asInstanceOf[js.Any])
+    inline def setOnFailure(value: (/* response */ Any, /* element */ JQuery) => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction2(value))
     
     inline def setOnRequest(value: (/* promise */ Deferred[Any, Any, Any], /* xhr */ jqXHR[Any]) => Unit): Self = StObject.set(x, "onRequest", js.Any.fromFunction2(value))
     

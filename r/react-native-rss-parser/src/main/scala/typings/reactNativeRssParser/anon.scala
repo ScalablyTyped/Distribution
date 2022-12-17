@@ -9,78 +9,6 @@ object anon {
   
   trait Authors extends StObject {
     
-    var authors: js.Array[Name]
-    
-    var block: Maybe[String]
-    
-    var categories: js.Array[SubCategories]
-    
-    var complete: Maybe[String]
-    
-    var explicit: String
-    
-    var image: String
-    
-    var newFeedUrl: Maybe[String]
-    
-    var owner: Email
-    
-    var subtitle: Maybe[String]
-    
-    var summary: String
-  }
-  object Authors {
-    
-    inline def apply(
-      authors: js.Array[Name],
-      categories: js.Array[SubCategories],
-      explicit: String,
-      image: String,
-      owner: Email,
-      summary: String
-    ): Authors = {
-      val __obj = js.Dynamic.literal(authors = authors.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any], explicit = explicit.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Authors]
-    }
-    
-    extension [Self <: Authors](x: Self) {
-      
-      inline def setAuthors(value: js.Array[Name]): Self = StObject.set(x, "authors", value.asInstanceOf[js.Any])
-      
-      inline def setAuthorsVarargs(value: Name*): Self = StObject.set(x, "authors", js.Array(value*))
-      
-      inline def setBlock(value: Maybe[String]): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
-      
-      inline def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
-      
-      inline def setCategories(value: js.Array[SubCategories]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
-      
-      inline def setCategoriesVarargs(value: SubCategories*): Self = StObject.set(x, "categories", js.Array(value*))
-      
-      inline def setComplete(value: Maybe[String]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
-      
-      inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
-      
-      inline def setExplicit(value: String): Self = StObject.set(x, "explicit", value.asInstanceOf[js.Any])
-      
-      inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
-      
-      inline def setNewFeedUrl(value: Maybe[String]): Self = StObject.set(x, "newFeedUrl", value.asInstanceOf[js.Any])
-      
-      inline def setNewFeedUrlUndefined: Self = StObject.set(x, "newFeedUrl", js.undefined)
-      
-      inline def setOwner(value: Email): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
-      
-      inline def setSubtitle(value: Maybe[String]): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
-      
-      inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
-      
-      inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Block extends StObject {
-    
     var authors: Maybe[js.Array[Name]]
     
     var block: Maybe[String]
@@ -99,14 +27,14 @@ object anon {
     
     var summary: Maybe[String]
   }
-  object Block {
+  object Authors {
     
-    inline def apply(duration: String, explicit: String, subtitle: String): Block = {
+    inline def apply(duration: String, explicit: String, subtitle: String): Authors = {
       val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], explicit = explicit.asInstanceOf[js.Any], subtitle = subtitle.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Block]
+      __obj.asInstanceOf[Authors]
     }
     
-    extension [Self <: Block](x: Self) {
+    extension [Self <: Authors](x: Self) {
       
       inline def setAuthors(value: Maybe[js.Array[Name]]): Self = StObject.set(x, "authors", value.asInstanceOf[js.Any])
       
@@ -139,6 +67,78 @@ object anon {
       inline def setSummary(value: Maybe[String]): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
       
       inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+    }
+  }
+  
+  trait Block extends StObject {
+    
+    var authors: js.Array[Name]
+    
+    var block: Maybe[String]
+    
+    var categories: js.Array[SubCategories]
+    
+    var complete: Maybe[String]
+    
+    var explicit: String
+    
+    var image: String
+    
+    var newFeedUrl: Maybe[String]
+    
+    var owner: Email
+    
+    var subtitle: Maybe[String]
+    
+    var summary: String
+  }
+  object Block {
+    
+    inline def apply(
+      authors: js.Array[Name],
+      categories: js.Array[SubCategories],
+      explicit: String,
+      image: String,
+      owner: Email,
+      summary: String
+    ): Block = {
+      val __obj = js.Dynamic.literal(authors = authors.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any], explicit = explicit.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Block]
+    }
+    
+    extension [Self <: Block](x: Self) {
+      
+      inline def setAuthors(value: js.Array[Name]): Self = StObject.set(x, "authors", value.asInstanceOf[js.Any])
+      
+      inline def setAuthorsVarargs(value: Name*): Self = StObject.set(x, "authors", js.Array(value*))
+      
+      inline def setBlock(value: Maybe[String]): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+      
+      inline def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
+      
+      inline def setCategories(value: js.Array[SubCategories]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+      
+      inline def setCategoriesVarargs(value: SubCategories*): Self = StObject.set(x, "categories", js.Array(value*))
+      
+      inline def setComplete(value: Maybe[String]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      
+      inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+      
+      inline def setExplicit(value: String): Self = StObject.set(x, "explicit", value.asInstanceOf[js.Any])
+      
+      inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      
+      inline def setNewFeedUrl(value: Maybe[String]): Self = StObject.set(x, "newFeedUrl", value.asInstanceOf[js.Any])
+      
+      inline def setNewFeedUrlUndefined: Self = StObject.set(x, "newFeedUrl", js.undefined)
+      
+      inline def setOwner(value: Email): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+      
+      inline def setSubtitle(value: Maybe[String]): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+      
+      inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+      
+      inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     }
   }
   

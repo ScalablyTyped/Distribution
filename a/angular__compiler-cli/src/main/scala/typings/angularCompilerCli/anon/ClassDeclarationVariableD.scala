@@ -4,7 +4,6 @@ import typings.typescript.mod.BindingName
 import typings.typescript.mod.CatchClause
 import typings.typescript.mod.ExclamationToken
 import typings.typescript.mod.Expression
-import typings.typescript.mod.Identifier
 import typings.typescript.mod.ModifierLike
 import typings.typescript.mod.Node
 import typings.typescript.mod.NodeArray
@@ -104,7 +103,7 @@ trait ClassDeclarationVariableD extends StObject {
     */
   val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
   
-  val name: BindingName & Identifier = js.native
+  val name: BindingName = js.native
   
   val parent: VariableDeclarationList | CatchClause = js.native
   

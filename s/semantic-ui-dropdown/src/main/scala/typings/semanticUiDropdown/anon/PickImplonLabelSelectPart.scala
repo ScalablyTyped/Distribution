@@ -125,7 +125,7 @@ trait PickImplonLabelSelectPart
   
   def onLabelSelect($selectedLabels: JQuery): Unit
   @JSName("onLabelSelect")
-  var onLabelSelect_Original: (js.ThisFunction1[/* this */ JQuery, /* $selectedLabels */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $selectedLabels */ JQuery, Unit]])
+  var onLabelSelect_Original: js.ThisFunction1[/* this */ JQuery, /* $selectedLabels */ JQuery, Unit]
   
   var onNoResults: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* searchValue */ Any, Unit]] = js.undefined
   
@@ -171,9 +171,7 @@ trait PickImplonLabelSelectPart
 }
 object PickImplonLabelSelectPart {
   
-  inline def apply(
-    onLabelSelect: (js.ThisFunction1[/* this */ JQuery, /* $selectedLabels */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $selectedLabels */ JQuery, Unit]])
-  ): PickImplonLabelSelectPart = {
+  inline def apply(onLabelSelect: js.ThisFunction1[/* this */ JQuery, /* $selectedLabels */ JQuery, Unit]): PickImplonLabelSelectPart = {
     val __obj = js.Dynamic.literal(onLabelSelect = onLabelSelect.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonLabelSelectPart]
   }
@@ -336,9 +334,7 @@ object PickImplonLabelSelectPart {
     
     inline def setOnLabelRemoveUndefined: Self = StObject.set(x, "onLabelRemove", js.undefined)
     
-    inline def setOnLabelSelect(
-      value: (js.ThisFunction1[/* this */ JQuery, /* $selectedLabels */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $selectedLabels */ JQuery, Unit]])
-    ): Self = StObject.set(x, "onLabelSelect", value.asInstanceOf[js.Any])
+    inline def setOnLabelSelect(value: js.ThisFunction1[/* this */ JQuery, /* $selectedLabels */ JQuery, Unit]): Self = StObject.set(x, "onLabelSelect", value.asInstanceOf[js.Any])
     
     inline def setOnNoResults(value: js.ThisFunction1[/* this */ JQuery, /* searchValue */ Any, Unit]): Self = StObject.set(x, "onNoResults", value.asInstanceOf[js.Any])
     

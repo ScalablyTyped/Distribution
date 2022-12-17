@@ -45,7 +45,7 @@ trait PickImplcachePartialPickI
   
   var beforeXHR: js.UndefOr[js.Function1[/* xhrObject */ jqXHR[Any], Any]] = js.undefined
   
-  var cache: (local | Boolean) & (js.UndefOr[local | Boolean])
+  var cache: local | Boolean
   
   var className: js.UndefOr[ClassNameSettings] = js.undefined
   
@@ -147,7 +147,7 @@ trait PickImplcachePartialPickI
 }
 object PickImplcachePartialPickI {
   
-  inline def apply(cache: (local | Boolean) & (js.UndefOr[local | Boolean])): PickImplcachePartialPickI = {
+  inline def apply(cache: local | Boolean): PickImplcachePartialPickI = {
     val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplcachePartialPickI]
   }
@@ -170,7 +170,7 @@ object PickImplcachePartialPickI {
     
     inline def setBeforeXHRUndefined: Self = StObject.set(x, "beforeXHR", js.undefined)
     
-    inline def setCache(value: (local | Boolean) & (js.UndefOr[local | Boolean])): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: local | Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
     inline def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

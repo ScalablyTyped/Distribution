@@ -10,7 +10,7 @@ trait PickImplactionPartialPick
   extends StObject
      with Param {
   
-  var action: String & js.UndefOr[String]
+  var action: String
   
   var actionText: js.UndefOr[String] = js.undefined
   
@@ -34,14 +34,14 @@ trait PickImplactionPartialPick
 }
 object PickImplactionPartialPick {
   
-  inline def apply(action: String & js.UndefOr[String]): PickImplactionPartialPick = {
+  inline def apply(action: String): PickImplactionPartialPick = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplactionPartialPick]
   }
   
   extension [Self <: PickImplactionPartialPick](x: Self) {
     
-    inline def setAction(value: String & js.UndefOr[String]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     inline def setActionText(value: String): Self = StObject.set(x, "actionText", value.asInstanceOf[js.Any])
     

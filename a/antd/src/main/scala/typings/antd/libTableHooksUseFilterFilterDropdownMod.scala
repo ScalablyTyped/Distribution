@@ -216,7 +216,7 @@ object libTableHooksUseFilterFilterDropdownMod {
     
     var checkable: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[js.Array[ColumnFilterItem]] & js.UndefOr[js.Array[Any]]
+    var children: js.UndefOr[js.Array[ColumnFilterItem]] = js.undefined
     
     /** Set style of TreeNode. This is not recommend if you don't have any force requirement */
     var className: js.UndefOr[String] = js.undefined
@@ -245,12 +245,8 @@ object libTableHooksUseFilterFilterDropdownMod {
   }
   object TreeColumnFilterItem {
     
-    inline def apply(
-      children: js.UndefOr[js.Array[ColumnFilterItem]] & js.UndefOr[js.Array[Any]],
-      key: typings.react.mod.Key,
-      value: String | Double | Boolean
-    ): TreeColumnFilterItem = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    inline def apply(key: typings.react.mod.Key, value: String | Double | Boolean): TreeColumnFilterItem = {
+      val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[TreeColumnFilterItem]
     }
     
@@ -260,7 +256,11 @@ object libTableHooksUseFilterFilterDropdownMod {
       
       inline def setCheckableUndefined: Self = StObject.set(x, "checkable", js.undefined)
       
-      inline def setChildren(value: js.UndefOr[js.Array[ColumnFilterItem]] & js.UndefOr[js.Array[Any]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[ColumnFilterItem]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setChildrenVarargs(value: ColumnFilterItem*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

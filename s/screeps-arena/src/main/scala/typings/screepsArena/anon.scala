@@ -20,9 +20,9 @@ object anon {
   
   trait Error extends StObject {
     
-    var error: js.UndefOr[ERR_BUSY | ERR_INVALID_ARGS | ERR_NOT_ENOUGH_ENERGY] = js.undefined
+    var error: js.UndefOr[ERR_INVALID_ARGS | ERR_INVALID_TARGET | ERR_FULL] = js.undefined
     
-    var `object`: js.UndefOr[Structure[StructureConstant]] = js.undefined
+    var `object`: js.UndefOr[ConstructionSite] = js.undefined
   }
   object Error {
     
@@ -33,11 +33,11 @@ object anon {
     
     extension [Self <: Error](x: Self) {
       
-      inline def setError(value: ERR_BUSY | ERR_INVALID_ARGS | ERR_NOT_ENOUGH_ENERGY): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: ERR_INVALID_ARGS | ERR_INVALID_TARGET | ERR_FULL): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      inline def setObject(value: Structure[StructureConstant]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: ConstructionSite): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
       inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
     }
@@ -92,9 +92,9 @@ object anon {
   
   trait Object extends StObject {
     
-    var error: js.UndefOr[ERR_INVALID_ARGS | ERR_INVALID_TARGET | ERR_FULL] = js.undefined
+    var error: js.UndefOr[ERR_BUSY | ERR_INVALID_ARGS | ERR_NOT_ENOUGH_ENERGY] = js.undefined
     
-    var `object`: js.UndefOr[ConstructionSite] = js.undefined
+    var `object`: js.UndefOr[Structure[StructureConstant]] = js.undefined
   }
   object Object {
     
@@ -105,11 +105,11 @@ object anon {
     
     extension [Self <: Object](x: Self) {
       
-      inline def setError(value: ERR_INVALID_ARGS | ERR_INVALID_TARGET | ERR_FULL): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: ERR_BUSY | ERR_INVALID_ARGS | ERR_NOT_ENOUGH_ENERGY): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      inline def setObject(value: ConstructionSite): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Structure[StructureConstant]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
       inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
     }

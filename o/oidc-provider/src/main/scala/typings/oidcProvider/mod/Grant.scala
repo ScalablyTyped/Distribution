@@ -1,8 +1,8 @@
 package typings.oidcProvider.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.oidcProvider.anon.Claims
 import typings.oidcProvider.anon.PickGrantopenidresources
+import typings.oidcProvider.anon.Scope
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -41,7 +41,7 @@ trait Grant
   
   def getResourceScopeFiltered(resource: String, filter: Set[String]): String = js.native
   
-  var openid: js.UndefOr[Claims] = js.native
+  var openid: js.UndefOr[Scope] = js.native
   
   def rejectOIDCClaims(claims: js.Array[String]): Unit = js.native
   

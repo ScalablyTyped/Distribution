@@ -171,7 +171,7 @@ object anon {
     
     var filename: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] & String
+    var id: js.UndefOr[String] = js.undefined
     
     var inNodeModules: js.UndefOr[Boolean] = js.undefined
     
@@ -183,8 +183,8 @@ object anon {
   }
   object PartialParentObjectidstri {
     
-    inline def apply(id: js.UndefOr[String] & String): PartialParentObjectidstri = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    inline def apply(): PartialParentObjectidstri = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialParentObjectidstri]
     }
     
@@ -204,7 +204,9 @@ object anon {
       
       inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      inline def setId(value: js.UndefOr[String] & String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
       inline def setInNodeModules(value: Boolean): Self = StObject.set(x, "inNodeModules", value.asInstanceOf[js.Any])
       

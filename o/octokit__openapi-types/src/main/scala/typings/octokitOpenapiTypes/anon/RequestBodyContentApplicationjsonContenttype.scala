@@ -10,15 +10,11 @@ trait RequestBodyContentApplicationjsonContenttype extends StObject {
   
   var requestBody: ContentApplicationjsonContenttype
   
-  var responses: `200ContentApplicationjsonSecret`
+  var responses: `200Content2`
 }
 object RequestBodyContentApplicationjsonContenttype {
   
-  inline def apply(
-    parameters: PathHookid,
-    requestBody: ContentApplicationjsonContenttype,
-    responses: `200ContentApplicationjsonSecret`
-  ): RequestBodyContentApplicationjsonContenttype = {
+  inline def apply(parameters: PathHookid, requestBody: ContentApplicationjsonContenttype, responses: `200Content2`): RequestBodyContentApplicationjsonContenttype = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyContentApplicationjsonContenttype]
   }
@@ -29,6 +25,6 @@ object RequestBodyContentApplicationjsonContenttype {
     
     inline def setRequestBody(value: ContentApplicationjsonContenttype): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200ContentApplicationjsonSecret`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200Content2`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

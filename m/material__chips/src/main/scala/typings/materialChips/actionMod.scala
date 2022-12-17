@@ -8,13 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object actionMod {
   
-  @JSImport("@material/chips/action", JSImport.Default)
-  @js.native
-  open class default ()
-    extends typings.materialChips.actionTrailingFoundationMod.default {
-    def this(adapter: PartialMDCChipActionAdapt) = this()
-  }
-  
   @JSImport("@material/chips/action", "MDCChipAction")
   @js.native
   open class MDCChipAction protected ()

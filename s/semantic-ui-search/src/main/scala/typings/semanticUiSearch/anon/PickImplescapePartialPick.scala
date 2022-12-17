@@ -14,7 +14,7 @@ trait PickImplescapePartialPick
   
   def escape(string: String): String
   @JSName("escape")
-  var escape_Original: (js.Function1[/* string */ String, String]) & (js.UndefOr[js.Function1[/* string */ String, String]])
+  var escape_Original: js.Function1[/* string */ String, String]
   
   var message: js.UndefOr[js.Function2[/* message */ String, /* type */ String, String]] = js.undefined
   
@@ -22,10 +22,8 @@ trait PickImplescapePartialPick
 }
 object PickImplescapePartialPick {
   
-  inline def apply(
-    escape: (js.Function1[/* string */ String, String]) & (js.UndefOr[js.Function1[/* string */ String, String]])
-  ): PickImplescapePartialPick = {
-    val __obj = js.Dynamic.literal(escape = escape.asInstanceOf[js.Any])
+  inline def apply(escape: /* string */ String => String): PickImplescapePartialPick = {
+    val __obj = js.Dynamic.literal(escape = js.Any.fromFunction1(escape))
     __obj.asInstanceOf[PickImplescapePartialPick]
   }
   
@@ -35,9 +33,7 @@ object PickImplescapePartialPick {
     
     inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
-    inline def setEscape(
-      value: (js.Function1[/* string */ String, String]) & (js.UndefOr[js.Function1[/* string */ String, String]])
-    ): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
+    inline def setEscape(value: /* string */ String => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
     
     inline def setMessage(value: (/* message */ String, /* type */ String) => String): Self = StObject.set(x, "message", js.Any.fromFunction2(value))
     

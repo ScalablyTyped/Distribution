@@ -1,6 +1,6 @@
 package typings.orbitUiReactComponents
 
-import typings.orbitUiReactComponents.anon.`3`
+import typings.orbitUiReactComponents.anon.`0`
 import typings.orbitUiReactComponents.orbitUiReactComponentsStrings.className
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
@@ -13,22 +13,22 @@ object distInputSrcWrappedInputPropsAdapterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def wrappedInputPropsAdapter[P /* <: `3` */](param0: P): (Omit[P, className]) & AdaptedWrappedInputProps = ^.asInstanceOf[js.Dynamic].applyDynamic("wrappedInputPropsAdapter")(param0.asInstanceOf[js.Any]).asInstanceOf[(Omit[P, className]) & AdaptedWrappedInputProps]
+  inline def wrappedInputPropsAdapter[P /* <: `0` */](param0: P): (Omit[P, className]) & AdaptedWrappedInputProps = ^.asInstanceOf[js.Dynamic].applyDynamic("wrappedInputPropsAdapter")(param0.asInstanceOf[js.Any]).asInstanceOf[(Omit[P, className]) & AdaptedWrappedInputProps]
   
   trait AdaptedWrappedInputProps extends StObject {
     
-    var wrapperProps: `3`
+    var wrapperProps: `0`
   }
   object AdaptedWrappedInputProps {
     
-    inline def apply(wrapperProps: `3`): AdaptedWrappedInputProps = {
+    inline def apply(wrapperProps: `0`): AdaptedWrappedInputProps = {
       val __obj = js.Dynamic.literal(wrapperProps = wrapperProps.asInstanceOf[js.Any])
       __obj.asInstanceOf[AdaptedWrappedInputProps]
     }
     
     extension [Self <: AdaptedWrappedInputProps](x: Self) {
       
-      inline def setWrapperProps(value: `3`): Self = StObject.set(x, "wrapperProps", value.asInstanceOf[js.Any])
+      inline def setWrapperProps(value: `0`): Self = StObject.set(x, "wrapperProps", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -14,7 +14,6 @@ import typings.reactSketchapp.anon.Instantiable
 import typings.reactSketchapp.anon.Name
 import typings.reactSketchapp.anon.PreserveAspectRatioString
 import typings.reactSketchapp.anon.ResizingConstraint
-import typings.reactSketchapp.anon.Scale
 import typings.reactSketchapp.anon.Shadows
 import typings.reactSketchapp.anon.Sketch
 import typings.reactSketchapp.anon.Style
@@ -39,6 +38,7 @@ import typings.reactSketchapp.anon.TypeofText
 import typings.reactSketchapp.anon.TypeofTextPath
 import typings.reactSketchapp.anon.TypeofUse
 import typings.reactSketchapp.anon.UseColumns
+import typings.reactSketchapp.anon.Width
 import typings.reactSketchapp.anon.`0`
 import typings.reactSketchapp.libComponentsArtboardMod.Props
 import typings.reactSketchapp.libStylesheetTypesMod.RawStyle
@@ -557,5 +557,5 @@ object mod {
   inline def renderToJSON(element: ReactElement): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("renderToJSON")(element.asInstanceOf[js.Any]).asInstanceOf[Any]
   inline def renderToJSON(element: ReactElement, platformBridge: PlatformBridge): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("renderToJSON")(element.asInstanceOf[js.Any], platformBridge.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def useWindowDimensions(): Scale = ^.asInstanceOf[js.Dynamic].applyDynamic("useWindowDimensions")().asInstanceOf[Scale]
+  inline def useWindowDimensions(): Width = ^.asInstanceOf[js.Dynamic].applyDynamic("useWindowDimensions")().asInstanceOf[Width]
 }

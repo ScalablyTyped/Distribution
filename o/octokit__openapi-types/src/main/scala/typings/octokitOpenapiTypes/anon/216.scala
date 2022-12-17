@@ -6,17 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `216` extends StObject {
   
-  var query: Packagetype
+  /** The full path, relative to the repository root, of the dependency manifest file. */
+  var name: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['manifest-path'] */ js.Any
+  ] = js.undefined
 }
 object `216` {
   
-  inline def apply(query: Packagetype): `216` = {
-    val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
+  inline def apply(): `216` = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`216`]
   }
   
   extension [Self <: `216`](x: Self) {
     
-    inline def setQuery(value: Packagetype): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setName(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['manifest-path'] */ js.Any
+    ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

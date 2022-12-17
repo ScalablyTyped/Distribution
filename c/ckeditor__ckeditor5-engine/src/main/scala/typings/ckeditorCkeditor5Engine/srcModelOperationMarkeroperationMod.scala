@@ -1,7 +1,7 @@
 package typings.ckeditorCkeditor5Engine
 
 import typings.ckeditorCkeditor5Engine.anon.AffectsData
-import typings.ckeditorCkeditor5Engine.anon.`13`
+import typings.ckeditorCkeditor5Engine.anon.`12`
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.marker
 import typings.ckeditorCkeditor5Engine.srcModelOperationOperationMod.Operation
 import org.scalablytyped.runtime.StObject
@@ -105,7 +105,7 @@ object srcModelOperationMarkeroperationMod {
       * Custom toJSON method to solve child-parent circular dependencies.
       */
     /* CompleteClass */
-    override def toJSON(): `13` = js.native
+    override def toJSON(): `12` = js.native
     
     /**
       * Operation type.
@@ -181,7 +181,7 @@ object srcModelOperationMarkeroperationMod {
       getReversed: () => MarkerOperation,
       isDocumentOperation: Boolean,
       name: String,
-      toJSON: () => `13`
+      toJSON: () => `12`
     ): MarkerOperation = {
       val __obj = js.Dynamic.literal(affectsData = affectsData.asInstanceOf[js.Any], getReversed = js.Any.fromFunction0(getReversed), isDocumentOperation = isDocumentOperation.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), baseVersion = null, batch = null, newRange = null, oldRange = null)
       __obj.updateDynamic("clone")(js.Any.fromFunction0(clone_))

@@ -9,7 +9,7 @@ import typings.vscode.mod.TextDocument
 import typings.vscode.mod.TextDocumentChangeEvent
 import typings.vscode.mod.TextDocumentWillSaveEvent
 import typings.vscode.mod.TextEdit
-import typings.vscodeLanguageclient.anon.SendT
+import typings.vscodeLanguageclient.anon.Send
 import typings.vscodeLanguageclient.libCommonFeaturesMod.DynamicDocumentFeature
 import typings.vscodeLanguageclient.libCommonFeaturesMod.DynamicFeature
 import typings.vscodeLanguageclient.libCommonFeaturesMod.FeatureClient
@@ -66,7 +66,7 @@ object libCommonTextSynchronizationMod {
       * Returns a provider for the given text document.
       */
     /* CompleteClass */
-    override def getProvider(document: TextDocument): js.UndefOr[SendT[js.Function1[/* event */ TextDocumentChangeEvent, js.Promise[Unit]]]] = js.native
+    override def getProvider(document: TextDocument): js.UndefOr[Send[js.Function1[/* event */ TextDocumentChangeEvent, js.Promise[Unit]]]] = js.native
     
     /* private */ var notificationSent: Any = js.native
     

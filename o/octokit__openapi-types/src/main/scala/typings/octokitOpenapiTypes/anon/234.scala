@@ -6,22 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `234` extends StObject {
   
-  /** The unique identifier of the installation. */
-  var installation_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['installation-id'] */ js.Any
+  var path: OwnerRef
 }
 object `234` {
   
-  inline def apply(
-    installation_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['installation-id'] */ js.Any
-  ): `234` = {
-    val __obj = js.Dynamic.literal(installation_id = installation_id.asInstanceOf[js.Any])
+  inline def apply(path: OwnerRef): `234` = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[`234`]
   }
   
   extension [Self <: `234`](x: Self) {
     
-    inline def setInstallation_id(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['installation-id'] */ js.Any
-    ): Self = StObject.set(x, "installation_id", value.asInstanceOf[js.Any])
+    inline def setPath(value: OwnerRef): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

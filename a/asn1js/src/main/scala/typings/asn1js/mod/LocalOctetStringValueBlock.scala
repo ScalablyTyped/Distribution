@@ -5,9 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocalOctetStringValueBlock
-  extends StObject
-     with LocalConstructedValueBlock {
+trait LocalOctetStringValueBlock extends LocalConstructedValueBlock {
   
   var isConstructed: scala.Boolean = js.native
   

@@ -92,9 +92,9 @@ trait PickPickAnimatedPropsText extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: 'importantForAccessibility' extends react-native.react-native.Animated.NonAnimatedProps ? 'importantForAccessibility' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<'auto' | 'yes' | 'no' | 'no-hide-descendants' | undefined> : 'auto' | 'yes' | 'no' | 'no-hide-descendants' | undefined : react-native.react-native.Animated.WithAnimatedValue<'auto' | 'yes' | 'no' | 'no-hide-descendants' | undefined> */ js.Any
   ] = js.undefined
   
-  var key: (js.UndefOr[
+  var key: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: 'key' extends react-native.react-native.Animated.NonAnimatedProps ? 'key' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<react.react.Key | null | undefined> : react.react.Key | null | undefined : react-native.react-native.Animated.WithAnimatedValue<react.react.Key | null | undefined> */ js.Any
-  ]) & (js.UndefOr[typings.react.mod.Key | Null])
+  ] = js.undefined
   
   var lineBreakMode: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: 'lineBreakMode' extends react-native.react-native.Animated.NonAnimatedProps ? 'lineBreakMode' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<'head' | 'middle' | 'tail' | 'clip' | undefined> : 'head' | 'middle' | 'tail' | 'clip' | undefined : react-native.react-native.Animated.WithAnimatedValue<'head' | 'middle' | 'tail' | 'clip' | undefined> */ js.Any
@@ -188,12 +188,8 @@ trait PickPickAnimatedPropsText extends StObject {
 }
 object PickPickAnimatedPropsText {
   
-  inline def apply(
-    key: (js.UndefOr[
-      /* import warning: importer.ImportType#apply Failed type conversion: 'key' extends react-native.react-native.Animated.NonAnimatedProps ? 'key' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<react.react.Key | null | undefined> : react.react.Key | null | undefined : react-native.react-native.Animated.WithAnimatedValue<react.react.Key | null | undefined> */ js.Any
-    ]) & (js.UndefOr[typings.react.mod.Key | Null])
-  ): PickPickAnimatedPropsText = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+  inline def apply(): PickPickAnimatedPropsText = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PickPickAnimatedPropsText]
   }
   
@@ -326,10 +322,10 @@ object PickPickAnimatedPropsText {
     inline def setImportantForAccessibilityUndefined: Self = StObject.set(x, "importantForAccessibility", js.undefined)
     
     inline def setKey(
-      value: (js.UndefOr[
-          /* import warning: importer.ImportType#apply Failed type conversion: 'key' extends react-native.react-native.Animated.NonAnimatedProps ? 'key' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<react.react.Key | null | undefined> : react.react.Key | null | undefined : react-native.react-native.Animated.WithAnimatedValue<react.react.Key | null | undefined> */ js.Any
-        ]) & (js.UndefOr[typings.react.mod.Key | Null])
+      value: /* import warning: importer.ImportType#apply Failed type conversion: 'key' extends react-native.react-native.Animated.NonAnimatedProps ? 'key' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<react.react.Key | null | undefined> : react.react.Key | null | undefined : react-native.react-native.Animated.WithAnimatedValue<react.react.Key | null | undefined> */ js.Any
     ): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     inline def setLineBreakMode(
       value: /* import warning: importer.ImportType#apply Failed type conversion: 'lineBreakMode' extends react-native.react-native.Animated.NonAnimatedProps ? 'lineBreakMode' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<'head' | 'middle' | 'tail' | 'clip' | undefined> : 'head' | 'middle' | 'tail' | 'clip' | undefined : react-native.react-native.Animated.WithAnimatedValue<'head' | 'middle' | 'tail' | 'clip' | undefined> */ js.Any

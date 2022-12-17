@@ -28,7 +28,7 @@ trait PickImplapiSettingsPartia
   
   var alwaysRefresh: js.UndefOr[Boolean] = js.undefined
   
-  var apiSettings: ApiSettings & js.UndefOr[ApiSettings]
+  var apiSettings: ApiSettings
   
   var auto: js.UndefOr[Boolean] = js.undefined
   
@@ -104,7 +104,7 @@ trait PickImplapiSettingsPartia
 }
 object PickImplapiSettingsPartia {
   
-  inline def apply(apiSettings: ApiSettings & js.UndefOr[ApiSettings]): PickImplapiSettingsPartia = {
+  inline def apply(apiSettings: ApiSettings): PickImplapiSettingsPartia = {
     val __obj = js.Dynamic.literal(apiSettings = apiSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplapiSettingsPartia]
   }
@@ -115,7 +115,7 @@ object PickImplapiSettingsPartia {
     
     inline def setAlwaysRefreshUndefined: Self = StObject.set(x, "alwaysRefresh", js.undefined)
     
-    inline def setApiSettings(value: ApiSettings & js.UndefOr[ApiSettings]): Self = StObject.set(x, "apiSettings", value.asInstanceOf[js.Any])
+    inline def setApiSettings(value: ApiSettings): Self = StObject.set(x, "apiSettings", value.asInstanceOf[js.Any])
     
     inline def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
     

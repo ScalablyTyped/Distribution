@@ -1,5 +1,6 @@
 package typings.pkijs.mod
 
+import typings.pkijs.anon.OptionalSignature
 import typings.std.CryptoKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -35,11 +36,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * const ocspReqRaw = ocspReq.toSchema(true).toBER();
   * ```
   */
+@JSImport("pkijs", "OCSPRequest")
 @js.native
-trait OCSPRequest
-  extends StObject
-     with PkiObject
+/**
+  * Initializes a new instance of the {@link OCSPRequest} class
+  * @param parameters Initialization parameters
+  */
+open class OCSPRequest ()
+  extends PkiObject
      with IOCSPRequest {
+  def this(parameters: OCSPRequestParameters) = this()
   
   /**
     * Making OCSP Request for specific certificate
@@ -61,5 +67,53 @@ trait OCSPRequest
   def sign(privateKey: CryptoKey, hashAlgorithm: String, crypto: ICryptoEngine): js.Promise[Unit] = js.native
   def sign(privateKey: CryptoKey, hashAlgorithm: Unit, crypto: ICryptoEngine): js.Promise[Unit] = js.native
   
+  /* CompleteClass */
+  var tbsRequest: TBSRequest = js.native
+  
   def verify(): Unit = js.native
+}
+object OCSPRequest {
+  
+  @JSImport("pkijs", "OCSPRequest")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("pkijs", "OCSPRequest.CLASS_NAME")
+  @js.native
+  def CLASS_NAME: String = js.native
+  inline def CLASS_NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASS_NAME")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Compare values with default values for all class members
+    * @param memberName String name for a class member
+    * @param memberValue Value to compare with default value
+    * @returns Returns `true` if `memberValue` is equal to default value for selected class member
+    */
+  /* static member */
+  inline def compareWithDefault(memberName: String, memberValue: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareWithDefault")(memberName.asInstanceOf[js.Any], memberValue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  /**
+    * Returns default values for all class members
+    * @param memberName String name for a class member
+    * @returns Default value
+    */
+  /* static member */
+  inline def defaultValues(memberName: /* "tbsRequest" */ String): TBSRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[TBSRequest]
+  
+  /* static member */
+  inline def defaultValues_Signature(memberName: /* "optionalSignature" */ String): Signature = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[Signature]
+  
+  /**
+    * @inheritdoc
+    * @asn ASN.1 schema
+    * ```asn
+    * OCSPRequest ::= SEQUENCE {
+    *    tbsRequest                  TBSRequest,
+    *    optionalSignature   [0]     EXPLICIT Signature OPTIONAL }
+    *```
+    */
+  /* static member */
+  inline def schema(): SchemaType = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[SchemaType]
+  inline def schema(parameters: SchemaParameters[OptionalSignature]): SchemaType = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[SchemaType]
 }

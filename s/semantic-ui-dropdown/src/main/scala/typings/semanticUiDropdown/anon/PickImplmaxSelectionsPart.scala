@@ -89,7 +89,7 @@ trait PickImplmaxSelectionsPart
   
   var `match`: js.UndefOr[both | value | text] = js.undefined
   
-  var maxSelections: (`false` | Double) & (js.UndefOr[`false` | Double])
+  var maxSelections: `false` | Double
   
   var message: js.UndefOr[MessageSettings] = js.undefined
   
@@ -169,7 +169,7 @@ trait PickImplmaxSelectionsPart
 }
 object PickImplmaxSelectionsPart {
   
-  inline def apply(maxSelections: (`false` | Double) & (js.UndefOr[`false` | Double])): PickImplmaxSelectionsPart = {
+  inline def apply(maxSelections: `false` | Double): PickImplmaxSelectionsPart = {
     val __obj = js.Dynamic.literal(maxSelections = maxSelections.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmaxSelectionsPart]
   }
@@ -276,7 +276,7 @@ object PickImplmaxSelectionsPart {
     
     inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
     
-    inline def setMaxSelections(value: (`false` | Double) & (js.UndefOr[`false` | Double])): Self = StObject.set(x, "maxSelections", value.asInstanceOf[js.Any])
+    inline def setMaxSelections(value: `false` | Double): Self = StObject.set(x, "maxSelections", value.asInstanceOf[js.Any])
     
     inline def setMessage(value: MessageSettings): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

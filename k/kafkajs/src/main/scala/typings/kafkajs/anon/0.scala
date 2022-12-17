@@ -1,25 +1,32 @@
 package typings.kafkajs.anon
 
-import typings.kafkajs.mod.ITopicMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `0` extends StObject {
   
-  var topics: js.Array[ITopicMetadata]
+  var timeout: js.UndefOr[Double] = js.undefined
+  
+  var topics: js.UndefOr[js.Array[typings.kafkajs.mod.TopicPartitions]] = js.undefined
 }
 object `0` {
   
-  inline def apply(topics: js.Array[ITopicMetadata]): `0` = {
-    val __obj = js.Dynamic.literal(topics = topics.asInstanceOf[js.Any])
+  inline def apply(): `0` = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`0`]
   }
   
   extension [Self <: `0`](x: Self) {
     
-    inline def setTopics(value: js.Array[ITopicMetadata]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    inline def setTopicsVarargs(value: ITopicMetadata*): Self = StObject.set(x, "topics", js.Array(value*))
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    
+    inline def setTopics(value: js.Array[typings.kafkajs.mod.TopicPartitions]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
+    
+    inline def setTopicsUndefined: Self = StObject.set(x, "topics", js.undefined)
+    
+    inline def setTopicsVarargs(value: typings.kafkajs.mod.TopicPartitions*): Self = StObject.set(x, "topics", js.Array(value*))
   }
 }

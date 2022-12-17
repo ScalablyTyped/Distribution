@@ -83,7 +83,7 @@ trait PickImplkeysPartialPickIm
   
   var keepOnScreen: js.UndefOr[Boolean] = js.undefined
   
-  var keys: KeySettings & js.UndefOr[KeySettings]
+  var keys: KeySettings
   
   var label: js.UndefOr[LabelSettings] = js.undefined
   
@@ -169,7 +169,7 @@ trait PickImplkeysPartialPickIm
 }
 object PickImplkeysPartialPickIm {
   
-  inline def apply(keys: KeySettings & js.UndefOr[KeySettings]): PickImplkeysPartialPickIm = {
+  inline def apply(keys: KeySettings): PickImplkeysPartialPickIm = {
     val __obj = js.Dynamic.literal(keys = keys.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplkeysPartialPickIm]
   }
@@ -264,7 +264,7 @@ object PickImplkeysPartialPickIm {
     
     inline def setKeepOnScreenUndefined: Self = StObject.set(x, "keepOnScreen", js.undefined)
     
-    inline def setKeys(value: KeySettings & js.UndefOr[KeySettings]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: KeySettings): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
     inline def setLabel(value: LabelSettings): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,7 @@
 package typings.reactNativeWindowsFs.anon
 
 import typings.node.NodeJS.ErrnoException
+import typings.node.anon.`2`
 import typings.node.bufferMod.global.Buffer
 import typings.node.fsMod.EncodingOption
 import typings.reactNativeWindowsFs.reactNativeWindowsFsStrings.buffer
@@ -14,7 +15,7 @@ trait Typeofmkdtemp extends StObject {
   def apply(prefix: String, callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ String, Unit]): Unit = js.native
   def apply(
     prefix: String,
-    options: typings.node.anon.Encoding,
+    options: `2`,
     callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ Buffer, Unit]
   ): Unit = js.native
   def apply(

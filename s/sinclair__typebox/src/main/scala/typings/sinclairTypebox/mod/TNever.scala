@@ -1,7 +1,7 @@
 package typings.sinclairTypebox.mod
 
 import typings.sinclairTypebox.anon.Const
-import typings.sinclairTypebox.anon.`0`
+import typings.sinclairTypebox.anon.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,5 +11,5 @@ trait TNever
   extends StObject
      with TSchema {
   
-  var allOf: js.Tuple2[Const, `0`] = js.native
+  var allOf: js.Tuple2[Const, `2`] = js.native
 }

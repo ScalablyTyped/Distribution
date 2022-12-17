@@ -2,7 +2,7 @@ package typings.playcanvas.mod
 
 import typings.playcanvas.anon.Cameras
 import typings.playcanvas.anon.CompileTime
-import typings.playcanvas.anon.Depth
+import typings.playcanvas.anon.Forward
 import typings.playcanvas.anon.FrameTime
 import typings.playcanvas.anon.Ib
 import typings.playcanvas.anon.RenderTargetCreationTime
@@ -21,7 +21,7 @@ trait ApplicationStats extends StObject {
   
   def batcher: Any = js.native
   
-  var drawCalls: Depth = js.native
+  var drawCalls: Forward = js.native
   
   var frame: Cameras = js.native
   

@@ -10,10 +10,10 @@ Responsive React grid system built with styled-system, with support for styled-c
 | ------------------ | :-------------: |
 | Full name          | @rebass/grid |
 | Keywords           | react, styled-components, styled-system, grid, flexbox, layout, css |
-| # releases         | 3 |
-| # dependents       | 45 |
-| # downloads        | 940748 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 66964.66666666667 |
+| # stars            | 2072.0 |
 
 ## Links
 - [Homepage](https://github.com/rebassjs/grid#readme)

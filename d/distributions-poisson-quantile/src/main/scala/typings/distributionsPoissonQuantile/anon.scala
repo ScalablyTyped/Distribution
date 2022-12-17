@@ -1,14 +1,5 @@
 package typings.distributionsPoissonQuantile
 
-import typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.float32
-import typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.float64
-import typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.int16
-import typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.int32
-import typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.int8
-import typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.uint16
-import typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.uint32
-import typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.uint8
-import typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.uint8_clamped
 import typings.distributionsPoissonQuantile.mod.Data
 import typings.distributionsPoissonQuantile.mod.DataType
 import org.scalablytyped.runtime.StObject
@@ -27,7 +18,7 @@ object anon {
     var copy: js.UndefOr[Boolean] = js.undefined
     
     /** output data type, default="float64" */
-    var dtype: js.UndefOr[DataType] & float32
+    var dtype: js.UndefOr[DataType] = js.undefined
     
     /** mean parameter, default=1 */
     var lambda: js.UndefOr[Double] = js.undefined
@@ -40,8 +31,8 @@ object anon {
   }
   object Optionsdtypefloat32 {
     
-    inline def apply(dtype: js.UndefOr[DataType] & float32): Optionsdtypefloat32 = {
-      val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any])
+    inline def apply(): Optionsdtypefloat32 = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Optionsdtypefloat32]
     }
     
@@ -55,7 +46,9 @@ object anon {
       
       inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
       
-      inline def setDtype(value: js.UndefOr[DataType] & float32): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      inline def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      
+      inline def setDtypeUndefined: Self = StObject.set(x, "dtype", js.undefined)
       
       inline def setLambda(value: Double): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
       
@@ -81,7 +74,7 @@ object anon {
     var copy: js.UndefOr[Boolean] = js.undefined
     
     /** output data type, default="float64" */
-    var dtype: js.UndefOr[DataType] & js.UndefOr[float64]
+    var dtype: js.UndefOr[DataType] = js.undefined
     
     /** mean parameter, default=1 */
     var lambda: js.UndefOr[Double] = js.undefined
@@ -94,8 +87,8 @@ object anon {
   }
   object Optionsdtypefloat64undefi {
     
-    inline def apply(dtype: js.UndefOr[DataType] & js.UndefOr[float64]): Optionsdtypefloat64undefi = {
-      val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any])
+    inline def apply(): Optionsdtypefloat64undefi = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Optionsdtypefloat64undefi]
     }
     
@@ -109,7 +102,9 @@ object anon {
       
       inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
       
-      inline def setDtype(value: js.UndefOr[DataType] & js.UndefOr[float64]): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      inline def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      
+      inline def setDtypeUndefined: Self = StObject.set(x, "dtype", js.undefined)
       
       inline def setLambda(value: Double): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
       
@@ -135,7 +130,7 @@ object anon {
     var copy: js.UndefOr[Boolean] = js.undefined
     
     /** output data type, default="float64" */
-    var dtype: js.UndefOr[DataType] & int16
+    var dtype: js.UndefOr[DataType] = js.undefined
     
     /** mean parameter, default=1 */
     var lambda: js.UndefOr[Double] = js.undefined
@@ -148,8 +143,8 @@ object anon {
   }
   object Optionsdtypeint16 {
     
-    inline def apply(dtype: js.UndefOr[DataType] & int16): Optionsdtypeint16 = {
-      val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any])
+    inline def apply(): Optionsdtypeint16 = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Optionsdtypeint16]
     }
     
@@ -163,7 +158,9 @@ object anon {
       
       inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
       
-      inline def setDtype(value: js.UndefOr[DataType] & int16): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      inline def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      
+      inline def setDtypeUndefined: Self = StObject.set(x, "dtype", js.undefined)
       
       inline def setLambda(value: Double): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
       
@@ -189,7 +186,7 @@ object anon {
     var copy: js.UndefOr[Boolean] = js.undefined
     
     /** output data type, default="float64" */
-    var dtype: js.UndefOr[DataType] & int32
+    var dtype: js.UndefOr[DataType] = js.undefined
     
     /** mean parameter, default=1 */
     var lambda: js.UndefOr[Double] = js.undefined
@@ -202,8 +199,8 @@ object anon {
   }
   object Optionsdtypeint32 {
     
-    inline def apply(dtype: js.UndefOr[DataType] & int32): Optionsdtypeint32 = {
-      val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any])
+    inline def apply(): Optionsdtypeint32 = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Optionsdtypeint32]
     }
     
@@ -217,7 +214,9 @@ object anon {
       
       inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
       
-      inline def setDtype(value: js.UndefOr[DataType] & int32): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      inline def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      
+      inline def setDtypeUndefined: Self = StObject.set(x, "dtype", js.undefined)
       
       inline def setLambda(value: Double): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
       
@@ -243,7 +242,7 @@ object anon {
     var copy: js.UndefOr[Boolean] = js.undefined
     
     /** output data type, default="float64" */
-    var dtype: js.UndefOr[DataType] & int8
+    var dtype: js.UndefOr[DataType] = js.undefined
     
     /** mean parameter, default=1 */
     var lambda: js.UndefOr[Double] = js.undefined
@@ -256,8 +255,8 @@ object anon {
   }
   object Optionsdtypeint8 {
     
-    inline def apply(dtype: js.UndefOr[DataType] & int8): Optionsdtypeint8 = {
-      val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any])
+    inline def apply(): Optionsdtypeint8 = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Optionsdtypeint8]
     }
     
@@ -271,7 +270,9 @@ object anon {
       
       inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
       
-      inline def setDtype(value: js.UndefOr[DataType] & int8): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      inline def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      
+      inline def setDtypeUndefined: Self = StObject.set(x, "dtype", js.undefined)
       
       inline def setLambda(value: Double): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
       
@@ -297,7 +298,7 @@ object anon {
     var copy: js.UndefOr[Boolean] = js.undefined
     
     /** output data type, default="float64" */
-    var dtype: js.UndefOr[DataType] & uint16
+    var dtype: js.UndefOr[DataType] = js.undefined
     
     /** mean parameter, default=1 */
     var lambda: js.UndefOr[Double] = js.undefined
@@ -310,8 +311,8 @@ object anon {
   }
   object Optionsdtypeuint16 {
     
-    inline def apply(dtype: js.UndefOr[DataType] & uint16): Optionsdtypeuint16 = {
-      val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any])
+    inline def apply(): Optionsdtypeuint16 = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Optionsdtypeuint16]
     }
     
@@ -325,7 +326,9 @@ object anon {
       
       inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
       
-      inline def setDtype(value: js.UndefOr[DataType] & uint16): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      inline def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      
+      inline def setDtypeUndefined: Self = StObject.set(x, "dtype", js.undefined)
       
       inline def setLambda(value: Double): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
       
@@ -351,7 +354,7 @@ object anon {
     var copy: js.UndefOr[Boolean] = js.undefined
     
     /** output data type, default="float64" */
-    var dtype: js.UndefOr[DataType] & uint32
+    var dtype: js.UndefOr[DataType] = js.undefined
     
     /** mean parameter, default=1 */
     var lambda: js.UndefOr[Double] = js.undefined
@@ -364,8 +367,8 @@ object anon {
   }
   object Optionsdtypeuint32 {
     
-    inline def apply(dtype: js.UndefOr[DataType] & uint32): Optionsdtypeuint32 = {
-      val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any])
+    inline def apply(): Optionsdtypeuint32 = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Optionsdtypeuint32]
     }
     
@@ -379,7 +382,9 @@ object anon {
       
       inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
       
-      inline def setDtype(value: js.UndefOr[DataType] & uint32): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      inline def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      
+      inline def setDtypeUndefined: Self = StObject.set(x, "dtype", js.undefined)
       
       inline def setLambda(value: Double): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
       
@@ -405,7 +410,7 @@ object anon {
     var copy: js.UndefOr[Boolean] = js.undefined
     
     /** output data type, default="float64" */
-    var dtype: js.UndefOr[DataType] & uint8
+    var dtype: js.UndefOr[DataType] = js.undefined
     
     /** mean parameter, default=1 */
     var lambda: js.UndefOr[Double] = js.undefined
@@ -418,8 +423,8 @@ object anon {
   }
   object Optionsdtypeuint8 {
     
-    inline def apply(dtype: js.UndefOr[DataType] & uint8): Optionsdtypeuint8 = {
-      val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any])
+    inline def apply(): Optionsdtypeuint8 = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Optionsdtypeuint8]
     }
     
@@ -433,7 +438,9 @@ object anon {
       
       inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
       
-      inline def setDtype(value: js.UndefOr[DataType] & uint8): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      inline def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      
+      inline def setDtypeUndefined: Self = StObject.set(x, "dtype", js.undefined)
       
       inline def setLambda(value: Double): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
       
@@ -459,7 +466,7 @@ object anon {
     var copy: js.UndefOr[Boolean] = js.undefined
     
     /** output data type, default="float64" */
-    var dtype: js.UndefOr[DataType] & uint8_clamped
+    var dtype: js.UndefOr[DataType] = js.undefined
     
     /** mean parameter, default=1 */
     var lambda: js.UndefOr[Double] = js.undefined
@@ -472,8 +479,8 @@ object anon {
   }
   object Optionsdtypeuint8clamped {
     
-    inline def apply(dtype: js.UndefOr[DataType] & uint8_clamped): Optionsdtypeuint8clamped = {
-      val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any])
+    inline def apply(): Optionsdtypeuint8clamped = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Optionsdtypeuint8clamped]
     }
     
@@ -487,7 +494,9 @@ object anon {
       
       inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
       
-      inline def setDtype(value: js.UndefOr[DataType] & uint8_clamped): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      inline def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      
+      inline def setDtypeUndefined: Self = StObject.set(x, "dtype", js.undefined)
       
       inline def setLambda(value: Double): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
       
@@ -513,7 +522,7 @@ object anon {
     var copy: js.UndefOr[Boolean] = js.undefined
     
     /** output data type, default="float64" */
-    var dtype: js.UndefOr[DataType] & Unit
+    var dtype: js.UndefOr[DataType] = js.undefined
     
     /** mean parameter, default=1 */
     var lambda: js.UndefOr[Double] = js.undefined
@@ -526,8 +535,8 @@ object anon {
   }
   object Optionsdtypeundefined {
     
-    inline def apply(dtype: js.UndefOr[DataType] & Unit): Optionsdtypeundefined = {
-      val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any])
+    inline def apply(): Optionsdtypeundefined = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Optionsdtypeundefined]
     }
     
@@ -541,7 +550,9 @@ object anon {
       
       inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
       
-      inline def setDtype(value: js.UndefOr[DataType] & Unit): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      inline def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      
+      inline def setDtypeUndefined: Self = StObject.set(x, "dtype", js.undefined)
       
       inline def setLambda(value: Double): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
       

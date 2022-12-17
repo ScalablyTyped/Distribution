@@ -48,7 +48,7 @@ trait PickImplhideOnScrollParti
   
   var exclusive: js.UndefOr[Boolean] = js.undefined
   
-  var hideOnScroll: (auto | `false`) & (js.UndefOr[auto | `false`])
+  var hideOnScroll: auto | `false`
   
   var hoverable: js.UndefOr[Boolean] = js.undefined
   
@@ -120,7 +120,7 @@ trait PickImplhideOnScrollParti
 }
 object PickImplhideOnScrollParti {
   
-  inline def apply(hideOnScroll: (auto | `false`) & (js.UndefOr[auto | `false`])): PickImplhideOnScrollParti = {
+  inline def apply(hideOnScroll: auto | `false`): PickImplhideOnScrollParti = {
     val __obj = js.Dynamic.literal(hideOnScroll = hideOnScroll.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplhideOnScrollParti]
   }
@@ -175,7 +175,7 @@ object PickImplhideOnScrollParti {
     
     inline def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
     
-    inline def setHideOnScroll(value: (auto | `false`) & (js.UndefOr[auto | `false`])): Self = StObject.set(x, "hideOnScroll", value.asInstanceOf[js.Any])
+    inline def setHideOnScroll(value: auto | `false`): Self = StObject.set(x, "hideOnScroll", value.asInstanceOf[js.Any])
     
     inline def setHoverable(value: Boolean): Self = StObject.set(x, "hoverable", value.asInstanceOf[js.Any])
     

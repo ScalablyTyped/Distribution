@@ -1,5 +1,6 @@
 package typings.mz.anon
 
+import typings.mz.mzBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ trait `2` extends StObject {
   
   var encoding: js.UndefOr[String | Null] = js.undefined
   
-  var flag: js.UndefOr[String] = js.undefined
+  var withFileTypes: js.UndefOr[`false`] = js.undefined
 }
 object `2` {
   
@@ -25,8 +26,8 @@ object `2` {
     
     inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    inline def setFlag(value: String): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
+    inline def setWithFileTypes(value: `false`): Self = StObject.set(x, "withFileTypes", value.asInstanceOf[js.Any])
     
-    inline def setFlagUndefined: Self = StObject.set(x, "flag", js.undefined)
+    inline def setWithFileTypesUndefined: Self = StObject.set(x, "withFileTypes", js.undefined)
   }
 }

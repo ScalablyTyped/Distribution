@@ -1,23 +1,23 @@
 organization := "org.scalablytyped"
 name := "vue-rx"
-version := "6.2.0-c2603e"
+version := "6.2.0-b8d50e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "babel__parser" % "7.20.3-c798fc",
-  "org.scalablytyped" %%% "babel__types" % "7.20.2-8b54ca",
-  "org.scalablytyped" %%% "csstype" % "3.1.1-ab3df7",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-4346d8",
-  "org.scalablytyped" %%% "rxjs" % "7.5.7-2ac93e",
-  "org.scalablytyped" %%% "source-map" % "0.7.4-c99616",
-  "org.scalablytyped" %%% "std" % "4.9-c133ce",
-  "org.scalablytyped" %%% "vue" % "3.2.45-930f2f",
-  "org.scalablytyped" %%% "vue__compiler-core" % "3.2.45-603ae4",
-  "org.scalablytyped" %%% "vue__reactivity" % "3.2.45-6cbfdc",
-  "org.scalablytyped" %%% "vue__runtime-core" % "3.2.45-807b1f",
-  "org.scalablytyped" %%% "vue__runtime-dom" % "3.2.45-49923f",
-  "org.scalablytyped" %%% "vue__shared" % "3.2.45-9a03c8")
+  "org.scalablytyped" %%% "babel__parser" % "7.20.3-5a73bf",
+  "org.scalablytyped" %%% "babel__types" % "7.20.2-b582b5",
+  "org.scalablytyped" %%% "csstype" % "3.1.1-4db30e",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-def929",
+  "org.scalablytyped" %%% "rxjs" % "7.5.7-fec6f6",
+  "org.scalablytyped" %%% "source-map" % "0.7.4-14f7e0",
+  "org.scalablytyped" %%% "std" % "4.9-5f989f",
+  "org.scalablytyped" %%% "vue" % "3.2.45-d5f424",
+  "org.scalablytyped" %%% "vue__compiler-core" % "3.2.45-dffd40",
+  "org.scalablytyped" %%% "vue__reactivity" % "3.2.45-433ea1",
+  "org.scalablytyped" %%% "vue__runtime-core" % "3.2.45-ccab93",
+  "org.scalablytyped" %%% "vue__runtime-dom" % "3.2.45-419c39",
+  "org.scalablytyped" %%% "vue__shared" % "3.2.45-86009a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

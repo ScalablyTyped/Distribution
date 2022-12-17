@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `14` extends StObject {
   
-  var renderUnsafeAttributes: js.UndefOr[js.Array[String]] = js.undefined
+  var isAllowedInsideAttributeElement: js.UndefOr[Boolean] = js.undefined
 }
 object `14` {
   
@@ -17,10 +17,8 @@ object `14` {
   
   extension [Self <: `14`](x: Self) {
     
-    inline def setRenderUnsafeAttributes(value: js.Array[String]): Self = StObject.set(x, "renderUnsafeAttributes", value.asInstanceOf[js.Any])
+    inline def setIsAllowedInsideAttributeElement(value: Boolean): Self = StObject.set(x, "isAllowedInsideAttributeElement", value.asInstanceOf[js.Any])
     
-    inline def setRenderUnsafeAttributesUndefined: Self = StObject.set(x, "renderUnsafeAttributes", js.undefined)
-    
-    inline def setRenderUnsafeAttributesVarargs(value: String*): Self = StObject.set(x, "renderUnsafeAttributes", js.Array(value*))
+    inline def setIsAllowedInsideAttributeElementUndefined: Self = StObject.set(x, "isAllowedInsideAttributeElement", js.undefined)
   }
 }

@@ -1,6 +1,5 @@
 package typings.playcanvas.global.pc
 
-import typings.playcanvas.mod.ForwardRenderer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,7 @@ open class Lightmapper protected ()
     device: typings.playcanvas.mod.GraphicsDevice,
     root: typings.playcanvas.mod.Entity,
     scene: typings.playcanvas.mod.Scene_,
-    renderer: ForwardRenderer,
+    renderer: typings.playcanvas.mod.ForwardRenderer,
     assets: typings.playcanvas.mod.AssetRegistry
   ) = this()
 }

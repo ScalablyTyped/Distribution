@@ -1,7 +1,5 @@
 package typings.argon2
 
-import typings.argon2.argon2Booleans.`false`
-import typings.argon2.argon2Booleans.`true`
 import typings.argon2.argon2Ints.`0`
 import typings.argon2.argon2Ints.`1`
 import typings.argon2.argon2Ints.`2`
@@ -23,7 +21,7 @@ object anon {
     
     var parallelism: js.UndefOr[Double] = js.undefined
     
-    var raw: js.UndefOr[Boolean] & js.UndefOr[`false`]
+    var raw: js.UndefOr[Boolean] = js.undefined
     
     var salt: js.UndefOr[Buffer] = js.undefined
     
@@ -39,8 +37,8 @@ object anon {
   }
   object Optionsrawfalseundefined {
     
-    inline def apply(raw: js.UndefOr[Boolean] & js.UndefOr[`false`]): Optionsrawfalseundefined = {
-      val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
+    inline def apply(): Optionsrawfalseundefined = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Optionsrawfalseundefined]
     }
     
@@ -62,7 +60,9 @@ object anon {
       
       inline def setParallelismUndefined: Self = StObject.set(x, "parallelism", js.undefined)
       
-      inline def setRaw(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      
+      inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
       
       inline def setSalt(value: Buffer): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
       
@@ -101,7 +101,7 @@ object anon {
     
     var parallelism: js.UndefOr[Double] = js.undefined
     
-    var raw: js.UndefOr[Boolean] & `true`
+    var raw: js.UndefOr[Boolean] = js.undefined
     
     var salt: js.UndefOr[Buffer] = js.undefined
     
@@ -117,8 +117,8 @@ object anon {
   }
   object Optionsrawtrue {
     
-    inline def apply(raw: js.UndefOr[Boolean] & `true`): Optionsrawtrue = {
-      val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
+    inline def apply(): Optionsrawtrue = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Optionsrawtrue]
     }
     
@@ -140,7 +140,9 @@ object anon {
       
       inline def setParallelismUndefined: Self = StObject.set(x, "parallelism", js.undefined)
       
-      inline def setRaw(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      
+      inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
       
       inline def setSalt(value: Buffer): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
       

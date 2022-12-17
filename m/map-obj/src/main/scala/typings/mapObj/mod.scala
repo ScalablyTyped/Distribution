@@ -19,8 +19,24 @@ object mod {
   inline def default[SourceObjectType /* <: Record[String, Any] */, MappedObjectKeyType /* <: String */, MappedObjectValueType](
     source: SourceObjectType,
     mapper: Mapper[SourceObjectType, MappedObjectKeyType, MappedObjectValueType],
+    options: DeepOptions
+  ): Record[String, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Record[String, Any]]
+  inline def default[SourceObjectType /* <: Record[String, Any] */, MappedObjectKeyType /* <: String */, MappedObjectValueType](
+    source: SourceObjectType,
+    mapper: Mapper[SourceObjectType, MappedObjectKeyType, MappedObjectValueType],
     options: Options
   ): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in MappedObjectKeyType ]: MappedObjectValueType} */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ K in MappedObjectKeyType ]: MappedObjectValueType} */ js.Any]
+  inline def default[SourceObjectType /* <: Record[String, Any] */, TargetObjectType /* <: Record[String, Any] */, MappedObjectKeyType /* <: String */, MappedObjectValueType](
+    source: SourceObjectType,
+    mapper: Mapper[SourceObjectType, MappedObjectKeyType, MappedObjectValueType],
+    options: TargetOptions[TargetObjectType]
+  ): TargetObjectType & (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in MappedObjectKeyType ]: MappedObjectValueType} */ js.Any) = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TargetObjectType & (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in MappedObjectKeyType ]: MappedObjectValueType} */ js.Any)]
+  
+  inline def default_SourceObjectTypeTargetObjectTypeMappedObjectKeyTypeMappedObjectValueType_Intersection[SourceObjectType /* <: Record[String, Any] */, TargetObjectType /* <: Record[String, Any] */, MappedObjectKeyType /* <: String */, MappedObjectValueType](
+    source: SourceObjectType,
+    mapper: Mapper[SourceObjectType, MappedObjectKeyType, MappedObjectValueType],
+    options: DeepOptions & TargetOptions[TargetObjectType]
+  ): TargetObjectType & (Record[String, Any]) = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TargetObjectType & (Record[String, Any])]
   
   @JSImport("map-obj", "mapObjectSkip")
   @js.native

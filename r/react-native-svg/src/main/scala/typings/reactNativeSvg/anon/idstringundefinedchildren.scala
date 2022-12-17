@@ -1,19 +1,6 @@
 package typings.reactNativeSvg.anon
 
 import typings.react.mod.ReactElement
-import typings.reactNative.mod.MatrixTransform
-import typings.reactNative.mod.PerpectiveTransform
-import typings.reactNative.mod.RotateTransform
-import typings.reactNative.mod.RotateXTransform
-import typings.reactNative.mod.RotateYTransform
-import typings.reactNative.mod.RotateZTransform
-import typings.reactNative.mod.ScaleTransform
-import typings.reactNative.mod.ScaleXTransform
-import typings.reactNative.mod.ScaleYTransform
-import typings.reactNative.mod.SkewXTransform
-import typings.reactNative.mod.SkewYTransform
-import typings.reactNative.mod.TranslateXTransform
-import typings.reactNative.mod.TranslateYTransform
 import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.ColumnMajorTransformMatrix
 import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.NumberArray
 import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.NumberProp
@@ -56,13 +43,9 @@ trait idstringundefinedchildren extends StObject {
   
   var skewY: js.UndefOr[NumberProp] = js.undefined
   
-  var transform: (js.UndefOr[
+  var transform: js.UndefOr[
     ColumnMajorTransformMatrix | String | (/* import warning: importer.ImportType#apply Failed type conversion: react-native.react-native.TransformsStyle['transform'] */ js.Any)
-  ]) & (js.UndefOr[
-    ColumnMajorTransformMatrix | String | (js.Array[
-      PerpectiveTransform | RotateTransform | RotateXTransform | RotateYTransform | RotateZTransform | ScaleTransform | ScaleXTransform | ScaleYTransform | TranslateXTransform | TranslateYTransform | SkewXTransform | SkewYTransform | MatrixTransform
-    ])
-  ])
+  ] = js.undefined
   
   var translate: js.UndefOr[NumberArray] = js.undefined
   
@@ -76,16 +59,8 @@ trait idstringundefinedchildren extends StObject {
 }
 object idstringundefinedchildren {
   
-  inline def apply(
-    transform: (js.UndefOr[
-      ColumnMajorTransformMatrix | String | (/* import warning: importer.ImportType#apply Failed type conversion: react-native.react-native.TransformsStyle['transform'] */ js.Any)
-    ]) & (js.UndefOr[
-      ColumnMajorTransformMatrix | String | (js.Array[
-        PerpectiveTransform | RotateTransform | RotateXTransform | RotateYTransform | RotateZTransform | ScaleTransform | ScaleXTransform | ScaleYTransform | TranslateXTransform | TranslateYTransform | SkewXTransform | SkewYTransform | MatrixTransform
-      ])
-    ])
-  ): idstringundefinedchildren = {
-    val __obj = js.Dynamic.literal(transform = transform.asInstanceOf[js.Any])
+  inline def apply(): idstringundefinedchildren = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[idstringundefinedchildren]
   }
   
@@ -158,14 +133,10 @@ object idstringundefinedchildren {
     inline def setSkewYUndefined: Self = StObject.set(x, "skewY", js.undefined)
     
     inline def setTransform(
-      value: (js.UndefOr[
-          ColumnMajorTransformMatrix | String | (/* import warning: importer.ImportType#apply Failed type conversion: react-native.react-native.TransformsStyle['transform'] */ js.Any)
-        ]) & (js.UndefOr[
-          ColumnMajorTransformMatrix | String | (js.Array[
-            PerpectiveTransform | RotateTransform | RotateXTransform | RotateYTransform | RotateZTransform | ScaleTransform | ScaleXTransform | ScaleYTransform | TranslateXTransform | TranslateYTransform | SkewXTransform | SkewYTransform | MatrixTransform
-          ])
-        ])
+      value: ColumnMajorTransformMatrix | String | (/* import warning: importer.ImportType#apply Failed type conversion: react-native.react-native.TransformsStyle['transform'] */ js.Any)
     ): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    
+    inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
     inline def setTranslate(value: NumberArray): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
     

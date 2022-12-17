@@ -1,6 +1,6 @@
 package typings.canvg
 
-import typings.canvg.anon.CreateImage
+import typings.canvg.anon.CreateCanvas
 import typings.canvg.distPresetsTypesMod.DOMParser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,8 +12,8 @@ object distPresetsOffscreenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def offscreen(): CreateImage = ^.asInstanceOf[js.Dynamic].applyDynamic("offscreen")().asInstanceOf[CreateImage]
-  inline def offscreen(param0: IConfig): CreateImage = ^.asInstanceOf[js.Dynamic].applyDynamic("offscreen")(param0.asInstanceOf[js.Any]).asInstanceOf[CreateImage]
+  inline def offscreen(): CreateCanvas = ^.asInstanceOf[js.Dynamic].applyDynamic("offscreen")().asInstanceOf[CreateCanvas]
+  inline def offscreen(param0: IConfig): CreateCanvas = ^.asInstanceOf[js.Dynamic].applyDynamic("offscreen")(param0.asInstanceOf[js.Any]).asInstanceOf[CreateCanvas]
   
   trait IConfig extends StObject {
     

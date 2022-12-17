@@ -16,5 +16,5 @@ object outObjectReplaceMod {
     */
   type Replace[O /* <: js.Object */, M /* <: Any */, A /* <: Any */, `match` /* <: Match */] = _Replace[O, M, A, `match`]
   
-  type _Replace[O /* <: js.Object */, M /* <: Any */, A /* <: Any */, `match` /* <: Match */] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof O ]: {  1 :A,   0 :O[K]}[ts-toolbelt.ts-toolbelt/out/Any/Is.Is<M, O[K], match>]} */ js.Any) & js.Object
+  type _Replace[O /* <: js.Object */, M /* <: Any */, A /* <: Any */, `match` /* <: Match */] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof O ]: {  1 :A,   0 :O[K]}[ts-toolbelt.ts-toolbelt/out/Any/Is.Is<M, O[K], match>]} */ js.Any
 }

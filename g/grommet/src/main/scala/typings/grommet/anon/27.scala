@@ -6,9 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `27` extends StObject {
   
-  var background: js.UndefOr[`7`] = js.undefined
-  
-  var border: js.UndefOr[`7`] = js.undefined
+  var weight: js.UndefOr[Double | String] = js.undefined
 }
 object `27` {
   
@@ -19,12 +17,8 @@ object `27` {
   
   extension [Self <: `27`](x: Self) {
     
-    inline def setBackground(value: `7`): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setWeight(value: Double | String): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
-    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
-    
-    inline def setBorder(value: `7`): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
-    
-    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

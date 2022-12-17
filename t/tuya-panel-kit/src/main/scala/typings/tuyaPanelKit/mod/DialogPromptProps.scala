@@ -1,7 +1,7 @@
 package typings.tuyaPanelKit.mod
 
 import typings.react.mod.ReactNode
-import typings.reactNative.anon.End
+import typings.reactNative.anon.Start
 import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
@@ -31,7 +31,7 @@ import typings.reactNative.mod.TextInputSubmitEditingEventData
 import typings.reactNative.mod.TextInputTextInputEventData
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.tuyaPanelKit.anon.`11`
+import typings.tuyaPanelKit.anon.`10`
 import typings.tuyaPanelKit.tuyaPanelKitStrings.Fade
 import typings.tuyaPanelKit.tuyaPanelKitStrings.PullUp
 import typings.tuyaPanelKit.tuyaPanelKitStrings.PushDown
@@ -651,7 +651,7 @@ trait DialogPromptProps extends StObject {
     */
   var onChangeText: js.UndefOr[js.Function1[/* text */ String, Unit]] = js.undefined
   
-  var onConfirm: js.UndefOr[js.Function2[/* data */ Any, /* args */ `11`, Unit]] = js.undefined
+  var onConfirm: js.UndefOr[js.Function2[/* data */ Any, /* args */ `10`, Unit]] = js.undefined
   
   /**
     * Callback that is called when the text input's content size changes.
@@ -971,7 +971,7 @@ trait DialogPromptProps extends StObject {
     * The start and end of the text input's selection. Set start and end to
     * the same value to position the cursor.
     */
-  var selection: js.UndefOr[End] = js.undefined
+  var selection: js.UndefOr[Start] = js.undefined
   
   /**
     * The highlight (and cursor on ios) color of the text input
@@ -1460,7 +1460,7 @@ object DialogPromptProps {
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    inline def setOnConfirm(value: (/* data */ Any, /* args */ `11`) => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction2(value))
+    inline def setOnConfirm(value: (/* data */ Any, /* args */ `10`) => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction2(value))
     
     inline def setOnConfirmUndefined: Self = StObject.set(x, "onConfirm", js.undefined)
     
@@ -1684,7 +1684,7 @@ object DialogPromptProps {
     
     inline def setSelectTextOnFocusUndefined: Self = StObject.set(x, "selectTextOnFocus", js.undefined)
     
-    inline def setSelection(value: End): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: Start): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
     inline def setSelectionColor(value: ColorValue): Self = StObject.set(x, "selectionColor", value.asInstanceOf[js.Any])
     

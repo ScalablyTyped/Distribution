@@ -3,8 +3,8 @@ package typings.raygun4js
 import org.scalablytyped.runtime.Shortcut
 import typings.raygun4js.anon.Client
 import typings.raygun4js.anon.Duration
-import typings.raygun4js.anon.DurationName
 import typings.raygun4js.anon.Level
+import typings.raygun4js.anon.Name
 import typings.raygun4js.anon.Path
 import typings.raygun4js.anon.Type
 import typings.raygun4js.raygun4jsStrings.Clicks
@@ -557,7 +557,7 @@ object mod extends Shortcut {
     def apply(key: recordBreadcrumb, message: Level, metadata: js.Object): Unit = js.native
     def apply(key: setBreadcrumbLevel, level: BreadcrumbLevel): Unit = js.native
     def apply(key: setUser, value: RaygunV2UserDetails): Unit = js.native
-    def apply(key: trackEvent, value: DurationName): Unit = js.native
+    def apply(key: trackEvent, value: Name): Unit = js.native
     def apply(key: trackEvent, value: Type): Unit = js.native
   }
   

@@ -18,7 +18,7 @@ trait PickImplbeforeChangeParti
   
   def beforeChange(): Unit
   @JSName("beforeChange")
-  var beforeChange_Original: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+  var beforeChange_Original: js.ThisFunction0[/* this */ JQuery, Unit]
   
   var className: js.UndefOr[ClassNameSettings] = js.undefined
   
@@ -48,18 +48,14 @@ trait PickImplbeforeChangeParti
 }
 object PickImplbeforeChangeParti {
   
-  inline def apply(
-    beforeChange: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-  ): PickImplbeforeChangeParti = {
+  inline def apply(beforeChange: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplbeforeChangeParti = {
     val __obj = js.Dynamic.literal(beforeChange = beforeChange.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplbeforeChangeParti]
   }
   
   extension [Self <: PickImplbeforeChangeParti](x: Self) {
     
-    inline def setBeforeChange(
-      value: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-    ): Self = StObject.set(x, "beforeChange", value.asInstanceOf[js.Any])
+    inline def setBeforeChange(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "beforeChange", value.asInstanceOf[js.Any])
     
     inline def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

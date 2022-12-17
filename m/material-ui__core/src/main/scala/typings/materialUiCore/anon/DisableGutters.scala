@@ -38,14 +38,16 @@ trait DisableGutters extends StObject {
 }
 object DisableGutters {
   
-  inline def apply(children: NonNullable[ReactNode]): DisableGutters = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+  inline def apply(): DisableGutters = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisableGutters]
   }
   
   extension [Self <: DisableGutters](x: Self) {
     
     inline def setChildren(value: NonNullable[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setDisableGutters(value: Boolean): Self = StObject.set(x, "disableGutters", value.asInstanceOf[js.Any])
     

@@ -105,7 +105,7 @@ trait PickImplonRequestPartialP
   
   def onRequest(promise: Deferred[Any, Any, Any], xhr: jqXHR[Any]): Unit
   @JSName("onRequest")
-  var onRequest_Original: (js.Function2[/* promise */ Deferred[Any, Any, Any], /* xhr */ jqXHR[Any], Unit]) & (js.UndefOr[js.Function2[/* promise */ Deferred[Any, Any, Any], /* xhr */ jqXHR[Any], Unit]])
+  var onRequest_Original: js.Function2[/* promise */ Deferred[Any, Any, Any], /* xhr */ jqXHR[Any], Unit]
   
   var onResponse: js.UndefOr[js.Function1[/* response */ Any, Unit]] = js.undefined
   
@@ -149,10 +149,8 @@ trait PickImplonRequestPartialP
 }
 object PickImplonRequestPartialP {
   
-  inline def apply(
-    onRequest: (js.Function2[/* promise */ Deferred[Any, Any, Any], /* xhr */ jqXHR[Any], Unit]) & (js.UndefOr[js.Function2[/* promise */ Deferred[Any, Any, Any], /* xhr */ jqXHR[Any], Unit]])
-  ): PickImplonRequestPartialP = {
-    val __obj = js.Dynamic.literal(onRequest = onRequest.asInstanceOf[js.Any])
+  inline def apply(onRequest: (/* promise */ Deferred[Any, Any, Any], /* xhr */ jqXHR[Any]) => Unit): PickImplonRequestPartialP = {
+    val __obj = js.Dynamic.literal(onRequest = js.Any.fromFunction2(onRequest))
     __obj.asInstanceOf[PickImplonRequestPartialP]
   }
   
@@ -272,9 +270,7 @@ object PickImplonRequestPartialP {
     
     inline def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
     
-    inline def setOnRequest(
-      value: (js.Function2[/* promise */ Deferred[Any, Any, Any], /* xhr */ jqXHR[Any], Unit]) & (js.UndefOr[js.Function2[/* promise */ Deferred[Any, Any, Any], /* xhr */ jqXHR[Any], Unit]])
-    ): Self = StObject.set(x, "onRequest", value.asInstanceOf[js.Any])
+    inline def setOnRequest(value: (/* promise */ Deferred[Any, Any, Any], /* xhr */ jqXHR[Any]) => Unit): Self = StObject.set(x, "onRequest", js.Any.fromFunction2(value))
     
     inline def setOnResponse(value: /* response */ Any => Unit): Self = StObject.set(x, "onResponse", js.Any.fromFunction1(value))
     

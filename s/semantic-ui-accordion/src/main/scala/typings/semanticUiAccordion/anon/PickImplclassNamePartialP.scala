@@ -16,7 +16,7 @@ trait PickImplclassNamePartialP
   
   var animateChildren: js.UndefOr[Boolean] = js.undefined
   
-  var className: ClassNameSettings & js.UndefOr[ClassNameSettings]
+  var className: ClassNameSettings
   
   var closeNested: js.UndefOr[Boolean] = js.undefined
   
@@ -60,7 +60,7 @@ trait PickImplclassNamePartialP
 }
 object PickImplclassNamePartialP {
   
-  inline def apply(className: ClassNameSettings & js.UndefOr[ClassNameSettings]): PickImplclassNamePartialP = {
+  inline def apply(className: ClassNameSettings): PickImplclassNamePartialP = {
     val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplclassNamePartialP]
   }
@@ -71,7 +71,7 @@ object PickImplclassNamePartialP {
     
     inline def setAnimateChildrenUndefined: Self = StObject.set(x, "animateChildren", js.undefined)
     
-    inline def setClassName(value: ClassNameSettings & js.UndefOr[ClassNameSettings]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     inline def setCloseNested(value: Boolean): Self = StObject.set(x, "closeNested", value.asInstanceOf[js.Any])
     

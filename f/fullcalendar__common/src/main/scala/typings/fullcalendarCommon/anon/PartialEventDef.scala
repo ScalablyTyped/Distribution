@@ -23,7 +23,7 @@ trait PartialEventDef extends StObject {
   
   var publicId: js.UndefOr[String] = js.undefined
   
-  var recurringDef: js.UndefOr[TypeData | Null] = js.undefined
+  var recurringDef: js.UndefOr[Duration | Null] = js.undefined
   
   var sourceId: js.UndefOr[String] = js.undefined
   
@@ -70,7 +70,7 @@ object PartialEventDef {
     
     inline def setPublicIdUndefined: Self = StObject.set(x, "publicId", js.undefined)
     
-    inline def setRecurringDef(value: TypeData): Self = StObject.set(x, "recurringDef", value.asInstanceOf[js.Any])
+    inline def setRecurringDef(value: Duration): Self = StObject.set(x, "recurringDef", value.asInstanceOf[js.Any])
     
     inline def setRecurringDefNull: Self = StObject.set(x, "recurringDef", null)
     

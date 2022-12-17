@@ -72,13 +72,12 @@ trait FeatureReductionBinningPr extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionBinning.html#type)
     */
-  var `type`: js.UndefOr[binning] & binning
+  var `type`: js.UndefOr[binning] = js.undefined
 }
 object FeatureReductionBinningPr {
   
-  inline def apply(`type`: js.UndefOr[binning] & binning): FeatureReductionBinningPr = {
+  inline def apply(): FeatureReductionBinningPr = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureReductionBinningPr]
   }
   
@@ -116,6 +115,8 @@ object FeatureReductionBinningPr {
     
     inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
     
-    inline def setType(value: js.UndefOr[binning] & binning): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: binning): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

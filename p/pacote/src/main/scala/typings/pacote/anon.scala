@@ -287,7 +287,7 @@ object anon {
       * etc.) Defaults to `true` when `before` is set, since the version publish
       * time is part of the extended packument metadata.
       */
-    var fullMetadata: js.UndefOr[Boolean] & `true`
+    var fullMetadata: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, `npm-registry-fetch` will set the `Content-Encoding` header
@@ -599,8 +599,8 @@ object anon {
   }
   object OptionsfullMetadatatrue {
     
-    inline def apply(fullMetadata: js.UndefOr[Boolean] & `true`): OptionsfullMetadatatrue = {
-      val __obj = js.Dynamic.literal(fullMetadata = fullMetadata.asInstanceOf[js.Any])
+    inline def apply(): OptionsfullMetadatatrue = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionsfullMetadatatrue]
     }
     
@@ -680,7 +680,9 @@ object anon {
       
       inline def setForceAuthUndefined: Self = StObject.set(x, "forceAuth", js.undefined)
       
-      inline def setFullMetadata(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "fullMetadata", value.asInstanceOf[js.Any])
+      inline def setFullMetadata(value: Boolean): Self = StObject.set(x, "fullMetadata", value.asInstanceOf[js.Any])
+      
+      inline def setFullMetadataUndefined: Self = StObject.set(x, "fullMetadata", js.undefined)
       
       inline def setGzip(value: Boolean): Self = StObject.set(x, "gzip", value.asInstanceOf[js.Any])
       
@@ -873,7 +875,7 @@ object anon {
       * When picking a manifest from a packument, only consider packages
       * published before the specified date. Default `null`.
       */
-    var before: js.Date & (js.UndefOr[js.Date | Null])
+    var before: js.Date
     
     /**
       * Request body to send through the outgoing request. Buffers and
@@ -1318,7 +1320,7 @@ object anon {
   }
   object beforeDateOptions {
     
-    inline def apply(before: js.Date & (js.UndefOr[js.Date | Null])): beforeDateOptions = {
+    inline def apply(before: js.Date): beforeDateOptions = {
       val __obj = js.Dynamic.literal(before = before.asInstanceOf[js.Any])
       __obj.asInstanceOf[beforeDateOptions]
     }
@@ -1337,7 +1339,7 @@ object anon {
       
       inline def setAlwaysAuthUndefined: Self = StObject.set(x, "alwaysAuth", js.undefined)
       
-      inline def setBefore(value: js.Date & (js.UndefOr[js.Date | Null])): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+      inline def setBefore(value: js.Date): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
       inline def setBody(value: Buffer | Stream | js.Object | String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -1723,7 +1725,7 @@ object anon {
       * etc.) Defaults to `true` when `before` is set, since the version publish
       * time is part of the extended packument metadata.
       */
-    var fullMetadata: `true` & js.UndefOr[Boolean]
+    var fullMetadata: `true`
     
     /**
       * If true, `npm-registry-fetch` will set the `Content-Encoding` header
@@ -2035,8 +2037,8 @@ object anon {
   }
   object fullMetadatatrueOptions {
     
-    inline def apply(fullMetadata: `true` & js.UndefOr[Boolean]): fullMetadatatrueOptions = {
-      val __obj = js.Dynamic.literal(fullMetadata = fullMetadata.asInstanceOf[js.Any])
+    inline def apply(): fullMetadatatrueOptions = {
+      val __obj = js.Dynamic.literal(fullMetadata = true)
       __obj.asInstanceOf[fullMetadatatrueOptions]
     }
     
@@ -2116,7 +2118,7 @@ object anon {
       
       inline def setForceAuthUndefined: Self = StObject.set(x, "forceAuth", js.undefined)
       
-      inline def setFullMetadata(value: `true` & js.UndefOr[Boolean]): Self = StObject.set(x, "fullMetadata", value.asInstanceOf[js.Any])
+      inline def setFullMetadata(value: `true`): Self = StObject.set(x, "fullMetadata", value.asInstanceOf[js.Any])
       
       inline def setGzip(value: Boolean): Self = StObject.set(x, "gzip", value.asInstanceOf[js.Any])
       

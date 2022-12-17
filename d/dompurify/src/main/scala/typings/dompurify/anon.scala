@@ -1,7 +1,6 @@
 package typings.dompurify
 
 import typings.dompurify.dompurifyBooleans.`false`
-import typings.dompurify.dompurifyBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -93,9 +92,9 @@ object anon {
     
     var PARSER_MEDIA_TYPE: js.UndefOr[String] = js.undefined
     
-    var RETURN_DOM: js.UndefOr[Boolean] & js.UndefOr[`false`]
+    var RETURN_DOM: js.UndefOr[Boolean] = js.undefined
     
-    var RETURN_DOM_FRAGMENT: js.UndefOr[Boolean] & js.UndefOr[`false`]
+    var RETURN_DOM_FRAGMENT: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This defaults to `true` starting DOMPurify 2.2.0. Note that setting it to `false`
@@ -119,11 +118,8 @@ object anon {
   }
   object ConfigRETURNDOMFRAGMENTfa {
     
-    inline def apply(
-      RETURN_DOM: js.UndefOr[Boolean] & js.UndefOr[`false`],
-      RETURN_DOM_FRAGMENT: js.UndefOr[Boolean] & js.UndefOr[`false`]
-    ): ConfigRETURNDOMFRAGMENTfa = {
-      val __obj = js.Dynamic.literal(RETURN_DOM = RETURN_DOM.asInstanceOf[js.Any], RETURN_DOM_FRAGMENT = RETURN_DOM_FRAGMENT.asInstanceOf[js.Any])
+    inline def apply(): ConfigRETURNDOMFRAGMENTfa = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigRETURNDOMFRAGMENTfa]
     }
     
@@ -229,9 +225,13 @@ object anon {
       
       inline def setPARSER_MEDIA_TYPEUndefined: Self = StObject.set(x, "PARSER_MEDIA_TYPE", js.undefined)
       
-      inline def setRETURN_DOM(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "RETURN_DOM", value.asInstanceOf[js.Any])
+      inline def setRETURN_DOM(value: Boolean): Self = StObject.set(x, "RETURN_DOM", value.asInstanceOf[js.Any])
       
-      inline def setRETURN_DOM_FRAGMENT(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "RETURN_DOM_FRAGMENT", value.asInstanceOf[js.Any])
+      inline def setRETURN_DOMUndefined: Self = StObject.set(x, "RETURN_DOM", js.undefined)
+      
+      inline def setRETURN_DOM_FRAGMENT(value: Boolean): Self = StObject.set(x, "RETURN_DOM_FRAGMENT", value.asInstanceOf[js.Any])
+      
+      inline def setRETURN_DOM_FRAGMENTUndefined: Self = StObject.set(x, "RETURN_DOM_FRAGMENT", js.undefined)
       
       inline def setRETURN_DOM_IMPORT(value: Boolean): Self = StObject.set(x, "RETURN_DOM_IMPORT", value.asInstanceOf[js.Any])
       
@@ -311,7 +311,7 @@ object anon {
     
     var RETURN_DOM: js.UndefOr[Boolean] = js.undefined
     
-    var RETURN_DOM_FRAGMENT: js.UndefOr[Boolean] & `true`
+    var RETURN_DOM_FRAGMENT: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This defaults to `true` starting DOMPurify 2.2.0. Note that setting it to `false`
@@ -335,8 +335,8 @@ object anon {
   }
   object ConfigRETURNDOMFRAGMENTtr {
     
-    inline def apply(RETURN_DOM_FRAGMENT: js.UndefOr[Boolean] & `true`): ConfigRETURNDOMFRAGMENTtr = {
-      val __obj = js.Dynamic.literal(RETURN_DOM_FRAGMENT = RETURN_DOM_FRAGMENT.asInstanceOf[js.Any])
+    inline def apply(): ConfigRETURNDOMFRAGMENTtr = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigRETURNDOMFRAGMENTtr]
     }
     
@@ -446,7 +446,9 @@ object anon {
       
       inline def setRETURN_DOMUndefined: Self = StObject.set(x, "RETURN_DOM", js.undefined)
       
-      inline def setRETURN_DOM_FRAGMENT(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "RETURN_DOM_FRAGMENT", value.asInstanceOf[js.Any])
+      inline def setRETURN_DOM_FRAGMENT(value: Boolean): Self = StObject.set(x, "RETURN_DOM_FRAGMENT", value.asInstanceOf[js.Any])
+      
+      inline def setRETURN_DOM_FRAGMENTUndefined: Self = StObject.set(x, "RETURN_DOM_FRAGMENT", js.undefined)
       
       inline def setRETURN_DOM_IMPORT(value: Boolean): Self = StObject.set(x, "RETURN_DOM_IMPORT", value.asInstanceOf[js.Any])
       
@@ -524,7 +526,7 @@ object anon {
     
     var PARSER_MEDIA_TYPE: js.UndefOr[String] = js.undefined
     
-    var RETURN_DOM: js.UndefOr[Boolean] & `true`
+    var RETURN_DOM: js.UndefOr[Boolean] = js.undefined
     
     var RETURN_DOM_FRAGMENT: js.UndefOr[Boolean] = js.undefined
     
@@ -550,8 +552,8 @@ object anon {
   }
   object ConfigRETURNDOMtrue {
     
-    inline def apply(RETURN_DOM: js.UndefOr[Boolean] & `true`): ConfigRETURNDOMtrue = {
-      val __obj = js.Dynamic.literal(RETURN_DOM = RETURN_DOM.asInstanceOf[js.Any])
+    inline def apply(): ConfigRETURNDOMtrue = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigRETURNDOMtrue]
     }
     
@@ -657,7 +659,9 @@ object anon {
       
       inline def setPARSER_MEDIA_TYPEUndefined: Self = StObject.set(x, "PARSER_MEDIA_TYPE", js.undefined)
       
-      inline def setRETURN_DOM(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "RETURN_DOM", value.asInstanceOf[js.Any])
+      inline def setRETURN_DOM(value: Boolean): Self = StObject.set(x, "RETURN_DOM", value.asInstanceOf[js.Any])
+      
+      inline def setRETURN_DOMUndefined: Self = StObject.set(x, "RETURN_DOM", js.undefined)
       
       inline def setRETURN_DOM_FRAGMENT(value: Boolean): Self = StObject.set(x, "RETURN_DOM_FRAGMENT", value.asInstanceOf[js.Any])
       
@@ -750,7 +754,7 @@ object anon {
       */
     var RETURN_DOM_IMPORT: js.UndefOr[Boolean] = js.undefined
     
-    var RETURN_TRUSTED_TYPE: js.UndefOr[Boolean] & `true`
+    var RETURN_TRUSTED_TYPE: js.UndefOr[Boolean] = js.undefined
     
     var SAFE_FOR_TEMPLATES: js.UndefOr[Boolean] = js.undefined
     
@@ -765,8 +769,8 @@ object anon {
   }
   object ConfigRETURNTRUSTEDTYPEtr {
     
-    inline def apply(RETURN_TRUSTED_TYPE: js.UndefOr[Boolean] & `true`): ConfigRETURNTRUSTEDTYPEtr = {
-      val __obj = js.Dynamic.literal(RETURN_TRUSTED_TYPE = RETURN_TRUSTED_TYPE.asInstanceOf[js.Any])
+    inline def apply(): ConfigRETURNTRUSTEDTYPEtr = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigRETURNTRUSTEDTYPEtr]
     }
     
@@ -884,7 +888,9 @@ object anon {
       
       inline def setRETURN_DOM_IMPORTUndefined: Self = StObject.set(x, "RETURN_DOM_IMPORT", js.undefined)
       
-      inline def setRETURN_TRUSTED_TYPE(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "RETURN_TRUSTED_TYPE", value.asInstanceOf[js.Any])
+      inline def setRETURN_TRUSTED_TYPE(value: Boolean): Self = StObject.set(x, "RETURN_TRUSTED_TYPE", value.asInstanceOf[js.Any])
+      
+      inline def setRETURN_TRUSTED_TYPEUndefined: Self = StObject.set(x, "RETURN_TRUSTED_TYPE", js.undefined)
       
       inline def setSAFE_FOR_TEMPLATES(value: Boolean): Self = StObject.set(x, "SAFE_FOR_TEMPLATES", value.asInstanceOf[js.Any])
       

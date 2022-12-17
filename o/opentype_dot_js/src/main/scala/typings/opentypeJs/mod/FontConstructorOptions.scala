@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined opentype.js.opentype.js.FontConstructorOptionsBase & std.Partial<opentype.js.opentype.js.FontOptions> & {  glyphs :std.Array<opentype.js.opentype.js.Glyph>} */
 trait FontConstructorOptions extends StObject {
   
-  var ascender: Double & js.UndefOr[Double]
+  var ascender: Double
   
   var copyright: js.UndefOr[String] = js.undefined
   
   var createdTimestamp: js.UndefOr[Double] = js.undefined
   
-  var descender: Double & js.UndefOr[Double]
+  var descender: Double
   
   var description: js.UndefOr[String] = js.undefined
   
@@ -23,7 +23,7 @@ trait FontConstructorOptions extends StObject {
   
   var empty: js.UndefOr[Boolean] = js.undefined
   
-  var familyName: String & js.UndefOr[String]
+  var familyName: String
   
   var fsSelection: js.UndefOr[String] = js.undefined
   
@@ -41,11 +41,11 @@ trait FontConstructorOptions extends StObject {
   
   var postScriptName: js.UndefOr[String] = js.undefined
   
-  var styleName: String & js.UndefOr[String]
+  var styleName: String
   
   var trademark: js.UndefOr[String] = js.undefined
   
-  var unitsPerEm: Double & js.UndefOr[Double]
+  var unitsPerEm: Double
   
   var version: js.UndefOr[String] = js.undefined
   
@@ -56,12 +56,12 @@ trait FontConstructorOptions extends StObject {
 object FontConstructorOptions {
   
   inline def apply(
-    ascender: Double & js.UndefOr[Double],
-    descender: Double & js.UndefOr[Double],
-    familyName: String & js.UndefOr[String],
+    ascender: Double,
+    descender: Double,
+    familyName: String,
     glyphs: js.Array[Glyph],
-    styleName: String & js.UndefOr[String],
-    unitsPerEm: Double & js.UndefOr[Double]
+    styleName: String,
+    unitsPerEm: Double
   ): FontConstructorOptions = {
     val __obj = js.Dynamic.literal(ascender = ascender.asInstanceOf[js.Any], descender = descender.asInstanceOf[js.Any], familyName = familyName.asInstanceOf[js.Any], glyphs = glyphs.asInstanceOf[js.Any], styleName = styleName.asInstanceOf[js.Any], unitsPerEm = unitsPerEm.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontConstructorOptions]
@@ -69,7 +69,7 @@ object FontConstructorOptions {
   
   extension [Self <: FontConstructorOptions](x: Self) {
     
-    inline def setAscender(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "ascender", value.asInstanceOf[js.Any])
+    inline def setAscender(value: Double): Self = StObject.set(x, "ascender", value.asInstanceOf[js.Any])
     
     inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
@@ -79,7 +79,7 @@ object FontConstructorOptions {
     
     inline def setCreatedTimestampUndefined: Self = StObject.set(x, "createdTimestamp", js.undefined)
     
-    inline def setDescender(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "descender", value.asInstanceOf[js.Any])
+    inline def setDescender(value: Double): Self = StObject.set(x, "descender", value.asInstanceOf[js.Any])
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -97,7 +97,7 @@ object FontConstructorOptions {
     
     inline def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
     
-    inline def setFamilyName(value: String & js.UndefOr[String]): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
+    inline def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
     
     inline def setFsSelection(value: String): Self = StObject.set(x, "fsSelection", value.asInstanceOf[js.Any])
     
@@ -131,13 +131,13 @@ object FontConstructorOptions {
     
     inline def setPostScriptNameUndefined: Self = StObject.set(x, "postScriptName", js.undefined)
     
-    inline def setStyleName(value: String & js.UndefOr[String]): Self = StObject.set(x, "styleName", value.asInstanceOf[js.Any])
+    inline def setStyleName(value: String): Self = StObject.set(x, "styleName", value.asInstanceOf[js.Any])
     
     inline def setTrademark(value: String): Self = StObject.set(x, "trademark", value.asInstanceOf[js.Any])
     
     inline def setTrademarkUndefined: Self = StObject.set(x, "trademark", js.undefined)
     
-    inline def setUnitsPerEm(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "unitsPerEm", value.asInstanceOf[js.Any])
+    inline def setUnitsPerEm(value: Double): Self = StObject.set(x, "unitsPerEm", value.asInstanceOf[js.Any])
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

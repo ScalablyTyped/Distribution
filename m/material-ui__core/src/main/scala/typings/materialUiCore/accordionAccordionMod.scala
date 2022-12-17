@@ -542,8 +542,8 @@ object accordionAccordionMod {
   }
   object AccordionProps {
     
-    inline def apply(children: NonNullable[ReactNode]): AccordionProps = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    inline def apply(): AccordionProps = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AccordionProps]
     }
     
@@ -764,6 +764,8 @@ object accordionAccordionMod {
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
       
       inline def setChildren(value: NonNullable[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

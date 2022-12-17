@@ -1,7 +1,6 @@
 package typings.playcanvas.global.pc
 
 import typings.playcanvas.anon.Add
-import typings.playcanvas.mod.Asset_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,7 +51,7 @@ open class AssetReference protected ()
     */
   def this(
     propertyName: String,
-    parent: Asset_,
+    parent: typings.playcanvas.mod.Asset_,
     registry: typings.playcanvas.mod.AssetRegistry,
     callbacks: Add
   ) = this()
@@ -65,7 +64,7 @@ open class AssetReference protected ()
   ) = this()
   def this(
     propertyName: String,
-    parent: Asset_,
+    parent: typings.playcanvas.mod.Asset_,
     registry: typings.playcanvas.mod.AssetRegistry,
     callbacks: Add,
     scope: js.Object

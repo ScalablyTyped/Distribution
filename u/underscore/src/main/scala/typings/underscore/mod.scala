@@ -8,8 +8,8 @@ import typings.std.Extract
 import typings.std.Partial
 import typings.underscore.anon.Fn0
 import typings.underscore.anon.Fn1
+import typings.underscore.anon.Fn2
 import typings.underscore.anon.FnCall
-import typings.underscore.anon.FnCallCollectionIterateeContext
 import typings.underscore.anon.FnCallCollectionIterateeMemoContext
 import typings.underscore.anon.FnCallIsSortedIterateeContext
 import typings.underscore.anon.FnCallIsSortedIterateeCotext
@@ -183,7 +183,7 @@ object mod extends Shortcut {
       * @see map
       **/
     @JSName("collect")
-    var collect_Original: FnCallIterateeContext[T, V] = js.native
+    var collect_Original: Fn0[T, V] = js.native
     
     /**
       * Returns a copy of the wrapped list with all falsy values removed. In
@@ -495,7 +495,7 @@ object mod extends Shortcut {
       * @see reduce
       **/
     @JSName("foldl")
-    var foldl_Original: Fn0[V] = js.native
+    var foldl_Original: Fn1[V] = js.native
     
     /**
       * @see reduceRight
@@ -520,7 +520,7 @@ object mod extends Shortcut {
       * @see reduceRight
       **/
     @JSName("foldr")
-    var foldr_Original: Fn0[V] = js.native
+    var foldr_Original: Fn1[V] = js.native
     
     /**
       * @see each
@@ -589,7 +589,7 @@ object mod extends Shortcut {
       * @see first
       **/
     @JSName("head")
-    var head_Original: Fn1[T] = js.native
+    var head_Original: Fn2[T] = js.native
     
     /***********
       * Utility *
@@ -691,7 +691,7 @@ object mod extends Shortcut {
       * @see reduce
       **/
     @JSName("inject")
-    var inject_Original: Fn0[V] = js.native
+    var inject_Original: Fn1[V] = js.native
     
     /**
       * Computes the list of values that are the intersection of the wrapped
@@ -1505,7 +1505,7 @@ object mod extends Shortcut {
       * @see first
       **/
     @JSName("take")
-    var take_Original: Fn1[T] = js.native
+    var take_Original: Fn2[T] = js.native
     
     /**
       * Wrapped type `object`.
@@ -2061,7 +2061,7 @@ object mod extends Shortcut {
       * @see map
       **/
     @JSName("collect")
-    var collect_Original: FnCall[T, V] = js.native
+    var collect_Original: FnCallIterateeContext[T, V] = js.native
     
     /**
       * Returns a copy of the wrapped list with all falsy values removed. In
@@ -3565,7 +3565,7 @@ object mod extends Shortcut {
       * @see map
       **/
     @JSName("collect")
-    var collect_Original: FnCallCollectionIterateeContext = js.native
+    var collect_Original: FnCall = js.native
     
     /**
       * Returns a copy of `list` with all falsy values removed. In

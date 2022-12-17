@@ -5,7 +5,6 @@ import typings.node.processMod.global.NodeJS.ProcessEnv
 import typings.node.processMod.global.NodeJS.Signals
 import typings.node.urlMod.URL_
 import typings.teenProcess.mod.TeenProcessLogger
-import typings.teenProcess.teenProcessBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,7 +39,7 @@ object anon {
       * let {stdout, stderr} = await exec('cat', [filename], {isBuffer: true});
       * Buffer.isBuffer(stdout); // true
       */
-    var isBuffer: js.UndefOr[Boolean] & `true`
+    var isBuffer: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The signal value to be used when the spawned process will be killed by the abort signal.
@@ -82,8 +81,8 @@ object anon {
   }
   object TeenProcessExecOptionsisB {
     
-    inline def apply(isBuffer: js.UndefOr[Boolean] & `true`): TeenProcessExecOptionsisB = {
-      val __obj = js.Dynamic.literal(isBuffer = isBuffer.asInstanceOf[js.Any])
+    inline def apply(): TeenProcessExecOptionsisB = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TeenProcessExecOptionsisB]
     }
     
@@ -105,7 +104,9 @@ object anon {
       
       inline def setIgnoreOutputUndefined: Self = StObject.set(x, "ignoreOutput", js.undefined)
       
-      inline def setIsBuffer(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "isBuffer", value.asInstanceOf[js.Any])
+      inline def setIsBuffer(value: Boolean): Self = StObject.set(x, "isBuffer", value.asInstanceOf[js.Any])
+      
+      inline def setIsBufferUndefined: Self = StObject.set(x, "isBuffer", js.undefined)
       
       inline def setKillSignal(value: Signals | Double): Self = StObject.set(x, "killSignal", value.asInstanceOf[js.Any])
       

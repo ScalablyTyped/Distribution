@@ -52,7 +52,7 @@ object anon {
       * When this is present, it is used in combination with `bmp` in astral mode.
       * This can additionally use character classes and alternation, and should use surrogate pairs to represent astral code points.
       */
-    var astral: js.UndefOr[String] & String
+    var astral: js.UndefOr[String] = js.undefined
     
     /**
       * A combination of literal characters and `\xHH` or `\\uHHHH` escape sequences, with hyphens to create ranges.
@@ -79,8 +79,8 @@ object anon {
   }
   object PickRequiredUnicodeCharac {
     
-    inline def apply(astral: js.UndefOr[String] & String, name: String): PickRequiredUnicodeCharac = {
-      val __obj = js.Dynamic.literal(astral = astral.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    inline def apply(name: String): PickRequiredUnicodeCharac = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickRequiredUnicodeCharac]
     }
     
@@ -90,7 +90,9 @@ object anon {
       
       inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
       
-      inline def setAstral(value: js.UndefOr[String] & String): Self = StObject.set(x, "astral", value.asInstanceOf[js.Any])
+      inline def setAstral(value: String): Self = StObject.set(x, "astral", value.asInstanceOf[js.Any])
+      
+      inline def setAstralUndefined: Self = StObject.set(x, "astral", js.undefined)
       
       inline def setBmp(value: String): Self = StObject.set(x, "bmp", value.asInstanceOf[js.Any])
       
@@ -133,7 +135,7 @@ object anon {
       * When `astral` is not present, this is used BMP and astral modes.
       * When this is present, it is used in BMP mode and in combination with `astral` in astral mode.
       */
-    var bmp: js.UndefOr[String] & String
+    var bmp: js.UndefOr[String] = js.undefined
     
     /**
       * Can be used to avoid duplicating character data if a Unicode token is defined as the exact inverse of another token.
@@ -152,8 +154,8 @@ object anon {
   }
   object PickRequiredUnicodeCharacAlias {
     
-    inline def apply(bmp: js.UndefOr[String] & String, name: String): PickRequiredUnicodeCharacAlias = {
-      val __obj = js.Dynamic.literal(bmp = bmp.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    inline def apply(name: String): PickRequiredUnicodeCharacAlias = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickRequiredUnicodeCharacAlias]
     }
     
@@ -167,7 +169,9 @@ object anon {
       
       inline def setAstralUndefined: Self = StObject.set(x, "astral", js.undefined)
       
-      inline def setBmp(value: js.UndefOr[String] & String): Self = StObject.set(x, "bmp", value.asInstanceOf[js.Any])
+      inline def setBmp(value: String): Self = StObject.set(x, "bmp", value.asInstanceOf[js.Any])
+      
+      inline def setBmpUndefined: Self = StObject.set(x, "bmp", js.undefined)
       
       inline def setInverseOf(value: String): Self = StObject.set(x, "inverseOf", value.asInstanceOf[js.Any])
       
@@ -211,7 +215,7 @@ object anon {
     /**
       * Can be used to avoid duplicating character data if a Unicode token is defined as the exact inverse of another token.
       */
-    var inverseOf: js.UndefOr[String] & String
+    var inverseOf: js.UndefOr[String] = js.undefined
     
     /**
       * This is needed when a token matches orphan high surrogates *and* uses surrogate pairs to match astral code points.
@@ -225,8 +229,8 @@ object anon {
   }
   object PickRequiredUnicodeCharacAstral {
     
-    inline def apply(inverseOf: js.UndefOr[String] & String, name: String): PickRequiredUnicodeCharacAstral = {
-      val __obj = js.Dynamic.literal(inverseOf = inverseOf.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    inline def apply(name: String): PickRequiredUnicodeCharacAstral = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickRequiredUnicodeCharacAstral]
     }
     
@@ -244,7 +248,9 @@ object anon {
       
       inline def setBmpUndefined: Self = StObject.set(x, "bmp", js.undefined)
       
-      inline def setInverseOf(value: js.UndefOr[String] & String): Self = StObject.set(x, "inverseOf", value.asInstanceOf[js.Any])
+      inline def setInverseOf(value: String): Self = StObject.set(x, "inverseOf", value.asInstanceOf[js.Any])
+      
+      inline def setInverseOfUndefined: Self = StObject.set(x, "inverseOf", js.undefined)
       
       inline def setIsBmpLast(value: Boolean): Self = StObject.set(x, "isBmpLast", value.asInstanceOf[js.Any])
       

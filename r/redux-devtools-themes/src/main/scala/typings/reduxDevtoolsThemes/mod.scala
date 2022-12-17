@@ -1,16 +1,11 @@
 package typings.reduxDevtoolsThemes
 
-import org.scalablytyped.runtime.Shortcut
 import typings.base16.mod.Base16Theme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
-  
-  @JSImport("redux-devtools-themes", JSImport.Default)
-  @js.native
-  val default: Base16Theme = js.native
+object mod {
   
   @JSImport("redux-devtools-themes", "apathy")
   @js.native
@@ -159,9 +154,4 @@ object mod extends Shortcut {
   @JSImport("redux-devtools-themes", "twilight")
   @js.native
   val twilight: Base16Theme = js.native
-  
-  type _To = Base16Theme
-  
-  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: Base16Theme = default
 }

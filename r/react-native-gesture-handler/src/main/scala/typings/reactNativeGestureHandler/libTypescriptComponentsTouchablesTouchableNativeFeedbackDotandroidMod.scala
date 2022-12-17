@@ -4,7 +4,7 @@ import typings.react.mod.Component
 import typings.reactNative.mod.ColorValue
 import typings.reactNative.mod.TouchableNativeFeedbackProps
 import typings.reactNativeGestureHandler.anon.Attribute
-import typings.reactNativeGestureHandler.anon.Borderless
+import typings.reactNativeGestureHandler.anon.Color
 import typings.reactNativeGestureHandler.anon.UseForeground
 import typings.reactNativeGestureHandler.libTypescriptComponentsTouchablesGenericTouchableMod.GenericTouchableProps
 import org.scalablytyped.runtime.StObject
@@ -23,8 +23,8 @@ object libTypescriptComponentsTouchablesTouchableNativeFeedbackDotandroidMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def Ripple(color: ColorValue, borderless: Boolean): Borderless = (^.asInstanceOf[js.Dynamic].applyDynamic("Ripple")(color.asInstanceOf[js.Any], borderless.asInstanceOf[js.Any])).asInstanceOf[Borderless]
-    inline def Ripple(color: ColorValue, borderless: Boolean, rippleRadius: Double): Borderless = (^.asInstanceOf[js.Dynamic].applyDynamic("Ripple")(color.asInstanceOf[js.Any], borderless.asInstanceOf[js.Any], rippleRadius.asInstanceOf[js.Any])).asInstanceOf[Borderless]
+    inline def Ripple(color: ColorValue, borderless: Boolean): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("Ripple")(color.asInstanceOf[js.Any], borderless.asInstanceOf[js.Any])).asInstanceOf[Color]
+    inline def Ripple(color: ColorValue, borderless: Boolean, rippleRadius: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("Ripple")(color.asInstanceOf[js.Any], borderless.asInstanceOf[js.Any], rippleRadius.asInstanceOf[js.Any])).asInstanceOf[Color]
     
     inline def SelectableBackground(): Attribute = ^.asInstanceOf[js.Dynamic].applyDynamic("SelectableBackground")().asInstanceOf[Attribute]
     inline def SelectableBackground(rippleRadius: Double): Attribute = ^.asInstanceOf[js.Dynamic].applyDynamic("SelectableBackground")(rippleRadius.asInstanceOf[js.Any]).asInstanceOf[Attribute]

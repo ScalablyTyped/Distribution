@@ -45,7 +45,7 @@ trait PickImplonAllLoadedPartia
   
   def onAllLoaded(): Unit
   @JSName("onAllLoaded")
-  var onAllLoaded_Original: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+  var onAllLoaded_Original: js.ThisFunction0[/* this */ JQuery, Unit]
   
   var onBottomPassed: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
@@ -105,9 +105,7 @@ trait PickImplonAllLoadedPartia
 }
 object PickImplonAllLoadedPartia {
   
-  inline def apply(
-    onAllLoaded: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-  ): PickImplonAllLoadedPartia = {
+  inline def apply(onAllLoaded: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonAllLoadedPartia = {
     val __obj = js.Dynamic.literal(onAllLoaded = onAllLoaded.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonAllLoadedPartia]
   }
@@ -166,9 +164,7 @@ object PickImplonAllLoadedPartia {
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    inline def setOnAllLoaded(
-      value: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-    ): Self = StObject.set(x, "onAllLoaded", value.asInstanceOf[js.Any])
+    inline def setOnAllLoaded(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onAllLoaded", value.asInstanceOf[js.Any])
     
     inline def setOnBottomPassed(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onBottomPassed", value.asInstanceOf[js.Any])
     

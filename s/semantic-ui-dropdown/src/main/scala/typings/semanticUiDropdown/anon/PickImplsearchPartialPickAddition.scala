@@ -30,7 +30,7 @@ trait PickImplsearchPartialPickAddition
   
   var remove: js.UndefOr[String] = js.undefined
   
-  var search: String & js.UndefOr[String]
+  var search: String
   
   var siblingLabel: js.UndefOr[String] = js.undefined
   
@@ -38,7 +38,7 @@ trait PickImplsearchPartialPickAddition
 }
 object PickImplsearchPartialPickAddition {
   
-  inline def apply(search: String & js.UndefOr[String]): PickImplsearchPartialPickAddition = {
+  inline def apply(search: String): PickImplsearchPartialPickAddition = {
     val __obj = js.Dynamic.literal(search = search.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplsearchPartialPickAddition]
   }
@@ -85,7 +85,7 @@ object PickImplsearchPartialPickAddition {
     
     inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
-    inline def setSearch(value: String & js.UndefOr[String]): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
     inline def setSiblingLabel(value: String): Self = StObject.set(x, "siblingLabel", value.asInstanceOf[js.Any])
     

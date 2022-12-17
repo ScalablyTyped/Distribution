@@ -362,7 +362,6 @@ import typings.materialUiCore.menuItemMenuItemMod.MenuItemTypeMap
 import typings.materialUiCore.menuListMenuListMod.MenuListProps
 import typings.materialUiCore.menuMenuMod.MenuProps
 import typings.materialUiCore.mobileStepperMobileStepperMod.MobileStepperProps
-import typings.materialUiCore.modalMod.default
 import typings.materialUiCore.modalModalMod.ModalProps
 import typings.materialUiCore.nativeSelectNativeSelectMod.NativeSelectProps
 import typings.materialUiCore.noSsrNoSsrMod.NoSsrProps
@@ -460,8 +459,6 @@ object mod {
   @JSImport("@material-ui/core", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
-  
-  inline def default(props: ZoomProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def Accordion(props: AccordionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Accordion")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
@@ -1089,11 +1086,6 @@ object mod {
   
   inline def MobileStepper(props: MobileStepperProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MobileStepper")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("@material-ui/core", "Modal")
-  @js.native
-  open class Modal () extends default {
-    def this(opts: HandleContainerOverflow) = this()
-  }
   /**
     * Modal is a lower-level construct that is leveraged by the following components:
     *
@@ -1121,18 +1113,8 @@ object mod {
   @JSImport("@material-ui/core", "ModalManager")
   @js.native
   open class ModalManager ()
-    extends StObject
-       with typings.materialUiCore.modalModalManagerMod.ModalManager {
+    extends typings.materialUiCore.modalMod.ModalManager {
     def this(opts: HandleContainerOverflow) = this()
-    
-    /* CompleteClass */
-    override def add(modal: Any, container: Any): Double = js.native
-    
-    /* CompleteClass */
-    override def isTopModal(modal: Any): Boolean = js.native
-    
-    /* CompleteClass */
-    override def remove(modal: Any): Unit = js.native
   }
   
   inline def MuiThemeProvider[T](props: ThemeProviderProps[T]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MuiThemeProvider")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
@@ -1202,8 +1184,7 @@ object mod {
   @JSImport("@material-ui/core", "ServerStyleSheets")
   @js.native
   open class ServerStyleSheets ()
-    extends StObject
-       with typings.materialUiStyles.serverStyleSheetsServerStyleSheetsMod.ServerStyleSheets {
+    extends typings.materialUiCore.stylesMod.ServerStyleSheets {
     def this(options: js.Object) = this()
   }
   

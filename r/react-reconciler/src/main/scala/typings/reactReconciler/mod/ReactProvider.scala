@@ -1,6 +1,6 @@
 package typings.reactReconciler.mod
 
-import typings.reactReconciler.anon.Value
+import typings.reactReconciler.anon.Children
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ trait ReactProvider[T] extends StObject {
   
   var key: Null | String
   
-  var props: Value[T]
+  var props: Children[T]
   
   var ref: Null
   
@@ -20,7 +20,12 @@ trait ReactProvider[T] extends StObject {
 }
 object ReactProvider {
   
-  inline def apply[T](DollarDollartypeof: js.Symbol | Double, props: Value[T], ref: Null, `type`: ReactProviderType[T]): ReactProvider[T] = {
+  inline def apply[T](
+    DollarDollartypeof: js.Symbol | Double,
+    props: Children[T],
+    ref: Null,
+    `type`: ReactProviderType[T]
+  ): ReactProvider[T] = {
     val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], key = null)
     __obj.updateDynamic("$$typeof")(DollarDollartypeof.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -35,7 +40,7 @@ object ReactProvider {
     
     inline def setKeyNull: Self = StObject.set(x, "key", null)
     
-    inline def setProps(value: Value[T]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: Children[T]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     
     inline def setRef(value: Null): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 package typings.nivoLine.mod
 
 import typings.d3Shape.mod.Line_
-import typings.nivoLine.anon.Y
+import typings.nivoLine.anon.X
 import typings.nivoScales.distTypesTypesMod.Scale
 import typings.std.CanvasRenderingContext2D
 import org.scalablytyped.runtime.StObject
@@ -21,7 +21,7 @@ object CustomCanvasLayerProps {
     data: js.Array[Serie],
     innerHeight: Double,
     innerWidth: Double,
-    lineGenerator: Line_[js.Array[Y]],
+    lineGenerator: Line_[js.Array[X]],
     points: js.Array[Point],
     series: js.Array[ComputedSerie],
     xScale: Scale[Any, Any],

@@ -61,7 +61,7 @@ import typings.materialUiCore.materialUiCoreStrings.tree
 import typings.materialUiCore.materialUiCoreStrings.url
 import typings.materialUiCore.materialUiCoreStrings.vertical
 import typings.materialUiCore.materialUiCoreStrings.yes
-import typings.materialUiCore.modalModalManagerMod.ModalManager
+import typings.materialUiCore.mod.ModalManager
 import typings.materialUiCore.transitionsTransitionMod.TransitionProps
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent

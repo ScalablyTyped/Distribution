@@ -12,9 +12,9 @@ import typings.xstate.anon.Delays
 import typings.xstate.anon.Guards
 import typings.xstate.anon.Services
 import typings.xstate.anon.TypeString
+import typings.xstate.anon.`0`
 import typings.xstate.anon.`1`
 import typings.xstate.anon.`2`
-import typings.xstate.anon.`3`
 import typings.xstate.libInterpreterMod.Interpreter
 import typings.xstate.libStateMod.State
 import typings.xstate.libStateNodeMod.StateNode
@@ -140,7 +140,7 @@ type Equals[A1 /* <: Any */, A2 /* <: Any */] = `true`
 
 type Event[TEvent /* <: EventObject */] = (/* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any) | TEvent
 
-type EventData = (Record[String, Any]) & `1`
+type EventData = (Record[String, Any]) & `2`
 
 /** NOTE: Conditional type definitions are impossible to translate to Scala.
   * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
@@ -193,7 +193,7 @@ type ExtractExtraParameters[A, T] = ExcludeType[A]
   */
 type ExtractWithSimpleSupport[T /* <: TypeString */] = T
 
-type GenerateActionsConfigPart[TContext, TResolvedTypesMeta, TRequireMissingImplementations, TMissingImplementations] = (MaybeMakeMissingImplementationsRequired[actions, Prop[TMissingImplementations, actions], TRequireMissingImplementations]) & (`2`[TContext, TResolvedTypesMeta])
+type GenerateActionsConfigPart[TContext, TResolvedTypesMeta, TRequireMissingImplementations, TMissingImplementations] = (MaybeMakeMissingImplementationsRequired[actions, Prop[TMissingImplementations, actions], TRequireMissingImplementations]) & (`1`[TContext, TResolvedTypesMeta])
 
 type GenerateDelaysConfigPart[TContext, TResolvedTypesMeta, TRequireMissingImplementations, TMissingImplementations] = (MaybeMakeMissingImplementationsRequired[delays, Prop[TMissingImplementations, delays], TRequireMissingImplementations]) & (Delays[TContext, TResolvedTypesMeta])
 
@@ -230,7 +230,7 @@ type IsNever[T] = `true`
 
 type LogExpr[TContext, TEvent /* <: EventObject */] = ExprWithMeta[TContext, TEvent, Any]
 
-type LowInfer[T] = T & js.Object
+type LowInfer[T] = T
 
 type MachineOptions[TContext, TEvent /* <: EventObject */, TAction /* <: BaseActionObject */, TServiceMap /* <: ServiceMap */, TTypesMeta /* <: TypegenConstraint */] = InternalMachineOptions[
 TContext, 
@@ -349,7 +349,7 @@ String | (StateNode[TContext, Any, EventObject, Context[TContext], ServiceMap, T
 type TransitionsConfig[TContext, TEvent /* <: EventObject */] = (TransitionsConfigMap[TContext, TEvent]) | (TransitionsConfigArray[TContext, TEvent])
 
 type TransitionsConfigArray[TContext, TEvent /* <: EventObject */] = js.Array[
-(/* import warning: importer.ImportType#apply Failed type conversion: TEvent extends xstate.xstate/lib/types.EventObject ? xstate.xstate/lib/types.TransitionConfig<TContext, TEvent> & {  event :TEvent['type']} : never */ js.Any) | ((TransitionConfig[TContext, TEvent]) & typings.xstate.anon.Event) | ((TransitionConfig[TContext, TEvent]) & `3`)]
+(/* import warning: importer.ImportType#apply Failed type conversion: TEvent extends xstate.xstate/lib/types.EventObject ? xstate.xstate/lib/types.TransitionConfig<TContext, TEvent> & {  event :TEvent['type']} : never */ js.Any) | ((TransitionConfig[TContext, TEvent]) & typings.xstate.anon.Event) | ((TransitionConfig[TContext, TEvent]) & `0`)]
 
 type ValueAdjacencyMap[TContext, TEvent /* <: EventObject */] = StringDictionary[Record[String, State[TContext, TEvent, Any, Context[TContext], TypegenDisabled]]]
 

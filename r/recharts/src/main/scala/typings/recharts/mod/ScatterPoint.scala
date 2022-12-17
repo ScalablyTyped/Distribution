@@ -1,6 +1,6 @@
 package typings.recharts.mod
 
-import typings.recharts.anon.Z
+import typings.recharts.anon.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ trait ScatterPoint extends StObject {
   
   var cy: js.UndefOr[Double] = js.undefined
   
-  var node: js.UndefOr[Z] = js.undefined
+  var node: js.UndefOr[X] = js.undefined
   
   var payload: js.UndefOr[Any] = js.undefined
   
@@ -34,7 +34,7 @@ object ScatterPoint {
     
     inline def setCyUndefined: Self = StObject.set(x, "cy", js.undefined)
     
-    inline def setNode(value: Z): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: X): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
     

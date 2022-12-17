@@ -1,5 +1,6 @@
 package typings.styledSystem.mod
 
+import typings.csstype.mod.Property.ZIndex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,12 +13,7 @@ trait ZIndexProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObjec
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index)
     */
-  var zIndex: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any, 
-      ThemeType
-    ]
-  ] = js.undefined
+  var zIndex: js.UndefOr[ResponsiveValue[ZIndex, ThemeType]] = js.undefined
 }
 object ZIndexProps {
   
@@ -28,19 +24,12 @@ object ZIndexProps {
   
   extension [Self <: ZIndexProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & ZIndexProps[ThemeType]) {
     
-    inline def setZIndex(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any, 
-          ThemeType
-        ]
-    ): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    inline def setZIndex(value: ResponsiveValue[ZIndex, ThemeType]): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
     inline def setZIndexNull: Self = StObject.set(x, "zIndex", null)
     
     inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     
-    inline def setZIndexVarargs(
-      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any) | Null)*
-    ): Self = StObject.set(x, "zIndex", js.Array(value :_*))
+    inline def setZIndexVarargs(value: (ZIndex | Null)*): Self = StObject.set(x, "zIndex", js.Array(value*))
   }
 }

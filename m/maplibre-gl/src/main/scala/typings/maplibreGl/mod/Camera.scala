@@ -1,8 +1,8 @@
 package typings.maplibreGl.mod
 
 import typings.maplibreGl.anon.Animate
-import typings.maplibreGl.anon.Duration
 import typings.maplibreGl.anon.EaseToOptionseaseIdstring
+import typings.maplibreGl.anon.Easing
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,7 +55,7 @@ trait Camera extends Evented {
   
   var _easeId: String | scala.Unit = js.native
   
-  var _easeOptions: Duration = js.native
+  var _easeOptions: Easing = js.native
   
   var _easeStart: Double = js.native
   

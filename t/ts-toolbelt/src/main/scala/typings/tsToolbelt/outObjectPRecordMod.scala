@@ -14,17 +14,17 @@ object outObjectPRecordMod {
   /**
     * @hidden
     */
-  type RecordOR[Path /* <: typings.tsToolbelt.outListListMod.List[Key] */, A, I /* <: Iteration */] = (/* import warning: importer.ImportType#apply Failed type conversion: {readonly [ Key in Path[ts-toolbelt.ts-toolbelt/out/Iteration/Pos.Pos<I>] ]:? ts-toolbelt.ts-toolbelt/out/Iteration/Pos.Pos<I> extends ts-toolbelt.ts-toolbelt/out/List/LastKey.LastKey<Path>? A : ts-toolbelt.ts-toolbelt/out/Object/P/Record.Record_OR<Path, A, ts-toolbelt.ts-toolbelt/out/Iteration/Next.Next<I>>} */ js.Any) & js.Object
+  type RecordOR[Path /* <: typings.tsToolbelt.outListListMod.List[Key] */, A, I /* <: Iteration */] = /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ Key in Path[ts-toolbelt.ts-toolbelt/out/Iteration/Pos.Pos<I>] ]:? ts-toolbelt.ts-toolbelt/out/Iteration/Pos.Pos<I> extends ts-toolbelt.ts-toolbelt/out/List/LastKey.LastKey<Path>? A : ts-toolbelt.ts-toolbelt/out/Object/P/Record.Record_OR<Path, A, ts-toolbelt.ts-toolbelt/out/Iteration/Next.Next<I>>} */ js.Any
   
   /**
     * @hidden
     */
-  type RecordOW[Path /* <: typings.tsToolbelt.outListListMod.List[Key] */, A, I /* <: Iteration */] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ Key in Path[ts-toolbelt.ts-toolbelt/out/Iteration/Pos.Pos<I>] ]:? ts-toolbelt.ts-toolbelt/out/Iteration/Pos.Pos<I> extends ts-toolbelt.ts-toolbelt/out/List/LastKey.LastKey<Path>? A : ts-toolbelt.ts-toolbelt/out/Object/P/Record.Record_OW<Path, A, ts-toolbelt.ts-toolbelt/out/Iteration/Next.Next<I>>} */ js.Any) & js.Object
+  type RecordOW[Path /* <: typings.tsToolbelt.outListListMod.List[Key] */, A, I /* <: Iteration */] = /* import warning: importer.ImportType#apply Failed type conversion: {[ Key in Path[ts-toolbelt.ts-toolbelt/out/Iteration/Pos.Pos<I>] ]:? ts-toolbelt.ts-toolbelt/out/Iteration/Pos.Pos<I> extends ts-toolbelt.ts-toolbelt/out/List/LastKey.LastKey<Path>? A : ts-toolbelt.ts-toolbelt/out/Object/P/Record.Record_OW<Path, A, ts-toolbelt.ts-toolbelt/out/Iteration/Next.Next<I>>} */ js.Any
   
   /**
     * @hidden
     */
-  type RecordRR[Path /* <: typings.tsToolbelt.outListListMod.List[Key] */, A, I /* <: Iteration */] = (/* import warning: importer.ImportType#apply Failed type conversion: {readonly [ Key in Path[ts-toolbelt.ts-toolbelt/out/Iteration/Pos.Pos<I>] ]: ts-toolbelt.ts-toolbelt/out/Iteration/Pos.Pos<I> extends ts-toolbelt.ts-toolbelt/out/List/LastKey.LastKey<Path>? A : ts-toolbelt.ts-toolbelt/out/Object/P/Record.Record_RR<Path, A, ts-toolbelt.ts-toolbelt/out/Iteration/Next.Next<I>>} */ js.Any) & js.Object
+  type RecordRR[Path /* <: typings.tsToolbelt.outListListMod.List[Key] */, A, I /* <: Iteration */] = /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ Key in Path[ts-toolbelt.ts-toolbelt/out/Iteration/Pos.Pos<I>] ]: ts-toolbelt.ts-toolbelt/out/Iteration/Pos.Pos<I> extends ts-toolbelt.ts-toolbelt/out/List/LastKey.LastKey<Path>? A : ts-toolbelt.ts-toolbelt/out/Object/P/Record.Record_RR<Path, A, ts-toolbelt.ts-toolbelt/out/Iteration/Next.Next<I>>} */ js.Any
   
-  type RecordRW[Path /* <: typings.tsToolbelt.outListListMod.List[Key] */, A, I /* <: Iteration */] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ Key in Path[ts-toolbelt.ts-toolbelt/out/Iteration/Pos.Pos<I>] ]: ts-toolbelt.ts-toolbelt/out/Iteration/Pos.Pos<I> extends ts-toolbelt.ts-toolbelt/out/List/LastKey.LastKey<Path>? A : ts-toolbelt.ts-toolbelt/out/Object/P/Record.Record_RW<Path, A, ts-toolbelt.ts-toolbelt/out/Iteration/Next.Next<I>>} */ js.Any) & js.Object
+  type RecordRW[Path /* <: typings.tsToolbelt.outListListMod.List[Key] */, A, I /* <: Iteration */] = /* import warning: importer.ImportType#apply Failed type conversion: {[ Key in Path[ts-toolbelt.ts-toolbelt/out/Iteration/Pos.Pos<I>] ]: ts-toolbelt.ts-toolbelt/out/Iteration/Pos.Pos<I> extends ts-toolbelt.ts-toolbelt/out/List/LastKey.LastKey<Path>? A : ts-toolbelt.ts-toolbelt/out/Object/P/Record.Record_RW<Path, A, ts-toolbelt.ts-toolbelt/out/Iteration/Next.Next<I>>} */ js.Any
 }

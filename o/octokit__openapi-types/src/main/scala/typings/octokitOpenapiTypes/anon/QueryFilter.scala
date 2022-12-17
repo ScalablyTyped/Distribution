@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait QueryFilter extends StObject {
   
-  var path: OrgString
+  var path: Org
   
   var query: Filter
 }
 object QueryFilter {
   
-  inline def apply(path: OrgString, query: Filter): QueryFilter = {
+  inline def apply(path: Org, query: Filter): QueryFilter = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryFilter]
   }
   
   extension [Self <: QueryFilter](x: Self) {
     
-    inline def setPath(value: OrgString): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: Org): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     inline def setQuery(value: Filter): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }

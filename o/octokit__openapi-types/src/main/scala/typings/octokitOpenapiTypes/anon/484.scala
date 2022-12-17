@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `484` extends StObject {
   
-  /** The full path, relative to the repository root, of the dependency manifest file. */
-  var name: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['manifest-path'] */ js.Any
-  ] = js.undefined
+  /** Page number of the results to fetch. */
+  var page: js.UndefOr[Double] = js.undefined
 }
 object `484` {
   
@@ -20,10 +18,8 @@ object `484` {
   
   extension [Self <: `484`](x: Self) {
     
-    inline def setName(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['manifest-path'] */ js.Any
-    ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
   }
 }

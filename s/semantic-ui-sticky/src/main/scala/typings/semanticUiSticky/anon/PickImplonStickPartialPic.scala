@@ -42,7 +42,7 @@ trait PickImplonStickPartialPic
   
   def onStick(): Unit
   @JSName("onStick")
-  var onStick_Original: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+  var onStick_Original: js.ThisFunction0[/* this */ JQuery, Unit]
   
   var onTop: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
@@ -62,9 +62,7 @@ trait PickImplonStickPartialPic
 }
 object PickImplonStickPartialPic {
   
-  inline def apply(
-    onStick: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-  ): PickImplonStickPartialPic = {
+  inline def apply(onStick: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonStickPartialPic = {
     val __obj = js.Dynamic.literal(onStick = onStick.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonStickPartialPic]
   }
@@ -123,9 +121,7 @@ object PickImplonStickPartialPic {
     
     inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
     
-    inline def setOnStick(
-      value: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-    ): Self = StObject.set(x, "onStick", value.asInstanceOf[js.Any])
+    inline def setOnStick(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onStick", value.asInstanceOf[js.Any])
     
     inline def setOnTop(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onTop", value.asInstanceOf[js.Any])
     

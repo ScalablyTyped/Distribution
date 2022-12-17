@@ -24,7 +24,7 @@ trait Typeworkspacestring extends StObject {
   
   var resource_type: String
   
-  var workspace: Resource & String
+  var workspace: Resource
 }
 object Typeworkspacestring {
   
@@ -36,7 +36,7 @@ object Typeworkspacestring {
     name: String,
     notes: String,
     resource_type: String,
-    workspace: Resource & String
+    workspace: Resource
   ): Typeworkspacestring = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], followers = followers.asInstanceOf[js.Any], gid = gid.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], notes = notes.asInstanceOf[js.Any], resource_type = resource_type.asInstanceOf[js.Any], workspace = workspace.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeworkspacestring]
@@ -64,6 +64,6 @@ object Typeworkspacestring {
     
     inline def setResource_type(value: String): Self = StObject.set(x, "resource_type", value.asInstanceOf[js.Any])
     
-    inline def setWorkspace(value: Resource & String): Self = StObject.set(x, "workspace", value.asInstanceOf[js.Any])
+    inline def setWorkspace(value: Resource): Self = StObject.set(x, "workspace", value.asInstanceOf[js.Any])
   }
 }

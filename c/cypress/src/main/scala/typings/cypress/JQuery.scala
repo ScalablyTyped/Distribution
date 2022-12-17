@@ -20523,12 +20523,8 @@ object JQuery {
   jQuery( "body" ).trigger( e );
   ```
     */
-  Instantiable1[/* event */ String, typings.cypress.JQuery.Event & js.Object]
-       with Instantiable2[
-          /* event */ String, 
-          /* properties */ js.Object, 
-          typings.cypress.JQuery.Event & js.Object
-        ] {
+  Instantiable1[/* event */ String, typings.cypress.JQuery.Event]
+       with Instantiable2[/* event */ String, /* properties */ js.Object, typings.cypress.JQuery.Event] {
     
     /**
       * The jQuery.Event constructor is exposed and can be used when calling trigger. The new operator is optional.

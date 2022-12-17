@@ -22,7 +22,7 @@ trait PickImplmissingSerializeP
   
   var missingAction: js.UndefOr[String] = js.undefined
   
-  var missingSerialize: String & js.UndefOr[String]
+  var missingSerialize: String
   
   var missingURL: js.UndefOr[String] = js.undefined
   
@@ -38,7 +38,7 @@ trait PickImplmissingSerializeP
 }
 object PickImplmissingSerializeP {
   
-  inline def apply(missingSerialize: String & js.UndefOr[String]): PickImplmissingSerializeP = {
+  inline def apply(missingSerialize: String): PickImplmissingSerializeP = {
     val __obj = js.Dynamic.literal(missingSerialize = missingSerialize.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmissingSerializeP]
   }
@@ -69,7 +69,7 @@ object PickImplmissingSerializeP {
     
     inline def setMissingActionUndefined: Self = StObject.set(x, "missingAction", js.undefined)
     
-    inline def setMissingSerialize(value: String & js.UndefOr[String]): Self = StObject.set(x, "missingSerialize", value.asInstanceOf[js.Any])
+    inline def setMissingSerialize(value: String): Self = StObject.set(x, "missingSerialize", value.asInstanceOf[js.Any])
     
     inline def setMissingURL(value: String): Self = StObject.set(x, "missingURL", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,7 @@ object libDefaultControlsMod {
     cellAlign: CellAlign
   ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDotIndexes")(slideCount.asInstanceOf[js.Any], slidesToScroll.asInstanceOf[js.Any], scrollMode.asInstanceOf[js.Any], slidesToShow.asInstanceOf[js.Any], wrapAround.asInstanceOf[js.Any], cellAlign.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  inline def nextButtonDisabled(param0: PickControlPropscellAlign): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("nextButtonDisabled")(param0.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def nextButtonDisabled(param0: PickControlPropscellAlignCellAlign): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("nextButtonDisabled")(param0.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def prevButtonDisabled(param0: PickControlPropscellAlignCellAlign): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("prevButtonDisabled")(param0.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def prevButtonDisabled(param0: PickControlPropscellAlign): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("prevButtonDisabled")(param0.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

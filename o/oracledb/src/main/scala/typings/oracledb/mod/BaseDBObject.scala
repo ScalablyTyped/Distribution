@@ -1,6 +1,6 @@
 package typings.oracledb.mod
 
-import typings.oracledb.anon.Type
+import typings.oracledb.anon.TypeClass
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,7 +20,7 @@ trait BaseDBObject[T] extends StObject {
   /**
     * When dbObject.isCollection is false, this will be an object containing attributes corresponding to the Oracle Database object attributes.
     */
-  var attributes: Record[String, Type[T]]
+  var attributes: Record[String, TypeClass[T]]
   
   /**
     * Deletes the value from collection at the given index.
@@ -104,7 +104,7 @@ object BaseDBObject {
   
   inline def apply[T](
     append: T => Unit,
-    attributes: Record[String, Type[T]],
+    attributes: Record[String, TypeClass[T]],
     deleteElement: Double => Unit,
     elementType: Double,
     elementTypeClass: DBObjectClass[T],
@@ -132,7 +132,7 @@ object BaseDBObject {
     
     inline def setAppend(value: T => Unit): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
     
-    inline def setAttributes(value: Record[String, Type[T]]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Record[String, TypeClass[T]]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setDeleteElement(value: Double => Unit): Self = StObject.set(x, "deleteElement", js.Any.fromFunction1(value))
     

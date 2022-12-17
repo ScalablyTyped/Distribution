@@ -2,7 +2,7 @@ package typings.atom
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.atom.anon.Description
-import typings.atom.anon.DidDispatch
+import typings.atom.anon.DisplayName
 import typings.atom.anon.Target
 import typings.atom.atomStrings.`atom-text-editor`
 import typings.atom.mod.CompositeDisposable
@@ -44,7 +44,7 @@ object srcCommandRegistryMod {
     def dispatch(target: Node, commandName: String): js.Promise[Unit] | Null = js.native
     
     /** Find all registered commands matching a query. */
-    def findCommands(params: Target): js.Array[Description] = js.native
+    def findCommands(params: Target): js.Array[DisplayName] = js.native
     
     /** Invoke the given callback after dispatching a command event. */
     def onDidDispatch(callback: js.Function1[/* event */ CommandEvent[EventTarget], Unit]): Disposable = js.native
@@ -53,7 +53,7 @@ object srcCommandRegistryMod {
     def onWillDispatch(callback: js.Function1[/* event */ CommandEvent[EventTarget], Unit]): Disposable = js.native
   }
   
-  type CommandRegistryListener[TargetType /* <: EventTarget */] = DidDispatch[TargetType] | (js.Function1[/* event */ CommandEvent[TargetType], Unit | js.Promise[Unit]])
+  type CommandRegistryListener[TargetType /* <: EventTarget */] = Description[TargetType] | (js.Function1[/* event */ CommandEvent[TargetType], Unit | js.Promise[Unit]])
   
   trait CommandRegistryTargetMap
     extends StObject

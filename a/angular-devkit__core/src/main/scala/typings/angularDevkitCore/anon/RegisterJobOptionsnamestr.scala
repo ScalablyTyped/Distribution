@@ -14,14 +14,14 @@ trait RegisterJobOptionsnamestr extends StObject {
   
   var input: js.UndefOr[DeepReadonly[JsonSchema]] = js.undefined
   
-  var name: js.UndefOr[JobName] & String
+  var name: js.UndefOr[JobName] = js.undefined
   
   var output: js.UndefOr[DeepReadonly[JsonSchema]] = js.undefined
 }
 object RegisterJobOptionsnamestr {
   
-  inline def apply(name: js.UndefOr[JobName] & String): RegisterJobOptionsnamestr = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  inline def apply(): RegisterJobOptionsnamestr = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegisterJobOptionsnamestr]
   }
   
@@ -35,7 +35,9 @@ object RegisterJobOptionsnamestr {
     
     inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    inline def setName(value: js.UndefOr[JobName] & String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: JobName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setOutput(value: DeepReadonly[JsonSchema]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     

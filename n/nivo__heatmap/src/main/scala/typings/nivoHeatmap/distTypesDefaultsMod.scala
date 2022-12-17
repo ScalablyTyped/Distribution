@@ -6,7 +6,7 @@ import typings.nivoColors.distTypesScalesContinuousColorScaleMod.ContinuousColor
 import typings.nivoCore.mod.PropertyAccessor
 import typings.nivoHeatmap.anon.OmitAnchoredContinuousCol
 import typings.nivoHeatmap.anon.OmitComputedCellDefaultHe
-import typings.nivoHeatmap.anon.OmitComputedCellDefaultHeBorderColor
+import typings.nivoHeatmap.anon.OmitComputedCellDefaultHeColor
 import typings.nivoHeatmap.anon.OmitComputedCellDefaultHeData
 import typings.nivoHeatmap.anon.OmitComputedCellDefaultHeFormattedValue
 import typings.nivoHeatmap.anon.PartialAnimationConfig
@@ -60,8 +60,8 @@ object distTypesDefaultsMod {
     
     @JSImport("@nivo/heatmap/dist/types/defaults", "canvasDefaultProps.borderColor")
     @js.native
-    def borderColor: InheritedColorConfig[OmitComputedCellDefaultHe] = js.native
-    inline def borderColor_=(x: InheritedColorConfig[OmitComputedCellDefaultHe]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("borderColor")(x.asInstanceOf[js.Any])
+    def borderColor: InheritedColorConfig[OmitComputedCellDefaultHeColor] = js.native
+    inline def borderColor_=(x: InheritedColorConfig[OmitComputedCellDefaultHeColor]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("borderColor")(x.asInstanceOf[js.Any])
     
     @JSImport("@nivo/heatmap/dist/types/defaults", "canvasDefaultProps.borderWidth")
     @js.native
@@ -70,10 +70,8 @@ object distTypesDefaultsMod {
     
     @JSImport("@nivo/heatmap/dist/types/defaults", "canvasDefaultProps.colors")
     @js.native
-    def colors: ContinuousColorScaleConfig | (js.Function1[/* cell */ OmitComputedCellDefaultHeFormattedValue, String]) = js.native
-    inline def colors_=(
-      x: ContinuousColorScaleConfig | (js.Function1[/* cell */ OmitComputedCellDefaultHeFormattedValue, String])
-    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("colors")(x.asInstanceOf[js.Any])
+    def colors: ContinuousColorScaleConfig | (js.Function1[/* cell */ OmitComputedCellDefaultHeData, String]) = js.native
+    inline def colors_=(x: ContinuousColorScaleConfig | (js.Function1[/* cell */ OmitComputedCellDefaultHeData, String])): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("colors")(x.asInstanceOf[js.Any])
     
     @JSImport("@nivo/heatmap/dist/types/defaults", "canvasDefaultProps.emptyColor")
     @js.native
@@ -117,14 +115,14 @@ object distTypesDefaultsMod {
     
     @JSImport("@nivo/heatmap/dist/types/defaults", "canvasDefaultProps.label")
     @js.native
-    def label: PropertyAccessor[OmitComputedCellDefaultHeData, String] = js.native
+    def label: PropertyAccessor[OmitComputedCellDefaultHeFormattedValue, String] = js.native
     
     @JSImport("@nivo/heatmap/dist/types/defaults", "canvasDefaultProps.labelTextColor")
     @js.native
-    def labelTextColor: InheritedColorConfig[OmitComputedCellDefaultHeBorderColor] = js.native
-    inline def labelTextColor_=(x: InheritedColorConfig[OmitComputedCellDefaultHeBorderColor]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("labelTextColor")(x.asInstanceOf[js.Any])
+    def labelTextColor: InheritedColorConfig[OmitComputedCellDefaultHe] = js.native
+    inline def labelTextColor_=(x: InheritedColorConfig[OmitComputedCellDefaultHe]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("labelTextColor")(x.asInstanceOf[js.Any])
     
-    inline def label_=(x: PropertyAccessor[OmitComputedCellDefaultHeData, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("label")(x.asInstanceOf[js.Any])
+    inline def label_=(x: PropertyAccessor[OmitComputedCellDefaultHeFormattedValue, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("label")(x.asInstanceOf[js.Any])
     
     @JSImport("@nivo/heatmap/dist/types/defaults", "canvasDefaultProps.layers")
     @js.native
@@ -211,8 +209,8 @@ object distTypesDefaultsMod {
     
     @JSImport("@nivo/heatmap/dist/types/defaults", "commonDefaultProps.borderColor")
     @js.native
-    def borderColor: InheritedColorConfig[OmitComputedCellDefaultHe] = js.native
-    inline def borderColor_=(x: InheritedColorConfig[OmitComputedCellDefaultHe]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("borderColor")(x.asInstanceOf[js.Any])
+    def borderColor: InheritedColorConfig[OmitComputedCellDefaultHeColor] = js.native
+    inline def borderColor_=(x: InheritedColorConfig[OmitComputedCellDefaultHeColor]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("borderColor")(x.asInstanceOf[js.Any])
     
     @JSImport("@nivo/heatmap/dist/types/defaults", "commonDefaultProps.borderWidth")
     @js.native
@@ -221,10 +219,8 @@ object distTypesDefaultsMod {
     
     @JSImport("@nivo/heatmap/dist/types/defaults", "commonDefaultProps.colors")
     @js.native
-    def colors: ContinuousColorScaleConfig | (js.Function1[/* cell */ OmitComputedCellDefaultHeFormattedValue, String]) = js.native
-    inline def colors_=(
-      x: ContinuousColorScaleConfig | (js.Function1[/* cell */ OmitComputedCellDefaultHeFormattedValue, String])
-    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("colors")(x.asInstanceOf[js.Any])
+    def colors: ContinuousColorScaleConfig | (js.Function1[/* cell */ OmitComputedCellDefaultHeData, String]) = js.native
+    inline def colors_=(x: ContinuousColorScaleConfig | (js.Function1[/* cell */ OmitComputedCellDefaultHeData, String])): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("colors")(x.asInstanceOf[js.Any])
     
     @JSImport("@nivo/heatmap/dist/types/defaults", "commonDefaultProps.emptyColor")
     @js.native
@@ -268,14 +264,14 @@ object distTypesDefaultsMod {
     
     @JSImport("@nivo/heatmap/dist/types/defaults", "commonDefaultProps.label")
     @js.native
-    def label: PropertyAccessor[OmitComputedCellDefaultHeData, String] = js.native
+    def label: PropertyAccessor[OmitComputedCellDefaultHeFormattedValue, String] = js.native
     
     @JSImport("@nivo/heatmap/dist/types/defaults", "commonDefaultProps.labelTextColor")
     @js.native
-    def labelTextColor: InheritedColorConfig[OmitComputedCellDefaultHeBorderColor] = js.native
-    inline def labelTextColor_=(x: InheritedColorConfig[OmitComputedCellDefaultHeBorderColor]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("labelTextColor")(x.asInstanceOf[js.Any])
+    def labelTextColor: InheritedColorConfig[OmitComputedCellDefaultHe] = js.native
+    inline def labelTextColor_=(x: InheritedColorConfig[OmitComputedCellDefaultHe]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("labelTextColor")(x.asInstanceOf[js.Any])
     
-    inline def label_=(x: PropertyAccessor[OmitComputedCellDefaultHeData, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("label")(x.asInstanceOf[js.Any])
+    inline def label_=(x: PropertyAccessor[OmitComputedCellDefaultHeFormattedValue, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("label")(x.asInstanceOf[js.Any])
     
     @JSImport("@nivo/heatmap/dist/types/defaults", "commonDefaultProps.layers")
     @js.native
@@ -363,8 +359,8 @@ object distTypesDefaultsMod {
     
     @JSImport("@nivo/heatmap/dist/types/defaults", "svgDefaultProps.borderColor")
     @js.native
-    def borderColor: InheritedColorConfig[OmitComputedCellDefaultHe] = js.native
-    inline def borderColor_=(x: InheritedColorConfig[OmitComputedCellDefaultHe]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("borderColor")(x.asInstanceOf[js.Any])
+    def borderColor: InheritedColorConfig[OmitComputedCellDefaultHeColor] = js.native
+    inline def borderColor_=(x: InheritedColorConfig[OmitComputedCellDefaultHeColor]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("borderColor")(x.asInstanceOf[js.Any])
     
     @JSImport("@nivo/heatmap/dist/types/defaults", "svgDefaultProps.borderRadius")
     @js.native
@@ -383,10 +379,8 @@ object distTypesDefaultsMod {
     
     @JSImport("@nivo/heatmap/dist/types/defaults", "svgDefaultProps.colors")
     @js.native
-    def colors: ContinuousColorScaleConfig | (js.Function1[/* cell */ OmitComputedCellDefaultHeFormattedValue, String]) = js.native
-    inline def colors_=(
-      x: ContinuousColorScaleConfig | (js.Function1[/* cell */ OmitComputedCellDefaultHeFormattedValue, String])
-    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("colors")(x.asInstanceOf[js.Any])
+    def colors: ContinuousColorScaleConfig | (js.Function1[/* cell */ OmitComputedCellDefaultHeData, String]) = js.native
+    inline def colors_=(x: ContinuousColorScaleConfig | (js.Function1[/* cell */ OmitComputedCellDefaultHeData, String])): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("colors")(x.asInstanceOf[js.Any])
     
     @JSImport("@nivo/heatmap/dist/types/defaults", "svgDefaultProps.emptyColor")
     @js.native
@@ -430,14 +424,14 @@ object distTypesDefaultsMod {
     
     @JSImport("@nivo/heatmap/dist/types/defaults", "svgDefaultProps.label")
     @js.native
-    def label: PropertyAccessor[OmitComputedCellDefaultHeData, String] = js.native
+    def label: PropertyAccessor[OmitComputedCellDefaultHeFormattedValue, String] = js.native
     
     @JSImport("@nivo/heatmap/dist/types/defaults", "svgDefaultProps.labelTextColor")
     @js.native
-    def labelTextColor: InheritedColorConfig[OmitComputedCellDefaultHeBorderColor] = js.native
-    inline def labelTextColor_=(x: InheritedColorConfig[OmitComputedCellDefaultHeBorderColor]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("labelTextColor")(x.asInstanceOf[js.Any])
+    def labelTextColor: InheritedColorConfig[OmitComputedCellDefaultHe] = js.native
+    inline def labelTextColor_=(x: InheritedColorConfig[OmitComputedCellDefaultHe]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("labelTextColor")(x.asInstanceOf[js.Any])
     
-    inline def label_=(x: PropertyAccessor[OmitComputedCellDefaultHeData, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("label")(x.asInstanceOf[js.Any])
+    inline def label_=(x: PropertyAccessor[OmitComputedCellDefaultHeFormattedValue, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("label")(x.asInstanceOf[js.Any])
     
     @JSImport("@nivo/heatmap/dist/types/defaults", "svgDefaultProps.layers")
     @js.native

@@ -21,7 +21,7 @@ trait StorePackageLicense extends StObject {
   var isValid: Boolean
   
   /** Raised when user no longer has rights to the license on the current device (for example, the user has acquired the license on a different device). */
-  def onlicenselost(ev: js.Object & WinRTEvent[StorePackageLicense]): Unit
+  def onlicenselost(ev: WinRTEvent[StorePackageLicense]): Unit
   /** Raised when user no longer has rights to the license on the current device (for example, the user has acquired the license on a different device). */
   @JSName("onlicenselost")
   var onlicenselost_Original: TypedEventHandler[StorePackageLicense, js.Object]

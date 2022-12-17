@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.http2Mod.Http2ServerRequest
 import typings.node.httpMod.IncomingMessage
 import typings.node.urlMod.URL_
-import typings.openidClient.anon.Body
 import typings.openidClient.anon.DPoP
-import typings.openidClient.anon.Dictkey
+import typings.openidClient.anon.Expiresin
+import typings.openidClient.anon.Headers
 import typings.openidClient.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -82,10 +82,10 @@ trait BaseClient
     extras: CallbackExtras
   ): js.Promise[TokenSet] = js.native
   
-  def pushedAuthorizationRequest(): js.Promise[Dictkey] = js.native
-  def pushedAuthorizationRequest(parameters: Unit, extras: PushedAuthorizationRequestExtras): js.Promise[Dictkey] = js.native
-  def pushedAuthorizationRequest(parameters: AuthorizationParameters): js.Promise[Dictkey] = js.native
-  def pushedAuthorizationRequest(parameters: AuthorizationParameters, extras: PushedAuthorizationRequestExtras): js.Promise[Dictkey] = js.native
+  def pushedAuthorizationRequest(): js.Promise[Expiresin] = js.native
+  def pushedAuthorizationRequest(parameters: Unit, extras: PushedAuthorizationRequestExtras): js.Promise[Expiresin] = js.native
+  def pushedAuthorizationRequest(parameters: AuthorizationParameters): js.Promise[Expiresin] = js.native
+  def pushedAuthorizationRequest(parameters: AuthorizationParameters, extras: PushedAuthorizationRequestExtras): js.Promise[Expiresin] = js.native
   
   def refresh(refreshToken: String): js.Promise[TokenSet] = js.native
   def refresh(refreshToken: String, extras: RefreshExtras): js.Promise[TokenSet] = js.native
@@ -95,13 +95,13 @@ trait BaseClient
   def requestObject(payload: RequestObjectPayload): js.Promise[String] = js.native
   
   def requestResource(resourceUrl: String, accessToken: String): `0` & IncomingMessage = js.native
-  def requestResource(resourceUrl: String, accessToken: String, options: Body): `0` & IncomingMessage = js.native
+  def requestResource(resourceUrl: String, accessToken: String, options: Headers): `0` & IncomingMessage = js.native
   def requestResource(resourceUrl: String, accessToken: TokenSet): `0` & IncomingMessage = js.native
-  def requestResource(resourceUrl: String, accessToken: TokenSet, options: Body): `0` & IncomingMessage = js.native
+  def requestResource(resourceUrl: String, accessToken: TokenSet, options: Headers): `0` & IncomingMessage = js.native
   def requestResource(resourceUrl: URL_, accessToken: String): `0` & IncomingMessage = js.native
-  def requestResource(resourceUrl: URL_, accessToken: String, options: Body): `0` & IncomingMessage = js.native
+  def requestResource(resourceUrl: URL_, accessToken: String, options: Headers): `0` & IncomingMessage = js.native
   def requestResource(resourceUrl: URL_, accessToken: TokenSet): `0` & IncomingMessage = js.native
-  def requestResource(resourceUrl: URL_, accessToken: TokenSet, options: Body): `0` & IncomingMessage = js.native
+  def requestResource(resourceUrl: URL_, accessToken: TokenSet, options: Headers): `0` & IncomingMessage = js.native
   
   def revoke(token: String): js.Promise[Unit] = js.native
   def revoke(token: String, tokenTypeHint: Unit, extras: RevokeExtras): js.Promise[Unit] = js.native

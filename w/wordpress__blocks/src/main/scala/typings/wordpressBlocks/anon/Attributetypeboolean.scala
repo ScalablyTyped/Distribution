@@ -16,13 +16,12 @@ trait Attributetypeboolean extends StObject {
   
   var source: attribute
   
-  var `type`: (js.UndefOr[string | boolean]) & boolean
+  var `type`: js.UndefOr[string | boolean] = js.undefined
 }
 object Attributetypeboolean {
   
-  inline def apply(attribute: String, `type`: (js.UndefOr[string | boolean]) & boolean): Attributetypeboolean = {
+  inline def apply(attribute: String): Attributetypeboolean = {
     val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any], source = "attribute")
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attributetypeboolean]
   }
   
@@ -36,6 +35,8 @@ object Attributetypeboolean {
     
     inline def setSource(value: attribute): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    inline def setType(value: (js.UndefOr[string | boolean]) & boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: string | boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

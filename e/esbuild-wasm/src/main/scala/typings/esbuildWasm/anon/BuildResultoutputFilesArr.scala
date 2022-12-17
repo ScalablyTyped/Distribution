@@ -22,7 +22,7 @@ trait BuildResultoutputFilesArr extends StObject {
   var metafile: js.UndefOr[Metafile] = js.undefined
   
   /** Only when "write: false" */
-  var outputFiles: js.UndefOr[js.Array[OutputFile]] & js.Array[OutputFile]
+  var outputFiles: js.UndefOr[js.Array[OutputFile]] = js.undefined
   
   /** Only when "incremental: true" */
   var rebuild: js.UndefOr[BuildInvalidate] = js.undefined
@@ -34,12 +34,8 @@ trait BuildResultoutputFilesArr extends StObject {
 }
 object BuildResultoutputFilesArr {
   
-  inline def apply(
-    errors: js.Array[Message],
-    outputFiles: js.UndefOr[js.Array[OutputFile]] & js.Array[OutputFile],
-    warnings: js.Array[Message]
-  ): BuildResultoutputFilesArr = {
-    val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], outputFiles = outputFiles.asInstanceOf[js.Any], warnings = warnings.asInstanceOf[js.Any])
+  inline def apply(errors: js.Array[Message], warnings: js.Array[Message]): BuildResultoutputFilesArr = {
+    val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], warnings = warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildResultoutputFilesArr]
   }
   
@@ -57,7 +53,11 @@ object BuildResultoutputFilesArr {
     
     inline def setMetafileUndefined: Self = StObject.set(x, "metafile", js.undefined)
     
-    inline def setOutputFiles(value: js.UndefOr[js.Array[OutputFile]] & js.Array[OutputFile]): Self = StObject.set(x, "outputFiles", value.asInstanceOf[js.Any])
+    inline def setOutputFiles(value: js.Array[OutputFile]): Self = StObject.set(x, "outputFiles", value.asInstanceOf[js.Any])
+    
+    inline def setOutputFilesUndefined: Self = StObject.set(x, "outputFiles", js.undefined)
+    
+    inline def setOutputFilesVarargs(value: OutputFile*): Self = StObject.set(x, "outputFiles", js.Array(value*))
     
     inline def setRebuild(value: BuildInvalidate): Self = StObject.set(x, "rebuild", value.asInstanceOf[js.Any])
     

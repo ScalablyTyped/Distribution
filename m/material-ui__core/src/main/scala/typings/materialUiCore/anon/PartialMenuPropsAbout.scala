@@ -55,7 +55,7 @@ import typings.materialUiCore.materialUiCoreStrings.vertical
 import typings.materialUiCore.materialUiCoreStrings.yes
 import typings.materialUiCore.menuListMenuListMod.MenuListProps
 import typings.materialUiCore.menuMenuMod.MenuClassKey
-import typings.materialUiCore.modalModalManagerMod.ModalManager
+import typings.materialUiCore.mod.ModalManager
 import typings.materialUiCore.paperPaperMod.PaperProps
 import typings.materialUiCore.popoverPopoverMod.PopoverActions
 import typings.materialUiCore.popoverPopoverMod.PopoverClassKey

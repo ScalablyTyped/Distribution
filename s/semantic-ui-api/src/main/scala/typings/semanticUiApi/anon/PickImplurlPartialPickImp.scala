@@ -139,7 +139,7 @@ trait PickImplurlPartialPickImp
   
   var throttleFirstRequest: js.UndefOr[Boolean] = js.undefined
   
-  var url: (String | `false`) & (js.UndefOr[String | `false`])
+  var url: String | `false`
   
   var urlData: js.UndefOr[Any | `false`] = js.undefined
   
@@ -147,7 +147,7 @@ trait PickImplurlPartialPickImp
 }
 object PickImplurlPartialPickImp {
   
-  inline def apply(url: (String | `false`) & (js.UndefOr[String | `false`])): PickImplurlPartialPickImp = {
+  inline def apply(url: String | `false`): PickImplurlPartialPickImp = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplurlPartialPickImp]
   }
@@ -334,7 +334,7 @@ object PickImplurlPartialPickImp {
     
     inline def setThrottleUndefined: Self = StObject.set(x, "throttle", js.undefined)
     
-    inline def setUrl(value: (String | `false`) & (js.UndefOr[String | `false`])): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String | `false`): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setUrlData(value: Any | `false`): Self = StObject.set(x, "urlData", value.asInstanceOf[js.Any])
     

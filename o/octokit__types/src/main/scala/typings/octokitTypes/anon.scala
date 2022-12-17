@@ -161,7 +161,7 @@ object anon {
     /**
       * Avoid setting `headers.accept`, use `mediaType.{format|previews}` option instead.
       */
-    var accept: js.UndefOr[String] & String
+    var accept: js.UndefOr[String] = js.undefined
     
     /**
       * Use `authorization` to send authenticated request, remember `token ` / `bearer ` prefixes. Example: `token 1234567890abcdef1234567890abcdef12345678`
@@ -171,25 +171,28 @@ object anon {
     /**
       * `user-agent` is set do a default and can be overwritten as needed.
       */
-    var `user-agent`: js.UndefOr[String] & String
+    var `user-agent`: js.UndefOr[String] = js.undefined
   }
   object RequestHeadersacceptstrin {
     
-    inline def apply(accept: js.UndefOr[String] & String, `user-agent`: js.UndefOr[String] & String): RequestHeadersacceptstrin = {
-      val __obj = js.Dynamic.literal(accept = accept.asInstanceOf[js.Any])
-      __obj.updateDynamic("user-agent")(`user-agent`.asInstanceOf[js.Any])
+    inline def apply(): RequestHeadersacceptstrin = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RequestHeadersacceptstrin]
     }
     
     extension [Self <: RequestHeadersacceptstrin](x: Self) {
       
-      inline def setAccept(value: js.UndefOr[String] & String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
+      inline def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
+      
+      inline def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
       
       inline def setAuthorization(value: String): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
       
       inline def setAuthorizationUndefined: Self = StObject.set(x, "authorization", js.undefined)
       
-      inline def `setUser-agent`(value: js.UndefOr[String] & String): Self = StObject.set(x, "user-agent", value.asInstanceOf[js.Any])
+      inline def `setUser-agent`(value: String): Self = StObject.set(x, "user-agent", value.asInstanceOf[js.Any])
+      
+      inline def `setUser-agentUndefined`: Self = StObject.set(x, "user-agent", js.undefined)
     }
   }
 }

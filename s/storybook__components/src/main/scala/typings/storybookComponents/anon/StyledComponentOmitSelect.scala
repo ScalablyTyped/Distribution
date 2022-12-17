@@ -368,7 +368,7 @@ trait StyledComponentOmitSelect extends StObject {
   
   var defaultProps: js.UndefOr[PartialOmitSelectHTMLAttr] = js.native
   
-  var displayName: js.UndefOr[String] & String = js.native
+  var displayName: js.UndefOr[String] = js.native
   
   var propTypes: js.UndefOr[WeakValidationMapOmitSele] = js.native
   

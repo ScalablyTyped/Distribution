@@ -1,6 +1,6 @@
 package typings.babylonjs
 
-import typings.babylonjs.anon.Updatable
+import typings.babylonjs.anon.`0`
 import typings.babylonjs.materialsMaterialMod.Material
 import typings.babylonjs.mathsMathMod.Color4
 import typings.babylonjs.meshesMeshMod.Mesh
@@ -66,7 +66,7 @@ object particlesPointsCloudSystemMod {
       * @param options.updatable
       */
     def this(name: String, pointSize: Double, scene: Scene) = this()
-    def this(name: String, pointSize: Double, scene: Scene, options: Updatable) = this()
+    def this(name: String, pointSize: Double, scene: Scene, options: `0`) = this()
     
     /* private */ var _addParticle: Any = js.native
     

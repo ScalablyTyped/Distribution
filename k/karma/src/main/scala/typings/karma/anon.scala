@@ -1,6 +1,5 @@
 package typings.karma
 
-import typings.karma.karmaBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ object anon {
       *
       * @deprecated Will become a default in the next major release.
       */
-    var promiseConfig: js.UndefOr[Boolean] & `true`
+    var promiseConfig: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When true, function will throw error or return rejected Promise instead of calling process.exit(1).
@@ -27,14 +26,16 @@ object anon {
   }
   object ParseOptionspromiseConfig {
     
-    inline def apply(promiseConfig: js.UndefOr[Boolean] & `true`): ParseOptionspromiseConfig = {
-      val __obj = js.Dynamic.literal(promiseConfig = promiseConfig.asInstanceOf[js.Any])
+    inline def apply(): ParseOptionspromiseConfig = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParseOptionspromiseConfig]
     }
     
     extension [Self <: ParseOptionspromiseConfig](x: Self) {
       
-      inline def setPromiseConfig(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "promiseConfig", value.asInstanceOf[js.Any])
+      inline def setPromiseConfig(value: Boolean): Self = StObject.set(x, "promiseConfig", value.asInstanceOf[js.Any])
+      
+      inline def setPromiseConfigUndefined: Self = StObject.set(x, "promiseConfig", js.undefined)
       
       inline def setThrowErrors(value: Boolean): Self = StObject.set(x, "throwErrors", value.asInstanceOf[js.Any])
       

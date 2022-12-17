@@ -1,5 +1,6 @@
 package typings.playcanvas.mod
 
+import typings.playcanvas.anon.App
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,8 +31,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @augments EventHandler
   */
+@JSImport("playcanvas", "ScriptType")
 @js.native
-trait ScriptType extends EventHandler {
+open class ScriptType protected () extends EventHandler {
+  /**
+    * Create a new ScriptType instance.
+    *
+    * @param {object} args - The input arguments object.
+    * @param {AppBase} args.app - The {@link AppBase} that is running the script.
+    * @param {Entity} args.entity - The {@link Entity} that the script is attached to.
+    */
+  def this(args: App) = this()
   
   /** @private */
   /* private */ var __attributes: Any = js.native
@@ -221,4 +231,54 @@ trait ScriptType extends EventHandler {
     * @param dt - The delta time in seconds since the last frame.
     */
   var update: js.UndefOr[js.Function1[/* dt */ Double, Unit]] = js.native
+}
+object ScriptType {
+  
+  @JSImport("playcanvas", "ScriptType")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * Shorthand function to extend Script Type prototype with list of methods.
+    *
+    * @param {object} methods - Object with methods, where key - is name of method, and value - is function.
+    * @example
+    * var PlayerController = pc.createScript('playerController');
+    *
+    * PlayerController.extend({
+    *     initialize: function () {
+    *         // called once on initialize
+    *     },
+    *     update: function (dt) {
+    *         // called each tick
+    *     }
+    * });
+    */
+  /* static member */
+  inline def extend(methods: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(methods.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  /**
+    * @param {*} constructorFn - The constructor function of the script type.
+    * @returns {string} The script name.
+    * @private
+    */
+  /* static member */
+  @JSImport("playcanvas", "ScriptType.__getScriptName")
+  @js.native
+  def getScriptName: Any = js.native
+  
+  inline def getScriptName_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__getScriptName")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Name of a Script Type.
+    *
+    * @type {string}
+    * @private
+    */
+  /* static member */
+  @JSImport("playcanvas", "ScriptType.__name")
+  @js.native
+  def name: Any = js.native
+  
+  inline def name_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__name")(x.asInstanceOf[js.Any])
 }

@@ -1,6 +1,6 @@
 package typings.orbitUiReactComponents
 
-import typings.orbitUiReactComponents.anon.`0`
+import typings.orbitUiReactComponents.anon.`3`
 import typings.react.mod.Context
 import typings.react.mod.SyntheticEvent
 import typings.std.Element
@@ -21,7 +21,7 @@ object distSharedSrcCheckableContextMod {
   
   inline def useCheckableContext(): js.Tuple2[CheckableContextType, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCheckableContext")().asInstanceOf[js.Tuple2[CheckableContextType, Boolean]]
   
-  inline def useCheckableProps(param0: `0`): js.Tuple2[UseCheckablePropsReturn, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCheckableProps")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[UseCheckablePropsReturn, Boolean]]
+  inline def useCheckableProps(param0: `3`): js.Tuple2[UseCheckablePropsReturn, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCheckableProps")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[UseCheckablePropsReturn, Boolean]]
   
   trait CheckableContextType extends StObject {
     

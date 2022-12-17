@@ -7,30 +7,30 @@ import typings.carbonElements.anon.BreakpointsFontSize
 import typings.carbonElements.anon.BreakpointsFontSizeFontWeight
 import typings.carbonElements.anon.BreakpointsFontSizeFontWeightLetterSpacing
 import typings.carbonElements.anon.BreakpointsFontSizeFontWeightLetterSpacingLineHeight
-import typings.carbonElements.anon.BreakpointsLg
-import typings.carbonElements.anon.BreakpointsMax
-import typings.carbonElements.anon.BreakpointsMd
-import typings.carbonElements.anon.BreakpointsXlg
+import typings.carbonElements.anon.BreakpointsLg43
+import typings.carbonElements.anon.BreakpointsLgMaxMd
+import typings.carbonElements.anon.BreakpointsLgMaxMdXlg
+import typings.carbonElements.anon.BreakpointsMaxMdXlg
 import typings.carbonElements.anon.FontFamilyFontSize
 import typings.carbonElements.anon.FontFamilyFontSizeFontWeight
+import typings.carbonElements.anon.FontSizeFontWeight
+import typings.carbonElements.anon.FontSizeFontWeightLetterSpacing
 import typings.carbonElements.anon.FontSizeFontWeightLetterSpacingLineHeight
-import typings.carbonElements.anon.`16`
-import typings.carbonElements.anon.`17`
-import typings.carbonElements.anon.`18`
-import typings.carbonElements.anon.`19`
-import typings.carbonElements.anon.`21`
-import typings.carbonElements.anon.`22`
-import typings.carbonElements.anon.`23`
-import typings.carbonElements.anon.`24`
-import typings.carbonElements.anon.`25`
-import typings.carbonElements.anon.`26`
-import typings.carbonElements.anon.`27`
-import typings.carbonElements.anon.`28`
-import typings.carbonElements.anon.`29`
-import typings.carbonElements.anon.`31`
-import typings.carbonElements.anon.`32`
-import typings.carbonElements.anon.`33`
-import typings.carbonElements.anon.`34`
+import typings.carbonElements.anon.FontSizeLetterSpacing
+import typings.carbonElements.anon.FontWeightLetterSpacing
+import typings.carbonElements.anon.FontWeightLetterSpacingLineHeight
+import typings.carbonElements.anon.LetterSpacing
+import typings.carbonElements.anon.LetterSpacingLineHeight
+import typings.carbonElements.anon.LineHeight
+import typings.carbonElements.anon.`11`
+import typings.carbonElements.anon.`12`
+import typings.carbonElements.anon.`3`
+import typings.carbonElements.anon.`4`
+import typings.carbonElements.anon.`5`
+import typings.carbonElements.anon.`6`
+import typings.carbonElements.anon.`7`
+import typings.carbonElements.anon.`8`
+import typings.carbonElements.anon.`9`
 import typings.carbonElements.carbonElementsInts.`0`
 import typings.carbonElements.carbonElementsStrings.Numbersign0043ce
 import typings.carbonElements.carbonElementsStrings.Numbersign0f62fe
@@ -130,23 +130,23 @@ object white {
   
   @JSImport("@carbon/elements", "white.bodyLong01")
   @js.native
-  def bodyLong01: `21` = js.native
-  inline def bodyLong01_=(x: `21`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bodyLong01")(x.asInstanceOf[js.Any])
+  def bodyLong01: FontWeightLetterSpacing = js.native
+  inline def bodyLong01_=(x: FontWeightLetterSpacing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bodyLong01")(x.asInstanceOf[js.Any])
   
   @JSImport("@carbon/elements", "white.bodyLong02")
   @js.native
-  def bodyLong02: `23` = js.native
-  inline def bodyLong02_=(x: `23`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bodyLong02")(x.asInstanceOf[js.Any])
+  def bodyLong02: FontWeightLetterSpacingLineHeight = js.native
+  inline def bodyLong02_=(x: FontWeightLetterSpacingLineHeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bodyLong02")(x.asInstanceOf[js.Any])
   
   @JSImport("@carbon/elements", "white.bodyShort01")
   @js.native
-  def bodyShort01: `17` = js.native
-  inline def bodyShort01_=(x: `17`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bodyShort01")(x.asInstanceOf[js.Any])
+  def bodyShort01: FontSizeFontWeight = js.native
+  inline def bodyShort01_=(x: FontSizeFontWeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bodyShort01")(x.asInstanceOf[js.Any])
   
   @JSImport("@carbon/elements", "white.bodyShort02")
   @js.native
-  def bodyShort02: `22` = js.native
-  inline def bodyShort02_=(x: `22`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bodyShort02")(x.asInstanceOf[js.Any])
+  def bodyShort02: FontSizeFontWeightLetterSpacing = js.native
+  inline def bodyShort02_=(x: FontSizeFontWeightLetterSpacing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bodyShort02")(x.asInstanceOf[js.Any])
   
   @JSImport("@carbon/elements", "white.borderDisabled")
   @js.native
@@ -215,13 +215,13 @@ object white {
   
   @JSImport("@carbon/elements", "white.caption01")
   @js.native
-  def caption01: FontSizeFontWeightLetterSpacingLineHeight = js.native
-  inline def caption01_=(x: FontSizeFontWeightLetterSpacingLineHeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("caption01")(x.asInstanceOf[js.Any])
+  def caption01: LetterSpacing = js.native
+  inline def caption01_=(x: LetterSpacing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("caption01")(x.asInstanceOf[js.Any])
   
   @JSImport("@carbon/elements", "white.caption02")
   @js.native
-  def caption02: `16` = js.native
-  inline def caption02_=(x: `16`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("caption02")(x.asInstanceOf[js.Any])
+  def caption02: LineHeight = js.native
+  inline def caption02_=(x: LineHeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("caption02")(x.asInstanceOf[js.Any])
   
   @JSImport("@carbon/elements", "white.code01")
   @js.native
@@ -260,33 +260,33 @@ object white {
   
   @JSImport("@carbon/elements", "white.display01")
   @js.native
-  def display01: BreakpointsLg = js.native
-  inline def display01_=(x: BreakpointsLg): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("display01")(x.asInstanceOf[js.Any])
+  def display01: BreakpointsLgMaxMd = js.native
+  inline def display01_=(x: BreakpointsLgMaxMd): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("display01")(x.asInstanceOf[js.Any])
   
   @JSImport("@carbon/elements", "white.display02")
   @js.native
-  def display02: BreakpointsMax = js.native
-  inline def display02_=(x: BreakpointsMax): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("display02")(x.asInstanceOf[js.Any])
+  def display02: BreakpointsMaxMdXlg = js.native
+  inline def display02_=(x: BreakpointsMaxMdXlg): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("display02")(x.asInstanceOf[js.Any])
   
   @JSImport("@carbon/elements", "white.display03")
   @js.native
-  def display03: BreakpointsMd = js.native
-  inline def display03_=(x: BreakpointsMd): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("display03")(x.asInstanceOf[js.Any])
+  def display03: BreakpointsLgMaxMdXlg = js.native
+  inline def display03_=(x: BreakpointsLgMaxMdXlg): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("display03")(x.asInstanceOf[js.Any])
   
   @JSImport("@carbon/elements", "white.display04")
   @js.native
-  def display04: BreakpointsXlg = js.native
-  inline def display04_=(x: BreakpointsXlg): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("display04")(x.asInstanceOf[js.Any])
+  def display04: BreakpointsLg43 = js.native
+  inline def display04_=(x: BreakpointsLg43): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("display04")(x.asInstanceOf[js.Any])
   
   @JSImport("@carbon/elements", "white.expressiveHeading01")
   @js.native
-  def expressiveHeading01: `34` = js.native
-  inline def expressiveHeading01_=(x: `34`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expressiveHeading01")(x.asInstanceOf[js.Any])
+  def expressiveHeading01: `12` = js.native
+  inline def expressiveHeading01_=(x: `12`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expressiveHeading01")(x.asInstanceOf[js.Any])
   
   @JSImport("@carbon/elements", "white.expressiveHeading02")
   @js.native
-  def expressiveHeading02: `26` = js.native
-  inline def expressiveHeading02_=(x: `26`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expressiveHeading02")(x.asInstanceOf[js.Any])
+  def expressiveHeading02: `4` = js.native
+  inline def expressiveHeading02_=(x: `4`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expressiveHeading02")(x.asInstanceOf[js.Any])
   
   @JSImport("@carbon/elements", "white.expressiveHeading03")
   @js.native
@@ -381,23 +381,23 @@ object white {
   
   @JSImport("@carbon/elements", "white.heading01")
   @js.native
-  def heading01: `24` = js.native
-  inline def heading01_=(x: `24`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("heading01")(x.asInstanceOf[js.Any])
+  def heading01: FontSizeFontWeightLetterSpacingLineHeight = js.native
+  inline def heading01_=(x: FontSizeFontWeightLetterSpacingLineHeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("heading01")(x.asInstanceOf[js.Any])
   
   @JSImport("@carbon/elements", "white.heading02")
   @js.native
-  def heading02: `26` = js.native
-  inline def heading02_=(x: `26`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("heading02")(x.asInstanceOf[js.Any])
+  def heading02: `4` = js.native
+  inline def heading02_=(x: `4`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("heading02")(x.asInstanceOf[js.Any])
   
   @JSImport("@carbon/elements", "white.helperText01")
   @js.native
-  def helperText01: `18` = js.native
-  inline def helperText01_=(x: `18`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("helperText01")(x.asInstanceOf[js.Any])
+  def helperText01: FontSizeLetterSpacing = js.native
+  inline def helperText01_=(x: FontSizeLetterSpacing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("helperText01")(x.asInstanceOf[js.Any])
   
   @JSImport("@carbon/elements", "white.helperText02")
   @js.native
-  def helperText02: `19` = js.native
-  inline def helperText02_=(x: `19`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("helperText02")(x.asInstanceOf[js.Any])
+  def helperText02: LetterSpacingLineHeight = js.native
+  inline def helperText02_=(x: LetterSpacingLineHeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("helperText02")(x.asInstanceOf[js.Any])
   
   @JSImport("@carbon/elements", "white.highlight")
   @js.native
@@ -452,13 +452,13 @@ object white {
   
   @JSImport("@carbon/elements", "white.label01")
   @js.native
-  def label01: FontSizeFontWeightLetterSpacingLineHeight = js.native
-  inline def label01_=(x: FontSizeFontWeightLetterSpacingLineHeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("label01")(x.asInstanceOf[js.Any])
+  def label01: LetterSpacing = js.native
+  inline def label01_=(x: LetterSpacing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("label01")(x.asInstanceOf[js.Any])
   
   @JSImport("@carbon/elements", "white.label02")
   @js.native
-  def label02: `17` = js.native
-  inline def label02_=(x: `17`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("label02")(x.asInstanceOf[js.Any])
+  def label02: FontSizeFontWeight = js.native
+  inline def label02_=(x: FontSizeFontWeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("label02")(x.asInstanceOf[js.Any])
   
   @JSImport("@carbon/elements", "white.layer01")
   @js.native
@@ -634,38 +634,38 @@ object white {
   
   @JSImport("@carbon/elements", "white.productiveHeading01")
   @js.native
-  def productiveHeading01: `25` = js.native
-  inline def productiveHeading01_=(x: `25`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("productiveHeading01")(x.asInstanceOf[js.Any])
+  def productiveHeading01: `3` = js.native
+  inline def productiveHeading01_=(x: `3`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("productiveHeading01")(x.asInstanceOf[js.Any])
   
   @JSImport("@carbon/elements", "white.productiveHeading02")
   @js.native
-  def productiveHeading02: `27` = js.native
-  inline def productiveHeading02_=(x: `27`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("productiveHeading02")(x.asInstanceOf[js.Any])
+  def productiveHeading02: `5` = js.native
+  inline def productiveHeading02_=(x: `5`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("productiveHeading02")(x.asInstanceOf[js.Any])
   
   @JSImport("@carbon/elements", "white.productiveHeading03")
   @js.native
-  def productiveHeading03: `28` = js.native
-  inline def productiveHeading03_=(x: `28`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("productiveHeading03")(x.asInstanceOf[js.Any])
+  def productiveHeading03: `6` = js.native
+  inline def productiveHeading03_=(x: `6`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("productiveHeading03")(x.asInstanceOf[js.Any])
   
   @JSImport("@carbon/elements", "white.productiveHeading04")
   @js.native
-  def productiveHeading04: `29` = js.native
-  inline def productiveHeading04_=(x: `29`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("productiveHeading04")(x.asInstanceOf[js.Any])
+  def productiveHeading04: `7` = js.native
+  inline def productiveHeading04_=(x: `7`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("productiveHeading04")(x.asInstanceOf[js.Any])
   
   @JSImport("@carbon/elements", "white.productiveHeading05")
   @js.native
-  def productiveHeading05: `31` = js.native
-  inline def productiveHeading05_=(x: `31`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("productiveHeading05")(x.asInstanceOf[js.Any])
+  def productiveHeading05: `8` = js.native
+  inline def productiveHeading05_=(x: `8`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("productiveHeading05")(x.asInstanceOf[js.Any])
   
   @JSImport("@carbon/elements", "white.productiveHeading06")
   @js.native
-  def productiveHeading06: `32` = js.native
-  inline def productiveHeading06_=(x: `32`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("productiveHeading06")(x.asInstanceOf[js.Any])
+  def productiveHeading06: `9` = js.native
+  inline def productiveHeading06_=(x: `9`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("productiveHeading06")(x.asInstanceOf[js.Any])
   
   @JSImport("@carbon/elements", "white.productiveHeading07")
   @js.native
-  def productiveHeading07: `33` = js.native
-  inline def productiveHeading07_=(x: `33`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("productiveHeading07")(x.asInstanceOf[js.Any])
+  def productiveHeading07: `11` = js.native
+  inline def productiveHeading07_=(x: `11`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("productiveHeading07")(x.asInstanceOf[js.Any])
   
   @JSImport("@carbon/elements", "white.quotation01")
   @js.native

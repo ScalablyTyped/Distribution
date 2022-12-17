@@ -4,6 +4,7 @@ import typings.node.streamMod.Readable
 import typings.nodelibFsScandir.anon.WithFileTypes
 import typings.nodelibFsScandir.outTypesMod.Dirent
 import typings.nodelibFsScandir.outTypesMod.ErrnoException
+import typings.nodelibFsStat.mod.AsyncCallback
 import typings.nodelibFsStat.outAdaptersFsMod.StatAsynchronousMethod
 import typings.nodelibFsStat.outAdaptersFsMod.StatSynchronousMethod
 import typings.nodelibFsStat.outTypesMod.Stats
@@ -111,5 +112,37 @@ object anon {
       
       inline def setStatUndefined: Self = StObject.set(x, "stat", js.undefined)
     }
+  }
+  
+  @js.native
+  trait Typeofstat extends StObject {
+    
+    def apply(path: String, callback: AsyncCallback): Unit = js.native
+    def apply(
+      path: String,
+      optionsOrSettings: typings.nodelibFsStat.outSettingsMod.Options,
+      callback: AsyncCallback
+    ): Unit = js.native
+    def apply(
+      path: String,
+      optionsOrSettings: typings.nodelibFsStat.outSettingsMod.default,
+      callback: AsyncCallback
+    ): Unit = js.native
+  }
+  
+  @js.native
+  trait Typeofwalk extends StObject {
+    
+    def apply(directory: String, callback: typings.nodelibFsWalk.outProvidersAsyncMod.AsyncCallback): Unit = js.native
+    def apply(
+      directory: String,
+      optionsOrSettings: Options,
+      callback: typings.nodelibFsWalk.outProvidersAsyncMod.AsyncCallback
+    ): Unit = js.native
+    def apply(
+      directory: String,
+      optionsOrSettings: default,
+      callback: typings.nodelibFsWalk.outProvidersAsyncMod.AsyncCallback
+    ): Unit = js.native
   }
 }

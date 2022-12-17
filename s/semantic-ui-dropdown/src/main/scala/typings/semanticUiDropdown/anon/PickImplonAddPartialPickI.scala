@@ -105,21 +105,13 @@ trait PickImplonAddPartialPickI
   
   def onAdd(addedValue: Any, addedText: String, $addedChoice: JQuery): Unit
   @JSName("onAdd")
-  var onAdd_Original: (js.ThisFunction3[
+  var onAdd_Original: js.ThisFunction3[
     /* this */ JQuery, 
     /* addedValue */ Any, 
     /* addedText */ String, 
     /* $addedChoice */ JQuery, 
     Unit
-  ]) & (js.UndefOr[
-    js.ThisFunction3[
-      /* this */ JQuery, 
-      /* addedValue */ Any, 
-      /* addedText */ String, 
-      /* $addedChoice */ JQuery, 
-      Unit
-    ]
-  ])
+  ]
   
   var onChange: js.UndefOr[
     js.ThisFunction3[/* this */ JQuery, /* value */ Any, /* text */ String, /* $choice */ JQuery, Unit]
@@ -178,21 +170,13 @@ trait PickImplonAddPartialPickI
 object PickImplonAddPartialPickI {
   
   inline def apply(
-    onAdd: (js.ThisFunction3[
+    onAdd: js.ThisFunction3[
       /* this */ JQuery, 
       /* addedValue */ Any, 
       /* addedText */ String, 
       /* $addedChoice */ JQuery, 
       Unit
-    ]) & (js.UndefOr[
-      js.ThisFunction3[
-        /* this */ JQuery, 
-        /* addedValue */ Any, 
-        /* addedText */ String, 
-        /* $addedChoice */ JQuery, 
-        Unit
-      ]
-    ])
+    ]
   ): PickImplonAddPartialPickI = {
     val __obj = js.Dynamic.literal(onAdd = onAdd.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonAddPartialPickI]
@@ -327,21 +311,13 @@ object PickImplonAddPartialPickI {
     inline def setOn(value: String): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     
     inline def setOnAdd(
-      value: (js.ThisFunction3[
+      value: js.ThisFunction3[
           /* this */ JQuery, 
           /* addedValue */ Any, 
           /* addedText */ String, 
           /* $addedChoice */ JQuery, 
           Unit
-        ]) & (js.UndefOr[
-          js.ThisFunction3[
-            /* this */ JQuery, 
-            /* addedValue */ Any, 
-            /* addedText */ String, 
-            /* $addedChoice */ JQuery, 
-            Unit
-          ]
-        ])
+        ]
     ): Self = StObject.set(x, "onAdd", value.asInstanceOf[js.Any])
     
     inline def setOnChange(

@@ -133,7 +133,7 @@ trait containerStyleStylePropViAccessibilityElementsHidden extends StObject {
   
   var bottomDivider: js.UndefOr[Boolean] = js.undefined
   
-  var children: js.UndefOr[Any] & js.UndefOr[ReactNode]
+  var children: js.UndefOr[Any] = js.undefined
   
   var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
@@ -305,8 +305,8 @@ trait containerStyleStylePropViAccessibilityElementsHidden extends StObject {
 }
 object containerStyleStylePropViAccessibilityElementsHidden {
   
-  inline def apply(children: js.UndefOr[Any] & js.UndefOr[ReactNode]): containerStyleStylePropViAccessibilityElementsHidden = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+  inline def apply(): containerStyleStylePropViAccessibilityElementsHidden = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[containerStyleStylePropViAccessibilityElementsHidden]
   }
   
@@ -380,7 +380,9 @@ object containerStyleStylePropViAccessibilityElementsHidden {
     
     inline def setBottomDividerUndefined: Self = StObject.set(x, "bottomDivider", js.undefined)
     
-    inline def setChildren(value: js.UndefOr[Any] & js.UndefOr[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setComponent(
       value: TypeofComponent & (Instantiable1[

@@ -34,7 +34,7 @@ trait Appfee extends StObject {
   
   var currency: String
   
-  var customer: Customertoken
+  var customer: DeletedAt
   
   var customerId: Double
   
@@ -103,7 +103,7 @@ object Appfee {
     charged_amount: Double,
     createdAt: String,
     currency: String,
-    customer: Customertoken,
+    customer: DeletedAt,
     customerId: Double,
     cycle: String,
     deletedAt: Any,
@@ -162,7 +162,7 @@ object Appfee {
     
     inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
-    inline def setCustomer(value: Customertoken): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+    inline def setCustomer(value: DeletedAt): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
     
     inline def setCustomerId(value: Double): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
     

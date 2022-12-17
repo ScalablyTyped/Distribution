@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Fn30[A] extends StObject {
   
-  def apply(a: A): js.Function1[/* fa */ Record[String, A], Boolean] = js.native
-  def apply(a: A, fa: Record[String, A]): Boolean = js.native
+  def apply(me: Record[String, A], that: Record[String, A]): Boolean = js.native
+  def apply(that: Record[String, A]): js.Function1[/* me */ Record[String, A], Boolean] = js.native
 }

@@ -13,7 +13,7 @@ trait Duration extends StObject {
   
   var duration: Double
   
-  var error: `3`
+  var error: `392`
   
   var pusher: Avatarurl | Null
   
@@ -31,7 +31,7 @@ object Duration {
     commit: String,
     created_at: String,
     duration: Double,
-    error: `3`,
+    error: `392`,
     status: String,
     updated_at: String,
     url: String
@@ -48,7 +48,7 @@ object Duration {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    inline def setError(value: `3`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: `392`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     inline def setPusher(value: Avatarurl): Self = StObject.set(x, "pusher", value.asInstanceOf[js.Any])
     

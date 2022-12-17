@@ -7,21 +7,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Hidden extends StObject {
   
   @JSName("$color")
-  var $color: typings.baseui.badgeTypesMod.Color
+  var $color: js.UndefOr[typings.baseui.badgeTypesMod.Color] = js.undefined
   
   @JSName("$hidden")
   var $hidden: js.UndefOr[Boolean] = js.undefined
 }
 object Hidden {
   
-  inline def apply($color: typings.baseui.badgeTypesMod.Color): Hidden = {
-    val __obj = js.Dynamic.literal($color = $color.asInstanceOf[js.Any])
+  inline def apply(): Hidden = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Hidden]
   }
   
   extension [Self <: Hidden](x: Self) {
     
     inline def set$color(value: typings.baseui.badgeTypesMod.Color): Self = StObject.set(x, "$color", value.asInstanceOf[js.Any])
+    
+    inline def set$colorUndefined: Self = StObject.set(x, "$color", js.undefined)
     
     inline def set$hidden(value: Boolean): Self = StObject.set(x, "$hidden", value.asInstanceOf[js.Any])
     

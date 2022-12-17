@@ -82,13 +82,13 @@ type MaxHeight[TLength] = ViewportLength[TLength]
 
 type MaxWidth[TLength] = ViewportLength[TLength]
 
-type MaxZoom = auto | String | (Double & js.Object)
+type MaxZoom = auto | String | Double
 
 type MinHeight[TLength] = ViewportLength[TLength]
 
 type MinWidth[TLength] = ViewportLength[TLength]
 
-type MinZoom = auto | String | (Double & js.Object)
+type MinZoom = auto | String | Double
 
 type Range = auto | String
 
@@ -125,4 +125,4 @@ type System = _System | String
 
 type Width[TLength] = ViewportLength[TLength] | String
 
-type Zoom = auto | String | (Double & js.Object)
+type Zoom = auto | String | Double

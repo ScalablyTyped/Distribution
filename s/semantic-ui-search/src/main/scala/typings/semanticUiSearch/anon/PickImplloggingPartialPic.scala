@@ -10,7 +10,7 @@ trait PickImplloggingPartialPic
   extends StObject
      with Param {
   
-  var logging: String & js.UndefOr[String]
+  var logging: String
   
   var maxResults: js.UndefOr[String] = js.undefined
   
@@ -26,14 +26,14 @@ trait PickImplloggingPartialPic
 }
 object PickImplloggingPartialPic {
   
-  inline def apply(logging: String & js.UndefOr[String]): PickImplloggingPartialPic = {
+  inline def apply(logging: String): PickImplloggingPartialPic = {
     val __obj = js.Dynamic.literal(logging = logging.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplloggingPartialPic]
   }
   
   extension [Self <: PickImplloggingPartialPic](x: Self) {
     
-    inline def setLogging(value: String & js.UndefOr[String]): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
+    inline def setLogging(value: String): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     
     inline def setMaxResults(value: String): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

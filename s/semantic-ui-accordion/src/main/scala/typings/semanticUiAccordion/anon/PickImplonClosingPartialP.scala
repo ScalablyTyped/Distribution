@@ -46,7 +46,7 @@ trait PickImplonClosingPartialP
   
   def onClosing(): Unit
   @JSName("onClosing")
-  var onClosing_Original: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+  var onClosing_Original: js.ThisFunction0[/* this */ JQuery, Unit]
   
   var onOpen: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
@@ -62,9 +62,7 @@ trait PickImplonClosingPartialP
 }
 object PickImplonClosingPartialP {
   
-  inline def apply(
-    onClosing: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-  ): PickImplonClosingPartialP = {
+  inline def apply(onClosing: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonClosingPartialP = {
     val __obj = js.Dynamic.literal(onClosing = onClosing.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonClosingPartialP]
   }
@@ -129,9 +127,7 @@ object PickImplonClosingPartialP {
     
     inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
-    inline def setOnClosing(
-      value: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-    ): Self = StObject.set(x, "onClosing", value.asInstanceOf[js.Any])
+    inline def setOnClosing(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onClosing", value.asInstanceOf[js.Any])
     
     inline def setOnOpen(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onOpen", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,7 @@ trait PickImplclassNamePartialP
   extends StObject
      with Param {
   
-  var className: ClassNameSettings & js.UndefOr[ClassNameSettings]
+  var className: ClassNameSettings
   
   var clearable: js.UndefOr[auto | Boolean] = js.undefined
   
@@ -45,14 +45,14 @@ trait PickImplclassNamePartialP
 }
 object PickImplclassNamePartialP {
   
-  inline def apply(className: ClassNameSettings & js.UndefOr[ClassNameSettings]): PickImplclassNamePartialP = {
+  inline def apply(className: ClassNameSettings): PickImplclassNamePartialP = {
     val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplclassNamePartialP]
   }
   
   extension [Self <: PickImplclassNamePartialP](x: Self) {
     
-    inline def setClassName(value: ClassNameSettings & js.UndefOr[ClassNameSettings]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     inline def setClearable(value: auto | Boolean): Self = StObject.set(x, "clearable", value.asInstanceOf[js.Any])
     

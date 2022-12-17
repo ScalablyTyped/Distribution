@@ -121,7 +121,7 @@ trait PickImplonLabelCreatePart
   
   def onLabelCreate(value: Any, text: String): JQuery
   @JSName("onLabelCreate")
-  var onLabelCreate_Original: (js.ThisFunction2[/* this */ JQuery, /* value */ Any, /* text */ String, JQuery]) & (js.UndefOr[js.ThisFunction2[/* this */ JQuery, /* value */ Any, /* text */ String, JQuery]])
+  var onLabelCreate_Original: js.ThisFunction2[/* this */ JQuery, /* value */ Any, /* text */ String, JQuery]
   
   var onLabelRemove: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* value */ Any, `false` | Unit]] = js.undefined
   
@@ -171,9 +171,7 @@ trait PickImplonLabelCreatePart
 }
 object PickImplonLabelCreatePart {
   
-  inline def apply(
-    onLabelCreate: (js.ThisFunction2[/* this */ JQuery, /* value */ Any, /* text */ String, JQuery]) & (js.UndefOr[js.ThisFunction2[/* this */ JQuery, /* value */ Any, /* text */ String, JQuery]])
-  ): PickImplonLabelCreatePart = {
+  inline def apply(onLabelCreate: js.ThisFunction2[/* this */ JQuery, /* value */ Any, /* text */ String, JQuery]): PickImplonLabelCreatePart = {
     val __obj = js.Dynamic.literal(onLabelCreate = onLabelCreate.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonLabelCreatePart]
   }
@@ -328,9 +326,7 @@ object PickImplonLabelCreatePart {
     
     inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
     
-    inline def setOnLabelCreate(
-      value: (js.ThisFunction2[/* this */ JQuery, /* value */ Any, /* text */ String, JQuery]) & (js.UndefOr[js.ThisFunction2[/* this */ JQuery, /* value */ Any, /* text */ String, JQuery]])
-    ): Self = StObject.set(x, "onLabelCreate", value.asInstanceOf[js.Any])
+    inline def setOnLabelCreate(value: js.ThisFunction2[/* this */ JQuery, /* value */ Any, /* text */ String, JQuery]): Self = StObject.set(x, "onLabelCreate", value.asInstanceOf[js.Any])
     
     inline def setOnLabelRemove(value: js.ThisFunction1[/* this */ JQuery, /* value */ Any, `false` | Unit]): Self = StObject.set(x, "onLabelRemove", value.asInstanceOf[js.Any])
     

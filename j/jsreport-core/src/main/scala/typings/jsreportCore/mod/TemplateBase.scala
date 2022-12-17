@@ -1,6 +1,6 @@
 package typings.jsreportCore.mod
 
-import typings.jsreportCore.anon.Format
+import typings.jsreportCore.anon.Enabled
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +21,7 @@ trait TemplateBase extends StObject {
   /** recipe used for printing previously assembled document */
   var recipe: Recipe | String
   
-  var unoconv: js.UndefOr[Format] = js.undefined
+  var unoconv: js.UndefOr[Enabled] = js.undefined
 }
 object TemplateBase {
   
@@ -48,7 +48,7 @@ object TemplateBase {
     
     inline def setRecipe(value: Recipe | String): Self = StObject.set(x, "recipe", value.asInstanceOf[js.Any])
     
-    inline def setUnoconv(value: Format): Self = StObject.set(x, "unoconv", value.asInstanceOf[js.Any])
+    inline def setUnoconv(value: Enabled): Self = StObject.set(x, "unoconv", value.asInstanceOf[js.Any])
     
     inline def setUnoconvUndefined: Self = StObject.set(x, "unoconv", js.undefined)
   }

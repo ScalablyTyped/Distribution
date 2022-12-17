@@ -8,8 +8,8 @@ import typings.node.anon.Clang
 import typings.node.anon.Debug
 import typings.node.anon.Fd
 import typings.node.anon.SwallowErrors
-import typings.node.anon.`4`
 import typings.node.anon.`5`
+import typings.node.anon.`6`
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.node.nodeBooleans.`true`
 import typings.node.nodeColonworkerThreadsMod.Worker
@@ -1524,7 +1524,7 @@ object global {
         *
         * `process.stderr` differs from other Node.js streams in important ways. See `note on process I/O` for more information.
         */
-      var stderr: WriteStream & `4` = js.native
+      var stderr: WriteStream & `5` = js.native
       
       /**
         * The `process.stdin` property returns a stream connected to`stdin` (fd `0`). It is a `net.Socket` (which is a `Duplex` stream) unless fd `0` refers to a file, in which case it is
@@ -1539,7 +1539,7 @@ object global {
         * In "old" streams mode the `stdin` stream is paused by default, so one
         * must call `process.stdin.resume()` to read from it. Note also that calling`process.stdin.resume()` itself would switch stream to "old" mode.
         */
-      var stdin: ReadStream & `5` = js.native
+      var stdin: ReadStream & `6` = js.native
       
       /**
         * The `process.stdout` property returns a stream connected to`stdout` (fd `1`). It is a `net.Socket` (which is a `Duplex` stream) unless fd `1` refers to a file, in which case it is

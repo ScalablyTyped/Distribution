@@ -8,11 +8,11 @@ trait ParametersQuery407 extends StObject {
   
   var parameters: Query407
   
-  var responses: `200408`
+  var responses: `200ContentApplicationjsonOrganizationsTotalcount`
 }
 object ParametersQuery407 {
   
-  inline def apply(parameters: Query407, responses: `200408`): ParametersQuery407 = {
+  inline def apply(parameters: Query407, responses: `200ContentApplicationjsonOrganizationsTotalcount`): ParametersQuery407 = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersQuery407]
   }
@@ -21,6 +21,6 @@ object ParametersQuery407 {
     
     inline def setParameters(value: Query407): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200408`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200ContentApplicationjsonOrganizationsTotalcount`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

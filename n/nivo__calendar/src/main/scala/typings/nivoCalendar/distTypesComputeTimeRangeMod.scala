@@ -2,7 +2,7 @@ package typings.nivoCalendar
 
 import typings.nivoCalendar.anon.CellHeight
 import typings.nivoCalendar.anon.Coordinates
-import typings.nivoCalendar.anon.FirstWeek
+import typings.nivoCalendar.anon.DateDay
 import typings.nivoCalendar.anon.Height
 import typings.nivoCalendar.anon.Value
 import typings.nivoCalendar.anon.Weeks
@@ -20,7 +20,7 @@ object distTypesComputeTimeRangeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def computeCellPositions(param0: ComputeCellPositions_): js.Array[Coordinates | FirstWeek] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeCellPositions")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[Coordinates | FirstWeek]]
+  inline def computeCellPositions(param0: ComputeCellPositions_): js.Array[Coordinates | typings.nivoCalendar.anon.Day] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeCellPositions")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[Coordinates | typings.nivoCalendar.anon.Day]]
   
   inline def computeCellSize(param0: ComputeCellSize_): CellHeight = ^.asInstanceOf[js.Dynamic].applyDynamic("computeCellSize")(param0.asInstanceOf[js.Any]).asInstanceOf[CellHeight]
   
@@ -97,7 +97,7 @@ object distTypesComputeTimeRangeMod {
     
     def colorScale(value: Double): String
     
-    var data: js.Array[typings.nivoCalendar.anon.Day]
+    var data: js.Array[DateDay]
     
     var emptyColor: String
     
@@ -111,7 +111,7 @@ object distTypesComputeTimeRangeMod {
       cellHeight: Double,
       cellWidth: Double,
       colorScale: Double => String,
-      data: js.Array[typings.nivoCalendar.anon.Day],
+      data: js.Array[DateDay],
       daySpacing: Double,
       direction: horizontal | vertical,
       emptyColor: String,
@@ -125,9 +125,9 @@ object distTypesComputeTimeRangeMod {
       
       inline def setColorScale(value: Double => String): Self = StObject.set(x, "colorScale", js.Any.fromFunction1(value))
       
-      inline def setData(value: js.Array[typings.nivoCalendar.anon.Day]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[DateDay]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: typings.nivoCalendar.anon.Day*): Self = StObject.set(x, "data", js.Array(value*))
+      inline def setDataVarargs(value: DateDay*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setEmptyColor(value: String): Self = StObject.set(x, "emptyColor", value.asInstanceOf[js.Any])
       
@@ -227,7 +227,7 @@ object distTypesComputeTimeRangeMod {
   
   trait ComputeTotalDays_ extends StObject {
     
-    var data: js.Array[typings.nivoCalendar.anon.Day]
+    var data: js.Array[DateDay]
     
     var from: js.UndefOr[DateOrString] = js.undefined
     
@@ -235,16 +235,16 @@ object distTypesComputeTimeRangeMod {
   }
   object ComputeTotalDays_ {
     
-    inline def apply(data: js.Array[typings.nivoCalendar.anon.Day]): ComputeTotalDays_ = {
+    inline def apply(data: js.Array[DateDay]): ComputeTotalDays_ = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[ComputeTotalDays_]
     }
     
     extension [Self <: ComputeTotalDays_](x: Self) {
       
-      inline def setData(value: js.Array[typings.nivoCalendar.anon.Day]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[DateDay]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: typings.nivoCalendar.anon.Day*): Self = StObject.set(x, "data", js.Array(value*))
+      inline def setDataVarargs(value: DateDay*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setFrom(value: DateOrString): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       

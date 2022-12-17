@@ -6,19 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `10`[T] extends StObject {
   
-  var date: T | (js.Array[js.UndefOr[T | Null]])
+  var date: js.UndefOr[T | Null | js.Array[T]] = js.undefined
 }
 object `10` {
   
-  inline def apply[T](date: T | (js.Array[js.UndefOr[T | Null]])): `10`[T] = {
-    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
+  inline def apply[T](): `10`[T] = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`10`[T]]
   }
   
   extension [Self <: `10`[?], T](x: Self & `10`[T]) {
     
-    inline def setDate(value: T | (js.Array[js.UndefOr[T | Null]])): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: T | js.Array[T]): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    inline def setDateVarargs(value: (js.UndefOr[T | Null])*): Self = StObject.set(x, "date", js.Array(value*))
+    inline def setDateNull: Self = StObject.set(x, "date", null)
+    
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    
+    inline def setDateVarargs(value: T*): Self = StObject.set(x, "date", js.Array(value*))
   }
 }

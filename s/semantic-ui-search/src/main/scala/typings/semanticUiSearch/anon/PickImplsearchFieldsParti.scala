@@ -68,7 +68,7 @@ trait PickImplsearchFieldsParti
   
   var searchDelay: js.UndefOr[Double] = js.undefined
   
-  var searchFields: js.Array[String] & js.UndefOr[js.Array[String]]
+  var searchFields: js.Array[String]
   
   var searchFullText: js.UndefOr[Boolean] = js.undefined
   
@@ -92,7 +92,7 @@ trait PickImplsearchFieldsParti
 }
 object PickImplsearchFieldsParti {
   
-  inline def apply(searchFields: js.Array[String] & js.UndefOr[js.Array[String]]): PickImplsearchFieldsParti = {
+  inline def apply(searchFields: js.Array[String]): PickImplsearchFieldsParti = {
     val __obj = js.Dynamic.literal(searchFields = searchFields.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplsearchFieldsParti]
   }
@@ -191,7 +191,9 @@ object PickImplsearchFieldsParti {
     
     inline def setSearchDelayUndefined: Self = StObject.set(x, "searchDelay", js.undefined)
     
-    inline def setSearchFields(value: js.Array[String] & js.UndefOr[js.Array[String]]): Self = StObject.set(x, "searchFields", value.asInstanceOf[js.Any])
+    inline def setSearchFields(value: js.Array[String]): Self = StObject.set(x, "searchFields", value.asInstanceOf[js.Any])
+    
+    inline def setSearchFieldsVarargs(value: String*): Self = StObject.set(x, "searchFields", js.Array(value*))
     
     inline def setSearchFullText(value: Boolean): Self = StObject.set(x, "searchFullText", value.asInstanceOf[js.Any])
     

@@ -197,8 +197,6 @@ object libUtilDryMongoBinaryMod {
   object DryMongoBinaryNameOptions {
     
     inline def apply(
-      arch: NonNullable[js.UndefOr[String]],
-      os: NonNullable[js.UndefOr[AnyOS]],
       platform: NonNullable[
           NonNullable[
             /* import warning: importer.ImportType#apply Failed type conversion: mongodb-memory-server-core.mongodb-memory-server-core/lib/util/DryMongoBinary.BaseDryMongoBinaryOptions['version'] */ js.Any
@@ -210,7 +208,7 @@ object libUtilDryMongoBinaryMod {
           ]
         ]
     ): DryMongoBinaryNameOptions = {
-      val __obj = js.Dynamic.literal(arch = arch.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[DryMongoBinaryNameOptions]
     }
     
@@ -218,7 +216,11 @@ object libUtilDryMongoBinaryMod {
       
       inline def setArch(value: NonNullable[js.UndefOr[String]]): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       
+      inline def setArchUndefined: Self = StObject.set(x, "arch", js.undefined)
+      
       inline def setOs(value: NonNullable[js.UndefOr[AnyOS]]): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
+      
+      inline def setOsUndefined: Self = StObject.set(x, "os", js.undefined)
       
       inline def setPlatform(
         value: NonNullable[
@@ -247,14 +249,16 @@ object libUtilDryMongoBinaryMod {
   }
   object DryMongoBinaryOptions {
     
-    inline def apply(version: NonNullable[js.UndefOr[String]]): DryMongoBinaryOptions = {
-      val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+    inline def apply(): DryMongoBinaryOptions = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DryMongoBinaryOptions]
     }
     
     extension [Self <: DryMongoBinaryOptions](x: Self) {
       
       inline def setVersion(value: NonNullable[js.UndefOr[String]]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   

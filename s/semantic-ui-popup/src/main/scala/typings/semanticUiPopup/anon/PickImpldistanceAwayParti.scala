@@ -40,7 +40,7 @@ trait PickImpldistanceAwayParti
   
   var delay: js.UndefOr[DelaySettings] = js.undefined
   
-  var distanceAway: Double & js.UndefOr[Double]
+  var distanceAway: Double
   
   var duration: js.UndefOr[Double] = js.undefined
   
@@ -120,7 +120,7 @@ trait PickImpldistanceAwayParti
 }
 object PickImpldistanceAwayParti {
   
-  inline def apply(distanceAway: Double & js.UndefOr[Double]): PickImpldistanceAwayParti = {
+  inline def apply(distanceAway: Double): PickImpldistanceAwayParti = {
     val __obj = js.Dynamic.literal(distanceAway = distanceAway.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldistanceAwayParti]
   }
@@ -159,7 +159,7 @@ object PickImpldistanceAwayParti {
     
     inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    inline def setDistanceAway(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "distanceAway", value.asInstanceOf[js.Any])
+    inline def setDistanceAway(value: Double): Self = StObject.set(x, "distanceAway", value.asInstanceOf[js.Any])
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

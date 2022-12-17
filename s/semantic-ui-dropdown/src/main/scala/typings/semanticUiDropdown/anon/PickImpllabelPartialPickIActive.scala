@@ -26,7 +26,7 @@ trait PickImpllabelPartialPickIActive
   
   var item: js.UndefOr[String] = js.undefined
   
-  var label: String & js.UndefOr[String]
+  var label: String
   
   var loading: js.UndefOr[String] = js.undefined
   
@@ -50,7 +50,7 @@ trait PickImpllabelPartialPickIActive
 }
 object PickImpllabelPartialPickIActive {
   
-  inline def apply(label: String & js.UndefOr[String]): PickImpllabelPartialPickIActive = {
+  inline def apply(label: String): PickImpllabelPartialPickIActive = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpllabelPartialPickIActive]
   }
@@ -89,7 +89,7 @@ object PickImpllabelPartialPickIActive {
     
     inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
-    inline def setLabel(value: String & js.UndefOr[String]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     

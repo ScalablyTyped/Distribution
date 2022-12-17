@@ -8,8 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 Fields can store additional information in an editor state, and
 keep it in sync with the rest of the state.
 */
+@JSImport("@codemirror/state", "StateField")
 @js.native
-trait StateField[Value]
+/* private */ open class StateField[Value] ()
   extends StObject
      with _Slot[Value] {
   
@@ -34,4 +35,16 @@ trait StateField[Value]
   def init(create: js.Function1[/* state */ EditorState, Value]): Extension = js.native
   
   /* private */ var updateF: Any = js.native
+}
+object StateField {
+  
+  @JSImport("@codemirror/state", "StateField")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    Define a state field.
+    */
+  /* static member */
+  inline def define[Value](config: StateFieldSpec[Value]): StateField[Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(config.asInstanceOf[js.Any]).asInstanceOf[StateField[Value]]
 }

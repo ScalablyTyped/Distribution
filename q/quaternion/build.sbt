@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "quaternion"
-version := "1.3-dt-20220624Z-4f0d78"
+version := "1.3-dt-20220624Z-39822e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,10 +1,10 @@
 package typings.reactNativeWindows.rntypesMod
 
 import typings.react.mod.Component
+import typings.reactNativeWindows.anon.AnimatedItem
 import typings.reactNativeWindows.anon.AnimatedOffset
-import typings.reactNativeWindows.anon.ViewOffset
 import typings.reactNativeWindows.anon.ViewPosition
-import typings.reactNativeWindows.anon.`0`
+import typings.reactNativeWindows.anon.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,11 +23,11 @@ open class VirtualizedList[ItemT] protected ()
   def recordInteraction(): Unit = js.native
   
   def scrollToEnd(): Unit = js.native
-  def scrollToEnd(params: `0`): Unit = js.native
+  def scrollToEnd(params: `1`): Unit = js.native
   
-  def scrollToIndex(params: ViewOffset): Unit = js.native
+  def scrollToIndex(params: ViewPosition): Unit = js.native
   
-  def scrollToItem(params: ViewPosition[ItemT]): Unit = js.native
+  def scrollToItem(params: AnimatedItem[ItemT]): Unit = js.native
   
   /**
     * Scroll to a specific content pixel offset in the list.

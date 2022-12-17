@@ -12,7 +12,7 @@ trait PickImplalreadySetupParti
   
   var action: js.UndefOr[String] = js.undefined
   
-  var alreadySetup: String & js.UndefOr[String]
+  var alreadySetup: String
   
   var labels: js.UndefOr[String] = js.undefined
   
@@ -22,7 +22,7 @@ trait PickImplalreadySetupParti
 }
 object PickImplalreadySetupParti {
   
-  inline def apply(alreadySetup: String & js.UndefOr[String]): PickImplalreadySetupParti = {
+  inline def apply(alreadySetup: String): PickImplalreadySetupParti = {
     val __obj = js.Dynamic.literal(alreadySetup = alreadySetup.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplalreadySetupParti]
   }
@@ -33,7 +33,7 @@ object PickImplalreadySetupParti {
     
     inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    inline def setAlreadySetup(value: String & js.UndefOr[String]): Self = StObject.set(x, "alreadySetup", value.asInstanceOf[js.Any])
+    inline def setAlreadySetup(value: String): Self = StObject.set(x, "alreadySetup", value.asInstanceOf[js.Any])
     
     inline def setLabels(value: String): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     

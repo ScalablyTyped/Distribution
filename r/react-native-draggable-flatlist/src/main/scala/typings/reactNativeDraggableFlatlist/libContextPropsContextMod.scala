@@ -9,7 +9,7 @@ import typings.reactNative.anon.AutoscrollToTopThreshold
 import typings.reactNative.anon.AverageItemLength
 import typings.reactNative.anon.Changed
 import typings.reactNative.anon.DistanceFromEnd
-import typings.reactNative.anon.Length
+import typings.reactNative.anon.Index
 import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
@@ -30,7 +30,6 @@ import typings.reactNative.mod.ViewStyle
 import typings.reactNative.mod.ViewabilityConfigCallbackPair
 import typings.reactNative.mod.ViewabilityConfigCallbackPairs
 import typings.reactNativeDraggableFlatlist.anon.ActivationDistance
-import typings.reactNativeDraggableFlatlist.anon.Index
 import typings.reactNativeDraggableFlatlist.anon.PartialSpringConfig
 import typings.reactNativeDraggableFlatlist.libTypesMod.DragEndParams
 import typings.reactNativeDraggableFlatlist.libTypesMod.DraggableFlatListProps
@@ -62,8 +61,6 @@ import typings.reactNativeDraggableFlatlist.reactNativeDraggableFlatlistStrings.
 import typings.reactNativeDraggableFlatlist.reactNativeDraggableFlatlistStrings.white
 import typings.reactNativeDraggableFlatlist.reactNativeDraggableFlatlistStrings.yes
 import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.HitSlop
-import typings.reactNativeReanimated.mod.Animated.Value
-import typings.reactNativeReanimated.mod.WithSpringConfig
 import typings.std.Node
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
@@ -131,7 +128,7 @@ object libContextPropsContextMod {
     
     var alwaysBounceVertical: js.UndefOr[Boolean] = js.undefined
     
-    var animationConfig: js.UndefOr[PartialSpringConfig] & js.UndefOr[WithSpringConfig]
+    var animationConfig: js.UndefOr[PartialSpringConfig] = js.undefined
     
     var automaticallyAdjustContentInsets: js.UndefOr[Boolean] = js.undefined
     
@@ -151,7 +148,7 @@ object libContextPropsContextMod {
     
     var centerContent: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[ReactNode] & ReactNode
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var collapsable: js.UndefOr[Boolean] = js.undefined
     
@@ -198,7 +195,7 @@ object libContextPropsContextMod {
     var getItemCount: js.UndefOr[js.Function1[/* data */ Any, Double]] = js.undefined
     
     var getItemLayout: js.UndefOr[
-        js.Function2[/* data */ js.UndefOr[js.Array[T] | Null], /* index */ Double, Length]
+        js.Function2[/* data */ js.UndefOr[js.Array[T] | Null], /* index */ Double, Index]
       ] = js.undefined
     
     var hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined
@@ -353,7 +350,7 @@ object libContextPropsContextMod {
     
     var onViewableItemsChanged: js.UndefOr[(js.Function1[/* info */ Changed, Unit]) | Null] = js.undefined
     
-    var outerScrollOffset: js.UndefOr[Node] & js.UndefOr[Value]
+    var outerScrollOffset: js.UndefOr[Node] = js.undefined
     
     var overScrollMode: js.UndefOr[auto | always | never] = js.undefined
     
@@ -442,13 +439,11 @@ object libContextPropsContextMod {
   object Props {
     
     inline def apply[T](
-      animationConfig: js.UndefOr[PartialSpringConfig] & js.UndefOr[WithSpringConfig],
       data: js.Array[T],
       keyExtractor: (T, Double) => String,
-      outerScrollOffset: js.UndefOr[Node] & js.UndefOr[Value],
       renderItem: /* params */ RenderItemParams[T] => ReactNode
     ): Props[T] = {
-      val __obj = js.Dynamic.literal(animationConfig = animationConfig.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], keyExtractor = js.Any.fromFunction2(keyExtractor), outerScrollOffset = outerScrollOffset.asInstanceOf[js.Any], renderItem = js.Any.fromFunction1(renderItem))
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], keyExtractor = js.Any.fromFunction2(keyExtractor), renderItem = js.Any.fromFunction1(renderItem))
       __obj.asInstanceOf[Props[T]]
     }
     
@@ -522,7 +517,9 @@ object libContextPropsContextMod {
       
       inline def setAlwaysBounceVerticalUndefined: Self = StObject.set(x, "alwaysBounceVertical", js.undefined)
       
-      inline def setAnimationConfig(value: js.UndefOr[PartialSpringConfig] & js.UndefOr[WithSpringConfig]): Self = StObject.set(x, "animationConfig", value.asInstanceOf[js.Any])
+      inline def setAnimationConfig(value: PartialSpringConfig): Self = StObject.set(x, "animationConfig", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationConfigUndefined: Self = StObject.set(x, "animationConfig", js.undefined)
       
       inline def setAutomaticallyAdjustContentInsets(value: Boolean): Self = StObject.set(x, "automaticallyAdjustContentInsets", value.asInstanceOf[js.Any])
       
@@ -564,7 +561,7 @@ object libContextPropsContextMod {
       
       inline def setCenterContentUndefined: Self = StObject.set(x, "centerContent", js.undefined)
       
-      inline def setChildren(value: js.UndefOr[ReactNode] & ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
@@ -660,7 +657,7 @@ object libContextPropsContextMod {
       
       inline def setGetItemCountUndefined: Self = StObject.set(x, "getItemCount", js.undefined)
       
-      inline def setGetItemLayout(value: (/* data */ js.UndefOr[js.Array[T] | Null], /* index */ Double) => Length): Self = StObject.set(x, "getItemLayout", js.Any.fromFunction2(value))
+      inline def setGetItemLayout(value: (/* data */ js.UndefOr[js.Array[T] | Null], /* index */ Double) => Index): Self = StObject.set(x, "getItemLayout", js.Any.fromFunction2(value))
       
       inline def setGetItemLayoutUndefined: Self = StObject.set(x, "getItemLayout", js.undefined)
       
@@ -1020,7 +1017,9 @@ object libContextPropsContextMod {
       
       inline def setOnViewableItemsChangedUndefined: Self = StObject.set(x, "onViewableItemsChanged", js.undefined)
       
-      inline def setOuterScrollOffset(value: js.UndefOr[Node] & js.UndefOr[Value]): Self = StObject.set(x, "outerScrollOffset", value.asInstanceOf[js.Any])
+      inline def setOuterScrollOffset(value: Node): Self = StObject.set(x, "outerScrollOffset", value.asInstanceOf[js.Any])
+      
+      inline def setOuterScrollOffsetUndefined: Self = StObject.set(x, "outerScrollOffset", js.undefined)
       
       inline def setOverScrollMode(value: auto | always | never): Self = StObject.set(x, "overScrollMode", value.asInstanceOf[js.Any])
       
@@ -1062,7 +1061,7 @@ object libContextPropsContextMod {
       
       inline def setRenderItem(value: /* params */ RenderItemParams[T] => ReactNode): Self = StObject.set(x, "renderItem", js.Any.fromFunction1(value))
       
-      inline def setRenderPlaceholder(value: /* params */ Index[T] => Element): Self = StObject.set(x, "renderPlaceholder", js.Any.fromFunction1(value))
+      inline def setRenderPlaceholder(value: /* params */ typings.reactNativeDraggableFlatlist.anon.Index[T] => Element): Self = StObject.set(x, "renderPlaceholder", js.Any.fromFunction1(value))
       
       inline def setRenderPlaceholderUndefined: Self = StObject.set(x, "renderPlaceholder", js.undefined)
       

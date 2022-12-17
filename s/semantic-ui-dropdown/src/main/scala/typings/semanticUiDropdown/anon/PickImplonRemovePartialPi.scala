@@ -129,21 +129,13 @@ trait PickImplonRemovePartialPi
   
   def onRemove(removedValue: Any, removedText: String, $removedChoice: JQuery): Unit
   @JSName("onRemove")
-  var onRemove_Original: (js.ThisFunction3[
+  var onRemove_Original: js.ThisFunction3[
     /* this */ JQuery, 
     /* removedValue */ Any, 
     /* removedText */ String, 
     /* $removedChoice */ JQuery, 
     Unit
-  ]) & (js.UndefOr[
-    js.ThisFunction3[
-      /* this */ JQuery, 
-      /* removedValue */ Any, 
-      /* removedText */ String, 
-      /* $removedChoice */ JQuery, 
-      Unit
-    ]
-  ])
+  ]
   
   var onShow: js.UndefOr[js.ThisFunction0[/* this */ JQuery, `false` | Unit]] = js.undefined
   
@@ -178,21 +170,13 @@ trait PickImplonRemovePartialPi
 object PickImplonRemovePartialPi {
   
   inline def apply(
-    onRemove: (js.ThisFunction3[
+    onRemove: js.ThisFunction3[
       /* this */ JQuery, 
       /* removedValue */ Any, 
       /* removedText */ String, 
       /* $removedChoice */ JQuery, 
       Unit
-    ]) & (js.UndefOr[
-      js.ThisFunction3[
-        /* this */ JQuery, 
-        /* removedValue */ Any, 
-        /* removedText */ String, 
-        /* $removedChoice */ JQuery, 
-        Unit
-      ]
-    ])
+    ]
   ): PickImplonRemovePartialPi = {
     val __obj = js.Dynamic.literal(onRemove = onRemove.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonRemovePartialPi]
@@ -365,21 +349,13 @@ object PickImplonRemovePartialPi {
     inline def setOnNoResultsUndefined: Self = StObject.set(x, "onNoResults", js.undefined)
     
     inline def setOnRemove(
-      value: (js.ThisFunction3[
+      value: js.ThisFunction3[
           /* this */ JQuery, 
           /* removedValue */ Any, 
           /* removedText */ String, 
           /* $removedChoice */ JQuery, 
           Unit
-        ]) & (js.UndefOr[
-          js.ThisFunction3[
-            /* this */ JQuery, 
-            /* removedValue */ Any, 
-            /* removedText */ String, 
-            /* $removedChoice */ JQuery, 
-            Unit
-          ]
-        ])
+        ]
     ): Self = StObject.set(x, "onRemove", value.asInstanceOf[js.Any])
     
     inline def setOnShow(value: js.ThisFunction0[/* this */ JQuery, `false` | Unit]): Self = StObject.set(x, "onShow", value.asInstanceOf[js.Any])

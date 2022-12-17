@@ -19,7 +19,7 @@ trait PickImplanimationPartialP
   extends StObject
      with Param {
   
-  var animation: AnimationSettings & js.UndefOr[AnimationSettings]
+  var animation: AnimationSettings
   
   var className: js.UndefOr[ClassNameSettings] = js.undefined
   
@@ -67,14 +67,14 @@ trait PickImplanimationPartialP
 }
 object PickImplanimationPartialP {
   
-  inline def apply(animation: AnimationSettings & js.UndefOr[AnimationSettings]): PickImplanimationPartialP = {
+  inline def apply(animation: AnimationSettings): PickImplanimationPartialP = {
     val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplanimationPartialP]
   }
   
   extension [Self <: PickImplanimationPartialP](x: Self) {
     
-    inline def setAnimation(value: AnimationSettings & js.UndefOr[AnimationSettings]): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: AnimationSettings): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     inline def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

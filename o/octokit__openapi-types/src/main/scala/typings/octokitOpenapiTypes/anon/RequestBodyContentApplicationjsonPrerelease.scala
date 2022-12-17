@@ -10,14 +10,14 @@ trait RequestBodyContentApplicationjsonPrerelease extends StObject {
   
   var requestBody: ContentApplicationjsonPrerelease
   
-  var responses: `200177404ContentApplicationjson`
+  var responses: `200318404Content48`
 }
 object RequestBodyContentApplicationjsonPrerelease {
   
   inline def apply(
     parameters: PathReleaseid,
     requestBody: ContentApplicationjsonPrerelease,
-    responses: `200177404ContentApplicationjson`
+    responses: `200318404Content48`
   ): RequestBodyContentApplicationjsonPrerelease = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyContentApplicationjsonPrerelease]
@@ -29,6 +29,6 @@ object RequestBodyContentApplicationjsonPrerelease {
     
     inline def setRequestBody(value: ContentApplicationjsonPrerelease): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200177404ContentApplicationjson`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200318404Content48`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

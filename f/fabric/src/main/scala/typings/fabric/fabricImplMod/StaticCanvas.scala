@@ -1,8 +1,8 @@
 package typings.fabric.fabricImplMod
 
-import typings.fabric.anon.LeftTop
+import typings.fabric.anon.Bl
+import typings.fabric.anon.Left
 import typings.fabric.anon.Readonlyleftnumberundefin
-import typings.fabric.anon.Tr
 import typings.fabric.fabricStrings.getImageData
 import typings.fabric.fabricStrings.setLineDash
 import typings.fabric.fabricStrings.toDataURL
@@ -81,7 +81,7 @@ open class StaticCanvas ()
     * @return {Object} points.tl
     * @chainable
     */
-  def calcViewportBoundaries(): Tr = js.native
+  def calcViewportBoundaries(): Bl = js.native
   
   /**
     * Centers object vertically and horizontally in the canvas
@@ -167,7 +167,7 @@ open class StaticCanvas ()
     * Returned value is an object with top and left properties
     * @return {Object} object with "top" and "left" number values
     */
-  def getCenter(): LeftTop = js.native
+  def getCenter(): Left = js.native
   
   /**
     * Returns context of canvas where objects are drawn

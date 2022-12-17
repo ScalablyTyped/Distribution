@@ -1,37 +1,37 @@
 organization := "org.scalablytyped"
 name := "sc-framework-health-check"
-version := "2.0-dt-20211202Z-58761f"
+version := "2.0-dt-20211202Z-be5f98"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ag-channel" % "5.0-dt-20220215Z-2ed9ca",
-  "org.scalablytyped" %%% "ag-simple-broker" % "5.0-dt-20220215Z-47cc9e",
-  "org.scalablytyped" %%% "async" % "3.2-dt-20220706Z-d0f634",
-  "org.scalablytyped" %%% "async-iterable-stream" % "3.0-dt-20211202Z-9cf710",
-  "org.scalablytyped" %%% "async-stream-emitter" % "4.0-dt-20220215Z-64f987",
-  "org.scalablytyped" %%% "consumable-stream" % "2.0-dt-20220215Z-4d3c8d",
-  "org.scalablytyped" %%% "expirymanager" % "0.9-dt-20211202Z-3765f3",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-2966c9",
-  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-5cc384",
-  "org.scalablytyped" %%% "fleximap" % "0.9-dt-20211202Z-4a4465",
-  "org.scalablytyped" %%% "jsonwebtoken" % "8.5-dt-20220824Z-b73df8",
-  "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-4d0efa",
-  "org.scalablytyped" %%% "ncom" % "1.0-dt-20211202Z-4b1daf",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-4346d8",
-  "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-fa36ba",
-  "org.scalablytyped" %%% "sc-auth" % "5.0-dt-20211202Z-ae9831",
-  "org.scalablytyped" %%% "sc-broker" % "8.0-dt-20211202Z-b7f418",
-  "org.scalablytyped" %%% "sc-broker-cluster" % "9.0-dt-20211202Z-b711fc",
-  "org.scalablytyped" %%% "sc-channel" % "2.0-dt-20211202Z-eb4bce",
-  "org.scalablytyped" %%% "sc-errors" % "1.4-dt-20211202Z-d97d9a",
-  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-088887",
-  "org.scalablytyped" %%% "socketcluster" % "14.0-dt-20211202Z-197dd8",
-  "org.scalablytyped" %%% "socketcluster-server" % "16.1-dt-20220215Z-5c9d3a",
-  "org.scalablytyped" %%% "std" % "4.9-c133ce",
-  "org.scalablytyped" %%% "stream-demux" % "8.0-dt-20220215Z-1a55dd",
-  "org.scalablytyped" %%% "writable-consumable-stream" % "2.0-dt-20220215Z-ec692a",
-  "org.scalablytyped" %%% "ws" % "8.5-dt-20220624Z-0611bd")
+  "org.scalablytyped" %%% "ag-channel" % "5.0-dt-20220215Z-a02933",
+  "org.scalablytyped" %%% "ag-simple-broker" % "5.0-dt-20220215Z-05b8c3",
+  "org.scalablytyped" %%% "async" % "3.2-dt-20220706Z-8777de",
+  "org.scalablytyped" %%% "async-iterable-stream" % "3.0-dt-20211202Z-e393b8",
+  "org.scalablytyped" %%% "async-stream-emitter" % "4.0-dt-20220215Z-020668",
+  "org.scalablytyped" %%% "consumable-stream" % "2.0-dt-20220215Z-42311c",
+  "org.scalablytyped" %%% "expirymanager" % "0.9-dt-20211202Z-4b45e9",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-cb1e35",
+  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-5f1c10",
+  "org.scalablytyped" %%% "fleximap" % "0.9-dt-20211202Z-1c9a00",
+  "org.scalablytyped" %%% "jsonwebtoken" % "8.5-dt-20220824Z-c593ce",
+  "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-85c9dc",
+  "org.scalablytyped" %%% "ncom" % "1.0-dt-20211202Z-9dcb35",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-def929",
+  "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-137229",
+  "org.scalablytyped" %%% "sc-auth" % "5.0-dt-20211202Z-41cd47",
+  "org.scalablytyped" %%% "sc-broker" % "8.0-dt-20211202Z-2b3e4c",
+  "org.scalablytyped" %%% "sc-broker-cluster" % "9.0-dt-20211202Z-be4ddc",
+  "org.scalablytyped" %%% "sc-channel" % "2.0-dt-20211202Z-a962f3",
+  "org.scalablytyped" %%% "sc-errors" % "1.4-dt-20211202Z-797848",
+  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-d3379f",
+  "org.scalablytyped" %%% "socketcluster" % "14.0-dt-20211202Z-60fabb",
+  "org.scalablytyped" %%% "socketcluster-server" % "16.1-dt-20220215Z-c5e928",
+  "org.scalablytyped" %%% "std" % "4.9-5f989f",
+  "org.scalablytyped" %%% "stream-demux" % "8.0-dt-20220215Z-0f6dbb",
+  "org.scalablytyped" %%% "writable-consumable-stream" % "2.0-dt-20220215Z-526f34",
+  "org.scalablytyped" %%% "ws" % "8.5-dt-20220624Z-3574d0")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

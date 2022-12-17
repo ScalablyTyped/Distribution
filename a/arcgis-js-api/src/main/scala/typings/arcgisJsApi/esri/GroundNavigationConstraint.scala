@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.HashMap
 import typings.arcgisJsApi.arcgisJsApiStrings.`stay-above`
 import typings.arcgisJsApi.arcgisJsApiStrings.none_
 import org.scalablytyped.runtime.StObject
@@ -20,13 +19,8 @@ trait GroundNavigationConstraint
 }
 object GroundNavigationConstraint {
   
-  inline def apply(
-    set: (js.UndefOr[
-      js.Function2[/* propertyName */ String, /* value */ Any, GroundNavigationConstraint]
-    ]) & (js.UndefOr[js.Function1[/* props */ HashMap[Any], GroundNavigationConstraint]]),
-    `type`: `stay-above` | none_
-  ): GroundNavigationConstraint = {
-    val __obj = js.Dynamic.literal(set = set.asInstanceOf[js.Any])
+  inline def apply(`type`: `stay-above` | none_): GroundNavigationConstraint = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroundNavigationConstraint]
   }

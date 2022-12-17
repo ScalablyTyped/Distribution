@@ -10,6 +10,8 @@ trait Results extends StObject {
   
   var results: js.UndefOr[Double] = js.undefined
   
+  var skip: js.UndefOr[Double] = js.undefined
+  
   var strictBounds: js.UndefOr[Boolean] = js.undefined
 }
 object Results {
@@ -30,6 +32,10 @@ object Results {
     inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    
+    inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+    
+    inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
     
     inline def setStrictBounds(value: Boolean): Self = StObject.set(x, "strictBounds", value.asInstanceOf[js.Any])
     

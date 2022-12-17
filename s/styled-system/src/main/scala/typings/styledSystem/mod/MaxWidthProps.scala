@@ -29,6 +29,6 @@ object MaxWidthProps {
     
     inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
-    inline def setMaxWidthVarargs(value: (TVal | Null)*): Self = StObject.set(x, "maxWidth", js.Array(value :_*))
+    inline def setMaxWidthVarargs(value: (TVal | Null)*): Self = StObject.set(x, "maxWidth", js.Array(value*))
   }
 }

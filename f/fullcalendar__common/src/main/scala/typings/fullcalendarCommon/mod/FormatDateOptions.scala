@@ -1,7 +1,5 @@
 package typings.fullcalendarCommon.mod
 
-import typings.std.stdStrings.`best fit`
-import typings.std.stdStrings.basic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,8 +12,8 @@ trait FormatDateOptions
 }
 object FormatDateOptions {
   
-  inline def apply(formatMatcher: (js.UndefOr[(`best fit`) | basic]) & (js.UndefOr[basic | (`best fit`)])): FormatDateOptions = {
-    val __obj = js.Dynamic.literal(formatMatcher = formatMatcher.asInstanceOf[js.Any])
+  inline def apply(): FormatDateOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FormatDateOptions]
   }
   

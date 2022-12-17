@@ -11,6 +11,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
+  trait `0` extends StObject {
+    
+    var theme: js.UndefOr[typings.emotionReact.mod.Theme] = js.undefined
+  }
+  object `0` {
+    
+    inline def apply(): `0` = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[`0`]
+    }
+    
+    extension [Self <: `0`](x: Self) {
+      
+      inline def setTheme(value: typings.emotionReact.mod.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    }
+  }
+  
   trait As extends StObject {
     
     var as: js.UndefOr[ElementType[Any]] = js.undefined
@@ -61,35 +80,16 @@ object anon {
   
   trait Theme extends StObject {
     
-    var theme: js.UndefOr[typings.emotionReact.mod.Theme] = js.undefined
+    var theme: typings.emotionReact.mod.Theme
   }
   object Theme {
     
-    inline def apply(): Theme = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(theme: typings.emotionReact.mod.Theme): Theme = {
+      val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[Theme]
     }
     
     extension [Self <: Theme](x: Self) {
-      
-      inline def setTheme(value: typings.emotionReact.mod.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
-      
-      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
-    }
-  }
-  
-  trait ThemeTheme extends StObject {
-    
-    var theme: typings.emotionReact.mod.Theme
-  }
-  object ThemeTheme {
-    
-    inline def apply(theme: typings.emotionReact.mod.Theme): ThemeTheme = {
-      val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ThemeTheme]
-    }
-    
-    extension [Self <: ThemeTheme](x: Self) {
       
       inline def setTheme(value: typings.emotionReact.mod.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }

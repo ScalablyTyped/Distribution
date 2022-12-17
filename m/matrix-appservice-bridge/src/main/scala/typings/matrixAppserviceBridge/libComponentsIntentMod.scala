@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.matrixAppserviceBridge.anon.BackingStore
 import typings.matrixAppserviceBridge.anon.Eventid
 import typings.matrixAppserviceBridge.anon.Roomid
-import typings.matrixAppserviceBridge.anon.Ttl
+import typings.matrixAppserviceBridge.anon.Size
 import typings.matrixAppserviceBridge.libComponentsEventTypesMod.WeakStateEvent
 import typings.matrixAppserviceBridge.libComponentsMembershipCacheMod.UserMembership
 import typings.matrixAppserviceBridge.libErrorsMod.unstable.BridgeErrorReason
@@ -582,7 +582,7 @@ object libComponentsIntentMod {
     
     var backingStore: js.UndefOr[IntentBackingStore] = js.undefined
     
-    var caching: js.UndefOr[Ttl] = js.undefined
+    var caching: js.UndefOr[Size] = js.undefined
     
     var dontCheckPowerLevel: js.UndefOr[Boolean] = js.undefined
     
@@ -607,7 +607,7 @@ object libComponentsIntentMod {
       
       inline def setBackingStoreUndefined: Self = StObject.set(x, "backingStore", js.undefined)
       
-      inline def setCaching(value: Ttl): Self = StObject.set(x, "caching", value.asInstanceOf[js.Any])
+      inline def setCaching(value: Size): Self = StObject.set(x, "caching", value.asInstanceOf[js.Any])
       
       inline def setCachingUndefined: Self = StObject.set(x, "caching", js.undefined)
       

@@ -21,9 +21,7 @@ object distChromeLauncherMod {
   
   @JSImport("chrome-launcher/dist/chrome-launcher", JSImport.Default)
   @js.native
-  open class default ()
-    extends StObject
-       with Launcher {
+  open class default () extends Launcher {
     def this(opts: Options) = this()
     def this(opts: Unit, moduleOverrides: ModuleOverrides) = this()
     def this(opts: Options, moduleOverrides: ModuleOverrides) = this()
@@ -46,55 +44,12 @@ object distChromeLauncherMod {
     inline def getInstallations(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstallations")().asInstanceOf[js.Array[String]]
   }
   
-  /** Returns Chrome installation path that chrome-launcher will launch by default. */
-  inline def getChromePath(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getChromePath")().asInstanceOf[String]
-  
-  inline def killAll(): js.Array[js.Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("killAll")().asInstanceOf[js.Array[js.Error]]
-  
-  inline def launch(): js.Promise[LaunchedChrome] = ^.asInstanceOf[js.Dynamic].applyDynamic("launch")().asInstanceOf[js.Promise[LaunchedChrome]]
-  inline def launch(opts: Options): js.Promise[LaunchedChrome] = ^.asInstanceOf[js.Dynamic].applyDynamic("launch")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LaunchedChrome]]
-  
-  /** 
-  NOTE: Rewritten from type alias:
-  {{{
-  type JSONLike = {[property: string] : chrome-launcher.chrome-launcher/dist/chrome-launcher.JSONLike} | std.Array<chrome-launcher.chrome-launcher/dist/chrome-launcher.JSONLike> | string | number | boolean | null
-  }}}
-  to avoid circular code involving: 
-  - chrome-launcher.chrome-launcher/dist/chrome-launcher.JSONLike
-  */
-  type JSONLike = StringDictionary[Any] | js.Array[Any] | String | Double | Boolean | Null
-  
-  trait LaunchedChrome extends StObject {
-    
-    def kill(): js.Promise[Unit]
-    
-    var pid: Double
-    
-    var port: Double
-    
-    var process: ChildProcess
-  }
-  object LaunchedChrome {
-    
-    inline def apply(kill: () => js.Promise[Unit], pid: Double, port: Double, process: ChildProcess): LaunchedChrome = {
-      val __obj = js.Dynamic.literal(kill = js.Any.fromFunction0(kill), pid = pid.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], process = process.asInstanceOf[js.Any])
-      __obj.asInstanceOf[LaunchedChrome]
-    }
-    
-    extension [Self <: LaunchedChrome](x: Self) {
-      
-      inline def setKill(value: () => js.Promise[Unit]): Self = StObject.set(x, "kill", js.Any.fromFunction0(value))
-      
-      inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
-      
-      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
-      
-      inline def setProcess(value: ChildProcess): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
-    }
-  }
-  
+  @JSImport("chrome-launcher/dist/chrome-launcher", "Launcher")
   @js.native
-  trait Launcher extends StObject {
+  open class Launcher () extends StObject {
+    def this(opts: Options) = this()
+    def this(opts: Unit, moduleOverrides: ModuleOverrides) = this()
+    def this(opts: Options, moduleOverrides: ModuleOverrides) = this()
     
     /* private */ var chromeFlags: Any = js.native
     
@@ -159,6 +114,70 @@ object distChromeLauncherMod {
     var userDataDir: js.UndefOr[String] = js.native
     
     def waitUntilReady(): js.Promise[Unit] = js.native
+  }
+  object Launcher {
+    
+    @JSImport("chrome-launcher/dist/chrome-launcher", "Launcher")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    inline def defaultFlags(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultFlags")().asInstanceOf[js.Array[String]]
+    
+    /** Returns the highest priority chrome installation. */
+    /* static member */
+    inline def getFirstInstallation(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstInstallation")().asInstanceOf[js.UndefOr[String]]
+    
+    /** Returns all available chrome installations in decreasing priority order. */
+    /* static member */
+    inline def getInstallations(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstallations")().asInstanceOf[js.Array[String]]
+  }
+  
+  /** Returns Chrome installation path that chrome-launcher will launch by default. */
+  inline def getChromePath(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getChromePath")().asInstanceOf[String]
+  
+  inline def killAll(): js.Array[js.Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("killAll")().asInstanceOf[js.Array[js.Error]]
+  
+  inline def launch(): js.Promise[LaunchedChrome] = ^.asInstanceOf[js.Dynamic].applyDynamic("launch")().asInstanceOf[js.Promise[LaunchedChrome]]
+  inline def launch(opts: Options): js.Promise[LaunchedChrome] = ^.asInstanceOf[js.Dynamic].applyDynamic("launch")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LaunchedChrome]]
+  
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JSONLike = {[property: string] : chrome-launcher.chrome-launcher/dist/chrome-launcher.JSONLike} | std.Array<chrome-launcher.chrome-launcher/dist/chrome-launcher.JSONLike> | string | number | boolean | null
+  }}}
+  to avoid circular code involving: 
+  - chrome-launcher.chrome-launcher/dist/chrome-launcher.JSONLike
+  */
+  type JSONLike = StringDictionary[Any] | js.Array[Any] | String | Double | Boolean | Null
+  
+  trait LaunchedChrome extends StObject {
+    
+    def kill(): js.Promise[Unit]
+    
+    var pid: Double
+    
+    var port: Double
+    
+    var process: ChildProcess
+  }
+  object LaunchedChrome {
+    
+    inline def apply(kill: () => js.Promise[Unit], pid: Double, port: Double, process: ChildProcess): LaunchedChrome = {
+      val __obj = js.Dynamic.literal(kill = js.Any.fromFunction0(kill), pid = pid.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], process = process.asInstanceOf[js.Any])
+      __obj.asInstanceOf[LaunchedChrome]
+    }
+    
+    extension [Self <: LaunchedChrome](x: Self) {
+      
+      inline def setKill(value: () => js.Promise[Unit]): Self = StObject.set(x, "kill", js.Any.fromFunction0(value))
+      
+      inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+      
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      
+      inline def setProcess(value: ChildProcess): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
+    }
   }
   
   trait ModuleOverrides extends StObject {

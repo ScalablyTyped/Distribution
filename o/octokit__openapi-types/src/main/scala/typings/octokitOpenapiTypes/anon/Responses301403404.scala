@@ -8,7 +8,7 @@ trait Responses301403404 extends StObject {
   
   var parameters: PathIssuenumberOwnerRepo
   
-  var requestBody: ContentApplicationjsonAssigneesBody
+  var requestBody: ContentApplicationjsonMilestone
   
   var responses: `301403404`
 }
@@ -16,7 +16,7 @@ object Responses301403404 {
   
   inline def apply(
     parameters: PathIssuenumberOwnerRepo,
-    requestBody: ContentApplicationjsonAssigneesBody,
+    requestBody: ContentApplicationjsonMilestone,
     responses: `301403404`
   ): Responses301403404 = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
@@ -27,7 +27,7 @@ object Responses301403404 {
     
     inline def setParameters(value: PathIssuenumberOwnerRepo): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setRequestBody(value: ContentApplicationjsonAssigneesBody): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: ContentApplicationjsonMilestone): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
     inline def setResponses(value: `301403404`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }

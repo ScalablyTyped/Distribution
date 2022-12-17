@@ -419,7 +419,7 @@ object anon {
     var forceFlushTimeoutMillis: js.UndefOr[Double] = js.undefined
     
     /** General Limits */
-    var generalLimits: js.UndefOr[GeneralLimits] & GeneralLimits
+    var generalLimits: js.UndefOr[GeneralLimits] = js.undefined
     
     /**
       * Generator of trace and span IDs
@@ -433,19 +433,15 @@ object anon {
     /**
       * Sampler determines if a span should be recorded or should be a NoopSpan.
       */
-    var sampler: js.UndefOr[Sampler] & Sampler
+    var sampler: js.UndefOr[Sampler] = js.undefined
     
     /** Span Limits */
-    var spanLimits: js.UndefOr[SpanLimits] & SpanLimits
+    var spanLimits: js.UndefOr[SpanLimits] = js.undefined
   }
   object TracerConfigsamplerSample {
     
-    inline def apply(
-      generalLimits: js.UndefOr[GeneralLimits] & GeneralLimits,
-      sampler: js.UndefOr[Sampler] & Sampler,
-      spanLimits: js.UndefOr[SpanLimits] & SpanLimits
-    ): TracerConfigsamplerSample = {
-      val __obj = js.Dynamic.literal(generalLimits = generalLimits.asInstanceOf[js.Any], sampler = sampler.asInstanceOf[js.Any], spanLimits = spanLimits.asInstanceOf[js.Any])
+    inline def apply(): TracerConfigsamplerSample = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TracerConfigsamplerSample]
     }
     
@@ -455,7 +451,9 @@ object anon {
       
       inline def setForceFlushTimeoutMillisUndefined: Self = StObject.set(x, "forceFlushTimeoutMillis", js.undefined)
       
-      inline def setGeneralLimits(value: js.UndefOr[GeneralLimits] & GeneralLimits): Self = StObject.set(x, "generalLimits", value.asInstanceOf[js.Any])
+      inline def setGeneralLimits(value: GeneralLimits): Self = StObject.set(x, "generalLimits", value.asInstanceOf[js.Any])
+      
+      inline def setGeneralLimitsUndefined: Self = StObject.set(x, "generalLimits", js.undefined)
       
       inline def setIdGenerator(value: IdGenerator): Self = StObject.set(x, "idGenerator", value.asInstanceOf[js.Any])
       
@@ -465,9 +463,13 @@ object anon {
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
       
-      inline def setSampler(value: js.UndefOr[Sampler] & Sampler): Self = StObject.set(x, "sampler", value.asInstanceOf[js.Any])
+      inline def setSampler(value: Sampler): Self = StObject.set(x, "sampler", value.asInstanceOf[js.Any])
       
-      inline def setSpanLimits(value: js.UndefOr[SpanLimits] & SpanLimits): Self = StObject.set(x, "spanLimits", value.asInstanceOf[js.Any])
+      inline def setSamplerUndefined: Self = StObject.set(x, "sampler", js.undefined)
+      
+      inline def setSpanLimits(value: SpanLimits): Self = StObject.set(x, "spanLimits", value.asInstanceOf[js.Any])
+      
+      inline def setSpanLimitsUndefined: Self = StObject.set(x, "spanLimits", js.undefined)
     }
   }
 }

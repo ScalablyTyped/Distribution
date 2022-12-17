@@ -39,12 +39,12 @@ object internalSwitchBaseMod extends Shortcut {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped @material-ui/core.@material-ui/core/IconButton/IconButton.IconButtonProps<@material-ui/core.anon.DefaultComponent['defaultComponent'], {}> extends any ? std.Pick<@material-ui/core.@material-ui/core/IconButton/IconButton.IconButtonProps<@material-ui/core.anon.DefaultComponent['defaultComponent'], {}>, std.Exclude<keyof @material-ui/core.@material-ui/core/IconButton/IconButton.IconButtonProps<@material-ui/core.anon.DefaultComponent['defaultComponent'], {}>, 'classes' | 'children' | 'onChange' | 'type' | 'value'>> : never */ trait SwitchBaseProps
+  - Dropped @material-ui/core.@material-ui/core/IconButton/IconButton.IconButtonProps<@material-ui/core.anon.ClassKey['defaultComponent'], {}> extends any ? std.Pick<@material-ui/core.@material-ui/core/IconButton/IconButton.IconButtonProps<@material-ui/core.anon.ClassKey['defaultComponent'], {}>, std.Exclude<keyof @material-ui/core.@material-ui/core/IconButton/IconButton.IconButtonProps<@material-ui/core.anon.ClassKey['defaultComponent'], {}>, 'classes' | 'children' | 'onChange' | 'type' | 'value'>> : never */ trait SwitchBaseProps
     extends StObject
        with StyledComponentProps[SwitchBaseClassKey]
        with Ref[
           IconButtonProps[
-            /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.DefaultComponent['defaultComponent'] */ js.Any, 
+            /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKey['defaultComponent'] */ js.Any, 
             js.Object
           ]
         ] {

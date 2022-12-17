@@ -22,7 +22,7 @@ trait PickImpldoesntContainPart
   
   var different: js.UndefOr[String] = js.undefined
   
-  var doesntContain: String & js.UndefOr[String]
+  var doesntContain: String
   
   var doesntContainExactly: js.UndefOr[String] = js.undefined
   
@@ -64,7 +64,7 @@ trait PickImpldoesntContainPart
 }
 object PickImpldoesntContainPart {
   
-  inline def apply(doesntContain: String & js.UndefOr[String]): PickImpldoesntContainPart = {
+  inline def apply(doesntContain: String): PickImpldoesntContainPart = {
     val __obj = js.Dynamic.literal(doesntContain = doesntContain.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldoesntContainPart]
   }
@@ -95,7 +95,7 @@ object PickImpldoesntContainPart {
     
     inline def setDifferentUndefined: Self = StObject.set(x, "different", js.undefined)
     
-    inline def setDoesntContain(value: String & js.UndefOr[String]): Self = StObject.set(x, "doesntContain", value.asInstanceOf[js.Any])
+    inline def setDoesntContain(value: String): Self = StObject.set(x, "doesntContain", value.asInstanceOf[js.Any])
     
     inline def setDoesntContainExactly(value: String): Self = StObject.set(x, "doesntContainExactly", value.asInstanceOf[js.Any])
     

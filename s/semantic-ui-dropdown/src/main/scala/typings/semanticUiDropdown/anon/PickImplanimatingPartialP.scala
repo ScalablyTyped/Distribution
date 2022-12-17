@@ -14,7 +14,7 @@ trait PickImplanimatingPartialP
   
   var addition: js.UndefOr[String] = js.undefined
   
-  var animating: String & js.UndefOr[String]
+  var animating: String
   
   var disabled: js.UndefOr[String] = js.undefined
   
@@ -50,7 +50,7 @@ trait PickImplanimatingPartialP
 }
 object PickImplanimatingPartialP {
   
-  inline def apply(animating: String & js.UndefOr[String]): PickImplanimatingPartialP = {
+  inline def apply(animating: String): PickImplanimatingPartialP = {
     val __obj = js.Dynamic.literal(animating = animating.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplanimatingPartialP]
   }
@@ -65,7 +65,7 @@ object PickImplanimatingPartialP {
     
     inline def setAdditionUndefined: Self = StObject.set(x, "addition", js.undefined)
     
-    inline def setAnimating(value: String & js.UndefOr[String]): Self = StObject.set(x, "animating", value.asInstanceOf[js.Any])
+    inline def setAnimating(value: String): Self = StObject.set(x, "animating", value.asInstanceOf[js.Any])
     
     inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,7 @@ trait PickImpldebugPartialPickI
   
   var deactivate: js.UndefOr[siblings | all] = js.undefined
   
-  var debug: Boolean & js.UndefOr[Boolean]
+  var debug: Boolean
   
   var error: js.UndefOr[ErrorSettings] = js.undefined
   
@@ -104,7 +104,7 @@ trait PickImpldebugPartialPickI
 }
 object PickImpldebugPartialPickI {
   
-  inline def apply(debug: Boolean & js.UndefOr[Boolean]): PickImpldebugPartialPickI = {
+  inline def apply(debug: Boolean): PickImpldebugPartialPickI = {
     val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldebugPartialPickI]
   }
@@ -147,7 +147,7 @@ object PickImpldebugPartialPickI {
     
     inline def setDeactivateUndefined: Self = StObject.set(x, "deactivate", js.undefined)
     
-    inline def setDebug(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     inline def setError(value: ErrorSettings): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

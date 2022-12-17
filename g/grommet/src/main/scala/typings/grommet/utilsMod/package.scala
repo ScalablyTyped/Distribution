@@ -2,7 +2,7 @@ package typings.grommet.utilsMod
 
 import typings.grommet.anon.ColorError
 import typings.grommet.anon.Dark
-import typings.grommet.anon.`38`
+import typings.grommet.anon.`39`
 import typings.grommet.utilsMod.^
 import typings.react.mod.ComponentType
 import typings.react.mod.KeyboardEvent
@@ -133,7 +133,7 @@ type FillType = _FillType | Boolean
 */
 type GapType = _GapType | String
 
-type GraphColorsType = js.Array[String] | `38`
+type GraphColorsType = js.Array[String] | `39`
 
 type GridAreaType = String
 

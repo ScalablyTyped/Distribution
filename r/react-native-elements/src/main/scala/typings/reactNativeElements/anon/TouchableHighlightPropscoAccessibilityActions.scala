@@ -130,7 +130,7 @@ trait TouchableHighlightPropscoAccessibilityActions extends StObject {
   
   var bottomDivider: js.UndefOr[Boolean] = js.undefined
   
-  var children: js.UndefOr[ReactNode] & js.UndefOr[Any]
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
@@ -290,8 +290,8 @@ trait TouchableHighlightPropscoAccessibilityActions extends StObject {
 }
 object TouchableHighlightPropscoAccessibilityActions {
   
-  inline def apply(children: js.UndefOr[ReactNode] & js.UndefOr[Any]): TouchableHighlightPropscoAccessibilityActions = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+  inline def apply(): TouchableHighlightPropscoAccessibilityActions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TouchableHighlightPropscoAccessibilityActions]
   }
   
@@ -361,7 +361,9 @@ object TouchableHighlightPropscoAccessibilityActions {
     
     inline def setBottomDividerUndefined: Self = StObject.set(x, "bottomDivider", js.undefined)
     
-    inline def setChildren(value: js.UndefOr[ReactNode] & js.UndefOr[Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setComponent(
       value: TypeofComponent & (Instantiable1[

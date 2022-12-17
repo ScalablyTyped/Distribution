@@ -6,7 +6,7 @@ import typings.vscode.mod.Disposable
 import typings.vscode.mod.DocumentSelector
 import typings.vscode.mod.Event
 import typings.vscode.mod.TextDocument
-import typings.vscodeLanguageclient.anon.SendT
+import typings.vscodeLanguageclient.anon.Send
 import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.TextDocumentRegistrationOptions
 import typings.vscodeLanguageserverProtocol.mod.ProtocolNotificationType
 import org.scalablytyped.runtime.StObject
@@ -63,7 +63,7 @@ open class TextDocumentEventFeature[P, E, M] protected ()
     * Returns a provider for the given text document.
     */
   /* CompleteClass */
-  override def getProvider(document: TextDocument): js.UndefOr[SendT[js.Function1[/* data */ E, js.Promise[Unit]]]] = js.native
+  override def getProvider(document: TextDocument): js.UndefOr[Send[js.Function1[/* data */ E, js.Promise[Unit]]]] = js.native
   
   /* protected */ def getStateInfo(): js.Tuple2[IterableIterator[DocumentSelector], Boolean] = js.native
   

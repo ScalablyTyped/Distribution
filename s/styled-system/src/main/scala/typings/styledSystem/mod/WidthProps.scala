@@ -31,6 +31,6 @@ object WidthProps {
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    inline def setWidthVarargs(value: (TVal | Null)*): Self = StObject.set(x, "width", js.Array(value :_*))
+    inline def setWidthVarargs(value: (TVal | Null)*): Self = StObject.set(x, "width", js.Array(value*))
   }
 }

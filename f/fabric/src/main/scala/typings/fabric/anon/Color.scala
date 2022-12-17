@@ -6,21 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Color extends StObject {
   
-  /**
-    * Color to multiply the image pixels with
-    * @default #000000
-    */
   var color: String
+  
+  var offset: Double
 }
 object Color {
   
-  inline def apply(color: String): Color = {
-    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
+  inline def apply(color: String, offset: Double): Color = {
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[Color]
   }
   
   extension [Self <: Color](x: Self) {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
   }
 }

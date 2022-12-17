@@ -1,7 +1,5 @@
 package typings.playcanvas.global.pc
 
-import typings.playcanvas.mod.Mat4
-import typings.playcanvas.mod.Vec3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 open class OrientedBox ()
   extends typings.playcanvas.mod.OrientedBox {
-  def this(worldTransform: Mat4) = this()
-  def this(worldTransform: Unit, halfExtents: Vec3) = this()
-  def this(worldTransform: Mat4, halfExtents: Vec3) = this()
+  def this(worldTransform: typings.playcanvas.mod.Mat4) = this()
+  def this(worldTransform: Unit, halfExtents: typings.playcanvas.mod.Vec3) = this()
+  def this(worldTransform: typings.playcanvas.mod.Mat4, halfExtents: typings.playcanvas.mod.Vec3) = this()
 }

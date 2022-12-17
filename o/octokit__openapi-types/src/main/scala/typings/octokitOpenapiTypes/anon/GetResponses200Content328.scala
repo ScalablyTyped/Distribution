@@ -6,7 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetResponses200Content328 extends StObject {
   
-  /** Gets your public key, which you need to encrypt secrets. You need to encrypt a secret before you can create or update secrets. You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `dependabot_secrets` organization permission to use this endpoint. */
+  /**
+    * Returns the `total` number of commits authored by the contributor. In addition, the response includes a Weekly Hash (`weeks` array) with the following information:
+    *
+    * *   `w` - Start of the week, given as a [Unix timestamp](http://en.wikipedia.org/wiki/Unix_time).
+    * *   `a` - Number of additions
+    * *   `d` - Number of deletions
+    * *   `c` - Number of commits
+    */
   var get: Responses200Content328
 }
 object GetResponses200Content328 {

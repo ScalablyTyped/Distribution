@@ -73,7 +73,7 @@ object typingsModelsWalletMod {
       
       var Currency: CurrencyISO
       
-      var Description: js.UndefOr[String] & String
+      var Description: js.UndefOr[String] = js.undefined
       
       var Owners: js.Array[String]
       
@@ -81,8 +81,8 @@ object typingsModelsWalletMod {
     }
     object CreateWallet {
       
-      inline def apply(Currency: CurrencyISO, Description: js.UndefOr[String] & String, Owners: js.Array[String]): CreateWallet = {
-        val __obj = js.Dynamic.literal(Currency = Currency.asInstanceOf[js.Any], Description = Description.asInstanceOf[js.Any], Owners = Owners.asInstanceOf[js.Any])
+      inline def apply(Currency: CurrencyISO, Owners: js.Array[String]): CreateWallet = {
+        val __obj = js.Dynamic.literal(Currency = Currency.asInstanceOf[js.Any], Owners = Owners.asInstanceOf[js.Any])
         __obj.asInstanceOf[CreateWallet]
       }
       
@@ -90,7 +90,9 @@ object typingsModelsWalletMod {
         
         inline def setCurrency(value: CurrencyISO): Self = StObject.set(x, "Currency", value.asInstanceOf[js.Any])
         
-        inline def setDescription(value: js.UndefOr[String] & String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+        inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+        
+        inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
         
         inline def setOwners(value: js.Array[String]): Self = StObject.set(x, "Owners", value.asInstanceOf[js.Any])
         

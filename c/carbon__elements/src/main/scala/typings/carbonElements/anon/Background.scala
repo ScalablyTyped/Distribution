@@ -65,13 +65,13 @@ trait Background extends StObject {
   
   var backgroundSelectedHover: /* rgba(141, 141, 141, 0.32) */ String
   
-  var bodyLong01: `21`
+  var bodyLong01: FontWeightLetterSpacing
   
-  var bodyLong02: `23`
+  var bodyLong02: FontWeightLetterSpacingLineHeight
   
-  var bodyShort01: `17`
+  var bodyShort01: FontSizeFontWeight
   
-  var bodyShort02: `22`
+  var bodyShort02: FontSizeFontWeightLetterSpacing
   
   var borderDisabled: Numbersignc6c6c6
   
@@ -99,9 +99,9 @@ trait Background extends StObject {
   
   var borderSubtleSelected03: Numbersignc6c6c6
   
-  var caption01: FontSizeFontWeightLetterSpacingLineHeight
+  var caption01: LetterSpacing
   
-  var caption02: `16`
+  var caption02: LineHeight
   
   var code01: FontFamilyFontSize
   
@@ -117,17 +117,17 @@ trait Background extends StObject {
   
   var container05: `4rem`
   
-  var display01: BreakpointsLg
+  var display01: BreakpointsLgMaxMd
   
-  var display02: BreakpointsMax
+  var display02: BreakpointsMaxMdXlg
   
-  var display03: BreakpointsMd
+  var display03: BreakpointsLgMaxMdXlg
   
-  var display04: BreakpointsXlg
+  var display04: BreakpointsLg43
   
-  var expressiveHeading01: `34`
+  var expressiveHeading01: `12`
   
-  var expressiveHeading02: `26`
+  var expressiveHeading02: `4`
   
   var expressiveHeading03: Breakpoints
   
@@ -165,13 +165,13 @@ trait Background extends StObject {
   
   var focusInverse: Numbersignffffff
   
-  var heading01: `24`
+  var heading01: FontSizeFontWeightLetterSpacingLineHeight
   
-  var heading02: `26`
+  var heading02: `4`
   
-  var helperText01: `18`
+  var helperText01: FontSizeLetterSpacing
   
-  var helperText02: `19`
+  var helperText02: LetterSpacingLineHeight
   
   var highlight: Numbersignd0e2ff
   
@@ -193,9 +193,9 @@ trait Background extends StObject {
   
   var interactive: Numbersign0f62fe
   
-  var label01: FontSizeFontWeightLetterSpacingLineHeight
+  var label01: LetterSpacing
   
-  var label02: `17`
+  var label02: FontSizeFontWeight
   
   var layer01: Numbersignf4f4f4
   
@@ -265,19 +265,19 @@ trait Background extends StObject {
   
   var overlay: /* rgba(22, 22, 22, 0.5) */ String
   
-  var productiveHeading01: `25`
+  var productiveHeading01: `3`
   
-  var productiveHeading02: `27`
+  var productiveHeading02: `5`
   
-  var productiveHeading03: `28`
+  var productiveHeading03: `6`
   
-  var productiveHeading04: `29`
+  var productiveHeading04: `7`
   
-  var productiveHeading05: `31`
+  var productiveHeading05: `8`
   
-  var productiveHeading06: `32`
+  var productiveHeading06: `9`
   
-  var productiveHeading07: `33`
+  var productiveHeading07: `11`
   
   var quotation01: BreakpointsFontFamily
   
@@ -372,38 +372,38 @@ trait Background extends StObject {
 object Background {
   
   inline def apply(
-    bodyLong01: `21`,
-    bodyLong02: `23`,
-    bodyShort01: `17`,
-    bodyShort02: `22`,
-    caption01: FontSizeFontWeightLetterSpacingLineHeight,
-    caption02: `16`,
+    bodyLong01: FontWeightLetterSpacing,
+    bodyLong02: FontWeightLetterSpacingLineHeight,
+    bodyShort01: FontSizeFontWeight,
+    bodyShort02: FontSizeFontWeightLetterSpacing,
+    caption01: LetterSpacing,
+    caption02: LineHeight,
     code01: FontFamilyFontSize,
     code02: FontFamilyFontSizeFontWeight,
-    display01: BreakpointsLg,
-    display02: BreakpointsMax,
-    display03: BreakpointsMd,
-    display04: BreakpointsXlg,
-    expressiveHeading01: `34`,
-    expressiveHeading02: `26`,
+    display01: BreakpointsLgMaxMd,
+    display02: BreakpointsMaxMdXlg,
+    display03: BreakpointsLgMaxMdXlg,
+    display04: BreakpointsLg43,
+    expressiveHeading01: `12`,
+    expressiveHeading02: `4`,
     expressiveHeading03: Breakpoints,
     expressiveHeading04: BreakpointsFontSize,
     expressiveHeading05: BreakpointsFontSizeFontWeight,
     expressiveHeading06: BreakpointsFontSizeFontWeightLetterSpacing,
     expressiveParagraph01: BreakpointsFontSizeFontWeightLetterSpacingLineHeight,
-    heading01: `24`,
-    heading02: `26`,
-    helperText01: `18`,
-    helperText02: `19`,
-    label01: FontSizeFontWeightLetterSpacingLineHeight,
-    label02: `17`,
-    productiveHeading01: `25`,
-    productiveHeading02: `27`,
-    productiveHeading03: `28`,
-    productiveHeading04: `29`,
-    productiveHeading05: `31`,
-    productiveHeading06: `32`,
-    productiveHeading07: `33`,
+    heading01: FontSizeFontWeightLetterSpacingLineHeight,
+    heading02: `4`,
+    helperText01: FontSizeLetterSpacing,
+    helperText02: LetterSpacingLineHeight,
+    label01: LetterSpacing,
+    label02: FontSizeFontWeight,
+    productiveHeading01: `3`,
+    productiveHeading02: `5`,
+    productiveHeading03: `6`,
+    productiveHeading04: `7`,
+    productiveHeading05: `8`,
+    productiveHeading06: `9`,
+    productiveHeading07: `11`,
     quotation01: BreakpointsFontFamily,
     quotation02: BreakpointsFontFamilyFontSize
   ): Background = {
@@ -429,13 +429,13 @@ object Background {
     
     inline def setBackgroundSelectedHover(value: /* rgba(141, 141, 141, 0.32) */ String): Self = StObject.set(x, "backgroundSelectedHover", value.asInstanceOf[js.Any])
     
-    inline def setBodyLong01(value: `21`): Self = StObject.set(x, "bodyLong01", value.asInstanceOf[js.Any])
+    inline def setBodyLong01(value: FontWeightLetterSpacing): Self = StObject.set(x, "bodyLong01", value.asInstanceOf[js.Any])
     
-    inline def setBodyLong02(value: `23`): Self = StObject.set(x, "bodyLong02", value.asInstanceOf[js.Any])
+    inline def setBodyLong02(value: FontWeightLetterSpacingLineHeight): Self = StObject.set(x, "bodyLong02", value.asInstanceOf[js.Any])
     
-    inline def setBodyShort01(value: `17`): Self = StObject.set(x, "bodyShort01", value.asInstanceOf[js.Any])
+    inline def setBodyShort01(value: FontSizeFontWeight): Self = StObject.set(x, "bodyShort01", value.asInstanceOf[js.Any])
     
-    inline def setBodyShort02(value: `22`): Self = StObject.set(x, "bodyShort02", value.asInstanceOf[js.Any])
+    inline def setBodyShort02(value: FontSizeFontWeightLetterSpacing): Self = StObject.set(x, "bodyShort02", value.asInstanceOf[js.Any])
     
     inline def setBorderDisabled(value: Numbersignc6c6c6): Self = StObject.set(x, "borderDisabled", value.asInstanceOf[js.Any])
     
@@ -463,9 +463,9 @@ object Background {
     
     inline def setBorderSubtleSelected03(value: Numbersignc6c6c6): Self = StObject.set(x, "borderSubtleSelected03", value.asInstanceOf[js.Any])
     
-    inline def setCaption01(value: FontSizeFontWeightLetterSpacingLineHeight): Self = StObject.set(x, "caption01", value.asInstanceOf[js.Any])
+    inline def setCaption01(value: LetterSpacing): Self = StObject.set(x, "caption01", value.asInstanceOf[js.Any])
     
-    inline def setCaption02(value: `16`): Self = StObject.set(x, "caption02", value.asInstanceOf[js.Any])
+    inline def setCaption02(value: LineHeight): Self = StObject.set(x, "caption02", value.asInstanceOf[js.Any])
     
     inline def setCode01(value: FontFamilyFontSize): Self = StObject.set(x, "code01", value.asInstanceOf[js.Any])
     
@@ -481,17 +481,17 @@ object Background {
     
     inline def setContainer05(value: `4rem`): Self = StObject.set(x, "container05", value.asInstanceOf[js.Any])
     
-    inline def setDisplay01(value: BreakpointsLg): Self = StObject.set(x, "display01", value.asInstanceOf[js.Any])
+    inline def setDisplay01(value: BreakpointsLgMaxMd): Self = StObject.set(x, "display01", value.asInstanceOf[js.Any])
     
-    inline def setDisplay02(value: BreakpointsMax): Self = StObject.set(x, "display02", value.asInstanceOf[js.Any])
+    inline def setDisplay02(value: BreakpointsMaxMdXlg): Self = StObject.set(x, "display02", value.asInstanceOf[js.Any])
     
-    inline def setDisplay03(value: BreakpointsMd): Self = StObject.set(x, "display03", value.asInstanceOf[js.Any])
+    inline def setDisplay03(value: BreakpointsLgMaxMdXlg): Self = StObject.set(x, "display03", value.asInstanceOf[js.Any])
     
-    inline def setDisplay04(value: BreakpointsXlg): Self = StObject.set(x, "display04", value.asInstanceOf[js.Any])
+    inline def setDisplay04(value: BreakpointsLg43): Self = StObject.set(x, "display04", value.asInstanceOf[js.Any])
     
-    inline def setExpressiveHeading01(value: `34`): Self = StObject.set(x, "expressiveHeading01", value.asInstanceOf[js.Any])
+    inline def setExpressiveHeading01(value: `12`): Self = StObject.set(x, "expressiveHeading01", value.asInstanceOf[js.Any])
     
-    inline def setExpressiveHeading02(value: `26`): Self = StObject.set(x, "expressiveHeading02", value.asInstanceOf[js.Any])
+    inline def setExpressiveHeading02(value: `4`): Self = StObject.set(x, "expressiveHeading02", value.asInstanceOf[js.Any])
     
     inline def setExpressiveHeading03(value: Breakpoints): Self = StObject.set(x, "expressiveHeading03", value.asInstanceOf[js.Any])
     
@@ -529,13 +529,13 @@ object Background {
     
     inline def setFocusInverse(value: Numbersignffffff): Self = StObject.set(x, "focusInverse", value.asInstanceOf[js.Any])
     
-    inline def setHeading01(value: `24`): Self = StObject.set(x, "heading01", value.asInstanceOf[js.Any])
+    inline def setHeading01(value: FontSizeFontWeightLetterSpacingLineHeight): Self = StObject.set(x, "heading01", value.asInstanceOf[js.Any])
     
-    inline def setHeading02(value: `26`): Self = StObject.set(x, "heading02", value.asInstanceOf[js.Any])
+    inline def setHeading02(value: `4`): Self = StObject.set(x, "heading02", value.asInstanceOf[js.Any])
     
-    inline def setHelperText01(value: `18`): Self = StObject.set(x, "helperText01", value.asInstanceOf[js.Any])
+    inline def setHelperText01(value: FontSizeLetterSpacing): Self = StObject.set(x, "helperText01", value.asInstanceOf[js.Any])
     
-    inline def setHelperText02(value: `19`): Self = StObject.set(x, "helperText02", value.asInstanceOf[js.Any])
+    inline def setHelperText02(value: LetterSpacingLineHeight): Self = StObject.set(x, "helperText02", value.asInstanceOf[js.Any])
     
     inline def setHighlight(value: Numbersignd0e2ff): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
     
@@ -557,9 +557,9 @@ object Background {
     
     inline def setInteractive(value: Numbersign0f62fe): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
     
-    inline def setLabel01(value: FontSizeFontWeightLetterSpacingLineHeight): Self = StObject.set(x, "label01", value.asInstanceOf[js.Any])
+    inline def setLabel01(value: LetterSpacing): Self = StObject.set(x, "label01", value.asInstanceOf[js.Any])
     
-    inline def setLabel02(value: `17`): Self = StObject.set(x, "label02", value.asInstanceOf[js.Any])
+    inline def setLabel02(value: FontSizeFontWeight): Self = StObject.set(x, "label02", value.asInstanceOf[js.Any])
     
     inline def setLayer01(value: Numbersignf4f4f4): Self = StObject.set(x, "layer01", value.asInstanceOf[js.Any])
     
@@ -629,19 +629,19 @@ object Background {
     
     inline def setOverlay(value: /* rgba(22, 22, 22, 0.5) */ String): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     
-    inline def setProductiveHeading01(value: `25`): Self = StObject.set(x, "productiveHeading01", value.asInstanceOf[js.Any])
+    inline def setProductiveHeading01(value: `3`): Self = StObject.set(x, "productiveHeading01", value.asInstanceOf[js.Any])
     
-    inline def setProductiveHeading02(value: `27`): Self = StObject.set(x, "productiveHeading02", value.asInstanceOf[js.Any])
+    inline def setProductiveHeading02(value: `5`): Self = StObject.set(x, "productiveHeading02", value.asInstanceOf[js.Any])
     
-    inline def setProductiveHeading03(value: `28`): Self = StObject.set(x, "productiveHeading03", value.asInstanceOf[js.Any])
+    inline def setProductiveHeading03(value: `6`): Self = StObject.set(x, "productiveHeading03", value.asInstanceOf[js.Any])
     
-    inline def setProductiveHeading04(value: `29`): Self = StObject.set(x, "productiveHeading04", value.asInstanceOf[js.Any])
+    inline def setProductiveHeading04(value: `7`): Self = StObject.set(x, "productiveHeading04", value.asInstanceOf[js.Any])
     
-    inline def setProductiveHeading05(value: `31`): Self = StObject.set(x, "productiveHeading05", value.asInstanceOf[js.Any])
+    inline def setProductiveHeading05(value: `8`): Self = StObject.set(x, "productiveHeading05", value.asInstanceOf[js.Any])
     
-    inline def setProductiveHeading06(value: `32`): Self = StObject.set(x, "productiveHeading06", value.asInstanceOf[js.Any])
+    inline def setProductiveHeading06(value: `9`): Self = StObject.set(x, "productiveHeading06", value.asInstanceOf[js.Any])
     
-    inline def setProductiveHeading07(value: `33`): Self = StObject.set(x, "productiveHeading07", value.asInstanceOf[js.Any])
+    inline def setProductiveHeading07(value: `11`): Self = StObject.set(x, "productiveHeading07", value.asInstanceOf[js.Any])
     
     inline def setQuotation01(value: BreakpointsFontFamily): Self = StObject.set(x, "quotation01", value.asInstanceOf[js.Any])
     

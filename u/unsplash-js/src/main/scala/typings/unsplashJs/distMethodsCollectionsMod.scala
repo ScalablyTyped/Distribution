@@ -2,7 +2,7 @@ package typings.unsplashJs
 
 import typings.unsplashJs.anon.PickPaginationParamspagep
 import typings.unsplashJs.anon.ResponseResponse
-import typings.unsplashJs.anon.Results
+import typings.unsplashJs.anon.Total
 import typings.unsplashJs.distHelpersRequestMod.AdditionalFetchOptions
 import typings.unsplashJs.distHelpersRequestMod.CompleteRequestParams
 import typings.unsplashJs.distHelpersResponseMod.HandleResponse
@@ -48,9 +48,9 @@ object distMethodsCollectionsMod {
     
     @JSImport("unsplash-js/dist/methods/collections", "getPhotos.handleResponse")
     @js.native
-    def handleResponse: HandleResponse[Results] = js.native
-    inline def handleResponse(args: ResponseResponse): js.Promise[Results] = ^.asInstanceOf[js.Dynamic].applyDynamic("handleResponse")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Results]]
-    inline def handleResponse_=(x: HandleResponse[Results]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("handleResponse")(x.asInstanceOf[js.Any])
+    def handleResponse: HandleResponse[Total] = js.native
+    inline def handleResponse(args: ResponseResponse): js.Promise[Total] = ^.asInstanceOf[js.Dynamic].applyDynamic("handleResponse")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Total]]
+    inline def handleResponse_=(x: HandleResponse[Total]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("handleResponse")(x.asInstanceOf[js.Any])
   }
   
   object getRelated {
@@ -86,9 +86,9 @@ object distMethodsCollectionsMod {
     
     @JSImport("unsplash-js/dist/methods/collections", "list.handleResponse")
     @js.native
-    def handleResponse: HandleResponse[Results] = js.native
-    inline def handleResponse(args: ResponseResponse): js.Promise[Results] = ^.asInstanceOf[js.Dynamic].applyDynamic("handleResponse")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Results]]
-    inline def handleResponse_=(x: HandleResponse[Results]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("handleResponse")(x.asInstanceOf[js.Any])
+    def handleResponse: HandleResponse[Total] = js.native
+    inline def handleResponse(args: ResponseResponse): js.Promise[Total] = ^.asInstanceOf[js.Dynamic].applyDynamic("handleResponse")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Total]]
+    inline def handleResponse_=(x: HandleResponse[Total]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("handleResponse")(x.asInstanceOf[js.Any])
   }
   
   trait CollectionId extends StObject {

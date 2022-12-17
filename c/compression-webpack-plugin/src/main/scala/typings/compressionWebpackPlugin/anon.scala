@@ -11,7 +11,7 @@ object anon {
   
   trait `1` extends StObject
   
-  trait `2`[T] extends StObject
+  trait `2` extends StObject
   
   @js.native
   trait ToPrimitive extends StObject {
@@ -20,5 +20,5 @@ object anon {
     var toPrimitive: js.Function1[string, String] = js.native
   }
   
-  trait ValueOf extends StObject
+  trait ValueOf[T] extends StObject
 }

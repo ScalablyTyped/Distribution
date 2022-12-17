@@ -1,15 +1,15 @@
 package typings.vegaLite
 
-import typings.vegaLite.anon.Align
 import typings.vegaLite.anon.AlignString
 import typings.vegaLite.anon.AlignUndefined
-import typings.vegaLite.anon.Anchor
-import typings.vegaLite.anon.Angle
-import typings.vegaLite.anon.Aria
 import typings.vegaLite.anon.Axes
-import typings.vegaLite.anon.Baseline
 import typings.vegaLite.anon.BaselineUndefined
-import typings.vegaLite.anon.Color
+import typings.vegaLite.anon.Dx
+import typings.vegaLite.anon.Dy
+import typings.vegaLite.anon.Encode
+import typings.vegaLite.anon.Font
+import typings.vegaLite.anon.FontSize
+import typings.vegaLite.anon.FontStyle
 import typings.vegaLite.anon.Name
 import typings.vegaLite.anon.PartialRecordkeyofCoreHea
 import typings.vegaLite.anon.PartialVgTitle
@@ -89,7 +89,7 @@ object buildSrcCompileHeaderAssembleMod {
     propertiesMap: PartialRecordkeyofCoreHea
   ): PartialVgTitle = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleHeaderProperties")(config.asInstanceOf[js.Any], facetFieldDef.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], propertiesMap.asInstanceOf[js.Any])).asInstanceOf[PartialVgTitle]
   
-  inline def assembleLabelTitle(facetFieldDef: FacetFieldDef[String, SignalRef], channel: FacetChannel, config: Config[SignalRef]): Align | Baseline | Anchor | Angle | Color | Aria = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleLabelTitle")(facetFieldDef.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Align | Baseline | Anchor | Angle | Color | Aria]
+  inline def assembleLabelTitle(facetFieldDef: FacetFieldDef[String, SignalRef], channel: FacetChannel, config: Config[SignalRef]): Dx | Dy | Encode | Font | FontSize | FontStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleLabelTitle")(facetFieldDef.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Dx | Dy | Encode | Font | FontSize | FontStyle]
   
   inline def assembleLayoutTitleBand(headerComponentIndex: LayoutHeaderComponentIndex, config: Config[SignalRef]): RowCol[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleLayoutTitleBand")(headerComponentIndex.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[RowCol[Double]]
   

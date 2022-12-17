@@ -13,8 +13,9 @@ A single selection range. When
 is enabled, a [selection](https://codemirror.net/6/docs/ref/#state.EditorSelection) may hold
 multiple ranges. By default, selections hold exactly one range.
 */
+@JSImport("@codemirror/state", "SelectionRange")
 @js.native
-trait SelectionRange extends StObject {
+/* private */ open class SelectionRange () extends StObject {
   
   /**
     The anchor of the range—the side that doesn't move when you
@@ -89,4 +90,17 @@ trait SelectionRange extends StObject {
     Return a JSON-serializable object representing the range.
     */
   def toJSON(): Any = js.native
+}
+object SelectionRange {
+  
+  @JSImport("@codemirror/state", "SelectionRange")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    Convert a JSON representation of a range to a `SelectionRange`
+    instance.
+    */
+  /* static member */
+  inline def fromJSON(json: Any): SelectionRange = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[SelectionRange]
 }

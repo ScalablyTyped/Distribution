@@ -1,7 +1,7 @@
 package typings.puppeteerCore.anon
 
 import typings.node.NodeJS.ErrnoException
-import typings.node.anon.EncodingWithFileTypes
+import typings.node.anon.Encoding
 import typings.node.anon.ObjectEncodingOptionswith
 import typings.node.anon.ObjectEncodingOptionswithEncoding
 import typings.node.anon.WithFileTypes
@@ -33,8 +33,8 @@ trait Typeofreaddir extends StObject {
   ): Unit = js.native
   def apply(
     path: PathLike,
-    options: EncodingWithFileTypes,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[String], Unit]
+    options: Encoding,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[Buffer], Unit]
   ): Unit = js.native
   def apply(
     path: PathLike,
@@ -49,7 +49,7 @@ trait Typeofreaddir extends StObject {
   def apply(
     path: PathLike,
     options: WithFileTypes,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[Buffer], Unit]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[String], Unit]
   ): Unit = js.native
   def apply(
     path: PathLike,

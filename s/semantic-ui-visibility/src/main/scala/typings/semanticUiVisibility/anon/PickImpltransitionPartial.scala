@@ -93,7 +93,7 @@ trait PickImpltransitionPartial
   
   var throttle: js.UndefOr[`false` | Double] = js.undefined
   
-  var transition: (`false` | String) & (js.UndefOr[`false` | String])
+  var transition: `false` | String
   
   var `type`: js.UndefOr[`false` | image | fixed] = js.undefined
   
@@ -103,7 +103,7 @@ trait PickImpltransitionPartial
 }
 object PickImpltransitionPartial {
   
-  inline def apply(transition: (`false` | String) & (js.UndefOr[`false` | String])): PickImpltransitionPartial = {
+  inline def apply(transition: `false` | String): PickImpltransitionPartial = {
     val __obj = js.Dynamic.literal(transition = transition.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpltransitionPartial]
   }
@@ -258,7 +258,7 @@ object PickImpltransitionPartial {
     
     inline def setThrottleUndefined: Self = StObject.set(x, "throttle", js.undefined)
     
-    inline def setTransition(value: (`false` | String) & (js.UndefOr[`false` | String])): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+    inline def setTransition(value: `false` | String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
     inline def setType(value: `false` | image | fixed): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

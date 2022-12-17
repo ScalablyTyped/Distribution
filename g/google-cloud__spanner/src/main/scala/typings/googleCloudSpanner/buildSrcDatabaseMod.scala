@@ -19,6 +19,7 @@ import typings.googleCloudSpanner.buildSrcCommonMod.Schema
 import typings.googleCloudSpanner.buildSrcInstanceMod.GetDatabaseOperationsCallback
 import typings.googleCloudSpanner.buildSrcInstanceMod.GetDatabaseOperationsOptions
 import typings.googleCloudSpanner.buildSrcInstanceMod.GetDatabaseOperationsResponse
+import typings.googleCloudSpanner.buildSrcInstanceMod.Instance
 import typings.googleCloudSpanner.buildSrcPartialResultStreamMod.PartialResultStream_
 import typings.googleCloudSpanner.buildSrcSessionMod.Session
 import typings.googleCloudSpanner.buildSrcSessionPoolMod.SessionPoolCloseCallback
@@ -56,88 +57,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object buildSrcDatabaseMod {
   
-  type BatchCreateSessionsCallback = ResourceCallback[
-    js.Array[Session], 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify spannerClient.spanner.v1.IBatchCreateSessionsResponse */ Any
-  ]
-  
-  trait BatchCreateSessionsOptions
-    extends StObject
-       with CreateSessionOptions {
-    
-    var count: Double
-  }
-  object BatchCreateSessionsOptions {
-    
-    inline def apply(count: Double): BatchCreateSessionsOptions = {
-      val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
-      __obj.asInstanceOf[BatchCreateSessionsOptions]
-    }
-    
-    extension [Self <: BatchCreateSessionsOptions](x: Self) {
-      
-      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  type BatchCreateSessionsResponse = js.Tuple2[
-    js.Array[Session], 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify spannerClient.spanner.v1.IBatchCreateSessionsResponse */ Any
-  ]
-  
-  @js.native
-  trait CancelableDuplex extends Duplex {
-    
-    def cancel(): Unit = js.native
-  }
-  
-  type CreateBatchTransactionCallback = ResourceCallback[
-    BatchTransaction, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.spanner.v1.ITransaction */ Any
-  ]
-  
-  type CreateBatchTransactionResponse = js.Tuple2[
-    BatchTransaction, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.spanner.v1.ITransaction */ Any
-  ]
-  
-  type CreateSessionCallback = ResourceCallback[
-    Session, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify spannerClient.spanner.v1.ISession */ Any
-  ]
-  
-  trait CreateSessionOptions extends StObject {
-    
-    var gaxOptions: js.UndefOr[CallOptions] = js.undefined
-    
-    var labels: js.UndefOr[StringDictionary[String] | Null] = js.undefined
-  }
-  object CreateSessionOptions {
-    
-    inline def apply(): CreateSessionOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[CreateSessionOptions]
-    }
-    
-    extension [Self <: CreateSessionOptions](x: Self) {
-      
-      inline def setGaxOptions(value: CallOptions): Self = StObject.set(x, "gaxOptions", value.asInstanceOf[js.Any])
-      
-      inline def setGaxOptionsUndefined: Self = StObject.set(x, "gaxOptions", js.undefined)
-      
-      inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
-      
-      inline def setLabelsNull: Self = StObject.set(x, "labels", null)
-      
-      inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
-    }
-  }
-  
-  type CreateSessionResponse = js.Tuple2[
-    Session, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify spannerClient.spanner.v1.ISession */ Any
-  ]
-  
   /**
     * Create a Database object to interact with a Cloud Spanner database.
     *
@@ -158,8 +77,31 @@ object buildSrcDatabaseMod {
     * ```
     */
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify common.GrpcServiceObject * / any */ @js.native
-  trait Database extends StObject {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify common.GrpcServiceObject * / any
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify common.GrpcServiceObject * / any */ @JSImport("@google-cloud/spanner/build/src/database", "Database")
+  @js.native
+  open class Database protected () extends StObject {
+    def this(instance: Instance, name: String) = this()
+    def this(instance: Instance, name: String, poolOptions: SessionPoolConstructor) = this()
+    def this(instance: Instance, name: String, poolOptions: SessionPoolOptions) = this()
+    def this(
+      instance: Instance,
+      name: String,
+      poolOptions: Unit,
+      queryOptions: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify spannerClient.spanner.v1.ExecuteSqlRequest.IQueryOptions */ Any
+    ) = this()
+    def this(
+      instance: Instance,
+      name: String,
+      poolOptions: SessionPoolConstructor,
+      queryOptions: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify spannerClient.spanner.v1.ExecuteSqlRequest.IQueryOptions */ Any
+    ) = this()
+    def this(
+      instance: Instance,
+      name: String,
+      poolOptions: SessionPoolOptions,
+      queryOptions: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify spannerClient.spanner.v1.ExecuteSqlRequest.IQueryOptions */ Any
+    ) = this()
     
     /**
       * Decorates transaction so that when end() is called it will return the session
@@ -1780,6 +1722,118 @@ object buildSrcDatabaseMod {
     def updateSchema(statements: Schema, gaxOptions: CallOptions): js.Promise[UpdateSchemaResponse] = js.native
     def updateSchema(statements: Schema, gaxOptions: CallOptions, callback: UpdateSchemaCallback): Unit = js.native
   }
+  object Database {
+    
+    @JSImport("@google-cloud/spanner/build/src/database", "Database")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Format the database name to include the instance name.
+      *
+      * @private
+      *
+      * @param {string} instanceName The formatted instance name.
+      * @param {string} name The table name.
+      * @returns {string}
+      *
+      * @example
+      * ```
+      * Database.formatName_(
+      *   'projects/grape-spaceship-123/instances/my-instance',
+      *   'my-database'
+      * );
+      * // 'projects/grape-spaceship-123/instances/my-instance/databases/my-database'
+      * ```
+      */
+    /* static member */
+    inline def formatName(instanceName: String, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatName_")(instanceName.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    /* static member */
+    inline def getEnvironmentQueryOptions(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnvironmentQueryOptions")().asInstanceOf[Any]
+  }
+  
+  type BatchCreateSessionsCallback = ResourceCallback[
+    js.Array[Session], 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify spannerClient.spanner.v1.IBatchCreateSessionsResponse */ Any
+  ]
+  
+  trait BatchCreateSessionsOptions
+    extends StObject
+       with CreateSessionOptions {
+    
+    var count: Double
+  }
+  object BatchCreateSessionsOptions {
+    
+    inline def apply(count: Double): BatchCreateSessionsOptions = {
+      val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
+      __obj.asInstanceOf[BatchCreateSessionsOptions]
+    }
+    
+    extension [Self <: BatchCreateSessionsOptions](x: Self) {
+      
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type BatchCreateSessionsResponse = js.Tuple2[
+    js.Array[Session], 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify spannerClient.spanner.v1.IBatchCreateSessionsResponse */ Any
+  ]
+  
+  @js.native
+  trait CancelableDuplex extends Duplex {
+    
+    def cancel(): Unit = js.native
+  }
+  
+  type CreateBatchTransactionCallback = ResourceCallback[
+    BatchTransaction, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.spanner.v1.ITransaction */ Any
+  ]
+  
+  type CreateBatchTransactionResponse = js.Tuple2[
+    BatchTransaction, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.spanner.v1.ITransaction */ Any
+  ]
+  
+  type CreateSessionCallback = ResourceCallback[
+    Session, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify spannerClient.spanner.v1.ISession */ Any
+  ]
+  
+  trait CreateSessionOptions extends StObject {
+    
+    var gaxOptions: js.UndefOr[CallOptions] = js.undefined
+    
+    var labels: js.UndefOr[StringDictionary[String] | Null] = js.undefined
+  }
+  object CreateSessionOptions {
+    
+    inline def apply(): CreateSessionOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CreateSessionOptions]
+    }
+    
+    extension [Self <: CreateSessionOptions](x: Self) {
+      
+      inline def setGaxOptions(value: CallOptions): Self = StObject.set(x, "gaxOptions", value.asInstanceOf[js.Any])
+      
+      inline def setGaxOptionsUndefined: Self = StObject.set(x, "gaxOptions", js.undefined)
+      
+      inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+      
+      inline def setLabelsNull: Self = StObject.set(x, "labels", null)
+      
+      inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    }
+  }
+  
+  type CreateSessionResponse = js.Tuple2[
+    Session, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify spannerClient.spanner.v1.ISession */ Any
+  ]
   
   type DatabaseCallback = ResourceCallback[Database, Response[Any]]
   

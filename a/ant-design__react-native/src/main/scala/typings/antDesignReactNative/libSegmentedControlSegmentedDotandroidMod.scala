@@ -1,6 +1,6 @@
 package typings.antDesignReactNative
 
-import typings.antDesignReactNative.anon.SelectedTextColor
+import typings.antDesignReactNative.anon.OnChange
 import typings.antDesignReactNative.libSegmentedControlPropsTypeMod.SegmentedControlPropsType
 import typings.antDesignReactNative.libSegmentedControlStyleMod.SegmentControlStyle
 import typings.antDesignReactNative.libStyleMod.WithThemeStyles
@@ -27,8 +27,8 @@ object libSegmentedControlSegmentedDotandroidMod {
     
     @JSImport("@ant-design/react-native/lib/segmented-control/segmented.android", "default.defaultProps")
     @js.native
-    def defaultProps: SelectedTextColor = js.native
-    inline def defaultProps_=(x: SelectedTextColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: OnChange = js.native
+    inline def defaultProps_=(x: OnChange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait SegmentControlProps

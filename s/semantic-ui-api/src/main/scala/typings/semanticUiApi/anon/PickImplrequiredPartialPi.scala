@@ -12,11 +12,11 @@ trait PickImplrequiredPartialPi
   
   var optional: js.UndefOr[js.RegExp] = js.undefined
   
-  var required: js.RegExp & js.UndefOr[js.RegExp]
+  var required: js.RegExp
 }
 object PickImplrequiredPartialPi {
   
-  inline def apply(required: js.RegExp & js.UndefOr[js.RegExp]): PickImplrequiredPartialPi = {
+  inline def apply(required: js.RegExp): PickImplrequiredPartialPi = {
     val __obj = js.Dynamic.literal(required = required.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplrequiredPartialPi]
   }
@@ -27,6 +27,6 @@ object PickImplrequiredPartialPi {
     
     inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
     
-    inline def setRequired(value: js.RegExp & js.UndefOr[js.RegExp]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: js.RegExp): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
   }
 }

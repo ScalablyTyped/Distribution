@@ -1,6 +1,6 @@
 package typings.reactDevtoolsInline.commonsMod
 
-import typings.reactDevtoolsInline.anon.Id
+import typings.reactDevtoolsInline.anon.ReactBuildType
 import typings.reactDevtoolsInline.anon.Renderer
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
@@ -15,7 +15,7 @@ trait HookEventPayload extends StObject {
   
   var `react-devtools`: Any
   
-  var renderer: Id
+  var renderer: ReactBuildType
   
   var `renderer-attached`: Renderer
   
@@ -33,7 +33,7 @@ object HookEventPayload {
     fastRefreshScheduled: Unit,
     operations: js.Array[Double],
     `react-devtools`: Any,
-    renderer: Id,
+    renderer: ReactBuildType,
     `renderer-attached`: Renderer,
     shutdown: Unit,
     traceUpdates: Set[NativeType],
@@ -56,7 +56,7 @@ object HookEventPayload {
     
     inline def `setReact-devtools`(value: Any): Self = StObject.set(x, "react-devtools", value.asInstanceOf[js.Any])
     
-    inline def setRenderer(value: Id): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+    inline def setRenderer(value: ReactBuildType): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
     inline def `setRenderer-attached`(value: Renderer): Self = StObject.set(x, "renderer-attached", value.asInstanceOf[js.Any])
     

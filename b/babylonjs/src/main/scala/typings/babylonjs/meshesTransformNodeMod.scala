@@ -1,6 +1,6 @@
 package typings.babylonjs
 
-import typings.babylonjs.anon.`0`
+import typings.babylonjs.anon.`2`
 import typings.babylonjs.bonesBoneMod.Bone
 import typings.babylonjs.camerasCameraMod.Camera
 import typings.babylonjs.mathsMathDotaxisMod.Space
@@ -311,10 +311,10 @@ object meshesTransformNodeMod {
       options: Unit,
       onNewNodeCreated: js.Function2[/* source */ this.type, /* clone */ this.type, Unit]
     ): Nullable[TransformNode] = js.native
-    def instantiateHierarchy(newParent: Unit, options: `0`): Nullable[TransformNode] = js.native
+    def instantiateHierarchy(newParent: Unit, options: `2`): Nullable[TransformNode] = js.native
     def instantiateHierarchy(
       newParent: Unit,
-      options: `0`,
+      options: `2`,
       onNewNodeCreated: js.Function2[/* source */ this.type, /* clone */ this.type, Unit]
     ): Nullable[TransformNode] = js.native
     def instantiateHierarchy(newParent: Nullable[TransformNode]): Nullable[TransformNode] = js.native
@@ -323,10 +323,10 @@ object meshesTransformNodeMod {
       options: Unit,
       onNewNodeCreated: js.Function2[/* source */ this.type, /* clone */ this.type, Unit]
     ): Nullable[TransformNode] = js.native
-    def instantiateHierarchy(newParent: Nullable[TransformNode], options: `0`): Nullable[TransformNode] = js.native
+    def instantiateHierarchy(newParent: Nullable[TransformNode], options: `2`): Nullable[TransformNode] = js.native
     def instantiateHierarchy(
       newParent: Nullable[TransformNode],
-      options: `0`,
+      options: `2`,
       onNewNodeCreated: js.Function2[/* source */ this.type, /* clone */ this.type, Unit]
     ): Nullable[TransformNode] = js.native
     

@@ -18,7 +18,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Body extends StObject {
+  trait Body
+    extends StObject
+       with OutputValidation {
+    
+    var body: SchemaLike
+  }
+  object Body {
+    
+    inline def apply(): Body = {
+      val __obj = js.Dynamic.literal(body = null)
+      __obj.asInstanceOf[Body]
+    }
+    
+    extension [Self <: Body](x: Self) {
+      
+      inline def setBody(value: SchemaLike): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      
+      inline def setBodyNull: Self = StObject.set(x, "body", null)
+    }
+  }
+  
+  trait ContinueOnError extends StObject {
     
     var body: js.UndefOr[SchemaLike] = js.undefined
     
@@ -46,14 +67,14 @@ object anon {
     
     var validateOptions: js.UndefOr[ValidationOptions] = js.undefined
   }
-  object Body {
+  object ContinueOnError {
     
-    inline def apply(): Body = {
+    inline def apply(): ContinueOnError = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Body]
+      __obj.asInstanceOf[ContinueOnError]
     }
     
-    extension [Self <: Body](x: Self) {
+    extension [Self <: ContinueOnError](x: Self) {
       
       inline def setBody(value: SchemaLike): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -114,27 +135,6 @@ object anon {
       inline def setValidateOptions(value: ValidationOptions): Self = StObject.set(x, "validateOptions", value.asInstanceOf[js.Any])
       
       inline def setValidateOptionsUndefined: Self = StObject.set(x, "validateOptions", js.undefined)
-    }
-  }
-  
-  trait BodySchemaLike
-    extends StObject
-       with OutputValidation {
-    
-    var body: SchemaLike
-  }
-  object BodySchemaLike {
-    
-    inline def apply(): BodySchemaLike = {
-      val __obj = js.Dynamic.literal(body = null)
-      __obj.asInstanceOf[BodySchemaLike]
-    }
-    
-    extension [Self <: BodySchemaLike](x: Self) {
-      
-      inline def setBody(value: SchemaLike): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
-      
-      inline def setBodyNull: Self = StObject.set(x, "body", null)
     }
   }
   

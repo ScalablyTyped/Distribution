@@ -1,6 +1,6 @@
 package typings.antvG2plot
 
-import typings.antvG2plot.anon.OmitHierarchyOptionastype
+import typings.antvG2plot.anon.OmitHierarchyOptionastypeIgnoreParentValue
 import typings.antvG2plot.libPlotsTreemapTypesMod.TreemapOptions
 import typings.antvG2plot.libTypesInteractionMod.Interaction
 import typings.std.Record
@@ -36,7 +36,7 @@ object libPlotsTreemapUtilsMod {
     
     var enableDrillDown: Boolean
     
-    var hierarchyConfig: js.UndefOr[OmitHierarchyOptionastype] = js.undefined
+    var hierarchyConfig: js.UndefOr[OmitHierarchyOptionastypeIgnoreParentValue] = js.undefined
   }
   object TransformDataOptions {
     
@@ -57,7 +57,7 @@ object libPlotsTreemapUtilsMod {
       
       inline def setEnableDrillDown(value: Boolean): Self = StObject.set(x, "enableDrillDown", value.asInstanceOf[js.Any])
       
-      inline def setHierarchyConfig(value: OmitHierarchyOptionastype): Self = StObject.set(x, "hierarchyConfig", value.asInstanceOf[js.Any])
+      inline def setHierarchyConfig(value: OmitHierarchyOptionastypeIgnoreParentValue): Self = StObject.set(x, "hierarchyConfig", value.asInstanceOf[js.Any])
       
       inline def setHierarchyConfigUndefined: Self = StObject.set(x, "hierarchyConfig", js.undefined)
     }

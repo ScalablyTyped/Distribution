@@ -14,21 +14,21 @@ trait BaseroleDescription extends StObject {
     * @description The system role from which this role inherits permissions.
     * @enum {string}
     */
-  var base_role: read | triage | write | maintain
+  var base_role: js.UndefOr[read | triage | write | maintain] = js.undefined
   
-  /** @description A short description about the intended usage of this role or what permissions it grants. */
+  /** @description A short description about who this role is for or what permissions it grants. */
   var description: js.UndefOr[String] = js.undefined
   
   /** @description The name of the custom role. */
-  var name: String
+  var name: js.UndefOr[String] = js.undefined
   
-  /** @description A list of additional permissions included in this role. */
-  var permissions: js.Array[String]
+  /** @description A list of additional permissions included in this role. If specified, these permissions will replace any currently set on the role. */
+  var permissions: js.UndefOr[js.Array[String]] = js.undefined
 }
 object BaseroleDescription {
   
-  inline def apply(base_role: read | triage | write | maintain, name: String, permissions: js.Array[String]): BaseroleDescription = {
-    val __obj = js.Dynamic.literal(base_role = base_role.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any])
+  inline def apply(): BaseroleDescription = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BaseroleDescription]
   }
   
@@ -36,13 +36,19 @@ object BaseroleDescription {
     
     inline def setBase_role(value: read | triage | write | maintain): Self = StObject.set(x, "base_role", value.asInstanceOf[js.Any])
     
+    inline def setBase_roleUndefined: Self = StObject.set(x, "base_role", js.undefined)
+    
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
     inline def setPermissions(value: js.Array[String]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    
+    inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
     inline def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value*))
   }

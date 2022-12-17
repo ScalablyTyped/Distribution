@@ -50,7 +50,7 @@ trait PickImplhistoryPartialPic
   
   var evaluateScripts: js.UndefOr[once | Boolean] = js.undefined
   
-  var history: Boolean & js.UndefOr[Boolean]
+  var history: Boolean
   
   var historyType: js.UndefOr[hash | state] = js.undefined
   
@@ -104,7 +104,7 @@ trait PickImplhistoryPartialPic
 }
 object PickImplhistoryPartialPic {
   
-  inline def apply(history: Boolean & js.UndefOr[Boolean]): PickImplhistoryPartialPic = {
+  inline def apply(history: Boolean): PickImplhistoryPartialPic = {
     val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplhistoryPartialPic]
   }
@@ -159,7 +159,7 @@ object PickImplhistoryPartialPic {
     
     inline def setEvaluateScriptsUndefined: Self = StObject.set(x, "evaluateScripts", js.undefined)
     
-    inline def setHistory(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    inline def setHistory(value: Boolean): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
     inline def setHistoryType(value: hash | state): Self = StObject.set(x, "historyType", value.asInstanceOf[js.Any])
     

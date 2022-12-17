@@ -6,25 +6,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Tag extends StObject {
   
-  var tag: js.UndefOr[js.Array[String]] = js.undefined
+  /** The account owner of the repository. The name is not case sensitive. */
+  var owner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['owner'] */ js.Any
   
-  var tags: Any
+  /** The name of the repository. The name is not case sensitive. */
+  var repo: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo'] */ js.Any
+  
+  /** tag parameter */
+  var tag: String
 }
 object Tag {
   
-  inline def apply(tags: Any): Tag = {
-    val __obj = js.Dynamic.literal(tags = tags.asInstanceOf[js.Any])
+  inline def apply(
+    owner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['owner'] */ js.Any,
+    repo: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo'] */ js.Any,
+    tag: String
+  ): Tag = {
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tag]
   }
   
   extension [Self <: Tag](x: Self) {
     
-    inline def setTag(value: js.Array[String]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setOwner(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['owner'] */ js.Any
+    ): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setRepo(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo'] */ js.Any
+    ): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    inline def setTagVarargs(value: String*): Self = StObject.set(x, "tag", js.Array(value*))
-    
-    inline def setTags(value: Any): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
   }
 }

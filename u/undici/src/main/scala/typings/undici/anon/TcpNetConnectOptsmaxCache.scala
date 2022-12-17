@@ -46,7 +46,7 @@ trait TcpNetConnectOptsmaxCache
     */
   var onread: js.UndefOr[OnReadOpts] = js.undefined
   
-  var port: Double & js.UndefOr[Double]
+  var port: Double
   
   var readable: js.UndefOr[Boolean] = js.undefined
   
@@ -54,14 +54,14 @@ trait TcpNetConnectOptsmaxCache
   
   var socketPath: js.UndefOr[String | Null] = js.undefined
   
-  var timeout: js.UndefOr[Double] & (js.UndefOr[Double | Null])
+  var timeout: js.UndefOr[Double] = js.undefined
   
   var writable: js.UndefOr[Boolean] = js.undefined
 }
 object TcpNetConnectOptsmaxCache {
   
-  inline def apply(port: Double & js.UndefOr[Double], timeout: js.UndefOr[Double] & (js.UndefOr[Double | Null])): TcpNetConnectOptsmaxCache = {
-    val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
+  inline def apply(port: Double): TcpNetConnectOptsmaxCache = {
+    val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any])
     __obj.asInstanceOf[TcpNetConnectOptsmaxCache]
   }
   
@@ -123,7 +123,7 @@ object TcpNetConnectOptsmaxCache {
     
     inline def setOnreadUndefined: Self = StObject.set(x, "onread", js.undefined)
     
-    inline def setPort(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     inline def setReadable(value: Boolean): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
     
@@ -139,7 +139,9 @@ object TcpNetConnectOptsmaxCache {
     
     inline def setSocketPathUndefined: Self = StObject.set(x, "socketPath", js.undefined)
     
-    inline def setTimeout(value: js.UndefOr[Double] & (js.UndefOr[Double | Null])): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     inline def setWritable(value: Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
     

@@ -6,17 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `418` extends StObject {
   
-  var path: RepoRunid
+  @JSName("application/json")
+  var applicationSlashjson: js.Array[Forks]
 }
 object `418` {
   
-  inline def apply(path: RepoRunid): `418` = {
-    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+  inline def apply(applicationSlashjson: js.Array[Forks]): `418` = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`418`]
   }
   
   extension [Self <: `418`](x: Self) {
     
-    inline def setPath(value: RepoRunid): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setApplicationSlashjson(value: js.Array[Forks]): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+    
+    inline def setApplicationSlashjsonVarargs(value: Forks*): Self = StObject.set(x, "application/json", js.Array(value*))
   }
 }

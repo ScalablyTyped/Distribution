@@ -7,45 +7,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Dictkey
   extends StObject
-     with /* key */ StringDictionary[String] {
+     with /* key */ StringDictionary[Any] {
   
-  var checks: js.UndefOr[String] = js.undefined
+  var client_id: String
   
-  var contents: js.UndefOr[String] = js.undefined
+  var client_secret: String
   
-  var deployments: js.UndefOr[String] = js.undefined
+  var pem: String
   
-  var issues: js.UndefOr[String] = js.undefined
-  
-  var metadata: js.UndefOr[String] = js.undefined
+  var webhook_secret: String | Null
 }
 object Dictkey {
   
-  inline def apply(): Dictkey = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(client_id: String, client_secret: String, pem: String): Dictkey = {
+    val __obj = js.Dynamic.literal(client_id = client_id.asInstanceOf[js.Any], client_secret = client_secret.asInstanceOf[js.Any], pem = pem.asInstanceOf[js.Any], webhook_secret = null)
     __obj.asInstanceOf[Dictkey]
   }
   
   extension [Self <: Dictkey](x: Self) {
     
-    inline def setChecks(value: String): Self = StObject.set(x, "checks", value.asInstanceOf[js.Any])
+    inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
     
-    inline def setChecksUndefined: Self = StObject.set(x, "checks", js.undefined)
+    inline def setClient_secret(value: String): Self = StObject.set(x, "client_secret", value.asInstanceOf[js.Any])
     
-    inline def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+    inline def setPem(value: String): Self = StObject.set(x, "pem", value.asInstanceOf[js.Any])
     
-    inline def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
+    inline def setWebhook_secret(value: String): Self = StObject.set(x, "webhook_secret", value.asInstanceOf[js.Any])
     
-    inline def setDeployments(value: String): Self = StObject.set(x, "deployments", value.asInstanceOf[js.Any])
-    
-    inline def setDeploymentsUndefined: Self = StObject.set(x, "deployments", js.undefined)
-    
-    inline def setIssues(value: String): Self = StObject.set(x, "issues", value.asInstanceOf[js.Any])
-    
-    inline def setIssuesUndefined: Self = StObject.set(x, "issues", js.undefined)
-    
-    inline def setMetadata(value: String): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
-    
-    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setWebhook_secretNull: Self = StObject.set(x, "webhook_secret", null)
   }
 }

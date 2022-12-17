@@ -45,7 +45,7 @@ trait PickImplonCreatePartialPi
   
   def onCreate(url: String): Unit
   @JSName("onCreate")
-  var onCreate_Original: (js.ThisFunction1[/* this */ JQuery, /* url */ String, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* url */ String, Unit]])
+  var onCreate_Original: js.ThisFunction1[/* this */ JQuery, /* url */ String, Unit]
   
   var onDisplay: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
@@ -73,9 +73,7 @@ trait PickImplonCreatePartialPi
 }
 object PickImplonCreatePartialPi {
   
-  inline def apply(
-    onCreate: (js.ThisFunction1[/* this */ JQuery, /* url */ String, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* url */ String, Unit]])
-  ): PickImplonCreatePartialPi = {
+  inline def apply(onCreate: js.ThisFunction1[/* this */ JQuery, /* url */ String, Unit]): PickImplonCreatePartialPi = {
     val __obj = js.Dynamic.literal(onCreate = onCreate.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonCreatePartialPi]
   }
@@ -130,9 +128,7 @@ object PickImplonCreatePartialPi {
     
     inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
-    inline def setOnCreate(
-      value: (js.ThisFunction1[/* this */ JQuery, /* url */ String, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* url */ String, Unit]])
-    ): Self = StObject.set(x, "onCreate", value.asInstanceOf[js.Any])
+    inline def setOnCreate(value: js.ThisFunction1[/* this */ JQuery, /* url */ String, Unit]): Self = StObject.set(x, "onCreate", value.asInstanceOf[js.Any])
     
     inline def setOnDisplay(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onDisplay", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 package typings.awsLambda.triggerS3EventNotificationMod
 
-import typings.awsLambda.anon.Etag
 import typings.awsLambda.anon.NameString
+import typings.awsLambda.anon.Versionid
 import typings.awsLambda.awsLambdaStrings.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +11,7 @@ trait S3ObjectACLUpdatedNotificationEventDetail extends StObject {
   
   var bucket: NameString
   
-  var `object`: Etag
+  var `object`: Versionid
   
   var `request-id`: String
   
@@ -25,7 +25,7 @@ object S3ObjectACLUpdatedNotificationEventDetail {
   
   inline def apply(
     bucket: NameString,
-    `object`: Etag,
+    `object`: Versionid,
     `request-id`: String,
     requester: String,
     `source-ip-address`: String
@@ -41,7 +41,7 @@ object S3ObjectACLUpdatedNotificationEventDetail {
     
     inline def setBucket(value: NameString): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
-    inline def setObject(value: Etag): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: Versionid): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     inline def `setRequest-id`(value: String): Self = StObject.set(x, "request-id", value.asInstanceOf[js.Any])
     

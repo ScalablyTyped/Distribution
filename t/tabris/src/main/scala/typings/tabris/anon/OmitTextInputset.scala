@@ -369,7 +369,7 @@ trait OmitTextInputset extends StObject {
   @JSName("isDisposed")
   var isDisposed_Original: js.Function0[Boolean]
   
-  var jsxAttributes: (JSXAttributes[TextInput, Omit[TextInput, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `3`
+  var jsxAttributes: (JSXAttributes[TextInput, Omit[TextInput, set | typings.tabris.tabrisStrings.jsxAttributes]]) & Children
   
   var keepFocus: Boolean
   
@@ -685,7 +685,7 @@ object OmitTextInputset {
     insertAfter: /* widget */ Widget[Any] => TextInput,
     insertBefore: /* widget */ Widget[Any] => TextInput,
     isDisposed: () => Boolean,
-    jsxAttributes: (JSXAttributes[TextInput, Omit[TextInput, set | jsxAttributes]]) & `3`,
+    jsxAttributes: (JSXAttributes[TextInput, Omit[TextInput, set | jsxAttributes]]) & Children,
     keepFocus: Boolean,
     keyboard: ascii | decimal | default | email | number | numbersAndPunctuation | phone | url,
     keyboardAppearanceMode: never | ontouch | onfocus,
@@ -907,7 +907,7 @@ object OmitTextInputset {
     
     inline def setIsDisposed(value: () => Boolean): Self = StObject.set(x, "isDisposed", js.Any.fromFunction0(value))
     
-    inline def setJsxAttributes(value: (JSXAttributes[TextInput, Omit[TextInput, set | jsxAttributes]]) & `3`): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
+    inline def setJsxAttributes(value: (JSXAttributes[TextInput, Omit[TextInput, set | jsxAttributes]]) & Children): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     
     inline def setKeepFocus(value: Boolean): Self = StObject.set(x, "keepFocus", value.asInstanceOf[js.Any])
     

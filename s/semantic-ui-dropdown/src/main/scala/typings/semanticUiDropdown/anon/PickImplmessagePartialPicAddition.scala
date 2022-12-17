@@ -26,7 +26,7 @@ trait PickImplmessagePartialPicAddition
   
   var menuIcon: js.UndefOr[String] = js.undefined
   
-  var message: String & js.UndefOr[String]
+  var message: String
   
   var remove: js.UndefOr[String] = js.undefined
   
@@ -38,7 +38,7 @@ trait PickImplmessagePartialPicAddition
 }
 object PickImplmessagePartialPicAddition {
   
-  inline def apply(message: String & js.UndefOr[String]): PickImplmessagePartialPicAddition = {
+  inline def apply(message: String): PickImplmessagePartialPicAddition = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmessagePartialPicAddition]
   }
@@ -77,7 +77,7 @@ object PickImplmessagePartialPicAddition {
     
     inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
     
-    inline def setMessage(value: String & js.UndefOr[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     inline def setRemove(value: String): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     

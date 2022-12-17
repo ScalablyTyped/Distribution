@@ -1,6 +1,6 @@
 package typings.reactBootstrapTable.mod
 
-import typings.reactBootstrapTable.anon.Comparator
+import typings.reactBootstrapTable.anon.ComparatorDate
 import typings.reactBootstrapTable.anon.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,7 +18,7 @@ trait DateFilter
   /**
     * Default value for the filter.
     */
-  var defaultValue: js.UndefOr[Comparator] = js.undefined
+  var defaultValue: js.UndefOr[Date] = js.undefined
   
   /**
     * Delay time in milliseconds after the last key press prior to applying the filter. Defaults to 500ms.
@@ -28,7 +28,7 @@ trait DateFilter
   /**
     * CSS Style to use for the select filter.
     */
-  var style: js.UndefOr[Date] = js.undefined
+  var style: js.UndefOr[ComparatorDate] = js.undefined
   
   /**
     * Filter type must be 'DateFilter'
@@ -51,7 +51,7 @@ object DateFilter {
     
     inline def setDateComparatorsVarargs(value: FilterComparator*): Self = StObject.set(x, "dateComparators", js.Array(value*))
     
-    inline def setDefaultValue(value: Comparator): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: Date): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
@@ -59,7 +59,7 @@ object DateFilter {
     
     inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    inline def setStyle(value: Date): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: ComparatorDate): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     

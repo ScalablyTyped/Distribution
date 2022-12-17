@@ -1,7 +1,7 @@
 package typings.mercadopago
 
 import typings.mercadopago.anon.Id
-import typings.mercadopago.anon.IdString
+import typings.mercadopago.anon.IdNumber
 import typings.mercadopago.anon.OmitPhoneextension
 import typings.mercadopago.anon.Type
 import typings.mercadopago.mercadopagoStrings.all_
@@ -43,7 +43,7 @@ object modelsPreferencesCreatePayloadDotmodelMod {
     var date_of_expiration: js.UndefOr[String] = js.undefined
     
     /** Configuração de preço diferencial para esta preferência. */
-    var differential_pricing: js.UndefOr[Id] = js.undefined
+    var differential_pricing: js.UndefOr[IdNumber] = js.undefined
     
     /** Data (ISO_8601) a partir da qual a preferência estará ativa. */
     var expiration_date_from: js.UndefOr[String] = js.undefined
@@ -119,7 +119,7 @@ object modelsPreferencesCreatePayloadDotmodelMod {
       
       inline def setDate_of_expirationUndefined: Self = StObject.set(x, "date_of_expiration", js.undefined)
       
-      inline def setDifferential_pricing(value: Id): Self = StObject.set(x, "differential_pricing", value.asInstanceOf[js.Any])
+      inline def setDifferential_pricing(value: IdNumber): Self = StObject.set(x, "differential_pricing", value.asInstanceOf[js.Any])
       
       inline def setDifferential_pricingUndefined: Self = StObject.set(x, "differential_pricing", js.undefined)
       
@@ -365,10 +365,10 @@ object modelsPreferencesCreatePayloadDotmodelMod {
     var default_payment_method_id: js.UndefOr[String] = js.undefined
     
     /** Métodos de pagamento não são permitidos no fluxo de pagamento (à exceção de account_money). */
-    var excluded_payment_methods: js.UndefOr[js.Array[IdString]] = js.undefined
+    var excluded_payment_methods: js.UndefOr[js.Array[Id]] = js.undefined
     
     /** Tipos de pagamento não são permitidos no fluxo de pagamento. */
-    var excluded_payment_types: js.UndefOr[js.Array[IdString]] = js.undefined
+    var excluded_payment_types: js.UndefOr[js.Array[Id]] = js.undefined
     
     /** Número Máximo de cotas. */
     var installments: js.UndefOr[Double] = js.undefined
@@ -390,17 +390,17 @@ object modelsPreferencesCreatePayloadDotmodelMod {
       
       inline def setDefault_payment_method_idUndefined: Self = StObject.set(x, "default_payment_method_id", js.undefined)
       
-      inline def setExcluded_payment_methods(value: js.Array[IdString]): Self = StObject.set(x, "excluded_payment_methods", value.asInstanceOf[js.Any])
+      inline def setExcluded_payment_methods(value: js.Array[Id]): Self = StObject.set(x, "excluded_payment_methods", value.asInstanceOf[js.Any])
       
       inline def setExcluded_payment_methodsUndefined: Self = StObject.set(x, "excluded_payment_methods", js.undefined)
       
-      inline def setExcluded_payment_methodsVarargs(value: IdString*): Self = StObject.set(x, "excluded_payment_methods", js.Array(value*))
+      inline def setExcluded_payment_methodsVarargs(value: Id*): Self = StObject.set(x, "excluded_payment_methods", js.Array(value*))
       
-      inline def setExcluded_payment_types(value: js.Array[IdString]): Self = StObject.set(x, "excluded_payment_types", value.asInstanceOf[js.Any])
+      inline def setExcluded_payment_types(value: js.Array[Id]): Self = StObject.set(x, "excluded_payment_types", value.asInstanceOf[js.Any])
       
       inline def setExcluded_payment_typesUndefined: Self = StObject.set(x, "excluded_payment_types", js.undefined)
       
-      inline def setExcluded_payment_typesVarargs(value: IdString*): Self = StObject.set(x, "excluded_payment_types", js.Array(value*))
+      inline def setExcluded_payment_typesVarargs(value: Id*): Self = StObject.set(x, "excluded_payment_types", js.Array(value*))
       
       inline def setInstallments(value: Double): Self = StObject.set(x, "installments", value.asInstanceOf[js.Any])
       
@@ -420,7 +420,7 @@ object modelsPreferencesCreatePayloadDotmodelMod {
     var dimensions: js.UndefOr[String] = js.undefined
     
     /** Oferecer um método de frete grátis (mode:me2 somente). */
-    var free_methods: js.UndefOr[js.Array[Id]] = js.undefined
+    var free_methods: js.UndefOr[js.Array[IdNumber]] = js.undefined
     
     /** Preferência de frete grátis para mode:custom. */
     var free_shipping: js.UndefOr[Boolean] = js.undefined
@@ -459,11 +459,11 @@ object modelsPreferencesCreatePayloadDotmodelMod {
       
       inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
       
-      inline def setFree_methods(value: js.Array[Id]): Self = StObject.set(x, "free_methods", value.asInstanceOf[js.Any])
+      inline def setFree_methods(value: js.Array[IdNumber]): Self = StObject.set(x, "free_methods", value.asInstanceOf[js.Any])
       
       inline def setFree_methodsUndefined: Self = StObject.set(x, "free_methods", js.undefined)
       
-      inline def setFree_methodsVarargs(value: Id*): Self = StObject.set(x, "free_methods", js.Array(value*))
+      inline def setFree_methodsVarargs(value: IdNumber*): Self = StObject.set(x, "free_methods", js.Array(value*))
       
       inline def setFree_shipping(value: Boolean): Self = StObject.set(x, "free_shipping", value.asInstanceOf[js.Any])
       

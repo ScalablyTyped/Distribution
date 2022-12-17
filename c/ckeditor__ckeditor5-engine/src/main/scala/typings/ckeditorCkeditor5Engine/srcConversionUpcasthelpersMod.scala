@@ -3,7 +3,7 @@ package typings.ckeditorCkeditor5Engine
 import typings.ckeditorCkeditor5Engine.anon.ModelViewMatcherPattern
 import typings.ckeditorCkeditor5Engine.anon.ViewMatcherPattern
 import typings.ckeditorCkeditor5Engine.anon.ViewString
-import typings.ckeditorCkeditor5Engine.anon.`12`
+import typings.ckeditorCkeditor5Engine.anon.`11`
 import typings.ckeditorCkeditor5Engine.anon.`9`
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.documentFragment
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.element
@@ -152,7 +152,7 @@ object srcConversionUpcasthelpersMod {
       * to the conversion process.
       */
     def attributeToAttribute(): this.type = js.native
-    def attributeToAttribute(config: `12`): this.type = js.native
+    def attributeToAttribute(config: `11`): this.type = js.native
     
     /**
       * View-to-model marker conversion helper.

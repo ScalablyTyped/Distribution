@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.HashMap
 import typings.arcgisJsApi.arcgisJsApiStrings.continuous
 import typings.arcgisJsApi.arcgisJsApiStrings.hourly
 import org.scalablytyped.runtime.StObject
@@ -31,12 +30,8 @@ trait ShadowCastViewModelDurationOptions
 }
 object ShadowCastViewModelDurationOptions {
   
-  inline def apply(
-    set: (js.UndefOr[
-      js.Function2[/* propertyName */ String, /* value */ Any, ShadowCastViewModelDurationOptions]
-    ]) & (js.UndefOr[js.Function1[/* props */ HashMap[Any], ShadowCastViewModelDurationOptions]])
-  ): ShadowCastViewModelDurationOptions = {
-    val __obj = js.Dynamic.literal(set = set.asInstanceOf[js.Any])
+  inline def apply(): ShadowCastViewModelDurationOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShadowCastViewModelDurationOptions]
   }
   

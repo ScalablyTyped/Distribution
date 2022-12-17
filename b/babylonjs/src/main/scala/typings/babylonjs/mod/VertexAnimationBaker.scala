@@ -1,6 +1,5 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.meshesMeshMod.Mesh
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,5 +13,5 @@ open class VertexAnimationBaker protected ()
     * @param scene Defines the scene the VAT belongs to
     * @param mesh Defines the mesh the VAT belongs to
     */
-  def this(scene: typings.babylonjs.sceneMod.Scene, mesh: Mesh) = this()
+  def this(scene: typings.babylonjs.sceneMod.Scene, mesh: typings.babylonjs.meshesMeshMod.Mesh) = this()
 }

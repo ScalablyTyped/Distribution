@@ -28,7 +28,7 @@ trait PickImpldetachablePartial
   
   var debug: js.UndefOr[Boolean] = js.undefined
   
-  var detachable: Boolean & js.UndefOr[Boolean]
+  var detachable: Boolean
   
   var dimmerSettings: js.UndefOr[DimmerSettings] = js.undefined
   
@@ -72,7 +72,7 @@ trait PickImpldetachablePartial
 }
 object PickImpldetachablePartial {
   
-  inline def apply(detachable: Boolean & js.UndefOr[Boolean]): PickImpldetachablePartial = {
+  inline def apply(detachable: Boolean): PickImpldetachablePartial = {
     val __obj = js.Dynamic.literal(detachable = detachable.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldetachablePartial]
   }
@@ -103,7 +103,7 @@ object PickImpldetachablePartial {
     
     inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    inline def setDetachable(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "detachable", value.asInstanceOf[js.Any])
+    inline def setDetachable(value: Boolean): Self = StObject.set(x, "detachable", value.asInstanceOf[js.Any])
     
     inline def setDimmerSettings(value: DimmerSettings): Self = StObject.set(x, "dimmerSettings", value.asInstanceOf[js.Any])
     

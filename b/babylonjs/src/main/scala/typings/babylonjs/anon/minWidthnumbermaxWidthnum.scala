@@ -25,7 +25,7 @@ trait minWidthnumbermaxWidthnum extends StObject {
   var channelCount: js.UndefOr[ConstrainULong] = js.undefined
   
   /* standard dom */
-  var deviceId: String & js.UndefOr[ConstrainDOMString]
+  var deviceId: String
   
   /* standard dom */
   var echoCancellation: js.UndefOr[ConstrainBoolean] = js.undefined
@@ -70,13 +70,7 @@ trait minWidthnumbermaxWidthnum extends StObject {
 }
 object minWidthnumbermaxWidthnum {
   
-  inline def apply(
-    deviceId: String & js.UndefOr[ConstrainDOMString],
-    maxHeight: Double,
-    maxWidth: Double,
-    minHeight: Double,
-    minWidth: Double
-  ): minWidthnumbermaxWidthnum = {
+  inline def apply(deviceId: String, maxHeight: Double, maxWidth: Double, minHeight: Double, minWidth: Double): minWidthnumbermaxWidthnum = {
     val __obj = js.Dynamic.literal(deviceId = deviceId.asInstanceOf[js.Any], maxHeight = maxHeight.asInstanceOf[js.Any], maxWidth = maxWidth.asInstanceOf[js.Any], minHeight = minHeight.asInstanceOf[js.Any], minWidth = minWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[minWidthnumbermaxWidthnum]
   }
@@ -101,7 +95,7 @@ object minWidthnumbermaxWidthnum {
     
     inline def setChannelCountUndefined: Self = StObject.set(x, "channelCount", js.undefined)
     
-    inline def setDeviceId(value: String & js.UndefOr[ConstrainDOMString]): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
     inline def setEchoCancellation(value: ConstrainBoolean): Self = StObject.set(x, "echoCancellation", value.asInstanceOf[js.Any])
     

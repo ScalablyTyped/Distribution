@@ -10,15 +10,11 @@ trait RequestBodyContentApplicationjsonPrivate extends StObject {
   
   var requestBody: ContentApplicationjsonPrivate
   
-  var responses: `201ContentApplicationjsonCommentscount`
+  var responses: `201Content109`
 }
 object RequestBodyContentApplicationjsonPrivate {
   
-  inline def apply(
-    parameters: PathTeamslug,
-    requestBody: ContentApplicationjsonPrivate,
-    responses: `201ContentApplicationjsonCommentscount`
-  ): RequestBodyContentApplicationjsonPrivate = {
+  inline def apply(parameters: PathTeamslug, requestBody: ContentApplicationjsonPrivate, responses: `201Content109`): RequestBodyContentApplicationjsonPrivate = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyContentApplicationjsonPrivate]
   }
@@ -29,6 +25,6 @@ object RequestBodyContentApplicationjsonPrivate {
     
     inline def setRequestBody(value: ContentApplicationjsonPrivate): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `201ContentApplicationjsonCommentscount`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `201Content109`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

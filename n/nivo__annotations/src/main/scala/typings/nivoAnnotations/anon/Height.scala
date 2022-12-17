@@ -73,7 +73,7 @@ object Height {
     
     inline def setNote(value: typings.nivoAnnotations.distTypesTypesMod.Note[Datum]): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
-    inline def setNoteFunction1(value: /* props */ XY[Datum] => Element): Self = StObject.set(x, "note", js.Any.fromFunction1(value))
+    inline def setNoteFunction1(value: /* props */ DatumX[Datum] => Element): Self = StObject.set(x, "note", js.Any.fromFunction1(value))
     
     inline def setNoteFunction2(value: (/* ctx */ CanvasRenderingContext2D, /* props */ Theme[Datum]) => Unit): Self = StObject.set(x, "note", js.Any.fromFunction2(value))
     

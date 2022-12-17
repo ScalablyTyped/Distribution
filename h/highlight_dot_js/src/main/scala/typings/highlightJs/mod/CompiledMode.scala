@@ -1,7 +1,5 @@
 package typings.highlightJs.mod
 
-import typings.highlightJs.highlightJsBooleans.`true`
-import typings.highlightJs.privateMod.KeywordDict
 import typings.std.Record
 import typings.std.RegExpMatchArray
 import org.scalablytyped.runtime.StObject
@@ -13,13 +11,13 @@ trait CompiledMode extends StObject {
   
   var __beforeBegin: js.UndefOr[js.Function] = js.undefined
   
-  var begin: (js.UndefOr[js.RegExp | String | (js.Array[js.RegExp | String])]) & (js.UndefOr[js.RegExp | String])
+  var begin: js.UndefOr[js.RegExp | String | (js.Array[js.RegExp | String])] = js.undefined
   
   var beginKeywords: js.UndefOr[String] = js.undefined
   
   var beginRe: js.RegExp
   
-  var beginScope: (js.UndefOr[String | (Record[Double, String])]) & js.UndefOr[CompiledScope]
+  var beginScope: js.UndefOr[String | (Record[Double, String])] = js.undefined
   
   var cachedVariants: js.UndefOr[js.Array[Mode]] = js.undefined
   
@@ -29,13 +27,13 @@ trait CompiledMode extends StObject {
   
   var data: Record[String, Any]
   
-  var end: (js.UndefOr[js.RegExp | String | (js.Array[js.RegExp | String])]) & (js.UndefOr[js.RegExp | String])
+  var end: js.UndefOr[js.RegExp | String | (js.Array[js.RegExp | String])] = js.undefined
   
   var endRe: js.RegExp
   
   var endSameAsBegin: js.UndefOr[Boolean] = js.undefined
   
-  var endScope: (js.UndefOr[String | (Record[Double, String])]) & js.UndefOr[CompiledScope]
+  var endScope: js.UndefOr[String | (Record[Double, String])] = js.undefined
   
   var endsParent: js.UndefOr[Boolean] = js.undefined
   
@@ -49,11 +47,11 @@ trait CompiledMode extends StObject {
   
   var illegalRe: js.RegExp
   
-  var isCompiled: js.UndefOr[Boolean] & `true`
+  var isCompiled: js.UndefOr[Boolean] = js.undefined
   
   var keywordPatternRe: js.RegExp
   
-  var keywords: (js.UndefOr[(Record[String, Any]) | String]) & KeywordDict
+  var keywords: js.UndefOr[(Record[String, Any]) | String] = js.undefined
   
   var label: js.UndefOr[String] = js.undefined
   
@@ -69,7 +67,7 @@ trait CompiledMode extends StObject {
   @JSName("on:end")
   var onColonend: js.UndefOr[js.Function] = js.undefined
   
-  var parent: js.UndefOr[Mode] & js.UndefOr[CompiledMode]
+  var parent: js.UndefOr[Mode] = js.undefined
   
   var relevance: js.UndefOr[Double] = js.undefined
   
@@ -77,11 +75,11 @@ trait CompiledMode extends StObject {
   
   var returnEnd: js.UndefOr[Boolean] = js.undefined
   
-  var scope: (js.UndefOr[String | (Record[Double, String])]) & js.UndefOr[String]
+  var scope: js.UndefOr[String | (Record[Double, String])] = js.undefined
   
   var skip: js.UndefOr[Boolean] = js.undefined
   
-  var starts: js.UndefOr[Mode] & js.UndefOr[CompiledMode]
+  var starts: js.UndefOr[Mode] = js.undefined
   
   var subLanguage: js.UndefOr[String | js.Array[String]] = js.undefined
   
@@ -92,33 +90,22 @@ trait CompiledMode extends StObject {
 object CompiledMode {
   
   inline def apply(
-    begin: (js.UndefOr[js.RegExp | String | (js.Array[js.RegExp | String])]) & (js.UndefOr[js.RegExp | String]),
     beginRe: js.RegExp,
-    beginScope: (js.UndefOr[String | (Record[Double, String])]) & js.UndefOr[CompiledScope],
     contains: js.Array[CompiledMode],
     data: Record[String, Any],
-    end: (js.UndefOr[js.RegExp | String | (js.Array[js.RegExp | String])]) & (js.UndefOr[js.RegExp | String]),
     endRe: js.RegExp,
-    endScope: (js.UndefOr[String | (Record[Double, String])]) & js.UndefOr[CompiledScope],
     illegalRe: js.RegExp,
-    isCompiled: js.UndefOr[Boolean] & `true`,
     keywordPatternRe: js.RegExp,
-    keywords: (js.UndefOr[(Record[String, Any]) | String]) & KeywordDict,
     matcher: Any,
-    parent: js.UndefOr[Mode] & js.UndefOr[CompiledMode],
-    scope: (js.UndefOr[String | (Record[Double, String])]) & js.UndefOr[String],
-    starts: js.UndefOr[Mode] & js.UndefOr[CompiledMode],
     terminatorEnd: String
   ): CompiledMode = {
-    val __obj = js.Dynamic.literal(begin = begin.asInstanceOf[js.Any], beginRe = beginRe.asInstanceOf[js.Any], beginScope = beginScope.asInstanceOf[js.Any], contains = contains.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], endRe = endRe.asInstanceOf[js.Any], endScope = endScope.asInstanceOf[js.Any], illegalRe = illegalRe.asInstanceOf[js.Any], isCompiled = isCompiled.asInstanceOf[js.Any], keywordPatternRe = keywordPatternRe.asInstanceOf[js.Any], keywords = keywords.asInstanceOf[js.Any], matcher = matcher.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], starts = starts.asInstanceOf[js.Any], terminatorEnd = terminatorEnd.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(beginRe = beginRe.asInstanceOf[js.Any], contains = contains.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], endRe = endRe.asInstanceOf[js.Any], illegalRe = illegalRe.asInstanceOf[js.Any], keywordPatternRe = keywordPatternRe.asInstanceOf[js.Any], matcher = matcher.asInstanceOf[js.Any], terminatorEnd = terminatorEnd.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompiledMode]
   }
   
   extension [Self <: CompiledMode](x: Self) {
     
-    inline def setBegin(
-      value: (js.UndefOr[js.RegExp | String | (js.Array[js.RegExp | String])]) & (js.UndefOr[js.RegExp | String])
-    ): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
+    inline def setBegin(value: js.RegExp | String | (js.Array[js.RegExp | String])): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
     
     inline def setBeginKeywords(value: String): Self = StObject.set(x, "beginKeywords", value.asInstanceOf[js.Any])
     
@@ -126,7 +113,13 @@ object CompiledMode {
     
     inline def setBeginRe(value: js.RegExp): Self = StObject.set(x, "beginRe", value.asInstanceOf[js.Any])
     
-    inline def setBeginScope(value: (js.UndefOr[String | (Record[Double, String])]) & js.UndefOr[CompiledScope]): Self = StObject.set(x, "beginScope", value.asInstanceOf[js.Any])
+    inline def setBeginScope(value: String | (Record[Double, String])): Self = StObject.set(x, "beginScope", value.asInstanceOf[js.Any])
+    
+    inline def setBeginScopeUndefined: Self = StObject.set(x, "beginScope", js.undefined)
+    
+    inline def setBeginUndefined: Self = StObject.set(x, "begin", js.undefined)
+    
+    inline def setBeginVarargs(value: (js.RegExp | String)*): Self = StObject.set(x, "begin", js.Array(value*))
     
     inline def setCachedVariants(value: js.Array[Mode]): Self = StObject.set(x, "cachedVariants", value.asInstanceOf[js.Any])
     
@@ -144,9 +137,7 @@ object CompiledMode {
     
     inline def setData(value: Record[String, Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setEnd(
-      value: (js.UndefOr[js.RegExp | String | (js.Array[js.RegExp | String])]) & (js.UndefOr[js.RegExp | String])
-    ): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: js.RegExp | String | (js.Array[js.RegExp | String])): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     inline def setEndRe(value: js.RegExp): Self = StObject.set(x, "endRe", value.asInstanceOf[js.Any])
     
@@ -154,7 +145,13 @@ object CompiledMode {
     
     inline def setEndSameAsBeginUndefined: Self = StObject.set(x, "endSameAsBegin", js.undefined)
     
-    inline def setEndScope(value: (js.UndefOr[String | (Record[Double, String])]) & js.UndefOr[CompiledScope]): Self = StObject.set(x, "endScope", value.asInstanceOf[js.Any])
+    inline def setEndScope(value: String | (Record[Double, String])): Self = StObject.set(x, "endScope", value.asInstanceOf[js.Any])
+    
+    inline def setEndScopeUndefined: Self = StObject.set(x, "endScope", js.undefined)
+    
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    
+    inline def setEndVarargs(value: (js.RegExp | String)*): Self = StObject.set(x, "end", js.Array(value*))
     
     inline def setEndsParent(value: Boolean): Self = StObject.set(x, "endsParent", value.asInstanceOf[js.Any])
     
@@ -180,11 +177,15 @@ object CompiledMode {
     
     inline def setIllegalVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "illegal", js.Array(value*))
     
-    inline def setIsCompiled(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "isCompiled", value.asInstanceOf[js.Any])
+    inline def setIsCompiled(value: Boolean): Self = StObject.set(x, "isCompiled", value.asInstanceOf[js.Any])
+    
+    inline def setIsCompiledUndefined: Self = StObject.set(x, "isCompiled", js.undefined)
     
     inline def setKeywordPatternRe(value: js.RegExp): Self = StObject.set(x, "keywordPatternRe", value.asInstanceOf[js.Any])
     
-    inline def setKeywords(value: (js.UndefOr[(Record[String, Any]) | String]) & KeywordDict): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
+    inline def setKeywords(value: (Record[String, Any]) | String): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
+    
+    inline def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
@@ -210,7 +211,9 @@ object CompiledMode {
     
     inline def setOnColonendUndefined: Self = StObject.set(x, "on:end", js.undefined)
     
-    inline def setParent(value: js.UndefOr[Mode] & js.UndefOr[CompiledMode]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Mode): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     inline def setRelevance(value: Double): Self = StObject.set(x, "relevance", value.asInstanceOf[js.Any])
     
@@ -224,13 +227,17 @@ object CompiledMode {
     
     inline def setReturnEndUndefined: Self = StObject.set(x, "returnEnd", js.undefined)
     
-    inline def setScope(value: (js.UndefOr[String | (Record[Double, String])]) & js.UndefOr[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String | (Record[Double, String])): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     inline def setSkip(value: Boolean): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     
     inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
     
-    inline def setStarts(value: js.UndefOr[Mode] & js.UndefOr[CompiledMode]): Self = StObject.set(x, "starts", value.asInstanceOf[js.Any])
+    inline def setStarts(value: Mode): Self = StObject.set(x, "starts", value.asInstanceOf[js.Any])
+    
+    inline def setStartsUndefined: Self = StObject.set(x, "starts", js.undefined)
     
     inline def setSubLanguage(value: String | js.Array[String]): Self = StObject.set(x, "subLanguage", value.asInstanceOf[js.Any])
     

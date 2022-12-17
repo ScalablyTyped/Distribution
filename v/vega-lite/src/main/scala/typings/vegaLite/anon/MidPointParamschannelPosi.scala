@@ -1,7 +1,5 @@
 package typings.vegaLite.anon
 
-import typings.vegaLite.buildSrcChannelMod.PolarPositionChannel
-import typings.vegaLite.buildSrcChannelMod.PositionChannel
 import typings.vegaLite.buildSrcChanneldefMod.ChannelDef
 import typings.vegaLite.buildSrcChanneldefMod.FieldDefWithoutScale
 import typings.vegaLite.buildSrcChanneldefMod.OrderFieldDef
@@ -21,7 +19,7 @@ trait MidPointParamschannelPosi extends StObject {
   
   var bandPosition: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var channel: typings.vegaLite.buildSrcChannelMod.Channel & (PositionChannel | PolarPositionChannel)
+  var channel: typings.vegaLite.buildSrcChannelMod.Channel
   
   var channel2Def: js.UndefOr[SecondaryChannelDef[String]] = js.undefined
   
@@ -44,7 +42,7 @@ trait MidPointParamschannelPosi extends StObject {
 object MidPointParamschannelPosi {
   
   inline def apply(
-    channel: typings.vegaLite.buildSrcChannelMod.Channel & (PositionChannel | PolarPositionChannel),
+    channel: typings.vegaLite.buildSrcChannelMod.Channel,
     config: typings.vegaLite.buildSrcConfigMod.Config[SignalRef],
     defaultRef: VgValueRef | js.Function0[VgValueRef],
     markDef: typings.vegaLite.buildSrcMarkMod.MarkDef[typings.vegaLite.buildSrcMarkMod.Mark, SignalRef],
@@ -61,7 +59,7 @@ object MidPointParamschannelPosi {
     
     inline def setBandPositionUndefined: Self = StObject.set(x, "bandPosition", js.undefined)
     
-    inline def setChannel(value: typings.vegaLite.buildSrcChannelMod.Channel & (PositionChannel | PolarPositionChannel)): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: typings.vegaLite.buildSrcChannelMod.Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
     inline def setChannel2Def(value: SecondaryChannelDef[String]): Self = StObject.set(x, "channel2Def", value.asInstanceOf[js.Any])
     

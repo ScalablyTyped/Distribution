@@ -12,11 +12,11 @@ trait PickImplminPartialPickImp
   
   var max: js.UndefOr[Double] = js.undefined
   
-  var min: Double & js.UndefOr[Double]
+  var min: Double
 }
 object PickImplminPartialPickImp {
   
-  inline def apply(min: Double & js.UndefOr[Double]): PickImplminPartialPickImp = {
+  inline def apply(min: Double): PickImplminPartialPickImp = {
     val __obj = js.Dynamic.literal(min = min.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplminPartialPickImp]
   }
@@ -27,6 +27,6 @@ object PickImplminPartialPickImp {
     
     inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    inline def setMin(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
   }
 }

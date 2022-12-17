@@ -63,7 +63,7 @@ type All = Globals
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.DataType.SingleAnimation[TTime]
   - java.lang.String
 */
-type Animation[TTime] = _Animation[TTime] | String | (Double & js.Object) | TTime
+type Animation[TTime] = _Animation[TTime] | String | TTime | Double
 
 type AnimationDelay[TTime] = Globals | TTime | String
 
@@ -87,9 +87,9 @@ type AnimationFillMode = _AnimationFillMode | String
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Globals
   - typings.storybookTheming.storybookThemingStrings.infinite
   - java.lang.String
-  - scala.Double & js.Object
+  - scala.Double
 */
-type AnimationIterationCount = _AnimationIterationCount | (Double & js.Object) | String
+type AnimationIterationCount = _AnimationIterationCount | String | Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Globals
@@ -388,11 +388,11 @@ type BorderEndStartRadius[TLength] = Globals | TLength | String
   - typings.storybookTheming.storybookThemingStrings.space
   - typings.storybookTheming.storybookThemingStrings.stretch
   - java.lang.String
-  - scala.Double & js.Object
+  - scala.Double
 */
-type BorderImage = _BorderImage | (Double & js.Object) | String
+type BorderImage = _BorderImage | String | Double
 
-type BorderImageOutset[TLength] = Globals | TLength | String | (Double & js.Object)
+type BorderImageOutset[TLength] = Globals | TLength | String | Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Globals
@@ -404,7 +404,7 @@ type BorderImageOutset[TLength] = Globals | TLength | String | (Double & js.Obje
 */
 type BorderImageRepeat = _BorderImageRepeat | String
 
-type BorderImageSlice = Globals | String | (Double & js.Object)
+type BorderImageSlice = Globals | String | Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Globals
@@ -418,9 +418,9 @@ type BorderImageSource = _BorderImageSource | String
   - TLength
   - typings.storybookTheming.storybookThemingStrings.auto
   - java.lang.String
-  - scala.Double & js.Object
+  - scala.Double
 */
-type BorderImageWidth[TLength] = _BorderImageWidth[TLength] | (Double & js.Object) | TLength | String
+type BorderImageWidth[TLength] = _BorderImageWidth[TLength] | TLength | String | Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Globals
@@ -583,11 +583,11 @@ type BorderWidth[TLength] = _BorderWidth[TLength] | String | TLength
 */
 type Bottom[TLength] = _Bottom[TLength] | TLength | String
 
-type BoxFlex = Globals | (Double & js.Object) | String
+type BoxFlex = Globals | Double | String
 
-type BoxFlexGroup = Globals | (Double & js.Object) | String
+type BoxFlexGroup = Globals | Double | String
 
-type BoxOrdinalGroup = Globals | (Double & js.Object) | String
+type BoxOrdinalGroup = Globals | Double | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Globals
@@ -636,10 +636,10 @@ type ColorScheme = _ColorScheme | String
 /* Rewritten from type alias, can be one of: 
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Globals
   - typings.storybookTheming.storybookThemingStrings.auto
-  - scala.Double & js.Object
+  - scala.Double
   - java.lang.String
 */
-type ColumnCount = _ColumnCount | (Double & js.Object) | String
+type ColumnCount = _ColumnCount | Double | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Globals
@@ -690,9 +690,9 @@ type ColumnWidth[TLength] = _ColumnWidth[TLength] | TLength
   - TLength
   - typings.storybookTheming.storybookThemingStrings.auto
   - java.lang.String
-  - scala.Double & js.Object
+  - scala.Double
 */
-type Columns[TLength] = _Columns[TLength] | (Double & js.Object) | TLength | String
+type Columns[TLength] = _Columns[TLength] | TLength | String | Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Globals
@@ -800,7 +800,7 @@ type Display = _Display | String
 */
 type Fill = _Fill | String
 
-type FillOpacity = Globals | (Double & js.Object) | String
+type FillOpacity = Globals | Double | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Globals
@@ -819,9 +819,9 @@ type Filter = _Filter | String
   - typings.storybookTheming.storybookThemingStrings.`min-content`
   - typings.storybookTheming.storybookThemingStrings.none
   - java.lang.String
-  - scala.Double & js.Object
+  - scala.Double
 */
-type Flex[TLength] = _Flex[TLength] | (Double & js.Object) | TLength | String
+type Flex[TLength] = _Flex[TLength] | TLength | String | Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Globals
@@ -851,9 +851,9 @@ type FlexBasis[TLength] = _FlexBasis[TLength] | TLength | String
 */
 type FlexFlow = _FlexFlow | String
 
-type FlexGrow = Globals | (Double & js.Object) | String
+type FlexGrow = Globals | Double | String
 
-type FlexShrink = Globals | (Double & js.Object) | String
+type FlexShrink = Globals | Double | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Globals
@@ -862,7 +862,7 @@ type FlexShrink = Globals | (Double & js.Object) | String
 */
 type FloodColor = _FloodColor | String
 
-type FloodOpacity = Globals | (Double & js.Object) | String
+type FloodOpacity = Globals | Double | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Globals
@@ -912,9 +912,9 @@ type FontSize[TLength] = _FontSize[TLength] | TLength | String
   - typings.storybookTheming.storybookThemingStrings.`from-font`
   - typings.storybookTheming.storybookThemingStrings.none
   - java.lang.String
-  - scala.Double & js.Object
+  - scala.Double
 */
-type FontSizeAdjust = _FontSizeAdjust | (Double & js.Object) | String
+type FontSizeAdjust = _FontSizeAdjust | String | Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Globals
@@ -1049,7 +1049,7 @@ type FontVariationSettings = _FontVariationSettings | String
   - typings.storybookTheming.storybookThemingStrings.bolder
   - typings.storybookTheming.storybookThemingStrings.lighter
 */
-type FontWeight = _FontWeight | (Double & js.Object) | String
+type FontWeight = _FontWeight | Double | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Globals
@@ -1063,9 +1063,9 @@ type Gap[TLength] = _Gap[TLength] | TLength | String
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Globals
   - typings.storybookTheming.storybookThemingStrings.auto
   - java.lang.String
-  - scala.Double & js.Object
+  - scala.Double
 */
-type GlyphOrientationVertical = _GlyphOrientationVertical | (Double & js.Object) | String
+type GlyphOrientationVertical = _GlyphOrientationVertical | String | Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Globals
@@ -1193,9 +1193,9 @@ type ImageResolution = _ImageResolution | String
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Globals
   - typings.storybookTheming.storybookThemingStrings.normal
   - java.lang.String
-  - scala.Double & js.Object
+  - scala.Double
 */
-type InitialLetter = _InitialLetter | (Double & js.Object) | String
+type InitialLetter = _InitialLetter | String | Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Globals
@@ -1341,19 +1341,19 @@ type LightingColor = _LightingColor | String
 /* Rewritten from type alias, can be one of: 
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Globals
   - typings.storybookTheming.storybookThemingStrings.none
-  - scala.Double & js.Object
+  - scala.Double
   - java.lang.String
 */
-type LineClamp = _LineClamp | (Double & js.Object) | String
+type LineClamp = _LineClamp | Double | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Globals
   - TLength
   - typings.storybookTheming.storybookThemingStrings.normal
   - java.lang.String
-  - scala.Double & js.Object
+  - scala.Double
 */
-type LineHeight[TLength] = _LineHeight[TLength] | (Double & js.Object) | TLength | String
+type LineHeight[TLength] = _LineHeight[TLength] | TLength | String | Double
 
 type LineHeightStep[TLength] = Globals | TLength
 
@@ -1513,11 +1513,11 @@ type Mask[TLength] = _Mask[TLength] | String | TLength
   - typings.storybookTheming.storybookThemingStrings.space
   - typings.storybookTheming.storybookThemingStrings.stretch
   - java.lang.String
-  - scala.Double & js.Object
+  - scala.Double
 */
-type MaskBorder = _MaskBorder | (Double & js.Object) | String
+type MaskBorder = _MaskBorder | String | Double
 
-type MaskBorderOutset[TLength] = Globals | TLength | String | (Double & js.Object)
+type MaskBorderOutset[TLength] = Globals | TLength | String | Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Globals
@@ -1529,7 +1529,7 @@ type MaskBorderOutset[TLength] = Globals | TLength | String | (Double & js.Objec
 */
 type MaskBorderRepeat = _MaskBorderRepeat | String
 
-type MaskBorderSlice = Globals | String | (Double & js.Object)
+type MaskBorderSlice = Globals | String | Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Globals
@@ -1543,9 +1543,9 @@ type MaskBorderSource = _MaskBorderSource | String
   - TLength
   - typings.storybookTheming.storybookThemingStrings.auto
   - java.lang.String
-  - scala.Double & js.Object
+  - scala.Double
 */
-type MaskBorderWidth[TLength] = _MaskBorderWidth[TLength] | (Double & js.Object) | TLength | String
+type MaskBorderWidth[TLength] = _MaskBorderWidth[TLength] | TLength | String | Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Globals
@@ -1654,10 +1654,10 @@ type MaxInlineSize[TLength] = _MaxInlineSize[TLength] | TLength | String
 /* Rewritten from type alias, can be one of: 
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Globals
   - typings.storybookTheming.storybookThemingStrings.none
-  - scala.Double & js.Object
+  - scala.Double
   - java.lang.String
 */
-type MaxLines = _MaxLines | (Double & js.Object) | String
+type MaxLines = _MaxLines | Double | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Globals
@@ -1872,17 +1872,17 @@ type MsGridRows[TLength] = _MsGridRows[TLength] | String | TLength
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Globals
   - typings.storybookTheming.storybookThemingStrings.auto
   - java.lang.String
-  - scala.Double & js.Object
+  - scala.Double
 */
-type MsHyphenateLimitChars = _MsHyphenateLimitChars | (Double & js.Object) | String
+type MsHyphenateLimitChars = _MsHyphenateLimitChars | String | Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Globals
   - typings.storybookTheming.storybookThemingStrings.`no-limit`
-  - scala.Double & js.Object
+  - scala.Double
   - java.lang.String
 */
-type MsHyphenateLimitLines = _MsHyphenateLimitLines | (Double & js.Object) | String
+type MsHyphenateLimitLines = _MsHyphenateLimitLines | Double | String
 
 type MsHyphenateLimitZone[TLength] = Globals | TLength | String
 
@@ -2005,11 +2005,11 @@ type OffsetPath = _OffsetPath | String
 */
 type OffsetRotate = _OffsetRotate | String
 
-type Opacity = Globals | String | (Double & js.Object)
+type Opacity = Globals | String | Double
 
-type Order = Globals | (Double & js.Object) | String
+type Order = Globals | Double | String
 
-type Orphans = Globals | (Double & js.Object) | String
+type Orphans = Globals | Double | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Globals
@@ -2195,9 +2195,9 @@ type RubyPosition = _RubyPosition | String
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Globals
   - typings.storybookTheming.storybookThemingStrings.none
   - java.lang.String
-  - scala.Double & js.Object
+  - scala.Double
 */
-type Scale = _Scale | (Double & js.Object) | String
+type Scale = _Scale | String | Double
 
 type ScrollMargin[TLength] = Globals | TLength | String
 
@@ -2374,7 +2374,7 @@ type ScrollbarColor = _ScrollbarColor | String
 */
 type ScrollbarGutter = _ScrollbarGutter | String
 
-type ShapeImageThreshold = Globals | String | (Double & js.Object)
+type ShapeImageThreshold = Globals | String | Double
 
 type ShapeMargin[TLength] = Globals | TLength | String
 
@@ -2394,7 +2394,7 @@ type ShapeOutside = _ShapeOutside | String
 */
 type StopColor = _StopColor | String
 
-type StopOpacity = Globals | (Double & js.Object) | String
+type StopOpacity = Globals | Double | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Globals
@@ -2411,13 +2411,13 @@ type StrokeDasharray[TLength] = _StrokeDasharray[TLength] | Dasharray[TLength]
 
 type StrokeDashoffset[TLength] = Globals | TLength | String
 
-type StrokeMiterlimit = Globals | (Double & js.Object) | String
+type StrokeMiterlimit = Globals | Double | String
 
-type StrokeOpacity = Globals | (Double & js.Object) | String
+type StrokeOpacity = Globals | Double | String
 
 type StrokeWidth[TLength] = Globals | TLength | String
 
-type TabSize[TLength] = Globals | TLength | (Double & js.Object) | String
+type TabSize[TLength] = Globals | TLength | Double | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Globals
@@ -2709,10 +2709,10 @@ type WebkitBoxReflect[TLength] = _WebkitBoxReflect[TLength] | TLength | String
 /* Rewritten from type alias, can be one of: 
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Globals
   - typings.storybookTheming.storybookThemingStrings.none
-  - scala.Double & js.Object
+  - scala.Double
   - java.lang.String
 */
-type WebkitLineClamp = _WebkitLineClamp | (Double & js.Object) | String
+type WebkitLineClamp = _WebkitLineClamp | Double | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Globals
@@ -2839,7 +2839,7 @@ type WebkitTextStrokeColor = _WebkitTextStrokeColor | String
 
 type WebkitTextStrokeWidth[TLength] = Globals | TLength
 
-type Widows = Globals | (Double & js.Object) | String
+type Widows = Globals | Double | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Globals
@@ -2877,16 +2877,16 @@ type WordSpacing[TLength] = _WordSpacing[TLength] | TLength
 /* Rewritten from type alias, can be one of: 
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Globals
   - typings.storybookTheming.storybookThemingStrings.auto
-  - scala.Double & js.Object
+  - scala.Double
   - java.lang.String
 */
-type ZIndex = _ZIndex | (Double & js.Object) | String
+type ZIndex = _ZIndex | Double | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Globals
   - typings.storybookTheming.storybookThemingStrings.normal
   - typings.storybookTheming.storybookThemingStrings.reset
   - java.lang.String
-  - scala.Double & js.Object
+  - scala.Double
 */
-type Zoom = _Zoom | (Double & js.Object) | String
+type Zoom = _Zoom | String | Double

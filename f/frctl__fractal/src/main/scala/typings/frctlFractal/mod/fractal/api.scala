@@ -2,7 +2,7 @@ package typings.frctlFractal.mod.fractal
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.frctlFractal.anon.Alias
-import typings.frctlFractal.anon.HandleString
+import typings.frctlFractal.anon.Handle
 import typings.frctlFractal.frctlFractalBooleans.`true`
 import typings.frctlFractal.mod.fractal.api.assets.AssetCollection
 import typings.frctlFractal.mod.fractal.api.components.Component
@@ -184,7 +184,7 @@ object api {
       inline def create(config: js.Object, files: FileCollection, resources: AssetCollection, parent: Entity): IterableIterator[js.Object | VariantCollection | Component] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], files.asInstanceOf[js.Any], resources.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[js.Object | VariantCollection | Component]]
     }
     
-    type Collator = js.Function2[/* markup */ String, /* item */ HandleString, String]
+    type Collator = js.Function2[/* markup */ String, /* item */ Handle, String]
     
     @js.native
     trait ComponentCollection extends EntityCollection[Component] {
@@ -246,7 +246,7 @@ object api {
         
         inline def setDefaultDotcollatedUndefined: Self = StObject.set(x, "default.collated", js.undefined)
         
-        inline def setDefaultDotcollator(value: (/* markup */ String, /* item */ HandleString) => String): Self = StObject.set(x, "default.collator", js.Any.fromFunction2(value))
+        inline def setDefaultDotcollator(value: (/* markup */ String, /* item */ Handle) => String): Self = StObject.set(x, "default.collator", js.Any.fromFunction2(value))
         
         inline def setDefaultDotcollatorUndefined: Self = StObject.set(x, "default.collator", js.undefined)
         
@@ -327,7 +327,7 @@ object api {
         
         inline def setCollatedUndefined: Self = StObject.set(x, "collated", js.undefined)
         
-        inline def setCollator(value: (/* markup */ String, /* item */ HandleString) => String): Self = StObject.set(x, "collator", js.Any.fromFunction2(value))
+        inline def setCollator(value: (/* markup */ String, /* item */ Handle) => String): Self = StObject.set(x, "collator", js.Any.fromFunction2(value))
         
         inline def setCollatorUndefined: Self = StObject.set(x, "collator", js.undefined)
         

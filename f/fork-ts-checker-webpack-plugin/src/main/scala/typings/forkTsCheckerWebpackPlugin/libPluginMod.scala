@@ -1,5 +1,8 @@
 package typings.forkTsCheckerWebpackPlugin
 
+import typings.forkTsCheckerWebpackPlugin.anon.Canceled
+import typings.forkTsCheckerWebpackPlugin.libPluginOptionsMod.ForkTsCheckerWebpackPluginOptions
+import typings.forkTsCheckerWebpackPlugin.libUtilsAsyncPoolMod.Pool
 import typings.webpack.mod.Compiler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -7,25 +10,52 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libPluginMod {
   
-  trait ForkTsCheckerWebpackPlugin extends StObject {
+  @JSImport("fork-ts-checker-webpack-plugin/lib/plugin", "ForkTsCheckerWebpackPlugin")
+  @js.native
+  open class ForkTsCheckerWebpackPlugin () extends StObject {
+    def this(options: ForkTsCheckerWebpackPluginOptions) = this()
     
     @JSName("apply")
-    def apply(compiler: Compiler): Unit
+    def apply(compiler: Compiler): Unit = js.native
     
-    /* private */ val options: Any
+    /* private */ val options: Any = js.native
   }
   object ForkTsCheckerWebpackPlugin {
     
-    inline def apply(apply: Compiler => Unit, options: Any): ForkTsCheckerWebpackPlugin = {
-      val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), options = options.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ForkTsCheckerWebpackPlugin]
-    }
+    @JSImport("fork-ts-checker-webpack-plugin/lib/plugin", "ForkTsCheckerWebpackPlugin")
+    @js.native
+    val ^ : js.Any = js.native
     
-    extension [Self <: ForkTsCheckerWebpackPlugin](x: Self) {
-      
-      inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
-      
-      inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
-    }
+    /* static member */
+    @JSImport("fork-ts-checker-webpack-plugin/lib/plugin", "ForkTsCheckerWebpackPlugin.dependenciesPool")
+    @js.native
+    val dependenciesPool: Pool = js.native
+    
+    /* static member */
+    inline def getCompilerHooks(compiler: Compiler): Canceled = ^.asInstanceOf[js.Dynamic].applyDynamic("getCompilerHooks")(compiler.asInstanceOf[js.Any]).asInstanceOf[Canceled]
+    
+    /**
+      * Default pools for the plugin concurrency limit
+      */
+    /* static member */
+    @JSImport("fork-ts-checker-webpack-plugin/lib/plugin", "ForkTsCheckerWebpackPlugin.issuesPool")
+    @js.native
+    val issuesPool: Pool = js.native
+    
+    /**
+      * @deprecated Use ForkTsCheckerWebpackPlugin.issuesPool instead
+      */
+    /* static member */
+    @JSImport("fork-ts-checker-webpack-plugin/lib/plugin", "ForkTsCheckerWebpackPlugin.pool")
+    @js.native
+    val pool: Pool = js.native
+    
+    /**
+      * Current version of the plugin
+      */
+    /* static member */
+    @JSImport("fork-ts-checker-webpack-plugin/lib/plugin", "ForkTsCheckerWebpackPlugin.version")
+    @js.native
+    val version: String = js.native
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait EnvironmentsTotalcount extends StObject {
   
-  var environments: js.UndefOr[js.Array[Protectionrules]] = js.undefined
+  var environments: js.UndefOr[js.Array[CreatedatDeploymentbranchpolicy]] = js.undefined
   
   /**
     * @description The number of environments in this repository
@@ -23,11 +23,11 @@ object EnvironmentsTotalcount {
   
   extension [Self <: EnvironmentsTotalcount](x: Self) {
     
-    inline def setEnvironments(value: js.Array[Protectionrules]): Self = StObject.set(x, "environments", value.asInstanceOf[js.Any])
+    inline def setEnvironments(value: js.Array[CreatedatDeploymentbranchpolicy]): Self = StObject.set(x, "environments", value.asInstanceOf[js.Any])
     
     inline def setEnvironmentsUndefined: Self = StObject.set(x, "environments", js.undefined)
     
-    inline def setEnvironmentsVarargs(value: Protectionrules*): Self = StObject.set(x, "environments", js.Array(value*))
+    inline def setEnvironmentsVarargs(value: CreatedatDeploymentbranchpolicy*): Self = StObject.set(x, "environments", js.Array(value*))
     
     inline def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
     

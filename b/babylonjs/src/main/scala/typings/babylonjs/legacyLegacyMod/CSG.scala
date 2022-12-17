@@ -1,6 +1,5 @@
 package typings.babylonjs.legacyLegacyMod
 
-import typings.babylonjs.meshesMeshMod.Mesh
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,8 +21,8 @@ object CSG {
     * @param absolute If true, the final (local) matrix transformation is set to the identity and not to that of `mesh`. It can help when dealing with right-handed meshes (default: false)
     * @returns A new CSG from the Mesh
     */
-  inline def FromMesh(mesh: Mesh): typings.babylonjs.meshesCsgMod.CSG = ^.asInstanceOf[js.Dynamic].applyDynamic("FromMesh")(mesh.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesCsgMod.CSG]
-  inline def FromMesh(mesh: Mesh, absolute: Boolean): typings.babylonjs.meshesCsgMod.CSG = (^.asInstanceOf[js.Dynamic].applyDynamic("FromMesh")(mesh.asInstanceOf[js.Any], absolute.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesCsgMod.CSG]
+  inline def FromMesh(mesh: typings.babylonjs.meshesMeshMod.Mesh): typings.babylonjs.meshesCsgMod.CSG = ^.asInstanceOf[js.Dynamic].applyDynamic("FromMesh")(mesh.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesCsgMod.CSG]
+  inline def FromMesh(mesh: typings.babylonjs.meshesMeshMod.Mesh, absolute: Boolean): typings.babylonjs.meshesCsgMod.CSG = (^.asInstanceOf[js.Dynamic].applyDynamic("FromMesh")(mesh.asInstanceOf[js.Any], absolute.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesCsgMod.CSG]
   
   /**
     * Construct a CSG solid from a list of `CSG.Polygon` instances.

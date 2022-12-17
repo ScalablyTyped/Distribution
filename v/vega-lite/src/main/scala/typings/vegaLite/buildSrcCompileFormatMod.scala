@@ -48,9 +48,9 @@ object buildSrcCompileFormatMod {
     config: Config[ExprRef | SignalRef]
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("binFormatExpression")(startField.asInstanceOf[js.Any], endField.asInstanceOf[js.Any], format.asInstanceOf[js.Any], formatType.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def formatCustomType(param0: Expr): Signal = ^.asInstanceOf[js.Dynamic].applyDynamic("formatCustomType")(param0.asInstanceOf[js.Any]).asInstanceOf[Signal]
+  inline def formatCustomType(param0: NormalizeStack): Signal = ^.asInstanceOf[js.Dynamic].applyDynamic("formatCustomType")(param0.asInstanceOf[js.Any]).asInstanceOf[Signal]
   
-  inline def formatSignalRef(param0: NormalizeStack): Signal = ^.asInstanceOf[js.Dynamic].applyDynamic("formatSignalRef")(param0.asInstanceOf[js.Any]).asInstanceOf[Signal]
+  inline def formatSignalRef(param0: Expr): Signal = ^.asInstanceOf[js.Dynamic].applyDynamic("formatSignalRef")(param0.asInstanceOf[js.Any]).asInstanceOf[Signal]
   
   inline def guideFormat(
     fieldOrDatumDef: DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef],

@@ -1,11 +1,11 @@
 package typings.chevrotainGast
 
 import typings.chevrotainGast.anon.Definition
+import typings.chevrotainGast.anon.HasPredicates
 import typings.chevrotainGast.anon.Idx
 import typings.chevrotainGast.anon.IgnoreAmbiguities
 import typings.chevrotainGast.anon.Label
 import typings.chevrotainGast.anon.MaxLookahead
-import typings.chevrotainGast.anon.Name
 import typings.chevrotainGast.anon.Separator
 import typings.chevrotainTypes.mod.IGASTVisitor
 import typings.chevrotainTypes.mod.IProduction
@@ -43,7 +43,7 @@ object libSrcModelMod {
   open class Alternation protected ()
     extends AbstractProduction[Alternative]
        with IProductionWithOccurrence {
-    def this(options: Definition) = this()
+    def this(options: HasPredicates) = this()
     
     /* CompleteClass */
     override def accept(visitor: IGASTVisitor): Unit = js.native
@@ -71,7 +71,7 @@ object libSrcModelMod {
   open class NonTerminal protected ()
     extends AbstractProduction[IProduction]
        with IProductionWithOccurrence {
-    def this(options: Idx) = this()
+    def this(options: Label) = this()
     
     /* CompleteClass */
     override def accept(visitor: IGASTVisitor): Unit = js.native
@@ -175,7 +175,7 @@ object libSrcModelMod {
   @JSImport("@chevrotain/gast/lib/src/model", "Rule")
   @js.native
   open class Rule protected () extends AbstractProduction[IProduction] {
-    def this(options: Name) = this()
+    def this(options: Definition) = this()
     
     var name: String = js.native
     
@@ -187,7 +187,7 @@ object libSrcModelMod {
   open class Terminal protected ()
     extends StObject
        with IProductionWithOccurrence {
-    def this(options: Label) = this()
+    def this(options: Idx) = this()
     
     /* CompleteClass */
     override def accept(visitor: IGASTVisitor): Unit = js.native

@@ -23,7 +23,7 @@ trait PickImplcontinuousPartial
   
   var context: js.UndefOr[String | JQuery] = js.undefined
   
-  var continuous: Boolean & js.UndefOr[Boolean]
+  var continuous: Boolean
   
   var debug: js.UndefOr[Boolean] = js.undefined
   
@@ -103,7 +103,7 @@ trait PickImplcontinuousPartial
 }
 object PickImplcontinuousPartial {
   
-  inline def apply(continuous: Boolean & js.UndefOr[Boolean]): PickImplcontinuousPartial = {
+  inline def apply(continuous: Boolean): PickImplcontinuousPartial = {
     val __obj = js.Dynamic.literal(continuous = continuous.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplcontinuousPartial]
   }
@@ -122,7 +122,7 @@ object PickImplcontinuousPartial {
     
     inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    inline def setContinuous(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
+    inline def setContinuous(value: Boolean): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
     
     inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     

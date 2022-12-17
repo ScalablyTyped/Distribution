@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.HashMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,10 +31,8 @@ trait SceneViewConstraints
 }
 object SceneViewConstraints {
   
-  inline def apply(
-    set: (js.UndefOr[js.Function2[/* propertyName */ String, /* value */ Any, SceneViewConstraints]]) & (js.UndefOr[js.Function1[/* props */ HashMap[Any], SceneViewConstraints]])
-  ): SceneViewConstraints = {
-    val __obj = js.Dynamic.literal(set = set.asInstanceOf[js.Any])
+  inline def apply(): SceneViewConstraints = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SceneViewConstraints]
   }
   

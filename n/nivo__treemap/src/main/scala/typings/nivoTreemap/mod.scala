@@ -123,7 +123,7 @@ object mod {
     
     @JSImport("@nivo/treemap", "canvasDefaultProps.label")
     @js.native
-    def label: PropertyAccessor[OmitComputedNodeWithoutSt, String] = js.native
+    def label: PropertyAccessor[OmitComputedNodeWithoutStData, String] = js.native
     
     @JSImport("@nivo/treemap", "canvasDefaultProps.labelSkipSize")
     @js.native
@@ -135,7 +135,7 @@ object mod {
     def labelTextColor: InheritedColorConfig[ComputedNodeWithoutStyles] = js.native
     inline def labelTextColor_=(x: InheritedColorConfig[ComputedNodeWithoutStyles]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("labelTextColor")(x.asInstanceOf[js.Any])
     
-    inline def label_=(x: PropertyAccessor[OmitComputedNodeWithoutSt, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("label")(x.asInstanceOf[js.Any])
+    inline def label_=(x: PropertyAccessor[OmitComputedNodeWithoutStData, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("label")(x.asInstanceOf[js.Any])
     
     @JSImport("@nivo/treemap", "canvasDefaultProps.layers")
     @js.native
@@ -169,7 +169,7 @@ object mod {
     
     @JSImport("@nivo/treemap", "canvasDefaultProps.parentLabel")
     @js.native
-    def parentLabel: PropertyAccessor[OmitComputedNodeWithoutStData, String] = js.native
+    def parentLabel: PropertyAccessor[OmitComputedNodeWithoutSt, String] = js.native
     
     @JSImport("@nivo/treemap", "canvasDefaultProps.parentLabelPadding")
     @js.native
@@ -191,7 +191,7 @@ object mod {
     def parentLabelTextColor: InheritedColorConfig[ComputedNodeWithoutStyles] = js.native
     inline def parentLabelTextColor_=(x: InheritedColorConfig[ComputedNodeWithoutStyles]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parentLabelTextColor")(x.asInstanceOf[js.Any])
     
-    inline def parentLabel_=(x: PropertyAccessor[OmitComputedNodeWithoutStData, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parentLabel")(x.asInstanceOf[js.Any])
+    inline def parentLabel_=(x: PropertyAccessor[OmitComputedNodeWithoutSt, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parentLabel")(x.asInstanceOf[js.Any])
     
     @JSImport("@nivo/treemap", "canvasDefaultProps.pixelRatio")
     @js.native
@@ -290,7 +290,7 @@ object mod {
     
     @JSImport("@nivo/treemap", "commonDefaultProps.label")
     @js.native
-    def label: PropertyAccessor[OmitComputedNodeWithoutSt, String] = js.native
+    def label: PropertyAccessor[OmitComputedNodeWithoutStData, String] = js.native
     
     @JSImport("@nivo/treemap", "commonDefaultProps.labelSkipSize")
     @js.native
@@ -302,7 +302,7 @@ object mod {
     def labelTextColor: InheritedColorConfig[ComputedNodeWithoutStyles] = js.native
     inline def labelTextColor_=(x: InheritedColorConfig[ComputedNodeWithoutStyles]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("labelTextColor")(x.asInstanceOf[js.Any])
     
-    inline def label_=(x: PropertyAccessor[OmitComputedNodeWithoutSt, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("label")(x.asInstanceOf[js.Any])
+    inline def label_=(x: PropertyAccessor[OmitComputedNodeWithoutStData, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("label")(x.asInstanceOf[js.Any])
     
     @JSImport("@nivo/treemap", "commonDefaultProps.layers")
     @js.native
@@ -342,7 +342,7 @@ object mod {
     
     @JSImport("@nivo/treemap", "commonDefaultProps.parentLabel")
     @js.native
-    def parentLabel: PropertyAccessor[OmitComputedNodeWithoutStData, String] = js.native
+    def parentLabel: PropertyAccessor[OmitComputedNodeWithoutSt, String] = js.native
     
     @JSImport("@nivo/treemap", "commonDefaultProps.parentLabelPadding")
     @js.native
@@ -364,7 +364,7 @@ object mod {
     def parentLabelTextColor: InheritedColorConfig[ComputedNodeWithoutStyles] = js.native
     inline def parentLabelTextColor_=(x: InheritedColorConfig[ComputedNodeWithoutStyles]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parentLabelTextColor")(x.asInstanceOf[js.Any])
     
-    inline def parentLabel_=(x: PropertyAccessor[OmitComputedNodeWithoutStData, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parentLabel")(x.asInstanceOf[js.Any])
+    inline def parentLabel_=(x: PropertyAccessor[OmitComputedNodeWithoutSt, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parentLabel")(x.asInstanceOf[js.Any])
     
     @JSImport("@nivo/treemap", "commonDefaultProps.role")
     @js.native
@@ -457,7 +457,7 @@ object mod {
     
     @JSImport("@nivo/treemap", "htmlDefaultProps.label")
     @js.native
-    def label: PropertyAccessor[OmitComputedNodeWithoutSt, String] = js.native
+    def label: PropertyAccessor[OmitComputedNodeWithoutStData, String] = js.native
     
     @JSImport("@nivo/treemap", "htmlDefaultProps.labelSkipSize")
     @js.native
@@ -469,7 +469,7 @@ object mod {
     def labelTextColor: InheritedColorConfig[ComputedNodeWithoutStyles] = js.native
     inline def labelTextColor_=(x: InheritedColorConfig[ComputedNodeWithoutStyles]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("labelTextColor")(x.asInstanceOf[js.Any])
     
-    inline def label_=(x: PropertyAccessor[OmitComputedNodeWithoutSt, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("label")(x.asInstanceOf[js.Any])
+    inline def label_=(x: PropertyAccessor[OmitComputedNodeWithoutStData, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("label")(x.asInstanceOf[js.Any])
     
     @JSImport("@nivo/treemap", "htmlDefaultProps.layers")
     @js.native
@@ -505,7 +505,7 @@ object mod {
     
     @JSImport("@nivo/treemap", "htmlDefaultProps.parentLabel")
     @js.native
-    def parentLabel: PropertyAccessor[OmitComputedNodeWithoutStData, String] = js.native
+    def parentLabel: PropertyAccessor[OmitComputedNodeWithoutSt, String] = js.native
     
     @JSImport("@nivo/treemap", "htmlDefaultProps.parentLabelPadding")
     @js.native
@@ -527,7 +527,7 @@ object mod {
     def parentLabelTextColor: InheritedColorConfig[ComputedNodeWithoutStyles] = js.native
     inline def parentLabelTextColor_=(x: InheritedColorConfig[ComputedNodeWithoutStyles]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parentLabelTextColor")(x.asInstanceOf[js.Any])
     
-    inline def parentLabel_=(x: PropertyAccessor[OmitComputedNodeWithoutStData, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parentLabel")(x.asInstanceOf[js.Any])
+    inline def parentLabel_=(x: PropertyAccessor[OmitComputedNodeWithoutSt, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parentLabel")(x.asInstanceOf[js.Any])
     
     @JSImport("@nivo/treemap", "htmlDefaultProps.role")
     @js.native
@@ -647,7 +647,7 @@ object mod {
     
     @JSImport("@nivo/treemap", "svgDefaultProps.label")
     @js.native
-    def label: PropertyAccessor[OmitComputedNodeWithoutSt, String] = js.native
+    def label: PropertyAccessor[OmitComputedNodeWithoutStData, String] = js.native
     
     @JSImport("@nivo/treemap", "svgDefaultProps.labelSkipSize")
     @js.native
@@ -659,7 +659,7 @@ object mod {
     def labelTextColor: InheritedColorConfig[ComputedNodeWithoutStyles] = js.native
     inline def labelTextColor_=(x: InheritedColorConfig[ComputedNodeWithoutStyles]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("labelTextColor")(x.asInstanceOf[js.Any])
     
-    inline def label_=(x: PropertyAccessor[OmitComputedNodeWithoutSt, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("label")(x.asInstanceOf[js.Any])
+    inline def label_=(x: PropertyAccessor[OmitComputedNodeWithoutStData, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("label")(x.asInstanceOf[js.Any])
     
     @JSImport("@nivo/treemap", "svgDefaultProps.layers")
     @js.native
@@ -695,7 +695,7 @@ object mod {
     
     @JSImport("@nivo/treemap", "svgDefaultProps.parentLabel")
     @js.native
-    def parentLabel: PropertyAccessor[OmitComputedNodeWithoutStData, String] = js.native
+    def parentLabel: PropertyAccessor[OmitComputedNodeWithoutSt, String] = js.native
     
     @JSImport("@nivo/treemap", "svgDefaultProps.parentLabelPadding")
     @js.native
@@ -717,7 +717,7 @@ object mod {
     def parentLabelTextColor: InheritedColorConfig[ComputedNodeWithoutStyles] = js.native
     inline def parentLabelTextColor_=(x: InheritedColorConfig[ComputedNodeWithoutStyles]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parentLabelTextColor")(x.asInstanceOf[js.Any])
     
-    inline def parentLabel_=(x: PropertyAccessor[OmitComputedNodeWithoutStData, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parentLabel")(x.asInstanceOf[js.Any])
+    inline def parentLabel_=(x: PropertyAccessor[OmitComputedNodeWithoutSt, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parentLabel")(x.asInstanceOf[js.Any])
     
     @JSImport("@nivo/treemap", "svgDefaultProps.role")
     @js.native

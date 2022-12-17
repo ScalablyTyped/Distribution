@@ -49,7 +49,7 @@ trait PickImpldataPartialPickIm
   
   var className: js.UndefOr[ClassNameSettings] = js.undefined
   
-  var data: Any & js.UndefOr[Any]
+  var data: Any
   
   var dataType: js.UndefOr[xml | json | jsonp | script | html | text] = js.undefined
   
@@ -147,7 +147,7 @@ trait PickImpldataPartialPickIm
 }
 object PickImpldataPartialPickIm {
   
-  inline def apply(data: Any & js.UndefOr[Any]): PickImpldataPartialPickIm = {
+  inline def apply(data: Any): PickImpldataPartialPickIm = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldataPartialPickIm]
   }
@@ -178,7 +178,7 @@ object PickImpldataPartialPickIm {
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    inline def setData(value: Any & js.UndefOr[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataType(value: xml | json | jsonp | script | html | text): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     

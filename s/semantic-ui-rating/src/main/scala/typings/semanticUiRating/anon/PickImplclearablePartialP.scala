@@ -17,7 +17,7 @@ trait PickImplclearablePartialP
   
   var className: js.UndefOr[ClassNameSettings] = js.undefined
   
-  var clearable: (auto | Boolean) & (js.UndefOr[auto | Boolean])
+  var clearable: auto | Boolean
   
   var debug: js.UndefOr[Boolean] = js.undefined
   
@@ -45,7 +45,7 @@ trait PickImplclearablePartialP
 }
 object PickImplclearablePartialP {
   
-  inline def apply(clearable: (auto | Boolean) & (js.UndefOr[auto | Boolean])): PickImplclearablePartialP = {
+  inline def apply(clearable: auto | Boolean): PickImplclearablePartialP = {
     val __obj = js.Dynamic.literal(clearable = clearable.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplclearablePartialP]
   }
@@ -56,7 +56,7 @@ object PickImplclearablePartialP {
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    inline def setClearable(value: (auto | Boolean) & (js.UndefOr[auto | Boolean])): Self = StObject.set(x, "clearable", value.asInstanceOf[js.Any])
+    inline def setClearable(value: auto | Boolean): Self = StObject.set(x, "clearable", value.asInstanceOf[js.Any])
     
     inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     

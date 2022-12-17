@@ -5,7 +5,7 @@ import typings.antd.anon.Fn1
 import typings.antd.anon.FnCall_
 import typings.antd.anon.ScrollToFirstRowOnChange
 import typings.antd.anon.TypeofSummary
-import typings.antd.anon.`5`
+import typings.antd.anon.`4`
 import typings.antd.antdBooleans.`false`
 import typings.antd.antdStrings.SELECT_ALL
 import typings.antd.antdStrings.SELECT_INVERT
@@ -59,7 +59,7 @@ object libTableTableMod extends Shortcut {
   @js.native
   trait InternalTableType extends StObject {
     
-    def apply[RecordType /* <: js.Object */](props: `5` & TableProps[RecordType]): ReactElement = js.native
+    def apply[RecordType /* <: js.Object */](props: `4` & TableProps[RecordType]): ReactElement = js.native
   }
   
   @js.native

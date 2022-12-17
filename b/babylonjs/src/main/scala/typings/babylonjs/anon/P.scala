@@ -24,8 +24,6 @@ trait P extends StObject {
   var tube: js.UndefOr[Double] = js.undefined
   
   var tubularSegments: js.UndefOr[Double] = js.undefined
-  
-  var updatable: js.UndefOr[Boolean] = js.undefined
 }
 object P {
   
@@ -71,9 +69,5 @@ object P {
     inline def setTubularSegments(value: Double): Self = StObject.set(x, "tubularSegments", value.asInstanceOf[js.Any])
     
     inline def setTubularSegmentsUndefined: Self = StObject.set(x, "tubularSegments", js.undefined)
-    
-    inline def setUpdatable(value: Boolean): Self = StObject.set(x, "updatable", value.asInstanceOf[js.Any])
-    
-    inline def setUpdatableUndefined: Self = StObject.set(x, "updatable", js.undefined)
   }
 }

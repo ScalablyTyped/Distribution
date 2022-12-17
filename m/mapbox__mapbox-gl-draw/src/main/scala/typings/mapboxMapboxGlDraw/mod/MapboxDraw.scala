@@ -61,7 +61,7 @@ trait MapboxDraw
   
   def getFeatureIdsAt(point: X): js.Array[String] = js.native
   
-  def getMode(): (DrawMode & js.Object) | String = js.native
+  def getMode(): DrawMode | String = js.native
   
   def getSelected(): FeatureCollection[Geometry, GeoJsonProperties] = js.native
   

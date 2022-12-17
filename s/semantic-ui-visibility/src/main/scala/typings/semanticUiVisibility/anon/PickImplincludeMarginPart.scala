@@ -31,7 +31,7 @@ trait PickImplincludeMarginPart
   
   var error: js.UndefOr[ErrorSettings] = js.undefined
   
-  var includeMargin: Boolean & js.UndefOr[Boolean]
+  var includeMargin: Boolean
   
   var initialCheck: js.UndefOr[Boolean] = js.undefined
   
@@ -103,7 +103,7 @@ trait PickImplincludeMarginPart
 }
 object PickImplincludeMarginPart {
   
-  inline def apply(includeMargin: Boolean & js.UndefOr[Boolean]): PickImplincludeMarginPart = {
+  inline def apply(includeMargin: Boolean): PickImplincludeMarginPart = {
     val __obj = js.Dynamic.literal(includeMargin = includeMargin.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplincludeMarginPart]
   }
@@ -138,7 +138,7 @@ object PickImplincludeMarginPart {
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    inline def setIncludeMargin(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "includeMargin", value.asInstanceOf[js.Any])
+    inline def setIncludeMargin(value: Boolean): Self = StObject.set(x, "includeMargin", value.asInstanceOf[js.Any])
     
     inline def setInitialCheck(value: Boolean): Self = StObject.set(x, "initialCheck", value.asInstanceOf[js.Any])
     

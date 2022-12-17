@@ -65,7 +65,7 @@ trait PickImplselectorPartialPi
   
   var regExp: js.UndefOr[RegExpSettings] = js.undefined
   
-  var selector: SelectorSettings & js.UndefOr[SelectorSettings]
+  var selector: SelectorSettings
   
   var showActivity: js.UndefOr[Boolean] = js.undefined
   
@@ -81,7 +81,7 @@ trait PickImplselectorPartialPi
 }
 object PickImplselectorPartialPi {
   
-  inline def apply(selector: SelectorSettings & js.UndefOr[SelectorSettings]): PickImplselectorPartialPi = {
+  inline def apply(selector: SelectorSettings): PickImplselectorPartialPi = {
     val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplselectorPartialPi]
   }
@@ -162,7 +162,7 @@ object PickImplselectorPartialPi {
     
     inline def setRegExpUndefined: Self = StObject.set(x, "regExp", js.undefined)
     
-    inline def setSelector(value: SelectorSettings & js.UndefOr[SelectorSettings]): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: SelectorSettings): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     inline def setShowActivity(value: Boolean): Self = StObject.set(x, "showActivity", value.asInstanceOf[js.Any])
     

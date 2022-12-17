@@ -1,7 +1,7 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antd.anon.`1`
+import typings.antd.anon.`0`
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,7 +13,7 @@ object libBreadcrumbBreadcrumbSeparatorMod extends Shortcut {
   @js.native
   val default: BreadcrumbSeparatorInterface = js.native
   
-  type BreadcrumbSeparatorInterface = FC[`1`]
+  type BreadcrumbSeparatorInterface = FC[`0`]
   
   type _To = BreadcrumbSeparatorInterface
   

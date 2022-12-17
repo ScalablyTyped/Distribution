@@ -2,7 +2,6 @@ package typings.parcelTypes.anon
 
 import typings.parcelSourceMap.mod.default
 import typings.parcelTypes.mod.Async
-import typings.parcelTypes.mod.Blob
 import typings.parcelTypes.mod.NamedBundle
 import typings.parcelTypes.mod.PluginLogger
 import typings.parcelTypes.mod.PluginOptions
@@ -21,14 +20,12 @@ trait BundleConfig[ConfigType, BundleConfigType] extends StObject {
   
   var config: ConfigType = js.native
   
-  var contents: Blob = js.native
+  def getInlineBundleContents(arg0: typings.parcelTypes.mod.Bundle, arg1: typings.parcelTypes.mod.BundleGraph[NamedBundle]): Async[Contents] = js.native
   
   def getSourceMapReference(): Async[js.UndefOr[String | Null]] = js.native
   def getSourceMapReference(map: default): Async[js.UndefOr[String | Null]] = js.native
   
   var logger: PluginLogger = js.native
-  
-  var map: js.UndefOr[default | Null] = js.native
   
   var options: PluginOptions = js.native
 }

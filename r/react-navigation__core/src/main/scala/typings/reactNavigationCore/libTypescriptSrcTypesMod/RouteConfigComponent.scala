@@ -1,7 +1,7 @@
 package typings.reactNavigationCore.libTypescriptSrcTypesMod
 
 import typings.react.mod.ReactNode
-import typings.reactNavigationCore.anon.NavigationRoute
+import typings.reactNavigationCore.anon.Route
 import typings.reactNavigationRouters.libTypescriptSrcTypesMod.ParamListBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RouteConfigComponent[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] extends StObject
 object RouteConfigComponent {
   
-  inline def ChildrenComponent[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */](children: NavigationRoute[ParamList, RouteName] => ReactNode): typings.reactNavigationCore.anon.ChildrenComponent[ParamList, RouteName] = {
+  inline def ChildrenComponent[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */](children: Route[ParamList, RouteName] => ReactNode): typings.reactNavigationCore.anon.ChildrenComponent[ParamList, RouteName] = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
     __obj.asInstanceOf[typings.reactNavigationCore.anon.ChildrenComponent[ParamList, RouteName]]
   }

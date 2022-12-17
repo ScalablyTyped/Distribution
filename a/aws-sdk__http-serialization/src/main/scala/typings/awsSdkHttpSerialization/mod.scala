@@ -27,11 +27,11 @@ object mod {
     
     var body: js.UndefOr[Any] = js.undefined
     
-    var headers: js.UndefOr[HeaderBag] & HeaderBag
+    var headers: js.UndefOr[HeaderBag] = js.undefined
     
     var hostname: js.UndefOr[String] = js.undefined
     
-    var method: js.UndefOr[String] & String
+    var method: js.UndefOr[String] = js.undefined
     
     var path: js.UndefOr[String] = js.undefined
     
@@ -43,8 +43,8 @@ object mod {
   }
   object DerivedHttpRequest {
     
-    inline def apply(headers: js.UndefOr[HeaderBag] & HeaderBag, method: js.UndefOr[String] & String): DerivedHttpRequest = {
-      val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
+    inline def apply(): DerivedHttpRequest = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DerivedHttpRequest]
     }
     
@@ -54,13 +54,17 @@ object mod {
       
       inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      inline def setHeaders(value: js.UndefOr[HeaderBag] & HeaderBag): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: HeaderBag): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
       inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
       inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
       
-      inline def setMethod(value: js.UndefOr[String] & String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       

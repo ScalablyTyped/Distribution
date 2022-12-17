@@ -16,7 +16,6 @@ import typings.std.DOMRectList
 import typings.std.DOMStringMap
 import typings.std.DOMTokenList
 import typings.std.Document
-import typings.std.DocumentFragment
 import typings.std.DragEvent
 import typings.std.Element
 import typings.std.ElementInternals
@@ -235,7 +234,7 @@ trait PropsHTMLTemplateElementc extends StObject {
   
   var contains: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
-  var content: (js.UndefOr[Content | js.Array[Content]]) & js.UndefOr[DocumentFragment]
+  var content: js.UndefOr[Content | js.Array[Content]] = js.undefined
   
   var contentEditable: js.UndefOr[String] = js.undefined
   
@@ -671,8 +670,8 @@ trait PropsHTMLTemplateElementc extends StObject {
 }
 object PropsHTMLTemplateElementc {
   
-  inline def apply(content: (js.UndefOr[Content | js.Array[Content]]) & js.UndefOr[DocumentFragment]): PropsHTMLTemplateElementc = {
-    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
+  inline def apply(): PropsHTMLTemplateElementc = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PropsHTMLTemplateElementc]
   }
   
@@ -1048,11 +1047,15 @@ object PropsHTMLTemplateElementc {
     
     inline def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
     
-    inline def setContent(value: (js.UndefOr[Content | js.Array[Content]]) & js.UndefOr[DocumentFragment]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Content | js.Array[Content]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setContentEditable(value: String): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
     inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    
+    inline def setContentVarargs(value: Content*): Self = StObject.set(x, "content", js.Array(value*))
     
     inline def setDOCUMENT_FRAGMENT_NODE(value: Double): Self = StObject.set(x, "DOCUMENT_FRAGMENT_NODE", value.asInstanceOf[js.Any])
     

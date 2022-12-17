@@ -29,13 +29,13 @@ trait PickImplrightArrowPartial
   
   var pageUp: js.UndefOr[Double] = js.undefined
   
-  var rightArrow: Double & js.UndefOr[Double]
+  var rightArrow: Double
   
   var upArrow: js.UndefOr[Double] = js.undefined
 }
 object PickImplrightArrowPartial {
   
-  inline def apply(rightArrow: Double & js.UndefOr[Double]): PickImplrightArrowPartial = {
+  inline def apply(rightArrow: Double): PickImplrightArrowPartial = {
     val __obj = js.Dynamic.literal(rightArrow = rightArrow.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplrightArrowPartial]
   }
@@ -78,7 +78,7 @@ object PickImplrightArrowPartial {
     
     inline def setPageUpUndefined: Self = StObject.set(x, "pageUp", js.undefined)
     
-    inline def setRightArrow(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "rightArrow", value.asInstanceOf[js.Any])
+    inline def setRightArrow(value: Double): Self = StObject.set(x, "rightArrow", value.asInstanceOf[js.Any])
     
     inline def setUpArrow(value: Double): Self = StObject.set(x, "upArrow", value.asInstanceOf[js.Any])
     

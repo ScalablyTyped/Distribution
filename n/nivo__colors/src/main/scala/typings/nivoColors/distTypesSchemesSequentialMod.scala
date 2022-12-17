@@ -295,7 +295,7 @@ object distTypesSchemesSequentialMod {
     inline def yellowOrangeRed_=(x: js.Array[js.Array[String]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("yellow_orange_red")(x.asInstanceOf[js.Any])
   }
   
-  /* keyof @nivo/colors.anon.Bluegreen */ /* Rewritten from type alias, can be one of: 
+  /* keyof @nivo/colors.anon.Bluepurple */ /* Rewritten from type alias, can be one of: 
     - typings.nivoColors.nivoColorsStrings.blues
     - typings.nivoColors.nivoColorsStrings.greens
     - typings.nivoColors.nivoColorsStrings.greys
@@ -328,7 +328,7 @@ object distTypesSchemesSequentialMod {
     extends StObject
        with ColorInterpolatorId
   
-  /* keyof @nivo/colors.anon.Bluepurple */ /* Rewritten from type alias, can be one of: 
+  /* keyof @nivo/colors.anon.Bluegreen */ /* Rewritten from type alias, can be one of: 
     - typings.nivoColors.nivoColorsStrings.blues
     - typings.nivoColors.nivoColorsStrings.greens
     - typings.nivoColors.nivoColorsStrings.greys

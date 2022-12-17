@@ -12,7 +12,6 @@ import typings.redux.mod.Action
 import typings.redux.mod.Dispatch
 import typings.reduxDevtools.libCreateDevToolsMod.Monitor
 import typings.reduxDevtoolsDockMonitor.libActionsMod.DockMonitorAction
-import typings.reduxDevtoolsDockMonitor.libDockMonitorMod.DefaultProps
 import typings.reduxDevtoolsDockMonitor.libDockMonitorMod.ExternalProps
 import typings.reduxDevtoolsDockMonitor.libReducersMod.DockMonitorState
 import typings.reduxDevtoolsDockMonitor.reduxDevtoolsDockMonitorStrings.bottom
@@ -46,7 +45,7 @@ object anon {
     
     var contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
     
-    var defaultProps: js.UndefOr[PartialExternalPropsunkno] & DefaultProps = js.native
+    var defaultProps: js.UndefOr[PartialExternalPropsunkno] = js.native
     
     var displayName: js.UndefOr[String] = js.native
     
@@ -69,7 +68,7 @@ object anon {
     
     var contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
     
-    var defaultProps: js.UndefOr[PartialExternalPropsunkno] & DefaultProps = js.native
+    var defaultProps: js.UndefOr[PartialExternalPropsunkno] = js.native
     
     var displayName: js.UndefOr[String] = js.native
     

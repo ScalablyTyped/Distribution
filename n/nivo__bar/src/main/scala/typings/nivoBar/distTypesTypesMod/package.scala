@@ -1,8 +1,8 @@
 package typings.nivoBar.distTypesTypesMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.nivoBar.anon.Data
 import typings.nivoBar.anon.Partialkeystringxnumberyn
-import typings.nivoBar.anon.`0`
 import typings.nivoBar.nivoBarStrings.markers
 import typings.react.mod.FC
 import typings.std.CanvasRenderingContext2D
@@ -25,7 +25,7 @@ type BarDatum = StringDictionary[String | Double]
 
 type BarLayer[RawDatum] = BarLayerId | BarCustomLayer[RawDatum]
 
-type BarsWithHidden[RawDatum] = js.Array[Partialkeystringxnumberyn & `0`[RawDatum]]
+type BarsWithHidden[RawDatum] = js.Array[Partialkeystringxnumberyn & Data[RawDatum]]
 
 type LabelFormatter = js.Function1[/* label */ String | Double, String | Double]
 

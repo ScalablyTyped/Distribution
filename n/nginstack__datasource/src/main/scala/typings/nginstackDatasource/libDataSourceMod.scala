@@ -31,12 +31,22 @@ object libDataSourceMod {
   @js.native
   val ^ : js.Any = js.native
   
+  object ColumnOps {
+    
+    @JSImport("@nginstack/datasource/lib/DataSource", "ColumnOps.DERIVATION")
+    @js.native
+    val DERIVATION: String = js.native
+    
+    @JSImport("@nginstack/datasource/lib/DataSource", "ColumnOps.DIMENSION")
+    @js.native
+    val DIMENSION: String = js.native
+  }
+  type ColumnOps = String
+  
   inline def list(): typings.nginstackEngine.libDatasetDataSetMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[typings.nginstackEngine.libDatasetDataSetMod.^]
   
   inline def loadDefinitionFile(fileId: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("loadDefinitionFile")(fileId.asInstanceOf[js.Any]).asInstanceOf[Any]
   inline def loadDefinitionFile(fileId: Double): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("loadDefinitionFile")(fileId.asInstanceOf[js.Any]).asInstanceOf[Any]
-  
-  type ColumnOps = String
   
   @js.native
   trait DataSource extends StObject {

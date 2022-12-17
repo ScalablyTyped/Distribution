@@ -86,7 +86,6 @@ object DrawMultiFeature {
     getCoordinate: /* path */ String => Position,
     getCoordinates: () => /* import warning: importer.ImportType#apply Failed type conversion: Type extends 'MultiPoint' ? std.Array<geojson.geojson.Position> : never */ js.Any,
     getFeatures: () => /* import warning: importer.ImportType#apply Failed type conversion: this['features'] */ js.Any,
-    id: NonNullable[js.UndefOr[String | Double]],
     incomingCoords: /* import warning: importer.ImportType#apply Failed type conversion: this['setCoordinates'] */ js.Any,
     isValid: () => Boolean,
     setCoordinates: /* import warning: importer.ImportType#apply Failed type conversion: Type extends 'MultiPoint' ? std.Array<geojson.geojson.Position> : never */ /* coords */ js.Any => Unit,
@@ -95,7 +94,7 @@ object DrawMultiFeature {
     `type`: Type,
     updateCoordinate: (/* path */ String, /* lng */ Double, /* lat */ Double) => Unit
   ): DrawMultiFeature[Type] = {
-    val __obj = js.Dynamic.literal(changed = js.Any.fromFunction0(changed), features = features.asInstanceOf[js.Any], getCoordinate = js.Any.fromFunction1(getCoordinate), getCoordinates = js.Any.fromFunction0(getCoordinates), getFeatures = js.Any.fromFunction0(getFeatures), id = id.asInstanceOf[js.Any], incomingCoords = incomingCoords.asInstanceOf[js.Any], isValid = js.Any.fromFunction0(isValid), setCoordinates = js.Any.fromFunction1(setCoordinates), setProperty = js.Any.fromFunction2(setProperty), toGeoJSON = js.Any.fromFunction0(toGeoJSON), updateCoordinate = js.Any.fromFunction3(updateCoordinate), properties = null)
+    val __obj = js.Dynamic.literal(changed = js.Any.fromFunction0(changed), features = features.asInstanceOf[js.Any], getCoordinate = js.Any.fromFunction1(getCoordinate), getCoordinates = js.Any.fromFunction0(getCoordinates), getFeatures = js.Any.fromFunction0(getFeatures), incomingCoords = incomingCoords.asInstanceOf[js.Any], isValid = js.Any.fromFunction0(isValid), setCoordinates = js.Any.fromFunction1(setCoordinates), setProperty = js.Any.fromFunction2(setProperty), toGeoJSON = js.Any.fromFunction0(toGeoJSON), updateCoordinate = js.Any.fromFunction3(updateCoordinate), properties = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawMultiFeature[Type]]
   }
@@ -125,6 +124,8 @@ object DrawMultiFeature {
     ): Self = StObject.set(x, "getFeatures", js.Any.fromFunction0(value))
     
     inline def setId(value: NonNullable[js.UndefOr[String | Double]]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setIncomingCoords(
       value: /* import warning: importer.ImportType#apply Failed type conversion: this['setCoordinates'] */ js.Any

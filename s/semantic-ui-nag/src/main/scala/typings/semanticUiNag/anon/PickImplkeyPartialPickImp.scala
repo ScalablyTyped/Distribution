@@ -39,7 +39,7 @@ trait PickImplkeyPartialPickImp
   
   var expires: js.UndefOr[Double] = js.undefined
   
-  var key: Any & js.UndefOr[Any]
+  var key: Any
   
   var name: js.UndefOr[String] = js.undefined
   
@@ -67,7 +67,7 @@ trait PickImplkeyPartialPickImp
 }
 object PickImplkeyPartialPickImp {
   
-  inline def apply(key: Any & js.UndefOr[Any]): PickImplkeyPartialPickImp = {
+  inline def apply(key: Any): PickImplkeyPartialPickImp = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplkeyPartialPickImp]
   }
@@ -114,7 +114,7 @@ object PickImplkeyPartialPickImp {
     
     inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
     
-    inline def setKey(value: Any & js.UndefOr[Any]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -12,7 +12,7 @@ import typings.wdioUtils.anon.File
 import typings.wdioUtils.anon.IgnoredWorkerServices
 import typings.wdioUtils.anon.IsAndroid
 import typings.wdioUtils.anon.IsChrome
-import typings.wdioUtils.anon.IsFirefox
+import typings.wdioUtils.anon.IsDevTools
 import typings.wdioUtils.anon.OmitTestrunnercapabilitie
 import typings.wdioUtils.buildMonadMod.PropertiesObject
 import typings.wdioUtils.buildShimMod.Retries
@@ -449,7 +449,7 @@ object mod {
   
   inline def commandCallStructure(commandName: String, args: js.Array[Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("commandCallStructure")(commandName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def devtoolsEnvironmentDetector(param0: Capabilities): IsChrome = ^.asInstanceOf[js.Dynamic].applyDynamic("devtoolsEnvironmentDetector")(param0.asInstanceOf[js.Any]).asInstanceOf[IsChrome]
+  inline def devtoolsEnvironmentDetector(param0: Capabilities): IsDevTools = ^.asInstanceOf[js.Dynamic].applyDynamic("devtoolsEnvironmentDetector")(param0.asInstanceOf[js.Any]).asInstanceOf[IsDevTools]
   
   /**
     * execute test or hook asynchronously
@@ -605,7 +605,7 @@ object mod {
   
   inline def safeRequire(name: String): ServicePlugin | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("safeRequire")(name.asInstanceOf[js.Any]).asInstanceOf[ServicePlugin | Null]
   
-  inline def sessionEnvironmentDetector(param0: typings.wdioUtils.anon.Capabilities): IsFirefox = ^.asInstanceOf[js.Dynamic].applyDynamic("sessionEnvironmentDetector")(param0.asInstanceOf[js.Any]).asInstanceOf[IsFirefox]
+  inline def sessionEnvironmentDetector(param0: typings.wdioUtils.anon.Capabilities): IsChrome = ^.asInstanceOf[js.Dynamic].applyDynamic("sessionEnvironmentDetector")(param0.asInstanceOf[js.Any]).asInstanceOf[IsChrome]
   
   inline def sleep(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("sleep")().asInstanceOf[js.Promise[Any]]
   inline def sleep(ms: Double): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("sleep")(ms.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]

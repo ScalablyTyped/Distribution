@@ -656,13 +656,29 @@ object anon {
     }
   }
   
-  @js.native
   trait End extends StObject {
     
-    def end(): Unit = js.native
+    def end(): Unit
     
-    def run(b: INTRO): Unit = js.native
-    def run(b: OUTRO): Unit = js.native
+    def invalidate(): Unit
+    
+    def start(): Unit
+  }
+  object End {
+    
+    inline def apply(end: () => Unit, invalidate: () => Unit, start: () => Unit): End = {
+      val __obj = js.Dynamic.literal(end = js.Any.fromFunction0(end), invalidate = js.Any.fromFunction0(invalidate), start = js.Any.fromFunction0(start))
+      __obj.asInstanceOf[End]
+    }
+    
+    extension [Self <: End](x: Self) {
+      
+      inline def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
+      
+      inline def setInvalidate(value: () => Unit): Self = StObject.set(x, "invalidate", js.Any.fromFunction0(value))
+      
+      inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+    }
   }
   
   trait From extends StObject {
@@ -683,31 +699,6 @@ object anon {
       inline def setFrom(value: DOMRect): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
       inline def setTo(value: DOMRect): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Invalidate extends StObject {
-    
-    def end(): Unit
-    
-    def invalidate(): Unit
-    
-    def start(): Unit
-  }
-  object Invalidate {
-    
-    inline def apply(end: () => Unit, invalidate: () => Unit, start: () => Unit): Invalidate = {
-      val __obj = js.Dynamic.literal(end = js.Any.fromFunction0(end), invalidate = js.Any.fromFunction0(invalidate), start = js.Any.fromFunction0(start))
-      __obj.asInstanceOf[Invalidate]
-    }
-    
-    extension [Self <: Invalidate](x: Self) {
-      
-      inline def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
-      
-      inline def setInvalidate(value: () => Unit): Self = StObject.set(x, "invalidate", js.Any.fromFunction0(value))
-      
-      inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     }
   }
   
@@ -748,6 +739,15 @@ object anon {
     def render(props: js.Object): Css = js.native
     def render(props: js.Object, param1: Context): Css = js.native
     def render(props: Unit, param1: Context): Css = js.native
+  }
+  
+  @js.native
+  trait Run extends StObject {
+    
+    def end(): Unit = js.native
+    
+    def run(b: INTRO): Unit = js.native
+    def run(b: OUTRO): Unit = js.native
   }
   
   /* Inlined std.SVGElement & {getTotalLength (): number} */

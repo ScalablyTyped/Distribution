@@ -3,7 +3,6 @@ package typings.passportWindowsauth
 import typings.express.mod.Request_
 import typings.ldapjs.mod.Client
 import typings.node.tlsMod.TlsOptions
-import typings.passportWindowsauth.passportWindowsauthBooleans.`true`
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -147,7 +146,7 @@ object anon {
     
     var ldap: js.UndefOr[Base] = js.undefined
     
-    var passReqToCallback: js.UndefOr[Boolean] & `true`
+    var passReqToCallback: js.UndefOr[Boolean] = js.undefined
     
     var passwordField: js.UndefOr[String] = js.undefined
     
@@ -155,8 +154,8 @@ object anon {
   }
   object OptionspassReqToCallbackt {
     
-    inline def apply(passReqToCallback: js.UndefOr[Boolean] & `true`): OptionspassReqToCallbackt = {
-      val __obj = js.Dynamic.literal(passReqToCallback = passReqToCallback.asInstanceOf[js.Any])
+    inline def apply(): OptionspassReqToCallbackt = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionspassReqToCallbackt]
     }
     
@@ -182,7 +181,9 @@ object anon {
       
       inline def setLdapUndefined: Self = StObject.set(x, "ldap", js.undefined)
       
-      inline def setPassReqToCallback(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
+      inline def setPassReqToCallback(value: Boolean): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
+      
+      inline def setPassReqToCallbackUndefined: Self = StObject.set(x, "passReqToCallback", js.undefined)
       
       inline def setPasswordField(value: String): Self = StObject.set(x, "passwordField", value.asInstanceOf[js.Any])
       

@@ -12,7 +12,7 @@ trait PickImplcategoryPartialPi
   
   def category(response: Any): String
   @JSName("category")
-  var category_Original: (js.Function1[/* response */ Any, String]) & (js.UndefOr[js.Function1[/* response */ Any, String]])
+  var category_Original: js.Function1[/* response */ Any, String]
   
   var escape: js.UndefOr[js.Function1[/* string */ String, String]] = js.undefined
   
@@ -22,18 +22,14 @@ trait PickImplcategoryPartialPi
 }
 object PickImplcategoryPartialPi {
   
-  inline def apply(
-    category: (js.Function1[/* response */ Any, String]) & (js.UndefOr[js.Function1[/* response */ Any, String]])
-  ): PickImplcategoryPartialPi = {
-    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any])
+  inline def apply(category: /* response */ Any => String): PickImplcategoryPartialPi = {
+    val __obj = js.Dynamic.literal(category = js.Any.fromFunction1(category))
     __obj.asInstanceOf[PickImplcategoryPartialPi]
   }
   
   extension [Self <: PickImplcategoryPartialPi](x: Self) {
     
-    inline def setCategory(
-      value: (js.Function1[/* response */ Any, String]) & (js.UndefOr[js.Function1[/* response */ Any, String]])
-    ): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: /* response */ Any => String): Self = StObject.set(x, "category", js.Any.fromFunction1(value))
     
     inline def setEscape(value: /* string */ String => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
     

@@ -405,7 +405,7 @@ object esComponentsSiderMenuBaseMenuMod {
     /** 要给菜单的props, 参考antd-menu的属性。https://ant.design/components/menu-cn/ */
     var menuProps: js.UndefOr[MenuProps] = js.undefined
     
-    var mode: js.UndefOr[MenuMode] & js.UndefOr[typings.rcMenu.esInterfaceMod.MenuMode]
+    var mode: js.UndefOr[MenuMode] = js.undefined
     
     var motion: js.UndefOr[CSSMotionProps] = js.undefined
     
@@ -676,8 +676,8 @@ object esComponentsSiderMenuBaseMenuMod {
   }
   object BaseMenuProps {
     
-    inline def apply(mode: js.UndefOr[MenuMode] & js.UndefOr[typings.rcMenu.esInterfaceMod.MenuMode]): BaseMenuProps = {
-      val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
+    inline def apply(): BaseMenuProps = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseMenuProps]
     }
     
@@ -1156,7 +1156,9 @@ object esComponentsSiderMenuBaseMenuMod {
       
       inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
       
-      inline def setMode(value: js.UndefOr[MenuMode] & js.UndefOr[typings.rcMenu.esInterfaceMod.MenuMode]): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: MenuMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
       inline def setMotion(value: CSSMotionProps): Self = StObject.set(x, "motion", value.asInstanceOf[js.Any])
       

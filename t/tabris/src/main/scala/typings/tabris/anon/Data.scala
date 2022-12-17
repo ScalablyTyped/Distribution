@@ -4,20 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Data[TData] extends StObject {
+trait Data extends StObject {
   
-  var data: js.UndefOr[TData] = js.undefined
+  var cid: js.UndefOr[scala.Nothing] = js.undefined
+  
+  var data: js.UndefOr[Any] = js.undefined
 }
 object Data {
   
-  inline def apply[TData](): Data[TData] = {
+  inline def apply(): Data = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[Data[TData]]
+    __obj.asInstanceOf[Data]
   }
   
-  extension [Self <: Data[?], TData](x: Self & Data[TData]) {
+  extension [Self <: Data](x: Self) {
     
-    inline def setData(value: TData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }

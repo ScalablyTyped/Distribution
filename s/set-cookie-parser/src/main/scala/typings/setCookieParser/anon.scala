@@ -1,7 +1,5 @@
 package typings.setCookieParser
 
-import typings.setCookieParser.setCookieParserBooleans.`false`
-import typings.setCookieParser.setCookieParserBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +19,7 @@ object anon {
       * Return an object instead of an array
       * @default false
       */
-    var map: js.UndefOr[Boolean] & js.UndefOr[`false`]
+    var map: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Suppress the warning that is loged when called on a request instead of a response
@@ -31,8 +29,8 @@ object anon {
   }
   object Optionsmapfalseundefined {
     
-    inline def apply(map: js.UndefOr[Boolean] & js.UndefOr[`false`]): Optionsmapfalseundefined = {
-      val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any])
+    inline def apply(): Optionsmapfalseundefined = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Optionsmapfalseundefined]
     }
     
@@ -42,7 +40,9 @@ object anon {
       
       inline def setDecodeValuesUndefined: Self = StObject.set(x, "decodeValues", js.undefined)
       
-      inline def setMap(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: Boolean): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
       inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
       
@@ -63,7 +63,7 @@ object anon {
       * Return an object instead of an array
       * @default false
       */
-    var map: js.UndefOr[Boolean] & `true`
+    var map: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Suppress the warning that is loged when called on a request instead of a response
@@ -73,8 +73,8 @@ object anon {
   }
   object Optionsmaptrue {
     
-    inline def apply(map: js.UndefOr[Boolean] & `true`): Optionsmaptrue = {
-      val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any])
+    inline def apply(): Optionsmaptrue = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Optionsmaptrue]
     }
     
@@ -84,7 +84,9 @@ object anon {
       
       inline def setDecodeValuesUndefined: Self = StObject.set(x, "decodeValues", js.undefined)
       
-      inline def setMap(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: Boolean): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
       inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
       

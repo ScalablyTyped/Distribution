@@ -12,14 +12,14 @@ object anon {
   @js.native
   trait FnCall extends StObject {
     
-    def apply(fn: HookFn): Unit = js.native
-    def apply(fn: HookFn, timeout: Double): Unit = js.native
+    def apply(testName: TestNameLike, fn: TestFn): Unit = js.native
+    def apply(testName: TestNameLike, fn: TestFn, timeout: Double): Unit = js.native
   }
   
   @js.native
-  trait FnCallTestNameFnTimeout extends StObject {
+  trait FnCallFnTimeout extends StObject {
     
-    def apply(testName: TestNameLike, fn: TestFn): Unit = js.native
-    def apply(testName: TestNameLike, fn: TestFn, timeout: Double): Unit = js.native
+    def apply(fn: HookFn): Unit = js.native
+    def apply(fn: HookFn, timeout: Double): Unit = js.native
   }
 }

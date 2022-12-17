@@ -1,13 +1,13 @@
 package typings.antd.anon
 
-import typings.react.mod.ReactNode
+import typings.antd.libFormFormItemMod.ValidateStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `1` extends StObject {
   
-  var children: js.UndefOr[ReactNode] = js.undefined
+  var status: js.UndefOr[ValidateStatus] = js.undefined
 }
 object `1` {
   
@@ -18,8 +18,8 @@ object `1` {
   
   extension [Self <: `1`](x: Self) {
     
-    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ValidateStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

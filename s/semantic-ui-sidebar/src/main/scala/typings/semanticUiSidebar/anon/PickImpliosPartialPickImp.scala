@@ -18,7 +18,7 @@ trait PickImpliosPartialPickImp
   
   var dimmed: js.UndefOr[String] = js.undefined
   
-  var ios: String & js.UndefOr[String]
+  var ios: String
   
   var left: js.UndefOr[String] = js.undefined
   
@@ -34,7 +34,7 @@ trait PickImpliosPartialPickImp
 }
 object PickImpliosPartialPickImp {
   
-  inline def apply(ios: String & js.UndefOr[String]): PickImpliosPartialPickImp = {
+  inline def apply(ios: String): PickImpliosPartialPickImp = {
     val __obj = js.Dynamic.literal(ios = ios.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpliosPartialPickImp]
   }
@@ -57,7 +57,7 @@ object PickImpliosPartialPickImp {
     
     inline def setDimmedUndefined: Self = StObject.set(x, "dimmed", js.undefined)
     
-    inline def setIos(value: String & js.UndefOr[String]): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
+    inline def setIos(value: String): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
     
     inline def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     

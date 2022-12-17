@@ -1,7 +1,7 @@
 package typings.reactMdStates
 
 import typings.reactMdStates.anon.PickRippleEventHTMLElemen
-import typings.reactMdStates.anon.PickRippleEventHTMLElemenType
+import typings.reactMdStates.anon.PickRippleEventHTMLElemenPageX
 import typings.reactMdStates.reactMdStatesStrings.currentTarget
 import typings.reactMdStates.reactMdStatesStrings.target
 import typings.reactMdStates.typesRipplesTypesMod.RippleEvent
@@ -21,9 +21,9 @@ object typesRipplesUtilsMod {
   
   inline def createRippleState(event: RippleEvent[HTMLElement]): RippleState = ^.asInstanceOf[js.Dynamic].applyDynamic("createRippleState")(event.asInstanceOf[js.Any]).asInstanceOf[RippleState]
   
-  inline def getOrigin(event: PickRippleEventHTMLElemen, element: HTMLElement): Origin = (^.asInstanceOf[js.Dynamic].applyDynamic("getOrigin")(event.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Origin]
+  inline def getOrigin(event: PickRippleEventHTMLElemenPageX, element: HTMLElement): Origin = (^.asInstanceOf[js.Dynamic].applyDynamic("getOrigin")(event.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Origin]
   
-  inline def getType(event: PickRippleEventHTMLElemenType): RippleType = ^.asInstanceOf[js.Dynamic].applyDynamic("getType")(event.asInstanceOf[js.Any]).asInstanceOf[RippleType]
+  inline def getType(event: PickRippleEventHTMLElemen): RippleType = ^.asInstanceOf[js.Dynamic].applyDynamic("getType")(event.asInstanceOf[js.Any]).asInstanceOf[RippleType]
   
   inline def isBubbled[E /* <: HTMLElement */](event: Pick[RippleEvent[E], currentTarget | target]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBubbled")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   

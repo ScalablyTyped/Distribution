@@ -13,11 +13,8 @@ trait IFieldRuntimeObject
 }
 object IFieldRuntimeObject {
   
-  inline def apply(
-    model: StringDictionary[Any],
-    value: js.UndefOr[js.Function0[Any]] & (js.UndefOr[js.Function1[/* val */ Any, Unit]])
-  ): IFieldRuntimeObject = {
-    val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  inline def apply(model: StringDictionary[Any]): IFieldRuntimeObject = {
+    val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFieldRuntimeObject]
   }
   

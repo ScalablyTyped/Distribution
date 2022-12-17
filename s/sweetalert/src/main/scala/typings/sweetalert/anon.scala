@@ -31,7 +31,7 @@ object anon {
     
     var closeModal: js.UndefOr[Boolean] = js.undefined
     
-    var value: js.UndefOr[String] = js.undefined
+    var value: js.UndefOr[String | Any] = js.undefined
   }
   object CloseModal {
     
@@ -46,7 +46,7 @@ object anon {
       
       inline def setCloseModalUndefined: Self = StObject.set(x, "closeModal", js.undefined)
       
-      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String | Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
@@ -157,7 +157,7 @@ object anon {
     
     var closeModal: js.UndefOr[Boolean] = js.undefined
     
-    var value: js.UndefOr[String | Any] = js.undefined
+    var value: js.UndefOr[String] = js.undefined
   }
   object Value {
     
@@ -172,7 +172,7 @@ object anon {
       
       inline def setCloseModalUndefined: Self = StObject.set(x, "closeModal", js.undefined)
       
-      inline def setValue(value: String | Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }

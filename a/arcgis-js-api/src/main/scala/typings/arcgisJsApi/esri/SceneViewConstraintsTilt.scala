@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.HashMap
 import typings.arcgisJsApi.arcgisJsApiStrings.auto
 import typings.arcgisJsApi.arcgisJsApiStrings.manual
 import org.scalablytyped.runtime.StObject
@@ -29,12 +28,8 @@ trait SceneViewConstraintsTilt
 }
 object SceneViewConstraintsTilt {
   
-  inline def apply(
-    set: (js.UndefOr[
-      js.Function2[/* propertyName */ String, /* value */ Any, SceneViewConstraintsTilt]
-    ]) & (js.UndefOr[js.Function1[/* props */ HashMap[Any], SceneViewConstraintsTilt]])
-  ): SceneViewConstraintsTilt = {
-    val __obj = js.Dynamic.literal(set = set.asInstanceOf[js.Any])
+  inline def apply(): SceneViewConstraintsTilt = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SceneViewConstraintsTilt]
   }
   

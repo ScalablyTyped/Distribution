@@ -5,9 +5,9 @@ import typings.postmark.anon.Clicks
 import typings.postmark.anon.Date
 import typings.postmark.anon.Desktop
 import typings.postmark.anon.Dictkey
+import typings.postmark.anon.HTML
 import typings.postmark.anon.Mobile
 import typings.postmark.anon.Opens
-import typings.postmark.anon.Sent
 import typings.postmark.anon.SpamComplaint
 import typings.postmark.anon.Tracked
 import org.scalablytyped.runtime.StObject
@@ -68,7 +68,7 @@ object distClientModelsStatsStatsMod {
   
   trait ClickLocationCounts extends StObject {
     
-    var Days: js.Array[Date]
+    var Days: js.Array[HTML]
     
     var HTML: Double
     
@@ -76,16 +76,16 @@ object distClientModelsStatsStatsMod {
   }
   object ClickLocationCounts {
     
-    inline def apply(Days: js.Array[Date], HTML: Double, Text: Double): ClickLocationCounts = {
+    inline def apply(Days: js.Array[HTML], HTML: Double, Text: Double): ClickLocationCounts = {
       val __obj = js.Dynamic.literal(Days = Days.asInstanceOf[js.Any], HTML = HTML.asInstanceOf[js.Any], Text = Text.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClickLocationCounts]
     }
     
     extension [Self <: ClickLocationCounts](x: Self) {
       
-      inline def setDays(value: js.Array[Date]): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
+      inline def setDays(value: js.Array[HTML]): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
       
-      inline def setDaysVarargs(value: Date*): Self = StObject.set(x, "Days", js.Array(value*))
+      inline def setDaysVarargs(value: HTML*): Self = StObject.set(x, "Days", js.Array(value*))
       
       inline def setHTML(value: Double): Self = StObject.set(x, "HTML", value.asInstanceOf[js.Any])
       
@@ -95,7 +95,7 @@ object distClientModelsStatsStatsMod {
   
   trait ClickPlatformUsageCounts extends StObject {
     
-    var Days: js.Array[Desktop]
+    var Days: js.Array[Mobile]
     
     var Desktop: Double
     
@@ -105,16 +105,16 @@ object distClientModelsStatsStatsMod {
   }
   object ClickPlatformUsageCounts {
     
-    inline def apply(Days: js.Array[Desktop], Desktop: Double, Mobile: Double, Unknown: Double): ClickPlatformUsageCounts = {
+    inline def apply(Days: js.Array[Mobile], Desktop: Double, Mobile: Double, Unknown: Double): ClickPlatformUsageCounts = {
       val __obj = js.Dynamic.literal(Days = Days.asInstanceOf[js.Any], Desktop = Desktop.asInstanceOf[js.Any], Mobile = Mobile.asInstanceOf[js.Any], Unknown = Unknown.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClickPlatformUsageCounts]
     }
     
     extension [Self <: ClickPlatformUsageCounts](x: Self) {
       
-      inline def setDays(value: js.Array[Desktop]): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
+      inline def setDays(value: js.Array[Mobile]): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
       
-      inline def setDaysVarargs(value: Desktop*): Self = StObject.set(x, "Days", js.Array(value*))
+      inline def setDaysVarargs(value: Mobile*): Self = StObject.set(x, "Days", js.Array(value*))
       
       inline def setDesktop(value: Double): Self = StObject.set(x, "Desktop", value.asInstanceOf[js.Any])
       
@@ -147,7 +147,7 @@ object distClientModelsStatsStatsMod {
   
   trait EmailPlaformUsageCounts extends StObject {
     
-    var Days: js.Array[Mobile]
+    var Days: js.Array[Desktop]
     
     var Desktop: js.UndefOr[Double] = js.undefined
     
@@ -159,16 +159,16 @@ object distClientModelsStatsStatsMod {
   }
   object EmailPlaformUsageCounts {
     
-    inline def apply(Days: js.Array[Mobile]): EmailPlaformUsageCounts = {
+    inline def apply(Days: js.Array[Desktop]): EmailPlaformUsageCounts = {
       val __obj = js.Dynamic.literal(Days = Days.asInstanceOf[js.Any])
       __obj.asInstanceOf[EmailPlaformUsageCounts]
     }
     
     extension [Self <: EmailPlaformUsageCounts](x: Self) {
       
-      inline def setDays(value: js.Array[Mobile]): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
+      inline def setDays(value: js.Array[Desktop]): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
       
-      inline def setDaysVarargs(value: Mobile*): Self = StObject.set(x, "Days", js.Array(value*))
+      inline def setDaysVarargs(value: Desktop*): Self = StObject.set(x, "Days", js.Array(value*))
       
       inline def setDesktop(value: Double): Self = StObject.set(x, "Desktop", value.asInstanceOf[js.Any])
       
@@ -337,22 +337,22 @@ object distClientModelsStatsStatsMod {
   
   trait SentCounts extends StObject {
     
-    var Days: js.Array[Sent]
+    var Days: js.Array[Date]
     
     var Sent: Double
   }
   object SentCounts {
     
-    inline def apply(Days: js.Array[Sent], Sent: Double): SentCounts = {
+    inline def apply(Days: js.Array[Date], Sent: Double): SentCounts = {
       val __obj = js.Dynamic.literal(Days = Days.asInstanceOf[js.Any], Sent = Sent.asInstanceOf[js.Any])
       __obj.asInstanceOf[SentCounts]
     }
     
     extension [Self <: SentCounts](x: Self) {
       
-      inline def setDays(value: js.Array[Sent]): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
+      inline def setDays(value: js.Array[Date]): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
       
-      inline def setDaysVarargs(value: Sent*): Self = StObject.set(x, "Days", js.Array(value*))
+      inline def setDaysVarargs(value: Date*): Self = StObject.set(x, "Days", js.Array(value*))
       
       inline def setSent(value: Double): Self = StObject.set(x, "Sent", value.asInstanceOf[js.Any])
     }

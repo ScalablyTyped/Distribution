@@ -5,19 +5,25 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.googleAuthLibrary.buildSrcAuthGoogleauthMod.GoogleAuthOptions
 import typings.googleAuthLibrary.buildSrcAuthGoogleauthMod.JSONClient
 import typings.googleAuthLibrary.mod.GoogleAuth
+import typings.googleCloudPreciseDate.mod.PreciseDate
+import typings.googleCloudSpanner.anon.Endpoint
 import typings.googleCloudSpanner.anon.ParamTypes
 import typings.googleCloudSpanner.anon.PickanytransactionTag
 import typings.googleCloudSpanner.anon.TypeofSpanner
+import typings.googleCloudSpanner.buildSrcCodecMod.Float
+import typings.googleCloudSpanner.buildSrcCodecMod.Int
+import typings.googleCloudSpanner.buildSrcCodecMod.Numeric
+import typings.googleCloudSpanner.buildSrcCodecMod.PGNumeric
+import typings.googleCloudSpanner.buildSrcCodecMod.Struct
 import typings.googleCloudSpanner.buildSrcCommonGrpcServiceMod.GrpcService
 import typings.googleCloudSpanner.buildSrcCommonMod.NormalCallback
 import typings.googleCloudSpanner.buildSrcCommonMod.PagedCallback
 import typings.googleCloudSpanner.buildSrcCommonMod.PagedOptions
 import typings.googleCloudSpanner.buildSrcCommonMod.PagedOptionsWithFilter
 import typings.googleCloudSpanner.buildSrcCommonMod.PagedResponse
-import typings.googleCloudSpanner.buildSrcDatabaseMod.Database
+import typings.googleCloudSpanner.buildSrcDatabaseMod.SessionPoolConstructor
 import typings.googleCloudSpanner.buildSrcInstanceMod.CreateInstanceCallback
 import typings.googleCloudSpanner.buildSrcInstanceMod.CreateInstanceResponse
-import typings.googleCloudSpanner.buildSrcInstanceMod.Instance
 import typings.googleCloudSpanner.buildSrcSessionPoolMod.SessionPoolOptions
 import typings.googleCloudSpanner.buildSrcTransactionMod.ExecuteSqlRequest
 import typings.googleCloudSpanner.buildSrcTransactionMod.ReadRequest
@@ -26,6 +32,7 @@ import typings.googleGax.buildSrcGaxMod.CallOptions
 import typings.googleGax.buildSrcGrpcMod.GrpcClientOptions
 import typings.googleGax.mod.grpc.ChannelCredentials
 import typings.node.NodeJS.ReadableStream
+import typings.protobufjs.mod.common.ITimestamp
 import typings.stackTrace.mod.StackFrame
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
@@ -54,6 +61,202 @@ object mod {
     inline def Spanner_=(x: TypeofSpanner & (Instantiable1[/* options */ js.UndefOr[SpannerOptions], Spanner])): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Spanner")(x.asInstanceOf[js.Any])
   }
   
+  /**
+    * The {@link Backup} class represents a Cloud Spanner backup.
+    *
+    * Create a `Backup` object to interact with or create a Cloud Spanner backup or copy a backup.
+    *
+    * @class
+    *
+    * @example
+    * ```
+    * const {Spanner} = require('@google-cloud/spanner');
+    * const spanner = new Spanner();
+    * const instance = spanner.instance('my-instance');
+    * const backup = instance.backup('my-backup');
+    * ```
+    *
+    * ```
+    * * @example
+    * const {Spanner} = require('@google-cloud/spanner');
+    * const spanner = new Spanner();
+    * const instance = spanner.instance('my-instance');
+    * const sourceBackup = instance.backup('my-source-backup');
+    * const copyBackup = instance.copyBackup('my-copy-backup', 'my-source-backup');
+    * ```
+    */
+  @JSImport("@google-cloud/spanner", "Backup")
+  @js.native
+  open class Backup protected ()
+    extends typings.googleCloudSpanner.buildSrcBackupMod.Backup {
+    def this(instance: typings.googleCloudSpanner.buildSrcInstanceMod.Instance, name: String) = this()
+    def this(
+      instance: typings.googleCloudSpanner.buildSrcInstanceMod.Instance,
+      name: String,
+      sourceName: String
+    ) = this()
+  }
+  object Backup {
+    
+    @JSImport("@google-cloud/spanner", "Backup")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Format the backup name to include the instance name.
+      *
+      * @private
+      *
+      * @param {string} instanceName The formatted instance name.
+      * @param {string} name The table name.
+      * @returns {string}
+      *
+      * @example
+      * ```
+      * Backup.formatName_(
+      *   'projects/grape-spaceship-123/instances/my-instance',
+      *   'my-backup'
+      * );
+      * // 'projects/grape-spaceship-123/instances/my-instance/backups/my-backup'
+      * ```
+      */
+    /* static member */
+    inline def formatName(instanceName: String, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatName_")(instanceName.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
+  }
+  
+  /**
+    * Create a Database object to interact with a Cloud Spanner database.
+    *
+    * @class
+    *
+    * @param {string} name Name of the database.
+    * @param {SessionPoolOptions|SessionPoolInterface} options Session pool
+    *     configuration options or custom pool interface.
+    * @param {google.spanner.v1.ExecuteSqlRequest.IQueryOptions} queryOptions
+    *     The default query options to use for queries on the database.
+    *
+    * @example
+    * ```
+    * const {Spanner} = require('@google-cloud/spanner');
+    * const spanner = new Spanner();
+    * const instance = spanner.instance('my-instance');
+    * const database = instance.database('my-database');
+    * ```
+    */
+  @JSImport("@google-cloud/spanner", "Database")
+  @js.native
+  open class Database protected ()
+    extends typings.googleCloudSpanner.buildSrcDatabaseMod.Database {
+    def this(instance: typings.googleCloudSpanner.buildSrcInstanceMod.Instance, name: String) = this()
+    def this(
+      instance: typings.googleCloudSpanner.buildSrcInstanceMod.Instance,
+      name: String,
+      poolOptions: SessionPoolConstructor
+    ) = this()
+    def this(
+      instance: typings.googleCloudSpanner.buildSrcInstanceMod.Instance,
+      name: String,
+      poolOptions: SessionPoolOptions
+    ) = this()
+    def this(
+      instance: typings.googleCloudSpanner.buildSrcInstanceMod.Instance,
+      name: String,
+      poolOptions: Unit,
+      queryOptions: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify spannerClient.spanner.v1.ExecuteSqlRequest.IQueryOptions */ Any
+    ) = this()
+    def this(
+      instance: typings.googleCloudSpanner.buildSrcInstanceMod.Instance,
+      name: String,
+      poolOptions: SessionPoolConstructor,
+      queryOptions: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify spannerClient.spanner.v1.ExecuteSqlRequest.IQueryOptions */ Any
+    ) = this()
+    def this(
+      instance: typings.googleCloudSpanner.buildSrcInstanceMod.Instance,
+      name: String,
+      poolOptions: SessionPoolOptions,
+      queryOptions: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify spannerClient.spanner.v1.ExecuteSqlRequest.IQueryOptions */ Any
+    ) = this()
+  }
+  object Database {
+    
+    @JSImport("@google-cloud/spanner", "Database")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Format the database name to include the instance name.
+      *
+      * @private
+      *
+      * @param {string} instanceName The formatted instance name.
+      * @param {string} name The table name.
+      * @returns {string}
+      *
+      * @example
+      * ```
+      * Database.formatName_(
+      *   'projects/grape-spaceship-123/instances/my-instance',
+      *   'my-database'
+      * );
+      * // 'projects/grape-spaceship-123/instances/my-instance/databases/my-database'
+      * ```
+      */
+    /* static member */
+    inline def formatName(instanceName: String, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatName_")(instanceName.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    /* static member */
+    inline def getEnvironmentQueryOptions(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnvironmentQueryOptions")().asInstanceOf[Any]
+  }
+  
+  /**
+    * The {@link Instance} class represents a [Cloud Spanner
+    * instance](https://cloud.google.com/spanner/docs/instances).
+    *
+    * Create an `Instance` object to interact with a Cloud Spanner instance.
+    *
+    * @class
+    *
+    * @param {Spanner} spanner {@link Spanner} instance.
+    * @param {string} name Name of the instance.
+    *
+    * @example
+    * ```
+    * const {Spanner} = require('@google-cloud/spanner');
+    * const spanner = new Spanner();
+    * const instance = spanner.instance('my-instance');
+    * ```
+    */
+  @JSImport("@google-cloud/spanner", "Instance")
+  @js.native
+  open class Instance protected ()
+    extends typings.googleCloudSpanner.buildSrcInstanceMod.Instance {
+    def this(spanner: Spanner, name: String) = this()
+  }
+  object Instance {
+    
+    @JSImport("@google-cloud/spanner", "Instance")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Format the instance name to include the project ID.
+      *
+      * @private
+      *
+      * @param {string} projectId The project ID.
+      * @param {string} name The instance name.
+      * @returns {string}
+      *
+      * @example
+      * ```
+      * Instance.formatName_('grape-spaceship-123', 'my-instance');
+      * // 'projects/grape-spaceship-123/instances/my-instance'
+      * ```
+      */
+    /* static member */
+    inline def formatName(projectId: String, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatName_")(projectId.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
+  }
+  
   @JSImport("@google-cloud/spanner", "PartitionedDml")
   @js.native
   open class PartitionedDml protected ()
@@ -69,8 +272,8 @@ object mod {
   @js.native
   open class Session protected ()
     extends typings.googleCloudSpanner.buildSrcSessionMod.Session {
-    def this(database: Database) = this()
-    def this(database: Database, name: String) = this()
+    def this(database: typings.googleCloudSpanner.buildSrcDatabaseMod.Database) = this()
+    def this(database: typings.googleCloudSpanner.buildSrcDatabaseMod.Database, name: String) = this()
   }
   /* static members */
   object Session {
@@ -107,8 +310,8 @@ object mod {
       * @param {Database} database The DB instance.
       * @param {SessionPoolOptions} [options] Configuration options.
       */
-    def this(database: Database) = this()
-    def this(database: Database, options: SessionPoolOptions) = this()
+    def this(database: typings.googleCloudSpanner.buildSrcDatabaseMod.Database) = this()
+    def this(database: typings.googleCloudSpanner.buildSrcDatabaseMod.Database, options: SessionPoolOptions) = this()
   }
   /* static members */
   object SessionPool {
@@ -228,308 +431,6 @@ object mod {
   }
   
   /**
-    * Create a Table object to interact with a table in a Cloud Spanner
-    * database.
-    *
-    * @class
-    *
-    * @param {Database} database {@link Database} instance.
-    * @param {string} name Name of the table.
-    *
-    * @example
-    * ```
-    * const {Spanner} = require('@google-cloud/spanner');
-    * const spanner = new Spanner();
-    *
-    * const instance = spanner.instance('my-instance');
-    * const database = instance.database('my-database');
-    * const table = database.table('my-table');
-    * ```
-    */
-  @JSImport("@google-cloud/spanner", "Table")
-  @js.native
-  open class Table protected ()
-    extends typings.googleCloudSpanner.buildSrcTableMod.Table {
-    def this(database: Database, name: String) = this()
-  }
-  
-  @JSImport("@google-cloud/spanner", "Transaction")
-  @js.native
-  open class Transaction protected ()
-    extends typings.googleCloudSpanner.buildSrcTransactionMod.Transaction {
-    /**
-      * Timestamp at which the transaction was committed. Will be populated once
-      * {@link Transaction#commit} is called.
-      *
-      * @name Transaction#commitTimestamp
-      * @type {?external:PreciseDate}
-      */
-    /**
-      * The protobuf version of {@link Transaction#commitTimestamp}. This is useful
-      * if you require microsecond precision.
-      *
-      * @name Transaction#commitTimestampProto
-      * @type {?google.protobuf.Timestamp}
-      */
-    /**
-      * Execute a DML statement and get the affected row count.
-      *
-      * @name Transaction#runUpdate
-      *
-      * @see {@link Transaction#run}
-      *
-      * @param {string|object} query A DML statement or
-      *     [`ExecuteSqlRequest`](https://cloud.google.com/spanner/docs/reference/rpc/google.spanner.v1#google.spanner.v1.ExecuteSqlRequest)
-      *     object.
-      * @param {object} [query.params] A map of parameter name to values.
-      * @param {object} [query.types] A map of parameter types.
-      * @param {RunUpdateCallback} [callback] Callback function.
-      * @returns {Promise<RunUpdateResponse>}
-      *
-      * @example
-      * ```
-      * const query = 'UPDATE Account SET Balance = 1000 WHERE Key = 1';
-      *
-      * transaction.runUpdate(query, (err, rowCount) => {
-      *   if (err) {
-      *     // Error handling omitted.
-      *   }
-      * });
-      * ```
-      */
-    def this(session: typings.googleCloudSpanner.buildSrcSessionMod.Session) = this()
-    def this(
-      session: typings.googleCloudSpanner.buildSrcSessionMod.Session,
-      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify spannerClient.spanner.v1.TransactionOptions.ReadWrite */ Any
-    ) = this()
-    def this(
-      session: typings.googleCloudSpanner.buildSrcSessionMod.Session,
-      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify spannerClient.spanner.v1.TransactionOptions.ReadWrite */ Any,
-      queryOptions: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IQueryOptions */ Any
-    ) = this()
-    def this(
-      session: typings.googleCloudSpanner.buildSrcSessionMod.Session,
-      options: Unit,
-      queryOptions: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IQueryOptions */ Any
-    ) = this()
-    def this(
-      session: typings.googleCloudSpanner.buildSrcSessionMod.Session,
-      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify spannerClient.spanner.v1.TransactionOptions.ReadWrite */ Any,
-      queryOptions: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IQueryOptions */ Any,
-      requestOptions: PickanytransactionTag
-    ) = this()
-    def this(
-      session: typings.googleCloudSpanner.buildSrcSessionMod.Session,
-      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify spannerClient.spanner.v1.TransactionOptions.ReadWrite */ Any,
-      queryOptions: Unit,
-      requestOptions: PickanytransactionTag
-    ) = this()
-    def this(
-      session: typings.googleCloudSpanner.buildSrcSessionMod.Session,
-      options: Unit,
-      queryOptions: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IQueryOptions */ Any,
-      requestOptions: PickanytransactionTag
-    ) = this()
-    def this(
-      session: typings.googleCloudSpanner.buildSrcSessionMod.Session,
-      options: Unit,
-      queryOptions: Unit,
-      requestOptions: PickanytransactionTag
-    ) = this()
-  }
-  /* static members */
-  object Transaction {
-    
-    @JSImport("@google-cloud/spanner", "Transaction")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /**
-      * Decorates an error returned by a commit with additional information for
-      * specific known errors.
-      * @param err the error to check and decorate with additional information if possible
-      * @param mutations the mutations included in the commit request
-      * @private
-      */
-    @JSImport("@google-cloud/spanner", "Transaction.decorateCommitError")
-    @js.native
-    def decorateCommitError: Any = js.native
-    inline def decorateCommitError_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decorateCommitError")(x.asInstanceOf[js.Any])
-    
-    /**
-      * Decorates an error returned by a commit with additional information if the
-      * error was returned because the application tried to insert an array of
-      * objects into a JSON column. An array of objects will by default be encoded
-      * as ARRAY<JSON>, but can also be interpreted as JSON. An application must
-      * specify a top-level array of objects that should be inserted into a JSON
-      * column as a string instead of as an array of objects.
-      * @param err the error returned by the commit RPC
-      * @param mutations the mutations included in the commit request
-      * @private
-      */
-    @JSImport("@google-cloud/spanner", "Transaction.decoratePossibleJsonMismatchError")
-    @js.native
-    def decoratePossibleJsonMismatchError: Any = js.native
-    inline def decoratePossibleJsonMismatchError_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decoratePossibleJsonMismatchError")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@google-cloud/spanner", "Transaction.extractKnownMetadata")
-    @js.native
-    def extractKnownMetadata: Any = js.native
-    inline def extractKnownMetadata_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extractKnownMetadata")(x.asInstanceOf[js.Any])
-    
-    /**
-      * Takes a list of rows and returns all unique column names.
-      *
-      * @private
-      *
-      * @param {object[]} rows The rows.
-      * @returns {string[]}
-      */
-    inline def getUniqueKeys(rows: js.Array[js.Object]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUniqueKeys")(rows.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-  }
-  
-  trait CreateInstanceRequest extends StObject {
-    
-    var config: js.UndefOr[String] = js.undefined
-    
-    var displayName: js.UndefOr[String] = js.undefined
-    
-    var gaxOptions: js.UndefOr[CallOptions] = js.undefined
-    
-    var labels: js.UndefOr[StringDictionary[String] | Null] = js.undefined
-    
-    var nodes: js.UndefOr[Double] = js.undefined
-    
-    var processingUnits: js.UndefOr[Double] = js.undefined
-  }
-  object CreateInstanceRequest {
-    
-    inline def apply(): CreateInstanceRequest = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[CreateInstanceRequest]
-    }
-    
-    extension [Self <: CreateInstanceRequest](x: Self) {
-      
-      inline def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
-      
-      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
-      
-      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
-      
-      inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
-      
-      inline def setGaxOptions(value: CallOptions): Self = StObject.set(x, "gaxOptions", value.asInstanceOf[js.Any])
-      
-      inline def setGaxOptionsUndefined: Self = StObject.set(x, "gaxOptions", js.undefined)
-      
-      inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
-      
-      inline def setLabelsNull: Self = StObject.set(x, "labels", null)
-      
-      inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
-      
-      inline def setNodes(value: Double): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
-      
-      inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
-      
-      inline def setProcessingUnits(value: Double): Self = StObject.set(x, "processingUnits", value.asInstanceOf[js.Any])
-      
-      inline def setProcessingUnitsUndefined: Self = StObject.set(x, "processingUnits", js.undefined)
-    }
-  }
-  
-  type EnumKey[E /* <: StringDictionary[Any] */] = /* keyof E */ String
-  
-  type GetInstanceConfigCallback = NormalCallback[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IInstanceConfig */ Any
-  ]
-  
-  trait GetInstanceConfigOptions extends StObject {
-    
-    var gaxOptions: js.UndefOr[CallOptions] = js.undefined
-  }
-  object GetInstanceConfigOptions {
-    
-    inline def apply(): GetInstanceConfigOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[GetInstanceConfigOptions]
-    }
-    
-    extension [Self <: GetInstanceConfigOptions](x: Self) {
-      
-      inline def setGaxOptions(value: CallOptions): Self = StObject.set(x, "gaxOptions", value.asInstanceOf[js.Any])
-      
-      inline def setGaxOptionsUndefined: Self = StObject.set(x, "gaxOptions", js.undefined)
-    }
-  }
-  
-  type GetInstanceConfigResponse = js.Array[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IInstanceConfig */ Any
-  ]
-  
-  type GetInstanceConfigsCallback = PagedCallback[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify instanceAdmin.spanner.admin.instance.v1.IInstanceConfig */ Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify instanceAdmin.spanner.admin.instance.v1.IListInstanceConfigsResponse */ Any
-  ]
-  
-  type GetInstanceConfigsOptions = PagedOptions
-  
-  type GetInstanceConfigsResponse = PagedResponse[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify instanceAdmin.spanner.admin.instance.v1.IInstanceConfig */ Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify instanceAdmin.spanner.admin.instance.v1.IListInstanceConfigsResponse */ Any
-  ]
-  
-  type GetInstancesCallback = PagedCallback[
-    Instance, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify instanceAdmin.spanner.admin.instance.v1.IListInstancesResponse */ Any
-  ]
-  
-  type GetInstancesOptions = PagedOptionsWithFilter
-  
-  type GetInstancesResponse = PagedResponse[
-    Instance, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify instanceAdmin.spanner.admin.instance.v1.IListInstancesResponse */ Any
-  ]
-  
-  type IOperation = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify instanceAdmin.longrunning.IOperation */ Any
-  
-  trait RequestConfig extends StObject {
-    
-    var client: String
-    
-    var gaxOpts: js.UndefOr[CallOptions] = js.undefined
-    
-    var headers: StringDictionary[String]
-    
-    var method: String
-    
-    var reqOpts: Any
-  }
-  object RequestConfig {
-    
-    inline def apply(client: String, headers: StringDictionary[String], method: String, reqOpts: Any): RequestConfig = {
-      val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], reqOpts = reqOpts.asInstanceOf[js.Any])
-      __obj.asInstanceOf[RequestConfig]
-    }
-    
-    extension [Self <: RequestConfig](x: Self) {
-      
-      inline def setClient(value: String): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
-      
-      inline def setGaxOpts(value: CallOptions): Self = StObject.set(x, "gaxOpts", value.asInstanceOf[js.Any])
-      
-      inline def setGaxOptsUndefined: Self = StObject.set(x, "gaxOpts", js.undefined)
-      
-      inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
-      
-      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
-      
-      inline def setReqOpts(value: Any): Self = StObject.set(x, "reqOpts", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  /**
     * [Cloud Spanner](https://cloud.google.com/spanner) is a highly scalable,
     * transactional, managed, NewSQL database service. Cloud Spanner solves the
     * need for a horizontally-scaling database with consistent global transaction
@@ -569,8 +470,10 @@ object mod {
     *
     * @param {ClientConfig} [options] Configuration options.
     */
+  @JSImport("@google-cloud/spanner", "Spanner")
   @js.native
-  trait Spanner extends GrpcService {
+  open class Spanner () extends GrpcService {
+    def this(options: SpannerOptions) = this()
     
     var auth: GoogleAuth[JSONClient] = js.native
     
@@ -1001,9 +904,9 @@ object mod {
       * const instance = spanner.instance('my-instance');
       * ```
       */
-    def instance(name: String): Instance = js.native
+    def instance(name: String): typings.googleCloudSpanner.buildSrcInstanceMod.Instance = js.native
     
-    var instances_ : Map[String, Instance] = js.native
+    var instances_ : Map[String, typings.googleCloudSpanner.buildSrcInstanceMod.Instance] = js.native
     
     var options: GoogleAuthOptions[JSONClient] = js.native
     
@@ -1050,6 +953,480 @@ object mod {
     def requestStream(config: Any): Any = js.native
     
     var resourceHeader_ : StringDictionary[String] = js.native
+  }
+  object Spanner {
+    
+    @JSImport("@google-cloud/spanner", "Spanner")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Placeholder used to auto populate a column with the commit timestamp.
+      * This can only be used for timestamp columns that have set the option
+      * "(allow_commit_timestamp=true)" in the schema.
+      *
+      * @type {string}
+      */
+    /* static member */
+    @JSImport("@google-cloud/spanner", "Spanner.COMMIT_TIMESTAMP")
+    @js.native
+    def COMMIT_TIMESTAMP: String = js.native
+    inline def COMMIT_TIMESTAMP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COMMIT_TIMESTAMP")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("@google-cloud/spanner", "Spanner.GOOGLE_STANDARD_SQL")
+    @js.native
+    def GOOGLE_STANDARD_SQL: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.spanner.admin.database.v1.DatabaseDialect */ Any = js.native
+    inline def GOOGLE_STANDARD_SQL_=(
+      x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.spanner.admin.database.v1.DatabaseDialect */ Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GOOGLE_STANDARD_SQL")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("@google-cloud/spanner", "Spanner.POSTGRESQL")
+    @js.native
+    def POSTGRESQL: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.spanner.admin.database.v1.DatabaseDialect */ Any = js.native
+    inline def POSTGRESQL_=(
+      x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.spanner.admin.database.v1.DatabaseDialect */ Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("POSTGRESQL")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    inline def date(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("date")().asInstanceOf[Any]
+    inline def date(dateString: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("date")(dateString.asInstanceOf[js.Any]).asInstanceOf[Any]
+    /* static member */
+    inline def date(year: Double, month: Double, date: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Any]
+    
+    /**
+      * Helper function to get a Cloud Spanner Float64 object.
+      *
+      * @param {string|number} value The float as a number or string.
+      * @returns {Float}
+      *
+      * @example
+      * ```
+      * const {Spanner} = require('@google-cloud/spanner');
+      * const float = Spanner.float(10);
+      * ```
+      */
+    /* static member */
+    inline def float(value: Any): Float = ^.asInstanceOf[js.Dynamic].applyDynamic("float")(value.asInstanceOf[js.Any]).asInstanceOf[Float]
+    
+    /**
+      * Gets the configured Spanner emulator host from an environment variable.
+      */
+    /* static member */
+    inline def getSpannerEmulatorHost(): js.UndefOr[Endpoint] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSpannerEmulatorHost")().asInstanceOf[js.UndefOr[Endpoint]]
+    
+    /**
+      * Helper function to get a Cloud Spanner Int64 object.
+      *
+      * @param {string|number} value The int as a number or string.
+      * @returns {Int}
+      *
+      * @example
+      * ```
+      * const {Spanner} = require('@google-cloud/spanner');
+      * const int = Spanner.int(10);
+      * ```
+      */
+    /* static member */
+    inline def int(value: Any): Int = ^.asInstanceOf[js.Dynamic].applyDynamic("int")(value.asInstanceOf[js.Any]).asInstanceOf[Int]
+    
+    /**
+      * Helper function to get a Cloud Spanner Numeric object.
+      *
+      * @param {string} value The numeric value as a string.
+      * @returns {Numeric}
+      *
+      * @example
+      * ```
+      * const {Spanner} = require('@google-cloud/spanner');
+      * const numeric = Spanner.numeric("3.141592653");
+      * ```
+      */
+    /* static member */
+    inline def numeric(value: Any): Numeric = ^.asInstanceOf[js.Dynamic].applyDynamic("numeric")(value.asInstanceOf[js.Any]).asInstanceOf[Numeric]
+    
+    /**
+      * Helper function to get a Cloud Spanner pgNumeric object.
+      *
+      * @param {string} value The pgNumeric value as a string.
+      * @returns {PGNumeric}
+      *
+      * @example
+      * ```
+      * const {Spanner} = require('@google-cloud/spanner');
+      * const pgNumeric = Spanner.pgNumeric("3.141592653");
+      * ```
+      */
+    /* static member */
+    inline def pgNumeric(value: Any): PGNumeric = ^.asInstanceOf[js.Dynamic].applyDynamic("pgNumeric")(value.asInstanceOf[js.Any]).asInstanceOf[PGNumeric]
+    
+    /**
+      * Helper function to get a Cloud Spanner Struct object.
+      *
+      * @param {object} value The struct as a JSON object.
+      * @returns {Struct}
+      *
+      * @example
+      * ```
+      * const {Spanner} = require('@google-cloud/spanner');
+      * const struct = Spanner.struct({
+      *   user: 'bob',
+      *   age: 32
+      * });
+      * ```
+      */
+    /* static member */
+    inline def struct(): Struct = ^.asInstanceOf[js.Dynamic].applyDynamic("struct")().asInstanceOf[Struct]
+    inline def struct(value: Any): Struct = ^.asInstanceOf[js.Dynamic].applyDynamic("struct")(value.asInstanceOf[js.Any]).asInstanceOf[Struct]
+    
+    /**
+      * Date object with nanosecond precision. Supports all standard Date arguments
+      * in addition to several custom types.
+      * @external PreciseDate
+      * @see {@link https://github.com/googleapis/nodejs-precise-date|PreciseDate}
+      */
+    /**
+      * Helper function to get a Cloud Spanner Timestamp object.
+      *
+      * String timestamps should have a canonical format of
+      * `YYYY-[M]M-[D]D[( |T)[H]H:[M]M:[S]S[.DDDDDDDDD]]Z`
+      *
+      * **Timestamp values must be expressed in Zulu time and cannot include a UTC
+      * offset.**
+      *
+      * @see https://cloud.google.com/spanner/docs/data-types#timestamp-type
+      *
+      * @param {string|number|google.protobuf.Timestamp|external:PreciseDate}
+      *     [timestamp] Either a RFC 3339 timestamp formatted string or a
+      *     {@link google.protobuf.Timestamp} object. If a PreciseDate is given, it
+      *     will return that timestamp as is.
+      * @returns {external:PreciseDate}
+      *
+      * @example
+      * ```
+      * const timestamp = Spanner.timestamp('2019-02-08T10:34:29.481145231Z');
+      *
+      * ```
+      * @example With a `google.protobuf.Timestamp` object
+      * ```
+      * const [seconds, nanos] = process.hrtime();
+      * const timestamp = Spanner.timestamp({seconds, nanos});
+      * ```
+      *
+      * @example With a Date timestamp
+      * ```
+      * const timestamp = Spanner.timestamp(Date.now());
+      * ```
+      */
+    /* static member */
+    inline def timestamp(): PreciseDate = ^.asInstanceOf[js.Dynamic].applyDynamic("timestamp")().asInstanceOf[PreciseDate]
+    inline def timestamp(value: String): PreciseDate = ^.asInstanceOf[js.Dynamic].applyDynamic("timestamp")(value.asInstanceOf[js.Any]).asInstanceOf[PreciseDate]
+    inline def timestamp(value: Double): PreciseDate = ^.asInstanceOf[js.Dynamic].applyDynamic("timestamp")(value.asInstanceOf[js.Any]).asInstanceOf[PreciseDate]
+    inline def timestamp(value: PreciseDate): PreciseDate = ^.asInstanceOf[js.Dynamic].applyDynamic("timestamp")(value.asInstanceOf[js.Any]).asInstanceOf[PreciseDate]
+    inline def timestamp(value: ITimestamp): PreciseDate = ^.asInstanceOf[js.Dynamic].applyDynamic("timestamp")(value.asInstanceOf[js.Any]).asInstanceOf[PreciseDate]
+  }
+  
+  /**
+    * Create a Table object to interact with a table in a Cloud Spanner
+    * database.
+    *
+    * @class
+    *
+    * @param {Database} database {@link Database} instance.
+    * @param {string} name Name of the table.
+    *
+    * @example
+    * ```
+    * const {Spanner} = require('@google-cloud/spanner');
+    * const spanner = new Spanner();
+    *
+    * const instance = spanner.instance('my-instance');
+    * const database = instance.database('my-database');
+    * const table = database.table('my-table');
+    * ```
+    */
+  @JSImport("@google-cloud/spanner", "Table")
+  @js.native
+  open class Table protected ()
+    extends typings.googleCloudSpanner.buildSrcTableMod.Table {
+    def this(database: typings.googleCloudSpanner.buildSrcDatabaseMod.Database, name: String) = this()
+  }
+  
+  @JSImport("@google-cloud/spanner", "Transaction")
+  @js.native
+  open class Transaction protected ()
+    extends typings.googleCloudSpanner.buildSrcTransactionMod.Transaction {
+    /**
+      * Timestamp at which the transaction was committed. Will be populated once
+      * {@link Transaction#commit} is called.
+      *
+      * @name Transaction#commitTimestamp
+      * @type {?external:PreciseDate}
+      */
+    /**
+      * The protobuf version of {@link Transaction#commitTimestamp}. This is useful
+      * if you require microsecond precision.
+      *
+      * @name Transaction#commitTimestampProto
+      * @type {?google.protobuf.Timestamp}
+      */
+    /**
+      * Execute a DML statement and get the affected row count.
+      *
+      * @name Transaction#runUpdate
+      *
+      * @see {@link Transaction#run}
+      *
+      * @param {string|object} query A DML statement or
+      *     [`ExecuteSqlRequest`](https://cloud.google.com/spanner/docs/reference/rpc/google.spanner.v1#google.spanner.v1.ExecuteSqlRequest)
+      *     object.
+      * @param {object} [query.params] A map of parameter name to values.
+      * @param {object} [query.types] A map of parameter types.
+      * @param {RunUpdateCallback} [callback] Callback function.
+      * @returns {Promise<RunUpdateResponse>}
+      *
+      * @example
+      * ```
+      * const query = 'UPDATE Account SET Balance = 1000 WHERE Key = 1';
+      *
+      * transaction.runUpdate(query, (err, rowCount) => {
+      *   if (err) {
+      *     // Error handling omitted.
+      *   }
+      * });
+      * ```
+      */
+    def this(session: typings.googleCloudSpanner.buildSrcSessionMod.Session) = this()
+    def this(
+      session: typings.googleCloudSpanner.buildSrcSessionMod.Session,
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify spannerClient.spanner.v1.TransactionOptions.ReadWrite */ Any
+    ) = this()
+    def this(
+      session: typings.googleCloudSpanner.buildSrcSessionMod.Session,
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify spannerClient.spanner.v1.TransactionOptions.ReadWrite */ Any,
+      queryOptions: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IQueryOptions */ Any
+    ) = this()
+    def this(
+      session: typings.googleCloudSpanner.buildSrcSessionMod.Session,
+      options: Unit,
+      queryOptions: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IQueryOptions */ Any
+    ) = this()
+    def this(
+      session: typings.googleCloudSpanner.buildSrcSessionMod.Session,
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify spannerClient.spanner.v1.TransactionOptions.ReadWrite */ Any,
+      queryOptions: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IQueryOptions */ Any,
+      requestOptions: PickanytransactionTag
+    ) = this()
+    def this(
+      session: typings.googleCloudSpanner.buildSrcSessionMod.Session,
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify spannerClient.spanner.v1.TransactionOptions.ReadWrite */ Any,
+      queryOptions: Unit,
+      requestOptions: PickanytransactionTag
+    ) = this()
+    def this(
+      session: typings.googleCloudSpanner.buildSrcSessionMod.Session,
+      options: Unit,
+      queryOptions: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IQueryOptions */ Any,
+      requestOptions: PickanytransactionTag
+    ) = this()
+    def this(
+      session: typings.googleCloudSpanner.buildSrcSessionMod.Session,
+      options: Unit,
+      queryOptions: Unit,
+      requestOptions: PickanytransactionTag
+    ) = this()
+  }
+  /* static members */
+  object Transaction {
+    
+    @JSImport("@google-cloud/spanner", "Transaction")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Decorates an error returned by a commit with additional information for
+      * specific known errors.
+      * @param err the error to check and decorate with additional information if possible
+      * @param mutations the mutations included in the commit request
+      * @private
+      */
+    @JSImport("@google-cloud/spanner", "Transaction.decorateCommitError")
+    @js.native
+    def decorateCommitError: Any = js.native
+    inline def decorateCommitError_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decorateCommitError")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Decorates an error returned by a commit with additional information if the
+      * error was returned because the application tried to insert an array of
+      * objects into a JSON column. An array of objects will by default be encoded
+      * as ARRAY<JSON>, but can also be interpreted as JSON. An application must
+      * specify a top-level array of objects that should be inserted into a JSON
+      * column as a string instead of as an array of objects.
+      * @param err the error returned by the commit RPC
+      * @param mutations the mutations included in the commit request
+      * @private
+      */
+    @JSImport("@google-cloud/spanner", "Transaction.decoratePossibleJsonMismatchError")
+    @js.native
+    def decoratePossibleJsonMismatchError: Any = js.native
+    inline def decoratePossibleJsonMismatchError_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decoratePossibleJsonMismatchError")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@google-cloud/spanner", "Transaction.extractKnownMetadata")
+    @js.native
+    def extractKnownMetadata: Any = js.native
+    inline def extractKnownMetadata_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extractKnownMetadata")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Takes a list of rows and returns all unique column names.
+      *
+      * @private
+      *
+      * @param {object[]} rows The rows.
+      * @returns {string[]}
+      */
+    inline def getUniqueKeys(rows: js.Array[js.Object]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUniqueKeys")(rows.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  }
+  
+  trait CreateInstanceRequest extends StObject {
+    
+    var config: js.UndefOr[String] = js.undefined
+    
+    var displayName: js.UndefOr[String] = js.undefined
+    
+    var gaxOptions: js.UndefOr[CallOptions] = js.undefined
+    
+    var labels: js.UndefOr[StringDictionary[String] | Null] = js.undefined
+    
+    var nodes: js.UndefOr[Double] = js.undefined
+    
+    var processingUnits: js.UndefOr[Double] = js.undefined
+  }
+  object CreateInstanceRequest {
+    
+    inline def apply(): CreateInstanceRequest = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CreateInstanceRequest]
+    }
+    
+    extension [Self <: CreateInstanceRequest](x: Self) {
+      
+      inline def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      
+      inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+      
+      inline def setGaxOptions(value: CallOptions): Self = StObject.set(x, "gaxOptions", value.asInstanceOf[js.Any])
+      
+      inline def setGaxOptionsUndefined: Self = StObject.set(x, "gaxOptions", js.undefined)
+      
+      inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+      
+      inline def setLabelsNull: Self = StObject.set(x, "labels", null)
+      
+      inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+      
+      inline def setNodes(value: Double): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      
+      inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
+      
+      inline def setProcessingUnits(value: Double): Self = StObject.set(x, "processingUnits", value.asInstanceOf[js.Any])
+      
+      inline def setProcessingUnitsUndefined: Self = StObject.set(x, "processingUnits", js.undefined)
+    }
+  }
+  
+  type EnumKey[E /* <: StringDictionary[Any] */] = /* keyof E */ String
+  
+  type GetInstanceConfigCallback = NormalCallback[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IInstanceConfig */ Any
+  ]
+  
+  trait GetInstanceConfigOptions extends StObject {
+    
+    var gaxOptions: js.UndefOr[CallOptions] = js.undefined
+  }
+  object GetInstanceConfigOptions {
+    
+    inline def apply(): GetInstanceConfigOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[GetInstanceConfigOptions]
+    }
+    
+    extension [Self <: GetInstanceConfigOptions](x: Self) {
+      
+      inline def setGaxOptions(value: CallOptions): Self = StObject.set(x, "gaxOptions", value.asInstanceOf[js.Any])
+      
+      inline def setGaxOptionsUndefined: Self = StObject.set(x, "gaxOptions", js.undefined)
+    }
+  }
+  
+  type GetInstanceConfigResponse = js.Array[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IInstanceConfig */ Any
+  ]
+  
+  type GetInstanceConfigsCallback = PagedCallback[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify instanceAdmin.spanner.admin.instance.v1.IInstanceConfig */ Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify instanceAdmin.spanner.admin.instance.v1.IListInstanceConfigsResponse */ Any
+  ]
+  
+  type GetInstanceConfigsOptions = PagedOptions
+  
+  type GetInstanceConfigsResponse = PagedResponse[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify instanceAdmin.spanner.admin.instance.v1.IInstanceConfig */ Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify instanceAdmin.spanner.admin.instance.v1.IListInstanceConfigsResponse */ Any
+  ]
+  
+  type GetInstancesCallback = PagedCallback[
+    typings.googleCloudSpanner.buildSrcInstanceMod.Instance, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify instanceAdmin.spanner.admin.instance.v1.IListInstancesResponse */ Any
+  ]
+  
+  type GetInstancesOptions = PagedOptionsWithFilter
+  
+  type GetInstancesResponse = PagedResponse[
+    typings.googleCloudSpanner.buildSrcInstanceMod.Instance, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify instanceAdmin.spanner.admin.instance.v1.IListInstancesResponse */ Any
+  ]
+  
+  type IOperation = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify instanceAdmin.longrunning.IOperation */ Any
+  
+  trait RequestConfig extends StObject {
+    
+    var client: String
+    
+    var gaxOpts: js.UndefOr[CallOptions] = js.undefined
+    
+    var headers: StringDictionary[String]
+    
+    var method: String
+    
+    var reqOpts: Any
+  }
+  object RequestConfig {
+    
+    inline def apply(client: String, headers: StringDictionary[String], method: String, reqOpts: Any): RequestConfig = {
+      val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], reqOpts = reqOpts.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RequestConfig]
+    }
+    
+    extension [Self <: RequestConfig](x: Self) {
+      
+      inline def setClient(value: String): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      
+      inline def setGaxOpts(value: CallOptions): Self = StObject.set(x, "gaxOpts", value.asInstanceOf[js.Any])
+      
+      inline def setGaxOptsUndefined: Self = StObject.set(x, "gaxOpts", js.undefined)
+      
+      inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      
+      inline def setReqOpts(value: Any): Self = StObject.set(x, "reqOpts", value.asInstanceOf[js.Any])
+    }
   }
   
   trait SpannerOptions

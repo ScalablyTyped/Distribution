@@ -1,5 +1,13 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.COLLABORATOR
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.CONTRIBUTOR
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.FIRST_TIMER
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.FIRST_TIME_CONTRIBUTOR
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.MANNEQUIN
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.MEMBER
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.NONE
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.OWNER
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.closed
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.open
 import org.scalablytyped.runtime.StObject
@@ -8,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Changedfiles extends StObject {
   
-  var _links: Reviewcomment
+  var _links: Commits
   
   /** @example too heated */
   var active_lock_reason: js.UndefOr[String | Null] = js.undefined
@@ -16,19 +24,15 @@ trait Changedfiles extends StObject {
   /** @example 100 */
   var additions: Double
   
-  var assignee: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
+  var assignee: Avatarurl | Null
   
-  var assignees: js.UndefOr[
-    (js.Array[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
-    ]) | Null
-  ] = js.undefined
+  var assignees: js.UndefOr[js.Array[Avatarurl] | Null] = js.undefined
   
-  var author_association: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['author-association'] */ js.Any
+  var author_association: COLLABORATOR | CONTRIBUTOR | FIRST_TIMER | FIRST_TIME_CONTRIBUTOR | MANNEQUIN | MEMBER | NONE | OWNER
   
-  var auto_merge: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['auto-merge'] */ js.Any
+  var auto_merge: Enabledby | Null
   
-  var base: RepoSha
+  var base: LabelRefRepo
   
   /** @example Please pull these awesome changes */
   var body: String | Null
@@ -81,7 +85,7 @@ trait Changedfiles extends StObject {
     */
   var draft: js.UndefOr[Boolean] = js.undefined
   
-  var head: Repo
+  var head: ShaUser
   
   /**
     * Format: uri
@@ -98,7 +102,7 @@ trait Changedfiles extends StObject {
     */
   var issue_url: String
   
-  var labels: js.Array[DefaultDescription]
+  var labels: js.Array[DescriptionId]
   
   /** @example true */
   var locked: Boolean
@@ -126,9 +130,9 @@ trait Changedfiles extends StObject {
     */
   var merged_at: String | Null
   
-  var merged_by: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
+  var merged_by: Avatarurl | Null
   
-  var milestone: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-milestone'] */ js.Any
+  var milestone: Labelsurl | Null
   
   /** @example MDExOlB1bGxSZXF1ZXN0MQ== */
   var node_id: String
@@ -148,17 +152,9 @@ trait Changedfiles extends StObject {
   /** @example true */
   var rebaseable: js.UndefOr[Boolean | Null] = js.undefined
   
-  var requested_reviewers: js.UndefOr[
-    (js.Array[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
-    ]) | Null
-  ] = js.undefined
+  var requested_reviewers: js.UndefOr[js.Array[Avatarurl] | Null] = js.undefined
   
-  var requested_teams: js.UndefOr[
-    (js.Array[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['team-simple'] */ js.Any
-    ]) | Null
-  ] = js.undefined
+  var requested_teams: js.UndefOr[js.Array[Ldapdn] | Null] = js.undefined
   
   /** @example https://api.github.com/repos/octocat/Hello-World/pulls/comments{/number} */
   var review_comment_url: String
@@ -203,17 +199,15 @@ trait Changedfiles extends StObject {
     */
   var url: String
   
-  var user: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
+  var user: Avatarurl | Null
 }
 object Changedfiles {
   
   inline def apply(
-    _links: Reviewcomment,
+    _links: Commits,
     additions: Double,
-    assignee: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any,
-    author_association: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['author-association'] */ js.Any,
-    auto_merge: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['auto-merge'] */ js.Any,
-    base: RepoSha,
+    author_association: COLLABORATOR | CONTRIBUTOR | FIRST_TIMER | FIRST_TIME_CONTRIBUTOR | MANNEQUIN | MEMBER | NONE | OWNER,
+    base: LabelRefRepo,
     changed_files: Double,
     comments: Double,
     comments_url: String,
@@ -222,17 +216,15 @@ object Changedfiles {
     created_at: String,
     deletions: Double,
     diff_url: String,
-    head: Repo,
+    head: ShaUser,
     html_url: String,
     id: Double,
     issue_url: String,
-    labels: js.Array[DefaultDescription],
+    labels: js.Array[DescriptionId],
     locked: Boolean,
     maintainer_can_modify: Boolean,
     mergeable_state: String,
     merged: Boolean,
-    merged_by: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any,
-    milestone: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-milestone'] */ js.Any,
     node_id: String,
     number: Double,
     patch_url: String,
@@ -243,10 +235,9 @@ object Changedfiles {
     statuses_url: String,
     title: String,
     updated_at: String,
-    url: String,
-    user: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
+    url: String
   ): Changedfiles = {
-    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], additions = additions.asInstanceOf[js.Any], assignee = assignee.asInstanceOf[js.Any], author_association = author_association.asInstanceOf[js.Any], auto_merge = auto_merge.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], changed_files = changed_files.asInstanceOf[js.Any], comments = comments.asInstanceOf[js.Any], comments_url = comments_url.asInstanceOf[js.Any], commits = commits.asInstanceOf[js.Any], commits_url = commits_url.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], deletions = deletions.asInstanceOf[js.Any], diff_url = diff_url.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], issue_url = issue_url.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], locked = locked.asInstanceOf[js.Any], maintainer_can_modify = maintainer_can_modify.asInstanceOf[js.Any], mergeable_state = mergeable_state.asInstanceOf[js.Any], merged = merged.asInstanceOf[js.Any], merged_by = merged_by.asInstanceOf[js.Any], milestone = milestone.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], patch_url = patch_url.asInstanceOf[js.Any], review_comment_url = review_comment_url.asInstanceOf[js.Any], review_comments = review_comments.asInstanceOf[js.Any], review_comments_url = review_comments_url.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], statuses_url = statuses_url.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], body = null, closed_at = null, merge_commit_sha = null, mergeable = null, merged_at = null)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], additions = additions.asInstanceOf[js.Any], author_association = author_association.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], changed_files = changed_files.asInstanceOf[js.Any], comments = comments.asInstanceOf[js.Any], comments_url = comments_url.asInstanceOf[js.Any], commits = commits.asInstanceOf[js.Any], commits_url = commits_url.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], deletions = deletions.asInstanceOf[js.Any], diff_url = diff_url.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], issue_url = issue_url.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], locked = locked.asInstanceOf[js.Any], maintainer_can_modify = maintainer_can_modify.asInstanceOf[js.Any], mergeable_state = mergeable_state.asInstanceOf[js.Any], merged = merged.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], patch_url = patch_url.asInstanceOf[js.Any], review_comment_url = review_comment_url.asInstanceOf[js.Any], review_comments = review_comments.asInstanceOf[js.Any], review_comments_url = review_comments_url.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], statuses_url = statuses_url.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], assignee = null, auto_merge = null, body = null, closed_at = null, merge_commit_sha = null, mergeable = null, merged_at = null, merged_by = null, milestone = null, user = null)
     __obj.asInstanceOf[Changedfiles]
   }
   
@@ -260,33 +251,27 @@ object Changedfiles {
     
     inline def setAdditions(value: Double): Self = StObject.set(x, "additions", value.asInstanceOf[js.Any])
     
-    inline def setAssignee(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
-    ): Self = StObject.set(x, "assignee", value.asInstanceOf[js.Any])
+    inline def setAssignee(value: Avatarurl): Self = StObject.set(x, "assignee", value.asInstanceOf[js.Any])
     
-    inline def setAssignees(
-      value: js.Array[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
-        ]
-    ): Self = StObject.set(x, "assignees", value.asInstanceOf[js.Any])
+    inline def setAssigneeNull: Self = StObject.set(x, "assignee", null)
+    
+    inline def setAssignees(value: js.Array[Avatarurl]): Self = StObject.set(x, "assignees", value.asInstanceOf[js.Any])
     
     inline def setAssigneesNull: Self = StObject.set(x, "assignees", null)
     
     inline def setAssigneesUndefined: Self = StObject.set(x, "assignees", js.undefined)
     
-    inline def setAssigneesVarargs(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any)*
-    ): Self = StObject.set(x, "assignees", js.Array(value*))
+    inline def setAssigneesVarargs(value: Avatarurl*): Self = StObject.set(x, "assignees", js.Array(value*))
     
     inline def setAuthor_association(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['author-association'] */ js.Any
+      value: COLLABORATOR | CONTRIBUTOR | FIRST_TIMER | FIRST_TIME_CONTRIBUTOR | MANNEQUIN | MEMBER | NONE | OWNER
     ): Self = StObject.set(x, "author_association", value.asInstanceOf[js.Any])
     
-    inline def setAuto_merge(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['auto-merge'] */ js.Any
-    ): Self = StObject.set(x, "auto_merge", value.asInstanceOf[js.Any])
+    inline def setAuto_merge(value: Enabledby): Self = StObject.set(x, "auto_merge", value.asInstanceOf[js.Any])
     
-    inline def setBase(value: RepoSha): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    inline def setAuto_mergeNull: Self = StObject.set(x, "auto_merge", null)
+    
+    inline def setBase(value: LabelRefRepo): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
     inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
@@ -316,7 +301,7 @@ object Changedfiles {
     
     inline def setDraftUndefined: Self = StObject.set(x, "draft", js.undefined)
     
-    inline def setHead(value: Repo): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+    inline def setHead(value: ShaUser): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
     
     inline def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
     
@@ -324,9 +309,9 @@ object Changedfiles {
     
     inline def setIssue_url(value: String): Self = StObject.set(x, "issue_url", value.asInstanceOf[js.Any])
     
-    inline def setLabels(value: js.Array[DefaultDescription]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: js.Array[DescriptionId]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    inline def setLabelsVarargs(value: DefaultDescription*): Self = StObject.set(x, "labels", js.Array(value*))
+    inline def setLabelsVarargs(value: DescriptionId*): Self = StObject.set(x, "labels", js.Array(value*))
     
     inline def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
     
@@ -348,13 +333,13 @@ object Changedfiles {
     
     inline def setMerged_atNull: Self = StObject.set(x, "merged_at", null)
     
-    inline def setMerged_by(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
-    ): Self = StObject.set(x, "merged_by", value.asInstanceOf[js.Any])
+    inline def setMerged_by(value: Avatarurl): Self = StObject.set(x, "merged_by", value.asInstanceOf[js.Any])
     
-    inline def setMilestone(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-milestone'] */ js.Any
-    ): Self = StObject.set(x, "milestone", value.asInstanceOf[js.Any])
+    inline def setMerged_byNull: Self = StObject.set(x, "merged_by", null)
+    
+    inline def setMilestone(value: Labelsurl): Self = StObject.set(x, "milestone", value.asInstanceOf[js.Any])
+    
+    inline def setMilestoneNull: Self = StObject.set(x, "milestone", null)
     
     inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
@@ -368,33 +353,21 @@ object Changedfiles {
     
     inline def setRebaseableUndefined: Self = StObject.set(x, "rebaseable", js.undefined)
     
-    inline def setRequested_reviewers(
-      value: js.Array[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
-        ]
-    ): Self = StObject.set(x, "requested_reviewers", value.asInstanceOf[js.Any])
+    inline def setRequested_reviewers(value: js.Array[Avatarurl]): Self = StObject.set(x, "requested_reviewers", value.asInstanceOf[js.Any])
     
     inline def setRequested_reviewersNull: Self = StObject.set(x, "requested_reviewers", null)
     
     inline def setRequested_reviewersUndefined: Self = StObject.set(x, "requested_reviewers", js.undefined)
     
-    inline def setRequested_reviewersVarargs(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any)*
-    ): Self = StObject.set(x, "requested_reviewers", js.Array(value*))
+    inline def setRequested_reviewersVarargs(value: Avatarurl*): Self = StObject.set(x, "requested_reviewers", js.Array(value*))
     
-    inline def setRequested_teams(
-      value: js.Array[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['team-simple'] */ js.Any
-        ]
-    ): Self = StObject.set(x, "requested_teams", value.asInstanceOf[js.Any])
+    inline def setRequested_teams(value: js.Array[Ldapdn]): Self = StObject.set(x, "requested_teams", value.asInstanceOf[js.Any])
     
     inline def setRequested_teamsNull: Self = StObject.set(x, "requested_teams", null)
     
     inline def setRequested_teamsUndefined: Self = StObject.set(x, "requested_teams", js.undefined)
     
-    inline def setRequested_teamsVarargs(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['team-simple'] */ js.Any)*
-    ): Self = StObject.set(x, "requested_teams", js.Array(value*))
+    inline def setRequested_teamsVarargs(value: Ldapdn*): Self = StObject.set(x, "requested_teams", js.Array(value*))
     
     inline def setReview_comment_url(value: String): Self = StObject.set(x, "review_comment_url", value.asInstanceOf[js.Any])
     
@@ -412,10 +385,10 @@ object Changedfiles {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    inline def setUser(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
-    ): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: Avatarurl): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: Reviewcomment): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def setUserNull: Self = StObject.set(x, "user", null)
+    
+    inline def set_links(value: Commits): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

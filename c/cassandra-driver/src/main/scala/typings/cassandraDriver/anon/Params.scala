@@ -1,28 +1,25 @@
 package typings.cassandraDriver.anon
 
-import typings.cassandraDriver.mod.ArrayOrObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Params extends StObject {
   
-  var params: js.UndefOr[ArrayOrObject] = js.undefined
+  var params: js.Array[Any]
   
   var query: String
 }
 object Params {
   
-  inline def apply(query: String): Params = {
-    val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
+  inline def apply(params: js.Array[Any], query: String): Params = {
+    val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[Params]
   }
   
   extension [Self <: Params](x: Self) {
     
-    inline def setParams(value: ArrayOrObject): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
-    
-    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParams(value: js.Array[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsVarargs(value: Any*): Self = StObject.set(x, "params", js.Array(value*))
     

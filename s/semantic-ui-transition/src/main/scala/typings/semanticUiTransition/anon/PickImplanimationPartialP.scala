@@ -17,7 +17,7 @@ trait PickImplanimationPartialP
   
   var allowRepeats: js.UndefOr[Boolean] = js.undefined
   
-  var animation: String & js.UndefOr[String]
+  var animation: String
   
   var className: js.UndefOr[ClassNameSettings] = js.undefined
   
@@ -57,7 +57,7 @@ trait PickImplanimationPartialP
 }
 object PickImplanimationPartialP {
   
-  inline def apply(animation: String & js.UndefOr[String]): PickImplanimationPartialP = {
+  inline def apply(animation: String): PickImplanimationPartialP = {
     val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplanimationPartialP]
   }
@@ -68,7 +68,7 @@ object PickImplanimationPartialP {
     
     inline def setAllowRepeatsUndefined: Self = StObject.set(x, "allowRepeats", js.undefined)
     
-    inline def setAnimation(value: String & js.UndefOr[String]): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     inline def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

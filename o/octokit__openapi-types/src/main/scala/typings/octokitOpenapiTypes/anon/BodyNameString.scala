@@ -6,10 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BodyNameString extends StObject {
   
-  /** @description The description of the project. */
-  var body: js.UndefOr[String] = js.undefined
+  /**
+    * @description Body of the project
+    * @example This project represents the sprint of the first week in January
+    */
+  var body: js.UndefOr[String | Null] = js.undefined
   
-  /** @description The name of the project. */
+  /**
+    * @description Name of the project
+    * @example Week One Sprint
+    */
   var name: String
 }
 object BodyNameString {
@@ -22,6 +28,8 @@ object BodyNameString {
   extension [Self <: BodyNameString](x: Self) {
     
     inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    
+    inline def setBodyNull: Self = StObject.set(x, "body", null)
     
     inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     

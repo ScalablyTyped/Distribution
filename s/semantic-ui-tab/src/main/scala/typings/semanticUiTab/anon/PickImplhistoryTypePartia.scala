@@ -52,7 +52,7 @@ trait PickImplhistoryTypePartia
   
   var history: js.UndefOr[Boolean] = js.undefined
   
-  var historyType: (hash | state) & (js.UndefOr[hash | state])
+  var historyType: hash | state
   
   var ignoreFirstLoad: js.UndefOr[Boolean] = js.undefined
   
@@ -104,7 +104,7 @@ trait PickImplhistoryTypePartia
 }
 object PickImplhistoryTypePartia {
   
-  inline def apply(historyType: (hash | state) & (js.UndefOr[hash | state])): PickImplhistoryTypePartia = {
+  inline def apply(historyType: hash | state): PickImplhistoryTypePartia = {
     val __obj = js.Dynamic.literal(historyType = historyType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplhistoryTypePartia]
   }
@@ -161,7 +161,7 @@ object PickImplhistoryTypePartia {
     
     inline def setHistory(value: Boolean): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
-    inline def setHistoryType(value: (hash | state) & (js.UndefOr[hash | state])): Self = StObject.set(x, "historyType", value.asInstanceOf[js.Any])
+    inline def setHistoryType(value: hash | state): Self = StObject.set(x, "historyType", value.asInstanceOf[js.Any])
     
     inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
     

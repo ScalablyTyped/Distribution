@@ -1,6 +1,6 @@
 package typings.parcelTypes.mod
 
-import typings.parcelTypes.anon.IsWeak
+import typings.parcelTypes.anon.Local
 import typings.std.ReadonlyMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -75,7 +75,7 @@ trait DependencyOptions extends StObject {
   val specifierType: SpecifierType
   
   /** The symbols within the resolved module that the source file depends on. */
-  val symbols: js.UndefOr[ReadonlyMap[Symbol, IsWeak]] = js.undefined
+  val symbols: js.UndefOr[ReadonlyMap[Symbol, Local]] = js.undefined
 }
 object DependencyOptions {
   
@@ -130,7 +130,7 @@ object DependencyOptions {
     
     inline def setSpecifierType(value: SpecifierType): Self = StObject.set(x, "specifierType", value.asInstanceOf[js.Any])
     
-    inline def setSymbols(value: ReadonlyMap[Symbol, IsWeak]): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
+    inline def setSymbols(value: ReadonlyMap[Symbol, Local]): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
     
     inline def setSymbolsUndefined: Self = StObject.set(x, "symbols", js.undefined)
   }

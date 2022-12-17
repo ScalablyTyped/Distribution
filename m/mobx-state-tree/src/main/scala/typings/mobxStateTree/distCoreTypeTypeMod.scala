@@ -17,15 +17,15 @@ object distCoreTypeTypeMod {
   
   inline def isType(value: Any): /* is mobx-state-tree.mobx-state-tree/dist/core/type/type.IAnyType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isType")(value.asInstanceOf[js.Any]).asInstanceOf[/* is mobx-state-tree.mobx-state-tree/dist/core/type/type.IAnyType */ Boolean]
   
-  type ExtractCSTWithSTN[IT /* <: CreationType */] = /* import warning: importer.ImportType#apply Failed type conversion: IT['CreationType'] */ js.Any
+  type ExtractCSTWithSTN[IT /* <: SnapshotType */] = /* import warning: importer.ImportType#apply Failed type conversion: IT['CreationType'] */ js.Any
   
-  type ExtractCSTWithoutSTN[IT /* <: SnapshotType */] = /* import warning: importer.ImportType#apply Failed type conversion: IT['CreationType'] */ js.Any
+  type ExtractCSTWithoutSTN[IT /* <: CreationType */] = /* import warning: importer.ImportType#apply Failed type conversion: IT['CreationType'] */ js.Any
   
   type IAnyComplexType = IType[Any, Any, js.Object]
   
   type IAnyType = IType[Any, Any, Any]
   
-  type IComplexType[C, S, T] = IType[C, S, T & js.Object]
+  type IComplexType[C, S, T] = IType[C, S, T]
   
   type ISimpleType[T] = IType[T, T, T]
   

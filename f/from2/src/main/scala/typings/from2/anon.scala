@@ -38,7 +38,7 @@ object anon {
     
     var highWaterMark: js.UndefOr[Double] = js.undefined
     
-    var objectMode: js.UndefOr[`true`] & js.UndefOr[Boolean]
+    var objectMode: js.UndefOr[`true`] = js.undefined
     
     var read: js.UndefOr[js.ThisFunction1[/* this */ Readable, /* size */ Double, Unit]] = js.undefined
     
@@ -49,8 +49,8 @@ object anon {
   }
   object objectModetrueundefinedRe {
     
-    inline def apply(objectMode: js.UndefOr[`true`] & js.UndefOr[Boolean]): objectModetrueundefinedRe = {
-      val __obj = js.Dynamic.literal(objectMode = objectMode.asInstanceOf[js.Any])
+    inline def apply(): objectModetrueundefinedRe = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[objectModetrueundefinedRe]
     }
     
@@ -93,7 +93,9 @@ object anon {
       
       inline def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
       
-      inline def setObjectMode(value: js.UndefOr[`true`] & js.UndefOr[Boolean]): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
+      inline def setObjectMode(value: `true`): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
+      
+      inline def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
       
       inline def setRead(value: js.ThisFunction1[/* this */ Readable, /* size */ Double, Unit]): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
       

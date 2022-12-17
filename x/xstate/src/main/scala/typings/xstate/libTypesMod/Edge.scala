@@ -1,7 +1,7 @@
 package typings.xstate.libTypesMod
 
 import typings.xstate.anon.Context
-import typings.xstate.anon.`0`
+import typings.xstate.anon.`3`
 import typings.xstate.libStateNodeMod.StateNode
 import typings.xstate.libTypegenTypesMod.TypegenDisabled
 import org.scalablytyped.runtime.StObject
@@ -12,7 +12,7 @@ trait Edge[TContext, TEvent /* <: EventObject */, TEventType /* <: /* import war
   
   var actions: js.Array[Action[TContext, TEvent]]
   
-  var cond: js.UndefOr[Condition[TContext, TEvent & (`0`[TEventType, TEvent])]] = js.undefined
+  var cond: js.UndefOr[Condition[TContext, TEvent & (`3`[TEventType, TEvent])]] = js.undefined
   
   var event: TEventType
   
@@ -43,10 +43,10 @@ object Edge {
     
     inline def setActionsVarargs(value: (Action[TContext, TEvent])*): Self = StObject.set(x, "actions", js.Array(value*))
     
-    inline def setCond(value: Condition[TContext, TEvent & (`0`[TEventType, TEvent])]): Self = StObject.set(x, "cond", value.asInstanceOf[js.Any])
+    inline def setCond(value: Condition[TContext, TEvent & (`3`[TEventType, TEvent])]): Self = StObject.set(x, "cond", value.asInstanceOf[js.Any])
     
     inline def setCondFunction3(
-      value: (TContext, TEvent & (`0`[TEventType, TEvent]), /* meta */ GuardMeta[TContext, TEvent & (`0`[TEventType, TEvent])]) => Boolean
+      value: (TContext, TEvent & (`3`[TEventType, TEvent]), /* meta */ GuardMeta[TContext, TEvent & (`3`[TEventType, TEvent])]) => Boolean
     ): Self = StObject.set(x, "cond", js.Any.fromFunction3(value))
     
     inline def setCondUndefined: Self = StObject.set(x, "cond", js.undefined)

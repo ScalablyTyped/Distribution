@@ -2,7 +2,6 @@ package typings.fabric.fabricImplMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.fabric.anon.CrossOrigin
-import typings.fabric.anon.Offset
 import typings.fabric.fabricImplMod.^
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
@@ -106,7 +105,7 @@ type ControlMouseEventHandler = js.Function4[
 /* y */ Double, 
 Boolean]
 
-type IGradientOptionsColorStops = js.Array[Offset]
+type IGradientOptionsColorStops = js.Array[typings.fabric.anon.Color]
 
 type ITriangleOptions = IObjectOptions
 

@@ -18,7 +18,7 @@ trait PickImplautofocusPartialP
   
   var allowMultiple: js.UndefOr[Boolean] = js.undefined
   
-  var autofocus: Boolean & js.UndefOr[Boolean]
+  var autofocus: Boolean
   
   var className: js.UndefOr[ClassNameSettings] = js.undefined
   
@@ -72,7 +72,7 @@ trait PickImplautofocusPartialP
 }
 object PickImplautofocusPartialP {
   
-  inline def apply(autofocus: Boolean & js.UndefOr[Boolean]): PickImplautofocusPartialP = {
+  inline def apply(autofocus: Boolean): PickImplautofocusPartialP = {
     val __obj = js.Dynamic.literal(autofocus = autofocus.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplautofocusPartialP]
   }
@@ -83,7 +83,7 @@ object PickImplautofocusPartialP {
     
     inline def setAllowMultipleUndefined: Self = StObject.set(x, "allowMultiple", js.undefined)
     
-    inline def setAutofocus(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "autofocus", value.asInstanceOf[js.Any])
+    inline def setAutofocus(value: Boolean): Self = StObject.set(x, "autofocus", value.asInstanceOf[js.Any])
     
     inline def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

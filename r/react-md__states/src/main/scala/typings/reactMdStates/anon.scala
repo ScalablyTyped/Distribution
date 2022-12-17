@@ -5811,7 +5811,7 @@ object anon {
       *
       * @see https://developer.mozilla.org/docs/Web/CSS/height
       */
-    var height: (js.UndefOr[Height[String | Double]]) & Double
+    var height: js.UndefOr[Height[String | Double]] = js.undefined
     
     /**
       * The **`hyphenate-character`** CSS property sets the character (or string) used at the end of a line before a hyphenation break.
@@ -6123,7 +6123,7 @@ object anon {
       *
       * @see https://developer.mozilla.org/docs/Web/CSS/left
       */
-    var left: (js.UndefOr[Left[String | Double]]) & Double
+    var left: js.UndefOr[Left[String | Double]] = js.undefined
     
     /**
       * The **`letter-spacing`** CSS property sets the horizontal spacing behavior between text characters. This value is added to the natural spacing between characters while rendering the text. Positive values of `letter-spacing` causes characters to spread farther apart, while negative values of `letter-spacing` bring characters closer together.
@@ -9584,7 +9584,7 @@ object anon {
       *
       * @see https://developer.mozilla.org/docs/Web/CSS/top
       */
-    var top: (js.UndefOr[Top[String | Double]]) & Double
+    var top: js.UndefOr[Top[String | Double]] = js.undefined
     
     /**
       * The **`touch-action`** CSS property sets how an element's region can be manipulated by a touchscreen user (for example, by zooming features built into the browser).
@@ -9864,7 +9864,7 @@ object anon {
       *
       * @see https://developer.mozilla.org/docs/Web/CSS/width
       */
-    var width: (js.UndefOr[Width[String | Double]]) & Double
+    var width: js.UndefOr[Width[String | Double]] = js.undefined
     
     /**
       * The **`will-change`** CSS property hints to browsers how an element is expected to change. Browsers may set up optimizations before an element is actually changed. These kinds of optimizations can increase the responsiveness of a page by doing potentially expensive work before they are actually required.
@@ -9968,13 +9968,8 @@ object anon {
   }
   object CSSPropertiesleftnumberto {
     
-    inline def apply(
-      height: (js.UndefOr[Height[String | Double]]) & Double,
-      left: (js.UndefOr[Left[String | Double]]) & Double,
-      top: (js.UndefOr[Top[String | Double]]) & Double,
-      width: (js.UndefOr[Width[String | Double]]) & Double
-    ): CSSPropertiesleftnumberto = {
-      val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    inline def apply(): CSSPropertiesleftnumberto = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CSSPropertiesleftnumberto]
     }
     
@@ -10796,7 +10791,9 @@ object anon {
       
       inline def setHangingPunctuationUndefined: Self = StObject.set(x, "hangingPunctuation", js.undefined)
       
-      inline def setHeight(value: (js.UndefOr[Height[String | Double]]) & Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Height[String | Double]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
       inline def setHyphenateCharacter(value: HyphenateCharacter): Self = StObject.set(x, "hyphenateCharacter", value.asInstanceOf[js.Any])
       
@@ -10926,7 +10923,9 @@ object anon {
       
       inline def setKhtmlUserSelectUndefined: Self = StObject.set(x, "KhtmlUserSelect", js.undefined)
       
-      inline def setLeft(value: (js.UndefOr[Left[String | Double]]) & Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Left[String | Double]): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      
+      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
       inline def setLetterSpacing(value: LetterSpacing[String | Double]): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
       
@@ -12496,7 +12495,9 @@ object anon {
       
       inline def setTextUnderlinePositionUndefined: Self = StObject.set(x, "textUnderlinePosition", js.undefined)
       
-      inline def setTop(value: (js.UndefOr[Top[String | Double]]) & Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Top[String | Double]): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      
+      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
       
       inline def setTouchAction(value: TouchAction): Self = StObject.set(x, "touchAction", value.asInstanceOf[js.Any])
       
@@ -13098,7 +13099,9 @@ object anon {
       
       inline def setWidowsUndefined: Self = StObject.set(x, "widows", js.undefined)
       
-      inline def setWidth(value: (js.UndefOr[Width[String | Double]]) & Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Width[String | Double]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
       inline def setWillChange(value: WillChange): Self = StObject.set(x, "willChange", value.asInstanceOf[js.Any])
       
@@ -13130,14 +13133,8 @@ object anon {
     }
   }
   
-  /* Inlined std.Pick<@react-md/states.@react-md/states/types/ripples/types.RippleEvent<std.HTMLElement>, 'pageX' | 'pageY' | 'touches' | 'type'> */
+  /* Inlined std.Pick<@react-md/states.@react-md/states/types/ripples/types.RippleEvent<std.HTMLElement>, 'type'> */
   trait PickRippleEventHTMLElemen extends StObject {
-    
-    var pageX: js.UndefOr[Double] = js.undefined
-    
-    var pageY: js.UndefOr[Double] = js.undefined
-    
-    var touches: js.UndefOr[TouchList] = js.undefined
     
     var `type`: String
   }
@@ -13151,6 +13148,31 @@ object anon {
     
     extension [Self <: PickRippleEventHTMLElemen](x: Self) {
       
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Inlined std.Pick<@react-md/states.@react-md/states/types/ripples/types.RippleEvent<std.HTMLElement>, 'pageX' | 'pageY' | 'touches' | 'type'> */
+  trait PickRippleEventHTMLElemenPageX extends StObject {
+    
+    var pageX: js.UndefOr[Double] = js.undefined
+    
+    var pageY: js.UndefOr[Double] = js.undefined
+    
+    var touches: js.UndefOr[TouchList] = js.undefined
+    
+    var `type`: String
+  }
+  object PickRippleEventHTMLElemenPageX {
+    
+    inline def apply(`type`: String): PickRippleEventHTMLElemenPageX = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PickRippleEventHTMLElemenPageX]
+    }
+    
+    extension [Self <: PickRippleEventHTMLElemenPageX](x: Self) {
+      
       inline def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
       
       inline def setPageXUndefined: Self = StObject.set(x, "pageX", js.undefined)
@@ -13162,25 +13184,6 @@ object anon {
       inline def setTouches(value: TouchList): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
       
       inline def setTouchesUndefined: Self = StObject.set(x, "touches", js.undefined)
-      
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  /* Inlined std.Pick<@react-md/states.@react-md/states/types/ripples/types.RippleEvent<std.HTMLElement>, 'type'> */
-  trait PickRippleEventHTMLElemenType extends StObject {
-    
-    var `type`: String
-  }
-  object PickRippleEventHTMLElemenType {
-    
-    inline def apply(`type`: String): PickRippleEventHTMLElemenType = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[PickRippleEventHTMLElemenType]
-    }
-    
-    extension [Self <: PickRippleEventHTMLElemenType](x: Self) {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

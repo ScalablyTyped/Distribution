@@ -16,10 +16,6 @@ object tsutilsStrings {
   inline def Linefeed: Linefeed = "\n".asInstanceOf[Linefeed]
   
   @js.native
-  sealed trait Symbol extends StObject
-  inline def Symbol: Symbol = "Symbol".asInstanceOf[Symbol]
-  
-  @js.native
   sealed trait alwaysStrict
     extends StObject
        with StrictCompilerOption
@@ -36,10 +32,6 @@ object tsutilsStrings {
     extends StObject
        with StrictCompilerOption
   inline def noImplicitThis: noImplicitThis = "noImplicitThis".asInstanceOf[noImplicitThis]
-  
-  @js.native
-  sealed trait require extends StObject
-  inline def require: require = "require".asInstanceOf[require]
   
   @js.native
   sealed trait strictBindCallApply
@@ -68,8 +60,4 @@ object tsutilsStrings {
   @js.native
   sealed trait stripInternal extends StObject
   inline def stripInternal: stripInternal = "stripInternal".asInstanceOf[stripInternal]
-  
-  @js.native
-  sealed trait symbol_ extends StObject
-  inline def symbol_ : symbol_ = "symbol".asInstanceOf[symbol_]
 }

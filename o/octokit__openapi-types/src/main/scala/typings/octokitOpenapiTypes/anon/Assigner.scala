@@ -44,18 +44,18 @@ trait Assigner extends StObject {
   /** @example 1 */
   var id: Double
   
-  var issue: js.UndefOr[Assignee | Null] = js.undefined
+  var issue: js.UndefOr[Bodyhtml | Null] = js.undefined
   
   var label: js.UndefOr[ColorName] = js.undefined
   
   var lock_reason: js.UndefOr[String | Null] = js.undefined
   
-  var milestone: js.UndefOr[Title] = js.undefined
+  var milestone: js.UndefOr[TitleString] = js.undefined
   
   /** @example MDEwOklzc3VlRXZlbnQx */
   var node_id: String
   
-  var performed_via_github_app: js.UndefOr[Clientsecret | Null] = js.undefined
+  var performed_via_github_app: js.UndefOr[Externalurl | Null] = js.undefined
   
   var project_card: js.UndefOr[Previouscolumnname] = js.undefined
   
@@ -122,7 +122,7 @@ object Assigner {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setIssue(value: Assignee): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
+    inline def setIssue(value: Bodyhtml): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
     
     inline def setIssueNull: Self = StObject.set(x, "issue", null)
     
@@ -138,13 +138,13 @@ object Assigner {
     
     inline def setLock_reasonUndefined: Self = StObject.set(x, "lock_reason", js.undefined)
     
-    inline def setMilestone(value: Title): Self = StObject.set(x, "milestone", value.asInstanceOf[js.Any])
+    inline def setMilestone(value: TitleString): Self = StObject.set(x, "milestone", value.asInstanceOf[js.Any])
     
     inline def setMilestoneUndefined: Self = StObject.set(x, "milestone", js.undefined)
     
     inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
-    inline def setPerformed_via_github_app(value: Clientsecret): Self = StObject.set(x, "performed_via_github_app", value.asInstanceOf[js.Any])
+    inline def setPerformed_via_github_app(value: Externalurl): Self = StObject.set(x, "performed_via_github_app", value.asInstanceOf[js.Any])
     
     inline def setPerformed_via_github_appNull: Self = StObject.set(x, "performed_via_github_app", null)
     

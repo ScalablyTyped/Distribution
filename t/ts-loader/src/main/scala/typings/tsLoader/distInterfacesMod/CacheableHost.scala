@@ -19,17 +19,16 @@ trait CacheableHost
 }
 object CacheableHost {
   
-  inline def apply(
-    directoryExists: NonNullable[js.UndefOr[js.Function1[/* directoryName */ String, Boolean]]],
-    fileExists: /* fileName */ String => Boolean
-  ): CacheableHost = {
-    val __obj = js.Dynamic.literal(directoryExists = directoryExists.asInstanceOf[js.Any], fileExists = js.Any.fromFunction1(fileExists))
+  inline def apply(fileExists: /* fileName */ String => Boolean): CacheableHost = {
+    val __obj = js.Dynamic.literal(fileExists = js.Any.fromFunction1(fileExists))
     __obj.asInstanceOf[CacheableHost]
   }
   
   extension [Self <: CacheableHost](x: Self) {
     
-    inline def setDirectoryExists(value: NonNullable[js.UndefOr[js.Function1[/* directoryName */ String, Boolean]]]): Self = StObject.set(x, "directoryExists", value.asInstanceOf[js.Any])
+    inline def setDirectoryExists(value: /* directoryName */ String => Boolean): Self = StObject.set(x, "directoryExists", js.Any.fromFunction1(value))
+    
+    inline def setDirectoryExistsUndefined: Self = StObject.set(x, "directoryExists", js.undefined)
     
     inline def setFileExists(value: /* fileName */ String => Boolean): Self = StObject.set(x, "fileExists", js.Any.fromFunction1(value))
     

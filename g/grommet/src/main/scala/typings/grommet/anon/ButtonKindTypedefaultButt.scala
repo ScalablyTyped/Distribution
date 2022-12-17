@@ -19,13 +19,13 @@ trait ButtonKindTypedefaultButt extends StObject {
   
   var background: js.UndefOr[BackgroundType] = js.undefined
   
-  var border: js.UndefOr[Radius | Boolean] = js.undefined
+  var border: js.UndefOr[ColorRadius | Boolean] = js.undefined
   
   var color: js.UndefOr[ColorType] = js.undefined
   
   var extend: js.UndefOr[ExtendType[Record[String, Any]]] = js.undefined
   
-  var font: js.UndefOr[Weight] = js.undefined
+  var font: js.UndefOr[`27`] = js.undefined
   
   var icon: js.UndefOr[ReactNode | typings.grommetIcons.iconsMod.Icon] = js.undefined
   
@@ -50,7 +50,7 @@ object ButtonKindTypedefaultButt {
     
     inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    inline def setBorder(value: Radius | Boolean): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: ColorRadius | Boolean): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
@@ -68,7 +68,7 @@ object ButtonKindTypedefaultButt {
     
     inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    inline def setFont(value: Weight): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: `27`): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     

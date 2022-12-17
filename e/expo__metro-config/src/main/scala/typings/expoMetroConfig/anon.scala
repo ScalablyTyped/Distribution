@@ -10,18 +10,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Folders extends StObject {
+  trait `0` extends StObject {
     
     var folders: js.UndefOr[js.Array[String]] = js.undefined
   }
-  object Folders {
+  object `0` {
     
-    inline def apply(): Folders = {
+    inline def apply(): `0` = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Folders]
+      __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: Folders](x: Self) {
+    extension [Self <: `0`](x: Self) {
       
       inline def setFolders(value: js.Array[String]): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
       
@@ -31,20 +31,20 @@ object anon {
     }
   }
   
-  trait FoldersModuleIds extends StObject {
+  trait Folders extends StObject {
     
     var folders: js.UndefOr[js.Array[String]] = js.undefined
     
     var moduleIds: js.Array[String]
   }
-  object FoldersModuleIds {
+  object Folders {
     
-    inline def apply(moduleIds: js.Array[String]): FoldersModuleIds = {
+    inline def apply(moduleIds: js.Array[String]): Folders = {
       val __obj = js.Dynamic.literal(moduleIds = moduleIds.asInstanceOf[js.Any])
-      __obj.asInstanceOf[FoldersModuleIds]
+      __obj.asInstanceOf[Folders]
     }
     
-    extension [Self <: FoldersModuleIds](x: Self) {
+    extension [Self <: Folders](x: Self) {
       
       inline def setFolders(value: js.Array[String]): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
       

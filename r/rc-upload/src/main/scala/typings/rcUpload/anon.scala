@@ -87,7 +87,7 @@ object anon {
     var uid: String = js.native
     
     /* standard dom */
-    val webkitRelativePath: String & js.UndefOr[String] = js.native
+    val webkitRelativePath: String = js.native
   }
   
   trait Uid extends StObject {

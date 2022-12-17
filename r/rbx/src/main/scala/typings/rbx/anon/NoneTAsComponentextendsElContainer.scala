@@ -76,5 +76,5 @@ trait NoneTAsComponentextendsElContainer extends StObject {
   
   var defaultProps: AsElementType & (Partial[PickNavbarItemContainerPr & (Pick[Any, String | Double | js.Symbol])]) = js.native
   
-  var displayName: String & js.UndefOr[String] = js.native
+  var displayName: String = js.native
 }

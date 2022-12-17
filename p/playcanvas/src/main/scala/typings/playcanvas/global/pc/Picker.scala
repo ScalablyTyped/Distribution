@@ -1,6 +1,5 @@
 package typings.playcanvas.global.pc
 
-import typings.playcanvas.mod.AppBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,5 +23,5 @@ open class Picker protected ()
     * @param {number} width - The width of the pick buffer in pixels.
     * @param {number} height - The height of the pick buffer in pixels.
     */
-  def this(app: AppBase, width: Double, height: Double) = this()
+  def this(app: typings.playcanvas.mod.AppBase, width: Double, height: Double) = this()
 }

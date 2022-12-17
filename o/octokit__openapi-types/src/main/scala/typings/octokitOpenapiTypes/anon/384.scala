@@ -6,22 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `384` extends StObject {
   
-  /** The unique identifier of the card. */
-  var card_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['card-id'] */ js.Any
+  /** Response */
+  var `200`: Content56Headers
 }
 object `384` {
   
-  inline def apply(
-    card_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['card-id'] */ js.Any
-  ): `384` = {
-    val __obj = js.Dynamic.literal(card_id = card_id.asInstanceOf[js.Any])
+  inline def apply(`200`: Content56Headers): `384` = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`384`]
   }
   
   extension [Self <: `384`](x: Self) {
     
-    inline def setCard_id(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['card-id'] */ js.Any
-    ): Self = StObject.set(x, "card_id", value.asInstanceOf[js.Any])
+    inline def set200(value: Content56Headers): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
   }
 }

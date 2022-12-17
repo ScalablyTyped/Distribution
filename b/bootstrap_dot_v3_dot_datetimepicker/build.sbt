@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "bootstrap_dot_v3_dot_datetimepicker"
-version := "4.17-dt-20220218Z-07d7fc"
+version := "4.17-dt-20220218Z-dab055"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "jquery" % "3.5-dt-20221103Z-20efda",
-  "org.scalablytyped" %%% "moment" % "2.29.4-336174",
-  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20211202Z-224716",
-  "org.scalablytyped" %%% "std" % "4.9-c133ce")
+  "org.scalablytyped" %%% "jquery" % "3.5-dt-20221103Z-9a2a4d",
+  "org.scalablytyped" %%% "moment" % "2.29.4-bc3b08",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20211202Z-4e4849",
+  "org.scalablytyped" %%% "std" % "4.9-5f989f")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

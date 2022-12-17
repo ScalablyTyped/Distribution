@@ -10,14 +10,18 @@ trait Dir extends StObject {
   var dir: String
   
   /** The account owner of the repository. The name is not case sensitive. */
-  var owner: String
+  var owner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['owner'] */ js.Any
   
   /** The name of the repository. The name is not case sensitive. */
-  var repo: String
+  var repo: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo'] */ js.Any
 }
 object Dir {
   
-  inline def apply(dir: String, owner: String, repo: String): Dir = {
+  inline def apply(
+    dir: String,
+    owner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['owner'] */ js.Any,
+    repo: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo'] */ js.Any
+  ): Dir = {
     val __obj = js.Dynamic.literal(dir = dir.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dir]
   }
@@ -26,8 +30,12 @@ object Dir {
     
     inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
-    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['owner'] */ js.Any
+    ): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo'] */ js.Any
+    ): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

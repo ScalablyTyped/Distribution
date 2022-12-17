@@ -14,6 +14,8 @@ trait CleanButton extends StObject {
   
   var control: String
   
+  var controlInputFieldComponent: String
+  
   var controlValue: String
   
   var filterStringInput: String
@@ -31,13 +33,14 @@ object CleanButton {
     cleanButtonIconId: String,
     cleanButtonSvg: String,
     control: String,
+    controlInputFieldComponent: String,
     controlValue: String,
     filterStringInput: String,
     other: String,
     root: String,
     selectWrapper: String
   ): CleanButton = {
-    val __obj = js.Dynamic.literal(cleanButton = cleanButton.asInstanceOf[js.Any], cleanButtonIconId = cleanButtonIconId.asInstanceOf[js.Any], cleanButtonSvg = cleanButtonSvg.asInstanceOf[js.Any], control = control.asInstanceOf[js.Any], controlValue = controlValue.asInstanceOf[js.Any], filterStringInput = filterStringInput.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], selectWrapper = selectWrapper.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cleanButton = cleanButton.asInstanceOf[js.Any], cleanButtonIconId = cleanButtonIconId.asInstanceOf[js.Any], cleanButtonSvg = cleanButtonSvg.asInstanceOf[js.Any], control = control.asInstanceOf[js.Any], controlInputFieldComponent = controlInputFieldComponent.asInstanceOf[js.Any], controlValue = controlValue.asInstanceOf[js.Any], filterStringInput = filterStringInput.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], selectWrapper = selectWrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[CleanButton]
   }
   
@@ -50,6 +53,8 @@ object CleanButton {
     inline def setCleanButtonSvg(value: String): Self = StObject.set(x, "cleanButtonSvg", value.asInstanceOf[js.Any])
     
     inline def setControl(value: String): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
+    
+    inline def setControlInputFieldComponent(value: String): Self = StObject.set(x, "controlInputFieldComponent", value.asInstanceOf[js.Any])
     
     inline def setControlValue(value: String): Self = StObject.set(x, "controlValue", value.asInstanceOf[js.Any])
     

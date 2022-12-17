@@ -2,7 +2,7 @@ package typings.unsplashJs
 
 import typings.unsplashJs.anon.ResponseResponse
 import typings.unsplashJs.anon.ResultsArray
-import typings.unsplashJs.anon.Total
+import typings.unsplashJs.anon.ResultsTotal
 import typings.unsplashJs.anon.statsbooleanundefinedOrie
 import typings.unsplashJs.distHelpersRequestMod.AdditionalFetchOptions
 import typings.unsplashJs.distHelpersRequestMod.CompleteRequestParams
@@ -65,9 +65,9 @@ object distMethodsUsersMod {
     
     @JSImport("unsplash-js/dist/methods/users", "getLikes.handleResponse")
     @js.native
-    def handleResponse: HandleResponse[Total] = js.native
-    inline def handleResponse(args: ResponseResponse): js.Promise[Total] = ^.asInstanceOf[js.Dynamic].applyDynamic("handleResponse")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Total]]
-    inline def handleResponse_=(x: HandleResponse[Total]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("handleResponse")(x.asInstanceOf[js.Any])
+    def handleResponse: HandleResponse[ResultsTotal] = js.native
+    inline def handleResponse(args: ResponseResponse): js.Promise[ResultsTotal] = ^.asInstanceOf[js.Dynamic].applyDynamic("handleResponse")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ResultsTotal]]
+    inline def handleResponse_=(x: HandleResponse[ResultsTotal]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("handleResponse")(x.asInstanceOf[js.Any])
   }
   
   object getPhotos {
@@ -83,9 +83,9 @@ object distMethodsUsersMod {
     
     @JSImport("unsplash-js/dist/methods/users", "getPhotos.handleResponse")
     @js.native
-    def handleResponse: HandleResponse[Total] = js.native
-    inline def handleResponse(args: ResponseResponse): js.Promise[Total] = ^.asInstanceOf[js.Dynamic].applyDynamic("handleResponse")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Total]]
-    inline def handleResponse_=(x: HandleResponse[Total]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("handleResponse")(x.asInstanceOf[js.Any])
+    def handleResponse: HandleResponse[ResultsTotal] = js.native
+    inline def handleResponse(args: ResponseResponse): js.Promise[ResultsTotal] = ^.asInstanceOf[js.Dynamic].applyDynamic("handleResponse")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ResultsTotal]]
+    inline def handleResponse_=(x: HandleResponse[ResultsTotal]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("handleResponse")(x.asInstanceOf[js.Any])
   }
   
   trait Username extends StObject {

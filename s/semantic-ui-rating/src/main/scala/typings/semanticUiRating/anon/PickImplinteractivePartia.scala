@@ -27,7 +27,7 @@ trait PickImplinteractivePartia
   
   var initialRating: js.UndefOr[Double] = js.undefined
   
-  var interactive: Boolean & js.UndefOr[Boolean]
+  var interactive: Boolean
   
   var name: js.UndefOr[String] = js.undefined
   
@@ -45,7 +45,7 @@ trait PickImplinteractivePartia
 }
 object PickImplinteractivePartia {
   
-  inline def apply(interactive: Boolean & js.UndefOr[Boolean]): PickImplinteractivePartia = {
+  inline def apply(interactive: Boolean): PickImplinteractivePartia = {
     val __obj = js.Dynamic.literal(interactive = interactive.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplinteractivePartia]
   }
@@ -76,7 +76,7 @@ object PickImplinteractivePartia {
     
     inline def setInitialRatingUndefined: Self = StObject.set(x, "initialRating", js.undefined)
     
-    inline def setInteractive(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
+    inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

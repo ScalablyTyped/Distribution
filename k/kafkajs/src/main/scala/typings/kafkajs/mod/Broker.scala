@@ -6,15 +6,15 @@ import typings.kafkajs.anon.GroupIdTopics
 import typings.kafkajs.anon.GroupIds
 import typings.kafkajs.anon.IsolationLevel
 import typings.kafkajs.anon.Responses
-import typings.kafkajs.anon.TimeoutTopics
-import typings.kafkajs.anon.`1`
+import typings.kafkajs.anon.TimeoutTopicsArray
+import typings.kafkajs.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Broker extends StObject {
   
-  def alterPartitionReassignments(request: TimeoutTopics): js.Promise[Any]
+  def alterPartitionReassignments(request: TimeoutTopicsArray): js.Promise[Any]
   
   def apiVersions(): js.Promise[ApiVersions]
   
@@ -28,7 +28,7 @@ trait Broker extends StObject {
   
   def isConnected(): Boolean
   
-  def listPartitionReassignments(request: `1`): js.Promise[ListPartitionReassignmentsResponse]
+  def listPartitionReassignments(request: `0`): js.Promise[ListPartitionReassignmentsResponse]
   
   def metadata(topics: js.Array[String]): js.Promise[BrokerMetadata]
   
@@ -41,14 +41,14 @@ trait Broker extends StObject {
 object Broker {
   
   inline def apply(
-    alterPartitionReassignments: TimeoutTopics => js.Promise[Any],
+    alterPartitionReassignments: TimeoutTopicsArray => js.Promise[Any],
     apiVersions: () => js.Promise[ApiVersions],
     connect: () => js.Promise[Unit],
     describeGroups: GroupIds => js.Promise[Any],
     disconnect: () => js.Promise[Unit],
     fetch: IsolationLevel => js.Promise[Any],
     isConnected: () => Boolean,
-    listPartitionReassignments: `1` => js.Promise[ListPartitionReassignmentsResponse],
+    listPartitionReassignments: `0` => js.Promise[ListPartitionReassignmentsResponse],
     metadata: js.Array[String] => js.Promise[BrokerMetadata],
     offsetCommit: GroupGenerationId => js.Promise[Any],
     offsetFetch: GroupIdTopics => js.Promise[Responses],
@@ -60,7 +60,7 @@ object Broker {
   
   extension [Self <: Broker](x: Self) {
     
-    inline def setAlterPartitionReassignments(value: TimeoutTopics => js.Promise[Any]): Self = StObject.set(x, "alterPartitionReassignments", js.Any.fromFunction1(value))
+    inline def setAlterPartitionReassignments(value: TimeoutTopicsArray => js.Promise[Any]): Self = StObject.set(x, "alterPartitionReassignments", js.Any.fromFunction1(value))
     
     inline def setApiVersions(value: () => js.Promise[ApiVersions]): Self = StObject.set(x, "apiVersions", js.Any.fromFunction0(value))
     
@@ -74,7 +74,7 @@ object Broker {
     
     inline def setIsConnected(value: () => Boolean): Self = StObject.set(x, "isConnected", js.Any.fromFunction0(value))
     
-    inline def setListPartitionReassignments(value: `1` => js.Promise[ListPartitionReassignmentsResponse]): Self = StObject.set(x, "listPartitionReassignments", js.Any.fromFunction1(value))
+    inline def setListPartitionReassignments(value: `0` => js.Promise[ListPartitionReassignmentsResponse]): Self = StObject.set(x, "listPartitionReassignments", js.Any.fromFunction1(value))
     
     inline def setMetadata(value: js.Array[String] => js.Promise[BrokerMetadata]): Self = StObject.set(x, "metadata", js.Any.fromFunction1(value))
     

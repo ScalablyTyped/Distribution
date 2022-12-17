@@ -369,7 +369,7 @@ trait StyledComponentPickOmitHT extends StObject {
   
   var defaultProps: js.UndefOr[PartialPickOmitHTMLPropsH] = js.native
   
-  var displayName: js.UndefOr[String] & String = js.native
+  var displayName: js.UndefOr[String] = js.native
   
   var propTypes: js.UndefOr[WeakValidationMapPickOmit] = js.native
   

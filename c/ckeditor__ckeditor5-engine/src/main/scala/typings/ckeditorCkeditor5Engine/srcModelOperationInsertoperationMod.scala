@@ -1,7 +1,7 @@
 package typings.ckeditorCkeditor5Engine
 
 import typings.ckeditorCkeditor5Engine.anon.BaseVersion
-import typings.ckeditorCkeditor5Engine.anon.`13`
+import typings.ckeditorCkeditor5Engine.anon.`12`
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.insert
 import typings.ckeditorCkeditor5Engine.srcModelNodeMod.NodeSet
 import typings.ckeditorCkeditor5Engine.srcModelOperationOperationMod.Operation
@@ -86,7 +86,7 @@ object srcModelOperationInsertoperationMod {
       * Custom toJSON method to solve child-parent circular dependencies.
       */
     /* CompleteClass */
-    override def toJSON(): `13` = js.native
+    override def toJSON(): `12` = js.native
     
     /**
       * Operation type.
@@ -165,7 +165,7 @@ object srcModelOperationInsertoperationMod {
       nodes: typings.ckeditorCkeditor5Engine.srcModelNodelistMod.default,
       position: typings.ckeditorCkeditor5Engine.srcModelPositionMod.default,
       shouldReceiveAttributes: Boolean,
-      toJSON: () => `13`
+      toJSON: () => `12`
     ): InsertOperation = {
       val __obj = js.Dynamic.literal(getReversed = js.Any.fromFunction0(getReversed), howMany = howMany.asInstanceOf[js.Any], isDocumentOperation = isDocumentOperation.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], shouldReceiveAttributes = shouldReceiveAttributes.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), baseVersion = null, batch = null)
       __obj.updateDynamic("clone")(js.Any.fromFunction0(clone_))

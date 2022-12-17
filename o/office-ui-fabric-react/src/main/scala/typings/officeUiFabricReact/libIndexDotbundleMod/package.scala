@@ -271,8 +271,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def default: FunctionComponent[ITextProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[FunctionComponent[ITextProps]]
-
 inline def AnimationStyles: IAnimationStyles = ^.asInstanceOf[js.Dynamic].selectDynamic("AnimationStyles").asInstanceOf[IAnimationStyles]
 
 inline def AnimationVariables: IAnimationVariables = ^.asInstanceOf[js.Dynamic].selectDynamic("AnimationVariables").asInstanceOf[IAnimationVariables]

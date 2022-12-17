@@ -104,39 +104,39 @@ object anon {
   
   trait Id extends StObject {
     
-    var id: String
+    var id: Double
+    
+    var id_str: String
   }
   object Id {
     
-    inline def apply(id: String): Id = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    inline def apply(id: Double, id_str: String): Id = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], id_str = id_str.asInstanceOf[js.Any])
       __obj.asInstanceOf[Id]
     }
     
     extension [Self <: Id](x: Self) {
       
-      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Idstr extends StObject {
-    
-    var id: Double
-    
-    var id_str: String
-  }
-  object Idstr {
-    
-    inline def apply(id: Double, id_str: String): Idstr = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], id_str = id_str.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Idstr]
-    }
-    
-    extension [Self <: Idstr](x: Self) {
-      
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setId_str(value: String): Self = StObject.set(x, "id_str", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait IdString extends StObject {
+    
+    var id: String
+  }
+  object IdString {
+    
+    inline def apply(id: String): IdString = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IdString]
+    }
+    
+    extension [Self <: IdString](x: Self) {
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   

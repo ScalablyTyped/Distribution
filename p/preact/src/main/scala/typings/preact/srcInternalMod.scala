@@ -1,6 +1,6 @@
 package typings.preact
 
-import typings.preact.anon.ChildrenComponentChildren
+import typings.preact.anon.Children
 import typings.preact.mod.Consumer
 import typings.preact.mod.Context
 import typings.preact.mod.Key
@@ -397,7 +397,7 @@ object srcInternalMod {
       _original: Double,
       constructor: Unit,
       key: Key,
-      props: P & ChildrenComponentChildren,
+      props: P & Children,
       `type`: typings.preact.mod.ComponentType[P] | String
     ): VNode[P] = {
       val __obj = js.Dynamic.literal(_original = _original.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], _children = null, _component = null, _depth = null, _dom = null, _hydrating = null, _nextDom = null, _parent = null)

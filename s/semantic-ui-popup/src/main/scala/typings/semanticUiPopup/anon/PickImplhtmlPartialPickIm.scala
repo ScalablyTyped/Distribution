@@ -52,7 +52,7 @@ trait PickImplhtmlPartialPickIm
   
   var hoverable: js.UndefOr[Boolean] = js.undefined
   
-  var html: (String | JQuery) & (js.UndefOr[String | JQuery])
+  var html: String | JQuery
   
   var `inline`: js.UndefOr[Boolean] = js.undefined
   
@@ -120,7 +120,7 @@ trait PickImplhtmlPartialPickIm
 }
 object PickImplhtmlPartialPickIm {
   
-  inline def apply(html: (String | JQuery) & (js.UndefOr[String | JQuery])): PickImplhtmlPartialPickIm = {
+  inline def apply(html: String | JQuery): PickImplhtmlPartialPickIm = {
     val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplhtmlPartialPickIm]
   }
@@ -183,7 +183,7 @@ object PickImplhtmlPartialPickIm {
     
     inline def setHoverableUndefined: Self = StObject.set(x, "hoverable", js.undefined)
     
-    inline def setHtml(value: (String | JQuery) & (js.UndefOr[String | JQuery])): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: String | JQuery): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
     inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
     

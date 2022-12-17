@@ -92,7 +92,7 @@ trait PickImplpopupPartialPickI
   
   var performance: js.UndefOr[Boolean] = js.undefined
   
-  var popup: (`false` | String | JQuery) & (js.UndefOr[`false` | String | JQuery])
+  var popup: `false` | String | JQuery
   
   var position: js.UndefOr[String] = js.undefined
   
@@ -120,7 +120,7 @@ trait PickImplpopupPartialPickI
 }
 object PickImplpopupPartialPickI {
   
-  inline def apply(popup: (`false` | String | JQuery) & (js.UndefOr[`false` | String | JQuery])): PickImplpopupPartialPickI = {
+  inline def apply(popup: `false` | String | JQuery): PickImplpopupPartialPickI = {
     val __obj = js.Dynamic.literal(popup = popup.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplpopupPartialPickI]
   }
@@ -263,7 +263,7 @@ object PickImplpopupPartialPickI {
     
     inline def setPerformanceUndefined: Self = StObject.set(x, "performance", js.undefined)
     
-    inline def setPopup(value: (`false` | String | JQuery) & (js.UndefOr[`false` | String | JQuery])): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
+    inline def setPopup(value: `false` | String | JQuery): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
     
     inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

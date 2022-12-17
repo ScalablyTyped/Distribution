@@ -4,23 +4,10 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
 import typings.antvG2.anon.StartAngle
 import typings.antvG2.anon.X
-import typings.antvG2.anon.namestringvaluestringMark
 import typings.antvG2.libDependentsMod.Attribute
-import typings.antvG2.libGeometryBaseMod.default
 import typings.antvG2.libInterfaceMod.IInteractionContext
 import typings.antvG2.libInterfaceMod.LooseObject
-import typings.antvG2.libInterfaceMod.MappingDatum
-import typings.antvG2.libInterfaceMod.MarkerCfg
-import typings.antvG2.libInterfaceMod.Position
-import typings.antvG2.libInterfaceMod.RangePoint
 import typings.antvG2.libInterfaceMod.ShapeInfo
-import typings.antvG2.libInterfaceMod.ShapePoint
-import typings.antvG2.libInterfaceMod.ShapeVertices
-import typings.antvG2.libInterfaceMod.TooltipTitle
-import typings.antvG2.libUtilLegendMod.ComponentLegendItem
-import typings.antvGBase.libInterfacesMod.IGroup
-import typings.antvGBase.libInterfacesMod.IShape
-import typings.antvGBase.libTypesMod.ShapeAttrs
 import typings.bizcharts.anon.Call
 import typings.bizcharts.anon.Fn0
 import typings.bizcharts.anon.FnCall
@@ -153,7 +140,6 @@ object Util {
     /* coordinate */ typings.antvG2.libDependentsMod.Coordinate, 
     StartAngle
   ] = js.native
-  inline def getAngle(shapeModel: ShapeInfo, coordinate: typings.antvG2.libDependentsMod.Coordinate): StartAngle = (^.asInstanceOf[js.Dynamic].applyDynamic("getAngle")(shapeModel.asInstanceOf[js.Any], coordinate.asInstanceOf[js.Any])).asInstanceOf[StartAngle]
   inline def getAngle_=(
     x: js.Function2[
       /* shapeModel */ ShapeInfo, 
@@ -165,7 +151,6 @@ object Util {
   @JSImport("ant-design-pro/lib/Charts/bizcharts", "Util.getDelegationObject")
   @js.native
   def getDelegationObject: js.Function1[/* context */ IInteractionContext, LooseObject] = js.native
-  inline def getDelegationObject(context: IInteractionContext): LooseObject = ^.asInstanceOf[js.Dynamic].applyDynamic("getDelegationObject")(context.asInstanceOf[js.Any]).asInstanceOf[LooseObject]
   inline def getDelegationObject_=(x: js.Function1[/* context */ IInteractionContext, LooseObject]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDelegationObject")(x.asInstanceOf[js.Any])
   
   inline def getEllipsisText(text: String, maxWidth: Double): String | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getEllipsisText")(text.asInstanceOf[js.Any], maxWidth.asInstanceOf[js.Any])).asInstanceOf[String | Double]
@@ -197,272 +182,25 @@ object Util {
   
   @JSImport("ant-design-pro/lib/Charts/bizcharts", "Util.getLegendItems")
   @js.native
-  def getLegendItems: FnCall | (js.Function5[
-    /* view */ typings.antvG2.libChartViewMod.View, 
-    /* geometry */ default[ShapePoint], 
-    /* attr */ Attribute, 
-    /* themeMarker */ js.Object, 
-    /* userMarker */ js.UndefOr[
-      MarkerCfg | (js.Function3[/* name */ String, /* index */ Double, /* item */ namestringvaluestringMark, MarkerCfg])
-    ], 
-    js.Array[ComponentLegendItem]
-  ]) = js.native
-  inline def getLegendItems(
-    view: typings.antvG2.libChartViewMod.View,
-    geometry: default[ShapePoint],
-    attr: Attribute,
-    themeMarker: js.Object
-  ): js.Array[ComponentLegendItem] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLegendItems")(view.asInstanceOf[js.Any], geometry.asInstanceOf[js.Any], attr.asInstanceOf[js.Any], themeMarker.asInstanceOf[js.Any])).asInstanceOf[js.Array[ComponentLegendItem]]
-  inline def getLegendItems(
-    view: typings.antvG2.libChartViewMod.View,
-    geometry: default[ShapePoint],
-    attr: Attribute,
-    themeMarker: js.Object,
-    userMarker: js.Function3[/* name */ String, /* index */ Double, /* item */ namestringvaluestringMark, MarkerCfg]
-  ): js.Array[ComponentLegendItem] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLegendItems")(view.asInstanceOf[js.Any], geometry.asInstanceOf[js.Any], attr.asInstanceOf[js.Any], themeMarker.asInstanceOf[js.Any], userMarker.asInstanceOf[js.Any])).asInstanceOf[js.Array[ComponentLegendItem]]
-  inline def getLegendItems(
-    view: typings.antvG2.libChartViewMod.View,
-    geometry: default[ShapePoint],
-    attr: Attribute,
-    themeMarker: js.Object,
-    userMarker: MarkerCfg
-  ): js.Array[ComponentLegendItem] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLegendItems")(view.asInstanceOf[js.Any], geometry.asInstanceOf[js.Any], attr.asInstanceOf[js.Any], themeMarker.asInstanceOf[js.Any], userMarker.asInstanceOf[js.Any])).asInstanceOf[js.Array[ComponentLegendItem]]
-  inline def getLegendItems_=(
-    x: FnCall | (js.Function5[
-      /* view */ typings.antvG2.libChartViewMod.View, 
-      /* geometry */ default[ShapePoint], 
-      /* attr */ Attribute, 
-      /* themeMarker */ js.Object, 
-      /* userMarker */ js.UndefOr[
-        MarkerCfg | (js.Function3[/* name */ String, /* index */ Double, /* item */ namestringvaluestringMark, MarkerCfg])
-      ], 
-      js.Array[ComponentLegendItem]
-    ])
-  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getLegendItems")(x.asInstanceOf[js.Any])
+  def getLegendItems: FnCall = js.native
+  inline def getLegendItems_=(x: FnCall): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getLegendItems")(x.asInstanceOf[js.Any])
   
   @JSImport("ant-design-pro/lib/Charts/bizcharts", "Util.getMappingValue")
   @js.native
   def getMappingValue: js.Function3[/* attr */ Attribute, /* value */ Any, /* def */ String, String] = js.native
-  inline def getMappingValue(attr: Attribute, value: Any, `def`: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getMappingValue")(attr.asInstanceOf[js.Any], value.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def getMappingValue_=(x: js.Function3[/* attr */ Attribute, /* value */ Any, /* def */ String, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getMappingValue")(x.asInstanceOf[js.Any])
-  
-  @JSImport("ant-design-pro/lib/Charts/bizcharts", "Util.getPath")
-  @js.native
-  def getPath: js.Function6[
-    /* points */ js.Array[typings.antvG2.libInterfaceMod.Point | RangePoint], 
-    /* isInCircle */ Boolean, 
-    /* isStack */ js.UndefOr[Boolean], 
-    /* smooth */ js.UndefOr[Boolean], 
-    /* constraint */ js.UndefOr[js.Array[Position]], 
-    /* style */ js.UndefOr[ShapeAttrs], 
-    Any
-  ] = js.native
-  inline def getPath(points: js.Array[typings.antvG2.libInterfaceMod.Point | RangePoint], isInCircle: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(points.asInstanceOf[js.Any], isInCircle.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def getPath(
-    points: js.Array[typings.antvG2.libInterfaceMod.Point | RangePoint],
-    isInCircle: Boolean,
-    isStack: Boolean
-  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(points.asInstanceOf[js.Any], isInCircle.asInstanceOf[js.Any], isStack.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def getPath(
-    points: js.Array[typings.antvG2.libInterfaceMod.Point | RangePoint],
-    isInCircle: Boolean,
-    isStack: Boolean,
-    smooth: Boolean
-  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(points.asInstanceOf[js.Any], isInCircle.asInstanceOf[js.Any], isStack.asInstanceOf[js.Any], smooth.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def getPath(
-    points: js.Array[typings.antvG2.libInterfaceMod.Point | RangePoint],
-    isInCircle: Boolean,
-    isStack: Boolean,
-    smooth: Boolean,
-    constraint: js.Array[Position]
-  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(points.asInstanceOf[js.Any], isInCircle.asInstanceOf[js.Any], isStack.asInstanceOf[js.Any], smooth.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def getPath(
-    points: js.Array[typings.antvG2.libInterfaceMod.Point | RangePoint],
-    isInCircle: Boolean,
-    isStack: Boolean,
-    smooth: Boolean,
-    constraint: js.Array[Position],
-    style: ShapeAttrs
-  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(points.asInstanceOf[js.Any], isInCircle.asInstanceOf[js.Any], isStack.asInstanceOf[js.Any], smooth.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def getPath(
-    points: js.Array[typings.antvG2.libInterfaceMod.Point | RangePoint],
-    isInCircle: Boolean,
-    isStack: Boolean,
-    smooth: Boolean,
-    constraint: Unit,
-    style: ShapeAttrs
-  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(points.asInstanceOf[js.Any], isInCircle.asInstanceOf[js.Any], isStack.asInstanceOf[js.Any], smooth.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def getPath(
-    points: js.Array[typings.antvG2.libInterfaceMod.Point | RangePoint],
-    isInCircle: Boolean,
-    isStack: Boolean,
-    smooth: Unit,
-    constraint: js.Array[Position]
-  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(points.asInstanceOf[js.Any], isInCircle.asInstanceOf[js.Any], isStack.asInstanceOf[js.Any], smooth.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def getPath(
-    points: js.Array[typings.antvG2.libInterfaceMod.Point | RangePoint],
-    isInCircle: Boolean,
-    isStack: Boolean,
-    smooth: Unit,
-    constraint: js.Array[Position],
-    style: ShapeAttrs
-  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(points.asInstanceOf[js.Any], isInCircle.asInstanceOf[js.Any], isStack.asInstanceOf[js.Any], smooth.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def getPath(
-    points: js.Array[typings.antvG2.libInterfaceMod.Point | RangePoint],
-    isInCircle: Boolean,
-    isStack: Boolean,
-    smooth: Unit,
-    constraint: Unit,
-    style: ShapeAttrs
-  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(points.asInstanceOf[js.Any], isInCircle.asInstanceOf[js.Any], isStack.asInstanceOf[js.Any], smooth.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def getPath(
-    points: js.Array[typings.antvG2.libInterfaceMod.Point | RangePoint],
-    isInCircle: Boolean,
-    isStack: Unit,
-    smooth: Boolean
-  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(points.asInstanceOf[js.Any], isInCircle.asInstanceOf[js.Any], isStack.asInstanceOf[js.Any], smooth.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def getPath(
-    points: js.Array[typings.antvG2.libInterfaceMod.Point | RangePoint],
-    isInCircle: Boolean,
-    isStack: Unit,
-    smooth: Boolean,
-    constraint: js.Array[Position]
-  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(points.asInstanceOf[js.Any], isInCircle.asInstanceOf[js.Any], isStack.asInstanceOf[js.Any], smooth.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def getPath(
-    points: js.Array[typings.antvG2.libInterfaceMod.Point | RangePoint],
-    isInCircle: Boolean,
-    isStack: Unit,
-    smooth: Boolean,
-    constraint: js.Array[Position],
-    style: ShapeAttrs
-  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(points.asInstanceOf[js.Any], isInCircle.asInstanceOf[js.Any], isStack.asInstanceOf[js.Any], smooth.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def getPath(
-    points: js.Array[typings.antvG2.libInterfaceMod.Point | RangePoint],
-    isInCircle: Boolean,
-    isStack: Unit,
-    smooth: Boolean,
-    constraint: Unit,
-    style: ShapeAttrs
-  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(points.asInstanceOf[js.Any], isInCircle.asInstanceOf[js.Any], isStack.asInstanceOf[js.Any], smooth.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def getPath(
-    points: js.Array[typings.antvG2.libInterfaceMod.Point | RangePoint],
-    isInCircle: Boolean,
-    isStack: Unit,
-    smooth: Unit,
-    constraint: js.Array[Position]
-  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(points.asInstanceOf[js.Any], isInCircle.asInstanceOf[js.Any], isStack.asInstanceOf[js.Any], smooth.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def getPath(
-    points: js.Array[typings.antvG2.libInterfaceMod.Point | RangePoint],
-    isInCircle: Boolean,
-    isStack: Unit,
-    smooth: Unit,
-    constraint: js.Array[Position],
-    style: ShapeAttrs
-  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(points.asInstanceOf[js.Any], isInCircle.asInstanceOf[js.Any], isStack.asInstanceOf[js.Any], smooth.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def getPath(
-    points: js.Array[typings.antvG2.libInterfaceMod.Point | RangePoint],
-    isInCircle: Boolean,
-    isStack: Unit,
-    smooth: Unit,
-    constraint: Unit,
-    style: ShapeAttrs
-  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(points.asInstanceOf[js.Any], isInCircle.asInstanceOf[js.Any], isStack.asInstanceOf[js.Any], smooth.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[Any]
-  
-  @JSImport("ant-design-pro/lib/Charts/bizcharts", "Util.getPathPoints")
-  @js.native
-  def getPathPoints: js.Function3[
-    /* points */ ShapeVertices, 
-    /* connectNulls */ js.UndefOr[Boolean], 
-    /* showSinglePoint */ js.UndefOr[Boolean], 
-    js.Array[Any]
-  ] = js.native
-  inline def getPathPoints(points: ShapeVertices): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPathPoints")(points.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
-  inline def getPathPoints(points: ShapeVertices, connectNulls: Boolean): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPathPoints")(points.asInstanceOf[js.Any], connectNulls.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
-  inline def getPathPoints(points: ShapeVertices, connectNulls: Boolean, showSinglePoint: Boolean): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPathPoints")(points.asInstanceOf[js.Any], connectNulls.asInstanceOf[js.Any], showSinglePoint.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
-  inline def getPathPoints(points: ShapeVertices, connectNulls: Unit, showSinglePoint: Boolean): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPathPoints")(points.asInstanceOf[js.Any], connectNulls.asInstanceOf[js.Any], showSinglePoint.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
-  inline def getPathPoints_=(
-    x: js.Function3[
-      /* points */ ShapeVertices, 
-      /* connectNulls */ js.UndefOr[Boolean], 
-      /* showSinglePoint */ js.UndefOr[Boolean], 
-      js.Array[Any]
-    ]
-  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getPathPoints")(x.asInstanceOf[js.Any])
-  
-  inline def getPath_=(
-    x: js.Function6[
-      /* points */ js.Array[typings.antvG2.libInterfaceMod.Point | RangePoint], 
-      /* isInCircle */ Boolean, 
-      /* isStack */ js.UndefOr[Boolean], 
-      /* smooth */ js.UndefOr[Boolean], 
-      /* constraint */ js.UndefOr[js.Array[Position]], 
-      /* style */ js.UndefOr[ShapeAttrs], 
-      Any
-    ]
-  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getPath")(x.asInstanceOf[js.Any])
   
   inline def getRange(values: js.Array[Double]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getRange")(values.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("ant-design-pro/lib/Charts/bizcharts", "Util.getSectorPath")
   @js.native
-  def getSectorPath: FnCallCenterXCenterYRadiusStartAngleInRadianEndAngleInRadianInnerRadius | (js.Function6[
-    /* centerX */ Double, 
-    /* centerY */ Double, 
-    /* radius */ Double, 
-    /* startAngleInRadian */ Double, 
-    /* endAngleInRadian */ Double, 
-    /* innerRadius */ js.UndefOr[Double], 
-    js.Array[js.Array[String | Double]]
-  ]) = js.native
-  inline def getSectorPath(
-    centerX: Double,
-    centerY: Double,
-    radius: Double,
-    startAngleInRadian: Double,
-    endAngleInRadian: Double
-  ): js.Array[js.Array[String | Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSectorPath")(centerX.asInstanceOf[js.Any], centerY.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], startAngleInRadian.asInstanceOf[js.Any], endAngleInRadian.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[String | Double]]]
-  inline def getSectorPath(
-    centerX: Double,
-    centerY: Double,
-    radius: Double,
-    startAngleInRadian: Double,
-    endAngleInRadian: Double,
-    innerRadius: Double
-  ): js.Array[js.Array[String | Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSectorPath")(centerX.asInstanceOf[js.Any], centerY.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], startAngleInRadian.asInstanceOf[js.Any], endAngleInRadian.asInstanceOf[js.Any], innerRadius.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[String | Double]]]
-  inline def getSectorPath_=(
-    x: FnCallCenterXCenterYRadiusStartAngleInRadianEndAngleInRadianInnerRadius | (js.Function6[
-      /* centerX */ Double, 
-      /* centerY */ Double, 
-      /* radius */ Double, 
-      /* startAngleInRadian */ Double, 
-      /* endAngleInRadian */ Double, 
-      /* innerRadius */ js.UndefOr[Double], 
-      js.Array[js.Array[String | Double]]
-    ])
-  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getSectorPath")(x.asInstanceOf[js.Any])
+  def getSectorPath: FnCallCenterXCenterYRadiusStartAngleInRadianEndAngleInRadianInnerRadius = js.native
+  inline def getSectorPath_=(x: FnCallCenterXCenterYRadiusStartAngleInRadianEndAngleInRadianInnerRadius): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getSectorPath")(x.asInstanceOf[js.Any])
   
   @JSImport("ant-design-pro/lib/Charts/bizcharts", "Util.getTooltipItems")
   @js.native
-  def getTooltipItems: FnCallDataGeometryTitleShowNil | (js.Function4[
-    /* data */ MappingDatum, 
-    /* geometry */ default[ShapePoint], 
-    /* title */ js.UndefOr[TooltipTitle], 
-    /* showNil */ js.UndefOr[Boolean], 
-    js.Array[Any]
-  ]) = js.native
-  inline def getTooltipItems(data: MappingDatum, geometry: default[ShapePoint]): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTooltipItems")(data.asInstanceOf[js.Any], geometry.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
-  inline def getTooltipItems(data: MappingDatum, geometry: default[ShapePoint], title: Unit, showNil: Boolean): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTooltipItems")(data.asInstanceOf[js.Any], geometry.asInstanceOf[js.Any], title.asInstanceOf[js.Any], showNil.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
-  inline def getTooltipItems(data: MappingDatum, geometry: default[ShapePoint], title: TooltipTitle): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTooltipItems")(data.asInstanceOf[js.Any], geometry.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
-  inline def getTooltipItems(data: MappingDatum, geometry: default[ShapePoint], title: TooltipTitle, showNil: Boolean): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTooltipItems")(data.asInstanceOf[js.Any], geometry.asInstanceOf[js.Any], title.asInstanceOf[js.Any], showNil.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
-  inline def getTooltipItems_=(
-    x: FnCallDataGeometryTitleShowNil | (js.Function4[
-      /* data */ MappingDatum, 
-      /* geometry */ default[ShapePoint], 
-      /* title */ js.UndefOr[TooltipTitle], 
-      /* showNil */ js.UndefOr[Boolean], 
-      js.Array[Any]
-    ])
-  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getTooltipItems")(x.asInstanceOf[js.Any])
+  def getTooltipItems: FnCallDataGeometryTitleShowNil = js.native
+  inline def getTooltipItems_=(x: FnCallDataGeometryTitleShowNil): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getTooltipItems")(x.asInstanceOf[js.Any])
   
   inline def getType(value: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getType")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -655,7 +393,6 @@ object Util {
     /* angleInRadian */ Double, 
     X
   ] = js.native
-  inline def polarToCartesian(centerX: Double, centerY: Double, radius: Double, angleInRadian: Double): X = (^.asInstanceOf[js.Dynamic].applyDynamic("polarToCartesian")(centerX.asInstanceOf[js.Any], centerY.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], angleInRadian.asInstanceOf[js.Any])).asInstanceOf[X]
   inline def polarToCartesian_=(
     x: js.Function4[
       /* centerX */ Double, 
@@ -693,12 +430,8 @@ object Util {
   
   @JSImport("ant-design-pro/lib/Charts/bizcharts", "Util.rotate")
   @js.native
-  def rotate: FnCallElementRotateRadian | (js.Function2[/* element */ IGroup | IShape, /* rotateRadian */ Double, Unit]) = js.native
-  inline def rotate(element: IGroup, rotateRadian: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(element.asInstanceOf[js.Any], rotateRadian.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def rotate(element: IShape, rotateRadian: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(element.asInstanceOf[js.Any], rotateRadian.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def rotate_=(
-    x: FnCallElementRotateRadian | (js.Function2[/* element */ IGroup | IShape, /* rotateRadian */ Double, Unit])
-  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rotate")(x.asInstanceOf[js.Any])
+  def rotate: FnCallElementRotateRadian = js.native
+  inline def rotate_=(x: FnCallElementRotateRadian): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rotate")(x.asInstanceOf[js.Any])
   
   inline def set(obj: Any, path: String, value: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Any]
   inline def set(obj: Any, path: js.Array[Any], value: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Any]
@@ -756,12 +489,8 @@ object Util {
   
   @JSImport("ant-design-pro/lib/Charts/bizcharts", "Util.translate")
   @js.native
-  def translate: FnCallElementXY | (js.Function3[/* element */ IGroup | IShape, /* x */ Double, /* y */ Double, Unit]) = js.native
-  inline def translate(element: IGroup, x: Double, y: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(element.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def translate(element: IShape, x: Double, y: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(element.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def translate_=(
-    x: FnCallElementXY | (js.Function3[/* element */ IGroup | IShape, /* x */ Double, /* y */ Double, Unit])
-  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("translate")(x.asInstanceOf[js.Any])
+  def translate: FnCallElementXY = js.native
+  inline def translate_=(x: FnCallElementXY): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("translate")(x.asInstanceOf[js.Any])
   
   inline def union(sources: Any*): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("union")(sources.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Array[Any]]
   
@@ -791,8 +520,6 @@ object Util {
   
   @JSImport("ant-design-pro/lib/Charts/bizcharts", "Util.zoom")
   @js.native
-  def zoom: FnCallElementRatio | (js.Function2[/* element */ IGroup | IShape, /* ratio */ Double, Unit]) = js.native
-  inline def zoom(element: IGroup, ratio: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("zoom")(element.asInstanceOf[js.Any], ratio.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def zoom(element: IShape, ratio: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("zoom")(element.asInstanceOf[js.Any], ratio.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def zoom_=(x: FnCallElementRatio | (js.Function2[/* element */ IGroup | IShape, /* ratio */ Double, Unit])): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zoom")(x.asInstanceOf[js.Any])
+  def zoom: FnCallElementRatio = js.native
+  inline def zoom_=(x: FnCallElementRatio): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zoom")(x.asInstanceOf[js.Any])
 }

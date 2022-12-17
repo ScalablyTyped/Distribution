@@ -31,7 +31,6 @@ object appCompatMod {
     
     def firestore(): FirebaseFirestore
     def firestore(app: FirebaseApp): FirebaseFirestore
-    def firestore(app: typings.firebaseFirestoreCompat.mod.firebaseAppCompatAugmentingMod.FirebaseApp): FirebaseFirestore
     @JSName("firestore")
     var firestore_Original: Blob
   }

@@ -53,9 +53,7 @@ trait PickImplonFailurePartialP
   
   def onFailure(formErrors: js.Array[String], fields: Any): Unit
   @JSName("onFailure")
-  var onFailure_Original: (js.ThisFunction2[/* this */ JQuery, /* formErrors */ js.Array[String], /* fields */ Any, Unit]) & (js.UndefOr[
-    js.ThisFunction2[/* this */ JQuery, /* formErrors */ js.Array[String], /* fields */ Any, Unit]
-  ])
+  var onFailure_Original: js.ThisFunction2[/* this */ JQuery, /* formErrors */ js.Array[String], /* fields */ Any, Unit]
   
   var onInvalid: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
@@ -95,9 +93,7 @@ trait PickImplonFailurePartialP
 object PickImplonFailurePartialP {
   
   inline def apply(
-    onFailure: (js.ThisFunction2[/* this */ JQuery, /* formErrors */ js.Array[String], /* fields */ Any, Unit]) & (js.UndefOr[
-      js.ThisFunction2[/* this */ JQuery, /* formErrors */ js.Array[String], /* fields */ Any, Unit]
-    ])
+    onFailure: js.ThisFunction2[/* this */ JQuery, /* formErrors */ js.Array[String], /* fields */ Any, Unit]
   ): PickImplonFailurePartialP = {
     val __obj = js.Dynamic.literal(onFailure = onFailure.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonFailurePartialP]
@@ -156,9 +152,7 @@ object PickImplonFailurePartialP {
     inline def setOn(value: submit | blur | change): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     
     inline def setOnFailure(
-      value: (js.ThisFunction2[/* this */ JQuery, /* formErrors */ js.Array[String], /* fields */ Any, Unit]) & (js.UndefOr[
-          js.ThisFunction2[/* this */ JQuery, /* formErrors */ js.Array[String], /* fields */ Any, Unit]
-        ])
+      value: js.ThisFunction2[/* this */ JQuery, /* formErrors */ js.Array[String], /* fields */ Any, Unit]
     ): Self = StObject.set(x, "onFailure", value.asInstanceOf[js.Any])
     
     inline def setOnInvalid(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onInvalid", value.asInstanceOf[js.Any])

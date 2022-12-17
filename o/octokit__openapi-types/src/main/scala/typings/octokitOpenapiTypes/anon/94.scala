@@ -6,20 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `94` extends StObject {
   
-  /** @description The name of the status checks */
-  var contexts: js.Array[String]
+  /** Response */
+  var `200`: Content69Headers
 }
 object `94` {
   
-  inline def apply(contexts: js.Array[String]): `94` = {
-    val __obj = js.Dynamic.literal(contexts = contexts.asInstanceOf[js.Any])
+  inline def apply(`200`: Content69Headers): `94` = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`94`]
   }
   
   extension [Self <: `94`](x: Self) {
     
-    inline def setContexts(value: js.Array[String]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
-    
-    inline def setContextsVarargs(value: String*): Self = StObject.set(x, "contexts", js.Array(value*))
+    inline def set200(value: Content69Headers): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
   }
 }

@@ -61,40 +61,69 @@ object distSrcTestkitChomecastApiMockMod {
   @js.native
   object SessionState extends StObject {
     
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[SessionState & String] = js.native
+    
     @js.native
     sealed trait NO_SESSION
       extends StObject
          with SessionState
+    /* "NO_SESSION" */ val NO_SESSION: typings.playable.distSrcTestkitChomecastApiMockMod.SessionState.NO_SESSION & String = js.native
     
     @js.native
     sealed trait SESSION_ENDED
       extends StObject
          with SessionState
+    /* "SESSION_ENDED" */ val SESSION_ENDED: typings.playable.distSrcTestkitChomecastApiMockMod.SessionState.SESSION_ENDED & String = js.native
     
     @js.native
     sealed trait SESSION_ENDING
       extends StObject
          with SessionState
+    /* "SESSION_ENDING" */ val SESSION_ENDING: typings.playable.distSrcTestkitChomecastApiMockMod.SessionState.SESSION_ENDING & String = js.native
     
     @js.native
     sealed trait SESSION_RESUMED
       extends StObject
          with SessionState
+    /* "SESSION_RESUMED" */ val SESSION_RESUMED: typings.playable.distSrcTestkitChomecastApiMockMod.SessionState.SESSION_RESUMED & String = js.native
     
     @js.native
     sealed trait SESSION_STARTED
       extends StObject
          with SessionState
+    /* "SESSION_STARTED" */ val SESSION_STARTED: typings.playable.distSrcTestkitChomecastApiMockMod.SessionState.SESSION_STARTED & String = js.native
     
     @js.native
     sealed trait SESSION_STARTING
       extends StObject
          with SessionState
+    /* "SESSION_STARTING" */ val SESSION_STARTING: typings.playable.distSrcTestkitChomecastApiMockMod.SessionState.SESSION_STARTING & String = js.native
     
     @js.native
     sealed trait SESSION_START_FAILED
       extends StObject
          with SessionState
+    /* "SESSION_START_FAILED" */ val SESSION_START_FAILED: typings.playable.distSrcTestkitChomecastApiMockMod.SessionState.SESSION_START_FAILED & String = js.native
+  }
+  
+  @JSImport("playable/dist/src/testkit/chomecast-api-mock", "WindowCastAPIMock")
+  @js.native
+  open class WindowCastAPIMock () extends StObject {
+    
+    var framework: CastTestFramework = js.native
+  }
+  object WindowCastAPIMock {
+    
+    @JSImport("playable/dist/src/testkit/chomecast-api-mock", "WindowCastAPIMock")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    inline def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
+    
+    /* static member */
+    inline def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
   }
   
   @JSImport("playable/dist/src/testkit/chomecast-api-mock", "WindowChromeAPIMock")
@@ -110,15 +139,20 @@ object distSrcTestkitChomecastApiMockMod {
   @js.native
   object eventType extends StObject {
     
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[eventType & String] = js.native
+    
     @js.native
     sealed trait CAST_STATE_CHANGED
       extends StObject
          with eventType
+    /* "caststatechanged" */ val CAST_STATE_CHANGED: typings.playable.distSrcTestkitChomecastApiMockMod.eventType.CAST_STATE_CHANGED & String = js.native
     
     @js.native
     sealed trait SESSION_STATE_CHANGED
       extends StObject
          with eventType
+    /* "sessionstatechanged" */ val SESSION_STATE_CHANGED: typings.playable.distSrcTestkitChomecastApiMockMod.eventType.SESSION_STATE_CHANGED & String = js.native
   }
   
   @js.native
@@ -212,23 +246,6 @@ object distSrcTestkitChomecastApiMockMod {
       inline def setSeek(value: () => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction0(value))
       
       inline def setSetVolumeLevel(value: () => Unit): Self = StObject.set(x, "setVolumeLevel", js.Any.fromFunction0(value))
-    }
-  }
-  
-  trait WindowCastAPIMock extends StObject {
-    
-    var framework: CastTestFramework
-  }
-  object WindowCastAPIMock {
-    
-    inline def apply(framework: CastTestFramework): WindowCastAPIMock = {
-      val __obj = js.Dynamic.literal(framework = framework.asInstanceOf[js.Any])
-      __obj.asInstanceOf[WindowCastAPIMock]
-    }
-    
-    extension [Self <: WindowCastAPIMock](x: Self) {
-      
-      inline def setFramework(value: CastTestFramework): Self = StObject.set(x, "framework", value.asInstanceOf[js.Any])
     }
   }
 }

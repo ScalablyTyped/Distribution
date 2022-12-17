@@ -519,7 +519,7 @@ object mod {
     }
   }
   
-  type ReadableOptions[TStream /* <: Readable[TType, TMapType, TByteType, Any, Any, ReadableEvents[TMapType]] */, TType, TMapType, TByteType, TMapFallback] = (js.Object & (BaseReadableOptions[TStream, TType, TMapType, TByteType])) | ((Map[TMapFallback, TStream, TType, TMapType, TByteType]) & (BaseReadableOptions[TStream, TType, TMapType, TByteType])) | ((MapMapFunction[TStream, TType, TMapType, TByteType]) & (BaseReadableOptions[TStream, TType, TMapType, TByteType]))
+  type ReadableOptions[TStream /* <: Readable[TType, TMapType, TByteType, Any, Any, ReadableEvents[TMapType]] */, TType, TMapType, TByteType, TMapFallback] = (BaseReadableOptions[TStream, TType, TMapType, TByteType]) | ((Map[TMapFallback, TStream, TType, TMapType, TByteType]) & (BaseReadableOptions[TStream, TType, TMapType, TByteType])) | ((MapMapFunction[TStream, TType, TMapType, TByteType]) & (BaseReadableOptions[TStream, TType, TMapType, TByteType]))
   
   type ResultCallback[T] = js.Function2[/* err */ js.UndefOr[js.Error | Null], /* result */ js.UndefOr[T], Unit]
   
@@ -665,5 +665,5 @@ object mod {
     }
   }
   
-  type WritableOptions[TStream /* <: Writable[TType, TMapType, TByteType, Any, Any, WritableEvents[TType]] */, TType, TMapType, TByteType, TMapFallback] = (js.Object & (BaseWritableOptions[TStream, TType, TMapType, TByteType])) | ((MapWritable[TMapFallback, TStream, TType, TMapType, TByteType]) & (BaseWritableOptions[TStream, TType, TMapType, TByteType])) | ((`0`[TStream, TType, TMapType, TByteType]) & (BaseWritableOptions[TStream, TType, TMapType, TByteType]))
+  type WritableOptions[TStream /* <: Writable[TType, TMapType, TByteType, Any, Any, WritableEvents[TType]] */, TType, TMapType, TByteType, TMapFallback] = (BaseWritableOptions[TStream, TType, TMapType, TByteType]) | ((MapWritable[TMapFallback, TStream, TType, TMapType, TByteType]) & (BaseWritableOptions[TStream, TType, TMapType, TByteType])) | ((`0`[TStream, TType, TMapType, TByteType]) & (BaseWritableOptions[TStream, TType, TMapType, TByteType]))
 }

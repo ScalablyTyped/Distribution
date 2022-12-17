@@ -1,7 +1,7 @@
 package typings.maplibreGl.mod
 
 import typings.mapboxPointGeometry.mod.^
-import typings.maplibreGl.anon.`0`
+import typings.maplibreGl.anon.`3`
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +15,7 @@ open class ClickZoomHandler () extends StObject {
   
   var _enabled: Boolean = js.native
   
-  def dblclick(e: MouseEvent, point: ^): `0` = js.native
+  def dblclick(e: MouseEvent, point: ^): `3` = js.native
   
   def disable(): scala.Unit = js.native
   

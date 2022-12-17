@@ -54,7 +54,7 @@ trait PickImplnotExactlyPartial
   
   var not: js.UndefOr[String] = js.undefined
   
-  var notExactly: String & js.UndefOr[String]
+  var notExactly: String
   
   var number: js.UndefOr[String] = js.undefined
   
@@ -64,7 +64,7 @@ trait PickImplnotExactlyPartial
 }
 object PickImplnotExactlyPartial {
   
-  inline def apply(notExactly: String & js.UndefOr[String]): PickImplnotExactlyPartial = {
+  inline def apply(notExactly: String): PickImplnotExactlyPartial = {
     val __obj = js.Dynamic.literal(notExactly = notExactly.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplnotExactlyPartial]
   }
@@ -157,7 +157,7 @@ object PickImplnotExactlyPartial {
     
     inline def setNot(value: String): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
     
-    inline def setNotExactly(value: String & js.UndefOr[String]): Self = StObject.set(x, "notExactly", value.asInstanceOf[js.Any])
+    inline def setNotExactly(value: String): Self = StObject.set(x, "notExactly", value.asInstanceOf[js.Any])
     
     inline def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
     

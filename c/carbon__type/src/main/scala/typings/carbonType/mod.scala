@@ -8,11 +8,11 @@ import typings.carbonType.anon.FontSizeFontWeight
 import typings.carbonType.anon.FontStyle
 import typings.carbonType.anon.FontWeight
 import typings.carbonType.anon.FontWeightLetterSpacing
+import typings.carbonType.anon.FontWeightNumber
 import typings.carbonType.anon.LetterSpacing
 import typings.carbonType.anon.LetterSpacingLineHeight
 import typings.carbonType.anon.Lg
 import typings.carbonType.anon.LineHeight
-import typings.carbonType.anon.LineHeightMediaminwidth42rem
 import typings.carbonType.anon.Mediaminwidth42rem
 import typings.carbonType.anon.Mediaminwidth66rem
 import typings.carbonType.anon.Mediaminwidth82rem
@@ -653,7 +653,7 @@ object mod {
   
   inline def fontFamily(name: String): FontFamilyString = ^.asInstanceOf[js.Dynamic].applyDynamic("fontFamily")(name.asInstanceOf[js.Any]).asInstanceOf[FontFamilyString]
   
-  inline def fontWeight(weight: String): FontWeight = ^.asInstanceOf[js.Dynamic].applyDynamic("fontWeight")(weight.asInstanceOf[js.Any]).asInstanceOf[FontWeight]
+  inline def fontWeight(weight: String): FontWeightNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("fontWeight")(weight.asInstanceOf[js.Any]).asInstanceOf[FontWeightNumber]
   
   object fontWeights {
     
@@ -938,9 +938,9 @@ object mod {
     
     @JSImport("@carbon/type", "quotation01.@media (min-width: 42rem)")
     @js.native
-    def mediaminWidth42rem: FontFamilyFontSize = js.native
+    def mediaminWidth42rem: FontWeight = js.native
     
-    inline def mediaminWidth42rem_=(x: FontFamilyFontSize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("@media (min-width: 42rem)")(x.asInstanceOf[js.Any])
+    inline def mediaminWidth42rem_=(x: FontWeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("@media (min-width: 42rem)")(x.asInstanceOf[js.Any])
     
     @JSImport("@carbon/type", "quotation01.@media (min-width: 66rem)")
     @js.native
@@ -1035,8 +1035,8 @@ object mod {
     
     @JSImport("@carbon/type", "reset.strong")
     @js.native
-    def strong: FontWeight = js.native
-    inline def strong_=(x: FontWeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("strong")(x.asInstanceOf[js.Any])
+    def strong: FontWeightNumber = js.native
+    inline def strong_=(x: FontWeightNumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("strong")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@carbon/type", "scale")
@@ -1088,8 +1088,8 @@ object mod {
     
     @JSImport("@carbon/type", "styles.bodyLong01")
     @js.native
-    def bodyLong01: FontSizeFontWeight = js.native
-    inline def bodyLong01_=(x: FontSizeFontWeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bodyLong01")(x.asInstanceOf[js.Any])
+    def bodyLong01: FontFamilyFontSize = js.native
+    inline def bodyLong01_=(x: FontFamilyFontSize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bodyLong01")(x.asInstanceOf[js.Any])
     
     @JSImport("@carbon/type", "styles.bodyLong02")
     @js.native
@@ -1098,8 +1098,8 @@ object mod {
     
     @JSImport("@carbon/type", "styles.bodyShort01")
     @js.native
-    def bodyShort01: FontSizeFontWeight = js.native
-    inline def bodyShort01_=(x: FontSizeFontWeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bodyShort01")(x.asInstanceOf[js.Any])
+    def bodyShort01: FontFamilyFontSize = js.native
+    inline def bodyShort01_=(x: FontFamilyFontSize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bodyShort01")(x.asInstanceOf[js.Any])
     
     @JSImport("@carbon/type", "styles.bodyShort02")
     @js.native
@@ -1108,18 +1108,18 @@ object mod {
     
     @JSImport("@carbon/type", "styles.caption01")
     @js.native
-    def caption01: FontSizeFontWeight = js.native
-    inline def caption01_=(x: FontSizeFontWeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("caption01")(x.asInstanceOf[js.Any])
+    def caption01: FontFamilyFontSize = js.native
+    inline def caption01_=(x: FontFamilyFontSize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("caption01")(x.asInstanceOf[js.Any])
     
     @JSImport("@carbon/type", "styles.code01")
     @js.native
-    def code01: FontSizeFontWeight = js.native
-    inline def code01_=(x: FontSizeFontWeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("code01")(x.asInstanceOf[js.Any])
+    def code01: FontFamilyFontSize = js.native
+    inline def code01_=(x: FontFamilyFontSize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("code01")(x.asInstanceOf[js.Any])
     
     @JSImport("@carbon/type", "styles.code02")
     @js.native
-    def code02: FontSizeFontWeight = js.native
-    inline def code02_=(x: FontSizeFontWeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("code02")(x.asInstanceOf[js.Any])
+    def code02: FontFamilyFontSize = js.native
+    inline def code02_=(x: FontFamilyFontSize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("code02")(x.asInstanceOf[js.Any])
     
     @JSImport("@carbon/type", "styles.display01")
     @js.native
@@ -1148,8 +1148,8 @@ object mod {
     
     @JSImport("@carbon/type", "styles.expressiveHeading05")
     @js.native
-    def expressiveHeading05: FontWeightLetterSpacing = js.native
-    inline def expressiveHeading05_=(x: FontWeightLetterSpacing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expressiveHeading05")(x.asInstanceOf[js.Any])
+    def expressiveHeading05: FontSizeFontWeight = js.native
+    inline def expressiveHeading05_=(x: FontSizeFontWeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expressiveHeading05")(x.asInstanceOf[js.Any])
     
     @JSImport("@carbon/type", "styles.expressiveParagraph01")
     @js.native
@@ -1158,8 +1158,8 @@ object mod {
     
     @JSImport("@carbon/type", "styles.heading01")
     @js.native
-    def heading01: FontSizeFontWeight = js.native
-    inline def heading01_=(x: FontSizeFontWeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("heading01")(x.asInstanceOf[js.Any])
+    def heading01: FontFamilyFontSize = js.native
+    inline def heading01_=(x: FontFamilyFontSize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("heading01")(x.asInstanceOf[js.Any])
     
     @JSImport("@carbon/type", "styles.heading02")
     @js.native
@@ -1178,8 +1178,8 @@ object mod {
     
     @JSImport("@carbon/type", "styles.label01")
     @js.native
-    def label01: FontSizeFontWeight = js.native
-    inline def label01_=(x: FontSizeFontWeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("label01")(x.asInstanceOf[js.Any])
+    def label01: FontFamilyFontSize = js.native
+    inline def label01_=(x: FontFamilyFontSize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("label01")(x.asInstanceOf[js.Any])
     
     @JSImport("@carbon/type", "styles.productiveHeading04")
     @js.native
@@ -1193,12 +1193,12 @@ object mod {
     
     @JSImport("@carbon/type", "styles.quotation01")
     @js.native
-    def quotation01: LetterSpacingLineHeight = js.native
-    inline def quotation01_=(x: LetterSpacingLineHeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("quotation01")(x.asInstanceOf[js.Any])
+    def quotation01: FontWeightLetterSpacing = js.native
+    inline def quotation01_=(x: FontWeightLetterSpacing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("quotation01")(x.asInstanceOf[js.Any])
     
     @JSImport("@carbon/type", "styles.quotation02")
     @js.native
-    def quotation02: LineHeightMediaminwidth42rem = js.native
-    inline def quotation02_=(x: LineHeightMediaminwidth42rem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("quotation02")(x.asInstanceOf[js.Any])
+    def quotation02: LetterSpacingLineHeight = js.native
+    inline def quotation02_=(x: LetterSpacingLineHeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("quotation02")(x.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,6 @@
 package typings.mqttPacket.mod
 
-import typings.mqttPacket.anon.ReasonString
+import typings.mqttPacket.anon.ServerReference
 import typings.mqttPacket.mqttPacketStrings.disconnect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,7 +14,7 @@ trait IDisconnectPacket
   @JSName("cmd")
   var cmd_IDisconnectPacket: disconnect
   
-  var properties: js.UndefOr[ReasonString] = js.undefined
+  var properties: js.UndefOr[ServerReference] = js.undefined
   
   var reasonCode: js.UndefOr[Double] = js.undefined
 }
@@ -29,7 +29,7 @@ object IDisconnectPacket {
     
     inline def setCmd(value: disconnect): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     
-    inline def setProperties(value: ReasonString): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: ServerReference): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object outObjectUpdateMod {
   
-  type Update[O /* <: js.Object */, K /* <: Key */, A /* <: Any */] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof O ]: P extends K? ts-toolbelt.ts-toolbelt/out/Union/Replace.Replace<A, ts-toolbelt.ts-toolbelt/out/Any/x.x, O[P], 'default'> : O[P]} */ js.Any) & js.Object
+  type Update[O /* <: js.Object */, K /* <: Key */, A /* <: Any */] = /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof O ]: P extends K? ts-toolbelt.ts-toolbelt/out/Union/Replace.Replace<A, ts-toolbelt.ts-toolbelt/out/Any/x.x, O[P], 'default'> : O[P]} */ js.Any
 }

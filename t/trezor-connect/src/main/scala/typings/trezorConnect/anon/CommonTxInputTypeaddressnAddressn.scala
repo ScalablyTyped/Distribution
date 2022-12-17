@@ -42,7 +42,7 @@ trait CommonTxInputTypeaddressnAddressn
   // required: previous transaction hash (reversed)
   var prev_index: Double
   
-  var script_pubkey: js.UndefOr[String] & String
+  var script_pubkey: js.UndefOr[String] = js.undefined
   
   // required if script_type=EXTERNAL
   var script_sig: js.UndefOr[String] = js.undefined
@@ -57,14 +57,8 @@ trait CommonTxInputTypeaddressnAddressn
 }
 object CommonTxInputTypeaddressnAddressn {
   
-  inline def apply(
-    address_n: scala.Unit,
-    amount: UintType,
-    prev_hash: String,
-    prev_index: Double,
-    script_pubkey: js.UndefOr[String] & String
-  ): CommonTxInputTypeaddressnAddressn = {
-    val __obj = js.Dynamic.literal(address_n = address_n.asInstanceOf[js.Any], amount = amount.asInstanceOf[js.Any], prev_hash = prev_hash.asInstanceOf[js.Any], prev_index = prev_index.asInstanceOf[js.Any], script_pubkey = script_pubkey.asInstanceOf[js.Any], script_type = "EXTERNAL")
+  inline def apply(address_n: scala.Unit, amount: UintType, prev_hash: String, prev_index: Double): CommonTxInputTypeaddressnAddressn = {
+    val __obj = js.Dynamic.literal(address_n = address_n.asInstanceOf[js.Any], amount = amount.asInstanceOf[js.Any], prev_hash = prev_hash.asInstanceOf[js.Any], prev_index = prev_index.asInstanceOf[js.Any], script_type = "EXTERNAL")
     __obj.asInstanceOf[CommonTxInputTypeaddressnAddressn]
   }
   
@@ -106,7 +100,9 @@ object CommonTxInputTypeaddressnAddressn {
     
     inline def setPrev_index(value: Double): Self = StObject.set(x, "prev_index", value.asInstanceOf[js.Any])
     
-    inline def setScript_pubkey(value: js.UndefOr[String] & String): Self = StObject.set(x, "script_pubkey", value.asInstanceOf[js.Any])
+    inline def setScript_pubkey(value: String): Self = StObject.set(x, "script_pubkey", value.asInstanceOf[js.Any])
+    
+    inline def setScript_pubkeyUndefined: Self = StObject.set(x, "script_pubkey", js.undefined)
     
     inline def setScript_sig(value: String): Self = StObject.set(x, "script_sig", value.asInstanceOf[js.Any])
     

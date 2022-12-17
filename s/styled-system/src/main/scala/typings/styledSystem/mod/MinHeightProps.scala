@@ -29,6 +29,6 @@ object MinHeightProps {
     
     inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
     
-    inline def setMinHeightVarargs(value: (TVal | Null)*): Self = StObject.set(x, "minHeight", js.Array(value :_*))
+    inline def setMinHeightVarargs(value: (TVal | Null)*): Self = StObject.set(x, "minHeight", js.Array(value*))
   }
 }

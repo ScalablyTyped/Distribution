@@ -3,6 +3,7 @@ package typings.expoDevServer
 import typings.expoDevServer.anon.InspectorProxyAny
 import typings.expoDevServer.anon.TypeofMetro
 import typings.expoDevServer.anon.TypeofMetroConfig
+import typings.expoDevServer.anon.TypeofServer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +26,7 @@ object buildMetroImportMetroFromProjectMod {
   
   inline def importMetroFromProject(projectRoot: String): TypeofMetro = ^.asInstanceOf[js.Dynamic].applyDynamic("importMetroFromProject")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[TypeofMetro]
   
-  inline def importMetroServerFromProject(projectRoot: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("importMetroServerFromProject")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def importMetroServerFromProject(projectRoot: String): TypeofServer = ^.asInstanceOf[js.Dynamic].applyDynamic("importMetroServerFromProject")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[TypeofServer]
   
   inline def importMetroSourceMapComposeSourceMapsFromProject(projectRoot: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("importMetroSourceMapComposeSourceMapsFromProject")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

@@ -1,5 +1,6 @@
 package typings.matrixJsSdk.mod
 
+import typings.matrixJsSdk.anon.TimelineSupport
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,8 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-js-sdk", "EventTimelineSet")
 @js.native
 open class EventTimelineSet protected () extends EventEmitter {
-  def this(room: Null, opts: typings.matrixJsSdk.anon.Filter) = this()
-  def this(room: Room, opts: typings.matrixJsSdk.anon.Filter) = this()
+  def this(room: Null, opts: TimelineSupport) = this()
+  def this(room: Room, opts: TimelineSupport) = this()
   
   def addEventToTimeline(
     event: MatrixEvent[EventContentTypeMessage, EventType],

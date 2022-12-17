@@ -16,16 +16,14 @@ trait PickImplmessagePartialPic
   
   def message(message: String, `type`: String): String
   @JSName("message")
-  var message_Original: (js.Function2[/* message */ String, /* type */ String, String]) & (js.UndefOr[js.Function2[/* message */ String, /* type */ String, String]])
+  var message_Original: js.Function2[/* message */ String, /* type */ String, String]
   
   var standard: js.UndefOr[js.Function1[/* response */ Any, String]] = js.undefined
 }
 object PickImplmessagePartialPic {
   
-  inline def apply(
-    message: (js.Function2[/* message */ String, /* type */ String, String]) & (js.UndefOr[js.Function2[/* message */ String, /* type */ String, String]])
-  ): PickImplmessagePartialPic = {
-    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+  inline def apply(message: (/* message */ String, /* type */ String) => String): PickImplmessagePartialPic = {
+    val __obj = js.Dynamic.literal(message = js.Any.fromFunction2(message))
     __obj.asInstanceOf[PickImplmessagePartialPic]
   }
   
@@ -39,9 +37,7 @@ object PickImplmessagePartialPic {
     
     inline def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
     
-    inline def setMessage(
-      value: (js.Function2[/* message */ String, /* type */ String, String]) & (js.UndefOr[js.Function2[/* message */ String, /* type */ String, String]])
-    ): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: (/* message */ String, /* type */ String) => String): Self = StObject.set(x, "message", js.Any.fromFunction2(value))
     
     inline def setStandard(value: /* response */ Any => String): Self = StObject.set(x, "standard", js.Any.fromFunction1(value))
     

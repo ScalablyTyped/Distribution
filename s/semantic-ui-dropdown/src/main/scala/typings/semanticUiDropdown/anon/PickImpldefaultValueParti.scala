@@ -12,7 +12,7 @@ trait PickImpldefaultValueParti
   
   var defaultText: js.UndefOr[String] = js.undefined
   
-  var defaultValue: String & js.UndefOr[String]
+  var defaultValue: String
   
   var placeholderText: js.UndefOr[String] = js.undefined
   
@@ -22,7 +22,7 @@ trait PickImpldefaultValueParti
 }
 object PickImpldefaultValueParti {
   
-  inline def apply(defaultValue: String & js.UndefOr[String]): PickImpldefaultValueParti = {
+  inline def apply(defaultValue: String): PickImpldefaultValueParti = {
     val __obj = js.Dynamic.literal(defaultValue = defaultValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldefaultValueParti]
   }
@@ -33,7 +33,7 @@ object PickImpldefaultValueParti {
     
     inline def setDefaultTextUndefined: Self = StObject.set(x, "defaultText", js.undefined)
     
-    inline def setDefaultValue(value: String & js.UndefOr[String]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     inline def setPlaceholderText(value: String): Self = StObject.set(x, "placeholderText", value.asInstanceOf[js.Any])
     

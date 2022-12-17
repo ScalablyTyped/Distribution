@@ -49,7 +49,7 @@ trait PartialViolinData
   
   var line: js.UndefOr[PartialcolorColorwidthnumColor] = js.undefined
   
-  var marker: js.UndefOr[PartialBoxPlotMarker] = js.undefined
+  var marker: js.UndefOr[PartialBoxPlotMarkerColor] = js.undefined
   
   var meanline: js.UndefOr[Partialvisiblebooleancolo] = js.undefined
   
@@ -148,7 +148,7 @@ object PartialViolinData {
     
     inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
-    inline def setMarker(value: PartialBoxPlotMarker): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: PartialBoxPlotMarkerColor): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
     inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     

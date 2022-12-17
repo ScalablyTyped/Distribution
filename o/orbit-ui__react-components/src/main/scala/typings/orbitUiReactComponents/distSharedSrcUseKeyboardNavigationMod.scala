@@ -1,6 +1,6 @@
 package typings.orbitUiReactComponents
 
-import typings.orbitUiReactComponents.anon.OnKeyDown
+import typings.orbitUiReactComponents.anon.OnKeyDownKeyboardEventHandler
 import typings.orbitUiReactComponents.distSharedSrcKeysMod.Keys
 import typings.orbitUiReactComponents.distSharedSrcUseFocusManagerMod.FocusManager
 import typings.react.mod.KeyboardEvent
@@ -15,8 +15,8 @@ object distSharedSrcUseKeyboardNavigationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useKeyboardNavigation(focusManager: FocusManager, param1: KeyboardNavigationBindings): OnKeyDown = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardNavigation")(focusManager.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[OnKeyDown]
-  inline def useKeyboardNavigation(focusManager: FocusManager, param1: KeyboardNavigationBindings, param2: KeyboardNavigationOptions): OnKeyDown = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardNavigation")(focusManager.asInstanceOf[js.Any], param1.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[OnKeyDown]
+  inline def useKeyboardNavigation(focusManager: FocusManager, param1: KeyboardNavigationBindings): OnKeyDownKeyboardEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardNavigation")(focusManager.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[OnKeyDownKeyboardEventHandler]
+  inline def useKeyboardNavigation(focusManager: FocusManager, param1: KeyboardNavigationBindings, param2: KeyboardNavigationOptions): OnKeyDownKeyboardEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardNavigation")(focusManager.asInstanceOf[js.Any], param1.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[OnKeyDownKeyboardEventHandler]
   
   trait KeyboardNavigationBindings extends StObject {
     

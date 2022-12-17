@@ -49,7 +49,7 @@ trait PickImplallowReselectionP
   
   var allowCategorySelection: js.UndefOr[Boolean] = js.undefined
   
-  var allowReselection: Boolean & js.UndefOr[Boolean]
+  var allowReselection: Boolean
   
   var allowTab: js.UndefOr[Boolean] = js.undefined
   
@@ -169,7 +169,7 @@ trait PickImplallowReselectionP
 }
 object PickImplallowReselectionP {
   
-  inline def apply(allowReselection: Boolean & js.UndefOr[Boolean]): PickImplallowReselectionP = {
+  inline def apply(allowReselection: Boolean): PickImplallowReselectionP = {
     val __obj = js.Dynamic.literal(allowReselection = allowReselection.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplallowReselectionP]
   }
@@ -196,7 +196,7 @@ object PickImplallowReselectionP {
     
     inline def setAllowCategorySelectionUndefined: Self = StObject.set(x, "allowCategorySelection", js.undefined)
     
-    inline def setAllowReselection(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "allowReselection", value.asInstanceOf[js.Any])
+    inline def setAllowReselection(value: Boolean): Self = StObject.set(x, "allowReselection", value.asInstanceOf[js.Any])
     
     inline def setAllowTab(value: Boolean): Self = StObject.set(x, "allowTab", value.asInstanceOf[js.Any])
     

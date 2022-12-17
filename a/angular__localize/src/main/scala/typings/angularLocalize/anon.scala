@@ -234,7 +234,7 @@ object anon {
     /**
       * The location of the message in the source.
       */
-    var location: js.UndefOr[ɵSourceLocation] & ɵSourceLocation
+    var location: js.UndefOr[ɵSourceLocation] = js.undefined
     
     /**
       * The meaning of the `message`, used to distinguish identical `messageString`s.
@@ -275,13 +275,12 @@ object anon {
     
     inline def apply(
       id: MessageId,
-      location: js.UndefOr[ɵSourceLocation] & ɵSourceLocation,
       messageParts: js.Array[String],
       placeholderNames: js.Array[String],
       substitutions: Record[String, Any],
       text: String
     ): ɵParsedMessagelocationɵSo = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], messageParts = messageParts.asInstanceOf[js.Any], placeholderNames = placeholderNames.asInstanceOf[js.Any], substitutions = substitutions.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], messageParts = messageParts.asInstanceOf[js.Any], placeholderNames = placeholderNames.asInstanceOf[js.Any], substitutions = substitutions.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[ɵParsedMessagelocationɵSo]
     }
     
@@ -307,7 +306,9 @@ object anon {
       
       inline def setLegacyIdsVarargs(value: String*): Self = StObject.set(x, "legacyIds", js.Array(value*))
       
-      inline def setLocation(value: js.UndefOr[ɵSourceLocation] & ɵSourceLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: ɵSourceLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
       inline def setMeaning(value: String): Self = StObject.set(x, "meaning", value.asInstanceOf[js.Any])
       

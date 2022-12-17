@@ -64,7 +64,7 @@ trait PickImplregExpPartialPick
   
   var performance: js.UndefOr[Boolean] = js.undefined
   
-  var regExp: RegExpSettings & js.UndefOr[RegExpSettings]
+  var regExp: RegExpSettings
   
   var searchDelay: js.UndefOr[Double] = js.undefined
   
@@ -92,7 +92,7 @@ trait PickImplregExpPartialPick
 }
 object PickImplregExpPartialPick {
   
-  inline def apply(regExp: RegExpSettings & js.UndefOr[RegExpSettings]): PickImplregExpPartialPick = {
+  inline def apply(regExp: RegExpSettings): PickImplregExpPartialPick = {
     val __obj = js.Dynamic.literal(regExp = regExp.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplregExpPartialPick]
   }
@@ -183,7 +183,7 @@ object PickImplregExpPartialPick {
     
     inline def setPerformanceUndefined: Self = StObject.set(x, "performance", js.undefined)
     
-    inline def setRegExp(value: RegExpSettings & js.UndefOr[RegExpSettings]): Self = StObject.set(x, "regExp", value.asInstanceOf[js.Any])
+    inline def setRegExp(value: RegExpSettings): Self = StObject.set(x, "regExp", value.asInstanceOf[js.Any])
     
     inline def setSearchDelay(value: Double): Self = StObject.set(x, "searchDelay", value.asInstanceOf[js.Any])
     

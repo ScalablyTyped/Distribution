@@ -1,7 +1,7 @@
 package typings.preact.mod
 
-import typings.preact.anon.Children
 import typings.preact.anon.Value
+import typings.preact.anon.`0`
 import typings.preact.mod.^
 import typings.std.Document
 import typings.std.DocumentFragment
@@ -59,7 +59,7 @@ type ComponentFactory[P] = ComponentType[P]
 
 type ComponentType[P] = (ComponentClass[P, js.Object]) | FunctionComponent[P]
 
-type Consumer[T] = FunctionComponent[Children[T]]
+type Consumer[T] = FunctionComponent[`0`[T]]
 
 type FunctionalComponent[P] = FunctionComponent[P]
 

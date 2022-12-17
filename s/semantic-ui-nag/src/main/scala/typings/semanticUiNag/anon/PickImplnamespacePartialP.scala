@@ -43,7 +43,7 @@ trait PickImplnamespacePartialP
   
   var name: js.UndefOr[String] = js.undefined
   
-  var namespace: String & js.UndefOr[String]
+  var namespace: String
   
   var onHide: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
@@ -67,7 +67,7 @@ trait PickImplnamespacePartialP
 }
 object PickImplnamespacePartialP {
   
-  inline def apply(namespace: String & js.UndefOr[String]): PickImplnamespacePartialP = {
+  inline def apply(namespace: String): PickImplnamespacePartialP = {
     val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplnamespacePartialP]
   }
@@ -122,7 +122,7 @@ object PickImplnamespacePartialP {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setNamespace(value: String & js.UndefOr[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
     inline def setOnHide(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onHide", value.asInstanceOf[js.Any])
     

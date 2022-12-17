@@ -8,11 +8,11 @@ trait ParametersPathIssuenumberQueryContentPage extends StObject {
   
   var parameters: PathIssuenumberQueryContentPage
   
-  var responses: `404Content6410Content6`
+  var responses: `200Content112404410`
 }
 object ParametersPathIssuenumberQueryContentPage {
   
-  inline def apply(parameters: PathIssuenumberQueryContentPage, responses: `404Content6410Content6`): ParametersPathIssuenumberQueryContentPage = {
+  inline def apply(parameters: PathIssuenumberQueryContentPage, responses: `200Content112404410`): ParametersPathIssuenumberQueryContentPage = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathIssuenumberQueryContentPage]
   }
@@ -21,6 +21,6 @@ object ParametersPathIssuenumberQueryContentPage {
     
     inline def setParameters(value: PathIssuenumberQueryContentPage): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `404Content6410Content6`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200Content112404410`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

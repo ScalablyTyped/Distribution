@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/shims/src/expando.NgExtensionData & {  fileShim :@angular/compiler-cli.@angular/compiler-cli/src/ngtsc/shims/src/expando.NgFileShimData} */
 trait NgExtensionDatafileShimNg extends StObject {
   
-  var fileShim: (NgFileShimData | Null) & NgFileShimData
+  var fileShim: NgFileShimData | Null
   
   var isTopLevelShim: Boolean
   
@@ -25,14 +25,16 @@ trait NgExtensionDatafileShimNg extends StObject {
 }
 object NgExtensionDatafileShimNg {
   
-  inline def apply(fileShim: (NgFileShimData | Null) & NgFileShimData, isTopLevelShim: Boolean): NgExtensionDatafileShimNg = {
-    val __obj = js.Dynamic.literal(fileShim = fileShim.asInstanceOf[js.Any], isTopLevelShim = isTopLevelShim.asInstanceOf[js.Any], originalReferencedFiles = null, taggedReferenceFiles = null)
+  inline def apply(isTopLevelShim: Boolean): NgExtensionDatafileShimNg = {
+    val __obj = js.Dynamic.literal(isTopLevelShim = isTopLevelShim.asInstanceOf[js.Any], fileShim = null, originalReferencedFiles = null, taggedReferenceFiles = null)
     __obj.asInstanceOf[NgExtensionDatafileShimNg]
   }
   
   extension [Self <: NgExtensionDatafileShimNg](x: Self) {
     
-    inline def setFileShim(value: (NgFileShimData | Null) & NgFileShimData): Self = StObject.set(x, "fileShim", value.asInstanceOf[js.Any])
+    inline def setFileShim(value: NgFileShimData): Self = StObject.set(x, "fileShim", value.asInstanceOf[js.Any])
+    
+    inline def setFileShimNull: Self = StObject.set(x, "fileShim", null)
     
     inline def setIsTopLevelShim(value: Boolean): Self = StObject.set(x, "isTopLevelShim", value.asInstanceOf[js.Any])
     

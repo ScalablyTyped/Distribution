@@ -1,7 +1,7 @@
 package typings.recoil.mod
 
 import typings.react.mod.FC
-import typings.recoil.anon.Children
+import typings.recoil.anon.ChildrenReactNode
 import typings.recoil.anon.GetInfoUNSTABLE
 import typings.recoil.anon.PreviousSnapshot
 import typings.recoil.mod.^
@@ -12,7 +12,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def RecoilBridge: FC[Children] = ^.asInstanceOf[js.Dynamic].selectDynamic("RecoilBridge").asInstanceOf[FC[Children]]
+inline def RecoilBridge: FC[ChildrenReactNode] = ^.asInstanceOf[js.Dynamic].selectDynamic("RecoilBridge").asInstanceOf[FC[ChildrenReactNode]]
 
 inline def RecoilRoot: FC[RecoilRootProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("RecoilRoot").asInstanceOf[FC[RecoilRootProps]]
 
@@ -48,7 +48,7 @@ inline def useGetRecoilValueInfoUNSTABLE(): js.Function1[/* recoilValue */ Recoi
 
 inline def useGotoRecoilSnapshot(): js.Function1[/* snapshot */ Snapshot, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("useGotoRecoilSnapshot")().asInstanceOf[js.Function1[/* snapshot */ Snapshot, Unit]]
 
-inline def useRecoilBridgeAcrossReactRootsUNSTABLE(): FC[Children] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRecoilBridgeAcrossReactRoots_UNSTABLE")().asInstanceOf[FC[Children]]
+inline def useRecoilBridgeAcrossReactRootsUNSTABLE(): FC[ChildrenReactNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRecoilBridgeAcrossReactRoots_UNSTABLE")().asInstanceOf[FC[ChildrenReactNode]]
 
 inline def useRecoilCallback[Args /* <: js.Array[Any] */, Return](fn: js.Function1[/* interface */ CallbackInterface, js.Function1[/* args */ Args, Return]]): js.Function1[/* args */ Args, Return] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRecoilCallback")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* args */ Args, Return]]
 inline def useRecoilCallback[Args /* <: js.Array[Any] */, Return](

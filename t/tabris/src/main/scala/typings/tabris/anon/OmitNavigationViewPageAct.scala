@@ -127,10 +127,10 @@ trait OmitNavigationViewPageAct[PageType /* <: Page */, ActionType /* <: Action 
   @JSName("_addChild")
   var _addChild_Original: js.Function2[/* child */ Widget[Any], /* index */ js.UndefOr[Double], Unit]
   
-  def _apply[Target](options: `9`[Target], rules: RuleSet[NavigationView[PageType, ActionType]]): NavigationView[PageType, ActionType]
+  def _apply[Target](options: `2`[Target], rules: RuleSet[NavigationView[PageType, ActionType]]): NavigationView[PageType, ActionType]
   @JSName("_apply")
   var _apply_Original: js.Function2[
-    /* options */ `9`[NavigationView[PageType, ActionType]], 
+    /* options */ `2`[NavigationView[PageType, ActionType]], 
     /* rules */ RuleSet[NavigationView[PageType, ActionType]], 
     NavigationView[PageType, ActionType]
   ]
@@ -313,10 +313,10 @@ trait OmitNavigationViewPageAct[PageType /* <: Page */, ActionType /* <: Action 
   var append_Original: js.Function1[/* repeated */ Page | Action, NavigationView[PageType, ActionType]]
   
   @JSName("apply")
-  def apply[Target](options: `9`[Target], rules: RuleSet[NavigationView[PageType, ActionType]]): NavigationView[PageType, ActionType]
+  def apply[Target](options: `2`[Target], rules: RuleSet[NavigationView[PageType, ActionType]]): NavigationView[PageType, ActionType]
   @JSName("apply")
   var apply_Original: js.Function2[
-    /* options */ `9`[NavigationView[PageType, ActionType]], 
+    /* options */ `2`[NavigationView[PageType, ActionType]], 
     /* rules */ RuleSet[NavigationView[PageType, ActionType]], 
     NavigationView[PageType, ActionType]
   ]
@@ -636,7 +636,7 @@ object OmitNavigationViewPageAct {
     $trigger: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Unit,
     _acceptChild: /* child */ Widget[Any] => Boolean,
     _addChild: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit,
-    _apply: (/* options */ `9`[NavigationView[PageType, ActionType]], /* rules */ RuleSet[NavigationView[PageType, ActionType]]) => NavigationView[PageType, ActionType],
+    _apply: (/* options */ `2`[NavigationView[PageType, ActionType]], /* rules */ RuleSet[NavigationView[PageType, ActionType]]) => NavigationView[PageType, ActionType],
     _checkDisposed: () => Unit,
     _checkLayout: /* value */ typings.tabris.mod.Layout => Unit,
     _children: /* selector */ js.UndefOr[Selector[Page | Action, Page | Action]] => WidgetCollection[Page | Action],
@@ -677,7 +677,7 @@ object OmitNavigationViewPageAct {
     animate: (/* properties */ Opacity, /* options */ AnimationOptions) => js.Promise[Unit],
     append: /* repeated */ Page | Action => NavigationView[PageType, ActionType],
     appendTo: /* parent */ Composite[Widget[Any]] => NavigationView[PageType, ActionType],
-    apply: (/* options */ `9`[NavigationView[PageType, ActionType]], /* rules */ RuleSet[NavigationView[PageType, ActionType]]) => NavigationView[PageType, ActionType],
+    apply: (/* options */ `2`[NavigationView[PageType, ActionType]], /* rules */ RuleSet[NavigationView[PageType, ActionType]]) => NavigationView[PageType, ActionType],
     baseline: SiblingReferenceValue | auto | `true`,
     bottom: ConstraintValue,
     bounds: Bounds,
@@ -821,7 +821,7 @@ object OmitNavigationViewPageAct {
     inline def setAppendTo(value: /* parent */ Composite[Widget[Any]] => NavigationView[PageType, ActionType]): Self = StObject.set(x, "appendTo", js.Any.fromFunction1(value))
     
     inline def setApply(
-      value: (/* options */ `9`[NavigationView[PageType, ActionType]], /* rules */ RuleSet[NavigationView[PageType, ActionType]]) => NavigationView[PageType, ActionType]
+      value: (/* options */ `2`[NavigationView[PageType, ActionType]], /* rules */ RuleSet[NavigationView[PageType, ActionType]]) => NavigationView[PageType, ActionType]
     ): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
     
     inline def setBackground(value: LinearGradientValue | ColorValue | ImageValue): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
@@ -1091,7 +1091,7 @@ object OmitNavigationViewPageAct {
     inline def set_addChild(value: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "_addChild", js.Any.fromFunction2(value))
     
     inline def set_apply(
-      value: (/* options */ `9`[NavigationView[PageType, ActionType]], /* rules */ RuleSet[NavigationView[PageType, ActionType]]) => NavigationView[PageType, ActionType]
+      value: (/* options */ `2`[NavigationView[PageType, ActionType]], /* rules */ RuleSet[NavigationView[PageType, ActionType]]) => NavigationView[PageType, ActionType]
     ): Self = StObject.set(x, "_apply", js.Any.fromFunction2(value))
     
     inline def set_checkDisposed(value: () => Unit): Self = StObject.set(x, "_checkDisposed", js.Any.fromFunction0(value))

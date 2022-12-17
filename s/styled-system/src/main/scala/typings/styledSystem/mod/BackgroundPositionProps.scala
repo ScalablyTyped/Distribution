@@ -29,6 +29,6 @@ object BackgroundPositionProps {
     
     inline def setBackgroundPositionUndefined: Self = StObject.set(x, "backgroundPosition", js.undefined)
     
-    inline def setBackgroundPositionVarargs(value: (TVal | Null)*): Self = StObject.set(x, "backgroundPosition", js.Array(value :_*))
+    inline def setBackgroundPositionVarargs(value: (TVal | Null)*): Self = StObject.set(x, "backgroundPosition", js.Array(value*))
   }
 }

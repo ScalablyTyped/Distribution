@@ -6,9 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModuleDependency
-  extends StObject
-     with Dependency {
+trait ModuleDependency extends Dependency {
   
   var assertions: js.UndefOr[Record[String, Any]] = js.native
   

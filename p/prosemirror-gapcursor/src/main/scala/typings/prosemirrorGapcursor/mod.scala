@@ -19,9 +19,7 @@ object mod {
   */
   @JSImport("prosemirror-gapcursor", "GapCursor")
   @js.native
-  open class GapCursor_ protected ()
-    extends StObject
-       with Selection {
+  open class GapCursor_ protected () extends Selection {
     /**
       Create a gap cursor.
       */

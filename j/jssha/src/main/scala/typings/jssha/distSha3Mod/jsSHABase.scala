@@ -5,8 +5,7 @@ import typings.jssha.anon.OutputLen
 import typings.jssha.anon.OutputLenNumber
 import typings.jssha.anon.OutputUpper
 import typings.jssha.anon.ShakeLen
-import typings.jssha.anon.`12`
-import typings.jssha.anon.`2`
+import typings.jssha.anon.`13`
 import typings.jssha.jsshaInts.`-1`
 import typings.jssha.jsshaInts.`1`
 import typings.jssha.jsshaStrings.ARRAYBUFFER
@@ -53,7 +52,7 @@ trait jsSHABase[StateT, VariantT] extends StObject {
   @JSName("getHMAC")
   def getHMAC_B64(format: B64): String = js.native
   @JSName("getHMAC")
-  def getHMAC_B64(format: B64, options: `2`): String = js.native
+  def getHMAC_B64(format: B64, options: typings.jssha.anon.`1`): String = js.native
   @JSName("getHMAC")
   def getHMAC_BYTES(format: BYTES): String = js.native
   /**
@@ -140,7 +139,7 @@ trait jsSHABase[StateT, VariantT] extends StObject {
   @JSName("setHMACKey")
   def setHMACKey_TEXT(key: String, inputFormat: TEXT): Unit = js.native
   @JSName("setHMACKey")
-  def setHMACKey_TEXT(key: String, inputFormat: TEXT, options: `12`): Unit = js.native
+  def setHMACKey_TEXT(key: String, inputFormat: TEXT, options: `13`): Unit = js.native
   @JSName("setHMACKey")
   def setHMACKey_UINT8ARRAY(key: js.typedarray.Uint8Array, inputFormat: UINT8ARRAY): Unit = js.native
   

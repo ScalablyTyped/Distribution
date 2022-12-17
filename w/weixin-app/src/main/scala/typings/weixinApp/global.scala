@@ -189,7 +189,7 @@ object global {
     * Page() 函数用来注册一个页面。
     * 接受一个 object 参数，其指定页面的初始数据、生命周期函数、事件处理函数等。
     */
-  inline def Page[T /* <: PageOptions & js.Object */](page: T & (ThisType[T & (typings.weixinApp.wx.Page[js.Object, js.Object])])): Unit = js.Dynamic.global.applyDynamic("Page")(page.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def Page[T /* <: PageOptions */](page: T & (ThisType[T & (typings.weixinApp.wx.Page[js.Object, js.Object])])): Unit = js.Dynamic.global.applyDynamic("Page")(page.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * 获取小程序实例

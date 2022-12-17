@@ -25,7 +25,7 @@ trait PickImpldebugPartialPickI
   
   var continuous: js.UndefOr[Boolean] = js.undefined
   
-  var debug: Boolean & js.UndefOr[Boolean]
+  var debug: Boolean
   
   var duration: js.UndefOr[Double] = js.undefined
   
@@ -103,7 +103,7 @@ trait PickImpldebugPartialPickI
 }
 object PickImpldebugPartialPickI {
   
-  inline def apply(debug: Boolean & js.UndefOr[Boolean]): PickImpldebugPartialPickI = {
+  inline def apply(debug: Boolean): PickImpldebugPartialPickI = {
     val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldebugPartialPickI]
   }
@@ -126,7 +126,7 @@ object PickImpldebugPartialPickI {
     
     inline def setContinuousUndefined: Self = StObject.set(x, "continuous", js.undefined)
     
-    inline def setDebug(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

@@ -6,29 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RequestBodyContentApplicationjsonRecentfolders extends StObject {
   
-  var parameters: PathCodespacenameString
+  var parameters: Path356
   
   var requestBody: ContentApplicationjsonRecentfolders
   
-  var responses: `200ContentApplicationjsonDevcontainerpath`
+  var responses: `200Content85`
 }
 object RequestBodyContentApplicationjsonRecentfolders {
   
-  inline def apply(
-    parameters: PathCodespacenameString,
-    requestBody: ContentApplicationjsonRecentfolders,
-    responses: `200ContentApplicationjsonDevcontainerpath`
-  ): RequestBodyContentApplicationjsonRecentfolders = {
+  inline def apply(parameters: Path356, requestBody: ContentApplicationjsonRecentfolders, responses: `200Content85`): RequestBodyContentApplicationjsonRecentfolders = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyContentApplicationjsonRecentfolders]
   }
   
   extension [Self <: RequestBodyContentApplicationjsonRecentfolders](x: Self) {
     
-    inline def setParameters(value: PathCodespacenameString): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: Path356): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setRequestBody(value: ContentApplicationjsonRecentfolders): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200ContentApplicationjsonDevcontainerpath`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200Content85`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

@@ -6,8 +6,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@JSImport("webpack", "NormalModule")
 @js.native
-trait NormalModule extends Module {
+open class NormalModule protected () extends Module {
+  def this(__0: NormalModuleCreateData) = this()
   
   def applyNoParseRule(): Any = js.native
   def applyNoParseRule(rule: Any): Any = js.native
@@ -82,4 +84,17 @@ trait NormalModule extends Module {
   def shouldPreventParsing(noParseRule: Unit, request: Any): Any = js.native
   
   var userRequest: String = js.native
+}
+object NormalModule {
+  
+  @JSImport("webpack", "NormalModule")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  inline def deserialize(): NormalModule = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")().asInstanceOf[NormalModule]
+  inline def deserialize(context: Any): NormalModule = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(context.asInstanceOf[js.Any]).asInstanceOf[NormalModule]
+  
+  /* static member */
+  inline def getCompilationHooks(compilation: Compilation): NormalModuleCompilationHooks = ^.asInstanceOf[js.Dynamic].applyDynamic("getCompilationHooks")(compilation.asInstanceOf[js.Any]).asInstanceOf[NormalModuleCompilationHooks]
 }

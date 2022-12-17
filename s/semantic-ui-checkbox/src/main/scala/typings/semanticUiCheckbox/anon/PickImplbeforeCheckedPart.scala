@@ -18,7 +18,7 @@ trait PickImplbeforeCheckedPart
   
   def beforeChecked(): Unit | `false`
   @JSName("beforeChecked")
-  var beforeChecked_Original: (js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]) & (js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]])
+  var beforeChecked_Original: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]
   
   var beforeDeterminate: js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]] = js.undefined
   
@@ -68,18 +68,14 @@ trait PickImplbeforeCheckedPart
 }
 object PickImplbeforeCheckedPart {
   
-  inline def apply(
-    beforeChecked: (js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]) & (js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]])
-  ): PickImplbeforeCheckedPart = {
+  inline def apply(beforeChecked: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]): PickImplbeforeCheckedPart = {
     val __obj = js.Dynamic.literal(beforeChecked = beforeChecked.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplbeforeCheckedPart]
   }
   
   extension [Self <: PickImplbeforeCheckedPart](x: Self) {
     
-    inline def setBeforeChecked(
-      value: (js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]) & (js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]])
-    ): Self = StObject.set(x, "beforeChecked", value.asInstanceOf[js.Any])
+    inline def setBeforeChecked(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]): Self = StObject.set(x, "beforeChecked", value.asInstanceOf[js.Any])
     
     inline def setBeforeDeterminate(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]): Self = StObject.set(x, "beforeDeterminate", value.asInstanceOf[js.Any])
     

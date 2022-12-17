@@ -10,7 +10,7 @@ import typings.babylonjs.animationsAnimationPropertiesOverrideMod.AnimationPrope
 import typings.babylonjs.animationsRuntimeAnimationMod.RuntimeAnimation
 import typings.babylonjs.anon.AdditiveAnimations
 import typings.babylonjs.anon.Animations
-import typings.babylonjs.anon.MaxMin
+import typings.babylonjs.anon.Max
 import typings.babylonjs.anon.PartialIEnvironmentHelper
 import typings.babylonjs.audioSoundMod.Sound
 import typings.babylonjs.audioSoundTrackMod.SoundTrack
@@ -4211,8 +4211,8 @@ object sceneMod {
       * @param filterPredicate the predicate - which meshes should be included when calculating the world size
       * @returns {{ min: Vector3; max: Vector3 }} min and max vectors
       */
-    def getWorldExtends(): MaxMin = js.native
-    def getWorldExtends(filterPredicate: js.Function1[/* mesh */ AbstractMesh, Boolean]): MaxMin = js.native
+    def getWorldExtends(): Max = js.native
+    def getWorldExtends(filterPredicate: js.Function1[/* mesh */ AbstractMesh, Boolean]): Max = js.native
     
     /**
       * Defines the gravity applied to this scene (used only for collisions)

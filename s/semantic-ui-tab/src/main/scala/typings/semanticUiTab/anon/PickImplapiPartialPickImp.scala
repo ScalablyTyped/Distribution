@@ -10,7 +10,7 @@ trait PickImplapiPartialPickImp
   extends StObject
      with Param {
   
-  var api: String & js.UndefOr[String]
+  var api: String
   
   var method: js.UndefOr[String] = js.undefined
   
@@ -26,14 +26,14 @@ trait PickImplapiPartialPickImp
 }
 object PickImplapiPartialPickImp {
   
-  inline def apply(api: String & js.UndefOr[String]): PickImplapiPartialPickImp = {
+  inline def apply(api: String): PickImplapiPartialPickImp = {
     val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplapiPartialPickImp]
   }
   
   extension [Self <: PickImplapiPartialPickImp](x: Self) {
     
-    inline def setApi(value: String & js.UndefOr[String]): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+    inline def setApi(value: String): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

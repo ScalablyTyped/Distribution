@@ -27,7 +27,7 @@ trait ControlPointsGeoreference extends StObject {
     */
   var height: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[`control-points`] & `control-points`
+  var `type`: js.UndefOr[`control-points`] = js.undefined
   
   /**
     * Defines the size of the element displayed, typically the element's width in pixels.
@@ -40,9 +40,8 @@ trait ControlPointsGeoreference extends StObject {
 }
 object ControlPointsGeoreference {
   
-  inline def apply(`type`: js.UndefOr[`control-points`] & `control-points`): ControlPointsGeoreference = {
+  inline def apply(): ControlPointsGeoreference = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ControlPointsGeoreference]
   }
   
@@ -58,7 +57,9 @@ object ControlPointsGeoreference {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setType(value: js.UndefOr[`control-points`] & `control-points`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `control-points`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

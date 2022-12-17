@@ -13,7 +13,7 @@ trait PartialNoticePickNoticeco extends StObject {
   
   var className: js.UndefOr[String] = js.undefined
   
-  var content: js.UndefOr[ReactNode] & ReactNode
+  var content: js.UndefOr[ReactNode] = js.undefined
   
   var id: js.UndefOr[String] = js.undefined
   
@@ -40,7 +40,7 @@ object PartialNoticePickNoticeco {
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    inline def setContent(value: js.UndefOr[ReactNode] & ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     

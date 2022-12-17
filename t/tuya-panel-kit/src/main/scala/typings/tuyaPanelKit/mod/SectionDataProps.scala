@@ -2,7 +2,7 @@ package typings.tuyaPanelKit.mod
 
 import typings.react.mod.ReactNode
 import typings.tuyaPanelKit.anon.Arrow
-import typings.tuyaPanelKit.anon.BoardBg
+import typings.tuyaPanelKit.anon.CellBg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,7 +67,7 @@ trait SectionDataProps extends StObject {
     * @description Theme configuration
     * @defaultValue null
     */
-  var theme: js.UndefOr[BoardBg] = js.undefined
+  var theme: js.UndefOr[CellBg] = js.undefined
   
   /**
     * @language zh-CN
@@ -120,7 +120,7 @@ object SectionDataProps {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setTheme(value: BoardBg): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: CellBg): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     

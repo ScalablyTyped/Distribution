@@ -31,7 +31,7 @@ object outObjectNullableMod {
   @js.native
   trait NullableDeep[O] extends StObject
   
-  type NullableFlat[O] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof O ]: ts-toolbelt.ts-toolbelt/out/Union/Nullable.Nullable<O[K]>} */ js.Any) & js.Object
+  type NullableFlat[O] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof O ]: ts-toolbelt.ts-toolbelt/out/Union/Nullable.Nullable<O[K]>} */ js.Any
   
   /**
     * @hidden

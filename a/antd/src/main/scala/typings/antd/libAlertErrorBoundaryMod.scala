@@ -1,7 +1,7 @@
 package typings.antd
 
+import typings.antd.anon.ComponentStack
 import typings.antd.anon.Error
-import typings.antd.anon.`0`
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
@@ -61,7 +61,7 @@ object libAlertErrorBoundaryMod {
     
     var error: js.UndefOr[js.Error | Null] = js.undefined
     
-    var info: js.UndefOr[`0`] = js.undefined
+    var info: js.UndefOr[ComponentStack] = js.undefined
   }
   object ErrorBoundaryStates {
     
@@ -78,7 +78,7 @@ object libAlertErrorBoundaryMod {
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      inline def setInfo(value: `0`): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: ComponentStack): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
       inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
     }

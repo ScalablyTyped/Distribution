@@ -1852,7 +1852,6 @@
 | 0.7562522132480297 | [level-errors](./l/level-errors) | Error types for levelup
 | 0.7562324342487823 | [ts-log](./t/ts-log) | Abstract logger TypeScript interface with a dummy 
 | 0.7562033965651277 | [interactjs](./i/interactjs) | Drag and drop, resizing and multi-touch gestures w
-| 0.7561738022092517 | [next-seo](./n/next-seo) | SEO plugin for Next.js projects
 | 0.7560782866064149 | [globule](./g/globule) | An easy-to-use wildcard globbing library.
 | 0.7560673279922063 | [token-stream](./t/token-stream) | Take an array of token and produce a more useful A
 | 0.7559895213676115 | [array-find-index](./a/array-find-index) | ES2015 Array
@@ -2994,6 +2993,7 @@
 | 0.7132616560428577 | [mem-fs](./m/mem-fs) | Simple in-memory vinyl file store
 | 0.7132522303064983 | [keep-func-props](./k/keep-func-props) | Wrap a function without changing its name and othe
 | 0.7132146913021672 | [nanoassert](./n/nanoassert) | Nanoscale assertion module
+| 0.7131840436420294 | [carbon-components-react](./c/carbon-components-react) | The Carbon Design System is IBM’s open-source desi
 | 0.7131291129492741 | [snyk](./s/snyk) | snyk library and cli utility
 | 0.713081103003421 | [quoted-printable](./q/quoted-printable) | A robust & character encoding–agnostic JavaScript 
 | 0.7130313895498276 | [gridstack](./g/gridstack) | TypeScript/JS lib for dashboard layout and creatio
@@ -3410,6 +3410,7 @@
 | 0.7012881307299967 | [dragselect](./d/dragselect) | easy javascript drag select functionality for your
 | 0.7012414599979706 | [react-native-vector-icons](./r/react-native-vector-icons) | Customizable Icons for React Native with support f
 | 0.7012324982093715 | [lodash_dot_intersection](./l/lodash_dot_intersection) | The lodash method _.intersection exported as a mod
+| 0.7012161881734533 | [rebass__grid](./r/rebass__grid) | Responsive React grid system built with styled-sys
 | 0.7011878917323858 | [underscore_dot_string](./u/underscore_dot_string) | String manipulation extensions for Underscore.js j
 | 0.7011859570617944 | [stylable__dom-test-kit](./s/stylable__dom-test-kit) | Stylable DOM testing utilities
 | 0.7011853760612942 | [mapbox__mapbox-gl-support](./m/mapbox__mapbox-gl-supported) | A library to determine if a browser supports Mapbo
@@ -3825,6 +3826,7 @@
 | 0.6908866941081797 | [quotation](./q/quotation) | Quote a value
 | 0.6908440653287048 | [n-gram](./n/n-gram) | Get n-grams from text
 | 0.6908290396492754 | [color-hash](./c/color-hash) | Generate color based on the given string (using HS
+| 0.6908170874810426 | [rebass__forms](./r/rebass__forms) | Accessible and themeable form components for use w
 | 0.6907275161292975 | [chroma-js](./c/chroma-js) | JavaScript library for color conversions
 | 0.6907175458460004 | [aurelia-logging](./a/aurelia-logging) | A minimal but effective logging mechanism with sup
 | 0.690708682771419 | [filter-console](./f/filter-console) | Filter out unwanted console.log() output
@@ -4624,6 +4626,7 @@
 | 0.6717833005150817 | [parse5-plain-text-convers](./p/parse5-plain-text-conversion-stream) | Stream that converts plain text files into HTML do
 | 0.6717605266717115 | [libp2p__delegated-content](./l/libp2p__delegated-content-routing) | Leverage other peers in the libp2p network to perf
 | 0.6717299301004998 | [columnify](./c/columnify) | Render data in text columns. Supports in-column te
+| 0.671727551946675 | [rebass](./r/rebass) | React primitive UI components built with Styled Sy
 | 0.6717080033757393 | [promise-timeout](./p/promise-timeout) | Simple timeouts for promises
 | 0.6716957195976976 | [fullcalendar__vue](./f/fullcalendar__vue) | An official FullCalendar component for Vue 2
 | 0.6716851944873627 | [react-dnd__asap](./r/react-dnd__asap) | High-priority task queue for Node.js and browsers
@@ -5498,6 +5501,7 @@
 | 0.6526227200743215 | [intersects](./i/intersects) | a simple collection of 2d collision/intersects fun
 | 0.652619224102911 | [exchange-rates-api](./e/exchange-rates-api) | An API wrapper around exchangeratesapi.io
 | 0.6526023534109598 | [ant-design-pro](./a/ant-design-pro) | An enterprise-class UI design language and React-b
+| 0.6526014032536214 | [reflexbox](./r/reflexbox) | Responsive React grid system built with Styled Sys
 | 0.6525875249661657 | [libp2p__interface-registr](./l/libp2p__interface-registrar) | Registrar interface for libp2p
 | 0.6525824537874836 | [lodash_dot_attempt](./l/lodash_dot_attempt) | The lodash method _.attempt exported as a module.
 | 0.6525479120434282 | [filesize-parser](./f/filesize-parser) | Takes human readable filesystem size strings and g
@@ -5634,6 +5638,7 @@
 | 0.6493577243569467 | [is-archive](./i/is-archive) | Check if a file path is an archive file
 | 0.649357347217898 | [rdfjs__parser-jsonld](./r/rdfjs__parser-jsonld) | JSON-LD parser that implements the RDFJS Sink inte
 | 0.6493153553130997 | [fontagon](./f/fontagon) | Easy web icon font generator
+| 0.6492934607391583 | [rebass__layout](./r/rebass__layout) | @rebass/layout
 | 0.6492902900084092 | [webpack-blocks__babel](./w/webpack-blocks__babel) | Webpack block for babel 6+.
 | 0.6492553343094345 | [use-isomorphic-layout-eff](./u/use-isomorphic-layout-effect) | A React helper hook for scheduling a layout effect
 | 0.6491285213194222 | [parse-prefer-header](./p/parse-prefer-header) | parses an http prefer header, aka rfc7240
@@ -6633,7 +6638,6 @@
 | 0.6153603940379252 | [randexp](./r/randexp) | Create random strings that match a given regular e
 | 0.6153560379623948 | [gsheets](./g/gsheets) | Get public Google Spreadsheets as plain JavaScript
 | 0.6153290679396893 | [jupyterlab__mainmenu](./j/jupyterlab__mainmenu) | JupyterLab - Main Menu
-| 0.6152816327284444 | [yazl](./y/yazl) | yet another zip library for node
 | 0.6152394529489089 | [utf8](./u/utf8) | A well-tested UTF-8 encoder/decoder written in Jav
 | 0.6152362174951483 | [barnard59-core](./b/barnard59-core) | Core component of Barnard59 Linked Data pipelines
 | 0.6151520405779876 | [csscolorparser-ts](./c/csscolorparser-ts) | Parser for CSS color strings written in TypeScript
@@ -6785,6 +6789,7 @@
 | 0.6099384518274424 | [secure-shuffle](./s/secure-shuffle) | Shuffle an array using secure-random-uniform as th
 | 0.6098861666175351 | [gh-pages](./g/gh-pages) | Publish to a gh-pages branch on GitHub (or any oth
 | 0.6098611054416361 | [backstopjs](./b/backstopjs) | BackstopJS: Catch CSS curveballs.
+| 0.6098242588474583 | [qiniu-js](./q/qiniu-js) | Javascript SDK for Qiniu Resource (Cloud) Storage 
 | 0.6098138618301554 | [awesomplete](./a/awesomplete) | http://leaverou.github.io/awesomplete/
 | 0.6098030318663574 | [watson-developer-cloud](./w/watson-developer-cloud) | Client library to use the IBM Watson Services
 | 0.609800988430369 | [timing-safe-equal](./t/timing-safe-equal) | timing safe equals, but for the browser
@@ -7244,7 +7249,6 @@
 | 0.587035763891871 | [memorystream](./m/memorystream) | This is lightweight memory stream module for node.
 | 0.5869674332637936 | [di](./d/di) | Dependency Injection for Node.js. Heavily inspired
 | 0.5868315788989018 | [python-shell](./p/python-shell) | Run Python scripts from Node.js with simple (but e
-| 0.5868299679929303 | [next-redux-saga](./n/next-redux-saga) | redux-saga HOC for Next.js
 | 0.5868261094702707 | [express-http-proxy](./e/express-http-proxy) | http proxy middleware for express
 | 0.5867461960127403 | [sparkpost](./s/sparkpost) | A Node.js wrapper for interfacing with your favori
 | 0.5867033861710587 | [leaflet-draw](./l/leaflet-draw) | Vector drawing plugin for Leaflet
@@ -10487,6 +10491,7 @@
 | 0.35471116269928815 | [lerna-alias](./l/lerna-alias) | Get aliases for your lerna packages for the other 
 | 0.35458203071488625 | [country-telephone-data](./c/country-telephone-data) | Has country codes for all countries in the world. 
 | 0.35445774904927685 | [bluebird-global](./b/bluebird-global) | Patches global.Promise to use bluebird and returns
+| 0.3540048935952108 | [styled-system](./s/styled-system) | Responsive, theme-based style props for building d
 | 0.3538904138299509 | [bunyan-bugsnag](./b/bunyan-bugsnag) | A Bunyan stream for logging errors and warnings to
 | 0.3537184126022197 | [fleximap](./f/fleximap) | A flexible hash map which supports deep keys.
 | 0.3532872573443179 | [browser-harness](./b/browser-harness) | Browser Harness ===============

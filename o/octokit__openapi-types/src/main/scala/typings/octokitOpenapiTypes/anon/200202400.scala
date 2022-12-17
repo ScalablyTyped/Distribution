@@ -7,28 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `200202400` extends StObject {
   
   /** Response */
-  var `200`: Content557
+  var `200`: ContentApplicationjsonAltdomain
   
   /** Empty response */
-  var `202`: Content308
+  var `202`: Content40
   
   /** Custom domains are not available for GitHub Pages */
   var `400`: Any
   
-  var `404`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any
+  var `404`: Content48
   
   /** There isn't a CNAME for this page */
   var `422`: Any
 }
 object `200202400` {
   
-  inline def apply(
-    `200`: Content557,
-    `202`: Content308,
-    `400`: Any,
-    `404`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any,
-    `422`: Any
-  ): `200202400` = {
+  inline def apply(`200`: ContentApplicationjsonAltdomain, `202`: Content40, `400`: Any, `404`: Content48, `422`: Any): `200202400` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
     __obj.updateDynamic("202")(`202`.asInstanceOf[js.Any])
@@ -40,15 +34,13 @@ object `200202400` {
   
   extension [Self <: `200202400`](x: Self) {
     
-    inline def set200(value: Content557): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+    inline def set200(value: ContentApplicationjsonAltdomain): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set202(value: Content308): Self = StObject.set(x, "202", value.asInstanceOf[js.Any])
+    inline def set202(value: Content40): Self = StObject.set(x, "202", value.asInstanceOf[js.Any])
     
     inline def set400(value: Any): Self = StObject.set(x, "400", value.asInstanceOf[js.Any])
     
-    inline def set404(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any
-    ): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    inline def set404(value: Content48): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
     
     inline def set422(value: Any): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
   }

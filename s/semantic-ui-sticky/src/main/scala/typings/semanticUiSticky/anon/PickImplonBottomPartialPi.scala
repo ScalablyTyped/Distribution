@@ -36,7 +36,7 @@ trait PickImplonBottomPartialPi
   
   def onBottom(): Unit
   @JSName("onBottom")
-  var onBottom_Original: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+  var onBottom_Original: js.ThisFunction0[/* this */ JQuery, Unit]
   
   var onReposition: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
@@ -62,9 +62,7 @@ trait PickImplonBottomPartialPi
 }
 object PickImplonBottomPartialPi {
   
-  inline def apply(
-    onBottom: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-  ): PickImplonBottomPartialPi = {
+  inline def apply(onBottom: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonBottomPartialPi = {
     val __obj = js.Dynamic.literal(onBottom = onBottom.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonBottomPartialPi]
   }
@@ -111,9 +109,7 @@ object PickImplonBottomPartialPi {
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    inline def setOnBottom(
-      value: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-    ): Self = StObject.set(x, "onBottom", value.asInstanceOf[js.Any])
+    inline def setOnBottom(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onBottom", value.asInstanceOf[js.Any])
     
     inline def setOnReposition(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onReposition", value.asInstanceOf[js.Any])
     

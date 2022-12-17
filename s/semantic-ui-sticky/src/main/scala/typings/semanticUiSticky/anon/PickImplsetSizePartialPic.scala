@@ -52,7 +52,7 @@ trait PickImplsetSizePartialPic
   
   var scrollContext: js.UndefOr[String | JQuery] = js.undefined
   
-  var setSize: Boolean & js.UndefOr[Boolean]
+  var setSize: Boolean
   
   var silent: js.UndefOr[Boolean] = js.undefined
   
@@ -60,7 +60,7 @@ trait PickImplsetSizePartialPic
 }
 object PickImplsetSizePartialPic {
   
-  inline def apply(setSize: Boolean & js.UndefOr[Boolean]): PickImplsetSizePartialPic = {
+  inline def apply(setSize: Boolean): PickImplsetSizePartialPic = {
     val __obj = js.Dynamic.literal(setSize = setSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplsetSizePartialPic]
   }
@@ -143,7 +143,7 @@ object PickImplsetSizePartialPic {
     
     inline def setScrollContextUndefined: Self = StObject.set(x, "scrollContext", js.undefined)
     
-    inline def setSetSize(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "setSize", value.asInstanceOf[js.Any])
+    inline def setSetSize(value: Boolean): Self = StObject.set(x, "setSize", value.asInstanceOf[js.Any])
     
     inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     

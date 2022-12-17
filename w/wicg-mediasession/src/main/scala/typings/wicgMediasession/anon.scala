@@ -20,11 +20,11 @@ object anon {
     var seekOffset: js.UndefOr[Double] = js.undefined
     
     // MUST be provided when action is seekto. Stores the time in seconds to move the playback time to.
-    var seekTime: Double & js.UndefOr[Double]
+    var seekTime: Double
   }
   object RequiredPickMediaSessionA {
     
-    inline def apply(action: MediaSessionAction, seekTime: Double & js.UndefOr[Double]): RequiredPickMediaSessionA = {
+    inline def apply(action: MediaSessionAction, seekTime: Double): RequiredPickMediaSessionA = {
       val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], seekTime = seekTime.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequiredPickMediaSessionA]
     }
@@ -41,7 +41,7 @@ object anon {
       
       inline def setSeekOffsetUndefined: Self = StObject.set(x, "seekOffset", js.undefined)
       
-      inline def setSeekTime(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "seekTime", value.asInstanceOf[js.Any])
+      inline def setSeekTime(value: Double): Self = StObject.set(x, "seekTime", value.asInstanceOf[js.Any])
     }
   }
 }

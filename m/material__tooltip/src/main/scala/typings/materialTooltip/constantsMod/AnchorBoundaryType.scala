@@ -16,13 +16,18 @@ sealed trait AnchorBoundaryType extends StObject
 @js.native
 object AnchorBoundaryType extends StObject {
   
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[AnchorBoundaryType & Double] = js.native
+  
   @js.native
   sealed trait BOUNDED
     extends StObject
        with AnchorBoundaryType
+  /* 0 */ val BOUNDED: typings.materialTooltip.constantsMod.AnchorBoundaryType.BOUNDED & Double = js.native
   
   @js.native
   sealed trait UNBOUNDED
     extends StObject
        with AnchorBoundaryType
+  /* 1 */ val UNBOUNDED: typings.materialTooltip.constantsMod.AnchorBoundaryType.UNBOUNDED & Double = js.native
 }

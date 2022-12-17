@@ -1,7 +1,6 @@
 package typings.plotlyJs.anon
 
 import typings.plotlyJs.mod.ColorScale
-import typings.plotlyJs.mod.Data
 import typings.plotlyJs.mod.DataTransform
 import typings.plotlyJs.mod.Datum
 import typings.plotlyJs.mod.ErrorBar
@@ -129,9 +128,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.PlotData> */
-trait PartialPlotData
-  extends StObject
-     with Data {
+trait PartialPlotData extends StObject {
   
   var autobinx: js.UndefOr[Boolean] = js.undefined
   
@@ -181,7 +178,7 @@ trait PartialPlotData
     all | name | none | skip | text | x | xPlussigntext | xPlussignname | xPlussigny | xPlussignyPlussigntext | xPlussignyPlussignname | xPlussignyPlussignz | xPlussignyPlussignzPlussigntext | xPlussignyPlussignzPlussignname | y | yPlussignname | yPlussignx | yPlussigntext | yPlussignxPlussigntext | yPlussignxPlussignname | yPlussignz | yPlussignzPlussigntext | yPlussignzPlussignname | yPlussignxPlussignz | yPlussignxPlussignzPlussigntext | yPlussignxPlussignzPlussignname | z | zPlussignx | zPlussignxPlussigntext | zPlussignxPlussignname | zPlussignyPlussignx | zPlussignyPlussignxPlussigntext | zPlussignyPlussignxPlussignname | zPlussignxPlussigny | zPlussignxPlussignyPlussigntext | zPlussignxPlussignyPlussignname
   ] = js.undefined
   
-  var hoverlabel: js.UndefOr[PartialHoverLabel] = js.undefined
+  var hoverlabel: js.UndefOr[PartialHoverLabelAlign] = js.undefined
   
   var hoveron: js.UndefOr[points | fills] = js.undefined
   
@@ -493,7 +490,7 @@ object PartialPlotData {
     
     inline def setHoverinfoUndefined: Self = StObject.set(x, "hoverinfo", js.undefined)
     
-    inline def setHoverlabel(value: PartialHoverLabel): Self = StObject.set(x, "hoverlabel", value.asInstanceOf[js.Any])
+    inline def setHoverlabel(value: PartialHoverLabelAlign): Self = StObject.set(x, "hoverlabel", value.asInstanceOf[js.Any])
     
     inline def setHoverlabelUndefined: Self = StObject.set(x, "hoverlabel", js.undefined)
     

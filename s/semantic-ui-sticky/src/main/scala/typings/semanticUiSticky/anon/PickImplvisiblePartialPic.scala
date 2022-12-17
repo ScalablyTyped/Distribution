@@ -18,11 +18,11 @@ trait PickImplvisiblePartialPic
   
   var method: js.UndefOr[String] = js.undefined
   
-  var visible: String & js.UndefOr[String]
+  var visible: String
 }
 object PickImplvisiblePartialPic {
   
-  inline def apply(visible: String & js.UndefOr[String]): PickImplvisiblePartialPic = {
+  inline def apply(visible: String): PickImplvisiblePartialPic = {
     val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplvisiblePartialPic]
   }
@@ -45,6 +45,6 @@ object PickImplvisiblePartialPic {
     
     inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    inline def setVisible(value: String & js.UndefOr[String]): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: String): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }
 }

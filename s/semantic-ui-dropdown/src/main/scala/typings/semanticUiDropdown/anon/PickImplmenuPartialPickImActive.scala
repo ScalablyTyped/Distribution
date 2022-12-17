@@ -30,7 +30,7 @@ trait PickImplmenuPartialPickImActive
   
   var loading: js.UndefOr[String] = js.undefined
   
-  var menu: String & js.UndefOr[String]
+  var menu: String
   
   var message: js.UndefOr[String] = js.undefined
   
@@ -50,7 +50,7 @@ trait PickImplmenuPartialPickImActive
 }
 object PickImplmenuPartialPickImActive {
   
-  inline def apply(menu: String & js.UndefOr[String]): PickImplmenuPartialPickImActive = {
+  inline def apply(menu: String): PickImplmenuPartialPickImActive = {
     val __obj = js.Dynamic.literal(menu = menu.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmenuPartialPickImActive]
   }
@@ -97,7 +97,7 @@ object PickImplmenuPartialPickImActive {
     
     inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
     
-    inline def setMenu(value: String & js.UndefOr[String]): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+    inline def setMenu(value: String): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

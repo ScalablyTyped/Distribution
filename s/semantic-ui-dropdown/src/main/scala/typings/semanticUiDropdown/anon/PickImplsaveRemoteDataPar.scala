@@ -147,7 +147,7 @@ trait PickImplsaveRemoteDataPar
   
   var regExp: js.UndefOr[RegExpSettings] = js.undefined
   
-  var saveRemoteData: Boolean & js.UndefOr[Boolean]
+  var saveRemoteData: Boolean
   
   var selectOnKeydown: js.UndefOr[Boolean] = js.undefined
   
@@ -169,7 +169,7 @@ trait PickImplsaveRemoteDataPar
 }
 object PickImplsaveRemoteDataPar {
   
-  inline def apply(saveRemoteData: Boolean & js.UndefOr[Boolean]): PickImplsaveRemoteDataPar = {
+  inline def apply(saveRemoteData: Boolean): PickImplsaveRemoteDataPar = {
     val __obj = js.Dynamic.literal(saveRemoteData = saveRemoteData.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplsaveRemoteDataPar]
   }
@@ -374,7 +374,7 @@ object PickImplsaveRemoteDataPar {
     
     inline def setRegExpUndefined: Self = StObject.set(x, "regExp", js.undefined)
     
-    inline def setSaveRemoteData(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "saveRemoteData", value.asInstanceOf[js.Any])
+    inline def setSaveRemoteData(value: Boolean): Self = StObject.set(x, "saveRemoteData", value.asInstanceOf[js.Any])
     
     inline def setSelectOnKeydown(value: Boolean): Self = StObject.set(x, "selectOnKeydown", value.asInstanceOf[js.Any])
     

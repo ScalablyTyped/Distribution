@@ -31,10 +31,7 @@ trait PartialCommandModuleImpleInstantiable
   var longDescriptionPath: js.UndefOr[String] = js.native
   
   var run: js.UndefOr[
-    js.Function1[
-      /* options */ js.Object & OtherOptions, 
-      (js.Promise[Double | Unit]) | Double | Unit
-    ]
+    js.Function1[/* options */ OtherOptions, (js.Promise[Double | Unit]) | Double | Unit]
   ] = js.native
   
   var scope: js.UndefOr[CommandScope] = js.native

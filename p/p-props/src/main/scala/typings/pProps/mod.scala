@@ -1,7 +1,9 @@
 package typings.pProps
 
 import typings.pMap.mod.Options
+import typings.std.Map
 import typings.std.PromiseLike
+import typings.std.ReadonlyMap
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -40,6 +42,17 @@ object mod {
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(map.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof InputType ]: MappedValueType} */ js.Any
   ]]
+  inline def default[KeyType, ValueType, MappedValueType](map: ReadonlyMap[KeyType, ValueType]): js.Promise[Map[KeyType, MappedValueType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(map.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Map[KeyType, MappedValueType]]]
+  inline def default[KeyType, ValueType, MappedValueType](map: ReadonlyMap[KeyType, ValueType], mapper: Unit, options: Options): js.Promise[Map[KeyType, MappedValueType]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(map.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Map[KeyType, MappedValueType]]]
+  inline def default[KeyType, ValueType, MappedValueType](
+    map: ReadonlyMap[KeyType, ValueType],
+    mapper: Mapper[PromiseResult[ValueType], KeyType, MappedValueType]
+  ): js.Promise[Map[KeyType, MappedValueType]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(map.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Map[KeyType, MappedValueType]]]
+  inline def default[KeyType, ValueType, MappedValueType](
+    map: ReadonlyMap[KeyType, ValueType],
+    mapper: Mapper[PromiseResult[ValueType], KeyType, MappedValueType],
+    options: Options
+  ): js.Promise[Map[KeyType, MappedValueType]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(map.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Map[KeyType, MappedValueType]]]
   
   type Mapper[ValueType, KeyType, MappedValueType] = js.Function2[
     /* value */ ValueType, 

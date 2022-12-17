@@ -41,14 +41,16 @@ object libComponentMod {
   }
   object IProps {
     
-    inline def apply(data: NonNullable[JSONValue]): IProps = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+    inline def apply(): IProps = {
+      val __obj = js.Dynamic.literal(data = null)
       __obj.asInstanceOf[IProps]
     }
     
     extension [Self <: IProps](x: Self) {
       
       inline def setData(value: NonNullable[JSONValue]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setDataNull: Self = StObject.set(x, "data", null)
       
       inline def setMetadata(value: JSONObject): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       

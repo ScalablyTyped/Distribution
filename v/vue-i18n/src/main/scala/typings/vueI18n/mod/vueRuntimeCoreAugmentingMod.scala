@@ -15,7 +15,7 @@ import typings.intlifyCoreBase.mod.PickupKeys
 import typings.intlifyCoreBase.mod.PickupLocales
 import typings.intlifyCoreBase.mod.TranslateOptions
 import typings.std.Record
-import typings.vueI18n.anon.Datetime
+import typings.vueI18n.anon.Message
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,10 +45,10 @@ object vueRuntimeCoreAugmentingMod {
       */
     var i18n: js.UndefOr[
         VueI18nOptions[
-          Datetime, 
+          Message, 
           Locale, 
           ComposerOptions[
-            Datetime, 
+            Message, 
             Locale, 
             /* import warning: importer.ImportType#apply Failed type conversion: @intlify/core-base.@intlify/core-base.Locale extends {  messages :infer M} ? M : @intlify/core-base.@intlify/core-base.Locale extends string ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.Locale */ js.Any, 
             /* import warning: importer.ImportType#apply Failed type conversion: @intlify/core-base.@intlify/core-base.Locale extends {  datetimeFormats :infer D} ? D : @intlify/core-base.@intlify/core-base.Locale extends string ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.Locale */ js.Any, 
@@ -100,10 +100,10 @@ object vueRuntimeCoreAugmentingMod {
       
       inline def setI18n(
         value: VueI18nOptions[
-              Datetime, 
+              Message, 
               Locale, 
               ComposerOptions[
-                Datetime, 
+                Message, 
                 Locale, 
                 /* import warning: importer.ImportType#apply Failed type conversion: @intlify/core-base.@intlify/core-base.Locale extends {  messages :infer M} ? M : @intlify/core-base.@intlify/core-base.Locale extends string ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.Locale */ js.Any, 
                 /* import warning: importer.ImportType#apply Failed type conversion: @intlify/core-base.@intlify/core-base.Locale extends {  datetimeFormats :infer D} ? D : @intlify/core-base.@intlify/core-base.Locale extends string ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.Locale */ js.Any, 

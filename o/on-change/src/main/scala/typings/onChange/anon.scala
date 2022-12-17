@@ -1,8 +1,6 @@
 package typings.onChange
 
 import typings.onChange.mod.ApplyData
-import typings.onChange.onChangeBooleans.`false`
-import typings.onChange.onChangeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -118,12 +116,12 @@ object anon {
     	The path will be provided as an array of keys instead of a delimited string.
     	@default false
     	*/
-    val pathAsArray: js.UndefOr[Boolean] & js.UndefOr[`false`]
+    val pathAsArray: js.UndefOr[Boolean] = js.undefined
   }
   object OptionspathAsArrayfalseun {
     
-    inline def apply(pathAsArray: js.UndefOr[Boolean] & js.UndefOr[`false`]): OptionspathAsArrayfalseun = {
-      val __obj = js.Dynamic.literal(pathAsArray = pathAsArray.asInstanceOf[js.Any])
+    inline def apply(): OptionspathAsArrayfalseun = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionspathAsArrayfalseun]
     }
     
@@ -174,7 +172,9 @@ object anon {
       
       inline def setOnValidateUndefined: Self = StObject.set(x, "onValidate", js.undefined)
       
-      inline def setPathAsArray(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "pathAsArray", value.asInstanceOf[js.Any])
+      inline def setPathAsArray(value: Boolean): Self = StObject.set(x, "pathAsArray", value.asInstanceOf[js.Any])
+      
+      inline def setPathAsArrayUndefined: Self = StObject.set(x, "pathAsArray", js.undefined)
     }
   }
   
@@ -287,12 +287,12 @@ object anon {
     	The path will be provided as an array of keys instead of a delimited string.
     	@default false
     	*/
-    val pathAsArray: js.UndefOr[Boolean] & `true`
+    val pathAsArray: js.UndefOr[Boolean] = js.undefined
   }
   object OptionspathAsArraytrue {
     
-    inline def apply(pathAsArray: js.UndefOr[Boolean] & `true`): OptionspathAsArraytrue = {
-      val __obj = js.Dynamic.literal(pathAsArray = pathAsArray.asInstanceOf[js.Any])
+    inline def apply(): OptionspathAsArraytrue = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionspathAsArraytrue]
     }
     
@@ -343,7 +343,9 @@ object anon {
       
       inline def setOnValidateUndefined: Self = StObject.set(x, "onValidate", js.undefined)
       
-      inline def setPathAsArray(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "pathAsArray", value.asInstanceOf[js.Any])
+      inline def setPathAsArray(value: Boolean): Self = StObject.set(x, "pathAsArray", value.asInstanceOf[js.Any])
+      
+      inline def setPathAsArrayUndefined: Self = StObject.set(x, "pathAsArray", js.undefined)
     }
   }
 }

@@ -7,9 +7,9 @@ import typings.algoliasearchHelper.anon.V3ResponseappliedRelevancyS
 import typings.algoliasearchHelper.anon.V3V4
 import typings.algoliasearchHelper.anon.V3V4V5
 import typings.algoliasearchHelper.anon.V4
-import typings.algoliasearchHelper.anon.V4MultipleQueriesResponse
-import typings.algoliasearchHelper.anon.V4SearchOptions
-import typings.algoliasearchHelper.anon.V4SnippetResult
+import typings.algoliasearchHelper.anon.V4FindAnswersOptions
+import typings.algoliasearchHelper.anon.V4FindAnswersResponse
+import typings.algoliasearchHelper.anon.V4SearchForFacetValuesResponse
 import typings.algoliasearchHelper.anon.V4V5
 import typings.algoliasearchHelper.anon.V5
 import typings.std.ReturnType
@@ -65,13 +65,13 @@ object typesAlgoliasearchMod {
     /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ClientSearch.searchClient */ Any
   ]
   
-  type DefaultSearchClient = PickForClient[V3]
+  type DefaultSearchClient = PickForClient[V4]
   
-  type FindAnswersOptions = PickForClient[V4]
+  type FindAnswersOptions = PickForClient[V4FindAnswersOptions]
   
-  type FindAnswersResponse[T] = PickForClient[V5[T]]
+  type FindAnswersResponse[T] = PickForClient[V4FindAnswersResponse[T]]
   
-  type HighlightResult[T] = PickForClient[V3V4[T]]
+  type HighlightResult[T] = PickForClient[V5[T]]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
@@ -82,9 +82,9 @@ object typesAlgoliasearchMod {
     }}}
     */
   @js.native
-  trait PickForClient[T /* <: V4V5 */] extends StObject
+  trait PickForClient[T /* <: V3 */] extends StObject
   
-  type RankingInfo = PickForClient[V3V4V5]
+  type RankingInfo = PickForClient[V4V5]
   
   trait SearchClient extends StObject {
     
@@ -171,13 +171,13 @@ object typesAlgoliasearchMod {
     }
   }
   
-  type SearchForFacetValuesResponse = PickForClient[V3Any]
+  type SearchForFacetValuesResponse = PickForClient[V4SearchForFacetValuesResponse]
   
-  type SearchOptions = PickForClient[V4SearchOptions]
+  type SearchOptions = PickForClient[V3V4V5]
   
   type SearchResponse[T] = PickForClient[V3ResponseappliedRelevancyS[T]]
   
-  type SearchResponses[T] = PickForClient[V4MultipleQueriesResponse[T]]
+  type SearchResponses[T] = PickForClient[V3Any[T]]
   
-  type SnippetResult[T] = PickForClient[V4SnippetResult[T]]
+  type SnippetResult[T] = PickForClient[V3V4[T]]
 }

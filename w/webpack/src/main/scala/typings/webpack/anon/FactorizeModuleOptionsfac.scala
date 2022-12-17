@@ -2,7 +2,6 @@ package typings.webpack.anon
 
 import typings.webpack.mod.ModuleFactory
 import typings.webpack.mod.ModuleProfile
-import typings.webpack.webpackBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +22,7 @@ trait FactorizeModuleOptionsfac extends StObject {
   /**
   	 * return full ModuleFactoryResult instead of only module
   	 */
-  var factoryResult: js.UndefOr[Boolean] & js.UndefOr[`false`]
+  var factoryResult: js.UndefOr[Boolean] = js.undefined
   
   var originModule: Null | typings.webpack.mod.Module
 }
@@ -32,10 +31,9 @@ object FactorizeModuleOptionsfac {
   inline def apply(
     currentProfile: ModuleProfile,
     dependencies: js.Array[typings.webpack.mod.Dependency],
-    factory: ModuleFactory,
-    factoryResult: js.UndefOr[Boolean] & js.UndefOr[`false`]
+    factory: ModuleFactory
   ): FactorizeModuleOptionsfac = {
-    val __obj = js.Dynamic.literal(currentProfile = currentProfile.asInstanceOf[js.Any], dependencies = dependencies.asInstanceOf[js.Any], factory = factory.asInstanceOf[js.Any], factoryResult = factoryResult.asInstanceOf[js.Any], originModule = null)
+    val __obj = js.Dynamic.literal(currentProfile = currentProfile.asInstanceOf[js.Any], dependencies = dependencies.asInstanceOf[js.Any], factory = factory.asInstanceOf[js.Any], originModule = null)
     __obj.asInstanceOf[FactorizeModuleOptionsfac]
   }
   
@@ -57,7 +55,9 @@ object FactorizeModuleOptionsfac {
     
     inline def setFactory(value: ModuleFactory): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
     
-    inline def setFactoryResult(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "factoryResult", value.asInstanceOf[js.Any])
+    inline def setFactoryResult(value: Boolean): Self = StObject.set(x, "factoryResult", value.asInstanceOf[js.Any])
+    
+    inline def setFactoryResultUndefined: Self = StObject.set(x, "factoryResult", js.undefined)
     
     inline def setOriginModule(value: typings.webpack.mod.Module): Self = StObject.set(x, "originModule", value.asInstanceOf[js.Any])
     

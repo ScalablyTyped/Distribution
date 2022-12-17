@@ -29,6 +29,6 @@ object BorderLeftProps {
     
     inline def setBorderLeftUndefined: Self = StObject.set(x, "borderLeft", js.undefined)
     
-    inline def setBorderLeftVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderLeft", js.Array(value :_*))
+    inline def setBorderLeftVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderLeft", js.Array(value*))
   }
 }

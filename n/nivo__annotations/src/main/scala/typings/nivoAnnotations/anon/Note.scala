@@ -29,7 +29,7 @@ object Note {
     
     inline def setNote(value: NoteSvg[Datum]): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
-    inline def setNoteFunction1(value: /* props */ XY[Datum] => Element): Self = StObject.set(x, "note", js.Any.fromFunction1(value))
+    inline def setNoteFunction1(value: /* props */ DatumX[Datum] => Element): Self = StObject.set(x, "note", js.Any.fromFunction1(value))
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,7 @@ trait `0ValidPath`[O, Path /* <: typings.tsToolbelt.outListListMod.List[Key] */,
   var `0`: __ValidPath[
     NonNullable[
       At[
-        O & js.Object, 
+        O, 
         /* import warning: importer.ImportType#apply Failed type conversion: Path[ts-toolbelt.ts-toolbelt/out/Iteration/Pos.Pos<I>] */ js.Any
       ]
     ], 
@@ -32,7 +32,7 @@ object `0ValidPath` {
     `0`: __ValidPath[
       NonNullable[
         At[
-          O & js.Object, 
+          O, 
           /* import warning: importer.ImportType#apply Failed type conversion: Path[ts-toolbelt.ts-toolbelt/out/Iteration/Pos.Pos<I>] */ js.Any
         ]
       ], 
@@ -53,7 +53,7 @@ object `0ValidPath` {
       value: __ValidPath[
           NonNullable[
             At[
-              O & js.Object, 
+              O, 
               /* import warning: importer.ImportType#apply Failed type conversion: Path[ts-toolbelt.ts-toolbelt/out/Iteration/Pos.Pos<I>] */ js.Any
             ]
           ], 

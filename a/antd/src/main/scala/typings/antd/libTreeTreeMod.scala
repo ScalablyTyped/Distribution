@@ -10,10 +10,10 @@ import typings.antd.antdStrings.select_
 import typings.rcTree.anon.Direction
 import typings.rcTree.anon.DragNode
 import typings.rcTree.anon.Event
-import typings.rcTree.anon.EventMouseEvent
 import typings.rcTree.anon.EventNode
 import typings.rcTree.anon.Expanded
 import typings.rcTree.anon.ExpandedKeys
+import typings.rcTree.anon.Node
 import typings.rcTree.esContextTypesMod.NodeDragEventParams
 import typings.rcTree.esContextTypesMod.NodeMouseEventHandler
 import typings.rcTree.esContextTypesMod.NodeMouseEventParams
@@ -617,13 +617,13 @@ object libTreeTreeMod extends Shortcut {
     
     var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
     
-    var onLoad: js.UndefOr[js.Function2[/* loadedKeys */ js.Array[Key], /* info */ EventNode[T], Unit]] = js.undefined
+    var onLoad: js.UndefOr[js.Function2[/* loadedKeys */ js.Array[Key], /* info */ Node[T], Unit]] = js.undefined
     
     var onMouseEnter: js.UndefOr[js.Function1[/* info */ NodeMouseEventParams[T, HTMLSpanElement], Unit]] = js.undefined
     
     var onMouseLeave: js.UndefOr[js.Function1[/* info */ NodeMouseEventParams[T, HTMLSpanElement], Unit]] = js.undefined
     
-    var onRightClick: js.UndefOr[js.Function1[/* info */ EventMouseEvent[T], Unit]] = js.undefined
+    var onRightClick: js.UndefOr[js.Function1[/* info */ EventNode[T], Unit]] = js.undefined
     
     var onScroll: js.UndefOr[UIEventHandler[HTMLElement]] = js.undefined
     
@@ -869,7 +869,7 @@ object libTreeTreeMod extends Shortcut {
       
       inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      inline def setOnLoad(value: (/* loadedKeys */ js.Array[Key], /* info */ EventNode[T]) => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction2(value))
+      inline def setOnLoad(value: (/* loadedKeys */ js.Array[Key], /* info */ Node[T]) => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction2(value))
       
       inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
       
@@ -881,7 +881,7 @@ object libTreeTreeMod extends Shortcut {
       
       inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
       
-      inline def setOnRightClick(value: /* info */ EventMouseEvent[T] => Unit): Self = StObject.set(x, "onRightClick", js.Any.fromFunction1(value))
+      inline def setOnRightClick(value: /* info */ EventNode[T] => Unit): Self = StObject.set(x, "onRightClick", js.Any.fromFunction1(value))
       
       inline def setOnRightClickUndefined: Self = StObject.set(x, "onRightClick", js.undefined)
       

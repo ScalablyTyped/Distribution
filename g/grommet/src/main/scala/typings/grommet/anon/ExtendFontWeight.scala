@@ -14,7 +14,7 @@ trait ExtendFontWeight extends StObject {
   
   var fontWeight: js.UndefOr[Double] = js.undefined
   
-  var size: js.UndefOr[Xlarge] = js.undefined
+  var size: js.UndefOr[Small] = js.undefined
 }
 object ExtendFontWeight {
   
@@ -35,7 +35,7 @@ object ExtendFontWeight {
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
-    inline def setSize(value: Xlarge): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Small): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }

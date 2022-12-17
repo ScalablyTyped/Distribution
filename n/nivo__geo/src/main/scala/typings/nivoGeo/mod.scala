@@ -3,7 +3,7 @@ package typings.nivoGeo
 import typings.nivoCore.mod.Dimensions
 import typings.nivoCore.mod.Theme
 import typings.nivoGeo.anon.Feature
-import typings.nivoGeo.anon.FeatureAny
+import typings.nivoGeo.anon.FeatureChoroplethBoundFeature
 import typings.nivoGeo.anon.PartialBox
 import typings.nivoGeo.nivoGeoStrings.`string VerticallineNobreakspacenumber`
 import typings.nivoLegends.distTypesTypesMod.LegendProps
@@ -337,7 +337,7 @@ object mod {
     }
   }
   
-  type ChoroplethTooltip = FunctionComponent[Feature]
+  type ChoroplethTooltip = FunctionComponent[FeatureChoroplethBoundFeature]
   
   trait CommonProps extends StObject {
     
@@ -539,7 +539,7 @@ object mod {
     }
   }
   
-  type GeoMapTooltip = FunctionComponent[FeatureAny]
+  type GeoMapTooltip = FunctionComponent[Feature]
   
   /* Rewritten from type alias, can be one of: 
     - typings.nivoGeo.nivoGeoStrings.azimuthalEqualArea

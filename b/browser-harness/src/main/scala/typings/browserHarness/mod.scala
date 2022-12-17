@@ -2,7 +2,7 @@ package typings.browserHarness
 
 import typings.browserHarness.anon.Args
 import typings.browserHarness.anon.Condition
-import typings.browserHarness.anon.Func
+import typings.browserHarness.anon.Location
 import typings.browserHarness.browserHarnessStrings.consoleDoterror
 import typings.browserHarness.browserHarnessStrings.consoleDotlog
 import typings.browserHarness.browserHarnessStrings.consoleDotwarn
@@ -23,7 +23,7 @@ object mod {
   @js.native
   open class Browser protected () extends StObject {
     //constructor(args: { type: string; location?: string; args?: string[] });
-    def this(args: Args) = this()
+    def this(args: Location) = this()
     
     def close(): Any = js.native
     
@@ -61,8 +61,8 @@ object mod {
     
     var events: DriverEvents = js.native
     
-    def exec(args: Func): Any = js.native
-    def exec(args: Func, callback: js.Function): Any = js.native
+    def exec(args: Args): Any = js.native
+    def exec(args: Args, callback: js.Function): Any = js.native
     def exec(func: js.Function): Any = js.native
     def exec(func: js.Function, callback: js.Function): Any = js.native
     

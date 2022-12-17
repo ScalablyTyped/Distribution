@@ -196,7 +196,7 @@ trait OmitActionSheetset extends StObject {
   
   var extend: js.UndefOr[Any] = js.undefined
   
-  var jsxAttributes: (JSXAttributes[ActionSheet, Omit[ActionSheet, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `1`
+  var jsxAttributes: (JSXAttributes[ActionSheet, Omit[ActionSheet, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `13`
   
   var message: String
   
@@ -309,7 +309,7 @@ object OmitActionSheetset {
     cid: String,
     close: () => ActionSheet,
     constructor: /* properties */ js.UndefOr[Properties[ActionSheet, Omit[ActionSheet, set]]] => Any,
-    jsxAttributes: (JSXAttributes[ActionSheet, Omit[ActionSheet, set | jsxAttributes]]) & `1`,
+    jsxAttributes: (JSXAttributes[ActionSheet, Omit[ActionSheet, set | jsxAttributes]]) & `13`,
     message: String,
     off: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Unit], /* context */ js.UndefOr[js.Object]) => ActionSheet,
     on: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Any], /* context */ js.UndefOr[js.Object]) => ActionSheet,
@@ -376,7 +376,7 @@ object OmitActionSheetset {
     
     inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    inline def setJsxAttributes(value: (JSXAttributes[ActionSheet, Omit[ActionSheet, set | jsxAttributes]]) & `1`): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
+    inline def setJsxAttributes(value: (JSXAttributes[ActionSheet, Omit[ActionSheet, set | jsxAttributes]]) & `13`): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,7 @@ trait PickImplnoReturnedValuePa
   
   var missingURL: js.UndefOr[String] = js.undefined
   
-  var noReturnedValue: String & js.UndefOr[String]
+  var noReturnedValue: String
   
   var parseError: js.UndefOr[String] = js.undefined
   
@@ -38,7 +38,7 @@ trait PickImplnoReturnedValuePa
 }
 object PickImplnoReturnedValuePa {
   
-  inline def apply(noReturnedValue: String & js.UndefOr[String]): PickImplnoReturnedValuePa = {
+  inline def apply(noReturnedValue: String): PickImplnoReturnedValuePa = {
     val __obj = js.Dynamic.literal(noReturnedValue = noReturnedValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplnoReturnedValuePa]
   }
@@ -77,7 +77,7 @@ object PickImplnoReturnedValuePa {
     
     inline def setMissingURLUndefined: Self = StObject.set(x, "missingURL", js.undefined)
     
-    inline def setNoReturnedValue(value: String & js.UndefOr[String]): Self = StObject.set(x, "noReturnedValue", value.asInstanceOf[js.Any])
+    inline def setNoReturnedValue(value: String): Self = StObject.set(x, "noReturnedValue", value.asInstanceOf[js.Any])
     
     inline def setParseError(value: String): Self = StObject.set(x, "parseError", value.asInstanceOf[js.Any])
     

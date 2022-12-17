@@ -1,7 +1,7 @@
 package typings.kurentoClient.mod
 
-import typings.kurentoClient.anon.EventElementConnectedsinkMediaType
-import typings.kurentoClient.anon.EventElementDisconnectedsMediaType
+import typings.kurentoClient.anon.EventElementConnectedsink
+import typings.kurentoClient.anon.EventElementDisconnecteds
 import typings.kurentoClient.anon.EventMediaFlowInStateChan
 import typings.kurentoClient.anon.EventMediaFlowOutStateCha
 import typings.kurentoClient.anon.EventMediaTranscodingStat
@@ -84,14 +84,11 @@ trait MediaElement
   def isMediaFlowingOut(mediaType: MediaType, sinkMediaDescription: Unit, callbackopt: Callback[Boolean]): js.Promise[Boolean] = js.native
   
   @JSName("on")
-  def on_ElementConnected(
-    eventName: ElementConnected,
-    callback: js.Function1[/* event */ EventElementConnectedsinkMediaType, Unit]
-  ): MediaElement = js.native
+  def on_ElementConnected(eventName: ElementConnected, callback: js.Function1[/* event */ EventElementConnectedsink, Unit]): MediaElement = js.native
   @JSName("on")
   def on_ElementDisconnected(
     eventName: ElementDisconnected,
-    callback: js.Function1[/* event */ EventElementDisconnectedsMediaType, Unit]
+    callback: js.Function1[/* event */ EventElementDisconnecteds, Unit]
   ): MediaElement = js.native
   @JSName("on")
   def on_MediaFlowInStateChange(

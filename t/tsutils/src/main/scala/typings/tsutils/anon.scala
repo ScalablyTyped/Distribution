@@ -1,8 +1,5 @@
 package typings.tsutils
 
-import typings.tsutils.tsutilsStrings.Symbol
-import typings.tsutils.tsutilsStrings.require
-import typings.tsutils.tsutilsStrings.symbol_
 import typings.tsutils.utilUtilMod._ImportLike
 import typings.typescript.mod.ArrayTypeNode
 import typings.typescript.mod.AssertClause
@@ -14,7 +11,6 @@ import typings.typescript.mod.DestructuringPattern
 import typings.typescript.mod.DotDotDotToken
 import typings.typescript.mod.ExclamationToken
 import typings.typescript.mod.Expression
-import typings.typescript.mod.ExternalModuleReference
 import typings.typescript.mod.GenericType
 import typings.typescript.mod.Identifier
 import typings.typescript.mod.LeftHandSideExpression
@@ -34,16 +30,14 @@ import typings.typescript.mod.Signature
 import typings.typescript.mod.SourceFile
 import typings.typescript.mod.SourceFileLike
 import typings.typescript.mod.StringLiteral
+import typings.typescript.mod.Symbol
 import typings.typescript.mod.SyntaxKind
 import typings.typescript.mod.SyntaxKind.BindingElement
 import typings.typescript.mod.SyntaxKind.CallExpression
 import typings.typescript.mod.SyntaxKind.ExportDeclaration
 import typings.typescript.mod.SyntaxKind.ExpressionStatement
 import typings.typescript.mod.SyntaxKind.ImportEqualsDeclaration
-import typings.typescript.mod.SyntaxKind.ImportKeyword
 import typings.typescript.mod.SyntaxKind.VariableDeclaration
-import typings.typescript.mod.Token
-import typings.typescript.mod.TupleType
 import typings.typescript.mod.TupleTypeNode
 import typings.typescript.mod.Type
 import typings.typescript.mod.TypeFlags
@@ -142,7 +136,7 @@ object anon {
       */
     val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
     
-    val name: BindingName & Identifier = js.native
+    val name: BindingName = js.native
     
     val parent: BindingPattern = js.native
     
@@ -169,7 +163,7 @@ object anon {
     
     var _updateExpressionBrand: Any = js.native
     
-    val arguments: NodeArray[Expression] & Array[Expression] = js.native
+    val arguments: NodeArray[Expression] = js.native
     
     /**
       * @deprecated `decorators` has been removed from `Node` and merged with `modifiers` on the `Node` subtypes that support them.
@@ -185,7 +179,7 @@ object anon {
     
     val end: Double = js.native
     
-    val expression: LeftHandSideExpression & (Token[ImportKeyword] | Identifiertextrequire) = js.native
+    val expression: LeftHandSideExpression = js.native
     
     val flags: NodeFlags = js.native
     
@@ -342,7 +336,7 @@ object anon {
     val modifiers: js.UndefOr[NodeArray[Modifier]] = js.native
     
     /** If this is not a StringLiteral it will be a grammar error. */
-    val moduleSpecifier: js.UndefOr[Expression] & js.Object = js.native
+    val moduleSpecifier: js.UndefOr[Expression] = js.native
     
     val name: js.UndefOr[Identifier | StringLiteral | NumericLiteral] = js.native
     
@@ -371,7 +365,7 @@ object anon {
     
     val end: Double = js.native
     
-    val expression: Expression & typings.typescript.mod.CallExpression = js.native
+    val expression: Expression = js.native
     
     val flags: NodeFlags = js.native
     
@@ -476,7 +470,7 @@ object anon {
       * Prefer to use `id.unescapedText`. (Note: This is available only in services, not internally to the TypeScript compiler.)
       * Text of identifier, but if the identifier begins with two underscores, this will begin with three.
       */
-    val escapedText: typings.typescript.mod.String & symbol_ = js.native
+    val escapedText: typings.typescript.mod.String = js.native
     
     val flags: NodeFlags = js.native
     
@@ -548,7 +542,7 @@ object anon {
     
     val pos: Double = js.native
     
-    val text: String & Symbol = js.native
+    val text: String = js.native
   }
   
   /* Inlined typescript.typescript.Identifier & {  text :'require'} */
@@ -659,7 +653,7 @@ object anon {
     
     val pos: Double = js.native
     
-    val text: String & require = js.native
+    val text: String = js.native
   }
   
   /* Inlined typescript.typescript.ImportEqualsDeclaration & {  moduleReference :typescript.typescript.ExternalModuleReference} */
@@ -740,7 +734,7 @@ object anon {
     
     val modifiers: js.UndefOr[NodeArray[Modifier]] = js.native
     
-    val moduleReference: ModuleReference & ExternalModuleReference = js.native
+    val moduleReference: ModuleReference = js.native
     
     val name: Identifier = js.native
     
@@ -752,13 +746,13 @@ object anon {
   /* Inlined typescript.typescript.TypeReference & {  target :typescript.typescript.TupleType} */
   trait TypeReferencetargetTupleT extends StObject {
     
-    var aliasSymbol: js.UndefOr[typings.typescript.mod.Symbol] = js.undefined
+    var aliasSymbol: js.UndefOr[Symbol] = js.undefined
     
     var aliasTypeArguments: js.UndefOr[js.Array[Type]] = js.undefined
     
     var flags: TypeFlags
     
-    def getApparentProperties(): js.Array[typings.typescript.mod.Symbol]
+    def getApparentProperties(): js.Array[Symbol]
     
     def getBaseTypes(): js.UndefOr[js.Array[BaseType]]
     
@@ -776,13 +770,13 @@ object anon {
     
     def getNumberIndexType(): js.UndefOr[Type]
     
-    def getProperties(): js.Array[typings.typescript.mod.Symbol]
+    def getProperties(): js.Array[Symbol]
     
-    def getProperty(propertyName: String): js.UndefOr[typings.typescript.mod.Symbol]
+    def getProperty(propertyName: String): js.UndefOr[Symbol]
     
     def getStringIndexType(): js.UndefOr[Type]
     
-    def getSymbol(): js.UndefOr[typings.typescript.mod.Symbol]
+    def getSymbol(): js.UndefOr[Symbol]
     
     def isClass(): /* is typescript.typescript.InterfaceType */ Boolean
     
@@ -810,9 +804,9 @@ object anon {
     
     var pattern: js.UndefOr[DestructuringPattern] = js.undefined
     
-    var symbol: typings.typescript.mod.Symbol
+    var symbol: Symbol
     
-    var target: GenericType & TupleType
+    var target: GenericType
     
     var typeArguments: js.UndefOr[js.Array[Type]] = js.undefined
   }
@@ -820,7 +814,7 @@ object anon {
     
     inline def apply(
       flags: TypeFlags,
-      getApparentProperties: () => js.Array[typings.typescript.mod.Symbol],
+      getApparentProperties: () => js.Array[Symbol],
       getBaseTypes: () => js.UndefOr[js.Array[BaseType]],
       getCallSignatures: () => js.Array[Signature],
       getConstraint: () => js.UndefOr[Type],
@@ -829,10 +823,10 @@ object anon {
       getFlags: () => TypeFlags,
       getNonNullableType: () => Type,
       getNumberIndexType: () => js.UndefOr[Type],
-      getProperties: () => js.Array[typings.typescript.mod.Symbol],
-      getProperty: String => js.UndefOr[typings.typescript.mod.Symbol],
+      getProperties: () => js.Array[Symbol],
+      getProperty: String => js.UndefOr[Symbol],
       getStringIndexType: () => js.UndefOr[Type],
-      getSymbol: () => js.UndefOr[typings.typescript.mod.Symbol],
+      getSymbol: () => js.UndefOr[Symbol],
       isClass: () => /* is typescript.typescript.InterfaceType */ Boolean,
       isClassOrInterface: () => /* is typescript.typescript.InterfaceType */ Boolean,
       isIndexType: () => /* is typescript.typescript.IndexType */ Boolean,
@@ -844,8 +838,8 @@ object anon {
       isUnion: () => /* is typescript.typescript.UnionType */ Boolean,
       isUnionOrIntersection: () => /* is typescript.typescript.UnionOrIntersectionType */ Boolean,
       objectFlags: ObjectFlags,
-      symbol: typings.typescript.mod.Symbol,
-      target: GenericType & TupleType
+      symbol: Symbol,
+      target: GenericType
     ): TypeReferencetargetTupleT = {
       val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], getApparentProperties = js.Any.fromFunction0(getApparentProperties), getBaseTypes = js.Any.fromFunction0(getBaseTypes), getCallSignatures = js.Any.fromFunction0(getCallSignatures), getConstraint = js.Any.fromFunction0(getConstraint), getConstructSignatures = js.Any.fromFunction0(getConstructSignatures), getDefault = js.Any.fromFunction0(getDefault), getFlags = js.Any.fromFunction0(getFlags), getNonNullableType = js.Any.fromFunction0(getNonNullableType), getNumberIndexType = js.Any.fromFunction0(getNumberIndexType), getProperties = js.Any.fromFunction0(getProperties), getProperty = js.Any.fromFunction1(getProperty), getStringIndexType = js.Any.fromFunction0(getStringIndexType), getSymbol = js.Any.fromFunction0(getSymbol), isClass = js.Any.fromFunction0(isClass), isClassOrInterface = js.Any.fromFunction0(isClassOrInterface), isIndexType = js.Any.fromFunction0(isIndexType), isIntersection = js.Any.fromFunction0(isIntersection), isLiteral = js.Any.fromFunction0(isLiteral), isNumberLiteral = js.Any.fromFunction0(isNumberLiteral), isStringLiteral = js.Any.fromFunction0(isStringLiteral), isTypeParameter = js.Any.fromFunction0(isTypeParameter), isUnion = js.Any.fromFunction0(isUnion), isUnionOrIntersection = js.Any.fromFunction0(isUnionOrIntersection), objectFlags = objectFlags.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeReferencetargetTupleT]
@@ -853,7 +847,7 @@ object anon {
     
     extension [Self <: TypeReferencetargetTupleT](x: Self) {
       
-      inline def setAliasSymbol(value: typings.typescript.mod.Symbol): Self = StObject.set(x, "aliasSymbol", value.asInstanceOf[js.Any])
+      inline def setAliasSymbol(value: Symbol): Self = StObject.set(x, "aliasSymbol", value.asInstanceOf[js.Any])
       
       inline def setAliasSymbolUndefined: Self = StObject.set(x, "aliasSymbol", js.undefined)
       
@@ -865,7 +859,7 @@ object anon {
       
       inline def setFlags(value: TypeFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      inline def setGetApparentProperties(value: () => js.Array[typings.typescript.mod.Symbol]): Self = StObject.set(x, "getApparentProperties", js.Any.fromFunction0(value))
+      inline def setGetApparentProperties(value: () => js.Array[Symbol]): Self = StObject.set(x, "getApparentProperties", js.Any.fromFunction0(value))
       
       inline def setGetBaseTypes(value: () => js.UndefOr[js.Array[BaseType]]): Self = StObject.set(x, "getBaseTypes", js.Any.fromFunction0(value))
       
@@ -883,13 +877,13 @@ object anon {
       
       inline def setGetNumberIndexType(value: () => js.UndefOr[Type]): Self = StObject.set(x, "getNumberIndexType", js.Any.fromFunction0(value))
       
-      inline def setGetProperties(value: () => js.Array[typings.typescript.mod.Symbol]): Self = StObject.set(x, "getProperties", js.Any.fromFunction0(value))
+      inline def setGetProperties(value: () => js.Array[Symbol]): Self = StObject.set(x, "getProperties", js.Any.fromFunction0(value))
       
-      inline def setGetProperty(value: String => js.UndefOr[typings.typescript.mod.Symbol]): Self = StObject.set(x, "getProperty", js.Any.fromFunction1(value))
+      inline def setGetProperty(value: String => js.UndefOr[Symbol]): Self = StObject.set(x, "getProperty", js.Any.fromFunction1(value))
       
       inline def setGetStringIndexType(value: () => js.UndefOr[Type]): Self = StObject.set(x, "getStringIndexType", js.Any.fromFunction0(value))
       
-      inline def setGetSymbol(value: () => js.UndefOr[typings.typescript.mod.Symbol]): Self = StObject.set(x, "getSymbol", js.Any.fromFunction0(value))
+      inline def setGetSymbol(value: () => js.UndefOr[Symbol]): Self = StObject.set(x, "getSymbol", js.Any.fromFunction0(value))
       
       inline def setIsClass(value: () => /* is typescript.typescript.InterfaceType */ Boolean): Self = StObject.set(x, "isClass", js.Any.fromFunction0(value))
       
@@ -921,9 +915,9 @@ object anon {
       
       inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
       
-      inline def setSymbol(value: typings.typescript.mod.Symbol): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+      inline def setSymbol(value: Symbol): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
       
-      inline def setTarget(value: GenericType & TupleType): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: GenericType): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTypeArguments(value: js.Array[Type]): Self = StObject.set(x, "typeArguments", value.asInstanceOf[js.Any])
       
@@ -1019,7 +1013,7 @@ object anon {
       */
     val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
     
-    val name: BindingName & Identifier = js.native
+    val name: BindingName = js.native
     
     val parent: VariableDeclarationList | CatchClause = js.native
     

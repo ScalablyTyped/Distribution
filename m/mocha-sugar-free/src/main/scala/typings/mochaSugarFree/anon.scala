@@ -1,8 +1,6 @@
 package typings.mochaSugarFree
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.mochaSugarFree.mochaSugarFreeBooleans.`false`
-import typings.mochaSugarFree.mochaSugarFreeBooleans.`true`
 import typings.mochaSugarFree.mod.HookFunc
 import typings.mochaSugarFree.mod.SuiteFunc
 import typings.mochaSugarFree.mod.TestCase
@@ -21,7 +19,7 @@ object anon {
     /**
       * Whether the context should contain a `done` callback.
       */
-    var async: js.UndefOr[Boolean] & js.UndefOr[`false`]
+    var async: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set whether timeouts are enabled.
@@ -36,7 +34,7 @@ object anon {
     /**
       * The test function.
       */
-    var fn: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) & js.UndefOr[TestCase]
+    var fn: js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc] = js.undefined
     
     /**
       * Whether the test should be skipped unconditionally.
@@ -75,17 +73,16 @@ object anon {
   }
   object Optionsasyncfalseundefine {
     
-    inline def apply(
-      async: js.UndefOr[Boolean] & js.UndefOr[`false`],
-      fn: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) & js.UndefOr[TestCase]
-    ): Optionsasyncfalseundefine = {
-      val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
+    inline def apply(): Optionsasyncfalseundefine = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Optionsasyncfalseundefine]
     }
     
     extension [Self <: Optionsasyncfalseundefine](x: Self) {
       
-      inline def setAsync(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
       inline def setEnableTimeouts(value: Boolean): Self = StObject.set(x, "enableTimeouts", value.asInstanceOf[js.Any])
       
@@ -95,7 +92,9 @@ object anon {
       
       inline def setExpectPromiseUndefined: Self = StObject.set(x, "expectPromise", js.undefined)
       
-      inline def setFn(value: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) & js.UndefOr[TestCase]): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+      inline def setFn(value: TestCase | TestCaseWithDone | SuiteFunc | HookFunc): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+      
+      inline def setFnUndefined: Self = StObject.set(x, "fn", js.undefined)
       
       inline def setSkip(value: Boolean): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
       
@@ -135,7 +134,7 @@ object anon {
     /**
       * Whether the context should contain a `done` callback.
       */
-    var async: js.UndefOr[Boolean] & `true`
+    var async: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set whether timeouts are enabled.
@@ -150,7 +149,7 @@ object anon {
     /**
       * The test function.
       */
-    var fn: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) & js.UndefOr[TestCaseWithDone]
+    var fn: js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc] = js.undefined
     
     /**
       * Whether the test should be skipped unconditionally.
@@ -189,17 +188,16 @@ object anon {
   }
   object OptionsasynctruefnTestCas {
     
-    inline def apply(
-      async: js.UndefOr[Boolean] & `true`,
-      fn: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) & js.UndefOr[TestCaseWithDone]
-    ): OptionsasynctruefnTestCas = {
-      val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
+    inline def apply(): OptionsasynctruefnTestCas = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionsasynctruefnTestCas]
     }
     
     extension [Self <: OptionsasynctruefnTestCas](x: Self) {
       
-      inline def setAsync(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
       inline def setEnableTimeouts(value: Boolean): Self = StObject.set(x, "enableTimeouts", value.asInstanceOf[js.Any])
       
@@ -209,9 +207,9 @@ object anon {
       
       inline def setExpectPromiseUndefined: Self = StObject.set(x, "expectPromise", js.undefined)
       
-      inline def setFn(
-        value: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) & js.UndefOr[TestCaseWithDone]
-      ): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+      inline def setFn(value: TestCase | TestCaseWithDone | SuiteFunc | HookFunc): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+      
+      inline def setFnUndefined: Self = StObject.set(x, "fn", js.undefined)
       
       inline def setSkip(value: Boolean): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
       
@@ -266,7 +264,7 @@ object anon {
     /**
       * The test function.
       */
-    var fn: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) & js.UndefOr[HookFunc]
+    var fn: js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc] = js.undefined
     
     /**
       * Whether the test should be skipped unconditionally.
@@ -305,8 +303,8 @@ object anon {
   }
   object OptionsfnHookFuncundefine {
     
-    inline def apply(fn: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) & js.UndefOr[HookFunc]): OptionsfnHookFuncundefine = {
-      val __obj = js.Dynamic.literal(fn = fn.asInstanceOf[js.Any])
+    inline def apply(): OptionsfnHookFuncundefine = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionsfnHookFuncundefine]
     }
     
@@ -324,7 +322,9 @@ object anon {
       
       inline def setExpectPromiseUndefined: Self = StObject.set(x, "expectPromise", js.undefined)
       
-      inline def setFn(value: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) & js.UndefOr[HookFunc]): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+      inline def setFn(value: TestCase | TestCaseWithDone | SuiteFunc | HookFunc): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+      
+      inline def setFnUndefined: Self = StObject.set(x, "fn", js.undefined)
       
       inline def setSkip(value: Boolean): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
       
@@ -379,7 +379,7 @@ object anon {
     /**
       * The test function.
       */
-    var fn: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) & js.UndefOr[SuiteFunc]
+    var fn: js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc] = js.undefined
     
     /**
       * Whether the test should be skipped unconditionally.
@@ -418,8 +418,8 @@ object anon {
   }
   object OptionsfnSuiteFuncundefin {
     
-    inline def apply(fn: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) & js.UndefOr[SuiteFunc]): OptionsfnSuiteFuncundefin = {
-      val __obj = js.Dynamic.literal(fn = fn.asInstanceOf[js.Any])
+    inline def apply(): OptionsfnSuiteFuncundefin = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionsfnSuiteFuncundefin]
     }
     
@@ -437,7 +437,9 @@ object anon {
       
       inline def setExpectPromiseUndefined: Self = StObject.set(x, "expectPromise", js.undefined)
       
-      inline def setFn(value: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) & js.UndefOr[SuiteFunc]): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+      inline def setFn(value: TestCase | TestCaseWithDone | SuiteFunc | HookFunc): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+      
+      inline def setFnUndefined: Self = StObject.set(x, "fn", js.undefined)
       
       inline def setSkip(value: Boolean): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
       
@@ -492,7 +494,7 @@ object anon {
     /**
       * The test function.
       */
-    var fn: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) & js.UndefOr[SuiteFunc]
+    var fn: js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc] = js.undefined
     
     /**
       * Whether the test should be skipped unconditionally.
@@ -527,15 +529,12 @@ object anon {
     /**
       * The test title. Replaced by the title parameter if present.
       */
-    var title: js.UndefOr[String] & String
+    var title: js.UndefOr[String] = js.undefined
   }
   object OptionstitlestringfnSuite {
     
-    inline def apply(
-      fn: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) & js.UndefOr[SuiteFunc],
-      title: js.UndefOr[String] & String
-    ): OptionstitlestringfnSuite = {
-      val __obj = js.Dynamic.literal(fn = fn.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    inline def apply(): OptionstitlestringfnSuite = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionstitlestringfnSuite]
     }
     
@@ -553,7 +552,9 @@ object anon {
       
       inline def setExpectPromiseUndefined: Self = StObject.set(x, "expectPromise", js.undefined)
       
-      inline def setFn(value: (js.UndefOr[TestCase | TestCaseWithDone | SuiteFunc | HookFunc]) & js.UndefOr[SuiteFunc]): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+      inline def setFn(value: TestCase | TestCaseWithDone | SuiteFunc | HookFunc): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+      
+      inline def setFnUndefined: Self = StObject.set(x, "fn", js.undefined)
       
       inline def setSkip(value: Boolean): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
       
@@ -579,7 +580,9 @@ object anon {
       
       inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      inline def setTitle(value: js.UndefOr[String] & String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
 }

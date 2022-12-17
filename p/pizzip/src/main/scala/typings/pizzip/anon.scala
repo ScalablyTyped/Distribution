@@ -145,13 +145,12 @@ object anon {
       *
       * @default "base64"
       */
-    var `type`: (js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer]) & arraybuffer
+    var `type`: js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer] = js.undefined
   }
   object GenerateOptionstypearrayb {
     
-    inline def apply(`type`: (js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer]) & arraybuffer): GenerateOptionstypearrayb = {
+    inline def apply(): GenerateOptionstypearrayb = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenerateOptionstypearrayb]
     }
     
@@ -187,7 +186,9 @@ object anon {
       
       inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
       
-      inline def setType(value: (js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer]) & arraybuffer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: base64 | string | uint8array | arraybuffer | blob | nodebuffer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -265,13 +266,12 @@ object anon {
       *
       * @default "base64"
       */
-    var `type`: (js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer]) & blob
+    var `type`: js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer] = js.undefined
   }
   object GenerateOptionstypeblob {
     
-    inline def apply(`type`: (js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer]) & blob): GenerateOptionstypeblob = {
+    inline def apply(): GenerateOptionstypeblob = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenerateOptionstypeblob]
     }
     
@@ -307,7 +307,9 @@ object anon {
       
       inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
       
-      inline def setType(value: (js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer]) & blob): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: base64 | string | uint8array | arraybuffer | blob | nodebuffer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -385,13 +387,12 @@ object anon {
       *
       * @default "base64"
       */
-    var `type`: (js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer]) & nodebuffer
+    var `type`: js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer] = js.undefined
   }
   object GenerateOptionstypenodebu {
     
-    inline def apply(`type`: (js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer]) & nodebuffer): GenerateOptionstypenodebu = {
+    inline def apply(): GenerateOptionstypenodebu = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenerateOptionstypenodebu]
     }
     
@@ -427,7 +428,9 @@ object anon {
       
       inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
       
-      inline def setType(value: (js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer]) & nodebuffer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: base64 | string | uint8array | arraybuffer | blob | nodebuffer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -505,15 +508,12 @@ object anon {
       *
       * @default "base64"
       */
-    var `type`: (js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer]) & (js.UndefOr[string | base64])
+    var `type`: js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer] = js.undefined
   }
   object GenerateOptionstypestring {
     
-    inline def apply(
-      `type`: (js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer]) & (js.UndefOr[string | base64])
-    ): GenerateOptionstypestring = {
+    inline def apply(): GenerateOptionstypestring = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenerateOptionstypestring]
     }
     
@@ -549,9 +549,9 @@ object anon {
       
       inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
       
-      inline def setType(
-        value: (js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer]) & (js.UndefOr[string | base64])
-      ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: base64 | string | uint8array | arraybuffer | blob | nodebuffer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -629,13 +629,12 @@ object anon {
       *
       * @default "base64"
       */
-    var `type`: (js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer]) & uint8array
+    var `type`: js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer] = js.undefined
   }
   object GenerateOptionstypeuint8a {
     
-    inline def apply(`type`: (js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer]) & uint8array): GenerateOptionstypeuint8a = {
+    inline def apply(): GenerateOptionstypeuint8a = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenerateOptionstypeuint8a]
     }
     
@@ -671,7 +670,9 @@ object anon {
       
       inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
       
-      inline def setType(value: (js.UndefOr[base64 | string | uint8array | arraybuffer | blob | nodebuffer]) & uint8array): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: base64 | string | uint8array | arraybuffer | blob | nodebuffer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   

@@ -18,7 +18,7 @@ trait PickImplcloseNestedPartia
   
   var className: js.UndefOr[ClassNameSettings] = js.undefined
   
-  var closeNested: Boolean & js.UndefOr[Boolean]
+  var closeNested: Boolean
   
   var collapsible: js.UndefOr[Boolean] = js.undefined
   
@@ -60,7 +60,7 @@ trait PickImplcloseNestedPartia
 }
 object PickImplcloseNestedPartia {
   
-  inline def apply(closeNested: Boolean & js.UndefOr[Boolean]): PickImplcloseNestedPartia = {
+  inline def apply(closeNested: Boolean): PickImplcloseNestedPartia = {
     val __obj = js.Dynamic.literal(closeNested = closeNested.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplcloseNestedPartia]
   }
@@ -75,7 +75,7 @@ object PickImplcloseNestedPartia {
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    inline def setCloseNested(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "closeNested", value.asInstanceOf[js.Any])
+    inline def setCloseNested(value: Boolean): Self = StObject.set(x, "closeNested", value.asInstanceOf[js.Any])
     
     inline def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
     

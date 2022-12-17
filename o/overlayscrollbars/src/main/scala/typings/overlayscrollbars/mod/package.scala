@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 type BasicEventCallback = js.ThisFunction0[/* this */ OverlayScrollbars, Unit]
 
 /* Rewritten from type alias, can be one of: 
-  - typings.overlayscrollbars.anon.Y
+  - typings.overlayscrollbars.anon.X
   - typings.overlayscrollbars.anon.L
   - typings.overlayscrollbars.anon.Left
   - js.Tuple2[typings.overlayscrollbars.mod.Position, typings.overlayscrollbars.mod.Position]

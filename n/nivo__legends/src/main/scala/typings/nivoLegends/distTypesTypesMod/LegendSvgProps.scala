@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined {  x :number,   y :number} & @nivo/legends.@nivo/legends/dist/types/types.CommonLegendProps & std.Required<std.Pick<@nivo/legends.@nivo/legends/dist/types/types.CommonLegendProps, 'data'>> & @nivo/legends.@nivo/legends/dist/types/types.BoxLegendSymbolProps & @nivo/legends.@nivo/legends/dist/types/types.InteractivityProps */
 trait LegendSvgProps extends StObject {
   
-  var data: js.UndefOr[js.Array[Datum]] & js.Array[Datum]
+  var data: js.UndefOr[js.Array[Datum]] = js.undefined
   
   var direction: LegendDirection
   
@@ -67,21 +67,18 @@ trait LegendSvgProps extends StObject {
 }
 object LegendSvgProps {
   
-  inline def apply(
-    data: js.UndefOr[js.Array[Datum]] & js.Array[Datum],
-    direction: LegendDirection,
-    itemHeight: Double,
-    itemWidth: Double,
-    x: Double,
-    y: Double
-  ): LegendSvgProps = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], itemHeight = itemHeight.asInstanceOf[js.Any], itemWidth = itemWidth.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+  inline def apply(direction: LegendDirection, itemHeight: Double, itemWidth: Double, x: Double, y: Double): LegendSvgProps = {
+    val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], itemHeight = itemHeight.asInstanceOf[js.Any], itemWidth = itemWidth.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendSvgProps]
   }
   
   extension [Self <: LegendSvgProps](x: Self) {
     
-    inline def setData(value: js.UndefOr[js.Array[Datum]] & js.Array[Datum]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[Datum]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setDataVarargs(value: Datum*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setDirection(value: LegendDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

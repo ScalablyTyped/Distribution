@@ -13,8 +13,9 @@ or have other effects. Create a transaction by calling
 dispatch one by calling
 [`EditorView.dispatch`](https://codemirror.net/6/docs/ref/#view.EditorView.dispatch).
 */
+@JSImport("@codemirror/state", "Transaction")
 @js.native
-trait Transaction extends StObject {
+/* private */ open class Transaction () extends StObject {
   
   /**
     Get the value of the given annotation type, if any.
@@ -95,4 +96,74 @@ trait Transaction extends StObject {
     filters](https://codemirror.net/6/docs/ref/#state.EditorState^transactionFilter) when possible.
     */
   def state: EditorState = js.native
+}
+object Transaction {
+  
+  @JSImport("@codemirror/state", "Transaction")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    Annotation indicating whether a transaction should be added to
+    the undo history or not.
+    */
+  /* static member */
+  @JSImport("@codemirror/state", "Transaction.addToHistory")
+  @js.native
+  def addToHistory: AnnotationType[Boolean] = js.native
+  inline def addToHistory_=(x: AnnotationType[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addToHistory")(x.asInstanceOf[js.Any])
+  
+  /**
+    Annotation indicating (when present and true) that a transaction
+    represents a change made by some other actor, not the user. This
+    is used, for example, to tag other people's changes in
+    collaborative editing.
+    */
+  /* static member */
+  @JSImport("@codemirror/state", "Transaction.remote")
+  @js.native
+  def remote: AnnotationType[Boolean] = js.native
+  inline def remote_=(x: AnnotationType[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("remote")(x.asInstanceOf[js.Any])
+  
+  /**
+    Annotation used to store transaction timestamps. Automatically
+    added to every transaction, holding `Date.now()`.
+    */
+  /* static member */
+  @JSImport("@codemirror/state", "Transaction.time")
+  @js.native
+  def time: AnnotationType[Double] = js.native
+  inline def time_=(x: AnnotationType[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("time")(x.asInstanceOf[js.Any])
+  
+  /**
+    Annotation used to associate a transaction with a user interface
+    event. Holds a string identifying the event, using a
+    dot-separated format to support attaching more specific
+    information. The events used by the core libraries are:
+    
+    - `"input"` when content is entered
+    - `"input.type"` for typed input
+    - `"input.type.compose"` for composition
+    - `"input.paste"` for pasted input
+    - `"input.drop"` when adding content with drag-and-drop
+    - `"input.complete"` when autocompleting
+    - `"delete"` when the user deletes content
+    - `"delete.selection"` when deleting the selection
+    - `"delete.forward"` when deleting forward from the selection
+    - `"delete.backward"` when deleting backward from the selection
+    - `"delete.cut"` when cutting to the clipboard
+    - `"move"` when content is moved
+    - `"move.drop"` when content is moved within the editor through drag-and-drop
+    - `"select"` when explicitly changing the selection
+    - `"select.pointer"` when selecting with a mouse or other pointing device
+    - `"undo"` and `"redo"` for history actions
+    
+    Use [`isUserEvent`](https://codemirror.net/6/docs/ref/#state.Transaction.isUserEvent) to check
+    whether the annotation matches a given event.
+    */
+  /* static member */
+  @JSImport("@codemirror/state", "Transaction.userEvent")
+  @js.native
+  def userEvent: AnnotationType[String] = js.native
+  inline def userEvent_=(x: AnnotationType[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("userEvent")(x.asInstanceOf[js.Any])
 }

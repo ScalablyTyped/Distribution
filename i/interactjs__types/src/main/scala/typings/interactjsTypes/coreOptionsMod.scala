@@ -172,7 +172,7 @@ object coreOptionsMod {
     
     var context: js.UndefOr[Node] = js.undefined
     
-    var cursorChecker: js.UndefOr[Any] & js.UndefOr[CursorChecker]
+    var cursorChecker: js.UndefOr[Any] = js.undefined
     
     var delay: js.UndefOr[Double] = js.undefined
     
@@ -218,8 +218,8 @@ object coreOptionsMod {
   }
   object Options {
     
-    inline def apply(cursorChecker: js.UndefOr[Any] & js.UndefOr[CursorChecker]): Options = {
-      val __obj = js.Dynamic.literal(cursorChecker = cursorChecker.asInstanceOf[js.Any])
+    inline def apply(): Options = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
@@ -241,7 +241,9 @@ object coreOptionsMod {
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      inline def setCursorChecker(value: js.UndefOr[Any] & js.UndefOr[CursorChecker]): Self = StObject.set(x, "cursorChecker", value.asInstanceOf[js.Any])
+      inline def setCursorChecker(value: Any): Self = StObject.set(x, "cursorChecker", value.asInstanceOf[js.Any])
+      
+      inline def setCursorCheckerUndefined: Self = StObject.set(x, "cursorChecker", js.undefined)
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       

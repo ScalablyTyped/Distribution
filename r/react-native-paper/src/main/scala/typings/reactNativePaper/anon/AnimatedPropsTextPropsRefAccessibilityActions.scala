@@ -1,7 +1,5 @@
 package typings.reactNativePaper.anon
 
-import typings.reactNative.mod.StyleProp
-import typings.reactNative.mod.TextStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -169,9 +167,9 @@ trait AnimatedPropsTextPropsRefAccessibilityActions extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: 'selectionColor' extends react-native.react-native.Animated.NonAnimatedProps ? 'selectionColor' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<react-native.react-native.ColorValue | undefined> : react-native.react-native.ColorValue | undefined : react-native.react-native.Animated.WithAnimatedValue<react-native.react-native.ColorValue | undefined> */ js.Any
   ] = js.undefined
   
-  var style: (js.UndefOr[
+  var style: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: 'style' extends react-native.react-native.Animated.NonAnimatedProps ? 'style' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<react-native.react-native.StyleProp<react-native.react-native.TextStyle> | undefined> : react-native.react-native.StyleProp<react-native.react-native.TextStyle> | undefined : react-native.react-native.Animated.WithAnimatedValue<react-native.react-native.StyleProp<react-native.react-native.TextStyle> | undefined> */ js.Any
-  ]) & js.UndefOr[StyleProp[TextStyle]]
+  ] = js.undefined
   
   var suppressHighlighting: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: 'suppressHighlighting' extends react-native.react-native.Animated.NonAnimatedProps ? 'suppressHighlighting' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<boolean | undefined> : boolean | undefined : react-native.react-native.Animated.WithAnimatedValue<boolean | undefined> */ js.Any
@@ -192,13 +190,8 @@ trait AnimatedPropsTextPropsRefAccessibilityActions extends StObject {
 }
 object AnimatedPropsTextPropsRefAccessibilityActions {
   
-  inline def apply(
-    style: (js.UndefOr[
-      /* import warning: importer.ImportType#apply Failed type conversion: 'style' extends react-native.react-native.Animated.NonAnimatedProps ? 'style' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<react-native.react-native.StyleProp<react-native.react-native.TextStyle> | undefined> : react-native.react-native.StyleProp<react-native.react-native.TextStyle> | undefined : react-native.react-native.Animated.WithAnimatedValue<react-native.react-native.StyleProp<react-native.react-native.TextStyle> | undefined> */ js.Any
-    ]) & js.UndefOr[StyleProp[TextStyle]],
-    theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
-  ): AnimatedPropsTextPropsRefAccessibilityActions = {
-    val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
+  inline def apply(theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): AnimatedPropsTextPropsRefAccessibilityActions = {
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimatedPropsTextPropsRefAccessibilityActions]
   }
   
@@ -445,10 +438,10 @@ object AnimatedPropsTextPropsRefAccessibilityActions {
     inline def setSelectionColorUndefined: Self = StObject.set(x, "selectionColor", js.undefined)
     
     inline def setStyle(
-      value: (js.UndefOr[
-          /* import warning: importer.ImportType#apply Failed type conversion: 'style' extends react-native.react-native.Animated.NonAnimatedProps ? 'style' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<react-native.react-native.StyleProp<react-native.react-native.TextStyle> | undefined> : react-native.react-native.StyleProp<react-native.react-native.TextStyle> | undefined : react-native.react-native.Animated.WithAnimatedValue<react-native.react-native.StyleProp<react-native.react-native.TextStyle> | undefined> */ js.Any
-        ]) & js.UndefOr[StyleProp[TextStyle]]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: 'style' extends react-native.react-native.Animated.NonAnimatedProps ? 'style' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<react-native.react-native.StyleProp<react-native.react-native.TextStyle> | undefined> : react-native.react-native.StyleProp<react-native.react-native.TextStyle> | undefined : react-native.react-native.Animated.WithAnimatedValue<react-native.react-native.StyleProp<react-native.react-native.TextStyle> | undefined> */ js.Any
     ): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     inline def setSuppressHighlighting(
       value: /* import warning: importer.ImportType#apply Failed type conversion: 'suppressHighlighting' extends react-native.react-native.Animated.NonAnimatedProps ? 'suppressHighlighting' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<boolean | undefined> : boolean | undefined : react-native.react-native.Animated.WithAnimatedValue<boolean | undefined> */ js.Any

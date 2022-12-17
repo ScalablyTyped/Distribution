@@ -14,13 +14,13 @@ trait PickImplvaluePartialPickI
   
   var remoteValues: js.UndefOr[String] = js.undefined
   
-  var value: String & js.UndefOr[String]
+  var value: String
   
   var values: js.UndefOr[String] = js.undefined
 }
 object PickImplvaluePartialPickI {
   
-  inline def apply(value: String & js.UndefOr[String]): PickImplvaluePartialPickI = {
+  inline def apply(value: String): PickImplvaluePartialPickI = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplvaluePartialPickI]
   }
@@ -35,7 +35,7 @@ object PickImplvaluePartialPickI {
     
     inline def setRemoteValuesUndefined: Self = StObject.set(x, "remoteValues", js.undefined)
     
-    inline def setValue(value: String & js.UndefOr[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValues(value: String): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     

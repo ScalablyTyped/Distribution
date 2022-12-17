@@ -63,7 +63,7 @@ trait PickImpldirectionPartialP
   
   var delay: js.UndefOr[DelaySettings] = js.undefined
   
-  var direction: (auto | upward | downward) & (js.UndefOr[auto | upward | downward])
+  var direction: auto | upward | downward
   
   var duration: js.UndefOr[Double] = js.undefined
   
@@ -169,7 +169,7 @@ trait PickImpldirectionPartialP
 }
 object PickImpldirectionPartialP {
   
-  inline def apply(direction: (auto | upward | downward) & (js.UndefOr[auto | upward | downward])): PickImpldirectionPartialP = {
+  inline def apply(direction: auto | upward | downward): PickImpldirectionPartialP = {
     val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldirectionPartialP]
   }
@@ -224,7 +224,7 @@ object PickImpldirectionPartialP {
     
     inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    inline def setDirection(value: (auto | upward | downward) & (js.UndefOr[auto | upward | downward])): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: auto | upward | downward): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

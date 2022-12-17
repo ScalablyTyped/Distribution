@@ -22,7 +22,7 @@ object mod {
   /* Inlined html2canvas.html2canvas/dist/types/dom/document-cloner.CloneOptions & html2canvas.html2canvas/dist/types/dom/document-cloner.WindowOptions & html2canvas.html2canvas/dist/types/render/canvas/canvas-renderer.RenderOptions & html2canvas.html2canvas/dist/types/core/context.ContextOptions & {  backgroundColor :string | null,   foreignObjectRendering :boolean,   removeContainer :boolean | undefined} */
   trait Options extends StObject {
     
-    var allowTaint: js.UndefOr[Boolean] & Boolean
+    var allowTaint: js.UndefOr[Boolean] = js.undefined
     
     var backgroundColor: String | Null
     
@@ -67,7 +67,6 @@ object mod {
   object Options {
     
     inline def apply(
-      allowTaint: js.UndefOr[Boolean] & Boolean,
       foreignObjectRendering: Boolean,
       height: Double,
       imageTimeout: Double,
@@ -82,13 +81,15 @@ object mod {
       x: Double,
       y: Double
     ): Options = {
-      val __obj = js.Dynamic.literal(allowTaint = allowTaint.asInstanceOf[js.Any], foreignObjectRendering = foreignObjectRendering.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], imageTimeout = imageTimeout.asInstanceOf[js.Any], logging = logging.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], scrollX = scrollX.asInstanceOf[js.Any], scrollY = scrollY.asInstanceOf[js.Any], useCORS = useCORS.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], windowHeight = windowHeight.asInstanceOf[js.Any], windowWidth = windowWidth.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], backgroundColor = null)
+      val __obj = js.Dynamic.literal(foreignObjectRendering = foreignObjectRendering.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], imageTimeout = imageTimeout.asInstanceOf[js.Any], logging = logging.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], scrollX = scrollX.asInstanceOf[js.Any], scrollY = scrollY.asInstanceOf[js.Any], useCORS = useCORS.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], windowHeight = windowHeight.asInstanceOf[js.Any], windowWidth = windowWidth.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], backgroundColor = null)
       __obj.asInstanceOf[Options]
     }
     
     extension [Self <: Options](x: Self) {
       
-      inline def setAllowTaint(value: js.UndefOr[Boolean] & Boolean): Self = StObject.set(x, "allowTaint", value.asInstanceOf[js.Any])
+      inline def setAllowTaint(value: Boolean): Self = StObject.set(x, "allowTaint", value.asInstanceOf[js.Any])
+      
+      inline def setAllowTaintUndefined: Self = StObject.set(x, "allowTaint", js.undefined)
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       

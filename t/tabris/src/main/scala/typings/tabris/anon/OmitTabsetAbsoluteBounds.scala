@@ -120,10 +120,10 @@ trait OmitTabsetAbsoluteBounds extends StObject {
   @JSName("_addChild")
   var _addChild_Original: js.Function2[/* child */ Widget[Any], /* index */ js.UndefOr[Double], Unit]
   
-  def _apply[Target](options: `30`[Target], rules: RuleSet[typings.tabris.global.tabris.widgets.Tab]): typings.tabris.global.tabris.widgets.Tab
+  def _apply[Target](options: `28`[Target], rules: RuleSet[typings.tabris.global.tabris.widgets.Tab]): typings.tabris.global.tabris.widgets.Tab
   @JSName("_apply")
   var _apply_Original: js.Function2[
-    /* options */ `30`[typings.tabris.global.tabris.widgets.Tab], 
+    /* options */ `28`[typings.tabris.global.tabris.widgets.Tab], 
     /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Tab], 
     typings.tabris.global.tabris.widgets.Tab
   ]
@@ -302,10 +302,10 @@ trait OmitTabsetAbsoluteBounds extends StObject {
   var append_Original: js.Function1[/* repeated */ Widget[Any], typings.tabris.global.tabris.widgets.Tab]
   
   @JSName("apply")
-  def apply[Target](options: `30`[Target], rules: RuleSet[typings.tabris.global.tabris.widgets.Tab]): typings.tabris.global.tabris.widgets.Tab
+  def apply[Target](options: `28`[Target], rules: RuleSet[typings.tabris.global.tabris.widgets.Tab]): typings.tabris.global.tabris.widgets.Tab
   @JSName("apply")
   var apply_Original: js.Function2[
-    /* options */ `30`[typings.tabris.global.tabris.widgets.Tab], 
+    /* options */ `28`[typings.tabris.global.tabris.widgets.Tab], 
     /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Tab], 
     typings.tabris.global.tabris.widgets.Tab
   ]
@@ -612,7 +612,7 @@ object OmitTabsetAbsoluteBounds {
     $trigger: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Unit,
     _acceptChild: /* child */ Widget[Any] => Boolean,
     _addChild: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit,
-    _apply: (/* options */ `30`[typings.tabris.global.tabris.widgets.Tab], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Tab]) => typings.tabris.global.tabris.widgets.Tab,
+    _apply: (/* options */ `28`[typings.tabris.global.tabris.widgets.Tab], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Tab]) => typings.tabris.global.tabris.widgets.Tab,
     _checkDisposed: () => Unit,
     _checkLayout: /* value */ typings.tabris.mod.Layout => Unit,
     _children: /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]] => WidgetCollection[Widget[Any]],
@@ -653,7 +653,7 @@ object OmitTabsetAbsoluteBounds {
     animate: (/* properties */ Opacity, /* options */ AnimationOptions) => js.Promise[Unit],
     append: /* repeated */ Widget[Any] => typings.tabris.global.tabris.widgets.Tab,
     appendTo: /* parent */ Composite[Widget[Any]] => typings.tabris.global.tabris.widgets.Tab,
-    apply: (/* options */ `30`[typings.tabris.global.tabris.widgets.Tab], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Tab]) => typings.tabris.global.tabris.widgets.Tab,
+    apply: (/* options */ `28`[typings.tabris.global.tabris.widgets.Tab], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Tab]) => typings.tabris.global.tabris.widgets.Tab,
     badge: Double,
     baseline: SiblingReferenceValue | auto | `true`,
     bottom: ConstraintValue,
@@ -785,7 +785,7 @@ object OmitTabsetAbsoluteBounds {
     inline def setAppendTo(value: /* parent */ Composite[Widget[Any]] => typings.tabris.global.tabris.widgets.Tab): Self = StObject.set(x, "appendTo", js.Any.fromFunction1(value))
     
     inline def setApply(
-      value: (/* options */ `30`[typings.tabris.global.tabris.widgets.Tab], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Tab]) => typings.tabris.global.tabris.widgets.Tab
+      value: (/* options */ `28`[typings.tabris.global.tabris.widgets.Tab], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Tab]) => typings.tabris.global.tabris.widgets.Tab
     ): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
     
     inline def setBackground(value: LinearGradientValue | ColorValue | ImageValue): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
@@ -1051,7 +1051,7 @@ object OmitTabsetAbsoluteBounds {
     inline def set_addChild(value: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "_addChild", js.Any.fromFunction2(value))
     
     inline def set_apply(
-      value: (/* options */ `30`[typings.tabris.global.tabris.widgets.Tab], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Tab]) => typings.tabris.global.tabris.widgets.Tab
+      value: (/* options */ `28`[typings.tabris.global.tabris.widgets.Tab], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.Tab]) => typings.tabris.global.tabris.widgets.Tab
     ): Self = StObject.set(x, "_apply", js.Any.fromFunction2(value))
     
     inline def set_checkDisposed(value: () => Unit): Self = StObject.set(x, "_checkDisposed", js.Any.fromFunction0(value))

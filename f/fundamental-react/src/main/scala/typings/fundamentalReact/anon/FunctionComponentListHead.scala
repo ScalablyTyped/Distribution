@@ -1,6 +1,5 @@
 package typings.fundamentalReact.anon
 
-import typings.fundamentalReact.fundamentalReactStrings.ListDotHeader
 import typings.fundamentalReact.libListListMod.ListHeaderProps
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
@@ -19,7 +18,7 @@ trait FunctionComponentListHead extends StObject {
   
   var defaultProps: js.UndefOr[PartialListHeaderProps] = js.native
   
-  var displayName: js.UndefOr[String] & ListDotHeader = js.native
+  var displayName: js.UndefOr[String] = js.native
   
   var propTypes: js.UndefOr[WeakValidationMapListHead] = js.native
 }

@@ -1,45 +1,49 @@
 package typings.webpack.mod
 
+import typings.std.Map
+import typings.webpack.anon.ModuleReferenceOptionsind
 import typings.webpack.anon.PartialModuleReferenceOpt
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ConcatenationScope extends StObject {
+@JSImport("webpack", "ConcatenationScope")
+@js.native
+open class ConcatenationScope protected () extends StObject {
+  def this(modulesMap: js.Array[ModuleInfo], currentModule: ConcatenatedModuleInfo) = this()
+  def this(modulesMap: Map[Module, ModuleInfo], currentModule: ConcatenatedModuleInfo) = this()
   
-  def createModuleReference(module: Module, __1: PartialModuleReferenceOpt): String
+  def createModuleReference(module: Module, __1: PartialModuleReferenceOpt): String = js.native
   
-  def isModuleInScope(module: Module): Boolean
+  def isModuleInScope(module: Module): Boolean = js.native
   
-  def registerExport(exportName: String, symbol: String): Unit
+  def registerExport(exportName: String, symbol: String): Unit = js.native
   
-  def registerNamespaceExport(symbol: String): Unit
+  def registerNamespaceExport(symbol: String): Unit = js.native
   
-  def registerRawExport(exportName: String, expression: String): Unit
+  def registerRawExport(exportName: String, expression: String): Unit = js.native
 }
 object ConcatenationScope {
   
-  inline def apply(
-    createModuleReference: (Module, PartialModuleReferenceOpt) => String,
-    isModuleInScope: Module => Boolean,
-    registerExport: (String, String) => Unit,
-    registerNamespaceExport: String => Unit,
-    registerRawExport: (String, String) => Unit
-  ): ConcatenationScope = {
-    val __obj = js.Dynamic.literal(createModuleReference = js.Any.fromFunction2(createModuleReference), isModuleInScope = js.Any.fromFunction1(isModuleInScope), registerExport = js.Any.fromFunction2(registerExport), registerNamespaceExport = js.Any.fromFunction1(registerNamespaceExport), registerRawExport = js.Any.fromFunction2(registerRawExport))
-    __obj.asInstanceOf[ConcatenationScope]
-  }
+  @JSImport("webpack", "ConcatenationScope")
+  @js.native
+  val ^ : js.Any = js.native
   
-  extension [Self <: ConcatenationScope](x: Self) {
-    
-    inline def setCreateModuleReference(value: (Module, PartialModuleReferenceOpt) => String): Self = StObject.set(x, "createModuleReference", js.Any.fromFunction2(value))
-    
-    inline def setIsModuleInScope(value: Module => Boolean): Self = StObject.set(x, "isModuleInScope", js.Any.fromFunction1(value))
-    
-    inline def setRegisterExport(value: (String, String) => Unit): Self = StObject.set(x, "registerExport", js.Any.fromFunction2(value))
-    
-    inline def setRegisterNamespaceExport(value: String => Unit): Self = StObject.set(x, "registerNamespaceExport", js.Any.fromFunction1(value))
-    
-    inline def setRegisterRawExport(value: (String, String) => Unit): Self = StObject.set(x, "registerRawExport", js.Any.fromFunction2(value))
-  }
+  /* static member */
+  @JSImport("webpack", "ConcatenationScope.DEFAULT_EXPORT")
+  @js.native
+  def DEFAULT_EXPORT: String = js.native
+  inline def DEFAULT_EXPORT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_EXPORT")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("webpack", "ConcatenationScope.NAMESPACE_OBJECT_EXPORT")
+  @js.native
+  def NAMESPACE_OBJECT_EXPORT: String = js.native
+  inline def NAMESPACE_OBJECT_EXPORT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAMESPACE_OBJECT_EXPORT")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  inline def isModuleReference(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isModuleReference")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  /* static member */
+  inline def matchModuleReference(name: String): ModuleReferenceOptionsind = ^.asInstanceOf[js.Dynamic].applyDynamic("matchModuleReference")(name.asInstanceOf[js.Any]).asInstanceOf[ModuleReferenceOptionsind]
 }

@@ -139,7 +139,7 @@ object anon {
     def evaluate(): Double = js.native
     def evaluate(variables: Variables): Double = js.native
     
-    var name: (String | Null) & (Null | String) = js.native
+    var name: String | Null = js.native
     
     def simplify(): AbstractSyntaxTreeNode = js.native
     

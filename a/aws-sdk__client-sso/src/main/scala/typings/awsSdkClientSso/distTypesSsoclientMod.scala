@@ -314,7 +314,7 @@ object distTypesSsoclientMod {
       * The fully qualified endpoint of the webservice. This is only required when using
       * a custom endpoint (for example, when using a local version of S3).
       */
-    var endpoint: (js.UndefOr[String | Endpoint | (Provider[Endpoint | EndpointV2]) | EndpointV2]) & (js.UndefOr[String | (Provider[Endpoint | EndpointV2 | String]) | Endpoint | EndpointV2])
+    var endpoint: js.UndefOr[String | Endpoint | (Provider[Endpoint | EndpointV2]) | EndpointV2] = js.undefined
     
     var endpointProvider: js.UndefOr[
         js.Function2[
@@ -345,7 +345,7 @@ object distTypesSsoclientMod {
     /**
       * The HTTP handler to use. Fetch in browser and Https in Nodejs.
       */
-    var requestHandler: (js.UndefOr[RequestHandler[Any, Any, HttpHandlerOptions]]) & js.UndefOr[HttpHandler]
+    var requestHandler: js.UndefOr[RequestHandler[Any, Any, HttpHandlerOptions]] = js.undefined
     
     /**
       * Specifies which retry algorithm to use.
@@ -418,11 +418,8 @@ object distTypesSsoclientMod {
   }
   object SSOClientConfigType {
     
-    inline def apply(
-      endpoint: (js.UndefOr[String | Endpoint | (Provider[Endpoint | EndpointV2]) | EndpointV2]) & (js.UndefOr[String | (Provider[Endpoint | EndpointV2 | String]) | Endpoint | EndpointV2]),
-      requestHandler: (js.UndefOr[RequestHandler[Any, Any, HttpHandlerOptions]]) & js.UndefOr[HttpHandler]
-    ): SSOClientConfigType = {
-      val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any], requestHandler = requestHandler.asInstanceOf[js.Any])
+    inline def apply(): SSOClientConfigType = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SSOClientConfigType]
     }
     
@@ -464,15 +461,17 @@ object distTypesSsoclientMod {
       
       inline def setDisableHostPrefixUndefined: Self = StObject.set(x, "disableHostPrefix", js.undefined)
       
-      inline def setEndpoint(
-        value: (js.UndefOr[String | Endpoint | (Provider[Endpoint | EndpointV2]) | EndpointV2]) & (js.UndefOr[String | (Provider[Endpoint | EndpointV2 | String]) | Endpoint | EndpointV2])
-      ): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: String | Endpoint | (Provider[Endpoint | EndpointV2]) | EndpointV2): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      
+      inline def setEndpointFunction0(value: () => js.Promise[Endpoint | EndpointV2]): Self = StObject.set(x, "endpoint", js.Any.fromFunction0(value))
       
       inline def setEndpointProvider(
         value: (/* params */ EndpointParameters, /* context */ js.UndefOr[typings.awsSdkMiddlewareEndpoint.anon.Logger]) => EndpointV2
       ): Self = StObject.set(x, "endpointProvider", js.Any.fromFunction2(value))
       
       inline def setEndpointProviderUndefined: Self = StObject.set(x, "endpointProvider", js.undefined)
+      
+      inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
       
       inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
@@ -490,7 +489,9 @@ object distTypesSsoclientMod {
       
       inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
       
-      inline def setRequestHandler(value: (js.UndefOr[RequestHandler[Any, Any, HttpHandlerOptions]]) & js.UndefOr[HttpHandler]): Self = StObject.set(x, "requestHandler", value.asInstanceOf[js.Any])
+      inline def setRequestHandler(value: RequestHandler[Any, Any, HttpHandlerOptions]): Self = StObject.set(x, "requestHandler", value.asInstanceOf[js.Any])
+      
+      inline def setRequestHandlerUndefined: Self = StObject.set(x, "requestHandler", js.undefined)
       
       inline def setRetryMode(value: String | Provider[String]): Self = StObject.set(x, "retryMode", value.asInstanceOf[js.Any])
       
@@ -603,7 +604,7 @@ object distTypesSsoclientMod {
       * @see https://github.com/aws/aws-sdk-js-v3/issues/4122
       * @deprecated Use {@link EndpointResolvedConfig.endpointProvider} instead.
       */
-    var endpoint: js.UndefOr[Provider[Endpoint]] & (js.UndefOr[String | (Provider[Endpoint | EndpointV2 | String]) | Endpoint | EndpointV2]) = js.native
+    var endpoint: js.UndefOr[Provider[Endpoint]] = js.native
     
     def endpointProvider(params: EndpointParameters): EndpointV2 = js.native
     def endpointProvider(params: EndpointParameters, context: typings.awsSdkMiddlewareEndpoint.anon.Logger): EndpointV2 = js.native
@@ -625,7 +626,7 @@ object distTypesSsoclientMod {
       * Resolved value for input config {@link RetryInputConfig.maxAttempts}
       */
     @JSName("maxAttempts")
-    var maxAttempts_Original: (Double | Provider[Double]) & Provider[Double] = js.native
+    var maxAttempts_Original: Double | Provider[Double] = js.native
     
     /**
       * Resolved value for input config {@link RegionInputConfig.region}
@@ -635,12 +636,12 @@ object distTypesSsoclientMod {
       * Resolved value for input config {@link RegionInputConfig.region}
       */
     @JSName("region")
-    var region_Original: (String | Provider[String]) & Provider[String] & (js.UndefOr[String | Provider[String]]) = js.native
+    var region_Original: String | Provider[String] = js.native
     
     /**
       * The HTTP handler to use. Fetch in browser and Https in Nodejs.
       */
-    var requestHandler: (RequestHandler[Any, Any, HttpHandlerOptions]) & HttpHandler & (RequestHandler[Any, Any, js.Object]) = js.native
+    var requestHandler: RequestHandler[Any, Any, HttpHandlerOptions] = js.native
     
     var retryMode: String | Provider[String] = js.native
     
@@ -686,7 +687,7 @@ object distTypesSsoclientMod {
       * Resolved value for input {@link EndpointsInputConfig.useDualstackEndpoint}
       */
     @JSName("useDualstackEndpoint")
-    var useDualstackEndpoint_Original: (Boolean | Provider[Boolean]) & Provider[Boolean] & (js.UndefOr[Boolean | Provider[Boolean]]) = js.native
+    var useDualstackEndpoint_Original: Boolean | Provider[Boolean] = js.native
     
     /**
       * Resolved value for input {@link RegionInputConfig.useFipsEndpoint}
@@ -699,7 +700,7 @@ object distTypesSsoclientMod {
       * Resolved value for input {@link EndpointsInputConfig.useFipsEndpoint}
       */
     @JSName("useFipsEndpoint")
-    var useFipsEndpoint_Original: (Boolean | Provider[Boolean]) & Provider[Boolean] & (js.UndefOr[Boolean | Provider[Boolean]]) = js.native
+    var useFipsEndpoint_Original: Boolean | Provider[Boolean] = js.native
     
     def utf8Decoder(input: String): js.typedarray.Uint8Array = js.native
     @JSName("utf8Decoder")

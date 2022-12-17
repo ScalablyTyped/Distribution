@@ -12,7 +12,7 @@ trait PickImplinvalidPositionPa
   
   var cannotPlace: js.UndefOr[String] = js.undefined
   
-  var invalidPosition: String & js.UndefOr[String]
+  var invalidPosition: String
   
   var method: js.UndefOr[String] = js.undefined
   
@@ -22,7 +22,7 @@ trait PickImplinvalidPositionPa
 }
 object PickImplinvalidPositionPa {
   
-  inline def apply(invalidPosition: String & js.UndefOr[String]): PickImplinvalidPositionPa = {
+  inline def apply(invalidPosition: String): PickImplinvalidPositionPa = {
     val __obj = js.Dynamic.literal(invalidPosition = invalidPosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplinvalidPositionPa]
   }
@@ -33,7 +33,7 @@ object PickImplinvalidPositionPa {
     
     inline def setCannotPlaceUndefined: Self = StObject.set(x, "cannotPlace", js.undefined)
     
-    inline def setInvalidPosition(value: String & js.UndefOr[String]): Self = StObject.set(x, "invalidPosition", value.asInstanceOf[js.Any])
+    inline def setInvalidPosition(value: String): Self = StObject.set(x, "invalidPosition", value.asInstanceOf[js.Any])
     
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

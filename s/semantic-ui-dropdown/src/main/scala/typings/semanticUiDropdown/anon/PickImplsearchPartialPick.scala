@@ -12,7 +12,7 @@ trait PickImplsearchPartialPick
   
   var hide: js.UndefOr[Double] = js.undefined
   
-  var search: Double & js.UndefOr[Double]
+  var search: Double
   
   var show: js.UndefOr[Double] = js.undefined
   
@@ -20,7 +20,7 @@ trait PickImplsearchPartialPick
 }
 object PickImplsearchPartialPick {
   
-  inline def apply(search: Double & js.UndefOr[Double]): PickImplsearchPartialPick = {
+  inline def apply(search: Double): PickImplsearchPartialPick = {
     val __obj = js.Dynamic.literal(search = search.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplsearchPartialPick]
   }
@@ -31,7 +31,7 @@ object PickImplsearchPartialPick {
     
     inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
-    inline def setSearch(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: Double): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
     inline def setShow(value: Double): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     

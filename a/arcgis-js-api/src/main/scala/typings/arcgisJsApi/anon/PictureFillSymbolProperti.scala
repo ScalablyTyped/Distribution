@@ -41,7 +41,7 @@ trait PictureFillSymbolProperti extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol.html#type)
     */
-  var `type`: (js.UndefOr[`simple-fill` | `picture-fill`]) & `picture-fill`
+  var `type`: js.UndefOr[`simple-fill` | `picture-fill`] = js.undefined
   
   /**
     * The URL to the image.
@@ -97,9 +97,8 @@ trait PictureFillSymbolProperti extends StObject {
 }
 object PictureFillSymbolProperti {
   
-  inline def apply(`type`: (js.UndefOr[`simple-fill` | `picture-fill`]) & `picture-fill`): PictureFillSymbolProperti = {
+  inline def apply(): PictureFillSymbolProperti = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PictureFillSymbolProperti]
   }
   
@@ -119,7 +118,9 @@ object PictureFillSymbolProperti {
     
     inline def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
     
-    inline def setType(value: (js.UndefOr[`simple-fill` | `picture-fill`]) & `picture-fill`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `simple-fill` | `picture-fill`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

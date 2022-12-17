@@ -203,8 +203,7 @@ object mod {
   
   @js.native
   trait CssDependency
-    extends StObject
-       with typings.webpack.mod.Dependency
+    extends typings.webpack.mod.Dependency
        with CssModuleDependency
   
   type CssDependencyConstructor = Instantiable3[

@@ -9,11 +9,11 @@ import typings.kafkajs.anon.Duration
 import typings.kafkajs.anon.Error
 import typings.kafkajs.anon.GroupGenerationIdGroupId
 import typings.kafkajs.anon.GroupIdMemberId
-import typings.kafkajs.anon.GroupProtocol
 import typings.kafkajs.anon.IBatchProcessEventduratio
 import typings.kafkajs.anon.MaxVersion
 import typings.kafkajs.anon.MemberId
 import typings.kafkajs.anon.NodeIdNumber
+import typings.kafkajs.anon.NumberOfBatches
 import typings.node.bufferMod.global.Buffer
 import typings.node.netMod.Socket
 import org.scalablytyped.runtime.StObject
@@ -29,7 +29,7 @@ type BrokersFunction = js.Function0[js.Array[String] | js.Promise[js.Array[Strin
 
 type ConnectEvent = InstrumentationEvent[Null]
 
-type ConsumerCommitOffsetsEvent = InstrumentationEvent[MemberId]
+type ConsumerCommitOffsetsEvent = InstrumentationEvent[GroupGenerationIdGroupId]
 
 type ConsumerCrashEvent = InstrumentationEvent[Error]
 
@@ -39,13 +39,13 @@ type ConsumerEachMessagePayload = EachMessagePayload
 
 type ConsumerEndBatchProcessEvent = InstrumentationEvent[IBatchProcessEventduratio]
 
-type ConsumerFetchEvent = InstrumentationEvent[Duration]
+type ConsumerFetchEvent = InstrumentationEvent[NumberOfBatches]
 
 type ConsumerFetchStartEvent = InstrumentationEvent[NodeIdNumber]
 
-type ConsumerGroupJoinEvent = InstrumentationEvent[GroupProtocol]
+type ConsumerGroupJoinEvent = InstrumentationEvent[Duration]
 
-type ConsumerHeartbeatEvent = InstrumentationEvent[GroupGenerationIdGroupId]
+type ConsumerHeartbeatEvent = InstrumentationEvent[MemberId]
 
 type ConsumerRebalancingEvent = InstrumentationEvent[GroupIdMemberId]
 

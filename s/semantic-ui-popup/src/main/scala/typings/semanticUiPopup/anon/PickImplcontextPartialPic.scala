@@ -34,7 +34,7 @@ trait PickImplcontextPartialPic
   
   var content: js.UndefOr[String] = js.undefined
   
-  var context: (String | JQuery) & (js.UndefOr[String | JQuery])
+  var context: String | JQuery
   
   var debug: js.UndefOr[Boolean] = js.undefined
   
@@ -120,7 +120,7 @@ trait PickImplcontextPartialPic
 }
 object PickImplcontextPartialPic {
   
-  inline def apply(context: (String | JQuery) & (js.UndefOr[String | JQuery])): PickImplcontextPartialPic = {
+  inline def apply(context: String | JQuery): PickImplcontextPartialPic = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplcontextPartialPic]
   }
@@ -147,7 +147,7 @@ object PickImplcontextPartialPic {
     
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    inline def setContext(value: (String | JQuery) & (js.UndefOr[String | JQuery])): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: String | JQuery): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     

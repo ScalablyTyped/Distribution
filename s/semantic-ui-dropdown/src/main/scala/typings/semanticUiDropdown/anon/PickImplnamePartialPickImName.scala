@@ -10,7 +10,7 @@ trait PickImplnamePartialPickImName
   extends StObject
      with Param {
   
-  var name: String & js.UndefOr[String]
+  var name: String
   
   var remoteValues: js.UndefOr[String] = js.undefined
   
@@ -20,14 +20,14 @@ trait PickImplnamePartialPickImName
 }
 object PickImplnamePartialPickImName {
   
-  inline def apply(name: String & js.UndefOr[String]): PickImplnamePartialPickImName = {
+  inline def apply(name: String): PickImplnamePartialPickImName = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplnamePartialPickImName]
   }
   
   extension [Self <: PickImplnamePartialPickImName](x: Self) {
     
-    inline def setName(value: String & js.UndefOr[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setRemoteValues(value: String): Self = StObject.set(x, "remoteValues", value.asInstanceOf[js.Any])
     

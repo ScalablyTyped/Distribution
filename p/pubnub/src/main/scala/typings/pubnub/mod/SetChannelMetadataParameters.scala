@@ -1,6 +1,6 @@
 package typings.pubnub.mod
 
-import typings.pubnub.anon.`0`
+import typings.pubnub.anon.CustomFields
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ trait SetChannelMetadataParameters[Custom /* <: ObjectCustom */] extends StObjec
   
   var data: ChannelMetadata[Custom]
   
-  var include: js.UndefOr[`0`] = js.undefined
+  var include: js.UndefOr[CustomFields] = js.undefined
 }
 object SetChannelMetadataParameters {
   
@@ -26,7 +26,7 @@ object SetChannelMetadataParameters {
     
     inline def setData(value: ChannelMetadata[Custom]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setInclude(value: `0`): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    inline def setInclude(value: CustomFields): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
   }

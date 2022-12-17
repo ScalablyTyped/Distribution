@@ -10,7 +10,7 @@ trait PickImplbarPartialPickImp
   extends StObject
      with Param {
   
-  var bar: String & js.UndefOr[String]
+  var bar: String
   
   var label: js.UndefOr[String] = js.undefined
   
@@ -18,14 +18,14 @@ trait PickImplbarPartialPickImp
 }
 object PickImplbarPartialPickImp {
   
-  inline def apply(bar: String & js.UndefOr[String]): PickImplbarPartialPickImp = {
+  inline def apply(bar: String): PickImplbarPartialPickImp = {
     val __obj = js.Dynamic.literal(bar = bar.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplbarPartialPickImp]
   }
   
   extension [Self <: PickImplbarPartialPickImp](x: Self) {
     
-    inline def setBar(value: String & js.UndefOr[String]): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
+    inline def setBar(value: String): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

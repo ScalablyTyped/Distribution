@@ -1,7 +1,7 @@
 package typings.orbitUiReactComponents
 
 import typings.orbitUiReactComponents.anon.InputProps
-import typings.orbitUiReactComponents.anon.`3`
+import typings.orbitUiReactComponents.anon.`0`
 import typings.orbitUiReactComponents.distInputSrcUseGroupInputMod.UseGroupInputProps
 import typings.orbitUiReactComponents.distInputSrcUseGroupInputMod.UseGroupInputReturn
 import typings.orbitUiReactComponents.distInputSrcUseInputContentMod.UseInputIconProps
@@ -33,5 +33,5 @@ object distInputMod {
   inline def useInputIcon(icon: ReactNode): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("useInputIcon")(icon.asInstanceOf[js.Any]).asInstanceOf[Element]
   inline def useInputIcon(icon: ReactNode, props: UseInputIconProps): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("useInputIcon")(icon.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Element]
   
-  inline def wrappedInputPropsAdapter[P /* <: `3` */](param0: P): (Omit[P, className]) & AdaptedWrappedInputProps = ^.asInstanceOf[js.Dynamic].applyDynamic("wrappedInputPropsAdapter")(param0.asInstanceOf[js.Any]).asInstanceOf[(Omit[P, className]) & AdaptedWrappedInputProps]
+  inline def wrappedInputPropsAdapter[P /* <: `0` */](param0: P): (Omit[P, className]) & AdaptedWrappedInputProps = ^.asInstanceOf[js.Dynamic].applyDynamic("wrappedInputPropsAdapter")(param0.asInstanceOf[js.Any]).asInstanceOf[(Omit[P, className]) & AdaptedWrappedInputProps]
 }

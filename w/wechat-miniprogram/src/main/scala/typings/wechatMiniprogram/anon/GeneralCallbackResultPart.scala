@@ -11,13 +11,13 @@ trait GeneralCallbackResultPart extends StObject {
   
   var encryptedData: js.UndefOr[String] = js.undefined
   
-  var errMsg: String & js.UndefOr[String]
+  var errMsg: String
   
   var iv: js.UndefOr[String] = js.undefined
 }
 object GeneralCallbackResultPart {
   
-  inline def apply(errMsg: String & js.UndefOr[String]): GeneralCallbackResultPart = {
+  inline def apply(errMsg: String): GeneralCallbackResultPart = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeneralCallbackResultPart]
   }
@@ -32,7 +32,7 @@ object GeneralCallbackResultPart {
     
     inline def setEncryptedDataUndefined: Self = StObject.set(x, "encryptedData", js.undefined)
     
-    inline def setErrMsg(value: String & js.UndefOr[String]): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
     inline def setIv(value: String): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,6 @@
 package typings.gestalt.mod
 
-import typings.gestalt.anon.EventSyntheticEvent
+import typings.gestalt.anon.`0`
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,9 +14,9 @@ trait CardProps extends StObject {
   
   var image: js.UndefOr[ReactNode] = js.undefined
   
-  var onMouseEnter: js.UndefOr[js.Function1[/* args */ EventSyntheticEvent, Unit]] = js.undefined
+  var onMouseEnter: js.UndefOr[js.Function1[/* args */ `0`, Unit]] = js.undefined
   
-  var onMouseLeave: js.UndefOr[js.Function1[/* args */ EventSyntheticEvent, Unit]] = js.undefined
+  var onMouseLeave: js.UndefOr[js.Function1[/* args */ `0`, Unit]] = js.undefined
 }
 object CardProps {
   
@@ -39,11 +39,11 @@ object CardProps {
     
     inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    inline def setOnMouseEnter(value: /* args */ EventSyntheticEvent => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
+    inline def setOnMouseEnter(value: /* args */ `0` => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
     
     inline def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
     
-    inline def setOnMouseLeave(value: /* args */ EventSyntheticEvent => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
+    inline def setOnMouseLeave(value: /* args */ `0` => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
     
     inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
   }

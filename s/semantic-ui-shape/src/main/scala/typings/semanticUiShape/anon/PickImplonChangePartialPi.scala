@@ -34,7 +34,7 @@ trait PickImplonChangePartialPi
   
   def onChange(): Unit
   @JSName("onChange")
-  var onChange_Original: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+  var onChange_Original: js.ThisFunction0[/* this */ JQuery, Unit]
   
   var performance: js.UndefOr[Boolean] = js.undefined
   
@@ -48,9 +48,7 @@ trait PickImplonChangePartialPi
 }
 object PickImplonChangePartialPi {
   
-  inline def apply(
-    onChange: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-  ): PickImplonChangePartialPi = {
+  inline def apply(onChange: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonChangePartialPi = {
     val __obj = js.Dynamic.literal(onChange = onChange.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonChangePartialPi]
   }
@@ -89,9 +87,7 @@ object PickImplonChangePartialPi {
     
     inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
-    inline def setOnChange(
-      value: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-    ): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
+    inline def setOnChange(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
     
     inline def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
     

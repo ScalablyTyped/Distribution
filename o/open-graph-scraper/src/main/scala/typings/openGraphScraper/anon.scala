@@ -1,7 +1,6 @@
 package typings.openGraphScraper
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.openGraphScraper.mod.OpenGraphImage
 import typings.openGraphScraper.openGraphScraperBooleans.`false`
 import typings.openGraphScraper.openGraphScraperBooleans.`true`
 import org.scalablytyped.runtime.StObject
@@ -222,7 +221,7 @@ object anon {
     
     var ogDeterminer: js.UndefOr[String] = js.undefined
     
-    var ogImage: js.UndefOr[String] & (js.UndefOr[OpenGraphImage | js.Array[OpenGraphImage]])
+    var ogImage: js.UndefOr[String] = js.undefined
     
     var ogImageHeight: js.UndefOr[String] = js.undefined
     
@@ -376,8 +375,8 @@ object anon {
   }
   object OpenGraphPropertiesogImag {
     
-    inline def apply(ogImage: js.UndefOr[String] & (js.UndefOr[OpenGraphImage | js.Array[OpenGraphImage]])): OpenGraphPropertiesogImag = {
-      val __obj = js.Dynamic.literal(ogImage = ogImage.asInstanceOf[js.Any], success = true)
+    inline def apply(): OpenGraphPropertiesogImag = {
+      val __obj = js.Dynamic.literal(success = true)
       __obj.asInstanceOf[OpenGraphPropertiesogImag]
     }
     
@@ -747,7 +746,7 @@ object anon {
       
       inline def setOgDeterminerUndefined: Self = StObject.set(x, "ogDeterminer", js.undefined)
       
-      inline def setOgImage(value: js.UndefOr[String] & (js.UndefOr[OpenGraphImage | js.Array[OpenGraphImage]])): Self = StObject.set(x, "ogImage", value.asInstanceOf[js.Any])
+      inline def setOgImage(value: String): Self = StObject.set(x, "ogImage", value.asInstanceOf[js.Any])
       
       inline def setOgImageHeight(value: String): Self = StObject.set(x, "ogImageHeight", value.asInstanceOf[js.Any])
       
@@ -764,6 +763,8 @@ object anon {
       inline def setOgImageURL(value: String): Self = StObject.set(x, "ogImageURL", value.asInstanceOf[js.Any])
       
       inline def setOgImageURLUndefined: Self = StObject.set(x, "ogImageURL", js.undefined)
+      
+      inline def setOgImageUndefined: Self = StObject.set(x, "ogImage", js.undefined)
       
       inline def setOgImageWidth(value: String): Self = StObject.set(x, "ogImageWidth", value.asInstanceOf[js.Any])
       

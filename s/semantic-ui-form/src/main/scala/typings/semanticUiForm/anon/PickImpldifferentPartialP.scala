@@ -20,7 +20,7 @@ trait PickImpldifferentPartialP
   
   var decimal: js.UndefOr[String] = js.undefined
   
-  var different: String & js.UndefOr[String]
+  var different: String
   
   var doesntContain: js.UndefOr[String] = js.undefined
   
@@ -64,7 +64,7 @@ trait PickImpldifferentPartialP
 }
 object PickImpldifferentPartialP {
   
-  inline def apply(different: String & js.UndefOr[String]): PickImpldifferentPartialP = {
+  inline def apply(different: String): PickImpldifferentPartialP = {
     val __obj = js.Dynamic.literal(different = different.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldifferentPartialP]
   }
@@ -91,7 +91,7 @@ object PickImpldifferentPartialP {
     
     inline def setDecimalUndefined: Self = StObject.set(x, "decimal", js.undefined)
     
-    inline def setDifferent(value: String & js.UndefOr[String]): Self = StObject.set(x, "different", value.asInstanceOf[js.Any])
+    inline def setDifferent(value: String): Self = StObject.set(x, "different", value.asInstanceOf[js.Any])
     
     inline def setDoesntContain(value: String): Self = StObject.set(x, "doesntContain", value.asInstanceOf[js.Any])
     

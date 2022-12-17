@@ -22,8 +22,7 @@ object mod extends Shortcut {
   @JSImport("@hapi/nes", "Client")
   @js.native
   open class ClientCls protected ()
-    extends StObject
-       with typings.hapiNes.libClientMod.Client {
+    extends typings.hapiNes.libClientMod.Client {
     def this(url: String) = this()
     def this(url: String, options: typings.hapiNes.libClientMod.Client.ClientOptions) = this()
   }

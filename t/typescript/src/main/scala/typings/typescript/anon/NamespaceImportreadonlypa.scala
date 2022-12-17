@@ -100,7 +100,7 @@ trait NamespaceImportreadonlypa
   
   val name: Identifier = js.native
   
-  val parent: ImportClause & ImportClausereadonlyisTypDeclarationBrand = js.native
+  val parent: ImportClause = js.native
   
   val pos: Double = js.native
 }

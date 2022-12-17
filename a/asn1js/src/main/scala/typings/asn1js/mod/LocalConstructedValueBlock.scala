@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 trait LocalConstructedValueBlock
-  extends StObject
-     with ValueBlock
+  extends ValueBlock
      with ILocalConstructedValueBlock {
   
   @JSName("value")

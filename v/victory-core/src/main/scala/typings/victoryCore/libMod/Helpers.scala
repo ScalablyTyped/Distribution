@@ -2,9 +2,9 @@ package typings.victoryCore.libMod
 
 import typings.react.mod.ReactNode
 import typings.std.Omit
-import typings.victoryCore.anon.Bottom
+import typings.victoryCore.anon.Left
 import typings.victoryCore.anon.X0
-import typings.victoryCore.anon.Y
+import typings.victoryCore.anon.XY
 import typings.victoryCore.libTypesCallbacksMod.CallbackArgs
 import typings.victoryCore.libTypesPropTypesMod.ValueOrAccessor
 import org.scalablytyped.runtime.StObject
@@ -29,12 +29,12 @@ object Helpers {
   
   inline def getDefaultStyles(props: Any, role: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultStyles")(props.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def getPadding(props: Any): Bottom = ^.asInstanceOf[js.Dynamic].applyDynamic("getPadding")(props.asInstanceOf[js.Any]).asInstanceOf[Bottom]
-  inline def getPadding(props: Any, name: String): Bottom = (^.asInstanceOf[js.Dynamic].applyDynamic("getPadding")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Bottom]
+  inline def getPadding(props: Any): Left = ^.asInstanceOf[js.Dynamic].applyDynamic("getPadding")(props.asInstanceOf[js.Any]).asInstanceOf[Left]
+  inline def getPadding(props: Any, name: String): Left = (^.asInstanceOf[js.Dynamic].applyDynamic("getPadding")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Left]
   
   inline def getPoint(datum: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getPoint")(datum.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def getPolarOrigin(props: Any): Y = ^.asInstanceOf[js.Dynamic].applyDynamic("getPolarOrigin")(props.asInstanceOf[js.Any]).asInstanceOf[Y]
+  inline def getPolarOrigin(props: Any): XY = ^.asInstanceOf[js.Dynamic].applyDynamic("getPolarOrigin")(props.asInstanceOf[js.Any]).asInstanceOf[XY]
   
   inline def getRadius(props: Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getRadius")(props.asInstanceOf[js.Any]).asInstanceOf[Double]
   

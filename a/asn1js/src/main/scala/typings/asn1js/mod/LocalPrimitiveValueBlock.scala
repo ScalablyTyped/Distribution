@@ -5,9 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocalPrimitiveValueBlock
-  extends StObject
-     with ValueBlock {
+trait LocalPrimitiveValueBlock extends ValueBlock {
   
   /**
     * @deprecated since version 3.0.0

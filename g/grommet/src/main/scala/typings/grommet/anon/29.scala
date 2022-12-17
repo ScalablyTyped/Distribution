@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `29` extends StObject {
   
-  var gap: js.UndefOr[Row] = js.undefined
+  var column: js.UndefOr[`28`] = js.undefined
 }
 object `29` {
   
@@ -17,8 +17,8 @@ object `29` {
   
   extension [Self <: `29`](x: Self) {
     
-    inline def setGap(value: Row): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
+    inline def setColumn(value: `28`): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    inline def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
+    inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
   }
 }

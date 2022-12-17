@@ -13,13 +13,13 @@ trait PickImpltransitionPartialDuration
   
   var duration: js.UndefOr[Double] = js.undefined
   
-  var transition: String & js.UndefOr[String]
+  var transition: String
   
   var variation: js.UndefOr[`false` | String] = js.undefined
 }
 object PickImpltransitionPartialDuration {
   
-  inline def apply(transition: String & js.UndefOr[String]): PickImpltransitionPartialDuration = {
+  inline def apply(transition: String): PickImpltransitionPartialDuration = {
     val __obj = js.Dynamic.literal(transition = transition.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpltransitionPartialDuration]
   }
@@ -30,7 +30,7 @@ object PickImpltransitionPartialDuration {
     
     inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    inline def setTransition(value: String & js.UndefOr[String]): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+    inline def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
     inline def setVariation(value: `false` | String): Self = StObject.set(x, "variation", value.asInstanceOf[js.Any])
     

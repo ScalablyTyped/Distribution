@@ -143,11 +143,11 @@ trait PickImplverbosePartialPic
   
   var urlData: js.UndefOr[Any | `false`] = js.undefined
   
-  var verbose: Boolean & js.UndefOr[Boolean]
+  var verbose: Boolean
 }
 object PickImplverbosePartialPic {
   
-  inline def apply(verbose: Boolean & js.UndefOr[Boolean]): PickImplverbosePartialPic = {
+  inline def apply(verbose: Boolean): PickImplverbosePartialPic = {
     val __obj = js.Dynamic.literal(verbose = verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplverbosePartialPic]
   }
@@ -342,6 +342,6 @@ object PickImplverbosePartialPic {
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    inline def setVerbose(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+    inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
   }
 }

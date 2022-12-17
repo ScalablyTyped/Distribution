@@ -40,11 +40,11 @@ trait TypeofutilBase64 extends StObject {
   var Long: Constructor[typings.protobufjs.mod.Long] = js.native
   
   /** Helper class for working with the low and high bits of a 64 bit value. */
-  var LongBits: (Instantiable2[
+  var LongBits: Instantiable2[
     /* lo */ Double, 
     /* hi */ Double, 
     typings.googleGax.mod.protobufMinimal.util.LongBits
-  ]) & TypeofLongBits = js.native
+  ] = js.native
   
   /** Error subclass indicating a protocol specifc error. */
   var ProtocolError: Instantiable1[

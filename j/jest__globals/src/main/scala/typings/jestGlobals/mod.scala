@@ -1,8 +1,10 @@
 package typings.jestGlobals
 
+import org.scalablytyped.runtime.Shortcut
+import typings.jestEnvironment.mod.Jest
 import typings.jestExpect.mod.JestExpect_
 import typings.jestGlobals.anon.FnCall
-import typings.jestGlobals.anon.FnCallTestNameFnTimeout
+import typings.jestGlobals.anon.FnCallFnTimeout
 import typings.jestMock.mod.ClassLike
 import typings.jestMock.mod.FunctionLike
 import typings.jestMock.mod.Mocked_
@@ -22,19 +24,19 @@ object mod {
   
   @JSImport("@jest/globals", "afterAll")
   @js.native
-  val afterAll: HookBase & FnCall = js.native
+  val afterAll: HookBase & FnCallFnTimeout = js.native
   
   @JSImport("@jest/globals", "afterEach")
   @js.native
-  val afterEach: HookBase & FnCall = js.native
+  val afterEach: HookBase & FnCallFnTimeout = js.native
   
   @JSImport("@jest/globals", "beforeAll")
   @js.native
-  val beforeAll: HookBase & FnCall = js.native
+  val beforeAll: HookBase & FnCallFnTimeout = js.native
   
   @JSImport("@jest/globals", "beforeEach")
   @js.native
-  val beforeEach: HookBase & FnCall = js.native
+  val beforeEach: HookBase & FnCallFnTimeout = js.native
   
   @JSImport("@jest/globals", "describe")
   @js.native
@@ -50,29 +52,17 @@ object mod {
   
   @JSImport("@jest/globals", "fit")
   @js.native
-  val fit: ItBaseconcurrentItConcurr & FnCallTestNameFnTimeout = js.native
+  val fit: ItBaseconcurrentItConcurr & FnCall = js.native
   
   @JSImport("@jest/globals", "it")
   @js.native
-  val it: ItConcurrent & FnCallTestNameFnTimeout = js.native
+  val it: ItConcurrent & FnCall = js.native
   
-  @JSImport("@jest/globals", "test")
-  @js.native
-  val test: ItConcurrent & FnCallTestNameFnTimeout = js.native
-  
-  @JSImport("@jest/globals", "xdescribe")
-  @js.native
-  val xdescribe: DescribeBase & (js.Function2[/* blockName */ BlockNameLike, /* blockFn */ BlockFn, Unit]) = js.native
-  
-  @JSImport("@jest/globals", "xit")
-  @js.native
-  val xit: ItBase & FnCallTestNameFnTimeout = js.native
-  
-  @JSImport("@jest/globals", "xtest")
-  @js.native
-  val xtest: ItBase & FnCallTestNameFnTimeout = js.native
-  
-  object jest {
+  object jest extends Shortcut {
+    
+    @JSImport("@jest/globals", "jest")
+    @js.native
+    val ^ : Jest = js.native
     
     /**
       * Constructs the type of a mock function, e.g. the return type of `jest.fn()`.
@@ -123,5 +113,26 @@ object mod {
       * Constructs the type of a spied setter.
       */
     type SpiedSetter[T] = typings.jestMock.mod.SpiedSetter[T]
+    
+    type _To = Jest
+    
+    /* This means you don't have to write `^`, but can instead just say `jest.foo` */
+    override def _to: Jest = ^
   }
+  
+  @JSImport("@jest/globals", "test")
+  @js.native
+  val test: ItConcurrent & FnCall = js.native
+  
+  @JSImport("@jest/globals", "xdescribe")
+  @js.native
+  val xdescribe: DescribeBase & (js.Function2[/* blockName */ BlockNameLike, /* blockFn */ BlockFn, Unit]) = js.native
+  
+  @JSImport("@jest/globals", "xit")
+  @js.native
+  val xit: ItBase & FnCall = js.native
+  
+  @JSImport("@jest/globals", "xtest")
+  @js.native
+  val xtest: ItBase & FnCall = js.native
 }

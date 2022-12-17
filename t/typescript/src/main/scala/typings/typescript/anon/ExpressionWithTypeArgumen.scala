@@ -1,12 +1,10 @@
 package typings.typescript.anon
 
-import typings.typescript.mod.Identifier
 import typings.typescript.mod.LeftHandSideExpression
 import typings.typescript.mod.ModifierLike
 import typings.typescript.mod.Node
 import typings.typescript.mod.NodeArray
 import typings.typescript.mod.NodeFlags
-import typings.typescript.mod.PropertyAccessEntityNameExpression
 import typings.typescript.mod.SourceFile
 import typings.typescript.mod.SourceFileLike
 import typings.typescript.mod.SyntaxKind.ExpressionWithTypeArguments
@@ -45,7 +43,7 @@ trait ExpressionWithTypeArgumen extends StObject {
   
   val end: Double = js.native
   
-  val expression: LeftHandSideExpression & (Identifier | PropertyAccessEntityNameExpression) = js.native
+  val expression: LeftHandSideExpression = js.native
   
   val flags: NodeFlags = js.native
   

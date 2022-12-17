@@ -12,11 +12,11 @@ trait PickImplscrollingPartialP
   
   var active: js.UndefOr[String] = js.undefined
   
-  var scrolling: String & js.UndefOr[String]
+  var scrolling: String
 }
 object PickImplscrollingPartialP {
   
-  inline def apply(scrolling: String & js.UndefOr[String]): PickImplscrollingPartialP = {
+  inline def apply(scrolling: String): PickImplscrollingPartialP = {
     val __obj = js.Dynamic.literal(scrolling = scrolling.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplscrollingPartialP]
   }
@@ -27,6 +27,6 @@ object PickImplscrollingPartialP {
     
     inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    inline def setScrolling(value: String & js.UndefOr[String]): Self = StObject.set(x, "scrolling", value.asInstanceOf[js.Any])
+    inline def setScrolling(value: String): Self = StObject.set(x, "scrolling", value.asInstanceOf[js.Any])
   }
 }

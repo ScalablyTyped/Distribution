@@ -40,7 +40,7 @@ trait PickImpllengthPartialPick
   
   var isExactly: js.UndefOr[String] = js.undefined
   
-  var length: String & js.UndefOr[String]
+  var length: String
   
   var `match`: js.UndefOr[String] = js.undefined
   
@@ -64,7 +64,7 @@ trait PickImpllengthPartialPick
 }
 object PickImpllengthPartialPick {
   
-  inline def apply(length: String & js.UndefOr[String]): PickImpllengthPartialPick = {
+  inline def apply(length: String): PickImpllengthPartialPick = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpllengthPartialPick]
   }
@@ -131,7 +131,7 @@ object PickImpllengthPartialPick {
     
     inline def setIsUndefined: Self = StObject.set(x, "is", js.undefined)
     
-    inline def setLength(value: String & js.UndefOr[String]): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: String): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     inline def setMatch(value: String): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     

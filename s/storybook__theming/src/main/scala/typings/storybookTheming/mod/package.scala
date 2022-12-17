@@ -43,7 +43,7 @@ import typings.storybookTheming.`distTs3Dot9Modules@emotionCacheTypesIndexMod`.O
 import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModules@emotionSerializeTypesIndexMod`.CSSInterpolation
 import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModules@emotionSerializeTypesIndexMod`.Keyframes
 import typings.storybookTheming.`distTs3Dot9Modules@emotionReactTypesIndexMod`.ClassNamesProps
-import typings.storybookTheming.anon.Color
+import typings.storybookTheming.anon.Background
 import typings.storybookTheming.anon.Styles
 import typings.storybookTheming.anon.Typography
 import typings.storybookTheming.mod.^
@@ -72,7 +72,7 @@ inline def create(vars: ThemeVars, rest: Rest): ThemeVars = (^.asInstanceOf[js.D
 
 inline def createCache(options: Options): EmotionCache = ^.asInstanceOf[js.Dynamic].applyDynamic("createCache")(options.asInstanceOf[js.Any]).asInstanceOf[EmotionCache]
 
-inline def createGlobal(param0: Color): Return = ^.asInstanceOf[js.Dynamic].applyDynamic("createGlobal")(param0.asInstanceOf[js.Any]).asInstanceOf[Return]
+inline def createGlobal(param0: Background): Return = ^.asInstanceOf[js.Dynamic].applyDynamic("createGlobal")(param0.asInstanceOf[js.Any]).asInstanceOf[Return]
 
 inline def createReset(param0: Typography): Return = ^.asInstanceOf[js.Dynamic].applyDynamic("createReset")(param0.asInstanceOf[js.Any]).asInstanceOf[Return]
 

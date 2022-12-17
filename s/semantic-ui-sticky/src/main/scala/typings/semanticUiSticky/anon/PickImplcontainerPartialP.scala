@@ -10,7 +10,7 @@ trait PickImplcontainerPartialP
   extends StObject
      with Param {
   
-  var container: String & js.UndefOr[String]
+  var container: String
   
   var elementSize: js.UndefOr[String] = js.undefined
   
@@ -22,14 +22,14 @@ trait PickImplcontainerPartialP
 }
 object PickImplcontainerPartialP {
   
-  inline def apply(container: String & js.UndefOr[String]): PickImplcontainerPartialP = {
+  inline def apply(container: String): PickImplcontainerPartialP = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplcontainerPartialP]
   }
   
   extension [Self <: PickImplcontainerPartialP](x: Self) {
     
-    inline def setContainer(value: String & js.UndefOr[String]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setElementSize(value: String): Self = StObject.set(x, "elementSize", value.asInstanceOf[js.Any])
     

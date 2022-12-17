@@ -16,7 +16,7 @@ object anon {
       * likely, you want `utf-8`, so setting encoding to `true` will decode as
       * `utf-8`. You can use any type of encoding supported by `iconv-lite`.
       */
-    var encoding: (js.UndefOr[Encoding | Null]) & Encoding
+    var encoding: js.UndefOr[Encoding | Null] = js.undefined
     
     /**
       * The expected length of the stream.
@@ -31,14 +31,18 @@ object anon {
   }
   object OptionsencodingEncoding {
     
-    inline def apply(encoding: (js.UndefOr[Encoding | Null]) & Encoding): OptionsencodingEncoding = {
-      val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
+    inline def apply(): OptionsencodingEncoding = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionsencodingEncoding]
     }
     
     extension [Self <: OptionsencodingEncoding](x: Self) {
       
-      inline def setEncoding(value: (js.UndefOr[Encoding | Null]) & Encoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: Encoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      
+      inline def setEncodingNull: Self = StObject.set(x, "encoding", null)
+      
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
       inline def setLength(value: Double | String): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       

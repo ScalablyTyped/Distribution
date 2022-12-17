@@ -1,6 +1,5 @@
 package typings.md5
 
-import typings.md5.md5Booleans.`true`
 import typings.md5.md5Strings.binary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +10,7 @@ object anon {
   /* Inlined md5.md5.Options & {  asBytes :true} */
   trait OptionsasBytestrue extends StObject {
     
-    var asBytes: js.UndefOr[Boolean] & `true`
+    var asBytes: js.UndefOr[Boolean] = js.undefined
     
     var asString: js.UndefOr[Boolean] = js.undefined
     
@@ -19,14 +18,16 @@ object anon {
   }
   object OptionsasBytestrue {
     
-    inline def apply(asBytes: js.UndefOr[Boolean] & `true`): OptionsasBytestrue = {
-      val __obj = js.Dynamic.literal(asBytes = asBytes.asInstanceOf[js.Any])
+    inline def apply(): OptionsasBytestrue = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionsasBytestrue]
     }
     
     extension [Self <: OptionsasBytestrue](x: Self) {
       
-      inline def setAsBytes(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "asBytes", value.asInstanceOf[js.Any])
+      inline def setAsBytes(value: Boolean): Self = StObject.set(x, "asBytes", value.asInstanceOf[js.Any])
+      
+      inline def setAsBytesUndefined: Self = StObject.set(x, "asBytes", js.undefined)
       
       inline def setAsString(value: Boolean): Self = StObject.set(x, "asString", value.asInstanceOf[js.Any])
       

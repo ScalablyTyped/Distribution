@@ -9,12 +9,12 @@ trait State extends StObject {
   
   var node: typings.estree.mod.Node
   
-  var state: Scope
+  var state: Scope | Null
 }
 object State {
   
-  inline def apply(node: typings.estree.mod.Node, state: Scope): State = {
-    val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+  inline def apply(node: typings.estree.mod.Node): State = {
+    val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], state = null)
     __obj.asInstanceOf[State]
   }
   
@@ -23,5 +23,7 @@ object State {
     inline def setNode(value: typings.estree.mod.Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     inline def setState(value: Scope): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateNull: Self = StObject.set(x, "state", null)
   }
 }

@@ -21,7 +21,7 @@ trait PickImplautoSuccessPartia
   extends StObject
      with Param {
   
-  var autoSuccess: Boolean & js.UndefOr[Boolean]
+  var autoSuccess: Boolean
   
   var className: js.UndefOr[ClassNameSettings] = js.undefined
   
@@ -81,14 +81,14 @@ trait PickImplautoSuccessPartia
 }
 object PickImplautoSuccessPartia {
   
-  inline def apply(autoSuccess: Boolean & js.UndefOr[Boolean]): PickImplautoSuccessPartia = {
+  inline def apply(autoSuccess: Boolean): PickImplautoSuccessPartia = {
     val __obj = js.Dynamic.literal(autoSuccess = autoSuccess.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplautoSuccessPartia]
   }
   
   extension [Self <: PickImplautoSuccessPartia](x: Self) {
     
-    inline def setAutoSuccess(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "autoSuccess", value.asInstanceOf[js.Any])
+    inline def setAutoSuccess(value: Boolean): Self = StObject.set(x, "autoSuccess", value.asInstanceOf[js.Any])
     
     inline def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

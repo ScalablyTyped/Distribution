@@ -271,7 +271,7 @@ object mod {
     
     var caseSensitive: js.UndefOr[Boolean] = js.undefined
     
-    var children: (js.UndefOr[ReactNode | (js.Function1[/* props */ IsActive, ReactNode])]) & js.UndefOr[ReactNode]
+    var children: js.UndefOr[ReactNode | (js.Function1[/* props */ IsActive, ReactNode])] = js.undefined
     
     var className: js.UndefOr[String | (js.Function1[/* props */ IsActive, js.UndefOr[String]])] = js.undefined
     
@@ -555,11 +555,8 @@ object mod {
   }
   object NavHashLinkProps {
     
-    inline def apply(
-      children: (js.UndefOr[ReactNode | (js.Function1[/* props */ IsActive, ReactNode])]) & js.UndefOr[ReactNode],
-      to: To
-    ): NavHashLinkProps = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
+    inline def apply(to: To): NavHashLinkProps = {
+      val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[NavHashLinkProps]
     }
     
@@ -783,9 +780,11 @@ object mod {
       
       inline def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
       
-      inline def setChildren(
-        value: (js.UndefOr[ReactNode | (js.Function1[/* props */ IsActive, ReactNode])]) & js.UndefOr[ReactNode]
-      ): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode | (js.Function1[/* props */ IsActive, ReactNode])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenFunction1(value: /* props */ IsActive => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String | (js.Function1[/* props */ IsActive, js.UndefOr[String]])): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

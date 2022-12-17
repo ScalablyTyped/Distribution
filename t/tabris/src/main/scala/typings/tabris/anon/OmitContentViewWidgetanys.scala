@@ -116,10 +116,10 @@ trait OmitContentViewWidgetanys[ChildType /* <: AnyWidget */] extends StObject {
   @JSName("_addChild")
   var _addChild_Original: js.Function2[/* child */ Widget[Any], /* index */ js.UndefOr[Double], Unit]
   
-  def _apply[Target](options: Mode[Target], rules: RuleSet[ContentView_[ChildType]]): ContentView_[ChildType]
+  def _apply[Target](options: `14`[Target], rules: RuleSet[ContentView_[ChildType]]): ContentView_[ChildType]
   @JSName("_apply")
   var _apply_Original: js.Function2[
-    /* options */ Mode[ContentView_[ChildType]], 
+    /* options */ `14`[ContentView_[ChildType]], 
     /* rules */ RuleSet[ContentView_[ChildType]], 
     ContentView_[ChildType]
   ]
@@ -298,10 +298,10 @@ trait OmitContentViewWidgetanys[ChildType /* <: AnyWidget */] extends StObject {
   var append_Original: js.Function1[/* repeated */ Widget[Any], ContentView_[ChildType]]
   
   @JSName("apply")
-  def apply[Target](options: Mode[Target], rules: RuleSet[ContentView_[ChildType]]): ContentView_[ChildType]
+  def apply[Target](options: `14`[Target], rules: RuleSet[ContentView_[ChildType]]): ContentView_[ChildType]
   @JSName("apply")
   var apply_Original: js.Function2[
-    /* options */ Mode[ContentView_[ChildType]], 
+    /* options */ `14`[ContentView_[ChildType]], 
     /* rules */ RuleSet[ContentView_[ChildType]], 
     ContentView_[ChildType]
   ]
@@ -583,7 +583,7 @@ object OmitContentViewWidgetanys {
     $trigger: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Unit,
     _acceptChild: /* child */ Widget[Any] => Boolean,
     _addChild: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit,
-    _apply: (/* options */ Mode[ContentView_[ChildType]], /* rules */ RuleSet[ContentView_[ChildType]]) => ContentView_[ChildType],
+    _apply: (/* options */ `14`[ContentView_[ChildType]], /* rules */ RuleSet[ContentView_[ChildType]]) => ContentView_[ChildType],
     _checkDisposed: () => Unit,
     _checkLayout: /* value */ typings.tabris.mod.Layout => Unit,
     _children: /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]] => WidgetCollection[Widget[Any]],
@@ -624,7 +624,7 @@ object OmitContentViewWidgetanys {
     animate: (/* properties */ Opacity, /* options */ AnimationOptions) => js.Promise[Unit],
     append: /* repeated */ Widget[Any] => ContentView_[ChildType],
     appendTo: /* parent */ Composite[Widget[Any]] => ContentView_[ChildType],
-    apply: (/* options */ Mode[ContentView_[ChildType]], /* rules */ RuleSet[ContentView_[ChildType]]) => ContentView_[ChildType],
+    apply: (/* options */ `14`[ContentView_[ChildType]], /* rules */ RuleSet[ContentView_[ChildType]]) => ContentView_[ChildType],
     baseline: SiblingReferenceValue | auto | `true`,
     bottom: ConstraintValue,
     bounds: Bounds,
@@ -745,7 +745,7 @@ object OmitContentViewWidgetanys {
     inline def setAppendTo(value: /* parent */ Composite[Widget[Any]] => ContentView_[ChildType]): Self = StObject.set(x, "appendTo", js.Any.fromFunction1(value))
     
     inline def setApply(
-      value: (/* options */ Mode[ContentView_[ChildType]], /* rules */ RuleSet[ContentView_[ChildType]]) => ContentView_[ChildType]
+      value: (/* options */ `14`[ContentView_[ChildType]], /* rules */ RuleSet[ContentView_[ChildType]]) => ContentView_[ChildType]
     ): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
     
     inline def setBackground(value: LinearGradientValue | ColorValue | ImageValue): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
@@ -979,7 +979,7 @@ object OmitContentViewWidgetanys {
     inline def set_addChild(value: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "_addChild", js.Any.fromFunction2(value))
     
     inline def set_apply(
-      value: (/* options */ Mode[ContentView_[ChildType]], /* rules */ RuleSet[ContentView_[ChildType]]) => ContentView_[ChildType]
+      value: (/* options */ `14`[ContentView_[ChildType]], /* rules */ RuleSet[ContentView_[ChildType]]) => ContentView_[ChildType]
     ): Self = StObject.set(x, "_apply", js.Any.fromFunction2(value))
     
     inline def set_checkDisposed(value: () => Unit): Self = StObject.set(x, "_checkDisposed", js.Any.fromFunction0(value))

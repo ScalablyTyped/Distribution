@@ -38,7 +38,7 @@ trait PickImplisExactlyPartialP
   
   var is: js.UndefOr[String] = js.undefined
   
-  var isExactly: String & js.UndefOr[String]
+  var isExactly: String
   
   var length: js.UndefOr[String] = js.undefined
   
@@ -64,7 +64,7 @@ trait PickImplisExactlyPartialP
 }
 object PickImplisExactlyPartialP {
   
-  inline def apply(isExactly: String & js.UndefOr[String]): PickImplisExactlyPartialP = {
+  inline def apply(isExactly: String): PickImplisExactlyPartialP = {
     val __obj = js.Dynamic.literal(isExactly = isExactly.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplisExactlyPartialP]
   }
@@ -125,7 +125,7 @@ object PickImplisExactlyPartialP {
     
     inline def setIs(value: String): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
     
-    inline def setIsExactly(value: String & js.UndefOr[String]): Self = StObject.set(x, "isExactly", value.asInstanceOf[js.Any])
+    inline def setIsExactly(value: String): Self = StObject.set(x, "isExactly", value.asInstanceOf[js.Any])
     
     inline def setIsUndefined: Self = StObject.set(x, "is", js.undefined)
     

@@ -12,7 +12,7 @@ trait PickImpldimmablePartialPiActive
   
   var active: js.UndefOr[String] = js.undefined
   
-  var dimmable: String & js.UndefOr[String]
+  var dimmable: String
   
   var dimmed: js.UndefOr[String] = js.undefined
   
@@ -28,7 +28,7 @@ trait PickImpldimmablePartialPiActive
 }
 object PickImpldimmablePartialPiActive {
   
-  inline def apply(dimmable: String & js.UndefOr[String]): PickImpldimmablePartialPiActive = {
+  inline def apply(dimmable: String): PickImpldimmablePartialPiActive = {
     val __obj = js.Dynamic.literal(dimmable = dimmable.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldimmablePartialPiActive]
   }
@@ -39,7 +39,7 @@ object PickImpldimmablePartialPiActive {
     
     inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    inline def setDimmable(value: String & js.UndefOr[String]): Self = StObject.set(x, "dimmable", value.asInstanceOf[js.Any])
+    inline def setDimmable(value: String): Self = StObject.set(x, "dimmable", value.asInstanceOf[js.Any])
     
     inline def setDimmed(value: String): Self = StObject.set(x, "dimmed", value.asInstanceOf[js.Any])
     

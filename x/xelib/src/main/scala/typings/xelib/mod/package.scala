@@ -9,18 +9,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 inline def wrapper: XELib = ^.asInstanceOf[js.Dynamic].selectDynamic("wrapper").asInstanceOf[XELib]
 
-type ContainerHandle = Handle & js.Object
+type ContainerHandle = Handle
 
-type ElementHandle = Handle & js.Object
+type ElementHandle = Handle
 
-type FileHandle = ContainerHandle & js.Object
+type FileHandle = ContainerHandle
 
 type Handle = Double
 
 type I[T] = T
 
-type NodeTreeHandle = Handle & js.Object
+type NodeTreeHandle = Handle
 
-type RecordHandle = ElementHandle & js.Object
+type RecordHandle = ElementHandle
 
 type Zeroable[H /* <: Handle */] = H | `0`

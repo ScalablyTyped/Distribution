@@ -96,7 +96,7 @@ trait PickImplpreferPartialPick
   
   var position: js.UndefOr[String] = js.undefined
   
-  var prefer: (adjacent | opposite) & (js.UndefOr[adjacent | opposite])
+  var prefer: adjacent | opposite
   
   var preserve: js.UndefOr[Boolean] = js.undefined
   
@@ -120,7 +120,7 @@ trait PickImplpreferPartialPick
 }
 object PickImplpreferPartialPick {
   
-  inline def apply(prefer: (adjacent | opposite) & (js.UndefOr[adjacent | opposite])): PickImplpreferPartialPick = {
+  inline def apply(prefer: adjacent | opposite): PickImplpreferPartialPick = {
     val __obj = js.Dynamic.literal(prefer = prefer.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplpreferPartialPick]
   }
@@ -271,7 +271,7 @@ object PickImplpreferPartialPick {
     
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    inline def setPrefer(value: (adjacent | opposite) & (js.UndefOr[adjacent | opposite])): Self = StObject.set(x, "prefer", value.asInstanceOf[js.Any])
+    inline def setPrefer(value: adjacent | opposite): Self = StObject.set(x, "prefer", value.asInstanceOf[js.Any])
     
     inline def setPreserve(value: Boolean): Self = StObject.set(x, "preserve", value.asInstanceOf[js.Any])
     

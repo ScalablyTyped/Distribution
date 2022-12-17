@@ -16,17 +16,17 @@ trait Typeofcanvas extends StObject {
   
   var CanvasTexture: Instantiable1[/* image */ HTMLImageElement, typings.phaser.spine.canvas.CanvasTexture]
   
-  var SkeletonRenderer: (Instantiable1[
+  var SkeletonRenderer: Instantiable1[
     /* context */ CanvasRenderingContext2D, 
     typings.phaser.spine.canvas.SkeletonRenderer
-  ]) & TypeofSkeletonRenderer
+  ]
 }
 object Typeofcanvas {
   
   inline def apply(
     AssetManager: Instantiable1[/* pathPrefix */ js.UndefOr[String], AssetManager],
     CanvasTexture: Instantiable1[/* image */ HTMLImageElement, CanvasTexture],
-    SkeletonRenderer: (Instantiable1[/* context */ CanvasRenderingContext2D, SkeletonRenderer]) & TypeofSkeletonRenderer
+    SkeletonRenderer: Instantiable1[/* context */ CanvasRenderingContext2D, SkeletonRenderer]
   ): Typeofcanvas = {
     val __obj = js.Dynamic.literal(AssetManager = AssetManager.asInstanceOf[js.Any], CanvasTexture = CanvasTexture.asInstanceOf[js.Any], SkeletonRenderer = SkeletonRenderer.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofcanvas]
@@ -38,8 +38,6 @@ object Typeofcanvas {
     
     inline def setCanvasTexture(value: Instantiable1[/* image */ HTMLImageElement, CanvasTexture]): Self = StObject.set(x, "CanvasTexture", value.asInstanceOf[js.Any])
     
-    inline def setSkeletonRenderer(
-      value: (Instantiable1[/* context */ CanvasRenderingContext2D, SkeletonRenderer]) & TypeofSkeletonRenderer
-    ): Self = StObject.set(x, "SkeletonRenderer", value.asInstanceOf[js.Any])
+    inline def setSkeletonRenderer(value: Instantiable1[/* context */ CanvasRenderingContext2D, SkeletonRenderer]): Self = StObject.set(x, "SkeletonRenderer", value.asInstanceOf[js.Any])
   }
 }

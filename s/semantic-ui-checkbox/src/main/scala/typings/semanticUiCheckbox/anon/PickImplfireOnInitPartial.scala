@@ -30,7 +30,7 @@ trait PickImplfireOnInitPartial
   
   var error: js.UndefOr[ErrorSettings] = js.undefined
   
-  var fireOnInit: Boolean & js.UndefOr[Boolean]
+  var fireOnInit: Boolean
   
   var name: js.UndefOr[String] = js.undefined
   
@@ -66,7 +66,7 @@ trait PickImplfireOnInitPartial
 }
 object PickImplfireOnInitPartial {
   
-  inline def apply(fireOnInit: Boolean & js.UndefOr[Boolean]): PickImplfireOnInitPartial = {
+  inline def apply(fireOnInit: Boolean): PickImplfireOnInitPartial = {
     val __obj = js.Dynamic.literal(fireOnInit = fireOnInit.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplfireOnInitPartial]
   }
@@ -101,7 +101,7 @@ object PickImplfireOnInitPartial {
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    inline def setFireOnInit(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "fireOnInit", value.asInstanceOf[js.Any])
+    inline def setFireOnInit(value: Boolean): Self = StObject.set(x, "fireOnInit", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

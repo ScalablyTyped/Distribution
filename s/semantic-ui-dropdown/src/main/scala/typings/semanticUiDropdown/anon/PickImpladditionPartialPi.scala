@@ -10,7 +10,7 @@ trait PickImpladditionPartialPi
   extends StObject
      with Param {
   
-  var addition: String & js.UndefOr[String]
+  var addition: String
   
   var dropdown: js.UndefOr[String] = js.undefined
   
@@ -38,14 +38,14 @@ trait PickImpladditionPartialPi
 }
 object PickImpladditionPartialPi {
   
-  inline def apply(addition: String & js.UndefOr[String]): PickImpladditionPartialPi = {
+  inline def apply(addition: String): PickImpladditionPartialPi = {
     val __obj = js.Dynamic.literal(addition = addition.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpladditionPartialPi]
   }
   
   extension [Self <: PickImpladditionPartialPi](x: Self) {
     
-    inline def setAddition(value: String & js.UndefOr[String]): Self = StObject.set(x, "addition", value.asInstanceOf[js.Any])
+    inline def setAddition(value: String): Self = StObject.set(x, "addition", value.asInstanceOf[js.Any])
     
     inline def setDropdown(value: String): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
     

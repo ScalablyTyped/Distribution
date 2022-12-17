@@ -23,6 +23,57 @@ object libDataSourceFilterMod {
   @js.native
   val ^ : js.Any = js.native
   
+  object DATE_KEYWORDS {
+    
+    @JSImport("@nginstack/datasource/lib/DataSourceFilter", "DATE_KEYWORDS.FA")
+    @js.native
+    val FA: Boolean = js.native
+    
+    @JSImport("@nginstack/datasource/lib/DataSourceFilter", "DATE_KEYWORDS.FB")
+    @js.native
+    val FB: Boolean = js.native
+    
+    @JSImport("@nginstack/datasource/lib/DataSourceFilter", "DATE_KEYWORDS.FM")
+    @js.native
+    val FM: Boolean = js.native
+    
+    @JSImport("@nginstack/datasource/lib/DataSourceFilter", "DATE_KEYWORDS.FQ")
+    @js.native
+    val FQ: Boolean = js.native
+    
+    @JSImport("@nginstack/datasource/lib/DataSourceFilter", "DATE_KEYWORDS.FS")
+    @js.native
+    val FS: Boolean = js.native
+    
+    @JSImport("@nginstack/datasource/lib/DataSourceFilter", "DATE_KEYWORDS.FT")
+    @js.native
+    val FT: Boolean = js.native
+    
+    @JSImport("@nginstack/datasource/lib/DataSourceFilter", "DATE_KEYWORDS.IA")
+    @js.native
+    val IA: Boolean = js.native
+    
+    @JSImport("@nginstack/datasource/lib/DataSourceFilter", "DATE_KEYWORDS.IB")
+    @js.native
+    val IB: Boolean = js.native
+    
+    @JSImport("@nginstack/datasource/lib/DataSourceFilter", "DATE_KEYWORDS.IM")
+    @js.native
+    val IM: Boolean = js.native
+    
+    @JSImport("@nginstack/datasource/lib/DataSourceFilter", "DATE_KEYWORDS.IQ")
+    @js.native
+    val IQ: Boolean = js.native
+    
+    @JSImport("@nginstack/datasource/lib/DataSourceFilter", "DATE_KEYWORDS.IS")
+    @js.native
+    val IS: Boolean = js.native
+    
+    @JSImport("@nginstack/datasource/lib/DataSourceFilter", "DATE_KEYWORDS.IT")
+    @js.native
+    val IT: Boolean = js.native
+  }
+  
   inline def removeRangeSuffix(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removeRangeSuffix")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def shouldCreateAuxiliaryRangeFilters(filter: DataSourceFilter): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldCreateAuxiliaryRangeFilters")(filter.asInstanceOf[js.Any]).asInstanceOf[Boolean]

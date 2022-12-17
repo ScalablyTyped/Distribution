@@ -1,0 +1,22 @@
+package typings.fullcalendarVue.mod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* note: abstract class */ @JSImport("@fullcalendar/vue", "BaseComponent")
+@js.native
+open class BaseComponent[Props, State] ()
+  extends typings.fullcalendarCore.mod.BaseComponent[Props, State]
+object BaseComponent {
+  
+  @JSImport("@fullcalendar/vue", "BaseComponent")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("@fullcalendar/vue", "BaseComponent.contextType")
+  @js.native
+  def contextType: Any = js.native
+  inline def contextType_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+}

@@ -20,7 +20,7 @@ trait PickImplloopingPartialPic
   
   var loading: js.UndefOr[String] = js.undefined
   
-  var looping: String & js.UndefOr[String]
+  var looping: String
   
   var outward: js.UndefOr[String] = js.undefined
   
@@ -30,7 +30,7 @@ trait PickImplloopingPartialPic
 }
 object PickImplloopingPartialPic {
   
-  inline def apply(looping: String & js.UndefOr[String]): PickImplloopingPartialPic = {
+  inline def apply(looping: String): PickImplloopingPartialPic = {
     val __obj = js.Dynamic.literal(looping = looping.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplloopingPartialPic]
   }
@@ -57,7 +57,7 @@ object PickImplloopingPartialPic {
     
     inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
     
-    inline def setLooping(value: String & js.UndefOr[String]): Self = StObject.set(x, "looping", value.asInstanceOf[js.Any])
+    inline def setLooping(value: String): Self = StObject.set(x, "looping", value.asInstanceOf[js.Any])
     
     inline def setOutward(value: String): Self = StObject.set(x, "outward", value.asInstanceOf[js.Any])
     

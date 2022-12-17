@@ -9,11 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait DataGroupingResultObject extends StObject {
   
-  var groupMap: (js.Array[
+  var groupMap: js.Array[
     typings.highcharts.modulesDatagroupingMod.highchartsAugmentingMod.DataGroupingInfoObject
-  ]) & (js.Array[
-    typings.highcharts.modulesStockMod.highchartsAugmentingMod.DataGroupingInfoObject
-  ])
+  ]
   
   var groupedXData: js.Array[Double]
   
@@ -22,11 +20,9 @@ trait DataGroupingResultObject extends StObject {
 object DataGroupingResultObject {
   
   inline def apply(
-    groupMap: (js.Array[
+    groupMap: js.Array[
       typings.highcharts.modulesDatagroupingMod.highchartsAugmentingMod.DataGroupingInfoObject
-    ]) & (js.Array[
-      typings.highcharts.modulesStockMod.highchartsAugmentingMod.DataGroupingInfoObject
-    ]),
+    ],
     groupedXData: js.Array[Double],
     groupedYData: js.Array[js.UndefOr[(js.Array[js.UndefOr[Double | Null]]) | Double | Null]]
   ): DataGroupingResultObject = {
@@ -37,12 +33,12 @@ object DataGroupingResultObject {
   extension [Self <: DataGroupingResultObject](x: Self) {
     
     inline def setGroupMap(
-      value: (js.Array[
+      value: js.Array[
           typings.highcharts.modulesDatagroupingMod.highchartsAugmentingMod.DataGroupingInfoObject
-        ]) & (js.Array[
-          typings.highcharts.modulesStockMod.highchartsAugmentingMod.DataGroupingInfoObject
-        ])
+        ]
     ): Self = StObject.set(x, "groupMap", value.asInstanceOf[js.Any])
+    
+    inline def setGroupMapVarargs(value: typings.highcharts.modulesDatagroupingMod.highchartsAugmentingMod.DataGroupingInfoObject*): Self = StObject.set(x, "groupMap", js.Array(value*))
     
     inline def setGroupedXData(value: js.Array[Double]): Self = StObject.set(x, "groupedXData", value.asInstanceOf[js.Any])
     

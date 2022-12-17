@@ -1,7 +1,7 @@
 package typings.victoryCore.libMod
 
 import typings.victoryCore.anon.Arialabel
-import typings.victoryCore.anon.ClipPathComponent
+import typings.victoryCore.anon.CircleComponent
 import typings.victoryCore.libVictoryClipContainerVictoryClipContainerMod.VictoryClipContainerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,8 +22,8 @@ object VictoryClipContainer {
   
   @JSImport("victory-core/lib", "VictoryClipContainer.defaultProps")
   @js.native
-  def defaultProps: ClipPathComponent = js.native
-  inline def defaultProps_=(x: ClipPathComponent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  def defaultProps: CircleComponent = js.native
+  inline def defaultProps_=(x: CircleComponent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
   @JSImport("victory-core/lib", "VictoryClipContainer.displayName")
   @js.native

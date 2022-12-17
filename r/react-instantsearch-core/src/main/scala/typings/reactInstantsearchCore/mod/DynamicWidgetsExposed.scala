@@ -2,7 +2,7 @@ package typings.reactInstantsearchCore.mod
 
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactChild
-import typings.reactInstantsearchCore.anon.Attribute
+import typings.reactInstantsearchCore.anon.AttributeString
 import typings.reactInstantsearchCore.anon.Results
 import typings.reactInstantsearchCore.reactInstantsearchCoreStrings.Asterisk
 import org.scalablytyped.runtime.StObject
@@ -30,7 +30,7 @@ trait DynamicWidgetsExposed extends StObject {
     * The fallbackComponent prop is used if no widget from children matches.
     * The component gets called with an attribute prop.
     */
-  var fallbackComponent: js.UndefOr[ComponentType[Attribute]] = js.undefined
+  var fallbackComponent: js.UndefOr[ComponentType[AttributeString]] = js.undefined
   
   /**
     * The default number of facet values to request.
@@ -68,7 +68,7 @@ object DynamicWidgetsExposed {
     
     inline def setFacetsVarargs(value: (Asterisk | scala.Nothing)*): Self = StObject.set(x, "facets", js.Array(value*))
     
-    inline def setFallbackComponent(value: ComponentType[Attribute]): Self = StObject.set(x, "fallbackComponent", value.asInstanceOf[js.Any])
+    inline def setFallbackComponent(value: ComponentType[AttributeString]): Self = StObject.set(x, "fallbackComponent", value.asInstanceOf[js.Any])
     
     inline def setFallbackComponentUndefined: Self = StObject.set(x, "fallbackComponent", js.undefined)
     

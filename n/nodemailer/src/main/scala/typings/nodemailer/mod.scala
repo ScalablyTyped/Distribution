@@ -142,9 +142,9 @@ object mod {
       callback: js.Function2[/* err */ js.Error | Null, /* info */ T, Unit]
     ): Unit
     
-    var verify: (js.UndefOr[
+    var verify: js.UndefOr[
         js.Function1[/* callback */ js.Function2[/* err */ js.Error | Null, `true`, Unit], Unit]
-      ]) & js.UndefOr[js.Function0[js.Promise[`true`]]]
+      ] = js.undefined
     
     var version: String
   }
@@ -153,12 +153,9 @@ object mod {
     inline def apply[T](
       name: String,
       send: (typings.nodemailer.libMailerMailMessageMod.^[T], js.Function2[/* err */ js.Error | Null, /* info */ T, Unit]) => Unit,
-      verify: (js.UndefOr[
-          js.Function1[/* callback */ js.Function2[/* err */ js.Error | Null, `true`, Unit], Unit]
-        ]) & js.UndefOr[js.Function0[js.Promise[`true`]]],
       version: String
     ): Transport[T] = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], send = js.Any.fromFunction2(send), verify = verify.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], send = js.Any.fromFunction2(send), version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[Transport[T]]
     }
     
@@ -178,11 +175,9 @@ object mod {
         value: (typings.nodemailer.libMailerMailMessageMod.^[T], js.Function2[/* err */ js.Error | Null, /* info */ T, Unit]) => Unit
       ): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
       
-      inline def setVerify(
-        value: (js.UndefOr[
-              js.Function1[/* callback */ js.Function2[/* err */ js.Error | Null, `true`, Unit], Unit]
-            ]) & js.UndefOr[js.Function0[js.Promise[`true`]]]
-      ): Self = StObject.set(x, "verify", value.asInstanceOf[js.Any])
+      inline def setVerify(value: /* callback */ js.Function2[/* err */ js.Error | Null, `true`, Unit] => Unit): Self = StObject.set(x, "verify", js.Any.fromFunction1(value))
+      
+      inline def setVerifyUndefined: Self = StObject.set(x, "verify", js.undefined)
       
       inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }

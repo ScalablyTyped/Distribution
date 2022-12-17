@@ -163,13 +163,13 @@ trait PickImplvaluesPartialPick
   
   var useLabels: js.UndefOr[Boolean] = js.undefined
   
-  var values: Any & js.UndefOr[Any]
+  var values: Any
   
   var verbose: js.UndefOr[Boolean] = js.undefined
 }
 object PickImplvaluesPartialPick {
   
-  inline def apply(values: Any & js.UndefOr[Any]): PickImplvaluesPartialPick = {
+  inline def apply(values: Any): PickImplvaluesPartialPick = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplvaluesPartialPick]
   }
@@ -406,7 +406,7 @@ object PickImplvaluesPartialPick {
     
     inline def setUseLabelsUndefined: Self = StObject.set(x, "useLabels", js.undefined)
     
-    inline def setValues(value: Any & js.UndefOr[Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     

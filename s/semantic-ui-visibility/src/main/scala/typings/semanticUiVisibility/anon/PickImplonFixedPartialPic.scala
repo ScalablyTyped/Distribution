@@ -55,7 +55,7 @@ trait PickImplonFixedPartialPic
   
   def onFixed(): Unit
   @JSName("onFixed")
-  var onFixed_Original: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+  var onFixed_Original: js.ThisFunction0[/* this */ JQuery, Unit]
   
   var onLoad: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
@@ -105,9 +105,7 @@ trait PickImplonFixedPartialPic
 }
 object PickImplonFixedPartialPic {
   
-  inline def apply(
-    onFixed: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-  ): PickImplonFixedPartialPic = {
+  inline def apply(onFixed: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonFixedPartialPic = {
     val __obj = js.Dynamic.literal(onFixed = onFixed.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonFixedPartialPic]
   }
@@ -186,9 +184,7 @@ object PickImplonFixedPartialPic {
     
     inline def setOnBottomVisibleUndefined: Self = StObject.set(x, "onBottomVisible", js.undefined)
     
-    inline def setOnFixed(
-      value: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-    ): Self = StObject.set(x, "onFixed", value.asInstanceOf[js.Any])
+    inline def setOnFixed(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onFixed", value.asInstanceOf[js.Any])
     
     inline def setOnLoad(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onLoad", value.asInstanceOf[js.Any])
     

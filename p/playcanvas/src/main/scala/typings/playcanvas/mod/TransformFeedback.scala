@@ -71,8 +71,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * };
   * ```
   */
+@JSImport("playcanvas", "TransformFeedback")
 @js.native
-trait TransformFeedback extends StObject {
+open class TransformFeedback protected () extends StObject {
+  /**
+    * Create a new TransformFeedback instance.
+    *
+    * @param {VertexBuffer} inputBuffer - The input vertex buffer.
+    * @param {number} [usage] - The optional usage type of the output vertex buffer. Can be:
+    *
+    * - {@link BUFFER_STATIC}
+    * - {@link BUFFER_DYNAMIC}
+    * - {@link BUFFER_STREAM}
+    * - {@link BUFFER_GPUDYNAMIC}
+    *
+    * Defaults to {@link BUFFER_GPUDYNAMIC} (which is recommended for continuous update).
+    */
+  def this(inputBuffer: VertexBuffer) = this()
+  def this(inputBuffer: VertexBuffer, usage: Double) = this()
   
   var _inputBuffer: VertexBuffer = js.native
   
@@ -110,4 +126,21 @@ trait TransformFeedback extends StObject {
     */
   def process(shader: Shader): Unit = js.native
   def process(shader: Shader, swap: Boolean): Unit = js.native
+}
+object TransformFeedback {
+  
+  @JSImport("playcanvas", "TransformFeedback")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * Creates a transform feedback ready vertex shader from code.
+    *
+    * @param {GraphicsDevice} graphicsDevice - The graphics device used by the renderer.
+    * @param {string} vertexCode - Vertex shader code. Should contain output variables starting with "out_".
+    * @param {string} name - Unique name for caching the shader.
+    * @returns {Shader} A shader to use in the process() function.
+    */
+  /* static member */
+  inline def createShader(graphicsDevice: GraphicsDevice, vertexCode: String, name: String): Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("createShader")(graphicsDevice.asInstanceOf[js.Any], vertexCode.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Shader]
 }

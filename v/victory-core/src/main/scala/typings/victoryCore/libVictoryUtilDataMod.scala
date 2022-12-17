@@ -1,6 +1,6 @@
 package typings.victoryCore
 
-import typings.victoryCore.anon.Y
+import typings.victoryCore.anon.XY
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +22,7 @@ object libVictoryUtilDataMod {
   inline def formatDataFromDomain(dataset: Any, domain: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDataFromDomain")(dataset.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[Any]
   inline def formatDataFromDomain(dataset: Any, domain: Any, defaultBaseline: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDataFromDomain")(dataset.asInstanceOf[js.Any], domain.asInstanceOf[js.Any], defaultBaseline.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def generateData(props: Any): js.Array[Y] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateData")(props.asInstanceOf[js.Any]).asInstanceOf[js.Array[Y]]
+  inline def generateData(props: Any): js.Array[XY] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateData")(props.asInstanceOf[js.Any]).asInstanceOf[js.Array[XY]]
   
   inline def getCategories(props: Any, axis: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getCategories")(props.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[Any]
   

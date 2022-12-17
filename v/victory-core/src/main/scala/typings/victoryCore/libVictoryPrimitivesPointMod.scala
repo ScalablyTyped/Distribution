@@ -1,7 +1,7 @@
 package typings.victoryCore
 
 import typings.react.mod.ReactElement
-import typings.victoryCore.anon.Data
+import typings.victoryCore.anon.Desc
 import typings.victoryCore.anon.PathComponent
 import typings.victoryCore.libVictoryPrimitivesTypesMod.ScatterSymbolType
 import typings.victoryCore.libVictoryUtilCommonPropsMod.VictoryCommonPrimitiveProps
@@ -26,8 +26,8 @@ object libVictoryPrimitivesPointMod {
     
     @JSImport("victory-core/lib/victory-primitives/point", "Point.propTypes")
     @js.native
-    def propTypes: Data = js.native
-    inline def propTypes_=(x: Data): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    def propTypes: Desc = js.native
+    inline def propTypes_=(x: Desc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
   trait PointProps

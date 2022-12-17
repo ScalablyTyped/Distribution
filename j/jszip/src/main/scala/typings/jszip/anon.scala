@@ -1,6 +1,5 @@
 package typings.jszip
 
-import typings.jszip.jszipBooleans.`true`
 import typings.jszip.mod.Compression
 import typings.jszip.mod.CompressionOptions
 import typings.std.PromiseConstructorLike
@@ -43,7 +42,7 @@ object anon {
     var date: js.UndefOr[js.Date] = js.undefined
     
     /** Set to `true` if this is a directory and content should be ignored. */
-    var dir: js.UndefOr[Boolean] & `true`
+    var dir: js.UndefOr[Boolean] = js.undefined
     
     /** 6 bits number. The DOS permissions of the file, if any. */
     var dosPermissions: js.UndefOr[Double | Null] = js.undefined
@@ -59,8 +58,8 @@ object anon {
   }
   object JSZipFileOptionsdirtrue {
     
-    inline def apply(dir: js.UndefOr[Boolean] & `true`): JSZipFileOptionsdirtrue = {
-      val __obj = js.Dynamic.literal(dir = dir.asInstanceOf[js.Any])
+    inline def apply(): JSZipFileOptionsdirtrue = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JSZipFileOptionsdirtrue]
     }
     
@@ -96,7 +95,9 @@ object anon {
       
       inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      inline def setDir(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: Boolean): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      
+      inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
       
       inline def setDosPermissions(value: Double): Self = StObject.set(x, "dosPermissions", value.asInstanceOf[js.Any])
       

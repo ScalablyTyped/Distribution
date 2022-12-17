@@ -13,9 +13,7 @@ trait Protectionrules extends StObject {
     */
   var created_at: String
   
-  var deployment_branch_policy: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['deployment-branch-policy-settings'] */ js.Any
-  ] = js.undefined
+  var deployment_branch_policy: js.UndefOr[Custombranchpolicies | Null] = js.undefined
   
   /** @example https://github.com/github/hello-world/deployments/activity_log?environments_filter=staging */
   var html_url: String
@@ -35,7 +33,7 @@ trait Protectionrules extends StObject {
   /** @example MDExOkVudmlyb25tZW50NTY3ODA0Mjg= */
   var node_id: String
   
-  var protection_rules: js.UndefOr[js.Array[PartialidnumbernodeidstriId]] = js.undefined
+  var protection_rules: js.UndefOr[js.Array[Partialidnumbernodeidstri]] = js.undefined
   
   /**
     * Format: date-time
@@ -66,9 +64,9 @@ object Protectionrules {
     
     inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
-    inline def setDeployment_branch_policy(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['deployment-branch-policy-settings'] */ js.Any
-    ): Self = StObject.set(x, "deployment_branch_policy", value.asInstanceOf[js.Any])
+    inline def setDeployment_branch_policy(value: Custombranchpolicies): Self = StObject.set(x, "deployment_branch_policy", value.asInstanceOf[js.Any])
+    
+    inline def setDeployment_branch_policyNull: Self = StObject.set(x, "deployment_branch_policy", null)
     
     inline def setDeployment_branch_policyUndefined: Self = StObject.set(x, "deployment_branch_policy", js.undefined)
     
@@ -80,11 +78,11 @@ object Protectionrules {
     
     inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
-    inline def setProtection_rules(value: js.Array[PartialidnumbernodeidstriId]): Self = StObject.set(x, "protection_rules", value.asInstanceOf[js.Any])
+    inline def setProtection_rules(value: js.Array[Partialidnumbernodeidstri]): Self = StObject.set(x, "protection_rules", value.asInstanceOf[js.Any])
     
     inline def setProtection_rulesUndefined: Self = StObject.set(x, "protection_rules", js.undefined)
     
-    inline def setProtection_rulesVarargs(value: PartialidnumbernodeidstriId*): Self = StObject.set(x, "protection_rules", js.Array(value*))
+    inline def setProtection_rulesVarargs(value: Partialidnumbernodeidstri*): Self = StObject.set(x, "protection_rules", js.Array(value*))
     
     inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
     

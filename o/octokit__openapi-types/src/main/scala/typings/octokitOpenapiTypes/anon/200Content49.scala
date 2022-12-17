@@ -8,17 +8,27 @@ trait `200Content49` extends StObject {
   
   /** Response */
   var `200`: Content49
+  
+  var `401`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['requires_authentication'] */ js.Any
 }
 object `200Content49` {
   
-  inline def apply(`200`: Content49): `200Content49` = {
+  inline def apply(
+    `200`: Content49,
+    `401`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['requires_authentication'] */ js.Any
+  ): `200Content49` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
+    __obj.updateDynamic("401")(`401`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`200Content49`]
   }
   
   extension [Self <: `200Content49`](x: Self) {
     
     inline def set200(value: Content49): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+    
+    inline def set401(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['requires_authentication'] */ js.Any
+    ): Self = StObject.set(x, "401", value.asInstanceOf[js.Any])
   }
 }

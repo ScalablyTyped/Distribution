@@ -16,7 +16,7 @@ trait PickImpldimmedPartialPick
   
   var bottom: js.UndefOr[String] = js.undefined
   
-  var dimmed: String & js.UndefOr[String]
+  var dimmed: String
   
   var ios: js.UndefOr[String] = js.undefined
   
@@ -34,7 +34,7 @@ trait PickImpldimmedPartialPick
 }
 object PickImpldimmedPartialPick {
   
-  inline def apply(dimmed: String & js.UndefOr[String]): PickImpldimmedPartialPick = {
+  inline def apply(dimmed: String): PickImpldimmedPartialPick = {
     val __obj = js.Dynamic.literal(dimmed = dimmed.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldimmedPartialPick]
   }
@@ -53,7 +53,7 @@ object PickImpldimmedPartialPick {
     
     inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
-    inline def setDimmed(value: String & js.UndefOr[String]): Self = StObject.set(x, "dimmed", value.asInstanceOf[js.Any])
+    inline def setDimmed(value: String): Self = StObject.set(x, "dimmed", value.asInstanceOf[js.Any])
     
     inline def setIos(value: String): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
     

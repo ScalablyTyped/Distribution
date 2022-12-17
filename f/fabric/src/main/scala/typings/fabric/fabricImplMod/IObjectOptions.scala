@@ -1,7 +1,7 @@
 package typings.fabric.fabricImplMod
 
-import typings.fabric.anon.Bl
-import typings.fabric.anon.Br
+import typings.fabric.anon.Ml
+import typings.fabric.anon.Tr
 import typings.fabric.fabricStrings.circle
 import typings.fabric.fabricStrings.rect
 import org.scalablytyped.runtime.StObject
@@ -22,7 +22,7 @@ trait IObjectOptions extends StObject {
     * You can calculate them without updating with @method calcCoords(true);
     * @memberOf fabric.Object.prototype
     */
-  var aCoords: js.UndefOr[Br] = js.undefined
+  var aCoords: js.UndefOr[Tr] = js.undefined
   
   /**
     * Meaningful ONLY when the object is used as clipPath.
@@ -315,7 +315,7 @@ trait IObjectOptions extends StObject {
     * You can calculate them without updating with @method calcCoords;
     * @memberOf fabric.Object.prototype
     */
-  var oCoords: js.UndefOr[Bl] = js.undefined
+  var oCoords: js.UndefOr[Ml] = js.undefined
   
   /**
     * When `true`, object is cached on an additional canvas.
@@ -515,7 +515,7 @@ object IObjectOptions {
   
   extension [Self <: IObjectOptions](x: Self) {
     
-    inline def setACoords(value: Br): Self = StObject.set(x, "aCoords", value.asInstanceOf[js.Any])
+    inline def setACoords(value: Tr): Self = StObject.set(x, "aCoords", value.asInstanceOf[js.Any])
     
     inline def setACoordsUndefined: Self = StObject.set(x, "aCoords", js.undefined)
     
@@ -721,7 +721,7 @@ object IObjectOptions {
     
     inline def setNoScaleCacheUndefined: Self = StObject.set(x, "noScaleCache", js.undefined)
     
-    inline def setOCoords(value: Bl): Self = StObject.set(x, "oCoords", value.asInstanceOf[js.Any])
+    inline def setOCoords(value: Ml): Self = StObject.set(x, "oCoords", value.asInstanceOf[js.Any])
     
     inline def setOCoordsUndefined: Self = StObject.set(x, "oCoords", js.undefined)
     

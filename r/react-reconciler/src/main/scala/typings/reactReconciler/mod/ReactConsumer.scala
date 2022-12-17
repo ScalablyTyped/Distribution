@@ -1,6 +1,6 @@
 package typings.reactReconciler.mod
 
-import typings.reactReconciler.anon.Children
+import typings.reactReconciler.anon.UnstableobservedBits
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ trait ReactConsumer[T] extends StObject {
   
   var key: Null | String
   
-  var props: Children[T]
+  var props: UnstableobservedBits[T]
   
   var ref: Null
   
@@ -20,7 +20,12 @@ trait ReactConsumer[T] extends StObject {
 }
 object ReactConsumer {
   
-  inline def apply[T](DollarDollartypeof: js.Symbol | Double, props: Children[T], ref: Null, `type`: ReactContext[T]): ReactConsumer[T] = {
+  inline def apply[T](
+    DollarDollartypeof: js.Symbol | Double,
+    props: UnstableobservedBits[T],
+    ref: Null,
+    `type`: ReactContext[T]
+  ): ReactConsumer[T] = {
     val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], key = null)
     __obj.updateDynamic("$$typeof")(DollarDollartypeof.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -35,7 +40,7 @@ object ReactConsumer {
     
     inline def setKeyNull: Self = StObject.set(x, "key", null)
     
-    inline def setProps(value: Children[T]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: UnstableobservedBits[T]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     
     inline def setRef(value: Null): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     

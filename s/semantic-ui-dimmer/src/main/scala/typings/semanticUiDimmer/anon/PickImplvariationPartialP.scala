@@ -58,13 +58,13 @@ trait PickImplvariationPartialP
   
   var useCSS: js.UndefOr[Boolean] = js.undefined
   
-  var variation: (`false` | String) & (js.UndefOr[`false` | String])
+  var variation: `false` | String
   
   var verbose: js.UndefOr[Boolean] = js.undefined
 }
 object PickImplvariationPartialP {
   
-  inline def apply(variation: (`false` | String) & (js.UndefOr[`false` | String])): PickImplvariationPartialP = {
+  inline def apply(variation: `false` | String): PickImplvariationPartialP = {
     val __obj = js.Dynamic.literal(variation = variation.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplvariationPartialP]
   }
@@ -147,7 +147,7 @@ object PickImplvariationPartialP {
     
     inline def setUseCSSUndefined: Self = StObject.set(x, "useCSS", js.undefined)
     
-    inline def setVariation(value: (`false` | String) & (js.UndefOr[`false` | String])): Self = StObject.set(x, "variation", value.asInstanceOf[js.Any])
+    inline def setVariation(value: `false` | String): Self = StObject.set(x, "variation", value.asInstanceOf[js.Any])
     
     inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     

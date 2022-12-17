@@ -24,7 +24,7 @@ trait PickImpljitterPartialPick
   
   var error: js.UndefOr[ErrorSettings] = js.undefined
   
-  var jitter: Double & js.UndefOr[Double]
+  var jitter: Double
   
   var name: js.UndefOr[String] = js.undefined
   
@@ -60,7 +60,7 @@ trait PickImpljitterPartialPick
 }
 object PickImpljitterPartialPick {
   
-  inline def apply(jitter: Double & js.UndefOr[Double]): PickImpljitterPartialPick = {
+  inline def apply(jitter: Double): PickImpljitterPartialPick = {
     val __obj = js.Dynamic.literal(jitter = jitter.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpljitterPartialPick]
   }
@@ -87,7 +87,7 @@ object PickImpljitterPartialPick {
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    inline def setJitter(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "jitter", value.asInstanceOf[js.Any])
+    inline def setJitter(value: Double): Self = StObject.set(x, "jitter", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

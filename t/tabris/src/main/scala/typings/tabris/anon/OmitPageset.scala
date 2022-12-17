@@ -118,9 +118,9 @@ trait OmitPageset extends StObject {
   @JSName("_addChild")
   var _addChild_Original: js.Function2[/* child */ Widget[Any], /* index */ js.UndefOr[Double], Unit]
   
-  def _apply[Target](options: `11`[Target], rules: RuleSet[Page]): Page
+  def _apply[Target](options: `3`[Target], rules: RuleSet[Page]): Page
   @JSName("_apply")
-  var _apply_Original: js.Function2[/* options */ `11`[Page], /* rules */ RuleSet[Page], Page]
+  var _apply_Original: js.Function2[/* options */ `3`[Page], /* rules */ RuleSet[Page], Page]
   
   def _checkDisposed(): Unit
   @JSName("_checkDisposed")
@@ -296,9 +296,9 @@ trait OmitPageset extends StObject {
   var append_Original: js.Function1[/* repeated */ Widget[Any], Page]
   
   @JSName("apply")
-  def apply[Target](options: `11`[Target], rules: RuleSet[Page]): Page
+  def apply[Target](options: `3`[Target], rules: RuleSet[Page]): Page
   @JSName("apply")
-  var apply_Original: js.Function2[/* options */ `11`[Page], /* rules */ RuleSet[Page], Page]
+  var apply_Original: js.Function2[/* options */ `3`[Page], /* rules */ RuleSet[Page], Page]
   
   var autoDispose: Boolean
   
@@ -590,7 +590,7 @@ object OmitPageset {
     $trigger: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Unit,
     _acceptChild: /* child */ Widget[Any] => Boolean,
     _addChild: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit,
-    _apply: (/* options */ `11`[Page], /* rules */ RuleSet[Page]) => Page,
+    _apply: (/* options */ `3`[Page], /* rules */ RuleSet[Page]) => Page,
     _checkDisposed: () => Unit,
     _checkLayout: /* value */ typings.tabris.mod.Layout => Unit,
     _children: /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]] => WidgetCollection[Widget[Any]],
@@ -631,7 +631,7 @@ object OmitPageset {
     animate: (/* properties */ Opacity, /* options */ AnimationOptions) => js.Promise[Unit],
     append: /* repeated */ Widget[Any] => Page,
     appendTo: /* parent */ Composite[Widget[Any]] => Page,
-    apply: (/* options */ `11`[Page], /* rules */ RuleSet[Page]) => Page,
+    apply: (/* options */ `3`[Page], /* rules */ RuleSet[Page]) => Page,
     autoDispose: Boolean,
     baseline: SiblingReferenceValue | auto | `true`,
     bottom: ConstraintValue,
@@ -758,7 +758,7 @@ object OmitPageset {
     
     inline def setAppendTo(value: /* parent */ Composite[Widget[Any]] => Page): Self = StObject.set(x, "appendTo", js.Any.fromFunction1(value))
     
-    inline def setApply(value: (/* options */ `11`[Page], /* rules */ RuleSet[Page]) => Page): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
+    inline def setApply(value: (/* options */ `3`[Page], /* rules */ RuleSet[Page]) => Page): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
     
     inline def setAutoDispose(value: Boolean): Self = StObject.set(x, "autoDispose", value.asInstanceOf[js.Any])
     
@@ -1006,7 +1006,7 @@ object OmitPageset {
     
     inline def set_addChild(value: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "_addChild", js.Any.fromFunction2(value))
     
-    inline def set_apply(value: (/* options */ `11`[Page], /* rules */ RuleSet[Page]) => Page): Self = StObject.set(x, "_apply", js.Any.fromFunction2(value))
+    inline def set_apply(value: (/* options */ `3`[Page], /* rules */ RuleSet[Page]) => Page): Self = StObject.set(x, "_apply", js.Any.fromFunction2(value))
     
     inline def set_checkDisposed(value: () => Unit): Self = StObject.set(x, "_checkDisposed", js.Any.fromFunction0(value))
     

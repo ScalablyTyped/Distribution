@@ -12,11 +12,11 @@ trait PickImplsidePartialPickImMethod
   
   var method: js.UndefOr[String] = js.undefined
   
-  var side: String & js.UndefOr[String]
+  var side: String
 }
 object PickImplsidePartialPickImMethod {
   
-  inline def apply(side: String & js.UndefOr[String]): PickImplsidePartialPickImMethod = {
+  inline def apply(side: String): PickImplsidePartialPickImMethod = {
     val __obj = js.Dynamic.literal(side = side.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplsidePartialPickImMethod]
   }
@@ -27,6 +27,6 @@ object PickImplsidePartialPickImMethod {
     
     inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    inline def setSide(value: String & js.UndefOr[String]): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
+    inline def setSide(value: String): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
   }
 }

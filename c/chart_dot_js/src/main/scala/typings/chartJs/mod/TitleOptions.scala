@@ -1,7 +1,7 @@
 package typings.chartJs.mod
 
-import typings.chartJs.anon.BottomTop
 import typings.chartJs.anon.PartialFontSpec
+import typings.chartJs.anon.Top
 import typings.chartJs.chartJsStrings.bottom
 import typings.chartJs.chartJsStrings.left
 import typings.chartJs.chartJsStrings.right
@@ -44,7 +44,7 @@ trait TitleOptions extends StObject {
   /**
     *   Adds padding above and below the title text if a single number is specified. It is also possible to change top and bottom padding separately.
     */
-  var padding: Double | BottomTop
+  var padding: Double | Top
   
   /**
     * Position of title
@@ -65,7 +65,7 @@ object TitleOptions {
     display: Boolean,
     font: ScriptableAndScriptableOptions[PartialFontSpec, ScriptableChartContext],
     fullSize: Boolean,
-    padding: Double | BottomTop,
+    padding: Double | Top,
     position: top | left | bottom | right,
     text: String | js.Array[String]
   ): TitleOptions = {
@@ -87,7 +87,7 @@ object TitleOptions {
     
     inline def setFullSize(value: Boolean): Self = StObject.set(x, "fullSize", value.asInstanceOf[js.Any])
     
-    inline def setPadding(value: Double | BottomTop): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double | Top): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     inline def setPosition(value: top | left | bottom | right): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

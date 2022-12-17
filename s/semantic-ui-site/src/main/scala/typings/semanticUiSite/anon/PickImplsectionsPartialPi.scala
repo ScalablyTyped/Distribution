@@ -16,13 +16,13 @@ trait PickImplsectionsPartialPi
   
   var section: js.UndefOr[Any] = js.undefined
   
-  var sections: Any & js.UndefOr[Any]
+  var sections: Any
   
   var utilities: js.UndefOr[Any] = js.undefined
 }
 object PickImplsectionsPartialPi {
   
-  inline def apply(sections: Any & js.UndefOr[Any]): PickImplsectionsPartialPi = {
+  inline def apply(sections: Any): PickImplsectionsPartialPi = {
     val __obj = js.Dynamic.literal(sections = sections.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplsectionsPartialPi]
   }
@@ -41,7 +41,7 @@ object PickImplsectionsPartialPi {
     
     inline def setSectionUndefined: Self = StObject.set(x, "section", js.undefined)
     
-    inline def setSections(value: Any & js.UndefOr[Any]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
+    inline def setSections(value: Any): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
     
     inline def setUtilities(value: Any): Self = StObject.set(x, "utilities", value.asInstanceOf[js.Any])
     

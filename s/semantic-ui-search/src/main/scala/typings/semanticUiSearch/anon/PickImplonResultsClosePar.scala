@@ -54,7 +54,7 @@ trait PickImplonResultsClosePar
   
   def onResultsClose(): Unit
   @JSName("onResultsClose")
-  var onResultsClose_Original: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+  var onResultsClose_Original: js.ThisFunction0[/* this */ JQuery, Unit]
   
   var onResultsOpen: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
@@ -94,9 +94,7 @@ trait PickImplonResultsClosePar
 }
 object PickImplonResultsClosePar {
   
-  inline def apply(
-    onResultsClose: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-  ): PickImplonResultsClosePar = {
+  inline def apply(onResultsClose: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonResultsClosePar = {
     val __obj = js.Dynamic.literal(onResultsClose = onResultsClose.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonResultsClosePar]
   }
@@ -165,9 +163,7 @@ object PickImplonResultsClosePar {
     
     inline def setOnResultsAddUndefined: Self = StObject.set(x, "onResultsAdd", js.undefined)
     
-    inline def setOnResultsClose(
-      value: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-    ): Self = StObject.set(x, "onResultsClose", value.asInstanceOf[js.Any])
+    inline def setOnResultsClose(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onResultsClose", value.asInstanceOf[js.Any])
     
     inline def setOnResultsOpen(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onResultsOpen", value.asInstanceOf[js.Any])
     

@@ -10,9 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /** Default updating renderer for Listr2 */
 @js.native
-trait DefaultRenderer
-  extends StObject
-     with ListrRenderer {
+trait DefaultRenderer extends ListrRenderer {
   
   /* private */ var addSuffixToMessage: Any = js.native
   

@@ -324,7 +324,7 @@ trait OmitButtonset extends StObject {
   @JSName("isDisposed")
   var isDisposed_Original: js.Function0[Boolean]
   
-  var jsxAttributes: (JSXAttributes[Button, Omit[Button, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `7`
+  var jsxAttributes: (JSXAttributes[Button, Omit[Button, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `1`
   
   var layoutData: LayoutDataValue
   
@@ -589,7 +589,7 @@ object OmitButtonset {
     insertAfter: /* widget */ Widget[Any] => Button,
     insertBefore: /* widget */ Widget[Any] => Button,
     isDisposed: () => Boolean,
-    jsxAttributes: (JSXAttributes[Button, Omit[Button, set | jsxAttributes]]) & `7`,
+    jsxAttributes: (JSXAttributes[Button, Omit[Button, set | jsxAttributes]]) & `1`,
     layoutData: LayoutDataValue,
     left: ConstraintValue,
     off: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Unit], /* context */ js.UndefOr[js.Object]) => Button,
@@ -776,7 +776,7 @@ object OmitButtonset {
     
     inline def setIsDisposed(value: () => Boolean): Self = StObject.set(x, "isDisposed", js.Any.fromFunction0(value))
     
-    inline def setJsxAttributes(value: (JSXAttributes[Button, Omit[Button, set | jsxAttributes]]) & `7`): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
+    inline def setJsxAttributes(value: (JSXAttributes[Button, Omit[Button, set | jsxAttributes]]) & `1`): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     
     inline def setLayoutData(value: LayoutDataValue): Self = StObject.set(x, "layoutData", value.asInstanceOf[js.Any])
     

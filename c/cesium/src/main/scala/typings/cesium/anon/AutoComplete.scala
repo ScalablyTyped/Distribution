@@ -4,6 +4,7 @@ import typings.cesium.mod.Cartesian3
 import typings.cesium.mod.Geocoder.DestinationFoundFunction
 import typings.cesium.mod.GeocoderService
 import typings.cesium.mod.GeocoderViewModel
+import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ trait AutoComplete extends StObject {
   
   var autoComplete: js.UndefOr[Boolean] = js.undefined
   
-  var container: typings.std.Element | String
+  var container: Element | String
   
   var destinationFound: js.UndefOr[DestinationFoundFunction] = js.undefined
   
@@ -24,7 +25,7 @@ trait AutoComplete extends StObject {
 }
 object AutoComplete {
   
-  inline def apply(container: typings.std.Element | String, scene: typings.cesium.mod.Scene): AutoComplete = {
+  inline def apply(container: Element | String, scene: typings.cesium.mod.Scene): AutoComplete = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoComplete]
   }
@@ -35,7 +36,7 @@ object AutoComplete {
     
     inline def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
     
-    inline def setContainer(value: typings.std.Element | String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Element | String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setDestinationFound(
       value: (/* viewModel */ GeocoderViewModel, /* destination */ Cartesian3 | typings.cesium.mod.Rectangle) => Unit

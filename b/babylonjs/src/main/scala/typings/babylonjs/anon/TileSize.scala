@@ -1,7 +1,7 @@
 package typings.babylonjs.anon
 
-import typings.babylonjs.mathsMathDotcolorMod.Color4
-import typings.babylonjs.mathsMathDotvectorMod.Vector4
+import typings.babylonjs.BABYLON.Color4
+import typings.babylonjs.BABYLON.Vector4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,6 +23,8 @@ trait TileSize extends StObject {
   var pattern: js.UndefOr[Double] = js.undefined
   
   var sideOrientation: js.UndefOr[Double] = js.undefined
+  
+  var size: js.UndefOr[Double] = js.undefined
   
   var tileHeight: js.UndefOr[Double] = js.undefined
   
@@ -76,6 +78,10 @@ object TileSize {
     inline def setSideOrientation(value: Double): Self = StObject.set(x, "sideOrientation", value.asInstanceOf[js.Any])
     
     inline def setSideOrientationUndefined: Self = StObject.set(x, "sideOrientation", js.undefined)
+    
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     inline def setTileHeight(value: Double): Self = StObject.set(x, "tileHeight", value.asInstanceOf[js.Any])
     

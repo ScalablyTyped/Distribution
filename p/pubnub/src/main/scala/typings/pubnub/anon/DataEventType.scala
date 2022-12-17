@@ -1,35 +1,34 @@
 package typings.pubnub.anon
 
-import typings.pubnub.mod.ChannelMetadataObject
 import typings.pubnub.mod.ObjectCustom
-import typings.pubnub.pubnubStrings.channel
+import typings.pubnub.pubnubStrings.membership
 import typings.pubnub.pubnubStrings.set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DataEventType[ChannelCustom /* <: ObjectCustom */] extends StObject {
+trait DataEventType[MembershipCustom /* <: ObjectCustom */] extends StObject {
   
-  var data: ChannelMetadataObject[ChannelCustom]
+  var data: Channel[MembershipCustom]
   
   var event: set
   
-  var `type`: channel
+  var `type`: membership
 }
 object DataEventType {
   
-  inline def apply[ChannelCustom /* <: ObjectCustom */](data: ChannelMetadataObject[ChannelCustom]): DataEventType[ChannelCustom] = {
+  inline def apply[MembershipCustom /* <: ObjectCustom */](data: Channel[MembershipCustom]): DataEventType[MembershipCustom] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = "set")
-    __obj.updateDynamic("type")("channel")
-    __obj.asInstanceOf[DataEventType[ChannelCustom]]
+    __obj.updateDynamic("type")("membership")
+    __obj.asInstanceOf[DataEventType[MembershipCustom]]
   }
   
-  extension [Self <: DataEventType[?], ChannelCustom /* <: ObjectCustom */](x: Self & DataEventType[ChannelCustom]) {
+  extension [Self <: DataEventType[?], MembershipCustom /* <: ObjectCustom */](x: Self & DataEventType[MembershipCustom]) {
     
-    inline def setData(value: ChannelMetadataObject[ChannelCustom]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Channel[MembershipCustom]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setEvent(value: set): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    inline def setType(value: channel): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: membership): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

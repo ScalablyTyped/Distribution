@@ -30,9 +30,9 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def client(args: ServerRenderedData): FrontloadState = ^.asInstanceOf[js.Dynamic].applyDynamic("client")(args.asInstanceOf[js.Any]).asInstanceOf[FrontloadState]
+    inline def client(args: Logging): FrontloadState = ^.asInstanceOf[js.Dynamic].applyDynamic("client")(args.asInstanceOf[js.Any]).asInstanceOf[FrontloadState]
     
-    inline def server(args: Logging): FrontloadState = ^.asInstanceOf[js.Dynamic].applyDynamic("server")(args.asInstanceOf[js.Any]).asInstanceOf[FrontloadState]
+    inline def server(args: Context): FrontloadState = ^.asInstanceOf[js.Dynamic].applyDynamic("server")(args.asInstanceOf[js.Any]).asInstanceOf[FrontloadState]
   }
   
   inline def frontloadServerRender[T](param0: typings.reactFrontload.anon.FrontloadState[T]): js.Promise[Data[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("frontloadServerRender")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Data[T]]]
@@ -118,7 +118,7 @@ object mod {
   
   type FrontloadServerRenderFunction[T] = js.Function1[/* args */ IsFinalRender, T]
   
-  type FrontloadState = InstanceType[Instantiable1[/* param0 */ Context, FrontloadStatePrivate]]
+  type FrontloadState = InstanceType[Instantiable1[/* param0 */ ServerRenderedData, FrontloadStatePrivate]]
   
   trait FrontloadStatePrivate extends StObject {
     

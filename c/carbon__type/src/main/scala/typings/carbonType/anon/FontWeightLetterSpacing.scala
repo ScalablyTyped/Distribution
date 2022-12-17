@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FontWeightLetterSpacing extends StObject {
   
   @JSName("@media (min-width: 42rem)")
-  var `@media Leftparenthesismin-widthColon 42remRightparenthesis`: FontFamily
+  var `@media Leftparenthesismin-widthColon 42remRightparenthesis`: FontWeight
   
   @JSName("@media (min-width: 66rem)")
   var `@media Leftparenthesismin-widthColon 66remRightparenthesis`: FontFamily
@@ -31,7 +31,7 @@ trait FontWeightLetterSpacing extends StObject {
 object FontWeightLetterSpacing {
   
   inline def apply(
-    `@media Leftparenthesismin-widthColon 42remRightparenthesis`: FontFamily,
+    `@media Leftparenthesismin-widthColon 42remRightparenthesis`: FontWeight,
     `@media Leftparenthesismin-widthColon 66remRightparenthesis`: FontFamily,
     `@media Leftparenthesismin-widthColon 82remRightparenthesis`: FontFamily,
     `@media Leftparenthesismin-widthColon 99remRightparenthesis`: FontFamily,
@@ -51,7 +51,7 @@ object FontWeightLetterSpacing {
   
   extension [Self <: FontWeightLetterSpacing](x: Self) {
     
-    inline def `set@media Leftparenthesismin-widthColon 42remRightparenthesis`(value: FontFamily): Self = StObject.set(x, "@media (min-width: 42rem)", value.asInstanceOf[js.Any])
+    inline def `set@media Leftparenthesismin-widthColon 42remRightparenthesis`(value: FontWeight): Self = StObject.set(x, "@media (min-width: 42rem)", value.asInstanceOf[js.Any])
     
     inline def `set@media Leftparenthesismin-widthColon 66remRightparenthesis`(value: FontFamily): Self = StObject.set(x, "@media (min-width: 66rem)", value.asInstanceOf[js.Any])
     

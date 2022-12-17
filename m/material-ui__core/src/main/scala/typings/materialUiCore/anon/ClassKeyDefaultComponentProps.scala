@@ -1,32 +1,32 @@
 package typings.materialUiCore.anon
 
 import typings.materialUiCore.buttonButtonMod.ButtonClassKey
-import typings.react.mod.ElementType
+import typings.materialUiCore.materialUiCoreStrings.button
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ClassKeyDefaultComponentProps[P, D /* <: ElementType[Any] */] extends StObject {
+trait ClassKeyDefaultComponentProps extends StObject {
   
   var classKey: ButtonClassKey
   
-  var defaultComponent: D
+  var defaultComponent: button
   
-  var props: P & DisableElevation
+  var props: DisableElevation
 }
 object ClassKeyDefaultComponentProps {
   
-  inline def apply[P, D /* <: ElementType[Any] */](classKey: ButtonClassKey, defaultComponent: D, props: P & DisableElevation): ClassKeyDefaultComponentProps[P, D] = {
-    val __obj = js.Dynamic.literal(classKey = classKey.asInstanceOf[js.Any], defaultComponent = defaultComponent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ClassKeyDefaultComponentProps[P, D]]
+  inline def apply(classKey: ButtonClassKey, props: DisableElevation): ClassKeyDefaultComponentProps = {
+    val __obj = js.Dynamic.literal(classKey = classKey.asInstanceOf[js.Any], defaultComponent = "button", props = props.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ClassKeyDefaultComponentProps]
   }
   
-  extension [Self <: ClassKeyDefaultComponentProps[?, ?], P, D /* <: ElementType[Any] */](x: Self & (ClassKeyDefaultComponentProps[P, D])) {
+  extension [Self <: ClassKeyDefaultComponentProps](x: Self) {
     
     inline def setClassKey(value: ButtonClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
     
-    inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
+    inline def setDefaultComponent(value: button): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
     
-    inline def setProps(value: P & DisableElevation): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: DisableElevation): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }
 }

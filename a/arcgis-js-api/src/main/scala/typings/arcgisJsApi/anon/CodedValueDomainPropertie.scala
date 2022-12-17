@@ -30,13 +30,12 @@ trait CodedValueDomainPropertie extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Domain.html#type)
     */
-  var `type`: (js.UndefOr[range | `coded-value` | inherited]) & `coded-value`
+  var `type`: js.UndefOr[range | `coded-value` | inherited] = js.undefined
 }
 object CodedValueDomainPropertie {
   
-  inline def apply(`type`: (js.UndefOr[range | `coded-value` | inherited]) & `coded-value`): CodedValueDomainPropertie = {
+  inline def apply(): CodedValueDomainPropertie = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodedValueDomainPropertie]
   }
   
@@ -52,6 +51,8 @@ object CodedValueDomainPropertie {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setType(value: (js.UndefOr[range | `coded-value` | inherited]) & `coded-value`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: range | `coded-value` | inherited): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

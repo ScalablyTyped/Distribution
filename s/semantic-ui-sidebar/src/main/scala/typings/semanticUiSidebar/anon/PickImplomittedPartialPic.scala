@@ -12,7 +12,7 @@ trait PickImplomittedPartialPic
   
   var fixed: js.UndefOr[String] = js.undefined
   
-  var omitted: String & js.UndefOr[String]
+  var omitted: String
   
   var pusher: js.UndefOr[String] = js.undefined
   
@@ -20,7 +20,7 @@ trait PickImplomittedPartialPic
 }
 object PickImplomittedPartialPic {
   
-  inline def apply(omitted: String & js.UndefOr[String]): PickImplomittedPartialPic = {
+  inline def apply(omitted: String): PickImplomittedPartialPic = {
     val __obj = js.Dynamic.literal(omitted = omitted.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplomittedPartialPic]
   }
@@ -31,7 +31,7 @@ object PickImplomittedPartialPic {
     
     inline def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
     
-    inline def setOmitted(value: String & js.UndefOr[String]): Self = StObject.set(x, "omitted", value.asInstanceOf[js.Any])
+    inline def setOmitted(value: String): Self = StObject.set(x, "omitted", value.asInstanceOf[js.Any])
     
     inline def setPusher(value: String): Self = StObject.set(x, "pusher", value.asInstanceOf[js.Any])
     

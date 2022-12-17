@@ -1,6 +1,6 @@
 package typings.antdMobile
 
-import typings.antdMobile.anon.CSSPropertiesPartialRecorAnimationPlayState
+import typings.antdMobile.anon.CSSPropertiesPartialRecorAnimationName
 import typings.antdMobile.anon.classNamestringundefineds
 import typings.antdMobile.antdMobileBooleans.`false`
 import typings.antdMobile.antdMobileBooleans.`true`
@@ -444,7 +444,7 @@ object esComponentsFormFormMod {
     
     var requiredMarkStyle: js.UndefOr[asterisk | `text-required` | `text-optional` | none] = js.undefined
     
-    var style: js.UndefOr[CSSPropertiesPartialRecorAnimationPlayState] = js.undefined
+    var style: js.UndefOr[CSSPropertiesPartialRecorAnimationName] = js.undefined
     
     var tabIndex: js.UndefOr[Double] = js.undefined
     
@@ -723,7 +723,7 @@ object esComponentsFormFormMod {
       
       inline def setRequiredMarkStyleUndefined: Self = StObject.set(x, "requiredMarkStyle", js.undefined)
       
-      inline def setStyle(value: CSSPropertiesPartialRecorAnimationPlayState): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSPropertiesPartialRecorAnimationName): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       

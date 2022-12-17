@@ -50,7 +50,7 @@ trait PickImplonDenyPartialPick
   
   def onDeny($element: JQuery): `false` | Unit
   @JSName("onDeny")
-  var onDeny_Original: (js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]])
+  var onDeny_Original: js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]
   
   var onHidden: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
@@ -74,9 +74,7 @@ trait PickImplonDenyPartialPick
 }
 object PickImplonDenyPartialPick {
   
-  inline def apply(
-    onDeny: (js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]])
-  ): PickImplonDenyPartialPick = {
+  inline def apply(onDeny: js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]): PickImplonDenyPartialPick = {
     val __obj = js.Dynamic.literal(onDeny = onDeny.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonDenyPartialPick]
   }
@@ -147,9 +145,7 @@ object PickImplonDenyPartialPick {
     
     inline def setOnApproveUndefined: Self = StObject.set(x, "onApprove", js.undefined)
     
-    inline def setOnDeny(
-      value: (js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]])
-    ): Self = StObject.set(x, "onDeny", value.asInstanceOf[js.Any])
+    inline def setOnDeny(value: js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]): Self = StObject.set(x, "onDeny", value.asInstanceOf[js.Any])
     
     inline def setOnHidden(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onHidden", value.asInstanceOf[js.Any])
     

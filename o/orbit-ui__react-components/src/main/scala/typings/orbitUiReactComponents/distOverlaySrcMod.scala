@@ -4,9 +4,9 @@ import typings.orbitUiReactComponents.anon.ArrowProps
 import typings.orbitUiReactComponents.anon.ArrowRef
 import typings.orbitUiReactComponents.anon.ClassNameString
 import typings.orbitUiReactComponents.anon.OnClick
+import typings.orbitUiReactComponents.anon.OnFocus
+import typings.orbitUiReactComponents.anon.OnKeyDown
 import typings.orbitUiReactComponents.anon.OnKeyDownUndefined
-import typings.orbitUiReactComponents.anon.OnKeyUp
-import typings.orbitUiReactComponents.anon.OnMouseEnter
 import typings.orbitUiReactComponents.anon.`1`
 import typings.orbitUiReactComponents.distOverlaySrcOverlayArrowMod.InnerOverlayArrowProps
 import typings.orbitUiReactComponents.distOverlaySrcOverlayMod.InnerOverlayProps
@@ -70,8 +70,8 @@ object distOverlaySrcMod {
   inline def useOverlayPosition(): ArrowRef = ^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayPosition")().asInstanceOf[ArrowRef]
   inline def useOverlayPosition(param0: UseOverlayPositionOptions): ArrowRef = ^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayPosition")(param0.asInstanceOf[js.Any]).asInstanceOf[ArrowRef]
   
-  inline def useOverlayTrigger(isOpen: Boolean): OnClick | OnKeyUp | OnMouseEnter = ^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayTrigger")(isOpen.asInstanceOf[js.Any]).asInstanceOf[OnClick | OnKeyUp | OnMouseEnter]
-  inline def useOverlayTrigger(isOpen: Boolean, param1: UseOverlayTriggerOptions): OnClick | OnKeyUp | OnMouseEnter = (^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayTrigger")(isOpen.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[OnClick | OnKeyUp | OnMouseEnter]
+  inline def useOverlayTrigger(isOpen: Boolean): OnClick | OnFocus | OnKeyDown = ^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayTrigger")(isOpen.asInstanceOf[js.Any]).asInstanceOf[OnClick | OnFocus | OnKeyDown]
+  inline def useOverlayTrigger(isOpen: Boolean, param1: UseOverlayTriggerOptions): OnClick | OnFocus | OnKeyDown = (^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayTrigger")(isOpen.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[OnClick | OnFocus | OnKeyDown]
   
   inline def usePopup(`type`: menu | listbox | dialog): ArrowProps = ^.asInstanceOf[js.Dynamic].applyDynamic("usePopup")(`type`.asInstanceOf[js.Any]).asInstanceOf[ArrowProps]
   inline def usePopup(`type`: menu | listbox | dialog, param1: UsePopupOptions): ArrowProps = (^.asInstanceOf[js.Dynamic].applyDynamic("usePopup")(`type`.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[ArrowProps]

@@ -76,13 +76,6 @@ object switchControl {
   
   object deprecated {
     
-    @JSImport("material-components-web", "switchControl.deprecated.default")
-    @js.native
-    open class default ()
-      extends typings.materialSwitch.mod.deprecated.default {
-      def this(adapter: PartialMDCSwitchAdapter) = this()
-    }
-    
     @JSImport("material-components-web", "switchControl.deprecated.MDCSwitch")
     @js.native
     open class MDCSwitch protected ()

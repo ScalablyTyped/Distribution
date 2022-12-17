@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CallableConstructor[OriginalConstructor /* <: Constructor[JSXCandidate] & js.Object */, Instance /* <: JSXCandidate */, Selector /* <: js.Function */]
+trait CallableConstructor[OriginalConstructor /* <: Constructor[JSXCandidate] */, Instance /* <: JSXCandidate */, Selector /* <: js.Function */]
   extends StObject
      with /** This constructor can be called as a factory, without "new". Doing so allows passing an attributes object which may include (in addition to the properties) children, event listeners and layout shorthands. */
 Instantiable1[/* args */ ConstructorParameters[OriginalConstructor], Instance] {

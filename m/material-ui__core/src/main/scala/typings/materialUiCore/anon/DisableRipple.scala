@@ -59,14 +59,16 @@ trait DisableRipple extends StObject {
 }
 object DisableRipple {
   
-  inline def apply(children: NonNullable[ReactNode]): DisableRipple = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+  inline def apply(): DisableRipple = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisableRipple]
   }
   
   extension [Self <: DisableRipple](x: Self) {
     
     inline def setChildren(value: NonNullable[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setColor(value: typings.materialUiCore.mod.PropTypes.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

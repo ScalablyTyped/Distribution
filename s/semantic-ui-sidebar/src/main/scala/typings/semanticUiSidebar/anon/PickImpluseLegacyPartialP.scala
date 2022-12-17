@@ -69,13 +69,13 @@ trait PickImpluseLegacyPartialP
   
   var transition: js.UndefOr[String] = js.undefined
   
-  var useLegacy: (auto | Boolean) & (js.UndefOr[auto | Boolean])
+  var useLegacy: auto | Boolean
   
   var verbose: js.UndefOr[Boolean] = js.undefined
 }
 object PickImpluseLegacyPartialP {
   
-  inline def apply(useLegacy: (auto | Boolean) & (js.UndefOr[auto | Boolean])): PickImpluseLegacyPartialP = {
+  inline def apply(useLegacy: auto | Boolean): PickImpluseLegacyPartialP = {
     val __obj = js.Dynamic.literal(useLegacy = useLegacy.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpluseLegacyPartialP]
   }
@@ -186,7 +186,7 @@ object PickImpluseLegacyPartialP {
     
     inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
     
-    inline def setUseLegacy(value: (auto | Boolean) & (js.UndefOr[auto | Boolean])): Self = StObject.set(x, "useLegacy", value.asInstanceOf[js.Any])
+    inline def setUseLegacy(value: auto | Boolean): Self = StObject.set(x, "useLegacy", value.asInstanceOf[js.Any])
     
     inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     

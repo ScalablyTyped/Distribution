@@ -7,20 +7,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `172` extends StObject {
   
   @JSName("application/json")
-  var applicationSlashjson: Mergemethod | Null
+  var applicationSlashjson: (Conclusion & Actions) | (DictkeyStatus & Actions)
 }
 object `172` {
   
-  inline def apply(): `172` = {
+  inline def apply(applicationSlashjson: (Conclusion & Actions) | (DictkeyStatus & Actions)): `172` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("application/json")(null)
+    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`172`]
   }
   
   extension [Self <: `172`](x: Self) {
     
-    inline def setApplicationSlashjson(value: Mergemethod): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
-    
-    inline def setApplicationSlashjsonNull: Self = StObject.set(x, "application/json", null)
+    inline def setApplicationSlashjson(value: (Conclusion & Actions) | (DictkeyStatus & Actions)): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }
 }

@@ -1,7 +1,7 @@
 package typings.expoConfigPlugins
 
 import typings.expoConfigPlugins.anon.PickExpoConfigios
-import typings.expoConfigPlugins.anon.Project
+import typings.expoConfigPlugins.anon.ProjectAny
 import typings.expoConfigPlugins.buildPluginDottypesMod.ConfigPlugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,7 +21,7 @@ object buildIosDeviceFamilyMod {
   
   inline def getSupportsTablet(config: PickExpoConfigios): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportsTablet")(config.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def setDeviceFamily(config: PickExpoConfigios, param1: Project): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setDeviceFamily")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def setDeviceFamily(config: PickExpoConfigios, param1: ProjectAny): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setDeviceFamily")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("@expo/config-plugins/build/ios/DeviceFamily", "withDeviceFamily")
   @js.native

@@ -1,7 +1,6 @@
 package typings.reactNativeCommunityCliTypes
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.reactNativeCommunityCliTypes.anon.Android
 import typings.reactNativeCommunityCliTypes.anon.Cmd
 import typings.reactNativeCommunityCliTypes.anon.Dictkey
 import typings.reactNativeCommunityCliTypes.anon.Dictname
@@ -331,9 +330,9 @@ object mod {
     
     var platforms: Dictname
     
-    var project: ProjectConfig & Android
+    var project: ProjectConfig
     
-    var reactNativePath: String & (String | Unit)
+    var reactNativePath: String
   }
   object UserConfig {
     
@@ -342,8 +341,8 @@ object mod {
       dependencies: StringDictionary[DependencyConfig],
       healthChecks: js.Array[Any],
       platforms: Dictname,
-      project: ProjectConfig & Android,
-      reactNativePath: String & (String | Unit)
+      project: ProjectConfig,
+      reactNativePath: String
     ): UserConfig = {
       val __obj = js.Dynamic.literal(commands = commands.asInstanceOf[js.Any], dependencies = dependencies.asInstanceOf[js.Any], healthChecks = healthChecks.asInstanceOf[js.Any], platforms = platforms.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], reactNativePath = reactNativePath.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserConfig]
@@ -363,9 +362,9 @@ object mod {
       
       inline def setPlatforms(value: Dictname): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
       
-      inline def setProject(value: ProjectConfig & Android): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: ProjectConfig): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
-      inline def setReactNativePath(value: String & (String | Unit)): Self = StObject.set(x, "reactNativePath", value.asInstanceOf[js.Any])
+      inline def setReactNativePath(value: String): Self = StObject.set(x, "reactNativePath", value.asInstanceOf[js.Any])
     }
   }
   

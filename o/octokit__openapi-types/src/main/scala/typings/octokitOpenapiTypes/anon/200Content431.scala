@@ -8,17 +8,22 @@ trait `200Content431` extends StObject {
   
   /** Response */
   var `200`: Content431
+  
+  var `304`: Any
 }
 object `200Content431` {
   
-  inline def apply(`200`: Content431): `200Content431` = {
+  inline def apply(`200`: Content431, `304`: Any): `200Content431` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
+    __obj.updateDynamic("304")(`304`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`200Content431`]
   }
   
   extension [Self <: `200Content431`](x: Self) {
     
     inline def set200(value: Content431): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+    
+    inline def set304(value: Any): Self = StObject.set(x, "304", value.asInstanceOf[js.Any])
   }
 }

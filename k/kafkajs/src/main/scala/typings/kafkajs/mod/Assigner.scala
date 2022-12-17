@@ -1,7 +1,7 @@
 package typings.kafkajs.mod
 
 import typings.kafkajs.anon.Members
-import typings.kafkajs.anon.TopicsArray
+import typings.kafkajs.anon.Topics
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ trait Assigner extends StObject {
   
   var name: String
   
-  def protocol(subscription: TopicsArray): GroupState
+  def protocol(subscription: Topics): GroupState
   
   var version: Double
 }
@@ -21,7 +21,7 @@ object Assigner {
   inline def apply(
     assign: Members => js.Promise[js.Array[GroupMemberAssignment]],
     name: String,
-    protocol: TopicsArray => GroupState,
+    protocol: Topics => GroupState,
     version: Double
   ): Assigner = {
     val __obj = js.Dynamic.literal(assign = js.Any.fromFunction1(assign), name = name.asInstanceOf[js.Any], protocol = js.Any.fromFunction1(protocol), version = version.asInstanceOf[js.Any])
@@ -34,7 +34,7 @@ object Assigner {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setProtocol(value: TopicsArray => GroupState): Self = StObject.set(x, "protocol", js.Any.fromFunction1(value))
+    inline def setProtocol(value: Topics => GroupState): Self = StObject.set(x, "protocol", js.Any.fromFunction1(value))
     
     inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }

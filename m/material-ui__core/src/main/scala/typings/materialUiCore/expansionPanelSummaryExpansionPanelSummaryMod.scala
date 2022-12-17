@@ -1,7 +1,7 @@
 package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
-import typings.materialUiCore.anon.DefaultComponentD
+import typings.materialUiCore.anon.ClassKeyExpansionPanelSummaryClassKey
 import typings.materialUiCore.buttonBaseButtonBaseMod.ExtendButtonBase
 import typings.materialUiCore.buttonBaseButtonBaseMod.ExtendButtonBaseTypeMap
 import typings.materialUiCore.materialUiCoreStrings.div
@@ -53,7 +53,7 @@ object expansionPanelSummaryExpansionPanelSummaryMod extends Shortcut {
   
   type ExpansionPanelSummaryProps[D /* <: ElementType[Any] */, P] = OverrideProps[ExpansionPanelSummaryTypeMap[P, D], D]
   
-  type ExpansionPanelSummaryTypeMap[P, D /* <: ElementType[Any] */] = ExtendButtonBaseTypeMap[DefaultComponentD[P, D]]
+  type ExpansionPanelSummaryTypeMap[P, D /* <: ElementType[Any] */] = ExtendButtonBaseTypeMap[ClassKeyExpansionPanelSummaryClassKey[P, D]]
   
   type _To = ExtendButtonBase[ExpansionPanelSummaryTypeMap[js.Object, div]]
   

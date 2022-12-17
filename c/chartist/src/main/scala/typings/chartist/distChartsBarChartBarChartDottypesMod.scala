@@ -27,7 +27,6 @@ import typings.chartist.distCoreTypesMod.Options
 import typings.chartist.distCoreTypesMod.Plugin
 import typings.chartist.distSvgMod.Svg
 import typings.chartist.distUtilsTypesMod.RequiredKeys
-import typings.std.Required
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -136,42 +135,34 @@ object distChartsBarChartBarChartDottypesMod {
     /**
       * Options for X-Axis
       */
-    var axisX: (js.UndefOr[
+    var axisX: js.UndefOr[
         RequiredKeys[
           AxisOptions, 
           offset | position | labelOffset | showLabel | showGrid | labelInterpolationFnc | scaleMinSpace, 
           scala.Nothing
         ]
-      ]) & (RequiredKeys[
-        AxisOptions, 
-        offset | position | labelOffset | showLabel | showGrid | labelInterpolationFnc | scaleMinSpace, 
-        scala.Nothing
-      ])
+      ] = js.undefined
     
     /**
       * Options for Y-Axis
       */
-    var axisY: (js.UndefOr[
+    var axisY: js.UndefOr[
         RequiredKeys[
           AxisOptions, 
           offset | position | labelOffset | showLabel | showGrid | labelInterpolationFnc | scaleMinSpace, 
           scala.Nothing
         ]
-      ]) & (RequiredKeys[
-        AxisOptions, 
-        offset | position | labelOffset | showLabel | showGrid | labelInterpolationFnc | scaleMinSpace, 
-        scala.Nothing
-      ])
+      ] = js.undefined
     
     /**
       *  Padding of the chart drawing area to the container element and labels as a number or padding object.
       */
-    var chartPadding: (js.UndefOr[Double | PartialChartPadding]) & (Double | PartialChartPadding)
+    var chartPadding: js.UndefOr[Double | PartialChartPadding] = js.undefined
     
     /**
       * Override the class names that get used to generate the SVG structure of the chart
       */
-    var classNames: js.UndefOr[Bar] & Bar & Required[js.UndefOr[Bar]]
+    var classNames: js.UndefOr[Bar] = js.undefined
     
     /**
       * If set to true then each bar will represent a series and the data array is expected to be a one dimensional array of data values rather than a series array of series. This is useful if the bar chart should represent a profile rather than some data over time.
@@ -203,7 +194,7 @@ object distChartsBarChartBarChartDottypesMod {
     /**
       * Unless low/high are explicitly set, bar chart will be centered at zero by default. Set referenceValue to null to auto scale.
       */
-    var referenceValue: js.UndefOr[Double] & Double
+    var referenceValue: js.UndefOr[Double] = js.undefined
     
     /**
       * If true the whole data is reversed including labels, the series order as well as the whole series data arrays.
@@ -213,7 +204,7 @@ object distChartsBarChartBarChartDottypesMod {
     /**
       * Specify the distance in pixel of bars in a group
       */
-    var seriesBarDistance: js.UndefOr[Double] & Double
+    var seriesBarDistance: js.UndefOr[Double] = js.undefined
     
     /**
       * If the bar chart should add a background fill to the .ct-grids group.
@@ -230,7 +221,7 @@ object distChartsBarChartBarChartDottypesMod {
       * If set to 'accumulate' this property will form a total for each series point. This will also influence the y-axis and the overall bounds of the chart. In stacked mode the seriesBarDistance property will have no effect.
       * If set to 'accumulate-relative' positive and negative values will be handled separately.
       */
-    var stackMode: (js.UndefOr[accumulate | `accumulate-relative` | Boolean]) & (accumulate | `accumulate-relative` | Boolean)
+    var stackMode: js.UndefOr[accumulate | `accumulate-relative` | Boolean] = js.undefined
     
     /**
       * Specify a fixed width for the chart as a string (i.e. '100px' or '50%')
@@ -239,72 +230,40 @@ object distChartsBarChartBarChartDottypesMod {
   }
   object BarChartOptionsWithDefaults {
     
-    inline def apply(
-      axisX: (js.UndefOr[
-          RequiredKeys[
-            AxisOptions, 
-            offset | position | labelOffset | showLabel | showGrid | labelInterpolationFnc | scaleMinSpace, 
-            scala.Nothing
-          ]
-        ]) & (RequiredKeys[
-          AxisOptions, 
-          offset | position | labelOffset | showLabel | showGrid | labelInterpolationFnc | scaleMinSpace, 
-          scala.Nothing
-        ]),
-      axisY: (js.UndefOr[
-          RequiredKeys[
-            AxisOptions, 
-            offset | position | labelOffset | showLabel | showGrid | labelInterpolationFnc | scaleMinSpace, 
-            scala.Nothing
-          ]
-        ]) & (RequiredKeys[
-          AxisOptions, 
-          offset | position | labelOffset | showLabel | showGrid | labelInterpolationFnc | scaleMinSpace, 
-          scala.Nothing
-        ]),
-      chartPadding: (js.UndefOr[Double | PartialChartPadding]) & (Double | PartialChartPadding),
-      classNames: js.UndefOr[Bar] & Bar & Required[js.UndefOr[Bar]],
-      referenceValue: js.UndefOr[Double] & Double,
-      seriesBarDistance: js.UndefOr[Double] & Double,
-      stackMode: (js.UndefOr[accumulate | `accumulate-relative` | Boolean]) & (accumulate | `accumulate-relative` | Boolean)
-    ): BarChartOptionsWithDefaults = {
-      val __obj = js.Dynamic.literal(axisX = axisX.asInstanceOf[js.Any], axisY = axisY.asInstanceOf[js.Any], chartPadding = chartPadding.asInstanceOf[js.Any], classNames = classNames.asInstanceOf[js.Any], referenceValue = referenceValue.asInstanceOf[js.Any], seriesBarDistance = seriesBarDistance.asInstanceOf[js.Any], stackMode = stackMode.asInstanceOf[js.Any])
+    inline def apply(): BarChartOptionsWithDefaults = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BarChartOptionsWithDefaults]
     }
     
     extension [Self <: BarChartOptionsWithDefaults](x: Self) {
       
       inline def setAxisX(
-        value: (js.UndefOr[
-              RequiredKeys[
-                AxisOptions, 
-                offset | position | labelOffset | showLabel | showGrid | labelInterpolationFnc | scaleMinSpace, 
-                scala.Nothing
-              ]
-            ]) & (RequiredKeys[
+        value: RequiredKeys[
               AxisOptions, 
               offset | position | labelOffset | showLabel | showGrid | labelInterpolationFnc | scaleMinSpace, 
               scala.Nothing
-            ])
+            ]
       ): Self = StObject.set(x, "axisX", value.asInstanceOf[js.Any])
       
+      inline def setAxisXUndefined: Self = StObject.set(x, "axisX", js.undefined)
+      
       inline def setAxisY(
-        value: (js.UndefOr[
-              RequiredKeys[
-                AxisOptions, 
-                offset | position | labelOffset | showLabel | showGrid | labelInterpolationFnc | scaleMinSpace, 
-                scala.Nothing
-              ]
-            ]) & (RequiredKeys[
+        value: RequiredKeys[
               AxisOptions, 
               offset | position | labelOffset | showLabel | showGrid | labelInterpolationFnc | scaleMinSpace, 
               scala.Nothing
-            ])
+            ]
       ): Self = StObject.set(x, "axisY", value.asInstanceOf[js.Any])
       
-      inline def setChartPadding(value: (js.UndefOr[Double | PartialChartPadding]) & (Double | PartialChartPadding)): Self = StObject.set(x, "chartPadding", value.asInstanceOf[js.Any])
+      inline def setAxisYUndefined: Self = StObject.set(x, "axisY", js.undefined)
       
-      inline def setClassNames(value: js.UndefOr[Bar] & Bar & Required[js.UndefOr[Bar]]): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
+      inline def setChartPadding(value: Double | PartialChartPadding): Self = StObject.set(x, "chartPadding", value.asInstanceOf[js.Any])
+      
+      inline def setChartPaddingUndefined: Self = StObject.set(x, "chartPadding", js.undefined)
+      
+      inline def setClassNames(value: Bar): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
+      
+      inline def setClassNamesUndefined: Self = StObject.set(x, "classNames", js.undefined)
       
       inline def setDistributeSeries(value: Boolean): Self = StObject.set(x, "distributeSeries", value.asInstanceOf[js.Any])
       
@@ -332,13 +291,17 @@ object distChartsBarChartBarChartDottypesMod {
       
       inline def setPluginsVarargs(value: (Plugin | (js.Tuple2[Plugin, Any]))*): Self = StObject.set(x, "plugins", js.Array(value*))
       
-      inline def setReferenceValue(value: js.UndefOr[Double] & Double): Self = StObject.set(x, "referenceValue", value.asInstanceOf[js.Any])
+      inline def setReferenceValue(value: Double): Self = StObject.set(x, "referenceValue", value.asInstanceOf[js.Any])
+      
+      inline def setReferenceValueUndefined: Self = StObject.set(x, "referenceValue", js.undefined)
       
       inline def setReverseData(value: Boolean): Self = StObject.set(x, "reverseData", value.asInstanceOf[js.Any])
       
       inline def setReverseDataUndefined: Self = StObject.set(x, "reverseData", js.undefined)
       
-      inline def setSeriesBarDistance(value: js.UndefOr[Double] & Double): Self = StObject.set(x, "seriesBarDistance", value.asInstanceOf[js.Any])
+      inline def setSeriesBarDistance(value: Double): Self = StObject.set(x, "seriesBarDistance", value.asInstanceOf[js.Any])
+      
+      inline def setSeriesBarDistanceUndefined: Self = StObject.set(x, "seriesBarDistance", js.undefined)
       
       inline def setShowGridBackground(value: Boolean): Self = StObject.set(x, "showGridBackground", value.asInstanceOf[js.Any])
       
@@ -348,9 +311,9 @@ object distChartsBarChartBarChartDottypesMod {
       
       inline def setStackBarsUndefined: Self = StObject.set(x, "stackBars", js.undefined)
       
-      inline def setStackMode(
-        value: (js.UndefOr[accumulate | `accumulate-relative` | Boolean]) & (accumulate | `accumulate-relative` | Boolean)
-      ): Self = StObject.set(x, "stackMode", value.asInstanceOf[js.Any])
+      inline def setStackMode(value: accumulate | `accumulate-relative` | Boolean): Self = StObject.set(x, "stackMode", value.asInstanceOf[js.Any])
+      
+      inline def setStackModeUndefined: Self = StObject.set(x, "stackMode", js.undefined)
       
       inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       

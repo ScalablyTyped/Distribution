@@ -1,18 +1,14 @@
 package typings.grommet.anon
 
-import typings.grommet.themesBaseMod.ExtendProps
-import typings.grommet.themesBaseMod.ExtendType
-import typings.grommet.themesBaseMod.ExtendValue
-import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `25` extends StObject {
   
-  var extend: js.UndefOr[ExtendType[Record[String, Any]]] = js.undefined
+  var background: js.UndefOr[`5`] = js.undefined
   
-  var size: js.UndefOr[DictxLarge] = js.undefined
+  var border: js.UndefOr[`5`] = js.undefined
 }
 object `25` {
   
@@ -23,14 +19,12 @@ object `25` {
   
   extension [Self <: `25`](x: Self) {
     
-    inline def setExtend(value: ExtendType[Record[String, Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+    inline def setBackground(value: `5`): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    inline def setExtendFunction1(value: /* props */ ExtendProps[Record[String, Any]] => ExtendValue[Record[String, Any]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
+    inline def setBorder(value: `5`): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
-    inline def setSize(value: DictxLarge): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-    
-    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
   }
 }

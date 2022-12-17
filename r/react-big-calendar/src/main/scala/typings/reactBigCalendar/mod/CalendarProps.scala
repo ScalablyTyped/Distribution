@@ -8,7 +8,6 @@ import typings.react.mod.SyntheticEvent
 import typings.reactBigCalendar.anon.Accessors
 import typings.reactBigCalendar.anon.ClassName
 import typings.reactBigCalendar.anon.End
-import typings.reactBigCalendar.anon.Style
 import typings.reactBigCalendar.anon.X
 import typings.reactBigCalendar.reactBigCalendarStrings.ignoreEvents
 import typings.std.HTMLDivElement
@@ -203,7 +202,7 @@ object CalendarProps {
     
     inline def setDayLayoutAlgorithm(value: DayLayoutAlgorithm | DayLayoutFunction[TEvent]): Self = StObject.set(x, "dayLayoutAlgorithm", value.asInstanceOf[js.Any])
     
-    inline def setDayLayoutAlgorithmFunction1(value: /* _ */ Accessors[TEvent] => js.Array[Style[TEvent]]): Self = StObject.set(x, "dayLayoutAlgorithm", js.Any.fromFunction1(value))
+    inline def setDayLayoutAlgorithmFunction1(value: /* _ */ Accessors[TEvent] => js.Array[typings.reactBigCalendar.anon.Event[TEvent]]): Self = StObject.set(x, "dayLayoutAlgorithm", js.Any.fromFunction1(value))
     
     inline def setDayLayoutAlgorithmUndefined: Self = StObject.set(x, "dayLayoutAlgorithm", js.undefined)
     

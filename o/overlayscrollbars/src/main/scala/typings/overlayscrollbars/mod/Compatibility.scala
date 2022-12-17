@@ -1,6 +1,6 @@
 package typings.overlayscrollbars.mod
 
-import typings.overlayscrollbars.anon.X
+import typings.overlayscrollbars.anon.XNumber
 import typings.std.Event
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
@@ -23,7 +23,7 @@ trait Compatibility extends StObject {
   
   def now(): Double
   
-  def page(event: MouseEvent): X
+  def page(event: MouseEvent): XNumber
   
   def prvD(event: Event): Unit
   
@@ -49,7 +49,7 @@ object Compatibility {
     mBtn: MouseEvent => Double,
     mO: () => Any,
     now: () => Double,
-    page: MouseEvent => X,
+    page: MouseEvent => XNumber,
     prvD: Event => Unit,
     rAF: () => js.Function1[/* callback */ js.Function1[/* repeated */ Any, Any], Double],
     rO: () => Any,
@@ -79,7 +79,7 @@ object Compatibility {
     
     inline def setNow(value: () => Double): Self = StObject.set(x, "now", js.Any.fromFunction0(value))
     
-    inline def setPage(value: MouseEvent => X): Self = StObject.set(x, "page", js.Any.fromFunction1(value))
+    inline def setPage(value: MouseEvent => XNumber): Self = StObject.set(x, "page", js.Any.fromFunction1(value))
     
     inline def setPrvD(value: Event => Unit): Self = StObject.set(x, "prvD", js.Any.fromFunction1(value))
     

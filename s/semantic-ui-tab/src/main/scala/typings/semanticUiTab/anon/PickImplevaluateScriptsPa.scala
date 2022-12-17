@@ -48,7 +48,7 @@ trait PickImplevaluateScriptsPa
   
   var error: js.UndefOr[ErrorSettings] = js.undefined
   
-  var evaluateScripts: (once | Boolean) & (js.UndefOr[once | Boolean])
+  var evaluateScripts: once | Boolean
   
   var history: js.UndefOr[Boolean] = js.undefined
   
@@ -104,7 +104,7 @@ trait PickImplevaluateScriptsPa
 }
 object PickImplevaluateScriptsPa {
   
-  inline def apply(evaluateScripts: (once | Boolean) & (js.UndefOr[once | Boolean])): PickImplevaluateScriptsPa = {
+  inline def apply(evaluateScripts: once | Boolean): PickImplevaluateScriptsPa = {
     val __obj = js.Dynamic.literal(evaluateScripts = evaluateScripts.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplevaluateScriptsPa]
   }
@@ -155,7 +155,7 @@ object PickImplevaluateScriptsPa {
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    inline def setEvaluateScripts(value: (once | Boolean) & (js.UndefOr[once | Boolean])): Self = StObject.set(x, "evaluateScripts", value.asInstanceOf[js.Any])
+    inline def setEvaluateScripts(value: once | Boolean): Self = StObject.set(x, "evaluateScripts", value.asInstanceOf[js.Any])
     
     inline def setHistory(value: Boolean): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     

@@ -141,7 +141,7 @@ trait PickImplplaceholderPartia
   
   var performance: js.UndefOr[Boolean] = js.undefined
   
-  var placeholder: (auto | value | `false`) & (js.UndefOr[auto | value | `false`])
+  var placeholder: auto | value | `false`
   
   var preserveHTML: js.UndefOr[Boolean] = js.undefined
   
@@ -169,7 +169,7 @@ trait PickImplplaceholderPartia
 }
 object PickImplplaceholderPartia {
   
-  inline def apply(placeholder: (auto | value | `false`) & (js.UndefOr[auto | value | `false`])): PickImplplaceholderPartia = {
+  inline def apply(placeholder: auto | value | `false`): PickImplplaceholderPartia = {
     val __obj = js.Dynamic.literal(placeholder = placeholder.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplplaceholderPartia]
   }
@@ -362,7 +362,7 @@ object PickImplplaceholderPartia {
     
     inline def setPerformanceUndefined: Self = StObject.set(x, "performance", js.undefined)
     
-    inline def setPlaceholder(value: (auto | value | `false`) & (js.UndefOr[auto | value | `false`])): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: auto | value | `false`): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     inline def setPreserveHTML(value: Boolean): Self = StObject.set(x, "preserveHTML", value.asInstanceOf[js.Any])
     

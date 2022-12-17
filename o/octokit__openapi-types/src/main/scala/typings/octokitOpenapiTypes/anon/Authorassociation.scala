@@ -46,9 +46,9 @@ trait Authorassociation extends StObject {
   
   var node_id: String
   
-  var performed_via_github_app: js.UndefOr[Clientsecret | Null] = js.undefined
+  var performed_via_github_app: js.UndefOr[Externalurl | Null] = js.undefined
   
-  var reactions: js.UndefOr[`1`] = js.undefined
+  var reactions: js.UndefOr[Confused] = js.undefined
   
   /**
     * Format: date-time
@@ -109,13 +109,13 @@ object Authorassociation {
     
     inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
-    inline def setPerformed_via_github_app(value: Clientsecret): Self = StObject.set(x, "performed_via_github_app", value.asInstanceOf[js.Any])
+    inline def setPerformed_via_github_app(value: Externalurl): Self = StObject.set(x, "performed_via_github_app", value.asInstanceOf[js.Any])
     
     inline def setPerformed_via_github_appNull: Self = StObject.set(x, "performed_via_github_app", null)
     
     inline def setPerformed_via_github_appUndefined: Self = StObject.set(x, "performed_via_github_app", js.undefined)
     
-    inline def setReactions(value: `1`): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
+    inline def setReactions(value: Confused): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
     
     inline def setReactionsUndefined: Self = StObject.set(x, "reactions", js.undefined)
     

@@ -1,7 +1,6 @@
 package typings.vscode.anon
 
 import typings.vscode.mod.QuickPickItem
-import typings.vscode.vscodeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ trait QuickPickOptionscanPickMa extends StObject {
   /**
     * An optional flag to make the picker accept multiple selections, if true the result is an array of picks.
     */
-  var canPickMany: js.UndefOr[Boolean] & `true`
+  var canPickMany: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set to `true` to keep the picker open when focus moves to another part of the editor or to another window.
@@ -47,14 +46,16 @@ trait QuickPickOptionscanPickMa extends StObject {
 }
 object QuickPickOptionscanPickMa {
   
-  inline def apply(canPickMany: js.UndefOr[Boolean] & `true`): QuickPickOptionscanPickMa = {
-    val __obj = js.Dynamic.literal(canPickMany = canPickMany.asInstanceOf[js.Any])
+  inline def apply(): QuickPickOptionscanPickMa = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QuickPickOptionscanPickMa]
   }
   
   extension [Self <: QuickPickOptionscanPickMa](x: Self) {
     
-    inline def setCanPickMany(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "canPickMany", value.asInstanceOf[js.Any])
+    inline def setCanPickMany(value: Boolean): Self = StObject.set(x, "canPickMany", value.asInstanceOf[js.Any])
+    
+    inline def setCanPickManyUndefined: Self = StObject.set(x, "canPickMany", js.undefined)
     
     inline def setIgnoreFocusOut(value: Boolean): Self = StObject.set(x, "ignoreFocusOut", value.asInstanceOf[js.Any])
     

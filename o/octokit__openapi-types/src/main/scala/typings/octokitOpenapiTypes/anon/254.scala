@@ -1,28 +1,33 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.admin
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.maintain
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.read
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.triage
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.write
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `254` extends StObject {
   
-  @JSName("application/json")
-  var applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['actions-set-default-workflow-permissions'] */ js.Any
+  /**
+    * @description The permissions that the associated user will have on the repository. Valid values are `read`, `write`, `maintain`, `triage`, and `admin`.
+    * @enum {string}
+    */
+  var permissions: js.UndefOr[read | write | maintain | triage | admin] = js.undefined
 }
 object `254` {
   
-  inline def apply(
-    applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['actions-set-default-workflow-permissions'] */ js.Any
-  ): `254` = {
+  inline def apply(): `254` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`254`]
   }
   
   extension [Self <: `254`](x: Self) {
     
-    inline def setApplicationSlashjson(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['actions-set-default-workflow-permissions'] */ js.Any
-    ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: read | write | maintain | triage | admin): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    
+    inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
   }
 }

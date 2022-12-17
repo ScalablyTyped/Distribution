@@ -1,33 +1,37 @@
 package typings.carbonElements.anon
 
-import typings.carbonElements.carbonElementsDoubles.`1.05`
-import typings.carbonElements.carbonElementsStrings.`-0Dot96px`
-import typings.carbonElements.carbonElementsStrings.`9Dot75rem`
+import typings.carbonElements.carbonElementsDoubles.`1.375`
+import typings.carbonElements.carbonElementsInts.`600`
+import typings.carbonElements.carbonElementsStrings.`1rem`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `5` extends StObject {
   
-  var fontSize: `9Dot75rem`
+  var fontSize: `1rem`
   
-  var letterSpacing: `-0Dot96px`
+  var fontWeight: `600`
   
-  var lineHeight: `1.05`
+  var letterSpacing: typings.carbonElements.carbonElementsInts.`0`
+  
+  var lineHeight: `1.375`
 }
 object `5` {
   
   inline def apply(): `5` = {
-    val __obj = js.Dynamic.literal(fontSize = "9.75rem", letterSpacing = "-0.96px", lineHeight = 1.05d)
+    val __obj = js.Dynamic.literal(fontSize = "1rem", fontWeight = 600, letterSpacing = 0, lineHeight = 1.375d)
     __obj.asInstanceOf[`5`]
   }
   
   extension [Self <: `5`](x: Self) {
     
-    inline def setFontSize(value: `9Dot75rem`): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: `1rem`): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
-    inline def setLetterSpacing(value: `-0Dot96px`): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
+    inline def setFontWeight(value: `600`): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
-    inline def setLineHeight(value: `1.05`): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+    inline def setLetterSpacing(value: typings.carbonElements.carbonElementsInts.`0`): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
+    
+    inline def setLineHeight(value: `1.375`): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
   }
 }

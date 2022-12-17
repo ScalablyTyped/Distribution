@@ -16,7 +16,7 @@ trait PickImplcreditCardPartial
   
   var containExactly: js.UndefOr[String] = js.undefined
   
-  var creditCard: String & js.UndefOr[String]
+  var creditCard: String
   
   var decimal: js.UndefOr[String] = js.undefined
   
@@ -64,7 +64,7 @@ trait PickImplcreditCardPartial
 }
 object PickImplcreditCardPartial {
   
-  inline def apply(creditCard: String & js.UndefOr[String]): PickImplcreditCardPartial = {
+  inline def apply(creditCard: String): PickImplcreditCardPartial = {
     val __obj = js.Dynamic.literal(creditCard = creditCard.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplcreditCardPartial]
   }
@@ -83,7 +83,7 @@ object PickImplcreditCardPartial {
     
     inline def setContainUndefined: Self = StObject.set(x, "contain", js.undefined)
     
-    inline def setCreditCard(value: String & js.UndefOr[String]): Self = StObject.set(x, "creditCard", value.asInstanceOf[js.Any])
+    inline def setCreditCard(value: String): Self = StObject.set(x, "creditCard", value.asInstanceOf[js.Any])
     
     inline def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
     

@@ -3,9 +3,6 @@ package typings.vegaTypings
 import typings.vegaTypings.typesSpecExprMod.Expr
 import typings.vegaTypings.typesSpecMarktypeMod.MarkType
 import typings.vegaTypings.typesSpecOnEventsMod.EventListener
-import typings.vegaTypings.vegaTypingsStrings.scope
-import typings.vegaTypings.vegaTypingsStrings.view
-import typings.vegaTypings.vegaTypingsStrings.window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +29,13 @@ object typesSpecStreamMod {
     }
   }
   
-  type EventSource = (js.UndefOr[view | scope | window]) & js.Object
+  /* Rewritten from type alias, can be one of: 
+    - typings.vegaTypings.vegaTypingsStrings.view
+    - typings.vegaTypings.vegaTypingsStrings.scope
+    - scala.Unit
+    - typings.vegaTypings.vegaTypingsStrings.window
+  */
+  type EventSource = js.UndefOr[_EventSource]
   
   /* Rewritten from type alias, can be one of: 
     - typings.vegaTypings.anon.sourceviewscopeundefinedt
@@ -234,4 +237,6 @@ object typesSpecStreamMod {
   }
   
   type WindowEventType = EventType | String
+  
+  trait _EventSource extends StObject
 }

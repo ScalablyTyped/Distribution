@@ -1,6 +1,5 @@
 package typings.playcanvas.global.pc
 
-import typings.playcanvas.mod.AppBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,6 +56,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class Entity ()
   extends typings.playcanvas.mod.Entity {
   def this(name: String) = this()
-  def this(name: String, app: AppBase) = this()
-  def this(name: Unit, app: AppBase) = this()
+  def this(name: String, app: typings.playcanvas.mod.AppBase) = this()
+  def this(name: Unit, app: typings.playcanvas.mod.AppBase) = this()
 }

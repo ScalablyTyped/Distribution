@@ -8,10 +8,9 @@ import typings.tuyaPanelKit.`@reactNavigationRoutersStackRouterMod`.StackNavigat
 import typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.NavigationAction
 import typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.ParamListBase
 import typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.PartialState
-import typings.tuyaPanelKit.anon.B
-import typings.tuyaPanelKit.anon.BC
-import typings.tuyaPanelKit.anon.KeyNameRouteName
-import typings.tuyaPanelKit.anon.KeyString
+import typings.tuyaPanelKit.anon.A
+import typings.tuyaPanelKit.anon.KeyParams
+import typings.tuyaPanelKit.anon.NameRouteName
 import typings.tuyaPanelKit.anon.PartialStackNavigationOpt
 import typings.tuyaPanelKit.tuyaPanelKitStrings.beforeRemove
 import typings.tuyaPanelKit.tuyaPanelKitStrings.blur
@@ -41,7 +40,7 @@ trait StackNavigationProp[ParamList /* <: ParamListBase */, RouteName /* <: /* k
     * Turns out if we use an empty string, it doesn't show up in intelliSense.
     */
   /* protected */ @JSName("")
-  var _empty: js.UndefOr[B[ParamList]] & (js.UndefOr[BC[ParamList, RouteName]]) = js.native
+  var _empty: js.UndefOr[A[ParamList]] = js.native
   
   /**
     * Subscribe to events from the parent navigator.
@@ -109,13 +108,13 @@ trait StackNavigationProp[ParamList /* <: ParamListBase */, RouteName /* <: /* k
   def navigate[RouteName /* <: /* keyof ParamList */ String */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type undefined extends ParamList[RouteName] ? [RouteName] | [RouteName, ParamList[RouteName]] : [RouteName, ParamList[RouteName]] is not an array type */ args: /* import warning: importer.ImportType#apply Failed type conversion: undefined extends ParamList[RouteName] ? [RouteName] | [RouteName, ParamList[RouteName]] : [RouteName, ParamList[RouteName]] */ js.Any
   ): Unit = js.native
-  def navigate[RouteName /* <: /* keyof ParamList */ String */](route: KeyNameRouteName[RouteName, ParamList]): Unit = js.native
   /**
     * Navigate to a route in current navigation tree.
     *
     * @param route Object with `key` or `name` for the route to navigate to, and a `params` object.
     */
-  def navigate[RouteName /* <: /* keyof ParamList */ String */](route: KeyString[ParamList, RouteName]): Unit = js.native
+  def navigate[RouteName /* <: /* keyof ParamList */ String */](route: KeyParams[ParamList, RouteName]): Unit = js.native
+  def navigate[RouteName /* <: /* keyof ParamList */ String */](route: NameRouteName[RouteName, ParamList]): Unit = js.native
   
   /**
     * Pop a screen from the stack.

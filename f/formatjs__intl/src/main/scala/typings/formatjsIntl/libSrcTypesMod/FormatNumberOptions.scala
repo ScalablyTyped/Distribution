@@ -1,12 +1,6 @@
 package typings.formatjsIntl.libSrcTypesMod
 
-import typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatOptionsCompactDisplay
-import typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatOptionsCurrencyDisplay
-import typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatOptionsCurrencySign
-import typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatOptionsNotation
 import typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatOptionsSignDisplay
-import typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatOptionsStyle
-import typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatOptionsUnitDisplay
 import typings.formatjsEcma402Abstract.typesNumberMod.RoundingModeType
 import typings.formatjsEcma402Abstract.typesNumberMod.RoundingPriorityType
 import typings.formatjsEcma402Abstract.typesNumberMod.TrailingZeroDisplay
@@ -25,13 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Omit<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract.NumberFormatOptions, 'localeMatcher'> & @formatjs/intl.@formatjs/intl/lib/src/types.CustomFormatConfig<'number'> */
 trait FormatNumberOptions extends StObject {
   
-  var compactDisplay: (js.UndefOr[short | long]) & js.UndefOr[NumberFormatOptionsCompactDisplay]
+  var compactDisplay: js.UndefOr[short | long] = js.undefined
   
   var currency: js.UndefOr[String] = js.undefined
   
-  var currencyDisplay: js.UndefOr[String] & js.UndefOr[NumberFormatOptionsCurrencyDisplay]
+  var currencyDisplay: js.UndefOr[String] = js.undefined
   
-  var currencySign: js.UndefOr[String] & js.UndefOr[NumberFormatOptionsCurrencySign]
+  var currencySign: js.UndefOr[String] = js.undefined
   
   var format: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: 'number' extends keyof @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats ? @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats['number'] : string */ js.Any
@@ -47,7 +41,7 @@ trait FormatNumberOptions extends StObject {
   
   var minimumSignificantDigits: js.UndefOr[Double] = js.undefined
   
-  var notation: (js.UndefOr[standard | scientific | engineering | compact]) & js.UndefOr[NumberFormatOptionsNotation]
+  var notation: js.UndefOr[standard | scientific | engineering | compact] = js.undefined
   
   var numberingSystem: js.UndefOr[String] = js.undefined
   
@@ -59,39 +53,38 @@ trait FormatNumberOptions extends StObject {
   
   var signDisplay: js.UndefOr[NumberFormatOptionsSignDisplay] = js.undefined
   
-  var style: js.UndefOr[String] & js.UndefOr[NumberFormatOptionsStyle]
+  var style: js.UndefOr[String] = js.undefined
   
   var trailingZeroDisplay: js.UndefOr[TrailingZeroDisplay] = js.undefined
   
   var unit: js.UndefOr[String] = js.undefined
   
-  var unitDisplay: (js.UndefOr[short | long | narrow]) & js.UndefOr[NumberFormatOptionsUnitDisplay]
+  var unitDisplay: js.UndefOr[short | long | narrow] = js.undefined
   
   var useGrouping: js.UndefOr[UseGroupingType] = js.undefined
 }
 object FormatNumberOptions {
   
-  inline def apply(
-    compactDisplay: (js.UndefOr[short | long]) & js.UndefOr[NumberFormatOptionsCompactDisplay],
-    currencyDisplay: js.UndefOr[String] & js.UndefOr[NumberFormatOptionsCurrencyDisplay],
-    currencySign: js.UndefOr[String] & js.UndefOr[NumberFormatOptionsCurrencySign],
-    notation: (js.UndefOr[standard | scientific | engineering | compact]) & js.UndefOr[NumberFormatOptionsNotation],
-    style: js.UndefOr[String] & js.UndefOr[NumberFormatOptionsStyle],
-    unitDisplay: (js.UndefOr[short | long | narrow]) & js.UndefOr[NumberFormatOptionsUnitDisplay]
-  ): FormatNumberOptions = {
-    val __obj = js.Dynamic.literal(compactDisplay = compactDisplay.asInstanceOf[js.Any], currencyDisplay = currencyDisplay.asInstanceOf[js.Any], currencySign = currencySign.asInstanceOf[js.Any], notation = notation.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], unitDisplay = unitDisplay.asInstanceOf[js.Any])
+  inline def apply(): FormatNumberOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FormatNumberOptions]
   }
   
   extension [Self <: FormatNumberOptions](x: Self) {
     
-    inline def setCompactDisplay(value: (js.UndefOr[short | long]) & js.UndefOr[NumberFormatOptionsCompactDisplay]): Self = StObject.set(x, "compactDisplay", value.asInstanceOf[js.Any])
+    inline def setCompactDisplay(value: short | long): Self = StObject.set(x, "compactDisplay", value.asInstanceOf[js.Any])
+    
+    inline def setCompactDisplayUndefined: Self = StObject.set(x, "compactDisplay", js.undefined)
     
     inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
-    inline def setCurrencyDisplay(value: js.UndefOr[String] & js.UndefOr[NumberFormatOptionsCurrencyDisplay]): Self = StObject.set(x, "currencyDisplay", value.asInstanceOf[js.Any])
+    inline def setCurrencyDisplay(value: String): Self = StObject.set(x, "currencyDisplay", value.asInstanceOf[js.Any])
     
-    inline def setCurrencySign(value: js.UndefOr[String] & js.UndefOr[NumberFormatOptionsCurrencySign]): Self = StObject.set(x, "currencySign", value.asInstanceOf[js.Any])
+    inline def setCurrencyDisplayUndefined: Self = StObject.set(x, "currencyDisplay", js.undefined)
+    
+    inline def setCurrencySign(value: String): Self = StObject.set(x, "currencySign", value.asInstanceOf[js.Any])
+    
+    inline def setCurrencySignUndefined: Self = StObject.set(x, "currencySign", js.undefined)
     
     inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
     
@@ -121,9 +114,9 @@ object FormatNumberOptions {
     
     inline def setMinimumSignificantDigitsUndefined: Self = StObject.set(x, "minimumSignificantDigits", js.undefined)
     
-    inline def setNotation(
-      value: (js.UndefOr[standard | scientific | engineering | compact]) & js.UndefOr[NumberFormatOptionsNotation]
-    ): Self = StObject.set(x, "notation", value.asInstanceOf[js.Any])
+    inline def setNotation(value: standard | scientific | engineering | compact): Self = StObject.set(x, "notation", value.asInstanceOf[js.Any])
+    
+    inline def setNotationUndefined: Self = StObject.set(x, "notation", js.undefined)
     
     inline def setNumberingSystem(value: String): Self = StObject.set(x, "numberingSystem", value.asInstanceOf[js.Any])
     
@@ -145,7 +138,9 @@ object FormatNumberOptions {
     
     inline def setSignDisplayUndefined: Self = StObject.set(x, "signDisplay", js.undefined)
     
-    inline def setStyle(value: js.UndefOr[String] & js.UndefOr[NumberFormatOptionsStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     inline def setTrailingZeroDisplay(value: TrailingZeroDisplay): Self = StObject.set(x, "trailingZeroDisplay", value.asInstanceOf[js.Any])
     
@@ -153,7 +148,9 @@ object FormatNumberOptions {
     
     inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    inline def setUnitDisplay(value: (js.UndefOr[short | long | narrow]) & js.UndefOr[NumberFormatOptionsUnitDisplay]): Self = StObject.set(x, "unitDisplay", value.asInstanceOf[js.Any])
+    inline def setUnitDisplay(value: short | long | narrow): Self = StObject.set(x, "unitDisplay", value.asInstanceOf[js.Any])
+    
+    inline def setUnitDisplayUndefined: Self = StObject.set(x, "unitDisplay", js.undefined)
     
     inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     

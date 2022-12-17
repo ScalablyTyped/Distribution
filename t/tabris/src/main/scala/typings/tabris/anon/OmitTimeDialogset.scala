@@ -194,7 +194,7 @@ trait OmitTimeDialogset extends StObject {
   
   var extend: js.UndefOr[Any] = js.undefined
   
-  var jsxAttributes: (JSXAttributes[TimeDialog, Omit[TimeDialog, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `3`
+  var jsxAttributes: (JSXAttributes[TimeDialog, Omit[TimeDialog, set | typings.tabris.tabrisStrings.jsxAttributes]]) & Children
   
   def off(`type`: String, listener: js.Function1[/* event */ EventObject[NativeObject], Unit]): TimeDialog
   def off(
@@ -299,7 +299,7 @@ object OmitTimeDialogset {
     close: () => TimeDialog,
     constructor: /* properties */ js.UndefOr[Properties[TimeDialog, Omit[TimeDialog, set]]] => Any,
     date: js.Date,
-    jsxAttributes: (JSXAttributes[TimeDialog, Omit[TimeDialog, set | jsxAttributes]]) & `3`,
+    jsxAttributes: (JSXAttributes[TimeDialog, Omit[TimeDialog, set | jsxAttributes]]) & Children,
     off: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Unit], /* context */ js.UndefOr[js.Object]) => TimeDialog,
     on: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Any], /* context */ js.UndefOr[js.Object]) => TimeDialog,
     onClose: Listeners[TimeDialogCloseEvent[TimeDialog]],
@@ -360,7 +360,7 @@ object OmitTimeDialogset {
     
     inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    inline def setJsxAttributes(value: (JSXAttributes[TimeDialog, Omit[TimeDialog, set | jsxAttributes]]) & `3`): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
+    inline def setJsxAttributes(value: (JSXAttributes[TimeDialog, Omit[TimeDialog, set | jsxAttributes]]) & Children): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     
     inline def setOff(
       value: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Unit], /* context */ js.UndefOr[js.Object]) => TimeDialog

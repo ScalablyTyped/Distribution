@@ -8,8 +8,6 @@ import typings.pixiSettings.pixiSettingsStrings.`experimental-webgl`
 import typings.pixiSettings.pixiSettingsStrings.bitmaprenderer
 import typings.pixiSettings.pixiSettingsStrings.webgl
 import typings.pixiSettings.pixiSettingsStrings.webgl2
-import typings.pixiSettings.pixiSettingsStrings.webglcontextlost
-import typings.pixiSettings.pixiSettingsStrings.webglcontextrestore
 import typings.std.AddEventListenerOptions
 import typings.std.Blob
 import typings.std.Event
@@ -65,25 +63,14 @@ object libIcanvasMod {
       * @param {EventListenerOrEventListenerObject} listener - The callback to invoke when the event is fired.
       * @param {boolean | AddEventListenerOptions} options - The options for adding event listener.
       */
-    var addEventListener: (js.UndefOr[
+    var addEventListener: js.UndefOr[
         js.Function3[
           /* type */ String, 
           /* listener */ EventListenerOrEventListenerObject, 
           /* options */ js.UndefOr[Boolean | AddEventListenerOptions], 
           Unit
         ]
-      ]) & (js.UndefOr[
-        js.Function3[
-          /* type */ webglcontextlost | webglcontextrestore, 
-          /* listener */ js.ThisFunction1[
-            /* this */ this.type, 
-            /* import warning: importer.ImportType#apply Failed type conversion: @pixi/settings.@pixi/settings/lib/ICanvas.WebGLContextEventMap['webglcontextlost' | 'webglcontextrestore'] */ /* ev */ js.Any, 
-            Any
-          ], 
-          /* options */ js.UndefOr[Boolean | AddEventListenerOptions], 
-          Unit
-        ]
-      ]) = js.native
+      ] = js.native
     
     /**
       * Get the content of the canvas as Blob.
@@ -143,25 +130,14 @@ object libIcanvasMod {
       * @param {EventListenerOrEventListenerObject} listener - The callback to invoke when the event is fired.
       * @param {boolean | EventListenerOptions} options - The options for removing event listener.
       */
-    var removeEventListener: (js.UndefOr[
+    var removeEventListener: js.UndefOr[
         js.Function3[
           /* type */ String, 
           /* listener */ EventListenerOrEventListenerObject, 
           /* options */ js.UndefOr[Boolean | EventListenerOptions], 
           Unit
         ]
-      ]) & (js.UndefOr[
-        js.Function3[
-          /* type */ webglcontextlost | webglcontextrestore, 
-          /* listener */ js.ThisFunction1[
-            /* this */ this.type, 
-            /* import warning: importer.ImportType#apply Failed type conversion: @pixi/settings.@pixi/settings/lib/ICanvas.WebGLContextEventMap['webglcontextlost' | 'webglcontextrestore'] */ /* ev */ js.Any, 
-            Any
-          ], 
-          /* options */ js.UndefOr[Boolean | EventListenerOptions], 
-          Unit
-        ]
-      ]) = js.native
+      ] = js.native
     
     /** Style of the canvas. */
     val style: js.UndefOr[ICanvasStyle] = js.native

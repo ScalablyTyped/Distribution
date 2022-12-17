@@ -1,27 +1,30 @@
 package typings.victoryCore.anon
 
-import typings.victoryCore.libTypesPropTypesMod._CategoryPropType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `2`
-  extends StObject
-     with _CategoryPropType {
+trait `2`[T] extends StObject {
   
-  var y: js.Array[String]
+  var x: js.UndefOr[T] = js.undefined
+  
+  var y: js.UndefOr[T] = js.undefined
 }
 object `2` {
   
-  inline def apply(y: js.Array[String]): `2` = {
-    val __obj = js.Dynamic.literal(y = y.asInstanceOf[js.Any])
-    __obj.asInstanceOf[`2`]
+  inline def apply[T](): `2`[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[`2`[T]]
   }
   
-  extension [Self <: `2`](x: Self) {
+  extension [Self <: `2`[?], T](x: Self & `2`[T]) {
     
-    inline def setY(value: js.Array[String]): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setX(value: T): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    inline def setYVarargs(value: String*): Self = StObject.set(x, "y", js.Array(value*))
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    
+    inline def setY(value: T): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

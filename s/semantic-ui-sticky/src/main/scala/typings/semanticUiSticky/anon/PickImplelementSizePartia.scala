@@ -12,7 +12,7 @@ trait PickImplelementSizePartia
   
   var container: js.UndefOr[String] = js.undefined
   
-  var elementSize: String & js.UndefOr[String]
+  var elementSize: String
   
   var invalidContext: js.UndefOr[String] = js.undefined
   
@@ -22,7 +22,7 @@ trait PickImplelementSizePartia
 }
 object PickImplelementSizePartia {
   
-  inline def apply(elementSize: String & js.UndefOr[String]): PickImplelementSizePartia = {
+  inline def apply(elementSize: String): PickImplelementSizePartia = {
     val __obj = js.Dynamic.literal(elementSize = elementSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplelementSizePartia]
   }
@@ -33,7 +33,7 @@ object PickImplelementSizePartia {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setElementSize(value: String & js.UndefOr[String]): Self = StObject.set(x, "elementSize", value.asInstanceOf[js.Any])
+    inline def setElementSize(value: String): Self = StObject.set(x, "elementSize", value.asInstanceOf[js.Any])
     
     inline def setInvalidContext(value: String): Self = StObject.set(x, "invalidContext", value.asInstanceOf[js.Any])
     

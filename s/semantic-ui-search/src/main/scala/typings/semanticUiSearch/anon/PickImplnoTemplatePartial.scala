@@ -18,7 +18,7 @@ trait PickImplnoTemplatePartial
   
   var noResults: js.UndefOr[String] = js.undefined
   
-  var noTemplate: String & js.UndefOr[String]
+  var noTemplate: String
   
   var serverError: js.UndefOr[String] = js.undefined
   
@@ -26,7 +26,7 @@ trait PickImplnoTemplatePartial
 }
 object PickImplnoTemplatePartial {
   
-  inline def apply(noTemplate: String & js.UndefOr[String]): PickImplnoTemplatePartial = {
+  inline def apply(noTemplate: String): PickImplnoTemplatePartial = {
     val __obj = js.Dynamic.literal(noTemplate = noTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplnoTemplatePartial]
   }
@@ -49,7 +49,7 @@ object PickImplnoTemplatePartial {
     
     inline def setNoResultsUndefined: Self = StObject.set(x, "noResults", js.undefined)
     
-    inline def setNoTemplate(value: String & js.UndefOr[String]): Self = StObject.set(x, "noTemplate", value.asInstanceOf[js.Any])
+    inline def setNoTemplate(value: String): Self = StObject.set(x, "noTemplate", value.asInstanceOf[js.Any])
     
     inline def setServerError(value: String): Self = StObject.set(x, "serverError", value.asInstanceOf[js.Any])
     

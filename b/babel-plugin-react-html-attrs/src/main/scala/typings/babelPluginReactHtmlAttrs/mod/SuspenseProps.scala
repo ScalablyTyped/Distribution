@@ -22,7 +22,7 @@ trait SuspenseProps extends StObject {
 object SuspenseProps {
   
   inline def apply(): SuspenseProps = {
-    val __obj = js.Dynamic.literal(fallback = null)
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SuspenseProps]
   }
   
@@ -37,6 +37,8 @@ object SuspenseProps {
     inline def setFallback(value: NonNullable[ReactNode]): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
     
     inline def setFallbackNull: Self = StObject.set(x, "fallback", null)
+    
+    inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
     
     inline def setUnstable_avoidThisFallback(value: Boolean): Self = StObject.set(x, "unstable_avoidThisFallback", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,6 @@
 package typings.elasticElasticsearch.libApiTypesWithBodyKeyMod
 
-import typings.elasticElasticsearch.anon.Aggs
+import typings.elasticElasticsearch.anon.Collapse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +24,7 @@ trait FleetSearchRequest
   var batched_reduce_size: js.UndefOr[long] = js.undefined
   
   /** @deprecated The use of the 'body' key has been deprecated, move the nested keys to the top level object. */
-  var body: js.UndefOr[Aggs] = js.undefined
+  var body: js.UndefOr[Collapse] = js.undefined
   
   var ccs_minimize_roundtrips: js.UndefOr[Boolean] = js.undefined
   
@@ -103,7 +103,7 @@ object FleetSearchRequest {
     
     inline def setBatched_reduce_sizeUndefined: Self = StObject.set(x, "batched_reduce_size", js.undefined)
     
-    inline def setBody(value: Aggs): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Collapse): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     

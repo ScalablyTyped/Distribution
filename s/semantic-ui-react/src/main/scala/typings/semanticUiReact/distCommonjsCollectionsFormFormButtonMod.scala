@@ -130,8 +130,8 @@ object distCommonjsCollectionsFormFormButtonMod extends Shortcut {
        with /* key */ StringDictionary[Any]
   object FormButtonProps {
     
-    inline def apply(id: (js.UndefOr[Double | String]) & js.UndefOr[String]): FormButtonProps = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    inline def apply(): FormButtonProps = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FormButtonProps]
     }
   }
@@ -318,7 +318,7 @@ object distCommonjsCollectionsFormFormButtonMod extends Shortcut {
     
     var icon: js.UndefOr[Boolean | SemanticShorthandItem[IconProps]] = js.undefined
     
-    var id: (js.UndefOr[Double | String]) & js.UndefOr[String]
+    var id: js.UndefOr[Double | String] = js.undefined
     
     var `inline`: js.UndefOr[Boolean] = js.undefined
     
@@ -579,8 +579,8 @@ object distCommonjsCollectionsFormFormButtonMod extends Shortcut {
   }
   object StrictFormButtonProps {
     
-    inline def apply(id: (js.UndefOr[Double | String]) & js.UndefOr[String]): StrictFormButtonProps = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    inline def apply(): StrictFormButtonProps = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictFormButtonProps]
     }
     
@@ -942,7 +942,9 @@ object distCommonjsCollectionsFormFormButtonMod extends Shortcut {
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      inline def setId(value: (js.UndefOr[Double | String]) & js.UndefOr[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
       inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       

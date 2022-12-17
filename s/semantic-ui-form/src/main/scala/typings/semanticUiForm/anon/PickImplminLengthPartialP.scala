@@ -50,7 +50,7 @@ trait PickImplminLengthPartialP
   
   var minCount: js.UndefOr[String] = js.undefined
   
-  var minLength: String & js.UndefOr[String]
+  var minLength: String
   
   var not: js.UndefOr[String] = js.undefined
   
@@ -64,7 +64,7 @@ trait PickImplminLengthPartialP
 }
 object PickImplminLengthPartialP {
   
-  inline def apply(minLength: String & js.UndefOr[String]): PickImplminLengthPartialP = {
+  inline def apply(minLength: String): PickImplminLengthPartialP = {
     val __obj = js.Dynamic.literal(minLength = minLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplminLengthPartialP]
   }
@@ -151,7 +151,7 @@ object PickImplminLengthPartialP {
     
     inline def setMinCountUndefined: Self = StObject.set(x, "minCount", js.undefined)
     
-    inline def setMinLength(value: String & js.UndefOr[String]): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
+    inline def setMinLength(value: String): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
     
     inline def setNot(value: String): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
     

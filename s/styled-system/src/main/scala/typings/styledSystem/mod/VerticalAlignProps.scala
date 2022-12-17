@@ -28,6 +28,6 @@ object VerticalAlignProps {
     
     inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
     
-    inline def setVerticalAlignVarargs(value: (TVal | Null)*): Self = StObject.set(x, "verticalAlign", js.Array(value :_*))
+    inline def setVerticalAlignVarargs(value: (TVal | Null)*): Self = StObject.set(x, "verticalAlign", js.Array(value*))
   }
 }

@@ -8,11 +8,11 @@ trait PathPlanid extends StObject {
   
   var path: Planid
   
-  var query: Sort
+  var query: Direction
 }
 object PathPlanid {
   
-  inline def apply(path: Planid, query: Sort): PathPlanid = {
+  inline def apply(path: Planid, query: Direction): PathPlanid = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathPlanid]
   }
@@ -21,6 +21,6 @@ object PathPlanid {
     
     inline def setPath(value: Planid): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setQuery(value: Sort): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: Direction): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }
 }

@@ -1,7 +1,7 @@
 package typings.victoryCore.libMod
 
 import typings.react.mod.global.JSX.Element
-import typings.victoryCore.anon.Desc
+import typings.victoryCore.anon.Title
 import typings.victoryCore.libVictoryPrimitivesTextMod.TextProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,6 +17,6 @@ object Text {
   
   @JSImport("victory-core/lib", "Text.propTypes")
   @js.native
-  def propTypes: Desc = js.native
-  inline def propTypes_=(x: Desc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+  def propTypes: Title = js.native
+  inline def propTypes_=(x: Title): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
 }

@@ -143,7 +143,7 @@ trait PickImplpreserveHTMLParti
   
   var placeholder: js.UndefOr[auto | value | `false`] = js.undefined
   
-  var preserveHTML: Boolean & js.UndefOr[Boolean]
+  var preserveHTML: Boolean
   
   var regExp: js.UndefOr[RegExpSettings] = js.undefined
   
@@ -169,7 +169,7 @@ trait PickImplpreserveHTMLParti
 }
 object PickImplpreserveHTMLParti {
   
-  inline def apply(preserveHTML: Boolean & js.UndefOr[Boolean]): PickImplpreserveHTMLParti = {
+  inline def apply(preserveHTML: Boolean): PickImplpreserveHTMLParti = {
     val __obj = js.Dynamic.literal(preserveHTML = preserveHTML.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplpreserveHTMLParti]
   }
@@ -366,7 +366,7 @@ object PickImplpreserveHTMLParti {
     
     inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
-    inline def setPreserveHTML(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "preserveHTML", value.asInstanceOf[js.Any])
+    inline def setPreserveHTML(value: Boolean): Self = StObject.set(x, "preserveHTML", value.asInstanceOf[js.Any])
     
     inline def setRegExp(value: RegExpSettings): Self = StObject.set(x, "regExp", value.asInstanceOf[js.Any])
     

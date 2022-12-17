@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BackgroundBorder extends StObject {
   
-  var background: js.UndefOr[`7`] = js.undefined
+  var background: js.UndefOr[`5`] = js.undefined
   
-  var border: js.UndefOr[`7`] = js.undefined
+  var border: js.UndefOr[`5`] = js.undefined
   
   var extend: js.UndefOr[ExtendType[Record[String, Any]]] = js.undefined
 }
@@ -25,11 +25,11 @@ object BackgroundBorder {
   
   extension [Self <: BackgroundBorder](x: Self) {
     
-    inline def setBackground(value: `7`): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: `5`): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    inline def setBorder(value: `7`): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: `5`): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     

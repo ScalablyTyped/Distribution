@@ -40,7 +40,7 @@ type AstNode[F /* <: Features */] = _AstNode[F] | (If[
 UnicodePropertyEscape, 
 scala.Nothing]) | Dot | Group[F] | Reference[F]
 
-type CapturingGroup[F /* <: Features */] = Base[group] & Behavior[F] & (If[
+type CapturingGroup[F /* <: Features */] = Base[group] & BehaviorBody[F] & (If[
 /* import warning: importer.ImportType#apply Failed type conversion: F['namedGroups'] */ js.Any, 
 Name, 
 NameUndefined])
@@ -58,7 +58,7 @@ type Group[F /* <: Features */] = CapturingGroup[F] | NonCapturingGroup[F]
   */
 type If[Test, Then, Else] = Then
 
-type NonCapturingGroup[F /* <: Features */] = (Body[F] & Base[group]) | (BehaviorBody[F] & (If[
+type NonCapturingGroup[F /* <: Features */] = (Behavior[F] & Base[group]) | (Body[F] & (If[
 /* import warning: importer.ImportType#apply Failed type conversion: F['modifiers'] */ js.Any, 
 typings.regjsparser.anon.ModifierFlags, 
 ModifierFlagsUndefined]) & Base[group])

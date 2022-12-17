@@ -56,14 +56,12 @@ import typings.rcFieldForm.esInterfaceMod.Rule
 import typings.rcFieldForm.esInterfaceMod.Store
 import typings.rcFieldForm.esInterfaceMod.StoreValue
 import typings.react.mod.Booleanish
-import typings.react.mod.CSSProperties
 import typings.react.mod.FC
 import typings.react.mod.MouseEvent
 import typings.react.mod.MutableRefObject
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.std.Element
-import typings.std.Partial
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -374,7 +372,7 @@ object esComponentsFormFormItemMod {
     
     var shouldUpdate: js.UndefOr[ShouldUpdate[Any]] = js.undefined
     
-    var style: js.UndefOr[CSSPropertiesPartialRecorActivebackgroundcolor] & (js.UndefOr[CSSProperties & (Partial[Record[scala.Nothing, String]])])
+    var style: js.UndefOr[CSSPropertiesPartialRecorActivebackgroundcolor] = js.undefined
     
     var tabIndex: js.UndefOr[Double] = js.undefined
     
@@ -388,10 +386,8 @@ object esComponentsFormFormItemMod {
   }
   object FormItemProps {
     
-    inline def apply(
-      style: js.UndefOr[CSSPropertiesPartialRecorActivebackgroundcolor] & (js.UndefOr[CSSProperties & (Partial[Record[scala.Nothing, String]])])
-    ): FormItemProps = {
-      val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
+    inline def apply(): FormItemProps = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FormItemProps]
     }
     
@@ -707,9 +703,9 @@ object esComponentsFormFormItemMod {
       
       inline def setShouldUpdateUndefined: Self = StObject.set(x, "shouldUpdate", js.undefined)
       
-      inline def setStyle(
-        value: js.UndefOr[CSSPropertiesPartialRecorActivebackgroundcolor] & (js.UndefOr[CSSProperties & (Partial[Record[scala.Nothing, String]])])
-      ): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSPropertiesPartialRecorActivebackgroundcolor): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
       inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
       

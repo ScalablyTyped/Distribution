@@ -14,11 +14,11 @@ trait PickImplprogressPartialPi
   
   var label: js.UndefOr[String] = js.undefined
   
-  var progress: String & js.UndefOr[String]
+  var progress: String
 }
 object PickImplprogressPartialPi {
   
-  inline def apply(progress: String & js.UndefOr[String]): PickImplprogressPartialPi = {
+  inline def apply(progress: String): PickImplprogressPartialPi = {
     val __obj = js.Dynamic.literal(progress = progress.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplprogressPartialPi]
   }
@@ -33,6 +33,6 @@ object PickImplprogressPartialPi {
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    inline def setProgress(value: String & js.UndefOr[String]): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: String): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
   }
 }

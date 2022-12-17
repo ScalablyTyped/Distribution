@@ -37,6 +37,8 @@ object distTypesHeatMapCellAnnotationsMod {
       
       inline def setAnnotations(value: NonNullable[js.Array[AnnotationMatcher[ComputedCell[Datum]]]]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
       
+      inline def setAnnotationsVarargs(value: AnnotationMatcher[ComputedCell[Datum]]*): Self = StObject.set(x, "annotations", js.Array(value*))
+      
       inline def setCells(value: js.Array[ComputedCell[Datum]]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
       
       inline def setCellsVarargs(value: ComputedCell[Datum]*): Self = StObject.set(x, "cells", js.Array(value*))

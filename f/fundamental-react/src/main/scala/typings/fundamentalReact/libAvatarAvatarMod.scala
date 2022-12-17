@@ -436,7 +436,7 @@ object libAvatarAvatarMod extends Shortcut {
     
     var onWheel: js.UndefOr[WheelEventHandler[HTMLSpanElement]] = js.undefined
     
-    var placeholder: js.UndefOr[Boolean] & js.UndefOr[String]
+    var placeholder: js.UndefOr[Boolean] = js.undefined
     
     var prefix: js.UndefOr[String] = js.undefined
     
@@ -448,7 +448,7 @@ object libAvatarAvatarMod extends Shortcut {
     
     var results: js.UndefOr[Double] = js.undefined
     
-    var role: js.UndefOr[String] & js.UndefOr[AriaRole]
+    var role: js.UndefOr[String] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
@@ -484,11 +484,8 @@ object libAvatarAvatarMod extends Shortcut {
   }
   object AvatarProps {
     
-    inline def apply(
-      placeholder: js.UndefOr[Boolean] & js.UndefOr[String],
-      role: js.UndefOr[String] & js.UndefOr[AriaRole]
-    ): AvatarProps = {
-      val __obj = js.Dynamic.literal(placeholder = placeholder.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
+    inline def apply(): AvatarProps = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AvatarProps]
     }
     
@@ -1142,7 +1139,9 @@ object libAvatarAvatarMod extends Shortcut {
       
       inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
       
-      inline def setPlaceholder(value: js.UndefOr[Boolean] & js.UndefOr[String]): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: Boolean): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
       inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
@@ -1164,7 +1163,9 @@ object libAvatarAvatarMod extends Shortcut {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRole(value: js.UndefOr[String] & js.UndefOr[AriaRole]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
       inline def setSecurity(value: String): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
       

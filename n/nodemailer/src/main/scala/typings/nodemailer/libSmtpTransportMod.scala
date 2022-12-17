@@ -42,11 +42,6 @@ object libSmtpTransportMod {
     ): Unit = js.native
     
     /* CompleteClass */
-    var verify: (js.UndefOr[
-        js.Function1[/* callback */ js.Function2[/* err */ js.Error | Null, `true`, Unit], Unit]
-      ]) & js.UndefOr[js.Function0[js.Promise[`true`]]] = js.native
-    
-    /* CompleteClass */
     var version: String = js.native
   }
   

@@ -14,7 +14,7 @@ trait Codeofconduct extends StObject {
   
   var issue_template: HtmlurlUrl | Null
   
-  var license: Htmlurl | Null
+  var license: Nodeid | Null
   
   var pull_request_template: HtmlurlUrl | Null
   
@@ -45,7 +45,7 @@ object Codeofconduct {
     
     inline def setIssue_templateNull: Self = StObject.set(x, "issue_template", null)
     
-    inline def setLicense(value: Htmlurl): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
+    inline def setLicense(value: Nodeid): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
     
     inline def setLicenseNull: Self = StObject.set(x, "license", null)
     

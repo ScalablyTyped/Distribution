@@ -1,6 +1,5 @@
 package typings.styledSystem.mod
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,9 +16,7 @@ trait VariantArgs[TStyle, K /* <: String */, TPropName] extends StObject {
   
   /** inline theme aware variants definitions  */
   var variants: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in K ]: TStyle}
-    */ typings.styledSystem.styledSystemStrings.VariantArgs & TopLevel[js.Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: TStyle} */ js.Any
   ] = js.undefined
 }
 object VariantArgs {
@@ -44,9 +41,7 @@ object VariantArgs {
     inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     inline def setVariants(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in K ]: TStyle}
-      */ typings.styledSystem.styledSystemStrings.VariantArgs & TopLevel[js.Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: TStyle} */ js.Any
     ): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
     
     inline def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)

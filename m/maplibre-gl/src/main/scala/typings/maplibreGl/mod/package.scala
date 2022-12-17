@@ -5,8 +5,8 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.glMatrix.mod.mat4
 import typings.maplibreGl.anon.Casesensitive
 import typings.maplibreGl.anon.Currency
+import typings.maplibreGl.anon.Data
 import typings.maplibreGl.anon.Fontscale
-import typings.maplibreGl.anon.Target
 import typings.maplibreGl.anon.inPositionAnchorPointLike
 import typings.maplibreGl.maplibreGlStrings.Asterisk
 import typings.maplibreGl.maplibreGlStrings.EqualssignEqualssign
@@ -270,7 +270,7 @@ type LngLatBoundsLike = LngLatBounds | (js.Tuple2[LngLatLike, LngLatLike]) | (js
 */
 type LngLatLike = _LngLatLike | (js.Tuple2[Double, Double])
 
-type MessageListener = js.Function1[/* a */ Target, Any]
+type MessageListener = js.Function1[/* a */ Data, Any]
 
 type Offset = Double | PointLike | inPositionAnchorPointLike
 

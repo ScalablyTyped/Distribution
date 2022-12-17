@@ -1,18 +1,18 @@
 package typings.vscodeLanguageserverProtocol.anon
 
-import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.NotebookDocumentFilter
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.TextDocumentFilter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Scheme
   extends StObject
-     with NotebookDocumentFilter {
+     with TextDocumentFilter {
   
-  /** The type of the enclosing notebook. */
-  var notebookType: js.UndefOr[String] = js.undefined
+  /** A language id, like `typescript`. */
+  var language: js.UndefOr[String] = js.undefined
   
-  /** A glob pattern. */
+  /** A glob pattern, like `*.{ts,js}`. */
   var pattern: String
   
   /** A Uri [scheme](#Uri.scheme), like `file` or `untitled`. */
@@ -27,9 +27,9 @@ object Scheme {
   
   extension [Self <: Scheme](x: Self) {
     
-    inline def setNotebookType(value: String): Self = StObject.set(x, "notebookType", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    inline def setNotebookTypeUndefined: Self = StObject.set(x, "notebookType", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     

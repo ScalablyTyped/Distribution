@@ -27,7 +27,6 @@ object anon {
     
     def apply(): FirebaseFirestore = js.native
     def apply(app: FirebaseApp): FirebaseFirestore = js.native
-    def apply(app: typings.firebaseFirestoreCompat.mod.firebaseAppCompatAugmentingMod.FirebaseApp): FirebaseFirestore = js.native
     
     var Blob: TypeofBlob = js.native
     

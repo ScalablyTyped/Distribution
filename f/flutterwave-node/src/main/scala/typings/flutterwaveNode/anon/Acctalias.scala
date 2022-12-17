@@ -100,7 +100,7 @@ trait Acctalias extends StObject {
   
   var merchantfee: Double
   
-  var meta: js.Array[DeletedAt]
+  var meta: js.Array[CreatedAt]
   
   var narration: String
   
@@ -176,7 +176,7 @@ object Acctalias {
     ip: String,
     merchantbearsfee: Double,
     merchantfee: Double,
-    meta: js.Array[DeletedAt],
+    meta: js.Array[CreatedAt],
     narration: String,
     orderref: String,
     paymentid: String,
@@ -290,9 +290,9 @@ object Acctalias {
     
     inline def setMerchantfee(value: Double): Self = StObject.set(x, "merchantfee", value.asInstanceOf[js.Any])
     
-    inline def setMeta(value: js.Array[DeletedAt]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: js.Array[CreatedAt]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
-    inline def setMetaVarargs(value: DeletedAt*): Self = StObject.set(x, "meta", js.Array(value*))
+    inline def setMetaVarargs(value: CreatedAt*): Self = StObject.set(x, "meta", js.Array(value*))
     
     inline def setNarration(value: String): Self = StObject.set(x, "narration", value.asInstanceOf[js.Any])
     

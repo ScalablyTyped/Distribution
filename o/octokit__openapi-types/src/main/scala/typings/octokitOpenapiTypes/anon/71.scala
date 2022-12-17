@@ -6,25 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `71` extends StObject {
   
-  var code: js.UndefOr[String] = js.undefined
-  
-  var message: js.UndefOr[String] = js.undefined
+  @JSName("application/json")
+  var applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['dependabot-public-key'] */ js.Any
 }
 object `71` {
   
-  inline def apply(): `71` = {
+  inline def apply(
+    applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['dependabot-public-key'] */ js.Any
+  ): `71` = {
     val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`71`]
   }
   
   extension [Self <: `71`](x: Self) {
     
-    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
-    
-    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
-    
-    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
-    
-    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setApplicationSlashjson(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['dependabot-public-key'] */ js.Any
+    ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }
 }

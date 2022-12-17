@@ -4,7 +4,6 @@ import typings.react.mod.HTMLAttributes
 import typings.reactBigCalendar.anon.Accessors
 import typings.reactBigCalendar.anon.Agenda
 import typings.reactBigCalendar.anon.ClassName
-import typings.reactBigCalendar.anon.Style
 import typings.reactBigCalendar.mod.^
 import typings.std.Exclude
 import typings.std.HTMLDivElement
@@ -41,7 +40,7 @@ type DateRangeFormatFunction = js.Function3[
 /* localizer */ js.UndefOr[DateLocalizer], 
 String]
 
-type DayLayoutFunction[TEvent /* <: js.Object */] = js.Function1[/* _ */ Accessors[TEvent], js.Array[Style[TEvent]]]
+type DayLayoutFunction[TEvent /* <: js.Object */] = js.Function1[/* _ */ Accessors[TEvent], js.Array[typings.reactBigCalendar.anon.Event[TEvent]]]
 
 type DayPropGetter = js.Function2[
 /* date */ js.Date, 

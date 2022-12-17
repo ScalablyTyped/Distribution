@@ -8,12 +8,14 @@ import typings.antDesignProUtils.anon.ActionRender
 import typings.antDesignProUtils.anon.Array
 import typings.antDesignProUtils.anon.Cancel
 import typings.antDesignProUtils.anon.CancelEditable
+import typings.antDesignProUtils.anon.Children
 import typings.antDesignProUtils.anon.ChildrenColumnName
 import typings.antDesignProUtils.anon.ColSize
 import typings.antDesignProUtils.anon.Current
 import typings.antDesignProUtils.anon.DataSource
 import typings.antDesignProUtils.anon.DateFormat
 import typings.antDesignProUtils.anon.Ellipsis
+import typings.antDesignProUtils.anon.ErrorInfo
 import typings.antDesignProUtils.anon.Id
 import typings.antDesignProUtils.anon.Menu
 import typings.antDesignProUtils.anon.OnOpenChange
@@ -70,6 +72,27 @@ object mod {
   @JSImport("@ant-design/pro-utils", "DropdownFooter")
   @js.native
   val DropdownFooter: FC[DropdownFooterProps] = js.native
+  
+  @JSImport("@ant-design/pro-utils", "ErrorBoundary")
+  @js.native
+  open class ErrorBoundary protected ()
+    extends typings.antDesignProUtils.esComponentsErrorBoundaryMod.ErrorBoundary {
+    def this(props: Children) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: Children, context: Any) = this()
+  }
+  object ErrorBoundary {
+    
+    @JSImport("@ant-design/pro-utils", "ErrorBoundary")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    inline def getDerivedStateFromError(error: js.Error): ErrorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromError")(error.asInstanceOf[js.Any]).asInstanceOf[ErrorInfo]
+  }
   
   @JSImport("@ant-design/pro-utils", "FieldLabel")
   @js.native

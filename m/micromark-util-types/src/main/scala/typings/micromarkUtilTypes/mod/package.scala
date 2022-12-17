@@ -5,7 +5,7 @@ import typings.micromarkUtilTypes.anon.OmitPointindexbufferIndex
 import typings.micromarkUtilTypes.anon.PartialCompileDataFields
 import typings.micromarkUtilTypes.anon.PartialExtensionFields
 import typings.micromarkUtilTypes.anon.PartialNormalizedExtensio
-import typings.micromarkUtilTypes.anon.`2`
+import typings.micromarkUtilTypes.anon.`4`
 import typings.micromarkUtilTypes.micromarkUtilTypesStrings.enter
 import typings.micromarkUtilTypes.micromarkUtilTypesStrings.exit
 import typings.std.Partial
@@ -51,7 +51,7 @@ type FullNormalizedExtension = (Record[String, Record[String, js.Array[Any]]]) &
 
 type Handle = js.ThisFunction1[/* this */ CompileContext, /* token */ Token, Unit]
 
-type Handles = (Record[String, Handle]) & `2`
+type Handles = (Record[String, Handle]) & `4`
 
 type HtmlExtension = Partial[NormalizedHtmlExtension]
 

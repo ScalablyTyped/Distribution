@@ -107,7 +107,7 @@ trait PickImplonResponsePartial
   
   def onResponse(response: Any): Unit
   @JSName("onResponse")
-  var onResponse_Original: (js.Function1[/* response */ Any, Unit]) & (js.UndefOr[js.Function1[/* response */ Any, Unit]])
+  var onResponse_Original: js.Function1[/* response */ Any, Unit]
   
   var onSuccess: js.UndefOr[
     js.Function3[/* response */ Any, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]
@@ -149,10 +149,8 @@ trait PickImplonResponsePartial
 }
 object PickImplonResponsePartial {
   
-  inline def apply(
-    onResponse: (js.Function1[/* response */ Any, Unit]) & (js.UndefOr[js.Function1[/* response */ Any, Unit]])
-  ): PickImplonResponsePartial = {
-    val __obj = js.Dynamic.literal(onResponse = onResponse.asInstanceOf[js.Any])
+  inline def apply(onResponse: /* response */ Any => Unit): PickImplonResponsePartial = {
+    val __obj = js.Dynamic.literal(onResponse = js.Any.fromFunction1(onResponse))
     __obj.asInstanceOf[PickImplonResponsePartial]
   }
   
@@ -276,9 +274,7 @@ object PickImplonResponsePartial {
     
     inline def setOnRequestUndefined: Self = StObject.set(x, "onRequest", js.undefined)
     
-    inline def setOnResponse(
-      value: (js.Function1[/* response */ Any, Unit]) & (js.UndefOr[js.Function1[/* response */ Any, Unit]])
-    ): Self = StObject.set(x, "onResponse", value.asInstanceOf[js.Any])
+    inline def setOnResponse(value: /* response */ Any => Unit): Self = StObject.set(x, "onResponse", js.Any.fromFunction1(value))
     
     inline def setOnSuccess(value: (/* response */ Any, /* element */ JQuery, /* xhr */ jqXHR[Any]) => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction3(value))
     

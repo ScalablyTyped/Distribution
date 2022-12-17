@@ -85,7 +85,7 @@ trait SimpleLineSymbolPropertie extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol.html#type)
     */
-  var `type`: js.UndefOr[`simple-line`] & `simple-line`
+  var `type`: js.UndefOr[`simple-line`] = js.undefined
   
   /**
     * The width of the symbol in points.
@@ -98,9 +98,8 @@ trait SimpleLineSymbolPropertie extends StObject {
 }
 object SimpleLineSymbolPropertie {
   
-  inline def apply(`type`: js.UndefOr[`simple-line`] & `simple-line`): SimpleLineSymbolPropertie = {
+  inline def apply(): SimpleLineSymbolPropertie = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleLineSymbolPropertie]
   }
   
@@ -136,7 +135,9 @@ object SimpleLineSymbolPropertie {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setType(value: js.UndefOr[`simple-line`] & `simple-line`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `simple-line`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

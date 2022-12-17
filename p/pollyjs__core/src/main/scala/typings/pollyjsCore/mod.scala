@@ -6,7 +6,7 @@ import typings.loglevel.mod.LogLevelDesc
 import typings.loglevel.mod.Logger
 import typings.pollyjsCore.anon.Body
 import typings.pollyjsCore.anon.Dictkey
-import typings.pollyjsCore.anon.Fetch
+import typings.pollyjsCore.anon.DisableSortingHarEntries
 import typings.pollyjsCore.anon.PartialPollyConfig
 import typings.pollyjsCore.pollyjsCoreStrings.abort
 import typings.pollyjsCore.pollyjsCoreStrings.error
@@ -408,7 +408,7 @@ object mod {
   
   trait PollyConfig extends StObject {
     
-    var adapterOptions: js.UndefOr[Fetch] = js.undefined
+    var adapterOptions: js.UndefOr[Dictkey] = js.undefined
     
     var adapters: js.UndefOr[
         js.Array[
@@ -432,7 +432,7 @@ object mod {
     
     var persister: js.UndefOr[String | Newable[default[js.Object]]] = js.undefined
     
-    var persisterOptions: js.UndefOr[Dictkey] = js.undefined
+    var persisterOptions: js.UndefOr[DisableSortingHarEntries] = js.undefined
     
     var recordFailedRequests: js.UndefOr[Boolean] = js.undefined
     
@@ -451,7 +451,7 @@ object mod {
     
     extension [Self <: PollyConfig](x: Self) {
       
-      inline def setAdapterOptions(value: Fetch): Self = StObject.set(x, "adapterOptions", value.asInstanceOf[js.Any])
+      inline def setAdapterOptions(value: Dictkey): Self = StObject.set(x, "adapterOptions", value.asInstanceOf[js.Any])
       
       inline def setAdapterOptionsUndefined: Self = StObject.set(x, "adapterOptions", js.undefined)
       
@@ -499,7 +499,7 @@ object mod {
       
       inline def setPersister(value: String | Newable[default[js.Object]]): Self = StObject.set(x, "persister", value.asInstanceOf[js.Any])
       
-      inline def setPersisterOptions(value: Dictkey): Self = StObject.set(x, "persisterOptions", value.asInstanceOf[js.Any])
+      inline def setPersisterOptions(value: DisableSortingHarEntries): Self = StObject.set(x, "persisterOptions", value.asInstanceOf[js.Any])
       
       inline def setPersisterOptionsUndefined: Self = StObject.set(x, "persisterOptions", js.undefined)
       

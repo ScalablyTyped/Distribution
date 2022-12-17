@@ -3755,7 +3755,7 @@ object typesBluebirdMod {
     val toStringTag: Object = js.native
   }
   
-  type CatchFilter[E] = (js.Function1[/* error */ E, Boolean]) | (js.Object & E)
+  type CatchFilter[E] = (js.Function1[/* error */ E, Boolean]) | E
   
   trait ConcurrencyOption extends StObject {
     
@@ -3965,7 +3965,7 @@ object typesBluebirdMod {
   
   type Resolvable[R] = R | PromiseLike[R]
   
-  type ResolvableProps[T] = js.Object & (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: cypress.cypress/types/bluebird.Resolvable<T[K]>} */ js.Any)
+  type ResolvableProps[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: cypress.cypress/types/bluebird.Resolvable<T[K]>} */ js.Any
   
   @js.native
   trait Resolver[R] extends StObject {

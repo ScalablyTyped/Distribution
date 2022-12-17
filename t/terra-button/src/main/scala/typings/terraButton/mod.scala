@@ -4,7 +4,7 @@ import typings.react.mod.Context
 import typings.std.HTMLAnchorElement
 import typings.std.HTMLButtonElement
 import typings.terraButton.anon.Types
-import typings.terraThemeContext.anon.ClassName
+import typings.terraThemeContext.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,8 +29,8 @@ object mod {
     
     @JSImport("terra-button", "default.contextType")
     @js.native
-    def contextType: Context[ClassName] = js.native
-    inline def contextType_=(x: Context[ClassName]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+    def contextType: Context[`0`] = js.native
+    inline def contextType_=(x: Context[`0`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("terra-button", "ButtonTypes")

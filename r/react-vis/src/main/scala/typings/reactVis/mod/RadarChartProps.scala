@@ -1,7 +1,7 @@
 package typings.reactVis.mod
 
+import typings.reactVis.anon.Axes
 import typings.reactVis.anon.Domain
-import typings.reactVis.anon.Labels
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,7 +33,7 @@ trait RadarChartProps extends StObject {
   var startingAngle: js.UndefOr[Double] = js.undefined
   
   // default: 1.5707963267948966
-  var style: js.UndefOr[Labels] = js.undefined
+  var style: js.UndefOr[Axes] = js.undefined
   
   // default: {'axes':{'line':{},'ticks':{},'text':{}},'labels':{'fontSize':10,'textAnchor':'middle'},'polygons':{'strokeWidth':0.5,'strokeOpacity':1,'fillOpacity':0.1}}
   var tickFormat: js.UndefOr[RVTickFormat] = js.undefined
@@ -89,7 +89,7 @@ object RadarChartProps {
     
     inline def setStartingAngleUndefined: Self = StObject.set(x, "startingAngle", js.undefined)
     
-    inline def setStyle(value: Labels): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Axes): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     

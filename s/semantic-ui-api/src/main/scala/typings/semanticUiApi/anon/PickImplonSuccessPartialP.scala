@@ -109,9 +109,7 @@ trait PickImplonSuccessPartialP
   
   def onSuccess(response: Any, element: JQuery, xhr: jqXHR[Any]): Unit
   @JSName("onSuccess")
-  var onSuccess_Original: (js.Function3[/* response */ Any, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]) & (js.UndefOr[
-    js.Function3[/* response */ Any, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]
-  ])
+  var onSuccess_Original: js.Function3[/* response */ Any, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]
   
   var performance: js.UndefOr[Boolean] = js.undefined
   
@@ -149,12 +147,8 @@ trait PickImplonSuccessPartialP
 }
 object PickImplonSuccessPartialP {
   
-  inline def apply(
-    onSuccess: (js.Function3[/* response */ Any, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]) & (js.UndefOr[
-      js.Function3[/* response */ Any, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]
-    ])
-  ): PickImplonSuccessPartialP = {
-    val __obj = js.Dynamic.literal(onSuccess = onSuccess.asInstanceOf[js.Any])
+  inline def apply(onSuccess: (/* response */ Any, /* element */ JQuery, /* xhr */ jqXHR[Any]) => Unit): PickImplonSuccessPartialP = {
+    val __obj = js.Dynamic.literal(onSuccess = js.Any.fromFunction3(onSuccess))
     __obj.asInstanceOf[PickImplonSuccessPartialP]
   }
   
@@ -282,11 +276,7 @@ object PickImplonSuccessPartialP {
     
     inline def setOnResponseUndefined: Self = StObject.set(x, "onResponse", js.undefined)
     
-    inline def setOnSuccess(
-      value: (js.Function3[/* response */ Any, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]) & (js.UndefOr[
-          js.Function3[/* response */ Any, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]
-        ])
-    ): Self = StObject.set(x, "onSuccess", value.asInstanceOf[js.Any])
+    inline def setOnSuccess(value: (/* response */ Any, /* element */ JQuery, /* xhr */ jqXHR[Any]) => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction3(value))
     
     inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     

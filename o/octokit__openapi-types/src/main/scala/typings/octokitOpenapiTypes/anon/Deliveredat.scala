@@ -61,9 +61,9 @@ trait Deliveredat extends StObject {
     */
   var repository_id: Double | Null
   
-  var request: Headers
+  var request: Payload
   
-  var response: Payload
+  var response: HeadersPayload
   
   /**
     * @description Description of the status of the attempted delivery
@@ -92,8 +92,8 @@ object Deliveredat {
     guid: String,
     id: Double,
     redelivery: Boolean,
-    request: Headers,
-    response: Payload,
+    request: Payload,
+    response: HeadersPayload,
     status: String,
     status_code: Double
   ): Deliveredat = {
@@ -127,9 +127,9 @@ object Deliveredat {
     
     inline def setRepository_idNull: Self = StObject.set(x, "repository_id", null)
     
-    inline def setRequest(value: Headers): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: Payload): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    inline def setResponse(value: Payload): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: HeadersPayload): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

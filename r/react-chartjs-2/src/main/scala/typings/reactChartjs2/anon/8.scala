@@ -2,14 +2,14 @@ package typings.reactChartjs2.anon
 
 import typings.reactChartjs2.distTypesMod.ChartJSOrUndefined
 import typings.reactChartjs2.distTypesMod.ForwardedRef
-import typings.reactChartjs2.reactChartjs2Strings.bubble
+import typings.reactChartjs2.reactChartjs2Strings.bar
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `8`[TData, TLabel] extends StObject {
   
-  var ref: js.UndefOr[ForwardedRef[ChartJSOrUndefined[bubble, TData, TLabel]]] = js.undefined
+  var ref: js.UndefOr[ForwardedRef[ChartJSOrUndefined[bar, TData, TLabel]]] = js.undefined
 }
 object `8` {
   
@@ -20,9 +20,9 @@ object `8` {
   
   extension [Self <: `8`[?, ?], TData, TLabel](x: Self & (`8`[TData, TLabel])) {
     
-    inline def setRef(value: ForwardedRef[ChartJSOrUndefined[bubble, TData, TLabel]]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: ForwardedRef[ChartJSOrUndefined[bar, TData, TLabel]]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    inline def setRefFunction1(value: /* instance */ (ChartJSOrUndefined[bubble, TData, TLabel]) | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    inline def setRefFunction1(value: /* instance */ (ChartJSOrUndefined[bar, TData, TLabel]) | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
     inline def setRefNull: Self = StObject.set(x, "ref", null)
     

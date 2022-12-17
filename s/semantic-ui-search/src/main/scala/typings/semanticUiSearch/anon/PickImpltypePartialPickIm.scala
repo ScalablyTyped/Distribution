@@ -86,13 +86,13 @@ trait PickImpltypePartialPickIm
   
   var transition: js.UndefOr[String] = js.undefined
   
-  var `type`: String & js.UndefOr[String]
+  var `type`: String
   
   var verbose: js.UndefOr[Boolean] = js.undefined
 }
 object PickImpltypePartialPickIm {
   
-  inline def apply(`type`: String & js.UndefOr[String]): PickImpltypePartialPickIm = {
+  inline def apply(`type`: String): PickImpltypePartialPickIm = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpltypePartialPickIm]
@@ -230,7 +230,7 @@ object PickImpltypePartialPickIm {
     
     inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
     
-    inline def setType(value: String & js.UndefOr[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     

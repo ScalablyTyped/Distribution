@@ -2,7 +2,7 @@ package typings.rtpParser.anon
 
 import typings.rtpParser.rtpParserInts.`8000`
 import typings.rtpParser.rtpParserStrings.A
-import typings.rtpParser.rtpParserStrings.G729
+import typings.rtpParser.rtpParserStrings.CN
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,12 +15,12 @@ trait `7` extends StObject {
   
   var mediaType: A
   
-  var name: G729
+  var name: CN
 }
 object `7` {
   
   inline def apply(): `7` = {
-    val __obj = js.Dynamic.literal(channels = 1, clockRate = 8000, mediaType = "A", name = "G729")
+    val __obj = js.Dynamic.literal(channels = 1, clockRate = 8000, mediaType = "A", name = "CN")
     __obj.asInstanceOf[`7`]
   }
   
@@ -32,6 +32,6 @@ object `7` {
     
     inline def setMediaType(value: A): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
-    inline def setName(value: G729): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: CN): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

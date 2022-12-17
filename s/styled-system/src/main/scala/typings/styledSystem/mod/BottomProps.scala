@@ -29,6 +29,6 @@ object BottomProps {
     
     inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
-    inline def setBottomVarargs(value: (TVal | Null)*): Self = StObject.set(x, "bottom", js.Array(value :_*))
+    inline def setBottomVarargs(value: (TVal | Null)*): Self = StObject.set(x, "bottom", js.Array(value*))
   }
 }

@@ -312,7 +312,7 @@ trait OmitTextViewset extends StObject {
   @JSName("isDisposed")
   var isDisposed_Original: js.Function0[Boolean]
   
-  var jsxAttributes: (JSXAttributes[TextView, Omit[TextView, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `3`
+  var jsxAttributes: (JSXAttributes[TextView, Omit[TextView, set | typings.tabris.tabrisStrings.jsxAttributes]]) & Children
   
   var layoutData: LayoutDataValue
   
@@ -576,7 +576,7 @@ object OmitTextViewset {
     insertAfter: /* widget */ Widget[Any] => TextView,
     insertBefore: /* widget */ Widget[Any] => TextView,
     isDisposed: () => Boolean,
-    jsxAttributes: (JSXAttributes[TextView, Omit[TextView, set | jsxAttributes]]) & `3`,
+    jsxAttributes: (JSXAttributes[TextView, Omit[TextView, set | jsxAttributes]]) & Children,
     layoutData: LayoutDataValue,
     left: ConstraintValue,
     lineSpacing: Double,
@@ -754,7 +754,7 @@ object OmitTextViewset {
     
     inline def setIsDisposed(value: () => Boolean): Self = StObject.set(x, "isDisposed", js.Any.fromFunction0(value))
     
-    inline def setJsxAttributes(value: (JSXAttributes[TextView, Omit[TextView, set | jsxAttributes]]) & `3`): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
+    inline def setJsxAttributes(value: (JSXAttributes[TextView, Omit[TextView, set | jsxAttributes]]) & Children): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     
     inline def setLayoutData(value: LayoutDataValue): Self = StObject.set(x, "layoutData", value.asInstanceOf[js.Any])
     

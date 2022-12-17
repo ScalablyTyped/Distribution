@@ -8,6 +8,7 @@ import typings.mz.anon.Flag
 import typings.mz.anon.Interval
 import typings.mz.anon.Persistent
 import typings.mz.anon.Recursive
+import typings.mz.anon.WithFileTypes
 import typings.mz.anon.`0`
 import typings.mz.anon.`1`
 import typings.mz.anon.`2`
@@ -18,22 +19,16 @@ import typings.node.NodeJS.ArrayBufferView
 import typings.node.NodeJS.ErrnoException
 import typings.node.anon.MakeDirectoryOptionsrecur
 import typings.node.anon.MakeDirectoryOptionsrecurMode
-import typings.node.anon.ObjectEncodingOptionsAborEncoding
-import typings.node.anon.ObjectEncodingOptionsflag
+import typings.node.anon.ObjectEncodingOptionsAbor
 import typings.node.anon.ObjectEncodingOptionsflagEncoding
 import typings.node.anon.ObjectEncodingOptionsmode
 import typings.node.anon.ObjectEncodingOptionswith
 import typings.node.anon.ObjectEncodingOptionswithEncoding
 import typings.node.anon.StatOptionsbigintfalseund
 import typings.node.anon.StatOptionsbiginttrue
-import typings.node.anon.WatchFileOptionsbigintfal
-import typings.node.anon.WatchFileOptionsbiginttru
 import typings.node.anon.WatchOptionsencodingbuffe
-import typings.node.anon.WithFileTypes
 import typings.node.anon.encodingBufferEncodingfla
-import typings.node.anon.encodingBufferEncodingflaEncoding
 import typings.node.anon.encodingnullundefinedflag
-import typings.node.anon.encodingnullundefinedflagEncoding
 import typings.node.bufferMod.global.Buffer
 import typings.node.bufferMod.global.BufferEncoding
 import typings.node.fsMod.BigIntStats
@@ -50,7 +45,6 @@ import typings.node.fsMod.OpenDirOptions
 import typings.node.fsMod.OpenMode
 import typings.node.fsMod.PathLike
 import typings.node.fsMod.PathOrFileDescriptor
-import typings.node.fsMod.ReadAsyncOptions
 import typings.node.fsMod.ReadPosition
 import typings.node.fsMod.ReadStreamOptions
 import typings.node.fsMod.ReadSyncOptions
@@ -58,10 +52,8 @@ import typings.node.fsMod.RmDirOptions
 import typings.node.fsMod.RmOptions
 import typings.node.fsMod.StatOptions
 import typings.node.fsMod.StatSyncFn
-import typings.node.fsMod.StatWatcher
 import typings.node.fsMod.StreamOptions
 import typings.node.fsMod.TimeLike
-import typings.node.fsMod.WatchListener
 import typings.node.fsMod.WatchOptions
 import typings.node.fsMod.WriteFileOptions
 import typings.node.fsMod.symlink.Type
@@ -131,15 +123,6 @@ object fsMod {
   inline def appendFile(file: PathLike, data: Any, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def appendFile(file: PathLike, data: Any, options: WriteFileOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def appendFile(file: PathLike, data: Any, options: WriteFileOptions, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def appendFile(file: PathOrFileDescriptor, data: String, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def appendFile(file: PathOrFileDescriptor, data: js.typedarray.Uint8Array, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def appendFile(path: PathOrFileDescriptor, data: String, options: WriteFileOptions, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def appendFile(
-    path: PathOrFileDescriptor,
-    data: js.typedarray.Uint8Array,
-    options: WriteFileOptions,
-    callback: NoParamCallback
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def appendFileSync(path: PathOrFileDescriptor, data: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFileSync")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def appendFileSync(path: PathOrFileDescriptor, data: String, options: WriteFileOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFileSync")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -150,7 +133,6 @@ object fsMod {
   inline def chmod(path: PathLike, mode: String, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def chmod(path: PathLike, mode: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("chmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def chmod(path: PathLike, mode: Double, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def chmod(path: PathLike, mode: Mode, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def chmodSync(path: PathLike, mode: Mode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chmodSync")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -159,12 +141,10 @@ object fsMod {
   
   inline def chownSync(path: PathLike, uid: Double, gid: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chownSync")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def close(fd: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(fd.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def close(fd: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(fd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   inline def close(fd: Double, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("close")(fd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def closeSync(fd: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeSync")(fd.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  
-  inline def close_Promise(fd: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(fd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   object constants {
     
@@ -416,7 +396,7 @@ object fsMod {
   inline def copyFile(src: PathLike, dest: PathLike): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def copyFile(src: PathLike, dest: PathLike, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copyFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def copyFile(src: PathLike, dest: PathLike, flags: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def copyFile(src: PathLike, dest: PathLike, mode: Double, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copyFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def copyFile(src: PathLike, dest: PathLike, flags: Double, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copyFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def copyFileSync(src: PathLike, dest: PathLike): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copyFileSync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def copyFileSync(src: PathLike, dest: PathLike, mode: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copyFileSync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -468,7 +448,6 @@ object fsMod {
   inline def createWriteStream(path: PathLike, options: StreamOptions): typings.node.fsMod.WriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("createWriteStream")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.WriteStream]
   
   inline def exists(path: PathLike): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("exists")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
-  inline def exists(path: PathLike, callback: js.Function1[/* exists */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exists")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def exists(
     path: PathLike,
     callback: js.Function2[/* err */ ErrnoException | Null, /* exists */ Boolean, Unit]
@@ -480,7 +459,6 @@ object fsMod {
   inline def fchmod(fd: Double, mode: String, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fchmod")(fd.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def fchmod(fd: Double, mode: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("fchmod")(fd.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def fchmod(fd: Double, mode: Double, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fchmod")(fd.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def fchmod(fd: Double, mode: Mode, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fchmod")(fd.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def fchmodSync(fd: Double, mode: Mode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fchmodSync")(fd.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -497,39 +475,10 @@ object fsMod {
   inline def fstat(fd: Double): js.Promise[typings.node.fsMod.Stats] = ^.asInstanceOf[js.Dynamic].applyDynamic("fstat")(fd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.node.fsMod.Stats]]
   inline def fstat(
     fd: Double,
-    callback: js.Function2[ErrnoException | Null, /* stats */ typings.node.fsMod.Stats, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fstat")(fd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def fstat(
-    fd: Double,
-    options: Unit,
-    callback: js.Function2[ErrnoException | Null, BigIntStats | (/* stats */ typings.node.fsMod.Stats), Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fstat")(fd.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def fstat(
-    fd: Double,
-    options: StatOptionsbigintfalseund,
     callback: js.Function2[/* err */ ErrnoException | Null, /* stats */ typings.node.fsMod.Stats, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fstat")(fd.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def fstat(
-    fd: Double,
-    options: StatOptionsbiginttrue,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* stats */ BigIntStats, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fstat")(fd.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def fstat(
-    fd: Double,
-    options: StatOptions,
-    callback: js.Function2[
-      /* err */ ErrnoException | Null, 
-      /* stats */ typings.node.fsMod.Stats | BigIntStats, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fstat")(fd.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fstat")(fd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def fstatSync(fd: Double): typings.node.fsMod.Stats | BigIntStats = ^.asInstanceOf[js.Dynamic].applyDynamic("fstatSync")(fd.asInstanceOf[js.Any]).asInstanceOf[typings.node.fsMod.Stats | BigIntStats]
-  inline def fstatSync(fd: Double, options: StatOptionsbigintfalseund): typings.node.fsMod.Stats = (^.asInstanceOf[js.Dynamic].applyDynamic("fstatSync")(fd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.Stats]
-  inline def fstatSync(fd: Double, options: StatOptionsbiginttrue): BigIntStats = (^.asInstanceOf[js.Dynamic].applyDynamic("fstatSync")(fd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BigIntStats]
-  inline def fstatSync(fd: Double, options: StatOptions): typings.node.fsMod.Stats | BigIntStats = (^.asInstanceOf[js.Dynamic].applyDynamic("fstatSync")(fd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.Stats | BigIntStats]
-  
-  inline def fstatSync_Stats(fd: Double): typings.node.fsMod.Stats = ^.asInstanceOf[js.Dynamic].applyDynamic("fstatSync")(fd.asInstanceOf[js.Any]).asInstanceOf[typings.node.fsMod.Stats]
+  inline def fstatSync(fd: Double): typings.node.fsMod.Stats = ^.asInstanceOf[js.Dynamic].applyDynamic("fstatSync")(fd.asInstanceOf[js.Any]).asInstanceOf[typings.node.fsMod.Stats]
   
   inline def fsync(fd: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("fsync")(fd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   inline def fsync(fd: Double, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fsync")(fd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -564,7 +513,6 @@ object fsMod {
   inline def futimes(fd: Double, atime: Double, mtime: js.Date, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def futimes(fd: Double, atime: Double, mtime: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def futimes(fd: Double, atime: Double, mtime: Double, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def futimes(fd: Double, atime: TimeLike, mtime: TimeLike, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def futimesSync(fd: Double, atime: TimeLike, mtime: TimeLike): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("futimesSync")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -572,7 +520,6 @@ object fsMod {
   inline def lchmod(path: PathLike, mode: String, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lchmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def lchmod(path: PathLike, mode: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lchmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def lchmod(path: PathLike, mode: Double, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lchmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def lchmod(path: PathLike, mode: Mode, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lchmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def lchmodSync(path: PathLike, mode: Mode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lchmodSync")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -589,32 +536,8 @@ object fsMod {
   inline def lstat(path: PathLike): js.Promise[typings.node.fsMod.Stats] = ^.asInstanceOf[js.Dynamic].applyDynamic("lstat")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.node.fsMod.Stats]]
   inline def lstat(
     path: PathLike,
-    callback: js.Function2[ErrnoException | Null, /* stats */ typings.node.fsMod.Stats, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lstat")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def lstat(
-    path: PathLike,
-    options: Unit,
-    callback: js.Function2[ErrnoException | Null, BigIntStats | (/* stats */ typings.node.fsMod.Stats), Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lstat")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def lstat(
-    path: PathLike,
-    options: StatOptionsbigintfalseund,
     callback: js.Function2[/* err */ ErrnoException | Null, /* stats */ typings.node.fsMod.Stats, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lstat")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def lstat(
-    path: PathLike,
-    options: StatOptionsbiginttrue,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* stats */ BigIntStats, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lstat")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def lstat(
-    path: PathLike,
-    options: StatOptions,
-    callback: js.Function2[
-      /* err */ ErrnoException | Null, 
-      /* stats */ typings.node.fsMod.Stats | BigIntStats, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lstat")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lstat")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("mz/fs", "lstatSync")
   @js.native
@@ -630,37 +553,10 @@ object fsMod {
   inline def mkdir(path: PathLike, options: String, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def mkdir(path: PathLike, options: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def mkdir(path: PathLike, options: Double, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def mkdir(
-    path: PathLike,
-    options: Null,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* path */ js.UndefOr[String], Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def mkdir(path: PathLike, options: Null, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def mkdir(
-    path: PathLike,
-    options: Unit,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* path */ js.UndefOr[String], Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def mkdir(path: PathLike, options: Unit, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def mkdir(path: PathLike, options: MakeDirectoryOptionsrecurMode, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def mkdir(
-    path: PathLike,
-    options: MakeDirectoryOptionsrecur,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* path */ js.UndefOr[String], Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def mkdir(path: PathLike, options: MakeDirectoryOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def mkdir(
-    path: PathLike,
-    options: MakeDirectoryOptions,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* path */ js.UndefOr[String], Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def mkdir(path: PathLike, options: MakeDirectoryOptions, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def mkdir(
-    path: PathLike,
-    options: Mode,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* path */ js.UndefOr[String], Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def mkdir(path: PathLike, options: Mode, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def mkdirSync(path: PathLike): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   inline def mkdirSync(path: PathLike, options: MakeDirectoryOptionsrecur): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
@@ -672,7 +568,7 @@ object fsMod {
   inline def mkdirSync_Unit(path: PathLike, options: Mode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def mkdtemp(prefix: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdtemp")(prefix.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  inline def mkdtemp(prefix: String, callback: js.Function2[ErrnoException | Null, /* folder */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtemp")(prefix.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mkdtemp(prefix: String, callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtemp")(prefix.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def mkdtemp(prefix: String, options: String): js.Promise[String | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtemp")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Buffer]]
   inline def mkdtemp(
     prefix: String,
@@ -707,27 +603,11 @@ object fsMod {
     options: `1`,
     callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ String | Buffer, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtemp")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def mkdtemp(prefix: String, options: buffer): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtemp")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
-  inline def mkdtemp(
-    prefix: String,
-    options: buffer,
-    callback: js.Function2[ErrnoException | Null, /* folder */ Buffer, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtemp")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def mkdtemp(
-    prefix: String,
-    options: typings.node.anon.Encoding,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ Buffer, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtemp")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def mkdtemp(prefix: String, options: BufferEncoding): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtemp")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   inline def mkdtemp(
     prefix: String,
     options: BufferEncoding,
     callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ String, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtemp")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def mkdtemp(
-    prefix: String,
-    options: EncodingOption,
-    callback: js.Function2[ErrnoException | Null, Buffer | (/* folder */ String), Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtemp")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def mkdtempSync(prefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdtempSync")(prefix.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -737,7 +617,13 @@ object fsMod {
   inline def mkdtempSync_Union(prefix: String): String | Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdtempSync")(prefix.asInstanceOf[js.Any]).asInstanceOf[String | Buffer]
   inline def mkdtempSync_Union(prefix: String, options: EncodingOption): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtempSync")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
   
-  inline def open(path: PathLike, callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mkdtemp_buffer(prefix: String, options: buffer): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtemp")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  inline def mkdtemp_buffer(
+    prefix: String,
+    options: buffer,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ Buffer, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtemp")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   inline def open(path: PathLike, flags: String): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
   inline def open(
     path: PathLike,
@@ -800,52 +686,6 @@ object fsMod {
     path: PathLike,
     flags: Double,
     mode: Unit,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def open(
-    path: PathLike,
-    flags: Unit,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def open(
-    path: PathLike,
-    flags: Unit,
-    mode: Null,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def open(
-    path: PathLike,
-    flags: Unit,
-    mode: Unit,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def open(
-    path: PathLike,
-    flags: Unit,
-    mode: Mode,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def open(
-    path: PathLike,
-    flags: OpenMode,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def open(
-    path: PathLike,
-    flags: OpenMode,
-    mode: Null,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def open(
-    path: PathLike,
-    flags: OpenMode,
-    mode: Unit,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def open(
-    path: PathLike,
-    flags: OpenMode,
-    mode: Mode,
     callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -1463,7 +1303,7 @@ object fsMod {
       * If a flag is not provided, it defaults to `'r'`.
       */
     inline def readFile(path: PathLike): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
-    inline def readFile(path: PathLike, options: ObjectEncodingOptionsAborEncoding): js.Promise[String | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Buffer]]
+    inline def readFile(path: PathLike, options: ObjectEncodingOptionsAbor): js.Promise[String | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Buffer]]
     /**
       * Asynchronously reads the entire contents of a file.
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -1475,7 +1315,7 @@ object fsMod {
     inline def readFile(path: PathLike, options: encodingnullundefinedflag): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
     inline def readFile(path: PathLike, options: BufferEncoding): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
     inline def readFile(path: FileHandle): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
-    inline def readFile(path: FileHandle, options: ObjectEncodingOptionsAborEncoding): js.Promise[String | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Buffer]]
+    inline def readFile(path: FileHandle, options: ObjectEncodingOptionsAbor): js.Promise[String | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Buffer]]
     inline def readFile(path: FileHandle, options: encodingBufferEncodingfla): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
     inline def readFile(path: FileHandle, options: encodingnullundefinedflag): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
     inline def readFile(path: FileHandle, options: BufferEncoding): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
@@ -1510,6 +1350,12 @@ object fsMod {
       * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
       */
     inline def readdir(path: PathLike): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+    /**
+      * Asynchronous readdir(3) - read a directory.
+      * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
+      * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
+      */
+    inline def readdir(path: PathLike, options: typings.node.anon.Encoding): js.Promise[js.Array[Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Buffer]]]
     inline def readdir(path: PathLike, options: ObjectEncodingOptionswith): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
     /**
       * Asynchronous readdir(3) - read a directory.
@@ -1517,12 +1363,6 @@ object fsMod {
       * @param options If called with `withFileTypes: true` the result data will be an array of Dirent.
       */
     inline def readdir(path: PathLike, options: ObjectEncodingOptionswithEncoding): js.Promise[js.Array[typings.node.nodeColonfsMod.Dirent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.node.nodeColonfsMod.Dirent]]]
-    /**
-      * Asynchronous readdir(3) - read a directory.
-      * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
-      * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
-      */
-    inline def readdir(path: PathLike, options: WithFileTypes): js.Promise[js.Array[Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Buffer]]]
     inline def readdir(path: PathLike, options: BufferEncoding): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
     
     inline def readdir_buffer(path: PathLike, options: buffer): js.Promise[js.Array[Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Buffer]]]
@@ -1828,19 +1668,6 @@ object fsMod {
     length: Double,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
-      /* bytesRead */ Double, 
-      /* buffer */ js.typedarray.DataView, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def read(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Double,
-    length: Double,
-    position: ReadPosition,
-    callback: js.Function3[
       /* err */ ErrnoException | Null, 
       /* bytesRead */ Double, 
       /* buffer */ js.typedarray.DataView, 
@@ -1868,19 +1695,6 @@ object fsMod {
     offset: Double,
     length: Double,
     position: Null,
-    callback: js.Function3[
-      ErrnoException | Null, 
-      /* bytesRead */ Double, 
-      /* buffer */ js.typedarray.Float32Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def read(
-    fd: Double,
-    buffer: js.typedarray.Float32Array,
-    offset: Double,
-    length: Double,
-    position: ReadPosition,
     callback: js.Function3[
       /* err */ ErrnoException | Null, 
       /* bytesRead */ Double, 
@@ -1910,19 +1724,6 @@ object fsMod {
     length: Double,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
-      /* bytesRead */ Double, 
-      /* buffer */ js.typedarray.Float64Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def read(
-    fd: Double,
-    buffer: js.typedarray.Float64Array,
-    offset: Double,
-    length: Double,
-    position: ReadPosition,
-    callback: js.Function3[
       /* err */ ErrnoException | Null, 
       /* bytesRead */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
@@ -1950,19 +1751,6 @@ object fsMod {
     offset: Double,
     length: Double,
     position: Null,
-    callback: js.Function3[
-      ErrnoException | Null, 
-      /* bytesRead */ Double, 
-      /* buffer */ js.typedarray.Int16Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def read(
-    fd: Double,
-    buffer: js.typedarray.Int16Array,
-    offset: Double,
-    length: Double,
-    position: ReadPosition,
     callback: js.Function3[
       /* err */ ErrnoException | Null, 
       /* bytesRead */ Double, 
@@ -1992,19 +1780,6 @@ object fsMod {
     length: Double,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
-      /* bytesRead */ Double, 
-      /* buffer */ js.typedarray.Int32Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def read(
-    fd: Double,
-    buffer: js.typedarray.Int32Array,
-    offset: Double,
-    length: Double,
-    position: ReadPosition,
-    callback: js.Function3[
       /* err */ ErrnoException | Null, 
       /* bytesRead */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
@@ -2032,19 +1807,6 @@ object fsMod {
     offset: Double,
     length: Double,
     position: Null,
-    callback: js.Function3[
-      ErrnoException | Null, 
-      /* bytesRead */ Double, 
-      /* buffer */ js.typedarray.Int8Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def read(
-    fd: Double,
-    buffer: js.typedarray.Int8Array,
-    offset: Double,
-    length: Double,
-    position: ReadPosition,
     callback: js.Function3[
       /* err */ ErrnoException | Null, 
       /* bytesRead */ Double, 
@@ -2074,19 +1836,6 @@ object fsMod {
     length: Double,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
-      /* bytesRead */ Double, 
-      /* buffer */ js.typedarray.Uint16Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def read(
-    fd: Double,
-    buffer: js.typedarray.Uint16Array,
-    offset: Double,
-    length: Double,
-    position: ReadPosition,
-    callback: js.Function3[
       /* err */ ErrnoException | Null, 
       /* bytesRead */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
@@ -2115,19 +1864,6 @@ object fsMod {
     length: Double,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
-      /* bytesRead */ Double, 
-      /* buffer */ js.typedarray.Uint32Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def read(
-    fd: Double,
-    buffer: js.typedarray.Uint32Array,
-    offset: Double,
-    length: Double,
-    position: ReadPosition,
-    callback: js.Function3[
       /* err */ ErrnoException | Null, 
       /* bytesRead */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
@@ -2155,19 +1891,6 @@ object fsMod {
     offset: Double,
     length: Double,
     position: Null,
-    callback: js.Function3[
-      ErrnoException | Null, 
-      /* bytesRead */ Double, 
-      /* buffer */ js.typedarray.Uint8Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def read(
-    fd: Double,
-    buffer: js.typedarray.Uint8Array,
-    offset: Double,
-    length: Double,
-    position: ReadPosition,
     callback: js.Function3[
       /* err */ ErrnoException | Null, 
       /* bytesRead */ Double, 
@@ -2203,19 +1926,6 @@ object fsMod {
     length: Double,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
-      /* bytesRead */ Double, 
-      /* buffer */ js.typedarray.Uint8ClampedArray, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def read(
-    fd: Double,
-    buffer: js.typedarray.Uint8ClampedArray,
-    offset: Double,
-    length: Double,
-    position: ReadPosition,
-    callback: js.Function3[
       /* err */ ErrnoException | Null, 
       /* bytesRead */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
@@ -2243,14 +1953,6 @@ object fsMod {
     offset: Double,
     length: Double,
     position: Null,
-    callback: js.Function3[ErrnoException | Null, /* bytesRead */ Double, /* buffer */ BigInt64Array, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def read(
-    fd: Double,
-    buffer: BigInt64Array,
-    offset: Double,
-    length: Double,
-    position: ReadPosition,
     callback: js.Function3[
       /* err */ ErrnoException | Null, 
       /* bytesRead */ Double, 
@@ -2279,14 +1981,6 @@ object fsMod {
     offset: Double,
     length: Double,
     position: Null,
-    callback: js.Function3[ErrnoException | Null, /* bytesRead */ Double, /* buffer */ BigUint64Array, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def read(
-    fd: Double,
-    buffer: BigUint64Array,
-    offset: Double,
-    length: Double,
-    position: ReadPosition,
     callback: js.Function3[
       /* err */ ErrnoException | Null, 
       /* bytesRead */ Double, 
@@ -2294,35 +1988,7 @@ object fsMod {
       Unit
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def read(
-    fd: Double,
-    callback: js.Function3[
-      /* err */ ErrnoException | Null, 
-      /* bytesRead */ Double, 
-      /* buffer */ ArrayBufferView, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def read[TBuffer /* <: ArrayBufferView */](
-    fd: Double,
-    options: ReadAsyncOptions[TBuffer],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* bytesRead */ Double, /* buffer */ TBuffer, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def readFile(
-    path: PathLike | PathOrFileDescriptor,
-    callback: js.Function2[ErrnoException | Null, /* data */ Buffer, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def readFile(
-    path: PathLike | PathOrFileDescriptor,
-    options: Null,
-    callback: js.Function2[ErrnoException | Null, (/* data */ Buffer) | String, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def readFile(
-    path: PathLike | PathOrFileDescriptor,
-    options: Unit,
-    callback: js.Function2[ErrnoException | Null, (/* data */ Buffer) | String, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def readFile(path: Double): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
   inline def readFile(path: Double, callback: js.Function2[/* err */ ErrnoException | Null, /* data */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def readFile(path: Double, options: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
@@ -2353,18 +2019,29 @@ object fsMod {
     options: Flag,
     callback: js.Function2[/* err */ ErrnoException | Null, /* data */ Buffer, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def readFile(path: Double, options: `2`): js.Promise[String | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Buffer]]
+  inline def readFile(path: Double, options: `4`): js.Promise[String | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Buffer]]
   inline def readFile(
     path: Double,
-    options: `2`,
+    options: `4`,
     callback: js.Function2[/* err */ ErrnoException | Null, /* data */ String | Buffer, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def readFile(path: PathLike): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+  inline def readFile(path: PathLike, callback: js.Function2[/* err */ ErrnoException | Null, /* data */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def readFile(path: PathLike, options: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   inline def readFile(
     path: PathLike,
     options: String,
     callback: js.Function2[ErrnoException | Null, Buffer | (/* data */ String), Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def readFile(
+    path: PathLike,
+    options: Null,
+    callback: js.Function2[ErrnoException | Null, (/* data */ Buffer) | String, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def readFile(
+    path: PathLike,
+    options: Unit,
+    callback: js.Function2[ErrnoException | Null, (/* data */ Buffer) | String, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def readFile(path: PathLike, options: EncodingFlag): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   inline def readFile(
@@ -2378,31 +2055,11 @@ object fsMod {
     options: Flag,
     callback: js.Function2[/* err */ ErrnoException | Null, /* data */ Buffer, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def readFile(path: PathLike, options: `2`): js.Promise[String | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Buffer]]
+  inline def readFile(path: PathLike, options: `4`): js.Promise[String | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Buffer]]
   inline def readFile(
     path: PathLike,
-    options: `2`,
+    options: `4`,
     callback: js.Function2[/* err */ ErrnoException | Null, /* data */ String | Buffer, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def readFile(
-    path: PathOrFileDescriptor,
-    options: ObjectEncodingOptionsflag,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* data */ String | Buffer, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def readFile(
-    path: PathOrFileDescriptor,
-    options: encodingBufferEncodingflaEncoding,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* data */ String, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def readFile(
-    path: PathOrFileDescriptor,
-    options: encodingnullundefinedflagEncoding,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* data */ Buffer, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def readFile(
-    path: PathOrFileDescriptor,
-    options: BufferEncoding,
-    callback: js.Function2[ErrnoException | Null, Buffer | (/* data */ String), Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def readFileSync(path: PathOrFileDescriptor): String | Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any]).asInstanceOf[String | Buffer]
@@ -2421,7 +2078,10 @@ object fsMod {
   inline def readSync(fd: Double, buffer: ArrayBufferView, opts: ReadSyncOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def readdir(path: PathLike): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
-  inline def readdir(path: PathLike, callback: js.Function2[ErrnoException | Null, /* files */ js.Array[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def readdir(
+    path: PathLike,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[String], Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def readdir(path: PathLike, options: String): js.Promise[js.Array[Buffer | String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Buffer | String]]]
   inline def readdir(
     path: PathLike,
@@ -2444,76 +2104,56 @@ object fsMod {
     options: EncodingWithFileTypes,
     callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[Buffer], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def readdir(path: PathLike, options: typings.mz.anon.WithFileTypes): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
-  inline def readdir(
-    path: PathLike,
-    options: typings.mz.anon.WithFileTypes,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[String], Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def readdir(path: PathLike, options: `3`): js.Promise[js.Array[Buffer | String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Buffer | String]]]
-  inline def readdir(
-    path: PathLike,
-    options: `3`,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[Buffer | String], Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def readdir(path: PathLike, options: `4`): js.Promise[js.Array[typings.node.fsMod.Dirent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.node.fsMod.Dirent]]]
-  inline def readdir(
-    path: PathLike,
-    options: `4`,
-    callback: js.Function2[
-      /* err */ ErrnoException | Null, 
-      /* files */ js.Array[typings.node.fsMod.Dirent], 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def readdir(path: PathLike, options: buffer): js.Promise[js.Array[Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Buffer]]]
-  inline def readdir(
-    path: PathLike,
-    options: buffer,
-    callback: js.Function2[ErrnoException | Null, /* files */ js.Array[Buffer], Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def readdir(
-    path: PathLike,
-    options: typings.node.anon.EncodingWithFileTypes,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[String], Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def readdir(
-    path: PathLike,
-    options: ObjectEncodingOptionswithEncoding,
-    callback: js.Function2[
-      /* err */ ErrnoException | Null, 
-      /* files */ js.Array[typings.node.fsMod.Dirent], 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def readdir(
-    path: PathLike,
-    options: ObjectEncodingOptionswith,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[Buffer | String], Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def readdir(path: PathLike, options: WithFileTypes): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
   inline def readdir(
     path: PathLike,
     options: WithFileTypes,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[Buffer], Unit]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[String], Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def readdir(path: PathLike, options: `2`): js.Promise[js.Array[Buffer | String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Buffer | String]]]
+  inline def readdir(
+    path: PathLike,
+    options: `2`,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[Buffer | String], Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def readdir(path: PathLike, options: `3`): js.Promise[js.Array[typings.node.fsMod.Dirent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.node.fsMod.Dirent]]]
+  inline def readdir(
+    path: PathLike,
+    options: `3`,
+    callback: js.Function2[
+      /* err */ ErrnoException | Null, 
+      /* files */ js.Array[typings.node.fsMod.Dirent], 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def readdir(path: PathLike, options: BufferEncoding): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
   inline def readdir(
     path: PathLike,
     options: BufferEncoding,
-    callback: js.Function2[ErrnoException | Null, /* files */ js.Array[Buffer | String], Unit]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[String], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def readdirSync(path: PathLike): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-  inline def readdirSync(path: PathLike, options: typings.node.anon.EncodingWithFileTypes): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def readdirSync(path: PathLike, options: typings.node.anon.Encoding): js.Array[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Buffer]]
   inline def readdirSync(path: PathLike, options: ObjectEncodingOptionswith): js.Array[Buffer | String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Buffer | String]]
   inline def readdirSync(path: PathLike, options: ObjectEncodingOptionswithEncoding): js.Array[typings.node.fsMod.Dirent] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.node.fsMod.Dirent]]
-  inline def readdirSync(path: PathLike, options: WithFileTypes): js.Array[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Buffer]]
+  inline def readdirSync(path: PathLike, options: typings.node.anon.WithFileTypes): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   inline def readdirSync(path: PathLike, options: BufferEncoding): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   inline def readdirSync_buffer(path: PathLike, options: buffer): js.Array[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Buffer]]
   
+  inline def readdir_buffer(path: PathLike, options: buffer): js.Promise[js.Array[Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Buffer]]]
+  inline def readdir_buffer(
+    path: PathLike,
+    options: buffer,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[Buffer], Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   inline def readlink(path: PathLike): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  inline def readlink(path: PathLike, callback: js.Function2[ErrnoException | Null, /* linkString */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def readlink(
+    path: PathLike,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* linkString */ String, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def readlink(path: PathLike, options: String): js.Promise[String | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Buffer]]
   inline def readlink(
     path: PathLike,
@@ -2548,27 +2188,11 @@ object fsMod {
     options: `1`,
     callback: js.Function2[/* err */ ErrnoException | Null, /* linkString */ String | Buffer, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def readlink(path: PathLike, options: buffer): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
-  inline def readlink(
-    path: PathLike,
-    options: buffer,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* linkString */ Buffer, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def readlink(path: PathLike, options: BufferEncoding): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   inline def readlink(
     path: PathLike,
     options: BufferEncoding,
     callback: js.Function2[/* err */ ErrnoException | Null, /* linkString */ String, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def readlink(
-    path: PathLike,
-    options: BufferEncodingOption,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* linkString */ Buffer, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def readlink(
-    path: PathLike,
-    options: EncodingOption,
-    callback: js.Function2[ErrnoException | Null, Buffer | (/* linkString */ String), Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def readlinkSync(path: PathLike): String = ^.asInstanceOf[js.Dynamic].applyDynamic("readlinkSync")(path.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -2577,6 +2201,13 @@ object fsMod {
   
   inline def readlinkSync_Union(path: PathLike): String | Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("readlinkSync")(path.asInstanceOf[js.Any]).asInstanceOf[String | Buffer]
   inline def readlinkSync_Union(path: PathLike, options: EncodingOption): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("readlinkSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
+  
+  inline def readlink_buffer(path: PathLike, options: buffer): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  inline def readlink_buffer(
+    path: PathLike,
+    options: buffer,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* linkString */ Buffer, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def readv(
     fd: Double,
@@ -2606,7 +2237,10 @@ object fsMod {
   object realpath {
     
     inline def apply(path: PathLike): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-    inline def apply(path: PathLike, callback: js.Function2[ErrnoException | Null, /* resolvedPath */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def apply(
+      path: PathLike,
+      callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ String, Unit]
+    ): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def apply(path: PathLike, options: String): js.Promise[String | Buffer] = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Buffer]]
     inline def apply(
       path: PathLike,
@@ -2652,16 +2286,6 @@ object fsMod {
       path: PathLike,
       options: BufferEncoding,
       callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ String, Unit]
-    ): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def apply(
-      path: PathLike,
-      options: BufferEncodingOption,
-      callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ Buffer, Unit]
-    ): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def apply(
-      path: PathLike,
-      options: EncodingOption,
-      callback: js.Function2[ErrnoException | Null, Buffer | (/* resolvedPath */ String), Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("mz/fs", "realpath")
@@ -2713,33 +2337,6 @@ object fsMod {
       options: BufferEncoding,
       callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ String, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("native")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def native(
-      path: PathLike,
-      options: BufferEncodingOption,
-      callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ Buffer, Unit]
-    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("native")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    /**
-      * Asynchronous [`realpath(3)`](http://man7.org/linux/man-pages/man3/realpath.3.html).
-      *
-      * The `callback` gets two arguments `(err, resolvedPath)`.
-      *
-      * Only paths that can be converted to UTF8 strings are supported.
-      *
-      * The optional `options` argument can be a string specifying an encoding, or an
-      * object with an `encoding` property specifying the character encoding to use for
-      * the path passed to the callback. If the `encoding` is set to `'buffer'`,
-      * the path returned will be passed as a `Buffer` object.
-      *
-      * On Linux, when Node.js is linked against musl libc, the procfs file system must
-      * be mounted on `/proc` in order for this function to work. Glibc does not have
-      * this restriction.
-      * @since v9.2.0
-      */
-    inline def native(
-      path: PathLike,
-      options: EncodingOption,
-      callback: js.Function2[ErrnoException | Null, Buffer | (/* resolvedPath */ String), Unit]
-    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("native")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def native_buffer(path: PathLike, options: buffer): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("native")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
     inline def native_buffer(
@@ -2789,32 +2386,8 @@ object fsMod {
   inline def stat(path: PathLike): js.Promise[typings.node.fsMod.Stats] = ^.asInstanceOf[js.Dynamic].applyDynamic("stat")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.node.fsMod.Stats]]
   inline def stat(
     path: PathLike,
-    callback: js.Function2[ErrnoException | Null, /* stats */ typings.node.fsMod.Stats, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stat")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def stat(
-    path: PathLike,
-    options: Unit,
-    callback: js.Function2[ErrnoException | Null, BigIntStats | (/* stats */ typings.node.fsMod.Stats), Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stat")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def stat(
-    path: PathLike,
-    options: StatOptionsbigintfalseund,
     callback: js.Function2[/* err */ ErrnoException | Null, /* stats */ typings.node.fsMod.Stats, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stat")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def stat(
-    path: PathLike,
-    options: StatOptionsbiginttrue,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* stats */ BigIntStats, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stat")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def stat(
-    path: PathLike,
-    options: StatOptions,
-    callback: js.Function2[
-      /* err */ ErrnoException | Null, 
-      /* stats */ typings.node.fsMod.Stats | BigIntStats, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stat")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stat")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("mz/fs", "statSync")
   @js.native
@@ -2869,30 +2442,26 @@ object fsMod {
   inline def utimes(path: PathLike, atime: Double, mtime: js.Date, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def utimes(path: PathLike, atime: Double, mtime: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def utimes(path: PathLike, atime: Double, mtime: Double, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def utimes(path: PathLike, atime: TimeLike, mtime: TimeLike, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def utimesSync(path: PathLike, atime: TimeLike, mtime: TimeLike): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("utimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def watch(filename: PathLike): FSWatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any]).asInstanceOf[FSWatcher]
-  inline def watch(
-    filename: PathLike,
-    listener: (js.Function2[/* event */ String, /* filename */ String, Any]) | WatchListener[String]
-  ): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
+  inline def watch(filename: PathLike, listener: js.Function2[/* event */ String, /* filename */ String, Any]): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
   inline def watch(filename: PathLike, options: String): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
   inline def watch(
     filename: PathLike,
     options: String,
-    listener: (js.Function2[/* event */ String, /* filename */ String | Buffer, Unit]) | (WatchListener[String | Buffer])
+    listener: js.Function2[/* event */ String, /* filename */ String | Buffer, Unit]
   ): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
   inline def watch(
     filename: PathLike,
     options: Null,
-    listener: (js.Function2[/* event */ String, Buffer | (/* filename */ String), Unit]) | WatchListener[String]
+    listener: js.Function2[/* event */ String, Buffer | (/* filename */ String), Unit]
   ): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
   inline def watch(
     filename: PathLike,
     options: Unit,
-    listener: (js.Function2[/* event */ String, /* filename */ String, Unit]) | WatchListener[String]
+    listener: js.Function2[/* event */ String, /* filename */ String, Unit]
   ): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
   inline def watch(filename: PathLike, options: EncodingPersistent): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
   inline def watch(
@@ -2912,16 +2481,12 @@ object fsMod {
     options: Recursive,
     listener: js.Function2[/* event */ String, /* filename */ Buffer, Unit]
   ): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
-  inline def watch(filename: PathLike, options: WatchOptionsencodingbuffe): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
-  inline def watch(filename: PathLike, options: WatchOptionsencodingbuffe, listener: WatchListener[Buffer]): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
   inline def watch(filename: PathLike, options: BufferEncoding): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
   inline def watch(
     filename: PathLike,
     options: BufferEncoding,
-    listener: (js.Function2[/* event */ String, /* filename */ String, Unit]) | WatchListener[String]
+    listener: js.Function2[/* event */ String, /* filename */ String, Unit]
   ): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
-  inline def watch(filename: PathLike, options: WatchOptions): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
-  inline def watch(filename: PathLike, options: WatchOptions, listener: WatchListener[Buffer | String]): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
   
   inline def watchFile(
     filename: PathLike,
@@ -2937,356 +2502,532 @@ object fsMod {
     options: Interval,
     listener: js.Function2[/* curr */ typings.node.fsMod.Stats, /* prev */ typings.node.fsMod.Stats, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def watchFile(
-    filename: PathLike,
-    options: WatchFileOptionsbigintfal,
-    listener: js.Function2[/* curr */ typings.node.fsMod.Stats, /* prev */ typings.node.fsMod.Stats, Unit]
-  ): StatWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[StatWatcher]
-  inline def watchFile(
-    filename: PathLike,
-    options: WatchFileOptionsbiginttru,
-    listener: js.Function2[/* curr */ BigIntStats, /* prev */ BigIntStats, Unit]
-  ): StatWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[StatWatcher]
-  
-  inline def watchFile_StatWatcher(
-    filename: PathLike,
-    listener: js.Function2[/* curr */ typings.node.fsMod.Stats, /* prev */ typings.node.fsMod.Stats, Unit]
-  ): StatWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[StatWatcher]
-  inline def watchFile_StatWatcher(
-    filename: PathLike,
-    options: Unit,
-    listener: js.Function2[
-      (/* curr */ BigIntStats) | (/* curr */ typings.node.fsMod.Stats), 
-      (/* prev */ BigIntStats) | (/* prev */ typings.node.fsMod.Stats), 
-      Unit
-    ]
-  ): StatWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[StatWatcher]
   
   inline def watch_buffer(filename: PathLike, options: buffer): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
   inline def watch_buffer(
     filename: PathLike,
     options: buffer,
-    listener: (js.Function2[/* event */ String, /* filename */ Buffer, Unit]) | WatchListener[Buffer]
+    listener: js.Function2[/* event */ String, /* filename */ Buffer, Unit]
   ): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
   
   inline def write(
     fd: Double,
     buffer: js.typedarray.DataView,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Double,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Double,
-    length: Double,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Double,
-    length: Double,
-    position: Double,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Double,
-    length: Double,
-    position: Null,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Double,
-    length: Double,
-    position: Unit,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Double,
-    length: Null,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Double,
-    length: Null,
-    position: Double,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Double,
-    length: Null,
-    position: Null,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Double,
-    length: Null,
-    position: Unit,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Double,
-    length: Unit,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Double,
-    length: Unit,
-    position: Double,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Double,
-    length: Unit,
-    position: Null,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Double,
-    length: Unit,
-    position: Unit,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Null,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Null,
-    length: Double,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Null,
-    length: Double,
-    position: Double,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Null,
-    length: Double,
-    position: Null,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Null,
-    length: Double,
-    position: Unit,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Null,
-    length: Null,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Null,
-    length: Null,
-    position: Double,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Null,
-    length: Null,
-    position: Null,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Null,
-    length: Null,
-    position: Unit,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Null,
-    length: Unit,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Null,
-    length: Unit,
-    position: Double,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Null,
-    length: Unit,
-    position: Null,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Null,
-    length: Unit,
-    position: Unit,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Unit,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Unit,
-    length: Double,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Unit,
-    length: Double,
-    position: Double,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Unit,
-    length: Double,
-    position: Null,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Unit,
-    length: Double,
-    position: Unit,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Unit,
-    length: Null,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Unit,
-    length: Null,
-    position: Double,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Unit,
-    length: Null,
-    position: Null,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Unit,
-    length: Null,
-    position: Unit,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Unit,
-    length: Unit,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Unit,
-    length: Unit,
-    position: Double,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Unit,
-    length: Unit,
-    position: Null,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Unit,
-    length: Unit,
-    position: Unit,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ js.typedarray.DataView, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.Float32Array,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
-      /* buffer */ js.typedarray.Float32Array, 
+      /* buffer */ js.typedarray.DataView, 
       Unit
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
+    buffer: js.typedarray.DataView,
+    offset: Double,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.DataView, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
+    buffer: js.typedarray.DataView,
+    offset: Double,
+    length: Double,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.DataView, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
+    buffer: js.typedarray.DataView,
+    offset: Double,
+    length: Double,
+    position: Double,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.DataView, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
+    buffer: js.typedarray.DataView,
+    offset: Double,
+    length: Double,
+    position: Null,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.DataView, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
+    buffer: js.typedarray.DataView,
+    offset: Double,
+    length: Double,
+    position: Unit,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.DataView, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
+    buffer: js.typedarray.DataView,
+    offset: Double,
+    length: Null,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.DataView, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
+    buffer: js.typedarray.DataView,
+    offset: Double,
+    length: Null,
+    position: Double,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.DataView, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
+    buffer: js.typedarray.DataView,
+    offset: Double,
+    length: Null,
+    position: Null,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.DataView, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
+    buffer: js.typedarray.DataView,
+    offset: Double,
+    length: Null,
+    position: Unit,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.DataView, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
+    buffer: js.typedarray.DataView,
+    offset: Double,
+    length: Unit,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.DataView, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
+    buffer: js.typedarray.DataView,
+    offset: Double,
+    length: Unit,
+    position: Double,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.DataView, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
+    buffer: js.typedarray.DataView,
+    offset: Double,
+    length: Unit,
+    position: Null,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.DataView, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
+    buffer: js.typedarray.DataView,
+    offset: Double,
+    length: Unit,
+    position: Unit,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.DataView, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
+    buffer: js.typedarray.DataView,
+    offset: Null,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.DataView, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
+    buffer: js.typedarray.DataView,
+    offset: Null,
+    length: Double,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.DataView, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
+    buffer: js.typedarray.DataView,
+    offset: Null,
+    length: Double,
+    position: Double,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.DataView, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
+    buffer: js.typedarray.DataView,
+    offset: Null,
+    length: Double,
+    position: Null,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.DataView, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
+    buffer: js.typedarray.DataView,
+    offset: Null,
+    length: Double,
+    position: Unit,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.DataView, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
+    buffer: js.typedarray.DataView,
+    offset: Null,
+    length: Null,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.DataView, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
+    buffer: js.typedarray.DataView,
+    offset: Null,
+    length: Null,
+    position: Double,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.DataView, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
+    buffer: js.typedarray.DataView,
+    offset: Null,
+    length: Null,
+    position: Null,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.DataView, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
+    buffer: js.typedarray.DataView,
+    offset: Null,
+    length: Null,
+    position: Unit,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.DataView, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
+    buffer: js.typedarray.DataView,
+    offset: Null,
+    length: Unit,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.DataView, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
+    buffer: js.typedarray.DataView,
+    offset: Null,
+    length: Unit,
+    position: Double,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.DataView, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
+    buffer: js.typedarray.DataView,
+    offset: Null,
+    length: Unit,
+    position: Null,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.DataView, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
+    buffer: js.typedarray.DataView,
+    offset: Null,
+    length: Unit,
+    position: Unit,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.DataView, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
+    buffer: js.typedarray.DataView,
+    offset: Unit,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.DataView, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
+    buffer: js.typedarray.DataView,
+    offset: Unit,
+    length: Double,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.DataView, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
+    buffer: js.typedarray.DataView,
+    offset: Unit,
+    length: Double,
+    position: Double,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.DataView, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
+    buffer: js.typedarray.DataView,
+    offset: Unit,
+    length: Double,
+    position: Null,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.DataView, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
+    buffer: js.typedarray.DataView,
+    offset: Unit,
+    length: Double,
+    position: Unit,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.DataView, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
+    buffer: js.typedarray.DataView,
+    offset: Unit,
+    length: Null,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.DataView, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
+    buffer: js.typedarray.DataView,
+    offset: Unit,
+    length: Null,
+    position: Double,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.DataView, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
+    buffer: js.typedarray.DataView,
+    offset: Unit,
+    length: Null,
+    position: Null,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.DataView, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
+    buffer: js.typedarray.DataView,
+    offset: Unit,
+    length: Null,
+    position: Unit,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.DataView, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
+    buffer: js.typedarray.DataView,
+    offset: Unit,
+    length: Unit,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.DataView, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
+    buffer: js.typedarray.DataView,
+    offset: Unit,
+    length: Unit,
+    position: Double,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.DataView, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
+    buffer: js.typedarray.DataView,
+    offset: Unit,
+    length: Unit,
+    position: Null,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.DataView, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
+    buffer: js.typedarray.DataView,
+    offset: Unit,
+    length: Unit,
+    position: Unit,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.DataView, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
+    buffer: js.typedarray.Float32Array,
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ js.typedarray.Float32Array, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    fd: Double,
     buffer: js.typedarray.Float32Array,
     offset: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float32Array, 
       Unit
@@ -3298,7 +3039,7 @@ object fsMod {
     offset: Double,
     length: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float32Array, 
       Unit
@@ -3311,7 +3052,7 @@ object fsMod {
     length: Double,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float32Array, 
       Unit
@@ -3324,7 +3065,7 @@ object fsMod {
     length: Double,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float32Array, 
       Unit
@@ -3337,7 +3078,7 @@ object fsMod {
     length: Double,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float32Array, 
       Unit
@@ -3349,7 +3090,7 @@ object fsMod {
     offset: Double,
     length: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float32Array, 
       Unit
@@ -3362,7 +3103,7 @@ object fsMod {
     length: Null,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float32Array, 
       Unit
@@ -3375,7 +3116,7 @@ object fsMod {
     length: Null,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float32Array, 
       Unit
@@ -3388,7 +3129,7 @@ object fsMod {
     length: Null,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float32Array, 
       Unit
@@ -3400,7 +3141,7 @@ object fsMod {
     offset: Double,
     length: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float32Array, 
       Unit
@@ -3413,7 +3154,7 @@ object fsMod {
     length: Unit,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float32Array, 
       Unit
@@ -3426,7 +3167,7 @@ object fsMod {
     length: Unit,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float32Array, 
       Unit
@@ -3439,7 +3180,7 @@ object fsMod {
     length: Unit,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float32Array, 
       Unit
@@ -3450,7 +3191,7 @@ object fsMod {
     buffer: js.typedarray.Float32Array,
     offset: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float32Array, 
       Unit
@@ -3462,7 +3203,7 @@ object fsMod {
     offset: Null,
     length: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float32Array, 
       Unit
@@ -3475,7 +3216,7 @@ object fsMod {
     length: Double,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float32Array, 
       Unit
@@ -3488,7 +3229,7 @@ object fsMod {
     length: Double,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float32Array, 
       Unit
@@ -3501,7 +3242,7 @@ object fsMod {
     length: Double,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float32Array, 
       Unit
@@ -3513,7 +3254,7 @@ object fsMod {
     offset: Null,
     length: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float32Array, 
       Unit
@@ -3526,7 +3267,7 @@ object fsMod {
     length: Null,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float32Array, 
       Unit
@@ -3539,7 +3280,7 @@ object fsMod {
     length: Null,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float32Array, 
       Unit
@@ -3552,7 +3293,7 @@ object fsMod {
     length: Null,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float32Array, 
       Unit
@@ -3564,7 +3305,7 @@ object fsMod {
     offset: Null,
     length: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float32Array, 
       Unit
@@ -3577,7 +3318,7 @@ object fsMod {
     length: Unit,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float32Array, 
       Unit
@@ -3590,7 +3331,7 @@ object fsMod {
     length: Unit,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float32Array, 
       Unit
@@ -3603,7 +3344,7 @@ object fsMod {
     length: Unit,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float32Array, 
       Unit
@@ -3614,7 +3355,7 @@ object fsMod {
     buffer: js.typedarray.Float32Array,
     offset: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float32Array, 
       Unit
@@ -3626,7 +3367,7 @@ object fsMod {
     offset: Unit,
     length: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float32Array, 
       Unit
@@ -3639,7 +3380,7 @@ object fsMod {
     length: Double,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float32Array, 
       Unit
@@ -3652,7 +3393,7 @@ object fsMod {
     length: Double,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float32Array, 
       Unit
@@ -3665,7 +3406,7 @@ object fsMod {
     length: Double,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float32Array, 
       Unit
@@ -3677,7 +3418,7 @@ object fsMod {
     offset: Unit,
     length: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float32Array, 
       Unit
@@ -3690,7 +3431,7 @@ object fsMod {
     length: Null,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float32Array, 
       Unit
@@ -3703,7 +3444,7 @@ object fsMod {
     length: Null,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float32Array, 
       Unit
@@ -3716,7 +3457,7 @@ object fsMod {
     length: Null,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float32Array, 
       Unit
@@ -3728,7 +3469,7 @@ object fsMod {
     offset: Unit,
     length: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float32Array, 
       Unit
@@ -3741,7 +3482,7 @@ object fsMod {
     length: Unit,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float32Array, 
       Unit
@@ -3754,7 +3495,7 @@ object fsMod {
     length: Unit,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float32Array, 
       Unit
@@ -3767,7 +3508,7 @@ object fsMod {
     length: Unit,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float32Array, 
       Unit
@@ -3777,7 +3518,7 @@ object fsMod {
     fd: Double,
     buffer: js.typedarray.Float64Array,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -3788,7 +3529,7 @@ object fsMod {
     buffer: js.typedarray.Float64Array,
     offset: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -3800,7 +3541,7 @@ object fsMod {
     offset: Double,
     length: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -3813,7 +3554,7 @@ object fsMod {
     length: Double,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -3826,7 +3567,7 @@ object fsMod {
     length: Double,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -3839,7 +3580,7 @@ object fsMod {
     length: Double,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -3851,7 +3592,7 @@ object fsMod {
     offset: Double,
     length: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -3864,7 +3605,7 @@ object fsMod {
     length: Null,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -3877,7 +3618,7 @@ object fsMod {
     length: Null,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -3890,7 +3631,7 @@ object fsMod {
     length: Null,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -3902,7 +3643,7 @@ object fsMod {
     offset: Double,
     length: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -3915,7 +3656,7 @@ object fsMod {
     length: Unit,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -3928,7 +3669,7 @@ object fsMod {
     length: Unit,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -3941,7 +3682,7 @@ object fsMod {
     length: Unit,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -3952,7 +3693,7 @@ object fsMod {
     buffer: js.typedarray.Float64Array,
     offset: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -3964,7 +3705,7 @@ object fsMod {
     offset: Null,
     length: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -3977,7 +3718,7 @@ object fsMod {
     length: Double,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -3990,7 +3731,7 @@ object fsMod {
     length: Double,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -4003,7 +3744,7 @@ object fsMod {
     length: Double,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -4015,7 +3756,7 @@ object fsMod {
     offset: Null,
     length: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -4028,7 +3769,7 @@ object fsMod {
     length: Null,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -4041,7 +3782,7 @@ object fsMod {
     length: Null,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -4054,7 +3795,7 @@ object fsMod {
     length: Null,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -4066,7 +3807,7 @@ object fsMod {
     offset: Null,
     length: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -4079,7 +3820,7 @@ object fsMod {
     length: Unit,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -4092,7 +3833,7 @@ object fsMod {
     length: Unit,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -4105,7 +3846,7 @@ object fsMod {
     length: Unit,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -4116,7 +3857,7 @@ object fsMod {
     buffer: js.typedarray.Float64Array,
     offset: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -4128,7 +3869,7 @@ object fsMod {
     offset: Unit,
     length: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -4141,7 +3882,7 @@ object fsMod {
     length: Double,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -4154,7 +3895,7 @@ object fsMod {
     length: Double,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -4167,7 +3908,7 @@ object fsMod {
     length: Double,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -4179,7 +3920,7 @@ object fsMod {
     offset: Unit,
     length: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -4192,7 +3933,7 @@ object fsMod {
     length: Null,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -4205,7 +3946,7 @@ object fsMod {
     length: Null,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -4218,7 +3959,7 @@ object fsMod {
     length: Null,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -4230,7 +3971,7 @@ object fsMod {
     offset: Unit,
     length: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -4243,7 +3984,7 @@ object fsMod {
     length: Unit,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -4256,7 +3997,7 @@ object fsMod {
     length: Unit,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -4269,7 +4010,7 @@ object fsMod {
     length: Unit,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Float64Array, 
       Unit
@@ -4279,7 +4020,7 @@ object fsMod {
     fd: Double,
     buffer: js.typedarray.Int16Array,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4290,7 +4031,7 @@ object fsMod {
     buffer: js.typedarray.Int16Array,
     offset: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4302,7 +4043,7 @@ object fsMod {
     offset: Double,
     length: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4315,7 +4056,7 @@ object fsMod {
     length: Double,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4328,7 +4069,7 @@ object fsMod {
     length: Double,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4341,7 +4082,7 @@ object fsMod {
     length: Double,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4353,7 +4094,7 @@ object fsMod {
     offset: Double,
     length: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4366,7 +4107,7 @@ object fsMod {
     length: Null,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4379,7 +4120,7 @@ object fsMod {
     length: Null,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4392,7 +4133,7 @@ object fsMod {
     length: Null,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4404,7 +4145,7 @@ object fsMod {
     offset: Double,
     length: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4417,7 +4158,7 @@ object fsMod {
     length: Unit,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4430,7 +4171,7 @@ object fsMod {
     length: Unit,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4443,7 +4184,7 @@ object fsMod {
     length: Unit,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4454,7 +4195,7 @@ object fsMod {
     buffer: js.typedarray.Int16Array,
     offset: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4466,7 +4207,7 @@ object fsMod {
     offset: Null,
     length: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4479,7 +4220,7 @@ object fsMod {
     length: Double,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4492,7 +4233,7 @@ object fsMod {
     length: Double,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4505,7 +4246,7 @@ object fsMod {
     length: Double,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4517,7 +4258,7 @@ object fsMod {
     offset: Null,
     length: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4530,7 +4271,7 @@ object fsMod {
     length: Null,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4543,7 +4284,7 @@ object fsMod {
     length: Null,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4556,7 +4297,7 @@ object fsMod {
     length: Null,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4568,7 +4309,7 @@ object fsMod {
     offset: Null,
     length: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4581,7 +4322,7 @@ object fsMod {
     length: Unit,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4594,7 +4335,7 @@ object fsMod {
     length: Unit,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4607,7 +4348,7 @@ object fsMod {
     length: Unit,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4618,7 +4359,7 @@ object fsMod {
     buffer: js.typedarray.Int16Array,
     offset: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4630,7 +4371,7 @@ object fsMod {
     offset: Unit,
     length: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4643,7 +4384,7 @@ object fsMod {
     length: Double,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4656,7 +4397,7 @@ object fsMod {
     length: Double,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4669,7 +4410,7 @@ object fsMod {
     length: Double,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4681,7 +4422,7 @@ object fsMod {
     offset: Unit,
     length: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4694,7 +4435,7 @@ object fsMod {
     length: Null,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4707,7 +4448,7 @@ object fsMod {
     length: Null,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4720,7 +4461,7 @@ object fsMod {
     length: Null,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4732,7 +4473,7 @@ object fsMod {
     offset: Unit,
     length: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4745,7 +4486,7 @@ object fsMod {
     length: Unit,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4758,7 +4499,7 @@ object fsMod {
     length: Unit,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4771,7 +4512,7 @@ object fsMod {
     length: Unit,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int16Array, 
       Unit
@@ -4781,7 +4522,7 @@ object fsMod {
     fd: Double,
     buffer: js.typedarray.Int32Array,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -4792,7 +4533,7 @@ object fsMod {
     buffer: js.typedarray.Int32Array,
     offset: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -4804,7 +4545,7 @@ object fsMod {
     offset: Double,
     length: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -4817,7 +4558,7 @@ object fsMod {
     length: Double,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -4830,7 +4571,7 @@ object fsMod {
     length: Double,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -4843,7 +4584,7 @@ object fsMod {
     length: Double,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -4855,7 +4596,7 @@ object fsMod {
     offset: Double,
     length: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -4868,7 +4609,7 @@ object fsMod {
     length: Null,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -4881,7 +4622,7 @@ object fsMod {
     length: Null,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -4894,7 +4635,7 @@ object fsMod {
     length: Null,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -4906,7 +4647,7 @@ object fsMod {
     offset: Double,
     length: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -4919,7 +4660,7 @@ object fsMod {
     length: Unit,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -4932,7 +4673,7 @@ object fsMod {
     length: Unit,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -4945,7 +4686,7 @@ object fsMod {
     length: Unit,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -4956,7 +4697,7 @@ object fsMod {
     buffer: js.typedarray.Int32Array,
     offset: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -4968,7 +4709,7 @@ object fsMod {
     offset: Null,
     length: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -4981,7 +4722,7 @@ object fsMod {
     length: Double,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -4994,7 +4735,7 @@ object fsMod {
     length: Double,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -5007,7 +4748,7 @@ object fsMod {
     length: Double,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -5019,7 +4760,7 @@ object fsMod {
     offset: Null,
     length: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -5032,7 +4773,7 @@ object fsMod {
     length: Null,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -5045,7 +4786,7 @@ object fsMod {
     length: Null,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -5058,7 +4799,7 @@ object fsMod {
     length: Null,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -5070,7 +4811,7 @@ object fsMod {
     offset: Null,
     length: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -5083,7 +4824,7 @@ object fsMod {
     length: Unit,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -5096,7 +4837,7 @@ object fsMod {
     length: Unit,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -5109,7 +4850,7 @@ object fsMod {
     length: Unit,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -5120,7 +4861,7 @@ object fsMod {
     buffer: js.typedarray.Int32Array,
     offset: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -5132,7 +4873,7 @@ object fsMod {
     offset: Unit,
     length: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -5145,7 +4886,7 @@ object fsMod {
     length: Double,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -5158,7 +4899,7 @@ object fsMod {
     length: Double,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -5171,7 +4912,7 @@ object fsMod {
     length: Double,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -5183,7 +4924,7 @@ object fsMod {
     offset: Unit,
     length: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -5196,7 +4937,7 @@ object fsMod {
     length: Null,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -5209,7 +4950,7 @@ object fsMod {
     length: Null,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -5222,7 +4963,7 @@ object fsMod {
     length: Null,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -5234,7 +4975,7 @@ object fsMod {
     offset: Unit,
     length: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -5247,7 +4988,7 @@ object fsMod {
     length: Unit,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -5260,7 +5001,7 @@ object fsMod {
     length: Unit,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -5273,7 +5014,7 @@ object fsMod {
     length: Unit,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int32Array, 
       Unit
@@ -5283,7 +5024,7 @@ object fsMod {
     fd: Double,
     buffer: js.typedarray.Int8Array,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5294,7 +5035,7 @@ object fsMod {
     buffer: js.typedarray.Int8Array,
     offset: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5306,7 +5047,7 @@ object fsMod {
     offset: Double,
     length: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5319,7 +5060,7 @@ object fsMod {
     length: Double,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5332,7 +5073,7 @@ object fsMod {
     length: Double,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5345,7 +5086,7 @@ object fsMod {
     length: Double,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5357,7 +5098,7 @@ object fsMod {
     offset: Double,
     length: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5370,7 +5111,7 @@ object fsMod {
     length: Null,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5383,7 +5124,7 @@ object fsMod {
     length: Null,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5396,7 +5137,7 @@ object fsMod {
     length: Null,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5408,7 +5149,7 @@ object fsMod {
     offset: Double,
     length: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5421,7 +5162,7 @@ object fsMod {
     length: Unit,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5434,7 +5175,7 @@ object fsMod {
     length: Unit,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5447,7 +5188,7 @@ object fsMod {
     length: Unit,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5458,7 +5199,7 @@ object fsMod {
     buffer: js.typedarray.Int8Array,
     offset: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5470,7 +5211,7 @@ object fsMod {
     offset: Null,
     length: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5483,7 +5224,7 @@ object fsMod {
     length: Double,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5496,7 +5237,7 @@ object fsMod {
     length: Double,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5509,7 +5250,7 @@ object fsMod {
     length: Double,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5521,7 +5262,7 @@ object fsMod {
     offset: Null,
     length: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5534,7 +5275,7 @@ object fsMod {
     length: Null,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5547,7 +5288,7 @@ object fsMod {
     length: Null,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5560,7 +5301,7 @@ object fsMod {
     length: Null,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5572,7 +5313,7 @@ object fsMod {
     offset: Null,
     length: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5585,7 +5326,7 @@ object fsMod {
     length: Unit,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5598,7 +5339,7 @@ object fsMod {
     length: Unit,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5611,7 +5352,7 @@ object fsMod {
     length: Unit,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5622,7 +5363,7 @@ object fsMod {
     buffer: js.typedarray.Int8Array,
     offset: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5634,7 +5375,7 @@ object fsMod {
     offset: Unit,
     length: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5647,7 +5388,7 @@ object fsMod {
     length: Double,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5660,7 +5401,7 @@ object fsMod {
     length: Double,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5673,7 +5414,7 @@ object fsMod {
     length: Double,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5685,7 +5426,7 @@ object fsMod {
     offset: Unit,
     length: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5698,7 +5439,7 @@ object fsMod {
     length: Null,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5711,7 +5452,7 @@ object fsMod {
     length: Null,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5724,7 +5465,7 @@ object fsMod {
     length: Null,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5736,7 +5477,7 @@ object fsMod {
     offset: Unit,
     length: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5749,7 +5490,7 @@ object fsMod {
     length: Unit,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5762,7 +5503,7 @@ object fsMod {
     length: Unit,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5775,7 +5516,7 @@ object fsMod {
     length: Unit,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Int8Array, 
       Unit
@@ -5785,7 +5526,7 @@ object fsMod {
     fd: Double,
     buffer: js.typedarray.Uint16Array,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -5796,7 +5537,7 @@ object fsMod {
     buffer: js.typedarray.Uint16Array,
     offset: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -5808,7 +5549,7 @@ object fsMod {
     offset: Double,
     length: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -5821,7 +5562,7 @@ object fsMod {
     length: Double,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -5834,7 +5575,7 @@ object fsMod {
     length: Double,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -5847,7 +5588,7 @@ object fsMod {
     length: Double,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -5859,7 +5600,7 @@ object fsMod {
     offset: Double,
     length: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -5872,7 +5613,7 @@ object fsMod {
     length: Null,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -5885,7 +5626,7 @@ object fsMod {
     length: Null,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -5898,7 +5639,7 @@ object fsMod {
     length: Null,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -5910,7 +5651,7 @@ object fsMod {
     offset: Double,
     length: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -5923,7 +5664,7 @@ object fsMod {
     length: Unit,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -5936,7 +5677,7 @@ object fsMod {
     length: Unit,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -5949,7 +5690,7 @@ object fsMod {
     length: Unit,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -5960,7 +5701,7 @@ object fsMod {
     buffer: js.typedarray.Uint16Array,
     offset: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -5972,7 +5713,7 @@ object fsMod {
     offset: Null,
     length: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -5985,7 +5726,7 @@ object fsMod {
     length: Double,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -5998,7 +5739,7 @@ object fsMod {
     length: Double,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -6011,7 +5752,7 @@ object fsMod {
     length: Double,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -6023,7 +5764,7 @@ object fsMod {
     offset: Null,
     length: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -6036,7 +5777,7 @@ object fsMod {
     length: Null,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -6049,7 +5790,7 @@ object fsMod {
     length: Null,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -6062,7 +5803,7 @@ object fsMod {
     length: Null,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -6074,7 +5815,7 @@ object fsMod {
     offset: Null,
     length: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -6087,7 +5828,7 @@ object fsMod {
     length: Unit,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -6100,7 +5841,7 @@ object fsMod {
     length: Unit,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -6113,7 +5854,7 @@ object fsMod {
     length: Unit,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -6124,7 +5865,7 @@ object fsMod {
     buffer: js.typedarray.Uint16Array,
     offset: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -6136,7 +5877,7 @@ object fsMod {
     offset: Unit,
     length: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -6149,7 +5890,7 @@ object fsMod {
     length: Double,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -6162,7 +5903,7 @@ object fsMod {
     length: Double,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -6175,7 +5916,7 @@ object fsMod {
     length: Double,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -6187,7 +5928,7 @@ object fsMod {
     offset: Unit,
     length: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -6200,7 +5941,7 @@ object fsMod {
     length: Null,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -6213,7 +5954,7 @@ object fsMod {
     length: Null,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -6226,7 +5967,7 @@ object fsMod {
     length: Null,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -6238,7 +5979,7 @@ object fsMod {
     offset: Unit,
     length: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -6251,7 +5992,7 @@ object fsMod {
     length: Unit,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -6264,7 +6005,7 @@ object fsMod {
     length: Unit,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -6277,7 +6018,7 @@ object fsMod {
     length: Unit,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint16Array, 
       Unit
@@ -6287,7 +6028,7 @@ object fsMod {
     fd: Double,
     buffer: js.typedarray.Uint32Array,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6298,7 +6039,7 @@ object fsMod {
     buffer: js.typedarray.Uint32Array,
     offset: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6310,7 +6051,7 @@ object fsMod {
     offset: Double,
     length: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6323,7 +6064,7 @@ object fsMod {
     length: Double,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6336,7 +6077,7 @@ object fsMod {
     length: Double,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6349,7 +6090,7 @@ object fsMod {
     length: Double,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6361,7 +6102,7 @@ object fsMod {
     offset: Double,
     length: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6374,7 +6115,7 @@ object fsMod {
     length: Null,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6387,7 +6128,7 @@ object fsMod {
     length: Null,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6400,7 +6141,7 @@ object fsMod {
     length: Null,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6412,7 +6153,7 @@ object fsMod {
     offset: Double,
     length: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6425,7 +6166,7 @@ object fsMod {
     length: Unit,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6438,7 +6179,7 @@ object fsMod {
     length: Unit,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6451,7 +6192,7 @@ object fsMod {
     length: Unit,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6462,7 +6203,7 @@ object fsMod {
     buffer: js.typedarray.Uint32Array,
     offset: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6474,7 +6215,7 @@ object fsMod {
     offset: Null,
     length: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6487,7 +6228,7 @@ object fsMod {
     length: Double,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6500,7 +6241,7 @@ object fsMod {
     length: Double,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6513,7 +6254,7 @@ object fsMod {
     length: Double,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6525,7 +6266,7 @@ object fsMod {
     offset: Null,
     length: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6538,7 +6279,7 @@ object fsMod {
     length: Null,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6551,7 +6292,7 @@ object fsMod {
     length: Null,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6564,7 +6305,7 @@ object fsMod {
     length: Null,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6576,7 +6317,7 @@ object fsMod {
     offset: Null,
     length: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6589,7 +6330,7 @@ object fsMod {
     length: Unit,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6602,7 +6343,7 @@ object fsMod {
     length: Unit,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6615,7 +6356,7 @@ object fsMod {
     length: Unit,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6626,7 +6367,7 @@ object fsMod {
     buffer: js.typedarray.Uint32Array,
     offset: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6638,7 +6379,7 @@ object fsMod {
     offset: Unit,
     length: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6651,7 +6392,7 @@ object fsMod {
     length: Double,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6664,7 +6405,7 @@ object fsMod {
     length: Double,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6677,7 +6418,7 @@ object fsMod {
     length: Double,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6689,7 +6430,7 @@ object fsMod {
     offset: Unit,
     length: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6702,7 +6443,7 @@ object fsMod {
     length: Null,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6715,7 +6456,7 @@ object fsMod {
     length: Null,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6728,7 +6469,7 @@ object fsMod {
     length: Null,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6740,7 +6481,7 @@ object fsMod {
     offset: Unit,
     length: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6753,7 +6494,7 @@ object fsMod {
     length: Unit,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6766,7 +6507,7 @@ object fsMod {
     length: Unit,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6779,7 +6520,7 @@ object fsMod {
     length: Unit,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint32Array, 
       Unit
@@ -6789,7 +6530,7 @@ object fsMod {
     fd: Double,
     buffer: js.typedarray.Uint8Array,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -6800,7 +6541,7 @@ object fsMod {
     buffer: js.typedarray.Uint8Array,
     offset: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -6812,7 +6553,7 @@ object fsMod {
     offset: Double,
     length: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -6825,7 +6566,7 @@ object fsMod {
     length: Double,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -6838,7 +6579,7 @@ object fsMod {
     length: Double,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -6851,7 +6592,7 @@ object fsMod {
     length: Double,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -6863,7 +6604,7 @@ object fsMod {
     offset: Double,
     length: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -6876,7 +6617,7 @@ object fsMod {
     length: Null,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -6889,7 +6630,7 @@ object fsMod {
     length: Null,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -6902,7 +6643,7 @@ object fsMod {
     length: Null,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -6914,7 +6655,7 @@ object fsMod {
     offset: Double,
     length: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -6927,7 +6668,7 @@ object fsMod {
     length: Unit,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -6940,7 +6681,7 @@ object fsMod {
     length: Unit,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -6953,7 +6694,7 @@ object fsMod {
     length: Unit,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -6964,7 +6705,7 @@ object fsMod {
     buffer: js.typedarray.Uint8Array,
     offset: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -6976,7 +6717,7 @@ object fsMod {
     offset: Null,
     length: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -6989,7 +6730,7 @@ object fsMod {
     length: Double,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -7002,7 +6743,7 @@ object fsMod {
     length: Double,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -7015,7 +6756,7 @@ object fsMod {
     length: Double,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -7027,7 +6768,7 @@ object fsMod {
     offset: Null,
     length: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -7040,7 +6781,7 @@ object fsMod {
     length: Null,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -7053,7 +6794,7 @@ object fsMod {
     length: Null,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -7066,7 +6807,7 @@ object fsMod {
     length: Null,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -7078,7 +6819,7 @@ object fsMod {
     offset: Null,
     length: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -7091,7 +6832,7 @@ object fsMod {
     length: Unit,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -7104,7 +6845,7 @@ object fsMod {
     length: Unit,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -7117,7 +6858,7 @@ object fsMod {
     length: Unit,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -7128,7 +6869,7 @@ object fsMod {
     buffer: js.typedarray.Uint8Array,
     offset: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -7140,7 +6881,7 @@ object fsMod {
     offset: Unit,
     length: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -7153,7 +6894,7 @@ object fsMod {
     length: Double,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -7166,7 +6907,7 @@ object fsMod {
     length: Double,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -7179,7 +6920,7 @@ object fsMod {
     length: Double,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -7191,7 +6932,7 @@ object fsMod {
     offset: Unit,
     length: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -7204,7 +6945,7 @@ object fsMod {
     length: Null,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -7217,7 +6958,7 @@ object fsMod {
     length: Null,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -7230,7 +6971,7 @@ object fsMod {
     length: Null,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -7242,7 +6983,7 @@ object fsMod {
     offset: Unit,
     length: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -7255,7 +6996,7 @@ object fsMod {
     length: Unit,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -7268,7 +7009,7 @@ object fsMod {
     length: Unit,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -7281,7 +7022,7 @@ object fsMod {
     length: Unit,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8Array, 
       Unit
@@ -7291,7 +7032,7 @@ object fsMod {
     fd: Double,
     buffer: js.typedarray.Uint8ClampedArray,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7302,7 +7043,7 @@ object fsMod {
     buffer: js.typedarray.Uint8ClampedArray,
     offset: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7314,7 +7055,7 @@ object fsMod {
     offset: Double,
     length: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7327,7 +7068,7 @@ object fsMod {
     length: Double,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7340,7 +7081,7 @@ object fsMod {
     length: Double,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7353,7 +7094,7 @@ object fsMod {
     length: Double,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7365,7 +7106,7 @@ object fsMod {
     offset: Double,
     length: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7378,7 +7119,7 @@ object fsMod {
     length: Null,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7391,7 +7132,7 @@ object fsMod {
     length: Null,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7404,7 +7145,7 @@ object fsMod {
     length: Null,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7416,7 +7157,7 @@ object fsMod {
     offset: Double,
     length: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7429,7 +7170,7 @@ object fsMod {
     length: Unit,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7442,7 +7183,7 @@ object fsMod {
     length: Unit,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7455,7 +7196,7 @@ object fsMod {
     length: Unit,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7466,7 +7207,7 @@ object fsMod {
     buffer: js.typedarray.Uint8ClampedArray,
     offset: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7478,7 +7219,7 @@ object fsMod {
     offset: Null,
     length: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7491,7 +7232,7 @@ object fsMod {
     length: Double,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7504,7 +7245,7 @@ object fsMod {
     length: Double,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7517,7 +7258,7 @@ object fsMod {
     length: Double,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7529,7 +7270,7 @@ object fsMod {
     offset: Null,
     length: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7542,7 +7283,7 @@ object fsMod {
     length: Null,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7555,7 +7296,7 @@ object fsMod {
     length: Null,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7568,7 +7309,7 @@ object fsMod {
     length: Null,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7580,7 +7321,7 @@ object fsMod {
     offset: Null,
     length: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7593,7 +7334,7 @@ object fsMod {
     length: Unit,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7606,7 +7347,7 @@ object fsMod {
     length: Unit,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7619,7 +7360,7 @@ object fsMod {
     length: Unit,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7630,7 +7371,7 @@ object fsMod {
     buffer: js.typedarray.Uint8ClampedArray,
     offset: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7642,7 +7383,7 @@ object fsMod {
     offset: Unit,
     length: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7655,7 +7396,7 @@ object fsMod {
     length: Double,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7668,7 +7409,7 @@ object fsMod {
     length: Double,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7681,7 +7422,7 @@ object fsMod {
     length: Double,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7693,7 +7434,7 @@ object fsMod {
     offset: Unit,
     length: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7706,7 +7447,7 @@ object fsMod {
     length: Null,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7719,7 +7460,7 @@ object fsMod {
     length: Null,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7732,7 +7473,7 @@ object fsMod {
     length: Null,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7744,7 +7485,7 @@ object fsMod {
     offset: Unit,
     length: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7757,7 +7498,7 @@ object fsMod {
     length: Unit,
     position: Double,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7770,7 +7511,7 @@ object fsMod {
     length: Unit,
     position: Null,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7783,7 +7524,7 @@ object fsMod {
     length: Unit,
     position: Unit,
     callback: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* written */ Double, 
       /* buffer */ js.typedarray.Uint8ClampedArray, 
       Unit
@@ -7792,20 +7533,35 @@ object fsMod {
   inline def write(
     fd: Double,
     buffer: BigInt64Array,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
     buffer: BigInt64Array,
     offset: Double,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
     buffer: BigInt64Array,
     offset: Double,
     length: Double,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -7813,7 +7569,12 @@ object fsMod {
     offset: Double,
     length: Double,
     position: Double,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -7821,7 +7582,12 @@ object fsMod {
     offset: Double,
     length: Double,
     position: Null,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -7829,14 +7595,24 @@ object fsMod {
     offset: Double,
     length: Double,
     position: Unit,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
     buffer: BigInt64Array,
     offset: Double,
     length: Null,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -7844,7 +7620,12 @@ object fsMod {
     offset: Double,
     length: Null,
     position: Double,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -7852,7 +7633,12 @@ object fsMod {
     offset: Double,
     length: Null,
     position: Null,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -7860,14 +7646,24 @@ object fsMod {
     offset: Double,
     length: Null,
     position: Unit,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
     buffer: BigInt64Array,
     offset: Double,
     length: Unit,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -7875,7 +7671,12 @@ object fsMod {
     offset: Double,
     length: Unit,
     position: Double,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -7883,7 +7684,12 @@ object fsMod {
     offset: Double,
     length: Unit,
     position: Null,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -7891,20 +7697,35 @@ object fsMod {
     offset: Double,
     length: Unit,
     position: Unit,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
     buffer: BigInt64Array,
     offset: Null,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
     buffer: BigInt64Array,
     offset: Null,
     length: Double,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -7912,7 +7733,12 @@ object fsMod {
     offset: Null,
     length: Double,
     position: Double,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -7920,7 +7746,12 @@ object fsMod {
     offset: Null,
     length: Double,
     position: Null,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -7928,14 +7759,24 @@ object fsMod {
     offset: Null,
     length: Double,
     position: Unit,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
     buffer: BigInt64Array,
     offset: Null,
     length: Null,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -7943,7 +7784,12 @@ object fsMod {
     offset: Null,
     length: Null,
     position: Double,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -7951,7 +7797,12 @@ object fsMod {
     offset: Null,
     length: Null,
     position: Null,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -7959,14 +7810,24 @@ object fsMod {
     offset: Null,
     length: Null,
     position: Unit,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
     buffer: BigInt64Array,
     offset: Null,
     length: Unit,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -7974,7 +7835,12 @@ object fsMod {
     offset: Null,
     length: Unit,
     position: Double,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -7982,7 +7848,12 @@ object fsMod {
     offset: Null,
     length: Unit,
     position: Null,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -7990,20 +7861,35 @@ object fsMod {
     offset: Null,
     length: Unit,
     position: Unit,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
     buffer: BigInt64Array,
     offset: Unit,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
     buffer: BigInt64Array,
     offset: Unit,
     length: Double,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -8011,7 +7897,12 @@ object fsMod {
     offset: Unit,
     length: Double,
     position: Double,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -8019,7 +7910,12 @@ object fsMod {
     offset: Unit,
     length: Double,
     position: Null,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -8027,14 +7923,24 @@ object fsMod {
     offset: Unit,
     length: Double,
     position: Unit,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
     buffer: BigInt64Array,
     offset: Unit,
     length: Null,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -8042,7 +7948,12 @@ object fsMod {
     offset: Unit,
     length: Null,
     position: Double,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -8050,7 +7961,12 @@ object fsMod {
     offset: Unit,
     length: Null,
     position: Null,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -8058,14 +7974,24 @@ object fsMod {
     offset: Unit,
     length: Null,
     position: Unit,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
     buffer: BigInt64Array,
     offset: Unit,
     length: Unit,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -8073,7 +7999,12 @@ object fsMod {
     offset: Unit,
     length: Unit,
     position: Double,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -8081,7 +8012,12 @@ object fsMod {
     offset: Unit,
     length: Unit,
     position: Null,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -8089,25 +8025,45 @@ object fsMod {
     offset: Unit,
     length: Unit,
     position: Unit,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigInt64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigInt64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
     buffer: BigUint64Array,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
     buffer: BigUint64Array,
     offset: Double,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
     buffer: BigUint64Array,
     offset: Double,
     length: Double,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -8115,7 +8071,12 @@ object fsMod {
     offset: Double,
     length: Double,
     position: Double,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -8123,7 +8084,12 @@ object fsMod {
     offset: Double,
     length: Double,
     position: Null,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -8131,14 +8097,24 @@ object fsMod {
     offset: Double,
     length: Double,
     position: Unit,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
     buffer: BigUint64Array,
     offset: Double,
     length: Null,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -8146,7 +8122,12 @@ object fsMod {
     offset: Double,
     length: Null,
     position: Double,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -8154,7 +8135,12 @@ object fsMod {
     offset: Double,
     length: Null,
     position: Null,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -8162,14 +8148,24 @@ object fsMod {
     offset: Double,
     length: Null,
     position: Unit,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
     buffer: BigUint64Array,
     offset: Double,
     length: Unit,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -8177,7 +8173,12 @@ object fsMod {
     offset: Double,
     length: Unit,
     position: Double,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -8185,7 +8186,12 @@ object fsMod {
     offset: Double,
     length: Unit,
     position: Null,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -8193,20 +8199,35 @@ object fsMod {
     offset: Double,
     length: Unit,
     position: Unit,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
     buffer: BigUint64Array,
     offset: Null,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
     buffer: BigUint64Array,
     offset: Null,
     length: Double,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -8214,7 +8235,12 @@ object fsMod {
     offset: Null,
     length: Double,
     position: Double,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -8222,7 +8248,12 @@ object fsMod {
     offset: Null,
     length: Double,
     position: Null,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -8230,14 +8261,24 @@ object fsMod {
     offset: Null,
     length: Double,
     position: Unit,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
     buffer: BigUint64Array,
     offset: Null,
     length: Null,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -8245,7 +8286,12 @@ object fsMod {
     offset: Null,
     length: Null,
     position: Double,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -8253,7 +8299,12 @@ object fsMod {
     offset: Null,
     length: Null,
     position: Null,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -8261,14 +8312,24 @@ object fsMod {
     offset: Null,
     length: Null,
     position: Unit,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
     buffer: BigUint64Array,
     offset: Null,
     length: Unit,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -8276,7 +8337,12 @@ object fsMod {
     offset: Null,
     length: Unit,
     position: Double,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -8284,7 +8350,12 @@ object fsMod {
     offset: Null,
     length: Unit,
     position: Null,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -8292,20 +8363,35 @@ object fsMod {
     offset: Null,
     length: Unit,
     position: Unit,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
     buffer: BigUint64Array,
     offset: Unit,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
     buffer: BigUint64Array,
     offset: Unit,
     length: Double,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -8313,7 +8399,12 @@ object fsMod {
     offset: Unit,
     length: Double,
     position: Double,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -8321,7 +8412,12 @@ object fsMod {
     offset: Unit,
     length: Double,
     position: Null,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -8329,14 +8425,24 @@ object fsMod {
     offset: Unit,
     length: Double,
     position: Unit,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
     buffer: BigUint64Array,
     offset: Unit,
     length: Null,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -8344,7 +8450,12 @@ object fsMod {
     offset: Unit,
     length: Null,
     position: Double,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -8352,7 +8463,12 @@ object fsMod {
     offset: Unit,
     length: Null,
     position: Null,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -8360,14 +8476,24 @@ object fsMod {
     offset: Unit,
     length: Null,
     position: Unit,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
     buffer: BigUint64Array,
     offset: Unit,
     length: Unit,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -8375,7 +8501,12 @@ object fsMod {
     offset: Unit,
     length: Unit,
     position: Double,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -8383,7 +8514,12 @@ object fsMod {
     offset: Unit,
     length: Unit,
     position: Null,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -8391,7 +8527,12 @@ object fsMod {
     offset: Unit,
     length: Unit,
     position: Unit,
-    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ BigUint64Array, Unit]
+    callback: js.Function3[
+      /* err */ ErrnoException | Null, 
+      /* written */ Double, 
+      /* buffer */ BigUint64Array, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(
     fd: Double,
@@ -8479,92 +8620,6 @@ object fsMod {
     encoding: Unit,
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    string: String,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    string: String,
-    position: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    string: String,
-    position: Double,
-    encoding: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    string: String,
-    position: Double,
-    encoding: Unit,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    string: String,
-    position: Double,
-    encoding: BufferEncoding,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    string: String,
-    position: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    string: String,
-    position: Null,
-    encoding: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    string: String,
-    position: Null,
-    encoding: Unit,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    string: String,
-    position: Null,
-    encoding: BufferEncoding,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    string: String,
-    position: Unit,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    string: String,
-    position: Unit,
-    encoding: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    string: String,
-    position: Unit,
-    encoding: Unit,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    string: String,
-    position: Unit,
-    encoding: BufferEncoding,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def write(fd: Double, string: Any): js.Promise[js.Tuple2[Double, String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[Double, String]]]
   inline def write(fd: Double, string: Any, position: Double): js.Promise[js.Tuple2[Double, String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[Double, String]]]
   inline def write(fd: Double, string: Any, position: Double, encoding: String): js.Promise[js.Tuple2[Double, String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[Double, String]]]
@@ -8585,13 +8640,6 @@ object fsMod {
   inline def write[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: Unit, offset: Unit, length: Double, position: Double): js.Promise[js.Tuple2[Double, TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[Double, TBuffer]]]
   inline def write[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: Unit, offset: Unit, length: Unit, position: Double): js.Promise[js.Tuple2[Double, TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[Double, TBuffer]]]
   
-  inline def writeFile(file: PathOrFileDescriptor, data: String, options: WriteFileOptions, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def writeFile(
-    file: PathOrFileDescriptor,
-    data: ArrayBufferView,
-    options: WriteFileOptions,
-    callback: NoParamCallback
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def writeFile(path: Double, data: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def writeFile(path: Double, data: Any, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def writeFile(path: Double, data: Any, options: WriteFileOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
@@ -8600,8 +8648,6 @@ object fsMod {
   inline def writeFile(path: PathLike, data: Any, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def writeFile(path: PathLike, data: Any, options: WriteFileOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def writeFile(path: PathLike, data: Any, options: WriteFileOptions, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def writeFile(path: PathOrFileDescriptor, data: String, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def writeFile(path: PathOrFileDescriptor, data: ArrayBufferView, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def writeFileSync(file: PathOrFileDescriptor, data: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def writeFileSync(file: PathOrFileDescriptor, data: String, options: WriteFileOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -8636,7 +8682,7 @@ object fsMod {
     fd: Double,
     buffers: js.Array[ArrayBufferView],
     cb: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* bytesWritten */ Double, 
       /* buffers */ js.Array[ArrayBufferView], 
       Unit
@@ -8648,7 +8694,7 @@ object fsMod {
     buffers: js.Array[ArrayBufferView],
     position: Double,
     cb: js.Function3[
-      ErrnoException | Null, 
+      /* err */ ErrnoException | Null, 
       /* bytesWritten */ Double, 
       /* buffers */ js.Array[ArrayBufferView], 
       Unit

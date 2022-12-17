@@ -88,8 +88,6 @@ object anon {
     var context: Any
     
     var logging: js.UndefOr[Boolean] = js.undefined
-    
-    var serverRenderedData: js.UndefOr[js.Object] = js.undefined
   }
   object Context {
     
@@ -105,10 +103,6 @@ object anon {
       inline def setLogging(value: Boolean): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
       
       inline def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
-      
-      inline def setServerRenderedData(value: js.Object): Self = StObject.set(x, "serverRenderedData", value.asInstanceOf[js.Any])
-      
-      inline def setServerRenderedDataUndefined: Self = StObject.set(x, "serverRenderedData", js.undefined)
     }
   }
   
@@ -201,11 +195,13 @@ object anon {
     var context: Any
     
     var logging: js.UndefOr[Boolean] = js.undefined
+    
+    var serverRenderedData: Any
   }
   object Logging {
     
-    inline def apply(context: Any): Logging = {
-      val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any])
+    inline def apply(context: Any, serverRenderedData: Any): Logging = {
+      val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], serverRenderedData = serverRenderedData.asInstanceOf[js.Any])
       __obj.asInstanceOf[Logging]
     }
     
@@ -216,6 +212,8 @@ object anon {
       inline def setLogging(value: Boolean): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
       
       inline def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
+      
+      inline def setServerRenderedData(value: Any): Self = StObject.set(x, "serverRenderedData", value.asInstanceOf[js.Any])
     }
   }
   
@@ -225,12 +223,12 @@ object anon {
     
     var logging: js.UndefOr[Boolean] = js.undefined
     
-    var serverRenderedData: Any
+    var serverRenderedData: js.UndefOr[js.Object] = js.undefined
   }
   object ServerRenderedData {
     
-    inline def apply(context: Any, serverRenderedData: Any): ServerRenderedData = {
-      val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], serverRenderedData = serverRenderedData.asInstanceOf[js.Any])
+    inline def apply(context: Any): ServerRenderedData = {
+      val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServerRenderedData]
     }
     
@@ -242,7 +240,9 @@ object anon {
       
       inline def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
       
-      inline def setServerRenderedData(value: Any): Self = StObject.set(x, "serverRenderedData", value.asInstanceOf[js.Any])
+      inline def setServerRenderedData(value: js.Object): Self = StObject.set(x, "serverRenderedData", value.asInstanceOf[js.Any])
+      
+      inline def setServerRenderedDataUndefined: Self = StObject.set(x, "serverRenderedData", js.undefined)
     }
   }
 }

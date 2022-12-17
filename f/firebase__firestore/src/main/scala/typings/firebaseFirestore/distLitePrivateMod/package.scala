@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.firebaseApp.mod.FirebaseApp
 import typings.firebaseFirestore.anon.MockUserToken
 import typings.firebaseFirestore.anon.Seconds
-import typings.firebaseFirestore.anon.`38`
+import typings.firebaseFirestore.anon.`36`
 import typings.firebaseFirestore.distLitePrivateMod.^
 import typings.firebaseFirestore.firebaseFirestoreStrings.NULL_VALUE
 import typings.firebaseLogger.distSrcLoggerMod.LogLevelString
@@ -49,7 +49,7 @@ inline def endAt(snapshot: DocumentSnapshot[Any]): QueryConstraint = ^.asInstanc
 inline def endBefore(fieldValues: Any*): QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")(fieldValues.asInstanceOf[Seq[js.Any]]*).asInstanceOf[QueryConstraint]
 inline def endBefore(snapshot: DocumentSnapshot[Any]): QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")(snapshot.asInstanceOf[js.Any]).asInstanceOf[QueryConstraint]
 
-inline def getCount(query: Query_[Any]): js.Promise[AggregateQuerySnapshot[`38`]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCount")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AggregateQuerySnapshot[`38`]]]
+inline def getCount(query: Query_[Any]): js.Promise[AggregateQuerySnapshot[`36`]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCount")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AggregateQuerySnapshot[`36`]]]
 
 inline def getDoc[T](reference: DocumentReference[T]): js.Promise[DocumentSnapshot[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDoc")(reference.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DocumentSnapshot[T]]]
 

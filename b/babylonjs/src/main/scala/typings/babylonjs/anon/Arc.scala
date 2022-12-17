@@ -1,6 +1,5 @@
 package typings.babylonjs.anon
 
-import typings.babylonjs.mathsMathDotcolorMod.Color4
 import typings.babylonjs.mathsMathDotvectorMod.Vector4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,33 +11,21 @@ trait Arc extends StObject {
   
   var backUVs: js.UndefOr[Vector4] = js.undefined
   
-  var cap: js.UndefOr[Double] = js.undefined
-  
   var diameter: js.UndefOr[Double] = js.undefined
   
-  var diameterBottom: js.UndefOr[Double] = js.undefined
+  var diameterX: js.UndefOr[Double] = js.undefined
   
-  var diameterTop: js.UndefOr[Double] = js.undefined
+  var diameterY: js.UndefOr[Double] = js.undefined
   
-  var enclose: js.UndefOr[Boolean] = js.undefined
-  
-  var faceColors: js.UndefOr[js.Array[Color4]] = js.undefined
-  
-  var faceUV: js.UndefOr[js.Array[Vector4]] = js.undefined
+  var diameterZ: js.UndefOr[Double] = js.undefined
   
   var frontUVs: js.UndefOr[Vector4] = js.undefined
   
-  var hasRings: js.UndefOr[Boolean] = js.undefined
-  
-  var height: js.UndefOr[Double] = js.undefined
+  var segments: js.UndefOr[Double] = js.undefined
   
   var sideOrientation: js.UndefOr[Double] = js.undefined
   
-  var subdivisions: js.UndefOr[Double] = js.undefined
-  
-  var tessellation: js.UndefOr[Double] = js.undefined
-  
-  var updatable: js.UndefOr[Boolean] = js.undefined
+  var slice: js.UndefOr[Double] = js.undefined
 }
 object Arc {
   
@@ -57,64 +44,36 @@ object Arc {
     
     inline def setBackUVsUndefined: Self = StObject.set(x, "backUVs", js.undefined)
     
-    inline def setCap(value: Double): Self = StObject.set(x, "cap", value.asInstanceOf[js.Any])
-    
-    inline def setCapUndefined: Self = StObject.set(x, "cap", js.undefined)
-    
     inline def setDiameter(value: Double): Self = StObject.set(x, "diameter", value.asInstanceOf[js.Any])
-    
-    inline def setDiameterBottom(value: Double): Self = StObject.set(x, "diameterBottom", value.asInstanceOf[js.Any])
-    
-    inline def setDiameterBottomUndefined: Self = StObject.set(x, "diameterBottom", js.undefined)
-    
-    inline def setDiameterTop(value: Double): Self = StObject.set(x, "diameterTop", value.asInstanceOf[js.Any])
-    
-    inline def setDiameterTopUndefined: Self = StObject.set(x, "diameterTop", js.undefined)
     
     inline def setDiameterUndefined: Self = StObject.set(x, "diameter", js.undefined)
     
-    inline def setEnclose(value: Boolean): Self = StObject.set(x, "enclose", value.asInstanceOf[js.Any])
+    inline def setDiameterX(value: Double): Self = StObject.set(x, "diameterX", value.asInstanceOf[js.Any])
     
-    inline def setEncloseUndefined: Self = StObject.set(x, "enclose", js.undefined)
+    inline def setDiameterXUndefined: Self = StObject.set(x, "diameterX", js.undefined)
     
-    inline def setFaceColors(value: js.Array[Color4]): Self = StObject.set(x, "faceColors", value.asInstanceOf[js.Any])
+    inline def setDiameterY(value: Double): Self = StObject.set(x, "diameterY", value.asInstanceOf[js.Any])
     
-    inline def setFaceColorsUndefined: Self = StObject.set(x, "faceColors", js.undefined)
+    inline def setDiameterYUndefined: Self = StObject.set(x, "diameterY", js.undefined)
     
-    inline def setFaceColorsVarargs(value: Color4*): Self = StObject.set(x, "faceColors", js.Array(value*))
+    inline def setDiameterZ(value: Double): Self = StObject.set(x, "diameterZ", value.asInstanceOf[js.Any])
     
-    inline def setFaceUV(value: js.Array[Vector4]): Self = StObject.set(x, "faceUV", value.asInstanceOf[js.Any])
-    
-    inline def setFaceUVUndefined: Self = StObject.set(x, "faceUV", js.undefined)
-    
-    inline def setFaceUVVarargs(value: Vector4*): Self = StObject.set(x, "faceUV", js.Array(value*))
+    inline def setDiameterZUndefined: Self = StObject.set(x, "diameterZ", js.undefined)
     
     inline def setFrontUVs(value: Vector4): Self = StObject.set(x, "frontUVs", value.asInstanceOf[js.Any])
     
     inline def setFrontUVsUndefined: Self = StObject.set(x, "frontUVs", js.undefined)
     
-    inline def setHasRings(value: Boolean): Self = StObject.set(x, "hasRings", value.asInstanceOf[js.Any])
+    inline def setSegments(value: Double): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
-    inline def setHasRingsUndefined: Self = StObject.set(x, "hasRings", js.undefined)
-    
-    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
-    
-    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
     
     inline def setSideOrientation(value: Double): Self = StObject.set(x, "sideOrientation", value.asInstanceOf[js.Any])
     
     inline def setSideOrientationUndefined: Self = StObject.set(x, "sideOrientation", js.undefined)
     
-    inline def setSubdivisions(value: Double): Self = StObject.set(x, "subdivisions", value.asInstanceOf[js.Any])
+    inline def setSlice(value: Double): Self = StObject.set(x, "slice", value.asInstanceOf[js.Any])
     
-    inline def setSubdivisionsUndefined: Self = StObject.set(x, "subdivisions", js.undefined)
-    
-    inline def setTessellation(value: Double): Self = StObject.set(x, "tessellation", value.asInstanceOf[js.Any])
-    
-    inline def setTessellationUndefined: Self = StObject.set(x, "tessellation", js.undefined)
-    
-    inline def setUpdatable(value: Boolean): Self = StObject.set(x, "updatable", value.asInstanceOf[js.Any])
-    
-    inline def setUpdatableUndefined: Self = StObject.set(x, "updatable", js.undefined)
+    inline def setSliceUndefined: Self = StObject.set(x, "slice", js.undefined)
   }
 }

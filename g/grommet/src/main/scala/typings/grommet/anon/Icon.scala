@@ -8,7 +8,7 @@ trait Icon extends StObject {
   
   var container: js.UndefOr[Round] = js.undefined
   
-  var icon: js.UndefOr[`17`] = js.undefined
+  var icon: js.UndefOr[`14`] = js.undefined
 }
 object Icon {
   
@@ -23,7 +23,7 @@ object Icon {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setIcon(value: `17`): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: `14`): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
   }

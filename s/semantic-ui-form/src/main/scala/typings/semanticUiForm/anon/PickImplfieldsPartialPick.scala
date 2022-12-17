@@ -37,7 +37,7 @@ trait PickImplfieldsPartialPick
   
   var error: js.UndefOr[ErrorSettings] = js.undefined
   
-  var fields: (StringDictionary[String | js.Array[String] | Field]) & (js.UndefOr[StringDictionary[String | js.Array[String] | Field]])
+  var fields: StringDictionary[String | js.Array[String] | Field]
   
   var `inline`: js.UndefOr[Boolean] = js.undefined
   
@@ -92,9 +92,7 @@ trait PickImplfieldsPartialPick
 }
 object PickImplfieldsPartialPick {
   
-  inline def apply(
-    fields: (StringDictionary[String | js.Array[String] | Field]) & (js.UndefOr[StringDictionary[String | js.Array[String] | Field]])
-  ): PickImplfieldsPartialPick = {
+  inline def apply(fields: StringDictionary[String | js.Array[String] | Field]): PickImplfieldsPartialPick = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplfieldsPartialPick]
   }
@@ -125,9 +123,7 @@ object PickImplfieldsPartialPick {
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    inline def setFields(
-      value: (StringDictionary[String | js.Array[String] | Field]) & (js.UndefOr[StringDictionary[String | js.Array[String] | Field]])
-    ): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: StringDictionary[String | js.Array[String] | Field]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
     

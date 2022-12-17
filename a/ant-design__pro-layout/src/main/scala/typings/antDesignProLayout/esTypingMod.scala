@@ -239,7 +239,7 @@ object esTypingMod {
   /* Inlined std.Omit<@ant-design/pro-layout.@ant-design/pro-layout/es/typing.MenuDataItem, 'routes'> & {  children :std.Array<@ant-design/pro-layout.@ant-design/pro-layout/es/typing.Route> | undefined} */
   trait Route extends StObject {
     
-    var children: js.UndefOr[js.Array[MenuDataItem]] & js.UndefOr[js.Array[Route]]
+    var children: js.UndefOr[js.Array[MenuDataItem]] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
@@ -267,14 +267,18 @@ object esTypingMod {
   }
   object Route {
     
-    inline def apply(children: js.UndefOr[js.Array[MenuDataItem]] & js.UndefOr[js.Array[Route]]): Route = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    inline def apply(): Route = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Route]
     }
     
     extension [Self <: Route](x: Self) {
       
-      inline def setChildren(value: js.UndefOr[js.Array[MenuDataItem]] & js.UndefOr[js.Array[Route]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[MenuDataItem]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setChildrenVarargs(value: MenuDataItem*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

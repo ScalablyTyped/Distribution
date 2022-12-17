@@ -29,7 +29,7 @@ type AxisDomain = _AxisDomain | ContentRenderer[Any] | String | Double
 */
 type AxisInterval = _AxisInterval | Double
 
-type BBoxUpdateCallback = js.Function1[/* box */ Height, Unit]
+type BBoxUpdateCallback = js.Function1[/* box */ Width, Unit]
 
 /* Rewritten from type alias, can be one of: 
   - scala.Double
@@ -45,7 +45,7 @@ type DataKey = String | Double | (js.Function1[/* dataObject */ Any, String | Do
 
 type DataPointFormatter = js.Function2[/* entry */ Any, /* dataKey */ DataKey, ErrorVal]
 
-type HorizontalCoordinatesGenerator = js.Function1[/* arg */ Offset, js.Array[Double]]
+type HorizontalCoordinatesGenerator = js.Function1[/* arg */ Height, js.Array[Double]]
 
 type ItemSorter[T] = js.Function2[/* a */ T, /* b */ T, Double]
 
@@ -99,4 +99,4 @@ type TooltipFormatter = js.Function4[
 /* index */ Double, 
 ReactNode]
 
-type VerticalCoordinatesGenerator = js.Function1[/* arg */ Width, js.Array[Double]]
+type VerticalCoordinatesGenerator = js.Function1[/* arg */ Offset, js.Array[Double]]

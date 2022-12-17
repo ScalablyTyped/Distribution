@@ -27,9 +27,6 @@ object srcCommandsAnalyticsSettingsCliMod {
     @JSName("aliases")
     var aliases_AnalyticsDisableModule: String = js.native
     
-    @JSName("command")
-    var command_AnalyticsDisableModule: String = js.native
-    
     @JSName("describe")
     var describe_AnalyticsDisableModule: String = js.native
   }
@@ -44,9 +41,6 @@ object srcCommandsAnalyticsSettingsCliMod {
     @JSName("aliases")
     var aliases_AnalyticsEnableModule: String = js.native
     
-    @JSName("command")
-    var command_AnalyticsEnableModule: String = js.native
-    
     @JSName("describe")
     var describe_AnalyticsEnableModule: String = js.native
   }
@@ -57,9 +51,6 @@ object srcCommandsAnalyticsSettingsCliMod {
   open class AnalyticsPromptModule ()
     extends StObject
        with AnalyticsSettingModule {
-    
-    @JSName("command")
-    var command_AnalyticsPromptModule: String = js.native
     
     @JSName("describe")
     var describe_AnalyticsPromptModule: String = js.native
@@ -99,7 +90,7 @@ object srcCommandsAnalyticsSettingsCliMod {
     @JSName("builder")
     def builder_Argv(localYargs: Argv[js.Object]): Argv[AnalyticsCommandArgs] = js.native
     
-    val command: String & (js.UndefOr[js.Array[String] | String]) = js.native
+    val command: String = js.native
     
     /* protected */ def commandName: String = js.native
     
@@ -107,7 +98,7 @@ object srcCommandsAnalyticsSettingsCliMod {
     
     var deprecated: js.UndefOr[Boolean | String] = js.native
     
-    val describe: (String | `false`) & (js.UndefOr[String | `false`]) = js.native
+    val describe: String | `false` = js.native
     
     /**
       * Description object which contains the long command descroption.

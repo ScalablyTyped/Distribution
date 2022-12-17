@@ -11,19 +11,19 @@ trait Onclick extends StObject {
     * Set click event handler to the legend item.
     * @param id The ID of the legend item.
     */
-  var onclick: js.UndefOr[js.ThisFunction1[/* this */ ChartInternal, /* id */ String, scala.Unit]] = js.undefined
+  var onclick: js.UndefOr[js.ThisFunction1[/* this */ ChartInternal, /* id */ String, Unit]] = js.undefined
   
   /**
     * Set mouseout event handler to the legend item.
     * @param id The ID of the legend item.
     */
-  var onmouseout: js.UndefOr[js.ThisFunction1[/* this */ ChartInternal, /* id */ String, scala.Unit]] = js.undefined
+  var onmouseout: js.UndefOr[js.ThisFunction1[/* this */ ChartInternal, /* id */ String, Unit]] = js.undefined
   
   /**
     * Set mouseover event handler to the legend item.
     * @param id The ID of the legend item.
     */
-  var onmouseover: js.UndefOr[js.ThisFunction1[/* this */ ChartInternal, /* id */ String, scala.Unit]] = js.undefined
+  var onmouseover: js.UndefOr[js.ThisFunction1[/* this */ ChartInternal, /* id */ String, Unit]] = js.undefined
   
   /**
     * Tile settings for legend color display.
@@ -39,15 +39,15 @@ object Onclick {
   
   extension [Self <: Onclick](x: Self) {
     
-    inline def setOnclick(value: js.ThisFunction1[/* this */ ChartInternal, /* id */ String, scala.Unit]): Self = StObject.set(x, "onclick", value.asInstanceOf[js.Any])
+    inline def setOnclick(value: js.ThisFunction1[/* this */ ChartInternal, /* id */ String, Unit]): Self = StObject.set(x, "onclick", value.asInstanceOf[js.Any])
     
     inline def setOnclickUndefined: Self = StObject.set(x, "onclick", js.undefined)
     
-    inline def setOnmouseout(value: js.ThisFunction1[/* this */ ChartInternal, /* id */ String, scala.Unit]): Self = StObject.set(x, "onmouseout", value.asInstanceOf[js.Any])
+    inline def setOnmouseout(value: js.ThisFunction1[/* this */ ChartInternal, /* id */ String, Unit]): Self = StObject.set(x, "onmouseout", value.asInstanceOf[js.Any])
     
     inline def setOnmouseoutUndefined: Self = StObject.set(x, "onmouseout", js.undefined)
     
-    inline def setOnmouseover(value: js.ThisFunction1[/* this */ ChartInternal, /* id */ String, scala.Unit]): Self = StObject.set(x, "onmouseover", value.asInstanceOf[js.Any])
+    inline def setOnmouseover(value: js.ThisFunction1[/* this */ ChartInternal, /* id */ String, Unit]): Self = StObject.set(x, "onmouseover", value.asInstanceOf[js.Any])
     
     inline def setOnmouseoverUndefined: Self = StObject.set(x, "onmouseover", js.undefined)
     

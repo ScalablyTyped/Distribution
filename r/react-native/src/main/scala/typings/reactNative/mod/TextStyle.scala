@@ -1,6 +1,6 @@
 package typings.reactNative.mod
 
-import typings.reactNative.anon.Width
+import typings.reactNative.anon.Height
 import typings.reactNative.reactNativeStrings.`100`
 import typings.reactNative.reactNativeStrings.`200`
 import typings.reactNative.reactNativeStrings.`300`
@@ -69,7 +69,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var textShadowColor: js.UndefOr[ColorValue] = js.undefined
   
-  var textShadowOffset: js.UndefOr[Width] = js.undefined
+  var textShadowOffset: js.UndefOr[Height] = js.undefined
   
   var textShadowRadius: js.UndefOr[Double] = js.undefined
   
@@ -128,7 +128,7 @@ object TextStyle {
     
     inline def setTextShadowColorUndefined: Self = StObject.set(x, "textShadowColor", js.undefined)
     
-    inline def setTextShadowOffset(value: Width): Self = StObject.set(x, "textShadowOffset", value.asInstanceOf[js.Any])
+    inline def setTextShadowOffset(value: Height): Self = StObject.set(x, "textShadowOffset", value.asInstanceOf[js.Any])
     
     inline def setTextShadowOffsetUndefined: Self = StObject.set(x, "textShadowOffset", js.undefined)
     

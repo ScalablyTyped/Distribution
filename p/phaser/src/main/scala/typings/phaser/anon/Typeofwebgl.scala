@@ -90,7 +90,7 @@ trait Typeofwebgl extends StObject {
     typings.phaser.spine.webgl.ManagedWebGLRenderingContext
   ]
   
-  var Matrix4: Instantiable0[typings.phaser.spine.webgl.Matrix4] & TypeofMatrix4
+  var Matrix4: Instantiable0[typings.phaser.spine.webgl.Matrix4]
   
   var Mesh: Instantiable4[
     /* context */ ManagedWebGLRenderingContext | WebGLRenderingContext, 
@@ -124,12 +124,12 @@ trait Typeofwebgl extends StObject {
     typings.phaser.spine.webgl.SceneRenderer
   ]
   
-  var Shader: (Instantiable3[
+  var Shader: Instantiable3[
     /* context */ ManagedWebGLRenderingContext | WebGLRenderingContext, 
     /* vertexShader */ String, 
     /* fragmentShader */ String, 
     typings.phaser.spine.webgl.Shader
-  ]) & TypeofShader
+  ]
   
   var ShapeRenderer: Instantiable2[
     /* context */ ManagedWebGLRenderingContext | WebGLRenderingContext, 
@@ -137,16 +137,16 @@ trait Typeofwebgl extends StObject {
     typings.phaser.spine.webgl.ShapeRenderer
   ]
   
-  var SkeletonDebugRenderer: (Instantiable1[
+  var SkeletonDebugRenderer: Instantiable1[
     /* context */ ManagedWebGLRenderingContext | WebGLRenderingContext, 
     typings.phaser.spine.webgl.SkeletonDebugRenderer
-  ]) & TypeofSkeletonDebugRender
+  ]
   
-  var SkeletonRenderer: (Instantiable2[
+  var SkeletonRenderer: Instantiable2[
     /* context */ ManagedWebGLRenderingContext, 
     /* twoColorTint */ js.UndefOr[Boolean], 
     typings.phaser.spine.webgl.SkeletonRenderer
-  ]) & TypeofSkeletonRendererQUADTRIANGLES
+  ]
   
   var TexCoordAttribute: Instantiable1[/* unit */ js.UndefOr[Double], typings.phaser.spine.webgl.TexCoordAttribute]
   
@@ -164,7 +164,7 @@ trait Typeofwebgl extends StObject {
     typings.phaser.spine.webgl.VertexAttribute
   ]
   
-  var WebGLBlendModeConverter: Instantiable0[typings.phaser.spine.webgl.WebGLBlendModeConverter] & TypeofWebGLBlendModeConve
+  var WebGLBlendModeConverter: Instantiable0[typings.phaser.spine.webgl.WebGLBlendModeConverter]
 }
 object Typeofwebgl {
   
@@ -203,7 +203,7 @@ object Typeofwebgl {
       /* contextConfig */ js.UndefOr[Any], 
       ManagedWebGLRenderingContext
     ],
-    Matrix4: Instantiable0[Matrix4] & TypeofMatrix4,
+    Matrix4: Instantiable0[Matrix4],
     Mesh: Instantiable4[
       /* context */ ManagedWebGLRenderingContext | WebGLRenderingContext, 
       /* attributes */ js.Array[VertexAttribute], 
@@ -226,26 +226,26 @@ object Typeofwebgl {
       /* twoColorTint */ js.UndefOr[Boolean], 
       SceneRenderer
     ],
-    Shader: (Instantiable3[
+    Shader: Instantiable3[
       /* context */ ManagedWebGLRenderingContext | WebGLRenderingContext, 
       /* vertexShader */ String, 
       /* fragmentShader */ String, 
       Shader
-    ]) & TypeofShader,
+    ],
     ShapeRenderer: Instantiable2[
       /* context */ ManagedWebGLRenderingContext | WebGLRenderingContext, 
       /* maxVertices */ js.UndefOr[Double], 
       ShapeRenderer
     ],
-    SkeletonDebugRenderer: (Instantiable1[
+    SkeletonDebugRenderer: Instantiable1[
       /* context */ ManagedWebGLRenderingContext | WebGLRenderingContext, 
       SkeletonDebugRenderer
-    ]) & TypeofSkeletonDebugRender,
-    SkeletonRenderer: (Instantiable2[
+    ],
+    SkeletonRenderer: Instantiable2[
       /* context */ ManagedWebGLRenderingContext, 
       /* twoColorTint */ js.UndefOr[Boolean], 
       SkeletonRenderer
-    ]) & TypeofSkeletonRendererQUADTRIANGLES,
+    ],
     TexCoordAttribute: Instantiable1[/* unit */ js.UndefOr[Double], TexCoordAttribute],
     Vector3: Instantiable3[
       /* x */ js.UndefOr[Double], 
@@ -259,7 +259,7 @@ object Typeofwebgl {
       /* numElements */ Double, 
       VertexAttribute
     ],
-    WebGLBlendModeConverter: Instantiable0[WebGLBlendModeConverter] & TypeofWebGLBlendModeConve
+    WebGLBlendModeConverter: Instantiable0[WebGLBlendModeConverter]
   ): Typeofwebgl = {
     val __obj = js.Dynamic.literal(AssetManager = AssetManager.asInstanceOf[js.Any], Color2Attribute = Color2Attribute.asInstanceOf[js.Any], ColorAttribute = ColorAttribute.asInstanceOf[js.Any], GLTexture = GLTexture.asInstanceOf[js.Any], M00 = M00.asInstanceOf[js.Any], M01 = M01.asInstanceOf[js.Any], M02 = M02.asInstanceOf[js.Any], M03 = M03.asInstanceOf[js.Any], M10 = M10.asInstanceOf[js.Any], M11 = M11.asInstanceOf[js.Any], M12 = M12.asInstanceOf[js.Any], M13 = M13.asInstanceOf[js.Any], M20 = M20.asInstanceOf[js.Any], M21 = M21.asInstanceOf[js.Any], M22 = M22.asInstanceOf[js.Any], M23 = M23.asInstanceOf[js.Any], M30 = M30.asInstanceOf[js.Any], M31 = M31.asInstanceOf[js.Any], M32 = M32.asInstanceOf[js.Any], M33 = M33.asInstanceOf[js.Any], ManagedWebGLRenderingContext = ManagedWebGLRenderingContext.asInstanceOf[js.Any], Matrix4 = Matrix4.asInstanceOf[js.Any], Mesh = Mesh.asInstanceOf[js.Any], OrthoCamera = OrthoCamera.asInstanceOf[js.Any], PolygonBatcher = PolygonBatcher.asInstanceOf[js.Any], Position2Attribute = Position2Attribute.asInstanceOf[js.Any], Position3Attribute = Position3Attribute.asInstanceOf[js.Any], SceneRenderer = SceneRenderer.asInstanceOf[js.Any], Shader = Shader.asInstanceOf[js.Any], ShapeRenderer = ShapeRenderer.asInstanceOf[js.Any], SkeletonDebugRenderer = SkeletonDebugRenderer.asInstanceOf[js.Any], SkeletonRenderer = SkeletonRenderer.asInstanceOf[js.Any], TexCoordAttribute = TexCoordAttribute.asInstanceOf[js.Any], Vector3 = Vector3.asInstanceOf[js.Any], VertexAttribute = VertexAttribute.asInstanceOf[js.Any], WebGLBlendModeConverter = WebGLBlendModeConverter.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofwebgl]
@@ -328,7 +328,7 @@ object Typeofwebgl {
         ]
     ): Self = StObject.set(x, "ManagedWebGLRenderingContext", value.asInstanceOf[js.Any])
     
-    inline def setMatrix4(value: Instantiable0[Matrix4] & TypeofMatrix4): Self = StObject.set(x, "Matrix4", value.asInstanceOf[js.Any])
+    inline def setMatrix4(value: Instantiable0[Matrix4]): Self = StObject.set(x, "Matrix4", value.asInstanceOf[js.Any])
     
     inline def setMesh(
       value: Instantiable4[
@@ -365,12 +365,12 @@ object Typeofwebgl {
     ): Self = StObject.set(x, "SceneRenderer", value.asInstanceOf[js.Any])
     
     inline def setShader(
-      value: (Instantiable3[
+      value: Instantiable3[
           /* context */ ManagedWebGLRenderingContext | WebGLRenderingContext, 
           /* vertexShader */ String, 
           /* fragmentShader */ String, 
           Shader
-        ]) & TypeofShader
+        ]
     ): Self = StObject.set(x, "Shader", value.asInstanceOf[js.Any])
     
     inline def setShapeRenderer(
@@ -382,18 +382,18 @@ object Typeofwebgl {
     ): Self = StObject.set(x, "ShapeRenderer", value.asInstanceOf[js.Any])
     
     inline def setSkeletonDebugRenderer(
-      value: (Instantiable1[
+      value: Instantiable1[
           /* context */ ManagedWebGLRenderingContext | WebGLRenderingContext, 
           SkeletonDebugRenderer
-        ]) & TypeofSkeletonDebugRender
+        ]
     ): Self = StObject.set(x, "SkeletonDebugRenderer", value.asInstanceOf[js.Any])
     
     inline def setSkeletonRenderer(
-      value: (Instantiable2[
+      value: Instantiable2[
           /* context */ ManagedWebGLRenderingContext, 
           /* twoColorTint */ js.UndefOr[Boolean], 
           SkeletonRenderer
-        ]) & TypeofSkeletonRendererQUADTRIANGLES
+        ]
     ): Self = StObject.set(x, "SkeletonRenderer", value.asInstanceOf[js.Any])
     
     inline def setTexCoordAttribute(value: Instantiable1[/* unit */ js.UndefOr[Double], TexCoordAttribute]): Self = StObject.set(x, "TexCoordAttribute", value.asInstanceOf[js.Any])
@@ -416,6 +416,6 @@ object Typeofwebgl {
         ]
     ): Self = StObject.set(x, "VertexAttribute", value.asInstanceOf[js.Any])
     
-    inline def setWebGLBlendModeConverter(value: Instantiable0[WebGLBlendModeConverter] & TypeofWebGLBlendModeConve): Self = StObject.set(x, "WebGLBlendModeConverter", value.asInstanceOf[js.Any])
+    inline def setWebGLBlendModeConverter(value: Instantiable0[WebGLBlendModeConverter]): Self = StObject.set(x, "WebGLBlendModeConverter", value.asInstanceOf[js.Any])
   }
 }

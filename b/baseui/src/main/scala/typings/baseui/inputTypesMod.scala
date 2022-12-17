@@ -1774,7 +1774,7 @@ object inputTypesMod {
         js.Function1[/* e */ FocusEvent[HTMLInputElement | HTMLTextAreaElement, Element], Unit]
       ] = js.undefined
     
-    var onChange: (js.UndefOr[js.Function1[/* e */ ChangeEvent[T], Unit]]) & (js.UndefOr[js.Function1[/* e */ ChangeEvent[HTMLInputElement | HTMLTextAreaElement], Unit]])
+    var onChange: js.UndefOr[js.Function1[/* e */ ChangeEvent[T], Unit]] = js.undefined
     
     var onClear: js.UndefOr[
         js.Function1[/* e */ SyntheticEvent[HTMLInputElement | HTMLTextAreaElement, Event], Unit]
@@ -1829,11 +1829,8 @@ object inputTypesMod {
   }
   object StatefulContainerProps {
     
-    inline def apply[T](
-      children: StatefulContainerChildrenProps[T] => ReactNode,
-      onChange: (js.UndefOr[js.Function1[/* e */ ChangeEvent[T], Unit]]) & (js.UndefOr[js.Function1[/* e */ ChangeEvent[HTMLInputElement | HTMLTextAreaElement], Unit]])
-    ): StatefulContainerProps[T] = {
-      val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), onChange = onChange.asInstanceOf[js.Any])
+    inline def apply[T](children: StatefulContainerChildrenProps[T] => ReactNode): StatefulContainerProps[T] = {
+      val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
       __obj.asInstanceOf[StatefulContainerProps[T]]
     }
     
@@ -1947,9 +1944,9 @@ object inputTypesMod {
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      inline def setOnChange(
-        value: (js.UndefOr[js.Function1[/* e */ ChangeEvent[T], Unit]]) & (js.UndefOr[js.Function1[/* e */ ChangeEvent[HTMLInputElement | HTMLTextAreaElement], Unit]])
-      ): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
+      inline def setOnChange(value: /* e */ ChangeEvent[T] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
       inline def setOnClear(value: /* e */ SyntheticEvent[HTMLInputElement | HTMLTextAreaElement, Event] => Unit): Self = StObject.set(x, "onClear", js.Any.fromFunction1(value))
       

@@ -11,7 +11,7 @@ trait PickImpldurationPartialPiDuration
   extends StObject
      with Param {
   
-  var duration: Double & js.UndefOr[Double]
+  var duration: Double
   
   var transition: js.UndefOr[String] = js.undefined
   
@@ -19,14 +19,14 @@ trait PickImpldurationPartialPiDuration
 }
 object PickImpldurationPartialPiDuration {
   
-  inline def apply(duration: Double & js.UndefOr[Double]): PickImpldurationPartialPiDuration = {
+  inline def apply(duration: Double): PickImpldurationPartialPiDuration = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldurationPartialPiDuration]
   }
   
   extension [Self <: PickImpldurationPartialPiDuration](x: Self) {
     
-    inline def setDuration(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     inline def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     

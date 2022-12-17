@@ -3,8 +3,8 @@ package typings.nivoChord
 import typings.d3Chord.mod.ChordLayout
 import typings.nivoChord.anon.ArcGenerator
 import typings.nivoChord.anon.Arcs
-import typings.nivoChord.anon.Center
 import typings.nivoChord.anon.Chord
+import typings.nivoChord.anon.EndAngle
 import typings.nivoChord.anon.Height
 import typings.nivoChord.anon.PadAngle
 import typings.nivoChord.anon.RibbonGenerator
@@ -18,11 +18,11 @@ object distTypesComputeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def computeArcPath(param0: ArcGenerator): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("computeArcPath")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def computeArcPath(param0: EndAngle): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("computeArcPath")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def computeChordArcsAndRibbons(param0: Chord): Arcs = ^.asInstanceOf[js.Dynamic].applyDynamic("computeChordArcsAndRibbons")(param0.asInstanceOf[js.Any]).asInstanceOf[Arcs]
   
-  inline def computeChordGenerators(param0: Height): Center = ^.asInstanceOf[js.Dynamic].applyDynamic("computeChordGenerators")(param0.asInstanceOf[js.Any]).asInstanceOf[Center]
+  inline def computeChordGenerators(param0: Height): ArcGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("computeChordGenerators")(param0.asInstanceOf[js.Any]).asInstanceOf[ArcGenerator]
   
   inline def computeChordLayout(param0: PadAngle): ChordLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("computeChordLayout")(param0.asInstanceOf[js.Any]).asInstanceOf[ChordLayout]
   

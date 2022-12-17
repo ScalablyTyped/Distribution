@@ -93,7 +93,7 @@ trait PickImplmetadataPartialPi
   
   var message: js.UndefOr[MessageSettings] = js.undefined
   
-  var metadata: MetadataSettings & js.UndefOr[MetadataSettings]
+  var metadata: MetadataSettings
   
   var minCharacters: js.UndefOr[Double] = js.undefined
   
@@ -169,7 +169,7 @@ trait PickImplmetadataPartialPi
 }
 object PickImplmetadataPartialPi {
   
-  inline def apply(metadata: MetadataSettings & js.UndefOr[MetadataSettings]): PickImplmetadataPartialPi = {
+  inline def apply(metadata: MetadataSettings): PickImplmetadataPartialPi = {
     val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmetadataPartialPi]
   }
@@ -284,7 +284,7 @@ object PickImplmetadataPartialPi {
     
     inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    inline def setMetadata(value: MetadataSettings & js.UndefOr[MetadataSettings]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: MetadataSettings): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMinCharacters(value: Double): Self = StObject.set(x, "minCharacters", value.asInstanceOf[js.Any])
     

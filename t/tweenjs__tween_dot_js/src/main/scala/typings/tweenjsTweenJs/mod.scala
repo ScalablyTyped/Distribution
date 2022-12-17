@@ -54,9 +54,7 @@ object mod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("@tweenjs/tween.js", "default.Sequence")
     @js.native
-    open class SequenceCls ()
-      extends StObject
-         with Sequence
+    open class SequenceCls () extends Sequence
     
     inline def Sequence_=(x: TypeofSequence & Instantiable0[Sequence]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Sequence")(x.asInstanceOf[js.Any])
     
@@ -227,6 +225,28 @@ object mod {
     inline def Utils_=(x: Bernstein): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Utils")(x.asInstanceOf[js.Any])
   }
   
+  /**
+    * Utils
+    */
+  @JSImport("@tweenjs/tween.js", "Sequence")
+  @js.native
+  open class Sequence () extends StObject
+  object Sequence {
+    
+    @JSImport("@tweenjs/tween.js", "Sequence")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("@tweenjs/tween.js", "Sequence._nextId")
+    @js.native
+    def _nextId: Any = js.native
+    inline def _nextId_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_nextId")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    inline def nextId(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("nextId")().asInstanceOf[Double]
+  }
+  
   @JSImport("@tweenjs/tween.js", "Tween")
   @js.native
   open class Tween[T /* <: UnknownProps */] protected () extends StObject {
@@ -393,11 +413,6 @@ object mod {
     *
     */
   type InterpolationFunction = js.Function2[/* v */ js.Array[Double], /* k */ Double, Double]
-  
-  /**
-    * Utils
-    */
-  trait Sequence extends StObject
   
   type UnknownProps = Record[String, Any]
 }

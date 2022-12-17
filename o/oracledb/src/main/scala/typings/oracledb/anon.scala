@@ -451,7 +451,25 @@ object anon {
     }
   }
   
-  trait Type[T] extends StObject {
+  trait Type extends StObject {
+    
+    var `type`: Double
+  }
+  object Type {
+    
+    inline def apply(`type`: Double): Type = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Type]
+    }
+    
+    extension [Self <: Type](x: Self) {
+      
+      inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait TypeClass[T] extends StObject {
     
     /** One of the DB_TYPE constants. */
     var `type`: Double
@@ -462,15 +480,15 @@ object anon {
     /** Type, such as 'VARCHAR2' or 'NUMBER'. */
     var typeName: String
   }
-  object Type {
+  object TypeClass {
     
-    inline def apply[T](`type`: Double, typeName: String): Type[T] = {
+    inline def apply[T](`type`: Double, typeName: String): TypeClass[T] = {
       val __obj = js.Dynamic.literal(typeName = typeName.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Type[T]]
+      __obj.asInstanceOf[TypeClass[T]]
     }
     
-    extension [Self <: Type[?], T](x: Self & Type[T]) {
+    extension [Self <: TypeClass[?], T](x: Self & TypeClass[T]) {
       
       inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -479,24 +497,6 @@ object anon {
       inline def setTypeClassUndefined: Self = StObject.set(x, "typeClass", js.undefined)
       
       inline def setTypeName(value: String): Self = StObject.set(x, "typeName", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait TypeNumber extends StObject {
-    
-    var `type`: Double
-  }
-  object TypeNumber {
-    
-    inline def apply(`type`: Double): TypeNumber = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[TypeNumber]
-    }
-    
-    extension [Self <: TypeNumber](x: Self) {
-      
-      inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

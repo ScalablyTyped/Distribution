@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Payload extends StObject {
   
-  /** @description The response headers received when the delivery was made. */
+  /** @description The request headers sent with the webhook delivery. */
   var headers: StringDictionary[Any] | Null
   
-  /** @description The response payload received. */
-  var payload: String | Null
+  /** @description The webhook payload. */
+  var payload: StringDictionary[Any] | Null
 }
 object Payload {
   
@@ -26,7 +26,7 @@ object Payload {
     
     inline def setHeadersNull: Self = StObject.set(x, "headers", null)
     
-    inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: StringDictionary[Any]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     inline def setPayloadNull: Self = StObject.set(x, "payload", null)
   }

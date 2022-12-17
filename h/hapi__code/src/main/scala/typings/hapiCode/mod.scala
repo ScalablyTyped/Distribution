@@ -14,116 +14,14 @@ object mod {
   
   inline def count(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("count")().asInstanceOf[Double]
   
-  inline def fail(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")().asInstanceOf[Unit]
-  inline def fail(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  
-  inline def incomplete(): js.Array[String] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("incomplete")().asInstanceOf[js.Array[String] | Null]
-  
-  @JSImport("@hapi/code", "settings")
-  @js.native
-  val settings: Settings_ = js.native
-  
-  object thrownAt {
+  object expect {
     
-    inline def apply(): Location = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Location]
-    inline def apply(error: js.Error): Location = ^.asInstanceOf[js.Dynamic].apply(error.asInstanceOf[js.Any]).asInstanceOf[Location]
+    inline def apply[T](value: T): Assertion[T, T] = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Assertion[T, T]]
+    inline def apply[T](value: T, prefix: String): Assertion[T, T] = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Assertion[T, T]]
     
-    @JSImport("@hapi/code", "thrownAt")
+    @JSImport("@hapi/code", "expect")
     @js.native
     val ^ : js.Any = js.native
-    
-    trait Location extends StObject {
-      
-      var column: String
-      
-      var filename: String
-      
-      var line: String
-    }
-    object Location {
-      
-      inline def apply(column: String, filename: String, line: String): Location = {
-        val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
-        __obj.asInstanceOf[Location]
-      }
-      
-      extension [Self <: Location](x: Self) {
-        
-        inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
-        
-        inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
-        
-        inline def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
-      }
-    }
-  }
-  
-  // Internal helpers
-  type Class[T] = Instantiable1[/* args (repeated) */ Any, T]
-  
-  /** NOTE: Conditional type definitions are impossible to translate to Scala.
-    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
-    * TS definition: {{{
-    T extends object ? @hapi/code.@hapi/code.RecursivePartial<T> & {[key: string] : any} : T
-    }}}
-    */
-  type Loosely[T] = T
-  
-  /** NOTE: Conditional type definitions are impossible to translate to Scala.
-    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
-    * TS definition: {{{
-    T extends object ? {[ P in keyof T ]:? T[P] extends std.Array<infer I>? std.Array<@hapi/code.@hapi/code.RecursivePartial<I>> : @hapi/code.@hapi/code.RecursivePartial<T[P]>} : T
-    }}}
-    */
-  type RecursivePartial[T] = T
-  
-  trait Settings_ extends StObject {
-    
-    /**
-      * Ignore object prototypes when doing a deep comparison.
-      * 
-      * @defaults false
-      */
-    var comparePrototypes: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Truncate long assertion error messages for readability.
-      * 
-      * @default false
-      */
-    var truncateMessages: js.UndefOr[Boolean] = js.undefined
-  }
-  object Settings_ {
-    
-    inline def apply(): Settings_ = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Settings_]
-    }
-    
-    extension [Self <: Settings_](x: Self) {
-      
-      inline def setComparePrototypes(value: Boolean): Self = StObject.set(x, "comparePrototypes", value.asInstanceOf[js.Any])
-      
-      inline def setComparePrototypesUndefined: Self = StObject.set(x, "comparePrototypes", js.undefined)
-      
-      inline def setTruncateMessages(value: Boolean): Self = StObject.set(x, "truncateMessages", value.asInstanceOf[js.Any])
-      
-      inline def setTruncateMessagesUndefined: Self = StObject.set(x, "truncateMessages", js.undefined)
-    }
-  }
-  
-  /** NOTE: Conditional type definitions are impossible to translate to Scala.
-    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
-    * TS definition: {{{
-    T extends std.Array<infer U> ? U : T
-    }}}
-    */
-  type UnpackArray[T] = T
-  
-  object expect {
     
     /** NOTE: Conditional type definitions are impossible to translate to Scala.
       * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
@@ -718,4 +616,113 @@ object mod {
       def startsWith(value: String): Assertion[T, T] = js.native
     }
   }
+  
+  inline def fail(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")().asInstanceOf[Unit]
+  inline def fail(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def incomplete(): js.Array[String] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("incomplete")().asInstanceOf[js.Array[String] | Null]
+  
+  @JSImport("@hapi/code", "settings")
+  @js.native
+  val settings: Settings_ = js.native
+  
+  object thrownAt {
+    
+    inline def apply(): Location = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Location]
+    inline def apply(error: js.Error): Location = ^.asInstanceOf[js.Dynamic].apply(error.asInstanceOf[js.Any]).asInstanceOf[Location]
+    
+    @JSImport("@hapi/code", "thrownAt")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    trait Location extends StObject {
+      
+      var column: String
+      
+      var filename: String
+      
+      var line: String
+    }
+    object Location {
+      
+      inline def apply(column: String, filename: String, line: String): Location = {
+        val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
+        __obj.asInstanceOf[Location]
+      }
+      
+      extension [Self <: Location](x: Self) {
+        
+        inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+        
+        inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+        
+        inline def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      }
+    }
+  }
+  
+  // Internal helpers
+  type Class[T] = Instantiable1[/* args (repeated) */ Any, T]
+  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+    * TS definition: {{{
+    T extends object ? @hapi/code.@hapi/code.RecursivePartial<T> & {[key: string] : any} : T
+    }}}
+    */
+  type Loosely[T] = T
+  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+    * TS definition: {{{
+    T extends object ? {[ P in keyof T ]:? T[P] extends std.Array<infer I>? std.Array<@hapi/code.@hapi/code.RecursivePartial<I>> : @hapi/code.@hapi/code.RecursivePartial<T[P]>} : T
+    }}}
+    */
+  type RecursivePartial[T] = T
+  
+  trait Settings_ extends StObject {
+    
+    /**
+      * Ignore object prototypes when doing a deep comparison.
+      * 
+      * @defaults false
+      */
+    var comparePrototypes: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Truncate long assertion error messages for readability.
+      * 
+      * @default false
+      */
+    var truncateMessages: js.UndefOr[Boolean] = js.undefined
+  }
+  object Settings_ {
+    
+    inline def apply(): Settings_ = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Settings_]
+    }
+    
+    extension [Self <: Settings_](x: Self) {
+      
+      inline def setComparePrototypes(value: Boolean): Self = StObject.set(x, "comparePrototypes", value.asInstanceOf[js.Any])
+      
+      inline def setComparePrototypesUndefined: Self = StObject.set(x, "comparePrototypes", js.undefined)
+      
+      inline def setTruncateMessages(value: Boolean): Self = StObject.set(x, "truncateMessages", value.asInstanceOf[js.Any])
+      
+      inline def setTruncateMessagesUndefined: Self = StObject.set(x, "truncateMessages", js.undefined)
+    }
+  }
+  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+    * TS definition: {{{
+    T extends std.Array<infer U> ? U : T
+    }}}
+    */
+  type UnpackArray[T] = T
 }

@@ -194,10 +194,7 @@ trait TypeofAMap extends StObject {
     typings.amapJsApi.AMap.Text[js.Object]
   ] = js.native
   
-  val TileLayer: TypeofTileLayer & (Instantiable1[
-    /* options */ js.UndefOr[typings.amapJsApi.AMap.TileLayer.Options], 
-    typings.amapJsApi.AMap.TileLayer
-  ]) = js.native
+  val TileLayer: TypeofTileLayer = js.native
   
   val Util: TypeofUtil = js.native
   

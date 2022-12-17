@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `400404422` extends StObject {
   
   /** Response */
-  var `200`: ContentApplicationjsonPushprotectionbypassedby
+  var `200`: Content323
   
   /** Bad request, resolution comment is invalid or the resolution was not changed. */
   var `400`: Any
@@ -18,16 +18,16 @@ trait `400404422` extends StObject {
   /** State does not match the resolution or resolution comment */
   var `422`: Any
   
-  var `503`: ContentApplicationjsonCodeDocumentationurl
+  var `503`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['service_unavailable'] */ js.Any
 }
 object `400404422` {
   
   inline def apply(
-    `200`: ContentApplicationjsonPushprotectionbypassedby,
+    `200`: Content323,
     `400`: Any,
     `404`: Any,
     `422`: Any,
-    `503`: ContentApplicationjsonCodeDocumentationurl
+    `503`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['service_unavailable'] */ js.Any
   ): `400404422` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
@@ -40,7 +40,7 @@ object `400404422` {
   
   extension [Self <: `400404422`](x: Self) {
     
-    inline def set200(value: ContentApplicationjsonPushprotectionbypassedby): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+    inline def set200(value: Content323): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
     inline def set400(value: Any): Self = StObject.set(x, "400", value.asInstanceOf[js.Any])
     
@@ -48,6 +48,8 @@ object `400404422` {
     
     inline def set422(value: Any): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
     
-    inline def set503(value: ContentApplicationjsonCodeDocumentationurl): Self = StObject.set(x, "503", value.asInstanceOf[js.Any])
+    inline def set503(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['service_unavailable'] */ js.Any
+    ): Self = StObject.set(x, "503", value.asInstanceOf[js.Any])
   }
 }

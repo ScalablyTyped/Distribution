@@ -67,7 +67,7 @@ trait PickImplloadingDurationPa
   
   var interruptRequests: js.UndefOr[Boolean] = js.undefined
   
-  var loadingDuration: Double & js.UndefOr[Double]
+  var loadingDuration: Double
   
   var metadata: js.UndefOr[MetadataSettings] = js.undefined
   
@@ -147,7 +147,7 @@ trait PickImplloadingDurationPa
 }
 object PickImplloadingDurationPa {
   
-  inline def apply(loadingDuration: Double & js.UndefOr[Double]): PickImplloadingDurationPa = {
+  inline def apply(loadingDuration: Double): PickImplloadingDurationPa = {
     val __obj = js.Dynamic.literal(loadingDuration = loadingDuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplloadingDurationPa]
   }
@@ -214,7 +214,7 @@ object PickImplloadingDurationPa {
     
     inline def setInterruptRequestsUndefined: Self = StObject.set(x, "interruptRequests", js.undefined)
     
-    inline def setLoadingDuration(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "loadingDuration", value.asInstanceOf[js.Any])
+    inline def setLoadingDuration(value: Double): Self = StObject.set(x, "loadingDuration", value.asInstanceOf[js.Any])
     
     inline def setMetadata(value: MetadataSettings): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

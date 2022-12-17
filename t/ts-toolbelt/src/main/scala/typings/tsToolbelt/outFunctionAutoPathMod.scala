@@ -65,7 +65,7 @@ object outFunctionAutoPathMod {
   /**
     * @ignore
     */
-  type NextPath[OP] = Select[UnionOf[(Exclude[OP, String]) & js.Object], String, default]
+  type NextPath[OP] = Select[UnionOf[Exclude[OP, String]], String, default]
   
   /**
     * @ignore

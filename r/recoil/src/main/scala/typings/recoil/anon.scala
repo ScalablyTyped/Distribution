@@ -69,9 +69,15 @@ object anon {
     }
   }
   
-  trait Children extends StObject {
+  trait Children
+    extends StObject
+       with RecoilRootProps {
     
     var children: ReactNode
+    
+    var initializeState: js.UndefOr[js.Function1[/* mutableSnapshot */ MutableSnapshot, Unit]] = js.undefined
+    
+    var `override`: js.UndefOr[`true`] = js.undefined
   }
   object Children {
     
@@ -81,6 +87,33 @@ object anon {
     }
     
     extension [Self <: Children](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setInitializeState(value: /* mutableSnapshot */ MutableSnapshot => Unit): Self = StObject.set(x, "initializeState", js.Any.fromFunction1(value))
+      
+      inline def setInitializeStateUndefined: Self = StObject.set(x, "initializeState", js.undefined)
+      
+      inline def setOverride(value: `true`): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
+      
+      inline def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
+    }
+  }
+  
+  trait ChildrenReactNode extends StObject {
+    
+    var children: ReactNode
+  }
+  object ChildrenReactNode {
+    
+    inline def apply(): ChildrenReactNode = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ChildrenReactNode]
+    }
+    
+    extension [Self <: ChildrenReactNode](x: Self) {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -196,39 +229,6 @@ object anon {
     var storeID: StoreID = js.native
     
     var trigger: set | get = js.native
-  }
-  
-  trait InitializeState
-    extends StObject
-       with RecoilRootProps {
-    
-    var children: ReactNode
-    
-    var initializeState: js.UndefOr[js.Function1[/* mutableSnapshot */ MutableSnapshot, Unit]] = js.undefined
-    
-    var `override`: js.UndefOr[`true`] = js.undefined
-  }
-  object InitializeState {
-    
-    inline def apply(): InitializeState = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[InitializeState]
-    }
-    
-    extension [Self <: InitializeState](x: Self) {
-      
-      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
-      inline def setInitializeState(value: /* mutableSnapshot */ MutableSnapshot => Unit): Self = StObject.set(x, "initializeState", js.Any.fromFunction1(value))
-      
-      inline def setInitializeStateUndefined: Self = StObject.set(x, "initializeState", js.undefined)
-      
-      inline def setOverride(value: `true`): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
-      
-      inline def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
-    }
   }
   
   trait IsInitialized extends StObject {

@@ -39,7 +39,7 @@ trait PickImplapiPartialPickImp
   
   var action: js.UndefOr[String | `false`] = js.undefined
   
-  var api: StringDictionary[String] & js.UndefOr[StringDictionary[String]]
+  var api: StringDictionary[String]
   
   var beforeSend: js.UndefOr[js.Function1[/* settings */ ApiSettings, Any]] = js.undefined
   
@@ -147,7 +147,7 @@ trait PickImplapiPartialPickImp
 }
 object PickImplapiPartialPickImp {
   
-  inline def apply(api: StringDictionary[String] & js.UndefOr[StringDictionary[String]]): PickImplapiPartialPickImp = {
+  inline def apply(api: StringDictionary[String]): PickImplapiPartialPickImp = {
     val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplapiPartialPickImp]
   }
@@ -158,7 +158,7 @@ object PickImplapiPartialPickImp {
     
     inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    inline def setApi(value: StringDictionary[String] & js.UndefOr[StringDictionary[String]]): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+    inline def setApi(value: StringDictionary[String]): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     
     inline def setBeforeSend(value: /* settings */ ApiSettings => Any): Self = StObject.set(x, "beforeSend", js.Any.fromFunction1(value))
     

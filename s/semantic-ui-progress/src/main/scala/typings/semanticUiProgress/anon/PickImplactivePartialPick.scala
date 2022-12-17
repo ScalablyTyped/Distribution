@@ -11,7 +11,7 @@ trait PickImplactivePartialPick
   extends StObject
      with Param {
   
-  var active: (`false` | String) & (js.UndefOr[`false` | String])
+  var active: `false` | String
   
   var error: js.UndefOr[`false` | String] = js.undefined
   
@@ -25,14 +25,14 @@ trait PickImplactivePartialPick
 }
 object PickImplactivePartialPick {
   
-  inline def apply(active: (`false` | String) & (js.UndefOr[`false` | String])): PickImplactivePartialPick = {
+  inline def apply(active: `false` | String): PickImplactivePartialPick = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplactivePartialPick]
   }
   
   extension [Self <: PickImplactivePartialPick](x: Self) {
     
-    inline def setActive(value: (`false` | String) & (js.UndefOr[`false` | String])): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: `false` | String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     inline def setError(value: `false` | String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

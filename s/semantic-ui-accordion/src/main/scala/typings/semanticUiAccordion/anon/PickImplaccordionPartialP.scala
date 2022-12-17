@@ -10,7 +10,7 @@ trait PickImplaccordionPartialP
   extends StObject
      with Param {
   
-  var accordion: String & js.UndefOr[String]
+  var accordion: String
   
   var content: js.UndefOr[String] = js.undefined
   
@@ -20,14 +20,14 @@ trait PickImplaccordionPartialP
 }
 object PickImplaccordionPartialP {
   
-  inline def apply(accordion: String & js.UndefOr[String]): PickImplaccordionPartialP = {
+  inline def apply(accordion: String): PickImplaccordionPartialP = {
     val __obj = js.Dynamic.literal(accordion = accordion.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplaccordionPartialP]
   }
   
   extension [Self <: PickImplaccordionPartialP](x: Self) {
     
-    inline def setAccordion(value: String & js.UndefOr[String]): Self = StObject.set(x, "accordion", value.asInstanceOf[js.Any])
+    inline def setAccordion(value: String): Self = StObject.set(x, "accordion", value.asInstanceOf[js.Any])
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

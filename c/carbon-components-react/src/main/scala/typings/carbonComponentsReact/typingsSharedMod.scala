@@ -131,10 +131,17 @@ object typingsSharedMod {
     }
   }
   
-  type JSXIntrinsicElementProps[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ Any */, REF /* <: Boolean */] = (Omit[
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+    * TS definition: {{{
+    REF extends true ? react.react.<global>.JSX.IntrinsicElements[K] : std.Omit<react.react.<global>.JSX.IntrinsicElements[K], 'ref'>
+    }}}
+    */
+  type JSXIntrinsicElementProps[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.carbonComponentsReact.carbonComponentsReactStrings.a, typings.carbonComponentsReact.carbonComponentsReactStrings.abbr, typings.carbonComponentsReact.carbonComponentsReactStrings.address */ Any */, REF /* <: Boolean */] = Omit[
     /* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements[K] */ js.Any, 
     ref
-  ]) | (/* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements[K] */ js.Any)
+  ]
   
   type ListBoxBaseItemType = js.Object | String
   
@@ -163,7 +170,14 @@ object typingsSharedMod {
     }
   }
   
-  type Overwrite[T, U] = ((Omit[T, /* keyof U */ String]) & U) | U
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+    * TS definition: {{{
+    [T] extends [never] ? U : std.Omit<T, keyof U> & U
+    }}}
+    */
+  type Overwrite[T, U] = U
   
   type ReactAnchorAttr[T] = AnchorHTMLAttributes[T]
   
@@ -234,7 +248,7 @@ object typingsSharedMod {
     }
   }
   
-  type ShapeOf[B /* <: js.Object */, E /* <: js.Object */] = (E | js.Object) & B
+  type ShapeOf[B /* <: js.Object */, E /* <: js.Object */] = (/* import warning: importer.ImportType#apply Failed type conversion: E extends never ? {} : E */ js.Any) & B
   
   trait SideNavSharedProps extends StObject {
     

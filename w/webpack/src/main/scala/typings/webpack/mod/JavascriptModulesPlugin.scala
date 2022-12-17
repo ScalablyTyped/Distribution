@@ -5,69 +5,58 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JavascriptModulesPlugin extends StObject {
+@JSImport("webpack", "JavascriptModulesPlugin")
+@js.native
+open class JavascriptModulesPlugin () extends StObject {
+  def this(options: js.Object) = this()
   
   /**
   	 * Apply the plugin
   	 */
   @JSName("apply")
-  def apply(compiler: Compiler): Unit
+  def apply(compiler: Compiler): Unit = js.native
   
-  var options: js.Object
+  var options: js.Object = js.native
   
-  def renderBootstrap(renderContext: RenderBootstrapContext, hooks: CompilationHooksJavascriptModulesPlugin): AfterStartup
+  def renderBootstrap(renderContext: RenderBootstrapContext, hooks: CompilationHooksJavascriptModulesPlugin): AfterStartup = js.native
   
-  def renderChunk(renderContext: RenderContext, hooks: CompilationHooksJavascriptModulesPlugin): Source
+  def renderChunk(renderContext: RenderContext, hooks: CompilationHooksJavascriptModulesPlugin): Source = js.native
   
   def renderMain(
     renderContext: MainRenderContext,
     hooks: CompilationHooksJavascriptModulesPlugin,
     compilation: Compilation
-  ): Source
+  ): Source = js.native
   
   def renderModule(
     module: Module,
     renderContext: ChunkRenderContext,
     hooks: CompilationHooksJavascriptModulesPlugin,
     factory: Boolean
-  ): Source
+  ): Source = js.native
   
-  def renderRequire(renderContext: RenderBootstrapContext, hooks: CompilationHooksJavascriptModulesPlugin): String
+  def renderRequire(renderContext: RenderBootstrapContext, hooks: CompilationHooksJavascriptModulesPlugin): String = js.native
   
-  def updateHashWithBootstrap(hash: Hash, renderContext: RenderBootstrapContext, hooks: CompilationHooksJavascriptModulesPlugin): Unit
+  def updateHashWithBootstrap(hash: Hash, renderContext: RenderBootstrapContext, hooks: CompilationHooksJavascriptModulesPlugin): Unit = js.native
 }
 object JavascriptModulesPlugin {
   
-  inline def apply(
-    apply: Compiler => Unit,
-    options: js.Object,
-    renderBootstrap: (RenderBootstrapContext, CompilationHooksJavascriptModulesPlugin) => AfterStartup,
-    renderChunk: (RenderContext, CompilationHooksJavascriptModulesPlugin) => Source,
-    renderMain: (MainRenderContext, CompilationHooksJavascriptModulesPlugin, Compilation) => Source,
-    renderModule: (Module, ChunkRenderContext, CompilationHooksJavascriptModulesPlugin, Boolean) => Source,
-    renderRequire: (RenderBootstrapContext, CompilationHooksJavascriptModulesPlugin) => String,
-    updateHashWithBootstrap: (Hash, RenderBootstrapContext, CompilationHooksJavascriptModulesPlugin) => Unit
-  ): JavascriptModulesPlugin = {
-    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), options = options.asInstanceOf[js.Any], renderBootstrap = js.Any.fromFunction2(renderBootstrap), renderChunk = js.Any.fromFunction2(renderChunk), renderMain = js.Any.fromFunction3(renderMain), renderModule = js.Any.fromFunction4(renderModule), renderRequire = js.Any.fromFunction2(renderRequire), updateHashWithBootstrap = js.Any.fromFunction3(updateHashWithBootstrap))
-    __obj.asInstanceOf[JavascriptModulesPlugin]
-  }
+  @JSImport("webpack", "JavascriptModulesPlugin")
+  @js.native
+  val ^ : js.Any = js.native
   
-  extension [Self <: JavascriptModulesPlugin](x: Self) {
-    
-    inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
-    
-    inline def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
-    
-    inline def setRenderBootstrap(value: (RenderBootstrapContext, CompilationHooksJavascriptModulesPlugin) => AfterStartup): Self = StObject.set(x, "renderBootstrap", js.Any.fromFunction2(value))
-    
-    inline def setRenderChunk(value: (RenderContext, CompilationHooksJavascriptModulesPlugin) => Source): Self = StObject.set(x, "renderChunk", js.Any.fromFunction2(value))
-    
-    inline def setRenderMain(value: (MainRenderContext, CompilationHooksJavascriptModulesPlugin, Compilation) => Source): Self = StObject.set(x, "renderMain", js.Any.fromFunction3(value))
-    
-    inline def setRenderModule(value: (Module, ChunkRenderContext, CompilationHooksJavascriptModulesPlugin, Boolean) => Source): Self = StObject.set(x, "renderModule", js.Any.fromFunction4(value))
-    
-    inline def setRenderRequire(value: (RenderBootstrapContext, CompilationHooksJavascriptModulesPlugin) => String): Self = StObject.set(x, "renderRequire", js.Any.fromFunction2(value))
-    
-    inline def setUpdateHashWithBootstrap(value: (Hash, RenderBootstrapContext, CompilationHooksJavascriptModulesPlugin) => Unit): Self = StObject.set(x, "updateHashWithBootstrap", js.Any.fromFunction3(value))
-  }
+  /* static member */
+  @JSImport("webpack", "JavascriptModulesPlugin.chunkHasJs")
+  @js.native
+  def chunkHasJs: js.Function2[/* chunk */ Chunk, /* chunkGraph */ ChunkGraph, Boolean] = js.native
+  inline def chunkHasJs_=(x: js.Function2[/* chunk */ Chunk, /* chunkGraph */ ChunkGraph, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("chunkHasJs")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  inline def getChunkFilenameTemplate(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getChunkFilenameTemplate")().asInstanceOf[Any]
+  inline def getChunkFilenameTemplate(chunk: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getChunkFilenameTemplate")(chunk.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def getChunkFilenameTemplate(chunk: Any, outputOptions: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getChunkFilenameTemplate")(chunk.asInstanceOf[js.Any], outputOptions.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def getChunkFilenameTemplate(chunk: Unit, outputOptions: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getChunkFilenameTemplate")(chunk.asInstanceOf[js.Any], outputOptions.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
+  /* static member */
+  inline def getCompilationHooks(compilation: Compilation): CompilationHooksJavascriptModulesPlugin = ^.asInstanceOf[js.Dynamic].applyDynamic("getCompilationHooks")(compilation.asInstanceOf[js.Any]).asInstanceOf[CompilationHooksJavascriptModulesPlugin]
 }

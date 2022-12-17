@@ -28,5 +28,5 @@ object libUtilTypeMod {
   @js.native
   trait ElementOf[T] extends StObject
   
-  type LiteralUnion[T /* <: U */, U] = T | (U & js.Object)
+  type LiteralUnion[T /* <: U */, U] = T | U
 }

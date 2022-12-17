@@ -1,5 +1,6 @@
 package typings.pify
 
+import typings.pify.pifyBooleans.`false`
 import typings.pify.pifyBooleans.`true`
 import typings.std.PromiseConstructor
 import typings.std.Record
@@ -13,8 +14,26 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def default[FirstArgument, Arguments /* <: js.Array[Any] */, MultiArgs /* <: Boolean */, ErrorFirst /* <: Boolean */](input: js.Function2[/* argument */ FirstArgument, /* arguments_ */ Arguments, Any]): Promisify[
+    /* import warning: importer.ImportType#apply c repeated non-array type: Arguments */ js.Array[Arguments], 
+    InternalOptions[js.Array[Any], js.Array[Any], MultiArgs, ErrorFirst]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[Promisify[
+    /* import warning: importer.ImportType#apply c repeated non-array type: Arguments */ js.Array[Arguments], 
+    InternalOptions[js.Array[Any], js.Array[Any], MultiArgs, ErrorFirst]
+  ]]
   inline def default[Module /* <: Record[String, Any] */, Includes /* <: js.Array[/* keyof Module */ String] */, Excludes /* <: js.Array[/* keyof Module */ String] */, MultiArgs /* <: Boolean */, ErrorFirst /* <: Boolean */](// eslint-disable-next-line unicorn/prefer-module
   module: Module): PromisifyModule[Module, MultiArgs, ErrorFirst, Includes, Excludes] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(module.asInstanceOf[js.Any]).asInstanceOf[PromisifyModule[Module, MultiArgs, ErrorFirst, Includes, Excludes]]
+  
+  inline def default_false[FirstArgument, Arguments /* <: js.Array[Any] */, MultiArgs /* <: Boolean */, ErrorFirst /* <: Boolean */](
+    input: js.Function2[/* argument */ FirstArgument, /* arguments_ */ Arguments, Any],
+    options: Options[js.Array[Any], js.Array[Any], MultiArgs, ErrorFirst, `false`]
+  ): Promisify[
+    /* import warning: importer.ImportType#apply c repeated non-array type: Arguments */ js.Array[Arguments], 
+    InternalOptions[js.Array[Any], js.Array[Any], MultiArgs, ErrorFirst]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promisify[
+    /* import warning: importer.ImportType#apply c repeated non-array type: Arguments */ js.Array[Arguments], 
+    InternalOptions[js.Array[Any], js.Array[Any], MultiArgs, ErrorFirst]
+  ]]
   
   inline def default_true[Module /* <: Record[String, Any] */, Includes /* <: js.Array[/* keyof Module */ String] */, Excludes /* <: js.Array[/* keyof Module */ String] */, MultiArgs /* <: Boolean */, ErrorFirst /* <: Boolean */](
     // eslint-disable-next-line unicorn/prefer-module

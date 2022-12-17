@@ -37,7 +37,7 @@ trait PickImplexpiresPartialPic
   
   var error: js.UndefOr[ErrorSettings] = js.undefined
   
-  var expires: Double & js.UndefOr[Double]
+  var expires: Double
   
   var key: js.UndefOr[Any] = js.undefined
   
@@ -67,7 +67,7 @@ trait PickImplexpiresPartialPic
 }
 object PickImplexpiresPartialPic {
   
-  inline def apply(expires: Double & js.UndefOr[Double]): PickImplexpiresPartialPic = {
+  inline def apply(expires: Double): PickImplexpiresPartialPic = {
     val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplexpiresPartialPic]
   }
@@ -110,7 +110,7 @@ object PickImplexpiresPartialPic {
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    inline def setExpires(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+    inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     
     inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

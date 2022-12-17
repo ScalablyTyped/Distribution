@@ -30,6 +30,6 @@ object GridColumnGapProps {
     
     inline def setGridColumnGapUndefined: Self = StObject.set(x, "gridColumnGap", js.undefined)
     
-    inline def setGridColumnGapVarargs(value: (TVal | Null)*): Self = StObject.set(x, "gridColumnGap", js.Array(value :_*))
+    inline def setGridColumnGapVarargs(value: (TVal | Null)*): Self = StObject.set(x, "gridColumnGap", js.Array(value*))
   }
 }

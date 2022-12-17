@@ -104,7 +104,7 @@ object distDeclarationsSrcTypesFunctionsMod {
     extends StObject
        with AnyUpdateFn[SpringValue[T], InferProps[SpringValue[T]], InferState[SpringValue[T]]] {
     
-    def apply(props: `5`[T] & SpringProps[T]): js.Promise[AnimationResult[SpringValue[T]]] = js.native
+    def apply(props: `6`[T] & SpringProps[T]): js.Promise[AnimationResult[SpringValue[T]]] = js.native
   }
   
   /**
@@ -118,6 +118,6 @@ object distDeclarationsSrcTypesFunctionsMod {
        with AnyUpdateFn[Controller[State], InferProps[Controller[State]], InferState[Controller[State]]] {
     
     def apply(props: InlineToProps[State] & (ControllerProps[State, Unit])): js.Promise[AnimationResult[Controller[State]]] = js.native
-    def apply(props: `6`[State] & (ControllerProps[State, Unit])): js.Promise[AnimationResult[Controller[State]]] = js.native
+    def apply(props: `5`[State] & (ControllerProps[State, Unit])): js.Promise[AnimationResult[Controller[State]]] = js.native
   }
 }

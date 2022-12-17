@@ -1,5 +1,11 @@
 package typings.licenseWebpackPlugin
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.licenseWebpackPlugin.distAssetManagerMod.AssetManager
+import typings.licenseWebpackPlugin.distChunkIncludeExcludeTesterMod.ChunkIncludeExcludeTester
+import typings.licenseWebpackPlugin.distModuleCacheMod.ModuleCache
+import typings.licenseWebpackPlugin.distModuleMod.Module
+import typings.licenseWebpackPlugin.distWebpackChunkHandlerMod.WebpackChunkHandler
 import typings.licenseWebpackPlugin.distWebpackCompilerMod.WebpackCompiler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -7,77 +13,61 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distWebpackCompilerHandlerMod {
   
-  trait WebpackCompilerHandler extends StObject {
+  @JSImport("license-webpack-plugin/dist/WebpackCompilerHandler", "WebpackCompilerHandler")
+  @js.native
+  open class WebpackCompilerHandler protected () extends StObject {
+    def this(
+      chunkIncludeTester: ChunkIncludeExcludeTester,
+      chunkHandler: WebpackChunkHandler,
+      assetManager: AssetManager,
+      moduleCache: ModuleCache,
+      addBanner: Boolean,
+      perChunkOutput: Boolean,
+      additionalChunkModules: StringDictionary[js.Array[Module]],
+      additionalModules: js.Array[Module],
+      skipChildCompilers: Boolean
+    ) = this()
     
-    /* private */ var addBanner: Any
+    /* private */ var addBanner: Any = js.native
     
-    /* private */ var additionalChunkModules: Any
+    /* private */ var additionalChunkModules: Any = js.native
     
-    /* private */ var additionalModules: Any
+    /* private */ var additionalModules: Any = js.native
     
-    /* private */ var assetManager: Any
+    /* private */ var assetManager: Any = js.native
     
-    /* private */ var chunkHandler: Any
+    /* private */ var chunkHandler: Any = js.native
     
-    /* private */ var chunkIncludeTester: Any
+    /* private */ var chunkIncludeTester: Any = js.native
     
-    def handleCompiler(compiler: WebpackCompiler): Unit
+    def handleCompiler(compiler: WebpackCompiler): Unit = js.native
     
-    /* private */ var iterateChunks: Any
+    /* private */ var iterateChunks: Any = js.native
     
-    /* private */ var iterateChunksForBanner: Any
+    /* private */ var iterateChunksForBanner: Any = js.native
     
-    /* private */ var moduleCache: Any
+    /* private */ var moduleCache: Any = js.native
     
-    /* private */ var perChunkOutput: Any
+    /* private */ var perChunkOutput: Any = js.native
     
-    /* private */ var skipChildCompilers: Any
+    /* private */ var skipChildCompilers: Any = js.native
   }
   object WebpackCompilerHandler {
     
-    inline def apply(
-      addBanner: Any,
-      additionalChunkModules: Any,
-      additionalModules: Any,
-      assetManager: Any,
-      chunkHandler: Any,
-      chunkIncludeTester: Any,
-      handleCompiler: WebpackCompiler => Unit,
-      iterateChunks: Any,
-      iterateChunksForBanner: Any,
-      moduleCache: Any,
-      perChunkOutput: Any,
-      skipChildCompilers: Any
-    ): WebpackCompilerHandler = {
-      val __obj = js.Dynamic.literal(addBanner = addBanner.asInstanceOf[js.Any], additionalChunkModules = additionalChunkModules.asInstanceOf[js.Any], additionalModules = additionalModules.asInstanceOf[js.Any], assetManager = assetManager.asInstanceOf[js.Any], chunkHandler = chunkHandler.asInstanceOf[js.Any], chunkIncludeTester = chunkIncludeTester.asInstanceOf[js.Any], handleCompiler = js.Any.fromFunction1(handleCompiler), iterateChunks = iterateChunks.asInstanceOf[js.Any], iterateChunksForBanner = iterateChunksForBanner.asInstanceOf[js.Any], moduleCache = moduleCache.asInstanceOf[js.Any], perChunkOutput = perChunkOutput.asInstanceOf[js.Any], skipChildCompilers = skipChildCompilers.asInstanceOf[js.Any])
-      __obj.asInstanceOf[WebpackCompilerHandler]
-    }
+    @JSImport("license-webpack-plugin/dist/WebpackCompilerHandler", "WebpackCompilerHandler")
+    @js.native
+    val ^ : js.Any = js.native
     
-    extension [Self <: WebpackCompilerHandler](x: Self) {
-      
-      inline def setAddBanner(value: Any): Self = StObject.set(x, "addBanner", value.asInstanceOf[js.Any])
-      
-      inline def setAdditionalChunkModules(value: Any): Self = StObject.set(x, "additionalChunkModules", value.asInstanceOf[js.Any])
-      
-      inline def setAdditionalModules(value: Any): Self = StObject.set(x, "additionalModules", value.asInstanceOf[js.Any])
-      
-      inline def setAssetManager(value: Any): Self = StObject.set(x, "assetManager", value.asInstanceOf[js.Any])
-      
-      inline def setChunkHandler(value: Any): Self = StObject.set(x, "chunkHandler", value.asInstanceOf[js.Any])
-      
-      inline def setChunkIncludeTester(value: Any): Self = StObject.set(x, "chunkIncludeTester", value.asInstanceOf[js.Any])
-      
-      inline def setHandleCompiler(value: WebpackCompiler => Unit): Self = StObject.set(x, "handleCompiler", js.Any.fromFunction1(value))
-      
-      inline def setIterateChunks(value: Any): Self = StObject.set(x, "iterateChunks", value.asInstanceOf[js.Any])
-      
-      inline def setIterateChunksForBanner(value: Any): Self = StObject.set(x, "iterateChunksForBanner", value.asInstanceOf[js.Any])
-      
-      inline def setModuleCache(value: Any): Self = StObject.set(x, "moduleCache", value.asInstanceOf[js.Any])
-      
-      inline def setPerChunkOutput(value: Any): Self = StObject.set(x, "perChunkOutput", value.asInstanceOf[js.Any])
-      
-      inline def setSkipChildCompilers(value: Any): Self = StObject.set(x, "skipChildCompilers", value.asInstanceOf[js.Any])
-    }
+    /* static member */
+    @JSImport("license-webpack-plugin/dist/WebpackCompilerHandler", "WebpackCompilerHandler.PROCESS_ASSETS_STAGE_ADDITIONS")
+    @js.native
+    def PROCESS_ASSETS_STAGE_ADDITIONS: Double = js.native
+    inline def PROCESS_ASSETS_STAGE_ADDITIONS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROCESS_ASSETS_STAGE_ADDITIONS")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("license-webpack-plugin/dist/WebpackCompilerHandler", "WebpackCompilerHandler.PROCESS_ASSETS_STAGE_REPORT")
+    @js.native
+    def PROCESS_ASSETS_STAGE_REPORT: Double = js.native
+    inline def PROCESS_ASSETS_STAGE_REPORT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROCESS_ASSETS_STAGE_REPORT")(x.asInstanceOf[js.Any])
   }
 }

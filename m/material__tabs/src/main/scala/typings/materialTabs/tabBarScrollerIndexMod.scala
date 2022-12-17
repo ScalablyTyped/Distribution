@@ -11,28 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object tabBarScrollerIndexMod {
   
-  @JSImport("@material/tabs/tab-bar-scroller/index", JSImport.Default)
-  @js.native
-  open class default ()
-    extends typings.materialTabs.tabBarScrollerFoundationMod.default {
-    def this(adapter: PartialMDCTabBarScrollerA) = this()
-  }
-  /* static members */
-  object default {
-    
-    @JSImport("@material/tabs/tab-bar-scroller/index", "default.cssClasses")
-    @js.native
-    val cssClasses: INDICATORBACK = js.native
-    
-    @JSImport("@material/tabs/tab-bar-scroller/index", "default.defaultAdapter")
-    @js.native
-    val defaultAdapter: MDCTabBarScrollerAdapter = js.native
-    
-    @JSImport("@material/tabs/tab-bar-scroller/index", "default.strings")
-    @js.native
-    val strings: FRAMESELECTOR = js.native
-  }
-  
   @JSImport("@material/tabs/tab-bar-scroller/index", "MDCTabBarScroller")
   @js.native
   open class MDCTabBarScroller protected ()

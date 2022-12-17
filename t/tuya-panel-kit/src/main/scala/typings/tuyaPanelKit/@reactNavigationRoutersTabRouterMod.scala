@@ -16,7 +16,6 @@ import typings.tuyaPanelKit.anon.Type
 import typings.tuyaPanelKit.tuyaPanelKitBooleans.`false`
 import typings.tuyaPanelKit.tuyaPanelKitStrings.JUMP_TO
 import typings.tuyaPanelKit.tuyaPanelKitStrings.none_
-import typings.tuyaPanelKit.tuyaPanelKitStrings.tab
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -152,7 +151,7 @@ object `@reactNavigationRoutersTabRouterMod` {
     /**
       * Type of the router, in this case, it's tab.
       */
-    var `type`: String & tab
+    var `type`: String
   }
   object TabNavigationState {
     
@@ -162,7 +161,7 @@ object `@reactNavigationRoutersTabRouterMod` {
       key: String,
       routeNames: js.Array[Extract[/* keyof ParamList */ String, String]],
       routes: js.Array[NavigationRoute[ParamList, /* keyof ParamList */ String]],
-      `type`: String & tab
+      `type`: String
     ): TabNavigationState[ParamList] = {
       val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], routeNames = routeNames.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], stale = false)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -189,7 +188,7 @@ object `@reactNavigationRoutersTabRouterMod` {
       
       inline def setStale(value: `false`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
       
-      inline def setType(value: String & tab): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

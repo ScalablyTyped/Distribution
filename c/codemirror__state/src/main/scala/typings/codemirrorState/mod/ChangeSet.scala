@@ -9,10 +9,10 @@ A change set represents a group of modifications to a document. It
 stores the document length, and can only be applied to documents
 with exactly that length.
 */
+@JSImport("@codemirror/state", "ChangeSet")
 @js.native
-trait ChangeSet
-  extends StObject
-     with ChangeDesc
+/* private */ open class ChangeSet ()
+  extends ChangeDesc
      with _ChangeSpec {
   
   /**
@@ -90,4 +90,31 @@ trait ChangeSet
     */
   def map(other: ChangeDesc): ChangeSet = js.native
   def map(other: ChangeDesc, before: Boolean): ChangeSet = js.native
+}
+object ChangeSet {
+  
+  @JSImport("@codemirror/state", "ChangeSet")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    Create an empty changeset of the given length.
+    */
+  /* static member */
+  inline def empty(length: Double): ChangeSet = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")(length.asInstanceOf[js.Any]).asInstanceOf[ChangeSet]
+  
+  /**
+    Create a changeset from its JSON representation (as produced by
+    [`toJSON`](https://codemirror.net/6/docs/ref/#state.ChangeSet.toJSON).
+    */
+  /* static member */
+  inline def fromJSON(json: Any): ChangeSet = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[ChangeSet]
+  
+  /**
+    Create a change set for the given changes, for a document of the
+    given length, using `lineSep` as line separator.
+    */
+  /* static member */
+  inline def of(changes: ChangeSpec, length: Double): ChangeSet = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(changes.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ChangeSet]
+  inline def of(changes: ChangeSpec, length: Double, lineSep: String): ChangeSet = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(changes.asInstanceOf[js.Any], length.asInstanceOf[js.Any], lineSep.asInstanceOf[js.Any])).asInstanceOf[ChangeSet]
 }

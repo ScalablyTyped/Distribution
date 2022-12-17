@@ -14,7 +14,7 @@ trait PickImplhiddenPartialPick
   
   var disabled: js.UndefOr[String] = js.undefined
   
-  var hidden: String & js.UndefOr[String]
+  var hidden: String
   
   var inward: js.UndefOr[String] = js.undefined
   
@@ -30,7 +30,7 @@ trait PickImplhiddenPartialPick
 }
 object PickImplhiddenPartialPick {
   
-  inline def apply(hidden: String & js.UndefOr[String]): PickImplhiddenPartialPick = {
+  inline def apply(hidden: String): PickImplhiddenPartialPick = {
     val __obj = js.Dynamic.literal(hidden = hidden.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplhiddenPartialPick]
   }
@@ -45,7 +45,7 @@ object PickImplhiddenPartialPick {
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    inline def setHidden(value: String & js.UndefOr[String]): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     inline def setInward(value: String): Self = StObject.set(x, "inward", value.asInstanceOf[js.Any])
     

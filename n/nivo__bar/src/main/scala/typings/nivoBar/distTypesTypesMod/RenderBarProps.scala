@@ -1,7 +1,7 @@
 package typings.nivoBar.distTypesTypesMod
 
 import typings.nivoBar.anon.Color
-import typings.nivoBar.anon.Data
+import typings.nivoBar.anon.DataValue
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.std.SVGRectElement
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Omit<@nivo/bar.@nivo/bar/dist/types/types.BarItemProps<RawDatum>, 'isInteractive' | 'style' | 'tooltip' | 'isFocusable' | 'ariaLabel' | 'ariaLabelledBy' | 'ariaDescribedBy'> & {  borderColor :string,   labelColor :string} */
 trait RenderBarProps[RawDatum /* <: BarDatum */] extends StObject {
   
-  var bar: ComputedBarDatum[RawDatum] & Data
+  var bar: ComputedBarDatum[RawDatum] & DataValue
   
   var borderColor: String
   
@@ -53,7 +53,7 @@ trait RenderBarProps[RawDatum /* <: BarDatum */] extends StObject {
 object RenderBarProps {
   
   inline def apply[RawDatum /* <: BarDatum */](
-    bar: ComputedBarDatum[RawDatum] & Data,
+    bar: ComputedBarDatum[RawDatum] & DataValue,
     borderColor: String,
     borderRadius: Double,
     borderWidth: Double,
@@ -67,7 +67,7 @@ object RenderBarProps {
   
   extension [Self <: RenderBarProps[?], RawDatum /* <: BarDatum */](x: Self & RenderBarProps[RawDatum]) {
     
-    inline def setBar(value: ComputedBarDatum[RawDatum] & Data): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
+    inline def setBar(value: ComputedBarDatum[RawDatum] & DataValue): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
     
     inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

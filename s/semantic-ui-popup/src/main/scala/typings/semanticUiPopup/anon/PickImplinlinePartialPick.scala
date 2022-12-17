@@ -54,7 +54,7 @@ trait PickImplinlinePartialPick
   
   var html: js.UndefOr[String | JQuery] = js.undefined
   
-  var `inline`: Boolean & js.UndefOr[Boolean]
+  var `inline`: Boolean
   
   var jitter: js.UndefOr[Double] = js.undefined
   
@@ -120,7 +120,7 @@ trait PickImplinlinePartialPick
 }
 object PickImplinlinePartialPick {
   
-  inline def apply(`inline`: Boolean & js.UndefOr[Boolean]): PickImplinlinePartialPick = {
+  inline def apply(`inline`: Boolean): PickImplinlinePartialPick = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplinlinePartialPick]
@@ -188,7 +188,7 @@ object PickImplinlinePartialPick {
     
     inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
     
-    inline def setInline(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+    inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
     
     inline def setJitter(value: Double): Self = StObject.set(x, "jitter", value.asInstanceOf[js.Any])
     

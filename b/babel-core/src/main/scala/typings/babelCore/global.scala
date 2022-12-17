@@ -332,6 +332,23 @@ object global {
       parentPath: NodePath[typings.babelTraverse.mod.Node]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverse")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    inline def traverse_S[S](parent: js.Array[typings.babelTraverse.mod.Node], opts: TraverseOptions[S], scope: Scope, state: S): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverse")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def traverse_S[S](
+      parent: js.Array[typings.babelTraverse.mod.Node],
+      opts: TraverseOptions[S],
+      scope: Scope,
+      state: S,
+      parentPath: NodePath[typings.babelTraverse.mod.Node]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverse")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def traverse_S[S](parent: typings.babelTraverse.mod.Node, opts: TraverseOptions[S], scope: Scope, state: S): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverse")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def traverse_S[S](
+      parent: typings.babelTraverse.mod.Node,
+      opts: TraverseOptions[S],
+      scope: Scope,
+      state: S,
+      parentPath: NodePath[typings.babelTraverse.mod.Node]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverse")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     object types {
       
       @JSGlobal("babel.types")

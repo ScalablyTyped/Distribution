@@ -28,7 +28,7 @@ trait PickImplemptyPartialPickI
   
   var email: js.UndefOr[String] = js.undefined
   
-  var empty: String & js.UndefOr[String]
+  var empty: String
   
   var exactCount: js.UndefOr[String] = js.undefined
   
@@ -64,7 +64,7 @@ trait PickImplemptyPartialPickI
 }
 object PickImplemptyPartialPickI {
   
-  inline def apply(empty: String & js.UndefOr[String]): PickImplemptyPartialPickI = {
+  inline def apply(empty: String): PickImplemptyPartialPickI = {
     val __obj = js.Dynamic.literal(empty = empty.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplemptyPartialPickI]
   }
@@ -107,7 +107,7 @@ object PickImplemptyPartialPickI {
     
     inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    inline def setEmpty(value: String & js.UndefOr[String]): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
+    inline def setEmpty(value: String): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
     
     inline def setExactCount(value: String): Self = StObject.set(x, "exactCount", value.asInstanceOf[js.Any])
     

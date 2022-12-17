@@ -10,7 +10,7 @@ trait PickImplloadedPartialPick
   extends StObject
      with Param {
   
-  var loaded: String & js.UndefOr[String]
+  var loaded: String
   
   var promise: js.UndefOr[String] = js.undefined
   
@@ -18,14 +18,14 @@ trait PickImplloadedPartialPick
 }
 object PickImplloadedPartialPick {
   
-  inline def apply(loaded: String & js.UndefOr[String]): PickImplloadedPartialPick = {
+  inline def apply(loaded: String): PickImplloadedPartialPick = {
     val __obj = js.Dynamic.literal(loaded = loaded.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplloadedPartialPick]
   }
   
   extension [Self <: PickImplloadedPartialPick](x: Self) {
     
-    inline def setLoaded(value: String & js.UndefOr[String]): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+    inline def setLoaded(value: String): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     
     inline def setPromise(value: String): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     

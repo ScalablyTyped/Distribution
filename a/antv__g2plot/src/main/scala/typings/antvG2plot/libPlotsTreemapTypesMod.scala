@@ -3,7 +3,7 @@ package typings.antvG2plot
 import typings.antvG2.libChartLayoutPaddingCalMod.PaddingCalCtor
 import typings.antvG2.libChartViewMod.View
 import typings.antvG2.libInterfaceMod.SyncViewPaddingFn
-import typings.antvG2plot.anon.OmitHierarchyOptionastype
+import typings.antvG2plot.anon.OmitHierarchyOptionastypeIgnoreParentValue
 import typings.antvG2plot.antvG2plotStrings.auto
 import typings.antvG2plot.antvG2plotStrings.canvas
 import typings.antvG2plot.antvG2plotStrings.svg
@@ -69,7 +69,7 @@ object libPlotsTreemapTypesMod {
     /**
       * @title 层级布局
       */
-    val hierarchyConfig: js.UndefOr[OmitHierarchyOptionastype] = js.undefined
+    val hierarchyConfig: js.UndefOr[OmitHierarchyOptionastypeIgnoreParentValue] = js.undefined
     
     var interactions: js.UndefOr[js.Array[Interaction]] = js.undefined
     
@@ -184,7 +184,7 @@ object libPlotsTreemapTypesMod {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setHierarchyConfig(value: OmitHierarchyOptionastype): Self = StObject.set(x, "hierarchyConfig", value.asInstanceOf[js.Any])
+      inline def setHierarchyConfig(value: OmitHierarchyOptionastypeIgnoreParentValue): Self = StObject.set(x, "hierarchyConfig", value.asInstanceOf[js.Any])
       
       inline def setHierarchyConfigUndefined: Self = StObject.set(x, "hierarchyConfig", js.undefined)
       

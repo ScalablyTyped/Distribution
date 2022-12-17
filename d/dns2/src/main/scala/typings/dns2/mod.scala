@@ -1,10 +1,13 @@
 package typings.dns2
 
+import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.Shortcut
 import typings.dns2.anon.Doh
-import typings.dns2.anon.Handle
 import typings.dns2.anon.Id
 import typings.dns2.anon.Tcp
+import typings.dns2.anon.TypeofPacket
+import typings.dns2.anon.Udp
 import typings.node.bufferMod.global.Buffer
 import typings.node.dgramMod.RemoteInfo
 import typings.node.dgramMod.Socket
@@ -25,6 +28,43 @@ object mod {
   @JSImport("dns2", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  trait Packet extends StObject {
+    
+    def toBuffer(): Buffer
+  }
+  object Packet extends Shortcut {
+    
+    inline def apply(toBuffer: () => Buffer): Packet = {
+      val __obj = js.Dynamic.literal(toBuffer = js.Any.fromFunction0(toBuffer))
+      __obj.asInstanceOf[Packet]
+    }
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("dns2", "Packet")
+    @js.native
+    open class ^ ()
+      extends StObject
+         with Packet {
+      
+      /* CompleteClass */
+      override def toBuffer(): Buffer = js.native
+    }
+    
+    @JSImport("dns2", "Packet")
+    @js.native
+    val ^ : TypeofPacket & Instantiable0[Packet] = js.native
+    
+    extension [Self <: Packet](x: Self) {
+      
+      inline def setToBuffer(value: () => Buffer): Self = StObject.set(x, "toBuffer", js.Any.fromFunction0(value))
+    }
+    
+    type _To = TypeofPacket & Instantiable0[Packet]
+    
+    /* This means you don't have to write `^`, but can instead just say `Packet.foo` */
+    override def _to: TypeofPacket & Instantiable0[Packet] = ^
+  }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("dns2", "TCPServer")
@@ -51,7 +91,7 @@ object mod {
   inline def UDPServer_=(x: Instantiable1[/* callback */ js.UndefOr[DnsHandler], UdpDnsServer]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UDPServer")(x.asInstanceOf[js.Any])
   
   /* static member */
-  inline def createServer(options: Handle): DnsServer = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[DnsServer]
+  inline def createServer(options: Doh): DnsServer = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[DnsServer]
   
   /* static member */
   @JSImport("dns2", "createTCPServer")
@@ -206,28 +246,11 @@ object mod {
   @js.native
   trait DnsServer extends EventEmitter {
     
-    def addresses(): Doh = js.native
+    def addresses(): Tcp = js.native
     
     def close(): js.Promise[Unit] = js.native
     
-    def listen(ports: Tcp): js.Promise[Unit] = js.native
-  }
-  
-  trait Packet extends StObject {
-    
-    def toBuffer(): Buffer
-  }
-  object Packet {
-    
-    inline def apply(toBuffer: () => Buffer): Packet = {
-      val __obj = js.Dynamic.literal(toBuffer = js.Any.fromFunction0(toBuffer))
-      __obj.asInstanceOf[Packet]
-    }
-    
-    extension [Self <: Packet](x: Self) {
-      
-      inline def setToBuffer(value: () => Buffer): Self = StObject.set(x, "toBuffer", js.Any.fromFunction0(value))
-    }
+    def listen(ports: Udp): js.Promise[Unit] = js.native
   }
   
   type TcpDnsServer = Server

@@ -7,6 +7,7 @@ import typings.googleCloudSpanner.buildSrcCommonMod.LongRunningCallback
 import typings.googleCloudSpanner.buildSrcCommonMod.NormalCallback
 import typings.googleCloudSpanner.buildSrcCommonMod.RequestCallback
 import typings.googleCloudSpanner.buildSrcCommonMod.ResourceCallback
+import typings.googleCloudSpanner.buildSrcInstanceMod.Instance
 import typings.googleCloudSpanner.googleCloudSpannerStrings.state
 import typings.googleCloudSpanner.mod.EnumKey
 import typings.googleCloudSpanner.mod.RequestConfig
@@ -45,8 +46,11 @@ object buildSrcBackupMod {
     * const copyBackup = instance.copyBackup('my-copy-backup', 'my-source-backup');
     * ```
     */
+  @JSImport("@google-cloud/spanner/build/src/backup", "Backup")
   @js.native
-  trait Backup extends StObject {
+  open class Backup protected () extends StObject {
+    def this(instance: Instance, name: String) = this()
+    def this(instance: Instance, name: String, sourceName: String) = this()
     
     def create(options: CopyBackupOptions): js.Promise[CopyBackupResponse | CreateBackupResponse] = js.native
     def create(options: CopyBackupOptions, callback: CopyBackupCallback | CreateBackupCallback): Unit = js.native
@@ -343,6 +347,33 @@ object buildSrcBackupMod {
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify databaseAdmin.spanner.admin.database.v1.IBackup */ Any
       ] = js.native
     def updateExpireTime(expireTime: ITimestamp, gaxOptions: CallOptions, callback: UpdateExpireTimeCallback): Unit = js.native
+  }
+  object Backup {
+    
+    @JSImport("@google-cloud/spanner/build/src/backup", "Backup")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Format the backup name to include the instance name.
+      *
+      * @private
+      *
+      * @param {string} instanceName The formatted instance name.
+      * @param {string} name The table name.
+      * @returns {string}
+      *
+      * @example
+      * ```
+      * Backup.formatName_(
+      *   'projects/grape-spaceship-123/instances/my-instance',
+      *   'my-backup'
+      * );
+      * // 'projects/grape-spaceship-123/instances/my-instance/backups/my-backup'
+      * ```
+      */
+    /* static member */
+    inline def formatName(instanceName: String, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatName_")(instanceName.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   @js.native

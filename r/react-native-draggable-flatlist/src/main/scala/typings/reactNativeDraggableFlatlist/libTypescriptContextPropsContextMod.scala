@@ -9,7 +9,7 @@ import typings.reactNative.anon.AutoscrollToTopThreshold
 import typings.reactNative.anon.AverageItemLength
 import typings.reactNative.anon.Changed
 import typings.reactNative.anon.DistanceFromEnd
-import typings.reactNative.anon.Length
+import typings.reactNative.anon.Index
 import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
@@ -30,7 +30,6 @@ import typings.reactNative.mod.ViewStyle
 import typings.reactNative.mod.ViewabilityConfigCallbackPair
 import typings.reactNative.mod.ViewabilityConfigCallbackPairs
 import typings.reactNativeDraggableFlatlist.anon.ActiveIndexAnim
-import typings.reactNativeDraggableFlatlist.anon.Index
 import typings.reactNativeDraggableFlatlist.anon.Layout
 import typings.reactNativeDraggableFlatlist.anon.PartialWithSpringConfig
 import typings.reactNativeDraggableFlatlist.libTypescriptTypesMod.DragEndParams
@@ -64,7 +63,6 @@ import typings.reactNativeDraggableFlatlist.reactNativeDraggableFlatlistStrings.
 import typings.reactNativeDraggableFlatlist.reactNativeDraggableFlatlistStrings.yes
 import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.HitSlop
 import typings.reactNativeReanimated.mod.Animated.SharedValue
-import typings.reactNativeReanimated.mod.WithSpringConfig
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -131,7 +129,7 @@ object libTypescriptContextPropsContextMod {
     
     var alwaysBounceVertical: js.UndefOr[Boolean] = js.undefined
     
-    var animationConfig: js.UndefOr[PartialWithSpringConfig] & js.UndefOr[WithSpringConfig]
+    var animationConfig: js.UndefOr[PartialWithSpringConfig] = js.undefined
     
     var automaticallyAdjustContentInsets: js.UndefOr[Boolean] = js.undefined
     
@@ -151,7 +149,7 @@ object libTypescriptContextPropsContextMod {
     
     var centerContent: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[ReactNode] & ReactNode
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var collapsable: js.UndefOr[Boolean] = js.undefined
     
@@ -198,7 +196,7 @@ object libTypescriptContextPropsContextMod {
     var getItemCount: js.UndefOr[js.Function1[/* data */ Any, Double]] = js.undefined
     
     var getItemLayout: js.UndefOr[
-        js.Function2[/* data */ js.UndefOr[js.Array[T] | Null], /* index */ Double, Length]
+        js.Function2[/* data */ js.UndefOr[js.Array[T] | Null], /* index */ Double, Index]
       ] = js.undefined
     
     var hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined
@@ -444,12 +442,11 @@ object libTypescriptContextPropsContextMod {
   object Props {
     
     inline def apply[T](
-      animationConfig: js.UndefOr[PartialWithSpringConfig] & js.UndefOr[WithSpringConfig],
       data: js.Array[T],
       keyExtractor: (T, Double) => String,
       renderItem: /* params */ RenderItemParams[T] => ReactNode
     ): Props[T] = {
-      val __obj = js.Dynamic.literal(animationConfig = animationConfig.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], keyExtractor = js.Any.fromFunction2(keyExtractor), renderItem = js.Any.fromFunction1(renderItem))
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], keyExtractor = js.Any.fromFunction2(keyExtractor), renderItem = js.Any.fromFunction1(renderItem))
       __obj.asInstanceOf[Props[T]]
     }
     
@@ -523,7 +520,9 @@ object libTypescriptContextPropsContextMod {
       
       inline def setAlwaysBounceVerticalUndefined: Self = StObject.set(x, "alwaysBounceVertical", js.undefined)
       
-      inline def setAnimationConfig(value: js.UndefOr[PartialWithSpringConfig] & js.UndefOr[WithSpringConfig]): Self = StObject.set(x, "animationConfig", value.asInstanceOf[js.Any])
+      inline def setAnimationConfig(value: PartialWithSpringConfig): Self = StObject.set(x, "animationConfig", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationConfigUndefined: Self = StObject.set(x, "animationConfig", js.undefined)
       
       inline def setAutomaticallyAdjustContentInsets(value: Boolean): Self = StObject.set(x, "automaticallyAdjustContentInsets", value.asInstanceOf[js.Any])
       
@@ -565,7 +564,7 @@ object libTypescriptContextPropsContextMod {
       
       inline def setCenterContentUndefined: Self = StObject.set(x, "centerContent", js.undefined)
       
-      inline def setChildren(value: js.UndefOr[ReactNode] & ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
@@ -661,7 +660,7 @@ object libTypescriptContextPropsContextMod {
       
       inline def setGetItemCountUndefined: Self = StObject.set(x, "getItemCount", js.undefined)
       
-      inline def setGetItemLayout(value: (/* data */ js.UndefOr[js.Array[T] | Null], /* index */ Double) => Length): Self = StObject.set(x, "getItemLayout", js.Any.fromFunction2(value))
+      inline def setGetItemLayout(value: (/* data */ js.UndefOr[js.Array[T] | Null], /* index */ Double) => Index): Self = StObject.set(x, "getItemLayout", js.Any.fromFunction2(value))
       
       inline def setGetItemLayoutUndefined: Self = StObject.set(x, "getItemLayout", js.undefined)
       
@@ -1069,7 +1068,7 @@ object libTypescriptContextPropsContextMod {
       
       inline def setRenderItem(value: /* params */ RenderItemParams[T] => ReactNode): Self = StObject.set(x, "renderItem", js.Any.fromFunction1(value))
       
-      inline def setRenderPlaceholder(value: /* params */ Index[T] => Element): Self = StObject.set(x, "renderPlaceholder", js.Any.fromFunction1(value))
+      inline def setRenderPlaceholder(value: /* params */ typings.reactNativeDraggableFlatlist.anon.Index[T] => Element): Self = StObject.set(x, "renderPlaceholder", js.Any.fromFunction1(value))
       
       inline def setRenderPlaceholderUndefined: Self = StObject.set(x, "renderPlaceholder", js.undefined)
       

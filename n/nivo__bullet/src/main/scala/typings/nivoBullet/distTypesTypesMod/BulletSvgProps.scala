@@ -32,7 +32,7 @@ trait BulletSvgProps extends StObject {
   
   var data: js.Array[Datum]
   
-  var height: js.UndefOr[Double] & Double
+  var height: js.UndefOr[Double] = js.undefined
   
   var isInteractive: js.UndefOr[Boolean] = js.undefined
   
@@ -98,12 +98,12 @@ trait BulletSvgProps extends StObject {
   
   var tooltip: js.UndefOr[ComponentType[BulletTooltipProps]] = js.undefined
   
-  var width: js.UndefOr[Double] & Double
+  var width: js.UndefOr[Double] = js.undefined
 }
 object BulletSvgProps {
   
-  inline def apply(data: js.Array[Datum], height: js.UndefOr[Double] & Double, width: js.UndefOr[Double] & Double): BulletSvgProps = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+  inline def apply(data: js.Array[Datum]): BulletSvgProps = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[BulletSvgProps]
   }
   
@@ -121,7 +121,9 @@ object BulletSvgProps {
     
     inline def setDataVarargs(value: Datum*): Self = StObject.set(x, "data", js.Array(value*))
     
-    inline def setHeight(value: js.UndefOr[Double] & Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     inline def setIsInteractive(value: Boolean): Self = StObject.set(x, "isInteractive", value.asInstanceOf[js.Any])
     
@@ -261,6 +263,8 @@ object BulletSvgProps {
     
     inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
-    inline def setWidth(value: js.UndefOr[Double] & Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

@@ -4,8 +4,6 @@ import typings.node.AbortSignal
 import typings.node.nodeColonurlMod.URL
 import typings.node.processMod.global.NodeJS.ProcessEnv
 import typings.node.processMod.global.NodeJS.Signals
-import typings.shelljs.shelljsBooleans.`false`
-import typings.shelljs.shelljsBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +20,7 @@ object anon {
       *
       * @default false
       */
-    var async: js.UndefOr[Boolean] & js.UndefOr[`false`]
+    var async: js.UndefOr[Boolean] = js.undefined
     
     var cwd: js.UndefOr[String | URL] = js.undefined
     
@@ -76,14 +74,16 @@ object anon {
   }
   object ExecOptionsasyncfalseunde {
     
-    inline def apply(async: js.UndefOr[Boolean] & js.UndefOr[`false`]): ExecOptionsasyncfalseunde = {
-      val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any])
+    inline def apply(): ExecOptionsasyncfalseunde = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExecOptionsasyncfalseunde]
     }
     
     extension [Self <: ExecOptionsasyncfalseunde](x: Self) {
       
-      inline def setAsync(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
       inline def setCwd(value: String | URL): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
@@ -149,7 +149,7 @@ object anon {
       *
       * @default false
       */
-    var async: js.UndefOr[Boolean] & `true`
+    var async: js.UndefOr[Boolean] = js.undefined
     
     var cwd: js.UndefOr[String | URL] = js.undefined
     
@@ -203,14 +203,16 @@ object anon {
   }
   object ExecOptionsasynctrue {
     
-    inline def apply(async: js.UndefOr[Boolean] & `true`): ExecOptionsasynctrue = {
-      val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any])
+    inline def apply(): ExecOptionsasynctrue = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExecOptionsasynctrue]
     }
     
     extension [Self <: ExecOptionsasynctrue](x: Self) {
       
-      inline def setAsync(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
       inline def setCwd(value: String | URL): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       

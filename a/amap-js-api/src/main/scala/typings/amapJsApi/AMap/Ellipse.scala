@@ -137,9 +137,9 @@ object Ellipse {
     /**
       * 多边形轮廓线的节点坐标数组
       */
-    var path: (js.Array[js.Array[LngLat] | LngLat]) & js.Array[LngLat]
+    var path: js.Array[js.Array[LngLat] | LngLat]
     
-    var radius: Double & (js.Tuple2[Double, Double])
+    var radius: Double
     
     /**
       * 线条颜色
@@ -184,8 +184,8 @@ object Ellipse {
       fillOpacity: Double,
       lineJoin: StrokeLineJoin,
       map: Map,
-      path: (js.Array[js.Array[LngLat] | LngLat]) & js.Array[LngLat],
-      radius: Double & (js.Tuple2[Double, Double]),
+      path: js.Array[js.Array[LngLat] | LngLat],
+      radius: Double,
       strokeColor: String,
       strokeDasharray: js.Array[Double],
       strokeOpacity: Double,
@@ -216,9 +216,11 @@ object Ellipse {
       
       inline def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      inline def setPath(value: (js.Array[js.Array[LngLat] | LngLat]) & js.Array[LngLat]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: js.Array[js.Array[LngLat] | LngLat]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setRadius(value: Double & (js.Tuple2[Double, Double])): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setPathVarargs(value: (js.Array[LngLat] | LngLat)*): Self = StObject.set(x, "path", js.Array(value*))
+      
+      inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
       inline def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
       

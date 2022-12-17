@@ -17,8 +17,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An instance of a {@link Mesh}. A single mesh can be referenced by many mesh instances that can
   * have different transforms and materials.
   */
+@JSImport("playcanvas", "MeshInstance")
 @js.native
-trait MeshInstance extends StObject {
+open class MeshInstance protected () extends StObject {
+  /**
+    * Create a new MeshInstance instance.
+    *
+    * @param {Mesh} mesh - The graphics mesh to instance.
+    * @param {Material} material - The material to use for this mesh instance.
+    * @param {GraphNode} [node] - The graph node defining the transform for this instance. This
+    * parameter is optional when used with {@link RenderComponent} and will use the node the
+    * component is attached to.
+    * @example
+    * // Create a mesh instance pointing to a 1x1x1 'cube' mesh
+    * var mesh = pc.createBox(graphicsDevice);
+    * var material = new pc.StandardMaterial();
+    *
+    * var meshInstance = new pc.MeshInstance(mesh, material);
+    *
+    * var entity = new pc.Entity();
+    * entity.addComponent('render', {
+    *     meshInstances: [meshInstance]
+    * });
+    *
+    * // Add the entity to the scene hierarchy
+    * this.app.scene.root.addChild(entity);
+    */
+  def this(mesh: Mesh, material: Material) = this()
+  def this(mesh: Mesh, material: Material, node: GraphNode) = this()
   
   var _aabb: Any = js.native
   
@@ -351,4 +377,19 @@ trait MeshInstance extends StObject {
     * @type {boolean}
     */
   var visibleThisFrame: Boolean = js.native
+}
+object MeshInstance {
+  
+  @JSImport("playcanvas", "MeshInstance")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("playcanvas", "MeshInstance.lightmapParamNames")
+  @js.native
+  def lightmapParamNames: js.Array[String] = js.native
+  inline def lightmapParamNames_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lightmapParamNames")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  inline def prepareRenderStyleForArray(meshInstances: Any, renderStyle: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_prepareRenderStyleForArray")(meshInstances.asInstanceOf[js.Any], renderStyle.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

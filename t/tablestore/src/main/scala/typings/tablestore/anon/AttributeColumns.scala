@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AttributeColumns extends StObject {
   
-  var attributeColumns: js.Array[DELETE]
+  var attributeColumns: js.Array[DELETEALL]
   
   var condition: typings.tablestore.mod.Condition
   
@@ -25,7 +25,7 @@ trait AttributeColumns extends StObject {
 object AttributeColumns {
   
   inline def apply(
-    attributeColumns: js.Array[DELETE],
+    attributeColumns: js.Array[DELETEALL],
     condition: typings.tablestore.mod.Condition,
     primaryKey: PrimaryKeyInput
   ): AttributeColumns = {
@@ -36,9 +36,9 @@ object AttributeColumns {
   
   extension [Self <: AttributeColumns](x: Self) {
     
-    inline def setAttributeColumns(value: js.Array[DELETE]): Self = StObject.set(x, "attributeColumns", value.asInstanceOf[js.Any])
+    inline def setAttributeColumns(value: js.Array[DELETEALL]): Self = StObject.set(x, "attributeColumns", value.asInstanceOf[js.Any])
     
-    inline def setAttributeColumnsVarargs(value: DELETE*): Self = StObject.set(x, "attributeColumns", js.Array(value*))
+    inline def setAttributeColumnsVarargs(value: DELETEALL*): Self = StObject.set(x, "attributeColumns", js.Array(value*))
     
     inline def setCondition(value: typings.tablestore.mod.Condition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

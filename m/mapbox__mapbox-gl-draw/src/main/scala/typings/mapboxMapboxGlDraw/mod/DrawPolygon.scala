@@ -3,7 +3,6 @@ package typings.mapboxMapboxGlDraw.mod
 import typings.geojson.mod.GeoJSON
 import typings.geojson.mod.Position
 import typings.mapboxMapboxGlDraw.mapboxMapboxGlDrawStrings.Polygon
-import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +27,6 @@ object DrawPolygon {
     coordinates: js.Array[js.Array[Position]],
     getCoordinate: String => Position,
     getCoordinates: () => js.Array[js.Array[Position]],
-    id: NonNullable[js.UndefOr[String | Double]],
     incomingCoords: /* import warning: importer.ImportType#apply Failed type conversion: this['setCoordinates'] */ js.Any,
     isValid: () => Boolean,
     removeCoordinate: String => Unit,
@@ -37,7 +35,7 @@ object DrawPolygon {
     toGeoJSON: () => GeoJSON,
     updateCoordinate: (String, Double, Double) => Unit
   ): DrawPolygon = {
-    val __obj = js.Dynamic.literal(addCoordinate = js.Any.fromFunction3(addCoordinate), changed = js.Any.fromFunction0(changed), coordinates = coordinates.asInstanceOf[js.Any], getCoordinate = js.Any.fromFunction1(getCoordinate), getCoordinates = js.Any.fromFunction0(getCoordinates), id = id.asInstanceOf[js.Any], incomingCoords = incomingCoords.asInstanceOf[js.Any], isValid = js.Any.fromFunction0(isValid), removeCoordinate = js.Any.fromFunction1(removeCoordinate), setCoordinates = js.Any.fromFunction1(setCoordinates), setProperty = js.Any.fromFunction2(setProperty), toGeoJSON = js.Any.fromFunction0(toGeoJSON), updateCoordinate = js.Any.fromFunction3(updateCoordinate), properties = null)
+    val __obj = js.Dynamic.literal(addCoordinate = js.Any.fromFunction3(addCoordinate), changed = js.Any.fromFunction0(changed), coordinates = coordinates.asInstanceOf[js.Any], getCoordinate = js.Any.fromFunction1(getCoordinate), getCoordinates = js.Any.fromFunction0(getCoordinates), incomingCoords = incomingCoords.asInstanceOf[js.Any], isValid = js.Any.fromFunction0(isValid), removeCoordinate = js.Any.fromFunction1(removeCoordinate), setCoordinates = js.Any.fromFunction1(setCoordinates), setProperty = js.Any.fromFunction2(setProperty), toGeoJSON = js.Any.fromFunction0(toGeoJSON), updateCoordinate = js.Any.fromFunction3(updateCoordinate), properties = null)
     __obj.updateDynamic("type")("Polygon")
     __obj.asInstanceOf[DrawPolygon]
   }

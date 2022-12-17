@@ -12,11 +12,11 @@ trait PickImplunspecifiedRulePa
   
   var unspecifiedField: js.UndefOr[String] = js.undefined
   
-  var unspecifiedRule: String & js.UndefOr[String]
+  var unspecifiedRule: String
 }
 object PickImplunspecifiedRulePa {
   
-  inline def apply(unspecifiedRule: String & js.UndefOr[String]): PickImplunspecifiedRulePa = {
+  inline def apply(unspecifiedRule: String): PickImplunspecifiedRulePa = {
     val __obj = js.Dynamic.literal(unspecifiedRule = unspecifiedRule.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplunspecifiedRulePa]
   }
@@ -27,6 +27,6 @@ object PickImplunspecifiedRulePa {
     
     inline def setUnspecifiedFieldUndefined: Self = StObject.set(x, "unspecifiedField", js.undefined)
     
-    inline def setUnspecifiedRule(value: String & js.UndefOr[String]): Self = StObject.set(x, "unspecifiedRule", value.asInstanceOf[js.Any])
+    inline def setUnspecifiedRule(value: String): Self = StObject.set(x, "unspecifiedRule", value.asInstanceOf[js.Any])
   }
 }

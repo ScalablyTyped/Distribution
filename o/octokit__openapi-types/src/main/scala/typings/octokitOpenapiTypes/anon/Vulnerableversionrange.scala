@@ -11,7 +11,7 @@ trait Vulnerableversionrange extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['dependabot-alert-package'] */ js.Any
   ] = js.undefined
   
-  var first_patched_version: js.UndefOr[`2`] = js.undefined
+  var first_patched_version: js.UndefOr[`390`] = js.undefined
   
   var severity: js.UndefOr[String] = js.undefined
   
@@ -26,7 +26,7 @@ object Vulnerableversionrange {
   
   extension [Self <: Vulnerableversionrange](x: Self) {
     
-    inline def setFirst_patched_version(value: `2`): Self = StObject.set(x, "first_patched_version", value.asInstanceOf[js.Any])
+    inline def setFirst_patched_version(value: `390`): Self = StObject.set(x, "first_patched_version", value.asInstanceOf[js.Any])
     
     inline def setFirst_patched_versionUndefined: Self = StObject.set(x, "first_patched_version", js.undefined)
     

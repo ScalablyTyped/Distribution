@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ViewOffset extends StObject {
   
-  var animated: js.UndefOr[Boolean] = js.undefined
+  var animated: js.UndefOr[Boolean | Null] = js.undefined
   
   var index: Double
   
@@ -24,6 +24,8 @@ object ViewOffset {
   extension [Self <: ViewOffset](x: Self) {
     
     inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
+    
+    inline def setAnimatedNull: Self = StObject.set(x, "animated", null)
     
     inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
     

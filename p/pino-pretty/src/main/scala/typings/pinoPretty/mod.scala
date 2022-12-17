@@ -31,20 +31,14 @@ object mod {
     val ^ : js.Any = js.native
   }
   
-  inline def colorizerFactory(): Call = ^.asInstanceOf[js.Dynamic].applyDynamic("colorizerFactory")().asInstanceOf[Call]
-  inline def colorizerFactory(useColors: Boolean): Call = ^.asInstanceOf[js.Dynamic].applyDynamic("colorizerFactory")(useColors.asInstanceOf[js.Any]).asInstanceOf[Call]
-  inline def colorizerFactory(useColors: Boolean, customColors: js.Array[js.Tuple2[Double, String]]): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("colorizerFactory")(useColors.asInstanceOf[js.Any], customColors.asInstanceOf[js.Any])).asInstanceOf[Call]
-  inline def colorizerFactory(useColors: Boolean, customColors: js.Array[js.Tuple2[Double, String]], useOnlyCustomProps: Boolean): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("colorizerFactory")(useColors.asInstanceOf[js.Any], customColors.asInstanceOf[js.Any], useOnlyCustomProps.asInstanceOf[js.Any])).asInstanceOf[Call]
-  inline def colorizerFactory(useColors: Boolean, customColors: Unit, useOnlyCustomProps: Boolean): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("colorizerFactory")(useColors.asInstanceOf[js.Any], customColors.asInstanceOf[js.Any], useOnlyCustomProps.asInstanceOf[js.Any])).asInstanceOf[Call]
-  inline def colorizerFactory(useColors: Unit, customColors: js.Array[js.Tuple2[Double, String]]): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("colorizerFactory")(useColors.asInstanceOf[js.Any], customColors.asInstanceOf[js.Any])).asInstanceOf[Call]
-  inline def colorizerFactory(useColors: Unit, customColors: js.Array[js.Tuple2[Double, String]], useOnlyCustomProps: Boolean): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("colorizerFactory")(useColors.asInstanceOf[js.Any], customColors.asInstanceOf[js.Any], useOnlyCustomProps.asInstanceOf[js.Any])).asInstanceOf[Call]
-  inline def colorizerFactory(useColors: Unit, customColors: Unit, useOnlyCustomProps: Boolean): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("colorizerFactory")(useColors.asInstanceOf[js.Any], customColors.asInstanceOf[js.Any], useOnlyCustomProps.asInstanceOf[js.Any])).asInstanceOf[Call]
-  
-  inline def prettyFactory(options: PrettyOptions): js.Function1[/* inputData */ Any, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyFactory")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* inputData */ Any, String]]
-  
-  type LogDescriptor = Record[String, Any]
-  
   object PinoPretty {
+    
+    inline def apply(): PrettyStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[PrettyStream]
+    inline def apply(options: typings.pinoPretty.mod.PrettyOptions): PrettyStream = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[PrettyStream]
+    
+    @JSImport("pino-pretty", "PinoPretty")
+    @js.native
+    val ^ : js.Any = js.native
     
     type ColorizerFactory = js.Function3[
         /* useColors */ js.UndefOr[Boolean], 
@@ -69,6 +63,19 @@ object mod {
       extends Transform
          with OnUnknown
   }
+  
+  inline def colorizerFactory(): Call = ^.asInstanceOf[js.Dynamic].applyDynamic("colorizerFactory")().asInstanceOf[Call]
+  inline def colorizerFactory(useColors: Boolean): Call = ^.asInstanceOf[js.Dynamic].applyDynamic("colorizerFactory")(useColors.asInstanceOf[js.Any]).asInstanceOf[Call]
+  inline def colorizerFactory(useColors: Boolean, customColors: js.Array[js.Tuple2[Double, String]]): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("colorizerFactory")(useColors.asInstanceOf[js.Any], customColors.asInstanceOf[js.Any])).asInstanceOf[Call]
+  inline def colorizerFactory(useColors: Boolean, customColors: js.Array[js.Tuple2[Double, String]], useOnlyCustomProps: Boolean): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("colorizerFactory")(useColors.asInstanceOf[js.Any], customColors.asInstanceOf[js.Any], useOnlyCustomProps.asInstanceOf[js.Any])).asInstanceOf[Call]
+  inline def colorizerFactory(useColors: Boolean, customColors: Unit, useOnlyCustomProps: Boolean): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("colorizerFactory")(useColors.asInstanceOf[js.Any], customColors.asInstanceOf[js.Any], useOnlyCustomProps.asInstanceOf[js.Any])).asInstanceOf[Call]
+  inline def colorizerFactory(useColors: Unit, customColors: js.Array[js.Tuple2[Double, String]]): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("colorizerFactory")(useColors.asInstanceOf[js.Any], customColors.asInstanceOf[js.Any])).asInstanceOf[Call]
+  inline def colorizerFactory(useColors: Unit, customColors: js.Array[js.Tuple2[Double, String]], useOnlyCustomProps: Boolean): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("colorizerFactory")(useColors.asInstanceOf[js.Any], customColors.asInstanceOf[js.Any], useOnlyCustomProps.asInstanceOf[js.Any])).asInstanceOf[Call]
+  inline def colorizerFactory(useColors: Unit, customColors: Unit, useOnlyCustomProps: Boolean): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("colorizerFactory")(useColors.asInstanceOf[js.Any], customColors.asInstanceOf[js.Any], useOnlyCustomProps.asInstanceOf[js.Any])).asInstanceOf[Call]
+  
+  inline def prettyFactory(options: PrettyOptions): js.Function1[/* inputData */ Any, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyFactory")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* inputData */ Any, String]]
+  
+  type LogDescriptor = Record[String, Any]
   
   trait PrettyOptions extends StObject {
     

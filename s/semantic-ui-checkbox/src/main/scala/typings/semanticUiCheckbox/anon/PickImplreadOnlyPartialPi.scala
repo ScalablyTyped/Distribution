@@ -16,11 +16,11 @@ trait PickImplreadOnlyPartialPi
   
   var radio: js.UndefOr[String] = js.undefined
   
-  var readOnly: String & js.UndefOr[String]
+  var readOnly: String
 }
 object PickImplreadOnlyPartialPi {
   
-  inline def apply(readOnly: String & js.UndefOr[String]): PickImplreadOnlyPartialPi = {
+  inline def apply(readOnly: String): PickImplreadOnlyPartialPi = {
     val __obj = js.Dynamic.literal(readOnly = readOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplreadOnlyPartialPi]
   }
@@ -39,6 +39,6 @@ object PickImplreadOnlyPartialPi {
     
     inline def setRadioUndefined: Self = StObject.set(x, "radio", js.undefined)
     
-    inline def setReadOnly(value: String & js.UndefOr[String]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: String): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
   }
 }

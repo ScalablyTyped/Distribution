@@ -53,7 +53,7 @@ trait PickImpldebugPartialPickI
   
   var dataType: js.UndefOr[xml | json | jsonp | script | html | text] = js.undefined
   
-  var debug: Boolean & js.UndefOr[Boolean]
+  var debug: Boolean
   
   var defaultData: js.UndefOr[Boolean] = js.undefined
   
@@ -147,7 +147,7 @@ trait PickImpldebugPartialPickI
 }
 object PickImpldebugPartialPickI {
   
-  inline def apply(debug: Boolean & js.UndefOr[Boolean]): PickImpldebugPartialPickI = {
+  inline def apply(debug: Boolean): PickImpldebugPartialPickI = {
     val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldebugPartialPickI]
   }
@@ -186,7 +186,7 @@ object PickImpldebugPartialPickI {
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDebug(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     inline def setDefaultData(value: Boolean): Self = StObject.set(x, "defaultData", value.asInstanceOf[js.Any])
     

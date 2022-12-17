@@ -5,7 +5,7 @@ import typings.interactjsTypes.actionsDropPluginMod.DropState
 import typings.interactjsTypes.anon.Corrected
 import typings.interactjsTypes.anon.CurEventTarget
 import typings.interactjsTypes.anon.Distance
-import typings.interactjsTypes.anon.Event
+import typings.interactjsTypes.anon.EventInteraction
 import typings.interactjsTypes.anon.EventTarget
 import typings.interactjsTypes.anon.FnCall
 import typings.interactjsTypes.anon.IEvent
@@ -23,7 +23,6 @@ import typings.interactjsTypes.anon.PointerArgPropstypedown
 import typings.interactjsTypes.anon.PointerArgPropstypemovedx
 import typings.interactjsTypes.anon.PointerArgPropstypeupcurE
 import typings.interactjsTypes.anon.PointerEvent
-import typings.interactjsTypes.anon.PointerIndex
 import typings.interactjsTypes.anon.ScopeFire
 import typings.interactjsTypes.anon.SearchDetails
 import typings.interactjsTypes.anon.Target
@@ -104,6 +103,7 @@ import typings.interactjsTypes.interactjsTypesStrings.start
 import typings.interactjsTypes.interactjsTypesStrings.x
 import typings.interactjsTypes.interactjsTypesStrings.xy
 import typings.interactjsTypes.interactjsTypesStrings.y
+import typings.std.Event
 import typings.std.Omit
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
@@ -274,7 +274,7 @@ object coreInteractionMod {
     @JSName("_scopeFire")
     def _scopeFire_interactionsbeforeactionstart(name: `interactionsColonbefore-action-start`, arg: OmitDoAnyPhaseArgiEvent): Unit | `false` = js.native
     @JSName("_scopeFire")
-    def _scopeFire_interactionsblur(name: interactionsColonblur, arg: Event): Unit | `false` = js.native
+    def _scopeFire_interactionsblur(name: interactionsColonblur, arg: EventInteraction): Unit | `false` = js.native
     @JSName("_scopeFire")
     def _scopeFire_interactionsdestroy(name: interactionsColondestroy, arg: typings.interactjsTypes.anon.Interaction): Unit | `false` = js.native
     @JSName("_scopeFire")
@@ -325,7 +325,7 @@ object coreInteractionMod {
       */
     def doMove(): Any = js.native
     
-    def documentBlur(event: typings.std.Event): Unit = js.native
+    def documentBlur(event: Event): Unit = js.native
     
     var downEvent: PointerEventType | Null = js.native
     
@@ -502,10 +502,38 @@ object coreInteractionMod {
   @js.native
   object ProxyMethods extends StObject {
     
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[ProxyMethods & String] = js.native
+    
     @js.native
-    sealed trait offsetBy
+    sealed trait end
       extends StObject
          with ProxyMethods
+    /* "" */ val end: typings.interactjsTypes.coreInteractionMod.ProxyMethods.end & String = js.native
+    
+    @js.native
+    sealed trait interacting
+      extends StObject
+         with ProxyMethods
+    /* "" */ val interacting: typings.interactjsTypes.coreInteractionMod.ProxyMethods.interacting & String = js.native
+    
+    @js.native
+    sealed trait move
+      extends StObject
+         with ProxyMethods
+    /* "" */ val move: typings.interactjsTypes.coreInteractionMod.ProxyMethods.move & String = js.native
+    
+    @js.native
+    sealed trait start
+      extends StObject
+         with ProxyMethods
+    /* "" */ val start: typings.interactjsTypes.coreInteractionMod.ProxyMethods.start & String = js.native
+    
+    @js.native
+    sealed trait stop
+      extends StObject
+         with ProxyMethods
+    /* "" */ val stop: typings.interactjsTypes.coreInteractionMod.ProxyMethods.stop & String = js.native
   }
   
   @js.native
@@ -607,7 +635,7 @@ object coreInteractionMod {
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof _ProxyValues * / any */ String
   ]
   
-  type PointerArgProps[T /* <: js.Object */] = PointerIndex & T
+  type PointerArgProps[T /* <: js.Object */] = typings.interactjsTypes.anon.Event & T
   
   /* augmented module */
   object interactjsCoreScopeAugmentingMod {
@@ -642,7 +670,7 @@ object coreInteractionMod {
       var `interactionsColonbefore-action-start`: OmitDoAnyPhaseArgiEvent
       
       @JSName("interactions:blur")
-      var interactionsColonblur: Event
+      var interactionsColonblur: EventInteraction
       
       @JSName("interactions:cancel")
       var interactionsColoncancel: PointerArgPropstypeupcurE & CurEventTarget
@@ -680,7 +708,7 @@ object coreInteractionMod {
         `interactionsColonbefore-action-end`: OmitDoAnyPhaseArgiEvent,
         `interactionsColonbefore-action-move`: OmitDoAnyPhaseArgiEvent,
         `interactionsColonbefore-action-start`: OmitDoAnyPhaseArgiEvent,
-        interactionsColonblur: Event,
+        interactionsColonblur: EventInteraction,
         interactionsColoncancel: PointerArgPropstypeupcurE & CurEventTarget,
         interactionsColondown: PointerArgPropstypedown,
         interactionsColonmove: PointerArgPropstypemovedx,
@@ -732,7 +760,7 @@ object coreInteractionMod {
         
         inline def `setInteractionsColonbefore-action-start`(value: OmitDoAnyPhaseArgiEvent): Self = StObject.set(x, "interactions:before-action-start", value.asInstanceOf[js.Any])
         
-        inline def setInteractionsColonblur(value: Event): Self = StObject.set(x, "interactions:blur", value.asInstanceOf[js.Any])
+        inline def setInteractionsColonblur(value: EventInteraction): Self = StObject.set(x, "interactions:blur", value.asInstanceOf[js.Any])
         
         inline def setInteractionsColoncancel(value: PointerArgPropstypeupcurE & CurEventTarget): Self = StObject.set(x, "interactions:cancel", value.asInstanceOf[js.Any])
         

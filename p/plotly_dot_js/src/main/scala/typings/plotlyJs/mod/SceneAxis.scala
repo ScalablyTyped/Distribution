@@ -1,6 +1,6 @@
 package typings.plotlyJs.mod
 
-import typings.plotlyJs.anon.PartialDataTitle
+import typings.plotlyJs.anon.PartialDataTitleFont
 import typings.plotlyJs.anon.PartialFont
 import typings.plotlyJs.anon.PartialTickFormatStop
 import typings.plotlyJs.plotlyJsBooleans.`false`
@@ -121,7 +121,7 @@ object SceneAxis {
     ticktext: js.Array[String],
     tickvals: js.Array[Any],
     tickwidth: Double,
-    title: String | PartialDataTitle,
+    title: String | PartialDataTitleFont,
     titlefont: PartialFont,
     `type`: AxisType,
     visible: Boolean,

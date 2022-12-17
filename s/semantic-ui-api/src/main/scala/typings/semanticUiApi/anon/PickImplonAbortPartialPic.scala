@@ -91,9 +91,7 @@ trait PickImplonAbortPartialPic
   
   def onAbort(errorMessage: String, element: JQuery, xhr: jqXHR[Any]): Unit
   @JSName("onAbort")
-  var onAbort_Original: (js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]) & (js.UndefOr[
-    js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]
-  ])
+  var onAbort_Original: js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]
   
   var onComplete: js.UndefOr[
     js.Function3[/* response */ Any, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]
@@ -149,12 +147,8 @@ trait PickImplonAbortPartialPic
 }
 object PickImplonAbortPartialPic {
   
-  inline def apply(
-    onAbort: (js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]) & (js.UndefOr[
-      js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]
-    ])
-  ): PickImplonAbortPartialPic = {
-    val __obj = js.Dynamic.literal(onAbort = onAbort.asInstanceOf[js.Any])
+  inline def apply(onAbort: (/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[Any]) => Unit): PickImplonAbortPartialPic = {
+    val __obj = js.Dynamic.literal(onAbort = js.Any.fromFunction3(onAbort))
     __obj.asInstanceOf[PickImplonAbortPartialPic]
   }
   
@@ -258,11 +252,7 @@ object PickImplonAbortPartialPic {
     
     inline def setOn(value: String): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     
-    inline def setOnAbort(
-      value: (js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]) & (js.UndefOr[
-          js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[Any], Unit]
-        ])
-    ): Self = StObject.set(x, "onAbort", value.asInstanceOf[js.Any])
+    inline def setOnAbort(value: (/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[Any]) => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction3(value))
     
     inline def setOnComplete(value: (/* response */ Any, /* element */ JQuery, /* xhr */ jqXHR[Any]) => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction3(value))
     

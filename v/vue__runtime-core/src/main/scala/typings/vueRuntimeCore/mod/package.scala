@@ -25,7 +25,6 @@ import typings.vueReactivity.mod.UnwrapNestedRefs
 import typings.vueReactivity.mod.UnwrapRef
 import typings.vueReactivity.mod.WritableComputedOptions
 import typings.vueReactivity.mod.WritableComputedRef
-import typings.vueRuntimeCore.anon.Attrs
 import typings.vueRuntimeCore.anon.Default
 import typings.vueRuntimeCore.anon.ElementvnodeVNodeRenderer
 import typings.vueRuntimeCore.anon.From
@@ -39,6 +38,7 @@ import typings.vueRuntimeCore.anon.Iterator
 import typings.vueRuntimeCore.anon.PropOptionsanyanyshouldCa
 import typings.vueRuntimeCore.anon.ReadonlyMultiWatchSources
 import typings.vueRuntimeCore.anon.ShadowRootvnodeVNodeRende
+import typings.vueRuntimeCore.anon._empty
 import typings.vueRuntimeCore.mod.^
 import typings.vueRuntimeCore.vueRuntimeCoreBooleans.`false`
 import typings.vueRuntimeCore.vueRuntimeCoreBooleans.`true`
@@ -1221,7 +1221,7 @@ type ComponentProvideOptions = ObjectProvideOptions | js.Function
 type ComponentPublicInstance[P, // props type extracted from props option
 B, // raw bindings returned from setup()
 D, // return from data()
-C /* <: ComputedOptions */, M /* <: MethodOptions */, E /* <: EmitsOptions */, PublicProps, Defaults, MakeDefaultsOptional /* <: Boolean */, Options, I /* <: ComponentInjectOptions */] = (Attrs[D, MakeDefaultsOptional, Defaults, P, PublicProps, E, Options]) & P & ShallowUnwrapRef[B] & UnwrapNestedRefs[D] & ExtractComputedReturns[C] & M & ComponentCustomProperties & InjectToObject[I]
+C /* <: ComputedOptions */, M /* <: MethodOptions */, E /* <: EmitsOptions */, PublicProps, Defaults, MakeDefaultsOptional /* <: Boolean */, Options, I /* <: ComponentInjectOptions */] = (_empty[D, MakeDefaultsOptional, Defaults, P, PublicProps, E, Options]) & P & ShallowUnwrapRef[B] & UnwrapNestedRefs[D] & ExtractComputedReturns[C] & M & ComponentCustomProperties & InjectToObject[I]
 
 type ComponentWatchOptionItem = WatchOptionItem | js.Array[WatchOptionItem]
 

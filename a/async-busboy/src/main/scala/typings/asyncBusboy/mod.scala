@@ -64,14 +64,8 @@ object mod {
   }
   object OnFileOptions {
     
-    inline def apply(
-      onFile: NonNullable[
-          js.UndefOr[
-            js.Function3[/* name */ String, /* stream */ Readable, /* info */ FileInfo, Unit]
-          ]
-        ]
-    ): OnFileOptions = {
-      val __obj = js.Dynamic.literal(onFile = onFile.asInstanceOf[js.Any])
+    inline def apply(): OnFileOptions = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OnFileOptions]
     }
     
@@ -101,13 +95,9 @@ object mod {
       
       inline def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
       
-      inline def setOnFile(
-        value: NonNullable[
-              js.UndefOr[
-                js.Function3[/* name */ String, /* stream */ Readable, /* info */ FileInfo, Unit]
-              ]
-            ]
-      ): Self = StObject.set(x, "onFile", value.asInstanceOf[js.Any])
+      inline def setOnFile(value: (/* name */ String, /* stream */ Readable, /* info */ FileInfo) => Unit): Self = StObject.set(x, "onFile", js.Any.fromFunction3(value))
+      
+      inline def setOnFileUndefined: Self = StObject.set(x, "onFile", js.undefined)
       
       inline def setPreservePath(value: Boolean): Self = StObject.set(x, "preservePath", value.asInstanceOf[js.Any])
       

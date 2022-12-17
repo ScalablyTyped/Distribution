@@ -2,7 +2,7 @@ package typings.reactNativeSvg
 
 import typings.reactNative.mod.ImageSourcePropType
 import typings.reactNative.mod.ImageURISource
-import typings.reactNativeSvg.anon.PreserveAspectRatio
+import typings.reactNativeSvg.anon.Width
 import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.ClipProps
 import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.CommonMaskProps
 import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.NativeProps
@@ -27,8 +27,8 @@ object libTypescriptElementsImageMod {
     
     @JSImport("react-native-svg/lib/typescript/elements/Image", "default.defaultProps")
     @js.native
-    def defaultProps: PreserveAspectRatio = js.native
-    inline def defaultProps_=(x: PreserveAspectRatio): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: Width = js.native
+    inline def defaultProps_=(x: Width): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("react-native-svg/lib/typescript/elements/Image", "default.displayName")
     @js.native

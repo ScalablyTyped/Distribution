@@ -1,6 +1,6 @@
 package typings.checCommerceJs
 
-import typings.checCommerceJs.anon.CountryIpaddress
+import typings.checCommerceJs.anon.Postalzipcode
 import typings.checCommerceJs.typesOrderTaxLineMod.OrderTaxLine
 import typings.checCommerceJs.typesPriceMod.Price
 import org.scalablytyped.runtime.StObject
@@ -21,7 +21,7 @@ object typesOrderTaxMod {
     
     var provider_type: js.UndefOr[String] = js.undefined
     
-    var zone: CountryIpaddress
+    var zone: Postalzipcode
   }
   object OrderTax {
     
@@ -30,7 +30,7 @@ object typesOrderTaxMod {
       breakdown: js.Array[OrderTaxLine],
       included_in_price: Boolean,
       provider: String,
-      zone: CountryIpaddress
+      zone: Postalzipcode
     ): OrderTax = {
       val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], breakdown = breakdown.asInstanceOf[js.Any], included_in_price = included_in_price.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], zone = zone.asInstanceOf[js.Any])
       __obj.asInstanceOf[OrderTax]
@@ -52,7 +52,7 @@ object typesOrderTaxMod {
       
       inline def setProvider_typeUndefined: Self = StObject.set(x, "provider_type", js.undefined)
       
-      inline def setZone(value: CountryIpaddress): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+      inline def setZone(value: Postalzipcode): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     }
   }
 }

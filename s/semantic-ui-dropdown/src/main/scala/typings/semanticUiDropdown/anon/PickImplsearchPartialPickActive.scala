@@ -38,7 +38,7 @@ trait PickImplsearchPartialPickActive
   
   var placeholder: js.UndefOr[String] = js.undefined
   
-  var search: String & js.UndefOr[String]
+  var search: String
   
   var selected: js.UndefOr[String] = js.undefined
   
@@ -50,7 +50,7 @@ trait PickImplsearchPartialPickActive
 }
 object PickImplsearchPartialPickActive {
   
-  inline def apply(search: String & js.UndefOr[String]): PickImplsearchPartialPickActive = {
+  inline def apply(search: String): PickImplsearchPartialPickActive = {
     val __obj = js.Dynamic.literal(search = search.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplsearchPartialPickActive]
   }
@@ -113,7 +113,7 @@ object PickImplsearchPartialPickActive {
     
     inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
-    inline def setSearch(value: String & js.UndefOr[String]): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
     inline def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     

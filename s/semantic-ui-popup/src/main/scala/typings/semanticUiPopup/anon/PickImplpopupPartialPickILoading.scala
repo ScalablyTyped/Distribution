@@ -12,7 +12,7 @@ trait PickImplpopupPartialPickILoading
   
   var loading: js.UndefOr[String] = js.undefined
   
-  var popup: String & js.UndefOr[String]
+  var popup: String
   
   var popupVisible: js.UndefOr[String] = js.undefined
   
@@ -22,7 +22,7 @@ trait PickImplpopupPartialPickILoading
 }
 object PickImplpopupPartialPickILoading {
   
-  inline def apply(popup: String & js.UndefOr[String]): PickImplpopupPartialPickILoading = {
+  inline def apply(popup: String): PickImplpopupPartialPickILoading = {
     val __obj = js.Dynamic.literal(popup = popup.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplpopupPartialPickILoading]
   }
@@ -33,7 +33,7 @@ object PickImplpopupPartialPickILoading {
     
     inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
     
-    inline def setPopup(value: String & js.UndefOr[String]): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
+    inline def setPopup(value: String): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
     
     inline def setPopupVisible(value: String): Self = StObject.set(x, "popupVisible", value.asInstanceOf[js.Any])
     

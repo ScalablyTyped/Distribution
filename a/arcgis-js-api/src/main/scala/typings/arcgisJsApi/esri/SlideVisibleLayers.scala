@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.HashMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,12 +24,8 @@ trait SlideVisibleLayers
 }
 object SlideVisibleLayers {
   
-  inline def apply(
-    id: String,
-    set: (js.UndefOr[js.Function2[/* propertyName */ String, /* value */ Any, SlideVisibleLayers]]) & (js.UndefOr[js.Function1[/* props */ HashMap[Any], SlideVisibleLayers]]),
-    sublayerIds: js.Array[Double]
-  ): SlideVisibleLayers = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], set = set.asInstanceOf[js.Any], sublayerIds = sublayerIds.asInstanceOf[js.Any])
+  inline def apply(id: String, sublayerIds: js.Array[Double]): SlideVisibleLayers = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], sublayerIds = sublayerIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlideVisibleLayers]
   }
   

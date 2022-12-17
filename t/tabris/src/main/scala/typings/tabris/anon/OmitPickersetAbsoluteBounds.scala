@@ -334,7 +334,7 @@ trait OmitPickersetAbsoluteBounds extends StObject {
       typings.tabris.global.tabris.widgets.Picker, 
       set | typings.tabris.tabrisStrings.jsxAttributes
     ]
-  ]) & PartialPickPickeritemText & `3`
+  ]) & PartialPickPickeritemText & Children
   
   var layoutData: LayoutDataValue
   
@@ -599,7 +599,7 @@ object OmitPickersetAbsoluteBounds {
     jsxAttributes: (JSXAttributes[
       typings.tabris.global.tabris.widgets.Picker, 
       Omit[typings.tabris.global.tabris.widgets.Picker, set | jsxAttributes]
-    ]) & PartialPickPickeritemText & `3`,
+    ]) & PartialPickPickeritemText & Children,
     layoutData: LayoutDataValue,
     left: ConstraintValue,
     message: String,
@@ -790,7 +790,7 @@ object OmitPickersetAbsoluteBounds {
       value: (JSXAttributes[
           typings.tabris.global.tabris.widgets.Picker, 
           Omit[typings.tabris.global.tabris.widgets.Picker, set | jsxAttributes]
-        ]) & PartialPickPickeritemText & `3`
+        ]) & PartialPickPickeritemText & Children
     ): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     
     inline def setLayoutData(value: LayoutDataValue): Self = StObject.set(x, "layoutData", value.asInstanceOf[js.Any])

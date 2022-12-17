@@ -6,23 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Labels extends StObject {
   
-  var labels: js.Array[Id]
-  
-  var total_count: Double
+  /** @description The names of the custom labels to add to the runner. */
+  var labels: js.Array[String]
 }
 object Labels {
   
-  inline def apply(labels: js.Array[Id], total_count: Double): Labels = {
-    val __obj = js.Dynamic.literal(labels = labels.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
+  inline def apply(labels: js.Array[String]): Labels = {
+    val __obj = js.Dynamic.literal(labels = labels.asInstanceOf[js.Any])
     __obj.asInstanceOf[Labels]
   }
   
   extension [Self <: Labels](x: Self) {
     
-    inline def setLabels(value: js.Array[Id]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: js.Array[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    inline def setLabelsVarargs(value: Id*): Self = StObject.set(x, "labels", js.Array(value*))
-    
-    inline def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
+    inline def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value*))
   }
 }

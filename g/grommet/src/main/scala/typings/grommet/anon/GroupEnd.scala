@@ -7,21 +7,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GroupEnd extends StObject {
   
-  var body: js.UndefOr[`10`] = js.undefined
+  var body: js.UndefOr[`8`] = js.undefined
   
   var container: js.UndefOr[BoxProps] = js.undefined
   
-  var groupEnd: js.UndefOr[`19`] = js.undefined
+  var groupEnd: js.UndefOr[`16`] = js.undefined
   
   var groupHeader: js.UndefOr[Fill] = js.undefined
   
-  var header: js.UndefOr[Units] = js.undefined
+  var header: js.UndefOr[Font] = js.undefined
   
   var icons: js.UndefOr[Ascending] = js.undefined
   
   var pinned: js.UndefOr[Header] = js.undefined
   
-  var primary: js.UndefOr[`22`] = js.undefined
+  var primary: js.UndefOr[`19`] = js.undefined
   
   var resize: js.UndefOr[BorderHover] = js.undefined
 }
@@ -34,7 +34,7 @@ object GroupEnd {
   
   extension [Self <: GroupEnd](x: Self) {
     
-    inline def setBody(value: `10`): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: `8`): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
@@ -42,7 +42,7 @@ object GroupEnd {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setGroupEnd(value: `19`): Self = StObject.set(x, "groupEnd", value.asInstanceOf[js.Any])
+    inline def setGroupEnd(value: `16`): Self = StObject.set(x, "groupEnd", value.asInstanceOf[js.Any])
     
     inline def setGroupEndUndefined: Self = StObject.set(x, "groupEnd", js.undefined)
     
@@ -50,7 +50,7 @@ object GroupEnd {
     
     inline def setGroupHeaderUndefined: Self = StObject.set(x, "groupHeader", js.undefined)
     
-    inline def setHeader(value: Units): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: Font): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
@@ -62,7 +62,7 @@ object GroupEnd {
     
     inline def setPinnedUndefined: Self = StObject.set(x, "pinned", js.undefined)
     
-    inline def setPrimary(value: `22`): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+    inline def setPrimary(value: `19`): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
     inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     

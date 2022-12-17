@@ -18,11 +18,11 @@ trait PickImplsearchButtonParti
   
   var results: js.UndefOr[String] = js.undefined
   
-  var searchButton: String & js.UndefOr[String]
+  var searchButton: String
 }
 object PickImplsearchButtonParti {
   
-  inline def apply(searchButton: String & js.UndefOr[String]): PickImplsearchButtonParti = {
+  inline def apply(searchButton: String): PickImplsearchButtonParti = {
     val __obj = js.Dynamic.literal(searchButton = searchButton.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplsearchButtonParti]
   }
@@ -45,6 +45,6 @@ object PickImplsearchButtonParti {
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    inline def setSearchButton(value: String & js.UndefOr[String]): Self = StObject.set(x, "searchButton", value.asInstanceOf[js.Any])
+    inline def setSearchButton(value: String): Self = StObject.set(x, "searchButton", value.asInstanceOf[js.Any])
   }
 }

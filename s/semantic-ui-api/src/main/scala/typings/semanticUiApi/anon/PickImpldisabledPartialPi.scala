@@ -10,20 +10,20 @@ trait PickImpldisabledPartialPi
   extends StObject
      with Param {
   
-  var disabled: String & js.UndefOr[String]
+  var disabled: String
   
   var form: js.UndefOr[String] = js.undefined
 }
 object PickImpldisabledPartialPi {
   
-  inline def apply(disabled: String & js.UndefOr[String]): PickImpldisabledPartialPi = {
+  inline def apply(disabled: String): PickImpldisabledPartialPi = {
     val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldisabledPartialPi]
   }
   
   extension [Self <: PickImpldisabledPartialPi](x: Self) {
     
-    inline def setDisabled(value: String & js.UndefOr[String]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     

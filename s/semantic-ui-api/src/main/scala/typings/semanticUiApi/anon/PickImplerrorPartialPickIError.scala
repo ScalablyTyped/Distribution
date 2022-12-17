@@ -10,20 +10,20 @@ trait PickImplerrorPartialPickIError
   extends StObject
      with Param {
   
-  var error: String & js.UndefOr[String]
+  var error: String
   
   var loading: js.UndefOr[String] = js.undefined
 }
 object PickImplerrorPartialPickIError {
   
-  inline def apply(error: String & js.UndefOr[String]): PickImplerrorPartialPickIError = {
+  inline def apply(error: String): PickImplerrorPartialPickIError = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplerrorPartialPickIError]
   }
   
   extension [Self <: PickImplerrorPartialPickIError](x: Self) {
     
-    inline def setError(value: String & js.UndefOr[String]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     inline def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     

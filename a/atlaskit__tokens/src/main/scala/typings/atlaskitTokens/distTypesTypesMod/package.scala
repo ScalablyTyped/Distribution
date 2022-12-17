@@ -36,7 +36,7 @@ type ExperimentalReplacement = InternalTokenIds | js.Array[InternalTokenIds] | S
 
 type ExperimentalTokenState = experimental
 
-type Id[T] = js.Object & (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: T[P]} */ js.Any)
+type Id[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: T[P]} */ js.Any
 
 /** NOTE: Conditional type definitions are impossible to translate to Scala.
   * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.

@@ -216,17 +216,17 @@ object mod {
   inline def switchProp[Props, T, DefaultCase](needle: Needle[Props], cases: StringDictionary[T], defaultCase: DefaultCase): js.Function1[/* props */ js.UndefOr[Props], T | DefaultCase] = (^.asInstanceOf[js.Dynamic].applyDynamic("switchProp")(needle.asInstanceOf[js.Any], cases.asInstanceOf[js.Any], defaultCase.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* props */ js.UndefOr[Props], T | DefaultCase]]
   
   inline def theme[T](path: String): js.Function1[
-    /* props */ Any & `0`[StringDictionary[Any]], 
+    /* props */ Any & ThemeTheme[StringDictionary[Any]], 
     (/* import warning: importer.ImportType#apply Failed type conversion: {[key: string] : any}[keyof {[key: string] : any}] */ js.Any) | T
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("theme")(path.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* props */ Any & `0`[StringDictionary[Any]], 
+    /* props */ Any & ThemeTheme[StringDictionary[Any]], 
     (/* import warning: importer.ImportType#apply Failed type conversion: {[key: string] : any}[keyof {[key: string] : any}] */ js.Any) | T
   ]]
   inline def theme[T](path: String, defaultValue: T): js.Function1[
-    /* props */ Any & `0`[StringDictionary[Any]], 
+    /* props */ Any & ThemeTheme[StringDictionary[Any]], 
     (/* import warning: importer.ImportType#apply Failed type conversion: {[key: string] : any}[keyof {[key: string] : any}] */ js.Any) | T
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("theme")(path.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* props */ Any & `0`[StringDictionary[Any]], 
+    /* props */ Any & ThemeTheme[StringDictionary[Any]], 
     (/* import warning: importer.ImportType#apply Failed type conversion: {[key: string] : any}[keyof {[key: string] : any}] */ js.Any) | T
   ]]
   
@@ -242,7 +242,7 @@ object mod {
     def apply(key: String): js.Function1[/* props */ Any & Tone[ThemeWithPalette], Any] = js.native
     def apply(key: String, defaultValue: Exclude[Any, Double]): js.Function1[/* props */ Any & Tone[ThemeWithPalette], Any] = js.native
     def apply(key: String, tone: Double): js.Function1[/* props */ Any & Tone[ThemeWithPalette], Any] = js.native
-    def apply(key: String, tone: Double, defaultValue: Exclude[Any, Double]): js.Function1[/* props */ Any & ThemeTheme[ThemeWithPalette], Any] = js.native
+    def apply(key: String, tone: Double, defaultValue: Exclude[Any, Double]): js.Function1[/* props */ Any & `0`[ThemeWithPalette], Any] = js.native
     def apply(tone: Double): js.Function1[/* props */ Any & Palette[ThemeWithPalette], Any] = js.native
     def apply(tone: Double, defaultValue: Any): js.Function1[/* props */ Any & PaletteTheme[ThemeWithPalette], Any] = js.native
   }

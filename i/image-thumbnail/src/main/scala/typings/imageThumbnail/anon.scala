@@ -32,14 +32,14 @@ object anon {
     
     var percentage: js.UndefOr[Double] = js.undefined
     
-    var responseType: base64 & js.UndefOr[String]
+    var responseType: base64
     
     var width: js.UndefOr[Double] = js.undefined
   }
   object responseTypebase64Options {
     
-    inline def apply(responseType: base64 & js.UndefOr[String]): responseTypebase64Options = {
-      val __obj = js.Dynamic.literal(responseType = responseType.asInstanceOf[js.Any])
+    inline def apply(): responseTypebase64Options = {
+      val __obj = js.Dynamic.literal(responseType = "base64")
       __obj.asInstanceOf[responseTypebase64Options]
     }
     
@@ -53,7 +53,7 @@ object anon {
       
       inline def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
       
-      inline def setResponseType(value: base64 & js.UndefOr[String]): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+      inline def setResponseType(value: base64): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
       
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
@@ -68,14 +68,14 @@ object anon {
     
     var percentage: js.UndefOr[Double] = js.undefined
     
-    var responseType: buffer & js.UndefOr[String]
+    var responseType: buffer
     
     var width: js.UndefOr[Double] = js.undefined
   }
   object responseTypebufferOptions {
     
-    inline def apply(responseType: buffer & js.UndefOr[String]): responseTypebufferOptions = {
-      val __obj = js.Dynamic.literal(responseType = responseType.asInstanceOf[js.Any])
+    inline def apply(): responseTypebufferOptions = {
+      val __obj = js.Dynamic.literal(responseType = "buffer")
       __obj.asInstanceOf[responseTypebufferOptions]
     }
     
@@ -89,7 +89,7 @@ object anon {
       
       inline def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
       
-      inline def setResponseType(value: buffer & js.UndefOr[String]): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+      inline def setResponseType(value: buffer): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
       
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       

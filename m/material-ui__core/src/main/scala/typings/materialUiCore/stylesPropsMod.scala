@@ -840,7 +840,7 @@ object stylesPropsMod {
     var MuiAccordionDetails: AccordionDetailsProps
     
     var MuiAccordionSummary: AccordionSummaryProps[
-        /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKey['defaultComponent'] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.Props['defaultComponent'] */ js.Any, 
         js.Object
       ]
     
@@ -859,7 +859,7 @@ object stylesPropsMod {
     var MuiBreadcrumbs: BreadcrumbsProps[nav, js.Object]
     
     var MuiButton: ButtonProps[
-        /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.DefaultComponentProps['defaultComponent'] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKeyDefaultComponentProps['defaultComponent'] */ js.Any, 
         js.Object
       ]
     
@@ -912,12 +912,12 @@ object stylesPropsMod {
     var MuiExpansionPanelDetails: ExpansionPanelDetailsProps
     
     var MuiExpansionPanelSummary: ExpansionPanelSummaryProps[
-        /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKeyExpansionPanelSummaryClassKey['defaultComponent'] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKeyExpansionPanelSummaryClassKeyDefaultComponent['defaultComponent'] */ js.Any, 
         js.Object
       ]
     
     var MuiFab: FabProps[
-        /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKeyFabClassKey['defaultComponent'] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKeyFabClassKeyDefaultComponent['defaultComponent'] */ js.Any, 
         js.Object
       ]
     
@@ -938,7 +938,7 @@ object stylesPropsMod {
     var MuiIcon: IconProps[span, js.Object]
     
     var MuiIconButton: IconButtonProps[
-        /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.DefaultComponent['defaultComponent'] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKey['defaultComponent'] */ js.Any, 
         js.Object
       ]
     
@@ -1025,7 +1025,7 @@ object stylesPropsMod {
     var MuiSwitch: SwitchProps
     
     var MuiTab: TabProps[
-        /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKeyTabClassKey['defaultComponent'] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKeyTabClassKeyDefaultComponent['defaultComponent'] */ js.Any, 
         js.Object
       ]
     
@@ -1044,7 +1044,7 @@ object stylesPropsMod {
     var MuiTableRow: TableRowProps[tr, js.Object]
     
     var MuiTableSortLabel: TableSortLabelProps[
-        /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKeyTableSortLabelClassKey['defaultComponent'] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKeyTableSortLabelClassKeyDefaultComponent['defaultComponent'] */ js.Any, 
         js.Object
       ]
     
@@ -1071,7 +1071,7 @@ object stylesPropsMod {
       MuiAccordionActions: AccordionActionsProps,
       MuiAccordionDetails: AccordionDetailsProps,
       MuiAccordionSummary: AccordionSummaryProps[
-          /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKey['defaultComponent'] */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.Props['defaultComponent'] */ js.Any, 
           js.Object
         ],
       MuiAppBar: AppBarProps,
@@ -1082,7 +1082,7 @@ object stylesPropsMod {
       MuiBottomNavigationAction: BottomNavigationActionProps[button, js.Object],
       MuiBreadcrumbs: BreadcrumbsProps[nav, js.Object],
       MuiButton: ButtonProps[
-          /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.DefaultComponentProps['defaultComponent'] */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKeyDefaultComponentProps['defaultComponent'] */ js.Any, 
           js.Object
         ],
       MuiButtonBase: ButtonBaseProps[button, js.Object],
@@ -1110,11 +1110,11 @@ object stylesPropsMod {
       MuiExpansionPanelActions: ExpansionPanelActionsProps,
       MuiExpansionPanelDetails: ExpansionPanelDetailsProps,
       MuiExpansionPanelSummary: ExpansionPanelSummaryProps[
-          /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKeyExpansionPanelSummaryClassKey['defaultComponent'] */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKeyExpansionPanelSummaryClassKeyDefaultComponent['defaultComponent'] */ js.Any, 
           js.Object
         ],
       MuiFab: FabProps[
-          /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKeyFabClassKey['defaultComponent'] */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKeyFabClassKeyDefaultComponent['defaultComponent'] */ js.Any, 
           js.Object
         ],
       MuiFilledInput: FilledInputProps,
@@ -1126,7 +1126,7 @@ object stylesPropsMod {
       MuiGrid: GridProps[div, js.Object],
       MuiIcon: IconProps[span, js.Object],
       MuiIconButton: IconButtonProps[
-          /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.DefaultComponent['defaultComponent'] */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKey['defaultComponent'] */ js.Any, 
           js.Object
         ],
       MuiImageList: ImageListProps[ul, js.Object],
@@ -1171,7 +1171,7 @@ object stylesPropsMod {
       MuiSwipeableDrawer: SwipeableDrawerProps,
       MuiSwitch: SwitchProps,
       MuiTab: TabProps[
-          /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKeyTabClassKey['defaultComponent'] */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKeyTabClassKeyDefaultComponent['defaultComponent'] */ js.Any, 
           js.Object
         ],
       MuiTable: TableProps[table, js.Object],
@@ -1182,7 +1182,7 @@ object stylesPropsMod {
       MuiTablePagination: TablePaginationProps[ComponentType[TablePaginationBaseProps], js.Object],
       MuiTableRow: TableRowProps[tr, js.Object],
       MuiTableSortLabel: TableSortLabelProps[
-          /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKeyTableSortLabelClassKey['defaultComponent'] */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKeyTableSortLabelClassKeyDefaultComponent['defaultComponent'] */ js.Any, 
           js.Object
         ],
       MuiTabs: TabsProps[ExtendButtonBase[ButtonBaseTypeMap[js.Object, button]], js.Object],
@@ -1208,7 +1208,7 @@ object stylesPropsMod {
       
       inline def setMuiAccordionSummary(
         value: AccordionSummaryProps[
-              /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKey['defaultComponent'] */ js.Any, 
+              /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.Props['defaultComponent'] */ js.Any, 
               js.Object
             ]
       ): Self = StObject.set(x, "MuiAccordionSummary", value.asInstanceOf[js.Any])
@@ -1229,7 +1229,7 @@ object stylesPropsMod {
       
       inline def setMuiButton(
         value: ButtonProps[
-              /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.DefaultComponentProps['defaultComponent'] */ js.Any, 
+              /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKeyDefaultComponentProps['defaultComponent'] */ js.Any, 
               js.Object
             ]
       ): Self = StObject.set(x, "MuiButton", value.asInstanceOf[js.Any])
@@ -1284,14 +1284,14 @@ object stylesPropsMod {
       
       inline def setMuiExpansionPanelSummary(
         value: ExpansionPanelSummaryProps[
-              /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKeyExpansionPanelSummaryClassKey['defaultComponent'] */ js.Any, 
+              /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKeyExpansionPanelSummaryClassKeyDefaultComponent['defaultComponent'] */ js.Any, 
               js.Object
             ]
       ): Self = StObject.set(x, "MuiExpansionPanelSummary", value.asInstanceOf[js.Any])
       
       inline def setMuiFab(
         value: FabProps[
-              /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKeyFabClassKey['defaultComponent'] */ js.Any, 
+              /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKeyFabClassKeyDefaultComponent['defaultComponent'] */ js.Any, 
               js.Object
             ]
       ): Self = StObject.set(x, "MuiFab", value.asInstanceOf[js.Any])
@@ -1314,7 +1314,7 @@ object stylesPropsMod {
       
       inline def setMuiIconButton(
         value: IconButtonProps[
-              /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.DefaultComponent['defaultComponent'] */ js.Any, 
+              /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKey['defaultComponent'] */ js.Any, 
               js.Object
             ]
       ): Self = StObject.set(x, "MuiIconButton", value.asInstanceOf[js.Any])
@@ -1403,7 +1403,7 @@ object stylesPropsMod {
       
       inline def setMuiTab(
         value: TabProps[
-              /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKeyTabClassKey['defaultComponent'] */ js.Any, 
+              /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKeyTabClassKeyDefaultComponent['defaultComponent'] */ js.Any, 
               js.Object
             ]
       ): Self = StObject.set(x, "MuiTab", value.asInstanceOf[js.Any])
@@ -1424,7 +1424,7 @@ object stylesPropsMod {
       
       inline def setMuiTableSortLabel(
         value: TableSortLabelProps[
-              /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKeyTableSortLabelClassKey['defaultComponent'] */ js.Any, 
+              /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.ClassKeyTableSortLabelClassKeyDefaultComponent['defaultComponent'] */ js.Any, 
               js.Object
             ]
       ): Self = StObject.set(x, "MuiTableSortLabel", value.asInstanceOf[js.Any])

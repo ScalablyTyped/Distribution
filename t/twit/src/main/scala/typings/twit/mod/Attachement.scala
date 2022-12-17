@@ -1,6 +1,6 @@
 package typings.twit.mod
 
-import typings.twit.anon.Id
+import typings.twit.anon.IdString
 import typings.twit.anon.Sharedcoordinate
 import typings.twit.twitStrings.location
 import typings.twit.twitStrings.media
@@ -12,7 +12,7 @@ trait Attachement extends StObject {
   
   var location: js.UndefOr[Sharedcoordinate] = js.undefined
   
-  var media: js.UndefOr[Id] = js.undefined
+  var media: js.UndefOr[IdString] = js.undefined
   
   var `type`: location | media
 }
@@ -30,7 +30,7 @@ object Attachement {
     
     inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    inline def setMedia(value: Id): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: IdString): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
     inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
     

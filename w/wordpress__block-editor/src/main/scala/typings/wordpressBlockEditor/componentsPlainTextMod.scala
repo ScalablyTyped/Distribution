@@ -542,7 +542,7 @@ object componentsPlainTextMod {
       
       var onReset: js.UndefOr[FormEventHandler[HTMLTextAreaElement]] = js.undefined
       
-      var onResize: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & (js.UndefOr[js.Function1[/* e */ Event, Unit]])
+      var onResize: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] = js.undefined
       
       var onScroll: js.UndefOr[UIEventHandler[HTMLTextAreaElement]] = js.undefined
       
@@ -696,12 +696,8 @@ object componentsPlainTextMod {
     }
     object Props {
       
-      inline def apply(
-        onChange: String => Unit,
-        onResize: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & (js.UndefOr[js.Function1[/* e */ Event, Unit]]),
-        value: String
-      ): Props = {
-        val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction1(onChange), onResize = onResize.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      inline def apply(onChange: String => Unit, value: String): Props = {
+        val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction1(onChange), value = value.asInstanceOf[js.Any])
         __obj.asInstanceOf[Props]
       }
       
@@ -1547,9 +1543,9 @@ object componentsPlainTextMod {
         
         inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
         
-        inline def setOnResize(
-          value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & (js.UndefOr[js.Function1[/* e */ Event, Unit]])
-        ): Self = StObject.set(x, "onResize", value.asInstanceOf[js.Any])
+        inline def setOnResize(value: SyntheticEvent[HTMLTextAreaElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+        
+        inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
         
         inline def setOnScroll(value: UIEvent[HTMLTextAreaElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
         

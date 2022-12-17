@@ -1,6 +1,6 @@
 package typings.braintree.mod
 
-import typings.braintree.anon.Amount
+import typings.braintree.anon.CreatedAt
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,7 +47,7 @@ open class Dispute () extends StObject {
   
   var statusHistory: js.Array[DisputeStatusHistory] = js.native
   
-  var transaction: Amount = js.native
+  var transaction: CreatedAt = js.native
   
   var updatedAt: String = js.native
 }

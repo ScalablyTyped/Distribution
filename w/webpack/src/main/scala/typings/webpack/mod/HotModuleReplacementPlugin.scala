@@ -4,27 +4,25 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HotModuleReplacementPlugin extends StObject {
+@JSImport("webpack", "HotModuleReplacementPlugin")
+@js.native
+open class HotModuleReplacementPlugin () extends StObject {
+  def this(options: Any) = this()
   
   /**
   	 * Apply the plugin
   	 */
   @JSName("apply")
-  def apply(compiler: Compiler): Unit
+  def apply(compiler: Compiler): Unit = js.native
   
-  var options: Any
+  var options: Any = js.native
 }
 object HotModuleReplacementPlugin {
   
-  inline def apply(apply: Compiler => Unit, options: Any): HotModuleReplacementPlugin = {
-    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), options = options.asInstanceOf[js.Any])
-    __obj.asInstanceOf[HotModuleReplacementPlugin]
-  }
+  @JSImport("webpack", "HotModuleReplacementPlugin")
+  @js.native
+  val ^ : js.Any = js.native
   
-  extension [Self <: HotModuleReplacementPlugin](x: Self) {
-    
-    inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
-    
-    inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
-  }
+  /* static member */
+  inline def getParserHooks(parser: JavascriptParser): HMRJavascriptParserHooks = ^.asInstanceOf[js.Dynamic].applyDynamic("getParserHooks")(parser.asInstanceOf[js.Any]).asInstanceOf[HMRJavascriptParserHooks]
 }

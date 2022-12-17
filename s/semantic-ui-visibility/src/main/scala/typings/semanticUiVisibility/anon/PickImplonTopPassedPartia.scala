@@ -72,7 +72,7 @@ trait PickImplonTopPassedPartia
   var onTopPassedReverse: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
   @JSName("onTopPassed")
-  var onTopPassed_Original: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+  var onTopPassed_Original: js.ThisFunction0[/* this */ JQuery, Unit]
   
   var onTopVisible: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
@@ -106,9 +106,7 @@ trait PickImplonTopPassedPartia
 }
 object PickImplonTopPassedPartia {
   
-  inline def apply(
-    onTopPassed: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-  ): PickImplonTopPassedPartia = {
+  inline def apply(onTopPassed: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonTopPassedPartia = {
     val __obj = js.Dynamic.literal(onTopPassed = onTopPassed.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonTopPassedPartia]
   }
@@ -215,9 +213,7 @@ object PickImplonTopPassedPartia {
     
     inline def setOnRefreshUndefined: Self = StObject.set(x, "onRefresh", js.undefined)
     
-    inline def setOnTopPassed(
-      value: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-    ): Self = StObject.set(x, "onTopPassed", value.asInstanceOf[js.Any])
+    inline def setOnTopPassed(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onTopPassed", value.asInstanceOf[js.Any])
     
     inline def setOnTopPassedReverse(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onTopPassedReverse", value.asInstanceOf[js.Any])
     

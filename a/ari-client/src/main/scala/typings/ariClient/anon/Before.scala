@@ -12,16 +12,14 @@ trait Before extends StObject {
   
   var between: js.UndefOr[Double] = js.undefined
   
-  var channelId: String
-  
   var dtmf: js.UndefOr[String] = js.undefined
   
   var duration: js.UndefOr[Double] = js.undefined
 }
 object Before {
   
-  inline def apply(channelId: String): Before = {
-    val __obj = js.Dynamic.literal(channelId = channelId.asInstanceOf[js.Any])
+  inline def apply(): Before = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Before]
   }
   
@@ -38,8 +36,6 @@ object Before {
     inline def setBetween(value: Double): Self = StObject.set(x, "between", value.asInstanceOf[js.Any])
     
     inline def setBetweenUndefined: Self = StObject.set(x, "between", js.undefined)
-    
-    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
     inline def setDtmf(value: String): Self = StObject.set(x, "dtmf", value.asInstanceOf[js.Any])
     

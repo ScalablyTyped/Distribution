@@ -1,7 +1,6 @@
 package typings.webidlConversions
 
 import typings.webidlConversions.mod.Globals
-import typings.webidlConversions.webidlConversionsBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ object anon {
   /* Inlined webidl-conversions.webidl-conversions.BufferSourceOptions & {  allowShared :false | undefined} */
   trait BufferSourceOptionsallowS extends StObject {
     
-    var allowShared: js.UndefOr[Boolean] & js.UndefOr[`false`]
+    var allowShared: js.UndefOr[Boolean] = js.undefined
     
     var context: js.UndefOr[String] = js.undefined
     
@@ -19,14 +18,16 @@ object anon {
   }
   object BufferSourceOptionsallowS {
     
-    inline def apply(allowShared: js.UndefOr[Boolean] & js.UndefOr[`false`]): BufferSourceOptionsallowS = {
-      val __obj = js.Dynamic.literal(allowShared = allowShared.asInstanceOf[js.Any])
+    inline def apply(): BufferSourceOptionsallowS = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BufferSourceOptionsallowS]
     }
     
     extension [Self <: BufferSourceOptionsallowS](x: Self) {
       
-      inline def setAllowShared(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "allowShared", value.asInstanceOf[js.Any])
+      inline def setAllowShared(value: Boolean): Self = StObject.set(x, "allowShared", value.asInstanceOf[js.Any])
+      
+      inline def setAllowSharedUndefined: Self = StObject.set(x, "allowShared", js.undefined)
       
       inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

@@ -459,12 +459,12 @@ object mod {
   trait EmulatorMockTokenOptions extends StObject
   object EmulatorMockTokenOptions {
     
-    inline def substringPartialFirebaseIAuthtime(sub: String & js.UndefOr[String]): typings.firebaseUtil.anon.substringPartialFirebaseIAuthtime = {
+    inline def substringPartialFirebaseIAuthtime(sub: String): typings.firebaseUtil.anon.substringPartialFirebaseIAuthtime = {
       val __obj = js.Dynamic.literal(sub = sub.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.firebaseUtil.anon.substringPartialFirebaseIAuthtime]
     }
     
-    inline def useridstringPartialFirebaAuthtime(user_id: String & js.UndefOr[String]): typings.firebaseUtil.anon.useridstringPartialFirebaAuthtime = {
+    inline def useridstringPartialFirebaAuthtime(user_id: String): typings.firebaseUtil.anon.useridstringPartialFirebaAuthtime = {
       val __obj = js.Dynamic.literal(user_id = user_id.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.firebaseUtil.anon.useridstringPartialFirebaAuthtime]
     }

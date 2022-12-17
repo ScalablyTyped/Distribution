@@ -1,6 +1,6 @@
 package typings.floatingUiDom.anon
 
-import typings.floatingUiCore.anon.Options
+import typings.floatingUiCore.anon.Fn
 import typings.floatingUiCore.srcTypesMod.ElementContext
 import typings.floatingUiCore.srcTypesMod.Padding
 import org.scalablytyped.runtime.StObject
@@ -18,7 +18,7 @@ trait PartialShiftOptionsDetect extends StObject {
   
   var elementContext: js.UndefOr[ElementContext] = js.undefined
   
-  var limiter: js.UndefOr[Options] = js.undefined
+  var limiter: js.UndefOr[Fn] = js.undefined
   
   var mainAxis: js.UndefOr[Boolean] = js.undefined
   
@@ -53,7 +53,7 @@ object PartialShiftOptionsDetect {
     
     inline def setElementContextUndefined: Self = StObject.set(x, "elementContext", js.undefined)
     
-    inline def setLimiter(value: Options): Self = StObject.set(x, "limiter", value.asInstanceOf[js.Any])
+    inline def setLimiter(value: Fn): Self = StObject.set(x, "limiter", value.asInstanceOf[js.Any])
     
     inline def setLimiterUndefined: Self = StObject.set(x, "limiter", js.undefined)
     

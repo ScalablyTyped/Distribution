@@ -312,7 +312,7 @@ trait OmitRadioButtonset extends StObject {
   @JSName("isDisposed")
   var isDisposed_Original: js.Function0[Boolean]
   
-  var jsxAttributes: (JSXAttributes[RadioButton, Omit[RadioButton, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `3`
+  var jsxAttributes: (JSXAttributes[RadioButton, Omit[RadioButton, set | typings.tabris.tabrisStrings.jsxAttributes]]) & Children
   
   var layoutData: LayoutDataValue
   
@@ -566,7 +566,7 @@ object OmitRadioButtonset {
     insertAfter: /* widget */ Widget[Any] => RadioButton,
     insertBefore: /* widget */ Widget[Any] => RadioButton,
     isDisposed: () => Boolean,
-    jsxAttributes: (JSXAttributes[RadioButton, Omit[RadioButton, set | jsxAttributes]]) & `3`,
+    jsxAttributes: (JSXAttributes[RadioButton, Omit[RadioButton, set | jsxAttributes]]) & Children,
     layoutData: LayoutDataValue,
     left: ConstraintValue,
     off: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Unit], /* context */ js.UndefOr[js.Object]) => RadioButton,
@@ -743,7 +743,7 @@ object OmitRadioButtonset {
     
     inline def setIsDisposed(value: () => Boolean): Self = StObject.set(x, "isDisposed", js.Any.fromFunction0(value))
     
-    inline def setJsxAttributes(value: (JSXAttributes[RadioButton, Omit[RadioButton, set | jsxAttributes]]) & `3`): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
+    inline def setJsxAttributes(value: (JSXAttributes[RadioButton, Omit[RadioButton, set | jsxAttributes]]) & Children): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     
     inline def setLayoutData(value: LayoutDataValue): Self = StObject.set(x, "layoutData", value.asInstanceOf[js.Any])
     

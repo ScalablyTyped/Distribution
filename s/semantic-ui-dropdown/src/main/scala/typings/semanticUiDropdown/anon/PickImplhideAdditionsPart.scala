@@ -79,7 +79,7 @@ trait PickImplhideAdditionsPart
   
   var glyphWidth: js.UndefOr[Double] = js.undefined
   
-  var hideAdditions: Boolean & js.UndefOr[Boolean]
+  var hideAdditions: Boolean
   
   var keepOnScreen: js.UndefOr[Boolean] = js.undefined
   
@@ -169,7 +169,7 @@ trait PickImplhideAdditionsPart
 }
 object PickImplhideAdditionsPart {
   
-  inline def apply(hideAdditions: Boolean & js.UndefOr[Boolean]): PickImplhideAdditionsPart = {
+  inline def apply(hideAdditions: Boolean): PickImplhideAdditionsPart = {
     val __obj = js.Dynamic.literal(hideAdditions = hideAdditions.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplhideAdditionsPart]
   }
@@ -256,7 +256,7 @@ object PickImplhideAdditionsPart {
     
     inline def setGlyphWidthUndefined: Self = StObject.set(x, "glyphWidth", js.undefined)
     
-    inline def setHideAdditions(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "hideAdditions", value.asInstanceOf[js.Any])
+    inline def setHideAdditions(value: Boolean): Self = StObject.set(x, "hideAdditions", value.asInstanceOf[js.Any])
     
     inline def setKeepOnScreen(value: Boolean): Self = StObject.set(x, "keepOnScreen", value.asInstanceOf[js.Any])
     

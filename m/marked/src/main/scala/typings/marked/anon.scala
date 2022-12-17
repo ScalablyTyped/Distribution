@@ -1,6 +1,5 @@
 package typings.marked
 
-import typings.marked.markedBooleans.`true`
 import typings.marked.markedStrings.center
 import typings.marked.markedStrings.left
 import typings.marked.markedStrings.right
@@ -104,7 +103,7 @@ object anon {
   /* Inlined marked.marked.marked.MarkedOptions & {  async :true} */
   trait MarkedOptionsasynctrue extends StObject {
     
-    var async: js.UndefOr[Boolean] & `true`
+    var async: js.UndefOr[Boolean] = js.undefined
     
     var baseUrl: js.UndefOr[String] = js.undefined
     
@@ -159,14 +158,16 @@ object anon {
   }
   object MarkedOptionsasynctrue {
     
-    inline def apply(async: js.UndefOr[Boolean] & `true`): MarkedOptionsasynctrue = {
-      val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any])
+    inline def apply(): MarkedOptionsasynctrue = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MarkedOptionsasynctrue]
     }
     
     extension [Self <: MarkedOptionsasynctrue](x: Self) {
       
-      inline def setAsync(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
       inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       

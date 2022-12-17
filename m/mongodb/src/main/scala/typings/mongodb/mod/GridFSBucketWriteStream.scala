@@ -1,6 +1,5 @@
 package typings.mongodb.mod
 
-import typings.bson.mod.ObjectId
 import typings.mongodb.anon.Aborted
 import typings.node.bufferMod.global.Buffer
 import typings.node.bufferMod.global.BufferEncoding
@@ -46,7 +45,7 @@ open class GridFSBucketWriteStream () extends Writable {
   
   var files: Collection[GridFSFile] = js.native
   
-  var id: ObjectId = js.native
+  var id: typings.bson.mod.ObjectId = js.native
   
   var length: scala.Double = js.native
   

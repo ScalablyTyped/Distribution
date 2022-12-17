@@ -6,25 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RequestBodyContent172 extends StObject {
   
-  var parameters: PathPullnumber
+  var parameters: `135`
   
   var requestBody: Content172
   
-  var responses: `405`
+  var responses: `201Content171`
 }
 object RequestBodyContent172 {
   
-  inline def apply(parameters: PathPullnumber, requestBody: Content172, responses: `405`): RequestBodyContent172 = {
+  inline def apply(parameters: `135`, requestBody: Content172, responses: `201Content171`): RequestBodyContent172 = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyContent172]
   }
   
   extension [Self <: RequestBodyContent172](x: Self) {
     
-    inline def setParameters(value: PathPullnumber): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: `135`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setRequestBody(value: Content172): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `405`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `201Content171`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

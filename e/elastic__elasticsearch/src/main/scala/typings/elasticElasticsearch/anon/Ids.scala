@@ -1,15 +1,15 @@
 package typings.elasticElasticsearch.anon
 
-import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.MgetOperation
+import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.MtermvectorsOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Ids extends StObject {
   
-  var docs: js.UndefOr[js.Array[MgetOperation]] = js.undefined
+  var docs: js.UndefOr[js.Array[MtermvectorsOperation]] = js.undefined
   
-  var ids: js.UndefOr[typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.Ids] = js.undefined
+  var ids: js.UndefOr[js.Array[typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.Id]] = js.undefined
 }
 object Ids {
   
@@ -20,13 +20,13 @@ object Ids {
   
   extension [Self <: Ids](x: Self) {
     
-    inline def setDocs(value: js.Array[MgetOperation]): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
+    inline def setDocs(value: js.Array[MtermvectorsOperation]): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
     
     inline def setDocsUndefined: Self = StObject.set(x, "docs", js.undefined)
     
-    inline def setDocsVarargs(value: MgetOperation*): Self = StObject.set(x, "docs", js.Array(value*))
+    inline def setDocsVarargs(value: MtermvectorsOperation*): Self = StObject.set(x, "docs", js.Array(value*))
     
-    inline def setIds(value: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.Ids): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+    inline def setIds(value: js.Array[typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.Id]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
     inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     

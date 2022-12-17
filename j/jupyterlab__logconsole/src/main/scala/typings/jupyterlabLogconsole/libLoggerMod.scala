@@ -2,7 +2,7 @@ package typings.jupyterlabLogconsole
 
 import typings.jupyterlabLogconsole.anon.LastModel
 import typings.jupyterlabLogconsole.anon.Level
-import typings.jupyterlabLogconsole.libLoggerMod.Logger.IOptions
+import typings.jupyterlabLogconsole.libLoggerMod.LogOutputModel.IOptions
 import typings.jupyterlabLogconsole.libTokensMod.IContentChange
 import typings.jupyterlabLogconsole.libTokensMod.ILogPayload
 import typings.jupyterlabLogconsole.libTokensMod.ILogger
@@ -21,6 +21,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libLoggerMod {
   
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.jupyterlabRendermime.libOutputmodelMod.IOutputModel because Already inherited
+  - typings.jupyterlabLogconsole.libLoggerMod.ILogOutputModel because Already inherited typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IMimeModel */ @JSImport("@jupyterlab/logconsole/lib/logger", "LogOutputModel")
+  @js.native
+  open class LogOutputModel protected () extends OutputModel {
+    /**
+      * Construct a LogOutputModel.
+      *
+      * @param options - The model initialization options.
+      */
+    def this(options: IOptions) = this()
+    
+    /**
+      * Log level
+      */
+    val level: FullLogLevel = js.native
+    
+    /**
+      * Date & time when output is logged.
+      */
+    val timestamp: js.Date = js.native
+  }
+  /**
+    * Log Output Model namespace that defines initialization options.
+    */
+  object LogOutputModel {
+    
+    trait IOptions
+      extends StObject
+         with typings.jupyterlabRendermime.libOutputmodelMod.IOutputModel.IOptions
+    object IOptions {
+      
+      inline def apply(value: IOutput): IOptions = {
+        val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+        __obj.asInstanceOf[IOptions]
+      }
+    }
+  }
+  
   @JSImport("@jupyterlab/logconsole/lib/logger", "Logger")
   @js.native
   open class Logger protected ()
@@ -31,7 +70,7 @@ object libLoggerMod {
       *
       * @param source - The name of the log source.
       */
-    def this(options: IOptions) = this()
+    def this(options: typings.jupyterlabLogconsole.libLoggerMod.Logger.IOptions) = this()
     
     /* private */ var _contentChanged: Any = js.native
     
@@ -213,12 +252,12 @@ object libLoggerMod {
     }
     object IOptions {
       
-      inline def apply(maxLength: Double, source: String): IOptions = {
+      inline def apply(maxLength: Double, source: String): typings.jupyterlabLogconsole.libLoggerMod.Logger.IOptions = {
         val __obj = js.Dynamic.literal(maxLength = maxLength.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
-        __obj.asInstanceOf[IOptions]
+        __obj.asInstanceOf[typings.jupyterlabLogconsole.libLoggerMod.Logger.IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      extension [Self <: typings.jupyterlabLogconsole.libLoggerMod.Logger.IOptions](x: Self) {
         
         inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
         
@@ -352,38 +391,6 @@ object libLoggerMod {
       inline def setLevel(value: FullLogLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
       inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.jupyterlabRendermime.libOutputmodelMod.IOutputModel because Already inherited
-  - typings.jupyterlabLogconsole.libLoggerMod.ILogOutputModel because Already inherited typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IMimeModel */ @js.native
-  trait LogOutputModel extends OutputModel {
-    
-    /**
-      * Log level
-      */
-    val level: FullLogLevel = js.native
-    
-    /**
-      * Date & time when output is logged.
-      */
-    val timestamp: js.Date = js.native
-  }
-  /**
-    * Log Output Model namespace that defines initialization options.
-    */
-  object LogOutputModel {
-    
-    trait IOptions
-      extends StObject
-         with typings.jupyterlabRendermime.libOutputmodelMod.IOutputModel.IOptions
-    object IOptions {
-      
-      inline def apply(value: IOutput): typings.jupyterlabLogconsole.libLoggerMod.LogOutputModel.IOptions = {
-        val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-        __obj.asInstanceOf[typings.jupyterlabLogconsole.libLoggerMod.LogOutputModel.IOptions]
-      }
     }
   }
 }

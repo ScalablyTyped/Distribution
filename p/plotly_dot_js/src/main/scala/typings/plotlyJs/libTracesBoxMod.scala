@@ -1,15 +1,15 @@
 package typings.plotlyJs
 
 import typings.plotlyJs.anon.End
-import typings.plotlyJs.anon.PartialBoxPlotMarker
-import typings.plotlyJs.anon.PartialColorBar
-import typings.plotlyJs.anon.PartialDataTitle
+import typings.plotlyJs.anon.PartialBoxPlotMarkerColor
+import typings.plotlyJs.anon.PartialColorBarBgcolor
+import typings.plotlyJs.anon.PartialDataTitleFont
 import typings.plotlyJs.anon.PartialDelta
 import typings.plotlyJs.anon.PartialFont
-import typings.plotlyJs.anon.PartialGaugeAxis
+import typings.plotlyJs.anon.PartialGaugeBgcolor
 import typings.plotlyJs.anon.PartialHoverLabel
 import typings.plotlyJs.anon.PartialPattern
-import typings.plotlyJs.anon.PartialPlotNumber
+import typings.plotlyJs.anon.PartialPlotNumberFont
 import typings.plotlyJs.anon.PartialScatterLine
 import typings.plotlyJs.anon.PartialScatterMarkerLine
 import typings.plotlyJs.anon.PartialcolorColorwidthnum
@@ -156,7 +156,7 @@ object libTracesBoxMod {
     var alignmentgroup: String
     
     @JSName("marker")
-    var marker_BoxPlotData: PartialBoxPlotMarker
+    var marker_BoxPlotData: PartialBoxPlotMarkerColor
     
     var offsetgroup: String
     
@@ -186,7 +186,7 @@ object libTracesBoxMod {
       boxpoints: all | outliers | suspectedoutliers | `false`,
       branchvalues: total | remainder,
       cliponaxis: Boolean,
-      colorbar: PartialColorBar,
+      colorbar: PartialColorBarBgcolor,
       colorscale: ColorScale,
       connectgaps: Boolean,
       customdata: js.Array[js.Array[Datum] | Datum],
@@ -198,7 +198,7 @@ object libTracesBoxMod {
       fill: none | tozeroy | tozerox | tonexty | tonextx | toself | tonext,
       fillcolor: String,
       fillpattern: PartialPattern,
-      gauge: PartialGaugeAxis,
+      gauge: PartialGaugeBgcolor,
       groupnorm: _empty | fraction | percent,
       histfunc: count | sum | avg | min | max,
       hole: Double,
@@ -226,7 +226,7 @@ object libTracesBoxMod {
       locationmode: `ISO-3` | `USA-states` | (`country names`) | `geojson-id`,
       locations: js.Array[Datum],
       lon: js.Array[Datum],
-      marker: PartialBoxPlotMarker,
+      marker: PartialBoxPlotMarkerColor,
       markerDotcolor: Color,
       markerDotcolorscale: ColorScale | js.Array[ColorScale],
       markerDotline: PartialScatterMarkerLine,
@@ -247,7 +247,7 @@ object libTracesBoxMod {
       markerDotsymbol: MarkerSymbol | js.Array[MarkerSymbol],
       mode: lines | markers | text | linesPlussignmarkers | textPlussignmarkers | textPlussignlines | textPlussignlinesPlussignmarkers | none | gauge | number | delta | numberPlussigndelta | gaugePlussignnumber | gaugePlussignnumberPlussigndelta | gaugePlussigndelta,
       name: String,
-      number: PartialPlotNumber,
+      number: PartialPlotNumberFont,
       offset: Double,
       offsetgroup: String,
       opacity: Double,
@@ -270,7 +270,7 @@ object libTracesBoxMod {
       textposition: (`top left`) | (`top center`) | (`top right`) | (`middle left`) | (`middle center`) | (`middle right`) | (`bottom left`) | (`bottom center`) | (`bottom right`) | inside | outside | auto | none,
       texttemplate: String | js.Array[String],
       theta: js.Array[Datum],
-      title: PartialDataTitle,
+      title: PartialDataTitleFont,
       transforms: js.Array[DataTransform],
       transpose: Boolean,
       unselected: ScatterSelectedMarker,
@@ -328,7 +328,7 @@ object libTracesBoxMod {
       
       inline def setAlignmentgroup(value: String): Self = StObject.set(x, "alignmentgroup", value.asInstanceOf[js.Any])
       
-      inline def setMarker(value: PartialBoxPlotMarker): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+      inline def setMarker(value: PartialBoxPlotMarkerColor): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
       
       inline def setOffsetgroup(value: String): Self = StObject.set(x, "offsetgroup", value.asInstanceOf[js.Any])
       

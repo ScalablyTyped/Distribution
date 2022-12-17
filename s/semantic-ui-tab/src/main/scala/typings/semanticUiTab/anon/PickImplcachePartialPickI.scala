@@ -32,7 +32,7 @@ trait PickImplcachePartialPickI
   
   var auto: js.UndefOr[Boolean] = js.undefined
   
-  var cache: Boolean & js.UndefOr[Boolean]
+  var cache: Boolean
   
   var cacheType: js.UndefOr[response | DOM | html] = js.undefined
   
@@ -104,7 +104,7 @@ trait PickImplcachePartialPickI
 }
 object PickImplcachePartialPickI {
   
-  inline def apply(cache: Boolean & js.UndefOr[Boolean]): PickImplcachePartialPickI = {
+  inline def apply(cache: Boolean): PickImplcachePartialPickI = {
     val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplcachePartialPickI]
   }
@@ -123,7 +123,7 @@ object PickImplcachePartialPickI {
     
     inline def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
     
-    inline def setCache(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
     inline def setCacheType(value: response | DOM | html): Self = StObject.set(x, "cacheType", value.asInstanceOf[js.Any])
     

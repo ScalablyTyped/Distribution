@@ -1,6 +1,5 @@
 package typings.fundamentalReact.anon
 
-import typings.fundamentalReact.fundamentalReactStrings.TileDotHeader
 import typings.fundamentalReact.libTileTileMod.TileHeaderProps
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
@@ -19,7 +18,7 @@ trait FCTileHeaderPropsdisplayN extends StObject {
   
   var defaultProps: js.UndefOr[PartialTileHeaderProps] = js.native
   
-  var displayName: js.UndefOr[String] & TileDotHeader = js.native
+  var displayName: js.UndefOr[String] = js.native
   
   var propTypes: js.UndefOr[WeakValidationMapTileHead] = js.native
 }

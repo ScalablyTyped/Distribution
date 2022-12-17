@@ -59,7 +59,7 @@ trait PickImplstorageMethodPart
   
   var speed: js.UndefOr[Double] = js.undefined
   
-  var storageMethod: (cookie | localstorage | sessionstorage) & (js.UndefOr[cookie | localstorage | sessionstorage])
+  var storageMethod: cookie | localstorage | sessionstorage
   
   var value: js.UndefOr[Any] = js.undefined
   
@@ -67,9 +67,7 @@ trait PickImplstorageMethodPart
 }
 object PickImplstorageMethodPart {
   
-  inline def apply(
-    storageMethod: (cookie | localstorage | sessionstorage) & (js.UndefOr[cookie | localstorage | sessionstorage])
-  ): PickImplstorageMethodPart = {
+  inline def apply(storageMethod: cookie | localstorage | sessionstorage): PickImplstorageMethodPart = {
     val __obj = js.Dynamic.literal(storageMethod = storageMethod.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplstorageMethodPart]
   }
@@ -156,9 +154,7 @@ object PickImplstorageMethodPart {
     
     inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
     
-    inline def setStorageMethod(
-      value: (cookie | localstorage | sessionstorage) & (js.UndefOr[cookie | localstorage | sessionstorage])
-    ): Self = StObject.set(x, "storageMethod", value.asInstanceOf[js.Any])
+    inline def setStorageMethod(value: cookie | localstorage | sessionstorage): Self = StObject.set(x, "storageMethod", value.asInstanceOf[js.Any])
     
     inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

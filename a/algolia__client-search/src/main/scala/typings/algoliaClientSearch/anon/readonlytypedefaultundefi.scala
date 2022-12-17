@@ -1,7 +1,6 @@
 package typings.algoliaClientSearch.anon
 
 import typings.algoliaClientSearch.algoliaClientSearchStrings.default
-import typings.algoliaClientSearch.algoliaClientSearchStrings.facet
 import typings.algoliaClientSearch.mod.MultipleQueriesQuery
 import typings.algoliaClientSearch.mod.SearchOptions
 import org.scalablytyped.runtime.StObject
@@ -33,13 +32,12 @@ trait readonlytypedefaultundefi
     *
     * @defaultValue "default"
     */
-  val `type`: js.UndefOr[default] & (js.UndefOr[default | facet])
+  val `type`: js.UndefOr[default] = js.undefined
 }
 object readonlytypedefaultundefi {
   
-  inline def apply(indexName: String, `type`: js.UndefOr[default] & (js.UndefOr[default | facet])): readonlytypedefaultundefi = {
+  inline def apply(indexName: String): readonlytypedefaultundefi = {
     val __obj = js.Dynamic.literal(indexName = indexName.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[readonlytypedefaultundefi]
   }
   
@@ -55,6 +53,8 @@ object readonlytypedefaultundefi {
     
     inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    inline def setType(value: js.UndefOr[default] & (js.UndefOr[default | facet])): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: default): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

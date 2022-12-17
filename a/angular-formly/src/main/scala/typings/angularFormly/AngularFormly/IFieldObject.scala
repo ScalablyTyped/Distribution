@@ -280,7 +280,7 @@ trait IFieldObject extends StObject {
     * see http://docs.angular-formly.com/docs/field-configuration-object#value-gettersetter-function
     */
   //Getter
-  var value: js.UndefOr[js.Function0[Any]] & (js.UndefOr[js.Function1[/* val */ Any, Unit]])
+  var value: js.UndefOr[js.Function0[Any]] = js.undefined
   
   //Setter
   /**
@@ -305,8 +305,8 @@ trait IFieldObject extends StObject {
 }
 object IFieldObject {
   
-  inline def apply(value: js.UndefOr[js.Function0[Any]] & (js.UndefOr[js.Function1[/* val */ Any, Unit]])): IFieldObject = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+  inline def apply(): IFieldObject = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IFieldObject]
   }
   
@@ -448,7 +448,9 @@ object IFieldObject {
     
     inline def setValidatorsUndefined: Self = StObject.set(x, "validators", js.undefined)
     
-    inline def setValue(value: js.UndefOr[js.Function0[Any]] & (js.UndefOr[js.Function1[/* val */ Any, Unit]])): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: () => Any): Self = StObject.set(x, "value", js.Any.fromFunction0(value))
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
     inline def setWatcher(value: IWatcher | js.Array[IWatcher]): Self = StObject.set(x, "watcher", value.asInstanceOf[js.Any])
     

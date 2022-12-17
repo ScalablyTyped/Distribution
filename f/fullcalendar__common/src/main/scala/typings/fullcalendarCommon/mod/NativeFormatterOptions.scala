@@ -6,8 +6,6 @@ import typings.fullcalendarCommon.fullcalendarCommonStrings.narrow
 import typings.fullcalendarCommon.fullcalendarCommonStrings.numeric
 import typings.fullcalendarCommon.fullcalendarCommonStrings.short
 import typings.std.Intl.DateTimeFormatOptions
-import typings.std.stdStrings.`best fit`
-import typings.std.stdStrings.basic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,8 +26,8 @@ trait NativeFormatterOptions
 }
 object NativeFormatterOptions {
   
-  inline def apply(formatMatcher: (js.UndefOr[(`best fit`) | basic]) & (js.UndefOr[basic | (`best fit`)])): NativeFormatterOptions = {
-    val __obj = js.Dynamic.literal(formatMatcher = formatMatcher.asInstanceOf[js.Any])
+  inline def apply(): NativeFormatterOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NativeFormatterOptions]
   }
   

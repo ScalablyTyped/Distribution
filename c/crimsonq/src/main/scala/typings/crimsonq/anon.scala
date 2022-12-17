@@ -165,12 +165,7 @@ object anon {
       * }
       * ```
       */
-    val default: Typeofdefault & (Instantiable3[
-        /* port */ Double, 
-        /* host */ String, 
-        /* options */ RedisOptions, 
-        typings.ioredis.mod.default
-      ]) = js.native
+    val default: Typeofdefault = js.native
     
     var AbstractConnector: Instantiable1[/* disconnectTimeout */ Double, typings.ioredis.mod.AbstractConnector] = js.native
     
@@ -200,12 +195,7 @@ object anon {
       * }
       * ```
       */
-    val Redis: TypeofRedis & (Instantiable3[
-        /* port */ Double, 
-        /* host */ String, 
-        /* options */ RedisOptions, 
-        typings.ioredis.mod.Redis
-      ]) = js.native
+    val Redis: TypeofRedis = js.native
     
     val ReplyError: Any = js.native
     

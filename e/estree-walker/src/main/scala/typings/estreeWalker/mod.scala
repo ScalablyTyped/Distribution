@@ -13,9 +13,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def asyncWalk(ast: typings.estree.mod.BaseNode, param1: Enter): js.Promise[typings.estree.mod.BaseNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("asyncWalk")(ast.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.estree.mod.BaseNode]]
+  inline def asyncWalk(ast: typings.estree.mod.BaseNode, param1: Leave): js.Promise[typings.estree.mod.BaseNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("asyncWalk")(ast.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.estree.mod.BaseNode]]
   
-  inline def walk(ast: typings.estree.mod.BaseNode, param1: Leave): typings.estree.mod.BaseNode = (^.asInstanceOf[js.Dynamic].applyDynamic("walk")(ast.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[typings.estree.mod.BaseNode]
+  inline def walk(ast: typings.estree.mod.BaseNode, param1: Enter): typings.estree.mod.BaseNode = (^.asInstanceOf[js.Dynamic].applyDynamic("walk")(ast.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[typings.estree.mod.BaseNode]
   
   type AsyncHandler = js.ThisFunction4[
     /* this */ Remove, 

@@ -1,7 +1,7 @@
 package typings.jssha.anon
 
-import typings.jssha.distSha1Mod.EncodingType
-import typings.jssha.distSha1Mod.FixedLengthOptionsEncodingType
+import typings.jssha.mod.EncodingType
+import typings.jssha.mod.FixedLengthOptionsEncodingType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -16,11 +16,11 @@ trait PickImplnoResultsPartialP
   
   var maxSelections: js.UndefOr[String] = js.undefined
   
-  var noResults: String & js.UndefOr[String]
+  var noResults: String
 }
 object PickImplnoResultsPartialP {
   
-  inline def apply(noResults: String & js.UndefOr[String]): PickImplnoResultsPartialP = {
+  inline def apply(noResults: String): PickImplnoResultsPartialP = {
     val __obj = js.Dynamic.literal(noResults = noResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplnoResultsPartialP]
   }
@@ -39,6 +39,6 @@ object PickImplnoResultsPartialP {
     
     inline def setMaxSelectionsUndefined: Self = StObject.set(x, "maxSelections", js.undefined)
     
-    inline def setNoResults(value: String & js.UndefOr[String]): Self = StObject.set(x, "noResults", value.asInstanceOf[js.Any])
+    inline def setNoResults(value: String): Self = StObject.set(x, "noResults", value.asInstanceOf[js.Any])
   }
 }

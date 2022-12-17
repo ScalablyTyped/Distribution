@@ -10,7 +10,7 @@ trait PickImplloadingPartialPic
   extends StObject
      with Param {
   
-  var loading: String & js.UndefOr[String]
+  var loading: String
   
   var popup: js.UndefOr[String] = js.undefined
   
@@ -22,14 +22,14 @@ trait PickImplloadingPartialPic
 }
 object PickImplloadingPartialPic {
   
-  inline def apply(loading: String & js.UndefOr[String]): PickImplloadingPartialPic = {
+  inline def apply(loading: String): PickImplloadingPartialPic = {
     val __obj = js.Dynamic.literal(loading = loading.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplloadingPartialPic]
   }
   
   extension [Self <: PickImplloadingPartialPic](x: Self) {
     
-    inline def setLoading(value: String & js.UndefOr[String]): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+    inline def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     
     inline def setPopup(value: String): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
     

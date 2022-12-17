@@ -1,7 +1,7 @@
 package typings.postcssSelectorParser.mod
 
-import typings.postcssSelectorParser.anon.After
-import typings.postcssSelectorParser.anon.Insensitive
+import typings.postcssSelectorParser.anon.Before
+import typings.postcssSelectorParser.anon.Operator
 import typings.postcssSelectorParser.postcssSelectorParserStrings._empty
 import typings.postcssSelectorParser.postcssSelectorParserStrings.attributeNS
 import typings.postcssSelectorParser.postcssSelectorParserStrings.i
@@ -78,7 +78,7 @@ trait Attribute_
   
   var quoted: js.UndefOr[Boolean] = js.native
   
-  var raws: Insensitive = js.native
+  var raws: Operator = js.native
   
   /**
     * Set the unescaped value with the specified quotation options. The value
@@ -101,7 +101,7 @@ trait Attribute_
   def smartQuoteMark(options: PreferredQuoteMarkOptions): QuoteMark = js.native
   
   @JSName("spaces")
-  var spaces_Attribute_ : After = js.native
+  var spaces_Attribute_ : Before = js.native
   
   @JSName("type")
   var type_Attribute_ : typings.postcssSelectorParser.postcssSelectorParserStrings.attribute = js.native

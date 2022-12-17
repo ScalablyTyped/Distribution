@@ -20,7 +20,7 @@ object outObjectOptionalMod {
   @js.native
   trait OptionalDeep[O] extends StObject
   
-  type OptionalFlat[O] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof O ]:? O[K]} */ js.Any) & js.Object
+  type OptionalFlat[O] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof O ]:? O[K]} */ js.Any
   
   type OptionalPart[O /* <: js.Object */, depth /* <: Depth */] = /* import warning: importer.ImportType#apply Failed type conversion: ts-toolbelt.anon.DeepOptionalDeep<O>[depth] */ js.Any
 }

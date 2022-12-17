@@ -725,13 +725,13 @@ object anon {
     
     var translate: js.UndefOr[yes | no] = js.undefined
     
-    var `type`: js.UndefOr[HTMLInputTypeAttribute] & js.UndefOr[InputType]
+    var `type`: js.UndefOr[HTMLInputTypeAttribute] = js.undefined
     
     var typeof: js.UndefOr[String] = js.undefined
     
     var unselectable: js.UndefOr[on | off] = js.undefined
     
-    var value: (js.UndefOr[String | js.Array[String] | Double]) & (js.UndefOr[Double | String | Null])
+    var value: js.UndefOr[String | js.Array[String] | Double] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
     
@@ -739,12 +739,8 @@ object anon {
   }
   object DisplayTypeInputPartialth {
     
-    inline def apply(
-      `type`: js.UndefOr[HTMLInputTypeAttribute] & js.UndefOr[InputType],
-      value: (js.UndefOr[String | js.Array[String] | Double]) & (js.UndefOr[Double | String | Null])
-    ): DisplayTypeInputPartialth = {
-      val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    inline def apply(): DisplayTypeInputPartialth = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DisplayTypeInputPartialth]
     }
     
@@ -1626,7 +1622,9 @@ object anon {
       
       inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
-      inline def setType(value: js.UndefOr[HTMLInputTypeAttribute] & js.UndefOr[InputType]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: HTMLInputTypeAttribute): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
       inline def setTypeof(value: String): Self = StObject.set(x, "typeof", value.asInstanceOf[js.Any])
       
@@ -1636,7 +1634,11 @@ object anon {
       
       inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
       
-      inline def setValue(value: (js.UndefOr[String | js.Array[String] | Double]) & (js.UndefOr[Double | String | Null])): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String | js.Array[String] | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
       
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       

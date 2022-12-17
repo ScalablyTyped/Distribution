@@ -1,20 +1,19 @@
 package typings.firebaseAuth.anon
 
-import typings.firebaseAuth.distSrcApiAuthenticationMfaMod.IdTokenMfaResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `34` extends StObject {
   
-  var _serverResponse: IdTokenMfaResponse
+  var appName: js.UndefOr[typings.firebaseAuth.distSrcModelAuthMod.AppName] = js.undefined
   
-  var appName: typings.firebaseAuth.distSrcModelAuthMod.AppName
+  var originalMessage: js.UndefOr[String] = js.undefined
 }
 object `34` {
   
-  inline def apply(_serverResponse: IdTokenMfaResponse, appName: typings.firebaseAuth.distSrcModelAuthMod.AppName): `34` = {
-    val __obj = js.Dynamic.literal(_serverResponse = _serverResponse.asInstanceOf[js.Any], appName = appName.asInstanceOf[js.Any])
+  inline def apply(): `34` = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`34`]
   }
   
@@ -22,6 +21,10 @@ object `34` {
     
     inline def setAppName(value: typings.firebaseAuth.distSrcModelAuthMod.AppName): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
     
-    inline def set_serverResponse(value: IdTokenMfaResponse): Self = StObject.set(x, "_serverResponse", value.asInstanceOf[js.Any])
+    inline def setAppNameUndefined: Self = StObject.set(x, "appName", js.undefined)
+    
+    inline def setOriginalMessage(value: String): Self = StObject.set(x, "originalMessage", value.asInstanceOf[js.Any])
+    
+    inline def setOriginalMessageUndefined: Self = StObject.set(x, "originalMessage", js.undefined)
   }
 }

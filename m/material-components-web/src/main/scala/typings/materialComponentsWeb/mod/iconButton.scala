@@ -9,13 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object iconButton {
   
-  @JSImport("material-components-web", "iconButton.default")
-  @js.native
-  open class default ()
-    extends typings.materialIconButton.mod.default {
-    def this(adapter: PartialMDCIconButtonToggl) = this()
-  }
-  
   @JSImport("material-components-web", "iconButton.MDCIconButtonToggle")
   @js.native
   open class MDCIconButtonToggle protected ()

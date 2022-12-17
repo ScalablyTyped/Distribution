@@ -26,19 +26,12 @@ object anon {
     
     var protocol: String
     
-    var query: js.UndefOr[QueryParameterBag] & QueryParameterBag
+    var query: js.UndefOr[QueryParameterBag] = js.undefined
   }
   object HttpRequestqueryQueryPara {
     
-    inline def apply(
-      headers: HeaderBag,
-      hostname: String,
-      method: String,
-      path: String,
-      protocol: String,
-      query: js.UndefOr[QueryParameterBag] & QueryParameterBag
-    ): HttpRequestqueryQueryPara = {
-      val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
+    inline def apply(headers: HeaderBag, hostname: String, method: String, path: String, protocol: String): HttpRequestqueryQueryPara = {
+      val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
       __obj.asInstanceOf[HttpRequestqueryQueryPara]
     }
     
@@ -62,7 +55,9 @@ object anon {
       
       inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      inline def setQuery(value: js.UndefOr[QueryParameterBag] & QueryParameterBag): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: QueryParameterBag): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     }
   }
   

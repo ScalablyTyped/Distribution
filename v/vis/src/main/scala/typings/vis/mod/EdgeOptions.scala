@@ -3,8 +3,8 @@ package typings.vis.mod
 import typings.vis.anon.Angle
 import typings.vis.anon.Enabled
 import typings.vis.anon.From
-import typings.vis.anon.Maximum
 import typings.vis.anon.To
+import typings.vis.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,7 +57,7 @@ trait EdgeOptions extends StObject {
   
   var width: js.UndefOr[Double] = js.undefined
   
-  var widthConstraint: js.UndefOr[Double | Boolean | Maximum] = js.undefined
+  var widthConstraint: js.UndefOr[Double | Boolean | `0`] = js.undefined
 }
 object EdgeOptions {
   
@@ -156,7 +156,7 @@ object EdgeOptions {
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    inline def setWidthConstraint(value: Double | Boolean | Maximum): Self = StObject.set(x, "widthConstraint", value.asInstanceOf[js.Any])
+    inline def setWidthConstraint(value: Double | Boolean | `0`): Self = StObject.set(x, "widthConstraint", value.asInstanceOf[js.Any])
     
     inline def setWidthConstraintUndefined: Self = StObject.set(x, "widthConstraint", js.undefined)
     

@@ -16,11 +16,11 @@ trait PickImplsidebarPartialPic
   
   var pusher: js.UndefOr[String] = js.undefined
   
-  var sidebar: String & js.UndefOr[String]
+  var sidebar: String
 }
 object PickImplsidebarPartialPic {
   
-  inline def apply(sidebar: String & js.UndefOr[String]): PickImplsidebarPartialPic = {
+  inline def apply(sidebar: String): PickImplsidebarPartialPic = {
     val __obj = js.Dynamic.literal(sidebar = sidebar.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplsidebarPartialPic]
   }
@@ -39,6 +39,6 @@ object PickImplsidebarPartialPic {
     
     inline def setPusherUndefined: Self = StObject.set(x, "pusher", js.undefined)
     
-    inline def setSidebar(value: String & js.UndefOr[String]): Self = StObject.set(x, "sidebar", value.asInstanceOf[js.Any])
+    inline def setSidebar(value: String): Self = StObject.set(x, "sidebar", value.asInstanceOf[js.Any])
   }
 }

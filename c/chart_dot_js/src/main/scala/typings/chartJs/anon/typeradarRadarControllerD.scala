@@ -59,7 +59,7 @@ trait typeradarRadarControllerD extends StObject {
   /**
     * Both line and radar charts support a fill option on the dataset object which can be used to create area between two datasets or a dataset and a boundary, i.e. the scale origin, start or end
     */
-  var fill: (ScriptableAndArray[FillTarget | ComplexFillTarget, ScriptableContext[radar]]) & (FillTarget | ComplexFillTarget)
+  var fill: ScriptableAndArray[FillTarget | ComplexFillTarget, ScriptableContext[radar]]
   
   /**
     * Configures the visibility state of the dataset. Set it to true, to hide the dataset from the chart.
@@ -188,7 +188,7 @@ object typeradarRadarControllerD {
     clip: Double | ChartArea | `false`,
     cubicInterpolationMode: ScriptableAndArray[default | monotone, ScriptableContext[radar]],
     drawActiveElementsOnTop: ScriptableAndArray[Boolean, ScriptableContext[radar]],
-    fill: (ScriptableAndArray[FillTarget | ComplexFillTarget, ScriptableContext[radar]]) & (FillTarget | ComplexFillTarget),
+    fill: ScriptableAndArray[FillTarget | ComplexFillTarget, ScriptableContext[radar]],
     hidden: Boolean,
     hitRadius: ScriptableAndArray[Double, ScriptableContext[radar]],
     hoverBackgroundColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[radar]],
@@ -304,9 +304,13 @@ object typeradarRadarControllerD {
     
     inline def setDrawActiveElementsOnTopVarargs(value: Boolean*): Self = StObject.set(x, "drawActiveElementsOnTop", js.Array(value*))
     
-    inline def setFill(
-      value: (ScriptableAndArray[FillTarget | ComplexFillTarget, ScriptableContext[radar]]) & (FillTarget | ComplexFillTarget)
-    ): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: ScriptableAndArray[FillTarget | ComplexFillTarget, ScriptableContext[radar]]): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    
+    inline def setFillFunction2(
+      value: (ScriptableContext[radar], /* options */ AnyObject) => js.UndefOr[FillTarget | ComplexFillTarget]
+    ): Self = StObject.set(x, "fill", js.Any.fromFunction2(value))
+    
+    inline def setFillVarargs(value: (FillTarget | ComplexFillTarget)*): Self = StObject.set(x, "fill", js.Array(value*))
     
     inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     

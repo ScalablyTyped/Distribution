@@ -78,12 +78,12 @@ inline def validate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validate"
 inline def validate(options: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
 inline def validateSchema(
-  schema: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<webpack.anon.FnCallSchemaOptionsConfiguration>[0] */ js.Any,
-  options: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<webpack.anon.FnCallSchemaOptionsConfiguration>[1] */ js.Any
+  schema: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<webpack.anon.FnCall>[0] */ js.Any,
+  options: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<webpack.anon.FnCall>[1] */ js.Any
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateSchema")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def validateSchema(
-  schema: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<webpack.anon.FnCallSchemaOptionsConfiguration>[0] */ js.Any,
-  options: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<webpack.anon.FnCallSchemaOptionsConfiguration>[1] */ js.Any,
+  schema: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<webpack.anon.FnCall>[0] */ js.Any,
+  options: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<webpack.anon.FnCall>[1] */ js.Any,
   validationConfiguration: ValidationErrorConfiguration
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateSchema")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], validationConfiguration.asInstanceOf[js.Any])).asInstanceOf[Unit]
 

@@ -6,18 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NewMessages extends StObject {
   
+  var mailboxName: String
+  
   var newMessages: Double
   
   var oldMessages: Double
 }
 object NewMessages {
   
-  inline def apply(newMessages: Double, oldMessages: Double): NewMessages = {
-    val __obj = js.Dynamic.literal(newMessages = newMessages.asInstanceOf[js.Any], oldMessages = oldMessages.asInstanceOf[js.Any])
+  inline def apply(mailboxName: String, newMessages: Double, oldMessages: Double): NewMessages = {
+    val __obj = js.Dynamic.literal(mailboxName = mailboxName.asInstanceOf[js.Any], newMessages = newMessages.asInstanceOf[js.Any], oldMessages = oldMessages.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewMessages]
   }
   
   extension [Self <: NewMessages](x: Self) {
+    
+    inline def setMailboxName(value: String): Self = StObject.set(x, "mailboxName", value.asInstanceOf[js.Any])
     
     inline def setNewMessages(value: Double): Self = StObject.set(x, "newMessages", value.asInstanceOf[js.Any])
     

@@ -59,12 +59,4 @@ object pixiSettingsStrings {
     extends StObject
        with ContextIds
   inline def webgl2: webgl2 = "webgl2".asInstanceOf[webgl2]
-  
-  @js.native
-  sealed trait webglcontextlost extends StObject
-  inline def webglcontextlost: webglcontextlost = "webglcontextlost".asInstanceOf[webglcontextlost]
-  
-  @js.native
-  sealed trait webglcontextrestore extends StObject
-  inline def webglcontextrestore: webglcontextrestore = "webglcontextrestore".asInstanceOf[webglcontextrestore]
 }

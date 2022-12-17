@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * stdin during execution of listr tasks
   */
 @js.native
-trait SimpleRenderer
-  extends StObject
-     with ListrRenderer {
+trait SimpleRenderer extends ListrRenderer {
   
   /**
     * Event type renderer map contains functions to process different task events

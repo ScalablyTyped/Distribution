@@ -6,7 +6,7 @@ import typings.accepts.mod.Accepts
 import typings.contentDisposition.mod.Options
 import typings.cookies.mod.Cookies
 import typings.keygrip.mod.Keygrip
-import typings.koa.anon.Body
+import typings.koa.anon.BodyUnknown
 import typings.koa.anon.Env
 import typings.koa.anon.FnCall
 import typings.koa.koaBooleans.`false`
@@ -1038,7 +1038,7 @@ object mod {
       */
     var respond: js.UndefOr[Boolean] = js.native
     
-    var response: Body & Response = js.native
+    var response: BodyUnknown = js.native
     
     /**
       * Get the search string. Same as the querystring

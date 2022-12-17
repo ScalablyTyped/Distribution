@@ -1,6 +1,5 @@
 package typings.vscode.anon
 
-import typings.vscode.vscodeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,7 +45,7 @@ trait AuthenticationGetSessionOClearSessionPreference extends StObject {
     *
     * This defaults to false.
     */
-  var forceNewSession: (js.UndefOr[Boolean | Detail]) & (`true` | Detail)
+  var forceNewSession: js.UndefOr[Boolean | Detail] = js.undefined
   
   /**
     * Whether we should show the indication to sign in in the Accounts menu.
@@ -62,8 +61,8 @@ trait AuthenticationGetSessionOClearSessionPreference extends StObject {
 }
 object AuthenticationGetSessionOClearSessionPreference {
   
-  inline def apply(forceNewSession: (js.UndefOr[Boolean | Detail]) & (`true` | Detail)): AuthenticationGetSessionOClearSessionPreference = {
-    val __obj = js.Dynamic.literal(forceNewSession = forceNewSession.asInstanceOf[js.Any])
+  inline def apply(): AuthenticationGetSessionOClearSessionPreference = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuthenticationGetSessionOClearSessionPreference]
   }
   
@@ -77,7 +76,9 @@ object AuthenticationGetSessionOClearSessionPreference {
     
     inline def setCreateIfNoneUndefined: Self = StObject.set(x, "createIfNone", js.undefined)
     
-    inline def setForceNewSession(value: (js.UndefOr[Boolean | Detail]) & (`true` | Detail)): Self = StObject.set(x, "forceNewSession", value.asInstanceOf[js.Any])
+    inline def setForceNewSession(value: Boolean | Detail): Self = StObject.set(x, "forceNewSession", value.asInstanceOf[js.Any])
+    
+    inline def setForceNewSessionUndefined: Self = StObject.set(x, "forceNewSession", js.undefined)
     
     inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     

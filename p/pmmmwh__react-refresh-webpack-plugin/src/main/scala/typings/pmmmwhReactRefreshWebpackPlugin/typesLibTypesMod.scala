@@ -180,12 +180,12 @@ object typesLibTypesMod {
     /**
       * Modifies how the error overlay integration works in the plugin.
       */
-    var overlay: (js.UndefOr[Boolean | ErrorOverlayOptions]) & (`false` | NormalizedErrorOverlayOptions)
+    var overlay: js.UndefOr[Boolean | ErrorOverlayOptions] = js.undefined
   }
   object NormalizedPluginOptions {
     
-    inline def apply(overlay: (js.UndefOr[Boolean | ErrorOverlayOptions]) & (`false` | NormalizedErrorOverlayOptions)): NormalizedPluginOptions = {
-      val __obj = js.Dynamic.literal(overlay = overlay.asInstanceOf[js.Any])
+    inline def apply(): NormalizedPluginOptions = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NormalizedPluginOptions]
     }
     
@@ -217,7 +217,9 @@ object typesLibTypesMod {
       
       inline def setLibraryUndefined: Self = StObject.set(x, "library", js.undefined)
       
-      inline def setOverlay(value: (js.UndefOr[Boolean | ErrorOverlayOptions]) & (`false` | NormalizedErrorOverlayOptions)): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+      inline def setOverlay(value: Boolean | ErrorOverlayOptions): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+      
+      inline def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
     }
   }
   

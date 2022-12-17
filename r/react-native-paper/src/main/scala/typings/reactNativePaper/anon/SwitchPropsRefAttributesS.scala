@@ -378,7 +378,7 @@ trait SwitchPropsRefAttributesS extends StObject {
   /**
     * Callback called with the new value when it changes.
     */
-  var onValueChange: (js.UndefOr[(js.Function1[/* value */ Boolean, js.Promise[Unit] | Unit]) | Null]) & js.UndefOr[js.Function]
+  var onValueChange: js.UndefOr[(js.Function1[/* value */ Boolean, js.Promise[Unit] | Unit]) | Null] = js.undefined
   
   /**
     *
@@ -520,11 +520,8 @@ trait SwitchPropsRefAttributesS extends StObject {
 }
 object SwitchPropsRefAttributesS {
   
-  inline def apply(
-    onValueChange: (js.UndefOr[(js.Function1[/* value */ Boolean, js.Promise[Unit] | Unit]) | Null]) & js.UndefOr[js.Function],
-    theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
-  ): SwitchPropsRefAttributesS = {
-    val __obj = js.Dynamic.literal(onValueChange = onValueChange.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
+  inline def apply(theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): SwitchPropsRefAttributesS = {
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwitchPropsRefAttributesS]
   }
   
@@ -786,9 +783,11 @@ object SwitchPropsRefAttributesS {
     
     inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
     
-    inline def setOnValueChange(
-      value: (js.UndefOr[(js.Function1[/* value */ Boolean, js.Promise[Unit] | Unit]) | Null]) & js.UndefOr[js.Function]
-    ): Self = StObject.set(x, "onValueChange", value.asInstanceOf[js.Any])
+    inline def setOnValueChange(value: /* value */ Boolean => js.Promise[Unit] | Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction1(value))
+    
+    inline def setOnValueChangeNull: Self = StObject.set(x, "onValueChange", null)
+    
+    inline def setOnValueChangeUndefined: Self = StObject.set(x, "onValueChange", js.undefined)
     
     inline def setPointerEvents(value: `box-none` | none | `box-only` | auto): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
     

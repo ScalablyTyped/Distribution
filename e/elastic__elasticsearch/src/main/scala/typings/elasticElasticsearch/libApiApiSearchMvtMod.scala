@@ -2,6 +2,9 @@ package typings.elasticElasticsearch
 
 import typings.elasticElasticsearch.libApiTypesMod.SearchMvtRequest
 import typings.elasticTransport.libTransportMod.TransportRequestOptions
+import typings.elasticTransport.libTransportMod.TransportRequestOptionsWithMeta
+import typings.elasticTransport.libTransportMod.TransportRequestOptionsWithOutMeta
+import typings.elasticTransport.libTypesMod.TransportResult
 import typings.elasticTransport.mod.Transport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,10 +18,20 @@ object libApiApiSearchMvtMod {
   
   inline def default(params: SearchMvtRequest): js.Promise[js.typedarray.ArrayBuffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.typedarray.ArrayBuffer]]
   inline def default(params: SearchMvtRequest, options: TransportRequestOptions): js.Promise[js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.typedarray.ArrayBuffer]]
+  inline def default(params: SearchMvtRequest, options: TransportRequestOptionsWithMeta): js.Promise[TransportResult[js.typedarray.ArrayBuffer, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TransportResult[js.typedarray.ArrayBuffer, Any]]]
+  inline def default(params: SearchMvtRequest, options: TransportRequestOptionsWithOutMeta): js.Promise[js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.typedarray.ArrayBuffer]]
   inline def default(params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.SearchMvtRequest): js.Promise[js.typedarray.ArrayBuffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.typedarray.ArrayBuffer]]
   inline def default(
     params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.SearchMvtRequest,
     options: TransportRequestOptions
+  ): js.Promise[js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.typedarray.ArrayBuffer]]
+  inline def default(
+    params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.SearchMvtRequest,
+    options: TransportRequestOptionsWithMeta
+  ): js.Promise[TransportResult[js.typedarray.ArrayBuffer, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TransportResult[js.typedarray.ArrayBuffer, Any]]]
+  inline def default(
+    params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.SearchMvtRequest,
+    options: TransportRequestOptionsWithOutMeta
   ): js.Promise[js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.typedarray.ArrayBuffer]]
   
   trait That extends StObject {

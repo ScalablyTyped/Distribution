@@ -1,6 +1,6 @@
 package typings.ipp.mod
 
-import typings.ipp.anon.Detailedstatusmessage
+import typings.ipp.anon.Attributesnaturallanguage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ trait SimpleResponse extends StObject {
   
   var id: Double
   
-  var `operation-attributes-tag`: Detailedstatusmessage
+  var `operation-attributes-tag`: Attributesnaturallanguage
   
   var statusCode: StatusCode
   
@@ -21,7 +21,7 @@ object SimpleResponse {
   
   inline def apply(
     id: Double,
-    `operation-attributes-tag`: Detailedstatusmessage,
+    `operation-attributes-tag`: Attributesnaturallanguage,
     statusCode: StatusCode,
     version: IPPVersion
   ): SimpleResponse = {
@@ -34,7 +34,7 @@ object SimpleResponse {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def `setOperation-attributes-tag`(value: Detailedstatusmessage): Self = StObject.set(x, "operation-attributes-tag", value.asInstanceOf[js.Any])
+    inline def `setOperation-attributes-tag`(value: Attributesnaturallanguage): Self = StObject.set(x, "operation-attributes-tag", value.asInstanceOf[js.Any])
     
     inline def setStatusCode(value: StatusCode): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     

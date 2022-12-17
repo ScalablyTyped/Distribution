@@ -8,11 +8,11 @@ trait ParametersPathFilesha extends StObject {
   
   var parameters: PathFilesha
   
-  var responses: `200ContentApplicationjsonHighlightedcontent`
+  var responses: `200Content231`
 }
 object ParametersPathFilesha {
   
-  inline def apply(parameters: PathFilesha, responses: `200ContentApplicationjsonHighlightedcontent`): ParametersPathFilesha = {
+  inline def apply(parameters: PathFilesha, responses: `200Content231`): ParametersPathFilesha = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathFilesha]
   }
@@ -21,6 +21,6 @@ object ParametersPathFilesha {
     
     inline def setParameters(value: PathFilesha): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200ContentApplicationjsonHighlightedcontent`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200Content231`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

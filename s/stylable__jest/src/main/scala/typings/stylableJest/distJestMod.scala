@@ -1,7 +1,7 @@
 package typings.stylableJest
 
 import typings.std.Partial
-import typings.stylableJest.anon.CanInstrument
+import typings.stylableJest.anon.GetCacheKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,8 +12,8 @@ object distJestMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createTransformer(): CanInstrument = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransformer")().asInstanceOf[CanInstrument]
-  inline def createTransformer(options: StylableJestConfig): CanInstrument = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransformer")(options.asInstanceOf[js.Any]).asInstanceOf[CanInstrument]
+  inline def createTransformer(): GetCacheKey = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransformer")().asInstanceOf[GetCacheKey]
+  inline def createTransformer(options: StylableJestConfig): GetCacheKey = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransformer")(options.asInstanceOf[js.Any]).asInstanceOf[GetCacheKey]
   
   trait StylableJestConfig extends StObject {
     

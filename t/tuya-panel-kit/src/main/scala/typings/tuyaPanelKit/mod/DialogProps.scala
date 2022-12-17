@@ -3,7 +3,7 @@ package typings.tuyaPanelKit.mod
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.tuyaPanelKit.anon.`11`
+import typings.tuyaPanelKit.anon.`10`
 import typings.tuyaPanelKit.tuyaPanelKitStrings.Fade
 import typings.tuyaPanelKit.tuyaPanelKitStrings.PullUp
 import typings.tuyaPanelKit.tuyaPanelKitStrings.PushDown
@@ -134,7 +134,7 @@ trait DialogProps extends StObject {
     * @description Callback of clicking the confirm button
     * @defaultValue () => {}
     */
-  var onConfirm: js.UndefOr[js.Function2[/* data */ Any, /* args */ `11`, Unit]] = js.undefined
+  var onConfirm: js.UndefOr[js.Function2[/* data */ Any, /* args */ `10`, Unit]] = js.undefined
   
   /**
     * @language zh-CN
@@ -265,7 +265,7 @@ object DialogProps {
     
     inline def setMotionTypeUndefined: Self = StObject.set(x, "motionType", js.undefined)
     
-    inline def setOnConfirm(value: (/* data */ Any, /* args */ `11`) => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction2(value))
+    inline def setOnConfirm(value: (/* data */ Any, /* args */ `10`) => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction2(value))
     
     inline def setOnConfirmUndefined: Self = StObject.set(x, "onConfirm", js.undefined)
     

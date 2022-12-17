@@ -91,7 +91,7 @@ trait PickImplmessagePartialPic
   
   var maxSelections: js.UndefOr[`false` | Double] = js.undefined
   
-  var message: MessageSettings & js.UndefOr[MessageSettings]
+  var message: MessageSettings
   
   var metadata: js.UndefOr[MetadataSettings] = js.undefined
   
@@ -169,7 +169,7 @@ trait PickImplmessagePartialPic
 }
 object PickImplmessagePartialPic {
   
-  inline def apply(message: MessageSettings & js.UndefOr[MessageSettings]): PickImplmessagePartialPic = {
+  inline def apply(message: MessageSettings): PickImplmessagePartialPic = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmessagePartialPic]
   }
@@ -280,7 +280,7 @@ object PickImplmessagePartialPic {
     
     inline def setMaxSelectionsUndefined: Self = StObject.set(x, "maxSelections", js.undefined)
     
-    inline def setMessage(value: MessageSettings & js.UndefOr[MessageSettings]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: MessageSettings): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     inline def setMetadata(value: MetadataSettings): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

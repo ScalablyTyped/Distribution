@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.mod
 
-import typings.antDesignReactNative.anon.Cascade
+import typings.antDesignReactNative.anon.Format
 import typings.antDesignReactNative.libPickerMod.default
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
@@ -24,6 +24,6 @@ object Picker {
   
   @JSImport("@ant-design/react-native", "Picker.defaultProps")
   @js.native
-  def defaultProps: Cascade = js.native
-  inline def defaultProps_=(x: Cascade): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  def defaultProps: Format = js.native
+  inline def defaultProps_=(x: Format): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

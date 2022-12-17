@@ -14,7 +14,7 @@ trait Busy extends StObject {
     */
   var id: Double
   
-  var labels: js.Array[Id]
+  var labels: js.Array[IdName]
   
   /**
     * @description The name of the runner.
@@ -36,7 +36,7 @@ trait Busy extends StObject {
 }
 object Busy {
   
-  inline def apply(busy: Boolean, id: Double, labels: js.Array[Id], name: String, os: String, status: String): Busy = {
+  inline def apply(busy: Boolean, id: Double, labels: js.Array[IdName], name: String, os: String, status: String): Busy = {
     val __obj = js.Dynamic.literal(busy = busy.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Busy]
   }
@@ -47,9 +47,9 @@ object Busy {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setLabels(value: js.Array[Id]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: js.Array[IdName]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    inline def setLabelsVarargs(value: Id*): Self = StObject.set(x, "labels", js.Array(value*))
+    inline def setLabelsVarargs(value: IdName*): Self = StObject.set(x, "labels", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

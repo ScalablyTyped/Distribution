@@ -9,6 +9,8 @@ trait Page extends StObject {
   var page: js.UndefOr[Double] = js.undefined
   
   var page_size: js.UndefOr[Double] = js.undefined
+  
+  var query: js.UndefOr[String] = js.undefined
 }
 object Page {
   
@@ -26,5 +28,9 @@ object Page {
     inline def setPage_size(value: Double): Self = StObject.set(x, "page_size", value.asInstanceOf[js.Any])
     
     inline def setPage_sizeUndefined: Self = StObject.set(x, "page_size", js.undefined)
+    
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

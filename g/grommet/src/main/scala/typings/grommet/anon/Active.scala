@@ -14,7 +14,7 @@ trait Active extends StObject {
   
   var backgrounds: js.UndefOr[StringDictionary[BackgroundType | Dark]] = js.undefined
   
-  var borderSize: js.UndefOr[Small] = js.undefined
+  var borderSize: js.UndefOr[Large] = js.undefined
   
   var breakpoints: js.UndefOr[Dictx] = js.undefined
   
@@ -38,13 +38,13 @@ trait Active extends StObject {
   
   var graph: js.UndefOr[Colors] = js.undefined
   
-  var hover: js.UndefOr[`8`] = js.undefined
+  var hover: js.UndefOr[`6`] = js.undefined
   
-  var input: js.UndefOr[Font] = js.undefined
+  var input: js.UndefOr[Extend] = js.undefined
   
   var opacity: js.UndefOr[Strong] = js.undefined
   
-  var selected: js.UndefOr[`8`] = js.undefined
+  var selected: js.UndefOr[`6`] = js.undefined
   
   var size: js.UndefOr[Full] = js.undefined
   
@@ -71,7 +71,7 @@ object Active {
     
     inline def setBackgroundsUndefined: Self = StObject.set(x, "backgrounds", js.undefined)
     
-    inline def setBorderSize(value: Small): Self = StObject.set(x, "borderSize", value.asInstanceOf[js.Any])
+    inline def setBorderSize(value: Large): Self = StObject.set(x, "borderSize", value.asInstanceOf[js.Any])
     
     inline def setBorderSizeUndefined: Self = StObject.set(x, "borderSize", js.undefined)
     
@@ -119,11 +119,11 @@ object Active {
     
     inline def setGraphUndefined: Self = StObject.set(x, "graph", js.undefined)
     
-    inline def setHover(value: `8`): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+    inline def setHover(value: `6`): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
     inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     
-    inline def setInput(value: Font): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: Extend): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
@@ -131,7 +131,7 @@ object Active {
     
     inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    inline def setSelected(value: `8`): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: `6`): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     

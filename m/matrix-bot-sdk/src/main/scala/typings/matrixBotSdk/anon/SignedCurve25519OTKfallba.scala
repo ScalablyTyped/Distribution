@@ -1,7 +1,6 @@
 package typings.matrixBotSdk.anon
 
 import typings.matrixBotSdk.libModelsCryptoMod.Signatures
-import typings.matrixBotSdk.matrixBotSdkBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined matrix-bot-sdk.matrix-bot-sdk/lib/models/Crypto.SignedCurve25519OTK & {  fallback :true} */
 trait SignedCurve25519OTKfallba extends StObject {
   
-  var fallback: js.UndefOr[Boolean] & `true`
+  var fallback: js.UndefOr[Boolean] = js.undefined
   
   var key: String
   
@@ -17,14 +16,16 @@ trait SignedCurve25519OTKfallba extends StObject {
 }
 object SignedCurve25519OTKfallba {
   
-  inline def apply(fallback: js.UndefOr[Boolean] & `true`, key: String, signatures: Signatures): SignedCurve25519OTKfallba = {
-    val __obj = js.Dynamic.literal(fallback = fallback.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], signatures = signatures.asInstanceOf[js.Any])
+  inline def apply(key: String, signatures: Signatures): SignedCurve25519OTKfallba = {
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], signatures = signatures.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignedCurve25519OTKfallba]
   }
   
   extension [Self <: SignedCurve25519OTKfallba](x: Self) {
     
-    inline def setFallback(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+    inline def setFallback(value: Boolean): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+    
+    inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

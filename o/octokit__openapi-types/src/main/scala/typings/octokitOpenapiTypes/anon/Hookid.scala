@@ -7,15 +7,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Hookid extends StObject {
   
   /** The unique identifier of the hook. */
-  var hook_id: Double
+  var hook_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['hook-id'] */ js.Any
   
   /** The organization name. The name is not case sensitive. */
   @JSName("org")
-  var org_ : String
+  var org_ : /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['org'] */ js.Any
 }
 object Hookid {
   
-  inline def apply(hook_id: Double, org_ : String): Hookid = {
+  inline def apply(
+    hook_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['hook-id'] */ js.Any,
+    org_ : /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['org'] */ js.Any
+  ): Hookid = {
     val __obj = js.Dynamic.literal(hook_id = hook_id.asInstanceOf[js.Any])
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[Hookid]
@@ -23,8 +26,12 @@ object Hookid {
   
   extension [Self <: Hookid](x: Self) {
     
-    inline def setHook_id(value: Double): Self = StObject.set(x, "hook_id", value.asInstanceOf[js.Any])
+    inline def setHook_id(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['hook-id'] */ js.Any
+    ): Self = StObject.set(x, "hook_id", value.asInstanceOf[js.Any])
     
-    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['org'] */ js.Any
+    ): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
   }
 }

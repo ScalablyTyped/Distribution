@@ -462,12 +462,12 @@ object distUtilMod {
   trait EmulatorMockTokenOptions extends StObject
   object EmulatorMockTokenOptions {
     
-    inline def substringPartialFirebaseIEmail(sub: String & js.UndefOr[String]): typings.firebaseUtil.anon.substringPartialFirebaseIEmail = {
+    inline def substringPartialFirebaseIEmail(sub: String): typings.firebaseUtil.anon.substringPartialFirebaseIEmail = {
       val __obj = js.Dynamic.literal(sub = sub.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.firebaseUtil.anon.substringPartialFirebaseIEmail]
     }
     
-    inline def useridstringPartialFirebaEmail(user_id: String & js.UndefOr[String]): typings.firebaseUtil.anon.useridstringPartialFirebaEmail = {
+    inline def useridstringPartialFirebaEmail(user_id: String): typings.firebaseUtil.anon.useridstringPartialFirebaEmail = {
       val __obj = js.Dynamic.literal(user_id = user_id.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.firebaseUtil.anon.useridstringPartialFirebaEmail]
     }

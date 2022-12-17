@@ -1,30 +1,31 @@
 package typings.tuyaPanelKit.anon
 
-import typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.NavigationState
-import typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.ParamListBase
-import typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.PartialState
+import typings.std.Extract
+import typings.tuyaPanelKit.`@reactNavigationCoreTypesMod`.EventMapBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `2` extends StObject {
+trait `2`[EventName /* <: Extract[/* keyof EventMap */ String, String] */, EventMap /* <: EventMapBase */] extends StObject {
   
-  /**
-    * The updated state object after the state change.
-    */
-  var state: js.UndefOr[NavigationState[ParamListBase] | PartialState[NavigationState[ParamListBase]]] = js.undefined
+  var target: js.UndefOr[String] = js.undefined
+  
+  var `type`: EventName
 }
 object `2` {
   
-  inline def apply(): `2` = {
+  inline def apply[EventName /* <: Extract[/* keyof EventMap */ String, String] */, EventMap /* <: EventMapBase */](`type`: EventName): `2`[EventName, EventMap] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`2`]
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[`2`[EventName, EventMap]]
   }
   
-  extension [Self <: `2`](x: Self) {
+  extension [Self <: `2`[?, ?], EventName /* <: Extract[/* keyof EventMap */ String, String] */, EventMap /* <: EventMapBase */](x: Self & (`2`[EventName, EventMap])) {
     
-    inline def setState(value: NavigationState[ParamListBase] | PartialState[NavigationState[ParamListBase]]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    
+    inline def setType(value: EventName): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

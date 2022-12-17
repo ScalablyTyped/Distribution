@@ -16,7 +16,7 @@ trait PickImplpositionPartialPiContent
   
   var offset: js.UndefOr[String] = js.undefined
   
-  var position: String & js.UndefOr[String]
+  var position: String
   
   var title: js.UndefOr[String] = js.undefined
   
@@ -24,7 +24,7 @@ trait PickImplpositionPartialPiContent
 }
 object PickImplpositionPartialPiContent {
   
-  inline def apply(position: String & js.UndefOr[String]): PickImplpositionPartialPiContent = {
+  inline def apply(position: String): PickImplpositionPartialPiContent = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplpositionPartialPiContent]
   }
@@ -43,7 +43,7 @@ object PickImplpositionPartialPiContent {
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    inline def setPosition(value: String & js.UndefOr[String]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

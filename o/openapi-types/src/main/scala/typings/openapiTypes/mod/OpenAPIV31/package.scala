@@ -1,8 +1,8 @@
 package typings.openapiTypes.mod.OpenAPIV31
 
+import typings.openapiTypes.anon.Callbacks
 import typings.openapiTypes.anon.Info
 import typings.openapiTypes.anon.Parameters
-import typings.openapiTypes.anon.RequestBody
 import typings.openapiTypes.openapiTypesStrings.components
 import typings.openapiTypes.openapiTypesStrings.paths
 import typings.openapiTypes.openapiTypesStrings.webhooks
@@ -47,7 +47,7 @@ type OAuth2SecurityScheme = typings.openapiTypes.mod.OpenAPIV3.OAuth2SecuritySch
 
 type OpenIdSecurityScheme = typings.openapiTypes.mod.OpenAPIV3.OpenIdSecurityScheme
 
-type OperationObject[T /* <: js.Object */] = (Modify[typings.openapiTypes.mod.OpenAPIV3.OperationObject[T], RequestBody]) & T
+type OperationObject[T /* <: js.Object */] = (Modify[typings.openapiTypes.mod.OpenAPIV3.OperationObject[T], Callbacks]) & T
 
 type ParameterBaseObject = typings.openapiTypes.mod.OpenAPIV3.ParameterBaseObject
 

@@ -38,15 +38,11 @@ object anon {
     var src: String
     
     var width: Double
-    
-    var x: String
-    
-    var y: String
   }
   object Height {
     
-    inline def apply(height: Double, src: String, width: Double, x: String, y: String): Height = {
-      val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    inline def apply(height: Double, src: String, width: Double): Height = {
+      val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Height]
     }
     
@@ -57,10 +53,6 @@ object anon {
       inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-      
-      inline def setX(value: String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
-      
-      inline def setY(value: String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -71,11 +63,15 @@ object anon {
     var src: String
     
     var width: Double
+    
+    var x: String
+    
+    var y: String
   }
   object Src {
     
-    inline def apply(height: Double, src: String, width: Double): Src = {
-      val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    inline def apply(height: Double, src: String, width: Double, x: String, y: String): Src = {
+      val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[Src]
     }
     
@@ -86,6 +82,10 @@ object anon {
       inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      
+      inline def setX(value: String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      
+      inline def setY(value: String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -1,10 +1,9 @@
 package typings.nivoGenerators
 
 import typings.nivoGenerators.anon.CategoryCount
-import typings.nivoGenerators.anon.Color
+import typings.nivoGenerators.anon.ColorData
 import typings.nivoGenerators.anon.Country
 import typings.nivoGenerators.anon.Data
-import typings.nivoGenerators.anon.DataGroups
 import typings.nivoGenerators.anon.DataId
 import typings.nivoGenerators.anon.DataKeys
 import typings.nivoGenerators.anon.Day
@@ -20,6 +19,7 @@ import typings.nivoGenerators.anon.MaxIterations
 import typings.nivoGenerators.anon.Nodes
 import typings.nivoGenerators.anon.RandMax
 import typings.nivoGenerators.anon.SerieIds
+import typings.nivoGenerators.anon.XNumber
 import typings.nivoGenerators.anon.Y
 import typings.nivoGenerators.distTypesBulletMod.Options
 import typings.std.Record
@@ -153,12 +153,12 @@ object mod {
   inline def generateSerie(): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateSerie")().asInstanceOf[js.Array[Double]]
   inline def generateSerie(xSize: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateSerie")(xSize.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  inline def generateSeries(ids: js.Array[String], xKeys: js.Array[String]): js.Array[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSeries")(ids.asInstanceOf[js.Any], xKeys.asInstanceOf[js.Any])).asInstanceOf[js.Array[Data]]
+  inline def generateSeries(ids: js.Array[String], xKeys: js.Array[String]): js.Array[ColorData] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSeries")(ids.asInstanceOf[js.Any], xKeys.asInstanceOf[js.Any])).asInstanceOf[js.Array[ColorData]]
   
-  inline def generateStackData(): js.Array[js.Array[Y]] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateStackData")().asInstanceOf[js.Array[js.Array[Y]]]
-  inline def generateStackData(size: Double): js.Array[js.Array[Y]] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateStackData")(size.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[Y]]]
+  inline def generateStackData(): js.Array[js.Array[XNumber]] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateStackData")().asInstanceOf[js.Array[js.Array[XNumber]]]
+  inline def generateStackData(size: Double): js.Array[js.Array[XNumber]] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateStackData")(size.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[XNumber]]]
   
-  inline def generateSwarmPlotData(groups: js.Array[String], param1: CategoryCount): Groups = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSwarmPlotData")(groups.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Groups]
+  inline def generateSwarmPlotData(groups: js.Array[String], param1: CategoryCount): Data = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSwarmPlotData")(groups.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Data]
   
   inline def generateWinesTastes(): DataKeys = ^.asInstanceOf[js.Dynamic].applyDynamic("generateWinesTastes")().asInstanceOf[DataKeys]
   inline def generateWinesTastes(param0: RandMax): DataKeys = ^.asInstanceOf[js.Dynamic].applyDynamic("generateWinesTastes")(param0.asInstanceOf[js.Any]).asInstanceOf[DataKeys]
@@ -170,8 +170,8 @@ object mod {
   inline def randCountryCode(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("randCountryCode")().asInstanceOf[String]
   
   inline def randomizeSwarmPlotData(
-    previousData: ReturnType[js.Function2[/* groups */ js.Array[String], /* param1 */ CategoryCount, Groups]]
-  ): DataGroups = ^.asInstanceOf[js.Dynamic].applyDynamic("randomizeSwarmPlotData")(previousData.asInstanceOf[js.Any]).asInstanceOf[DataGroups]
+    previousData: ReturnType[js.Function2[/* groups */ js.Array[String], /* param1 */ CategoryCount, Data]]
+  ): Groups = ^.asInstanceOf[js.Dynamic].applyDynamic("randomizeSwarmPlotData")(previousData.asInstanceOf[js.Any]).asInstanceOf[Groups]
   
   object sets {
     
@@ -194,13 +194,13 @@ object mod {
     
     var color: String
     
-    var data: js.Array[Color]
+    var data: js.Array[Y]
     
     var id: String
   }
   object DrinkDatum {
     
-    inline def apply(color: String, data: js.Array[Color], id: String): DrinkDatum = {
+    inline def apply(color: String, data: js.Array[Y], id: String): DrinkDatum = {
       val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[DrinkDatum]
     }
@@ -209,9 +209,9 @@ object mod {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      inline def setData(value: js.Array[Color]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[Y]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: Color*): Self = StObject.set(x, "data", js.Array(value*))
+      inline def setDataVarargs(value: Y*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }

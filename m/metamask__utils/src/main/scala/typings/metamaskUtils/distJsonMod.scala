@@ -44,7 +44,7 @@ object distJsonMod {
   
   @JSImport("@metamask/utils/dist/json", "JsonRpcNotificationStruct")
   @js.native
-  val JsonRpcNotificationStruct: Struct_[JsonrpcMethodString, OmitidStructstringnumbern] = js.native
+  val JsonRpcNotificationStruct: Struct_[MethodStringParams, OmitidStructstringnumbern] = js.native
   
   @JSImport("@metamask/utils/dist/json", "JsonRpcParamsStruct")
   @js.native
@@ -52,7 +52,7 @@ object distJsonMod {
   
   @JSImport("@metamask/utils/dist/json", "JsonRpcRequestStruct")
   @js.native
-  val JsonRpcRequestStruct: Struct_[MethodStringParams, IdStruct] = js.native
+  val JsonRpcRequestStruct: Struct_[JsonrpcMethodString, IdStruct] = js.native
   
   @JSImport("@metamask/utils/dist/json", "JsonRpcResponseStruct")
   @js.native
@@ -151,11 +151,11 @@ object distJsonMod {
   
   type JsonRpcId = Infer[Struct_[String | Double | Null, Null]]
   
-  type JsonRpcNotification[Params /* <: JsonRpcParams */] = InferWithParams[Struct_[JsonrpcMethodString, OmitidStructstringnumbern], Params]
+  type JsonRpcNotification[Params /* <: JsonRpcParams */] = InferWithParams[Struct_[MethodStringParams, OmitidStructstringnumbern], Params]
   
   type JsonRpcParams = Infer[Struct_[js.UndefOr[js.Array[Any] | (Record[String, Any])], Null]]
   
-  type JsonRpcRequest[Params /* <: JsonRpcParams */] = InferWithParams[Struct_[MethodStringParams, IdStruct], Params]
+  type JsonRpcRequest[Params /* <: JsonRpcParams */] = InferWithParams[Struct_[JsonrpcMethodString, IdStruct], Params]
   
   type JsonRpcResponse[Result /* <: Json */] = JsonRpcSuccess[Result] | JsonRpcFailure
   

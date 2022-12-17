@@ -65,7 +65,7 @@ object distVisitMod {
     inline def SKIP_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SKIP")(x.asInstanceOf[js.Any])
   }
   
-  type asyncVisitor = asyncVisitorFn[Any] | Alias
+  type asyncVisitor = asyncVisitorFn[Any] | Collection
   
   type asyncVisitorFn[T] = js.Function3[
     /* key */ Double | key | value | Null, 
@@ -74,7 +74,7 @@ object distVisitMod {
     Unit | js.Symbol | Double | Node[Any] | (Pair[Any, Any]) | (js.Promise[Unit | js.Symbol | Double | Node[Any] | (Pair[Any, Any])])
   ]
   
-  type visitor = visitorFn[Any] | Collection
+  type visitor = visitorFn[Any] | Alias
   
   type visitorFn[T] = js.Function3[
     /* key */ Double | key | value | Null, 

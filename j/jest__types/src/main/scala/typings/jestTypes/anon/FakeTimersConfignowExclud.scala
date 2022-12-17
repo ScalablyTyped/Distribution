@@ -2,7 +2,6 @@ package typings.jestTypes.anon
 
 import typings.jestTypes.jestTypesBooleans.`false`
 import typings.jestTypes.mod.FakeableAPI
-import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,7 +51,7 @@ trait FakeTimersConfignowExclud extends StObject {
     * @defaultValue
     * The default is `Date.now()`.
     */
-  var now: (js.UndefOr[Double | js.Date]) & (js.UndefOr[Exclude[js.UndefOr[Double | js.Date], js.Date]])
+  var now: js.UndefOr[Double | js.Date] = js.undefined
   
   /**
     * The maximum number of recursive timers that will be run when calling
@@ -90,9 +89,7 @@ object FakeTimersConfignowExclud {
     
     inline def setLegacyFakeTimersUndefined: Self = StObject.set(x, "legacyFakeTimers", js.undefined)
     
-    inline def setNow(
-      value: (js.UndefOr[Double | js.Date]) & (js.UndefOr[Exclude[js.UndefOr[Double | js.Date], js.Date]])
-    ): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
+    inline def setNow(value: Double | js.Date): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
     
     inline def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
     

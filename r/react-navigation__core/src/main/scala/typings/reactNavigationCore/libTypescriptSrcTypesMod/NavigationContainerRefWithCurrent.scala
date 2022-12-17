@@ -1,7 +1,7 @@
 package typings.reactNavigationCore.libTypescriptSrcTypesMod
 
 import typings.reactNavigationCore.anon.PartialStateNavigationSta
-import typings.reactNavigationCore.anon.TargetType
+import typings.reactNavigationCore.anon.TypeEventName
 import typings.reactNavigationRouters.libTypescriptSrcTypesMod.NavigationAction
 import typings.reactNavigationRouters.libTypescriptSrcTypesMod.NavigationState
 import typings.reactNavigationRouters.libTypescriptSrcTypesMod.ParamListBase
@@ -62,7 +62,7 @@ trait NavigationContainerRefWithCurrent[ParamList /* <: js.Object */] extends St
     * If not specified, all routes receive the event.
     */
   def emit[EventName /* <: Keyof[js.Object] */](
-    options: TargetType[EventName] & (/* import warning: importer.ImportType#apply Failed type conversion: {}[EventName]['canPreventDefault'] extends true ? {  canPreventDefault :true} : {} */ js.Any)
+    options: TypeEventName[EventName] & (/* import warning: importer.ImportType#apply Failed type conversion: {}[EventName]['canPreventDefault'] extends true ? {  canPreventDefault :true} : {} */ js.Any)
   ): EventArg[
     EventName, 
     /* import warning: importer.ImportType#apply Failed type conversion: {}[EventName]['canPreventDefault'] */ js.Any, 

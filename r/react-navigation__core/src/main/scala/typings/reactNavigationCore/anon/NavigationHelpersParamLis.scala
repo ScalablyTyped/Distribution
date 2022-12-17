@@ -70,7 +70,7 @@ trait NavigationHelpersParamLis extends StObject {
     * If not specified, all routes receive the event.
     */
   def emit[EventName /* <: Keyof[js.Object] */](
-    options: TargetType[EventName] & (/* import warning: importer.ImportType#apply Failed type conversion: {}[EventName]['canPreventDefault'] extends true ? {  canPreventDefault :true} : {} */ js.Any)
+    options: TypeEventName[EventName] & (/* import warning: importer.ImportType#apply Failed type conversion: {}[EventName]['canPreventDefault'] extends true ? {  canPreventDefault :true} : {} */ js.Any)
   ): EventArg[
     EventName, 
     /* import warning: importer.ImportType#apply Failed type conversion: {}[EventName]['canPreventDefault'] */ js.Any, 

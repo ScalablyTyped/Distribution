@@ -35,13 +35,13 @@ trait substringPartialFirebaseIAuthtime
   
   var provider_id: js.UndefOr[anonymous] = js.undefined
   
-  var sub: String & js.UndefOr[String]
+  var sub: String
   
   var user_id: js.UndefOr[String] = js.undefined
 }
 object substringPartialFirebaseIAuthtime {
   
-  inline def apply(sub: String & js.UndefOr[String]): substringPartialFirebaseIAuthtime = {
+  inline def apply(sub: String): substringPartialFirebaseIAuthtime = {
     val __obj = js.Dynamic.literal(sub = sub.asInstanceOf[js.Any])
     __obj.asInstanceOf[substringPartialFirebaseIAuthtime]
   }
@@ -96,7 +96,7 @@ object substringPartialFirebaseIAuthtime {
     
     inline def setProvider_idUndefined: Self = StObject.set(x, "provider_id", js.undefined)
     
-    inline def setSub(value: String & js.UndefOr[String]): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
+    inline def setSub(value: String): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
     
     inline def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
     

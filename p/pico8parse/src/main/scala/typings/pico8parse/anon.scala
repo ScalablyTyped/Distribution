@@ -4,7 +4,6 @@ import typings.pico8parse.mod.LuaVersion
 import typings.pico8parse.mod.ast.Identifier_
 import typings.pico8parse.mod.ast.Node
 import typings.pico8parse.pico8parseBooleans.`false`
-import typings.pico8parse.pico8parseBooleans.`true`
 import typings.pico8parse.pico8parseStrings.`pseudo-latin1`
 import typings.pico8parse.pico8parseStrings.`x-user-defined`
 import typings.pico8parse.pico8parseStrings.none
@@ -177,13 +176,12 @@ object anon {
     var scope: js.UndefOr[Boolean] = js.undefined
     
     @JSName("wait")
-    var wait_FPartialOptionswaittrue: js.UndefOr[Boolean] & `true`
+    var wait_FPartialOptionswaittrue: js.UndefOr[Boolean] = js.undefined
   }
   object PartialOptionswaittrue {
     
-    inline def apply(wait_ : js.UndefOr[Boolean] & `true`): PartialOptionswaittrue = {
+    inline def apply(): PartialOptionswaittrue = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("wait")(wait_.asInstanceOf[js.Any])
       __obj.asInstanceOf[PartialOptionswaittrue]
     }
     
@@ -237,7 +235,9 @@ object anon {
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      inline def setWait_(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
+      inline def setWait_(value: Boolean): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
+      
+      inline def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
     }
   }
 }

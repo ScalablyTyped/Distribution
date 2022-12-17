@@ -8,17 +8,27 @@ trait `200Content167` extends StObject {
   
   /** Response */
   var `200`: Content167
+  
+  var `404`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any
 }
 object `200Content167` {
   
-  inline def apply(`200`: Content167): `200Content167` = {
+  inline def apply(
+    `200`: Content167,
+    `404`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any
+  ): `200Content167` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
+    __obj.updateDynamic("404")(`404`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`200Content167`]
   }
   
   extension [Self <: `200Content167`](x: Self) {
     
     inline def set200(value: Content167): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+    
+    inline def set404(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any
+    ): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
   }
 }

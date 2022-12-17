@@ -129,10 +129,10 @@ trait OmitTabFolderTabset[TabType /* <: Tab */] extends StObject {
   @JSName("_addChild")
   var _addChild_Original: js.Function2[/* child */ Widget[Any], /* index */ js.UndefOr[Double], Unit]
   
-  def _apply[Target](options: `19`[Target], rules: RuleSet[TabFolder[TabType]]): TabFolder[TabType]
+  def _apply[Target](options: `11`[Target], rules: RuleSet[TabFolder[TabType]]): TabFolder[TabType]
   @JSName("_apply")
   var _apply_Original: js.Function2[
-    /* options */ `19`[TabFolder[TabType]], 
+    /* options */ `11`[TabFolder[TabType]], 
     /* rules */ RuleSet[TabFolder[TabType]], 
     TabFolder[TabType]
   ]
@@ -308,10 +308,10 @@ trait OmitTabFolderTabset[TabType /* <: Tab */] extends StObject {
   var append_Original: js.Function1[/* repeated */ Tab, TabFolder[TabType]]
   
   @JSName("apply")
-  def apply[Target](options: `19`[Target], rules: RuleSet[TabFolder[TabType]]): TabFolder[TabType]
+  def apply[Target](options: `11`[Target], rules: RuleSet[TabFolder[TabType]]): TabFolder[TabType]
   @JSName("apply")
   var apply_Original: js.Function2[
-    /* options */ `19`[TabFolder[TabType]], 
+    /* options */ `11`[TabFolder[TabType]], 
     /* rules */ RuleSet[TabFolder[TabType]], 
     TabFolder[TabType]
   ]
@@ -630,7 +630,7 @@ object OmitTabFolderTabset {
     $trigger: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Unit,
     _acceptChild: /* child */ Widget[Any] => Boolean,
     _addChild: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit,
-    _apply: (/* options */ `19`[TabFolder[TabType]], /* rules */ RuleSet[TabFolder[TabType]]) => TabFolder[TabType],
+    _apply: (/* options */ `11`[TabFolder[TabType]], /* rules */ RuleSet[TabFolder[TabType]]) => TabFolder[TabType],
     _checkDisposed: () => Unit,
     _checkLayout: /* value */ typings.tabris.mod.Layout => Unit,
     _children: /* selector */ js.UndefOr[Selector[Tab, Tab]] => WidgetCollection[Tab],
@@ -671,7 +671,7 @@ object OmitTabFolderTabset {
     animate: (/* properties */ Opacity, /* options */ AnimationOptions) => js.Promise[Unit],
     append: /* repeated */ Tab => TabFolder[TabType],
     appendTo: /* parent */ Composite[Widget[Any]] => TabFolder[TabType],
-    apply: (/* options */ `19`[TabFolder[TabType]], /* rules */ RuleSet[TabFolder[TabType]]) => TabFolder[TabType],
+    apply: (/* options */ `11`[TabFolder[TabType]], /* rules */ RuleSet[TabFolder[TabType]]) => TabFolder[TabType],
     baseline: SiblingReferenceValue | auto | `true`,
     bottom: ConstraintValue,
     bounds: Bounds,
@@ -808,7 +808,7 @@ object OmitTabFolderTabset {
     inline def setAppendTo(value: /* parent */ Composite[Widget[Any]] => TabFolder[TabType]): Self = StObject.set(x, "appendTo", js.Any.fromFunction1(value))
     
     inline def setApply(
-      value: (/* options */ `19`[TabFolder[TabType]], /* rules */ RuleSet[TabFolder[TabType]]) => TabFolder[TabType]
+      value: (/* options */ `11`[TabFolder[TabType]], /* rules */ RuleSet[TabFolder[TabType]]) => TabFolder[TabType]
     ): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
     
     inline def setBackground(value: LinearGradientValue | ColorValue | ImageValue): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
@@ -1086,7 +1086,7 @@ object OmitTabFolderTabset {
     inline def set_addChild(value: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "_addChild", js.Any.fromFunction2(value))
     
     inline def set_apply(
-      value: (/* options */ `19`[TabFolder[TabType]], /* rules */ RuleSet[TabFolder[TabType]]) => TabFolder[TabType]
+      value: (/* options */ `11`[TabFolder[TabType]], /* rules */ RuleSet[TabFolder[TabType]]) => TabFolder[TabType]
     ): Self = StObject.set(x, "_apply", js.Any.fromFunction2(value))
     
     inline def set_checkDisposed(value: () => Unit): Self = StObject.set(x, "_checkDisposed", js.Any.fromFunction0(value))

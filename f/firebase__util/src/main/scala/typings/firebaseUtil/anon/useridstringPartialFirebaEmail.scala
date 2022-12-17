@@ -37,11 +37,11 @@ trait useridstringPartialFirebaEmail
   
   var sub: js.UndefOr[String] = js.undefined
   
-  var user_id: String & js.UndefOr[String]
+  var user_id: String
 }
 object useridstringPartialFirebaEmail {
   
-  inline def apply(user_id: String & js.UndefOr[String]): useridstringPartialFirebaEmail = {
+  inline def apply(user_id: String): useridstringPartialFirebaEmail = {
     val __obj = js.Dynamic.literal(user_id = user_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[useridstringPartialFirebaEmail]
   }
@@ -100,6 +100,6 @@ object useridstringPartialFirebaEmail {
     
     inline def setSubUndefined: Self = StObject.set(x, "sub", js.undefined)
     
-    inline def setUser_id(value: String & js.UndefOr[String]): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
+    inline def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
   }
 }

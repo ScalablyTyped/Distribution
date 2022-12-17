@@ -38,11 +38,11 @@ object dialogContentTextDialogContentTextMod extends Shortcut {
     
     var defaultComponent: D
     
-    var props: P & js.Object & Align
+    var props: P & Align
   }
   object DialogContentTextTypeMap {
     
-    inline def apply[P, D /* <: ElementType[Any] */](classKey: DialogContentTextClassKey, defaultComponent: D, props: P & js.Object & Align): DialogContentTextTypeMap[P, D] = {
+    inline def apply[P, D /* <: ElementType[Any] */](classKey: DialogContentTextClassKey, defaultComponent: D, props: P & Align): DialogContentTextTypeMap[P, D] = {
       val __obj = js.Dynamic.literal(classKey = classKey.asInstanceOf[js.Any], defaultComponent = defaultComponent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
       __obj.asInstanceOf[DialogContentTextTypeMap[P, D]]
     }
@@ -53,7 +53,7 @@ object dialogContentTextDialogContentTextMod extends Shortcut {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       
-      inline def setProps(value: P & js.Object & Align): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: P & Align): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     }
   }
   

@@ -33,7 +33,7 @@ trait PickImplinitialCheckParti
   
   var includeMargin: js.UndefOr[Boolean] = js.undefined
   
-  var initialCheck: Boolean & js.UndefOr[Boolean]
+  var initialCheck: Boolean
   
   var name: js.UndefOr[String] = js.undefined
   
@@ -103,7 +103,7 @@ trait PickImplinitialCheckParti
 }
 object PickImplinitialCheckParti {
   
-  inline def apply(initialCheck: Boolean & js.UndefOr[Boolean]): PickImplinitialCheckParti = {
+  inline def apply(initialCheck: Boolean): PickImplinitialCheckParti = {
     val __obj = js.Dynamic.literal(initialCheck = initialCheck.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplinitialCheckParti]
   }
@@ -142,7 +142,7 @@ object PickImplinitialCheckParti {
     
     inline def setIncludeMarginUndefined: Self = StObject.set(x, "includeMargin", js.undefined)
     
-    inline def setInitialCheck(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "initialCheck", value.asInstanceOf[js.Any])
+    inline def setInitialCheck(value: Boolean): Self = StObject.set(x, "initialCheck", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

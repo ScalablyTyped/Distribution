@@ -23,7 +23,7 @@ object reactHookFormInputMod extends Shortcut {
   
   type PhoneInputType[InputComponentProps, FormValues] = js.Function1[/* props */ Props[InputComponentProps, FormValues], Element]
   
-  type Props[InputComponentProps, FormValues] = FeatureProps[InputComponentProps] & ReactHookFormComponentProps[FormValues] & js.Object
+  type Props[InputComponentProps, FormValues] = FeatureProps[InputComponentProps] & ReactHookFormComponentProps[FormValues]
   
   type _To = PhoneInputType[DefaultInputComponentProps, DefaultFormValues]
   

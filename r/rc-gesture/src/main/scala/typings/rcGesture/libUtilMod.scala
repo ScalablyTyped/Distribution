@@ -1,7 +1,7 @@
 package typings.rcGesture
 
 import typings.rcGesture.anon.Angle
-import typings.rcGesture.anon.X
+import typings.rcGesture.anon.Time
 import typings.rcGesture.rcGestureInts.`16`
 import typings.rcGesture.rcGestureInts.`1`
 import typings.rcGesture.rcGestureInts.`2`
@@ -17,9 +17,9 @@ object libUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def calcMoveStatus(startTouches: Any, touches: Any, time: Any): Angle = (^.asInstanceOf[js.Dynamic].applyDynamic("calcMoveStatus")(startTouches.asInstanceOf[js.Any], touches.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Angle]
+  inline def calcMoveStatus(startTouches: Any, touches: Any, time: Any): Time = (^.asInstanceOf[js.Dynamic].applyDynamic("calcMoveStatus")(startTouches.asInstanceOf[js.Any], touches.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Time]
   
-  inline def calcMutliFingerStatus(touches: Any): js.UndefOr[X] = ^.asInstanceOf[js.Dynamic].applyDynamic("calcMutliFingerStatus")(touches.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[X]]
+  inline def calcMutliFingerStatus(touches: Any): js.UndefOr[Angle] = ^.asInstanceOf[js.Dynamic].applyDynamic("calcMutliFingerStatus")(touches.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Angle]]
   
   inline def calcRotation(startMutliFingerStatus: Any, mutliFingerStatus: Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calcRotation")(startMutliFingerStatus.asInstanceOf[js.Any], mutliFingerStatus.asInstanceOf[js.Any])).asInstanceOf[Double]
   

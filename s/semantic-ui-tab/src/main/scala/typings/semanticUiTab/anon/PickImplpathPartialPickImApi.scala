@@ -18,7 +18,7 @@ trait PickImplpathPartialPickImApi
   
   var noContent: js.UndefOr[String] = js.undefined
   
-  var path: String & js.UndefOr[String]
+  var path: String
   
   var recursion: js.UndefOr[String] = js.undefined
   
@@ -26,7 +26,7 @@ trait PickImplpathPartialPickImApi
 }
 object PickImplpathPartialPickImApi {
   
-  inline def apply(path: String & js.UndefOr[String]): PickImplpathPartialPickImApi = {
+  inline def apply(path: String): PickImplpathPartialPickImApi = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplpathPartialPickImApi]
   }
@@ -49,7 +49,7 @@ object PickImplpathPartialPickImApi {
     
     inline def setNoContentUndefined: Self = StObject.set(x, "noContent", js.undefined)
     
-    inline def setPath(value: String & js.UndefOr[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     inline def setRecursion(value: String): Self = StObject.set(x, "recursion", value.asInstanceOf[js.Any])
     

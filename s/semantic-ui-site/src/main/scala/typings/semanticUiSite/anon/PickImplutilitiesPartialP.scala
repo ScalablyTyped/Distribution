@@ -18,11 +18,11 @@ trait PickImplutilitiesPartialP
   
   var sections: js.UndefOr[Any] = js.undefined
   
-  var utilities: Any & js.UndefOr[Any]
+  var utilities: Any
 }
 object PickImplutilitiesPartialP {
   
-  inline def apply(utilities: Any & js.UndefOr[Any]): PickImplutilitiesPartialP = {
+  inline def apply(utilities: Any): PickImplutilitiesPartialP = {
     val __obj = js.Dynamic.literal(utilities = utilities.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplutilitiesPartialP]
   }
@@ -45,6 +45,6 @@ object PickImplutilitiesPartialP {
     
     inline def setSectionsUndefined: Self = StObject.set(x, "sections", js.undefined)
     
-    inline def setUtilities(value: Any & js.UndefOr[Any]): Self = StObject.set(x, "utilities", value.asInstanceOf[js.Any])
+    inline def setUtilities(value: Any): Self = StObject.set(x, "utilities", value.asInstanceOf[js.Any])
   }
 }

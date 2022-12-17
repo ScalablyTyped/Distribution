@@ -36,6 +36,12 @@ object ffmpegMod {
   
   object ffmpeg {
     
+    inline def apply(opts: Options): Result = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Result]
+    
+    @JSImport("ffmpeg", "ffmpeg")
+    @js.native
+    val ^ : js.Any = js.native
+    
     trait Mount extends StObject {
       
       var mountpoint: String

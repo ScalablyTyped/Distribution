@@ -8,11 +8,11 @@ trait ParametersQuerySinceSort extends StObject {
   
   var parameters: QuerySinceSort
   
-  var responses: `200Content142`
+  var responses: `200Content256`
 }
 object ParametersQuerySinceSort {
   
-  inline def apply(parameters: QuerySinceSort, responses: `200Content142`): ParametersQuerySinceSort = {
+  inline def apply(parameters: QuerySinceSort, responses: `200Content256`): ParametersQuerySinceSort = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersQuerySinceSort]
   }
@@ -21,6 +21,6 @@ object ParametersQuerySinceSort {
     
     inline def setParameters(value: QuerySinceSort): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content142`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200Content256`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

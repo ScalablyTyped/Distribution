@@ -141,10 +141,10 @@ object anon {
     val Children: TypeofChildren = js.native
     
     // Base component for plain JS classes
-    var Component: (Instantiable1[
+    var Component: Instantiable1[
         /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
         typings.react.mod.Component[js.Object, js.Object, js.Object]
-      ]) & TypeofComponent = js.native
+      ] = js.native
     
     val Fragment: ExoticComponent[typings.react.anon.Children] = js.native
     

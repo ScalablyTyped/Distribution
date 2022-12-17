@@ -44,7 +44,6 @@ import typings.aframe.anon.TypeofOctahedronGeometry
 import typings.aframe.anon.TypeofPlaneGeometry
 import typings.aframe.anon.TypeofPolyhedronGeometry
 import typings.aframe.anon.TypeofPropertyBinding
-import typings.aframe.anon.TypeofPropertyBindingComposite
 import typings.aframe.anon.TypeofQuaternion
 import typings.aframe.anon.TypeofRingGeometry
 import typings.aframe.anon.TypeofShaderChunk
@@ -1099,7 +1098,7 @@ trait ThreeLib extends StObject {
   
   var PositionalAudio: Instantiable1[/* listener */ AudioListener, typings.three.mod.PositionalAudio]
   
-  var PropertyBinding: TypeofPropertyBinding & TypeofPropertyBindingComposite
+  var PropertyBinding: TypeofPropertyBinding
   
   var PropertyMixer: Instantiable3[
     /* binding */ Any, 
@@ -2833,7 +2832,7 @@ object ThreeLib {
     
     inline def setPositionalAudio(value: Instantiable1[/* listener */ AudioListener, PositionalAudio]): Self = StObject.set(x, "PositionalAudio", value.asInstanceOf[js.Any])
     
-    inline def setPropertyBinding(value: TypeofPropertyBinding & TypeofPropertyBindingComposite): Self = StObject.set(x, "PropertyBinding", value.asInstanceOf[js.Any])
+    inline def setPropertyBinding(value: TypeofPropertyBinding): Self = StObject.set(x, "PropertyBinding", value.asInstanceOf[js.Any])
     
     inline def setPropertyMixer(
       value: Instantiable3[/* binding */ Any, /* typeName */ String, /* valueSize */ Double, PropertyMixer]

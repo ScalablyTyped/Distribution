@@ -1,6 +1,7 @@
 package typings.reactNativeCommunityPicker
 
 import typings.react.mod.Component
+import typings.react.mod.ComponentType
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewProps
@@ -12,9 +13,49 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object typingsPickerMod {
   
-  type ItemValue = Double | String
+  @JSImport("@react-native-community/picker/typings/Picker", "Picker")
+  @js.native
+  open class Picker protected ()
+    extends Component[PickerProps, js.Object, Any] {
+    def this(props: PickerProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: PickerProps, context: Any) = this()
+  }
+  object Picker {
+    
+    @JSImport("@react-native-community/picker/typings/Picker", "Picker")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("@react-native-community/picker/typings/Picker", "Picker.Item")
+    @js.native
+    def Item: ComponentType[PickerItemProps] = js.native
+    inline def Item_=(x: ComponentType[PickerItemProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+    
+    /**
+      * On Android, display the options in a dialog.
+      */
+    /* static member */
+    @JSImport("@react-native-community/picker/typings/Picker", "Picker.MODE_DIALOG")
+    @js.native
+    def MODE_DIALOG: String = js.native
+    inline def MODE_DIALOG_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODE_DIALOG")(x.asInstanceOf[js.Any])
+    
+    /**
+      * On Android, display the options in a dropdown (this is the default).
+      */
+    /* static member */
+    @JSImport("@react-native-community/picker/typings/Picker", "Picker.MODE_DROPDOWN")
+    @js.native
+    def MODE_DROPDOWN: String = js.native
+    inline def MODE_DROPDOWN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODE_DROPDOWN")(x.asInstanceOf[js.Any])
+  }
   
-  type Picker = Component[PickerProps, js.Object, Any]
+  type ItemValue = Double | String
   
   trait PickerItemProps extends StObject {
     

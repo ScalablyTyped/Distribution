@@ -6,8 +6,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@JSImport("rascal", "BrokerAsPromised")
 @js.native
-trait BrokerAsPromised extends EventEmitter {
+open class BrokerAsPromised protected () extends EventEmitter {
+  def this(broker: Broker) = this()
   
   def bounce(): js.Promise[Unit] = js.native
   
@@ -36,4 +38,14 @@ trait BrokerAsPromised extends EventEmitter {
   def subscribeAll(filter: js.Function1[/* config */ SubscriptionConfig, Boolean]): js.Promise[js.Array[SubscriberSessionAsPromised]] = js.native
   
   def unsubscribeAll(): js.Promise[Unit] = js.native
+}
+object BrokerAsPromised {
+  
+  @JSImport("rascal", "BrokerAsPromised")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  inline def create(config: BrokerConfig): js.Promise[BrokerAsPromised] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BrokerAsPromised]]
+  inline def create(config: BrokerConfig, components: Any): js.Promise[BrokerAsPromised] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], components.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BrokerAsPromised]]
 }

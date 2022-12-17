@@ -75,13 +75,13 @@ trait PickImplvaluePartialPickI
   
   var total: js.UndefOr[`false` | Double] = js.undefined
   
-  var value: (`false` | Double) & (js.UndefOr[`false` | Double])
+  var value: `false` | Double
   
   var verbose: js.UndefOr[Boolean] = js.undefined
 }
 object PickImplvaluePartialPickI {
   
-  inline def apply(value: (`false` | Double) & (js.UndefOr[`false` | Double])): PickImplvaluePartialPickI = {
+  inline def apply(value: `false` | Double): PickImplvaluePartialPickI = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplvaluePartialPickI]
   }
@@ -182,7 +182,7 @@ object PickImplvaluePartialPickI {
     
     inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
     
-    inline def setValue(value: (`false` | Double) & (js.UndefOr[`false` | Double])): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: `false` | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     

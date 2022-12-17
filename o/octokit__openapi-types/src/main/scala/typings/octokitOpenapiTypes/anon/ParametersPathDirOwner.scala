@@ -8,11 +8,11 @@ trait ParametersPathDirOwner extends StObject {
   
   var parameters: PathDirOwner
   
-  var responses: `200Content570`
+  var responses: `200ContentApplicationjsonSubmodulegiturl`
 }
 object ParametersPathDirOwner {
   
-  inline def apply(parameters: PathDirOwner, responses: `200Content570`): ParametersPathDirOwner = {
+  inline def apply(parameters: PathDirOwner, responses: `200ContentApplicationjsonSubmodulegiturl`): ParametersPathDirOwner = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathDirOwner]
   }
@@ -21,6 +21,6 @@ object ParametersPathDirOwner {
     
     inline def setParameters(value: PathDirOwner): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content570`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200ContentApplicationjsonSubmodulegiturl`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

@@ -76,7 +76,7 @@ trait PickImplshowNoResultsPart
   
   var selector: js.UndefOr[SelectorSettings] = js.undefined
   
-  var showNoResults: Boolean & js.UndefOr[Boolean]
+  var showNoResults: Boolean
   
   var silent: js.UndefOr[Boolean] = js.undefined
   
@@ -92,7 +92,7 @@ trait PickImplshowNoResultsPart
 }
 object PickImplshowNoResultsPart {
   
-  inline def apply(showNoResults: Boolean & js.UndefOr[Boolean]): PickImplshowNoResultsPart = {
+  inline def apply(showNoResults: Boolean): PickImplshowNoResultsPart = {
     val __obj = js.Dynamic.literal(showNoResults = showNoResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplshowNoResultsPart]
   }
@@ -209,7 +209,7 @@ object PickImplshowNoResultsPart {
     
     inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
-    inline def setShowNoResults(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "showNoResults", value.asInstanceOf[js.Any])
+    inline def setShowNoResults(value: Boolean): Self = StObject.set(x, "showNoResults", value.asInstanceOf[js.Any])
     
     inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     

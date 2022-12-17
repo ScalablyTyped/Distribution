@@ -31,7 +31,7 @@ object outObjectNonNullableMod {
   @js.native
   trait NonNullableDeep[O] extends StObject
   
-  type NonNullableFlat[O] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof O ]: ts-toolbelt.ts-toolbelt/out/Union/NonNullable.NonNullable<O[K]>} */ js.Any) & js.Object
+  type NonNullableFlat[O] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof O ]: ts-toolbelt.ts-toolbelt/out/Union/NonNullable.NonNullable<O[K]>} */ js.Any
   
   type NonNullablePart[O /* <: js.Object */, depth /* <: Depth */] = /* import warning: importer.ImportType#apply Failed type conversion: ts-toolbelt.anon.DeepNonNullableDeep<O>[depth] */ js.Any
   

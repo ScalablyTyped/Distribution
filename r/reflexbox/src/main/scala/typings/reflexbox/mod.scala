@@ -1,6 +1,6 @@
 package typings.reflexbox
 
-import typings.emotionStyledBase.mod.StyledComponent
+import typings.emotionStyled.typesBaseMod.StyledComponent
 import typings.react.mod.DetailedHTMLProps
 import typings.react.mod.ElementType
 import typings.react.mod.HTMLAttributes
@@ -33,13 +33,13 @@ object mod {
   
   trait BoxProps
     extends StObject
-       with SpaceProps[RequiredTheme, ThemeValue[space, RequiredTheme, js.Any]]
+       with SpaceProps[RequiredTheme, ThemeValue[space, RequiredTheme, Any]]
        with LayoutProps[RequiredTheme]
        with TypographyProps[RequiredTheme]
-       with ColorProps[RequiredTheme, ThemeValue[colors, RequiredTheme, js.Any]]
+       with ColorProps[RequiredTheme, ThemeValue[colors, RequiredTheme, Any]]
        with FlexboxProps[RequiredTheme] {
     
-    var as: js.UndefOr[ElementType[js.Any]] = js.undefined
+    var as: js.UndefOr[ElementType[Any]] = js.undefined
   }
   object BoxProps {
     
@@ -50,7 +50,7 @@ object mod {
     
     extension [Self <: BoxProps](x: Self) {
       
-      inline def setAs(value: ElementType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     }

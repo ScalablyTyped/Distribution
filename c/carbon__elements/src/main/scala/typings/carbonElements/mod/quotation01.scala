@@ -1,6 +1,6 @@
 package typings.carbonElements.mod
 
-import typings.carbonElements.anon.MdXlg
+import typings.carbonElements.anon.MaxMd
 import typings.carbonElements.carbonElementsDoubles.`1.3`
 import typings.carbonElements.carbonElementsInts.`0`
 import typings.carbonElements.carbonElementsInts.`400`
@@ -17,8 +17,8 @@ object quotation01 {
   
   @JSImport("@carbon/elements", "quotation01.breakpoints")
   @js.native
-  def breakpoints: MdXlg = js.native
-  inline def breakpoints_=(x: MdXlg): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("breakpoints")(x.asInstanceOf[js.Any])
+  def breakpoints: MaxMd = js.native
+  inline def breakpoints_=(x: MaxMd): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("breakpoints")(x.asInstanceOf[js.Any])
   
   @JSImport("@carbon/elements", "quotation01.fontFamily")
   @js.native

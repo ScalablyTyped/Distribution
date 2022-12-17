@@ -1,5 +1,6 @@
 package typings.styledSystem.mod
 
+import typings.csstype.mod.Property.Display
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,12 +14,7 @@ trait DisplayProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObje
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
     */
-  var display: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any, 
-      ThemeType
-    ]
-  ] = js.undefined
+  var display: js.UndefOr[ResponsiveValue[Display, ThemeType]] = js.undefined
 }
 object DisplayProps {
   
@@ -29,19 +25,12 @@ object DisplayProps {
   
   extension [Self <: DisplayProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & DisplayProps[ThemeType]) {
     
-    inline def setDisplay(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any, 
-          ThemeType
-        ]
-    ): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: ResponsiveValue[Display, ThemeType]): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
     inline def setDisplayNull: Self = StObject.set(x, "display", null)
     
     inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
-    inline def setDisplayVarargs(
-      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any) | Null)*
-    ): Self = StObject.set(x, "display", js.Array(value :_*))
+    inline def setDisplayVarargs(value: (Display | Null)*): Self = StObject.set(x, "display", js.Array(value*))
   }
 }

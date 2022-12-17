@@ -12,7 +12,7 @@ trait PickImplcontainPartialPic
   
   var checked: js.UndefOr[String] = js.undefined
   
-  var contain: String & js.UndefOr[String]
+  var contain: String
   
   var containExactly: js.UndefOr[String] = js.undefined
   
@@ -64,7 +64,7 @@ trait PickImplcontainPartialPic
 }
 object PickImplcontainPartialPic {
   
-  inline def apply(contain: String & js.UndefOr[String]): PickImplcontainPartialPic = {
+  inline def apply(contain: String): PickImplcontainPartialPic = {
     val __obj = js.Dynamic.literal(contain = contain.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplcontainPartialPic]
   }
@@ -75,7 +75,7 @@ object PickImplcontainPartialPic {
     
     inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
     
-    inline def setContain(value: String & js.UndefOr[String]): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
+    inline def setContain(value: String): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
     
     inline def setContainExactly(value: String): Self = StObject.set(x, "containExactly", value.asInstanceOf[js.Any])
     

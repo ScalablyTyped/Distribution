@@ -11,8 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @augments EventHandler
   */
+@JSImport("playcanvas", "I18n")
 @js.native
-trait I18n extends EventHandler {
+open class I18n protected () extends EventHandler {
+  /**
+    * Create a new I18n instance.
+    *
+    * @param {AppBase} app - The application.
+    */
+  def this(app: AppBase) = this()
   
   var _app: AppBase = js.native
   
@@ -148,4 +155,28 @@ trait I18n extends EventHandler {
     * as {@link I18n#addData}.
     */
   def removeData(data: js.Object): Unit = js.native
+}
+object I18n {
+  
+  @JSImport("playcanvas", "I18n")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * Returns the first available locale based on the desired locale specified. First tries to
+    * find the desired locale and then tries to find an alternative locale based on the language.
+    *
+    * @param {string} desiredLocale - The desired locale e.g. en-US.
+    * @param {object} availableLocales - A dictionary where each key is an available locale.
+    * @returns {string} The locale found or if no locale is available returns the default en-US
+    * locale.
+    * @example
+    * // With a defined dictionary of locales
+    * var availableLocales = { en: 'en-US', fr: 'fr-FR' };
+    * var locale = pc.I18n.getText('en-US', availableLocales);
+    * // returns 'en'
+    * @ignore
+    */
+  /* static member */
+  inline def findAvailableLocale(desiredLocale: String, availableLocales: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("findAvailableLocale")(desiredLocale.asInstanceOf[js.Any], availableLocales.asInstanceOf[js.Any])).asInstanceOf[String]
 }

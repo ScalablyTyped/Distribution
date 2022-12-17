@@ -1,34 +1,45 @@
 package typings.reactSketchapp.anon
 
+import typings.propTypes.mod.Requireable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Scale extends StObject {
   
-  var fontScale: Double
+  var fontScale: Requireable[Double]
   
-  var height: Double
+  var height: Requireable[Double]
   
-  var scale: Double
+  var name: Requireable[String]
   
-  var width: Double
+  var scale: Requireable[Double]
+  
+  var width: Requireable[Double]
 }
 object Scale {
   
-  inline def apply(fontScale: Double, height: Double, scale: Double, width: Double): Scale = {
-    val __obj = js.Dynamic.literal(fontScale = fontScale.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+  inline def apply(
+    fontScale: Requireable[Double],
+    height: Requireable[Double],
+    name: Requireable[String],
+    scale: Requireable[Double],
+    width: Requireable[Double]
+  ): Scale = {
+    val __obj = js.Dynamic.literal(fontScale = fontScale.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scale]
   }
   
   extension [Self <: Scale](x: Self) {
     
-    inline def setFontScale(value: Double): Self = StObject.set(x, "fontScale", value.asInstanceOf[js.Any])
+    inline def setFontScale(value: Requireable[Double]): Self = StObject.set(x, "fontScale", value.asInstanceOf[js.Any])
     
-    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Requireable[Double]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setName(value: Requireable[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setScale(value: Requireable[Double]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    
+    inline def setWidth(value: Requireable[Double]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

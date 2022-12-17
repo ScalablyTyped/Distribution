@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined @interactjs/types.@interactjs/modifiers/restrict/pointer.RestrictOptions & {  elementRect :{  top :number,   left :number,   bottom :number,   right :number}} */
 trait RestrictOptionselementRec extends StObject {
   
-  var elementRect: typings.interactjsTypes.coreTypesMod.Rect & Right
+  var elementRect: typings.interactjsTypes.coreTypesMod.Rect
   
   var enabled: js.UndefOr[Boolean] = js.undefined
   
@@ -24,7 +24,7 @@ trait RestrictOptionselementRec extends StObject {
 object RestrictOptionselementRec {
   
   inline def apply(
-    elementRect: typings.interactjsTypes.coreTypesMod.Rect & Right,
+    elementRect: typings.interactjsTypes.coreTypesMod.Rect,
     endOnly: Boolean,
     offset: typings.interactjsTypes.coreTypesMod.Rect,
     restriction: RectResolvable[
@@ -37,7 +37,7 @@ object RestrictOptionselementRec {
   
   extension [Self <: RestrictOptionselementRec](x: Self) {
     
-    inline def setElementRect(value: typings.interactjsTypes.coreTypesMod.Rect & Right): Self = StObject.set(x, "elementRect", value.asInstanceOf[js.Any])
+    inline def setElementRect(value: typings.interactjsTypes.coreTypesMod.Rect): Self = StObject.set(x, "elementRect", value.asInstanceOf[js.Any])
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

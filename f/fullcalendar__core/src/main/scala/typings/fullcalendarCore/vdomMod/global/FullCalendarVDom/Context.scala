@@ -1,7 +1,7 @@
 package typings.fullcalendarCore.vdomMod.global.FullCalendarVDom
 
-import typings.preact.anon.Children
 import typings.preact.anon.Value
+import typings.preact.anon.`0`
 import typings.preact.mod.Consumer
 import typings.preact.mod.Provider
 import typings.preact.mod.RenderableProps
@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Context[T] extends StObject {
   
-  def Consumer(props: RenderableProps[Children[T], Any]): typings.preact.mod.VNode[Any] | Null
-  def Consumer(props: RenderableProps[Children[T], Any], context: Any): typings.preact.mod.VNode[Any] | Null
+  def Consumer(props: RenderableProps[`0`[T], Any]): typings.preact.mod.VNode[Any] | Null
+  def Consumer(props: RenderableProps[`0`[T], Any], context: Any): typings.preact.mod.VNode[Any] | Null
   @JSName("Consumer")
   var Consumer_Original: Consumer[T]
   

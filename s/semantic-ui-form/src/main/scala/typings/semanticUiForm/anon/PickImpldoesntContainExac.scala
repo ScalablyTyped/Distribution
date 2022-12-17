@@ -24,7 +24,7 @@ trait PickImpldoesntContainExac
   
   var doesntContain: js.UndefOr[String] = js.undefined
   
-  var doesntContainExactly: String & js.UndefOr[String]
+  var doesntContainExactly: String
   
   var email: js.UndefOr[String] = js.undefined
   
@@ -64,7 +64,7 @@ trait PickImpldoesntContainExac
 }
 object PickImpldoesntContainExac {
   
-  inline def apply(doesntContainExactly: String & js.UndefOr[String]): PickImpldoesntContainExac = {
+  inline def apply(doesntContainExactly: String): PickImpldoesntContainExac = {
     val __obj = js.Dynamic.literal(doesntContainExactly = doesntContainExactly.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldoesntContainExac]
   }
@@ -97,7 +97,7 @@ object PickImpldoesntContainExac {
     
     inline def setDoesntContain(value: String): Self = StObject.set(x, "doesntContain", value.asInstanceOf[js.Any])
     
-    inline def setDoesntContainExactly(value: String & js.UndefOr[String]): Self = StObject.set(x, "doesntContainExactly", value.asInstanceOf[js.Any])
+    inline def setDoesntContainExactly(value: String): Self = StObject.set(x, "doesntContainExactly", value.asInstanceOf[js.Any])
     
     inline def setDoesntContainUndefined: Self = StObject.set(x, "doesntContain", js.undefined)
     

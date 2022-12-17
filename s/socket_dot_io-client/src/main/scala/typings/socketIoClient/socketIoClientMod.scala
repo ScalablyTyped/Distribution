@@ -16,24 +16,6 @@ object socketIoClientMod {
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-    * Looks up an existing `Manager` for multiplexing.
-    * If the user summons:
-    *
-    *   `io('http://localhost/a');`
-    *   `io('http://localhost/b');`
-    *
-    * We reuse the existing instance based on same scheme/port/host,
-    * and we initialize sockets for each namespace.
-    *
-    * @public
-    */
-  inline def default(): typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap]]
-  inline def default(uri: String): typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(uri.asInstanceOf[js.Any]).asInstanceOf[typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap]]
-  inline def default(uri: String, opts: PartialManagerOptionsSock): typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(uri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap]]
-  inline def default(uri: PartialManagerOptionsSock): typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(uri.asInstanceOf[js.Any]).asInstanceOf[typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap]]
-  inline def default(uri: PartialManagerOptionsSock, opts: PartialManagerOptionsSock): typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(uri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.socketIoClient.buildEsmSocketMod.Socket[DefaultEventsMap, DefaultEventsMap]]
-  
   @JSImport("socket/io-client", "Manager")
   @js.native
   open class Manager[ListenEvents /* <: EventsMap */, EmitEvents /* <: EventsMap */] ()

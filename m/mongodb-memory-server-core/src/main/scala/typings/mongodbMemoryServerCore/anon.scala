@@ -376,15 +376,8 @@ object anon {
   }
   object RequiredDryMongoBinaryOpt {
     
-    inline def apply(
-      arch: String,
-      downloadDir: String,
-      os: AnyOS,
-      platform: String,
-      systemBinary: String,
-      version: NonNullable[js.UndefOr[String]]
-    ): RequiredDryMongoBinaryOpt = {
-      val __obj = js.Dynamic.literal(arch = arch.asInstanceOf[js.Any], downloadDir = downloadDir.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], systemBinary = systemBinary.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    inline def apply(arch: String, downloadDir: String, os: AnyOS, platform: String, systemBinary: String): RequiredDryMongoBinaryOpt = {
+      val __obj = js.Dynamic.literal(arch = arch.asInstanceOf[js.Any], downloadDir = downloadDir.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], systemBinary = systemBinary.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequiredDryMongoBinaryOpt]
     }
     
@@ -401,6 +394,8 @@ object anon {
       inline def setSystemBinary(value: String): Self = StObject.set(x, "systemBinary", value.asInstanceOf[js.Any])
       
       inline def setVersion(value: NonNullable[js.UndefOr[String]]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   

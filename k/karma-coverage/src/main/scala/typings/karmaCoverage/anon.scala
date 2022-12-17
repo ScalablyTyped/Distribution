@@ -3,7 +3,6 @@ package typings.karmaCoverage
 import org.scalablytyped.runtime.StringDictionary
 import typings.istanbul.mod.Store
 import typings.karmaCoverage.karmaMod.CheckTresholds
-import typings.karmaCoverage.karmaMod.KarmaCoverageReporter
 import typings.karmaCoverage.karmaMod.Reporter
 import typings.karmaCoverage.karmaMod.ReporterType
 import typings.karmaCoverage.karmaMod.Watermarks
@@ -46,7 +45,7 @@ object anon {
     var instrumenters: js.UndefOr[Record[String, Any]] = js.undefined
     
     /** You can use multiple reporters, by providing array of options */
-    var reporters: js.UndefOr[js.Array[Reporter]] & js.UndefOr[js.Array[KarmaCoverageReporter]]
+    var reporters: js.UndefOr[js.Array[Reporter]] = js.undefined
     
     /** You can opt to specify a source store allowing for external coverage collectors access to the instrumented code. */
     var sourceStore: js.UndefOr[Store] = js.undefined
@@ -69,8 +68,8 @@ object anon {
   }
   object KarmaCoverageReporterrepo {
     
-    inline def apply(reporters: js.UndefOr[js.Array[Reporter]] & js.UndefOr[js.Array[KarmaCoverageReporter]]): KarmaCoverageReporterrepo = {
-      val __obj = js.Dynamic.literal(reporters = reporters.asInstanceOf[js.Any])
+    inline def apply(): KarmaCoverageReporterrepo = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KarmaCoverageReporterrepo]
     }
     
@@ -104,7 +103,11 @@ object anon {
       
       inline def setInstrumentersUndefined: Self = StObject.set(x, "instrumenters", js.undefined)
       
-      inline def setReporters(value: js.UndefOr[js.Array[Reporter]] & js.UndefOr[js.Array[KarmaCoverageReporter]]): Self = StObject.set(x, "reporters", value.asInstanceOf[js.Any])
+      inline def setReporters(value: js.Array[Reporter]): Self = StObject.set(x, "reporters", value.asInstanceOf[js.Any])
+      
+      inline def setReportersUndefined: Self = StObject.set(x, "reporters", js.undefined)
+      
+      inline def setReportersVarargs(value: Reporter*): Self = StObject.set(x, "reporters", js.Array(value*))
       
       inline def setSourceStore(value: Store): Self = StObject.set(x, "sourceStore", value.asInstanceOf[js.Any])
       

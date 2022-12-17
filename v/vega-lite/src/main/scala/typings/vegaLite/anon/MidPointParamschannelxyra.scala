@@ -9,10 +9,6 @@ import typings.vegaLite.buildSrcCompileScaleComponentMod.ScaleComponent
 import typings.vegaLite.buildSrcStackMod.StackProperties
 import typings.vegaLite.buildSrcTypeMod.StandardType
 import typings.vegaLite.buildSrcVegaDotschemaMod.VgValueRef
-import typings.vegaLite.vegaLiteStrings.radius
-import typings.vegaLite.vegaLiteStrings.theta
-import typings.vegaLite.vegaLiteStrings.x
-import typings.vegaLite.vegaLiteStrings.y
 import typings.vegaTypings.typesSpecSignalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,7 +19,7 @@ trait MidPointParamschannelxyra extends StObject {
   
   var bandPosition: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var channel: typings.vegaLite.buildSrcChannelMod.Channel & (x | y | radius | theta)
+  var channel: typings.vegaLite.buildSrcChannelMod.Channel
   
   var channel2Def: js.UndefOr[SecondaryChannelDef[String]] = js.undefined
   
@@ -46,7 +42,7 @@ trait MidPointParamschannelxyra extends StObject {
 object MidPointParamschannelxyra {
   
   inline def apply(
-    channel: typings.vegaLite.buildSrcChannelMod.Channel & (x | y | radius | theta),
+    channel: typings.vegaLite.buildSrcChannelMod.Channel,
     config: typings.vegaLite.buildSrcConfigMod.Config[SignalRef],
     defaultRef: VgValueRef | js.Function0[VgValueRef],
     markDef: typings.vegaLite.buildSrcMarkMod.MarkDef[typings.vegaLite.buildSrcMarkMod.Mark, SignalRef],
@@ -63,9 +59,7 @@ object MidPointParamschannelxyra {
     
     inline def setBandPositionUndefined: Self = StObject.set(x, "bandPosition", js.undefined)
     
-    inline def setChannel(
-      value: typings.vegaLite.buildSrcChannelMod.Channel & (typings.vegaLite.vegaLiteStrings.x | y | radius | theta)
-    ): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: typings.vegaLite.buildSrcChannelMod.Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
     inline def setChannel2Def(value: SecondaryChannelDef[String]): Self = StObject.set(x, "channel2Def", value.asInstanceOf[js.Any])
     

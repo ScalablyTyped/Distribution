@@ -1,0 +1,26 @@
+package typings.octokitOpenapiTypes.anon
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait ParametersPathCommentidGistidResponses304Unknown403Content48 extends StObject {
+  
+  var parameters: PathCommentidGistid
+  
+  var responses: `304Unknown403Content48`
+}
+object ParametersPathCommentidGistidResponses304Unknown403Content48 {
+  
+  inline def apply(parameters: PathCommentidGistid, responses: `304Unknown403Content48`): ParametersPathCommentidGistidResponses304Unknown403Content48 = {
+    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ParametersPathCommentidGistidResponses304Unknown403Content48]
+  }
+  
+  extension [Self <: ParametersPathCommentidGistidResponses304Unknown403Content48](x: Self) {
+    
+    inline def setParameters(value: PathCommentidGistid): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    
+    inline def setResponses(value: `304Unknown403Content48`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+  }
+}

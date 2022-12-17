@@ -124,13 +124,8 @@ object libMod {
   }
   object DisplayNamesResolvedOptions {
     
-    inline def apply(
-      fallback: NonNullable[js.UndefOr[code | none]],
-      locale: String,
-      style: NonNullable[js.UndefOr[narrow | short | long]],
-      `type`: NonNullable[language | region | script | currency]
-    ): DisplayNamesResolvedOptions = {
-      val __obj = js.Dynamic.literal(fallback = fallback.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
+    inline def apply(locale: String, `type`: NonNullable[language | region | script | currency]): DisplayNamesResolvedOptions = {
+      val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[DisplayNamesResolvedOptions]
     }
@@ -139,9 +134,13 @@ object libMod {
       
       inline def setFallback(value: NonNullable[js.UndefOr[code | none]]): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
+      inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+      
       inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
       inline def setStyle(value: NonNullable[js.UndefOr[narrow | short | long]]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
       inline def setType(value: NonNullable[language | region | script | currency]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

@@ -10,14 +10,14 @@ trait ParametersPathTemplateowner extends StObject {
   
   var requestBody: ContentApplicationjsonIncludeallbranches
   
-  var responses: `201ContentApplicationjsonAllowmergecommit`
+  var responses: `201Content102`
 }
 object ParametersPathTemplateowner {
   
   inline def apply(
     parameters: PathTemplateowner,
     requestBody: ContentApplicationjsonIncludeallbranches,
-    responses: `201ContentApplicationjsonAllowmergecommit`
+    responses: `201Content102`
   ): ParametersPathTemplateowner = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathTemplateowner]
@@ -29,6 +29,6 @@ object ParametersPathTemplateowner {
     
     inline def setRequestBody(value: ContentApplicationjsonIncludeallbranches): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `201ContentApplicationjsonAllowmergecommit`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `201Content102`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

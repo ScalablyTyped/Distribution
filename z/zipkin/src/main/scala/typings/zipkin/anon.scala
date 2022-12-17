@@ -17,20 +17,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait `0`[H] extends StObject {
+  trait `0` extends StObject {
     
-    var headers: H & XB3Flags
+    var headers: js.UndefOr[Any] = js.undefined
   }
   object `0` {
     
-    inline def apply[H](headers: H & XB3Flags): `0`[H] = {
-      val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any])
-      __obj.asInstanceOf[`0`[H]]
+    inline def apply(): `0` = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`[?], H](x: Self & `0`[H]) {
+    extension [Self <: `0`](x: Self) {
       
-      inline def setHeaders(value: H & XB3Flags): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     }
   }
   
@@ -146,22 +148,20 @@ object anon {
     }
   }
   
-  trait Headers extends StObject {
+  trait Headers[H] extends StObject {
     
-    var headers: js.UndefOr[Any] = js.undefined
+    var headers: H & XB3Flags
   }
   object Headers {
     
-    inline def apply(): Headers = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Headers]
+    inline def apply[H](headers: H & XB3Flags): Headers[H] = {
+      val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Headers[H]]
     }
     
-    extension [Self <: Headers](x: Self) {
+    extension [Self <: Headers[?], H](x: Self & Headers[H]) {
       
-      inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
-      
-      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeaders(value: H & XB3Flags): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     }
   }
   

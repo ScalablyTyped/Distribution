@@ -7,9 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VerboseRenderer
-  extends StObject
-     with ListrRenderer {
+trait VerboseRenderer extends ListrRenderer {
   
   /* private */ var logger: Any = js.native
   

@@ -28,11 +28,11 @@ object typingsModulesStateMod {
   inline def setActionValue(opts: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setActionValue")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def setActionValue(opts: ActionOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setActionValue")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  type ActionOptions = StringDictionary[CloseModal]
+  type ActionOptions = StringDictionary[Value]
   
   trait SwalState extends StObject {
     
-    var actions: StringDictionary[Value]
+    var actions: StringDictionary[CloseModal]
     
     var isOpen: Boolean
     
@@ -42,14 +42,14 @@ object typingsModulesStateMod {
   }
   object SwalState {
     
-    inline def apply(actions: StringDictionary[Value], isOpen: Boolean, promise: Reject, timer: Double): SwalState = {
+    inline def apply(actions: StringDictionary[CloseModal], isOpen: Boolean, promise: Reject, timer: Double): SwalState = {
       val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], promise = promise.asInstanceOf[js.Any], timer = timer.asInstanceOf[js.Any])
       __obj.asInstanceOf[SwalState]
     }
     
     extension [Self <: SwalState](x: Self) {
       
-      inline def setActions(value: StringDictionary[Value]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: StringDictionary[CloseModal]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
       inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       

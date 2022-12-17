@@ -81,7 +81,7 @@ object libReadonlyMapMod {
     js.Function1[/* first */ ReadonlyMap[K, Any], ReadonlyMap[K, Any]]
   ]]
   
-  inline def elem[A](E: Eq[A]): Fn21[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("elem")(E.asInstanceOf[js.Any]).asInstanceOf[Fn21[A]]
+  inline def elem[A](E: Eq[A]): Fn22[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("elem")(E.asInstanceOf[js.Any]).asInstanceOf[Fn22[A]]
   
   @JSImport("fp-ts/lib/ReadonlyMap", "empty")
   @js.native
@@ -208,19 +208,19 @@ object libReadonlyMapMod {
   
   inline def isEmpty[K, A](m: ReadonlyMap[K, A]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(m.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isSubmap[K, A](SK: Eq[K], SA: Eq[A]): Fn22[K, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("isSubmap")(SK.asInstanceOf[js.Any], SA.asInstanceOf[js.Any])).asInstanceOf[Fn22[K, A]]
+  inline def isSubmap[K, A](SK: Eq[K], SA: Eq[A]): Fn25[K, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("isSubmap")(SK.asInstanceOf[js.Any], SA.asInstanceOf[js.Any])).asInstanceOf[Fn25[K, A]]
   
   inline def keys[K](O: Ord_[K]): js.Function1[/* m */ ReadonlyMap[K, Any], js.Array[K]] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(O.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* m */ ReadonlyMap[K, Any], js.Array[K]]]
   
-  inline def lookup[K](E: Eq[K]): Fn23[K] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(E.asInstanceOf[js.Any]).asInstanceOf[Fn23[K]]
+  inline def lookup[K](E: Eq[K]): Fn24[K] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(E.asInstanceOf[js.Any]).asInstanceOf[Fn24[K]]
   
-  inline def lookupWithKey[K](E: Eq[K]): Fn24[K] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookupWithKey")(E.asInstanceOf[js.Any]).asInstanceOf[Fn24[K]]
+  inline def lookupWithKey[K](E: Eq[K]): Fn23[K] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookupWithKey")(E.asInstanceOf[js.Any]).asInstanceOf[Fn23[K]]
   
   inline def map[A, B](f: js.Function1[/* a */ A, B]): js.Function1[/* fa */ ReadonlyMap[Any, A], ReadonlyMap[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ ReadonlyMap[Any, A], ReadonlyMap[Any, B]]]
   
   inline def mapWithIndex[K, A, B](f: js.Function2[/* k */ K, /* a */ A, B]): js.Function1[/* fa */ ReadonlyMap[K, A], ReadonlyMap[K, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapWithIndex")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ ReadonlyMap[K, A], ReadonlyMap[K, B]]]
   
-  inline def member[K](E: Eq[K]): Fn25[K] = ^.asInstanceOf[js.Dynamic].applyDynamic("member")(E.asInstanceOf[js.Any]).asInstanceOf[Fn25[K]]
+  inline def member[K](E: Eq[K]): Fn21[K] = ^.asInstanceOf[js.Dynamic].applyDynamic("member")(E.asInstanceOf[js.Any]).asInstanceOf[Fn21[K]]
   
   inline def modifyAt[K](E: Eq[K]): js.Function2[
     /* k */ K, 

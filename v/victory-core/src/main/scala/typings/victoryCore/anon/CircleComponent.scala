@@ -9,16 +9,21 @@ trait CircleComponent extends StObject {
   
   var circleComponent: Element
   
+  var clipPathComponent: Element
+  
+  var groupComponent: Element
+  
   var rectComponent: Element
-  
-  var role: String
-  
-  var shapeRendering: String
 }
 object CircleComponent {
   
-  inline def apply(circleComponent: Element, rectComponent: Element, role: String, shapeRendering: String): CircleComponent = {
-    val __obj = js.Dynamic.literal(circleComponent = circleComponent.asInstanceOf[js.Any], rectComponent = rectComponent.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], shapeRendering = shapeRendering.asInstanceOf[js.Any])
+  inline def apply(
+    circleComponent: Element,
+    clipPathComponent: Element,
+    groupComponent: Element,
+    rectComponent: Element
+  ): CircleComponent = {
+    val __obj = js.Dynamic.literal(circleComponent = circleComponent.asInstanceOf[js.Any], clipPathComponent = clipPathComponent.asInstanceOf[js.Any], groupComponent = groupComponent.asInstanceOf[js.Any], rectComponent = rectComponent.asInstanceOf[js.Any])
     __obj.asInstanceOf[CircleComponent]
   }
   
@@ -26,10 +31,10 @@ object CircleComponent {
     
     inline def setCircleComponent(value: Element): Self = StObject.set(x, "circleComponent", value.asInstanceOf[js.Any])
     
+    inline def setClipPathComponent(value: Element): Self = StObject.set(x, "clipPathComponent", value.asInstanceOf[js.Any])
+    
+    inline def setGroupComponent(value: Element): Self = StObject.set(x, "groupComponent", value.asInstanceOf[js.Any])
+    
     inline def setRectComponent(value: Element): Self = StObject.set(x, "rectComponent", value.asInstanceOf[js.Any])
-    
-    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
-    
-    inline def setShapeRendering(value: String): Self = StObject.set(x, "shapeRendering", value.asInstanceOf[js.Any])
   }
 }

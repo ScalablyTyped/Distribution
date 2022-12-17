@@ -8,13 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("@material/checkbox", JSImport.Default)
-  @js.native
-  open class default ()
-    extends typings.materialCheckbox.foundationMod.default {
-    def this(adapter: PartialMDCCheckboxAdapter) = this()
-  }
-  
   @JSImport("@material/checkbox", "MDCCheckbox")
   @js.native
   open class MDCCheckbox protected ()

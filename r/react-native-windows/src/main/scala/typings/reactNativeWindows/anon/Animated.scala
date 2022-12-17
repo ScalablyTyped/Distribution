@@ -6,7 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Animated extends StObject {
   
-  var animated: js.UndefOr[Boolean | Null] = js.undefined
+  var animated: js.UndefOr[Boolean] = js.undefined
+  
+  var x: js.UndefOr[Double] = js.undefined
+  
+  var y: js.UndefOr[Double] = js.undefined
 }
 object Animated {
   
@@ -19,8 +23,14 @@ object Animated {
     
     inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     
-    inline def setAnimatedNull: Self = StObject.set(x, "animated", null)
-    
     inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
+    
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

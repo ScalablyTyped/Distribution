@@ -1,6 +1,7 @@
 package typings.storybookCoreCommon.distTs3Dot9TypesMod
 
 import typings.storybookCoreCommon.anon.Bail
+import typings.storybookCoreCommon.anon.Router
 import typings.storybookCoreCommon.anon.StartTime
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,5 +21,5 @@ trait Builder[Config, Stats] extends StObject {
   
   var overridePresets: js.UndefOr[js.Array[String]] = js.native
   
-  def start(args: typings.storybookCoreCommon.anon.Options): js.Promise[Unit | Bail[Stats]] = js.native
+  def start(args: Router): js.Promise[Unit | Bail[Stats]] = js.native
 }

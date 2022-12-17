@@ -29,7 +29,7 @@ trait OptionsbabelOptionsTransf extends StObject {
   
   var ci: js.UndefOr[Boolean] = js.undefined
   
-  var configDir: js.UndefOr[String] & String
+  var configDir: js.UndefOr[String] = js.undefined
   
   var configType: js.UndefOr[DEVELOPMENT | PRODUCTION] = js.undefined
   
@@ -76,7 +76,7 @@ trait OptionsbabelOptionsTransf extends StObject {
   
   var https: js.UndefOr[Boolean] = js.undefined
   
-  var ignorePreview: js.UndefOr[Boolean] & Boolean
+  var ignorePreview: js.UndefOr[Boolean] = js.undefined
   
   var loglevel: js.UndefOr[String] = js.undefined
   
@@ -133,17 +133,15 @@ object OptionsbabelOptionsTransf {
   
   inline def apply(
     cache: FileSystemCache,
-    configDir: js.UndefOr[String] & String,
     docsMode: Boolean,
     entries: js.Array[String],
     framework: String,
     frameworkPresets: js.Array[String],
-    ignorePreview: js.UndefOr[Boolean] & Boolean,
     packageJson: PackageJson,
     presets: Presets,
     refs: Record[String, Ref]
   ): OptionsbabelOptionsTransf = {
-    val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], configDir = configDir.asInstanceOf[js.Any], docsMode = docsMode.asInstanceOf[js.Any], entries = entries.asInstanceOf[js.Any], framework = framework.asInstanceOf[js.Any], frameworkPresets = frameworkPresets.asInstanceOf[js.Any], ignorePreview = ignorePreview.asInstanceOf[js.Any], packageJson = packageJson.asInstanceOf[js.Any], presets = presets.asInstanceOf[js.Any], refs = refs.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], docsMode = docsMode.asInstanceOf[js.Any], entries = entries.asInstanceOf[js.Any], framework = framework.asInstanceOf[js.Any], frameworkPresets = frameworkPresets.asInstanceOf[js.Any], packageJson = packageJson.asInstanceOf[js.Any], presets = presets.asInstanceOf[js.Any], refs = refs.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsbabelOptionsTransf]
   }
   
@@ -159,7 +157,9 @@ object OptionsbabelOptionsTransf {
     
     inline def setCiUndefined: Self = StObject.set(x, "ci", js.undefined)
     
-    inline def setConfigDir(value: js.UndefOr[String] & String): Self = StObject.set(x, "configDir", value.asInstanceOf[js.Any])
+    inline def setConfigDir(value: String): Self = StObject.set(x, "configDir", value.asInstanceOf[js.Any])
+    
+    inline def setConfigDirUndefined: Self = StObject.set(x, "configDir", js.undefined)
     
     inline def setConfigType(value: DEVELOPMENT | PRODUCTION): Self = StObject.set(x, "configType", value.asInstanceOf[js.Any])
     
@@ -233,7 +233,9 @@ object OptionsbabelOptionsTransf {
     
     inline def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
     
-    inline def setIgnorePreview(value: js.UndefOr[Boolean] & Boolean): Self = StObject.set(x, "ignorePreview", value.asInstanceOf[js.Any])
+    inline def setIgnorePreview(value: Boolean): Self = StObject.set(x, "ignorePreview", value.asInstanceOf[js.Any])
+    
+    inline def setIgnorePreviewUndefined: Self = StObject.set(x, "ignorePreview", js.undefined)
     
     inline def setLoglevel(value: String): Self = StObject.set(x, "loglevel", value.asInstanceOf[js.Any])
     

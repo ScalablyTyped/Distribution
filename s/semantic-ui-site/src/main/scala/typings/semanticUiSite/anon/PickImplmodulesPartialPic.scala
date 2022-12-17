@@ -13,7 +13,7 @@ trait PickImplmodulesPartialPic
   
   var debug: js.UndefOr[Boolean] = js.undefined
   
-  var modules: js.Array[String] & js.UndefOr[js.Array[String]]
+  var modules: js.Array[String]
   
   var name: js.UndefOr[String] = js.undefined
   
@@ -31,7 +31,7 @@ trait PickImplmodulesPartialPic
 }
 object PickImplmodulesPartialPic {
   
-  inline def apply(modules: js.Array[String] & js.UndefOr[js.Array[String]]): PickImplmodulesPartialPic = {
+  inline def apply(modules: js.Array[String]): PickImplmodulesPartialPic = {
     val __obj = js.Dynamic.literal(modules = modules.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmodulesPartialPic]
   }
@@ -42,7 +42,9 @@ object PickImplmodulesPartialPic {
     
     inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    inline def setModules(value: js.Array[String] & js.UndefOr[js.Array[String]]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
+    inline def setModules(value: js.Array[String]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
+    
+    inline def setModulesVarargs(value: String*): Self = StObject.set(x, "modules", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -16,8 +16,8 @@ import typings.antd.anon.PopupClassName
 import typings.antd.anon.Ref
 import typings.antd.anon.SourceSelectedKeys
 import typings.antd.anon.WeakValidationMapConfigPr
+import typings.antd.anon.`2`
 import typings.antd.anon.`3`
-import typings.antd.anon.`4`
 import typings.antd.antdStrings.`4Dot24Dot2`
 import typings.antd.antdStrings.picker
 import typings.antd.libAffixMod.AffixProps
@@ -444,7 +444,7 @@ object mod {
   
   @JSImport("antd", "InputNumber")
   @js.native
-  val InputNumber: (js.Function1[/* props */ `3` & InputNumberProps[ValueType], ReactElement]) & `4` = js.native
+  val InputNumber: (js.Function1[/* props */ `2` & InputNumberProps[ValueType], ReactElement]) & `3` = js.native
   
   @JSImport("antd", "Layout")
   @js.native

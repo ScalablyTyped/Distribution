@@ -40,8 +40,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @augments Component
   */
+@JSImport("playcanvas", "RigidBodyComponent")
 @js.native
-trait RigidBodyComponent extends Component {
+open class RigidBodyComponent protected () extends Component {
+  /**
+    * Create a new RigidBodyComponent instance.
+    *
+    * @param {RigidBodyComponentSystem} system - The ComponentSystem that created this component.
+    * @param {Entity} entity - The entity this component is attached to.
+    */
+  def this(system: RigidBodyComponentSystem, entity: Entity) = this()
   
   var _angularDamping: Double = js.native
   
@@ -425,4 +433,43 @@ trait RigidBodyComponent extends Component {
     * @type {string}
     */
   def type_=(arg: String): Unit = js.native
+}
+object RigidBodyComponent {
+  
+  @JSImport("playcanvas", "RigidBodyComponent")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * Fired when a contact occurs between two rigid bodies.
+    *
+    * @event RigidBodyComponent#contact
+    * @param {ContactResult} result - Details of the contact between the two rigid bodies.
+    */
+  /**
+    * Fired when two rigid bodies start touching.
+    *
+    * @event RigidBodyComponent#collisionstart
+    * @param {ContactResult} result - Details of the contact between the two rigid bodies.
+    */
+  /**
+    * Fired when two rigid bodies stop touching.
+    *
+    * @event RigidBodyComponent#collisionend
+    * @param {Entity} other - The {@link Entity} that stopped touching this rigid body.
+    */
+  /**
+    * Fired when a rigid body enters a trigger volume.
+    *
+    * @event RigidBodyComponent#triggerenter
+    * @param {Entity} other - The {@link Entity} with trigger volume that this rigid body entered.
+    */
+  /**
+    * Fired when a rigid body exits a trigger volume.
+    *
+    * @event RigidBodyComponent#triggerleave
+    * @param {Entity} other - The {@link Entity} with trigger volume that this rigid body exited.
+    */
+  /* static member */
+  inline def onLibraryLoaded(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onLibraryLoaded")().asInstanceOf[Unit]
 }

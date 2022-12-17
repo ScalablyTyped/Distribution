@@ -10,13 +10,13 @@ trait JsonrpcMethodParams extends StObject {
   
   var jsonrpc: String
   
-  var method: String
+  var method: js.Array[scala.Nothing]
   
   var params: Unit
 }
 object JsonrpcMethodParams {
   
-  inline def apply(id: Unit, jsonrpc: String, method: String, params: Unit): JsonrpcMethodParams = {
+  inline def apply(id: Unit, jsonrpc: String, method: js.Array[scala.Nothing], params: Unit): JsonrpcMethodParams = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], jsonrpc = jsonrpc.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsonrpcMethodParams]
   }
@@ -27,7 +27,9 @@ object JsonrpcMethodParams {
     
     inline def setJsonrpc(value: String): Self = StObject.set(x, "jsonrpc", value.asInstanceOf[js.Any])
     
-    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: js.Array[scala.Nothing]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setMethodVarargs(value: scala.Nothing*): Self = StObject.set(x, "method", js.Array(value*))
     
     inline def setParams(value: Unit): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
   }

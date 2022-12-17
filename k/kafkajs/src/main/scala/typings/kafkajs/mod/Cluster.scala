@@ -3,9 +3,9 @@ package typings.kafkajs.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.kafkajs.anon.FromBeginning
 import typings.kafkajs.anon.FromTimestamp
-import typings.kafkajs.anon.GroupIdString
-import typings.kafkajs.anon.NodeIdString
-import typings.kafkajs.anon.PartitionsArrayTopicString
+import typings.kafkajs.anon.GroupId
+import typings.kafkajs.anon.NodeId
+import typings.kafkajs.anon.Partitions
 import typings.kafkajs.anon.Port
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,15 +23,15 @@ trait Cluster extends StObject {
   
   def disconnect(): js.Promise[Unit]
   
-  def fetchTopicsOffset(topics: js.Array[PartitionsArrayTopicString & (XOR[FromBeginning, FromTimestamp])]): js.Promise[js.Array[TopicOffsets]]
+  def fetchTopicsOffset(topics: js.Array[Partitions & (XOR[FromBeginning, FromTimestamp])]): js.Promise[js.Array[TopicOffsets]]
   
-  def findBroker(node: NodeIdString): js.Promise[Broker]
+  def findBroker(node: NodeId): js.Promise[Broker]
   
   def findControllerBroker(): js.Promise[Broker]
   
-  def findGroupCoordinator(group: GroupIdString): js.Promise[Broker]
+  def findGroupCoordinator(group: GroupId): js.Promise[Broker]
   
-  def findGroupCoordinatorMetadata(group: GroupIdString): js.Promise[CoordinatorMetadata]
+  def findGroupCoordinatorMetadata(group: GroupId): js.Promise[CoordinatorMetadata]
   
   def findLeaderForPartitions(topic: String, partitions: js.Array[Double]): StringDictionary[js.Array[Double]]
   
@@ -57,11 +57,11 @@ object Cluster {
     connect: () => js.Promise[Unit],
     defaultOffset: FromBeginning => Double,
     disconnect: () => js.Promise[Unit],
-    fetchTopicsOffset: js.Array[PartitionsArrayTopicString & (XOR[FromBeginning, FromTimestamp])] => js.Promise[js.Array[TopicOffsets]],
-    findBroker: NodeIdString => js.Promise[Broker],
+    fetchTopicsOffset: js.Array[Partitions & (XOR[FromBeginning, FromTimestamp])] => js.Promise[js.Array[TopicOffsets]],
+    findBroker: NodeId => js.Promise[Broker],
     findControllerBroker: () => js.Promise[Broker],
-    findGroupCoordinator: GroupIdString => js.Promise[Broker],
-    findGroupCoordinatorMetadata: GroupIdString => js.Promise[CoordinatorMetadata],
+    findGroupCoordinator: GroupId => js.Promise[Broker],
+    findGroupCoordinatorMetadata: GroupId => js.Promise[CoordinatorMetadata],
     findLeaderForPartitions: (String, js.Array[Double]) => StringDictionary[js.Array[Double]],
     findTopicPartitionMetadata: String => js.Array[PartitionMetadata],
     getNodeIds: () => js.Array[Double],
@@ -88,16 +88,16 @@ object Cluster {
     inline def setDisconnect(value: () => js.Promise[Unit]): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
     
     inline def setFetchTopicsOffset(
-      value: js.Array[PartitionsArrayTopicString & (XOR[FromBeginning, FromTimestamp])] => js.Promise[js.Array[TopicOffsets]]
+      value: js.Array[Partitions & (XOR[FromBeginning, FromTimestamp])] => js.Promise[js.Array[TopicOffsets]]
     ): Self = StObject.set(x, "fetchTopicsOffset", js.Any.fromFunction1(value))
     
-    inline def setFindBroker(value: NodeIdString => js.Promise[Broker]): Self = StObject.set(x, "findBroker", js.Any.fromFunction1(value))
+    inline def setFindBroker(value: NodeId => js.Promise[Broker]): Self = StObject.set(x, "findBroker", js.Any.fromFunction1(value))
     
     inline def setFindControllerBroker(value: () => js.Promise[Broker]): Self = StObject.set(x, "findControllerBroker", js.Any.fromFunction0(value))
     
-    inline def setFindGroupCoordinator(value: GroupIdString => js.Promise[Broker]): Self = StObject.set(x, "findGroupCoordinator", js.Any.fromFunction1(value))
+    inline def setFindGroupCoordinator(value: GroupId => js.Promise[Broker]): Self = StObject.set(x, "findGroupCoordinator", js.Any.fromFunction1(value))
     
-    inline def setFindGroupCoordinatorMetadata(value: GroupIdString => js.Promise[CoordinatorMetadata]): Self = StObject.set(x, "findGroupCoordinatorMetadata", js.Any.fromFunction1(value))
+    inline def setFindGroupCoordinatorMetadata(value: GroupId => js.Promise[CoordinatorMetadata]): Self = StObject.set(x, "findGroupCoordinatorMetadata", js.Any.fromFunction1(value))
     
     inline def setFindLeaderForPartitions(value: (String, js.Array[Double]) => StringDictionary[js.Array[Double]]): Self = StObject.set(x, "findLeaderForPartitions", js.Any.fromFunction2(value))
     

@@ -734,7 +734,7 @@ object distNodeTypesLegacyV46Mod {
     */
   type FilterOutNeverHelper[T /* <: js.Array[Any] */, Acc /* <: js.Array[Any] */] = Acc
   
-  type FlatternAlias[T] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: T[P]} */ js.Any) & js.Object
+  type FlatternAlias[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: T[P]} */ js.Any
   
   /**
     * Get the merge functions with defaults apply from the given subset.

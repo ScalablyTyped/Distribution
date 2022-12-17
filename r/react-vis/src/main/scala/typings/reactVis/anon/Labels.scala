@@ -11,7 +11,7 @@ trait Labels extends StObject {
   
   var labels: js.UndefOr[CSSProperties] = js.undefined
   
-  var polygons: js.UndefOr[CSSProperties] = js.undefined
+  var lines: js.UndefOr[CSSProperties] = js.undefined
 }
 object Labels {
   
@@ -30,8 +30,8 @@ object Labels {
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    inline def setPolygons(value: CSSProperties): Self = StObject.set(x, "polygons", value.asInstanceOf[js.Any])
+    inline def setLines(value: CSSProperties): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
-    inline def setPolygonsUndefined: Self = StObject.set(x, "polygons", js.undefined)
+    inline def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
   }
 }

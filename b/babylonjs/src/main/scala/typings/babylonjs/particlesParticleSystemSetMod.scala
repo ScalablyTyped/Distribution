@@ -1,6 +1,6 @@
 package typings.babylonjs
 
-import typings.babylonjs.anon.Segments
+import typings.babylonjs.anon.ColorDiameter
 import typings.babylonjs.mathsMathDotvectorMod.Vector3
 import typings.babylonjs.meshesAbstractMeshMod.AbstractMesh
 import typings.babylonjs.particlesIparticlesystemMod.IParticleSystem
@@ -54,7 +54,7 @@ object particlesParticleSystemSetMod {
       * @param renderingGroupId defines the renderingGroupId to use for the sphere
       * @param scene defines the hosting scene
       */
-    def setEmitterAsSphere(options: Segments, renderingGroupId: Double, scene: Scene): Unit = js.native
+    def setEmitterAsSphere(options: ColorDiameter, renderingGroupId: Double, scene: Scene): Unit = js.native
     
     /**
       * Starts all particle systems of the set

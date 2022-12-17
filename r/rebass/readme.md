@@ -10,10 +10,10 @@ React primitive UI components built with Styled System
 | ------------------ | :-------------: |
 | Full name          | rebass |
 | Keywords           | components, react, react-component, ui, design-system, styled-system, styled-components, emotion, theming, presentational, stateless, functional |
-| # releases         | 16 |
-| # dependents       | 139 |
-| # downloads        | 3017683 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 268859.3333333333 |
+| # stars            | 7737.0 |
 
 ## Links
 - [Homepage](https://github.com/rebassjs/rebass#readme)

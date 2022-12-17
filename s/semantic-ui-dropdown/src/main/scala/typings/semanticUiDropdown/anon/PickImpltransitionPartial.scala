@@ -159,7 +159,7 @@ trait PickImpltransitionPartial
   
   var sortSelect: js.UndefOr[Boolean] = js.undefined
   
-  var transition: (auto | String) & (js.UndefOr[auto | String])
+  var transition: auto | String
   
   var useLabels: js.UndefOr[Boolean] = js.undefined
   
@@ -169,7 +169,7 @@ trait PickImpltransitionPartial
 }
 object PickImpltransitionPartial {
   
-  inline def apply(transition: (auto | String) & (js.UndefOr[auto | String])): PickImpltransitionPartial = {
+  inline def apply(transition: auto | String): PickImpltransitionPartial = {
     val __obj = js.Dynamic.literal(transition = transition.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpltransitionPartial]
   }
@@ -398,7 +398,7 @@ object PickImpltransitionPartial {
     
     inline def setSortSelectUndefined: Self = StObject.set(x, "sortSelect", js.undefined)
     
-    inline def setTransition(value: (auto | String) & (js.UndefOr[auto | String])): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+    inline def setTransition(value: auto | String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
     inline def setUseLabels(value: Boolean): Self = StObject.set(x, "useLabels", value.asInstanceOf[js.Any])
     

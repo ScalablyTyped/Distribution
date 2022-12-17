@@ -131,7 +131,7 @@ trait PickImplstateContextParti
   
   var silent: js.UndefOr[Boolean] = js.undefined
   
-  var stateContext: (String | JQuery) & (js.UndefOr[String | JQuery])
+  var stateContext: String | JQuery
   
   var successTest: js.UndefOr[js.Function1[/* response */ Any, Boolean]] = js.undefined
   
@@ -147,7 +147,7 @@ trait PickImplstateContextParti
 }
 object PickImplstateContextParti {
   
-  inline def apply(stateContext: (String | JQuery) & (js.UndefOr[String | JQuery])): PickImplstateContextParti = {
+  inline def apply(stateContext: String | JQuery): PickImplstateContextParti = {
     val __obj = js.Dynamic.literal(stateContext = stateContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplstateContextParti]
   }
@@ -318,7 +318,7 @@ object PickImplstateContextParti {
     
     inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     
-    inline def setStateContext(value: (String | JQuery) & (js.UndefOr[String | JQuery])): Self = StObject.set(x, "stateContext", value.asInstanceOf[js.Any])
+    inline def setStateContext(value: String | JQuery): Self = StObject.set(x, "stateContext", value.asInstanceOf[js.Any])
     
     inline def setSuccessTest(value: /* response */ Any => Boolean): Self = StObject.set(x, "successTest", js.Any.fromFunction1(value))
     

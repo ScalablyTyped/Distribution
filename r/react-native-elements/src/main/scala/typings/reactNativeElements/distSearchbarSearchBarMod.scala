@@ -23,9 +23,16 @@ object distSearchbarSearchBarMod extends Shortcut {
   @js.native
   val default: FunctionComponent[Pickplatformiosandroiddef] | ForwardRefExoticComponent[platformiosandroiddefault] = js.native
   
+  @JSImport("react-native-elements/dist/searchbar/SearchBar", "SearchBar")
   @js.native
-  trait SearchBar
+  open class SearchBar protected ()
     extends Component[SearchBarProps & PartialThemePropsSearchBaUpdateTheme, js.Object, Any] {
+    def this(props: SearchBarProps & PartialThemePropsSearchBaUpdateTheme) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: SearchBarProps & PartialThemePropsSearchBaUpdateTheme, context: Any) = this()
     
     def blur(): Unit = js.native
     
@@ -36,6 +43,21 @@ object distSearchbarSearchBarMod extends Shortcut {
     def focus(): Unit = js.native
     
     var searchbar: typings.reactNativeElements.distSearchbarSearchBarIosMod.default = js.native
+  }
+  object SearchBar {
+    
+    /* static member */
+    object defaultProps {
+      
+      @JSImport("react-native-elements/dist/searchbar/SearchBar", "SearchBar.defaultProps")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      @JSImport("react-native-elements/dist/searchbar/SearchBar", "SearchBar.defaultProps.platform")
+      @js.native
+      def platform: typings.reactNativeElements.reactNativeElementsStrings.default = js.native
+      inline def platform_=(x: typings.reactNativeElements.reactNativeElementsStrings.default): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("platform")(x.asInstanceOf[js.Any])
+    }
   }
   
   type SearchBarBaseProps = ComponentPropsWithRef[TypeofTextInput] & ClearIcon

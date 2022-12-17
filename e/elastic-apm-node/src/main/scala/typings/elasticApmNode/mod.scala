@@ -5,8 +5,8 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.elasticApmNode.anon.Connect
 import typings.elasticApmNode.anon.Name
 import typings.elasticApmNode.anon.Spanid
+import typings.elasticApmNode.anon.SpanidTraceid
 import typings.elasticApmNode.anon.Traceid
-import typings.elasticApmNode.anon.Transactionid
 import typings.elasticApmNode.typesAwsLambdaMod.AwsLambda.Handler
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
@@ -1001,7 +1001,7 @@ object mod extends Shortcut {
     def end(): Unit = js.native
     def end(endTime: Double): Unit = js.native
     
-    var ids: Traceid = js.native
+    var ids: SpanidTraceid = js.native
     
     var name: String = js.native
     
@@ -1120,7 +1120,7 @@ object mod extends Shortcut {
     
     def ensureParentId(): String = js.native
     
-    var ids: Transactionid = js.native
+    var ids: Traceid = js.native
     
     // The following properties and methods are currently not documented as their API isn't considered official:
     // - timestamp, ended, id, traceId, parentId, sampled, duration()

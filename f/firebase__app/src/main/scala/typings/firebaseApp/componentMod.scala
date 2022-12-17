@@ -13,11 +13,11 @@ object componentMod {
   
   trait NameServiceMapping extends StObject {
     
-    var app: FirebaseApp & typings.firebaseApp.distEsmAppSrcPublicTypesMod.FirebaseApp
+    var app: FirebaseApp
     
     var `app-version`: VersionService
     
-    var heartbeat: HeartbeatService & typings.firebaseApp.distEsmAppSrcTypesMod.HeartbeatService
+    var heartbeat: HeartbeatService
     
     var `platform-logger`: PlatformLoggerService
     
@@ -32,9 +32,9 @@ object componentMod {
   object NameServiceMapping {
     
     inline def apply(
-      app: FirebaseApp & typings.firebaseApp.distEsmAppSrcPublicTypesMod.FirebaseApp,
+      app: FirebaseApp,
       `app-version`: VersionService,
-      heartbeat: HeartbeatService & typings.firebaseApp.distEsmAppSrcTypesMod.HeartbeatService,
+      heartbeat: HeartbeatService,
       `platform-logger`: PlatformLoggerService,
       test: TestService,
       `test-shell`: Unit,
@@ -50,11 +50,11 @@ object componentMod {
     
     extension [Self <: NameServiceMapping](x: Self) {
       
-      inline def setApp(value: FirebaseApp & typings.firebaseApp.distEsmAppSrcPublicTypesMod.FirebaseApp): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+      inline def setApp(value: FirebaseApp): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
       inline def `setApp-version`(value: VersionService): Self = StObject.set(x, "app-version", value.asInstanceOf[js.Any])
       
-      inline def setHeartbeat(value: HeartbeatService & typings.firebaseApp.distEsmAppSrcTypesMod.HeartbeatService): Self = StObject.set(x, "heartbeat", value.asInstanceOf[js.Any])
+      inline def setHeartbeat(value: HeartbeatService): Self = StObject.set(x, "heartbeat", value.asInstanceOf[js.Any])
       
       inline def `setPlatform-logger`(value: PlatformLoggerService): Self = StObject.set(x, "platform-logger", value.asInstanceOf[js.Any])
       

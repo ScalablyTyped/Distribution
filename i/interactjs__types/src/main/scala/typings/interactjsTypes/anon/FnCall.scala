@@ -99,7 +99,7 @@ trait FnCall extends StObject {
   def apply(name: interactableColonnew, arg: Target): Unit | `false` = js.native
   def apply(name: interactableColonset, arg: Options): Unit | `false` = js.native
   def apply(name: interactableColonunset, arg: InteractableInteractableBackCompatOption): Unit | `false` = js.native
-  def apply(name: interactionsColonblur, arg: Event): Unit | `false` = js.native
+  def apply(name: interactionsColonblur, arg: EventInteraction): Unit | `false` = js.native
   def apply(
     name: interactionsColoncancel,
     arg: (/* import warning: importer.ImportType#apply Failed type conversion: @interactjs/types.@interactjs/core/Interaction.@interactjs/core/scope.SignalArgs['interactions:up'] */ js.Any) & CurEventTarget

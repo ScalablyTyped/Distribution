@@ -14,11 +14,11 @@ trait BlockConfiguration[T /* <: Record[String, Any] */] extends StObject {
   
   var apiVersion: js.UndefOr[Double] = js.undefined
   
-  var attributes: (js.UndefOr[
+  var attributes: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? U : T[k]>} */ js.Any
-  ]) & (/* import warning: importer.ImportType#apply Failed type conversion: {readonly [ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? U : T[k]>} */ js.Any)
+  ] = js.undefined
   
-  var category: js.UndefOr[String] & String
+  var category: js.UndefOr[String] = js.undefined
   
   var deprecated: js.UndefOr[js.Array[BlockDeprecation[T, Record[String, Any]]]] = js.undefined
   
@@ -58,7 +58,7 @@ trait BlockConfiguration[T /* <: Record[String, Any] */] extends StObject {
   
   var textdomain: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] & String
+  var title: js.UndefOr[String] = js.undefined
   
   var transforms: js.UndefOr[To[T]] = js.undefined
   
@@ -68,14 +68,8 @@ trait BlockConfiguration[T /* <: Record[String, Any] */] extends StObject {
 }
 object BlockConfiguration {
   
-  inline def apply[T /* <: Record[String, Any] */](
-    attributes: (js.UndefOr[
-      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? U : T[k]>} */ js.Any
-    ]) & (/* import warning: importer.ImportType#apply Failed type conversion: {readonly [ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? U : T[k]>} */ js.Any),
-    category: js.UndefOr[String] & String,
-    title: js.UndefOr[String] & String
-  ): BlockConfiguration[T] = {
-    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], category = category.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+  inline def apply[T /* <: Record[String, Any] */](): BlockConfiguration[T] = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BlockConfiguration[T]]
   }
   
@@ -86,12 +80,14 @@ object BlockConfiguration {
     inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     
     inline def setAttributes(
-      value: (js.UndefOr[
-          /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? U : T[k]>} */ js.Any
-        ]) & (/* import warning: importer.ImportType#apply Failed type conversion: {readonly [ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? U : T[k]>} */ js.Any)
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? U : T[k]>} */ js.Any
     ): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    inline def setCategory(value: js.UndefOr[String] & String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     inline def setDeprecated(value: js.Array[BlockDeprecation[T, Record[String, Any]]]): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
     
@@ -177,7 +173,9 @@ object BlockConfiguration {
     
     inline def setTextdomainUndefined: Self = StObject.set(x, "textdomain", js.undefined)
     
-    inline def setTitle(value: js.UndefOr[String] & String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     inline def setTransforms(value: To[T]): Self = StObject.set(x, "transforms", value.asInstanceOf[js.Any])
     

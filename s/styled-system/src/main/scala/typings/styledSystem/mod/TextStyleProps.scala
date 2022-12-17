@@ -23,6 +23,6 @@ object TextStyleProps {
     
     inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
     
-    inline def setTextStyleVarargs(value: (String | Null)*): Self = StObject.set(x, "textStyle", js.Array(value :_*))
+    inline def setTextStyleVarargs(value: (String | Null)*): Self = StObject.set(x, "textStyle", js.Array(value*))
   }
 }

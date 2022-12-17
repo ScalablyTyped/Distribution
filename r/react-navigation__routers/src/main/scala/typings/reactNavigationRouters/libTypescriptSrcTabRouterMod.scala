@@ -10,7 +10,6 @@ import typings.reactNavigationRouters.libTypescriptSrcTypesMod.ParamListBase
 import typings.reactNavigationRouters.libTypescriptSrcTypesMod.Router
 import typings.reactNavigationRouters.reactNavigationRoutersBooleans.`false`
 import typings.reactNavigationRouters.reactNavigationRoutersStrings.JUMP_TO
-import typings.reactNavigationRouters.reactNavigationRoutersStrings.tab
 import typings.std.Extract
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -141,7 +140,7 @@ object libTypescriptSrcTabRouterMod {
     /**
       * Type of the router, in this case, it's tab.
       */
-    var `type`: String & tab
+    var `type`: String
   }
   object TabNavigationState {
     
@@ -151,7 +150,7 @@ object libTypescriptSrcTabRouterMod {
       key: String,
       routeNames: js.Array[Extract[/* keyof ParamList */ String, String]],
       routes: js.Array[NavigationRoute[ParamList, /* keyof ParamList */ String]],
-      `type`: String & tab
+      `type`: String
     ): TabNavigationState[ParamList] = {
       val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], routeNames = routeNames.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], stale = false)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -178,7 +177,7 @@ object libTypescriptSrcTabRouterMod {
       
       inline def setStale(value: `false`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
       
-      inline def setType(value: String & tab): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

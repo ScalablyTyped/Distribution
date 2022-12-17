@@ -2,7 +2,6 @@ package typings.esbuild.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.esbuild.esbuildBooleans.`false`
-import typings.esbuild.esbuildBooleans.`true`
 import typings.esbuild.esbuildStrings.`inline`
 import typings.esbuild.esbuildStrings.automatic
 import typings.esbuild.esbuildStrings.both
@@ -138,7 +137,7 @@ trait BuildOptionsmetafiletrue extends StObject {
   var mangleQuoted: js.UndefOr[Boolean] = js.undefined
   
   /** Documentation: https://esbuild.github.io/api/#metafile */
-  var metafile: js.UndefOr[Boolean] & `true`
+  var metafile: js.UndefOr[Boolean] = js.undefined
   
   /** Documentation: https://esbuild.github.io/api/#minify */
   var minify: js.UndefOr[Boolean] = js.undefined
@@ -224,8 +223,8 @@ trait BuildOptionsmetafiletrue extends StObject {
 }
 object BuildOptionsmetafiletrue {
   
-  inline def apply(metafile: js.UndefOr[Boolean] & `true`): BuildOptionsmetafiletrue = {
-    val __obj = js.Dynamic.literal(metafile = metafile.asInstanceOf[js.Any])
+  inline def apply(): BuildOptionsmetafiletrue = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuildOptionsmetafiletrue]
   }
   
@@ -387,7 +386,9 @@ object BuildOptionsmetafiletrue {
     
     inline def setMangleQuotedUndefined: Self = StObject.set(x, "mangleQuoted", js.undefined)
     
-    inline def setMetafile(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "metafile", value.asInstanceOf[js.Any])
+    inline def setMetafile(value: Boolean): Self = StObject.set(x, "metafile", value.asInstanceOf[js.Any])
+    
+    inline def setMetafileUndefined: Self = StObject.set(x, "metafile", js.undefined)
     
     inline def setMinify(value: Boolean): Self = StObject.set(x, "minify", value.asInstanceOf[js.Any])
     

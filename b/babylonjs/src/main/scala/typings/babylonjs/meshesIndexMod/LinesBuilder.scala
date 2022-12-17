@@ -1,8 +1,8 @@
 package typings.babylonjs.meshesIndexMod
 
-import typings.babylonjs.anon.Colors
-import typings.babylonjs.anon.DashNb
+import typings.babylonjs.anon.DashSize
 import typings.babylonjs.anon.Instance
+import typings.babylonjs.anon.Material
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
@@ -19,16 +19,16 @@ object LinesBuilder {
   @js.native
   def CreateDashedLines: js.Function3[
     /* name */ String, 
-    /* options */ DashNb, 
+    /* options */ DashSize, 
     /* scene */ js.UndefOr[Nullable[Scene]], 
     typings.babylonjs.meshesLinesMeshMod.LinesMesh
   ] = js.native
-  inline def CreateDashedLines(name: String, options: DashNb): typings.babylonjs.meshesLinesMeshMod.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDashedLines")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesLinesMeshMod.LinesMesh]
-  inline def CreateDashedLines(name: String, options: DashNb, scene: Nullable[Scene]): typings.babylonjs.meshesLinesMeshMod.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDashedLines")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesLinesMeshMod.LinesMesh]
+  inline def CreateDashedLines(name: String, options: DashSize): typings.babylonjs.meshesLinesMeshMod.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDashedLines")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesLinesMeshMod.LinesMesh]
+  inline def CreateDashedLines(name: String, options: DashSize, scene: Nullable[Scene]): typings.babylonjs.meshesLinesMeshMod.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDashedLines")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesLinesMeshMod.LinesMesh]
   inline def CreateDashedLines_=(
     x: js.Function3[
       /* name */ String, 
-      /* options */ DashNb, 
+      /* options */ DashSize, 
       /* scene */ js.UndefOr[Nullable[Scene]], 
       typings.babylonjs.meshesLinesMeshMod.LinesMesh
     ]
@@ -38,15 +38,15 @@ object LinesBuilder {
   @js.native
   def CreateLineSystem: js.Function3[
     /* name */ String, 
-    /* options */ Colors, 
+    /* options */ Instance, 
     /* scene */ Nullable[Scene], 
     typings.babylonjs.meshesLinesMeshMod.LinesMesh
   ] = js.native
-  inline def CreateLineSystem(name: String, options: Colors, scene: Nullable[Scene]): typings.babylonjs.meshesLinesMeshMod.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLineSystem")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesLinesMeshMod.LinesMesh]
+  inline def CreateLineSystem(name: String, options: Instance, scene: Nullable[Scene]): typings.babylonjs.meshesLinesMeshMod.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLineSystem")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesLinesMeshMod.LinesMesh]
   inline def CreateLineSystem_=(
     x: js.Function3[
       /* name */ String, 
-      /* options */ Colors, 
+      /* options */ Instance, 
       /* scene */ Nullable[Scene], 
       typings.babylonjs.meshesLinesMeshMod.LinesMesh
     ]
@@ -56,16 +56,16 @@ object LinesBuilder {
   @js.native
   def CreateLines: js.Function3[
     /* name */ String, 
-    /* options */ Instance, 
+    /* options */ Material, 
     /* scene */ js.UndefOr[Nullable[Scene]], 
     typings.babylonjs.meshesLinesMeshMod.LinesMesh
   ] = js.native
-  inline def CreateLines(name: String, options: Instance): typings.babylonjs.meshesLinesMeshMod.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLines")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesLinesMeshMod.LinesMesh]
-  inline def CreateLines(name: String, options: Instance, scene: Nullable[Scene]): typings.babylonjs.meshesLinesMeshMod.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLines")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesLinesMeshMod.LinesMesh]
+  inline def CreateLines(name: String, options: Material): typings.babylonjs.meshesLinesMeshMod.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLines")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesLinesMeshMod.LinesMesh]
+  inline def CreateLines(name: String, options: Material, scene: Nullable[Scene]): typings.babylonjs.meshesLinesMeshMod.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateLines")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesLinesMeshMod.LinesMesh]
   inline def CreateLines_=(
     x: js.Function3[
       /* name */ String, 
-      /* options */ Instance, 
+      /* options */ Material, 
       /* scene */ js.UndefOr[Nullable[Scene]], 
       typings.babylonjs.meshesLinesMeshMod.LinesMesh
     ]

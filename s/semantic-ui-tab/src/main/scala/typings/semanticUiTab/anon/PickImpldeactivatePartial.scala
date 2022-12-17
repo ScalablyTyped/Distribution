@@ -42,7 +42,7 @@ trait PickImpldeactivatePartial
   
   var context: js.UndefOr[`false` | String | JQuery] = js.undefined
   
-  var deactivate: (siblings | all) & (js.UndefOr[siblings | all])
+  var deactivate: siblings | all
   
   var debug: js.UndefOr[Boolean] = js.undefined
   
@@ -104,7 +104,7 @@ trait PickImpldeactivatePartial
 }
 object PickImpldeactivatePartial {
   
-  inline def apply(deactivate: (siblings | all) & (js.UndefOr[siblings | all])): PickImpldeactivatePartial = {
+  inline def apply(deactivate: siblings | all): PickImpldeactivatePartial = {
     val __obj = js.Dynamic.literal(deactivate = deactivate.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldeactivatePartial]
   }
@@ -143,7 +143,7 @@ object PickImpldeactivatePartial {
     
     inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    inline def setDeactivate(value: (siblings | all) & (js.UndefOr[siblings | all])): Self = StObject.set(x, "deactivate", value.asInstanceOf[js.Any])
+    inline def setDeactivate(value: siblings | all): Self = StObject.set(x, "deactivate", value.asInstanceOf[js.Any])
     
     inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     

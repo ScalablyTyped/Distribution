@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.playcanvas.anon.App
 import typings.playcanvas.anon.Array
 import typings.playcanvas.anon.TypeofScriptType
+import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * store their definition for a {@link ScriptType}. Note: An instance of ScriptAttributes is
   * created automatically by each {@link ScriptType}.
   */
-trait ScriptAttributes extends StObject {
+@JSImport("playcanvas", "ScriptAttributes")
+@js.native
+open class ScriptAttributes protected () extends StObject {
+  /**
+    * Create a new ScriptAttributes instance.
+    *
+    * @param {typeof ScriptType} scriptType - Script Type that attributes relate to.
+    */
+  def this(scriptType: TypeofScriptType & (Instantiable1[/* args */ App, ScriptType])) = this()
   
   /**
     * Add Attribute.
@@ -104,7 +113,7 @@ trait ScriptAttributes extends StObject {
     *     }]
     * });
     */
-  def add(name: String, args: Array): Unit
+  def add(name: String, args: Array): Unit = js.native
   
   /**
     * Get object with attribute arguments. Note: Changing argument properties will not affect
@@ -117,7 +126,7 @@ trait ScriptAttributes extends StObject {
     * var attr = PlayerController.attributes.get('fullName');
     * if (attr) attr.default = 'Unknown';
     */
-  def get(name: String): js.Object | Null
+  def get(name: String): js.Object | Null = js.native
   
   /**
     * Detect if Attribute is added.
@@ -129,7 +138,7 @@ trait ScriptAttributes extends StObject {
     *     // attribute fullName is defined
     * }
     */
-  def has(name: String): Boolean
+  def has(name: String): Boolean = js.native
   
   /**
     * Remove Attribute.
@@ -139,33 +148,19 @@ trait ScriptAttributes extends StObject {
     * @example
     * PlayerController.attributes.remove('fullName');
     */
-  def remove(name: String): Boolean
+  def remove(name: String): Boolean = js.native
   
-  var scriptType: TypeofScriptType & (Instantiable1[/* args */ App, ScriptType])
+  var scriptType: TypeofScriptType & (Instantiable1[/* args */ App, ScriptType]) = js.native
 }
 object ScriptAttributes {
   
-  inline def apply(
-    add: (String, Array) => Unit,
-    get: String => js.Object | Null,
-    has: String => Boolean,
-    remove: String => Boolean,
-    scriptType: TypeofScriptType & (Instantiable1[/* args */ App, ScriptType])
-  ): ScriptAttributes = {
-    val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), remove = js.Any.fromFunction1(remove), scriptType = scriptType.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ScriptAttributes]
-  }
+  @JSImport("playcanvas", "ScriptAttributes")
+  @js.native
+  val ^ : js.Any = js.native
   
-  extension [Self <: ScriptAttributes](x: Self) {
-    
-    inline def setAdd(value: (String, Array) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
-    
-    inline def setGet(value: String => js.Object | Null): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
-    
-    inline def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
-    
-    inline def setRemove(value: String => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
-    
-    inline def setScriptType(value: TypeofScriptType & (Instantiable1[/* args */ App, ScriptType])): Self = StObject.set(x, "scriptType", value.asInstanceOf[js.Any])
-  }
+  /* static member */
+  @JSImport("playcanvas", "ScriptAttributes.reservedNames")
+  @js.native
+  def reservedNames: Set[String] = js.native
+  inline def reservedNames_=(x: Set[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reservedNames")(x.asInstanceOf[js.Any])
 }

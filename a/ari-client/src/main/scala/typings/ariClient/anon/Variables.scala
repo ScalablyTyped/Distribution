@@ -11,16 +11,12 @@ trait Variables extends StObject {
   
   var from: String
   
-  var resource: String
-  
-  var tech: String
-  
   var variables: js.UndefOr[Containers] = js.undefined
 }
 object Variables {
   
-  inline def apply(from: String, resource: String, tech: String): Variables = {
-    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], tech = tech.asInstanceOf[js.Any])
+  inline def apply(from: String): Variables = {
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any])
     __obj.asInstanceOf[Variables]
   }
   
@@ -31,10 +27,6 @@ object Variables {
     inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
-    
-    inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
-    
-    inline def setTech(value: String): Self = StObject.set(x, "tech", value.asInstanceOf[js.Any])
     
     inline def setVariables(value: Containers): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     

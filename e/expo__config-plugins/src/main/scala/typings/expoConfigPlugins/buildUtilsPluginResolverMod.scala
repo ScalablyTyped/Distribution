@@ -1,8 +1,8 @@
 package typings.expoConfigPlugins
 
-import typings.expoConfigPlugins.anon.FilePathIsPluginFile
 import typings.expoConfigPlugins.anon.IsPluginFile
 import typings.expoConfigPlugins.anon.PluginFile
+import typings.expoConfigPlugins.anon.PluginReference
 import typings.expoConfigPlugins.buildPluginDottypesMod.ConfigPlugin
 import typings.expoConfigPlugins.buildPluginDottypesMod.StaticPlugin
 import org.scalablytyped.runtime.StObject
@@ -28,11 +28,11 @@ object buildUtilsPluginResolverMod {
   @js.native
   val pluginFileName: /* "app.plugin.js" */ String = js.native
   
-  inline def resolveConfigPluginExport(param0: IsPluginFile): ConfigPlugin[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveConfigPluginExport")(param0.asInstanceOf[js.Any]).asInstanceOf[ConfigPlugin[Any]]
+  inline def resolveConfigPluginExport(param0: PluginReference): ConfigPlugin[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveConfigPluginExport")(param0.asInstanceOf[js.Any]).asInstanceOf[ConfigPlugin[Any]]
   
   inline def resolveConfigPluginFunction(projectRoot: String, pluginReference: String): ConfigPlugin[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveConfigPluginFunction")(projectRoot.asInstanceOf[js.Any], pluginReference.asInstanceOf[js.Any])).asInstanceOf[ConfigPlugin[Any]]
   
   inline def resolveConfigPluginFunctionWithInfo(projectRoot: String, pluginReference: String): PluginFile = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveConfigPluginFunctionWithInfo")(projectRoot.asInstanceOf[js.Any], pluginReference.asInstanceOf[js.Any])).asInstanceOf[PluginFile]
   
-  inline def resolvePluginForModule(projectRoot: String, modulePath: String): FilePathIsPluginFile = (^.asInstanceOf[js.Dynamic].applyDynamic("resolvePluginForModule")(projectRoot.asInstanceOf[js.Any], modulePath.asInstanceOf[js.Any])).asInstanceOf[FilePathIsPluginFile]
+  inline def resolvePluginForModule(projectRoot: String, modulePath: String): IsPluginFile = (^.asInstanceOf[js.Dynamic].applyDynamic("resolvePluginForModule")(projectRoot.asInstanceOf[js.Any], modulePath.asInstanceOf[js.Any])).asInstanceOf[IsPluginFile]
 }

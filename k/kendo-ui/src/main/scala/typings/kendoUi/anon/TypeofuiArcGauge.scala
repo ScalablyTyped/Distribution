@@ -21,77 +21,77 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TypeofuiArcGauge extends StObject {
   
-  var ArcGauge: (Instantiable2[
+  var ArcGauge: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[ArcGaugeOptions], 
     typings.kendoUi.kendo.dataviz.ui.ArcGauge
-  ]) & TypeofArcGauge = js.native
+  ] = js.native
   
-  var Barcode: (Instantiable2[
+  var Barcode: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[BarcodeOptions], 
     typings.kendoUi.kendo.dataviz.ui.Barcode
-  ]) & TypeofBarcode = js.native
+  ] = js.native
   
-  var Chart: (Instantiable2[
+  var Chart: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[ChartOptions], 
     typings.kendoUi.kendo.dataviz.ui.Chart
-  ]) & TypeofChart = js.native
+  ] = js.native
   
-  var CircularGauge: (Instantiable2[
+  var CircularGauge: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[CircularGaugeOptions], 
     typings.kendoUi.kendo.dataviz.ui.CircularGauge
-  ]) & TypeofCircularGauge = js.native
+  ] = js.native
   
-  var Diagram: (Instantiable2[
+  var Diagram: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[DiagramOptions], 
     typings.kendoUi.kendo.dataviz.ui.Diagram
-  ]) & TypeofDiagram = js.native
+  ] = js.native
   
-  var LinearGauge: (Instantiable2[
+  var LinearGauge: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[LinearGaugeOptions], 
     typings.kendoUi.kendo.dataviz.ui.LinearGauge
-  ]) & TypeofLinearGauge = js.native
+  ] = js.native
   
-  var Map: (Instantiable2[
+  var Map: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[MapOptions], 
     typings.kendoUi.kendo.dataviz.ui.Map
-  ]) & TypeofMap = js.native
+  ] = js.native
   
-  var QRCode: (Instantiable2[
+  var QRCode: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[QRCodeOptions], 
     typings.kendoUi.kendo.dataviz.ui.QRCode
-  ]) & TypeofQRCode = js.native
+  ] = js.native
   
-  var RadialGauge: (Instantiable2[
+  var RadialGauge: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[RadialGaugeOptions], 
     typings.kendoUi.kendo.dataviz.ui.RadialGauge
-  ]) & TypeofRadialGauge = js.native
+  ] = js.native
   
-  var Sparkline: (Instantiable2[
+  var Sparkline: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[SparklineOptions], 
     typings.kendoUi.kendo.dataviz.ui.Sparkline
-  ]) & TypeofSparkline = js.native
+  ] = js.native
   
-  var StockChart: (Instantiable2[
+  var StockChart: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[StockChartOptions], 
     typings.kendoUi.kendo.dataviz.ui.StockChart
-  ]) & TypeofStockChart = js.native
+  ] = js.native
   
-  var TreeMap: (Instantiable2[
+  var TreeMap: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[TreeMapOptions], 
     typings.kendoUi.kendo.dataviz.ui.TreeMap
-  ]) & TypeofTreeMap = js.native
+  ] = js.native
   
   def plugin(
     widget: /* import warning: importer.ImportType#apply Failed type conversion: typeof kendo.ui.Widget */ js.Any

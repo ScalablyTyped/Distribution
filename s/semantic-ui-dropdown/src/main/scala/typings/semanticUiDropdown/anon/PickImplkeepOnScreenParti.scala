@@ -81,7 +81,7 @@ trait PickImplkeepOnScreenParti
   
   var hideAdditions: js.UndefOr[Boolean] = js.undefined
   
-  var keepOnScreen: Boolean & js.UndefOr[Boolean]
+  var keepOnScreen: Boolean
   
   var keys: js.UndefOr[KeySettings] = js.undefined
   
@@ -169,7 +169,7 @@ trait PickImplkeepOnScreenParti
 }
 object PickImplkeepOnScreenParti {
   
-  inline def apply(keepOnScreen: Boolean & js.UndefOr[Boolean]): PickImplkeepOnScreenParti = {
+  inline def apply(keepOnScreen: Boolean): PickImplkeepOnScreenParti = {
     val __obj = js.Dynamic.literal(keepOnScreen = keepOnScreen.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplkeepOnScreenParti]
   }
@@ -260,7 +260,7 @@ object PickImplkeepOnScreenParti {
     
     inline def setHideAdditionsUndefined: Self = StObject.set(x, "hideAdditions", js.undefined)
     
-    inline def setKeepOnScreen(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "keepOnScreen", value.asInstanceOf[js.Any])
+    inline def setKeepOnScreen(value: Boolean): Self = StObject.set(x, "keepOnScreen", value.asInstanceOf[js.Any])
     
     inline def setKeys(value: KeySettings): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     

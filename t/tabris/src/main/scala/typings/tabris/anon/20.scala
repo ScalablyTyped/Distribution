@@ -1,23 +1,35 @@
 package typings.tabris.anon
 
-import typings.tabris.tabrisStrings.`AES-GCM`
+import typings.tabris.mod.ListenersKeysOf
+import typings.tabris.tabrisStrings.Asterisk
+import typings.tabris.tabrisStrings.default
+import typings.tabris.tabrisStrings.strict
+import typings.tabris.tabrisStrings.update
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `20` extends StObject {
+trait `20`[Target] extends StObject {
   
-  var name: `AES-GCM`
+  var mode: js.UndefOr[default | strict] = js.undefined
+  
+  var trigger: js.UndefOr[ListenersKeysOf[Target] | update | Asterisk | js.Symbol] = js.undefined
 }
 object `20` {
   
-  inline def apply(): `20` = {
-    val __obj = js.Dynamic.literal(name = "AES-GCM")
-    __obj.asInstanceOf[`20`]
+  inline def apply[Target](): `20`[Target] = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[`20`[Target]]
   }
   
-  extension [Self <: `20`](x: Self) {
+  extension [Self <: `20`[?], Target](x: Self & `20`[Target]) {
     
-    inline def setName(value: `AES-GCM`): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setMode(value: default | strict): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    
+    inline def setTrigger(value: ListenersKeysOf[Target] | update | Asterisk | js.Symbol): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+    
+    inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
   }
 }

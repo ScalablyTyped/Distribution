@@ -12,7 +12,7 @@ trait PickImplcontentPartialPic
   
   var accordion: js.UndefOr[String] = js.undefined
   
-  var content: String & js.UndefOr[String]
+  var content: String
   
   var title: js.UndefOr[String] = js.undefined
   
@@ -20,7 +20,7 @@ trait PickImplcontentPartialPic
 }
 object PickImplcontentPartialPic {
   
-  inline def apply(content: String & js.UndefOr[String]): PickImplcontentPartialPic = {
+  inline def apply(content: String): PickImplcontentPartialPic = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplcontentPartialPic]
   }
@@ -31,7 +31,7 @@ object PickImplcontentPartialPic {
     
     inline def setAccordionUndefined: Self = StObject.set(x, "accordion", js.undefined)
     
-    inline def setContent(value: String & js.UndefOr[String]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

@@ -60,7 +60,7 @@ trait DataLayerPropertiestypela extends StObject {
     intersects | contains | crosses | `envelope-intersects` | `index-intersects` | overlaps | touches | within | relation
   ] = js.undefined
   
-  var `type`: js.UndefOr[layer] & layer
+  var `type`: js.UndefOr[layer] = js.undefined
   
   /**
     * A where clause for the query.
@@ -71,9 +71,8 @@ trait DataLayerPropertiestypela extends StObject {
 }
 object DataLayerPropertiestypela {
   
-  inline def apply(`type`: js.UndefOr[layer] & layer): DataLayerPropertiestypela = {
+  inline def apply(): DataLayerPropertiestypela = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataLayerPropertiestypela]
   }
   
@@ -101,7 +100,9 @@ object DataLayerPropertiestypela {
     
     inline def setSpatialRelationshipUndefined: Self = StObject.set(x, "spatialRelationship", js.undefined)
     
-    inline def setType(value: js.UndefOr[layer] & layer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: layer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     inline def setWhere(value: String): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
     

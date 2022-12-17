@@ -35,20 +35,12 @@ trait PickImplactionPartialPick
   extends StObject
      with Param {
   
-  var action: (activate | select | combo | nothing | hide | (js.ThisFunction3[
+  var action: activate | select | combo | nothing | hide | (js.ThisFunction3[
     /* this */ JQuery, 
     /* text */ String, 
     /* value */ String | `false`, 
     /* element */ JQuery, 
     Unit
-  ])) & (js.UndefOr[
-    activate | select | combo | nothing | hide | (js.ThisFunction3[
-      /* this */ JQuery, 
-      /* text */ String, 
-      /* value */ String | `false`, 
-      /* element */ JQuery, 
-      Unit
-    ])
   ])
   
   var allowAdditions: js.UndefOr[Boolean] = js.undefined
@@ -176,20 +168,12 @@ trait PickImplactionPartialPick
 object PickImplactionPartialPick {
   
   inline def apply(
-    action: (activate | select | combo | nothing | hide | (js.ThisFunction3[
+    action: activate | select | combo | nothing | hide | (js.ThisFunction3[
       /* this */ JQuery, 
       /* text */ String, 
       /* value */ String | `false`, 
       /* element */ JQuery, 
       Unit
-    ])) & (js.UndefOr[
-      activate | select | combo | nothing | hide | (js.ThisFunction3[
-        /* this */ JQuery, 
-        /* text */ String, 
-        /* value */ String | `false`, 
-        /* element */ JQuery, 
-        Unit
-      ])
     ])
   ): PickImplactionPartialPick = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
@@ -199,20 +183,12 @@ object PickImplactionPartialPick {
   extension [Self <: PickImplactionPartialPick](x: Self) {
     
     inline def setAction(
-      value: (activate | select | combo | nothing | hide | (js.ThisFunction3[
+      value: activate | select | combo | nothing | hide | (js.ThisFunction3[
           /* this */ JQuery, 
           /* text */ String, 
           /* value */ String | `false`, 
           /* element */ JQuery, 
           Unit
-        ])) & (js.UndefOr[
-          activate | select | combo | nothing | hide | (js.ThisFunction3[
-            /* this */ JQuery, 
-            /* text */ String, 
-            /* value */ String | `false`, 
-            /* element */ JQuery, 
-            Unit
-          ])
         ])
     ): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

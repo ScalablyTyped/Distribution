@@ -1,32 +1,33 @@
 package typings.multiformats.anon
 
 import typings.multiformats.distTypesSrcBlockInterfaceMod.ByteView
-import typings.multiformats.mod.CID
+import typings.multiformats.distTypesSrcCodecsInterfaceMod.BlockDecoder
+import typings.multiformats.distTypesSrcHashesInterfaceMod.MultihashHasher
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Bytes[T /* <: Any */, C /* <: Double */, A /* <: Double */, V /* <: typings.multiformats.distTypesSrcLinkInterfaceMod.Version */] extends StObject {
+trait Bytes[T /* <: Any */, Code /* <: Double */, Alg /* <: Double */] extends StObject {
   
   var bytes: ByteView[T]
   
-  var cid: CID[T, C, A, V]
+  var codec: BlockDecoder[Code, T]
   
-  var value: T
+  var hasher: MultihashHasher[Alg]
 }
 object Bytes {
   
-  inline def apply[T /* <: Any */, C /* <: Double */, A /* <: Double */, V /* <: typings.multiformats.distTypesSrcLinkInterfaceMod.Version */](bytes: ByteView[T], cid: CID[T, C, A, V], value: T): Bytes[T, C, A, V] = {
-    val __obj = js.Dynamic.literal(bytes = bytes.asInstanceOf[js.Any], cid = cid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Bytes[T, C, A, V]]
+  inline def apply[T /* <: Any */, Code /* <: Double */, Alg /* <: Double */](bytes: ByteView[T], codec: BlockDecoder[Code, T], hasher: MultihashHasher[Alg]): Bytes[T, Code, Alg] = {
+    val __obj = js.Dynamic.literal(bytes = bytes.asInstanceOf[js.Any], codec = codec.asInstanceOf[js.Any], hasher = hasher.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Bytes[T, Code, Alg]]
   }
   
-  extension [Self <: Bytes[?, ?, ?, ?], T /* <: Any */, C /* <: Double */, A /* <: Double */, V /* <: typings.multiformats.distTypesSrcLinkInterfaceMod.Version */](x: Self & (Bytes[T, C, A, V])) {
+  extension [Self <: Bytes[?, ?, ?], T /* <: Any */, Code /* <: Double */, Alg /* <: Double */](x: Self & (Bytes[T, Code, Alg])) {
     
     inline def setBytes(value: ByteView[T]): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     
-    inline def setCid(value: CID[T, C, A, V]): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
+    inline def setCodec(value: BlockDecoder[Code, T]): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setHasher(value: MultihashHasher[Alg]): Self = StObject.set(x, "hasher", value.asInstanceOf[js.Any])
   }
 }

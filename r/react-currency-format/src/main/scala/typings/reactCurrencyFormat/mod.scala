@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Component
 import typings.react.mod.ComponentType
 import typings.react.mod.HTMLAttributes
-import typings.react.mod.HTMLInputTypeAttribute
 import typings.react.mod.InputHTMLAttributes
 import typings.reactCurrencyFormat.reactCurrencyFormatStrings.input
 import typings.reactCurrencyFormat.reactCurrencyFormatStrings.text
@@ -105,12 +104,8 @@ object mod {
   trait StrictProps extends StObject
   object StrictProps {
     
-    inline def DisplayTypeInputPartialth(
-      `type`: js.UndefOr[HTMLInputTypeAttribute] & js.UndefOr[InputType],
-      value: (js.UndefOr[String | js.Array[String] | Double]) & (js.UndefOr[Double | String | Null])
-    ): typings.reactCurrencyFormat.anon.DisplayTypeInputPartialth = {
-      val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    inline def DisplayTypeInputPartialth(): typings.reactCurrencyFormat.anon.DisplayTypeInputPartialth = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.reactCurrencyFormat.anon.DisplayTypeInputPartialth]
     }
     

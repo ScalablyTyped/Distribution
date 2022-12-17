@@ -1,5 +1,6 @@
 package typings.cesium.mod
 
+import typings.cesium.anon.ReloadFunction
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("cesium", "TimeDynamicImagery")
 @js.native
 open class TimeDynamicImagery protected () extends StObject {
-  def this(options: typings.cesium.anon.Clock) = this()
+  def this(options: ReloadFunction) = this()
   
   /**
     * Checks if the next interval is approaching and will start preload the tile if necessary. Otherwise it will

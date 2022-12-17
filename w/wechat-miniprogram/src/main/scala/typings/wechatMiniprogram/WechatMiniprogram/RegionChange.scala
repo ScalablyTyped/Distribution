@@ -1,9 +1,7 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
 import typings.wechatMiniprogram.anon.Rotate
-import typings.wechatMiniprogram.wechatMiniprogramStrings.begin
 import typings.wechatMiniprogram.wechatMiniprogramStrings.drag
-import typings.wechatMiniprogram.wechatMiniprogramStrings.end
 import typings.wechatMiniprogram.wechatMiniprogramStrings.gesture
 import typings.wechatMiniprogram.wechatMiniprogramStrings.scale
 import typings.wechatMiniprogram.wechatMiniprogramStrings.update
@@ -28,11 +26,10 @@ object RegionChange {
     currentTarget: Target[IAnyObject],
     detail: Rotate,
     target: Target[IAnyObject],
-    timeStamp: Double,
-    `type`: begin & String
+    timeStamp: Double
   ): typings.wechatMiniprogram.anon.typebegincausedBygestureu = {
     val __obj = js.Dynamic.literal(causedBy = causedBy.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("begin")
     __obj.asInstanceOf[typings.wechatMiniprogram.anon.typebegincausedBygestureu]
   }
   
@@ -41,11 +38,10 @@ object RegionChange {
     currentTarget: Target[IAnyObject],
     detail: Rotate,
     target: Target[IAnyObject],
-    timeStamp: Double,
-    `type`: end & String
+    timeStamp: Double
   ): typings.wechatMiniprogram.anon.typeendcausedBydragscaleu = {
     val __obj = js.Dynamic.literal(causedBy = causedBy.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("end")
     __obj.asInstanceOf[typings.wechatMiniprogram.anon.typeendcausedBydragscaleu]
   }
 }

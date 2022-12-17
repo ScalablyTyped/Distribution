@@ -8,11 +8,11 @@ trait ParametersQueryPerpageRole extends StObject {
   
   var parameters: QueryPerpageRole
   
-  var responses: `53`
+  var responses: `94`
 }
 object ParametersQueryPerpageRole {
   
-  inline def apply(parameters: QueryPerpageRole, responses: `53`): ParametersQueryPerpageRole = {
+  inline def apply(parameters: QueryPerpageRole, responses: `94`): ParametersQueryPerpageRole = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersQueryPerpageRole]
   }
@@ -21,6 +21,6 @@ object ParametersQueryPerpageRole {
     
     inline def setParameters(value: QueryPerpageRole): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `53`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `94`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

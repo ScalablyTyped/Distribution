@@ -16,13 +16,13 @@ trait PickImplmethodPartialPick
   
   var labels: js.UndefOr[String] = js.undefined
   
-  var method: String & js.UndefOr[String]
+  var method: String
   
   var noTransition: js.UndefOr[String] = js.undefined
 }
 object PickImplmethodPartialPick {
   
-  inline def apply(method: String & js.UndefOr[String]): PickImplmethodPartialPick = {
+  inline def apply(method: String): PickImplmethodPartialPick = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmethodPartialPick]
   }
@@ -41,7 +41,7 @@ object PickImplmethodPartialPick {
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    inline def setMethod(value: String & js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     inline def setNoTransition(value: String): Self = StObject.set(x, "noTransition", value.asInstanceOf[js.Any])
     

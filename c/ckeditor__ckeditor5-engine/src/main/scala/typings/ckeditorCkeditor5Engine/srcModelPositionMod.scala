@@ -1,7 +1,7 @@
 package typings.ckeditorCkeditor5Engine
 
 import typings.ckeditorCkeditor5Engine.anon.Boundaries
-import typings.ckeditorCkeditor5Engine.anon.Path
+import typings.ckeditorCkeditor5Engine.anon.Root
 import typings.ckeditorCkeditor5Engine.anon.Stickiness
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.$text
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.$textProxy
@@ -77,7 +77,7 @@ object srcModelPositionMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def fromJSON(json: ReturnType[js.Function0[Path]], doc: Document): Position = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], doc.asInstanceOf[js.Any])).asInstanceOf[Position]
+    inline def fromJSON(json: ReturnType[js.Function0[Root]], doc: Document): Position = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], doc.asInstanceOf[js.Any])).asInstanceOf[Position]
   }
   
   inline def getNodeAfterPosition(

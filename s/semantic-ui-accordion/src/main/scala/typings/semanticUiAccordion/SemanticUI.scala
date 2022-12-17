@@ -91,12 +91,12 @@ object SemanticUI {
       trait Param extends StObject
       object Param {
         
-        inline def PickImplactivePartialPick(active: String & js.UndefOr[String]): typings.semanticUiAccordion.anon.PickImplactivePartialPick = {
+        inline def PickImplactivePartialPick(active: String): typings.semanticUiAccordion.anon.PickImplactivePartialPick = {
           val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.semanticUiAccordion.anon.PickImplactivePartialPick]
         }
         
-        inline def PickImplanimatingPartialP(animating: String & js.UndefOr[String]): typings.semanticUiAccordion.anon.PickImplanimatingPartialP = {
+        inline def PickImplanimatingPartialP(animating: String): typings.semanticUiAccordion.anon.PickImplanimatingPartialP = {
           val __obj = js.Dynamic.literal(animating = animating.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.semanticUiAccordion.anon.PickImplanimatingPartialP]
         }
@@ -107,11 +107,11 @@ object SemanticUI {
     /* Inlined semantic-ui-accordion.SemanticUI.Accordion.ErrorSettings.Param */
     trait ErrorSettings extends StObject {
       
-      var method: String & js.UndefOr[String]
+      var method: String
     }
     object ErrorSettings {
       
-      inline def apply(method: String & js.UndefOr[String]): ErrorSettings = {
+      inline def apply(method: String): ErrorSettings = {
         val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
         __obj.asInstanceOf[ErrorSettings]
       }
@@ -138,24 +138,24 @@ object SemanticUI {
       
       extension [Self <: ErrorSettings](x: Self) {
         
-        inline def setMethod(value: String & js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+        inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       }
       
       /* Inlined std.Pick<semantic-ui-accordion.SemanticUI.Accordion.ErrorSettings._Impl, 'method'> & std.Partial<std.Pick<semantic-ui-accordion.SemanticUI.Accordion.ErrorSettings._Impl, keyof semantic-ui-accordion.SemanticUI.Accordion.ErrorSettings._Impl>> */
       trait Param extends StObject {
         
-        var method: String & js.UndefOr[String]
+        var method: String
       }
       object Param {
         
-        inline def apply(method: String & js.UndefOr[String]): typings.semanticUiAccordion.SemanticUI.Accordion.ErrorSettings.Param = {
+        inline def apply(method: String): typings.semanticUiAccordion.SemanticUI.Accordion.ErrorSettings.Param = {
           val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.semanticUiAccordion.SemanticUI.Accordion.ErrorSettings.Param]
         }
         
         extension [Self <: typings.semanticUiAccordion.SemanticUI.Accordion.ErrorSettings.Param](x: Self) {
           
-          inline def setMethod(value: String & js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+          inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
         }
       }
     }
@@ -212,22 +212,22 @@ object SemanticUI {
       trait Param extends StObject
       object Param {
         
-        inline def PickImplaccordionPartialP(accordion: String & js.UndefOr[String]): typings.semanticUiAccordion.anon.PickImplaccordionPartialP = {
+        inline def PickImplaccordionPartialP(accordion: String): typings.semanticUiAccordion.anon.PickImplaccordionPartialP = {
           val __obj = js.Dynamic.literal(accordion = accordion.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.semanticUiAccordion.anon.PickImplaccordionPartialP]
         }
         
-        inline def PickImplcontentPartialPic(content: String & js.UndefOr[String]): typings.semanticUiAccordion.anon.PickImplcontentPartialPic = {
+        inline def PickImplcontentPartialPic(content: String): typings.semanticUiAccordion.anon.PickImplcontentPartialPic = {
           val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.semanticUiAccordion.anon.PickImplcontentPartialPic]
         }
         
-        inline def PickImpltitlePartialPickI(title: String & js.UndefOr[String]): typings.semanticUiAccordion.anon.PickImpltitlePartialPickI = {
+        inline def PickImpltitlePartialPickI(title: String): typings.semanticUiAccordion.anon.PickImpltitlePartialPickI = {
           val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.semanticUiAccordion.anon.PickImpltitlePartialPickI]
         }
         
-        inline def PickImpltriggerPartialPic(trigger: String & js.UndefOr[String]): typings.semanticUiAccordion.anon.PickImpltriggerPartialPic = {
+        inline def PickImpltriggerPartialPic(trigger: String): typings.semanticUiAccordion.anon.PickImpltriggerPartialPic = {
           val __obj = js.Dynamic.literal(trigger = trigger.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.semanticUiAccordion.anon.PickImpltriggerPartialPic]
         }
@@ -481,122 +481,112 @@ object SemanticUI {
     trait Param extends StObject
     object Param {
       
-      inline def PickImplanimateChildrenPa(animateChildren: Boolean & js.UndefOr[Boolean]): typings.semanticUiAccordion.anon.PickImplanimateChildrenPa = {
+      inline def PickImplanimateChildrenPa(animateChildren: Boolean): typings.semanticUiAccordion.anon.PickImplanimateChildrenPa = {
         val __obj = js.Dynamic.literal(animateChildren = animateChildren.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiAccordion.anon.PickImplanimateChildrenPa]
       }
       
-      inline def PickImplclassNamePartialP(className: ClassNameSettings & js.UndefOr[ClassNameSettings]): typings.semanticUiAccordion.anon.PickImplclassNamePartialP = {
+      inline def PickImplclassNamePartialP(className: ClassNameSettings): typings.semanticUiAccordion.anon.PickImplclassNamePartialP = {
         val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiAccordion.anon.PickImplclassNamePartialP]
       }
       
-      inline def PickImplcloseNestedPartia(closeNested: Boolean & js.UndefOr[Boolean]): typings.semanticUiAccordion.anon.PickImplcloseNestedPartia = {
+      inline def PickImplcloseNestedPartia(closeNested: Boolean): typings.semanticUiAccordion.anon.PickImplcloseNestedPartia = {
         val __obj = js.Dynamic.literal(closeNested = closeNested.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiAccordion.anon.PickImplcloseNestedPartia]
       }
       
-      inline def PickImplcollapsiblePartia(collapsible: Boolean & js.UndefOr[Boolean]): typings.semanticUiAccordion.anon.PickImplcollapsiblePartia = {
+      inline def PickImplcollapsiblePartia(collapsible: Boolean): typings.semanticUiAccordion.anon.PickImplcollapsiblePartia = {
         val __obj = js.Dynamic.literal(collapsible = collapsible.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiAccordion.anon.PickImplcollapsiblePartia]
       }
       
-      inline def PickImpldebugPartialPickI(debug: Boolean & js.UndefOr[Boolean]): typings.semanticUiAccordion.anon.PickImpldebugPartialPickI = {
+      inline def PickImpldebugPartialPickI(debug: Boolean): typings.semanticUiAccordion.anon.PickImpldebugPartialPickI = {
         val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiAccordion.anon.PickImpldebugPartialPickI]
       }
       
-      inline def PickImpldurationPartialPi(duration: Double & js.UndefOr[Double]): typings.semanticUiAccordion.anon.PickImpldurationPartialPi = {
+      inline def PickImpldurationPartialPi(duration: Double): typings.semanticUiAccordion.anon.PickImpldurationPartialPi = {
         val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiAccordion.anon.PickImpldurationPartialPi]
       }
       
-      inline def PickImpleasingPartialPick(easing: String & js.UndefOr[String]): typings.semanticUiAccordion.anon.PickImpleasingPartialPick = {
+      inline def PickImpleasingPartialPick(easing: String): typings.semanticUiAccordion.anon.PickImpleasingPartialPick = {
         val __obj = js.Dynamic.literal(easing = easing.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiAccordion.anon.PickImpleasingPartialPick]
       }
       
-      inline def PickImplerrorPartialPickI(error: ErrorSettings & js.UndefOr[ErrorSettings]): typings.semanticUiAccordion.anon.PickImplerrorPartialPickI = {
+      inline def PickImplerrorPartialPickI(error: ErrorSettings): typings.semanticUiAccordion.anon.PickImplerrorPartialPickI = {
         val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiAccordion.anon.PickImplerrorPartialPickI]
       }
       
-      inline def PickImplexclusivePartialP(exclusive: Boolean & js.UndefOr[Boolean]): typings.semanticUiAccordion.anon.PickImplexclusivePartialP = {
+      inline def PickImplexclusivePartialP(exclusive: Boolean): typings.semanticUiAccordion.anon.PickImplexclusivePartialP = {
         val __obj = js.Dynamic.literal(exclusive = exclusive.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiAccordion.anon.PickImplexclusivePartialP]
       }
       
-      inline def PickImplnamePartialPickIm(name: String & js.UndefOr[String]): typings.semanticUiAccordion.anon.PickImplnamePartialPickIm = {
+      inline def PickImplnamePartialPickIm(name: String): typings.semanticUiAccordion.anon.PickImplnamePartialPickIm = {
         val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiAccordion.anon.PickImplnamePartialPickIm]
       }
       
-      inline def PickImplnamespacePartialP(namespace: String & js.UndefOr[String]): typings.semanticUiAccordion.anon.PickImplnamespacePartialP = {
+      inline def PickImplnamespacePartialP(namespace: String): typings.semanticUiAccordion.anon.PickImplnamespacePartialP = {
         val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiAccordion.anon.PickImplnamespacePartialP]
       }
       
-      inline def PickImplobserveChangesPar(observeChanges: Boolean & js.UndefOr[Boolean]): typings.semanticUiAccordion.anon.PickImplobserveChangesPar = {
+      inline def PickImplobserveChangesPar(observeChanges: Boolean): typings.semanticUiAccordion.anon.PickImplobserveChangesPar = {
         val __obj = js.Dynamic.literal(observeChanges = observeChanges.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiAccordion.anon.PickImplobserveChangesPar]
       }
       
-      inline def PickImplonChangePartialPi(
-        onChange: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-      ): typings.semanticUiAccordion.anon.PickImplonChangePartialPi = {
+      inline def PickImplonChangePartialPi(onChange: js.ThisFunction0[/* this */ JQuery, Unit]): typings.semanticUiAccordion.anon.PickImplonChangePartialPi = {
         val __obj = js.Dynamic.literal(onChange = onChange.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiAccordion.anon.PickImplonChangePartialPi]
       }
       
-      inline def PickImplonClosePartialPic(
-        onClose: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-      ): typings.semanticUiAccordion.anon.PickImplonClosePartialPic = {
+      inline def PickImplonClosePartialPic(onClose: js.ThisFunction0[/* this */ JQuery, Unit]): typings.semanticUiAccordion.anon.PickImplonClosePartialPic = {
         val __obj = js.Dynamic.literal(onClose = onClose.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiAccordion.anon.PickImplonClosePartialPic]
       }
       
-      inline def PickImplonClosingPartialP(
-        onClosing: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-      ): typings.semanticUiAccordion.anon.PickImplonClosingPartialP = {
+      inline def PickImplonClosingPartialP(onClosing: js.ThisFunction0[/* this */ JQuery, Unit]): typings.semanticUiAccordion.anon.PickImplonClosingPartialP = {
         val __obj = js.Dynamic.literal(onClosing = onClosing.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiAccordion.anon.PickImplonClosingPartialP]
       }
       
-      inline def PickImplonOpenPartialPick(
-        onOpen: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-      ): typings.semanticUiAccordion.anon.PickImplonOpenPartialPick = {
+      inline def PickImplonOpenPartialPick(onOpen: js.ThisFunction0[/* this */ JQuery, Unit]): typings.semanticUiAccordion.anon.PickImplonOpenPartialPick = {
         val __obj = js.Dynamic.literal(onOpen = onOpen.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiAccordion.anon.PickImplonOpenPartialPick]
       }
       
-      inline def PickImplonOpeningPartialP(
-        onOpening: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-      ): typings.semanticUiAccordion.anon.PickImplonOpeningPartialP = {
+      inline def PickImplonOpeningPartialP(onOpening: js.ThisFunction0[/* this */ JQuery, Unit]): typings.semanticUiAccordion.anon.PickImplonOpeningPartialP = {
         val __obj = js.Dynamic.literal(onOpening = onOpening.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiAccordion.anon.PickImplonOpeningPartialP]
       }
       
-      inline def PickImplonPartialPickImpl(on: String & js.UndefOr[String]): typings.semanticUiAccordion.anon.PickImplonPartialPickImpl = {
+      inline def PickImplonPartialPickImpl(on: String): typings.semanticUiAccordion.anon.PickImplonPartialPickImpl = {
         val __obj = js.Dynamic.literal(on = on.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiAccordion.anon.PickImplonPartialPickImpl]
       }
       
-      inline def PickImplperformancePartia(performance: Boolean & js.UndefOr[Boolean]): typings.semanticUiAccordion.anon.PickImplperformancePartia = {
+      inline def PickImplperformancePartia(performance: Boolean): typings.semanticUiAccordion.anon.PickImplperformancePartia = {
         val __obj = js.Dynamic.literal(performance = performance.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiAccordion.anon.PickImplperformancePartia]
       }
       
-      inline def PickImplselectorPartialPi(selector: SelectorSettings & js.UndefOr[SelectorSettings]): typings.semanticUiAccordion.anon.PickImplselectorPartialPi = {
+      inline def PickImplselectorPartialPi(selector: SelectorSettings): typings.semanticUiAccordion.anon.PickImplselectorPartialPi = {
         val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiAccordion.anon.PickImplselectorPartialPi]
       }
       
-      inline def PickImplsilentPartialPick(silent: Boolean & js.UndefOr[Boolean]): typings.semanticUiAccordion.anon.PickImplsilentPartialPick = {
+      inline def PickImplsilentPartialPick(silent: Boolean): typings.semanticUiAccordion.anon.PickImplsilentPartialPick = {
         val __obj = js.Dynamic.literal(silent = silent.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiAccordion.anon.PickImplsilentPartialPick]
       }
       
-      inline def PickImplverbosePartialPic(verbose: Boolean & js.UndefOr[Boolean]): typings.semanticUiAccordion.anon.PickImplverbosePartialPic = {
+      inline def PickImplverbosePartialPic(verbose: Boolean): typings.semanticUiAccordion.anon.PickImplverbosePartialPic = {
         val __obj = js.Dynamic.literal(verbose = verbose.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiAccordion.anon.PickImplverbosePartialPic]
       }

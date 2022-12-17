@@ -1804,6 +1804,17 @@ object mod {
     def traverse_S[S](node: Node, opts: TraverseOptions[S], state: S): Unit = js.native
   }
   
+  inline def default_S[S](parent: js.Array[Node], opts: TraverseOptions[S], scope: Scope, state: S): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_S[S](
+    parent: js.Array[Node],
+    opts: TraverseOptions[S],
+    scope: Scope,
+    state: S,
+    parentPath: NodePath[Node]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_S[S](parent: Node, opts: TraverseOptions[S], scope: Scope, state: S): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_S[S](parent: Node, opts: TraverseOptions[S], scope: Scope, state: S, parentPath: NodePath[Node]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   type Node = typings.babelTypes.mod.Node
   
   trait TraversalContext extends StObject {

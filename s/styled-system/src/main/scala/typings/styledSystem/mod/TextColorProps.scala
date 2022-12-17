@@ -32,6 +32,6 @@ object TextColorProps {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setColorVarargs(value: (TVal | Null)*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: (TVal | Null)*): Self = StObject.set(x, "color", js.Array(value*))
   }
 }

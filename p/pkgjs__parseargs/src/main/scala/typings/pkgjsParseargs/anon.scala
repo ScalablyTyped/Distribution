@@ -19,6 +19,33 @@ object anon {
   
   trait Index
     extends StObject
+       with Token {
+    
+    var index: Double
+    
+    var kind: positional
+    
+    var value: String
+  }
+  object Index {
+    
+    inline def apply(index: Double, value: String): Index = {
+      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], kind = "positional", value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Index]
+    }
+    
+    extension [Self <: Index](x: Self) {
+      
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      
+      inline def setKind(value: positional): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait InlineValue
+    extends StObject
        with OptionToken {
     
     var index: Double
@@ -33,14 +60,14 @@ object anon {
     
     var value: String
   }
-  object Index {
+  object InlineValue {
     
-    inline def apply(index: Double, inlineValue: Boolean, name: String, rawName: String, value: String): Index = {
+    inline def apply(index: Double, inlineValue: Boolean, name: String, rawName: String, value: String): InlineValue = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Index]
+      __obj.asInstanceOf[InlineValue]
     }
     
-    extension [Self <: Index](x: Self) {
+    extension [Self <: InlineValue](x: Self) {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -56,7 +83,7 @@ object anon {
     }
   }
   
-  trait IndexKind
+  trait Kind
     extends StObject
        with Token {
     
@@ -64,14 +91,14 @@ object anon {
     
     var kind: `option-terminator`
   }
-  object IndexKind {
+  object Kind {
     
-    inline def apply(index: Double): IndexKind = {
+    inline def apply(index: Double): Kind = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], kind = "option-terminator")
-      __obj.asInstanceOf[IndexKind]
+      __obj.asInstanceOf[Kind]
     }
     
-    extension [Self <: IndexKind](x: Self) {
+    extension [Self <: Kind](x: Self) {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -79,7 +106,7 @@ object anon {
     }
   }
   
-  trait InlineValue
+  trait Name
     extends StObject
        with OptionToken {
     
@@ -95,14 +122,14 @@ object anon {
     
     var value: Unit
   }
-  object InlineValue {
+  object Name {
     
-    inline def apply(index: Double, inlineValue: Unit, name: String, rawName: String, value: Unit): InlineValue = {
+    inline def apply(index: Double, inlineValue: Unit, name: String, rawName: String, value: Unit): Name = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[InlineValue]
+      __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: InlineValue](x: Self) {
+    extension [Self <: Name](x: Self) {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -115,33 +142,6 @@ object anon {
       inline def setRawName(value: String): Self = StObject.set(x, "rawName", value.asInstanceOf[js.Any])
       
       inline def setValue(value: Unit): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Kind
-    extends StObject
-       with Token {
-    
-    var index: Double
-    
-    var kind: positional
-    
-    var value: String
-  }
-  object Kind {
-    
-    inline def apply(index: Double, value: String): Kind = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], kind = "positional", value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Kind]
-    }
-    
-    extension [Self <: Kind](x: Self) {
-      
-      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
-      
-      inline def setKind(value: positional): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
-      
-      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -168,7 +168,7 @@ object anon {
       
       inline def setTokens(value: ParsedTokens[T]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
       
-      inline def setTokensVarargs(value: (ParsedOptionToken[T] | ParsedPositionalToken[T] | IndexKind)*): Self = StObject.set(x, "tokens", js.Array(value*))
+      inline def setTokensVarargs(value: (ParsedOptionToken[T] | ParsedPositionalToken[T] | Kind)*): Self = StObject.set(x, "tokens", js.Array(value*))
       
       inline def setValues(value: ParsedValues[T]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     }

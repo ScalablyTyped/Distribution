@@ -1,6 +1,6 @@
 package typings.tcomb.mod
 
-import typings.tcomb.anon.KindName
+import typings.tcomb.anon.Identity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ trait Type[T]
   @JSName("is")
   var is_Original: TypeGuardPredicate[T] = js.native
   
-  var meta: KindName = js.native
+  var meta: Identity = js.native
   
   var t: T = js.native
 }

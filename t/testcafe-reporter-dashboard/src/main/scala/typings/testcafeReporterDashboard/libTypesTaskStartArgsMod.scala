@@ -5,7 +5,7 @@ import typings.ioTs.mod.PartialC
 import typings.ioTs.mod.ReadonlyC
 import typings.ioTs.mod.TypeC
 import typings.testcafeReporterDashboard.anon.Author
-import typings.testcafeReporterDashboard.anon.CiInfo
+import typings.testcafeReporterDashboard.anon.BuildId
 import typings.testcafeReporterDashboard.anon.Fixture
 import typings.testcafeReporterDashboard.anon.Id
 import typings.testcafeReporterDashboard.anon.Name
@@ -33,7 +33,7 @@ object libTypesTaskStartArgsMod {
   
   @JSImport("testcafe-reporter-dashboard/lib/types/task-start-args", "TaskStartArgsSchema")
   @js.native
-  val TaskStartArgsSchema: ReadonlyC[ExactC[TypeC[CiInfo]]] = js.native
+  val TaskStartArgsSchema: ReadonlyC[ExactC[TypeC[BuildId]]] = js.native
   
   /* Inlined io-ts.io-ts.TypeOf<io-ts.io-ts.ReadonlyC<io-ts.io-ts.ExactC<io-ts.io-ts.PartialC<{  commitSHA :io-ts.io-ts.StringC,   author :io-ts.io-ts.StringC,   branchName :io-ts.io-ts.StringC}>>>> */
   type CIInfo = scala.Nothing

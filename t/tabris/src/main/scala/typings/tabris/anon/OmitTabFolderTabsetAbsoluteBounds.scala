@@ -129,10 +129,10 @@ trait OmitTabFolderTabsetAbsoluteBounds[TabType /* <: Tab */] extends StObject {
   @JSName("_addChild")
   var _addChild_Original: js.Function2[/* child */ Widget[Any], /* index */ js.UndefOr[Double], Unit]
   
-  def _apply[Target](options: `31`[Target], rules: RuleSet[typings.tabris.global.tabris.widgets.TabFolder[TabType]]): typings.tabris.global.tabris.widgets.TabFolder[TabType]
+  def _apply[Target](options: `29`[Target], rules: RuleSet[typings.tabris.global.tabris.widgets.TabFolder[TabType]]): typings.tabris.global.tabris.widgets.TabFolder[TabType]
   @JSName("_apply")
   var _apply_Original: js.Function2[
-    /* options */ `31`[typings.tabris.global.tabris.widgets.TabFolder[TabType]], 
+    /* options */ `29`[typings.tabris.global.tabris.widgets.TabFolder[TabType]], 
     /* rules */ RuleSet[typings.tabris.global.tabris.widgets.TabFolder[TabType]], 
     typings.tabris.global.tabris.widgets.TabFolder[TabType]
   ]
@@ -311,10 +311,10 @@ trait OmitTabFolderTabsetAbsoluteBounds[TabType /* <: Tab */] extends StObject {
   var append_Original: js.Function1[/* repeated */ Tab, typings.tabris.global.tabris.widgets.TabFolder[TabType]]
   
   @JSName("apply")
-  def apply[Target](options: `31`[Target], rules: RuleSet[typings.tabris.global.tabris.widgets.TabFolder[TabType]]): typings.tabris.global.tabris.widgets.TabFolder[TabType]
+  def apply[Target](options: `29`[Target], rules: RuleSet[typings.tabris.global.tabris.widgets.TabFolder[TabType]]): typings.tabris.global.tabris.widgets.TabFolder[TabType]
   @JSName("apply")
   var apply_Original: js.Function2[
-    /* options */ `31`[typings.tabris.global.tabris.widgets.TabFolder[TabType]], 
+    /* options */ `29`[typings.tabris.global.tabris.widgets.TabFolder[TabType]], 
     /* rules */ RuleSet[typings.tabris.global.tabris.widgets.TabFolder[TabType]], 
     typings.tabris.global.tabris.widgets.TabFolder[TabType]
   ]
@@ -641,7 +641,7 @@ object OmitTabFolderTabsetAbsoluteBounds {
     $trigger: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Unit,
     _acceptChild: /* child */ Widget[Any] => Boolean,
     _addChild: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit,
-    _apply: (/* options */ `31`[typings.tabris.global.tabris.widgets.TabFolder[TabType]], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.TabFolder[TabType]]) => typings.tabris.global.tabris.widgets.TabFolder[TabType],
+    _apply: (/* options */ `29`[typings.tabris.global.tabris.widgets.TabFolder[TabType]], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.TabFolder[TabType]]) => typings.tabris.global.tabris.widgets.TabFolder[TabType],
     _checkDisposed: () => Unit,
     _checkLayout: /* value */ typings.tabris.mod.Layout => Unit,
     _children: /* selector */ js.UndefOr[Selector[Tab, Tab]] => WidgetCollection[Tab],
@@ -682,7 +682,7 @@ object OmitTabFolderTabsetAbsoluteBounds {
     animate: (/* properties */ Opacity, /* options */ AnimationOptions) => js.Promise[Unit],
     append: /* repeated */ Tab => typings.tabris.global.tabris.widgets.TabFolder[TabType],
     appendTo: /* parent */ Composite[Widget[Any]] => typings.tabris.global.tabris.widgets.TabFolder[TabType],
-    apply: (/* options */ `31`[typings.tabris.global.tabris.widgets.TabFolder[TabType]], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.TabFolder[TabType]]) => typings.tabris.global.tabris.widgets.TabFolder[TabType],
+    apply: (/* options */ `29`[typings.tabris.global.tabris.widgets.TabFolder[TabType]], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.TabFolder[TabType]]) => typings.tabris.global.tabris.widgets.TabFolder[TabType],
     baseline: SiblingReferenceValue | auto | `true`,
     bottom: ConstraintValue,
     bounds: Bounds,
@@ -826,7 +826,7 @@ object OmitTabFolderTabsetAbsoluteBounds {
     ): Self = StObject.set(x, "appendTo", js.Any.fromFunction1(value))
     
     inline def setApply(
-      value: (/* options */ `31`[typings.tabris.global.tabris.widgets.TabFolder[TabType]], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.TabFolder[TabType]]) => typings.tabris.global.tabris.widgets.TabFolder[TabType]
+      value: (/* options */ `29`[typings.tabris.global.tabris.widgets.TabFolder[TabType]], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.TabFolder[TabType]]) => typings.tabris.global.tabris.widgets.TabFolder[TabType]
     ): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
     
     inline def setBackground(value: LinearGradientValue | ColorValue | ImageValue): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
@@ -1115,7 +1115,7 @@ object OmitTabFolderTabsetAbsoluteBounds {
     inline def set_addChild(value: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "_addChild", js.Any.fromFunction2(value))
     
     inline def set_apply(
-      value: (/* options */ `31`[typings.tabris.global.tabris.widgets.TabFolder[TabType]], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.TabFolder[TabType]]) => typings.tabris.global.tabris.widgets.TabFolder[TabType]
+      value: (/* options */ `29`[typings.tabris.global.tabris.widgets.TabFolder[TabType]], /* rules */ RuleSet[typings.tabris.global.tabris.widgets.TabFolder[TabType]]) => typings.tabris.global.tabris.widgets.TabFolder[TabType]
     ): Self = StObject.set(x, "_apply", js.Any.fromFunction2(value))
     
     inline def set_checkDisposed(value: () => Unit): Self = StObject.set(x, "_checkDisposed", js.Any.fromFunction0(value))

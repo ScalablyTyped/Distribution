@@ -1,6 +1,6 @@
 package typings.ariClient.mod
 
-import typings.ariClient.anon.OperationPlaybackId
+import typings.ariClient.anon.Operation
 import typings.ariClient.anon.PlaybackIdString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,14 +15,14 @@ trait Playbacks extends StObject {
     * @param params.playbackId - Playbacks id.
     * @param params.operation - Operation to perform on the playback.
     */
-  def control(params: OperationPlaybackId): js.Promise[Unit] = js.native
+  def control(params: Operation): js.Promise[Unit] = js.native
   /**
     * Control a playback.
     *
     * @param params.playbackId - Playbacks id.
     * @param params.operation - Operation to perform on the playback.
     */
-  def control(params: OperationPlaybackId, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
+  def control(params: Operation, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Get a playbacks details.

@@ -9,10 +9,6 @@ import typings.vegaLite.buildSrcCompileScaleComponentMod.ScaleComponent
 import typings.vegaLite.buildSrcStackMod.StackProperties
 import typings.vegaLite.buildSrcTypeMod.StandardType
 import typings.vegaLite.buildSrcVegaDotschemaMod.VgValueRef
-import typings.vegaLite.vegaLiteStrings.radius2
-import typings.vegaLite.vegaLiteStrings.theta2
-import typings.vegaLite.vegaLiteStrings.x2
-import typings.vegaLite.vegaLiteStrings.y2
 import typings.vegaTypings.typesSpecSignalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,7 +19,7 @@ trait MidPointParamschannelx2y2 extends StObject {
   
   var bandPosition: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var channel: typings.vegaLite.buildSrcChannelMod.Channel & (x2 | y2 | radius2 | theta2)
+  var channel: typings.vegaLite.buildSrcChannelMod.Channel
   
   var channel2Def: js.UndefOr[SecondaryChannelDef[String]] = js.undefined
   
@@ -46,7 +42,7 @@ trait MidPointParamschannelx2y2 extends StObject {
 object MidPointParamschannelx2y2 {
   
   inline def apply(
-    channel: typings.vegaLite.buildSrcChannelMod.Channel & (x2 | y2 | radius2 | theta2),
+    channel: typings.vegaLite.buildSrcChannelMod.Channel,
     config: typings.vegaLite.buildSrcConfigMod.Config[SignalRef],
     defaultRef: VgValueRef | js.Function0[VgValueRef],
     markDef: typings.vegaLite.buildSrcMarkMod.MarkDef[typings.vegaLite.buildSrcMarkMod.Mark, SignalRef],
@@ -63,7 +59,7 @@ object MidPointParamschannelx2y2 {
     
     inline def setBandPositionUndefined: Self = StObject.set(x, "bandPosition", js.undefined)
     
-    inline def setChannel(value: typings.vegaLite.buildSrcChannelMod.Channel & (x2 | y2 | radius2 | theta2)): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: typings.vegaLite.buildSrcChannelMod.Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
     inline def setChannel2Def(value: SecondaryChannelDef[String]): Self = StObject.set(x, "channel2Def", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,5 @@
 package typings.schematicsAngular.anon
 
-import typings.schematicsAngular.schematicsAngularBooleans.`true`
 import typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.AssertClause
 import typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.Expression
 import typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.Identifier
@@ -94,7 +93,7 @@ trait ExportDeclarationreadonly extends StObject {
   def getWidth(): Double = js.native
   def getWidth(sourceFile: SourceFileLike): Double = js.native
   
-  val isTypeOnly: Boolean & `true` = js.native
+  val isTypeOnly: Boolean = js.native
   
   val kind: ExportDeclaration = js.native
   

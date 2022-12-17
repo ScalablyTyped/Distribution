@@ -467,9 +467,7 @@ object mod {
             ]
           ]) | (/* funcs */ Unit), 
           /* lib */ js.Object, 
-          (js.Object & (LibraryObject[
-            LibraryObjectDefinitionToLibraryDefinition[LibraryObjectDefinitionBase | LibraryObjectDefinitionInferenceMarker]
-          ])) | Any | (LibraryObject[
+          Any | (LibraryObject[
             LibraryObjectDefinitionToLibraryDefinition[LibraryObjectDefinitionBase | LibraryObjectDefinitionInferenceMarker]
           ])
         ]

@@ -257,7 +257,7 @@ type NodeFilter = (js.Function1[/* node */ Node, Double]) | AcceptNode
 /**
   * Exclude null and undefined from T
   */
-type NonNullable[T] = T & js.Object
+type NonNullable[T] = T
 
 type NotificationPermissionCallback = js.Function1[/* permission */ NotificationPermission, Unit]
 

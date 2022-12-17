@@ -5,12 +5,12 @@ import typings.rcTree.anon.CheckedKeys
 import typings.rcTree.anon.DragNode
 import typings.rcTree.anon.DropLevelOffset
 import typings.rcTree.anon.Event
-import typings.rcTree.anon.EventMouseEvent
 import typings.rcTree.anon.EventNode
 import typings.rcTree.anon.Expanded
 import typings.rcTree.anon.ExpandedKeys
 import typings.rcTree.anon.Node
 import typings.rcTree.anon.PartialTreeStateDataNode
+import typings.rcTree.anon.Pos
 import typings.rcTree.esContextTypesMod.NodeDragEventHandler
 import typings.rcTree.esContextTypesMod.NodeDragEventParams
 import typings.rcTree.esContextTypesMod.NodeMouseEventHandler
@@ -208,7 +208,7 @@ object esTreeMod {
     
     var checkedNodes: js.Array[TreeDataType]
     
-    var checkedNodesPositions: js.UndefOr[js.Array[Node[TreeDataType]]] = js.undefined
+    var checkedNodesPositions: js.UndefOr[js.Array[Pos[TreeDataType]]] = js.undefined
     
     var event: check
     
@@ -236,11 +236,11 @@ object esTreeMod {
       
       inline def setCheckedNodes(value: js.Array[TreeDataType]): Self = StObject.set(x, "checkedNodes", value.asInstanceOf[js.Any])
       
-      inline def setCheckedNodesPositions(value: js.Array[Node[TreeDataType]]): Self = StObject.set(x, "checkedNodesPositions", value.asInstanceOf[js.Any])
+      inline def setCheckedNodesPositions(value: js.Array[Pos[TreeDataType]]): Self = StObject.set(x, "checkedNodesPositions", value.asInstanceOf[js.Any])
       
       inline def setCheckedNodesPositionsUndefined: Self = StObject.set(x, "checkedNodesPositions", js.undefined)
       
-      inline def setCheckedNodesPositionsVarargs(value: Node[TreeDataType]*): Self = StObject.set(x, "checkedNodesPositions", js.Array(value*))
+      inline def setCheckedNodesPositionsVarargs(value: Pos[TreeDataType]*): Self = StObject.set(x, "checkedNodesPositions", js.Array(value*))
       
       inline def setCheckedNodesVarargs(value: TreeDataType*): Self = StObject.set(x, "checkedNodes", js.Array(value*))
       
@@ -530,7 +530,7 @@ object esTreeMod {
     var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
     
     var onLoad: js.UndefOr[
-        js.Function2[/* loadedKeys */ js.Array[Key], /* info */ EventNode[TreeDataType], Unit]
+        js.Function2[/* loadedKeys */ js.Array[Key], /* info */ Node[TreeDataType], Unit]
       ] = js.undefined
     
     var onMouseEnter: js.UndefOr[
@@ -541,7 +541,7 @@ object esTreeMod {
         js.Function1[/* info */ NodeMouseEventParams[TreeDataType, HTMLSpanElement], Unit]
       ] = js.undefined
     
-    var onRightClick: js.UndefOr[js.Function1[/* info */ EventMouseEvent[TreeDataType], Unit]] = js.undefined
+    var onRightClick: js.UndefOr[js.Function1[/* info */ EventNode[TreeDataType], Unit]] = js.undefined
     
     var onScroll: js.UndefOr[UIEventHandler[HTMLElement]] = js.undefined
     
@@ -782,7 +782,7 @@ object esTreeMod {
       
       inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      inline def setOnLoad(value: (/* loadedKeys */ js.Array[Key], /* info */ EventNode[TreeDataType]) => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction2(value))
+      inline def setOnLoad(value: (/* loadedKeys */ js.Array[Key], /* info */ Node[TreeDataType]) => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction2(value))
       
       inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
       
@@ -794,7 +794,7 @@ object esTreeMod {
       
       inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
       
-      inline def setOnRightClick(value: /* info */ EventMouseEvent[TreeDataType] => Unit): Self = StObject.set(x, "onRightClick", js.Any.fromFunction1(value))
+      inline def setOnRightClick(value: /* info */ EventNode[TreeDataType] => Unit): Self = StObject.set(x, "onRightClick", js.Any.fromFunction1(value))
       
       inline def setOnRightClickUndefined: Self = StObject.set(x, "onRightClick", js.undefined)
       

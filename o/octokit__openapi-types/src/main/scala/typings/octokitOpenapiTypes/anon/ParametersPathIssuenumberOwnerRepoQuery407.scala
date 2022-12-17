@@ -1,0 +1,26 @@
+package typings.octokitOpenapiTypes.anon
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait ParametersPathIssuenumberOwnerRepoQuery407 extends StObject {
+  
+  var parameters: PathIssuenumberOwnerRepoQuery407
+  
+  var responses: `200Content531`
+}
+object ParametersPathIssuenumberOwnerRepoQuery407 {
+  
+  inline def apply(parameters: PathIssuenumberOwnerRepoQuery407, responses: `200Content531`): ParametersPathIssuenumberOwnerRepoQuery407 = {
+    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ParametersPathIssuenumberOwnerRepoQuery407]
+  }
+  
+  extension [Self <: ParametersPathIssuenumberOwnerRepoQuery407](x: Self) {
+    
+    inline def setParameters(value: PathIssuenumberOwnerRepoQuery407): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    
+    inline def setResponses(value: `200Content531`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+  }
+}

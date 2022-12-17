@@ -1,6 +1,6 @@
 package typings.jweixin.mod
 
-import typings.jweixin.anon.ErrMsg
+import typings.jweixin.anon.LocalIds
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,11 +24,11 @@ trait IchooseImage
   
   /** 成功则返回图片的本地文件路径列表 tempFilePaths */
   @JSName("success")
-  def success_MIchooseImage(res: ErrMsg): Unit
+  def success_MIchooseImage(res: LocalIds): Unit
 }
 object IchooseImage {
   
-  inline def apply(cancel: () => Unit, success: ErrMsg => Unit): IchooseImage = {
+  inline def apply(cancel: () => Unit, success: LocalIds => Unit): IchooseImage = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[IchooseImage]
   }
@@ -53,6 +53,6 @@ object IchooseImage {
     
     inline def setSourceTypeVarargs(value: ImageSourceType*): Self = StObject.set(x, "sourceType", js.Array(value*))
     
-    inline def setSuccess(value: ErrMsg => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: LocalIds => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

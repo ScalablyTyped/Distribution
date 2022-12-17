@@ -1,6 +1,7 @@
 package typings.maplibreGl.mod
 
 import org.scalablytyped.runtime.NumberDictionary
+import typings.maplibreGl.anon.Coord
 import typings.maplibreGl.anon.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,7 +22,7 @@ open class TileLayerIndex protected () extends StObject {
   
   def getScaledCoordinates(symbolInstance: SymbolInstance, childTileID: OverscaledTileID): X = js.native
   
-  var indexedSymbolInstances: NumberDictionary[js.Array[typings.maplibreGl.anon.CrossTileID]] = js.native
+  var indexedSymbolInstances: NumberDictionary[js.Array[Coord]] = js.native
   
   var tileID: OverscaledTileID = js.native
 }

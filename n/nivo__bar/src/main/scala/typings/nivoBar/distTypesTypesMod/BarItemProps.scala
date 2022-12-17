@@ -1,7 +1,7 @@
 package typings.nivoBar.distTypesTypesMod
 
 import typings.nivoBar.anon.Color
-import typings.nivoBar.anon.Data
+import typings.nivoBar.anon.DataValue
 import typings.react.mod.FC
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
@@ -20,7 +20,7 @@ trait BarItemProps[RawDatum /* <: BarDatum */] extends StObject {
   
   var ariaLabelledBy: js.UndefOr[js.Function1[/* data */ ComputedDatum[RawDatum], js.UndefOr[String]]] = js.undefined
   
-  var bar: ComputedBarDatum[RawDatum] & Data
+  var bar: ComputedBarDatum[RawDatum] & DataValue
   
   var borderRadius: Double
   
@@ -65,7 +65,7 @@ trait BarItemProps[RawDatum /* <: BarDatum */] extends StObject {
 object BarItemProps {
   
   inline def apply[RawDatum /* <: BarDatum */](
-    bar: ComputedBarDatum[RawDatum] & Data,
+    bar: ComputedBarDatum[RawDatum] & DataValue,
     borderRadius: Double,
     borderWidth: Double,
     isFocusable: Boolean,
@@ -93,7 +93,7 @@ object BarItemProps {
     
     inline def setAriaLabelledByUndefined: Self = StObject.set(x, "ariaLabelledBy", js.undefined)
     
-    inline def setBar(value: ComputedBarDatum[RawDatum] & Data): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
+    inline def setBar(value: ComputedBarDatum[RawDatum] & DataValue): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
     
     inline def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     

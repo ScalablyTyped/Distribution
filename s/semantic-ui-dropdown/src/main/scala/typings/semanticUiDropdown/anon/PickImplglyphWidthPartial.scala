@@ -77,7 +77,7 @@ trait PickImplglyphWidthPartial
   
   var fullTextSearch: js.UndefOr[Boolean | exact] = js.undefined
   
-  var glyphWidth: Double & js.UndefOr[Double]
+  var glyphWidth: Double
   
   var hideAdditions: js.UndefOr[Boolean] = js.undefined
   
@@ -169,7 +169,7 @@ trait PickImplglyphWidthPartial
 }
 object PickImplglyphWidthPartial {
   
-  inline def apply(glyphWidth: Double & js.UndefOr[Double]): PickImplglyphWidthPartial = {
+  inline def apply(glyphWidth: Double): PickImplglyphWidthPartial = {
     val __obj = js.Dynamic.literal(glyphWidth = glyphWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplglyphWidthPartial]
   }
@@ -252,7 +252,7 @@ object PickImplglyphWidthPartial {
     
     inline def setFullTextSearchUndefined: Self = StObject.set(x, "fullTextSearch", js.undefined)
     
-    inline def setGlyphWidth(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "glyphWidth", value.asInstanceOf[js.Any])
+    inline def setGlyphWidth(value: Double): Self = StObject.set(x, "glyphWidth", value.asInstanceOf[js.Any])
     
     inline def setHideAdditions(value: Boolean): Self = StObject.set(x, "hideAdditions", value.asInstanceOf[js.Any])
     

@@ -69,7 +69,7 @@ trait PartialOptionsobjectDatas extends StObject {
   
   var minZoomLevel: js.UndefOr[Double] = js.undefined
   
-  var objectData: (js.UndefOr[js.Object | String]) & (String | js.Object)
+  var objectData: js.UndefOr[js.Object | String] = js.undefined
   
   var onGotoSubmit: js.UndefOr[js.Function0[Any]] = js.undefined
   
@@ -99,8 +99,8 @@ trait PartialOptionsobjectDatas extends StObject {
 }
 object PartialOptionsobjectDatas {
   
-  inline def apply(objectData: (js.UndefOr[js.Object | String]) & (String | js.Object)): PartialOptionsobjectDatas = {
-    val __obj = js.Dynamic.literal(objectData = objectData.asInstanceOf[js.Any])
+  inline def apply(): PartialOptionsobjectDatas = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialOptionsobjectDatas]
   }
   
@@ -230,7 +230,9 @@ object PartialOptionsobjectDatas {
     
     inline def setMinZoomLevelUndefined: Self = StObject.set(x, "minZoomLevel", js.undefined)
     
-    inline def setObjectData(value: (js.UndefOr[js.Object | String]) & (String | js.Object)): Self = StObject.set(x, "objectData", value.asInstanceOf[js.Any])
+    inline def setObjectData(value: js.Object | String): Self = StObject.set(x, "objectData", value.asInstanceOf[js.Any])
+    
+    inline def setObjectDataUndefined: Self = StObject.set(x, "objectData", js.undefined)
     
     inline def setOnGotoSubmit(value: () => Any): Self = StObject.set(x, "onGotoSubmit", js.Any.fromFunction0(value))
     

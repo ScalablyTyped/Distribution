@@ -6,20 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `107` extends StObject {
   
-  /** The name of the commit/branch/tag. Default: the repository’s default branch (usually `master`) */
-  var ref: js.UndefOr[String] = js.undefined
+  @JSName("application/json")
+  var applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['team-full'] */ js.Any
 }
 object `107` {
   
-  inline def apply(): `107` = {
+  inline def apply(
+    applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['team-full'] */ js.Any
+  ): `107` = {
     val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`107`]
   }
   
   extension [Self <: `107`](x: Self) {
     
-    inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
-    
-    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+    inline def setApplicationSlashjson(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['team-full'] */ js.Any
+    ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }
 }

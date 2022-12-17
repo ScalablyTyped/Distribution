@@ -85,7 +85,7 @@ trait PickImpllabelPartialPickI
   
   var keys: js.UndefOr[KeySettings] = js.undefined
   
-  var label: LabelSettings & js.UndefOr[LabelSettings]
+  var label: LabelSettings
   
   var `match`: js.UndefOr[both | value | text] = js.undefined
   
@@ -169,7 +169,7 @@ trait PickImpllabelPartialPickI
 }
 object PickImpllabelPartialPickI {
   
-  inline def apply(label: LabelSettings & js.UndefOr[LabelSettings]): PickImpllabelPartialPickI = {
+  inline def apply(label: LabelSettings): PickImpllabelPartialPickI = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpllabelPartialPickI]
   }
@@ -268,7 +268,7 @@ object PickImpllabelPartialPickI {
     
     inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    inline def setLabel(value: LabelSettings & js.UndefOr[LabelSettings]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: LabelSettings): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setMatch(value: both | value | text): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     

@@ -13,11 +13,11 @@ trait Global extends StObject {
   
   var color: js.UndefOr[ColorType] = js.undefined
   
-  var global: js.UndefOr[`18`] = js.undefined
+  var global: js.UndefOr[`15`] = js.undefined
   
   var icon: js.UndefOr[ReactNode | typings.grommetIcons.iconsMod.Icon] = js.undefined
   
-  var toast: js.UndefOr[`18`] = js.undefined
+  var toast: js.UndefOr[`15`] = js.undefined
 }
 object Global {
   
@@ -36,7 +36,7 @@ object Global {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setGlobal(value: `18`): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+    inline def setGlobal(value: `15`): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     
     inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
     
@@ -44,7 +44,7 @@ object Global {
     
     inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    inline def setToast(value: `18`): Self = StObject.set(x, "toast", value.asInstanceOf[js.Any])
+    inline def setToast(value: `15`): Self = StObject.set(x, "toast", value.asInstanceOf[js.Any])
     
     inline def setToastUndefined: Self = StObject.set(x, "toast", js.undefined)
   }

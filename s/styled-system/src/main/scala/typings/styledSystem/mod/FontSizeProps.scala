@@ -32,6 +32,6 @@ object FontSizeProps {
     
     inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
-    inline def setFontSizeVarargs(value: (TVal | Null)*): Self = StObject.set(x, "fontSize", js.Array(value :_*))
+    inline def setFontSizeVarargs(value: (TVal | Null)*): Self = StObject.set(x, "fontSize", js.Array(value*))
   }
 }

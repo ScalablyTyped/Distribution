@@ -38,8 +38,8 @@ object mod {
       * @param command - Command string to parse
       * @param args - Additional default arguments
       */
-    def parseCommand(command: String): `false` | Args = js.native
-    def parseCommand(command: String, args: js.Array[String]): `false` | Args = js.native
+    def parseCommand(command: String): `false` | Command = js.native
+    def parseCommand(command: String, args: js.Array[String]): `false` | Command = js.native
     
     /**
       * @description Restarts the target script associated with this instance.
@@ -112,7 +112,7 @@ object mod {
     
     var outFile: js.UndefOr[String] = js.undefined
     
-    var parser: js.UndefOr[js.Function2[/* command */ String, /* args */ js.Array[String], Command]] = js.undefined
+    var parser: js.UndefOr[js.Function2[/* command */ String, /* args */ js.Array[String], Args]] = js.undefined
     
     var pidFile: js.UndefOr[String] = js.undefined
     
@@ -185,7 +185,7 @@ object mod {
       
       inline def setOutFileUndefined: Self = StObject.set(x, "outFile", js.undefined)
       
-      inline def setParser(value: (/* command */ String, /* args */ js.Array[String]) => Command): Self = StObject.set(x, "parser", js.Any.fromFunction2(value))
+      inline def setParser(value: (/* command */ String, /* args */ js.Array[String]) => Args): Self = StObject.set(x, "parser", js.Any.fromFunction2(value))
       
       inline def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
       

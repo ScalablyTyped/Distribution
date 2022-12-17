@@ -63,7 +63,7 @@ trait reqBlankNodeoriginalQuadS extends StObject {
   
   var noRDFa: js.UndefOr[scala.Boolean] = js.undefined
   
-  var original: QuadSubject & js.UndefOr[NamedNode]
+  var original: QuadSubject
   
   var proxyUsed: js.UndefOr[scala.Boolean] = js.undefined
   
@@ -75,7 +75,7 @@ trait reqBlankNodeoriginalQuadS extends StObject {
   
   var referringTerm: js.UndefOr[NamedNode] = js.undefined
   
-  var req: BlankNode & js.UndefOr[BlankNode]
+  var req: BlankNode
   
   var requestedURI: js.UndefOr[String] = js.undefined
   
@@ -93,7 +93,7 @@ trait reqBlankNodeoriginalQuadS extends StObject {
 }
 object reqBlankNodeoriginalQuadS {
   
-  inline def apply(original: QuadSubject & js.UndefOr[NamedNode], req: BlankNode & js.UndefOr[BlankNode]): reqBlankNodeoriginalQuadS = {
+  inline def apply(original: QuadSubject, req: BlankNode): reqBlankNodeoriginalQuadS = {
     val __obj = js.Dynamic.literal(original = original.asInstanceOf[js.Any], req = req.asInstanceOf[js.Any])
     __obj.asInstanceOf[reqBlankNodeoriginalQuadS]
   }
@@ -182,7 +182,7 @@ object reqBlankNodeoriginalQuadS {
     
     inline def setNoRDFaUndefined: Self = StObject.set(x, "noRDFa", js.undefined)
     
-    inline def setOriginal(value: QuadSubject & js.UndefOr[NamedNode]): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
+    inline def setOriginal(value: QuadSubject): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
     
     inline def setProxyUsed(value: scala.Boolean): Self = StObject.set(x, "proxyUsed", value.asInstanceOf[js.Any])
     
@@ -204,7 +204,7 @@ object reqBlankNodeoriginalQuadS {
     
     inline def setReferringTermUndefined: Self = StObject.set(x, "referringTerm", js.undefined)
     
-    inline def setReq(value: BlankNode & js.UndefOr[BlankNode]): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+    inline def setReq(value: BlankNode): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
     
     inline def setRequestedURI(value: String): Self = StObject.set(x, "requestedURI", value.asInstanceOf[js.Any])
     

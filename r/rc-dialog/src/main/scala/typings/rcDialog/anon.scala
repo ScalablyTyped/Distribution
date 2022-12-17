@@ -71,7 +71,7 @@ object anon {
     
     var animation: js.UndefOr[Any] = js.undefined
     
-    var ariaId: String & js.UndefOr[String]
+    var ariaId: String
     
     var bodyProps: js.UndefOr[Any] = js.undefined
     
@@ -155,12 +155,7 @@ object anon {
   }
   object motionNamestringariaIdstr {
     
-    inline def apply(
-      ariaId: String & js.UndefOr[String],
-      motionName: String,
-      onVisibleChanged: Boolean => Unit,
-      prefixCls: String
-    ): motionNamestringariaIdstr = {
+    inline def apply(ariaId: String, motionName: String, onVisibleChanged: Boolean => Unit, prefixCls: String): motionNamestringariaIdstr = {
       val __obj = js.Dynamic.literal(ariaId = ariaId.asInstanceOf[js.Any], motionName = motionName.asInstanceOf[js.Any], onVisibleChanged = js.Any.fromFunction1(onVisibleChanged), prefixCls = prefixCls.asInstanceOf[js.Any])
       __obj.asInstanceOf[motionNamestringariaIdstr]
     }
@@ -175,7 +170,7 @@ object anon {
       
       inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
-      inline def setAriaId(value: String & js.UndefOr[String]): Self = StObject.set(x, "ariaId", value.asInstanceOf[js.Any])
+      inline def setAriaId(value: String): Self = StObject.set(x, "ariaId", value.asInstanceOf[js.Any])
       
       inline def setBodyProps(value: Any): Self = StObject.set(x, "bodyProps", value.asInstanceOf[js.Any])
       

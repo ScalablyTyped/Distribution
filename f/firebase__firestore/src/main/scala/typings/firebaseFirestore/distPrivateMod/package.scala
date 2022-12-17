@@ -4,10 +4,10 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.firebaseApp.mod.FirebaseApp
 import typings.firebaseFirestore.anon.MockUserToken
 import typings.firebaseFirestore.anon.Seconds
+import typings.firebaseFirestore.anon.`52`
+import typings.firebaseFirestore.anon.`53`
 import typings.firebaseFirestore.anon.`54`
 import typings.firebaseFirestore.anon.`55`
-import typings.firebaseFirestore.anon.`56`
-import typings.firebaseFirestore.anon.`57`
 import typings.firebaseFirestore.distPrivateMod.^
 import typings.firebaseFirestore.firebaseFirestoreStrings.NULL_VALUE
 import typings.firebaseLogger.distSrcLoggerMod.LogLevelString
@@ -66,7 +66,7 @@ inline def endAt(snapshot: DocumentSnapshot2[Any]): QueryConstraint = ^.asInstan
 inline def endBefore(fieldValues: Any*): QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")(fieldValues.asInstanceOf[Seq[js.Any]]*).asInstanceOf[QueryConstraint]
 inline def endBefore(snapshot: DocumentSnapshot2[Any]): QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")(snapshot.asInstanceOf[js.Any]).asInstanceOf[QueryConstraint]
 
-inline def getCountFromServer(query: Query_[Any]): js.Promise[AggregateQuerySnapshot[`54`]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCountFromServer")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AggregateQuerySnapshot[`54`]]]
+inline def getCountFromServer(query: Query_[Any]): js.Promise[AggregateQuerySnapshot[`52`]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCountFromServer")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AggregateQuerySnapshot[`52`]]]
 
 inline def getDoc[T](reference: DocumentReference[T]): js.Promise[DocumentSnapshot[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDoc")(reference.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DocumentSnapshot[T]]]
 
@@ -98,7 +98,7 @@ inline def loadBundle(firestore: Firestore, bundleData: ReadableStream[js.typeda
 
 inline def namedQuery(firestore: Firestore, name: String): js.Promise[Query_[DocumentData] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("namedQuery")(firestore.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Query_[DocumentData] | Null]]
 
-inline def onSnapshot[T](query: Query_[T], observer: `56`[T]): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshot")(query.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
+inline def onSnapshot[T](query: Query_[T], observer: `54`[T]): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshot")(query.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
 inline def onSnapshot[T](query: Query_[T], onNext: js.Function1[/* snapshot */ QuerySnapshot[T], Unit]): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshot")(query.asInstanceOf[js.Any], onNext.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
 inline def onSnapshot[T](
   query: Query_[T],
@@ -117,7 +117,7 @@ inline def onSnapshot[T](
   onError: Unit,
   onCompletion: js.Function0[Unit]
 ): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshot")(query.asInstanceOf[js.Any], onNext.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onCompletion.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
-inline def onSnapshot[T](query: Query_[T], options: SnapshotListenOptions, observer: `56`[T]): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshot")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
+inline def onSnapshot[T](query: Query_[T], options: SnapshotListenOptions, observer: `54`[T]): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshot")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
 inline def onSnapshot[T](
   query: Query_[T],
   options: SnapshotListenOptions,
@@ -143,7 +143,7 @@ inline def onSnapshot[T](
   onError: Unit,
   onCompletion: js.Function0[Unit]
 ): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshot")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any], onNext.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onCompletion.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
-inline def onSnapshot[T](reference: DocumentReference[T], observer: `55`[T]): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshot")(reference.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
+inline def onSnapshot[T](reference: DocumentReference[T], observer: `53`[T]): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshot")(reference.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
 inline def onSnapshot[T](reference: DocumentReference[T], onNext: js.Function1[/* snapshot */ DocumentSnapshot[T], Unit]): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshot")(reference.asInstanceOf[js.Any], onNext.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
 inline def onSnapshot[T](
   reference: DocumentReference[T],
@@ -162,7 +162,7 @@ inline def onSnapshot[T](
   onError: Unit,
   onCompletion: js.Function0[Unit]
 ): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshot")(reference.asInstanceOf[js.Any], onNext.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onCompletion.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
-inline def onSnapshot[T](reference: DocumentReference[T], options: SnapshotListenOptions, observer: `55`[T]): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshot")(reference.asInstanceOf[js.Any], options.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
+inline def onSnapshot[T](reference: DocumentReference[T], options: SnapshotListenOptions, observer: `53`[T]): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshot")(reference.asInstanceOf[js.Any], options.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
 inline def onSnapshot[T](
   reference: DocumentReference[T],
   options: SnapshotListenOptions,
@@ -189,7 +189,7 @@ inline def onSnapshot[T](
   onCompletion: js.Function0[Unit]
 ): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshot")(reference.asInstanceOf[js.Any], options.asInstanceOf[js.Any], onNext.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onCompletion.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
 
-inline def onSnapshotsInSync(firestore: Firestore, observer: `57`): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshotsInSync")(firestore.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
+inline def onSnapshotsInSync(firestore: Firestore, observer: `55`): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshotsInSync")(firestore.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
 inline def onSnapshotsInSync(firestore: Firestore, onSync: js.Function0[Unit]): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshotsInSync")(firestore.asInstanceOf[js.Any], onSync.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
 
 inline def orderBy(fieldPath: String): QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(fieldPath.asInstanceOf[js.Any]).asInstanceOf[QueryConstraint]

@@ -141,16 +141,12 @@ object mod {
   /* note: abstract class */ @JSImport("hdr-histogram-js", "JsHistogram")
   @js.native
   open class JsHistogram protected ()
-    extends StObject
-       with typings.hdrHistogramJs.distJsHistogramMod.JsHistogram {
+    extends typings.hdrHistogramJs.distJsHistogramMod.JsHistogram {
     def this(
       lowestDiscernibleValue: Double,
       highestTrackableValue: Double,
       numberOfSignificantValueDigits: Double
     ) = this()
-    
-    /* CompleteClass */
-    var encodeIntoCompressedBase64: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof doEncodeIntoCompressedBase64 */ Any = js.native
   }
   /* static members */
   object JsHistogram {

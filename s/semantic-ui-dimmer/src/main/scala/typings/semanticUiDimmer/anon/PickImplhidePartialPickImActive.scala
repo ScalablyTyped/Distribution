@@ -18,7 +18,7 @@ trait PickImplhidePartialPickImActive
   
   var disabled: js.UndefOr[String] = js.undefined
   
-  var hide: String & js.UndefOr[String]
+  var hide: String
   
   var pageDimmer: js.UndefOr[String] = js.undefined
   
@@ -28,7 +28,7 @@ trait PickImplhidePartialPickImActive
 }
 object PickImplhidePartialPickImActive {
   
-  inline def apply(hide: String & js.UndefOr[String]): PickImplhidePartialPickImActive = {
+  inline def apply(hide: String): PickImplhidePartialPickImActive = {
     val __obj = js.Dynamic.literal(hide = hide.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplhidePartialPickImActive]
   }
@@ -51,7 +51,7 @@ object PickImplhidePartialPickImActive {
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    inline def setHide(value: String & js.UndefOr[String]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+    inline def setHide(value: String): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
     
     inline def setPageDimmer(value: String): Self = StObject.set(x, "pageDimmer", value.asInstanceOf[js.Any])
     

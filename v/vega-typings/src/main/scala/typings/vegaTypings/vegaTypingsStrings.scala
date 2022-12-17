@@ -52,6 +52,7 @@ import typings.vegaTypings.typesSpecSchemeMod.Diverging
 import typings.vegaTypings.typesSpecSchemeMod.SequentialMultiHue
 import typings.vegaTypings.typesSpecSchemeMod.SequentialSingleHue
 import typings.vegaTypings.typesSpecStreamMod.EventType
+import typings.vegaTypings.typesSpecStreamMod._EventSource
 import typings.vegaTypings.typesSpecTitleMod.TitleFrame
 import typings.vegaTypings.typesSpecTitleMod.TitleOrient
 import typings.vegaTypings.typesSpecTitleMod._TitleAnchor
@@ -4618,7 +4619,9 @@ object vegaTypingsStrings {
   inline def scale: scale = "scale".asInstanceOf[scale]
   
   @js.native
-  sealed trait scope extends StObject
+  sealed trait scope
+    extends StObject
+       with _EventSource
   inline def scope: scope = "scope".asInstanceOf[scope]
   
   @js.native
@@ -5276,7 +5279,9 @@ object vegaTypingsStrings {
   inline def `vertical-text`: `vertical-text` = "vertical-text".asInstanceOf[`vertical-text`]
   
   @js.native
-  sealed trait view extends StObject
+  sealed trait view
+    extends StObject
+       with _EventSource
   inline def view: view = "view".asInstanceOf[view]
   
   @js.native
@@ -5366,7 +5371,9 @@ object vegaTypingsStrings {
   inline def width: width = "width".asInstanceOf[width]
   
   @js.native
-  sealed trait window extends StObject
+  sealed trait window
+    extends StObject
+       with _EventSource
   inline def window: window = "window".asInstanceOf[window]
   
   @js.native

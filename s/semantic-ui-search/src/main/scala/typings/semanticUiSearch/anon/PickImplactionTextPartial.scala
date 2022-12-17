@@ -12,7 +12,7 @@ trait PickImplactionTextPartial
   
   var action: js.UndefOr[String] = js.undefined
   
-  var actionText: String & js.UndefOr[String]
+  var actionText: String
   
   var actionURL: js.UndefOr[String] = js.undefined
   
@@ -34,7 +34,7 @@ trait PickImplactionTextPartial
 }
 object PickImplactionTextPartial {
   
-  inline def apply(actionText: String & js.UndefOr[String]): PickImplactionTextPartial = {
+  inline def apply(actionText: String): PickImplactionTextPartial = {
     val __obj = js.Dynamic.literal(actionText = actionText.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplactionTextPartial]
   }
@@ -43,7 +43,7 @@ object PickImplactionTextPartial {
     
     inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    inline def setActionText(value: String & js.UndefOr[String]): Self = StObject.set(x, "actionText", value.asInstanceOf[js.Any])
+    inline def setActionText(value: String): Self = StObject.set(x, "actionText", value.asInstanceOf[js.Any])
     
     inline def setActionURL(value: String): Self = StObject.set(x, "actionURL", value.asInstanceOf[js.Any])
     

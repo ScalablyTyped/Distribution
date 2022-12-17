@@ -1,9 +1,9 @@
 package typings.rebass
 
 import typings.react.mod.FunctionComponent
-import typings.rebass.mod.BoxKnownProps
 import typings.rebass.mod.BoxProps
 import typings.rebass.mod.ButtonProps
+import typings.rebass.mod.CardProps
 import typings.rebass.mod.FlexProps
 import typings.rebass.mod.HeadingProps
 import typings.rebass.mod.ImageProps
@@ -25,7 +25,7 @@ object styledComponentsMod {
   
   @JSImport("rebass/styled-components", "Card")
   @js.native
-  val Card: FunctionComponent[BoxKnownProps] = js.native
+  val Card: FunctionComponent[CardProps] = js.native
   
   @JSImport("rebass/styled-components", "Flex")
   @js.native

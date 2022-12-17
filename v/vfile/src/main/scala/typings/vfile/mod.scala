@@ -33,7 +33,7 @@ object mod {
     def this(value: Compatible) = this()
   }
   
-  type Data = (Record[String, Any]) & js.Object
+  type Data = Record[String, Any]
   
   trait DataMap extends StObject
   

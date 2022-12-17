@@ -90,7 +90,7 @@ trait PickImplonVisiblePartialP
   
   def onVisible(tabPath: String): Unit
   @JSName("onVisible")
-  var onVisible_Original: (js.ThisFunction1[/* this */ JQuery, /* tabPath */ String, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* tabPath */ String, Unit]])
+  var onVisible_Original: js.ThisFunction1[/* this */ JQuery, /* tabPath */ String, Unit]
   
   var path: js.UndefOr[`false` | String] = js.undefined
   
@@ -106,9 +106,7 @@ trait PickImplonVisiblePartialP
 }
 object PickImplonVisiblePartialP {
   
-  inline def apply(
-    onVisible: (js.ThisFunction1[/* this */ JQuery, /* tabPath */ String, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* tabPath */ String, Unit]])
-  ): PickImplonVisiblePartialP = {
+  inline def apply(onVisible: js.ThisFunction1[/* this */ JQuery, /* tabPath */ String, Unit]): PickImplonVisiblePartialP = {
     val __obj = js.Dynamic.literal(onVisible = onVisible.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonVisiblePartialP]
   }
@@ -223,9 +221,7 @@ object PickImplonVisiblePartialP {
     
     inline def setOnRequestUndefined: Self = StObject.set(x, "onRequest", js.undefined)
     
-    inline def setOnVisible(
-      value: (js.ThisFunction1[/* this */ JQuery, /* tabPath */ String, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* tabPath */ String, Unit]])
-    ): Self = StObject.set(x, "onVisible", value.asInstanceOf[js.Any])
+    inline def setOnVisible(value: js.ThisFunction1[/* this */ JQuery, /* tabPath */ String, Unit]): Self = StObject.set(x, "onVisible", value.asInstanceOf[js.Any])
     
     inline def setPath(value: `false` | String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

@@ -126,7 +126,7 @@ object mod {
       * @param info
       * @returns the available devices and services in array form
       */
-    def parseDescription(info: Device): Devices
+    def parseDescription(info: `0`): Devices
     
     /**
       * Perform a SSDP/UPNP request
@@ -140,7 +140,7 @@ object mod {
     
     inline def apply(
       getService: (js.Array[String], CB[ControlURL]) => Unit,
-      parseDescription: Device => Devices,
+      parseDescription: `0` => Devices,
       run: (String, js.Array[js.Tuple2[String, String | Double]], CB[RawResponse]) => Unit
     ): Device_ = {
       val __obj = js.Dynamic.literal(getService = js.Any.fromFunction2(getService), parseDescription = js.Any.fromFunction1(parseDescription), run = js.Any.fromFunction3(run))
@@ -151,7 +151,7 @@ object mod {
       
       inline def setGetService(value: (js.Array[String], CB[ControlURL]) => Unit): Self = StObject.set(x, "getService", js.Any.fromFunction2(value))
       
-      inline def setParseDescription(value: Device => Devices): Self = StObject.set(x, "parseDescription", js.Any.fromFunction1(value))
+      inline def setParseDescription(value: `0` => Devices): Self = StObject.set(x, "parseDescription", js.Any.fromFunction1(value))
       
       inline def setRun(value: (String, js.Array[js.Tuple2[String, String | Double]], CB[RawResponse]) => Unit): Self = StObject.set(x, "run", js.Any.fromFunction3(value))
     }
@@ -190,11 +190,11 @@ object mod {
     
     var local: Boolean
     
-    var `private`: Host
+    var `private`: Port
     
     var protocol: String
     
-    var public: Host
+    var public: Port
     
     var ttl: Double
   }
@@ -204,9 +204,9 @@ object mod {
       description: String,
       enabled: Boolean,
       local: Boolean,
-      `private`: Host,
+      `private`: Port,
       protocol: String,
-      public: Host,
+      public: Port,
       ttl: Double
     ): Mapping = {
       val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], public = public.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any])
@@ -222,11 +222,11 @@ object mod {
       
       inline def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
       
-      inline def setPrivate(value: Host): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
+      inline def setPrivate(value: Port): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
       
       inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      inline def setPublic(value: Host): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+      inline def setPublic(value: Port): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
       
       inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     }
@@ -265,7 +265,7 @@ object mod {
     
     var UPC: String
     
-    var deviceList: js.UndefOr[`0`] = js.undefined
+    var deviceList: js.UndefOr[Device] = js.undefined
     
     var deviceType: String
     
@@ -311,7 +311,7 @@ object mod {
     
     extension [Self <: RawDevice](x: Self) {
       
-      inline def setDeviceList(value: `0`): Self = StObject.set(x, "deviceList", value.asInstanceOf[js.Any])
+      inline def setDeviceList(value: Device): Self = StObject.set(x, "deviceList", value.asInstanceOf[js.Any])
       
       inline def setDeviceListUndefined: Self = StObject.set(x, "deviceList", js.undefined)
       
@@ -406,11 +406,11 @@ object mod {
   
   trait StandardOpts extends StObject {
     
-    var `private`: js.UndefOr[Double | Null | Port] = js.undefined
+    var `private`: js.UndefOr[Double | Null | Host] = js.undefined
     
     var protocol: js.UndefOr[String] = js.undefined
     
-    var public: js.UndefOr[Double | Null | Port] = js.undefined
+    var public: js.UndefOr[Double | Null | Host] = js.undefined
   }
   object StandardOpts {
     
@@ -421,7 +421,7 @@ object mod {
     
     extension [Self <: StandardOpts](x: Self) {
       
-      inline def setPrivate(value: Double | Port): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
+      inline def setPrivate(value: Double | Host): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
       
       inline def setPrivateNull: Self = StObject.set(x, "private", null)
       
@@ -431,7 +431,7 @@ object mod {
       
       inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
-      inline def setPublic(value: Double | Port): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+      inline def setPublic(value: Double | Host): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
       
       inline def setPublicNull: Self = StObject.set(x, "public", null)
       

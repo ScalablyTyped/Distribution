@@ -1,6 +1,5 @@
 package typings.cliInteract
 
-import typings.cliInteract.cliInteractBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,12 +11,12 @@ object anon {
     
     var allowNoAnswer: js.UndefOr[Boolean] = js.undefined
     
-    var returnNumeric: js.UndefOr[Boolean] & `true`
+    var returnNumeric: js.UndefOr[Boolean] = js.undefined
   }
   object ChoiceOptionsreturnNumeri {
     
-    inline def apply(returnNumeric: js.UndefOr[Boolean] & `true`): ChoiceOptionsreturnNumeri = {
-      val __obj = js.Dynamic.literal(returnNumeric = returnNumeric.asInstanceOf[js.Any])
+    inline def apply(): ChoiceOptionsreturnNumeri = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ChoiceOptionsreturnNumeri]
     }
     
@@ -27,7 +26,9 @@ object anon {
       
       inline def setAllowNoAnswerUndefined: Self = StObject.set(x, "allowNoAnswer", js.undefined)
       
-      inline def setReturnNumeric(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "returnNumeric", value.asInstanceOf[js.Any])
+      inline def setReturnNumeric(value: Boolean): Self = StObject.set(x, "returnNumeric", value.asInstanceOf[js.Any])
+      
+      inline def setReturnNumericUndefined: Self = StObject.set(x, "returnNumeric", js.undefined)
     }
   }
 }

@@ -1,6 +1,5 @@
 package typings.fundamentalReact.anon
 
-import typings.fundamentalReact.fundamentalReactStrings.MenuDotGroup
 import typings.fundamentalReact.libMenuMenuMod.MenuGroupProps
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
@@ -19,7 +18,7 @@ trait FunctionComponentMenuGrou extends StObject {
   
   var defaultProps: js.UndefOr[PartialMenuGroupProps] = js.native
   
-  var displayName: js.UndefOr[String] & MenuDotGroup = js.native
+  var displayName: js.UndefOr[String] = js.native
   
   var propTypes: js.UndefOr[WeakValidationMapMenuGrou] = js.native
 }

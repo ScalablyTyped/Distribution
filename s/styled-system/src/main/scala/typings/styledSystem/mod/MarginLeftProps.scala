@@ -9,14 +9,14 @@ trait MarginLeftProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StO
   
   var marginLeft: js.UndefOr[
     ResponsiveValue[
-      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
       ThemeType
     ]
   ] = js.undefined
   
   var ml: js.UndefOr[
     ResponsiveValue[
-      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
       ThemeType
     ]
   ] = js.undefined
@@ -32,7 +32,7 @@ object MarginLeftProps {
     
     inline def setMarginLeft(
       value: ResponsiveValue[
-          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
           ThemeType
         ]
     ): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
@@ -41,11 +41,11 @@ object MarginLeftProps {
     
     inline def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
     
-    inline def setMarginLeftVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = StObject.set(x, "marginLeft", js.Array(value :_*))
+    inline def setMarginLeftVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any]) | Null)*): Self = StObject.set(x, "marginLeft", js.Array(value*))
     
     inline def setMl(
       value: ResponsiveValue[
-          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
           ThemeType
         ]
     ): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
@@ -54,6 +54,6 @@ object MarginLeftProps {
     
     inline def setMlUndefined: Self = StObject.set(x, "ml", js.undefined)
     
-    inline def setMlVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = StObject.set(x, "ml", js.Array(value :_*))
+    inline def setMlVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any]) | Null)*): Self = StObject.set(x, "ml", js.Array(value*))
   }
 }

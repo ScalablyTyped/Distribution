@@ -13,7 +13,6 @@ import typings.chartJs.mod.ChartType
 import typings.chartJs.mod.CoreInteractionOptions
 import typings.chartJs.mod.ElementOptionsByType
 import typings.chartJs.mod.PluginOptionsByType
-import typings.chartJs.mod.PolarAreaAnimationOptions
 import typings.chartJs.mod.ScaleOptionsByType
 import typings.chartJs.mod.Scriptable
 import typings.chartJs.mod.ScriptableContext
@@ -27,7 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined chart.js.chart.js.CoreChartOptions<'polarArea'> & chart.js.chart.js.ElementChartOptions<'polarArea'> & chart.js.chart.js.PluginChartOptions<'polarArea'> & chart.js.chart.js.DatasetChartOptions<chart.js.chart.js.ChartType> & chart.js.chart.js.ScaleChartOptions<'polarArea'> & chart.js.chart.js.PolarAreaControllerChartOptions */
 trait CoreChartOptionspolarArea extends StObject {
   
-  var animation: (`false` | AnimationSpecpolarAreaonP) & (`false` | PolarAreaAnimationOptions)
+  var animation: `false` | AnimationSpecpolarAreaonP
   
   var animations: AnimationsSpec[polarArea]
   
@@ -187,7 +186,7 @@ trait CoreChartOptionspolarArea extends StObject {
 object CoreChartOptionspolarArea {
   
   inline def apply(
-    animation: (`false` | AnimationSpecpolarAreaonP) & (`false` | PolarAreaAnimationOptions),
+    animation: `false` | AnimationSpecpolarAreaonP,
     animations: AnimationsSpec[polarArea],
     aspectRatio: Double,
     backgroundColor: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableContext[polarArea]],
@@ -233,7 +232,7 @@ object CoreChartOptionspolarArea {
   
   extension [Self <: CoreChartOptionspolarArea](x: Self) {
     
-    inline def setAnimation(value: (`false` | AnimationSpecpolarAreaonP) & (`false` | PolarAreaAnimationOptions)): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: `false` | AnimationSpecpolarAreaonP): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     inline def setAnimations(value: AnimationsSpec[polarArea]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     

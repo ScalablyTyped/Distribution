@@ -1,35 +1,24 @@
 package typings.tabris.anon
 
-import typings.tabris.mod.ListenersKeysOf
-import typings.tabris.tabrisStrings.Asterisk
-import typings.tabris.tabrisStrings.default
-import typings.tabris.tabrisStrings.strict
-import typings.tabris.tabrisStrings.update
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `18`[Target] extends StObject {
+trait `18` extends StObject {
   
-  var mode: js.UndefOr[default | strict] = js.undefined
-  
-  var trigger: js.UndefOr[ListenersKeysOf[Target] | update | Asterisk | js.Symbol] = js.undefined
+  var allowCredentials: js.UndefOr[Boolean] = js.undefined
 }
 object `18` {
   
-  inline def apply[Target](): `18`[Target] = {
+  inline def apply(): `18` = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`18`[Target]]
+    __obj.asInstanceOf[`18`]
   }
   
-  extension [Self <: `18`[?], Target](x: Self & `18`[Target]) {
+  extension [Self <: `18`](x: Self) {
     
-    inline def setMode(value: default | strict): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setAllowCredentials(value: Boolean): Self = StObject.set(x, "allowCredentials", value.asInstanceOf[js.Any])
     
-    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
-    
-    inline def setTrigger(value: ListenersKeysOf[Target] | update | Asterisk | js.Symbol): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
-    
-    inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
+    inline def setAllowCredentialsUndefined: Self = StObject.set(x, "allowCredentials", js.undefined)
   }
 }

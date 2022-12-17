@@ -86,8 +86,8 @@ import typings.std.ShadowRoot
 import typings.std.Text
 import typings.svelte.anon.Bubbles
 import typings.svelte.anon.End
-import typings.svelte.anon.Invalidate
 import typings.svelte.anon.Render
+import typings.svelte.anon.Run
 import typings.svelte.anon.`0`
 import typings.svelte.svelteInts.`-1`
 import typings.svelte.svelteInts.`1`
@@ -407,7 +407,7 @@ object typesRuntimeInternalMod {
   
   inline def createAnimation(node: Element & ElementCSSInlineStyle, from: PositionRect, fn: AnimationFn, params: Any): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("create_animation")(node.asInstanceOf[js.Any], from.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
-  inline def createBidirectionalTransition(node: Element & ElementCSSInlineStyle, fn: TransitionFn, params: Any, intro: Boolean): End = (^.asInstanceOf[js.Dynamic].applyDynamic("create_bidirectional_transition")(node.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], params.asInstanceOf[js.Any], intro.asInstanceOf[js.Any])).asInstanceOf[End]
+  inline def createBidirectionalTransition(node: Element & ElementCSSInlineStyle, fn: TransitionFn, params: Any, intro: Boolean): Run = (^.asInstanceOf[js.Dynamic].applyDynamic("create_bidirectional_transition")(node.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], params.asInstanceOf[js.Any], intro.asInstanceOf[js.Any])).asInstanceOf[Run]
   
   inline def createComponent(block: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("create_component")(block.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
@@ -427,7 +427,7 @@ object typesRuntimeInternalMod {
     Boolean
   ]]
   
-  inline def createInTransition(node: Element & ElementCSSInlineStyle, fn: TransitionFn, params: Any): Invalidate = (^.asInstanceOf[js.Dynamic].applyDynamic("create_in_transition")(node.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Invalidate]
+  inline def createInTransition(node: Element & ElementCSSInlineStyle, fn: TransitionFn, params: Any): End = (^.asInstanceOf[js.Dynamic].applyDynamic("create_in_transition")(node.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[End]
   
   inline def createOutTransition(node: Element & ElementCSSInlineStyle, fn: TransitionFn, params: Any): `0` = (^.asInstanceOf[js.Dynamic].applyDynamic("create_out_transition")(node.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[`0`]
   

@@ -3,9 +3,9 @@ package typings.firebaseAdmin
 import org.scalablytyped.runtime.StringDictionary
 import typings.firebaseAdmin.anon.AutomlModel
 import typings.firebaseAdmin.anon.GcsTfliteUri
-import typings.firebaseAdmin.anon.Published
 import typings.firebaseAdmin.anon.SizeBytes
 import typings.firebaseAdmin.anon.State
+import typings.firebaseAdmin.anon.ValidationError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -136,7 +136,7 @@ object libMachineLearningMachineLearningApiClientMod {
     
     val displayName: js.UndefOr[String] = js.undefined
     
-    val state: js.UndefOr[Published] = js.undefined
+    val state: js.UndefOr[ValidationError] = js.undefined
     
     val tags: js.UndefOr[js.Array[String]] = js.undefined
     
@@ -155,7 +155,7 @@ object libMachineLearningMachineLearningApiClientMod {
       
       inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
       
-      inline def setState(value: Published): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: ValidationError): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
       inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       

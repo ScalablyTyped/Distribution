@@ -55,7 +55,7 @@ trait PickImpldefaultDataPartia
   
   var debug: js.UndefOr[Boolean] = js.undefined
   
-  var defaultData: Boolean & js.UndefOr[Boolean]
+  var defaultData: Boolean
   
   var encodeParameters: js.UndefOr[Boolean] = js.undefined
   
@@ -147,7 +147,7 @@ trait PickImpldefaultDataPartia
 }
 object PickImpldefaultDataPartia {
   
-  inline def apply(defaultData: Boolean & js.UndefOr[Boolean]): PickImpldefaultDataPartia = {
+  inline def apply(defaultData: Boolean): PickImpldefaultDataPartia = {
     val __obj = js.Dynamic.literal(defaultData = defaultData.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldefaultDataPartia]
   }
@@ -190,7 +190,7 @@ object PickImpldefaultDataPartia {
     
     inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    inline def setDefaultData(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "defaultData", value.asInstanceOf[js.Any])
+    inline def setDefaultData(value: Boolean): Self = StObject.set(x, "defaultData", value.asInstanceOf[js.Any])
     
     inline def setEncodeParameters(value: Boolean): Self = StObject.set(x, "encodeParameters", value.asInstanceOf[js.Any])
     

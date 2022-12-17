@@ -1,6 +1,5 @@
 package typings.adobeCssTools
 
-import typings.adobeCssTools.anon.Column
 import typings.adobeCssTools.anon.Silent
 import typings.adobeCssTools.distCjsTypeMod.CssStylesheetAST
 import org.scalablytyped.runtime.StObject
@@ -12,13 +11,6 @@ object mod {
   @JSImport("@adobe/css-tools", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
-  
-  @JSImport("@adobe/css-tools", JSImport.Default)
-  @js.native
-  open class default protected ()
-    extends typings.adobeCssTools.distCjsCssPositionMod.default {
-    def this(start: Column, end: Column, source: String) = this()
-  }
   
   @JSImport("@adobe/css-tools", "CssTypes")
   @js.native

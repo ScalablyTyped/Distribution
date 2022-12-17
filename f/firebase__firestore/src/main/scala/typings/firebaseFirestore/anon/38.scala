@@ -1,23 +1,22 @@
 package typings.firebaseFirestore.anon
 
-import typings.firebaseFirestore.distLitePrivateMod.AggregateField
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `38` extends StObject {
   
-  var count: AggregateField[Double]
+  var mapValue: typings.firebaseFirestore.distLitePrivateMod.MapValue
 }
 object `38` {
   
-  inline def apply(count: AggregateField[Double]): `38` = {
-    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
+  inline def apply(mapValue: typings.firebaseFirestore.distLitePrivateMod.MapValue): `38` = {
+    val __obj = js.Dynamic.literal(mapValue = mapValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[`38`]
   }
   
   extension [Self <: `38`](x: Self) {
     
-    inline def setCount(value: AggregateField[Double]): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setMapValue(value: typings.firebaseFirestore.distLitePrivateMod.MapValue): Self = StObject.set(x, "mapValue", value.asInstanceOf[js.Any])
   }
 }

@@ -191,7 +191,7 @@ object buildSrcSpecUnitMod {
     /**
       * An object describing the data source.
       */
-    var data: (js.UndefOr[Data | Null]) & Data
+    var data: js.UndefOr[Data | Null] = js.undefined
     
     /**
       * A global data store for named datasets. This is a mapping from names to inline datasets.
@@ -312,8 +312,8 @@ object buildSrcSpecUnitMod {
   }
   object TopLevelUnitSpec {
     
-    inline def apply[F /* <: Field */](data: (js.UndefOr[Data | Null]) & Data, mark: AnyMark): TopLevelUnitSpec[F] = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any])
+    inline def apply[F /* <: Field */](mark: AnyMark): TopLevelUnitSpec[F] = {
+      val __obj = js.Dynamic.literal(mark = mark.asInstanceOf[js.Any])
       __obj.asInstanceOf[TopLevelUnitSpec[F]]
     }
     
@@ -347,7 +347,11 @@ object buildSrcSpecUnitMod {
       
       inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      inline def setData(value: (js.UndefOr[Data | Null]) & Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setDataNull: Self = StObject.set(x, "data", null)
+      
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
       inline def setDatasets(value: Datasets): Self = StObject.set(x, "datasets", value.asInstanceOf[js.Any])
       

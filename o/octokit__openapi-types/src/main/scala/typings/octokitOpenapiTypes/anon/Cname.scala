@@ -41,9 +41,7 @@ trait Cname extends StObject {
     */
   var html_url: js.UndefOr[String] = js.undefined
   
-  var https_certificate: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['pages-https-certificate'] */ js.Any
-  ] = js.undefined
+  var https_certificate: js.UndefOr[Domains] = js.undefined
   
   /**
     * @description Whether https is enabled on the domain
@@ -70,9 +68,7 @@ trait Cname extends StObject {
     */
   var public: Boolean
   
-  var source: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['pages-source-hash'] */ js.Any
-  ] = js.undefined
+  var source: js.UndefOr[PathString] = js.undefined
   
   /**
     * @description The status of the most recent build of the Page.
@@ -113,9 +109,7 @@ object Cname {
     
     inline def setHtml_urlUndefined: Self = StObject.set(x, "html_url", js.undefined)
     
-    inline def setHttps_certificate(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['pages-https-certificate'] */ js.Any
-    ): Self = StObject.set(x, "https_certificate", value.asInstanceOf[js.Any])
+    inline def setHttps_certificate(value: Domains): Self = StObject.set(x, "https_certificate", value.asInstanceOf[js.Any])
     
     inline def setHttps_certificateUndefined: Self = StObject.set(x, "https_certificate", js.undefined)
     
@@ -137,9 +131,7 @@ object Cname {
     
     inline def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
     
-    inline def setSource(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['pages-source-hash'] */ js.Any
-    ): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: PathString): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     

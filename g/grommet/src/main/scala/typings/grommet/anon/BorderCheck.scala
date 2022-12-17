@@ -17,17 +17,17 @@ trait BorderCheck extends StObject {
   
   var color: js.UndefOr[ColorType] = js.undefined
   
-  var container: js.UndefOr[`10`] = js.undefined
+  var container: js.UndefOr[`8`] = js.undefined
   
   var extend: js.UndefOr[ExtendType[Record[String, Any]]] = js.undefined
   
-  var font: js.UndefOr[Weight] = js.undefined
+  var font: js.UndefOr[`27`] = js.undefined
   
   var gap: js.UndefOr[String] = js.undefined
   
-  var hover: js.UndefOr[`27`] = js.undefined
+  var hover: js.UndefOr[`25`] = js.undefined
   
-  var icon: js.UndefOr[`28`] = js.undefined
+  var icon: js.UndefOr[`26`] = js.undefined
   
   var icons: js.UndefOr[Circle] = js.undefined
   
@@ -54,7 +54,7 @@ object BorderCheck {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setContainer(value: `10`): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: `8`): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
@@ -64,7 +64,7 @@ object BorderCheck {
     
     inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    inline def setFont(value: Weight): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: `27`): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
@@ -72,11 +72,11 @@ object BorderCheck {
     
     inline def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
     
-    inline def setHover(value: `27`): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+    inline def setHover(value: `25`): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
     inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     
-    inline def setIcon(value: `28`): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: `26`): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     

@@ -6,19 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Overwrite extends StObject {
   
-  var overwrite: js.UndefOr[Boolean] = js.undefined
+  val overwrite: Boolean
 }
 object Overwrite {
   
-  inline def apply(): Overwrite = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(overwrite: Boolean): Overwrite = {
+    val __obj = js.Dynamic.literal(overwrite = overwrite.asInstanceOf[js.Any])
     __obj.asInstanceOf[Overwrite]
   }
   
   extension [Self <: Overwrite](x: Self) {
     
     inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
-    
-    inline def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
   }
 }

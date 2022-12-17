@@ -88,17 +88,16 @@ trait ScalarTagtestRegExp extends StObject {
     * unlikely that you'll actually want to use these, even if you first think
     * you do.
     */
-  var test: js.UndefOr[js.RegExp] & js.RegExp
+  var test: js.UndefOr[js.RegExp] = js.undefined
 }
 object ScalarTagtestRegExp {
   
   inline def apply(
     default: Boolean,
     resolve: (String, js.Function1[/* message */ String, Unit], ParseOptions) => Any,
-    tag: String,
-    test: js.UndefOr[js.RegExp] & js.RegExp
+    tag: String
   ): ScalarTagtestRegExp = {
-    val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], resolve = js.Any.fromFunction3(resolve), tag = tag.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], resolve = js.Any.fromFunction3(resolve), tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScalarTagtestRegExp]
   }
   
@@ -130,6 +129,8 @@ object ScalarTagtestRegExp {
     
     inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    inline def setTest(value: js.UndefOr[js.RegExp] & js.RegExp): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+    inline def setTest(value: js.RegExp): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+    
+    inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
   }
 }

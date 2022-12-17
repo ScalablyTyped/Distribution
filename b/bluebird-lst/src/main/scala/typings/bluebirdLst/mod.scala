@@ -1949,10 +1949,7 @@ object mod {
       */
     def `catch`(): Bluebird[R] = js.native
     def `catch`(onReject: js.Function1[/* error */ Any, R | (PromiseLike[R | Unit]) | Unit]): Bluebird[R] = js.native
-    def `catch`[E1](
-      filter1: E1 & js.Object,
-      onReject: js.Function1[/* error */ E1, R | (PromiseLike[R | Unit]) | Unit]
-    ): Bluebird[R] = js.native
+    def `catch`[E1](filter1: E1, onReject: js.Function1[/* error */ E1, R | (PromiseLike[R | Unit]) | Unit]): Bluebird[R] = js.native
     def `catch`[E1](
       filter1: js.Function1[/* error */ E1, Boolean],
       onReject: js.Function1[/* error */ E1, R | (PromiseLike[R | Unit]) | Unit]
@@ -1962,18 +1959,18 @@ object mod {
       onReject: js.Function1[/* error */ E1, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
+      filter1: E1,
+      filter2: E2,
       onReject: js.Function1[/* error */ E1 | E2, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2](
-      filter1: E1 & js.Object,
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
       onReject: js.Function1[/* error */ E1 | E2, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2](
       filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
+      filter2: E2,
       onReject: js.Function1[/* error */ E1 | E2, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2](
@@ -1987,45 +1984,45 @@ object mod {
       onReject: js.Function1[/* error */ E1 | E2, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: E3,
       onReject: js.Function1[/* error */ E1 | E2 | E3, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
+      filter1: E1,
+      filter2: E2,
       filter3: js.Function1[/* error */ E3, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3](
-      filter1: E1 & js.Object,
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
+      filter3: E3,
       onReject: js.Function1[/* error */ E1 | E2 | E3, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3](
-      filter1: E1 & js.Object,
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (PromiseLike[R | Unit]) | Unit]
-    ): Bluebird[R] = js.native
-    def `catch`[E1, E2, E3](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (PromiseLike[R | Unit]) | Unit]
-    ): Bluebird[R] = js.native
-    def `catch`[E1, E2, E3](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
       filter3: js.Function1[/* error */ E3, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3](
       filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: E3,
+      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (PromiseLike[R | Unit]) | Unit]
+    ): Bluebird[R] = js.native
+    def `catch`[E1, E2, E3](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (PromiseLike[R | Unit]) | Unit]
+    ): Bluebird[R] = js.native
+    def `catch`[E1, E2, E3](
+      filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
+      filter3: E3,
       onReject: js.Function1[/* error */ E1 | E2 | E3, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3](
@@ -2041,100 +2038,100 @@ object mod {
       onReject: js.Function1[/* error */ E1 | E2 | E3, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: E3,
+      filter4: E4,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: E3,
       filter4: js.Function1[/* error */ E4, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
+      filter1: E1,
+      filter2: E2,
       filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
+      filter4: E4,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
+      filter1: E1,
+      filter2: E2,
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4](
-      filter1: E1 & js.Object,
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
+      filter3: E3,
+      filter4: E4,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4](
-      filter1: E1 & js.Object,
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
+      filter3: E3,
       filter4: js.Function1[/* error */ E4, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
-    ): Bluebird[R] = js.native
-    def `catch`[E1, E2, E3, E4](
-      filter1: E1 & js.Object,
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: js.Function1[/* error */ E4, Boolean],
+      filter4: E4,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
-    ): Bluebird[R] = js.native
-    def `catch`[E1, E2, E3, E4](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
-    ): Bluebird[R] = js.native
-    def `catch`[E1, E2, E3, E4](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
-    ): Bluebird[R] = js.native
-    def `catch`[E1, E2, E3, E4](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
+      filter1: E1,
+      filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4](
       filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
+      filter2: E2,
+      filter3: E3,
+      filter4: E4,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
+    ): Bluebird[R] = js.native
+    def `catch`[E1, E2, E3, E4](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: E3,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
+    ): Bluebird[R] = js.native
+    def `catch`[E1, E2, E3, E4](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
+    ): Bluebird[R] = js.native
+    def `catch`[E1, E2, E3, E4](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: js.Function1[/* error */ E4, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
+      filter3: E3,
+      filter4: E4,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
+    ): Bluebird[R] = js.native
+    def `catch`[E1, E2, E3, E4](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3,
       filter4: js.Function1[/* error */ E4, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
@@ -2142,7 +2139,7 @@ object mod {
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
+      filter4: E4,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4](
@@ -2160,192 +2157,128 @@ object mod {
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: E3,
+      filter4: E4,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: E3,
+      filter4: E4,
       filter5: js.Function1[/* error */ E5, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: E3,
       filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
-    ): Bluebird[R] = js.native
-    def `catch`[E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
-    ): Bluebird[R] = js.native
-    def `catch`[E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
-    ): Bluebird[R] = js.native
-    def `catch`[E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
-    ): Bluebird[R] = js.native
-    def `catch`[E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
+      filter1: E1,
+      filter2: E2,
+      filter3: E3,
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: js.Function1[/* error */ E5, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4,
       filter5: js.Function1[/* error */ E5, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: js.Function1[/* error */ E5, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
+      filter3: E3,
+      filter4: E4,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
+      filter3: E3,
+      filter4: E4,
       filter5: js.Function1[/* error */ E5, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
+      filter3: E3,
       filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
+      filter1: E1,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
+    ): Bluebird[R] = js.native
+    def `catch`[E1, E2, E3, E4, E5](
+      filter1: E1,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4,
+      filter5: E5,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
+    ): Bluebird[R] = js.native
+    def `catch`[E1, E2, E3, E4, E5](
+      filter1: E1,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4,
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
+    ): Bluebird[R] = js.native
+    def `catch`[E1, E2, E3, E4, E5](
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: js.Function1[/* error */ E5, Boolean],
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
-    ): Bluebird[R] = js.native
-    def `catch`[E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
-    ): Bluebird[R] = js.native
-    def `catch`[E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
-    ): Bluebird[R] = js.native
-    def `catch`[E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
-    ): Bluebird[R] = js.native
-    def `catch`[E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
-    ): Bluebird[R] = js.native
-    def `catch`[E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
-    ): Bluebird[R] = js.native
-    def `catch`[E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
-    ): Bluebird[R] = js.native
-    def `catch`[E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
+      filter1: E1,
+      filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: js.Function1[/* error */ E5, Boolean],
@@ -2353,32 +2286,96 @@ object mod {
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
+      filter2: E2,
+      filter3: E3,
+      filter4: E4,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
+      filter2: E2,
+      filter3: E3,
+      filter4: E4,
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
+    ): Bluebird[R] = js.native
+    def `catch`[E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: E3,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: E5,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
+    ): Bluebird[R] = js.native
+    def `catch`[E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: E3,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
+    ): Bluebird[R] = js.native
+    def `catch`[E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4,
+      filter5: E5,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
+    ): Bluebird[R] = js.native
+    def `catch`[E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4,
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
+    ): Bluebird[R] = js.native
+    def `catch`[E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: E5,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
+    ): Bluebird[R] = js.native
+    def `catch`[E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: js.Function1[/* error */ E4, Boolean],
       filter5: js.Function1[/* error */ E5, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
+      filter3: E3,
+      filter4: E4,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
+      filter3: E3,
+      filter4: E4,
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
+    ): Bluebird[R] = js.native
+    def `catch`[E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: E5,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
+    ): Bluebird[R] = js.native
+    def `catch`[E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3,
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: js.Function1[/* error */ E5, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
@@ -2387,15 +2384,15 @@ object mod {
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
+      filter4: E4,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
+      filter4: E4,
       filter5: js.Function1[/* error */ E5, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
@@ -2404,7 +2401,7 @@ object mod {
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
@@ -2850,7 +2847,7 @@ object mod {
     @JSName("catch")
     def catch_U[U](onReject: js.Function1[/* error */ Any, U | PromiseLike[U]]): Bluebird[U | R] = js.native
     @JSName("catch")
-    def catch_UE1[U, E1](filter1: E1 & js.Object, onReject: js.Function1[/* error */ E1, U | PromiseLike[U]]): Bluebird[U | R] = js.native
+    def catch_UE1[U, E1](filter1: E1, onReject: js.Function1[/* error */ E1, U | PromiseLike[U]]): Bluebird[U | R] = js.native
     @JSName("catch")
     def catch_UE1[U, E1](
       filter1: js.Function1[/* error */ E1, Boolean],
@@ -2862,21 +2859,17 @@ object mod {
       onReject: js.Function1[/* error */ E1, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("catch")
-    def catch_UE1E2[U, E1, E2](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2, U | PromiseLike[U]]
-    ): Bluebird[U | R] = js.native
+    def catch_UE1E2[U, E1, E2](filter1: E1, filter2: E2, onReject: js.Function1[/* error */ E1 | E2, U | PromiseLike[U]]): Bluebird[U | R] = js.native
     @JSName("catch")
     def catch_UE1E2[U, E1, E2](
-      filter1: E1 & js.Object,
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
       onReject: js.Function1[/* error */ E1 | E2, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("catch")
     def catch_UE1E2[U, E1, E2](
       filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
+      filter2: E2,
       onReject: js.Function1[/* error */ E1 | E2, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("catch")
@@ -2893,51 +2886,51 @@ object mod {
     ): Bluebird[U | R] = js.native
     @JSName("catch")
     def catch_UE1E2E3[U, E1, E2, E3](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: E3,
       onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("catch")
     def catch_UE1E2E3[U, E1, E2, E3](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
+      filter1: E1,
+      filter2: E2,
       filter3: js.Function1[/* error */ E3, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("catch")
     def catch_UE1E2E3[U, E1, E2, E3](
-      filter1: E1 & js.Object,
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
+      filter3: E3,
       onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("catch")
     def catch_UE1E2E3[U, E1, E2, E3](
-      filter1: E1 & js.Object,
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3[U, E1, E2, E3](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3[U, E1, E2, E3](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
       filter3: js.Function1[/* error */ E3, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("catch")
     def catch_UE1E2E3[U, E1, E2, E3](
       filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: E3,
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3[U, E1, E2, E3](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3[U, E1, E2, E3](
+      filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
+      filter3: E3,
       onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("catch")
@@ -2956,96 +2949,64 @@ object mod {
     ): Bluebird[U | R] = js.native
     @JSName("catch")
     def catch_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: E3,
+      filter4: E4,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("catch")
     def catch_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: E3,
       filter4: js.Function1[/* error */ E4, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("catch")
     def catch_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
+      filter1: E1,
+      filter2: E2,
       filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
+      filter4: E4,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("catch")
     def catch_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
+      filter1: E1,
+      filter2: E2,
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("catch")
     def catch_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: E1 & js.Object,
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
+      filter3: E3,
+      filter4: E4,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("catch")
     def catch_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: E1 & js.Object,
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
+      filter3: E3,
       filter4: js.Function1[/* error */ E4, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("catch")
     def catch_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: E1 & js.Object,
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: js.Function1[/* error */ E4, Boolean],
+      filter4: E4,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("catch")
     def catch_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
+      filter1: E1,
+      filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
@@ -3053,16 +3014,48 @@ object mod {
     @JSName("catch")
     def catch_UE1E2E3E4[U, E1, E2, E3, E4](
       filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
+      filter2: E2,
+      filter3: E3,
+      filter4: E4,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: E3,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: js.Function1[/* error */ E4, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("catch")
     def catch_UE1E2E3E4[U, E1, E2, E3, E4](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
+      filter3: E3,
+      filter4: E4,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3,
       filter4: js.Function1[/* error */ E4, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
@@ -3071,7 +3064,7 @@ object mod {
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
+      filter4: E4,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("catch")
@@ -3092,215 +3085,143 @@ object mod {
     ): Bluebird[U | R] = js.native
     @JSName("catch")
     def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: E3,
+      filter4: E4,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("catch")
     def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: E3,
+      filter4: E4,
       filter5: js.Function1[/* error */ E5, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("catch")
     def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: E3,
       filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("catch")
     def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
+      filter1: E1,
+      filter2: E2,
+      filter3: E3,
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: js.Function1[/* error */ E5, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("catch")
     def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("catch")
     def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4,
       filter5: js.Function1[/* error */ E5, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("catch")
     def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("catch")
     def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: js.Function1[/* error */ E5, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("catch")
     def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
+      filter3: E3,
+      filter4: E4,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("catch")
     def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
+      filter3: E3,
+      filter4: E4,
       filter5: js.Function1[/* error */ E5, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("catch")
     def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
+      filter3: E3,
       filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("catch")
     def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
+      filter1: E1,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: E1,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4,
+      filter5: E5,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: E1,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4,
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: js.Function1[/* error */ E5, Boolean],
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("catch")
     def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
+      filter1: E1,
+      filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: js.Function1[/* error */ E5, Boolean],
@@ -3309,18 +3230,72 @@ object mod {
     @JSName("catch")
     def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
+      filter2: E2,
+      filter3: E3,
+      filter4: E4,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("catch")
     def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
+      filter2: E2,
+      filter3: E3,
+      filter4: E4,
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: E3,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: E5,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: E3,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4,
+      filter5: E5,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4,
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: E5,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: js.Function1[/* error */ E4, Boolean],
       filter5: js.Function1[/* error */ E5, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
@@ -3328,16 +3303,34 @@ object mod {
     def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
+      filter3: E3,
+      filter4: E4,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("catch")
     def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
+      filter3: E3,
+      filter4: E4,
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: E5,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3,
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: js.Function1[/* error */ E5, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
@@ -3347,8 +3340,8 @@ object mod {
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
+      filter4: E4,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("catch")
@@ -3356,7 +3349,7 @@ object mod {
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
+      filter4: E4,
       filter5: js.Function1[/* error */ E5, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
@@ -3366,7 +3359,7 @@ object mod {
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("catch")
@@ -3390,10 +3383,7 @@ object mod {
     
     def caught(): Bluebird[R] = js.native
     def caught(onReject: js.Function1[/* error */ Any, R | (PromiseLike[R | Unit]) | Unit]): Bluebird[R] = js.native
-    def caught[E1](
-      filter1: E1 & js.Object,
-      onReject: js.Function1[/* error */ E1, R | (PromiseLike[R | Unit]) | Unit]
-    ): Bluebird[R] = js.native
+    def caught[E1](filter1: E1, onReject: js.Function1[/* error */ E1, R | (PromiseLike[R | Unit]) | Unit]): Bluebird[R] = js.native
     def caught[E1](
       filter1: js.Function1[/* error */ E1, Boolean],
       onReject: js.Function1[/* error */ E1, R | (PromiseLike[R | Unit]) | Unit]
@@ -3403,18 +3393,18 @@ object mod {
       onReject: js.Function1[/* error */ E1, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
+      filter1: E1,
+      filter2: E2,
       onReject: js.Function1[/* error */ E1 | E2, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2](
-      filter1: E1 & js.Object,
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
       onReject: js.Function1[/* error */ E1 | E2, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2](
       filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
+      filter2: E2,
       onReject: js.Function1[/* error */ E1 | E2, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2](
@@ -3428,45 +3418,45 @@ object mod {
       onReject: js.Function1[/* error */ E1 | E2, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: E3,
       onReject: js.Function1[/* error */ E1 | E2 | E3, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
+      filter1: E1,
+      filter2: E2,
       filter3: js.Function1[/* error */ E3, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3](
-      filter1: E1 & js.Object,
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
+      filter3: E3,
       onReject: js.Function1[/* error */ E1 | E2 | E3, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3](
-      filter1: E1 & js.Object,
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (PromiseLike[R | Unit]) | Unit]
-    ): Bluebird[R] = js.native
-    def caught[E1, E2, E3](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (PromiseLike[R | Unit]) | Unit]
-    ): Bluebird[R] = js.native
-    def caught[E1, E2, E3](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
       filter3: js.Function1[/* error */ E3, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3](
       filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: E3,
+      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (PromiseLike[R | Unit]) | Unit]
+    ): Bluebird[R] = js.native
+    def caught[E1, E2, E3](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (PromiseLike[R | Unit]) | Unit]
+    ): Bluebird[R] = js.native
+    def caught[E1, E2, E3](
+      filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
+      filter3: E3,
       onReject: js.Function1[/* error */ E1 | E2 | E3, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3](
@@ -3482,100 +3472,100 @@ object mod {
       onReject: js.Function1[/* error */ E1 | E2 | E3, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: E3,
+      filter4: E4,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: E3,
       filter4: js.Function1[/* error */ E4, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
+      filter1: E1,
+      filter2: E2,
       filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
+      filter4: E4,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
+      filter1: E1,
+      filter2: E2,
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4](
-      filter1: E1 & js.Object,
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
+      filter3: E3,
+      filter4: E4,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4](
-      filter1: E1 & js.Object,
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
+      filter3: E3,
       filter4: js.Function1[/* error */ E4, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
-    ): Bluebird[R] = js.native
-    def caught[E1, E2, E3, E4](
-      filter1: E1 & js.Object,
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: js.Function1[/* error */ E4, Boolean],
+      filter4: E4,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
-    ): Bluebird[R] = js.native
-    def caught[E1, E2, E3, E4](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
-    ): Bluebird[R] = js.native
-    def caught[E1, E2, E3, E4](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
-    ): Bluebird[R] = js.native
-    def caught[E1, E2, E3, E4](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
+      filter1: E1,
+      filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4](
       filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
+      filter2: E2,
+      filter3: E3,
+      filter4: E4,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
+    ): Bluebird[R] = js.native
+    def caught[E1, E2, E3, E4](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: E3,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
+    ): Bluebird[R] = js.native
+    def caught[E1, E2, E3, E4](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
+    ): Bluebird[R] = js.native
+    def caught[E1, E2, E3, E4](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: js.Function1[/* error */ E4, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
+      filter3: E3,
+      filter4: E4,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
+    ): Bluebird[R] = js.native
+    def caught[E1, E2, E3, E4](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3,
       filter4: js.Function1[/* error */ E4, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
@@ -3583,7 +3573,7 @@ object mod {
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
+      filter4: E4,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4](
@@ -3601,192 +3591,128 @@ object mod {
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: E3,
+      filter4: E4,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: E3,
+      filter4: E4,
       filter5: js.Function1[/* error */ E5, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: E3,
       filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
-    ): Bluebird[R] = js.native
-    def caught[E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
-    ): Bluebird[R] = js.native
-    def caught[E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
-    ): Bluebird[R] = js.native
-    def caught[E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
-    ): Bluebird[R] = js.native
-    def caught[E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
+      filter1: E1,
+      filter2: E2,
+      filter3: E3,
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: js.Function1[/* error */ E5, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4,
       filter5: js.Function1[/* error */ E5, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: js.Function1[/* error */ E5, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
+      filter3: E3,
+      filter4: E4,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
+      filter3: E3,
+      filter4: E4,
       filter5: js.Function1[/* error */ E5, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
+      filter3: E3,
       filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
+      filter1: E1,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
+    ): Bluebird[R] = js.native
+    def caught[E1, E2, E3, E4, E5](
+      filter1: E1,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4,
+      filter5: E5,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
+    ): Bluebird[R] = js.native
+    def caught[E1, E2, E3, E4, E5](
+      filter1: E1,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4,
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
+    ): Bluebird[R] = js.native
+    def caught[E1, E2, E3, E4, E5](
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: js.Function1[/* error */ E5, Boolean],
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
-    ): Bluebird[R] = js.native
-    def caught[E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
-    ): Bluebird[R] = js.native
-    def caught[E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
-    ): Bluebird[R] = js.native
-    def caught[E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
-    ): Bluebird[R] = js.native
-    def caught[E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
-    ): Bluebird[R] = js.native
-    def caught[E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
-    ): Bluebird[R] = js.native
-    def caught[E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
-    ): Bluebird[R] = js.native
-    def caught[E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
+      filter1: E1,
+      filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: js.Function1[/* error */ E5, Boolean],
@@ -3794,32 +3720,96 @@ object mod {
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
+      filter2: E2,
+      filter3: E3,
+      filter4: E4,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
+      filter2: E2,
+      filter3: E3,
+      filter4: E4,
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
+    ): Bluebird[R] = js.native
+    def caught[E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: E3,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: E5,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
+    ): Bluebird[R] = js.native
+    def caught[E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: E3,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
+    ): Bluebird[R] = js.native
+    def caught[E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4,
+      filter5: E5,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
+    ): Bluebird[R] = js.native
+    def caught[E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4,
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
+    ): Bluebird[R] = js.native
+    def caught[E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: E5,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
+    ): Bluebird[R] = js.native
+    def caught[E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: js.Function1[/* error */ E4, Boolean],
       filter5: js.Function1[/* error */ E5, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
+      filter3: E3,
+      filter4: E4,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
+      filter3: E3,
+      filter4: E4,
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
+    ): Bluebird[R] = js.native
+    def caught[E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: E5,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
+    ): Bluebird[R] = js.native
+    def caught[E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3,
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: js.Function1[/* error */ E5, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
@@ -3828,15 +3818,15 @@ object mod {
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
+      filter4: E4,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
+      filter4: E4,
       filter5: js.Function1[/* error */ E5, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
@@ -3845,7 +3835,7 @@ object mod {
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
@@ -3869,7 +3859,7 @@ object mod {
     @JSName("caught")
     def caught_U[U](onReject: js.Function1[/* error */ Any, U | PromiseLike[U]]): Bluebird[U | R] = js.native
     @JSName("caught")
-    def caught_UE1[U, E1](filter1: E1 & js.Object, onReject: js.Function1[/* error */ E1, U | PromiseLike[U]]): Bluebird[U | R] = js.native
+    def caught_UE1[U, E1](filter1: E1, onReject: js.Function1[/* error */ E1, U | PromiseLike[U]]): Bluebird[U | R] = js.native
     @JSName("caught")
     def caught_UE1[U, E1](
       filter1: js.Function1[/* error */ E1, Boolean],
@@ -3881,21 +3871,17 @@ object mod {
       onReject: js.Function1[/* error */ E1, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("caught")
-    def caught_UE1E2[U, E1, E2](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2, U | PromiseLike[U]]
-    ): Bluebird[U | R] = js.native
+    def caught_UE1E2[U, E1, E2](filter1: E1, filter2: E2, onReject: js.Function1[/* error */ E1 | E2, U | PromiseLike[U]]): Bluebird[U | R] = js.native
     @JSName("caught")
     def caught_UE1E2[U, E1, E2](
-      filter1: E1 & js.Object,
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
       onReject: js.Function1[/* error */ E1 | E2, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("caught")
     def caught_UE1E2[U, E1, E2](
       filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
+      filter2: E2,
       onReject: js.Function1[/* error */ E1 | E2, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("caught")
@@ -3912,51 +3898,51 @@ object mod {
     ): Bluebird[U | R] = js.native
     @JSName("caught")
     def caught_UE1E2E3[U, E1, E2, E3](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: E3,
       onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("caught")
     def caught_UE1E2E3[U, E1, E2, E3](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
+      filter1: E1,
+      filter2: E2,
       filter3: js.Function1[/* error */ E3, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("caught")
     def caught_UE1E2E3[U, E1, E2, E3](
-      filter1: E1 & js.Object,
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
+      filter3: E3,
       onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("caught")
     def caught_UE1E2E3[U, E1, E2, E3](
-      filter1: E1 & js.Object,
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3[U, E1, E2, E3](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3[U, E1, E2, E3](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
       filter3: js.Function1[/* error */ E3, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("caught")
     def caught_UE1E2E3[U, E1, E2, E3](
       filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: E3,
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3[U, E1, E2, E3](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3[U, E1, E2, E3](
+      filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
+      filter3: E3,
       onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("caught")
@@ -3975,96 +3961,64 @@ object mod {
     ): Bluebird[U | R] = js.native
     @JSName("caught")
     def caught_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: E3,
+      filter4: E4,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("caught")
     def caught_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: E3,
       filter4: js.Function1[/* error */ E4, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("caught")
     def caught_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
+      filter1: E1,
+      filter2: E2,
       filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
+      filter4: E4,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("caught")
     def caught_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
+      filter1: E1,
+      filter2: E2,
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("caught")
     def caught_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: E1 & js.Object,
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
+      filter3: E3,
+      filter4: E4,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("caught")
     def caught_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: E1 & js.Object,
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
+      filter3: E3,
       filter4: js.Function1[/* error */ E4, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("caught")
     def caught_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: E1 & js.Object,
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: js.Function1[/* error */ E4, Boolean],
+      filter4: E4,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("caught")
     def caught_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
+      filter1: E1,
+      filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
@@ -4072,16 +4026,48 @@ object mod {
     @JSName("caught")
     def caught_UE1E2E3E4[U, E1, E2, E3, E4](
       filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
+      filter2: E2,
+      filter3: E3,
+      filter4: E4,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: E3,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: js.Function1[/* error */ E4, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("caught")
     def caught_UE1E2E3E4[U, E1, E2, E3, E4](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
+      filter3: E3,
+      filter4: E4,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3,
       filter4: js.Function1[/* error */ E4, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
@@ -4090,7 +4076,7 @@ object mod {
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
+      filter4: E4,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("caught")
@@ -4111,215 +4097,143 @@ object mod {
     ): Bluebird[U | R] = js.native
     @JSName("caught")
     def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: E3,
+      filter4: E4,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("caught")
     def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: E3,
+      filter4: E4,
       filter5: js.Function1[/* error */ E5, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("caught")
     def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: E3,
       filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("caught")
     def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
+      filter1: E1,
+      filter2: E2,
+      filter3: E3,
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: js.Function1[/* error */ E5, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("caught")
     def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("caught")
     def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4,
       filter5: js.Function1[/* error */ E5, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("caught")
     def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("caught")
     def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
+      filter1: E1,
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: js.Function1[/* error */ E5, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("caught")
     def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
+      filter3: E3,
+      filter4: E4,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("caught")
     def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
+      filter3: E3,
+      filter4: E4,
       filter5: js.Function1[/* error */ E5, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("caught")
     def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
+      filter3: E3,
       filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("caught")
     def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
+      filter1: E1,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: E1,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4,
+      filter5: E5,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: E1,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4,
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: E1,
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: js.Function1[/* error */ E5, Boolean],
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("caught")
     def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
+      filter1: E1,
+      filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: js.Function1[/* error */ E5, Boolean],
@@ -4328,18 +4242,72 @@ object mod {
     @JSName("caught")
     def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
+      filter2: E2,
+      filter3: E3,
+      filter4: E4,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("caught")
     def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
+      filter2: E2,
+      filter3: E3,
+      filter4: E4,
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: E3,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: E5,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: E3,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4,
+      filter5: E5,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4,
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: E5,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: js.Function1[/* error */ E4, Boolean],
       filter5: js.Function1[/* error */ E5, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
@@ -4347,16 +4315,34 @@ object mod {
     def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
+      filter3: E3,
+      filter4: E4,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("caught")
     def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
+      filter3: E3,
+      filter4: E4,
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: E5,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3,
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: js.Function1[/* error */ E5, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
@@ -4366,8 +4352,8 @@ object mod {
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
+      filter4: E4,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("caught")
@@ -4375,7 +4361,7 @@ object mod {
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
+      filter4: E4,
       filter5: js.Function1[/* error */ E5, Boolean],
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
@@ -4385,7 +4371,7 @@ object mod {
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
+      filter5: E5,
       onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("caught")
@@ -5093,7 +5079,7 @@ object mod {
     }
   }
   
-  type ResolvableProps[T] = js.Object & (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: std.PromiseLike<T[K]> | T[K]} */ js.Any)
+  type ResolvableProps[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: std.PromiseLike<T[K]> | T[K]} */ js.Any
   
   @js.native
   trait Resolver[R] extends StObject {

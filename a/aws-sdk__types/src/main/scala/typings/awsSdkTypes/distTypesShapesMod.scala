@@ -68,14 +68,14 @@ object distTypesShapesMod {
     var message: String
     
     /* standard es5 */
-    var name: String & js.UndefOr[String]
+    var name: String
     
     /* standard es5 */
     var stack: js.UndefOr[String] = js.undefined
   }
   object SdkError {
     
-    inline def apply(message: String, name: String & js.UndefOr[String]): SdkError = {
+    inline def apply(message: String, name: String): SdkError = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[SdkError]
     }
@@ -108,7 +108,7 @@ object distTypesShapesMod {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      inline def setName(value: String & js.UndefOr[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       

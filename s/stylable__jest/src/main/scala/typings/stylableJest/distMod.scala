@@ -19,10 +19,10 @@ object distMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def createTransformer(): GetCacheKey = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransformer")().asInstanceOf[GetCacheKey]
-    inline def createTransformer(options: StylableJestConfig): GetCacheKey = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransformer")(options.asInstanceOf[js.Any]).asInstanceOf[GetCacheKey]
+    inline def createTransformer(): CanInstrument = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransformer")().asInstanceOf[CanInstrument]
+    inline def createTransformer(options: StylableJestConfig): CanInstrument = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransformer")(options.asInstanceOf[js.Any]).asInstanceOf[CanInstrument]
   }
   
-  inline def createTransformer(): CanInstrument = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransformer")().asInstanceOf[CanInstrument]
-  inline def createTransformer(options: StylableJestConfig): CanInstrument = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransformer")(options.asInstanceOf[js.Any]).asInstanceOf[CanInstrument]
+  inline def createTransformer(): GetCacheKey = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransformer")().asInstanceOf[GetCacheKey]
+  inline def createTransformer(options: StylableJestConfig): GetCacheKey = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransformer")(options.asInstanceOf[js.Any]).asInstanceOf[GetCacheKey]
 }

@@ -12,12 +12,12 @@ trait GetCollections extends StObject {
   def get(a: Username): js.Promise[ApiResponse[typings.unsplashJs.distMethodsTopicsTypesMod.Full]] = js.native
   def get(a: Username, additionalFetchOptions: AdditionalFetchOptions): js.Promise[ApiResponse[typings.unsplashJs.distMethodsTopicsTypesMod.Full]] = js.native
   
-  def getCollections(a: usernamestringPaginationP): js.Promise[ApiResponse[ResultsTotal]] = js.native
-  def getCollections(a: usernamestringPaginationP, additionalFetchOptions: AdditionalFetchOptions): js.Promise[ApiResponse[ResultsTotal]] = js.native
+  def getCollections(a: usernamestringPaginationP): js.Promise[ApiResponse[Results]] = js.native
+  def getCollections(a: usernamestringPaginationP, additionalFetchOptions: AdditionalFetchOptions): js.Promise[ApiResponse[Results]] = js.native
   
-  def getLikes(a: OrientationParamusernames): js.Promise[ApiResponse[ResultsTotal]] = js.native
-  def getLikes(a: OrientationParamusernames, additionalFetchOptions: AdditionalFetchOptions): js.Promise[ApiResponse[ResultsTotal]] = js.native
+  def getLikes(a: OrientationParamusernames): js.Promise[ApiResponse[Results]] = js.native
+  def getLikes(a: OrientationParamusernames, additionalFetchOptions: AdditionalFetchOptions): js.Promise[ApiResponse[Results]] = js.native
   
-  def getPhotos(a: statsbooleanundefineduser): js.Promise[ApiResponse[ResultsTotal]] = js.native
-  def getPhotos(a: statsbooleanundefineduser, additionalFetchOptions: AdditionalFetchOptions): js.Promise[ApiResponse[ResultsTotal]] = js.native
+  def getPhotos(a: statsbooleanundefineduser): js.Promise[ApiResponse[Results]] = js.native
+  def getPhotos(a: statsbooleanundefineduser, additionalFetchOptions: AdditionalFetchOptions): js.Promise[ApiResponse[Results]] = js.native
 }

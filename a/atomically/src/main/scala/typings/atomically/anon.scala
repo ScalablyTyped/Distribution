@@ -97,7 +97,7 @@ object anon {
   /* Inlined atomically.atomically/dist/types.ReadOptions & {  encoding :string} */
   trait ReadOptionsencodingstring extends StObject {
     
-    var encoding: (js.UndefOr[String | Null]) & String
+    var encoding: js.UndefOr[String | Null] = js.undefined
     
     var mode: js.UndefOr[String | Double | `false`] = js.undefined
     
@@ -105,14 +105,18 @@ object anon {
   }
   object ReadOptionsencodingstring {
     
-    inline def apply(encoding: (js.UndefOr[String | Null]) & String): ReadOptionsencodingstring = {
-      val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
+    inline def apply(): ReadOptionsencodingstring = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReadOptionsencodingstring]
     }
     
     extension [Self <: ReadOptionsencodingstring](x: Self) {
       
-      inline def setEncoding(value: (js.UndefOr[String | Null]) & String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      
+      inline def setEncodingNull: Self = StObject.set(x, "encoding", null)
+      
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
       inline def setMode(value: String | Double | `false`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       

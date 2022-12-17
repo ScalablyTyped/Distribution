@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "reduce-reducers"
-version := "1.0.4-d0d965"
+version := "1.0.4-5e52f1"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

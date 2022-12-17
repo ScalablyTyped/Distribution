@@ -31,7 +31,7 @@ object outObjectWritableMod {
   @js.native
   trait WritableDeep[O] extends StObject
   
-  type WritableFlat[O] = (/* import warning: importer.ImportType#apply Failed type conversion: {-readonly [ K in keyof O ]: O[K]} */ js.Any) & js.Object
+  type WritableFlat[O] = /* import warning: importer.ImportType#apply Failed type conversion: {-readonly [ K in keyof O ]: O[K]} */ js.Any
   
   type WritablePart[O /* <: js.Object */, depth /* <: Depth */] = /* import warning: importer.ImportType#apply Failed type conversion: ts-toolbelt.anon.DeepWritableDeep<O>[depth] */ js.Any
   

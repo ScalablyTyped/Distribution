@@ -48,7 +48,7 @@ trait PickImplonEnablePartialPi
   
   def onEnable(): Unit
   @JSName("onEnable")
-  var onEnable_Original: (js.ThisFunction0[/* this */ HTMLInputElement, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]])
+  var onEnable_Original: js.ThisFunction0[/* this */ HTMLInputElement, Unit]
   
   var onEnabled: js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]] = js.undefined
   
@@ -68,9 +68,7 @@ trait PickImplonEnablePartialPi
 }
 object PickImplonEnablePartialPi {
   
-  inline def apply(
-    onEnable: (js.ThisFunction0[/* this */ HTMLInputElement, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]])
-  ): PickImplonEnablePartialPi = {
+  inline def apply(onEnable: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): PickImplonEnablePartialPi = {
     val __obj = js.Dynamic.literal(onEnable = onEnable.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonEnablePartialPi]
   }
@@ -137,9 +135,7 @@ object PickImplonEnablePartialPi {
     
     inline def setOnDisabledUndefined: Self = StObject.set(x, "onDisabled", js.undefined)
     
-    inline def setOnEnable(
-      value: (js.ThisFunction0[/* this */ HTMLInputElement, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]])
-    ): Self = StObject.set(x, "onEnable", value.asInstanceOf[js.Any])
+    inline def setOnEnable(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): Self = StObject.set(x, "onEnable", value.asInstanceOf[js.Any])
     
     inline def setOnEnabled(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): Self = StObject.set(x, "onEnabled", value.asInstanceOf[js.Any])
     

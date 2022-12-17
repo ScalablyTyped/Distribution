@@ -1,7 +1,7 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.Nullable
-import typings.babylonjs.anon.DepthFaceColors
+import typings.babylonjs.anon.BackUVsDepth
 import typings.babylonjs.anon.Shape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -45,24 +45,24 @@ object PolygonBuilder {
   @js.native
   def ExtrudePolygon: js.Function4[
     /* name */ String, 
-    /* options */ DepthFaceColors, 
+    /* options */ BackUVsDepth, 
     /* scene */ js.UndefOr[Nullable[typings.babylonjs.BABYLON.Scene]], 
     /* earcutInjection */ js.UndefOr[Any], 
     typings.babylonjs.BABYLON.Mesh
   ] = js.native
-  inline def ExtrudePolygon(name: String, options: DepthFaceColors): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
-  inline def ExtrudePolygon(name: String, options: DepthFaceColors, scene: Unit, earcutInjection: Any): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], earcutInjection.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
-  inline def ExtrudePolygon(name: String, options: DepthFaceColors, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def ExtrudePolygon(name: String, options: BackUVsDepth): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def ExtrudePolygon(name: String, options: BackUVsDepth, scene: Unit, earcutInjection: Any): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], earcutInjection.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def ExtrudePolygon(name: String, options: BackUVsDepth, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
   inline def ExtrudePolygon(
     name: String,
-    options: DepthFaceColors,
+    options: BackUVsDepth,
     scene: Nullable[typings.babylonjs.BABYLON.Scene],
     earcutInjection: Any
   ): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudePolygon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], earcutInjection.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
   inline def ExtrudePolygon_=(
     x: js.Function4[
       /* name */ String, 
-      /* options */ DepthFaceColors, 
+      /* options */ BackUVsDepth, 
       /* scene */ js.UndefOr[Nullable[typings.babylonjs.BABYLON.Scene]], 
       /* earcutInjection */ js.UndefOr[Any], 
       typings.babylonjs.BABYLON.Mesh

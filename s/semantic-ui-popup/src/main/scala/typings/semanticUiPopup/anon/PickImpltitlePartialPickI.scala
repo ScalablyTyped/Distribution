@@ -110,7 +110,7 @@ trait PickImpltitlePartialPickI
   
   var target: js.UndefOr[`false` | String | JQuery] = js.undefined
   
-  var title: String & js.UndefOr[String]
+  var title: String
   
   var transition: js.UndefOr[String] = js.undefined
   
@@ -120,7 +120,7 @@ trait PickImpltitlePartialPickI
 }
 object PickImpltitlePartialPickI {
   
-  inline def apply(title: String & js.UndefOr[String]): PickImpltitlePartialPickI = {
+  inline def apply(title: String): PickImpltitlePartialPickI = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpltitlePartialPickI]
   }
@@ -299,7 +299,7 @@ object PickImpltitlePartialPickI {
     
     inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    inline def setTitle(value: String & js.UndefOr[String]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     

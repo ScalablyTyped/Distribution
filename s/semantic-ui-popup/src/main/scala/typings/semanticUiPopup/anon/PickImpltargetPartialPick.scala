@@ -108,7 +108,7 @@ trait PickImpltargetPartialPick
   
   var silent: js.UndefOr[Boolean] = js.undefined
   
-  var target: (`false` | String | JQuery) & (js.UndefOr[`false` | String | JQuery])
+  var target: `false` | String | JQuery
   
   var title: js.UndefOr[String] = js.undefined
   
@@ -120,7 +120,7 @@ trait PickImpltargetPartialPick
 }
 object PickImpltargetPartialPick {
   
-  inline def apply(target: (`false` | String | JQuery) & (js.UndefOr[`false` | String | JQuery])): PickImpltargetPartialPick = {
+  inline def apply(target: `false` | String | JQuery): PickImpltargetPartialPick = {
     val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpltargetPartialPick]
   }
@@ -295,7 +295,7 @@ object PickImpltargetPartialPick {
     
     inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     
-    inline def setTarget(value: (`false` | String | JQuery) & (js.UndefOr[`false` | String | JQuery])): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: `false` | String | JQuery): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

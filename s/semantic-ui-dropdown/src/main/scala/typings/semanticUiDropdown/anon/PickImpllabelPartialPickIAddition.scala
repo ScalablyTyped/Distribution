@@ -20,7 +20,7 @@ trait PickImpllabelPartialPickIAddition
   
   var item: js.UndefOr[String] = js.undefined
   
-  var label: String & js.UndefOr[String]
+  var label: String
   
   var menu: js.UndefOr[String] = js.undefined
   
@@ -38,7 +38,7 @@ trait PickImpllabelPartialPickIAddition
 }
 object PickImpllabelPartialPickIAddition {
   
-  inline def apply(label: String & js.UndefOr[String]): PickImpllabelPartialPickIAddition = {
+  inline def apply(label: String): PickImpllabelPartialPickIAddition = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpllabelPartialPickIAddition]
   }
@@ -65,7 +65,7 @@ object PickImpllabelPartialPickIAddition {
     
     inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
-    inline def setLabel(value: String & js.UndefOr[String]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setMenu(value: String): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     

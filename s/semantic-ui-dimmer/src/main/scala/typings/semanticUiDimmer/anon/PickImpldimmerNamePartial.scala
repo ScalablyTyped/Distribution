@@ -26,7 +26,7 @@ trait PickImpldimmerNamePartial
   
   var debug: js.UndefOr[Boolean] = js.undefined
   
-  var dimmerName: (`false` | String) & (js.UndefOr[`false` | String])
+  var dimmerName: `false` | String
   
   var duration: js.UndefOr[Double | DurationSettings] = js.undefined
   
@@ -64,7 +64,7 @@ trait PickImpldimmerNamePartial
 }
 object PickImpldimmerNamePartial {
   
-  inline def apply(dimmerName: (`false` | String) & (js.UndefOr[`false` | String])): PickImpldimmerNamePartial = {
+  inline def apply(dimmerName: `false` | String): PickImpldimmerNamePartial = {
     val __obj = js.Dynamic.literal(dimmerName = dimmerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldimmerNamePartial]
   }
@@ -83,7 +83,7 @@ object PickImpldimmerNamePartial {
     
     inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    inline def setDimmerName(value: (`false` | String) & (js.UndefOr[`false` | String])): Self = StObject.set(x, "dimmerName", value.asInstanceOf[js.Any])
+    inline def setDimmerName(value: `false` | String): Self = StObject.set(x, "dimmerName", value.asInstanceOf[js.Any])
     
     inline def setDuration(value: Double | DurationSettings): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

@@ -37,16 +37,8 @@ trait NormalizedOptions
 }
 object NormalizedOptions {
   
-  inline def apply(
-    cache: NonNullable[js.UndefOr[String]],
-    nodeVersion: NonNullable[js.UndefOr[String]],
-    packumentCache: NonNullable[js.UndefOr[Map[String, Packument_]]],
-    path: NonNullable[js.UndefOr[String]],
-    registry: NonNullable[js.UndefOr[String]],
-    replaceRegistryHost: NonNullable[js.UndefOr[String]],
-    workspacesEnabled: NonNullable[js.UndefOr[Boolean]]
-  ): NormalizedOptions = {
-    val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], nodeVersion = nodeVersion.asInstanceOf[js.Any], packumentCache = packumentCache.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], registry = registry.asInstanceOf[js.Any], replaceRegistryHost = replaceRegistryHost.asInstanceOf[js.Any], workspacesEnabled = workspacesEnabled.asInstanceOf[js.Any], lockfileVersion = null)
+  inline def apply(): NormalizedOptions = {
+    val __obj = js.Dynamic.literal(lockfileVersion = null)
     __obj.asInstanceOf[NormalizedOptions]
   }
   
@@ -54,20 +46,34 @@ object NormalizedOptions {
     
     inline def setCache(value: NonNullable[js.UndefOr[String]]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
+    inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+    
     inline def setLockfileVersion(value: Double): Self = StObject.set(x, "lockfileVersion", value.asInstanceOf[js.Any])
     
     inline def setLockfileVersionNull: Self = StObject.set(x, "lockfileVersion", null)
     
     inline def setNodeVersion(value: NonNullable[js.UndefOr[String]]): Self = StObject.set(x, "nodeVersion", value.asInstanceOf[js.Any])
     
+    inline def setNodeVersionUndefined: Self = StObject.set(x, "nodeVersion", js.undefined)
+    
     inline def setPackumentCache(value: NonNullable[js.UndefOr[Map[String, Packument_]]]): Self = StObject.set(x, "packumentCache", value.asInstanceOf[js.Any])
+    
+    inline def setPackumentCacheUndefined: Self = StObject.set(x, "packumentCache", js.undefined)
     
     inline def setPath(value: NonNullable[js.UndefOr[String]]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    
     inline def setRegistry(value: NonNullable[js.UndefOr[String]]): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
+    
+    inline def setRegistryUndefined: Self = StObject.set(x, "registry", js.undefined)
     
     inline def setReplaceRegistryHost(value: NonNullable[js.UndefOr[String]]): Self = StObject.set(x, "replaceRegistryHost", value.asInstanceOf[js.Any])
     
+    inline def setReplaceRegistryHostUndefined: Self = StObject.set(x, "replaceRegistryHost", js.undefined)
+    
     inline def setWorkspacesEnabled(value: NonNullable[js.UndefOr[Boolean]]): Self = StObject.set(x, "workspacesEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setWorkspacesEnabledUndefined: Self = StObject.set(x, "workspacesEnabled", js.undefined)
   }
 }

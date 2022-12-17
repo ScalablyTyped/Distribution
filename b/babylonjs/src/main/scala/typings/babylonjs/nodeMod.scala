@@ -7,7 +7,7 @@ import typings.babylonjs.animationsAnimatableMod.Animatable
 import typings.babylonjs.animationsAnimationMod.Animation
 import typings.babylonjs.animationsAnimationPropertiesOverrideMod.AnimationPropertiesOverride
 import typings.babylonjs.animationsAnimationRangeMod.AnimationRange
-import typings.babylonjs.anon.MaxMin
+import typings.babylonjs.anon.Max
 import typings.babylonjs.behaviorsBehaviorMod.Behavior
 import typings.babylonjs.behaviorsBehaviorMod.IBehaviorAware
 import typings.babylonjs.enginesEngineMod.Engine
@@ -365,16 +365,16 @@ object nodeMod {
       * @param predicate defines a callback function that can be customize to filter what meshes should be included in the list used to compute the bounding vectors
       * @returns the new bounding vectors
       */
-    def getHierarchyBoundingVectors(): MaxMin = js.native
-    def getHierarchyBoundingVectors(includeDescendants: Boolean): MaxMin = js.native
+    def getHierarchyBoundingVectors(): Max = js.native
+    def getHierarchyBoundingVectors(includeDescendants: Boolean): Max = js.native
     def getHierarchyBoundingVectors(
       includeDescendants: Boolean,
       predicate: Nullable[js.Function1[/* abstractMesh */ AbstractMesh, Boolean]]
-    ): MaxMin = js.native
+    ): Max = js.native
     def getHierarchyBoundingVectors(
       includeDescendants: Unit,
       predicate: Nullable[js.Function1[/* abstractMesh */ AbstractMesh, Boolean]]
-    ): MaxMin = js.native
+    ): Max = js.native
     
     /**
       * Gets the scene of the node

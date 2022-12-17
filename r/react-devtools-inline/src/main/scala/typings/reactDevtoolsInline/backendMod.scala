@@ -17,17 +17,6 @@ object backendMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("react-devtools-inline/backend", JSImport.Default)
-  @js.native
-  open class default protected ()
-    extends typings.reactDevtoolsInline.commonsMod.default {
-    def this(
-      bridge: FrontendBridge,
-      store: typings.reactDevtoolsInline.commonsMod.Store,
-      defaultIsProfiling: Boolean
-    ) = this()
-  }
-  
   @JSImport("react-devtools-inline/backend", "Bridge")
   @js.native
   open class Bridge[OutgoingEvents /* <: Record[String, js.Array[Any]] */, IncomingEvents /* <: Record[String, js.Array[Any]] */] protected ()

@@ -17,240 +17,240 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def AtomDataLoader: typings.webix.mod.AtomDataLoader & typings.webix.webix.AtomDataLoader = ^.asInstanceOf[js.Dynamic].selectDynamic("AtomDataLoader").asInstanceOf[typings.webix.mod.AtomDataLoader & typings.webix.webix.AtomDataLoader]
-inline def AtomDataLoader_=(x: typings.webix.mod.AtomDataLoader & typings.webix.webix.AtomDataLoader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AtomDataLoader")(x.asInstanceOf[js.Any])
+inline def AtomDataLoader: typings.webix.mod.AtomDataLoader = ^.asInstanceOf[js.Dynamic].selectDynamic("AtomDataLoader").asInstanceOf[typings.webix.mod.AtomDataLoader]
+inline def AtomDataLoader_=(x: typings.webix.mod.AtomDataLoader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AtomDataLoader")(x.asInstanceOf[js.Any])
 
-inline def AtomRender: typings.webix.mod.AtomRender & typings.webix.webix.AtomRender = ^.asInstanceOf[js.Dynamic].selectDynamic("AtomRender").asInstanceOf[typings.webix.mod.AtomRender & typings.webix.webix.AtomRender]
-inline def AtomRender_=(x: typings.webix.mod.AtomRender & typings.webix.webix.AtomRender): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AtomRender")(x.asInstanceOf[js.Any])
+inline def AtomRender: typings.webix.mod.AtomRender = ^.asInstanceOf[js.Dynamic].selectDynamic("AtomRender").asInstanceOf[typings.webix.mod.AtomRender]
+inline def AtomRender_=(x: typings.webix.mod.AtomRender): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AtomRender")(x.asInstanceOf[js.Any])
 
-inline def AutoScroll: typings.webix.mod.AutoScroll & typings.webix.webix.AutoScroll = ^.asInstanceOf[js.Dynamic].selectDynamic("AutoScroll").asInstanceOf[typings.webix.mod.AutoScroll & typings.webix.webix.AutoScroll]
-inline def AutoScroll_=(x: typings.webix.mod.AutoScroll & typings.webix.webix.AutoScroll): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AutoScroll")(x.asInstanceOf[js.Any])
+inline def AutoScroll: typings.webix.mod.AutoScroll = ^.asInstanceOf[js.Dynamic].selectDynamic("AutoScroll").asInstanceOf[typings.webix.mod.AutoScroll]
+inline def AutoScroll_=(x: typings.webix.mod.AutoScroll): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AutoScroll")(x.asInstanceOf[js.Any])
 
-inline def AutoTooltip: typings.webix.mod.AutoTooltip & typings.webix.webix.AutoTooltip = ^.asInstanceOf[js.Dynamic].selectDynamic("AutoTooltip").asInstanceOf[typings.webix.mod.AutoTooltip & typings.webix.webix.AutoTooltip]
-inline def AutoTooltip_=(x: typings.webix.mod.AutoTooltip & typings.webix.webix.AutoTooltip): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AutoTooltip")(x.asInstanceOf[js.Any])
+inline def AutoTooltip: typings.webix.mod.AutoTooltip = ^.asInstanceOf[js.Dynamic].selectDynamic("AutoTooltip").asInstanceOf[typings.webix.mod.AutoTooltip]
+inline def AutoTooltip_=(x: typings.webix.mod.AutoTooltip): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AutoTooltip")(x.asInstanceOf[js.Any])
 
-inline def BaseBind: typings.webix.mod.BaseBind & typings.webix.webix.BaseBind = ^.asInstanceOf[js.Dynamic].selectDynamic("BaseBind").asInstanceOf[typings.webix.mod.BaseBind & typings.webix.webix.BaseBind]
-inline def BaseBind_=(x: typings.webix.mod.BaseBind & typings.webix.webix.BaseBind): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BaseBind")(x.asInstanceOf[js.Any])
+inline def BaseBind: typings.webix.mod.BaseBind = ^.asInstanceOf[js.Dynamic].selectDynamic("BaseBind").asInstanceOf[typings.webix.mod.BaseBind]
+inline def BaseBind_=(x: typings.webix.mod.BaseBind): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BaseBind")(x.asInstanceOf[js.Any])
 
-inline def BindSource: typings.webix.mod.BindSource & typings.webix.webix.BindSource = ^.asInstanceOf[js.Dynamic].selectDynamic("BindSource").asInstanceOf[typings.webix.mod.BindSource & typings.webix.webix.BindSource]
-inline def BindSource_=(x: typings.webix.mod.BindSource & typings.webix.webix.BindSource): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BindSource")(x.asInstanceOf[js.Any])
+inline def BindSource: typings.webix.mod.BindSource = ^.asInstanceOf[js.Dynamic].selectDynamic("BindSource").asInstanceOf[typings.webix.mod.BindSource]
+inline def BindSource_=(x: typings.webix.mod.BindSource): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BindSource")(x.asInstanceOf[js.Any])
 
-inline def Canvas: typings.webix.mod.Canvas & typings.webix.webix.Canvas = ^.asInstanceOf[js.Dynamic].selectDynamic("Canvas").asInstanceOf[typings.webix.mod.Canvas & typings.webix.webix.Canvas]
-inline def Canvas_=(x: typings.webix.mod.Canvas & typings.webix.webix.Canvas): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Canvas")(x.asInstanceOf[js.Any])
+inline def Canvas: typings.webix.mod.Canvas = ^.asInstanceOf[js.Dynamic].selectDynamic("Canvas").asInstanceOf[typings.webix.mod.Canvas]
+inline def Canvas_=(x: typings.webix.mod.Canvas): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Canvas")(x.asInstanceOf[js.Any])
 
-inline def CodeParser: typings.webix.mod.CodeParser & typings.webix.webix.CodeParser = ^.asInstanceOf[js.Dynamic].selectDynamic("CodeParser").asInstanceOf[typings.webix.mod.CodeParser & typings.webix.webix.CodeParser]
-inline def CodeParser_=(x: typings.webix.mod.CodeParser & typings.webix.webix.CodeParser): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CodeParser")(x.asInstanceOf[js.Any])
+inline def CodeParser: typings.webix.mod.CodeParser = ^.asInstanceOf[js.Dynamic].selectDynamic("CodeParser").asInstanceOf[typings.webix.mod.CodeParser]
+inline def CodeParser_=(x: typings.webix.mod.CodeParser): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CodeParser")(x.asInstanceOf[js.Any])
 
-inline def CollectionBind: typings.webix.mod.CollectionBind & typings.webix.webix.CollectionBind = ^.asInstanceOf[js.Dynamic].selectDynamic("CollectionBind").asInstanceOf[typings.webix.mod.CollectionBind & typings.webix.webix.CollectionBind]
-inline def CollectionBind_=(x: typings.webix.mod.CollectionBind & typings.webix.webix.CollectionBind): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CollectionBind")(x.asInstanceOf[js.Any])
+inline def CollectionBind: typings.webix.mod.CollectionBind = ^.asInstanceOf[js.Dynamic].selectDynamic("CollectionBind").asInstanceOf[typings.webix.mod.CollectionBind]
+inline def CollectionBind_=(x: typings.webix.mod.CollectionBind): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CollectionBind")(x.asInstanceOf[js.Any])
 
-inline def ContextHelper: typings.webix.mod.ContextHelper & typings.webix.webix.ContextHelper = ^.asInstanceOf[js.Dynamic].selectDynamic("ContextHelper").asInstanceOf[typings.webix.mod.ContextHelper & typings.webix.webix.ContextHelper]
-inline def ContextHelper_=(x: typings.webix.mod.ContextHelper & typings.webix.webix.ContextHelper): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ContextHelper")(x.asInstanceOf[js.Any])
+inline def ContextHelper: typings.webix.mod.ContextHelper = ^.asInstanceOf[js.Dynamic].selectDynamic("ContextHelper").asInstanceOf[typings.webix.mod.ContextHelper]
+inline def ContextHelper_=(x: typings.webix.mod.ContextHelper): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ContextHelper")(x.asInstanceOf[js.Any])
 
-inline def CopyPaste: typings.webix.mod.CopyPaste & typings.webix.webix.CopyPaste = ^.asInstanceOf[js.Dynamic].selectDynamic("CopyPaste").asInstanceOf[typings.webix.mod.CopyPaste & typings.webix.webix.CopyPaste]
-inline def CopyPaste_=(x: typings.webix.mod.CopyPaste & typings.webix.webix.CopyPaste): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CopyPaste")(x.asInstanceOf[js.Any])
+inline def CopyPaste: typings.webix.mod.CopyPaste = ^.asInstanceOf[js.Dynamic].selectDynamic("CopyPaste").asInstanceOf[typings.webix.mod.CopyPaste]
+inline def CopyPaste_=(x: typings.webix.mod.CopyPaste): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CopyPaste")(x.asInstanceOf[js.Any])
 
-inline def CustomPrint: typings.webix.mod.CustomPrint & typings.webix.webix.CustomPrint = ^.asInstanceOf[js.Dynamic].selectDynamic("CustomPrint").asInstanceOf[typings.webix.mod.CustomPrint & typings.webix.webix.CustomPrint]
-inline def CustomPrint_=(x: typings.webix.mod.CustomPrint & typings.webix.webix.CustomPrint): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CustomPrint")(x.asInstanceOf[js.Any])
+inline def CustomPrint: typings.webix.mod.CustomPrint = ^.asInstanceOf[js.Dynamic].selectDynamic("CustomPrint").asInstanceOf[typings.webix.mod.CustomPrint]
+inline def CustomPrint_=(x: typings.webix.mod.CustomPrint): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CustomPrint")(x.asInstanceOf[js.Any])
 
-inline def CustomScroll: typings.webix.mod.CustomScroll & typings.webix.webix.CustomScroll = ^.asInstanceOf[js.Dynamic].selectDynamic("CustomScroll").asInstanceOf[typings.webix.mod.CustomScroll & typings.webix.webix.CustomScroll]
-inline def CustomScroll_=(x: typings.webix.mod.CustomScroll & typings.webix.webix.CustomScroll): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CustomScroll")(x.asInstanceOf[js.Any])
+inline def CustomScroll: typings.webix.mod.CustomScroll = ^.asInstanceOf[js.Dynamic].selectDynamic("CustomScroll").asInstanceOf[typings.webix.mod.CustomScroll]
+inline def CustomScroll_=(x: typings.webix.mod.CustomScroll): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CustomScroll")(x.asInstanceOf[js.Any])
 
-inline def DataCollection: DataCollectionFactory & typings.webix.webix.DataCollectionFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("DataCollection").asInstanceOf[DataCollectionFactory & typings.webix.webix.DataCollectionFactory]
-inline def DataCollection_=(x: DataCollectionFactory & typings.webix.webix.DataCollectionFactory): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataCollection")(x.asInstanceOf[js.Any])
+inline def DataCollection: DataCollectionFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("DataCollection").asInstanceOf[DataCollectionFactory]
+inline def DataCollection_=(x: DataCollectionFactory): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataCollection")(x.asInstanceOf[js.Any])
 
-inline def DataDriver: typings.webix.mod.DataDriver & typings.webix.webix.DataDriver = ^.asInstanceOf[js.Dynamic].selectDynamic("DataDriver").asInstanceOf[typings.webix.mod.DataDriver & typings.webix.webix.DataDriver]
-inline def DataDriver_=(x: typings.webix.mod.DataDriver & typings.webix.webix.DataDriver): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataDriver")(x.asInstanceOf[js.Any])
+inline def DataDriver: typings.webix.mod.DataDriver = ^.asInstanceOf[js.Dynamic].selectDynamic("DataDriver").asInstanceOf[typings.webix.mod.DataDriver]
+inline def DataDriver_=(x: typings.webix.mod.DataDriver): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataDriver")(x.asInstanceOf[js.Any])
 
-inline def DataLoader: typings.webix.mod.DataLoader & typings.webix.webix.DataLoader = ^.asInstanceOf[js.Dynamic].selectDynamic("DataLoader").asInstanceOf[typings.webix.mod.DataLoader & typings.webix.webix.DataLoader]
-inline def DataLoader_=(x: typings.webix.mod.DataLoader & typings.webix.webix.DataLoader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataLoader")(x.asInstanceOf[js.Any])
+inline def DataLoader: typings.webix.mod.DataLoader = ^.asInstanceOf[js.Dynamic].selectDynamic("DataLoader").asInstanceOf[typings.webix.mod.DataLoader]
+inline def DataLoader_=(x: typings.webix.mod.DataLoader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataLoader")(x.asInstanceOf[js.Any])
 
-inline def DataMarks: typings.webix.mod.DataMarks & typings.webix.webix.DataMarks = ^.asInstanceOf[js.Dynamic].selectDynamic("DataMarks").asInstanceOf[typings.webix.mod.DataMarks & typings.webix.webix.DataMarks]
-inline def DataMarks_=(x: typings.webix.mod.DataMarks & typings.webix.webix.DataMarks): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataMarks")(x.asInstanceOf[js.Any])
+inline def DataMarks: typings.webix.mod.DataMarks = ^.asInstanceOf[js.Dynamic].selectDynamic("DataMarks").asInstanceOf[typings.webix.mod.DataMarks]
+inline def DataMarks_=(x: typings.webix.mod.DataMarks): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataMarks")(x.asInstanceOf[js.Any])
 
-inline def DataMove: typings.webix.mod.DataMove & typings.webix.webix.DataMove = ^.asInstanceOf[js.Dynamic].selectDynamic("DataMove").asInstanceOf[typings.webix.mod.DataMove & typings.webix.webix.DataMove]
-inline def DataMove_=(x: typings.webix.mod.DataMove & typings.webix.webix.DataMove): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataMove")(x.asInstanceOf[js.Any])
+inline def DataMove: typings.webix.mod.DataMove = ^.asInstanceOf[js.Dynamic].selectDynamic("DataMove").asInstanceOf[typings.webix.mod.DataMove]
+inline def DataMove_=(x: typings.webix.mod.DataMove): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataMove")(x.asInstanceOf[js.Any])
 
-inline def DataProcessor: typings.webix.mod.DataProcessor & typings.webix.webix.DataProcessor = ^.asInstanceOf[js.Dynamic].selectDynamic("DataProcessor").asInstanceOf[typings.webix.mod.DataProcessor & typings.webix.webix.DataProcessor]
-inline def DataProcessor_=(x: typings.webix.mod.DataProcessor & typings.webix.webix.DataProcessor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataProcessor")(x.asInstanceOf[js.Any])
+inline def DataProcessor: typings.webix.mod.DataProcessor = ^.asInstanceOf[js.Dynamic].selectDynamic("DataProcessor").asInstanceOf[typings.webix.mod.DataProcessor]
+inline def DataProcessor_=(x: typings.webix.mod.DataProcessor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataProcessor")(x.asInstanceOf[js.Any])
 
-inline def DataRecord: DataRecordFactory & typings.webix.webix.DataRecordFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("DataRecord").asInstanceOf[DataRecordFactory & typings.webix.webix.DataRecordFactory]
-inline def DataRecord_=(x: DataRecordFactory & typings.webix.webix.DataRecordFactory): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataRecord")(x.asInstanceOf[js.Any])
+inline def DataRecord: DataRecordFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("DataRecord").asInstanceOf[DataRecordFactory]
+inline def DataRecord_=(x: DataRecordFactory): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataRecord")(x.asInstanceOf[js.Any])
 
-inline def DataState: typings.webix.mod.DataState & typings.webix.webix.DataState = ^.asInstanceOf[js.Dynamic].selectDynamic("DataState").asInstanceOf[typings.webix.mod.DataState & typings.webix.webix.DataState]
-inline def DataState_=(x: typings.webix.mod.DataState & typings.webix.webix.DataState): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataState")(x.asInstanceOf[js.Any])
+inline def DataState: typings.webix.mod.DataState = ^.asInstanceOf[js.Dynamic].selectDynamic("DataState").asInstanceOf[typings.webix.mod.DataState]
+inline def DataState_=(x: typings.webix.mod.DataState): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataState")(x.asInstanceOf[js.Any])
 
-inline def DataStore: typings.webix.mod.DataStore & typings.webix.webix.DataStore = ^.asInstanceOf[js.Dynamic].selectDynamic("DataStore").asInstanceOf[typings.webix.mod.DataStore & typings.webix.webix.DataStore]
-inline def DataStore_=(x: typings.webix.mod.DataStore & typings.webix.webix.DataStore): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataStore")(x.asInstanceOf[js.Any])
+inline def DataStore: typings.webix.mod.DataStore = ^.asInstanceOf[js.Dynamic].selectDynamic("DataStore").asInstanceOf[typings.webix.mod.DataStore]
+inline def DataStore_=(x: typings.webix.mod.DataStore): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataStore")(x.asInstanceOf[js.Any])
 
-inline def DataValue: DataValueFactory & typings.webix.webix.DataValueFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("DataValue").asInstanceOf[DataValueFactory & typings.webix.webix.DataValueFactory]
-inline def DataValue_=(x: DataValueFactory & typings.webix.webix.DataValueFactory): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataValue")(x.asInstanceOf[js.Any])
+inline def DataValue: DataValueFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("DataValue").asInstanceOf[DataValueFactory]
+inline def DataValue_=(x: DataValueFactory): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataValue")(x.asInstanceOf[js.Any])
 
-inline def Date: WebixDate & typings.webix.webix.WebixDate = ^.asInstanceOf[js.Dynamic].selectDynamic("Date").asInstanceOf[WebixDate & typings.webix.webix.WebixDate]
-inline def Date_=(x: WebixDate & typings.webix.webix.WebixDate): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Date")(x.asInstanceOf[js.Any])
+inline def Date: WebixDate = ^.asInstanceOf[js.Dynamic].selectDynamic("Date").asInstanceOf[WebixDate]
+inline def Date_=(x: WebixDate): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Date")(x.asInstanceOf[js.Any])
 
-inline def Destruction: typings.webix.mod.Destruction & typings.webix.webix.Destruction = ^.asInstanceOf[js.Dynamic].selectDynamic("Destruction").asInstanceOf[typings.webix.mod.Destruction & typings.webix.webix.Destruction]
-inline def Destruction_=(x: typings.webix.mod.Destruction & typings.webix.webix.Destruction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Destruction")(x.asInstanceOf[js.Any])
+inline def Destruction: typings.webix.mod.Destruction = ^.asInstanceOf[js.Dynamic].selectDynamic("Destruction").asInstanceOf[typings.webix.mod.Destruction]
+inline def Destruction_=(x: typings.webix.mod.Destruction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Destruction")(x.asInstanceOf[js.Any])
 
-inline def DragControl: typings.webix.mod.DragControl & typings.webix.webix.DragControl = ^.asInstanceOf[js.Dynamic].selectDynamic("DragControl").asInstanceOf[typings.webix.mod.DragControl & typings.webix.webix.DragControl]
-inline def DragControl_=(x: typings.webix.mod.DragControl & typings.webix.webix.DragControl): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DragControl")(x.asInstanceOf[js.Any])
+inline def DragControl: typings.webix.mod.DragControl = ^.asInstanceOf[js.Dynamic].selectDynamic("DragControl").asInstanceOf[typings.webix.mod.DragControl]
+inline def DragControl_=(x: typings.webix.mod.DragControl): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DragControl")(x.asInstanceOf[js.Any])
 
-inline def DragItem: typings.webix.mod.DragItem & typings.webix.webix.DragItem = ^.asInstanceOf[js.Dynamic].selectDynamic("DragItem").asInstanceOf[typings.webix.mod.DragItem & typings.webix.webix.DragItem]
-inline def DragItem_=(x: typings.webix.mod.DragItem & typings.webix.webix.DragItem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DragItem")(x.asInstanceOf[js.Any])
+inline def DragItem: typings.webix.mod.DragItem = ^.asInstanceOf[js.Dynamic].selectDynamic("DragItem").asInstanceOf[typings.webix.mod.DragItem]
+inline def DragItem_=(x: typings.webix.mod.DragItem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DragItem")(x.asInstanceOf[js.Any])
 
-inline def DragOrder: typings.webix.mod.DragOrder & typings.webix.webix.DragOrder = ^.asInstanceOf[js.Dynamic].selectDynamic("DragOrder").asInstanceOf[typings.webix.mod.DragOrder & typings.webix.webix.DragOrder]
-inline def DragOrder_=(x: typings.webix.mod.DragOrder & typings.webix.webix.DragOrder): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DragOrder")(x.asInstanceOf[js.Any])
+inline def DragOrder: typings.webix.mod.DragOrder = ^.asInstanceOf[js.Dynamic].selectDynamic("DragOrder").asInstanceOf[typings.webix.mod.DragOrder]
+inline def DragOrder_=(x: typings.webix.mod.DragOrder): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DragOrder")(x.asInstanceOf[js.Any])
 
-inline def EditAbility: typings.webix.mod.EditAbility & typings.webix.webix.EditAbility = ^.asInstanceOf[js.Dynamic].selectDynamic("EditAbility").asInstanceOf[typings.webix.mod.EditAbility & typings.webix.webix.EditAbility]
-inline def EditAbility_=(x: typings.webix.mod.EditAbility & typings.webix.webix.EditAbility): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EditAbility")(x.asInstanceOf[js.Any])
+inline def EditAbility: typings.webix.mod.EditAbility = ^.asInstanceOf[js.Dynamic].selectDynamic("EditAbility").asInstanceOf[typings.webix.mod.EditAbility]
+inline def EditAbility_=(x: typings.webix.mod.EditAbility): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EditAbility")(x.asInstanceOf[js.Any])
 
-inline def EventSystem: typings.webix.mod.EventSystem & typings.webix.webix.EventSystem = ^.asInstanceOf[js.Dynamic].selectDynamic("EventSystem").asInstanceOf[typings.webix.mod.EventSystem & typings.webix.webix.EventSystem]
-inline def EventSystem_=(x: typings.webix.mod.EventSystem & typings.webix.webix.EventSystem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EventSystem")(x.asInstanceOf[js.Any])
+inline def EventSystem: typings.webix.mod.EventSystem = ^.asInstanceOf[js.Dynamic].selectDynamic("EventSystem").asInstanceOf[typings.webix.mod.EventSystem]
+inline def EventSystem_=(x: typings.webix.mod.EventSystem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EventSystem")(x.asInstanceOf[js.Any])
 
-inline def FlexLayout: typings.webix.mod.FlexLayout & typings.webix.webix.FlexLayout = ^.asInstanceOf[js.Dynamic].selectDynamic("FlexLayout").asInstanceOf[typings.webix.mod.FlexLayout & typings.webix.webix.FlexLayout]
-inline def FlexLayout_=(x: typings.webix.mod.FlexLayout & typings.webix.webix.FlexLayout): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FlexLayout")(x.asInstanceOf[js.Any])
+inline def FlexLayout: typings.webix.mod.FlexLayout = ^.asInstanceOf[js.Dynamic].selectDynamic("FlexLayout").asInstanceOf[typings.webix.mod.FlexLayout]
+inline def FlexLayout_=(x: typings.webix.mod.FlexLayout): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FlexLayout")(x.asInstanceOf[js.Any])
 
-inline def Group: typings.webix.mod.Group & typings.webix.webix.Group = ^.asInstanceOf[js.Dynamic].selectDynamic("Group").asInstanceOf[typings.webix.mod.Group & typings.webix.webix.Group]
+inline def Group: typings.webix.mod.Group = ^.asInstanceOf[js.Dynamic].selectDynamic("Group").asInstanceOf[typings.webix.mod.Group]
 
-inline def GroupMethods: typings.webix.mod.GroupMethods & typings.webix.webix.GroupMethods = ^.asInstanceOf[js.Dynamic].selectDynamic("GroupMethods").asInstanceOf[typings.webix.mod.GroupMethods & typings.webix.webix.GroupMethods]
-inline def GroupMethods_=(x: typings.webix.mod.GroupMethods & typings.webix.webix.GroupMethods): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GroupMethods")(x.asInstanceOf[js.Any])
+inline def GroupMethods: typings.webix.mod.GroupMethods = ^.asInstanceOf[js.Dynamic].selectDynamic("GroupMethods").asInstanceOf[typings.webix.mod.GroupMethods]
+inline def GroupMethods_=(x: typings.webix.mod.GroupMethods): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GroupMethods")(x.asInstanceOf[js.Any])
 
-inline def GroupStore: typings.webix.mod.GroupStore & typings.webix.webix.GroupStore = ^.asInstanceOf[js.Dynamic].selectDynamic("GroupStore").asInstanceOf[typings.webix.mod.GroupStore & typings.webix.webix.GroupStore]
-inline def GroupStore_=(x: typings.webix.mod.GroupStore & typings.webix.webix.GroupStore): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GroupStore")(x.asInstanceOf[js.Any])
+inline def GroupStore: typings.webix.mod.GroupStore = ^.asInstanceOf[js.Dynamic].selectDynamic("GroupStore").asInstanceOf[typings.webix.mod.GroupStore]
+inline def GroupStore_=(x: typings.webix.mod.GroupStore): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GroupStore")(x.asInstanceOf[js.Any])
 
-inline def Group_=(x: typings.webix.mod.Group & typings.webix.webix.Group): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Group")(x.asInstanceOf[js.Any])
+inline def Group_=(x: typings.webix.mod.Group): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Group")(x.asInstanceOf[js.Any])
 
-inline def HTMLOptions: typings.webix.mod.HTMLOptions & typings.webix.webix.HTMLOptions = ^.asInstanceOf[js.Dynamic].selectDynamic("HTMLOptions").asInstanceOf[typings.webix.mod.HTMLOptions & typings.webix.webix.HTMLOptions]
-inline def HTMLOptions_=(x: typings.webix.mod.HTMLOptions & typings.webix.webix.HTMLOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTMLOptions")(x.asInstanceOf[js.Any])
+inline def HTMLOptions: typings.webix.mod.HTMLOptions = ^.asInstanceOf[js.Dynamic].selectDynamic("HTMLOptions").asInstanceOf[typings.webix.mod.HTMLOptions]
+inline def HTMLOptions_=(x: typings.webix.mod.HTMLOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTMLOptions")(x.asInstanceOf[js.Any])
 
-inline def HtmlMap: typings.webix.mod.HtmlMap & typings.webix.webix.HtmlMap = ^.asInstanceOf[js.Dynamic].selectDynamic("HtmlMap").asInstanceOf[typings.webix.mod.HtmlMap & typings.webix.webix.HtmlMap]
-inline def HtmlMap_=(x: typings.webix.mod.HtmlMap & typings.webix.webix.HtmlMap): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HtmlMap")(x.asInstanceOf[js.Any])
+inline def HtmlMap: typings.webix.mod.HtmlMap = ^.asInstanceOf[js.Dynamic].selectDynamic("HtmlMap").asInstanceOf[typings.webix.mod.HtmlMap]
+inline def HtmlMap_=(x: typings.webix.mod.HtmlMap): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HtmlMap")(x.asInstanceOf[js.Any])
 
-inline def IdSpace: typings.webix.mod.IdSpace & typings.webix.webix.IdSpace = ^.asInstanceOf[js.Dynamic].selectDynamic("IdSpace").asInstanceOf[typings.webix.mod.IdSpace & typings.webix.webix.IdSpace]
-inline def IdSpace_=(x: typings.webix.mod.IdSpace & typings.webix.webix.IdSpace): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IdSpace")(x.asInstanceOf[js.Any])
+inline def IdSpace: typings.webix.mod.IdSpace = ^.asInstanceOf[js.Dynamic].selectDynamic("IdSpace").asInstanceOf[typings.webix.mod.IdSpace]
+inline def IdSpace_=(x: typings.webix.mod.IdSpace): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IdSpace")(x.asInstanceOf[js.Any])
 
-inline def KanbanView: typings.webix.mod.KanbanView & typings.webix.webix.KanbanView = ^.asInstanceOf[js.Dynamic].selectDynamic("KanbanView").asInstanceOf[typings.webix.mod.KanbanView & typings.webix.webix.KanbanView]
-inline def KanbanView_=(x: typings.webix.mod.KanbanView & typings.webix.webix.KanbanView): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KanbanView")(x.asInstanceOf[js.Any])
+inline def KanbanView: typings.webix.mod.KanbanView = ^.asInstanceOf[js.Dynamic].selectDynamic("KanbanView").asInstanceOf[typings.webix.mod.KanbanView]
+inline def KanbanView_=(x: typings.webix.mod.KanbanView): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KanbanView")(x.asInstanceOf[js.Any])
 
-inline def KeysNavigation: typings.webix.mod.KeysNavigation & typings.webix.webix.KeysNavigation = ^.asInstanceOf[js.Dynamic].selectDynamic("KeysNavigation").asInstanceOf[typings.webix.mod.KeysNavigation & typings.webix.webix.KeysNavigation]
-inline def KeysNavigation_=(x: typings.webix.mod.KeysNavigation & typings.webix.webix.KeysNavigation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KeysNavigation")(x.asInstanceOf[js.Any])
+inline def KeysNavigation: typings.webix.mod.KeysNavigation = ^.asInstanceOf[js.Dynamic].selectDynamic("KeysNavigation").asInstanceOf[typings.webix.mod.KeysNavigation]
+inline def KeysNavigation_=(x: typings.webix.mod.KeysNavigation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KeysNavigation")(x.asInstanceOf[js.Any])
 
-inline def MapCollection: typings.webix.mod.MapCollection & typings.webix.webix.MapCollection = ^.asInstanceOf[js.Dynamic].selectDynamic("MapCollection").asInstanceOf[typings.webix.mod.MapCollection & typings.webix.webix.MapCollection]
-inline def MapCollection_=(x: typings.webix.mod.MapCollection & typings.webix.webix.MapCollection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MapCollection")(x.asInstanceOf[js.Any])
+inline def MapCollection: typings.webix.mod.MapCollection = ^.asInstanceOf[js.Dynamic].selectDynamic("MapCollection").asInstanceOf[typings.webix.mod.MapCollection]
+inline def MapCollection_=(x: typings.webix.mod.MapCollection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MapCollection")(x.asInstanceOf[js.Any])
 
-inline def Modality: typings.webix.mod.Modality & typings.webix.webix.Modality = ^.asInstanceOf[js.Dynamic].selectDynamic("Modality").asInstanceOf[typings.webix.mod.Modality & typings.webix.webix.Modality]
-inline def Modality_=(x: typings.webix.mod.Modality & typings.webix.webix.Modality): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Modality")(x.asInstanceOf[js.Any])
+inline def Modality: typings.webix.mod.Modality = ^.asInstanceOf[js.Dynamic].selectDynamic("Modality").asInstanceOf[typings.webix.mod.Modality]
+inline def Modality_=(x: typings.webix.mod.Modality): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Modality")(x.asInstanceOf[js.Any])
 
-inline def MouseEvents: typings.webix.mod.MouseEvents & typings.webix.webix.MouseEvents = ^.asInstanceOf[js.Dynamic].selectDynamic("MouseEvents").asInstanceOf[typings.webix.mod.MouseEvents & typings.webix.webix.MouseEvents]
-inline def MouseEvents_=(x: typings.webix.mod.MouseEvents & typings.webix.webix.MouseEvents): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MouseEvents")(x.asInstanceOf[js.Any])
+inline def MouseEvents: typings.webix.mod.MouseEvents = ^.asInstanceOf[js.Dynamic].selectDynamic("MouseEvents").asInstanceOf[typings.webix.mod.MouseEvents]
+inline def MouseEvents_=(x: typings.webix.mod.MouseEvents): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MouseEvents")(x.asInstanceOf[js.Any])
 
-inline def Movable: typings.webix.mod.Movable & typings.webix.webix.Movable = ^.asInstanceOf[js.Dynamic].selectDynamic("Movable").asInstanceOf[typings.webix.mod.Movable & typings.webix.webix.Movable]
-inline def Movable_=(x: typings.webix.mod.Movable & typings.webix.webix.Movable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Movable")(x.asInstanceOf[js.Any])
+inline def Movable: typings.webix.mod.Movable = ^.asInstanceOf[js.Dynamic].selectDynamic("Movable").asInstanceOf[typings.webix.mod.Movable]
+inline def Movable_=(x: typings.webix.mod.Movable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Movable")(x.asInstanceOf[js.Any])
 
-inline def NavigationButtons: typings.webix.mod.NavigationButtons & typings.webix.webix.NavigationButtons = ^.asInstanceOf[js.Dynamic].selectDynamic("NavigationButtons").asInstanceOf[typings.webix.mod.NavigationButtons & typings.webix.webix.NavigationButtons]
-inline def NavigationButtons_=(x: typings.webix.mod.NavigationButtons & typings.webix.webix.NavigationButtons): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NavigationButtons")(x.asInstanceOf[js.Any])
+inline def NavigationButtons: typings.webix.mod.NavigationButtons = ^.asInstanceOf[js.Dynamic].selectDynamic("NavigationButtons").asInstanceOf[typings.webix.mod.NavigationButtons]
+inline def NavigationButtons_=(x: typings.webix.mod.NavigationButtons): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NavigationButtons")(x.asInstanceOf[js.Any])
 
-inline def Number: typings.webix.mod.Number & typings.webix.webix.Number = ^.asInstanceOf[js.Dynamic].selectDynamic("Number").asInstanceOf[typings.webix.mod.Number & typings.webix.webix.Number]
-inline def Number_=(x: typings.webix.mod.Number & typings.webix.webix.Number): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Number")(x.asInstanceOf[js.Any])
+inline def Number: typings.webix.mod.Number = ^.asInstanceOf[js.Dynamic].selectDynamic("Number").asInstanceOf[typings.webix.mod.Number]
+inline def Number_=(x: typings.webix.mod.Number): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Number")(x.asInstanceOf[js.Any])
 
-inline def OverlayBox: typings.webix.mod.OverlayBox & typings.webix.webix.OverlayBox = ^.asInstanceOf[js.Dynamic].selectDynamic("OverlayBox").asInstanceOf[typings.webix.mod.OverlayBox & typings.webix.webix.OverlayBox]
-inline def OverlayBox_=(x: typings.webix.mod.OverlayBox & typings.webix.webix.OverlayBox): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OverlayBox")(x.asInstanceOf[js.Any])
+inline def OverlayBox: typings.webix.mod.OverlayBox = ^.asInstanceOf[js.Dynamic].selectDynamic("OverlayBox").asInstanceOf[typings.webix.mod.OverlayBox]
+inline def OverlayBox_=(x: typings.webix.mod.OverlayBox): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OverlayBox")(x.asInstanceOf[js.Any])
 
-inline def PagingAbility: typings.webix.mod.PagingAbility & typings.webix.webix.PagingAbility = ^.asInstanceOf[js.Dynamic].selectDynamic("PagingAbility").asInstanceOf[typings.webix.mod.PagingAbility & typings.webix.webix.PagingAbility]
-inline def PagingAbility_=(x: typings.webix.mod.PagingAbility & typings.webix.webix.PagingAbility): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PagingAbility")(x.asInstanceOf[js.Any])
+inline def PagingAbility: typings.webix.mod.PagingAbility = ^.asInstanceOf[js.Dynamic].selectDynamic("PagingAbility").asInstanceOf[typings.webix.mod.PagingAbility]
+inline def PagingAbility_=(x: typings.webix.mod.PagingAbility): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PagingAbility")(x.asInstanceOf[js.Any])
 
-inline def ProgressBar: typings.webix.mod.ProgressBar & typings.webix.webix.ProgressBar = ^.asInstanceOf[js.Dynamic].selectDynamic("ProgressBar").asInstanceOf[typings.webix.mod.ProgressBar & typings.webix.webix.ProgressBar]
-inline def ProgressBar_=(x: typings.webix.mod.ProgressBar & typings.webix.webix.ProgressBar): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProgressBar")(x.asInstanceOf[js.Any])
+inline def ProgressBar: typings.webix.mod.ProgressBar = ^.asInstanceOf[js.Dynamic].selectDynamic("ProgressBar").asInstanceOf[typings.webix.mod.ProgressBar]
+inline def ProgressBar_=(x: typings.webix.mod.ProgressBar): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProgressBar")(x.asInstanceOf[js.Any])
 
-inline def RecordBind: typings.webix.mod.RecordBind & typings.webix.webix.RecordBind = ^.asInstanceOf[js.Dynamic].selectDynamic("RecordBind").asInstanceOf[typings.webix.mod.RecordBind & typings.webix.webix.RecordBind]
-inline def RecordBind_=(x: typings.webix.mod.RecordBind & typings.webix.webix.RecordBind): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RecordBind")(x.asInstanceOf[js.Any])
+inline def RecordBind: typings.webix.mod.RecordBind = ^.asInstanceOf[js.Dynamic].selectDynamic("RecordBind").asInstanceOf[typings.webix.mod.RecordBind]
+inline def RecordBind_=(x: typings.webix.mod.RecordBind): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RecordBind")(x.asInstanceOf[js.Any])
 
-inline def RenderStack: typings.webix.mod.RenderStack & typings.webix.webix.RenderStack = ^.asInstanceOf[js.Dynamic].selectDynamic("RenderStack").asInstanceOf[typings.webix.mod.RenderStack & typings.webix.webix.RenderStack]
-inline def RenderStack_=(x: typings.webix.mod.RenderStack & typings.webix.webix.RenderStack): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RenderStack")(x.asInstanceOf[js.Any])
+inline def RenderStack: typings.webix.mod.RenderStack = ^.asInstanceOf[js.Dynamic].selectDynamic("RenderStack").asInstanceOf[typings.webix.mod.RenderStack]
+inline def RenderStack_=(x: typings.webix.mod.RenderStack): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RenderStack")(x.asInstanceOf[js.Any])
 
-inline def ResizeArea: typings.webix.mod.ResizeArea & typings.webix.webix.ResizeArea = ^.asInstanceOf[js.Dynamic].selectDynamic("ResizeArea").asInstanceOf[typings.webix.mod.ResizeArea & typings.webix.webix.ResizeArea]
-inline def ResizeArea_=(x: typings.webix.mod.ResizeArea & typings.webix.webix.ResizeArea): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ResizeArea")(x.asInstanceOf[js.Any])
+inline def ResizeArea: typings.webix.mod.ResizeArea = ^.asInstanceOf[js.Dynamic].selectDynamic("ResizeArea").asInstanceOf[typings.webix.mod.ResizeArea]
+inline def ResizeArea_=(x: typings.webix.mod.ResizeArea): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ResizeArea")(x.asInstanceOf[js.Any])
 
-inline def Scrollable: typings.webix.mod.Scrollable & typings.webix.webix.Scrollable = ^.asInstanceOf[js.Dynamic].selectDynamic("Scrollable").asInstanceOf[typings.webix.mod.Scrollable & typings.webix.webix.Scrollable]
-inline def Scrollable_=(x: typings.webix.mod.Scrollable & typings.webix.webix.Scrollable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Scrollable")(x.asInstanceOf[js.Any])
+inline def Scrollable: typings.webix.mod.Scrollable = ^.asInstanceOf[js.Dynamic].selectDynamic("Scrollable").asInstanceOf[typings.webix.mod.Scrollable]
+inline def Scrollable_=(x: typings.webix.mod.Scrollable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Scrollable")(x.asInstanceOf[js.Any])
 
-inline def SelectionModel: typings.webix.mod.SelectionModel & typings.webix.webix.SelectionModel = ^.asInstanceOf[js.Dynamic].selectDynamic("SelectionModel").asInstanceOf[typings.webix.mod.SelectionModel & typings.webix.webix.SelectionModel]
-inline def SelectionModel_=(x: typings.webix.mod.SelectionModel & typings.webix.webix.SelectionModel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SelectionModel")(x.asInstanceOf[js.Any])
+inline def SelectionModel: typings.webix.mod.SelectionModel = ^.asInstanceOf[js.Dynamic].selectDynamic("SelectionModel").asInstanceOf[typings.webix.mod.SelectionModel]
+inline def SelectionModel_=(x: typings.webix.mod.SelectionModel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SelectionModel")(x.asInstanceOf[js.Any])
 
-inline def Settings: typings.webix.mod.Settings & typings.webix.webix.Settings = ^.asInstanceOf[js.Dynamic].selectDynamic("Settings").asInstanceOf[typings.webix.mod.Settings & typings.webix.webix.Settings]
-inline def Settings_=(x: typings.webix.mod.Settings & typings.webix.webix.Settings): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Settings")(x.asInstanceOf[js.Any])
+inline def Settings: typings.webix.mod.Settings = ^.asInstanceOf[js.Dynamic].selectDynamic("Settings").asInstanceOf[typings.webix.mod.Settings]
+inline def Settings_=(x: typings.webix.mod.Settings): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Settings")(x.asInstanceOf[js.Any])
 
-inline def SingleRender: typings.webix.mod.SingleRender & typings.webix.webix.SingleRender = ^.asInstanceOf[js.Dynamic].selectDynamic("SingleRender").asInstanceOf[typings.webix.mod.SingleRender & typings.webix.webix.SingleRender]
-inline def SingleRender_=(x: typings.webix.mod.SingleRender & typings.webix.webix.SingleRender): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SingleRender")(x.asInstanceOf[js.Any])
+inline def SingleRender: typings.webix.mod.SingleRender = ^.asInstanceOf[js.Dynamic].selectDynamic("SingleRender").asInstanceOf[typings.webix.mod.SingleRender]
+inline def SingleRender_=(x: typings.webix.mod.SingleRender): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SingleRender")(x.asInstanceOf[js.Any])
 
-inline def Sparklines: typings.webix.mod.Sparklines & typings.webix.webix.Sparklines = ^.asInstanceOf[js.Dynamic].selectDynamic("Sparklines").asInstanceOf[typings.webix.mod.Sparklines & typings.webix.webix.Sparklines]
-inline def Sparklines_=(x: typings.webix.mod.Sparklines & typings.webix.webix.Sparklines): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Sparklines")(x.asInstanceOf[js.Any])
+inline def Sparklines: typings.webix.mod.Sparklines = ^.asInstanceOf[js.Dynamic].selectDynamic("Sparklines").asInstanceOf[typings.webix.mod.Sparklines]
+inline def Sparklines_=(x: typings.webix.mod.Sparklines): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Sparklines")(x.asInstanceOf[js.Any])
 
-inline def TablePaste: typings.webix.mod.TablePaste & typings.webix.webix.TablePaste = ^.asInstanceOf[js.Dynamic].selectDynamic("TablePaste").asInstanceOf[typings.webix.mod.TablePaste & typings.webix.webix.TablePaste]
-inline def TablePaste_=(x: typings.webix.mod.TablePaste & typings.webix.webix.TablePaste): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TablePaste")(x.asInstanceOf[js.Any])
+inline def TablePaste: typings.webix.mod.TablePaste = ^.asInstanceOf[js.Dynamic].selectDynamic("TablePaste").asInstanceOf[typings.webix.mod.TablePaste]
+inline def TablePaste_=(x: typings.webix.mod.TablePaste): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TablePaste")(x.asInstanceOf[js.Any])
 
-inline def TooltipControl: typings.webix.mod.TooltipControl & typings.webix.webix.TooltipControl = ^.asInstanceOf[js.Dynamic].selectDynamic("TooltipControl").asInstanceOf[typings.webix.mod.TooltipControl & typings.webix.webix.TooltipControl]
-inline def TooltipControl_=(x: typings.webix.mod.TooltipControl & typings.webix.webix.TooltipControl): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TooltipControl")(x.asInstanceOf[js.Any])
+inline def TooltipControl: typings.webix.mod.TooltipControl = ^.asInstanceOf[js.Dynamic].selectDynamic("TooltipControl").asInstanceOf[typings.webix.mod.TooltipControl]
+inline def TooltipControl_=(x: typings.webix.mod.TooltipControl): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TooltipControl")(x.asInstanceOf[js.Any])
 
-inline def Touch: typings.webix.mod.Touch & typings.webix.webix.Touch = ^.asInstanceOf[js.Dynamic].selectDynamic("Touch").asInstanceOf[typings.webix.mod.Touch & typings.webix.webix.Touch]
-inline def Touch_=(x: typings.webix.mod.Touch & typings.webix.webix.Touch): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Touch")(x.asInstanceOf[js.Any])
+inline def Touch: typings.webix.mod.Touch = ^.asInstanceOf[js.Dynamic].selectDynamic("Touch").asInstanceOf[typings.webix.mod.Touch]
+inline def Touch_=(x: typings.webix.mod.Touch): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Touch")(x.asInstanceOf[js.Any])
 
-inline def TreeAPI: typings.webix.mod.TreeAPI & typings.webix.webix.TreeAPI = ^.asInstanceOf[js.Dynamic].selectDynamic("TreeAPI").asInstanceOf[typings.webix.mod.TreeAPI & typings.webix.webix.TreeAPI]
-inline def TreeAPI_=(x: typings.webix.mod.TreeAPI & typings.webix.webix.TreeAPI): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TreeAPI")(x.asInstanceOf[js.Any])
+inline def TreeAPI: typings.webix.mod.TreeAPI = ^.asInstanceOf[js.Dynamic].selectDynamic("TreeAPI").asInstanceOf[typings.webix.mod.TreeAPI]
+inline def TreeAPI_=(x: typings.webix.mod.TreeAPI): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TreeAPI")(x.asInstanceOf[js.Any])
 
-inline def TreeClick: typings.webix.mod.TreeClick & typings.webix.webix.TreeClick = ^.asInstanceOf[js.Dynamic].selectDynamic("TreeClick").asInstanceOf[typings.webix.mod.TreeClick & typings.webix.webix.TreeClick]
-inline def TreeClick_=(x: typings.webix.mod.TreeClick & typings.webix.webix.TreeClick): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TreeClick")(x.asInstanceOf[js.Any])
+inline def TreeClick: typings.webix.mod.TreeClick = ^.asInstanceOf[js.Dynamic].selectDynamic("TreeClick").asInstanceOf[typings.webix.mod.TreeClick]
+inline def TreeClick_=(x: typings.webix.mod.TreeClick): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TreeClick")(x.asInstanceOf[js.Any])
 
-inline def TreeCollection: TreeCollectionFactory & typings.webix.webix.TreeCollectionFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("TreeCollection").asInstanceOf[TreeCollectionFactory & typings.webix.webix.TreeCollectionFactory]
-inline def TreeCollection_=(x: TreeCollectionFactory & typings.webix.webix.TreeCollectionFactory): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TreeCollection")(x.asInstanceOf[js.Any])
+inline def TreeCollection: TreeCollectionFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("TreeCollection").asInstanceOf[TreeCollectionFactory]
+inline def TreeCollection_=(x: TreeCollectionFactory): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TreeCollection")(x.asInstanceOf[js.Any])
 
-inline def TreeDataLoader: typings.webix.mod.TreeDataLoader & typings.webix.webix.TreeDataLoader = ^.asInstanceOf[js.Dynamic].selectDynamic("TreeDataLoader").asInstanceOf[typings.webix.mod.TreeDataLoader & typings.webix.webix.TreeDataLoader]
-inline def TreeDataLoader_=(x: typings.webix.mod.TreeDataLoader & typings.webix.webix.TreeDataLoader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TreeDataLoader")(x.asInstanceOf[js.Any])
+inline def TreeDataLoader: typings.webix.mod.TreeDataLoader = ^.asInstanceOf[js.Dynamic].selectDynamic("TreeDataLoader").asInstanceOf[typings.webix.mod.TreeDataLoader]
+inline def TreeDataLoader_=(x: typings.webix.mod.TreeDataLoader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TreeDataLoader")(x.asInstanceOf[js.Any])
 
-inline def TreeDataMove: typings.webix.mod.TreeDataMove & typings.webix.webix.TreeDataMove = ^.asInstanceOf[js.Dynamic].selectDynamic("TreeDataMove").asInstanceOf[typings.webix.mod.TreeDataMove & typings.webix.webix.TreeDataMove]
-inline def TreeDataMove_=(x: typings.webix.mod.TreeDataMove & typings.webix.webix.TreeDataMove): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TreeDataMove")(x.asInstanceOf[js.Any])
+inline def TreeDataMove: typings.webix.mod.TreeDataMove = ^.asInstanceOf[js.Dynamic].selectDynamic("TreeDataMove").asInstanceOf[typings.webix.mod.TreeDataMove]
+inline def TreeDataMove_=(x: typings.webix.mod.TreeDataMove): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TreeDataMove")(x.asInstanceOf[js.Any])
 
-inline def TreeRenderStack: typings.webix.mod.TreeRenderStack & typings.webix.webix.TreeRenderStack = ^.asInstanceOf[js.Dynamic].selectDynamic("TreeRenderStack").asInstanceOf[typings.webix.mod.TreeRenderStack & typings.webix.webix.TreeRenderStack]
-inline def TreeRenderStack_=(x: typings.webix.mod.TreeRenderStack & typings.webix.webix.TreeRenderStack): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TreeRenderStack")(x.asInstanceOf[js.Any])
+inline def TreeRenderStack: typings.webix.mod.TreeRenderStack = ^.asInstanceOf[js.Dynamic].selectDynamic("TreeRenderStack").asInstanceOf[typings.webix.mod.TreeRenderStack]
+inline def TreeRenderStack_=(x: typings.webix.mod.TreeRenderStack): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TreeRenderStack")(x.asInstanceOf[js.Any])
 
-inline def TreeStateCheckbox: typings.webix.mod.TreeStateCheckbox & typings.webix.webix.TreeStateCheckbox = ^.asInstanceOf[js.Dynamic].selectDynamic("TreeStateCheckbox").asInstanceOf[typings.webix.mod.TreeStateCheckbox & typings.webix.webix.TreeStateCheckbox]
-inline def TreeStateCheckbox_=(x: typings.webix.mod.TreeStateCheckbox & typings.webix.webix.TreeStateCheckbox): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TreeStateCheckbox")(x.asInstanceOf[js.Any])
+inline def TreeStateCheckbox: typings.webix.mod.TreeStateCheckbox = ^.asInstanceOf[js.Dynamic].selectDynamic("TreeStateCheckbox").asInstanceOf[typings.webix.mod.TreeStateCheckbox]
+inline def TreeStateCheckbox_=(x: typings.webix.mod.TreeStateCheckbox): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TreeStateCheckbox")(x.asInstanceOf[js.Any])
 
-inline def TreeStore: typings.webix.mod.TreeStore & typings.webix.webix.TreeStore = ^.asInstanceOf[js.Dynamic].selectDynamic("TreeStore").asInstanceOf[typings.webix.mod.TreeStore & typings.webix.webix.TreeStore]
-inline def TreeStore_=(x: typings.webix.mod.TreeStore & typings.webix.webix.TreeStore): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TreeStore")(x.asInstanceOf[js.Any])
+inline def TreeStore: typings.webix.mod.TreeStore = ^.asInstanceOf[js.Dynamic].selectDynamic("TreeStore").asInstanceOf[typings.webix.mod.TreeStore]
+inline def TreeStore_=(x: typings.webix.mod.TreeStore): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TreeStore")(x.asInstanceOf[js.Any])
 
-inline def TreeTablePaste: typings.webix.mod.TreeTablePaste & typings.webix.webix.TreeTablePaste = ^.asInstanceOf[js.Dynamic].selectDynamic("TreeTablePaste").asInstanceOf[typings.webix.mod.TreeTablePaste & typings.webix.webix.TreeTablePaste]
-inline def TreeTablePaste_=(x: typings.webix.mod.TreeTablePaste & typings.webix.webix.TreeTablePaste): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TreeTablePaste")(x.asInstanceOf[js.Any])
+inline def TreeTablePaste: typings.webix.mod.TreeTablePaste = ^.asInstanceOf[js.Dynamic].selectDynamic("TreeTablePaste").asInstanceOf[typings.webix.mod.TreeTablePaste]
+inline def TreeTablePaste_=(x: typings.webix.mod.TreeTablePaste): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TreeTablePaste")(x.asInstanceOf[js.Any])
 
-inline def TreeType: typings.webix.mod.TreeType & typings.webix.webix.TreeType = ^.asInstanceOf[js.Dynamic].selectDynamic("TreeType").asInstanceOf[typings.webix.mod.TreeType & typings.webix.webix.TreeType]
-inline def TreeType_=(x: typings.webix.mod.TreeType & typings.webix.webix.TreeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TreeType")(x.asInstanceOf[js.Any])
+inline def TreeType: typings.webix.mod.TreeType = ^.asInstanceOf[js.Dynamic].selectDynamic("TreeType").asInstanceOf[typings.webix.mod.TreeType]
+inline def TreeType_=(x: typings.webix.mod.TreeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TreeType")(x.asInstanceOf[js.Any])
 
-inline def UIManager: typings.webix.mod.UIManager & typings.webix.webix.UIManager = ^.asInstanceOf[js.Dynamic].selectDynamic("UIManager").asInstanceOf[typings.webix.mod.UIManager & typings.webix.webix.UIManager]
-inline def UIManager_=(x: typings.webix.mod.UIManager & typings.webix.webix.UIManager): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UIManager")(x.asInstanceOf[js.Any])
+inline def UIManager: typings.webix.mod.UIManager = ^.asInstanceOf[js.Dynamic].selectDynamic("UIManager").asInstanceOf[typings.webix.mod.UIManager]
+inline def UIManager_=(x: typings.webix.mod.UIManager): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UIManager")(x.asInstanceOf[js.Any])
 
-inline def Undo: typings.webix.mod.Undo & typings.webix.webix.Undo = ^.asInstanceOf[js.Dynamic].selectDynamic("Undo").asInstanceOf[typings.webix.mod.Undo & typings.webix.webix.Undo]
-inline def Undo_=(x: typings.webix.mod.Undo & typings.webix.webix.Undo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Undo")(x.asInstanceOf[js.Any])
+inline def Undo: typings.webix.mod.Undo = ^.asInstanceOf[js.Dynamic].selectDynamic("Undo").asInstanceOf[typings.webix.mod.Undo]
+inline def Undo_=(x: typings.webix.mod.Undo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Undo")(x.asInstanceOf[js.Any])
 
-inline def UploadDriver: typings.webix.mod.UploadDriver & typings.webix.webix.UploadDriver = ^.asInstanceOf[js.Dynamic].selectDynamic("UploadDriver").asInstanceOf[typings.webix.mod.UploadDriver & typings.webix.webix.UploadDriver]
-inline def UploadDriver_=(x: typings.webix.mod.UploadDriver & typings.webix.webix.UploadDriver): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UploadDriver")(x.asInstanceOf[js.Any])
+inline def UploadDriver: typings.webix.mod.UploadDriver = ^.asInstanceOf[js.Dynamic].selectDynamic("UploadDriver").asInstanceOf[typings.webix.mod.UploadDriver]
+inline def UploadDriver_=(x: typings.webix.mod.UploadDriver): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UploadDriver")(x.asInstanceOf[js.Any])
 
-inline def VRenderStack: typings.webix.mod.VRenderStack & typings.webix.webix.VRenderStack = ^.asInstanceOf[js.Dynamic].selectDynamic("VRenderStack").asInstanceOf[typings.webix.mod.VRenderStack & typings.webix.webix.VRenderStack]
-inline def VRenderStack_=(x: typings.webix.mod.VRenderStack & typings.webix.webix.VRenderStack): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VRenderStack")(x.asInstanceOf[js.Any])
+inline def VRenderStack: typings.webix.mod.VRenderStack = ^.asInstanceOf[js.Dynamic].selectDynamic("VRenderStack").asInstanceOf[typings.webix.mod.VRenderStack]
+inline def VRenderStack_=(x: typings.webix.mod.VRenderStack): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VRenderStack")(x.asInstanceOf[js.Any])
 
-inline def ValidateCollection: typings.webix.mod.ValidateCollection & typings.webix.webix.ValidateCollection = ^.asInstanceOf[js.Dynamic].selectDynamic("ValidateCollection").asInstanceOf[typings.webix.mod.ValidateCollection & typings.webix.webix.ValidateCollection]
-inline def ValidateCollection_=(x: typings.webix.mod.ValidateCollection & typings.webix.webix.ValidateCollection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ValidateCollection")(x.asInstanceOf[js.Any])
+inline def ValidateCollection: typings.webix.mod.ValidateCollection = ^.asInstanceOf[js.Dynamic].selectDynamic("ValidateCollection").asInstanceOf[typings.webix.mod.ValidateCollection]
+inline def ValidateCollection_=(x: typings.webix.mod.ValidateCollection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ValidateCollection")(x.asInstanceOf[js.Any])
 
-inline def ValidateData: typings.webix.mod.ValidateData & typings.webix.webix.ValidateData = ^.asInstanceOf[js.Dynamic].selectDynamic("ValidateData").asInstanceOf[typings.webix.mod.ValidateData & typings.webix.webix.ValidateData]
-inline def ValidateData_=(x: typings.webix.mod.ValidateData & typings.webix.webix.ValidateData): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ValidateData")(x.asInstanceOf[js.Any])
+inline def ValidateData: typings.webix.mod.ValidateData = ^.asInstanceOf[js.Dynamic].selectDynamic("ValidateData").asInstanceOf[typings.webix.mod.ValidateData]
+inline def ValidateData_=(x: typings.webix.mod.ValidateData): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ValidateData")(x.asInstanceOf[js.Any])
 
-inline def ValueBind: typings.webix.mod.ValueBind & typings.webix.webix.ValueBind = ^.asInstanceOf[js.Dynamic].selectDynamic("ValueBind").asInstanceOf[typings.webix.mod.ValueBind & typings.webix.webix.ValueBind]
-inline def ValueBind_=(x: typings.webix.mod.ValueBind & typings.webix.webix.ValueBind): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ValueBind")(x.asInstanceOf[js.Any])
+inline def ValueBind: typings.webix.mod.ValueBind = ^.asInstanceOf[js.Dynamic].selectDynamic("ValueBind").asInstanceOf[typings.webix.mod.ValueBind]
+inline def ValueBind_=(x: typings.webix.mod.ValueBind): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ValueBind")(x.asInstanceOf[js.Any])
 
-inline def Values: typings.webix.mod.Values & typings.webix.webix.Values = ^.asInstanceOf[js.Dynamic].selectDynamic("Values").asInstanceOf[typings.webix.mod.Values & typings.webix.webix.Values]
-inline def Values_=(x: typings.webix.mod.Values & typings.webix.webix.Values): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Values")(x.asInstanceOf[js.Any])
+inline def Values: typings.webix.mod.Values = ^.asInstanceOf[js.Dynamic].selectDynamic("Values").asInstanceOf[typings.webix.mod.Values]
+inline def Values_=(x: typings.webix.mod.Values): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Values")(x.asInstanceOf[js.Any])
 
-inline def VirtualRenderStack: typings.webix.mod.VirtualRenderStack & typings.webix.webix.VirtualRenderStack = ^.asInstanceOf[js.Dynamic].selectDynamic("VirtualRenderStack").asInstanceOf[typings.webix.mod.VirtualRenderStack & typings.webix.webix.VirtualRenderStack]
-inline def VirtualRenderStack_=(x: typings.webix.mod.VirtualRenderStack & typings.webix.webix.VirtualRenderStack): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VirtualRenderStack")(x.asInstanceOf[js.Any])
+inline def VirtualRenderStack: typings.webix.mod.VirtualRenderStack = ^.asInstanceOf[js.Dynamic].selectDynamic("VirtualRenderStack").asInstanceOf[typings.webix.mod.VirtualRenderStack]
+inline def VirtualRenderStack_=(x: typings.webix.mod.VirtualRenderStack): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VirtualRenderStack")(x.asInstanceOf[js.Any])
 
 inline def _empty(id: String): baseview = ^.asInstanceOf[js.Dynamic].applyDynamic("$$")(id.asInstanceOf[js.Any]).asInstanceOf[baseview]
 inline def _empty(id: Event): baseview = ^.asInstanceOf[js.Dynamic].applyDynamic("$$")(id.asInstanceOf[js.Any]).asInstanceOf[baseview]

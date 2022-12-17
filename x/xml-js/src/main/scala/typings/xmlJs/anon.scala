@@ -9,7 +9,7 @@ object anon {
   
   trait `0` extends StObject {
     
-    var _attributes: js.UndefOr[DeclarationAttributes] = js.undefined
+    var attributes: js.UndefOr[DeclarationAttributes] = js.undefined
   }
   object `0` {
     
@@ -20,15 +20,15 @@ object anon {
     
     extension [Self <: `0`](x: Self) {
       
-      inline def set_attributes(value: DeclarationAttributes): Self = StObject.set(x, "_attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: DeclarationAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      inline def set_attributesUndefined: Self = StObject.set(x, "_attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     }
   }
   
   trait Attributes extends StObject {
     
-    var attributes: js.UndefOr[DeclarationAttributes] = js.undefined
+    var _attributes: js.UndefOr[DeclarationAttributes] = js.undefined
   }
   object Attributes {
     
@@ -39,9 +39,9 @@ object anon {
     
     extension [Self <: Attributes](x: Self) {
       
-      inline def setAttributes(value: DeclarationAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def set_attributes(value: DeclarationAttributes): Self = StObject.set(x, "_attributes", value.asInstanceOf[js.Any])
       
-      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def set_attributesUndefined: Self = StObject.set(x, "_attributes", js.undefined)
     }
   }
 }

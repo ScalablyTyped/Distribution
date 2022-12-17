@@ -12,13 +12,13 @@ trait PickImpltotalPartialPickIPercent
   
   var percent: js.UndefOr[String] = js.undefined
   
-  var total: String & js.UndefOr[String]
+  var total: String
   
   var value: js.UndefOr[String] = js.undefined
 }
 object PickImpltotalPartialPickIPercent {
   
-  inline def apply(total: String & js.UndefOr[String]): PickImpltotalPartialPickIPercent = {
+  inline def apply(total: String): PickImpltotalPartialPickIPercent = {
     val __obj = js.Dynamic.literal(total = total.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpltotalPartialPickIPercent]
   }
@@ -29,7 +29,7 @@ object PickImpltotalPartialPickIPercent {
     
     inline def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
     
-    inline def setTotal(value: String & js.UndefOr[String]): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: String): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

@@ -2,7 +2,6 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.bson.mod.Document
-import typings.bson.mod.ObjectId
 import typings.mongodb.anon.Id
 import typings.mongodb.anon.IdInferIdType
 import typings.mongodb.anon.Meta
@@ -136,8 +135,6 @@ inline def MONGO_CLIENT_EVENTS: js.Array[Any] = ^.asInstanceOf[js.Dynamic].selec
 
 inline def Map_=(x: MapConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Map")(x.asInstanceOf[js.Any])
 
-inline def ObjectID_ : /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ObjectId */ Any = ^.asInstanceOf[js.Dynamic].selectDynamic("ObjectID").asInstanceOf[/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ObjectId */ Any]
-
 type ServerApiVersion = `1`
 
 /** NOTE: Conditional type definitions are impossible to translate to Scala.
@@ -224,7 +221,7 @@ String | (js.Tuple2[String, IndexDirection]) | StringDictionary[IndexDirection] 
   TSchema extends {  _id :infer IdType} ? std.Record<any, never> extends IdType ? never : IdType : TSchema extends {  _id :infer IdType | undefined} ? unknown extends IdType ? bson.bson.ObjectId : IdType : bson.bson.ObjectId
   }}}
   */
-type InferIdType[TSchema] = ObjectId
+type InferIdType[TSchema] = typings.bson.mod.ObjectId
 
 type IntegerType = scala.Double | typings.bson.mod.Int32 | typings.bson.mod.Long
 

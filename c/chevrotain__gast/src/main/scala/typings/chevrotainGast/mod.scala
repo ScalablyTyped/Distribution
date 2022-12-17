@@ -1,11 +1,11 @@
 package typings.chevrotainGast
 
 import typings.chevrotainGast.anon.Definition
+import typings.chevrotainGast.anon.HasPredicates
 import typings.chevrotainGast.anon.Idx
 import typings.chevrotainGast.anon.IgnoreAmbiguities
 import typings.chevrotainGast.anon.Label
 import typings.chevrotainGast.anon.MaxLookahead
-import typings.chevrotainGast.anon.Name
 import typings.chevrotainGast.anon.Separator
 import typings.chevrotainTypes.mod.IProduction
 import typings.chevrotainTypes.mod.IProductionWithOccurrence
@@ -24,7 +24,7 @@ object mod {
   @js.native
   open class Alternation protected ()
     extends typings.chevrotainGast.libSrcModelMod.Alternation {
-    def this(options: Definition) = this()
+    def this(options: HasPredicates) = this()
   }
   
   @JSImport("@chevrotain/gast", "Alternative")
@@ -43,7 +43,7 @@ object mod {
   @js.native
   open class NonTerminal protected ()
     extends typings.chevrotainGast.libSrcModelMod.NonTerminal {
-    def this(options: Idx) = this()
+    def this(options: Label) = this()
   }
   
   @JSImport("@chevrotain/gast", "Option")
@@ -85,14 +85,14 @@ object mod {
   @js.native
   open class Rule protected ()
     extends typings.chevrotainGast.libSrcModelMod.Rule {
-    def this(options: Name) = this()
+    def this(options: Definition) = this()
   }
   
   @JSImport("@chevrotain/gast", "Terminal")
   @js.native
   open class Terminal protected ()
     extends typings.chevrotainGast.libSrcModelMod.Terminal {
-    def this(options: Label) = this()
+    def this(options: Idx) = this()
   }
   
   inline def getProductionDslName(prod: IProductionWithOccurrence): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getProductionDslName")(prod.asInstanceOf[js.Any]).asInstanceOf[String]

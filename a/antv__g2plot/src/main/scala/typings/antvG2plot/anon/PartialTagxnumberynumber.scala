@@ -37,14 +37,14 @@ trait PartialTagxnumberynumber extends StObject {
   
   var width: js.UndefOr[Double] = js.undefined
   
-  var x: js.UndefOr[Double] & Double
+  var x: js.UndefOr[Double] = js.undefined
   
-  var y: js.UndefOr[Double] & Double
+  var y: js.UndefOr[Double] = js.undefined
 }
 object PartialTagxnumberynumber {
   
-  inline def apply(x: js.UndefOr[Double] & Double, y: js.UndefOr[Double] & Double): PartialTagxnumberynumber = {
-    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+  inline def apply(): PartialTagxnumberynumber = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialTagxnumberynumber]
   }
   
@@ -102,8 +102,12 @@ object PartialTagxnumberynumber {
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    inline def setX(value: js.UndefOr[Double] & Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    inline def setY(value: js.UndefOr[Double] & Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

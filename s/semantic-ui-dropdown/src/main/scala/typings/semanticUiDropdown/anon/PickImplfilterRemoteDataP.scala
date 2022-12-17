@@ -71,7 +71,7 @@ trait PickImplfilterRemoteDataP
   
   var fields: js.UndefOr[FieldsSettings] = js.undefined
   
-  var filterRemoteData: Boolean & js.UndefOr[Boolean]
+  var filterRemoteData: Boolean
   
   var forceSelection: js.UndefOr[Boolean] = js.undefined
   
@@ -169,7 +169,7 @@ trait PickImplfilterRemoteDataP
 }
 object PickImplfilterRemoteDataP {
   
-  inline def apply(filterRemoteData: Boolean & js.UndefOr[Boolean]): PickImplfilterRemoteDataP = {
+  inline def apply(filterRemoteData: Boolean): PickImplfilterRemoteDataP = {
     val __obj = js.Dynamic.literal(filterRemoteData = filterRemoteData.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplfilterRemoteDataP]
   }
@@ -240,7 +240,7 @@ object PickImplfilterRemoteDataP {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFilterRemoteData(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "filterRemoteData", value.asInstanceOf[js.Any])
+    inline def setFilterRemoteData(value: Boolean): Self = StObject.set(x, "filterRemoteData", value.asInstanceOf[js.Any])
     
     inline def setForceSelection(value: Boolean): Self = StObject.set(x, "forceSelection", value.asInstanceOf[js.Any])
     

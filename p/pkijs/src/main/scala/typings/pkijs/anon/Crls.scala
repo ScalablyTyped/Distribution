@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Crls extends StObject {
   
+  var certs: js.UndefOr[String] = js.undefined
+  
   var crls: js.UndefOr[String] = js.undefined
 }
 object Crls {
@@ -16,6 +18,10 @@ object Crls {
   }
   
   extension [Self <: Crls](x: Self) {
+    
+    inline def setCerts(value: String): Self = StObject.set(x, "certs", value.asInstanceOf[js.Any])
+    
+    inline def setCertsUndefined: Self = StObject.set(x, "certs", js.undefined)
     
     inline def setCrls(value: String): Self = StObject.set(x, "crls", value.asInstanceOf[js.Any])
     

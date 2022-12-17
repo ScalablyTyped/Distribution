@@ -2,7 +2,7 @@ package typings.aureliaDependencyInjection.mod
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.aureliaDependencyInjection.anon.Decorates
-import typings.aureliaDependencyInjection.anon.`0`
+import typings.aureliaDependencyInjection.anon.Inject
 import typings.aureliaDependencyInjection.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 
 inline def all[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](keyValue: Any): js.Function3[
-/* target */ (DependencyCtor[TBase, TImpl, TArgs]) & (`0`[TArgs, TBase]), 
+/* target */ (DependencyCtor[TBase, TImpl, TArgs]) & (Inject[TArgs, TBase]), 
 /* _key */ Any, 
 /* index */ Double, 
 Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(keyValue.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
-/* target */ (DependencyCtor[TBase, TImpl, TArgs]) & (`0`[TArgs, TBase]), 
+/* target */ (DependencyCtor[TBase, TImpl, TArgs]) & (Inject[TArgs, TBase]), 
 /* _key */ Any, 
 /* index */ Double, 
 Unit]]
@@ -25,16 +25,16 @@ inline def autoinject[TPotential](potentialTarget: TPotential): /* import warnin
 inline def emptyParameters: js.Array[Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("_emptyParameters").asInstanceOf[js.Array[Any]]
 
 inline def factory[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](keyValue: Any): js.Function3[
-/* target */ (DependencyCtor[TBase, TImpl, TArgs]) & (`0`[TArgs, TBase]), 
+/* target */ (DependencyCtor[TBase, TImpl, TArgs]) & (Inject[TArgs, TBase]), 
 /* _key */ Any, 
 /* index */ Double, 
 Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("factory")(keyValue.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
-/* target */ (DependencyCtor[TBase, TImpl, TArgs]) & (`0`[TArgs, TBase]), 
+/* target */ (DependencyCtor[TBase, TImpl, TArgs]) & (Inject[TArgs, TBase]), 
 /* _key */ Any, 
 /* index */ Double, 
 Unit]]
 
-inline def getDecoratorDependencies[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](target: (DependencyCtor[TBase, TImpl, TArgs]) & (`0`[TArgs, TBase])): js.Array[
+inline def getDecoratorDependencies[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](target: (DependencyCtor[TBase, TImpl, TArgs]) & (Inject[TArgs, TBase])): js.Array[
 /* import warning: importer.ImportType#apply Failed type conversion: TArgs[number] */ js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDecoratorDependencies")(target.asInstanceOf[js.Any]).asInstanceOf[js.Array[
 /* import warning: importer.ImportType#apply Failed type conversion: TArgs[number] */ js.Any]]
 
@@ -48,24 +48,24 @@ inline def invokeAsFactory[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[T
 inline def invoker[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](value: Invoker_[TBase, TImpl, TArgs]): js.Function1[/* target */ DependencyCtor[TBase, TImpl, TArgs], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("invoker")(value.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* target */ DependencyCtor[TBase, TImpl, TArgs], Unit]]
 
 inline def `lazy`[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](keyValue: Any): js.Function3[
-/* target */ (DependencyCtor[TBase, TImpl, TArgs]) & (`0`[TArgs, TBase]), 
+/* target */ (DependencyCtor[TBase, TImpl, TArgs]) & (Inject[TArgs, TBase]), 
 /* _key */ Any, 
 /* index */ Double, 
 Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("lazy")(keyValue.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
-/* target */ (DependencyCtor[TBase, TImpl, TArgs]) & (`0`[TArgs, TBase]), 
+/* target */ (DependencyCtor[TBase, TImpl, TArgs]) & (Inject[TArgs, TBase]), 
 /* _key */ Any, 
 /* index */ Double, 
 Unit]]
 
 inline def newInstance[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](
-  asKeyOrTarget: (PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]) & (`0`[TArgs, TBase]),
+  asKeyOrTarget: (PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]) & (Inject[TArgs, TBase]),
   dynamicDependencies: (/* import warning: importer.ImportType#apply Failed type conversion: TArgs[number] */ js.Any)*
 ): js.Function3[
-/* target */ (DependencyCtor[TBase, TImpl, TArgs]) & (`0`[TArgs, TBase]), 
+/* target */ (DependencyCtor[TBase, TImpl, TArgs]) & (Inject[TArgs, TBase]), 
 /* _key */ Any, 
 /* index */ Double, 
 Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("newInstance")(scala.List(asKeyOrTarget.asInstanceOf[js.Any]).`++`(dynamicDependencies.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function3[
-/* target */ (DependencyCtor[TBase, TImpl, TArgs]) & (`0`[TArgs, TBase]), 
+/* target */ (DependencyCtor[TBase, TImpl, TArgs]) & (Inject[TArgs, TBase]), 
 /* _key */ Any, 
 /* index */ Double, 
 Unit]]
@@ -73,35 +73,35 @@ inline def newInstance[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase
   asKeyOrTarget: Unit,
   dynamicDependencies: (/* import warning: importer.ImportType#apply Failed type conversion: TArgs[number] */ js.Any)*
 ): js.Function3[
-/* target */ (DependencyCtor[TBase, TImpl, TArgs]) & (`0`[TArgs, TBase]), 
+/* target */ (DependencyCtor[TBase, TImpl, TArgs]) & (Inject[TArgs, TBase]), 
 /* _key */ Any, 
 /* index */ Double, 
 Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("newInstance")(scala.List(asKeyOrTarget.asInstanceOf[js.Any]).`++`(dynamicDependencies.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function3[
-/* target */ (DependencyCtor[TBase, TImpl, TArgs]) & (`0`[TArgs, TBase]), 
+/* target */ (DependencyCtor[TBase, TImpl, TArgs]) & (Inject[TArgs, TBase]), 
 /* _key */ Any, 
 /* index */ Double, 
 Unit]]
 
 inline def optional[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](): js.Function3[
-/* target */ (DependencyCtor[TBase, TImpl, TArgs]) & (`0`[TArgs, TBase]), 
+/* target */ (DependencyCtor[TBase, TImpl, TArgs]) & (Inject[TArgs, TBase]), 
 /* _key */ Any, 
 /* index */ Double, 
 Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("optional")().asInstanceOf[js.Function3[
-/* target */ (DependencyCtor[TBase, TImpl, TArgs]) & (`0`[TArgs, TBase]), 
+/* target */ (DependencyCtor[TBase, TImpl, TArgs]) & (Inject[TArgs, TBase]), 
 /* _key */ Any, 
 /* index */ Double, 
 Unit]]
 inline def optional[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](checkParentOrTarget: Boolean): js.Function3[
-/* target */ (DependencyCtor[TBase, TImpl, TArgs]) & (`0`[TArgs, TBase]), 
+/* target */ (DependencyCtor[TBase, TImpl, TArgs]) & (Inject[TArgs, TBase]), 
 /* _key */ Any, 
 /* index */ Double, 
 Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("optional")(checkParentOrTarget.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
-/* target */ (DependencyCtor[TBase, TImpl, TArgs]) & (`0`[TArgs, TBase]), 
+/* target */ (DependencyCtor[TBase, TImpl, TArgs]) & (Inject[TArgs, TBase]), 
 /* _key */ Any, 
 /* index */ Double, 
 Unit]]
 
-inline def parent[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](target: (DependencyCtor[TBase, TImpl, TArgs]) & (`0`[TArgs, TBase]), _key: Any, index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parent")(target.asInstanceOf[js.Any], _key.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def parent[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](target: (DependencyCtor[TBase, TImpl, TArgs]) & (Inject[TArgs, TBase]), _key: Any, index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parent")(target.asInstanceOf[js.Any], _key.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def registration[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](value: Registration_[TBase, TImpl, TArgs]): js.Function1[/* target */ DependencyCtor[TBase, TImpl, TArgs], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("registration")(value.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* target */ DependencyCtor[TBase, TImpl, TArgs], Unit]]
 

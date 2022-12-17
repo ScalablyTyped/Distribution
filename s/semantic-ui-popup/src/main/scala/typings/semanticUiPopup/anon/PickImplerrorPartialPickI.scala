@@ -44,7 +44,7 @@ trait PickImplerrorPartialPickI
   
   var duration: js.UndefOr[Double] = js.undefined
   
-  var error: ErrorSettings & js.UndefOr[ErrorSettings]
+  var error: ErrorSettings
   
   var exclusive: js.UndefOr[Boolean] = js.undefined
   
@@ -120,7 +120,7 @@ trait PickImplerrorPartialPickI
 }
 object PickImplerrorPartialPickI {
   
-  inline def apply(error: ErrorSettings & js.UndefOr[ErrorSettings]): PickImplerrorPartialPickI = {
+  inline def apply(error: ErrorSettings): PickImplerrorPartialPickI = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplerrorPartialPickI]
   }
@@ -167,7 +167,7 @@ object PickImplerrorPartialPickI {
     
     inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    inline def setError(value: ErrorSettings & js.UndefOr[ErrorSettings]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: ErrorSettings): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
     

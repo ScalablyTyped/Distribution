@@ -8,11 +8,11 @@ trait ParametersQueryBeforePage extends StObject {
   
   var parameters: QueryBeforePage
   
-  var responses: `200Content293`
+  var responses: `544`
 }
 object ParametersQueryBeforePage {
   
-  inline def apply(parameters: QueryBeforePage, responses: `200Content293`): ParametersQueryBeforePage = {
+  inline def apply(parameters: QueryBeforePage, responses: `544`): ParametersQueryBeforePage = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersQueryBeforePage]
   }
@@ -21,6 +21,6 @@ object ParametersQueryBeforePage {
     
     inline def setParameters(value: QueryBeforePage): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content293`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `544`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

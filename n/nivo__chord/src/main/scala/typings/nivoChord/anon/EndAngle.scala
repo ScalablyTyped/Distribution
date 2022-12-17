@@ -6,21 +6,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait EndAngle extends StObject {
   
-  var endAngle: Double
+  var arcGenerator: typings.nivoChord.distTypesTypesMod.ArcGenerator
   
-  var startAngle: Double
+  var endAngle: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_web.SpringValue<number> */ Any
+  
+  var startAngle: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_web.SpringValue<number> */ Any
 }
 object EndAngle {
   
-  inline def apply(endAngle: Double, startAngle: Double): EndAngle = {
-    val __obj = js.Dynamic.literal(endAngle = endAngle.asInstanceOf[js.Any], startAngle = startAngle.asInstanceOf[js.Any])
+  inline def apply(
+    arcGenerator: typings.nivoChord.distTypesTypesMod.ArcGenerator,
+    endAngle: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_web.SpringValue<number> */ Any,
+    startAngle: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_web.SpringValue<number> */ Any
+  ): EndAngle = {
+    val __obj = js.Dynamic.literal(arcGenerator = arcGenerator.asInstanceOf[js.Any], endAngle = endAngle.asInstanceOf[js.Any], startAngle = startAngle.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndAngle]
   }
   
   extension [Self <: EndAngle](x: Self) {
     
-    inline def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
+    inline def setArcGenerator(value: typings.nivoChord.distTypesTypesMod.ArcGenerator): Self = StObject.set(x, "arcGenerator", value.asInstanceOf[js.Any])
     
-    inline def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
+    inline def setEndAngle(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_web.SpringValue<number> */ Any
+    ): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
+    
+    inline def setStartAngle(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_web.SpringValue<number> */ Any
+    ): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
   }
 }

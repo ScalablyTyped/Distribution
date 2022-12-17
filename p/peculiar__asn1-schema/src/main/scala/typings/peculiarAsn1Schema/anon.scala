@@ -19,7 +19,7 @@ object anon {
     
     var items: StringDictionary[IAsnSchemaItem]
     
-    var schema: js.UndefOr[AsnSchemaType] & AsnSchemaType
+    var schema: js.UndefOr[AsnSchemaType] = js.undefined
     
     var `type`: AsnTypeTypes
   }
@@ -28,10 +28,9 @@ object anon {
     inline def apply(
       itemType: AsnPropTypes | IEmptyConstructor[Any],
       items: StringDictionary[IAsnSchemaItem],
-      schema: js.UndefOr[AsnSchemaType] & AsnSchemaType,
       `type`: AsnTypeTypes
     ): IAsnSchemaRequiredPickIAs = {
-      val __obj = js.Dynamic.literal(itemType = itemType.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(itemType = itemType.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[IAsnSchemaRequiredPickIAs]
     }
@@ -42,7 +41,9 @@ object anon {
       
       inline def setItems(value: StringDictionary[IAsnSchemaItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setSchema(value: js.UndefOr[AsnSchemaType] & AsnSchemaType): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: AsnSchemaType): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      
+      inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
       
       inline def setType(value: AsnTypeTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

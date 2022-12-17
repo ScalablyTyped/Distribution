@@ -1,9 +1,9 @@
 package typings.parcelTypes.mod
 
 import typings.parcelTypes.anon.AssetAst
-import typings.parcelTypes.anon.AssetConfig
 import typings.parcelTypes.anon.AssetsConfig
 import typings.parcelTypes.anon.Ast
+import typings.parcelTypes.anon.Options
 import typings.parcelTypes.anon.Resolve
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,7 +22,7 @@ trait Transformer[ConfigType] extends StObject {
   ] = js.undefined
   
   /** Parse the contents into an ast */
-  var parse: js.UndefOr[js.Function1[/* arg0 */ Resolve[ConfigType], Async[js.UndefOr[AST | Null]]]] = js.undefined
+  var parse: js.UndefOr[js.Function1[/* arg0 */ Options[ConfigType], Async[js.UndefOr[AST | Null]]]] = js.undefined
   
   /**
     * Do some processing after the transformation
@@ -33,11 +33,11 @@ trait Transformer[ConfigType] extends StObject {
   ] = js.undefined
   
   /** Transform the asset and/or add new assets */
-  def transform(arg0: AssetConfig[ConfigType]): Async[js.Array[TransformerResult | MutableAsset]]
+  def transform(arg0: Resolve[ConfigType]): Async[js.Array[TransformerResult | MutableAsset]]
 }
 object Transformer {
   
-  inline def apply[ConfigType](transform: AssetConfig[ConfigType] => Async[js.Array[TransformerResult | MutableAsset]]): Transformer[ConfigType] = {
+  inline def apply[ConfigType](transform: Resolve[ConfigType] => Async[js.Array[TransformerResult | MutableAsset]]): Transformer[ConfigType] = {
     val __obj = js.Dynamic.literal(transform = js.Any.fromFunction1(transform))
     __obj.asInstanceOf[Transformer[ConfigType]]
   }
@@ -56,7 +56,7 @@ object Transformer {
     
     inline def setLoadConfigUndefined: Self = StObject.set(x, "loadConfig", js.undefined)
     
-    inline def setParse(value: /* arg0 */ Resolve[ConfigType] => Async[js.UndefOr[AST | Null]]): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+    inline def setParse(value: /* arg0 */ Options[ConfigType] => Async[js.UndefOr[AST | Null]]): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     
     inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
     
@@ -64,6 +64,6 @@ object Transformer {
     
     inline def setPostProcessUndefined: Self = StObject.set(x, "postProcess", js.undefined)
     
-    inline def setTransform(value: AssetConfig[ConfigType] => Async[js.Array[TransformerResult | MutableAsset]]): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+    inline def setTransform(value: Resolve[ConfigType] => Async[js.Array[TransformerResult | MutableAsset]]): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
   }
 }

@@ -98,7 +98,7 @@ trait PickPropsiconkeythemekeyo extends StObject {
   
   var isTVSelectable: js.UndefOr[Any] = js.undefined
   
-  var key: js.UndefOr[Any] & (js.UndefOr[typings.react.mod.Key | Null])
+  var key: js.UndefOr[Any] = js.undefined
   
   var keyboardAppearance: js.UndefOr[Any] = js.undefined
   
@@ -282,8 +282,8 @@ trait PickPropsiconkeythemekeyo extends StObject {
 }
 object PickPropsiconkeythemekeyo {
   
-  inline def apply(key: js.UndefOr[Any] & (js.UndefOr[typings.react.mod.Key | Null])): PickPropsiconkeythemekeyo = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+  inline def apply(): PickPropsiconkeythemekeyo = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PickPropsiconkeythemekeyo]
   }
   
@@ -469,7 +469,9 @@ object PickPropsiconkeythemekeyo {
     
     inline def setIsTVSelectableUndefined: Self = StObject.set(x, "isTVSelectable", js.undefined)
     
-    inline def setKey(value: js.UndefOr[Any] & (js.UndefOr[typings.react.mod.Key | Null])): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     inline def setKeyboardAppearance(value: Any): Self = StObject.set(x, "keyboardAppearance", value.asInstanceOf[js.Any])
     

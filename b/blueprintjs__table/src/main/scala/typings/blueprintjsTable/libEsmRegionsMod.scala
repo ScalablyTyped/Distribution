@@ -504,11 +504,8 @@ object libEsmRegionsMod {
   }
   object NonNullRegion {
     
-    inline def apply(
-      cols: NonNullable[js.UndefOr[CellInterval | Null]],
-      rows: NonNullable[js.UndefOr[CellInterval | Null]]
-    ): NonNullRegion = {
-      val __obj = js.Dynamic.literal(cols = cols.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
+    inline def apply(): NonNullRegion = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NonNullRegion]
     }
     
@@ -516,7 +513,15 @@ object libEsmRegionsMod {
       
       inline def setCols(value: NonNullable[js.UndefOr[CellInterval | Null]]): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
       
+      inline def setColsNull: Self = StObject.set(x, "cols", null)
+      
+      inline def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
+      
       inline def setRows(value: NonNullable[js.UndefOr[CellInterval | Null]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      
+      inline def setRowsNull: Self = StObject.set(x, "rows", null)
+      
+      inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     }
   }
   

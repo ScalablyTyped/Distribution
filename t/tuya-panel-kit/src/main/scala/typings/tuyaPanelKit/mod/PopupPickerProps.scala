@@ -2,7 +2,7 @@ package typings.tuyaPanelKit.mod
 
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
-import typings.tuyaPanelKit.anon.`11`
+import typings.tuyaPanelKit.anon.`10`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -71,7 +71,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @description Confirm callback
     * @defaultValue () => {}
     */
-  var onConfirm: js.UndefOr[js.Function3[/* data */ Any, /* idx */ Double, /* args */ `11`, Unit]] = js.undefined
+  var onConfirm: js.UndefOr[js.Function3[/* data */ Any, /* idx */ Double, /* args */ `10`, Unit]] = js.undefined
   
   /**
     * @language zh-CN
@@ -198,7 +198,7 @@ object PopupPickerProps {
     
     inline def setLabelVarargs(value: String*): Self = StObject.set(x, "label", js.Array(value*))
     
-    inline def setOnConfirm(value: (/* data */ Any, /* idx */ Double, /* args */ `11`) => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction3(value))
+    inline def setOnConfirm(value: (/* data */ Any, /* idx */ Double, /* args */ `10`) => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction3(value))
     
     inline def setOnConfirmUndefined: Self = StObject.set(x, "onConfirm", js.undefined)
     

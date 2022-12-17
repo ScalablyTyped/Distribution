@@ -45,27 +45,27 @@ object anon {
   
   trait DeleteManyConcurrency extends StObject {
     
-    var createIfMissing: Boolean & js.UndefOr[Boolean]
+    var createIfMissing: Boolean
     
     var deleteManyConcurrency: Double
     
-    var errorIfExists: Boolean & js.UndefOr[Boolean]
+    var errorIfExists: Boolean
     
-    var `extension`: String & js.UndefOr[String]
+    var `extension`: String
     
     var getManyConcurrency: Double
     
-    var putManyConcurrency: Double & js.UndefOr[Double]
+    var putManyConcurrency: Double
   }
   object DeleteManyConcurrency {
     
     inline def apply(
-      createIfMissing: Boolean & js.UndefOr[Boolean],
+      createIfMissing: Boolean,
       deleteManyConcurrency: Double,
-      errorIfExists: Boolean & js.UndefOr[Boolean],
-      `extension`: String & js.UndefOr[String],
+      errorIfExists: Boolean,
+      `extension`: String,
       getManyConcurrency: Double,
-      putManyConcurrency: Double & js.UndefOr[Double]
+      putManyConcurrency: Double
     ): DeleteManyConcurrency = {
       val __obj = js.Dynamic.literal(createIfMissing = createIfMissing.asInstanceOf[js.Any], deleteManyConcurrency = deleteManyConcurrency.asInstanceOf[js.Any], errorIfExists = errorIfExists.asInstanceOf[js.Any], getManyConcurrency = getManyConcurrency.asInstanceOf[js.Any], putManyConcurrency = putManyConcurrency.asInstanceOf[js.Any])
       __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
@@ -74,17 +74,17 @@ object anon {
     
     extension [Self <: DeleteManyConcurrency](x: Self) {
       
-      inline def setCreateIfMissing(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "createIfMissing", value.asInstanceOf[js.Any])
+      inline def setCreateIfMissing(value: Boolean): Self = StObject.set(x, "createIfMissing", value.asInstanceOf[js.Any])
       
       inline def setDeleteManyConcurrency(value: Double): Self = StObject.set(x, "deleteManyConcurrency", value.asInstanceOf[js.Any])
       
-      inline def setErrorIfExists(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "errorIfExists", value.asInstanceOf[js.Any])
+      inline def setErrorIfExists(value: Boolean): Self = StObject.set(x, "errorIfExists", value.asInstanceOf[js.Any])
       
-      inline def setExtension(value: String & js.UndefOr[String]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+      inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       
       inline def setGetManyConcurrency(value: Double): Self = StObject.set(x, "getManyConcurrency", value.asInstanceOf[js.Any])
       
-      inline def setPutManyConcurrency(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "putManyConcurrency", value.asInstanceOf[js.Any])
+      inline def setPutManyConcurrency(value: Double): Self = StObject.set(x, "putManyConcurrency", value.asInstanceOf[js.Any])
     }
   }
 }

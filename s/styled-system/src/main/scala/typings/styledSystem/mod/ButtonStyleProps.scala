@@ -23,6 +23,6 @@ object ButtonStyleProps {
     
     inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
     
-    inline def setVariantVarargs(value: (String | Null)*): Self = StObject.set(x, "variant", js.Array(value :_*))
+    inline def setVariantVarargs(value: (String | Null)*): Self = StObject.set(x, "variant", js.Array(value*))
   }
 }

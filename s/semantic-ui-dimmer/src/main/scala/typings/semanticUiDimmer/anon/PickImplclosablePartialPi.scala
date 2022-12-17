@@ -22,7 +22,7 @@ trait PickImplclosablePartialPi
   
   var className: js.UndefOr[ClassNameSettings] = js.undefined
   
-  var closable: (auto | Boolean) & (js.UndefOr[auto | Boolean])
+  var closable: auto | Boolean
   
   var debug: js.UndefOr[Boolean] = js.undefined
   
@@ -64,7 +64,7 @@ trait PickImplclosablePartialPi
 }
 object PickImplclosablePartialPi {
   
-  inline def apply(closable: (auto | Boolean) & (js.UndefOr[auto | Boolean])): PickImplclosablePartialPi = {
+  inline def apply(closable: auto | Boolean): PickImplclosablePartialPi = {
     val __obj = js.Dynamic.literal(closable = closable.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplclosablePartialPi]
   }
@@ -75,7 +75,7 @@ object PickImplclosablePartialPi {
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    inline def setClosable(value: (auto | Boolean) & (js.UndefOr[auto | Boolean])): Self = StObject.set(x, "closable", value.asInstanceOf[js.Any])
+    inline def setClosable(value: auto | Boolean): Self = StObject.set(x, "closable", value.asInstanceOf[js.Any])
     
     inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     

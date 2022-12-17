@@ -22,7 +22,7 @@ trait PickImplbeforeIndetermina
   
   def beforeIndeterminate(): Unit | `false`
   @JSName("beforeIndeterminate")
-  var beforeIndeterminate_Original: (js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]) & (js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]])
+  var beforeIndeterminate_Original: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]
   
   var beforeUnchecked: js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]] = js.undefined
   
@@ -68,9 +68,7 @@ trait PickImplbeforeIndetermina
 }
 object PickImplbeforeIndetermina {
   
-  inline def apply(
-    beforeIndeterminate: (js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]) & (js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]])
-  ): PickImplbeforeIndetermina = {
+  inline def apply(beforeIndeterminate: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]): PickImplbeforeIndetermina = {
     val __obj = js.Dynamic.literal(beforeIndeterminate = beforeIndeterminate.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplbeforeIndetermina]
   }
@@ -85,9 +83,7 @@ object PickImplbeforeIndetermina {
     
     inline def setBeforeDeterminateUndefined: Self = StObject.set(x, "beforeDeterminate", js.undefined)
     
-    inline def setBeforeIndeterminate(
-      value: (js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]) & (js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]])
-    ): Self = StObject.set(x, "beforeIndeterminate", value.asInstanceOf[js.Any])
+    inline def setBeforeIndeterminate(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]): Self = StObject.set(x, "beforeIndeterminate", value.asInstanceOf[js.Any])
     
     inline def setBeforeUnchecked(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]): Self = StObject.set(x, "beforeUnchecked", value.asInstanceOf[js.Any])
     

@@ -2,7 +2,6 @@ package typings.typescript.anon
 
 import typings.typescript.mod.Identifier
 import typings.typescript.mod.ModifierLike
-import typings.typescript.mod.NamedImports
 import typings.typescript.mod.Node
 import typings.typescript.mod.NodeArray
 import typings.typescript.mod.NodeFlags
@@ -102,7 +101,7 @@ trait readonlyparentNamedImport
   
   val name: Identifier = js.native
   
-  val parent: NamedImportsreadonlyparen & NamedImports = js.native
+  val parent: NamedImportsreadonlyparen = js.native
   
   val pos: Double = js.native
   

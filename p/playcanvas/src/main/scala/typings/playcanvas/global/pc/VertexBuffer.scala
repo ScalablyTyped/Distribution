@@ -1,6 +1,5 @@
 package typings.playcanvas.global.pc
 
-import typings.playcanvas.mod.VertexFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,23 +22,27 @@ open class VertexBuffer protected ()
     * @param {number} [usage] - The usage type of the vertex buffer (see BUFFER_*). Defaults to BUFFER_STATIC.
     * @param {ArrayBuffer} [initialData] - Initial data.
     */
-  def this(graphicsDevice: typings.playcanvas.mod.GraphicsDevice, format: VertexFormat, numVertices: Double) = this()
   def this(
     graphicsDevice: typings.playcanvas.mod.GraphicsDevice,
-    format: VertexFormat,
+    format: typings.playcanvas.mod.VertexFormat,
+    numVertices: Double
+  ) = this()
+  def this(
+    graphicsDevice: typings.playcanvas.mod.GraphicsDevice,
+    format: typings.playcanvas.mod.VertexFormat,
     numVertices: Double,
     usage: Double
   ) = this()
   def this(
     graphicsDevice: typings.playcanvas.mod.GraphicsDevice,
-    format: VertexFormat,
+    format: typings.playcanvas.mod.VertexFormat,
     numVertices: Double,
     usage: Double,
     initialData: js.typedarray.ArrayBuffer
   ) = this()
   def this(
     graphicsDevice: typings.playcanvas.mod.GraphicsDevice,
-    format: VertexFormat,
+    format: typings.playcanvas.mod.VertexFormat,
     numVertices: Double,
     usage: Unit,
     initialData: js.typedarray.ArrayBuffer

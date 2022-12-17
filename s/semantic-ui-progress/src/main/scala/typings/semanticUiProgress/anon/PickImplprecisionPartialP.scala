@@ -59,7 +59,7 @@ trait PickImplprecisionPartialP
   
   var performance: js.UndefOr[Boolean] = js.undefined
   
-  var precision: Double & js.UndefOr[Double]
+  var precision: Double
   
   var random: js.UndefOr[RandomSettings] = js.undefined
   
@@ -81,7 +81,7 @@ trait PickImplprecisionPartialP
 }
 object PickImplprecisionPartialP {
   
-  inline def apply(precision: Double & js.UndefOr[Double]): PickImplprecisionPartialP = {
+  inline def apply(precision: Double): PickImplprecisionPartialP = {
     val __obj = js.Dynamic.literal(precision = precision.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplprecisionPartialP]
   }
@@ -150,7 +150,7 @@ object PickImplprecisionPartialP {
     
     inline def setPerformanceUndefined: Self = StObject.set(x, "performance", js.undefined)
     
-    inline def setPrecision(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+    inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
     inline def setRandom(value: RandomSettings): Self = StObject.set(x, "random", value.asInstanceOf[js.Any])
     

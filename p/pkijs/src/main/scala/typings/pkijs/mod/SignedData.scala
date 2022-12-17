@@ -1,5 +1,6 @@
 package typings.pkijs.mod
 
+import typings.pkijs.anon.DigestAlgorithms
 import typings.pkijs.anon.SignedDataVerifyParamsext
 import typings.pkijs.anon.SignedDataVerifyParamsextCheckChain
 import typings.std.BufferSource
@@ -66,11 +67,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * }
   * ```
   */
+@JSImport("pkijs", "SignedData")
 @js.native
-trait SignedData
-  extends StObject
-     with PkiObject
+/**
+  * Initializes a new instance of the {@link SignedData} class
+  * @param parameters Initialization parameters
+  */
+open class SignedData ()
+  extends PkiObject
      with ISignedData {
+  def this(parameters: SignedDataParameters) = this()
+  
+  /* CompleteClass */
+  var digestAlgorithms: js.Array[AlgorithmIdentifier] = js.native
+  
+  /* CompleteClass */
+  var encapContentInfo: EncapsulatedContentInfo = js.native
   
   /**
     * Signing current SignedData
@@ -107,10 +119,74 @@ trait SignedData
     crypto: ICryptoEngine
   ): js.Promise[Unit] = js.native
   
+  /* CompleteClass */
+  var signerInfos: js.Array[SignerInfo] = js.native
+  
   def verify(): js.Promise[Boolean] = js.native
   def verify(params: Unit, crypto: ICryptoEngine): js.Promise[Boolean] = js.native
   def verify(params: SignedDataVerifyParamsext): js.Promise[Boolean] = js.native
   def verify(params: SignedDataVerifyParamsextCheckChain): js.Promise[SignedDataVerifyResult] = js.native
   def verify(params: SignedDataVerifyParamsextCheckChain, crypto: ICryptoEngine): js.Promise[SignedDataVerifyResult] = js.native
   def verify(params: SignedDataVerifyParamsext, crypto: ICryptoEngine): js.Promise[Boolean] = js.native
+  
+  /* CompleteClass */
+  var version: Double = js.native
+}
+object SignedData {
+  
+  @JSImport("pkijs", "SignedData")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("pkijs", "SignedData.CLASS_NAME")
+  @js.native
+  def CLASS_NAME: String = js.native
+  inline def CLASS_NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASS_NAME")(x.asInstanceOf[js.Any])
+  
+  /* was `typeof id_ContentType_Data` */
+  @JSImport("pkijs", "SignedData.ID_DATA")
+  @js.native
+  val ID_DATA: /* "1.2.840.113549.1.7.1" */ String = js.native
+  
+  /**
+    * Compare values with default values for all class members
+    * @param memberName String name for a class member
+    * @param memberValue Value to compare with default value
+    */
+  /* static member */
+  inline def compareWithDefault(memberName: String, memberValue: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareWithDefault")(memberName.asInstanceOf[js.Any], memberValue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  /**
+    * Returns default values for all class members
+    * @param memberName String name for a class member
+    * @returns Default value
+    */
+  /* static member */
+  inline def defaultValues(memberName: /* "version" */ String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  /* static member */
+  inline def defaultValues_Array(
+    memberName: /* "digestAlgorithms" */ /* "certificates" */ /* "crls" */ /* "ocsps" */ /* "signerInfos" */ String
+  ): js.Array[AlgorithmIdentifier] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Array[AlgorithmIdentifier]]
+  
+  /* static member */
+  inline def defaultValues_EncapsulatedContentInfo(memberName: /* "encapContentInfo" */ String): EncapsulatedContentInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[EncapsulatedContentInfo]
+  
+  /**
+    * @inheritdoc
+    * @asn ASN.1 schema
+    * ```asn
+    * SignedData ::= SEQUENCE {
+    *    version CMSVersion,
+    *    digestAlgorithms DigestAlgorithmIdentifiers,
+    *    encapContentInfo EncapsulatedContentInfo,
+    *    certificates [0] IMPLICIT CertificateSet OPTIONAL,
+    *    crls [1] IMPLICIT RevocationInfoChoices OPTIONAL,
+    *    signerInfos SignerInfos }
+    *```
+    */
+  /* static member */
+  inline def schema(): SchemaType = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[SchemaType]
+  inline def schema(parameters: SchemaParameters[DigestAlgorithms]): SchemaType = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[SchemaType]
 }

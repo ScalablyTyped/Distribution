@@ -19,13 +19,13 @@ trait PickImplsuccessPartialPic
   
   var ratio: js.UndefOr[`false` | String] = js.undefined
   
-  var success: (`false` | String) & (js.UndefOr[`false` | String])
+  var success: `false` | String
   
   var warning: js.UndefOr[`false` | String] = js.undefined
 }
 object PickImplsuccessPartialPic {
   
-  inline def apply(success: (`false` | String) & (js.UndefOr[`false` | String])): PickImplsuccessPartialPic = {
+  inline def apply(success: `false` | String): PickImplsuccessPartialPic = {
     val __obj = js.Dynamic.literal(success = success.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplsuccessPartialPic]
   }
@@ -48,7 +48,7 @@ object PickImplsuccessPartialPic {
     
     inline def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
     
-    inline def setSuccess(value: (`false` | String) & (js.UndefOr[`false` | String])): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: `false` | String): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
     inline def setWarning(value: `false` | String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,6 @@
 package typings.qiniuJs.anon
 
-import typings.qiniuJs.imageMod.Pipeline_
+import typings.qiniuJs.esmImageMod.Pipeline_
 import typings.qiniuJs.qiniuJsStrings.imageView2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

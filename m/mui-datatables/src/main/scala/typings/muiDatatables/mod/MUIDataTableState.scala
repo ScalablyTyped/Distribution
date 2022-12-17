@@ -1,7 +1,7 @@
 package typings.muiDatatables.mod
 
 import typings.muiDatatables.anon.Data
-import typings.muiDatatables.anon.Index
+import typings.muiDatatables.anon.DataIndex
 import typings.react.mod.HTMLAttributes
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
@@ -32,7 +32,7 @@ trait MUIDataTableState extends StObject {
   
   var page: Double
   
-  var previousSelectedRow: Null | Index
+  var previousSelectedRow: Null | DataIndex
   
   var rowsPerPage: Double
   
@@ -110,7 +110,7 @@ object MUIDataTableState {
     
     inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    inline def setPreviousSelectedRow(value: Index): Self = StObject.set(x, "previousSelectedRow", value.asInstanceOf[js.Any])
+    inline def setPreviousSelectedRow(value: DataIndex): Self = StObject.set(x, "previousSelectedRow", value.asInstanceOf[js.Any])
     
     inline def setPreviousSelectedRowNull: Self = StObject.set(x, "previousSelectedRow", null)
     

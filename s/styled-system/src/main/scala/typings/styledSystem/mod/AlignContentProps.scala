@@ -1,5 +1,6 @@
 package typings.styledSystem.mod
 
+import typings.csstype.mod.Property.AlignContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,12 +13,7 @@ trait AlignContentProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends S
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content)
     */
-  var alignContent: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignContent */ js.Any, 
-      ThemeType
-    ]
-  ] = js.undefined
+  var alignContent: js.UndefOr[ResponsiveValue[AlignContent, ThemeType]] = js.undefined
 }
 object AlignContentProps {
   
@@ -28,19 +24,12 @@ object AlignContentProps {
   
   extension [Self <: AlignContentProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & AlignContentProps[ThemeType]) {
     
-    inline def setAlignContent(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignContent */ js.Any, 
-          ThemeType
-        ]
-    ): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
+    inline def setAlignContent(value: ResponsiveValue[AlignContent, ThemeType]): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
     
     inline def setAlignContentNull: Self = StObject.set(x, "alignContent", null)
     
     inline def setAlignContentUndefined: Self = StObject.set(x, "alignContent", js.undefined)
     
-    inline def setAlignContentVarargs(
-      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignContent */ js.Any) | Null)*
-    ): Self = StObject.set(x, "alignContent", js.Array(value :_*))
+    inline def setAlignContentVarargs(value: (AlignContent | Null)*): Self = StObject.set(x, "alignContent", js.Array(value*))
   }
 }

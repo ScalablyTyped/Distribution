@@ -2,6 +2,7 @@ package typings.linkifyIssues
 
 import typings.linkifyIssues.linkifyIssuesStrings.dom
 import typings.linkifyIssues.linkifyIssuesStrings.string
+import typings.std.DocumentFragment
 import typings.stringifyAttributes.mod.HTMLAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,6 +16,7 @@ object mod {
   
   inline def default(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def default(string: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(string: String, options: TypeDomOptions): DocumentFragment = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DocumentFragment]
   
   trait Options extends StObject {
     

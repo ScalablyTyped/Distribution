@@ -16,13 +16,13 @@ trait PickImplresultsPartialPicCategory
   
   var result: js.UndefOr[String] = js.undefined
   
-  var results: String & js.UndefOr[String]
+  var results: String
   
   var searchButton: js.UndefOr[String] = js.undefined
 }
 object PickImplresultsPartialPicCategory {
   
-  inline def apply(results: String & js.UndefOr[String]): PickImplresultsPartialPicCategory = {
+  inline def apply(results: String): PickImplresultsPartialPicCategory = {
     val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplresultsPartialPicCategory]
   }
@@ -41,7 +41,7 @@ object PickImplresultsPartialPicCategory {
     
     inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
-    inline def setResults(value: String & js.UndefOr[String]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: String): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     inline def setSearchButton(value: String): Self = StObject.set(x, "searchButton", value.asInstanceOf[js.Any])
     

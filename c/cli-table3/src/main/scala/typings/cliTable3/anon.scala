@@ -8,6 +8,51 @@ object anon {
   
   trait Border extends StObject {
     
+    var border: js.Array[String]
+    
+    var compact: Boolean
+    
+    var head: js.Array[String]
+    
+    var `padding-left`: Double
+    
+    var `padding-right`: Double
+  }
+  object Border {
+    
+    inline def apply(
+      border: js.Array[String],
+      compact: Boolean,
+      head: js.Array[String],
+      `padding-left`: Double,
+      `padding-right`: Double
+    ): Border = {
+      val __obj = js.Dynamic.literal(border = border.asInstanceOf[js.Any], compact = compact.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any])
+      __obj.updateDynamic("padding-left")(`padding-left`.asInstanceOf[js.Any])
+      __obj.updateDynamic("padding-right")(`padding-right`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Border]
+    }
+    
+    extension [Self <: Border](x: Self) {
+      
+      inline def setBorder(value: js.Array[String]): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+      
+      inline def setBorderVarargs(value: String*): Self = StObject.set(x, "border", js.Array(value*))
+      
+      inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+      
+      inline def setHead(value: js.Array[String]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+      
+      inline def setHeadVarargs(value: String*): Self = StObject.set(x, "head", js.Array(value*))
+      
+      inline def `setPadding-left`(value: Double): Self = StObject.set(x, "padding-left", value.asInstanceOf[js.Any])
+      
+      inline def `setPadding-right`(value: Double): Self = StObject.set(x, "padding-right", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Head extends StObject {
+    
     var border: js.UndefOr[js.Array[String]] = js.undefined
     
     var head: js.UndefOr[js.Array[String]] = js.undefined
@@ -16,14 +61,14 @@ object anon {
     
     var `padding-right`: js.UndefOr[Double] = js.undefined
   }
-  object Border {
+  object Head {
     
-    inline def apply(): Border = {
+    inline def apply(): Head = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Border]
+      __obj.asInstanceOf[Head]
     }
     
-    extension [Self <: Border](x: Self) {
+    extension [Self <: Head](x: Self) {
       
       inline def setBorder(value: js.Array[String]): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -44,51 +89,6 @@ object anon {
       inline def `setPadding-right`(value: Double): Self = StObject.set(x, "padding-right", value.asInstanceOf[js.Any])
       
       inline def `setPadding-rightUndefined`: Self = StObject.set(x, "padding-right", js.undefined)
-    }
-  }
-  
-  trait Compact extends StObject {
-    
-    var border: js.Array[String]
-    
-    var compact: Boolean
-    
-    var head: js.Array[String]
-    
-    var `padding-left`: Double
-    
-    var `padding-right`: Double
-  }
-  object Compact {
-    
-    inline def apply(
-      border: js.Array[String],
-      compact: Boolean,
-      head: js.Array[String],
-      `padding-left`: Double,
-      `padding-right`: Double
-    ): Compact = {
-      val __obj = js.Dynamic.literal(border = border.asInstanceOf[js.Any], compact = compact.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any])
-      __obj.updateDynamic("padding-left")(`padding-left`.asInstanceOf[js.Any])
-      __obj.updateDynamic("padding-right")(`padding-right`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Compact]
-    }
-    
-    extension [Self <: Compact](x: Self) {
-      
-      inline def setBorder(value: js.Array[String]): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
-      
-      inline def setBorderVarargs(value: String*): Self = StObject.set(x, "border", js.Array(value*))
-      
-      inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
-      
-      inline def setHead(value: js.Array[String]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
-      
-      inline def setHeadVarargs(value: String*): Self = StObject.set(x, "head", js.Array(value*))
-      
-      inline def `setPadding-left`(value: Double): Self = StObject.set(x, "padding-left", value.asInstanceOf[js.Any])
-      
-      inline def `setPadding-right`(value: Double): Self = StObject.set(x, "padding-right", value.asInstanceOf[js.Any])
     }
   }
   

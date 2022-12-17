@@ -1,7 +1,7 @@
 package typings.awsLambda.triggerS3EventNotificationMod
 
+import typings.awsLambda.anon.Etag
 import typings.awsLambda.anon.NameString
-import typings.awsLambda.anon.Size
 import typings.awsLambda.awsLambdaStrings.ARCHIVE_ACCESS
 import typings.awsLambda.awsLambdaStrings.DEEP_ARCHIVE_ACCESS
 import typings.awsLambda.awsLambdaStrings.`0`
@@ -15,7 +15,7 @@ trait S3ObjectAccessTierChangedNotificationEventDetail extends StObject {
   
   var `destination-access-tier`: ARCHIVE_ACCESS | DEEP_ARCHIVE_ACCESS
   
-  var `object`: Size
+  var `object`: Etag
   
   var `request-id`: String
   
@@ -28,7 +28,7 @@ object S3ObjectAccessTierChangedNotificationEventDetail {
   inline def apply(
     bucket: NameString,
     `destination-access-tier`: ARCHIVE_ACCESS | DEEP_ARCHIVE_ACCESS,
-    `object`: Size,
+    `object`: Etag,
     `request-id`: String,
     requester: String
   ): S3ObjectAccessTierChangedNotificationEventDetail = {
@@ -45,7 +45,7 @@ object S3ObjectAccessTierChangedNotificationEventDetail {
     
     inline def `setDestination-access-tier`(value: ARCHIVE_ACCESS | DEEP_ARCHIVE_ACCESS): Self = StObject.set(x, "destination-access-tier", value.asInstanceOf[js.Any])
     
-    inline def setObject(value: Size): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: Etag): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     inline def `setRequest-id`(value: String): Self = StObject.set(x, "request-id", value.asInstanceOf[js.Any])
     

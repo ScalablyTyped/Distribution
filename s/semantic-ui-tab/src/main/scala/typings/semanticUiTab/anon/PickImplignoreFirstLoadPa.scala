@@ -54,7 +54,7 @@ trait PickImplignoreFirstLoadPa
   
   var historyType: js.UndefOr[hash | state] = js.undefined
   
-  var ignoreFirstLoad: Boolean & js.UndefOr[Boolean]
+  var ignoreFirstLoad: Boolean
   
   var loadOnce: js.UndefOr[Boolean] = js.undefined
   
@@ -104,7 +104,7 @@ trait PickImplignoreFirstLoadPa
 }
 object PickImplignoreFirstLoadPa {
   
-  inline def apply(ignoreFirstLoad: Boolean & js.UndefOr[Boolean]): PickImplignoreFirstLoadPa = {
+  inline def apply(ignoreFirstLoad: Boolean): PickImplignoreFirstLoadPa = {
     val __obj = js.Dynamic.literal(ignoreFirstLoad = ignoreFirstLoad.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplignoreFirstLoadPa]
   }
@@ -167,7 +167,7 @@ object PickImplignoreFirstLoadPa {
     
     inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
     
-    inline def setIgnoreFirstLoad(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "ignoreFirstLoad", value.asInstanceOf[js.Any])
+    inline def setIgnoreFirstLoad(value: Boolean): Self = StObject.set(x, "ignoreFirstLoad", value.asInstanceOf[js.Any])
     
     inline def setLoadOnce(value: Boolean): Self = StObject.set(x, "loadOnce", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,7 @@ trait PickImplpersistPartialPic
   
   var performance: js.UndefOr[Boolean] = js.undefined
   
-  var persist: Boolean & js.UndefOr[Boolean]
+  var persist: Boolean
   
   var selector: js.UndefOr[SelectorSettings] = js.undefined
   
@@ -67,7 +67,7 @@ trait PickImplpersistPartialPic
 }
 object PickImplpersistPartialPic {
   
-  inline def apply(persist: Boolean & js.UndefOr[Boolean]): PickImplpersistPartialPic = {
+  inline def apply(persist: Boolean): PickImplpersistPartialPic = {
     val __obj = js.Dynamic.literal(persist = persist.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplpersistPartialPic]
   }
@@ -138,7 +138,7 @@ object PickImplpersistPartialPic {
     
     inline def setPerformanceUndefined: Self = StObject.set(x, "performance", js.undefined)
     
-    inline def setPersist(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
+    inline def setPersist(value: Boolean): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
     
     inline def setSelector(value: SelectorSettings): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     

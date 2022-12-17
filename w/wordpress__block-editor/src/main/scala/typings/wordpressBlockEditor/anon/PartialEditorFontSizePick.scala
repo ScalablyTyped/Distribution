@@ -9,14 +9,14 @@ trait PartialEditorFontSizePick extends StObject {
   
   var name: js.UndefOr[String] = js.undefined
   
-  var size: js.UndefOr[Double] & Double
+  var size: js.UndefOr[Double] = js.undefined
   
   var slug: js.UndefOr[String] = js.undefined
 }
 object PartialEditorFontSizePick {
   
-  inline def apply(size: js.UndefOr[Double] & Double): PartialEditorFontSizePick = {
-    val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
+  inline def apply(): PartialEditorFontSizePick = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialEditorFontSizePick]
   }
   
@@ -26,7 +26,9 @@ object PartialEditorFontSizePick {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setSize(value: js.UndefOr[Double] & Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     inline def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
     

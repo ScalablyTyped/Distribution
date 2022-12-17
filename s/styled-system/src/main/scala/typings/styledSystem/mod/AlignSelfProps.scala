@@ -1,5 +1,6 @@
 package typings.styledSystem.mod
 
+import typings.csstype.mod.Property.AlignSelf
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,12 +15,7 @@ trait AlignSelfProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StOb
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self)
     */
-  var alignSelf: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ js.Any, 
-      ThemeType
-    ]
-  ] = js.undefined
+  var alignSelf: js.UndefOr[ResponsiveValue[AlignSelf, ThemeType]] = js.undefined
 }
 object AlignSelfProps {
   
@@ -30,19 +26,12 @@ object AlignSelfProps {
   
   extension [Self <: AlignSelfProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & AlignSelfProps[ThemeType]) {
     
-    inline def setAlignSelf(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ js.Any, 
-          ThemeType
-        ]
-    ): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
+    inline def setAlignSelf(value: ResponsiveValue[AlignSelf, ThemeType]): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
     
     inline def setAlignSelfNull: Self = StObject.set(x, "alignSelf", null)
     
     inline def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
     
-    inline def setAlignSelfVarargs(
-      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ js.Any) | Null)*
-    ): Self = StObject.set(x, "alignSelf", js.Array(value :_*))
+    inline def setAlignSelfVarargs(value: (AlignSelf | Null)*): Self = StObject.set(x, "alignSelf", js.Array(value*))
   }
 }

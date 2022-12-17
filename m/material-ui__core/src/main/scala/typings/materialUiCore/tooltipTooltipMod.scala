@@ -639,8 +639,8 @@ object tooltipTooltipMod {
   }
   object TooltipProps {
     
-    inline def apply(children: ReactElement, title: NonNullable[ReactNode]): TooltipProps = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    inline def apply(children: ReactElement): TooltipProps = {
+      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[TooltipProps]
     }
     
@@ -1413,6 +1413,8 @@ object tooltipTooltipMod {
       inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
       
       inline def setTitle(value: NonNullable[ReactNode]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
       inline def setTransitionComponent(value: ComponentType[TransitionPropschildrenRe]): Self = StObject.set(x, "TransitionComponent", value.asInstanceOf[js.Any])
       

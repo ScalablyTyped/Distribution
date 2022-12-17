@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined relay-runtime.relay-runtime/lib/util/ReaderNode.ReaderRefetchMetadata & {  connection :relay-runtime.relay-runtime/lib/util/ReaderNode.ReaderPaginationMetadata} */
 trait ReaderRefetchMetadataconn extends StObject {
   
-  val connection: (js.UndefOr[ReaderPaginationMetadata | Null]) & ReaderPaginationMetadata
+  val connection: js.UndefOr[ReaderPaginationMetadata | Null] = js.undefined
   
   val fragmentPathInResult: js.Array[String]
   
@@ -19,18 +19,18 @@ trait ReaderRefetchMetadataconn extends StObject {
 }
 object ReaderRefetchMetadataconn {
   
-  inline def apply(
-    connection: (js.UndefOr[ReaderPaginationMetadata | Null]) & ReaderPaginationMetadata,
-    fragmentPathInResult: js.Array[String],
-    operation: String | ConcreteRequest
-  ): ReaderRefetchMetadataconn = {
-    val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], fragmentPathInResult = fragmentPathInResult.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any])
+  inline def apply(fragmentPathInResult: js.Array[String], operation: String | ConcreteRequest): ReaderRefetchMetadataconn = {
+    val __obj = js.Dynamic.literal(fragmentPathInResult = fragmentPathInResult.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReaderRefetchMetadataconn]
   }
   
   extension [Self <: ReaderRefetchMetadataconn](x: Self) {
     
-    inline def setConnection(value: (js.UndefOr[ReaderPaginationMetadata | Null]) & ReaderPaginationMetadata): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: ReaderPaginationMetadata): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    
+    inline def setConnectionNull: Self = StObject.set(x, "connection", null)
+    
+    inline def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
     
     inline def setFragmentPathInResult(value: js.Array[String]): Self = StObject.set(x, "fragmentPathInResult", value.asInstanceOf[js.Any])
     

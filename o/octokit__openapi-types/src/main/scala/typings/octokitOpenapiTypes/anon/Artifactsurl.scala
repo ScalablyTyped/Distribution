@@ -56,9 +56,9 @@ trait Artifactsurl extends StObject {
   /** @example master */
   var head_branch: String | Null
   
-  var head_commit: Committer | Null
+  var head_commit: Timestamp | Null
   
-  var head_repository: Blobsurl
+  var head_repository: Branchesurl
   
   /** @example 5 */
   var head_repository_id: js.UndefOr[Double] = js.undefined
@@ -111,11 +111,11 @@ trait Artifactsurl extends StObject {
     */
   var previous_attempt_url: js.UndefOr[String | Null] = js.undefined
   
-  var pull_requests: js.Array[Base] | Null
+  var pull_requests: js.Array[HeadId] | Null
   
-  var referenced_workflows: js.UndefOr[js.Array[Path] | Null] = js.undefined
+  var referenced_workflows: js.UndefOr[js.Array[PathRef] | Null] = js.undefined
   
-  var repository: Blobsurl
+  var repository: Branchesurl
   
   /**
     * @description The URL to rerun the workflow run.
@@ -176,7 +176,7 @@ object Artifactsurl {
     created_at: String,
     display_title: String,
     event: String,
-    head_repository: Blobsurl,
+    head_repository: Branchesurl,
     head_sha: String,
     html_url: String,
     id: Double,
@@ -184,7 +184,7 @@ object Artifactsurl {
     logs_url: String,
     node_id: String,
     path: String,
-    repository: Blobsurl,
+    repository: Branchesurl,
     rerun_url: String,
     run_number: Double,
     updated_at: String,
@@ -230,11 +230,11 @@ object Artifactsurl {
     
     inline def setHead_branchNull: Self = StObject.set(x, "head_branch", null)
     
-    inline def setHead_commit(value: Committer): Self = StObject.set(x, "head_commit", value.asInstanceOf[js.Any])
+    inline def setHead_commit(value: Timestamp): Self = StObject.set(x, "head_commit", value.asInstanceOf[js.Any])
     
     inline def setHead_commitNull: Self = StObject.set(x, "head_commit", null)
     
-    inline def setHead_repository(value: Blobsurl): Self = StObject.set(x, "head_repository", value.asInstanceOf[js.Any])
+    inline def setHead_repository(value: Branchesurl): Self = StObject.set(x, "head_repository", value.asInstanceOf[js.Any])
     
     inline def setHead_repository_id(value: Double): Self = StObject.set(x, "head_repository_id", value.asInstanceOf[js.Any])
     
@@ -266,21 +266,21 @@ object Artifactsurl {
     
     inline def setPrevious_attempt_urlUndefined: Self = StObject.set(x, "previous_attempt_url", js.undefined)
     
-    inline def setPull_requests(value: js.Array[Base]): Self = StObject.set(x, "pull_requests", value.asInstanceOf[js.Any])
+    inline def setPull_requests(value: js.Array[HeadId]): Self = StObject.set(x, "pull_requests", value.asInstanceOf[js.Any])
     
     inline def setPull_requestsNull: Self = StObject.set(x, "pull_requests", null)
     
-    inline def setPull_requestsVarargs(value: Base*): Self = StObject.set(x, "pull_requests", js.Array(value*))
+    inline def setPull_requestsVarargs(value: HeadId*): Self = StObject.set(x, "pull_requests", js.Array(value*))
     
-    inline def setReferenced_workflows(value: js.Array[Path]): Self = StObject.set(x, "referenced_workflows", value.asInstanceOf[js.Any])
+    inline def setReferenced_workflows(value: js.Array[PathRef]): Self = StObject.set(x, "referenced_workflows", value.asInstanceOf[js.Any])
     
     inline def setReferenced_workflowsNull: Self = StObject.set(x, "referenced_workflows", null)
     
     inline def setReferenced_workflowsUndefined: Self = StObject.set(x, "referenced_workflows", js.undefined)
     
-    inline def setReferenced_workflowsVarargs(value: Path*): Self = StObject.set(x, "referenced_workflows", js.Array(value*))
+    inline def setReferenced_workflowsVarargs(value: PathRef*): Self = StObject.set(x, "referenced_workflows", js.Array(value*))
     
-    inline def setRepository(value: Blobsurl): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setRepository(value: Branchesurl): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
     inline def setRerun_url(value: String): Self = StObject.set(x, "rerun_url", value.asInstanceOf[js.Any])
     

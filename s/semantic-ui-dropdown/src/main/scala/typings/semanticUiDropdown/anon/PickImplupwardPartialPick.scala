@@ -44,13 +44,13 @@ trait PickImplupwardPartialPick
   
   var selection: js.UndefOr[String] = js.undefined
   
-  var upward: String & js.UndefOr[String]
+  var upward: String
   
   var visible: js.UndefOr[String] = js.undefined
 }
 object PickImplupwardPartialPick {
   
-  inline def apply(upward: String & js.UndefOr[String]): PickImplupwardPartialPick = {
+  inline def apply(upward: String): PickImplupwardPartialPick = {
     val __obj = js.Dynamic.literal(upward = upward.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplupwardPartialPick]
   }
@@ -125,7 +125,7 @@ object PickImplupwardPartialPick {
     
     inline def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
     
-    inline def setUpward(value: String & js.UndefOr[String]): Self = StObject.set(x, "upward", value.asInstanceOf[js.Any])
+    inline def setUpward(value: String): Self = StObject.set(x, "upward", value.asInstanceOf[js.Any])
     
     inline def setVisible(value: String): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     

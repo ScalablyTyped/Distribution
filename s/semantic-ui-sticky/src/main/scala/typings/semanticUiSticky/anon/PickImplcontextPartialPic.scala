@@ -18,7 +18,7 @@ trait PickImplcontextPartialPic
   
   var className: js.UndefOr[ClassNameSettings] = js.undefined
   
-  var context: (`false` | String | JQuery) & (js.UndefOr[`false` | String | JQuery])
+  var context: `false` | String | JQuery
   
   var debug: js.UndefOr[Boolean] = js.undefined
   
@@ -60,7 +60,7 @@ trait PickImplcontextPartialPic
 }
 object PickImplcontextPartialPic {
   
-  inline def apply(context: (`false` | String | JQuery) & (js.UndefOr[`false` | String | JQuery])): PickImplcontextPartialPic = {
+  inline def apply(context: `false` | String | JQuery): PickImplcontextPartialPic = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplcontextPartialPic]
   }
@@ -75,7 +75,7 @@ object PickImplcontextPartialPic {
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    inline def setContext(value: (`false` | String | JQuery) & (js.UndefOr[`false` | String | JQuery])): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: `false` | String | JQuery): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     

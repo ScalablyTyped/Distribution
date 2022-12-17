@@ -36,9 +36,9 @@ trait styleaxisVictoryStyleObje extends StObject {
   
   var horizontal: js.UndefOr[Boolean] = js.undefined
   
-  var maxDomain: js.UndefOr[Double | `4`] = js.undefined
+  var maxDomain: js.UndefOr[Double | `5`] = js.undefined
   
-  var minDomain: js.UndefOr[Double | `4`] = js.undefined
+  var minDomain: js.UndefOr[Double | `5`] = js.undefined
   
   var name: js.UndefOr[String] = js.undefined
   
@@ -54,11 +54,11 @@ trait styleaxisVictoryStyleObje extends StObject {
   
   var range: js.UndefOr[RangePropType] = js.undefined
   
-  var scale: js.UndefOr[ScalePropType | D3Scale[Any] | XY] = js.undefined
+  var scale: js.UndefOr[ScalePropType | D3Scale[Any] | `0`] = js.undefined
   
   var sharedEvents: js.UndefOr[Events] = js.undefined
   
-  var singleQuadrantDomainPadding: js.UndefOr[Boolean | `5`] = js.undefined
+  var singleQuadrantDomainPadding: js.UndefOr[Boolean | `6`] = js.undefined
   
   var standalone: js.UndefOr[Boolean] = js.undefined
   
@@ -111,11 +111,11 @@ object styleaxisVictoryStyleObje {
     
     inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
     
-    inline def setMaxDomain(value: Double | `4`): Self = StObject.set(x, "maxDomain", value.asInstanceOf[js.Any])
+    inline def setMaxDomain(value: Double | `5`): Self = StObject.set(x, "maxDomain", value.asInstanceOf[js.Any])
     
     inline def setMaxDomainUndefined: Self = StObject.set(x, "maxDomain", js.undefined)
     
-    inline def setMinDomain(value: Double | `4`): Self = StObject.set(x, "minDomain", value.asInstanceOf[js.Any])
+    inline def setMinDomain(value: Double | `5`): Self = StObject.set(x, "minDomain", value.asInstanceOf[js.Any])
     
     inline def setMinDomainUndefined: Self = StObject.set(x, "minDomain", js.undefined)
     
@@ -149,7 +149,7 @@ object styleaxisVictoryStyleObje {
     
     inline def setRangeVarargs(value: Double*): Self = StObject.set(x, "range", js.Array(value*))
     
-    inline def setScale(value: ScalePropType | D3Scale[Any] | XY): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: ScalePropType | D3Scale[Any] | `0`): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
@@ -157,7 +157,7 @@ object styleaxisVictoryStyleObje {
     
     inline def setSharedEventsUndefined: Self = StObject.set(x, "sharedEvents", js.undefined)
     
-    inline def setSingleQuadrantDomainPadding(value: Boolean | `5`): Self = StObject.set(x, "singleQuadrantDomainPadding", value.asInstanceOf[js.Any])
+    inline def setSingleQuadrantDomainPadding(value: Boolean | `6`): Self = StObject.set(x, "singleQuadrantDomainPadding", value.asInstanceOf[js.Any])
     
     inline def setSingleQuadrantDomainPaddingUndefined: Self = StObject.set(x, "singleQuadrantDomainPadding", js.undefined)
     

@@ -12,11 +12,11 @@ trait PickImplurlPartialPickImpAction
   
   var action: js.UndefOr[String] = js.undefined
   
-  var url: String & js.UndefOr[String]
+  var url: String
 }
 object PickImplurlPartialPickImpAction {
   
-  inline def apply(url: String & js.UndefOr[String]): PickImplurlPartialPickImpAction = {
+  inline def apply(url: String): PickImplurlPartialPickImpAction = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplurlPartialPickImpAction]
   }
@@ -27,6 +27,6 @@ object PickImplurlPartialPickImpAction {
     
     inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    inline def setUrl(value: String & js.UndefOr[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

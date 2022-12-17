@@ -1,5 +1,6 @@
 package typings.styledSystem.mod
 
+import typings.csstype.mod.Property.GridColumn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,12 +14,7 @@ trait GridColumnProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StO
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column)
     */
-  var gridColumn: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumn */ js.Any, 
-      ThemeType
-    ]
-  ] = js.undefined
+  var gridColumn: js.UndefOr[ResponsiveValue[GridColumn, ThemeType]] = js.undefined
 }
 object GridColumnProps {
   
@@ -29,19 +25,12 @@ object GridColumnProps {
   
   extension [Self <: GridColumnProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & GridColumnProps[ThemeType]) {
     
-    inline def setGridColumn(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumn */ js.Any, 
-          ThemeType
-        ]
-    ): Self = StObject.set(x, "gridColumn", value.asInstanceOf[js.Any])
+    inline def setGridColumn(value: ResponsiveValue[GridColumn, ThemeType]): Self = StObject.set(x, "gridColumn", value.asInstanceOf[js.Any])
     
     inline def setGridColumnNull: Self = StObject.set(x, "gridColumn", null)
     
     inline def setGridColumnUndefined: Self = StObject.set(x, "gridColumn", js.undefined)
     
-    inline def setGridColumnVarargs(
-      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumn */ js.Any) | Null)*
-    ): Self = StObject.set(x, "gridColumn", js.Array(value :_*))
+    inline def setGridColumnVarargs(value: (GridColumn | Null)*): Self = StObject.set(x, "gridColumn", js.Array(value*))
   }
 }

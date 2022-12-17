@@ -100,7 +100,7 @@ trait PickImplscrollContextPart
   
   var preserve: js.UndefOr[Boolean] = js.undefined
   
-  var scrollContext: (String | JQuery) & (js.UndefOr[String | JQuery])
+  var scrollContext: String | JQuery
   
   var selector: js.UndefOr[SelectorSettings] = js.undefined
   
@@ -120,7 +120,7 @@ trait PickImplscrollContextPart
 }
 object PickImplscrollContextPart {
   
-  inline def apply(scrollContext: (String | JQuery) & (js.UndefOr[String | JQuery])): PickImplscrollContextPart = {
+  inline def apply(scrollContext: String | JQuery): PickImplscrollContextPart = {
     val __obj = js.Dynamic.literal(scrollContext = scrollContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplscrollContextPart]
   }
@@ -279,7 +279,7 @@ object PickImplscrollContextPart {
     
     inline def setPreserveUndefined: Self = StObject.set(x, "preserve", js.undefined)
     
-    inline def setScrollContext(value: (String | JQuery) & (js.UndefOr[String | JQuery])): Self = StObject.set(x, "scrollContext", value.asInstanceOf[js.Any])
+    inline def setScrollContext(value: String | JQuery): Self = StObject.set(x, "scrollContext", value.asInstanceOf[js.Any])
     
     inline def setSelector(value: SelectorSettings): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     

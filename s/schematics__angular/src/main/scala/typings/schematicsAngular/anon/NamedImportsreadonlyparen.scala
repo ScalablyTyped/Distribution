@@ -95,7 +95,7 @@ trait NamedImportsreadonlyparen extends StObject {
     */
   val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
   
-  val parent: ImportClause & ImportClausereadonlyisTypDeclarationBrand = js.native
+  val parent: ImportClause = js.native
   
   val pos: Double = js.native
 }

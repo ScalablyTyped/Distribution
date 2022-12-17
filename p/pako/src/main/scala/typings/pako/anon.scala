@@ -12,14 +12,14 @@ object anon {
     
     var raw: js.UndefOr[Boolean] = js.undefined
     
-    var to: js.UndefOr[string] & string
+    var to: js.UndefOr[string] = js.undefined
     
     var windowBits: js.UndefOr[Double] = js.undefined
   }
   object InflateFunctionOptionstos {
     
-    inline def apply(to: js.UndefOr[string] & string): InflateFunctionOptionstos = {
-      val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
+    inline def apply(): InflateFunctionOptionstos = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InflateFunctionOptionstos]
     }
     
@@ -29,7 +29,9 @@ object anon {
       
       inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
       
-      inline def setTo(value: js.UndefOr[string] & string): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: string): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
       
       inline def setWindowBits(value: Double): Self = StObject.set(x, "windowBits", value.asInstanceOf[js.Any])
       

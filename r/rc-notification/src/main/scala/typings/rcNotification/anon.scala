@@ -42,12 +42,12 @@ object anon {
     
     var holderCallback: js.UndefOr[HolderReadyCallback] = js.undefined
     
-    var props: NoticePropskeyReactText
+    var notice: NoticeContentuserPassKeyK
   }
   object HolderCallback {
     
-    inline def apply(props: NoticePropskeyReactText): HolderCallback = {
-      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
+    inline def apply(notice: NoticeContentuserPassKeyK): HolderCallback = {
+      val __obj = js.Dynamic.literal(notice = notice.asInstanceOf[js.Any])
       __obj.asInstanceOf[HolderCallback]
     }
     
@@ -57,7 +57,7 @@ object anon {
       
       inline def setHolderCallbackUndefined: Self = StObject.set(x, "holderCallback", js.undefined)
       
-      inline def setProps(value: NoticePropskeyReactText): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setNotice(value: NoticeContentuserPassKeyK): Self = StObject.set(x, "notice", value.asInstanceOf[js.Any])
     }
   }
   
@@ -79,29 +79,6 @@ object anon {
       inline def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
       inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Notice extends StObject {
-    
-    var holderCallback: js.UndefOr[HolderReadyCallback] = js.undefined
-    
-    var notice: NoticeContentuserPassKeyK
-  }
-  object Notice {
-    
-    inline def apply(notice: NoticeContentuserPassKeyK): Notice = {
-      val __obj = js.Dynamic.literal(notice = notice.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Notice]
-    }
-    
-    extension [Self <: Notice](x: Self) {
-      
-      inline def setHolderCallback(value: (/* div */ HTMLDivElement, /* noticeProps */ NoticePropskeyKey) => Unit): Self = StObject.set(x, "holderCallback", js.Any.fromFunction2(value))
-      
-      inline def setHolderCallbackUndefined: Self = StObject.set(x, "holderCallback", js.undefined)
-      
-      inline def setNotice(value: NoticeContentuserPassKeyK): Self = StObject.set(x, "notice", value.asInstanceOf[js.Any])
     }
   }
   
@@ -476,6 +453,29 @@ object anon {
       inline def setTransitionName(value: String): Self = StObject.set(x, "transitionName", value.asInstanceOf[js.Any])
       
       inline def setTransitionNameUndefined: Self = StObject.set(x, "transitionName", js.undefined)
+    }
+  }
+  
+  trait Props extends StObject {
+    
+    var holderCallback: js.UndefOr[HolderReadyCallback] = js.undefined
+    
+    var props: NoticePropskeyReactText
+  }
+  object Props {
+    
+    inline def apply(props: NoticePropskeyReactText): Props = {
+      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Props]
+    }
+    
+    extension [Self <: Props](x: Self) {
+      
+      inline def setHolderCallback(value: (/* div */ HTMLDivElement, /* noticeProps */ NoticePropskeyKey) => Unit): Self = StObject.set(x, "holderCallback", js.Any.fromFunction2(value))
+      
+      inline def setHolderCallbackUndefined: Self = StObject.set(x, "holderCallback", js.undefined)
+      
+      inline def setProps(value: NoticePropskeyReactText): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     }
   }
 }

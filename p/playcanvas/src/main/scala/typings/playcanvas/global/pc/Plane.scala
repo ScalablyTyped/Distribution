@@ -1,6 +1,5 @@
 package typings.playcanvas.global.pc
 
-import typings.playcanvas.mod.Vec3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 open class Plane ()
   extends typings.playcanvas.mod.Plane {
-  def this(point: Vec3) = this()
-  def this(point: Unit, normal: Vec3) = this()
-  def this(point: Vec3, normal: Vec3) = this()
+  def this(point: typings.playcanvas.mod.Vec3) = this()
+  def this(point: Unit, normal: typings.playcanvas.mod.Vec3) = this()
+  def this(point: typings.playcanvas.mod.Vec3, normal: typings.playcanvas.mod.Vec3) = this()
 }

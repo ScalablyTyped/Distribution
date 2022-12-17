@@ -12,7 +12,7 @@ trait Line extends StObject {
   
   var extend: js.UndefOr[ExtendType[Record[String, Any]]] = js.undefined
   
-  var line: js.UndefOr[`7`] = js.undefined
+  var line: js.UndefOr[`5`] = js.undefined
 }
 object Line {
   
@@ -29,7 +29,7 @@ object Line {
     
     inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    inline def setLine(value: `7`): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: `5`): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
   }

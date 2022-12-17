@@ -120,7 +120,7 @@ object outObjectPatchMod {
   /**
     * @hidden
     */
-  type PatchFlatObject[O /* <: js.Object */, O1 /* <: js.Object */, fill, OKeys /* <: Key */] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof O & ts-toolbelt.ts-toolbelt/out/Object/Omit._Omit<O1, OKeys> ]: ts-toolbelt.ts-toolbelt/out/Object/Patch.PatchProp<ts-toolbelt.ts-toolbelt/out/Any/At.At<O, K>, ts-toolbelt.ts-toolbelt/out/Any/At.At<O1, K>, fill, OKeys, K>} */ js.Any) & js.Object
+  type PatchFlatObject[O /* <: js.Object */, O1 /* <: js.Object */, fill, OKeys /* <: Key */] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof O & ts-toolbelt.ts-toolbelt/out/Object/Omit._Omit<O1, OKeys> ]: ts-toolbelt.ts-toolbelt/out/Object/Patch.PatchProp<ts-toolbelt.ts-toolbelt/out/Any/At.At<O, K>, ts-toolbelt.ts-toolbelt/out/Any/At.At<O1, K>, fill, OKeys, K>} */ js.Any
   
   /**
     * @hidden

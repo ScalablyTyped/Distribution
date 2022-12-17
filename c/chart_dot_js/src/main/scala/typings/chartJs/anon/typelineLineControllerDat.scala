@@ -58,7 +58,7 @@ trait typelineLineControllerDat extends StObject {
   /**
     * Both line and radar charts support a fill option on the dataset object which can be used to create area between two datasets or a dataset and a boundary, i.e. the scale origin, start or end
     */
-  var fill: (Scriptable[FillTarget | ComplexFillTarget, ScriptableContext[line]]) & (FillTarget | ComplexFillTarget)
+  var fill: Scriptable[FillTarget | ComplexFillTarget, ScriptableContext[line]]
   
   /**
     * Configures the visibility state of the dataset. Set it to true, to hide the dataset from the chart.
@@ -176,7 +176,7 @@ object typelineLineControllerDat {
     capBezierPoints: Scriptable[Boolean, ScriptableContext[line]],
     clip: Double | ChartArea | `false`,
     cubicInterpolationMode: Scriptable[default | monotone, ScriptableContext[line]],
-    fill: (Scriptable[FillTarget | ComplexFillTarget, ScriptableContext[line]]) & (FillTarget | ComplexFillTarget),
+    fill: Scriptable[FillTarget | ComplexFillTarget, ScriptableContext[line]],
     hidden: Boolean,
     hoverBackgroundColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[line]],
     hoverBorderCapStyle: Scriptable[CanvasLineCap, ScriptableContext[line]],
@@ -272,9 +272,11 @@ object typelineLineControllerDat {
     
     inline def setCubicInterpolationModeFunction2(value: (ScriptableContext[line], /* options */ AnyObject) => js.UndefOr[default | monotone]): Self = StObject.set(x, "cubicInterpolationMode", js.Any.fromFunction2(value))
     
-    inline def setFill(
-      value: (Scriptable[FillTarget | ComplexFillTarget, ScriptableContext[line]]) & (FillTarget | ComplexFillTarget)
-    ): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: Scriptable[FillTarget | ComplexFillTarget, ScriptableContext[line]]): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    
+    inline def setFillFunction2(
+      value: (ScriptableContext[line], /* options */ AnyObject) => js.UndefOr[FillTarget | ComplexFillTarget]
+    ): Self = StObject.set(x, "fill", js.Any.fromFunction2(value))
     
     inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     

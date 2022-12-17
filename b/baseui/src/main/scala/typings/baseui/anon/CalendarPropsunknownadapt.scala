@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined baseui.baseui/datepicker/types.CalendarProps<unknown> & {  adapter :baseui.baseui/datepicker/utils/types.DateIOAdapter<std.Date>} */
 trait CalendarPropsunknownadapt extends StObject {
   
-  var adapter: js.UndefOr[DateIOAdapter[Any]] & DateIOAdapter[js.Date]
+  var adapter: js.UndefOr[DateIOAdapter[Any]] = js.undefined
   
   /** Defines if the calendar is set to be focused on an initial render. */
   var autoFocusCalendar: js.UndefOr[Boolean] = js.undefined
@@ -112,14 +112,16 @@ trait CalendarPropsunknownadapt extends StObject {
 }
 object CalendarPropsunknownadapt {
   
-  inline def apply(adapter: js.UndefOr[DateIOAdapter[Any]] & DateIOAdapter[js.Date]): CalendarPropsunknownadapt = {
-    val __obj = js.Dynamic.literal(adapter = adapter.asInstanceOf[js.Any])
+  inline def apply(): CalendarPropsunknownadapt = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CalendarPropsunknownadapt]
   }
   
   extension [Self <: CalendarPropsunknownadapt](x: Self) {
     
-    inline def setAdapter(value: js.UndefOr[DateIOAdapter[Any]] & DateIOAdapter[js.Date]): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
+    inline def setAdapter(value: DateIOAdapter[Any]): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
+    
+    inline def setAdapterUndefined: Self = StObject.set(x, "adapter", js.undefined)
     
     inline def setAutoFocusCalendar(value: Boolean): Self = StObject.set(x, "autoFocusCalendar", value.asInstanceOf[js.Any])
     

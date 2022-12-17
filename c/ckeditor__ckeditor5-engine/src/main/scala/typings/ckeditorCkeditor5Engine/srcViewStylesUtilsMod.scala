@@ -1,7 +1,7 @@
 package typings.ckeditorCkeditor5Engine
 
 import typings.ckeditorCkeditor5Engine.anon.NonNullableBoxSides
-import typings.ckeditorCkeditor5Engine.anon.Value
+import typings.ckeditorCkeditor5Engine.anon.Path
 import typings.ckeditorCkeditor5Engine.srcViewStylesmapMod.BoxSides
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -27,7 +27,7 @@ object srcViewStylesUtilsMod {
   inline def getBoxSidesValues(): BoxSides = ^.asInstanceOf[js.Dynamic].applyDynamic("getBoxSidesValues")().asInstanceOf[BoxSides]
   inline def getBoxSidesValues(value: String): BoxSides = ^.asInstanceOf[js.Dynamic].applyDynamic("getBoxSidesValues")(value.asInstanceOf[js.Any]).asInstanceOf[BoxSides]
   
-  inline def getPositionShorthandNormalizer(shorthand: String): js.Function1[/* value */ String, Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPositionShorthandNormalizer")(shorthand.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* value */ String, Value]]
+  inline def getPositionShorthandNormalizer(shorthand: String): js.Function1[/* value */ String, Path] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPositionShorthandNormalizer")(shorthand.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* value */ String, Path]]
   
   inline def getShorthandValues(string: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getShorthandValues")(string.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   

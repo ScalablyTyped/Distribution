@@ -1,7 +1,7 @@
 package typings.expressValidator
 
 import typings.expressValidator.anon.ArrayValidationChainrunre
-import typings.expressValidator.anon.Options
+import typings.expressValidator.anon.`0`
 import typings.expressValidator.expressValidatorBooleans.`true`
 import typings.expressValidator.expressValidatorStrings.blacklist
 import typings.expressValidator.expressValidatorStrings.contains
@@ -1204,7 +1204,7 @@ object srcMiddlewaresSchemaMod {
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.notEmpty]
       ] = js.undefined
     
-    var optional: js.UndefOr[`true` | Options] = js.undefined
+    var optional: js.UndefOr[`true` | `0`] = js.undefined
     
     var replace: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.replace]] = js.undefined
     
@@ -1641,7 +1641,7 @@ object srcMiddlewaresSchemaMod {
       
       inline def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
       
-      inline def setOptional(value: `true` | Options): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+      inline def setOptional(value: `true` | `0`): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       
       inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
       
@@ -1705,7 +1705,7 @@ object srcMiddlewaresSchemaMod {
   
   /* Rewritten from type alias, can be one of: 
     - typings.expressValidator.expressValidatorBooleans.`true`
-    - typings.expressValidator.anon.`0`[K]
+    - typings.expressValidator.anon.Options[K]
   */
   trait SanitizerSchemaOptions[K /* <: /* keyof express-validator.express-validator/src/chain/sanitizers.Sanitizers<any> */ customSanitizer | default | replace | blacklist | escape | unescape | ltrim | normalizeEmail | rtrim | stripLow | toArray | toBoolean | toDate | toFloat | toInt | toLowerCase | toUpperCase | trim | whitelist */] extends StObject
   
@@ -2157,7 +2157,7 @@ object srcMiddlewaresSchemaMod {
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.notEmpty]
       ] = js.undefined
     
-    var optional: js.UndefOr[`true` | Options] = js.undefined
+    var optional: js.UndefOr[`true` | `0`] = js.undefined
     
     var replace: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.replace]] = js.undefined
     
@@ -2594,7 +2594,7 @@ object srcMiddlewaresSchemaMod {
       
       inline def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
       
-      inline def setOptional(value: `true` | Options): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+      inline def setOptional(value: `true` | `0`): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       
       inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
       

@@ -9,9 +9,7 @@ trait PointOptionsObject extends StObject {
   /**
     * (Highcharts) Accessibility options for a data point.
     */
-  var accessibility: js.UndefOr[PointAccessibilityOptionsObject] & (js.UndefOr[
-    typings.highcharts.modulesAccessibilityMod.highchartsAugmentingMod.PointAccessibilityOptionsObject
-  ])
+  var accessibility: js.UndefOr[PointAccessibilityOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock) The color of the border surrounding the column or
@@ -391,22 +389,16 @@ trait PointOptionsObject extends StObject {
 }
 object PointOptionsObject {
   
-  inline def apply(
-    accessibility: js.UndefOr[PointAccessibilityOptionsObject] & (js.UndefOr[
-      typings.highcharts.modulesAccessibilityMod.highchartsAugmentingMod.PointAccessibilityOptionsObject
-    ])
-  ): PointOptionsObject = {
-    val __obj = js.Dynamic.literal(accessibility = accessibility.asInstanceOf[js.Any])
+  inline def apply(): PointOptionsObject = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PointOptionsObject]
   }
   
   extension [Self <: PointOptionsObject](x: Self) {
     
-    inline def setAccessibility(
-      value: js.UndefOr[PointAccessibilityOptionsObject] & (js.UndefOr[
-          typings.highcharts.modulesAccessibilityMod.highchartsAugmentingMod.PointAccessibilityOptionsObject
-        ])
-    ): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
+    inline def setAccessibility(value: PointAccessibilityOptionsObject): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityUndefined: Self = StObject.set(x, "accessibility", js.undefined)
     
     inline def setBorderColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

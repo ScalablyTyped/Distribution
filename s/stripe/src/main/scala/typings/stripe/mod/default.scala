@@ -7,9 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("stripe", JSImport.Default)
 @js.native
-open class default protected ()
-  extends StObject
-     with Stripe {
+open class default protected () extends Stripe {
   def this(
     apiKey: String,
     config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Stripe.StripeConfig */ Any

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AttributesClassesName extends StObject {
   
   var attributes: js.UndefOr[
-    (js.Array[`16` | js.RegExp | String]) | Boolean | String | js.RegExp | (Record[String, String | js.RegExp | Boolean | Double])
+    (js.Array[`15` | js.RegExp | String]) | Boolean | String | js.RegExp | (Record[String, String | js.RegExp | Boolean | Double])
   ] = js.undefined
   
   var classes: js.UndefOr[
@@ -29,12 +29,12 @@ object AttributesClassesName {
   extension [Self <: AttributesClassesName](x: Self) {
     
     inline def setAttributes(
-      value: (js.Array[`16` | js.RegExp | String]) | Boolean | String | js.RegExp | (Record[String, String | js.RegExp | Boolean | Double])
+      value: (js.Array[`15` | js.RegExp | String]) | Boolean | String | js.RegExp | (Record[String, String | js.RegExp | Boolean | Double])
     ): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    inline def setAttributesVarargs(value: (`16` | js.RegExp | String)*): Self = StObject.set(x, "attributes", js.Array(value*))
+    inline def setAttributesVarargs(value: (`15` | js.RegExp | String)*): Self = StObject.set(x, "attributes", js.Array(value*))
     
     inline def setClasses(
       value: (js.Array[js.RegExp | String | ValueBoolean]) | Boolean | String | js.RegExp | (Record[String, Boolean])

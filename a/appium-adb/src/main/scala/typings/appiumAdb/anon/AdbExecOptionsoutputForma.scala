@@ -68,7 +68,7 @@ trait AdbExecOptionsoutputForma extends StObject {
     */
   var maxStdoutBufferSize: js.UndefOr[Double] = js.undefined
   
-  var outputFormat: (js.UndefOr[stdout | full | undefined]) & full
+  var outputFormat: js.UndefOr[stdout | full | undefined] = js.undefined
   
   /**
     * If you're on Windows, you'll want to pass `shell: true`, because exec actually uses spawn under the hood,
@@ -86,8 +86,8 @@ trait AdbExecOptionsoutputForma extends StObject {
 }
 object AdbExecOptionsoutputForma {
   
-  inline def apply(outputFormat: (js.UndefOr[stdout | full | undefined]) & full): AdbExecOptionsoutputForma = {
-    val __obj = js.Dynamic.literal(outputFormat = outputFormat.asInstanceOf[js.Any])
+  inline def apply(): AdbExecOptionsoutputForma = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdbExecOptionsoutputForma]
   }
   
@@ -133,7 +133,9 @@ object AdbExecOptionsoutputForma {
     
     inline def setMaxStdoutBufferSizeUndefined: Self = StObject.set(x, "maxStdoutBufferSize", js.undefined)
     
-    inline def setOutputFormat(value: (js.UndefOr[stdout | full | undefined]) & full): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
+    inline def setOutputFormat(value: stdout | full | undefined): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
+    
+    inline def setOutputFormatUndefined: Self = StObject.set(x, "outputFormat", js.undefined)
     
     inline def setShell(value: Boolean | String): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
     

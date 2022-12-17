@@ -1,45 +1,58 @@
 package typings.octokitOpenapiTypes.anon
 
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.active
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.maintainer
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.`2fa_disabled`
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.admin
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.all
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.member_
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.pending
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Role extends StObject {
   
-  /**
-    * @description The role of the user in the team.
-    * @default member
-    * @example member
-    * @enum {string}
-    */
-  var role: member_ | maintainer
+  /** Filter members returned in the list. `2fa_disabled` means that only members without [two-factor authentication](https://github.com/blog/1614-two-factor-authentication) enabled will be returned. This options is only available for organization owners. */
+  var filter: js.UndefOr[`2fa_disabled` | all] = js.undefined
   
-  /**
-    * @description The state of the user's membership in the team.
-    * @enum {string}
-    */
-  var state: active | pending
+  /** Page number of the results to fetch. */
+  var page: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['page'] */ js.Any
+  ] = js.undefined
   
-  /** Format: uri */
-  var url: String
+  /** The number of results per page (max 100). */
+  var per_page: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['per-page'] */ js.Any
+  ] = js.undefined
+  
+  /** Filter members returned by their role. */
+  var role: js.UndefOr[all | admin | member_] = js.undefined
 }
 object Role {
   
-  inline def apply(role: member_ | maintainer, state: active | pending, url: String): Role = {
-    val __obj = js.Dynamic.literal(role = role.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+  inline def apply(): Role = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Role]
   }
   
   extension [Self <: Role](x: Self) {
     
-    inline def setRole(value: member_ | maintainer): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setFilter(value: `2fa_disabled` | all): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    inline def setState(value: active | pending): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setPage(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['page'] */ js.Any
+    ): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    
+    inline def setPer_page(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['per-page'] */ js.Any
+    ): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
+    
+    inline def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
+    
+    inline def setRole(value: all | admin | member_): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
   }
 }

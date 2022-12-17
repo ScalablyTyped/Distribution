@@ -1,6 +1,6 @@
 package typings.antDesignReactNative
 
-import typings.antDesignReactNative.anon.OnChange
+import typings.antDesignReactNative.anon.Cascade
 import typings.antDesignReactNative.libPickerPropsTypeMod.PickerData
 import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
@@ -25,8 +25,8 @@ object libPickerViewPickerViewMod {
     
     @JSImport("@ant-design/react-native/lib/picker-view/PickerView", "default.defaultProps")
     @js.native
-    def defaultProps: OnChange = js.native
-    inline def defaultProps_=(x: OnChange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: Cascade = js.native
+    inline def defaultProps_=(x: Cascade): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native

@@ -11,25 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait `0` extends StObject {
-    
-    var filename: js.UndefOr[String] = js.undefined
-  }
-  object `0` {
-    
-    inline def apply(): `0` = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[`0`]
-    }
-    
-    extension [Self <: `0`](x: Self) {
-      
-      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
-      
-      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
-    }
-  }
-  
   trait ColumnOffset extends StObject {
     
     var columnOffset: js.UndefOr[Double] = js.undefined
@@ -105,10 +86,6 @@ object anon {
   trait Filename extends StObject {
     
     var filename: js.UndefOr[String] = js.undefined
-    
-    var strict: js.UndefOr[Boolean] = js.undefined
-    
-    var wrapper: js.UndefOr[commonjs | none] = js.undefined
   }
   object Filename {
     
@@ -122,14 +99,6 @@ object anon {
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
       inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
-      
-      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
-      
-      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
-      
-      inline def setWrapper(value: commonjs | none): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
-      
-      inline def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
     }
   }
   
@@ -153,6 +122,37 @@ object anon {
       inline def setModulesVarargs(value: String*): Self = StObject.set(x, "modules", js.Array(value*))
       
       inline def setTransitive(value: Boolean): Self = StObject.set(x, "transitive", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Strict extends StObject {
+    
+    var filename: js.UndefOr[String] = js.undefined
+    
+    var strict: js.UndefOr[Boolean] = js.undefined
+    
+    var wrapper: js.UndefOr[commonjs | none] = js.undefined
+  }
+  object Strict {
+    
+    inline def apply(): Strict = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Strict]
+    }
+    
+    extension [Self <: Strict](x: Self) {
+      
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      
+      inline def setWrapper(value: commonjs | none): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+      
+      inline def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
     }
   }
 }

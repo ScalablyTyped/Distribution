@@ -7,8 +7,8 @@ import typings.lonaSvgModel.anon.ConvertQuadraticsToCubics
 import typings.lonaSvgModel.anon.Fill
 import typings.lonaSvgModel.anon.Height
 import typings.lonaSvgModel.anon.To
-import typings.lonaSvgModel.anon.ToType
 import typings.lonaSvgModel.anon.Type
+import typings.lonaSvgModel.anon.`0`
 import typings.lonaSvgModel.libCommandsMod.Command
 import typings.lonaSvgModel.libElementsMod.Path_
 import typings.lonaSvgModel.libElementsMod.SVGWithoutQuadratics
@@ -29,7 +29,7 @@ object libMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def close(): Type = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[Type]
+  inline def close(): `0` = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[`0`]
   
   inline def convert(svg: String): SVG_ = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(svg.asInstanceOf[js.Any]).asInstanceOf[SVG_]
   inline def convert(svg: String, options: js.Object): SVG_ = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(svg.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SVG_]
@@ -45,11 +45,11 @@ object libMod {
   
   inline def getHrefNode(root: SVGRoot, id: String): js.UndefOr[SVGPathConvertibleNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("getHrefNode")(root.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[SVGPathConvertibleNode]]
   
-  inline def line(to: Point_): To = ^.asInstanceOf[js.Dynamic].applyDynamic("line")(to.asInstanceOf[js.Any]).asInstanceOf[To]
+  inline def line(to: Point_): Type = ^.asInstanceOf[js.Dynamic].applyDynamic("line")(to.asInstanceOf[js.Any]).asInstanceOf[Type]
   
   inline def mapCommandPoints[T /* <: Command */](command: T, transform: js.Function1[/* point */ Point_, Point_]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mapCommandPoints")(command.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  inline def move(to: Point_): ToType = ^.asInstanceOf[js.Dynamic].applyDynamic("move")(to.asInstanceOf[js.Any]).asInstanceOf[ToType]
+  inline def move(to: Point_): To = ^.asInstanceOf[js.Dynamic].applyDynamic("move")(to.asInstanceOf[js.Any]).asInstanceOf[To]
   
   inline def parse(string: String): SVGRoot = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any]).asInstanceOf[SVGRoot]
   

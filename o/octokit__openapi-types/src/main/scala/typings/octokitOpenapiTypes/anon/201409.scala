@@ -7,15 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `201409` extends StObject {
   
   /** Response */
-  var `201`: ContentApplicationjsonCname
+  var `201`: Content286
   
-  var `409`: Content6
+  var `409`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['conflict'] */ js.Any
   
-  var `422`: Content8
+  var `422`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['validation_failed'] */ js.Any
 }
 object `201409` {
   
-  inline def apply(`201`: ContentApplicationjsonCname, `409`: Content6, `422`: Content8): `201409` = {
+  inline def apply(
+    `201`: Content286,
+    `409`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['conflict'] */ js.Any,
+    `422`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['validation_failed'] */ js.Any
+  ): `201409` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("201")(`201`.asInstanceOf[js.Any])
     __obj.updateDynamic("409")(`409`.asInstanceOf[js.Any])
@@ -25,10 +29,14 @@ object `201409` {
   
   extension [Self <: `201409`](x: Self) {
     
-    inline def set201(value: ContentApplicationjsonCname): Self = StObject.set(x, "201", value.asInstanceOf[js.Any])
+    inline def set201(value: Content286): Self = StObject.set(x, "201", value.asInstanceOf[js.Any])
     
-    inline def set409(value: Content6): Self = StObject.set(x, "409", value.asInstanceOf[js.Any])
+    inline def set409(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['conflict'] */ js.Any
+    ): Self = StObject.set(x, "409", value.asInstanceOf[js.Any])
     
-    inline def set422(value: Content8): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
+    inline def set422(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['validation_failed'] */ js.Any
+    ): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
   }
 }

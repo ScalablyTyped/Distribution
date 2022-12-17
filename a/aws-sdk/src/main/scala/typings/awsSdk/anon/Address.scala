@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Address extends StObject {
   
-  var Address: js.UndefOr[String] = js.undefined
+  var Address: String
   
-  var CachePeriodInMinutes: js.UndefOr[Double] = js.undefined
+  var Expire: Double
 }
 object Address {
   
-  inline def apply(): Address = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(Address: String, Expire: Double): Address = {
+    val __obj = js.Dynamic.literal(Address = Address.asInstanceOf[js.Any], Expire = Expire.asInstanceOf[js.Any])
     __obj.asInstanceOf[Address]
   }
   
@@ -21,10 +21,6 @@ object Address {
     
     inline def setAddress(value: String): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     
-    inline def setAddressUndefined: Self = StObject.set(x, "Address", js.undefined)
-    
-    inline def setCachePeriodInMinutes(value: Double): Self = StObject.set(x, "CachePeriodInMinutes", value.asInstanceOf[js.Any])
-    
-    inline def setCachePeriodInMinutesUndefined: Self = StObject.set(x, "CachePeriodInMinutes", js.undefined)
+    inline def setExpire(value: Double): Self = StObject.set(x, "Expire", value.asInstanceOf[js.Any])
   }
 }

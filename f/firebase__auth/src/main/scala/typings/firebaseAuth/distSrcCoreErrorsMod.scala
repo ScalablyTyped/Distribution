@@ -1,7 +1,7 @@
 package typings.firebaseAuth
 
 import typings.firebaseAuth.anon.ErrorMapAuthErrorCode
-import typings.firebaseAuth.anon.`36`
+import typings.firebaseAuth.anon.`32`
 import typings.firebaseAuth.distSrcCoreCredentialsMod.AuthCredential
 import typings.firebaseAuth.distSrcModelAuthMod.AppName
 import typings.firebaseAuth.distSrcModelPublicTypesMod.AuthErrorMap
@@ -912,279 +912,279 @@ object distSrcCoreErrorsMod {
   /* Inlined {[ key in std.Exclude<@firebase/auth.@firebase/auth/dist/src/core/errors.AuthErrorCode, @firebase/auth.@firebase/auth/dist/src/core/errors.AuthErrorCode.ARGUMENT_ERROR | @firebase/auth.@firebase/auth/dist/src/core/errors.AuthErrorCode.DEPENDENT_SDK_INIT_BEFORE_AUTH | @firebase/auth.@firebase/auth/dist/src/core/errors.AuthErrorCode.INTERNAL_ERROR | @firebase/auth.@firebase/auth/dist/src/core/errors.AuthErrorCode.MFA_REQUIRED | @firebase/auth.@firebase/auth/dist/src/core/errors.AuthErrorCode.NO_AUTH_EVENT | @firebase/auth.@firebase/auth/dist/src/core/errors.AuthErrorCode.OPERATION_NOT_SUPPORTED> ]: {  appName :@firebase/auth.@firebase/auth/dist/src/model/auth.AppName | undefined,   email :string | undefined,   phoneNumber :string | undefined,   message :string | undefined}} */
   trait GenericAuthErrorParams extends StObject {
     
-    var `account-exists-with-different-credential`: `36`
+    var `account-exists-with-different-credential`: `32`
     
-    var `admin-restricted-operation`: `36`
+    var `admin-restricted-operation`: `32`
     
-    var `already-initialized`: `36`
+    var `already-initialized`: `32`
     
-    var `app-deleted`: `36`
+    var `app-deleted`: `32`
     
-    var `app-not-authorized`: `36`
+    var `app-not-authorized`: `32`
     
-    var `app-not-installed`: `36`
+    var `app-not-installed`: `32`
     
-    var `auth-domain-config-required`: `36`
+    var `auth-domain-config-required`: `32`
     
-    var `cancelled-popup-request`: `36`
+    var `cancelled-popup-request`: `32`
     
-    var `captcha-check-failed`: `36`
+    var `captcha-check-failed`: `32`
     
-    var `code-expired`: `36`
+    var `code-expired`: `32`
     
-    var `cordova-not-ready`: `36`
+    var `cordova-not-ready`: `32`
     
-    var `cors-unsupported`: `36`
+    var `cors-unsupported`: `32`
     
-    var `credential-already-in-use`: `36`
+    var `credential-already-in-use`: `32`
     
-    var `custom-token-mismatch`: `36`
+    var `custom-token-mismatch`: `32`
     
-    var `dynamic-link-not-activated`: `36`
+    var `dynamic-link-not-activated`: `32`
     
-    var `email-already-in-use`: `36`
+    var `email-already-in-use`: `32`
     
-    var `email-change-needs-verification`: `36`
+    var `email-change-needs-verification`: `32`
     
-    var `emulator-config-failed`: `36`
+    var `emulator-config-failed`: `32`
     
-    var `expired-action-code`: `36`
+    var `expired-action-code`: `32`
     
-    var `invalid-action-code`: `36`
+    var `invalid-action-code`: `32`
     
-    var `invalid-api-key`: `36`
+    var `invalid-api-key`: `32`
     
-    var `invalid-app-credential`: `36`
+    var `invalid-app-credential`: `32`
     
-    var `invalid-app-id`: `36`
+    var `invalid-app-id`: `32`
     
-    var `invalid-auth-event`: `36`
+    var `invalid-auth-event`: `32`
     
-    var `invalid-cert-hash`: `36`
+    var `invalid-cert-hash`: `32`
     
-    var `invalid-continue-uri`: `36`
+    var `invalid-continue-uri`: `32`
     
-    var `invalid-cordova-configuration`: `36`
+    var `invalid-cordova-configuration`: `32`
     
-    var `invalid-credential`: `36`
+    var `invalid-credential`: `32`
     
-    var `invalid-custom-token`: `36`
+    var `invalid-custom-token`: `32`
     
-    var `invalid-dynamic-link-domain`: `36`
+    var `invalid-dynamic-link-domain`: `32`
     
-    var `invalid-email`: `36`
+    var `invalid-email`: `32`
     
-    var `invalid-emulator-scheme`: `36`
+    var `invalid-emulator-scheme`: `32`
     
-    var `invalid-message-payload`: `36`
+    var `invalid-message-payload`: `32`
     
-    var `invalid-multi-factor-session`: `36`
+    var `invalid-multi-factor-session`: `32`
     
-    var `invalid-oauth-client-id`: `36`
+    var `invalid-oauth-client-id`: `32`
     
-    var `invalid-oauth-provider`: `36`
+    var `invalid-oauth-provider`: `32`
     
-    var `invalid-persistence-type`: `36`
+    var `invalid-persistence-type`: `32`
     
-    var `invalid-phone-number`: `36`
+    var `invalid-phone-number`: `32`
     
-    var `invalid-provider-id`: `36`
+    var `invalid-provider-id`: `32`
     
-    var `invalid-recipient-email`: `36`
+    var `invalid-recipient-email`: `32`
     
-    var `invalid-sender`: `36`
+    var `invalid-sender`: `32`
     
-    var `invalid-tenant-id`: `36`
+    var `invalid-tenant-id`: `32`
     
-    var `invalid-user-token`: `36`
+    var `invalid-user-token`: `32`
     
-    var `invalid-verification-code`: `36`
+    var `invalid-verification-code`: `32`
     
-    var `invalid-verification-id`: `36`
+    var `invalid-verification-id`: `32`
     
-    var `login-blocked`: `36`
+    var `login-blocked`: `32`
     
-    var `maximum-second-factor-count-exceeded`: `36`
+    var `maximum-second-factor-count-exceeded`: `32`
     
-    var `missing-android-pkg-name`: `36`
+    var `missing-android-pkg-name`: `32`
     
-    var `missing-app-credential`: `36`
+    var `missing-app-credential`: `32`
     
-    var `missing-continue-uri`: `36`
+    var `missing-continue-uri`: `32`
     
-    var `missing-iframe-start`: `36`
+    var `missing-iframe-start`: `32`
     
-    var `missing-ios-bundle-id`: `36`
+    var `missing-ios-bundle-id`: `32`
     
-    var `missing-multi-factor-info`: `36`
+    var `missing-multi-factor-info`: `32`
     
-    var `missing-multi-factor-session`: `36`
+    var `missing-multi-factor-session`: `32`
     
-    var `missing-or-invalid-nonce`: `36`
+    var `missing-or-invalid-nonce`: `32`
     
-    var `missing-phone-number`: `36`
+    var `missing-phone-number`: `32`
     
-    var `missing-verification-code`: `36`
+    var `missing-verification-code`: `32`
     
-    var `missing-verification-id`: `36`
+    var `missing-verification-id`: `32`
     
-    var `multi-factor-info-not-found`: `36`
+    var `multi-factor-info-not-found`: `32`
     
-    var `network-request-failed`: `36`
+    var `network-request-failed`: `32`
     
-    var `no-such-provider`: `36`
+    var `no-such-provider`: `32`
     
-    var `null-user`: `36`
+    var `null-user`: `32`
     
-    var `operation-not-allowed`: `36`
+    var `operation-not-allowed`: `32`
     
-    var `popup-blocked`: `36`
+    var `popup-blocked`: `32`
     
-    var `popup-closed-by-user`: `36`
+    var `popup-closed-by-user`: `32`
     
-    var `provider-already-linked`: `36`
+    var `provider-already-linked`: `32`
     
-    var `quota-exceeded`: `36`
+    var `quota-exceeded`: `32`
     
-    var `redirect-cancelled-by-user`: `36`
+    var `redirect-cancelled-by-user`: `32`
     
-    var `redirect-operation-pending`: `36`
+    var `redirect-operation-pending`: `32`
     
-    var `rejected-credential`: `36`
+    var `rejected-credential`: `32`
     
-    var `requires-recent-login`: `36`
+    var `requires-recent-login`: `32`
     
-    var `second-factor-already-in-use`: `36`
+    var `second-factor-already-in-use`: `32`
     
-    var `tenant-id-mismatch`: `36`
+    var `tenant-id-mismatch`: `32`
     
-    var timeout: `36`
+    var timeout: `32`
     
-    var `too-many-requests`: `36`
+    var `too-many-requests`: `32`
     
-    var `unauthorized-continue-uri`: `36`
+    var `unauthorized-continue-uri`: `32`
     
-    var `unauthorized-domain`: `36`
+    var `unauthorized-domain`: `32`
     
-    var `unsupported-first-factor`: `36`
+    var `unsupported-first-factor`: `32`
     
-    var `unsupported-persistence-type`: `36`
+    var `unsupported-persistence-type`: `32`
     
-    var `unsupported-tenant-operation`: `36`
+    var `unsupported-tenant-operation`: `32`
     
-    var `unverified-email`: `36`
+    var `unverified-email`: `32`
     
-    var `user-cancelled`: `36`
+    var `user-cancelled`: `32`
     
-    var `user-disabled`: `36`
+    var `user-disabled`: `32`
     
-    var `user-mismatch`: `36`
+    var `user-mismatch`: `32`
     
-    var `user-not-found`: `36`
+    var `user-not-found`: `32`
     
-    var `user-signed-out`: `36`
+    var `user-signed-out`: `32`
     
-    var `user-token-expired`: `36`
+    var `user-token-expired`: `32`
     
-    var `weak-password`: `36`
+    var `weak-password`: `32`
     
-    var `web-storage-unsupported`: `36`
+    var `web-storage-unsupported`: `32`
     
-    var `wrong-password`: `36`
+    var `wrong-password`: `32`
   }
   object GenericAuthErrorParams {
     
     inline def apply(
-      `account-exists-with-different-credential`: `36`,
-      `admin-restricted-operation`: `36`,
-      `already-initialized`: `36`,
-      `app-deleted`: `36`,
-      `app-not-authorized`: `36`,
-      `app-not-installed`: `36`,
-      `auth-domain-config-required`: `36`,
-      `cancelled-popup-request`: `36`,
-      `captcha-check-failed`: `36`,
-      `code-expired`: `36`,
-      `cordova-not-ready`: `36`,
-      `cors-unsupported`: `36`,
-      `credential-already-in-use`: `36`,
-      `custom-token-mismatch`: `36`,
-      `dynamic-link-not-activated`: `36`,
-      `email-already-in-use`: `36`,
-      `email-change-needs-verification`: `36`,
-      `emulator-config-failed`: `36`,
-      `expired-action-code`: `36`,
-      `invalid-action-code`: `36`,
-      `invalid-api-key`: `36`,
-      `invalid-app-credential`: `36`,
-      `invalid-app-id`: `36`,
-      `invalid-auth-event`: `36`,
-      `invalid-cert-hash`: `36`,
-      `invalid-continue-uri`: `36`,
-      `invalid-cordova-configuration`: `36`,
-      `invalid-credential`: `36`,
-      `invalid-custom-token`: `36`,
-      `invalid-dynamic-link-domain`: `36`,
-      `invalid-email`: `36`,
-      `invalid-emulator-scheme`: `36`,
-      `invalid-message-payload`: `36`,
-      `invalid-multi-factor-session`: `36`,
-      `invalid-oauth-client-id`: `36`,
-      `invalid-oauth-provider`: `36`,
-      `invalid-persistence-type`: `36`,
-      `invalid-phone-number`: `36`,
-      `invalid-provider-id`: `36`,
-      `invalid-recipient-email`: `36`,
-      `invalid-sender`: `36`,
-      `invalid-tenant-id`: `36`,
-      `invalid-user-token`: `36`,
-      `invalid-verification-code`: `36`,
-      `invalid-verification-id`: `36`,
-      `login-blocked`: `36`,
-      `maximum-second-factor-count-exceeded`: `36`,
-      `missing-android-pkg-name`: `36`,
-      `missing-app-credential`: `36`,
-      `missing-continue-uri`: `36`,
-      `missing-iframe-start`: `36`,
-      `missing-ios-bundle-id`: `36`,
-      `missing-multi-factor-info`: `36`,
-      `missing-multi-factor-session`: `36`,
-      `missing-or-invalid-nonce`: `36`,
-      `missing-phone-number`: `36`,
-      `missing-verification-code`: `36`,
-      `missing-verification-id`: `36`,
-      `multi-factor-info-not-found`: `36`,
-      `network-request-failed`: `36`,
-      `no-such-provider`: `36`,
-      `null-user`: `36`,
-      `operation-not-allowed`: `36`,
-      `popup-blocked`: `36`,
-      `popup-closed-by-user`: `36`,
-      `provider-already-linked`: `36`,
-      `quota-exceeded`: `36`,
-      `redirect-cancelled-by-user`: `36`,
-      `redirect-operation-pending`: `36`,
-      `rejected-credential`: `36`,
-      `requires-recent-login`: `36`,
-      `second-factor-already-in-use`: `36`,
-      `tenant-id-mismatch`: `36`,
-      timeout: `36`,
-      `too-many-requests`: `36`,
-      `unauthorized-continue-uri`: `36`,
-      `unauthorized-domain`: `36`,
-      `unsupported-first-factor`: `36`,
-      `unsupported-persistence-type`: `36`,
-      `unsupported-tenant-operation`: `36`,
-      `unverified-email`: `36`,
-      `user-cancelled`: `36`,
-      `user-disabled`: `36`,
-      `user-mismatch`: `36`,
-      `user-not-found`: `36`,
-      `user-signed-out`: `36`,
-      `user-token-expired`: `36`,
-      `weak-password`: `36`,
-      `web-storage-unsupported`: `36`,
-      `wrong-password`: `36`
+      `account-exists-with-different-credential`: `32`,
+      `admin-restricted-operation`: `32`,
+      `already-initialized`: `32`,
+      `app-deleted`: `32`,
+      `app-not-authorized`: `32`,
+      `app-not-installed`: `32`,
+      `auth-domain-config-required`: `32`,
+      `cancelled-popup-request`: `32`,
+      `captcha-check-failed`: `32`,
+      `code-expired`: `32`,
+      `cordova-not-ready`: `32`,
+      `cors-unsupported`: `32`,
+      `credential-already-in-use`: `32`,
+      `custom-token-mismatch`: `32`,
+      `dynamic-link-not-activated`: `32`,
+      `email-already-in-use`: `32`,
+      `email-change-needs-verification`: `32`,
+      `emulator-config-failed`: `32`,
+      `expired-action-code`: `32`,
+      `invalid-action-code`: `32`,
+      `invalid-api-key`: `32`,
+      `invalid-app-credential`: `32`,
+      `invalid-app-id`: `32`,
+      `invalid-auth-event`: `32`,
+      `invalid-cert-hash`: `32`,
+      `invalid-continue-uri`: `32`,
+      `invalid-cordova-configuration`: `32`,
+      `invalid-credential`: `32`,
+      `invalid-custom-token`: `32`,
+      `invalid-dynamic-link-domain`: `32`,
+      `invalid-email`: `32`,
+      `invalid-emulator-scheme`: `32`,
+      `invalid-message-payload`: `32`,
+      `invalid-multi-factor-session`: `32`,
+      `invalid-oauth-client-id`: `32`,
+      `invalid-oauth-provider`: `32`,
+      `invalid-persistence-type`: `32`,
+      `invalid-phone-number`: `32`,
+      `invalid-provider-id`: `32`,
+      `invalid-recipient-email`: `32`,
+      `invalid-sender`: `32`,
+      `invalid-tenant-id`: `32`,
+      `invalid-user-token`: `32`,
+      `invalid-verification-code`: `32`,
+      `invalid-verification-id`: `32`,
+      `login-blocked`: `32`,
+      `maximum-second-factor-count-exceeded`: `32`,
+      `missing-android-pkg-name`: `32`,
+      `missing-app-credential`: `32`,
+      `missing-continue-uri`: `32`,
+      `missing-iframe-start`: `32`,
+      `missing-ios-bundle-id`: `32`,
+      `missing-multi-factor-info`: `32`,
+      `missing-multi-factor-session`: `32`,
+      `missing-or-invalid-nonce`: `32`,
+      `missing-phone-number`: `32`,
+      `missing-verification-code`: `32`,
+      `missing-verification-id`: `32`,
+      `multi-factor-info-not-found`: `32`,
+      `network-request-failed`: `32`,
+      `no-such-provider`: `32`,
+      `null-user`: `32`,
+      `operation-not-allowed`: `32`,
+      `popup-blocked`: `32`,
+      `popup-closed-by-user`: `32`,
+      `provider-already-linked`: `32`,
+      `quota-exceeded`: `32`,
+      `redirect-cancelled-by-user`: `32`,
+      `redirect-operation-pending`: `32`,
+      `rejected-credential`: `32`,
+      `requires-recent-login`: `32`,
+      `second-factor-already-in-use`: `32`,
+      `tenant-id-mismatch`: `32`,
+      timeout: `32`,
+      `too-many-requests`: `32`,
+      `unauthorized-continue-uri`: `32`,
+      `unauthorized-domain`: `32`,
+      `unsupported-first-factor`: `32`,
+      `unsupported-persistence-type`: `32`,
+      `unsupported-tenant-operation`: `32`,
+      `unverified-email`: `32`,
+      `user-cancelled`: `32`,
+      `user-disabled`: `32`,
+      `user-mismatch`: `32`,
+      `user-not-found`: `32`,
+      `user-signed-out`: `32`,
+      `user-token-expired`: `32`,
+      `weak-password`: `32`,
+      `web-storage-unsupported`: `32`,
+      `wrong-password`: `32`
     ): GenericAuthErrorParams = {
       val __obj = js.Dynamic.literal(timeout = timeout.asInstanceOf[js.Any])
       __obj.updateDynamic("account-exists-with-different-credential")(`account-exists-with-different-credential`.asInstanceOf[js.Any])
@@ -1281,185 +1281,185 @@ object distSrcCoreErrorsMod {
     
     extension [Self <: GenericAuthErrorParams](x: Self) {
       
-      inline def `setAccount-exists-with-different-credential`(value: `36`): Self = StObject.set(x, "account-exists-with-different-credential", value.asInstanceOf[js.Any])
+      inline def `setAccount-exists-with-different-credential`(value: `32`): Self = StObject.set(x, "account-exists-with-different-credential", value.asInstanceOf[js.Any])
       
-      inline def `setAdmin-restricted-operation`(value: `36`): Self = StObject.set(x, "admin-restricted-operation", value.asInstanceOf[js.Any])
+      inline def `setAdmin-restricted-operation`(value: `32`): Self = StObject.set(x, "admin-restricted-operation", value.asInstanceOf[js.Any])
       
-      inline def `setAlready-initialized`(value: `36`): Self = StObject.set(x, "already-initialized", value.asInstanceOf[js.Any])
+      inline def `setAlready-initialized`(value: `32`): Self = StObject.set(x, "already-initialized", value.asInstanceOf[js.Any])
       
-      inline def `setApp-deleted`(value: `36`): Self = StObject.set(x, "app-deleted", value.asInstanceOf[js.Any])
+      inline def `setApp-deleted`(value: `32`): Self = StObject.set(x, "app-deleted", value.asInstanceOf[js.Any])
       
-      inline def `setApp-not-authorized`(value: `36`): Self = StObject.set(x, "app-not-authorized", value.asInstanceOf[js.Any])
+      inline def `setApp-not-authorized`(value: `32`): Self = StObject.set(x, "app-not-authorized", value.asInstanceOf[js.Any])
       
-      inline def `setApp-not-installed`(value: `36`): Self = StObject.set(x, "app-not-installed", value.asInstanceOf[js.Any])
+      inline def `setApp-not-installed`(value: `32`): Self = StObject.set(x, "app-not-installed", value.asInstanceOf[js.Any])
       
-      inline def `setAuth-domain-config-required`(value: `36`): Self = StObject.set(x, "auth-domain-config-required", value.asInstanceOf[js.Any])
+      inline def `setAuth-domain-config-required`(value: `32`): Self = StObject.set(x, "auth-domain-config-required", value.asInstanceOf[js.Any])
       
-      inline def `setCancelled-popup-request`(value: `36`): Self = StObject.set(x, "cancelled-popup-request", value.asInstanceOf[js.Any])
+      inline def `setCancelled-popup-request`(value: `32`): Self = StObject.set(x, "cancelled-popup-request", value.asInstanceOf[js.Any])
       
-      inline def `setCaptcha-check-failed`(value: `36`): Self = StObject.set(x, "captcha-check-failed", value.asInstanceOf[js.Any])
+      inline def `setCaptcha-check-failed`(value: `32`): Self = StObject.set(x, "captcha-check-failed", value.asInstanceOf[js.Any])
       
-      inline def `setCode-expired`(value: `36`): Self = StObject.set(x, "code-expired", value.asInstanceOf[js.Any])
+      inline def `setCode-expired`(value: `32`): Self = StObject.set(x, "code-expired", value.asInstanceOf[js.Any])
       
-      inline def `setCordova-not-ready`(value: `36`): Self = StObject.set(x, "cordova-not-ready", value.asInstanceOf[js.Any])
+      inline def `setCordova-not-ready`(value: `32`): Self = StObject.set(x, "cordova-not-ready", value.asInstanceOf[js.Any])
       
-      inline def `setCors-unsupported`(value: `36`): Self = StObject.set(x, "cors-unsupported", value.asInstanceOf[js.Any])
+      inline def `setCors-unsupported`(value: `32`): Self = StObject.set(x, "cors-unsupported", value.asInstanceOf[js.Any])
       
-      inline def `setCredential-already-in-use`(value: `36`): Self = StObject.set(x, "credential-already-in-use", value.asInstanceOf[js.Any])
+      inline def `setCredential-already-in-use`(value: `32`): Self = StObject.set(x, "credential-already-in-use", value.asInstanceOf[js.Any])
       
-      inline def `setCustom-token-mismatch`(value: `36`): Self = StObject.set(x, "custom-token-mismatch", value.asInstanceOf[js.Any])
+      inline def `setCustom-token-mismatch`(value: `32`): Self = StObject.set(x, "custom-token-mismatch", value.asInstanceOf[js.Any])
       
-      inline def `setDynamic-link-not-activated`(value: `36`): Self = StObject.set(x, "dynamic-link-not-activated", value.asInstanceOf[js.Any])
+      inline def `setDynamic-link-not-activated`(value: `32`): Self = StObject.set(x, "dynamic-link-not-activated", value.asInstanceOf[js.Any])
       
-      inline def `setEmail-already-in-use`(value: `36`): Self = StObject.set(x, "email-already-in-use", value.asInstanceOf[js.Any])
+      inline def `setEmail-already-in-use`(value: `32`): Self = StObject.set(x, "email-already-in-use", value.asInstanceOf[js.Any])
       
-      inline def `setEmail-change-needs-verification`(value: `36`): Self = StObject.set(x, "email-change-needs-verification", value.asInstanceOf[js.Any])
+      inline def `setEmail-change-needs-verification`(value: `32`): Self = StObject.set(x, "email-change-needs-verification", value.asInstanceOf[js.Any])
       
-      inline def `setEmulator-config-failed`(value: `36`): Self = StObject.set(x, "emulator-config-failed", value.asInstanceOf[js.Any])
+      inline def `setEmulator-config-failed`(value: `32`): Self = StObject.set(x, "emulator-config-failed", value.asInstanceOf[js.Any])
       
-      inline def `setExpired-action-code`(value: `36`): Self = StObject.set(x, "expired-action-code", value.asInstanceOf[js.Any])
+      inline def `setExpired-action-code`(value: `32`): Self = StObject.set(x, "expired-action-code", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-action-code`(value: `36`): Self = StObject.set(x, "invalid-action-code", value.asInstanceOf[js.Any])
+      inline def `setInvalid-action-code`(value: `32`): Self = StObject.set(x, "invalid-action-code", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-api-key`(value: `36`): Self = StObject.set(x, "invalid-api-key", value.asInstanceOf[js.Any])
+      inline def `setInvalid-api-key`(value: `32`): Self = StObject.set(x, "invalid-api-key", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-app-credential`(value: `36`): Self = StObject.set(x, "invalid-app-credential", value.asInstanceOf[js.Any])
+      inline def `setInvalid-app-credential`(value: `32`): Self = StObject.set(x, "invalid-app-credential", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-app-id`(value: `36`): Self = StObject.set(x, "invalid-app-id", value.asInstanceOf[js.Any])
+      inline def `setInvalid-app-id`(value: `32`): Self = StObject.set(x, "invalid-app-id", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-auth-event`(value: `36`): Self = StObject.set(x, "invalid-auth-event", value.asInstanceOf[js.Any])
+      inline def `setInvalid-auth-event`(value: `32`): Self = StObject.set(x, "invalid-auth-event", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-cert-hash`(value: `36`): Self = StObject.set(x, "invalid-cert-hash", value.asInstanceOf[js.Any])
+      inline def `setInvalid-cert-hash`(value: `32`): Self = StObject.set(x, "invalid-cert-hash", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-continue-uri`(value: `36`): Self = StObject.set(x, "invalid-continue-uri", value.asInstanceOf[js.Any])
+      inline def `setInvalid-continue-uri`(value: `32`): Self = StObject.set(x, "invalid-continue-uri", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-cordova-configuration`(value: `36`): Self = StObject.set(x, "invalid-cordova-configuration", value.asInstanceOf[js.Any])
+      inline def `setInvalid-cordova-configuration`(value: `32`): Self = StObject.set(x, "invalid-cordova-configuration", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-credential`(value: `36`): Self = StObject.set(x, "invalid-credential", value.asInstanceOf[js.Any])
+      inline def `setInvalid-credential`(value: `32`): Self = StObject.set(x, "invalid-credential", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-custom-token`(value: `36`): Self = StObject.set(x, "invalid-custom-token", value.asInstanceOf[js.Any])
+      inline def `setInvalid-custom-token`(value: `32`): Self = StObject.set(x, "invalid-custom-token", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-dynamic-link-domain`(value: `36`): Self = StObject.set(x, "invalid-dynamic-link-domain", value.asInstanceOf[js.Any])
+      inline def `setInvalid-dynamic-link-domain`(value: `32`): Self = StObject.set(x, "invalid-dynamic-link-domain", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-email`(value: `36`): Self = StObject.set(x, "invalid-email", value.asInstanceOf[js.Any])
+      inline def `setInvalid-email`(value: `32`): Self = StObject.set(x, "invalid-email", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-emulator-scheme`(value: `36`): Self = StObject.set(x, "invalid-emulator-scheme", value.asInstanceOf[js.Any])
+      inline def `setInvalid-emulator-scheme`(value: `32`): Self = StObject.set(x, "invalid-emulator-scheme", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-message-payload`(value: `36`): Self = StObject.set(x, "invalid-message-payload", value.asInstanceOf[js.Any])
+      inline def `setInvalid-message-payload`(value: `32`): Self = StObject.set(x, "invalid-message-payload", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-multi-factor-session`(value: `36`): Self = StObject.set(x, "invalid-multi-factor-session", value.asInstanceOf[js.Any])
+      inline def `setInvalid-multi-factor-session`(value: `32`): Self = StObject.set(x, "invalid-multi-factor-session", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-oauth-client-id`(value: `36`): Self = StObject.set(x, "invalid-oauth-client-id", value.asInstanceOf[js.Any])
+      inline def `setInvalid-oauth-client-id`(value: `32`): Self = StObject.set(x, "invalid-oauth-client-id", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-oauth-provider`(value: `36`): Self = StObject.set(x, "invalid-oauth-provider", value.asInstanceOf[js.Any])
+      inline def `setInvalid-oauth-provider`(value: `32`): Self = StObject.set(x, "invalid-oauth-provider", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-persistence-type`(value: `36`): Self = StObject.set(x, "invalid-persistence-type", value.asInstanceOf[js.Any])
+      inline def `setInvalid-persistence-type`(value: `32`): Self = StObject.set(x, "invalid-persistence-type", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-phone-number`(value: `36`): Self = StObject.set(x, "invalid-phone-number", value.asInstanceOf[js.Any])
+      inline def `setInvalid-phone-number`(value: `32`): Self = StObject.set(x, "invalid-phone-number", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-provider-id`(value: `36`): Self = StObject.set(x, "invalid-provider-id", value.asInstanceOf[js.Any])
+      inline def `setInvalid-provider-id`(value: `32`): Self = StObject.set(x, "invalid-provider-id", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-recipient-email`(value: `36`): Self = StObject.set(x, "invalid-recipient-email", value.asInstanceOf[js.Any])
+      inline def `setInvalid-recipient-email`(value: `32`): Self = StObject.set(x, "invalid-recipient-email", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-sender`(value: `36`): Self = StObject.set(x, "invalid-sender", value.asInstanceOf[js.Any])
+      inline def `setInvalid-sender`(value: `32`): Self = StObject.set(x, "invalid-sender", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-tenant-id`(value: `36`): Self = StObject.set(x, "invalid-tenant-id", value.asInstanceOf[js.Any])
+      inline def `setInvalid-tenant-id`(value: `32`): Self = StObject.set(x, "invalid-tenant-id", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-user-token`(value: `36`): Self = StObject.set(x, "invalid-user-token", value.asInstanceOf[js.Any])
+      inline def `setInvalid-user-token`(value: `32`): Self = StObject.set(x, "invalid-user-token", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-verification-code`(value: `36`): Self = StObject.set(x, "invalid-verification-code", value.asInstanceOf[js.Any])
+      inline def `setInvalid-verification-code`(value: `32`): Self = StObject.set(x, "invalid-verification-code", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-verification-id`(value: `36`): Self = StObject.set(x, "invalid-verification-id", value.asInstanceOf[js.Any])
+      inline def `setInvalid-verification-id`(value: `32`): Self = StObject.set(x, "invalid-verification-id", value.asInstanceOf[js.Any])
       
-      inline def `setLogin-blocked`(value: `36`): Self = StObject.set(x, "login-blocked", value.asInstanceOf[js.Any])
+      inline def `setLogin-blocked`(value: `32`): Self = StObject.set(x, "login-blocked", value.asInstanceOf[js.Any])
       
-      inline def `setMaximum-second-factor-count-exceeded`(value: `36`): Self = StObject.set(x, "maximum-second-factor-count-exceeded", value.asInstanceOf[js.Any])
+      inline def `setMaximum-second-factor-count-exceeded`(value: `32`): Self = StObject.set(x, "maximum-second-factor-count-exceeded", value.asInstanceOf[js.Any])
       
-      inline def `setMissing-android-pkg-name`(value: `36`): Self = StObject.set(x, "missing-android-pkg-name", value.asInstanceOf[js.Any])
+      inline def `setMissing-android-pkg-name`(value: `32`): Self = StObject.set(x, "missing-android-pkg-name", value.asInstanceOf[js.Any])
       
-      inline def `setMissing-app-credential`(value: `36`): Self = StObject.set(x, "missing-app-credential", value.asInstanceOf[js.Any])
+      inline def `setMissing-app-credential`(value: `32`): Self = StObject.set(x, "missing-app-credential", value.asInstanceOf[js.Any])
       
-      inline def `setMissing-continue-uri`(value: `36`): Self = StObject.set(x, "missing-continue-uri", value.asInstanceOf[js.Any])
+      inline def `setMissing-continue-uri`(value: `32`): Self = StObject.set(x, "missing-continue-uri", value.asInstanceOf[js.Any])
       
-      inline def `setMissing-iframe-start`(value: `36`): Self = StObject.set(x, "missing-iframe-start", value.asInstanceOf[js.Any])
+      inline def `setMissing-iframe-start`(value: `32`): Self = StObject.set(x, "missing-iframe-start", value.asInstanceOf[js.Any])
       
-      inline def `setMissing-ios-bundle-id`(value: `36`): Self = StObject.set(x, "missing-ios-bundle-id", value.asInstanceOf[js.Any])
+      inline def `setMissing-ios-bundle-id`(value: `32`): Self = StObject.set(x, "missing-ios-bundle-id", value.asInstanceOf[js.Any])
       
-      inline def `setMissing-multi-factor-info`(value: `36`): Self = StObject.set(x, "missing-multi-factor-info", value.asInstanceOf[js.Any])
+      inline def `setMissing-multi-factor-info`(value: `32`): Self = StObject.set(x, "missing-multi-factor-info", value.asInstanceOf[js.Any])
       
-      inline def `setMissing-multi-factor-session`(value: `36`): Self = StObject.set(x, "missing-multi-factor-session", value.asInstanceOf[js.Any])
+      inline def `setMissing-multi-factor-session`(value: `32`): Self = StObject.set(x, "missing-multi-factor-session", value.asInstanceOf[js.Any])
       
-      inline def `setMissing-or-invalid-nonce`(value: `36`): Self = StObject.set(x, "missing-or-invalid-nonce", value.asInstanceOf[js.Any])
+      inline def `setMissing-or-invalid-nonce`(value: `32`): Self = StObject.set(x, "missing-or-invalid-nonce", value.asInstanceOf[js.Any])
       
-      inline def `setMissing-phone-number`(value: `36`): Self = StObject.set(x, "missing-phone-number", value.asInstanceOf[js.Any])
+      inline def `setMissing-phone-number`(value: `32`): Self = StObject.set(x, "missing-phone-number", value.asInstanceOf[js.Any])
       
-      inline def `setMissing-verification-code`(value: `36`): Self = StObject.set(x, "missing-verification-code", value.asInstanceOf[js.Any])
+      inline def `setMissing-verification-code`(value: `32`): Self = StObject.set(x, "missing-verification-code", value.asInstanceOf[js.Any])
       
-      inline def `setMissing-verification-id`(value: `36`): Self = StObject.set(x, "missing-verification-id", value.asInstanceOf[js.Any])
+      inline def `setMissing-verification-id`(value: `32`): Self = StObject.set(x, "missing-verification-id", value.asInstanceOf[js.Any])
       
-      inline def `setMulti-factor-info-not-found`(value: `36`): Self = StObject.set(x, "multi-factor-info-not-found", value.asInstanceOf[js.Any])
+      inline def `setMulti-factor-info-not-found`(value: `32`): Self = StObject.set(x, "multi-factor-info-not-found", value.asInstanceOf[js.Any])
       
-      inline def `setNetwork-request-failed`(value: `36`): Self = StObject.set(x, "network-request-failed", value.asInstanceOf[js.Any])
+      inline def `setNetwork-request-failed`(value: `32`): Self = StObject.set(x, "network-request-failed", value.asInstanceOf[js.Any])
       
-      inline def `setNo-such-provider`(value: `36`): Self = StObject.set(x, "no-such-provider", value.asInstanceOf[js.Any])
+      inline def `setNo-such-provider`(value: `32`): Self = StObject.set(x, "no-such-provider", value.asInstanceOf[js.Any])
       
-      inline def `setNull-user`(value: `36`): Self = StObject.set(x, "null-user", value.asInstanceOf[js.Any])
+      inline def `setNull-user`(value: `32`): Self = StObject.set(x, "null-user", value.asInstanceOf[js.Any])
       
-      inline def `setOperation-not-allowed`(value: `36`): Self = StObject.set(x, "operation-not-allowed", value.asInstanceOf[js.Any])
+      inline def `setOperation-not-allowed`(value: `32`): Self = StObject.set(x, "operation-not-allowed", value.asInstanceOf[js.Any])
       
-      inline def `setPopup-blocked`(value: `36`): Self = StObject.set(x, "popup-blocked", value.asInstanceOf[js.Any])
+      inline def `setPopup-blocked`(value: `32`): Self = StObject.set(x, "popup-blocked", value.asInstanceOf[js.Any])
       
-      inline def `setPopup-closed-by-user`(value: `36`): Self = StObject.set(x, "popup-closed-by-user", value.asInstanceOf[js.Any])
+      inline def `setPopup-closed-by-user`(value: `32`): Self = StObject.set(x, "popup-closed-by-user", value.asInstanceOf[js.Any])
       
-      inline def `setProvider-already-linked`(value: `36`): Self = StObject.set(x, "provider-already-linked", value.asInstanceOf[js.Any])
+      inline def `setProvider-already-linked`(value: `32`): Self = StObject.set(x, "provider-already-linked", value.asInstanceOf[js.Any])
       
-      inline def `setQuota-exceeded`(value: `36`): Self = StObject.set(x, "quota-exceeded", value.asInstanceOf[js.Any])
+      inline def `setQuota-exceeded`(value: `32`): Self = StObject.set(x, "quota-exceeded", value.asInstanceOf[js.Any])
       
-      inline def `setRedirect-cancelled-by-user`(value: `36`): Self = StObject.set(x, "redirect-cancelled-by-user", value.asInstanceOf[js.Any])
+      inline def `setRedirect-cancelled-by-user`(value: `32`): Self = StObject.set(x, "redirect-cancelled-by-user", value.asInstanceOf[js.Any])
       
-      inline def `setRedirect-operation-pending`(value: `36`): Self = StObject.set(x, "redirect-operation-pending", value.asInstanceOf[js.Any])
+      inline def `setRedirect-operation-pending`(value: `32`): Self = StObject.set(x, "redirect-operation-pending", value.asInstanceOf[js.Any])
       
-      inline def `setRejected-credential`(value: `36`): Self = StObject.set(x, "rejected-credential", value.asInstanceOf[js.Any])
+      inline def `setRejected-credential`(value: `32`): Self = StObject.set(x, "rejected-credential", value.asInstanceOf[js.Any])
       
-      inline def `setRequires-recent-login`(value: `36`): Self = StObject.set(x, "requires-recent-login", value.asInstanceOf[js.Any])
+      inline def `setRequires-recent-login`(value: `32`): Self = StObject.set(x, "requires-recent-login", value.asInstanceOf[js.Any])
       
-      inline def `setSecond-factor-already-in-use`(value: `36`): Self = StObject.set(x, "second-factor-already-in-use", value.asInstanceOf[js.Any])
+      inline def `setSecond-factor-already-in-use`(value: `32`): Self = StObject.set(x, "second-factor-already-in-use", value.asInstanceOf[js.Any])
       
-      inline def `setTenant-id-mismatch`(value: `36`): Self = StObject.set(x, "tenant-id-mismatch", value.asInstanceOf[js.Any])
+      inline def `setTenant-id-mismatch`(value: `32`): Self = StObject.set(x, "tenant-id-mismatch", value.asInstanceOf[js.Any])
       
-      inline def setTimeout(value: `36`): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: `32`): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      inline def `setToo-many-requests`(value: `36`): Self = StObject.set(x, "too-many-requests", value.asInstanceOf[js.Any])
+      inline def `setToo-many-requests`(value: `32`): Self = StObject.set(x, "too-many-requests", value.asInstanceOf[js.Any])
       
-      inline def `setUnauthorized-continue-uri`(value: `36`): Self = StObject.set(x, "unauthorized-continue-uri", value.asInstanceOf[js.Any])
+      inline def `setUnauthorized-continue-uri`(value: `32`): Self = StObject.set(x, "unauthorized-continue-uri", value.asInstanceOf[js.Any])
       
-      inline def `setUnauthorized-domain`(value: `36`): Self = StObject.set(x, "unauthorized-domain", value.asInstanceOf[js.Any])
+      inline def `setUnauthorized-domain`(value: `32`): Self = StObject.set(x, "unauthorized-domain", value.asInstanceOf[js.Any])
       
-      inline def `setUnsupported-first-factor`(value: `36`): Self = StObject.set(x, "unsupported-first-factor", value.asInstanceOf[js.Any])
+      inline def `setUnsupported-first-factor`(value: `32`): Self = StObject.set(x, "unsupported-first-factor", value.asInstanceOf[js.Any])
       
-      inline def `setUnsupported-persistence-type`(value: `36`): Self = StObject.set(x, "unsupported-persistence-type", value.asInstanceOf[js.Any])
+      inline def `setUnsupported-persistence-type`(value: `32`): Self = StObject.set(x, "unsupported-persistence-type", value.asInstanceOf[js.Any])
       
-      inline def `setUnsupported-tenant-operation`(value: `36`): Self = StObject.set(x, "unsupported-tenant-operation", value.asInstanceOf[js.Any])
+      inline def `setUnsupported-tenant-operation`(value: `32`): Self = StObject.set(x, "unsupported-tenant-operation", value.asInstanceOf[js.Any])
       
-      inline def `setUnverified-email`(value: `36`): Self = StObject.set(x, "unverified-email", value.asInstanceOf[js.Any])
+      inline def `setUnverified-email`(value: `32`): Self = StObject.set(x, "unverified-email", value.asInstanceOf[js.Any])
       
-      inline def `setUser-cancelled`(value: `36`): Self = StObject.set(x, "user-cancelled", value.asInstanceOf[js.Any])
+      inline def `setUser-cancelled`(value: `32`): Self = StObject.set(x, "user-cancelled", value.asInstanceOf[js.Any])
       
-      inline def `setUser-disabled`(value: `36`): Self = StObject.set(x, "user-disabled", value.asInstanceOf[js.Any])
+      inline def `setUser-disabled`(value: `32`): Self = StObject.set(x, "user-disabled", value.asInstanceOf[js.Any])
       
-      inline def `setUser-mismatch`(value: `36`): Self = StObject.set(x, "user-mismatch", value.asInstanceOf[js.Any])
+      inline def `setUser-mismatch`(value: `32`): Self = StObject.set(x, "user-mismatch", value.asInstanceOf[js.Any])
       
-      inline def `setUser-not-found`(value: `36`): Self = StObject.set(x, "user-not-found", value.asInstanceOf[js.Any])
+      inline def `setUser-not-found`(value: `32`): Self = StObject.set(x, "user-not-found", value.asInstanceOf[js.Any])
       
-      inline def `setUser-signed-out`(value: `36`): Self = StObject.set(x, "user-signed-out", value.asInstanceOf[js.Any])
+      inline def `setUser-signed-out`(value: `32`): Self = StObject.set(x, "user-signed-out", value.asInstanceOf[js.Any])
       
-      inline def `setUser-token-expired`(value: `36`): Self = StObject.set(x, "user-token-expired", value.asInstanceOf[js.Any])
+      inline def `setUser-token-expired`(value: `32`): Self = StObject.set(x, "user-token-expired", value.asInstanceOf[js.Any])
       
-      inline def `setWeak-password`(value: `36`): Self = StObject.set(x, "weak-password", value.asInstanceOf[js.Any])
+      inline def `setWeak-password`(value: `32`): Self = StObject.set(x, "weak-password", value.asInstanceOf[js.Any])
       
-      inline def `setWeb-storage-unsupported`(value: `36`): Self = StObject.set(x, "web-storage-unsupported", value.asInstanceOf[js.Any])
+      inline def `setWeb-storage-unsupported`(value: `32`): Self = StObject.set(x, "web-storage-unsupported", value.asInstanceOf[js.Any])
       
-      inline def `setWrong-password`(value: `36`): Self = StObject.set(x, "wrong-password", value.asInstanceOf[js.Any])
+      inline def `setWrong-password`(value: `32`): Self = StObject.set(x, "wrong-password", value.asInstanceOf[js.Any])
     }
   }
   

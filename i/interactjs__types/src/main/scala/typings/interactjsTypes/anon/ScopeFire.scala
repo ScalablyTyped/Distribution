@@ -124,7 +124,7 @@ trait ScopeFire extends StObject {
   @JSName("scopeFire")
   def scopeFire_interactionsbeforeactionstart(name: `interactionsColonbefore-action-start`, arg: OmitDoAnyPhaseArgiEvent): Unit | `false`
   @JSName("scopeFire")
-  def scopeFire_interactionsblur(name: interactionsColonblur, arg: Event): Unit | `false`
+  def scopeFire_interactionsblur(name: interactionsColonblur, arg: EventInteraction): Unit | `false`
   @JSName("scopeFire")
   def scopeFire_interactionsdestroy(name: interactionsColondestroy, arg: Interaction): Unit | `false`
   @JSName("scopeFire")

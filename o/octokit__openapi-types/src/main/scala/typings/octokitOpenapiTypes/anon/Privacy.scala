@@ -1,39 +1,47 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.admin
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.closed
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.pull
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.push
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.secret
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Privacy extends StObject {
   
-  var description: js.UndefOr[String | Null] = js.undefined
+  /** @description The description of the team. */
+  var description: js.UndefOr[String] = js.undefined
   
-  var html_url: js.UndefOr[String] = js.undefined
+  /** @description The name of the team. */
+  var name: String
   
-  var id: js.UndefOr[Double] = js.undefined
+  /** @description The ID of a team to set as the parent team. */
+  var parent_team_id: js.UndefOr[Double | Null] = js.undefined
   
-  var members_url: js.UndefOr[String] = js.undefined
+  /**
+    * @description **Deprecated**. The permission that new repositories will be added to the team with when none is specified.
+    * @default pull
+    * @enum {string}
+    */
+  var permission: js.UndefOr[pull | push | admin] = js.undefined
   
-  var name: js.UndefOr[String] = js.undefined
-  
-  var node_id: js.UndefOr[String] = js.undefined
-  
-  var parent: js.UndefOr[String | Null] = js.undefined
-  
-  var permission: js.UndefOr[String] = js.undefined
-  
-  var privacy: js.UndefOr[String] = js.undefined
-  
-  var repositories_url: js.UndefOr[String] = js.undefined
-  
-  var slug: js.UndefOr[String] = js.undefined
-  
-  var url: js.UndefOr[String] = js.undefined
+  /**
+    * @description The level of privacy this team should have. Editing teams without specifying this parameter leaves `privacy` intact. The options are:
+    * **For a non-nested team:**
+    * \* `secret` - only visible to organization owners and members of this team.
+    * \* `closed` - visible to all members of this organization.
+    * **For a parent or child team:**
+    * \* `closed` - visible to all members of this organization.
+    * @enum {string}
+    */
+  var privacy: js.UndefOr[secret | closed] = js.undefined
 }
 object Privacy {
   
-  inline def apply(): Privacy = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(name: String): Privacy = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Privacy]
   }
   
@@ -41,54 +49,22 @@ object Privacy {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
-    
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
-    
-    inline def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
-    
-    inline def setHtml_urlUndefined: Self = StObject.set(x, "html_url", js.undefined)
-    
-    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-    
-    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
-    
-    inline def setMembers_url(value: String): Self = StObject.set(x, "members_url", value.asInstanceOf[js.Any])
-    
-    inline def setMembers_urlUndefined: Self = StObject.set(x, "members_url", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setParent_team_id(value: Double): Self = StObject.set(x, "parent_team_id", value.asInstanceOf[js.Any])
     
-    inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
+    inline def setParent_team_idNull: Self = StObject.set(x, "parent_team_id", null)
     
-    inline def setNode_idUndefined: Self = StObject.set(x, "node_id", js.undefined)
+    inline def setParent_team_idUndefined: Self = StObject.set(x, "parent_team_id", js.undefined)
     
-    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
-    
-    inline def setParentNull: Self = StObject.set(x, "parent", null)
-    
-    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
-    
-    inline def setPermission(value: String): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
+    inline def setPermission(value: pull | push | admin): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     
     inline def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
     
-    inline def setPrivacy(value: String): Self = StObject.set(x, "privacy", value.asInstanceOf[js.Any])
+    inline def setPrivacy(value: secret | closed): Self = StObject.set(x, "privacy", value.asInstanceOf[js.Any])
     
     inline def setPrivacyUndefined: Self = StObject.set(x, "privacy", js.undefined)
-    
-    inline def setRepositories_url(value: String): Self = StObject.set(x, "repositories_url", value.asInstanceOf[js.Any])
-    
-    inline def setRepositories_urlUndefined: Self = StObject.set(x, "repositories_url", js.undefined)
-    
-    inline def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
-    
-    inline def setSlugUndefined: Self = StObject.set(x, "slug", js.undefined)
-    
-    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
-    
-    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

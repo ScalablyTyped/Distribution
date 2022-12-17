@@ -42,7 +42,7 @@ object srcMaterialsShaderMaterialMod {
     /**
       * @default { derivatives: false, fragDepth: false, drawBuffers: false, shaderTextureLOD: false }
       */
-    var extensions: Derivatives = js.native
+    var extensions: DrawBuffers = js.native
     
     /**
       * @default false
@@ -104,7 +104,7 @@ object srcMaterialsShaderMaterialMod {
     
     var clipping: js.UndefOr[Boolean] = js.undefined
     
-    var extensions: js.UndefOr[DrawBuffers] = js.undefined
+    var extensions: js.UndefOr[Derivatives] = js.undefined
     
     var fog: js.UndefOr[Boolean] = js.undefined
     
@@ -137,7 +137,7 @@ object srcMaterialsShaderMaterialMod {
       
       inline def setClippingUndefined: Self = StObject.set(x, "clipping", js.undefined)
       
-      inline def setExtensions(value: DrawBuffers): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: Derivatives): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
       inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       

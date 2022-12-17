@@ -33,7 +33,7 @@ object Positionals {
     
     inline def setTokens(value: ParsedTokens[T]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     
-    inline def setTokensVarargs(value: (ParsedOptionToken[T] | ParsedPositionalToken[T] | IndexKind)*): Self = StObject.set(x, "tokens", js.Array(value*))
+    inline def setTokensVarargs(value: (ParsedOptionToken[T] | ParsedPositionalToken[T] | Kind)*): Self = StObject.set(x, "tokens", js.Array(value*))
     
     inline def setValues(value: ParsedValues[T]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
   }

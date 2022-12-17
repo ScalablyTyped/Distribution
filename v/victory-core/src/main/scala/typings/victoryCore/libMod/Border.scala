@@ -1,8 +1,7 @@
 package typings.victoryCore.libMod
 
 import typings.react.mod.ReactElement
-import typings.victoryCore.anon.ClassName
-import typings.victoryCore.anon.RectComponent
+import typings.victoryCore.anon.Role
 import typings.victoryCore.libVictoryPrimitivesBorderMod.BorderProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,11 +17,11 @@ object Border {
   
   @JSImport("victory-core/lib", "Border.defaultProps")
   @js.native
-  def defaultProps: RectComponent = js.native
-  inline def defaultProps_=(x: RectComponent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  def defaultProps: Role = js.native
+  inline def defaultProps_=(x: Role): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
   @JSImport("victory-core/lib", "Border.propTypes")
   @js.native
-  def propTypes: ClassName = js.native
-  inline def propTypes_=(x: ClassName): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+  def propTypes: typings.victoryCore.anon.ClipPath = js.native
+  inline def propTypes_=(x: typings.victoryCore.anon.ClipPath): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
 }

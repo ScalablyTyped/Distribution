@@ -8,11 +8,11 @@ trait RequestBody extends StObject {
   
   var requestBody: ContentApplicationjsonContenttype
   
-  var responses: `200ContentApplicationjsonSecret`
+  var responses: `200Content2`
 }
 object RequestBody {
   
-  inline def apply(requestBody: ContentApplicationjsonContenttype, responses: `200ContentApplicationjsonSecret`): RequestBody = {
+  inline def apply(requestBody: ContentApplicationjsonContenttype, responses: `200Content2`): RequestBody = {
     val __obj = js.Dynamic.literal(requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBody]
   }
@@ -21,6 +21,6 @@ object RequestBody {
     
     inline def setRequestBody(value: ContentApplicationjsonContenttype): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200ContentApplicationjsonSecret`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200Content2`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

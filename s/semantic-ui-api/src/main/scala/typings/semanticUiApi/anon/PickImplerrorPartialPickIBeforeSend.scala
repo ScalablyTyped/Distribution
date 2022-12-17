@@ -14,7 +14,7 @@ trait PickImplerrorPartialPickIBeforeSend
   
   var beforeSend: js.UndefOr[String] = js.undefined
   
-  var error: String & js.UndefOr[String]
+  var error: String
   
   var exitConditions: js.UndefOr[String] = js.undefined
   
@@ -38,7 +38,7 @@ trait PickImplerrorPartialPickIBeforeSend
 }
 object PickImplerrorPartialPickIBeforeSend {
   
-  inline def apply(error: String & js.UndefOr[String]): PickImplerrorPartialPickIBeforeSend = {
+  inline def apply(error: String): PickImplerrorPartialPickIBeforeSend = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplerrorPartialPickIBeforeSend]
   }
@@ -49,7 +49,7 @@ object PickImplerrorPartialPickIBeforeSend {
     
     inline def setBeforeSendUndefined: Self = StObject.set(x, "beforeSend", js.undefined)
     
-    inline def setError(value: String & js.UndefOr[String]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     inline def setExitConditions(value: String): Self = StObject.set(x, "exitConditions", value.asInstanceOf[js.Any])
     

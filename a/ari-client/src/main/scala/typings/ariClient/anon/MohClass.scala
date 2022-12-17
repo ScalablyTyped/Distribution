@@ -6,16 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MohClass extends StObject {
   
+  var bridgeId: String
+  
   var mohClass: js.UndefOr[String] = js.undefined
 }
 object MohClass {
   
-  inline def apply(): MohClass = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(bridgeId: String): MohClass = {
+    val __obj = js.Dynamic.literal(bridgeId = bridgeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MohClass]
   }
   
   extension [Self <: MohClass](x: Self) {
+    
+    inline def setBridgeId(value: String): Self = StObject.set(x, "bridgeId", value.asInstanceOf[js.Any])
     
     inline def setMohClass(value: String): Self = StObject.set(x, "mohClass", value.asInstanceOf[js.Any])
     

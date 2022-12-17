@@ -1,8 +1,8 @@
 package typings.sinclairTypebox.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.sinclairTypebox.anon.`0`
 import typings.sinclairTypebox.anon.`1`
-import typings.sinclairTypebox.anon.`2`
 import typings.sinclairTypebox.mod.^
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -82,7 +82,7 @@ type TKeyOf[T /* <: TObject[TProperties] */] = TUnion[UnionLiteralsFromObject[T]
 
 type TLiteralValue = String | Double | Boolean
 
-type TOptional[T /* <: TSchema */] = T & typings.sinclairTypebox.anon.Modifier
+type TOptional[T /* <: TSchema */] = T & `0`
 
 type TParameters[T /* <: TFunction[js.Array[TSchema], TSchema] */] = TTuple[
 /* import warning: importer.ImportType#apply Failed type conversion: T['parameters'] */ js.Any]
@@ -92,9 +92,9 @@ type TPick[T /* <: TObject[TProperties] */, Properties /* <: js.Array[ObjectProp
 
 type TProperties = StringDictionary[TSchema]
 
-type TReadonly[T /* <: TSchema */] = T & `1`
+type TReadonly[T /* <: TSchema */] = T & typings.sinclairTypebox.anon.Modifier
 
-type TReadonlyOptional[T /* <: TSchema */] = T & `2`
+type TReadonlyOptional[T /* <: TSchema */] = T & `1`
 
 type TRecordKey = TString[String] | TNumber | TUnion[js.Array[TLiteral[Any]]]
 

@@ -24,25 +24,25 @@ object proxy {
   
   @JSGlobal("webix.proxy.GraphQL")
   @js.native
-  val GraphQL: GraphQLProxy & typings.webix.webix.GraphQLProxy = js.native
+  val GraphQL: GraphQLProxy = js.native
   
   @JSGlobal("webix.proxy.binary")
   @js.native
-  val binary: binaryProxy & typings.webix.webix.binaryProxy = js.native
+  val binary: binaryProxy = js.native
   
   @JSGlobal("webix.proxy.debug")
   @js.native
-  val debug: debugProxy & typings.webix.webix.debugProxy = js.native
+  val debug: debugProxy = js.native
   
   @JSGlobal("webix.proxy.json")
   @js.native
-  val json: jsonProxy & typings.webix.webix.jsonProxy = js.native
+  val json: jsonProxy = js.native
   
   @JSGlobal("webix.proxy.post")
   @js.native
-  val post: postProxy & typings.webix.webix.postProxy = js.native
+  val post: postProxy = js.native
   
   @JSGlobal("webix.proxy.rest")
   @js.native
-  val rest: restProxy & typings.webix.webix.restProxy = js.native
+  val rest: restProxy = js.native
 }

@@ -67,7 +67,7 @@ trait PickImplonRefreshPartialP
   
   def onRefresh(): Unit
   @JSName("onRefresh")
-  var onRefresh_Original: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+  var onRefresh_Original: js.ThisFunction0[/* this */ JQuery, Unit]
   
   var onTopPassed: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
@@ -105,9 +105,7 @@ trait PickImplonRefreshPartialP
 }
 object PickImplonRefreshPartialP {
   
-  inline def apply(
-    onRefresh: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-  ): PickImplonRefreshPartialP = {
+  inline def apply(onRefresh: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonRefreshPartialP = {
     val __obj = js.Dynamic.literal(onRefresh = onRefresh.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonRefreshPartialP]
   }
@@ -210,9 +208,7 @@ object PickImplonRefreshPartialP {
     
     inline def setOnPassingUndefined: Self = StObject.set(x, "onPassing", js.undefined)
     
-    inline def setOnRefresh(
-      value: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
-    ): Self = StObject.set(x, "onRefresh", value.asInstanceOf[js.Any])
+    inline def setOnRefresh(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onRefresh", value.asInstanceOf[js.Any])
     
     inline def setOnTopPassed(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onTopPassed", value.asInstanceOf[js.Any])
     

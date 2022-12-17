@@ -8,14 +8,12 @@ trait Date extends StObject {
   
   var Date: String
   
-  var HTML: Double
-  
-  var Text: Double
+  var Sent: Double
 }
 object Date {
   
-  inline def apply(Date: String, HTML: Double, Text: Double): Date = {
-    val __obj = js.Dynamic.literal(Date = Date.asInstanceOf[js.Any], HTML = HTML.asInstanceOf[js.Any], Text = Text.asInstanceOf[js.Any])
+  inline def apply(Date: String, Sent: Double): Date = {
+    val __obj = js.Dynamic.literal(Date = Date.asInstanceOf[js.Any], Sent = Sent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Date]
   }
   
@@ -23,8 +21,6 @@ object Date {
     
     inline def setDate(value: String): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     
-    inline def setHTML(value: Double): Self = StObject.set(x, "HTML", value.asInstanceOf[js.Any])
-    
-    inline def setText(value: Double): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setSent(value: Double): Self = StObject.set(x, "Sent", value.asInstanceOf[js.Any])
   }
 }

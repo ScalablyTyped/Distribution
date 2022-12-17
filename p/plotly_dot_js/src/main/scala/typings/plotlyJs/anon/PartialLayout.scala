@@ -40,7 +40,7 @@ trait PartialLayout extends StObject {
   
   var angularaxis: js.UndefOr[js.Object] = js.undefined
   
-  var annotations: js.UndefOr[js.Array[PartialAnnotationsAlign]] = js.undefined
+  var annotations: js.UndefOr[js.Array[PartialAnnotations]] = js.undefined
   
   var autosize: js.UndefOr[Boolean] = js.undefined
   
@@ -86,9 +86,9 @@ trait PartialLayout extends StObject {
   
   var images: js.UndefOr[js.Array[PartialImage]] = js.undefined
   
-  var legend: js.UndefOr[PartialLegend] = js.undefined
+  var legend: js.UndefOr[PartialLegendBgcolor] = js.undefined
   
-  var mapbox: js.UndefOr[PartialMapbox] = js.undefined
+  var mapbox: js.UndefOr[PartialMapboxAccesstoken] = js.undefined
   
   var margin: js.UndefOr[PartialMargin] = js.undefined
   
@@ -100,27 +100,27 @@ trait PartialLayout extends StObject {
   
   var plot_bgcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
-  var polar: js.UndefOr[PartialPolarLayout] = js.undefined
+  var polar: js.UndefOr[PartialPolarLayoutAngularaxis] = js.undefined
   
-  var polar2: js.UndefOr[PartialPolarLayout] = js.undefined
+  var polar2: js.UndefOr[PartialPolarLayoutAngularaxis] = js.undefined
   
-  var polar3: js.UndefOr[PartialPolarLayout] = js.undefined
+  var polar3: js.UndefOr[PartialPolarLayoutAngularaxis] = js.undefined
   
-  var polar4: js.UndefOr[PartialPolarLayout] = js.undefined
+  var polar4: js.UndefOr[PartialPolarLayoutAngularaxis] = js.undefined
   
-  var polar5: js.UndefOr[PartialPolarLayout] = js.undefined
+  var polar5: js.UndefOr[PartialPolarLayoutAngularaxis] = js.undefined
   
-  var polar6: js.UndefOr[PartialPolarLayout] = js.undefined
+  var polar6: js.UndefOr[PartialPolarLayoutAngularaxis] = js.undefined
   
-  var polar7: js.UndefOr[PartialPolarLayout] = js.undefined
+  var polar7: js.UndefOr[PartialPolarLayoutAngularaxis] = js.undefined
   
-  var polar8: js.UndefOr[PartialPolarLayout] = js.undefined
+  var polar8: js.UndefOr[PartialPolarLayoutAngularaxis] = js.undefined
   
-  var polar9: js.UndefOr[PartialPolarLayout] = js.undefined
+  var polar9: js.UndefOr[PartialPolarLayoutAngularaxis] = js.undefined
   
-  var radialaxis: js.UndefOr[PartialAxis] = js.undefined
+  var radialaxis: js.UndefOr[PartialAxisAutorange] = js.undefined
   
-  var scene: js.UndefOr[PartialScene] = js.undefined
+  var scene: js.UndefOr[PartialSceneAnnotations] = js.undefined
   
   var selectdirection: js.UndefOr[h | v | d | any] = js.undefined
   
@@ -132,7 +132,7 @@ trait PartialLayout extends StObject {
   
   var showlegend: js.UndefOr[Boolean] = js.undefined
   
-  var sliders: js.UndefOr[js.Array[PartialSlider]] = js.undefined
+  var sliders: js.UndefOr[js.Array[PartialSliderActive]] = js.undefined
   
   var subplot: js.UndefOr[String] = js.undefined
   
@@ -152,23 +152,23 @@ trait PartialLayout extends StObject {
   
   var width: js.UndefOr[Double] = js.undefined
   
-  var xaxis: js.UndefOr[PartialLayoutAxisAnchor] = js.undefined
+  var xaxis: js.UndefOr[PartialLayoutAxis] = js.undefined
   
-  var xaxis2: js.UndefOr[PartialLayoutAxisAnchor] = js.undefined
+  var xaxis2: js.UndefOr[PartialLayoutAxis] = js.undefined
   
-  var xaxis3: js.UndefOr[PartialLayoutAxisAnchor] = js.undefined
+  var xaxis3: js.UndefOr[PartialLayoutAxis] = js.undefined
   
-  var xaxis4: js.UndefOr[PartialLayoutAxisAnchor] = js.undefined
+  var xaxis4: js.UndefOr[PartialLayoutAxis] = js.undefined
   
-  var xaxis5: js.UndefOr[PartialLayoutAxisAnchor] = js.undefined
+  var xaxis5: js.UndefOr[PartialLayoutAxis] = js.undefined
   
-  var xaxis6: js.UndefOr[PartialLayoutAxisAnchor] = js.undefined
+  var xaxis6: js.UndefOr[PartialLayoutAxis] = js.undefined
   
-  var xaxis7: js.UndefOr[PartialLayoutAxisAnchor] = js.undefined
+  var xaxis7: js.UndefOr[PartialLayoutAxis] = js.undefined
   
-  var xaxis8: js.UndefOr[PartialLayoutAxisAnchor] = js.undefined
+  var xaxis8: js.UndefOr[PartialLayoutAxis] = js.undefined
   
-  var xaxis9: js.UndefOr[PartialLayoutAxisAnchor] = js.undefined
+  var xaxis9: js.UndefOr[PartialLayoutAxis] = js.undefined
   
   @JSName("xaxis.autorange")
   var xaxisDotautorange: js.UndefOr[Boolean] = js.undefined
@@ -188,23 +188,23 @@ trait PartialLayout extends StObject {
   @JSName("xaxis.type")
   var xaxisDottype: js.UndefOr[AxisType] = js.undefined
   
-  var yaxis: js.UndefOr[PartialLayoutAxisAnchor] = js.undefined
+  var yaxis: js.UndefOr[PartialLayoutAxis] = js.undefined
   
-  var yaxis2: js.UndefOr[PartialLayoutAxisAnchor] = js.undefined
+  var yaxis2: js.UndefOr[PartialLayoutAxis] = js.undefined
   
-  var yaxis3: js.UndefOr[PartialLayoutAxisAnchor] = js.undefined
+  var yaxis3: js.UndefOr[PartialLayoutAxis] = js.undefined
   
-  var yaxis4: js.UndefOr[PartialLayoutAxisAnchor] = js.undefined
+  var yaxis4: js.UndefOr[PartialLayoutAxis] = js.undefined
   
-  var yaxis5: js.UndefOr[PartialLayoutAxisAnchor] = js.undefined
+  var yaxis5: js.UndefOr[PartialLayoutAxis] = js.undefined
   
-  var yaxis6: js.UndefOr[PartialLayoutAxisAnchor] = js.undefined
+  var yaxis6: js.UndefOr[PartialLayoutAxis] = js.undefined
   
-  var yaxis7: js.UndefOr[PartialLayoutAxisAnchor] = js.undefined
+  var yaxis7: js.UndefOr[PartialLayoutAxis] = js.undefined
   
-  var yaxis8: js.UndefOr[PartialLayoutAxisAnchor] = js.undefined
+  var yaxis8: js.UndefOr[PartialLayoutAxis] = js.undefined
   
-  var yaxis9: js.UndefOr[PartialLayoutAxisAnchor] = js.undefined
+  var yaxis9: js.UndefOr[PartialLayoutAxis] = js.undefined
   
   @JSName("yaxis.autorange")
   var yaxisDotautorange: js.UndefOr[Boolean] = js.undefined
@@ -237,11 +237,11 @@ object PartialLayout {
     
     inline def setAngularaxisUndefined: Self = StObject.set(x, "angularaxis", js.undefined)
     
-    inline def setAnnotations(value: js.Array[PartialAnnotationsAlign]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
+    inline def setAnnotations(value: js.Array[PartialAnnotations]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
     inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
     
-    inline def setAnnotationsVarargs(value: PartialAnnotationsAlign*): Self = StObject.set(x, "annotations", js.Array(value*))
+    inline def setAnnotationsVarargs(value: PartialAnnotations*): Self = StObject.set(x, "annotations", js.Array(value*))
     
     inline def setAutosize(value: Boolean): Self = StObject.set(x, "autosize", value.asInstanceOf[js.Any])
     
@@ -337,11 +337,11 @@ object PartialLayout {
     
     inline def setImagesVarargs(value: PartialImage*): Self = StObject.set(x, "images", js.Array(value*))
     
-    inline def setLegend(value: PartialLegend): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+    inline def setLegend(value: PartialLegendBgcolor): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
     inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
     
-    inline def setMapbox(value: PartialMapbox): Self = StObject.set(x, "mapbox", value.asInstanceOf[js.Any])
+    inline def setMapbox(value: PartialMapboxAccesstoken): Self = StObject.set(x, "mapbox", value.asInstanceOf[js.Any])
     
     inline def setMapboxUndefined: Self = StObject.set(x, "mapbox", js.undefined)
     
@@ -369,47 +369,47 @@ object PartialLayout {
     
     inline def setPlot_bgcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "plot_bgcolor", js.Array(value*))
     
-    inline def setPolar(value: PartialPolarLayout): Self = StObject.set(x, "polar", value.asInstanceOf[js.Any])
+    inline def setPolar(value: PartialPolarLayoutAngularaxis): Self = StObject.set(x, "polar", value.asInstanceOf[js.Any])
     
-    inline def setPolar2(value: PartialPolarLayout): Self = StObject.set(x, "polar2", value.asInstanceOf[js.Any])
+    inline def setPolar2(value: PartialPolarLayoutAngularaxis): Self = StObject.set(x, "polar2", value.asInstanceOf[js.Any])
     
     inline def setPolar2Undefined: Self = StObject.set(x, "polar2", js.undefined)
     
-    inline def setPolar3(value: PartialPolarLayout): Self = StObject.set(x, "polar3", value.asInstanceOf[js.Any])
+    inline def setPolar3(value: PartialPolarLayoutAngularaxis): Self = StObject.set(x, "polar3", value.asInstanceOf[js.Any])
     
     inline def setPolar3Undefined: Self = StObject.set(x, "polar3", js.undefined)
     
-    inline def setPolar4(value: PartialPolarLayout): Self = StObject.set(x, "polar4", value.asInstanceOf[js.Any])
+    inline def setPolar4(value: PartialPolarLayoutAngularaxis): Self = StObject.set(x, "polar4", value.asInstanceOf[js.Any])
     
     inline def setPolar4Undefined: Self = StObject.set(x, "polar4", js.undefined)
     
-    inline def setPolar5(value: PartialPolarLayout): Self = StObject.set(x, "polar5", value.asInstanceOf[js.Any])
+    inline def setPolar5(value: PartialPolarLayoutAngularaxis): Self = StObject.set(x, "polar5", value.asInstanceOf[js.Any])
     
     inline def setPolar5Undefined: Self = StObject.set(x, "polar5", js.undefined)
     
-    inline def setPolar6(value: PartialPolarLayout): Self = StObject.set(x, "polar6", value.asInstanceOf[js.Any])
+    inline def setPolar6(value: PartialPolarLayoutAngularaxis): Self = StObject.set(x, "polar6", value.asInstanceOf[js.Any])
     
     inline def setPolar6Undefined: Self = StObject.set(x, "polar6", js.undefined)
     
-    inline def setPolar7(value: PartialPolarLayout): Self = StObject.set(x, "polar7", value.asInstanceOf[js.Any])
+    inline def setPolar7(value: PartialPolarLayoutAngularaxis): Self = StObject.set(x, "polar7", value.asInstanceOf[js.Any])
     
     inline def setPolar7Undefined: Self = StObject.set(x, "polar7", js.undefined)
     
-    inline def setPolar8(value: PartialPolarLayout): Self = StObject.set(x, "polar8", value.asInstanceOf[js.Any])
+    inline def setPolar8(value: PartialPolarLayoutAngularaxis): Self = StObject.set(x, "polar8", value.asInstanceOf[js.Any])
     
     inline def setPolar8Undefined: Self = StObject.set(x, "polar8", js.undefined)
     
-    inline def setPolar9(value: PartialPolarLayout): Self = StObject.set(x, "polar9", value.asInstanceOf[js.Any])
+    inline def setPolar9(value: PartialPolarLayoutAngularaxis): Self = StObject.set(x, "polar9", value.asInstanceOf[js.Any])
     
     inline def setPolar9Undefined: Self = StObject.set(x, "polar9", js.undefined)
     
     inline def setPolarUndefined: Self = StObject.set(x, "polar", js.undefined)
     
-    inline def setRadialaxis(value: PartialAxis): Self = StObject.set(x, "radialaxis", value.asInstanceOf[js.Any])
+    inline def setRadialaxis(value: PartialAxisAutorange): Self = StObject.set(x, "radialaxis", value.asInstanceOf[js.Any])
     
     inline def setRadialaxisUndefined: Self = StObject.set(x, "radialaxis", js.undefined)
     
-    inline def setScene(value: PartialScene): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
+    inline def setScene(value: PartialSceneAnnotations): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
     
     inline def setSceneUndefined: Self = StObject.set(x, "scene", js.undefined)
     
@@ -435,11 +435,11 @@ object PartialLayout {
     
     inline def setShowlegendUndefined: Self = StObject.set(x, "showlegend", js.undefined)
     
-    inline def setSliders(value: js.Array[PartialSlider]): Self = StObject.set(x, "sliders", value.asInstanceOf[js.Any])
+    inline def setSliders(value: js.Array[PartialSliderActive]): Self = StObject.set(x, "sliders", value.asInstanceOf[js.Any])
     
     inline def setSlidersUndefined: Self = StObject.set(x, "sliders", js.undefined)
     
-    inline def setSlidersVarargs(value: PartialSlider*): Self = StObject.set(x, "sliders", js.Array(value*))
+    inline def setSlidersVarargs(value: PartialSliderActive*): Self = StObject.set(x, "sliders", js.Array(value*))
     
     inline def setSubplot(value: String): Self = StObject.set(x, "subplot", value.asInstanceOf[js.Any])
     
@@ -477,37 +477,37 @@ object PartialLayout {
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    inline def setXaxis(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "xaxis", value.asInstanceOf[js.Any])
+    inline def setXaxis(value: PartialLayoutAxis): Self = StObject.set(x, "xaxis", value.asInstanceOf[js.Any])
     
-    inline def setXaxis2(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "xaxis2", value.asInstanceOf[js.Any])
+    inline def setXaxis2(value: PartialLayoutAxis): Self = StObject.set(x, "xaxis2", value.asInstanceOf[js.Any])
     
     inline def setXaxis2Undefined: Self = StObject.set(x, "xaxis2", js.undefined)
     
-    inline def setXaxis3(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "xaxis3", value.asInstanceOf[js.Any])
+    inline def setXaxis3(value: PartialLayoutAxis): Self = StObject.set(x, "xaxis3", value.asInstanceOf[js.Any])
     
     inline def setXaxis3Undefined: Self = StObject.set(x, "xaxis3", js.undefined)
     
-    inline def setXaxis4(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "xaxis4", value.asInstanceOf[js.Any])
+    inline def setXaxis4(value: PartialLayoutAxis): Self = StObject.set(x, "xaxis4", value.asInstanceOf[js.Any])
     
     inline def setXaxis4Undefined: Self = StObject.set(x, "xaxis4", js.undefined)
     
-    inline def setXaxis5(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "xaxis5", value.asInstanceOf[js.Any])
+    inline def setXaxis5(value: PartialLayoutAxis): Self = StObject.set(x, "xaxis5", value.asInstanceOf[js.Any])
     
     inline def setXaxis5Undefined: Self = StObject.set(x, "xaxis5", js.undefined)
     
-    inline def setXaxis6(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "xaxis6", value.asInstanceOf[js.Any])
+    inline def setXaxis6(value: PartialLayoutAxis): Self = StObject.set(x, "xaxis6", value.asInstanceOf[js.Any])
     
     inline def setXaxis6Undefined: Self = StObject.set(x, "xaxis6", js.undefined)
     
-    inline def setXaxis7(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "xaxis7", value.asInstanceOf[js.Any])
+    inline def setXaxis7(value: PartialLayoutAxis): Self = StObject.set(x, "xaxis7", value.asInstanceOf[js.Any])
     
     inline def setXaxis7Undefined: Self = StObject.set(x, "xaxis7", js.undefined)
     
-    inline def setXaxis8(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "xaxis8", value.asInstanceOf[js.Any])
+    inline def setXaxis8(value: PartialLayoutAxis): Self = StObject.set(x, "xaxis8", value.asInstanceOf[js.Any])
     
     inline def setXaxis8Undefined: Self = StObject.set(x, "xaxis8", js.undefined)
     
-    inline def setXaxis9(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "xaxis9", value.asInstanceOf[js.Any])
+    inline def setXaxis9(value: PartialLayoutAxis): Self = StObject.set(x, "xaxis9", value.asInstanceOf[js.Any])
     
     inline def setXaxis9Undefined: Self = StObject.set(x, "xaxis9", js.undefined)
     
@@ -541,37 +541,37 @@ object PartialLayout {
     
     inline def setXaxisUndefined: Self = StObject.set(x, "xaxis", js.undefined)
     
-    inline def setYaxis(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "yaxis", value.asInstanceOf[js.Any])
+    inline def setYaxis(value: PartialLayoutAxis): Self = StObject.set(x, "yaxis", value.asInstanceOf[js.Any])
     
-    inline def setYaxis2(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "yaxis2", value.asInstanceOf[js.Any])
+    inline def setYaxis2(value: PartialLayoutAxis): Self = StObject.set(x, "yaxis2", value.asInstanceOf[js.Any])
     
     inline def setYaxis2Undefined: Self = StObject.set(x, "yaxis2", js.undefined)
     
-    inline def setYaxis3(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "yaxis3", value.asInstanceOf[js.Any])
+    inline def setYaxis3(value: PartialLayoutAxis): Self = StObject.set(x, "yaxis3", value.asInstanceOf[js.Any])
     
     inline def setYaxis3Undefined: Self = StObject.set(x, "yaxis3", js.undefined)
     
-    inline def setYaxis4(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "yaxis4", value.asInstanceOf[js.Any])
+    inline def setYaxis4(value: PartialLayoutAxis): Self = StObject.set(x, "yaxis4", value.asInstanceOf[js.Any])
     
     inline def setYaxis4Undefined: Self = StObject.set(x, "yaxis4", js.undefined)
     
-    inline def setYaxis5(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "yaxis5", value.asInstanceOf[js.Any])
+    inline def setYaxis5(value: PartialLayoutAxis): Self = StObject.set(x, "yaxis5", value.asInstanceOf[js.Any])
     
     inline def setYaxis5Undefined: Self = StObject.set(x, "yaxis5", js.undefined)
     
-    inline def setYaxis6(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "yaxis6", value.asInstanceOf[js.Any])
+    inline def setYaxis6(value: PartialLayoutAxis): Self = StObject.set(x, "yaxis6", value.asInstanceOf[js.Any])
     
     inline def setYaxis6Undefined: Self = StObject.set(x, "yaxis6", js.undefined)
     
-    inline def setYaxis7(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "yaxis7", value.asInstanceOf[js.Any])
+    inline def setYaxis7(value: PartialLayoutAxis): Self = StObject.set(x, "yaxis7", value.asInstanceOf[js.Any])
     
     inline def setYaxis7Undefined: Self = StObject.set(x, "yaxis7", js.undefined)
     
-    inline def setYaxis8(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "yaxis8", value.asInstanceOf[js.Any])
+    inline def setYaxis8(value: PartialLayoutAxis): Self = StObject.set(x, "yaxis8", value.asInstanceOf[js.Any])
     
     inline def setYaxis8Undefined: Self = StObject.set(x, "yaxis8", js.undefined)
     
-    inline def setYaxis9(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "yaxis9", value.asInstanceOf[js.Any])
+    inline def setYaxis9(value: PartialLayoutAxis): Self = StObject.set(x, "yaxis9", value.asInstanceOf[js.Any])
     
     inline def setYaxis9Undefined: Self = StObject.set(x, "yaxis9", js.undefined)
     

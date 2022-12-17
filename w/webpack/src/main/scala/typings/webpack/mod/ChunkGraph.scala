@@ -1,5 +1,6 @@
 package typings.webpack.mod
 
+import org.scalablytyped.runtime.Instantiable0
 import typings.std.ReadonlySet
 import typings.std.Record
 import typings.std.Set
@@ -10,8 +11,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@JSImport("webpack", "ChunkGraph")
 @js.native
-trait ChunkGraph extends StObject {
+open class ChunkGraph protected () extends StObject {
+  def this(moduleGraph: ModuleGraph) = this()
+  def this(moduleGraph: ModuleGraph, hashFunction: String) = this()
+  def this(moduleGraph: ModuleGraph, hashFunction: Instantiable0[Hash]) = this()
   
   def addChunkRuntimeRequirements(chunk: Chunk, items: Set[String]): Unit = js.native
   
@@ -203,4 +208,28 @@ trait ChunkGraph extends StObject {
   def setRuntimeId(runtime: String, id: Double): Unit = js.native
   
   def upgradeDependentToFullHashModules(chunk: Chunk): Unit = js.native
+}
+object ChunkGraph {
+  
+  @JSImport("webpack", "ChunkGraph")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  inline def clearChunkGraphForChunk(chunk: Chunk): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearChunkGraphForChunk")(chunk.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  /* static member */
+  inline def clearChunkGraphForModule(module: Module): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearChunkGraphForModule")(module.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  /* static member */
+  inline def getChunkGraphForChunk(chunk: Chunk, deprecateMessage: String, deprecationCode: String): ChunkGraph = (^.asInstanceOf[js.Dynamic].applyDynamic("getChunkGraphForChunk")(chunk.asInstanceOf[js.Any], deprecateMessage.asInstanceOf[js.Any], deprecationCode.asInstanceOf[js.Any])).asInstanceOf[ChunkGraph]
+  
+  /* static member */
+  inline def getChunkGraphForModule(module: Module, deprecateMessage: String, deprecationCode: String): ChunkGraph = (^.asInstanceOf[js.Dynamic].applyDynamic("getChunkGraphForModule")(module.asInstanceOf[js.Any], deprecateMessage.asInstanceOf[js.Any], deprecationCode.asInstanceOf[js.Any])).asInstanceOf[ChunkGraph]
+  
+  /* static member */
+  inline def setChunkGraphForChunk(chunk: Chunk, chunkGraph: ChunkGraph): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setChunkGraphForChunk")(chunk.asInstanceOf[js.Any], chunkGraph.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /* static member */
+  inline def setChunkGraphForModule(module: Module, chunkGraph: ChunkGraph): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setChunkGraphForModule")(module.asInstanceOf[js.Any], chunkGraph.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -15,20 +15,26 @@ object distSrcModulesUiScreenTypesMod {
   @js.native
   object VideoViewMode extends StObject {
     
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[VideoViewMode & String] = js.native
+    
     @js.native
     sealed trait BLUR
       extends StObject
          with VideoViewMode
+    /* "BLUR" */ val BLUR: typings.playable.distSrcModulesUiScreenTypesMod.VideoViewMode.BLUR & String = js.native
     
     @js.native
     sealed trait FILL
       extends StObject
          with VideoViewMode
+    /* "FILL" */ val FILL: typings.playable.distSrcModulesUiScreenTypesMod.VideoViewMode.FILL & String = js.native
     
     @js.native
     sealed trait REGULAR
       extends StObject
          with VideoViewMode
+    /* "REGULAR" */ val REGULAR: typings.playable.distSrcModulesUiScreenTypesMod.VideoViewMode.REGULAR & String = js.native
   }
   
   trait IScreen extends StObject {

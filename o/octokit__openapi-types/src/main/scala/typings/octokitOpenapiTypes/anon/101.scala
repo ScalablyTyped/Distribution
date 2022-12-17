@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `101` extends StObject {
   
   /** Response */
-  var `200`: ContentApplicationjsonCheckrunsurl
+  var `200`: Content93
 }
 object `101` {
   
-  inline def apply(`200`: ContentApplicationjsonCheckrunsurl): `101` = {
+  inline def apply(`200`: Content93): `101` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`101`]
@@ -19,6 +19,6 @@ object `101` {
   
   extension [Self <: `101`](x: Self) {
     
-    inline def set200(value: ContentApplicationjsonCheckrunsurl): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+    inline def set200(value: Content93): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
   }
 }

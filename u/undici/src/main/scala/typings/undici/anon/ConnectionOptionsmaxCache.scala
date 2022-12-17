@@ -295,12 +295,12 @@ trait ConnectionOptionsmaxCache
     */
   var ticketKeys: js.UndefOr[Buffer] = js.undefined
   
-  var timeout: js.UndefOr[Double] & (js.UndefOr[Double | Null])
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object ConnectionOptionsmaxCache {
   
-  inline def apply(timeout: js.UndefOr[Double] & (js.UndefOr[Double | Null])): ConnectionOptionsmaxCache = {
-    val __obj = js.Dynamic.literal(timeout = timeout.asInstanceOf[js.Any])
+  inline def apply(): ConnectionOptionsmaxCache = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectionOptionsmaxCache]
   }
   
@@ -482,6 +482,8 @@ object ConnectionOptionsmaxCache {
     
     inline def setTicketKeysUndefined: Self = StObject.set(x, "ticketKeys", js.undefined)
     
-    inline def setTimeout(value: js.UndefOr[Double] & (js.UndefOr[Double | Null])): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

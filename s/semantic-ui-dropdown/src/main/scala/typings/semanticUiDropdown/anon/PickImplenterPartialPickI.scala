@@ -19,7 +19,7 @@ trait PickImplenterPartialPickI
   
   var downArrow: js.UndefOr[Double] = js.undefined
   
-  var enter: Double & js.UndefOr[Double]
+  var enter: Double
   
   var escape: js.UndefOr[Double] = js.undefined
   
@@ -35,7 +35,7 @@ trait PickImplenterPartialPickI
 }
 object PickImplenterPartialPickI {
   
-  inline def apply(enter: Double & js.UndefOr[Double]): PickImplenterPartialPickI = {
+  inline def apply(enter: Double): PickImplenterPartialPickI = {
     val __obj = js.Dynamic.literal(enter = enter.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplenterPartialPickI]
   }
@@ -58,7 +58,7 @@ object PickImplenterPartialPickI {
     
     inline def setDownArrowUndefined: Self = StObject.set(x, "downArrow", js.undefined)
     
-    inline def setEnter(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
+    inline def setEnter(value: Double): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
     
     inline def setEscape(value: Double): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
     

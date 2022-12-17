@@ -89,16 +89,45 @@ object anon {
     
     var definition: js.Array[IProduction]
     
-    var idx: js.UndefOr[Double] = js.undefined
+    var name: String
+    
+    var orgText: js.UndefOr[String] = js.undefined
   }
   object Definition {
     
-    inline def apply(definition: js.Array[IProduction]): Definition = {
-      val __obj = js.Dynamic.literal(definition = definition.asInstanceOf[js.Any])
+    inline def apply(definition: js.Array[IProduction], name: String): Definition = {
+      val __obj = js.Dynamic.literal(definition = definition.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Definition]
     }
     
     extension [Self <: Definition](x: Self) {
+      
+      inline def setDefinition(value: js.Array[IProduction]): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
+      
+      inline def setDefinitionVarargs(value: IProduction*): Self = StObject.set(x, "definition", js.Array(value*))
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setOrgText(value: String): Self = StObject.set(x, "orgText", value.asInstanceOf[js.Any])
+      
+      inline def setOrgTextUndefined: Self = StObject.set(x, "orgText", js.undefined)
+    }
+  }
+  
+  trait DefinitionIdx extends StObject {
+    
+    var definition: js.Array[IProduction]
+    
+    var idx: js.UndefOr[Double] = js.undefined
+  }
+  object DefinitionIdx {
+    
+    inline def apply(definition: js.Array[IProduction]): DefinitionIdx = {
+      val __obj = js.Dynamic.literal(definition = definition.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DefinitionIdx]
+    }
+    
+    extension [Self <: DefinitionIdx](x: Self) {
       
       inline def setDefinition(value: js.Array[IProduction]): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
       
@@ -297,35 +326,6 @@ object anon {
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
-    }
-  }
-  
-  trait OrgText extends StObject {
-    
-    var definition: js.Array[IProduction]
-    
-    var name: String
-    
-    var orgText: js.UndefOr[String] = js.undefined
-  }
-  object OrgText {
-    
-    inline def apply(definition: js.Array[IProduction], name: String): OrgText = {
-      val __obj = js.Dynamic.literal(definition = definition.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-      __obj.asInstanceOf[OrgText]
-    }
-    
-    extension [Self <: OrgText](x: Self) {
-      
-      inline def setDefinition(value: js.Array[IProduction]): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
-      
-      inline def setDefinitionVarargs(value: IProduction*): Self = StObject.set(x, "definition", js.Array(value*))
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setOrgText(value: String): Self = StObject.set(x, "orgText", value.asInstanceOf[js.Any])
-      
-      inline def setOrgTextUndefined: Self = StObject.set(x, "orgText", js.undefined)
     }
   }
   

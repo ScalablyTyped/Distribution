@@ -1,27 +1,26 @@
 package typings.firebaseFirestore.anon
 
 import typings.firebaseFirestore.distInternalMod.FirestoreError
-import typings.firebaseFirestore.distInternalMod.QuerySnapshot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `9`[T] extends StObject {
+trait `9` extends StObject {
   
   var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   var error: js.UndefOr[js.Function1[/* error */ FirestoreError, Unit]] = js.undefined
   
-  var next: js.UndefOr[js.Function1[/* snapshot */ QuerySnapshot[T], Unit]] = js.undefined
+  var next: js.UndefOr[js.Function1[/* value */ Unit, Unit]] = js.undefined
 }
 object `9` {
   
-  inline def apply[T](): `9`[T] = {
+  inline def apply(): `9` = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`9`[T]]
+    __obj.asInstanceOf[`9`]
   }
   
-  extension [Self <: `9`[?], T](x: Self & `9`[T]) {
+  extension [Self <: `9`](x: Self) {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
@@ -31,7 +30,7 @@ object `9` {
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    inline def setNext(value: /* snapshot */ QuerySnapshot[T] => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
+    inline def setNext(value: /* value */ Unit => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
     
     inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
   }

@@ -1,6 +1,6 @@
 package typings.vueRuntimeCore.mod
 
-import typings.vueRuntimeCore.anon.`2`
+import typings.vueRuntimeCore.anon.`0`
 import typings.vueRuntimeCore.vueRuntimeCoreBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class Teleport ()
   extends StObject
-     with `2` {
+     with `0` {
   
   /* CompleteClass */
   @JSName("$props")

@@ -54,7 +54,7 @@ import typings.materialUiCore.materialUiCoreStrings.url
 import typings.materialUiCore.materialUiCoreStrings.vertical
 import typings.materialUiCore.materialUiCoreStrings.yes
 import typings.materialUiCore.menuListMenuListMod.MenuListProps
-import typings.materialUiCore.modalModalManagerMod.ModalManager
+import typings.materialUiCore.mod.ModalManager
 import typings.materialUiCore.popoverPopoverMod.PopoverActions
 import typings.materialUiCore.popoverPopoverMod.PopoverOrigin
 import typings.materialUiCore.popoverPopoverMod.PopoverPosition

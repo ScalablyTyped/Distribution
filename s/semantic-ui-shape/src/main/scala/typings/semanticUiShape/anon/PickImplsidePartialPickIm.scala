@@ -10,20 +10,20 @@ trait PickImplsidePartialPickIm
   extends StObject
      with Param {
   
-  var side: String & js.UndefOr[String]
+  var side: String
   
   var sides: js.UndefOr[String] = js.undefined
 }
 object PickImplsidePartialPickIm {
   
-  inline def apply(side: String & js.UndefOr[String]): PickImplsidePartialPickIm = {
+  inline def apply(side: String): PickImplsidePartialPickIm = {
     val __obj = js.Dynamic.literal(side = side.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplsidePartialPickIm]
   }
   
   extension [Self <: PickImplsidePartialPickIm](x: Self) {
     
-    inline def setSide(value: String & js.UndefOr[String]): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
+    inline def setSide(value: String): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
     
     inline def setSides(value: String): Self = StObject.set(x, "sides", value.asInstanceOf[js.Any])
     

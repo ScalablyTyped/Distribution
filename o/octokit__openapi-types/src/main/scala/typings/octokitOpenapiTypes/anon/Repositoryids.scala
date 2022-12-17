@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Repositoryids extends StObject {
   
-  var permissions: js.UndefOr[Actions] = js.undefined
+  var permissions: js.UndefOr[Administration] = js.undefined
   
   /** @description List of repository names that the token should have access to */
   var repositories: js.UndefOr[js.Array[String]] = js.undefined
@@ -28,7 +28,7 @@ object Repositoryids {
   
   extension [Self <: Repositoryids](x: Self) {
     
-    inline def setPermissions(value: Actions): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: Administration): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
     inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     

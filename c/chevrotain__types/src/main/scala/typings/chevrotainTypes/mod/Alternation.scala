@@ -1,6 +1,6 @@
 package typings.chevrotainTypes.mod
 
-import typings.chevrotainTypes.anon.Definition
+import typings.chevrotainTypes.anon.DefinitionIdx
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class Alternation protected ()
   extends StObject
      with IProductionWithOccurrence {
-  def this(options: Definition) = this()
+  def this(options: DefinitionIdx) = this()
   
   /* CompleteClass */
   override def accept(visitor: IGASTVisitor): Unit = js.native

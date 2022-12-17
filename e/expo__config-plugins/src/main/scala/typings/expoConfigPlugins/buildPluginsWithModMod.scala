@@ -1,7 +1,7 @@
 package typings.expoConfigPlugins
 
 import typings.expoConfigPlugins.anon.Action
-import typings.expoConfigPlugins.anon.Mod
+import typings.expoConfigPlugins.anon.ActionMod
 import typings.expoConfigPlugins.buildPluginDottypesMod.ExportedConfig
 import typings.expoConfigPlugins.buildPluginDottypesMod.ModPlatform
 import org.scalablytyped.runtime.StObject
@@ -14,9 +14,9 @@ object buildPluginsWithModMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def withBaseMod[T](config: ExportedConfig, param1: BaseModOptions & Action[T]): ExportedConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("withBaseMod")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[ExportedConfig]
+  inline def withBaseMod[T](config: ExportedConfig, param1: BaseModOptions & ActionMod[T]): ExportedConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("withBaseMod")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[ExportedConfig]
   
-  inline def withMod[T](config: ExportedConfig, param1: Mod[T]): ExportedConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("withMod")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[ExportedConfig]
+  inline def withMod[T](config: ExportedConfig, param1: Action[T]): ExportedConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("withMod")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[ExportedConfig]
   
   trait BaseModOptions extends StObject {
     

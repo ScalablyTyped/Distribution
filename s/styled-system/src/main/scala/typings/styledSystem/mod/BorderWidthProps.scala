@@ -56,7 +56,7 @@ object BorderWidthProps {
     
     inline def setBorderBottomWidthUndefined: Self = StObject.set(x, "borderBottomWidth", js.undefined)
     
-    inline def setBorderBottomWidthVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderBottomWidth", js.Array(value :_*))
+    inline def setBorderBottomWidthVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderBottomWidth", js.Array(value*))
     
     inline def setBorderLeftWidth(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderLeftWidth", value.asInstanceOf[js.Any])
     
@@ -64,7 +64,7 @@ object BorderWidthProps {
     
     inline def setBorderLeftWidthUndefined: Self = StObject.set(x, "borderLeftWidth", js.undefined)
     
-    inline def setBorderLeftWidthVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderLeftWidth", js.Array(value :_*))
+    inline def setBorderLeftWidthVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderLeftWidth", js.Array(value*))
     
     inline def setBorderRightWidth(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderRightWidth", value.asInstanceOf[js.Any])
     
@@ -72,7 +72,7 @@ object BorderWidthProps {
     
     inline def setBorderRightWidthUndefined: Self = StObject.set(x, "borderRightWidth", js.undefined)
     
-    inline def setBorderRightWidthVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderRightWidth", js.Array(value :_*))
+    inline def setBorderRightWidthVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderRightWidth", js.Array(value*))
     
     inline def setBorderTopWidth(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderTopWidth", value.asInstanceOf[js.Any])
     
@@ -80,7 +80,7 @@ object BorderWidthProps {
     
     inline def setBorderTopWidthUndefined: Self = StObject.set(x, "borderTopWidth", js.undefined)
     
-    inline def setBorderTopWidthVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderTopWidth", js.Array(value :_*))
+    inline def setBorderTopWidthVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderTopWidth", js.Array(value*))
     
     inline def setBorderWidth(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
@@ -88,6 +88,6 @@ object BorderWidthProps {
     
     inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
     
-    inline def setBorderWidthVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderWidth", js.Array(value :_*))
+    inline def setBorderWidthVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderWidth", js.Array(value*))
   }
 }

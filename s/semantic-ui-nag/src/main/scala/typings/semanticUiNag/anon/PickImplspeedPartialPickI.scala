@@ -57,7 +57,7 @@ trait PickImplspeedPartialPickI
   
   var silent: js.UndefOr[Boolean] = js.undefined
   
-  var speed: Double & js.UndefOr[Double]
+  var speed: Double
   
   var storageMethod: js.UndefOr[cookie | localstorage | sessionstorage] = js.undefined
   
@@ -67,7 +67,7 @@ trait PickImplspeedPartialPickI
 }
 object PickImplspeedPartialPickI {
   
-  inline def apply(speed: Double & js.UndefOr[Double]): PickImplspeedPartialPickI = {
+  inline def apply(speed: Double): PickImplspeedPartialPickI = {
     val __obj = js.Dynamic.literal(speed = speed.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplspeedPartialPickI]
   }
@@ -150,7 +150,7 @@ object PickImplspeedPartialPickI {
     
     inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     
-    inline def setSpeed(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+    inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
     
     inline def setStorageMethod(value: cookie | localstorage | sessionstorage): Self = StObject.set(x, "storageMethod", value.asInstanceOf[js.Any])
     

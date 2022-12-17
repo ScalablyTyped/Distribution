@@ -35,7 +35,7 @@ trait PickImplonRatePartialPick
   
   def onRate(value: Double): Unit
   @JSName("onRate")
-  var onRate_Original: (js.ThisFunction1[/* this */ JQuery, /* value */ Double, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* value */ Double, Unit]])
+  var onRate_Original: js.ThisFunction1[/* this */ JQuery, /* value */ Double, Unit]
   
   var performance: js.UndefOr[Boolean] = js.undefined
   
@@ -47,9 +47,7 @@ trait PickImplonRatePartialPick
 }
 object PickImplonRatePartialPick {
   
-  inline def apply(
-    onRate: (js.ThisFunction1[/* this */ JQuery, /* value */ Double, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* value */ Double, Unit]])
-  ): PickImplonRatePartialPick = {
+  inline def apply(onRate: js.ThisFunction1[/* this */ JQuery, /* value */ Double, Unit]): PickImplonRatePartialPick = {
     val __obj = js.Dynamic.literal(onRate = onRate.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonRatePartialPick]
   }
@@ -92,9 +90,7 @@ object PickImplonRatePartialPick {
     
     inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
-    inline def setOnRate(
-      value: (js.ThisFunction1[/* this */ JQuery, /* value */ Double, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* value */ Double, Unit]])
-    ): Self = StObject.set(x, "onRate", value.asInstanceOf[js.Any])
+    inline def setOnRate(value: js.ThisFunction1[/* this */ JQuery, /* value */ Double, Unit]): Self = StObject.set(x, "onRate", value.asInstanceOf[js.Any])
     
     inline def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
     

@@ -9,14 +9,14 @@ trait MarginBottomProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends S
   
   var marginBottom: js.UndefOr[
     ResponsiveValue[
-      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
       ThemeType
     ]
   ] = js.undefined
   
   var mb: js.UndefOr[
     ResponsiveValue[
-      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
       ThemeType
     ]
   ] = js.undefined
@@ -32,7 +32,7 @@ object MarginBottomProps {
     
     inline def setMarginBottom(
       value: ResponsiveValue[
-          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
           ThemeType
         ]
     ): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
@@ -41,11 +41,11 @@ object MarginBottomProps {
     
     inline def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
     
-    inline def setMarginBottomVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = StObject.set(x, "marginBottom", js.Array(value :_*))
+    inline def setMarginBottomVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any]) | Null)*): Self = StObject.set(x, "marginBottom", js.Array(value*))
     
     inline def setMb(
       value: ResponsiveValue[
-          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any], 
+          ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any], 
           ThemeType
         ]
     ): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
@@ -54,6 +54,6 @@ object MarginBottomProps {
     
     inline def setMbUndefined: Self = StObject.set(x, "mb", js.undefined)
     
-    inline def setMbVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = StObject.set(x, "mb", js.Array(value :_*))
+    inline def setMbVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, Any]) | Null)*): Self = StObject.set(x, "mb", js.Array(value*))
   }
 }

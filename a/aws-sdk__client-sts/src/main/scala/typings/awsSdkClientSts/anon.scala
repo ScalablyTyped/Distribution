@@ -440,7 +440,7 @@ object anon {
     }
   }
   
-  /* Inlined @aws-sdk/smithy-client.@aws-sdk/smithy-client.ExceptionOptionType<@aws-sdk/client-sts.@aws-sdk/client-sts/dist-types/models/models_0.InvalidIdentityTokenException, @aws-sdk/client-sts.@aws-sdk/client-sts/dist-types/models/STSServiceException.STSServiceException> */
+  /* Inlined @aws-sdk/smithy-client.@aws-sdk/smithy-client.ExceptionOptionType<@aws-sdk/client-sts.@aws-sdk/client-sts/dist-types/models/models_0.InvalidAuthorizationMessageException, @aws-sdk/client-sts.@aws-sdk/client-sts/dist-types/models/STSServiceException.STSServiceException> */
   trait ExceptionOptionTypeInvali extends StObject {
     
     @JSName("$metadata")

@@ -6,16 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait QueryParticipating extends StObject {
   
+  var path: Owner
+  
   var query: Participating
 }
 object QueryParticipating {
   
-  inline def apply(query: Participating): QueryParticipating = {
-    val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
+  inline def apply(path: Owner, query: Participating): QueryParticipating = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryParticipating]
   }
   
   extension [Self <: QueryParticipating](x: Self) {
+    
+    inline def setPath(value: Owner): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     inline def setQuery(value: Participating): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }

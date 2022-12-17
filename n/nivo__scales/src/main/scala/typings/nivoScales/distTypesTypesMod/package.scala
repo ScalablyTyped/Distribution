@@ -1,7 +1,7 @@
 package typings.nivoScales.distTypesTypesMod
 
+import typings.nivoScales.anon.`1`
 import typings.nivoScales.anon.`2`
-import typings.nivoScales.anon.`3`
 import typings.nivoScales.nivoScalesStrings.y
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -28,6 +28,6 @@ type ScaleWithBandwidth = ScaleBand[Any] | ScalePoint[Any]
 
 type SerieAxis[Axis /* <: ScaleAxis */, Value /* <: ScaleValue */] = js.Array[`2`[Axis, Value]]
 
-type Series[XValue /* <: ScaleValue */, YValue /* <: ScaleValue */] = js.Array[`3`[XValue, YValue]]
+type Series[XValue /* <: ScaleValue */, YValue /* <: ScaleValue */] = js.Array[`1`[XValue, YValue]]
 
 type TicksSpec[Value /* <: ScaleValue */] = Double | String | js.Array[Value]

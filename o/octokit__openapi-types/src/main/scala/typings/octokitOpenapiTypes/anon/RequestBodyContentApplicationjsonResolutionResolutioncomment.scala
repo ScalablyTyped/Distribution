@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RequestBodyContentApplicationjsonResolutionResolutioncomment extends StObject {
   
-  var parameters: PathAlertnumberOwner
+  var parameters: PathAlertnumberOwnerRepo
   
   var requestBody: ContentApplicationjsonResolutionResolutioncomment
   
@@ -15,7 +15,7 @@ trait RequestBodyContentApplicationjsonResolutionResolutioncomment extends StObj
 object RequestBodyContentApplicationjsonResolutionResolutioncomment {
   
   inline def apply(
-    parameters: PathAlertnumberOwner,
+    parameters: PathAlertnumberOwnerRepo,
     requestBody: ContentApplicationjsonResolutionResolutioncomment,
     responses: `404422503`
   ): RequestBodyContentApplicationjsonResolutionResolutioncomment = {
@@ -25,7 +25,7 @@ object RequestBodyContentApplicationjsonResolutionResolutioncomment {
   
   extension [Self <: RequestBodyContentApplicationjsonResolutionResolutioncomment](x: Self) {
     
-    inline def setParameters(value: PathAlertnumberOwner): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: PathAlertnumberOwnerRepo): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setRequestBody(value: ContentApplicationjsonResolutionResolutioncomment): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,7 @@ trait PickImplhoverablePartialP
   
   var hideOnScroll: js.UndefOr[auto | `false`] = js.undefined
   
-  var hoverable: Boolean & js.UndefOr[Boolean]
+  var hoverable: Boolean
   
   var html: js.UndefOr[String | JQuery] = js.undefined
   
@@ -120,7 +120,7 @@ trait PickImplhoverablePartialP
 }
 object PickImplhoverablePartialP {
   
-  inline def apply(hoverable: Boolean & js.UndefOr[Boolean]): PickImplhoverablePartialP = {
+  inline def apply(hoverable: Boolean): PickImplhoverablePartialP = {
     val __obj = js.Dynamic.literal(hoverable = hoverable.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplhoverablePartialP]
   }
@@ -179,7 +179,7 @@ object PickImplhoverablePartialP {
     
     inline def setHideOnScrollUndefined: Self = StObject.set(x, "hideOnScroll", js.undefined)
     
-    inline def setHoverable(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "hoverable", value.asInstanceOf[js.Any])
+    inline def setHoverable(value: Boolean): Self = StObject.set(x, "hoverable", value.asInstanceOf[js.Any])
     
     inline def setHtml(value: String | JQuery): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     

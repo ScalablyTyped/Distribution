@@ -5,7 +5,7 @@ import typings.react.mod.ReactElement
 import typings.reactNative.anon.AverageItemLength
 import typings.reactNative.anon.Changed
 import typings.reactNative.anon.DistanceFromEnd
-import typings.reactNative.anon.Length
+import typings.reactNative.anon.Index
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -70,7 +70,7 @@ trait VirtualizedListWithoutRenderItemProps[ItemT]
     */
   var getItemCount: js.UndefOr[js.Function1[/* data */ Any, Double]] = js.undefined
   
-  var getItemLayout: js.UndefOr[js.Function2[/* data */ Any, /* index */ Double, Length]] = js.undefined
+  var getItemLayout: js.UndefOr[js.Function2[/* data */ Any, /* index */ Double, Index]] = js.undefined
   
   /**
     * How many items to render in the initial batch. This should be enough to fill the screen but not
@@ -196,7 +196,7 @@ object VirtualizedListWithoutRenderItemProps {
     
     inline def setGetItemCountUndefined: Self = StObject.set(x, "getItemCount", js.undefined)
     
-    inline def setGetItemLayout(value: (/* data */ Any, /* index */ Double) => Length): Self = StObject.set(x, "getItemLayout", js.Any.fromFunction2(value))
+    inline def setGetItemLayout(value: (/* data */ Any, /* index */ Double) => Index): Self = StObject.set(x, "getItemLayout", js.Any.fromFunction2(value))
     
     inline def setGetItemLayoutUndefined: Self = StObject.set(x, "getItemLayout", js.undefined)
     

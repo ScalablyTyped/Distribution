@@ -620,11 +620,11 @@ object anon {
         ]) | Null
       ] = js.native
     
-    var defaultProps: (js.UndefOr[
+    var defaultProps: js.UndefOr[
         (Partial[
           /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for P */ Any
         ]) | Null
-      ]) & Any = js.native
+      ] = js.native
     
     def ref(): Any = js.native
     def ref(

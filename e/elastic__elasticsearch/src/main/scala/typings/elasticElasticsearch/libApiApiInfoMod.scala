@@ -3,6 +3,9 @@ package typings.elasticElasticsearch
 import typings.elasticElasticsearch.libApiTypesMod.InfoRequest
 import typings.elasticElasticsearch.libApiTypesMod.InfoResponse
 import typings.elasticTransport.libTransportMod.TransportRequestOptions
+import typings.elasticTransport.libTransportMod.TransportRequestOptionsWithMeta
+import typings.elasticTransport.libTransportMod.TransportRequestOptionsWithOutMeta
+import typings.elasticTransport.libTypesMod.TransportResult
 import typings.elasticTransport.mod.Transport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,12 +19,24 @@ object libApiApiInfoMod {
   
   inline def default(): js.Promise[InfoResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Promise[InfoResponse]]
   inline def default(params: Unit, options: TransportRequestOptions): js.Promise[InfoResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[InfoResponse]]
+  inline def default(params: Unit, options: TransportRequestOptionsWithMeta): js.Promise[TransportResult[InfoResponse, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TransportResult[InfoResponse, Any]]]
+  inline def default(params: Unit, options: TransportRequestOptionsWithOutMeta): js.Promise[InfoResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[InfoResponse]]
   inline def default(params: InfoRequest): js.Promise[InfoResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[InfoResponse]]
   inline def default(params: InfoRequest, options: TransportRequestOptions): js.Promise[InfoResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[InfoResponse]]
+  inline def default(params: InfoRequest, options: TransportRequestOptionsWithMeta): js.Promise[TransportResult[InfoResponse, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TransportResult[InfoResponse, Any]]]
+  inline def default(params: InfoRequest, options: TransportRequestOptionsWithOutMeta): js.Promise[InfoResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[InfoResponse]]
   inline def default(params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.InfoRequest): js.Promise[InfoResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[InfoResponse]]
   inline def default(
     params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.InfoRequest,
     options: TransportRequestOptions
+  ): js.Promise[InfoResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[InfoResponse]]
+  inline def default(
+    params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.InfoRequest,
+    options: TransportRequestOptionsWithMeta
+  ): js.Promise[TransportResult[InfoResponse, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TransportResult[InfoResponse, Any]]]
+  inline def default(
+    params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.InfoRequest,
+    options: TransportRequestOptionsWithOutMeta
   ): js.Promise[InfoResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[InfoResponse]]
   
   trait That extends StObject {

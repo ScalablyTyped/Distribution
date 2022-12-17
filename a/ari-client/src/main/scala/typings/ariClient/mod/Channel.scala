@@ -1,21 +1,22 @@
 package typings.ariClient.mod
 
-import typings.ariClient.anon.After
-import typings.ariClient.anon.App
-import typings.ariClient.anon.AppAppArgs
-import typings.ariClient.anon.AppArgs
-import typings.ariClient.anon.Beep
-import typings.ariClient.anon.Caller
-import typings.ariClient.anon.Connectiontype
-import typings.ariClient.anon.Context
-import typings.ariClient.anon.Direction
-import typings.ariClient.anon.Lang
-import typings.ariClient.anon.Media
-import typings.ariClient.anon.MohClass
-import typings.ariClient.anon.Reason
-import typings.ariClient.anon.SnoopId
-import typings.ariClient.anon.Spy
+import typings.ariClient.anon.AppArgsSnoopId
+import typings.ariClient.anon.AppString
+import typings.ariClient.anon.Before
+import typings.ariClient.anon.Encapsulation
+import typings.ariClient.anon.EndpointString
+import typings.ariClient.anon.Extension
+import typings.ariClient.anon.Format
+import typings.ariClient.anon.Formats
+import typings.ariClient.anon.Label
+import typings.ariClient.anon.Offsetms
+import typings.ariClient.anon.PlaybackId
+import typings.ariClient.anon.Timeout
 import typings.ariClient.anon.Value
+import typings.ariClient.anon.Whisper
+import typings.ariClient.anon.`3`
+import typings.ariClient.anon.`4`
+import typings.ariClient.anon.`5`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,7 +68,7 @@ trait Channel
     * Exit application; continue execution in the dialplan.
     */
   def continueInDialplan(callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
-  def continueInDialplan(params: Context): js.Promise[Unit] = js.native
+  def continueInDialplan(params: Label): js.Promise[Unit] = js.native
   /**
     * Exit application; continue execution in the dialplan.
     *
@@ -76,7 +77,7 @@ trait Channel
     * @param [params.priority] - The priority to continue to.
     * @param [params.label] - The label to continue to - will supersede priority if both are provided.
     */
-  def continueInDialplan(params: Context, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
+  def continueInDialplan(params: Label, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Create channel.
@@ -88,7 +89,7 @@ trait Channel
     * @param [params.originator] - Unique ID of the calling channel.
     * @param [params.formats] - The format name capability list to use if originator is not specified. Ex. "ulaw,slin16". Format names can be found with "core show codecs".
     */
-  def create(params: AppArgs): js.Promise[Channel] = js.native
+  def create(params: Formats): js.Promise[Channel] = js.native
   /**
     * Create channel.
     *
@@ -99,7 +100,7 @@ trait Channel
     * @param [params.originator] - Unique ID of the calling channel.
     * @param [params.formats] - The format name capability list to use if originator is not specified. Ex. "ulaw,slin16". Format names can be found with "core show codecs".
     */
-  def create(params: AppArgs, callback: js.Function2[/* err */ js.Error, /* channel */ this.type, Unit]): Unit = js.native
+  def create(params: Formats, callback: js.Function2[/* err */ js.Error, /* channel */ this.type, Unit]): Unit = js.native
   
   /**
     * Timestamp when channel was created.
@@ -117,14 +118,14 @@ trait Channel
     * Dial a created channel.
     */
   def dial(callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
-  def dial(params: Caller): js.Promise[Unit] = js.native
+  def dial(params: Timeout): js.Promise[Unit] = js.native
   /**
     * Dial a created channel.
     *
     * @param [params.caller] - Channel ID of caller.
     * @param [params.timeout] - Dial timeout.
     */
-  def dial(params: Caller, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
+  def dial(params: Timeout, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Current location in the dialplan.
@@ -145,7 +146,7 @@ trait Channel
     * @param params.format - Format to encode audio in.
     * @param [params.direction] - External media direction.
     */
-  def externalMedia(params: Connectiontype): js.Promise[Channel] = js.native
+  def externalMedia(params: Encapsulation): js.Promise[Channel] = js.native
   /**
     * Start an External Media session.
     * Create a channel to an External Media source/sink.
@@ -160,7 +161,7 @@ trait Channel
     * @param params.format - Format to encode audio in.
     * @param [params.direction] - External media direction.
     */
-  def externalMedia(params: Connectiontype, callback: js.Function2[/* err */ js.Error, /* channel */ this.type, Unit]): Unit = js.native
+  def externalMedia(params: Encapsulation, callback: js.Function2[/* err */ js.Error, /* channel */ this.type, Unit]): Unit = js.native
   
   /**
     * Channel details.
@@ -197,13 +198,13 @@ trait Channel
     * Delete (i.e. hangup) a channel.
     */
   def hangup(callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
-  def hangup(params: Reason): js.Promise[Unit] = js.native
+  def hangup(params: `4`): js.Promise[Unit] = js.native
   /**
     * Delete (i.e. hangup) a channel.
     *
     * @param [params.reason] - Reason for hanging up the channel.
     */
-  def hangup(params: Reason, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
+  def hangup(params: `4`, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Hold a channel.
@@ -239,14 +240,14 @@ trait Channel
     * @param params.app - The channel will be passed to this Stasis application.
     * @param [params.appArgs] - The application arguments to pass to the Stasis application provided by app.
     */
-  def move(params: AppAppArgs): js.Promise[Unit] = js.native
+  def move(params: AppString): js.Promise[Unit] = js.native
   /**
     * Move the channel from one Stasis application to another.
     *
     * @param params.app - The channel will be passed to this Stasis application.
     * @param [params.appArgs] - The application arguments to pass to the Stasis application provided by app.
     */
-  def move(params: AppAppArgs, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
+  def move(params: AppString, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Mute a channel.
@@ -258,13 +259,13 @@ trait Channel
     * Mute a channel.
     */
   def mute(callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
-  def mute(params: Direction): js.Promise[Unit] = js.native
+  def mute(params: `5`): js.Promise[Unit] = js.native
   /**
     * Mute a channel.
     *
     * @param [params.direction] - Direction in which to mute audio.
     */
-  def mute(params: Direction, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
+  def mute(params: `5`, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Name of the channel (i.e. SIP/foo-0000a7e3).
@@ -292,7 +293,7 @@ trait Channel
     * @param [params.originator] - The unique id of the channel which is originating this one.
     * @param [params.formats] - The format name capability list to use if originator is not specified. Ex. "ulaw,slin16". Format names can be found with "core show codecs".
     */
-  def originate(params: App): js.Promise[Channel] = js.native
+  def originate(params: Extension): js.Promise[Channel] = js.native
   /**
     * Create a new channel (originate).
     * The new channel is created immediately and a snapshot of it returned. If a Stasis application is provided it will be automatically subscribed to the originated channel for further
@@ -314,7 +315,7 @@ trait Channel
     * @param [params.originator] - The unique id of the channel which is originating this one.
     * @param [params.formats] - The format name capability list to use if originator is not specified. Ex. "ulaw,slin16". Format names can be found with "core show codecs".
     */
-  def originate(params: App, callback: js.Function2[/* err */ js.Error, /* channel */ this.type, Unit]): Unit = js.native
+  def originate(params: Extension, callback: js.Function2[/* err */ js.Error, /* channel */ this.type, Unit]): Unit = js.native
   
   /**
     * Create a new channel (originate with id).
@@ -337,7 +338,7 @@ trait Channel
     * @param [params.originator] - The unique id of the channel which is originating this one.
     * @param [params.formats] - The format name capability list to use if originator is not specified. Ex. "ulaw,slin16". Format names can be found with "core show codecs".
     */
-  def originateWithId(params: App): js.Promise[Channel] = js.native
+  def originateWithId(params: Extension): js.Promise[Channel] = js.native
   /**
     * Create a new channel (originate with id).
     * The new channel is created immediately and a snapshot of it returned. If a Stasis application is provided it will be automatically subscribed to the originated channel for further
@@ -359,7 +360,7 @@ trait Channel
     * @param [params.originator] - The unique id of the channel which is originating this one.
     * @param [params.formats] - The format name capability list to use if originator is not specified. Ex. "ulaw,slin16". Format names can be found with "core show codecs".
     */
-  def originateWithId(params: App, callback: js.Function2[/* err */ js.Error, /* channel */ this.type, Unit]): Unit = js.native
+  def originateWithId(params: Extension, callback: js.Function2[/* err */ js.Error, /* channel */ this.type, Unit]): Unit = js.native
   
   /**
     * Start playback of media.
@@ -372,7 +373,7 @@ trait Channel
     * @param [params.skipms] - Number of milliseconds to skip for forward/reverse operations.
     * @param [params.playbackId] - Playback ID.
     */
-  def play(params: Lang, playback: Playback): js.Promise[Playback] = js.native
+  def play(params: Offsetms, playback: Playback): js.Promise[Playback] = js.native
   /**
     * Start playback of media.
     * The media URI may be any of a number of URIs. Currently sound:, recording:, number:, digits:, characters:, and tone: URIs are supported. This operation creates a playback resource
@@ -385,7 +386,7 @@ trait Channel
     * @param [params.playbackId] - Playback ID.
     */
   def play(
-    params: Lang,
+    params: Offsetms,
     playback: Playback,
     callback: js.Function2[/* err */ js.Error, /* playback */ Playback, Unit]
   ): Unit = js.native
@@ -401,7 +402,7 @@ trait Channel
     * @param [params.offsetms] - Number of milliseconds to skip before playing. Only applies to the first URI if multiple media URIs are specified.
     * @param [params.skipms] - Number of milliseconds to skip for forward/reverse operations.
     */
-  def playWithId(params: Media): js.Promise[Playback] = js.native
+  def playWithId(params: PlaybackId): js.Promise[Playback] = js.native
   /**
     * Start playback of media and specify the playbackId.
     * The media URI may be any of a number of URIs. Currently sound:, recording:, number:, digits:, characters:, and tone: URIs are supported. This operation creates a playback resource
@@ -413,7 +414,7 @@ trait Channel
     * @param [params.offsetms] - Number of milliseconds to skip before playing. Only applies to the first URI if multiple media URIs are specified.
     * @param [params.skipms] - Number of milliseconds to skip for forward/reverse operations.
     */
-  def playWithId(params: Media, callback: js.Function2[/* err */ js.Error, /* playback */ Playback, Unit]): Unit = js.native
+  def playWithId(params: PlaybackId, callback: js.Function2[/* err */ js.Error, /* playback */ Playback, Unit]): Unit = js.native
   
   /**
     * Start a recording.
@@ -427,7 +428,7 @@ trait Channel
     * @param [params.beep] - Play beep when recording begins.
     * @param [params.terminateOn] - DTMF input to terminate recording.
     */
-  def record(params: Beep, recording: LiveRecording): js.Promise[LiveRecording] = js.native
+  def record(params: Format, recording: LiveRecording): js.Promise[LiveRecording] = js.native
   /**
     * Start a recording.
     * Record audio from a channel. Note that this will not capture audio sent to the channel. The bridge itself has a record feature if thats what you want.
@@ -441,7 +442,7 @@ trait Channel
     * @param [params.terminateOn] - DTMF input to terminate recording.
     */
   def record(
-    params: Beep,
+    params: Format,
     recording: LiveRecording,
     callback: js.Function2[/* err */ js.Error, /* liverecording */ LiveRecording, Unit]
   ): Unit = js.native
@@ -451,13 +452,13 @@ trait Channel
     *
     * @param params.endpoint - The endpoint to redirect the channel to.
     */
-  def redirect(params: typings.ariClient.anon.Endpoint): js.Promise[Unit] = js.native
+  def redirect(params: EndpointString): js.Promise[Unit] = js.native
   /**
     * Redirect the channel to a different location.
     *
     * @param params.endpoint - The endpoint to redirect the channel to.
     */
-  def redirect(params: typings.ariClient.anon.Endpoint, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
+  def redirect(params: EndpointString, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Indicate ringing to a channel.
@@ -500,7 +501,7 @@ trait Channel
     * Send provided DTMF to a given channel.
     */
   def sendDTMF(callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
-  def sendDTMF(params: After): js.Promise[Unit] = js.native
+  def sendDTMF(params: Before): js.Promise[Unit] = js.native
   /**
     * Send provided DTMF to a given channel.
     *
@@ -510,7 +511,7 @@ trait Channel
     * @param [params.duration] - Length of each DTMF digit (specified in milliseconds).
     * @param [params.after] - Amount of time to wait after DTMF digits (specified in milliseconds) end.
     */
-  def sendDTMF(params: After, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
+  def sendDTMF(params: Before, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Set the value of a channel variable or function.
@@ -537,7 +538,7 @@ trait Channel
     * @param [params.appArgs] - The application arguments to pass to the Stasis application.
     * @param [params.snoopId] - Unique ID to assign to snooping channel.
     */
-  def snoopChannel(params: SnoopId, snoopChannel: Channel): js.Promise[Channel] = js.native
+  def snoopChannel(params: Whisper, snoopChannel: Channel): js.Promise[Channel] = js.native
   /**
     * Start snooping.
     * Snoop (spy/whisper) on a specific channel.
@@ -549,7 +550,7 @@ trait Channel
     * @param [params.snoopId] - Unique ID to assign to snooping channel.
     */
   def snoopChannel(
-    params: SnoopId,
+    params: Whisper,
     snoopChannel: Channel,
     callback: js.Function2[/* err */ js.Error, /* channel */ this.type, Unit]
   ): Unit = js.native
@@ -564,7 +565,7 @@ trait Channel
     * @param params.app - Application the snooping channel is placed into.
     * @param [params.appArgs] - The application arguments to pass to the Stasis application.
     */
-  def snoopChannelWithId(params: Spy): js.Promise[Channel] = js.native
+  def snoopChannelWithId(params: AppArgsSnoopId): js.Promise[Channel] = js.native
   /**
     * Start snooping.
     * Snoop (spy/whisper) on a specific channel.
@@ -575,7 +576,7 @@ trait Channel
     * @param params.app - Application the snooping channel is placed into.
     * @param [params.appArgs] - The application arguments to pass to the Stasis application.
     */
-  def snoopChannelWithId(params: Spy, callback: js.Function2[/* err */ js.Error, /* channel */ this.type, Unit]): Unit = js.native
+  def snoopChannelWithId(params: AppArgsSnoopId, callback: js.Function2[/* err */ js.Error, /* channel */ this.type, Unit]): Unit = js.native
   
   /**
     * Play music on hold to a channel.
@@ -591,7 +592,7 @@ trait Channel
     * must reinitiate music on hold.
     */
   def startMoh(callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
-  def startMoh(params: MohClass): js.Promise[Unit] = js.native
+  def startMoh(params: `3`): js.Promise[Unit] = js.native
   /**
     * Play music on hold to a channel.
     * Using media operations such as /play on a channel playing MOH in this manner will suspend MOH without resuming automatically. If continuing music on hold is desired, the stasis application
@@ -599,7 +600,7 @@ trait Channel
     *
     * @param [params.mohClass] - Music on hold class to use.
     */
-  def startMoh(params: MohClass, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
+  def startMoh(params: `3`, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Play silence to a channel.
@@ -654,11 +655,11 @@ trait Channel
     * Unmute a channel.
     */
   def unmute(callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
-  def unmute(params: Direction): js.Promise[Unit] = js.native
+  def unmute(params: `5`): js.Promise[Unit] = js.native
   /**
     * Unmute a channel.
     *
     * @param [params.direction] - Direction in which to unmute audio.
     */
-  def unmute(params: Direction, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
+  def unmute(params: `5`, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
 }

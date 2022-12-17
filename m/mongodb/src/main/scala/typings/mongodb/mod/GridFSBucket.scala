@@ -1,7 +1,6 @@
 package typings.mongodb.mod
 
 import typings.bson.mod.Document
-import typings.bson.mod.ObjectId
 import typings.mongodb.mongodbStrings.index
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,9 +17,9 @@ open class GridFSBucket protected () extends TypedEventEmitter[GridFSBucketEvent
     *
     * @param id - The id of the file doc
     */
-  def delete(id: ObjectId): js.Promise[Unit] = js.native
+  def delete(id: typings.bson.mod.ObjectId): js.Promise[Unit] = js.native
   /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
-  def delete(id: ObjectId, callback: Callback[Unit]): Unit = js.native
+  def delete(id: typings.bson.mod.ObjectId, callback: Callback[Unit]): Unit = js.native
   
   /** Removes this bucket's files collection, followed by its chunks collection. */
   def drop(): js.Promise[Unit] = js.native
@@ -37,8 +36,8 @@ open class GridFSBucket protected () extends TypedEventEmitter[GridFSBucketEvent
   def getLogger(): Logger = js.native
   
   /** Returns a readable stream (GridFSBucketReadStream) for streaming file data from GridFS. */
-  def openDownloadStream(id: ObjectId): GridFSBucketReadStream = js.native
-  def openDownloadStream(id: ObjectId, options: GridFSBucketReadStreamOptions): GridFSBucketReadStream = js.native
+  def openDownloadStream(id: typings.bson.mod.ObjectId): GridFSBucketReadStream = js.native
+  def openDownloadStream(id: typings.bson.mod.ObjectId, options: GridFSBucketReadStreamOptions): GridFSBucketReadStream = js.native
   
   /**
     * Returns a readable stream (GridFSBucketReadStream) for streaming the
@@ -66,8 +65,8 @@ open class GridFSBucket protected () extends TypedEventEmitter[GridFSBucketEvent
     * buffers to GridFS for a custom file id. The stream's 'id' property contains the resulting
     * file's id.
     */
-  def openUploadStreamWithId(id: ObjectId, filename: String): GridFSBucketWriteStream = js.native
-  def openUploadStreamWithId(id: ObjectId, filename: String, options: GridFSBucketWriteStreamOptions): GridFSBucketWriteStream = js.native
+  def openUploadStreamWithId(id: typings.bson.mod.ObjectId, filename: String): GridFSBucketWriteStream = js.native
+  def openUploadStreamWithId(id: typings.bson.mod.ObjectId, filename: String, options: GridFSBucketWriteStreamOptions): GridFSBucketWriteStream = js.native
   
   /**
     * Renames the file with the given _id to the given string
@@ -75,9 +74,9 @@ open class GridFSBucket protected () extends TypedEventEmitter[GridFSBucketEvent
     * @param id - the id of the file to rename
     * @param filename - new name for the file
     */
-  def rename(id: ObjectId, filename: String): js.Promise[Unit] = js.native
+  def rename(id: typings.bson.mod.ObjectId, filename: String): js.Promise[Unit] = js.native
   /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
-  def rename(id: ObjectId, filename: String, callback: Callback[Unit]): Unit = js.native
+  def rename(id: typings.bson.mod.ObjectId, filename: String, callback: Callback[Unit]): Unit = js.native
 }
 /* static members */
 object GridFSBucket {

@@ -10,7 +10,7 @@ trait PickImpliconPartialPickImIcon
   extends StObject
      with Param {
   
-  var icon: String & js.UndefOr[String]
+  var icon: String
   
   var id: js.UndefOr[String] = js.undefined
   
@@ -22,14 +22,14 @@ trait PickImpliconPartialPickImIcon
 }
 object PickImpliconPartialPickImIcon {
   
-  inline def apply(icon: String & js.UndefOr[String]): PickImpliconPartialPickImIcon = {
+  inline def apply(icon: String): PickImpliconPartialPickImIcon = {
     val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpliconPartialPickImIcon]
   }
   
   extension [Self <: PickImpliconPartialPickImIcon](x: Self) {
     
-    inline def setIcon(value: String & js.UndefOr[String]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

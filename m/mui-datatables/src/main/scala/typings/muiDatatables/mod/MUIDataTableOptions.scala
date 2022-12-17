@@ -2,11 +2,11 @@ package typings.muiDatatables.mod
 
 import typings.muiDatatables.anon.ColIndex
 import typings.muiDatatables.anon.Columns
-import typings.muiDatatables.anon.DataIndex
 import typings.muiDatatables.anon.DataLookup
 import typings.muiDatatables.anon.Lookup
 import typings.muiDatatables.anon.PartialMUIDataTableTextLaBody
 import typings.muiDatatables.anon.Partialfilenamestringsepa
+import typings.muiDatatables.anon.RowIndex
 import typings.muiDatatables.anon.XAxis
 import typings.muiDatatables.muiDatatablesBooleans.`false`
 import typings.muiDatatables.muiDatatablesStrings.above
@@ -199,7 +199,7 @@ trait MUIDataTableOptions extends StObject {
   
   var onFilterDialogOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onRowClick: js.UndefOr[js.Function2[/* rowData */ js.Array[String], /* rowMeta */ DataIndex, Unit]] = js.undefined
+  var onRowClick: js.UndefOr[js.Function2[/* rowData */ js.Array[String], /* rowMeta */ RowIndex, Unit]] = js.undefined
   
   var onRowExpansionChange: js.UndefOr[
     js.Function3[
@@ -241,7 +241,7 @@ trait MUIDataTableOptions extends StObject {
   
   var print: js.UndefOr[ToolbarButton] = js.undefined
   
-  var renderExpandableRow: js.UndefOr[js.Function2[/* rowData */ js.Array[String], /* rowMeta */ DataIndex, ReactNode]] = js.undefined
+  var renderExpandableRow: js.UndefOr[js.Function2[/* rowData */ js.Array[String], /* rowMeta */ RowIndex, ReactNode]] = js.undefined
   
   var resizableColumns: js.UndefOr[Boolean] = js.undefined
   
@@ -515,7 +515,7 @@ object MUIDataTableOptions {
     
     inline def setOnFilterDialogOpenUndefined: Self = StObject.set(x, "onFilterDialogOpen", js.undefined)
     
-    inline def setOnRowClick(value: (/* rowData */ js.Array[String], /* rowMeta */ DataIndex) => Unit): Self = StObject.set(x, "onRowClick", js.Any.fromFunction2(value))
+    inline def setOnRowClick(value: (/* rowData */ js.Array[String], /* rowMeta */ RowIndex) => Unit): Self = StObject.set(x, "onRowClick", js.Any.fromFunction2(value))
     
     inline def setOnRowClickUndefined: Self = StObject.set(x, "onRowClick", js.undefined)
     
@@ -571,7 +571,7 @@ object MUIDataTableOptions {
     
     inline def setPrintUndefined: Self = StObject.set(x, "print", js.undefined)
     
-    inline def setRenderExpandableRow(value: (/* rowData */ js.Array[String], /* rowMeta */ DataIndex) => ReactNode): Self = StObject.set(x, "renderExpandableRow", js.Any.fromFunction2(value))
+    inline def setRenderExpandableRow(value: (/* rowData */ js.Array[String], /* rowMeta */ RowIndex) => ReactNode): Self = StObject.set(x, "renderExpandableRow", js.Any.fromFunction2(value))
     
     inline def setRenderExpandableRowUndefined: Self = StObject.set(x, "renderExpandableRow", js.undefined)
     

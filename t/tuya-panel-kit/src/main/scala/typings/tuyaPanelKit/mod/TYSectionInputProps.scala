@@ -1,7 +1,7 @@
 package typings.tuyaPanelKit.mod
 
 import typings.react.mod.ReactNode
-import typings.reactNative.anon.End
+import typings.reactNative.anon.Start
 import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
@@ -15,7 +15,6 @@ import typings.reactNative.mod.Insets
 import typings.reactNative.mod.KeyboardTypeOptions
 import typings.reactNative.mod.LayoutChangeEvent
 import typings.reactNative.mod.NativeSyntheticEvent
-import typings.reactNative.mod.NativeTouchEvent
 import typings.reactNative.mod.PointerEvent
 import typings.reactNative.mod.ReturnKeyTypeOptions
 import typings.reactNative.mod.StyleProp
@@ -31,7 +30,7 @@ import typings.reactNative.mod.TextInputSubmitEditingEventData
 import typings.reactNative.mod.TextInputTextInputEventData
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.tuyaPanelKit.anon.CellBg
+import typings.tuyaPanelKit.anon.BoardBg
 import typings.tuyaPanelKit.anon.Container
 import typings.tuyaPanelKit.tuyaPanelKitStrings.URL
 import typings.tuyaPanelKit.tuyaPanelKitStrings.`birthdate-day`
@@ -350,9 +349,9 @@ trait TYSectionInputProps extends StObject {
   
   var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  var onPressIn: (js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]) & (js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[NativeTouchEvent], Unit]])
+  var onPressIn: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  var onPressOut: (js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]) & (js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[NativeTouchEvent], Unit]])
+  var onPressOut: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
   var onResponderEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
@@ -422,7 +421,7 @@ trait TYSectionInputProps extends StObject {
   
   var selectTextOnFocus: js.UndefOr[Boolean] = js.undefined
   
-  var selection: js.UndefOr[End] = js.undefined
+  var selection: js.UndefOr[Start] = js.undefined
   
   var selectionColor: js.UndefOr[ColorValue] = js.undefined
   
@@ -452,7 +451,7 @@ trait TYSectionInputProps extends StObject {
     none_ | URL | addressCity | addressCityAndState | addressState | countryName | creditCardNumber | emailAddress | familyName | fullStreetAddress | givenName | jobTitle | location | middleName | name | namePrefix | nameSuffix | nickname | organizationName | postalCode | streetAddressLine1 | streetAddressLine2 | sublocality | telephoneNumber | username | password | newPassword | oneTimeCode
   ] = js.undefined
   
-  var theme: js.UndefOr[CellBg] = js.undefined
+  var theme: js.UndefOr[BoardBg] = js.undefined
   
   /**
     * @language zh-CN
@@ -500,12 +499,8 @@ trait TYSectionInputProps extends StObject {
 }
 object TYSectionInputProps {
   
-  inline def apply(
-    onPressIn: (js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]) & (js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[NativeTouchEvent], Unit]]),
-    onPressOut: (js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]) & (js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[NativeTouchEvent], Unit]]),
-    title: String
-  ): TYSectionInputProps = {
-    val __obj = js.Dynamic.literal(onPressIn = onPressIn.asInstanceOf[js.Any], onPressOut = onPressOut.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+  inline def apply(title: String): TYSectionInputProps = {
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[TYSectionInputProps]
   }
   
@@ -923,13 +918,13 @@ object TYSectionInputProps {
     
     inline def setOnPress(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
     
-    inline def setOnPressIn(
-      value: (js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]) & (js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[NativeTouchEvent], Unit]])
-    ): Self = StObject.set(x, "onPressIn", value.asInstanceOf[js.Any])
+    inline def setOnPressIn(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPressIn", js.Any.fromFunction1(value))
     
-    inline def setOnPressOut(
-      value: (js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]) & (js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[NativeTouchEvent], Unit]])
-    ): Self = StObject.set(x, "onPressOut", value.asInstanceOf[js.Any])
+    inline def setOnPressInUndefined: Self = StObject.set(x, "onPressIn", js.undefined)
+    
+    inline def setOnPressOut(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPressOut", js.Any.fromFunction1(value))
+    
+    inline def setOnPressOutUndefined: Self = StObject.set(x, "onPressOut", js.undefined)
     
     inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     
@@ -1065,7 +1060,7 @@ object TYSectionInputProps {
     
     inline def setSelectTextOnFocusUndefined: Self = StObject.set(x, "selectTextOnFocus", js.undefined)
     
-    inline def setSelection(value: End): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: Start): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
     inline def setSelectionColor(value: ColorValue): Self = StObject.set(x, "selectionColor", value.asInstanceOf[js.Any])
     
@@ -1125,7 +1120,7 @@ object TYSectionInputProps {
     
     inline def setTextContentTypeUndefined: Self = StObject.set(x, "textContentType", js.undefined)
     
-    inline def setTheme(value: CellBg): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: BoardBg): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     

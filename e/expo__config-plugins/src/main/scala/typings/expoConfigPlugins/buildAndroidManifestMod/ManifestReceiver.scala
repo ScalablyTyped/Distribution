@@ -1,6 +1,5 @@
 package typings.expoConfigPlugins.buildAndroidManifestMod
 
-import typings.expoConfigPlugins.anon.AndroidManifestAttributesAndroidenabled
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,20 +7,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ManifestReceiver extends StObject {
   
   @JSName("$")
-  var $: AndroidManifestAttributesAndroidenabled
+  var $: typings.expoConfigPlugins.anon.AndroidManifestAttributes
   
   var `intent-filter`: js.UndefOr[js.Array[ManifestIntentFilter]] = js.undefined
 }
 object ManifestReceiver {
   
-  inline def apply($: AndroidManifestAttributesAndroidenabled): ManifestReceiver = {
+  inline def apply($: typings.expoConfigPlugins.anon.AndroidManifestAttributes): ManifestReceiver = {
     val __obj = js.Dynamic.literal($ = $.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManifestReceiver]
   }
   
   extension [Self <: ManifestReceiver](x: Self) {
     
-    inline def set$(value: AndroidManifestAttributesAndroidenabled): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
+    inline def set$(value: typings.expoConfigPlugins.anon.AndroidManifestAttributes): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
     
     inline def `setIntent-filter`(value: js.Array[ManifestIntentFilter]): Self = StObject.set(x, "intent-filter", value.asInstanceOf[js.Any])
     

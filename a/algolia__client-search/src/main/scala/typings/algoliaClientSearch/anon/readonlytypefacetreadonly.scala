@@ -1,6 +1,5 @@
 package typings.algoliaClientSearch.anon
 
-import typings.algoliaClientSearch.algoliaClientSearchStrings.default
 import typings.algoliaClientSearch.algoliaClientSearchStrings.facet
 import typings.algoliaClientSearch.mod.MultipleQueriesQuery
 import typings.algoliaClientSearch.mod.SearchOptions
@@ -26,7 +25,7 @@ trait readonlytypefacetreadonly
   /**
     * The search options.
     */
-  val params: (js.UndefOr[js.UndefOr[SearchOptions] & FacetQuery]) & js.UndefOr[SearchOptions]
+  val params: js.UndefOr[js.UndefOr[SearchOptions] & FacetQuery] = js.undefined
   
   /**
     * The query associated with the request.
@@ -38,18 +37,13 @@ trait readonlytypefacetreadonly
     *
     * @defaultValue "default"
     */
-  val `type`: typings.algoliaClientSearch.algoliaClientSearchStrings.facet & (js.UndefOr[default | typings.algoliaClientSearch.algoliaClientSearchStrings.facet])
+  val `type`: typings.algoliaClientSearch.algoliaClientSearchStrings.facet
 }
 object readonlytypefacetreadonly {
   
-  inline def apply(
-    facet: String,
-    indexName: String,
-    params: (js.UndefOr[js.UndefOr[SearchOptions] & FacetQuery]) & js.UndefOr[SearchOptions],
-    `type`: facet & (js.UndefOr[default | facet])
-  ): readonlytypefacetreadonly = {
-    val __obj = js.Dynamic.literal(facet = facet.asInstanceOf[js.Any], indexName = indexName.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  inline def apply(facet: String, indexName: String): readonlytypefacetreadonly = {
+    val __obj = js.Dynamic.literal(facet = facet.asInstanceOf[js.Any], indexName = indexName.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("facet")
     __obj.asInstanceOf[readonlytypefacetreadonly]
   }
   
@@ -59,12 +53,14 @@ object readonlytypefacetreadonly {
     
     inline def setIndexName(value: String): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
     
-    inline def setParams(value: (js.UndefOr[js.UndefOr[SearchOptions] & FacetQuery]) & js.UndefOr[SearchOptions]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.UndefOr[SearchOptions] & FacetQuery): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
     inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    inline def setType(value: facet & (js.UndefOr[default | facet])): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: facet): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

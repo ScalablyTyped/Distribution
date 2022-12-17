@@ -37,7 +37,7 @@ trait AFrame extends StObject {
   
   def registerPrimitive(name: String, primitive: PrimitiveDefinition): Unit
   
-  def registerShader[T /* <: MinimalShaderDefinition & js.Object */](name: String, shader: ShaderDefinition[T]): ShaderConstructor[T]
+  def registerShader[T /* <: MinimalShaderDefinition */](name: String, shader: ShaderDefinition[T]): ShaderConstructor[T]
   
   def registerSystem[T /* <: js.Object */](name: String, definition: SystemDefinition[T]): SystemConstructor[T]
   

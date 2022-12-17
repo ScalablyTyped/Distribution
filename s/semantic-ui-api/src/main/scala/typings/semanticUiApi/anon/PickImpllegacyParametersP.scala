@@ -18,7 +18,7 @@ trait PickImpllegacyParametersP
   
   var exitConditions: js.UndefOr[String] = js.undefined
   
-  var legacyParameters: String & js.UndefOr[String]
+  var legacyParameters: String
   
   var missingAction: js.UndefOr[String] = js.undefined
   
@@ -38,7 +38,7 @@ trait PickImpllegacyParametersP
 }
 object PickImpllegacyParametersP {
   
-  inline def apply(legacyParameters: String & js.UndefOr[String]): PickImpllegacyParametersP = {
+  inline def apply(legacyParameters: String): PickImpllegacyParametersP = {
     val __obj = js.Dynamic.literal(legacyParameters = legacyParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpllegacyParametersP]
   }
@@ -61,7 +61,7 @@ object PickImpllegacyParametersP {
     
     inline def setJSONParseUndefined: Self = StObject.set(x, "JSONParse", js.undefined)
     
-    inline def setLegacyParameters(value: String & js.UndefOr[String]): Self = StObject.set(x, "legacyParameters", value.asInstanceOf[js.Any])
+    inline def setLegacyParameters(value: String): Self = StObject.set(x, "legacyParameters", value.asInstanceOf[js.Any])
     
     inline def setMissingAction(value: String): Self = StObject.set(x, "missingAction", value.asInstanceOf[js.Any])
     

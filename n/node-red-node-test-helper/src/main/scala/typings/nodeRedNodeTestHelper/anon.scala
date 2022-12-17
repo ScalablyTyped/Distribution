@@ -404,11 +404,11 @@ object anon {
   /* Inlined node-red-node-test-helper.node-red-node-test-helper.TestFlowsItem<node-red.node-red.NodeDef> */
   trait TestFlowsItemNodeDef extends StObject {
     
-    var id: js.UndefOr[String] & String
+    var id: js.UndefOr[String] = js.undefined
     
     var name: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] & String
+    var `type`: js.UndefOr[String] = js.undefined
     
     var wires: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
     
@@ -416,21 +416,24 @@ object anon {
   }
   object TestFlowsItemNodeDef {
     
-    inline def apply(id: js.UndefOr[String] & String, `type`: js.UndefOr[String] & String): TestFlowsItemNodeDef = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    inline def apply(): TestFlowsItemNodeDef = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TestFlowsItemNodeDef]
     }
     
     extension [Self <: TestFlowsItemNodeDef](x: Self) {
       
-      inline def setId(value: js.UndefOr[String] & String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setType(value: js.UndefOr[String] & String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
       inline def setWires(value: js.Array[js.Array[String]]): Self = StObject.set(x, "wires", value.asInstanceOf[js.Any])
       

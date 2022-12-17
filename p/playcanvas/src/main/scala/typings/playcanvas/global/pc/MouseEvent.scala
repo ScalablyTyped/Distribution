@@ -1,6 +1,5 @@
 package typings.playcanvas.global.pc
 
-import typings.playcanvas.mod.Mouse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ open class MouseEvent protected ()
     * @param {globalThis.MouseEvent} event - The original browser event that fired.
     */
   def this(
-    mouse: Mouse,
+    mouse: typings.playcanvas.mod.Mouse,
     event: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify globalThis.MouseEvent */ Any
   ) = this()
 }

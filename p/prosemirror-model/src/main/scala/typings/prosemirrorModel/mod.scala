@@ -92,6 +92,506 @@ object mod {
   }
   
   /**
+  A DOM parser represents a strategy for parsing DOM content into a
+  ProseMirror document conforming to a given schema. Its behavior is
+  defined by an array of [rules](https://prosemirror.net/docs/ref/#model.ParseRule).
+  */
+  @JSImport("prosemirror-model", "DOMParser")
+  @js.native
+  open class DOMParser protected () extends StObject {
+    /**
+      Create a parser that targets the given schema, using the given
+      parsing rules.
+      */
+    def this(
+      /**
+      The schema into which the parser parses.
+      */
+    schema: Schema[Any, Any],
+      /**
+      The set of [parse rules](https://prosemirror.net/docs/ref/#model.ParseRule) that the parser
+      uses, in order of precedence.
+      */
+    rules: js.Array[ParseRule]
+    ) = this()
+    
+    /**
+      Parse a document from the content of a DOM node.
+      */
+    def parse(dom: DOMNode): Node = js.native
+    def parse(dom: DOMNode, options: ParseOptions): Node = js.native
+    
+    /**
+      Parses the content of the given DOM node, like
+      [`parse`](https://prosemirror.net/docs/ref/#model.DOMParser.parse), and takes the same set of
+      options. But unlike that method, which produces a whole node,
+      this one returns a slice that is open at the sides, meaning that
+      the schema constraints aren't applied to the start of nodes to
+      the left of the input and the end of nodes at the end.
+      */
+    def parseSlice(dom: DOMNode): Slice = js.native
+    def parseSlice(dom: DOMNode, options: ParseOptions): Slice = js.native
+    
+    /**
+      The set of [parse rules](https://prosemirror.net/docs/ref/#model.ParseRule) that the parser
+      uses, in order of precedence.
+      */
+    val rules: js.Array[ParseRule] = js.native
+    
+    /**
+      The schema into which the parser parses.
+      */
+    val schema: Schema[Any, Any] = js.native
+  }
+  object DOMParser {
+    
+    @JSImport("prosemirror-model", "DOMParser")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      Construct a DOM parser using the parsing rules listed in a
+      schema's [node specs](https://prosemirror.net/docs/ref/#model.NodeSpec.parseDOM), reordered by
+      [priority](https://prosemirror.net/docs/ref/#model.ParseRule.priority).
+      */
+    /* static member */
+    inline def fromSchema(schema: Schema[Any, Any]): DOMParser = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSchema")(schema.asInstanceOf[js.Any]).asInstanceOf[DOMParser]
+  }
+  
+  /**
+  A DOM serializer knows how to convert ProseMirror nodes and
+  marks of various types to DOM nodes.
+  */
+  @JSImport("prosemirror-model", "DOMSerializer")
+  @js.native
+  open class DOMSerializer protected () extends StObject {
+    /**
+      Create a serializer. `nodes` should map node names to functions
+      that take a node and return a description of the corresponding
+      DOM. `marks` does the same for mark names, but also gets an
+      argument that tells it whether the mark's content is block or
+      inline content (for typical use, it'll always be inline). A mark
+      serializer may be `null` to indicate that marks of that type
+      should not be serialized.
+      */
+    def this(
+      /**
+      The node serialization functions.
+      */
+    nodes: StringDictionary[js.Function1[/* node */ Node, DOMOutputSpec]],
+      /**
+      The mark serialization functions.
+      */
+    marks: StringDictionary[js.Function2[/* mark */ Mark, /* inline */ Boolean, DOMOutputSpec]]
+    ) = this()
+    
+    /**
+      The mark serialization functions.
+      */
+    val marks: StringDictionary[js.Function2[/* mark */ Mark, /* inline */ Boolean, DOMOutputSpec]] = js.native
+    
+    /**
+      The node serialization functions.
+      */
+    val nodes: StringDictionary[js.Function1[/* node */ Node, DOMOutputSpec]] = js.native
+    
+    /**
+      Serialize the content of this fragment to a DOM fragment. When
+      not in the browser, the `document` option, containing a DOM
+      document, should be passed so that the serializer can create
+      nodes.
+      */
+    def serializeFragment(fragment: Fragment): HTMLElement | DocumentFragment = js.native
+    def serializeFragment(fragment: Fragment, options: Unit, target: DocumentFragment): HTMLElement | DocumentFragment = js.native
+    def serializeFragment(fragment: Fragment, options: Unit, target: HTMLElement): HTMLElement | DocumentFragment = js.native
+    def serializeFragment(fragment: Fragment, options: Document): HTMLElement | DocumentFragment = js.native
+    def serializeFragment(fragment: Fragment, options: Document, target: DocumentFragment): HTMLElement | DocumentFragment = js.native
+    def serializeFragment(fragment: Fragment, options: Document, target: HTMLElement): HTMLElement | DocumentFragment = js.native
+    
+    /**
+      Serialize this node to a DOM node. This can be useful when you
+      need to serialize a part of a document, as opposed to the whole
+      document. To serialize a whole document, use
+      [`serializeFragment`](https://prosemirror.net/docs/ref/#model.DOMSerializer.serializeFragment) on
+      its [content](https://prosemirror.net/docs/ref/#model.Node.content).
+      */
+    def serializeNode(node: Node): Any = js.native
+    def serializeNode(node: Node, options: Document): Any = js.native
+  }
+  object DOMSerializer {
+    
+    @JSImport("prosemirror-model", "DOMSerializer")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      Build a serializer using the [`toDOM`](https://prosemirror.net/docs/ref/#model.NodeSpec.toDOM)
+      properties in a schema's node and mark specs.
+      */
+    /* static member */
+    inline def fromSchema(schema: Schema[Any, Any]): DOMSerializer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSchema")(schema.asInstanceOf[js.Any]).asInstanceOf[DOMSerializer]
+    
+    /**
+      Gather the serializers in a schema's mark specs into an object.
+      */
+    /* static member */
+    inline def marksFromSchema(schema: Schema[Any, Any]): StringDictionary[js.Function2[/* mark */ Mark, /* inline */ Boolean, DOMOutputSpec]] = ^.asInstanceOf[js.Dynamic].applyDynamic("marksFromSchema")(schema.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Function2[/* mark */ Mark, /* inline */ Boolean, DOMOutputSpec]]]
+    
+    /**
+      Gather the serializers in a schema's node specs into an object.
+      This can be useful as a base to build a custom serializer from.
+      */
+    /* static member */
+    inline def nodesFromSchema(schema: Schema[Any, Any]): StringDictionary[js.Function1[/* node */ Node, DOMOutputSpec]] = ^.asInstanceOf[js.Dynamic].applyDynamic("nodesFromSchema")(schema.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Function1[/* node */ Node, DOMOutputSpec]]]
+    
+    /**
+      Render an [output spec](https://prosemirror.net/docs/ref/#model.DOMOutputSpec) to a DOM node. If
+      the spec has a hole (zero) in it, `contentDOM` will point at the
+      node with the hole.
+      */
+    /* static member */
+    inline def renderSpec(doc: typings.std.Document, structure: DOMOutputSpec): ContentDOM = (^.asInstanceOf[js.Dynamic].applyDynamic("renderSpec")(doc.asInstanceOf[js.Any], structure.asInstanceOf[js.Any])).asInstanceOf[ContentDOM]
+    inline def renderSpec(doc: typings.std.Document, structure: DOMOutputSpec, xmlNS: String): ContentDOM = (^.asInstanceOf[js.Dynamic].applyDynamic("renderSpec")(doc.asInstanceOf[js.Any], structure.asInstanceOf[js.Any], xmlNS.asInstanceOf[js.Any])).asInstanceOf[ContentDOM]
+  }
+  
+  /**
+  A fragment represents a node's collection of child nodes.
+  Like nodes, fragments are persistent data structures, and you
+  should not mutate them or their content. Rather, you create new
+  instances whenever needed. The API tries to make this easy.
+  */
+  @JSImport("prosemirror-model", "Fragment")
+  @js.native
+  open class Fragment () extends StObject {
+    
+    /**
+      Create a new fragment by appending the given node to this
+      fragment.
+      */
+    def addToEnd(node: Node): Fragment = js.native
+    
+    /**
+      Create a new fragment by prepending the given node to this
+      fragment.
+      */
+    def addToStart(node: Node): Fragment = js.native
+    
+    /**
+      Create a new fragment containing the combined content of this
+      fragment and the other.
+      */
+    def append(other: Fragment): Fragment = js.native
+    
+    /**
+      Get the child node at the given index. Raise an error when the
+      index is out of range.
+      */
+    def child(index: Double): Node = js.native
+    
+    /**
+      The number of child nodes in this fragment.
+      */
+    def childCount: Double = js.native
+    
+    /**
+      Cut out the sub-fragment between the two given positions.
+      */
+    def cut(from: Double): Fragment = js.native
+    def cut(from: Double, to: Double): Fragment = js.native
+    
+    /**
+      Call the given callback for every descendant node. `pos` will be
+      relative to the start of the fragment. The callback may return
+      `false` to prevent traversal of a given node's children.
+      */
+    def descendants(f: js.Function3[/* node */ Node, /* pos */ Double, /* parent */ Node | Null, Boolean | Unit]): Unit = js.native
+    
+    /**
+      Compare this fragment to another one.
+      */
+    def eq(other: Fragment): Boolean = js.native
+    
+    /**
+      Find the first position, searching from the end, at which this
+      fragment and the given fragment differ, or `null` if they are
+      the same. Since this position will not be the same in both
+      nodes, an object with two separate positions is returned.
+      */
+    def findDiffEnd(other: Fragment): A | Null = js.native
+    def findDiffEnd(other: Fragment, pos: Double): A | Null = js.native
+    def findDiffEnd(other: Fragment, pos: Double, otherPos: Double): A | Null = js.native
+    def findDiffEnd(other: Fragment, pos: Unit, otherPos: Double): A | Null = js.native
+    
+    /**
+      Find the first position at which this fragment and another
+      fragment differ, or `null` if they are the same.
+      */
+    def findDiffStart(other: Fragment): Double | Null = js.native
+    def findDiffStart(other: Fragment, pos: Double): Double | Null = js.native
+    
+    /**
+      Find the index and inner offset corresponding to a given relative
+      position in this fragment. The result object will be reused
+      (overwritten) the next time the function is called. (Not public.)
+      */
+    def findIndex(pos: Double): Index = js.native
+    def findIndex(pos: Double, round: Double): Index = js.native
+    
+    /**
+      The first child of the fragment, or `null` if it is empty.
+      */
+    def firstChild: Node | Null = js.native
+    
+    /**
+      Call `f` for every child node, passing the node, its offset
+      into this parent node, and its index.
+      */
+    def forEach(f: js.Function3[/* node */ Node, /* offset */ Double, /* index */ Double, Unit]): Unit = js.native
+    
+    /**
+      The last child of the fragment, or `null` if it is empty.
+      */
+    def lastChild: Node | Null = js.native
+    
+    /**
+      Get the child node at the given index, if it exists.
+      */
+    def maybeChild(index: Double): Node | Null = js.native
+    
+    /**
+      Invoke a callback for all descendant nodes between the given two
+      positions (relative to start of this fragment). Doesn't descend
+      into a node when the callback returns `false`.
+      */
+    def nodesBetween(
+      from: Double,
+      to: Double,
+      f: js.Function4[
+          /* node */ Node, 
+          /* start */ Double, 
+          /* parent */ Node | Null, 
+          /* index */ Double, 
+          Boolean | Unit
+        ]
+    ): Unit = js.native
+    def nodesBetween(
+      from: Double,
+      to: Double,
+      f: js.Function4[
+          /* node */ Node, 
+          /* start */ Double, 
+          /* parent */ Node | Null, 
+          /* index */ Double, 
+          Boolean | Unit
+        ],
+      nodeStart: Double
+    ): Unit = js.native
+    def nodesBetween(
+      from: Double,
+      to: Double,
+      f: js.Function4[
+          /* node */ Node, 
+          /* start */ Double, 
+          /* parent */ Node | Null, 
+          /* index */ Double, 
+          Boolean | Unit
+        ],
+      nodeStart: Double,
+      parent: Node
+    ): Unit = js.native
+    def nodesBetween(
+      from: Double,
+      to: Double,
+      f: js.Function4[
+          /* node */ Node, 
+          /* start */ Double, 
+          /* parent */ Node | Null, 
+          /* index */ Double, 
+          Boolean | Unit
+        ],
+      nodeStart: Unit,
+      parent: Node
+    ): Unit = js.native
+    
+    /**
+      Create a new fragment in which the node at the given index is
+      replaced by the given node.
+      */
+    def replaceChild(index: Double, node: Node): Fragment = js.native
+    
+    /**
+      The size of the fragment, which is the total of the size of
+      its content nodes.
+      */
+    val size: Double = js.native
+    
+    /**
+      Extract the text between `from` and `to`. See the same method on
+      [`Node`](https://prosemirror.net/docs/ref/#model.Node.textBetween).
+      */
+    def textBetween(from: Double, to: Double): String = js.native
+    def textBetween(from: Double, to: Double, blockSeparator: String): String = js.native
+    def textBetween(from: Double, to: Double, blockSeparator: String, leafText: String): String = js.native
+    def textBetween(
+      from: Double,
+      to: Double,
+      blockSeparator: String,
+      leafText: js.Function1[/* leafNode */ Node, String]
+    ): String = js.native
+    def textBetween(from: Double, to: Double, blockSeparator: Null, leafText: String): String = js.native
+    def textBetween(
+      from: Double,
+      to: Double,
+      blockSeparator: Null,
+      leafText: js.Function1[/* leafNode */ Node, String]
+    ): String = js.native
+    def textBetween(from: Double, to: Double, blockSeparator: Unit, leafText: String): String = js.native
+    def textBetween(
+      from: Double,
+      to: Double,
+      blockSeparator: Unit,
+      leafText: js.Function1[/* leafNode */ Node, String]
+    ): String = js.native
+    
+    /**
+      Create a JSON-serializeable representation of this fragment.
+      */
+    def toJSON(): Any = js.native
+  }
+  object Fragment {
+    
+    @JSImport("prosemirror-model", "Fragment")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      An empty fragment. Intended to be reused whenever a node doesn't
+      contain anything (rather than allocating a new empty fragment for
+      each leaf node).
+      */
+    /* static member */
+    @JSImport("prosemirror-model", "Fragment.empty")
+    @js.native
+    def empty: Fragment = js.native
+    inline def empty_=(x: Fragment): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("empty")(x.asInstanceOf[js.Any])
+    
+    /**
+      Create a fragment from something that can be interpreted as a
+      set of nodes. For `null`, it returns the empty fragment. For a
+      fragment, the fragment itself. For a node or array of nodes, a
+      fragment containing those nodes.
+      */
+    /* static member */
+    inline def from(): Fragment = ^.asInstanceOf[js.Dynamic].applyDynamic("from")().asInstanceOf[Fragment]
+    inline def from(nodes: js.Array[Node]): Fragment = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(nodes.asInstanceOf[js.Any]).asInstanceOf[Fragment]
+    inline def from(nodes: Fragment): Fragment = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(nodes.asInstanceOf[js.Any]).asInstanceOf[Fragment]
+    inline def from(nodes: Node): Fragment = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(nodes.asInstanceOf[js.Any]).asInstanceOf[Fragment]
+    
+    /**
+      Build a fragment from an array of nodes. Ensures that adjacent
+      text nodes with the same marks are joined together.
+      */
+    /* static member */
+    inline def fromArray(array: js.Array[Node]): Fragment = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(array.asInstanceOf[js.Any]).asInstanceOf[Fragment]
+    
+    /**
+      Deserialize a fragment from its JSON representation.
+      */
+    /* static member */
+    inline def fromJSON(schema: Schema[Any, Any], value: Any): Fragment = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(schema.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Fragment]
+  }
+  
+  /**
+  A mark is a piece of information that can be attached to a node,
+  such as it being emphasized, in code font, or a link. It has a
+  type and optionally a set of attributes that provide further
+  information (such as the target of the link). Marks are created
+  through a `Schema`, which controls which types exist and which
+  attributes they have.
+  */
+  @JSImport("prosemirror-model", "Mark")
+  @js.native
+  open class Mark () extends StObject {
+    
+    /**
+      Given a set of marks, create a new set which contains this one as
+      well, in the right position. If this mark is already in the set,
+      the set itself is returned. If any marks that are set to be
+      [exclusive](https://prosemirror.net/docs/ref/#model.MarkSpec.excludes) with this mark are present,
+      those are replaced by this one.
+      */
+    def addToSet(set: js.Array[Mark]): js.Array[Mark] = js.native
+    
+    /**
+      The attributes associated with this mark.
+      */
+    val attrs: Attrs = js.native
+    
+    /**
+      Test whether this mark has the same type and attributes as
+      another mark.
+      */
+    def eq(other: Mark): Boolean = js.native
+    
+    /**
+      Test whether this mark is in the given set of marks.
+      */
+    def isInSet(set: js.Array[Mark]): Boolean = js.native
+    
+    /**
+      Remove this mark from the given set, returning a new set. If this
+      mark is not in the set, the set itself is returned.
+      */
+    def removeFromSet(set: js.Array[Mark]): js.Array[Mark] = js.native
+    
+    /**
+      Convert this mark to a JSON-serializeable representation.
+      */
+    def toJSON(): Any = js.native
+    
+    /**
+      The type of this mark.
+      */
+    val `type`: MarkType = js.native
+  }
+  object Mark {
+    
+    @JSImport("prosemirror-model", "Mark")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      Deserialize a mark from JSON.
+      */
+    /* static member */
+    inline def fromJSON(schema: Schema[Any, Any], json: Any): Mark = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(schema.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Mark]
+    
+    /**
+      The empty set of marks.
+      */
+    /* static member */
+    @JSImport("prosemirror-model", "Mark.none")
+    @js.native
+    def none: js.Array[Mark] = js.native
+    inline def none_=(x: js.Array[Mark]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
+    
+    /**
+      Test whether two sets of marks are identical.
+      */
+    /* static member */
+    inline def sameSet(a: js.Array[Mark], b: js.Array[Mark]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("sameSet")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    /**
+      Create a properly sorted mark set from null, a single mark, or an
+      unsorted array of marks.
+      */
+    /* static member */
+    inline def setFrom(): js.Array[Mark] = ^.asInstanceOf[js.Dynamic].applyDynamic("setFrom")().asInstanceOf[js.Array[Mark]]
+    inline def setFrom(marks: js.Array[Mark]): js.Array[Mark] = ^.asInstanceOf[js.Dynamic].applyDynamic("setFrom")(marks.asInstanceOf[js.Any]).asInstanceOf[js.Array[Mark]]
+    inline def setFrom(marks: Mark): js.Array[Mark] = ^.asInstanceOf[js.Dynamic].applyDynamic("setFrom")(marks.asInstanceOf[js.Any]).asInstanceOf[js.Array[Mark]]
+  }
+  
+  /**
   Like nodes, marks (which are associated with nodes to signify
   things like emphasis or being part of a link) are
   [tagged](https://prosemirror.net/docs/ref/#model.Mark.type) with type objects, which are
@@ -140,6 +640,371 @@ object mod {
       The spec on which the type is based.
       */
     val spec: MarkSpec = js.native
+  }
+  
+  /**
+  This class represents a node in the tree that makes up a
+  ProseMirror document. So a document is an instance of `Node`, with
+  children that are also instances of `Node`.
+  Nodes are persistent data structures. Instead of changing them, you
+  create new ones with the content you want. Old ones keep pointing
+  at the old document shape. This is made cheaper by sharing
+  structure between the old and new data as much as possible, which a
+  tree shape like this (without back pointers) makes easy.
+  **Do not** directly mutate the properties of a `Node` object. See
+  [the guide](/docs/guide/#doc) for more information.
+  */
+  @JSImport("prosemirror-model", "Node")
+  @js.native
+  open class Node () extends StObject {
+    
+    /**
+      An object mapping attribute names to values. The kind of
+      attributes allowed and required are
+      [determined](https://prosemirror.net/docs/ref/#model.NodeSpec.attrs) by the node type.
+      */
+    val attrs: Attrs = js.native
+    
+    /**
+      Test whether the given node's content could be appended to this
+      node. If that node is empty, this will only return true if there
+      is at least one node type that can appear in both nodes (to avoid
+      merging completely incompatible nodes).
+      */
+    def canAppend(other: Node): Boolean = js.native
+    
+    /**
+      Test whether replacing the range between `from` and `to` (by
+      child index) with the given replacement fragment (which defaults
+      to the empty fragment) would leave the node's content valid. You
+      can optionally pass `start` and `end` indices into the
+      replacement fragment.
+      */
+    def canReplace(from: Double, to: Double): Boolean = js.native
+    def canReplace(from: Double, to: Double, replacement: Unit, start: Double): Boolean = js.native
+    def canReplace(from: Double, to: Double, replacement: Unit, start: Double, end: Double): Boolean = js.native
+    def canReplace(from: Double, to: Double, replacement: Unit, start: Unit, end: Double): Boolean = js.native
+    def canReplace(from: Double, to: Double, replacement: Fragment): Boolean = js.native
+    def canReplace(from: Double, to: Double, replacement: Fragment, start: Double): Boolean = js.native
+    def canReplace(from: Double, to: Double, replacement: Fragment, start: Double, end: Double): Boolean = js.native
+    def canReplace(from: Double, to: Double, replacement: Fragment, start: Unit, end: Double): Boolean = js.native
+    
+    /**
+      Test whether replacing the range `from` to `to` (by index) with
+      a node of the given type would leave the node's content valid.
+      */
+    def canReplaceWith(from: Double, to: Double, `type`: NodeType): Boolean = js.native
+    def canReplaceWith(from: Double, to: Double, `type`: NodeType, marks: js.Array[Mark]): Boolean = js.native
+    
+    /**
+      Check whether this node and its descendants conform to the
+      schema, and raise error when they do not.
+      */
+    def check(): Unit = js.native
+    
+    /**
+      Get the child node at the given index. Raises an error when the
+      index is out of range.
+      */
+    def child(index: Double): Node = js.native
+    
+    /**
+      Find the (direct) child node after the given offset, if any,
+      and return it along with its index and offset relative to this
+      node.
+      */
+    def childAfter(pos: Double): typings.prosemirrorModel.anon.Node = js.native
+    
+    /**
+      Find the (direct) child node before the given offset, if any,
+      and return it along with its index and offset relative to this
+      node.
+      */
+    def childBefore(pos: Double): typings.prosemirrorModel.anon.Node = js.native
+    
+    /**
+      The number of children that the node has.
+      */
+    def childCount: Double = js.native
+    
+    /**
+      A container holding the node's children.
+      */
+    val content: Fragment = js.native
+    
+    /**
+      Get the content match in this node at the given index.
+      */
+    def contentMatchAt(index: Double): ContentMatch = js.native
+    
+    /**
+      Create a new node with the same markup as this node, containing
+      the given content (or empty, if no content is given).
+      */
+    def copy(): Node = js.native
+    def copy(content: Fragment): Node = js.native
+    
+    /**
+      Create a copy of this node with only the content between the
+      given positions. If `to` is not given, it defaults to the end of
+      the node.
+      */
+    def cut(from: Double): Node = js.native
+    def cut(from: Double, to: Double): Node = js.native
+    
+    /**
+      Call the given callback for every descendant node. Doesn't
+      descend into a node when the callback returns `false`.
+      */
+    def descendants(
+      f: js.Function4[
+          /* node */ this.type, 
+          /* pos */ Double, 
+          /* parent */ this.type | Null, 
+          /* index */ Double, 
+          Unit | Boolean
+        ]
+    ): Unit = js.native
+    
+    /**
+      Test whether two nodes represent the same piece of document.
+      */
+    def eq(other: Node): Boolean = js.native
+    
+    /**
+      Returns this node's first child, or `null` if there are no
+      children.
+      */
+    def firstChild: Node | Null = js.native
+    
+    /**
+      Call `f` for every child node, passing the node, its offset
+      into this parent node, and its index.
+      */
+    def forEach(f: js.Function3[/* node */ this.type, /* offset */ Double, /* index */ Double, Unit]): Unit = js.native
+    
+    /**
+      Check whether this node's markup correspond to the given type,
+      attributes, and marks.
+      */
+    def hasMarkup(`type`: NodeType): Boolean = js.native
+    def hasMarkup(`type`: NodeType, attrs: Null, marks: js.Array[Mark]): Boolean = js.native
+    def hasMarkup(`type`: NodeType, attrs: Unit, marks: js.Array[Mark]): Boolean = js.native
+    def hasMarkup(`type`: NodeType, attrs: Attrs): Boolean = js.native
+    def hasMarkup(`type`: NodeType, attrs: Attrs, marks: js.Array[Mark]): Boolean = js.native
+    
+    /**
+      True when this node allows inline content.
+      */
+    def inlineContent: Boolean = js.native
+    
+    /**
+      True when this is an atom, i.e. when it does not have directly
+      editable content. This is usually the same as `isLeaf`, but can
+      be configured with the [`atom` property](https://prosemirror.net/docs/ref/#model.NodeSpec.atom)
+      on a node's spec (typically used when the node is displayed as
+      an uneditable [node view](https://prosemirror.net/docs/ref/#view.NodeView)).
+      */
+    def isAtom: Boolean = js.native
+    
+    /**
+      True when this is a block (non-inline node)
+      */
+    def isBlock: Boolean = js.native
+    
+    /**
+      True when this is an inline node (a text node or a node that can
+      appear among text).
+      */
+    def isInline: Boolean = js.native
+    
+    /**
+      True when this is a leaf node.
+      */
+    def isLeaf: Boolean = js.native
+    
+    /**
+      True when this is a text node.
+      */
+    def isText: Boolean = js.native
+    
+    /**
+      True when this is a textblock node, a block node with inline
+      content.
+      */
+    def isTextblock: Boolean = js.native
+    
+    /**
+      Returns this node's last child, or `null` if there are no
+      children.
+      */
+    def lastChild: Node | Null = js.native
+    
+    /**
+      Create a copy of this node, with the given set of marks instead
+      of the node's own marks.
+      */
+    def mark(marks: js.Array[Mark]): Node = js.native
+    
+    /**
+      The marks (things like whether it is emphasized or part of a
+      link) applied to this node.
+      */
+    val marks: js.Array[Mark] = js.native
+    
+    /**
+      Get the child node at the given index, if it exists.
+      */
+    def maybeChild(index: Double): Node | Null = js.native
+    
+    /**
+      Find the node directly after the given position.
+      */
+    def nodeAt(pos: Double): Node | Null = js.native
+    
+    /**
+      The size of this node, as defined by the integer-based [indexing
+      scheme](/docs/guide/#doc.indexing). For text nodes, this is the
+      amount of characters. For other leaf nodes, it is one. For
+      non-leaf nodes, it is the size of the content plus two (the
+      start and end token).
+      */
+    def nodeSize: Double = js.native
+    
+    /**
+      Invoke a callback for all descendant nodes recursively between
+      the given two positions that are relative to start of this
+      node's content. The callback is invoked with the node, its
+      parent-relative position, its parent node, and its child index.
+      When the callback returns false for a given node, that node's
+      children will not be recursed over. The last parameter can be
+      used to specify a starting position to count from.
+      */
+    def nodesBetween(
+      from: Double,
+      to: Double,
+      f: js.Function4[
+          /* node */ this.type, 
+          /* pos */ Double, 
+          /* parent */ this.type | Null, 
+          /* index */ Double, 
+          Unit | Boolean
+        ]
+    ): Unit = js.native
+    def nodesBetween(
+      from: Double,
+      to: Double,
+      f: js.Function4[
+          /* node */ this.type, 
+          /* pos */ Double, 
+          /* parent */ this.type | Null, 
+          /* index */ Double, 
+          Unit | Boolean
+        ],
+      startPos: Double
+    ): Unit = js.native
+    
+    /**
+      Test whether a given mark or mark type occurs in this document
+      between the two given positions.
+      */
+    def rangeHasMark(from: Double, to: Double, `type`: Mark): Boolean = js.native
+    def rangeHasMark(from: Double, to: Double, `type`: MarkType): Boolean = js.native
+    
+    /**
+      Replace the part of the document between the given positions with
+      the given slice. The slice must 'fit', meaning its open sides
+      must be able to connect to the surrounding content, and its
+      content nodes must be valid children for the node they are placed
+      into. If any of this is violated, an error of type
+      [`ReplaceError`](https://prosemirror.net/docs/ref/#model.ReplaceError) is thrown.
+      */
+    def replace(from: Double, to: Double, slice: Slice): Node = js.native
+    
+    /**
+      Resolve the given position in the document, returning an
+      [object](https://prosemirror.net/docs/ref/#model.ResolvedPos) with information about its context.
+      */
+    def resolve(pos: Double): ResolvedPos = js.native
+    
+    /**
+      Compare the markup (type, attributes, and marks) of this node to
+      those of another. Returns `true` if both have the same markup.
+      */
+    def sameMarkup(other: Node): Boolean = js.native
+    
+    /**
+      Cut out the part of the document between the given positions, and
+      return it as a `Slice` object.
+      */
+    def slice(from: Double): Slice = js.native
+    def slice(from: Double, to: Double): Slice = js.native
+    def slice(from: Double, to: Double, includeParents: Boolean): Slice = js.native
+    def slice(from: Double, to: Unit, includeParents: Boolean): Slice = js.native
+    
+    /**
+      For text nodes, this contains the node's text content.
+      */
+    val text: js.UndefOr[String] = js.native
+    
+    /**
+      Get all text between positions `from` and `to`. When
+      `blockSeparator` is given, it will be inserted to separate text
+      from different block nodes. If `leafText` is given, it'll be
+      inserted for every non-text leaf node encountered, otherwise
+      [`leafText`](https://prosemirror.net/docs/ref/#model.NodeSpec^leafText) will be used.
+      */
+    def textBetween(from: Double, to: Double): String = js.native
+    def textBetween(from: Double, to: Double, blockSeparator: String): String = js.native
+    def textBetween(from: Double, to: Double, blockSeparator: String, leafText: String): String = js.native
+    def textBetween(
+      from: Double,
+      to: Double,
+      blockSeparator: String,
+      leafText: js.Function1[/* leafNode */ this.type, String]
+    ): String = js.native
+    def textBetween(from: Double, to: Double, blockSeparator: Null, leafText: String): String = js.native
+    def textBetween(
+      from: Double,
+      to: Double,
+      blockSeparator: Null,
+      leafText: js.Function1[/* leafNode */ this.type, String]
+    ): String = js.native
+    def textBetween(from: Double, to: Double, blockSeparator: Unit, leafText: String): String = js.native
+    def textBetween(
+      from: Double,
+      to: Double,
+      blockSeparator: Unit,
+      leafText: js.Function1[/* leafNode */ this.type, String]
+    ): String = js.native
+    
+    /**
+      Concatenates all the text nodes found in this fragment and its
+      children.
+      */
+    def textContent: String = js.native
+    
+    /**
+      Return a JSON-serializeable representation of this node.
+      */
+    def toJSON(): Any = js.native
+    
+    /**
+      The type of node that this is.
+      */
+    val `type`: NodeType = js.native
+  }
+  object Node {
+    
+    @JSImport("prosemirror-model", "Node")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      Deserialize a node from its JSON representation.
+      */
+    /* static member */
+    inline def fromJSON(schema: Schema[Any, Any], json: Any): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(schema.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Node]
   }
   
   /**
@@ -757,6 +1622,101 @@ object mod {
   }
   
   /**
+  A slice represents a piece cut out of a larger document. It
+  stores not only a fragment, but also the depth up to which nodes on
+  both side are ‘open’ (cut through).
+  */
+  @JSImport("prosemirror-model", "Slice")
+  @js.native
+  open class Slice protected () extends StObject {
+    /**
+      Create a slice. When specifying a non-zero open depth, you must
+      make sure that there are nodes of at least that depth at the
+      appropriate side of the fragment—i.e. if the fragment is an
+      empty paragraph node, `openStart` and `openEnd` can't be greater
+      than 1.
+      
+      It is not necessary for the content of open nodes to conform to
+      the schema's content constraints, though it should be a valid
+      start/end/middle for such a node, depending on which sides are
+      open.
+      */
+    def this(
+      /**
+      The slice's content.
+      */
+    content: Fragment,
+      /**
+      The open depth at the start of the fragment.
+      */
+    openStart: Double,
+      /**
+      The open depth at the end.
+      */
+    openEnd: Double
+    ) = this()
+    
+    /**
+      The slice's content.
+      */
+    val content: Fragment = js.native
+    
+    /**
+      Tests whether this slice is equal to another slice.
+      */
+    def eq(other: Slice): Boolean = js.native
+    
+    /**
+      The open depth at the end.
+      */
+    val openEnd: Double = js.native
+    
+    /**
+      The open depth at the start of the fragment.
+      */
+    val openStart: Double = js.native
+    
+    /**
+      The size this slice would add when inserted into a document.
+      */
+    def size: Double = js.native
+    
+    /**
+      Convert a slice to a JSON-serializable representation.
+      */
+    def toJSON(): Any = js.native
+  }
+  object Slice {
+    
+    @JSImport("prosemirror-model", "Slice")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      The empty slice.
+      */
+    /* static member */
+    @JSImport("prosemirror-model", "Slice.empty")
+    @js.native
+    def empty: Slice = js.native
+    inline def empty_=(x: Slice): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("empty")(x.asInstanceOf[js.Any])
+    
+    /**
+      Deserialize a slice from its JSON representation.
+      */
+    /* static member */
+    inline def fromJSON(schema: Schema[Any, Any], json: Any): Slice = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(schema.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Slice]
+    
+    /**
+      Create a slice from a fragment by taking the maximum possible
+      open value on both side of the fragment.
+      */
+    /* static member */
+    inline def maxOpen(fragment: Fragment): Slice = ^.asInstanceOf[js.Dynamic].applyDynamic("maxOpen")(fragment.asInstanceOf[js.Any]).asInstanceOf[Slice]
+    inline def maxOpen(fragment: Fragment, openIsolating: Boolean): Slice = (^.asInstanceOf[js.Dynamic].applyDynamic("maxOpen")(fragment.asInstanceOf[js.Any], openIsolating.asInstanceOf[js.Any])).asInstanceOf[Slice]
+  }
+  
+  /**
   Used to [define](https://prosemirror.net/docs/ref/#model.NodeSpec.attrs) attributes on nodes or
   marks.
   */
@@ -811,374 +1771,6 @@ object mod {
   node.
   */
   type DOMOutputSpec = String | DOMNode | ContentDOM | (Array[String | Any])
-  
-  /**
-  A DOM parser represents a strategy for parsing DOM content into a
-  ProseMirror document conforming to a given schema. Its behavior is
-  defined by an array of [rules](https://prosemirror.net/docs/ref/#model.ParseRule).
-  */
-  @js.native
-  trait DOMParser extends StObject {
-    
-    /**
-      Parse a document from the content of a DOM node.
-      */
-    def parse(dom: DOMNode): Node = js.native
-    def parse(dom: DOMNode, options: ParseOptions): Node = js.native
-    
-    /**
-      Parses the content of the given DOM node, like
-      [`parse`](https://prosemirror.net/docs/ref/#model.DOMParser.parse), and takes the same set of
-      options. But unlike that method, which produces a whole node,
-      this one returns a slice that is open at the sides, meaning that
-      the schema constraints aren't applied to the start of nodes to
-      the left of the input and the end of nodes at the end.
-      */
-    def parseSlice(dom: DOMNode): Slice = js.native
-    def parseSlice(dom: DOMNode, options: ParseOptions): Slice = js.native
-    
-    /**
-      The set of [parse rules](https://prosemirror.net/docs/ref/#model.ParseRule) that the parser
-      uses, in order of precedence.
-      */
-    val rules: js.Array[ParseRule] = js.native
-    
-    /**
-      The schema into which the parser parses.
-      */
-    val schema: Schema[Any, Any] = js.native
-  }
-  
-  /**
-  A DOM serializer knows how to convert ProseMirror nodes and
-  marks of various types to DOM nodes.
-  */
-  @js.native
-  trait DOMSerializer extends StObject {
-    
-    /**
-      The mark serialization functions.
-      */
-    val marks: StringDictionary[js.Function2[/* mark */ Mark, /* inline */ Boolean, DOMOutputSpec]] = js.native
-    
-    /**
-      The node serialization functions.
-      */
-    val nodes: StringDictionary[js.Function1[/* node */ Node, DOMOutputSpec]] = js.native
-    
-    /**
-      Serialize the content of this fragment to a DOM fragment. When
-      not in the browser, the `document` option, containing a DOM
-      document, should be passed so that the serializer can create
-      nodes.
-      */
-    def serializeFragment(fragment: Fragment): HTMLElement | DocumentFragment = js.native
-    def serializeFragment(fragment: Fragment, options: Unit, target: DocumentFragment): HTMLElement | DocumentFragment = js.native
-    def serializeFragment(fragment: Fragment, options: Unit, target: HTMLElement): HTMLElement | DocumentFragment = js.native
-    def serializeFragment(fragment: Fragment, options: Document): HTMLElement | DocumentFragment = js.native
-    def serializeFragment(fragment: Fragment, options: Document, target: DocumentFragment): HTMLElement | DocumentFragment = js.native
-    def serializeFragment(fragment: Fragment, options: Document, target: HTMLElement): HTMLElement | DocumentFragment = js.native
-    
-    /**
-      Serialize this node to a DOM node. This can be useful when you
-      need to serialize a part of a document, as opposed to the whole
-      document. To serialize a whole document, use
-      [`serializeFragment`](https://prosemirror.net/docs/ref/#model.DOMSerializer.serializeFragment) on
-      its [content](https://prosemirror.net/docs/ref/#model.Node.content).
-      */
-    def serializeNode(node: Node): Any = js.native
-    def serializeNode(node: Node, options: Document): Any = js.native
-  }
-  
-  /**
-  A fragment represents a node's collection of child nodes.
-  Like nodes, fragments are persistent data structures, and you
-  should not mutate them or their content. Rather, you create new
-  instances whenever needed. The API tries to make this easy.
-  */
-  @js.native
-  trait Fragment extends StObject {
-    
-    /**
-      Create a new fragment by appending the given node to this
-      fragment.
-      */
-    def addToEnd(node: Node): Fragment = js.native
-    
-    /**
-      Create a new fragment by prepending the given node to this
-      fragment.
-      */
-    def addToStart(node: Node): Fragment = js.native
-    
-    /**
-      Create a new fragment containing the combined content of this
-      fragment and the other.
-      */
-    def append(other: Fragment): Fragment = js.native
-    
-    /**
-      Get the child node at the given index. Raise an error when the
-      index is out of range.
-      */
-    def child(index: Double): Node = js.native
-    
-    /**
-      The number of child nodes in this fragment.
-      */
-    def childCount: Double = js.native
-    
-    /**
-      Cut out the sub-fragment between the two given positions.
-      */
-    def cut(from: Double): Fragment = js.native
-    def cut(from: Double, to: Double): Fragment = js.native
-    
-    /**
-      Call the given callback for every descendant node. `pos` will be
-      relative to the start of the fragment. The callback may return
-      `false` to prevent traversal of a given node's children.
-      */
-    def descendants(f: js.Function3[/* node */ Node, /* pos */ Double, /* parent */ Node | Null, Boolean | Unit]): Unit = js.native
-    
-    /**
-      Compare this fragment to another one.
-      */
-    def eq(other: Fragment): Boolean = js.native
-    
-    /**
-      Find the first position, searching from the end, at which this
-      fragment and the given fragment differ, or `null` if they are
-      the same. Since this position will not be the same in both
-      nodes, an object with two separate positions is returned.
-      */
-    def findDiffEnd(other: Fragment): A | Null = js.native
-    def findDiffEnd(other: Fragment, pos: Double): A | Null = js.native
-    def findDiffEnd(other: Fragment, pos: Double, otherPos: Double): A | Null = js.native
-    def findDiffEnd(other: Fragment, pos: Unit, otherPos: Double): A | Null = js.native
-    
-    /**
-      Find the first position at which this fragment and another
-      fragment differ, or `null` if they are the same.
-      */
-    def findDiffStart(other: Fragment): Double | Null = js.native
-    def findDiffStart(other: Fragment, pos: Double): Double | Null = js.native
-    
-    /**
-      Find the index and inner offset corresponding to a given relative
-      position in this fragment. The result object will be reused
-      (overwritten) the next time the function is called. (Not public.)
-      */
-    def findIndex(pos: Double): Index = js.native
-    def findIndex(pos: Double, round: Double): Index = js.native
-    
-    /**
-      The first child of the fragment, or `null` if it is empty.
-      */
-    def firstChild: Node | Null = js.native
-    
-    /**
-      Call `f` for every child node, passing the node, its offset
-      into this parent node, and its index.
-      */
-    def forEach(f: js.Function3[/* node */ Node, /* offset */ Double, /* index */ Double, Unit]): Unit = js.native
-    
-    /**
-      The last child of the fragment, or `null` if it is empty.
-      */
-    def lastChild: Node | Null = js.native
-    
-    /**
-      Get the child node at the given index, if it exists.
-      */
-    def maybeChild(index: Double): Node | Null = js.native
-    
-    /**
-      Invoke a callback for all descendant nodes between the given two
-      positions (relative to start of this fragment). Doesn't descend
-      into a node when the callback returns `false`.
-      */
-    def nodesBetween(
-      from: Double,
-      to: Double,
-      f: js.Function4[
-          /* node */ Node, 
-          /* start */ Double, 
-          /* parent */ Node | Null, 
-          /* index */ Double, 
-          Boolean | Unit
-        ]
-    ): Unit = js.native
-    def nodesBetween(
-      from: Double,
-      to: Double,
-      f: js.Function4[
-          /* node */ Node, 
-          /* start */ Double, 
-          /* parent */ Node | Null, 
-          /* index */ Double, 
-          Boolean | Unit
-        ],
-      nodeStart: Double
-    ): Unit = js.native
-    def nodesBetween(
-      from: Double,
-      to: Double,
-      f: js.Function4[
-          /* node */ Node, 
-          /* start */ Double, 
-          /* parent */ Node | Null, 
-          /* index */ Double, 
-          Boolean | Unit
-        ],
-      nodeStart: Double,
-      parent: Node
-    ): Unit = js.native
-    def nodesBetween(
-      from: Double,
-      to: Double,
-      f: js.Function4[
-          /* node */ Node, 
-          /* start */ Double, 
-          /* parent */ Node | Null, 
-          /* index */ Double, 
-          Boolean | Unit
-        ],
-      nodeStart: Unit,
-      parent: Node
-    ): Unit = js.native
-    
-    /**
-      Create a new fragment in which the node at the given index is
-      replaced by the given node.
-      */
-    def replaceChild(index: Double, node: Node): Fragment = js.native
-    
-    /**
-      The size of the fragment, which is the total of the size of
-      its content nodes.
-      */
-    val size: Double = js.native
-    
-    /**
-      Extract the text between `from` and `to`. See the same method on
-      [`Node`](https://prosemirror.net/docs/ref/#model.Node.textBetween).
-      */
-    def textBetween(from: Double, to: Double): String = js.native
-    def textBetween(from: Double, to: Double, blockSeparator: String): String = js.native
-    def textBetween(from: Double, to: Double, blockSeparator: String, leafText: String): String = js.native
-    def textBetween(
-      from: Double,
-      to: Double,
-      blockSeparator: String,
-      leafText: js.Function1[/* leafNode */ Node, String]
-    ): String = js.native
-    def textBetween(from: Double, to: Double, blockSeparator: Null, leafText: String): String = js.native
-    def textBetween(
-      from: Double,
-      to: Double,
-      blockSeparator: Null,
-      leafText: js.Function1[/* leafNode */ Node, String]
-    ): String = js.native
-    def textBetween(from: Double, to: Double, blockSeparator: Unit, leafText: String): String = js.native
-    def textBetween(
-      from: Double,
-      to: Double,
-      blockSeparator: Unit,
-      leafText: js.Function1[/* leafNode */ Node, String]
-    ): String = js.native
-    
-    /**
-      Create a JSON-serializeable representation of this fragment.
-      */
-    def toJSON(): Any = js.native
-  }
-  
-  /**
-  A mark is a piece of information that can be attached to a node,
-  such as it being emphasized, in code font, or a link. It has a
-  type and optionally a set of attributes that provide further
-  information (such as the target of the link). Marks are created
-  through a `Schema`, which controls which types exist and which
-  attributes they have.
-  */
-  trait Mark extends StObject {
-    
-    /**
-      Given a set of marks, create a new set which contains this one as
-      well, in the right position. If this mark is already in the set,
-      the set itself is returned. If any marks that are set to be
-      [exclusive](https://prosemirror.net/docs/ref/#model.MarkSpec.excludes) with this mark are present,
-      those are replaced by this one.
-      */
-    def addToSet(set: js.Array[Mark]): js.Array[Mark]
-    
-    /**
-      The attributes associated with this mark.
-      */
-    val attrs: Attrs
-    
-    /**
-      Test whether this mark has the same type and attributes as
-      another mark.
-      */
-    def eq(other: Mark): Boolean
-    
-    /**
-      Test whether this mark is in the given set of marks.
-      */
-    def isInSet(set: js.Array[Mark]): Boolean
-    
-    /**
-      Remove this mark from the given set, returning a new set. If this
-      mark is not in the set, the set itself is returned.
-      */
-    def removeFromSet(set: js.Array[Mark]): js.Array[Mark]
-    
-    /**
-      Convert this mark to a JSON-serializeable representation.
-      */
-    def toJSON(): Any
-    
-    /**
-      The type of this mark.
-      */
-    val `type`: MarkType
-  }
-  object Mark {
-    
-    inline def apply(
-      addToSet: js.Array[Mark] => js.Array[Mark],
-      attrs: Attrs,
-      eq_ : Mark => Boolean,
-      isInSet: js.Array[Mark] => Boolean,
-      removeFromSet: js.Array[Mark] => js.Array[Mark],
-      toJSON: () => Any,
-      `type`: MarkType
-    ): Mark = {
-      val __obj = js.Dynamic.literal(addToSet = js.Any.fromFunction1(addToSet), attrs = attrs.asInstanceOf[js.Any], isInSet = js.Any.fromFunction1(isInSet), removeFromSet = js.Any.fromFunction1(removeFromSet), toJSON = js.Any.fromFunction0(toJSON))
-      __obj.updateDynamic("eq")(js.Any.fromFunction1(eq_))
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Mark]
-    }
-    
-    extension [Self <: Mark](x: Self) {
-      
-      inline def setAddToSet(value: js.Array[Mark] => js.Array[Mark]): Self = StObject.set(x, "addToSet", js.Any.fromFunction1(value))
-      
-      inline def setAttrs(value: Attrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
-      
-      inline def setEq_(value: Mark => Boolean): Self = StObject.set(x, "eq", js.Any.fromFunction1(value))
-      
-      inline def setIsInSet(value: js.Array[Mark] => Boolean): Self = StObject.set(x, "isInSet", js.Any.fromFunction1(value))
-      
-      inline def setRemoveFromSet(value: js.Array[Mark] => js.Array[Mark]): Self = StObject.set(x, "removeFromSet", js.Any.fromFunction1(value))
-      
-      inline def setToJSON(value: () => Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
-      
-      inline def setType(value: MarkType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    }
-  }
   
   /**
   Used to define marks when creating a schema.
@@ -1307,358 +1899,6 @@ object mod {
       
       inline def setType(value: NodeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
-  }
-  
-  /**
-  This class represents a node in the tree that makes up a
-  ProseMirror document. So a document is an instance of `Node`, with
-  children that are also instances of `Node`.
-  Nodes are persistent data structures. Instead of changing them, you
-  create new ones with the content you want. Old ones keep pointing
-  at the old document shape. This is made cheaper by sharing
-  structure between the old and new data as much as possible, which a
-  tree shape like this (without back pointers) makes easy.
-  **Do not** directly mutate the properties of a `Node` object. See
-  [the guide](/docs/guide/#doc) for more information.
-  */
-  @js.native
-  trait Node extends StObject {
-    
-    /**
-      An object mapping attribute names to values. The kind of
-      attributes allowed and required are
-      [determined](https://prosemirror.net/docs/ref/#model.NodeSpec.attrs) by the node type.
-      */
-    val attrs: Attrs = js.native
-    
-    /**
-      Test whether the given node's content could be appended to this
-      node. If that node is empty, this will only return true if there
-      is at least one node type that can appear in both nodes (to avoid
-      merging completely incompatible nodes).
-      */
-    def canAppend(other: Node): Boolean = js.native
-    
-    /**
-      Test whether replacing the range between `from` and `to` (by
-      child index) with the given replacement fragment (which defaults
-      to the empty fragment) would leave the node's content valid. You
-      can optionally pass `start` and `end` indices into the
-      replacement fragment.
-      */
-    def canReplace(from: Double, to: Double): Boolean = js.native
-    def canReplace(from: Double, to: Double, replacement: Unit, start: Double): Boolean = js.native
-    def canReplace(from: Double, to: Double, replacement: Unit, start: Double, end: Double): Boolean = js.native
-    def canReplace(from: Double, to: Double, replacement: Unit, start: Unit, end: Double): Boolean = js.native
-    def canReplace(from: Double, to: Double, replacement: Fragment): Boolean = js.native
-    def canReplace(from: Double, to: Double, replacement: Fragment, start: Double): Boolean = js.native
-    def canReplace(from: Double, to: Double, replacement: Fragment, start: Double, end: Double): Boolean = js.native
-    def canReplace(from: Double, to: Double, replacement: Fragment, start: Unit, end: Double): Boolean = js.native
-    
-    /**
-      Test whether replacing the range `from` to `to` (by index) with
-      a node of the given type would leave the node's content valid.
-      */
-    def canReplaceWith(from: Double, to: Double, `type`: NodeType): Boolean = js.native
-    def canReplaceWith(from: Double, to: Double, `type`: NodeType, marks: js.Array[Mark]): Boolean = js.native
-    
-    /**
-      Check whether this node and its descendants conform to the
-      schema, and raise error when they do not.
-      */
-    def check(): Unit = js.native
-    
-    /**
-      Get the child node at the given index. Raises an error when the
-      index is out of range.
-      */
-    def child(index: Double): Node = js.native
-    
-    /**
-      Find the (direct) child node after the given offset, if any,
-      and return it along with its index and offset relative to this
-      node.
-      */
-    def childAfter(pos: Double): typings.prosemirrorModel.anon.Node = js.native
-    
-    /**
-      Find the (direct) child node before the given offset, if any,
-      and return it along with its index and offset relative to this
-      node.
-      */
-    def childBefore(pos: Double): typings.prosemirrorModel.anon.Node = js.native
-    
-    /**
-      The number of children that the node has.
-      */
-    def childCount: Double = js.native
-    
-    /**
-      A container holding the node's children.
-      */
-    val content: Fragment = js.native
-    
-    /**
-      Get the content match in this node at the given index.
-      */
-    def contentMatchAt(index: Double): ContentMatch = js.native
-    
-    /**
-      Create a new node with the same markup as this node, containing
-      the given content (or empty, if no content is given).
-      */
-    def copy(): Node = js.native
-    def copy(content: Fragment): Node = js.native
-    
-    /**
-      Create a copy of this node with only the content between the
-      given positions. If `to` is not given, it defaults to the end of
-      the node.
-      */
-    def cut(from: Double): Node = js.native
-    def cut(from: Double, to: Double): Node = js.native
-    
-    /**
-      Call the given callback for every descendant node. Doesn't
-      descend into a node when the callback returns `false`.
-      */
-    def descendants(
-      f: js.Function4[
-          /* node */ this.type, 
-          /* pos */ Double, 
-          /* parent */ this.type | Null, 
-          /* index */ Double, 
-          Unit | Boolean
-        ]
-    ): Unit = js.native
-    
-    /**
-      Test whether two nodes represent the same piece of document.
-      */
-    def eq(other: Node): Boolean = js.native
-    
-    /**
-      Returns this node's first child, or `null` if there are no
-      children.
-      */
-    def firstChild: Node | Null = js.native
-    
-    /**
-      Call `f` for every child node, passing the node, its offset
-      into this parent node, and its index.
-      */
-    def forEach(f: js.Function3[/* node */ this.type, /* offset */ Double, /* index */ Double, Unit]): Unit = js.native
-    
-    /**
-      Check whether this node's markup correspond to the given type,
-      attributes, and marks.
-      */
-    def hasMarkup(`type`: NodeType): Boolean = js.native
-    def hasMarkup(`type`: NodeType, attrs: Null, marks: js.Array[Mark]): Boolean = js.native
-    def hasMarkup(`type`: NodeType, attrs: Unit, marks: js.Array[Mark]): Boolean = js.native
-    def hasMarkup(`type`: NodeType, attrs: Attrs): Boolean = js.native
-    def hasMarkup(`type`: NodeType, attrs: Attrs, marks: js.Array[Mark]): Boolean = js.native
-    
-    /**
-      True when this node allows inline content.
-      */
-    def inlineContent: Boolean = js.native
-    
-    /**
-      True when this is an atom, i.e. when it does not have directly
-      editable content. This is usually the same as `isLeaf`, but can
-      be configured with the [`atom` property](https://prosemirror.net/docs/ref/#model.NodeSpec.atom)
-      on a node's spec (typically used when the node is displayed as
-      an uneditable [node view](https://prosemirror.net/docs/ref/#view.NodeView)).
-      */
-    def isAtom: Boolean = js.native
-    
-    /**
-      True when this is a block (non-inline node)
-      */
-    def isBlock: Boolean = js.native
-    
-    /**
-      True when this is an inline node (a text node or a node that can
-      appear among text).
-      */
-    def isInline: Boolean = js.native
-    
-    /**
-      True when this is a leaf node.
-      */
-    def isLeaf: Boolean = js.native
-    
-    /**
-      True when this is a text node.
-      */
-    def isText: Boolean = js.native
-    
-    /**
-      True when this is a textblock node, a block node with inline
-      content.
-      */
-    def isTextblock: Boolean = js.native
-    
-    /**
-      Returns this node's last child, or `null` if there are no
-      children.
-      */
-    def lastChild: Node | Null = js.native
-    
-    /**
-      Create a copy of this node, with the given set of marks instead
-      of the node's own marks.
-      */
-    def mark(marks: js.Array[Mark]): Node = js.native
-    
-    /**
-      The marks (things like whether it is emphasized or part of a
-      link) applied to this node.
-      */
-    val marks: js.Array[Mark] = js.native
-    
-    /**
-      Get the child node at the given index, if it exists.
-      */
-    def maybeChild(index: Double): Node | Null = js.native
-    
-    /**
-      Find the node directly after the given position.
-      */
-    def nodeAt(pos: Double): Node | Null = js.native
-    
-    /**
-      The size of this node, as defined by the integer-based [indexing
-      scheme](/docs/guide/#doc.indexing). For text nodes, this is the
-      amount of characters. For other leaf nodes, it is one. For
-      non-leaf nodes, it is the size of the content plus two (the
-      start and end token).
-      */
-    def nodeSize: Double = js.native
-    
-    /**
-      Invoke a callback for all descendant nodes recursively between
-      the given two positions that are relative to start of this
-      node's content. The callback is invoked with the node, its
-      parent-relative position, its parent node, and its child index.
-      When the callback returns false for a given node, that node's
-      children will not be recursed over. The last parameter can be
-      used to specify a starting position to count from.
-      */
-    def nodesBetween(
-      from: Double,
-      to: Double,
-      f: js.Function4[
-          /* node */ this.type, 
-          /* pos */ Double, 
-          /* parent */ this.type | Null, 
-          /* index */ Double, 
-          Unit | Boolean
-        ]
-    ): Unit = js.native
-    def nodesBetween(
-      from: Double,
-      to: Double,
-      f: js.Function4[
-          /* node */ this.type, 
-          /* pos */ Double, 
-          /* parent */ this.type | Null, 
-          /* index */ Double, 
-          Unit | Boolean
-        ],
-      startPos: Double
-    ): Unit = js.native
-    
-    /**
-      Test whether a given mark or mark type occurs in this document
-      between the two given positions.
-      */
-    def rangeHasMark(from: Double, to: Double, `type`: Mark): Boolean = js.native
-    def rangeHasMark(from: Double, to: Double, `type`: MarkType): Boolean = js.native
-    
-    /**
-      Replace the part of the document between the given positions with
-      the given slice. The slice must 'fit', meaning its open sides
-      must be able to connect to the surrounding content, and its
-      content nodes must be valid children for the node they are placed
-      into. If any of this is violated, an error of type
-      [`ReplaceError`](https://prosemirror.net/docs/ref/#model.ReplaceError) is thrown.
-      */
-    def replace(from: Double, to: Double, slice: Slice): Node = js.native
-    
-    /**
-      Resolve the given position in the document, returning an
-      [object](https://prosemirror.net/docs/ref/#model.ResolvedPos) with information about its context.
-      */
-    def resolve(pos: Double): ResolvedPos = js.native
-    
-    /**
-      Compare the markup (type, attributes, and marks) of this node to
-      those of another. Returns `true` if both have the same markup.
-      */
-    def sameMarkup(other: Node): Boolean = js.native
-    
-    /**
-      Cut out the part of the document between the given positions, and
-      return it as a `Slice` object.
-      */
-    def slice(from: Double): Slice = js.native
-    def slice(from: Double, to: Double): Slice = js.native
-    def slice(from: Double, to: Double, includeParents: Boolean): Slice = js.native
-    def slice(from: Double, to: Unit, includeParents: Boolean): Slice = js.native
-    
-    /**
-      For text nodes, this contains the node's text content.
-      */
-    val text: js.UndefOr[String] = js.native
-    
-    /**
-      Get all text between positions `from` and `to`. When
-      `blockSeparator` is given, it will be inserted to separate text
-      from different block nodes. If `leafText` is given, it'll be
-      inserted for every non-text leaf node encountered, otherwise
-      [`leafText`](https://prosemirror.net/docs/ref/#model.NodeSpec^leafText) will be used.
-      */
-    def textBetween(from: Double, to: Double): String = js.native
-    def textBetween(from: Double, to: Double, blockSeparator: String): String = js.native
-    def textBetween(from: Double, to: Double, blockSeparator: String, leafText: String): String = js.native
-    def textBetween(
-      from: Double,
-      to: Double,
-      blockSeparator: String,
-      leafText: js.Function1[/* leafNode */ this.type, String]
-    ): String = js.native
-    def textBetween(from: Double, to: Double, blockSeparator: Null, leafText: String): String = js.native
-    def textBetween(
-      from: Double,
-      to: Double,
-      blockSeparator: Null,
-      leafText: js.Function1[/* leafNode */ this.type, String]
-    ): String = js.native
-    def textBetween(from: Double, to: Double, blockSeparator: Unit, leafText: String): String = js.native
-    def textBetween(
-      from: Double,
-      to: Double,
-      blockSeparator: Unit,
-      leafText: js.Function1[/* leafNode */ this.type, String]
-    ): String = js.native
-    
-    /**
-      Concatenates all the text nodes found in this fragment and its
-      children.
-      */
-    def textContent: String = js.native
-    
-    /**
-      Return a JSON-serializeable representation of this node.
-      */
-    def toJSON(): Any = js.native
-    
-    /**
-      The type of node that this is.
-      */
-    val `type`: NodeType = js.native
   }
   
   /**
@@ -2267,44 +2507,5 @@ object mod {
       
       inline def setTopNodeUndefined: Self = StObject.set(x, "topNode", js.undefined)
     }
-  }
-  
-  /**
-  A slice represents a piece cut out of a larger document. It
-  stores not only a fragment, but also the depth up to which nodes on
-  both side are ‘open’ (cut through).
-  */
-  @js.native
-  trait Slice extends StObject {
-    
-    /**
-      The slice's content.
-      */
-    val content: Fragment = js.native
-    
-    /**
-      Tests whether this slice is equal to another slice.
-      */
-    def eq(other: Slice): Boolean = js.native
-    
-    /**
-      The open depth at the end.
-      */
-    val openEnd: Double = js.native
-    
-    /**
-      The open depth at the start of the fragment.
-      */
-    val openStart: Double = js.native
-    
-    /**
-      The size this slice would add when inserted into a document.
-      */
-    def size: Double = js.native
-    
-    /**
-      Convert a slice to a JSON-serializable representation.
-      */
-    def toJSON(): Any = js.native
   }
 }

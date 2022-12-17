@@ -1,6 +1,5 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.meshesMeshMod.Mesh
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,7 +45,7 @@ open class SubMesh protected ()
     /** indices count */
   indexCount: Double,
     mesh: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
-    renderingMesh: Mesh
+    renderingMesh: typings.babylonjs.meshesMeshMod.Mesh
   ) = this()
   def this(
     /** the material index to use */
@@ -75,7 +74,7 @@ open class SubMesh protected ()
     /** indices count */
   indexCount: Double,
     mesh: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
-    renderingMesh: Mesh,
+    renderingMesh: typings.babylonjs.meshesMeshMod.Mesh,
     createBoundingBox: Boolean
   ) = this()
   def this(
@@ -122,7 +121,7 @@ open class SubMesh protected ()
     /** indices count */
   indexCount: Double,
     mesh: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
-    renderingMesh: Mesh,
+    renderingMesh: typings.babylonjs.meshesMeshMod.Mesh,
     createBoundingBox: Boolean,
     addToMesh: Boolean
   ) = this()
@@ -138,7 +137,7 @@ open class SubMesh protected ()
     /** indices count */
   indexCount: Double,
     mesh: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
-    renderingMesh: Mesh,
+    renderingMesh: typings.babylonjs.meshesMeshMod.Mesh,
     createBoundingBox: Unit,
     addToMesh: Boolean
   ) = this()
@@ -187,7 +186,7 @@ object SubMesh {
     indexStart: Double,
     indexCount: Double,
     mesh: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
-    renderingMesh: Mesh
+    renderingMesh: typings.babylonjs.meshesMeshMod.Mesh
   ): typings.babylonjs.meshesSubMeshMod.SubMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("AddToMesh")(materialIndex.asInstanceOf[js.Any], verticesStart.asInstanceOf[js.Any], verticesCount.asInstanceOf[js.Any], indexStart.asInstanceOf[js.Any], indexCount.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any], renderingMesh.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesSubMeshMod.SubMesh]
   inline def AddToMesh(
     materialIndex: Double,
@@ -196,7 +195,7 @@ object SubMesh {
     indexStart: Double,
     indexCount: Double,
     mesh: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
-    renderingMesh: Mesh,
+    renderingMesh: typings.babylonjs.meshesMeshMod.Mesh,
     createBoundingBox: Boolean
   ): typings.babylonjs.meshesSubMeshMod.SubMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("AddToMesh")(materialIndex.asInstanceOf[js.Any], verticesStart.asInstanceOf[js.Any], verticesCount.asInstanceOf[js.Any], indexStart.asInstanceOf[js.Any], indexCount.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any], renderingMesh.asInstanceOf[js.Any], createBoundingBox.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesSubMeshMod.SubMesh]
   
@@ -229,14 +228,14 @@ object SubMesh {
     startIndex: Double,
     indexCount: Double,
     mesh: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
-    renderingMesh: Mesh
+    renderingMesh: typings.babylonjs.meshesMeshMod.Mesh
   ): typings.babylonjs.meshesSubMeshMod.SubMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromIndices")(materialIndex.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], indexCount.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any], renderingMesh.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesSubMeshMod.SubMesh]
   inline def CreateFromIndices(
     materialIndex: Double,
     startIndex: Double,
     indexCount: Double,
     mesh: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
-    renderingMesh: Mesh,
+    renderingMesh: typings.babylonjs.meshesMeshMod.Mesh,
     createBoundingBox: Boolean
   ): typings.babylonjs.meshesSubMeshMod.SubMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromIndices")(materialIndex.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], indexCount.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any], renderingMesh.asInstanceOf[js.Any], createBoundingBox.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesSubMeshMod.SubMesh]
 }

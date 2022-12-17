@@ -1,7 +1,7 @@
 package typings.babylonjs.BABYLON
 
 import typings.babylonjs.anon.Ind
-import typings.babylonjs.anon.Max
+import typings.babylonjs.anon.Y
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,7 +43,7 @@ trait FacetDataStorage extends StObject {
   
   var partitioningSubdivisions: Double
   
-  var subDiv: Max
+  var subDiv: Y
 }
 object FacetDataStorage {
   
@@ -65,7 +65,7 @@ object FacetDataStorage {
     invertedMatrix: Matrix,
     partitioningBBoxRatio: Double,
     partitioningSubdivisions: Double,
-    subDiv: Max
+    subDiv: Y
   ): FacetDataStorage = {
     val __obj = js.Dynamic.literal(bbSize = bbSize.asInstanceOf[js.Any], depthSortedFacets = depthSortedFacets.asInstanceOf[js.Any], depthSortedIndices = depthSortedIndices.asInstanceOf[js.Any], facetDataEnabled = facetDataEnabled.asInstanceOf[js.Any], facetDepthSort = facetDepthSort.asInstanceOf[js.Any], facetDepthSortEnabled = facetDepthSortEnabled.asInstanceOf[js.Any], facetDepthSortFrom = facetDepthSortFrom.asInstanceOf[js.Any], facetDepthSortFunction = js.Any.fromFunction2(facetDepthSortFunction), facetDepthSortOrigin = facetDepthSortOrigin.asInstanceOf[js.Any], facetNb = facetNb.asInstanceOf[js.Any], facetNormals = facetNormals.asInstanceOf[js.Any], facetParameters = facetParameters.asInstanceOf[js.Any], facetPartitioning = facetPartitioning.asInstanceOf[js.Any], facetPositions = facetPositions.asInstanceOf[js.Any], invertedMatrix = invertedMatrix.asInstanceOf[js.Any], partitioningBBoxRatio = partitioningBBoxRatio.asInstanceOf[js.Any], partitioningSubdivisions = partitioningSubdivisions.asInstanceOf[js.Any], subDiv = subDiv.asInstanceOf[js.Any])
     __obj.asInstanceOf[FacetDataStorage]
@@ -117,6 +117,6 @@ object FacetDataStorage {
     
     inline def setPartitioningSubdivisions(value: Double): Self = StObject.set(x, "partitioningSubdivisions", value.asInstanceOf[js.Any])
     
-    inline def setSubDiv(value: Max): Self = StObject.set(x, "subDiv", value.asInstanceOf[js.Any])
+    inline def setSubDiv(value: Y): Self = StObject.set(x, "subDiv", value.asInstanceOf[js.Any])
   }
 }

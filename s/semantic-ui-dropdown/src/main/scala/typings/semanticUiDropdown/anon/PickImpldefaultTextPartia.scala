@@ -10,7 +10,7 @@ trait PickImpldefaultTextPartia
   extends StObject
      with Param {
   
-  var defaultText: String & js.UndefOr[String]
+  var defaultText: String
   
   var defaultValue: js.UndefOr[String] = js.undefined
   
@@ -22,14 +22,14 @@ trait PickImpldefaultTextPartia
 }
 object PickImpldefaultTextPartia {
   
-  inline def apply(defaultText: String & js.UndefOr[String]): PickImpldefaultTextPartia = {
+  inline def apply(defaultText: String): PickImpldefaultTextPartia = {
     val __obj = js.Dynamic.literal(defaultText = defaultText.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldefaultTextPartia]
   }
   
   extension [Self <: PickImpldefaultTextPartia](x: Self) {
     
-    inline def setDefaultText(value: String & js.UndefOr[String]): Self = StObject.set(x, "defaultText", value.asInstanceOf[js.Any])
+    inline def setDefaultText(value: String): Self = StObject.set(x, "defaultText", value.asInstanceOf[js.Any])
     
     inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     

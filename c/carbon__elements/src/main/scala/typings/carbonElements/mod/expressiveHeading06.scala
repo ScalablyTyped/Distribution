@@ -1,6 +1,6 @@
 package typings.carbonElements.mod
 
-import typings.carbonElements.anon.MaxMd
+import typings.carbonElements.anon.Md
 import typings.carbonElements.carbonElementsDoubles.`1.25`
 import typings.carbonElements.carbonElementsInts.`0`
 import typings.carbonElements.carbonElementsInts.`600`
@@ -17,8 +17,8 @@ object expressiveHeading06 {
   
   @JSImport("@carbon/elements", "expressiveHeading06.breakpoints")
   @js.native
-  def breakpoints: MaxMd = js.native
-  inline def breakpoints_=(x: MaxMd): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("breakpoints")(x.asInstanceOf[js.Any])
+  def breakpoints: Md = js.native
+  inline def breakpoints_=(x: Md): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("breakpoints")(x.asInstanceOf[js.Any])
   
   @JSImport("@carbon/elements", "expressiveHeading06.fontSize")
   @js.native

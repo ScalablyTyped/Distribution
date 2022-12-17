@@ -58,7 +58,7 @@ trait PickImplonSearchQueryPart
   
   def onSearchQuery(query: String): Unit
   @JSName("onSearchQuery")
-  var onSearchQuery_Original: (js.ThisFunction1[/* this */ JQuery, /* query */ String, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* query */ String, Unit]])
+  var onSearchQuery_Original: js.ThisFunction1[/* this */ JQuery, /* query */ String, Unit]
   
   var onSelect: js.UndefOr[
     js.ThisFunction2[/* this */ JQuery, /* result */ Any, /* response */ Any, `false` | Unit]
@@ -94,9 +94,7 @@ trait PickImplonSearchQueryPart
 }
 object PickImplonSearchQueryPart {
   
-  inline def apply(
-    onSearchQuery: (js.ThisFunction1[/* this */ JQuery, /* query */ String, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* query */ String, Unit]])
-  ): PickImplonSearchQueryPart = {
+  inline def apply(onSearchQuery: js.ThisFunction1[/* this */ JQuery, /* query */ String, Unit]): PickImplonSearchQueryPart = {
     val __obj = js.Dynamic.literal(onSearchQuery = onSearchQuery.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonSearchQueryPart]
   }
@@ -175,9 +173,7 @@ object PickImplonSearchQueryPart {
     
     inline def setOnResultsUndefined: Self = StObject.set(x, "onResults", js.undefined)
     
-    inline def setOnSearchQuery(
-      value: (js.ThisFunction1[/* this */ JQuery, /* query */ String, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* query */ String, Unit]])
-    ): Self = StObject.set(x, "onSearchQuery", value.asInstanceOf[js.Any])
+    inline def setOnSearchQuery(value: js.ThisFunction1[/* this */ JQuery, /* query */ String, Unit]): Self = StObject.set(x, "onSearchQuery", value.asInstanceOf[js.Any])
     
     inline def setOnSelect(value: js.ThisFunction2[/* this */ JQuery, /* result */ Any, /* response */ Any, `false` | Unit]): Self = StObject.set(x, "onSelect", value.asInstanceOf[js.Any])
     

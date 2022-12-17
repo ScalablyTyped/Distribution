@@ -31,7 +31,7 @@ object outObjectRequiredMod {
   @js.native
   trait RequiredDeep[O] extends StObject
   
-  type RequiredFlat[O] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof O ]: -? O[K]} */ js.Any) & js.Object
+  type RequiredFlat[O] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof O ]: -? O[K]} */ js.Any
   
   type RequiredPart[O /* <: js.Object */, depth /* <: Depth */] = /* import warning: importer.ImportType#apply Failed type conversion: ts-toolbelt.anon.DeepRequiredDeep<O>[depth] */ js.Any
   

@@ -194,8 +194,6 @@ object anon {
     
     var isChrome: Boolean
     
-    var isDevTools: Boolean
-    
     var isFirefox: Boolean
     
     var isIOS: Boolean
@@ -213,7 +211,6 @@ object anon {
     inline def apply(
       isAndroid: Boolean,
       isChrome: Boolean,
-      isDevTools: Boolean,
       isFirefox: Boolean,
       isIOS: Boolean,
       isMobile: Boolean,
@@ -221,7 +218,7 @@ object anon {
       isSeleniumStandalone: Boolean,
       isW3C: Boolean
     ): IsChrome = {
-      val __obj = js.Dynamic.literal(isAndroid = isAndroid.asInstanceOf[js.Any], isChrome = isChrome.asInstanceOf[js.Any], isDevTools = isDevTools.asInstanceOf[js.Any], isFirefox = isFirefox.asInstanceOf[js.Any], isIOS = isIOS.asInstanceOf[js.Any], isMobile = isMobile.asInstanceOf[js.Any], isSauce = isSauce.asInstanceOf[js.Any], isSeleniumStandalone = isSeleniumStandalone.asInstanceOf[js.Any], isW3C = isW3C.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(isAndroid = isAndroid.asInstanceOf[js.Any], isChrome = isChrome.asInstanceOf[js.Any], isFirefox = isFirefox.asInstanceOf[js.Any], isIOS = isIOS.asInstanceOf[js.Any], isMobile = isMobile.asInstanceOf[js.Any], isSauce = isSauce.asInstanceOf[js.Any], isSeleniumStandalone = isSeleniumStandalone.asInstanceOf[js.Any], isW3C = isW3C.asInstanceOf[js.Any])
       __obj.asInstanceOf[IsChrome]
     }
     
@@ -230,8 +227,6 @@ object anon {
       inline def setIsAndroid(value: Boolean): Self = StObject.set(x, "isAndroid", value.asInstanceOf[js.Any])
       
       inline def setIsChrome(value: Boolean): Self = StObject.set(x, "isChrome", value.asInstanceOf[js.Any])
-      
-      inline def setIsDevTools(value: Boolean): Self = StObject.set(x, "isDevTools", value.asInstanceOf[js.Any])
       
       inline def setIsFirefox(value: Boolean): Self = StObject.set(x, "isFirefox", value.asInstanceOf[js.Any])
       
@@ -247,11 +242,13 @@ object anon {
     }
   }
   
-  trait IsFirefox extends StObject {
+  trait IsDevTools extends StObject {
     
     var isAndroid: Boolean
     
     var isChrome: Boolean
+    
+    var isDevTools: Boolean
     
     var isFirefox: Boolean
     
@@ -265,27 +262,30 @@ object anon {
     
     var isW3C: Boolean
   }
-  object IsFirefox {
+  object IsDevTools {
     
     inline def apply(
       isAndroid: Boolean,
       isChrome: Boolean,
+      isDevTools: Boolean,
       isFirefox: Boolean,
       isIOS: Boolean,
       isMobile: Boolean,
       isSauce: Boolean,
       isSeleniumStandalone: Boolean,
       isW3C: Boolean
-    ): IsFirefox = {
-      val __obj = js.Dynamic.literal(isAndroid = isAndroid.asInstanceOf[js.Any], isChrome = isChrome.asInstanceOf[js.Any], isFirefox = isFirefox.asInstanceOf[js.Any], isIOS = isIOS.asInstanceOf[js.Any], isMobile = isMobile.asInstanceOf[js.Any], isSauce = isSauce.asInstanceOf[js.Any], isSeleniumStandalone = isSeleniumStandalone.asInstanceOf[js.Any], isW3C = isW3C.asInstanceOf[js.Any])
-      __obj.asInstanceOf[IsFirefox]
+    ): IsDevTools = {
+      val __obj = js.Dynamic.literal(isAndroid = isAndroid.asInstanceOf[js.Any], isChrome = isChrome.asInstanceOf[js.Any], isDevTools = isDevTools.asInstanceOf[js.Any], isFirefox = isFirefox.asInstanceOf[js.Any], isIOS = isIOS.asInstanceOf[js.Any], isMobile = isMobile.asInstanceOf[js.Any], isSauce = isSauce.asInstanceOf[js.Any], isSeleniumStandalone = isSeleniumStandalone.asInstanceOf[js.Any], isW3C = isW3C.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IsDevTools]
     }
     
-    extension [Self <: IsFirefox](x: Self) {
+    extension [Self <: IsDevTools](x: Self) {
       
       inline def setIsAndroid(value: Boolean): Self = StObject.set(x, "isAndroid", value.asInstanceOf[js.Any])
       
       inline def setIsChrome(value: Boolean): Self = StObject.set(x, "isChrome", value.asInstanceOf[js.Any])
+      
+      inline def setIsDevTools(value: Boolean): Self = StObject.set(x, "isDevTools", value.asInstanceOf[js.Any])
       
       inline def setIsFirefox(value: Boolean): Self = StObject.set(x, "isFirefox", value.asInstanceOf[js.Any])
       

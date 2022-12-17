@@ -79,9 +79,7 @@ trait PickImplonUpdatePartialPi
   
   def onUpdate(calculations: ElementCalculations): Unit
   @JSName("onUpdate")
-  var onUpdate_Original: (js.ThisFunction1[/* this */ JQuery, /* calculations */ ElementCalculations, Unit]) & (js.UndefOr[
-    js.ThisFunction1[/* this */ JQuery, /* calculations */ ElementCalculations, Unit]
-  ])
+  var onUpdate_Original: js.ThisFunction1[/* this */ JQuery, /* calculations */ ElementCalculations, Unit]
   
   var once: js.UndefOr[Boolean] = js.undefined
   
@@ -105,11 +103,7 @@ trait PickImplonUpdatePartialPi
 }
 object PickImplonUpdatePartialPi {
   
-  inline def apply(
-    onUpdate: (js.ThisFunction1[/* this */ JQuery, /* calculations */ ElementCalculations, Unit]) & (js.UndefOr[
-      js.ThisFunction1[/* this */ JQuery, /* calculations */ ElementCalculations, Unit]
-    ])
-  ): PickImplonUpdatePartialPi = {
+  inline def apply(onUpdate: js.ThisFunction1[/* this */ JQuery, /* calculations */ ElementCalculations, Unit]): PickImplonUpdatePartialPi = {
     val __obj = js.Dynamic.literal(onUpdate = onUpdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonUpdatePartialPi]
   }
@@ -236,11 +230,7 @@ object PickImplonUpdatePartialPi {
     
     inline def setOnUnfixedUndefined: Self = StObject.set(x, "onUnfixed", js.undefined)
     
-    inline def setOnUpdate(
-      value: (js.ThisFunction1[/* this */ JQuery, /* calculations */ ElementCalculations, Unit]) & (js.UndefOr[
-          js.ThisFunction1[/* this */ JQuery, /* calculations */ ElementCalculations, Unit]
-        ])
-    ): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
+    inline def setOnUpdate(value: js.ThisFunction1[/* this */ JQuery, /* calculations */ ElementCalculations, Unit]): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
     
     inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,7 @@ trait PickImplitemPartialPickImActive
   
   var hidden: js.UndefOr[String] = js.undefined
   
-  var item: String & js.UndefOr[String]
+  var item: String
   
   var label: js.UndefOr[String] = js.undefined
   
@@ -50,7 +50,7 @@ trait PickImplitemPartialPickImActive
 }
 object PickImplitemPartialPickImActive {
   
-  inline def apply(item: String & js.UndefOr[String]): PickImplitemPartialPickImActive = {
+  inline def apply(item: String): PickImplitemPartialPickImActive = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplitemPartialPickImActive]
   }
@@ -85,7 +85,7 @@ object PickImplitemPartialPickImActive {
     
     inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
-    inline def setItem(value: String & js.UndefOr[String]): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

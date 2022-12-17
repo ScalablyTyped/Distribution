@@ -6,7 +6,6 @@ import typings.angularDevkitSchematics.srcEngineInterfaceMod.FileOperator
 import typings.angularDevkitSchematics.srcEngineInterfaceMod.Rule
 import typings.angularDevkitSchematics.srcEngineInterfaceMod.SchematicContext
 import typings.angularDevkitSchematics.srcEngineInterfaceMod.Source
-import typings.angularDevkitSchematics.srcRulesRandomMod.RandomOptions
 import typings.angularDevkitSchematics.srcRulesTemplateMod.PathTemplateData
 import typings.angularDevkitSchematics.srcRulesTemplateMod.PathTemplateOptions
 import typings.angularDevkitSchematics.srcTreeActionMod.Action
@@ -17,8 +16,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-
-inline def default(options: RandomOptions): Source = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Source]
 
 inline def FileVisitorCancelToken: js.Symbol = ^.asInstanceOf[js.Dynamic].selectDynamic("FileVisitorCancelToken").asInstanceOf[js.Symbol]
 

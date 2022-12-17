@@ -1,6 +1,5 @@
 package typings.babylonjs.meshesIndexMod
 
-import typings.babylonjs.meshesMeshMod.Mesh
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
@@ -37,37 +36,61 @@ open class Geometry protected ()
     vertexData: typings.babylonjs.meshesMeshDotvertexDataMod.VertexData,
     updatable: Boolean
   ) = this()
-  def this(id: String, scene: Unit, vertexData: Unit, updatable: Boolean, mesh: Nullable[Mesh]) = this()
-  def this(id: String, scene: Unit, vertexData: Unit, updatable: Unit, mesh: Nullable[Mesh]) = this()
+  def this(
+    id: String,
+    scene: Unit,
+    vertexData: Unit,
+    updatable: Boolean,
+    mesh: Nullable[typings.babylonjs.meshesMeshMod.Mesh]
+  ) = this()
+  def this(
+    id: String,
+    scene: Unit,
+    vertexData: Unit,
+    updatable: Unit,
+    mesh: Nullable[typings.babylonjs.meshesMeshMod.Mesh]
+  ) = this()
   def this(
     id: String,
     scene: Unit,
     vertexData: typings.babylonjs.meshesMeshDotvertexDataMod.VertexData,
     updatable: Boolean,
-    mesh: Nullable[Mesh]
+    mesh: Nullable[typings.babylonjs.meshesMeshMod.Mesh]
   ) = this()
   def this(
     id: String,
     scene: Unit,
     vertexData: typings.babylonjs.meshesMeshDotvertexDataMod.VertexData,
     updatable: Unit,
-    mesh: Nullable[Mesh]
+    mesh: Nullable[typings.babylonjs.meshesMeshMod.Mesh]
   ) = this()
-  def this(id: String, scene: Scene, vertexData: Unit, updatable: Boolean, mesh: Nullable[Mesh]) = this()
-  def this(id: String, scene: Scene, vertexData: Unit, updatable: Unit, mesh: Nullable[Mesh]) = this()
+  def this(
+    id: String,
+    scene: Scene,
+    vertexData: Unit,
+    updatable: Boolean,
+    mesh: Nullable[typings.babylonjs.meshesMeshMod.Mesh]
+  ) = this()
+  def this(
+    id: String,
+    scene: Scene,
+    vertexData: Unit,
+    updatable: Unit,
+    mesh: Nullable[typings.babylonjs.meshesMeshMod.Mesh]
+  ) = this()
   def this(
     id: String,
     scene: Scene,
     vertexData: typings.babylonjs.meshesMeshDotvertexDataMod.VertexData,
     updatable: Boolean,
-    mesh: Nullable[Mesh]
+    mesh: Nullable[typings.babylonjs.meshesMeshMod.Mesh]
   ) = this()
   def this(
     id: String,
     scene: Scene,
     vertexData: typings.babylonjs.meshesMeshDotvertexDataMod.VertexData,
     updatable: Unit,
-    mesh: Nullable[Mesh]
+    mesh: Nullable[typings.babylonjs.meshesMeshMod.Mesh]
   ) = this()
 }
 /* static members */
@@ -82,7 +105,7 @@ object Geometry {
     * @param mesh defines the mesh to attach the geometry to
     * @returns the new Geometry
     */
-  inline def CreateGeometryForMesh(mesh: Mesh): typings.babylonjs.meshesGeometryMod.Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateGeometryForMesh")(mesh.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesGeometryMod.Geometry]
+  inline def CreateGeometryForMesh(mesh: typings.babylonjs.meshesMeshMod.Mesh): typings.babylonjs.meshesGeometryMod.Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateGeometryForMesh")(mesh.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshesGeometryMod.Geometry]
   
   /**
     * Extracts a clone of a mesh geometry
@@ -90,7 +113,7 @@ object Geometry {
     * @param id defines the unique ID of the new geometry object
     * @returns the new geometry object
     */
-  inline def ExtractFromMesh(mesh: Mesh, id: String): Nullable[typings.babylonjs.meshesGeometryMod.Geometry] = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtractFromMesh")(mesh.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.meshesGeometryMod.Geometry]]
+  inline def ExtractFromMesh(mesh: typings.babylonjs.meshesMeshMod.Mesh, id: String): Nullable[typings.babylonjs.meshesGeometryMod.Geometry] = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtractFromMesh")(mesh.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.meshesGeometryMod.Geometry]]
   
   /**
     * Create a new geometry from persisted data (Using .babylon file format)
@@ -123,5 +146,5 @@ object Geometry {
   /**
     * @internal
     */
-  inline def _ImportGeometry(parsedGeometry: Any, mesh: Mesh): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_ImportGeometry")(parsedGeometry.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def _ImportGeometry(parsedGeometry: Any, mesh: typings.babylonjs.meshesMeshMod.Mesh): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_ImportGeometry")(parsedGeometry.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

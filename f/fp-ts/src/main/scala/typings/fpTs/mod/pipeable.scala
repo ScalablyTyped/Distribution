@@ -1067,13 +1067,13 @@ object pipeable {
     ]
   ]]
   
-  inline def filterWithIndex[F, I](F: FilterableWithIndex[F, I]): Fn47[I] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterWithIndex")(F.asInstanceOf[js.Any]).asInstanceOf[Fn47[I]]
-  inline def filterWithIndex[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */, I](F: FilterableWithIndex1[F, I]): Fn47[I] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterWithIndex")(F.asInstanceOf[js.Any]).asInstanceOf[Fn47[I]]
-  inline def filterWithIndex[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, I](F: FilterableWithIndex2[F, I]): Fn46[I] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterWithIndex")(F.asInstanceOf[js.Any]).asInstanceOf[Fn46[I]]
-  inline def filterWithIndex[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, I](F: FilterableWithIndex3[F, I]): Fn44[I] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterWithIndex")(F.asInstanceOf[js.Any]).asInstanceOf[Fn44[I]]
-  inline def filterWithIndex[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */, I](F: FilterableWithIndex4[F, I]): Fn43[I] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterWithIndex")(F.asInstanceOf[js.Any]).asInstanceOf[Fn43[I]]
-  inline def filterWithIndex[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E, I](F: FilterableWithIndex2C[F, I, E]): Fn47[I] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterWithIndex")(F.asInstanceOf[js.Any]).asInstanceOf[Fn47[I]]
-  inline def filterWithIndex[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, I, E](F: FilterableWithIndex3C[F, I, E]): Fn45[I] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterWithIndex")(F.asInstanceOf[js.Any]).asInstanceOf[Fn45[I]]
+  inline def filterWithIndex[F, I](F: FilterableWithIndex[F, I]): Fn52[I] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterWithIndex")(F.asInstanceOf[js.Any]).asInstanceOf[Fn52[I]]
+  inline def filterWithIndex[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */, I](F: FilterableWithIndex1[F, I]): Fn52[I] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterWithIndex")(F.asInstanceOf[js.Any]).asInstanceOf[Fn52[I]]
+  inline def filterWithIndex[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, I](F: FilterableWithIndex2[F, I]): Fn51[I] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterWithIndex")(F.asInstanceOf[js.Any]).asInstanceOf[Fn51[I]]
+  inline def filterWithIndex[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, I](F: FilterableWithIndex3[F, I]): Fn49[I] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterWithIndex")(F.asInstanceOf[js.Any]).asInstanceOf[Fn49[I]]
+  inline def filterWithIndex[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */, I](F: FilterableWithIndex4[F, I]): Fn48[I] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterWithIndex")(F.asInstanceOf[js.Any]).asInstanceOf[Fn48[I]]
+  inline def filterWithIndex[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E, I](F: FilterableWithIndex2C[F, I, E]): Fn52[I] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterWithIndex")(F.asInstanceOf[js.Any]).asInstanceOf[Fn52[I]]
+  inline def filterWithIndex[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, I, E](F: FilterableWithIndex3C[F, I, E]): Fn50[I] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterWithIndex")(F.asInstanceOf[js.Any]).asInstanceOf[Fn50[I]]
   
   inline def foldMap[F](F: Foldable[F]): js.Function1[
     /* M */ Monoid[Any], 
@@ -1606,13 +1606,13 @@ object pipeable {
     ]
   ]]
   
-  inline def partition[F](F: Filterable[F]): Fn52 = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(F.asInstanceOf[js.Any]).asInstanceOf[Fn52]
-  inline def partition[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](F: Filterable1[F]): Fn52 = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(F.asInstanceOf[js.Any]).asInstanceOf[Fn52]
-  inline def partition[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](F: Filterable2[F]): Fn51 = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(F.asInstanceOf[js.Any]).asInstanceOf[Fn51]
-  inline def partition[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](F: Filterable3[F]): Fn49 = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(F.asInstanceOf[js.Any]).asInstanceOf[Fn49]
-  inline def partition[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](F: Filterable4[F]): Fn48 = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(F.asInstanceOf[js.Any]).asInstanceOf[Fn48]
-  inline def partition[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](F: Filterable2C[F, E]): Fn52 = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(F.asInstanceOf[js.Any]).asInstanceOf[Fn52]
-  inline def partition[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](F: Filterable3C[F, E]): Fn50 = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(F.asInstanceOf[js.Any]).asInstanceOf[Fn50]
+  inline def partition[F](F: Filterable[F]): Fn47 = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(F.asInstanceOf[js.Any]).asInstanceOf[Fn47]
+  inline def partition[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](F: Filterable1[F]): Fn47 = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(F.asInstanceOf[js.Any]).asInstanceOf[Fn47]
+  inline def partition[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](F: Filterable2[F]): Fn46 = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(F.asInstanceOf[js.Any]).asInstanceOf[Fn46]
+  inline def partition[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](F: Filterable3[F]): Fn44 = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(F.asInstanceOf[js.Any]).asInstanceOf[Fn44]
+  inline def partition[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](F: Filterable4[F]): Fn43 = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(F.asInstanceOf[js.Any]).asInstanceOf[Fn43]
+  inline def partition[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](F: Filterable2C[F, E]): Fn47 = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(F.asInstanceOf[js.Any]).asInstanceOf[Fn47]
+  inline def partition[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](F: Filterable3C[F, E]): Fn45 = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(F.asInstanceOf[js.Any]).asInstanceOf[Fn45]
   
   inline def partitionMap[F](F: Filterable[F]): js.Function1[
     /* f */ js.Function1[/* a */ Any, Either_[Any, Any]], 

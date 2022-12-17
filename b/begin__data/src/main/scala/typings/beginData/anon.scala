@@ -11,7 +11,7 @@ object anon {
   
   trait Dictothers
     extends StObject
-       with /* others */ StringDictionary[js.UndefOr[BeginDataType]] {
+       with /* others */ StringDictionary[js.UndefOr[Any]] {
     
     var key: String
     
@@ -34,7 +34,7 @@ object anon {
   
   trait Key
     extends StObject
-       with /* others */ StringDictionary[js.UndefOr[Any]] {
+       with /* others */ StringDictionary[js.UndefOr[BeginDataType]] {
     
     var key: String
     

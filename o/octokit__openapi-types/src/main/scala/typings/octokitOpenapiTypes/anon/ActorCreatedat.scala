@@ -13,14 +13,14 @@ trait ActorCreatedat extends StObject {
   
   var event: String
   
-  var source: Issue
+  var source: IssueType
   
   /** Format: date-time */
   var updated_at: String
 }
 object ActorCreatedat {
   
-  inline def apply(created_at: String, event: String, source: Issue, updated_at: String): ActorCreatedat = {
+  inline def apply(created_at: String, event: String, source: IssueType, updated_at: String): ActorCreatedat = {
     val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActorCreatedat]
   }
@@ -35,7 +35,7 @@ object ActorCreatedat {
     
     inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    inline def setSource(value: Issue): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: IssueType): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
   }

@@ -2244,63 +2244,13 @@ object cryptoMod {
   ): js.typedarray.ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("hkdfSync")(digest.asInstanceOf[js.Any], ikm.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], info.asInstanceOf[js.Any], keylen.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.ArrayBuffer]
   
   inline def pbkdf2(password: BinaryLike, salt: BinaryLike, iterations: Double, keylen: Double, digest: String): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keylen.asInstanceOf[js.Any], digest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
-  /**
-    * Provides an asynchronous Password-Based Key Derivation Function 2 (PBKDF2)
-    * implementation. A selected HMAC digest algorithm specified by `digest` is
-    * applied to derive a key of the requested byte length (`keylen`) from the`password`, `salt` and `iterations`.
-    *
-    * The supplied `callback` function is called with two arguments: `err` and`derivedKey`. If an error occurs while deriving the key, `err` will be set;
-    * otherwise `err` will be `null`. By default, the successfully generated`derivedKey` will be passed to the callback as a `Buffer`. An error will be
-    * thrown if any of the input arguments specify invalid values or types.
-    *
-    * If `digest` is `null`, `'sha1'` will be used. This behavior is deprecated,
-    * please specify a `digest` explicitly.
-    *
-    * The `iterations` argument must be a number set as high as possible. The
-    * higher the number of iterations, the more secure the derived key will be,
-    * but will take a longer amount of time to complete.
-    *
-    * The `salt` should be as unique as possible. It is recommended that a salt is
-    * random and at least 16 bytes long. See [NIST SP 800-132](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-132.pdf) for details.
-    *
-    * When passing strings for `password` or `salt`, please consider `caveats when using strings as inputs to cryptographic APIs`.
-    *
-    * ```js
-    * const {
-    *   pbkdf2
-    * } = await import('crypto');
-    *
-    * pbkdf2('secret', 'salt', 100000, 64, 'sha512', (err, derivedKey) => {
-    *   if (err) throw err;
-    *   console.log(derivedKey.toString('hex'));  // '3745e48...08d59ae'
-    * });
-    * ```
-    *
-    * The `crypto.DEFAULT_ENCODING` property can be used to change the way the`derivedKey` is passed to the callback. This property, however, has been
-    * deprecated and use should be avoided.
-    *
-    * ```js
-    * import crypto from 'crypto';
-    * crypto.DEFAULT_ENCODING = 'hex';
-    * crypto.pbkdf2('secret', 'salt', 100000, 512, 'sha512', (err, derivedKey) => {
-    *   if (err) throw err;
-    *   console.log(derivedKey);  // '3745e48...aa39b34'
-    * });
-    * ```
-    *
-    * An array of supported digest functions can be retrieved using {@link getHashes}.
-    *
-    * This API uses libuv's threadpool, which can have surprising and
-    * negative performance implications for some applications; see the `UV_THREADPOOL_SIZE` documentation for more information.
-    * @since v0.5.5
-    */
   inline def pbkdf2(
     password: BinaryLike,
     salt: BinaryLike,
     iterations: Double,
     keylen: Double,
     digest: String,
-    callback: js.Function2[js.Error | Null, /* derivedKey */ Buffer, Any | Unit]
+    callback: js.Function2[/* err */ js.Error | Null, /* derivedKey */ Buffer, Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keylen.asInstanceOf[js.Any], digest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
@@ -2372,8 +2322,6 @@ object cryptoMod {
   inline def pseudoRandomBytes(size: Double): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("pseudoRandomBytes")(size.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
   inline def pseudoRandomBytes(size: Double, callback: js.Function2[/* err */ js.Error | Null, /* buf */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pseudoRandomBytes")(size.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def pseudoRandomBytes_Buffer(size: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("pseudoRandomBytes")(size.asInstanceOf[js.Any]).asInstanceOf[Buffer]
-  
   inline def publicDecrypt(key: KeyLike, buffer: ArrayBufferView): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("publicDecrypt")(key.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   inline def publicDecrypt(key: RsaPrivateKey, buffer: ArrayBufferView): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("publicDecrypt")(key.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   /**
@@ -2406,60 +2354,6 @@ object cryptoMod {
   
   inline def randomBytes(size: Double): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomBytes")(size.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
   inline def randomBytes(size: Double, callback: js.Function2[/* err */ js.Error | Null, /* buf */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomBytes")(size.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  /**
-    * Generates cryptographically strong pseudorandom data. The `size` argument
-    * is a number indicating the number of bytes to generate.
-    *
-    * If a `callback` function is provided, the bytes are generated asynchronously
-    * and the `callback` function is invoked with two arguments: `err` and `buf`.
-    * If an error occurs, `err` will be an `Error` object; otherwise it is `null`. The`buf` argument is a `Buffer` containing the generated bytes.
-    *
-    * ```js
-    * // Asynchronous
-    * const {
-    *   randomBytes
-    * } = await import('crypto');
-    *
-    * randomBytes(256, (err, buf) => {
-    *   if (err) throw err;
-    *   console.log(`${buf.length} bytes of random data: ${buf.toString('hex')}`);
-    * });
-    * ```
-    *
-    * If the `callback` function is not provided, the random bytes are generated
-    * synchronously and returned as a `Buffer`. An error will be thrown if
-    * there is a problem generating the bytes.
-    *
-    * ```js
-    * // Synchronous
-    * const {
-    *   randomBytes
-    * } = await import('crypto');
-    *
-    * const buf = randomBytes(256);
-    * console.log(
-    *   `${buf.length} bytes of random data: ${buf.toString('hex')}`);
-    * ```
-    *
-    * The `crypto.randomBytes()` method will not complete until there is
-    * sufficient entropy available.
-    * This should normally never take longer than a few milliseconds. The only time
-    * when generating the random bytes may conceivably block for a longer period of
-    * time is right after boot, when the whole system is still low on entropy.
-    *
-    * This API uses libuv's threadpool, which can have surprising and
-    * negative performance implications for some applications; see the `UV_THREADPOOL_SIZE` documentation for more information.
-    *
-    * The asynchronous version of `crypto.randomBytes()` is carried out in a single
-    * threadpool request. To minimize threadpool task length variation, partition
-    * large `randomBytes` requests when doing so as part of fulfilling a client
-    * request.
-    * @since v0.5.8
-    * @param size The number of bytes to generate. The `size` must not be larger than `2**31 - 1`.
-    * @return if the `callback` function is not provided.
-    */
-  inline def randomBytes_Buffer(size: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("randomBytes")(size.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
   inline def randomFill(
     buffer: js.typedarray.DataView,

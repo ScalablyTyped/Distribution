@@ -26,7 +26,7 @@ trait PickImplalwaysRefreshPart
   extends StObject
      with Param {
   
-  var alwaysRefresh: Boolean & js.UndefOr[Boolean]
+  var alwaysRefresh: Boolean
   
   var apiSettings: js.UndefOr[ApiSettings] = js.undefined
   
@@ -104,14 +104,14 @@ trait PickImplalwaysRefreshPart
 }
 object PickImplalwaysRefreshPart {
   
-  inline def apply(alwaysRefresh: Boolean & js.UndefOr[Boolean]): PickImplalwaysRefreshPart = {
+  inline def apply(alwaysRefresh: Boolean): PickImplalwaysRefreshPart = {
     val __obj = js.Dynamic.literal(alwaysRefresh = alwaysRefresh.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplalwaysRefreshPart]
   }
   
   extension [Self <: PickImplalwaysRefreshPart](x: Self) {
     
-    inline def setAlwaysRefresh(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "alwaysRefresh", value.asInstanceOf[js.Any])
+    inline def setAlwaysRefresh(value: Boolean): Self = StObject.set(x, "alwaysRefresh", value.asInstanceOf[js.Any])
     
     inline def setApiSettings(value: ApiSettings): Self = StObject.set(x, "apiSettings", value.asInstanceOf[js.Any])
     

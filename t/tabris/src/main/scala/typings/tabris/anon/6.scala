@@ -1,29 +1,35 @@
 package typings.tabris.anon
 
-import typings.tabris.mod.AnyWidget
-import typings.tabris.mod.JSXChildren
-import typings.tabris.mod.WidgetCollection
+import typings.tabris.mod.ListenersKeysOf
+import typings.tabris.tabrisStrings.Asterisk
+import typings.tabris.tabrisStrings.default
+import typings.tabris.tabrisStrings.strict
+import typings.tabris.tabrisStrings.update
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `6`[WidgetType /* <: AnyWidget */] extends StObject {
+trait `6`[Target] extends StObject {
   
-  var children: js.UndefOr[JSXChildren[WidgetType]] = js.undefined
+  var mode: js.UndefOr[default | strict] = js.undefined
+  
+  var trigger: js.UndefOr[ListenersKeysOf[Target] | update | Asterisk | js.Symbol] = js.undefined
 }
 object `6` {
   
-  inline def apply[WidgetType /* <: AnyWidget */](): `6`[WidgetType] = {
+  inline def apply[Target](): `6`[Target] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`6`[WidgetType]]
+    __obj.asInstanceOf[`6`[Target]]
   }
   
-  extension [Self <: `6`[?], WidgetType /* <: AnyWidget */](x: Self & `6`[WidgetType]) {
+  extension [Self <: `6`[?], Target](x: Self & `6`[Target]) {
     
-    inline def setChildren(value: JSXChildren[WidgetType]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setMode(value: default | strict): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    inline def setChildrenVarargs(value: (WidgetType | WidgetCollection[WidgetType])*): Self = StObject.set(x, "children", js.Array(value*))
+    inline def setTrigger(value: ListenersKeysOf[Target] | update | Asterisk | js.Symbol): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+    
+    inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
   }
 }

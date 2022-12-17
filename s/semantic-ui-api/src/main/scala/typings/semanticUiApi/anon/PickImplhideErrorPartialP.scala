@@ -63,7 +63,7 @@ trait PickImplhideErrorPartialP
   
   var errorDuration: js.UndefOr[`true` | Double] = js.undefined
   
-  var hideError: (auto | Boolean) & (js.UndefOr[auto | Boolean])
+  var hideError: auto | Boolean
   
   var interruptRequests: js.UndefOr[Boolean] = js.undefined
   
@@ -147,7 +147,7 @@ trait PickImplhideErrorPartialP
 }
 object PickImplhideErrorPartialP {
   
-  inline def apply(hideError: (auto | Boolean) & (js.UndefOr[auto | Boolean])): PickImplhideErrorPartialP = {
+  inline def apply(hideError: auto | Boolean): PickImplhideErrorPartialP = {
     val __obj = js.Dynamic.literal(hideError = hideError.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplhideErrorPartialP]
   }
@@ -206,7 +206,7 @@ object PickImplhideErrorPartialP {
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    inline def setHideError(value: (auto | Boolean) & (js.UndefOr[auto | Boolean])): Self = StObject.set(x, "hideError", value.asInstanceOf[js.Any])
+    inline def setHideError(value: auto | Boolean): Self = StObject.set(x, "hideError", value.asInstanceOf[js.Any])
     
     inline def setInterruptRequests(value: Boolean): Self = StObject.set(x, "interruptRequests", value.asInstanceOf[js.Any])
     

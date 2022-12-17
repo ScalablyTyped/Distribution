@@ -83,7 +83,7 @@ object `@reactNavigationStackViewsHeaderHeaderTitleMod` {
     
     var android_hyphenationFrequency: js.UndefOr[normal | none_ | full] = js.undefined
     
-    var children: js.UndefOr[ReactNode] & js.UndefOr[String]
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var dataDetectorType: js.UndefOr[Null | phoneNumber | link | email | none_ | all] = js.undefined
     
@@ -139,8 +139,8 @@ object `@reactNavigationStackViewsHeaderHeaderTitleMod` {
   }
   object Props {
     
-    inline def apply(children: js.UndefOr[ReactNode] & js.UndefOr[String]): Props = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    inline def apply(): Props = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Props]
     }
     
@@ -214,7 +214,9 @@ object `@reactNavigationStackViewsHeaderHeaderTitleMod` {
       
       inline def setAndroid_hyphenationFrequencyUndefined: Self = StObject.set(x, "android_hyphenationFrequency", js.undefined)
       
-      inline def setChildren(value: js.UndefOr[ReactNode] & js.UndefOr[String]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setDataDetectorType(value: phoneNumber | link | email | none_ | all): Self = StObject.set(x, "dataDetectorType", value.asInstanceOf[js.Any])
       

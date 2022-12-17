@@ -14,13 +14,13 @@ trait PickImplhiddenPartialPick
   
   var animating: js.UndefOr[String] = js.undefined
   
-  var hidden: String & js.UndefOr[String]
+  var hidden: String
   
   var loading: js.UndefOr[String] = js.undefined
 }
 object PickImplhiddenPartialPick {
   
-  inline def apply(hidden: String & js.UndefOr[String]): PickImplhiddenPartialPick = {
+  inline def apply(hidden: String): PickImplhiddenPartialPick = {
     val __obj = js.Dynamic.literal(hidden = hidden.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplhiddenPartialPick]
   }
@@ -35,7 +35,7 @@ object PickImplhiddenPartialPick {
     
     inline def setAnimatingUndefined: Self = StObject.set(x, "animating", js.undefined)
     
-    inline def setHidden(value: String & js.UndefOr[String]): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     inline def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     

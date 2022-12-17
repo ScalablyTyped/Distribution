@@ -174,14 +174,14 @@ object libIcomponentMod {
     
     var styles: js.UndefOr[IStylesFunctionOrObject[TViewProps, TTokens, TStyleSet]] = js.undefined
     
-    var theme: js.UndefOr[ITheme] & ITheme
+    var theme: js.UndefOr[ITheme] = js.undefined
     
     var tokens: js.UndefOr[ITokenFunctionOrObject[TViewProps, TTokens]] = js.undefined
   }
   object ICustomizationProps {
     
-    inline def apply[TViewProps, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */](theme: js.UndefOr[ITheme] & ITheme): ICustomizationProps[TViewProps, TTokens, TStyleSet] = {
-      val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
+    inline def apply[TViewProps, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */](): ICustomizationProps[TViewProps, TTokens, TStyleSet] = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICustomizationProps[TViewProps, TTokens, TStyleSet]]
     }
     
@@ -197,7 +197,9 @@ object libIcomponentMod {
       
       inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      inline def setTheme(value: js.UndefOr[ITheme] & ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
       inline def setTokens(value: ITokenFunctionOrObject[TViewProps, TTokens]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
       

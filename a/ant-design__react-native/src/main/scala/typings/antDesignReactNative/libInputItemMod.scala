@@ -95,7 +95,7 @@ import typings.antDesignReactNative.libInputItemStyleMod.InputItemStyle
 import typings.antDesignReactNative.libStyleMod.WithThemeStyles
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
-import typings.reactNative.anon.End
+import typings.reactNative.anon.Start
 import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
@@ -378,7 +378,7 @@ object libInputItemMod {
     
     var selectTextOnFocus: js.UndefOr[Boolean] = js.undefined
     
-    var selection: js.UndefOr[End] = js.undefined
+    var selection: js.UndefOr[Start] = js.undefined
     
     var selectionColor: js.UndefOr[ColorValue] = js.undefined
     
@@ -847,7 +847,7 @@ object libInputItemMod {
       
       inline def setSelectTextOnFocusUndefined: Self = StObject.set(x, "selectTextOnFocus", js.undefined)
       
-      inline def setSelection(value: End): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+      inline def setSelection(value: Start): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
       
       inline def setSelectionColor(value: ColorValue): Self = StObject.set(x, "selectionColor", value.asInstanceOf[js.Any])
       
@@ -1157,7 +1157,7 @@ object libInputItemMod {
     
     var selectTextOnFocus: js.UndefOr[Boolean] = js.undefined
     
-    var selection: js.UndefOr[End] = js.undefined
+    var selection: js.UndefOr[Start] = js.undefined
     
     var selectionColor: js.UndefOr[ColorValue] = js.undefined
     
@@ -1638,7 +1638,7 @@ object libInputItemMod {
       
       inline def setSelectTextOnFocusUndefined: Self = StObject.set(x, "selectTextOnFocus", js.undefined)
       
-      inline def setSelection(value: End): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+      inline def setSelection(value: Start): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
       
       inline def setSelectionColor(value: ColorValue): Self = StObject.set(x, "selectionColor", value.asInstanceOf[js.Any])
       

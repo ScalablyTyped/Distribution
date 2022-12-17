@@ -13,7 +13,7 @@ import typings.reactNative.mod.ViewPropsAndroid
 import typings.reactNative.mod.ViewPropsIOS
 import typings.reactNative.mod.ViewStyle
 import typings.reactNativeSvg.anon.ObjectwidthNumberPropunde
-import typings.reactNativeSvg.anon.PreserveAspectRatioString
+import typings.reactNativeSvg.anon.PreserveAspectRatio
 import typings.reactNativeSvg.libTypescriptElementsGMod.GProps
 import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.NumberProp
 import org.scalablytyped.runtime.StObject
@@ -34,8 +34,8 @@ object libTypescriptElementsSvgMod {
     
     @JSImport("react-native-svg/lib/typescript/elements/Svg", "default.defaultProps")
     @js.native
-    def defaultProps: PreserveAspectRatioString = js.native
-    inline def defaultProps_=(x: PreserveAspectRatioString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: PreserveAspectRatio = js.native
+    inline def defaultProps_=(x: PreserveAspectRatio): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("react-native-svg/lib/typescript/elements/Svg", "default.displayName")
     @js.native

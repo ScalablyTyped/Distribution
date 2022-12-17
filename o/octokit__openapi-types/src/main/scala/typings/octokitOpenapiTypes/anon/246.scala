@@ -6,22 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `246` extends StObject {
   
-  /** The slug version of the enterprise name. You can also substitute this value with the enterprise id. */
-  var enterprise: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['enterprise'] */ js.Any
+  /** Response */
+  var `200`: Content245
 }
 object `246` {
   
-  inline def apply(
-    enterprise: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['enterprise'] */ js.Any
-  ): `246` = {
-    val __obj = js.Dynamic.literal(enterprise = enterprise.asInstanceOf[js.Any])
+  inline def apply(`200`: Content245): `246` = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`246`]
   }
   
   extension [Self <: `246`](x: Self) {
     
-    inline def setEnterprise(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['enterprise'] */ js.Any
-    ): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
+    inline def set200(value: Content245): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
   }
 }

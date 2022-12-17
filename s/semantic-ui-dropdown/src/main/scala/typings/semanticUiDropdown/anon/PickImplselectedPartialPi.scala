@@ -40,7 +40,7 @@ trait PickImplselectedPartialPi
   
   var search: js.UndefOr[String] = js.undefined
   
-  var selected: String & js.UndefOr[String]
+  var selected: String
   
   var selection: js.UndefOr[String] = js.undefined
   
@@ -50,7 +50,7 @@ trait PickImplselectedPartialPi
 }
 object PickImplselectedPartialPi {
   
-  inline def apply(selected: String & js.UndefOr[String]): PickImplselectedPartialPi = {
+  inline def apply(selected: String): PickImplselectedPartialPi = {
     val __obj = js.Dynamic.literal(selected = selected.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplselectedPartialPi]
   }
@@ -117,7 +117,7 @@ object PickImplselectedPartialPi {
     
     inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     
-    inline def setSelected(value: String & js.UndefOr[String]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     inline def setSelection(value: String): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
