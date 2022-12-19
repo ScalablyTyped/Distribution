@@ -3,6 +3,24 @@
 
 Typings are for version 0.29.2
 
+## Library description:
+React port of slick carousel
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | @ant-design/react-slick |
+| Keywords           | slick, carousel, Image slider, orbit, slider, react-component |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 3224930.3333333335 |
+| # stars            | 14.0 |
+
+## Links
+- [Homepage](https://react-slick.neostack.com)
+- [Bugs](https://github.com/ant-design/react-slick/issues)
+- [Repository](https://github.com/ant-design/react-slick)
+- [Npm](https://www.npmjs.com/package/%40ant-design%2Freact-slick)
+    
 
 
 ## Note
