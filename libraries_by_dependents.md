@@ -2559,10 +2559,8 @@
 | 0.0 | [expired-storage](./e/expired-storage) | Micro JS lib that provide local & session storage 
 | 0.0 | [expirymanager](./e/expirymanager) | An object for efficiently managing key expiries
 | 0.0 | [expo-application](./e/expo-application) | A universal module that gets native application in
-| 0.0 | [expo-asset](./e/expo-asset) | An Expo universal module to download assets and pa
 | 0.0 | [expo-error-recovery](./e/expo-error-recovery) | Utilities for helping you gracefully handle crashe
 | 0.0 | [expo-file-system](./e/expo-file-system) | Provides access to the local file system on the de
-| 0.0 | [expo-font](./e/expo-font) | Load fonts at runtime and use them in React Native
 | 0.0 | [expo-gl](./e/expo-gl) | Provides GLView that acts as OpenGL ES render targ
 | 0.0 | [expo-linear-gradient](./e/expo-linear-gradient) | Provides a React component that renders a gradient
 | 0.0 | [expo-localization](./e/expo-localization) | Provides an interface for native user localization

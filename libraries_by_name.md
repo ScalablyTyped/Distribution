@@ -2787,11 +2787,8 @@
 | [expirymanager](./e/expirymanager) | An object for efficiently managing key expiries | expiry, expire, expirymanager, timeout, volatile, key |
 | [expo](./e/expo) | - | - |
 | [expo-application](./e/expo-application) | A universal module that gets native application in | react-native, expo, expo-application |
-| [expo-asset](./e/expo-asset) | An Expo universal module to download assets and pa | react-native, expo, asset |
-| [expo-constants](./e/expo-constants) | - | - |
 | [expo-error-recovery](./e/expo-error-recovery) | Utilities for helping you gracefully handle crashe | react-native, expo, expo-error-recovery, error-recovery |
 | [expo-file-system](./e/expo-file-system) | Provides access to the local file system on the de | react-native, expo, file-system, file |
-| [expo-font](./e/expo-font) | Load fonts at runtime and use them in React Native | react-native, expo, font |
 | [expo-gl](./e/expo-gl) | Provides GLView that acts as OpenGL ES render targ | react-native, expo, gl, glview, webgl |
 | [expo-keep-awake](./e/expo-keep-awake) | - | - |
 | [expo-linear-gradient](./e/expo-linear-gradient) | Provides a React component that renders a gradient | react-native, expo, gradient |
