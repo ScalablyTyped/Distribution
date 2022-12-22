@@ -2559,8 +2559,10 @@
 | 0.0 | [expired-storage](./e/expired-storage) | Micro JS lib that provide local & session storage 
 | 0.0 | [expirymanager](./e/expirymanager) | An object for efficiently managing key expiries
 | 0.0 | [expo-application](./e/expo-application) | A universal module that gets native application in
+| 0.0 | [expo-asset](./e/expo-asset) | An Expo universal module to download assets and pa
 | 0.0 | [expo-error-recovery](./e/expo-error-recovery) | Utilities for helping you gracefully handle crashe
 | 0.0 | [expo-file-system](./e/expo-file-system) | Provides access to the local file system on the de
+| 0.0 | [expo-font](./e/expo-font) | Load fonts at runtime and use them in React Native
 | 0.0 | [expo-gl](./e/expo-gl) | Provides GLView that acts as OpenGL ES render targ
 | 0.0 | [expo-linear-gradient](./e/expo-linear-gradient) | Provides a React component that renders a gradient
 | 0.0 | [expo-localization](./e/expo-localization) | Provides an interface for native user localization
@@ -2595,6 +2597,7 @@
 | 0.0 | [express-boom](./e/express-boom) | Boom response objects in Express
 | 0.0 | [express-brute](./e/express-brute) | A brute-force protection middleware for express ro
 | 0.0 | [express-brute-memcached](./e/express-brute-memcached) | A memcached store for express-brute
+| 0.0 | [express-brute-mongo](./e/express-brute-mongo) | MongoDB store for express-brute.
 | 0.0 | [express-brute-redis](./e/express-brute-redis) | A Redis store for express-brute
 | 0.0 | [express-bunyan-logger](./e/express-bunyan-logger) | a bunyan logger middleware for express
 | 0.0 | [express-busboy](./e/express-busboy) | Busboy for express, mimics the old bodyParser
@@ -3389,6 +3392,7 @@
 | 0.0 | [gremlin](./g/gremlin) | JavaScript Gremlin Language Variant
 | 0.0 | [grid-template-parser](./g/grid-template-parser) | A simple CSS Grid template parser
 | 0.0 | [griddle-react](./g/griddle-react) | A fast and flexible grid component for React
+| 0.0 | [gridfs-stream](./g/gridfs-stream) | Writable/Readable Nodejs compatible GridFS streams
 | 0.0 | [gridstack](./g/gridstack) | TypeScript/JS lib for dashboard layout and creatio
 | 0.0 | [grommet](./g/grommet) | focus on the essential experience
 | 0.0 | [grommet-icons](./g/grommet-icons) | iconography for grommet apps.
@@ -3921,6 +3925,7 @@
 | 0.0 | [indefinite-observable](./i/indefinite-observable) |  
 | 0.0 | [indent-string](./i/indent-string) | Indent each line in a string
 | 0.0 | [index-array-by](./i/index-array-by) | A utility function to index arrays by any criteria
+| 0.0 | [indy-sdk](./i/indy-sdk) | Native bindings for hyperledger indy
 | 0.0 | [inert](./i/inert) | Static file and directory handlers plugin for hapi
 | 0.0 | [inferno](./i/inferno) | An extremely fast, React-like JavaScript library f
 | 0.0 | [inferno-clone-vnode](./i/inferno-clone-vnode) | provides helper function to clone Inferno's vNodes

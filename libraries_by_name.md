@@ -2787,8 +2787,11 @@
 | [expirymanager](./e/expirymanager) | An object for efficiently managing key expiries | expiry, expire, expirymanager, timeout, volatile, key |
 | [expo](./e/expo) | - | - |
 | [expo-application](./e/expo-application) | A universal module that gets native application in | react-native, expo, expo-application |
+| [expo-asset](./e/expo-asset) | An Expo universal module to download assets and pa | react-native, expo, asset |
+| [expo-constants](./e/expo-constants) | - | - |
 | [expo-error-recovery](./e/expo-error-recovery) | Utilities for helping you gracefully handle crashe | react-native, expo, expo-error-recovery, error-recovery |
 | [expo-file-system](./e/expo-file-system) | Provides access to the local file system on the de | react-native, expo, file-system, file |
+| [expo-font](./e/expo-font) | Load fonts at runtime and use them in React Native | react-native, expo, font |
 | [expo-gl](./e/expo-gl) | Provides GLView that acts as OpenGL ES render targ | react-native, expo, gl, glview, webgl |
 | [expo-keep-awake](./e/expo-keep-awake) | - | - |
 | [expo-linear-gradient](./e/expo-linear-gradient) | Provides a React component that renders a gradient | react-native, expo, gradient |
@@ -2827,6 +2830,7 @@
 | [express-boom](./e/express-boom) | Boom response objects in Express | Hapi, Boom, Express, response |
 | [express-brute](./e/express-brute) | A brute-force protection middleware for express ro | brute, force, bruteforce, attack, fibonacci, rate, limit, security |
 | [express-brute-memcached](./e/express-brute-memcached) | A memcached store for express-brute | express, brute, memcached, store |
+| [express-brute-mongo](./e/express-brute-mongo) | MongoDB store for express-brute. | - |
 | [express-brute-redis](./e/express-brute-redis) | A Redis store for express-brute | express, brute, redis |
 | [express-bunyan-logger](./e/express-bunyan-logger) | a bunyan logger middleware for express | express, logger, bunyan |
 | [express-busboy](./e/express-busboy) | Busboy for express, mimics the old bodyParser | busboy, express, body-parser |
@@ -4305,6 +4309,7 @@
 | [gremlin](./g/gremlin) | JavaScript Gremlin Language Variant | graph, gremlin, tinkerpop, connection, glv, driver, graphdb |
 | [grid-template-parser](./g/grid-template-parser) | A simple CSS Grid template parser | grid, grid-layout, template, parser |
 | [griddle-react](./g/griddle-react) | A fast and flexible grid component for React | react-component, grid, react, pagination, sort |
+| [gridfs-stream](./g/gridfs-stream) | Writable/Readable Nodejs compatible GridFS streams | mongodb, mongoose, gridfs |
 | [gridstack](./g/gridstack) | TypeScript/JS lib for dashboard layout and creatio | Typescript, gridstack.js, grid, gridster, layout, responsive, dashboard, resize, drag&drop, widgets, Angular, React, Vue, JavaScript |
 | [grommet](./g/grommet) | focus on the essential experience | grommet, grommet.io, grommetux, component, library, design system, framework, react, theme, theming, templates, sticker sheets, design patterns, app templates, atomic design, accessibility, WCAG 2.1, keyboard navigation, screen reader tags, color, type, layout, typography, interaction, ui, user interface, gui, graphical user interface, styled-components |
 | [grommet-icons](./g/grommet-icons) | iconography for grommet apps. | - |
@@ -4857,6 +4862,7 @@
 | [indefinite-observable](./i/indefinite-observable) |   | - |
 | [indent-string](./i/indent-string) | Indent each line in a string | indent, string, pad, align, line, text, each, every |
 | [index-array-by](./i/index-array-by) | A utility function to index arrays by any criteria | index, array, helper |
+| [indy-sdk](./i/indy-sdk) | Native bindings for hyperledger indy | - |
 | [inert](./i/inert) | Static file and directory handlers plugin for hapi | file, directory, handler, hapi, plugin |
 | [ineum](./i/ineum) | - | - |
 | [inferno](./i/inferno) | An extremely fast, React-like JavaScript library f | inferno, performance, framework, interfaces, user interfaces, html, renderToString, server, dom, browser, rollup, vdom |

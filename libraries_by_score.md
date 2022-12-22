@@ -831,6 +831,7 @@
 | 0.8093654656532755 | [import-local](./i/import-local) | Let a globally installed package use a locally ins
 | 0.8093484094554622 | [workbox-expiration](./w/workbox-expiration) | A service worker helper library that expires cache
 | 0.8092146012412533 | [gtoken](./g/gtoken) | Node.js Google Authentication Service Account Toke
+| 0.8092074912036111 | [expo-font](./e/expo-font) | Load fonts at runtime and use them in React Native
 | 0.8091058066143586 | [cheerio-select](./c/cheerio-select) | CSS selector engine supporting jQuery selectors
 | 0.8090137431606929 | [expect](./e/expect) | This package exports the expect function used in 
 | 0.8090025016991513 | [unist-util-generated](./u/unist-util-generated) | unist utility to check if a node is generated
@@ -888,6 +889,7 @@
 | 0.8065426161050717 | [keygrip](./k/keygrip) | Key signing and verification for rotated credentia
 | 0.8065273478180021 | [domexception](./d/domexception) | An implementation of the DOMException class from b
 | 0.8063840918523371 | [fault](./f/fault) | Functional errors with formatted output
+| 0.8061802428444316 | [expo-asset](./e/expo-asset) | An Expo universal module to download assets and pa
 | 0.8060299207258369 | [lines-and-columns](./l/lines-and-columns) | Maps lines and columns to character offsets and ba
 | 0.8059119149017584 | [detect-newline](./d/detect-newline) | Detect the dominant newline character of a string
 | 0.8058724013139071 | [octokit__types](./o/octokit__types) | Shared TypeScript definitions for Octokit projects
@@ -4637,6 +4639,7 @@
 | 0.6715028593119714 | [moddle](./m/moddle) | A library for importing meta-model based file form
 | 0.6714979137696142 | [node-red__editor-client](./n/node-red__editor-client) | -
 | 0.6714925649878302 | [cassanknex](./c/cassanknex) | An Apache Cassandra CQL query builder with support
+| 0.6714853737212092 | [indy-sdk](./i/indy-sdk) | Native bindings for hyperledger indy
 | 0.6714584335377032 | [jss-plugin-global](./j/jss-plugin-global) | Global styles for JSS
 | 0.6714458699011386 | [progress-stream](./p/progress-stream) | Read the progress of a stream
 | 0.6714229772885696 | [totp-generator](./t/totp-generator) | Generate TOTP tokens from key
@@ -6333,6 +6336,7 @@
 | 0.6277034885670205 | [svg-path-bounding-box](./s/svg-path-bounding-box) | SVG path bounding box calculator
 | 0.6276829149991834 | [coinify__currency](./c/coinify__currency) | Helper functions for managing amounts in different
 | 0.6276810531278819 | [react-broadcast](./r/react-broadcast) | Reliably communicate state changes to deeply neste
+| 0.6276589757268316 | [express-brute-mongo](./e/express-brute-mongo) | MongoDB store for express-brute.
 | 0.6276366369132834 | [bonjour](./b/bonjour) | A Bonjour/Zeroconf implementation in pure JavaScri
 | 0.6275467689225729 | [redux-mock-store](./r/redux-mock-store) | A mock store for testing your redux async action c
 | 0.6275266945525023 | [js-captcha](./j/js-captcha) | Simple captcha component written in pure JavaScrip
@@ -9184,6 +9188,7 @@
 | 0.4748939927516376 | [engine-check](./e/engine-check) | Enforce node engine version from package.json
 | 0.4748562567197252 | [gitignore-parser](./g/gitignore-parser) | A simple .gitignore parser.
 | 0.47467901241607363 | [ethereum-blockies](./e/ethereum-blockies) | A tiny library for generating blocky identicons.
+| 0.47467744398104805 | [gridfs-stream](./g/gridfs-stream) | Writable/Readable Nodejs compatible GridFS streams
 | 0.4746670243086724 | [uuid-validate](./u/uuid-validate) | Javascript validator for UUID versions 1 through 5
 | 0.47460435026415015 | [detectos_dot_js](./d/detectos_dot_js) | A simple definition of the popular OS and browsers
 | 0.4746015414470388 | [hunspell-spellchecker](./h/hunspell-spellchecker) | Parse and use Hunspell dictionaries in Javascript
