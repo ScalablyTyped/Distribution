@@ -10,7 +10,7 @@ Check out [scalablytyped.org](https://www.scalablytyped.org)
 
 ## About
 
-This is one of the biggest Scala repos on the planet with with **12828**  compiling libraries.
+This is one of the biggest Scala repos on the planet with with **12836**  compiling libraries.
 
 .
 
