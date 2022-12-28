@@ -11518,7 +11518,6 @@
 | 0.0 | [yauzl-promise](./y/yauzl-promise) | yauzl unzipping with Promises
 | 0.0 | [yawn-yaml](./y/yawn-yaml) | YAML parser that preserves comments and styling
 | 0.0 | [yayson](./y/yayson) | A library for serializing and reading JSON API sta
-| 0.0 | [yazl](./y/yazl) | yet another zip library for node
 | 0.0 | [year-days](./y/year-days) | Get the number of days in a year
 | 0.0 | [yeast](./y/yeast) | Tiny but linear growing unique id generator
 | 0.0 | [yeoman-assert](./y/yeoman-assert) | Assert utility from yeoman
