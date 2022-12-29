@@ -6080,7 +6080,6 @@
 | 0.0 | [mem-fs-editor](./m/mem-fs-editor) | File edition helpers working on top of mem-fs
 | 0.0 | [memcached](./m/memcached) | A fully featured Memcached API client, supporting 
 | 0.0 | [memdown](./m/memdown) | An drop-in replacement for LevelDOWN that works in
-| 0.0 | [memfs](./m/memfs) | In-memory file-system with Node's fs API.
 | 0.0 | [memize](./m/memize) | Unabashedly-barebones memoization library with an 
 | 0.0 | [memjs](./m/memjs) | A memcache client for node using the binary protoc
 | 0.0 | [memmonit](./m/memmonit) | Library to help monitor operating system memory
@@ -6337,11 +6336,8 @@
 | 0.0 | [mongo-sanitize](./m/mongo-sanitize) | Helper to sanitize mongodb queries against query s
 | 0.0 | [mongodb](./m/mongodb) | The official MongoDB driver for Node.js
 | 0.0 | [mongodb-connection-string](./m/mongodb-connection-string-url) | MongoDB connection strings, based on the WhatWG UR
-| 0.0 | [mongodb-memory-server](./m/mongodb-memory-server) | MongoDB Server for testing (auto-download latest v
-| 0.0 | [mongodb-memory-server-cor](./m/mongodb-memory-server-core) | MongoDB Server for testing (core package, without 
 | 0.0 | [mongodb-uri](./m/mongodb-uri) | A parser and formatter for MongoDB URIs.
 | 0.0 | [mongoose-seeder](./m/mongoose-seeder) | Seed your MongoDB database easily
-| 0.0 | [monk](./m/monk) | The wise MongoDB API
 | 0.0 | [monocle-ts](./m/monocle-ts) | A porting of scala monocle library to TypeScript
 | 0.0 | [month-days](./m/month-days) | Get the number of days in a month
 | 0.0 | [moo](./m/moo) | Optimised tokenizer/lexer generator
@@ -11518,6 +11514,7 @@
 | 0.0 | [yauzl-promise](./y/yauzl-promise) | yauzl unzipping with Promises
 | 0.0 | [yawn-yaml](./y/yawn-yaml) | YAML parser that preserves comments and styling
 | 0.0 | [yayson](./y/yayson) | A library for serializing and reading JSON API sta
+| 0.0 | [yazl](./y/yazl) | yet another zip library for node
 | 0.0 | [year-days](./y/year-days) | Get the number of days in a year
 | 0.0 | [yeast](./y/yeast) | Tiny but linear growing unique id generator
 | 0.0 | [yeoman-assert](./y/yeoman-assert) | Assert utility from yeoman
