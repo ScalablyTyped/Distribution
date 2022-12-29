@@ -7130,6 +7130,7 @@
 | [mem-fs-editor](./m/mem-fs-editor) | File edition helpers working on top of mem-fs | - |
 | [memcached](./m/memcached) | A fully featured Memcached API client, supporting  | InnoDB memcached API, cache, client, cluster, failover, hashing, membase, memcache, memcached, nMemcached, nosql |
 | [memdown](./m/memdown) | An drop-in replacement for LevelDOWN that works in | level, leveldb, leveldown, levelup, memory |
+| [memfs](./m/memfs) | In-memory file-system with Node's fs API. | fs, filesystem, fs.js, memory-fs, memfs, file, file system, mount, memory, in-memory, virtual, test, testing, mock |
 | [memize](./m/memize) | Unabashedly-barebones memoization library with an  | memoize, memoization, memoisation, cache |
 | [memjs](./m/memjs) | A memcache client for node using the binary protoc | cache, memcache, memcached, MemCachier |
 | [memmonit](./m/memmonit) | Library to help monitor operating system memory | memory, monitoring, lib |
@@ -7405,8 +7406,11 @@
 | [mongo-sanitize](./m/mongo-sanitize) | Helper to sanitize mongodb queries against query s | mongodb, sanitize, query, selector, injection, Petko |
 | [mongodb](./m/mongodb) | The official MongoDB driver for Node.js | mongodb, driver, official |
 | [mongodb-connection-string](./m/mongodb-connection-string-url) | MongoDB connection strings, based on the WhatWG UR | password, prompt, tty |
+| [mongodb-memory-server](./m/mongodb-memory-server) | MongoDB Server for testing (auto-download latest v | mongodb, mongoose, mock, stub, mockgoose, mongodb-prebuilt, mongomem |
+| [mongodb-memory-server-cor](./m/mongodb-memory-server-core) | MongoDB Server for testing (core package, without  | mongodb, mongoose, mock, stub, mockgoose, mongodb-prebuilt, mongomem |
 | [mongodb-uri](./m/mongodb-uri) | A parser and formatter for MongoDB URIs. | mongodb, uri, url, parser, formatter, mongoose |
 | [mongoose-seeder](./m/mongoose-seeder) | Seed your MongoDB database easily | MongoDB, Mongoose, seeder |
+| [monk](./m/monk) | The wise MongoDB API | monk, mongodb, mongo, driver |
 | [monocle-ts](./m/monocle-ts) | A porting of scala monocle library to TypeScript | typescript, functional-programming, optics, lens, fp-ts |
 | [month-days](./m/month-days) | Get the number of days in a month | month, days, year, date, utc, number, count |
 | [moo](./m/moo) | Optimised tokenizer/lexer generator | - |
