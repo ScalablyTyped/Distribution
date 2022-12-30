@@ -2562,7 +2562,6 @@
 | 0.0 | [expo-asset](./e/expo-asset) | An Expo universal module to download assets and pa
 | 0.0 | [expo-error-recovery](./e/expo-error-recovery) | Utilities for helping you gracefully handle crashe
 | 0.0 | [expo-file-system](./e/expo-file-system) | Provides access to the local file system on the de
-| 0.0 | [expo-font](./e/expo-font) | Load fonts at runtime and use them in React Native
 | 0.0 | [expo-gl](./e/expo-gl) | Provides GLView that acts as OpenGL ES render targ
 | 0.0 | [expo-linear-gradient](./e/expo-linear-gradient) | Provides a React component that renders a gradient
 | 0.0 | [expo-localization](./e/expo-localization) | Provides an interface for native user localization
@@ -11522,6 +11521,7 @@
 | 0.0 | [yauzl-promise](./y/yauzl-promise) | yauzl unzipping with Promises
 | 0.0 | [yawn-yaml](./y/yawn-yaml) | YAML parser that preserves comments and styling
 | 0.0 | [yayson](./y/yayson) | A library for serializing and reading JSON API sta
+| 0.0 | [yazl](./y/yazl) | yet another zip library for node
 | 0.0 | [year-days](./y/year-days) | Get the number of days in a year
 | 0.0 | [yeast](./y/yeast) | Tiny but linear growing unique id generator
 | 0.0 | [yeoman-assert](./y/yeoman-assert) | Assert utility from yeoman

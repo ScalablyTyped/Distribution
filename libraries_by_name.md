@@ -2791,7 +2791,6 @@
 | [expo-constants](./e/expo-constants) | - | - |
 | [expo-error-recovery](./e/expo-error-recovery) | Utilities for helping you gracefully handle crashe | react-native, expo, expo-error-recovery, error-recovery |
 | [expo-file-system](./e/expo-file-system) | Provides access to the local file system on the de | react-native, expo, file-system, file |
-| [expo-font](./e/expo-font) | Load fonts at runtime and use them in React Native | react-native, expo, font |
 | [expo-gl](./e/expo-gl) | Provides GLView that acts as OpenGL ES render targ | react-native, expo, gl, glview, webgl |
 | [expo-keep-awake](./e/expo-keep-awake) | - | - |
 | [expo-linear-gradient](./e/expo-linear-gradient) | Provides a React component that renders a gradient | react-native, expo, gradient |
@@ -12755,6 +12754,7 @@
 | [yauzl-promise](./y/yauzl-promise) | yauzl unzipping with Promises | yauzl, unzip, zip, promise, async, await |
 | [yawn-yaml](./y/yawn-yaml) | YAML parser that preserves comments and styling | yaml |
 | [yayson](./y/yayson) | A library for serializing and reading JSON API sta | json-api, json, api, response, format, serialization, deserialization, yay, wow, omg |
+| [yazl](./y/yazl) | yet another zip library for node | zip, stream, archive, file |
 | [ydn-db](./y/ydn-db) | - | - |
 | [year-days](./y/year-days) | Get the number of days in a year | year, days, date, number, count |
 | [yeast](./y/yeast) | Tiny but linear growing unique id generator | yeast, id, generator, unique |

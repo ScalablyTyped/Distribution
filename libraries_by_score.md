@@ -831,7 +831,6 @@
 | 0.8093654656532755 | [import-local](./i/import-local) | Let a globally installed package use a locally ins
 | 0.8093484094554622 | [workbox-expiration](./w/workbox-expiration) | A service worker helper library that expires cache
 | 0.8092146012412533 | [gtoken](./g/gtoken) | Node.js Google Authentication Service Account Toke
-| 0.8092074912036111 | [expo-font](./e/expo-font) | Load fonts at runtime and use them in React Native
 | 0.8091058066143586 | [cheerio-select](./c/cheerio-select) | CSS selector engine supporting jQuery selectors
 | 0.8090137431606929 | [expect](./e/expect) | This package exports the expect function used in 
 | 0.8090025016991513 | [unist-util-generated](./u/unist-util-generated) | unist utility to check if a node is generated
@@ -6637,6 +6636,7 @@
 | 0.6153603940379252 | [randexp](./r/randexp) | Create random strings that match a given regular e
 | 0.6153560379623948 | [gsheets](./g/gsheets) | Get public Google Spreadsheets as plain JavaScript
 | 0.6153290679396893 | [jupyterlab__mainmenu](./j/jupyterlab__mainmenu) | JupyterLab - Main Menu
+| 0.6152816327284444 | [yazl](./y/yazl) | yet another zip library for node
 | 0.6152394529489089 | [utf8](./u/utf8) | A well-tested UTF-8 encoder/decoder written in Jav
 | 0.6152362174951483 | [barnard59-core](./b/barnard59-core) | Core component of Barnard59 Linked Data pipelines
 | 0.6151520405779876 | [csscolorparser-ts](./c/csscolorparser-ts) | Parser for CSS color strings written in TypeScript
