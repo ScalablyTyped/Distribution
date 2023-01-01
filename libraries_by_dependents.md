@@ -27,6 +27,7 @@
 | 0.0 | [ace-builds](./a/ace-builds) | Ace (Ajax.org Cloud9 Editor)
 | 0.0 | [ace-diff](./a/ace-diff) | A diff/merging wrapper for Ace Editor built on goo
 | 0.0 | [ackee-tracker](./a/ackee-tracker) | Transfer data to Ackee
+| 0.0 | [acl](./a/acl) | An Access Control List module, based on Redis with
 | 0.0 | [acme-client](./a/acme-client) | Simple and unopinionated ACME client
 | 0.0 | [acorn](./a/acorn) | ECMAScript parser
 | 0.0 | [acorn-hammerhead](./a/acorn-hammerhead) | acorn.js parser adapted to TestCafe Hammerhead
@@ -63,6 +64,7 @@
 | 0.0 | [ag-channel](./a/ag-channel) | Channel object for Asyngular
 | 0.0 | [ag-simple-broker](./a/ag-simple-broker) | Simple broker engine for Asyngular
 | 0.0 | [agadoo](./a/agadoo) | Check whether a package is tree-shakeable
+| 0.0 | [agenda](./a/agenda) | Light weight job scheduler for Node.js
 | 0.0 | [agent-base](./a/agent-base) | Turn a function into an http.Agent instance
 | 0.0 | [agentkeepalive](./a/agentkeepalive) | Missing keepalive http.Agent
 | 0.0 | [aggregate-error](./a/aggregate-error) | Create an error from multiple errors
@@ -180,6 +182,7 @@
 | 0.0 | [angular-locker](./a/angular-locker) | A simple & configurable abstraction for local/sess
 | 0.0 | [angular-material](./a/angular-material) | **
 | 0.0 | [angular-media-queries](./a/angular-media-queries) | Angular service to test if a given @media statment
+| 0.0 | [angular-meteor](./a/angular-meteor) | Combining the simplicity and power of AngularJS an
 | 0.0 | [angular-mocks](./a/angular-mocks) | AngularJS mocks for testing
 | 0.0 | [angular-modal](./a/angular-modal) | easily add a modal to your angular app
 | 0.0 | [angular-notifications](./a/angular-notifications) | Sweet notifications for your angular app
@@ -507,6 +510,7 @@
 | 0.0 | [aws-iot-device-sdk](./a/aws-iot-device-sdk) | AWS IoT Node.js SDK for Embedded Devices
 | 0.0 | [aws-kcl](./a/aws-kcl) | Kinesis Client Libray (KCL) in Node.js.
 | 0.0 | [aws-lambda](./a/aws-lambda) | Deploy AWS Lambda functions from command line usin
+| 0.0 | [aws-lambda-fastify](./a/aws-lambda-fastify) | aws-lambda-fastify@2.2.0 has been deprecated. Plea
 | 0.0 | [aws-lambda-http-server](./a/aws-lambda-http-server) | run http server as aws lambda function
 | 0.0 | [aws-lambda-mock-context](./a/aws-lambda-mock-context) | AWS Lambda mock context object
 | 0.0 | [aws-param-store](./a/aws-param-store) | Library for loading parameters from AWS Parameter 
@@ -975,6 +979,7 @@
 | 0.0 | [browser-sync](./b/browser-sync) | Live CSS Reload & Browser Syncing
 | 0.0 | [browser-sync-webpack-plug](./b/browser-sync-webpack-plugin) | BrowserSync and Webpack integration
 | 0.0 | [browser-update](./b/browser-update) | Remind users to update their browser in an unobtru
+| 0.0 | [browserfs](./b/browserfs) | A filesystem in your browser
 | 0.0 | [browserify](./b/browserify) | browser-side require() the node way
 | 0.0 | [browserslist](./b/browserslist) | Share target browsers between different front-end 
 | 0.0 | [browserslist-useragent](./b/browserslist-useragent) | A utility to match a browselist query to browser u
@@ -1128,6 +1133,7 @@
 | 0.0 | [catering](./c/catering) | Simple utility to allow your module to be consumed
 | 0.0 | [catho__quantum](./c/catho__quantum) | Catho react components
 | 0.0 | [cavy](./c/cavy) | An integration test framework for React Native.
+| 0.0 | [cbor](./c/cbor) | Encode and parse data in the Concise Binary Object
 | 0.0 | [cborg](./c/cborg) | Fast CBOR with a focus on strictness
 | 0.0 | [ccap](./c/ccap) | node.js generate captcha using c++ library CImg wi
 | 0.0 | [ccapture_dot_js](./c/ccapture_dot_js) | A library to capture canvas-based animations at a 
@@ -1474,6 +1480,8 @@
 | 0.0 | [connect-livereload](./c/connect-livereload) | connect middleware for adding the livereload scrip
 | 0.0 | [connect-memcached](./c/connect-memcached) | Memcached session store for Connect
 | 0.0 | [connect-modrewrite](./c/connect-modrewrite) | connect-modrewrite adds modrewrite functionality t
+| 0.0 | [connect-mongo](./c/connect-mongo) | MongoDB session store for Express and Connect
+| 0.0 | [connect-mongodb-session](./c/connect-mongodb-session) | MongoDB session store for connect/express built by
 | 0.0 | [connect-pg-simple](./c/connect-pg-simple) | A simple, minimal PostgreSQL session store for Con
 | 0.0 | [connect-redis](./c/connect-redis) | Redis session store for Connect
 | 0.0 | [connect-sequence](./c/connect-sequence) | A node.js module to run connect-like middlewares i
@@ -1611,6 +1619,7 @@
 | 0.0 | [cqrs-domain](./c/cqrs-domain) | Node-cqrs-domain is a node.js module based on node
 | 0.0 | [cradle](./c/cradle) | the high-level, caching, CouchDB library
 | 0.0 | [crawler](./c/crawler) | Crawler is a web spider written with Nodejs. It gi
+| 0.0 | [crc](./c/crc) | Module for calculating Cyclic Redundancy Check (CR
 | 0.0 | [crc-32](./c/crc-32) | Pure-JS CRC-32
 | 0.0 | [create-banner](./c/create-banner) | Create a banner from a package.json file.
 | 0.0 | [create-cert](./c/create-cert) | Super simple self signed certificates
@@ -1763,6 +1772,8 @@
 | 0.0 | [cypress-dark](./c/cypress-dark) | Dark mode for Cypress test runner from user space
 | 0.0 | [cypress-dotenv](./c/cypress-dotenv) | Cypress plugin that enables compatability with dot
 | 0.0 | [cypress-image-snapshot](./c/cypress-image-snapshot) | Cypress bindings for jest-image-snapshot.
+| 0.0 | [cypress-recurse](./c/cypress-recurse) | A way to re-run Cypress commands until a predicate
+| 0.0 | [cypress__code-coverage](./c/cypress__code-coverage) | Saves the code coverage collected during Cypress t
 | 0.0 | [cytoscape](./c/cytoscape) | Graph theory (a.k.a. network) library for analysis
 | 0.0 | [cytoscape-avsdf](./c/cytoscape-avsdf) | An implementation of the circular layout algorithm
 | 0.0 | [cytoscape-canvas](./c/cytoscape-canvas) | A Cytoscape extension to enable drawing over and u
@@ -2463,7 +2474,11 @@
 | 0.0 | [ethereum-protocol](./e/ethereum-protocol) | This package is a stub so that noone takes the nam
 | 0.0 | [ethereumjs-abi](./e/ethereumjs-abi) | Decoder and encoder for the Ethereum ABI
 | 0.0 | [ethereumjs-account](./e/ethereumjs-account) | Encoding, decoding and validation of Ethereum's Ac
+| 0.0 | [ethereumjs-blockchain](./e/ethereumjs-blockchain) | A module to store and interact with blocks
 | 0.0 | [ethereumjs-common](./e/ethereumjs-common) | Resources common to all Ethereum implementations
+| 0.0 | [ethereumjs-tx](./e/ethereumjs-tx) | A simple module for creating, manipulating and sig
+| 0.0 | [ethereumjs-util](./e/ethereumjs-util) | A collection of utility functions for Ethereum
+| 0.0 | [ethereumjs-vm](./e/ethereumjs-vm) | An Ethereum VM implementation
 | 0.0 | [ethereumjs-wallet](./e/ethereumjs-wallet) | Utilities for handling Ethereum keys
 | 0.0 | [ethers](./e/ethers) | Umbrella package for most common Ethers libraries.
 | 0.0 | [ethersproject__abi](./e/ethersproject__abi) | Utilities and Classes for parsing, formatting and 
@@ -2727,6 +2742,8 @@
 | 0.0 | [fastestsmallesttextencode](./f/fastestsmallesttextencoderdecoder) | The fastest smallest Javascript polyfill for the e
 | 0.0 | [fastify](./f/fastify) | Fast and low overhead web framework, for Node.js
 | 0.0 | [fastify-error](./f/fastify-error) | fastify-error@1.2.0 has been deprecated. Please us
+| 0.0 | [fastify-favicon](./f/fastify-favicon) | Fastify plugin to serve default favicon requests
+| 0.0 | [fastify-plugin](./f/fastify-plugin) | Plugin helper for Fastify
 | 0.0 | [fastify__ajv-compiler](./f/fastify__ajv-compiler) | Build and manage the AJV instances for the fastify
 | 0.0 | [fastify__busboy](./f/fastify__busboy) | A streaming parser for HTML form data for node.js
 | 0.0 | [fastify__error](./f/fastify__error) | A small utility, used by Fastify itself, for gener
@@ -6067,6 +6084,7 @@
 | 0.0 | [mem-fs-editor](./m/mem-fs-editor) | File edition helpers working on top of mem-fs
 | 0.0 | [memcached](./m/memcached) | A fully featured Memcached API client, supporting 
 | 0.0 | [memdown](./m/memdown) | An drop-in replacement for LevelDOWN that works in
+| 0.0 | [memfs](./m/memfs) | In-memory file-system with Node's fs API.
 | 0.0 | [memize](./m/memize) | Unabashedly-barebones memoization library with an 
 | 0.0 | [memjs](./m/memjs) | A memcache client for node using the binary protoc
 | 0.0 | [memmonit](./m/memmonit) | Library to help monitor operating system memory
@@ -6324,11 +6342,14 @@
 | 0.0 | [mongo-sanitize](./m/mongo-sanitize) | Helper to sanitize mongodb queries against query s
 | 0.0 | [mongodb](./m/mongodb) | The official MongoDB driver for Node.js
 | 0.0 | [mongodb-connection-string](./m/mongodb-connection-string-url) | MongoDB connection strings, based on the WhatWG UR
+| 0.0 | [mongodb-memory-server](./m/mongodb-memory-server) | MongoDB Server for testing (auto-download latest v
+| 0.0 | [mongodb-memory-server-cor](./m/mongodb-memory-server-core) | MongoDB Server for testing (core package, without 
 | 0.0 | [mongodb-queue](./m/mongodb-queue) | Message queues which uses MongoDB.
 | 0.0 | [mongodb-uri](./m/mongodb-uri) | A parser and formatter for MongoDB URIs.
 | 0.0 | [mongoose-seeder](./m/mongoose-seeder) | Seed your MongoDB database easily
 | 0.0 | [mongorito](./m/mongorito) | ES6 generator-based MongoDB ODM.
 | 0.0 | [mongration](./m/mongration) | Node.js mongodb migration framework
+| 0.0 | [monk](./m/monk) | The wise MongoDB API
 | 0.0 | [monocle-ts](./m/monocle-ts) | A porting of scala monocle library to TypeScript
 | 0.0 | [month-days](./m/month-days) | Get the number of days in a month
 | 0.0 | [moo](./m/moo) | Optimised tokenizer/lexer generator
@@ -6757,6 +6778,7 @@
 | 0.0 | [nodepub](./n/nodepub) | Create valid EPUB (v2) ebooks with metadata, conte
 | 0.0 | [nodes7](./n/nodes7) | Routine to communicate with Siemens S7 PLCs
 | 0.0 | [nodeunit](./n/nodeunit) | Easy unit testing for node.js and the browser.
+| 0.0 | [nofilter](./n/nofilter) | Read and write a growable buffer as a stream
 | 0.0 | [noise-curve-ed](./n/noise-curve-ed) | Ed25519 elliptic curve operations for 
 | 0.0 | [noise-curve-secp](./n/noise-curve-secp) | secp256k1 elliptic curve operations for use with 
 | 0.0 | [noise-handshake](./n/noise-handshake) | -
@@ -10300,6 +10322,7 @@
 | 0.0 | [terraformer__spatial](./t/terraformer__spatial) | Spatial predicates for GeoJSON.
 | 0.0 | [terraformer__wkt](./t/terraformer__wkt) | Tools to convert WKT geometries to GeoJSON geometr
 | 0.0 | [terser](./t/terser) | JavaScript parser, mangler/compressor and beautifi
+| 0.0 | [terser-webpack-plugin](./t/terser-webpack-plugin) | Terser plugin for webpack
 | 0.0 | [teslajs](./t/teslajs) | Full-featured Tesla REST API NodeJS package
 | 0.0 | [tesseract_dot_js](./t/tesseract_dot_js) | Pure Javascript Multilingual OCR
 | 0.0 | [test-console](./t/test-console) | A simple and pragmatic library for testing Node.js
@@ -11479,6 +11502,7 @@
 | 0.0 | [xxhash-wasm](./x/xxhash-wasm) | A WebAssembly implementation of xxHash
 | 0.0 | [xxhashjs](./x/xxhashjs) | xxHash in Javascript
 | 0.0 | [y-codemirror](./y/y-codemirror) | CodeMirror binding for Yjs
+| 0.0 | [y-leveldb](./y/y-leveldb) | LevelDb database adapter for Yjs
 | 0.0 | [y-protocols](./y/y-protocols) | Yjs encoding protocols
 | 0.0 | [y-websocket](./y/y-websocket) | Websockets provider for Yjs
 | 0.0 | [ya-disk](./y/ya-disk) | Yandex Disk API Library
@@ -11503,6 +11527,7 @@
 | 0.0 | [yauzl-promise](./y/yauzl-promise) | yauzl unzipping with Promises
 | 0.0 | [yawn-yaml](./y/yawn-yaml) | YAML parser that preserves comments and styling
 | 0.0 | [yayson](./y/yayson) | A library for serializing and reading JSON API sta
+| 0.0 | [yazl](./y/yazl) | yet another zip library for node
 | 0.0 | [year-days](./y/year-days) | Get the number of days in a year
 | 0.0 | [yeast](./y/yeast) | Tiny but linear growing unique id generator
 | 0.0 | [yeoman-assert](./y/yeoman-assert) | Assert utility from yeoman
