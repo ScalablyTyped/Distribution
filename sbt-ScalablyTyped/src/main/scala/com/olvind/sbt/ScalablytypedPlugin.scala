@@ -2815,6 +2815,7 @@ object ScalablyTypedPlugin extends AutoPlugin {
         val `expo-constants` = "org.scalablytyped" % "expo-constants_sjs1_3" % "14.0.2-e6959c"
         val `expo-error-recovery` = "org.scalablytyped" % "expo-error-recovery_sjs1_3" % "4.0.1-1df6c7"
         val `expo-file-system` = "org.scalablytyped" % "expo-file-system_sjs1_3" % "15.1.1-59e51a"
+        val `expo-font` = "org.scalablytyped" % "expo-font_sjs1_3" % "11.0.1-7de70e"
         val `expo-gl` = "org.scalablytyped" % "expo-gl_sjs1_3" % "11.4.0-619b56"
         val `expo-keep-awake` = "org.scalablytyped" % "expo-keep-awake_sjs1_3" % "11.0.1-034d44"
         val `expo-linear-gradient` = "org.scalablytyped" % "expo-linear-gradient_sjs1_3" % "12.0.1-644a66"
