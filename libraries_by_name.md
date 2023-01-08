@@ -2830,7 +2830,6 @@
 | [express-boom](./e/express-boom) | Boom response objects in Express | Hapi, Boom, Express, response |
 | [express-brute](./e/express-brute) | A brute-force protection middleware for express ro | brute, force, bruteforce, attack, fibonacci, rate, limit, security |
 | [express-brute-memcached](./e/express-brute-memcached) | A memcached store for express-brute | express, brute, memcached, store |
-| [express-brute-mongo](./e/express-brute-mongo) | MongoDB store for express-brute. | - |
 | [express-brute-redis](./e/express-brute-redis) | A Redis store for express-brute | express, brute, redis |
 | [express-bunyan-logger](./e/express-bunyan-logger) | a bunyan logger middleware for express | express, logger, bunyan |
 | [express-busboy](./e/express-busboy) | Busboy for express, mimics the old bodyParser | busboy, express, body-parser |
@@ -4309,7 +4308,6 @@
 | [gremlin](./g/gremlin) | JavaScript Gremlin Language Variant | graph, gremlin, tinkerpop, connection, glv, driver, graphdb |
 | [grid-template-parser](./g/grid-template-parser) | A simple CSS Grid template parser | grid, grid-layout, template, parser |
 | [griddle-react](./g/griddle-react) | A fast and flexible grid component for React | react-component, grid, react, pagination, sort |
-| [gridfs-stream](./g/gridfs-stream) | Writable/Readable Nodejs compatible GridFS streams | mongodb, mongoose, gridfs |
 | [gridstack](./g/gridstack) | TypeScript/JS lib for dashboard layout and creatio | Typescript, gridstack.js, grid, gridster, layout, responsive, dashboard, resize, drag&drop, widgets, Angular, React, Vue, JavaScript |
 | [grommet](./g/grommet) | focus on the essential experience | grommet, grommet.io, grommetux, component, library, design system, framework, react, theme, theming, templates, sticker sheets, design patterns, app templates, atomic design, accessibility, WCAG 2.1, keyboard navigation, screen reader tags, color, type, layout, typography, interaction, ui, user interface, gui, graphical user interface, styled-components |
 | [grommet-icons](./g/grommet-icons) | iconography for grommet apps. | - |
@@ -4639,7 +4637,6 @@
 | [hogan_dot_js](./h/hogan_dot_js) | A mustache compiler. | mustache, template |
 | [hoist-non-react-statics](./h/hoist-non-react-statics) | Copies non-react specific statics from a child com | react |
 | [holderjs](./h/holderjs) | Holder uses SVG to render image placeholders entir | images, placeholders, client-side, canvas, generation, development, svg |
-| [homeworks](./h/homeworks) | Front End framework that supported view binding. | Frontend Framework, Material, IGAWorks, homeworks, framework, PIGNOSE |
 | [honeybadger](./h/honeybadger) | A node.js notifier for honeybadger.io | - |
 | [hooker](./h/hooker) | Monkey-patch (hook) functions for debugging and st | patch, hook, function, debug, aop |
 | [hookrouter](./h/hookrouter) | A hook based router for React | - |
@@ -4862,7 +4859,6 @@
 | [indefinite-observable](./i/indefinite-observable) |   | - |
 | [indent-string](./i/indent-string) | Indent each line in a string | indent, string, pad, align, line, text, each, every |
 | [index-array-by](./i/index-array-by) | A utility function to index arrays by any criteria | index, array, helper |
-| [indy-sdk](./i/indy-sdk) | Native bindings for hyperledger indy | - |
 | [inert](./i/inert) | Static file and directory handlers plugin for hapi | file, directory, handler, hapi, plugin |
 | [ineum](./i/ineum) | - | - |
 | [inferno](./i/inferno) | An extremely fast, React-like JavaScript library f | inferno, performance, framework, interfaces, user interfaces, html, renderToString, server, dom, browser, rollup, vdom |
@@ -7626,7 +7622,6 @@
 | [ng-grid](./n/ng-grid) | __Contributors:__ | angular, ng-grid, nggrid, grid, angularjs, slickgrid, kogrid |
 | [ng-i18next](./n/ng-i18next) | AngularJS provider, filter and directive for i18ne | - |
 | [ng-notify](./n/ng-notify) | A simple, lightweight module for displaying notifi | AngularJS, App, notify, Provider, notification, alert, notice |
-| [ng-packagr](./n/ng-packagr) | Compile and package Angular libraries in Angular P | apf, angular-package-format, angular, angular-library, angular-components, component-library, typescript, css, scss |
 | [ng-showdown](./n/ng-showdown) | Official Showdown integration with AngularJS | - |
 | [ng-stomp](./n/ng-stomp) | STOMP for AngularJS | AngularJS, STOMP, websocket |
 | [ng-table](./n/ng-table) | Table + AngularJS =================  | - |
@@ -7652,7 +7647,6 @@
 | [ngtoaster](./n/ngtoaster) | - | - |
 | [ngtools__webpack](./n/ngtools__webpack) | Webpack plugin that AoT compiles your Angular comp | angular, Angular CLI, devkit, sdk, Angular DevKit, webpack, plugin, aot |
 | [ngwysiwyg](./n/ngwysiwyg) | - | - |
-| [ngx-infinite-scroll](./n/ngx-infinite-scroll) | - | - |
 | [nhs-number-validator](./n/nhs-number-validator) | Validate NHS numbers in various guises | nhs, validator, validation |
 | [nib](./n/nib) | Stylus mixins and utilities | - |
 | [nice-napi](./n/nice-napi) | nice(2) bindings for Node.js | nice, priority |

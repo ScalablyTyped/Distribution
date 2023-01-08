@@ -3173,7 +3173,6 @@
 | 0.7082704355167599 | [rc-segmented](./r/rc-segmented) | React segmented controls used in ant.design
 | 0.7082676941001456 | [empower](./e/empower) | Power Assert feature enhancer for assert function/
 | 0.7081949710506517 | [node-abort-controller](./n/node-abort-controller) | AbortController for Node based on EventEmitter
-| 0.7081644043608262 | [ng-packagr](./n/ng-packagr) | Compile and package Angular libraries in Angular P
 | 0.7081411005412502 | [ranges-apply](./r/ranges-apply) | Take an array of string index ranges, delete/repla
 | 0.7080424574077693 | [cassandra-driver](./c/cassandra-driver) | DataStax Node.js Driver for Apache Cassandra
 | 0.7080408055692131 | [qr-image](./q/qr-image) | QR Code generator (png, svg, pdf, eps)
@@ -4639,7 +4638,6 @@
 | 0.6715028593119714 | [moddle](./m/moddle) | A library for importing meta-model based file form
 | 0.6714979137696142 | [node-red__editor-client](./n/node-red__editor-client) | -
 | 0.6714925649878302 | [cassanknex](./c/cassanknex) | An Apache Cassandra CQL query builder with support
-| 0.6714853737212092 | [indy-sdk](./i/indy-sdk) | Native bindings for hyperledger indy
 | 0.6714584335377032 | [jss-plugin-global](./j/jss-plugin-global) | Global styles for JSS
 | 0.6714458699011386 | [progress-stream](./p/progress-stream) | Read the progress of a stream
 | 0.6714229772885696 | [totp-generator](./t/totp-generator) | Generate TOTP tokens from key
@@ -6336,7 +6334,6 @@
 | 0.6277034885670205 | [svg-path-bounding-box](./s/svg-path-bounding-box) | SVG path bounding box calculator
 | 0.6276829149991834 | [coinify__currency](./c/coinify__currency) | Helper functions for managing amounts in different
 | 0.6276810531278819 | [react-broadcast](./r/react-broadcast) | Reliably communicate state changes to deeply neste
-| 0.6276589757268316 | [express-brute-mongo](./e/express-brute-mongo) | MongoDB store for express-brute.
 | 0.6276366369132834 | [bonjour](./b/bonjour) | A Bonjour/Zeroconf implementation in pure JavaScri
 | 0.6275467689225729 | [redux-mock-store](./r/redux-mock-store) | A mock store for testing your redux async action c
 | 0.6275266945525023 | [js-captcha](./j/js-captcha) | Simple captcha component written in pure JavaScrip
@@ -9188,7 +9185,6 @@
 | 0.4748939927516376 | [engine-check](./e/engine-check) | Enforce node engine version from package.json
 | 0.4748562567197252 | [gitignore-parser](./g/gitignore-parser) | A simple .gitignore parser.
 | 0.47467901241607363 | [ethereum-blockies](./e/ethereum-blockies) | A tiny library for generating blocky identicons.
-| 0.47467744398104805 | [gridfs-stream](./g/gridfs-stream) | Writable/Readable Nodejs compatible GridFS streams
 | 0.4746670243086724 | [uuid-validate](./u/uuid-validate) | Javascript validator for UUID versions 1 through 5
 | 0.47460435026415015 | [detectos_dot_js](./d/detectos_dot_js) | A simple definition of the popular OS and browsers
 | 0.4746015414470388 | [hunspell-spellchecker](./h/hunspell-spellchecker) | Parse and use Hunspell dictionaries in Javascript
@@ -10314,7 +10310,6 @@
 | 0.3739087522238116 | [parameterize](./p/parameterize) | This repository adds node.js and npm support for p
 | 0.3738057460546391 | [react-native-form](./r/react-native-form) | A simple react-native component to wrap your form 
 | 0.3737619916214192 | [bootpag](./b/bootpag) | bootpag - dynamic pagination jQuery plugin. Works 
-| 0.3736559415506839 | [ngx-infinite-scroll](./n/ngx-infinite-scroll) | -
 | 0.37363208075520415 | [gatsby-sharp](./g/gatsby-sharp) | -
 | 0.37356372618117983 | [documentdb](./d/documentdb) | Azure Cosmos DB Service Node.js SDK for SQL API
 | 0.3734709524247766 | [rpi-ws281x-native](./r/rpi-ws281x-native) | (raspberry-pi *only*) native bindings to control a
@@ -11419,7 +11414,6 @@
 | 0.17948216205889722 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_compute) | TypeScript typings for Compute Engine API v1
 | 0.1794622728626326 | [metrostations](./m/metrostations) | JSONs of metro stations and lines.
 | 0.17938446594731672 | [fragmented-store](./f/fragmented-store) | Small library to manage the (P)React state
-| 0.17938237856804978 | [homeworks](./h/homeworks) | Front End framework that supported view binding.
 | 0.17935334294200223 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_remotebuildexecution) | TypeScript typings for Remote Build Execution API 
 | 0.1792596690757141 | [timelinejs3](./t/timelinejs3) | TimelineJS v3: A Storytelling Timeline built in Ja
 | 0.17899586210258164 | [leaflet-deepzoom](./l/leaflet-deepzoom) | Displaying DeepZoom tiles with Leaflet
