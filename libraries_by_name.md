@@ -327,7 +327,7 @@
 | [ansi-to-html](./a/ansi-to-html) | Convert ansi escaped text streams to html. | ansi, html |
 | [ansicolors](./a/ansicolors) | Functions that surround a string with ansicolor co | ansi, colors, highlight, string |
 | [ant-design-pro](./a/ant-design-pro) | An enterprise-class UI design language and React-b | - |
-| [ant-design__colors](./a/ant-design__colors) | - | - |
+| [ant-design__colors](./a/ant-design__colors) | Color palettes calculator of Ant Design | - |
 | [ant-design__cssinjs](./a/ant-design__cssinjs) | Component level cssinjs resolution for antd | react, cssinjs, antd, ant-design |
 | [ant-design__dark-theme](./a/ant-design__dark-theme) | - | - |
 | [ant-design__icons](./a/ant-design__icons) | - | - |

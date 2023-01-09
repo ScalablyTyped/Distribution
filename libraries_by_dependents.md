@@ -251,6 +251,7 @@
 | 0.0 | [ansi-to-html](./a/ansi-to-html) | Convert ansi escaped text streams to html.
 | 0.0 | [ansicolors](./a/ansicolors) | Functions that surround a string with ansicolor co
 | 0.0 | [ant-design-pro](./a/ant-design-pro) | An enterprise-class UI design language and React-b
+| 0.0 | [ant-design__colors](./a/ant-design__colors) | Color palettes calculator of Ant Design
 | 0.0 | [ant-design__cssinjs](./a/ant-design__cssinjs) | Component level cssinjs resolution for antd
 | 0.0 | [ant-design__icons](./a/ant-design__icons) | -
 | 0.0 | [ant-design__icons-angular](./a/ant-design__icons-angular) |  Ant Design Icons for Angular 
